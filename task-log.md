@@ -25,6 +25,37 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Trace the language benchmark to its source
+
+**Claimed:** META-008 (evidence corrected; still open)
+**Corpus:** changed (one deposit, one source record)
+**Tests:** 119 passed
+
+- Mike supplied Ford & Abudraham 2018, "Syriac and Mandaic Incantation Bowls"
+  (*Finds Gone Astray: ADCA Confiscated Items*, Jerusalem 2018, pp. 75–111).
+  Deposited privately by content hash; source record added.
+- **It is not the Mandaic control list.** It publishes eight confiscated bowls —
+  six Syriac (four Manichaean script, two Estrangelo) and two Mandaic — and is
+  an object publication, not a census. No Mandaic equivalent of Waller's JBA
+  list appears to exist, so that denominator has to be built from the corpus
+  editions themselves, all of which are now in `sources` after SCHOL-002.
+- **Corrected the benchmark's attribution.** I had it as "Ford & Abudraham
+  2018". Their n. 3 attributes it to **Morony 2003: 87**, and adds a caveat I
+  had not carried: Morony worked from "the corpus that was then known, which
+  represents only a small portion of the material now available," though they
+  judge the distribution still reflects the overall picture fairly accurately.
+  Chain: Morony 2003 → Ford & Abudraham 2018 n. 3 → Waller 2025 p. 3 n. 1 → us.
+  It is a twenty-year-old estimate endorsed twice, not a current census, and
+  the 23% Mandaic figure should be treated as an expectation rather than a
+  target. Morony 2003 is in `sources`, ingested yesterday under SCHOL-002.
+- Recorded that this volume publishes antiquities **confiscated in Judea and
+  Samaria**. Provenance there is legally and archaeologically contested and must
+  not be read as excavation context if those eight bowls are ever ingested.
+- Next: `SCHOL-004`, publications as first-class records — still the binding
+  constraint.
+
+---
+
 ## 2026-09-05 — Claude — SCHOL-002: close the bibliographic gap
 
 **Claimed:** SCHOL-002 (done), SCHOL-001 (done)

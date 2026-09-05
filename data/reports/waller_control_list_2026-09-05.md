@@ -95,6 +95,18 @@ Waller cites Ford and Abudraham 2018 for the distribution of Aramaic varieties a
 bowls as a whole: **approximately 62% JBA, 23% Mandaic, 13% Syriac** (printed p. 3 n. 1). That
 is a better external yardstick than the EJCM working counts META-008 has been using.
 
+> **Traced to source, 5 September.** Ford and Abudraham's chapter was obtained and the citation
+> runs one step further than recorded here. Their n. 3 attributes the figure to **Morony 2003:
+> 87**, and adds a caveat worth carrying: Morony based it on "the corpus that was then known,
+> which represents only a small portion of the material now available," though they judge that
+> the distribution "would appear to reflect fairly accurately the overall distribution." So the
+> chain is Morony 2003 → Ford and Abudraham 2018 n. 3 → Waller 2025 p. 3 n. 1 → here. Morony
+> 2003 is now in `sources`, ingested under SCHOL-002.
+>
+> The benchmark is therefore a twenty-year-old estimate over a smaller corpus, endorsed twice.
+> Usable, but it should be cited as Morony's and carry its caveat, not presented as a current
+> census.
+
 | | In the index | Share | Expected | Gap |
 |---|---:|---:|---:|---:|
 | JBA / Aramaic | 583 | 80.0% | 62% | +18.0 |
