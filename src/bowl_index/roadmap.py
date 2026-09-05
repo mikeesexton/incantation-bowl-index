@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .identity import identity_rows
+from .identity import CONTENT_COVERAGE, identity_rows
 from .proofreading import current_text_reviews
 from .rights import rights_metrics
 from .concordance import current_concordance_reviews
@@ -102,12 +102,18 @@ def roadmap_metrics(conn):
             "SELECT count(*) FROM saturation_sweeps WHERE net_new_rate < .01 "
             "AND revealed_new_source_class=0 AND status='complete'"
         ).fetchone()[0],
+        # The release-gate facets, reported separately from the content facets so
+        # that adding a content group cannot quietly move a gate.
         "coverage": {
             field: sum(row["has_" + field] for row in identities)
             for field in (
                 "location", "provenance", "dating", "dimensions", "material",
                 "language", "script", "text_edition", "translation", "image",
             )
+        },
+        "content_coverage": {
+            field: sum(row["has_" + field] for row in identities)
+            for field in sorted(CONTENT_COVERAGE)
         },
     }
 
@@ -245,6 +251,21 @@ def write_roadmap(conn, config_path, destination):
     ])
     total = metrics["probable_identities"]
     for field, count in metrics["coverage"].items():
+        lines.append("| %s | %s | %.1f%% |" % (
+            field.replace("_", " ").title(), count, 100 * count / total if total else 0,
+        ))
+
+    lines.extend([
+        "",
+        "### Content-facet coverage",
+        "",
+        "The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. "
+        "These are counted and conflict-checked but are not release gates.",
+        "",
+        "| Facet | Identities | Coverage |",
+        "|---|---:|---:|",
+    ])
+    for field, count in sorted(metrics["content_coverage"].items(), key=lambda kv: -kv[1]):
         lines.append("| %s | %s | %.1f%% |" % (
             field.replace("_", " ").title(), count, 100 * count / total if total else 0,
         ))

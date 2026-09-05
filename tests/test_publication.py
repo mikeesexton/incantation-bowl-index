@@ -1,9 +1,14 @@
+import json
 import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
 from bowl_index.db import connect, migrate
 from bowl_index.ingest import add_candidate
+from bowl_index.proofreading import (
+    current_text_reviews as current_proofreading_reviews,
+    text_fingerprint as proof_fingerprint,
+)
 from bowl_index.public_export import export_public
 from bowl_index.publication import (
     apply_publication_batch, current_text_reviews, publication_metrics, sync_public_ok,
@@ -86,6 +91,60 @@ class TextPublicationTests(unittest.TestCase):
         apply_publication_batch(self.conn,self.batch())
         with self.assertRaises(ValueError):
             apply_publication_batch(self.conn,self.batch(rationale='Different reason'))
+
+
+class ProofreadingIndependenceTests(unittest.TestCase):
+    """A publication decision and a reading check are orthogonal.
+
+    Approving a text flips texts.public_ok. That must not invalidate the
+    proofreading review that established the text matches the scan — but any
+    change to the text itself must.
+    """
+    def setUp(self):
+        self.temp=tempfile.TemporaryDirectory(); self.root=Path(self.temp.name)
+        self.conn=connect(self.root/'db.sqlite3'); migrate(self.conn)
+        add_candidate(self.conn,{'label':'Montgomery bowl','source':{'source_type':'book',
+            'title':'Nippur texts','citation':'Montgomery 1913','url':'https://example.org/n',
+            'issued_year':1913,'rights_status':'public_domain'},
+            'appearance':{'locator':'text 1','confidence':1},
+            'texts':[{'text_type':'translation','content':'CHECKED READING TEXT','public_ok':False,
+                      'locator':'printed pp. 117-118'}]})
+        self.conn.commit()
+        self.text_id=next(iter(text_evidence(self.conn)))
+        row=dict(self.conn.execute('SELECT * FROM texts WHERE id=?',(self.text_id,)).fetchone())
+        self.conn.execute(
+            'INSERT INTO text_proofreading_reviews VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+            ('IBI-PROOF-1',self.text_id,row['source_id'],'src-sha','before-sha',
+             proof_fingerprint(row),'reading_text_checked','Test reviewer','2026-09-05T20:00:00Z',
+             '[117,118]','Normalized spacing','Checked against the scan','{}',
+             json.dumps(row,ensure_ascii=False,sort_keys=True)))
+        self.conn.commit()
+    def tearDown(self):
+        self.conn.close(); self.temp.cleanup()
+    def approve(self):
+        row=text_evidence(self.conn)[self.text_id]
+        return apply_publication_batch(self.conn,{'schema_version':1,'reviewed_by':'Test reviewer',
+            'reviewed_at':'2026-09-05T22:00:00+00:00','entries':[{
+                'review_id':'IBI-TEXTPUB-P1','text_id':self.text_id,
+                'evidence_sha256':text_fingerprint(row),'rights_basis':'public_domain_expired',
+                'rights_locator':'US publication before 1930','publication_decision':'approved',
+                'attribution':'Montgomery 1913','editorial_status':'First-pass scan check',
+                'rationale':'Out of copyright'}]})
+
+    def test_approving_a_text_keeps_its_reading_check_current(self):
+        self.assertEqual(len(current_proofreading_reviews(self.conn)),1)
+        self.approve()
+        self.assertEqual(self.conn.execute('SELECT public_ok FROM texts').fetchone()[0],1)
+        self.assertEqual(len(current_proofreading_reviews(self.conn)),1)
+
+    def test_changing_the_text_still_invalidates_its_reading_check(self):
+        self.approve()
+        self.conn.execute("UPDATE texts SET content='DIFFERENT READING TEXT'"); self.conn.commit()
+        self.assertEqual(current_proofreading_reviews(self.conn),{})
+
+    def test_changing_the_locator_invalidates_it_too(self):
+        self.conn.execute("UPDATE texts SET locator='printed p. 999'"); self.conn.commit()
+        self.assertEqual(current_proofreading_reviews(self.conn),{})
 
 
 class AccessPointerTests(unittest.TestCase):

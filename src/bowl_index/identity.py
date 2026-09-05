@@ -7,18 +7,107 @@ from .dedupe import _identity_roots
 from .conflict_review import review_is_current
 
 
+# The release-gate facets. Names are load-bearing: the handoff gate, next_action
+# and the research console all address them by these keys.
 CORE_COVERAGE = {
     "location": {"current_location", "current_or_reported_collection"},
     "provenance": {
         "provenance", "provenance_summary", "findspot", "findspot_or_origin", "origin",
         "collection_history", "production_place", "excavation_context",
+        "geography", "geographic_association", "associated_find",
     },
-    "dating": {"dating", "period"},
+    "dating": {"dating", "period", "culture"},
     "dimensions": {"dimensions"},
     "material": {"material"},
-    "language": {"inscription_language", "script_or_language"},
+    "language": {"inscription_language", "script_or_language", "catalogue_language_codes"},
     "script": {"script", "script_classification"},
 }
+
+# The facets the scholarship actually turns on (META-006). The scoping review's
+# Phase 2 ledger names ten field groups; CORE_COVERAGE held only the physical and
+# bibliographic ones, so these claims existed in the corpus but were never counted
+# and never compared. Roles are kept apart on purpose: a client is not an author,
+# and collapsing them is the error META-007 exists to prevent.
+CONTENT_COVERAGE = {
+    "condition": {"condition"},
+    "vessel_form": {"vessel_form", "object_form"},
+    "text_form": {"line_count", "inscription_extent", "text_layout", "inscription_placement"},
+    "text_description": {
+        "text_content", "text_feature", "textual_feature", "text_characterization",
+    },
+    "client": {"client", "clients", "client_or_beneficiary"},
+    "target": {"target", "targets"},
+    "practitioner": {
+        "attributed_author", "handwriting_attribution", "scribal_attribution",
+        "handwriting_group",
+    },
+    "ritual": {
+        "text_purpose", "formula_genre", "named_demon", "named_angels", "text_tradition",
+        "installation_instruction",
+    },
+    "biblical_intertexts": {
+        "biblical_quotations", "biblical_quotation", "biblical_citation", "biblical_citations",
+    },
+    "parallels": {"text_parallel", "textual_parallel", "comparandum"},
+    "visual": {"iconography", "iconography_or_caption"},
+    "publication": {
+        "bibliography", "publication_status", "catalogue_concordance",
+        "publication_register_identifier", "publication_heading_identifier",
+        "translation_availability",
+    },
+    "authenticity_assessment": {"authenticity_assessment", "technical_test"},
+}
+
+# Every group that is counted for coverage and compared for conflicts.
+COVERAGE_GROUPS = {**CORE_COVERAGE, **CONTENT_COVERAGE}
+
+# Fields deliberately outside comparison, each with the reason. A claim field that
+# is neither grouped nor listed here is a gap, not a default: see
+# `unclassified_claim_fields` and tests/test_field_model.py.
+EXCLUDED_CLAIM_FIELDS = {
+    "dimensions_source_text": "Retained original source string behind a structured dimensions claim, not an independent assertion.",
+    "dating_context": "Context supporting a dating argument, not a competing date.",
+    "catalogue_description": "Free-text catalogue prose. Third-party expression rather than a comparable assertion, and withheld from public export.",
+    "findspot_evidence_level": "Grades the basis of a findspot claim (META-005); an assessment of a claim, not a rival claim.",
+    "findspot_evidence": "Grades the basis of a findspot claim (META-005).",
+    "findspot_assessment": "Grades the basis of a findspot claim (META-005).",
+    "provenance_quality": "Assesses the quality of a provenance claim (META-005).",
+    "former_location": "Ownership history is a sequence, not a competing description. Model it in `events` with the provenance event types.",
+    "historical_collection": "Ownership history is a sequence; see `events`.",
+    "historical_location_status": "Ownership history is a sequence; see `events`.",
+    "acquisition": "Acquisition is an event; see `events`.",
+    "exhibition_history": "Exhibition is an event; see `events`.",
+    "relationship": "Object-to-object relationship. Belongs in `object_relationship_assertions` (CONC-008), which stores direction and scope without merging identities.",
+    "scribal_relationship": "Object-to-object relationship; see `object_relationship_assertions`.",
+    "family_relationship": "Kinship between named persons. Belongs with the role modelling in META-007, not with a single-value comparison.",
+    "physical_record_ambiguity": "Records that a source may describe the same physical object twice; a dedupe signal, not a field value.",
+    "identification": "States what the object might be; the object_type and record_status columns carry this.",
+    "object_identification": "States what the object might be; see object_type and record_status.",
+    "identifier_warning": "Flags a wrong catalogue number in a publication; a correction note, not a claim about the bowl.",
+    "source_identity": "Describes the source record itself, not the bowl.",
+    "source_physical_description": "Describes the source carrier, for example a glass-plate negative, not the bowl.",
+    "source_creation_date": "Dates the source record, not the bowl.",
+    "collection_context": "Situates the object within a publication cohort; narrative context, not a comparable value.",
+    "export_status": "Legal or regulatory status of a sale, not a description of the object.",
+    "sale_estimate": "Market event. Each sale is its own occurrence, so two values are a history, not a disagreement.",
+    "sale_estimate_or_opening": "Market event; see sale_estimate.",
+    "sale_result": "Market event; see sale_estimate.",
+    "sale_offer": "Market event; see sale_estimate.",
+    "sale_price": "Market event; see sale_estimate.",
+    "sale_reserve": "Market event; see sale_estimate.",
+    "sale_location": "Market event; see sale_estimate.",
+    "offer_price": "Market event; see sale_estimate.",
+    "asking_price": "Market event; see sale_estimate.",
+    "starting_price": "Market event; see sale_estimate.",
+    "current_bid": "Market event; see sale_estimate.",
+}
+
+
+def unclassified_claim_fields(conn):
+    """Claim fields that are neither compared nor explicitly excluded."""
+    grouped = {field for fields in COVERAGE_GROUPS.values() for field in fields}
+    present = {row[0] for row in conn.execute("SELECT DISTINCT field FROM claims")}
+    return sorted(present - grouped - set(EXCLUDED_CLAIM_FIELDS))
 
 PROVENANCE_EVENT_TYPES = {"excavation", "find", "ownership", "acquisition", "sale", "transfer"}
 TEXT_EDITION_TYPES = {"inscription", "transcription", "transliteration"}
@@ -105,7 +194,7 @@ def identity_rows(conn):
         cluster_events = [item for object_id in member_ids for item in events[object_id]]
         cluster_media = [item for object_id in member_ids for item in media[object_id]]
         coverage = {
-            name: bool(fields & claim_fields) for name, fields in CORE_COVERAGE.items()
+            name: bool(fields & claim_fields) for name, fields in COVERAGE_GROUPS.items()
         }
         coverage["provenance"] = coverage["provenance"] or any(
             event["event_type"] in PROVENANCE_EVENT_TYPES for event in cluster_events
@@ -123,7 +212,7 @@ def identity_rows(conn):
         )
         next_action = next((name for name in core_order if not coverage[name]), "rights review")
         conflict_fields = []
-        for name, fields in CORE_COVERAGE.items():
+        for name, fields in COVERAGE_GROUPS.items():
             values = {
                 (claim["normalized_value"] or claim["value_text"] or claim["value_json"] or "")
                 .strip().casefold()
@@ -143,7 +232,7 @@ def identity_rows(conn):
             for field in conflict_fields
             if review_is_current(
                 conflict_reviews.get((identity_id, field)), member_ids,
-                [claim for claim in cluster_claims if claim["field"] in CORE_COVERAGE[field]],
+                [claim for claim in cluster_claims if claim["field"] in COVERAGE_GROUPS[field]],
             )
         }
         substantive_conflict_fields = [

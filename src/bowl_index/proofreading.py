@@ -11,8 +11,39 @@ def digest_text(value):
     return hashlib.sha256(value.encode('utf-8')).hexdigest()
 
 
-def text_fingerprint(row):
-    return digest_text(json.dumps(dict(row), ensure_ascii=False, sort_keys=True))
+# A proofreading review asserts that a text matches the scan. Whether that text may
+# be published is a separate decision recorded in text_publication_reviews, and
+# flipping public_ok must not invalidate the reading check.
+PUBLICATION_ADMIN_FIELDS = ('public_ok',)
+
+
+def text_fingerprint(row, include_publication_admin=True):
+    payload = dict(row)
+    if not include_publication_admin:
+        for field in PUBLICATION_ADMIN_FIELDS:
+            payload.pop(field, None)
+    return digest_text(json.dumps(payload, ensure_ascii=False, sort_keys=True))
+
+
+def _matches(review, row):
+    """A review is current while the text it checked is unchanged.
+
+    Compares against the reviewer's own after-snapshot rather than a hash of the
+    whole row, so a later publication decision does not invalidate a reading
+    check. Any change to the text itself still does. Falls back to the stored
+    digest when a snapshot is unavailable.
+    """
+    try:
+        after = json.loads(review['after_json'])
+    except (KeyError, TypeError, ValueError):
+        return review['result_text_sha256'] == text_fingerprint(row)
+    if not isinstance(after, dict) or 'content' not in after:
+        return review['result_text_sha256'] == text_fingerprint(row)
+    current = dict(row)
+    for field in PUBLICATION_ADMIN_FIELDS:
+        after.pop(field, None)
+        current.pop(field, None)
+    return all(current.get(key) == value for key, value in after.items())
 
 
 def current_text_reviews(conn):
@@ -21,7 +52,7 @@ def current_text_reviews(conn):
         latest[row['text_id']] = dict(row)
     texts = {r['id']: r for r in conn.execute('SELECT * FROM texts')}
     return {key: value for key, value in latest.items()
-            if key in texts and text_fingerprint(texts[key]) == value['result_text_sha256']}
+            if key in texts and _matches(value, texts[key])}
 
 
 def apply_proofreading(conn, manifest_path, project_root):

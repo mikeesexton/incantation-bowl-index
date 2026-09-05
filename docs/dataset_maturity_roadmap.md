@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-05T21:30:56+00:00`
+Generated: `2026-09-05T22:04:52+00:00`
 
 ## Portfolio status
 
@@ -10,9 +10,9 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 12 done · 14 in progress · 22 queued · 0 blocked |
+| Roadmap tasks | 14 done · 14 in progress · 20 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
-| Required handoff tasks complete | 4/24 |
+| Required handoff tasks complete | 5/24 |
 
 ### What is solid
 
@@ -21,11 +21,12 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
 - The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.
 - The public boundary is now positive rather than merely defensive: 45 texts are published on a stated rights basis with their editorial state declared, and every one of the 151 withheld texts still names its edition, exact locator and link so a reader can consult it.
+- The comparison model now covers the whole claim vocabulary: 66 fields grouped, 35 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list.
 
 ### What prevents release readiness
 
 - The index was built from findable online records - 567 of 753 sources are museum records - while the field's primary evidence is printed editions. Seventeen foundational works, including Isbell 1975, Naveh and Shaked, Pognon 1898, Yamauchi 1967 and all of Gordon 1934-1984, have no source record; publications exist only as identifier prefixes.
-- Identity and claim quality is not yet measured corpus-wide: 284 older field-difference decisions need evidence-level revalidation, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
+- Identity and claim quality is not yet measured corpus-wide: 312 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
 - Text and edition coverage remains sparse outside Montgomery: 312/791 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.
 - Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
@@ -40,16 +41,16 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Source appearances | 1616 |
 | Sources | 753 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 201 |
-| Triaged claim-field differences | 53/337 |
+| Identities triggering raw claim-difference flags | 214 |
+| Triaged claim-field differences | 53/365 |
 | Compatible differences | 38 |
-| Review required (missing or no longer valid) | 284 |
+| Review required (missing or no longer valid) | 312 |
 | Existing reviews requiring revalidation | 284 |
 | Substantive conflict instances | 15 across 13 identities |
 | All identities with a publication reference | 391/1320 (29.6%) |
 | Probable/confirmed identities with a publication reference | 312/794 (39.3%) |
 | Identities with a translation | 48 |
-| Scan-checked normalized reading texts | 0 |
+| Scan-checked normalized reading texts | 35 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 1 |
@@ -67,15 +68,35 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Field | Identities | Coverage |
 |---|---:|---:|
 | Location | 909 | 68.9% |
-| Provenance | 325 | 24.6% |
+| Provenance | 327 | 24.8% |
 | Dating | 482 | 36.5% |
 | Dimensions | 378 | 28.6% |
 | Material | 408 | 30.9% |
-| Language | 459 | 34.8% |
+| Language | 663 | 50.2% |
 | Script | 91 | 6.9% |
 | Text Edition | 1 | 0.1% |
 | Translation | 48 | 3.6% |
 | Image | 324 | 24.5% |
+
+### Content-facet coverage
+
+The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. These are counted and conflict-checked but are not release gates.
+
+| Facet | Identities | Coverage |
+|---|---:|---:|
+| Biblical Intertexts | 168 | 12.7% |
+| Condition | 139 | 10.5% |
+| Publication | 62 | 4.7% |
+| Client | 58 | 4.4% |
+| Ritual | 43 | 3.3% |
+| Text Form | 34 | 2.6% |
+| Practitioner | 29 | 2.2% |
+| Visual | 25 | 1.9% |
+| Text Description | 6 | 0.5% |
+| Authenticity Assessment | 4 | 0.3% |
+| Parallels | 4 | 0.3% |
+| Target | 2 | 0.2% |
+| Vessel Form | 2 | 0.2% |
 
 ## Maturity scale
 
@@ -106,7 +127,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 ## Current priority order
 
 1. SCHOL-001: acquire Waller's 2025 publication list. It is a library request rather than weeks of work, it is the only external control on completeness the field offers, and it has been the standing first priority since July. How complete this index is remains guesswork until it arrives.
-2. QA-008: reconcile the claim vocabulary with the comparison model before revalidating more of the conflict queue. Widening the model changes how many instances exist; doing it after means revalidating part of the queue twice.
+2. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches. The denominator is now stable: QA-008 widened the model and no further widening is planned, so this work will not need redoing. Dating (171) and provenance (123) are the two large groups and both are better tackled by source cohort than by identity.
 3. SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.
 4. RIGHTS-002: with texts now gated by a working ledger, media are the remaining hard block at 0/325. The same evidence-bound pattern applies; start with the 288 Penn images, which have a single rights holder and a single policy to establish.
 5. CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.
@@ -224,15 +245,15 @@ Add source-attributed findspots, current locations, collection and acquisition h
 - [ ] **META-005 — Grade findspot claims by evidence basis** · In progress · Research
   - Done when: Every probable or confirmed identity with a findspot claim records whether the place derives from documented controlled excavation, a museum or accessions register, a dealer or market report, later scholarly inference, or unverified evidence; original place claims and uncertainty remain source-attributed.
   - Evidence/status: Waller 2025, printed pp. 10–13, distinguishes documented excavation sites from unverified register and dealer provenances. BM 91711 has a separate source-attributed assessment marking its plausible Arban attribution unverified. Primary-source review of Schwab 1891 pp. 590–593 now enumerates three Dieulafoy mission Susiana bowls, N–P, with separate records, dimensions, and excavation-evidence assessments corroborated by Montgomery 1913 p. 19. Current museum accessions and precise contexts remain open.
-- [ ] **META-006 — Extend the field model to the content facets** · Queued · Mixed
+- [x] **META-006 — Extend the field model to the content facets** · Done · Mixed
   - Done when: People, Ritual, Intertexts, Visual and Scholarship are modelled field groups with coverage reporting and conflict comparison, not stray claim names.
-  - Evidence/status: The review's Phase 2 ledger specifies ten field groups; CORE_COVERAGE has seven, all physical or bibliographic. The claims already exist outside the model: 134 biblical_quotations from Waller 2022, 42 client, 27 text_purpose, 25 iconography, 16 handwriting_attribution, 10 formula_genre. None is counted, compared or queryable as a group.
+  - Evidence/status: Thirteen content groups added alongside the seven release-gate facets: condition, vessel_form, text_form, text_description, client, target, practitioner, ritual, biblical_intertexts, parallels, visual, publication and authenticity_assessment. They are counted for coverage and compared for conflicts, and they flow through identity_rows, the enrichment report and the identity export without changing next_action or the handoff gate. Biblical intertexts are the best-covered content facet at 168 identities (12.7%), then client 58, ritual 43, practitioner 29, publication 62, condition 139. Widening the language group with catalogue_language_codes raised language coverage from 459 (34.8%) to 663 (50.2%).
 - [ ] **META-007 — Separate the roles behind a named person** · Queued · Research
   - Done when: Every person claim records which role the source assigns - author, textual voice, copyist, producer, commissioner, client, beneficiary - with its uncertainty, and contested attributions link to the scholarship that contests them.
-  - Evidence/status: Eleven objects carry handwriting_attribution claims whose values are women's names, from Kedar 2019's contested female-authorship argument. Saar 2024 and Manekin-Bamberger 2025 respond by separating the roles. The field name asserts more than the source does; keep the claim, add the role and the dispute link.
+  - Evidence/status: Eleven objects carry handwriting_attribution claims whose values are women's names, from Kedar 2019's contested female-authorship argument. Saar 2024 and Manekin-Bamberger 2025 respond by separating the roles. The field name asserts more than the source does; keep the claim, add the role and the dispute link. QA-008 laid the groundwork: client, target and practitioner are separate comparison groups rather than one people group, so a client name and a contested authorship attribution can no longer be compared against each other. What remains is recording the role and the dispute link on each claim.
 - [ ] **META-008 — Bring Mandaic, Syriac and Pahlavi to parity** · Queued · Research
   - Done when: Each language group has enumerated corpora from its primary editions, and the 819 records with no language claim are assessed or explicitly marked unreadable or unknown.
-  - Evidence/status: Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002.
+  - Evidence/status: Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002. Since QA-008, the 205 NLI catalogue language codes count toward language coverage. Note that none of those 205 objects also carries an edition-based language claim, so they are unverified catalogue classifications rather than corroborated attributions; the earlier expectation that they would expose catalogue-versus-edition disagreements was not borne out.
 
 ### RIGHTS — Images and rights
 
@@ -275,7 +296,7 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
   - Evidence/status: Implemented in conflict_review.py, identity.py, roadmap.py and current conflict reports. Regression tests cover changed evidence and unsafe equivalence; 313 reviews reopen in the existing corpus. See data/reports/quality_review_2026-09-04.md.
 - [ ] **QA-002 — Revalidate the historical rule-assisted conflict triage** · In progress · Research
   - Done when: All 313 reopened instances have source-level decisions on their exact current evidence, with append-only review history and explicit uncertainty preserved.
-  - Evidence/status: 304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata. The denominator is bounded by the seven CORE_COVERAGE groups and is an undercount, not a measured total; do QA-008 first so this queue is not revalidated twice.
+  - Evidence/status: 304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata. QA-008 is done, so the denominator is now the full claim vocabulary: 365 instances, 53 current, 312 needing review. Revalidation can proceed without being redone.
 - [ ] **QA-003 — Audit a stratified sample of identity and extraction decisions** · Queued · Research
   - Done when: Publish reproducible sample selection across institutions, market records, status classes and merge methods; check primary evidence and report denominators, error categories and uncertainty.
   - Evidence/status: Zero generated pending dedupe candidates is queue completion, not measured identity accuracy. Current review examined architecture, integrity, archive hashes, aggregate metrics and selected rule evidence, not all objects.
@@ -291,9 +312,9 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
 - [x] **QA-007 — Preserve originals and evidence for text proofreading** · Done · Engineering
   - Done when: Scan-bound revision batches preserve original and corrected texts, reject stale evidence, and prevent OCR reimport from overwriting checked work.
   - Evidence/status: Migration 006, thirty-five current scan-checked reading texts and passing regression tests; exact originals retained and private text histories redacted from research exports. Completion batch replays with zero changes.
-- [ ] **QA-008 — Reconcile the claim vocabulary with the comparison model** · Queued · Engineering
+- [x] **QA-008 — Reconcile the claim vocabulary with the comparison model** · Done · Engineering
   - Done when: Every claim field is either in a CORE_COVERAGE group or explicitly excluded with a recorded reason; a test fails when an unclassified field appears; and the conflict counts are reported against that full denominator.
-  - Evidence/status: claims.field is free text and holds about 100 values, many synonyms - provenance / provenance_summary / provenance_quality, findspot / findspot_or_origin / findspot_evidence_level, client / clients / client_or_beneficiary. Only seven hard-coded groups are compared, so 205 catalogue_language_codes claims are invisible to both language coverage and conflict detection even where an edition-based inscription_language claim on the same object disagrees. The 337/284 queue is therefore an undercount by construction. dimensions_source_text is correctly excluded as a retained original string; note it records circumference, not diameter.
+  - Evidence/status: All 101 claim fields are now classified: 66 in a comparison group, 35 explicitly excluded with a stated reason, 0 unclassified. `unclassified_claim_fields` reports any new field and `ibi stats` surfaces it; tests/test_field_model.py fails on a field that is in two groups, both grouped and excluded, excluded without a reason, or neither. The conflict denominator moved from 337 to 365 with zero existing decisions invalidated, so the backlog is 312 rather than 284 and is now a measured total rather than an artefact of seven hard-coded groups. Exclusions carry their reason: market values are per-sale events, ownership history is event-shaped and belongs in `events`, object relationships belong in `object_relationship_assertions`, and META-005 evidence gradings assess a claim rather than rival it.
 
 ## Mac mini handoff gate
 
@@ -304,7 +325,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `284`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `312`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `39.3%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
@@ -333,7 +354,7 @@ Overall gate: **NOT READY**
 - [x] QA-005 — Implement evidence-bound subset reviews and append-only history
 - [ ] SCHOL-002 — Seed the missing foundational bibliography
 - [ ] SCHOL-004 — Make publications first-class records, not identifier prefixes
-- [ ] QA-008 — Reconcile the claim vocabulary with the comparison model
+- [x] QA-008 — Reconcile the claim vocabulary with the comparison model
 - [ ] RIGHTS-004 — Restore links for sources whose URL matches a private capture
 
 ### What crosses the threshold
@@ -369,3 +390,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** Continued META-005 into the primary literature: visually checked Schwab 1891 pp. 590–593 and Montgomery 1913 p. 19, enumerated the three Dieulafoy mission Susiana bowls N–P as separate probable objects, and recorded exact dimensions, condition, beneficiary uncertainty, excavation events, and source-basis assessments. Modern museum accessions and trench-level contexts remain unresolved.
 - **2026-09-05:** Imported the July 2026 systematic scoping review and checked the corpus against it. Added the SCHOL workstream, TEXT-007, META-006 to META-008 and QA-008. Findings: seventeen foundational editions absent from `sources`; publications modelled only as identifier prefixes, so publication_reference_pct measures designations rather than editions; the claim vocabulary has outgrown the seven hard-coded comparison groups, making the 337/284 conflict queue an undercount; the field model omits the review's People, Ritual, Intertexts, Visual and Scholarship groups; Mandaic and Pahlavi lag their working counts. Re-ordered priorities to put the control list and the comparison model ahead of queue depth. No corpus writes. Repository placed under version control - it had no commits - and `ibi state` now records a per-table fingerprint so two agents can detect corpus drift.
 - **2026-09-05:** Added an append-only text publication ledger (migration 011) and `ibi ingest-text-publication`. Approved 45 texts: Montgomery's 35 scan-checked English reading texts as expired US copyright, and 10 index summaries as own work, each recording a rights basis, an attribution and an explicit editorial status. Approvals are bound to the text's content fingerprint, so the outstanding TEXT-006 specialist review will revoke them rather than silently changing published text. Extended the public export so a withheld text keeps its citation, locator, link and access status, and added an editions table naming 476 publication locations across 472 objects. Untracked the dated research snapshots and published the gated projection at data/public/2026-09-05 instead.
+- **2026-09-05:** Completed QA-008 and META-006. Classified all 101 claim fields — 66 grouped, 35 excluded with reasons, none unclassified — and added thirteen content groups for the scoping review's People, Ritual, Intertexts, Visual and Scholarship facets. Conflict instances moved 337 to 365 with no existing decision invalidated; the backlog is 312 and is now a measured total. Language coverage rose from 34.8% to 50.2% because 205 NLI catalogue codes now count. Corrected an earlier overstatement: no object carries both a catalogue code and an edition-based language claim, so that specific disagreement does not occur in the data; the effect is on coverage, not conflicts. Client, target and practitioner are separate groups, so contested authorship attributions can no longer be compared against client names.

@@ -25,6 +25,54 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — QA-008 and META-006: the field model
+
+**Claimed:** QA-008, META-006 (both now done)
+**Corpus:** unchanged — state digest `8a19ea187a26`. Model and code only.
+**Tests:** 119 passed (106 before; +10 field model, +3 proofreading independence)
+
+- Classified all **101 claim fields**: 66 in a comparison group, 35 explicitly
+  excluded with a stated reason, 0 unclassified. `ibi stats` reports any field
+  that is neither, and `tests/test_field_model.py` fails on a field in two
+  groups, in both lists, excluded without a reason, or in neither.
+- Added **13 content groups** for the scoping review's People, Ritual,
+  Intertexts, Visual and Scholarship facets. Roles are kept apart — client,
+  target and practitioner are separate groups — so a client name can no longer
+  be compared against a contested authorship attribution. That is the
+  groundwork META-007 needs.
+- Exclusions carry their reasons, and most point somewhere better: market values
+  are per-sale events; ownership history is event-shaped and belongs in
+  `events`; object relationships belong in `object_relationship_assertions`;
+  META-005 evidence gradings assess a claim rather than rival it.
+- **Conflict denominator 337 → 365, with zero existing decisions invalidated.**
+  The backlog is 312 rather than 284, and it is now a measured total instead of
+  an artefact of seven hard-coded groups. New instances: publication 8,
+  condition 7, text_form 3, ritual 2, biblical_intertexts 1, plus 6 provenance
+  and 1 language from the widened core groups.
+- **Language coverage 459 (34.8%) → 663 (50.2%)**, because the 205 NLI
+  catalogue codes now count. Biblical intertexts is the best-covered content
+  facet at 168 (12.7%).
+- **Corrected an earlier overstatement.** The alignment report said 205 objects
+  carried a catalogue language code disagreeing with an edition-based claim.
+  Measured: **zero** objects carry both, so that disagreement does not occur in
+  the data. The effect is on coverage, not conflicts. Report and roadmap
+  amended, and META-008 now notes those 205 are unverified catalogue
+  classifications rather than corroborated attributions.
+- **Fixed a regression I introduced yesterday.** Approving the Montgomery texts
+  flipped `texts.public_ok`, and the proofreading fingerprint hashed the whole
+  row — so all 35 scan-checked reading texts silently went stale and the roadmap
+  reported 0. Proofreading validity now compares against the reviewer's own
+  after-snapshot, ignoring publication administration. A publication decision no
+  longer invalidates a reading check; any change to the text still does. Both
+  directions are tested.
+- Roadmap now reports content-facet coverage separately from the release gates,
+  so adding a content group cannot quietly move a gate.
+- Next: `QA-002`/`CONC-005`, the 312-case revalidation queue. The denominator is
+  stable now, so that work will not need redoing. Dating (171) and provenance
+  (123) are the two large groups; both are better tackled by source cohort than
+  by identity. **`SCHOL-001` still needs you** — the Marcus–Mokhtarian volume
+  through a research library or interlibrary loan.
+
 ## 2026-09-05 — Claude — Attribute the project to Moses Gabai
 
 **Claimed:** none

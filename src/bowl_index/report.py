@@ -2,6 +2,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
+from .identity import unclassified_claim_fields
+
+
 def _count(conn, sql, params=()):
     return conn.execute(sql, params).fetchone()[0]
 
@@ -24,8 +27,12 @@ def statistics(conn):
         if root_a != root_b:
             parent[root_b] = root_a
     estimated_distinct = len({find(object_id) for object_id in object_ids})
+    unclassified = unclassified_claim_fields(conn)
     return {
         "candidate_objects": total,
+        # A claim field outside the comparison model is neither counted nor
+        # conflict-checked, so it has to be visible rather than silent (QA-008).
+        "unclassified_claim_fields": unclassified,
         "estimated_distinct_objects_after_resolved_dedupe": estimated_distinct,
         "resolved_duplicate_records": total - estimated_distinct,
         "probable_or_confirmed": _count(conn, "SELECT count(*) FROM objects WHERE record_status IN ('probable','confirmed')"),

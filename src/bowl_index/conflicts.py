@@ -7,7 +7,7 @@ from pathlib import Path
 
 from .ids import new_id
 from .conflict_review import _safe_classification, review_is_current, evidence_fingerprint
-from .identity import CORE_COVERAGE, identity_rows
+from .identity import COVERAGE_GROUPS, identity_rows
 
 
 SUBSTANTIVE_DISPOSITIONS = {
@@ -32,9 +32,9 @@ def conflict_instances(conn):
                 "WHERE c.object_id IN (%s) AND c.field IN (%s) ORDER BY c.field,c.id"
                 % (
                     placeholders,
-                    ",".join("?" for _ in CORE_COVERAGE[field_group]),
+                    ",".join("?" for _ in COVERAGE_GROUPS[field_group]),
                 ),
-                member_ids + list(CORE_COVERAGE[field_group]),
+                member_ids + list(COVERAGE_GROUPS[field_group]),
             )]
             values_by_field = defaultdict(set)
             for claim in claims:

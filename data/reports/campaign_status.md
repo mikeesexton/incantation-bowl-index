@@ -1,10 +1,11 @@
 # Discovery campaign status
 
-Generated: `2026-09-05T21:30:56+00:00`
+Generated: `2026-09-05T22:04:52+00:00`
 
 ## Corpus
 
 - Candidate objects: **1588**
+- Unclassified claim fields: **[]**
 - Estimated distinct objects after resolved dedupe: **1320**
 - Resolved duplicate records: **268**
 - Probable or confirmed: **872**

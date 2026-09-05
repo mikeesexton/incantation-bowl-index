@@ -94,14 +94,19 @@ Conflict detection compares claims only within the seven groups hard-coded in
 `identity.CORE_COVERAGE`. A field outside those groups is never compared and
 never flagged. The clearest case is **`catalogue_language_codes`**: 205 objects
 carry an NLI MARC language code (`heb`) that is invisible both to language
-coverage and to conflict detection, even where an edition-based
-`inscription_language` claim on the same object says Jewish Babylonian Aramaic
-or Mandaic. That disagreement is not noise — it is exactly the
-catalogue-classification-versus-scribal-tradition problem the review devotes
-§2.5 to, and the index is currently silent about 205 instances of it.
+coverage and to conflict detection.
 
 So the "337 flagged instances, 284 pending" queue is an undercount by
 construction, not a measured total. That should be said in the roadmap.
+
+> **Resolved 5 September, and one claim here needed narrowing.** QA-008
+> classified all 101 claim fields. The effect of `catalogue_language_codes` is a
+> *coverage* effect, not a conflict effect: **zero** objects carry both a
+> catalogue language code and an edition-based language claim, so the
+> catalogue-versus-edition disagreement described above does not currently occur
+> in the data. What did change is that those 205 objects now count as having a
+> language at all — coverage moved from 459 (34.8%) to 663 (50.2%). The conflict
+> denominator moved from 337 to 365, with no existing decision invalidated.
 
 By contrast `dimensions_source_text` (203 claims, e.g. `גובה: 221 ממ, הקף: 443 ממ`)
 is correctly excluded: it is the retained original string behind a structured
@@ -130,6 +135,11 @@ coverage, do not get conflict-checked, and cannot be queried as a group. The 134
 Waller biblical quotations are the single most analytically valuable thing in
 the corpus after Montgomery, and nothing in the roadmap currently tracks them.
 → `META-006`
+
+> **Resolved 5 September.** Thirteen content groups were added. Biblical
+> intertexts are now the best-covered content facet at 168 identities (12.7%),
+> ahead of client (58), ritual (43) and practitioner (29). Roles are kept apart
+> rather than merged into one "people" group, which is what META-007 asks for.
 
 ## 5. Two interpretive guardrails the review requires and the index lacks
 

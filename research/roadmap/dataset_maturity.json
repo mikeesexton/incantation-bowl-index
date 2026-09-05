@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-05T22:35:00+00:00",
+  "updated_at": "2026-09-05T23:20:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -8,11 +8,12 @@
       "The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.",
       "Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.",
       "The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.",
-      "The public boundary is now positive rather than merely defensive: 45 texts are published on a stated rights basis with their editorial state declared, and every one of the 151 withheld texts still names its edition, exact locator and link so a reader can consult it."
+      "The public boundary is now positive rather than merely defensive: 45 texts are published on a stated rights basis with their editorial state declared, and every one of the 151 withheld texts still names its edition, exact locator and link so a reader can consult it.",
+      "The comparison model now covers the whole claim vocabulary: 66 fields grouped, 35 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list."
     ],
     "blockers": [
       "The index was built from findable online records - 567 of 753 sources are museum records - while the field's primary evidence is printed editions. Seventeen foundational works, including Isbell 1975, Naveh and Shaked, Pognon 1898, Yamauchi 1967 and all of Gordon 1934-1984, have no source record; publications exist only as identifier prefixes.",
-      "Identity and claim quality is not yet measured corpus-wide: 284 older field-difference decisions need evidence-level revalidation, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
+      "Identity and claim quality is not yet measured corpus-wide: 312 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
       "Text and edition coverage remains sparse outside Montgomery: 312/791 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.",
       "Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.",
       "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
@@ -321,10 +322,10 @@
         {
           "id": "META-006",
           "title": "Extend the field model to the content facets",
-          "status": "queued",
+          "status": "done",
           "owner": "Mixed",
           "done_when": "People, Ritual, Intertexts, Visual and Scholarship are modelled field groups with coverage reporting and conflict comparison, not stray claim names.",
-          "evidence": "The review's Phase 2 ledger specifies ten field groups; CORE_COVERAGE has seven, all physical or bibliographic. The claims already exist outside the model: 134 biblical_quotations from Waller 2022, 42 client, 27 text_purpose, 25 iconography, 16 handwriting_attribution, 10 formula_genre. None is counted, compared or queryable as a group."
+          "evidence": "Thirteen content groups added alongside the seven release-gate facets: condition, vessel_form, text_form, text_description, client, target, practitioner, ritual, biblical_intertexts, parallels, visual, publication and authenticity_assessment. They are counted for coverage and compared for conflicts, and they flow through identity_rows, the enrichment report and the identity export without changing next_action or the handoff gate. Biblical intertexts are the best-covered content facet at 168 identities (12.7%), then client 58, ritual 43, practitioner 29, publication 62, condition 139. Widening the language group with catalogue_language_codes raised language coverage from 459 (34.8%) to 663 (50.2%)."
         },
         {
           "id": "META-007",
@@ -332,7 +333,7 @@
           "status": "queued",
           "owner": "Research",
           "done_when": "Every person claim records which role the source assigns - author, textual voice, copyist, producer, commissioner, client, beneficiary - with its uncertainty, and contested attributions link to the scholarship that contests them.",
-          "evidence": "Eleven objects carry handwriting_attribution claims whose values are women's names, from Kedar 2019's contested female-authorship argument. Saar 2024 and Manekin-Bamberger 2025 respond by separating the roles. The field name asserts more than the source does; keep the claim, add the role and the dispute link."
+          "evidence": "Eleven objects carry handwriting_attribution claims whose values are women's names, from Kedar 2019's contested female-authorship argument. Saar 2024 and Manekin-Bamberger 2025 respond by separating the roles. The field name asserts more than the source does; keep the claim, add the role and the dispute link. QA-008 laid the groundwork: client, target and practitioner are separate comparison groups rather than one people group, so a client name and a contested authorship attribution can no longer be compared against each other. What remains is recording the role and the dispute link on each claim."
         },
         {
           "id": "META-008",
@@ -340,7 +341,7 @@
           "status": "queued",
           "owner": "Research",
           "done_when": "Each language group has enumerated corpora from its primary editions, and the 819 records with no language claim are assessed or explicitly marked unreadable or unknown.",
-          "evidence": "Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002."
+          "evidence": "Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002. Since QA-008, the 205 NLI catalogue language codes count toward language coverage. Note that none of those 205 objects also carries an edition-based language claim, so they are unverified catalogue classifications rather than corroborated attributions; the earlier expectation that they would expose catalogue-versus-edition disagreements was not borne out."
         }
       ]
     },
@@ -453,7 +454,7 @@
           "status": "in_progress",
           "owner": "Research",
           "done_when": "All 313 reopened instances have source-level decisions on their exact current evidence, with append-only review history and explicit uncertainty preserved.",
-          "evidence": "304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata. The denominator is bounded by the seven CORE_COVERAGE groups and is an undercount, not a measured total; do QA-008 first so this queue is not revalidated twice."
+          "evidence": "304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata. QA-008 is done, so the denominator is now the full claim vocabulary: 365 instances, 53 current, 312 needing review. Revalidation can proceed without being redone."
         },
         {
           "id": "QA-003",
@@ -498,10 +499,10 @@
         {
           "id": "QA-008",
           "title": "Reconcile the claim vocabulary with the comparison model",
-          "status": "queued",
+          "status": "done",
           "owner": "Engineering",
           "done_when": "Every claim field is either in a CORE_COVERAGE group or explicitly excluded with a recorded reason; a test fails when an unclassified field appears; and the conflict counts are reported against that full denominator.",
-          "evidence": "claims.field is free text and holds about 100 values, many synonyms - provenance / provenance_summary / provenance_quality, findspot / findspot_or_origin / findspot_evidence_level, client / clients / client_or_beneficiary. Only seven hard-coded groups are compared, so 205 catalogue_language_codes claims are invisible to both language coverage and conflict detection even where an edition-based inscription_language claim on the same object disagrees. The 337/284 queue is therefore an undercount by construction. dimensions_source_text is correctly excluded as a retained original string; note it records circumference, not diameter."
+          "evidence": "All 101 claim fields are now classified: 66 in a comparison group, 35 explicitly excluded with a stated reason, 0 unclassified. `unclassified_claim_fields` reports any new field and `ibi stats` surfaces it; tests/test_field_model.py fails on a field that is in two groups, both grouped and excluded, excluded without a reason, or neither. The conflict denominator moved from 337 to 365 with zero existing decisions invalidated, so the backlog is 312 rather than 284 and is now a measured total rather than an artefact of seven hard-coded groups. Exclusions carry their reason: market values are per-sale events, ownership history is event-shaped and belongs in `events`, object relationships belong in `object_relationship_assertions`, and META-005 evidence gradings assess a claim rather than rival it."
         }
       ]
     }
@@ -627,11 +628,15 @@
     {
       "date": "2026-09-05",
       "note": "Added an append-only text publication ledger (migration 011) and `ibi ingest-text-publication`. Approved 45 texts: Montgomery's 35 scan-checked English reading texts as expired US copyright, and 10 index summaries as own work, each recording a rights basis, an attribution and an explicit editorial status. Approvals are bound to the text's content fingerprint, so the outstanding TEXT-006 specialist review will revoke them rather than silently changing published text. Extended the public export so a withheld text keeps its citation, locator, link and access status, and added an editions table naming 476 publication locations across 472 objects. Untracked the dated research snapshots and published the gated projection at data/public/2026-09-05 instead."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Completed QA-008 and META-006. Classified all 101 claim fields — 66 grouped, 35 excluded with reasons, none unclassified — and added thirteen content groups for the scoping review's People, Ritual, Intertexts, Visual and Scholarship facets. Conflict instances moved 337 to 365 with no existing decision invalidated; the backlog is 312 and is now a measured total. Language coverage rose from 34.8% to 50.2% because 205 NLI catalogue codes now count. Corrected an earlier overstatement: no object carries both a catalogue code and an edition-based language claim, so that specific disagreement does not occur in the data; the effect is on coverage, not conflicts. Client, target and practitioner are separate groups, so contested authorship attributions can no longer be compared against client names."
     }
   ],
   "priorities": [
     "SCHOL-001: acquire Waller's 2025 publication list. It is a library request rather than weeks of work, it is the only external control on completeness the field offers, and it has been the standing first priority since July. How complete this index is remains guesswork until it arrives.",
-    "QA-008: reconcile the claim vocabulary with the comparison model before revalidating more of the conflict queue. Widening the model changes how many instances exist; doing it after means revalidating part of the queue twice.",
+    "QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches. The denominator is now stable: QA-008 widened the model and no further widening is planned, so this work will not need redoing. Dating (171) and provenance (123) are the two large groups and both are better tackled by source cohort than by identity.",
     "SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.",
     "RIGHTS-002: with texts now gated by a working ledger, media are the remaining hard block at 0/325. The same evidence-bound pattern applies; start with the 288 Penn images, which have a single rights holder and a single policy to establish.",
     "CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.",
