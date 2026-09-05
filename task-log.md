@@ -25,6 +25,32 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Add MIT and CC BY 4.0, and correct a licence overstatement
+
+**Claimed:** none
+**Corpus:** unchanged — state digest `220020601c92`
+**Tests:** 106 passed
+
+- MIT for the code (`src/`, `tests/`, `migrations/`, `web/`, `config/`),
+  CC BY 4.0 for data, documentation and research materials. `docs/licensing.md`
+  carries the scope map, the exceptions, and the attribution string.
+- Two things the CC BY grant deliberately does not reach, because they are not
+  ours to give: the 35 Montgomery translations are **public domain** and are
+  offered as such rather than licensed — applying a licence to public-domain
+  material claims a right nobody holds — and material from narrower-licensed
+  sources is withheld rather than relicensed.
+- **Corrected an error in the previous session.** `docs/project-rules.md` and my
+  summary both said Waller 2022's biblical-quotation data was in the public
+  dataset as an example of "facts are publishable". It is not: all 134 rows are
+  withheld and carry only a pointer. Worse, Waller 2022 is **CC BY-NC 4.0**,
+  which forbids commercial use and so cannot be relicensed under CC BY 4.0 at
+  all. The rule now says to check a source's licence before approving anything
+  derived from it.
+- The licence, its URL, the attribution string and the scope note are now written
+  into every `ibi export-public` manifest, so they travel with the data rather
+  than living only in the repository.
+- Next unchanged: `RIGHTS-002` for the 288 Penn images, then `SCHOL-001`.
+
 ## 2026-09-05 — Claude — Publish 45 texts on a recorded basis; make the repo public-ready
 
 **Claimed:** TEXT-008 (new), RIGHTS-004 (new, queued)

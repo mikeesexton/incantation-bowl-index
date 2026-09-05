@@ -99,8 +99,13 @@ level: which publications carry this bowl, and where.
 
 Facts about a text are always publishable. "This bowl quotes Zechariah 3:2",
 the client's name, the line count, the formula type, the demons invoked — those are
-facts, not the editor's expression. That is why Waller 2022's biblical-quotation
-data is in the public dataset while his prose is not.
+facts, not the editor's expression.
+
+Watch the source's own licence, though, because a narrower one travels with the
+material. Waller 2022 is CC BY-NC 4.0, which forbids commercial use and therefore
+cannot be relicensed under this repository's CC BY 4.0. Its 134 derived rows are
+withheld and carry only their pointer. Check the source's licence before approving
+anything derived from it, and see [`licensing.md`](licensing.md).
 
 A source's copyright status is necessary but not sufficient. The editorial state of
 the stored row is declared too, because a normalized reading text produced from a
@@ -109,7 +114,8 @@ fingerprint: a later proofreading revision revokes the approval automatically ra
 than carrying it silently onto changed text.
 
 Record decisions with `ibi ingest-text-publication` against a manifest under
-`research/reviews/`. Never set `texts.public_ok` by hand — it is derived from the
+`research/reviews/`, and check [`licensing.md`](licensing.md) for what this
+repository can and cannot license. Never set `texts.public_ok` by hand — it is derived from the
 ledger and will be overwritten on the next sync.
 
 ### Script is not religion

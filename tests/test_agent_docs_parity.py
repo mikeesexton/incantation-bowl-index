@@ -32,6 +32,7 @@ class AgentDocsParityTests(unittest.TestCase):
             'docs/conflict_review_workflow.md', 'docs/evidence_review_and_release.md',
             'docs/dataset_maturity_roadmap.md', 'research/literature/README.md',
             'research/roadmap/dataset_maturity.json', 'task-log.md',
+            'docs/licensing.md', 'LICENSE', 'LICENSE-DATA',
         ):
             self.assertTrue((ROOT / relative).exists(), '%s is referenced but missing' % relative)
 

@@ -90,6 +90,22 @@ A physical bowl is not the same thing as a catalogue entry, auction lot, publica
 
 See [docs/research_protocol.md](docs/research_protocol.md) for the discovery and deduplication protocol.
 
+## Licence
+
+Code is [MIT](LICENSE). Data, documentation, and research materials are
+[CC BY 4.0](LICENSE-DATA). Attribute as:
+
+> Gabai, Moses. *Incantation Bowl Index*. https://github.com/mikeesexton/incantation-bowl-index
+
+Two things the grant does not reach, because they are not this project's to give:
+the 35 Montgomery 1913 translations are public domain and are offered as such
+rather than under a licence, and material from sources with narrower terms is
+withheld rather than relicensed — Waller 2022 is CC BY-NC 4.0, so its 134 derived
+rows carry only a citation and a link. Media are URLs; nothing here licenses an
+image. Full scope and exceptions: [`docs/licensing.md`](docs/licensing.md).
+
+When you reuse a record, cite the source it names rather than this index.
+
 ## Working here
 
 Two AI agents share this repository — Claude Code and Codex — alongside Mike.

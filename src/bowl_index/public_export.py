@@ -127,6 +127,17 @@ def export_public(conn, destination):
             'No capture records/files, claim payloads, notes, raw JSON, or review history. No public dashboard is deployed. '
             'A withheld text keeps its citation, locator and link so a reader can consult the edition; '
             'the editions table names where each object has been published.',
+            'license': 'CC-BY-4.0',
+            'license_url': 'https://creativecommons.org/licenses/by/4.0/',
+            'attribution': 'Gabai, Moses. Incantation Bowl Index. '
+                           'https://github.com/mikeesexton/incantation-bowl-index',
+            'license_scope': (
+                'Covers this project\'s own contribution: records, concordances, judgments, '
+                'summaries, and the selection and arrangement. Text rows marked '
+                'public_domain_expired in the publication ledger are public domain and are not '
+                'licensed here. Withheld rows carry a pointer only; the source\'s own terms '
+                'govern them. Media are URLs and none is approved for reuse. See docs/licensing.md.'
+            ),
             'texts_included_rows': len(approved_texts),
             'texts_withheld_rows': len(tables['texts']) - len(approved_texts),
             'media_approved_rows': len(approved), 'media_withheld_rows': len(evidence)-len(approved), 'tables': {}}
