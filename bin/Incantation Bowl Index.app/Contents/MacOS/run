@@ -1,0 +1,44 @@
+#!/bin/bash
+# Opens the private research console. Double-clickable; no Terminal required.
+#
+# The console reads the working database live, so whatever it shows is current
+# by construction — there is nothing to rebuild before opening it.
+set -uo pipefail
+
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$HERE/../../../.." && pwd)"      # …/bin/<App>.app/Contents/MacOS -> repo root
+PORT="${IBI_PORT:-8765}"
+URL="http://127.0.0.1:${PORT}"
+LOG="$ROOT/data/private/console.log"
+
+say() { osascript -e "display dialog \"$1\" buttons {\"OK\"} default button 1 with title \"Incantation Bowl Index\"" >/dev/null 2>&1; }
+
+alive() { curl -fsS -m 2 -o /dev/null "$URL" 2>/dev/null; }
+
+# Already serving? Just bring it up.
+if alive; then open "$URL"; exit 0; fi
+
+PY="$ROOT/.venv/bin/python"
+if [ ! -x "$PY" ]; then
+  say "No Python environment found at:\n\n$ROOT/.venv\n\nRun this once in Terminal:\n\npython3 -m venv .venv && .venv/bin/python -m pip install -e ."
+  exit 1
+fi
+
+# Something else on the port?
+if lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
+  say "Port $PORT is in use by another program, and it is not the console.\n\nClose it, or set IBI_PORT to a different port."
+  exit 1
+fi
+
+mkdir -p "$(dirname "$LOG")"
+{ echo; echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) starting console ==="; } >> "$LOG"
+cd "$ROOT" || exit 1
+PYTHONPATH="$ROOT/src" nohup "$PY" -m bowl_index.cli serve --port "$PORT" >> "$LOG" 2>&1 &
+
+for _ in $(seq 1 40); do
+  if alive; then open "$URL"; exit 0; fi
+  sleep 0.5
+done
+
+say "The console did not start within 20 seconds.\n\nLast lines of the log:\n\n$(tail -n 8 "$LOG" 2>/dev/null)"
+exit 1

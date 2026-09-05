@@ -134,4 +134,4 @@ The future dashboard should consume reviewed exports or a read-only API, never t
 
 ## Research console
 
-Run `ibi serve` and open `http://127.0.0.1:8765` to use the private research console. It provides corpus-wide identity search, evidence dossiers, enrichment queues, and a reversible concordance workbench. The server refuses non-local bindings and should never be placed directly on the public internet. See the [research console guide](docs/research_console.md).
+Double-click **`bin/Incantation Bowl Index.app`**, or keep it in the Dock — it starts the console if it is not running, opens your browser, and never starts a second copy. `bin/stop-console.command` stops it. Or run `ibi serve` and open `http://127.0.0.1:8765` to use the private research console. It provides corpus-wide identity search, evidence dossiers, enrichment queues, and a reversible concordance workbench. The server refuses non-local bindings and should never be placed directly on the public internet. See the [research console guide](docs/research_console.md).

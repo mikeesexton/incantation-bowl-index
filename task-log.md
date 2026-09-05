@@ -25,6 +25,30 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — A clickable launcher for the console
+
+**Claimed:** none
+**Corpus:** unchanged
+**Tests:** 131 passed
+
+- Added `bin/Incantation Bowl Index.app`, a hand-built macOS bundle: no build
+  step, no AppleScript, just `Info.plist` plus a shell script, so it lives in
+  Git like any other file and works from Finder, the Dock or Spotlight.
+- Behaviour: if the console is already up it just opens the browser; otherwise
+  it starts it in the background, waits for it to answer, then opens the
+  browser. `LSUIElement` keeps it out of the Dock switcher and no Terminal
+  window appears. Cold start measured at **0.69s**, and a second click leaves
+  exactly one listener.
+- Failure modes give a dialog rather than silence: missing `.venv` (with the
+  one-line fix), or the port occupied by something else. Logs to
+  `data/private/console.log`; `IBI_PORT` overrides the port.
+- `bin/stop-console.command` stops it.
+- Nothing needs rebuilding before opening — the console reads the working
+  database live, so it is current by construction.
+- Tested cold start, warm start and double-click safety before committing.
+
+---
+
 ## 2026-09-05 — Claude — An acquisition register
 
 **Claimed:** SCHOL-005 (new, in progress)
