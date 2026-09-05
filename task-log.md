@@ -61,8 +61,21 @@ the dated reports under `data/reports/`.
 - Wrote the three-layer text rule into `docs/project-rules.md` — the ancient
   text is free, a modern transcription and translation are not, and facts about
   a text always are. Moved the provenance disclaimer to the top of the README.
+- **Rewrote history before pushing.** The snapshots were still in the first
+  commit, so removing them from the tree was not enough. `git filter-branch`
+  stripped both paths from all five commits, the backup refs were purged and the
+  objects collected. Verified by scanning all 224 blobs in history for the
+  catalogue prose: zero hits. Repository is 1.2 MB. **Anyone holding an older
+  clone must re-clone** — the commit hashes all changed.
+- Pushed public: https://github.com/mikeesexton/incantation-bowl-index
+  Remote verified at 208 files, 5 commits, nothing under `data/exports/` but the
+  placeholder, and the live manifest reporting 45 texts included / 151 withheld
+  / 0 media approved.
 - Deliberately **not** done: no media approved (still 0/325), no bibliography
-  seed ingested, no claim data published.
+  seed ingested, no claim data published, **no licence chosen** — the repository
+  currently carries no LICENSE file, which means all rights reserved. For a
+  dataset meant to be used that is worth a decision; a licence for the code and
+  a separate one for the data is the usual arrangement.
 - Next: `RIGHTS-002` for the 288 Penn images, which have one rights holder and
   one policy to establish, then `SCHOL-001`.
 
