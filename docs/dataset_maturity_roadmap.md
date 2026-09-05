@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-05T22:15:54+00:00`
+Generated: `2026-09-05T22:21:38+00:00`
 
 ## Portfolio status
 
@@ -10,9 +10,9 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 14 done · 15 in progress · 19 queued · 0 blocked |
+| Roadmap tasks | 16 done · 13 in progress · 19 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
-| Required handoff tasks complete | 5/24 |
+| Required handoff tasks complete | 6/24 |
 
 ### What is solid
 
@@ -23,10 +23,11 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - The public boundary is now positive rather than merely defensive: 45 texts are published on a stated rights basis with their editorial state declared, and every one of the 151 withheld texts still names its edition, exact locator and link so a reader can consult it.
 - The comparison model now covers the whole claim vocabulary: 66 fields grouped, 35 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list.
 - The project now has an external yardstick. Waller's list of JBA bowl publications 1853-2024 is held, transcribed and measured against, so completeness is a number rather than an impression.
+- Bibliographic coverage of the field's JBA control list is complete: 115 of 115 publications 1853-2024 have a source record with a sourced citation, up from 46.
 
 ### What prevents release readiness
 
-- Measured against the field's own control list, the index holds 46 of Waller's 115 JBA bowl publications - 40%. Gordon alone accounts for 8 missing publications and the nineteenth-century layer is almost entirely absent. The index was built from findable online records (567 of 753 sources are museum records) while the field's primary evidence is printed editions.
+- The index now cites every publication on the field's JBA control list, but cannot say which bowls any of them publishes. Publications exist only as identifier prefixes, so 115/115 control-list coverage measures a reading list, not a corpus. Object-level coverage of the published record is unmeasured.
 - Identity and claim quality is not yet measured corpus-wide: 312 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
 - Text and edition coverage remains sparse outside Montgomery: 312/791 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.
 - Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.
@@ -40,7 +41,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Candidate source records | 1588 |
 | Working physical identity hypotheses (all statuses) | 1320 |
 | Source appearances | 1616 |
-| Sources | 753 |
+| Sources | 839 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 214 |
 | Triaged claim-field differences | 53/365 |
@@ -127,7 +128,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 ## Current priority order
 
-1. SCHOL-002: ingest the 69 publications Waller's control list names and the index lacks. The citations are sourced and the task is bounded; closing this gap is the single largest available improvement to the corpus, and it is what the 40% figure measures.
+1. SCHOL-004: make publications first-class records. The index now cites all 115 JBA publications and cannot link one bowl to one of them; that gap is what stands between a reading list and a measured corpus, and it also blocks the publication_reference_pct handoff gate from meaning anything.
 2. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches. The denominator is now stable: QA-008 widened the model and no further widening is planned, so this work will not need redoing. Dating (171) and provenance (123) are the two large groups and both are better tackled by source cohort than by identity.
 3. SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.
 4. META-008: obtain a Mandaic control list. Ford and Abudraham 2018, 'Syriac and Mandaic Incantation Bowls', is the source Waller cites for the 62/23/13 distribution and is the obvious candidate. The index is short roughly 91 Mandaic objects against that proportion.
@@ -216,18 +217,18 @@ Record where editions, transliterations, translations, incipits, and commentary 
 
 Record the editions that actually publish bowls, as first-class sources with their own objects, access status and evidence grade. The index was built from findable online records; the field's primary evidence is printed editions.
 
-- [ ] **SCHOL-001 — Acquire Waller's 2025 publication list as a control list** · In progress · Research owner
+- [x] **SCHOL-001 — Acquire Waller's 2025 publication list as a control list** · Done · Research owner
   - Done when: Waller's chapter is held in full, its list of JBA bowl publications 1853-2024 is enumerated, and the index is measured against it. Turning the missing entries into source records is SCHOL-002.
-  - Evidence/status: Held. The researcher supplied the full 45-page chapter on 2026-09-05; deposited privately by content hash (archive SHA-256 b60b030f...4237c77) under SRC-19F191B3F5C5, superseding the two-page excerpt. The list at printed pp. 40-47 is transcribed to research/sources/waller_2025_jba_publication_list.jsonl: 115 entries by 52 authors. First external completeness measurement: the index holds 46 and is missing 69, so published-JBA coverage is 40%. Gordon is the largest single hole at 8 publications, none held; the nineteenth-century layer is almost entirely absent. See data/reports/waller_control_list_2026-09-05.md.
-- [ ] **SCHOL-002 — Seed the missing foundational bibliography** · In progress · Research
-  - Done when: Every work named as foundational by the scoping review has a source record with a verified citation and access status, or an explicit reason it cannot be obtained.
-  - Evidence/status: Now evidenced rather than recalled. Waller's control list names 69 publications the index does not hold, with full citations at printed pp. 40-47. That supersedes the 21 seed records transcribed from the scoping review, which should be reconciled against the list before ingest to avoid duplicates. Twenty-four of the 69 are cases where the index holds a different work by the same author, so matching must be per-work.
+  - Evidence/status: Held. The researcher supplied the full 45-page chapter on 2026-09-05; deposited privately by content hash (archive SHA-256 b60b030f...4237c77) under SRC-19F191B3F5C5, superseding the two-page excerpt. The list at printed pp. 40-47 is transcribed to research/sources/waller_2025_jba_publication_list.jsonl: 115 entries by 52 authors. First external completeness measurement: the index holds 46 and is missing 69, so published-JBA coverage is 40%. Gordon is the largest single hole at 8 publications, none held; the nineteenth-century layer is almost entirely absent. See data/reports/waller_control_list_2026-09-05.md. SCHOL-002 has since closed the bibliographic side of the gap; object-level coverage of those publications remains unmeasured.
+- [x] **SCHOL-002 — Seed the missing foundational bibliography** · Done · Research
+  - Done when: Every work named by the field's control lists has a source record with a sourced citation, or an explicit reason it cannot be obtained. Linking those publications to the objects they publish is SCHOL-004 and TEXT-001, not this task.
+  - Evidence/status: Ingested 69 publications from Waller's control list with citations verbatim from printed pp. 40-47, plus 17 works from the scoping review that fall outside his JBA scope - Pognon 1898, Yamauchi 1967, Naveh and Shaked 1987, Morony, Mokhtarian, Harari, Haberl, Frim, Secunda, Gross and Scarlassara, Mackenzie, and four Manekin-Bamberger titles. Four overlaps were resolved in favour of Waller's sourced citation. Sources 753 to 839; ingest is idempotent on the exact citation. Control-list coverage 46/115 to 115/115. That is bibliographic presence only: the publications have not been read, their editions are not located, and the bowls they publish are not linked. Parsed titles and source types are the least reliable field; the verbatim citation is authoritative.
 - [ ] **SCHOL-003 — Run the bibliographic database sweep the review specifies** · Queued · Research
   - Done when: RAMBI, ATLA, Index Islamicus, L'Annee philologique, ProQuest Dissertations, WorldCat, Crossref and OpenAlex are each searched with saved query strings, dates and result counts, and the field's journal archives are swept by object siglum and opening formula as well as by keyword.
   - Evidence/status: The review's own 14-row search log is a targeted verification pass, not a sweep, and says so. The index's phase-one saturation covers twelve source classes, none of which is the bibliographic databases. Both gaps have the same shape. Priority is now measurable: a database sweep should be judged by how much of the 60% gap it closes, and by whether it finds anything Waller's list does not.
 - [ ] **SCHOL-004 — Make publications first-class records, not identifier prefixes** · Queued · Engineering
   - Done when: Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.
-  - Evidence/status: `identifiers.source_id` correctly records who reported a designation. There is no record of the publication designated: 17 objects carry `Isbell 1975::NN`, 19 carry `MRLA 8::NN`, 2 carry `TMH 7::NN`, 8 carry `Naveh-Shaked 1985`/`1993`, and none of those four publications has a row in `sources`. Until this exists, publication_reference_pct measures designations, not editions.
+  - Evidence/status: `identifiers.source_id` correctly records who reported a designation. There is no record of the publication designated: 17 objects carry `Isbell 1975::NN`, 19 carry `MRLA 8::NN`, 2 carry `TMH 7::NN`, 8 carry `Naveh-Shaked 1985`/`1993`, and none of those four publications has a row in `sources`. Until this exists, publication_reference_pct measures designations, not editions. This is now the binding constraint. The index cites all 115 of Waller's JBA publications but cannot say which bowls any of them publishes, so 100% control-list coverage measures reading list rather than corpus.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -354,7 +355,7 @@ Overall gate: **NOT READY**
 - [ ] QA-003 — Audit a stratified sample of identity and extraction decisions
 - [ ] QA-004 — Separate presence, assessment, verification and source coverage metrics
 - [x] QA-005 — Implement evidence-bound subset reviews and append-only history
-- [ ] SCHOL-002 — Seed the missing foundational bibliography
+- [x] SCHOL-002 — Seed the missing foundational bibliography
 - [ ] SCHOL-004 — Make publications first-class records, not identifier prefixes
 - [x] QA-008 — Reconcile the claim vocabulary with the comparison model
 - [ ] RIGHTS-004 — Restore links for sources whose URL matches a private capture
@@ -394,3 +395,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** Added an append-only text publication ledger (migration 011) and `ibi ingest-text-publication`. Approved 45 texts: Montgomery's 35 scan-checked English reading texts as expired US copyright, and 10 index summaries as own work, each recording a rights basis, an attribution and an explicit editorial status. Approvals are bound to the text's content fingerprint, so the outstanding TEXT-006 specialist review will revoke them rather than silently changing published text. Extended the public export so a withheld text keeps its citation, locator, link and access status, and added an editions table naming 476 publication locations across 472 objects. Untracked the dated research snapshots and published the gated projection at data/public/2026-09-05 instead.
 - **2026-09-05:** Completed QA-008 and META-006. Classified all 101 claim fields — 66 grouped, 35 excluded with reasons, none unclassified — and added thirteen content groups for the scoping review's People, Ritual, Intertexts, Visual and Scholarship facets. Conflict instances moved 337 to 365 with no existing decision invalidated; the backlog is 312 and is now a measured total. Language coverage rose from 34.8% to 50.2% because 205 NLI catalogue codes now count. Corrected an earlier overstatement: no object carries both a catalogue code and an edition-based language claim, so that specific disagreement does not occur in the data; the effect is on coverage, not conflicts. Client, target and practitioner are separate groups, so contested authorship attributions can no longer be compared against client names.
 - **2026-09-05:** SCHOL-001: the researcher supplied Waller's full 'State of the Art' chapter, deposited privately by content hash. Transcribed its list of JBA bowl publications 1853-2024 - 115 entries, 52 authors - and measured the index against it for the first time: 46 held, 69 missing, 40% coverage of the published JBA corpus. Gordon is the largest hole at 8 publications. Added a second benchmark from Ford and Abudraham 2018 via Waller: the corpus should run about 62% JBA, 23% Mandaic, 13% Syriac, against the index's 80.0/10.6/9.5, a shortfall of roughly 91 Mandaic objects. Added `ibi deposit` for researcher-supplied documents, which archives by hash without implying a fetch or an access-control decision. No corpus writes beyond the deposit.
+- **2026-09-05:** SCHOL-002 complete. Ingested the 69 publications Waller's control list named and the index lacked, citations verbatim from printed pp. 40-47, plus 17 works outside his JBA scope from the scoping review; four overlaps resolved in favour of the sourced citation. Sources 753 to 839, control-list coverage 46/115 to 115/115. Recorded explicitly that this is bibliographic presence and not object enumeration: none of those publications is linked to the bowls it publishes, which makes SCHOL-004 the binding constraint.

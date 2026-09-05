@@ -127,3 +127,36 @@ PYTHONPATH=src .venv/bin/python -m bowl_index.cli verify-archive
 The parse and the surname-and-year check are recorded in the JSONL artifact, one row per entry
 with its `held_in_sources` verdict and `check_basis`. No corpus writes were made beyond
 depositing the chapter itself.
+
+---
+
+## Addendum: after SCHOL-002 (same day)
+
+The 69 missing publications were ingested as source records, citations verbatim
+from Waller's list. Coverage of the control list is now **115 / 115**.
+
+**That number means less than it looks.** It measures whether the index holds a
+*bibliographic record* for each publication. It does not mean the publications
+have been read, that their editions have been located, or — most importantly —
+that the **bowls they publish are in the corpus**. Waller's list names
+publications; each one publishes somewhere between one and several hundred
+objects, and almost none of those object-to-publication links exist yet.
+
+So the honest pair of statements is:
+
+- Publication-record coverage of the JBA control list: **100%** (115/115).
+- Object-level coverage of what those publications contain: **unmeasured, and
+  mostly zero.** Gordon's eight publications are now cited; not one of his bowls
+  is linked to them.
+
+The second number is the real one, and producing it is `SCHOL-004`'s job — making
+publications first-class records so a bowl can be asked "which edition publishes
+you," and `TEXT-001`'s, replacing the identifier-scheme proxy with checked
+edition locators. Until then, treat 100% as *we now know what to read*, not *we
+have it*.
+
+Titles and source types in the ingested records are parsed from the citation
+strings and are the least reliable part of each record; the verbatim citation is
+the authoritative field. The four works that appeared both here and in the
+earlier hand-written seed — Myhrman 1909, Isbell 1975, Naveh–Shaked 1993,
+Müller-Kessler 2005 — were resolved in favour of Waller's sourced citation.

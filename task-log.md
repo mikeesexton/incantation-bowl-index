@@ -25,6 +25,38 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — SCHOL-002: close the bibliographic gap
+
+**Claimed:** SCHOL-002 (done), SCHOL-001 (done)
+**Corpus:** changed (86 new source records; no claims, identities, texts or media)
+**Tests:** 119 passed
+
+- Reconciled the 21 hand-written seed records against Waller's list **per work,
+  not per author**, as the roadmap warned. Four overlaps — Myhrman 1909, Isbell
+  1975, Naveh–Shaked 1993, Müller-Kessler 2005 — resolved in favour of Waller's
+  sourced citation. 17 seeds kept: Pognon, Yamauchi, Naveh–Shaked 1987, Morony,
+  Mokhtarian, Harari, Häberl, Frim, Secunda, Gross–Scarlassara, Mackenzie and
+  four Manekin-Bamberger titles, all outside Waller's JBA scope.
+- Ingested 69 + 17 = **86 source records**, sources 753 → 839. Citations are
+  verbatim from Waller printed pp. 40–47; the ingest is idempotent on the exact
+  citation and a replay adds nothing.
+- **Control-list coverage 46/115 → 115/115.**
+- **And that number means less than it looks, which the report and roadmap now
+  say plainly.** It measures bibliographic presence. The publications have not
+  been read, their editions are not located, and the bowls they publish are not
+  linked — Gordon's eight publications are cited, and not one of his bowls is
+  attached to them. Publication-record coverage is 100%; object-level coverage
+  of the published record is unmeasured and mostly zero.
+- That makes `SCHOL-004` the binding constraint and it is now priority 1: until
+  publications are first-class records, the index cannot ask a bowl which
+  edition publishes it, and `publication_reference_pct` cannot mean anything as
+  a handoff gate.
+- Parsed titles and source types are the least reliable field in the new
+  records; the verbatim citation is authoritative. Worth a correction pass.
+- Next: `SCHOL-004`, then Ford & Abudraham 2018 as the Mandaic control list.
+
+---
+
 ## 2026-09-05 — Claude — SCHOL-001: the index has an external yardstick
 
 **Claimed:** SCHOL-001 (in progress; the ingest is SCHOL-002)
