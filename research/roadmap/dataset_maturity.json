@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-06T02:15:00+00:00",
+  "updated_at": "2026-09-06T02:40:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -272,6 +272,14 @@
           "owner": "Engineering",
           "done_when": "Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.",
           "evidence": "Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys carry 435 objects; 17 keys covering 433 objects are resolved to a source record, and 1 remains unresolved with a precise blocker. MRLA 8 was resolved on 2026-09-05 from the volume's own imprint page - 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4 - superseding the earlier unresolved decision; Ford and Morgenstern 2019 is now in `sources`. TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts."
+        },
+        {
+          "id": "SCHOL-005",
+          "title": "Keep an acquisition register and work the want list",
+          "status": "in_progress",
+          "owner": "Mixed",
+          "done_when": "Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.",
+          "evidence": "`ibi report-acquisitions` generates data/reports/acquisition_status.md. Current state: 841 source records, 20 with the document held (2.4%), 661 wanted with something depending on them, and 347 objects whose publication is unheld. Ranked first: Segal 2000 (253 objects, 142 appearances, 142 claims), then Shaked-Ford-Bhayro 2013 (23), Ford and Morgenstern MRLA 8 (19), Isbell 1975 (17), Shaked-Ford-Bhayro 2022 (16), Naveh and Shaked (7). Holding front matter only counts as not held, which is the conservative reading. TMH 7 is blocked: no digital copy of Mueller-Kessler 2005 was located (IBI-LEAD-TMH7-MUELLER-KESSLER)."
         }
       ]
     },
@@ -655,10 +663,15 @@
     {
       "date": "2026-09-05",
       "note": "Resolved MRLA 8 from the volume's own imprint page rather than by inference: Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections vol. 1 (Brill 2019), now in `sources`. Registry coverage 16/18 to 17/18 keys and 414 to 433 objects. TMH 7 remains unresolved pending the same check against its printed volume."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Added SCHOL-005 and `ibi report-acquisitions`: a generated register separating what the project holds as a document from what it merely cites, with the want list ranked by dependants. 20 of 841 sources have the document held; 347 objects depend on an unheld publication; Segal 2000 ranks first at 253 objects. Logged TMH 7 as blocked - no digital copy of Mueller-Kessler 2005 could be located, so that registry entry stays unresolved rather than inferred."
     }
   ],
   "priorities": [
     "TEXT-001 / SCHOL-004 follow-through: only 435 of 1,588 records carry a publication key at all. Now that keys resolve, the useful work is extending them - starting with the 69 publications ingested under SCHOL-002, none of which has a single object attached.",
+    "SCHOL-005: work the acquisition want list. Segal 2000 dominates it - 253 objects rest on a catalogue the project has never read - and it is also CONC-001's blocker. Every document obtained converts citations into checkable page-level evidence.",
     "QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches. The denominator is now stable: QA-008 widened the model and no further widening is planned, so this work will not need redoing. Dating (171) and provenance (123) are the two large groups and both are better tackled by source cohort than by identity.",
     "SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.",
     "META-008: obtain a Mandaic control list. Ford and Abudraham 2018, 'Syriac and Mandaic Incantation Bowls', is the source Waller cites for the 62/23/13 distribution and is the obvious candidate. The index is short roughly 91 Mandaic objects against that proportion.",

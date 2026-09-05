@@ -25,6 +25,36 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — An acquisition register
+
+**Claimed:** SCHOL-005 (new, in progress)
+**Corpus:** changed (one blocked lead)
+**Tests:** 131 passed (127 before; +4)
+
+- Added **`ibi report-acquisitions`** → `data/reports/acquisition_status.md`.
+  It separates two things the corpus had been conflating: a *citation* and a
+  *held document*. Only the second lets a claim be checked at page level.
+- Current state: **20 of 841 sources have the document held (2.4%)**, 661 are
+  wanted with something depending on them, and **347 objects depend on a
+  publication nobody here has read**.
+- The want list is ranked by dependants — ten points per object a work
+  publishes, one per appearance or claim. **Segal 2000 dominates: 253 objects,
+  142 appearances, 142 claims.** It is also CONC-001's blocker, so the same
+  acquisition unblocks two workstreams. Then Shaked–Ford–Bhayro 2013 (23),
+  MRLA 8 (19), Isbell 1975 (17), Shaked–Ford–Bhayro 2022 (16), Naveh–Shaked (7).
+- Holding front matter only counts as **not held** — MRLA 8 appears on the want
+  list even though its prospectus is archived, which is the conservative and
+  correct reading: we have the imprint page, not the editions.
+- `TMH 7` logged as **blocked**: no digital copy of Müller-Kessler 2005 located.
+  The registry entry stays unresolved rather than inferred; a photograph of the
+  title and imprint pages alone would settle it.
+- poppler and tesseract are now installed, so image-only scans can be rendered
+  and OCR'd — worth knowing, since the nineteenth-century layer is all scans.
+- Next: work the want list from the top. Every document obtained converts
+  citations into checkable page-level evidence.
+
+---
+
 ## 2026-09-05 — Claude — Resolve MRLA 8 from the volume itself
 
 **Claimed:** SCHOL-004 follow-up

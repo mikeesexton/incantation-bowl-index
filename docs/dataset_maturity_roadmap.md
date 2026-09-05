@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-05T22:38:47+00:00`
+Generated: `2026-09-05T22:59:31+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 17 done · 13 in progress · 18 queued · 0 blocked |
+| Roadmap tasks | 17 done · 14 in progress · 18 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 7/24 |
 
@@ -62,7 +62,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Media records with a non-unknown rights status | 37/325 (11.4%) |
 | Media with a current ledger entry | 325/325 |
 | Media with completed rights decisions / approved for reuse | 0 / 0 |
-| Blocked leads | 28 |
+| Blocked leads | 29 |
 | Open or active leads | 7 |
 | Qualifying discovery-saturation sweeps | 2 |
 
@@ -132,21 +132,22 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 ## Current priority order
 
 1. TEXT-001 / SCHOL-004 follow-through: only 435 of 1,588 records carry a publication key at all. Now that keys resolve, the useful work is extending them - starting with the 69 publications ingested under SCHOL-002, none of which has a single object attached.
-2. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches. The denominator is now stable: QA-008 widened the model and no further widening is planned, so this work will not need redoing. Dating (171) and provenance (123) are the two large groups and both are better tackled by source cohort than by identity.
-3. SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.
-4. META-008: obtain a Mandaic control list. Ford and Abudraham 2018, 'Syriac and Mandaic Incantation Bowls', is the source Waller cites for the 62/23/13 distribution and is the obvious candidate. The index is short roughly 91 Mandaic objects against that proportion.
-5. META-008: no Mandaic control list exists. Assemble the denominator from the Mandaic corpus editions now held in `sources` rather than waiting for a published census, and treat the 23% expectation as Morony's twenty-year-old estimate rather than a target.
-6. RIGHTS-002: with texts now gated by a working ledger, media are the remaining hard block at 0/325. The same evidence-bound pattern applies; start with the 288 Penn images, which have a single rights holder and a single policy to establish.
-7. CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.
-8. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
-9. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
-10. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
-11. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
-12. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
-13. RIGHTS-002: investigate actual reuse evidence for the 325 media holds. Export safeguards are implemented; rights clearance is still 0/325. Do not substitute old copyright labels for assessment.
-14. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
-15. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
-16. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
+2. SCHOL-005: work the acquisition want list. Segal 2000 dominates it - 253 objects rest on a catalogue the project has never read - and it is also CONC-001's blocker. Every document obtained converts citations into checkable page-level evidence.
+3. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches. The denominator is now stable: QA-008 widened the model and no further widening is planned, so this work will not need redoing. Dating (171) and provenance (123) are the two large groups and both are better tackled by source cohort than by identity.
+4. SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.
+5. META-008: obtain a Mandaic control list. Ford and Abudraham 2018, 'Syriac and Mandaic Incantation Bowls', is the source Waller cites for the 62/23/13 distribution and is the obvious candidate. The index is short roughly 91 Mandaic objects against that proportion.
+6. META-008: no Mandaic control list exists. Assemble the denominator from the Mandaic corpus editions now held in `sources` rather than waiting for a published census, and treat the 23% expectation as Morony's twenty-year-old estimate rather than a target.
+7. RIGHTS-002: with texts now gated by a working ledger, media are the remaining hard block at 0/325. The same evidence-bound pattern applies; start with the 288 Penn images, which have a single rights holder and a single policy to establish.
+8. CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.
+9. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
+10. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
+11. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
+12. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
+13. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
+14. RIGHTS-002: investigate actual reuse evidence for the 325 media holds. Export safeguards are implemented; rights clearance is still 0/325. Do not substitute old copyright labels for assessment.
+15. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
+16. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
+17. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
 
 ## Task register
 
@@ -233,6 +234,9 @@ Record the editions that actually publish bowls, as first-class sources with the
 - [x] **SCHOL-004 — Make publications first-class records, not identifier prefixes** · Done · Engineering
   - Done when: Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.
   - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys carry 435 objects; 17 keys covering 433 objects are resolved to a source record, and 1 remains unresolved with a precise blocker. MRLA 8 was resolved on 2026-09-05 from the volume's own imprint page - 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4 - superseding the earlier unresolved decision; Ford and Morgenstern 2019 is now in `sources`. TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
+- [ ] **SCHOL-005 — Keep an acquisition register and work the want list** · In progress · Mixed
+  - Done when: Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.
+  - Evidence/status: `ibi report-acquisitions` generates data/reports/acquisition_status.md. Current state: 841 source records, 20 with the document held (2.4%), 661 wanted with something depending on them, and 347 objects whose publication is unheld. Ranked first: Segal 2000 (253 objects, 142 appearances, 142 claims), then Shaked-Ford-Bhayro 2013 (23), Ford and Morgenstern MRLA 8 (19), Isbell 1975 (17), Shaked-Ford-Bhayro 2022 (16), Naveh and Shaked (7). Holding front matter only counts as not held, which is the conservative reading. TMH 7 is blocked: no digital copy of Mueller-Kessler 2005 was located (IBI-LEAD-TMH7-MUELLER-KESSLER).
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -403,3 +407,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** Obtained Ford and Abudraham 2018 and deposited it privately. Traced the language-distribution benchmark to its origin: Morony 2003: 87, endorsed by Ford and Abudraham n. 3 and quoted by Waller - a twenty-year-old estimate over a smaller corpus, not a current census. Corrected the attribution in the report and META-008. The chapter is not a Mandaic control list; it publishes eight confiscated bowls, so no Mandaic equivalent of Waller's JBA list is known and the denominator must be built from the corpus editions. Recorded that the volume publishes antiquities confiscated in Judea and Samaria, whose provenance is contested and must not be read as excavation context.
 - **2026-09-05:** SCHOL-004 complete. Migration 012 adds an append-only publication registry separating which publication a designation belongs to from which source reported it. 16 of 18 publication keys resolved, covering 414 of 435 objects; MRLA 8 and TMH 7 left unresolved with precise blockers rather than inferred. Four keys became resolvable only because SCHOL-002 had ingested their publications. A regression test fails when any key lacks a registry entry.
 - **2026-09-05:** Resolved MRLA 8 from the volume's own imprint page rather than by inference: Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections vol. 1 (Brill 2019), now in `sources`. Registry coverage 16/18 to 17/18 keys and 414 to 433 objects. TMH 7 remains unresolved pending the same check against its printed volume.
+- **2026-09-05:** Added SCHOL-005 and `ibi report-acquisitions`: a generated register separating what the project holds as a document from what it merely cites, with the want list ranked by dependants. 20 of 841 sources have the document held; 347 objects depend on an unheld publication; Segal 2000 ranks first at 253 objects. Logged TMH 7 as blocked - no digital copy of Mueller-Kessler 2005 could be located, so that registry entry stays unresolved rather than inferred.
