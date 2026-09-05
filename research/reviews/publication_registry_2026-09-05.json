@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Moses Gabai",
+  "reviewed_at": "2026-09-06T01:40:00+00:00",
+  "batch": "First publication-registry pass over every publication object key",
+  "policy": "Resolves which publication a designation belongs to, separately from which source reported it. A key is resolved only where the key itself names the author and year of an existing source record; series abbreviations are left unresolved with a blocker rather than inferred.",
+  "entries": [
+    {
+      "registry_id": "IBI-PUBREG-01",
+      "publication_key": "Segal 2000",
+      "source_id": "SRC-72D809FB4249",
+      "resolution": "resolved",
+      "basis": "Key names Segal and 2000; the source is Segal's British Museum catalogue, the publication whose text numbers these keys use."
+    },
+    {
+      "registry_id": "IBI-PUBREG-02",
+      "publication_key": "Montgomery 1913",
+      "source_id": "SRC-943673B56FB8",
+      "resolution": "resolved",
+      "basis": "Key names Montgomery and 1913; the source is Aramaic Incantation Texts from Nippur, whose forty text numbers these keys use."
+    },
+    {
+      "registry_id": "IBI-PUBREG-03",
+      "publication_key": "Shaked-Ford-Bhayro 2013",
+      "source_id": "SRC-7FBBB775E502",
+      "resolution": "resolved",
+      "basis": "Key names the three editors and 2013; the source is Aramaic Bowl Spells vol. 1."
+    },
+    {
+      "registry_id": "IBI-PUBREG-04",
+      "publication_key": "Shaked-Ford-Bhayro 2022",
+      "source_id": "SRC-8C611BF93288",
+      "resolution": "resolved",
+      "basis": "Key names the three editors and 2022; the source is Aramaic Bowl Spells vol. 2."
+    },
+    {
+      "registry_id": "IBI-PUBREG-05",
+      "publication_key": "Isbell 1975",
+      "source_id": "SRC-1FE46019356A",
+      "resolution": "resolved",
+      "basis": "Key names Isbell and 1975; the source is Corpus of the Aramaic Incantation Bowls, ingested under SCHOL-002 from Waller's control list. Before that ingest this key had no resolvable source at all."
+    },
+    {
+      "registry_id": "IBI-PUBREG-06",
+      "publication_key": "Naveh-Shaked 1985/1993",
+      "source_id": "SRC-696E71D7E586",
+      "resolution": "resolved",
+      "basis": "Key names both Naveh-Shaked volumes; resolved to Amulets and Magic Bowls (1985/1987) as the earlier of the pair. Keys spanning two volumes should eventually be split per item."
+    },
+    {
+      "registry_id": "IBI-PUBREG-07",
+      "publication_key": "Naveh-Shaked 1993",
+      "source_id": "SRC-795E719C624E",
+      "resolution": "resolved",
+      "basis": "Key names Naveh-Shaked and 1993; the source is Magic Spells and Formulae, ingested under SCHOL-002."
+    },
+    {
+      "registry_id": "IBI-PUBREG-08",
+      "publication_key": "Hunter 1994",
+      "source_id": "SRC-C628D3B5E8F9",
+      "resolution": "resolved",
+      "basis": "Key names Hunter and 1994; the source is Two Mandaic Incantation Bowls from Nippur."
+    },
+    {
+      "registry_id": "IBI-PUBREG-09",
+      "publication_key": "McCullough 1967",
+      "source_id": "SRC-539BB677443B",
+      "resolution": "resolved",
+      "basis": "Key names McCullough and 1967; the source is the Royal Ontario Museum catalogue."
+    },
+    {
+      "registry_id": "IBI-PUBREG-10",
+      "publication_key": "Moriggi 2014",
+      "source_id": "SRC-3C4294DDB367",
+      "resolution": "resolved",
+      "basis": "Key names Moriggi and 2014; the source is A Corpus of Syriac Incantation Bowls."
+    },
+    {
+      "registry_id": "IBI-PUBREG-11",
+      "publication_key": "Moriggi 2024",
+      "source_id": "SRC-24B0EC105BC9",
+      "resolution": "resolved",
+      "basis": "Key names Moriggi and 2024; the source is Relics of Syriac Magic."
+    },
+    {
+      "registry_id": "IBI-PUBREG-12",
+      "publication_key": "Abousamra 2019",
+      "source_id": "SRC-0B9E40B67D88",
+      "resolution": "resolved",
+      "basis": "Key names Abousamra and 2019; the source is An Incantation Bowl from the Matenadaran."
+    },
+    {
+      "registry_id": "IBI-PUBREG-13",
+      "publication_key": "Faraj 2017",
+      "source_id": "SRC-E2797DB92056",
+      "resolution": "resolved",
+      "basis": "Key names Faraj and 2017; the source is A New Mandaic Incantation Bowl from Babil."
+    },
+    {
+      "registry_id": "IBI-PUBREG-14",
+      "publication_key": "Ford 2023",
+      "source_id": "SRC-CC72F830EAAF",
+      "resolution": "resolved",
+      "basis": "Key names Ford and 2023; the source is What's (in) Your Bowl?"
+    },
+    {
+      "registry_id": "IBI-PUBREG-15",
+      "publication_key": "Gorea 2003",
+      "source_id": "SRC-A01A00423544",
+      "resolution": "resolved",
+      "basis": "Key names Gorea and 2003; the source is Trois nouvelles coupes magiques arameennes, ingested under SCHOL-002."
+    },
+    {
+      "registry_id": "IBI-PUBREG-16",
+      "publication_key": "Martínez Borobio 2003",
+      "source_id": "SRC-25F456A40523",
+      "resolution": "resolved",
+      "basis": "Key names Martínez Borobio and 2003; the source is A Magical Bowl in Judaeo-Aramaic."
+    },
+    {
+      "registry_id": "IBI-PUBREG-17",
+      "publication_key": "MRLA 8",
+      "source_id": null,
+      "resolution": "unresolved",
+      "basis": "Series abbreviation, not an author-year key. MRLA is Magical and Religious Literature of Late Antiquity; vol. 7 is the Berlin catalogue, already in `sources`. Vol. 8 is expected to be Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections vol. 1 (Hilprecht), which has no source record. Obtain the volume and confirm the series number before linking nineteen objects to it.",
+      "blocker": "No source record exists for the expected publication, and the series number has not been checked against the volume."
+    },
+    {
+      "registry_id": "IBI-PUBREG-18",
+      "publication_key": "TMH 7",
+      "source_id": null,
+      "resolution": "unresolved",
+      "basis": "Series abbreviation, not an author-year key. TMH is Texte und Materialien der Frau Professor Hilprecht Collection. Volume 7 is expected to be Mueller-Kessler 2005, Die Zauberschalentexte in der Hilprecht-Sammlung (SRC-63345F60155B), which is now in `sources`. The identification is an inference from the series name, not a check against the volume.",
+      "blocker": "Candidate SRC-63345F60155B is plausible but the series number was inferred, not verified. Confirm against the printed volume before linking."
+    }
+  ]
+}

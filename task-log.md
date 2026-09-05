@@ -25,6 +25,35 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — SCHOL-004: publications become first-class
+
+**Claimed:** SCHOL-004 (done)
+**Corpus:** changed (18 registry decisions; no claims, identities, texts or media)
+**Tests:** 127 passed (119 before; +8 for the registry)
+
+- Migration 012 adds an append-only **publication registry**. It records which
+  publication a designation *belongs to*, kept separate from
+  `identifiers.source_id`, which correctly records who *reported* it. A test
+  asserts the reporting link is untouched by resolution.
+- **16 of 18 publication keys resolved, covering 414 of 435 objects.** The index
+  can now answer "which edition publishes this bowl", which it could not before.
+- Two left unresolved with precise blockers rather than guessed. `MRLA 8` has no
+  source record for its expected publication (Ford & Morgenstern, *Museum
+  Collections* vol. 1) and its series number is unchecked. `TMH 7`'s candidate
+  (Müller-Kessler 2005) is plausible but inferred from the series name, not
+  verified against the volume — 19 and 2 objects respectively hang on those.
+- **SCHOL-002 paid off immediately:** Isbell 1975, Naveh–Shaked 1993,
+  Naveh–Shaked 1985/1993 and Gorea 2003 became resolvable only because their
+  publications had just been ingested. Yesterday those keys pointed at nothing.
+- Roadmap reports both counts, and `unresolved_publication_keys` plus
+  `tests/test_publications.py` fail when a key has no registry entry.
+- The honest limit: only **435 of 1,588 records carry a publication key at
+  all**, and none of the 69 publications ingested under SCHOL-002 has a single
+  object attached. Resolution works; coverage is thin. That is now priority 1.
+- Next: extend publication keys to the objects those 69 publications contain.
+
+---
+
 ## 2026-09-05 — Claude — Trace the language benchmark to its source
 
 **Claimed:** META-008 (evidence corrected; still open)

@@ -6,6 +6,7 @@ from pathlib import Path
 
 from .identity import CONTENT_COVERAGE, identity_rows
 from .proofreading import current_text_reviews
+from .publications import publication_coverage
 from .rights import rights_metrics
 from .concordance import current_concordance_reviews
 
@@ -49,6 +50,7 @@ def roadmap_metrics(conn):
     ).fetchone()[0]
     return {
         **rights_metrics(conn),
+        **publication_coverage(conn),
         "checked_reading_texts": sum(r["status"] == "reading_text_checked" for r in current_text_reviews(conn).values()),
         "confirmed_penn_concordances": sum(r['status'] == 'confirmed' for r in current_concordance_reviews(conn).values()),
         "relationship_assertions": conn.execute(
@@ -224,6 +226,11 @@ def write_roadmap(conn, config_path, destination):
         ),
         "| Identities with a translation | %s |" % metrics["translation_identities"],
         "| Scan-checked normalized reading texts | %s |" % metrics["checked_reading_texts"],
+        "| Publication keys resolved to the publication they designate | %s/%s |" % (
+            metrics["publication_keys_resolved"], metrics["publication_keys"]),
+        "| Objects under a resolved publication | %s/%s |" % (
+            metrics["objects_under_a_resolved_publication"],
+            metrics["objects_under_a_publication_key"]),
         "| Montgomery/Penn concordances with dated current-evidence review | %s |" % metrics["confirmed_penn_concordances"],
         "| Source-reported object relationships / unresolved scope | %s / %s |" % (
             metrics["relationship_assertions"], metrics["unresolved_relationship_assertions"],

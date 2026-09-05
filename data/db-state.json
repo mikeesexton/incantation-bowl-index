@@ -1,10 +1,10 @@
 {
-  "corpus_digest": "6ea1a69fe74e05453b720256b9e18f009731f82ac45093b3354d650af9da9c26",
-  "migrations": 11,
-  "note": "Deposited Ford and Abudraham 2018; corrected the language-benchmark attribution to Morony 2003",
-  "recorded_at": "2026-09-05T22:27:46+00:00",
+  "corpus_digest": "a4a8db03c654c20f10983cfeee95a60c7b572f5182b5e6322782b45042ab3da3",
+  "migrations": 12,
+  "note": "SCHOL-004: publication registry, 16/18 keys resolved",
+  "recorded_at": "2026-09-05T22:34:38+00:00",
   "recorded_by": "claude",
-  "schema_version": "011_text_publication_ledger",
+  "schema_version": "012_publication_registry",
   "tables": {
     "appearance_object_links": {
       "digest": "afe86237378d1c77dfed5d69c18640ec658e729a2df42b7a33492c795ea01549",
@@ -86,13 +86,17 @@
       "digest": "fb0a81674d374d5980203a3222eb711c9c72b589cc742b198200e0a447aaec9f",
       "rows": 1588
     },
+    "publication_registry": {
+      "digest": "eca1ea890df48813ad7433191d435c84406c13912f17f6188e05bc1679a4113f",
+      "rows": 18
+    },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "712e830a7a96a71196fb61a1975f17978a784223580af36044de01d908e7f1cb",
-      "rows": 11
+      "digest": "12f0599e56623aead11178009eaa418a67f06bab9be5cffcdf865056653b7ef8",
+      "rows": 12
     },
     "search_queries": {
       "digest": "984f961af8e032aed37337ddec7b944378de08f4748dc2edb820cfbf9227faa2",
