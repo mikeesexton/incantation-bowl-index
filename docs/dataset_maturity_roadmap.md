@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-05T22:34:37+00:00`
+Generated: `2026-09-05T22:38:47+00:00`
 
 ## Portfolio status
 
@@ -42,7 +42,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Candidate source records | 1588 |
 | Working physical identity hypotheses (all statuses) | 1320 |
 | Source appearances | 1616 |
-| Sources | 840 |
+| Sources | 841 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 214 |
 | Triaged claim-field differences | 53/365 |
@@ -54,8 +54,8 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Probable/confirmed identities with a publication reference | 312/794 (39.3%) |
 | Identities with a translation | 48 |
 | Scan-checked normalized reading texts | 35 |
-| Publication keys resolved to the publication they designate | 16/18 |
-| Objects under a resolved publication | 414/435 |
+| Publication keys resolved to the publication they designate | 17/18 |
+| Objects under a resolved publication | 433/435 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 1 |
@@ -232,7 +232,7 @@ Record the editions that actually publish bowls, as first-class sources with the
   - Evidence/status: The review's own 14-row search log is a targeted verification pass, not a sweep, and says so. The index's phase-one saturation covers twelve source classes, none of which is the bibliographic databases. Both gaps have the same shape. Priority is now measurable: a database sweep should be judged by how much of the 60% gap it closes, and by whether it finds anything Waller's list does not.
 - [x] **SCHOL-004 — Make publications first-class records, not identifier prefixes** · Done · Engineering
   - Done when: Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.
-  - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys carry 435 objects; 16 keys covering 414 objects are resolved to a source record, and 2 are unresolved with precise blockers. MRLA 8 has no source record for its expected publication (Ford and Morgenstern, Museum Collections vol. 1) and its series number is unchecked; TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
+  - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys carry 435 objects; 17 keys covering 433 objects are resolved to a source record, and 1 remains unresolved with a precise blocker. MRLA 8 was resolved on 2026-09-05 from the volume's own imprint page - 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4 - superseding the earlier unresolved decision; Ford and Morgenstern 2019 is now in `sources`. TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -402,3 +402,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** SCHOL-002 complete. Ingested the 69 publications Waller's control list named and the index lacked, citations verbatim from printed pp. 40-47, plus 17 works outside his JBA scope from the scoping review; four overlaps resolved in favour of the sourced citation. Sources 753 to 839, control-list coverage 46/115 to 115/115. Recorded explicitly that this is bibliographic presence and not object enumeration: none of those publications is linked to the bowls it publishes, which makes SCHOL-004 the binding constraint.
 - **2026-09-05:** Obtained Ford and Abudraham 2018 and deposited it privately. Traced the language-distribution benchmark to its origin: Morony 2003: 87, endorsed by Ford and Abudraham n. 3 and quoted by Waller - a twenty-year-old estimate over a smaller corpus, not a current census. Corrected the attribution in the report and META-008. The chapter is not a Mandaic control list; it publishes eight confiscated bowls, so no Mandaic equivalent of Waller's JBA list is known and the denominator must be built from the corpus editions. Recorded that the volume publishes antiquities confiscated in Judea and Samaria, whose provenance is contested and must not be read as excavation context.
 - **2026-09-05:** SCHOL-004 complete. Migration 012 adds an append-only publication registry separating which publication a designation belongs to from which source reported it. 16 of 18 publication keys resolved, covering 414 of 435 objects; MRLA 8 and TMH 7 left unresolved with precise blockers rather than inferred. Four keys became resolvable only because SCHOL-002 had ingested their publications. A regression test fails when any key lacks a registry entry.
+- **2026-09-05:** Resolved MRLA 8 from the volume's own imprint page rather than by inference: Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections vol. 1 (Brill 2019), now in `sources`. Registry coverage 16/18 to 17/18 keys and 414 to 433 objects. TMH 7 remains unresolved pending the same check against its printed volume.

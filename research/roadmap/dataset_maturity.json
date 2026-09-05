@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-06T01:55:00+00:00",
+  "updated_at": "2026-09-06T02:15:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -271,7 +271,7 @@
           "status": "done",
           "owner": "Engineering",
           "done_when": "Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.",
-          "evidence": "Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys carry 435 objects; 16 keys covering 414 objects are resolved to a source record, and 2 are unresolved with precise blockers. MRLA 8 has no source record for its expected publication (Ford and Morgenstern, Museum Collections vol. 1) and its series number is unchecked; TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts."
+          "evidence": "Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys carry 435 objects; 17 keys covering 433 objects are resolved to a source record, and 1 remains unresolved with a precise blocker. MRLA 8 was resolved on 2026-09-05 from the volume's own imprint page - 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4 - superseding the earlier unresolved decision; Ford and Morgenstern 2019 is now in `sources`. TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts."
         }
       ]
     },
@@ -651,6 +651,10 @@
     {
       "date": "2026-09-05",
       "note": "SCHOL-004 complete. Migration 012 adds an append-only publication registry separating which publication a designation belongs to from which source reported it. 16 of 18 publication keys resolved, covering 414 of 435 objects; MRLA 8 and TMH 7 left unresolved with precise blockers rather than inferred. Four keys became resolvable only because SCHOL-002 had ingested their publications. A regression test fails when any key lacks a registry entry."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Resolved MRLA 8 from the volume's own imprint page rather than by inference: Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections vol. 1 (Brill 2019), now in `sources`. Registry coverage 16/18 to 17/18 keys and 414 to 433 objects. TMH 7 remains unresolved pending the same check against its printed volume."
     }
   ],
   "priorities": [

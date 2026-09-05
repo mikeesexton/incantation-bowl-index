@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "a4a8db03c654c20f10983cfeee95a60c7b572f5182b5e6322782b45042ab3da3",
+  "corpus_digest": "913b459f4fb280c562804d60ff88a53aafb9f21d9431159b783fe3a17772632d",
   "migrations": 12,
-  "note": "SCHOL-004: publication registry, 16/18 keys resolved",
-  "recorded_at": "2026-09-05T22:34:38+00:00",
+  "note": "Resolved MRLA 8 from the volume imprint",
+  "recorded_at": "2026-09-05T22:38:49+00:00",
   "recorded_by": "claude",
   "schema_version": "012_publication_registry",
   "tables": {
@@ -15,8 +15,8 @@
       "rows": 1616
     },
     "captures": {
-      "digest": "63ac639ef93a6c10fbd469a6de72d1bf71aecbd447d032de3342586cb6252b44",
-      "rows": 21
+      "digest": "63c4793eb0ac710a57eb98886c14aaabfc32749c787a9e9f32f133bd53c07d85",
+      "rows": 22
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -87,8 +87,8 @@
       "rows": 1588
     },
     "publication_registry": {
-      "digest": "eca1ea890df48813ad7433191d435c84406c13912f17f6188e05bc1679a4113f",
-      "rows": 18
+      "digest": "b42148c988937abc8ef457781e46868800cc28ac61956767ef3ceb6015ab7b59",
+      "rows": 19
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
@@ -107,8 +107,8 @@
       "rows": 14
     },
     "sources": {
-      "digest": "50a6d68cac9688f91546a3fbb978328db14c100036cf6dae4a66c0c1c2221eea",
-      "rows": 840
+      "digest": "65fa81fd4fccd9a4fffc9fe2bc3c65c65f6748bddbad4c5c102eee0fd0e5a083",
+      "rows": 841
     },
     "text_proofreading_reviews": {
       "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",

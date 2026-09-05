@@ -25,6 +25,28 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Resolve MRLA 8 from the volume itself
+
+**Claimed:** SCHOL-004 follow-up
+**Corpus:** changed (one deposit, one source, one registry decision)
+**Tests:** 127 passed
+
+- Mike supplied Ford & Morgenstern, *Aramaic Incantation Bowls in Museum
+  Collections* vol. 1 (Hilprecht). Front matter, 30 pages, deposited privately.
+- **Series number verified from the imprint page, not inferred**: cover and
+  copyright page read "magical and religious literature of late antiquity 8",
+  ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4, LCCN 2019026750, series
+  editors Shaked and Bhayro. That is evidence, so the earlier unresolved
+  decision (IBI-PUBREG-17) is superseded rather than second-guessed.
+- Registry coverage **16/18 → 17/18 keys, 414 → 433 objects**.
+- `TMH 7` alone remains unresolved, 2 objects, awaiting the same check against
+  Müller-Kessler 2005's printed volume.
+- The volume reports forty Jena bowls in Jewish, Manichaean Syriac or Mandaic
+  script plus about twenty-five in Pahlavi or pseudoscript — a concrete lead for
+  META-008's Pahlavi gap, where the index currently holds two objects.
+
+---
+
 ## 2026-09-05 — Claude — SCHOL-004: publications become first-class
 
 **Claimed:** SCHOL-004 (done)
