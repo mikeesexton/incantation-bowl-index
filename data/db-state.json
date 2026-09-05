@@ -1,0 +1,118 @@
+{
+  "corpus_digest": "10651612823fb0640586e4a6d9e89fcccfd1cf8508741f76dedaa8ed2a094f86",
+  "migrations": 10,
+  "note": "Baseline recorded at first commit; corpus as left by the 2026-09-05 Schwab/Susa session",
+  "recorded_at": "2026-09-05T20:55:48+00:00",
+  "recorded_by": "codex",
+  "schema_version": "010_object_relationship_assertions",
+  "tables": {
+    "appearance_object_links": {
+      "digest": "afe86237378d1c77dfed5d69c18640ec658e729a2df42b7a33492c795ea01549",
+      "rows": 1616
+    },
+    "appearances": {
+      "digest": "f85e988ee2c2f39e3dc43812f9a74f2399a8399068adacfcbfc79cca9cf03096",
+      "rows": 1616
+    },
+    "captures": {
+      "digest": "0e81aebef990e172fe6ae95e5faf0b9d7b6be3d06433224c78f32d3ce994d6f4",
+      "rows": 19
+    },
+    "claim_conflict_review_history": {
+      "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
+      "rows": 367
+    },
+    "claim_conflict_reviews": {
+      "digest": "be1fd2583688947b2d1f0303b4280a5d77c16adbd40639c4b3a3631982aa6915",
+      "rows": 337
+    },
+    "claim_locator_corrections": {
+      "digest": "447bcfb7bb629f286fb32c4dd364bdc10ae662429589d7f8ee7e1d7fde81d1bd",
+      "rows": 137
+    },
+    "claims": {
+      "digest": "991197a02bc37735d2647febab1302c6bd2ef07b3d9b9e2964dd8a86d2d7ecf7",
+      "rows": 5014
+    },
+    "coverage_targets": {
+      "digest": "73d66484bd8ac7761a276eb62a9532495bad9f58424a83eae9cbd42f24e8f690",
+      "rows": 12
+    },
+    "dedupe_candidates": {
+      "digest": "b1c706d33fe885ed2849eaffd56f2f55875980c0366d980934ba0c00aec84178",
+      "rows": 34686
+    },
+    "dedupe_evidence": {
+      "digest": "d9d8b0e1f50942979c054365ef1f653d16b76adaca45ab5f54bba6184f7495cf",
+      "rows": 34688
+    },
+    "events": {
+      "digest": "cd76075f79a89e243e00271f1bedc3d94bbe3c45429b685736f1351c82e8d840",
+      "rows": 211
+    },
+    "identifiers": {
+      "digest": "cc6d41d1e6e03303f2d660ceeeb05cb0b11aff4e42bfbe1d32df8e0a4cc92e9f",
+      "rows": 3586
+    },
+    "leads": {
+      "digest": "9210d356c5169b3c522159ffcd395ce6e95044c8b04e00b5795f0c071836dba2",
+      "rows": 42
+    },
+    "manual_audits": {
+      "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
+      "rows": 14
+    },
+    "media": {
+      "digest": "8443dc720b704ea17ed216d79fc11f196179151156289ee6fad4e3bccc8fed16",
+      "rows": 325
+    },
+    "media_rights_reviews": {
+      "digest": "507bd31ce2f94db027ea68ce07774246fc08b6b714111f29f1f7e083ec420371",
+      "rows": 325
+    },
+    "merge_log": {
+      "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
+    },
+    "museum_concordance_reviews": {
+      "digest": "2c08456dc407d9f09eda530bfed53eb621b0a24387aad02896aae0ed4fafe33d",
+      "rows": 40
+    },
+    "object_relationship_assertions": {
+      "digest": "22806221af1dc10db768d00e4d381c59f20a11a9bded2d7ff037b3407edda3a6",
+      "rows": 5
+    },
+    "objects": {
+      "digest": "fb0a81674d374d5980203a3222eb711c9c72b589cc742b198200e0a447aaec9f",
+      "rows": 1588
+    },
+    "saturation_sweeps": {
+      "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
+      "rows": 3
+    },
+    "schema_migrations": {
+      "digest": "9b3d034b50f8ed3f5b5efbd1db96ae06066e22fd5ed0524200b8039031baefa4",
+      "rows": 10
+    },
+    "search_queries": {
+      "digest": "984f961af8e032aed37337ddec7b944378de08f4748dc2edb820cfbf9227faa2",
+      "rows": 350
+    },
+    "search_runs": {
+      "digest": "1249cafad820c428719395274954d085349ccc1e6248777343e2eaedc7fc802f",
+      "rows": 14
+    },
+    "sources": {
+      "digest": "8d12d97b7f6dafbffa54dc13af677da1fa9586769e40609faba6604682b15161",
+      "rows": 753
+    },
+    "text_proofreading_reviews": {
+      "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",
+      "rows": 35
+    },
+    "texts": {
+      "digest": "ac043b9bc46c120fa7d65af6ef5b4b9aebb8c0018231672e064b42281a16727c",
+      "rows": 196
+    }
+  }
+}

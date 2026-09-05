@@ -1,4 +1,4 @@
-# Codex — Project Instructions
+# Claude Code — Project Instructions
 
 ## Start here
 

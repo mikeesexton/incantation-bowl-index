@@ -25,6 +25,7 @@ from .pdf_catalogues import collect_waller
 from .queries import load_audit_log, load_coverage_log, load_saturation_log, load_search_log, seed_queries
 from .report import statistics, write_report
 from .review import load_dedupe_reviews
+from .state import compare_state, write_state
 from .roadmap import write_roadmap
 from .proofreading import apply_proofreading
 from .rights import apply_rights_batch
@@ -152,6 +153,15 @@ def build_parser():
         "--destination",
         default=str(PROJECT_ROOT / "docs" / "dataset_maturity_roadmap.md"),
     )
+    state = sub.add_parser(
+        "state", help="compare the working database against the state recorded in Git"
+    )
+    state.add_argument("--write", action="store_true", help="record the current state")
+    state.add_argument("--agent", help="who is recording the state, e.g. claude or codex")
+    state.add_argument("--note", help="one line on what this session changed")
+    state.add_argument(
+        "--check", action="store_true", help="exit non-zero when the database has drifted"
+    )
     serve_parser = sub.add_parser("serve", help="run the private localhost research console")
     serve_parser.add_argument("--host", default="127.0.0.1")
     serve_parser.add_argument("--port", type=int, default=8765)
@@ -278,6 +288,20 @@ def main(argv=None):
         print(json.dumps(
             write_roadmap(conn, args.config, args.destination), indent=2, sort_keys=True
         ))
+    elif args.command == "state":
+        if args.write:
+            written = write_state(conn, PROJECT_ROOT, args.agent, args.note)
+            print(json.dumps({
+                "recorded_at": written["recorded_at"],
+                "recorded_by": written["recorded_by"],
+                "corpus_digest": written["corpus_digest"],
+            }, indent=2, sort_keys=True))
+        else:
+            result = compare_state(conn, PROJECT_ROOT)
+            print(json.dumps(result, indent=2, sort_keys=True))
+            if args.check and result["status"] != "match":
+                conn.close()
+                raise SystemExit(1)
     elif args.command == "serve":
         database = conn.execute("PRAGMA database_list").fetchone()[2]
         conn.close()
