@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Private research console for the Incantation Bowl Index">
+    <meta name="theme-color" content="#17232b">
+    <link rel="icon" href="data:,">
+    <title>Incantation Bowl Index — Research Console</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to records</a>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#/explore" aria-label="Incantation Bowl Index home">
+          <span class="wordmark-seal" aria-hidden="true">𐡀</span>
+          <span><strong>Incantation Bowl Index</strong><small>Private research console</small></span>
+        </a>
+        <nav class="view-tabs" aria-label="Research views">
+          <a class="view-tab is-active" href="#/explore" data-route="explore">Explore</a>
+          <a class="view-tab" href="#/queues" data-route="queues">Enrichment</a>
+          <a class="view-tab" href="#/reviews" data-route="reviews">Concordance</a>
+        </nav>
+        <div class="local-controls">
+          <button id="refresh-corpus" type="button" title="Reload records changed by collectors">↻ Refresh</button>
+          <div class="local-badge"><span></span>Local corpus</div>
+        </div>
+      </header>
+
+      <aside class="sidebar" aria-label="Corpus filters">
+        <div class="sidebar-heading">
+          <span class="eyebrow">Identity index</span>
+          <strong id="identity-count">— identities</strong>
+        </div>
+        <form id="filters">
+          <label class="search-field">
+            <span>Search everything</span>
+            <input id="search" name="q" type="search" placeholder="Accession, client, publication…" autocomplete="off">
+          </label>
+
+          <fieldset>
+            <legend>Record</legend>
+            <label>Status<select name="status" id="status-filter"><option value="">All statuses</option></select></label>
+            <label>Authenticity<select name="authenticity" id="authenticity-filter"><option value="">All assessments</option></select></label>
+            <label>Object type<select name="object_type" id="type-filter"><option value="">All object types</option></select></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Research state</legend>
+            <label>Missing field
+              <select name="coverage">
+                <option value="">Any coverage</option>
+                <option value="location">Location</option>
+                <option value="provenance">Provenance</option>
+                <option value="dating">Dating</option>
+                <option value="dimensions">Dimensions</option>
+                <option value="material">Material</option>
+                <option value="language">Language</option>
+                <option value="script">Script</option>
+                <option value="text_edition">Text edition</option>
+                <option value="translation">Translation</option>
+                <option value="image">Image</option>
+              </select>
+            </label>
+            <label>Claim conflicts
+              <select name="conflict">
+                <option value="">Either</option>
+                <option value="yes">Has conflicts</option>
+                <option value="no">No conflicts</option>
+              </select>
+            </label>
+          </fieldset>
+          <button class="quiet-button" type="reset">Clear filters</button>
+        </form>
+        <div class="sidebar-foot">
+          <span>Private records may contain rights-restricted research material.</span>
+        </div>
+      </aside>
+
+      <main id="workspace" class="workspace" tabindex="-1">
+        <section id="explore-view" class="view is-active" aria-labelledby="explore-title">
+          <div class="workspace-head">
+            <div>
+              <span class="eyebrow">Probable physical objects</span>
+              <h1 id="explore-title">Identity explorer</h1>
+            </div>
+            <div class="result-tools">
+              <span id="result-count" aria-live="polite">Loading…</span>
+              <label class="compact-select">Sort
+                <select id="sort">
+                  <option value="completeness_desc">Most complete</option>
+                  <option value="completeness_asc">Least complete</option>
+                  <option value="sources">Most sources</option>
+                  <option value="label">Label A–Z</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div id="active-filters" class="active-filters" aria-live="polite"></div>
+          <div class="table-wrap">
+            <table class="identity-table">
+              <thead><tr><th>Identity</th><th>Context</th><th>Evidence</th><th>Coverage</th></tr></thead>
+              <tbody id="identity-rows"></tbody>
+            </table>
+            <div id="empty-state" class="empty-state" hidden>
+              <span class="empty-mark" aria-hidden="true">∅</span>
+              <h2>No identities match</h2>
+              <p>Clear a filter or broaden the search terms.</p>
+            </div>
+          </div>
+          <div class="pagination">
+            <button id="previous-page" class="quiet-button" type="button">Previous</button>
+            <span id="page-label">Page 1</span>
+            <button id="next-page" class="quiet-button" type="button">Next</button>
+          </div>
+        </section>
+
+        <section id="queues-view" class="view" aria-labelledby="queues-title"></section>
+        <section id="reviews-view" class="view" aria-labelledby="reviews-title"></section>
+      </main>
+    </div>
+
+    <dialog id="dossier" class="dossier-dialog">
+      <div class="dossier-shell">
+        <header class="dossier-head">
+          <div><span class="eyebrow" id="dossier-id">Identity</span><h2 id="dossier-title">Loading…</h2></div>
+          <button id="close-dossier" class="icon-button" type="button" aria-label="Close dossier">×</button>
+        </header>
+        <div id="dossier-content" class="dossier-content"></div>
+      </div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+{
+  "checked_at": "2026-09-05T14:17:40+00:00",
+  "automated_tests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "batch_replay": {
+    "changed": 0,
+    "unchanged": 24
+  },
+  "integrity_check": "ok",
+  "foreign_key_problems": [],
+  "unchanged_tables": [
+    "schema_migrations",
+    "sources",
+    "captures",
+    "search_runs",
+    "search_queries",
+    "coverage_targets",
+    "objects",
+    "appearances",
+    "appearance_object_links",
+    "identifiers",
+    "claims",
+    "events",
+    "media",
+    "leads",
+    "dedupe_candidates",
+    "dedupe_evidence",
+    "merge_log",
+    "saturation_sweeps",
+    "manual_audits",
+    "claim_conflict_reviews",
+    "claim_conflict_review_history",
+    "media_rights_reviews",
+    "claim_locator_corrections"
+  ],
+  "changed_text_rows": 24,
+  "changed_text_fields": [
+    "content",
+    "notes"
+  ],
+  "new_original_snapshots_verified": 24,
+  "previous_review_rows_unchanged": 11,
+  "current_checked_reading_texts": 35,
+  "cohort_public_approvals": 0,
+  "archive_verification": [],
+  "cohort": {
+    "main_cohort": 40,
+    "existing_penn_links": 40,
+    "translations": {
+      "reading_text_checked": 35,
+      "no_separate_translation_in_this_edition": 5
+    }
+  },
+  "roadmap": {
+    "destination": "docs/dataset_maturity_roadmap.md",
+    "handoff_ready": false,
+    "metric_gates_ready": false,
+    "required_tasks_ready": false,
+    "tasks": 34
+  },
+  "research_export": {
+    "tables": 25,
+    "text_history": {
+      "rows": 35,
+      "jsonl": "text_proofreading_reviews.jsonl",
+      "csv": "text_proofreading_reviews.csv",
+      "redacted_text_snapshots": 35
+    },
+    "texts": {
+      "rows": 196,
+      "jsonl": "texts.jsonl",
+      "csv": "texts.csv",
+      "redacted_contents": 186
+    }
+  },
+  "public_scaffold_validation": {
+    "generated_at": "2026-09-05T14:17:42+00:00",
+    "export_policy": "Reference scaffold with explicit text and media gates. Not a certification of scholarly accuracy. No capture records/files, claim payloads, notes, raw JSON, or review history. No public dashboard is deployed.",
+    "media_approved_rows": 0,
+    "media_withheld_rows": 325,
+    "tables": {
+      "sources": {
+        "rows": 752,
+        "jsonl": "sources.jsonl",
+        "csv": "sources.csv"
+      },
+      "objects": {
+        "rows": 1585,
+        "jsonl": "objects.jsonl",
+        "csv": "objects.csv"
+      },
+      "appearances": {
+        "rows": 1609,
+        "jsonl": "appearances.jsonl",
+        "csv": "appearances.csv"
+      },
+      "appearance_object_links": {
+        "rows": 1609,
+        "jsonl": "appearance_object_links.jsonl",
+        "csv": "appearance_object_links.csv"
+      },
+      "texts": {
+        "rows": 10,
+        "jsonl": "texts.jsonl",
+        "csv": "texts.csv"
+      },
+      "media": {
+        "rows": 0,
+        "jsonl": "media.jsonl",
+        "csv": "media.csv"
+      },
+      "identity_clusters": {
+        "rows": 1317,
+        "jsonl": "identity_clusters.jsonl",
+        "csv": "identity_clusters.csv"
+      }
+    }
+  },
+  "restored_backup": "data/private/backups/after-montgomery-completion-20260905T141742Z.sqlite3",
+  "restore_check": "passed"
+}

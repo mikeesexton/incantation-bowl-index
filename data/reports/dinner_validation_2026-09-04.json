@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-09-05T03:42:02+00:00",
+  "integrity_check": "ok",
+  "foreign_key_problems": [],
+  "archive_problems": [],
+  "captures_checked": 18,
+  "table_changes": {
+    "objects": {
+      "added": 1,
+      "deleted": 0,
+      "changed": 0,
+      "changed_fields": []
+    },
+    "appearances": {
+      "added": 1,
+      "deleted": 0,
+      "changed": 0,
+      "changed_fields": []
+    },
+    "sources": {
+      "added": 0,
+      "deleted": 0,
+      "changed": 1,
+      "changed_fields": [
+        "notes",
+        "updated_at"
+      ]
+    },
+    "claims": {
+      "added": 127,
+      "deleted": 0,
+      "changed": 137,
+      "changed_fields": [
+        "locator"
+      ]
+    },
+    "texts": {
+      "added": 0,
+      "deleted": 0,
+      "changed": 11,
+      "changed_fields": [
+        "content",
+        "notes"
+      ]
+    },
+    "media": {
+      "added": 0,
+      "deleted": 0,
+      "changed": 0,
+      "changed_fields": []
+    },
+    "dedupe_candidates": {
+      "added": 0,
+      "deleted": 0,
+      "changed": 0,
+      "changed_fields": []
+    },
+    "merge_log": {
+      "added": 0,
+      "deleted": 0,
+      "changed": 0,
+      "changed_fields": []
+    },
+    "appearance_object_links": {
+      "added": 1,
+      "deleted": 0,
+      "changed": 0,
+      "changed_fields": []
+    }
+  },
+  "original_snapshots_verified": {
+    "claim_locators": 137,
+    "texts": 11
+  },
+  "rights": {
+    "media_records": 325,
+    "media_current_ledger_rows": 325,
+    "media_rights_assessed": 0,
+    "media_rights_assessed_pct": 0.0,
+    "media_approved": 0,
+    "media_needs_rights_review": 325
+  },
+  "checked_reading_texts": 11,
+  "dossier_review_status": "passed",
+  "restored_backup": "data/private/backups/after-dinner-work-20260905T034203Z.sqlite3",
+  "restore_check": "passed",
+  "automated_tests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "javascript_syntax": "passed",
+  "public_scaffold_validation": {
+    "approved_media_rows": 0,
+    "withheld_media_rows": 325,
+    "preexisting_public_ok_text_rows": 10,
+    "published": false
+  }
+}

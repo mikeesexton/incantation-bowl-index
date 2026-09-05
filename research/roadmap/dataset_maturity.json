@@ -1,0 +1,530 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-05T19:47:34+00:00",
+  "portfolio_summary": {
+    "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
+    "strengths": [
+      "Discovery is broad and reproducible: 752 sources and 1,610 appearances support 1,585 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule.",
+      "The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.",
+      "Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media."
+    ],
+    "blockers": [
+      "Identity and claim quality is not yet measured corpus-wide: 284 older field-difference decisions need evidence-level revalidation, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
+      "Text and edition coverage remains sparse outside Montgomery: 312/791 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.",
+      "Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.",
+      "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up."
+    ]
+  },
+  "maturity_levels": [
+    {
+      "level": 0,
+      "name": "Unscoped",
+      "definition": "The source universe, rules, or required fields are not yet defined."
+    },
+    {
+      "level": 1,
+      "name": "Discovered",
+      "definition": "Candidate records and gaps are enumerated with retrievable source evidence."
+    },
+    {
+      "level": 2,
+      "name": "Reconciled",
+      "definition": "Identity and concordance decisions are reviewed, reversible, and evidenced."
+    },
+    {
+      "level": 3,
+      "name": "Enriched",
+      "definition": "Priority metadata and publication references are source-attributed and conflicts are triaged."
+    },
+    {
+      "level": 4,
+      "name": "Release-ready",
+      "definition": "Rights, quality, and public/private boundaries have been reviewed for a reproducible release."
+    },
+    {
+      "level": 5,
+      "name": "Monitored",
+      "definition": "Validated continuous collectors detect changes and open leads under documented operating controls."
+    }
+  ],
+  "workstreams": [
+    {
+      "id": "DISC",
+      "title": "Discovery and citation snowballing",
+      "scope": "Maintain maximum-recall discovery across scholarship, catalogues, museums, auctions, dealers, excavations, and cited private collections without treating completeness as absolute.",
+      "current_level": 2,
+      "target_level": 5,
+      "steward": "Research now; Mac mini monitoring later",
+      "tasks": [
+        {
+          "id": "DISC-001",
+          "title": "Complete phase-one source-class discovery",
+          "status": "done",
+          "owner": "Research",
+          "done_when": "All planned source classes are searched or explicitly blocked and two independent broad sweeps produce under 1% net-new identities without a new source class.",
+          "evidence": "Twelve source-class targets assessed; two qualifying saturation sweeps; campaign report generated."
+        },
+        {
+          "id": "DISC-002",
+          "title": "Continue bidirectional citation snowballing during enrichment",
+          "status": "in_progress",
+          "owner": "Mixed",
+          "done_when": "Every newly used source has backward and forward citations, object identifiers, named owners, and sale references checked; new leads are logged rather than held in notes.",
+          "evidence": "Ongoing rule; discovery can reveal new objects even after phase-one saturation."
+        },
+        {
+          "id": "DISC-003",
+          "title": "Classify recurring discovery sources for automation",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Every monitored source has a documented endpoint, cadence, access/robots status, expected identifier, and automation tier."
+        }
+      ]
+    },
+    {
+      "id": "CONC",
+      "title": "Identity and museum concordances",
+      "scope": "Reconcile physical bowls across museum records, publications, auctions, dealers, and collection histories while preserving uncertain matches for review.",
+      "current_level": 2,
+      "target_level": 3,
+      "steward": "Research judgment",
+      "tasks": [
+        {
+          "id": "CONC-001",
+          "title": "Finish British Museum and Segal concordances",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "All 142 Segal text numbers and all related British Museum objects are mapped, or each unresolved mapping has a precise blocker.",
+          "evidence": "Twenty-four checked item-page mappings remain. Audited importer repair corrected 137 Segal claim locators, including BM 117882 to 119ES, preserving original claims in immutable history. The uncertain language assessment and 142/159 discrepancy still need authorized full-catalogue inspection; no identity links changed."
+        },
+        {
+          "id": "CONC-002",
+          "title": "Finish Penn Museum concordances",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every identifiable Montgomery/Penn publication number is mapped to a current Penn object or a documented lost/unresolved state.",
+          "evidence": "All forty main Montgomery/Penn concordances now have dated, evidence-bound current museum-page reviews (2026-09-05): Object Number and explicit PBS III number agree in every case. Register/heading discrepancies for 14, 19 and 40 remain preserved; B2972 explicitly corrects text 40 to B2971. Nine exposed field differences were individually reviewed and five directed Penn relationship assertions were recorded without merging identities. Broader Penn holdings and the historical 150-plus inventory still need reconciliation."
+        },
+        {
+          "id": "CONC-003",
+          "title": "Finish National Library of Israel concordances",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "The 205 harvested records, 216-object donation statement, exhibition names, and seven Klagsbald bowls are reconciled without inventing missing item identities."
+        },
+        {
+          "id": "CONC-004",
+          "title": "Finish Schøyen publication and collection concordances",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Individually identifiable MS records are reconciled with publication numbers and aggregate collection claims; unenumerated remainder stays explicitly aggregate."
+        },
+        {
+          "id": "CONC-005",
+          "title": "Triage every conflicting identity-level core claim",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every currently flagged identity conflict is classified as genuine scholarly disagreement, temporal change, normalization artifact, source error, or data error; decisions retain evidence.",
+          "evidence": "53/337 field instances have current decisions; 284 older decisions require evidence-level revalidation. The nine newly exposed Penn differences (7 dimensions, 2 languages) received unresolved decisions, followed by a twenty-case same-source facet batch covering explicit equivalence and complementary dating, location and provenance fields. No values were averaged, normalized away or deleted. Fifteen current substantive instances across thirteen identities remain visible."
+        },
+        {
+          "id": "CONC-006",
+          "title": "Resolve the five substantive claim discrepancies",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Primary-source review resolves or explicitly leaves adjudicated disagreement for HS 3003 location, CBS 16020 location, Apollo lot 272 dating and language, and VA 3383 script.",
+          "evidence": "Detailed source values and rationales are recorded in the claim-conflict triage report."
+        },
+        {
+          "id": "CONC-007",
+          "title": "Check all forty main Montgomery/Penn number concordances",
+          "status": "done",
+          "owner": "Research",
+          "done_when": "Each main entry has an individually inspected Penn Object Number and explicit publication number, or a documented discrepancy, with dated evidence and reversible review history.",
+          "evidence": "40/40 confirmed from visible museum Details tables. Migration 009 stores immutable, evidence-bound observations; changed local identity evidence invalidates the current review. Zero identity edits. Six follow-up leads preserved unrelated anomalies; three are resolved at the available evidence level and three remain active."
+        },
+        {
+          "id": "CONC-008",
+          "title": "Model source-reported relationships separately from physical identity",
+          "status": "done",
+          "owner": "Research",
+          "done_when": "Ambiguous duplicate, same-as and part-of notes can be stored as directed, source-attributed, evidence-bound assertions without causing an object merge.",
+          "evidence": "Migration 010 adds an append-only relationship ledger and checked replay-safe importer. Five Penn assertions connect B16007/B16081 and B16086/B16062/B6354: one explicit physical-part scope is accepted, four scopes remain unresolved, and zero identity changes were made. Three associated leads were closed with documented outcomes."
+        }
+      ]
+    },
+    {
+      "id": "TEXT",
+      "title": "Texts, translations, and publication references",
+      "scope": "Record where editions, transliterations, translations, incipits, and commentary exist, independently of whether copyrighted content can be stored or published.",
+      "current_level": 1,
+      "target_level": 3,
+      "steward": "Research judgment",
+      "tasks": [
+        {
+          "id": "TEXT-001",
+          "title": "Create publication-reference coverage for known texts",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "At least 80% of probable/confirmed identities have either an edition reference or an explicit no-known-edition status, each with a source.",
+          "evidence": "312/791 probable/confirmed identities have publication-scheme identifiers (39.4%); this proxy does not yet verify edition locators or count sourced no-known-edition assessments. Align the metric with the task definition."
+        },
+        {
+          "id": "TEXT-002",
+          "title": "Proofread Montgomery's 35 extracted translations",
+          "status": "done",
+          "owner": "Research",
+          "done_when": "Every translation is checked line by line against the scan, corrections are logged, and public_ok is decided independently of public-domain status.",
+          "evidence": "35/35 available translations visually checked against archived scans as normalized English reading texts, in batches of 11 and 24. Exact original rows, corrected text hashes, source-PDF hash, page locators and correction notes retained. Zero OCR drafts remain in this cohort. All 35 remain public_ok=false; independent specialist review and original-language verification are separate work. Completion manifest: research/reviews/montgomery_reading_texts_completion_2026-09-05.json."
+        },
+        {
+          "id": "TEXT-003",
+          "title": "Capture reliable Montgomery transliterations",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Each of Montgomery's 40 bowl texts has a checked transliteration or a precise reason it cannot yet be captured."
+        },
+        {
+          "id": "TEXT-004",
+          "title": "Index restricted editions without copying protected text",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Known copyrighted editions retain bibliographic references, item ranges, language/script, access status, and rights metadata even when content is absent."
+        },
+        {
+          "id": "TEXT-005",
+          "title": "Account for every main Montgomery entry and source exception",
+          "status": "done",
+          "owner": "Research",
+          "done_when": "All forty main entries have explicit publication, translation and register status; appendix material is separately scoped.",
+          "evidence": "40-row cohort report: 35 checked reading texts, zero OCR drafts, and 5 source-documented cases with no separate translation (18, 21, 23, 27, 33). Appendix 42 remains a separate uncertain possible bowl candidate; Appendix 41 is explicitly a skull."
+        },
+        {
+          "id": "TEXT-006",
+          "title": "Independently review the Montgomery reading-text cohort",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "A separate reviewer checks all 35 edited English texts against the scans, explicitly reviews names, magical formulas, gaps and restorations, and records disagreements or corrections without overwriting earlier reviews.",
+          "evidence": "First scan-review pass complete for 35/35. No independent specialist certification or original-language verification is claimed; publication approval remains separate."
+        }
+      ]
+    },
+    {
+      "id": "META",
+      "title": "Physical, chronological, linguistic, and provenance enrichment",
+      "scope": "Add source-attributed findspots, current locations, collection and acquisition histories, dates, dimensions, material, language, and script without flattening disagreement.",
+      "current_level": 1,
+      "target_level": 3,
+      "steward": "Mixed",
+      "tasks": [
+        {
+          "id": "META-001",
+          "title": "Enrich provenance and collection history",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every probable/confirmed identity is assessed for findspot, excavation context, ownership history, and current location; absent evidence is recorded as unknown rather than inferred."
+        },
+        {
+          "id": "META-002",
+          "title": "Enrich dating and physical description",
+          "status": "in_progress",
+          "owner": "Mixed",
+          "done_when": "Every probable/confirmed identity is assessed for dating, dimensions, material, and condition with field-level citations.",
+          "evidence": "All forty Montgomery register rows checked against printed pp. 321–326: 40 structured height/diameter claims, 40 explicitly historical condition descriptions and 40 literal register identifiers added. Seven dated Penn height/outside-diameter assertions all differ from the register and now have explicit unresolved reviews; no averaging or convention equivalence was inferred. Montgomery's cohort-level late pre-Islamic dating argument is stored separately as context for B2963 and does not replace Penn's object-level ca. 200 BCE report."
+        },
+        {
+          "id": "META-003",
+          "title": "Enrich language and script classification",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every text-bearing probable/confirmed identity has a cited language and script classification or an explicit uncertain/unreadable status.",
+          "evidence": "Current Penn fields Hebrew Language for B9010 (Montgomery 9) and B9008 (31) are retained alongside the edition-based JBA and Syriac attributions. Both differences now have evidence-bound unresolved decisions and active original-script follow-ups; no silent normalization or source-error assignment."
+        },
+        {
+          "id": "META-004",
+          "title": "Prioritize legally excavated and institutionally held objects",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "High-confidence excavation and museum groups receive complete core-field review before lower-evidence market aggregates.",
+          "evidence": "Forty Montgomery register rows, all thirty-five available English translations, and forty Penn number concordances have direct source review. Nine new field differences are explicitly adjudicated as unresolved; five Penn relationship assertions are structured separately from identity. Waller's excavation-site review now supplies an explicit distinction between documented excavation and unverified reported provenance. Original-script work and independent second text review remain."
+        },
+        {
+          "id": "META-005",
+          "title": "Grade findspot claims by evidence basis",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every probable or confirmed identity with a findspot claim records whether the place derives from documented controlled excavation, a museum or accessions register, a dealer or market report, later scholarly inference, or unverified evidence; original place claims and uncertainty remain source-attributed.",
+          "evidence": "Waller 2025, printed pp. 10–13, distinguishes documented excavation sites from unverified register and dealer provenances. BM 91711 has a separate source-attributed assessment marking its plausible Arban attribution unverified. Primary-source review of Schwab 1891 pp. 590–593 now enumerates three Dieulafoy mission Susiana bowls, N–P, with separate records, dimensions, and excavation-evidence assessments corroborated by Montgomery 1913 p. 19. Current museum accessions and precise contexts remain open."
+        }
+      ]
+    },
+    {
+      "id": "RIGHTS",
+      "title": "Images and rights",
+      "scope": "Build a rights ledger before copying images into the corpus or exposing any media publicly; distinguish private evidentiary capture from public reuse permission.",
+      "current_level": 1,
+      "target_level": 4,
+      "steward": "Human rights review",
+      "tasks": [
+        {
+          "id": "RIGHTS-001",
+          "title": "Define the image-rights ledger and decision vocabulary",
+          "status": "done",
+          "owner": "Research",
+          "done_when": "Every media row can record creator/owner, source URL, rights statement, license, jurisdiction/date notes, private-capture status, public-reuse decision, and reviewer.",
+          "evidence": "Implemented immutable media-rights ledger, exact-evidence review batches and stale/revoked decision handling. All 325 media have explicit initial needs_review holds, not completed rights assessments. Workflow in docs/evidence_review_and_release.md."
+        },
+        {
+          "id": "RIGHTS-002",
+          "title": "Review all existing media records",
+          "status": "in_progress",
+          "owner": "Human review",
+          "done_when": "One hundred percent of media records have a reviewed rights disposition; unknown remains permissible only with an explicit follow-up task.",
+          "evidence": "325/325 media inventoried with explicit follow-ups; 0/325 completed rights assessments and 0 approved for public reuse. Existing non-unknown copyright labels do not count as decisions."
+        },
+        {
+          "id": "RIGHTS-003",
+          "title": "Separate private thumbnails from public media exports",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "A separate public-export path excludes unapproved media URLs/bytes and private source payloads, with regression tests. Any later public dashboard must consume that reviewed projection and receive its own release check.",
+          "evidence": "Added separate allowlist-based export-public reference scaffold: excludes captures, private payloads, claim content, notes and review histories; text public_ok and current per-media approval are separate gates. Tests cover stale approval, revocation, duplicate URLs, known private references and residual destination files. Live validation withheld all 325 media. No public dashboard is deployed."
+        }
+      ]
+    },
+    {
+      "id": "OPS",
+      "title": "Mac mini continuous operations",
+      "scope": "Prepare a private, recoverable, observable 24/7 research worker that detects changes and opens evidence-backed leads without autonomously making sensitive scholarly or rights decisions.",
+      "current_level": 0,
+      "target_level": 5,
+      "steward": "Mac mini after 2026-09-22",
+      "tasks": [
+        {
+          "id": "OPS-001",
+          "title": "Provision the Mac mini research runtime",
+          "status": "queued",
+          "owner": "Engineering",
+          "done_when": "Repository, isolated Python runtime, secrets storage, launch-on-boot service account, logs, health checks, and least-privilege filesystem layout are documented and reproducible."
+        },
+        {
+          "id": "OPS-002",
+          "title": "Configure encrypted local and off-device backups",
+          "status": "queued",
+          "owner": "Engineering",
+          "done_when": "Database, capture manifests, and private archive are backed up on schedule and a sampled restore has been completed successfully."
+        },
+        {
+          "id": "OPS-003",
+          "title": "Implement safe collector scheduling and change detection",
+          "status": "queued",
+          "owner": "Engineering",
+          "done_when": "Approved collectors have bounded schedules, rate limits, idempotency, hashes/diffs, retry limits, failure alerts, and per-source disable switches."
+        },
+        {
+          "id": "OPS-004",
+          "title": "Complete a 14-day shadow run",
+          "status": "queued",
+          "owner": "Mac mini agent",
+          "done_when": "Continuous collectors run for 14 days with no silent data loss, uncontrolled duplicates, rights leakage, or unresolved operational failures; alerts are reviewed for usefulness."
+        },
+        {
+          "id": "OPS-005",
+          "title": "Adopt collect-and-flag autonomy boundaries",
+          "status": "queued",
+          "owner": "Research owner",
+          "done_when": "Written policy and tests ensure agents may collect appearances and open leads but may not auto-merge uncertain objects, adjudicate claims/authenticity, clear rights, or publish."
+        }
+      ]
+    },
+    {
+      "id": "QA",
+      "title": "Evidence quality and regression controls",
+      "scope": "Measure current evidence validity, sampled scholarly accuracy, and release safety separately from record counts and metadata presence.",
+      "current_level": 2,
+      "target_level": 3,
+      "steward": "Research and engineering",
+      "tasks": [
+        {
+          "id": "QA-001",
+          "title": "Bind conflict review validity to current evidence and conservative rules",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "Changed claims, sources, cluster membership, and unsupported compatibility rules reopen review without deleting historical decisions; orphan reviews cannot satisfy roadmap gates.",
+          "evidence": "Implemented in conflict_review.py, identity.py, roadmap.py and current conflict reports. Regression tests cover changed evidence and unsafe equivalence; 313 reviews reopen in the existing corpus. See data/reports/quality_review_2026-09-04.md."
+        },
+        {
+          "id": "QA-002",
+          "title": "Revalidate the historical rule-assisted conflict triage",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "All 313 reopened instances have source-level decisions on their exact current evidence, with append-only review history and explicit uncertainty preserved.",
+          "evidence": "304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata."
+        },
+        {
+          "id": "QA-003",
+          "title": "Audit a stratified sample of identity and extraction decisions",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Publish reproducible sample selection across institutions, market records, status classes and merge methods; check primary evidence and report denominators, error categories and uncertainty.",
+          "evidence": "Zero generated pending dedupe candidates is queue completion, not measured identity accuracy. Current review examined architecture, integrity, archive hashes, aggregate metrics and selected rule evidence, not all objects."
+        },
+        {
+          "id": "QA-004",
+          "title": "Separate presence, assessment, verification and source coverage metrics",
+          "status": "in_progress",
+          "owner": "Mixed",
+          "done_when": "Track field assessment and verification independently of presence; distinguish excavation provenance from production region and ownership; reconcile item-level denominators for major sources; align publication and rights gates with reviewed evidence.",
+          "evidence": "Roadmap now separates 325 media ledger holds from 0 completed rights assessments and 0 public approvals, and counts 35 current scan-checked reading texts separately from text presence. Main Montgomery denominator is explicit: 40 entries, 35 translations and 5 documented absences in this edition. General field-assessment and edition-reference metrics still need work. Forty current-evidence museum concordance reviews are now counted separately from existing identity links; observations retain review dates and do not certify unchanged live websites or unrelated metadata."
+        },
+        {
+          "id": "QA-005",
+          "title": "Implement evidence-bound subset reviews and append-only history",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "Review batches reject changed evidence, duplicate or absent fields and count-only overrides; writes are atomic and replay-idempotent; all original and subsequent decisions remain in immutable history.",
+          "evidence": "Migration 005 preserved all 328 starting decisions. The nine-instance batch and one later refreshed decision yield 338 immutable snapshots; all original and subsequent judgments remain inspectable."
+        },
+        {
+          "id": "QA-006",
+          "title": "Repair range-generated citation pointers with retained originals",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "Importer assigns each range item its own locator and exact-evidence repairs retain before/after snapshots; regression tests cover exceptions, replay, stale input and rollback.",
+          "evidence": "137/137 affected Segal claims repaired; zero remaining source/appearance locator mismatches in that scoped audit. Scholarly values, uncertainty and identity links unchanged. Migration 008 and research/reviews/segal_locator_corrections_2026-09-04.json."
+        },
+        {
+          "id": "QA-007",
+          "title": "Preserve originals and evidence for text proofreading",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "Scan-bound revision batches preserve original and corrected texts, reject stale evidence, and prevent OCR reimport from overwriting checked work.",
+          "evidence": "Migration 006, thirty-five current scan-checked reading texts and passing regression tests; exact originals retained and private text histories redacted from research exports. Completion batch replays with zero changes."
+        }
+      ]
+    }
+  ],
+  "handoff_gate": {
+    "target_date": "2026-09-22",
+    "metric_conditions": [
+      {
+        "metric": "pending_dedupe",
+        "operator": "<=",
+        "target": 0,
+        "description": "No unreviewed generated dedupe candidates"
+      },
+      {
+        "metric": "untriaged_conflict_instances",
+        "operator": "<=",
+        "target": 0,
+        "description": "Every generated claim-difference flag has a recorded triage"
+      },
+      {
+        "metric": "qualifying_saturation_sweeps",
+        "operator": ">=",
+        "target": 2,
+        "description": "Discovery saturation demonstrated by independent sweeps"
+      },
+      {
+        "metric": "publication_reference_pct",
+        "operator": ">=",
+        "target": 0.8,
+        "description": "Publication-reference coverage reaches the operational threshold"
+      },
+      {
+        "metric": "media_rights_assessed_pct",
+        "operator": ">=",
+        "target": 1.0,
+        "description": "Every media row has a current completed rights decision; initial needs_review holds do not qualify"
+      }
+    ],
+    "required_task_ids": [
+      "CONC-001",
+      "CONC-002",
+      "CONC-003",
+      "CONC-004",
+      "CONC-005",
+      "CONC-006",
+      "TEXT-001",
+      "RIGHTS-001",
+      "RIGHTS-002",
+      "RIGHTS-003",
+      "OPS-001",
+      "OPS-002",
+      "OPS-003",
+      "OPS-004",
+      "OPS-005",
+      "QA-001",
+      "QA-002",
+      "QA-003",
+      "QA-004",
+      "QA-005"
+    ]
+  },
+  "change_log": [
+    {
+      "date": "2026-09-04",
+      "note": "Created the living maturity framework from the six priority research streams and added an explicit Mac mini handoff gate."
+    },
+    {
+      "date": "2026-09-04",
+      "note": "Recorded the Montgomery 1913 translation and Penn concordance enrichment as the first text-workstream evidence."
+    },
+    {
+      "date": "2026-09-04",
+      "note": "Triaged all 328 apparent claim differences: 323 compatible variants/facets and five substantive discrepancies across four identities."
+    },
+    {
+      "date": "2026-09-04",
+      "note": "Independent code/corpus quality review found permissive compatibility rules and stale-review counting. Preserved all 328 decisions, reopened 313 for source-level revalidation, added QA priorities, qualified coverage metrics, and withdrew unsupported public-safe export wording. No scholarly claims or identities changed."
+    },
+    {
+      "date": "2026-09-04",
+      "note": "Added atomic evidence-bound review batches and immutable decision history. Revalidated nine BM field instances using stored evidence (eight compatible; one unresolved), reducing the pending revalidation queue to 304. Logged BM 117882 Segal 117ES/119ES mismatch as a blocked lead; no identity or original claim changed."
+    },
+    {
+      "date": "2026-09-04",
+      "note": "Substantial source and infrastructure pass: checked eleven Montgomery reading texts and forty register rows; added 125 source claims and separately scoped possible-bowl Appendix 42 candidate; repaired 137 Segal citation pointers with immutable originals; added media-rights ledger and narrow fail-closed export. 325 initial rights holds are not completed assessments. Roadmap gates now use actual rights decisions."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Completed the remaining 24 Montgomery English scan reviews: all 35 available translations now have retained originals and exact-source audit records; all 40 main entries accounted for with 5 documented source absences. Restored omitted gaps and corrected OCR names and magical formulas. TEXT-002 complete; separate second-review task added. Public text approvals, identities, scholarly claims and media rights unchanged."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Individually checked all forty main Penn catalogue concordances; added immutable dated reviews and current-evidence counting, without identity changes. Added eleven reported metadata claims and six follow-up leads. Nine new field differences are now visible: total 337, with 24 current decisions and 313 pending (304 stale plus 9 new). English cohort remains 35/35 checked; no media rights or public approvals changed."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Added a portfolio-level roadmap summary with task and handoff-gate counts, explicit strengths and release blockers, and separate open-lead reporting. Raised QA to L2 because evidence-bound, immutable review workflows now cover conflicts, texts, citation repairs, rights, and museum concordances; the unreviewed backlog and missing stratified accuracy audit keep it below L3."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Adjudicated all nine newly exposed Penn field differences as evidence-bound unresolved cases, reducing current review demand from 313 to 304. Added an append-only object-relationship model and recorded five directed Penn assertions without merging identities. Preserved Montgomery's cohort-level dating as context rather than converting it into an object-specific correction. Three of six Penn anomaly leads are resolved; dating and two language checks remain active."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Completed a further twenty-case evidence-bound revalidation batch for same-source wording and complementary field facets. Current conflict coverage is 53/337 and the older backlog is 284. Each compatibility decision explicitly distinguishes dating from period, findspot from production place, or exact wording variants; batch replay is a no-op and all historical snapshots remain retained."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Reviewed a user-provided excerpt of Waller's 2025 excavation-site survey (printed pp. 10–13) and added META-005 to distinguish documented excavation from museum-register, dealer, inferred and unverified provenance. Archived the excerpt privately by hash, added a non-destructive assessment to BM 91711's plausible but unverified Arban claim, and opened focused Arban, Susa and corpus-wide findspot-audit leads."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Continued META-005 into the primary literature: visually checked Schwab 1891 pp. 590–593 and Montgomery 1913 p. 19, enumerated the three Dieulafoy mission Susiana bowls N–P as separate probable objects, and recorded exact dimensions, condition, beneficiary uncertainty, excavation events, and source-basis assessments. Modern museum accessions and trench-level contexts remain unresolved."
+    }
+  ],
+  "priorities": [
+    "CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.",
+    "META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.",
+    "META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.",
+    "TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.",
+    "CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.",
+    "QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.",
+    "RIGHTS-002: investigate actual reuse evidence for the 325 media holds. Export safeguards are implemented; rights clearance is still 0/325. Do not substitute old copyright labels for assessment.",
+    "TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.",
+    "DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.",
+    "OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding."
+  ]
+}

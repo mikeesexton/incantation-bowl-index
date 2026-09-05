@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_path": "data/private/archive/sha256/c8/c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_by": "Codex: rendered-page English reading-text review",
+  "reviewed_at": "2026-09-05T14:13:26+00:00",
+  "editorial_policy": "English reading text checked against rendered scan pages. Paragraphs and punctuation spacing normalized; print line wrapping and line-end hyphenation removed; Latin-name diacritics and small capitals normalized; printed Latin-letter magical-formula diacritics retained, including the four-line formula layout in text 15; italics not encoded; standalone runs of gap dots represented by ... without claiming a missing-character count. Numbered inscription-line references, restorations, uncertainty markers and odd source wording retained. Not a diplomatic transcription, new translation, or verification of the Aramaic; public_ok remains false.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-MONT-01-20260905",
+      "text_number": 1,
+      "text_id": "TXT-FCDAA196D774",
+      "expected_text_sha256": "f8e702cd72feb7e1bc6c5826d8d8738377fb70832eaa837cac5d481e4b9ac4e1",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-01.txt",
+      "corrected_content_sha256": "64b0f83adf8782c8fd5b0be539cee8f47de470999de25d1b3b1fbaf0d21c8bb1",
+      "pdf_pages": [
+        123,
+        124
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected OCR 5 for the name abbreviation S and restored the printed consonant marks in ṬWM / Š‘Š / GŠ / GŠK; normalized printed loss-dot runs and retained the source’s unusual This the amulet wording."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-02-20260905",
+      "text_number": 2,
+      "text_id": "TXT-C0414DCB1953",
+      "expected_text_sha256": "51f80df4f54d685d7b5a2ff22c02ced6c83b3e25e3a8dff7f6289eddad13e871",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-02.txt",
+      "corrected_content_sha256": "2cbe9298c3387a75ade4b0ebc06488493f2fc8756b93ba5878ac3e0920776280",
+      "pdf_pages": [
+        127,
+        128
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected Herrnon to printed Hermon, joined the page-break word Sacraments, and retained the printed stray opening quote before the garment."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-03-20260905",
+      "text_number": 3,
+      "text_id": "TXT-5108222057C7",
+      "expected_text_sha256": "0f83d3ec3d724d6c95893d57e687f501217d83430e06ae234b4d4099b2106708",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-03.txt",
+      "corrected_content_sha256": "71b5000c8b0e5955ea31780659c5d6594ee29ae07ddf4b912e85aeb5b6225b8f",
+      "pdf_pages": [
+        133,
+        134
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Recovered three printed gap runs; corrected corrupted H. abbreviation and Yhwh, formula P‘SP‘SP‘, and printed dotted consonants in the Latin formulas after enlarged scan inspection. Preserved the edition’s bracketed restorations and abbreviated repetitions."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-04-20260905",
+      "text_number": 4,
+      "text_id": "TXT-97ABC8CB31A1",
+      "expected_text_sha256": "77348a0fe56301e686c3357b66538a01238ba8b8c6e6d2d73f03e2b6a09df240",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-04.txt",
+      "corrected_content_sha256": "83904a6a1b4425a8fc68f78b3409e35139ee672110908b7efc26fcc753a0206d",
+      "pdf_pages": [
+        139,
+        140
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected OCR numeral 1 to I and normalized the printed loss run and punctuation spacing; retained the source’s repeated charmed wording and bracketed seal."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-05-20260905",
+      "text_number": 5,
+      "text_id": "TXT-50E004F04033",
+      "expected_text_sha256": "9e94ec00cbc24cfe63933f7306b000e2494f7d86f6e44fc029972ef0bb41df9d",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-05.txt",
+      "corrected_content_sha256": "1b57480256b4103840a18bae51b0fe4fb31c4c150955b6568aea58cabc5decfc",
+      "pdf_pages": [
+        144,
+        145
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored the omitted printed gap after curse and corrected two OCR corruptions of Yhwh; preserved uncertain bracketed property and the remaining loss marker."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-06-20260905",
+      "text_number": 6,
+      "text_id": "TXT-C3871A52D262",
+      "expected_text_sha256": "6b58e3075483d9d0b6ec2facc3b9dbe3dc8d1d5cf4c1578475502655965e78ee",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-06.txt",
+      "corrected_content_sha256": "5769d68beaf22fb33e22aff0a0c6a5a00c6ac2b93fd4449e93472bdf622e7db7",
+      "pdf_pages": [
+        147,
+        148
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored the two omitted gap runs in the second paragraph and corrected corrupted Ahath. The source translation itself skips line references 2 and 8; no references were invented."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-07-20260905",
+      "text_number": 7,
+      "text_id": "TXT-CF262B42E6B3",
+      "expected_text_sha256": "e75b6d57be8f8f73348fd9af90627fcbf41f771bd73c3590eb91d9622d2c034a",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-07.txt",
+      "corrected_content_sha256": "e04b698a456308ec35b66231616700ae0458d1f9b563e988b0973bc44b7f8fbf",
+      "pdf_pages": [
+        153,
+        154
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected the OCR period after you to the printed comma; retained source comparison labels Myhrman/M. and bracketed divine name. Translation ends on printed p.148/PDF154; PDF155 in the inherited locator is commentary, not additional translation."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-08-20260905",
+      "text_number": 8,
+      "text_id": "TXT-4CA54D8CD1EA",
+      "expected_text_sha256": "cf4ea6bc6d97107c61d530e07b8338ccfc850e5fe103e398e8e7e6e98ac1859a",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-08.txt",
+      "corrected_content_sha256": "2cc8913e58ead38be455c9bc796f77c913403dc12e6ef2562f9dbbc4751616ff",
+      "pdf_pages": [
+        161,
+        162
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected hath to bath, numeral 1 to I, and Llag to Hag. Preserved source gap runs, bracketed restorations and difficult wording Hear and they and go; retained real compound hyphens at print line breaks."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-09-20260905",
+      "text_number": 9,
+      "text_id": "TXT-E53B5E017E6D",
+      "expected_text_sha256": "d2199fe29ac0b92976d2c9cc9b5ba191cf461ce2c302e0b1979b0c0efae5c232",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-09.txt",
+      "corrected_content_sha256": "f8b7e64320ff4a1d9a2aebd57cb8eacc72c003f69be3a1791b0080d9c6259eb5",
+      "pdf_pages": [
+        167,
+        168
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected corrupted S. abbreviation and exterior line number 11; recovered the omitted final gap after letters of separation."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-11-20260905",
+      "text_number": 11,
+      "text_id": "TXT-0826E57BFD02",
+      "expected_text_sha256": "5e7fed341fea3a6991622636fc240809be3fb8e9718b945045758fa7bf15b294",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-11.txt",
+      "corrected_content_sha256": "bc266efc075633b598babb959322b6061985b98b291cc58f2769b35cf8efdf98",
+      "pdf_pages": [
+        176
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected OCR Ivaphni to the printed Kaphni; normalized gap runs and retained uncertain Memintas/Habgezig readings and all bracketed restorations."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-12-20260905",
+      "text_number": 12,
+      "text_id": "TXT-2C11BDEE2B80",
+      "expected_text_sha256": "8c42cf8f20e89dc6c9522a17d5c60ab87c281caf2cec9d782530373074813cdd",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-12.txt",
+      "corrected_content_sha256": "e525167cb1e31369dc22681ab0526cfd9dd44caea3867b61bcda5614ee369c42",
+      "pdf_pages": [
+        180,
+        181
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected the corrupted Asmanduch name and restored the printed romanized syllables še’û / še’û / semû after enlarged inspection; removed an OCR-added hyphen before the dash. Preserved the exterior instruction and source wording lightening."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-13-20260905",
+      "text_number": 13,
+      "text_id": "TXT-765BB4BF3763",
+      "expected_text_sha256": "f10963c6391b34bb084e66644c47659871d51476c65681c00bd109e1aa1ee645",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-13.txt",
+      "corrected_content_sha256": "dd7340f0bad4666fcd57053a3f6086e54984c959132a94b9729d016335dce11b",
+      "pdf_pages": [
+        184,
+        185
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored the printed gap and comma between voice of and the voice; corrected line numbers 10 and 11 and retained the real hyphen in Yhwh-in-Yah."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-15-20260905",
+      "text_number": 15,
+      "text_id": "TXT-B68E81AC8E2E",
+      "expected_text_sha256": "04adc16e5fee7c650fca2996753aa29d3c4b3daf5784804cda4bf5edb7999c44",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-15.txt",
+      "corrected_content_sha256": "1c1fa88d2bec94f4dfc1ec882f25d8a0b30b585bae15955bc9efeced55dc19de",
+      "pdf_pages": [
+        191,
+        192
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Re-read the four-line Latin charm formula in an enlarged scan and restored its letters, circumflexes and dotted consonants; recovered gaps at 7, 8 and 9 and corrected Dod(a)i. The printed incomplete .hatiel remains incomplete. Formula line breaks retained, without proposing an Aramaic interpretation."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-16-20260905",
+      "text_number": 16,
+      "text_id": "TXT-DFB6AFF5D4E5",
+      "expected_text_sha256": "1075048790d17e13fbf893851d2222752bdc0269d685696adcb92ce398a29fce",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-16.txt",
+      "corrected_content_sha256": "393be6b33b1bba173246c168081848a59ae91f9fd473eb0f0bf9e0fca99caa25",
+      "pdf_pages": [
+        194,
+        195
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected line reference 11 and the printed ll. 1 ff. cross-reference; joined the broken word Adjurations. Retained uncertain arts and whose wording."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-17-20260905",
+      "text_number": 17,
+      "text_id": "TXT-A383843C3661",
+      "expected_text_sha256": "d7e50794c5d57bb1ea5e77f35aad4db39969bc596107c1bf66583d1771f1af00",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-17.txt",
+      "corrected_content_sha256": "9d48db6a5100a953e5205ff4593f9fd62137cfd872b003b3c1f879484e4571d7",
+      "pdf_pages": [
+        196,
+        197
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected OCR Llag to Hag and extraneous punctuation in sic; retained the printed parentage order, differing Perohia/Perahia forms and source line references."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-19-20260905",
+      "text_number": 19,
+      "text_id": "TXT-503EFA18BFA9",
+      "expected_text_sha256": "589014b6933cbc8da4009383c0e8064551edea14e7b5da091db71e5b27b0e587",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-19.txt",
+      "corrected_content_sha256": "35c7708b6048e859338ce796a0911656d1502452ec923a9952621c58319c849d",
+      "pdf_pages": [
+        202,
+        203
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Recovered five omitted printed gap runs including the terminal loss; corrected she-demons, Hanas, Zeuza, the Menirnas word boundary and the romanized phrase rôs berôs delterôs. Retained the source’s unidentified divine names and uncertain interpretations."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-29-20260905",
+      "text_number": 29,
+      "text_id": "TXT-658B013C80B0",
+      "expected_text_sha256": "ecef12d926f38ca952a0288f6d66870975d49406503e3921b372174fa5996b0f",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-29.txt",
+      "corrected_content_sha256": "562c2fdfd343de1ff566ae1390e45216683c7f4e0fa495ece2ea2ce28a6efb87",
+      "pdf_pages": [
+        224,
+        225
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Recovered six omitted gap runs and corrected Lib. to the printed Lili; restored the marked consonants in the enlarged Latin formula exactly as printed, including the first dotted K. Retained the source’s difficult decent Lilith wording."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-32-20260905",
+      "text_number": 32,
+      "text_id": "TXT-D423FB558938",
+      "expected_text_sha256": "21b0b1a9e0ff7d3ad87257cf1e86574b8efdad60b5555e908180e394a21f6e09",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-32.txt",
+      "corrected_content_sha256": "148365128ed65b9b87125c403efad256dcbdea8a5273314151540b4537fcc838",
+      "pdf_pages": [
+        231,
+        232
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected corrupted ban-writ and restored the gap before Hallela; checked the repeated YH formula and retained the printed vowel marks in Atâtôt/Atôt. No identification of Jesus bar Perahia with another figure is inferred."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-34-20260905",
+      "text_number": 34,
+      "text_id": "TXT-FEB8F4355623",
+      "expected_text_sha256": "06baedabcee813c9f78d11805c909694f4292e904a22b5a3f1f017563d5b5179",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-34.txt",
+      "corrected_content_sha256": "8491fb5deb304310fa2d4d02b5dbfefc9460a387b8d71a8dbd686089d4caf0ab",
+      "pdf_pages": [
+        237,
+        238
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected Marni to Mami, Dainkar to the printed Damḳar and Sard to Šarâ; retained printed consonant marks in the short name list and corrected line reference 11. Preserved the gap after which."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-35-20260905",
+      "text_number": 35,
+      "text_id": "TXT-849659D7F721",
+      "expected_text_sha256": "1fe67da7ec432dc258ed08ba251903bd2cb3d6cf48ecb63faacaf85879a3b89a",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-35.txt",
+      "corrected_content_sha256": "9c443b5aaccb2c5ed4a9db5f183546af9f66722fe5276040dffd5d5bcd0b445d",
+      "pdf_pages": [
+        242,
+        243
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Recovered two missing gap runs and corrected OCR numerals 5, 6 to the printed vocalization ô, ô; restored romanized syllable marks and line reference 11."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-37-20260905",
+      "text_number": 37,
+      "text_id": "TXT-9C1A697131DA",
+      "expected_text_sha256": "5e51ac01df40f9d6a0aa188a18a949f81733c2492d99419bb84ffca26439b157",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-37.txt",
+      "corrected_content_sha256": "b0c06cacec070709ec9c3c66dca8a8f2cfa32ad452b8cc0c1bb878c399513a7d",
+      "pdf_pages": [
+        248
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected OCR Lie to He, restored the printed gap after Master named, and retained the compound Amulet-spirits. Normalized gap dots and spacing. English translation occupies PDF page 248; page 249 in the inherited locator is commentary. Fragmentary wording and missing line references remain as printed."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-38-20260905",
+      "text_number": 38,
+      "text_id": "TXT-B460100A541E",
+      "expected_text_sha256": "6743235239b2c5558f4e99b7c2022689abacb5a2fd6be394073d2c3e35a6a1bd",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-38.txt",
+      "corrected_content_sha256": "c16eceaa2ecad572a9fb5f08e869b2f5fdb53618900f9aa369aeb01a0817c64c",
+      "pdf_pages": [
+        250,
+        251
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored printed gaps after mighty Istar and the exterior Holy (?). Normalized line wrapping and paragraph divisions; names and uncertainty remain as printed under the reading-text policy."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-39-20260905",
+      "text_number": 39,
+      "text_id": "TXT-4DE4FA77A583",
+      "expected_text_sha256": "4eb2cac32175aef716966c8a067eeaf72b7085000b60a82f01a66a2b324a3755",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-39.txt",
+      "corrected_content_sha256": "633a55e3ad8c039d86f8fb72a47042dbc2e02f637f843dd6a9ddf455cb70830b",
+      "pdf_pages": [
+        254
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Checked the complete English translation: normalized line wrapping, paragraph divisions, gap dots and punctuation spacing; no lexical emendations. Preserved the different parentage phrasings. Translation is on PDF page 254; page 255 in the inherited locator is commentary."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-40-20260905",
+      "text_number": 40,
+      "text_id": "TXT-58FA58A4F4FA",
+      "expected_text_sha256": "58651c087ca6271d0a3f30b3eccaf60cd77afeee27bade64bffbad096868c9d4",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-40.txt",
+      "corrected_content_sha256": "3838723512d15432617d2d816de7c9479f3df5bc10344f57eae0b2b01eb46cc7",
+      "pdf_pages": [
+        258,
+        259
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored the full printed gap line between inscription-line references 6 and 12 without inventing omitted wording or line numbers. Corrected OCR a [11 to a[ll; normalized spacing, paragraphs and gap dots, preserving restorations and uncertainty."
+    }
+  ]
+}

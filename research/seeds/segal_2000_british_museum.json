@@ -1,0 +1,29 @@
+{
+  "source": {
+    "source_type": "catalogue",
+    "title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+    "authors": "J. B. Segal, with a contribution by Erica C. D. Hunter",
+    "issued_year": 2000,
+    "publisher": "British Museum Press",
+    "isbn": "0714111457",
+    "url": "https://www.britishmuseum.org/collection/term/BIB3908",
+    "citation": "Segal, J. B., with Erica C. D. Hunter. Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum. London: British Museum Press, 2000.",
+    "access_status": "partial",
+    "rights_status": "copyrighted",
+    "notes": "The table of contents enumerates text numbers 001A–142Ps. The British Museum bibliography page reports 159 related collection objects."
+  },
+  "list_number_scheme": "Segal 2000 text number",
+  "summary": "British Museum incantation bowl text catalogued by Segal (2000); registration-number reconciliation pending.",
+  "ranges": [
+    {"start": 1, "end": 75, "suffix": "A", "canonical_key_format": "Segal 2000::{designation}", "section_pages": "43–102", "claims": [{"field": "inscription_language", "value_text": "Aramaic", "certainty": "reported"}]},
+    {"start": 76, "end": 116, "suffix": "M", "canonical_key_format": "Segal 2000::{designation}", "section_pages": "103–146", "claims": [{"field": "inscription_language", "value_text": "Mandaic", "certainty": "reported"}]},
+    {"start": 117, "end": 119, "suffix": "ES", "canonical_key_format": "Segal 2000::{designation}", "section_pages": "147–149", "claims": [{"field": "inscription_language", "value_text": "Syriac?", "certainty": "uncertain"}]},
+    {"start": 120, "end": 120, "suffix": "SY", "canonical_key_format": "Segal 2000::{designation}", "section_pages": "147–149", "claims": [{"field": "inscription_language", "value_text": "Syriac", "certainty": "reported"}]},
+    {"start": 121, "end": 142, "suffix": "Ps", "canonical_key_format": "Segal 2000::{designation}", "section_pages": "150–162", "authenticity": "pseudo_script", "claims": [{"field": "script", "value_text": "Pseudo-script", "certainty": "reported"}]}
+  ],
+  "leads": [
+    {"lead_type": "identifier", "priority": 3, "description": "Reconcile all 142 Segal text numbers to British Museum registration and museum numbers using the catalogue concordance and current collection pages."},
+    {"lead_type": "collection", "priority": 3, "description": "Identify and account for the difference between the 142 numbered texts and the 159 objects currently related to Segal 2000 on the British Museum site.", "url": "https://www.britishmuseum.org/collection/term/BIB3908"},
+    {"lead_type": "restricted_source", "priority": 3, "description": "Obtain authorized access to the complete Segal 2000 catalogue; the openly indexed PDF located during discovery is only a two-page title/contents preview."}
+  ]
+}

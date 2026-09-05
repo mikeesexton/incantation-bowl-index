@@ -1,0 +1,43 @@
+{
+  "terms": [
+    {"language": "en", "query": "\"incantation bowl\""},
+    {"language": "en", "query": "\"magic bowl\" Aramaic"},
+    {"language": "en", "query": "\"demon bowl\" Mesopotamia"},
+    {"language": "en", "query": "\"Aramaic bowl\" inscription"},
+    {"language": "en", "query": "\"Jewish Babylonian Aramaic\" bowl"},
+    {"language": "en", "query": "\"Mandaic incantation bowl\""},
+    {"language": "en", "query": "\"Syriac incantation bowl\""},
+    {"language": "en", "query": "\"pseudo-script\" bowl Mesopotamia"},
+    {"language": "de", "query": "Beschwörungsschale aramäisch"},
+    {"language": "de", "query": "Zauberschale Mesopotamien"},
+    {"language": "fr", "query": "bol d'incantation araméen"},
+    {"language": "fr", "query": "bol magique mésopotamien"},
+    {"language": "he", "query": "קערת השבעה"},
+    {"language": "he", "query": "קערות השבעה ארמית"},
+    {"language": "ar", "query": "وعاء تعويذة آرامي"},
+    {"language": "fa", "query": "کاسه افسون آرامی"},
+    {"language": "ru", "query": "арамейская магическая чаша"}
+  ],
+  "platforms": [
+    {"name": "general_web", "source_classes": ["web", "auction", "dealer", "museum"]},
+    {"name": "scholarly_index", "source_classes": ["article", "book", "chapter", "thesis", "catalogue"]},
+    {"name": "institutional_repository", "source_classes": ["thesis", "article", "excavation_report"]},
+    {"name": "digitized_library", "source_classes": ["book", "catalogue", "excavation_report"]},
+    {"name": "image_search", "source_classes": ["museum", "auction", "dealer", "private_collection"]}
+  ],
+  "coverage_targets": [
+    {"source_class": "scholarship", "name": "Foundational editions and concordances"},
+    {"source_class": "scholarship", "name": "Articles, chapters, dissertations, and reviews"},
+    {"source_class": "museum", "name": "Museum collection catalogues and APIs"},
+    {"source_class": "excavation", "name": "Excavation reports and archaeological catalogues"},
+    {"source_class": "auction", "name": "Auction-house and auction-aggregator archives"},
+    {"source_class": "dealer", "name": "Dealer catalogues and archived listings"},
+    {"source_class": "library", "name": "Digitized books, manuscripts, and institutional repositories"},
+    {"source_class": "private_collection", "name": "Published and referenced private collections"},
+    {"source_class": "web_archive", "name": "Archived and disappeared web records"},
+    {"source_class": "image", "name": "Reverse image and perceptual-match leads"},
+    {"source_class": "multilingual", "name": "Non-English discovery sweeps"},
+    {"source_class": "restricted", "name": "Paywalled, login-only, offline, and inaccessible leads"}
+  ]
+}
+

@@ -1,0 +1,915 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex: individual visible Penn catalogue-page review",
+  "reviewed_at": "2026-09-05T14:38:19+00:00",
+  "method": "Individual public browser navigation and visible Details-table inspection. Selected factual fields transcribed; no full HTML or image capture. robots.txt returned HTTP 404, so automated collection and archival page fetching remained paused.",
+  "scope": "Verify the existing forty main Montgomery/Penn number mappings. Confirmation is limited to the concordance. Dates, language, dimensions, provenance and identity-like descriptions remain reported observations requiring separate assessment. Evidence fingerprints bind local identity membership, source records, identifiers, appearance links and publication-number claims; they are not hashes of live website content.",
+  "entries": [
+    {
+      "review_id": "IBI-CONC-PENN-MONT-01-20260905",
+      "object_id": "IBI-7680B927BB2F",
+      "text_number": 1,
+      "penn_web_id": "84603",
+      "expected_evidence_sha256": "dac2cdd0d103b2b9dc35aad0cace6818694426b28c57c23ed646f9498aadb041",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/84603",
+        "observed_at": "2026-09-05T14:29:54.731Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B8693",
+          "Other Number": "PBS III: 1 - Other Number | P263510 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-02-20260905",
+      "object_id": "IBI-5B1343517775",
+      "text_number": 2,
+      "penn_web_id": "82460",
+      "expected_evidence_sha256": "d0c90196f3c37f2e743b5b9f6f8d88354185af13a9ec406bd8905fd5552d87ad",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/82460",
+        "observed_at": "2026-09-05T14:29:55.461Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2945",
+          "Other Number": "PBS III: 2 - Other Number",
+          "Current Location": "Middle East Galleries - On Display",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic",
+          "Height": "7.5 cm",
+          "Outside Diameter": "18.3 cm"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-03-20260905",
+      "object_id": "IBI-28AFCD028373",
+      "text_number": 3,
+      "penn_web_id": "40422",
+      "expected_evidence_sha256": "299b9487a87b13c07ff76ad88ba3e01fc793f1d0c579419cf01ae474edf42961",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/40422",
+        "observed_at": "2026-09-05T14:29:56.025Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2963",
+          "Other Number": "PBS III: 3 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic",
+          "Date Made": "ca. 200 BCE"
+        },
+        "review_note": "Date Made is ca. 200 BCE. Retain as museum-reported metadata pending dating review; this concordance does not validate that date."
+      },
+      "rationale": "Date Made is ca. 200 BCE. Retain as museum-reported metadata pending dating review; this concordance does not validate that date."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-04-20260905",
+      "object_id": "IBI-917276249B87",
+      "text_number": 4,
+      "penn_web_id": "275285",
+      "expected_evidence_sha256": "5422cbd71db984e32d0e42380585f518fd421ce8f1b92b4fd32f09bfd1c3ff5b",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/275285",
+        "observed_at": "2026-09-05T14:29:56.812Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2923",
+          "Other Number": "PBS III: 4 - Other Number | Peters No. 130 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic",
+          "Height": "7.8 cm",
+          "Outside Diameter": "17.7 cm"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-05-20260905",
+      "object_id": "IBI-E135C0EA9CED",
+      "text_number": 5,
+      "penn_web_id": "327632",
+      "expected_evidence_sha256": "138e33a9abfd3f14a426d5683d08940702e35ba371e9060afd734e727aae7a4a",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/327632",
+        "observed_at": "2026-09-05T14:29:57.442Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2952",
+          "Other Number": "PBS III: 5 - Other Number | Peters No. 173 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-06-20260905",
+      "object_id": "IBI-B6246E14776E",
+      "text_number": 6,
+      "penn_web_id": "254819",
+      "expected_evidence_sha256": "ee51fce0f24e07d68787431b4449626a60d19bd19ea3625d97a11b83c91b1404",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/254819",
+        "observed_at": "2026-09-05T14:29:58.132Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2916",
+          "Other Number": "PBS III: 6 - Other Number | Peters No. 643 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-07-20260905",
+      "object_id": "IBI-013FBB80706C",
+      "text_number": 7,
+      "penn_web_id": "329808",
+      "expected_evidence_sha256": "3989c8f2e2b0c02e89f35d8a43b115bde44190c7e5d1f7f82e06a62e6722888f",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/329808",
+        "observed_at": "2026-09-05T14:30:15.481Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16007",
+          "Other Number": "PBS III: 7 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        },
+        "review_note": "Description says Duplicate of16081. The referent and relation require review; this is not authorization to merge physical objects.",
+        "description_excerpt": "Duplicate of16081"
+      },
+      "rationale": "Description says Duplicate of16081. The referent and relation require review; this is not authorization to merge physical objects."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-08-20260905",
+      "object_id": "IBI-5C355EF43D8D",
+      "text_number": 8,
+      "penn_web_id": "8794",
+      "expected_evidence_sha256": "f2deaf6f34707115c2dd77b8b927e755d28868b0e99472388391d0dad1bbf40c",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/8794",
+        "observed_at": "2026-09-05T14:30:16.211Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B9013",
+          "Other Number": "PBS III: 8 - Other Number | P264451 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic Language"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-09-20260905",
+      "object_id": "IBI-B54D497CC676",
+      "text_number": 9,
+      "penn_web_id": "271621",
+      "expected_evidence_sha256": "beb74d629f1c7a6e0375fa8fbf9123ac7733e5a5e0feb94d8f3e52da2796c4a9",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/271621",
+        "observed_at": "2026-09-05T14:30:16.927Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B9010",
+          "Other Number": "PBS III: 9 - Other Number | P264448 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Hebrew Language",
+          "Height": "6.3 cm",
+          "Outside Diameter": "17.8 cm"
+        },
+        "review_note": "Inscription Language is Hebrew Language; compare with the edition-based Jewish Babylonian Aramaic claim without silently replacing either."
+      },
+      "rationale": "Inscription Language is Hebrew Language; compare with the edition-based Jewish Babylonian Aramaic claim without silently replacing either."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-10-20260905",
+      "object_id": "IBI-C3B04E20C369",
+      "text_number": 10,
+      "penn_web_id": "206952",
+      "expected_evidence_sha256": "062f6f16d5d3224a1fd6c0dd61905802d7d940d6f86e81baa37fdce3e87d63ac",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/206952",
+        "observed_at": "2026-09-05T14:30:17.644Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16014",
+          "Other Number": "PBS III: 10 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-11-20260905",
+      "object_id": "IBI-49D1BAB76E01",
+      "text_number": 11,
+      "penn_web_id": "252830",
+      "expected_evidence_sha256": "e6655ac524fa79a08417a9afcf5e4d1233c22790123446f66ccd2b554c5f4ec2",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/252830",
+        "observed_at": "2026-09-05T14:30:18.510Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16022",
+          "Other Number": "PBS III: 11 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-12-20260905",
+      "object_id": "IBI-4500756E262F",
+      "text_number": 12,
+      "penn_web_id": "271620",
+      "expected_evidence_sha256": "071d51c3a3c3d24bbb0bc900934d94526527eedb1ed836918099320ec943829b",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/271620",
+        "observed_at": "2026-09-05T14:30:19.136Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B9009",
+          "Other Number": "PBS III: 12 - Other Number | P264447 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic Language",
+          "Height": "8 cm",
+          "Outside Diameter": "18 cm"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-13-20260905",
+      "object_id": "IBI-88103E2EB680",
+      "text_number": 13,
+      "penn_web_id": "32204",
+      "expected_evidence_sha256": "9379526eb8d6866d1fb52c7226587c0a99247a806acac71041442468dd96c0b7",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/32204",
+        "observed_at": "2026-09-05T14:30:31.107Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B8694",
+          "Other Number": "PBS III: 13 - Other Number | P263511 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-14-20260905",
+      "object_id": "IBI-CF7556423B9D",
+      "text_number": 14,
+      "penn_web_id": "97562",
+      "expected_evidence_sha256": "5658a274fde2e6a8d4788d5b915c92afed3a20bf9201208c6deada12a899e33e",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/97562",
+        "observed_at": "2026-09-05T14:29:22.031Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16017",
+          "Other Number": "PBS III: 14 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink"
+        },
+        "review_note": "Penn Object Number B16017 and Other Number PBS III: 14 agree with the printed register CBS 16017. The heading CBS 16917 remains recorded as a conflicting source reading."
+      },
+      "rationale": "Penn Object Number B16017 and Other Number PBS III: 14 agree with the printed register CBS 16017. The heading CBS 16917 remains recorded as a conflicting source reading."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-15-20260905",
+      "object_id": "IBI-7F04261178CB",
+      "text_number": 15,
+      "penn_web_id": "257049",
+      "expected_evidence_sha256": "420cf5500d3ef26e70bb8007442dd8f5f1f9a45b3c7e50fbd08b7376136eb47f",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/257049",
+        "observed_at": "2026-09-05T14:30:31.784Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16087",
+          "Other Number": "PBS III: 15 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-16-20260905",
+      "object_id": "IBI-DEDC98D3F366",
+      "text_number": 16,
+      "penn_web_id": "139404",
+      "expected_evidence_sha256": "a8e530f173855c3886c468fab5b18f960d26a8c42c4e1882903c687f9b97943e",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/139404",
+        "observed_at": "2026-09-05T14:30:32.509Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2920",
+          "Other Number": "PBS III: 16 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-17-20260905",
+      "object_id": "IBI-A2E775143F9F",
+      "text_number": 17,
+      "penn_web_id": "257210",
+      "expected_evidence_sha256": "52c781040d5cd3c3c79491f19aa95097e8d415f21c8443e00b670bfd688663b5",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/257210",
+        "observed_at": "2026-09-05T14:30:33.385Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2922",
+          "Other Number": "PBS III: 17 - Other Number | Peters No. 362 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-18-20260905",
+      "object_id": "IBI-CEC11D2DBB44",
+      "text_number": 18,
+      "penn_web_id": "225726",
+      "expected_evidence_sha256": "554c2e9b88fb4272edf888dc56c942f2d99d1454f871608c2e3b1ccabb8e1601",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/225726",
+        "observed_at": "2026-09-05T14:30:34.050Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B8695",
+          "Other Number": "PBS III: 18 - Other Number | P263512 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-19-20260905",
+      "object_id": "IBI-84F6B8FD30B3",
+      "text_number": 19,
+      "penn_web_id": "104403",
+      "expected_evidence_sha256": "1c3fcb63e45ac7383453d9c0e1ecc4847706d41cca596bb274d7bba4519e59a1",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/104403",
+        "observed_at": "2026-09-05T14:29:21.423Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16018",
+          "Other Number": "PBS III: 19 - Other Number",
+          "Current Location": "Eastern Mediterranean Gallery - On Display",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Height": "7 cm",
+          "Outside Diameter": "16.8 cm",
+          "Date Made": "400–800 CE"
+        },
+        "review_note": "Penn Object Number B16018 and Other Number PBS III: 19 agree with the printed heading CBS 16018. The register cell remains blank. Current dimensions differ from Montgomery."
+      },
+      "rationale": "Penn Object Number B16018 and Other Number PBS III: 19 agree with the printed heading CBS 16018. The register cell remains blank. Current dimensions differ from Montgomery."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-20-20260905",
+      "object_id": "IBI-ABDE8A973358",
+      "text_number": 20,
+      "penn_web_id": "284364",
+      "expected_evidence_sha256": "e4fc28271dff92d27f1a47808bbb0f59f191fd5992e57f3ad76b91011caad641",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/284364",
+        "observed_at": "2026-09-05T14:30:34.930Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16023",
+          "Other Number": "PBS III: 20 - Other Number",
+          "Current Location": "Middle East Galleries - On Display",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic",
+          "Height": "7 cm",
+          "Outside Diameter": "18 cm"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-21-20260905",
+      "object_id": "IBI-26BDEA55EA1E",
+      "text_number": 21,
+      "penn_web_id": "182721",
+      "expected_evidence_sha256": "395eb8c7ecb7162096aa51e3bd76ae25d976641452e8e368c1172e67ed31c149",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/182721",
+        "observed_at": "2026-09-05T14:30:46.347Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16054",
+          "Other Number": "PBS III: 21 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-22-20260905",
+      "object_id": "IBI-6C4D8112FFE2",
+      "text_number": 22,
+      "penn_web_id": "102142",
+      "expected_evidence_sha256": "49770df728c0ae9d92de6a001fd3ac0dc80da2bddefb6acd3cd913747c1412d1",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/102142",
+        "observed_at": "2026-09-05T14:30:47.199Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16006",
+          "Other Number": "PBS III: 22 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic",
+          "Height": "7 cm",
+          "Outside Diameter": "16.5 cm"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-23-20260905",
+      "object_id": "IBI-DF04AC9DDBFB",
+      "text_number": 23,
+      "penn_web_id": "50873",
+      "expected_evidence_sha256": "55772df064497a5ee1acf9012f30183ec98da978d3ce8cab6dd20a22b10f3b22",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/50873",
+        "observed_at": "2026-09-05T14:30:47.851Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16090",
+          "Other Number": "PBS III: 23 - Other Number | 308 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-24-20260905",
+      "object_id": "IBI-C2E332F154A0",
+      "text_number": 24,
+      "penn_web_id": "11597",
+      "expected_evidence_sha256": "b300fe629d4458b067de690cad428d55e4bb27463f7564ccd1b73fb60507196a",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/11597",
+        "observed_at": "2026-09-05T14:30:48.642Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2926",
+          "Other Number": "PBS III: 24 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-25-20260905",
+      "object_id": "IBI-74625165CE1F",
+      "text_number": 25,
+      "penn_web_id": "303320",
+      "expected_evidence_sha256": "ca545bd091cb4e3ab4712ed715041532b51948f961cf6ed36797823a77181a5c",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/303320",
+        "observed_at": "2026-09-05T14:30:49.133Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16009",
+          "Other Number": "PBS III: 25 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-26-20260905",
+      "object_id": "IBI-F6ED61BF3D88",
+      "text_number": 26,
+      "penn_web_id": "59666",
+      "expected_evidence_sha256": "c2f064f354ad3d7bc148b1063e431f1788009fe56aa85b0adaa04f2881c29beb",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/59666",
+        "observed_at": "2026-09-05T14:30:49.988Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B3997",
+          "Other Number": "PBS III: 26 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-27-20260905",
+      "object_id": "IBI-E74F7ED591BD",
+      "text_number": 27,
+      "penn_web_id": "326671",
+      "expected_evidence_sha256": "92f3e3ec0b77025d1a2eda56c2cff64fe08ad0a7d90725589df40eb53b704e06",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/326671",
+        "observed_at": "2026-09-05T14:31:00.630Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16041",
+          "Other Number": "PBS III: 27 - Other Number | 308/4 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-28-20260905",
+      "object_id": "IBI-325647D3DF8D",
+      "text_number": 28,
+      "penn_web_id": "19798",
+      "expected_evidence_sha256": "d8be36d229f0b5fd5226b04f75ee1c4b0167402ab7c44aca62c2b1bc53e14461",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/19798",
+        "observed_at": "2026-09-05T14:29:20.031Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2972",
+          "Other Number": "PBS III: 28 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        },
+        "review_note": "Description explicitly distinguishes text 40 as B2971, while this record identifies text 28 as B2972.",
+        "description_excerpt": "PBS III: this bowl is published as number 28 and 40; 40 is really B2971"
+      },
+      "rationale": "Description explicitly distinguishes text 40 as B2971, while this record identifies text 28 as B2972."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-29-20260905",
+      "object_id": "IBI-5CB5A9A5E46E",
+      "text_number": 29,
+      "penn_web_id": "316216",
+      "expected_evidence_sha256": "abe9ef24eb5db2d7ba1b05db8fa4c545065fa3c518f4da411a48411b73445c5e",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/316216",
+        "observed_at": "2026-09-05T14:31:01.513Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16055",
+          "Other Number": "PBS III: 29 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-30-20260905",
+      "object_id": "IBI-D8319A094023",
+      "text_number": 30,
+      "penn_web_id": "139925",
+      "expected_evidence_sha256": "80a0bb012cda203484288d26dae71ef362e4aaea30912766d0213dba2a4a691d",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/139925",
+        "observed_at": "2026-09-05T14:31:02.059Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16096",
+          "Other Number": "PBS III: 30 - Other Number | 308 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Aramaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-31-20260905",
+      "object_id": "IBI-079F0B82D514",
+      "text_number": 31,
+      "penn_web_id": "222626",
+      "expected_evidence_sha256": "60989af551f66e7bc15a4dd9e23eb7d68ec833c21eaac5afe74253d9158a94ef",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/222626",
+        "observed_at": "2026-09-05T14:31:02.860Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B9008",
+          "Other Number": "PBS III: 31 - Other Number | P264446 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Hebrew Language"
+        },
+        "review_note": "Inscription Language is Hebrew Language while the description uses Proto-Manichean. Compare source language/script terminology; this is not resolved by the concordance."
+      },
+      "rationale": "Inscription Language is Hebrew Language while the description uses Proto-Manichean. Compare source language/script terminology; this is not resolved by the concordance."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-32-20260905",
+      "object_id": "IBI-527704D6B074",
+      "text_number": 32,
+      "penn_web_id": "161879",
+      "expected_evidence_sha256": "2448191cce2ac81153d612193e0101f2f629d451dad76020ac9099f86a05b9bd",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/161879",
+        "observed_at": "2026-09-05T14:31:03.590Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16086",
+          "Other Number": "PBS III: 32 - Other Number | 308 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Syriac"
+        },
+        "review_note": "Description says Same as B16062\\B6354. Relation is ambiguous; no identity merge follows from this phrase.",
+        "description_excerpt": "Same as B16062\\B6354"
+      },
+      "rationale": "Description says Same as B16062\\B6354. Relation is ambiguous; no identity merge follows from this phrase."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-33-20260905",
+      "object_id": "IBI-E10F6716C2C1",
+      "text_number": 33,
+      "penn_web_id": "44307",
+      "expected_evidence_sha256": "653ff68d93de0391feb5c652b5d1cc2d77b837843253a61ce83e976ae00ec08e",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/44307",
+        "observed_at": "2026-09-05T14:31:04.427Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16019",
+          "Other Number": "PBS III: 33 - Other Number | 101 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Syriac"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-34-20260905",
+      "object_id": "IBI-F094DE6A4112",
+      "text_number": 34,
+      "penn_web_id": "58680",
+      "expected_evidence_sha256": "1d7223918bb49ed58276d1a8bb70ba599c37fe246a57657bf29edeabfa00249d",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/58680",
+        "observed_at": "2026-09-05T14:31:17.213Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B9012",
+          "Other Number": "PBS III: 34 - Other Number | P264450 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Syriac"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-35-20260905",
+      "object_id": "IBI-6E087B8C539F",
+      "text_number": 35,
+      "penn_web_id": "87498",
+      "expected_evidence_sha256": "b7100de00f1bbaa0c39100fddafd1c93bb6bb77d6abc608ed71908b780a68dad",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/87498",
+        "observed_at": "2026-09-05T14:31:18.116Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B16097",
+          "Other Number": "PBS III: 35 - Other Number | 308/4 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Syriac"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-36-20260905",
+      "object_id": "IBI-CD3E783556B1",
+      "text_number": 36,
+      "penn_web_id": "132910",
+      "expected_evidence_sha256": "081ad2b239f7c7919ab6889d7f22c2d61be25b600350a52e8388754aebdd15f9",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/132910",
+        "observed_at": "2026-09-05T14:31:18.923Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2933",
+          "Other Number": "PBS III: 36 - Other Number | Peters No. 850 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Syriac"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-37-20260905",
+      "object_id": "IBI-44BC3FE36601",
+      "text_number": 37,
+      "penn_web_id": "152707",
+      "expected_evidence_sha256": "ff77a1f42131c8680d39990f030080ab91491ede0c7ec5d89e4feb9d26c97dbe",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/152707",
+        "observed_at": "2026-09-05T14:31:19.600Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2943",
+          "Other Number": "PBS III: 37 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Syriac"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-38-20260905",
+      "object_id": "IBI-544ABA7B7DAA",
+      "text_number": 38,
+      "penn_web_id": "189411",
+      "expected_evidence_sha256": "18539c2d743ce900bb394c8d88a428663d0d37a2d6c847d1e078e14a7c910bdd",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/189411",
+        "observed_at": "2026-09-05T14:31:20.145Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2941",
+          "Other Number": "PBS III: 38 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Mandaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-39-20260905",
+      "object_id": "IBI-DC36E80A1951",
+      "text_number": 39,
+      "penn_web_id": "140769",
+      "expected_evidence_sha256": "aa7500591dae4e2bfd2b54c8bafce55fdd406ebb6944deee60e0d4d01d7174f1",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/140769",
+        "observed_at": "2026-09-05T14:31:20.686Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B9005",
+          "Other Number": "PBS III: 39 - Other Number | P264443 - CDLI Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Mandaic"
+        }
+      },
+      "rationale": "The current Penn page independently displays the expected museum number and the explicit PBS III text number. This confirms the existing publication-to-museum concordance; other catalogue fields are not adjudicated."
+    },
+    {
+      "review_id": "IBI-CONC-PENN-MONT-40-20260905",
+      "object_id": "IBI-A3736CD7D997",
+      "text_number": 40,
+      "penn_web_id": "64458",
+      "expected_evidence_sha256": "8445a86277859f225cea4bbff2736fcb2e4102c4345ab44d43ba4b0eceeb33aa",
+      "status": "confirmed",
+      "observation": {
+        "url": "https://collections.penn.museum/collections/object/64458",
+        "observed_at": "2026-09-05T14:29:20.764Z",
+        "locator": "Details table: Object Number; Other Number; additional named fields as individually reported",
+        "fields": {
+          "Object Number": "B2971",
+          "Other Number": "PBS III: 40 - Other Number",
+          "Current Location": "Collections Storage",
+          "Provenience": "Iraq | Nippur",
+          "Materials": "Ceramic | Ink",
+          "Inscription Language": "Mandaic"
+        },
+        "review_note": "Penn Object Number B2971 and Other Number PBS III: 40 agree with the heading CBS 2971. Supporting Penn record B2972 explicitly corrects text 40 to B2971; the erroneous printed register CBS 2972 remains preserved."
+      },
+      "rationale": "Penn Object Number B2971 and Other Number PBS III: 40 agree with the heading CBS 2971. Supporting Penn record B2972 explicitly corrects text 40 to B2971; the erroneous printed register CBS 2972 remains preserved."
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "source_id": "SRC-943673B56FB8",
+  "source_url": "https://archive.org/details/aramaicincantati00mont",
+  "pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "translation_text_numbers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 22, 24, 25, 26, 28, 29, 30, 31, 32, 34, 35, 36, 37, 38, 39, 40],
+  "review_notes": "Checked against the rendered scan. Montgomery supplies no separate English translation for texts 18, 21, 23, 27, or 33. The block after texts 21-23 is explicitly headed Translation of No. 22 (OCR: ot). OCR-derived text remains private until diplomatic proofreading.",
+  "corrections": [
+    {
+      "publication_key": "Montgomery 1913::14",
+      "claims": [
+        {
+          "field": "publication_heading_identifier",
+          "value_text": "CBS 16917",
+          "certainty": "disputed",
+          "locator": "text 14 heading, printed p. 183; PDF p. 189",
+          "quotation": "No. 14 (CBS 16917)",
+          "notes": "The text heading conflicts with the closing register and the current Penn catalogue. Preserved as a source error rather than an object identifier."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16017",
+          "certainty": "probable",
+          "locator": "closing register, printed p. 323; PDF p. 329",
+          "notes": "The register reading agrees with the current Penn Museum record B16017."
+        }
+      ]
+    },
+    {
+      "publication_key": "Montgomery 1913::19",
+      "label": "CBS 16018 [Montgomery text 19]",
+      "add_identifiers": [
+        {
+          "scheme": "Penn catalogue number",
+          "value": "CBS 16018",
+          "assigning_body": "Penn Museum",
+          "confidence": 0.98,
+          "notes": "Printed in the text heading; the closing register cell is blank."
+        }
+      ],
+      "claims": [
+        {
+          "field": "publication_heading_identifier",
+          "value_text": "CBS 16018",
+          "certainty": "certain",
+          "locator": "text 19 heading, printed p. 195; PDF p. 201",
+          "quotation": "No. 19 (CBS 16018)"
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "blank",
+          "certainty": "certain",
+          "locator": "closing register, printed p. 324; PDF p. 330",
+          "notes": "The absence of a number in the register does not negate the heading identifier."
+        }
+      ]
+    },
+    {
+      "publication_key": "Montgomery 1913::28",
+      "label": "CBS 2972 [Montgomery text 28]",
+      "claims": [
+        {
+          "field": "publication_heading_identifier",
+          "value_text": "CBS 2972",
+          "certainty": "certain",
+          "locator": "text 28 heading, printed p. 213; PDF p. 219"
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2972",
+          "certainty": "certain",
+          "locator": "closing register, printed p. 325; PDF p. 331"
+        }
+      ]
+    },
+    {
+      "publication_key": "Montgomery 1913::40",
+      "label": "CBS 2971 [Montgomery text 40]",
+      "remove_identifiers": [
+        {"scheme": "Penn catalogue number", "value": "CBS 2972"},
+        {"scheme": "bibliographic concordance", "value": "CBS 2972"},
+        {"scheme": "collection designation", "value": "CBS 2972 [Montgomery text 40]"}
+      ],
+      "add_identifiers": [
+        {
+          "scheme": "Penn catalogue number",
+          "value": "CBS 2971",
+          "assigning_body": "Penn Museum",
+          "confidence": 0.98,
+          "notes": "Printed in the text heading and confirmed by Penn's catalogue correction attached to B2972."
+        },
+        {
+          "scheme": "collection designation",
+          "value": "CBS 2971",
+          "assigning_body": "Penn Museum",
+          "confidence": 0.98,
+          "notes": "Corrected concordance for Montgomery text 40."
+        }
+      ],
+      "claims": [
+        {
+          "field": "publication_heading_identifier",
+          "value_text": "CBS 2971",
+          "certainty": "certain",
+          "locator": "text 40 heading, printed p. 252; PDF p. 258",
+          "quotation": "No. 40 (CBS 2971)"
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2972",
+          "certainty": "disputed",
+          "locator": "closing register, printed p. 326; PDF p. 332",
+          "notes": "The register conflicts with the text heading and duplicates text 28. Penn's current catalogue explicitly identifies this as an error for B2971."
+        }
+      ]
+    }
+  ],
+  "dedupe_reviews": [
+    {
+      "object_a_publication_key": "Montgomery 1913::19",
+      "object_b_identifier": {"scheme": "Penn web object ID", "value": "104403"},
+      "status": "same_object",
+      "score": 0.99,
+      "method": "checked_concordance",
+      "rationale": "Montgomery's text heading identifies no. 19 as CBS 16018; Penn's current object is B16018.",
+      "decided_at": "2026-09-04T21:45:00Z",
+      "decided_by": "Montgomery 1913 scan and Penn catalogue review",
+      "evidence": [
+        {
+          "evidence_type": "matching_collection_identifier",
+          "value_a": "Montgomery text 19 heading: CBS 16018",
+          "value_b": "Penn Museum: B16018, web object 104403",
+          "weight": 1.0,
+          "supports_match": 1,
+          "source_url": "https://archive.org/details/aramaicincantati00mont",
+          "notes": "The historical CBS prefix and current Penn B prefix refer to the same catalogue number."
+        }
+      ]
+    },
+    {
+      "object_a_publication_key": "Montgomery 1913::28",
+      "object_b_identifier": {"scheme": "Penn web object ID", "value": "19798"},
+      "status": "same_object",
+      "score": 0.99,
+      "method": "checked_concordance",
+      "rationale": "Montgomery text 28 is CBS 2972 in both heading and register; Penn's current object is B2972.",
+      "decided_at": "2026-09-04T21:45:00Z",
+      "decided_by": "Montgomery 1913 scan and Penn catalogue review",
+      "evidence": [
+        {
+          "evidence_type": "matching_collection_identifier",
+          "value_a": "Montgomery text 28: CBS 2972",
+          "value_b": "Penn Museum: B2972, web object 19798",
+          "weight": 1.0,
+          "supports_match": 1,
+          "source_url": "https://archive.org/details/aramaicincantati00mont",
+          "notes": "Heading and register agree; Penn's own description distinguishes this bowl from text 40."
+        }
+      ]
+    },
+    {
+      "object_a_publication_key": "Montgomery 1913::40",
+      "object_b_identifier": {"scheme": "Penn web object ID", "value": "64458"},
+      "status": "same_object",
+      "score": 0.99,
+      "method": "checked_concordance",
+      "rationale": "Montgomery text 40's heading is CBS 2971 and Penn's current B2972 record explicitly corrects text 40 to B2971.",
+      "decided_at": "2026-09-04T21:45:00Z",
+      "decided_by": "Montgomery 1913 scan and Penn catalogue review",
+      "evidence": [
+        {
+          "evidence_type": "matching_collection_identifier",
+          "value_a": "Montgomery text 40 heading: CBS 2971",
+          "value_b": "Penn Museum: B2971, web object 64458",
+          "weight": 1.0,
+          "supports_match": 1,
+          "source_url": "https://archive.org/details/aramaicincantati00mont",
+          "notes": "The heading and Penn's current correction agree; the closing register's 2972 is erroneous."
+        },
+        {
+          "evidence_type": "museum_catalogue_correction",
+          "value_a": "Montgomery register assigns 2972 to texts 28 and 40",
+          "value_b": "Penn B2972 description says text 40 is really B2971",
+          "weight": 1.0,
+          "supports_match": 1,
+          "source_url": "https://collections.penn.museum/collections/object/19798",
+          "notes": "Current institutional cataloguing resolves the edition's internal contradiction."
+        }
+      ]
+    },
+    {
+      "object_a_publication_key": "Montgomery 1913::28",
+      "object_b_publication_key": "Montgomery 1913::40",
+      "status": "different_objects",
+      "score": 0.0,
+      "method": "corrected_source_error",
+      "rationale": "The shared 2972 value came from a register error; headings, language, dimensions, and Penn's correction distinguish the bowls.",
+      "decided_at": "2026-09-04T21:45:00Z",
+      "decided_by": "Montgomery 1913 scan and Penn catalogue review",
+      "evidence": [
+        {
+          "evidence_type": "corrected_duplicate_identifier",
+          "value_a": "Text 28: CBS 2972, Jewish Babylonian Aramaic, 6.5 x 16.5 cm",
+          "value_b": "Text 40: CBS 2971, Mandaic, 7.3 x 17.2 cm",
+          "weight": 1.0,
+          "supports_match": -1,
+          "source_url": "https://archive.org/details/aramaicincantati00mont",
+          "notes": "The text headings identify distinct catalogue numbers and the physical and linguistic descriptions differ."
+        }
+      ]
+    }
+  ],
+  "lead_update": {
+    "id": "LED-E4BA367746DC",
+    "lead_type": "identifier",
+    "description": "Resolve the printed duplicate catalogue number 2972 for Montgomery texts 28 and 40 and the omitted catalogue number for text 19.",
+    "status": "resolved",
+    "priority": 3,
+    "resolution_notes": "Resolved by page-level review of Montgomery's scan and Penn's current catalogue: text 19 is CBS/B16018; text 28 is CBS/B2972; text 40 is CBS/B2971. Montgomery's conflicting heading/register readings remain source-attributed claims."
+  }
+}

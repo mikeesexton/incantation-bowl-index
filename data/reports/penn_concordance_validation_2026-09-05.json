@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-09-05T14:48:17+00:00",
+  "automated_tests": {
+    "passed": 80,
+    "failed": 0
+  },
+  "table_changes": {
+    "claims": {
+      "added": 11,
+      "changed": 0,
+      "deleted": 0
+    },
+    "leads": {
+      "added": 6,
+      "changed": 0,
+      "deleted": 0
+    }
+  },
+  "all_other_existing_data_tables": "unchanged",
+  "concordance_reviews_added": 40,
+  "current_confirmed_concordances": 40,
+  "current_checked_reading_texts": 35,
+  "review_replay": {
+    "entries": 40,
+    "changed": 0,
+    "unchanged": 40,
+    "identity_changes": 0
+  },
+  "claim_replay_additions": 0,
+  "integrity_check": "ok",
+  "foreign_key_problems": [],
+  "archive_problems": [],
+  "cohort": {
+    "main_cohort": 40,
+    "existing_penn_links": 40,
+    "confirmed_penn_concordances": 40,
+    "translations": {
+      "reading_text_checked": 35,
+      "no_separate_translation_in_this_edition": 5
+    }
+  },
+  "roadmap": {
+    "destination": "docs/dataset_maturity_roadmap.md",
+    "handoff_ready": false,
+    "metric_gates_ready": false,
+    "required_tasks_ready": false,
+    "tasks": 35
+  },
+  "metrics": {
+    "candidate_records": 1585,
+    "probable_identities": 1317,
+    "source_appearances": 1609,
+    "sources": 752,
+    "raw_conflict_instances": 337,
+    "reviewed_conflict_instances": 24,
+    "untriaged_conflict_instances": 313,
+    "stale_conflict_instances": 304,
+    "confirmed_penn_concordances": 40,
+    "checked_reading_texts": 35
+  },
+  "research_export": {
+    "tables": 26,
+    "review_rows": 40,
+    "text_snapshots_redacted": 35
+  },
+  "public_scaffold": {
+    "generated_at": "2026-09-05T14:48:20+00:00",
+    "export_policy": "Reference scaffold with explicit text and media gates. Not a certification of scholarly accuracy. No capture records/files, claim payloads, notes, raw JSON, or review history. No public dashboard is deployed.",
+    "media_approved_rows": 0,
+    "media_withheld_rows": 325,
+    "tables": {
+      "sources": {
+        "rows": 752,
+        "jsonl": "sources.jsonl",
+        "csv": "sources.csv"
+      },
+      "objects": {
+        "rows": 1585,
+        "jsonl": "objects.jsonl",
+        "csv": "objects.csv"
+      },
+      "appearances": {
+        "rows": 1609,
+        "jsonl": "appearances.jsonl",
+        "csv": "appearances.csv"
+      },
+      "appearance_object_links": {
+        "rows": 1609,
+        "jsonl": "appearance_object_links.jsonl",
+        "csv": "appearance_object_links.csv"
+      },
+      "texts": {
+        "rows": 10,
+        "jsonl": "texts.jsonl",
+        "csv": "texts.csv"
+      },
+      "media": {
+        "rows": 0,
+        "jsonl": "media.jsonl",
+        "csv": "media.csv"
+      },
+      "identity_clusters": {
+        "rows": 1317,
+        "jsonl": "identity_clusters.jsonl",
+        "csv": "identity_clusters.csv"
+      }
+    }
+  },
+  "backup": "data/private/backups/after-penn-concordance-20260905T144820Z.sqlite3",
+  "restore_check": "passed"
+}

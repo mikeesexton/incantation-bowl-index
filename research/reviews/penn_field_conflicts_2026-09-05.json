@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: direct comparison of dated Penn catalogue fields and scan-checked Montgomery register evidence",
+  "reviewed_at": "2026-09-05T19:24:04+00:00",
+  "scope": "Nine newly exposed field differences in the forty-object Montgomery/Penn reference cohort. Source claims and physical identities remain unchanged.",
+  "entries": [
+    {
+      "identity_id": "IDENT-02B43ABF13D9",
+      "field_group": "dimensions",
+      "evidence_sha256": "569bda2d73a3e9d5deb82ed8e5cd64bbeaaa8e06f44046ea7a6c13e7fea4efc0",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 8 cm and outside diameter 18 cm; the 1913 register reports height 7.2 cm and diameter 17.7 cm. Both measurements remain source-attributed. The evidence does not establish whether the difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-2D03029F6DEE",
+      "field_group": "dimensions",
+      "evidence_sha256": "780d9f9bd59df91a10e479668903c58b5ceed05e1fb5213c7e31aef884597e15",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 6.3 cm and outside diameter 17.8 cm; the 1913 register reports height 6 cm and diameter 17.7 cm. Both measurements remain source-attributed. The evidence does not establish whether the difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-2D03029F6DEE",
+      "field_group": "language",
+      "evidence_sha256": "88d8c3fb3297ed08ea793ecbd053c9148e8c32a9c8848a2c183047ceab4193eb",
+      "disposition": "unresolved",
+      "rationale": "Penn labels B9010 Hebrew Language while the edition-based record labels Montgomery 9 Jewish Babylonian Aramaic. The source vocabulary may conflate script, communal attribution, or language, but the stored evidence alone does not identify which explanation applies. Both assertions remain visible pending original-script and catalogue-history review.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery source claim. No original-language inspection or authoritative explanation of Penn's field terminology was used in this decision.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-3302F57D7AE1",
+      "field_group": "dimensions",
+      "evidence_sha256": "602bdb81b7736653688cc5c80fc13bce345f4ec1884cd3a856a80f2e7eb1337c",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 7 cm and outside diameter 16.8 cm; the 1913 register reports height 6.6 cm and diameter 17.6 cm. Both measurements remain source-attributed. The evidence does not establish whether the difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-33C9806531BF",
+      "field_group": "dimensions",
+      "evidence_sha256": "841d705a39d63741b8fc2f3034451e44263c3a5f3c8e925f583e1ac69e737b81",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 7.8 cm and outside diameter 17.7 cm; the 1913 register reports height 7.5 cm and diameter 17.3 cm. Both measurements remain source-attributed. The evidence does not establish whether the difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-5002143E0DC9",
+      "field_group": "dimensions",
+      "evidence_sha256": "ebf2cbdd430f3c736cf469032dba9be1dc4731b9949dc41b63f46eef68fd0186",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 7 cm and outside diameter 16.5 cm; the 1913 register reports height 6.5 cm and diameter 16 cm. Both measurements remain source-attributed. The evidence does not establish whether the difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-5B1343517775",
+      "field_group": "dimensions",
+      "evidence_sha256": "061a2286abea1e97aae4b57fd18a44dad6dc59a7159c2fc4bd3d7f796cca9f99",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 7.5 cm and outside diameter 18.3 cm; the 1913 register reports height 7.2 cm and diameter 17.4 cm. Both measurements remain source-attributed. The evidence does not establish whether the difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-ABDE8A973358",
+      "field_group": "dimensions",
+      "evidence_sha256": "62c9149058db391e76083638fe1b17889ede54848eac7e0a72cb7c21a0d6948d",
+      "disposition": "unresolved",
+      "rationale": "Penn reports height 7 cm and outside diameter 18 cm; the 1913 register reports height 7 cm and diameter 17 cm. Both measurements remain source-attributed. The evidence does not establish whether the diameter difference reflects measurement convention, rounding, restoration, or another cause.",
+      "review_basis": "Compared the dated Penn Details-table observation with the Montgomery register row visually checked against the archived scan. No direct remeasurement or documented equivalence between Diameter and Outside Diameter was available.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json"]
+    },
+    {
+      "identity_id": "IDENT-079F0B82D514",
+      "field_group": "language",
+      "evidence_sha256": "e0ba9703dff575ef8ac4e1a67996e69c920fe9d9dd62084fb1482cc37c266879",
+      "disposition": "unresolved",
+      "rationale": "Penn labels B9008 Hebrew Language while Montgomery and Waller independently label the bowl Syriac; Penn's description also uses Proto-Manichean terminology. The weight of the stored secondary evidence favors a real catalogue inconsistency, but an original-script check is required before assigning a source error. All three assertions remain visible.",
+      "review_basis": "Compared the dated Penn Details-table observation with two source-attributed Syriac claims. No original-language inspection or authoritative explanation of Penn's field terminology was used in this decision.",
+      "supporting_references": ["research/reviews/penn_montgomery_concordance_2026-09-05.json", "research/enrichment/montgomery_register_checked_2026-09-04.json", "https://www.manichaeism.de/wp-content/uploads/2021/11/Incantation-Bowls.pdf"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "IBI-LEAD-BM117882-SEGAL",
+  "source_id": "SRC-72D809FB4249",
+  "lead_type": "identifier",
+  "description": "BM 117882 / Segal 119ES: inspect the full catalogue entry to assess the uncertain Syriac? classification against existing museum descriptions of Syriac. The apparent 117ES/119ES locator mismatch has been resolved as an importer defect; identity links remain unchanged.",
+  "status": "blocked",
+  "priority": 1,
+  "resolution_notes": "Partial resolution: all 137 affected Segal range citations were repaired from their seed manifest with exact before/after history. BM 117882 now correctly cites text 119ES. Remaining blocker: authorized full catalogue access and source-level language verification; prior museum page retrieval returned HTTP 403. Original lead and review remain in the earlier dated manifests; see bm117882_post_locator_repair_2026-09-04.json."
+}

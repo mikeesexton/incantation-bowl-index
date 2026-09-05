@@ -1,0 +1,42 @@
+{
+  "source": {
+    "source_type": "chapter",
+    "title": "Mandaic Magic Bowls in the Moussaieff Collection: A Preliminary Survey",
+    "authors": "Matthew Morgenstern",
+    "issued_year": 2012,
+    "container_title": "New Inscriptions and Seals Relating to the Biblical World",
+    "publisher": "Society of Biblical Literature",
+    "url": "https://www.jstor.org/stable/j.ctt32bzp2.17",
+    "doi": "10.2307/j.ctt32bzp2.17",
+    "citation": "Morgenstern, Matthew. “Mandaic Magic Bowls in the Moussaieff Collection: A Preliminary Survey.” In New Inscriptions and Seals Relating to the Biblical World, 157–170. Society of Biblical Literature, 2012. https://doi.org/10.2307/j.ctt32bzp2.17.",
+    "access_status": "partial",
+    "rights_status": "copyrighted",
+    "notes": "JSTOR exposes chapter metadata and indexed text but full access was unavailable. The chapter explicitly reports nine Mandaic bowls. Later papers published five in 2021 and four in 2025; exact paper-to-object mapping remains a review lead."
+  },
+  "summary": "One of nine Mandaic-script incantation bowls identified in the Shlomo Moussaieff Collection by Morgenstern's 2012 survey.",
+  "default_claims": [
+    {"field": "current_or_reported_collection", "value_text": "Shlomo Moussaieff Collection", "certainty": "reported"},
+    {"field": "inscription_language", "value_text": "Mandaic", "certainty": "reported"},
+    {"field": "script", "value_text": "Mandaic", "certainty": "reported"}
+  ],
+  "entries": [
+    {"designation": "M23", "locator": "pp. 159–160, M23", "record_status": "probable", "authenticity": "unassessed", "notes": "Eleven well-preserved lines in a clear scribal hand for Asmandad son of Marta; a series of bonds for celestial realms.", "claims": [{"field": "line_count", "value_text": "11"}, {"field": "client", "value_text": "Asmandad son of Marta"}, {"field": "condition", "value_text": "Well preserved"}]},
+    {"designation": "M24", "locator": "p. 160, M24", "record_status": "probable", "authenticity": "unassessed", "notes": "Fifteen-line continuous text for Dād-Manda son of Iboi; parallels BM 91775 (086M) and MS 2054/34.", "claims": [{"field": "line_count", "value_text": "15"}, {"field": "client", "value_text": "Dād-Manda son of Iboi"}, {"field": "condition", "value_text": "Well preserved with some salting"}], "concordances": ["parallel: BM 91775 (086M)", "parallel: MS 2054/34"]},
+    {"designation": "M25", "locator": "p. 160, M25", "record_status": "probable", "authenticity": "unassessed", "notes": "Mandaic bowl enumerated and described in the nine-bowl preliminary survey."},
+    {"designation": "M26", "locator": "pp. 160–161, M26", "record_status": "probable", "authenticity": "unassessed", "notes": "Nine-line, well-preserved continuous text whose interpretation is complicated by vulgar script and orthography.", "claims": [{"field": "line_count", "value_text": "9"}, {"field": "condition", "value_text": "Well preserved"}]},
+    {"designation": "M45", "locator": "p. 161, M45", "record_status": "probable", "authenticity": "unassessed", "notes": "Sixteen-line continuous text for the children of Eboi and their families; closely parallels M24.", "claims": [{"field": "line_count", "value_text": "16"}, {"field": "client", "value_text": "Children of Eboi and their families"}], "concordances": ["parallel: M24"]},
+    {"designation": "M139", "locator": "pp. 161–162, M139", "record_status": "probable", "authenticity": "unassessed", "notes": "Exceptionally large bowl with an image of a long-haired demon bound at arms and legs.", "claims": [{"field": "dimensions", "value_text": "355 × 175 mm"}, {"field": "iconography", "value_text": "Large long-haired demon bound at arms and legs"}]},
+    {"designation": "M154", "locator": "p. 162, M154", "record_status": "probable", "authenticity": "unassessed", "notes": "Thirteen-line continuous, well-preserved formula for Azyazdan Khwast-Bindad son of Madukh.", "claims": [{"field": "line_count", "value_text": "13"}, {"field": "client", "value_text": "Azyazdan Khwast-Bindad son of Madukh"}, {"field": "condition", "value_text": "Well preserved"}]},
+    {"designation": "Moussaieff unnumbered A", "locator": "pp. 162–164, unnumbered bowl A", "record_status": "probable", "authenticity": "unassessed", "notes": "First of two unnumbered Mandaic bowls distinguished by the survey."},
+    {"designation": "Moussaieff unnumbered B", "locator": "pp. 164–165, unnumbered bowl B", "record_status": "probable", "authenticity": "unassessed", "notes": "Second of two unnumbered Mandaic bowls distinguished by the survey."}
+  ],
+  "leads": [
+    {
+      "lead_type": "identifier",
+      "description": "Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access.",
+      "url": "https://www.magnespress.co.il/api/magnes/book/8774/preview",
+      "status": "blocked",
+      "priority": 2
+    }
+  ]
+}

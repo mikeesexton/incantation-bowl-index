@@ -1,0 +1,635 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: explicit stored-evidence comparison",
+  "reviewed_at": "2026-09-04T22:37:49+00:00",
+  "scope": "Nine field instances across British Museum 113189, 117880, and 117882. No identity merge or claim correction.",
+  "entries": [
+    {
+      "identity_id": "IDENT-01B582E3244E",
+      "field_group": "dating",
+      "evidence_sha256": "c614616dc094aecc7ce0b42bcaa76beb8b2a8831f8f7c5f879f31f7e021202ac",
+      "disposition": "compatible",
+      "rationale": "The two date ranges specify sixth to eighth centuries and differ only in dash style. Late-Post Sasanian is co-reported in the museum-derived catalogue record. This field comparison does not validate the cluster concordance or independently verify the object date.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-01B582E3244E",
+        "label": "British Museum 117882: incantation bowl; lid",
+        "field_group": "dating",
+        "member_ids": [
+          "IBI-01B582E3244E",
+          "IBI-74B3A0AA8A87"
+        ],
+        "claims": [
+          {
+            "id": "CLM-3B6A6F5D50B3",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "dating",
+            "value_text": "6thC-8thC",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1883-0118-AH-2601",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-EDBF94A99477",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-71F6B506CE96",
+            "field": "dating",
+            "value_text": "6thC–8thC",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1883-0118-AH-2601",
+            "source_title": "incantation bowl: 117882",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601"
+          },
+          {
+            "id": "CLM-66D6114925C4",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "period",
+            "value_text": "Late-Post Sasanian",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1883-0118-AH-2601",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          }
+        ],
+        "values_by_field": {
+          "dating": [
+            "6thC-8thC",
+            "6thC–8thC"
+          ],
+          "period": [
+            "Late-Post Sasanian"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-01B582E3244E",
+      "field_group": "language",
+      "evidence_sha256": "d7a5e267e4b25f7f6aa398b8e7446d7a22f9ef79b3a98d883d7e8669666cf256",
+      "disposition": "unresolved",
+      "rationale": "Unresolved: the uncertain Syriac? claim cites text 117ES (section pp. 147–149), but the local item-page mapping assigns BM 117882 to Segal 119ES. The unqualified Syriac, Estrangelo script description cannot clear either this locator/concordance mismatch or the explicit uncertainty. Obtain the relevant catalogue entries and museum item evidence before deciding whether the problem is a claim locator, extraction, identity merge, or scholarly attribution. The museum page returned HTTP 403 during this review.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601",
+        "https://www.britishmuseum.org/collection/term/BIB3908"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-01B582E3244E",
+        "label": "British Museum 117882: incantation bowl; lid",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-01B582E3244E",
+          "IBI-74B3A0AA8A87"
+        ],
+        "claims": [
+          {
+            "id": "CLM-93B030747EC3",
+            "object_id": "IBI-01B582E3244E",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Syriac?",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "uncertain",
+            "locator": "text 117ES; section pp. 147–149",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-B95A875CBD09",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-71F6B506CE96",
+            "field": "inscription_language",
+            "value_text": "Syriac, Estrangelo script",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1883-0118-AH-2601",
+            "source_title": "incantation bowl: 117882",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Syriac, Estrangelo script",
+            "Syriac?"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-01B582E3244E",
+      "field_group": "provenance",
+      "evidence_sha256": "dfcac8ac5ec6f4df986e0e8d69d088fc22cdbffa26b53cc1e8f09cfa3a2f83b4",
+      "disposition": "compatible",
+      "rationale": "Both findspot descriptions name Abu Habba (Sippar), with one retaining the interface label. Made in: Iraq remains a separate production claim. This checks compatibility of stored descriptions only and does not validate the disputed Segal mapping.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-01B582E3244E",
+        "label": "British Museum 117882: incantation bowl; lid",
+        "field_group": "provenance",
+        "member_ids": [
+          "IBI-01B582E3244E",
+          "IBI-74B3A0AA8A87"
+        ],
+        "claims": [
+          {
+            "id": "CLM-66B91180CB08",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "findspot",
+            "value_text": "Excavated/Findspot: Abu Habba (Sippar)",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1883-0118-AH-2601",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-9468BA6F2514",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-71F6B506CE96",
+            "field": "findspot",
+            "value_text": "Abu Habba (Sippar)",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1883-0118-AH-2601",
+            "source_title": "incantation bowl: 117882",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601"
+          },
+          {
+            "id": "CLM-03C4D0251830",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "production_place",
+            "value_text": "Made in: Iraq",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1883-0118-AH-2601",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          }
+        ],
+        "values_by_field": {
+          "findspot": [
+            "Abu Habba (Sippar)",
+            "Excavated/Findspot: Abu Habba (Sippar)"
+          ],
+          "production_place": [
+            "Made in: Iraq"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-021C540426A3",
+      "field_group": "dating",
+      "evidence_sha256": "9a178347cf5e8e8e29429eb51f26dd0b6248965c8a64110bae7ee239ccf305e8",
+      "disposition": "compatible",
+      "rationale": "The two stored date ranges differ only in dash style and both specify sixth to eighth centuries. Late-Post Sasanian is the period label co-reported in the same museum-derived record; this is descriptive compatibility, not independent dating verification.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1980-0415-27",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-021C540426A3",
+        "label": "British Museum 117880: incantation bowl",
+        "field_group": "dating",
+        "member_ids": [
+          "IBI-021C540426A3",
+          "IBI-EF1FDA96620B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-7CC392B391AA",
+            "object_id": "IBI-021C540426A3",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "dating",
+            "value_text": "6thC-8thC",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1980-0415-27",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-92CCA0035FCF",
+            "object_id": "IBI-021C540426A3",
+            "source_id": "SRC-7DC4EF76EB0C",
+            "field": "dating",
+            "value_text": "6thC–8thC",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1980-0415-27",
+            "source_title": "incantation bowl: 117880",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1980-0415-27"
+          },
+          {
+            "id": "CLM-CC193CBAC131",
+            "object_id": "IBI-021C540426A3",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "period",
+            "value_text": "Late-Post Sasanian",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1980-0415-27",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          }
+        ],
+        "values_by_field": {
+          "dating": [
+            "6thC-8thC",
+            "6thC–8thC"
+          ],
+          "period": [
+            "Late-Post Sasanian"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-021C540426A3",
+      "field_group": "provenance",
+      "evidence_sha256": "3de305f96a3633022d6021ab777d3f014bd6dbf790e3a3e9ebed12ba66052590",
+      "disposition": "compatible",
+      "rationale": "The two findspot descriptions both name Tell Ibrahim (Kutha); one retains the interface label Excavated/Findspot:. The separate Made in: Iraq production claim is kept separately and does not prove excavation context. This comparison is limited to the stored source-attributed descriptions.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1980-0415-27",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-021C540426A3",
+        "label": "British Museum 117880: incantation bowl",
+        "field_group": "provenance",
+        "member_ids": [
+          "IBI-021C540426A3",
+          "IBI-EF1FDA96620B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-CC84BE409A76",
+            "object_id": "IBI-021C540426A3",
+            "source_id": "SRC-7DC4EF76EB0C",
+            "field": "findspot",
+            "value_text": "Tell Ibrahim (Kutha)",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1980-0415-27",
+            "source_title": "incantation bowl: 117880",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1980-0415-27"
+          },
+          {
+            "id": "CLM-D7E548E20DEE",
+            "object_id": "IBI-021C540426A3",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "findspot",
+            "value_text": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1980-0415-27",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-B436824B83C7",
+            "object_id": "IBI-021C540426A3",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "production_place",
+            "value_text": "Made in: Iraq",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1980-0415-27",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          }
+        ],
+        "values_by_field": {
+          "findspot": [
+            "Excavated/Findspot: Tell Ibrahim (Kutha)",
+            "Tell Ibrahim (Kutha)"
+          ],
+          "production_place": [
+            "Made in: Iraq"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-21BB929F927B",
+      "field_group": "dating",
+      "evidence_sha256": "4db5e6b8089429f624b884ef9a1f1d1871b638a13ba3c04607a57cd1c8690579",
+      "disposition": "compatible",
+      "rationale": "All three stored calendar descriptions express sixth to seventh centuries CE. The two period claims both say Late Sasanian, and that label is co-reported with the calendar range in the museum-derived records. No independent redating or exact equality between a period and a calendar interval is asserted.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1914-0404-3255",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-21BB929F927B",
+        "label": "British Museum 113189 (Segal 139P)",
+        "field_group": "dating",
+        "member_ids": [
+          "IBI-21BB929F927B",
+          "IBI-B4FBA6461813",
+          "IBI-B57A039113F9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4D9E6ECA76AC",
+            "object_id": "IBI-21BB929F927B",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "dating",
+            "value_text": "6thC-7thC",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1914-0404-3255",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-531A667057F6",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "dating",
+            "value_text": "6th–7th century CE",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          },
+          {
+            "id": "CLM-9BB7954152C4",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "dating",
+            "value_text": "6thC–7thC",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          },
+          {
+            "id": "CLM-0748CBE4DA09",
+            "object_id": "IBI-21BB929F927B",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "period",
+            "value_text": "Late Sasanian",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1914-0404-3255",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-9068F665039A",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "period",
+            "value_text": "Late Sasanian",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          }
+        ],
+        "values_by_field": {
+          "dating": [
+            "6thC-7thC",
+            "6thC–7thC",
+            "6th–7th century CE"
+          ],
+          "period": [
+            "Late Sasanian"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-21BB929F927B",
+      "field_group": "dimensions",
+      "evidence_sha256": "a6ce76315b3f30a52a6bebf366af3f98c157f7e42f76803483b142778b8fd67a",
+      "disposition": "compatible",
+      "rationale": "Both stored claims identify the same four measurements in cm: base diameter 5/5.00, exterior rim 15.20, top rim 14.50, and depth 5.90. Only decimal formatting differs; no units or measurement types are discarded. This compares the stored descriptions, not the physical measurements.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-21BB929F927B",
+        "label": "British Museum 113189 (Segal 139P)",
+        "field_group": "dimensions",
+        "member_ids": [
+          "IBI-21BB929F927B",
+          "IBI-B4FBA6461813",
+          "IBI-B57A039113F9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6450F3E40B0B",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "dimensions",
+            "value_text": "Base diameter 5.00 cm; exterior rim diameter 15.20 cm; top rim diameter 14.50 cm; depth 5.90 cm",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          },
+          {
+            "id": "CLM-8FBFE1DF6822",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "dimensions",
+            "value_text": "Base diameter 5 cm; exterior rim diameter 15.20 cm; top rim diameter 14.50 cm; depth 5.90 cm",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          }
+        ],
+        "values_by_field": {
+          "dimensions": [
+            "Base diameter 5 cm; exterior rim diameter 15.20 cm; top rim diameter 14.50 cm; depth 5.90 cm",
+            "Base diameter 5.00 cm; exterior rim diameter 15.20 cm; top rim diameter 14.50 cm; depth 5.90 cm"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-21BB929F927B",
+      "field_group": "location",
+      "evidence_sha256": "7acaa2a7d6d45ca0e02488a3c99ca39fe146ce4e685efafb80a3c52d4d34ccc5",
+      "disposition": "compatible",
+      "rationale": "Every claim names the British Museum. One adds a Room 1 display statement explicitly qualified to the time of access. The added historical display detail does not conflict with institutional holding; it is not asserted to remain current.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1914-0404-3255",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-21BB929F927B",
+        "label": "British Museum 113189 (Segal 139P)",
+        "field_group": "location",
+        "member_ids": [
+          "IBI-21BB929F927B",
+          "IBI-B4FBA6461813",
+          "IBI-B57A039113F9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-3F2266118E97",
+            "object_id": "IBI-21BB929F927B",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "current_location",
+            "value_text": "The British Museum",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1914-0404-3255",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-7AC4038428E9",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "current_location",
+            "value_text": "The British Museum",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          },
+          {
+            "id": "CLM-F41347F85B28",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "current_location",
+            "value_text": "The British Museum; on display in Room 1 at time of access",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          }
+        ],
+        "values_by_field": {
+          "current_location": [
+            "The British Museum",
+            "The British Museum; on display in Room 1 at time of access"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-21BB929F927B",
+      "field_group": "provenance",
+      "evidence_sha256": "8508927e44bbb25f3b672fb70267b72dc0bb024eb08702e0ce1f4debc2fd21a4",
+      "disposition": "compatible",
+      "rationale": "Both claims describe production_place as Iraq; one includes the interface label Made in:. This does not establish an excavation findspot or ownership provenance.",
+      "review_basis": "Explicit comparison of existing source-attributed claims and local museum mapping manifest. Fresh primary-page retrieval was blocked (HTTP 403); not independent source or object verification.",
+      "supporting_references": [
+        "research/enrichment/british_museum_item_pages_2026-09-04.json",
+        "https://www.britishmuseum.org/collection/object/W_1914-0404-3255",
+        "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-21BB929F927B",
+        "label": "British Museum 113189 (Segal 139P)",
+        "field_group": "provenance",
+        "member_ids": [
+          "IBI-21BB929F927B",
+          "IBI-B4FBA6461813",
+          "IBI-B57A039113F9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-DA1CF1B40979",
+            "object_id": "IBI-21BB929F927B",
+            "source_id": "SRC-3D4B57D27A24",
+            "field": "production_place",
+            "value_text": "Made in: Iraq",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Related objects: 1914-0404-3255",
+            "source_title": "159 objects related to Segal 2000a",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908?id=BIB3908&page=1"
+          },
+          {
+            "id": "CLM-F1A1E0501D94",
+            "object_id": "IBI-B4FBA6461813",
+            "source_id": "SRC-0BC03D117630",
+            "field": "production_place",
+            "value_text": "Iraq",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1914-0404-3255",
+            "source_title": "incantation bowl: 113189",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1914-0404-3255"
+          }
+        ],
+        "values_by_field": {
+          "production_place": [
+            "Iraq",
+            "Made in: Iraq"
+          ]
+        }
+      }
+    }
+  ]
+}

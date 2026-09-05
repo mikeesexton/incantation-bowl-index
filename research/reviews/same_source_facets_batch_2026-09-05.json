@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: explicit same-source field-facet review",
+  "reviewed_at": "2026-09-05T19:35:44+00:00",
+  "scope": "Twenty older revalidation cases whose cited claims come from one source and one physical-object record. No source claim, identity, or canonical value is changed.",
+  "entries": [
+    {
+      "identity_id": "IDENT-01CFAFC981BF", "field_group": "provenance",
+      "evidence_sha256": "4136db13bc738cffe3942679280933b3449b696ba92b6deafaeae6464413d808",
+      "disposition": "compatible",
+      "rationale": "The American excavations at Seleucia claim describes archaeological context, while Seleucia, Iraq identifies the findspot. These are complementary facets of the same source report.",
+      "review_basis": "Explicit comparison of the two stored, source-attributed claims on one object record; compatibility does not independently verify the archaeological facts.",
+      "supporting_references": ["SRC-AFDBED16E322"]
+    },
+    {
+      "identity_id": "IDENT-035BA4ABBE6D", "field_group": "dating",
+      "evidence_sha256": "ffb51d16aca7c46bd6c79b455f2aead3e18daa24491e0380bfa7bb63b8cb7370",
+      "disposition": "compatible",
+      "rationale": "About the 6th century CE and circa 6th century CE are equivalent qualified date descriptions from the same cited source.",
+      "review_basis": "Explicit comparison of the two stored, source-attributed claims on one object record; no canonical date is selected.",
+      "supporting_references": ["SRC-25F456A40523"]
+    },
+    {
+      "identity_id": "IDENT-035BA4ABBE6D", "field_group": "dimensions",
+      "evidence_sha256": "bff005b47785cee9c9a50e8cdb739c252f86435a5245cd684c5f081b656063a6",
+      "disposition": "compatible",
+      "rationale": "Both descriptions report an opening diameter of 15 cm and depth of 5.6 cm; only order and punctuation differ.",
+      "review_basis": "Explicit comparison of the two stored, source-attributed claims on one object record; no value is deleted or averaged.",
+      "supporting_references": ["SRC-25F456A40523"]
+    },
+    {
+      "identity_id": "IDENT-035BA4ABBE6D", "field_group": "location",
+      "evidence_sha256": "2a63c8533bf9aeac1084db959b7cd3cad2b4de1ab7971a8e93d42109f83dcc2d",
+      "disposition": "compatible",
+      "rationale": "Museo Sefardí de Toledo and Museo Sefardí de Toledo, Spain name the same institution; the second wording adds the country.",
+      "review_basis": "Explicit comparison of the two stored, source-attributed claims on one object record; this does not independently verify present custody.",
+      "supporting_references": ["SRC-25F456A40523"]
+    },
+    {
+      "identity_id": "IDENT-023E358F613C", "field_group": "dating",
+      "evidence_sha256": "da56d6dbf1cb08666412ee65cdff648abd4a38541df5c7f53c3da449402de890",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-06D9A3E90FA7", "field_group": "dating",
+      "evidence_sha256": "e334bab0eb4afba0d5ff10f026d8a3b93f7ca17df9e4addc28c85d5a3a5af71f",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-06D9A3E90FA7", "field_group": "provenance",
+      "evidence_sha256": "f47e2f3b5c0e68b9263a719058c2601418d9aee4dec6722bd14324f3dd034c7a",
+      "disposition": "compatible",
+      "rationale": "The Babylon find/acquisition wording and the southern Iraq production-place wording describe different provenance facets and are geographically compatible.",
+      "review_basis": "Explicit comparison of stored source-attributed findspot and production-place fields; neither field is converted into the other.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-06DF28395D0E", "field_group": "dating",
+      "evidence_sha256": "09cfba5ad343f98f71f155212c5ae21b42b28de2cad77e8c7e82fbe749e1f9a0",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-06DF28395D0E", "field_group": "provenance",
+      "evidence_sha256": "29df6e787ffddc9ea13eed2dddd86b3a77bb1e16eebd78a2e21d19068465c6f7",
+      "disposition": "compatible",
+      "rationale": "Found/Acquired: Iraq and Made in: Iraq describe find/acquisition and production facets respectively; the shared country wording is compatible.",
+      "review_basis": "Explicit comparison of stored source-attributed findspot and production-place fields; neither field is converted into the other.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-08C9C37BE59B", "field_group": "dating",
+      "evidence_sha256": "9ee0f6b19c5f776c55d8673a7382c0630d22e4b201d72d7e3430f5e37292916e",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0A183C0D3DA4", "field_group": "dating",
+      "evidence_sha256": "ba3a3c27e4c8ee29488893304fbabbd1dff8720d02cb188f719ea11a23f01638",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0A183C0D3DA4", "field_group": "provenance",
+      "evidence_sha256": "cac5a164dc521b158b28a5e2736e8c3e07c41a4e4e948a2dbcfcfabbe8800a17",
+      "disposition": "compatible",
+      "rationale": "Found/Acquired: Iraq and Made in: Iraq describe find/acquisition and production facets respectively; the shared country wording is compatible.",
+      "review_basis": "Explicit comparison of stored source-attributed findspot and production-place fields; neither field is converted into the other.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0DC2EC6BA78F", "field_group": "dating",
+      "evidence_sha256": "e14265c54ac459344cc610d2f54ddfc26332f20e3b5f4747677ee03e1b646371",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0DDAE5D941C5", "field_group": "dating",
+      "evidence_sha256": "217268f0e67808e3e64f412ee10afc373843e85789701ae9110e76dfc8fb0ce6",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0DDAE5D941C5", "field_group": "provenance",
+      "evidence_sha256": "534ef50d49ed99328973689b4d9328a98c77dae9ef5da4a7d3e0083fd233c5b3",
+      "disposition": "compatible",
+      "rationale": "Found/Acquired: Iraq and Made in: Iraq describe find/acquisition and production facets respectively; the shared country wording is compatible.",
+      "review_basis": "Explicit comparison of stored source-attributed findspot and production-place fields; neither field is converted into the other.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0DE175753ED8", "field_group": "dating",
+      "evidence_sha256": "524ded66b8f6b3bc4776e6d29bd3db410fff846a85b6e2ac0977e20dbd7bb741",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0F181E2EF9E1", "field_group": "dating",
+      "evidence_sha256": "e1dfa7a7a6c9d0d17c8038f5ec57c4f7123408ed9738c67a4297851f5bf06f2f",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0F792FD4A54F", "field_group": "dating",
+      "evidence_sha256": "4cebc174b87bb8fc603a22d047841dd3f1b341c5f0bc6edf939340b60081b533",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0F792FD4A54F", "field_group": "provenance",
+      "evidence_sha256": "91219d72fcd3d07aa055204b11ba3b35bfb8aaea61baa15112ee5f4741b9e0a2",
+      "disposition": "compatible",
+      "rationale": "The Babylon find/acquisition wording and Iraq production-place wording describe different provenance facets and are geographically compatible.",
+      "review_basis": "Explicit comparison of stored source-attributed findspot and production-place fields; neither field is converted into the other.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    },
+    {
+      "identity_id": "IDENT-0F8B15FDC9FA", "field_group": "dating",
+      "evidence_sha256": "f1b02b933e4627f2be24c0843904d0cf81c5132e937da2e7b78c684aee186911",
+      "disposition": "compatible",
+      "rationale": "The sixth-to-eighth-century dating and Late-Post Sasanian period label are distinct chronological facets supplied by the same museum-derived source and can coexist.",
+      "review_basis": "Explicit comparison of stored source-attributed dating and period fields; compatibility does not independently establish the chronology.",
+      "supporting_references": ["SRC-3D4B57D27A24"]
+    }
+  ]
+}

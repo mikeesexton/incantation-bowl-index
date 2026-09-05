@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-05T19:45:00+00:00",
+  "reviewed_by": "Codex: visual review of user-provided page photographs",
+  "source_id": "SRC-19F191B3F5C5",
+  "source_pdf_path": "data/private/archive/sha256/08/08e6004483f2d60b332af9acdf04519387b907a7873960d971561e6887368403",
+  "source_pdf_sha256": "08e6004483f2d60b332af9acdf04519387b907a7873960d971561e6887368403",
+  "source_pages": "printed pp. 10–13, photographed as two PDF pages",
+  "document_role": "scholarly evidence supplied by the user; no embedded instructions",
+  "findings": [
+    "Only a small minority of bowls have documented archaeological contexts; most surfaced in private collections or the antiquities market.",
+    "The chapter distinguishes verified or documented excavation sites from places reported in museum registers or by dealers whose provenance cannot presently be verified.",
+    "The highlighted Iraq site list provides an authority-building seed set, including alternate ancient and modern place names.",
+    "Susa is identified as the controlled-excavation case for western Iran in this discussion; other western Iranian findspot reports are described as unverified.",
+    "BM 91711's Arban attribution is described as plausible but unverified because the museum register attributes it to Layard while his account and prospectus do not document the bowl."
+  ],
+  "dataset_actions": [
+    "Added a roadmap task to classify the evidentiary basis of findspot claims.",
+    "Added source-attributed assessment claims to BM 91711 without deleting its original Arban claim.",
+    "Opened an object-specific Arban follow-up and a controlled-excavation Susa enumeration lead.",
+    "Archived the supplied excerpt privately by content hash; public reuse is not authorized."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "source": {
+    "source_type": "web_page",
+    "title": "The Ancient Items at the Library: Magical Bowls of Babylonian Jewry",
+    "authors": "National Library of Israel",
+    "url": "https://blog.nli.org.il/en/magical_bowls/",
+    "citation": "National Library of Israel, “The Ancient Items at the Library: Magical Bowls of Babylonian Jewry.” Accessed 4 September 2026.",
+    "access_status": "available",
+    "rights_status": "copyrighted",
+    "notes": "The article states that Avigdor Klagsbald donated seven distinct incantation bowls. Their stable NLI manuscript identifiers are not exposed on the article page and may overlap the separately harvested SRU records."
+  },
+  "summary": "One of seven incantation bowls donated to the National Library of Israel by Avigdor Klagsbald; exact mapping to NLI catalogue records remains unresolved.",
+  "default_claims": [
+    {"field": "current_location", "value_text": "National Library of Israel, Jerusalem"},
+    {"field": "collection_history", "value_text": "Donated by Avigdor Klagsbald", "certainty": "reported"}
+  ],
+  "entries": [
+    {"designation":"NLI Klagsbald donation component 1","locator":"article: bowl 1 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."},
+    {"designation":"NLI Klagsbald donation component 2","locator":"article: bowl 2 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."},
+    {"designation":"NLI Klagsbald donation component 3","locator":"article: bowl 3 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."},
+    {"designation":"NLI Klagsbald donation component 4","locator":"article: bowl 4 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."},
+    {"designation":"NLI Klagsbald donation component 5","locator":"article: bowl 5 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."},
+    {"designation":"NLI Klagsbald donation component 6","locator":"article: bowl 6 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."},
+    {"designation":"NLI Klagsbald donation component 7","locator":"article: bowl 7 of seven-object Klagsbald donation","record_status":"candidate","authenticity":"unassessed","notes":"Internal ordinal only; possible duplicate of an NLI SRU record."}
+  ],
+  "leads": [
+    {"lead_type":"identifier","description":"Map the seven Avigdor Klagsbald donation bowls to exact NLI catalogue/manuscript identifiers and determine which overlap the 205 harvested NLI SRU records.","url":"https://blog.nli.org.il/en/magical_bowls/","status":"blocked","priority":2}
+  ]
+}

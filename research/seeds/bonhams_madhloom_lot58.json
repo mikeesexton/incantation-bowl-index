@@ -1,0 +1,24 @@
+{
+  "source": {
+    "source_type": "catalogue",
+    "title": "Bonhams Antiquities catalogue — lot 58",
+    "authors": "Bonhams",
+    "url": "https://www.the-saleroom.com/en-gb/auction-catalogues/bonhams/catalogue-id-bonham10350/pdfexport",
+    "citation": "Bonhams, Antiquities, 101 New Bond Street, London, catalogue bonham10350, lot 58.",
+    "access_status": "partial",
+    "rights_status": "copyrighted",
+    "notes": "The Saleroom requires JavaScript verification for direct access; indexed catalogue text provides the object count, description, dimensions, estimate, and provenance."
+  },
+  "list_number_scheme": "auction lot component number",
+  "default_claims": [
+    {"field": "dating", "value_text": "5th–6th century CE", "certainty": "reported"},
+    {"field": "material", "value_text": "Pottery"},
+    {"field": "inscription_language", "value_text": "Aramaic", "certainty": "reported"},
+    {"field": "provenance", "value_text": "Said Ali Madhloom collection; brought to the UK in 1981; thence by descent", "certainty": "reported"},
+    {"field": "sale_estimate", "value_text": "Combined lot estimate £1,000–1,500"}
+  ],
+  "entries": [
+    {"designation": "Bonhams bonham10350 lot 58 bowl", "locator": "lot 58, whole bowl", "object_type": "whole_bowl", "record_status": "candidate", "authenticity": "unassessed", "notes": "Small flared-rim bowl tapering to a flat base, with nine spiral lines in black ink; diameter 11.5 cm.", "claims": [{"field": "dimensions", "value_text": "Diameter 11.5 cm"}, {"field": "line_count", "value_text": "Nine spiral lines"}]},
+    {"designation": "Bonhams bonham10350 lot 58 fragment", "locator": "lot 58, larger fragment", "object_type": "fragment", "record_status": "candidate", "authenticity": "unassessed", "notes": "Larger text-bearing bowl fragment, 14 × 13 cm.", "claims": [{"field": "dimensions", "value_text": "14 × 13 cm"}]}
+  ]
+}

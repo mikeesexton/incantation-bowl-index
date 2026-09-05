@@ -1,0 +1,1362 @@
+{
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_at": "2026-09-04T22:56:48+00:00",
+  "entries": [
+    {
+      "text_number": 1,
+      "object_id": "IBI-7680B927BB2F",
+      "appearance_id": "APP-CDECE1AA8025",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 1, printed p. 321; PDF p. 327; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two holes.",
+          "locator": "Catalogue, text 1, printed p. 321; PDF p. 327; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 8693",
+          "locator": "Catalogue, text 1, printed p. 321; PDF p. 327; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 2,
+      "object_id": "IBI-5B1343517775",
+      "appearance_id": "APP-D9DDA0AC69C7",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.2 cm; diameter 17.4 cm",
+          "value_json": {
+            "height_cm": 7.2,
+            "diameter_cm": 17.4
+          },
+          "locator": "Catalogue, text 2, printed p. 321; PDF p. 327; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 2, printed p. 321; PDF p. 327; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2945",
+          "locator": "Catalogue, text 2, printed p. 321; PDF p. 327; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 3,
+      "object_id": "IBI-28AFCD028373",
+      "appearance_id": "APP-FE0FFEDE62F8",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 10.3 cm; diameter 20.5 cm",
+          "value_json": {
+            "height_cm": 10.3,
+            "diameter_cm": 20.5
+          },
+          "locator": "Catalogue, text 3, printed p. 321; PDF p. 327; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; a 6 by 12 cm segment missing.",
+          "locator": "Catalogue, text 3, printed p. 321; PDF p. 327; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2963",
+          "locator": "Catalogue, text 3, printed p. 321; PDF p. 327; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 4,
+      "object_id": "IBI-917276249B87",
+      "appearance_id": "APP-C772190086F2",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.5 cm; diameter 17.3 cm",
+          "value_json": {
+            "height_cm": 7.5,
+            "diameter_cm": 17.3
+          },
+          "locator": "Catalogue, text 4, printed p. 321; PDF p. 327; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; small segment missing.",
+          "locator": "Catalogue, text 4, printed p. 321; PDF p. 327; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2923",
+          "locator": "Catalogue, text 4, printed p. 321; PDF p. 327; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 5,
+      "object_id": "IBI-E135C0EA9CED",
+      "appearance_id": "APP-1310B7191112",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 18 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 18
+          },
+          "locator": "Catalogue, text 5, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Slightly broken and mended; small fragment missing.",
+          "locator": "Catalogue, text 5, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2952",
+          "locator": "Catalogue, text 5, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 6,
+      "object_id": "IBI-B6246E14776E",
+      "appearance_id": "APP-864157C44B8B",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6 cm; diameter 15.8 cm",
+          "value_json": {
+            "height_cm": 6,
+            "diameter_cm": 15.8
+          },
+          "locator": "Catalogue, text 6, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Perfect except for a fracture not touching the text.",
+          "locator": "Catalogue, text 6, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2916",
+          "locator": "Catalogue, text 6, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 7,
+      "object_id": "IBI-013FBB80706C",
+      "appearance_id": "APP-78ECA5E16211",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 5.6 cm; diameter 15.7 cm",
+          "value_json": {
+            "height_cm": 5.6,
+            "diameter_cm": 15.7
+          },
+          "locator": "Catalogue, text 7, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; a square fragment of text missing.",
+          "locator": "Catalogue, text 7, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16007",
+          "locator": "Catalogue, text 7, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 8,
+      "object_id": "IBI-5C355EF43D8D",
+      "appearance_id": "APP-D433CFA5D994",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 8.5 cm; diameter 16.6 cm",
+          "value_json": {
+            "height_cm": 8.5,
+            "diameter_cm": 16.6
+          },
+          "locator": "Catalogue, text 8, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two small fragments missing.",
+          "locator": "Catalogue, text 8, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 9013",
+          "locator": "Catalogue, text 8, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 9,
+      "object_id": "IBI-B54D497CC676",
+      "appearance_id": "APP-07A0BD3CAEDC",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6 cm; diameter 17.7 cm",
+          "value_json": {
+            "height_cm": 6,
+            "diameter_cm": 17.7
+          },
+          "locator": "Catalogue, text 9, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Perfect bowl; characters much obliterated.",
+          "locator": "Catalogue, text 9, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 9010",
+          "locator": "Catalogue, text 9, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 10,
+      "object_id": "IBI-C3B04E20C369",
+      "appearance_id": "APP-438DDE9F3E25",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.9 cm; diameter 14.2 cm",
+          "value_json": {
+            "height_cm": 6.9,
+            "diameter_cm": 14.2
+          },
+          "locator": "Catalogue, text 10, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; segment missing.",
+          "locator": "Catalogue, text 10, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16014",
+          "locator": "Catalogue, text 10, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 11,
+      "object_id": "IBI-49D1BAB76E01",
+      "appearance_id": "APP-3126B58BCEBD",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.3 cm; diameter 16.1 cm",
+          "value_json": {
+            "height_cm": 6.3,
+            "diameter_cm": 16.1
+          },
+          "locator": "Catalogue, text 11, printed p. 322; PDF p. 328; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; three text fragments missing.",
+          "locator": "Catalogue, text 11, printed p. 322; PDF p. 328; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16022",
+          "locator": "Catalogue, text 11, printed p. 322; PDF p. 328; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 12,
+      "object_id": "IBI-4500756E262F",
+      "appearance_id": "APP-6434CEAE80BD",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.2 cm; diameter 17.7 cm",
+          "value_json": {
+            "height_cm": 7.2,
+            "diameter_cm": 17.7
+          },
+          "locator": "Catalogue, text 12, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Perfect bowl.",
+          "locator": "Catalogue, text 12, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 9009",
+          "locator": "Catalogue, text 12, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 13,
+      "object_id": "IBI-88103E2EB680",
+      "appearance_id": "APP-24BFA2C91F7E",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 16.2 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 16.2
+          },
+          "locator": "Catalogue, text 13, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; small piece missing.",
+          "locator": "Catalogue, text 13, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 8694",
+          "locator": "Catalogue, text 13, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 14,
+      "object_id": "IBI-CF7556423B9D",
+      "appearance_id": "APP-E987653764E6",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.8 cm; diameter 18.7 cm",
+          "value_json": {
+            "height_cm": 6.8,
+            "diameter_cm": 18.7
+          },
+          "locator": "Catalogue, text 14, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; segment missing.",
+          "locator": "Catalogue, text 14, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16017",
+          "locator": "Catalogue, text 14, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 15,
+      "object_id": "IBI-7F04261178CB",
+      "appearance_id": "APP-681E7CFAACAF",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.3 cm; diameter 17.2 cm",
+          "value_json": {
+            "height_cm": 7.3,
+            "diameter_cm": 17.2
+          },
+          "locator": "Catalogue, text 15, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 15, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16087",
+          "locator": "Catalogue, text 15, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 16,
+      "object_id": "IBI-DEDC98D3F366",
+      "appearance_id": "APP-79114E948F02",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.8 cm; diameter 16.3 cm",
+          "value_json": {
+            "height_cm": 6.8,
+            "diameter_cm": 16.3
+          },
+          "locator": "Catalogue, text 16, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 16, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2920",
+          "locator": "Catalogue, text 16, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 17,
+      "object_id": "IBI-A2E775143F9F",
+      "appearance_id": "APP-C3C4F898D923",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 15.7 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 15.7
+          },
+          "locator": "Catalogue, text 17, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; segment missing.",
+          "locator": "Catalogue, text 17, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2922",
+          "locator": "Catalogue, text 17, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 18,
+      "object_id": "IBI-CEC11D2DBB44",
+      "appearance_id": "APP-A79508FF2125",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.2 cm; diameter 16.1 cm",
+          "value_json": {
+            "height_cm": 7.2,
+            "diameter_cm": 16.1
+          },
+          "locator": "Catalogue, text 18, printed p. 323; PDF p. 329; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; fragment about 5 cm square missing.",
+          "locator": "Catalogue, text 18, printed p. 323; PDF p. 329; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 8695",
+          "locator": "Catalogue, text 18, printed p. 323; PDF p. 329; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        },
+        {
+          "field": "translation_availability",
+          "value_text": "No separate English translation supplied in Montgomery 1913. The commentary calls this a duplicate of the texts collated under no. 11 and explicitly says a translation is unnecessary.",
+          "locator": "text 18, printed p. 193; PDF p. 199",
+          "certainty": "certain",
+          "notes": "Absence applies to this edition only; no claim about translations in later scholarship."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 19,
+      "object_id": "IBI-84F6B8FD30B3",
+      "appearance_id": "APP-EAD0AE7DED3E",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.6 cm; diameter 17.6 cm",
+          "value_json": {
+            "height_cm": 6.6,
+            "diameter_cm": 17.6
+          },
+          "locator": "Catalogue, text 19, printed p. 324; PDF p. 330; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 19, printed p. 324; PDF p. 330; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "blank",
+          "locator": "Catalogue, text 19, printed p. 324; PDF p. 330; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 20,
+      "object_id": "IBI-ABDE8A973358",
+      "appearance_id": "APP-279C27F275C2",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 20, printed p. 324; PDF p. 330; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; fragment missing.",
+          "locator": "Catalogue, text 20, printed p. 324; PDF p. 330; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16023",
+          "locator": "Catalogue, text 20, printed p. 324; PDF p. 330; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 21,
+      "object_id": "IBI-26BDEA55EA1E",
+      "appearance_id": "APP-76436A9290DC",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 21, printed p. 324; PDF p. 330; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two fragments missing, including a small one in the text.",
+          "locator": "Catalogue, text 21, printed p. 324; PDF p. 330; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16054",
+          "locator": "Catalogue, text 21, printed p. 324; PDF p. 330; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        },
+        {
+          "field": "translation_availability",
+          "value_text": "No separate English translation supplied in Montgomery 1913. One of three parallel texts printed together; the English block is explicitly headed Translation of No. 22. No separate translation of no. 21 is supplied.",
+          "locator": "text 21, printed p. 203; PDF p. 209",
+          "certainty": "certain",
+          "notes": "Absence applies to this edition only; no claim about translations in later scholarship."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 22,
+      "object_id": "IBI-6C4D8112FFE2",
+      "appearance_id": "APP-07648364502C",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 16 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 16
+          },
+          "locator": "Catalogue, text 22, printed p. 324; PDF p. 330; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two fragments missing.",
+          "locator": "Catalogue, text 22, printed p. 324; PDF p. 330; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16006",
+          "locator": "Catalogue, text 22, printed p. 324; PDF p. 330; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 23,
+      "object_id": "IBI-DF04AC9DDBFB",
+      "appearance_id": "APP-49C686AFBC6E",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 17.2 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 17.2
+          },
+          "locator": "Catalogue, text 23, printed p. 324; PDF p. 330; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 23, printed p. 324; PDF p. 330; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16090",
+          "locator": "Catalogue, text 23, printed p. 324; PDF p. 330; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        },
+        {
+          "field": "translation_availability",
+          "value_text": "No separate English translation supplied in Montgomery 1913. One of three parallel texts printed together; the English block is explicitly headed Translation of No. 22. No separate translation of no. 23 is supplied.",
+          "locator": "text 23, printed p. 203; PDF p. 209",
+          "certainty": "certain",
+          "notes": "Absence applies to this edition only; no claim about translations in later scholarship."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 24,
+      "object_id": "IBI-C2E332F154A0",
+      "appearance_id": "APP-2A8A4134889F",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 16.8 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 16.8
+          },
+          "locator": "Catalogue, text 24, printed p. 324; PDF p. 330; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; small fragment missing.",
+          "locator": "Catalogue, text 24, printed p. 324; PDF p. 330; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2926",
+          "locator": "Catalogue, text 24, printed p. 324; PDF p. 330; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 25,
+      "object_id": "IBI-74625165CE1F",
+      "appearance_id": "APP-F4AE8487EFD4",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.9 cm; diameter 17.2 cm",
+          "value_json": {
+            "height_cm": 6.9,
+            "diameter_cm": 17.2
+          },
+          "locator": "Catalogue, text 25, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; four fragments missing.",
+          "locator": "Catalogue, text 25, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16009",
+          "locator": "Catalogue, text 25, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 26,
+      "object_id": "IBI-F6ED61BF3D88",
+      "appearance_id": "APP-F9A77B2A4270",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.9 cm; diameter 15.5 cm",
+          "value_json": {
+            "height_cm": 6.9,
+            "diameter_cm": 15.5
+          },
+          "locator": "Catalogue, text 26, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 26, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 3997",
+          "locator": "Catalogue, text 26, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 27,
+      "object_id": "IBI-E74F7ED591BD",
+      "appearance_id": "APP-A820D51C5E33",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 5.6 cm; diameter 16.6 cm",
+          "value_json": {
+            "height_cm": 5.6,
+            "diameter_cm": 16.6
+          },
+          "locator": "Catalogue, text 27, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two considerable fragments missing.",
+          "locator": "Catalogue, text 27, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16041",
+          "locator": "Catalogue, text 27, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        },
+        {
+          "field": "translation_availability",
+          "value_text": "No separate English translation supplied in Montgomery 1913. The commentary says the parallel section matches no. 2 and needs no translation; the remaining lines are too mutilated or obscure to present.",
+          "locator": "text 27, printed p. 212; PDF p. 218",
+          "certainty": "certain",
+          "notes": "Absence applies to this edition only; no claim about translations in later scholarship."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 28,
+      "object_id": "IBI-325647D3DF8D",
+      "appearance_id": "APP-5C2E170AF9AA",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 16.5 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 16.5
+          },
+          "locator": "Catalogue, text 28, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; four fragments missing; text blurred or obliterated.",
+          "locator": "Catalogue, text 28, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2972",
+          "locator": "Catalogue, text 28, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 29,
+      "object_id": "IBI-5CB5A9A5E46E",
+      "appearance_id": "APP-19E688CF629E",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.8 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 6.8,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 29, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; one fragment missing.",
+          "locator": "Catalogue, text 29, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16055",
+          "locator": "Catalogue, text 29, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 30,
+      "object_id": "IBI-D8319A094023",
+      "appearance_id": "APP-64DA17599F84",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 16.8 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 16.8
+          },
+          "locator": "Catalogue, text 30, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; small fragment missing.",
+          "locator": "Catalogue, text 30, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16096",
+          "locator": "Catalogue, text 30, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 31,
+      "object_id": "IBI-079F0B82D514",
+      "appearance_id": "APP-0793AD650B2E",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.6 cm; diameter 16 cm",
+          "value_json": {
+            "height_cm": 6.6,
+            "diameter_cm": 16
+          },
+          "locator": "Catalogue, text 31, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Perfect.",
+          "locator": "Catalogue, text 31, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 9008",
+          "locator": "Catalogue, text 31, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 32,
+      "object_id": "IBI-527704D6B074",
+      "appearance_id": "APP-D4C5D8A61D40",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.9 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 6.9,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 32, printed p. 325; PDF p. 331; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; one large and one small fragment missing.",
+          "locator": "Catalogue, text 32, printed p. 325; PDF p. 331; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16086",
+          "locator": "Catalogue, text 32, printed p. 325; PDF p. 331; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 33,
+      "object_id": "IBI-E10F6716C2C1",
+      "appearance_id": "APP-802C87223FEE",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.2 cm; diameter 15.5 cm",
+          "value_json": {
+            "height_cm": 6.2,
+            "diameter_cm": 15.5
+          },
+          "locator": "Catalogue, text 33, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two considerable fragments missing.",
+          "locator": "Catalogue, text 33, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16019",
+          "locator": "Catalogue, text 33, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        },
+        {
+          "field": "translation_availability",
+          "value_text": "No separate English translation supplied in Montgomery 1913. The note states the inscription is practically contained in no. 32, with a changed client name. No separate English translation is supplied.",
+          "locator": "text 33, printed p. 230; PDF p. 236",
+          "certainty": "certain",
+          "notes": "Absence applies to this edition only; no claim about translations in later scholarship."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 34,
+      "object_id": "IBI-F094DE6A4112",
+      "appearance_id": "APP-D724A7994ABA",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.5 cm; diameter 17.5 cm",
+          "value_json": {
+            "height_cm": 7.5,
+            "diameter_cm": 17.5
+          },
+          "locator": "Catalogue, text 34, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended.",
+          "locator": "Catalogue, text 34, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 9012",
+          "locator": "Catalogue, text 34, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 35,
+      "object_id": "IBI-6E087B8C539F",
+      "appearance_id": "APP-0D6521BE33C9",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 16.1 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 16.1
+          },
+          "locator": "Catalogue, text 35, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; two small fragments missing.",
+          "locator": "Catalogue, text 35, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 16097",
+          "locator": "Catalogue, text 35, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 36,
+      "object_id": "IBI-CD3E783556B1",
+      "appearance_id": "APP-83950F7E2B49",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.3 cm; diameter 15.4 cm",
+          "value_json": {
+            "height_cm": 6.3,
+            "diameter_cm": 15.4
+          },
+          "locator": "Catalogue, text 36, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; about half of the two marginal lines missing.",
+          "locator": "Catalogue, text 36, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2933",
+          "locator": "Catalogue, text 36, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 37,
+      "object_id": "IBI-44BC3FE36601",
+      "appearance_id": "APP-E275724F7B16",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.5 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 6.5,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 37, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and frequently repaired; much of the margin missing and a large part of the text obliterated.",
+          "locator": "Catalogue, text 37, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2943",
+          "locator": "Catalogue, text 37, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 38,
+      "object_id": "IBI-544ABA7B7DAA",
+      "appearance_id": "APP-96871B3E4365",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7 cm; diameter 17 cm",
+          "value_json": {
+            "height_cm": 7,
+            "diameter_cm": 17
+          },
+          "locator": "Catalogue, text 38, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; several small holes.",
+          "locator": "Catalogue, text 38, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2941",
+          "locator": "Catalogue, text 38, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 39,
+      "object_id": "IBI-DC36E80A1951",
+      "appearance_id": "APP-B8B7514BF026",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 6.8 cm; diameter 17.2 cm",
+          "value_json": {
+            "height_cm": 6.8,
+            "diameter_cm": 17.2
+          },
+          "locator": "Catalogue, text 39, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; some fragments missing.",
+          "locator": "Catalogue, text 39, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 9005",
+          "locator": "Catalogue, text 39, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    },
+    {
+      "text_number": 40,
+      "object_id": "IBI-A3736CD7D997",
+      "appearance_id": "APP-7F442D32415F",
+      "claims": [
+        {
+          "field": "dimensions",
+          "value_text": "height 7.3 cm; diameter 17.2 cm",
+          "value_json": {
+            "height_cm": 7.3,
+            "diameter_cm": 17.2
+          },
+          "locator": "Catalogue, text 40, printed p. 326; PDF p. 332; size column (height by diameter)",
+          "certainty": "reported",
+          "notes": "Visually checked against the scan. The catalogue uses + as the separator for height by diameter; these are reported 1913 measurements, not a new measurement."
+        },
+        {
+          "field": "condition",
+          "value_text": "Broken and mended; some large lacunae.",
+          "locator": "Catalogue, text 40, printed p. 326; PDF p. 332; description column",
+          "certainty": "reported",
+          "notes": "Paraphrase of the condition reported in 1913, not an assertion of present condition."
+        },
+        {
+          "field": "publication_register_identifier",
+          "value_text": "CBS 2972",
+          "locator": "Catalogue, text 40, printed p. 326; PDF p. 332; catalogue number column",
+          "certainty": "reported",
+          "notes": "Literal catalogue-register reading. No object identifier or merge is inferred from this field; known discrepancies for texts 14, 19 and 40 remain separately documented."
+        }
+      ],
+      "review_basis": "Rendered register pages 327-332 (printed pp.321-326), all forty rows visually checked."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: audited importer repair and stored-evidence comparison",
+  "reviewed_at": "2026-09-05T03:38:39+00:00",
+  "scope": "Refresh BM 117882 language review after deterministic citation repair; no identity adjudication.",
+  "entries": [
+    {
+      "identity_id": "IDENT-01B582E3244E",
+      "field_group": "language",
+      "evidence_sha256": "27b4bb6c8aae134666030c7df44a57186e8eb69d8bfca93b126b715d74ce05d5",
+      "disposition": "unresolved",
+      "rationale": "The apparent Segal 117ES/119ES mismatch was caused by shared range-claim locator mutation and has been repaired to 119ES, matching the existing appearance. The source-derived Syriac? label remains explicitly uncertain beside museum descriptions of Syriac; a partial contents-range classification cannot establish equivalence or settle the language. Retain uncertainty pending catalogue text 119ES inspection. No evidence here warrants an identity merge change.",
+      "review_basis": "Deterministic comparison of the checked-in Segal seed range and stored appearance/claim rows, with immutable before/after correction records. Existing museum mapping consulted; no new museum or full-catalogue verification.",
+      "supporting_references": [
+        "research/seeds/segal_2000_british_museum.json",
+        "research/reviews/segal_locator_corrections_2026-09-04.json",
+        "research/enrichment/british_museum_item_pages_2026-09-04.json"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-01B582E3244E",
+        "label": "British Museum 117882: incantation bowl; lid",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-01B582E3244E",
+          "IBI-74B3A0AA8A87"
+        ],
+        "claims": [
+          {
+            "id": "CLM-93B030747EC3",
+            "object_id": "IBI-01B582E3244E",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Syriac?",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "uncertain",
+            "locator": "text 119ES; section pp. 147–149",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-B95A875CBD09",
+            "object_id": "IBI-74B3A0AA8A87",
+            "source_id": "SRC-71F6B506CE96",
+            "field": "inscription_language",
+            "value_text": "Syriac, Estrangelo script",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1883-0118-AH-2601",
+            "source_title": "incantation bowl: 117882",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Syriac, Estrangelo script",
+            "Syriac?"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_path": "data/private/archive/sha256/c8/c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_by": "Codex: rendered-page English reading-text review",
+  "reviewed_at": "2026-09-04T22:54:08+00:00",
+  "editorial_policy": "English reading text checked against rendered scan pages. Paragraphs and punctuation spacing normalized; print line wrapping and line-end hyphenation removed; Latin-name diacritics and small capitals normalized; italics not encoded; standalone runs of gap dots represented by ... without claiming a missing-character count. Numbered inscription-line references, restorations, uncertainty markers and odd source wording retained. Not a diplomatic transcription, new translation, or verification of the Aramaic; public_ok remains false.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-MONT-10-20260904",
+      "text_number": 10,
+      "text_id": "TXT-46C616D62E15",
+      "expected_text_sha256": "4ca29b6cee3af33e8b21b6d4d809d8b9335b97dde1a971539396980237132159",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-10.txt",
+      "corrected_content_sha256": "4c768ce34b157a42e999b8dc074d501f2a81dffe9d08d6ce8336149725c0ce19",
+      "pdf_pages": [
+        171
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored the printed gap after Eliel; normalized name diacritics, small capitals and line wrapping."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-14-20260904",
+      "text_number": 14,
+      "text_id": "TXT-50E9AECCDBEF",
+      "expected_text_sha256": "48054542551ba00c8d173e475f2abb1fd75f96b286f44d00f475656e095e6713",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-14.txt",
+      "corrected_content_sha256": "22a2f66950ade75f27f4f1c66b65d0bfadbb6772a017c095ca0580e1af3eaa0b",
+      "pdf_pages": [
+        189
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored gaps after thee, Red Sea, his, and Gabriel; corrected OCR Hall'eluia; kept the source heading/register discrepancy separate."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-20-20260904",
+      "text_number": 20,
+      "text_id": "TXT-322978D8C1EC",
+      "expected_text_sha256": "ee1eabec44d5c16fef98ba1d565bfff1454d32f94b36152f0248055718a31248",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-20.txt",
+      "corrected_content_sha256": "97031883b263ca37277daf15dd2a4c541a7b88d37ea817e1d7442ccf590f0192",
+      "pdf_pages": [
+        207
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Complete English paragraph checked; changes are editorial whitespace/diacritic normalization only."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-22-20260904",
+      "text_number": 22,
+      "text_id": "TXT-4F551289D88F",
+      "expected_text_sha256": "5a053c0e1ebf364346a6b8ff909d96beb7d0fc4e0cfa9b52ca8d0cee2ec7d6eb",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-22.txt",
+      "corrected_content_sha256": "3fc325fb292035d7b929dce186a3430672e8551c6dd85ea306f9839013c80f4c",
+      "pdf_pages": [
+        209,
+        210
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Checked both printed pp. 203 and 204. The heading explicitly assigns this translation to no. 22, not separately to nos. 21 or 23."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-24-20260904",
+      "text_number": 24,
+      "text_id": "TXT-84169EC6466C",
+      "expected_text_sha256": "b0a6cdc8f7c59ec847ff28bd90d689656b2adce91d32538f5cbdd820f9c111cf",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-24.txt",
+      "corrected_content_sha256": "21e412e38da932a12b61b6c2c7c3da3462e3dcbaa7ee23f7f8ae242b14ae1de4",
+      "pdf_pages": [
+        211
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored printed gaps after (3), after child, and after final Selah; retained the printed question marks."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-25-20260904",
+      "text_number": 25,
+      "text_id": "TXT-D1F3E51E8316",
+      "expected_text_sha256": "052337a80e0e14b0783420d9e05e7b741e4320eed5e840189894f48fecb46eac",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-25.txt",
+      "corrected_content_sha256": "9354a5f71cbb7fffcdfe4ac2f5b183f72fa6efc33780e653dd78e59913af2c42",
+      "pdf_pages": [
+        213
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Corrected Devjils to Dev]ils and restored several printed gaps; retained the unusual wording and the omitted printed (5) rather than inventing a marker."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-26-20260904",
+      "text_number": 26,
+      "text_id": "TXT-38224C3D66B4",
+      "expected_text_sha256": "054d53d5f0462b26be91d167b11cb9cb32bebe65e4b8a8b3ef57513bded99cf5",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-26.txt",
+      "corrected_content_sha256": "d3c1db429470668bf4acba5448311c2e48439b352193b7b209fb3676d5e459fb",
+      "pdf_pages": [
+        215
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored trailing gap after (7, 8); retained bracketed restorations, uncertain partial name, and edition's Yhwh/ YYYY distinctions."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-28-20260904",
+      "text_number": 28,
+      "text_id": "TXT-889DD1293A16",
+      "expected_text_sha256": "f75089239816a5a6a07276920fbed12a643cfb508d3602ba852a6b386591db36",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-28.txt",
+      "corrected_content_sha256": "1c456bd18dccca98a112da9565872df56990380a3a4e8463bc0c58adce3b0ce8",
+      "pdf_pages": [
+        219
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored multiple omitted gap markers throughout the damaged passage; no missing words supplied."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-30-20260904",
+      "text_number": 30,
+      "text_id": "TXT-9FDECC815421",
+      "expected_text_sha256": "8f53d52979c47d27998509fa59e82f0663c59b73a0a867dd46130a9566453715",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-30.txt",
+      "corrected_content_sha256": "ec85f74650def1a493e7e627df81aa2386bc26a056286dd8ee8a0a2d355da803",
+      "pdf_pages": [
+        227
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored final gap after in the name of; removed print line-end hyphenation from disturbing."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-31-20260904",
+      "text_number": 31,
+      "text_id": "TXT-965EC5A489F5",
+      "expected_text_sha256": "6e1fa1d7934d88e42ae53f275b9e15e6f07eb363ae88d128f88e373a45a86cd2",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-31.txt",
+      "corrected_content_sha256": "00a4494d93fd7a27d0e003c21107850355b66f5a6eee134bb9e7f05f01de5a4c",
+      "pdf_pages": [
+        229
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Removed stray OCR opening parenthesis before Dadbeh; retained the printed Dadbeh/Dahbeh variation and the magical letter strings in normalized form."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT-36-20260904",
+      "text_number": 36,
+      "text_id": "TXT-87766F8C4DB9",
+      "expected_text_sha256": "7d4910bac1e20adda7d682e24b4fa4c973c7265afc402df5fba09bda391331a5",
+      "corrected_content_path": "data/private/proofreading/montgomery/text-36.txt",
+      "corrected_content_sha256": "625883dbd176d9d3be1a16fe7ede1c5b339f7ff57f30a2c7ea8c8fdec0dcad15",
+      "pdf_pages": [
+        244
+      ],
+      "status": "reading_text_checked",
+      "correction_notes": "Restored the gap between and ... and; both conjunctions are printed, so neither was deleted. Standardized loss-marker dot runs."
+    }
+  ]
+}

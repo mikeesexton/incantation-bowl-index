@@ -1,0 +1,33 @@
+{
+  "source": {
+    "source_type": "museum_record",
+    "title": "Aramaic Incantation Bowls Project",
+    "authors": "Loyola Marymount University Archaeology Center",
+    "url": "https://bellarmine.lmu.edu/classics/archaeologycenter/archaeologymuseum/aramaicincantationbowlsproject/",
+    "citation": "Loyola Marymount University Archaeology Center. “Aramaic Incantation Bowls Project.” Accessed 4 September 2026.",
+    "access_status": "available",
+    "rights_status": "copyrighted",
+    "notes": "The museum project page states that four terracotta bowls are under conservation, translation, high-resolution imaging, and 3D documentation, but does not publish accession numbers or item-level records."
+  },
+  "summary": "One of four distinct terracotta incantation bowls documented as part of Loyola Marymount University's conservation and translation project.",
+  "default_claims": [
+    {"field": "current_location", "value_text": "Loyola Marymount University Archaeology Museum, Los Angeles"},
+    {"field": "material", "value_text": "Terracotta"},
+    {"field": "dating", "value_text": "circa 5th–6th centuries CE", "certainty": "reported"}
+  ],
+  "entries": [
+    {"designation": "LMU incantation bowl project component 1", "locator": "project page, bowl 1 of 4", "record_status": "candidate", "authenticity": "unassessed", "notes": "First of four bowls explicitly counted on the project page; ordinal is an internal disambiguator, not a museum accession number."},
+    {"designation": "LMU incantation bowl project component 2", "locator": "project page, bowl 2 of 4", "record_status": "candidate", "authenticity": "unassessed", "notes": "Second of four bowls explicitly counted on the project page; ordinal is an internal disambiguator, not a museum accession number."},
+    {"designation": "LMU incantation bowl project component 3", "locator": "project page, bowl 3 of 4", "record_status": "candidate", "authenticity": "unassessed", "notes": "Third of four bowls explicitly counted on the project page; ordinal is an internal disambiguator, not a museum accession number."},
+    {"designation": "LMU incantation bowl project component 4", "locator": "project page, bowl 4 of 4", "record_status": "candidate", "authenticity": "unassessed", "notes": "Fourth of four bowls explicitly counted on the project page; ordinal is an internal disambiguator, not a museum accession number."}
+  ],
+  "leads": [
+    {
+      "lead_type": "collection",
+      "description": "Obtain LMU Archaeology Museum accession numbers and item-level provenance, dimensions, scripts, texts, translations, images, and 3D records for the four-bowl project.",
+      "url": "https://bellarmine.lmu.edu/classics/archaeologycenter/archaeologymuseum/aramaicincantationbowlsproject/",
+      "status": "blocked",
+      "priority": 2
+    }
+  ]
+}
