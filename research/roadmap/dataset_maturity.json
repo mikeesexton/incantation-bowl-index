@@ -1,18 +1,21 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-05T19:47:34+00:00",
+  "updated_at": "2026-09-05T21:20:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
-      "Discovery is broad and reproducible: 752 sources and 1,610 appearances support 1,585 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule.",
+      "Discovery is broad and reproducible within the classes it searched: 752 sources and 1,610 appearances support 1,585 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes; printed editions and the bibliographic databases were not among them.",
       "The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.",
-      "Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media."
+      "Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.",
+      "The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed."
     ],
     "blockers": [
+      "The index was built from findable online records - 567 of 753 sources are museum records - while the field's primary evidence is printed editions. Seventeen foundational works, including Isbell 1975, Naveh and Shaked, Pognon 1898, Yamauchi 1967 and all of Gordon 1934-1984, have no source record; publications exist only as identifier prefixes.",
       "Identity and claim quality is not yet measured corpus-wide: 284 older field-difference decisions need evidence-level revalidation, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
       "Text and edition coverage remains sparse outside Montgomery: 312/791 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.",
       "Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.",
-      "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up."
+      "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
+      "The field model stops at the physical and bibliographic facets. People, ritual, intertexts, visual and scholarship claims exist in the corpus but sit outside coverage and conflict comparison, so the 134 Waller biblical quotations - the most analytically valuable material after Montgomery - are untracked."
     ]
   },
   "maturity_levels": [
@@ -167,7 +170,7 @@
           "status": "in_progress",
           "owner": "Research",
           "done_when": "At least 80% of probable/confirmed identities have either an edition reference or an explicit no-known-edition status, each with a source.",
-          "evidence": "312/791 probable/confirmed identities have publication-scheme identifiers (39.4%); this proxy does not yet verify edition locators or count sourced no-known-edition assessments. Align the metric with the task definition."
+          "evidence": "312/791 probable/confirmed identities have publication-scheme identifiers (39.4%). This proxy counts designations, not editions: the publications being designated have no records of their own (see SCHOL-004), so raising the number does not yet raise edition coverage. Re-specify the metric against resolved publication records and sourced no-known-edition assessments before treating it as a release gate."
         },
         {
           "id": "TEXT-002",
@@ -206,6 +209,56 @@
           "owner": "Research",
           "done_when": "A separate reviewer checks all 35 edited English texts against the scans, explicitly reviews names, magical formulas, gaps and restorations, and records disagreements or corrections without overwriting earlier reviews.",
           "evidence": "First scan-review pass complete for 35/35. No independent specialist certification or original-language verification is claimed; publication approval remains separate."
+        },
+        {
+          "id": "TEXT-007",
+          "title": "Grade object evidence A-D alongside identity status",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Every probable or confirmed identity carries an evidence grade on the scoping review's A-D scale, recorded per assertion and separately from record_status.",
+          "evidence": "record_status measures identity confidence; the A-D scale measures evidence quality. They are different axes and a confirmed identity can rest on a dealer photograph. Scale in docs/project-rules.md, from the review section 1.4."
+        }
+      ]
+    },
+    {
+      "id": "SCHOL",
+      "title": "Scholarly bibliography and published-corpus enumeration",
+      "scope": "Record the editions that actually publish bowls, as first-class sources with their own objects, access status and evidence grade. The index was built from findable online records; the field's primary evidence is printed editions.",
+      "current_level": 1,
+      "target_level": 3,
+      "steward": "Research",
+      "tasks": [
+        {
+          "id": "SCHOL-001",
+          "title": "Acquire Waller's 2025 publication list as a control list",
+          "status": "queued",
+          "owner": "Research owner",
+          "done_when": "Waller, 'The Aramaic Incantation Bowls: The State of the Art' (Marcus and Mokhtarian 2025, pp. 3-48) is held in full and its list of JBA bowl publications 1853-2024 is enumerated as source records with their object counts.",
+          "evidence": "Standing first acquisition priority in the July 2026 scoping review's Phase 1 and in its progress checkpoint. Only printed pp. 10-13 are currently archived, as a user-supplied excerpt. This is the nearest external control the field offers on what 'published' means, and therefore the only outside check on this index's discovery saturation. Lead IBI-LEAD-WALLER-2025-PUBLICATION-LIST."
+        },
+        {
+          "id": "SCHOL-002",
+          "title": "Seed the missing foundational bibliography",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every work named as foundational by the scoping review has a source record with a verified citation and access status, or an explicit reason it cannot be obtained.",
+          "evidence": "Seventeen named works have no author or title match in `sources`, including Ellis 1853, Pognon 1898, Myhrman 1909, Isbell 1975, Yamauchi 1967, Naveh and Shaked 1985/87 and 1993, Muller-Kessler 2005, and all of Gordon 1934-1984. Twenty-one seed records are staged in research/seeds/scholarly_bibliography_2026-09-05.jsonl with citations transcribed from the review and explicitly unverified; ten leads in research/leads/scholarly_bibliography_gaps_2026-09-05.jsonl. Not yet ingested."
+        },
+        {
+          "id": "SCHOL-003",
+          "title": "Run the bibliographic database sweep the review specifies",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "RAMBI, ATLA, Index Islamicus, L'Annee philologique, ProQuest Dissertations, WorldCat, Crossref and OpenAlex are each searched with saved query strings, dates and result counts, and the field's journal archives are swept by object siglum and opening formula as well as by keyword.",
+          "evidence": "The review's own 14-row search log is a targeted verification pass, not a sweep, and says so. The index's phase-one saturation covers twelve source classes, none of which is the bibliographic databases. Both gaps have the same shape."
+        },
+        {
+          "id": "SCHOL-004",
+          "title": "Make publications first-class records, not identifier prefixes",
+          "status": "queued",
+          "owner": "Engineering",
+          "done_when": "Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.",
+          "evidence": "`identifiers.source_id` correctly records who reported a designation. There is no record of the publication designated: 17 objects carry `Isbell 1975::NN`, 19 carry `MRLA 8::NN`, 2 carry `TMH 7::NN`, 8 carry `Naveh-Shaked 1985`/`1993`, and none of those four publications has a row in `sources`. Until this exists, publication_reference_pct measures designations, not editions."
         }
       ]
     },
@@ -255,6 +308,30 @@
           "owner": "Research",
           "done_when": "Every probable or confirmed identity with a findspot claim records whether the place derives from documented controlled excavation, a museum or accessions register, a dealer or market report, later scholarly inference, or unverified evidence; original place claims and uncertainty remain source-attributed.",
           "evidence": "Waller 2025, printed pp. 10–13, distinguishes documented excavation sites from unverified register and dealer provenances. BM 91711 has a separate source-attributed assessment marking its plausible Arban attribution unverified. Primary-source review of Schwab 1891 pp. 590–593 now enumerates three Dieulafoy mission Susiana bowls, N–P, with separate records, dimensions, and excavation-evidence assessments corroborated by Montgomery 1913 p. 19. Current museum accessions and precise contexts remain open."
+        },
+        {
+          "id": "META-006",
+          "title": "Extend the field model to the content facets",
+          "status": "queued",
+          "owner": "Mixed",
+          "done_when": "People, Ritual, Intertexts, Visual and Scholarship are modelled field groups with coverage reporting and conflict comparison, not stray claim names.",
+          "evidence": "The review's Phase 2 ledger specifies ten field groups; CORE_COVERAGE has seven, all physical or bibliographic. The claims already exist outside the model: 134 biblical_quotations from Waller 2022, 42 client, 27 text_purpose, 25 iconography, 16 handwriting_attribution, 10 formula_genre. None is counted, compared or queryable as a group."
+        },
+        {
+          "id": "META-007",
+          "title": "Separate the roles behind a named person",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Every person claim records which role the source assigns - author, textual voice, copyist, producer, commissioner, client, beneficiary - with its uncertainty, and contested attributions link to the scholarship that contests them.",
+          "evidence": "Eleven objects carry handwriting_attribution claims whose values are women's names, from Kedar 2019's contested female-authorship argument. Saar 2024 and Manekin-Bamberger 2025 respond by separating the roles. The field name asserts more than the source does; keep the claim, add the role and the dispute link."
+        },
+        {
+          "id": "META-008",
+          "title": "Bring Mandaic, Syriac and Pahlavi to parity",
+          "status": "queued",
+          "owner": "Research",
+          "done_when": "Each language group has enumerated corpora from its primary editions, and the 819 records with no language claim are assessed or explicitly marked unreadable or unknown.",
+          "evidence": "Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002."
         }
       ]
     },
@@ -359,7 +436,7 @@
           "status": "in_progress",
           "owner": "Research",
           "done_when": "All 313 reopened instances have source-level decisions on their exact current evidence, with append-only review history and explicit uncertainty preserved.",
-          "evidence": "304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata."
+          "evidence": "304 earlier field instances still need source-level revalidation. The current Penn review separately exposes 9 new differences, yielding 313 total pending. These queues are distinguished; dated museum concordance confirmation does not adjudicate their metadata. The denominator is bounded by the seven CORE_COVERAGE groups and is an undercount, not a measured total; do QA-008 first so this queue is not revalidated twice."
         },
         {
           "id": "QA-003",
@@ -400,6 +477,14 @@
           "owner": "Engineering",
           "done_when": "Scan-bound revision batches preserve original and corrected texts, reject stale evidence, and prevent OCR reimport from overwriting checked work.",
           "evidence": "Migration 006, thirty-five current scan-checked reading texts and passing regression tests; exact originals retained and private text histories redacted from research exports. Completion batch replays with zero changes."
+        },
+        {
+          "id": "QA-008",
+          "title": "Reconcile the claim vocabulary with the comparison model",
+          "status": "queued",
+          "owner": "Engineering",
+          "done_when": "Every claim field is either in a CORE_COVERAGE group or explicitly excluded with a recorded reason; a test fails when an unclassified field appears; and the conflict counts are reported against that full denominator.",
+          "evidence": "claims.field is free text and holds about 100 values, many synonyms - provenance / provenance_summary / provenance_quality, findspot / findspot_or_origin / findspot_evidence_level, client / clients / client_or_beneficiary. Only seven hard-coded groups are compared, so 205 catalogue_language_codes claims are invisible to both language coverage and conflict detection even where an edition-based inscription_language claim on the same object disagrees. The 337/284 queue is therefore an undercount by construction. dimensions_source_text is correctly excluded as a retained original string; note it records circumference, not diameter."
         }
       ]
     }
@@ -429,7 +514,7 @@
         "metric": "publication_reference_pct",
         "operator": ">=",
         "target": 0.8,
-        "description": "Publication-reference coverage reaches the operational threshold"
+        "description": "Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage"
       },
       {
         "metric": "media_rights_assessed_pct",
@@ -458,7 +543,10 @@
       "QA-002",
       "QA-003",
       "QA-004",
-      "QA-005"
+      "QA-005",
+      "SCHOL-002",
+      "SCHOL-004",
+      "QA-008"
     ]
   },
   "change_log": [
@@ -513,9 +601,16 @@
     {
       "date": "2026-09-05",
       "note": "Continued META-005 into the primary literature: visually checked Schwab 1891 pp. 590–593 and Montgomery 1913 p. 19, enumerated the three Dieulafoy mission Susiana bowls N–P as separate probable objects, and recorded exact dimensions, condition, beneficiary uncertainty, excavation events, and source-basis assessments. Modern museum accessions and trench-level contexts remain unresolved."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Imported the July 2026 systematic scoping review and checked the corpus against it. Added the SCHOL workstream, TEXT-007, META-006 to META-008 and QA-008. Findings: seventeen foundational editions absent from `sources`; publications modelled only as identifier prefixes, so publication_reference_pct measures designations rather than editions; the claim vocabulary has outgrown the seven hard-coded comparison groups, making the 337/284 conflict queue an undercount; the field model omits the review's People, Ritual, Intertexts, Visual and Scholarship groups; Mandaic and Pahlavi lag their working counts. Re-ordered priorities to put the control list and the comparison model ahead of queue depth. No corpus writes. Repository placed under version control - it had no commits - and `ibi state` now records a per-table fingerprint so two agents can detect corpus drift."
     }
   ],
   "priorities": [
+    "SCHOL-001: acquire Waller's 2025 publication list. It is a library request rather than weeks of work, it is the only external control on completeness the field offers, and it has been the standing first priority since July. How complete this index is remains guesswork until it arrives.",
+    "QA-008: reconcile the claim vocabulary with the comparison model before revalidating more of the conflict queue. Widening the model changes how many instances exist; doing it after means revalidating part of the queue twice.",
+    "SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.",
     "CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.",
     "META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.",
     "META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.",

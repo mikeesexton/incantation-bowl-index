@@ -14,6 +14,8 @@ The 4 September 2026 campaign produced 1,584 candidate records representing an e
 
 This is a maximum-recall research snapshot, not a claim of absolute completeness. The report preserves inaccessible catalogues, private-collection aggregates, uncertain concordances, and rights-restricted editions as explicit blocked leads.
 
+Saturation is bounded by the twelve source classes that were searched. Printed corpus editions and the bibliographic databases were not among them, and seventeen of the field's foundational publications have no source record. See the [scoping review alignment](data/reports/scoping_review_alignment_2026-09-05.md).
+
 ## Identity and enrichment status
 
 The current corpus contains **1,585 records representing 1,317 working identity hypotheses** (272 confirmed, 519 probable, 526 candidate), with 1,610 appearances from 752 sources. These are working research classifications, not an overall accuracy estimate. The latest source review checked all forty Montgomery register rows, added 125 source-attributed claims, completed scan review of all thirty-five available English translations, and separately recorded Appendix 42 as an uncertain possible bowl. The five entries without separate translations have source-located explanations. All forty Penn museum number concordances have also been checked individually against the current catalogue, with dated evidence retained. Independent second review and original-script verification remain outstanding.
@@ -41,6 +43,7 @@ All 325 media now have explicit rights-review holds, with **zero completed right
 - [British Museum item-page mappings](research/enrichment/british_museum_item_pages_2026-09-04.json)
 - [Montgomery text and concordance review](research/enrichment/montgomery_1913_review_2026-09-04.json)
 - [Montgomery enrichment report](data/reports/montgomery_1913_enrichment_2026-09-04.md)
+- [Scoping review alignment and corpus-scope findings](data/reports/scoping_review_alignment_2026-09-05.md)
 - [Living dataset-maturity roadmap](docs/dataset_maturity_roadmap.md)
 - [Historical claim-conflict triage report (superseded)](data/reports/claim_conflict_triage_2026-09-04.md)
 
@@ -57,6 +60,7 @@ python3 -m venv .venv
 . .venv/bin/activate
 python -m pip install -e .
 ibi init
+ibi state          # does the corpus match what the last session recorded?
 ibi seed-queries
 ibi stats
 ibi export --destination data/private/exports/latest
@@ -78,6 +82,18 @@ A physical bowl is not the same thing as a catalogue entry, auction lot, publica
 
 See [docs/research_protocol.md](docs/research_protocol.md) for the discovery and deduplication protocol.
 
+## Working here
+
+Two AI agents share this repository — Claude Code and Codex — alongside Mike.
+[`docs/project-rules.md`](docs/project-rules.md) is the single source of truth for how work is
+done; `CLAUDE.md` and `AGENTS.md` are parity-kept extracts of it. Open every session with
+`ibi state`, which compares the working database against the fingerprint recorded in the tracked
+`data/db-state.json` — the corpus is not in Git, so a clean working tree does not mean an
+unchanged corpus. Close every session with a `task-log.md` entry and a commit.
+
+The field-level counterpart to this object-level corpus is the July 2026 systematic scoping
+review in [`research/literature/`](research/literature/README.md).
+
 ## Repository boundaries
 
 - `migrations/` contains the versioned SQLite schema.
@@ -85,6 +101,8 @@ See [docs/research_protocol.md](docs/research_protocol.md) for the discovery and
 - `research/` contains checked source manifests, search logs, coverage assessments, saturation measurements, and audit records.
 - `data/exports/` contains historical research snapshots; `data/reports/` contains aggregate reports. Historical exports are not publication-cleared.
 - `data/private/ibi.sqlite3` and `data/private/archive/` are intentionally ignored because they contain the mutable research database and private evidence captures.
+- `research/literature/` holds the July 2026 scoping review, its bibliography control, and its search log.
+- `data/exports/latest/` and the `dedupe_candidates`/`dedupe_evidence` dumps are ignored as regenerable intermediates; the dated snapshots are kept.
 
 Research exports retain text-row provenance and rights metadata but blank content unless its record is explicitly marked `public_ok`; raw source payloads also remain private. Media URLs, capture metadata, and free-text fields still require a separate release review. Historical “public-safe” labels overstate this boundary. Keep refreshed full research exports private; the separate public-export path applies a narrower set of publication gates. The private database remains the authoritative store for restricted research material.
 

@@ -48,9 +48,18 @@ the dated reports under `data/reports/`.
   `CLAUDE.md` and `AGENTS.md` as parity-kept extracts pointing at it. The
   original research rules from `AGENTS.md` are preserved verbatim in §1.
   `tests/test_agent_docs_parity.py` fails if the two drift.
-- Reviewed the corpus against the scoping review and added a `SCHOL` workstream
-  plus seven tasks. Findings are written up in
-  `data/reports/scoping_review_alignment_2026-09-05.md`.
+- Reviewed the corpus against the scoping review and wrote up six findings in
+  `data/reports/scoping_review_alignment_2026-09-05.md`. Added a `SCHOL`
+  workstream and nine tasks (`SCHOL-001`–`004`, `TEXT-007`, `META-006`–`008`,
+  `QA-008`), re-ordered the priorities, and qualified two claims that were
+  reading as stronger than the evidence: discovery saturation is bounded by the
+  twelve searched source classes, and the 337/284 conflict queue is an
+  undercount bounded by seven hard-coded field groups.
+- Headline finding: the index was built from what is findable online — 567 of
+  753 sources are museum records — while the field's primary evidence is
+  printed editions. Seventeen foundational works have no source record, and
+  publications exist only as identifier prefixes: 17 objects carry
+  `Isbell 1975::NN` and Isbell 1975 has no row.
 - Deliberately **not** done: no writes to the corpus. The bibliography seed
   manifest is staged as `research/seeds/scholarly_bibliography_2026-09-05.jsonl`
   but not ingested, because the previous session's state is the baseline and
