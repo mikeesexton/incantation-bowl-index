@@ -57,6 +57,7 @@ The rules most easily broken in practice. Full text in
 | identity, dedupe, or concordances | `docs/research_protocol.md`, then `docs/conflict_review_workflow.md` |
 | claims about origin, date, or findspot | `docs/project-rules.md` → Evidence grades |
 | people named on a bowl | `docs/project-rules.md` → Separate the roles behind a name |
+| publishing any bowl text | `docs/project-rules.md` → Publishing text: what belongs to whom |
 | language or script | `docs/project-rules.md` → Script is not religion |
 | images, texts, or anything outward-facing | `docs/evidence_review_and_release.md` |
 | the scholarly literature | `research/literature/README.md` |

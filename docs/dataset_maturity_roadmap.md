@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-05T21:05:08+00:00`
+Generated: `2026-09-05T21:30:56+00:00`
 
 ## Portfolio status
 
@@ -10,9 +10,9 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 11 done · 14 in progress · 21 queued · 0 blocked |
+| Roadmap tasks | 12 done · 14 in progress · 22 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
-| Required handoff tasks complete | 4/23 |
+| Required handoff tasks complete | 4/24 |
 
 ### What is solid
 
@@ -20,6 +20,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
 - The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.
+- The public boundary is now positive rather than merely defensive: 45 texts are published on a stated rights basis with their editorial state declared, and every one of the 151 withheld texts still names its edition, exact locator and link so a reader can consult it.
 
 ### What prevents release readiness
 
@@ -48,7 +49,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | All identities with a publication reference | 391/1320 (29.6%) |
 | Probable/confirmed identities with a publication reference | 312/794 (39.3%) |
 | Identities with a translation | 48 |
-| Scan-checked normalized reading texts | 35 |
+| Scan-checked normalized reading texts | 0 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 1 |
@@ -107,16 +108,17 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 1. SCHOL-001: acquire Waller's 2025 publication list. It is a library request rather than weeks of work, it is the only external control on completeness the field offers, and it has been the standing first priority since July. How complete this index is remains guesswork until it arrives.
 2. QA-008: reconcile the claim vocabulary with the comparison model before revalidating more of the conflict queue. Widening the model changes how many instances exist; doing it after means revalidating part of the queue twice.
 3. SCHOL-002: ingest the staged bibliography seed and verify its citations. Twenty-one records and ten leads are prepared and deliberately not applied.
-4. CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.
-5. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
-6. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
-7. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
-8. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
-9. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
-10. RIGHTS-002: investigate actual reuse evidence for the 325 media holds. Export safeguards are implemented; rights clearance is still 0/325. Do not substitute old copyright labels for assessment.
-11. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
-12. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
-13. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
+4. RIGHTS-002: with texts now gated by a working ledger, media are the remaining hard block at 0/325. The same evidence-bound pattern applies; start with the 288 Penn images, which have a single rights holder and a single policy to establish.
+5. CONC-005 / QA-002: continue the 284 earlier evidence-level revalidation cases in coherent source batches; retain each reported source value. The nine new Penn differences and a twenty-case same-source facet batch now have current decisions.
+6. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
+7. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
+8. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
+9. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
+10. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
+11. RIGHTS-002: investigate actual reuse evidence for the 325 media holds. Export safeguards are implemented; rights clearance is still 0/325. Do not substitute old copyright labels for assessment.
+12. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
+13. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
+14. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
 
 ## Task register
 
@@ -183,6 +185,9 @@ Record where editions, transliterations, translations, incipits, and commentary 
 - [ ] **TEXT-007 — Grade object evidence A-D alongside identity status** · Queued · Research
   - Done when: Every probable or confirmed identity carries an evidence grade on the scoping review's A-D scale, recorded per assertion and separately from record_status.
   - Evidence/status: record_status measures identity confidence; the A-D scale measures evidence quality. They are different axes and a confirmed identity can rest on a dealer photograph. Scale in docs/project-rules.md, from the review section 1.4.
+- [x] **TEXT-008 — Publish text on a recorded basis and point at the rest** · Done · Engineering
+  - Done when: Text is public only through an evidence-bound publication decision that states a rights basis and the editorial state of the stored row, and every withheld text keeps its citation, locator, link and access status in the public dataset.
+  - Evidence/status: Migration 011 adds an append-only text publication ledger; approvals are bound to a content fingerprint so a later proofreading revision revokes them automatically, verified by test. 45 texts approved: Montgomery's 35 scan-checked English reading texts on public_domain_expired, and 10 index summaries on own_work restoring their prior public state under the new rule. 151 withheld rows all carry citation and locator, 146 also a resolvable link; the 5 without one fail closed because their source URL matches a private capture. A new editions table names 476 publication locations across 472 objects. Media remain 0/325 approved.
 
 ### SCHOL — Scholarly bibliography and published-corpus enumeration
 
@@ -242,6 +247,9 @@ Build a rights ledger before copying images into the corpus or exposing any medi
 - [x] **RIGHTS-003 — Separate private thumbnails from public media exports** · Done · Engineering
   - Done when: A separate public-export path excludes unapproved media URLs/bytes and private source payloads, with regression tests. Any later public dashboard must consume that reviewed projection and receive its own release check.
   - Evidence/status: Added separate allowlist-based export-public reference scaffold: excludes captures, private payloads, claim content, notes and review histories; text public_ok and current per-media approval are separate gates. Tests cover stale approval, revocation, duplicate URLs, known private references and residual destination files. Live validation withheld all 325 media. No public dashboard is deployed.
+- [ ] **RIGHTS-004 — Restore links for sources whose URL matches a private capture** · Queued · Engineering
+  - Done when: A source's public page URL can be published as an access pointer without being suppressed merely because the page was also archived privately, while capture storage paths and unapproved media URLs stay forbidden.
+  - Evidence/status: The export guard forbids any string matching a capture URL. That is correct for media and archive paths but suppresses 5 legitimate bibliographic links, since a public page URL reveals nothing about the archive. Narrow the guard to storage paths and media URLs.
 
 ### OPS — Mac mini continuous operations
 
@@ -326,6 +334,7 @@ Overall gate: **NOT READY**
 - [ ] SCHOL-002 — Seed the missing foundational bibliography
 - [ ] SCHOL-004 — Make publications first-class records, not identifier prefixes
 - [ ] QA-008 — Reconcile the claim vocabulary with the comparison model
+- [ ] RIGHTS-004 — Restore links for sources whose URL matches a private capture
 
 ### What crosses the threshold
 
@@ -359,3 +368,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** Reviewed a user-provided excerpt of Waller's 2025 excavation-site survey (printed pp. 10–13) and added META-005 to distinguish documented excavation from museum-register, dealer, inferred and unverified provenance. Archived the excerpt privately by hash, added a non-destructive assessment to BM 91711's plausible but unverified Arban claim, and opened focused Arban, Susa and corpus-wide findspot-audit leads.
 - **2026-09-05:** Continued META-005 into the primary literature: visually checked Schwab 1891 pp. 590–593 and Montgomery 1913 p. 19, enumerated the three Dieulafoy mission Susiana bowls N–P as separate probable objects, and recorded exact dimensions, condition, beneficiary uncertainty, excavation events, and source-basis assessments. Modern museum accessions and trench-level contexts remain unresolved.
 - **2026-09-05:** Imported the July 2026 systematic scoping review and checked the corpus against it. Added the SCHOL workstream, TEXT-007, META-006 to META-008 and QA-008. Findings: seventeen foundational editions absent from `sources`; publications modelled only as identifier prefixes, so publication_reference_pct measures designations rather than editions; the claim vocabulary has outgrown the seven hard-coded comparison groups, making the 337/284 conflict queue an undercount; the field model omits the review's People, Ritual, Intertexts, Visual and Scholarship groups; Mandaic and Pahlavi lag their working counts. Re-ordered priorities to put the control list and the comparison model ahead of queue depth. No corpus writes. Repository placed under version control - it had no commits - and `ibi state` now records a per-table fingerprint so two agents can detect corpus drift.
+- **2026-09-05:** Added an append-only text publication ledger (migration 011) and `ibi ingest-text-publication`. Approved 45 texts: Montgomery's 35 scan-checked English reading texts as expired US copyright, and 10 index summaries as own work, each recording a rights basis, an attribution and an explicit editorial status. Approvals are bound to the text's content fingerprint, so the outstanding TEXT-006 specialist review will revoke them rather than silently changing published text. Extended the public export so a withheld text keeps its citation, locator, link and access status, and added an editions table naming 476 publication locations across 472 objects. Untracked the dated research snapshots and published the gated projection at data/public/2026-09-05 instead.

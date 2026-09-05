@@ -1,0 +1,50 @@
+{
+  "export_policy": "Reference scaffold with explicit text and media gates. Not a certification of scholarly accuracy. No capture records/files, claim payloads, notes, raw JSON, or review history. No public dashboard is deployed. A withheld text keeps its citation, locator and link so a reader can consult the edition; the editions table names where each object has been published.",
+  "generated_at": "2026-09-05T21:29:52+00:00",
+  "media_approved_rows": 0,
+  "media_withheld_rows": 325,
+  "tables": {
+    "appearance_object_links": {
+      "csv": "appearance_object_links.csv",
+      "jsonl": "appearance_object_links.jsonl",
+      "rows": 1616
+    },
+    "appearances": {
+      "csv": "appearances.csv",
+      "jsonl": "appearances.jsonl",
+      "rows": 1616
+    },
+    "editions": {
+      "csv": "editions.csv",
+      "jsonl": "editions.jsonl",
+      "rows": 476
+    },
+    "identity_clusters": {
+      "csv": "identity_clusters.csv",
+      "jsonl": "identity_clusters.jsonl",
+      "rows": 1320
+    },
+    "media": {
+      "csv": "media.csv",
+      "jsonl": "media.jsonl",
+      "rows": 0
+    },
+    "objects": {
+      "csv": "objects.csv",
+      "jsonl": "objects.jsonl",
+      "rows": 1588
+    },
+    "sources": {
+      "csv": "sources.csv",
+      "jsonl": "sources.jsonl",
+      "rows": 753
+    },
+    "texts": {
+      "csv": "texts.csv",
+      "jsonl": "texts.jsonl",
+      "rows": 196
+    }
+  },
+  "texts_included_rows": 45,
+  "texts_withheld_rows": 151
+}

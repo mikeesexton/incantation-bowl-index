@@ -30,6 +30,7 @@ from .roadmap import write_roadmap
 from .proofreading import apply_proofreading
 from .rights import apply_rights_batch
 from .public_export import export_public
+from .publication import apply_publication_batch, publication_metrics
 from .claim_corrections import apply_locator_corrections
 from .cohort import write_montgomery_cohort, apply_montgomery_register
 from .concordance import apply_concordance_review
@@ -68,6 +69,10 @@ def build_parser():
         help="record source-reported object relationships without merging identities",
     )
     relationships.add_argument("path")
+    approve_texts = sub.add_parser(
+        "ingest-text-publication", help="apply evidence-bound text publication decisions"
+    )
+    approve_texts.add_argument("path")
     rights = sub.add_parser("ingest-rights-review", help="apply evidence-bound media-rights decisions")
     rights.add_argument("path")
     corrections = sub.add_parser("ingest-locator-corrections", help="apply citation-pointer repairs with immutable originals")
@@ -196,6 +201,9 @@ def main(argv=None):
         print(json.dumps(apply_concordance_review(conn, args.path), indent=2, sort_keys=True))
     elif args.command == "ingest-relationship-review":
         print(json.dumps(apply_relationship_review(conn, args.path), indent=2, sort_keys=True))
+    elif args.command == "ingest-text-publication":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(apply_publication_batch(conn, review), indent=2, sort_keys=True))
     elif args.command == "ingest-rights-review":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_rights_batch(conn, review), indent=2, sort_keys=True))

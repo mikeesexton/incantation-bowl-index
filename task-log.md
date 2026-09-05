@@ -25,6 +25,47 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Publish 45 texts on a recorded basis; make the repo public-ready
+
+**Claimed:** TEXT-008 (new), RIGHTS-004 (new, queued)
+**Corpus:** changed (45 text publication approvals; no claims, identities or media touched) — state digest `220020601c92`
+**Tests:** 106 passed (94 before; +12 for the publication ledger and access pointers)
+
+- Audited the whole tree for a public push. Clean on secrets, personal data,
+  images, and archived bytes: the Waller 2025 excerpt, the Montgomery scans and
+  the corrected translations are all tracked as hashes and paths only.
+- The one real exposure was the two dated export snapshots — 334 claims and
+  ~62,000 characters of museum catalogue prose, some of it embedding verbatim
+  scholarly translations, from sources whose rights are `unknown` or
+  `copyrighted`. Untracked them (files kept on disk, regenerable with
+  `ibi export`) and published the gated projection at `data/public/2026-09-05`
+  instead, 2.1 MB.
+- Added migration 011 and `ibi ingest-text-publication`: an append-only ledger
+  where a text goes public only on a stated rights basis, with attribution and
+  an explicit editorial status. Approvals are bound to the text's content
+  fingerprint, so the outstanding `TEXT-006` specialist review revokes them
+  rather than silently altering published text.
+- Approved 45 texts: Montgomery's 35 scan-checked English reading texts
+  (`public_domain_expired` — pre-1930 US publication) and 10 index summaries
+  (`own_work`). The summaries needed their own batch because the first sync
+  correctly revoked them: they had carried `public_ok=1` with no recorded
+  decision. Scope was held to what was already public plus Montgomery; the
+  other 66 summary rows stay withheld pending their own decision.
+- Every withheld text now points at its source: 151/151 keep citation and exact
+  locator, 146 also carry a resolvable link. The 5 without one fail closed
+  because their source URL matches a private capture — logged as `RIGHTS-004`,
+  since a public page URL reveals nothing about the archive.
+- Added an `editions` table to the public export: 476 publication locations
+  across 472 objects, so an object with no publishable text still says where it
+  has been published.
+- Wrote the three-layer text rule into `docs/project-rules.md` — the ancient
+  text is free, a modern transcription and translation are not, and facts about
+  a text always are. Moved the provenance disclaimer to the top of the README.
+- Deliberately **not** done: no media approved (still 0/325), no bibliography
+  seed ingested, no claim data published.
+- Next: `RIGHTS-002` for the 288 Penn images, which have one rights holder and
+  one policy to establish, then `SCHOL-001`.
+
 ## 2026-09-05 — Claude — Import the scoping review; put the repo under version control
 
 **Claimed:** none (no corpus work)

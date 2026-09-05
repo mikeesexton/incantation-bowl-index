@@ -17,3 +17,8 @@ data/exports/latest/
 # ~100 MB to history across the dated snapshots.
 data/exports/**/dedupe_candidates.*
 data/exports/**/dedupe_evidence.*
+
+# Dated research snapshots stay local. They are full-corpus dumps whose free-text
+# fields, catalogue descriptions and media URLs have had no release review — the
+# export manifest says so. The reviewed, gated projection lives in data/public/.
+data/exports/*/

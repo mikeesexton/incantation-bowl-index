@@ -1,10 +1,10 @@
 {
-  "corpus_digest": "10651612823fb0640586e4a6d9e89fcccfd1cf8508741f76dedaa8ed2a094f86",
-  "migrations": 10,
-  "note": "Baseline recorded at first commit; corpus as left by the 2026-09-05 Schwab/Susa session",
-  "recorded_at": "2026-09-05T20:55:48+00:00",
-  "recorded_by": "codex",
-  "schema_version": "010_object_relationship_assertions",
+  "corpus_digest": "220020601c9290def0d9c925645d561e844779b14653606fab82f587c0641998",
+  "migrations": 11,
+  "note": "Approved 45 texts for publication (35 Montgomery, 10 index summaries); no scholarly claims changed",
+  "recorded_at": "2026-09-05T21:30:57+00:00",
+  "recorded_by": "claude",
+  "schema_version": "011_text_publication_ledger",
   "tables": {
     "appearance_object_links": {
       "digest": "afe86237378d1c77dfed5d69c18640ec658e729a2df42b7a33492c795ea01549",
@@ -91,8 +91,8 @@
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "9b3d034b50f8ed3f5b5efbd1db96ae06066e22fd5ed0524200b8039031baefa4",
-      "rows": 10
+      "digest": "712e830a7a96a71196fb61a1975f17978a784223580af36044de01d908e7f1cb",
+      "rows": 11
     },
     "search_queries": {
       "digest": "984f961af8e032aed37337ddec7b944378de08f4748dc2edb820cfbf9227faa2",
@@ -110,8 +110,12 @@
       "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",
       "rows": 35
     },
+    "text_publication_reviews": {
+      "digest": "045cd92f5a73a5e8a7433ec3bcb36639f61aeceb73a749afbe1a941141266752",
+      "rows": 45
+    },
     "texts": {
-      "digest": "ac043b9bc46c120fa7d65af6ef5b4b9aebb8c0018231672e064b42281a16727c",
+      "digest": "c80c50c1a81447ed3883811eb745cf47c4e7fd65b851b7af570c169f211c1136",
       "rows": 196
     }
   }

@@ -1,15 +1,23 @@
 # Incantation Bowl Index
 
-An evidence-first, local research corpus for identifying and reconciling every traceable incantation bowl, fragment, lost object, auction appearance, disputed example, suspected fake, and pseudo-script specimen.
+An evidence-first research corpus for identifying and reconciling every traceable incantation bowl, fragment, lost object, auction appearance, disputed example, suspected fake, and pseudo-script specimen.
 
-This repository contains the schema, research tooling, source manifests, and reproducible reports. The working SQLite database and downloaded evidence archive are private and ignored by Git.
+## What this index is not
+
+**Listing an object here is not a statement about its ownership, export history, or authenticity.** Provenance fields record what a source reports, nothing more. A dealer's stated findspot is a dealer's claim; a museum register is a museum's record; neither is an archaeological fact, and the index keeps them apart. Many bowls in this corpus left Iraq without documentation, and a substantial number cannot support any household, depositional, or geographic argument at all.
+
+This is a scholarly finding aid. It is not a market resource, and it does not authenticate, value, or legitimize anything.
+
+**On texts.** The ancient Aramaic on a bowl belongs to nobody. A modern scholar's transcription and translation of it are their work: reading damaged letters, restoring gaps, and dividing words are editorial judgments, and a translation is a derivative work. So this index publishes text only where the edition is out of copyright, openly licensed, or the index's own. Everywhere else it publishes the citation, the exact locator, and a link, so a reader can go and read it. See [`docs/project-rules.md`](docs/project-rules.md).
+
+This repository contains the schema, research tooling, source manifests, reproducible reports, and the gated public dataset. The working SQLite database and downloaded evidence archive are private and ignored by Git.
 
 ## Phase-one discovery snapshot
 
 The 4 September 2026 campaign produced 1,584 candidate records representing an estimated 1,357 distinct physical objects after 227 exact, evidenced duplicate resolutions. It records 1,586 source appearances from 730 sources. All 12 planned source-class targets are searched or explicitly blocked, every object has evidence, and two independent broad sweeps met the under-1% saturation rule.
 
 - [Discovery campaign report](data/reports/discovery_campaign_2026-09-04.md)
-- [Historical CSV/JSONL research export (not publication-cleared)](data/exports/phase-one-2026-09-04/manifest.json)
+- [Public dataset](data/public/2026-09-05/manifest.json) — the reviewed, gated projection. The full research snapshot stays local; regenerate it with `ibi export`.
 - [Research and deduplication protocol](docs/research_protocol.md)
 
 This is a maximum-recall research snapshot, not a claim of absolute completeness. The report preserves inaccessible catalogues, private-collection aggregates, uncertain concordances, and rights-restricted editions as explicit blocked leads.
@@ -38,7 +46,7 @@ All 325 media now have explicit rights-review holds, with **zero completed right
 - [First BM revalidation batch](data/reports/bm_three_bowl_revalidation_2026-09-04.md)
 - [Evidence-bound review workflow](docs/conflict_review_workflow.md)
 - [Current cited conflict revalidation queue](data/reports/claim_conflict_revalidation_current.md)
-- [Historical identity-level research export (not publication-cleared)](data/exports/identity-enrichment-2026-09-04/manifest.json)
+- [Public dataset manifest and gates](data/public/2026-09-05/manifest.json)
 - [Checked identity review decisions](research/reviews/identity_review_2026-09-04.jsonl)
 - [British Museum item-page mappings](research/enrichment/british_museum_item_pages_2026-09-04.json)
 - [Montgomery text and concordance review](research/enrichment/montgomery_1913_review_2026-09-04.json)
@@ -99,10 +107,10 @@ review in [`research/literature/`](research/literature/README.md).
 - `migrations/` contains the versioned SQLite schema.
 - `src/bowl_index/` contains ingestion, collection, archive, dedupe, export, and reporting code.
 - `research/` contains checked source manifests, search logs, coverage assessments, saturation measurements, and audit records.
-- `data/exports/` contains historical research snapshots; `data/reports/` contains aggregate reports. Historical exports are not publication-cleared.
+- `data/public/<date>/` is the reviewed, gated dataset produced by `ibi export-public`; `data/reports/` contains aggregate reports. `data/exports/` holds local full-corpus research snapshots and is not tracked: their free-text fields, catalogue descriptions, and media URLs have had no release review.
 - `data/private/ibi.sqlite3` and `data/private/archive/` are intentionally ignored because they contain the mutable research database and private evidence captures.
 - `research/literature/` holds the July 2026 scoping review, its bibliography control, and its search log.
-- `data/exports/latest/` and the `dedupe_candidates`/`dedupe_evidence` dumps are ignored as regenerable intermediates; the dated snapshots are kept.
+- `data/exports/` is ignored in full, as are the `dedupe_candidates`/`dedupe_evidence` dumps. Regenerate with `ibi export`.
 
 Research exports retain text-row provenance and rights metadata but blank content unless its record is explicitly marked `public_ok`; raw source payloads also remain private. Media URLs, capture metadata, and free-text fields still require a separate release review. Historical “public-safe” labels overstate this boundary. Keep refreshed full research exports private; the separate public-export path applies a narrower set of publication gates. The private database remains the authoritative store for restricted research material.
 

@@ -67,6 +67,51 @@ a female scribe; a client named on a bowl is not its author; a "rabbi" in a bowl
 may be the client. Where a source makes an attribution, store *that source's*
 attribution with its role and its uncertainty, and do not upgrade it.
 
+### Publishing text: what belongs to whom
+
+Three layers sit on every published bowl, and only the first is free.
+
+| Layer | Whose |
+|---|---|
+| The Aramaic written on the clay | Nobody's. ~1,500 years old. |
+| A scholar's transcription of it | Usually theirs. Reading damaged letters, restoring gaps, and dividing words are editorial judgments. |
+| A scholar's translation | Theirs. A translation is a derivative work. |
+| Their analysis | Theirs. |
+
+So the boundary is **not** "text yes, analysis no". A modern edition's transcription
+and translation are the part their judgment created, and Germany has an explicit
+right for scholarly editions of public-domain works.
+
+Text is published only on a recorded basis:
+
+- `public_domain_expired` — pre-1930 US publication. Montgomery 1913, Pognon 1898,
+  Myhrman 1909, Schwab 1891, Ellis 1853: the whole early corpus.
+- `open_license` — Waller 2022 (Open Book Publishers), Abudraham 2026, and other
+  open-access editions, on their own licence terms and with attribution.
+- `permission` — written, with a locator.
+- `own_work` — the index's own summaries and any reading we make from our own images.
+
+Everywhere else, **withhold the text and point at it**. A withheld row keeps its
+`text_type`, language, script, editor, the exact locator, the citation, a resolvable
+link, and the source's access status. A reader must always be able to find the text
+even when they cannot read it here. The `editions` table does the same at object
+level: which publications carry this bowl, and where.
+
+Facts about a text are always publishable. "This bowl quotes Zechariah 3:2",
+the client's name, the line count, the formula type, the demons invoked — those are
+facts, not the editor's expression. That is why Waller 2022's biblical-quotation
+data is in the public dataset while his prose is not.
+
+A source's copyright status is necessary but not sufficient. The editorial state of
+the stored row is declared too, because a normalized reading text produced from a
+scan is not the same object as the printed page. Approvals are bound to a content
+fingerprint: a later proofreading revision revokes the approval automatically rather
+than carrying it silently onto changed text.
+
+Record decisions with `ibi ingest-text-publication` against a manifest under
+`research/reviews/`. Never set `texts.public_ok` by hand — it is derived from the
+ledger and will be overwritten on the next sync.
+
 ### Script is not religion
 
 Script is evidence for a scribal tradition, not proof of the religion of a
