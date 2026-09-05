@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Attribute the project to Moses Gabai
+
+**Claimed:** none
+**Corpus:** changed (45 reissued publication decisions; no scholarly values altered)
+**Tests:** 106 passed
+
+- The project is published under the scholarly name **Moses Gabai**. Copyright
+  lines, the CC BY 4.0 attribution string, the README, `docs/licensing.md` and
+  the `ibi export-public` manifest all now read `Gabai, Moses`.
+- Reissued the 45 text publication decisions under that name. The ledger is
+  append-only, so the original rows stay: the reissued entries carry `-V2` IDs
+  and byte-identical decisions, rights bases, attributions, editorial statuses
+  and evidence fingerprints. Only the recorded reviewer name differs. Ledger is
+  now 90 rows, 45 current; `public_ok` is unchanged at 45 and replay is a no-op.
+- Rewrote author and committer on all commits. The public history had carried a
+  personal legal name and a personal email address; it now reads
+  `Moses Gabai <114828727+mikeesexton@users.noreply.github.com>`. Force-pushed;
+  the repository had 0 forks, 0 stars and 0 watchers at the time.
+  **Commit hashes changed again — re-clone rather than pull.**
+- Not resolved: the GitHub account and repository URL are still `mikeesexton`,
+  so the pseudonym is partial. Separating those means a new account or an
+  organisation, and a transfer or re-push. Flagged for a decision.
+- `git config user.name/user.email` are set locally in this repository only, so
+  other repositories on this machine are unaffected.
+
 ## 2026-09-05 — Claude — Add MIT and CC BY 4.0, and correct a licence overstatement
 
 **Claimed:** none
