@@ -66,6 +66,49 @@ def capture_url(conn, url, source_id=None, rights_status="unknown", archive_root
     return dict(row)
 
 
+def capture_file(conn, path, source_id=None, rights_status="unknown", note=None,
+                 archive_root=None):
+    """Archive a document supplied by the researcher rather than fetched.
+
+    Same content-addressed store as `capture_url`, but the URL slot records a
+    deposit marker instead of a fetch target. Nothing here made an access-control
+    decision: the project did not retrieve this file, so no robots check applies
+    and none is implied.
+    """
+    path = Path(path).expanduser()
+    body = path.read_bytes()
+    digest = hashlib.sha256(body).hexdigest()
+    root = Path(archive_root or Path(__file__).resolve().parents[2] / "data" / "private" / "archive")
+    destination = root / "sha256" / digest[:2] / digest
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    if not destination.exists():
+        destination.write_bytes(body)
+
+    marker = "local-deposit:%s" % path.name
+    suffix = path.suffix.lower()
+    mime_type = {".pdf": "application/pdf", ".txt": "text/plain",
+                 ".json": "application/json"}.get(suffix, "application/octet-stream")
+    headers = {
+        "deposit": "researcher-supplied local file",
+        "deposited_at": _utcnow(),
+        "original_filename": path.name,
+        "note": note or "",
+        "retrieval": "not fetched by this project; no robots or access-control decision was made",
+    }
+    conn.execute(
+        "INSERT OR IGNORE INTO captures "
+        "(id, source_id, url, retrieved_at, mime_type, status_code, sha256, byte_length, "
+        "storage_path, rights_status, headers_json) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+        (
+            new_id("capture"), source_id, marker, _utcnow(), mime_type, None, digest, len(body),
+            str(destination.relative_to(root)), rights_status, json.dumps(headers, sort_keys=True),
+        ),
+    )
+    conn.commit()
+    row = conn.execute("SELECT * FROM captures WHERE url=? AND sha256=?", (marker, digest)).fetchone()
+    return dict(row)
+
+
 def verify_archive(conn, archive_root=None):
     root = Path(archive_root or Path(__file__).resolve().parents[2] / "data" / "private" / "archive")
     problems = []

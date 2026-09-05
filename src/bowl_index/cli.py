@@ -2,7 +2,7 @@ import argparse
 import json
 from pathlib import Path
 
-from .archive import capture_url, verify_archive
+from .archive import capture_file, capture_url, verify_archive
 from .collectors import (
     collect_apotropaic, collect_british_museum_related, collect_met, collect_penn,
     collect_nli, collect_schoyen, load_british_museum_page_mappings,
@@ -117,6 +117,13 @@ def build_parser():
     capture.add_argument("url")
     capture.add_argument("--source-id")
     capture.add_argument("--rights-status", default="unknown")
+    deposit = sub.add_parser(
+        "deposit", help="archive a researcher-supplied local document by content hash"
+    )
+    deposit.add_argument("path")
+    deposit.add_argument("--source-id")
+    deposit.add_argument("--rights-status", default="unknown")
+    deposit.add_argument("--note")
     sub.add_parser("verify-archive", help="verify every archived file against its manifest hash")
     sub.add_parser(
         "enrich", help="derive conservative source-preserving normalized claims"
@@ -259,6 +266,10 @@ def main(argv=None):
         ))
     elif args.command == "capture":
         print(json.dumps(capture_url(conn, args.url, args.source_id, args.rights_status), indent=2, sort_keys=True))
+    elif args.command == "deposit":
+        print(json.dumps(capture_file(
+            conn, args.path, args.source_id, args.rights_status, args.note
+        ), indent=2, sort_keys=True))
     elif args.command == "verify-archive":
         problems = verify_archive(conn)
         print(json.dumps({"problems": problems, "valid": not problems}, indent=2))

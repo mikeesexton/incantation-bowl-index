@@ -22,7 +22,7 @@ The 4 September 2026 campaign produced 1,584 candidate records representing an e
 
 This is a maximum-recall research snapshot, not a claim of absolute completeness. The report preserves inaccessible catalogues, private-collection aggregates, uncertain concordances, and rights-restricted editions as explicit blocked leads.
 
-Saturation is bounded by the twelve source classes that were searched. Printed corpus editions and the bibliographic databases were not among them, and seventeen of the field's foundational publications have no source record. See the [scoping review alignment](data/reports/scoping_review_alignment_2026-09-05.md).
+Saturation is bounded by the twelve source classes that were searched. Measured against the field's own control list — Waller's list of JBA bowl publications 1853–2024 — **the index holds 46 of 115, or 40%**. Printed corpus editions and the bibliographic databases were not among the searched classes, and Gordon alone accounts for eight missing publications. See the [control-list measurement](data/reports/waller_control_list_2026-09-05.md) and the [scoping review alignment](data/reports/scoping_review_alignment_2026-09-05.md).
 
 ## Identity and enrichment status
 

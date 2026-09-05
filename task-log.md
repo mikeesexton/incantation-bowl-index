@@ -25,6 +25,48 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — SCHOL-001: the index has an external yardstick
+
+**Claimed:** SCHOL-001 (in progress; the ingest is SCHOL-002)
+**Corpus:** changed (one archive deposit; no claims, identities, texts or media) — state digest `979e2e9d7aab`
+**Tests:** 119 passed
+
+- Mike supplied Waller's full "State of the Art" chapter — 45 pages, printed
+  pp. 3–47, the whole thing rather than the two-page excerpt. Deposited
+  privately by content hash under `SRC-19F191B3F5C5`.
+- Added **`ibi deposit`** for researcher-supplied documents. Same
+  content-addressed store as `capture`, but the URL slot records a deposit
+  marker rather than a fetch target, because nothing here made a robots or
+  access-control decision and the record should not imply one.
+- Transcribed the list at printed pp. 40–47: **115 entries, 52 authors**, in
+  `research/sources/waller_2025_jba_publication_list.jsonl`. Rule-parsed then
+  checked by inspection; one entry was corrupted where a footnote interrupted it
+  across a page break, fixed by bounding footnotes to their own page.
+- **First external completeness measurement: the index holds 46 of 115, 40%.**
+  69 missing — 45 authors absent entirely, 24 where the index holds a different
+  work by the same author. Those 24 were spot-checked and are genuine misses.
+  The check is generous in the other direction, since a surname-and-year hit
+  counts as held without verifying the edition, so 60% missing is a floor.
+- **Gordon is the largest hole: eight publications, none held** — the prediction
+  made from the scoping review, now confirmed against the list. The
+  nineteenth-century layer is almost entirely absent, which is also where the
+  least reliable findspots were established (META-005).
+- Second benchmark, better than the EJCM working counts: Waller cites Ford and
+  Abudraham 2018 for **62% JBA / 23% Mandaic / 13% Syriac**. The index runs
+  80.0 / 10.6 / 9.5 across 729 classified records — short roughly **91 Mandaic
+  objects**. Syriac is close; JBA is over-represented by about the margin
+  publication bias predicts.
+- Qualified `DISC-001`: two sweeps under 1% net-new measured marginal yield
+  inside the twelve searched classes and say nothing about coverage of the
+  published corpus. The README now leads with the 40%.
+- Deliberately **not** done: no ingest of the 69. That is `SCHOL-002`, and it
+  needs reconciling per-work against the 21 seed records transcribed from the
+  scoping review first, or it will create duplicates.
+- Next: `SCHOL-002`. Also worth obtaining Ford and Abudraham 2018 as a Mandaic
+  control list — Waller's list is JBA only.
+
+---
+
 ## 2026-09-05 — Claude — QA-008 and META-006: the field model
 
 **Claimed:** QA-008, META-006 (both now done)
