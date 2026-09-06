@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-06T00:41:21+00:00",
+  "source_id": "SRC-FORD2014-AUOR",
+  "archive_sha256": "0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7",
+  "scope": "Edition enumeration and source-reported metadata; no reading, authorship, authenticity or rights adjudication.",
+  "inspected_printed_pages": [
+    235,
+    246,
+    247,
+    253,
+    255,
+    256,
+    259,
+    260,
+    263
+  ],
+  "existing_record_search": {
+    "fields": [
+      "identifiers.value",
+      "objects.label",
+      "objects.summary",
+      "claims.value_text"
+    ],
+    "terms": [
+      "1073",
+      "Davidovitz",
+      "AS13",
+      "AS 13",
+      "Sefardí",
+      "Toledo"
+    ],
+    "findings": [
+      "IBI-035BA4ABBE6D matches AC-MSEF via Ford p. 253 n. 56 and collection context.",
+      "Davidovitz 2 and a Davidovitz popularity-and-success bowl were found; neither supplies an exact Davidovitz 27 concordance.",
+      "No exact AS 13 identifier found. Absence from search is not proof of global uniqueness."
+    ]
+  },
+  "decisions": [
+    {
+      "designation": "AS 13",
+      "action": "new provisional candidate",
+      "object_id": "IBI-FORD2014-AS13"
+    },
+    {
+      "designation": "Davidovitz 27",
+      "action": "new provisional candidate",
+      "object_id": "IBI-FORD2014-DAV27"
+    },
+    {
+      "designation": "Museo Sefardí 1073",
+      "action": "attach explicit source concordance to existing record",
+      "object_id": "IBI-035BA4ABBE6D",
+      "basis": "Ford p. 253 n. 56 explicitly supplies ac-msef; existing identifier Martínez Borobio 2003::AC-MSEF and collection context agree."
+    }
+  ]
+}

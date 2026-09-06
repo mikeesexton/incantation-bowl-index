@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-06T00:36:39+00:00`
+Generated: `2026-09-06T00:43:18+00:00`
 
 ## Portfolio status
 
@@ -16,7 +16,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 ### What is solid
 
-- Discovery is broad and reproducible within the classes it searched: 843 sources and 1,616 appearances support 1,588 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes; printed editions and the bibliographic databases were not among them.
+- Discovery is broad and reproducible within the classes it searched: 843 sources and 1,619 appearances support 1,590 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes; printed editions and the bibliographic databases were not among them.
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
 - The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.
@@ -24,12 +24,12 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - The comparison model now covers the whole claim vocabulary: 66 fields grouped, 35 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list.
 - The project now has an external yardstick. Waller's list of JBA bowl publications 1853-2024 is held, transcribed and measured against, so completeness is a number rather than an impression.
 - Bibliographic coverage of the field's JBA control list is complete: 115 of 115 publications 1853-2024 have a source record with a sourced citation, up from 46.
-- Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. 17 of 18 publication keys resolve, covering 423 distinct candidate records; TMH 7 remains unresolved. Counts deduplicate records across aliases and publications.
+- Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. 18 of 19 publication keys resolve, covering 425 distinct candidate records; TMH 7 remains unresolved. Counts deduplicate records across aliases and publications.
 
 ### What prevents release readiness
 
-- Publication links exist but are thin: 423 of 1,588 distinct candidate records carry a publication key, and all 423 have at least one resolved publication. This does not resolve every key: the two TMH 7 records also carry resolved keys. Most records still have no publication key.
-- Identity and claim quality is not yet measured corpus-wide: 312 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
+- Publication links exist but are thin: 425 of 1,590 distinct candidate records carry a publication key, and all 425 have at least one resolved publication. This does not resolve every key: the two TMH 7 records also carry resolved keys. Most records still have no publication key.
+- Identity and claim quality is not yet measured corpus-wide: 313 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
 - Text and edition coverage remains sparse outside Montgomery: 312/794 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.
 - Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
@@ -39,23 +39,23 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Measure | Current |
 |---|---:|
-| Candidate source records | 1588 |
-| Working physical identity hypotheses (all statuses) | 1320 |
-| Source appearances | 1616 |
+| Candidate source records | 1590 |
+| Working physical identity hypotheses (all statuses) | 1322 |
+| Source appearances | 1619 |
 | Sources | 843 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 214 |
-| Triaged claim-field differences | 53/365 |
+| Triaged claim-field differences | 53/366 |
 | Compatible differences | 38 |
-| Review required (missing or no longer valid) | 312 |
+| Review required (missing or no longer valid) | 313 |
 | Existing reviews requiring revalidation | 284 |
 | Substantive conflict instances | 15 across 13 identities |
-| All identities with a publication reference | 391/1320 (29.6%) |
+| All identities with a publication reference | 393/1322 (29.7%) |
 | Probable/confirmed identities with a publication reference | 312/794 (39.3%) |
 | Identities with a translation | 48 |
 | Scan-checked normalized reading texts | 35 |
-| Publication keys resolved to the publication they designate | 17/18 |
-| Objects under a resolved publication | 423/423 |
+| Publication keys resolved to the publication they designate | 18/19 |
+| Objects under a resolved publication | 425/425 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 1 |
@@ -72,10 +72,10 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 909 | 68.9% |
-| Provenance | 327 | 24.8% |
+| Location | 910 | 68.8% |
+| Provenance | 327 | 24.7% |
 | Dating | 482 | 36.5% |
-| Dimensions | 378 | 28.6% |
+| Dimensions | 380 | 28.7% |
 | Material | 408 | 30.9% |
 | Language | 663 | 50.2% |
 | Script | 91 | 6.9% |
@@ -91,12 +91,12 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 |---|---:|---:|
 | Biblical Intertexts | 168 | 12.7% |
 | Condition | 139 | 10.5% |
-| Publication | 62 | 4.7% |
+| Publication | 65 | 4.9% |
 | Client | 58 | 4.4% |
 | Ritual | 43 | 3.3% |
-| Text Form | 34 | 2.6% |
+| Text Form | 36 | 2.7% |
 | Practitioner | 29 | 2.2% |
-| Visual | 25 | 1.9% |
+| Visual | 27 | 2.0% |
 | Text Description | 6 | 0.5% |
 | Authenticity Assessment | 4 | 0.3% |
 | Parallels | 4 | 0.3% |
@@ -131,10 +131,10 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 ## Current priority order
 
-1. TEXT-001 / SCHOL-004 follow-through: extend evidence-backed publication references beyond the current 423 of 1,588 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.
+1. TEXT-001 / SCHOL-004 follow-through: extend evidence-backed publication references beyond the current 425 of 1,590 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.
 2. SCHOL-005 / QA-004: work the acquisition queue from Segal 2000 (252 distinct candidate records) and record document scope against archived evidence. Distinguish full works, excerpts, front matter and catalogue pages before calling a publication held or read.
-3. SCHOL-005 follow-through: use the newly archived Ford 2014 complete article for the next edition/concordance batch (AS 13, Davidovitz 27, Museo Sefardí 1073). Resolve the Ford 2002 author-attribution discrepancy against publisher evidence; retain all earlier citations and claims.
-4. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
+3. TEXT-001 follow-through: the three Ford 2014 editions are now indexed. Review broader concordances for the two provisional candidates and index the article’s correction references as separate source reports; resolve the Ford 2002 author-attribution discrepancy without losing earlier citations.
+4. QA-002 / CONC-005: revalidate the 313-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
 5. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
 6. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
 7. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
@@ -194,7 +194,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
 
 - [ ] **TEXT-001 — Create publication-reference coverage for known texts** · In progress · Research
   - Done when: At least 80% of probable/confirmed identities have either an edition reference or an explicit no-known-edition status, each with a source.
-  - Evidence/status: 312/791 probable/confirmed identities have publication-scheme identifiers (39.4%). This proxy counts designations, not editions: the publications being designated have no records of their own (see SCHOL-004), so raising the number does not yet raise edition coverage. Re-specify the metric against resolved publication records and sourced no-known-edition assessments before treating it as a release gate. SCHOL-004 is now done, so the metric can be re-specified: 414 of 435 objects carrying a publication key sit under a publication with a source record. That is still designation coverage, not a checked edition locator, but the denominator is now meaningful.
+  - Evidence/status: 312/791 probable/confirmed identities have publication-scheme identifiers (39.4%). This proxy counts designations, not editions: the publications being designated have no records of their own (see SCHOL-004), so raising the number does not yet raise edition coverage. Re-specify the metric against resolved publication records and sourced no-known-edition assessments before treating it as a release gate. SCHOL-004 is now done, so the metric can be re-specified: 414 of 435 objects carrying a publication key sit under a publication with a source record. That is still designation coverage, not a checked edition locator, but the denominator is now meaningful. On 2026-09-06 Ford 2014 added three precisely located edition appearances and a registered publication key: AS 13 and Davidovitz 27 are new provisional candidates, while Museo Sefardí 1073 attaches to existing AC-MSEF via the explicit p. 253 n. 56 concordance. Unique candidate publication coverage is now 425/1,590, with 18/19 keys resolved. No scholarly text or images were republished.
 - [x] **TEXT-002 — Proofread Montgomery's 35 extracted translations** · Done · Research
   - Done when: Every translation is checked line by line against the scan, corrections are logged, and public_ok is decided independently of public-domain status.
   - Evidence/status: 35/35 available translations visually checked against archived scans as normalized English reading texts, in batches of 11 and 24. Exact original rows, corrected text hashes, source-PDF hash, page locators and correction notes retained. Zero OCR drafts remain in this cohort. All 35 remain public_ok=false; independent specialist review and original-language verification are separate work. Completion manifest: research/reviews/montgomery_reading_texts_completion_2026-09-05.json.
@@ -304,7 +304,7 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
   - Evidence/status: Implemented in conflict_review.py, identity.py, roadmap.py and current conflict reports. Regression tests cover changed evidence and unsafe equivalence; 313 reviews reopen in the existing corpus. See data/reports/quality_review_2026-09-04.md.
 - [ ] **QA-002 — Revalidate the historical rule-assisted conflict triage** · In progress · Research
   - Done when: All 313 reopened instances have source-level decisions on their exact current evidence, with append-only review history and explicit uncertainty preserved.
-  - Evidence/status: Current full-vocabulary queue: 365 field-difference instances, 53 with current decisions, 312 needing review; 284 of those have earlier reviews requiring revalidation. Use coherent source batches and exact current evidence. Museum concordance confirmation does not adjudicate metadata.
+  - Evidence/status: Current full-vocabulary queue: 366 field-difference instances, 53 with current decisions, 313 needing review; 284 of those have earlier reviews requiring revalidation. Use coherent source batches and exact current evidence. Museum concordance confirmation does not adjudicate metadata. The Ford 2014 Toledo bibliography/concordance pair adds one publication-group flag; it has not been adjudicated.
 - [ ] **QA-003 — Audit a stratified sample of identity and extraction decisions** · Queued · Research
   - Done when: Publish reproducible sample selection across institutions, market records, status classes and merge methods; check primary evidence and report denominators, error categories and uncertainty.
   - Evidence/status: Zero generated pending dedupe candidates is queue completion, not measured identity accuracy. Current review examined architecture, integrity, archive hashes, aggregate metrics and selected rule evidence, not all objects.
@@ -333,7 +333,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `312`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `313`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `39.3%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
@@ -407,3 +407,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** Added SCHOL-005 and `ibi report-acquisitions`: a generated register separating what the project holds as a document from what it merely cites, with the want list ranked by dependants. 20 of 841 sources have the document held; 347 objects depend on an unheld publication; Segal 2000 ranks first at 253 objects. Logged TMH 7 as blocked - no digital copy of Mueller-Kessler 2005 could be located, so that registry entry stays unresolved rather than inferred.
 - **2026-09-06:** QA-004: reviewed Claude work against the matching corpus state. Corrected acquisition metrics that treated all captures as held documents, separated PDF presence from unassessed completeness, and deduplicated publication counts across aliases and publications (435 memberships become 423 unique candidate records). Refreshed obsolete and duplicate priorities; bibliography seeding and field-model expansion are complete, while acquisition, publication enrichment and evidence revalidation remain the next priorities. No corpus assertions changed.
 - **2026-09-06:** SCHOL-005 acquisition batch: archived the complete 29-page Ford 2014 journal article from its institutional host after robots allowance and page-scope review. Added two source records and five precise follow-up leads, retained the earlier conflicting Ford 2002 author attribution, and logged seven targeted searches. Segal and Isbell remain unacquired; the JANES CDN failed robots allowance. No candidate identities, readings, media approvals or public release changed.
+- **2026-09-06:** TEXT-001: enumerated AS 13, Davidovitz 27 and Museo Sefardí 1073 in the archived Ford 2014 article. Added two provisional candidates and attached one source appearance to the existing AC-MSEF record using an explicit source concordance. Registered one publication key; unique publication coverage rises from 423 to 425 records. Retained original measurement order; no reading adjudication, identity merge or rights decision. Candidate and registry replay left the corpus digest unchanged.

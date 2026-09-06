@@ -1,15 +1,15 @@
 # Discovery campaign status
 
-Generated: `2026-09-06T00:36:40+00:00`
+Generated: `2026-09-06T00:42:23+00:00`
 
 ## Corpus
 
-- Candidate objects: **1588**
+- Candidate objects: **1590**
 - Unclassified claim fields: **[]**
-- Estimated distinct objects after resolved dedupe: **1320**
+- Estimated distinct objects after resolved dedupe: **1322**
 - Resolved duplicate records: **268**
 - Probable or confirmed: **872**
-- Source appearances: **1616**
+- Source appearances: **1619**
 - Sources: **843**
 - Dedupe clusters pending: **0**
 - Objects with text: **193**
@@ -73,14 +73,14 @@ Generated: `2026-09-06T00:36:40+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1020 |
+| object type | whole_bowl | 1022 |
 | object type | uncertain | 295 |
 | object type | fragment | 259 |
 | object type | lost_or_unlocated | 14 |
-| record status | candidate | 716 |
+| record status | candidate | 718 |
 | record status | probable | 599 |
 | record status | confirmed | 273 |
-| authenticity | unassessed | 1098 |
+| authenticity | unassessed | 1100 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 44 |
 | authenticity | uncertain | 3 |
@@ -130,7 +130,6 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 |---|---:|---|
 | blocked | 1 | BM 117882 / Segal 119ES: inspect the full catalogue entry to assess the uncertain Syriac? classification against existing museum descriptions of Syriac. The apparent 117ES/119ES locator mismatch has been resolved as an importer defect; identity links remain unchanged. |
 | open | 1 | Reconcile the author attribution for Another Look at Mandaic Incantation Bowl BM 91715: existing SRC-1EE58A703971 names Christa Müller-Kessler, while the JANES volume 29 and article pages name J. N. Ford. |
-| open | 1 | Enumerate and concordance-check the editions in Ford 2014: AS 13 (Appendix 1, pp. 246–252), Davidovitz 27 (Appendix 2, pp. 253–258), and Museo Sefardí 1073 (re-edition p. 256; photographs pp. 259–260). |
 | in_progress | 1 | Investigate Penn B2963 / Montgomery 3 Date Made: ca. 200 BCE. The value is preserved as a museum-reported claim, not accepted as a corrected chronology. Check primary catalogue dating and later scholarship; do not infer a replacement date. |
 | in_progress | 1 | Reconcile Penn B9010 / Montgomery 9 Inscription Language: Hebrew Language with the edition-based Jewish Babylonian Aramaic claim. Determine whether the catalogue field reflects historical terminology, a script/language confusion or an error; preserve both assertions pending review. |
 | in_progress | 1 | Reconcile Penn B9008 / Montgomery 31 Inscription Language: Hebrew Language with the existing Syriac attribution. The museum description also says Proto-Manichean. Distinguish language from script and catalogue terminology; retain disagreement. |
@@ -142,6 +141,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | blocked | 1 | Penn Museum robots.txt was unavailable; metadata was collected slowly, but full page captures were not archived. |
 | blocked | 2 | Obtain an authorized local copy of Ford 2002, Another Look at Mandaic Incantation Bowl BM 91715, JANES 29, pp. 31–47. |
 | open | 2 | Index Ford 2014 corrections to Aramaic Bowl Spells volume 1 as separate source-reported claims with precise locators; retain the original edition readings and uncertainty. |
+| open | 2 | Review whether provisional Davidovitz 27 (IBI-FORD2014-DAV27) has another source appearance under a different designation, including the existing Davidovitz popularity-and-success bowl IBI-6A5B95130C25. |
 | blocked | 2 | Obtain authorized access to Isbell 1975, Corpus of the Aramaic Incantation Bowls, for page-level edition checks. |
 | open | 2 | Investigate Montgomery 1913 appendix no. 42: locate Gottheil's original notes or later scholarship assessing whether the unlocated original was a bowl or another amulet. Do not assign a Nippur findspot, ancient date, CBS number or physical identity from the main forty-bowl corpus. |
 | blocked | 2 | Obtain Christa Mueller-Kessler, Die Zauberschalentexte in der Hilprecht-Sammlung, Jena (TMH 7, Harrassowitz 2005), or at minimum a photograph of its title and imprint pages. Needed to confirm that the publication key TMH 7 designates this volume; two objects currently hang on an unresolved key, and the identification is presently an inference from the series name alone. Searched on 2026-09-05: no digital copy located. |

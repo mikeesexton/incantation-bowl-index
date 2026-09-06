@@ -25,6 +25,24 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-06 — Codex — Ford 2014 edition enumeration
+
+**Claimed:** TEXT-001
+**Corpus:** changed (two candidate records, three appearances, eleven claims, seven identifiers, one publication registry entry and lead outcomes) — 21ccd3582380
+**Tests:** 134 passed; candidate/registry replay leaves digest unchanged; archive, database integrity and foreign keys valid; post-batch backup verified.
+
+- Inspected Ford 2014 edition boundaries and photographs; recorded exact page locators without copying scholarly readings or translations.
+- AS 13 and Davidovitz 27 enter as provisional candidates. Measurements retain printed order without inferred axes; no authenticity or global uniqueness claim.
+- Attached Museo Sefardí 1073 to existing IBI-035BA4ABBE6D via Ford p. 253 n. 56 explicit AC-MSEF concordance, corroborated by collection and client context. No existing objects merged.
+- Registered Ford 2014 Aula Orientalis publication key. Unique publication coverage 423 → 425 of 1,590 records; 18/19 keys resolved. Corpus now 1,619 appearances and 1,322 working identities.
+- Resolved the three-edition enumeration lead and opened a broader Davidovitz 27 identity follow-up. The corrections and attribution leads remain open.
+- New Toledo bibliography/concordance statements trigger one publication-group difference; retained unreviewed, increasing the queue to 313. No old review was cleared.
+- Regenerated roadmap, acquisition, conflict, enrichment and campaign reports and private export. No text, media, rights or merge history changed.
+- Next: broader provisional-candidate concordances, Ford 2014 correction indexing, and Ford 2002 bibliographic reconciliation. TEXT-001 remains in progress.
+
+
+---
+
 ## 2026-09-06 — Codex — Edition acquisition follow-through
 
 **Claimed:** SCHOL-005

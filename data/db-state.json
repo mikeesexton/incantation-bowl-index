@@ -1,18 +1,18 @@
 {
-  "corpus_digest": "d99914408594103272f4289a60e5ec6be3918c64caeae35bbb2922f9eb3f27fc",
+  "corpus_digest": "21ccd3582380b3bbc9f5de221a40a208967c3e26f19a2d33e341a8ffe8850fad",
   "migrations": 12,
-  "note": "SCHOL-005: acquired Ford 2014 article, recorded access outcomes and attribution discrepancy; no object or text changes",
-  "recorded_at": "2026-09-06T00:37:41+00:00",
+  "note": "TEXT-001: three Ford 2014 edition appearances, two provisional candidates, explicit Toledo concordance and registered publication key",
+  "recorded_at": "2026-09-06T00:43:20+00:00",
   "recorded_by": "codex",
   "schema_version": "012_publication_registry",
   "tables": {
     "appearance_object_links": {
-      "digest": "afe86237378d1c77dfed5d69c18640ec658e729a2df42b7a33492c795ea01549",
-      "rows": 1616
+      "digest": "7b33267fe9ee1139849a7f70a24cb76ba1cfde8fb7d9462aa23468a46d9d97d7",
+      "rows": 1619
     },
     "appearances": {
-      "digest": "f85e988ee2c2f39e3dc43812f9a74f2399a8399068adacfcbfc79cca9cf03096",
-      "rows": 1616
+      "digest": "fd49d714a56e048c319c2aef5d43598ad80c3ff2cc6bf5fff537087347819d04",
+      "rows": 1619
     },
     "captures": {
       "digest": "0bd719027904e1f0aa925065eaa0074f40b7b053c24c210488068af2df6b9bf5",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "991197a02bc37735d2647febab1302c6bd2ef07b3d9b9e2964dd8a86d2d7ecf7",
-      "rows": 5014
+      "digest": "47191fd79404c703a84b9ac6fcf27067e6e32834788ab018643b68283d881d27",
+      "rows": 5025
     },
     "coverage_targets": {
       "digest": "73d66484bd8ac7761a276eb62a9532495bad9f58424a83eae9cbd42f24e8f690",
@@ -51,12 +51,12 @@
       "rows": 211
     },
     "identifiers": {
-      "digest": "cc6d41d1e6e03303f2d660ceeeb05cb0b11aff4e42bfbe1d32df8e0a4cc92e9f",
-      "rows": 3586
+      "digest": "606636fdc500baa1a9ea25751f3b2f5320e9ce18ec74ee04ff4b836a8ac60fce",
+      "rows": 3593
     },
     "leads": {
-      "digest": "98e2858e528d1c657f8c952e66590f9a1ed4cd1584e98e6dce9d83377f0c25aa",
-      "rows": 48
+      "digest": "c9ee280905381e811fb2797f106914cff020498e9b26c1ebf38f9594ca999c70",
+      "rows": 49
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
@@ -83,12 +83,12 @@
       "rows": 5
     },
     "objects": {
-      "digest": "fb0a81674d374d5980203a3222eb711c9c72b589cc742b198200e0a447aaec9f",
-      "rows": 1588
+      "digest": "965966699efcf8c42714b702c6be1241ba435c6620fef291198719180b09fda9",
+      "rows": 1590
     },
     "publication_registry": {
-      "digest": "b42148c988937abc8ef457781e46868800cc28ac61956767ef3ceb6015ab7b59",
-      "rows": 19
+      "digest": "01382cb86ad0d2ebe55a7c4e18f8af32f3d48e78e0c1750cb5fcf5df2dc4227f",
+      "rows": 20
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
