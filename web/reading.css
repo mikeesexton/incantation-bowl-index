@@ -18,15 +18,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --clay: #17140f;
-    --clay-deep: #221d16;
-    --clay-line: #3a322800;
-    --brownink: #ece3d4;
-    --brownink-soft: #a2968a;
-    --reading-surface: #1d1913;
-    --reading-accent: #7fb6c9;
+    --clay: #17130f;
+    --clay-deep: #2b241c;
+    --clay-line: #3b3229;
+    --brownink: #efe7db;
+    --brownink-soft: #a89b8c;
+    --reading-surface: #221c16;
+    /* Verdigris rather than an icy cyan: on a warm clay ground a cold blue
+       reads as a mistake. Aged bronze belongs to the same world as the pots. */
+    --reading-accent: #8fb9b4;
   }
-  :root:not([data-theme="light"]) .reading-room { --clay-line: #3a3228; }
 }
 
 .reading-room { background: var(--clay); color: var(--brownink); min-height: 100%; }

@@ -94,6 +94,39 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Fix the dark palette
+
+**Claimed:** none (defect fix)
+**Corpus:** unchanged
+**Tests:** 176 passed
+
+Mike flagged the colours on a real monitor. Two were outright bugs in my own
+dark-mode work, one was a taste failure. I had only ever viewed it in an ~800px
+browser pane.
+
+- **The topbar inverted the wrong way.** `.topbar`, `.toast` and `.dossier-head`
+  use `background: var(--ink)` with hard-coded `color: white`. My dark palette
+  flipped `--ink` from dark slate to cream, so those backgrounds went cream and
+  kept white text on them — a washed-out bar with barely-legible wordmark. The
+  cause was treating `--ink` as if it were only a text colour. Added semantic
+  `--chrome` / `--chrome-text` / `--chrome-dim` / `--chrome-hover` /
+  `--chrome-line` tokens that stay dark in both modes, and pointed every piece
+  of chrome at them. No rule now depends on `--ink` for a background.
+- **`--clay-line: #3a322800`** — an eight-digit hex ending `00` is fully
+  transparent, so card and list borders vanished in dark mode. Typo; fixed.
+- **The accent clashed.** `#7fb6c9` is an icy cyan and the ground is warm
+  brown-black, which reads as a mistake rather than a choice. Moved to a
+  verdigris `#8fb9b4` — aged bronze belongs to the same world as the pots, and
+  it sits with clay instead of against it. Light mode keeps lapis, which is
+  right on cream.
+- Also lifted the card surface clear of the page ground (they were two shades
+  apart, so nothing separated) and warmed the shell background to agree with the
+  reading room rather than fight it.
+- Verified both modes: dark is chrome `#100d0a` on page `#17130f` with cards at
+  `#221c16` and visible borders; light is unchanged at slate-on-cream with lapis.
+
+---
+
 ## 2026-09-05 — Claude — Tranche 5, and the interface plan is done
 
 **Claimed:** reading-room plan, tranche 5 (RIGHTS-005, QA-009 done)
