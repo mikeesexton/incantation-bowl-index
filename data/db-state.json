@@ -1,18 +1,18 @@
 {
-  "corpus_digest": "21ccd3582380b3bbc9f5de221a40a208967c3e26f19a2d33e341a8ffe8850fad",
+  "corpus_digest": "5762f532db36454669c320efaf8063f0a0002c9cdfacdd981fc82bf2e7a7c14c",
   "migrations": 12,
-  "note": "TEXT-001: three Ford 2014 edition appearances, two provisional candidates, explicit Toledo concordance and registered publication key",
-  "recorded_at": "2026-09-06T00:43:20+00:00",
+  "note": "TEXT-001: Ford 2014 main commentary indexed with retained proposals and original edition references",
+  "recorded_at": "2026-09-06T01:01:41+00:00",
   "recorded_by": "codex",
   "schema_version": "012_publication_registry",
   "tables": {
     "appearance_object_links": {
-      "digest": "7b33267fe9ee1139849a7f70a24cb76ba1cfde8fb7d9462aa23468a46d9d97d7",
-      "rows": 1619
+      "digest": "c071e4c0a5900be02d87f81e65fca37154ef8cc2d234073a7591f0a0c17befa5",
+      "rows": 1632
     },
     "appearances": {
-      "digest": "fd49d714a56e048c319c2aef5d43598ad80c3ff2cc6bf5fff537087347819d04",
-      "rows": 1619
+      "digest": "110c5b80d2a30903a210bfda58fea763087cd48014a869d05cbe5c3c7e0c3df1",
+      "rows": 1632
     },
     "captures": {
       "digest": "0bd719027904e1f0aa925065eaa0074f40b7b053c24c210488068af2df6b9bf5",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "47191fd79404c703a84b9ac6fcf27067e6e32834788ab018643b68283d881d27",
-      "rows": 5025
+      "digest": "d1c963c944e9445de92ee4775a0e7a9fe576fc1b57acf96d6bf4dd0368a7e840",
+      "rows": 5052
     },
     "coverage_targets": {
       "digest": "73d66484bd8ac7761a276eb62a9532495bad9f58424a83eae9cbd42f24e8f690",
@@ -51,12 +51,12 @@
       "rows": 211
     },
     "identifiers": {
-      "digest": "606636fdc500baa1a9ea25751f3b2f5320e9ce18ec74ee04ff4b836a8ac60fce",
-      "rows": 3593
+      "digest": "3bdbbfb9d0d4c5f119d8bef11e3873a9bddc215b7b47feed8e485177f6162864",
+      "rows": 3606
     },
     "leads": {
-      "digest": "c9ee280905381e811fb2797f106914cff020498e9b26c1ebf38f9594ca999c70",
-      "rows": 49
+      "digest": "7e0a594707dfd2039385371a4525014d23fbfd93bf8140549548e97795a16db9",
+      "rows": 50
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",

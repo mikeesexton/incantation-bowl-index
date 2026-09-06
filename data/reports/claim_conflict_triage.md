@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-09-06T00:42:22+00:00`
+Generated: `2026-09-06T01:00:32+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -12,7 +12,7 @@ The original source claims remain unchanged. This review classifies apparent dif
 | Scholarly Disagreement | 3 |
 | Source Inconsistency | 2 |
 | Unresolved | 10 |
-| Requires current evidence review | 313 |
+| Requires current evidence review | 314 |
 
 ## Revalidation queue
 
@@ -331,6 +331,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-F72F1F87420C — British Museum 114398: incantation bowl | dating | dating: 6thC-7thC [SRC-3D4B57D27A24; Related objects: 1920-0315-9]; period: Late Sasanian [SRC-3D4B57D27A24; Related objects: 1920-0315-9] |
 | IDENT-F881E6B2BBA7 — British Museum 91741: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1881-0714-9]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1881-0714-9] |
 | IDENT-F881E6B2BBA7 — British Museum 91741: incantation bowl | provenance | findspot: Excavated/Findspot: Tell Ibrahim (Kutha) [SRC-3D4B57D27A24; Related objects: 1881-0714-9]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1881-0714-9] |
+| IDENT-FAA7F16C75C2 — Apotropaic index MS2053/206 | text_description | text_feature: Ford reports: Reinterpretation of a cosmological expression. [SRC-FORD2014-AUOR; pp. 236–237; JBA 23:1]; text_feature: Ford reports: Passive-participle analysis with comparative evidence. [SRC-FORD2014-AUOR; pp. 237–239; JBA 23:3] |
 | IDENT-FB4EFCE9FCBD — British Museum 91754: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-12]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-12] |
 | IDENT-FF6A0543E254 — British Museum 91747: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1888-0806-11]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1888-0806-11] |
 

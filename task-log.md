@@ -25,6 +25,23 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-06 — Codex — Ford 2014 commentary index
+
+**Claimed:** TEXT-001
+**Corpus:** changed (13 appearances, 27 claims, ten identifiers, lead outcomes) — 5762f532db36
+**Tests:** 134 passed; replay digest unchanged; source bindings, archive, SQLite integrity/foreign keys and backup verified.
+
+- Indexed all 14 bold JBA-labelled discussions in Ford 2014 main commentary, pp. 236–246, covering 13 existing records. Incidental parallels and appendices are outside this scope.
+- Categories distinguish retained readings, proposed corrections, grammatical and orthographic analysis, comparative evidence and a bibliographic pointer. Stored brief attributed topic summaries, not scholarly transcriptions or translations.
+- Reused existing JBA concordances; multiple records for JBA 15, 55 and 56 already belonged to single resolved identity clusters. No merge or physical-accession revalidation performed.
+- Added ten missing publication keys for the 2013 volume, with Ford as reporting source. The commentary was not registered as a full new edition. Unique candidate publication coverage is 435/1,590; appearances now 1,632.
+- Resolved the commentary-indexing lead and opened specialist comparison follow-up. The two JBA 23 topics add one unreviewed text-description flag (314 pending overall); no historical review cleared.
+- Regenerated roadmap, acquisition/conflict/enrichment/campaign reports and private export. Objects, texts, media, sources and identity decisions unchanged.
+- Next: obtain the 2013 edition for comparison, provisional-candidate concordance checks, and Ford 2002 attribution reconciliation. TEXT-001 remains in progress.
+
+
+---
+
 ## 2026-09-06 — Codex — Ford 2014 edition enumeration
 
 **Claimed:** TEXT-001

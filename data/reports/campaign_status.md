@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-09-06T00:42:23+00:00`
+Generated: `2026-09-06T01:00:33+00:00`
 
 ## Corpus
 
@@ -9,7 +9,7 @@ Generated: `2026-09-06T00:42:23+00:00`
 - Estimated distinct objects after resolved dedupe: **1322**
 - Resolved duplicate records: **268**
 - Probable or confirmed: **872**
-- Source appearances: **1619**
+- Source appearances: **1632**
 - Sources: **843**
 - Dedupe clusters pending: **0**
 - Objects with text: **193**
@@ -140,8 +140,8 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | blocked | 1 | The National Library of Israel exhibition material highlights two bowls for Kafnai son of Imma (with Immai daughter of Anai) and Hai son of Aspindarmid. Resolve their names to the exact MMS and manuscript-part records among the 205 numbered NLI bowls already collected before adding appearances or claims. |
 | blocked | 1 | Penn Museum robots.txt was unavailable; metadata was collected slowly, but full page captures were not archived. |
 | blocked | 2 | Obtain an authorized local copy of Ford 2002, Another Look at Mandaic Incantation Bowl BM 91715, JANES 29, pp. 31–47. |
-| open | 2 | Index Ford 2014 corrections to Aramaic Bowl Spells volume 1 as separate source-reported claims with precise locators; retain the original edition readings and uncertainty. |
 | open | 2 | Review whether provisional Davidovitz 27 (IBI-FORD2014-DAV27) has another source appearance under a different designation, including the existing Davidovitz popularity-and-success bowl IBI-6A5B95130C25. |
+| open | 2 | Review Ford 2014 proposed readings and interpretations against the 2013 edition and relevant photographs, using the 14-discussion index; preserve differences as attributed evidence. |
 | blocked | 2 | Obtain authorized access to Isbell 1975, Corpus of the Aramaic Incantation Bowls, for page-level edition checks. |
 | open | 2 | Investigate Montgomery 1913 appendix no. 42: locate Gottheil's original notes or later scholarship assessing whether the unlocated original was a bowl or another amulet. Do not assign a Nippur findspot, ancient date, CBS number or physical identity from the main forty-bowl corpus. |
 | blocked | 2 | Obtain Christa Mueller-Kessler, Die Zauberschalentexte in der Hilprecht-Sammlung, Jena (TMH 7, Harrassowitz 2005), or at minimum a photograph of its title and imprint pages. Needed to confirm that the publication key TMH 7 designates this volume; two objects currently hang on an unresolved key, and the identification is presently an inference from the series name alone. Searched on 2026-09-05: no digital copy located. |

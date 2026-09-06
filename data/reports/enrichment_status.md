@@ -27,8 +27,8 @@
 | Core fields present | Identities |
 |---|---:|
 | 0–2 of 10 | 375 |
-| 3–5 of 10 | 798 |
-| 6–8 of 10 | 96 |
+| 3–5 of 10 | 797 |
+| 6–8 of 10 | 97 |
 | 9–10 of 10 | 48 |
 
 ## Next-action queue
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**214** identities triggered raw difference flags. Current reviews support **38** compatible field-level instances and **15** substantive instances. **313** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**215** identities triggered raw difference flags. Current reviews support **38** compatible field-level instances and **15** substantive instances. **314** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 
