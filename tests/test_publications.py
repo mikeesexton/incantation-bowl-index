@@ -46,6 +46,33 @@ class PublicationRegistryTests(unittest.TestCase):
         row=publication_object_counts(self.conn)[0]
         self.assertEqual((row['resolution'],row['source_id']),('resolved','SRC-ISBELL'))
 
+    def test_aliases_and_multiple_publications_count_distinct_records(self):
+        from bowl_index.acquisitions import acquisition_rows, acquisition_metrics
+        original = self.conn.execute(
+            "SELECT object_id, source_id FROM identifiers WHERE scheme='publication object key'"
+        ).fetchone()
+        for identifier, value in [('ID-ALIAS', 'Isbell 1975::8'), ('ID-OTHER', 'Other 2000::1')]:
+            self.conn.execute(
+                "INSERT INTO identifiers(id,object_id,source_id,scheme,value,normalized_value) VALUES (?,?,?,?,?,?)",
+                (identifier, original['object_id'], original['source_id'], 'publication object key', value, value))
+        self.conn.commit()
+        apply_publication_registry(self.conn, self.batch())
+        apply_publication_registry(self.conn, self.batch(
+            registry_id='IBI-PUBREG-2', publication_key='Other 2000'))
+        self.assertEqual(publication_keys(self.conn), {'Isbell 1975': 1, 'Other 2000': 1})
+        coverage = publication_coverage(self.conn)
+        self.assertEqual(coverage['objects_under_a_publication_key'], 1)
+        self.assertEqual(coverage['objects_under_a_resolved_publication'], 1)
+        row = next(r for r in acquisition_rows(self.conn) if r['id'] == 'SRC-ISBELL')
+        self.assertEqual(row['published_objects'], 1)
+        # Moving the second key to a different publication must still count one
+        # unique candidate in the overall missing-PDF metric.
+        apply_publication_registry(self.conn, self.batch(
+            registry_id='IBI-PUBREG-3', publication_key='Other 2000',
+            source_id=original['source_id']))
+        self.assertEqual(acquisition_metrics(self.conn)[
+            'objects_depending_on_a_publication_without_pdf'], 1)
+
     def test_reporting_source_is_untouched_by_resolution(self):
         apply_publication_registry(self.conn,self.batch())
         reporter=self.conn.execute(

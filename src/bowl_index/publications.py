@@ -18,17 +18,22 @@ def publication_key(value):
     return _TRAILING.sub("", (value or "").split("::")[0]).strip()
 
 
-def publication_keys(conn):
-    """Every distinct publication key, with how many objects hang off it."""
-    counts = {}
+def publication_object_sets(conn):
+    """Distinct candidate records per publication, regardless of alias count."""
+    objects = {}
     for row in conn.execute(
-        "SELECT value, count(DISTINCT object_id) n FROM identifiers "
-        "WHERE scheme=? AND object_id IS NOT NULL GROUP BY value", (PUBLICATION_SCHEME,)
+        "SELECT value, object_id FROM identifiers "
+        "WHERE scheme=? AND object_id IS NOT NULL", (PUBLICATION_SCHEME,)
     ):
         key = publication_key(row["value"])
         if key:
-            counts[key] = counts.get(key, 0) + row["n"]
-    return counts
+            objects.setdefault(key, set()).add(row["object_id"])
+    return objects
+
+
+def publication_keys(conn):
+    """Every distinct publication key, with unique candidate-record counts."""
+    return {key: len(objects) for key, objects in publication_object_sets(conn).items()}
 
 
 def current_registry(conn):
@@ -48,8 +53,9 @@ def publication_coverage(conn):
     keys = publication_keys(conn)
     registry = current_registry(conn)
     resolved = {k for k, r in registry.items() if r["resolution"] == "resolved" and k in keys}
-    objects_total = sum(keys.values())
-    objects_resolved = sum(n for k, n in keys.items() if k in resolved)
+    object_sets = publication_object_sets(conn)
+    objects_total = len(set().union(*object_sets.values()))
+    objects_resolved = len(set().union(*(object_sets[k] for k in resolved)))
     return {
         "publication_keys": len(keys),
         "publication_keys_resolved": len(resolved),

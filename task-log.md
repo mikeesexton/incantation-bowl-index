@@ -25,6 +25,22 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-06 — Codex — Acquisition and publication measurement review
+
+**Claimed:** QA-004
+**Corpus:** unchanged — state digest fd0fc6eb5883
+**Tests:** 134 passed; archive hashes valid; SQLite integrity and foreign keys valid; diff check clean.
+
+- Confirmed clean handoff from Claude and unchanged corpus fingerprint.
+- Corrected acquisition reporting: 20 captured sources are nine with PDFs and eleven with only non-PDF captures, not 20 complete documents held. Completeness remains unassessed; no prior corpus claims or reviews were changed.
+- Corrected publication and acquisition counts to use distinct candidate records across aliases and publications: 423 records have publication keys and at least one resolved key. TMH 7 remains unresolved; its two records also have other resolved keys.
+- The acquisition queue now reports 670 sources with dependants and no PDF capture, covering 345 distinct candidate records through publication links. Segal 2000 leads with 252 distinct candidate records.
+- Added regression coverage for overlapping references, non-PDF captures and excerpts; regenerated acquisition and roadmap reports and ran enrichment regeneration.
+- Refreshed stale/duplicate priorities, retaining completed bibliography and field-model work. QA-004 remains in progress: acquisition completeness needs evidence-bound assessment, and general field verification is still outstanding.
+- Next: acquire and assess edition scope (Segal first), extend publication references, then revalidate coherent source cohorts. No new scholarly assertions, identity decisions, rights decisions or public release.
+
+---
+
 ## 2026-09-05 — Claude — A clickable launcher for the console
 
 **Claimed:** none

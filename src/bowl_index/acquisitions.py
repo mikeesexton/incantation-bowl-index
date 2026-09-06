@@ -1,42 +1,45 @@
-"""What we hold, and what we still need to read.
+"""Inventory archived captures without mistaking them for complete publications.
 
-A source record is a citation. Holding the document is a different fact, and only
-the second lets a claim be checked at page level. This separates them and ranks
-the want list by how much of the corpus depends on each unread work.
+Capture formats are observable; completeness and reading status need separate
+assessment. Rank sources without PDF captures as acquisition leads, preserving
+that limitation and counting distinct candidate records rather than aliases.
 """
 
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .publications import current_registry, publication_keys
+from .publications import current_registry, publication_object_sets
 
 
-def _held_sources(conn):
-    """source_id -> how the document was obtained."""
-    held = {}
+def _source_captures(conn):
+    """Inventory formats only: neither a PDF nor HTML proves complete text."""
+    captures = {}
     for row in conn.execute(
         "SELECT source_id, url, sha256, mime_type, byte_length FROM captures "
-        "WHERE source_id IS NOT NULL ORDER BY rowid"
+        "WHERE source_id IS NOT NULL ORDER BY id"
     ):
-        held.setdefault(row["source_id"], {
-            "how": "deposit" if (row["url"] or "").startswith("local-deposit:") else "capture",
-            "sha256": row["sha256"], "mime_type": row["mime_type"],
-            "bytes": row["byte_length"],
-        })
-    return held
+        info = captures.setdefault(row["source_id"], {"capture_count": 0, "pdf_count": 0})
+        info["capture_count"] += 1
+        is_pdf = (row["mime_type"] or "").split(";")[0].strip().lower() == "application/pdf"
+        info["pdf_count"] += int(is_pdf)
+        if "sha256" not in info or (is_pdf and info["pdf_count"] == 1):
+            info.update({
+                "how": "deposit" if (row["url"] or "").startswith("local-deposit:") else "capture",
+                "sha256": row["sha256"], "mime_type": row["mime_type"],
+                "bytes": row["byte_length"],
+            })
+    return captures
 
 
 def acquisition_rows(conn):
-    held = _held_sources(conn)
-    keys = publication_keys(conn)
+    captures = _source_captures(conn)
+    keys = publication_object_sets(conn)
     registry = current_registry(conn)
     # How many objects depend on each source as their publication.
     objects_by_source = {}
     for key, entry in registry.items():
         if entry["resolution"] == "resolved" and entry["source_id"]:
-            objects_by_source[entry["source_id"]] = (
-                objects_by_source.get(entry["source_id"], 0) + keys.get(key, 0)
-            )
+            objects_by_source.setdefault(entry["source_id"], set()).update(keys.get(key, set()))
     appearances = {row[0]: row[1] for row in conn.execute(
         "SELECT source_id, count(*) FROM appearances GROUP BY source_id")}
     claims = {row[0]: row[1] for row in conn.execute(
@@ -47,9 +50,12 @@ def acquisition_rows(conn):
         "FROM sources"
     ):
         source = dict(row)
-        source["held"] = source["id"] in held
-        source.update(held.get(source["id"], {}))
-        source["published_objects"] = objects_by_source.get(source["id"], 0)
+        source.update(captures.get(source["id"], {"capture_count": 0, "pdf_count": 0}))
+        source["capture_status"] = ("pdf_captured" if source["pdf_count"] else
+                                    "non_pdf_only" if source["capture_count"] else "not_captured")
+        source["document_completeness"] = "unassessed"
+        source["published_object_ids"] = sorted(objects_by_source.get(source["id"], set()))
+        source["published_objects"] = len(source["published_object_ids"])
         source["appearances"] = appearances.get(source["id"], 0)
         source["claims"] = claims.get(source["id"], 0)
         # A work is worth chasing in proportion to how much rests on it unread.
@@ -62,63 +68,73 @@ def acquisition_rows(conn):
 
 def acquisition_metrics(conn):
     rows = acquisition_rows(conn)
-    held = [r for r in rows if r["held"]]
-    wanted = [r for r in rows if not r["held"] and r["priority"] > 0]
+    captured = [r for r in rows if r["capture_count"]]
+    pdfs = [r for r in rows if r["pdf_count"]]
+    wanted = [r for r in rows if not r["pdf_count"] and r["priority"] > 0]
     return {
         "sources": len(rows),
-        "sources_with_a_held_document": len(held),
-        "sources_held_pct": len(held) / len(rows) if rows else 0,
-        "sources_wanted_with_dependants": len(wanted),
-        "objects_depending_on_an_unheld_publication": sum(r["published_objects"] for r in wanted),
+        "sources_with_captures": len(captured),
+        "sources_with_pdf_captures": len(pdfs),
+        "sources_with_non_pdf_captures_only": len(captured) - len(pdfs),
+        "sources_needing_acquisition_review": sum(r["priority"] > 0 for r in rows),
+        "sources_without_pdf_with_dependants": len(wanted),
+        "objects_depending_on_a_publication_without_pdf": len(set().union(
+            *(set(r["published_object_ids"]) for r in wanted))),
     }
 
 
 def write_acquisition_report(conn, destination):
     rows = acquisition_rows(conn)
     metrics = acquisition_metrics(conn)
-    held = sorted((r for r in rows if r["held"]), key=lambda r: -r["priority"])
-    wanted = sorted((r for r in rows if not r["held"] and r["priority"] > 0),
-                    key=lambda r: -r["priority"])
+    held = sorted((r for r in rows if r["capture_count"]), key=lambda r: (-r["priority"], r["id"]))
+    wanted = sorted((r for r in rows if not r["pdf_count"] and r["priority"] > 0),
+                    key=lambda r: (-r["priority"], r["id"]))
     def label(r):
         who = (r["authors"] or "").split(";")[0].split(",")[0].strip() or "—"
         return "%s %s — %s" % (who, r["issued_year"] or "n.d.", (r["title"] or "")[:78])
     L = [
         "# Acquisition register",
         "",
-        "> Generated by `ibi report-acquisitions`. What the project holds as a document, and what",
-        "> it still needs to read. A source record is a citation; holding the document is a",
-        "> separate fact, and only the second lets a claim be checked at page level.",
+        "> Generated by `ibi report-acquisitions`. Capture presence and format are inventory",
+        "> facts. They do not establish that the complete publication is held or has been read.",
         "",
         "Generated: `%s`" % datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "",
         "| Measure | Current |",
         "|---|---:|",
         "| Source records | %d |" % metrics["sources"],
-        "| With the document held | %d (%.1f%%) |" % (
-            metrics["sources_with_a_held_document"], 100 * metrics["sources_held_pct"]),
-        "| Wanted, with something depending on them | %d |" % metrics["sources_wanted_with_dependants"],
-        "| Objects whose publication is unheld | %d |" % metrics["objects_depending_on_an_unheld_publication"],
+        "| Sources with any capture | %d |" % metrics["sources_with_captures"],
+        "| Sources with PDF captures (completeness unassessed) | %d |" % metrics["sources_with_pdf_captures"],
+        "| Sources with non-PDF captures only | %d |" % metrics["sources_with_non_pdf_captures_only"],
+        "| Sources with dependants needing acquisition review | %d |" % metrics["sources_needing_acquisition_review"],
+        "| Sources with dependants and no PDF capture | %d |" % metrics["sources_without_pdf_with_dependants"],
+        "| Unique candidate records depending on publications without PDF captures | %d |" % metrics["objects_depending_on_a_publication_without_pdf"],
+        "",
+        "A PDF may be front matter, an excerpt or a complete work. HTML may be a landing page",
+        "or full text. Neither format certifies completeness, page-level verification or rights.",
+        "No completeness decisions are recorded by this report; all sources with dependants",
+        "still need acquisition review. Counts refer to candidate records, not physical identities.",
         "",
         "Documents are archived privately by content hash under `data/private/archive/` and are",
         "never committed. What is committed is the hash, the citation and the locator.",
         "",
-        "## Held",
+        "## Captured sources — completeness unassessed",
         "",
-        "| Work | How | Objects it publishes | Claims | SHA-256 |",
+        "| Work | How / format | Candidate records | Claims | SHA-256 |",
         "|---|---|---:|---:|---|",
     ]
     for r in held:
         L.append("| %s | %s | %d | %d | `%s` |" % (
-            label(r).replace("|", "\\|"), r.get("how", "—"), r["published_objects"],
+            label(r).replace("|", "\\|"), r.get("how", "—") + " / " + r["capture_status"], r["published_objects"],
             r["claims"], (r.get("sha256") or "")[:12]))
     L += [
         "",
-        "## Wanted",
+        "## Acquisition leads — no PDF capture",
         "",
-        "Ranked by how much of the corpus rests on them unread: ten points per object the work",
+        "This is a starting queue, not proof of missing full text. Ten points per candidate record the work",
         "publishes, one per appearance or claim already attributed to it.",
         "",
-        "| Work | Objects it publishes | Appearances | Claims | Access |",
+        "| Work | Candidate records | Appearances | Claims | Access |",
         "|---|---:|---:|---:|---|",
     ]
     for r in wanted[:40]:
