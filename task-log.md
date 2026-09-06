@@ -94,6 +94,37 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Bowl SD 34 is in the corpus twice
+
+**Claimed:** none (two leads opened for review)
+**Corpus:** changed (one deposit, two leads)
+**Tests:** 134 passed
+
+- Mike asked whether the bowl in Levene & Bhayro's "Bring to the Gates … upon a
+  good smell and upon good fragrances" is in the corpus. Another image-only
+  scan; OCR'd with the newly installed tesseract, which worked first try.
+- The bowl is **SD 34**, Samir Dehays collection. **It is in the corpus twice**,
+  as two object records for one physical bowl:
+  `IBI-358AAAF4ED2B` ("Waller 2022: SD 34") and `IBI-12617DC13FC0`
+  ("Success-in-business bowl SD 34").
+- The generated dedupe queue is empty, so this pair was never surfaced. The
+  likely cause is that the two designations arrived under different schemes —
+  `Waller 2022 table designation` and `publication designation` — rather than a
+  shared trusted namespace, so the exact-identifier rule never compared them.
+  **That is a detector gap, not just one missed pair**, and the second half of
+  the lead asks for it to be investigated as such.
+- Did **not** merge. Corroborating evidence is now held instead: the article
+  gives 153 mm across, 55 mm deep, fourteen lines in a neat formal hand
+  spiralling clockwise from base to rim, mostly well preserved, Mesopotamia,
+  fourth to seventh centuries. None of those measurements is recorded on either
+  record yet, so the honest order is to record the physical description first
+  and adjudicate second.
+- Also found two source records for the same article, 2005 and 2006 — AfO 51 is
+  a 2005/2006 volume. Second lead opened.
+- Deposited the scan against SRC-A84A167A5779.
+
+---
+
 ## 2026-09-05 — Claude — A clickable launcher for the console
 
 **Claimed:** none

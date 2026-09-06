@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "5762f532db36454669c320efaf8063f0a0002c9cdfacdd981fc82bf2e7a7c14c",
+  "corpus_digest": "5dadaa47df639c67f9091e807803c9b3737dd7c8df1920d7579ecd6961204b7f",
   "migrations": 12,
-  "note": "TEXT-001: Ford 2014 main commentary indexed with retained proposals and original edition references",
-  "recorded_at": "2026-09-06T01:01:41+00:00",
-  "recorded_by": "codex",
+  "note": "Deposited Levene and Bhayro 2006; opened SD 34 duplicate leads",
+  "recorded_at": "2026-09-06T02:04:58+00:00",
+  "recorded_by": "claude",
   "schema_version": "012_publication_registry",
   "tables": {
     "appearance_object_links": {
@@ -15,8 +15,8 @@
       "rows": 1632
     },
     "captures": {
-      "digest": "0bd719027904e1f0aa925065eaa0074f40b7b053c24c210488068af2df6b9bf5",
-      "rows": 23
+      "digest": "6ed34de11b79e7f42f8ea0b15b0dd5897f8d82518657e067d32c179d13924eb4",
+      "rows": 24
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -55,8 +55,8 @@
       "rows": 3606
     },
     "leads": {
-      "digest": "7e0a594707dfd2039385371a4525014d23fbfd93bf8140549548e97795a16db9",
-      "rows": 50
+      "digest": "32f8e83bf39906a1a87aeb26742410c5bcda4c649e073c27565f387bed3403ab",
+      "rows": 52
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
