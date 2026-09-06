@@ -10,7 +10,7 @@ The reader API serves these tables unchanged, so a published static export and
 the local console are the same bytes through the same code path.
 """
 
-from .identity import identity_rows
+from .identity import COVERAGE_GROUPS, identity_rows
 from .publication import current_text_reviews
 from .rights import current_media_reviews, media_evidence
 
@@ -29,10 +29,24 @@ PROJECTION_COLUMNS = {
     "editions": ("object_id", "source_id", "source_type", "citation", "locator",
                  "access_url", "access_status"),
     "media": ("id", "object_id", "appearance_id", "source_id", "media_type", "url", "attribution"),
-    "identity_clusters": ("identity_id", "canonical_object_id", "display_name", "record_status",
-                          "member_count", "source_count", "appearance_count",
+    "identity_clusters": ("identity_id", "canonical_object_id", "member_ids", "display_name",
+                          "record_status", "member_count", "source_count", "appearance_count",
                           "completeness_score", "content_completeness", "reading_score"),
+    "facts": ("object_id", "field", "field_group", "value", "certainty", "source_id", "locator"),
 }
+
+# A fact is short and checkable. Free-text prose is not.
+#
+# The gate reuses the field model rather than inventing a second one: a claim is
+# publishable as a fact when its field sits in a comparison group. That set was
+# built to hold assertions that can be compared to one another, which is the same
+# property that makes them facts rather than someone's expression — and it already
+# excludes `catalogue_description`, the museum prose that kept the research
+# snapshots out of Git. The length cap is belt and braces; the longest value in
+# any comparison group today is 215 characters.
+FACT_FIELDS = frozenset(field for fields in COVERAGE_GROUPS.values() for field in fields)
+FACT_FIELD_GROUP = {field: group for group, fields in COVERAGE_GROUPS.items() for field in fields}
+FACT_MAX_LENGTH = 300
 
 TABLE_NAMES = tuple(PROJECTION_COLUMNS)
 
@@ -179,7 +193,37 @@ class Projection:
 
     def _identity_clusters(self):
         columns = PROJECTION_COLUMNS["identity_clusters"]
-        return [{key: row[key] for key in columns} for row in identity_rows(self.conn)]
+        rows = []
+        for row in identity_rows(self.conn):
+            projected = {key: row[key] for key in columns if key != "member_ids"}
+            # Kept as the stored JSON string so the CSV and JSONL agree.
+            projected["member_ids"] = row["member_ids_json"]
+            rows.append({key: projected[key] for key in columns})
+        return rows
+
+    def _facts(self):
+        """Short, checkable assertions about an object, with their source.
+
+        Without this the projection can say a bowl exists and nothing about it —
+        not where it is, what language it is in, or who it protects.
+        """
+        rows = []
+        for row in self.conn.execute(
+            "SELECT object_id,field,value_text,value_json,normalized_value,certainty,source_id,"
+            "locator FROM claims ORDER BY object_id,field,id"
+        ):
+            if row["field"] not in FACT_FIELDS:
+                continue
+            value = row["normalized_value"] or row["value_text"] or row["value_json"]
+            if not value or len(value) > FACT_MAX_LENGTH:
+                continue
+            rows.append({
+                "object_id": row["object_id"], "field": row["field"],
+                "field_group": FACT_FIELD_GROUP[row["field"]], "value": value,
+                "certainty": row["certainty"], "source_id": row["source_id"],
+                "locator": row["locator"],
+            })
+        return rows
 
     # -- reporting -----------------------------------------------------------
 

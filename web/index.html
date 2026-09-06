@@ -8,18 +8,21 @@
     <link rel="icon" href="data:,">
     <title>Incantation Bowl Index — Research Console</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/reading.css">
+    <script src="/reading.js" defer></script>
     <script src="/app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#workspace">Skip to records</a>
     <div class="app-shell">
       <header class="topbar">
-        <a class="wordmark" href="#/explore" aria-label="Incantation Bowl Index home">
+        <a class="wordmark" href="#/reading" aria-label="Incantation Bowl Index home">
           <span class="wordmark-seal" aria-hidden="true">𐡀</span>
-          <span><strong>Incantation Bowl Index</strong><small>Private research console</small></span>
+          <span><strong>Incantation Bowl Index</strong><small>A local reading room</small></span>
         </a>
         <nav class="view-tabs" aria-label="Research views">
-          <a class="view-tab is-active" href="#/explore" data-route="explore">Explore</a>
+          <a class="view-tab is-active" href="#/reading" data-route="reading">Read</a>
+          <a class="view-tab" href="#/explore" data-route="explore">Explore</a>
           <a class="view-tab" href="#/queues" data-route="queues">Enrichment</a>
           <a class="view-tab" href="#/reviews" data-route="reviews">Concordance</a>
         </nav>
@@ -80,7 +83,9 @@
       </aside>
 
       <main id="workspace" class="workspace" tabindex="-1">
-        <section id="explore-view" class="view is-active" aria-labelledby="explore-title">
+        <section id="reading-view" class="view is-active reading-room" aria-labelledby="reading-title"></section>
+
+        <section id="explore-view" class="view" aria-labelledby="explore-title">
           <div class="workspace-head">
             <div>
               <span class="eyebrow">Probable physical objects</span>

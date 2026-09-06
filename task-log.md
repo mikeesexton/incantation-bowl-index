@@ -94,6 +94,47 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — The reading room
+
+**Claimed:** reading-room plan, tranche 2
+**Corpus:** unchanged
+**Tests:** 154 passed
+
+- `#/reading` is now the default view. Explore, Enrichment and Concordance are
+  unchanged and still reachable; they were good at their job, the problem was
+  that they were the only job.
+- **The projection had no facts.** Building this exposed it: `objects` carried
+  only id, label, type and status, so the reader could not say where a bowl is,
+  what language it is in, or who it protects. Added a gated `facts` table —
+  4,473 rows — whose gate reuses the field model rather than inventing a second
+  one: a claim is publishable as a fact when its field sits in a comparison
+  group. That set was built to hold assertions comparable to one another, which
+  is the same property that makes them facts rather than expression, and it
+  already excludes `catalogue_description`, the museum prose that kept the
+  research snapshots out of Git. Longest value in any comparison group is 215
+  characters; the cap is 300.
+- Also added `member_ids` to `identity_clusters`, without which texts and
+  editions keyed by object could not be attached to the identity that owns them.
+- **The spiral is drawn from the data.** Turns come from the object's recorded
+  line count — "Eleven spiral lines" gives eleven — and a record with no line
+  count gets a faint dashed estimate rather than a confident lie. For the 996
+  records with no image it says something true instead of showing a grey box.
+- Object pages read as catalogue entries: what it says, who it names, who wrote
+  it *as reported*, what is drawn on it, size, condition, where it is published,
+  where it is said to come from. The evidence chain is present but collapsed.
+- The discipline survives into the reading view: CBS 2923 shows Montgomery's
+  17.3 cm beside the Penn register's 17.7 cm, each with its source, rather than
+  picking one.
+- Dark mode built from the start, both in the reading room and in the base
+  shell, which was `color-scheme: light` only. Added a Hebrew stack (SBL Hebrew
+  → Ezra SIL → Frank Ruehl) for when original-script texts arrive.
+- Verified: front page leads with the readable bowls, withheld texts show a
+  citation and link, no media URL appears while approvals are 0, and the three
+  curation tabs work unchanged.
+- Next: tranche 3, the scholarship index.
+
+---
+
 ## 2026-09-05 — Claude — The projection layer
 
 **Claimed:** reading-room plan, the projection hinge
