@@ -12,6 +12,8 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 from .db import PROJECT_ROOT, connect, migrate
 from .identity import CORE_COVERAGE, identity_rows
+from .projection import PROJECTION_COLUMNS, Projection
+from .public_export import projection_manifest
 from .ids import new_id
 from .proofreading import current_text_reviews
 from .rights import current_media_reviews
@@ -133,6 +135,36 @@ class CorpusCatalog:
                     object_types[identity_id].add(item["object_type"])
             for identity_id, values in object_types.items():
                 self.by_id[identity_id]["object_types"] = sorted(values)
+
+            # The reader surface never touches the rows above. It reads the same
+            # gated projection the file export writes, so the local console and a
+            # published static export are the same bytes through the same code.
+            projection = Projection(conn)
+            self.projection_tables = projection.tables()
+            manifest = projection_manifest(projection, self.projection_tables)
+            manifest["tables"] = {
+                name: {"rows": len(rows), "url": "/api/reader/" + name}
+                for name, rows in self.projection_tables.items()
+            }
+            manifest["served_from"] = "local console"
+            self.projection_manifest = manifest
+
+    def reader_manifest(self):
+        return self.projection_manifest
+
+    def reader_table(self, name, params):
+        """One projected table, optionally windowed. Shape matches the export exactly."""
+        if name not in PROJECTION_COLUMNS:
+            return None
+        rows = self.projection_tables[name]
+        try:
+            limit = int(params.get("limit", ["0"])[0])
+            offset = max(0, int(params.get("offset", ["0"])[0]))
+        except ValueError:
+            limit, offset = 0, 0
+        window = rows[offset:offset + limit] if limit > 0 else rows[offset:]
+        return {"table": name, "columns": list(PROJECTION_COLUMNS[name]),
+                "total": len(rows), "offset": offset, "rows": window}
 
     def stats(self):
         coverage_fields = (
@@ -423,6 +455,11 @@ def make_handler(catalog, token):
                 elif path.startswith("/api/identities/"):
                     result = catalog.dossier(path.rsplit("/", 1)[-1])
                     self._json(result) if result else self._error(404, "Identity not found")
+                elif path == "/api/reader/manifest":
+                    self._json(catalog.reader_manifest())
+                elif path.startswith("/api/reader/"):
+                    result = catalog.reader_table(path.rsplit("/", 1)[-1], params)
+                    self._json(result) if result else self._error(404, "No such projected table")
                 elif path == "/api/reviews":
                     self._json(catalog.reviews(params))
                 elif path.startswith("/api/reviews/"):

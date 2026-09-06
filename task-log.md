@@ -94,6 +94,39 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — The projection layer
+
+**Claimed:** reading-room plan, the projection hinge
+**Corpus:** unchanged
+**Tests:** 154 passed (145 before; +9)
+
+- Extracted `src/bowl_index/projection.py`: one gated view of the corpus that
+  both the file exporter and the console now build from. The gates — which
+  texts may be shown, which media URLs may be named, whether a link would leak
+  a private capture — exist in exactly one place. A second implementation is a
+  second chance to publish something withheld.
+- `public_export.py` shrank to what it should be: writing files. The gating
+  logic left it entirely.
+- Added `/api/reader/manifest` and `/api/reader/<table>` to the console. They
+  serve the projection **unchanged**, so a published static export and the
+  local reading room are the same bytes through the same code path. That is the
+  whole "local now, public later" bet, and it is now structural rather than a
+  promise.
+- **The equivalence is tested, not asserted.** `test_reader_projection.py`
+  builds every table through the API path and diffs it against the file the
+  exporter writes. Verified on the real corpus too: all eight tables identical,
+  1,590 objects and 196 texts included.
+- Gate behaviour confirmed live: 45 texts included, 151 withheld, **all 151
+  carrying citation and locator**, 146 with a resolvable link, 0 of 325 media
+  emitted, and no withheld content anywhere in the payload.
+- `identity_clusters` now carries `display_name`, `completeness_score`,
+  `content_completeness` and `reading_score`, so the reading room can rank and
+  name records without reading a raw identity row.
+- An unknown table 404s rather than falling through to something private.
+- Next: the reading room itself, on top of this.
+
+---
+
 ## 2026-09-05 — Claude — Reading room, tranche 1: foundations
 
 **Claimed:** reading-room plan, tranche 1
