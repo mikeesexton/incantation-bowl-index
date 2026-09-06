@@ -1,5 +1,6 @@
 import csv
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -60,6 +61,69 @@ CONTENT_COVERAGE = {
 
 # Every group that is counted for coverage and compared for conflicts.
 COVERAGE_GROUPS = {**CORE_COVERAGE, **CONTENT_COVERAGE}
+
+# The ten facets the release gates, next_action and the coverage bars address.
+# `completeness_score` counts these and only these: it is reported as "n/10"
+# everywhere, and summing all 23 flags into it produced scores of 12/10.
+CORE_ORDER = (
+    "location", "provenance", "dating", "dimensions", "material", "language",
+    "script", "text_edition", "translation", "image",
+)
+
+# What a reader, rather than a curator, can actually engage with. Weighted so a
+# published text outranks a filled-in measurement: 736 of 1,322 identities score
+# zero here, and completeness ordering cannot tell them from the readable ones.
+READING_WEIGHTS = {
+    "public_text": 3, "has_image": 2, "has_translation": 2,
+    "has_client": 1, "has_ritual": 1, "has_biblical_intertexts": 1,
+    "has_visual": 1, "has_text_form": 1, "has_practitioner": 1,
+}
+
+# Labels record how a record was discovered, not what the object is. These are
+# the discovery artefacts worth removing before showing a name to a reader.
+_LABEL_NOISE = re.compile(
+    r"(?:\s*[-\u2014]\s*)?\b(?:COJS\s+)?(?:exhibition|translation|catalogue|listing|index)"
+    r"\s+(?:appearance|entry)\s*$",
+    re.I,
+)
+_LABEL_PREFIX = re.compile(r"^(?:Waller\s*2022|Apotropaic\s+index|Context\s+citation)\s*[::]\s*", re.I)
+
+# Identifier schemes that name an object the way a catalogue would, best first.
+_NAMING_SCHEMES = (
+    "british museum museum number", "penn catalogue number", "accession number",
+    "museum number", "collection designation", "publication register identifier",
+    "field number", "montgomery 1913 text number", "publication designation",
+)
+
+
+def display_name(label, identifiers=()):
+    """A name a reader can use, preferring a catalogue identifier to a label.
+
+    Falls back to the recorded label with its discovery suffix removed. The raw
+    label is never discarded — object pages show it under "Recorded as".
+    """
+    cleaned = _LABEL_PREFIX.sub("", label or "").strip()
+    cleaned = _LABEL_NOISE.sub("", cleaned).strip(" -\u2014\u00b7")
+    if cleaned and not cleaned.casefold().startswith(("untitled", "unknown")):
+        return cleaned
+    lookup = {}
+    for item in identifiers:
+        scheme, _, value = str(item).partition(":")
+        if value.strip():
+            lookup.setdefault(scheme.strip().casefold(), value.strip())
+    for scheme in _NAMING_SCHEMES:
+        if scheme in lookup:
+            return lookup[scheme]
+    return cleaned or (label or "Unnamed record")
+
+
+def reading_score(row):
+    """How much of this record a reader can actually engage with."""
+    total = READING_WEIGHTS["public_text"] if row.get("public_text_count") else 0
+    for key, weight in READING_WEIGHTS.items():
+        if key != "public_text":
+            total += weight * int(row.get(key, 0))
+    return total
 
 # Fields deliberately outside comparison, each with the reason. A claim field that
 # is neither grouped nor listed here is a gap, not a default: see
@@ -206,11 +270,7 @@ def identity_rows(conn):
             item["text_type"] == "translation" for item in cluster_texts
         )
         coverage["image"] = any(item["media_type"] == "image" for item in cluster_media)
-        core_order = (
-            "location", "provenance", "dating", "dimensions", "material", "language",
-            "script", "text_edition", "translation", "image",
-        )
-        next_action = next((name for name in core_order if not coverage[name]), "rights review")
+        next_action = next((name for name in CORE_ORDER if not coverage[name]), "rights review")
         conflict_fields = []
         for name, fields in COVERAGE_GROUPS.items():
             values = {
@@ -253,7 +313,10 @@ def identity_rows(conn):
             "text_count": len(cluster_texts),
             "public_text_count": sum(bool(item["public_ok"]) for item in cluster_texts),
             "media_count": len(cluster_media),
-            "completeness_score": sum(coverage.values()),
+            "completeness_score": sum(int(coverage[name]) for name in CORE_ORDER),
+            "content_completeness": sum(
+                int(coverage[name]) for name in CONTENT_COVERAGE if name in coverage
+            ),
             "next_action": next_action,
             "conflict_fields_json": json.dumps(
                 sorted(substantive_conflict_fields), ensure_ascii=False
@@ -273,6 +336,8 @@ def identity_rows(conn):
             "identifiers_json": json.dumps(sorted(cluster_identifiers), ensure_ascii=False),
         }
         row.update({"has_" + key: int(value) for key, value in coverage.items()})
+        row["display_name"] = display_name(row["label"], sorted(cluster_identifiers))
+        row["reading_score"] = reading_score(row)
         rows.append(row)
     return rows
 

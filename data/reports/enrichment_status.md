@@ -26,10 +26,10 @@
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 375 |
-| 3–5 of 10 | 797 |
-| 6–8 of 10 | 97 |
-| 9–10 of 10 | 48 |
+| 0–2 of 10 | 499 |
+| 3–5 of 10 | 712 |
+| 6–8 of 10 | 110 |
+| 9–10 of 10 | 1 |
 
 ## Next-action queue
 

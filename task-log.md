@@ -94,6 +94,39 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Reading room, tranche 1: foundations
+
+**Claimed:** reading-room plan, tranche 1
+**Corpus:** unchanged — derived fields only
+**Tests:** 145 passed (134 before; +11)
+
+- **Fixed the 12/10 bug.** `completeness_score` summed all 23 coverage flags
+  while four UI sites rendered it as `n/10`; five rows displayed `12/10`, and
+  the default sort ordered the corpus by it. It now counts the ten core facets
+  only — max across the corpus is 9 — and `content_completeness` reports the
+  thirteen content facets separately. Every consumer already assumed /10, so
+  narrowing the definition fixed all four sites at once.
+- **`display_name(label, identifiers)`.** Labels record how a record was found:
+  "Penn Museum CBS 2923 / B2923 exhibition appearance", "Waller 2022: SD 34".
+  The resolver strips those discovery prefixes and suffixes, falls back to a
+  catalogue identifier when there is no usable label, and never returns empty.
+  The raw label is untouched in the data — object pages will show it under
+  "Recorded as".
+- **`reading_score`.** What a reader can engage with, weighted so a published
+  text outranks a filled-in measurement. Confirms the premise of the plan:
+  **736 of 1,322 identities score zero**, and completeness ordering cannot tell
+  them apart from the 48 readable ones.
+- `CORE_ORDER` is now a module constant rather than a local tuple, so
+  `next_action` and the score cannot drift apart.
+- Found while verifying: the launcher serves **stale code** after a Python
+  edit, because the server is a long-lived process and `↻ Refresh` reloads data
+  from SQLite, not code. Documented in `bin/README.md`; restart with
+  `bin/stop-console.command`.
+- Not yet done: the `/api/reader/*` projection. That is the publish-safety
+  hinge and gets its own tranche and its own equivalence test.
+
+---
+
 ## 2026-09-05 — Claude — Bowl SD 34 is in the corpus twice
 
 **Claimed:** none (two leads opened for review)

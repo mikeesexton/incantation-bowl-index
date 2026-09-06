@@ -19,6 +19,11 @@ process.
 
 Logs: `data/private/console.log`. Set `IBI_PORT` to use a different port.
 
+**After changing Python code, restart it.** The server is a long-lived
+background process, and `↻ Refresh` in the browser reloads *data* from SQLite,
+not code. Run `bin/stop-console.command` and click the app again, or you will
+be looking at the previous version of the server.
+
 **If it fails to start** it shows a dialog explaining why — usually a missing
 `.venv`, which is fixed once with:
 

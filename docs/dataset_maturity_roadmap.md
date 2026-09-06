@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-06T01:01:10+00:00`
+Generated: `2026-09-06T02:38:14+00:00`
 
 ## Portfolio status
 
@@ -63,7 +63,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Media with a current ledger entry | 325/325 |
 | Media with completed rights decisions / approved for reuse | 0 / 0 |
 | Blocked leads | 31 |
-| Open or active leads | 10 |
+| Open or active leads | 12 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication coverage currently uses identifier schemes as a proxy. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.
