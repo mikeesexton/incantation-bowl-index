@@ -7,7 +7,7 @@
 (function () {
   "use strict";
   const TABLES = ["identity_clusters", "objects", "facts", "texts", "editions", "sources", "media",
-    "works", "contributors", "scholarship_decades"];
+    "works", "contributors", "scholarship_decades", "publications"];
   const data = {loaded: false};
   const esc = value => String(value === null || value === undefined ? "" : value)
     .replace(/[&<>"']/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[ch]));
@@ -42,6 +42,12 @@
     data.sourceById = Object.fromEntries(data.sources.map(s => [s.id, s]));
     data.objectById = Object.fromEntries(data.objects.map(o => [o.id, o]));
     data.clusterById = Object.fromEntries(data.identity_clusters.map(c => [c.identity_id, c]));
+    data.identity_clusters.forEach(c => {
+      const facts = data.factsBy[c.identity_id] || [];
+      const text = (data.textsBy[c.identity_id] || []).find(x => x.content_status === "included");
+      c.haystack = [c.display_name, ...facts.map(f => f.value), text ? text.content : ""]
+        .join(" ").toLowerCase();
+    });
     data.loaded = true;
     return data;
   }
@@ -111,31 +117,134 @@
       </div></a></article>`;
   }
 
-  function renderIndex(view) {
-    const readable = data.identity_clusters
-      .filter(c => c.reading_score >= 4)
+  /* Ways in: every content facet, counted, from the facts already loaded. */
+  const BROWSE = [
+    ["client", "People named"], ["ritual", "What they do"],
+    ["biblical_intertexts", "Scripture quoted"], ["practitioner", "Hands and scribes"],
+    ["visual", "What is drawn"], ["location", "Where they are"],
+    ["language", "Language"], ["provenance", "Where they come from"],
+  ];
+
+  function facetCounts(group) {
+    const tally = {};
+    data.facts.filter(f => f.field_group === group).forEach(f => {
+      const owner = data.clusterById[ownerOf(f.object_id)];
+      if (!owner) return;
+      f.value.replace(/^\[|\]$/g, "").split(/"\s*,\s*"|;\s*/).forEach(raw => {
+        const value = raw.replace(/^"|"$/g, "").trim();
+        if (!value) return;
+        (tally[value] = tally[value] || new Set()).add(owner.identity_id);
+      });
+    });
+    return Object.entries(tally).map(([value, ids]) => ({value, count: ids.size, ids: [...ids]}))
+      .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
+  }
+
+  let ownerIndex = null;
+  function ownerOf(objectId) {
+    if (!ownerIndex) {
+      ownerIndex = {};
+      data.identity_clusters.forEach(c => c.members.forEach(m => { ownerIndex[m] = c.identity_id; }));
+    }
+    return ownerIndex[objectId];
+  }
+
+  function renderBrowse(view, group) {
+    const label = (BROWSE.find(b => b[0] === group) || [group, group])[1];
+    const rows = facetCounts(group);
+    view.innerHTML = `<div class="reading-head">
+        <a class="entry-back" href="#/reading">← Bowls worth reading</a>
+        <h1 id="reading-title">${esc(label)}</h1>
+        <p class="standfirst">${rows.length.toLocaleString()} distinct values across
+          ${new Set(rows.flatMap(r => r.ids)).size.toLocaleString()} bowls.</p>
+      </div>
+      <ul class="facet-list">${rows.slice(0, 300).map(r => `<li>
+        <a href="#/reading?${group}=${encodeURIComponent(r.value)}">
+          <span>${esc(r.value)}</span><em>${r.count}</em></a></li>`).join("")}</ul>
+      ${rows.length > 300 ? `<p class="entry-note">and ${rows.length - 300} more</p>` : ""}`;
+  }
+
+  function renderPublications(view) {
+    const rows = data.publications;
+    view.innerHTML = `<div class="reading-head">
+        <a class="entry-back" href="#/reading">← Bowls worth reading</a>
+        <h1 id="reading-title">Bowls by publication</h1>
+        <p class="standfirst">Which edition publishes which bowl — the question the publication
+          registry was built to answer. ${rows.filter(r => r.resolution === "resolved").length}
+          of ${rows.length} designations resolve to a work in the library.</p>
+      </div>
+      <ul class="fact-list">${rows.map(r => {
+        const source = r.source_id ? data.sourceById[r.source_id] : null;
+        return `<li><span><a href="#/reading?publication=${encodeURIComponent(r.publication_key)}">${esc(r.publication_key)}</a>
+          ${source ? `<small>${esc(source.title || "")}</small>` : `<em class="unresolved">${esc(r.resolution)}</em>`}</span>
+          <cite>${r.objects} bowl${r.objects === 1 ? "" : "s"}</cite></li>`;
+      }).join("")}</ul>`;
+  }
+
+  function renderIndex(view, query) {
+    const params = new URLSearchParams(query || "");
+    const term = (params.get("q") || "").trim().toLowerCase();
+    const publication = params.get("publication");
+    const facetGroup = BROWSE.map(b => b[0]).find(g => params.get(g));
+    const facetValue = facetGroup ? params.get(facetGroup) : null;
+    let pool = data.identity_clusters;
+    let heading = "Bowls worth reading", note = "";
+    if (publication) {
+      const row = data.publications.find(p => p.publication_key === publication);
+      const ids = new Set((row ? JSON.parse(row.object_ids) : []).map(ownerOf));
+      pool = pool.filter(c => ids.has(c.identity_id));
+      heading = publication; note = `Bowls published in ${publication}.`;
+    } else if (facetValue) {
+      const hit = facetCounts(facetGroup).find(f => f.value === facetValue);
+      const ids = new Set(hit ? hit.ids : []);
+      pool = pool.filter(c => ids.has(c.identity_id));
+      heading = facetValue; note = `Bowls where ${facetGroup.replace(/_/g, " ")} is “${facetValue}”.`;
+    } else if (term) {
+      pool = pool.filter(c => term.split(/\s+/).every(word => c.haystack.includes(word)));
+      heading = `“${term}”`; note = `${pool.length.toLocaleString()} bowls match.`;
+    }
+    const filtered = Boolean(term || facetValue || publication);
+    const readable = pool
+      .filter(c => filtered || c.reading_score >= 4)
       .sort((a, b) => b.reading_score - a.reading_score ||
         a.display_name.localeCompare(b.display_name));
     const thin = data.identity_clusters.length - readable.length;
     const m = data.manifest;
     view.innerHTML = `<div class="reading-head">
-        <span class="eyebrow">Late antique Mesopotamia, roughly 500–700 CE</span>
-        <h1 id="reading-title">Bowls worth reading</h1>
-        <p class="standfirst">Ordinary clay vessels, inscribed in a spiral and buried upside
+        ${filtered ? `<a class="entry-back" href="#/reading">← Bowls worth reading</a>` :
+          `<span class="eyebrow">Late antique Mesopotamia, roughly 500–700 CE</span>`}
+        <h1 id="reading-title">${esc(heading)}</h1>
+        ${filtered ? "" : `<p class="standfirst">Ordinary clay vessels, inscribed in a spiral and buried upside
           down beneath the floors of houses in Sasanian Mesopotamia to keep something out.
           This index holds <strong>${data.identity_clusters.length.toLocaleString()}</strong>
           records of them. Measured against the field's own control list of published Jewish
           Babylonian Aramaic bowls, it cites <strong>115 of 115</strong> publications and has
           attached objects to almost none of them, so treat coverage as a reading list rather
-          than a corpus.</p>
-        <p class="standfirst-note">${m.texts_included_rows} bowls have a text you can read here.
+          than a corpus.</p>`}
+        ${note ? `<p class="standfirst">${esc(note)}</p>` : ""}
+        ${filtered ? "" : `<p class="standfirst-note">${m.texts_included_rows} bowls have a text you can read here.
           ${m.texts_withheld_rows} more name the edition that prints theirs.
           No image is cleared for reuse yet, so every mark below is drawn from the object's own
-          recorded line count.</p>
+          recorded line count.</p>`}
       </div>
+      <form class="reading-search" id="reading-search-form" role="search">
+        <input id="reading-search" type="search" name="q" value="${esc(term)}"
+          placeholder="A name, a demon, a verse, a museum, a word in a text…"
+          aria-label="Search the corpus" autocomplete="off">
+      </form>
+      ${filtered ? "" : `<nav class="browse-strip" aria-label="Browse by">
+        ${BROWSE.map(([g, l]) => `<a href="#/reading/browse/${g}">${esc(l)}</a>`).join("")}
+        <a href="#/reading/publications">By publication</a></nav>`}
       <div class="bowl-grid">${readable.map(card).join("")}</div>
-      <p class="thin-note"><a href="#/explore">${thin.toLocaleString()} further records</a>
-        hold little beyond an identifier and a source. They are in the research explorer.</p>`;
+      ${readable.length ? "" : `<p class="thin-note">Nothing matches. Try fewer words.</p>`}
+      ${filtered ? "" : `<p class="thin-note"><a href="#/explore">${thin.toLocaleString()} further records</a>
+        hold little beyond an identifier and a source. They are in the research explorer.</p>`}`;
+    const form = view.querySelector("#reading-search-form");
+    if (form) form.addEventListener("submit", event => {
+      event.preventDefault();
+      const value = view.querySelector("#reading-search").value.trim();
+      location.hash = value ? `#/reading?q=${encodeURIComponent(value)}` : "#/reading";
+    });
   }
 
   function factList(id, group, heading) {
@@ -318,10 +427,14 @@
       view.innerHTML = `<p class="dossier-loading">Could not read the corpus: ${esc(error.message)}</p>`;
       return;
     }
-    const match = location.hash.match(/^#\/reading\/(.+)$/);
-    if (location.hash.startsWith("#/scholarship")) renderScholarship(view);
-    else if (match) renderObject(view, decodeURIComponent(match[1]));
-    else renderIndex(view);
+    const hash = location.hash;
+    const browse = hash.match(/^#\/reading\/browse\/([a-z_]+)/);
+    const object = hash.match(/^#\/reading\/(IDENT-[^?]+)/);
+    if (hash.startsWith("#/scholarship")) renderScholarship(view);
+    else if (hash.startsWith("#/reading/publications")) renderPublications(view);
+    else if (browse) renderBrowse(view, browse[1]);
+    else if (object) renderObject(view, decodeURIComponent(object[1]));
+    else renderIndex(view, hash.split("?")[1] || "");
     view.scrollTop = 0;
   }
 

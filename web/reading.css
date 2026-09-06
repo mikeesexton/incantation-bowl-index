@@ -131,3 +131,24 @@
 .scope-group .fact-list { padding: 0 0 .9rem; }
 .fact-list em.held { font: .68rem/1 var(--sans); font-style: normal; letter-spacing: .06em;
   text-transform: uppercase; color: var(--reading-accent); margin-left: .5rem; }
+
+/* Ways in */
+.reading-search { margin: 0 0 1.4rem; max-width: 34rem; }
+.reading-search input { width: 100%; padding: .7rem .9rem; background: var(--reading-surface);
+  border: 1px solid var(--clay-line); border-radius: 3px; color: inherit; font: 1rem var(--serif); }
+.reading-search input:focus-visible { outline: 2px solid var(--reading-accent); outline-offset: 1px; }
+.browse-strip { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0 0 1.9rem; }
+.browse-strip a { padding: .32rem .7rem; border: 1px solid var(--clay-line); border-radius: 999px;
+  font: .82rem var(--sans); text-decoration: none; }
+.browse-strip a:hover, .browse-strip a:focus-visible { border-color: var(--reading-accent); }
+.facet-list { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 2.5rem; }
+.facet-list li { break-inside: avoid; }
+.facet-list a { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  padding: .38rem 0; border-bottom: 1px solid var(--clay-line); text-decoration: none;
+  font: 1rem/1.4 var(--serif); color: inherit; }
+.facet-list a:hover span, .facet-list a:focus-visible span { color: var(--reading-accent); }
+.facet-list em { font: .76rem var(--sans); font-style: normal; color: var(--brownink-soft); }
+.fact-list small { display: block; font: .78rem var(--sans); color: var(--brownink-soft); margin-top: .12rem; }
+.fact-list em.unresolved { font: .7rem var(--sans); font-style: normal; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--amber); margin-left: .5rem; }
+@media (max-width: 620px) { .facet-list { columns: 1; } }

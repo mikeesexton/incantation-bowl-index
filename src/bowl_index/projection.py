@@ -11,9 +11,11 @@ the local console are the same bytes through the same code path.
 """
 
 import json
+import re
 
 from .identity import COVERAGE_GROUPS, identity_rows
 from .publication import current_text_reviews
+from .publications import current_registry, publication_keys
 from .rights import current_media_reviews, media_evidence
 from .scholarship import (
     SCOPE_LABELS, contributor_groups, decade_series, works,
@@ -44,6 +46,8 @@ PROJECTION_COLUMNS = {
     "contributors": ("contributor_key", "display_name", "spellings", "works",
                      "objects_published", "first_year", "last_year", "needs_check"),
     "scholarship_decades": ("decade", "held", "field_control_list"),
+    "publications": ("publication_key", "source_id", "resolution", "blocker", "objects",
+                     "object_ids"),
 }
 
 # A fact is short and checkable. Free-text prose is not.
@@ -226,6 +230,30 @@ class Projection:
             row["spellings"] = json.dumps(row["spellings"], ensure_ascii=False)
             row["needs_check"] = int(row["needs_check"])
         return [{key: row[key] for key in PROJECTION_COLUMNS["contributors"]} for row in rows]
+
+    def _publications(self):
+        """Which bowls a publication publishes — the question SCHOL-004 made askable."""
+        counts, registry = publication_keys(self.conn), current_registry(self.conn)
+        members = {}
+        for row in self.conn.execute(
+            "SELECT object_id,value FROM identifiers WHERE scheme=? AND object_id IS NOT NULL",
+            ("publication object key",)
+        ):
+            key = row["value"].split("::")[0].strip()
+            key = re.sub(r"\s+(?:bowl|popularity bowl)\b.*$", "", key, flags=re.I).strip()
+            members.setdefault(key, set()).add(row["object_id"])
+        rows = []
+        for key in sorted(counts, key=lambda k: -counts[k]):
+            entry = registry.get(key, {})
+            rows.append({
+                "publication_key": key,
+                "source_id": entry.get("source_id"),
+                "resolution": entry.get("resolution", "unregistered"),
+                "blocker": entry.get("blocker"),
+                "objects": counts[key],
+                "object_ids": json.dumps(sorted(members.get(key, [])), ensure_ascii=False),
+            })
+        return rows
 
     def _scholarship_decades(self):
         return decade_series(self.conn)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-06T04:00:00+00:00",
+  "updated_at": "2026-09-06T04:40:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -296,6 +296,14 @@
           "owner": "Research",
           "done_when": "Every contributor group with more than one spelling has been confirmed as one person, and any wrong merge has an alias-ledger override.",
           "evidence": "107 contributors derived from 199 works by surname and first initial, with bare surnames folded into a named scholar only where exactly one scholar of that surname exists. Fourteen multi-spelling groups were checked by eye on 2026-09-05 and all are one person. Two defects were found and fixed in the process: the SCHOL-002 authors placeholder invented an author called 'see citation]' and keyed every '[and others' name on the surname 'others', which had merged Geller with Gordon and Schwab with Shaked; and bare surnames left by stripping it were splitting Levene and Gordon from their full names. Migration 013 adds an append-only alias ledger for overrides in either direction."
+        },
+        {
+          "id": "SCHOL-008",
+          "title": "Expose the publication registry to readers",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "A reader can ask which bowls a publication publishes, and see which designations do not resolve.",
+          "evidence": "A `publications` projection table over migration 012's registry, and a page listing all 19 keys with their object counts: Segal 2000 at 252 bowls, Montgomery 1913 at 84, Shaked-Ford-Bhayro 2013 at 33, MRLA 8 at 19, Isbell 1975 at 17. 18 of 19 resolve to a work in the library; the unresolved one shows its resolution rather than implying a source. Selecting a publication filters the corpus to its bowls."
         }
       ]
     },
@@ -369,6 +377,14 @@
           "owner": "Research",
           "done_when": "Each language group has enumerated corpora from its primary editions, and the 819 records with no language claim are assessed or explicitly marked unreadable or unknown.",
           "evidence": "Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002. Since QA-008, the 205 NLI catalogue language codes count toward language coverage. Note that none of those 205 objects also carries an edition-based language claim, so they are unverified catalogue classifications rather than corroborated attributions; the earlier expectation that they would expose catalogue-versus-edition disagreements was not borne out. A better external benchmark is now available. The corpus-wide distribution benchmark traces to Morony 2003: 87 - approximately 62% Jewish, 23% Mandaean, 13% Syriac - cited and endorsed by Ford and Abudraham 2018 n. 3, and quoted from there by Waller 2025 p. 3 n. 1. Ford and Abudraham note Morony worked from a corpus far smaller than what is now available, so this is a twenty-year-old estimate endorsed twice rather than a current census; cite it as Morony's, with the caveat. Against it the index runs 80.0% JBA, 10.6% Mandaic, 9.5% Syriac across 729 classified records - a shortfall of roughly 91 Mandaic objects. Syriac is close; JBA is over-represented by about the margin publication bias predicts. Waller's list is JBA only, so Mandaic needs its own control list. Ford and Abudraham 2018 was obtained on 2026-09-05 and is NOT the Mandaic control list this task needs: it publishes eight confiscated bowls, six Syriac and two Mandaic, and is an object publication rather than a census. No Mandaic equivalent of Waller's JBA list is known to exist, so the Mandaic denominator has to be assembled from the corpus editions themselves - Pognon 1898, Yamauchi 1967, McCullough 1967, Segal 2000, Muller-Kessler and Morgenstern, Abudraham's re-editions - all now in `sources`."
+        },
+        {
+          "id": "META-009",
+          "title": "Make the content facets browsable",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "Every content facet is an entry point with counts, and a reader can move from a value to the bowls carrying it.",
+          "evidence": "Eight browse axes in the reading room - people named, what they do, scripture quoted, hands and scribes, what is drawn, where they are, language, provenance - counted from the projection's facts table client-side, so a published static export computes them the same way and no query endpoint breaks the equivalence. Ritual purpose alone yields 35 distinct values across 43 bowls, including 'Divorce document' (4) and 'Semamit historiola' (4). Corpus-wide search covers display names, every fact value and the 45 published texts; 'lilith' returns 31 bowls."
         }
       ]
     },
@@ -703,6 +719,10 @@
     {
       "date": "2026-09-05",
       "note": "Built the scholarship index: 199 works separated from the 644 museum, auction and dealer records, a scope ledger (migration 013) with 26 derived and 173 honestly unclassified, 107 contributors grouped from free-text author strings, and a decade curve plotted against Waller's control list. Fixed two contributor defects found while building it: the SCHOL-002 authors placeholder had merged Geller with Gordon and Schwab with Shaked, and bare surnames were splitting Levene and Gordon from their full names. Gordon now shows correctly at 8 works. Ranking is by publications, not citations, because only 9% of sources carry a DOI."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Ways in: corpus-wide search, eight counted browse axes over the content facets, and publication pages backed by a new `publications` projection table. Facets are computed client-side from the facts table so a published static export behaves identically; the API/export equivalence still holds across all 13 tables."
     }
   ],
   "priorities": [

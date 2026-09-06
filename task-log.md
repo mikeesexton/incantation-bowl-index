@@ -94,6 +94,36 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Ways in
+
+**Claimed:** reading-room plan, tranche 4 (META-009, SCHOL-008 done)
+**Corpus:** unchanged
+**Tests:** 173 passed (170 before; +3)
+
+- **Search** over the whole corpus: display names, every fact value, and the 45
+  published texts. "lilith" returns 31 bowls.
+- **Eight browse axes** over the content facets — people named, what they do,
+  scripture quoted, hands and scribes, what is drawn, where they are, language,
+  provenance — each with counts. Ritual purpose alone gives 35 distinct values
+  across 43 bowls: "Divorce document" (4), "Semamit historiola" (4),
+  "Expulsion of the child-killing demon from Mama, Abraham, and their household".
+  This is the thing the corpus knew and could not show.
+- Facets are computed **client-side from the projection's facts table** rather
+  than through a query endpoint. That was deliberate: a published static export
+  computes them the same way, so adding a server-side facet API would have
+  broken the equivalence the whole projection layer exists to guarantee.
+- **Publication pages** from a new `publications` projection table over
+  migration 012's registry. Segal 2000 publishes 252 bowls, Montgomery 1913
+  84, Shaked–Ford–Bhayro 2013 33, MRLA 8 19, Isbell 1975 17. 18 of 19 keys
+  resolve; the unresolved one shows its status rather than implying a source.
+  Selecting one filters the corpus to its bowls — the payoff for SCHOL-004.
+- Equivalence re-verified after adding three tables: **13 tables, live API
+  identical to the file export.**
+- Remaining from the plan: tranche 5 polish — mobile filters below 900px in the
+  curation views, and image thumbnails once rights clear.
+
+---
+
 ## 2026-09-05 — Claude — The scholarship index
 
 **Claimed:** reading-room plan, tranche 3 (SCHOL-006, SCHOL-007 opened)
