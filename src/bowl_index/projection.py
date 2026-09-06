@@ -10,9 +10,14 @@ The reader API serves these tables unchanged, so a published static export and
 the local console are the same bytes through the same code path.
 """
 
+import json
+
 from .identity import COVERAGE_GROUPS, identity_rows
 from .publication import current_text_reviews
 from .rights import current_media_reviews, media_evidence
+from .scholarship import (
+    SCOPE_LABELS, contributor_groups, decade_series, works,
+)
 
 
 EDITION_SOURCE_TYPES = ("book", "article", "chapter", "catalogue", "thesis", "excavation_report")
@@ -33,6 +38,12 @@ PROJECTION_COLUMNS = {
                           "record_status", "member_count", "source_count", "appearance_count",
                           "completeness_score", "content_completeness", "reading_score"),
     "facts": ("object_id", "field", "field_group", "value", "certainty", "source_id", "locator"),
+    "works": ("source_id", "title", "authors", "issued_year", "container_title", "citation",
+              "doi", "source_type", "access_status", "scope", "scope_label", "scope_basis",
+              "objects_published", "document_held"),
+    "contributors": ("contributor_key", "display_name", "spellings", "works",
+                     "objects_published", "first_year", "last_year", "needs_check"),
+    "scholarship_decades": ("decade", "held", "field_control_list"),
 }
 
 # A fact is short and checkable. Free-text prose is not.
@@ -200,6 +211,24 @@ class Projection:
             projected["member_ids"] = row["member_ids_json"]
             rows.append({key: projected[key] for key in columns})
         return rows
+
+    def _works(self):
+        rows = works(self.conn)
+        for row in rows:
+            row["scope_label"] = SCOPE_LABELS.get(row["scope"], "Not yet classified")
+            row["document_held"] = int(row["document_held"])
+        return [{key: row[key] for key in PROJECTION_COLUMNS["works"]} for row in rows]
+
+    def _contributors(self):
+        rows = contributor_groups(self.conn)
+        for row in rows:
+            # A JSON string keeps the CSV and JSONL forms identical.
+            row["spellings"] = json.dumps(row["spellings"], ensure_ascii=False)
+            row["needs_check"] = int(row["needs_check"])
+        return [{key: row[key] for key in PROJECTION_COLUMNS["contributors"]} for row in rows]
+
+    def _scholarship_decades(self):
+        return decade_series(self.conn)
 
     def _facts(self):
         """Short, checkable assertions about an object, with their source.

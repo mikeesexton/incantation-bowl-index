@@ -6,7 +6,8 @@
  */
 (function () {
   "use strict";
-  const TABLES = ["identity_clusters", "objects", "facts", "texts", "editions", "sources", "media"];
+  const TABLES = ["identity_clusters", "objects", "facts", "texts", "editions", "sources", "media",
+    "works", "contributors", "scholarship_decades"];
   const data = {loaded: false};
   const esc = value => String(value === null || value === undefined ? "" : value)
     .replace(/[&<>"']/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[ch]));
@@ -231,6 +232,82 @@
     </article>`;
   }
 
+  /* How the field grew. Two lines, because ours counts all scholarship held and
+     the field line counts only Waller's JBA control list — the gap is the point. */
+  function growthChart(rows) {
+    /* SVG rather than styled divs: the console's CSP forbids inline styles, and
+       geometry belongs in attributes anyway. */
+    const live = rows.filter(r => r.held || r.field_control_list);
+    const peak = Math.max(...live.map(r => Math.max(r.held, r.field_control_list)), 1);
+    const W = 720, H = 150, gap = 3;
+    const slot = W / live.length;
+    const bars = live.map((r, i) => {
+      const x = i * slot;
+      const w = (slot - gap) / 2;
+      const h1 = (r.held / peak) * H;
+      const h2 = (r.field_control_list / peak) * H;
+      return `<rect class="bar-held" x="${(x + 1).toFixed(1)}" y="${(H - h1).toFixed(1)}"
+          width="${w.toFixed(1)}" height="${h1.toFixed(1)}"><title>${r.decade}s — ${r.held} held</title></rect>
+        <rect class="bar-field" x="${(x + w + 2).toFixed(1)}" y="${(H - h2).toFixed(1)}"
+          width="${w.toFixed(1)}" height="${h2.toFixed(1)}"><title>${r.decade}s — ${r.field_control_list} on the control list</title></rect>
+        <text class="bar-label" x="${(x + slot / 2).toFixed(1)}" y="${H + 13}" text-anchor="middle">${String(r.decade).slice(2)}</text>`;
+    }).join("");
+    return `<figure class="growth">
+      <svg viewBox="0 0 ${W} ${H + 18}" class="growth-plot" role="img"
+        aria-label="Publications per decade, held here against Waller's control list">
+        ${bars}<line class="bar-axis" x1="0" y1="${H}" x2="${W}" y2="${H}"/></svg>
+      <figcaption><span class="key is-held"></span> scholarship held here
+        <span class="key is-field"></span> Jewish Babylonian Aramaic publications on Waller's
+        control list, 1853–2024. Ours counts every language and genre, so it runs higher after
+        2000; the nineteenth century is where the two should agree, and roughly does.</figcaption></figure>`;
+  }
+
+  function renderScholarship(view) {
+    const works = data.works;
+    const held = works.filter(w => w.document_held).length;
+    const classified = works.filter(w => w.scope).length;
+    const byScope = {};
+    works.forEach(w => { const k = w.scope_label; (byScope[k] = byScope[k] || []).push(w); });
+    const people = data.contributors;
+    view.innerHTML = `<div class="reading-head">
+        <span class="eyebrow">1853 to 2024</span>
+        <h1 id="reading-title">The literature</h1>
+        <p class="standfirst">Every work this index draws on: <strong>${works.length}</strong>
+          pieces of scholarship, separate from the ${(data.sources.length - works.length).toLocaleString()}
+          museum, auction and dealer records that are sources but not scholarship.
+          <strong>${held}</strong> are held here as a document; the rest are cited and unread.</p>
+      </div>
+
+      <section class="entry-block"><h2>How the field grew</h2>${growthChart(data.scholarship_decades)}</section>
+
+      <section class="entry-block"><h2>Who wrote it</h2>
+        <p class="entry-note">Ranked by publications held. Not by citations — this index has no
+          citation graph, and only 9% of its sources carry a DOI, so a citation ranking would
+          cover a tenth of the field and flatter whoever has the better metadata.</p>
+        <ol class="contributor-list">${people.slice(0, 24).map((p, i) => `<li>
+          <span class="rank">${String(i + 1).padStart(2, "0")}</span>
+          <span class="who"><strong>${esc(p.display_name)}</strong>
+            ${p.needs_check ? `<em title=${JSON.stringify(JSON.parse(p.spellings).join(" · "))}>${JSON.parse(p.spellings).length} spellings</em>` : ""}
+            <small>${p.first_year || "?"}–${p.last_year || "?"}</small></span>
+          <span class="tally">${p.works} work${p.works === 1 ? "" : "s"}${
+            p.objects_published ? ` · ${p.objects_published} bowls` : ""}</span></li>`).join("")}</ol>
+      </section>
+
+      <section class="entry-block"><h2>What kind of work</h2>
+        <p class="entry-note">${classified} of ${works.length} classified. Scope is a reading
+          judgment, so it is derived only where the publication registry settles it and recorded
+          as a decision otherwise; the rest are honestly unclassified.</p>
+        ${Object.entries(byScope).sort((a, b) => b[1].length - a[1].length).map(([label, rows]) => `
+          <details class="scope-group"><summary>${esc(label)} <span>${rows.length}</span></summary>
+            <ul class="fact-list">${rows.slice(0, 40).map(w => `<li>
+              <span>${esc(w.title)}${w.document_held ? ' <em class="held">held</em>' : ""}</span>
+              <cite>${esc((w.authors || "").split(";")[0].split("[")[0])} ${w.issued_year || ""}${
+                w.objects_published ? ` · ${w.objects_published} bowls` : ""}</cite></li>`).join("")}
+            </ul>${rows.length > 40 ? `<p class="entry-note">and ${rows.length - 40} more</p>` : ""}
+          </details>`).join("")}
+      </section>`;
+  }
+
   async function render() {
     const view = document.querySelector("#reading-view");
     if (!view) return;
@@ -242,7 +319,8 @@
       return;
     }
     const match = location.hash.match(/^#\/reading\/(.+)$/);
-    if (match) renderObject(view, decodeURIComponent(match[1]));
+    if (location.hash.startsWith("#/scholarship")) renderScholarship(view);
+    else if (match) renderObject(view, decodeURIComponent(match[1]));
     else renderIndex(view);
     view.scrollTop = 0;
   }

@@ -378,12 +378,13 @@ function renderReviews() {
 }
 
 function activateRoute() {
-  const route = (location.hash.match(/^#\/(reading|explore|queues|reviews)/) || [])[1] || "reading";
+  const route = (location.hash.match(/^#\/(reading|scholarship|explore|queues|reviews)/) || [])[1] || "reading";
   state.route = route;
-  $$(".view").forEach(view => view.classList.toggle("is-active", view.id === `${route}-view`));
+  const viewId = route === "scholarship" ? "reading-view" : `${route}-view`;
+  $$(".view").forEach(view => view.classList.toggle("is-active", view.id === viewId));
   $$(".view-tab").forEach(tab => tab.classList.toggle("is-active", tab.dataset.route === route));
   $(".sidebar").classList.toggle("is-hidden", route !== "explore");
-  if (route === "reading" && window.ReadingRoom) window.ReadingRoom.render();
+  if ((route === "reading" || route === "scholarship") && window.ReadingRoom) window.ReadingRoom.render();
   if (route === "explore") loadIdentities();
   if (route === "queues") renderQueues();
   if (route === "reviews") renderReviews();

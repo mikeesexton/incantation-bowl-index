@@ -1,10 +1,10 @@
 {
-  "corpus_digest": "5dadaa47df639c67f9091e807803c9b3737dd7c8df1920d7579ecd6961204b7f",
-  "migrations": 12,
-  "note": "Deposited Levene and Bhayro 2006; opened SD 34 duplicate leads",
-  "recorded_at": "2026-09-06T02:04:58+00:00",
+  "corpus_digest": "2e87401924426aed183d29ec2ca1f8d2162433502dce6b984d6ced672d1a0e6e",
+  "migrations": 13,
+  "note": "Migration 013: scope and contributor-alias ledgers, both empty",
+  "recorded_at": "2026-09-06T03:02:36+00:00",
   "recorded_by": "claude",
-  "schema_version": "012_publication_registry",
+  "schema_version": "013_scholarship_index",
   "tables": {
     "appearance_object_links": {
       "digest": "c071e4c0a5900be02d87f81e65fca37154ef8cc2d234073a7591f0a0c17befa5",
@@ -33,6 +33,10 @@
     "claims": {
       "digest": "d1c963c944e9445de92ee4775a0e7a9fe576fc1b57acf96d6bf4dd0368a7e840",
       "rows": 5052
+    },
+    "contributor_aliases": {
+      "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
     },
     "coverage_targets": {
       "digest": "73d66484bd8ac7761a276eb62a9532495bad9f58424a83eae9cbd42f24e8f690",
@@ -95,8 +99,8 @@
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "12f0599e56623aead11178009eaa418a67f06bab9be5cffcdf865056653b7ef8",
-      "rows": 12
+      "digest": "25ed2c6f991bc16355f118105679652789c6a4f2682cd257ee09e40fa43a7e1d",
+      "rows": 13
     },
     "search_queries": {
       "digest": "bc9671bd91587e25fe84ec40f5e4f9d7e6e5b06327e2d6cfeba351901f44b26c",
@@ -105,6 +109,10 @@
     "search_runs": {
       "digest": "56575ec496d182b3ef61d10cac5b9f5874de2b5c15b3fb27b365ad0cb43eb88c",
       "rows": 15
+    },
+    "source_scope_reviews": {
+      "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rows": 0
     },
     "sources": {
       "digest": "b525ed17ad3343f6452b2d2e9846d7893cf1a350781777025a13e21ad6ef7744",

@@ -32,6 +32,7 @@ from .rights import apply_rights_batch
 from .public_export import export_public
 from .publication import apply_publication_batch, publication_metrics
 from .acquisitions import write_acquisition_report
+from .scholarship import apply_scope_batch
 from .publications import apply_publication_registry, publication_object_counts
 from .claim_corrections import apply_locator_corrections
 from .cohort import write_montgomery_cohort, apply_montgomery_register
@@ -79,6 +80,8 @@ def build_parser():
         "ingest-publication-registry", help="resolve publication keys to the publication they designate"
     )
     pubreg.add_argument("path")
+    scope = sub.add_parser("ingest-source-scope", help="record what kind of work a source is")
+    scope.add_argument("path")
     rights = sub.add_parser("ingest-rights-review", help="apply evidence-bound media-rights decisions")
     rights.add_argument("path")
     corrections = sub.add_parser("ingest-locator-corrections", help="apply citation-pointer repairs with immutable originals")
@@ -222,6 +225,9 @@ def main(argv=None):
     elif args.command == "ingest-publication-registry":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_publication_registry(conn, review), indent=2, sort_keys=True))
+    elif args.command == "ingest-source-scope":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(apply_scope_batch(conn, review), indent=2, sort_keys=True))
     elif args.command == "ingest-rights-review":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_rights_batch(conn, review), indent=2, sort_keys=True))

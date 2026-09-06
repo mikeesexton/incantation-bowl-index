@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-06T01:01:09+00:00",
+  "updated_at": "2026-09-06T04:00:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -237,7 +237,7 @@
       "id": "SCHOL",
       "title": "Scholarly bibliography and published-corpus enumeration",
       "scope": "Record the editions that actually publish bowls, as first-class sources with their own objects, access status and evidence grade. The index was built from findable online records; the field's primary evidence is printed editions.",
-      "current_level": 2,
+      "current_level": 3,
       "target_level": 3,
       "steward": "Research",
       "tasks": [
@@ -280,6 +280,22 @@
           "owner": "Mixed",
           "done_when": "Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.",
           "evidence": "`ibi report-acquisitions` inventories captures separately from completeness. QA-004 corrected the original held-document metric: 20 of 841 sources have captures, nine with PDFs and eleven with only non-PDF captures. All completeness states are unassessed by this report, including PDFs that may be excerpts. 670 sources with dependants have no PDF capture; 345 distinct candidate records depend on publications without PDFs. Segal 2000 ranks first at 252 distinct records, 142 appearances and 142 claims. Acquisition completeness needs evidence-bound review; a MIME type cannot certify that a work has been read. TMH 7 remains blocked pending the printed volume evidence (IBI-LEAD-TMH7-MUELLER-KESSLER). On 2026-09-06 a targeted acquisition pass archived Ford 2014, Aula Orientalis 32/2: 235–263 (29 scanned pages; SHA-256 0b7f1780d434...), after reviewing all page images for article scope. See research/acquisitions/edition_access_2026-09-06.json. Capture inventory is now 21/843 sources, ten with PDFs. AS 13, Davidovitz 27 and Museo Sefardí 1073 edition sections are queued with locators. Segal preview remains two pages; Isbell Internet Archive is access-restricted. Ford 2002 publisher metadata was located but its current PDF host failed robots allowance; the publisher author attribution conflicts with an earlier source record and is flagged without overwriting it."
+        },
+        {
+          "id": "SCHOL-006",
+          "title": "Classify the scholarship by scope",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every one of the 199 scholarship records carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.",
+          "evidence": "Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. 26 of 199 are derived from the registry or the source type; 173 await a reading judgment and are shown as unclassified rather than guessed."
+        },
+        {
+          "id": "SCHOL-007",
+          "title": "Check the contributor groupings by eye",
+          "status": "in_progress",
+          "owner": "Research",
+          "done_when": "Every contributor group with more than one spelling has been confirmed as one person, and any wrong merge has an alias-ledger override.",
+          "evidence": "107 contributors derived from 199 works by surname and first initial, with bare surnames folded into a named scholar only where exactly one scholar of that surname exists. Fourteen multi-spelling groups were checked by eye on 2026-09-05 and all are one person. Two defects were found and fixed in the process: the SCHOL-002 authors placeholder invented an author called 'see citation]' and keyed every '[and others' name on the surname 'others', which had merged Geller with Gordon and Schwab with Shaked; and bare surnames left by stripping it were splitting Levene and Gordon from their full names. Migration 013 adds an append-only alias ledger for overrides in either direction."
         }
       ]
     },
@@ -683,11 +699,16 @@
     {
       "date": "2026-09-06",
       "note": "TEXT-001: indexed 14 labelled Ford 2014 discussions across 13 existing JBA records, recording short topic summaries and exact line/page pointers. Distinguished retained readings, proposals and grammatical/bibliographic commentary. Added ten missing 2013 publication-key references; unique publication coverage is 435/1,590. No objects, texts, media or identity decisions changed. New JBA 23 topic difference remains visible, taking review queue to 314. Replay left the digest unchanged."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Built the scholarship index: 199 works separated from the 644 museum, auction and dealer records, a scope ledger (migration 013) with 26 derived and 173 honestly unclassified, 107 contributors grouped from free-text author strings, and a decade curve plotted against Waller's control list. Fixed two contributor defects found while building it: the SCHOL-002 authors placeholder had merged Geller with Gordon and Schwab with Shaked, and bare surnames were splitting Levene and Gordon from their full names. Gordon now shows correctly at 8 works. Ranking is by publications, not citations, because only 9% of sources carry a DOI."
     }
   ],
   "priorities": [
     "TEXT-001 / SCHOL-004 follow-through: extend evidence-backed publication references beyond the current 435 of 1,590 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.",
     "SCHOL-005 / QA-004: work the acquisition queue from Segal 2000 (252 distinct candidate records) and record document scope against archived evidence. Distinguish full works, excerpts, front matter and catalogue pages before calling a publication held or read.",
+    "SCHOL-006: classify the 173 unclassified works by scope. It is the slowest remaining task in the literature index and the one that makes 'edition of one bowl' versus 'survey of the field' a filter rather than a wish.",
     "TEXT-001 follow-through: Ford 2014 editions and all 14 main JBA-labelled commentary discussions are indexed. Obtain the 2013 edition for specialist comparison, review provisional-candidate concordances, and resolve the Ford 2002 author-attribution discrepancy while retaining earlier citations.",
     "QA-002 / CONC-005: revalidate the 314-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.",
     "META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.",

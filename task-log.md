@@ -94,6 +94,46 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — The scholarship index
+
+**Claimed:** reading-room plan, tranche 3 (SCHOL-006, SCHOL-007 opened)
+**Corpus:** changed (migration 013 only; both new tables empty)
+**Tests:** 170 passed (154 before; +16)
+
+- `#/scholarship` — "The literature". **199 works**, separated from the 644
+  museum, auction and dealer records that are sources but not scholarship.
+- **How the field grew**, as two lines rather than one: what this index holds
+  against Waller's JBA control list, by decade, drawn as SVG. The nineteenth
+  century is where they should agree and roughly does (3 vs 2, 4 vs 4, 7 vs 8);
+  ours runs higher after 2000 because it counts every language and genre.
+- **107 contributors** grouped from free-text author strings. Two real defects
+  surfaced while building it, both mine:
+  - The SCHOL-002 ingest wrote `"Surname [and others; see citation]"`, which
+    invented an author called `see citation]` with 32 works and keyed every
+    `[and others` name on the surname **"others"** — **merging Geller with
+    Gordon, and Schwab with Shaked.** Exactly the misattribution the plan
+    warned about.
+  - Stripping that placeholder then left bare surnames, which split "Levene"
+    from "Dan Levene" and "Gordon" from "Gordon, Cyrus H".
+  Both fixed. **Gordon now shows correctly at 8 works.** A bare surname folds
+  into a named scholar only where exactly one scholar of that surname exists;
+  with two Fords it stays separate, visibly under-attributed rather than
+  silently attributed to the wrong person. There is a test for that.
+- All fourteen remaining multi-spelling groups checked by eye: each is one
+  person. Migration 013 adds an append-only alias ledger for overrides either
+  way, and the UI marks a grouped entry "2 spellings" so it stays visible.
+- **Ranked by publications, not citations**, and the page says why: no citation
+  graph, and only 9% of sources carry a DOI, so a citation ranking would cover
+  a tenth of the field and flatter whoever has the better metadata.
+- Scope: 26 of 199 derived from the publication registry or source type, **173
+  honestly unclassified**. `ibi ingest-source-scope` records the rest as reading
+  judgments with a basis. That is SCHOL-006 and it is slow work.
+- The console's CSP forbids inline styles, so the chart is SVG with geometry in
+  attributes. Right answer anyway; the CSP was not weakened.
+- Next: SCHOL-006, and the alias ledger if any grouping turns out wrong.
+
+---
+
 ## 2026-09-05 — Claude — The reading room
 
 **Claimed:** reading-room plan, tranche 2

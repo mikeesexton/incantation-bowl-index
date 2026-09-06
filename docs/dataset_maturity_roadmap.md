@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-06T02:38:14+00:00`
+Generated: `2026-09-06T03:01:54+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 17 done · 14 in progress · 18 queued · 0 blocked |
+| Roadmap tasks | 17 done · 16 in progress · 18 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 7/24 |
 
@@ -123,7 +123,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 | DISC | Discovery and citation snowballing | L2 | L5 | Research now; Mac mini monitoring later |
 | CONC | Identity and museum concordances | L2 | L3 | Research judgment |
 | TEXT | Texts, translations, and publication references | L1 | L3 | Research judgment |
-| SCHOL | Scholarly bibliography and published-corpus enumeration | L2 | L3 | Research |
+| SCHOL | Scholarly bibliography and published-corpus enumeration | L3 | L3 | Research |
 | META | Physical, chronological, linguistic, and provenance enrichment | L1 | L3 | Mixed |
 | RIGHTS | Images and rights | L1 | L4 | Human rights review |
 | OPS | Mac mini continuous operations | L0 | L5 | Mac mini after 2026-09-22 |
@@ -133,18 +133,19 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 1. TEXT-001 / SCHOL-004 follow-through: extend evidence-backed publication references beyond the current 435 of 1,590 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.
 2. SCHOL-005 / QA-004: work the acquisition queue from Segal 2000 (252 distinct candidate records) and record document scope against archived evidence. Distinguish full works, excerpts, front matter and catalogue pages before calling a publication held or read.
-3. TEXT-001 follow-through: Ford 2014 editions and all 14 main JBA-labelled commentary discussions are indexed. Obtain the 2013 edition for specialist comparison, review provisional-candidate concordances, and resolve the Ford 2002 author-attribution discrepancy while retaining earlier citations.
-4. QA-002 / CONC-005: revalidate the 314-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
-5. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
-6. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
-7. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
-8. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
-9. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
-10. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
-11. RIGHTS-002: investigate evidence for the 325 media holds, starting with shared institutional policies. Zero media have completed rights decisions; agents collect evidence for human review.
-12. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
-13. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
-14. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
+3. SCHOL-006: classify the 173 unclassified works by scope. It is the slowest remaining task in the literature index and the one that makes 'edition of one bowl' versus 'survey of the field' a filter rather than a wish.
+4. TEXT-001 follow-through: Ford 2014 editions and all 14 main JBA-labelled commentary discussions are indexed. Obtain the 2013 edition for specialist comparison, review provisional-candidate concordances, and resolve the Ford 2002 author-attribution discrepancy while retaining earlier citations.
+5. QA-002 / CONC-005: revalidate the 314-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
+6. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
+7. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
+8. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
+9. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
+10. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
+11. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
+12. RIGHTS-002: investigate evidence for the 325 media holds, starting with shared institutional policies. Zero media have completed rights decisions; agents collect evidence for human review.
+13. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
+14. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
+15. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
 
 ## Task register
 
@@ -234,6 +235,12 @@ Record the editions that actually publish bowls, as first-class sources with the
 - [ ] **SCHOL-005 — Keep an acquisition register and work the want list** · In progress · Mixed
   - Done when: Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.
   - Evidence/status: `ibi report-acquisitions` inventories captures separately from completeness. QA-004 corrected the original held-document metric: 20 of 841 sources have captures, nine with PDFs and eleven with only non-PDF captures. All completeness states are unassessed by this report, including PDFs that may be excerpts. 670 sources with dependants have no PDF capture; 345 distinct candidate records depend on publications without PDFs. Segal 2000 ranks first at 252 distinct records, 142 appearances and 142 claims. Acquisition completeness needs evidence-bound review; a MIME type cannot certify that a work has been read. TMH 7 remains blocked pending the printed volume evidence (IBI-LEAD-TMH7-MUELLER-KESSLER). On 2026-09-06 a targeted acquisition pass archived Ford 2014, Aula Orientalis 32/2: 235–263 (29 scanned pages; SHA-256 0b7f1780d434...), after reviewing all page images for article scope. See research/acquisitions/edition_access_2026-09-06.json. Capture inventory is now 21/843 sources, ten with PDFs. AS 13, Davidovitz 27 and Museo Sefardí 1073 edition sections are queued with locators. Segal preview remains two pages; Isbell Internet Archive is access-restricted. Ford 2002 publisher metadata was located but its current PDF host failed robots allowance; the publisher author attribution conflicts with an earlier source record and is flagged without overwriting it.
+- [ ] **SCHOL-006 — Classify the scholarship by scope** · In progress · Research
+  - Done when: Every one of the 199 scholarship records carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.
+  - Evidence/status: Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. 26 of 199 are derived from the registry or the source type; 173 await a reading judgment and are shown as unclassified rather than guessed.
+- [ ] **SCHOL-007 — Check the contributor groupings by eye** · In progress · Research
+  - Done when: Every contributor group with more than one spelling has been confirmed as one person, and any wrong merge has an alias-ledger override.
+  - Evidence/status: 107 contributors derived from 199 works by surname and first initial, with bare surnames folded into a named scholar only where exactly one scholar of that surname exists. Fourteen multi-spelling groups were checked by eye on 2026-09-05 and all are one person. Two defects were found and fixed in the process: the SCHOL-002 authors placeholder invented an author called 'see citation]' and keyed every '[and others' name on the surname 'others', which had merged Geller with Gordon and Schwab with Shaked; and bare surnames left by stripping it were splitting Levene and Gordon from their full names. Migration 013 adds an append-only alias ledger for overrides in either direction.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -409,3 +416,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-06:** SCHOL-005 acquisition batch: archived the complete 29-page Ford 2014 journal article from its institutional host after robots allowance and page-scope review. Added two source records and five precise follow-up leads, retained the earlier conflicting Ford 2002 author attribution, and logged seven targeted searches. Segal and Isbell remain unacquired; the JANES CDN failed robots allowance. No candidate identities, readings, media approvals or public release changed.
 - **2026-09-06:** TEXT-001: enumerated AS 13, Davidovitz 27 and Museo Sefardí 1073 in the archived Ford 2014 article. Added two provisional candidates and attached one source appearance to the existing AC-MSEF record using an explicit source concordance. Registered one publication key; unique publication coverage rises from 423 to 425 records. Retained original measurement order; no reading adjudication, identity merge or rights decision. Candidate and registry replay left the corpus digest unchanged.
 - **2026-09-06:** TEXT-001: indexed 14 labelled Ford 2014 discussions across 13 existing JBA records, recording short topic summaries and exact line/page pointers. Distinguished retained readings, proposals and grammatical/bibliographic commentary. Added ten missing 2013 publication-key references; unique publication coverage is 435/1,590. No objects, texts, media or identity decisions changed. New JBA 23 topic difference remains visible, taking review queue to 314. Replay left the digest unchanged.
+- **2026-09-05:** Built the scholarship index: 199 works separated from the 644 museum, auction and dealer records, a scope ledger (migration 013) with 26 derived and 173 honestly unclassified, 107 contributors grouped from free-text author strings, and a decade curve plotted against Waller's control list. Fixed two contributor defects found while building it: the SCHOL-002 authors placeholder had merged Geller with Gordon and Schwab with Shaked, and bare surnames were splitting Levene and Gordon from their full names. Gordon now shows correctly at 8 works. Ranking is by publications, not citations, because only 9% of sources carry a DOI.
