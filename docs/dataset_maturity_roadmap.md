@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-06T00:27:22+00:00`
+Generated: `2026-09-06T00:36:39+00:00`
 
 ## Portfolio status
 
@@ -16,7 +16,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 ### What is solid
 
-- Discovery is broad and reproducible within the classes it searched: 841 sources and 1,616 appearances support 1,588 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes; printed editions and the bibliographic databases were not among them.
+- Discovery is broad and reproducible within the classes it searched: 843 sources and 1,616 appearances support 1,588 candidate records, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes; printed editions and the bibliographic databases were not among them.
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
 - The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.
@@ -33,7 +33,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - Text and edition coverage remains sparse outside Montgomery: 312/794 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.
 - Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
-- Acquisition completeness is not yet measured: 20 sources have captures, comprising nine with PDFs and eleven with only non-PDF captures. Format does not prove full-text availability. 345 distinct candidate records depend on publications without linked PDF captures; Segal 2000 is the largest acquisition lead at 252 records.
+- Acquisition completeness is not yet measured corpus-wide: 21 sources have captures, ten with PDFs and eleven with only non-PDF captures. Ford 2014 now has a hash-bound complete-article scope review covering all 29 pages (235–263); this does not certify its readings. 345 distinct candidate records depend on publications without linked PDF captures; Segal 2000 remains the largest acquisition lead at 252 records.
 
 ## Current scope snapshot
 
@@ -42,7 +42,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Candidate source records | 1588 |
 | Working physical identity hypotheses (all statuses) | 1320 |
 | Source appearances | 1616 |
-| Sources | 841 |
+| Sources | 843 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 214 |
 | Triaged claim-field differences | 53/365 |
@@ -62,8 +62,8 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Media records with a non-unknown rights status | 37/325 (11.4%) |
 | Media with a current ledger entry | 325/325 |
 | Media with completed rights decisions / approved for reuse | 0 / 0 |
-| Blocked leads | 29 |
-| Open or active leads | 7 |
+| Blocked leads | 31 |
+| Open or active leads | 10 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication coverage currently uses identifier schemes as a proxy. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.
@@ -133,17 +133,18 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 1. TEXT-001 / SCHOL-004 follow-through: extend evidence-backed publication references beyond the current 423 of 1,588 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.
 2. SCHOL-005 / QA-004: work the acquisition queue from Segal 2000 (252 distinct candidate records) and record document scope against archived evidence. Distinguish full works, excerpts, front matter and catalogue pages before calling a publication held or read.
-3. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
-4. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
-5. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
-6. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
-7. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
-8. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
-9. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
-10. RIGHTS-002: investigate evidence for the 325 media holds, starting with shared institutional policies. Zero media have completed rights decisions; agents collect evidence for human review.
-11. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
-12. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
-13. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
+3. SCHOL-005 follow-through: use the newly archived Ford 2014 complete article for the next edition/concordance batch (AS 13, Davidovitz 27, Museo Sefardí 1073). Resolve the Ford 2002 author-attribution discrepancy against publisher evidence; retain all earlier citations and claims.
+4. QA-002 / CONC-005: revalidate the 312-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
+5. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
+6. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
+7. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
+8. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
+9. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
+10. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
+11. RIGHTS-002: investigate evidence for the 325 media holds, starting with shared institutional policies. Zero media have completed rights decisions; agents collect evidence for human review.
+12. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
+13. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
+14. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
 
 ## Task register
 
@@ -232,7 +233,7 @@ Record the editions that actually publish bowls, as first-class sources with the
   - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys cover 423 distinct candidate records; 17 keys resolve, covering all 423 via at least one resolved key. TMH 7 remains unresolved for two records that also have resolved keys. The earlier 435/433 totals counted overlapping memberships rather than unique records; QA-004 corrected this on 2026-09-06. MRLA 8 was resolved on 2026-09-05 from the volume's own imprint page - 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4 - superseding the earlier unresolved decision; Ford and Morgenstern 2019 is now in `sources`. TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
 - [ ] **SCHOL-005 — Keep an acquisition register and work the want list** · In progress · Mixed
   - Done when: Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.
-  - Evidence/status: `ibi report-acquisitions` inventories captures separately from completeness. QA-004 corrected the original held-document metric: 20 of 841 sources have captures, nine with PDFs and eleven with only non-PDF captures. All completeness states are unassessed by this report, including PDFs that may be excerpts. 670 sources with dependants have no PDF capture; 345 distinct candidate records depend on publications without PDFs. Segal 2000 ranks first at 252 distinct records, 142 appearances and 142 claims. Acquisition completeness needs evidence-bound review; a MIME type cannot certify that a work has been read. TMH 7 remains blocked pending the printed volume evidence (IBI-LEAD-TMH7-MUELLER-KESSLER).
+  - Evidence/status: `ibi report-acquisitions` inventories captures separately from completeness. QA-004 corrected the original held-document metric: 20 of 841 sources have captures, nine with PDFs and eleven with only non-PDF captures. All completeness states are unassessed by this report, including PDFs that may be excerpts. 670 sources with dependants have no PDF capture; 345 distinct candidate records depend on publications without PDFs. Segal 2000 ranks first at 252 distinct records, 142 appearances and 142 claims. Acquisition completeness needs evidence-bound review; a MIME type cannot certify that a work has been read. TMH 7 remains blocked pending the printed volume evidence (IBI-LEAD-TMH7-MUELLER-KESSLER). On 2026-09-06 a targeted acquisition pass archived Ford 2014, Aula Orientalis 32/2: 235–263 (29 scanned pages; SHA-256 0b7f1780d434...), after reviewing all page images for article scope. See research/acquisitions/edition_access_2026-09-06.json. Capture inventory is now 21/843 sources, ten with PDFs. AS 13, Davidovitz 27 and Museo Sefardí 1073 edition sections are queued with locators. Segal preview remains two pages; Isbell Internet Archive is access-restricted. Ford 2002 publisher metadata was located but its current PDF host failed robots allowance; the publisher author attribution conflicts with an earlier source record and is flagged without overwriting it.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -405,3 +406,4 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-05:** Resolved MRLA 8 from the volume's own imprint page rather than by inference: Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections vol. 1 (Brill 2019), now in `sources`. Registry coverage 16/18 to 17/18 keys and 414 to 433 objects. TMH 7 remains unresolved pending the same check against its printed volume.
 - **2026-09-05:** Added SCHOL-005 and `ibi report-acquisitions`: a generated register separating what the project holds as a document from what it merely cites, with the want list ranked by dependants. 20 of 841 sources have the document held; 347 objects depend on an unheld publication; Segal 2000 ranks first at 253 objects. Logged TMH 7 as blocked - no digital copy of Mueller-Kessler 2005 could be located, so that registry entry stays unresolved rather than inferred.
 - **2026-09-06:** QA-004: reviewed Claude work against the matching corpus state. Corrected acquisition metrics that treated all captures as held documents, separated PDF presence from unassessed completeness, and deduplicated publication counts across aliases and publications (435 memberships become 423 unique candidate records). Refreshed obsolete and duplicate priorities; bibliography seeding and field-model expansion are complete, while acquisition, publication enrichment and evidence revalidation remain the next priorities. No corpus assertions changed.
+- **2026-09-06:** SCHOL-005 acquisition batch: archived the complete 29-page Ford 2014 journal article from its institutional host after robots allowance and page-scope review. Added two source records and five precise follow-up leads, retained the earlier conflicting Ford 2002 author attribution, and logged seven targeted searches. Segal and Isbell remain unacquired; the JANES CDN failed robots allowance. No candidate identities, readings, media approvals or public release changed.

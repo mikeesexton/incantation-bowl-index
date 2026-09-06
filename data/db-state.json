@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "fd0fc6eb5883d93d5c2243bb72e66bda6d4037a217d56447881911c90eff2738",
+  "corpus_digest": "d99914408594103272f4289a60e5ec6be3918c64caeae35bbb2922f9eb3f27fc",
   "migrations": 12,
-  "note": "QA-004: corrected acquisition presence and distinct publication coverage metrics; no corpus changes",
-  "recorded_at": "2026-09-06T00:27:59+00:00",
+  "note": "SCHOL-005: acquired Ford 2014 article, recorded access outcomes and attribution discrepancy; no object or text changes",
+  "recorded_at": "2026-09-06T00:37:41+00:00",
   "recorded_by": "codex",
   "schema_version": "012_publication_registry",
   "tables": {
@@ -15,8 +15,8 @@
       "rows": 1616
     },
     "captures": {
-      "digest": "63c4793eb0ac710a57eb98886c14aaabfc32749c787a9e9f32f133bd53c07d85",
-      "rows": 22
+      "digest": "0bd719027904e1f0aa925065eaa0074f40b7b053c24c210488068af2df6b9bf5",
+      "rows": 23
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -55,8 +55,8 @@
       "rows": 3586
     },
     "leads": {
-      "digest": "50e33ae7b66c39d5ce5c4079639fbb7dc8c611208dc7e0d121a9edb8466495d9",
-      "rows": 43
+      "digest": "98e2858e528d1c657f8c952e66590f9a1ed4cd1584e98e6dce9d83377f0c25aa",
+      "rows": 48
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
@@ -99,16 +99,16 @@
       "rows": 12
     },
     "search_queries": {
-      "digest": "984f961af8e032aed37337ddec7b944378de08f4748dc2edb820cfbf9227faa2",
-      "rows": 350
+      "digest": "bc9671bd91587e25fe84ec40f5e4f9d7e6e5b06327e2d6cfeba351901f44b26c",
+      "rows": 357
     },
     "search_runs": {
-      "digest": "1249cafad820c428719395274954d085349ccc1e6248777343e2eaedc7fc802f",
-      "rows": 14
+      "digest": "56575ec496d182b3ef61d10cac5b9f5874de2b5c15b3fb27b365ad0cb43eb88c",
+      "rows": 15
     },
     "sources": {
-      "digest": "65fa81fd4fccd9a4fffc9fe2bc3c65c65f6748bddbad4c5c102eee0fd0e5a083",
-      "rows": 841
+      "digest": "b525ed17ad3343f6452b2d2e9846d7893cf1a350781777025a13e21ad6ef7744",
+      "rows": 843
     },
     "text_proofreading_reviews": {
       "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",

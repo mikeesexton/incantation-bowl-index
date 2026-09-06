@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-06T00:34:17+00:00",
+  "reviewed_by": "Codex",
+  "workstream": "SCHOL-005",
+  "entries": [
+    {
+      "source_id": "SRC-72D809FB4249",
+      "outcome": "full_work_not_obtained",
+      "checked_url": "https://external.dandelon.com/download/attachments/dandelon/ids/DE0067FCC975DBE451FAFC125783300360D13.pdf",
+      "scope": "title_and_contents_preview",
+      "pdf_pages": 2,
+      "evidence": "Web PDF inspection reports two pages. Not the full catalogue. Existing blocked acquisition lead LED-DF20C6F96C3F remains applicable.",
+      "next_action": "Obtain an authorized complete copy or library consultation including concordance and object entries."
+    },
+    {
+      "source_id": "SRC-1FE46019356A",
+      "outcome": "access_restricted",
+      "checked_url": "https://archive.org/details/corpusofaramaici0000isbe",
+      "evidence": "Internet Archive item explicitly marks Access-restricted-item true and reports no suitable download files. No protected content fetched.",
+      "next_action": "Authorized library access or researcher-supplied copy; do not substitute a preview for the book."
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "outcome": "archived",
+      "url": "https://www.ub.edu/ipoa/wp-content/uploads/2021/08/2014AuOrFord-c.pdf",
+      "sha256": "0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7",
+      "byte_length": 17782153,
+      "pdf_pages": 29,
+      "scope": "complete_article_scan",
+      "printed_pages": "235–263",
+      "basis": "Inspected all 29 rendered pages as contact sheets, plus full-size first/last pages and pp. 246, 253, 255–256. Page sequence, title, author, body, figures, appendices and concluding bibliography/abbreviations present. This is a scope review, not line-by-line transcription verification.",
+      "text_layer": "absent",
+      "rights": "copyrighted; private archival copy only; no publication permission granted",
+      "retrieval": "Public journal institutional URL, HTTP 200 application/pdf after robots allowance.",
+      "edition_sections": [
+        {
+          "designation": "AS 13",
+          "locator": "Appendix 1, pp. 246–252; figures 16–21",
+          "next_action": "Compare against existing identifiers before candidate ingestion."
+        },
+        {
+          "designation": "Davidovitz 27",
+          "locator": "Appendix 2, pp. 253–258; figures 23–24",
+          "next_action": "Compare against existing identifiers before candidate ingestion."
+        },
+        {
+          "designation": "Museo Sefardí 1073",
+          "locator": "Re-edition p. 256; discussion pp. 253–255; figures 25–26, pp. 259–260",
+          "next_action": "Attach the new edition to existing records only after concordance review."
+        }
+      ],
+      "capture_id": "CAP-877D87C47D82",
+      "archive_storage_path": "sha256/0b/0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7"
+    },
+    {
+      "source_id": "SRC-FORD2002-JANES",
+      "outcome": "metadata_only",
+      "checked_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+      "old_pdf_url": "https://janes.scholasticahq.com/api/v1/articles/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+      "old_pdf_result": "HTTP 404",
+      "current_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+      "current_pdf_result": "robots_allowed returned false; did not fetch PDF",
+      "attribution_discrepancy": {
+        "existing_source_id": "SRC-1EE58A703971",
+        "existing_author": "Christa Müller-Kessler",
+        "journal_author": "J. N. Ford",
+        "action": "Retain existing record and claims; open evidence-bound reconciliation lead."
+      }
+    }
+  ]
+}

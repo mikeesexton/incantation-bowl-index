@@ -25,6 +25,24 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-06 — Codex — Edition acquisition follow-through
+
+**Claimed:** SCHOL-005
+**Corpus:** changed (two sources, one capture, five leads, seven search-log rows) — state digest d99914408594
+**Tests:** 134 passed; archive and scope hash checks valid; database integrity and foreign keys valid; verified post-batch backup.
+
+- Archived Ford 2014 from the University of Barcelona journal host after robots allowance. All 29 pages inspected for document scope; title and boundaries match pp. 235–263. The scan is image-only. Source SRC-FORD2014-AUOR; archive SHA-256 0b7f1780d434...f1b2dd7.
+- Staged edition follow-up for AS 13, Davidovitz 27 and Museo Sefardí 1073 with printed-page locators, plus a separate corrections-indexing lead. No object records, readings or translations ingested.
+- Segal's indexed preview remains only two pages; full work not obtained. Isbell's Internet Archive item is explicitly access-restricted. Ford 2002's old PDF returns 404; the current journal-linked CDN failed robots allowance, so no PDF fetched.
+- Added publisher-evidenced Ford 2002 metadata and flagged its author-attribution disagreement with SRC-1EE58A703971. The original Müller-Kessler attribution and dependent claims remain intact pending reconciliation.
+- Acquisition manifest records scope, hashes and actual access outcomes. The generated acquisition report remains a format inventory; it does not yet consume scope reviews.
+- Source and lead replay checks produced no duplicates. An initial lead manifest used unsupported type `access`; corrected to `restricted_source` before successful ingestion. Seven actual searches were logged.
+- Regenerated roadmap, acquisition/enrichment/campaign reports and private rolling export. Changed tables limited to sources, captures, leads and search logs. No rights decision or public release.
+- Next: use the acquired Ford 2014 article for edition/concordance review, reconcile Ford 2002 attribution, and continue authorized Segal acquisition. SCHOL-005 remains in progress.
+
+
+---
+
 ## 2026-09-06 — Codex — Acquisition and publication measurement review
 
 **Claimed:** QA-004
