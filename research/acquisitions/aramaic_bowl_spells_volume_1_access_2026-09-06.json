@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-06T11:14:20+00:00",
+  "reviewed_by": "Codex",
+  "workstream": "TEXT-001",
+  "publication": {
+    "title": "Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls Volume One",
+    "authors": "Shaul Shaked; James Nathan Ford; Siam Bhayro",
+    "issued_year": 2013,
+    "doi": "10.1163/9789004229372",
+    "ebook_isbn": "9789004229372",
+    "print_isbn": "9789004203945"
+  },
+  "entries": [
+    {
+      "source_id": "SRC-7FBBB775E502",
+      "outcome": "purchase_or_institutional_access_required",
+      "checked_url": "https://www.degruyterbrill.com/document/isbn/9789004229372/html",
+      "evidence": "Direct inspection of the official De Gruyter Brill book page identifies the 2013 volume, its three authors and eBook ISBN. The page labels the book 'Purchasable on brill.com' and offers institutional-access guidance; it exposes no complete authorized reading copy in the inspected interface.",
+      "next_action": "Use authorized institutional access, purchase, or a researcher-supplied copy. Do not treat publisher metadata as evidence for a bowl reading."
+    },
+    {
+      "source_id": "SRC-E155E32FC155",
+      "outcome": "public_copy_not_accepted_as_authorized",
+      "checked_url": "https://archive.org/metadata/AramaicBowlSpellsJewishBabylonianAramaicBowls",
+      "evidence": "Internet Archive item metadata lists a 397-page PDF and derivatives in the community/opensource collections, uploaded by a third party. The item metadata supplies no license, rights statement, lending restriction, or evidence that Brill or the authors authorized this copy.",
+      "next_action": "Do not acquire or use this community upload as the authorized edition. Retain it only as a discovery pointer unless rights or depositor authority is established."
+    },
+    {
+      "outcome": "library_catalogue_only",
+      "checked_url": "https://search.worldcat.org/title/854568886",
+      "evidence": "WorldCat identifies the 2013 Brill eBook and its institutional holdings. The catalogue record is an access route, not the edition and not evidence for readings.",
+      "next_action": "Request the volume through a holding library or interlibrary loan if institutional eBook access is unavailable."
+    }
+  ],
+  "conclusion": "No authorized complete copy was obtained. The Ford 2014 specialist-comparison lead remains open and cannot proceed to reading-level comparison from publisher or catalogue metadata."
+}

@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-09-06T01:00:32+00:00`
+Generated: `2026-09-06T16:38:39+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -8,11 +8,11 @@ The original source claims remain unchanged. This review classifies apparent dif
 
 | Disposition | Claim-field instances |
 |---|---:|
-| Compatible | 38 |
+| Compatible | 37 |
 | Scholarly Disagreement | 3 |
 | Source Inconsistency | 2 |
 | Unresolved | 10 |
-| Requires current evidence review | 314 |
+| Requires current evidence review | 315 |
 
 ## Revalidation queue
 
@@ -103,6 +103,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-3302F57D7AE1 — CBS 16018 [Montgomery text 19] | publication | publication_heading_identifier: CBS 16018 [SRC-943673B56FB8; text 19 heading, printed p. 195; PDF p. 201]; publication_register_identifier: blank [SRC-943673B56FB8; Catalogue, text 19, printed p. 324; PDF p. 330; catalogue number column]; publication_register_identifier: blank [SRC-943673B56FB8; closing register, printed p. 324; PDF p. 330] |
 | IDENT-33600DDBE0D9 — NLI incantation bowl 139 (Ms. Heb. 9467.157) | location | current_location: National Library of Israel [SRC-2168D49A8168; p. 71, caption: incantation bowl no. 139]; current_location: National Library of Israel, Jerusalem [SRC-9AF772FF6B94; MMS 997008712545205171] |
 | IDENT-336EFF7DA93C — British Museum 91715: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1881-0714-3]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1881-0714-3] |
+| IDENT-336EFF7DA93C — British Museum 91715: incantation bowl | location | current_location: British Museum, London [SRC-1EE58A703971; bowl BM 91715]; current_location: The British Museum [SRC-3D4B57D27A24; Related objects: 1881-0714-3] |
 | IDENT-336EFF7DA93C — British Museum 91715: incantation bowl | provenance | findspot: Excavated/Findspot: Tell Ibrahim (Kutha) [SRC-3D4B57D27A24; Related objects: 1881-0714-3]; production_place: Made in: Iraq, South [SRC-3D4B57D27A24; Related objects: 1881-0714-3] |
 | IDENT-33ACFC312B22 — British Museum 91738: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-7]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-7] |
 | IDENT-33ACFC312B22 — British Museum 91738: incantation bowl | provenance | findspot: Found/Acquired: Mesopotamia (historic) [SRC-3D4B57D27A24; Related objects: 1980-0415-7]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-7] |

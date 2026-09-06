@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-06T17:00:00Z",
+  "batch": "Resolve TMH 7 from the official Library of Congress catalog record",
+  "policy": "Supersedes the earlier unresolved decision. The series number is explicit official bibliographic evidence, not inference; object-level readings remain unchecked.",
+  "entries": [
+    {
+      "registry_id": "IBI-PUBREG-20",
+      "publication_key": "TMH 7",
+      "source_id": "SRC-63345F60155B",
+      "resolution": "resolved",
+      "basis": "Library of Congress LCCN 2006364726 explicitly identifies Christa Müller-Kessler's 2005 Harrassowitz volume as Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Universität Jena, Bd. 7. This resolves TMH 7 to SRC-63345F60155B and supersedes IBI-PUBREG-18."
+    }
+  ]
+}

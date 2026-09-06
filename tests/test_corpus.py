@@ -521,6 +521,23 @@ class CorpusTests(unittest.TestCase):
                 }],
                 "required_task_ids": ["T-001"],
             },
+            "purchase_register": {
+                "policy": "Buy only after open and library routes are checked.",
+                "items": [{
+                    "priority": 1, "status": "needed", "title": "Test volume",
+                    "year": 2013, "source_id": "SRC-TEST", "needed_for": "T-001",
+                    "purchase_url": "https://example.test/book",
+                }],
+            },
+            "offline_access_register": {
+                "policy": "Use the local research library first.",
+                "items": [{
+                    "priority": 1, "status": "available_onsite", "title": "Library volume",
+                    "year": 1975, "source_id": "SRC-LIB", "needed_for": "T-001",
+                    "lccn": "75015949", "catalog_url": "https://lccn.loc.gov/75015949",
+                    "call_number": "PJ5208.A5 I8 1975",
+                }],
+            },
             "change_log": [],
         }), encoding="utf-8")
         destination = Path(self.temp.name) / "roadmap.md"
@@ -532,6 +549,12 @@ class CorpusTests(unittest.TestCase):
         rendered = destination.read_text(encoding="utf-8")
         self.assertIn("| Roadmap tasks | 1 done · 0 in progress · 0 queued · 0 blocked |", rendered)
         self.assertIn("| Candidate source records | 1 |", rendered)
+        self.assertIn("## Offline research queue", rendered)
+        self.assertIn("[75015949](https://lccn.loc.gov/75015949)", rendered)
+        self.assertIn("`PJ5208.A5 I8 1975`", rendered)
+        self.assertIn("## Publication purchase backups", rendered)
+        self.assertIn("Test volume (2013) · `SRC-TEST`", rendered)
+        self.assertIn("[Publisher](https://example.test/book)", rendered)
         self.assertIn("- [x] **T-001", rendered)
 
     def test_claim_conflict_triage_preserves_compatible_source_claims(self):

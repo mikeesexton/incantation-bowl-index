@@ -35,6 +35,7 @@ from .acquisitions import write_acquisition_report
 from .scholarship import apply_scope_batch
 from .publications import apply_publication_registry, publication_object_counts
 from .claim_corrections import apply_locator_corrections
+from .source_corrections import apply_source_corrections
 from .cohort import write_montgomery_cohort, apply_montgomery_register
 from .concordance import apply_concordance_review
 from .relationships import apply_relationship_review
@@ -86,6 +87,10 @@ def build_parser():
     rights.add_argument("path")
     corrections = sub.add_parser("ingest-locator-corrections", help="apply citation-pointer repairs with immutable originals")
     corrections.add_argument("path")
+    source_corrections = sub.add_parser(
+        "ingest-source-corrections", help="apply bibliographic repairs with immutable originals"
+    )
+    source_corrections.add_argument("path")
     register = sub.add_parser("ingest-montgomery-register", help="append scan-checked register claims")
     register.add_argument("path")
     cohort = sub.add_parser("report-montgomery-cohort", help="account for all forty main Montgomery texts")
@@ -234,6 +239,9 @@ def main(argv=None):
     elif args.command == "ingest-locator-corrections":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_locator_corrections(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))
+    elif args.command == "ingest-source-corrections":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(apply_source_corrections(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))
     elif args.command == "ingest-montgomery-register":
         print(json.dumps(apply_montgomery_register(conn, args.path), indent=2, sort_keys=True))
     elif args.command == "report-montgomery-cohort":

@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-09-06T15:00:00Z",
+  "reviewed_by": "Codex",
+  "question": "Does SRC-1EE58A703971 represent the Ford 2002 article, and who does the checked publication record identify as its author?",
+  "records_checked": [
+    {
+      "record": "SRC-1EE58A703971",
+      "finding": "The imported row points to OpenAlex work W2513894189, but classified that metadata landing record as an article and cited Christa Müller-Kessler as author."
+    },
+    {
+      "record": "https://api.openalex.org/works/W2513894189",
+      "finding": "The live OpenAlex work record identifies the title Another Look at Mandaic Incantation Bowl BM 91715, publication year 2002, and authorship Jane Ford. It is a discovery-metadata record, not an acquired reading copy."
+    },
+    {
+      "record": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+      "finding": "The journal record represented by SRC-FORD2002-JANES identifies J. N. Ford as author and Journal of the Ancient Near Eastern Society 29 as the publication."
+    },
+    {
+      "record": "https://cris.biu.ac.il/en/publications/another-look-at-the-mandaic-incantation-bowl-bm-91715/",
+      "finding": "The author's institutional publication record identifies J. Ford, journal volume 29, pages 31–47, and publication year 2002."
+    }
+  ],
+  "determination": "SRC-1EE58A703971 is retained as an OpenAlex repository-metadata source and corrected to the current metadata attribution. SRC-FORD2002-JANES remains the bibliographic record for the article by J. N. Ford. The old imported state is retained verbatim in the source-correction ledger.",
+  "limits": "This review resolves bibliographic attribution only. It does not inspect the full article, adjudicate a bowl reading, merge an identity, or authorize text or media publication."
+}

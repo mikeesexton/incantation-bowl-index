@@ -1,6 +1,9 @@
 """Local research console for browsing and reviewing the private corpus."""
 
 import json
+import hashlib
+from functools import wraps
+from threading import RLock
 import mimetypes
 import secrets
 from collections import Counter, defaultdict
@@ -20,6 +23,17 @@ from .rights import current_media_reviews
 
 
 WEB_ROOT = PROJECT_ROOT / "web"
+INTRO_COVERAGE = ("text_edition", "provenance", "image")
+
+
+def _catalog_locked(method):
+    @wraps(method)
+    def locked(self, *args, **kwargs):
+        with self._lock:
+            return method(self, *args, **kwargs)
+    return locked
+
+
 DECISION_STATUSES = {"same_object", "different_objects", "insufficient_evidence"}
 
 
@@ -40,6 +54,7 @@ class CorpusCatalog:
 
     def __init__(self, database):
         self.database = Path(database)
+        self._lock = RLock()
         self.refresh()
 
     def connection(self):
@@ -47,8 +62,11 @@ class CorpusCatalog:
         migrate(conn)
         return conn
 
+    @_catalog_locked
     def refresh(self):
         with closing(self.connection()) as conn:
+            # All introductory numbers belong to one SQLite read snapshot.
+            conn.execute("BEGIN")
             rows = identity_rows(conn)
             member_to_identity = {}
             for row in rows:
@@ -100,9 +118,8 @@ class CorpusCatalog:
                         item["content"], item["editor"],
                     )))
 
-            self.rows = []
-            self.by_id = {}
-            self.member_to_identity = member_to_identity
+            catalog_rows = []
+            by_id = {}
             for original in rows:
                 row = dict(original)
                 values = claim_values[row["identity_id"]]
@@ -125,8 +142,8 @@ class CorpusCatalog:
                 row["search_blob"] = " ".join(
                     [row["identity_id"], row["label"]] + search_terms[row["identity_id"]]
                 ).casefold()
-                self.rows.append(row)
-                self.by_id[row["identity_id"]] = row
+                catalog_rows.append(row)
+                by_id[row["identity_id"]] = row
 
             object_types = defaultdict(set)
             for item in conn.execute("SELECT id,object_type FROM objects"):
@@ -134,20 +151,78 @@ class CorpusCatalog:
                 if identity_id:
                     object_types[identity_id].add(item["object_type"])
             for identity_id, values in object_types.items():
-                self.by_id[identity_id]["object_types"] = sorted(values)
+                by_id[identity_id]["object_types"] = sorted(values)
 
             # The reader surface never touches the rows above. It reads the same
             # gated projection the file export writes, so the local console and a
             # published static export are the same bytes through the same code.
             projection = Projection(conn)
-            self.projection_tables = projection.tables()
-            manifest = projection_manifest(projection, self.projection_tables)
+            projection_tables = projection.tables()
+            manifest = projection_manifest(projection, projection_tables)
             manifest["tables"] = {
                 name: {"rows": len(rows), "url": "/api/reader/" + name}
-                for name, rows in self.projection_tables.items()
+                for name, rows in projection_tables.items()
             }
             manifest["served_from"] = "local console"
+            # The introduction counts edition pointers as well as stored text rows.
+            # Preserve the research console's narrower has_text_edition / missing
+            # text filter. A generic scholarly mention is not an edition.
+            edition_sources = {row["source_id"] for row in projection_tables["works"]
+                               if row["scope"] in {"single_object_edition", "corpus_edition"}}
+            edition_objects = set()
+            for publication in projection_tables["publications"]:
+                if publication["resolution"] == "resolved":
+                    edition_objects.update(json.loads(publication["object_ids"]))
+            for link in conn.execute(
+                "SELECT l.object_id,a.source_id FROM appearance_object_links l "
+                "JOIN appearances a ON a.id=l.appearance_id WHERE l.relation_type<>'rejected'"
+            ):
+                if link["source_id"] in edition_sources:
+                    edition_objects.add(link["object_id"])
+            for row in catalog_rows:
+                row["has_edition_reference"] = bool(row["has_text_edition"] or
+                                                   edition_objects.intersection(row["member_ids"]))
+            identities = [
+                {"identity_id": row["identity_id"],
+                 **{field: bool(row["has_edition_reference" if field == "text_edition" else "has_" + field])
+                    for field in INTRO_COVERAGE}}
+                for row in sorted(catalog_rows, key=lambda item: item["identity_id"])
+            ]
+            now = datetime.now(timezone.utc)
+            series = projection_tables["scholarship_decades"]
+            decades = [{"decade": row["decade"], "indexed": row["held"],
+                        "field_control_list": row["field_control_list"],
+                        "incomplete": row["decade"] == now.year // 10 * 10}
+                       for row in series]
+            payload = {
+                "identity_count": len(identities),
+                "source_record_count": sum(row["member_count"] for row in catalog_rows),
+                "identities": identities,
+                "coverage": {field: sum(row[field] for row in identities)
+                             for field in INTRO_COVERAGE},
+                "scholarship": {
+                    "decades": decades,
+                    "label": "Scholarly publications indexed, by decade",
+                    "scope": "Dated scholarly works in this index; not a complete census of scholarship.",
+                    "undated_count": sum(not row["issued_year"]
+                                         for row in projection_tables["works"]),
+                },
+            }
+            snapshot_id = hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
+            payload["snapshot"] = {"id": snapshot_id, "loaded_at": now.isoformat(),
+                                   "current_year": now.year, "local_only": True}
+            # Publish together only after every part of the refresh succeeds.
+            self.rows = catalog_rows
+            self.by_id = by_id
+            self.member_to_identity = member_to_identity
+            self.projection_tables = projection_tables
             self.projection_manifest = manifest
+            self.intro_snapshot = payload
+
+    @_catalog_locked
+    def introduction(self):
+        """Local presence flags, never restricted contents or private media URLs."""
+        return self.intro_snapshot
 
     def reader_manifest(self):
         return self.projection_manifest
@@ -166,6 +241,7 @@ class CorpusCatalog:
         return {"table": name, "columns": list(PROJECTION_COLUMNS[name]),
                 "total": len(rows), "offset": offset, "rows": window}
 
+    @_catalog_locked
     def stats(self):
         coverage_fields = (
             "location", "provenance", "dating", "dimensions", "material", "language",
@@ -190,6 +266,7 @@ class CorpusCatalog:
                 "SELECT count(*) FROM dedupe_candidates WHERE status='pending'"
             ).fetchone()[0]
 
+    @_catalog_locked
     def search(self, params):
         query = params.get("q", [""])[0].strip().casefold()
         tokens = query.split()
@@ -197,6 +274,7 @@ class CorpusCatalog:
         authenticity = params.get("authenticity", [""])[0]
         action = params.get("next_action", [""])[0]
         coverage = params.get("coverage", [""])[0]
+        present = params.get("present", [""])[0]
         conflict = params.get("conflict", [""])[0]
         object_type = params.get("object_type", [""])[0]
         sort = params.get("sort", ["completeness_desc"])[0]
@@ -218,6 +296,8 @@ class CorpusCatalog:
                 continue
             if coverage and row.get("has_" + coverage, 0):
                 continue
+            if present and not row.get("has_edition_reference" if present == "text_edition" else "has_" + present, 0):
+                continue
             if conflict == "yes" and not row["conflict_fields"]:
                 continue
             if conflict == "no" and row["conflict_fields"]:
@@ -238,6 +318,7 @@ class CorpusCatalog:
                         for item in items[start:start + page_size]]
         return {
             "items": public_items,
+            "snapshot_id": self.intro_snapshot["snapshot"]["id"],
             "total": len(items),
             "page": page,
             "page_size": page_size,
@@ -448,6 +529,8 @@ def make_handler(catalog, token):
             try:
                 if path == "/api/config":
                     self._json({"csrf_token": token, "local_only": True})
+                elif path == "/api/introduction":
+                    self._json(catalog.introduction())
                 elif path == "/api/stats":
                     self._json(catalog.stats())
                 elif path == "/api/identities":

@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-06T03:01:54+00:00`
+Generated: `2026-09-06T23:09:21+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 17 done · 16 in progress · 18 queued · 0 blocked |
+| Roadmap tasks | 21 done · 16 in progress · 18 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 7/24 |
 
@@ -24,16 +24,16 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - The comparison model now covers the whole claim vocabulary: 66 fields grouped, 35 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list.
 - The project now has an external yardstick. Waller's list of JBA bowl publications 1853-2024 is held, transcribed and measured against, so completeness is a number rather than an impression.
 - Bibliographic coverage of the field's JBA control list is complete: 115 of 115 publications 1853-2024 have a source record with a sourced citation, up from 46.
-- Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. 18 of 19 publication keys resolve, covering 435 distinct candidate records; TMH 7 remains unresolved. Counts deduplicate records across aliases and publications.
+- Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. All 19 publication keys now resolve, covering 435 distinct candidate records. Counts deduplicate records across aliases and publications.
 
 ### What prevents release readiness
 
-- Publication links exist but are thin: 435 of 1,590 distinct candidate records carry a publication key, and all 435 have at least one resolved publication. This does not resolve every key: the two TMH 7 records also carry resolved keys. Most records still have no publication key.
-- Identity and claim quality is not yet measured corpus-wide: 314 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
+- Publication links exist but are thin: 435 of 1,590 distinct candidate records carry a publication key, although all 19 current keys resolve to publications. Most records still have no publication key.
+- Identity and claim quality is not yet measured corpus-wide: 315 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
 - Text and edition coverage remains sparse outside Montgomery: 312/794 probable or confirmed identities have a publication-scheme reference, still only a proxy for a checked edition locator; just one identity has a recorded transcription or transliteration.
 - Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
-- Acquisition completeness is not yet measured corpus-wide: 21 sources have captures, ten with PDFs and eleven with only non-PDF captures. Ford 2014 now has a hash-bound complete-article scope review covering all 29 pages (235–263); this does not certify its readings. 355 distinct candidate records depend on publications without linked PDF captures; Segal 2000 remains the largest acquisition lead at 252 records.
+- Acquisition completeness is not yet measured corpus-wide: 22 sources have captures, eleven with PDFs and eleven with only non-PDF captures. Ford 2014 now has a hash-bound complete-article scope review covering all 29 pages (235–263); this does not certify its readings. 355 distinct candidate records depend on publications without linked PDF captures. The Library of Congress is now the preferred offline route: both Aramaic Bowl Spells volumes, Segal 2000, Isbell 1975, Ford–Morgenstern Volume One, Müller-Kessler's TMH 7, Moriggi 2014 and Naveh–Shaked 1998 are confirmed available onsite.
 
 ## Current scope snapshot
 
@@ -41,20 +41,20 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 |---|---:|
 | Candidate source records | 1590 |
 | Working physical identity hypotheses (all statuses) | 1322 |
-| Source appearances | 1632 |
+| Source appearances | 1633 |
 | Sources | 843 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 215 |
-| Triaged claim-field differences | 53/367 |
-| Compatible differences | 38 |
-| Review required (missing or no longer valid) | 314 |
-| Existing reviews requiring revalidation | 284 |
+| Triaged claim-field differences | 52/367 |
+| Compatible differences | 37 |
+| Review required (missing or no longer valid) | 315 |
+| Existing reviews requiring revalidation | 285 |
 | Substantive conflict instances | 15 across 13 identities |
 | All identities with a publication reference | 393/1322 (29.7%) |
 | Probable/confirmed identities with a publication reference | 312/794 (39.3%) |
 | Identities with a translation | 48 |
 | Scan-checked normalized reading texts | 35 |
-| Publication keys resolved to the publication they designate | 18/19 |
+| Publication keys resolved to the publication they designate | 19/19 |
 | Objects under a resolved publication | 435/435 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
@@ -62,8 +62,8 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Media records with a non-unknown rights status | 37/325 (11.4%) |
 | Media with a current ledger entry | 325/325 |
 | Media with completed rights decisions / approved for reuse | 0 / 0 |
-| Blocked leads | 31 |
-| Open or active leads | 12 |
+| Blocked leads | 28 |
+| Open or active leads | 19 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication coverage currently uses identifier schemes as a proxy. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.
@@ -131,11 +131,11 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 ## Current priority order
 
-1. TEXT-001 / SCHOL-004 follow-through: extend evidence-backed publication references beyond the current 435 of 1,590 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.
-2. SCHOL-005 / QA-004: work the acquisition queue from Segal 2000 (252 distinct candidate records) and record document scope against archived evidence. Distinguish full works, excerpts, front matter and catalogue pages before calling a publication held or read.
-3. SCHOL-006: classify the 173 unclassified works by scope. It is the slowest remaining task in the literature index and the one that makes 'edition of one bowl' versus 'survey of the field' a filter rather than a wish.
-4. TEXT-001 follow-through: Ford 2014 editions and all 14 main JBA-labelled commentary discussions are indexed. Obtain the 2013 edition for specialist comparison, review provisional-candidate concordances, and resolve the Ford 2002 author-attribution discrepancy while retaining earlier citations.
-5. QA-002 / CONC-005: revalidate the 314-case queue in coherent source batches, including 284 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
+1. TEXT-001 / SCHOL-004 follow-through: all 19 current publication keys resolve; extend evidence-backed publication references beyond the current 435 of 1,590 distinct candidate records. Enumerate object-level coverage for the 69 bibliography additions; some now resolve existing keys, so do not assume all are unattached.
+2. SCHOL-005 / QA-004: obtain the Library of Congress Reader Identification Card, then consult Segal 2000 and Aramaic Bowl Spells Volume One from the priority reading-room queue. TMH 7, Moriggi 2014 and Naveh–Shaked 1998 are now confirmed follow-on holdings. Record document scope and page-level evidence; do not call a cataloged holding read until it has actually been inspected.
+3. SCHOL-006: classify the remaining 166 unclassified works by scope. The five held publications that needed reading judgments are complete; continue with authoritative abstracts, tables of contents and newly acquired documents, leaving ambiguous works unclassified.
+4. TEXT-001 follow-through: Ford 2014 editions and all 14 main JBA-labelled commentary discussions are indexed, and the Ford 2002 attribution discrepancy is resolved with immutable correction history. The official 2013 edition requires purchase or institutional access; obtain it through IBI-LEAD-JBA2013-ACCESS before specialist comparison, then review the provisional-candidate concordances.
+5. QA-002 / CONC-005: revalidate the 315-case queue in coherent source batches, including 285 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
 6. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
 7. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
 8. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
@@ -146,6 +146,35 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 13. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
 14. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
 15. OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.
+
+## Offline research queue
+
+The Library of Congress in Washington, DC is the default offline source for this project. Search its catalog first, request available General Collections items for onsite consultation, and use other libraries or interlibrary loan only when LC lacks the work. Onsite consultation requires a Reader Identification Card.
+
+| Priority | Status | Publication | Library record | Call number | Needed for |
+|---:|---|---|---|---|---|
+| 1 | Card Pending | Segal — Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum (2000) · `SRC-72D809FB4249` | [2001369942](https://lccn.loc.gov/2001369942) | `PJ5208.A5 S45 2000` | SCHOL-005; CONC-001; 252 candidate records |
+| 1 | Card Pending | Shaked, Ford and Bhayro — Aramaic Bowl Spells, Volume One (2013) · `SRC-7FBBB775E502` | [2013009563](https://lccn.loc.gov/2013009563) | `PJ5208.A2 S53 2013 · v. 1` | TEXT-001; Ford 2014 specialist comparison |
+| 2 | Card Pending | Ford and Morgenstern — Aramaic Incantation Bowls in Museum Collections, Volume One (2019) · `SRC-8A145FAA2EBB` | [2019026750](https://lccn.loc.gov/2019026750) | `PJ5208.A2 2020 · v. 1` | TEXT-001; 19 candidate records; MRLA 8 verification |
+| 2 | Card Pending | Isbell — Corpus of the Aramaic Incantation Bowls (1975) · `SRC-1FE46019356A` | [75015949](https://lccn.loc.gov/75015949) | `PJ5208.A5 I8 1975` | TEXT-001; 17 candidate records |
+| 2 | Card Pending | Shaked, Ford and Bhayro — Aramaic Bowl Spells, Volume Two (2021) · `SRC-8C611BF93288` | [2013009563](https://lccn.loc.gov/2013009563) | `PJ5208.A2 S53 2013 · v. 2` | TEXT-001; 16 candidate records |
+| 2 | Card Pending | Naveh and Shaked — Amulets and Magic Bowls, third edition (1998) · `SRC-696E71D7E586` | [99201169](https://lccn.loc.gov/99201169) | `BM729.A4 N38` | TEXT-001; 7 candidate records; first edition also onsite under LCCN 87182340 |
+| 2 | Card Pending | Müller-Kessler — Die Zauberschalentexte in der Hilprecht-Sammlung (TMH 7) (2005) · `SRC-63345F60155B` | [2006364726](https://lccn.loc.gov/2006364726) | `PJ5208.A5 M85 2005` | TEXT-001; 2 candidate records; publication key now bibliographically resolved |
+| 2 | Card Pending | Moriggi — A Corpus of Syriac Incantation Bowls (2014) · `SRC-3C4294DDB367` | [2014006700](https://lccn.loc.gov/2014006700) | `PJ5615 .M665 2014` | TEXT-001; 2 candidate records; Syriac corpus coverage |
+
+Availability is a live catalog state, not proof that a volume has been consulted. Confirm status and request items before each visit; after consultation, deposit only researcher-supplied files that may lawfully be retained and record page-level evidence through the normal manifests.
+
+
+## Publication purchase backups
+
+Purchases are backup options after the Library of Congress, other authorized libraries, interlibrary loan and repository routes have been checked. Keep a work here when a purchase link is known and the publication remains important, but do not recommend buying while an easier lawful route is available.
+
+| Priority | Status | Publication | Needed for | Purchase |
+|---:|---|---|---|---|
+| 1 | Backup Only | Shaked, Ford and Bhayro — Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (2013) · `SRC-7FBBB775E502` | TEXT-001; Ford 2014 specialist comparison | [Publisher](https://brill.com/display/title/20045) |
+
+Prices are deliberately not frozen here because they change. When a volume is bought, supplied, or consulted through authorized library access, update its status and preserve the acquisition evidence rather than deleting the row.
+
 
 ## Task register
 
@@ -195,7 +224,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
 
 - [ ] **TEXT-001 — Create publication-reference coverage for known texts** · In progress · Research
   - Done when: At least 80% of probable/confirmed identities have either an edition reference or an explicit no-known-edition status, each with a source.
-  - Evidence/status: 312/791 probable/confirmed identities have publication-scheme identifiers (39.4%). This proxy counts designations, not editions: the publications being designated have no records of their own (see SCHOL-004), so raising the number does not yet raise edition coverage. Re-specify the metric against resolved publication records and sourced no-known-edition assessments before treating it as a release gate. SCHOL-004 is now done, so the metric can be re-specified: 414 of 435 objects carrying a publication key sit under a publication with a source record. That is still designation coverage, not a checked edition locator, but the denominator is now meaningful. On 2026-09-06 Ford 2014 added three precisely located edition appearances and a registered publication key: AS 13 and Davidovitz 27 are new provisional candidates, while Museo Sefardí 1073 attaches to existing AC-MSEF via the explicit p. 253 n. 56 concordance. Unique candidate publication coverage is now 425/1,590, with 18/19 keys resolved. No scholarly text or images were republished. A second Ford 2014 batch indexed all 14 bold JBA-labelled main commentary discussions on pp. 236–246 across 13 existing records, with no new identity decisions. Ten missing 2013-volume publication keys were added, raising unique candidate coverage to 435/1,590. Retained readings and grammatical comments are distinguished from correction proposals; no preferred text was chosen.
+  - Evidence/status: 312/794 probable/confirmed identities have publication-scheme identifiers (39.3%). This proxy counts designations, not editions: the publications being designated have no records of their own (see SCHOL-004), so raising the number does not yet raise edition coverage. Re-specify the metric against resolved publication records and sourced no-known-edition assessments before treating it as a release gate. SCHOL-004 is now done, so the metric can be re-specified: all 435 objects carrying a publication key sit under a resolved publication source, and all 19 keys resolve. That is still designation coverage, not a checked edition locator, but the denominator is now meaningful. On 2026-09-06 Ford 2014 added three precisely located edition appearances and a registered publication key: AS 13 and Davidovitz 27 are new provisional candidates, while Museo Sefardí 1073 attaches to existing AC-MSEF via the explicit p. 253 n. 56 concordance. No scholarly text or images were republished. A second Ford 2014 batch indexed all 14 bold JBA-labelled main commentary discussions on pp. 236–246 across 13 existing records, with no new identity decisions. Ten missing 2013-volume publication keys were added, raising unique candidate coverage to 435/1,590. Retained readings and grammatical comments are distinguished from correction proposals; no preferred text was chosen. A targeted access pass then confirmed that the official 2013 volume requires purchase or institutional access; the Library of Congress now supplies the preferred authorized route. A complete Internet Archive community upload carries no license, rights statement or depositor-authority evidence and was not acquired or used. IBI-LEAD-JBA2013-ACCESS records the access dependency, so the specialist comparison remains open rather than being attempted from metadata or an unverified copy. The Ford 2002 attribution discrepancy is resolved: the old row was an OpenAlex metadata artifact and is now classified accordingly, its exact imported state is preserved in the append-only correction ledger, and the verified J. N. Ford article appearance is attached to BM 91715.
 - [x] **TEXT-002 — Proofread Montgomery's 35 extracted translations** · Done · Research
   - Done when: Every translation is checked line by line against the scan, corrections are logged, and public_ok is decided independently of public-domain status.
   - Evidence/status: 35/35 available translations visually checked against archived scans as normalized English reading texts, in batches of 11 and 24. Exact original rows, corrected text hashes, source-PDF hash, page locators and correction notes retained. Zero OCR drafts remain in this cohort. All 35 remain public_ok=false; independent specialist review and original-language verification are separate work. Completion manifest: research/reviews/montgomery_reading_texts_completion_2026-09-05.json.
@@ -231,16 +260,19 @@ Record the editions that actually publish bowls, as first-class sources with the
   - Evidence/status: The review's own 14-row search log is a targeted verification pass, not a sweep, and says so. The index's phase-one saturation covers twelve source classes, none of which is the bibliographic databases. Both gaps have the same shape. SCHOL-002 has closed the bibliographic gap against Waller's list; assess a database sweep by additional publications beyond that list and improved object-level enumeration.
 - [x] **SCHOL-004 — Make publications first-class records, not identifier prefixes** · Done · Engineering
   - Done when: Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.
-  - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. Eighteen publication keys cover 423 distinct candidate records; 17 keys resolve, covering all 423 via at least one resolved key. TMH 7 remains unresolved for two records that also have resolved keys. The earlier 435/433 totals counted overlapping memberships rather than unique records; QA-004 corrected this on 2026-09-06. MRLA 8 was resolved on 2026-09-05 from the volume's own imprint page - 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, ISBN 978-90-04-37700-4 - superseding the earlier unresolved decision; Ford and Morgenstern 2019 is now in `sources`. TMH 7's candidate SRC-63345F60155B (Mueller-Kessler 2005) is plausible but inferred from the series name rather than verified against the volume. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
+  - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. All 19 current publication keys now resolve to source records, covering 435 distinct candidate records. The earlier overlapping totals were corrected by QA-004 on 2026-09-06. MRLA 8 was resolved from the volume's own imprint page. TMH 7 was resolved on 2026-09-06 from official Library of Congress record 2006364726, which explicitly names Müller-Kessler's 2005 Harrassowitz publication as Texte und Materialien der Frau Professor Hilprecht Collection, Bd. 7; this supersedes IBI-PUBREG-18 without claiming the book has been read. Four keys - Isbell 1975, Naveh-Shaked 1993, Naveh-Shaked 1985/1993 and Gorea 2003 - became resolvable only because SCHOL-002 ingested their publications. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
 - [ ] **SCHOL-005 — Keep an acquisition register and work the want list** · In progress · Mixed
   - Done when: Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.
-  - Evidence/status: `ibi report-acquisitions` inventories captures separately from completeness. QA-004 corrected the original held-document metric: 20 of 841 sources have captures, nine with PDFs and eleven with only non-PDF captures. All completeness states are unassessed by this report, including PDFs that may be excerpts. 670 sources with dependants have no PDF capture; 345 distinct candidate records depend on publications without PDFs. Segal 2000 ranks first at 252 distinct records, 142 appearances and 142 claims. Acquisition completeness needs evidence-bound review; a MIME type cannot certify that a work has been read. TMH 7 remains blocked pending the printed volume evidence (IBI-LEAD-TMH7-MUELLER-KESSLER). On 2026-09-06 a targeted acquisition pass archived Ford 2014, Aula Orientalis 32/2: 235–263 (29 scanned pages; SHA-256 0b7f1780d434...), after reviewing all page images for article scope. See research/acquisitions/edition_access_2026-09-06.json. Capture inventory is now 21/843 sources, ten with PDFs. AS 13, Davidovitz 27 and Museo Sefardí 1073 edition sections are queued with locators. Segal preview remains two pages; Isbell Internet Archive is access-restricted. Ford 2002 publisher metadata was located but its current PDF host failed robots allowance; the publisher author attribution conflicts with an earlier source record and is flagged without overwriting it.
+  - Evidence/status: `ibi report-acquisitions` inventories captures separately from completeness: 22 of 843 sources have captures, eleven with PDFs and eleven with only non-PDF captures. All completeness states are unassessed unless a separate scope review exists; a MIME type cannot certify that a work has been read. 671 sources with dependants have no PDF capture and 355 distinct candidate records depend on publications without PDFs. Ford 2014 has a hash-bound complete-article scope review for all 29 pages (235–263; SHA-256 0b7f1780d434...). On 2026-09-06 the Library of Congress became the preferred offline repository. Its live catalog now supplies eight queued onsite volumes: Segal 2000; both Aramaic Bowl Spells volumes; Isbell 1975; Ford–Morgenstern Volume One; Müller-Kessler's TMH 7; Moriggi 2014; and Naveh–Shaked 1998. The separately cataloged 1985 first edition of Naveh–Shaked is also onsite but is recorded only as an alternate because it must not be conflated with the 1987 source record. Segal remains the highest-impact item at 252 distinct records. PURCHASE-001 remains backup-only.
 - [ ] **SCHOL-006 — Classify the scholarship by scope** · In progress · Research
-  - Done when: Every one of the 199 scholarship records carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.
-  - Evidence/status: Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. 26 of 199 are derived from the registry or the source type; 173 await a reading judgment and are shown as unclassified rather than guessed.
+  - Done when: Every scholarship record carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.
+  - Evidence/status: Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved TMH 7 registry entry raises derived coverage to 27 works. On 2026-09-06 the first reading-judgment batch classified all five held documents that remained unclassified: Schwab 1891 as a corpus edition; Levene and Bhayro 2006 as a single-object edition; Kedar 2019 and Waller 2022 as thematic studies; and Waller 2025 as a synthesis. Scope coverage is now 32 of 198 works, leaving 166 unclassified rather than guessed.
 - [ ] **SCHOL-007 — Check the contributor groupings by eye** · In progress · Research
   - Done when: Every contributor group with more than one spelling has been confirmed as one person, and any wrong merge has an alias-ledger override.
   - Evidence/status: 107 contributors derived from 199 works by surname and first initial, with bare surnames folded into a named scholar only where exactly one scholar of that surname exists. Fourteen multi-spelling groups were checked by eye on 2026-09-05 and all are one person. Two defects were found and fixed in the process: the SCHOL-002 authors placeholder invented an author called 'see citation]' and keyed every '[and others' name on the surname 'others', which had merged Geller with Gordon and Schwab with Shaked; and bare surnames left by stripping it were splitting Levene and Gordon from their full names. Migration 013 adds an append-only alias ledger for overrides in either direction.
+- [x] **SCHOL-008 — Expose the publication registry to readers** · Done · Engineering
+  - Done when: A reader can ask which bowls a publication publishes, and see which designations do not resolve.
+  - Evidence/status: A `publications` projection table over migration 012's registry, and a page listing all 19 keys with their object counts: Segal 2000 at 252 bowls, Montgomery 1913 at 84, Shaked-Ford-Bhayro 2013 at 33, MRLA 8 at 19, Isbell 1975 at 17. All 19 resolve to a work in the library after TMH 7 was verified from official Library of Congress series-volume metadata on 2026-09-06. Selecting a publication filters the corpus to its bowls.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -269,6 +301,9 @@ Add source-attributed findspots, current locations, collection and acquisition h
 - [ ] **META-008 — Bring Mandaic, Syriac and Pahlavi to parity** · Queued · Research
   - Done when: Each language group has enumerated corpora from its primary editions, and the 819 records with no language claim are assessed or explicitly marked unreadable or unknown.
   - Evidence/status: Measured against the EJCM working counts the review quotes: JBA/Aramaic 379 of about 500, Mandaic 77 of about 125, Syriac 69 against about 50, Pahlavi 2, pseudo-script 35, and 819 records - 52% - with no language claim at all. Mandaic and Pahlavi have an obvious cause: Pognon 1898 and Yamauchi 1967 are not in the corpus. See SCHOL-002. Since QA-008, the 205 NLI catalogue language codes count toward language coverage. Note that none of those 205 objects also carries an edition-based language claim, so they are unverified catalogue classifications rather than corroborated attributions; the earlier expectation that they would expose catalogue-versus-edition disagreements was not borne out. A better external benchmark is now available. The corpus-wide distribution benchmark traces to Morony 2003: 87 - approximately 62% Jewish, 23% Mandaean, 13% Syriac - cited and endorsed by Ford and Abudraham 2018 n. 3, and quoted from there by Waller 2025 p. 3 n. 1. Ford and Abudraham note Morony worked from a corpus far smaller than what is now available, so this is a twenty-year-old estimate endorsed twice rather than a current census; cite it as Morony's, with the caveat. Against it the index runs 80.0% JBA, 10.6% Mandaic, 9.5% Syriac across 729 classified records - a shortfall of roughly 91 Mandaic objects. Syriac is close; JBA is over-represented by about the margin publication bias predicts. Waller's list is JBA only, so Mandaic needs its own control list. Ford and Abudraham 2018 was obtained on 2026-09-05 and is NOT the Mandaic control list this task needs: it publishes eight confiscated bowls, six Syriac and two Mandaic, and is an object publication rather than a census. No Mandaic equivalent of Waller's JBA list is known to exist, so the Mandaic denominator has to be assembled from the corpus editions themselves - Pognon 1898, Yamauchi 1967, McCullough 1967, Segal 2000, Muller-Kessler and Morgenstern, Abudraham's re-editions - all now in `sources`.
+- [x] **META-009 — Make the content facets browsable** · Done · Engineering
+  - Done when: Every content facet is an entry point with counts, and a reader can move from a value to the bowls carrying it.
+  - Evidence/status: Eight browse axes in the reading room - people named, what they do, scripture quoted, hands and scribes, what is drawn, where they are, language, provenance - counted from the projection's facts table client-side, so a published static export computes them the same way and no query endpoint breaks the equivalence. Ritual purpose alone yields 35 distinct values across 43 bowls, including 'Divorce document' (4) and 'Semamit historiola' (4). Corpus-wide search covers display names, every fact value and the 45 published texts; 'lilith' returns 31 bowls.
 
 ### RIGHTS — Images and rights
 
@@ -286,6 +321,9 @@ Build a rights ledger before copying images into the corpus or exposing any medi
 - [ ] **RIGHTS-004 — Restore links for sources whose URL matches a private capture** · Queued · Engineering
   - Done when: A source's public page URL can be published as an access pointer without being suppressed merely because the page was also archived privately, while capture storage paths and unapproved media URLs stay forbidden.
   - Evidence/status: The export guard forbids any string matching a capture URL. That is correct for media and archive paths but suppresses 5 legitimate bibliographic links, since a public page URL reveals nothing about the archive. Narrow the guard to storage paths and media URLs.
+- [x] **RIGHTS-005 — Render approved images, and only approved images** · Done · Engineering
+  - Done when: The reading room shows a bowl's photograph when its media has a completed approval, and shows nothing of it otherwise, with tests covering both directions.
+  - Evidence/status: The reading room renders whatever media the projection emits, and the projection emits a media row only for a current approval - so an uncleared image has no row to render and the data-drawn spiral carries the grid instead. tests/test_media_gate.py covers all three states: a public-domain source alone releases nothing, a completed approval releases the URL with its attribution, and a withhold decision keeps it off the page. Currently 0 of 325 media are approved, so no image appears; when RIGHTS-002 clears one it appears with no further work. Circular crop, since a bowl photographed from above is a circle.
 
 ### OPS — Mac mini continuous operations
 
@@ -330,6 +368,9 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
 - [x] **QA-008 — Reconcile the claim vocabulary with the comparison model** · Done · Engineering
   - Done when: Every claim field is either in a CORE_COVERAGE group or explicitly excluded with a recorded reason; a test fails when an unclassified field appears; and the conflict counts are reported against that full denominator.
   - Evidence/status: All 101 claim fields are now classified: 66 in a comparison group, 35 explicitly excluded with a stated reason, 0 unclassified. `unclassified_claim_fields` reports any new field and `ibi stats` surfaces it; tests/test_field_model.py fails on a field that is in two groups, both grouped and excluded, excluded without a reason, or neither. The conflict denominator moved from 337 to 365 with zero existing decisions invalidated, so the backlog is 312 rather than 284 and is now a measured total rather than an artefact of seven hard-coded groups. Exclusions carry their reason: market values are per-sale events, ownership history is event-shaped and belongs in `events`, object relationships belong in `object_relationship_assertions`, and META-005 evidence gradings assess a claim rather than rival it.
+- [x] **QA-009 — Keep the filters usable on a small screen** · Done · Engineering
+  - Done when: Structured filtering is reachable at every viewport width.
+  - Evidence/status: Below 900px the stylesheet set `#filters fieldset { display: none }`, so every structured filter disappeared on tablet and phone and only free-text search remained. The fieldsets are now inside a native disclosure: the summary is hidden above 900px so a wide screen reads as before, and below it the panel starts collapsed but all five selects stay in the DOM and reachable. Widening the window reopens it, since the summary is hidden at that width and the panel would otherwise be shut with no control to open it.
 
 ## Mac mini handoff gate
 
@@ -340,7 +381,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `314`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `315`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `39.3%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
@@ -417,3 +458,12 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 - **2026-09-06:** TEXT-001: enumerated AS 13, Davidovitz 27 and Museo Sefardí 1073 in the archived Ford 2014 article. Added two provisional candidates and attached one source appearance to the existing AC-MSEF record using an explicit source concordance. Registered one publication key; unique publication coverage rises from 423 to 425 records. Retained original measurement order; no reading adjudication, identity merge or rights decision. Candidate and registry replay left the corpus digest unchanged.
 - **2026-09-06:** TEXT-001: indexed 14 labelled Ford 2014 discussions across 13 existing JBA records, recording short topic summaries and exact line/page pointers. Distinguished retained readings, proposals and grammatical/bibliographic commentary. Added ten missing 2013 publication-key references; unique publication coverage is 435/1,590. No objects, texts, media or identity decisions changed. New JBA 23 topic difference remains visible, taking review queue to 314. Replay left the digest unchanged.
 - **2026-09-05:** Built the scholarship index: 199 works separated from the 644 museum, auction and dealer records, a scope ledger (migration 013) with 26 derived and 173 honestly unclassified, 107 contributors grouped from free-text author strings, and a decade curve plotted against Waller's control list. Fixed two contributor defects found while building it: the SCHOL-002 authors placeholder had merged Geller with Gordon and Schwab with Shaked, and bare surnames were splitting Levene and Gordon from their full names. Gordon now shows correctly at 8 works. Ranking is by publications, not citations, because only 9% of sources carry a DOI.
+- **2026-09-05:** Ways in: corpus-wide search, eight counted browse axes over the content facets, and publication pages backed by a new `publications` projection table. Facets are computed client-side from the facts table so a published static export behaves identically; the API/export equivalence still holds across all 13 tables.
+- **2026-09-05:** Tranche 5: restored structured filtering below 900px, where the stylesheet had been hiding every fieldset, using a native disclosure that is invisible on wide screens. Added the rights-gated image path so an approved photograph replaces the spiral automatically, with tests for approved, withheld and unreviewed. Dark mode landed earlier with the reading room. The interface plan is complete.
+- **2026-09-06:** TEXT-001 access follow-through: confirmed the 2013 Aramaic Bowl Spells volume at the official publisher, where it requires purchase or institutional access, and recorded WorldCat as the authorized library route. A complete Internet Archive community upload supplies no license, rights statement or depositor-authority evidence and was not acquired or used. Opened IBI-LEAD-JBA2013-ACCESS and bound the Ford 2014 specialist-comparison lead to it; no reading comparison, identity decision, rights decision or publication was attempted.
+- **2026-09-06:** TEXT-001 attribution repair: resolved the Ford 2002 discrepancy from the journal record, the author's institutional publication record and current OpenAlex metadata. Added an append-only source-correction ledger that retains the exact imported Müller-Kessler state; reclassified that row as OpenAlex metadata and attached the verified J. N. Ford article appearance to BM 91715. No full-text reading, identity merge, rights decision or publication occurred.
+- **2026-09-06:** SCHOL-005: added a running publications-to-purchase register to the generated roadmap. PURCHASE-001 is Shaked, Ford and Bhayro's 2013 Aramaic Bowl Spells, Volume One, verified from the user-supplied Brill title page and linked to IBI-LEAD-JBA2013-ACCESS. Prices are checked at purchase time rather than frozen in the roadmap; authorized library or researcher-supplied access can satisfy the need without a purchase.
+- **2026-09-06:** SCHOL-005 Segal 2000 access review: confirmed ISBN 0714111457 / 9780714111452 and found the complete 239-page, 159-plate catalogue in the NYPL Research Catalog as an offsite item available by advance request. New retail listings were out of stock and the visible used copy was about US$408 plus shipping, so Segal was not added to the purchase register; LED-DF20C6F96C3F is reopened with library access as the next action.
+- **2026-09-06:** SCHOL-005 Library of Congress strategy: confirmed the user's LCCN records for Aramaic Bowl Spells (2013009563; both Volumes 1 and 2 available onsite) and Segal 2000 (2001369942; one copy available onsite). Continued the catalog sweep and found Isbell 1975 (75015949) and Ford–Morgenstern Volume One (2019026750) available onsite. Added an LC reading-room queue, made LC the default offline search, reopened or created the relevant access leads, and changed PURCHASE-001 to backup-only.
+- **2026-09-06:** SCHOL-004 / SCHOL-005 Library of Congress priority sweep: official LCCN 2006364726 explicitly identifies Müller-Kessler 2005 as Texte und Materialien der Frau Professor Hilprecht Collection, Bd. 7, resolving the final publication key TMH 7 and replacing its blocked bibliographic lead with an onsite consultation lead. Added confirmed onsite routes for TMH 7, Moriggi 2014 and the exact 1998 third edition of Naveh–Shaked. Recorded the available 1985 first edition as an alternate only, without conflating it with the 1987 second-edition source.
+- **2026-09-06:** SCHOL-006 first scope batch: reviewed the five held scholarship PDFs that remained outside derived publication-registry scopes. Classified Schwab 1891 as a corpus edition, Levene–Bhayro 2006 as a single-object edition, Kedar 2019 and Waller 2022 as thematic studies, and Waller 2025 as a synthesis. Append-only scope coverage rises from 27/198 to 32/198; 166 works remain explicitly unclassified.

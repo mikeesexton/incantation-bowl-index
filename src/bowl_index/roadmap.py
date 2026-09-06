@@ -307,6 +307,59 @@ def write_roadmap(conn, config_path, destination):
     lines.extend(["", "## Current priority order", ""])
     for index, priority in enumerate(config.get("priorities", []), 1):
         lines.append("%s. %s" % (index, priority))
+
+    offline = config.get("offline_access_register", {})
+    offline_items = offline.get("items", [])
+    if offline_items:
+        lines.extend([
+            "",
+            "## Offline research queue",
+            "",
+            offline.get("policy", "Running list of publications available for lawful onsite consultation."),
+            "",
+            "| Priority | Status | Publication | Library record | Call number | Needed for |",
+            "|---:|---|---|---|---|---|",
+        ])
+        for item in offline_items:
+            publication = "%s (%s) · `%s`" % (
+                item["title"], item.get("year", "n.d."), item.get("source_id", "unlinked"),
+            )
+            record = "[%s](%s)" % (item["lccn"], item["catalog_url"])
+            lines.append("| %s | %s | %s | %s | `%s` | %s |" % (
+                item["priority"], item["status"].replace("_", " ").title(),
+                publication, record, item["call_number"], item["needed_for"],
+            ))
+        lines.append("")
+        if offline.get("note"):
+            lines.extend([offline["note"], ""])
+
+    purchases = config.get("purchase_register", {})
+    items = purchases.get("items", [])
+    if items:
+        lines.extend([
+            "",
+            "## Publication purchase backups",
+            "",
+            purchases.get(
+                "policy",
+                "Running list of publications that require purchase rather than ordinary open access.",
+            ),
+            "",
+            "| Priority | Status | Publication | Needed for | Purchase |",
+            "|---:|---|---|---|---|",
+        ])
+        for item in items:
+            publication = "%s (%s) · `%s`" % (
+                item["title"], item.get("year", "n.d."), item.get("source_id", "unlinked"),
+            )
+            purchase = "[Publisher](%s)" % item["purchase_url"]
+            lines.append("| %s | %s | %s | %s | %s |" % (
+                item["priority"], item["status"].replace("_", " ").title(),
+                publication, item["needed_for"], purchase,
+            ))
+        lines.append("")
+        if purchases.get("note"):
+            lines.extend([purchases["note"], ""])
     lines.extend(["", "## Task register", ""])
     for stream in config["workstreams"]:
         lines.extend(["### %s — %s" % (stream["id"], stream["title"]), "", stream["scope"], ""])

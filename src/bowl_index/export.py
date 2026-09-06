@@ -9,7 +9,7 @@ from .identity import write_identity_export
 EXPORT_TABLES = (
     "sources", "captures", "search_runs", "search_queries", "coverage_targets", "saturation_sweeps", "manual_audits", "objects",
     "appearances", "appearance_object_links", "identifiers", "claims", "texts", "events", "media",
-    "leads", "dedupe_candidates", "dedupe_evidence", "claim_conflict_reviews", "claim_conflict_review_history", "text_proofreading_reviews", "media_rights_reviews", "claim_locator_corrections", "museum_concordance_reviews", "object_relationship_assertions", "merge_log",
+    "leads", "dedupe_candidates", "dedupe_evidence", "claim_conflict_reviews", "claim_conflict_review_history", "text_proofreading_reviews", "media_rights_reviews", "claim_locator_corrections", "source_corrections", "museum_concordance_reviews", "object_relationship_assertions", "merge_log",
 )
 
 
