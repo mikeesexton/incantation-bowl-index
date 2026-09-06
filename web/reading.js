@@ -83,6 +83,18 @@
     ? value.slice(0, value.lastIndexOf(" ", limit) > 0 ? value.lastIndexOf(" ", limit) : limit) + "…"
     : value;
 
+  /* An approved image, or nothing. The projection emits a media row only for a
+     current approval, so this cannot show an uncleared picture — there is simply
+     no row to render, and the spiral carries the grid until RIGHTS-002 lands. */
+  function mark(cluster) {
+    const image = (data.mediaBy[cluster.identity_id] || [])
+      .find(m => m.media_type === "image" && m.url);
+    if (!image) return spiral(cluster);
+    return `<img class="bowl-image" src="${esc(image.url)}" alt="${esc(cluster.display_name)}"
+      loading="lazy" decoding="async">${image.attribution
+        ? `<span class="bowl-credit">${esc(image.attribution)}</span>` : ""}`;
+  }
+
   function summarise(cluster, limit) {
     const id = cluster.identity_id;
     // Prefer the shortest ritual statement: a purpose reads better than an
@@ -108,7 +120,7 @@
     const tongue = first(id, "language");
     const when = first(id, "dating");
     return `<article class="bowl-card"><a href="#/reading/${encodeURIComponent(id)}">
-      <div class="bowl-card-mark">${spiral(cluster)}</div>
+      <div class="bowl-card-mark">${mark(cluster)}</div>
       <div class="bowl-card-body">
         <h3>${esc(cluster.display_name)}</h3>
         ${line ? `<p class="bowl-card-line">${esc(line)}</p>` : ""}
@@ -283,7 +295,7 @@
     view.innerHTML = `<article class="entry">
       <a class="entry-back" href="#/reading">← Bowls worth reading</a>
       <header class="entry-head">
-        <div class="entry-mark">${spiral(cluster)}</div>
+        <div class="entry-mark">${mark(cluster)}</div>
         <div>
           <h1 id="reading-title">${esc(cluster.display_name)}</h1>
           <p class="entry-standfirst">${esc(summarise(cluster) || "No description recorded.")}</p>

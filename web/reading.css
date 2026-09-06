@@ -53,6 +53,11 @@
 
 /* The spiral is drawn from the object's own recorded line count. */
 .spiral { width: 100%; height: auto; display: block; }
+/* A bowl photographed from above is circular; the crop keeps that. */
+.bowl-image { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%;
+  display: block; background: var(--clay-deep); }
+.bowl-credit { display: block; font: .62rem/1.3 var(--sans); color: var(--brownink-soft);
+  margin-top: .3rem; text-align: center; }
 .spiral-rim { fill: var(--clay-deep); stroke: var(--clay-line); stroke-width: 1; }
 .spiral-line { fill: none; stroke: var(--brownink); stroke-width: 1.15; stroke-linecap: round; opacity: .82; }
 .spiral.is-estimated .spiral-line { opacity: .3; stroke-dasharray: 2 3; }

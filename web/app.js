@@ -486,6 +486,17 @@ $("#refresh-corpus").addEventListener("click", async event => {
   } catch (error) { toast(error.message); }
   finally { button.disabled = false; }
 });
+// Filters stay in the DOM on narrow screens — they used to be display:none —
+// but start collapsed so they do not push the records off the first screen.
+// The summary is hidden above 900px, so widening the window must reopen the
+// panel or the filters would be shut with no control to reopen them.
+const narrow = window.matchMedia("(max-width: 900px)");
+function fitFilterPanel(query) {
+  const panel = $("#filter-panel");
+  if (panel) panel.open = !query.matches;
+}
+fitFilterPanel(narrow);
+narrow.addEventListener("change", fitFilterPanel);
 window.addEventListener("hashchange", activateRoute);
 
 initialize();

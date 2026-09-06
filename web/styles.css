@@ -41,6 +41,12 @@
   }
 }
 
+/* The filter panel is a disclosure so narrow screens can collapse it. On a wide
+   screen there is nothing to disclose, so the summary is hidden and it reads as
+   a plain sidebar. */
+#filter-panel > summary { display: none; }
+#filter-panel { border: 0; }
+
 * { box-sizing: border-box; }
 html { min-width: 320px; background: var(--paper); }
 body { margin: 0; color: var(--ink); background: var(--paper); font: 1rem/1.48 var(--sans); }
@@ -300,7 +306,10 @@ h1 { margin-top: .16rem; font-size: clamp(1.85rem, 3vw, 2.55rem); letter-spacing
   .view-tabs { grid-column: 1 / -1; grid-row: 2; min-height: 46px; padding-left: .5rem; background: var(--ink); }
   .local-controls { margin-right: .8rem; }
   .sidebar { grid-row: 2; padding: 1rem; border-right: 0; border-bottom: 1px solid var(--line-dark); }
-  .sidebar-heading, #filters fieldset, .sidebar-foot { display: none; }
+  .sidebar-heading, .sidebar-foot { display: none; }
+  #filter-panel > summary { display: block; padding: .55rem 0; font: 600 .78rem/1 var(--sans);
+    letter-spacing: .1em; text-transform: uppercase; color: var(--muted); cursor: pointer; }
+  #filter-panel[open] > summary { margin-bottom: .4rem; }
   #filters { padding: 0; }
   .search-field { max-width: none; }
   .quiet-button[type="reset"] { display: none; }

@@ -94,6 +94,38 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Tranche 5, and the interface plan is done
+
+**Claimed:** reading-room plan, tranche 5 (RIGHTS-005, QA-009 done)
+**Corpus:** unchanged
+**Tests:** 176 passed (173 before; +3)
+
+- **Filters work on a small screen again.** Below 900px the stylesheet did
+  `#filters fieldset { display: none }` — every structured filter vanished on
+  tablet and phone, leaving only free-text search. They are now in a native
+  disclosure: the summary is hidden above 900px so a wide screen reads exactly
+  as before, and below it the panel starts collapsed with all five selects
+  reachable. Verified at 375×812: 5 selects present, 0 before.
+  - Edge case closed: widening the window reopens the panel, because the
+    summary is hidden at that width and it would otherwise be shut with no
+    control to open it.
+- **Rights-gated images.** The reading room now renders a photograph where one
+  is approved and the spiral where none is. It cannot leak: the projection emits
+  a media row only for a current approval, so an uncleared image has no row to
+  render. Tested in all three states — a public-domain *source* alone releases
+  nothing, a completed approval releases URL and attribution, a withhold keeps
+  it off. 0 of 325 are approved today, so nothing shows; when RIGHTS-002 clears
+  one it appears with no further work. Circular crop, because a bowl
+  photographed from above is a circle.
+- Dark mode was done in tranche 2, so that item was already closed.
+- **The interface plan is complete.** Tranches 1–5, plus the projection hinge.
+- What now limits this project is not the interface: 173 of 199 works are
+  unclassified by scope (`SCHOL-006`), 736 of 1,322 bowls have nothing a reader
+  can engage with, 312 claim differences await revalidation (`QA-002`), and
+  0 of 325 images are cleared (`RIGHTS-002`). All research and rights work.
+
+---
+
 ## 2026-09-05 — Claude — Ways in
 
 **Claimed:** reading-room plan, tranche 4 (META-009, SCHOL-008 done)

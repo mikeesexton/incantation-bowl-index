@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-06T04:40:00+00:00",
+  "updated_at": "2026-09-06T05:10:00+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -427,6 +427,14 @@
           "owner": "Engineering",
           "done_when": "A source's public page URL can be published as an access pointer without being suppressed merely because the page was also archived privately, while capture storage paths and unapproved media URLs stay forbidden.",
           "evidence": "The export guard forbids any string matching a capture URL. That is correct for media and archive paths but suppresses 5 legitimate bibliographic links, since a public page URL reveals nothing about the archive. Narrow the guard to storage paths and media URLs."
+        },
+        {
+          "id": "RIGHTS-005",
+          "title": "Render approved images, and only approved images",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "The reading room shows a bowl's photograph when its media has a completed approval, and shows nothing of it otherwise, with tests covering both directions.",
+          "evidence": "The reading room renders whatever media the projection emits, and the projection emits a media row only for a current approval - so an uncleared image has no row to render and the data-drawn spiral carries the grid instead. tests/test_media_gate.py covers all three states: a public-domain source alone releases nothing, a completed approval releases the URL with its attribution, and a withhold decision keeps it off the page. Currently 0 of 325 media are approved, so no image appears; when RIGHTS-002 clears one it appears with no further work. Circular crop, since a bowl photographed from above is a circle."
         }
       ]
     },
@@ -546,6 +554,14 @@
           "owner": "Engineering",
           "done_when": "Every claim field is either in a CORE_COVERAGE group or explicitly excluded with a recorded reason; a test fails when an unclassified field appears; and the conflict counts are reported against that full denominator.",
           "evidence": "All 101 claim fields are now classified: 66 in a comparison group, 35 explicitly excluded with a stated reason, 0 unclassified. `unclassified_claim_fields` reports any new field and `ibi stats` surfaces it; tests/test_field_model.py fails on a field that is in two groups, both grouped and excluded, excluded without a reason, or neither. The conflict denominator moved from 337 to 365 with zero existing decisions invalidated, so the backlog is 312 rather than 284 and is now a measured total rather than an artefact of seven hard-coded groups. Exclusions carry their reason: market values are per-sale events, ownership history is event-shaped and belongs in `events`, object relationships belong in `object_relationship_assertions`, and META-005 evidence gradings assess a claim rather than rival it."
+        },
+        {
+          "id": "QA-009",
+          "title": "Keep the filters usable on a small screen",
+          "status": "done",
+          "owner": "Engineering",
+          "done_when": "Structured filtering is reachable at every viewport width.",
+          "evidence": "Below 900px the stylesheet set `#filters fieldset { display: none }`, so every structured filter disappeared on tablet and phone and only free-text search remained. The fieldsets are now inside a native disclosure: the summary is hidden above 900px so a wide screen reads as before, and below it the panel starts collapsed but all five selects stay in the DOM and reachable. Widening the window reopens it, since the summary is hidden at that width and the panel would otherwise be shut with no control to open it."
         }
       ]
     }
@@ -723,6 +739,10 @@
     {
       "date": "2026-09-05",
       "note": "Ways in: corpus-wide search, eight counted browse axes over the content facets, and publication pages backed by a new `publications` projection table. Facets are computed client-side from the facts table so a published static export behaves identically; the API/export equivalence still holds across all 13 tables."
+    },
+    {
+      "date": "2026-09-05",
+      "note": "Tranche 5: restored structured filtering below 900px, where the stylesheet had been hiding every fieldset, using a native disclosure that is invisible on wide screens. Added the rights-gated image path so an approved photograph replaces the spiral automatically, with tests for approved, withheld and unreviewed. Dark mode landed earlier with the reading room. The interface plan is complete."
     }
   ],
   "priorities": [

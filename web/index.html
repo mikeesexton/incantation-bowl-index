@@ -44,6 +44,8 @@
             <input id="search" name="q" type="search" placeholder="Accession, client, publication…" autocomplete="off">
           </label>
 
+          <details id="filter-panel" open>
+            <summary>Filters</summary>
           <fieldset>
             <legend>Record</legend>
             <label>Status<select name="status" id="status-filter"><option value="">All statuses</option></select></label>
@@ -77,6 +79,7 @@
             </label>
           </fieldset>
           <button class="quiet-button" type="reset">Clear filters</button>
+          </details>
         </form>
         <div class="sidebar-foot">
           <span>Private records may contain rights-restricted research material.</span>
