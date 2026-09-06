@@ -94,6 +94,48 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-05 — Claude — Tokenise the stylesheet; fix contrast everywhere
+
+**Claimed:** none (defect fix)
+**Corpus:** unchanged
+**Tests:** 176 passed
+
+Mike flagged Explore, Enrichment and Concordance. The previous fix treated
+symptoms; this is the cause.
+
+- **The stylesheet was written light-only with 91 literal colours.** Adding a
+  dark palette flipped the tokens and left every literal behind, so any rule
+  with a hard-coded colour kept its light value on a dark ground. Replaced ~40
+  literals in rules with semantic tokens — `--th-bg`, `--row-hover`, `--track`,
+  `--ok-bg` / `--ok-ink` / `--ok-line` / `--ok-dot`, `--danger-soft` /
+  `--danger-ink`, `--amber-ink`, `--chip-bg` / `--chip-hover`, `--monogram`,
+  `--on-accent` — each with a dark counterpart. Three literals remain, all on
+  the always-dark chrome bar where they are correct.
+- **`background: white` is a keyword, so the hex sweep missed it.** Eleven rules
+  used it, including `.queue-card`, `.coverage-matrix`, `.pressure-grid article`
+  and `.review-workbench` — which is why Enrichment and Concordance were white
+  cards with pale text at a **1.3:1** ratio. All tokenised.
+- Found the rest by measurement rather than eye: a script walking every visible
+  text node in all five views, computing contrast against its resolved
+  background. That is what caught `.search-field span` at **1.07:1**, the
+  identifier previews at 2.8, and the eyebrows at 2.6.
+- Also raised `--faint`, `--amber` and `--cyan`, which were pale enough to fail
+  as small text even in light mode, and moved `.eyebrow` and `.queue-rank` off
+  `--faint`.
+
+**Worst contrast, before and after, across all five views:**
+
+| | before | after |
+|---|---:|---:|
+| dark | 1.07 | **4.6** |
+| light | 2.6 | **4.3** |
+
+- Lesson recorded: I verified this interface in an ~800px browser pane and
+  called it polished. Both rounds of colour defects would have been obvious in
+  a real window. Measure contrast, and screenshot at the actual viewport.
+
+---
+
 ## 2026-09-05 — Claude — Fix the dark palette
 
 **Claimed:** none (defect fix)

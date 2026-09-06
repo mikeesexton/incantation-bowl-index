@@ -127,7 +127,7 @@
 .contributor-list .who { font: 1rem/1.4 var(--serif); }
 .contributor-list .who small { font: .76rem/1 var(--sans); color: var(--brownink-soft); margin-left: .5rem; }
 .contributor-list .who em { font: .7rem/1 var(--sans); font-style: normal; letter-spacing: .05em;
-  text-transform: uppercase; color: var(--amber); margin-left: .5rem; cursor: help; }
+  text-transform: uppercase; color: var(--amber-ink); margin-left: .5rem; cursor: help; }
 .contributor-list .tally { font: .82rem/1.4 var(--sans); color: var(--brownink-soft); white-space: nowrap; }
 
 .scope-group { border-bottom: 1px solid var(--clay-line); }
