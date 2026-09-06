@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-06T17:10:00Z",
+  "batch": "Classify the five held scholarship documents that remained outside derived publication-registry scopes",
+  "policy": "These are document-scope judgments only. They do not certify completeness of object enumeration, endorse readings, or change text and media rights.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-SCHWAB1891",
+      "source_id": "SRC-F42955665921",
+      "scope": "corpus_edition",
+      "basis": "Archived Proceedings volume SHA-256 f34353aac187...; Schwab 1891, printed pp. 583-595. The opening at p. 584 states that the paper examines seven previously unpublished inscriptions, then presents them separately. This is an edition of multiple bowls rather than a thematic survey."
+    },
+    {
+      "review_id": "IBI-SCOPE-LEVENE-BHAYRO2006",
+      "source_id": "SRC-A84A167A5779",
+      "scope": "single_object_edition",
+      "basis": "Researcher-supplied five-page article SHA-256 532e80b60b5e...; printed p. 242 says the paper presents one hitherto unpublished bowl from the Samir Dehay collection, designated SD34, and describes its fourteen-line text."
+    },
+    {
+      "review_id": "IBI-SCOPE-KEDAR2019",
+      "source_id": "SRC-A90AB34CA3FE",
+      "scope": "thematic_study",
+      "basis": "Archived 179-page dissertation SHA-256 8ae23ed1a2fd...; abstract and contents frame a sustained inquiry into who wrote the bowls, women as scribes/authors, the NFP style, and related social-historical interpretation. It is not organized as an edition or collection catalogue."
+    },
+    {
+      "review_id": "IBI-SCOPE-WALLER2022",
+      "source_id": "SRC-73C44B143A9D",
+      "scope": "thematic_study",
+      "basis": "Archived complete book SHA-256 44e0ae8bc7ed...; contents and preface show an analytical introduction followed by a cross-publication catalogue of biblical quotations and a distribution table. Because the catalogue concerns one textual phenomenon across collections, rather than cataloguing a physical collection, the project vocabulary classifies it as a thematic study."
+    },
+    {
+      "review_id": "IBI-SCOPE-WALLER2025",
+      "source_id": "SRC-19F191B3F5C5",
+      "scope": "synthesis",
+      "basis": "Researcher-supplied complete chapter SHA-256 b60b030f13d2..., printed pp. 3-48. The opening says it provides a broad overview of current research and proceeds from chronology, geography, language, contents and use to the social and cultural milieu; later sections survey publication history and major editions."
+    }
+  ]
+}

@@ -25,6 +25,141 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-06 — Codex — Reviewed GitHub release
+
+**Claimed:** none — OPS release, explicitly authorized by the researcher
+**Corpus:** unchanged — state digest 14a1a17d4839
+**Tests:** 189 Python tests and 4 JavaScript controller tests passed; outgoing file audit and JSON/JSONL parsing passed.
+
+- Prepared a public snapshot of nine pending commits. Original local history is retained on a local-only backup branch; that branch must not be pushed.
+- Reviewed new code, tests, factual bibliographic manifests, source-scope summaries, and aggregate reports against the repository's existing release rules. No new source scans, artifact photos, restricted transcriptions/translations, database files, or full research exports are included.
+- Removed personal residence and visit-scheduling context from the outgoing acquisition metadata, lead notes, and roadmap policy. This is a public-file redaction only; the private corpus and original ingestion history are unchanged.
+- Automatic approval review blocked the public push because it requires explicit approval of the 41-file payload and destination. Nothing was pushed; the release remains local pending that approval.
+- The local UI remains localhost-only. The hero is an original SVG placeholder; historical wording is draft. No rights approval, historical research, public site deployment, or regeneration of the public dataset is part of this release.
+
+---
+
+## 2026-09-06 — Codex — Local introductory home and evidence coverage
+
+**Claimed:** none — OPS local interface workstream, user-approved introduction
+**Corpus:** unchanged — state digest 14a1a17d4839
+**Tests:** 189 Python tests and 4 isolated JavaScript controller tests passed; JS syntax and diff whitespace checks passed.
+
+- Added a five-chapter scroll introduction at the default home route, with a local illustrative bowl placeholder, schematic map, researcher-supplied 1850/1853 timeline, live publication bars, stable per-identity coverage circles, and links into Explore. Historical copy is explicitly draft; research remains paused.
+- Added a local-only read-only snapshot endpoint. Counts use one SQLite read snapshot, and failed refreshes preserve the previous complete catalog. The current snapshot has 1,322 working identities from 1,590 records; 284 edition references, 327 provenance flags, and 324 image references. No restricted contents or media URLs enter the endpoint.
+- Added positive coverage filters and URL-backed Explore state. Edition-reference coverage includes resolved publication pointers and sources already classified as editions, while the existing missing-transcription filter retains its narrower meaning.
+- Desktop browser checks confirmed the page composition, stable circle positions, all three shortcut counts, refresh/back filter preservation, keyboard dossier opening, and the Read view. Further browser testing was blocked by automatic approval review because the workspace was out of credits; mobile visual verification and the remaining browser checks are pending. Controller tests independently cover failed loads, malformed snapshots, invalidation, and reduced-motion navigation. Responsive layouts and the accessible chart table are implemented.
+- No historical research, corpus changes, rights approvals, report regeneration, or public deployment. Documented the routes, count semantics, refresh behavior, and draft assets in the console guide.
+
+---
+
+## 2026-09-06 — Codex — Held-publication scholarship scope classification
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (five append-only source-scope reviews) — state digest 14a1a17d4839
+**Tests:** 180 passed; archive verification, SQLite integrity and foreign keys valid; JSON manifest parses; scope-batch replay is idempotent; corpus-state check recorded.
+
+- Reviewed the five held scholarship PDFs that still required a human scope judgment, using rendered pages plus text extraction: Schwab 1891 is a seven-bowl corpus edition; Levene and Bhayro 2006 is a single-object edition; Kedar 2019 and Waller 2022 are thematic studies; Waller 2025 is a field synthesis.
+- Added the five decisions through the append-only source-scope ledger. Together with 27 scopes derived from source type or the publication registry, coverage is now 32/198 works; 166 remain explicitly unclassified.
+- Updated the roadmap's stale current publication and conflict-queue numbers while preserving historical change-log statements. All 19 publication keys resolve, 435/435 keyed candidate records sit under a resolved publication, and the current claim-difference review queue is 315 cases, including 285 earlier decisions needing revalidation.
+- These labels describe publication scope only. They do not certify complete object enumeration, adjudicate readings, or change text and media rights. Next: continue SCHOL-006 from authoritative abstracts and tables of contents for unheld works, or prioritize newly obtained LC volumes as they become available.
+
+---
+
+## 2026-09-06 — Codex — Library of Congress priority-edition sweep
+
+**Claimed:** SCHOL-004, SCHOL-005
+**Corpus:** changed (one source correction, one publication-registry decision, three access leads opened and two bibliographic leads resolved) — state digest c6576fb19da1
+**Tests:** 180 passed; archive verification, SQLite integrity and foreign keys valid; JSON/JSONL manifests parse; correction and registry replay checks are idempotent; corpus-state check recorded.
+
+- Resolved the last publication key. Official Library of Congress LCCN 2006364726 explicitly identifies Christa Müller-Kessler's 2005 Harrassowitz volume as *Texte und Materialien der Frau Professor Hilprecht Collection*, Bd. 7, so TMH 7 now resolves to SRC-63345F60155B in append-only IBI-PUBREG-20. All 19 current keys resolve and cover 435 distinct candidates.
+- Corrected the Waller-derived Müller-Kessler source row from that official metadata while preserving its exact prior state in IBI-SOURCE-CORR-TMH7-LOC-BIBLIOGRAPHY. The record now carries the verified author, imprint, series, ISBN, LCCN URL and onsite call number; it remains explicitly unread.
+- Confirmed three additional exact-edition access routes and expanded the LC queue from five to eight volumes: TMH 7 under PJ5208.A5 M85 2005, Moriggi 2014 under PJ5615 .M665 2014, and Naveh–Shaked's 1998 third edition under BM729.A4 N38. The available 1985 first edition is recorded as an alternate, not conflated with the corpus's 1987 source.
+- Resolved the old TMH-specific and combined MRLA 8/TMH 7 bibliographic leads, and opened separate consultation leads for the three newly queued works. PURCHASE-001 remains backup-only; no new purchase was added because LC holds each checked edition onsite.
+- No item was requested, purchased, read or captured, and no bowl reading, text, image, identity, rights decision or public release changed. Next: obtain the Reader Identification Card, consult LOC-READ-001 and LOC-READ-002 first, then work down the remaining six-item queue with page-level evidence.
+
+---
+
+## 2026-09-06 — Codex — Library of Congress offline-access strategy
+
+**Claimed:** SCHOL-005
+**Corpus:** changed (three access leads updated and two opened for confirmed LC holdings) — state digest 119b9e4e20e8
+**Tests:** 180 passed; archive verification, SQLite integrity and foreign keys valid; roadmap and acquisition manifests parse; corpus-state check passes.
+
+- Confirmed both user-supplied records in the live Library of Congress catalog. LCCN 2013009563 holds *Aramaic Bowl Spells* Volumes 1 and 2, both available onsite under PJ5208.A2 S53 2013; LCCN 2001369942 holds Segal 2000, available onsite under PJ5208.A5 S45 2000.
+- Made the Library of Congress the roadmap's default offline source, added a five-item reading-room queue pending the researcher's Reader Identification Card, and changed PURCHASE-001 to backup-only. Purchases now follow LC, other libraries, interlibrary loan and repository checks.
+- Continued the next acquisition step: confirmed Isbell 1975 available onsite under PJ5208.A5 I8 1975 (LCCN 75015949), and Ford–Morgenstern Volume One available onsite under PJ5208.A2 2020 (LCCN 2019026750). Opened or updated evidence-bound access leads for both and for *Aramaic Bowl Spells* Volume Two.
+- The LC record dates Ford–Morgenstern as [2020]- while the source cites the 2019 Brill imprint; both are preserved pending inspection of the physical volume. No item was requested, purchased, read or captured, and no bowl claim, identity, text, image, rights decision or release changed. Next: obtain the Reader Identification Card, request LOC-READ-001 and LOC-READ-002, then record page-level evidence from Segal 2000 and the 2013 volume.
+
+---
+
+## 2026-09-06 — Codex — Segal 2000 acquisition-route review
+
+**Claimed:** SCHOL-005
+**Corpus:** changed (one acquisition lead reopened with an authorized library route) — state digest 0522f7d4a37e
+**Tests:** 180 passed; archive verification, SQLite integrity and foreign keys valid; roadmap and acquisition manifests parse; corpus-state check passes.
+
+- Assessed Segal 2000, the highest-impact acquisition item at 252 distinct candidate records. British Museum and Google Books expose metadata, not the complete work; Foyles and Hatchards list it out of stock.
+- Found the complete 239-page, 159-plate volume in the NYPL Research Catalog as an offsite item available by advance request, call number *ODF+ 02-6279. Reopened LED-DF20C6F96C3F from blocked to open with this authorized route and ISBN 0714111457 / 9780714111452.
+- Did not add Segal to the purchase register. The visible used copy was about US$408 plus shipping, so library or interlibrary access should be attempted before purchase. PURCHASE-001 remains the 2013 *Aramaic Bowl Spells* volume.
+- Updated stale roadmap acquisition and scholarship-scope counts and regenerated roadmap, acquisition, enrichment, campaign and private-export outputs. No copy was requested, borrowed, bought or read; no catalogue extraction, bowl claim, identity, text, image, rights decision or public release changed. Next: Mike can request the NYPL copy; otherwise continue SCHOL-005 by assessing Isbell 1975 or another high-impact access lead.
+
+---
+
+## 2026-09-06 — Codex — Roadmap publication purchase register
+
+**Claimed:** SCHOL-005
+**Corpus:** changed (one acquisition lead linked to the verified purchase record) — state digest a06079c9cf02
+**Tests:** 180 passed; archive verification, SQLite integrity and foreign keys valid; roadmap and acquisition manifests parse; corpus-state check passes.
+
+- Added a durable `purchase_register` to the roadmap input and renderer. The generated roadmap now has a Publications to purchase table with stable IDs, priority, status, source linkage, research need and publisher URL; a regression test covers its rendering.
+- Confirmed the user-supplied Brill title 20045 as Shaked, Ford and Bhayro, *Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One* (2013), e-ISBN 9789004229372. Added it as PURCHASE-001 and updated IBI-LEAD-JBA2013-ACCESS to the canonical purchase page.
+- Prices are checked at purchase time, not frozen in the roadmap. Authorized institutional access, interlibrary loan or a researcher-supplied copy can satisfy the need and will change the status without deleting its history.
+- No other blocked work was promoted to the purchase list: unlocated and merely paywalled publications remain acquisition leads until open, repository and library routes are checked. No document, bowl reading, text, image, rights decision or public release changed. Next: acquire or supply PURCHASE-001, or assess the next high-impact acquisition lead for purchase necessity.
+
+---
+
+## 2026-09-06 — Codex — Ford 2002 attribution reconciliation
+
+**Claimed:** TEXT-001
+**Corpus:** changed (one source correction, one appearance, one identifier, one claim and one resolved lead) — state digest 917a7aede409
+**Tests:** 180 passed; archive verification, SQLite integrity and foreign keys valid; manifests parse as JSON/JSONL; correction replay and corpus-state checks pass.
+
+- Resolved IBI-LEAD-FORD2002-ATTRIBUTION. The JANES and Bar-Ilan publication records identify J. N. Ford; current OpenAlex metadata names Jane Ford. The earlier Müller-Kessler row was an OpenAlex metadata artifact rather than the journal article.
+- Added migration 014 and `ibi ingest-source-corrections`: checked bibliographic repairs now retain immutable before/after source states, evidence hashes and optional replacement-source pointers. The exact imported Müller-Kessler state is preserved in IBI-SOURCE-CORR-FORD2002-ATTRIBUTION; the live row is now honestly classified as repository metadata.
+- Attached the correctly attributed SRC-FORD2002-JANES appearance, museum number and title-supported Mandaic claim to the existing BM 91715 object without an identity merge. Regenerated roadmap, acquisition, enrichment, conflict, campaign and private-export outputs.
+- The source fingerprint change returned one BM 91715 location comparison to the QA revalidation queue (314 to 315); it was not silently re-approved. No full article reading, text/media ingestion, rights decision or publication occurred. The separate full-text access lead remains blocked. Next: continue TEXT-001 with the provisional Ford concordances, or obtain the 2013 volume through the recorded authorized route.
+
+---
+
+## 2026-09-06 — Codex — Ford 2013 edition access follow-through
+
+**Claimed:** TEXT-001
+**Corpus:** changed (one acquisition lead, one lead update, four search queries) — state digest 32216dd4da51
+**Tests:** 176 passed; archive verification, SQLite integrity and foreign keys valid; manifests parse as JSON/JSONL.
+
+- Inspected the official De Gruyter Brill page: the 2013 *Aramaic Bowl Spells* volume requires purchase or institutional access and exposes no complete authorized reading copy. Recorded WorldCat as the library route.
+- Inspected the existing Internet Archive item's metadata without acquiring the file. Its complete community upload has no license, rights statement or evidence of depositor authority, so it was not used as an authorized edition.
+- Added the evidence-bound acquisition review, opened priority-1 IBI-LEAD-JBA2013-ACCESS, and updated IBI-LEAD-FORD2014-SPECIALIST so reading comparison cannot proceed from publisher/catalogue metadata or the unverified upload. Regenerated roadmap, acquisition, enrichment and campaign reports.
+- A replay check of `ingest-search-log` created one extra empty search-run row while leaving the four query rows idempotent (4, not 8). It was retained and disclosed rather than hand-deleted, in keeping with the append-only rule.
+- Ford 2002 attribution and Davidovitz 27 identity remain separate open leads. No identity merge, reading adjudication, rights decision, text/media ingestion or publication occurred. Next: obtain the volume through institutional access, purchase or researcher supply; otherwise continue a different bounded TEXT-001 publication-reference cohort.
+
+---
+
+## 2026-09-06 — Codex — Ford batch closeout after Claude reader work
+
+**Claimed:** none (completed TEXT-001 batch integration verification)
+**Corpus:** unchanged — state digest 2e8740192442
+**Tests:** 176 passed; archive verification, SQLite integrity and foreign keys valid; live reader projection assertions passed.
+
+- Re-read Claude's handoff and commits through 05ba1dc. Working tree clean and database matched Claude's recorded baseline. Preserved the new reading room, scholarship index, search/browse, media gates and interface changes.
+- Verified the completed Ford batch in the current reader projection: all 16 source appearances and 38 attributed metadata claims survive; no Ford transcription, translation or media content is emitted.
+- Verified both edition-enumeration and commentary-indexing leads are resolved. Checked both research-review hashes against the archived article; no corpus writes during inspection.
+- This closes the bounded Ford edition/commentary indexing task. TEXT-001 remains in progress corpus-wide; obtaining the 2013 edition, specialist comparison and remaining attribution/concordance questions are separate open roadmap work, not silently treated as completed.
+- No code or corpus edits were needed. No derived reports invalidated or public artifact published. Tests reflect Claude's current 176-test suite, replacing the earlier 134-test validation baseline for this handoff.
+
+---
+
 ## 2026-09-06 — Codex — Ford 2014 commentary index
 
 **Claimed:** TEXT-001

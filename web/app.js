@@ -1,6 +1,6 @@
 const state = {
   page: 1, pageSize: 40, total: 0, stats: null, csrf: "", route: "explore",
-  queueAction: "", currentReview: null,
+  queueAction: "", currentReview: null, identityRequest: 0,
 };
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -49,7 +49,7 @@ function toast(message) {
 
 function optionList(select, values) {
   const current = select.value;
-  values.forEach(value => select.insertAdjacentHTML(
+  values.filter(value => ![...select.options].some(option => option.value === value)).forEach(value => select.insertAdjacentHTML(
     "beforeend", `<option value="${escapeHtml(value)}">${escapeHtml(humanize(value))}</option>`
   ));
   select.value = current;
@@ -69,7 +69,8 @@ function renderActiveFilters(params) {
   const labels = [];
   for (const [key, value] of params) {
     if (["page", "page_size", "sort"].includes(key)) continue;
-    labels.push(`<button class="filter-chip" type="button" data-clear-filter="${escapeHtml(key)}">${escapeHtml(humanize(key))}: ${escapeHtml(humanize(value))} <span aria-hidden="true">×</span></button>`);
+    const label = key === "present" ? "Recorded field" : key === "coverage" ? "Missing field" : humanize(key);
+    labels.push(`<button class="filter-chip" type="button" data-clear-filter="${escapeHtml(key)}">${escapeHtml(label)}: ${escapeHtml(humanize(value))} <span aria-hidden="true">×</span></button>`);
   }
   $("#active-filters").innerHTML = labels.join("");
   $$(`[data-clear-filter]`).forEach(button => button.addEventListener("click", () => {
@@ -103,11 +104,14 @@ function identityRow(item) {
 }
 
 async function loadIdentities() {
+  const request = ++state.identityRequest;
   const params = queryParams();
+  if (state.route === "explore") history.replaceState(null, "", `#/explore?${params}`);
   renderActiveFilters(params);
   $("#identity-rows").innerHTML = `<tr><td colspan="4" class="dossier-loading">Reading identity index…</td></tr>`;
   try {
     const data = await api(`/api/identities?${params}`);
+    if (request !== state.identityRequest) return;
     state.total = data.total;
     $("#result-count").textContent = `${data.total.toLocaleString()} matching ${data.total === 1 ? "identity" : "identities"}`;
     $("#identity-rows").innerHTML = data.items.map(identityRow).join("");
@@ -123,7 +127,8 @@ async function loadIdentities() {
     }
     bindIdentityLinks();
   } catch (error) {
-    $("#identity-rows").innerHTML = "";
+    if (request !== state.identityRequest) return;
+    $("#identity-rows").innerHTML = `<tr><td colspan="4">Records could not be loaded. Change a filter or refresh to retry.</td></tr>`;
     toast(error.message);
   }
 }
@@ -282,19 +287,19 @@ function renderQueues() {
   $$(`[data-queue]`, $("#queues-view")).forEach(button => button.addEventListener("click", () => {
     state.queueAction = button.dataset.queue;
     state.page = 1;
-    location.hash = "#/explore";
+    location.hash = `#/explore?${queryParams()}`;
   }));
   $("[data-conflicts]", $("#queues-view")).addEventListener("click", () => {
     $(`[name="conflict"]`).value = "yes";
     state.queueAction = "";
     state.page = 1;
-    location.hash = "#/explore";
+    location.hash = `#/explore?${queryParams()}`;
   });
   $("[data-multirecord]", $("#queues-view")).addEventListener("click", () => {
     $("#sort").value = "sources";
     state.queueAction = "";
     state.page = 1;
-    location.hash = "#/explore";
+    location.hash = `#/explore?${queryParams()}`;
   });
 }
 
@@ -378,16 +383,39 @@ function renderReviews() {
 }
 
 function activateRoute() {
-  const route = (location.hash.match(/^#\/(reading|scholarship|explore|queues|reviews)/) || [])[1] || "reading";
+  const previous = state.route;
+  const route = (location.hash.match(/^#\/(home|reading|scholarship|explore|queues|reviews)(?:[/?]|$)/) || [])[1] || "home";
   state.route = route;
+  document.body.classList.toggle("is-home", route === "home");
   const viewId = route === "scholarship" ? "reading-view" : `${route}-view`;
   $$(".view").forEach(view => view.classList.toggle("is-active", view.id === viewId));
-  $$(".view-tab").forEach(tab => tab.classList.toggle("is-active", tab.dataset.route === route));
+  $$(".view-tab").forEach(tab => {
+    tab.classList.toggle("is-active", tab.dataset.route === route);
+    if (tab.dataset.route === route) tab.setAttribute("aria-current", "page");
+    else tab.removeAttribute("aria-current");
+  });
   $(".sidebar").classList.toggle("is-hidden", route !== "explore");
+  if (route === "home") window.Introduction?.render();
   if ((route === "reading" || route === "scholarship") && window.ReadingRoom) window.ReadingRoom.render();
-  if (route === "explore") loadIdentities();
-  if (route === "queues") renderQueues();
+  if (route === "explore") {
+    const params = new URLSearchParams(location.hash.split("?")[1] || "");
+    for (const control of $("#filters").elements) {
+      if (!control.name) continue;
+      const value = params.get(control.name) || "";
+      // Facet options arrive with the first search response. Preserve direct links.
+      if (value && control.tagName === "SELECT" && ![...control.options].some(option => option.value === value)) {
+        control.add(new Option(humanize(value), value));
+      }
+      control.value = value;
+    }
+    state.queueAction = params.get("next_action") || "";
+    state.page = Math.max(1, parseInt(params.get("page"), 10) || 1);
+    $("#sort").value = params.get("sort") || "completeness_desc";
+    loadIdentities();
+  }
+  if (route === "queues" && state.stats) renderQueues();
   if (route === "reviews") renderReviews();
+  if (route !== previous) window.scrollTo({top: 0, behavior: "instant"});
   $("#workspace").focus({preventScroll: true});
 }
 
@@ -418,7 +446,7 @@ function registerWebMCP() {
       $("#search").value = input?.query || "";
       $(`[name="coverage"]`).value = input?.missingField || "";
       state.page = 1; state.queueAction = "";
-      if (location.hash !== "#/explore") location.hash = "#/explore";
+      if (location.hash !== `#/explore?${queryParams()}`) location.hash = `#/explore?${queryParams()}`;
       await loadIdentities();
       return {matchingIdentities: state.total, query: $("#search").value};
     },
@@ -446,12 +474,13 @@ function registerWebMCP() {
 }
 
 async function initialize() {
+  activateRoute();
   try {
     const [config, stats] = await Promise.all([api("/api/config"), api("/api/stats")]);
     state.csrf = config.csrf_token;
     state.stats = stats;
     $("#identity-count").textContent = `${stats.identities.toLocaleString()} identities`;
-    activateRoute();
+    if (state.route === "queues") renderQueues();
     registerWebMCP();
   } catch (error) { toast(error.message); }
 }
@@ -481,6 +510,7 @@ $("#refresh-corpus").addEventListener("click", async event => {
       method: "POST", headers: {"Content-Type": "application/json", "X-IBI-Token": state.csrf}, body: "{}",
     });
     $("#identity-count").textContent = `${state.stats.identities.toLocaleString()} identities`;
+    window.Introduction?.invalidate();
     activateRoute();
     toast("Corpus reloaded from SQLite.");
   } catch (error) { toast(error.message); }

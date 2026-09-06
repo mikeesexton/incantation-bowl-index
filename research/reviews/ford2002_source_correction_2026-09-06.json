@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-06T15:00:00Z",
+  "evidence_path": "research/reviews/ford2002_source_attribution_evidence_2026-09-06.json",
+  "evidence_sha256": "d12b4a54e76464ec519f1cb2acbc686b0d00e100d8d2ee4ea3f7fdd22b50ce85",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-FORD2002-ATTRIBUTION",
+      "source_id": "SRC-1EE58A703971",
+      "replacement_source_id": "SRC-FORD2002-JANES",
+      "rationale": "The imported row conflated an OpenAlex discovery-metadata record with the journal article and supplied an unsupported Müller-Kessler attribution. The current OpenAlex record names Jane Ford, while the journal and author-institution records identify the article author as J. N. Ford. Keep the OpenAlex row as metadata and use SRC-FORD2002-JANES for the article.",
+      "before": {
+        "source_type": "article",
+        "title": "Another Look at Mandaic Incantation Bowl BM 91715",
+        "authors": "Christa Müller-Kessler",
+        "issued_year": 2002,
+        "container_title": "Journal article",
+        "publisher": null,
+        "url": "https://openalex.org/W2513894189",
+        "doi": null,
+        "isbn": null,
+        "citation": "Müller-Kessler, ‘Another Look at Mandaic Incantation Bowl BM 91715’ (2002).",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Discovered in broad OpenAlex metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "repository",
+        "title": "OpenAlex work W2513894189: Another Look at Mandaic Incantation Bowl BM 91715",
+        "authors": "Jane Ford",
+        "issued_year": 2002,
+        "container_title": "OpenAlex",
+        "publisher": "OpenAlex",
+        "url": "https://openalex.org/W2513894189",
+        "doi": null,
+        "isbn": null,
+        "citation": "OpenAlex work W2513894189 metadata record for ‘Another Look at Mandaic Incantation Bowl BM 91715,’ accessed 6 September 2026.",
+        "access_status": "available",
+        "rights_status": "unknown",
+        "notes": "Discovery metadata only; not an acquired reading copy. The initial seed classified this record as the article and attributed it to Christa Müller-Kessler. The live OpenAlex API names Jane Ford; the journal and Bar-Ilan institutional records identify the published article author as J. N. Ford. Use SRC-FORD2002-JANES for the article. Exact prior values are retained in IBI-SOURCE-CORR-FORD2002-ATTRIBUTION."
+      }
+    }
+  ]
+}

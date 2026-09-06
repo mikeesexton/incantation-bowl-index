@@ -1,0 +1,70 @@
+{
+  "reviewed_at": "2026-09-06T17:00:00Z",
+  "reviewed_by": "Codex",
+  "workstream": "SCHOL-004; SCHOL-005",
+  "method": "Exact-title searches in the live Library of Congress catalog, followed by inspection of each full catalog record and its holdings table.",
+  "records": [
+    {
+      "lccn": "2006364726",
+      "url": "https://lccn.loc.gov/2006364726",
+      "source_id": "SRC-63345F60155B",
+      "title": "Die Zauberschalentexte in der Hilprecht-Sammlung, Jena, und weitere Nippur-Texte anderer Sammlungen",
+      "authors": "Christa Müller-Kessler",
+      "publisher": "Harrassowitz",
+      "publication_place": "Wiesbaden",
+      "publication_year": 2005,
+      "series": "Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Universität Jena ; Bd. 7",
+      "isbn": ["9783447050593", "3447050594"],
+      "call_number": "PJ5208.A5 M85 2005",
+      "holdings": [{"status": "available", "location": "General Collections, onsite"}],
+      "decision": "The explicit Bd. 7 series statement resolves publication key TMH 7 to SRC-63345F60155B. The record also supplies an authorized onsite access route."
+    },
+    {
+      "lccn": "2014006700",
+      "url": "https://lccn.loc.gov/2014006700",
+      "source_id": "SRC-3C4294DDB367",
+      "title": "A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia",
+      "authors": "Marco Moriggi",
+      "publisher": "Brill",
+      "publication_place": "Leiden; Boston",
+      "publication_year": 2014,
+      "isbn": ["9789004272804"],
+      "call_number": "PJ5615 .M665 2014",
+      "physical_description": "xvi, 252 pages; 29 cm",
+      "holdings": [{"status": "available", "location": "General Collections, onsite"}],
+      "decision": "Add to the reading-room queue for the two candidate records currently linked to this publication."
+    },
+    {
+      "lccn": "87182340",
+      "url": "https://lccn.loc.gov/87182340",
+      "title": "Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity",
+      "authors": "Joseph Naveh; Shaul Shaked",
+      "publisher": "Magnes Press, Hebrew University; E.J. Brill",
+      "publication_place": "Jerusalem; Leiden",
+      "catalog_publication_year": "c1985",
+      "isbn": ["9789652235312", "9652235318"],
+      "call_number": "BM729.A4 N38 1985",
+      "holdings": [
+        {"status": "available", "location": "African and Middle Eastern Reading Room - Hebraic Reference (Jefferson LJ229), onsite"},
+        {"status": "available", "location": "General Collections, onsite"}
+      ],
+      "decision": "Record as an alternate first-edition route. Do not attach it to SRC-B28F4418A956, which represents the 1987 second edition."
+    },
+    {
+      "lccn": "99201169",
+      "url": "https://lccn.loc.gov/99201169",
+      "source_id": "SRC-696E71D7E586",
+      "title": "Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity",
+      "authors": "Joseph Naveh; Shaul Shaked",
+      "publisher": "The Magnes Press, Hebrew University",
+      "publication_place": "Jerusalem",
+      "publication_year": 1998,
+      "edition": "3rd edition",
+      "isbn": ["9789652235312", "9652235318"],
+      "call_number": "BM729.A4 N38",
+      "holdings": [{"status": "available", "location": "General Collections, onsite"}],
+      "decision": "Add the exact 1998 edition to the reading-room queue for its seven linked candidate records."
+    }
+  ],
+  "limits": "Catalog metadata and availability do not establish that any volume has been consulted, nor do they verify object-level readings. No item was requested, read, captured or purchased during this review."
+}

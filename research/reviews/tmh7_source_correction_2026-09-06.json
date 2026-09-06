@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-06T17:00:00Z",
+  "evidence_path": "research/acquisitions/library_of_congress_priority_editions_2026-09-06.json",
+  "evidence_sha256": "44093d6193199e0df8524cb1d1116b84040f9e123a8555256364b5b45ff27896",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-TMH7-LOC-BIBLIOGRAPHY",
+      "source_id": "SRC-63345F60155B",
+      "replacement_source_id": null,
+      "rationale": "The initial row was parsed from Waller's bibliography and explicitly marked unverified. The official Library of Congress record supplies the author, publisher, ISBN, catalog URL, series and volume number while preserving the original state in the correction ledger.",
+      "before": {
+        "source_type": "book",
+        "title": "Die Zauberschalentexte in der Hilprecht-Sammlung, Jena, und weitere Nippur-Texte anderer Sammlungen",
+        "authors": "Müller-Kessler [and others; see citation]",
+        "issued_year": 2005,
+        "container_title": null,
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "———. Die Zauberschalentexte in der Hilprecht-Sammlung, Jena, und weitere Nippur-Texte anderer Sammlungen . Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Universität Jena 7. Wiesbaden: Harrassowitz, 2005.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Die Zauberschalentexte in der Hilprecht-Sammlung, Jena, und weitere Nippur-Texte anderer Sammlungen",
+        "authors": "Christa Müller-Kessler",
+        "issued_year": 2005,
+        "container_title": "Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Universität Jena 7",
+        "publisher": "Harrassowitz",
+        "url": "https://lccn.loc.gov/2006364726",
+        "doi": null,
+        "isbn": "9783447050593",
+        "citation": "Müller-Kessler, Christa. Die Zauberschalentexte in der Hilprecht-Sammlung, Jena, und weitere Nippur-Texte anderer Sammlungen. Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Universität Jena 7. Wiesbaden: Harrassowitz, 2005.",
+        "access_status": "offline",
+        "rights_status": "unknown",
+        "notes": "Official Library of Congress record LCCN 2006364726 verifies Christa Müller-Kessler, the 2005 Harrassowitz imprint, ISBN 9783447050593 and series volume 7; one onsite General Collections copy is cataloged under PJ5208.A5 M85 2005. This bibliographic check does not verify any bowl reading or show that the volume has been consulted. The exact prior Waller-derived state is retained in IBI-SOURCE-CORR-TMH7-LOC-BIBLIOGRAPHY."
+      }
+    }
+  ]
+}

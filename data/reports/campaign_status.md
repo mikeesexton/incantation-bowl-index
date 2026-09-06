@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-09-06T01:00:33+00:00`
+Generated: `2026-09-06T16:53:01+00:00`
 
 ## Corpus
 
@@ -9,14 +9,14 @@ Generated: `2026-09-06T01:00:33+00:00`
 - Estimated distinct objects after resolved dedupe: **1322**
 - Resolved duplicate records: **268**
 - Probable or confirmed: **872**
-- Source appearances: **1632**
+- Source appearances: **1633**
 - Sources: **843**
 - Dedupe clusters pending: **0**
 - Objects with text: **193**
 - Objects with translation: **49**
 - Objects with provenance: **162**
 - Objects with current location: **793**
-- Open leads: **10**
+- Open leads: **19**
 - Planned queries: **0**
 - Searched queries: **321**
 - Coverage targets remaining: **0**
@@ -63,11 +63,12 @@ Generated: `2026-09-06T01:00:33+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 662 |
-| unknown | 123 |
-| partial | 54 |
+| available | 663 |
+| unknown | 122 |
+| partial | 53 |
 | paywalled | 3 |
 | blocked | 1 |
+| offline | 1 |
 
 ## Corpus composition
 
@@ -129,22 +130,29 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | Status | Priority | Lead |
 |---|---:|---|
 | blocked | 1 | BM 117882 / Segal 119ES: inspect the full catalogue entry to assess the uncertain Syriac? classification against existing museum descriptions of Syriac. The apparent 117ES/119ES locator mismatch has been resolved as an importer defect; identity links remain unchanged. |
-| open | 1 | Reconcile the author attribution for Another Look at Mandaic Incantation Bowl BM 91715: existing SRC-1EE58A703971 names Christa Müller-Kessler, while the JANES volume 29 and article pages name J. N. Ford. |
+| open | 1 | Obtain an authorized complete copy of Shaked, Ford and Bhayro 2013, Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls Volume One, for the Ford 2014 specialist-comparison queue. |
 | in_progress | 1 | Investigate Penn B2963 / Montgomery 3 Date Made: ca. 200 BCE. The value is preserved as a museum-reported claim, not accepted as a corrected chronology. Check primary catalogue dating and later scholarship; do not infer a replacement date. |
 | in_progress | 1 | Reconcile Penn B9010 / Montgomery 9 Inscription Language: Hebrew Language with the edition-based Jewish Babylonian Aramaic claim. Determine whether the catalogue field reflects historical terminology, a script/language confusion or an error; preserve both assertions pending review. |
 | in_progress | 1 | Reconcile Penn B9008 / Montgomery 31 Inscription Language: Hebrew Language with the existing Syriac attribution. The museum description also says Proto-Manichean. Distinguish language from script and catalogue terminology; retain disagreement. |
+| open | 1 | Two object records carry the identifier SD 34 and are very likely one physical bowl: IBI-358AAAF4ED2B ('Waller 2022: SD 34', from Waller's biblical-quotation table) and IBI-12617DC13FC0 ('Success-in-business bowl SD 34', from Levene and Bhayro's publication). The generated dedupe queue is empty, so this pair was never surfaced - probably because the two designations arrived under different schemes ('Waller 2022 table designation' and 'publication designation') rather than a shared trusted namespace. Review as a same-object candidate and, separately, check why the scheme mismatch hid it. |
 | open | 1 | Reconcile BM 91711 / N-1847's reported Arban findspot with Waller's assessment that the accessions-register attribution to Layard is plausible but unverified. Check the original museum register, Layard's excavation account, the published prospectus, and any later object-specific scholarship before changing the findspot status. |
 | in_progress | 1 | Classify corpus findspot and provenance assertions by evidence basis: documented controlled excavation, museum or accessions register, dealer or antiquities-market report, later scholarly inference, or unverified/unknown. Preserve the original place claim and its source separately from the assessment. |
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | blocked | 1 | Retrieve the preserved Virtual Magic Bowl Archive data package and enumerate all item records once either Open Research Exeter or the Internet Archive permits access. |
 | blocked | 1 | The National Library of Israel exhibition material highlights two bowls for Kafnai son of Imma (with Immai daughter of Anai) and Hai son of Aspindarmid. Resolve their names to the exact MMS and manuscript-part records among the 205 numbered NLI bowls already collected before adding appearances or claims. |
 | blocked | 1 | Penn Museum robots.txt was unavailable; metadata was collected slowly, but full page captures were not archived. |
+| open | 1 | Obtain authorized access to the complete Segal 2000 catalogue; the openly indexed PDF located during discovery is only a two-page title/contents preview. |
 | blocked | 2 | Obtain an authorized local copy of Ford 2002, Another Look at Mandaic Incantation Bowl BM 91715, JANES 29, pp. 31–47. |
 | open | 2 | Review whether provisional Davidovitz 27 (IBI-FORD2014-DAV27) has another source appearance under a different designation, including the existing Davidovitz popularity-and-success bowl IBI-6A5B95130C25. |
 | open | 2 | Review Ford 2014 proposed readings and interpretations against the 2013 edition and relevant photographs, using the 14-discussion index; preserve differences as attributed evidence. |
-| blocked | 2 | Obtain authorized access to Isbell 1975, Corpus of the Aramaic Incantation Bowls, for page-level edition checks. |
+| open | 2 | Obtain authorized access to Isbell 1975, Corpus of the Aramaic Incantation Bowls, for page-level edition checks. |
+| open | 2 | Consult Shaked, Ford and Bhayro, Aramaic Bowl Spells, Volume Two through the Library of Congress for object-level edition indexing. |
 | open | 2 | Investigate Montgomery 1913 appendix no. 42: locate Gottheil's original notes or later scholarship assessing whether the unlocated original was a bowl or another amulet. Do not assign a Nippur findspot, ancient date, CBS number or physical identity from the main forty-bowl corpus. |
-| blocked | 2 | Obtain Christa Mueller-Kessler, Die Zauberschalentexte in der Hilprecht-Sammlung, Jena (TMH 7, Harrassowitz 2005), or at minimum a photograph of its title and imprint pages. Needed to confirm that the publication key TMH 7 designates this volume; two objects currently hang on an unresolved key, and the identification is presently an inference from the series name alone. Searched on 2026-09-05: no digital copy located. |
+| open | 2 | Consult Marco Moriggi, A Corpus of Syriac Incantation Bowls (2014), through the Library of Congress for object-level edition indexing. |
+| open | 2 | Consult Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections, Volume One, through the Library of Congress for object-level edition indexing. |
+| open | 2 | Consult the 1998 third edition of Naveh and Shaked, Amulets and Magic Bowls, through the Library of Congress for object-level edition indexing. |
+| open | 2 | Two source records describe the same article: SRC-69C22D670211 (2005) and SRC-A84A167A5779 (2006). Archiv fuer Orientforschung 51 is a 2005/2006 volume, which explains the split. Reconcile to one record with the correct year and page range, keeping both citations in history. |
+| open | 2 | Consult Müller-Kessler 2005, TMH 7, through the Library of Congress for object-level edition indexing. |
 | blocked | 2 | Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access. |
 | blocked | 2 | Obtain authorized full-text access to Faraj 2023 to capture the edition, translation, dimensions, provenance details, and imagery for IM 77781. |
 | blocked | 2 | Map the seven Avigdor Klagsbald donation bowls to exact NLI catalogue/manuscript identifiers and determine which overlap the 205 harvested NLI SRU records. |
@@ -165,7 +173,6 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | blocked | 3 | Reconcile all 142 Segal text numbers to British Museum registration and museum numbers using the catalogue concordance and current collection pages. |
 | blocked | 3 | Archive the two Bidsquare/Artemis auction appearance pages after robots policy permits automated capture; metadata and stable item identifiers are already recorded. |
 | blocked | 3 | Identify and account for the difference between the 142 numbered texts and the 159 objects currently related to Segal 2000 on the British Museum site. |
-| blocked | 3 | Obtain authorized access to the complete Segal 2000 catalogue; the openly indexed PDF located during discovery is only a two-page title/contents preview. |
 | blocked | 3 | Extract the five Ābgīne Museum catalogue numbers, inscriptions, translations, dimensions, provenances, and concordances from Šafiʿī 2025 through authorized access or precise secondary citations. |
 | blocked | 3 | Reconcile Montgomery's statement that the University Museum catalogue held over 150 numbered bowls/fragments, including roughly 30 pseudo-inscribed examples, against the current Penn Museum database. |
 | blocked | 3 | Resolve Kedar's numerical discrepancy: the text says Dukhtīč wrote ten bowls total, while note 546 appears to name ten parallels in addition to Davidovitz 2. |
