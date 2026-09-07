@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-07 — Codex — Bowlam homepage refinement
+
+**Claimed:** none — OPS local homepage, requested branding, copy, map and motion improvements
+**Corpus:** unchanged — state digest 12a0c0d20986
+**Tests:** 189 Python tests and 4 JavaScript controller tests passed; JS syntax and diff checks; desktop and 390px mobile browser checks.
+
+- Renamed the brand Bowlam with the requested subtitle; shortened the introductory copy, removed draft notices from the story, and used plain language for collection coverage.
+- Matched the desktop opening and docked header browse buttons; the latter appears only after the opening button passes the header, independent of API availability.
+- Added a broad shaded find region, inline period wording, verified 1850/1853 references and a collapsed source note. Source locators are in docs/homepage_sources.md.
+- Added rolling year digits, timeline drawing, bowl entrance and ring drawing, map shading/river reveal, and section reveals with reduced-motion fallbacks. Browser inspection caught and resolved CSP-blocked inline animation variables by moving them into stylesheet selectors.
+- Checked the hero, map, header handoff and final settled year digits on desktop/mobile; mobile has no document overflow. Corpus unchanged; no release or publication.
+
+---
+
 ## 2026-09-06 — Codex — Levene–Shaked JSQ 6 source ingestion
 
 **Claimed:** TEXT-001, META-001, META-002, META-003, META-008, SCHOL-006

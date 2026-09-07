@@ -6,7 +6,7 @@
     <meta name="description" content="Private research console for the Incantation Bowl Index">
     <meta name="theme-color" content="#17232b">
     <link rel="icon" href="data:,">
-    <title>Incantation Bowl Index — Research Console</title>
+    <title>Bowlam · The Incantation Bowl Index</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/reading.css">
     <script src="/reading.js" defer></script>
@@ -18,9 +18,9 @@
     <a class="skip-link" href="#/explore">Skip to records</a>
     <div class="app-shell">
       <header class="topbar">
-        <a class="wordmark" href="#/home" aria-label="Incantation Bowl Index home">
+        <a class="wordmark" href="#/home" aria-label="Bowlam home">
           <span class="wordmark-seal" aria-hidden="true">𐡀</span>
-          <span><strong>Incantation Bowl Index</strong><small>A local reading room</small></span>
+          <span><strong>Bowlam</strong><small>The Incantation Bowl Index</small></span>
         </a>
         <nav class="view-tabs" aria-label="Research views">
           <a class="view-tab is-active" href="#/home" data-route="home">Home</a>
@@ -31,7 +31,7 @@
           <a class="view-tab" href="#/reviews" data-route="reviews">Concordance</a>
         </nav>
         <div class="local-controls">
-          <a class="intro-browse-link" href="#/explore">Browse the database <span aria-hidden="true">↗</span></a>
+          <a class="intro-browse-link intro-button" href="#/explore">Browse the database <span aria-hidden="true">↗</span></a>
           <button id="refresh-corpus" type="button" title="Reload records changed by collectors">↻ Refresh</button>
           <div class="local-badge"><span></span>Local corpus</div>
         </div>
@@ -103,11 +103,11 @@
           <div class="intro-wrap">
             <section class="intro-hero intro-chapter" aria-labelledby="home-title">
               <div class="intro-hero-copy">
-                <span class="intro-kicker">The Incantation Bowl Index · A living collection</span>
+
                 <h1 id="home-title">Small vessels.<br>Human hopes.<br><em>Enduring questions.</em></h1>
-                <p class="intro-lead">Words written on clay. A wish for protection. Meet the incantation bowls, and the evidence that brings their stories into view.</p>
+                <p class="intro-lead">Ancient spells. Everyday fears. Discover the lives hidden in incantation bowls.</p>
                 <a class="intro-button" href="#/explore">Browse the database <span aria-hidden="true">↗</span></a>
-                <button class="intro-scroll" type="button" data-intro-scroll="intro-origins">Begin the story <span aria-hidden="true">↓</span></button>
+                <button class="intro-scroll" type="button" data-intro-scroll="intro-origins">Discover their story <span aria-hidden="true">↓</span></button>
               </div>
               <figure class="intro-bowl-figure">
                 <svg class="intro-bowl" viewBox="0 0 600 600" role="img" aria-labelledby="bowl-placeholder-title bowl-placeholder-desc">
@@ -129,28 +129,29 @@
                   <g fill="none" stroke="#f3d9b6" opacity=".28"><circle cx="295" cy="294" r="222"/><circle cx="295" cy="294" r="202"/><circle cx="295" cy="294" r="160"/></g>
                   <path d="M470 132l-13 44 9 14-15 32M117 454l34-21 12 4" fill="none" stroke="#785439" opacity=".35"/>
                 </svg>
-                <figcaption><span class="intro-caption-rule"></span>Illustrative placeholder · artifact photograph to follow</figcaption>
+                <figcaption><span class="intro-caption-rule"></span>An artist’s impression</figcaption>
               </figure>
-              <div class="intro-hero-foot"><span>Clay / Language / Memory</span><span>A local window into an ancient world</span></div>
+              <div class="intro-hero-foot"><span>Clay / Language / Memory</span><span>Spells that outlived their makers</span></div>
             </section>
 
             <section id="intro-origins" class="intro-chapter intro-origins" aria-labelledby="origins-title">
               <div class="intro-prose">
-                <span class="intro-kicker">01 / A world written in clay</span>
+
                 <h2 id="origins-title">Protection,<br>close to home.</h2>
-                <p>Incantation bowls carried written spells intended to protect people and their households from harm. Their everyday material holds traces of deeply personal concerns.</p>
-                <p class="intro-period">Late antiquity <span>·</span> c. fifth–seventh centuries CE</p>
-                <p>Associated especially with Mesopotamia, in the region of present-day Iraq and neighboring Iran, the bowls belong to a world that changed with the rise of Islam.</p>
-                <p class="intro-draft">Editorial draft: the date range, geographic summary, and wording about when the practice ended await source citations. Research is paused.</p>
+                <p>A spell against illness. A shield for a family. Written on ordinary clay, these words reveal what people feared—and what they hoped to keep safe.</p>
+
+                <p>Originating in Mesopotamia, in present-day Iraq and neighboring Iran, most bowls were made in the sixth and seventh centuries CE, in late antiquity—a world that changed with the rise of Islam.</p>
+
               </div>
               <figure class="intro-map-figure">
                 <svg class="intro-map" viewBox="0 0 620 490" role="img" aria-labelledby="intro-map-title intro-map-desc">
                   <title id="intro-map-title">Mesopotamia: schematic regional map</title>
-                  <desc id="intro-map-desc">An illustrative orientation diagram showing the Tigris and Euphrates, Nippur between them, and the Persian Gulf to the southeast. Present-day Iraq and Iran are labeled for orientation. Locations and river courses are approximate; no bowl findspots are plotted.</desc>
+                  <desc id="intro-map-desc">Shading marks the approximate region of known bowl finds, from Ashur in northern Iraq to the river confluence in the south and Khuzestan in southwestern Iran. Nippur is marked for orientation. This schematic shows a broad region, not exact findspots.</desc>
                   <defs><pattern id="map-grid" width="62" height="49" patternUnits="userSpaceOnUse"><path d="M62 0H0V49" fill="none" stroke="#a89a7b" stroke-width=".5" opacity=".25"/></pattern></defs>
                   <rect width="620" height="490" fill="#e9e2cf"/>
                   <rect width="620" height="490" fill="url(#map-grid)"/>
                   <path d="M350 35l32 32 10 40 40 27 18 49 46 35 19 55 47 31" fill="none" stroke="#d6c9ad" stroke-width="42" opacity=".55"/>
+                  <path class="intro-find-region" d="M219 61C252 48 284 87 300 126S335 190 374 215S458 224 475 273S461 343 414 369C377 375 327 349 286 317S219 261 202 221S175 151 182 117S200 76 219 61Z" fill="#a45235" fill-opacity=".23" stroke="#a45235" stroke-opacity=".65" stroke-width="1.5" stroke-dasharray="5 5"/>
                   <path d="M408 365Q440 350 452 375T492 403L620 444V490H475Q465 450 442 430T408 365" fill="#a7b9b4"/>
                   <g fill="none" stroke="#6c918f" stroke-width="3">
                     <path d="M115 42Q74 89 121 120T168 180T204 236T256 287T304 324T412 378"/>
@@ -162,39 +163,41 @@
                     <text x="82" y="166" font-size="12">Euphrates</text><text x="297" y="126" font-size="12">Tigris</text>
                     <text x="475" y="454" font-size="12">Persian Gulf</text>
                     <circle cx="281" cy="294" r="12" fill="none" stroke="#a45235"/><circle cx="281" cy="294" r="4" fill="#a45235"/>
+                    <circle cx="226" cy="81" r="3" fill="#a45235"/><text x="241" y="83" font-size="12">Ashur</text><text x="388" y="291" font-size="12">Khuzestan</text>
                     <text x="223" y="334" font-size="15">Nippur</text>
                     <path d="M555 82V48m-5 9 5-9 5 9" fill="none" stroke="#534e40"/><text x="550" y="39" font-size="12">N</text>
                   </g>
                 </svg>
-                <figcaption>Schematic orientation · approximate geography, not a findspot map<br>Modern country names for orientation. Map details remain an editorial draft.</figcaption>
+                <figcaption><span class="intro-region-key"></span> Approximate region of bowl finds · modern borders omitted. <a href="https://www.csmc.uni-hamburg.de/publications/aom/026-en.html" target="_blank" rel="noreferrer">About the region ↗</a></figcaption>
               </figure>
             </section>
 
             <section class="intro-chapter intro-rediscovery" aria-labelledby="rediscovery-title">
-              <div class="intro-section-heading"><span class="intro-kicker">02 / A second life</span><h2 id="rediscovery-title">From the ground<br>to the printed page.</h2><p>Two moments open the modern story of the bowls.</p></div>
+              <div class="intro-section-heading"><h2 id="rediscovery-title">A thousand years later,<br><em>the bowls resurface.</em></h2></div>
               <div class="intro-milestones">
-                <article><span class="intro-date">1850</span><h3>A discovery at Nippur</h3><p>The first bowl is discovered at Nippur, according to the chronology supplied for this introduction.</p><small>Source citation pending · supplied chronology</small></article>
-                <article><span class="intro-date">1853</span><h3>The first texts in print</h3><p>The first bowl texts are published, beginning a scholarly conversation that continues today.</p><small>Source citation pending · supplied chronology</small></article>
+                <article><span class="intro-date" data-year="1850" aria-label="1850">1850</span><h3>A discovery at Nippur</h3><p>Austen Henry Layard uncovers an inscribed bowl at Nippur. Ancient spells return to view.</p></article>
+                <article><span class="intro-date" data-year="1853" aria-label="1853">1853</span><h3>The first texts in print</h3><p>Thomas Ellis publishes bowl texts in Layard’s book. The work of reading their spells begins.</p></article>
               </div>
+              <details class="intro-sources"><summary>Sources for the story</summary><p><a href="https://scholars.depaul.edu/ws/portalfiles/portal/39957201/fulltext.pdf" target="_blank" rel="noreferrer">Brodie and Kersel, “WikiLeaks, Text, and Archaeology,” in Archaeologies of Text (2014), p. 200</a> dates Layard’s finds at Babylon and Nippur to 1850. Earlier bowls reached the British Museum in 1841.</p><p><a href="https://www.britishmuseum.org/collection/object/W_1841-0726-90_1" target="_blank" rel="noreferrer">British Museum: Ellis’s 1853 publication</a>, in Layard, pp. 521–522.</p></details>
             </section>
 
             <section class="intro-chapter intro-scholarship" aria-labelledby="scholarship-title">
-              <div class="intro-section-heading"><span class="intro-kicker">03 / A growing conversation</span><h2 id="scholarship-title">More pages.<br>More questions.</h2><p>Follow the literature through time, one decade at a time.</p></div>
+              <div class="intro-section-heading"><h2 id="scholarship-title">More pages.<br>More questions.</h2><p>Each generation finds more to uncover.</p></div>
               <figure class="intro-chart-figure">
                 <div class="intro-chart-heading"><strong>Scholarly publications indexed, by decade</strong><span>Publications / decade</span></div>
                 <div id="intro-chart" tabindex="0" role="region" aria-label="Publication chart, scroll horizontally on narrow screens"><p class="intro-loading">Loading the publication history…</p></div>
-                <figcaption>Dated scholarly works in this index; not a complete census of scholarship. Bars show publications per decade, not a cumulative total. <span id="intro-decade-note"></span></figcaption>
+                <figcaption>Publications in the index, grouped by decade. <span id="intro-decade-note"></span></figcaption>
                 <p class="intro-chart-hint">Scroll across the chart, or open the table below for every decade.</p>
                 <details class="intro-chart-table"><summary>Read the chart as a table</summary><div id="intro-chart-data">Loading publication counts…</div></details>
               </figure>
             </section>
 
             <section class="intro-chapter intro-coverage" aria-labelledby="coverage-title">
-              <div class="intro-section-heading"><span class="intro-kicker">04 / The evidence we have</span><h2 id="coverage-title">Many bowls.<br>An incomplete picture.</h2><p>Each circle represents one working bowl identity in this index. Watch what comes into focus as we ask what is documented.</p></div>
+              <div class="intro-section-heading"><h2 id="coverage-title">A world of bowls.<br><em>One place to explore.</em></h2><p>Bowlam brings together the bowls, their words, and their journeys. Our aim: the most complete index possible.</p></div>
               <p id="intro-data-status" class="intro-data-status" role="status">Loading the local corpus snapshot…</p>
               <div class="intro-coverage-layout">
                 <div class="intro-field-panel">
-                  <div class="intro-field-heading"><strong id="intro-total">—</strong><span>working bowl identities</span></div>
+                  <div class="intro-field-heading"><strong id="intro-total">—</strong><span>bowls in the index</span></div>
                   <div class="intro-controls" role="group" aria-label="Highlight recorded evidence">
                     <button type="button" data-coverage="all" aria-pressed="true" disabled>All bowls</button>
                     <button type="button" data-coverage="text_edition" aria-pressed="false" disabled>Text</button>
@@ -202,25 +205,25 @@
                     <button type="button" data-coverage="image" aria-pressed="false" disabled>Images</button>
                   </div>
                   <svg id="intro-circle-field" viewBox="0 0 600 400" role="img" aria-labelledby="intro-field-title intro-field-desc"><title id="intro-field-title">Bowl documentation coverage</title><desc id="intro-field-desc">Loading the bowl identities.</desc></svg>
-                  <p id="intro-selection" class="intro-selection" role="status">One circle per identity · positions stay the same</p>
+                  <p id="intro-selection" class="intro-selection" role="status">One circle, one bowl</p>
                   <p class="intro-field-legend"><span class="intro-dot"></span> Recorded <span class="intro-dot intro-dot-muted"></span> Not recorded in this index</p>
                 </div>
                 <div class="intro-coverage-steps">
-                  <article class="intro-coverage-step" data-step="all"><span class="intro-kicker">The collection</span><h3>Objects, not catalogue entries.</h3><p><span id="intro-record-count">—</span> source records are grouped into <span id="intro-identity-count">—</span> working identities. Several publications can describe the same bowl.</p><p>These identities include candidates and uncertain identifications. The count can change as the evidence develops.</p></article>
-                  <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Text edition recorded</h3><p class="intro-coverage-number" data-count="text_edition">—</p><p>An edition reference or transcription record is present. Edition references come from resolved publication identifiers or sources classified as editions. This does not necessarily mean a complete text can be read here.</p><a href="#/explore?present=text_edition">Explore bowls with text references <span aria-hidden="true">↗</span></a></article>
-                  <article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Provenance information recorded</h3><p class="intro-coverage-number" data-count="provenance">—</p><p>Some origin, findspot, or collection-history information is recorded. A reported origin is not the same as verified archaeological provenance.</p><a href="#/explore?present=provenance">Explore bowls with provenance information <span aria-hidden="true">↗</span></a></article>
-                  <article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Image reference recorded</h3><p class="intro-coverage-number" data-count="image">—</p><p>An image is documented. The reference may lead to a publication or collection; the picture may not be displayable here.</p><a href="#/explore?present=image">Explore bowls with image references <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="all"><span class="intro-kicker">The collection</span><h3>Meet the collection.</h3><p>The index brings together <span id="intro-identity-count">—</span> bowls from <span id="intro-record-count">—</span> records. Explore their inscriptions, where they have been, and where to learn more.</p><p>The collection grows as research continues.</p></article>
+                  <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number" data-count="text_edition">—</p><p>Find the books and articles that read and translate these bowls.</p><a href="#/explore?present=text_edition">Explore bowls with text references <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number" data-count="provenance">—</p><p>Trace accounts of where bowls were found and the collections they passed through.</p><a href="#/explore?present=provenance">Explore bowls with provenance information <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number" data-count="image">—</p><p>Find photographs and drawings in publications and collections.</p><a href="#/explore?present=image">Explore bowls with image references <span aria-hidden="true">↗</span></a></article>
                 </div>
               </div>
-              <p class="intro-coverage-note">Missing here does not mean missing everywhere. These measures describe documentation in this index, not how much study an individual bowl has received. The groups overlap: a bowl may have all three kinds of evidence.</p>
+              <p class="intro-coverage-note">Each circle is a bowl. Highlight those with text, history, or image references; some have all three.</p>
             </section>
 
             <section class="intro-chapter intro-finale" aria-labelledby="finale-title">
-              <span class="intro-kicker">05 / Your turn to explore</span><h2 id="finale-title">Every bowl has a story.<br><em>Explore what is recorded.</em></h2>
-              <p>Search the collection. Follow a reference. Open the evidence behind an object.</p>
+              <h2 id="finale-title">Every bowl has a story.<br><em>Find one that draws you in.</em></h2>
+
               <a class="intro-button" href="#/explore">Browse all bowls <span aria-hidden="true">↗</span></a>
               <div class="intro-shortcuts"><a href="#/explore?present=text_edition">With text references ↗</a><a href="#/explore?present=provenance">With provenance information ↗</a><a href="#/explore?present=image">With image references ↗</a></div>
-              <footer class="intro-footer"><span>Incantation Bowl Index</span><span id="intro-snapshot-note">Local collection · introductory copy in development</span><a href="#/home" data-intro-scroll="home-title">Back to the beginning ↑</a></footer>
+              <footer class="intro-footer"><span>Bowlam · The Incantation Bowl Index</span><span id="intro-snapshot-note">Local collection · introductory copy in development</span><a href="#/home" data-intro-scroll="home-title">Back to the beginning ↑</a></footer>
             </section>
           </div>
         </section>

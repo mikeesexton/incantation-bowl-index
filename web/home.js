@@ -5,12 +5,44 @@
   const find = selector => root.querySelector(selector);
   const all = selector => [...root.querySelectorAll(selector)];
   const number = value => value.toLocaleString();
-  const labels = {all: "All working bowl identities", text_edition: "Text edition recorded",
-    provenance: "Provenance information recorded", image: "Image reference recorded"};
+  const labels = {all: "All bowls", text_edition: "Text references",
+    provenance: "Collection history", image: "Image references"};
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   const desktop = matchMedia("(min-width: 701px)");
   let snapshot = null, request = 0, active = "all", lastScrollStep = null, frame = 0;
   let chartObserver = null;
+
+  // Visual state is independent of the data request, including when it fails.
+  function updateBrowsePosition() {
+    const heroButton = find(".intro-hero .intro-button");
+    const headerButton = document.querySelector(".intro-browse-link");
+    if (!heroButton?.getBoundingClientRect || !headerButton) return;
+    const passed = heroButton.getBoundingClientRect().bottom <= 100;
+    headerButton.classList.toggle("is-docked", passed);
+    headerButton.inert = !passed;
+    headerButton.setAttribute("aria-hidden", String(!passed));
+  }
+
+  function setupMotion() {
+    if (!("IntersectionObserver" in window)) return;
+    all("[data-year]").forEach(date => {
+      date.innerHTML = [...date.dataset.year].map((digit, index) => {
+        const stop = 10 + Number(digit);
+        return `<span class="intro-digit" aria-hidden="true"><span class="intro-digit-reel" data-stop="${stop}" data-order="${index}">${Array.from({length: stop + 1}, (_, n) => `<span>${n % 10}</span>`).join("")}</span></span>`;
+      }).join("");
+    });
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in-view");
+        observer.unobserve(entry.target);
+      });
+    }, {threshold: .18});
+    all(".intro-milestones, .intro-map, .intro-section-heading, .intro-finale h2").forEach(node => observer.observe(node));
+  }
+  setupMotion();
+  window.addEventListener("scroll", updateBrowsePosition, {passive: true});
+  window.addEventListener("resize", updateBrowsePosition, {passive: true});
 
   function setCoverage(field) {
     if (!snapshot || !(field in labels)) return;
@@ -23,7 +55,7 @@
     const percent = snapshot.identity_count ? (100 * count / snapshot.identity_count).toFixed(1) : "0.0";
     const description = `${labels[field]}: ${number(count)} of ${number(snapshot.identity_count)} (${percent}%).`;
     find("#intro-selection").textContent = description;
-    find("#intro-field-desc").textContent = `${description} Each circle represents one working identity. Softened circles have no recorded evidence for the selected measure. Groups can overlap.`;
+    find("#intro-field-desc").textContent = `${description} Each circle represents one bowl. Lighter circles have no reference of this kind in the index.`;
   }
 
   function renderField() {
@@ -53,7 +85,7 @@
     all("[data-count]").forEach(element => {
       const count = snapshot.coverage[element.dataset.count];
       const percent = snapshot.identity_count ? (100 * count / snapshot.identity_count).toFixed(1) : "0.0";
-      element.innerHTML = `${number(count)} <span> / ${number(snapshot.identity_count)}</span><small>${percent}% of working bowl identities</small>`;
+      element.innerHTML = `${number(count)} <span> / ${number(snapshot.identity_count)}</span><small>${percent}% of bowls</small>`;
     });
     all("[data-coverage]").forEach(button => { button.disabled = false; });
     setCoverage(active);
@@ -102,7 +134,7 @@
 
   async function load() {
     const version = ++request;
-    find("#intro-data-status").textContent = "Loading the local corpus snapshot…";
+    find("#intro-data-status").textContent = "Loading the collection…";
     find("#intro-data-status").classList.remove("is-error");
     try {
       const response = await fetch("/api/introduction");
@@ -160,7 +192,7 @@
   window.addEventListener("scroll", onScroll, {passive: true});
   window.addEventListener("resize", onScroll, {passive: true});
   window.Introduction = {
-    render() { if (!snapshot) return load(); onScroll(); },
+    render() { updateBrowsePosition(); if (!snapshot) return load(); onScroll(); },
     invalidate() {
       snapshot = null; request++; chartObserver?.disconnect();
       all("[data-coverage]").forEach(button => { button.disabled = true; });
@@ -173,7 +205,7 @@
       find("#intro-chart-data").textContent = "Loading publication counts…";
       find("#intro-snapshot-note").textContent = "Local collection · snapshot refresh pending";
       find("#intro-decade-note").textContent = "";
-      find("#intro-selection").textContent = "Loading the local corpus snapshot…";
+      find("#intro-selection").textContent = "Loading the collection…";
       find("#intro-field-desc").textContent = "Coverage snapshot refresh pending.";
     },
   };
