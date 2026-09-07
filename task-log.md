@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-06 — Codex — Levene–Shaked JSQ 6 source ingestion
+
+**Claimed:** TEXT-001, META-001, META-002, META-003, META-008, SCHOL-006
+**Corpus:** changed (M163 enriched; MS 2054/124 added; two source records corrected/scoped) — state digest 12a0c0d20986
+**Tests:** 189 passed; archive verification, SQLite integrity and foreign keys valid; JSON/JSONL manifests parse; correction, scope and candidate replay are idempotent; diff whitespace check passed.
+
+- Deposited the complete researcher-supplied JSQ 6 scan privately once for each of its two source records, sharing content hash `19a0ad766308…`. Levene 1999 is now classified as a single-object edition; Shaked 1999 as a thematic companion study.
+- Enriched existing Moussaieff M163 (`IBI-63D659859D54`) with source-located dimensions, condition, 30-line count, script, layout, pre-sale provenance limit, June 1997 Christie's sale event, edition/translation pointers, a project-authored summary, and a copyrighted plate reference.
+- Added Schøyen MS 2054/124 (`IBI-EAB5621DEDA2`) as a distinct probable whole bowl, with exact collection designation and source-attributed Mandaic language, aggressive purpose, egg historiola, beneficiary-role caution, Trinitarian ending, and comparisons to M163 and MSF B21.
+- Corrected the imported Shaked source from OpenAlex's 2016 date to the article's printed JSQ 6 (1999), pp. 309–319 metadata through the immutable source-correction ledger. Attached Shaked's discussion as a second source appearance for M163.
+- Did not copy or publish either scholar's modern transcription, translation, or images. The M163 media pointer remains copyrighted and unapproved; only project-authored factual summaries are stored as text. No identity merge, authenticity judgment, or rights approval was made. The new complementary facts add five mechanical comparison flags to the review queue; none is treated as an adjudicated conflict.
+
+---
+
 ## 2026-09-06 — Codex — Reviewed GitHub release
 
 **Claimed:** none — OPS release, explicitly authorized by the researcher

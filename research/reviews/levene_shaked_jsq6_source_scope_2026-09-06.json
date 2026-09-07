@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-07T02:57:14Z",
+  "batch": "Classify the two researcher-supplied JSQ 6 articles by inspected scope",
+  "policy": "These are document-scope judgments only. They do not endorse readings, merge object identities, or change text and media rights.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-LEVENE1999-M163",
+      "source_id": "SRC-21417589C8F9",
+      "scope": "single_object_edition",
+      "basis": "Researcher-supplied scan SHA-256 19a0ad766308...; printed pp. 283-308. The article presents M163 with description, transcription, translation, commentary, and plates."
+    },
+    {
+      "review_id": "IBI-SCOPE-SHAKED1999-JESUS-BOWLS",
+      "source_id": "SRC-5F7E0BA65D6E",
+      "scope": "thematic_study",
+      "basis": "Researcher-supplied scan SHA-256 19a0ad766308...; printed pp. 309-319. The article interprets M163 in comparative context and supplies only selected translated excerpts from MS 2054/124 rather than a full object edition."
+    }
+  ]
+}

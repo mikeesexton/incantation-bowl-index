@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-09-06T16:38:39+00:00`
+Generated: `2026-09-07T03:00:42+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -12,7 +12,7 @@ The original source claims remain unchanged. This review classifies apparent dif
 | Scholarly Disagreement | 3 |
 | Source Inconsistency | 2 |
 | Unresolved | 10 |
-| Requires current evidence review | 315 |
+| Requires current evidence review | 320 |
 
 ## Revalidation queue
 
@@ -156,6 +156,10 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-63793B0DDEBD — British Museum 108818: incantation bowl | provenance | findspot: Found/Acquired: Khorsabad [SRC-3D4B57D27A24; Related objects: 1914-0214-44]; production_place: Made in: Iraq, South [SRC-3D4B57D27A24; Related objects: 1914-0214-44] |
 | IDENT-63BF471B795C — British Museum 1980,0415.31.l: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-31-l]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-31-l] |
 | IDENT-63BF471B795C — British Museum 1980,0415.31.l: incantation bowl | provenance | findspot: Found/Acquired: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-31-l]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-31-l] |
+| IDENT-63D659859D54 — Moussaieff M163 | provenance | collection_history: Shlomo Moussaieff Collection [SRC-21417589C8F9; pp. 283–308]; provenance: No provenance known before the Christie's auction of June 1997 [SRC-21417589C8F9; p. 283] |
+| IDENT-63D659859D54 — Moussaieff M163 | publication | publication_status: Full transcription, translation, commentary, and photographic plates published in Levene 1999 [SRC-21417589C8F9; pp. 285–308]; translation_availability: Complete English translation published in Levene 1999, pp. 287–290; consult the edition [SRC-21417589C8F9; pp. 287–290] |
+| IDENT-63D659859D54 — Moussaieff M163 | text_description | text_feature: Shaked reports that M163 was the only Jewish Babylonian Aramaic bowl then known to him with an explicit allusion to Jesus [SRC-5F7E0BA65D6E; p. 309]; text_feature: Invocation includes Jesus [SRC-21417589C8F9; pp. 283–308] |
+| IDENT-63D659859D54 — Moussaieff M163 | text_form | line_count: 30 [SRC-21417589C8F9; p. 283]; text_layout: Clockwise spiral from the centre outward, enclosed by a circular line near the rim [SRC-21417589C8F9; p. 283] |
 | IDENT-63DC1A6B27EF — CBS 8695 | publication | publication_register_identifier: CBS 8695 [SRC-943673B56FB8; Catalogue, text 18, printed p. 323; PDF p. 329; catalogue number column]; translation_availability: No separate English translation supplied in Montgomery 1913. The commentary calls this a duplicate of the texts collated under no. 11 and explicitly says a translation is unnecessary. [SRC-943673B56FB8; text 18, printed p. 193; PDF p. 199] |
 | IDENT-643AF1B799FD — British Museum 117883: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1883-0118-2602]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1883-0118-2602] |
 | IDENT-643AF1B799FD — British Museum 117883: incantation bowl | provenance | findspot: Excavated/Findspot: Abu Habba (Sippar) [SRC-3D4B57D27A24; Related objects: 1883-0118-2602]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1883-0118-2602] |
@@ -317,6 +321,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-E8CF3DBF81FE — British Museum 1980,0415.31.a: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-31-a]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-31-a] |
 | IDENT-E8CF3DBF81FE — British Museum 1980,0415.31.a: incantation bowl | provenance | findspot: Found/Acquired: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-31-a]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-31-a] |
 | IDENT-EA23C411BAE1 — Vorderasiatisches Museum VA Bab 04366 a | dating | dating: First half of the first millennium CE [SRC-3B1501581C61; ObjID 1743776]; period: Aramaic [SRC-3B1501581C61; ObjID 1743776] |
+| IDENT-EAB5621DEDA2 — Schøyen MS 2054/124 | ritual | formula_genre: Egg historiola associated with a white chicken [SRC-5F7E0BA65D6E; p. 309; pp. 316–319]; text_purpose: Aggressive or hate magic directed against named antagonists [SRC-5F7E0BA65D6E; p. 309; pp. 316–318] |
 | IDENT-EB8FD1657B4A — British Museum 1980,0415.31.q: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-31-q]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-31-q] |
 | IDENT-EB8FD1657B4A — British Museum 1980,0415.31.q: incantation bowl | provenance | findspot: Found/Acquired: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-31-q]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1980-0415-31-q] |
 | IDENT-EE02A425AA93 — British Museum 91773: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1883-0413-1]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1883-0413-1] |

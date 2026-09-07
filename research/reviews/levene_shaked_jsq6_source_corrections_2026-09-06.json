@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-07T02:57:14Z",
+  "evidence_path": "research/reviews/levene_shaked_jsq6_evidence_2026-09-06.json",
+  "evidence_sha256": "3f52ae25897167826998e48c05eca7c8039f321fa1ab6e9b74db3a63b15c3717",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-LEVENE1999-HELD-SCAN",
+      "source_id": "SRC-21417589C8F9",
+      "rationale": "The researcher supplied and the project inspected the complete article, so the source is held and available rather than known only through a partial repository record. Bibliographic metadata already agrees with the volume.",
+      "before": {
+        "source_type": "article",
+        "title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+        "authors": "Dan Levene",
+        "issued_year": 1999,
+        "container_title": "Jewish Studies Quarterly",
+        "publisher": null,
+        "url": "https://eprints.soton.ac.uk/73174/",
+        "doi": null,
+        "isbn": null,
+        "citation": "Levene, Dan. ‘“… and by the name of Jesus …” An Unpublished Magic Bowl in Jewish Aramaic.’ JSQ 6, no. 4 (1999): 283–308.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Institutional repository: ePrints Soton (University of Southampton); landing page: https://eprints.soton.ac.uk/73174/"
+      },
+      "after": {
+        "source_type": "article",
+        "title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+        "authors": "Dan Levene",
+        "issued_year": 1999,
+        "container_title": "Jewish Studies Quarterly",
+        "publisher": null,
+        "url": "https://eprints.soton.ac.uk/73174/",
+        "doi": null,
+        "isbn": null,
+        "citation": "Levene, Dan. ‘“… and by the name of Jesus …” An Unpublished Magic Bowl in Jewish Aramaic.’ JSQ 6, no. 4 (1999): 283–308.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete researcher-supplied article inspected and deposited privately by SHA-256 19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3; institutional repository landing page: https://eprints.soton.ac.uk/73174/."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-SHAKED1999-JSQ6",
+      "source_id": "SRC-5F7E0BA65D6E",
+      "rationale": "The complete JSQ volume scan identifies this as Shaul Shaked's companion article in volume 6 (1999), pp. 309-319. The imported 2016 date came from discovery metadata and does not match the article itself.",
+      "before": {
+        "source_type": "article",
+        "title": "Jesus in the Magic Bowls. Apropos Dan Levene's \"... and by the name of Jesus ...\"",
+        "authors": "Shaul Shaked",
+        "issued_year": 2016,
+        "container_title": null,
+        "publisher": null,
+        "url": "https://openalex.org/W129188497",
+        "doi": null,
+        "isbn": null,
+        "citation": "Jesus in the Magic Bowls. Apropos Dan Levene's \"... and by the name of Jesus ...\" (2016). OpenAlex W129188497.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad OpenAlex metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’",
+        "authors": "Shaul Shaked",
+        "issued_year": 1999,
+        "container_title": "Jewish Studies Quarterly",
+        "publisher": "Mohr Siebeck",
+        "url": "https://openalex.org/W129188497",
+        "doi": null,
+        "isbn": null,
+        "citation": "Shaked, Shaul. ‘Jesus in the Magic Bowls: Apropos Dan Levene’s “… and by the name of Jesus …”.’ Jewish Studies Quarterly 6 (1999): 309–319.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete researcher-supplied article inspected in the same scan as Levene 1999 and deposited privately by SHA-256 19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3. OpenAlex supplied the original discovery record but misdated it 2016."
+      }
+    }
+  ]
+}
