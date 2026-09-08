@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-07 — Codex — Visitor catalogue presentation
+
+**Claimed:** none — OPS local catalogue and reader presentation requested by the researcher
+**Corpus:** unchanged — state digest 12a0c0d20986
+**Tests:** 203 Python tests and 4 JavaScript controller tests passed; JS syntax and diff checks; desktop, direct-entry, Back-link, and 390px mobile browser checks.
+
+- Added one shared presentation module for visitor names, collection labels, language, and dates. The three requested naming examples now render as specified; equivalent date spellings collapse while distinct proposals remain attributed on the bowl page.
+- Replaced research-first catalogue rows with Bowl, Language, Date, and Explore; added collection, language, material-availability, and object-form filters; made “Most to explore” the default; retained completeness and internal status controls under More research filters.
+- Rows now open stable reader pages. Entry pages lead with the bowl and its text, group supported people/purpose and physical facts, distinguish journey labels, group sources while preserving locators, list aliases and catalogue numbers, and move internal IDs/counts into Research details.
+- Availability labels follow the gated reader projection: withheld text and unapproved images never qualify as available here. Unapproved image references remain explicitly labelled as references.
+- Kept existing `#/reading/<identity-id>` links working and restored the originating catalogue query through the Back link. Fixed the docked homepage browse-button precedence leak outside Home and added a stacked 390px row layout.
+- No corpus records, source assertions, rights decisions, private endpoints, publication state, or deployment changed. A later pass can consolidate noisy collection aliases and further refine long source-derived row descriptions.
+
 ## 2026-09-07 — Codex — Bowlam homepage refinement
 
 **Claimed:** none — OPS local homepage, requested branding, copy, map and motion improvements
