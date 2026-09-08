@@ -1,11 +1,11 @@
 import csv
 import json
-import re
 from collections import defaultdict
 from pathlib import Path
 
 from .dedupe import _identity_roots
 from .conflict_review import review_is_current
+from .presentation import collection_name, display_date, display_name, language_name
 
 
 # The release-gate facets. Names are load-bearing: the handoff gate, next_action
@@ -78,44 +78,6 @@ READING_WEIGHTS = {
     "has_client": 1, "has_ritual": 1, "has_biblical_intertexts": 1,
     "has_visual": 1, "has_text_form": 1, "has_practitioner": 1,
 }
-
-# Labels record how a record was discovered, not what the object is. These are
-# the discovery artefacts worth removing before showing a name to a reader.
-_LABEL_NOISE = re.compile(
-    r"(?:\s*[-\u2014]\s*)?\b(?:COJS\s+)?(?:exhibition|translation|catalogue|listing|index)"
-    r"\s+(?:appearance|entry)\s*$",
-    re.I,
-)
-_LABEL_PREFIX = re.compile(r"^(?:Waller\s*2022|Apotropaic\s+index|Context\s+citation)\s*[::]\s*", re.I)
-
-# Identifier schemes that name an object the way a catalogue would, best first.
-_NAMING_SCHEMES = (
-    "british museum museum number", "penn catalogue number", "accession number",
-    "museum number", "collection designation", "publication register identifier",
-    "field number", "montgomery 1913 text number", "publication designation",
-)
-
-
-def display_name(label, identifiers=()):
-    """A name a reader can use, preferring a catalogue identifier to a label.
-
-    Falls back to the recorded label with its discovery suffix removed. The raw
-    label is never discarded — object pages show it under "Recorded as".
-    """
-    cleaned = _LABEL_PREFIX.sub("", label or "").strip()
-    cleaned = _LABEL_NOISE.sub("", cleaned).strip(" -\u2014\u00b7")
-    if cleaned and not cleaned.casefold().startswith(("untitled", "unknown")):
-        return cleaned
-    lookup = {}
-    for item in identifiers:
-        scheme, _, value = str(item).partition(":")
-        if value.strip():
-            lookup.setdefault(scheme.strip().casefold(), value.strip())
-    for scheme in _NAMING_SCHEMES:
-        if scheme in lookup:
-            return lookup[scheme]
-    return cleaned or (label or "Unnamed record")
-
 
 def reading_score(row):
     """How much of this record a reader can actually engage with."""
@@ -337,6 +299,15 @@ def identity_rows(conn):
         }
         row.update({"has_" + key: int(value) for key, value in coverage.items()})
         row["display_name"] = display_name(row["label"], sorted(cluster_identifiers))
+        row["display_date"] = display_date(cluster_claims)
+        row["display_language"] = language_name(cluster_claims)
+        location_values = sorted({
+            (claim["normalized_value"] or claim["value_text"] or claim["value_json"] or "").strip()
+            for claim in cluster_claims if claim["field"] in CORE_COVERAGE["location"]
+        } - {""})
+        row["display_collection"] = collection_name(
+            row["label"], sorted(cluster_identifiers), location_values
+        )
         row["reading_score"] = reading_score(row)
         rows.append(row)
     return rows

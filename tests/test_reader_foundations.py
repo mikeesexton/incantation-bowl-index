@@ -2,9 +2,8 @@ import tempfile, unittest
 from pathlib import Path
 from bowl_index.db import connect, migrate
 from bowl_index.ingest import add_candidate
-from bowl_index.identity import (
-    CONTENT_COVERAGE, CORE_ORDER, display_name, identity_rows, reading_score,
-)
+from bowl_index.identity import CONTENT_COVERAGE, CORE_ORDER, identity_rows, reading_score
+from bowl_index.presentation import display_date, display_name, format_date
 
 class DisplayNameTests(unittest.TestCase):
     """Labels record how a record was found. A reader needs what it is."""
@@ -23,10 +22,38 @@ class DisplayNameTests(unittest.TestCase):
         self.assertEqual(
             display_name('', ['collection designation: X.0552',
                               'British Museum museum number: 113189']),
-            '113189')
+            'British Museum, London · 113189')
     def test_it_never_returns_empty(self):
         self.assertTrue(display_name(''))
         self.assertTrue(display_name(None))
+
+    def test_requested_collection_names(self):
+        self.assertEqual(display_name('CBS 16018 [Montgomery text 19]',
+            ['Penn catalogue number: CBS 16018']), 'Penn Museum · CBS 16018')
+        self.assertEqual(display_name('Museo delle Civiltà IsIAO 5206',
+            ['collection designation: IsIAO 5206']),
+            'Museo delle Civiltà, Rome · IsIAO 5206')
+        self.assertEqual(display_name('089M',
+            ['publication object key: Segal 2000::089M']), 'Segal 2000 · Bowl 089M')
+
+
+class DatePresentationTests(unittest.TestCase):
+    def test_requested_date_spellings(self):
+        self.assertEqual(format_date('6thC-8thC'), '6th–8th centuries CE')
+        self.assertEqual(format_date('6th–7th century CE'), '6th–7th centuries CE')
+        self.assertEqual(format_date('circa 5th–6th centuries CE'), 'c. 5th–6th centuries CE')
+        self.assertEqual(format_date('400–899 CE'), '400–899 CE')
+
+    def test_equivalent_values_collapse_but_different_dates_do_not(self):
+        equivalent = [{'field':'dating', 'value_text':'6thC-8thC'},
+                      {'field':'dating', 'value_text':'6th–8th centuries CE'}]
+        self.assertEqual(display_date(equivalent), '6th–8th centuries CE')
+        different = equivalent + [{'field':'dating', 'value_text':'500–700 CE'}]
+        self.assertEqual(display_date(different), 'Multiple proposed dates')
+
+    def test_periods_are_not_dates(self):
+        self.assertEqual(display_date([{'field':'period', 'value_text':'Sasanian'}]),
+                         'Date not recorded')
 
 
 class ReadingScoreTests(unittest.TestCase):

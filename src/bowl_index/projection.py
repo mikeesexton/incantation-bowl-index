@@ -14,6 +14,7 @@ import json
 import re
 
 from .identity import COVERAGE_GROUPS, identity_rows
+from .presentation import format_date
 from .publication import current_text_reviews
 from .publications import current_registry, publication_keys
 from .rights import current_media_reviews, media_evidence
@@ -27,6 +28,7 @@ EDITION_SOURCE_TYPES = ("book", "article", "chapter", "catalogue", "thesis", "ex
 PROJECTION_COLUMNS = {
     "sources": ("id", "source_type", "title", "authors", "issued_year", "citation", "doi", "isbn"),
     "objects": ("id", "label", "object_type", "record_status", "authenticity"),
+    "identifiers": ("object_id", "scheme", "value", "assigning_body"),
     "appearances": ("id", "source_id", "locator"),
     # Free-text review rationales are private; keep the relation structure only.
     "appearance_object_links": ("appearance_id", "object_id", "relation_type", "confidence"),
@@ -37,6 +39,7 @@ PROJECTION_COLUMNS = {
                  "access_url", "access_status"),
     "media": ("id", "object_id", "appearance_id", "source_id", "media_type", "url", "attribution"),
     "identity_clusters": ("identity_id", "canonical_object_id", "member_ids", "display_name",
+                          "display_date", "display_language", "display_collection",
                           "record_status", "member_count", "source_count", "appearance_count",
                           "completeness_score", "content_completeness", "reading_score"),
     "facts": ("object_id", "field", "field_group", "value", "certainty", "source_id", "locator"),
@@ -139,6 +142,9 @@ class Projection:
 
     def _objects(self):
         return self._plain("objects")
+
+    def _identifiers(self):
+        return self._plain("identifiers")
 
     def _appearances(self):
         return self._plain("appearances")
@@ -274,6 +280,8 @@ class Projection:
             value = row["normalized_value"] or row["value_text"] or row["value_json"]
             if not value or len(value) > FACT_MAX_LENGTH:
                 continue
+            if row["field"] == "dating":
+                value = format_date(value)
             rows.append({
                 "object_id": row["object_id"], "field": row["field"],
                 "field_group": FACT_FIELD_GROUP[row["field"]], "value": value,
