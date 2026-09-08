@@ -70,6 +70,10 @@
 .entry h1 { font: 400 2.2rem/1.15 var(--serif); margin: 0 0 .5rem; }
 .entry-standfirst { font: italic 400 1.1rem/1.5 var(--serif); margin: 0 0 .4rem; }
 .entry-meta { font-size: .85rem; color: var(--brownink-soft); margin: 0; }
+.entry-object-caution { display: inline-block; margin: .65rem .35rem 0 0; color: var(--amber);
+  font: 700 .7rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+.identifier-help { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
+.identifier-help:focus-visible { outline: 2px solid var(--reading-accent); outline-offset: 3px; }
 
 .entry-block { margin: 0 0 2.1rem; }
 .entry-block h2 { font: 600 .76rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
@@ -98,6 +102,15 @@
 .entry-apparatus dt { color: var(--brownink-soft); }
 .entry-apparatus dd { margin: 0; }
 .entry-apparatus code { font-size: .82rem; }
+.source-groups, .alias-list { list-style: none; margin: 0; padding: 0; }
+.source-groups li, .alias-list li { padding: .62rem 0; border-bottom: 1px solid var(--clay-line); }
+.source-groups li:last-child, .alias-list li:last-child { border-bottom: 0; }
+.source-groups span, .source-groups small { display: block; }
+.source-groups span { font: 1rem/1.45 var(--serif); }
+.source-groups small { margin-top: .2rem; color: var(--brownink-soft); font-size: .76rem; }
+.alias-list { font: .92rem/1.45 var(--serif); }
+.alias-list span { display: inline-block; min-width: 10rem; color: var(--brownink-soft);
+  font: .72rem/1.4 var(--sans); text-transform: capitalize; }
 
 @media (max-width: 620px) {
   .reading-head h1 { font-size: 2.1rem; }

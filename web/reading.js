@@ -6,7 +6,7 @@
  */
 (function () {
   "use strict";
-  const TABLES = ["identity_clusters", "objects", "facts", "texts", "editions", "sources", "media",
+  const TABLES = ["identity_clusters", "objects", "identifiers", "facts", "texts", "editions", "sources", "media",
     "works", "contributors", "scholarship_decades", "publications"];
   const data = {loaded: false};
   const esc = value => String(value === null || value === undefined ? "" : value)
@@ -36,6 +36,7 @@
       return index;
     };
     data.factsBy = bucket("facts");
+    data.identifiersBy = bucket("identifiers");
     data.textsBy = bucket("texts");
     data.editionsBy = bucket("editions");
     data.mediaBy = bucket("media");
@@ -45,7 +46,8 @@
     data.identity_clusters.forEach(c => {
       const facts = data.factsBy[c.identity_id] || [];
       const text = (data.textsBy[c.identity_id] || []).find(x => x.content_status === "included");
-      c.haystack = [c.display_name, ...facts.map(f => f.value), text ? text.content : ""]
+      c.haystack = [c.display_name, ...(data.identifiersBy[c.identity_id] || []).flatMap(i => [i.scheme, i.value]),
+        ...facts.map(f => f.value), text ? text.content : ""]
         .join(" ").toLowerCase();
     });
     data.loaded = true;
@@ -55,6 +57,20 @@
   const factsOf = (id, group) => (data.factsBy[id] || []).filter(f => f.field_group === group);
   const values = (id, group) => [...new Set(factsOf(id, group).map(f => f.value))];
   const first = (id, group) => values(id, group)[0] || "";
+
+  function catalogueReturn() {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem("bowlam.catalogue.return") || "null");
+      if (saved?.hash?.startsWith("#/explore")) return saved.hash;
+    } catch { /* use the collection root */ }
+    return "#/explore";
+  }
+
+  function titleMarkup(cluster) {
+    const title = esc(cluster.display_name);
+    return title.replace(/\bIsIAO\b/, `<abbr class="identifier-help" tabindex="0"
+      title="Italian Institute for Africa and the Orient; a historical collection prefix.">IsIAO</abbr>`);
+  }
 
   /* A bowl's text spirals from the base to the rim. Draw that from the object's
    * own recorded line count, so the mark is a diagram rather than an ornament. */
@@ -116,13 +132,13 @@
     const id = cluster.identity_id;
     const text = (data.textsBy[id] || []).find(t => t.content_status === "included");
     const line = summarise(cluster, 96);
-    const place = first(id, "location");
-    const tongue = first(id, "language");
-    const when = first(id, "dating");
+    const place = cluster.display_collection;
+    const tongue = cluster.display_language;
+    const when = cluster.display_date;
     return `<article class="bowl-card"><a href="#/reading/${encodeURIComponent(id)}">
       <div class="bowl-card-mark">${mark(cluster)}</div>
       <div class="bowl-card-body">
-        <h3>${esc(cluster.display_name)}</h3>
+        <h3>${titleMarkup(cluster)}</h3>
         ${line ? `<p class="bowl-card-line">${esc(line)}</p>` : ""}
         <p class="bowl-card-meta">${[place, tongue, when].filter(Boolean).map(esc).join(" · ")}</p>
         ${text ? `<p class="bowl-card-flag">Text you can read</p>` : ""}
@@ -262,14 +278,60 @@
   function factList(id, group, heading) {
     const rows = factsOf(id, group);
     if (!rows.length) return "";
-    const seen = new Set();
-    const items = rows.filter(r => !seen.has(r.value) && seen.add(r.value)).map(r => {
-      const source = data.sourceById[r.source_id];
-      const cite = source ? `${source.authors || source.title || ""} ${source.issued_year || ""}`.trim() : "";
-      return `<li><span>${esc(r.value.replace(/^\["|"\]$/g, "").replace(/","/g, ", "))}</span>
-        ${cite ? `<cite title="${esc(r.locator || "")}">${esc(cite)}</cite>` : ""}</li>`;
+    const grouped = new Map();
+    rows.forEach(r => {
+      const key = r.value;
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(r);
+    });
+    const items = [...grouped].map(([value, reports]) => {
+      const citations = reports.map(r => {
+        const source = data.sourceById[r.source_id];
+        const cite = source ? `${source.authors || source.title || ""} ${source.issued_year || ""}`.trim() : "";
+        return [cite, r.locator].filter(Boolean).join(" · ");
+      }).filter(Boolean);
+      return `<li><span>${esc(value.replace(/^\["|"\]$/g, "").replace(/","/g, ", "))}</span>
+        ${citations.length ? `<cite>${citations.map(esc).join("; ")}</cite>` : ""}</li>`;
     });
     return `<section class="entry-block"><h2>${esc(heading)}</h2><ul class="fact-list">${items.join("")}</ul></section>`;
+  }
+
+  function journeySection(id) {
+    const rows = factsOf(id, "provenance");
+    if (!rows.length) return "";
+    const labels = {findspot: "Findspot", excavation_context: "Excavation context",
+      origin: "Reported origin", findspot_or_origin: "Reported findspot or origin",
+      collection_history: "Collection history", provenance: "Provenance report",
+      provenance_summary: "Provenance report", production_place: "Production place",
+      current_location: "Current collection", current_or_reported_collection: "Reported collection"};
+    return `<section class="entry-block"><h2>Its journey</h2><ul class="fact-list">${rows.map(r => {
+      const source = data.sourceById[r.source_id];
+      const cite = source ? [source.authors || source.title, source.issued_year, r.locator].filter(Boolean).join(" · ") : r.locator;
+      return `<li><span><small>${esc(labels[r.field] || r.field.replaceAll("_", " "))}</small>${esc(r.value)}</span>
+        ${cite ? `<cite>${esc(cite)}</cite>` : ""}</li>`;
+    }).join("")}</ul></section>`;
+  }
+
+  function sourcesSection(id) {
+    const grouped = new Map();
+    const add = (sourceId, locator, url) => {
+      if (!sourceId) return;
+      if (!grouped.has(sourceId)) grouped.set(sourceId, {locators: new Set(), url: ""});
+      const item = grouped.get(sourceId);
+      if (locator) item.locators.add(locator);
+      if (url) item.url = url;
+    };
+    (data.factsBy[id] || []).forEach(r => add(r.source_id, r.locator));
+    (data.textsBy[id] || []).forEach(r => add(r.source_id, r.access_locator, r.access_url));
+    (data.editionsBy[id] || []).forEach(r => add(r.source_id, r.locator, r.access_url));
+    (data.mediaBy[id] || []).forEach(r => add(r.source_id, "", r.url));
+    if (!grouped.size) return "";
+    return `<section class="entry-block"><h2>Sources</h2><ul class="source-groups">${[...grouped].map(([sourceId, item]) => {
+      const source = data.sourceById[sourceId] || {};
+      const label = source.citation || source.title || sourceId;
+      const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
+      return `<li><span>${link}</span>${item.locators.size ? `<small>${[...item.locators].map(esc).join(" · ")}</small>` : ""}</li>`;
+    }).join("")}</ul></section>`;
   }
 
   /* The citation usually opens with the editor's name; do not say it twice. */
@@ -291,16 +353,22 @@
     const withheld = texts.filter(t => t.content_status !== "included");
     const editions = data.editionsBy[id] || [];
     const rawLabels = cluster.members.map(m => (data.objectById[m] || {}).label).filter(Boolean);
+    const identifiers = data.identifiersBy[id] || [];
+    const objects = cluster.members.map(m => data.objectById[m]).filter(Boolean);
+    const cautions = [...new Set(objects.map(o => o.authenticity)
+      .filter(value => ["suspected_fake", "disputed", "uncertain", "pseudo_script"].includes(value)))];
+    const overview = summarise(cluster);
 
     view.innerHTML = `<article class="entry">
-      <a class="entry-back" href="#/reading">← Bowls worth reading</a>
+      <a class="entry-back" href="${esc(catalogueReturn())}">← Back to the collection</a>
       <header class="entry-head">
         <div class="entry-mark">${mark(cluster)}</div>
         <div>
-          <h1 id="reading-title">${esc(cluster.display_name)}</h1>
-          <p class="entry-standfirst">${esc(summarise(cluster) || "No description recorded.")}</p>
-          <p class="entry-meta">${[first(id, "location"), first(id, "language"), first(id, "dating")]
+          <h1 id="reading-title">${titleMarkup(cluster)}</h1>
+          ${overview ? `<p class="entry-standfirst">${esc(overview)}</p>` : ""}
+          <p class="entry-meta">${[cluster.display_date, cluster.display_language, cluster.display_collection]
             .filter(Boolean).map(esc).join(" · ")}</p>
+          ${cautions.map(value => `<p class="entry-object-caution">${esc(value.replaceAll("_", " "))}</p>`).join("")}
         </div>
       </header>
 
@@ -318,17 +386,19 @@
             : esc(t.access_citation || "edition")}${t.access_locator ? " · " + esc(t.access_locator) : ""}</cite></li>`).join("")}</ul>
       </section>` : ""}
 
-      ${factList(id, "client", "Who it names")}
-      ${factList(id, "practitioner", "Who wrote it, as reported")}
-      ${factList(id, "target", "What it acts against")}
-      ${factList(id, "ritual", "What it does")}
-      ${factList(id, "biblical_intertexts", "Scripture it quotes")}
-      ${factList(id, "visual", "What is drawn on it")}
-      ${factList(id, "text_form", "How the text is set")}
-      ${factList(id, "dimensions", "Size")}
-      ${factList(id, "material", "Material")}
-      ${factList(id, "condition", "Condition")}
-      ${factList(id, "script", "Script")}
+      ${factList(id, "client", "People and purpose — who it names")}
+      ${factList(id, "practitioner", "People and purpose — maker or hand, as reported")}
+      ${factList(id, "target", "People and purpose — what it acts against")}
+      ${factList(id, "ritual", "People and purpose — what it does")}
+      ${factList(id, "biblical_intertexts", "People and purpose — scripture it quotes")}
+
+      ${cluster.display_date === "Multiple proposed dates" ? factList(id, "dating", "Proposed dates") : ""}
+      ${factList(id, "material", "The bowl — material")}
+      ${factList(id, "dimensions", "The bowl — dimensions")}
+      ${factList(id, "condition", "The bowl — condition")}
+      ${factList(id, "script", "The bowl — script")}
+      ${factList(id, "visual", "The bowl — what is drawn")}
+      ${factList(id, "text_form", "The bowl — inscription layout")}
 
       ${editions.length ? `<section class="entry-block"><h2>Where it is published</h2>
         <ul class="fact-list">${editions.map(e => `<li><span>${esc(e.citation)}</span>
@@ -336,13 +406,21 @@
             ? `<a href="${esc(e.access_url)}" rel="noreferrer">link</a>` : esc(e.access_status || "")}</cite></li>`).join("")}</ul>
       </section>` : ""}
 
-      ${factList(id, "provenance", "Where it is said to come from")}
-      <p class="entry-caveat">A reported findspot is a report. Listing an object here says
-        nothing about its ownership, export history, or authenticity.</p>
+      ${journeySection(id)}
+      ${factsOf(id, "provenance").length ? `<p class="entry-caveat">A reported findspot is a report. Listing an object here says
+        nothing about its ownership, export history, or authenticity.</p>` : ""}
 
-      <details class="entry-apparatus"><summary>Record and evidence</summary>
+      ${sourcesSection(id)}
+
+      <section class="entry-block"><h2>Other names and catalogue numbers</h2>
+        <ul class="alias-list">${[...new Set(rawLabels)].map(label => `<li>${esc(label)}</li>`).join("")}
+        ${identifiers.map(item => `<li><span>${esc(item.scheme)}</span> ${/^IsIAO\b/i.test(item.value)
+          ? `<abbr class="identifier-help" tabindex="0" title="Italian Institute for Africa and the Orient; a historical collection prefix.">${esc(item.value)}</abbr>`
+          : esc(item.value)}</li>`).join("")}</ul>
+      </section>
+
+      <details class="entry-apparatus"><summary>Research details</summary>
         <dl>
-          <dt>Recorded as</dt><dd>${rawLabels.map(esc).join("<br>") || "—"}</dd>
           <dt>Identity</dt><dd><code>${esc(cluster.identity_id)}</code>
             · ${esc(cluster.record_status)} · ${cluster.member_count} linked record(s)</dd>
           <dt>Evidence</dt><dd>${cluster.source_count} source(s), ${cluster.appearance_count} appearance(s)</dd>
