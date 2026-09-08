@@ -47,7 +47,7 @@ function toast(message) {
   window.setTimeout(() => node.classList.remove("is-visible"), 3200);
 }
 
-function optionList(select, values) {
+function optionList(select, values = []) {
   const current = select.value;
   values.filter(value => ![...select.options].some(option => option.value === value)).forEach(value => select.insertAdjacentHTML(
     "beforeend", `<option value="${escapeHtml(value)}">${escapeHtml(humanize(value))}</option>`
@@ -87,6 +87,11 @@ function renderActiveFilters(params) {
 }
 
 function identityRow(item) {
+  const displayName = item.display_name || item.label || "Bowl";
+  const language = item.display_language || item.languages?.[0] || "Language not recorded";
+  const date = item.display_date || item.dating?.[0] || "Date not recorded";
+  const scripts = Array.isArray(item.scripts) ? item.scripts : [];
+  const sourceCount = Number.isFinite(item.source_count) ? item.source_count : 0;
   const flags = [];
   if (item.has_text_here) flags.push("Text available here");
   else if (item.has_edition_reference) flags.push("Published text reference");
@@ -94,17 +99,17 @@ function identityRow(item) {
   else if (item.has_image) flags.push("Image reference");
   const caution = ["suspected_fake", "disputed", "uncertain", "pseudo_script"].includes(item.authenticity)
     ? `<span class="object-caution">${escapeHtml(humanize(item.authenticity))}</span>` : "";
-  return `<tr tabindex="0" data-reader-identity="${escapeHtml(item.identity_id)}" aria-label="Open ${escapeHtml(item.display_name)}">
+  return `<tr tabindex="0" data-reader-identity="${escapeHtml(item.identity_id)}" aria-label="Open ${escapeHtml(displayName)}">
     <td><div class="identity-name"><div>
-      <strong>${escapeHtml(item.display_name)}</strong>
+      <strong>${escapeHtml(displayName)}</strong>
       ${item.visitor_description ? `<div class="bowl-description">${escapeHtml(item.visitor_description)}</div>` : ""}
       ${caution}
     </div></div></td>
-    <td><div class="context-main">${escapeHtml(item.display_language)}</div>${item.scripts.length ? `<div class="context-sub">Script: ${escapeHtml(item.scripts[0])}</div>` : ""}</td>
-    <td><div class="context-main">${escapeHtml(item.display_date)}</div></td>
+    <td><div class="context-main">${escapeHtml(language)}</div>${scripts.length ? `<div class="context-sub">Script: ${escapeHtml(scripts[0])}</div>` : ""}</td>
+    <td><div class="context-main">${escapeHtml(date)}</div></td>
     <td class="explore-cell"><a href="#/reading/${encodeURIComponent(item.identity_id)}">View bowl <span aria-hidden="true">→</span></a>
       <div class="availability-labels">${flags.map(flag => `<span>${escapeHtml(flag)}</span>`).join("")}</div>
-      <div class="source-count">${item.source_count} source${item.source_count === 1 ? "" : "s"}</div></td>
+      <div class="source-count">${sourceCount} source${sourceCount === 1 ? "" : "s"}</div></td>
   </tr>`;
 }
 

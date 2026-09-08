@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-07 — Codex — Catalogue default-load resilience
+
+**Claimed:** none — OPS visitor catalogue bug report
+**Corpus:** unchanged — state digest 12a0c0d20986
+**Tests:** 203 Python tests and 6 JavaScript tests passed; fresh uncached browser check confirmed 40 default rows render with no filters.
+
+- Fixed the default Explore page crash when a sparse or stale API row omitted optional script presentation metadata.
+- Made visitor row rendering resilient to missing name, language, date, script, source-count, and facet-list fields so one incomplete row cannot blank the page.
+- Added JavaScript regression coverage for sparse rows and separate script/language display.
+- No corpus, rights, projection, research, or deployment changes.
+
 ## 2026-09-07 — Codex — Visitor catalogue presentation
 
 **Claimed:** none — OPS local catalogue and reader presentation requested by the researcher
