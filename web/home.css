@@ -1,5 +1,5 @@
 /* The introduction is deliberately light, like clay on an archive table. */
-.intro-browse-link { display: none; }
+.topbar .intro-browse-link { display: none; }
 .is-home { --intro-paper: #f4efe5; --intro-ink: #342f27; --intro-muted: #71685b; --intro-clay: #9a4e34; --intro-line: #d5ccba; color-scheme: light; background: var(--intro-paper); }
 .is-home .app-shell { display: block; }
 .is-home .topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; min-height: 78px; padding: 0 clamp(20px, 4vw, 72px); background: #f4efe5f5; color: var(--intro-ink); border-bottom: 1px solid var(--intro-line); backdrop-filter: blur(10px); }
@@ -8,7 +8,7 @@
 .is-home .wordmark small { color: var(--intro-muted); }
 .is-home .view-tabs, .is-home .local-badge, .is-home #refresh-corpus { display: none; }
 .is-home .local-controls { margin: 0; padding: 0; }
-.is-home .intro-browse-link { display: inline-flex; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-14px); transition: opacity .3s, transform .4s, visibility .3s; }
+.is-home .topbar .intro-browse-link { display: inline-flex; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-14px); transition: opacity .3s, transform .4s, visibility .3s; }
 .is-home .intro-browse-link.is-docked { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
 .is-home .workspace { overflow: visible; }
 .workspace:focus { outline: none; }

@@ -49,6 +49,21 @@ def _claim_value(row):
     return row.get("normalized_value") or row.get("value_text") or row.get("value_json") or ""
 
 
+def _visitor_description(values):
+    """Build a short line only from source-attributed, visitor-useful facts."""
+    purposes = sorted({value for field in ("text_purpose", "formula_genre")
+                       for value in values[field]}, key=len)
+    clients = sorted({value for field in ("client", "clients", "client_or_beneficiary")
+                      for value in values[field]}, key=len)
+    if purposes and clients:
+        return f"{purposes[0]} — for {clients[0]}"
+    if purposes:
+        return purposes[0]
+    if clients:
+        return f"Named for {clients[0]}"
+    return ""
+
+
 class CorpusCatalog:
     """A compact in-memory identity index backed by read-through SQLite dossiers."""
 
@@ -129,6 +144,9 @@ class CorpusCatalog:
                 row["languages"] = sorted({
                     value for field in CORE_COVERAGE["language"] for value in values[field]
                 })
+                row["scripts"] = sorted({
+                    value for field in CORE_COVERAGE["script"] for value in values[field]
+                })
                 row["dating"] = sorted({
                     value for field in CORE_COVERAGE["dating"] for value in values[field]
                 })
@@ -139,8 +157,10 @@ class CorpusCatalog:
                 row["stale_conflict_fields"] = json.loads(row.pop("stale_conflict_fields_json"))
                 row["member_ids"] = json.loads(row.pop("member_ids_json"))
                 row["identifiers"] = json.loads(row.pop("identifiers_json"))
+                row["visitor_description"] = _visitor_description(values)
                 row["search_blob"] = " ".join(
-                    [row["identity_id"], row["label"]] + search_terms[row["identity_id"]]
+                    [row["identity_id"], row["label"], row["display_name"],
+                     row["display_collection"]] + search_terms[row["identity_id"]]
                 ).casefold()
                 catalog_rows.append(row)
                 by_id[row["identity_id"]] = row
@@ -179,9 +199,16 @@ class CorpusCatalog:
             ):
                 if link["source_id"] in edition_sources:
                     edition_objects.add(link["object_id"])
+            approved_image_objects = {item["object_id"] for item in projection_tables["media"]}
+            included_text_objects = {
+                item["object_id"] for item in projection_tables["texts"]
+                if item["content_status"] == "included"
+            }
             for row in catalog_rows:
                 row["has_edition_reference"] = bool(row["has_text_edition"] or
                                                    edition_objects.intersection(row["member_ids"]))
+                row["has_approved_image"] = bool(approved_image_objects.intersection(row["member_ids"]))
+                row["has_text_here"] = bool(included_text_objects.intersection(row["member_ids"]))
             identities = [
                 {"identity_id": row["identity_id"],
                  **{field: bool(row["has_edition_reference" if field == "text_edition" else "has_" + field])
@@ -277,7 +304,10 @@ class CorpusCatalog:
         present = params.get("present", [""])[0]
         conflict = params.get("conflict", [""])[0]
         object_type = params.get("object_type", [""])[0]
-        sort = params.get("sort", ["completeness_desc"])[0]
+        collection = params.get("collection", [""])[0]
+        language = params.get("language", [""])[0]
+        available = params.get("available", [""])[0]
+        sort = params.get("sort", ["explore"])[0]
         try:
             page = max(1, int(params.get("page", ["1"])[0]))
             page_size = min(100, max(10, int(params.get("page_size", ["40"])[0])))
@@ -304,15 +334,31 @@ class CorpusCatalog:
                 continue
             if object_type and object_type not in row["object_types"]:
                 continue
+            if collection and row["display_collection"] != collection:
+                continue
+            if language and row["display_language"] != language:
+                continue
+            availability = {
+                "text_here": bool(row["has_text_here"]),
+                "published_text": bool(row["has_edition_reference"]),
+                "image_here": bool(row["has_approved_image"]),
+                "image_reference": bool(row["has_image"]),
+            }
+            if available and not availability.get(available, False):
+                continue
             items.append(row)
 
         sorters = {
-            "completeness_desc": lambda row: (-row["completeness_score"], row["label"].casefold()),
-            "completeness_asc": lambda row: (row["completeness_score"], row["label"].casefold()),
-            "label": lambda row: row["label"].casefold(),
-            "sources": lambda row: (-row["source_count"], row["label"].casefold()),
+            "explore": lambda row: (-bool(row["has_text_here"]),
+                                      -bool(row["has_approved_image"]),
+                                      -row["content_completeness"],
+                                      row["display_name"].casefold(), row["identity_id"]),
+            "completeness_desc": lambda row: (-row["completeness_score"], row["display_name"].casefold()),
+            "completeness_asc": lambda row: (row["completeness_score"], row["display_name"].casefold()),
+            "label": lambda row: row["display_name"].casefold(),
+            "sources": lambda row: (-row["source_count"], row["display_name"].casefold()),
         }
-        items.sort(key=sorters.get(sort, sorters["completeness_desc"]))
+        items.sort(key=sorters.get(sort, sorters["explore"]))
         start = (page - 1) * page_size
         public_items = [{key: value for key, value in item.items() if key != "search_blob"}
                         for item in items[start:start + page_size]]
@@ -327,6 +373,8 @@ class CorpusCatalog:
                 "authenticities": sorted({row["authenticity"] for row in self.rows}),
                 "next_actions": sorted({row["next_action"] for row in self.rows}),
                 "object_types": sorted({value for row in self.rows for value in row["object_types"]}),
+                "collections": sorted({row["display_collection"] for row in self.rows}),
+                "languages": sorted({row["display_language"] for row in self.rows}),
             },
         }
 

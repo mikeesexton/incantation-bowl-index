@@ -67,9 +67,11 @@ function queryParams() {
 
 function renderActiveFilters(params) {
   const labels = [];
+  const friendly = {present: "Recorded field", coverage: "Missing field", object_type: "Object form",
+    available: "Available material", q: "Search"};
   for (const [key, value] of params) {
     if (["page", "page_size", "sort"].includes(key)) continue;
-    const label = key === "present" ? "Recorded field" : key === "coverage" ? "Missing field" : humanize(key);
+    const label = friendly[key] || humanize(key);
     labels.push(`<button class="filter-chip" type="button" data-clear-filter="${escapeHtml(key)}">${escapeHtml(label)}: ${escapeHtml(humanize(value))} <span aria-hidden="true">×</span></button>`);
   }
   $("#active-filters").innerHTML = labels.join("");
@@ -85,22 +87,40 @@ function renderActiveFilters(params) {
 }
 
 function identityRow(item) {
-  const context = [...item.locations.slice(0, 1), ...item.languages.slice(0, 1)].filter(Boolean);
-  const date = item.dating[0];
-  const conflicts = item.conflict_fields.length
-    ? `<span class="conflict-flag">${item.conflict_fields.length} field${item.conflict_fields.length === 1 ? "" : "s"} to review</span>`
-    : "No flagged differences";
-  const identifiers = item.identifiers.slice(0, 2).join(" · ");
-  return `<tr tabindex="0" data-identity="${escapeHtml(item.identity_id)}" aria-label="Open ${escapeHtml(item.label)} dossier">
-    <td><div class="identity-name"><span class="identity-monogram" aria-hidden="true">${item.member_count}</span><div>
-      <strong>${escapeHtml(item.label)}</strong>
-      <div class="meta-line"><span>${escapeHtml(item.identity_id)}</span><span>${escapeHtml(humanize(item.record_status))}</span>${item.member_count > 1 ? `<span>${item.member_count} linked records</span>` : ""}</div>
-      <div class="identifier-preview" title="${escapeHtml(identifiers)}">${escapeHtml(identifiers || "No identifier recorded")}</div>
+  const flags = [];
+  if (item.has_text_here) flags.push("Text available here");
+  else if (item.has_edition_reference) flags.push("Published text reference");
+  if (item.has_approved_image) flags.push("Image available here");
+  else if (item.has_image) flags.push("Image reference");
+  const caution = ["suspected_fake", "disputed", "uncertain", "pseudo_script"].includes(item.authenticity)
+    ? `<span class="object-caution">${escapeHtml(humanize(item.authenticity))}</span>` : "";
+  return `<tr tabindex="0" data-reader-identity="${escapeHtml(item.identity_id)}" aria-label="Open ${escapeHtml(item.display_name)}">
+    <td><div class="identity-name"><div>
+      <strong>${escapeHtml(item.display_name)}</strong>
+      ${item.visitor_description ? `<div class="bowl-description">${escapeHtml(item.visitor_description)}</div>` : ""}
+      ${caution}
     </div></div></td>
-    <td><div class="context-main">${escapeHtml(context.join(" · ") || "Context not yet established")}</div><div class="context-sub">${escapeHtml(date || "Dating missing")}</div></td>
-    <td><span class="evidence-number">${item.source_count}</span><span class="evidence-label">source${item.source_count === 1 ? "" : "s"} · ${item.appearance_count} appearance${item.appearance_count === 1 ? "" : "s"}</span><div class="context-sub">${conflicts}</div></td>
-    <td class="coverage-cell"><progress class="coverage-progress" value="${item.completeness_score}" max="10" aria-label="${item.completeness_score} of 10 core fields covered">${item.completeness_score}/10</progress><div class="coverage-caption"><span>${item.completeness_score}/10</span><span>Next: ${escapeHtml(humanize(item.next_action))}</span></div></td>
+    <td><div class="context-main">${escapeHtml(item.display_language)}</div>${item.scripts.length ? `<div class="context-sub">Script: ${escapeHtml(item.scripts[0])}</div>` : ""}</td>
+    <td><div class="context-main">${escapeHtml(item.display_date)}</div></td>
+    <td class="explore-cell"><a href="#/reading/${encodeURIComponent(item.identity_id)}">View bowl <span aria-hidden="true">→</span></a>
+      <div class="availability-labels">${flags.map(flag => `<span>${escapeHtml(flag)}</span>`).join("")}</div>
+      <div class="source-count">${item.source_count} source${item.source_count === 1 ? "" : "s"}</div></td>
   </tr>`;
+}
+
+function rememberCataloguePosition() {
+  try { sessionStorage.setItem("bowlam.catalogue.return", JSON.stringify({hash: location.hash, scroll: $("#workspace").scrollTop})); }
+  catch { /* browsing still works when storage is unavailable */ }
+}
+
+function bindReaderLinks(root = document) {
+  $$(`[data-reader-identity]`, root).forEach(node => {
+    const open = () => { rememberCataloguePosition(); location.hash = `#/reading/${encodeURIComponent(node.dataset.readerIdentity)}`; };
+    node.addEventListener("click", event => { if (!event.target.closest("a,button")) open(); else rememberCataloguePosition(); });
+    node.addEventListener("keydown", event => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); open(); }
+    });
+  });
 }
 
 async function loadIdentities() {
@@ -113,7 +133,7 @@ async function loadIdentities() {
     const data = await api(`/api/identities?${params}`);
     if (request !== state.identityRequest) return;
     state.total = data.total;
-    $("#result-count").textContent = `${data.total.toLocaleString()} matching ${data.total === 1 ? "identity" : "identities"}`;
+    $("#result-count").textContent = `${data.total.toLocaleString()} ${data.total === 1 ? "bowl" : "bowls"}`;
     $("#identity-rows").innerHTML = data.items.map(identityRow).join("");
     $("#empty-state").hidden = data.items.length !== 0;
     $("#previous-page").disabled = data.page <= 1;
@@ -123,9 +143,18 @@ async function loadIdentities() {
       optionList($("#status-filter"), data.facets.statuses);
       optionList($("#authenticity-filter"), data.facets.authenticities);
       optionList($("#type-filter"), data.facets.object_types);
+      optionList($("#collection-filter"), data.facets.collections);
+      optionList($("#language-filter"), data.facets.languages);
       $("#status-filter").dataset.ready = "true";
     }
     bindIdentityLinks();
+    bindReaderLinks();
+    try {
+      const saved = JSON.parse(sessionStorage.getItem("bowlam.catalogue.return") || "null");
+      if (saved?.hash === location.hash && Number.isFinite(saved.scroll)) {
+        requestAnimationFrame(() => { $("#workspace").scrollTop = saved.scroll; });
+      }
+    } catch { /* no restoration needed */ }
   } catch (error) {
     if (request !== state.identityRequest) return;
     $("#identity-rows").innerHTML = `<tr><td colspan="4">Records could not be loaded. Change a filter or refresh to retry.</td></tr>`;
@@ -410,7 +439,7 @@ function activateRoute() {
     }
     state.queueAction = params.get("next_action") || "";
     state.page = Math.max(1, parseInt(params.get("page"), 10) || 1);
-    $("#sort").value = params.get("sort") || "completeness_desc";
+    $("#sort").value = params.get("sort") || "explore";
     loadIdentities();
   }
   if (route === "queues" && state.stats) renderQueues();
@@ -479,7 +508,7 @@ async function initialize() {
     const [config, stats] = await Promise.all([api("/api/config"), api("/api/stats")]);
     state.csrf = config.csrf_token;
     state.stats = stats;
-    $("#identity-count").textContent = `${stats.identities.toLocaleString()} identities`;
+    $("#identity-count").textContent = `${stats.identities.toLocaleString()} bowls`;
     if (state.route === "queues") renderQueues();
     registerWebMCP();
   } catch (error) { toast(error.message); }
@@ -509,7 +538,7 @@ $("#refresh-corpus").addEventListener("click", async event => {
     state.stats = await api("/api/refresh", {
       method: "POST", headers: {"Content-Type": "application/json", "X-IBI-Token": state.csrf}, body: "{}",
     });
-    $("#identity-count").textContent = `${state.stats.identities.toLocaleString()} identities`;
+    $("#identity-count").textContent = `${state.stats.identities.toLocaleString()} bowls`;
     window.Introduction?.invalidate();
     activateRoute();
     toast("Corpus reloaded from SQLite.");
