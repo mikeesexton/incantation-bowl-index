@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const script = fs.readFileSync(path.join(__dirname, '../web/home.js'), 'utf8');
+const styles = fs.readFileSync(path.join(__dirname, '../web/home.css'), 'utf8');
 
 function controller({reduced = false, response} = {}) {
   const nodes = new Map();
@@ -69,4 +70,13 @@ test('invalidating a snapshot clears old totals before another load can fail', a
   assert.match(node('#intro-snapshot-note').textContent, /pending/);
   await intro.render();
   assert.equal(node('#intro-total').textContent, '—');
+});
+
+test('homepage motion keeps the requested narrative sequence', () => {
+  assert.match(script, /const firstYear = 750/);
+  assert.match(script, /const duration = 3200/);
+  assert.match(script, /intro-bar-\$\{index \+ 1\}/);
+  assert.doesNotMatch(styles, /g\[fill="none"\] path/);
+  assert.match(styles, /intro-map\.is-in-view \.intro-find-region \{ animation: intro-region 2\.8s/);
+  assert.match(styles, /\.intro-bar-2 \{ animation-delay: 120ms; \}/);
 });

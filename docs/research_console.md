@@ -18,11 +18,14 @@ findspot data. Historical copy is an editorial draft; the 1850 / 1853 milestones
 are researcher-supplied chronology with citations pending. No new research or
 media-rights decisions were made for this interface.
 
-The five chapters introduce the objects, rediscovery, indexed publications by
-decade, documentation coverage, and links into Explore. The sticky desktop circle
-field keeps one circle per working identity. Narrow screens stack the field and
-explanations, with buttons for comparing coverage. Reduced-motion preferences
-remove transitions and chart animation. The chart also has a text table.
+The five dark, reading-room-toned chapters introduce the objects, rediscovery,
+indexed publications by decade, documentation coverage, and links into Explore.
+The map reveals only its approximate find-region shading; the rivers remain fixed.
+Rediscovery years count forward from 750 CE, and publication bars rise in decade
+order. The sticky desktop circle field keeps one circle per working identity.
+Narrow screens stack the field and explanations, with buttons for comparing
+coverage. Reduced-motion preferences remove transitions and chart animation. The
+chart also has a text table.
 
 `GET /api/introduction` is local-only and read-only. It returns `identity_count`,
 `source_record_count`, sorted `identities` with three boolean presence flags,

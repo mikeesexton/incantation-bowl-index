@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-09 — Codex — Bowlam opening palette and motion
+
+**Claimed:** none — OPS homepage palette and animation refinements requested by the researcher
+**Corpus:** unchanged — state digest 12a0c0d20986
+**Tests:** 203 Python tests and 7 JavaScript controller tests passed; JavaScript syntax, diff-whitespace, and local HTTP checks passed.
+
+- Darkened all five opening chapters with the reading room's ink, clay, and muted teal palette, including the map, coverage panel, chart, calls to action, header, and finale.
+- Changed the map reveal to a 2.8-second directional sweep of only the approximate find-region shading; the river geometry stays fixed.
+- Replaced the independent digit reels with a slower count from 750 CE to 1850 and 1853, and made the decade bars rise in a slower left-to-right stagger.
+- Preserved immediate final values under reduced-motion preferences and documented/tested the animation contract. No corpus, rights, source, or publication changes; the console remains localhost-only.
+
 ## 2026-09-07 — Codex — Catalogue default-load resilience
 
 **Claimed:** none — OPS visitor catalogue bug report

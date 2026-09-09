@@ -12,6 +12,23 @@
   let snapshot = null, request = 0, active = "all", lastScrollStep = null, frame = 0;
   let chartObserver = null;
 
+  function animateYear(date, delay) {
+    const firstYear = 750;
+    const lastYear = Number(date.dataset.year);
+    const duration = 3200;
+    date.textContent = String(firstYear);
+    window.setTimeout(() => {
+      const started = performance.now();
+      const tick = now => {
+        const progress = Math.min(1, (now - started) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        date.textContent = String(Math.round(firstYear + (lastYear - firstYear) * eased));
+        if (progress < 1) window.requestAnimationFrame(tick);
+      };
+      window.requestAnimationFrame(tick);
+    }, delay);
+  }
+
   // Visual state is independent of the data request, including when it fails.
   function updateBrowsePosition() {
     const heroButton = find(".intro-hero .intro-button");
@@ -24,17 +41,19 @@
   }
 
   function setupMotion() {
-    if (!("IntersectionObserver" in window)) return;
-    all("[data-year]").forEach(date => {
-      date.innerHTML = [...date.dataset.year].map((digit, index) => {
-        const stop = 10 + Number(digit);
-        return `<span class="intro-digit" aria-hidden="true"><span class="intro-digit-reel" data-stop="${stop}" data-order="${index}">${Array.from({length: stop + 1}, (_, n) => `<span>${n % 10}</span>`).join("")}</span></span>`;
-      }).join("");
-    });
+    const dates = all("[data-year]");
+    if (reducedMotion.matches || !("IntersectionObserver" in window)) {
+      dates.forEach(date => { date.textContent = date.dataset.year; });
+      return;
+    }
+    dates.forEach(date => { date.textContent = "750"; });
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
         entry.target.classList.add("is-in-view");
+        if (entry.target.classList.contains("intro-milestones")) {
+          dates.forEach((date, index) => animateYear(date, index * 280));
+        }
         observer.unobserve(entry.target);
       });
     }, {threshold: .18});
@@ -116,9 +135,9 @@
       const x = left + step * index + step / 2;
       const height = row.indexed / ceiling * (baseline - top);
       const showLabel = index % Math.max(1, Math.ceil(rows.length / 9)) === 0 || index === rows.length - 1;
-      return `<g><title>${row.decade}s: ${row.indexed} indexed publications${row.incomplete ? "; current decade, incomplete" : ""}</title><rect class="intro-bar${row.incomplete ? " intro-bar-current" : ""}" x="${x - barWidth / 2}" y="${baseline - height}" width="${barWidth}" height="${height}"/>${row.indexed ? `<text x="${x}" y="${baseline - height - 9}" text-anchor="middle">${row.indexed}</text>` : ""}${showLabel ? `<text x="${x}" y="307" text-anchor="middle">${row.decade}${row.incomplete ? "*" : ""}</text>` : ""}</g>`;
+      return `<g><title>${row.decade}s: ${row.indexed} indexed publications${row.incomplete ? "; current decade, incomplete" : ""}</title><rect class="intro-bar intro-bar-${index + 1}${row.incomplete ? " intro-bar-current" : ""}" x="${x - barWidth / 2}" y="${baseline - height}" width="${barWidth}" height="${height}"/>${row.indexed ? `<text x="${x}" y="${baseline - height - 9}" text-anchor="middle">${row.indexed}</text>` : ""}${showLabel ? `<text x="${x}" y="307" text-anchor="middle">${row.decade}${row.incomplete ? "*" : ""}</text>` : ""}</g>`;
     }).join("");
-    find("#intro-chart").innerHTML = `<svg class="intro-chart-svg" viewBox="0 0 1000 330" role="img" aria-labelledby="intro-chart-title intro-chart-desc"><title id="intro-chart-title">Scholarly publications indexed, by decade</title><desc id="intro-chart-desc">${rows.map(row => `${row.decade}s: ${row.indexed}`).join("; ")}. The current decade is incomplete. Exact values are also available in the table.</desc><defs><pattern id="intro-current-decade" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#dbb9a5"/><path d="M-1 1l8 8M5-1l3 3" stroke="#9a4e34" stroke-width="2"/></pattern></defs>${grid}${bars}</svg>`;
+    find("#intro-chart").innerHTML = `<svg class="intro-chart-svg" viewBox="0 0 1000 330" role="img" aria-labelledby="intro-chart-title intro-chart-desc"><title id="intro-chart-title">Scholarly publications indexed, by decade</title><desc id="intro-chart-desc">${rows.map(row => `${row.decade}s: ${row.indexed}`).join("; ")}. The current decade is incomplete. Exact values are also available in the table.</desc><defs><pattern id="intro-current-decade" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#5d4939"/><path d="M-1 1l8 8M5-1l3 3" stroke="#d9954f" stroke-width="2"/></pattern></defs>${grid}${bars}</svg>`;
     find("#intro-chart-data").innerHTML = `<table><caption>Indexed publications; current decade marked incomplete</caption><thead><tr><th scope="col">Decade</th><th scope="col">Publications</th></tr></thead><tbody>${rows.map(row => `<tr><th scope="row">${row.decade}s${row.incomplete ? " (incomplete)" : ""}</th><td>${number(row.indexed)}</td></tr>`).join("")}</tbody></table>`;
     find("#intro-decade-note").textContent = `* ${current}s: current decade, incomplete. ${number(snapshot.scholarship.undated_count)} undated works excluded.`;
     if (!reducedMotion.matches && "IntersectionObserver" in window) {
