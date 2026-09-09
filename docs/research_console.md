@@ -20,6 +20,9 @@ media-rights decisions were made for this interface.
 
 The five dark, reading-room-toned chapters introduce the objects, rediscovery,
 indexed publications by decade, documentation coverage, and links into Explore.
+Primary headings and display numbers use the locally bundled Frank Ruhl Libre;
+interface text retains the system sans-serif stack. The bundled font is licensed
+under the SIL Open Font License in `web/fonts/frank-ruhl-libre-OFL.txt`.
 The map reveals only its approximate find-region shading; the rivers remain fixed.
 Rediscovery years count forward from 750 CE, and publication bars rise in decade
 order. The sticky desktop circle field keeps one circle per working identity.

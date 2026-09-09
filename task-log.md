@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-09 — Codex — Frank Ruhl Libre typography
+
+**Claimed:** none — OPS site typography selected by the researcher
+**Corpus:** unchanged — state digest 12a0c0d20986
+**Tests:** 203 Python tests and 8 JavaScript controller tests passed; font asset, MIME response, JavaScript, and diff-whitespace checks passed.
+
+- Applied Frank Ruhl Libre to Bowlam's shared serif token, covering the wordmark, narrative headings, historical dates, reader headings, and other display roles while preserving the existing sans-serif interface text.
+- Bundled Latin, Latin Extended, and Hebrew variable-font subsets locally with the SIL Open Font License, avoiding an external runtime font dependency and retaining Hebrew-script coverage.
+- Added a regression check for the chosen typeface and confirmed the localhost server returns the font with the correct WOFF2 media type. No corpus, source, rights, or publication changes.
+
 ## 2026-09-09 — Codex — Bowlam opening palette and motion
 
 **Claimed:** none — OPS homepage palette and animation refinements requested by the researcher

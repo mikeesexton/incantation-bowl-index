@@ -80,3 +80,10 @@ test('homepage motion keeps the requested narrative sequence', () => {
   assert.match(styles, /intro-map\.is-in-view \.intro-find-region \{ animation: intro-region 2\.8s/);
   assert.match(styles, /\.intro-bar-2 \{ animation-delay: 120ms; \}/);
 });
+
+test('the selected primary typeface is self-hosted and assigned to serif roles', () => {
+  const globalStyles = fs.readFileSync(path.join(__dirname, '../web/styles.css'), 'utf8');
+  assert.match(globalStyles, /font-family: "Frank Ruhl Libre"/);
+  assert.match(globalStyles, /--serif: "Frank Ruhl Libre"/);
+  assert.match(globalStyles, /frank-ruhl-libre-latin\.woff2/);
+});
