@@ -9,6 +9,8 @@ from .proofreading import current_text_reviews
 from .publications import publication_coverage
 from .rights import rights_metrics
 from .concordance import current_concordance_reviews
+from .scholarship import scholarship_metrics
+from .acquisitions import acquisition_metrics
 
 
 STATUS_LABELS = {
@@ -51,6 +53,8 @@ def roadmap_metrics(conn):
     return {
         **rights_metrics(conn),
         **publication_coverage(conn),
+        **scholarship_metrics(conn),
+        **acquisition_metrics(conn),
         "checked_reading_texts": sum(r["status"] == "reading_text_checked" for r in current_text_reviews(conn).values()),
         "confirmed_penn_concordances": sum(r['status'] == 'confirmed' for r in current_concordance_reviews(conn).values()),
         "relationship_assertions": conn.execute(
@@ -193,6 +197,68 @@ def write_roadmap(conn, config_path, destination):
     if portfolio.get("blockers"):
         lines.extend(["### What prevents release readiness", ""])
         lines.extend("- " + item for item in portfolio["blockers"])
+        lines.append("")
+
+    access_layers = config.get("access_layers", {})
+    layers = access_layers.get("layers", [])
+    if layers:
+        lines.extend([
+            "## Access and commercialization layers",
+            "",
+            access_layers.get(
+                "policy",
+                "Private possession, public release, and paid access are separate decisions.",
+            ),
+            "",
+            "| Layer | Status | Audience | Content boundary | Next gate |",
+            "|---|---|---|---|---|",
+        ])
+        for layer in layers:
+            lines.append("| %s | %s | %s | %s | %s |" % (
+                layer["title"], layer["status"].replace("_", " ").title(),
+                layer["audience"], layer["content_boundary"], layer["next_gate"],
+            ))
+        if access_layers.get("rules"):
+            lines.extend(["", "Promotion rules:", ""])
+            lines.extend("- " + rule for rule in access_layers["rules"])
+        lines.append("")
+
+    scale = config.get("scholarship_collection_scale", {})
+    bands = scale.get("bands", [])
+    if bands:
+        held = metrics["works_with_a_held_document"]
+        lines.extend([
+            "## Scholarship collection scale",
+            "",
+            scale.get(
+                "note",
+                "Counts are planning ranges; completeness also requires a defensible denominator.",
+            ),
+            "",
+            "Current evidence: **%s scholarship works indexed; %s with a source-linked held "
+            "document; %s with a classified scope; %s awaiting scope.** The project also has "
+            "**%s source-linked PDF captures** across all source types; a PDF can still be an "
+            "excerpt or front matter rather than a complete work." % (
+                metrics["works"], held, metrics["works_with_a_scope"],
+                metrics["works_awaiting_scope"], metrics["sources_with_pdf_captures"],
+            ),
+            "",
+            "| Band | Complete or inspected core works | Additional from current holdings | What must also be true |",
+            "|---|---:|---:|---|",
+        ])
+        for band in bands:
+            minimum = band["minimum_core_works"]
+            maximum = band.get("maximum_core_works")
+            target = "%s–%s" % (minimum, maximum) if maximum else "%s+" % minimum
+            additional_min = max(0, minimum - held)
+            additional_max = max(0, maximum - held) if maximum else None
+            additional = (
+                "%s–%s" % (additional_min, additional_max)
+                if additional_max is not None else "%s+" % additional_min
+            )
+            lines.append("| %s | %s | %s | %s |" % (
+                band["title"], target, additional, band["quality_gate"],
+            ))
         lines.append("")
     lines.extend([
         "## Current scope snapshot",

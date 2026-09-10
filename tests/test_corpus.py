@@ -513,6 +513,22 @@ class CorpusTests(unittest.TestCase):
                     "owner": "Test", "done_when": "The test passes.", "evidence": "It did."
                 }],
             }],
+            "access_layers": {
+                "policy": "Keep access layers separate.",
+                "rules": ["No automatic promotion."],
+                "layers": [{
+                    "title": "1. Private research vault", "status": "active",
+                    "audience": "Researcher only", "content_boundary": "Private evidence",
+                    "next_gate": "Record provenance",
+                }],
+            },
+            "scholarship_collection_scale": {
+                "note": "Counts need quality gates.",
+                "bands": [{
+                    "title": "Strong foundation", "minimum_core_works": 15,
+                    "maximum_core_works": 30, "quality_gate": "Core works checked",
+                }],
+            },
             "handoff_gate": {
                 "target_date": "2026-09-22",
                 "metric_conditions": [{
@@ -549,6 +565,10 @@ class CorpusTests(unittest.TestCase):
         rendered = destination.read_text(encoding="utf-8")
         self.assertIn("| Roadmap tasks | 1 done · 0 in progress · 0 queued · 0 blocked |", rendered)
         self.assertIn("| Candidate source records | 1 |", rendered)
+        self.assertIn("## Access and commercialization layers", rendered)
+        self.assertIn("1. Private research vault", rendered)
+        self.assertIn("## Scholarship collection scale", rendered)
+        self.assertIn("| Strong foundation | 15–30 | 15–30 | Core works checked |", rendered)
         self.assertIn("## Offline research queue", rendered)
         self.assertIn("[75015949](https://lccn.loc.gov/75015949)", rendered)
         self.assertIn("`PJ5208.A5 I8 1975`", rendered)

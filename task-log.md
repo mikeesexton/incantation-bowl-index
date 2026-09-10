@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-09 — Codex — Three-layer access roadmap
+
+**Claimed:** ACCESS-001, ACCESS-002, ACCESS-003, ACCESS-006, SCHOL-005
+**Corpus:** unchanged — state digest 7aa85d83f9a5
+**Tests:** 203 passed; roadmap generation, JSON parsing, and diff-whitespace checks passed.
+
+- Added separate private-research, maximal factual public-reference, and optional paid licensed-service layers to the living maturity model, project rules, licensing guidance, and generated roadmap. Each layer now has a content boundary, next gate, and non-automatic promotion rules.
+- Added live scholarship-holdings metrics and provisional collection bands: 15–30 inspected core works for a strong foundation, 50–75 for a visibly impressive collection, and 150–200 plus a defensible multilingual denominator and expert gap review for expert-comprehensive status. Current holdings are 14 source-linked scholarship documents among 199 indexed works.
+- Queued pre-Library safeguards: a document completeness/transformation ledger; a private Unicode rich-text package with page anchors; encrypted local and off-device backup; per-item copying-permission notes; and a public-projection audit. Added later gates for rights-chain registration, customer discovery, contracts, access controls, royalty accounting, and takedown procedures.
+- Refreshed stale current-state prose to 844 sources, 1,591 candidates, 26 source-linked captures, 37 classified scholarship works and 162 awaiting scope. No source content, rights decision, public release, or commercial offering was created.
+
+---
+
 ## 2026-09-09 — Codex — Researcher-supplied scholarship PDFs
 
 **Claimed:** SCHOL-005, SCHOL-006

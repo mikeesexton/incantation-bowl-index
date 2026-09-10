@@ -33,6 +33,28 @@ These are the original project rules and they take precedence over convenience.
   exports only.
 - Use UTC ISO 8601 timestamps and stable `IBI-*` identifiers.
 
+### Three access layers
+
+The project maintains three separate surfaces. A record never moves from one to
+another merely because it has been digitized, because access is free, or because
+access is paid.
+
+| Layer | May contain | Gate |
+|---|---|---|
+| **Private research vault** | Lawfully obtained source scans, working OCR and rich text, research notes, page-image coordinates, and protected scholarly expression needed for personal analysis | Record provenance, content hash, completeness, access restrictions, and any library copying conditions; keep local, encrypted, backed up, and outside Git |
+| **General public reference** | Bowl facts, citations, relationships, project-authored summaries, public-domain material, compatible open-license material, and specifically permitted content | Evidence-bound public-release decision; private captures and unapproved text or images fail closed |
+| **Paid licensed service** | Research tools plus public-domain, compatible open-license, project-authored, or contractually licensed material | Documented rights chain and executed license for the actual text, transcription, translation, image, territory, term, display/export behavior, and revenue arrangement |
+
+Private possession does not authorize public distribution. Free public access
+does not make protected expression reusable. Charging does not cure missing
+permission. A private record may remain private permanently while its factual
+claims and bibliographic pointer appear in the public reference.
+
+For Library of Congress work, record what staff permitted for each item and
+visit. Do not treat onsite access as permission to scan a complete work, and do
+not treat permission to make a personal research copy as permission to publish
+or license it.
+
 ### What a source can and cannot verify
 
 A publisher page, repository record, or museum catalogue entry can verify a

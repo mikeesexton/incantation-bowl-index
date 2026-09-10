@@ -89,3 +89,29 @@ publish the pointer. See [`project-rules.md`](project-rules.md) → *Publishing 
 what belongs to whom*.
 
 None of this is legal advice.
+
+## Product and access model
+
+Payment is not the boundary. A rights-cleared service may use subscriptions,
+institutional licences, grants, sponsorship, or no charge at all. The boundary is
+whether this project owns or has permission to distribute the content exposed to
+that audience.
+
+The private vault may therefore be richer than either outward-facing product. It
+can preserve a lawfully obtained scan, working OCR and a structured research
+transcription while the public reference exposes only facts, citations and an
+original summary. If a rights holder later grants a commercial licence, the paid
+service may expose the licensed fields without copying the whole private record
+or weakening the public export gate.
+
+Commercial planning must identify rights at the contribution level. A book-level
+agreement may not cover a chapter author's translation, a museum's bowl image, a
+photographer's plate, or a third party's drawing. The commercial register must
+therefore record rights holder, authority, territory, term, permitted uses,
+display and export limits, attribution, royalty or fee, reporting, termination,
+takedown and security obligations before launch.
+
+Monetizable project-authored value includes concordances, claim histories,
+cross-publication search, rights-safe structured facts, original summaries,
+research workflows, saved workspaces, exports and APIs. Full protected text is an
+optional licensed input to that service, not the service's only value proposition.
