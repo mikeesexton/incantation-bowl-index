@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-09 — Codex — Researcher-supplied scholarship PDFs
+
+**Claimed:** SCHOL-005, SCHOL-006
+**Corpus:** changed (one scholarship source, two linked captures, three source-scope reviews) — state digest 7aa85d83f9a5
+**Tests:** 203 passed; archive hashes valid; source and scope manifests replay idempotently; JSON/JSONL and diff-whitespace checks passed.
+
+- Checked all four researcher-supplied PDFs by SHA-256, extracted text and rendered-page inspection. Ford–Morgenstern's 30-page MRLA 8 front matter (`3bbe7fbc...`) and Ford–Abudraham's complete 2018 chapter (`123bcea3...`) exactly match files already in the private archive, so no duplicate captures were created.
+- Added James Nathan Ford's complete 2002 JSAI review, *Notes on the Mandaic Incantation Bowls in the British Museum*, as a new scholarship source and copyrighted private capture (`86cbcd17...`). It is a high-value linguistic study supplying bowl-by-bowl corrections to Segal's Mandaic readings.
+- Linked Edward M. Cook's complete 1992 Khafaje single-bowl edition to its existing source record as a copyrighted private capture (`1e5a426a...`). Recorded evidence-bound scope reviews for Ford 2002, Cook 1992, and Ford–Abudraham 2018; the Ford–Morgenstern catalogue already receives its catalogue scope from the publication registry.
+- Regenerated the roadmap, acquisition, enrichment and campaign reports. The corpus now has 844 sources, 26 source-linked captures (15 PDFs), 199 scholarship works, 37 classified scopes and 162 unclassified works.
+- No transcriptions, translations, images, bowl claims, identities, rights approvals, or public release were added. Object-level extraction from Cook, Ford–Abudraham and Ford's Segal corrections is valuable follow-up work, but remains a separate review batch.
+
+---
+
 ## 2026-09-09 — Codex — Frank Ruhl Libre typography
 
 **Claimed:** none — OPS site typography selected by the researcher

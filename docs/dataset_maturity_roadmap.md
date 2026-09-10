@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-07T03:02:40+00:00`
+Generated: `2026-09-10T02:07:39+00:00`
 
 ## Portfolio status
 
@@ -42,7 +42,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Candidate source records | 1591 |
 | Working physical identity hypotheses (all statuses) | 1323 |
 | Source appearances | 1635 |
-| Sources | 843 |
+| Sources | 844 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 217 |
 | Triaged claim-field differences | 52/372 |

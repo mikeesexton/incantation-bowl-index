@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-10T02:06:12Z",
+  "batch": "Classify complete researcher-supplied scholarship PDFs after visual and extracted-text inspection",
+  "policy": "These are document-scope judgments only. They do not endorse readings, make identity decisions, approve text or image reuse, or imply that object-level extraction is complete.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-FORD-MANDAIC-NOTES-2002",
+      "source_id": "SRC-86CBCD17FECC",
+      "scope": "linguistic_study",
+      "basis": "Complete researcher-supplied article, JSAI 26 (2002), printed pp. 237–272, archive SHA-256 86cbcd17fecce.... Ford assesses Segal's Mandaic section and supplies philological comments, corrected readings and revised translations across numerous catalogued bowls. It is a critical linguistic study rather than a standalone collection catalogue or a complete replacement edition."
+    },
+    {
+      "review_id": "IBI-SCOPE-COOK-KHAFAJE-1992",
+      "source_id": "SRC-FF4308945F0F",
+      "scope": "single_object_edition",
+      "basis": "Complete researcher-supplied three-page article, BASOR 285 (1992), printed pp. 79–81, archive SHA-256 1e5a426aa7bf.... Cook publishes Oriental Institute bowl A17877 with photograph, physical description, Jewish Babylonian Aramaic text, translation and line commentary."
+    },
+    {
+      "review_id": "IBI-SCOPE-FORD-ABUDRAHAM-2018",
+      "source_id": "SRC-513E8FD6E55D",
+      "scope": "corpus_edition",
+      "basis": "Complete researcher-supplied chapter, Finds Gone Astray (2018), printed pp. 75–111, archive SHA-256 123bcea3b022.... The chapter separately publishes six Syriac and two Mandaic confiscated bowls with photographs, transcriptions, translations and commentary, and inventories four additional pseudo-script bowls."
+    }
+  ]
+}
