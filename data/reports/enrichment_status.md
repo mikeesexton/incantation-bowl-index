@@ -2,41 +2,41 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1325**
+- Working physical identity hypotheses (all statuses): **1442**
 - Multi-record identity clusters: **173**
-- Underlying source records (all identities): **1593**
+- Underlying source records (all identities): **1710**
 - Pending dedupe decisions: **0**
 
 ## Identity-level coverage
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 913 | 68.9% |
-| Provenance | 327 | 24.7% |
-| Dating | 482 | 36.4% |
-| Dimensions | 383 | 28.9% |
-| Material | 408 | 30.8% |
-| Language | 666 | 50.3% |
-| Script | 93 | 7.0% |
+| Location | 1047 | 72.6% |
+| Provenance | 332 | 23.0% |
+| Dating | 482 | 33.4% |
+| Dimensions | 383 | 26.6% |
+| Material | 408 | 28.3% |
+| Language | 830 | 57.6% |
+| Script | 93 | 6.4% |
 | Text Edition | 1 | 0.1% |
-| Translation | 48 | 3.6% |
-| Image | 326 | 24.6% |
+| Translation | 48 | 3.3% |
+| Image | 326 | 22.6% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 499 |
-| 3–5 of 10 | 715 |
-| 6–8 of 10 | 110 |
+| 0–2 of 10 | 616 |
+| 3–5 of 10 | 714 |
+| 6–8 of 10 | 111 |
 | 9–10 of 10 | 1 |
 
 ## Next-action queue
 
 | Next action | Identities |
 |---|---:|
-| Location | 412 |
-| Provenance | 643 |
+| Location | 395 |
+| Provenance | 777 |
 | Dating | 55 |
 | Dimensions | 139 |
 | Material | 23 |
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**219** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **15** substantive instances. **326** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**281** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **15** substantive instances. **396** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

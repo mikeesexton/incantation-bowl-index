@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "77081d22b1851a075e4a762f7871926c867405288de57abdcb66eeec4a57aca5",
+  "corpus_digest": "74dda51021f345f8dedffcce8d5cde963731a77f296058cc004cc63142302100",
   "migrations": 14,
-  "note": "Archived complete Mehqarim be-Lashon 20; completed Davidovitz 41 enrichment; added Abudraham Miami bowl re-edition, Hilprecht 40c comparandum, and Morgenstern linguistic study.",
-  "recorded_at": "2026-09-11T12:09:11+00:00",
+  "note": "Archived and indexed four complete Brill corpus editions: 236 source appearances, 117 new candidates, four source corrections, four scope reviews, and four resolved access leads; protected text and images retained privately.",
+  "recorded_at": "2026-09-11T16:57:52+00:00",
   "recorded_by": "Codex",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "cb51085620f06e1df036de2489bbbbf05440705e42cc9f5291c0948d00029925",
-      "rows": 1639
+      "digest": "a6f9260550cafeb3a8abba48177c75b0ec23ae8ca9fcf0ddf9ad55b16d17b213",
+      "rows": 1875
     },
     "appearances": {
-      "digest": "fbbf036e537919e4848e8488b616f0979d83f59d81fadc65d2dea19b7178ef10",
-      "rows": 1639
+      "digest": "53916c419cd8494a707ae331bcb53a36b4efd4150312a81a2f4549031a8a8295",
+      "rows": 1875
     },
     "captures": {
-      "digest": "72c0d3635c9981cb40c00dffdf5f3cd98bbdb7e92d1ba2adc58b6445dc1ca69f",
-      "rows": 32
+      "digest": "253b338958cec9ecf2a2d89c2ebb3c5fc2a20c011145a38cd39070f2ef27c33b",
+      "rows": 36
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "a18e6ccce8cccd46c2ac18e2517eb93eb4e50ae8242aabbd130dfd2759414a3a",
-      "rows": 5105
+      "digest": "d123190c96c891f5b971f054fdc3be31bf3a0f020c12570ebe1fca0d89014ecf",
+      "rows": 5809
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -55,11 +55,11 @@
       "rows": 212
     },
     "identifiers": {
-      "digest": "d99f0bb61c3cc9d025f15131ca34af66c306f56d5846c02ce408c9d115e9131b",
-      "rows": 3613
+      "digest": "cd2f7bc631ef0782549fd6a6ec06d72af0557e681476ade3476d4376e6280c33",
+      "rows": 4132
     },
     "leads": {
-      "digest": "c159c90ac14e82efaa2732cf72b201eaf9817c39700ea3147b3bb932d4c4b0ef",
+      "digest": "c7cd708af5ae2297d34f0a9b4e3b0075c154e6e992544774042a7b9552896a4f",
       "rows": 59
     },
     "manual_audits": {
@@ -87,8 +87,8 @@
       "rows": 5
     },
     "objects": {
-      "digest": "166cf812beb54bbe4e672a2c97fb5764a5cf4dd66187ae37fae38be9012cd44d",
-      "rows": 1593
+      "digest": "2d1dac5a7e6d7a14e92cb9ca7c68a7c1c415b1baa66f0235cef6a3faa385fdb7",
+      "rows": 1710
     },
     "publication_registry": {
       "digest": "ba341ad2b397b734a0df3d418a09d597f18fa5145e7adf3d385ea77c235c9992",
@@ -111,15 +111,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "bc2994552fd0d0dfeff616c87311e1b9e4a4e3d5170e67a4a2e724ed023c4106",
-      "rows": 5
+      "digest": "87dff57de8204f2502a04ffeeeb14a918915ae2dbffa3e0f88150666c6a908e8",
+      "rows": 9
     },
     "source_scope_reviews": {
-      "digest": "c58393bdffb371b5f44af70651ae9fed92e7de1674ed679883978de73fc1ea51",
-      "rows": 14
+      "digest": "fd679a3ce07846ebe8bd46a76aa0596ff2aa1f55b0154b1ee6b85f9daf9e8aa5",
+      "rows": 18
     },
     "sources": {
-      "digest": "759894c97ed6ec8b184bc9346ae4deef0b41de31ef4db190dfd34ecdc667e1dd",
+      "digest": "83714d507a489598b5d320338d2eaa657284d72e72341da4afcbb5750012a2e2",
       "rows": 846
     },
     "text_proofreading_reviews": {

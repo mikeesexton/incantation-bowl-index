@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T15:58:00Z",
+  "batch": "Classify four complete researcher-supplied Brill corpus editions",
+  "policy": "These are document-scope judgments based on complete-volume inspection. They do not endorse individual readings, make identity decisions, or approve public reuse of copyrighted text or images.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-ABS1-2013-FULL",
+      "source_id": "SRC-7FBBB775E502",
+      "scope": "corpus_edition",
+      "basis": "Complete researcher-supplied volume, archive SHA-256 39a876337301.... It publishes JBA 1-64 as full editions with object descriptions, transcriptions, translations, commentary, photographs, and indexes."
+    },
+    {
+      "review_id": "IBI-SCOPE-ABS2-2022-FULL",
+      "source_id": "SRC-8C611BF93288",
+      "scope": "corpus_edition",
+      "basis": "Complete researcher-supplied volume, archive SHA-256 e15f96f25da9.... It publishes JBA 65-119 as full editions with object descriptions, transcriptions, translations, commentary, photographs, and indexes."
+    },
+    {
+      "review_id": "IBI-SCOPE-MORIGGI2014-FULL",
+      "source_id": "SRC-3C4294DDB367",
+      "scope": "corpus_edition",
+      "basis": "Complete researcher-supplied volume, archive SHA-256 ce32170d182d.... It systematically re-edits 49 previously published Syriac incantation bowls and includes descriptions, transcriptions, translations, commentary, photographs or facsimiles, and indexes."
+    },
+    {
+      "review_id": "IBI-SCOPE-MRLA8-2020-FULL",
+      "source_id": "SRC-8A145FAA2EBB",
+      "scope": "catalogue",
+      "basis": "Complete researcher-supplied volume, archive SHA-256 23431f46510c.... It catalogues the Frau Professor Hilprecht Collection: forty legible Aramaic bowl texts receive full editions and the remaining fragmentary, non-Aramaic, pseudoscript, uninscribed, or non-bowl material receives descriptions and photographs."
+    }
+  ]
+}

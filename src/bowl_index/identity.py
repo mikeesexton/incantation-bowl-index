@@ -35,6 +35,7 @@ CONTENT_COVERAGE = {
     "text_form": {"line_count", "inscription_extent", "text_layout", "inscription_placement"},
     "text_description": {
         "text_content", "text_feature", "textual_feature", "text_characterization",
+        "catalogue_classification",
     },
     "client": {"client", "clients", "client_or_beneficiary"},
     "target": {"target", "targets"},

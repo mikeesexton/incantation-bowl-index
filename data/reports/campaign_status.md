@@ -1,22 +1,22 @@
 # Discovery campaign status
 
-Generated: `2026-09-11T12:08:55+00:00`
+Generated: `2026-09-11T16:56:39+00:00`
 
 ## Corpus
 
-- Candidate objects: **1593**
+- Candidate objects: **1710**
 - Unclassified claim fields: **[]**
-- Estimated distinct objects after resolved dedupe: **1325**
+- Estimated distinct objects after resolved dedupe: **1442**
 - Resolved duplicate records: **268**
-- Probable or confirmed: **875**
-- Source appearances: **1639**
+- Probable or confirmed: **982**
+- Source appearances: **1875**
 - Sources: **846**
 - Dedupe clusters pending: **0**
 - Objects with text: **195**
 - Objects with translation: **49**
 - Objects with provenance: **163**
 - Objects with current location: **793**
-- Open leads: **19**
+- Open leads: **15**
 - Planned queries: **0**
 - Searched queries: **321**
 - Coverage targets remaining: **0**
@@ -63,9 +63,9 @@ Generated: `2026-09-11T12:08:55+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 669 |
-| unknown | 121 |
-| partial | 51 |
+| available | 673 |
+| unknown | 118 |
+| partial | 50 |
 | paywalled | 3 |
 | blocked | 1 |
 | offline | 1 |
@@ -74,16 +74,18 @@ Generated: `2026-09-11T12:08:55+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1025 |
+| object type | whole_bowl | 1137 |
 | object type | uncertain | 295 |
-| object type | fragment | 259 |
+| object type | fragment | 263 |
 | object type | lost_or_unlocated | 14 |
-| record status | candidate | 718 |
-| record status | probable | 602 |
+| object type | non_bowl | 1 |
+| record status | candidate | 726 |
+| record status | probable | 709 |
 | record status | confirmed | 273 |
-| authenticity | unassessed | 1103 |
+| record status | rejected | 2 |
+| authenticity | unassessed | 1214 |
 | authenticity | accepted | 441 |
-| authenticity | pseudo_script | 44 |
+| authenticity | pseudo_script | 50 |
 | authenticity | uncertain | 3 |
 | authenticity | disputed | 1 |
 | authenticity | suspected_fake | 1 |
@@ -130,7 +132,6 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | Status | Priority | Lead |
 |---|---:|---|
 | blocked | 1 | BM 117882 / Segal 119ES: inspect the full catalogue entry to assess the uncertain Syriac? classification against existing museum descriptions of Syriac. The apparent 117ES/119ES locator mismatch has been resolved as an importer defect; identity links remain unchanged. |
-| open | 1 | Obtain an authorized complete copy of Shaked, Ford and Bhayro 2013, Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls Volume One, for the Ford 2014 specialist-comparison queue. |
 | in_progress | 1 | Investigate Penn B2963 / Montgomery 3 Date Made: ca. 200 BCE. The value is preserved as a museum-reported claim, not accepted as a corrected chronology. Check primary catalogue dating and later scholarship; do not infer a replacement date. |
 | in_progress | 1 | Reconcile Penn B9010 / Montgomery 9 Inscription Language: Hebrew Language with the edition-based Jewish Babylonian Aramaic claim. Determine whether the catalogue field reflects historical terminology, a script/language confusion or an error; preserve both assertions pending review. |
 | in_progress | 1 | Reconcile Penn B9008 / Montgomery 31 Inscription Language: Hebrew Language with the existing Syriac attribution. The museum description also says Proto-Manichean. Distinguish language from script and catalogue terminology; retain disagreement. |
@@ -146,10 +147,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | open | 2 | Review whether provisional Davidovitz 27 (IBI-FORD2014-DAV27) has another source appearance under a different designation, including the existing Davidovitz popularity-and-success bowl IBI-6A5B95130C25. |
 | open | 2 | Review Ford 2014 proposed readings and interpretations against the 2013 edition and relevant photographs, using the 14-discussion index; preserve differences as attributed evidence. |
 | open | 2 | Obtain authorized access to Isbell 1975, Corpus of the Aramaic Incantation Bowls, for page-level edition checks. |
-| open | 2 | Consult Shaked, Ford and Bhayro, Aramaic Bowl Spells, Volume Two through the Library of Congress for object-level edition indexing. |
 | open | 2 | Investigate Montgomery 1913 appendix no. 42: locate Gottheil's original notes or later scholarship assessing whether the unlocated original was a bowl or another amulet. Do not assign a Nippur findspot, ancient date, CBS number or physical identity from the main forty-bowl corpus. |
-| open | 2 | Consult Marco Moriggi, A Corpus of Syriac Incantation Bowls (2014), through the Library of Congress for object-level edition indexing. |
-| open | 2 | Consult Ford and Morgenstern, Aramaic Incantation Bowls in Museum Collections, Volume One, through the Library of Congress for object-level edition indexing. |
 | open | 2 | Consult the 1998 third edition of Naveh and Shaked, Amulets and Magic Bowls, through the Library of Congress for object-level edition indexing. |
 | open | 2 | Two source records describe the same article: SRC-69C22D670211 (2005) and SRC-A84A167A5779 (2006). Archiv fuer Orientforschung 51 is a 2005/2006 volume, which explains the split. Reconcile to one record with the correct year and page range, keeping both citations in history. |
 | open | 2 | Consult Müller-Kessler 2005, TMH 7, through the Library of Congress for object-level edition indexing. |

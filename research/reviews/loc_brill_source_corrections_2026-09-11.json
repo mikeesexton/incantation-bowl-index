@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T15:57:00Z",
+  "evidence_path": "research/reviews/loc_brill_corpus_editions_evidence_2026-09-11.json",
+  "evidence_sha256": "e3d3173ebafb0cd7a49f50e3e39e99edebbe0d69c0696e8a1a2fccbfd0d22329",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-ABS1-FULL-EDITION",
+      "source_id": "SRC-7FBBB775E502",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied volume verifies the full title and subtitle, series, publisher, both ISBNs, 2013 imprint, complete availability, copyrighted status, and object-level scope. It replaces provisional Crossref-only metadata without changing the source identity or DOI.",
+      "before": {
+        "source_type": "book",
+        "title": "Aramaic Bowl Spells",
+        "authors": "Shaul Shaked; James Nathan Ford; Siam Bhayro",
+        "issued_year": 2013,
+        "container_title": null,
+        "publisher": "BRILL",
+        "url": "https://doi.org/10.1163/9789004229372",
+        "doi": "10.1163/9789004229372",
+        "isbn": null,
+        "citation": "Aramaic Bowl Spells (2013). Crossref DOI 10.1163/9789004229372.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad Crossref metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One",
+        "authors": "Shaul Shaked; James Nathan Ford; Siam Bhayro",
+        "issued_year": 2013,
+        "container_title": "Magical and Religious Literature of Late Antiquity 1; Manuscripts in the Schøyen Collection 20",
+        "publisher": "Brill",
+        "url": "https://doi.org/10.1163/9789004229372",
+        "doi": "10.1163/9789004229372",
+        "isbn": "978-90-04-20394-5; 978-90-04-22937-2",
+        "citation": "Shaked, Shaul, James Nathan Ford, and Siam Bhayro. Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One. Magical and Religious Literature of Late Antiquity 1; Manuscripts in the Schøyen Collection 20. Leiden and Boston: Brill, 2013.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete 396-page researcher-supplied edition held in the private archive, SHA-256 39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c. It publishes JBA 1-64 with descriptions, transcriptions, translations, commentary, photographs, and indexes. Copyrighted text and images are not cleared for public release."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-ABS2-FULL-EDITION",
+      "source_id": "SRC-8C611BF93288",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied volume verifies the full title and subtitle, series, 2022 publication year, publisher, both ISBNs, complete availability, copyrighted status, and object-level scope. It corrects the provisional OpenAlex year and incomplete citation without changing the source identity or DOI.",
+      "before": {
+        "source_type": "book",
+        "title": "Aramaic Bowl Spells",
+        "authors": "Shaul Shaked; James Nathan Ford; Siam Bhayro",
+        "issued_year": 2021,
+        "container_title": null,
+        "publisher": "BRILL",
+        "url": "https://doi.org/10.1163/9789004471719",
+        "doi": "10.1163/9789004471719",
+        "isbn": null,
+        "citation": "Aramaic Bowl Spells (2021). OpenAlex W4200029842.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad OpenAlex metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two",
+        "authors": "Shaul Shaked; James Nathan Ford; Siam Bhayro",
+        "issued_year": 2022,
+        "container_title": "Magical and Religious Literature of Late Antiquity 10; Manuscripts in the Schøyen Collection 41",
+        "publisher": "Brill",
+        "url": "https://doi.org/10.1163/9789004471719",
+        "doi": "10.1163/9789004471719",
+        "isbn": "978-90-04-47170-2; 978-90-04-47171-9",
+        "citation": "Shaked, Shaul, James Nathan Ford, and Siam Bhayro. Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two. Magical and Religious Literature of Late Antiquity 10; Manuscripts in the Schøyen Collection 41. Leiden and Boston: Brill, 2022.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete 334-page researcher-supplied edition held in the private archive, SHA-256 e15f96f25da902065ea972aacb441034f99ca08fbdcdff73be5b11cc80fc3b00. It publishes JBA 65-119 with descriptions, transcriptions, translations, commentary, photographs, and indexes. Copyrighted text and images are not cleared for public release."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-MORIGGI2014-FULL-EDITION",
+      "source_id": "SRC-3C4294DDB367",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied volume verifies the subtitle, series, publisher, both ISBNs, complete availability, copyrighted status, and its 49-object re-edition scope. It replaces provisional Crossref-only metadata without changing the source identity or DOI.",
+      "before": {
+        "source_type": "book",
+        "title": "A Corpus of Syriac Incantation Bowls",
+        "authors": "Marco Moriggi",
+        "issued_year": 2014,
+        "container_title": null,
+        "publisher": "BRILL",
+        "url": "https://doi.org/10.1163/9789004272798",
+        "doi": "10.1163/9789004272798",
+        "isbn": null,
+        "citation": "A Corpus of Syriac Incantation Bowls (2014). Crossref DOI 10.1163/9789004272798.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad Crossref metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia",
+        "authors": "Marco Moriggi",
+        "issued_year": 2014,
+        "container_title": "Magical and Religious Literature of Late Antiquity 3",
+        "publisher": "Brill",
+        "url": "https://doi.org/10.1163/9789004272798",
+        "doi": "10.1163/9789004272798",
+        "isbn": "978-90-04-27280-4; 978-90-04-27279-8",
+        "citation": "Moriggi, Marco. A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia. Magical and Religious Literature of Late Antiquity 3. Leiden and Boston: Brill, 2014.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete 296-page researcher-supplied edition held in the private archive, SHA-256 ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035. It systematically re-edits 49 published Syriac bowls with descriptions, transcriptions, translations, commentary, photographs or facsimiles, and indexes. Copyrighted text and images are not cleared for public release."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-MRLA8-FULL-EDITION",
+      "source_id": "SRC-8A145FAA2EBB",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied volume verifies the 2020 imprint, e-book ISBN and DOI, complete availability, copyrighted status, and full catalogue scope. It supersedes the earlier front-matter-only access note and corrects the provisional 2019 year while retaining the same work identity.",
+      "before": {
+        "source_type": "catalogue",
+        "title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+        "authors": "James Nathan Ford; Matthew Morgenstern",
+        "issued_year": 2019,
+        "container_title": "Magical and Religious Literature of Late Antiquity 8",
+        "publisher": "Brill",
+        "url": null,
+        "doi": null,
+        "isbn": "978-90-04-37700-4",
+        "citation": "Ford, James Nathan, and Matthew Morgenstern. Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena. Magical and Religious Literature of Late Antiquity 8. Leiden: Brill, 2019.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Series number MRLA 8 confirmed from the volume's own imprint and cover: 'magical and religious literature of late antiquity 8', ISSN 2211-016X volume 8, series editors Shaked and Bhayro, ISBN 978-90-04-37700-4, LCCN 2019026750. Front matter held privately by content hash (researcher deposit, 2026-09-05); the editions themselves are not held. The volume reports forty bowls in Jewish, Manichaean Syriac or Mandaic scripts and some twenty-five further objects in Pahlavi or pseudoscripts, with new editions from high-resolution photographs."
+      },
+      "after": {
+        "source_type": "catalogue",
+        "title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+        "authors": "James Nathan Ford; Matthew Morgenstern",
+        "issued_year": 2020,
+        "container_title": "Magical and Religious Literature of Late Antiquity 8",
+        "publisher": "Brill",
+        "url": "https://doi.org/10.1163/9789004411838",
+        "doi": "10.1163/9789004411838",
+        "isbn": "978-90-04-37700-4; 978-90-04-41183-8",
+        "citation": "Ford, James Nathan, and Matthew Morgenstern. Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena. Magical and Religious Literature of Late Antiquity 8. Leiden and Boston: Brill, 2020.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete 335-page researcher-supplied catalogue held in the private archive, SHA-256 23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4. Entries 1-40 edit legible Aramaic bowl texts; entries 41-69 describe the remaining fragmentary, non-Aramaic, pseudoscript, uninscribed, or non-bowl material. Copyrighted text and images are not cleared for public release."
+      }
+    }
+  ]
+}

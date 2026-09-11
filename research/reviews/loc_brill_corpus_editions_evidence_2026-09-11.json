@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T15:55:00Z",
+  "batch": "Four complete Brill corpus editions supplied by the researcher while consulting Library of Congress holdings",
+  "policy": "The PDFs are retained only in the private content-addressed archive. This evidence record and the public-facing corpus store bibliographic facts, catalogue structure, object identifiers, source locators, and conservative source-attributed classifications; they do not reproduce the copyrighted transcriptions, translations, commentary, or photographs and do not authorize public reuse.",
+  "documents": [
+    {
+      "source_id": "SRC-7FBBB775E502",
+      "supplied_filename": "9789004229372-20045.pdf",
+      "sha256": "39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+      "byte_length": 9131206,
+      "pdf_pages": 396,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title/imprint, contents, a representative edition page, and a photograph page rendered legibly; ancient-script typography and page layout were preserved in the rendered PDF.",
+      "bibliographic_findings": "Shaul Shaked, James Nathan Ford, and Siam Bhayro, Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One, Magical and Religious Literature of Late Antiquity 1 (Leiden/Boston: Brill, 2013); hardback ISBN 978-90-04-20394-5; e-book ISBN 978-90-04-22937-2; copyright 2013 Koninklijke Brill NV.",
+      "scope_findings": "Complete corpus edition of JBA 1-64, each associated in the contents with a Schøyen MS designation and a printed-page start; the volume contains editions, translations, commentary, photographs, and supporting indexes. The object manifest captures only catalogue-level metadata and source locators."
+    },
+    {
+      "source_id": "SRC-8C611BF93288",
+      "supplied_filename": "9789004471719-60966.pdf",
+      "sha256": "e15f96f25da902065ea972aacb441034f99ca08fbdcdff73be5b11cc80fc3b00",
+      "byte_length": 9260177,
+      "pdf_pages": 334,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title/imprint, contents, a representative edition page, and a photograph page rendered legibly; ancient-script typography and page layout were preserved in the rendered PDF.",
+      "bibliographic_findings": "Shaul Shaked, James Nathan Ford, and Siam Bhayro, Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two, Magical and Religious Literature of Late Antiquity 10 (Leiden/Boston: Brill, 2022); hardback ISBN 978-90-04-47170-2; e-book ISBN 978-90-04-47171-9; copyright 2022 by the authors, published by Koninklijke Brill NV.",
+      "scope_findings": "Complete corpus edition of JBA 65-119, each associated in the contents with a Schøyen MS designation and a printed-page start; the volume contains editions, translations, commentary, photographs, and supporting indexes. The object manifest captures only catalogue-level metadata and source locators."
+    },
+    {
+      "source_id": "SRC-3C4294DDB367",
+      "supplied_filename": "9789004272798-21239.pdf",
+      "sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+      "byte_length": 8065967,
+      "pdf_pages": 296,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title/imprint, contents, the corpus concordance, a representative bowl description, and an edition page rendered legibly; Syriac typography and page layout were preserved in the rendered PDF.",
+      "bibliographic_findings": "Marco Moriggi, A Corpus of Syriac Incantation Bowls, Magical and Religious Literature of Late Antiquity 3 (Leiden/Boston: Brill, 2014); hardback ISBN 978-90-04-27280-4; e-book ISBN 978-90-04-27279-8; copyright 2014 Koninklijke Brill NV.",
+      "scope_findings": "Complete systematic re-edition of 49 previously published Syriac incantation bowls, with an explicit concordance of corpus number, physical or former collection designation, and editio princeps, plus descriptions, transcriptions, translations, commentary, photographs/facsimiles, and indexes. The object manifest captures only catalogue-level metadata and source locators."
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "supplied_filename": "9789004411838-38923.pdf",
+      "sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "byte_length": 34234133,
+      "pdf_pages": 335,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title/imprint, contents, concordance, representative edition and catalogue pages, and photographs rendered legibly; Hebrew, Syriac, Mandaic, and other ancient-script typography and page layout were preserved in the rendered PDF.",
+      "bibliographic_findings": "James Nathan Ford and Matthew Morgenstern, Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena, Magical and Religious Literature of Late Antiquity 8 (Leiden/Boston: Brill, 2020); hardback ISBN 978-90-04-37700-4; e-book ISBN 978-90-04-41183-8; copyright 2020 Koninklijke Brill NV.",
+      "scope_findings": "Complete collection catalogue. Entries 1-40 edit legible Aramaic texts (JBA/Hebrew, Syriac, and Mandaic); entries 41-68 catalogue pseudoscript, uninscribed, non-Aramaic, fragmentary, or non-bowl material. Entry 69 is a single storage-box record for multiple fragments from different objects and is documented in the evidence but deliberately not converted into one physical-object record."
+    }
+  ],
+  "enumeration_policy": {
+    "direct_appearances": 236,
+    "breakdown": {
+      "Shaked-Ford-Bhayro 2013": 64,
+      "Shaked-Ford-Bhayro 2022": 55,
+      "Moriggi 2014": 49,
+      "Ford-Morgenstern 2020": 68
+    },
+    "identity_linking": "An appearance is attached to an existing object only when either an exact whitespace-normalized collection designation or an exact publication-object key resolves to one object. Ambiguous or absent matches create a separate candidate; no dedupe decision or merge is made.",
+    "copyright_boundary": "No transcription, translation, commentary passage, or embedded image from these volumes is inserted into the database or public export."
+  }
+}

@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-11 — Codex — Library of Congress Brill corpus editions
+
+**Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-001, ACCESS-002
+**Corpus:** changed (four complete copyrighted source captures, four source corrections, four explicit scope reviews, 236 source appearances, 519 identifiers, 704 claims, 117 new candidate objects, and four resolved access leads) — state digest 74dda51021f3
+**Tests:** 203 passed; archive hashes valid; source-correction, scope, and 236-row candidate manifests replay idempotently; JSON/JSONL, report generation, and diff-whitespace checks passed.
+
+- Deposited complete researcher-supplied copies of *Aramaic Bowl Spells* Volumes One and Two, Moriggi's *A Corpus of Syriac Incantation Bowls*, and Ford–Morgenstern's Hilprecht catalogue in the private content-addressed archive. Corrected their full titles, subtitles, series, ISBNs and imprint years from the books themselves; notably Volume Two is 2022 and the Hilprecht catalogue is 2020.
+- Indexed 236 page-located source appearances: JBA 1–64, JBA 65–119, Moriggi's 49 Syriac bowls, and Hilprecht catalogue entries 1–68. Unique exact collection or publication identifiers linked 119 appearances to existing objects; the other 117 remain separate new candidates. No ambiguous identity was merged. Hilprecht entry 69 was deliberately not treated as one object because it is a storage box holding fragments from multiple bowls.
+- Added only catalogue-level metadata and source-attributed language/classification claims. All four sources contain full editions and photographs, but the new source records have zero text and zero media rows: copyrighted transcriptions, translations, commentary, and images remain private and uncleared for public reuse.
+- Closed the four Library of Congress access leads, marked the old Volume One purchase item satisfied by the private copy, and refreshed the living maturity, acquisition, enrichment, and campaign reports. The scholarship index now has 201 works, 21 source-linked held documents, and 39 scoped works; 162 remain unclassified.
+- Publication-reference coverage rises to 524/1,442 distinct identities and 427/904 probable or confirmed identities; all 20 publication keys resolve and cover 627 candidate records. The next high-impact onsite targets remain Segal 2000, Isbell 1975, Müller-Kessler's TMH 7, and Naveh–Shaked 1998. The private rich-text/TEI transformation layer and general completeness ledger remain follow-up work.
+
+---
+
 ## 2026-09-11 — Codex — Mehqarim be-Lashon 20 bowl scholarship
 
 **Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-001
