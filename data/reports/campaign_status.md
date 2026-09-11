@@ -1,16 +1,16 @@
 # Discovery campaign status
 
-Generated: `2026-09-10T02:07:40+00:00`
+Generated: `2026-09-11T12:08:55+00:00`
 
 ## Corpus
 
-- Candidate objects: **1591**
+- Candidate objects: **1593**
 - Unclassified claim fields: **[]**
-- Estimated distinct objects after resolved dedupe: **1323**
+- Estimated distinct objects after resolved dedupe: **1325**
 - Resolved duplicate records: **268**
-- Probable or confirmed: **873**
-- Source appearances: **1635**
-- Sources: **844**
+- Probable or confirmed: **875**
+- Source appearances: **1639**
+- Sources: **846**
 - Dedupe clusters pending: **0**
 - Objects with text: **195**
 - Objects with translation: **49**
@@ -63,9 +63,9 @@ Generated: `2026-09-10T02:07:40+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 666 |
+| available | 669 |
 | unknown | 121 |
-| partial | 52 |
+| partial | 51 |
 | paywalled | 3 |
 | blocked | 1 |
 | offline | 1 |
@@ -74,14 +74,14 @@ Generated: `2026-09-10T02:07:40+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1023 |
+| object type | whole_bowl | 1025 |
 | object type | uncertain | 295 |
 | object type | fragment | 259 |
 | object type | lost_or_unlocated | 14 |
 | record status | candidate | 718 |
-| record status | probable | 600 |
+| record status | probable | 602 |
 | record status | confirmed | 273 |
-| authenticity | unassessed | 1101 |
+| authenticity | unassessed | 1103 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 44 |
 | authenticity | uncertain | 3 |

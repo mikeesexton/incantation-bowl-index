@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T11:54:53Z",
+  "batch": "Correct the publication resolution for the Davidovitz popularity-bowl key",
+  "policy": "Publication-key resolution identifies the publication designated by an object's key; it does not alter the reporting source, merge objects, or adjudicate the edition's claims.",
+  "entries": [
+    {
+      "registry_id": "IBI-PUBREG-FORD2023-MY-FOES",
+      "publication_key": "Ford 2023",
+      "source_id": "SRC-4071AE0F749A",
+      "resolution": "resolved",
+      "basis": "Supersedes IBI-PUBREG-14. The sole object carrying the key is the 'Ford 2023 popularity bowl'; its identifier names James Nathan Ford as assigning body and its linked appearance is Ford's 'My Foes Loved Me' article. IBI-PUBREG-14 incorrectly resolved that key to Monika Amsler's differently authored 2023 article, 'What's (in) Your Bowl?'. The researcher-supplied English summary confirms Ford's article edits this object as Davidovitz 41."
+    }
+  ]
+}

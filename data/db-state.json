@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "7aa85d83f9a57ae08b0dcfff3f5bc36f4439cbb73b658ce8c16732bc99b86836",
+  "corpus_digest": "77081d22b1851a075e4a762f7871926c867405288de57abdcb66eeec4a57aca5",
   "migrations": 14,
-  "note": "Three-layer access roadmap: private research vault, public factual dataset, and rights-cleared licensed product.",
-  "recorded_at": "2026-09-10T02:53:50+00:00",
-  "recorded_by": "unspecified",
+  "note": "Archived complete Mehqarim be-Lashon 20; completed Davidovitz 41 enrichment; added Abudraham Miami bowl re-edition, Hilprecht 40c comparandum, and Morgenstern linguistic study.",
+  "recorded_at": "2026-09-11T12:09:11+00:00",
+  "recorded_by": "Codex",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "0c79a63f8a1f4118c941114615e880d6f22c8ab0f886698a9512b34a31690a0e",
-      "rows": 1635
+      "digest": "cb51085620f06e1df036de2489bbbbf05440705e42cc9f5291c0948d00029925",
+      "rows": 1639
     },
     "appearances": {
-      "digest": "f08bc50576515516876e4f707c604bb3187c1682d62a6fc1c64c8deec189bacc",
-      "rows": 1635
+      "digest": "fbbf036e537919e4848e8488b616f0979d83f59d81fadc65d2dea19b7178ef10",
+      "rows": 1639
     },
     "captures": {
-      "digest": "0ccb724f9562edfba8509c0b2ba21e21eaaadbb10b06c8149e0be089fb0a1af6",
-      "rows": 28
+      "digest": "72c0d3635c9981cb40c00dffdf5f3cd98bbdb7e92d1ba2adc58b6445dc1ca69f",
+      "rows": 32
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "0d9a07ddbf14341409c0dd4efa4bc79612960edb469568f2cd9ffad2d9081d1b",
-      "rows": 5070
+      "digest": "a18e6ccce8cccd46c2ac18e2517eb93eb4e50ae8242aabbd130dfd2759414a3a",
+      "rows": 5105
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -55,8 +55,8 @@
       "rows": 212
     },
     "identifiers": {
-      "digest": "18df13ae842ffe4bf426e998bf6c2f65de06115e795bc9d84fe2472f16dbe96d",
-      "rows": 3608
+      "digest": "d99f0bb61c3cc9d025f15131ca34af66c306f56d5846c02ce408c9d115e9131b",
+      "rows": 3613
     },
     "leads": {
       "digest": "c159c90ac14e82efaa2732cf72b201eaf9817c39700ea3147b3bb932d4c4b0ef",
@@ -67,8 +67,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "f683c5e24b626aad462f110c9e9de174ed78bc753a7bfb21c31d4b26c4eb7e9d",
-      "rows": 326
+      "digest": "13ed51f56facf0fbe74438c891fe4ae4292555fc8e66bf3db7981921a52af33a",
+      "rows": 327
     },
     "media_rights_reviews": {
       "digest": "507bd31ce2f94db027ea68ce07774246fc08b6b714111f29f1f7e083ec420371",
@@ -87,12 +87,12 @@
       "rows": 5
     },
     "objects": {
-      "digest": "731fbbc71350d45ea6bacac146110e15cc3588099493f629d93ac314dd159cf1",
-      "rows": 1591
+      "digest": "166cf812beb54bbe4e672a2c97fb5764a5cf4dd66187ae37fae38be9012cd44d",
+      "rows": 1593
     },
     "publication_registry": {
-      "digest": "39a319212ad4af0620e17d339d2189edaac11c6bc51c53856e747b15540613f6",
-      "rows": 21
+      "digest": "ba341ad2b397b734a0df3d418a09d597f18fa5145e7adf3d385ea77c235c9992",
+      "rows": 23
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
@@ -111,16 +111,16 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "fd4f824a125e44d8a0e00d5e99612820155a34377b310c63ca5b7861c74d0b0c",
-      "rows": 4
+      "digest": "bc2994552fd0d0dfeff616c87311e1b9e4a4e3d5170e67a4a2e724ed023c4106",
+      "rows": 5
     },
     "source_scope_reviews": {
-      "digest": "771c0fdc736f7c901c35fe5f4f136bd91a01d498d4bd06f02d6597db2d753197",
-      "rows": 10
+      "digest": "c58393bdffb371b5f44af70651ae9fed92e7de1674ed679883978de73fc1ea51",
+      "rows": 14
     },
     "sources": {
-      "digest": "1e42dae318cd7499cd3e0b9818ecf0c93353c06bf4fe5b1ca33786227af5056e",
-      "rows": 844
+      "digest": "759894c97ed6ec8b184bc9346ae4deef0b41de31ef4db190dfd34ecdc667e1dd",
+      "rows": 846
     },
     "text_proofreading_reviews": {
       "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",

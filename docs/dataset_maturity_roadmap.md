@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-10T02:54:58+00:00`
+Generated: `2026-09-11T12:08:55+00:00`
 
 ## Portfolio status
 
@@ -57,40 +57,40 @@ Promotion rules:
 
 These are provisional planning ranges for complete or physically inspected core works, not promises of completeness. Raw file count is never sufficient: language balance, object-level enumeration, scope review, citation coverage and an explicit missing-work register are required at every band. Current strength is bibliographic and structural; the held full-text layer is still early.
 
-Current evidence: **199 scholarship works indexed; 14 with a source-linked held document; 37 with a classified scope; 162 awaiting scope.** The project also has **15 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work.
+Current evidence: **201 scholarship works indexed; 17 with a source-linked held document; 39 with a classified scope; 162 awaiting scope.** The project also has **18 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work.
 
 | Band | Complete or inspected core works | Additional from current holdings | What must also be true |
 |---|---:|---:|---|
-| Strong foundation | 15–30 | 1–16 | Core bibliography and external control list are present; holdings are provenance- and hash-tracked; at least one reference cohort is fully checked |
-| Visibly impressive / plausibly comprehensive | 50–75 | 36–61 | All eight LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
-| Expert-comprehensive | 150–200 | 136–186 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
+| Strong foundation | 15–30 | 0–13 | Core bibliography and external control list are present; holdings are provenance- and hash-tracked; at least one reference cohort is fully checked |
+| Visibly impressive / plausibly comprehensive | 50–75 | 33–58 | All eight LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
+| Expert-comprehensive | 150–200 | 133–183 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
 
 ## Current scope snapshot
 
 | Measure | Current |
 |---|---:|
-| Candidate source records | 1591 |
-| Working physical identity hypotheses (all statuses) | 1323 |
-| Source appearances | 1635 |
-| Sources | 844 |
+| Candidate source records | 1593 |
+| Working physical identity hypotheses (all statuses) | 1325 |
+| Source appearances | 1639 |
+| Sources | 846 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 217 |
-| Triaged claim-field differences | 52/372 |
+| Identities triggering raw claim-difference flags | 219 |
+| Triaged claim-field differences | 52/378 |
 | Compatible differences | 37 |
-| Review required (missing or no longer valid) | 320 |
+| Review required (missing or no longer valid) | 326 |
 | Existing reviews requiring revalidation | 285 |
 | Substantive conflict instances | 15 across 13 identities |
-| All identities with a publication reference | 393/1323 (29.7%) |
-| Probable/confirmed identities with a publication reference | 312/795 (39.2%) |
+| All identities with a publication reference | 394/1325 (29.7%) |
+| Probable/confirmed identities with a publication reference | 313/797 (39.3%) |
 | Identities with a translation | 48 |
 | Scan-checked normalized reading texts | 35 |
-| Publication keys resolved to the publication they designate | 19/19 |
-| Objects under a resolved publication | 435/435 |
+| Publication keys resolved to the publication they designate | 20/20 |
+| Objects under a resolved publication | 436/436 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 1 |
-| Media records with a non-unknown rights status | 38/326 (11.7%) |
-| Media with a current ledger entry | 325/326 |
+| Media records with a non-unknown rights status | 39/327 (11.9%) |
+| Media with a current ledger entry | 325/327 |
 | Media with completed rights decisions / approved for reuse | 0 / 0 |
 | Blocked leads | 28 |
 | Open or active leads | 19 |
@@ -102,16 +102,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 911 | 68.9% |
+| Location | 913 | 68.9% |
 | Provenance | 327 | 24.7% |
 | Dating | 482 | 36.4% |
-| Dimensions | 381 | 28.8% |
+| Dimensions | 383 | 28.9% |
 | Material | 408 | 30.8% |
-| Language | 664 | 50.2% |
-| Script | 92 | 7.0% |
+| Language | 666 | 50.3% |
+| Script | 93 | 7.0% |
 | Text Edition | 1 | 0.1% |
 | Translation | 48 | 3.6% |
-| Image | 325 | 24.6% |
+| Image | 326 | 24.6% |
 
 ### Content-facet coverage
 
@@ -119,16 +119,16 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Biblical Intertexts | 168 | 12.7% |
-| Condition | 140 | 10.6% |
-| Publication | 79 | 6.0% |
-| Client | 59 | 4.5% |
-| Ritual | 44 | 3.3% |
-| Text Form | 37 | 2.8% |
+| Biblical Intertexts | 169 | 12.8% |
+| Condition | 142 | 10.7% |
+| Publication | 82 | 6.2% |
+| Client | 62 | 4.7% |
+| Ritual | 45 | 3.4% |
+| Text Form | 39 | 2.9% |
 | Practitioner | 29 | 2.2% |
 | Visual | 27 | 2.0% |
-| Text Description | 20 | 1.5% |
-| Parallels | 6 | 0.5% |
+| Text Description | 21 | 1.6% |
+| Parallels | 7 | 0.5% |
 | Authenticity Assessment | 4 | 0.3% |
 | Target | 2 | 0.2% |
 | Vessel Form | 2 | 0.2% |
@@ -442,9 +442,9 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `320`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `326`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
-- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `39.2%`; target `>= 80.0%`.
+- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `39.3%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
 
 ### Required setup tasks

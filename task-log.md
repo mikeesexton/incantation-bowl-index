@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-11 — Codex — Mehqarim be-Lashon 20 bowl scholarship
+
+**Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-001
+**Corpus:** changed (two scholarship sources, two bowl records, four source-linked captures, four appearances, five identifiers, 35 claims, one media pointer, four scope reviews, one source correction, and two publication-key resolutions) — state digest 77081d22b185
+**Tests:** 203 passed; archive hashes valid; candidate, scope, and publication-registry manifests replay idempotently; JSON/JSONL and diff-whitespace checks passed.
+
+- Deposited both the initial one-page English summary (`80a284d04ebf...`) and the subsequently supplied complete 298-page *Mehqarim be-Lashon* 20 volume (`2d087410e676...`) as copyrighted private captures. The full volume is source-linked to its three bowl-relevant articles; Ford's source is corrected from partial to available with the volume imprint, publisher/distributor, and completeness evidence retained.
+- Enriched Davidovitz 41 (`IBI-6A5B95130C25`) from Ford's complete pp. 215–230 edition with dimensions, condition, layout, beneficiary/textual voice Aḥay son of Maḥozanita, ten-line extent, Psalm 33:22, formula and lexicon findings, an image pointer, and precise transcription/translation locators. Ford explicitly says popularity and influence; economic success is inferred rather than stated in the readable text, so both the older broad claim and the new qualification are preserved.
+- Superseded the incorrect `IBI-PUBREG-14` resolution that had assigned the bowl's `Ford 2023` key to Monika Amsler's differently authored article. The current append-only registry now resolves it to Ford's *My Foes Loved Me*, restoring the correct one-object scholarship count without deleting the historical decision.
+- A full contents and term scan found two additional bowl-relevant contributions. Added and classified Ohad Abudraham's pp. 13–30 single-object re-edition and Matthew Morgenstern's pp. 171–194 linguistic study; the remaining volume articles concern other linguistic subjects and were not added.
+- Added the Miami University Art Museum Mandaic bowl (`IBI-ADF5E95842DB`) with its dimensions, seven-fragment condition, spiral/exterior layout, script, beneficiary and household, demons, protective purpose, Schøyen parallel, and edition history. Retained an internal source discrepancy: the prose says eleven physical lines, but the edition numbers ten. Added Hilprecht 40c / VT 1981.8 (`IBI-B5259E1CC555`) as a separate comparandum with Abudraham's same-hand and possible shared-beneficiary proposals; no identity merge or independent scribal adjudication was made.
+- The scholarship index now holds 201 works, 17 source-linked documents, and 39 classified scopes. No modern transcription or translation, bowl image, authenticity decision, rights approval, or public release was added.
+
 ## 2026-09-09 — Codex — Three-layer access roadmap
 
 **Claimed:** ACCESS-001, ACCESS-002, ACCESS-003, ACCESS-006, SCHOL-005
