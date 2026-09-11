@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T17:10:00Z",
+  "batch": "Five additional researcher-supplied scholarship PDFs",
+  "policy": "The PDFs are retained only in the private content-addressed archive. The corpus records bibliographic facts, catalogue structure, identifiers, locators, and conservative source-attributed classifications; it does not reproduce copyrighted transcriptions, translations, commentary, or images and does not authorize public reuse.",
+  "documents": [
+    {
+      "source_id": "SRC-F2BEFBEFFC2E",
+      "supplied_filename": "9789004257269-20963.pdf",
+      "sha256": "d4b2c6e2946e10ab295d5b45a7ce2b132b674e35da40c09e1818a8af53d92a3d",
+      "byte_length": 3956582,
+      "pdf_pages": 178,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title and a representative edition page rendered legibly; Jewish Babylonian Aramaic typography and the facing transcription/translation layout were preserved.",
+      "bibliographic_findings": "Dan Levene, Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee,’ MRLA 2 (Brill, 2013); print ISBN 978-90-04-25092-5; e-book ISBN 978-90-04-25726-9.",
+      "scope_findings": "Complete corpus edition. Thirteen newly edited entries represent fourteen physical bowls because VA.2496 and VA.2575 are separate paired bowls; sixteen further previously published bowls are revisited, for thirty physical bowl appearances total."
+    },
+    {
+      "source_id": "SRC-8FA39ADCBF5F",
+      "supplied_filename": "Marco_Moriggi_Siam_Bhayro_eds_Studies_in_the_Syria.pdf",
+      "sha256": "2832a9bfc1d27f920374e484c0d112849a3ebd6a64bc06c189ad6895db6337eb",
+      "byte_length": 102574,
+      "pdf_pages": 3,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "All three review pages rendered legibly.",
+      "bibliographic_findings": "Christelle Jullien, review of Marco Moriggi and Siam Bhayro (eds.), Studies in the Syriac Magical Traditions, Abstracta Iranica 44 (2022), document 32; DOI 10.4000/abstractairanica.56800.",
+      "scope_findings": "The supplied PDF is a three-page French review, not the 264-page 2021 Brill volume. It summarizes nine contributions, including one on Syriac incantation bowls and one on a Mandaean lead roll, but supplies no finite bowl catalogue."
+    },
+    {
+      "source_id": "SRC-DA708912C2D3",
+      "supplied_filename": "9789004373686-38176.pdf",
+      "sha256": "7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+      "byte_length": 144458750,
+      "pdf_pages": 254,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title, contents, a representative catalogue page, and a selected-edition page rendered legibly; ancient-script typography, photographs, and catalogue layout were preserved.",
+      "bibliographic_findings": "Siam Bhayro, James Nathan Ford, Dan Levene, and Ortal-Paz Saar, with contributions by Matthew Morgenstern, Marco Moriggi, and Naama Vilozny, Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts, MRLA 7 (Brill, 2018); print ISBN 978-90-04-34447-1; e-book ISBN 978-90-04-37368-6.",
+      "scope_findings": "The complete catalogue contains 169 numbered entries, not 177. Sixteen selected text sections cover seventeen physical items because section XVI treats VA.Bab.2764 and the separate eggshell-fragment object VA.Bab.2840. Catalogue entry 168 explicitly contains fragments from at least two different bowls; the manifest represents those as two unresolved minimum components. Other numbered records include complete and fragmentary bowls, three skull-related entries, and eggshell fragments."
+    },
+    {
+      "source_id": "SRC-07B313309678",
+      "supplied_filename": "9789004347892-21914.pdf",
+      "sha256": "40cd002ea049e00241efd4044c8924790b724b0e375561ddb2b0cdee506ddfa9",
+      "byte_length": 1774072,
+      "pdf_pages": 313,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title/imprint and representative text pages rendered legibly.",
+      "bibliographic_findings": "Ortal-Paz Saar, Jewish Love Magic: From Late Antiquity to the Middle Ages, MRLA 6 (Brill, 2017); print ISBN 978-90-04-34788-5; e-book ISBN 978-90-04-34789-2.",
+      "scope_findings": "Complete thematic monograph using incantation bowls within a wider late-antique and medieval source corpus. It is highly relevant to thematic scholarship but is not a finite bowl catalogue, so no bulk object enumeration was inferred from it."
+    },
+    {
+      "source_id": "SRC-1E2E21DC61BD",
+      "supplied_filename": "9789004672147-6028.pdf",
+      "sha256": "545d89c8de51dee8871cf4bf48b18202ea57cbe023b745cedbf997f6da07548b",
+      "byte_length": 23880669,
+      "pdf_pages": 336,
+      "encryption": "none",
+      "text_extraction": "successful",
+      "visual_check": "Title/imprint and a representative bowl commentary page rendered legibly; transliteration typography and plate references were preserved.",
+      "bibliographic_findings": "Joseph Naveh and Shaul Shaked, Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (Magnes Press and E. J. Brill, 1985), ISBN 965-223-531-8.",
+      "scope_findings": "Complete scan of the 1985 first edition. Thirteen numbered bowl texts represent fourteen physical bowls because entry 12 comprises distinct bowls 12a and 12b. The source remains distinct from existing second- and third-edition bibliography records."
+    }
+  ],
+  "enumeration_policy": {
+    "direct_appearances": 214,
+    "breakdown": {
+      "Levene 2013": 30,
+      "Bhayro-Ford-Levene-Saar 2018": 170,
+      "Naveh-Shaked 1985": 14
+    },
+    "physical_object_caution": "The 170 Berlin appearance rows derive from 169 numbered catalogue entries because entry 168 contains fragments from at least two different bowls. Joined shelf marks are not split unless the catalogue explicitly establishes distinct physical items.",
+    "identity_linking": "An appearance is attached to an existing object only when the current database contains an exact whitespace-normalized collection designation or exact publication-object key resolving to one object. All other appearances remain separate candidates; no merge decision is made.",
+    "copyright_boundary": "No transcription, translation, commentary passage, review prose, or embedded image from these PDFs is inserted into the database or public export."
+  }
+}

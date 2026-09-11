@@ -20,7 +20,10 @@ CORE_COVERAGE = {
     "dating": {"dating", "period", "culture"},
     "dimensions": {"dimensions"},
     "material": {"material"},
-    "language": {"inscription_language", "script_or_language", "catalogue_language_codes"},
+    "language": {
+        "inscription_language", "script_or_language", "catalogue_language_codes",
+        "catalogue_dialect",
+    },
     "script": {"script", "script_classification"},
 }
 
@@ -44,7 +47,7 @@ CONTENT_COVERAGE = {
         "handwriting_group",
     },
     "ritual": {
-        "text_purpose", "formula_genre", "named_demon", "named_angels", "text_tradition",
+        "text_purpose", "text_function", "formula_genre", "named_demon", "named_angels", "text_tradition",
         "installation_instruction",
     },
     "biblical_intertexts": {
@@ -95,6 +98,7 @@ EXCLUDED_CLAIM_FIELDS = {
     "dimensions_source_text": "Retained original source string behind a structured dimensions claim, not an independent assertion.",
     "dating_context": "Context supporting a dating argument, not a competing date.",
     "catalogue_description": "Free-text catalogue prose. Third-party expression rather than a comparable assertion, and withheld from public export.",
+    "catalogue_shelf_mark": "The shelf mark is represented as an identifier, not a competing descriptive assertion.",
     "findspot_evidence_level": "Grades the basis of a findspot claim (META-005); an assessment of a claim, not a rival claim.",
     "findspot_evidence": "Grades the basis of a findspot claim (META-005).",
     "findspot_assessment": "Grades the basis of a findspot claim (META-005).",
@@ -108,6 +112,7 @@ EXCLUDED_CLAIM_FIELDS = {
     "scribal_relationship": "Object-to-object relationship; see `object_relationship_assertions`.",
     "family_relationship": "Kinship between named persons. Belongs with the role modelling in META-007, not with a single-value comparison.",
     "physical_record_ambiguity": "Records that a source may describe the same physical object twice; a dedupe signal, not a field value.",
+    "physical_object_count": "Records an unresolved minimum-object count for a composite catalogue entry; an identity-review signal, not a comparable object property.",
     "identification": "States what the object might be; the object_type and record_status columns carry this.",
     "object_identification": "States what the object might be; see object_type and record_status.",
     "identifier_warning": "Flags a wrong catalogue number in a publication; a correction note, not a claim about the bowl.",

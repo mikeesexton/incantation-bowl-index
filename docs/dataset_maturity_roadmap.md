@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-11T16:58:34+00:00`
+Generated: `2026-09-11T17:19:54+00:00`
 
 ## Portfolio status
 
@@ -16,25 +16,25 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 ### What is solid
 
-- Discovery is broad and reproducible within the classes it searched: 846 sources and 1,875 appearances support 1,710 candidate records representing an estimated 1,442 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
+- Discovery is broad and reproducible within the classes it searched: 859 sources and 2,089 appearances support 1,922 candidate records representing an estimated 1,654 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
 - The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.
 - The public boundary is now positive rather than merely defensive: 45 texts are published on a stated rights basis with their editorial state declared, and every one of the 151 withheld texts still names its edition, exact locator and link so a reader can consult it.
-- The comparison model now covers the whole claim vocabulary: 66 fields grouped, 35 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list.
+- The comparison model now covers the whole claim vocabulary: 69 fields grouped, 37 excluded with a stated reason, none unclassified, and a test that fails when a new field appears in neither list.
 - The project now has an external yardstick. Waller's list of JBA bowl publications 1853-2024 is held, transcribed and measured against, so completeness is a number rather than an impression.
 - Bibliographic coverage of the field's JBA control list is complete: 115 of 115 publications 1853-2024 have a source record with a sourced citation, up from 46.
-- Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. All 20 publication keys now resolve, covering 627 distinct candidate records. Counts deduplicate records across aliases and publications.
-- Four high-priority Brill volumes are now held complete and inspected: both Aramaic Bowl Spells volumes, Moriggi's Syriac corpus, and Ford-Morgenstern's Hilprecht catalogue. Their 236 catalogue appearances are indexed with printed-page locators; 119 attach by exact identifiers to existing records and 117 remain separate new candidates pending ordinary reconciliation.
+- Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. All 23 publication keys now resolve, covering 841 distinct candidate records. Counts deduplicate records across aliases and publications.
+- Seven complete corpus editions or collection catalogues are now held and inspected: both Aramaic Bowl Spells volumes, Moriggi's Syriac corpus, Ford-Morgenstern's Hilprecht catalogue, Levene's curse-text volume, the Berlin catalogue, and Naveh-Shaked 1985. Their 450 catalogue appearances are indexed with printed-page locators; 121 attach by exact identifiers to existing records and 329 remain separate new candidates pending ordinary reconciliation.
 
 ### What prevents release readiness
 
-- Publication links remain incomplete: 524 of 1,442 distinct identities carry a publication reference, including 427 of 904 probable or confirmed identities. All 20 current keys resolve, but the 80% TEXT-001 gate is not yet met.
-- Identity and claim quality is not yet measured corpus-wide: 315 field-difference decisions need evidence-level revalidation, now measured against the full claim vocabulary rather than seven hard-coded groups, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
+- Publication links remain incomplete: 737 of 1,654 distinct identities carry a publication reference, including 598 of 1,074 probable or confirmed identities. All 23 current keys resolve, but the 80% TEXT-001 gate is not yet met.
+- Identity and claim quality is not yet measured corpus-wide: 417 field-difference instances are untriaged, including 285 earlier reviews now stale against current evidence, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 48 identities have a translation. The new protected editions are intentionally indexed without copying their text.
 - Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
-- Acquisition completeness is not yet measured corpus-wide: 33 sources have linked captures, 22 with PDFs and eleven with only non-PDF captures. Capture presence alone does not distinguish a complete work from an excerpt or front matter, although the four 11 September Brill deposits have explicit complete-volume evidence. 287 distinct candidate records still depend on publications without linked PDF captures. Segal 2000, Isbell 1975, Müller-Kessler's TMH 7, and Naveh–Shaked 1998 remain priority Library of Congress consultations.
+- Acquisition completeness is not yet measured corpus-wide: 38 sources have linked captures, 27 with PDFs and eleven with only non-PDF captures. Capture presence alone does not distinguish a complete work from an excerpt or front matter, although the inspected Library of Congress batches have hash-bound completeness evidence. 287 distinct candidate records still depend on publications without linked PDF captures. Segal 2000, Isbell 1975, Müller-Kessler's TMH 7, and the distinct Naveh–Shaked 1998 third edition remain priority Library of Congress consultations.
 
 ## Access and commercialization layers
 
@@ -58,35 +58,35 @@ Promotion rules:
 
 These are provisional planning ranges for complete or physically inspected core works, not promises of completeness. Raw file count is never sufficient: language balance, object-level enumeration, scope review, citation coverage and an explicit missing-work register are required at every band. Current strength is bibliographic and structural; the held full-text layer is still early.
 
-Current evidence: **201 scholarship works indexed; 21 with a source-linked held document; 39 with a classified scope; 162 awaiting scope.** The project also has **22 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work.
+Current evidence: **214 scholarship works indexed; 26 with a source-linked held document; 53 with a classified scope; 161 awaiting scope.** The project also has **27 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work.
 
 | Band | Complete or inspected core works | Additional from current holdings | What must also be true |
 |---|---:|---:|---|
-| Strong foundation | 15–30 | 0–9 | Core bibliography and external control list are present; holdings are provenance- and hash-tracked; at least one reference cohort is fully checked |
-| Visibly impressive / plausibly comprehensive | 50–75 | 29–54 | All eight LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
-| Expert-comprehensive | 150–200 | 129–179 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
+| Strong foundation | 15–30 | 0–4 | Core bibliography and external control list are present; holdings are provenance- and hash-tracked; at least one reference cohort is fully checked |
+| Visibly impressive / plausibly comprehensive | 50–75 | 24–49 | All eight LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
+| Expert-comprehensive | 150–200 | 124–174 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
 
 ## Current scope snapshot
 
 | Measure | Current |
 |---|---:|
-| Candidate source records | 1710 |
-| Working physical identity hypotheses (all statuses) | 1442 |
-| Source appearances | 1875 |
-| Sources | 846 |
+| Candidate source records | 1922 |
+| Working physical identity hypotheses (all statuses) | 1654 |
+| Source appearances | 2089 |
+| Sources | 859 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 281 |
-| Triaged claim-field differences | 52/448 |
+| Identities triggering raw claim-difference flags | 299 |
+| Triaged claim-field differences | 52/469 |
 | Compatible differences | 37 |
-| Review required (missing or no longer valid) | 396 |
+| Review required (missing or no longer valid) | 417 |
 | Existing reviews requiring revalidation | 285 |
 | Substantive conflict instances | 15 across 13 identities |
-| All identities with a publication reference | 524/1442 (36.3%) |
-| Probable/confirmed identities with a publication reference | 427/904 (47.2%) |
+| All identities with a publication reference | 737/1654 (44.6%) |
+| Probable/confirmed identities with a publication reference | 598/1074 (55.7%) |
 | Identities with a translation | 48 |
 | Scan-checked normalized reading texts | 35 |
-| Publication keys resolved to the publication they designate | 20/20 |
-| Objects under a resolved publication | 627/627 |
+| Publication keys resolved to the publication they designate | 23/23 |
+| Objects under a resolved publication | 841/841 |
 | Montgomery/Penn concordances with dated current-evidence review | 40 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 1 |
@@ -103,16 +103,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1047 | 72.6% |
-| Provenance | 332 | 23.0% |
-| Dating | 482 | 33.4% |
-| Dimensions | 383 | 26.6% |
-| Material | 408 | 28.3% |
-| Language | 830 | 57.6% |
-| Script | 93 | 6.4% |
+| Location | 1230 | 74.4% |
+| Provenance | 332 | 20.1% |
+| Dating | 482 | 29.1% |
+| Dimensions | 383 | 23.2% |
+| Material | 408 | 24.7% |
+| Language | 1042 | 63.0% |
+| Script | 93 | 5.6% |
 | Text Edition | 1 | 0.1% |
-| Translation | 48 | 3.3% |
-| Image | 326 | 22.6% |
+| Translation | 48 | 2.9% |
+| Image | 326 | 19.7% |
 
 ### Content-facet coverage
 
@@ -120,17 +120,17 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 299 | 20.7% |
-| Biblical Intertexts | 169 | 11.7% |
-| Condition | 142 | 9.8% |
-| Text Description | 89 | 6.2% |
-| Client | 62 | 4.3% |
-| Ritual | 45 | 3.1% |
-| Text Form | 39 | 2.7% |
-| Practitioner | 29 | 2.0% |
-| Visual | 27 | 1.9% |
-| Parallels | 7 | 0.5% |
-| Authenticity Assessment | 4 | 0.3% |
+| Publication | 512 | 31.0% |
+| Biblical Intertexts | 169 | 10.2% |
+| Condition | 142 | 8.6% |
+| Text Description | 89 | 5.4% |
+| Ritual | 74 | 4.5% |
+| Client | 62 | 3.7% |
+| Text Form | 39 | 2.4% |
+| Practitioner | 29 | 1.8% |
+| Visual | 27 | 1.6% |
+| Parallels | 7 | 0.4% |
+| Authenticity Assessment | 4 | 0.2% |
 | Target | 2 | 0.1% |
 | Vessel Form | 2 | 0.1% |
 
@@ -166,11 +166,11 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 1. ACCESS-004 / SCHOL-005: convert the interim hash-bound completeness evidence used for the four 11 September Brill volumes into a general document-completeness and transformation ledger distinguishing citation-only, excerpt, front matter, complete, physically inspected, OCR'd, corrected and object-level extracted states.
 2. ACCESS-002 / OPS-002: define the private rich-text package and complete encrypted local plus off-device backup before transforming the new complete editions. Preserve printed page anchors, ancient-script Unicode, uncertainty markup and links to page images; keep the vault outside Git and public exports.
 3. ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.
-4. TEXT-001 / SCHOL-004 follow-through: all 20 publication keys resolve and 524 of 1,442 identities carry publication references. Extend checked edition locators beyond the 236-appearance Brill batch toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.
-5. SCHOL-005 / QA-004: the Reader Identification Card and four complete Brill volumes are secured. Use the remaining Library of Congress time for Segal 2000, Isbell 1975, TMH 7 and Naveh–Shaked 1998, recording consultation and copying evidence per item; Segal remains the highest-impact gap.
-6. SCHOL-006: classify the remaining 162 unclassified works by scope. Twenty-one scholarship documents are now held and 39 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.
-7. TEXT-001 follow-through: both Aramaic Bowl Spells volumes, Moriggi's Syriac corpus and Ford-Morgenstern's Hilprecht catalogue are now completely enumerated at catalogue level. Review the 117 new candidates and exact-identifier overlaps in ordinary source batches; do not merge them automatically or import protected readings.
-8. QA-002 / CONC-005: revalidate the 320-case queue in coherent source batches, including 285 earlier reviews. Preserve reported values and uncertainty; claim-vocabulary coverage is now complete.
+4. TEXT-001 / SCHOL-004 follow-through: all 23 publication keys resolve and 737 of 1,654 identities carry publication references. Extend checked edition locators beyond the 450-appearance complete-volume cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.
+5. SCHOL-005 / QA-004: the Reader Identification Card and seven complete corpus/catalogue volumes are secured. Use the remaining Library of Congress time for Segal 2000, Isbell 1975, TMH 7 and the distinct Naveh–Shaked 1998 third edition, recording consultation and copying evidence per item; Segal remains the highest-impact gap.
+6. SCHOL-006: classify the remaining 161 unclassified works by scope. Twenty-six scholarship documents are now held and 53 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.
+7. TEXT-001 follow-through: seven complete corpus editions or catalogues are now enumerated at catalogue level. Review the 329 separate candidates and exact-identifier overlaps in ordinary source batches; do not merge them automatically or import protected readings. Berlin entry 168 remains two unresolved minimum components rather than one falsely counted bowl.
+8. QA-002 / CONC-005: review the 417 untriaged field-difference instances in coherent source batches, including 285 earlier reviews now stale against current evidence. Preserve reported values and uncertainty; claim-vocabulary coverage is complete.
 9. META-008: assemble a Mandaic denominator from corpus editions represented in the bibliography. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
 10. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
 11. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
@@ -198,7 +198,7 @@ The Library of Congress in Washington, DC is the default offline source for this
 | 2 | Ready For Onsite Request | Müller-Kessler — Die Zauberschalentexte in der Hilprecht-Sammlung (TMH 7) (2005) · `SRC-63345F60155B` | [2006364726](https://lccn.loc.gov/2006364726) | `PJ5208.A5 M85 2005` | TEXT-001; 2 candidate records; publication key now bibliographically resolved |
 | 2 | Complete Private Copy | Moriggi — A Corpus of Syriac Incantation Bowls (2014) · `SRC-3C4294DDB367` | [2014006700](https://lccn.loc.gov/2014006700) | `PJ5615 .M665 2014` | Satisfied 2026-09-11; all 49 Syriac bowl re-editions indexed |
 
-The researcher obtained a Library of Congress Reader Identification Card on 11 September 2026. Availability remains a live catalog state, not proof that a volume has been consulted. Four priority Brill e-books were supplied and assessed during the visit; remaining physical items still require item-level consultation evidence.
+The researcher obtained a Library of Congress Reader Identification Card on 11 September 2026. Availability remains a live catalog state, not proof that a volume has been consulted. Nine PDFs were supplied and assessed during the visit: seven complete corpus editions or collection catalogues, one complete thematic monograph, and one complete three-page review that was not the reviewed book. Remaining physical items still require item-level consultation evidence.
 
 
 ## Publication purchase backups
@@ -260,7 +260,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
 
 - [ ] **TEXT-001 — Create publication-reference coverage for known texts** · In progress · Research
   - Done when: At least 80% of probable/confirmed identities have either an edition reference or an explicit no-known-edition status, each with a source.
-  - Evidence/status: Current resolved-edition coverage is 524/1,442 distinct identities (36.3%) and 427/904 probable or confirmed identities (47.2%). All 20 publication keys resolve to publication sources, covering 627 candidate records before identity deduplication. On 2026-09-11 four complete Brill editions added 236 page-located source appearances: JBA 1-64, JBA 65-119, Moriggi's 49 Syriac bowls, and Ford-Morgenstern entries 1-68. Exact collection or publication identifiers attached 119 appearances to existing objects; 117 became separate candidates because no unique exact match existed. This is checked edition-locator coverage, not a preferred-reading decision: no modern transcription, translation, commentary, or image was copied, and ambiguous identities were not merged.
+  - Evidence/status: Current resolved-edition coverage is 737/1,654 distinct identities (44.6%) and 598/1,074 probable or confirmed identities (55.7%). All 23 publication keys resolve to publication sources, covering 841 candidate records before identity deduplication. The 2026-09-11 complete-volume batches added 450 page-located source appearances: JBA 1-119, Moriggi's 49 Syriac bowls, Ford-Morgenstern entries 1-68, Levene's 30 curse bowls, fourteen Naveh-Shaked 1985 bowls, and 170 Berlin physical-object appearances from 169 catalogue entries. Exact collection or publication identifiers attached 121 appearances to existing objects; 329 became separate candidates because no unique exact match existed. This is checked edition-locator coverage, not a preferred-reading decision: no modern transcription, translation, commentary, or image was copied, and ambiguous identities were not merged.
 - [x] **TEXT-002 — Proofread Montgomery's 35 extracted translations** · Done · Research
   - Done when: Every translation is checked line by line against the scan, corrections are logged, and public_ok is decided independently of public-domain status.
   - Evidence/status: 35/35 available translations visually checked against archived scans as normalized English reading texts, in batches of 11 and 24. Exact original rows, corrected text hashes, source-PDF hash, page locators and correction notes retained. Zero OCR drafts remain in this cohort. All 35 remain public_ok=false; independent specialist review and original-language verification are separate work. Completion manifest: research/reviews/montgomery_reading_texts_completion_2026-09-05.json.
@@ -268,7 +268,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
   - Done when: Each of Montgomery's 40 bowl texts has a checked transliteration or a precise reason it cannot yet be captured.
 - [ ] **TEXT-004 — Index restricted editions without copying protected text** · In progress · Research
   - Done when: Known copyrighted editions retain bibliographic references, item ranges, language/script, access status, and rights metadata even when content is absent.
-  - Evidence/status: The 11 September Brill batch demonstrates the pattern at scale: 236 source appearances retain volume and printed-page locators, identifiers and conservative language or catalogue classifications, while all four sources are marked copyrighted and held privately. The database contains zero text and zero media rows attributed to these sources; protected editions, translations, commentary and photographs remain in the private archive. Extend the same treatment to other restricted core editions before closing the task.
+  - Evidence/status: The 11 September complete-volume batches demonstrate the pattern at scale: 450 source appearances retain volume and printed-page locators, identifiers and conservative language or catalogue classifications, while all seven sources are marked copyrighted and held privately. The database contains zero text and zero media rows attributed to these sources; protected editions, translations, commentary and photographs remain in the private archive. Extend the same treatment to other restricted core editions before closing the task.
 - [x] **TEXT-005 — Account for every main Montgomery entry and source exception** · Done · Research
   - Done when: All forty main entries have explicit publication, translation and register status; appendix material is separately scoped.
   - Evidence/status: 40-row cohort report: 35 checked reading texts, zero OCR drafts, and 5 source-documented cases with no separate translation (18, 21, 23, 27, 33). Appendix 42 remains a separate uncertain possible bowl candidate; Appendix 41 is explicitly a skull.
@@ -297,13 +297,13 @@ Record the editions that actually publish bowls, as first-class sources with the
   - Evidence/status: The review's own 14-row search log is a targeted verification pass, not a sweep, and says so. The index's phase-one saturation covers twelve source classes, none of which is the bibliographic databases. Both gaps have the same shape. SCHOL-002 has closed the bibliographic gap against Waller's list; assess a database sweep by additional publications beyond that list and improved object-level enumeration.
 - [x] **SCHOL-004 — Make publications first-class records, not identifier prefixes** · Done · Engineering
   - Done when: Every publication-derived identifier resolves to a source record for the publication being designated, kept separate from the source that reported the designation; a regression test fails when a publication key has no such record.
-  - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. All 20 current publication keys now resolve to source records, covering 627 candidate records before identity deduplication. The earlier overlapping totals were corrected by QA-004 on 2026-09-06. MRLA 8 is now verified against the complete 2020 volume rather than front matter alone; TMH 7 remains bibliographically resolved from the official Library of Congress record without claiming it has been read. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
+  - Evidence/status: Migration 012 adds an append-only publication registry recording which publication a designation belongs to, separately from `identifiers.source_id`, which correctly records who reported it. All 23 current publication keys now resolve to source records, covering 841 candidate records before identity deduplication. The earlier overlapping totals were corrected by QA-004 on 2026-09-06. MRLA 8, Levene 2013, the Berlin catalogue, and Naveh-Shaked 1985 are now verified against complete volumes; TMH 7 remains bibliographically resolved from the official Library of Congress record without claiming it has been read. `unresolved_publication_keys` and tests/test_publications.py fail when a key has no registry entry; the roadmap reports both counts.
 - [ ] **SCHOL-005 — Keep an acquisition register and work the want list** · In progress · Mixed
   - Done when: Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.
-  - Evidence/status: `ibi report-acquisitions` now records 33 of 846 sources with captures: 22 with PDFs and eleven with only non-PDF captures. A MIME type alone still cannot certify completeness, but the four 11 September Brill deposits each have hash-bound complete-volume inspection evidence and source-scope reviews. Both Aramaic Bowl Spells volumes, Moriggi 2014, and Ford-Morgenstern 2020 are therefore removed from the active want list; together they support 236 direct appearances. 663 sources with dependants still lack a PDF and 287 candidate records depend on publications without PDFs. Segal 2000 remains the highest-impact acquisition at 252 records, followed by Isbell 1975, Naveh-Shaked 1998, and Müller-Kessler's TMH 7. PURCHASE-001 is satisfied by the held private copy rather than purchase.
+  - Evidence/status: `ibi report-acquisitions` now records 38 of 859 sources with captures: 27 with PDFs and eleven with only non-PDF captures. Five newly supplied PDFs have hash-bound inspection evidence: complete Levene 2013, Berlin 2018, Saar 2017, and Naveh-Shaked 1985 volumes, plus Jullien's complete three-page review (not the reviewed book). The complete corpus/catalogue holdings now support 450 direct appearances. 663 sources with dependants still lack a PDF and 287 candidate records depend on publications without PDFs. Segal 2000 remains the highest-impact acquisition at 252 records, followed by Isbell 1975, the distinct Naveh-Shaked 1998 third edition, and Müller-Kessler's TMH 7. PURCHASE-001 remains satisfied by the held private copy rather than purchase.
 - [ ] **SCHOL-006 — Classify the scholarship by scope** · In progress · Research
   - Done when: Every scholarship record carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.
-  - Evidence/status: Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved publication registry supplies initial derived coverage. Explicit complete-volume reviews now classify both Aramaic Bowl Spells volumes and Moriggi 2014 as corpus editions and Ford-Morgenstern 2020 as a collection catalogue. The scholarship index contains 201 works, 21 source-linked held documents and 39 scoped works; 162 remain unclassified rather than guessed.
+  - Evidence/status: Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved publication registry supplies initial derived coverage. Explicit reviews now classify the seven complete corpus/catalogue volumes, Saar's thematic monograph, Jullien's review, and all nine contributions in the reviewed Studies in the Syriac Magical Traditions volume. The scholarship index contains 214 works, 26 source-linked held documents and 53 scoped works; 161 remain unclassified rather than guessed.
 - [ ] **SCHOL-007 — Check the contributor groupings by eye** · In progress · Research
   - Done when: Every contributor group with more than one spelling has been confirmed as one person, and any wrong merge has an alias-ledger override.
   - Evidence/status: 107 contributors derived from 199 works by surname and first initial, with bare surnames folded into a named scholar only where exactly one scholar of that surname exists. Fourteen multi-spelling groups were checked by eye on 2026-09-05 and all are one person. Two defects were found and fixed in the process: the SCHOL-002 authors placeholder invented an author called 'see citation]' and keyed every '[and others' name on the surname 'others', which had merged Geller with Gordon and Schwab with Shaked; and bare surnames left by stripping it were splitting Levene and Gordon from their full names. Migration 013 adds an append-only alias ledger for overrides in either direction.
@@ -444,9 +444,9 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `396`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `417`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
-- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `47.2%`; target `>= 80.0%`.
+- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `55.7%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
 
 ### Required setup tasks
@@ -494,6 +494,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-11:** Ingested five additional researcher-supplied PDFs. Complete Levene 2013, the 2018 Berlin catalogue, and the distinct Naveh-Shaked 1985 first edition add 214 page-located appearances across 212 newly created candidates and two exact existing-object links; Berlin's 169 numbered entries yield 170 minimum physical-object appearances because entry 168 explicitly contains fragments from at least two bowls. Added Saar 2017 as a held thematic monograph. Identified the Moriggi-Bhayro file as Jullien's three-page review rather than the reviewed book, deposited it accurately, and used its contents to index the 2021 volume and all nine contributions without claiming their texts are held. No protected transcription, translation, commentary, review prose, or image entered the public data.
 - **2026-09-11:** Ingested four complete researcher-supplied Brill volumes during the Library of Congress visit: Aramaic Bowl Spells Volumes One and Two, Moriggi's Syriac corpus, and Ford-Morgenstern's Hilprecht catalogue. Archived all four privately by hash, corrected their full bibliographic records, recorded complete-volume scope reviews, resolved the four access leads, and indexed 236 page-located catalogue appearances. Of those, 119 attach to existing objects by unique exact identifiers and 117 remain separate new candidates; no ambiguous identity was merged and no copyrighted transcription, translation, commentary or image was copied into the database or public layer.
 - **2026-09-09:** Adopted a three-layer access taxonomy: private personal research vault, maximal factual public reference, and optional paid licensed service. Added non-automatic promotion rules, seven ACCESS tasks, dynamic scholarship-holdings metrics, and provisional collection bands: 15–30 core works for a strong foundation, 50–75 for a visibly impressive collection, and 150–200 plus a defensible multilingual denominator and expert gap review for expert-comprehensive status. No private content was released and no commercial rights were inferred.
 - **2026-09-04:** Created the living maturity framework from the six priority research streams and added an explicit Mac mini handoff gate.

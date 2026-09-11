@@ -25,6 +25,22 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-11 — Codex — Additional Library of Congress scholarship volumes
+
+**Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-001, ACCESS-002
+**Corpus:** updated — state digest 46e1246db3ff; pre-batch backup integrity-checked
+**Tests:** 203 Python tests passed; archive verification, SQLite integrity and foreign-key checks passed; manifests replayed without corpus changes
+
+- Deposited five researcher-supplied PDFs in the private content-addressed archive: complete Levene 2013, Berlin 2018, Saar 2017, and Naveh–Shaked 1985 volumes, plus Christelle Jullien’s complete three-page review of *Studies in the Syriac Magical Traditions*. The review file is explicitly not treated as the reviewed book.
+- Added 214 rights-safe, page-located object appearances: 30 physical bowls from Levene 2013, fourteen from the distinct 1985 first edition of Naveh–Shaked, and 170 minimum physical-object appearances from the Berlin catalogue’s 169 numbered entries. Berlin entry 168 is represented as two unresolved minimum bowl components because the catalogue says its fragments come from at least two different bowls; skull and eggshell material remains typed as non-bowl rather than inflated into the bowl count.
+- Corrected the Berlin source from provisional repository metadata to the inspected title, author/contributor order, DOI, ISBNs, and 169-entry scope. Registered all three new publication keys; all 23 current keys resolve, covering 841 candidate records before identity deduplication.
+- Added Saar’s monograph as a thematic study. Used Jullien’s complete contents list to index the reviewed 2021 volume and all nine contributions, including Moriggi’s Syriac-bowl chapter, while recording that none of those chapter texts or the book itself was supplied.
+- Scholarship now contains 214 works, 26 source-linked held documents, 53 classified scopes, and 161 unclassified works. Complete corpus/catalogue holdings now support 450 direct appearances; publication-reference coverage rises to 598/1,074 probable or confirmed identities (55.7%).
+- No copyrighted transcription, translation, commentary, review prose, or image was copied into the corpus or public layer. Added the four new claim labels to the explicit field model so all 106 current claim fields remain classified (69 grouped, 37 deliberately excluded).
+- Updated acquisition, campaign, conflict, enrichment, and maturity reports and wrote a private research export. The remaining LC priorities are still Segal 2000, Isbell 1975, TMH 7, and the 1998 third edition of Naveh–Shaked; the newly held 1985 first edition is not conflated with it.
+
+---
+
 ## 2026-09-11 — Codex — Library of Congress Brill corpus editions
 
 **Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-001, ACCESS-002

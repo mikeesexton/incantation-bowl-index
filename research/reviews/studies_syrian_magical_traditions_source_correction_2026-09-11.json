@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T17:17:00Z",
+  "evidence_path": "research/reviews/loc_additional_volumes_evidence_2026-09-11.json",
+  "evidence_sha256": "8a00ef67a57eaa52826fa65a08cfea345310519e79fc855dd983d496d0778d54",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-MORIGGI-STMT2021-CHAPTER",
+      "source_id": "SRC-B208CF7A6267",
+      "replacement_source_id": null,
+      "rationale": "The supplied complete Jullien review verifies the chapter’s authorship, title, containing volume, year, and pp. 57–76. It does not provide or verify the chapter text.",
+      "before": {"source_type":"chapter","title":"Syriac Incantation Bowls and the Mesopotamian Context: A Glimpse into Christian-Jewish Cultural Interactions","authors":"Marco Moriggi","issued_year":2021,"container_title":"Studies in the Syriac Magical Traditions","publisher":"BRILL","url":"https://doi.org/10.1163/9789004467200_005","doi":"10.1163/9789004467200_005","isbn":null,"citation":"Syriac Incantation Bowls and the Mesopotamian Context: A Glimpse into Christian-Jewish Cultural Interactions (2021). Crossref DOI 10.1163/9789004467200_005.","access_status":"unknown","rights_status":"unknown","notes":"Discovered in broad Crossref metadata sweep; object-level contents require source inspection."},
+      "after": {"source_type":"chapter","title":"Syriac Incantation Bowls and the Mesopotamian Context: A Glimpse into Christian-Jewish Cultural Interactions","authors":"Marco Moriggi","issued_year":2021,"container_title":"Studies in the Syriac Magical Traditions","publisher":"Brill","url":"https://doi.org/10.1163/9789004467200_005","doi":"10.1163/9789004467200_005","isbn":null,"citation":"Moriggi, Marco. ‘Syriac Incantation Bowls and the Mesopotamian Context: A Glimpse into Christian-Jewish Cultural Interactions.’ In Studies in the Syriac Magical Traditions, edited by Marco Moriggi and Siam Bhayro, 57–76. Leiden: Brill, 2021.","access_status":"unknown","rights_status":"copyrighted","notes":"Chapter metadata and pp. 57–76 verified from Jullien 2022 review, SRC-8FA39ADCBF5F, p. 2. The supplied file is the review, not this chapter; chapter text is not held."}
+    }
+  ]
+}

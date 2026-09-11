@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T17:13:00Z",
+  "evidence_path": "research/reviews/loc_additional_volumes_evidence_2026-09-11.json",
+  "evidence_sha256": "8a00ef67a57eaa52826fa65a08cfea345310519e79fc855dd983d496d0778d54",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-BERLIN2018-FULL-CATALOGUE",
+      "source_id": "SRC-DA708912C2D3",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied catalogue verifies the exact title, author order and contributor roles, DOI, ISBNs, complete availability, and the actual 169-entry catalogue structure. It corrects provisional repository metadata without changing the work identity.",
+      "before": {
+        "source_type": "catalogue",
+        "title": "A Catalogue of Babylonian Incantation Bowls in the Vorderasiatisches Museum (Berlin): Descriptive List and Edition of Selected Texts",
+        "authors": "Dan Levene; Siam Bhayro; James Nathan Ford; Ortal-Paz Saar; Matthew Morgenstern; Naama Vilozny",
+        "issued_year": 2018,
+        "container_title": "Magical and Religious Literature of Late Antiquity 7",
+        "publisher": "Brill",
+        "url": "https://eprints.soton.ac.uk/393875/",
+        "doi": null,
+        "isbn": null,
+        "citation": "Levene, Dan, Siam Bhayro, James Nathan Ford, Ortal-Paz Saar, Matthew Morgenstern, and Naama Vilozny. A Catalogue of Babylonian Incantation Bowls in the Vorderasiatisches Museum (Berlin): Descriptive List and Edition of Selected Texts. MRLA 7. Leiden: Brill, 2018.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Repository metadata states 177 entries: bowls/fragments plus two skulls, one bone fragment, and one eggshell. Accepted manuscript is restricted."
+      },
+      "after": {
+        "source_type": "catalogue",
+        "title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+        "authors": "Siam Bhayro; James Nathan Ford; Dan Levene; Ortal-Paz Saar; Matthew Morgenstern; Marco Moriggi; Naama Vilozny",
+        "issued_year": 2018,
+        "container_title": "Magical and Religious Literature of Late Antiquity 7",
+        "publisher": "Brill",
+        "url": "https://doi.org/10.1163/9789004373686",
+        "doi": "10.1163/9789004373686",
+        "isbn": "978-90-04-34447-1; 978-90-04-37368-6",
+        "citation": "Bhayro, Siam, James Nathan Ford, Dan Levene, and Ortal-Paz Saar, with contributions by Matthew Morgenstern, Marco Moriggi, and Naama Vilozny. Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts. Magical and Religious Literature of Late Antiquity 7. Leiden and Boston: Brill, 2018.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete 254-page researcher-supplied catalogue held in the private archive, SHA-256 7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac. It has 169 numbered catalogue entries, not 177. Entry 168 contains fragments from at least two distinct bowls; the selected-text section treats seventeen physical items in sixteen sections. Copyrighted text and images are not cleared for public release."
+      }
+    }
+  ]
+}
