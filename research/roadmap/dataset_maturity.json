@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-11T17:20:00+00:00",
+  "updated_at": "2026-09-12T03:33:49+00:00",
   "portfolio_summary": {
     "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
     "strengths": [
@@ -13,7 +13,8 @@
       "The project now has an external yardstick. Waller's list of JBA bowl publications 1853-2024 is held, transcribed and measured against, so completeness is a number rather than an impression.",
       "Bibliographic coverage of the field's JBA control list is complete: 115 of 115 publications 1853-2024 have a source record with a sourced citation, up from 46.",
       "Publications are first-class: a bowl can be asked which edition publishes it, separately from which source reported the designation. All 23 publication keys now resolve, covering 841 distinct candidate records. Counts deduplicate records across aliases and publications.",
-      "Seven complete corpus editions or collection catalogues are now held and inspected: both Aramaic Bowl Spells volumes, Moriggi's Syriac corpus, Ford-Morgenstern's Hilprecht catalogue, Levene's curse-text volume, the Berlin catalogue, and Naveh-Shaked 1985. Their 450 catalogue appearances are indexed with printed-page locators; 121 attach by exact identifiers to existing records and 329 remain separate new candidates pending ordinary reconciliation."
+      "Seven complete corpus editions or collection catalogues are now held and inspected: both Aramaic Bowl Spells volumes, Moriggi's Syriac corpus, Ford-Morgenstern's Hilprecht catalogue, Levene's curse-text volume, the Berlin catalogue, and Naveh-Shaked 1985. Their 450 catalogue appearances are indexed with printed-page locators; 121 attach by exact identifiers to existing records and 329 remain separate new candidates pending ordinary reconciliation.",
+      "The research architecture is ready for a bounded automation pilot: stable identifiers, logged searches, content hashes, source-attributed manifests, idempotent ingestion and fail-closed public exports allow collectors to discover CC-licensed or public metadata and open review leads without making scholarly decisions."
     ],
     "blockers": [
       "Publication links remain incomplete: 737 of 1,654 distinct identities carry a publication reference, including 598 of 1,074 probable or confirmed identities. All 23 current keys resolve, but the 80% TEXT-001 gate is not yet met.",
@@ -21,7 +22,8 @@
       "Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 48 identities have a translation. The new protected editions are intentionally indexed without copying their text.",
       "Release rights are unreviewed: all 325 media rows have inventory holds, but zero have completed rights decisions and zero are approved for reuse.",
       "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
-      "Acquisition completeness is not yet measured corpus-wide: 38 sources have linked captures, 27 with PDFs and eleven with only non-PDF captures. Capture presence alone does not distinguish a complete work from an excerpt or front matter, although the inspected Library of Congress batches have hash-bound completeness evidence. 287 distinct candidate records still depend on publications without linked PDF captures. Segal 2000, Isbell 1975, Müller-Kessler's TMH 7, and the distinct Naveh–Shaked 1998 third edition remain priority Library of Congress consultations."
+      "Acquisition completeness is not yet measured corpus-wide: 38 sources have linked captures, 27 with PDFs and eleven with only non-PDF captures. Capture presence alone does not distinguish a complete work from an excerpt or front matter, although the inspected Library of Congress batches have hash-bound completeness evidence. 287 distinct candidate records still depend on publications without linked PDF captures. Segal 2000, Isbell 1975, Müller-Kessler's TMH 7, and the distinct Naveh–Shaked 1998 third edition remain priority Library of Congress consultations.",
+      "Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run."
     ]
   },
   "access_layers": {
@@ -75,7 +77,7 @@
         "title": "Visibly impressive / plausibly comprehensive",
         "minimum_core_works": 50,
         "maximum_core_works": 75,
-        "quality_gate": "All eight LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level"
+        "quality_gate": "All high-impact LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level"
       },
       {
         "id": "EXPERT",
@@ -85,6 +87,20 @@
         "quality_gate": "At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap"
       }
     ]
+  },
+  "automation_readiness": {
+    "assessment": "Ready now for bounded, lead-only internet research pilots; not ready for unattended corpus ingestion, identity resolution, rights decisions, or publication.",
+    "safe_now": [
+      "Query stable public bibliographic endpoints and open repositories for citations, identifiers, access changes, and newly published work.",
+      "Poll approved museum, auction, sitemap, and RSS endpoints at conservative rates; hash responses, diff changes, and open review leads without changing scholarly conclusions.",
+      "Process open-licensed or researcher-supplied documents through the existing private archive and manifest workflow, while preserving source, locator, access, and rights metadata."
+    ],
+    "not_yet_safe": [
+      "Broad crawling of unclassified sites, automatic acquisition of paywalled or access-controlled full text, and any workflow that treats a catalog's Digital label as remote-open access.",
+      "Automatic merges, preferred-reading selection, authenticity judgments, rights clearance, or promotion from the private vault to a public or paid layer.",
+      "Unattended scheduled writes before encrypted off-device backup, per-source policies, bounded retries, disable switches, alerts, and a successful 14-day shadow run exist."
+    ],
+    "recommended_pilot": "Start with the Library of Congress catalog and loc.gov digital-book metadata, then add Crossref/OpenAlex alerts and one stable museum endpoint. The pilot should create or refresh leads only, retain raw responses by hash, and require human approval before any corpus manifest is applied."
   },
   "maturity_levels": [
     {
@@ -146,9 +162,10 @@
         {
           "id": "DISC-003",
           "title": "Classify recurring discovery sources for automation",
-          "status": "queued",
+          "status": "in_progress",
           "owner": "Research",
-          "done_when": "Every monitored source has a documented endpoint, cadence, access/robots status, expected identifier, and automation tier."
+          "done_when": "Every monitored source has a documented endpoint, cadence, access/robots status, expected identifier, and automation tier.",
+          "evidence": "The 11 September LOC review established the first source-class distinction: open loc.gov digital resources, onsite-only digital Stacks records, onsite physical books, and onsite microform require different automation and access handling. The full per-source registry is not yet complete, so broad automated collection remains out of scope."
         }
       ]
     },
@@ -343,7 +360,7 @@
           "status": "in_progress",
           "owner": "Mixed",
           "done_when": "Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.",
-          "evidence": "`ibi report-acquisitions` now records 38 of 859 sources with captures: 27 with PDFs and eleven with only non-PDF captures. Five newly supplied PDFs have hash-bound inspection evidence: complete Levene 2013, Berlin 2018, Saar 2017, and Naveh-Shaked 1985 volumes, plus Jullien's complete three-page review (not the reviewed book). The complete corpus/catalogue holdings now support 450 direct appearances. 663 sources with dependants still lack a PDF and 287 candidate records depend on publications without PDFs. Segal 2000 remains the highest-impact acquisition at 252 records, followed by Isbell 1975, the distinct Naveh-Shaked 1998 third edition, and Müller-Kessler's TMH 7. PURCHASE-001 remains satisfied by the held private copy rather than purchase."
+          "evidence": "`ibi report-acquisitions` now records 38 of 859 sources with captures: 27 with PDFs and eleven with only non-PDF captures. Five newly supplied PDFs have hash-bound inspection evidence: complete Levene 2013, Berlin 2018, Saar 2017, and Naveh-Shaked 1985 volumes, plus Jullien's complete three-page review (not the reviewed book). The complete corpus/catalogue holdings now support 450 direct appearances. 663 sources with dependants still lack a PDF and 287 candidate records depend on publications without PDFs. Segal 2000 remains the highest-impact acquisition at 252 records, followed by Isbell 1975, the distinct Naveh-Shaked 1998 third edition, and Müller-Kessler's TMH 7. The expanded LOC queue now also verifies onsite access to Naveh-Shaked 1993, Yamauchi 1967, Pognon 1898, Juusola 1999, the full Syriac traditions volume, and Stübe 1895 microfilm, with digital opportunities tracked separately by actual remote or onsite access mode. PURCHASE-001 remains satisfied by the held private copy rather than purchase."
         },
         {
           "id": "SCHOL-006",
@@ -595,7 +612,8 @@
           "title": "Implement safe collector scheduling and change detection",
           "status": "queued",
           "owner": "Engineering",
-          "done_when": "Approved collectors have bounded schedules, rate limits, idempotency, hashes/diffs, retry limits, failure alerts, and per-source disable switches."
+          "done_when": "Approved collectors have bounded schedules, rate limits, idempotency, hashes/diffs, retry limits, failure alerts, and per-source disable switches.",
+          "evidence": "The corpus already has content hashes, idempotent manifest ingestion, search logs and lead states, which are enough for a read-only lead-generation pilot. Scheduling, rate policy, alert delivery, disable switches and shadow-run evidence are not implemented, so unattended corpus writes remain prohibited."
         },
         {
           "id": "OPS-004",
@@ -758,6 +776,10 @@
     ]
   },
   "change_log": [
+    {
+      "date": "2026-09-11",
+      "note": "Reassessed automation readiness and expanded the Library of Congress access map. The project is ready for bounded lead-only monitoring of stable public endpoints, but unattended corpus writes remain gated by source classification, encrypted off-device backup, collector controls, and a 14-day shadow run. Added verified onsite routes for Naveh-Shaked 1993, Juusola 1999, the full Moriggi-Bhayro Syriac volume, Yamauchi 1967, Pognon 1898, and Stübe 1895 microfilm; separately recorded remotely open, onsite-digital, and linked-electronic resources so a Digital catalog label is never treated as remote access by default."
+    },
     {
       "date": "2026-09-11",
       "note": "Ingested five additional researcher-supplied PDFs. Complete Levene 2013, the 2018 Berlin catalogue, and the distinct Naveh-Shaked 1985 first edition add 214 page-located appearances across 212 newly created candidates and two exact existing-object links; Berlin's 169 numbered entries yield 170 minimum physical-object appearances because entry 168 explicitly contains fragments from at least two bowls. Added Saar 2017 as a held thematic monograph. Identified the Moriggi-Bhayro file as Jullien's three-page review rather than the reviewed book, deposited it accurately, and used its contents to index the 2021 volume and all nine contributions without claiming their texts are held. No protected transcription, translation, commentary, review prose, or image entered the public data."
@@ -1018,6 +1040,139 @@
         "catalog_url": "https://lccn.loc.gov/2014006700",
         "call_number": "PJ5615 .M665 2014",
         "needed_for": "Satisfied 2026-09-11; all 49 Syriac bowl re-editions indexed"
+      },
+      {
+        "id": "LOC-READ-009",
+        "priority": 2,
+        "status": "ready_for_onsite_request",
+        "source_id": "SRC-795E719C624E",
+        "title": "Naveh and Shaked — Magic Spells and Formulae",
+        "year": 1993,
+        "lccn": "94152039",
+        "catalog_url": "https://lccn.loc.gov/94152039",
+        "call_number": "BM729.A4 M34 1993",
+        "needed_for": "TEXT-001; direct Aramaic editions, translations, commentary, and 80 pages of plates"
+      },
+      {
+        "id": "LOC-READ-010",
+        "priority": 2,
+        "status": "ready_for_onsite_request",
+        "source_id": "SRC-AF9EF12C3CB9",
+        "title": "Yamauchi — Mandaic Incantation Texts",
+        "year": 1967,
+        "lccn": "68001338",
+        "catalog_url": "https://lccn.loc.gov/68001338",
+        "call_number": "PJ5328.4 .Y3",
+        "needed_for": "META-008; Mandaic denominator, texts and translations; onsite and offsite copies"
+      },
+      {
+        "id": "LOC-READ-011",
+        "priority": 2,
+        "status": "ready_for_onsite_request",
+        "source_id": "SRC-E7D5F020B31C",
+        "title": "Pognon — Inscriptions mandaïtes des coupes de Khouabir",
+        "year": 1898,
+        "lccn": "27006296",
+        "catalog_url": "https://lccn.loc.gov/27006296",
+        "call_number": "PJ5329 .P6",
+        "needed_for": "META-008; early Mandaic bowl corpus, translations, glossary, and 31 plates"
+      },
+      {
+        "id": "LOC-READ-012",
+        "priority": 3,
+        "status": "ready_for_onsite_request",
+        "source_id": "unlinked",
+        "title": "Juusola — Linguistic Peculiarities in the Aramaic Magic Bowl Texts",
+        "year": 1999,
+        "lccn": "00307536",
+        "catalog_url": "https://lccn.loc.gov/00307536",
+        "call_number": "PJ5202 .J88 1999",
+        "needed_for": "META-003; controlled language, orthography, morphology, and script normalization"
+      },
+      {
+        "id": "LOC-READ-013",
+        "priority": 3,
+        "status": "ready_for_offsite_request",
+        "source_id": "SRC-STMT2021-BOOK",
+        "title": "Moriggi and Bhayro — Studies in the Syriac Magical Traditions",
+        "year": 2022,
+        "lccn": "2021037995",
+        "catalog_url": "https://lccn.loc.gov/2021037995",
+        "call_number": "BF1622.S95 S78 2022 FT MEADE",
+        "needed_for": "SCHOL-006; obtain the full volume behind the held three-page review, including the Syriac-bowl contribution"
+      },
+      {
+        "id": "LOC-READ-014",
+        "priority": 3,
+        "status": "ready_for_microform_request",
+        "source_id": "SRC-0B6C0E1133EF",
+        "title": "Stübe — Jüdisch-babylonische Zaubertexte",
+        "year": 1895,
+        "lccn": "92892154",
+        "catalog_url": "https://lccn.loc.gov/92892154",
+        "call_number": "Microfilm 91/5637 (B)",
+        "needed_for": "TEXT-001; public-domain early edition and historical bibliography"
+      }
+    ]
+  },
+  "digital_access_register": {
+    "policy": "Digital access is classified by what the Library record actually permits. Remote-open files may be reviewed for lawful capture; onsite-only digital resources require a Library workstation or Stacks session; a catalog link to an external electronic copy is a lead, not a completed capture.",
+    "items": [
+      {
+        "id": "LOC-DIG-001",
+        "priority": 1,
+        "status": "complete_private_copy",
+        "access_mode": "Remote open PDF",
+        "source_id": "SRC-73C44B143A9D",
+        "title": "Waller — The Bible in the Bowls",
+        "year": 2022,
+        "lccn": "2021386007",
+        "catalog_url": "https://lccn.loc.gov/2021386007",
+        "access_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "rights_note": "CC BY-NC 4.0; already held and indexed, so this is a reusable access route rather than a new acquisition",
+        "needed_for": "Intertexts, quotation concordances, and publication links"
+      },
+      {
+        "id": "LOC-DIG-002",
+        "priority": 2,
+        "status": "ready_for_capture_review",
+        "access_mode": "Remote open PDF",
+        "source_id": "unlinked",
+        "title": "Hornkohl and Khan, eds. — Studies in Semitic Vocalisation and Reading Traditions",
+        "year": 2020,
+        "lccn": "2019394570",
+        "catalog_url": "https://lccn.loc.gov/2019394570",
+        "access_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/39/45/70/2019394570/2019394570.pdf",
+        "rights_note": "CC BY 4.0; Dorota Molin's pp. 147–170 chapter directly analyzes biblical quotations in bowls",
+        "needed_for": "META-003 and Intertexts; orthography and Babylonian reading-tradition claims"
+      },
+      {
+        "id": "LOC-DIG-003",
+        "priority": 3,
+        "status": "onsite_digital_available",
+        "access_mode": "Onsite digital via Stacks",
+        "source_id": "SRC-F632FCD638E0",
+        "title": "Mokhtarian — Rabbis, Sorcerers, Kings, and Priests",
+        "year": 2015,
+        "lccn": "2021693507",
+        "catalog_url": "https://lccn.loc.gov/2021693507",
+        "access_url": "https://lccn.loc.gov/2021693507",
+        "rights_note": "The LOC Digital label is onsite-only; do not schedule remote capture",
+        "needed_for": "Contextual enrichment of Sasanian, rabbinic, and bowl relationships"
+      },
+      {
+        "id": "LOC-DIG-004",
+        "priority": 3,
+        "status": "linked_electronic_copy_available",
+        "access_mode": "Remote external electronic copy linked by LOC",
+        "source_id": "SRC-8900A7CAF037",
+        "title": "Layard — Discoveries in the Ruins of Nineveh and Babylon",
+        "year": 1853,
+        "lccn": "14016852",
+        "catalog_url": "https://lccn.loc.gov/14016852",
+        "access_url": "https://lccn.loc.gov/14016852",
+        "rights_note": "Public-domain-era book; verify the linked copy and archive provenance before ingest",
+        "needed_for": "Early discovery history, provenance claims, and bibliography"
       }
     ]
   },
@@ -1044,8 +1199,9 @@
     "ACCESS-004 / SCHOL-005: convert the interim hash-bound completeness evidence used for the four 11 September Brill volumes into a general document-completeness and transformation ledger distinguishing citation-only, excerpt, front matter, complete, physically inspected, OCR'd, corrected and object-level extracted states.",
     "ACCESS-002 / OPS-002: define the private rich-text package and complete encrypted local plus off-device backup before transforming the new complete editions. Preserve printed page anchors, ancient-script Unicode, uncertainty markup and links to page images; keep the vault outside Git and public exports.",
     "ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.",
+    "DISC-003 / OPS-003: begin a bounded lead-only automation pilot over the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; do not apply corpus manifests automatically. Continuous scheduling remains gated by backup, alerting, disable switches and a 14-day shadow run.",
     "TEXT-001 / SCHOL-004 follow-through: all 23 publication keys resolve and 737 of 1,654 identities carry publication references. Extend checked edition locators beyond the 450-appearance complete-volume cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",
-    "SCHOL-005 / QA-004: the Reader Identification Card and seven complete corpus/catalogue volumes are secured. Use the remaining Library of Congress time for Segal 2000, Isbell 1975, TMH 7 and the distinct Naveh–Shaked 1998 third edition, recording consultation and copying evidence per item; Segal remains the highest-impact gap.",
+    "SCHOL-005 / QA-004: the Reader Identification Card and seven complete corpus/catalogue volumes are secured. Use the remaining Library of Congress time first for Segal 2000, Isbell 1975, TMH 7 and the distinct Naveh–Shaked 1998 third edition, then for Naveh–Shaked 1993, Yamauchi 1967 and Pognon 1898. Juusola 1999, the full Syriac traditions volume and Stübe microfilm are valuable second-line requests. Record consultation and copying evidence per item; Segal remains the highest-impact gap.",
     "SCHOL-006: classify the remaining 161 unclassified works by scope. Twenty-six scholarship documents are now held and 53 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",
     "TEXT-001 follow-through: seven complete corpus editions or catalogues are now enumerated at catalogue level. Review the 329 separate candidates and exact-identifier overlaps in ordinary source batches; do not merge them automatically or import protected readings. Berlin entry 168 remains two unresolved minimum components rather than one falsely counted bowl.",
     "QA-002 / CONC-005: review the 417 untriaged field-difference instances in coherent source batches, including 285 earlier reviews now stale against current evidence. Preserve reported values and uncertainty; claim-vocabulary coverage is complete.",

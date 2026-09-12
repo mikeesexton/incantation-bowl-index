@@ -370,6 +370,32 @@ def write_roadmap(conn, config_path, destination):
             stream["target_level"], stream["steward"],
         ))
 
+    automation = config.get("automation_readiness", {})
+    if automation:
+        lines.extend([
+            "",
+            "## Automation readiness",
+            "",
+            "**Assessment:** %s" % automation.get(
+                "assessment",
+                "Automation readiness has not been assessed.",
+            ),
+            "",
+        ])
+        if automation.get("safe_now"):
+            lines.extend(["### Safe to automate now", ""])
+            lines.extend("- " + item for item in automation["safe_now"])
+            lines.append("")
+        if automation.get("not_yet_safe"):
+            lines.extend(["### Keep behind human review", ""])
+            lines.extend("- " + item for item in automation["not_yet_safe"])
+            lines.append("")
+        if automation.get("recommended_pilot"):
+            lines.extend([
+                "**Recommended pilot:** %s" % automation["recommended_pilot"],
+                "",
+            ])
+
     lines.extend(["", "## Current priority order", ""])
     for index, priority in enumerate(config.get("priorities", []), 1):
         lines.append("%s. %s" % (index, priority))
@@ -398,6 +424,34 @@ def write_roadmap(conn, config_path, destination):
         lines.append("")
         if offline.get("note"):
             lines.extend([offline["note"], ""])
+
+    digital = config.get("digital_access_register", {})
+    digital_items = digital.get("items", [])
+    if digital_items:
+        lines.extend([
+            "",
+            "## Digital research queue",
+            "",
+            digital.get(
+                "policy",
+                "Digital access is recorded separately from physical availability.",
+            ),
+            "",
+            "| Priority | Status | Access mode | Publication | Library record | Access | Rights and constraints | Needed for |",
+            "|---:|---|---|---|---|---|---|---|",
+        ])
+        for item in digital_items:
+            publication = "%s (%s) · `%s`" % (
+                item["title"], item.get("year", "n.d."), item.get("source_id", "unlinked"),
+            )
+            record = "[%s](%s)" % (item["lccn"], item["catalog_url"])
+            access = "[Route](%s)" % item["access_url"]
+            lines.append("| %s | %s | %s | %s | %s | %s | %s | %s |" % (
+                item["priority"], item["status"].replace("_", " ").title(),
+                item["access_mode"], publication, record, access,
+                item["rights_note"], item["needed_for"],
+            ))
+        lines.append("")
 
     purchases = config.get("purchase_register", {})
     items = purchases.get("items", [])

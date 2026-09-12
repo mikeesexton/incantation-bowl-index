@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-11 — Codex — LOC access map and automation readiness
+
+**Claimed:** SCHOL-005, DISC-003, OPS-003
+**Corpus:** unchanged — state digest 46e1246db3ff
+**Tests:** 203 Python tests passed; roadmap generation, JSON parsing and diff-whitespace checks passed
+
+- Updated the living maturity roadmap with a verified Library of Congress access map that separates remotely open digital works, onsite-only digital resources, physical books, and microform. Added onsite routes for Naveh–Shaked 1993, Yamauchi 1967, Pognon 1898, Juusola 1999, the full Moriggi–Bhayro Syriac volume, and Stübe 1895 microfilm.
+- Added a separate digital queue for the already held *Bible in the Bowls*, the CC BY 4.0 *Studies in Semitic Vocalisation and Reading Traditions*, LOC's onsite-only digital edition of Mokhtarian 2015, and the LOC-linked electronic copy of Layard 1853. A Digital catalog label is no longer treated as proof of remote access.
+- Marked DISC-003 in progress and documented the current automation boundary: lead-only monitoring over stable public endpoints can begin, but unattended corpus writes remain gated by per-source policies, encrypted off-device backup, scheduling and alert controls, disable switches, and a 14-day shadow run.
+- No source, object, claim, identity, rights decision, capture, or public release changed.
+
 ## 2026-09-11 — Codex — Additional Library of Congress scholarship volumes
 
 **Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-001, ACCESS-002

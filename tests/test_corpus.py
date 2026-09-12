@@ -529,6 +529,12 @@ class CorpusTests(unittest.TestCase):
                     "maximum_core_works": 30, "quality_gate": "Core works checked",
                 }],
             },
+            "automation_readiness": {
+                "assessment": "Ready for a lead-only pilot.",
+                "safe_now": ["Collect public metadata."],
+                "not_yet_safe": ["Do not auto-merge."],
+                "recommended_pilot": "Monitor one stable catalog.",
+            },
             "handoff_gate": {
                 "target_date": "2026-09-22",
                 "metric_conditions": [{
@@ -554,6 +560,17 @@ class CorpusTests(unittest.TestCase):
                     "call_number": "PJ5208.A5 I8 1975",
                 }],
             },
+            "digital_access_register": {
+                "policy": "Distinguish remote from onsite digital access.",
+                "items": [{
+                    "priority": 1, "status": "remote_open", "access_mode": "Remote open PDF",
+                    "title": "Digital volume", "year": 2020, "source_id": "SRC-DIG",
+                    "needed_for": "T-001", "lccn": "2019394570",
+                    "catalog_url": "https://lccn.loc.gov/2019394570",
+                    "access_url": "https://example.test/open.pdf",
+                    "rights_note": "CC BY 4.0",
+                }],
+            },
             "change_log": [],
         }), encoding="utf-8")
         destination = Path(self.temp.name) / "roadmap.md"
@@ -569,9 +586,14 @@ class CorpusTests(unittest.TestCase):
         self.assertIn("1. Private research vault", rendered)
         self.assertIn("## Scholarship collection scale", rendered)
         self.assertIn("| Strong foundation | 15–30 | 15–30 | Core works checked |", rendered)
+        self.assertIn("## Automation readiness", rendered)
+        self.assertIn("Ready for a lead-only pilot.", rendered)
         self.assertIn("## Offline research queue", rendered)
         self.assertIn("[75015949](https://lccn.loc.gov/75015949)", rendered)
         self.assertIn("`PJ5208.A5 I8 1975`", rendered)
+        self.assertIn("## Digital research queue", rendered)
+        self.assertIn("Remote open PDF", rendered)
+        self.assertIn("[Route](https://example.test/open.pdf)", rendered)
         self.assertIn("## Publication purchase backups", rendered)
         self.assertIn("Test volume (2013) · `SRC-TEST`", rendered)
         self.assertIn("[Publisher](https://example.test/book)", rendered)
