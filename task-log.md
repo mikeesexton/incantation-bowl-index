@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-12 — Codex — Researcher-supplied LOC follow-up PDFs
+
+**Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-008, ACCESS-002
+**Corpus:** changed — state digest `150b3848c948`
+**Tests:** 203 Python tests passed; archive verification, SQLite integrity and foreign-key checks passed; JSON/JSONL manifests validated
+
+- Audited all six supplied files by hash, text, page structure and representative rendered pages. Waller 2022 is an exact duplicate of the held capture; Hornkohl-Khan 2020, Layard 1853 and Pognon 1898-1899 are complete books; Molin's chapter is complete within Hornkohl-Khan; the Naveh-Shaked 1993 file is only seven-page partial front matter; and the Project MUSE file is Wajsberg's review rather than Juusola's book.
+- Deposited the five unique PDFs under their actual source identities and linked the shared Hornkohl-Khan file to Molin's chapter. Rights and completeness remain explicit; no modern copyrighted transcription, translation, commentary or image was copied into the public corpus.
+- Indexed thirty separately numbered Pognon bowls and six separately numbered Ellis bowls as conservative probable candidates with exact publication locators. No identity merges were inferred, and Ellis's unquantified fragment group was not misrepresented as a single bowl.
+- Recorded the researcher's LOC outcomes: Isbell 1975, Naveh-Shaked 1998, TMH 7 and Yamauchi 1967 are requested; Segal 2000, Naveh-Shaked 1993 and Mokhtarian 2015 remain blocked but queued; Juusola 1999 remains unheld because only its review was supplied.
+- Updated the generated acquisition, campaign, conflict, enrichment and mission-plan reports. Current scale is 1,958 candidate records, 1,690 identity hypotheses, 862 sources and 2,125 appearances; all 25 publication keys resolve, and nine complete corpus/catalogue holdings support 486 located appearances.
+
 ## 2026-09-11 — Codex — LOC access map and automation readiness
 
 **Claimed:** SCHOL-005, DISC-003, OPS-003

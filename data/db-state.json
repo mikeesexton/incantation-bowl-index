@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "46e1246db3ffb7cf55efbf4dc77a6f858c7043ffd4eec2395d6b2de05173c36b",
+  "corpus_digest": "150b3848c9484b70129c4bd80921c210ac07f4345d845485a2aa367e217d3200",
   "migrations": 14,
-  "note": "Updated roadmap with LOC access map and bounded automation-readiness assessment; corpus unchanged.",
-  "recorded_at": "2026-09-12T03:35:40+00:00",
+  "note": "Ingested and classified six researcher-supplied PDFs; added 36 Pognon/Ellis candidates, source scopes and LOC request outcomes; updated mission plan.",
+  "recorded_at": "2026-09-12T11:47:57+00:00",
   "recorded_by": "Codex",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "c22d9672d823389e30019f00d99549f12d7c3087d0baefa910ef70e41c07bd8f",
-      "rows": 2089
+      "digest": "4aa95317799e2dd4cae6b2fe70f55d70c930c2c236663ca14145af356db2c38d",
+      "rows": 2125
     },
     "appearances": {
-      "digest": "e6e7d1885c0de20f4fa9be05d9a56280324685afac58060b4191c5ac94478cb0",
-      "rows": 2089
+      "digest": "cb8c8f9c8592bab5dd9334f0508928b566330e6f1ece5ba10ed6d0ac760ed295",
+      "rows": 2125
     },
     "captures": {
-      "digest": "838ac242016e5f743ac0c8bca15be0063c2d3cc30d00b22c551cf3c9a476f3c7",
-      "rows": 41
+      "digest": "95c5fbae8b46732f87ae86cf72f72fd780c0e4fd5a688674a0226378d750f0e8",
+      "rows": 47
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "4dfac69888254c3958d26122d76338e1245459f76e54ba440b3caef9437cdaf6",
-      "rows": 6640
+      "digest": "e5cf4fd72cc206d1e618bc794b8e330e517477463a8c28d4526f4e886168ccd5",
+      "rows": 6772
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -55,12 +55,12 @@
       "rows": 212
     },
     "identifiers": {
-      "digest": "1cfe6bc1eeb7656c954ffbdb8bb13dc1f99acced38716f639742814c3fd7b40f",
-      "rows": 4561
+      "digest": "9611a4fc5555af14cce25e5ae6a710873c03a976a587088b322adcc59e4bfe8d",
+      "rows": 4597
     },
     "leads": {
-      "digest": "c7cd708af5ae2297d34f0a9b4e3b0075c154e6e992544774042a7b9552896a4f",
-      "rows": 59
+      "digest": "c39e3a82883e9404543df3a293d096d5446ce54dc16dbae18f8b5a1f6d44bfeb",
+      "rows": 65
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
@@ -87,12 +87,12 @@
       "rows": 5
     },
     "objects": {
-      "digest": "2f3b669defb935b5b962b85e64c0c4823df75ef2b9b8ecb30e1ebb377287449d",
-      "rows": 1922
+      "digest": "7da9961f05d5f29c3d2f6fe6e60e18b8874e3527a1c16a2807a54c0995dcdd8e",
+      "rows": 1958
     },
     "publication_registry": {
-      "digest": "4a60648423a8fddaba588bad25975ccbce6fa180b723ded761c43ea3a73fd793",
-      "rows": 26
+      "digest": "cd3d9e651ebe2ec4ee6f5c08abcabb3dcc470b9d3714a44b2b44e02a829f7b04",
+      "rows": 28
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
@@ -111,16 +111,16 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "7ac513d9594cb9d2abf638f7845fe2a013b505530128b1aad721fa7af5f78f74",
-      "rows": 11
+      "digest": "2b6f136f0c6991fac847d81f114b6a3afd19dc5879e81c66067e0dfe56da2108",
+      "rows": 15
     },
     "source_scope_reviews": {
-      "digest": "8de5ec2de49b35b6b07c2fdee33bf7e916e6368bc16d1a058ca737ba5014ab57",
-      "rows": 33
+      "digest": "212826057206a3ec13dfb2ae4d03d0e06192efd209883af36714eec2c7a281ef",
+      "rows": 40
     },
     "sources": {
-      "digest": "7c6259620ccce4dae0ad8ef53d6ed4d4d186e01a952b05046921a36fa28aa368",
-      "rows": 859
+      "digest": "654177f748308b4a5fbdec3089aeae5a796171e60b552694af152494c352f6b0",
+      "rows": 862
     },
     "text_proofreading_reviews": {
       "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",

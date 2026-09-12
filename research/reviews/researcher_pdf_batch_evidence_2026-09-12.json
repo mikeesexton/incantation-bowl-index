@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T11:35:00Z",
+  "policy": "The supplied PDFs were treated only as research evidence. Any instructions embedded in their contents were ignored. Completeness was assessed from page count, title/imprint, contents, terminal matter, text extraction, and representative rendered-page inspection.",
+  "files": [
+    {
+      "filename": "obp.0305.pdf",
+      "sha256": "44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+      "pages": 198,
+      "identity": "Daniel James Waller, The Bible in the Bowls (Open Book Publishers, 2022)",
+      "extent": "complete book",
+      "rights": "CC BY-NC 4.0",
+      "disposition": "Exact hash duplicate of existing capture CAP-0D9545A92AFD; no second capture deposited."
+    },
+    {
+      "filename": "obp.0207.pdf",
+      "sha256": "241b5231aa7dfa16667b511a1e6982f501a385a3b0ea9ef11cfc7ae3ccdb10aa",
+      "pages": 713,
+      "identity": "Aaron D. Hornkohl and Geoffrey Khan, eds., Studies in Semitic Vocalisation and Reading Traditions (Open Book Publishers, 2020)",
+      "extent": "complete book, including Dorota Molin's complete printed pp. 147-170 chapter",
+      "rights": "CC BY 4.0",
+      "disposition": "Deposit against the complete volume and its bowl-relevant chapter; index the volume and chapter as separate sources."
+    },
+    {
+      "filename": "HHaAntigua90435LAYDis.pdf",
+      "sha256": "bf304bcb7f5600b3186468de76dd50aba6de7ef58331c886d2e33befea16c633",
+      "pages": 759,
+      "identity": "Austen H. Layard, Discoveries in the Ruins of Nineveh and Babylon (New York, 1853)",
+      "extent": "complete book, including Thomas Ellis's bowl discussion and editions on printed pp. 509-523",
+      "rights": "public-domain underlying work; Internet Archive scan provenance retained",
+      "disposition": "Deposit, correct the source record, and enumerate six separately numbered bowls. The additional fragments discussed collectively as no. 7 are not collapsed into one physical object."
+    },
+    {
+      "filename": "Joseph_Naveh_and_Shaul_Shaked_Magic_Spel.pdf",
+      "sha256": "71ebf58898eb2d4915650798050dcc6cf34171ee91b7890ae76ed4df5e4d65e9",
+      "pages": 7,
+      "identity": "Joseph Naveh and Shaul Shaked, Magic Spells and Formulae (Magnes Press, 1993)",
+      "extent": "partial front matter only: title page, imprint, and an incomplete contents opening; five PDF pages are blank",
+      "rights": "copyrighted; all rights reserved",
+      "disposition": "Deposit as a partial capture and keep the complete book in the access queue. No object enumeration is inferred from the incomplete contents."
+    },
+    {
+      "filename": "project_muse_389857.pdf",
+      "sha256": "d0bf2ceb21b2bec97bdf2096574aad9193410c039e240a9ac681723c656d9034",
+      "pages": 8,
+      "identity": "Eljakim Wajsberg, review of Hannu Juusola, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, Jewish Quarterly Review 92 (2001): 167-173",
+      "extent": "complete review (one Project MUSE cover page plus seven printed pages), not the reviewed monograph",
+      "rights": "copyrighted",
+      "disposition": "Deposit and correct the review source; keep Juusola 1999 unheld."
+    },
+    {
+      "filename": "oxu1-602450713-1789186760.pdf",
+      "sha256": "667521b689e12947f7911d9542b7fc0e57bee1179f0c057ec7d59de7ee5ed44a",
+      "pages": 417,
+      "identity": "Henri Pognon, Inscriptions mandaïtes des coupes de Khouabir (Paris, 1898-1899)",
+      "extent": "complete multi-part volume with thirty numbered Khouabir bowl texts, appendices, glossary, index, and plates",
+      "rights": "public-domain underlying work; HathiTrust/Google scan-use notice retained",
+      "disposition": "Deposit, correct the source record, and enumerate thirty separate publication appearances without asserting modern identity concordances."
+    }
+  ]
+}

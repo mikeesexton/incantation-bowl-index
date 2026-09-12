@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T11:35:00Z",
+  "evidence_path": "research/reviews/researcher_pdf_batch_evidence_2026-09-12.json",
+  "evidence_sha256": "5553128c39d82c4ed066af6d2aec955ff902388b30197d84a4a4f020c3708f69",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-LAYARD1853-COMPLETE",
+      "source_id": "SRC-8900A7CAF037",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied New York issue verifies the full subtitle, imprint, public-domain status, complete availability, and Thomas Ellis's six separately numbered bowl treatments plus an unquantified fragment group.",
+      "before": {
+        "source_type": "book",
+        "title": "Discoveries in the Ruins of Nineveh and Babylon",
+        "authors": "Austen Henry Layard; Thomas Ellis",
+        "issued_year": 1853,
+        "container_title": null,
+        "publisher": "John Murray",
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Layard, Austen Henry. Discoveries in the Ruins of Nineveh and Babylon. London: John Murray, 1853. Includes Thomas Ellis's decipherments of the incantation bowls Layard acquired.",
+        "access_status": "unknown",
+        "rights_status": "public_domain",
+        "notes": "Conventional beginning of JBA bowl scholarship (scoping review §4.1). The exact appendix locator for Ellis's bowl readings is not yet checked; establish it before citing any object to it."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum",
+        "authors": "Austen H. Layard; Thomas Ellis (bowl section)",
+        "issued_year": 1853,
+        "container_title": null,
+        "publisher": "G. P. Putnam & Co.",
+        "url": "https://archive.org/details/HHaAntigua90435LAYDis",
+        "doi": null,
+        "isbn": null,
+        "citation": "Layard, Austen H. Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum. New York: G. P. Putnam & Co., 1853. Thomas Ellis's bowl section, pp. 509-523.",
+        "access_status": "available",
+        "rights_status": "public_domain",
+        "notes": "Complete 759-page researcher-supplied Internet Archive scan held privately, SHA-256 bf304bcb7f56.... Ellis separately treats bowls 1-6 on printed pp. 509-522 and discusses multiple additional fragments collectively as no. 7 on pp. 522-523; the fragment group is not represented as one physical object."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-POGNON1898-COMPLETE",
+      "source_id": "SRC-E7D5F020B31C",
+      "replacement_source_id": null,
+      "rationale": "The complete researcher-supplied HathiTrust scan verifies the 1898-1899 multi-part imprint, complete availability, public-domain underlying work, and thirty separately numbered Khouabir bowl texts.",
+      "before": {
+        "source_type": "book",
+        "title": "Inscriptions mandaïtes des coupes de Khouabir",
+        "authors": "Henri Pognon",
+        "issued_year": 1898,
+        "container_title": null,
+        "publisher": "Imprimerie nationale",
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Pognon, Henri. Inscriptions mandaïtes des coupes de Khouabir. Paris, 1898.",
+        "access_status": "unknown",
+        "rights_status": "public_domain",
+        "notes": "Foundational Mandaic bowl corpus (scoping review §5.2: 'foundational but requires modern rechecking'). Khouabir is a named findspot cluster the index does not yet carry; its bowls need enumerating."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "authors": "Henri Pognon",
+        "issued_year": 1898,
+        "container_title": null,
+        "publisher": "Imprimerie nationale; H. Welter",
+        "url": "https://hdl.handle.net/2027/oxu1.602450713",
+        "doi": null,
+        "isbn": null,
+        "citation": "Pognon, Henri. Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire. Paris: Imprimerie nationale and H. Welter, 1898-1899.",
+        "access_status": "available",
+        "rights_status": "public_domain",
+        "notes": "Complete 417-page researcher-supplied HathiTrust PDF held privately, SHA-256 667521b689e1.... It contains thirty separately numbered Khouabir bowl texts, appendices, glossary, index, and plates. The source is foundational but its nineteenth-century readings and classifications require modern rechecking. HathiTrust's cover records public-domain status and a Google digitization-use notice."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-NAVEH-SHAKED1993-PARTIAL",
+      "source_id": "SRC-795E719C624E",
+      "replacement_source_id": null,
+      "rationale": "The researcher-supplied file verifies the authors, Magnes imprint, ISBN, and copyright status, but visual inspection establishes that it is only partial front matter rather than the complete book.",
+      "before": {
+        "source_type": "book",
+        "title": "Magic Spells and Formulae: Aramaic Incantations of Late Antiquity",
+        "authors": "Naveh [and others; see citation]",
+        "issued_year": 1993,
+        "container_title": null,
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "———, and Shaul Shaked. Magic Spells and Formulae: Aramaic Incantations of Late Antiquity. Jerusalem: Magnes, 1993.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Magic Spells and Formulae: Aramaic Incantations of Late Antiquity",
+        "authors": "Joseph Naveh; Shaul Shaked",
+        "issued_year": 1993,
+        "container_title": null,
+        "publisher": "The Magnes Press, The Hebrew University",
+        "url": null,
+        "doi": null,
+        "isbn": "965-223-841-6",
+        "citation": "Naveh, Joseph, and Shaul Shaked. Magic Spells and Formulae: Aramaic Incantations of Late Antiquity. Jerusalem: The Magnes Press, The Hebrew University, 1993.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Only a seven-page researcher-supplied file is held, SHA-256 71ebf58898eb.... It contains the title page, imprint, and an incomplete opening of the contents; five PDF pages are blank. It is not a complete copy and does not support object-level enumeration."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-WAJSBERG2001-COMPLETE-REVIEW",
+      "source_id": "SRC-D721A94FA3B2",
+      "replacement_source_id": null,
+      "rationale": "The complete Project MUSE PDF verifies Wajsberg's authorship, the review genre, journal issue, pages, DOI, and complete availability while distinguishing the review from Juusola's monograph.",
+      "before": {
+        "source_type": "article",
+        "title": "Linguistic Peculiarities in the Aramaic Magic Bowl Texts (review)",
+        "authors": null,
+        "issued_year": 2001,
+        "container_title": "Jewish Quarterly Review",
+        "publisher": "Project MUSE",
+        "url": "https://doi.org/10.1353/jqr.2001.0002",
+        "doi": "10.1353/jqr.2001.0002",
+        "isbn": null,
+        "citation": "Linguistic Peculiarities in the Aramaic Magic Bowl Texts (review) (2001). Crossref DOI 10.1353/jqr.2001.0002.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad Crossref metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Linguistic Peculiarities in the Aramaic Magic Bowl Texts (review)",
+        "authors": "Eljakim Wajsberg",
+        "issued_year": 2001,
+        "container_title": "The Jewish Quarterly Review 92 (1-2)",
+        "publisher": "University of Pennsylvania Press",
+        "url": "https://doi.org/10.1353/jqr.2001.0002",
+        "doi": "10.1353/jqr.2001.0002",
+        "isbn": null,
+        "citation": "Wajsberg, Eljakim. Review of Hannu Juusola, Linguistic Peculiarities in the Aramaic Magic Bowl Texts. The Jewish Quarterly Review 92, nos. 1-2 (July-October 2001): 167-173. DOI: 10.1353/jqr.2001.0002.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete Project MUSE review held as an eight-page PDF (one cover plus printed pp. 167-173), SHA-256 d0bf2ceb21b2.... This is a review of Juusola 1999, not the monograph itself. A likely duplicate source record remains for a later source-identity review rather than being silently merged."
+      }
+    }
+  ]
+}
