@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "73bd84d088e1e3cdaaa15710ced6d60f3cf6c9032eb7628b3d351c73b0980066",
+  "corpus_digest": "fae0ba6fd9e8459d2933fdf5253e760e94c6687aab97dc1b52e920bd4a079fe2",
   "migrations": 14,
-  "note": "Reconciled St\u00fcbe 1895 and repaired bibliography, publication, and public-text count copy",
-  "recorded_at": "2026-09-12T18:00:31+00:00",
+  "note": "Captured and reconciled Wohlstein 1893-1894 open editions",
+  "recorded_at": "2026-09-12T18:28:11+00:00",
   "recorded_by": "Codex",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "ddd3bb6ade9f9c41f23f3f1fd34b623138f1c95e48fb95852b7c8054f5234fd7",
-      "rows": 2144
+      "digest": "655081c35abee5563e133265f1e8616c965cb93e8c736bf48d0ec758b9806188",
+      "rows": 2155
     },
     "appearances": {
-      "digest": "08af7f92024ada5c35af5ec539ac58662829b8113d25a9ed41ea7b0bba30e82a",
-      "rows": 2144
+      "digest": "211aa876375667fa49916247dfda898bafb92d0782aad82e105efc4525fe2a84",
+      "rows": 2155
     },
     "captures": {
-      "digest": "603dfe6ee1c6bee090d306c6797cf63e335f77ab82fd4d25839289ea7848dd1d",
-      "rows": 48
+      "digest": "a9d065dd0d54f65bea82bf2b6e30b70656a0ff59d3effd4207c5917f525fd46e",
+      "rows": 50
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "ef91d5ce46d6a4cecfa5dec7b7a8a6f3a1be683af1c88a7df029ac9c50304d1b",
-      "rows": 6824
+      "digest": "0b48ff1abb2a27358dd289a4dde5bf8ce613e90a365f4ce465fd390ffc4c38d1",
+      "rows": 6840
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -55,8 +55,8 @@
       "rows": 212
     },
     "identifiers": {
-      "digest": "44fb80a3892e359c27401ff0748e92edc6268c7ce09083efa42a710a3c522fbc",
-      "rows": 4633
+      "digest": "95aa93387731642718534819abf54bca0b89d86d43cbcded97426172f05b9008",
+      "rows": 4649
     },
     "leads": {
       "digest": "c39e3a82883e9404543df3a293d096d5446ce54dc16dbae18f8b5a1f6d44bfeb",
@@ -91,8 +91,8 @@
       "rows": 1960
     },
     "publication_registry": {
-      "digest": "4f053e4646257eabca6357f5f5d078982c42e604703c1a7c62b720c518ecf7a2",
-      "rows": 29
+      "digest": "79ef32561a0bc5f1bf89a7ca6e4fc0f7396838665ca6bfc926d7a19d40c5f713",
+      "rows": 31
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
@@ -111,15 +111,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "a724c6c397192e29bcf62af60728ad37d01b9f971f2de8444240418f9dbae3dd",
-      "rows": 16
+      "digest": "756de64f00603c93c61e247aa12987407c13545b2b7ba9ac123c2aad76b6cd63",
+      "rows": 18
     },
     "source_scope_reviews": {
-      "digest": "04e9424b90980253a1fdd9d2917d76f699887b95d6ea0483cc3a7b4db40870b7",
-      "rows": 41
+      "digest": "7191f997ff850f36baec702b603d63f6348cccf977631f3413e2eaebff4963c1",
+      "rows": 43
     },
     "sources": {
-      "digest": "bce5db871df34994222d26715ebf40a622c17e83bf07f04a959f7cb488c24a71",
+      "digest": "ac630d05403a3ac73a264ec9a1b13cb77d534207a135772c94e3cbfd9fe7cb33",
       "rows": 862
     },
     "text_proofreading_reviews": {

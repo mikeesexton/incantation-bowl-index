@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T18:20:00Z",
+  "works": [
+    {
+      "source_id": "SRC-A12DF738AF6A",
+      "publication": "Joseph Wohlstein, Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin, ZA 8 (1893), 313-340",
+      "doi": "10.1515/zava.1893.8.1.313",
+      "open_repository_record": "https://opendata.uni-halle.de/handle/1981185920/113104",
+      "repository_rights": "Public Domain Mark 1.0",
+      "capture_url": "https://archive.org/download/zeitschriftfuras8189deut/zeitschriftfuras8189deut.pdf",
+      "capture_id": "CAP-5F60513AB552",
+      "capture_sha256": "9b6363559ec1f34c739938391eb4b03faed1cad578c79d31274e7ac5579ca527",
+      "capture_bytes": 23258220,
+      "volume_scan_pages": 430,
+      "article_location": "printed pp. 313-340; scan pp. 329-356",
+      "scope": "The first part supplies historical framing and a complete edition and German translation of VA 2422. It also refers by exact VA number to 2414, 2416, 2417, 2426, and the fragmentary 2434.",
+      "visual_checks": [
+        "Scan p. 329 / printed p. 313: article title, author, and opening",
+        "Scan p. 344 / printed p. 328: transcription headed Nr. 2422"
+      ]
+    },
+    {
+      "source_id": "SRC-53202A840D51",
+      "publication": "Joseph Wohlstein, Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin, ZA 9 (1894), 11-41",
+      "doi": "10.1515/zava.1894.9.1.11",
+      "open_repository_record": "https://archive.org/details/zeitschriftfuras9189deut",
+      "repository_rights": "Public-domain underlying 1894 article; Internet Archive scan contributed by the Getty Research Institute",
+      "capture_url": "https://archive.org/download/zeitschriftfuras9189deut/zeitschriftfuras9189deut.pdf",
+      "capture_id": "CAP-4C32F88FD318",
+      "capture_sha256": "31b80d4868082b202aa8c0f914049f78bb5e97fb0b70a4e73993ca1b9144be5d",
+      "capture_bytes": 25604908,
+      "volume_scan_pages": 464,
+      "article_location": "printed pp. 11-41; scan pp. 19-49",
+      "scope": "The continuation supplies complete editions and German translations of VA 2416, VA 2426, VA 2414, and VA 2417, with exact cross-references to VA 2422.",
+      "visual_checks": [
+        "Scan p. 19 / printed p. 11: continuation title and transcription headed Nr. 2416",
+        "Scan p. 36 / printed p. 28: VA 2426 transcription and notes continue cleanly"
+      ]
+    }
+  ],
+  "reconciliation_policy": "Attach appearances only to existing modern Berlin records carrying the same exact VA inventory number. Publication object keys are added only for the five bowls actually edited, not for incidental cross-references. No identity merge or preferred reading is inferred.",
+  "text_policy": "The underlying German translations are public domain, but they are not imported from OCR in this batch. Public text requires separate page-by-page transcription, proofreading, and a content-bound publication decision."
+}

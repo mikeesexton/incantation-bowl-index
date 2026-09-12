@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T18:20:00Z",
+  "evidence_path": "research/reviews/wohlstein_1893_1894_open_scan_evidence_2026-09-12.json",
+  "evidence_sha256": "df68199d6e3673fca93f0cff0b4a9b00f559ff32539e9c41d0abe10fea82087e",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-WOHLSTEIN1893-OPEN-COMPLETE",
+      "source_id": "SRC-A12DF738AF6A",
+      "replacement_source_id": null,
+      "rationale": "The complete public-domain volume scan and Crossref record verify the author, journal, volume, pagination, DOI, access route, and the article's object scope.",
+      "before": {
+        "source_type": "article",
+        "title": "Über einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin",
+        "authors": "Wohlstein. Jos",
+        "issued_year": 1893,
+        "container_title": "Zeitschrift für Assyriologie und Vorderasiatische Archäologie",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Wohlstein. Jos. “Über einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin.” Zeitschrift für Assyriologie und Vorderasiatische Archäologie 8 (1893): 313–40.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin",
+        "authors": "Joseph Wohlstein",
+        "issued_year": 1893,
+        "container_title": "Zeitschrift für Assyriologie und verwandte Gebiete",
+        "publisher": null,
+        "url": "https://archive.org/details/zeitschriftfuras8189deut",
+        "doi": "10.1515/zava.1893.8.1.313",
+        "isbn": null,
+        "citation": "Wohlstein, Joseph. “Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin.” Zeitschrift für Assyriologie und verwandte Gebiete 8 (1893): 313–340. https://doi.org/10.1515/zava.1893.8.1.313.",
+        "access_status": "available",
+        "rights_status": "public_domain",
+        "notes": "Complete public-domain volume scan captured from Internet Archive (Getty Research Institute copy), 430 scan pages, SHA-256 9b6363559ec1.... The article occupies printed pp. 313-340 / scan pp. 329-356, fully edits VA 2422, and refers by exact VA number to 2414, 2416, 2417, 2426, and 2434. The ULB Sachsen-Anhalt record independently marks its volume scan Public Domain Mark 1.0."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-WOHLSTEIN1894-OPEN-COMPLETE",
+      "source_id": "SRC-53202A840D51",
+      "replacement_source_id": null,
+      "rationale": "The complete public-domain volume scan and Crossref record verify the author, journal, volume, pagination, DOI, access route, and the article's object scope.",
+      "before": {
+        "source_type": "article",
+        "title": "Über einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin",
+        "authors": "Wohlstein [and others; see citation]",
+        "issued_year": 1894,
+        "container_title": "Zeitschrift für Assyriologie und Vorderasiatische Archäologie",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "———. “Über einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin.” Zeitschrift für Assyriologie und Vorderasiatische Archäologie 9 (1894): 11–41.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin",
+        "authors": "Joseph Wohlstein",
+        "issued_year": 1894,
+        "container_title": "Zeitschrift für Assyriologie und verwandte Gebiete",
+        "publisher": null,
+        "url": "https://archive.org/details/zeitschriftfuras9189deut",
+        "doi": "10.1515/zava.1894.9.1.11",
+        "isbn": null,
+        "citation": "Wohlstein, Joseph. “Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin.” Zeitschrift für Assyriologie und verwandte Gebiete 9 (1894): 11–41. https://doi.org/10.1515/zava.1894.9.1.11.",
+        "access_status": "available",
+        "rights_status": "public_domain",
+        "notes": "Complete public-domain volume scan captured from Internet Archive (Getty Research Institute copy), 464 scan pages, SHA-256 31b80d486808.... The article occupies printed pp. 11-41 / scan pp. 19-49 and fully edits VA 2416, 2426, 2414, and 2417, with exact cross-references to VA 2422."
+      }
+    }
+  ]
+}

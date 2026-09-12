@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T18:20:00Z",
+  "batch": "Classify the complete Wohlstein 1893 and 1894 article scans",
+  "policy": "Scope follows the inspected primary articles; incidental exact-VA references receive source appearances but not publication membership.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-WOHLSTEIN1893-COMPLETE",
+      "source_id": "SRC-A12DF738AF6A",
+      "scope": "single_object_edition",
+      "basis": "The article's first part fully edits and translates VA 2422 on printed pp. 328-340; other exact VA numbers appear only in framing and comparison."
+    },
+    {
+      "review_id": "IBI-SCOPE-WOHLSTEIN1894-COMPLETE",
+      "source_id": "SRC-53202A840D51",
+      "scope": "corpus_edition",
+      "basis": "The continuation fully edits and translates four bowls—VA 2416, 2426, 2414, and 2417—on printed pp. 11-41."
+    }
+  ]
+}

@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-12 — Codex — Wohlstein open-edition reconciliation
+
+**Claimed:** TEXT-001, SCHOL-005, DISC-003
+**Corpus:** changed (two open PDF captures, two corrected and scoped publication sources, two resolved publication keys, and 11 exact-VA appearances on six existing Berlin objects) — state digest `fae0ba6fd9e8`
+**Tests:** 203 Python tests passed; manifest replay was idempotent; archive hashes, SQLite integrity and foreign keys, JavaScript syntax, JSON/JSONL parsing, deterministic manifest generation, and diff whitespace all passed
+
+- Ran the first bounded remote open-repository research pilot while Library of Congress work is paused. Located complete scans of Joseph Wohlstein's 1893 and 1894 articles, retained repository and DOI evidence, captured both PDFs with headers and hashes, and visually checked the pages carrying the editions.
+- Corrected the two provisional bibliography records, classified the 1893 article as a single-object edition and the 1894 continuation as a four-object corpus edition, and registered both publication keys. All 28 current publication keys now resolve; the held-document count is 35 scholarship works and 36 source-linked PDFs.
+- Added eleven exact-VA source appearances across six existing Berlin objects. Five are complete editions with transcription and German translation (VA 2422, 2416, 2426, 2414, and 2417); six are exact contextual cross-references, including Wohlstein's fragment report for VA 2434. No new candidate or identity was created and no merge was made.
+- Did not import the public-domain German text from noisy OCR. A separate page-by-page transcription, verification, and content-bound publication review is required before it can expand the 44-item public reading room. Next remote work can proofread these five texts, reconcile further open early editions (especially Gordon and Pognon), classify the 155 unscoped scholarship works from authoritative metadata, and build a no-write shadow monitor for LOC and open repositories.
+
 ## 2026-09-12 — Codex — Public-copy repair and publication reconciliation
 
 **Claimed:** TEXT-001, SCHOL-005, DISC-003, OPS-001
