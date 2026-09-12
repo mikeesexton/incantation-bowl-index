@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T12:20:00Z",
+  "source_id": "SRC-0B6C0E1133EF",
+  "publication": "Rudolf Stübe, Jüdisch-babylonische Zaubertexte (Halle a/S.: J. Krause, 1895)",
+  "discovery": {
+    "deutsche_digitale_bibliothek": "https://www.deutsche-digitale-bibliothek.de/item/JZUB6K2PYT6SNKT4IJCGGLYVYNKEMPIN",
+    "bsb_details": "https://mdz-nbn-resolving.de/details:bsb11552199",
+    "iiif_manifest": "https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb11552199/manifest",
+    "urn": "urn:nbn:de:bvb:12-bsb11552199-3",
+    "bsb_identifier": "bsb11552199",
+    "worldcat": "459119370"
+  },
+  "capture": {
+    "assembled_from": "The 92 page images named by the Bayerische Staatsbibliothek IIIF manifest, preserved in manifest order without alteration.",
+    "pdf_sha256": "ef983942f7fdc4c57af6ceb3c3b62c3444e75fd292cd241a2882f8d9a6b34650",
+    "pdf_bytes": 54072464,
+    "scan_pages": 92,
+    "printed_extent": "xvi, 64 pages",
+    "completeness": "complete",
+    "visual_checks": [
+      "Scan page 7: half title",
+      "Scan page 35 / printed page 13: catalogue entries 1-4, including VA 2412, VA 2413, VA 2432 and VA 2416",
+      "Scan page 44 / printed page 22: transcription headed VA 2416"
+    ]
+  },
+  "rights": {
+    "underlying_work": "public_domain_expired",
+    "digital_object_statement": "https://rightsstatements.org/vocab/NoC-NC/1.0/",
+    "use_note": "Keep the library scan private unless its non-commercial digitization terms are satisfied separately; the 1895 underlying text may be used on an expired-copyright basis after transcription and proofreading review."
+  },
+  "scope": {
+    "catalogue": "Printed pages 13-18 describe nineteen numbered items: seventeen bowls and two inscribed skulls (nos. 14-15).",
+    "inventory_numbers": "Nos. 1-17 give VA inventory numbers except nos. 18-19; nos. 18-19 are explicitly two different bowls with Pahlavi inscriptions.",
+    "edition": "VA 2416 is transcribed and translated on printed pages 22-27, compared with Wohlstein on pages 28-32, and followed by commentary.",
+    "reconciliation_policy": "Attach Stübe appearances to the existing modern Berlin catalogue records only where the printed VA inventory number is exact. Preserve nos. 18-19 as separate provisional candidates because Stübe supplies no inventory numbers. Do not merge the separate Waller or Levene candidates automatically."
+  }
+}

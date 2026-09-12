@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-12 — Codex — Public-copy repair and publication reconciliation
+
+**Claimed:** TEXT-001, SCHOL-005, DISC-003, OPS-001
+**Corpus:** changed (Stübe 1895 source correction and scope, one complete PDF capture, 19 source appearances, 17 exact-object attachments, 2 new candidates, and one resolved publication key) — state digest `73bd84d088e1`
+**Tests:** 203 Python tests passed; manifest replay was idempotent; archive hashes, SQLite integrity and foreign keys, JavaScript syntax, JSON/JSONL parsing, and diff whitespace all passed
+
+- Replaced the misleading “115 of 115” reading-room language with separate measures: the 115-title JBA bibliography checklist; 26 bowl-level publication keys covering 879 candidate records and 715 projected identities; 775 identities carrying any publication reference; and 44 currently readable text records (35 public-domain translations plus nine project-authored summaries). Three stale approvals correctly fail closed. Updated the repository overview, living mission plan, generated reports, and the dated control-list report with the same distinction.
+- Located Stübe 1895 through the open Bayerische Staatsbibliothek copy linked by its stable catalogue identity, assembled and deposited the complete 92-image scan by hash, corrected the provisional source record, and recorded its inspected corpus-edition scope and rights/access evidence.
+- Indexed all 19 numbered Stübe catalogue objects with printed-page locators. Seventeen attach as new source appearances to existing modern Berlin records by exact VA inventory number; two separately numbered Pahlavi bowls lack inventory numbers and remain new provisional candidates. Stübe nos. 14–15 are explicitly classified as inscribed skulls, not bowls. No uncertain identities were merged.
+- Updated the LOC queue: Stübe is satisfied digitally outside LOC; Segal 2000 and Naveh–Shaked 1993 remain unavailable and queued, Mokhtarian remains onsite-digital but not located, and the requested Isbell 1975, Naveh–Shaked 1998, Müller-Kessler/TMH 7, and Yamauchi 1967 volumes remain pending.
+- The database is ready for bounded, lead-only automated internet research, but not unattended scholarly ingestion or publication. The next automation work is a shadow-mode LOC/open-repository monitor with no corpus writes, plus backup, alerting, rate limits, and a kill switch before scheduling.
+
 ## 2026-09-12 — Codex — Researcher-supplied LOC follow-up PDFs
 
 **Claimed:** SCHOL-005, SCHOL-006, TEXT-001, META-008, ACCESS-002

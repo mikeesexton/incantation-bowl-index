@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T12:20:00Z",
+  "evidence_path": "research/reviews/stuebe_1895_open_scan_evidence_2026-09-12.json",
+  "evidence_sha256": "811237c5866d17204325e871b79ddf48a2111c440dca23808b49b649c4f5d638",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-STUEBE1895-OPEN-COMPLETE",
+      "source_id": "SRC-0B6C0E1133EF",
+      "replacement_source_id": null,
+      "rationale": "The complete Bayerische Staatsbibliothek scan verifies the title, author, imprint, extent, stable identifiers, public-domain underlying work, nineteen-item catalogue, and the edition of VA 2416.",
+      "before": {
+        "source_type": "book",
+        "title": "Jüdisch-babylonische Zaubertexte: Herausgegeben und Erklärt",
+        "authors": "Stübe, Rudolf",
+        "issued_year": 1895,
+        "container_title": null,
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Stübe, Rudolf. Jüdisch-babylonische Zaubertexte: Herausgegeben und Erklärt . Halle: J. Krause, 1895.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Jüdisch-babylonische Zaubertexte",
+        "authors": "Rudolf Stübe",
+        "issued_year": 1895,
+        "container_title": null,
+        "publisher": "J. Krause",
+        "url": "https://mdz-nbn-resolving.de/details:bsb11552199",
+        "doi": null,
+        "isbn": null,
+        "citation": "Stübe, Rudolf. Jüdisch-babylonische Zaubertexte. Halle a/S.: J. Krause, 1895.",
+        "access_status": "available",
+        "rights_status": "public_domain",
+        "notes": "Complete Bayerische Staatsbibliothek scan held privately from the institution's IIIF service: 92 scan pages, printed extent xvi + 64 pages, assembled PDF SHA-256 ef983942f7fd.... The work is public domain; the library labels its digital object No Copyright - Non-Commercial Use Only. Printed pp. 13-18 catalogue nineteen items (seventeen bowls and two skulls), and pp. 22-27 transcribe and translate VA 2416."
+      }
+    }
+  ]
+}

@@ -238,20 +238,37 @@
         a.display_name.localeCompare(b.display_name));
     const thin = data.identity_clusters.length - readable.length;
     const m = data.manifest;
+    const resolvedPublications = data.publications.filter(row => row.resolution === "resolved");
+    const publicationObjects = new Set();
+    const publicationIdentities = new Set();
+    resolvedPublications.forEach(row => {
+      JSON.parse(row.object_ids || "[]").forEach(objectId => {
+        publicationObjects.add(objectId);
+        publicationIdentities.add(ownerOf(objectId));
+      });
+    });
+    const readableTexts = data.texts.filter(row => row.content_status === "included");
+    const readableTranslations = readableTexts.filter(row => row.text_type === "translation").length;
+    const readableSummaries = readableTexts.filter(row => row.text_type === "summary").length;
     view.innerHTML = `<div class="reading-head">
         ${filtered ? `<a class="entry-back" href="#/reading">← Bowls worth reading</a>` :
           `<span class="eyebrow">Late antique Mesopotamia, roughly 500–700 CE</span>`}
         <h1 id="reading-title">${esc(heading)}</h1>
         ${filtered ? "" : `<p class="standfirst">Ordinary clay vessels, inscribed in a spiral and buried upside
           down beneath the floors of houses in Sasanian Mesopotamia to keep something out.
-          This index holds <strong>${data.identity_clusters.length.toLocaleString()}</strong>
-          records of them. Measured against the field's own control list of published Jewish
-          Babylonian Aramaic bowls, it cites <strong>115 of 115</strong> publications and has
-          attached objects to almost none of them, so treat coverage as a reading list rather
-          than a corpus.</p>`}
+          This index currently represents <strong>${data.identity_clusters.length.toLocaleString()}</strong>
+          working object identities. It has checked bowl-level references in
+          <strong>${resolvedPublications.length.toLocaleString()}</strong> editions, connecting
+          <strong>${publicationObjects.size.toLocaleString()}</strong> candidate records to
+          <strong>${publicationIdentities.size.toLocaleString()}</strong> of those identities.
+          Separately, its 115-title JBA bibliography records what the field has published; that
+          checklist tells us what remains to inspect, not how many bowls are linked.</p>`}
         ${note ? `<p class="standfirst">${esc(note)}</p>` : ""}
-        ${filtered ? "" : `<p class="standfirst-note">${m.texts_included_rows} bowls have a text you can read here.
-          ${m.texts_withheld_rows} more name the edition that prints theirs.
+        ${filtered ? "" : `<p class="standfirst-note"><strong>${readableTranslations}</strong>
+          public-domain translations and <strong>${readableSummaries}</strong> project-authored
+          summaries are readable here. Another <strong>${m.texts_withheld_rows}</strong> text
+          records preserve their edition and locator while withholding protected scholarly wording.
+          These are release counts, not the number of bowls known from editions.
           No image is cleared for reuse yet, so every mark below is drawn from the object's own
           recorded line count.</p>`}
       </div>

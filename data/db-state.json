@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "150b3848c9484b70129c4bd80921c210ac07f4345d845485a2aa367e217d3200",
+  "corpus_digest": "73bd84d088e1e3cdaaa15710ced6d60f3cf6c9032eb7628b3d351c73b0980066",
   "migrations": 14,
-  "note": "Ingested and classified six researcher-supplied PDFs; added 36 Pognon/Ellis candidates, source scopes and LOC request outcomes; updated mission plan.",
-  "recorded_at": "2026-09-12T11:47:57+00:00",
+  "note": "Reconciled St\u00fcbe 1895 and repaired bibliography, publication, and public-text count copy",
+  "recorded_at": "2026-09-12T18:00:31+00:00",
   "recorded_by": "Codex",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "4aa95317799e2dd4cae6b2fe70f55d70c930c2c236663ca14145af356db2c38d",
-      "rows": 2125
+      "digest": "ddd3bb6ade9f9c41f23f3f1fd34b623138f1c95e48fb95852b7c8054f5234fd7",
+      "rows": 2144
     },
     "appearances": {
-      "digest": "cb8c8f9c8592bab5dd9334f0508928b566330e6f1ece5ba10ed6d0ac760ed295",
-      "rows": 2125
+      "digest": "08af7f92024ada5c35af5ec539ac58662829b8113d25a9ed41ea7b0bba30e82a",
+      "rows": 2144
     },
     "captures": {
-      "digest": "95c5fbae8b46732f87ae86cf72f72fd780c0e4fd5a688674a0226378d750f0e8",
-      "rows": 47
+      "digest": "603dfe6ee1c6bee090d306c6797cf63e335f77ab82fd4d25839289ea7848dd1d",
+      "rows": 48
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "e5cf4fd72cc206d1e618bc794b8e330e517477463a8c28d4526f4e886168ccd5",
-      "rows": 6772
+      "digest": "ef91d5ce46d6a4cecfa5dec7b7a8a6f3a1be683af1c88a7df029ac9c50304d1b",
+      "rows": 6824
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -55,8 +55,8 @@
       "rows": 212
     },
     "identifiers": {
-      "digest": "9611a4fc5555af14cce25e5ae6a710873c03a976a587088b322adcc59e4bfe8d",
-      "rows": 4597
+      "digest": "44fb80a3892e359c27401ff0748e92edc6268c7ce09083efa42a710a3c522fbc",
+      "rows": 4633
     },
     "leads": {
       "digest": "c39e3a82883e9404543df3a293d096d5446ce54dc16dbae18f8b5a1f6d44bfeb",
@@ -87,12 +87,12 @@
       "rows": 5
     },
     "objects": {
-      "digest": "7da9961f05d5f29c3d2f6fe6e60e18b8874e3527a1c16a2807a54c0995dcdd8e",
-      "rows": 1958
+      "digest": "38a50c6bb609fef4b20162c569a63e303a2576275a6aaed55688e8f5f0fa6ad2",
+      "rows": 1960
     },
     "publication_registry": {
-      "digest": "cd3d9e651ebe2ec4ee6f5c08abcabb3dcc470b9d3714a44b2b44e02a829f7b04",
-      "rows": 28
+      "digest": "4f053e4646257eabca6357f5f5d078982c42e604703c1a7c62b720c518ecf7a2",
+      "rows": 29
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
@@ -111,15 +111,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "2b6f136f0c6991fac847d81f114b6a3afd19dc5879e81c66067e0dfe56da2108",
-      "rows": 15
+      "digest": "a724c6c397192e29bcf62af60728ad37d01b9f971f2de8444240418f9dbae3dd",
+      "rows": 16
     },
     "source_scope_reviews": {
-      "digest": "212826057206a3ec13dfb2ae4d03d0e06192efd209883af36714eec2c7a281ef",
-      "rows": 40
+      "digest": "04e9424b90980253a1fdd9d2917d76f699887b95d6ea0483cc3a7b4db40870b7",
+      "rows": 41
     },
     "sources": {
-      "digest": "654177f748308b4a5fbdec3089aeae5a796171e60b552694af152494c352f6b0",
+      "digest": "bce5db871df34994222d26715ebf40a622c17e83bf07f04a959f7cb488c24a71",
       "rows": 862
     },
     "text_proofreading_reviews": {
