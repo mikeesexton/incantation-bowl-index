@@ -341,7 +341,7 @@ function reviewListItem(item) {
   return `<button class="review-list-item ${state.currentReview === item.id ? "is-active" : ""}" type="button" data-review="${escapeHtml(item.id)}">
     <span class="review-state ${escapeHtml(item.status)}">${escapeHtml(humanize(item.status))}</span>
     <strong>${escapeHtml(item.object_a_label)}</strong><i>compared with</i><strong>${escapeHtml(item.object_b_label)}</strong>
-    <small>${escapeHtml(item.method)} · score ${item.score.toFixed(3)}</small>
+    <small>${escapeHtml(item.method)} · score ${item.score.toFixed(3)}${item.pair_band ? ` · <span class="pair-band pair-band-${escapeHtml(item.pair_band)}">${escapeHtml(bandLabel(item.pair_band))}</span>` : ""}</small>
   </button>`;
 }
 
@@ -357,11 +357,54 @@ function comparisonIdentity(dossier, side) {
   </article>`;
 }
 
+// Deliberately descriptive, never a recommendation. "Corroborated" says the stored
+// claims agree somewhere, not that the pair should be merged; "no overlap" says the
+// two records are silent about each other, not that they disagree.
+const BAND_LABELS = {
+  corroborated: "claims agree",
+  conflict: "claims disagree",
+  no_overlap: "nothing compared",
+};
+const BAND_BLURBS = {
+  corroborated: "The records agree on at least one facet and contradict each other on none.",
+  conflict: "The records disagree on a facet that is a property of the physical object. Worth settling before deciding.",
+  no_overlap: "The records describe different facets, so nothing could be compared. This is silence, not disagreement.",
+};
+
+function bandLabel(band) {
+  return BAND_LABELS[band] || humanize(band || "");
+}
+
+function facetRow(title, groups, modifier, hint) {
+  if (!groups || !groups.length) return "";
+  return `<div class="facet-row facet-${modifier}"><dt>${escapeHtml(title)}${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</dt>
+    <dd>${groups.map(group => `<span class="facet-chip">${escapeHtml(humanize(group))}</span>`).join("")}</dd></div>`;
+}
+
+function pairEvidencePanel(evidence) {
+  if (!evidence) return "";
+  const band = evidence.band || "no_overlap";
+  const rows = [
+    facetRow("Agree", evidence.agreeing_groups, "agree"),
+    facetRow("Disagree", evidence.conflicting_groups, "conflict"),
+    facetRow("Differ, but not about the object", evidence.differing_non_discriminating_groups,
+      "muted", "two sources citing different publications is expected"),
+    facetRow("Recorded on one side only", evidence.groups_on_one_side_only, "muted"),
+  ].join("");
+  return `<section class="evidence-panel pair-evidence">
+    <h3>What the claims say <span class="pair-band pair-band-${escapeHtml(band)}">${escapeHtml(bandLabel(band))}</span></h3>
+    <p class="pair-band-blurb">${escapeHtml(BAND_BLURBS[band] || "")}</p>
+    ${rows ? `<dl class="facet-list">${rows}</dl>` : `<div class="section-empty">Neither record carries a comparable claim.</div>`}
+    <p class="pair-evidence-caveat">Compared by facet across both records, from stored claims only — not a fresh check of any source, and not a recommendation.</p>
+  </section>`;
+}
+
 function reviewDetailMarkup(item) {
   const evidence = item.evidence.length ? item.evidence.map(entry => `<article><span class="support-mark support-${entry.supports_match}">${entry.supports_match > 0 ? "+" : entry.supports_match < 0 ? "−" : "?"}</span><div><strong>${escapeHtml(humanize(entry.evidence_type))}</strong><p>${escapeHtml(entry.notes || "No note")}</p>${entry.source_title ? externalLink(entry.source_url, entry.source_title) : ""}</div></article>`).join("") : `<div class="section-empty">No evidence entries yet.</div>`;
   return `<div class="review-detail-head"><div><span class="eyebrow">${escapeHtml(item.id)}</span><h2>${escapeHtml(humanize(item.status))}</h2></div><div><span>Method</span><strong>${escapeHtml(humanize(item.method))}</strong><span>Score</span><strong>${item.score.toFixed(3)}</strong></div></div>
     <div class="rationale"><strong>Why this pair was generated</strong><p>${escapeHtml(item.rationale)}</p></div>
     <div class="comparison">${comparisonIdentity(item.identity_a, "A")}${comparisonIdentity(item.identity_b, "B")}</div>
+    ${pairEvidencePanel(item.pair_evidence)}
     <section class="evidence-panel"><h3>Decision evidence</h3>${evidence}</section>
     <form id="review-form" class="decision-form">
       <div><label>Decision<select name="status"><option value="same_object" ${item.status === "same_object" ? "selected" : ""}>Same physical object</option><option value="different_objects" ${item.status === "different_objects" ? "selected" : ""}>Different physical objects</option><option value="insufficient_evidence" ${item.status === "insufficient_evidence" || item.status === "pending" ? "selected" : ""}>Insufficient evidence</option></select></label></div>

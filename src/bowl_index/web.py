@@ -14,6 +14,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
 
 from .db import PROJECT_ROOT, connect, migrate
+from .dedupe import pair_evidence
 from .identity import CORE_COVERAGE, identity_rows
 from .projection import PROJECTION_COLUMNS, Projection
 from .public_export import projection_manifest
@@ -484,6 +485,12 @@ class CorpusCatalog:
                   "ELSE 2 END,d.score DESC,d.decided_at DESC LIMIT ?",
                 values + [limit],
             ))
+            for row in rows:
+                # Band the queue so a reviewer can see which pairs actually carry a
+                # disagreement before opening any of them.
+                row["pair_band"] = pair_evidence(
+                    conn, row["object_a_id"], row["object_b_id"]
+                )["band"]
         for row in rows:
             row["identity_a_id"] = self.member_to_identity.get(row["object_a_id"])
             row["identity_b_id"] = self.member_to_identity.get(row["object_b_id"])
@@ -504,6 +511,12 @@ class CorpusCatalog:
                 "LEFT JOIN sources s ON s.id=e.source_id WHERE e.dedupe_id=? ORDER BY e.id",
                 (dedupe_id,),
             ))
+            # What the stored claims say about the two records, facet by facet. This
+            # is evidence for the reviewer, never a recommendation: a shared
+            # identifier is strong evidence, not a merge instruction.
+            item["pair_evidence"] = pair_evidence(
+                conn, item["object_a_id"], item["object_b_id"]
+            )
         item["identity_a_id"] = self.member_to_identity.get(item["object_a_id"])
         item["identity_b_id"] = self.member_to_identity.get(item["object_b_id"])
         item["identity_a"] = self.dossier(item["identity_a_id"])

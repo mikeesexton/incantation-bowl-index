@@ -25,6 +25,34 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-13 — Claude — Pair evidence in the concordance workbench
+
+**Claimed:** QA, OPS-001
+**Corpus:** unchanged — state digest `4a7c6ca8d9a9` (read-only throughout)
+**Tests:** 228 Python tests and 15 Node unit tests passed; panel checked in the browser against a corroborated pair and a conflicting one
+
+- Wired `pair_evidence` into the console. The review payload now carries the facet
+  comparison, and every queue row carries its band, so a reviewer can see which pairs
+  actually hold a disagreement before opening any of them. Eighty rows band in 97 ms.
+- Wrote the panel as description, not advice. The band reads "claims agree", "claims
+  disagree" or "nothing compared" rather than anything resembling a verdict, each band
+  carries a sentence saying what it does and does not mean, and the panel closes by
+  saying it compared stored claims only. A unit test asserts the rendered markup never
+  contains proposing language such as "should be merged" or "safe to merge".
+- "Nothing compared" is worded deliberately. Thirty of the seventy-seven pairs landed
+  there, and the panel says in as many words that this is silence rather than
+  disagreement, because the earlier mis-banding came from reading one as the other.
+- Colour never carries meaning alone: every facet is a labelled chip and the band has a
+  text label beside it. Reused the console's existing tokens, which are defined for
+  both themes.
+- The browser check found a real problem that no test would have. The console on port
+  8765 has been running since 6 September, so `ibi serve` could not bind and the page
+  under inspection was serving a week-old build: fresh `app.js`, stale API, no panel.
+  Verified on a spare port instead of killing the researcher's process. **That console
+  needs restarting before any of this is visible in it.**
+- Next: the queue cannot yet be filtered or sorted by band, which is the obvious
+  follow-on now that every row carries one.
+
 ## 2026-09-13 — Claude — Pair-evidence comparison for the next sweep
 
 **Claimed:** QA, CONC-001

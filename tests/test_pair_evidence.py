@@ -157,3 +157,65 @@ class CollectionFormTests(unittest.TestCase):
             normalize_claim_value("location", "Vorderasiatisches Museum"),
             normalize_claim_value("location", "Penn Museum"),
         )
+
+
+class ConsoleWiringTests(unittest.TestCase):
+    """The console review surfaces facet evidence, and never a recommendation."""
+
+    def setUp(self):
+        from bowl_index.ingest import add_candidate
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.db_path = Path(self.temp.name) / "c.sqlite3"
+        self.conn = connect(self.db_path)
+        migrate(self.conn)
+        self.conn.execute(
+            "INSERT INTO sources (id,source_type,title,citation) VALUES ('s1','book','S','S')")
+
+        def candidate(label, value, field, claim_value):
+            return {
+                "label": label, "source_id": "s1", "object_type": "whole_bowl",
+                "record_status": "probable", "authenticity": "unassessed",
+                "appearance": {"locator": label, "relation_type": "primary",
+                               "confidence": 1.0, "rationale": "test"},
+                "identifiers": [{"scheme": "collection designation", "value": value,
+                                 "assigning_body": "Test Collection", "confidence": 1.0}],
+                "claims": [{"field": field, "value_text": claim_value,
+                            "certainty": "reported", "locator": "p. 1"}],
+            }
+
+        self.a = add_candidate(self.conn, candidate("A", "TC 1", "current_location",
+                                                    "The Test Collection"))
+        self.b = add_candidate(self.conn, candidate("B", "TC 1", "current_or_reported_collection",
+                                                    "Test Collection"))
+        self.conn.execute(
+            "INSERT INTO dedupe_candidates (id,object_a_id,object_b_id,score,method,rationale) "
+            "VALUES (?,?,?,?,?,?)",
+            ("ded-x", min(self.a, self.b), max(self.a, self.b), .99, "exact_identifier",
+             "Shared identifier: collection designation=tc 1"))
+        self.conn.commit()
+
+    def catalog(self):
+        from bowl_index.web import CorpusCatalog
+        return CorpusCatalog(self.db_path)
+
+    def test_review_carries_facet_evidence(self):
+        item = self.catalog().review("ded-x")
+        self.assertIn("pair_evidence", item)
+        self.assertEqual(item["pair_evidence"]["band"], "corroborated")
+        self.assertEqual(item["pair_evidence"]["agreeing_groups"], ["location"])
+
+    def test_queue_rows_carry_a_band(self):
+        data = self.catalog().reviews({"status": ["all"], "limit": ["10"]})
+        self.assertTrue(data["items"])
+        self.assertEqual(data["items"][0]["pair_band"], "corroborated")
+
+    def test_facet_evidence_never_proposes_a_decision(self):
+        # The payload reports what the claims say. Deciding is the reviewer's.
+        item = self.catalog().review("ded-x")
+        self.assertEqual(
+            set(item["pair_evidence"]),
+            {"band", "agreeing_groups", "conflicting_groups",
+             "differing_non_discriminating_groups", "groups_on_one_side_only"},
+        )
+        self.assertEqual(item["status"], "pending")

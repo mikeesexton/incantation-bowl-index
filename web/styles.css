@@ -435,3 +435,29 @@ h1 { margin-top: .16rem; font-size: clamp(1.85rem, 3vw, 2.55rem); letter-spacing
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* Pair evidence: what the stored claims say, facet by facet. Colour carries the
+   band, but never alone — each chip is labelled, and the band has a text label
+   beside it, so the panel reads the same to a reviewer who cannot separate the
+   greens from the reds. */
+.pair-band { display: inline-block; padding: .12rem .5rem; border: 1px solid var(--line-dark); border-radius: 999px; font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; vertical-align: .1em; }
+.pair-band-corroborated { background: var(--ok-bg); border-color: var(--ok-line); color: var(--ok-ink); }
+.pair-band-conflict { background: var(--danger-soft); border-color: var(--danger); color: var(--danger-ink); }
+.pair-band-no_overlap { background: var(--surface-alt); color: var(--muted); }
+
+.pair-evidence h3 { display: flex; align-items: center; gap: .55rem; }
+.pair-band-blurb { margin: 0 0 .7rem; max-width: 46rem; color: var(--muted); font-size: .78rem; line-height: 1.45; }
+.facet-list { display: grid; gap: .1rem; margin: 0; }
+.facet-row { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: .5rem 1rem; padding: .55rem 0; border-top: 1px solid var(--line); }
+.facet-row dt { color: var(--ink); font-size: .78rem; font-weight: 650; }
+.facet-row dt small { display: block; margin-top: .15rem; color: var(--muted); font-size: .7rem; font-weight: 400; font-style: italic; }
+.facet-row dd { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0; }
+.facet-chip { padding: .14rem .5rem; border: 1px solid var(--line-dark); border-radius: .3rem; background: var(--surface-alt); font-size: .74rem; }
+.facet-agree dd .facet-chip { background: var(--ok-bg); border-color: var(--ok-line); color: var(--ok-ink); }
+.facet-conflict dd .facet-chip { background: var(--danger-soft); border-color: var(--danger); color: var(--danger-ink); font-weight: 650; }
+.facet-muted dd .facet-chip { color: var(--muted); }
+.pair-evidence-caveat { margin: .8rem 0 0; color: var(--muted); font-size: .72rem; font-style: italic; }
+
+@media (max-width: 640px) {
+  .facet-row { grid-template-columns: 1fr; gap: .3rem; }
+}
