@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "fae0ba6fd9e8459d2933fdf5253e760e94c6687aab97dc1b52e920bd4a079fe2",
+  "corpus_digest": "5a268171bafc3440ac6fc8733a2d7c5c73d96deb28fd1e0f8f9beae23ba677f9",
   "migrations": 14,
-  "note": "Captured and reconciled Wohlstein 1893-1894 open editions",
-  "recorded_at": "2026-09-12T18:28:11+00:00",
+  "note": "Gordon 1934-1937 remote article reconciliation: three deposits, four source corrections/scopes/publication keys, 24 appearances, 9 new candidates",
+  "recorded_at": "2026-09-13T03:48:06+00:00",
   "recorded_by": "Codex",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "655081c35abee5563e133265f1e8616c965cb93e8c736bf48d0ec758b9806188",
-      "rows": 2155
+      "digest": "b0c4036a5984d5ba648d0654b54c4139cf7bd9c3f34079e1dcc4ae56b3166966",
+      "rows": 2179
     },
     "appearances": {
-      "digest": "211aa876375667fa49916247dfda898bafb92d0782aad82e105efc4525fe2a84",
-      "rows": 2155
+      "digest": "834355aefef0aa8698c2744ba4119f648eaa657e434db1138a4932a3574951d2",
+      "rows": 2179
     },
     "captures": {
-      "digest": "a9d065dd0d54f65bea82bf2b6e30b70656a0ff59d3effd4207c5917f525fd46e",
-      "rows": 50
+      "digest": "6a4899c317254db449208387ad703390c0fa5026aa4692e700b866915a35ed2b",
+      "rows": 53
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "0b48ff1abb2a27358dd289a4dde5bf8ce613e90a365f4ce465fd390ffc4c38d1",
-      "rows": 6840
+      "digest": "c7b817d62ee8cb664c322f26c2f4d06d0ffe04452d78f89c15fc72e1178e42fa",
+      "rows": 6888
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -55,8 +55,8 @@
       "rows": 212
     },
     "identifiers": {
-      "digest": "95aa93387731642718534819abf54bca0b89d86d43cbcded97426172f05b9008",
-      "rows": 4649
+      "digest": "336ba4f27088d2cb3ccb2512de44cda894243975b760daa7b1389283e347d048",
+      "rows": 4684
     },
     "leads": {
       "digest": "c39e3a82883e9404543df3a293d096d5446ce54dc16dbae18f8b5a1f6d44bfeb",
@@ -87,12 +87,12 @@
       "rows": 5
     },
     "objects": {
-      "digest": "38a50c6bb609fef4b20162c569a63e303a2576275a6aaed55688e8f5f0fa6ad2",
-      "rows": 1960
+      "digest": "a53f9bb511ac1a63869833908bd8a3788f6e43a6a55eb548bc09cfacd068c905",
+      "rows": 1969
     },
     "publication_registry": {
-      "digest": "79ef32561a0bc5f1bf89a7ca6e4fc0f7396838665ca6bfc926d7a19d40c5f713",
-      "rows": 31
+      "digest": "50bfa4e9e9d60f2e64940944a360db1632976e8670d47cd928adb7824a3c609d",
+      "rows": 35
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",
@@ -111,15 +111,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "756de64f00603c93c61e247aa12987407c13545b2b7ba9ac123c2aad76b6cd63",
-      "rows": 18
+      "digest": "ff9142aaa6dcb990ad21856dc11a8d4453623d74f42bed0c22daef877d956b4a",
+      "rows": 22
     },
     "source_scope_reviews": {
-      "digest": "7191f997ff850f36baec702b603d63f6348cccf977631f3413e2eaebff4963c1",
-      "rows": 43
+      "digest": "aeeadf7e6c59758e2050317bb2e8dc62afeb2b6de44546dd47347d993f2a3a50",
+      "rows": 47
     },
     "sources": {
-      "digest": "ac630d05403a3ac73a264ec9a1b13cb77d534207a135772c94e3cbfd9fe7cb33",
+      "digest": "6de95f2dc75230b5436f62e4290b4dea03b8ef8a53968e8daf10f3760eca0179",
       "rows": 862
     },
     "text_proofreading_reviews": {

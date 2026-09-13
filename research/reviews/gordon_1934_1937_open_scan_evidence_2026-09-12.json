@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-13T03:45:00Z",
+  "method": "Complete articles were downloaded from official institutional repositories, rendered, visually checked at title, catalogue, text, translation, and plate pages, and compared against exact existing publication labels or museum numbers. No uncertain identity was merged.",
+  "rights_policy": "Open access is not treated as an open reuse license. Kramerius labels these scans as contractually published works and limits use to non-commercial scientific and educational purposes; source and capture rights therefore remain copyrighted.",
+  "sources": [
+    {
+      "source_id": "SRC-60CB324330C9",
+      "capture_id": "CAP-138518C319C8",
+      "sha256": "5abd9af65823f4fe8b19eb76ecc7f9668f1e3de35b2535c5166461eca23bd1ce",
+      "institution": "Library of the Czech Academy of Sciences, Kramerius 7",
+      "volume_uuid": "uuid:5eb9708a-1d6a-4fd2-b4be-b6d1c8360d04",
+      "article_page_uuid": "uuid:4a5877af-4e59-43cd-8466-495357b59642",
+      "extent": "printed pp. 319-334 and plates X-XV",
+      "findings": "Full editions A-F plus seven separately numbered Istanbul survey bowls."
+    },
+    {
+      "source_id": "SRC-0383E0E0A2F2",
+      "capture_id": "CAP-EABFF9404C4C",
+      "sha256": "71de7b86e0cc549b73d949f4a4b8923886f4d92dfd1b2f21907c9fe6058bafcc",
+      "institution": "Library of the Czech Academy of Sciences, Kramerius 7",
+      "volume_uuid": "uuid:5eb9708a-1d6a-4fd2-b4be-b6d1c8360d04",
+      "article_page_uuid": "uuid:8a069457-1e3c-40d3-a658-3b1c51fe66e8",
+      "extent": "printed pp. 466-474 and plates XXII-XXV",
+      "findings": "Full edition G, catalogue no. 5497."
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "capture_id": "CAP-A5A03BFD5DC7",
+      "sha256": "c2c86d28ae3201f95475d89c45789d58a37a0e9ba125876503b833c78d7fb612",
+      "institution": "Library of the Czech Academy of Sciences, Kramerius 7",
+      "volume_uuid": "uuid:d12e97ad-d4a3-414f-8461-b2a9e757b680",
+      "article_page_uuid": "uuid:b2bef7bf-5a00-4d50-ad2c-40872e98e1ff",
+      "extent": "printed pp. 84-106 and plates II-XIVa",
+      "findings": "Full editions H-O plus National Museum no. 207962; the source's uncertain Ashmolean attribution for no. 91731 is retained."
+    },
+    {
+      "source_id": "SRC-C45C16AC2B8E",
+      "capture_id": null,
+      "sha256": "e0ed2b419f00a1873b01730b144272ca822545344b83969eb8a01c3c187b63cc",
+      "institution": "Indira Gandhi National Centre for the Arts scan of AASOR 14",
+      "url": "https://ignca.gov.in/Asi_data/4567.pdf",
+      "extent": "printed pp. 141-144; PDF pp. 154-157",
+      "findings": "Full edition of Iraq Museum no. 9737.",
+      "archive_note": "The public scan was inspected but not deposited because the project crawler could not verify robots permission. The hash identifies the inspected temporary download only."
+    }
+  ],
+  "independent_checks": [
+    {
+      "url": "https://cal.huc.edu/browsesigla.php?generalclass=JBA&subclass=Incantations",
+      "finding": "The Comprehensive Aramaic Lexicon bibliography confirms the four Gordon citations."
+    },
+    {
+      "url": "https://www.asor.org/wp-content/uploads/2018/04/2011-04-cop-aasor-list.pdf",
+      "finding": "ASOR's official contents list confirms AASOR 14 and Gordon's article."
+    },
+    {
+      "url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+      "finding": "The independent bowl concordance maps Gordon labels A-L and IM 9737 to the existing CAIB and museum designations used for exact attachments."
+    }
+  ]
+}

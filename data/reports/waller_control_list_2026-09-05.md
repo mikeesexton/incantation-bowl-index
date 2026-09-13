@@ -5,11 +5,13 @@ The first external check this index has had on its own completeness.
 > **Current-status note — 12 September 2026.** This report preserves the first measurement
 > made on 5 September. The 69 missing citations were subsequently added, so all 115 control-list
 > titles now have bibliographic source records. That is a literature checklist, not bowl-level
-> coverage. The live database separately has 26 resolved publication keys covering 879 candidate
-> records that collapse to 715 working identities in the publication projection; 775 identities
-> carry some form of publication reference. Ten complete corpus editions or catalogues have been
-> inspected and their 505 appearances indexed. Stübe 1895, listed below as missing at the time of
-> the original measurement, is now held from an open BSB scan and reconciled at catalogue level.
+> coverage. The live database separately has 32 resolved publication keys covering 895 candidate
+> records; 778 of 1,701 working identities carry some form of publication reference. Sixteen
+> complete corpus, catalogue, or edition units have been inspected and their 540 appearances
+> indexed. Stübe 1895, the Wohlstein 1893–1894 articles, and four Gordon articles from 1934–1937,
+> listed below as missing at the time of the original measurement, are now reconciled at object
+> level. Three Gordon scans are held; the fourth was fully inspected but not archived because the
+> project could not verify robots permission.
 
 ## The control list
 

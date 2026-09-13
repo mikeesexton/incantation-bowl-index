@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-13T03:45:00Z",
+  "batch": "Classify four complete Gordon article editions inspected remotely",
+  "policy": "Scope follows the complete primary articles. Separately described but unedited bowls receive appearances without publication membership.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-GORDON-AF-COMPLETE",
+      "source_id": "SRC-60CB324330C9",
+      "scope": "corpus_edition",
+      "basis": "Complete transcriptions, English translations, commentary, and plates for six bowls, texts A-F."
+    },
+    {
+      "review_id": "IBI-SCOPE-GORDON-G-COMPLETE",
+      "source_id": "SRC-0383E0E0A2F2",
+      "scope": "single_object_edition",
+      "basis": "Complete transcription, English translation, commentary, and plates for text G, Istanbul no. 5497."
+    },
+    {
+      "review_id": "IBI-SCOPE-GORDON-HO-COMPLETE",
+      "source_id": "SRC-43C1E102538E",
+      "scope": "corpus_edition",
+      "basis": "Complete transcriptions, English translations, commentary, and plates for eight bowls, texts H-O."
+    },
+    {
+      "review_id": "IBI-SCOPE-GORDON-IM9737-COMPLETE",
+      "source_id": "SRC-C45C16AC2B8E",
+      "scope": "single_object_edition",
+      "basis": "Complete transcription, English translation, commentary, and hand copy for Iraq Museum no. 9737."
+    }
+  ]
+}

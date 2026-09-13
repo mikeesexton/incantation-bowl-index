@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-12 — Codex — Gordon open-edition reconciliation
+
+**Claimed:** TEXT-001, SCHOL-005, DISC-003
+**Corpus:** changed (three complete PDF deposits, four corrected and scoped sources, four resolved publication keys, 24 source appearances, 15 exact existing-object attachments, and 9 new candidates) — state digest `5a268171bafc`
+**Tests:** 203 Python tests passed; all manifests replayed idempotently; archive hashes, SQLite integrity and foreign keys, JavaScript syntax, JSON/JSONL parsing, deterministic manifest generation, and diff whitespace all passed
+
+- Used the Czech Academy's official Kramerius service to recover and visually inspect complete article-and-plate sequences for Gordon's 1934 texts A–F, 1934 text G, and 1937 texts H–O. Deposited all three by hash and retained the repository's contractual-use terms as copyrighted rather than confusing open access with an open reuse licence.
+- Inspected Gordon's complete 1934 AASOR edition of Iraq Museum no. 9737 through an institutional scan. Corrected and scoped its source record but did not archive the file because the project crawler could not verify robots permission. CAL and ASOR bibliographic records independently confirm the four citations.
+- Added 24 page-located source appearances. Sixteen are complete bowl editions: fifteen attach to existing records by exact Gordon labels or museum numbers, and Harvard Semitic Museum 8669 is a new candidate. Seven numbered Istanbul survey bowls and National Museum 207962 are eight further new candidates. No uncertain identity was merged.
+- Preserved Gordon's uncertain 1937 Ashmolean attribution for no. 91731 beside the current British Museum evidence rather than silently replacing either source. No protected transcription, translation, plate, or commentary was published.
+- Updated the repository overview, the Waller control-list note, all current reports, and the living mission plan. Current scale is 1,969 records, 1,701 identities, 2,179 appearances, 32/32 resolved publication keys covering 895 records, and 540 located appearances across 16 complete inspected edition units. The next automation step is a 14-day read-only shadow run over Kramerius, LOC and Crossref/OpenAlex; corpus writes, merges, rights decisions and publication remain human-reviewed.
+
 ## 2026-09-12 — Codex — Wohlstein open-edition reconciliation
 
 **Claimed:** TEXT-001, SCHOL-005, DISC-003
