@@ -51,10 +51,18 @@ the dated reports under `data/reports/`.
   agreed on the Schøyen Collection and the comparison missed it.
 - Attached JBA 5 to its cluster's canonical record. All 64 VMBA bowls now carry
   dimensions, clients and biblical quotations: 64 appearances and 213 claims.
-- Storage was measured for the researcher, not changed. `data/private` holds 2.1 GB:
-  1.0 GB of backups (now 35), 669 MB of source archive, 342 MB of exports, 39 MB of
-  working database. A backup gzips from 39 MB to 6.5 MB, about six to one. Nothing was
-  deleted, compressed or moved.
+- Pruned the backup directory on the researcher's instruction, bringing it into line
+  with the stated limit of ten. Compressed the ten most recent snapshots and verified
+  every archive before deleting anything: sound gzip stream, byte-exact decompression,
+  SQLite `integrity_check` ok, and object and claim counts that decrease monotonically
+  going back in time. Then removed the ten superseded originals, the 24 older
+  snapshots, and 26 orphaned `-shm`/`-wal` sidecars. Backups went from 1.1 GB to 67 MB
+  and `data/private` from 2.1 GB to 1.1 GB. The source archive (669 MB) was not
+  touched; it is the part Git cannot reconstruct.
+- A restore is now `gunzip -c <archive>.gz > data/private/ibi.sqlite3`. Worth
+  remembering that the corpus is reproducible from the checked-in manifests anyway —
+  every write this session replayed idempotently — so these snapshots are a
+  convenience, not the system of record.
 
 ## 2026-09-13 — Claude — Exact-identifier dedupe decisions and the four unblocked bowls
 
