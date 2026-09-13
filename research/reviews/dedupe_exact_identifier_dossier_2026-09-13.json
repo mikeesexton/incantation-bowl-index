@@ -1,0 +1,1481 @@
+{
+ "schema_version": 1,
+ "kind": "evidence_dossier",
+ "note": "Evidence assembled for review. Contains NO decisions. No pair here has been adjudicated and no merge has been made.",
+ "prepared_by": "Claude",
+ "prepared_at": "2026-09-13T20:30:00+00:00",
+ "scope": "All 77 pending method='exact_identifier' dedupe candidates as of corpus digest b9c37ff1eb1f.",
+ "method": "Compared both records on research_protocol step 3 fields: dimensions, material, inscription_language, script, catalogue_dialect, line_count, current_location, current_or_reported_collection, findspot, dating, period, condition, provenance, collection_history.",
+ "caveat": "An exact identifier is strong evidence, not a merge instruction (research_protocol step 2). Bands are a reading of stored claims only; none is a fresh primary-source check, and none certifies a physical identity.",
+ "bands": {
+  "corroborated": 24,
+  "wording_or_granularity_only": 21,
+  "no_overlapping_evidence": 30,
+  "substantive_conflict": 2
+ },
+ "entries": [
+  {
+   "dedupe_id": "DED-01624503F36E",
+   "object_a": "IBI-67A46456293B",
+   "object_b": "IBI-9F4A6502C9A4",
+   "label_a": "CBS 8826",
+   "label_b": "Moriggi 2014 bowl 42: CBS 8826",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs8826",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-02F3644BEA8C",
+   "object_a": "IBI-AF468D977D26",
+   "object_b": "IBI-C3A694B7B3C5",
+   "label_a": "Schøyen MS 1927/64 (JBA 5)",
+   "label_b": "Waller 2022: JBA 05",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 5",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-06BE16F67C81",
+   "object_a": "IBI-76FB63CDA695",
+   "object_b": "IBI-EBCFF8FC5EA0",
+   "label_a": "Penn B16086: Hebrew Bowl",
+   "label_b": "Moriggi 2014 bowl 4: CBS 16086",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16086",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-08697C9EAAB3",
+   "object_a": "IBI-7B9A81135B29",
+   "object_b": "IBI-94A458622B13",
+   "label_a": "Waller 2022: JBA 01",
+   "label_b": "Apotropaic index MS1927/8",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 1",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-0AEB855FFFFA",
+   "object_a": "IBI-847BA478D9ED",
+   "object_b": "IBI-A158055D97DA",
+   "label_a": "Waller 2022: JBA 06",
+   "label_b": "Apotropaic index MS2053/10",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 6",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-0C7C0F6C0C60",
+   "object_a": "IBI-4B7488D77F24",
+   "object_b": "IBI-92BA58D99251",
+   "label_a": "CBS 9008",
+   "label_b": "Moriggi 2014 bowl 3: CBS 9008",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs9008",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-0CF6B34551BF",
+   "object_a": "IBI-0C99418FFC4A",
+   "object_b": "IBI-9BF942623298",
+   "label_a": "Apotropaic index MS1927/45",
+   "label_b": "Waller 2022: JBA 03",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 3",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-0E089048F553",
+   "object_a": "IBI-0569914882D3",
+   "object_b": "IBI-CB0178C61399",
+   "label_a": "Levene 2013: VA.2434",
+   "label_b": "Vorderasiatisches Museum VA.2434 (catalogue 30)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2434",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-11B86714D531",
+   "object_a": "IBI-54E975AB2557",
+   "object_b": "IBI-C355CFCFCA97",
+   "label_a": "Vorderasiatisches Museum VA.2424 (catalogue 20)",
+   "label_b": "Levene 2013: VA.2424",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2424",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-13A01F92A6F1",
+   "object_a": "IBI-3E3B90AC5816",
+   "object_b": "IBI-EED72B72DD39",
+   "label_a": "Schøyen MS 2053/150 (JBA 20)",
+   "label_b": "Apotropaic index MS2053/150",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms2053/150",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-17027B4E07B9",
+   "object_a": "IBI-6E087B8C539F",
+   "object_b": "IBI-B16050F48159",
+   "label_a": "CBS 16097",
+   "label_b": "Moriggi 2014 bowl 7: CBS 16097",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16097",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-1AC35131FA08",
+   "object_a": "IBI-83B79765A7BC",
+   "object_b": "IBI-F263CF1257B9",
+   "label_a": "Vorderasiatisches Museum VA.2416 (catalogue 12)",
+   "label_b": "Levene 2013: VA.2416",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2416",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-1CBBA817215F",
+   "object_a": "IBI-73E651D21AE9",
+   "object_b": "IBI-BD0E2A92B719",
+   "label_a": "Levene 2013: VA.2492",
+   "label_b": "Vorderasiatisches Museum VA.2492 (catalogue 62)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2492",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-2CB9BAF9C65E",
+   "object_a": "IBI-AE7E0076A3C2",
+   "object_b": "IBI-F00ACFE82A97",
+   "label_a": "Moriggi 2014 bowl 5: CBS 16019",
+   "label_b": "Penn B16019: Hebrew Bowl",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16019",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "material",
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-3060680A1D40",
+   "object_a": "IBI-21B5ECDA71C3",
+   "object_b": "IBI-E10D2B1AF3DC",
+   "label_a": "MS 1928/8",
+   "label_b": "Schøyen MS 1928/8 (JBA 56)",
+   "shared_exact_identifiers": 2,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms1928/8",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-36CDCA45C623",
+   "object_a": "IBI-4E0DCBDCC1F2",
+   "object_b": "IBI-B550125DCEDE",
+   "label_a": "Apotropaic index MS2053/132",
+   "label_b": "Schøyen MS 2053/132 (JBA 19)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms2053/132",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-3BFB71A8852D",
+   "object_a": "IBI-86EAEBF08875",
+   "object_b": "IBI-9864B55DD2CF",
+   "label_a": "Hilprecht Collection HS 3005 (MRLA 8, 3)",
+   "label_b": "Waller 2022: Isbell 55",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3005",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [
+    "inscription_language"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-3C061F0408FD",
+   "object_a": "IBI-6918D270707A",
+   "object_b": "IBI-FEF6B893A0A7",
+   "label_a": "Waller 2022: JBA 09",
+   "label_b": "Apotropaic index MS2053/183",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 9",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-3D1E3A681C35",
+   "object_a": "IBI-B26C2EDB70C1",
+   "object_b": "IBI-D1EE333A7E0D",
+   "label_a": "HS 3039",
+   "label_b": "Hilprecht Collection HS 3039 (MRLA 8, 32)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3039",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script"
+   ]
+  },
+  {
+   "dedupe_id": "DED-3D6D1B8A811C",
+   "object_a": "IBI-96F3DBB22B61",
+   "object_b": "IBI-E10D2B1AF3DC",
+   "label_a": "Apotropaic index MS1928/8",
+   "label_b": "Schøyen MS 1928/8 (JBA 56)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms1928/8",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-3EED466E8465",
+   "object_a": "IBI-5C86F6265738",
+   "object_b": "IBI-B16050F48159",
+   "label_a": "CBS 16097",
+   "label_b": "Moriggi 2014 bowl 7: CBS 16097",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16097",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-413197A48E3F",
+   "object_a": "IBI-0E11CB6D2517",
+   "object_b": "IBI-6332934EE686",
+   "label_a": "Vorderasiatisches Museum VA.2423 (catalogue 19)",
+   "label_b": "Levene 2013: VA.2423",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2423",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-48BEEF092B14",
+   "object_a": "IBI-09D4E7FA9625",
+   "object_b": "IBI-CD3E783556B1",
+   "label_a": "Moriggi 2014 bowl 8: CBS 2933",
+   "label_b": "CBS 2933",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs2933",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-4A5F77DA76C5",
+   "object_a": "IBI-09D4E7FA9625",
+   "object_b": "IBI-397771B8038D",
+   "label_a": "Moriggi 2014 bowl 8: CBS 2933",
+   "label_b": "CBS 2933",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs2933",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-55B28202F936",
+   "object_a": "IBI-07AB8EBC54E5",
+   "object_b": "IBI-AF468D977D26",
+   "label_a": "Apotropaic index MS1927/64",
+   "label_b": "Schøyen MS 1927/64 (JBA 5)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms1927/64",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-581A30A55580",
+   "object_a": "IBI-73425D0E99C6",
+   "object_b": "IBI-E501E80DA715",
+   "label_a": "Schøyen MS 2053/238 (context citation)",
+   "label_b": "Waller 2022: JBA 104",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2022::jba 104",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-58507CA38784",
+   "object_a": "IBI-06BD95937A55",
+   "object_b": "IBI-09D4E7FA9625",
+   "label_a": "Penn B2933: Hebrew Bowl",
+   "label_b": "Moriggi 2014 bowl 8: CBS 2933",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs2933",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "material",
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-5CE6B85913AA",
+   "object_a": "IBI-D1EE333A7E0D",
+   "object_b": "IBI-F2A4F146BA77",
+   "label_a": "Hilprecht Collection HS 3039 (MRLA 8, 32)",
+   "label_b": "Moriggi 2014 bowl 38: HS 3039",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3039",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-63662B7033F8",
+   "object_a": "IBI-920AA91FFE7D",
+   "object_b": "IBI-9F5523CA69BE",
+   "label_a": "Vorderasiatisches Museum VA.2484 (catalogue 55)",
+   "label_b": "Levene 2013: VA.2484",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2484",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-656BAAEFC891",
+   "object_a": "IBI-2422A6BE70E3",
+   "object_b": "IBI-AE7E0076A3C2",
+   "label_a": "CBS 16019",
+   "label_b": "Moriggi 2014 bowl 5: CBS 16019",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16019",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-69F8433DB6CF",
+   "object_a": "IBI-AE7E0076A3C2",
+   "object_b": "IBI-E10F6716C2C1",
+   "label_a": "Moriggi 2014 bowl 5: CBS 16019",
+   "label_b": "CBS 16019",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16019",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-6C4C19AE1123",
+   "object_a": "IBI-56796E0EB0E2",
+   "object_b": "IBI-86EAEBF08875",
+   "label_a": "Waller 2022: HS 3005",
+   "label_b": "Hilprecht Collection HS 3005 (MRLA 8, 3)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3005",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection",
+    "inscription_language"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-6DB83B821426",
+   "object_a": "IBI-597290DEB8C3",
+   "object_b": "IBI-6B4F018F436C",
+   "label_a": "Penn B16101: Hebrew Bowl",
+   "label_b": "Moriggi 2014 bowl 43: CBS 16101 + frag. nos. 2, 3",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16101",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "material",
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-6E4F94EA41C9",
+   "object_a": "IBI-BAA1A1373E41",
+   "object_b": "IBI-D1EE333A7E0D",
+   "label_a": "Hilprecht Collection HS 3039",
+   "label_b": "Hilprecht Collection HS 3039 (MRLA 8, 32)",
+   "shared_exact_identifiers": 2,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3039",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "inscription_language",
+    "current_location",
+    "current_or_reported_collection",
+    "findspot",
+    "dating"
+   ]
+  },
+  {
+   "dedupe_id": "DED-707B845AA776",
+   "object_a": "IBI-48980BF7D761",
+   "object_b": "IBI-DDC4E29E455A",
+   "label_a": "Moriggi 2014 bowl 6: CBS 9012",
+   "label_b": "Penn B9012: Hebrew Bowl",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs9012",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "material",
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-70B999678A75",
+   "object_a": "IBI-BAA1A1373E41",
+   "object_b": "IBI-F2A4F146BA77",
+   "label_a": "Hilprecht Collection HS 3039",
+   "label_b": "Moriggi 2014 bowl 38: HS 3039",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3039",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "inscription_language",
+    "current_location",
+    "findspot",
+    "dating"
+   ]
+  },
+  {
+   "dedupe_id": "DED-757CCD42D573",
+   "object_a": "IBI-3E3B90AC5816",
+   "object_b": "IBI-BF211A4B72F7",
+   "label_a": "Schøyen MS 2053/150 (JBA 20)",
+   "label_b": "MS 2053/150",
+   "shared_exact_identifiers": 2,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 20",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-78437D7AA9A1",
+   "object_a": "IBI-4804CC31F58D",
+   "object_b": "IBI-F031C44350BC",
+   "label_a": "Waller 2022: JBA 109",
+   "label_b": "Schøyen MS 2053/230 (context citation)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2022::jba 109",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-7BA6BE0982FC",
+   "object_a": "IBI-6F98412BF44D",
+   "object_b": "IBI-83B79765A7BC",
+   "label_a": "Waller 2022: VA 2416",
+   "label_b": "Vorderasiatisches Museum VA.2416 (catalogue 12)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va2416",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "current_or_reported_collection"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "inscription_language",
+    "catalogue_dialect"
+   ]
+  },
+  {
+   "dedupe_id": "DED-7CA68AA4EADD",
+   "object_a": "IBI-268778FE992D",
+   "object_b": "IBI-41983FC065EF",
+   "label_a": "Vorderasiatisches Museum VA.2509 (catalogue 75)",
+   "label_b": "Levene 2013: VA.2509",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2509",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-7F3569847282",
+   "object_a": "IBI-92BA58D99251",
+   "object_b": "IBI-F9670CEFD548",
+   "label_a": "Moriggi 2014 bowl 3: CBS 9008",
+   "label_b": "Penn B9008: Hebrew Bowl",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs9008",
+   "band": "substantive_conflict",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [
+    {
+     "field": "inscription_language",
+     "a": [
+      "Syriac"
+     ],
+     "b": [
+      "Hebrew Language"
+     ]
+    }
+   ],
+   "fields_present_on_one_side_only": [
+    "material",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-820BC92F1929",
+   "object_a": "IBI-846252562B0E",
+   "object_b": "IBI-A3172261C638",
+   "label_a": "Vorderasiatisches Museum VA.2575 (catalogue 83)",
+   "label_b": "Levene 2013: VA.2575",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2575",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-8CBC8BDC8D80",
+   "object_a": "IBI-29AAFE861F78",
+   "object_b": "IBI-F4BAF2DE2A59",
+   "label_a": "Moriggi 2014 bowl 9: CBS 2943",
+   "label_b": "CBS 2943",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs2943",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-8D6B3A4515BA",
+   "object_a": "IBI-4CDAFE6C01A3",
+   "object_b": "IBI-7DAD76C36F8E",
+   "label_a": "Waller 2022: JBA 103",
+   "label_b": "MS 2053/196: Incantation Bowl: Earliest Hewbrew Text Examples",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2022::jba 103",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "material",
+    "current_location",
+    "dating"
+   ]
+  },
+  {
+   "dedupe_id": "DED-90C25A2C4F41",
+   "object_a": "IBI-B26C2EDB70C1",
+   "object_b": "IBI-F2A4F146BA77",
+   "label_a": "HS 3039",
+   "label_b": "Moriggi 2014 bowl 38: HS 3039",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3039",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-97D7DA99E25B",
+   "object_a": "IBI-AF468D977D26",
+   "object_b": "IBI-F36154E31E2B",
+   "label_a": "Schøyen MS 1927/64 (JBA 5)",
+   "label_b": "Schøyen MS 1927/64 (context citation)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms1927/64",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_location",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-9C78D9866037",
+   "object_a": "IBI-2F518E039625",
+   "object_b": "IBI-B16050F48159",
+   "label_a": "Penn B16097: Hebrew Bowl",
+   "label_b": "Moriggi 2014 bowl 7: CBS 16097",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16097",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "material",
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-A73C5DFCA96C",
+   "object_a": "IBI-920AA91FFE7D",
+   "object_b": "IBI-D2D12615DAA7",
+   "label_a": "Vorderasiatisches Museum VA.2484 (catalogue 55)",
+   "label_b": "Waller 2022: VA 2484",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va2484",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "current_or_reported_collection"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect"
+   ]
+  },
+  {
+   "dedupe_id": "DED-AA2ED7328714",
+   "object_a": "IBI-4388179CF590",
+   "object_b": "IBI-F91C6432EB15",
+   "label_a": "Yale Babylonian Collection YBC 2393",
+   "label_b": "Levene 2013: YBC 2393",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ybc2393",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [
+    "inscription_language"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_location",
+    "dating"
+   ]
+  },
+  {
+   "dedupe_id": "DED-AC14662947C8",
+   "object_a": "IBI-220BCFC0023F",
+   "object_b": "IBI-B16BA47EFA4E",
+   "label_a": "Schøyen MS 2053/218 (context citation)",
+   "label_b": "Waller 2022: JBA 108",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2022::jba 108",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-AC6501CD72CB",
+   "object_a": "IBI-1A098436B031",
+   "object_b": "IBI-48980BF7D761",
+   "label_a": "CBS 9012",
+   "label_b": "Moriggi 2014 bowl 6: CBS 9012",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs9012",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-AE25AD9D52B7",
+   "object_a": "IBI-29AAFE861F78",
+   "object_b": "IBI-3322C751E92E",
+   "label_a": "Moriggi 2014 bowl 9: CBS 2943",
+   "label_b": "Penn B2943: Hebrew Bowl",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs2943",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "material",
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-B863BAE41427",
+   "object_a": "IBI-9F4A6502C9A4",
+   "object_b": "IBI-D23DBA217AEB",
+   "label_a": "Moriggi 2014 bowl 42: CBS 8826",
+   "label_b": "Penn B8826: Hebrew Bowl",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs8826",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-BD110DCAAD96",
+   "object_a": "IBI-A2CC1F13F29F",
+   "object_b": "IBI-FEAC2F4016A5",
+   "label_a": "Schøyen MS 2053/33 (JBA 17)",
+   "label_b": "MS 2053/33",
+   "shared_exact_identifiers": 2,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 17",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-BD2786C43B32",
+   "object_a": "IBI-A11621D03F66",
+   "object_b": "IBI-DC2AF9B46657",
+   "label_a": "Waller 2022: JBA 67",
+   "label_b": "Schøyen MS 2053/56 (context citation)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2022::jba 67",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "current_location"
+   ]
+  },
+  {
+   "dedupe_id": "DED-BF3584AFB99B",
+   "object_a": "IBI-09B23B2CE047",
+   "object_b": "IBI-58CF5ED0C89C",
+   "label_a": "HS 3003",
+   "label_b": "Hilprecht Collection HS 3003 (MRLA 8, 2)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3003",
+   "band": "substantive_conflict",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [
+    "inscription_language"
+   ],
+   "fields_needing_a_human_look": [
+    {
+     "field": "current_or_reported_collection",
+     "a": [
+      "Private collection, Berlin"
+     ],
+     "b": [
+      "Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena"
+     ]
+    }
+   ],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-BF804CA4C1D0",
+   "object_a": "IBI-8746509B00D1",
+   "object_b": "IBI-AB499F10A21D",
+   "label_a": "Waller 2022: JBA 04",
+   "label_b": "Apotropaic index MS1927/47",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 4",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-BF8581DF655A",
+   "object_a": "IBI-46A19DD5509C",
+   "object_b": "IBI-C16B6B568B13",
+   "label_a": "Vorderasiatisches Museum VA.2418 (catalogue 14)",
+   "label_b": "Levene 2013: VA.2418",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2418",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-C187ECB22BDF",
+   "object_a": "IBI-A2EAAAFBE5E5",
+   "object_b": "IBI-C2A3B69CBA56",
+   "label_a": "Vorderasiatisches Museum VA.3382 (catalogue 94)",
+   "label_b": "Levene 2013: VA.3382",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.3382",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-C4F117B434FF",
+   "object_a": "IBI-81AE4E796DC4",
+   "object_b": "IBI-F36B9EC67F96",
+   "label_a": "Apotropaic index MS2053/55",
+   "label_b": "Waller 2022: JBA 08",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 8",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-C55B4DDAFD69",
+   "object_a": "IBI-282211CBFEDB",
+   "object_b": "IBI-9B8289678F00",
+   "label_a": "Levene 2013: VA.2417",
+   "label_b": "Vorderasiatisches Museum VA.2417 (catalogue 13)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2417",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-D0BC07C7A2A3",
+   "object_a": "IBI-071DAEFA6D11",
+   "object_b": "IBI-D295E71EB908",
+   "label_a": "Waller 2022: JBA 02",
+   "label_b": "Apotropaic index MS1927/29",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 2",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-D0E38E562A2C",
+   "object_a": "IBI-29AAFE861F78",
+   "object_b": "IBI-44BC3FE36601",
+   "label_a": "Moriggi 2014 bowl 9: CBS 2943",
+   "label_b": "CBS 2943",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs2943",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-D42E7B7FBF31",
+   "object_a": "IBI-48980BF7D761",
+   "object_b": "IBI-F094DE6A4112",
+   "label_a": "Moriggi 2014 bowl 6: CBS 9012",
+   "label_b": "CBS 9012",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs9012",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-D4C7CBA6F892",
+   "object_a": "IBI-60A67A350134",
+   "object_b": "IBI-9569F656CA93",
+   "label_a": "Waller 2022: JBA 65",
+   "label_b": "Apotropaic index MS1911/1",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2022::jba 65",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-E031A90CC291",
+   "object_a": "IBI-58CF5ED0C89C",
+   "object_b": "IBI-AB9C12C9719A",
+   "label_a": "Hilprecht Collection HS 3003 (MRLA 8, 2)",
+   "label_b": "Waller 2022: HS 3003",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=hs3003",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection",
+    "inscription_language"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-E38BA5141397",
+   "object_a": "IBI-079F0B82D514",
+   "object_b": "IBI-92BA58D99251",
+   "label_a": "CBS 9008",
+   "label_b": "Moriggi 2014 bowl 3: CBS 9008",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs9008",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-E60B5CF88E2F",
+   "object_a": "IBI-74178EB3C1CC",
+   "object_b": "IBI-A579E5286B8B",
+   "label_a": "Levene 2013: VA.2496",
+   "label_b": "Vorderasiatisches Museum VA.2496 (catalogue 66)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.2496",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-E9A58DA61FE2",
+   "object_a": "IBI-220D24A5C807",
+   "object_b": "IBI-E10D2B1AF3DC",
+   "label_a": "Waller 2022: JBA 56",
+   "label_b": "Schøyen MS 1928/8 (JBA 56)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 56",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-EC1DDB7127D8",
+   "object_a": "IBI-90A3DFF32458",
+   "object_b": "IBI-B550125DCEDE",
+   "label_a": "MS 2053/132",
+   "label_b": "Schøyen MS 2053/132 (JBA 19)",
+   "shared_exact_identifiers": 2,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms2053/132",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": []
+  },
+  {
+   "dedupe_id": "DED-ECA18D2B5B54",
+   "object_a": "IBI-0486433C4AA1",
+   "object_b": "IBI-47922DD16507",
+   "label_a": "Waller 2022: JBA 07",
+   "label_b": "Apotropaic index MS2053/12",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: publication object key=shaked-ford-bhayro 2013::jba 7",
+   "band": "wording_or_granularity_only",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [
+    "current_or_reported_collection"
+   ],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions"
+   ]
+  },
+  {
+   "dedupe_id": "DED-ED4143C2A9AD",
+   "object_a": "IBI-98DF11F7A9FF",
+   "object_b": "IBI-A2CC1F13F29F",
+   "label_a": "Apotropaic index MS2053/33",
+   "label_b": "Schøyen MS 2053/33 (JBA 17)",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ms2053/33",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-ED5EF3929716",
+   "object_a": "IBI-39167857180F",
+   "object_b": "IBI-8D1A62EDE059",
+   "label_a": "Vorderasiatisches Museum VA.3381 (catalogue 93)",
+   "label_b": "Levene 2013: VA.3381",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=va.3381",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language",
+    "catalogue_dialect",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-F3EA4710A814",
+   "object_a": "IBI-6B4F018F436C",
+   "object_b": "IBI-CF631FD80A2E",
+   "label_a": "Moriggi 2014 bowl 43: CBS 16101 + frag. nos. 2, 3",
+   "label_b": "CBS 16101",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16101",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  },
+  {
+   "dedupe_id": "DED-FBAA4D52E2DA",
+   "object_a": "IBI-527704D6B074",
+   "object_b": "IBI-EBCFF8FC5EA0",
+   "label_a": "CBS 16086",
+   "label_b": "Moriggi 2014 bowl 4: CBS 16086",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16086",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "dimensions",
+    "current_or_reported_collection",
+    "findspot",
+    "condition"
+   ]
+  },
+  {
+   "dedupe_id": "DED-FCD7480BFBA8",
+   "object_a": "IBI-DB735219142A",
+   "object_b": "IBI-F91C6432EB15",
+   "label_a": "Apotropaic index YBC2393",
+   "label_b": "Levene 2013: YBC 2393",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=ybc2393",
+   "band": "no_overlapping_evidence",
+   "fields_agreeing": [],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "inscription_language"
+   ]
+  },
+  {
+   "dedupe_id": "DED-FF33540C2EA2",
+   "object_a": "IBI-974F2B5B0B55",
+   "object_b": "IBI-EBCFF8FC5EA0",
+   "label_a": "CBS 16086",
+   "label_b": "Moriggi 2014 bowl 4: CBS 16086",
+   "shared_exact_identifiers": 1,
+   "shared_identifier_rationale": "Shared identifier: collection designation=cbs16086",
+   "band": "corroborated",
+   "fields_agreeing": [
+    "inscription_language"
+   ],
+   "fields_differing_by_wording": [],
+   "fields_needing_a_human_look": [],
+   "fields_present_on_one_side_only": [
+    "script",
+    "current_or_reported_collection"
+   ]
+  }
+ ]
+}
