@@ -1,18 +1,18 @@
 {
-  "corpus_digest": "5a268171bafc3440ac6fc8733a2d7c5c73d96deb28fd1e0f8f9beae23ba677f9",
+  "corpus_digest": "b9c37ff1eb1fa1561b2af3c7d36d870bce10bdb2df14bc78606fdaec1cfda3b7",
   "migrations": 14,
-  "note": "Gordon 1934-1937 remote article reconciliation: three deposits, four source corrections/scopes/publication keys, 24 appearances, 9 new candidates",
-  "recorded_at": "2026-09-13T03:48:06+00:00",
-  "recorded_by": "Codex",
+  "note": "VMBA recovery: 59 source appearances and 196 claims on existing Schoyen objects; exact-identifier dedupe sweep queued 77 pending pairs",
+  "recorded_at": "2026-09-13T20:10:26+00:00",
+  "recorded_by": "Claude",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "b0c4036a5984d5ba648d0654b54c4139cf7bd9c3f34079e1dcc4ae56b3166966",
-      "rows": 2179
+      "digest": "930bac30233c984aef23467312cc80b6a4352307a17aef351065528445aeb9d0",
+      "rows": 2238
     },
     "appearances": {
-      "digest": "834355aefef0aa8698c2744ba4119f648eaa657e434db1138a4932a3574951d2",
-      "rows": 2179
+      "digest": "194cd036ca8c447149a1865d0df0c1a5baffa29c63e2f07ecc23551aee03de95",
+      "rows": 2238
     },
     "captures": {
       "digest": "6a4899c317254db449208387ad703390c0fa5026aa4692e700b866915a35ed2b",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "c7b817d62ee8cb664c322f26c2f4d06d0ffe04452d78f89c15fc72e1178e42fa",
-      "rows": 6888
+      "digest": "d7a555b7c9a52ecaa4462fa4717f29506862e0cb342aea10aa0ce61a818c43f2",
+      "rows": 7084
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -43,8 +43,8 @@
       "rows": 12
     },
     "dedupe_candidates": {
-      "digest": "b1c706d33fe885ed2849eaffd56f2f55875980c0366d980934ba0c00aec84178",
-      "rows": 34686
+      "digest": "768f3ed5430e07c8012dba92baa9fdcb559790e5c0a449982a1f7991db3d5ab8",
+      "rows": 34763
     },
     "dedupe_evidence": {
       "digest": "d9d8b0e1f50942979c054365ef1f653d16b76adaca45ab5f54bba6184f7495cf",

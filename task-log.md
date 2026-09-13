@@ -25,6 +25,53 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-13 — Claude — Virtual Magic Bowl Archive recovery
+
+**Claimed:** DISC-003, META-008, CONC-001
+**Corpus:** changed (59 source appearances and 196 claims on existing Schøyen objects; exact-identifier dedupe sweep queued 77 pending pairs) — state digest `b9c37ff1eb1f`
+**Tests:** 203 Python tests passed; manifest replayed idempotently (196 claims before and after); SQLite integrity and foreign-key checks clean
+
+- Recovered the Virtual Magic Bowl Archive, which carried zero appearances and zero
+  claims because the September campaign hit an AWS WAF challenge on the Exeter
+  repository and HTTP 429 on the Wayback CDX API. The CDX API answered normally this
+  time and the archived listing pages are intact. Nothing was bypassed: every request
+  returned HTTP 200 from the public Internet Archive, and `ore.exeter.ac.uk` was not
+  touched, so `SRC-E26693A4D198` stays `blocked` and untested.
+- Recovered all 64 VMBA records — JBA 1-64, the Schøyen bowls edited in Shaked, Ford
+  and Bhayro vol. 1 — with Schøyen MS number, dimensions, clients, biblical
+  quotations and per-bowl photograph counts. All 64 already existed as objects and
+  the JBA↔MS concordance already in the corpus matched on all 64, so the recovery is
+  independent confirmation of the concordance and new content for everything else:
+  63 of the 64 carried no `dimensions`, no `client` and no `biblical_quotations`
+  claim from any source.
+- Applied 59 of 64 as `reported` claims. Dimensions carry the measurement-convention
+  caveat and are not verified against the printed edition; `client` records the
+  archive's own label without separating commissioner, beneficiary and scribe.
+- Held back five bowls (JBA 5, 17, 19, 20, 56) that each resolve to two object
+  records. Auditing that gap found 62 exact-identifier pairs missing from
+  `dedupe_candidates` entirely, five of them sharing two exact identifiers. The
+  matcher is fine; the sweep was simply stale, because the second record in each pair
+  came from the 11 September ingest. Ran `ibi dedupe --threshold 0.6` — above 0.55, so
+  the exact pass runs and the O(n²) label pass is skipped — which queued 77 pairs, all
+  `pending`. No merge was made and no pair was decided.
+- Deposited no image. The ~1,239 surviving VMBA photographs are © Matthew Morgenstern
+  and the Schøyen Collection, released for non-commercial research only — the same
+  NC-versus-CC-BY conflict that already withholds Waller 2022. The claims record only
+  that photographs exist and how many.
+- Also closed out the uncommitted 7 September findspot session, which had been sitting
+  in the working tree for six days. Its two corpus-parity tests were failing from a
+  WAL read problem, not a data problem: the corpus runs in WAL mode, a plain `mode=ro`
+  connection has to create the `-shm` file and cannot, so the test failed whenever the
+  last writer closed cleanly. Switched it to `mode=ro&immutable=1`, which reads the
+  snapshot directly. Parity still holds exactly — 61 findspot strings, none unmapped,
+  none orphaned.
+- Next session should adjudicate the 77 queued pairs, starting with the five that
+  share two exact identifiers, one of which is a Hilprecht pair
+  (`HS 3039` / `MRLA 8::32`) unrelated to this work. Also outstanding: the five
+  withheld VMBA bowls, which attach as soon as their duplicates are resolved; and
+  `data/private/backups/` now holds 32 files against a stated limit of ten, which
+  needs a human decision before anything is deleted.
+
 ## 2026-09-12 — Codex — Gordon open-edition reconciliation
 
 **Claimed:** TEXT-001, SCHOL-005, DISC-003
@@ -197,6 +244,20 @@ the dated reports under `data/reports/`.
 - Availability labels follow the gated reader projection: withheld text and unapproved images never qualify as available here. Unapproved image references remain explicitly labelled as references.
 - Kept existing `#/reading/<identity-id>` links working and restored the originating catalogue query through the Back link. Fixed the docked homepage browse-button precedence leak outside Home and added a stacked 390px row layout.
 - No corpus records, source assertions, rights decisions, private endpoints, publication state, or deployment changed. A later pass can consolidate noisy collection aliases and further refine long source-derived row descriptions.
+
+## 2026-09-07 — Claude — Findspot gazetteer and distribution map
+
+**Claimed:** none — researcher-requested enumeration of recorded findspots, plus a map
+**Corpus:** unchanged — state digest 12a0c0d20986 (read-only throughout; the state record is left as Codex wrote it, since nothing in the corpus moved)
+**Tests:** 198 Python tests passed (189 existing, plus 9 new gazetteer and corpus-parity tests). Label placement and canvas bounds checked analytically on both map frames; page structure verified in the browser at 800px and 1240px.
+
+- Enumerated every `findspot` claim in the corpus: 225 claims over 205 objects, 60 distinct strings. Added `research/geo/findspot_gazetteer.json` (coordinates for 20 sites, 2 named-but-unlocated places, 5 regions) and `research/geo/findspot_normalization.json`, which maps all 60 strings to a place and an evidence tier. A parity check asserts the two files and the corpus agree exactly, in both directions.
+- Added `build_findspot_map.py` (aggregates to `findspot_places.json`, counting objects once at their strongest tier) and `render_findspot_map.py` (renders `findspot_map.html`). Both read the database read-only and write nothing to it.
+- Kept coordinates out of the corpus. Locating "Nippur" on the globe is reference data, not a source-attributed claim, so the gazetteer sits beside the corpus rather than inside it; the claim, its source and its locator remain the authority.
+- Preserved the distinction the British Museum's data collapses. `Found/Acquired` and `Excavated/Findspot` are separate tiers and separate colours, because the former does not say whether a site is where a bowl was found or where it was bought. 12 objects rest on that weaker field.
+- Sites in Babylonia lie within ~15 km and overlap at national scale. They are drawn again in a 4.5× detail inset rather than nudged apart, so no marker sits at a false coordinate. Label positions are solved by a placer that scores candidates against markers, other labels and the canvas edge; no offset is hand-set.
+- Did not merge the five objects whose museum record names two findspots (Babylon and Borsippa); they are counted under both and flagged in the dataset as `ambiguous_objects`. Did not publish: the map is a local file, per the rule against deploying a public dashboard.
+- Next session could route the two unlocated places — Tell al-Duwayhi (Babil) and Kiamiaz on the Tigris — through the normal lead process, and decide whether the 53 region-only objects deserve a `findspot_evidence_level` claim rather than living only in this projection.
 
 ## 2026-09-07 — Codex — Bowlam homepage refinement
 

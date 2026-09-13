@@ -5,7 +5,7 @@
 - Working physical identity hypotheses (all statuses): **1701**
 - Multi-record identity clusters: **173**
 - Underlying source records (all identities): **1969**
-- Pending dedupe decisions: **0**
+- Pending dedupe decisions: **77**
 
 ## Identity-level coverage
 
@@ -14,7 +14,7 @@
 | Location | 1230 | 72.3% |
 | Provenance | 362 | 21.3% |
 | Dating | 482 | 28.3% |
-| Dimensions | 393 | 23.1% |
+| Dimensions | 452 | 26.6% |
 | Material | 408 | 24.0% |
 | Language | 1080 | 63.5% |
 | Script | 93 | 5.5% |
@@ -26,8 +26,8 @@
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 865 |
-| 3–5 of 10 | 724 |
+| 0–2 of 10 | 806 |
+| 3–5 of 10 | 783 |
 | 6–8 of 10 | 111 |
 | 9–10 of 10 | 1 |
 
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**314** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **15** substantive instances. **432** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**354** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **15** substantive instances. **488** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

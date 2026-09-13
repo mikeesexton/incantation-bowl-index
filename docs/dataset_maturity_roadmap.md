@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-13T03:46:27+00:00`
+Generated: `2026-09-13T20:10:19+00:00`
 
 ## Portfolio status
 
@@ -11,7 +11,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Progress measure | Current |
 |---|---:|
 | Roadmap tasks | 22 done · 21 in progress · 19 queued · 0 blocked |
-| Quantitative handoff gates passing | 2/5 |
+| Quantitative handoff gates passing | 1/5 |
 | Required handoff tasks complete | 7/24 |
 
 ### What is solid
@@ -74,13 +74,13 @@ Current evidence: **217 scholarship works indexed; 38 with a source-linked held 
 |---|---:|
 | Candidate source records | 1969 |
 | Working physical identity hypotheses (all statuses) | 1701 |
-| Source appearances | 2179 |
+| Source appearances | 2238 |
 | Sources | 862 |
-| Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 314 |
-| Triaged claim-field differences | 52/484 |
+| Pending dedupe decisions | 77 |
+| Identities triggering raw claim-difference flags | 354 |
+| Triaged claim-field differences | 52/540 |
 | Compatible differences | 37 |
-| Review required (missing or no longer valid) | 432 |
+| Review required (missing or no longer valid) | 488 |
 | Existing reviews requiring revalidation | 285 |
 | Substantive conflict instances | 15 across 13 identities |
 | All identities with a publication reference | 778/1701 (45.7%) |
@@ -108,7 +108,7 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Location | 1230 | 72.3% |
 | Provenance | 362 | 21.3% |
 | Dating | 482 | 28.3% |
-| Dimensions | 393 | 23.1% |
+| Dimensions | 452 | 26.6% |
 | Material | 408 | 24.0% |
 | Language | 1080 | 63.5% |
 | Script | 93 | 5.5% |
@@ -123,11 +123,11 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 | Facet | Identities | Coverage |
 |---|---:|---:|
 | Publication | 574 | 33.7% |
-| Biblical Intertexts | 169 | 9.9% |
+| Biblical Intertexts | 180 | 10.6% |
 | Condition | 142 | 8.3% |
+| Client | 120 | 7.1% |
 | Text Description | 89 | 5.2% |
 | Ritual | 74 | 4.4% |
-| Client | 62 | 3.6% |
 | Text Form | 41 | 2.4% |
 | Practitioner | 29 | 1.7% |
 | Visual | 27 | 1.6% |
@@ -486,8 +486,8 @@ Overall gate: **NOT READY**
 
 ### Quantitative conditions
 
-- [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `432`; target `<= 0`.
+- [ ] No unreviewed generated dedupe candidates — current `77`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `488`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `57.3%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
