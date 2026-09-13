@@ -1,17 +1,17 @@
 # Discovery campaign status
 
-Generated: `2026-09-13T20:50:42+00:00`
+Generated: `2026-09-13T20:58:17+00:00`
 
 ## Corpus
 
 - Candidate objects: **1969**
 - Unclassified claim fields: **[]**
-- Estimated distinct objects after resolved dedupe: **1683**
-- Resolved duplicate records: **286**
+- Estimated distinct objects after resolved dedupe: **1652**
+- Resolved duplicate records: **317**
 - Probable or confirmed: **1188**
-- Source appearances: **2242**
+- Source appearances: **2243**
 - Sources: **862**
-- Dedupe clusters pending: **51**
+- Dedupe clusters pending: **0**
 - Objects with text: **195**
 - Objects with translation: **49**
 - Objects with provenance: **163**

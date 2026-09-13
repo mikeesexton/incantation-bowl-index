@@ -2,32 +2,32 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1683**
-- Multi-record identity clusters: **175**
+- Working physical identity hypotheses (all statuses): **1652**
+- Multi-record identity clusters: **200**
 - Underlying source records (all identities): **1969**
-- Pending dedupe decisions: **51**
+- Pending dedupe decisions: **0**
 
 ## Identity-level coverage
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1222 | 72.6% |
-| Provenance | 362 | 21.5% |
-| Dating | 482 | 28.6% |
-| Dimensions | 456 | 27.1% |
-| Material | 408 | 24.2% |
-| Language | 1062 | 63.1% |
-| Script | 93 | 5.5% |
+| Location | 1205 | 72.9% |
+| Provenance | 362 | 21.9% |
+| Dating | 482 | 29.2% |
+| Dimensions | 457 | 27.7% |
+| Material | 408 | 24.7% |
+| Language | 1032 | 62.5% |
+| Script | 93 | 5.6% |
 | Text Edition | 1 | 0.1% |
 | Translation | 48 | 2.9% |
-| Image | 326 | 19.4% |
+| Image | 326 | 19.7% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 784 |
-| 3–5 of 10 | 787 |
+| 0–2 of 10 | 752 |
+| 3–5 of 10 | 788 |
 | 6–8 of 10 | 111 |
 | 9–10 of 10 | 1 |
 
@@ -35,8 +35,8 @@
 
 | Next action | Identities |
 |---|---:|
-| Location | 461 |
-| Provenance | 952 |
+| Location | 447 |
+| Provenance | 935 |
 | Dating | 55 |
 | Dimensions | 139 |
 | Material | 23 |
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**362** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **13** substantive instances. **504** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**375** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **13** substantive instances. **543** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

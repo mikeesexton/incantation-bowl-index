@@ -25,6 +25,37 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-13 — Claude — Remaining exact-identifier pairs and the last VMBA bowl
+
+**Claimed:** CONC-001, DISC-003
+**Corpus:** changed (51 dedupe decisions applied; JBA 5 attached) — state digest `4a7c6ca8d9a9`
+**Tests:** 203 Python tests passed; reports regenerated; exact-identifier queue now empty
+
+- Re-examined the 30 pairs banded "no overlapping evidence" on 13 September. The band
+  name was misleading: these are not evidence-free, they are complementary. Each pair
+  shares an institution-scoped accession number — 13 Berlin VA, 8 Penn CBS, 2 Hilprecht
+  HS, 1 Yale YBC, 5 Schøyen MS — with a museum or collection catalogue on one side and
+  a text edition on the other. No field agreed because the two record types describe
+  different things, not because they disagree.
+- Resolved all 51 as `same_object` with per-group rationale naming the identifier
+  namespace. Distinct objects moved from 1,683 to 1,652, resolved duplicate records
+  from 286 to 317, and no exact-identifier pair remains pending.
+- `DED-97D7DA99E25B` turned out to be positively corroborated rather than merely
+  unopposed, and the VMBA recovery is what showed it. The context-citation record for
+  MS 1927/64 carries `biblical_quotation` Zechariah 3:2, and the recovered VMBA record
+  lists Zech 3:2 for JBA 5 — the only bowl among JBA 1-64 carrying that verse. Recorded
+  as independent corroboration.
+- Noted a banding weakness worth fixing before the next sweep: `current_location` and
+  `current_or_reported_collection` hold the same fact under different field names, so a
+  pair agreeing on collection can still look like it has no overlap. The JBA 5 pair
+  agreed on the Schøyen Collection and the comparison missed it.
+- Attached JBA 5 to its cluster's canonical record. All 64 VMBA bowls now carry
+  dimensions, clients and biblical quotations: 64 appearances and 213 claims.
+- Storage was measured for the researcher, not changed. `data/private` holds 2.1 GB:
+  1.0 GB of backups (now 35), 669 MB of source archive, 342 MB of exports, 39 MB of
+  working database. A backup gzips from 39 MB to 6.5 MB, about six to one. Nothing was
+  deleted, compressed or moved.
+
 ## 2026-09-13 — Claude — Exact-identifier dedupe decisions and the four unblocked bowls
 
 **Claimed:** CONC-001, DISC-003

@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-13T20:50:41+00:00`
+Generated: `2026-09-13T20:58:17+00:00`
 
 ## Portfolio status
 
@@ -11,7 +11,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 | Progress measure | Current |
 |---|---:|
 | Roadmap tasks | 22 done · 21 in progress · 19 queued · 0 blocked |
-| Quantitative handoff gates passing | 1/5 |
+| Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 7/24 |
 
 ### What is solid
@@ -73,18 +73,18 @@ Current evidence: **217 scholarship works indexed; 38 with a source-linked held 
 | Measure | Current |
 |---|---:|
 | Candidate source records | 1969 |
-| Working physical identity hypotheses (all statuses) | 1683 |
-| Source appearances | 2242 |
+| Working physical identity hypotheses (all statuses) | 1652 |
+| Source appearances | 2243 |
 | Sources | 862 |
-| Pending dedupe decisions | 51 |
-| Identities triggering raw claim-difference flags | 362 |
-| Triaged claim-field differences | 50/554 |
+| Pending dedupe decisions | 0 |
+| Identities triggering raw claim-difference flags | 375 |
+| Triaged claim-field differences | 50/593 |
 | Compatible differences | 37 |
-| Review required (missing or no longer valid) | 504 |
+| Review required (missing or no longer valid) | 543 |
 | Existing reviews requiring revalidation | 287 |
 | Substantive conflict instances | 13 across 11 identities |
-| All identities with a publication reference | 763/1683 (45.3%) |
-| Probable/confirmed identities with a publication reference | 621/1092 (56.9%) |
+| All identities with a publication reference | 732/1652 (44.3%) |
+| Probable/confirmed identities with a publication reference | 604/1075 (56.2%) |
 | Identities with a translation | 48 |
 | Scan-checked normalized reading texts | 35 |
 | Publication keys resolved to the publication they designate | 32/32 |
@@ -105,16 +105,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1222 | 72.6% |
-| Provenance | 362 | 21.5% |
-| Dating | 482 | 28.6% |
-| Dimensions | 456 | 27.1% |
-| Material | 408 | 24.2% |
-| Language | 1062 | 63.1% |
-| Script | 93 | 5.5% |
+| Location | 1205 | 72.9% |
+| Provenance | 362 | 21.9% |
+| Dating | 482 | 29.2% |
+| Dimensions | 457 | 27.7% |
+| Material | 408 | 24.7% |
+| Language | 1032 | 62.5% |
+| Script | 93 | 5.6% |
 | Text Edition | 1 | 0.1% |
 | Translation | 48 | 2.9% |
-| Image | 326 | 19.4% |
+| Image | 326 | 19.7% |
 
 ### Content-facet coverage
 
@@ -122,14 +122,14 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 565 | 33.6% |
-| Biblical Intertexts | 180 | 10.7% |
-| Condition | 142 | 8.4% |
-| Client | 124 | 7.4% |
-| Text Description | 89 | 5.3% |
-| Ritual | 74 | 4.4% |
-| Text Form | 41 | 2.4% |
-| Practitioner | 29 | 1.7% |
+| Publication | 551 | 33.4% |
+| Biblical Intertexts | 167 | 10.1% |
+| Condition | 142 | 8.6% |
+| Client | 125 | 7.6% |
+| Text Description | 89 | 5.4% |
+| Ritual | 74 | 4.5% |
+| Text Form | 41 | 2.5% |
+| Practitioner | 29 | 1.8% |
 | Visual | 27 | 1.6% |
 | Parallels | 7 | 0.4% |
 | Authenticity Assessment | 4 | 0.2% |
@@ -486,10 +486,10 @@ Overall gate: **NOT READY**
 
 ### Quantitative conditions
 
-- [ ] No unreviewed generated dedupe candidates — current `51`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `504`; target `<= 0`.
+- [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `543`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
-- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `56.9%`; target `>= 80.0%`.
+- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage — current `56.2%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
 
 ### Required setup tasks
