@@ -2,7 +2,7 @@
 
 The main cohort contains forty numbered bowls. All forty catalogue-register rows were visually checked against printed pp. 321–326 (PDF pp. 327–332). Museum checks below are dated observations, valid against the current local identity evidence; they do not assert that a website has remained unchanged since review.
 
-Penn concordances: **40/40** supported by current evidence-bound museum-page reviews.
+Penn concordances: **33/40** supported by current evidence-bound museum-page reviews.
 
 English translations: **35** scan-checked normalized reading texts, **0** OCR drafts pending proofreading, and **5** documented cases where this edition supplies no separate translation.
 
@@ -40,13 +40,13 @@ Reading texts normalize typography and Latin-name diacritics and preserve loss/u
 | 28 | CBS 2972 | 6.5 × 16.5 | 19798 | confirmed from dated museum page | reading text checked |
 | 29 | CBS 16055 | 6.8 × 17 | 316216 | confirmed from dated museum page | reading text checked |
 | 30 | CBS 16096 | 6.5 × 16.8 | 139925 | confirmed from dated museum page | reading text checked |
-| 31 | CBS 9008 | 6.6 × 16 | 222626 | confirmed from dated museum page | reading text checked |
-| 32 | CBS 16086 | 6.9 × 17 | 161879 | confirmed from dated museum page | reading text checked |
-| 33 | CBS 16019 | 6.2 × 15.5 | 44307 | confirmed from dated museum page | no separate translation in this edition |
-| 34 | CBS 9012 | 7.5 × 17.5 | 58680 | confirmed from dated museum page | reading text checked |
-| 35 | CBS 16097 | 6.5 × 16.1 | 87498 | confirmed from dated museum page | reading text checked |
-| 36 | CBS 2933 | 6.3 × 15.4 | 132910 | confirmed from dated museum page | reading text checked |
-| 37 | CBS 2943 | 6.5 × 17 | 152707 | confirmed from dated museum page | reading text checked |
+| 31 | CBS 9008 | 6.6 × 16 | 222626 | existing link not freshly verified | reading text checked |
+| 32 | CBS 16086 | 6.9 × 17 | 161879 | existing link not freshly verified | reading text checked |
+| 33 | CBS 16019 | 6.2 × 15.5 | 44307 | existing link not freshly verified | no separate translation in this edition |
+| 34 | CBS 9012 | 7.5 × 17.5 | 58680 | existing link not freshly verified | reading text checked |
+| 35 | CBS 16097 | 6.5 × 16.1 | 87498 | existing link not freshly verified | reading text checked |
+| 36 | CBS 2933 | 6.3 × 15.4 | 132910 | existing link not freshly verified | reading text checked |
+| 37 | CBS 2943 | 6.5 × 17 | 152707 | existing link not freshly verified | reading text checked |
 | 38 | CBS 2941 | 7 × 17 | 189411 | confirmed from dated museum page | reading text checked |
 | 39 | CBS 9005 | 6.8 × 17.2 | 140769 | confirmed from dated museum page | reading text checked |
 | 40 | CBS 2972 | 7.3 × 17.2 | 64458 | confirmed from dated museum page | reading text checked |

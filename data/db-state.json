@@ -1,18 +1,18 @@
 {
-  "corpus_digest": "b9c37ff1eb1fa1561b2af3c7d36d870bce10bdb2df14bc78606fdaec1cfda3b7",
+  "corpus_digest": "907a6b99ccd5fb07f1dc04ea503de23d3b7304af8fbbb3068a29327aa2baf3ac",
   "migrations": 14,
-  "note": "VMBA recovery: 59 source appearances and 196 claims on existing Schoyen objects; exact-identifier dedupe sweep queued 77 pending pairs",
-  "recorded_at": "2026-09-13T20:10:26+00:00",
+  "note": "Applied 26 exact-identifier dedupe decisions from the researcher-reviewed dossier; attached the four unblocked VMBA bowls (63 of 64 now carry VMBA claims)",
+  "recorded_at": "2026-09-13T20:50:48+00:00",
   "recorded_by": "Claude",
   "schema_version": "014_source_corrections",
   "tables": {
     "appearance_object_links": {
-      "digest": "930bac30233c984aef23467312cc80b6a4352307a17aef351065528445aeb9d0",
-      "rows": 2238
+      "digest": "96a0a271e4462f23179ca98cb01880060c7c0fc9db96c23bbf3ef892a50b65aa",
+      "rows": 2242
     },
     "appearances": {
-      "digest": "194cd036ca8c447149a1865d0df0c1a5baffa29c63e2f07ecc23551aee03de95",
-      "rows": 2238
+      "digest": "5c741e5029063698f222dbccdcf6ddfd10b7e1af77119da0df11d231b1a1a9be",
+      "rows": 2242
     },
     "captures": {
       "digest": "6a4899c317254db449208387ad703390c0fa5026aa4692e700b866915a35ed2b",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "d7a555b7c9a52ecaa4462fa4717f29506862e0cb342aea10aa0ce61a818c43f2",
-      "rows": 7084
+      "digest": "2675d36285a089803670edb038f1513e2c7ab0b21ffa80850204e5a895a99a9b",
+      "rows": 7097
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -43,12 +43,12 @@
       "rows": 12
     },
     "dedupe_candidates": {
-      "digest": "768f3ed5430e07c8012dba92baa9fdcb559790e5c0a449982a1f7991db3d5ab8",
+      "digest": "60a0d9cf8758d60f6f34b85ad5c84b0f7b3b382c1b3f8b1b253e1f5a15c52f01",
       "rows": 34763
     },
     "dedupe_evidence": {
-      "digest": "d9d8b0e1f50942979c054365ef1f653d16b76adaca45ab5f54bba6184f7495cf",
-      "rows": 34688
+      "digest": "d66ac1a6d3cd51d4521b354d9f32baa0f93b99c6d126723f50e9a7c309f131c1",
+      "rows": 34714
     },
     "events": {
       "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",

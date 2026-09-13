@@ -2,32 +2,32 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1701**
-- Multi-record identity clusters: **173**
+- Working physical identity hypotheses (all statuses): **1683**
+- Multi-record identity clusters: **175**
 - Underlying source records (all identities): **1969**
-- Pending dedupe decisions: **77**
+- Pending dedupe decisions: **51**
 
 ## Identity-level coverage
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1230 | 72.3% |
-| Provenance | 362 | 21.3% |
-| Dating | 482 | 28.3% |
-| Dimensions | 452 | 26.6% |
-| Material | 408 | 24.0% |
-| Language | 1080 | 63.5% |
+| Location | 1222 | 72.6% |
+| Provenance | 362 | 21.5% |
+| Dating | 482 | 28.6% |
+| Dimensions | 456 | 27.1% |
+| Material | 408 | 24.2% |
+| Language | 1062 | 63.1% |
 | Script | 93 | 5.5% |
 | Text Edition | 1 | 0.1% |
-| Translation | 48 | 2.8% |
-| Image | 326 | 19.2% |
+| Translation | 48 | 2.9% |
+| Image | 326 | 19.4% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 806 |
-| 3–5 of 10 | 783 |
+| 0–2 of 10 | 784 |
+| 3–5 of 10 | 787 |
 | 6–8 of 10 | 111 |
 | 9–10 of 10 | 1 |
 
@@ -35,8 +35,8 @@
 
 | Next action | Identities |
 |---|---:|
-| Location | 471 |
-| Provenance | 960 |
+| Location | 461 |
+| Provenance | 952 |
 | Dating | 55 |
 | Dimensions | 139 |
 | Material | 23 |
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**354** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **15** substantive instances. **488** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**362** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **13** substantive instances. **504** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

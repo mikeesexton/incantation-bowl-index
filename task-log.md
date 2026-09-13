@@ -25,6 +25,47 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-13 — Claude — Exact-identifier dedupe decisions and the four unblocked bowls
+
+**Claimed:** CONC-001, DISC-003
+**Corpus:** changed (26 dedupe decisions applied; four VMBA appearances and 13 claims attached) — state digest `907a6b99ccd5`
+**Tests:** 203 Python tests passed; both manifests replayed idempotently (209 VMBA claims before and after); reports regenerated
+
+- Did not run `ibi adjudicate-exact`. It marks every pending exact-identifier pair
+  `same_object` in one pass with no per-pair check, and research_protocol step 2 is
+  explicit that an exact identifier is strong evidence rather than a merge
+  instruction. Compared all 77 pairs on the step 3 fields instead and committed the
+  evidence as a dossier containing no decisions.
+- The bands were 24 corroborated, 30 with no overlapping evidence, 21 differing only
+  in wording, and 2 substantive. The 21 were artefacts: `The Schøyen Collection`
+  against `Schøyen Collection`, the long and short forms of the Hilprecht Collection
+  name, and language granularity such as `Jewish Babylonian Aramaic and/or Hebrew`
+  against `Jewish Babylonian Aramaic`. Checked whether that wording noise inflates the
+  wider conflict surface; it does not, only 10 of 266 objects.
+- The researcher resolved the two substantive pairs. CBS 9008 is read as Syriac on
+  Moriggi 2014, a corpus edition, against an undated Penn Museum record's "Hebrew
+  Language" — and a museum catalogue entry cannot verify a reading. HS 3003 is
+  collection history, Brand 2019's private Berlin collection preceding Ford and
+  Morgenstern 2020's Hilprecht Collection, Jena; a collection catalogue can verify a
+  current location. Both differences were recorded as not evidence against identity.
+  Neither competing claim was deleted: the corpus holds both sides, which is what
+  keeps the collection-history reading legible.
+- Applied 26 decisions — the 24 corroborated plus those 2 — as `same_object` through a
+  checked manifest, attributed to the researcher with the evidence prepared here.
+  Distinct objects moved from 1,701 to 1,683. Deliberately left the 30 evidence-free
+  and 21 wording-only pairs pending rather than bundling them into an approval that
+  covered 24.
+- Four of the five bowls withheld on 13 September are now unblocked. Attached JBA 17,
+  19, 20 and 56 to each cluster's canonical record, chosen with the project's own
+  `_best_object` ranking rather than by hand. 63 of the 64 VMBA bowls now carry
+  dimensions, clients and biblical quotations.
+- JBA 5 stays withheld. Its pair (`MS 1927/64` against a context-citation record)
+  shares one identifier and no comparable claims, so it is still pending.
+- Next session: the 51 pending pairs, of which 21 are wording-only and ready for the
+  same treatment once approved, and 30 need evidence that does not exist in the corpus
+  yet. `data/private/backups/` now holds 33 files against a stated limit of ten and
+  still needs a human decision before anything is deleted.
+
 ## 2026-09-13 — Claude — Virtual Magic Bowl Archive recovery
 
 **Claimed:** DISC-003, META-008, CONC-001
