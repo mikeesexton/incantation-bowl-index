@@ -25,6 +25,43 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-13 — Claude — Pair-evidence comparison for the next sweep
+
+**Claimed:** QA, CONC-001
+**Corpus:** unchanged — state digest `4a7c6ca8d9a9` (read-only throughout)
+**Tests:** 225 Python tests passed, 22 of them new in `tests/test_pair_evidence.py`
+
+- Corrected the record first. The earlier entry called this a project banding
+  weakness; it was not. `CORE_COVERAGE["location"]` in `identity.py` has grouped
+  `current_location` with `current_or_reported_collection` all along, and
+  `conflicts.py` uses it. The fault was that this session's dedupe comparison was a
+  throwaway script that compared raw field names and never reached for that map.
+- The real gap was that nothing in the codebase compared a dedupe pair at all, so the
+  next sweep would have repeated the mistake. Added `dedupe.pair_evidence`, which
+  returns agreeing and conflicting facets and a band, and never a decision.
+- It compares by coverage group, so the two location fields, the four spellings of the
+  biblical-quotation field and the three of client each count once.
+- It normalises before comparing. Twenty-one of the seventy-seven pairs looked like
+  conflicts over a definite article. Three forms of the Hilprecht Collection name are
+  collapsed explicitly rather than by fuzzy matching, which would risk merging two
+  genuinely different collections.
+- It restricts conflict to ten facets that are properties of the physical object.
+  Comparing by group alone made things worse, not better: `publication` is a
+  grab-bag, and two records of one bowl routinely cite different publications, which
+  produced eight fresh false conflicts. `biblical_intertexts` is corroborating-only
+  for a related reason — sources list subsets of the verses on a bowl, so two
+  disjoint lists are not a contradiction, while a shared verse is still real evidence.
+- A language attribution that refines another is treated as compatible, matched on a
+  prefix rather than any substring so that a qualifier appended to a shared reading
+  counts while "Syriac" against "Hebrew Language" stays a conflict.
+- Re-banded the same 77 pairs as a check. 23 apparent conflicts fall to 2, and those 2
+  are exactly the pairs the researcher was asked to decide — CBS 9008 and HS 3003. No
+  decision changes; all 77 were already resolved. Recorded the recount in the dossier
+  beside the original bands rather than overwriting them.
+- Next session: `pair_evidence` is available but nothing calls it yet. Wiring it into
+  the research console's dedupe review, so a reviewer sees the facets rather than only
+  the shared identifier, is the obvious next step.
+
 ## 2026-09-13 — Claude — Remaining exact-identifier pairs and the last VMBA bowl
 
 **Claimed:** CONC-001, DISC-003
@@ -45,10 +82,12 @@ the dated reports under `data/reports/`.
   MS 1927/64 carries `biblical_quotation` Zechariah 3:2, and the recovered VMBA record
   lists Zech 3:2 for JBA 5 — the only bowl among JBA 1-64 carrying that verse. Recorded
   as independent corroboration.
-- Noted a banding weakness worth fixing before the next sweep: `current_location` and
-  `current_or_reported_collection` hold the same fact under different field names, so a
-  pair agreeing on collection can still look like it has no overlap. The JBA 5 pair
-  agreed on the Schøyen Collection and the comparison missed it.
+- Noted a banding weakness to fix before the next sweep: a pair agreeing on collection
+  could still look like it had no overlap, because `current_location` and
+  `current_or_reported_collection` hold the same fact under different field names. The
+  JBA 5 pair agreed on the Schøyen Collection and the comparison missed it. (Corrected
+  in the following session: the fault was in this session's throwaway comparison
+  script, not in the project's field model, which already grouped those two fields.)
 - Attached JBA 5 to its cluster's canonical record. All 64 VMBA bowls now carry
   dimensions, clients and biblical quotations: 64 appearances and 213 claims.
 - Pruned the backup directory on the researcher's instruction, bringing it into line

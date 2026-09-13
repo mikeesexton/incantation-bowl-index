@@ -1477,5 +1477,568 @@
     "current_or_reported_collection"
    ]
   }
- ]
+ ],
+ "banding_correction": {
+  "corrected_at": "2026-09-13T22:10:00+00:00",
+  "why": "The per-entry bands above were produced by comparing raw claim field names. That was wrong. current_location and current_or_reported_collection hold the same fact under different names, as do the four spellings of the biblical-quotation field and the three of client, and COVERAGE_GROUPS in identity.py already recorded exactly that. The comparison simply did not use it, so records that agreed were reported as having nothing in common.",
+  "fix": "dedupe.pair_evidence now compares by coverage group, normalises values before comparing so a definite article or a long collection-name form is not a difference, restricts conflict to the ten facets that are properties of the physical object, and treats a language attribution that refines another as compatible. Covered by tests/test_pair_evidence.py.",
+  "recount": {
+   "corroborated": 60,
+   "no_overlap": 15,
+   "conflict": 2
+  },
+  "note": "The corrected pass reduces 23 apparent conflicts to 2, and those 2 are the same pairs the researcher was asked to decide on 13 September: CBS 9008 (Syriac against Hebrew) and HS 3003 (Berlin against Jena). No decision changes; every pair was already resolved same_object.",
+  "per_pair": {
+   "DED-01624503F36E": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-02F3644BEA8C": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-06BE16F67C81": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-08697C9EAAB3": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-0AEB855FFFFA": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-0C7C0F6C0C60": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-0CF6B34551BF": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-0E089048F553": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-11B86714D531": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-13A01F92A6F1": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-17027B4E07B9": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-1AC35131FA08": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-1CBBA817215F": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-2CB9BAF9C65E": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-3060680A1D40": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-36CDCA45C623": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-3BFB71A8852D": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-3C061F0408FD": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-3D1E3A681C35": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-3D6D1B8A811C": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-3EED466E8465": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-413197A48E3F": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-48BEEF092B14": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-4A5F77DA76C5": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-55B28202F936": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-581A30A55580": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-58507CA38784": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-5CE6B85913AA": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-63662B7033F8": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-656BAAEFC891": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-69F8433DB6CF": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-6C4C19AE1123": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-6DB83B821426": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-6E4F94EA41C9": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-707B845AA776": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-70B999678A75": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-757CCD42D573": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-78437D7AA9A1": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-7BA6BE0982FC": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-7CA68AA4EADD": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-7F3569847282": {
+    "band": "conflict",
+    "agreeing_groups": [],
+    "conflicting_groups": [
+     "language"
+    ]
+   },
+   "DED-820BC92F1929": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-8CBC8BDC8D80": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-8D6B3A4515BA": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-90C25A2C4F41": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-97D7DA99E25B": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-9C78D9866037": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-A73C5DFCA96C": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-AA2ED7328714": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-AC14662947C8": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-AC6501CD72CB": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-AE25AD9D52B7": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-B863BAE41427": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-BD110DCAAD96": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-BD2786C43B32": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-BF3584AFB99B": {
+    "band": "conflict",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": [
+     "location"
+    ]
+   },
+   "DED-BF804CA4C1D0": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-BF8581DF655A": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-C187ECB22BDF": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-C4F117B434FF": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-C55B4DDAFD69": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-D0BC07C7A2A3": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-D0E38E562A2C": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-D42E7B7FBF31": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-D4C7CBA6F892": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-E031A90CC291": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-E38BA5141397": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-E60B5CF88E2F": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-E9A58DA61FE2": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-EC1DDB7127D8": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-ECA18D2B5B54": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "location"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-ED4143C2A9AD": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-ED5EF3929716": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language",
+     "publication"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-F3EA4710A814": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-FBAA4D52E2DA": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   },
+   "DED-FCD7480BFBA8": {
+    "band": "no_overlap",
+    "agreeing_groups": [],
+    "conflicting_groups": []
+   },
+   "DED-FF33540C2EA2": {
+    "band": "corroborated",
+    "agreeing_groups": [
+     "language"
+    ],
+    "conflicting_groups": []
+   }
+  }
+ }
 }

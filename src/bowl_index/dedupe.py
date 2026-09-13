@@ -443,3 +443,123 @@ def adjudicate_exact_identifiers(conn, decided_by="automated exact-identifier ru
         )
     conn.commit()
     return len(rows)
+
+
+# Facets where a clean disagreement is genuine evidence that two records describe
+# different objects. These are properties of the physical bowl: where it is, how big
+# it is, what it is made of, what is written on it and who is named.
+#
+# Everything else in COVERAGE_GROUPS is corroborating-only. `publication` is the
+# instructive case: two records of the same bowl routinely cite different
+# publications, because that is what separate sources do. Counting that as a
+# conflict marks genuine duplicates as suspect. Agreement on a corroborating facet
+# still counts in favour; disagreement simply says nothing either way.
+#
+# `biblical_intertexts` is deliberately corroborating-only for the same reason —
+# sources list subsets of the verses on a bowl, so two disjoint lists are not a
+# contradiction. A shared verse is still real evidence: MS 1927/64 was confirmed
+# that way, its context citation naming Zech 3:2 and the archive record listing it
+# for JBA 5, the only bowl among JBA 1-64 carrying that verse.
+IDENTITY_DISCRIMINATING_GROUPS = frozenset({
+    "location", "provenance", "dating", "dimensions", "material",
+    "language", "script", "vessel_form", "text_form", "client",
+})
+
+# Long and short forms of one collection name, which compare as different strings
+# and are not separated by stripping a definite article alone.
+_COLLECTION_NAME_FORMS = {
+    "frau professor hilprecht collection of babylonian antiquities, jena":
+        "frau professor hilprecht collection, jena",
+    "frau professor hilprecht collection, friedrich schiller university jena":
+        "frau professor hilprecht collection, jena",
+    "vorderasiatisches museum, berlin": "vorderasiatisches museum",
+    "penn museum, philadelphia": "penn museum",
+    "university of pennsylvania museum": "penn museum",
+}
+
+
+def normalize_claim_value(group, value):
+    """Compare claim values as values, not as strings.
+
+    "The Schøyen Collection" and "Schøyen Collection" are one collection. Twenty-one
+    of the seventy-seven pairs reviewed on 13 September 2026 looked like conflicts
+    for no better reason than a definite article.
+    """
+    text = unicodedata.normalize("NFC", str(value or "")).strip().casefold().rstrip(".")
+    text = re.sub(r"^the\s+", "", text)
+    text = re.sub(r"\s+", " ", text)
+    if group == "location":
+        text = _COLLECTION_NAME_FORMS.get(text, text)
+    return text
+
+
+def _compatible(group, values_a, values_b):
+    """Whether two sets of values for one facet can describe the same object."""
+    if values_a & values_b:
+        return True
+    if group == "language":
+        # One attribution refining another is not a contradiction. "Jewish Babylonian
+        # Aramaic and/or Hebrew" and "Jewish Babylonian Aramaic with some Mandaic
+        # features" both extend a base reading that a second source states plainly.
+        # Matching on a prefix rather than any substring keeps that narrow: it admits
+        # a qualifier appended to a shared reading, and still separates "Syriac" from
+        # "Hebrew Language", which is a real disagreement for a reviewer to settle.
+        return any(
+            x.startswith(y) or y.startswith(x)
+            for x in values_a for y in values_b
+        )
+    return False
+
+
+def _claims_by_group(conn, object_id):
+    # Imported here rather than at module scope: identity imports this module, so a
+    # module-level import would close the cycle.
+    from .identity import COVERAGE_GROUPS
+
+    field_to_group = {f: g for g, fields in COVERAGE_GROUPS.items() for f in fields}
+    grouped = {}
+    for row in conn.execute(
+        "SELECT field,value_text,normalized_value FROM claims WHERE object_id=?", (object_id,)
+    ):
+        group = field_to_group.get(row["field"])
+        if group is None:
+            continue
+        value = normalize_claim_value(group, row["normalized_value"] or row["value_text"])
+        if value:
+            grouped.setdefault(group, set()).add(value)
+    return grouped
+
+
+def pair_evidence(conn, object_a_id, object_b_id):
+    """What the stored claims say about whether two records are one object.
+
+    Compares by coverage group rather than by field name. `current_location` and
+    `current_or_reported_collection` carry the same fact under different names, as do
+    the four spellings of the biblical-quotation field and the three of client;
+    comparing raw field names reports two records as having nothing in common when
+    they in fact agree.
+
+    Returns agreeing and conflicting group names and the resulting band. This is
+    evidence for a reviewer, never a decision: an exact identifier is strong evidence,
+    not a merge instruction, and `no_overlap` means the records are silent about each
+    other rather than that they disagree.
+    """
+    a, b = _claims_by_group(conn, object_a_id), _claims_by_group(conn, object_b_id)
+    shared = set(a) & set(b)
+    agreeing = sorted(g for g in shared if _compatible(g, a[g], b[g]))
+    conflicting = sorted(
+        g for g in shared
+        if not _compatible(g, a[g], b[g]) and g in IDENTITY_DISCRIMINATING_GROUPS
+    )
+    differing_non_discriminating = sorted(
+        g for g in shared
+        if not _compatible(g, a[g], b[g]) and g not in IDENTITY_DISCRIMINATING_GROUPS
+    )
+    band = "conflict" if conflicting else ("corroborated" if agreeing else "no_overlap")
+    return {
+        "band": band,
+        "agreeing_groups": agreeing,
+        "conflicting_groups": conflicting,
+        "differing_non_discriminating_groups": differing_non_discriminating,
+        "groups_on_one_side_only": sorted(set(a) ^ set(b)),
+    }
