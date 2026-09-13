@@ -1,0 +1,47 @@
+{
+  "description": "Project-authored geographic reference for plotting findspot claims. NOT corpus assertions. Coordinates locate the named site; they do not verify that any bowl was found there. The corpus claim, its source and its locator remain the authority.",
+  "checked": "2026-09-12",
+  "coordinate_system": "WGS84 decimal degrees",
+  "tiers": {
+    "excavation_stratified": "Findspot reported with stratigraphic context (area, locus, floor, or threshold). Strongest.",
+    "excavation_reported": "Named site reported as an excavation findspot by an excavation report, scholarly edition, or a museum 'Excavated/Findspot' field.",
+    "site_reported": "Named site reported as the place of finding, without excavation context.",
+    "acquisition_site": "Museum 'Found/Acquired' field naming a site. The field conflates finding with acquisition; this is where the object surfaced, not necessarily where it was found.",
+    "region_only": "Country or historic region. Not a point. Plotted as a region, never as a findspot marker.",
+    "unlocated": "A named place the project cannot yet locate confidently. Listed, not plotted."
+  },
+  "places": {
+    "nippur":            {"label": "Nippur (Nuffar)",            "lat": 32.1264, "lon": 45.2306, "modern": "Iraq", "precision": "site"},
+    "babylon":           {"label": "Babylon",                    "lat": 32.5355, "lon": 44.4275, "modern": "Iraq", "precision": "site"},
+    "amran_babylon":     {"label": "Amran ibn Ali (Babylon)",    "lat": 32.5361, "lon": 44.4206, "modern": "Iraq", "precision": "mound within Babylon"},
+    "borsippa":          {"label": "Borsippa (Birs Nimrud)",     "lat": 32.3922, "lon": 44.3411, "modern": "Iraq", "precision": "site"},
+    "kutha":             {"label": "Kutha (Tell Ibrahim)",       "lat": 32.7181, "lon": 44.6417, "modern": "Iraq", "precision": "site"},
+    "sippar":            {"label": "Sippar (Abu Habba)",         "lat": 33.0603, "lon": 44.2417, "modern": "Iraq", "precision": "site"},
+    "seleucia":          {"label": "Seleucia on the Tigris",     "lat": 33.0944, "lon": 44.5211, "modern": "Iraq", "precision": "site"},
+    "tell_baruda":       {"label": "Tell Baruda (Choche)",       "lat": 33.0917, "lon": 44.5806, "modern": "Iraq", "precision": "site", "note": "Veh-Ardashir, in the Ctesiphon complex opposite Seleucia."},
+    "nineveh":           {"label": "Nineveh (Kouyunjik)",        "lat": 36.3597, "lon": 43.1528, "modern": "Iraq", "precision": "site"},
+    "nimrud":            {"label": "Nimrud (Kalhu)",             "lat": 36.0989, "lon": 43.3272, "modern": "Iraq", "precision": "site"},
+    "khorsabad":         {"label": "Khorsabad (Dur-Sharrukin)",  "lat": 36.5097, "lon": 43.2292, "modern": "Iraq", "precision": "site"},
+    "ashur":             {"label": "Ashur (Qal'at Sharqat)",     "lat": 35.4569, "lon": 43.2597, "modern": "Iraq", "precision": "site"},
+    "uruk":              {"label": "Uruk (Warka)",               "lat": 31.3225, "lon": 45.6361, "modern": "Iraq", "precision": "site"},
+    "khafajah":          {"label": "Khafajah (Tell Khafaje)",    "lat": 33.3400, "lon": 44.7000, "modern": "Iraq", "precision": "site"},
+    "hillah":            {"label": "Al-Hillah",                  "lat": 32.4637, "lon": 44.4198, "modern": "Iraq", "precision": "town"},
+    "baghdad":           {"label": "Baghdad",                    "lat": 33.3152, "lon": 44.3661, "modern": "Iraq", "precision": "city"},
+    "susa":              {"label": "Susa (Susiana)",             "lat": 32.1897, "lon": 48.2575, "modern": "Iran", "precision": "site"},
+    "kermanshah":        {"label": "Kermanshah",                 "lat": 34.3142, "lon": 47.0650, "modern": "Iran", "precision": "town"},
+    "arban":             {"label": "Arban (Tell Ajaja)",         "lat": 36.0722, "lon": 40.9250, "modern": "Syria", "precision": "site", "note": "On the Khabur; Layard's 1850 excavation."},
+    "velyki_kuchugury":  {"label": "Velyki Kuchugury hillfort",  "lat": 47.6350, "lon": 34.9200, "modern": "Ukraine", "precision": "site", "note": "Far outside Mesopotamia. An Arabic magic bowl, published 2025. The site lay on the Dnieper and is now under the Kakhovka reservoir; coordinates are approximate."}
+  },
+  "unlocated": {
+    "tell_al_duwayhi": {"label": "Tell al-Duwayhi, Babil, Iraq", "reason": "Named in the source but not confidently located to a point. Within Babil governorate."},
+    "kiamiaz":         {"label": "Kiamiaz, on the Tigris near Baghdad", "reason": "A nineteenth-century transliteration the project has not yet matched to a known site."},
+    "khouabir":        {"label": "Khouabir, on the Euphrates", "reason": "Pognon's nineteenth-century place name has not yet been matched confidently to modern coordinates; do not infer a point from the broad Euphrates description."}
+  },
+  "regions": {
+    "region_iraq":        {"label": "Iraq (unspecified)"},
+    "region_iraq_south":  {"label": "Southern Iraq"},
+    "region_mesopotamia": {"label": "Mesopotamia (historic, unspecified)"},
+    "region_iran":        {"label": "Iran (unspecified)"},
+    "region_syria":       {"label": "Syria (unspecified)"}
+  }
+}

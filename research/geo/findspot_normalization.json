@@ -1,0 +1,444 @@
+{
+  "description": "Maps each distinct findspot claim string in the corpus to gazetteer places and an evidence tier. One entry per distinct string. A string may resolve to more than one place when the source itself names alternatives; those objects are counted as ambiguous, not assigned to either site.",
+  "checked": "2026-09-12",
+  "mappings": [
+    {
+      "value": "Nippur",
+      "places": [
+        "nippur"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Nippur, Iraq",
+      "places": [
+        "nippur"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Nippur, Iraq; surface find",
+      "places": [
+        "nippur"
+      ],
+      "tier": "site_reported",
+      "note": "surface find"
+    },
+    {
+      "value": "Nippur Area WG, large-house courtyard, Level III",
+      "places": [
+        "nippur"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Nippur, Area WG, locus 14, floor 2",
+      "places": [
+        "nippur"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Nippur, Area WG, locus 14, above floor 2",
+      "places": [
+        "nippur"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Nippur, Area WG, locus 30, floor 4",
+      "places": [
+        "nippur"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Nippur, Area WG, locus 54, floor 3",
+      "places": [
+        "nippur"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Babylon",
+      "places": [
+        "babylon"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Babylon; reportedly found in a tomb",
+      "places": [
+        "babylon"
+      ],
+      "tier": "site_reported",
+      "note": "reportedly from a tomb"
+    },
+    {
+      "value": "Found/Acquired: Babylon (historic - Iraq)",
+      "places": [
+        "babylon"
+      ],
+      "tier": "acquisition_site"
+    },
+    {
+      "value": "Excavated/Findspot: Babylon (historic - Iraq)",
+      "places": [
+        "babylon"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Amran (Babylon)",
+      "places": [
+        "amran_babylon"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Amran (Babylon)",
+      "places": [
+        "amran_babylon"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Borsippa",
+      "places": [
+        "borsippa"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Birs-Nimrud (Borsippa)",
+      "places": [
+        "borsippa"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Birs-Nimrud (Borsippa)",
+      "places": [
+        "borsippa"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Ibrahim al-Khalil (Borsippa)  | Excavated/Findspot: Babylon (historic - Iraq)",
+      "places": [
+        "borsippa",
+        "babylon"
+      ],
+      "tier": "excavation_reported",
+      "ambiguous": true,
+      "note": "The museum record names two findspots for one object."
+    },
+    {
+      "value": "Excavated/Findspot: Babylon (historic - Iraq)  | Excavated/Findspot: Ibrahim al-Khalil (Borsippa)",
+      "places": [
+        "babylon",
+        "borsippa"
+      ],
+      "tier": "excavation_reported",
+      "ambiguous": true,
+      "note": "The museum record names two findspots for one object."
+    },
+    {
+      "value": "Tell Ibrahim (Kutha)",
+      "places": [
+        "kutha"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Tell Ibrahim, Iraq",
+      "places": [
+        "kutha"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+      "places": [
+        "kutha"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Abu Habba (Sippar)",
+      "places": [
+        "sippar"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Abu Habba (Sippar)",
+      "places": [
+        "sippar"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Seleucia, Iraq",
+      "places": [
+        "seleucia"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Seleucia on the Tigris, Iraq",
+      "places": [
+        "seleucia"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Tell Baruda (Choche), Area 21, beneath southwest threshold",
+      "places": [
+        "tell_baruda"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Tell Baruda (Choche), Area 21, beneath northwest threshold",
+      "places": [
+        "tell_baruda"
+      ],
+      "tier": "excavation_stratified"
+    },
+    {
+      "value": "Excavated/Findspot: Kouyunjik",
+      "places": [
+        "nineveh"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Nimrud",
+      "places": [
+        "nimrud"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Excavated/Findspot: South East Palace (Nimrud)",
+      "places": [
+        "nimrud"
+      ],
+      "tier": "excavation_reported",
+      "note": "South East Palace"
+    },
+    {
+      "value": "Excavated/Findspot: Khorsabad",
+      "places": [
+        "khorsabad"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Found/Acquired: Khorsabad",
+      "places": [
+        "khorsabad"
+      ],
+      "tier": "acquisition_site"
+    },
+    {
+      "value": "Found/Acquired: Ashur (historic)",
+      "places": [
+        "ashur"
+      ],
+      "tier": "acquisition_site"
+    },
+    {
+      "value": "Excavated/Findspot: Warka",
+      "places": [
+        "uruk"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Tell Khafaje, Iraq",
+      "places": [
+        "khafajah"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Al-Hillah",
+      "places": [
+        "hillah"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Hillah, Babil Governorate, Iraq (South Babylonia)",
+      "places": [
+        "hillah"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Hillah, Babil Governorate (Babylon Province), Iraq (South Babylonia)",
+      "places": [
+        "hillah"
+      ],
+      "tier": "site_reported"
+    },
+    {
+      "value": "Excavated/Findspot: Hillah, Al-",
+      "places": [
+        "hillah"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Found/Acquired: Baghdad",
+      "places": [
+        "baghdad"
+      ],
+      "tier": "acquisition_site"
+    },
+    {
+      "value": "Susiana, from the French Dieulafoy mission excavations",
+      "places": [
+        "susa"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Found/Acquired: Kermanshah (town)",
+      "places": [
+        "kermanshah"
+      ],
+      "tier": "acquisition_site"
+    },
+    {
+      "value": "Excavated/Findspot: Arban",
+      "places": [
+        "arban"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Velyki Kuchugury hillfort",
+      "places": [
+        "velyki_kuchugury"
+      ],
+      "tier": "excavation_reported"
+    },
+    {
+      "value": "Tell al-Duwayhi, Babil, Iraq",
+      "places": [
+        "tell_al_duwayhi"
+      ],
+      "tier": "unlocated"
+    },
+    {
+      "value": "Kiamiaz, on the Tigris near Baghdad",
+      "places": [
+        "kiamiaz"
+      ],
+      "tier": "unlocated"
+    },
+    {
+      "value": "Iraq",
+      "places": [
+        "region_iraq"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Found/Acquired: Iraq",
+      "places": [
+        "region_iraq"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Excavated/Findspot: Iraq",
+      "places": [
+        "region_iraq"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Iraq, South",
+      "places": [
+        "region_iraq_south"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Found/Acquired: Iraq, South",
+      "places": [
+        "region_iraq_south"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Excavated/Findspot: Iraq, South",
+      "places": [
+        "region_iraq_south"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Southern Iraq (?)",
+      "places": [
+        "region_iraq_south"
+      ],
+      "tier": "region_only",
+      "note": "queried in the source"
+    },
+    {
+      "value": "Mesopotamia",
+      "places": [
+        "region_mesopotamia"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Mesopotamia (historic)",
+      "places": [
+        "region_mesopotamia"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Found/Acquired: Mesopotamia (historic)",
+      "places": [
+        "region_mesopotamia"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Excavated/Findspot: Mesopotamia (historic)",
+      "places": [
+        "region_mesopotamia"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Found/Acquired: Iran",
+      "places": [
+        "region_iran"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Found/Acquired: Syria",
+      "places": [
+        "region_syria"
+      ],
+      "tier": "region_only"
+    },
+    {
+      "value": "Khouabir, on the Euphrates",
+      "places": [
+        "khouabir"
+      ],
+      "tier": "unlocated",
+      "note": "Pognon's named findspot is retained, but no coordinate is assigned until the historical toponym is resolved."
+    }
+  ]
+}

@@ -1,0 +1,3486 @@
+{
+  "generated_from": "data/private/ibi.sqlite3 (read-only)",
+  "corpus_objects": 1958,
+  "objects_with_findspot_claim": 235,
+  "objects_with_located_findspot": 150,
+  "objects_with_no_findspot_claim": 1723,
+  "ambiguous_objects": [
+    "IBI-0F8B15FDC9FA",
+    "IBI-6AB1C3C19294",
+    "IBI-B92459BF5743",
+    "IBI-C566A8D2270F",
+    "IBI-CEC9D1941144"
+  ],
+  "tier_totals": {
+    "excavation_stratified": 8,
+    "excavation_reported": 47,
+    "site_reported": 83,
+    "acquisition_site": 12,
+    "region_only": 53,
+    "unlocated": 32
+  },
+  "places": [
+    {
+      "key": "nippur",
+      "label": "Nippur (Nuffar)",
+      "kind": "site",
+      "lat": 32.1264,
+      "lon": 45.2306,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 72,
+      "by_tier": {
+        "excavation_stratified": 6,
+        "site_reported": 66
+      },
+      "best_tier": "excavation_stratified",
+      "object_ids": [
+        "IBI-013FBB80706C",
+        "IBI-073B6E935D3A",
+        "IBI-079F0B82D514",
+        "IBI-17A84EB70872",
+        "IBI-18453A93A7E2",
+        "IBI-21F04F566A66",
+        "IBI-25B551BD0779",
+        "IBI-26BDEA55EA1E",
+        "IBI-28AFCD028373",
+        "IBI-3192995163A4",
+        "IBI-325647D3DF8D",
+        "IBI-3BD55EC0BD28",
+        "IBI-44BC3FE36601",
+        "IBI-4500756E262F",
+        "IBI-46769AB4E6AE",
+        "IBI-49D1BAB76E01",
+        "IBI-4A2F6AC1F208",
+        "IBI-527704D6B074",
+        "IBI-5430A0855D0E",
+        "IBI-544ABA7B7DAA",
+        "IBI-5B1343517775",
+        "IBI-5C355EF43D8D",
+        "IBI-5CB5A9A5E46E",
+        "IBI-5D08E0461F30",
+        "IBI-5ECA91207942",
+        "IBI-6788A84FE8CA",
+        "IBI-6A3D928A2501",
+        "IBI-6C4D8112FFE2",
+        "IBI-6C8ABCC45C7C",
+        "IBI-6E087B8C539F",
+        "IBI-6F17044971CD",
+        "IBI-724AC11312AB",
+        "IBI-7394BFD7A73B",
+        "IBI-74625165CE1F",
+        "IBI-7680B927BB2F",
+        "IBI-7D0085FFB227",
+        "IBI-7F04261178CB",
+        "IBI-84F6B8FD30B3",
+        "IBI-88103E2EB680",
+        "IBI-88D1937D3ED2",
+        "IBI-917276249B87",
+        "IBI-97ED0532D516",
+        "IBI-A2E775143F9F",
+        "IBI-A3736CD7D997",
+        "IBI-A3CB298383D2",
+        "IBI-A8BE9F6FA177",
+        "IBI-AA15A1232B1F",
+        "IBI-ABDE8A973358",
+        "IBI-B54D497CC676",
+        "IBI-B6246E14776E",
+        "IBI-B73092679452",
+        "IBI-B860E80111E3",
+        "IBI-BAA1A1373E41",
+        "IBI-BBF8DC8C2BCD",
+        "IBI-C2E332F154A0",
+        "IBI-C3B04E20C369",
+        "IBI-CD3E783556B1",
+        "IBI-CEC11D2DBB44",
+        "IBI-CF7556423B9D",
+        "IBI-D2C708F2AA14",
+        "IBI-D8319A094023",
+        "IBI-D9E9C4FD2C24",
+        "IBI-DC36E80A1951",
+        "IBI-DEDC98D3F366",
+        "IBI-DF04AC9DDBFB",
+        "IBI-E10F6716C2C1",
+        "IBI-E135C0EA9CED",
+        "IBI-E74F7ED591BD",
+        "IBI-F094DE6A4112",
+        "IBI-F6ED61BF3D88",
+        "IBI-F823DBF4529D",
+        "IBI-F8AAEA800567"
+      ]
+    },
+    {
+      "key": "region_iraq",
+      "label": "Iraq (unspecified)",
+      "kind": "region",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": null,
+      "objects": 32,
+      "by_tier": {
+        "region_only": 32
+      },
+      "best_tier": "region_only",
+      "object_ids": [
+        "IBI-06DF28395D0E",
+        "IBI-0A183C0D3DA4",
+        "IBI-0DDAE5D941C5",
+        "IBI-11589900B7B0",
+        "IBI-1C2EB1600C9F",
+        "IBI-374B7E79C69C",
+        "IBI-38C18AE46D90",
+        "IBI-39C410944B65",
+        "IBI-4BC0E6C6248A",
+        "IBI-4D4032DE7595",
+        "IBI-510CFB1AB6F7",
+        "IBI-56C0FBBB8E70",
+        "IBI-63BF471B795C",
+        "IBI-7346BB53B72D",
+        "IBI-7483C18A7D30",
+        "IBI-77584E7FC2CA",
+        "IBI-7D4797212D4C",
+        "IBI-87227EEFF156",
+        "IBI-8D98BEE1638B",
+        "IBI-90EB147AD3EE",
+        "IBI-9F0C2BC5FBC8",
+        "IBI-A691404B8D7B",
+        "IBI-B4B929069FC4",
+        "IBI-B4F1979F5412",
+        "IBI-C1AF6481C19A",
+        "IBI-C37AC08EF228",
+        "IBI-C3B7C297B162",
+        "IBI-CCC8B14D56EA",
+        "IBI-CF2E762AEBC7",
+        "IBI-E5A7736DE977",
+        "IBI-E8CF3DBF81FE",
+        "IBI-EB8FD1657B4A"
+      ]
+    },
+    {
+      "key": "khouabir",
+      "label": "Khouabir, on the Euphrates",
+      "kind": "unlocated",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": "Pognon's nineteenth-century place name has not yet been matched confidently to modern coordinates; do not infer a point from the broad Euphrates description.",
+      "objects": 30,
+      "by_tier": {
+        "unlocated": 30
+      },
+      "best_tier": "unlocated",
+      "object_ids": [
+        "IBI-066A91C46861",
+        "IBI-0F893C3C8B27",
+        "IBI-1D5F283ECCE9",
+        "IBI-27D5447503D1",
+        "IBI-4BA618E6BAB7",
+        "IBI-4CE4A3A99CC4",
+        "IBI-53436A3039A9",
+        "IBI-55A65753F98F",
+        "IBI-5F8407C1637E",
+        "IBI-602DCEB1131F",
+        "IBI-6849AB56769C",
+        "IBI-6BE776EF5D76",
+        "IBI-6F0F7DCA91B9",
+        "IBI-73CCCFD9AAC1",
+        "IBI-8006D542AA18",
+        "IBI-803DAD53D57E",
+        "IBI-81533E5D52C6",
+        "IBI-841834AA23EE",
+        "IBI-85880E054A2C",
+        "IBI-87F95AD9539A",
+        "IBI-A63FE866AC15",
+        "IBI-B9953E43CB15",
+        "IBI-C3B7AF19392E",
+        "IBI-D35F31FD9609",
+        "IBI-D9305B05E1A2",
+        "IBI-DF12373ABCD4",
+        "IBI-EF7BDE184446",
+        "IBI-F0D16C11FE27",
+        "IBI-F1DDD0F5B05B",
+        "IBI-F5AF07BA4A16"
+      ]
+    },
+    {
+      "key": "kutha",
+      "label": "Kutha (Tell Ibrahim)",
+      "kind": "site",
+      "lat": 32.7181,
+      "lon": 44.6417,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 24,
+      "by_tier": {
+        "excavation_reported": 23,
+        "site_reported": 1
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-021C540426A3",
+        "IBI-148B8110021B",
+        "IBI-185FCCE03C08",
+        "IBI-1D5DB3452BB5",
+        "IBI-2AF0C10043BB",
+        "IBI-36E0B6218EBA",
+        "IBI-4CB0DA45A7D0",
+        "IBI-69CDF063CE1C",
+        "IBI-6ADE7D036DA0",
+        "IBI-7AF2C3E31FDD",
+        "IBI-7BCBBD6A6A80",
+        "IBI-8997E7C02290",
+        "IBI-8D915E3AD761",
+        "IBI-9E37AB1B6312",
+        "IBI-A22328E17FE6",
+        "IBI-A83BCFF1A88E",
+        "IBI-AC196693433D",
+        "IBI-B36E5BE78B3E",
+        "IBI-BC873E943AF3",
+        "IBI-E132B79EADD2",
+        "IBI-E69AB24A0E1B",
+        "IBI-F265C68D7662",
+        "IBI-F5E127D75C58",
+        "IBI-F881E6B2BBA7"
+      ]
+    },
+    {
+      "key": "babylon",
+      "label": "Babylon",
+      "kind": "site",
+      "lat": 32.5355,
+      "lon": 44.4275,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 15,
+      "by_tier": {
+        "excavation_reported": 6,
+        "site_reported": 6,
+        "acquisition_site": 3
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-06D9A3E90FA7",
+        "IBI-0F792FD4A54F",
+        "IBI-0F8B15FDC9FA",
+        "IBI-1F104D5164E8",
+        "IBI-21A82C18C677",
+        "IBI-32F8164EAC5E",
+        "IBI-61CFB166EF10",
+        "IBI-6AB1C3C19294",
+        "IBI-748B22D39260",
+        "IBI-7B5FC6F7A0FA",
+        "IBI-9C3EE339378D",
+        "IBI-B92459BF5743",
+        "IBI-C566A8D2270F",
+        "IBI-CEC9D1941144",
+        "IBI-D5AB689EABA8"
+      ]
+    },
+    {
+      "key": "region_iraq_south",
+      "label": "Southern Iraq",
+      "kind": "region",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": null,
+      "objects": 13,
+      "by_tier": {
+        "region_only": 13
+      },
+      "best_tier": "region_only",
+      "object_ids": [
+        "IBI-0812604AAFBD",
+        "IBI-12A92BD58AA2",
+        "IBI-13B2242254BB",
+        "IBI-18D560D6B24D",
+        "IBI-1C2970E1B571",
+        "IBI-87B3F205EF11",
+        "IBI-8C2D4494C773",
+        "IBI-8CB0CA407E6E",
+        "IBI-93D8EFA6B3C3",
+        "IBI-B3CD7FB74C71",
+        "IBI-BB33CA3C9DF6",
+        "IBI-BE34A956B4B8",
+        "IBI-E562B6AEEFAF"
+      ]
+    },
+    {
+      "key": "borsippa",
+      "label": "Borsippa (Birs Nimrud)",
+      "kind": "site",
+      "lat": 32.3922,
+      "lon": 44.3411,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 9,
+      "by_tier": {
+        "excavation_reported": 7,
+        "site_reported": 2
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-0F8B15FDC9FA",
+        "IBI-362D2E1D6E03",
+        "IBI-6AB1C3C19294",
+        "IBI-950537E68315",
+        "IBI-B92459BF5743",
+        "IBI-BDCC7E804E77",
+        "IBI-C566A8D2270F",
+        "IBI-CEC9D1941144",
+        "IBI-D177CA9271FD"
+      ]
+    },
+    {
+      "key": "khorsabad",
+      "label": "Khorsabad (Dur-Sharrukin)",
+      "kind": "site",
+      "lat": 36.5097,
+      "lon": 43.2292,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 7,
+      "by_tier": {
+        "excavation_reported": 1,
+        "acquisition_site": 6
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-49279B6480D9",
+        "IBI-4AACF1A7FC32",
+        "IBI-5A68C5918142",
+        "IBI-63793B0DDEBD",
+        "IBI-9A5BAF49A18E",
+        "IBI-B86B0E550724",
+        "IBI-D9E94A290BE6"
+      ]
+    },
+    {
+      "key": "region_mesopotamia",
+      "label": "Mesopotamia (historic, unspecified)",
+      "kind": "region",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": null,
+      "objects": 5,
+      "by_tier": {
+        "region_only": 5
+      },
+      "best_tier": "region_only",
+      "object_ids": [
+        "IBI-23F08045C39F",
+        "IBI-329D7C137A72",
+        "IBI-33ACFC312B22",
+        "IBI-47578B1D57F0",
+        "IBI-99A827DC94C1"
+      ]
+    },
+    {
+      "key": "seleucia",
+      "label": "Seleucia on the Tigris",
+      "kind": "site",
+      "lat": 33.0944,
+      "lon": 44.5211,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 5,
+      "by_tier": {
+        "site_reported": 5
+      },
+      "best_tier": "site_reported",
+      "object_ids": [
+        "IBI-01CFAFC981BF",
+        "IBI-356AD7EE0473",
+        "IBI-996580409AEC",
+        "IBI-B6AABE2F395E",
+        "IBI-EF961ABD5F3A"
+      ]
+    },
+    {
+      "key": "hillah",
+      "label": "Al-Hillah",
+      "kind": "site",
+      "lat": 32.4637,
+      "lon": 44.4198,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 3,
+      "by_tier": {
+        "excavation_reported": 1,
+        "site_reported": 2
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-3E8AE8D72F0E",
+        "IBI-8CE1A46F46E2",
+        "IBI-E654464B246D"
+      ]
+    },
+    {
+      "key": "nimrud",
+      "label": "Nimrud (Kalhu)",
+      "kind": "site",
+      "lat": 36.0989,
+      "lon": 43.3272,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 3,
+      "by_tier": {
+        "excavation_reported": 3
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-2615F285A3AD",
+        "IBI-3C13C6F7DFD5",
+        "IBI-6F09DFD10EC4"
+      ]
+    },
+    {
+      "key": "susa",
+      "label": "Susa (Susiana)",
+      "kind": "site",
+      "lat": 32.1897,
+      "lon": 48.2575,
+      "modern": "Iran",
+      "note": null,
+      "objects": 3,
+      "by_tier": {
+        "excavation_reported": 3
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-46C8C30E20BF",
+        "IBI-9D21947B0388",
+        "IBI-AA67AEE8E98C"
+      ]
+    },
+    {
+      "key": "amran_babylon",
+      "label": "Amran ibn Ali (Babylon)",
+      "kind": "site",
+      "lat": 32.5361,
+      "lon": 44.4206,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 2,
+      "by_tier": {
+        "excavation_reported": 2
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-5689D7C131FC",
+        "IBI-B8D8FA942816"
+      ]
+    },
+    {
+      "key": "region_iran",
+      "label": "Iran (unspecified)",
+      "kind": "region",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": null,
+      "objects": 2,
+      "by_tier": {
+        "region_only": 2
+      },
+      "best_tier": "region_only",
+      "object_ids": [
+        "IBI-1E6CB815A56E",
+        "IBI-92F5B3CC2C41"
+      ]
+    },
+    {
+      "key": "sippar",
+      "label": "Sippar (Abu Habba)",
+      "kind": "site",
+      "lat": 33.0603,
+      "lon": 44.2417,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 2,
+      "by_tier": {
+        "excavation_reported": 2
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-643AF1B799FD",
+        "IBI-74B3A0AA8A87"
+      ]
+    },
+    {
+      "key": "tell_baruda",
+      "label": "Tell Baruda (Choche)",
+      "kind": "site",
+      "lat": 33.0917,
+      "lon": 44.5806,
+      "modern": "Iraq",
+      "note": "Veh-Ardashir, in the Ctesiphon complex opposite Seleucia.",
+      "objects": 2,
+      "by_tier": {
+        "excavation_stratified": 2
+      },
+      "best_tier": "excavation_stratified",
+      "object_ids": [
+        "IBI-E79DBD4D7298",
+        "IBI-EC0E16D4FA07"
+      ]
+    },
+    {
+      "key": "arban",
+      "label": "Arban (Tell Ajaja)",
+      "kind": "site",
+      "lat": 36.0722,
+      "lon": 40.925,
+      "modern": "Syria",
+      "note": "On the Khabur; Layard's 1850 excavation.",
+      "objects": 1,
+      "by_tier": {
+        "excavation_reported": 1
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-F30A83910A20"
+      ]
+    },
+    {
+      "key": "ashur",
+      "label": "Ashur (Qal'at Sharqat)",
+      "kind": "site",
+      "lat": 35.4569,
+      "lon": 43.2597,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "acquisition_site": 1
+      },
+      "best_tier": "acquisition_site",
+      "object_ids": [
+        "IBI-D50BC9F2D496"
+      ]
+    },
+    {
+      "key": "baghdad",
+      "label": "Baghdad",
+      "kind": "site",
+      "lat": 33.3152,
+      "lon": 44.3661,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "acquisition_site": 1
+      },
+      "best_tier": "acquisition_site",
+      "object_ids": [
+        "IBI-BD32172273E5"
+      ]
+    },
+    {
+      "key": "kermanshah",
+      "label": "Kermanshah",
+      "kind": "site",
+      "lat": 34.3142,
+      "lon": 47.065,
+      "modern": "Iran",
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "acquisition_site": 1
+      },
+      "best_tier": "acquisition_site",
+      "object_ids": [
+        "IBI-8D4A2D8DC7DA"
+      ]
+    },
+    {
+      "key": "khafajah",
+      "label": "Khafajah (Tell Khafaje)",
+      "kind": "site",
+      "lat": 33.34,
+      "lon": 44.7,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "site_reported": 1
+      },
+      "best_tier": "site_reported",
+      "object_ids": [
+        "IBI-B8B09844C8B9"
+      ]
+    },
+    {
+      "key": "kiamiaz",
+      "label": "Kiamiaz, on the Tigris near Baghdad",
+      "kind": "unlocated",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": "A nineteenth-century transliteration the project has not yet matched to a known site.",
+      "objects": 1,
+      "by_tier": {
+        "unlocated": 1
+      },
+      "best_tier": "unlocated",
+      "object_ids": [
+        "IBI-F49584A8B7FB"
+      ]
+    },
+    {
+      "key": "nineveh",
+      "label": "Nineveh (Kouyunjik)",
+      "kind": "site",
+      "lat": 36.3597,
+      "lon": 43.1528,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "excavation_reported": 1
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-81FDC4078390"
+      ]
+    },
+    {
+      "key": "region_syria",
+      "label": "Syria (unspecified)",
+      "kind": "region",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "region_only": 1
+      },
+      "best_tier": "region_only",
+      "object_ids": [
+        "IBI-302745C14252"
+      ]
+    },
+    {
+      "key": "tell_al_duwayhi",
+      "label": "Tell al-Duwayhi, Babil, Iraq",
+      "kind": "unlocated",
+      "lat": null,
+      "lon": null,
+      "modern": null,
+      "note": "Named in the source but not confidently located to a point. Within Babil governorate.",
+      "objects": 1,
+      "by_tier": {
+        "unlocated": 1
+      },
+      "best_tier": "unlocated",
+      "object_ids": [
+        "IBI-62F5934FB165"
+      ]
+    },
+    {
+      "key": "uruk",
+      "label": "Uruk (Warka)",
+      "kind": "site",
+      "lat": 31.3225,
+      "lon": 45.6361,
+      "modern": "Iraq",
+      "note": null,
+      "objects": 1,
+      "by_tier": {
+        "excavation_reported": 1
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-DD4107304D3A"
+      ]
+    },
+    {
+      "key": "velyki_kuchugury",
+      "label": "Velyki Kuchugury hillfort",
+      "kind": "site",
+      "lat": 47.635,
+      "lon": 34.92,
+      "modern": "Ukraine",
+      "note": "Far outside Mesopotamia. An Arabic magic bowl, published 2025. The site lay on the Dnieper and is now under the Kakhovka reservoir; coordinates are approximate.",
+      "objects": 1,
+      "by_tier": {
+        "excavation_reported": 1
+      },
+      "best_tier": "excavation_reported",
+      "object_ids": [
+        "IBI-2F865119B495"
+      ]
+    }
+  ],
+  "per_object": {
+    "IBI-013FBB80706C": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 7",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-01CFAFC981BF": [
+      {
+        "value": "Seleucia, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 38, object KM 19504",
+        "source": "Passionate Curiosities: Tales of Collectors & Collections from the Kelsey Museum",
+        "source_type": "book",
+        "source_year": 2015
+      }
+    ],
+    "IBI-021C540426A3": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-27",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Tell Ibrahim (Kutha)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1980-0415-27",
+        "source": "incantation bowl: 117880",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-066A91C46861": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-06D9A3E90FA7": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-102",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-06DF28395D0E": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-n",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-073B6E935D3A": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001088",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-079F0B82D514": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 31",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-0812604AAFBD": [
+      {
+        "value": "Excavated/Findspot: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-2",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "object W_1886-0109-2",
+        "source": "incantation bowl: 91767",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-0A183C0D3DA4": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-17",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-0DDAE5D941C5": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-k",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-0F792FD4A54F": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-98",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-0F893C3C8B27": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-0F8B15FDC9FA": [
+      {
+        "value": "Excavated/Findspot: Ibrahim al-Khalil (Borsippa)  | Excavated/Findspot: Babylon (historic - Iraq)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0324-351",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-11589900B7B0": [
+      {
+        "value": "Excavated/Findspot: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-7",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "object W_1886-0109-7",
+        "source": "incantation bowl: 91758",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-12A92BD58AA2": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-10",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-13B2242254BB": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1889-0112-4",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-148B8110021B": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-28",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-17A84EB70872": [
+      {
+        "value": "Nippur, Iraq; surface find",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "highlight 27, OIM A32675",
+        "source": "Mesopotamian Collection highlight 27: Incantation Bowl",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-18453A93A7E2": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001091",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-185FCCE03C08": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-15",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-18D560D6B24D": [
+      {
+        "value": "Excavated/Findspot: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1911-0408-46",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-1C2970E1B571": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1911-0408-48",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-1C2EB1600C9F": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0303-5",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-1D5DB3452BB5": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-10",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-1D5F283ECCE9": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-1E6CB815A56E": [
+      {
+        "value": "Found/Acquired: Iran",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1974-1209-3",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-1F104D5164E8": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-95",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-21A82C18C677": [
+      {
+        "value": "Excavated/Findspot: Babylon (historic - Iraq)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1880-1012-29",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-21F04F566A66": [
+      {
+        "value": "Nippur, Area WG, locus 14, above floor 2",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "p. 138, table 8.1: 18N20",
+        "source": "Incantation bowls in the Nippur 1989 Area WG context",
+        "source_type": "chapter",
+        "source_year": 2021
+      }
+    ],
+    "IBI-23F08045C39F": [
+      {
+        "value": "Found/Acquired: Mesopotamia (historic)",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-9",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-25B551BD0779": [
+      {
+        "value": "Nippur Area WG, large-house courtyard, Level III",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "18N19 / Iraq Museum 114981",
+        "source": "Two Mandaic Incantation Bowls from Nippur",
+        "source_type": "article",
+        "source_year": 1994
+      }
+    ],
+    "IBI-2615F285A3AD": [
+      {
+        "value": "Excavated/Findspot: Nimrud",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-0903-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-26BDEA55EA1E": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 324, item 21",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-27D5447503D1": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-28AFCD028373": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 321, item 3",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-2AF0C10043BB": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-11",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Tell Ibrahim (Kutha)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1881-0714-11",
+        "source": "incantation bowl: 91755",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-2F865119B495": [
+      {
+        "value": "Velyki Kuchugury hillfort",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "article object",
+        "source": "Arabic Magic Bowl from the Velyki Kuchugury Hillfort",
+        "source_type": "article",
+        "source_year": 2025
+      }
+    ],
+    "IBI-302745C14252": [
+      {
+        "value": "Found/Acquired: Syria",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1983-1002-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-3192995163A4": [
+      {
+        "value": "Nippur, Area WG, locus 30, floor 4",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "p. 138, table 8.1: 18N98",
+        "source": "Incantation bowls in the Nippur 1989 Area WG context",
+        "source_type": "chapter",
+        "source_year": 2021
+      }
+    ],
+    "IBI-325647D3DF8D": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 28",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-329D7C137A72": [
+      {
+        "value": "Excavated/Findspot: Mesopotamia (historic)",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Mesopotamia (historic)",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "object W_1980-0415-1",
+        "source": "incantation bowl: 91713",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-32F8164EAC5E": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-100",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Babylon",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-1009-100",
+        "source": "incantation bowl: 91720",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-33ACFC312B22": [
+      {
+        "value": "Found/Acquired: Mesopotamia (historic)",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-7",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-356AD7EE0473": [
+      {
+        "value": "Seleucia, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "KM 33756",
+        "source": "Ugly Object of the Month — October 2018",
+        "source_type": "museum_record",
+        "source_year": 2018
+      }
+    ],
+    "IBI-362D2E1D6E03": [
+      {
+        "value": "Borsippa",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "bowl BOR",
+        "source": "An Aramaic Incantation Bowl from Borsippa",
+        "source_type": "article",
+        "source_year": 1981
+      }
+    ],
+    "IBI-36E0B6218EBA": [
+      {
+        "value": "Tell Ibrahim, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "Google Arts & Culture asset fQEubwbd_KepFw",
+        "source": "Ceramic bowl with Aramaic magic inscription",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-374B7E79C69C": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-f",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-38C18AE46D90": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1911-0408-53",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-39C410944B65": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-h",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-3BD55EC0BD28": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001100",
+        "source": "Ein Fragment einer Zauberschale(?) aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-3C13C6F7DFD5": [
+      {
+        "value": "Excavated/Findspot: South East Palace (Nimrud)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: N-1560",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-3E8AE8D72F0E": [
+      {
+        "value": "Hillah, Babil Governorate (Babylon Province), Iraq (South Babylonia)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "Smithsonian record nmnhanthropology_8046133",
+        "source": "Incantation Bowl",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-44BC3FE36601": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 37",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-4500756E262F": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 12",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-46769AB4E6AE": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001095",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-46C8C30E20BF": [
+      {
+        "value": "Susiana, from the French Dieulafoy mission excavations",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "printed p. 590",
+        "source": "Coupes à inscriptions magiques",
+        "source_type": "article",
+        "source_year": 1891
+      }
+    ],
+    "IBI-47578B1D57F0": [
+      {
+        "value": "Found/Acquired: Mesopotamia (historic)",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-11",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Mesopotamia",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "object W_1886-0109-11",
+        "source": "incantation bowl: 91760",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-49279B6480D9": [
+      {
+        "value": "Found/Acquired: Khorsabad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-49",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-49D1BAB76E01": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 11",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-4A2F6AC1F208": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001092",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-4AACF1A7FC32": [
+      {
+        "value": "Excavated/Findspot: Khorsabad",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-50",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-4BA618E6BAB7": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-4BC0E6C6248A": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-14",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-4CB0DA45A7D0": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-8",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-4CE4A3A99CC4": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-4D4032DE7595": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-g",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-510CFB1AB6F7": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-d",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-527704D6B074": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 32",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-53436A3039A9": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-5430A0855D0E": [
+      {
+        "value": "Nippur, Area WG, locus 14, floor 2",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "p. 138, table 8.1: 18N18",
+        "source": "Incantation bowls in the Nippur 1989 Area WG context",
+        "source_type": "chapter",
+        "source_year": 2021
+      }
+    ],
+    "IBI-544ABA7B7DAA": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 38",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-55A65753F98F": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-5689D7C131FC": [
+      {
+        "value": "Excavated/Findspot: Amran (Babylon)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-0903-2",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Amran (Babylon)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-0903-2",
+        "source": "incantation bowl: 91710",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-56C0FBBB8E70": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1911-0408-45",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-5A68C5918142": [
+      {
+        "value": "Found/Acquired: Khorsabad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-47",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-5B1343517775": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 321, item 2",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-5C355EF43D8D": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 8",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-5CB5A9A5E46E": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 29",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-5D08E0461F30": [
+      {
+        "value": "Nippur Area WG, large-house courtyard, Level III",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "18N97 / Iraq Museum 114986",
+        "source": "Two Mandaic Incantation Bowls from Nippur",
+        "source_type": "article",
+        "source_year": 1994
+      }
+    ],
+    "IBI-5ECA91207942": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001099",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-5F8407C1637E": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-602DCEB1131F": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-61CFB166EF10": [
+      {
+        "value": "Babylon",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "pp. 139–147, figs. 1 and 3",
+        "source": "Two Incantation Bowls from Babylon",
+        "source_type": "article",
+        "source_year": 2000
+      }
+    ],
+    "IBI-62F5934FB165": [
+      {
+        "value": "Tell al-Duwayhi, Babil, Iraq",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "pp. 123–132, IM 91-100147",
+        "source": "A New Mandaic Incantation Bowl from Babil (IM 91-100147)",
+        "source_type": "chapter",
+        "source_year": 2017
+      }
+    ],
+    "IBI-63793B0DDEBD": [
+      {
+        "value": "Found/Acquired: Khorsabad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-44",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-63BF471B795C": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-l",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-643AF1B799FD": [
+      {
+        "value": "Excavated/Findspot: Abu Habba (Sippar)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1883-0118-2602",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6788A84FE8CA": [
+      {
+        "value": "Nippur, Area WG, locus 54, floor 3",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "p. 138, table 8.1: 18N21",
+        "source": "Incantation bowls in the Nippur 1989 Area WG context",
+        "source_type": "chapter",
+        "source_year": 2021
+      }
+    ],
+    "IBI-6849AB56769C": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-69CDF063CE1C": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-20",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6A3D928A2501": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001083",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6AB1C3C19294": [
+      {
+        "value": "Excavated/Findspot: Babylon (historic - Iraq)  | Excavated/Findspot: Ibrahim al-Khalil (Borsippa)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: Rm-III-29-30",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6ADE7D036DA0": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-17",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6BE776EF5D76": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-6C4D8112FFE2": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 324, item 22",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-6C8ABCC45C7C": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001085",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6E087B8C539F": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 35",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-6F09DFD10EC4": [
+      {
+        "value": "Excavated/Findspot: Nimrud",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: N-1692",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-6F0F7DCA91B9": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-6F17044971CD": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001096",
+        "source": "Ein Fragment einer Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-724AC11312AB": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "DA 4, first Mandaean bowl",
+        "source": "Jewish and Mandaean Incantation Bowls in the Royal Ontario Museum",
+        "source_type": "book",
+        "source_year": 1967
+      }
+    ],
+    "IBI-7346BB53B72D": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1911-0408-49",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7394BFD7A73B": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "bowl IM 76106",
+        "source": "A New Parallel to the Jewish Babylonian Aramaic Magic Bowl IM 76106 (Nippur 11 N78)",
+        "source_type": "article",
+        "source_year": 2011
+      }
+    ],
+    "IBI-73CCCFD9AAC1": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-74625165CE1F": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 25",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-7483C18A7D30": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-e",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-748B22D39260": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-99",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Babylon; reportedly found in a tomb",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-1009-99",
+        "source": "incantation bowl: 91719",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-74B3A0AA8A87": [
+      {
+        "value": "Excavated/Findspot: Abu Habba (Sippar)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1883-0118-AH-2601",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Abu Habba (Sippar)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1883-0118-AH-2601",
+        "source": "incantation bowl: 117882",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7680B927BB2F": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 321, item 1",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-77584E7FC2CA": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-13",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7AF2C3E31FDD": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7B5FC6F7A0FA": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-97",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Babylon; reportedly found in a tomb",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-1009-97",
+        "source": "incantation bowl: 91726",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7BCBBD6A6A80": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-5",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7D0085FFB227": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00000866",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7D4797212D4C": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1885-1209-2",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-7F04261178CB": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 15",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-8006D542AA18": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-803DAD53D57E": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-81533E5D52C6": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-81FDC4078390": [
+      {
+        "value": "Excavated/Findspot: Kouyunjik",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1932-1212-23",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-841834AA23EE": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-84F6B8FD30B3": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 324, item 19",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-85880E054A2C": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-87227EEFF156": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-s",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-87B3F205EF11": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-25",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-87F95AD9539A": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-88103E2EB680": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 13",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-88D1937D3ED2": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001084",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8997E7C02290": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-21",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8C2D4494C773": [
+      {
+        "value": "Excavated/Findspot: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-6",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8CB0CA407E6E": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1925-1015-7",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "object W_1925-1015-7",
+        "source": "incantation bowl: 117827",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8CE1A46F46E2": [
+      {
+        "value": "Hillah, Babil Governorate, Iraq (South Babylonia)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "Smithsonian record nmnhanthropology_8046135",
+        "source": "Incantation Bowl, inscribed in Syriac",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8D4A2D8DC7DA": [
+      {
+        "value": "Found/Acquired: Kermanshah (town)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1971-0229-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8D915E3AD761": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-18",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-8D98BEE1638B": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-12",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-90EB147AD3EE": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-J",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-917276249B87": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 321, item 4",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-92F5B3CC2C41": [
+      {
+        "value": "Found/Acquired: Iran",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1974-1209-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-93D8EFA6B3C3": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-8",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-950537E68315": [
+      {
+        "value": "Birs-Nimrud (Borsippa)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1880-1112-1964",
+        "source": "incantation bowl: 127396",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-97ED0532D516": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001087",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-996580409AEC": [
+      {
+        "value": "Seleucia on the Tigris, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "TMA 1931.455 / KM 31455",
+        "source": "Conserving a Seleucian Incantation Bowl",
+        "source_type": "museum_record",
+        "source_year": 2015
+      }
+    ],
+    "IBI-99A827DC94C1": [
+      {
+        "value": "Found/Acquired: Mesopotamia (historic)",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1889-0112-5",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-9A5BAF49A18E": [
+      {
+        "value": "Found/Acquired: Khorsabad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-45",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-9C3EE339378D": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-101",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Babylon; reportedly found in a tomb",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-1009-101",
+        "source": "incantation bowl: 91716",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-9D21947B0388": [
+      {
+        "value": "Susiana, from the French Dieulafoy mission excavations",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "printed p. 590",
+        "source": "Coupes à inscriptions magiques",
+        "source_type": "article",
+        "source_year": 1891
+      }
+    ],
+    "IBI-9E37AB1B6312": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-7",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Tell Ibrahim (Kutha)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1881-0714-7",
+        "source": "incantation bowl: 91730",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-9F0C2BC5FBC8": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-r",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-A22328E17FE6": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-2",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-A2E775143F9F": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 17",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-A3736CD7D997": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 40",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-A3CB298383D2": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001093",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-A63FE866AC15": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-A691404B8D7B": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-4",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-A83BCFF1A88E": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-14",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-A8BE9F6FA177": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "Object of the Month, April 2024",
+        "source": "Eine Zauberschale aus der Hilprecht-Sammlung",
+        "source_type": "museum_record",
+        "source_year": 2024
+      }
+    ],
+    "IBI-AA15A1232B1F": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "registration A33980; accession 3633",
+        "source": "Bowl, Incantation — A33980",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-AA67AEE8E98C": [
+      {
+        "value": "Susiana, from the French Dieulafoy mission excavations",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "printed p. 590",
+        "source": "Coupes à inscriptions magiques",
+        "source_type": "article",
+        "source_year": 1891
+      }
+    ],
+    "IBI-ABDE8A973358": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 324, item 20",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-AC196693433D": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-3",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B36E5BE78B3E": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-4",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B3CD7FB74C71": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B4B929069FC4": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-b",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B4F1979F5412": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-c",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B54D497CC676": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 9",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-B6246E14776E": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 6",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-B6AABE2F395E": [
+      {
+        "value": "Seleucia, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "work record 574086; image record 1366285",
+        "source": "Clay Incantation Bowl / Parthian",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B73092679452": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001097",
+        "source": "Ein Fragment einer Zauberschale(?) aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B860E80111E3": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "Incantation Bowls label: Penn B2923",
+        "source": "The Book of Psalms: Incantation Bowls — large-print labels",
+        "source_type": "catalogue",
+        "source_year": 2025
+      }
+    ],
+    "IBI-B86B0E550724": [
+      {
+        "value": "Found/Acquired: Khorsabad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-48",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B8B09844C8B9": [
+      {
+        "value": "Tell Khafaje, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "pp. 79–81",
+        "source": "An Aramaic Incantation Bowl from Khafaje",
+        "source_type": "article",
+        "source_year": 1992
+      }
+    ],
+    "IBI-B8D8FA942816": [
+      {
+        "value": "Excavated/Findspot: Amran (Babylon)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-0903-3",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Amran (Babylon)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-0903-3",
+        "source": "incantation bowl: 91766",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B92459BF5743": [
+      {
+        "value": "Excavated/Findspot: Babylon (historic - Iraq)  | Excavated/Findspot: Ibrahim al-Khalil (Borsippa)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: Rm-III-31",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-B9953E43CB15": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-BAA1A1373E41": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00000833",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-BB33CA3C9DF6": [
+      {
+        "value": "Southern Iraq (?)",
+        "tier": "region_only",
+        "certainty": "uncertain",
+        "locator": "object W_1957-0925-1",
+        "source": "incantation bowl: 1957,0925.1",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-BBF8DC8C2BCD": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001094",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-BC873E943AF3": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-14",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-BD32172273E5": [
+      {
+        "value": "Found/Acquired: Baghdad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1893-1014-51",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-BDCC7E804E77": [
+      {
+        "value": "Excavated/Findspot: Birs-Nimrud (Borsippa)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1880-1112-1963",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Birs-Nimrud (Borsippa)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1880-1112-1963",
+        "source": "incantation bowl: 127395",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-BE34A956B4B8": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1925-1015-5",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-C1AF6481C19A": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-15",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-C2E332F154A0": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 324, item 24",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-C37AC08EF228": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-p",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-C3B04E20C369": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 10",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-C3B7AF19392E": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-C3B7C297B162": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1885-1209-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-C566A8D2270F": [
+      {
+        "value": "Excavated/Findspot: Babylon (historic - Iraq)  | Excavated/Findspot: Ibrahim al-Khalil (Borsippa)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: Rm-III-32",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-CCC8B14D56EA": [
+      {
+        "value": "Excavated/Findspot: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1886-0109-5",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "object W_1886-0109-5",
+        "source": "incantation bowl: 91742",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-CD3E783556B1": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 36",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-CEC11D2DBB44": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 18",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-CEC9D1941144": [
+      {
+        "value": "Excavated/Findspot: Ibrahim al-Khalil (Borsippa)  | Excavated/Findspot: Babylon (historic - Iraq)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0324-350",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-CF2E762AEBC7": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-m",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-CF7556423B9D": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 14",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-D177CA9271FD": [
+      {
+        "value": "Excavated/Findspot: Birs-Nimrud (Borsippa)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1880-1112-1964",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-D2C708F2AA14": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001090",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-D35F31FD9609": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-D50BC9F2D496": [
+      {
+        "value": "Found/Acquired: Ashur (historic)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1922-0812-14",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-D5AB689EABA8": [
+      {
+        "value": "Found/Acquired: Babylon (historic - Iraq)",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1851-1009-96",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Babylon",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1851-1009-96",
+        "source": "incantation bowl: 91727",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-D8319A094023": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 30",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-D9305B05E1A2": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-D9E94A290BE6": [
+      {
+        "value": "Found/Acquired: Khorsabad",
+        "tier": "acquisition_site",
+        "certainty": "reported",
+        "locator": "Related objects: 1914-0214-46",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-D9E9C4FD2C24": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001089",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-DC36E80A1951": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 39",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-DD4107304D3A": [
+      {
+        "value": "Excavated/Findspot: Warka",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1856-0903-1154",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-DEDC98D3F366": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 323, item 16",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-DF04AC9DDBFB": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 324, item 23",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-DF12373ABCD4": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-E10F6716C2C1": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 33",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-E132B79EADD2": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-6",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-E135C0EA9CED": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 322, item 5",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-E562B6AEEFAF": [
+      {
+        "value": "Found/Acquired: Iraq, South",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-19",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-E5A7736DE977": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1970-0921-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-E654464B246D": [
+      {
+        "value": "Excavated/Findspot: Hillah, Al-",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1872-1231-1",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Al-Hillah",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1872-1231-1",
+        "source": "incantation bowl: 91723",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-E69AB24A0E1B": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-13",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      },
+      {
+        "value": "Tell Ibrahim (Kutha)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "object W_1881-0714-13",
+        "source": "incantation bowl: 91769",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-E74F7ED591BD": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 27",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-E79DBD4D7298": [
+      {
+        "value": "Tell Baruda (Choche), Area 21, beneath southwest threshold",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "p. 138: C10-117",
+        "source": "Incantation bowls in the Nippur 1989 Area WG context",
+        "source_type": "chapter",
+        "source_year": 2021
+      }
+    ],
+    "IBI-E8CF3DBF81FE": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-a",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-EB8FD1657B4A": [
+      {
+        "value": "Found/Acquired: Iraq",
+        "tier": "region_only",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-31-q",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-EC0E16D4FA07": [
+      {
+        "value": "Tell Baruda (Choche), Area 21, beneath northwest threshold",
+        "tier": "excavation_stratified",
+        "certainty": "reported",
+        "locator": "p. 138: fourth Area 21 bowl under northwest threshold",
+        "source": "Incantation bowls in the Nippur 1989 Area WG context",
+        "source_type": "chapter",
+        "source_year": 2021
+      }
+    ],
+    "IBI-EF7BDE184446": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-EF961ABD5F3A": [
+      {
+        "value": "Seleucia, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "DiSKO object 2018.01.0502",
+        "source": "Incantation Bowl",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-F094DE6A4112": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 326, item 34",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-F0D16C11FE27": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-F1DDD0F5B05B": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-F265C68D7662": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1980-0415-5",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-F30A83910A20": [
+      {
+        "value": "Excavated/Findspot: Arban",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: N-1847",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-F49584A8B7FB": [
+      {
+        "value": "Kiamiaz, on the Tigris near Baghdad",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "DA 5, second Mandaean bowl",
+        "source": "Jewish and Mandaean Incantation Bowls in the Royal Ontario Museum",
+        "source_type": "book",
+        "source_year": 1967
+      }
+    ],
+    "IBI-F5AF07BA4A16": [
+      {
+        "value": "Khouabir, on the Euphrates",
+        "tier": "unlocated",
+        "certainty": "reported",
+        "locator": "introduction, printed pp. 1-3; numbered text and plate",
+        "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
+        "source_type": "book",
+        "source_year": 1898
+      }
+    ],
+    "IBI-F5E127D75C58": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-12",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-F6ED61BF3D88": [
+      {
+        "value": "Nippur",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "p. 325, item 26",
+        "source": "Aramaic Incantation Texts from Nippur",
+        "source_type": "book",
+        "source_year": 1913
+      }
+    ],
+    "IBI-F823DBF4529D": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001086",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-F881E6B2BBA7": [
+      {
+        "value": "Excavated/Findspot: Tell Ibrahim (Kutha)",
+        "tier": "excavation_reported",
+        "certainty": "reported",
+        "locator": "Related objects: 1881-0714-9",
+        "source": "159 objects related to Segal 2000a",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ],
+    "IBI-F8AAEA800567": [
+      {
+        "value": "Nippur, Iraq",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "dc00001098",
+        "source": "Eine Zauberschale aus Nippur",
+        "source_type": "museum_record",
+        "source_year": null
+      }
+    ]
+  }
+}
