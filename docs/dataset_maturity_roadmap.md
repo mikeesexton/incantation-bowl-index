@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-13T20:58:17+00:00`
+Generated: `2026-09-14T22:10:54+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 22 done · 21 in progress · 19 queued · 0 blocked |
+| Roadmap tasks | 22 done · 21 in progress · 21 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 7/24 |
 
@@ -378,6 +378,12 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
 - [ ] **ACCESS-007 — Launch paid access only behind contractual and technical gates** · Queued · Research owner, engineering and qualified rights counsel
   - Done when: A paid service has counsel-reviewed terms, executed licenses for every protected item, entitlement controls, export limits, audit logs, royalty accounting, takedown procedures, security review and a clean separation from the private vault.
   - Evidence/status: Not started. A subscription is an allowed business model; missing rights are the blocker, not the billing mechanism.
+- [ ] **ACCESS-008 — Publish the bowlam.com public landing page** · Queued · Research owner
+  - Done when: bowlam.com serves a project-authored overview of the index — what it covers, how bowls are counted, what is deliberately withheld and why — plus an interest-capture field, with no third-party text or images and no path from the page to the corpus.
+  - Evidence/status: Not started. This layer needs no rights decision: the page describes the project in the project's own words. It is deliberately separate from ACCESS-009, which exposes data and therefore does need one.
+- [ ] **ACCESS-009 — Gate a factual scholar preview behind Cloudflare Access** · Queued · Research owner and engineering
+  - Done when: Named scholars reach a factual view of the corpus at bowlam.com through per-person authentication; the deployed artefact is a reviewed `ibi export-public` build rather than the working database; no protected transcription, translation or image is behind the gate; and access is individually revocable and logged.
+  - Evidence/status: Cloudflare Access is provisioned on the free tier (50 users, one-time email PIN), so the authentication layer costs nothing and gives per-person revocation rather than a shared password. Three constraints are already settled and should not be relitigated at build time. The research console is not the deliverable: it binds to localhost, refuses non-local addresses, and authenticates with a single local token, so it must never be exposed. The gate is the export, not the password: a shared or per-person credential does not make distribution private, so what sits behind it must already be publishable on its own terms. And the corpus file is not shareable even privately, because it carries 136 CC BY-NC rows and 15 copyrighted text rows that `export-public` withholds by design.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -537,6 +543,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-14:** Added ACCESS-008 and ACCESS-009 to track the bowlam.com public page and the Cloudflare Access gated scholar preview. Tracked, not scheduled: neither is a handoff-gate requirement and neither is started.
 - **2026-09-12:** Ran a second bounded remote-repository pilot while the LOC visit is paused. The Czech Academy's official Kramerius service supplied complete scans of Gordon's 1934 texts A-F article, 1934 text G article, and 1937 texts H-O article, including plates; all three are deposited by hash with the repository's contractual-use terms retained as copyrighted. A complete AASOR article for Iraq Museum 9737 was inspected through an institutional scan but not archived when robots permission could not be verified. Four source records were corrected and scoped, four publication keys were registered, and 24 page-located appearances were added. Sixteen are full editions: fifteen attach to existing exact-label or museum-number records and Harvard Semitic Museum 8669 is new. Seven numbered Istanbul bowls and National Museum 207962 are separate new candidates. Gordon's uncertain Ashmolean(?) attribution for no. 91731 remains visible beside the current British Museum evidence. No uncertain identity was merged and no protected text or image was published.
 - **2026-09-12:** Ran the first bounded open-repository research pilot while LOC work is paused. Located complete public-domain scans of Wohlstein's 1893 and 1894 Berlin articles, captured both PDFs with headers and hashes, visually checked the relevant pages, repaired their bibliographic records and author attribution, and classified their scopes. Added eleven exact-VA source appearances across six existing Berlin objects: five fully edited bowls and six contextual cross-references, including the fragmentary VA 2434. Registered both publications; all 28 current keys resolve. No new identity was invented, no merge was made, and the public-domain German translations remain queued for separate page-by-page transcription and proofreading.
 - **2026-09-12:** Repaired misleading public copy by separating the 115-title JBA bibliography checklist, the 26-edition registry covering 879 candidate records and 715 projected identities, the broader 775 identities carrying some publication reference, and the 44 text records currently cleared for public display. Located Stübe 1895 as a complete open Bayerische Staatsbibliothek scan, deposited it by hash, corrected and scoped its source record, and indexed all 19 numbered catalogue objects. Seventeen exact VA inventory designations attach as new source appearances to existing Berlin records; two unnamed Pahlavi bowls remain separate candidates; two numbered objects are explicitly classified as inscribed skulls. No ambiguous identities were merged and no protected modern expression was imported.

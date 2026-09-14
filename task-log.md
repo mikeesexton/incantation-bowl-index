@@ -25,6 +25,34 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-14 — Claude — Track the bowlam.com access layer
+
+**Claimed:** ACCESS-008, ACCESS-009 (registering only — neither is started)
+**Corpus:** unchanged — state digest `4a7c6ca8d9a9` (read-only throughout)
+**Tests:** 228 Python tests passed
+
+- Registered two queued tasks in the roadmap at the researcher's request, to track the
+  bowlam.com plan without scheduling it. ACCESS-008 is the public landing page, which
+  needs no rights decision because it is the project describing itself. ACCESS-009 is
+  the scholar preview behind Cloudflare Access, now provisioned on the free tier.
+- Wrote the constraints into ACCESS-009's evidence field rather than leaving them in a
+  conversation, because they are the parts most likely to be relitigated at build time:
+  the research console is not the deliverable and must never be exposed, the gate is
+  the export rather than the password, and the corpus file is not shareable even
+  privately while it carries 136 CC BY-NC and 15 copyrighted text rows.
+- Edited `research/roadmap/dataset_maturity.json` and regenerated, per the
+  generated-files rule. Neither task was added to `handoff_gate.required_task_ids`:
+  both are post-handoff work, and adding them would have moved the 7/24 figure without
+  anything having been achieved.
+- Also committed `data/reports/acquisition_status.md`, regenerated while answering a
+  question about acquisition bottlenecks. The change is real rather than a timestamp:
+  the VMBA source now has dependants, taking sources-with-dependants from 695 to 696.
+- Not done: no page was built, no export produced, no DNS or Cloudflare configuration
+  touched. The researcher explicitly wanted this tracked, not executed.
+- Worth recording for whoever picks ACCESS-009 up: the acquisition register now shows
+  Segal 2000 accounts for 252 of the 287 candidate records blocked on unheld
+  publications, and it is not obtainable by automated research.
+
 ## 2026-09-13 — Claude — Pair evidence in the concordance workbench
 
 **Claimed:** QA, OPS-001
