@@ -15,7 +15,7 @@
     <script src="/app.js" defer></script>
   </head>
   <body class="is-home">
-    <a class="skip-link" href="#/explore">Skip to records</a>
+    <a class="skip-link" href="#/search">Skip to records</a>
     <div class="app-shell">
       <header class="topbar">
         <a class="wordmark" href="#/home" aria-label="Bowlam home">
@@ -24,14 +24,13 @@
         </a>
         <nav class="view-tabs" aria-label="Research views">
           <a class="view-tab is-active" href="#/home" data-route="home">Home</a>
-          <a class="view-tab" href="#/reading" data-route="reading">Read</a>
-          <a class="view-tab" href="#/scholarship" data-route="scholarship">Literature</a>
           <a class="view-tab" href="#/explore" data-route="explore">Explore</a>
+          <a class="view-tab" href="#/search" data-route="search">Search</a>
+          <a class="view-tab" href="#/scholarship" data-route="scholarship">Scholarship</a>
           <a class="view-tab" href="#/queues" data-route="queues">Enrichment</a>
-          <a class="view-tab" href="#/reviews" data-route="reviews">Concordance</a>
         </nav>
         <div class="local-controls">
-          <a class="intro-browse-link intro-button" href="#/explore">Browse the database <span aria-hidden="true">↗</span></a>
+          <a class="intro-browse-link intro-button" href="#/search">Browse the database <span aria-hidden="true">↗</span></a>
           <button id="refresh-corpus" type="button" title="Reload records changed by collectors">↻ Refresh</button>
           <div class="local-badge"><span></span>Local corpus</div>
         </div>
@@ -118,7 +117,7 @@
 
                 <h1 id="home-title">Small vessels.<br>Human hopes.<br><em>Enduring questions.</em></h1>
                 <p class="intro-lead">Ancient spells. Everyday fears. Discover the lives hidden in incantation bowls.</p>
-                <a class="intro-button" href="#/explore">Browse the database <span aria-hidden="true">↗</span></a>
+                <a class="intro-button" href="#/search">Browse the database <span aria-hidden="true">↗</span></a>
                 <button class="intro-scroll" type="button" data-intro-scroll="intro-origins">Discover their story <span aria-hidden="true">↓</span></button>
               </div>
               <figure class="intro-bowl-figure">
@@ -222,9 +221,9 @@
                 </div>
                 <div class="intro-coverage-steps">
                   <article class="intro-coverage-step" data-step="all"><span class="intro-kicker">The collection</span><h3>Meet the collection.</h3><p>The index brings together <span id="intro-identity-count">—</span> bowls from <span id="intro-record-count">—</span> records. Explore their inscriptions, where they have been, and where to learn more.</p><p>The collection grows as research continues.</p></article>
-                  <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number" data-count="text_edition">—</p><p>Find the books and articles that read and translate these bowls.</p><a href="#/explore?present=text_edition">Explore bowls with text references <span aria-hidden="true">↗</span></a></article>
-                  <article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number" data-count="provenance">—</p><p>Trace accounts of where bowls were found and the collections they passed through.</p><a href="#/explore?present=provenance">Explore bowls with provenance information <span aria-hidden="true">↗</span></a></article>
-                  <article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number" data-count="image">—</p><p>Find photographs and drawings in publications and collections.</p><a href="#/explore?present=image">Explore bowls with image references <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number" data-count="text_edition">—</p><p>Find the books and articles that read and translate these bowls.</p><a href="#/search?present=text_edition">Explore bowls with text references <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number" data-count="provenance">—</p><p>Trace accounts of where bowls were found and the collections they passed through.</p><a href="#/search?present=provenance">Explore bowls with provenance information <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number" data-count="image">—</p><p>Find photographs and drawings in publications and collections.</p><a href="#/search?present=image">Explore bowls with image references <span aria-hidden="true">↗</span></a></article>
                 </div>
               </div>
               <p class="intro-coverage-note">Each circle is a bowl. Highlight those with text, history, or image references; some have all three.</p>
@@ -233,18 +232,18 @@
             <section class="intro-chapter intro-finale" aria-labelledby="finale-title">
               <h2 id="finale-title">Every bowl has a story.<br><em>Find one that draws you in.</em></h2>
 
-              <a class="intro-button" href="#/explore">Browse all bowls <span aria-hidden="true">↗</span></a>
-              <div class="intro-shortcuts"><a href="#/explore?present=text_edition">With text references ↗</a><a href="#/explore?present=provenance">With provenance information ↗</a><a href="#/explore?present=image">With image references ↗</a></div>
+              <a class="intro-button" href="#/search">Browse all bowls <span aria-hidden="true">↗</span></a>
+              <div class="intro-shortcuts"><a href="#/search?present=text_edition">With text references ↗</a><a href="#/search?present=provenance">With provenance information ↗</a><a href="#/search?present=image">With image references ↗</a></div>
               <footer class="intro-footer"><span>Bowlam · The Incantation Bowl Index</span><span id="intro-snapshot-note">Local collection · introductory copy in development</span><a href="#/home" data-intro-scroll="home-title">Back to the beginning ↑</a></footer>
             </section>
           </div>
         </section>
-        <section id="reading-view" class="view reading-room" aria-labelledby="reading-title"></section>
+        <section id="explore-view" class="view reading-room" aria-labelledby="explore-title"></section>
 
-        <section id="explore-view" class="view" aria-labelledby="explore-title">
+        <section id="search-view" class="view" aria-labelledby="search-title">
           <div class="workspace-head">
             <div>
-              <h1 id="explore-title">Explore the bowls</h1>
+              <h1 id="search-title">Search the bowls</h1>
             </div>
             <div class="result-tools">
               <span id="result-count" aria-live="polite">Loading…</span>

@@ -1,4 +1,4 @@
-/* The reading room.
+/* The reading room — the tab labelled "Explore", routed at #/explore.
  *
  * Reads only /api/reader/*, which serves the same gated projection the file
  * export writes. Everything here would work unchanged against static JSON, so
@@ -61,9 +61,9 @@
   function catalogueReturn() {
     try {
       const saved = JSON.parse(sessionStorage.getItem("bowlam.catalogue.return") || "null");
-      if (saved?.hash?.startsWith("#/explore")) return saved.hash;
+      if (saved?.hash?.startsWith("#/search")) return saved.hash;
     } catch { /* use the collection root */ }
-    return "#/explore";
+    return "#/search";
   }
 
   function titleMarkup(cluster) {
@@ -111,15 +111,56 @@
         ? `<span class="bowl-credit">${esc(image.attribution)}</span>` : ""}`;
   }
 
+  /* The index's own one-line description of what a bowl's text does, written
+     from the edition and published as an own_work summary row. It is marked by
+     its editor so it never renders as the bowl's text further down the page. */
+  const CARD_LINE_EDITOR = "Incantation Bowl Index card line";
+  const cardLine = id => ((data.textsBy[id] || [])
+    .find(t => t.editor === CARD_LINE_EDITOR && t.content_status === "included") || {}).content || "";
+
+  /* Falling back to the claims, choose by field, not by length. The shortest
+     ritual value used to win, which put an installation instruction — "Exterior
+     directs placement 'for the inner room of the hall'" — at the top of the
+     reading room ahead of that bowl's actual purpose. Within the winning field
+     the shortest value is still the better card text: the long ones are hedged
+     discussion rather than a statement of what the bowl does. */
+  const PURPOSE_FIELDS = ["text_purpose", "text_function", "formula_genre",
+    "named_demon", "named_angels", "text_tradition"];
+
+  function composedPurpose(id) {
+    const rows = factsOf(id, "ritual");
+    for (const field of PURPOSE_FIELDS) {
+      const found = [...new Set(rows.filter(r => r.field === field).map(r => r.value))];
+      if (found.length) return found.sort((a, b) => a.length - b.length)[0];
+    }
+    return "";
+  }
+
+  /* A bowl is recognised by whom it names, so keep the first name whole rather
+     than truncating a list of them mid-patronymic. */
+  function principalClient(id) {
+    const value = values(id, "client")[0] || "";
+    const parts = value.split(/\s*[;·]\s*/).map(part => part.trim()).filter(Boolean);
+    return parts.length > 1 ? `${parts[0]} and others` : value;
+  }
+
+  /* Budget the two halves separately. Clipping the joined string dropped the
+     client first, which is exactly the half worth keeping. */
+  function purposeAndClient(purpose, client, limit) {
+    if (!limit) return `${purpose} — for ${client}`;
+    const tail = ` — for ${clip(client, 34)}`;
+    return clip(purpose, Math.max(24, limit - tail.length)) + tail;
+  }
+
   function summarise(cluster, limit) {
     const id = cluster.identity_id;
-    // Prefer the shortest ritual statement: a purpose reads better than an
-    // installation instruction, and the short ones are almost always purposes.
-    const purpose = values(id, "ritual").sort((a, b) => a.length - b.length)[0] || "";
-    const client = values(id, "client")[0];
+    const written = cardLine(id);
+    if (written) return limit ? clip(written, limit) : written;
+    const purpose = composedPurpose(id);
+    const client = principalClient(id);
+    if (purpose && client) return purposeAndClient(purpose, client, limit);
     let line = "";
-    if (purpose && client) line = `${purpose} — for ${client}`;
-    else if (purpose) line = purpose;
+    if (purpose) line = purpose;
     else if (client) line = `Named for ${client}`;
     else {
       const verses = values(id, "biblical_intertexts");
@@ -135,7 +176,7 @@
     const place = cluster.display_collection;
     const tongue = cluster.display_language;
     const when = cluster.display_date;
-    return `<article class="bowl-card"><a href="#/reading/${encodeURIComponent(id)}">
+    return `<article class="bowl-card"><a href="#/explore/${encodeURIComponent(id)}">
       <div class="bowl-card-mark">${mark(cluster)}</div>
       <div class="bowl-card-body">
         <h3>${titleMarkup(cluster)}</h3>
@@ -181,13 +222,13 @@
     const label = (BROWSE.find(b => b[0] === group) || [group, group])[1];
     const rows = facetCounts(group);
     view.innerHTML = `<div class="reading-head">
-        <a class="entry-back" href="#/reading">← Bowls worth reading</a>
-        <h1 id="reading-title">${esc(label)}</h1>
+        <a class="entry-back" href="#/explore">← Bowls worth reading</a>
+        <h1 id="explore-title">${esc(label)}</h1>
         <p class="standfirst">${rows.length.toLocaleString()} distinct values across
           ${new Set(rows.flatMap(r => r.ids)).size.toLocaleString()} bowls.</p>
       </div>
       <ul class="facet-list">${rows.slice(0, 300).map(r => `<li>
-        <a href="#/reading?${group}=${encodeURIComponent(r.value)}">
+        <a href="#/explore?${group}=${encodeURIComponent(r.value)}">
           <span>${esc(r.value)}</span><em>${r.count}</em></a></li>`).join("")}</ul>
       ${rows.length > 300 ? `<p class="entry-note">and ${rows.length - 300} more</p>` : ""}`;
   }
@@ -195,15 +236,15 @@
   function renderPublications(view) {
     const rows = data.publications;
     view.innerHTML = `<div class="reading-head">
-        <a class="entry-back" href="#/reading">← Bowls worth reading</a>
-        <h1 id="reading-title">Bowls by publication</h1>
+        <a class="entry-back" href="#/explore">← Bowls worth reading</a>
+        <h1 id="explore-title">Bowls by publication</h1>
         <p class="standfirst">Which edition publishes which bowl — the question the publication
           registry was built to answer. ${rows.filter(r => r.resolution === "resolved").length}
           of ${rows.length} designations resolve to a work in the library.</p>
       </div>
       <ul class="fact-list">${rows.map(r => {
         const source = r.source_id ? data.sourceById[r.source_id] : null;
-        return `<li><span><a href="#/reading?publication=${encodeURIComponent(r.publication_key)}">${esc(r.publication_key)}</a>
+        return `<li><span><a href="#/explore?publication=${encodeURIComponent(r.publication_key)}">${esc(r.publication_key)}</a>
           ${source ? `<small>${esc(source.title || "")}</small>` : `<em class="unresolved">${esc(r.resolution)}</em>`}</span>
           <cite>${r.objects} bowl${r.objects === 1 ? "" : "s"}</cite></li>`;
       }).join("")}</ul>`;
@@ -232,9 +273,13 @@
       heading = `“${term}”`; note = `${pool.length.toLocaleString()} bowls match.`;
     }
     const filtered = Boolean(term || facetValue || publication);
+    /* At equal score, a bowl that can say what it does comes first: ties used to
+       fall to the alphabet, which parked six blank Isbell cards near the top. */
+    const described = c => (summarise(c) ? 1 : 0);
     const readable = pool
       .filter(c => filtered || c.reading_score >= 4)
       .sort((a, b) => b.reading_score - a.reading_score ||
+        described(b) - described(a) ||
         a.display_name.localeCompare(b.display_name));
     const thin = data.identity_clusters.length - readable.length;
     const m = data.manifest;
@@ -247,13 +292,16 @@
         publicationIdentities.add(ownerOf(objectId));
       });
     });
-    const readableTexts = data.texts.filter(row => row.content_status === "included");
+    // Card lines are counted with the descriptions, not with the texts: the
+    // sentence below is about how much of the corpus a visitor can read.
+    const readableTexts = data.texts.filter(row => row.content_status === "included"
+      && row.editor !== CARD_LINE_EDITOR);
     const readableTranslations = readableTexts.filter(row => row.text_type === "translation").length;
     const readableSummaries = readableTexts.filter(row => row.text_type === "summary").length;
     view.innerHTML = `<div class="reading-head">
-        ${filtered ? `<a class="entry-back" href="#/reading">← Bowls worth reading</a>` :
+        ${filtered ? `<a class="entry-back" href="#/explore">← Bowls worth reading</a>` :
           `<span class="eyebrow">Late antique Mesopotamia, roughly 500–700 CE</span>`}
-        <h1 id="reading-title">${esc(heading)}</h1>
+        <h1 id="explore-title">${esc(heading)}</h1>
         ${filtered ? "" : `<p class="standfirst">Ordinary clay vessels, inscribed in a spiral and buried upside
           down beneath the floors of houses in Sasanian Mesopotamia to keep something out.
           This index currently represents <strong>${data.identity_clusters.length.toLocaleString()}</strong>
@@ -278,17 +326,17 @@
           aria-label="Search the corpus" autocomplete="off">
       </form>
       ${filtered ? "" : `<nav class="browse-strip" aria-label="Browse by">
-        ${BROWSE.map(([g, l]) => `<a href="#/reading/browse/${g}">${esc(l)}</a>`).join("")}
-        <a href="#/reading/publications">By publication</a></nav>`}
+        ${BROWSE.map(([g, l]) => `<a href="#/explore/browse/${g}">${esc(l)}</a>`).join("")}
+        <a href="#/explore/publications">By publication</a></nav>`}
       <div class="bowl-grid">${readable.map(card).join("")}</div>
       ${readable.length ? "" : `<p class="thin-note">Nothing matches. Try fewer words.</p>`}
-      ${filtered ? "" : `<p class="thin-note"><a href="#/explore">${thin.toLocaleString()} further records</a>
+      ${filtered ? "" : `<p class="thin-note"><a href="#/search">${thin.toLocaleString()} further records</a>
         hold little beyond an identifier and a source. They are in the research explorer.</p>`}`;
     const form = view.querySelector("#reading-search-form");
     if (form) form.addEventListener("submit", event => {
       event.preventDefault();
       const value = view.querySelector("#reading-search").value.trim();
-      location.hash = value ? `#/reading?q=${encodeURIComponent(value)}` : "#/reading";
+      location.hash = value ? `#/explore?q=${encodeURIComponent(value)}` : "#/explore";
     });
   }
 
@@ -366,8 +414,11 @@
     if (!cluster) { view.innerHTML = `<p class="dossier-loading">No such record.</p>`; return; }
     const id = cluster.identity_id;
     const texts = data.textsBy[id] || [];
-    const readable = texts.filter(t => t.content_status === "included");
-    const withheld = texts.filter(t => t.content_status !== "included");
+    // The card line is our own description, not a text of the bowl; it leads the
+    // page as the standfirst and must not appear among its editions below.
+    const bowlTexts = texts.filter(t => t.editor !== CARD_LINE_EDITOR);
+    const readable = bowlTexts.filter(t => t.content_status === "included");
+    const withheld = bowlTexts.filter(t => t.content_status !== "included");
     const editions = data.editionsBy[id] || [];
     const rawLabels = cluster.members.map(m => (data.objectById[m] || {}).label).filter(Boolean);
     const identifiers = data.identifiersBy[id] || [];
@@ -381,7 +432,7 @@
       <header class="entry-head">
         <div class="entry-mark">${mark(cluster)}</div>
         <div>
-          <h1 id="reading-title">${titleMarkup(cluster)}</h1>
+          <h1 id="explore-title">${titleMarkup(cluster)}</h1>
           ${overview ? `<p class="entry-standfirst">${esc(overview)}</p>` : ""}
           <p class="entry-meta">${[cluster.display_date, cluster.display_language, cluster.display_collection]
             .filter(Boolean).map(esc).join(" · ")}</p>
@@ -402,12 +453,6 @@
           <cite>${t.access_url ? `<a href="${esc(t.access_url)}" rel="noreferrer">${esc(t.access_citation || "edition")}</a>`
             : esc(t.access_citation || "edition")}${t.access_locator ? " · " + esc(t.access_locator) : ""}</cite></li>`).join("")}</ul>
       </section>` : ""}
-
-      ${factList(id, "client", "People and purpose — who it names")}
-      ${factList(id, "practitioner", "People and purpose — maker or hand, as reported")}
-      ${factList(id, "target", "People and purpose — what it acts against")}
-      ${factList(id, "ritual", "People and purpose — what it does")}
-      ${factList(id, "biblical_intertexts", "People and purpose — scripture it quotes")}
 
       ${cluster.display_date === "Multiple proposed dates" ? factList(id, "dating", "Proposed dates") : ""}
       ${factList(id, "material", "The bowl — material")}
@@ -437,13 +482,18 @@
       </section>
 
       <details class="entry-apparatus"><summary>Research details</summary>
+        ${factList(id, "client", "Who it names")}
+        ${factList(id, "practitioner", "Maker or hand, as reported")}
+        ${factList(id, "target", "What it acts against")}
+        ${factList(id, "ritual", "What it does")}
+        ${factList(id, "biblical_intertexts", "Scripture it quotes")}
         <dl>
           <dt>Identity</dt><dd><code>${esc(cluster.identity_id)}</code>
             · ${esc(cluster.record_status)} · ${cluster.member_count} linked record(s)</dd>
           <dt>Evidence</dt><dd>${cluster.source_count} source(s), ${cluster.appearance_count} appearance(s)</dd>
           <dt>Coverage</dt><dd>${cluster.completeness_score}/10 core · ${cluster.content_completeness}/13 content</dd>
         </dl>
-        <p><a href="#/explore">Open the research explorer</a> for the full claim-by-claim evidence chain.</p>
+        <p><a href="#/search">Open the research explorer</a> for the full claim-by-claim evidence chain.</p>
       </details>
     </article>`;
   }
@@ -487,7 +537,7 @@
     const people = data.contributors;
     view.innerHTML = `<div class="reading-head">
         <span class="eyebrow">1853 to 2024</span>
-        <h1 id="reading-title">The literature</h1>
+        <h1 id="explore-title">Scholarship</h1>
         <p class="standfirst">Every work this index draws on: <strong>${works.length}</strong>
           pieces of scholarship, separate from the ${(data.sources.length - works.length).toLocaleString()}
           museum, auction and dealer records that are sources but not scholarship.
@@ -525,7 +575,7 @@
   }
 
   async function render() {
-    const view = document.querySelector("#reading-view");
+    const view = document.querySelector("#explore-view");
     if (!view) return;
     if (!data.loaded) view.innerHTML = `<p class="dossier-loading">Reading the corpus…</p>`;
     try {
@@ -535,10 +585,10 @@
       return;
     }
     const hash = location.hash;
-    const browse = hash.match(/^#\/reading\/browse\/([a-z_]+)/);
-    const object = hash.match(/^#\/reading\/(IDENT-[^?]+)/);
+    const browse = hash.match(/^#\/explore\/browse\/([a-z_]+)/);
+    const object = hash.match(/^#\/explore\/(IDENT-[^?]+)/);
     if (hash.startsWith("#/scholarship")) renderScholarship(view);
-    else if (hash.startsWith("#/reading/publications")) renderPublications(view);
+    else if (hash.startsWith("#/explore/publications")) renderPublications(view);
     else if (browse) renderBrowse(view, browse[1]);
     else if (object) renderObject(view, decodeURIComponent(object[1]));
     else renderIndex(view, hash.split("?")[1] || "");

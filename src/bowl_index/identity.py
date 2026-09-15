@@ -46,6 +46,11 @@ CONTENT_COVERAGE = {
         "attributed_author", "handwriting_attribution", "scribal_attribution",
         "handwriting_group",
     },
+    # A coverage group, not a display ordering. `installation_instruction` is
+    # genuinely ritual information and belongs here, but it is not what a card
+    # should lead with: reading.js picks the card line by an explicit field
+    # priority rather than by scanning this set, after a shortest-value rule put
+    # "Exterior directs placement..." at the top of the reading room.
     "ritual": {
         "text_purpose", "text_function", "formula_genre", "named_demon", "named_angels", "text_tradition",
         "installation_instruction",
@@ -77,9 +82,20 @@ CORE_ORDER = (
 # What a reader, rather than a curator, can actually engage with. Weighted so a
 # published text outranks a filled-in measurement: 736 of 1,322 identities score
 # zero here, and completeness ordering cannot tell them from the readable ones.
+#
+# `has_image` is deliberately absent. It scored 2 until 2026-09-14, but
+# `Projection._media` emits only rights-approved media and every one of the 325
+# `media_rights_reviews` rows is still `needs_review` — so the reader projection
+# carries no media at all and the card always falls back to the drawn spiral.
+# The weight was paying two points, on 326 of 1,652 identities, for a picture the
+# page cannot display. Restore it when RIGHTS-002 clears images for reuse.
+#
+# `has_client` and `has_ritual` carry 2 because they are what the one-line
+# description on a card is built from: a bowl with neither cannot say what it
+# does or whom it names, however well measured it is.
 READING_WEIGHTS = {
-    "public_text": 3, "has_image": 2, "has_translation": 2,
-    "has_client": 1, "has_ritual": 1, "has_biblical_intertexts": 1,
+    "public_text": 5, "has_translation": 2,
+    "has_client": 2, "has_ritual": 2, "has_biblical_intertexts": 1,
     "has_visual": 1, "has_text_form": 1, "has_practitioner": 1,
 }
 

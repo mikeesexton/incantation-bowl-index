@@ -39,7 +39,7 @@ function controller({reduced = false, response} = {}) {
 test('HTTP failure leaves a browse link and a working retry action', async () => {
   const {intro, node} = controller();
   await intro.render();
-  assert.match(node('#intro-data-status').innerHTML, /href="#\/explore"/);
+  assert.match(node('#intro-data-status').innerHTML, /href="#\/search"/);
   assert.match(node('#intro-chart').textContent, /unavailable/);
   assert.equal(typeof node('#intro-retry').listeners.click, 'function');
   await node('#intro-retry').listeners.click();

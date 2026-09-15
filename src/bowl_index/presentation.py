@@ -70,6 +70,21 @@ def display_name(label, identifiers=()):
         if publication and number:
             return f"{publication} · Bowl {number}"
 
+    # A descriptive nickname is not a catalogue title. Where the label carries no
+    # number at all but the collection has given the bowl one, and that
+    # designation is built on a name the label already uses, prefer the
+    # designation: "Davidovitz popularity-and-success bowl" is how an editor
+    # referred to it in prose, "Davidovitz 41" is what the collection calls it.
+    # Both conditions are load-bearing. Preferring a designation generally
+    # rewrites 614 names and makes many worse ("Penn B2958: Hebrew Bowl" would
+    # become "B2958"); requiring a digit-free label alone still catches
+    # "De Menil", whose designation "X 831" says less than the label does.
+    designation = (ids.get("collection designation") or [None])[0]
+    if cleaned and designation and not re.search(r"\d", cleaned):
+        stem = re.sub(r"[\d\s]+$", "", designation).strip()
+        if stem and re.search(r"\d", designation) and stem.casefold() in cleaned.casefold():
+            return designation
+
     if cleaned and not cleaned.casefold().startswith(("untitled", "unknown")):
         return cleaned
 

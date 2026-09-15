@@ -19,7 +19,7 @@ are researcher-supplied chronology with citations pending. No new research or
 media-rights decisions were made for this interface.
 
 The five dark, reading-room-toned chapters introduce the objects, rediscovery,
-indexed publications by decade, documentation coverage, and links into Explore.
+indexed publications by decade, documentation coverage, and links into Search.
 Primary headings and display numbers use the locally bundled Frank Ruhl Libre;
 interface text retains the system sans-serif stack. The bundled font is licensed
 under the SIL Open Font License in `web/fonts/frank-ruhl-libre-OFL.txt`.
@@ -48,11 +48,11 @@ The introductory measures deliberately describe recorded evidence:
   includes reported places and collection histories, not just excavated contexts.
 - `image`: an image record, independently of display/reuse permission.
 
-`#/explore?present=text_edition`, `?present=provenance`, and `?present=image`
+`#/search?present=text_edition`, `?present=provenance`, and `?present=image`
 open the matching identities. The new Recorded field control composes with search
-and the existing filters. Explore stores its filters, sort, and page in the hash
+and the existing filters. Search stores its filters, sort, and page in the hash
 so a copied URL, refresh, and back navigation preserve the selection. A plain
-`#/explore` opens the full corpus. The existing `coverage=text_edition` missing
+`#/search` opens the full corpus. The existing `coverage=text_edition` missing
 filter still means **no stored transcription-type record**; it intentionally
 remains narrower than the introduction's edition-reference measure.
 
@@ -67,10 +67,15 @@ the existing Refresh control reloads data only.
 
 ## Views
 
-- **Explore** searches labels, identity IDs, accessions, publication sigla, claims, descriptions, clients, source titles, and private text content. Filters cover record status, authenticity, object type, missing fields, and substantive claim conflicts. Compatible wording and metadata facets remain audited but no longer trigger the conflict filter.
+The tab labels and their routes were rotated on 2026-09-14: the reading room
+(`#/explore`) is labelled **Explore**, and the research explorer (`#/search`) is
+labelled **Search**.
+
+- **Search** (`#/search`) searches labels, identity IDs, accessions, publication sigla, claims, descriptions, clients, source titles, and private text content. Filters cover record status, authenticity, object type, missing fields, and substantive claim conflicts. Compatible wording and metadata facets remain audited but no longer trigger the conflict filter.
+- **Explore** (`#/explore`) is the reading room: the bowls worth reading, ranked, each with a one-line description of what its text does. **Scholarship** (`#/scholarship`) renders into the same panel.
 - **Identity dossier** shows every member record, identifier, source appearance, claim, text, event, and media reference. Restricted text is visible because this is the private local corpus; its rights status remains prominent.
-- **Enrichment** presents mutually exclusive next-action queues and field-coverage totals. Selecting a queue returns to a filtered identity list.
-- **Concordance** compares candidate identities side by side, displays all matching evidence, and records a reversible same-object, different-object, or insufficient-evidence decision.
+- **Enrichment** (`#/queues`) presents mutually exclusive next-action queues and field-coverage totals. Selecting a queue returns to a filtered identity list.
+- **Concordance** (`#/reviews`) has no tab of its own; reach it from Enrichment's "Open workbench" or by typing the route. It compares candidate identities side by side, displays all matching evidence, and records a reversible same-object, different-object, or insufficient-evidence decision.
 
 ## Review safety
 

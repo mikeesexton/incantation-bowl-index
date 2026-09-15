@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-09-13T20:58:17+00:00`
+Generated: `2026-09-15T10:28:18+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -12,7 +12,7 @@ The original source claims remain unchanged. This review classifies apparent dif
 | Scholarly Disagreement | 2 |
 | Source Inconsistency | 2 |
 | Unresolved | 9 |
-| Requires current evidence review | 543 |
+| Requires current evidence review | 545 |
 
 ## Revalidation queue
 
@@ -47,8 +47,9 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-0812604AAFBD — British Museum 91767: incantation bowl | language | inscription_language: Aramaic [SRC-72D809FB4249; text 040A; section pp. 43–102]; inscription_language: Aramaic with Hebrew biblical passages [SRC-C0144EA934D5; object W_1886-0109-2]; inscription_language: Jewish Babylonian Aramaic [SRC-1A922C3F041F; bowl BM 91767]; inscription_language: Jewish Babylonian Aramaic [SRC-73C44B143A9D; p. 155, distribution table, CAMIB 40] |
 | IDENT-0812604AAFBD — British Museum 91767: incantation bowl | provenance | findspot: Excavated/Findspot: Iraq, South [SRC-3D4B57D27A24; Related objects: 1886-0109-2]; findspot: Iraq, South [SRC-C0144EA934D5; object W_1886-0109-2]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1886-0109-2] |
 | IDENT-0901A8E5961F — Vorderasiatisches Museum VA.Bab.2829 + VA.unnumberedD (catalogue 140) | publication | publication_status: Catalogued in a complete researcher-inspected edition. [SRC-DA708912C2D3; Catalogue entry 140 (VA.Bab.2829 + VA.unnumberedD), p. 157]; publication_status: Receives a selected full edition as text V. [SRC-DA708912C2D3; Text V, p. 30] |
-| IDENT-09B23B2CE047 — Hilprecht Collection HS 3003 (MRLA 8, 2) | language | inscription_language: Jewish Babylonian Aramaic [SRC-73C44B143A9D; p. 158, distribution table, HS 3003]; inscription_language: Jewish Babylonian Aramaic [SRC-A90AB34CA3FE; p. 134, note 546]; inscription_language: Jewish Babylonian Aramaic and/or Hebrew [SRC-8A145FAA2EBB; Section heading and entry 2, p. 14] |
-| IDENT-09B23B2CE047 — Hilprecht Collection HS 3003 (MRLA 8, 2) | location | current_or_reported_collection: Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena [SRC-8A145FAA2EBB; Entry 2, p. 14]; current_or_reported_collection: Private collection, Berlin [SRC-A90AB34CA3FE; p. 134, note 546]; current_or_reported_collection: Frau Professor Hilprecht Collection, Jena [SRC-73C44B143A9D; p. 158, distribution table, HS 3003] |
+| IDENT-09B23B2CE047 — Waller 2022: HS 3003 | language | inscription_language: Jewish Babylonian Aramaic [SRC-73C44B143A9D; p. 158, distribution table, HS 3003]; inscription_language: Jewish Babylonian Aramaic [SRC-A90AB34CA3FE; p. 134, note 546]; inscription_language: Jewish Babylonian Aramaic and/or Hebrew [SRC-8A145FAA2EBB; Section heading and entry 2, p. 14] |
+| IDENT-09B23B2CE047 — Waller 2022: HS 3003 | location | current_or_reported_collection: Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena [SRC-8A145FAA2EBB; Entry 2, p. 14]; current_or_reported_collection: Private collection, Berlin [SRC-A90AB34CA3FE; p. 134, note 546]; current_or_reported_collection: Frau Professor Hilprecht Collection, Jena [SRC-73C44B143A9D; p. 158, distribution table, HS 3003] |
+| IDENT-09C22FFFD031 — CBS 2922 | ritual | formula_genre: Divorce document [SRC-A90AB34CA3FE; p. 102, table 6, NFP 1]; text_purpose: A writ of divorce dismissing Lilith, Lilith of the Desert, the hag and the ghul from a house and its children, under the ban sent by Joshua bar Perahia [SRC-943673B56FB8; text 17 translation, printed pp. 190-191; PDF pp. 196-197] |
 | IDENT-0A4638EC11A0 — British Museum 91742: incantation bowl | dating | dating: 6thC–8thC [SRC-4CF084A3C54D; object W_1886-0109-5]; dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1886-0109-5]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1886-0109-5] |
 | IDENT-0A4638EC11A0 — British Museum 91742: incantation bowl | language | inscription_language: Aramaic with Hebrew phrases [SRC-4CF084A3C54D; object W_1886-0109-5]; inscription_language: Aramaic [SRC-72D809FB4249; text 019A; section pp. 43–102] |
 | IDENT-0A4638EC11A0 — British Museum 91742: incantation bowl | provenance | findspot: Iraq [SRC-4CF084A3C54D; object W_1886-0109-5]; findspot: Excavated/Findspot: Iraq [SRC-3D4B57D27A24; Related objects: 1886-0109-5]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1886-0109-5] |
@@ -246,6 +247,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-57E8D820C43C — British Museum 131668: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1953-1010-16]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1953-1010-16] |
 | IDENT-5A68C5918142 — British Museum 108821: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1914-0214-47]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1914-0214-47] |
 | IDENT-5A68C5918142 — British Museum 108821: incantation bowl | provenance | findspot: Found/Acquired: Khorsabad [SRC-3D4B57D27A24; Related objects: 1914-0214-47]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1914-0214-47] |
+| IDENT-5B1343517775 — CBS 2945 | ritual | formula_genre: General charm [SRC-A90AB34CA3FE; p. 102, table 6, NFP 9 and note 416]; text_purpose: A counter-spell spoken in armour of iron, laying the spell of the Sea and of the monster Leviathan on fiends and adversaries who harm the household [SRC-943673B56FB8; text 2 translation, printed pp. 121-122; PDF pp. 127-128] |
 | IDENT-5BA864A5AA3B — Waller 2022: CAMIB 72 | language | inscription_language: Jewish Babylonian Aramaic [SRC-73C44B143A9D; p. 155, distribution table, CAMIB 72]; inscription_language: Aramaic [SRC-72D809FB4249; text 072A; section pp. 43–102] |
 | IDENT-5C8DEB102F6E — Vorderasiatisches Museum VA.2428 (catalogue 24) | publication | publication_status: Catalogued in a complete researcher-inspected edition. [SRC-DA708912C2D3; Catalogue entry 24 (VA.2428), p. 87]; publication_status: Receives a selected full edition as text IV. [SRC-DA708912C2D3; Text IV, p. 27] |
 | IDENT-5ECA91207942 — Hilprecht Collection HS 3014 | location | current_location: Frau Professor Hilprecht Collection, Friedrich Schiller University Jena [SRC-3069F3084A04; dc00001099]; current_or_reported_collection: Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena [SRC-8A145FAA2EBB; Entry 44, p. 214] |

@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "4a7c6ca8d9a99186d0af2c20a56770cb5729905d2159973e8efecc333096da2a",
+  "corpus_digest": "f8fac2d62654505100f8127991c0c0f232d0ba52d1a173b69323491d216e20ff",
   "migrations": 14,
-  "note": "Resolved all remaining exact-identifier dedupe pairs (51) and attached the final VMBA bowl; 64 of 64 now carry VMBA claims and the exact-identifier queue is empty",
-  "recorded_at": "2026-09-13T20:58:23+00:00",
+  "note": "Console tabs renamed and reordered; 68 authored reading-room card lines plus client and purpose claims",
+  "recorded_at": "2026-09-15T10:30:45+00:00",
   "recorded_by": "Claude",
   "schema_version": "014_source_corrections",
   "tables": {
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "9bbf0c3868ec1c1298b892164d95fb2504372562b64ce68f104999bea644eb96",
-      "rows": 7101
+      "digest": "c89c6d6e4fc0a4081f2adb4d0dc2f983f1a23cb44a5836d1b9ae4e9130f97694",
+      "rows": 7168
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -127,12 +127,12 @@
       "rows": 35
     },
     "text_publication_reviews": {
-      "digest": "4da8ab121f5185ce05a9d2f3c41b7f5329ff32848408feaea4a6c2647c754d5e",
-      "rows": 90
+      "digest": "f36a396cf906ffefc2668a511e57bf5526c4537dcc8e82604f9dffb3fcd31d06",
+      "rows": 158
     },
     "texts": {
-      "digest": "105c58524566c1e0e5d44380780b0e96c2d1e323b877966b97c3fbdad5258f87",
-      "rows": 198
+      "digest": "af388d2d7c73da687282d6b79b2b00373da70b54c294598dddb8981897ee6330",
+      "rows": 266
     }
   }
 }

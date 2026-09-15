@@ -25,6 +25,58 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-15 — Claude — Rename the console tabs and write the reading room a description per bowl
+
+**Claimed:** none — unregistered reading-room work, at the researcher's request
+**Corpus:** changed (68 own_work card-line summaries, 67 client and purpose claims) — state digest `f8fac2d62654`
+**Tests:** 233 Python and 21 Node tests passed; every tab, the workbench route and two bowl pages checked in the browser
+
+- Renamed and reordered the tabs to Home · Explore · Search · Scholarship · Enrichment, and
+  rotated the routes with the labels: the reading room is now `#/explore` and the research
+  explorer `#/search`. Do the `explore`→`search` pass before `reading`→`explore`; `app.js`
+  derives the panel id as `` `${route}-view` ``, so a single find-and-replace collides and
+  points two tabs at one panel. Dropped the Concordance tab only — `#/reviews` and
+  Enrichment's "Open workbench" still reach the workbench.
+- The reading room led with "Exterior directs placement 'for the inner room of the hall'"
+  because `summarise` took the **shortest** value in the `ritual` group and
+  `installation_instruction` sits in it. Replaced that with an explicit field priority.
+  Left the field in `ritual`: it is genuinely ritual information, there is exactly one such
+  claim in the corpus, and no object depends on it for `has_ritual`, so moving it would have
+  bought a fourteenth coverage group and nothing else. The defect was the display rule.
+- Dropped `has_image` from `READING_WEIGHTS`. It scored 2 while `Projection._media` emits
+  only rights-approved media and all 325 `media_rights_reviews` rows are still
+  `needs_review` — two points, on 326 of 1,652 identities, for a picture the page cannot
+  draw. Restore it when RIGHTS-002 lands. With client and purpose weighted at 2 the tab went
+  from 61 bowls to 68, and the six blank Isbell cards left the top.
+- Wrote one description per bowl for all 68, read from each bowl's stored translation, in a
+  standard shape: what the text does, naming its most distinctive element, then the client.
+  Stored as `own_work` summary rows marked `editor='Incantation Bowl Index card line'` so
+  they never render as the bowl's own text, and approved through the publication ledger.
+  Mike read all 68 before the decision was recorded.
+- Added 67 client and `text_purpose` claims, each cited to the translation it was read from.
+  **Did not** recast Komiš daughter of Mahlafta from practitioner to client on Montgomery 17:
+  that is Kedar 2019's female-practitioner argument, and overturning it would be adjudicating
+  a scholarly claim. Appended a client claim from Montgomery's own translation instead, so
+  both readings now stand side by side. The same restraint applies to the other seven
+  `attributed_author` rows Kedar supplies.
+- Moved the five cited claim lists on a bowl page into the collapsed Research details. The
+  authored line and the translation now lead; the evidence is one click away.
+- Applying the publication batch ran `sync_public_ok`, which revoked three older
+  "Incantation Bowl Index summary" approvals — Davidovitz 41, Moussaieff M163 and Schøyen
+  MS 2054/124. They were `public_ok=1` in the column without a current fingerprinted
+  approval. Nothing changed on screen: `Projection.approved_texts` reads the ledger, not the
+  column, so those three were already withheld from the reader and the export; only the stale
+  column caught up. **Worth a decision next session:** those three summaries were evidently
+  meant to be public and now are not.
+- Two new rows in the conflict revalidation queue, both expected: on Montgomery 17 and
+  Montgomery 2 the fuller `text_purpose` now sits beside Kedar's terser `formula_genre`
+  ("Divorce document", "General charm"). They are compatible rather than contradictory and
+  want marking as such.
+- Next session could: differentiate the two identical BM 127395/127396 lines and the two
+  identical Semamit historiola lines if that matters more than accuracy; decide the three
+  revoked summaries; and retarget the home page's "Browse the database" buttons, which still
+  read "Explore…" while landing on Search.
+
 ## 2026-09-14 — Claude — Track the bowlam.com access layer
 
 **Claimed:** ACCESS-008, ACCESS-009 (registering only — neither is started)

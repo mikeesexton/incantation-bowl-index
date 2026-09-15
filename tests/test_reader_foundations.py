@@ -51,6 +51,24 @@ class DatePresentationTests(unittest.TestCase):
         different = equivalent + [{'field':'dating', 'value_text':'500–700 CE'}]
         self.assertEqual(display_date(different), 'Multiple proposed dates')
 
+    def test_a_nickname_yields_to_the_collection_number(self):
+        self.assertEqual(
+            display_name('Davidovitz popularity-and-success bowl',
+                         ['collection designation: Davidovitz 41',
+                          'publication object key: Ford 2023 popularity bowl']),
+            'Davidovitz 41')
+
+    def test_an_unrelated_designation_does_not_displace_the_label(self):
+        # "X 831" says less than "De Menil" does, so the designation only wins
+        # when it is built on a name the label already carries.
+        self.assertEqual(
+            display_name('De Menil', ['collection designation: X 831']), 'De Menil')
+
+    def test_a_label_that_already_carries_a_number_is_left_alone(self):
+        self.assertEqual(
+            display_name('Davidovitz 2', ['collection designation: Davidovitz 2']),
+            'Davidovitz 2')
+
     def test_periods_are_not_dates(self):
         self.assertEqual(display_date([{'field':'period', 'value_text':'Sasanian'}]),
                          'Date not recorded')
@@ -61,6 +79,16 @@ class ReadingScoreTests(unittest.TestCase):
         text_only = {'public_text_count': 1}
         flags = {'has_client': 1, 'has_ritual': 1}
         self.assertGreater(reading_score(text_only), reading_score(flags))
+    def test_an_unpublishable_image_earns_nothing(self):
+        # The reader projection emits only rights-approved media, and none is
+        # approved yet, so an image on the raw record is invisible to the page.
+        self.assertEqual(reading_score({'has_image': 1}), 0)
+
+    def test_a_describable_bowl_outranks_a_well_measured_one(self):
+        describable = {'has_client': 1, 'has_ritual': 1}
+        measured = {'has_text_form': 1, 'has_visual': 1}
+        self.assertGreater(reading_score(describable), reading_score(measured))
+
     def test_a_bare_record_scores_zero(self):
         self.assertEqual(reading_score({'label': 'stub'}), 0)
     def test_missing_keys_are_treated_as_absent(self):

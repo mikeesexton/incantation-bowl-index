@@ -1,5 +1,5 @@
 const state = {
-  page: 1, pageSize: 40, total: 0, stats: null, csrf: "", route: "explore",
+  page: 1, pageSize: 40, total: 0, stats: null, csrf: "", route: "home",
   queueAction: "", currentReview: null, identityRequest: 0,
 };
 const $ = (selector, root = document) => root.querySelector(selector);
@@ -107,7 +107,7 @@ function identityRow(item) {
     </div></div></td>
     <td><div class="context-main">${escapeHtml(language)}</div>${scripts.length ? `<div class="context-sub">Script: ${escapeHtml(scripts[0])}</div>` : ""}</td>
     <td><div class="context-main">${escapeHtml(date)}</div></td>
-    <td class="explore-cell"><a href="#/reading/${encodeURIComponent(item.identity_id)}">View bowl <span aria-hidden="true">→</span></a>
+    <td class="explore-cell"><a href="#/explore/${encodeURIComponent(item.identity_id)}">View bowl <span aria-hidden="true">→</span></a>
       <div class="availability-labels">${flags.map(flag => `<span>${escapeHtml(flag)}</span>`).join("")}</div>
       <div class="source-count">${sourceCount} source${sourceCount === 1 ? "" : "s"}</div></td>
   </tr>`;
@@ -120,7 +120,7 @@ function rememberCataloguePosition() {
 
 function bindReaderLinks(root = document) {
   $$(`[data-reader-identity]`, root).forEach(node => {
-    const open = () => { rememberCataloguePosition(); location.hash = `#/reading/${encodeURIComponent(node.dataset.readerIdentity)}`; };
+    const open = () => { rememberCataloguePosition(); location.hash = `#/explore/${encodeURIComponent(node.dataset.readerIdentity)}`; };
     node.addEventListener("click", event => { if (!event.target.closest("a,button")) open(); else rememberCataloguePosition(); });
     node.addEventListener("keydown", event => {
       if (event.key === "Enter" || event.key === " ") { event.preventDefault(); open(); }
@@ -131,7 +131,7 @@ function bindReaderLinks(root = document) {
 async function loadIdentities() {
   const request = ++state.identityRequest;
   const params = queryParams();
-  if (state.route === "explore") history.replaceState(null, "", `#/explore?${params}`);
+  if (state.route === "search") history.replaceState(null, "", `#/search?${params}`);
   renderActiveFilters(params);
   $("#identity-rows").innerHTML = `<tr><td colspan="4" class="dossier-loading">Reading identity index…</td></tr>`;
   try {
@@ -321,19 +321,19 @@ function renderQueues() {
   $$(`[data-queue]`, $("#queues-view")).forEach(button => button.addEventListener("click", () => {
     state.queueAction = button.dataset.queue;
     state.page = 1;
-    location.hash = `#/explore?${queryParams()}`;
+    location.hash = `#/search?${queryParams()}`;
   }));
   $("[data-conflicts]", $("#queues-view")).addEventListener("click", () => {
     $(`[name="conflict"]`).value = "yes";
     state.queueAction = "";
     state.page = 1;
-    location.hash = `#/explore?${queryParams()}`;
+    location.hash = `#/search?${queryParams()}`;
   });
   $("[data-multirecord]", $("#queues-view")).addEventListener("click", () => {
     $("#sort").value = "sources";
     state.queueAction = "";
     state.page = 1;
-    location.hash = `#/explore?${queryParams()}`;
+    location.hash = `#/search?${queryParams()}`;
   });
 }
 
@@ -461,20 +461,20 @@ function renderReviews() {
 
 function activateRoute() {
   const previous = state.route;
-  const route = (location.hash.match(/^#\/(home|reading|scholarship|explore|queues|reviews)(?:[/?]|$)/) || [])[1] || "home";
+  const route = (location.hash.match(/^#\/(home|explore|scholarship|search|queues|reviews)(?:[/?]|$)/) || [])[1] || "home";
   state.route = route;
   document.body.classList.toggle("is-home", route === "home");
-  const viewId = route === "scholarship" ? "reading-view" : `${route}-view`;
+  const viewId = route === "scholarship" ? "explore-view" : `${route}-view`;
   $$(".view").forEach(view => view.classList.toggle("is-active", view.id === viewId));
   $$(".view-tab").forEach(tab => {
     tab.classList.toggle("is-active", tab.dataset.route === route);
     if (tab.dataset.route === route) tab.setAttribute("aria-current", "page");
     else tab.removeAttribute("aria-current");
   });
-  $(".sidebar").classList.toggle("is-hidden", route !== "explore");
+  $(".sidebar").classList.toggle("is-hidden", route !== "search");
   if (route === "home") window.Introduction?.render();
-  if ((route === "reading" || route === "scholarship") && window.ReadingRoom) window.ReadingRoom.render();
-  if (route === "explore") {
+  if ((route === "explore" || route === "scholarship") && window.ReadingRoom) window.ReadingRoom.render();
+  if (route === "search") {
     const params = new URLSearchParams(location.hash.split("?")[1] || "");
     for (const control of $("#filters").elements) {
       if (!control.name) continue;
@@ -523,7 +523,7 @@ function registerWebMCP() {
       $("#search").value = input?.query || "";
       $(`[name="coverage"]`).value = input?.missingField || "";
       state.page = 1; state.queueAction = "";
-      if (location.hash !== `#/explore?${queryParams()}`) location.hash = `#/explore?${queryParams()}`;
+      if (location.hash !== `#/search?${queryParams()}`) location.hash = `#/search?${queryParams()}`;
       await loadIdentities();
       return {matchingIdentities: state.total, query: $("#search").value};
     },
