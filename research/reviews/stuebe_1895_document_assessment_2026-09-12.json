@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T12:20:00Z",
+  "entries": [
+    {
+      "id": "IBI-DOC-STUEBE1895-20260912",
+      "source_id": "SRC-0B6C0E1133EF",
+      "capture_id": "CAP-4C9D532C9194",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "none",
+      "object_extraction": "complete",
+      "document_sha256": "ef983942f7fdc4c57af6ceb3c3b62c3444e75fd292cd241a2882f8d9a6b34650",
+      "extraction_path": "research/enrichment/stuebe_1895_berlin_catalogue_2026-09-12.jsonl",
+      "extraction_sha256": "39b0d556ee72320407286e79f0408c20c5d4f738ff0137859f8674e2a97535ba",
+      "basis": "The PDF preserves all 92 BSB IIIF page images in manifest order, covering the complete xvi plus 64 printed pages. Visual checks covered title matter, catalogue entries and edition pages. All nineteen numbered catalogue items were extracted, retaining seventeen bowls, two inscribed skulls and the two unnamed Pahlavi bowls without false modern concordances. No OCR artifact is certified.",
+      "evidence_path": "research/reviews/stuebe_1895_open_scan_evidence_2026-09-12.json",
+      "evidence_sha256": "811237c5866d17204325e871b79ddf48a2111c440dca23808b49b649c4f5d638"
+    }
+  ]
+}

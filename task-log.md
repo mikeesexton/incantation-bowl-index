@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-17 — Codex — Complete-edition and open-scan ledger tranche
+
+**Claimed:** ACCESS-004, SCHOL-005
+**Corpus:** changed (eleven document assessments; no object assertions) — state digest `f2546cf46aa0`
+**Tests:** 239 Python tests passed; four manifests replayed with zero changes; SQLite integrity check passed
+
+- Added evidence-bound assessments for the five additional 11 September holdings:
+  Levene 2013, Jullien's complete three-page review, the 2018 Berlin catalogue,
+  Saar 2017 and the distinct Naveh-Shaked 1985 first edition.
+- Added complete-scan assessments for Stübe 1895, both Wohlstein articles and
+  three retained Gordon articles. Their document, review and extraction hashes
+  are bound independently; none is labelled OCR without an OCR artifact.
+- Nine of these sources have complete object-level extraction. Jullien and Saar
+  correctly carry none because they do not contain finite bowl catalogues.
+- Deliberately excluded Gordon's AASOR article from the holdings ledger. It was
+  inspected temporarily but not archived when robots permission could not be
+  verified; a temporary hash does not make it a retained document.
+- Ledger coverage is now 22 of 50 source-linked captures: 21 complete documents,
+  one front-matter-only holding, 15 with object-level extraction and 14 with
+  complete extraction. Twenty-eight captures remain explicitly unassessed.
+- No object assertion, identity, claim, rights or publication decision changed.
+- Next: assess the remaining seventeen PDFs beginning with Montgomery, Schwab,
+  Ford and the supplied-article batches, then classify the eleven HTML captures
+  as landing pages, item pages or substantive documents.
+
 ## 2026-09-17 — Codex — September 12 document-ledger rollout
 
 **Claimed:** ACCESS-004, SCHOL-005

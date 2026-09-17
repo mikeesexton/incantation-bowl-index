@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-17T20:20:31+00:00`
+Generated: `2026-09-17T20:26:46+00:00`
 
 ## Portfolio status
 
@@ -35,7 +35,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 48 identities have a translation. The new protected editions are intentionally indexed without copying their text.
 - Release rights are unreviewed: 327 media rows are present, zero have completed rights decisions and zero are approved for reuse; two newly introduced rows still need initial ledger holds.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
-- Acquisition completeness is not yet measured corpus-wide: 50 of 862 sources have linked captures, 39 with PDFs and eleven with only non-PDF captures. The append-only document ledger now assesses 11 sources: ten complete documents and the Naveh-Shaked 1993 front matter correctly marked incomplete; 39 other source-linked captures remain explicitly unassessed. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Stübe 1895, both Wohlstein articles, and three Gordon articles are now held and indexed; Gordon's AASOR article was fully inspected through a public institutional scan but not archived because the project could not verify robots permission.
+- Acquisition completeness is not yet measured corpus-wide: 50 of 862 sources have linked captures, 39 with PDFs and eleven with only non-PDF captures. The append-only document ledger now assesses 22 sources: 21 complete documents and the Naveh-Shaked 1993 front matter correctly marked incomplete; 28 other source-linked captures remain explicitly unassessed. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Stübe 1895, both Wohlstein articles, and three retained Gordon articles are now ledgered as complete; Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.
 - Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run.
 
 ## Access and commercialization layers
@@ -60,7 +60,7 @@ Promotion rules:
 
 These are provisional planning ranges for complete or physically inspected core works, not promises of completeness. Raw file count is never sufficient: language balance, object-level enumeration, scope review, citation coverage and an explicit missing-work register are required at every band. Current strength is bibliographic and structural; the held full-text layer is still early.
 
-Current evidence: **217 scholarship works indexed; 38 with a source-linked held document; 66 with a classified scope; 151 awaiting scope.** The project also has **39 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work. The document ledger currently assesses **11 sources**, including **10 complete documents** and **6 with object-level extraction**.
+Current evidence: **217 scholarship works indexed; 38 with a source-linked held document; 66 with a classified scope; 151 awaiting scope.** The project also has **39 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work. The document ledger currently assesses **22 sources**, including **21 complete documents** and **15 with object-level extraction**.
 
 | Band | Complete or inspected core works | Additional from current holdings | What must also be true |
 |---|---:|---:|---|
@@ -76,9 +76,9 @@ Current evidence: **217 scholarship works indexed; 38 with a source-linked held 
 | Working physical identity hypotheses (all statuses) | 1652 |
 | Source appearances | 2243 |
 | Sources | 862 |
-| Source documents with current assessments | 11 |
-| Source documents assessed complete | 10 |
-| Source documents with object-level extraction | 6 |
+| Source documents with current assessments | 22 |
+| Source documents assessed complete | 21 |
+| Source documents with object-level extraction | 15 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 376 |
 | Triaged claim-field differences | 50/595 |
@@ -187,7 +187,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 ## Current priority order
 
-1. ACCESS-004 / SCHOL-005: extend the hash-bound document ledger beyond the 11 assessed sources to the remaining 39 source-linked captures. Next convert the five additional 11 September volumes and the documented Stübe, Wohlstein and Gordon open-scan batches; keep unreviewed captures explicit rather than inferring completeness from PDF format.
+1. ACCESS-004 / SCHOL-005: extend the hash-bound document ledger beyond the 22 assessed sources to the remaining 28 source-linked captures. Triage the seventeen PDFs beginning with the already-reviewed Montgomery, Schwab, Ford and supplied-article batches, then classify the eleven HTML captures as landing pages, item pages or substantive documents without inferring completeness from MIME type.
 2. ACCESS-002 / OPS-002: define the private rich-text package and complete encrypted local plus off-device backup before transforming the new complete editions. Preserve printed page anchors, ancient-script Unicode, uncertainty markup and links to page images; keep the vault outside Git and public exports.
 3. ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.
 4. DISC-003 / OPS-003: convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically. Continuous scheduling remains gated by backup, alerting and disable switches.
@@ -371,7 +371,7 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed; rights review, factual coverage and release QA remain incomplete.
 - [ ] **ACCESS-004 — Create a document-completeness and transformation ledger** · In progress · Engineering
   - Done when: Each source holding distinguishes citation-only, excerpt, front matter, complete scan, physically inspected work, OCR, corrected rich text and object-level extraction, with dates, hashes and reviewer evidence.
-  - Evidence/status: Migration 015 and `ibi ingest-document-assessment` add an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every assessment binds the retained document, review evidence and any OCR/rich-text or extraction artifact by SHA-256. Eleven sources are now assessed: the four complete 11 September Brill volumes plus seven source holdings from the 12 September researcher-PDF review. Ten are complete; Naveh-Shaked 1993 is correctly limited to front matter. Pognon's thirty bowls have complete object-level extraction, while Layard/Ellis remains partial because the unquantified no. 7 fragment group was not collapsed into one object. No holding is mislabeled OCR or corrected rich text. Acquisition and roadmap reports consume the ledger while leaving the remaining 39 source-linked captures explicit.
+  - Evidence/status: Migration 015 and `ibi ingest-document-assessment` add an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every assessment binds the retained document, review evidence and any OCR/rich-text or extraction artifact by SHA-256. Twenty-two sources are now assessed: 21 complete documents and the Naveh-Shaked 1993 front matter correctly limited as incomplete. The ledger now covers the four priority Brill volumes, the seven-source 12 September researcher-PDF batch, five additional 11 September volumes, Stübe 1895, both Wohlstein articles and three retained Gordon articles. Fifteen sources have hash-bound object-level extraction, fourteen complete and Layard/Ellis partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding. Twenty-eight source-linked captures remain explicit and unassessed.
 - [ ] **ACCESS-005 — Build a rights-chain and licensing register** · Queued · Research owner and qualified rights counsel
   - Done when: Every proposed paid item identifies the rights holder for text, transcription, translation and images; the license records territory, term, permitted display/search/export, security, attribution, royalties, accounting, termination and takedown terms.
   - Evidence/status: The existing rights ledger covers publication decisions for stored texts and media, but it does not yet model contracts, royalty beneficiaries, publisher assignments or commercial territories.
@@ -546,6 +546,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-17:** Extended ACCESS-004 through eleven more already-reviewed holdings: the five additional 11 September volumes, Stübe 1895, both Wohlstein articles and three retained Gordon articles. All eleven are hash-bound complete-document assessments; nine carry complete object-level extraction, while Jullien's review and Saar's thematic monograph correctly carry none. Stübe, Wohlstein and Gordon scans are not labeled OCR because no separate OCR artifact is certified. Gordon's AASOR article remains outside the holdings ledger because it was inspected temporarily but not archived after robots permission could not be verified. Ledger coverage is now 22 of 50 source-linked captures, including 21 complete documents. No object assertion, identity, rights or publication decision changed.
 - **2026-09-17:** Extended ACCESS-004's document ledger through the already-inspected 12 September researcher-PDF batch. Added seven hash-bound source assessments: complete Waller, Hornkohl-Khan, Molin, Layard, Wajsberg and Pognon documents plus the Naveh-Shaked 1993 file correctly classified as front matter rather than a held book. Pognon's thirty-bowl extraction is complete; Layard/Ellis is partial because the unquantified collective fragment group no. 7 was not invented as one object. Wajsberg remains a complete review, not the unheld Juusola monograph. Ledger coverage is 11 of 50 source-linked captures; no object assertion, identity, rights or publication decision changed.
 - **2026-09-17:** Started ACCESS-004's durable document ledger. Migration 015 and `ibi ingest-document-assessment` separate document form and extent, inspection method, text transformation and object-level extraction in immutable supersedable rows, with SHA-256 binding for the retained document, review evidence and every transformed artifact. Converted the four 11 September Brill volumes from interim JSON evidence into the first ledger batch: four complete digitally inspected born-digital documents with extractable text and complete object-level catalogue extraction, explicitly not OCR or corrected rich text. Acquisition and roadmap reports now consume the ledger; the remaining source-linked captures stay visibly unassessed pending evidence-bound review. No object assertion, identity, rights or publication decision changed.
 - **2026-09-14:** Added ACCESS-008 and ACCESS-009 to track the bowlam.com public page and the Cloudflare Access gated scholar preview. Tracked, not scheduled: neither is a handoff-gate requirement and neither is started.

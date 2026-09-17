@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-12T18:20:00Z",
+  "entries": [
+    {
+      "id": "IBI-DOC-WOHLSTEIN1893-20260912",
+      "source_id": "SRC-A12DF738AF6A",
+      "capture_id": "CAP-5F60513AB552",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "none",
+      "object_extraction": "complete",
+      "document_sha256": "9b6363559ec1f34c739938391eb4b03faed1cad578c79d31274e7ac5579ca527",
+      "extraction_path": "research/enrichment/wohlstein_1893_1894_berlin_editions_2026-09-12.jsonl",
+      "extraction_sha256": "e9325d0960a8ae49aeefd07c0aae38a04366833ba6c48c89246b9344a7408be2",
+      "basis": "The full journal-volume scan contains the complete printed pp. 313-340 article; its opening, representative edition pages and end were visually checked. The complete edition of VA 2422 and every exact-VA contextual reference were extracted. No OCR artifact is certified.",
+      "evidence_path": "research/reviews/wohlstein_1893_1894_open_scan_evidence_2026-09-12.json",
+      "evidence_sha256": "df68199d6e3673fca93f0cff0b4a9b00f559ff32539e9c41d0abe10fea82087e"
+    },
+    {
+      "id": "IBI-DOC-WOHLSTEIN1894-20260912",
+      "source_id": "SRC-53202A840D51",
+      "capture_id": "CAP-4C32F88FD318",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "none",
+      "object_extraction": "complete",
+      "document_sha256": "31b80d4868082b202aa8c0f914049f78bb5e97fb0b70a4e73993ca1b9144be5d",
+      "extraction_path": "research/enrichment/wohlstein_1893_1894_berlin_editions_2026-09-12.jsonl",
+      "extraction_sha256": "e9325d0960a8ae49aeefd07c0aae38a04366833ba6c48c89246b9344a7408be2",
+      "basis": "The full journal-volume scan contains the complete printed pp. 11-41 continuation; its opening, representative edition pages and end were visually checked. The complete editions of VA 2416, VA 2426, VA 2414 and VA 2417 and the exact reference to VA 2422 were extracted. No OCR artifact is certified.",
+      "evidence_path": "research/reviews/wohlstein_1893_1894_open_scan_evidence_2026-09-12.json",
+      "evidence_sha256": "df68199d6e3673fca93f0cff0b4a9b00f559ff32539e9c41d0abe10fea82087e"
+    }
+  ]
+}
