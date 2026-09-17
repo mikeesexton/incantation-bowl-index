@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T15:55:00Z",
+  "entries": [
+    {
+      "id": "IBI-DOC-SFB2013-20260911",
+      "source_id": "SRC-7FBBB775E502",
+      "capture_id": "CAP-295A7FE7BF01",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+      "extraction_path": "research/enrichment/loc_brill_corpus_editions_2026-09-11.jsonl",
+      "extraction_sha256": "91a9d0c0e00b3c82b6048fbd11e54bfe9044b94dafd92a8ae8374075ba4188f2",
+      "basis": "All 396 PDF pages are present; title and imprint, contents, a representative edition page, a photograph page, and the terminal matter were inspected. The complete JBA 1-64 contents enumeration was extracted at object level. Extractable PDF text is not recorded as OCR or corrected rich text.",
+      "evidence_path": "research/reviews/loc_brill_corpus_editions_evidence_2026-09-11.json",
+      "evidence_sha256": "e3d3173ebafb0cd7a49f50e3e39e99edebbe0d69c0696e8a1a2fccbfd0d22329"
+    },
+    {
+      "id": "IBI-DOC-SFB2022-20260911",
+      "source_id": "SRC-8C611BF93288",
+      "capture_id": "CAP-DE113C20CBBA",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "e15f96f25da902065ea972aacb441034f99ca08fbdcdff73be5b11cc80fc3b00",
+      "extraction_path": "research/enrichment/loc_brill_corpus_editions_2026-09-11.jsonl",
+      "extraction_sha256": "91a9d0c0e00b3c82b6048fbd11e54bfe9044b94dafd92a8ae8374075ba4188f2",
+      "basis": "All 334 PDF pages are present; title and imprint, contents, a representative edition page, a photograph page, and the terminal matter were inspected. The complete JBA 65-119 contents enumeration was extracted at object level. Extractable PDF text is not recorded as OCR or corrected rich text.",
+      "evidence_path": "research/reviews/loc_brill_corpus_editions_evidence_2026-09-11.json",
+      "evidence_sha256": "e3d3173ebafb0cd7a49f50e3e39e99edebbe0d69c0696e8a1a2fccbfd0d22329"
+    },
+    {
+      "id": "IBI-DOC-MORIGGI2014-20260911",
+      "source_id": "SRC-3C4294DDB367",
+      "capture_id": "CAP-EA64131E5F1D",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+      "extraction_path": "research/enrichment/loc_brill_corpus_editions_2026-09-11.jsonl",
+      "extraction_sha256": "91a9d0c0e00b3c82b6048fbd11e54bfe9044b94dafd92a8ae8374075ba4188f2",
+      "basis": "All 296 PDF pages are present; title and imprint, contents, the corpus concordance, a representative bowl description, an edition page, and terminal matter were inspected. The complete 49-bowl corpus enumeration was extracted at object level. Extractable PDF text is not recorded as OCR or corrected rich text.",
+      "evidence_path": "research/reviews/loc_brill_corpus_editions_evidence_2026-09-11.json",
+      "evidence_sha256": "e3d3173ebafb0cd7a49f50e3e39e99edebbe0d69c0696e8a1a2fccbfd0d22329"
+    },
+    {
+      "id": "IBI-DOC-FM2020-20260911",
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_id": "CAP-2861B06070B4",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "extraction_path": "research/enrichment/loc_brill_corpus_editions_2026-09-11.jsonl",
+      "extraction_sha256": "91a9d0c0e00b3c82b6048fbd11e54bfe9044b94dafd92a8ae8374075ba4188f2",
+      "basis": "All 335 PDF pages are present; title and imprint, contents, concordance, representative edition and catalogue pages, photographs, and terminal matter were inspected. The complete 68-entry catalogue enumeration was extracted at object level; entry 69's multi-object fragment box remained evidence rather than one invented object. Extractable PDF text is not recorded as OCR or corrected rich text.",
+      "evidence_path": "research/reviews/loc_brill_corpus_editions_evidence_2026-09-11.json",
+      "evidence_sha256": "e3d3173ebafb0cd7a49f50e3e39e99edebbe0d69c0696e8a1a2fccbfd0d22329"
+    }
+  ]
+}

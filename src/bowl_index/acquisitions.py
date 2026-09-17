@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .publications import current_registry, publication_object_sets
+from .documents import document_metrics, source_document_status
 
 
 def _source_captures(conn):
@@ -33,6 +34,7 @@ def _source_captures(conn):
 
 def acquisition_rows(conn):
     captures = _source_captures(conn)
+    assessments = source_document_status(conn)
     keys = publication_object_sets(conn)
     registry = current_registry(conn)
     # How many objects depend on each source as their publication.
@@ -53,7 +55,15 @@ def acquisition_rows(conn):
         source.update(captures.get(source["id"], {"capture_count": 0, "pdf_count": 0}))
         source["capture_status"] = ("pdf_captured" if source["pdf_count"] else
                                     "non_pdf_only" if source["capture_count"] else "not_captured")
-        source["document_completeness"] = "unassessed"
+        assessment = assessments.get(source["id"])
+        source["document_completeness"] = assessment["extent"] if assessment else "unassessed"
+        source["document_form"] = assessment["document_form"] if assessment else "unassessed"
+        source["inspection"] = assessment["inspection"] if assessment else "unassessed"
+        source["text_state"] = assessment["text_state"] if assessment else "unassessed"
+        source["object_extraction"] = (
+            assessment["object_extraction"] if assessment else "unassessed")
+        source["assessed_document_sha256"] = (
+            assessment["document_sha256"] if assessment else None)
         source["published_object_ids"] = sorted(objects_by_source.get(source["id"], set()))
         source["published_objects"] = len(source["published_object_ids"])
         source["appearances"] = appearances.get(source["id"], 0)
@@ -72,6 +82,7 @@ def acquisition_metrics(conn):
     pdfs = [r for r in rows if r["pdf_count"]]
     wanted = [r for r in rows if not r["pdf_count"] and r["priority"] > 0]
     return {
+        **document_metrics(conn),
         "sources": len(rows),
         "sources_with_captures": len(captured),
         "sources_with_pdf_captures": len(pdfs),
@@ -104,29 +115,34 @@ def write_acquisition_report(conn, destination):
         "|---|---:|",
         "| Source records | %d |" % metrics["sources"],
         "| Sources with any capture | %d |" % metrics["sources_with_captures"],
-        "| Sources with PDF captures (completeness unassessed) | %d |" % metrics["sources_with_pdf_captures"],
+        "| Sources with PDF captures (not proof of completeness) | %d |" % metrics["sources_with_pdf_captures"],
         "| Sources with non-PDF captures only | %d |" % metrics["sources_with_non_pdf_captures_only"],
+        "| Sources with a current document assessment | %d |" % metrics["sources_with_document_assessments"],
+        "| Sources assessed as complete | %d |" % metrics["sources_with_complete_documents"],
+        "| Sources with object-level extraction | %d |" % metrics["sources_with_object_level_extraction"],
         "| Sources with dependants needing acquisition review | %d |" % metrics["sources_needing_acquisition_review"],
         "| Sources with dependants and no PDF capture | %d |" % metrics["sources_without_pdf_with_dependants"],
         "| Unique candidate records depending on publications without PDF captures | %d |" % metrics["objects_depending_on_a_publication_without_pdf"],
         "",
         "A PDF may be front matter, an excerpt or a complete work. HTML may be a landing page",
         "or full text. Neither format certifies completeness, page-level verification or rights.",
-        "No completeness decisions are recorded by this report; all sources with dependants",
-        "still need acquisition review. Counts refer to candidate records, not physical identities.",
+        "Completeness decisions come only from the append-only document ledger; unassessed",
+        "captures remain unassessed. Counts refer to candidate records, not physical identities.",
         "",
         "Documents are archived privately by content hash under `data/private/archive/` and are",
         "never committed. What is committed is the hash, the citation and the locator.",
         "",
-        "## Captured sources — completeness unassessed",
+        "## Captured sources — document ledger status",
         "",
-        "| Work | How / format | Candidate records | Claims | SHA-256 |",
-        "|---|---|---:|---:|---|",
+        "| Work | How / format | Extent · inspection · text · extraction | Candidate records | SHA-256 |",
+        "|---|---|---|---:|---|",
     ]
     for r in held:
-        L.append("| %s | %s | %d | %d | `%s` |" % (
-            label(r).replace("|", "\\|"), r.get("how", "—") + " / " + r["capture_status"], r["published_objects"],
-            r["claims"], (r.get("sha256") or "")[:12]))
+        L.append("| %s | %s | %s · %s · %s · %s | %d | `%s` |" % (
+            label(r).replace("|", "\\|"), r.get("how", "—") + " / " + r["capture_status"],
+            r["document_completeness"], r["inspection"], r["text_state"],
+            r["object_extraction"], r["published_objects"],
+            (r.get("assessed_document_sha256") or r.get("sha256") or "")[:12]))
     L += [
         "",
         "## Acquisition leads — no PDF capture",
@@ -156,6 +172,8 @@ def write_acquisition_report(conn, destination):
         "",
         "`deposit` records a researcher-supplied file. It never implies a fetch, a robots check, or",
         "an access-control decision — use `capture` only for URLs the project may lawfully retrieve.",
+        "Assess retained bytes separately with `ibi ingest-document-assessment <manifest>`; the",
+        "assessment must bind its review, document and any transformed artifacts by SHA-256.",
         "",
     ]
     destination = Path(destination)

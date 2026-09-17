@@ -25,6 +25,34 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-17 — Codex — General document-completeness ledger
+
+**Claimed:** ACCESS-004, SCHOL-005
+**Corpus:** changed (migration 015 and four document assessments; no object assertions) — state digest `99ea8cf2621a`
+**Tests:** 239 Python tests passed; four-entry manifest replayed with zero changes; SQLite integrity check passed
+
+- Added an immutable, explicitly supersedable per-holding ledger and
+  `ibi ingest-document-assessment`. It keeps document form and extent, inspection
+  method, text transformation and object-level extraction independent. Review
+  evidence, retained bytes and every OCR/rich-text or extraction artifact bind by
+  SHA-256; a capture alone still proves no completeness claim.
+- Converted the four 11 September Brill volumes from interim evidence into the
+  first durable batch: all four are complete digitally inspected born-digital
+  documents with extractable text and complete catalogue-level object extraction.
+  None is labelled OCR or corrected rich text. The batch replays idempotently.
+- Acquisition and roadmap reports now consume current ledger assessments and show
+  4 assessed complete sources alongside the 46 source-linked captures that remain
+  explicitly unassessed. The research export includes the ledger; public exports
+  still exclude private capture and transformation metadata.
+- Added tests for hash binding, state combinations, source/capture ownership,
+  append-only history, explicit supersession, idempotent replay, citation-only and
+  physical-document states, and project-contained evidence paths.
+- No identity, claim, rights or publication decision changed. ACCESS-004 remains in
+  progress because every retained source holding has not yet been assessed.
+- Next: ledger the already inspected 12 September batch, especially the
+  Naveh-Shaked 1993 front matter and complete Pognon/Layard works, then work through
+  the remaining captures without inferring extent from file format.
+
 ## 2026-09-15 — Claude — Rename the console tabs and write the reading room a description per bowl
 
 **Claimed:** none — unregistered reading-room work, at the researcher's request

@@ -39,6 +39,7 @@ from .source_corrections import apply_source_corrections
 from .cohort import write_montgomery_cohort, apply_montgomery_register
 from .concordance import apply_concordance_review
 from .relationships import apply_relationship_review
+from .documents import apply_document_assessments
 
 
 def build_parser():
@@ -83,6 +84,11 @@ def build_parser():
     pubreg.add_argument("path")
     scope = sub.add_parser("ingest-source-scope", help="record what kind of work a source is")
     scope.add_argument("path")
+    documents = sub.add_parser(
+        "ingest-document-assessment",
+        help="record evidence-bound document completeness and transformation states",
+    )
+    documents.add_argument("path")
     rights = sub.add_parser("ingest-rights-review", help="apply evidence-bound media-rights decisions")
     rights.add_argument("path")
     corrections = sub.add_parser("ingest-locator-corrections", help="apply citation-pointer repairs with immutable originals")
@@ -233,6 +239,11 @@ def main(argv=None):
     elif args.command == "ingest-source-scope":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_scope_batch(conn, review), indent=2, sort_keys=True))
+    elif args.command == "ingest-document-assessment":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(
+            apply_document_assessments(conn, review, PROJECT_ROOT), indent=2, sort_keys=True
+        ))
     elif args.command == "ingest-rights-review":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_rights_batch(conn, review), indent=2, sort_keys=True))

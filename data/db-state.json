@@ -1,10 +1,10 @@
 {
-  "corpus_digest": "f8fac2d62654505100f8127991c0c0f232d0ba52d1a173b69323491d216e20ff",
-  "migrations": 14,
-  "note": "Console tabs renamed and reordered; 68 authored reading-room card lines plus client and purpose claims",
-  "recorded_at": "2026-09-15T10:30:45+00:00",
-  "recorded_by": "Claude",
-  "schema_version": "014_source_corrections",
+  "corpus_digest": "99ea8cf2621affc4823f0664f3ccce34bb1f6ca9fdc0c599f2bbe382290655fd",
+  "migrations": 15,
+  "note": "Added migration 015 document-assessment ledger and ingested four hash-bound Brill volume assessments; no object, identity, rights, or publication decisions changed.",
+  "recorded_at": "2026-09-17T20:14:36+00:00",
+  "recorded_by": "Codex",
+  "schema_version": "015_document_assessments",
   "tables": {
     "appearance_object_links": {
       "digest": "45ba96025e60020aa91a1bc705ddce292cd9d787f854c8935b64f46ccf01b1ff",
@@ -49,6 +49,10 @@
     "dedupe_evidence": {
       "digest": "3d03b456da15bebefe30d19320e2a6d8491f51058fc6138fc0fac741c189412b",
       "rows": 34765
+    },
+    "document_assessments": {
+      "digest": "8dc1179f0a1e6afe9f737172397cd113901db395838362a56865c8947bfee18e",
+      "rows": 4
     },
     "events": {
       "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",
@@ -99,8 +103,8 @@
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "c4df03f562d1066773a4f9510362562290b8b9553e920f2bfcea21c2d76028b1",
-      "rows": 14
+      "digest": "9a2e7b8dfb573976aca5f58f5ef3892fd72076fdc7fea622c5a518fc2b153f73",
+      "rows": 15
     },
     "search_queries": {
       "digest": "cc6d1a38c33e10d1507478c07c59a64adf3d418d7bca1fc86e8f9d54b4861ed0",

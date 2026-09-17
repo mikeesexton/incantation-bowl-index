@@ -2,9 +2,27 @@
 
 Dated JSON files record actual access attempts and document-scope inspections.
 A source citation, a captured file, a complete article and a checked reading are
-separate facts. Scope reviews bind to a source and an archived SHA-256; they do
-not approve text or image reuse. These files supplement the format inventory
-in `ibi report-acquisitions`, which does not yet consume scope reviews.
+separate facts. Document assessments bind to a source, capture, archived SHA-256,
+review evidence and any transformed artifact; they do not approve text or image
+reuse. `ibi report-acquisitions` consumes the immutable current assessment while
+leaving every unassessed capture explicitly unassessed.
+
+The document ledger keeps four dimensions separate:
+
+- form and extent (`citation_only`, `front_matter`, `excerpt`, `complete`);
+- inspection (`not_inspected`, `digital`, `physical`);
+- text state (`none`, `extractable`, `ocr`, `corrected_rich_text`); and
+- object-level extraction (`none`, `partial`, `complete`).
+
+Apply a checked manifest with:
+
+```sh
+ibi ingest-document-assessment research/reviews/<manifest>.json
+```
+
+OCR and corrected rich text require their own path and hash. Partial or complete
+object extraction requires the extraction manifest's path and hash. A later
+assessment supersedes the current row explicitly; history is never overwritten.
 
 ## 2026-09-06 batch
 

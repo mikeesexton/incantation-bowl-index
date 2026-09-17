@@ -238,9 +238,14 @@ def write_roadmap(conn, config_path, destination):
             "Current evidence: **%s scholarship works indexed; %s with a source-linked held "
             "document; %s with a classified scope; %s awaiting scope.** The project also has "
             "**%s source-linked PDF captures** across all source types; a PDF can still be an "
-            "excerpt or front matter rather than a complete work." % (
+            "excerpt or front matter rather than a complete work. The document ledger currently "
+            "assesses **%s sources**, including **%s complete documents** and **%s with "
+            "object-level extraction**." % (
                 metrics["works"], held, metrics["works_with_a_scope"],
                 metrics["works_awaiting_scope"], metrics["sources_with_pdf_captures"],
+                metrics["sources_with_document_assessments"],
+                metrics["sources_with_complete_documents"],
+                metrics["sources_with_object_level_extraction"],
             ),
             "",
             "| Band | Complete or inspected core works | Additional from current holdings | What must also be true |",
@@ -269,6 +274,9 @@ def write_roadmap(conn, config_path, destination):
         "| Working physical identity hypotheses (all statuses) | %s |" % metrics["probable_identities"],
         "| Source appearances | %s |" % metrics["source_appearances"],
         "| Sources | %s |" % metrics["sources"],
+        "| Source documents with current assessments | %s |" % metrics["sources_with_document_assessments"],
+        "| Source documents assessed complete | %s |" % metrics["sources_with_complete_documents"],
+        "| Source documents with object-level extraction | %s |" % metrics["sources_with_object_level_extraction"],
         "| Pending dedupe decisions | %s |" % metrics["pending_dedupe"],
         "| Identities triggering raw claim-difference flags | %s |" % metrics["raw_conflicted_identities"],
         "| Triaged claim-field differences | %s/%s |" % (
