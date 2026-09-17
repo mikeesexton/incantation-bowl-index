@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-17 — Codex — September 12 document-ledger rollout
+
+**Claimed:** ACCESS-004, SCHOL-005
+**Corpus:** changed (seven document assessments; no object assertions) — state digest `82c5064226fc`
+**Tests:** 239 Python tests passed; seven-entry manifest replayed with zero changes; SQLite integrity check passed
+
+- Converted the already-inspected 12 September researcher-PDF batch into seven
+  evidence-bound ledger rows. Coverage is now 11 of 50 source-linked captures:
+  ten complete documents and one explicitly incomplete front-matter holding.
+- Recorded Waller 2022, the Hornkohl-Khan volume, Molin's complete chapter,
+  Layard/Ellis, Wajsberg's review and Pognon as complete. Kept the supplied
+  Naveh-Shaked 1993 file at `front_matter`: its seven pages do not satisfy the
+  acquisition of the book.
+- Bound Pognon's complete thirty-bowl extraction and Layard/Ellis's partial
+  extraction to the checked-in JSONL hash. Layard remains partial because the
+  collective no. 7 fragment group is unquantified and was not invented as one
+  physical object. Waller's older appearances are not certified as a current
+  extraction artifact because no matching checked-in extraction manifest exists.
+- Kept every text state at `extractable`; none was promoted to OCR or corrected
+  rich text without a separately hash-bound artifact. The Wajsberg PDF remains a
+  complete review and does not make the unheld Juusola monograph held.
+- No new inspection, identity, claim, rights or publication decision was made.
+- Next: convert the five additional 11 September volumes, then the documented
+  Stübe, Wohlstein and Gordon open-scan batches; 39 source-linked captures remain.
+
 ## 2026-09-17 — Codex — General document-completeness ledger
 
 **Claimed:** ACCESS-004, SCHOL-005

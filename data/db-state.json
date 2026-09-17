@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "99ea8cf2621affc4823f0664f3ccce34bb1f6ca9fdc0c599f2bbe382290655fd",
+  "corpus_digest": "82c5064226fcddb5fc7340c920df4aeb9a26169bcfa88c849a3db63288856bed",
   "migrations": 15,
-  "note": "Added migration 015 document-assessment ledger and ingested four hash-bound Brill volume assessments; no object, identity, rights, or publication decisions changed.",
-  "recorded_at": "2026-09-17T20:14:36+00:00",
+  "note": "Added seven evidence-bound September 12 document assessments; no object, identity, rights, or publication decisions changed.",
+  "recorded_at": "2026-09-17T20:21:05+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -51,8 +51,8 @@
       "rows": 34765
     },
     "document_assessments": {
-      "digest": "8dc1179f0a1e6afe9f737172397cd113901db395838362a56865c8947bfee18e",
-      "rows": 4
+      "digest": "1917bc43f569db00e0f3b809e8e58f1ee822100ce0c6f7c20e28fe543ffa9aed",
+      "rows": 11
     },
     "events": {
       "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",
