@@ -25,6 +25,30 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-17 — Codex — Residual PDF full-file review
+
+**Claimed:** ACCESS-004, SCHOL-005
+**Corpus:** changed (eight document assessments; no object assertions) — state digest `b678f711053a`
+**Tests:** 239 Python tests passed; assessment manifest replayed with zero changes; all three SQLite integrity checks passed
+
+- Verified the retained SHA-256 for all eight residual PDFs, rendered every page
+  with Poppler and inspected title matter, document sequence and terminal matter.
+- Added complete-document assessments for the Waller 2025 chapter, Oriental
+  Institute highlights guide, Moriggi 2024 article, Brand working list,
+  Levene-Bhayro 2006 article, Kedar dissertation, Schwab's complete PSBA volume
+  and the Auction 57 catalogue.
+- Marked bounded extraction complete for the museum highlight, Moriggi's two
+  editions, Brand's 41-item list plus three related candidates, SD 34 and the
+  three auction bowls. Waller, Kedar and Schwab remain partial because their
+  current artifacts cover selected objects rather than every object discussed.
+- All 39 PDF-linked sources are now assessed through 40 holding rows: 38 sources
+  have complete documents and Naveh-Shaked 1993 remains front matter only.
+  Twenty-nine sources have object-level extraction, 22 complete and seven partial.
+- No scan was promoted to OCR without a separate artifact; no object assertion,
+  identity, claim, rights or publication decision changed.
+- Next: classify the eleven HTML-only captures as landing pages, item pages or
+  substantive documents without inferring completeness from MIME type.
+
 ## 2026-09-17 — Codex — Remaining reviewed-PDF ledger tranche
 
 **Claimed:** ACCESS-004, SCHOL-005

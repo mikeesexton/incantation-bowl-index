@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "d6d436e9914257e3ad96b84ec97bcad927b615437ef09d8c432fa2b634a45079",
+  "corpus_digest": "b678f711053ace7d22ca494fb663d1cef6d88d8eccd3c7d5d3215fbf00d69f6c",
   "migrations": 15,
-  "note": "Added ten evidence-bound document assessments across nine reviewed PDF sources; no object, identity, rights, or publication decisions changed.",
-  "recorded_at": "2026-09-17T20:45:33+00:00",
+  "note": "Added rendered-page, hash-bound assessments for all eight residual PDF sources; no object, identity, rights, or publication decisions changed.",
+  "recorded_at": "2026-09-17T21:00:11+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -51,8 +51,8 @@
       "rows": 34765
     },
     "document_assessments": {
-      "digest": "fd2c4867300f21cff9a567f2d1a72db99671574fcf8d09cf46dcc7430b63dbd0",
-      "rows": 32
+      "digest": "4e66410927f24bf8d81a28a5af7ee1b60f20aa183b84a7970cdfef876bc0cd78",
+      "rows": 40
     },
     "events": {
       "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-17T20:56:53Z",
+  "method": "Verified each retained file against its capture SHA-256, rendered every PDF page with Poppler for visual sequence review, inspected title and terminal matter, and used text extraction only as a secondary structural check. Completeness is a judgment about the retained document, not about extraction coverage or reuse rights.",
+  "entries": [
+    {
+      "source_id": "SRC-19F191B3F5C5",
+      "capture_id": "CAP-52643D00C6E1",
+      "document_sha256": "b60b030f13d2ae48ffd951b7bb59a8801cbbd71b0e060d13637228e1e4237c77",
+      "pdf_pages": 45,
+      "finding": "Complete chapter file. It opens with Waller's chapter title and introduction and ends on printed p. 47 with the terminal bibliography. All 45 pages rendered in sequence. The earlier two-page photographed excerpt is a distinct holding and is not the capture assessed here.",
+      "text_check": "A usable embedded text layer is present."
+    },
+    {
+      "source_id": "SRC-1F676D0669B6",
+      "capture_id": "CAP-66A5F6A4ACC7",
+      "document_sha256": "b3564079a55188e295fe49a88c4cb37804a79d404e70b3ec7eed65b19b23259d",
+      "pdf_pages": 153,
+      "finding": "Complete born-digital Oriental Institute Museum highlights guide. It includes front and title matter, collection history, more than 100 numbered highlights including Mesopotamian highlight 27, and the terminal object-number appendix on printed p. 152. All 153 PDF pages rendered in sequence.",
+      "text_check": "A usable embedded text layer is present; rendering produced repeated non-fatal font-weight warnings."
+    },
+    {
+      "source_id": "SRC-24B0EC105BC9",
+      "capture_id": "CAP-700164814EAB",
+      "document_sha256": "5779855d0e8170030fcf19a549598a1007e19cd38e3d4f13ef6fe88502c517d8",
+      "pdf_pages": 10,
+      "finding": "Complete Folia Orientalia article, printed pp. 193-202. It opens with title, author, abstract and introduction; presents both advertised texts; and ends with the article bibliography on p. 202. All ten pages rendered in sequence.",
+      "text_check": "A usable embedded text layer is present."
+    },
+    {
+      "source_id": "SRC-6D313A7AA389",
+      "capture_id": "CAP-E1E6C8B56AD6",
+      "document_sha256": "bdbe5384e38fcbe39b6b621e4cc3df0f4c70ac94f49a3348e46af29431999f06",
+      "pdf_pages": 3,
+      "finding": "Complete version 1 working list dated June 2021. Pages 1-2 contain the introduction and numbered entries 1-41, followed by three explicitly related candidate mentions; page 3 completes the bibliography. All three pages rendered in sequence.",
+      "text_check": "A usable embedded text layer is present."
+    },
+    {
+      "source_id": "SRC-A84A167A5779",
+      "capture_id": "CAP-46025894043D",
+      "document_sha256": "532e80b60b5ea27d79c1722b067bc1f34cde4cda344b17633ab5da12b1ca89f0",
+      "pdf_pages": 5,
+      "finding": "Complete scanned article, printed pp. 242-246. High-resolution review shows the title and introduction on p. 242, the complete SD 34 transcription, photograph, translation and notes, and terminal abbreviations on p. 246. All five pages rendered in sequence.",
+      "text_check": "No usable extracted text is present; no OCR artifact is certified."
+    },
+    {
+      "source_id": "SRC-A90AB34CA3FE",
+      "capture_id": "CAP-E1FB74EF0432",
+      "document_sha256": "8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+      "pdf_pages": 179,
+      "finding": "Complete dissertation. It includes cover and degree matter, contents, all analytical chapters, bibliography and appendices, ending with the list of bowl images on printed p. 168. All 179 PDF pages rendered in sequence.",
+      "text_check": "A usable embedded text layer is present."
+    },
+    {
+      "source_id": "SRC-F42955665921",
+      "capture_id": "CAP-A514265C9E93",
+      "document_sha256": "f34353aac1877681ca20691e6e2fb955f11cb37766fe943067f1255944d2f43d",
+      "pdf_pages": 682,
+      "finding": "Complete Internet Archive scan of Proceedings of the Society of Biblical Archaeology 13, including binding and terminal leaves. Schwab's complete article occupies PDF pp. 651-663 and printed pp. 583-595; PDF p. 664 begins the next contribution. All 682 pages rendered in sequence and the terminal blank leaves, barcode cover and binding were visually checked.",
+      "text_check": "The archival scan has an extractable text layer, but no separate OCR or corrected-rich-text artifact is certified."
+    },
+    {
+      "source_id": "SRC-FC77989995C8",
+      "capture_id": "CAP-9CD9A67E0389",
+      "document_sha256": "1fe6cd1c0af12a60f30c930d4258ee3e44bd76762d975754877656a5623aa14e",
+      "pdf_pages": 97,
+      "finding": "Complete born-digital Archaeological Center Auction 57 catalogue. It opens with the 14 October 2014 sale cover and conditions, runs through the numbered coin and antiquities lots including bowl lots 440-442 on catalogue pp. 92-93, and ends with the terminal historical page numbered 96. All 97 PDF pages rendered in sequence.",
+      "text_check": "A usable embedded text layer is present."
+    }
+  ]
+}
