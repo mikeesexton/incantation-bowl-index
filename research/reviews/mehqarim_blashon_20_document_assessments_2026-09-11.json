@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-11T12:04:00Z",
+  "entries": [
+    {
+      "id": "IBI-DOC-FORD2023-FULL-20260911",
+      "source_id": "SRC-4071AE0F749A",
+      "capture_id": "CAP-FCB6A9A42AA1",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "extraction_path": "research/enrichment/ford_2023_davidovitz_41_full_article_2026-09-11.jsonl",
+      "extraction_sha256": "a6d37c78d17000b8e79ba77f05511edc26cc55571209a74860da856730f95d16",
+      "basis": "The complete 298-page journal volume was inspected through front matter, contents, Ford's full printed pp. 215-230 article and terminal English summaries. The article's single Davidovitz 41 edition was completely extracted.",
+      "evidence_path": "research/reviews/mehqarim_blashon_20_full_volume_evidence_2026-09-11.json",
+      "evidence_sha256": "5ffb03971adc6864ef77d621215d59a9b5f9a5505713f3c1495b9ad231a289b5"
+    },
+    {
+      "id": "IBI-DOC-ABUDRAHAM2023-20260911",
+      "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+      "capture_id": "CAP-595AD390EEDD",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "extraction_path": "research/enrichment/abudraham_2023_miami_bowl_2026-09-11.jsonl",
+      "extraction_sha256": "d6ceb21e3389974d22e4ae26150a20ba18a33b9320c68fd09578ce62bd2dbb03",
+      "basis": "The complete 298-page journal volume was inspected through front matter, contents, Abudraham's full printed pp. 13-30 article and terminal English summaries. Its single Miami University Art Museum bowl was completely extracted.",
+      "evidence_path": "research/reviews/mehqarim_blashon_20_full_volume_evidence_2026-09-11.json",
+      "evidence_sha256": "5ffb03971adc6864ef77d621215d59a9b5f9a5505713f3c1495b9ad231a289b5"
+    },
+    {
+      "id": "IBI-DOC-MORGENSTERN2023-20260911",
+      "source_id": "SRC-MORGENSTERN2023-FORMS",
+      "capture_id": "CAP-C69A25846658",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "none",
+      "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "basis": "The complete 298-page journal volume was inspected through front matter, contents, Morgenstern's full printed pp. 171-194 article and terminal English summaries. The article is a linguistic study using many bowls as evidence, not a finite object edition, and no extraction artifact is claimed.",
+      "evidence_path": "research/reviews/mehqarim_blashon_20_full_volume_evidence_2026-09-11.json",
+      "evidence_sha256": "5ffb03971adc6864ef77d621215d59a9b5f9a5505713f3c1495b9ad231a289b5"
+    }
+  ]
+}

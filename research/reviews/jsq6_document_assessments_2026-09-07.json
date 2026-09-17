@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-07T02:57:14Z",
+  "entries": [
+    {
+      "id": "IBI-DOC-LEVENE1999-M163-20260907",
+      "source_id": "SRC-21417589C8F9",
+      "capture_id": "CAP-B97742A6FA30",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "none",
+      "object_extraction": "complete",
+      "document_sha256": "19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3",
+      "extraction_path": "research/enrichment/levene_shaked_jsq6_bowls_2026-09-06.jsonl",
+      "extraction_sha256": "f1f41388503f42f40537f621332c3546ead21b3290d087ac662e79fd7fc39480",
+      "basis": "The retained 20-page JSQ file contains Levene's complete printed pp. 283-308 single-object edition of Moussaieff M163, including introduction, edition, commentary, bibliography and plates. Its one finite edition object was completely extracted. No OCR artifact is certified.",
+      "evidence_path": "research/reviews/levene_shaked_jsq6_evidence_2026-09-06.json",
+      "evidence_sha256": "3f52ae25897167826998e48c05eca7c8039f321fa1ab6e9b74db3a63b15c3717"
+    },
+    {
+      "id": "IBI-DOC-SHAKED1999-JESUS-20260907",
+      "source_id": "SRC-5F7E0BA65D6E",
+      "capture_id": "CAP-841BADB77E2F",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "none",
+      "object_extraction": "partial",
+      "document_sha256": "19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3",
+      "extraction_path": "research/enrichment/levene_shaked_jsq6_bowls_2026-09-06.jsonl",
+      "extraction_sha256": "f1f41388503f42f40537f621332c3546ead21b3290d087ac662e79fd7fc39480",
+      "basis": "The retained 20-page JSQ file contains Shaked's complete printed pp. 309-319 companion article. M163 and the separately discussed MS 2054/124 were extracted, but the thematic comparative article is not treated as a finite object catalogue, so extraction remains partial. No OCR artifact is certified.",
+      "evidence_path": "research/reviews/levene_shaked_jsq6_evidence_2026-09-06.json",
+      "evidence_sha256": "3f52ae25897167826998e48c05eca7c8039f321fa1ab6e9b74db3a63b15c3717"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-06T00:41:21+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-FORD2014-20260906",
+      "source_id": "SRC-FORD2014-AUOR",
+      "capture_id": "CAP-877D87C47D82",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "none",
+      "object_extraction": "partial",
+      "document_sha256": "0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7",
+      "extraction_path": "research/enrichment/ford2014_editions_2026-09-06.jsonl",
+      "extraction_sha256": "cd356bd7a93a57f0593714c637199f5f30ab94b9467a337ab419e1743e64a9e5",
+      "basis": "All 29 article pages, including first and last pages, commentary, figures, appendices and bibliography, were inspected and establish a complete printed pp. 235-263 article scan. The three appendix editions are bound here as object extraction; fourteen separately indexed commentary discussions exist in another manifest, so this single-artifact assessment remains partial. The inspected scan has no text layer and no OCR artifact is certified.",
+      "evidence_path": "research/acquisitions/edition_access_2026-09-06.json",
+      "evidence_sha256": "29156b931eef686b558bfc68453179bfe0a6b8a9d04b47184a4e9e14b10d31ae"
+    }
+  ]
+}

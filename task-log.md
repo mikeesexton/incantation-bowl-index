@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-17 — Codex — Remaining reviewed-PDF ledger tranche
+
+**Claimed:** ACCESS-004, SCHOL-005
+**Corpus:** changed (ten document assessments across nine sources; no object assertions) — state digest `d6d436e99142`
+**Tests:** 239 Python tests passed; six manifests replayed with zero changes; all three SQLite integrity checks passed
+
+- Added evidence-bound holding assessments for Montgomery, both JSQ 6 articles,
+  Ford 2014, the supplied Cook and Ford articles, the Ford 2023 English summary
+  and three contributions in *Mehqarim be-Lashon* 20.
+- Kept the Ford 2023 summary excerpt separate from the complete journal-volume
+  capture. The ledger therefore gains ten holding rows across nine sources.
+- Marked Montgomery, Shaked 1999 and Ford 2014 as partial extraction rather than
+  overstating their reviewed artifacts; the separate Ford commentary is not
+  treated as object-level extraction.
+- Ledger coverage is now 31 of 50 source-linked captures via 32 assessment rows:
+  30 sources have complete documents, one has front matter only, 21 have
+  object-level extraction and 17 have complete extraction.
+- Deliberately left eight PDFs unassessed where the existing evidence does not
+  establish full-file extent or completeness. Eleven HTML captures also remain
+  to be classified; file format alone is not evidence of document status.
+- No object assertion, identity, claim, rights or publication decision changed.
+- Next: create full-file review evidence for the remaining eight PDFs, then
+  classify the eleven HTML captures as landing pages, item pages or substantive
+  documents.
+
 ## 2026-09-17 — Codex — Complete-edition and open-scan ledger tranche
 
 **Claimed:** ACCESS-004, SCHOL-005

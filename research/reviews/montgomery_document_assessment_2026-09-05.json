@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex: rendered-page English reading-text review",
+  "reviewed_at": "2026-09-05T14:13:26+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-MONTGOMERY1913-20260905",
+      "source_id": "SRC-943673B56FB8",
+      "capture_id": "CAP-560EB584740F",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+      "extraction_path": "research/enrichment/montgomery_register_checked_2026-09-04.json",
+      "extraction_sha256": "45015a7b52f3443c9f0e5f9845fd7f2ebe9de3746464d51ac8c9b0324fafa327",
+      "basis": "The complete volume scan supplied the title matter, all forty main text sections, the closing register and terminal matter. All forty main entries were individually accounted for and all 35 available English translations were checked against rendered pages. Object extraction is marked partial because Appendix 42 remains separately scoped rather than being silently converted into a main-series bowl. The PDF has extractable text, but no whole-document OCR or corrected-rich-text artifact is certified.",
+      "evidence_path": "research/reviews/montgomery_reading_texts_completion_2026-09-05.json",
+      "evidence_sha256": "7362aebc9055e01b9b2173b30adc62a71916b39805bbbab3eeb63950bb8780d7"
+    }
+  ]
+}
