@@ -410,7 +410,7 @@
      "status": "in_progress",
      "owner": "Mixed",
      "done_when": "Every retained document has lawful-acquisition notes, a content hash, completeness assessment and access restrictions; rich text preserves Unicode ancient scripts, editorial uncertainty, printed pagination and links back to page images without becoming public by default.",
-     "evidence": "The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. The next layer is still missing: there is no TEI or equivalent rich-text package preserving ancient-script Unicode, editorial uncertainty and page-image coordinates, and copying or download permissions must remain recorded per item rather than presumed."
+     "evidence": "The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. A versioned private TEI package contract and read-only validator now bind each transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. The template is checked in while packages remain under Git-ignored `data/private/rich_text/`. No real text has been transformed yet: the first bounded pilot remains gated by encrypted local and off-device backup plus a sampled restore."
     },
     {
      "id": "ACCESS-003",
@@ -619,9 +619,10 @@
     {
      "id": "OPS-002",
      "title": "Configure encrypted local and off-device backups",
-     "status": "queued",
+     "status": "in_progress",
      "owner": "Engineering",
-     "done_when": "Database, capture manifests, and private archive are backed up on schedule and a sampled restore has been completed successfully."
+     "done_when": "Database, capture manifests, and private archive are backed up on schedule and a sampled restore has been completed successfully.",
+     "evidence": "A read-only `ibi backup-readiness` audit now checks GPG recipient resolution, writable local and off-device destinations outside the repository, separate filesystem devices, encrypted bundles, restore receipts and the local snapshot retention cap; the dated result is retained in `research/reviews/private_backup_readiness_2026-09-18.json`. The current audit is not ready: GPG is installed but no recipient is configured, neither destination is configured, there are zero encrypted bundles or restore receipts, and eleven unencrypted SQLite snapshots exceed the stated limit of ten. The private tree is about 1.17 GB, including 50 archived capture files totaling about 701 MB; no rich-text packages exist yet. No key or destination is selected automatically."
     },
     {
      "id": "OPS-003",
@@ -792,6 +793,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Defined the ACCESS-002 private rich-text package before transforming protected content. The new validator binds TEI to the source/capture ledger and independent hashes, requires explicit acquisition and copying restrictions, enforces private-only status, Unicode NFC and increasing printed-page/image anchors, and does not import or echo text. Added a Git-safe manifest template and operator documentation. Started OPS-002 with a read-only backup-readiness audit: the 1.17 GB private tree includes 50 archived capture files totaling 701 MB, while current blockers are no configured GPG recipient, no local or off-device destination, no encrypted bundle or restore receipt, and eleven unencrypted SQLite snapshots against a limit of ten. No private text, key, backup destination or corpus row changed."
+  },
   {
    "date": "2026-09-18",
    "note": "Completed ACCESS-004 by classifying all eleven retained HTML captures from local structural and content review. Nine bounded item or article pages have complete object extraction, the complete Schoyen collection introduction has no finite object list, and the VMBA project landing page remains an excerpt with partial extraction despite 64 separately recovered JBA records. The ledger now covers all 50 captured sources through 51 immutable, hash-bound assessments: 48 sources have a complete document, Naveh-Shaked 1993 has front matter only, and VMBA has only the landing-page excerpt. Thirty-nine sources have object-level extraction, 31 complete and eight partial. No object assertion, identity, rights or publication decision changed."
@@ -1270,7 +1275,7 @@
   ]
  },
  "priorities": [
-  "ACCESS-002 / OPS-002: define the private rich-text package and complete encrypted local plus off-device backup before transforming the new complete editions. Preserve printed page anchors, ancient-script Unicode, uncertainty markup and links to page images; keep the vault outside Git and public exports.",
+  "ACCESS-002 / OPS-002: provision an operator-owned GPG recipient plus writable local and genuinely off-device destinations, create encrypted bundles covering the database, capture archive and private rich text, and record a sampled restore. Then run one bounded TEI pilot through the new validator before scaling transformation. The validator already enforces page-image anchors, ancient-script Unicode, explicit uncertainty-capable TEI, item-specific restrictions and private-only status.",
   "ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.",
   "DISC-003 / OPS-003: convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically. Continuous scheduling remains gated by backup, alerting and disable switches.",
   "TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",

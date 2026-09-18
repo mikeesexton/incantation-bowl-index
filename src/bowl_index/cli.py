@@ -40,6 +40,8 @@ from .cohort import write_montgomery_cohort, apply_montgomery_register
 from .concordance import apply_concordance_review
 from .relationships import apply_relationship_review
 from .documents import apply_document_assessments
+from .vault import validate_rich_text_package
+from .backup import private_backup_readiness
 
 
 def build_parser():
@@ -89,6 +91,15 @@ def build_parser():
         help="record evidence-bound document completeness and transformation states",
     )
     documents.add_argument("path")
+    rich_text = sub.add_parser(
+        "validate-rich-text-package",
+        help="validate a private hash-bound TEI package without importing its text",
+    )
+    rich_text.add_argument("path")
+    sub.add_parser(
+        "backup-readiness",
+        help="audit encrypted local and off-device private-vault backup readiness",
+    )
     rights = sub.add_parser("ingest-rights-review", help="apply evidence-bound media-rights decisions")
     rights.add_argument("path")
     corrections = sub.add_parser("ingest-locator-corrections", help="apply citation-pointer repairs with immutable originals")
@@ -243,6 +254,14 @@ def main(argv=None):
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(
             apply_document_assessments(conn, review, PROJECT_ROOT), indent=2, sort_keys=True
+        ))
+    elif args.command == "validate-rich-text-package":
+        print(json.dumps(
+            validate_rich_text_package(conn, args.path), indent=2, sort_keys=True
+        ))
+    elif args.command == "backup-readiness":
+        print(json.dumps(
+            private_backup_readiness(PROJECT_ROOT), indent=2, sort_keys=True
         ))
     elif args.command == "ingest-rights-review":
         review = json.loads(Path(args.path).read_text())

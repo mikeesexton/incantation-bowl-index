@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-18T20:43:57Z",
+  "observed_by": "Codex",
+  "command": "PYTHONPATH=src .venv/bin/python -m bowl_index.cli backup-readiness",
+  "result": {
+    "ready": false,
+    "private_bytes": 1173868844,
+    "archive_files": 50,
+    "archive_bytes": 701445279,
+    "rich_text_packages": 0,
+    "local_sqlite_snapshots": 11,
+    "encrypted_local_snapshots": 0,
+    "gpg": {
+      "available": true,
+      "recipient_configured": false,
+      "recipient_resolves": false
+    },
+    "local_destination": {
+      "configured": false,
+      "valid": false
+    },
+    "off_device_destination": {
+      "configured": false,
+      "valid": false
+    },
+    "blockers": [
+      "IBI_BACKUP_GPG_RECIPIENT is not configured",
+      "IBI_LOCAL_BACKUP_DIR is not a writable directory outside the project",
+      "IBI_OFFDEVICE_BACKUP_DIR is not a writable directory outside the project",
+      "local SQLite snapshot count exceeds the stated retention limit of ten"
+    ]
+  },
+  "interpretation": "The existing compressed database snapshots are useful recovery points but are unencrypted, exceed their stated retention cap, and do not cover the source archive or constitute an off-device copy. No files were created, deleted, encrypted, decrypted or transferred by the readiness check."
+}

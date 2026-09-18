@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-18T20:02:33+00:00`
+Generated: `2026-09-18T20:44:22+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 23 done · 20 in progress · 21 queued · 0 blocked |
+| Roadmap tasks | 23 done · 21 in progress · 20 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 7/24 |
 
@@ -187,7 +187,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 ## Current priority order
 
-1. ACCESS-002 / OPS-002: define the private rich-text package and complete encrypted local plus off-device backup before transforming the new complete editions. Preserve printed page anchors, ancient-script Unicode, uncertainty markup and links to page images; keep the vault outside Git and public exports.
+1. ACCESS-002 / OPS-002: provision an operator-owned GPG recipient plus writable local and genuinely off-device destinations, create encrypted bundles covering the database, capture archive and private rich text, and record a sampled restore. Then run one bounded TEI pilot through the new validator before scaling transformation. The validator already enforces page-image anchors, ancient-script Unicode, explicit uncertainty-capable TEI, item-specific restrictions and private-only status.
 2. ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.
 3. DISC-003 / OPS-003: convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically. Continuous scheduling remains gated by backup, alerting and disable switches.
 4. TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.
@@ -364,7 +364,7 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: The 2026-09-09 access model names all three layers, their audiences, allowed content, next gates and five non-automatic promotion rules. It expressly avoids treating private use, free distribution or payment as a substitute for permission.
 - [ ] **ACCESS-002 — Build the private rich-text evidence vault** · In progress · Mixed
   - Done when: Every retained document has lawful-acquisition notes, a content hash, completeness assessment and access restrictions; rich text preserves Unicode ancient scripts, editorial uncertainty, printed pagination and links back to page images without becoming public by default.
-  - Evidence/status: The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. The next layer is still missing: there is no TEI or equivalent rich-text package preserving ancient-script Unicode, editorial uncertainty and page-image coordinates, and copying or download permissions must remain recorded per item rather than presumed.
+  - Evidence/status: The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. A versioned private TEI package contract and read-only validator now bind each transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. The template is checked in while packages remain under Git-ignored `data/private/rich_text/`. No real text has been transformed yet: the first bounded pilot remains gated by encrypted local and off-device backup plus a sampled restore.
 - [ ] **ACCESS-003 — Maintain the maximal factual public reference layer** · In progress · Mixed
   - Done when: Every publishable bowl fact, citation, source relationship and project-authored summary can enter the reviewed public projection while private captures, protected text and unapproved images fail closed.
   - Evidence/status: A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed; rights review, factual coverage and release QA remain incomplete.
@@ -444,8 +444,9 @@ Prepare a private, recoverable, observable 24/7 research worker that detects cha
 
 - [ ] **OPS-001 — Provision the Mac mini research runtime** · Queued · Engineering
   - Done when: Repository, isolated Python runtime, secrets storage, launch-on-boot service account, logs, health checks, and least-privilege filesystem layout are documented and reproducible.
-- [ ] **OPS-002 — Configure encrypted local and off-device backups** · Queued · Engineering
+- [ ] **OPS-002 — Configure encrypted local and off-device backups** · In progress · Engineering
   - Done when: Database, capture manifests, and private archive are backed up on schedule and a sampled restore has been completed successfully.
+  - Evidence/status: A read-only `ibi backup-readiness` audit now checks GPG recipient resolution, writable local and off-device destinations outside the repository, separate filesystem devices, encrypted bundles, restore receipts and the local snapshot retention cap; the dated result is retained in `research/reviews/private_backup_readiness_2026-09-18.json`. The current audit is not ready: GPG is installed but no recipient is configured, neither destination is configured, there are zero encrypted bundles or restore receipts, and eleven unencrypted SQLite snapshots exceed the stated limit of ten. The private tree is about 1.17 GB, including 50 archived capture files totaling about 701 MB; no rich-text packages exist yet. No key or destination is selected automatically.
 - [ ] **OPS-003 — Implement safe collector scheduling and change detection** · Queued · Engineering
   - Done when: Approved collectors have bounded schedules, rate limits, idempotency, hashes/diffs, retry limits, failure alerts, and per-source disable switches.
   - Evidence/status: The corpus already has content hashes, idempotent manifest ingestion, search logs and lead states, which are enough for a read-only lead-generation pilot. Scheduling, rate policy, alert delivery, disable switches and shadow-run evidence are not implemented, so unattended corpus writes remain prohibited.
@@ -545,6 +546,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-18:** Defined the ACCESS-002 private rich-text package before transforming protected content. The new validator binds TEI to the source/capture ledger and independent hashes, requires explicit acquisition and copying restrictions, enforces private-only status, Unicode NFC and increasing printed-page/image anchors, and does not import or echo text. Added a Git-safe manifest template and operator documentation. Started OPS-002 with a read-only backup-readiness audit: the 1.17 GB private tree includes 50 archived capture files totaling 701 MB, while current blockers are no configured GPG recipient, no local or off-device destination, no encrypted bundle or restore receipt, and eleven unencrypted SQLite snapshots against a limit of ten. No private text, key, backup destination or corpus row changed.
 - **2026-09-18:** Completed ACCESS-004 by classifying all eleven retained HTML captures from local structural and content review. Nine bounded item or article pages have complete object extraction, the complete Schoyen collection introduction has no finite object list, and the VMBA project landing page remains an excerpt with partial extraction despite 64 separately recovered JBA records. The ledger now covers all 50 captured sources through 51 immutable, hash-bound assessments: 48 sources have a complete document, Naveh-Shaked 1993 has front matter only, and VMBA has only the landing-page excerpt. Thirty-nine sources have object-level extraction, 31 complete and eight partial. No object assertion, identity, rights or publication decision changed.
 - **2026-09-17:** Completed full-file rendered-page review of the eight residual PDF captures and added evidence-bound assessments for all eight. The Waller chapter, Oriental Institute highlights guide, Moriggi 2024 article, Brand working list, Levene-Bhayro 2006 article, Kedar dissertation, complete Schwab PSBA volume and Auction 57 catalogue are complete retained documents. Five have complete bounded object extraction; Waller, Kedar and Schwab remain partial rather than overstated. All 39 PDF-linked sources are now assessed through 40 holding rows, with 38 complete documents and the Naveh-Shaked 1993 front matter as the sole incomplete PDF holding. Eleven HTML-only captures remain. No object assertion, identity, rights or publication decision changed.
 - **2026-09-17:** Extended ACCESS-004 through the remaining PDFs with adequate hash-bound inspection evidence: Montgomery 1913, both JSQ 6 articles, Ford 2014, Cook's Khafaje article, Ford's Mandaic study, and the three Mehqarim be-Lashon contributions. Ford 2023 now retains two separate holding states: its one-page summary is an excerpt and the complete article is held within the full journal volume. Montgomery, Shaked 1999 and Ford 2014 carry partial object extraction rather than overstated completeness; Cook and Ford 2002 carry no extraction artifact. Ledger coverage is 31 of 50 captured sources through 32 holding rows, with 30 sources holding a complete document. Eight PDF sources and eleven HTML captures remain unassessed. No object assertion, identity, rights or publication decision changed.

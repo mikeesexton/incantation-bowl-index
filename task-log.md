@@ -25,6 +25,36 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Private vault package and backup controls
+
+**Claimed:** ACCESS-002, OPS-002
+**Corpus:** unchanged — state digest `ee8bac97e212`
+**Tests:** 247 Python tests passed; archive and all three SQLite integrity checks passed; corpus state matches
+
+- Added a versioned, private-only TEI package contract and
+  `ibi validate-rich-text-package`. Validation binds one source, capture,
+  document hash and text hash; requires item-specific acquisition, copying and
+  download notes; enforces UTC transformation metadata, UTF-8 NFC and increasing
+  printed-page/image coordinates; and returns no protected text.
+- Added a Git-safe manifest template and operator guide. Actual packages remain
+  under ignored `data/private/rich_text/`; none was created and no modern text
+  was transformed or published.
+- Added the read-only `ibi backup-readiness` audit and retained its dated result.
+  It measures the GPG recipient, two external destinations, separate filesystem
+  devices, encrypted bundles, restore receipts and local snapshot retention
+  without creating, deleting, decrypting or transferring files.
+- Current result is not ready: the private tree is 1.17 GB, including 50 source
+  captures totaling 701 MB; GPG is installed but has no configured recipient;
+  neither backup destination is configured; zero encrypted bundles and restore
+  receipts exist; and eleven unencrypted SQLite snapshots exceed the stated cap
+  of ten. The older snapshot was not deleted without explicit authorization.
+- Updated ACCESS-002 evidence and moved OPS-002 from queued to in progress. The
+  roadmap is now 23 done, 21 in progress and 20 queued; handoff remains blocked
+  at 7/24 required tasks and 2/5 metric gates.
+- Next: the operator must choose or create a GPG recipient and provide writable
+  local and genuinely off-device destination paths. Then create both encrypted
+  bundles, perform a sampled restore and run one bounded TEI pilot.
+
 ## 2026-09-18 — Codex — HTML capture classification
 
 **Claimed:** ACCESS-004, SCHOL-005

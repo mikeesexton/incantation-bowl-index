@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "package_id": "IBI-RICH-REPLACE-ME",
+  "source_id": "SRC-REPLACE-ME",
+  "capture_id": "CAP-REPLACE-ME",
+  "document_sha256": "REPLACE-WITH-CAPTURE-SHA256",
+  "text_path": "text.tei.xml",
+  "text_sha256": "REPLACE-WITH-TEI-SHA256",
+  "access": {
+    "layer": "private_research_vault",
+    "public_release": false,
+    "rights_status": "REPLACE-WITH-SOURCE-RIGHTS-STATUS",
+    "lawful_acquisition_basis": "REPLACE-WITH-DATED-ACCESS-OR-DEPOSIT-NOTE",
+    "copying_restrictions": "REPLACE-WITH-ITEM-SPECIFIC-TERMS-OR-UNKNOWN",
+    "download_restrictions": "REPLACE-WITH-ITEM-SPECIFIC-TERMS-OR-UNKNOWN"
+  },
+  "transformation": {
+    "state": "corrected_rich_text",
+    "created_at": "REPLACE-WITH-UTC-TIMESTAMP",
+    "created_by": "REPLACE-WITH-REVIEWER",
+    "method": "REPLACE-WITH-OCR-AND-CORRECTION-METHOD"
+  }
+}
