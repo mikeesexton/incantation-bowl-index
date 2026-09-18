@@ -42,14 +42,14 @@ class ProjectionTests(unittest.TestCase):
         blob=json.dumps(Projection(self.conn).tables(), ensure_ascii=False)
         self.assertNotIn('bowl.jpg', blob)
 
-    def test_a_link_matching_a_private_capture_is_withheld(self):
+    def test_a_public_link_matching_a_private_capture_remains_available(self):
         self.conn.execute(
             "INSERT INTO captures(id,source_id,url,retrieved_at,mime_type,status_code,sha256,"
             "byte_length,storage_path,rights_status) SELECT 'CAP-1',id,'https://example.org/segal',"
             "'2026-09-05T00:00:00Z','text/html',200,'abc',1,'data/private/archive/ab/abc','unknown' "
             "FROM sources LIMIT 1")
         self.conn.execute("UPDATE sources SET doi=NULL"); self.conn.commit()
-        self.assertIsNone(self.rows('texts')[0]['access_url'])
+        self.assertEqual(self.rows('texts')[0]['access_url'],'https://example.org/segal')
 
     def test_the_guard_rejects_a_leaked_private_reference(self):
         projection=Projection(self.conn)

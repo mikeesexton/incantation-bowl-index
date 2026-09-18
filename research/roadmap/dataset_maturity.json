@@ -418,7 +418,7 @@
      "status": "in_progress",
      "owner": "Mixed",
      "done_when": "Every publishable bowl fact, citation, source relationship and project-authored summary can enter the reviewed public projection while private captures, protected text and unapproved images fail closed.",
-     "evidence": "A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed; rights review, factual coverage and release QA remain incomplete."
+     "evidence": "A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed. Public source-page pointers are no longer suppressed merely because the same page was archived privately; capture storage paths remain forbidden. Rights review, factual coverage and release QA remain incomplete."
     },
     {
      "id": "ACCESS-004",
@@ -586,10 +586,10 @@
     {
      "id": "RIGHTS-004",
      "title": "Restore links for sources whose URL matches a private capture",
-     "status": "queued",
+     "status": "done",
      "owner": "Engineering",
      "done_when": "A source's public page URL can be published as an access pointer without being suppressed merely because the page was also archived privately, while capture storage paths and unapproved media URLs stay forbidden.",
-     "evidence": "The export guard forbids any string matching a capture URL. That is correct for media and archive paths but suppresses 5 legitimate bibliographic links, since a public page URL reveals nothing about the archive. Narrow the guard to storage paths and media URLs."
+     "evidence": "The projection now treats a public source page as a bibliographic access pointer even when the project also holds a private capture or an unapproved media row cites that page. The five originally identified HTML source pages are restored; three subsequently captured public PDF source links are restored too, producing seven text-pointer rows and 63 edition-pointer rows across eight source URLs in the current corpus. Capture storage paths still abort the export, protected text remains gated, and all 327 unapproved media rows remain absent. Regression tests cover a source URL shared by a capture and an unapproved media row, capture-path leakage, and the API/file-export equivalence."
     },
     {
      "id": "RIGHTS-005",
@@ -794,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Completed RIGHTS-004 by separating a public source-page pointer from the project's private captured copy. The projection now permits the source URL in the dedicated access-link field even when a private capture or an unapproved media row names the same page, while capture storage paths and media emission remain fail-closed. Live validation restores the five originally identified HTML pages plus three later public PDF links: seven text-pointer rows and 63 edition-pointer rows across eight source URLs. Protected text is unchanged and all 327 media remain withheld."
+  },
   {
    "date": "2026-09-18",
    "note": "Captured the approved Mac mini architecture in a versioned runbook without deploying it. The planned primary host uses FileVault, separate administration and runtime access, Git repositories under `~/Developer`, Tailscale-only remote administration, launchd services and Healthchecks email. Bowl Index backups use separate Restic repositories on a dedicated 1 TB encrypted APFS SSD every four hours and Backblaze B2 daily, with distinct Keychain-held passwords and offline recovery copies. OPS-002 returned to queued while waiting for the hardware; the current GPG-oriented readiness command remains an interim audit. ACCESS-002 stays in progress but its first live TEI pilot waits for successful restores from both destinations. All eleven legacy SQLite snapshots were retained; no account, key, service, schedule, transfer, corpus row or database changed."
@@ -1280,7 +1284,7 @@
   ]
  },
  "priorities": [
-  "ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.",
+  "RIGHTS-002 / ACCESS-003: add initial ledger holds for the two newest media rows, then begin evidence collection by shared institutional policy. Public source-page pointers are repaired; retain the existing fail-closed treatment for protected texts, capture storage and all unapproved media.",
   "TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",
   "SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.",
   "SCHOL-006: classify the remaining 151 unclassified works by scope. Thirty-eight scholarship works now have a source-linked held document and 66 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",
@@ -1292,7 +1296,6 @@
   "TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.",
   "CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.",
   "QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.",
-  "RIGHTS-002: investigate evidence for 327 media records, starting by adding initial holds for the two newest rows and then reviewing shared institutional policies. The 325 earlier rows have provisional holds; zero media have completed rights decisions, and agents collect evidence for human review.",
   "TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.",
   "DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.",
   "OPS-001 / OPS-002 / ACCESS-002: defer commissioning until the Mac mini and dedicated 1 TB SSD arrive. Then apply the [Mac mini setup runbook](mac_mini_setup_runbook.md): provision the primary host, encrypted Restic repositories on APFS and Backblaze B2, Keychain and offline recovery copies, Healthchecks email, and independent restore receipts. Retain all eleven legacy SQLite snapshots and do not begin a real TEI pilot before both restores pass.",

@@ -2,9 +2,9 @@
 
 Both the file exporter and the reader API build their rows here. That is
 deliberate: the gates that decide whether a text may be shown, whether a media
-URL may be named, and whether a link would leak a private capture must exist in
-exactly one place. A second implementation is a second chance to publish
-something withheld.
+URL may be named, and whether a link would expose private capture storage must
+exist in exactly one place. A second implementation is a second chance to
+publish something withheld.
 
 The reader API serves these tables unchanged, so a published static export and
 the local console are the same bytes through the same code path.
@@ -79,13 +79,11 @@ class Projection:
         # Conflicting reviews for the same resource fail closed.
         blocked = {row["url"] for k, row in evidence.items() if k not in approved and row["url"]}
         approved = {k for k in approved if evidence[k]["url"] not in blocked}
-        allowed = {evidence[k]["url"] for k in approved}
         self.reviews, self.evidence, self.approved = reviews, evidence, approved
-        self.forbidden = blocked | {
+        self.private_storage = {
             r["storage_path"] for r in conn.execute("SELECT storage_path FROM captures")
-        } | {
-            r["url"] for r in conn.execute("SELECT url FROM captures") if r["url"] not in allowed
         }
+        self.forbidden = blocked | self.private_storage
         self.approved_texts = {
             key for key, review in current_text_reviews(conn).items()
             if review["publication_decision"] == "approved"
@@ -97,18 +95,24 @@ class Projection:
         """A citation is a pointer only if a reader can act on it.
 
         Prefers a DOI, falls back to the source URL, and yields nothing rather
-        than emitting a string the media/capture guard forbids. Callers always
-        emit the citation and locator too, so a row never loses its pointer.
+        than emitting a string the media/private-storage guard forbids. A
+        capture's public source URL is not private merely because the project
+        archived a copy; only its storage path remains forbidden. Callers
+        always emit the citation and locator too, so a row never loses its
+        pointer.
         """
         doi = (doi or "").strip()
         if doi:
             link = doi if doi.startswith("http") else "https://doi.org/" + doi
-            if not self._leaks(link):
+            if not self._leaks_storage(link):
                 return link
         url = (url or "").strip()
-        if url.startswith(("http://", "https://")) and not self._leaks(url):
+        if url.startswith(("http://", "https://")) and not self._leaks_storage(url):
             return url
         return None
+
+    def _leaks_storage(self, value):
+        return any(private and private in value for private in self.private_storage)
 
     def _leaks(self, value):
         return any(private and private in value for private in self.forbidden)
@@ -116,7 +120,15 @@ class Projection:
     def guard(self, name, rows):
         """Defence in depth: permitted metadata must not repeat a private reference."""
         for row in rows:
-            for value in row.values():
+            for key, value in row.items():
+                # This field is a bibliographic pointer, not a media release.
+                # It may name the same public page that a media row cites, but
+                # it may never expose the archived copy's storage location.
+                if key == "access_url" and isinstance(value, str):
+                    if self._leaks_storage(value):
+                        raise ValueError(
+                            "Public projection contains a private media/capture reference in " + name)
+                    continue
                 if isinstance(value, str) and self._leaks(value):
                     raise ValueError(
                         "Public projection contains a private media/capture reference in " + name)

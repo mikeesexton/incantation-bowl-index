@@ -188,16 +188,32 @@ class AccessPointerTests(unittest.TestCase):
         self.assertEqual(editions[0]['locator'],'no. 042A')
         self.assertEqual(editions[0]['access_url'],'https://doi.org/10.1234/segal')
 
-    def test_a_link_is_withheld_rather_than_leaking_a_captured_url(self):
+    def test_a_public_source_link_survives_a_private_capture_of_the_same_page(self):
         self.conn.execute(
             "INSERT INTO captures(id,source_id,url,retrieved_at,mime_type,status_code,sha256,"
             "byte_length,storage_path,rights_status) SELECT 'CAP-1',id,'https://example.org/segal',"
             "'2026-09-05T00:00:00Z','text/html',200,'abc',1,'data/private/archive/ab/abc','unknown' "
             "FROM sources LIMIT 1")
+        self.conn.execute(
+            "INSERT INTO media(id,object_id,source_id,media_type,url) "
+            "SELECT 'MED-PAGE',object_id,source_id,'image','https://example.org/segal' "
+            "FROM texts LIMIT 1")
         self.conn.execute("UPDATE sources SET doi=NULL"); self.conn.commit()
         row=self.rows('texts')[0]
-        self.assertIsNone(row['access_url'])
+        self.assertEqual(row['access_url'],'https://example.org/segal')
         self.assertEqual(row['access_citation'],'Segal 2000')
+        self.assertEqual(self.rows('media'),[])
+
+    def test_private_capture_storage_path_cannot_enter_public_metadata(self):
+        storage_path='data/private/archive/ab/abc'
+        self.conn.execute(
+            "INSERT INTO captures(id,source_id,url,retrieved_at,mime_type,status_code,sha256,"
+            "byte_length,storage_path,rights_status) SELECT 'CAP-1',id,'https://example.org/segal',"
+            "'2026-09-05T00:00:00Z','text/html',200,'abc',1,?,'unknown' FROM sources LIMIT 1",
+            (storage_path,))
+        self.conn.execute('UPDATE sources SET citation=?',(storage_path,)); self.conn.commit()
+        with self.assertRaisesRegex(ValueError,'private media/capture reference'):
+            export_public(self.conn,self.root/'pub')
 
 if __name__=='__main__':
     unittest.main()

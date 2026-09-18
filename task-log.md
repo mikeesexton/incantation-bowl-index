@@ -25,6 +25,25 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Public source-link gate repair
+
+**Claimed:** RIGHTS-004
+**Corpus:** unchanged — state digest `ee8bac97e212`
+**Tests:** 248 Python tests passed; live public export completed with 154 texts withheld and all 327 media withheld; corpus state matches
+
+- Completed RIGHTS-004 by separating a public bibliographic pointer from the
+  project's private captured copy. The dedicated access-link field may name the
+  source page even when a capture or an unapproved media row cites that page.
+- Restored the five originally identified HTML source pages and three later
+  public PDF pointers: seven text-pointer rows and 63 edition-pointer rows
+  across eight URLs in the current corpus.
+- Capture storage paths still abort an export. Protected text remains gated and
+  the live projection emits zero of 327 unapproved media rows. Regression tests
+  cover the shared source/capture/media URL case and API/file-export parity.
+- Marked RIGHTS-004 done and advanced the required handoff count from 7/24 to
+  8/24. Next: RIGHTS-002 should add initial holds for the two newest media rows,
+  then collect evidence in shared institutional-policy batches.
+
 ## 2026-09-18 — Codex — Mac mini setup plan capture
 
 **Claimed:** OPS-001, OPS-002, OPS-003, ACCESS-002

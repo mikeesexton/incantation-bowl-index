@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-18T22:31:50+00:00`
+Generated: `2026-09-18T22:43:22+00:00`
 
 ## Portfolio status
 
@@ -10,9 +10,9 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 23 done · 20 in progress · 21 queued · 0 blocked |
+| Roadmap tasks | 24 done · 20 in progress · 20 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
-| Required handoff tasks complete | 7/24 |
+| Required handoff tasks complete | 8/24 |
 
 ### What is solid
 
@@ -187,7 +187,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 
 ## Current priority order
 
-1. ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.
+1. RIGHTS-002 / ACCESS-003: add initial ledger holds for the two newest media rows, then begin evidence collection by shared institutional policy. Public source-page pointers are repaired; retain the existing fail-closed treatment for protected texts, capture storage and all unapproved media.
 2. TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.
 3. SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.
 4. SCHOL-006: classify the remaining 151 unclassified works by scope. Thirty-eight scholarship works now have a source-linked held document and 66 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.
@@ -199,12 +199,11 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 10. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
 11. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
 12. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
-13. RIGHTS-002: investigate evidence for 327 media records, starting by adding initial holds for the two newest rows and then reviewing shared institutional policies. The 325 earlier rows have provisional holds; zero media have completed rights decisions, and agents collect evidence for human review.
-14. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
-15. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
-16. OPS-001 / OPS-002 / ACCESS-002: defer commissioning until the Mac mini and dedicated 1 TB SSD arrive. Then apply the [Mac mini setup runbook](mac_mini_setup_runbook.md): provision the primary host, encrypted Restic repositories on APFS and Backblaze B2, Keychain and offline recovery copies, Healthchecks email, and independent restore receipts. Retain all eleven legacy SQLite snapshots and do not begin a real TEI pilot before both restores pass.
-17. DISC-003 / OPS-003: after the Mac mini backup and alert gates pass, convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically.
-18. ACCESS-006: after a rights-safe prototype demonstrates the scholarship graph, test demand with scholars, librarians and museums before spending materially on commercial licenses or legal drafting.
+13. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
+14. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
+15. OPS-001 / OPS-002 / ACCESS-002: defer commissioning until the Mac mini and dedicated 1 TB SSD arrive. Then apply the [Mac mini setup runbook](mac_mini_setup_runbook.md): provision the primary host, encrypted Restic repositories on APFS and Backblaze B2, Keychain and offline recovery copies, Healthchecks email, and independent restore receipts. Retain all eleven legacy SQLite snapshots and do not begin a real TEI pilot before both restores pass.
+16. DISC-003 / OPS-003: after the Mac mini backup and alert gates pass, convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically.
+17. ACCESS-006: after a rights-safe prototype demonstrates the scholarship graph, test demand with scholars, librarians and museums before spending materially on commercial licenses or legal drafting.
 
 ## Offline research queue
 
@@ -366,7 +365,7 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. A versioned private TEI package contract and read-only validator now bind each transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. The template is checked in while packages remain under Git-ignored `data/private/rich_text/`. No real text has been transformed yet: the first bounded pilot remains gated by successful encrypted Restic restores from both the planned local SSD and Backblaze B2 repositories after the Mac mini arrives.
 - [ ] **ACCESS-003 — Maintain the maximal factual public reference layer** · In progress · Mixed
   - Done when: Every publishable bowl fact, citation, source relationship and project-authored summary can enter the reviewed public projection while private captures, protected text and unapproved images fail closed.
-  - Evidence/status: A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed; rights review, factual coverage and release QA remain incomplete.
+  - Evidence/status: A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed. Public source-page pointers are no longer suppressed merely because the same page was archived privately; capture storage paths remain forbidden. Rights review, factual coverage and release QA remain incomplete.
 - [x] **ACCESS-004 — Create a document-completeness and transformation ledger** · Done · Engineering
   - Done when: Each source holding distinguishes citation-only, excerpt, front matter, complete scan, physically inspected work, OCR, corrected rich text and object-level extraction, with dates, hashes and reviewer evidence.
   - Evidence/status: Migration 015 and `ibi ingest-document-assessment` provide an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every source-linked capture is now covered: all 50 captured sources have 51 hash-bound assessments, comprising 48 sources with a complete document, Naveh-Shaked 1993 with front matter only, and the archived VMBA landing page as an excerpt; Ford 2023 also retains its separate summary excerpt beside its complete article. The eleven HTML holdings were inspected structurally and by content rather than classified from MIME type: nine item or article pages have complete bounded object extraction, the complete Schoyen collection introduction has no finite item list, and VMBA's 64 recovered JBA records remain partial because the landing capture cannot establish database-wide completeness. Thirty-nine sources now have hash-bound object-level extraction, 31 complete and eight partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding.
@@ -430,9 +429,9 @@ Build a rights ledger before copying images into the corpus or exposing any medi
 - [x] **RIGHTS-003 — Separate private thumbnails from public media exports** · Done · Engineering
   - Done when: A separate public-export path excludes unapproved media URLs/bytes and private source payloads, with regression tests. Any later public dashboard must consume that reviewed projection and receive its own release check.
   - Evidence/status: Added separate allowlist-based export-public reference scaffold: excludes captures, private payloads, claim content, notes and review histories; text public_ok and current per-media approval are separate gates. Tests cover stale approval, revocation, duplicate URLs, known private references and residual destination files. Live validation withholds all 327 media because none has a current approval. No public dashboard is deployed.
-- [ ] **RIGHTS-004 — Restore links for sources whose URL matches a private capture** · Queued · Engineering
+- [x] **RIGHTS-004 — Restore links for sources whose URL matches a private capture** · Done · Engineering
   - Done when: A source's public page URL can be published as an access pointer without being suppressed merely because the page was also archived privately, while capture storage paths and unapproved media URLs stay forbidden.
-  - Evidence/status: The export guard forbids any string matching a capture URL. That is correct for media and archive paths but suppresses 5 legitimate bibliographic links, since a public page URL reveals nothing about the archive. Narrow the guard to storage paths and media URLs.
+  - Evidence/status: The projection now treats a public source page as a bibliographic access pointer even when the project also holds a private capture or an unapproved media row cites that page. The five originally identified HTML source pages are restored; three subsequently captured public PDF source links are restored too, producing seven text-pointer rows and 63 edition-pointer rows across eight source URLs in the current corpus. Capture storage paths still abort the export, protected text remains gated, and all 327 unapproved media rows remain absent. Regression tests cover a source URL shared by a capture and an unapproved media row, capture-path leakage, and the API/file-export equivalence.
 - [x] **RIGHTS-005 — Render approved images, and only approved images** · Done · Engineering
   - Done when: The reading room shows a bowl's photograph when its media has a completed approval, and shows nothing of it otherwise, with tests covering both directions.
   - Evidence/status: The reading room renders whatever media the projection emits, and the projection emits a media row only for a current approval - so an uncleared image has no row to render and the data-drawn spiral carries the grid instead. tests/test_media_gate.py covers all three states: a public-domain source alone releases nothing, a completed approval releases the URL with its attribution, and a withhold decision keeps it off the page. Currently 0 of 327 media are approved, so no image appears; when RIGHTS-002 clears one it appears with no further work. Circular crop, since a bowl photographed from above is a circle.
@@ -526,7 +525,7 @@ Overall gate: **NOT READY**
 - [x] SCHOL-002 — Seed the missing foundational bibliography
 - [x] SCHOL-004 — Make publications first-class records, not identifier prefixes
 - [x] QA-008 — Reconcile the claim vocabulary with the comparison model
-- [ ] RIGHTS-004 — Restore links for sources whose URL matches a private capture
+- [x] RIGHTS-004 — Restore links for sources whose URL matches a private capture
 
 ### What crosses the threshold
 
@@ -546,6 +545,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-18:** Completed RIGHTS-004 by separating a public source-page pointer from the project's private captured copy. The projection now permits the source URL in the dedicated access-link field even when a private capture or an unapproved media row names the same page, while capture storage paths and media emission remain fail-closed. Live validation restores the five originally identified HTML pages plus three later public PDF links: seven text-pointer rows and 63 edition-pointer rows across eight source URLs. Protected text is unchanged and all 327 media remain withheld.
 - **2026-09-18:** Captured the approved Mac mini architecture in a versioned runbook without deploying it. The planned primary host uses FileVault, separate administration and runtime access, Git repositories under `~/Developer`, Tailscale-only remote administration, launchd services and Healthchecks email. Bowl Index backups use separate Restic repositories on a dedicated 1 TB encrypted APFS SSD every four hours and Backblaze B2 daily, with distinct Keychain-held passwords and offline recovery copies. OPS-002 returned to queued while waiting for the hardware; the current GPG-oriented readiness command remains an interim audit. ACCESS-002 stays in progress but its first live TEI pilot waits for successful restores from both destinations. All eleven legacy SQLite snapshots were retained; no account, key, service, schedule, transfer, corpus row or database changed.
 - **2026-09-18:** Defined the ACCESS-002 private rich-text package before transforming protected content. The new validator binds TEI to the source/capture ledger and independent hashes, requires explicit acquisition and copying restrictions, enforces private-only status, Unicode NFC and increasing printed-page/image anchors, and does not import or echo text. Added a Git-safe manifest template and operator documentation. Started OPS-002 with a read-only backup-readiness audit: the 1.17 GB private tree includes 50 archived capture files totaling 701 MB, while current blockers are no configured GPG recipient, no local or off-device destination, no encrypted bundle or restore receipt, and eleven unencrypted SQLite snapshots against a limit of ten. No private text, key, backup destination or corpus row changed.
 - **2026-09-18:** Completed ACCESS-004 by classifying all eleven retained HTML captures from local structural and content review. Nine bounded item or article pages have complete object extraction, the complete Schoyen collection introduction has no finite object list, and the VMBA project landing page remains an excerpt with partial extraction despite 64 separately recovered JBA records. The ledger now covers all 50 captured sources through 51 immutable, hash-bound assessments: 48 sources have a complete document, Naveh-Shaked 1993 has front matter only, and VMBA has only the landing-page excerpt. Thirty-nine sources have object-level extraction, 31 complete and eight partial. No object assertion, identity, rights or publication decision changed.
