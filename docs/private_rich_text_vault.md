@@ -79,8 +79,11 @@ review burden are known.
 The required backup set is the SQLite database, `data/private/archive/`,
 `data/private/rich_text/`, and a machine-readable receipt listing hashes and
 restore results. The present working copy has local compressed SQLite snapshots,
-but they are unencrypted, exclude the 669 MB source archive, and are not an
-off-device copy. They therefore do not satisfy OPS-002.
+but they are unencrypted, exclude the private source archive, and are not an
+off-device copy. They therefore do not satisfy OPS-002. The target backup and
+restore design is defined in the
+[Mac mini setup runbook](mac_mini_setup_runbook.md); deployment waits for that
+machine.
 
 An acceptable OPS-002 configuration must have two encrypted copies: one local
 and one on a physically or administratively separate destination. Encryption
@@ -94,11 +97,13 @@ silently pruning the last known-good copy. At least one sampled restore must:
 - validate every restored rich-text package; and
 - record the restored counts and hashes before the temporary copy is removed.
 
-This repository does not choose an off-device provider or create encryption
-keys automatically. Those are operator-controlled secrets and destinations.
+The approved off-device destination is a dedicated Backblaze B2 repository,
+paired with a separate Restic repository on an encrypted external SSD. This
+repository does not create either repository or its secrets automatically.
+Those remain operator-controlled and are commissioned only on the Mac mini.
 
-The read-only readiness check measures that operator state without creating or
-deleting anything:
+The read-only readiness check measures the current workstation state without
+creating or deleting anything:
 
 ```sh
 PYTHONPATH=src .venv/bin/python -m bowl_index.cli backup-readiness
@@ -109,3 +114,9 @@ It expects `IBI_BACKUP_GPG_RECIPIENT`, `IBI_LOCAL_BACKUP_DIR` and
 outside the repository, and the off-device destination must resolve to a
 different filesystem device. The check also requires encrypted bundles and at
 least one restore receipt before reporting ready.
+
+This command is an interim GPG-oriented prototype, not the approved Mac mini
+implementation. Commissioning replaces or extends it with Restic-aware checks
+for the encrypted APFS and B2 repositories, schedules, repository checks,
+Healthchecks delivery and independent restore receipts. A passing legacy audit
+alone cannot complete OPS-002.

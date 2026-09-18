@@ -410,7 +410,7 @@
      "status": "in_progress",
      "owner": "Mixed",
      "done_when": "Every retained document has lawful-acquisition notes, a content hash, completeness assessment and access restrictions; rich text preserves Unicode ancient scripts, editorial uncertainty, printed pagination and links back to page images without becoming public by default.",
-     "evidence": "The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. A versioned private TEI package contract and read-only validator now bind each transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. The template is checked in while packages remain under Git-ignored `data/private/rich_text/`. No real text has been transformed yet: the first bounded pilot remains gated by encrypted local and off-device backup plus a sampled restore."
+     "evidence": "The content-addressed private archive now holds four complete Brill corpus editions supplied during the Library of Congress visit, with file hashes, acquisition notes, visual checks, source scopes and explicit copyrighted status. Catalogue-level extraction is complete for 236 appearances. A versioned private TEI package contract and read-only validator now bind each transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. The template is checked in while packages remain under Git-ignored `data/private/rich_text/`. No real text has been transformed yet: the first bounded pilot remains gated by successful encrypted Restic restores from both the planned local SSD and Backblaze B2 repositories after the Mac mini arrives."
     },
     {
      "id": "ACCESS-003",
@@ -614,15 +614,16 @@
      "title": "Provision the Mac mini research runtime",
      "status": "queued",
      "owner": "Engineering",
-     "done_when": "Repository, isolated Python runtime, secrets storage, launch-on-boot service account, logs, health checks, and least-privilege filesystem layout are documented and reproducible."
+     "done_when": "Repository, isolated Python runtime, secrets storage, launch-on-boot service account, logs, health checks, and least-privilege filesystem layout are documented and reproducible.",
+     "evidence": "The canonical plan and arrival-day acceptance record are versioned in the [Mac mini setup runbook](mac_mini_setup_runbook.md). The primary-host role, FileVault baseline, separate administrator and standard research access, `~/Developer` Git layout, Tailscale-only remote administration, launchd services, logging and Healthchecks email are specified. Hardware-dependent work is deliberately queued until the Mac mini arrives; none of this configuration has been deployed or accepted."
     },
     {
      "id": "OPS-002",
      "title": "Configure encrypted local and off-device backups",
-     "status": "in_progress",
+     "status": "queued",
      "owner": "Engineering",
      "done_when": "Database, capture manifests, and private archive are backed up on schedule and a sampled restore has been completed successfully.",
-     "evidence": "A read-only `ibi backup-readiness` audit now checks GPG recipient resolution, writable local and off-device destinations outside the repository, separate filesystem devices, encrypted bundles, restore receipts and the local snapshot retention cap; the dated result is retained in `research/reviews/private_backup_readiness_2026-09-18.json`. The current audit is not ready: GPG is installed but no recipient is configured, neither destination is configured, there are zero encrypted bundles or restore receipts, and eleven unencrypted SQLite snapshots exceed the stated limit of ten. The private tree is about 1.17 GB, including 50 archived capture files totaling about 701 MB; no rich-text packages exist yet. No key or destination is selected automatically."
+     "evidence": "Waiting for the Mac mini and its dedicated 1 TB external SSD. The [Mac mini setup runbook](mac_mini_setup_runbook.md) specifies separate encrypted Restic repositories on the encrypted APFS SSD every four hours and Backblaze B2 daily, different repository passwords in macOS Keychain with offline recovery copies, Healthchecks email, explicit include/exclude boundaries and an independent sampled restore from each destination. The existing read-only `ibi backup-readiness` audit and dated result remain useful interim GPG-oriented evidence, not the target implementation or a completion gate. The current workstation still has no configured encrypted destination or restore receipt, and all eleven legacy SQLite snapshots are retained until both Restic restores pass. No key, account, schedule, transfer or deletion has been performed."
     },
     {
      "id": "OPS-003",
@@ -630,7 +631,7 @@
      "status": "queued",
      "owner": "Engineering",
      "done_when": "Approved collectors have bounded schedules, rate limits, idempotency, hashes/diffs, retry limits, failure alerts, and per-source disable switches.",
-     "evidence": "The corpus already has content hashes, idempotent manifest ingestion, search logs and lead states, which are enough for a read-only lead-generation pilot. Scheduling, rate policy, alert delivery, disable switches and shadow-run evidence are not implemented, so unattended corpus writes remain prohibited."
+     "evidence": "The corpus already has content hashes, idempotent manifest ingestion, search logs and lead states, which are enough for a read-only lead-generation pilot. The Mac mini runbook now defines the general launchd, logging, least-privilege, Tailscale, failure-alert and manual-disable baseline, but no collector schedule is deployed. Per-source rate policy, disable switches and shadow-run evidence remain unimplemented, so unattended corpus writes remain prohibited."
     },
     {
      "id": "OPS-004",
@@ -793,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Captured the approved Mac mini architecture in a versioned runbook without deploying it. The planned primary host uses FileVault, separate administration and runtime access, Git repositories under `~/Developer`, Tailscale-only remote administration, launchd services and Healthchecks email. Bowl Index backups use separate Restic repositories on a dedicated 1 TB encrypted APFS SSD every four hours and Backblaze B2 daily, with distinct Keychain-held passwords and offline recovery copies. OPS-002 returned to queued while waiting for the hardware; the current GPG-oriented readiness command remains an interim audit. ACCESS-002 stays in progress but its first live TEI pilot waits for successful restores from both destinations. All eleven legacy SQLite snapshots were retained; no account, key, service, schedule, transfer, corpus row or database changed."
+  },
   {
    "date": "2026-09-18",
    "note": "Defined the ACCESS-002 private rich-text package before transforming protected content. The new validator binds TEI to the source/capture ledger and independent hashes, requires explicit acquisition and copying restrictions, enforces private-only status, Unicode NFC and increasing printed-page/image anchors, and does not import or echo text. Added a Git-safe manifest template and operator documentation. Started OPS-002 with a read-only backup-readiness audit: the 1.17 GB private tree includes 50 archived capture files totaling 701 MB, while current blockers are no configured GPG recipient, no local or off-device destination, no encrypted bundle or restore receipt, and eleven unencrypted SQLite snapshots against a limit of ten. No private text, key, backup destination or corpus row changed."
@@ -1275,9 +1280,7 @@
   ]
  },
  "priorities": [
-  "ACCESS-002 / OPS-002: provision an operator-owned GPG recipient plus writable local and genuinely off-device destinations, create encrypted bundles covering the database, capture archive and private rich text, and record a sampled restore. Then run one bounded TEI pilot through the new validator before scaling transformation. The validator already enforces page-image anchors, ancient-script Unicode, explicit uncertainty-capable TEI, item-specific restrictions and private-only status.",
   "ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.",
-  "DISC-003 / OPS-003: convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically. Continuous scheduling remains gated by backup, alerting and disable switches.",
   "TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",
   "SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.",
   "SCHOL-006: classify the remaining 151 unclassified works by scope. Thirty-eight scholarship works now have a source-linked held document and 66 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",
@@ -1292,7 +1295,8 @@
   "RIGHTS-002: investigate evidence for 327 media records, starting by adding initial holds for the two newest rows and then reviewing shared institutional policies. The 325 earlier rows have provisional holds; zero media have completed rights decisions, and agents collect evidence for human review.",
   "TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.",
   "DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.",
-  "OPS: document restore and collector controls for the Mac mini. A local database backup was restore-checked; encryption, off-device backup and shadow operation remain outstanding.",
+  "OPS-001 / OPS-002 / ACCESS-002: defer commissioning until the Mac mini and dedicated 1 TB SSD arrive. Then apply the [Mac mini setup runbook](mac_mini_setup_runbook.md): provision the primary host, encrypted Restic repositories on APFS and Backblaze B2, Keychain and offline recovery copies, Healthchecks email, and independent restore receipts. Retain all eleven legacy SQLite snapshots and do not begin a real TEI pilot before both restores pass.",
+  "DISC-003 / OPS-003: after the Mac mini backup and alert gates pass, convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically.",
   "ACCESS-006: after a rights-safe prototype demonstrates the scholarship graph, test demand with scholars, librarians and museums before spending materially on commercial licenses or legal drafting."
  ]
 }

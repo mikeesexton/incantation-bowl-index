@@ -25,6 +25,29 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Mac mini setup plan capture
+
+**Claimed:** OPS-001, OPS-002, OPS-003, ACCESS-002
+**Corpus:** unchanged — state digest `ee8bac97e212`
+**Tests:** 247 Python tests passed; roadmap JSON parsed and regenerated; local documentation links resolved; corpus state matches
+
+- Added the canonical Mac mini setup runbook with the general security,
+  repository, Tailscale, launchd, logging and Healthchecks baseline; the Bowl
+  Index Restic/APFS/B2 overlay; arrival checklist; and acceptance record.
+- Returned OPS-002 to queued pending delivery, kept ACCESS-002 in progress but
+  gated its first TEI pilot on successful restores from both destinations, and
+  moved ACCESS-003 / RIGHTS-002 to the top of the actionable priority list.
+- Marked `ibi backup-readiness` as an interim GPG-oriented prototype. The target
+  is separate Restic repositories on a 1 TB encrypted APFS SSD every four hours
+  and Backblaze B2 daily, with separate Keychain passwords, offline recovery
+  copies and Healthchecks email.
+- Added a pointer to the runbook in the existing “Choose Mac Mini Setup”
+  conversation. “Mac Mini Monitor Setup” was left unchanged.
+- Performed no machine setup, account creation, secret generation, backup
+  transfer, scheduling or corpus write. All eleven legacy SQLite snapshots were
+  retained. Next: continue ACCESS-003 / RIGHTS-002 while Mac mini work waits for
+  the hardware; commission the runbook on arrival.
+
 ## 2026-09-18 — Codex — Private vault package and backup controls
 
 **Claimed:** ACCESS-002, OPS-002
