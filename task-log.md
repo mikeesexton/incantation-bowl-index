@@ -25,6 +25,34 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — HTML capture classification
+
+**Claimed:** ACCESS-004, SCHOL-005
+**Corpus:** changed (eleven document assessments; no object assertions) — state digest `ee8bac97e212`
+**Tests:** 239 Python tests passed; assessment manifest replayed with zero changes; archive and all three SQLite integrity checks passed
+
+- Verified the retained hashes and inspected the structure and substantive
+  content of all eleven HTML-only source captures. Classified nine complete
+  item or article pages with complete bounded extraction, one complete Schoyen
+  collection introduction with no finite item list, and the VMBA project
+  landing page as an excerpt with partial extraction.
+- Kept VMBA conservative: 64 JBA records recovered from dated Internet Archive
+  snapshots do not prove completeness for the original database, and the
+  retained Exeter landing page contains no bowl records itself.
+- The ledger now covers all 50 source-linked captures through 51 immutable,
+  hash-bound assessments: 48 sources have a complete document, Naveh-Shaked
+  1993 has front matter only, and VMBA has only the landing-page excerpt.
+  Thirty-nine sources have object-level extraction, 31 complete and eight
+  partial. Two unlinked local deposits remain outside the source-holding
+  denominator and were not silently assigned to a source.
+- Marked ACCESS-004 done and regenerated the roadmap, acquisition and enrichment
+  reports. The portfolio is now 23 done, 20 in progress and 21 queued; the
+  handoff gate remains 7/24 required tasks and 2/5 metric gates.
+- No identity, object assertion, claim, text, media, rights or publication
+  decision changed. Next: ACCESS-002 / OPS-002 — define the private rich-text
+  package and complete encrypted local plus off-device backup before document
+  transformation begins.
+
 ## 2026-09-17 — Codex — Residual PDF full-file review
 
 **Claimed:** ACCESS-004, SCHOL-005

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex: retained-HTML structural and content review",
+  "reviewed_at": "2026-09-18T19:56:12Z",
+  "method": "Verified each retained file against its capture SHA-256, parsed the saved HTML locally, and inspected title, main-content structure, record payload, opening and terminal matter. Completeness is a claim about the bounded saved page, not about the wider site or database; MIME type alone was not treated as evidence.",
+  "entries": [
+    {
+      "source_id": "SRC-16E6FD74D61C",
+      "capture_id": "CAP-106BCCBB3FF1",
+      "document_sha256": "97960a6b1fff08b08a671baada726cddfc6f91753b64e032b8dfda210e3edea3",
+      "classification": "substantive_project_page",
+      "extent": "complete",
+      "finding": "The saved LMU page contains the project title and complete main narrative describing conservation, study, imaging and 3D rendering of four terracotta incantation bowls. The four explicitly counted bowls are all represented in the corpus; their ordinals are internal disambiguators rather than accession numbers."
+    },
+    {
+      "source_id": "SRC-1F52948F96BC",
+      "capture_id": "CAP-F98CDC1B3A96",
+      "document_sha256": "52690d68c46f99762442f1fa1b64aa2f6e4b070e9212a92a2e73387a617428c5",
+      "classification": "item_record",
+      "extent": "complete",
+      "finding": "Although the HTML title is the generic collection-search title, the saved record payload contains exactly one complete ISAC item: A33980, accession 3633, with object class, dimensions, inscription flag, Nippur context, material, field number, description and history."
+    },
+    {
+      "source_id": "SRC-455442AA727F",
+      "capture_id": "CAP-16DA069FCC7F",
+      "document_sha256": "3ebd1b37aa022fce8613023da9d69034a620532ef23c9e4ee0ce973bc67c0f71",
+      "classification": "substantive_article_page",
+      "extent": "complete",
+      "finding": "The saved Artefact of the Month page contains Moriggi's complete article on IsIAO 5206, including its introduction, object description, shelfmark and dimensions, discussion and terminal references. Its single finite edition object is represented in the corpus."
+    },
+    {
+      "source_id": "SRC-637B15528678",
+      "capture_id": "CAP-0DA88F55EBE0",
+      "document_sha256": "73c215420ac00cd78a03d219bea2ef015ccbf889192e8e1ff772513d8d239a37",
+      "classification": "substantive_collection_introduction",
+      "extent": "complete",
+      "finding": "The saved Schoyen page contains the complete introductory narrative for Magical Literature: Incantation Bowls and Jugs, including collection-scale and publication-history statements. It is not an item catalogue and presents no finite page-level list to extract; site-wide navigation is not counted as document content."
+    },
+    {
+      "source_id": "SRC-81CBECDBBCA9",
+      "capture_id": "CAP-076CA0070A41",
+      "document_sha256": "f7f300f6d54fdcf620f3d234164a50dfb4279d715c818c428355474c4b514785",
+      "classification": "item_record",
+      "extent": "complete",
+      "finding": "The saved Trocadero listing contains the complete item page for 1495910: title, price, seven image references, description, dimensions, condition, provenance assertions and export-license statement. Its one offered object is represented in the corpus."
+    },
+    {
+      "source_id": "SRC-99F964DDA219",
+      "capture_id": "CAP-9AB3DB64A0CC",
+      "document_sha256": "e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+      "classification": "archived_project_landing_page",
+      "extent": "excerpt",
+      "finding": "The retained Exeter page only says that the VMBA site is archived and directs readers to an Internet Archive copy. It contains no bowl records. Sixty-four JBA records were recovered separately from dated Internet Archive snapshots, but neither this landing capture nor those records establishes completeness for the original database, so the holding remains an excerpt with partial extraction."
+    },
+    {
+      "source_id": "SRC-9BE3105F3F31",
+      "capture_id": "CAP-965354D853A7",
+      "document_sha256": "ddfa7a257e8d1d70629831af2d198d7d4334423cf0336ece603cebdc55804f91",
+      "classification": "item_record",
+      "extent": "complete",
+      "finding": "The saved Schoyen MS 2053/198 page contains the complete item record, including designation, title, description, origin and date, exhibition and publication notes, and the page's substantial partial text quotation. Its one item is represented in the corpus."
+    },
+    {
+      "source_id": "SRC-C54888E36130",
+      "capture_id": "CAP-EF6226A2D422",
+      "document_sha256": "34d30321af8c413fd28c0ae322ef8c6024f6b3da240a276fb9276a520fcfb240",
+      "classification": "item_record_with_context_list",
+      "extent": "complete",
+      "finding": "The saved Schoyen MS 2053/196 page contains the complete item record, commentary, publication and origin data, Bible references and an explicit contextual list of 33 related bowls. The principal record and all 33 named contextual objects are represented in the corpus."
+    },
+    {
+      "source_id": "SRC-CC2BEEE1E096",
+      "capture_id": "CAP-C65EFAF6B9E2",
+      "document_sha256": "030c04f4eaf875ba284cedbeb39228fc9a0bba511e429683240dbf0b2b4f2fa1",
+      "classification": "item_record",
+      "extent": "complete",
+      "finding": "The saved Schoyen MS 1928/19 page contains the complete item record, including text characterization, dimensions, script and line count, commentary, publication, exhibition, origin and date. Its one item is represented in the corpus."
+    },
+    {
+      "source_id": "SRC-CCB4BB4FAD99",
+      "capture_id": "CAP-835C446C1548",
+      "document_sha256": "16a0995614d335d2a2f0be5b1d71efbac443b84d5221ee9485516aad7f5da7f5",
+      "classification": "item_record",
+      "extent": "complete",
+      "finding": "The saved Schoyen MS 2056/12 page contains the complete item record, including text characterization, dimensions, Pahlavi script, demon imagery, commentary, publication, origin and date. Its one item is represented in the corpus."
+    },
+    {
+      "source_id": "SRC-D9FE0348C1C5",
+      "capture_id": "CAP-3C221CD90B0C",
+      "document_sha256": "f580aff4ae4e95937389ed6f6cfceaa6b118395f7c284c3b83195ea675d235da",
+      "classification": "substantive_article_page",
+      "extent": "complete",
+      "finding": "The saved article contains its publication date, full museum-visit narrative, object photographs and captions, the incantation-bowl caption, later gallery objects, conclusion, acknowledgements and author matter. The single incantation bowl in scope is represented; unrelated museum objects are outside the source's bowl-extraction scope."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex: source-linked extraction inventory",
+  "reviewed_at": "2026-09-18T19:56:12Z",
+  "method": "Counted current source-linked appearances, linked objects and claims in the private corpus, then checked the finite item sets against the retained HTML. This file is a hash-bound inventory of existing extraction, not a new object or claim manifest.",
+  "entries": [
+    {
+      "source_id": "SRC-16E6FD74D61C",
+      "object_extraction": "complete",
+      "appearances": 4,
+      "linked_objects": 4,
+      "claims": 12,
+      "original_artifacts": ["research/seeds/lmu_four.json"],
+      "basis": "All four bowls explicitly counted on the project page are represented."
+    },
+    {
+      "source_id": "SRC-1F52948F96BC",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 8,
+      "original_artifacts": ["research/seeds/postcampaign_museum_excavation_sweep_2026-09-04.jsonl"],
+      "basis": "The page's sole item, A33980, is represented."
+    },
+    {
+      "source_id": "SRC-455442AA727F",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 12,
+      "original_artifacts": ["research/seeds/language_collection_candidates_2026-09-04.jsonl", "research/seeds/postcampaign_museum_excavation_sweep_2026-09-04.jsonl"],
+      "basis": "The article's sole finite edition object, IsIAO 5206, is represented."
+    },
+    {
+      "source_id": "SRC-637B15528678",
+      "object_extraction": "none",
+      "appearances": 0,
+      "linked_objects": 0,
+      "claims": 0,
+      "original_artifacts": [],
+      "basis": "The complete page is contextual collection prose, not a finite item list."
+    },
+    {
+      "source_id": "SRC-81CBECDBBCA9",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 7,
+      "original_artifacts": ["research/seeds/image_sweep_candidates_2026-09-04.jsonl"],
+      "basis": "The dealer page's sole item, Trocadero 1495910, is represented."
+    },
+    {
+      "source_id": "SRC-99F964DDA219",
+      "object_extraction": "partial",
+      "appearances": 64,
+      "linked_objects": 64,
+      "claims": 213,
+      "original_artifacts": ["research/enrichment/vmba_schoyen_jba_1_64_2026-09-13.jsonl", "research/enrichment/vmba_schoyen_withheld_four_2026-09-13.jsonl"],
+      "basis": "JBA 1-64 are represented from dated Internet Archive snapshots, but the retained source capture is only a project landing page and does not establish database-wide completeness."
+    },
+    {
+      "source_id": "SRC-9BE3105F3F31",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 9,
+      "original_artifacts": ["data/public/2026-09-05/appearances.jsonl"],
+      "basis": "The page's sole item, MS 2053/198, is represented."
+    },
+    {
+      "source_id": "SRC-C54888E36130",
+      "object_extraction": "complete",
+      "appearances": 34,
+      "linked_objects": 34,
+      "claims": 74,
+      "original_artifacts": ["data/public/2026-09-05/appearances.jsonl"],
+      "basis": "The principal MS 2053/196 record and all 33 bowls explicitly named in its contextual Bible-citation lists are represented."
+    },
+    {
+      "source_id": "SRC-CC2BEEE1E096",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 9,
+      "original_artifacts": ["data/public/2026-09-05/appearances.jsonl"],
+      "basis": "The page's sole item, MS 1928/19, is represented."
+    },
+    {
+      "source_id": "SRC-CCB4BB4FAD99",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 8,
+      "original_artifacts": ["data/public/2026-09-05/appearances.jsonl"],
+      "basis": "The page's sole item, MS 2056/12, is represented."
+    },
+    {
+      "source_id": "SRC-D9FE0348C1C5",
+      "object_extraction": "complete",
+      "appearances": 1,
+      "linked_objects": 1,
+      "claims": 5,
+      "original_artifacts": ["research/seeds/image_sweep_candidates_2026-09-04.jsonl"],
+      "basis": "The article's single incantation bowl is represented; its other museum objects are outside bowl-corpus scope."
+    }
+  ]
+}

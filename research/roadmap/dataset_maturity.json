@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-09-17T00:00:00+00:00",
+ "updated_at": "2026-09-18T00:00:00+00:00",
  "portfolio_summary": {
   "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
   "strengths": [
@@ -22,7 +22,7 @@
    "Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 48 identities have a translation. The new protected editions are intentionally indexed without copying their text.",
    "Release rights are unreviewed: 327 media rows are present, zero have completed rights decisions and zero are approved for reuse; two newly introduced rows still need initial ledger holds.",
    "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
-   "Acquisition completeness is not yet measured corpus-wide: 50 of 862 sources have linked captures, 39 with PDFs and eleven with only non-PDF captures. The append-only document ledger now assesses all 39 PDF-linked sources through 40 holding rows: 38 sources have a complete document and Naveh-Shaked 1993 remains correctly limited to front matter. The eleven HTML-only captures remain explicitly unassessed. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.",
+   "Acquisition completeness is not yet measured corpus-wide: 50 of 862 sources have linked captures, 39 with PDFs and eleven with only non-PDF captures. All 50 captured sources are now assessed through 51 append-only holding rows: 48 sources have a complete document, Naveh-Shaked 1993 remains correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.",
    "Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run."
   ]
  },
@@ -423,10 +423,10 @@
     {
      "id": "ACCESS-004",
      "title": "Create a document-completeness and transformation ledger",
-     "status": "in_progress",
+     "status": "done",
      "owner": "Engineering",
      "done_when": "Each source holding distinguishes citation-only, excerpt, front matter, complete scan, physically inspected work, OCR, corrected rich text and object-level extraction, with dates, hashes and reviewer evidence.",
-     "evidence": "Migration 015 and `ibi ingest-document-assessment` add an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every assessment binds the retained document, review evidence and any OCR/rich-text or extraction artifact by SHA-256. All 39 PDF-linked sources now have 40 holding assessments: 38 sources have a complete document and Naveh-Shaked 1993 remains correctly limited to front matter. Ford 2023 retains both its one-page summary as an excerpt and its separately archived complete article. The final PDF tranche adds the complete Waller chapter, museum and auction catalogues, Moriggi 2024, Brand's working list, Levene-Bhayro 2006, Kedar's dissertation and the full Schwab journal volume. Twenty-nine sources have hash-bound object-level extraction, twenty-two complete and seven partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding. Only the eleven HTML-only captures remain explicit and unassessed."
+     "evidence": "Migration 015 and `ibi ingest-document-assessment` provide an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every source-linked capture is now covered: all 50 captured sources have 51 hash-bound assessments, comprising 48 sources with a complete document, Naveh-Shaked 1993 with front matter only, and the archived VMBA landing page as an excerpt; Ford 2023 also retains its separate summary excerpt beside its complete article. The eleven HTML holdings were inspected structurally and by content rather than classified from MIME type: nine item or article pages have complete bounded object extraction, the complete Schoyen collection introduction has no finite item list, and VMBA's 64 recovered JBA records remain partial because the landing capture cannot establish database-wide completeness. Thirty-nine sources now have hash-bound object-level extraction, 31 complete and eight partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding."
     },
     {
      "id": "ACCESS-005",
@@ -792,6 +792,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Completed ACCESS-004 by classifying all eleven retained HTML captures from local structural and content review. Nine bounded item or article pages have complete object extraction, the complete Schoyen collection introduction has no finite object list, and the VMBA project landing page remains an excerpt with partial extraction despite 64 separately recovered JBA records. The ledger now covers all 50 captured sources through 51 immutable, hash-bound assessments: 48 sources have a complete document, Naveh-Shaked 1993 has front matter only, and VMBA has only the landing-page excerpt. Thirty-nine sources have object-level extraction, 31 complete and eight partial. No object assertion, identity, rights or publication decision changed."
+  },
   {
    "date": "2026-09-17",
    "note": "Completed full-file rendered-page review of the eight residual PDF captures and added evidence-bound assessments for all eight. The Waller chapter, Oriental Institute highlights guide, Moriggi 2024 article, Brand working list, Levene-Bhayro 2006 article, Kedar dissertation, complete Schwab PSBA volume and Auction 57 catalogue are complete retained documents. Five have complete bounded object extraction; Waller, Kedar and Schwab remain partial rather than overstated. All 39 PDF-linked sources are now assessed through 40 holding rows, with 38 complete documents and the Naveh-Shaked 1993 front matter as the sole incomplete PDF holding. Eleven HTML-only captures remain. No object assertion, identity, rights or publication decision changed."
@@ -1266,7 +1270,6 @@
   ]
  },
  "priorities": [
-  "ACCESS-004 / SCHOL-005: finish the hash-bound document ledger by classifying the eleven remaining HTML-only captures as landing pages, item pages or substantive documents without inferring completeness from MIME type. All 39 PDF-linked sources now have rendered-page, hash-bound assessments.",
   "ACCESS-002 / OPS-002: define the private rich-text package and complete encrypted local plus off-device backup before transforming the new complete editions. Preserve printed page anchors, ancient-script Unicode, uncertainty markup and links to page images; keep the vault outside Git and public exports.",
   "ACCESS-003 / RIGHTS-002: audit the current public projection against the new layer rules, repair five suppressed but legitimate source-page links, and retain the existing fail-closed treatment for protected texts and all unapproved media.",
   "DISC-003 / OPS-003: convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically. Continuous scheduling remains gated by backup, alerting and disable switches.",
