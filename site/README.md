@@ -42,7 +42,10 @@ site/
 Counts are a snapshot, not a live feed, so the page needs rebuilding whenever
 the corpus moves enough to be worth republishing:
 
+This one runs from the **repo root**, not from here — it needs the corpus:
+
 ```sh
+cd ~/Developer/incantation-bowl-index
 PYTHONPATH=src .venv/bin/python scripts/build_public_site.py
 ```
 
@@ -51,16 +54,32 @@ containing an identity id, a corpus endpoint or a console route.
 
 ## First-time Cloudflare setup
 
+Every `wrangler` command below must run **from this directory**, not from the
+repo root and not from your home directory. Wrangler reads `wrangler.toml` and
+`schema.sql` relative to where it starts, so running it elsewhere fails with
+`Unable to read SQL text file "schema.sql"` — or, worse, succeeds at creating
+the database while silently leaving `database_id` unset here.
+
 ```sh
-cd site
-npx wrangler d1 create bowlam-interest        # paste the id into wrangler.toml
+cd ~/Developer/incantation-bowl-index/site
+```
+
+Then, once:
+
+```sh
+npx wrangler d1 list                                        # already created?
+npx wrangler d1 create bowlam-interest --update-config      # if not; writes the id below
 npx wrangler d1 execute bowlam-interest --remote --file=schema.sql
 ```
+
+`--update-config` is what fills in `database_id` in `wrangler.toml`. Without
+it you have to paste the id by hand, and a forgotten paste shows up later as
+a 503 from the signup form rather than an error at deploy time.
 
 ## Deploy
 
 ```sh
-cd site && npx wrangler pages deploy
+cd ~/Developer/incantation-bowl-index/site && npx wrangler pages deploy
 ```
 
 Then point the `bowlam.com` custom domain at the Pages project in the
@@ -69,7 +88,7 @@ Cloudflare dashboard.
 ## Read and export the interest list
 
 ```sh
-cd site
+cd ~/Developer/incantation-bowl-index/site
 npx wrangler d1 execute bowlam-interest --remote \
   --command "SELECT email, created_at FROM interest_active"
 ```
@@ -85,7 +104,9 @@ npx wrangler d1 execute bowlam-interest --remote \
 
 ## Before this goes live
 
-- [ ] Paste the real `database_id` into `wrangler.toml`.
+- [ ] Confirm `database_id` in `wrangler.toml` is a real id, not the
+      placeholder. `--update-config` sets it; running `d1 create` from any
+      other directory does not.
 - [ ] Apply `schema.sql` to the **remote** D1, not just the local one.
 - [ ] Decide what the unsubscribe link in your first mailing will point at. The
       page promises one-click unsubscribe; the schema supports it, but nothing
@@ -103,7 +124,7 @@ npx wrangler d1 execute bowlam-interest --remote \
 ## Local development
 
 ```sh
-cd site
+cd ~/Developer/incantation-bowl-index/site
 npx wrangler d1 execute bowlam-interest --local --file=schema.sql
 npx wrangler pages dev
 ```
