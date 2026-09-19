@@ -76,6 +76,12 @@ COVERAGE_COPY = {
 }
 
 
+# Milliseconds between one bar starting to grow and the next. With ~18 decades
+# this gives a cascade of roughly 2.4s on top of each bar's own 1.2s rise. The
+# console uses 120ms; a little slower reads better for someone scrolling gently.
+BAR_STAGGER_MS = 140
+
+
 def number(value: int) -> str:
     return f"{value:,}"
 
@@ -121,7 +127,8 @@ def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
             f'<g><title>{html.escape(title)}</title>'
             f'<rect class="intro-bar intro-bar-{index + 1}'
             f'{" intro-bar-current" if incomplete else ""}" x="{x - bar_width / 2:.1f}" '
-            f'y="{baseline - height:.1f}" width="{bar_width:.1f}" height="{height:.1f}"/>'
+            f'y="{baseline - height:.1f}" width="{bar_width:.1f}" height="{height:.1f}" '
+            f'style="animation-delay:{index * BAR_STAGGER_MS}ms"/>'
             f'{value_text}{axis_text}</g>'
         )
 
@@ -473,9 +480,14 @@ def render(payload: dict, snapshot_id: str, built_at: str) -> str:
 
     var reveal = new IntersectionObserver(function (entries) {{
       entries.forEach(function (entry) {{
-        if (entry.isIntersecting) revealNode(entry.target);
+        if (!entry.isIntersecting) return;
+        // The chart's bars cascade for several seconds, so it waits until it is
+        // genuinely on screen rather than starting on a first sliver.
+        var needed = entry.target.classList.contains("intro-chart-svg") ? 0.5 : 0.18;
+        if (entry.intersectionRatio < needed) return;
+        revealNode(entry.target);
       }});
-    }}, {{threshold: 0.18}});
+    }}, {{threshold: [0.18, 0.5]}});
     pending.forEach(function (node) {{ reveal.observe(node); }});
 
     // A fast scroll can carry a section past the viewport between observer
