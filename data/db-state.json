@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "93222ebdcd58566be5482affadeccc20e23a1a40cf0aa912d046549c3e4cce16",
+  "corpus_digest": "bbd29a6293248492a757622d3654e21fb232e89f2ce3cda936d081ec8f4ea5ce",
   "migrations": 15,
-  "note": "Retained four duplicate discovery rows as repository metadata and added three authoritative scholarship scope reviews.",
-  "recorded_at": "2026-09-19T17:07:31+00:00",
+  "note": "Reconciled three repository/OpenAlex duplicate clusters and corrected canonical Quzi-Faraj and Levene bibliography records; no scope judgments added",
+  "recorded_at": "2026-09-19T17:19:24+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -115,15 +115,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "46f3ad5938f72c84447b1bf31a533a549066882f4b4e73f8dca645319627d19c",
-      "rows": 36
+      "digest": "d848dd06caf89bb964d29aecbbaae964386bba1771056a9b886884a2d06913ea",
+      "rows": 41
     },
     "source_scope_reviews": {
       "digest": "d9b644b383cb2a002772fc885a0f09463a2721dd94c4ca8fd339abf4b07f3bcf",
       "rows": 88
     },
     "sources": {
-      "digest": "7e9531d9a44273bbfed24927c260dbe03602fd42a00cd181f0b8c9fc68877499",
+      "digest": "b8932392b243e834a1fa6cd2bff6764b06e7dfdb654d2e10dfcaef90ed572360",
       "rows": 862
     },
     "text_proofreading_reviews": {

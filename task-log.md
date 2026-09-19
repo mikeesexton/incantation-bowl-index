@@ -25,19 +25,29 @@ the dated reports under `data/reports/`.
 
 ---
 
-## 2026-09-19 — Codex — Remaining repository duplicate tranche (in progress)
+## 2026-09-19 — Codex — Remaining repository duplicate tranche
 
 **Claimed:** SCHOL-006
-**Corpus:** unchanged pending source review — state digest `93222ebdcd58`
-**Tests:** in progress
+**Corpus:** changed (five source corrections; three duplicate records retyped) —
+state digest `bbd29a629324`
+**Tests:** 261 Python tests passed; correction manifest replayed with zero
+changes; JSON, generated reports and corpus-state validation passed
 
-- Reviewing the remaining exact-title repository/OpenAlex clusters against
-  authoritative institutional records, retaining discovery provenance while
-  preventing duplicate scholarship counts.
-- Ambiguous same-title records and scope judgments without an authoritative
-  abstract, contents description or inspected text will remain unresolved.
-- Public-site files are outside this database-only workstream and will not be
-  touched.
+- Reconciled the Smelik 1978, Quzi–Faraj 2005 and Levene 2010 exact-title
+  repository/OpenAlex clusters. The three OpenAlex discovery rows remain as
+  repository metadata with replacement pointers rather than being deleted or
+  counted as extra scholarly works.
+- Corrected the Quzi–Faraj authorship and journal citation from two specialist
+  bibliographies, and replaced repository-host labels with actual publication
+  metadata for the Quzi–Faraj article and Levene chapter. The index moves from
+  210 works / 101 scoped / 109 unclassified to 207 / 101 / 106.
+- Left all three canonical works unclassified because the accessible official
+  records lack an abstract or full text; no title-only scope inference was
+  made. Ambiguous same-title clusters remain deferred.
+- No bowl, identity, reading, rights or public-release decision changed, and no
+  public-site file was touched. Next: pursue authoritative abstracts or complete
+  documents for the remaining scope backlog, or investigate deferred same-title
+  pairs only where independent bibliographic evidence is available.
 
 ## 2026-09-19 — Codex — Repository duplicate and scope tranche
 

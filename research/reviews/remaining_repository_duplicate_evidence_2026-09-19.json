@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T17:16:09Z",
+  "method": "Compared the remaining exact-title OpenAlex/repository clusters with official university repository metadata and specialist bibliographies. Repository and OpenAlex discovery rows are retained as metadata with replacement pointers; canonical work records retain the actual article or chapter type.",
+  "entries": [
+    {
+      "source_ids": [
+        "SRC-589994C2222B",
+        "SRC-D7DD2C56A96B"
+      ],
+      "authoritative_locator": "https://biblio.ugent.be/publication/378915",
+      "finding": "Ghent University's Academic Bibliography identifies one 1978 Bibliotheca Orientalis 35 article by Klaas Smelik, pages 174-177, with handle 1854/LU-378915. The only deposited file is a published-version PDF restricted to UGent users and the record supplies no abstract. SRC-589994C2222B is the canonical article; SRC-D7DD2C56A96B is the OpenAlex discovery row for the same work.",
+      "scope_disposition": "Left unclassified: the accessible record verifies bibliographic identity but does not describe the article's contents beyond its title."
+    },
+    {
+      "source_ids": [
+        "SRC-E689BC4C3787",
+        "SRC-FD7C9081F047"
+      ],
+      "authoritative_locator": "https://boa.unimib.it/handle/10281/200758",
+      "supporting_bibliography": "https://syriaca.org/cbss/KGV2U4CP",
+      "corroborating_bibliography": "https://mnamon.sns.it/index.php?id=26&page=Bibliografia",
+      "finding": "The University of Milano-Bicocca record identifies one 2005 Journal of the Academy of Sciences - Syriac Commission 21 article, pages 31-46, and marks the version-of-record file reserved. The Comprehensive Bibliography on Syriac Studies and Mnamon both supply the fuller authorship, Yusef Matti Quzi and Ali H. Faraj; Faraj's university CV supplies Academy of Sciences Press, Baghdad. SRC-E689BC4C3787 is the canonical article; SRC-FD7C9081F047 is the OpenAlex discovery row for the same work.",
+      "scope_disposition": "Left unclassified: the accessible records verify title, authorship, publication and language metadata but provide no abstract or inspected text."
+    },
+    {
+      "source_ids": [
+        "SRC-C40FB2ED8EE8",
+        "SRC-479F50E73B60"
+      ],
+      "authoritative_locator": "https://eprints.soton.ac.uk/cgi/oai2?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:eprints.soton.ac.uk:145717",
+      "repository_record": "https://eprints.soton.ac.uk/145717/",
+      "finding": "Southampton's public OAI-PMH record identifies one peer-reviewed book section by Dan Levene, dated 2010, in Ada Rapoport-Albert's edited volume Late Aramaic: The Literary and Linguistic Context of the Zohar, with publication status 'In Press' and no deposited full text. SRC-C40FB2ED8EE8 is the canonical chapter; SRC-479F50E73B60 is the OpenAlex discovery row for the same work.",
+      "scope_disposition": "Left unclassified: the official record contains no abstract or full text, and the title alone is not being used to infer an edition scope."
+    }
+  ],
+  "policy": "These findings repair bibliographic identity only. They do not validate object authenticity or provenance, resolve bowl identities, certify a reading, infer a work scope from its title, or grant permission to reproduce protected text or images."
+}
