@@ -78,6 +78,31 @@ class PublicSiteContentTests(unittest.TestCase):
         self.assertIn('action="/api/interest"', self.page)
         self.assertIn('type="email"', self.page)
 
+    def test_stylesheet_url_is_versioned(self):
+        """Pages caches public.css for four hours; index.html is revalidated
+        every time. Without a version in the URL a returning visitor pairs new
+        markup with the previous stylesheet until that cache expires."""
+        page = build.render(payload(), 'a' * 64, '19 September 2026', 'abc12345')
+        self.assertIn('href="public.css?v=abc12345"', page)
+        self.assertNotIn('href="public.css"', page)
+
+    def test_wordmark_letter_has_its_font_subset(self):
+        """The bet renders in Frank Ruhl Libre only if the Hebrew subset ships."""
+        self.assertIn('\u05d1', build.render(payload(), 'a' * 64, '19 September 2026'))
+        self.assertIn('frank-ruhl-libre-hebrew.woff2', build.PUBLIC_FONTS)
+        css = (ROOT / 'site' / 'src' / 'public.css').read_text(encoding='utf-8')
+        self.assertIn('frank-ruhl-libre-hebrew.woff2', css)
+
+    def test_headline_total_tracks_the_selected_category(self):
+        """The big number sat at the corpus total while the panel under it
+        described a subset. Both it and its label are now addressable."""
+        page = build.render(payload(), 'a' * 64, '19 September 2026')
+        self.assertIn('id="intro-total"', page)
+        self.assertIn('id="intro-total-label"', page)
+        self.assertIn('TOTAL_LABELS', page)
+        for key in build.COVERAGE_COPY:
+            self.assertIn(build.COVERAGE_COPY[key]['total_label'], page)
+
     def test_states_what_is_withheld(self):
         """ACCESS-008 asks the page to say what is deliberately not published."""
         self.assertIn('does not reproduce them', self.page)

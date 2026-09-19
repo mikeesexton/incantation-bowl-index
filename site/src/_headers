@@ -15,6 +15,13 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
+# The stylesheet is requested as public.css?v=<content hash>, so a changed file
+# is a changed URL and can be cached hard. Without the hash Pages serves it with
+# a 4-hour TTL, long enough for a returning visitor to get new markup styled by
+# the previous stylesheet.
+/public.css
+  Cache-Control: public, max-age=31536000, immutable
+
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
