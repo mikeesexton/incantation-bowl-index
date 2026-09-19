@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Deferred bibliography repair tranche
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (eight source corrections, three duplicate-record retypes,
+five append-only scope reviews) — state digest `49ae77126eff`
+**Tests:** 249 Python tests passed; correction and scope manifests replayed with
+zero changes; JSON, generated reports and corpus-state validation passed
+
+- Corrected the Morgenstern 2007 author, Yamauchi article issue/DOI/date,
+  canonical Morgenstern 2004 metadata, Burberry thesis repository and rights
+  metadata, and Prescott-Rasmussen authorship and citation from authoritative
+  publisher, university and repository records.
+- Retained three duplicate Waller, Crossref and OpenAlex discovery rows as
+  repository metadata with replacement-source pointers rather than deleting
+  their provenance or counting them as separate scholarly works.
+- Classified two single-object editions, one corpus edition, one synthesis and
+  one provenance-ethics study. The cleaned index moves from 217 works / 93
+  scoped / 124 unclassified to 214 works / 98 scoped / 116 unclassified; 39
+  works still have source-linked held documents.
+- Corrected Burberry's repository rights status from open license to
+  copyrighted: the public University of Exeter file is explicitly all rights
+  reserved. No object, identity, reading, media-rights clearance or public-
+  release decision changed. Next: acquire and assess the now-located Burberry
+  thesis, or continue SCHOL-006 from authoritative abstracts and contents.
+
 ## 2026-09-19 — Codex — Older-literature scope tranche
 
 **Claimed:** SCHOL-006

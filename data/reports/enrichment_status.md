@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**376** identities triggered raw difference flags. Current reviews support **37** compatible field-level instances and **13** substantive instances. **545** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**376** identities triggered raw difference flags. Current reviews support **36** compatible field-level instances and **13** substantive instances. **546** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

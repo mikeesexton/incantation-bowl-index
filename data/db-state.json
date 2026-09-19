@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "5e67174bd38c17440605455b1d3186422073345f998dd4e8c9bffa1eccbb89e7",
+  "corpus_digest": "49ae77126eff1313e3bfbbd34fae8f9f3381b40a8a6b7a2f165d1f24be80847f",
   "migrations": 15,
-  "note": "Added five evidence-backed older-work scholarship scope reviews",
-  "recorded_at": "2026-09-19T12:14:53+00:00",
+  "note": "Repaired eight deferred bibliography records, retyped three duplicate discovery records, and classified five works",
+  "recorded_at": "2026-09-19T13:34:29+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -115,15 +115,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "1c081bd3a34bd17455a7268d43ae87833ee416efcb98f1622fbaa5ae6668efc5",
-      "rows": 23
+      "digest": "0cbc19ee3aadf502899b37399fa06a82e49e9d1d3486b8aeeb1f2a09e0711732",
+      "rows": 31
     },
     "source_scope_reviews": {
-      "digest": "da472bebc0bc4a98f2f3f27a9212572dd545fda02e77155d0fd40b58196f3d0a",
-      "rows": 80
+      "digest": "3bec10c87d5fd4af0edb5fbcc03ce967270d66573cf8f313f5f754b5a1b112cd",
+      "rows": 85
     },
     "sources": {
-      "digest": "26a1888560672a3c9e57bef06794e1fbe05fa6d1e8b48a49e553a39933fdc86c",
+      "digest": "6e21029a3e7a9aead11c75725ddd4291067aa27ccf1877ed458a786dd24e1365",
       "rows": 862
     },
     "text_proofreading_reviews": {

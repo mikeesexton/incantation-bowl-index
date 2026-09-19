@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T13:30:37Z",
+  "method": "Compared the deferred source rows with publisher, author-institution, institutional-repository and original discovery-metadata records. Duplicate discovery and bibliography records are retained as repository metadata with replacement-source pointers rather than deleted.",
+  "entries": [
+    {
+      "source_ids": [
+        "SRC-1A922C3F041F",
+        "SRC-ED9C9D8C07C1"
+      ],
+      "authoritative_locator": "https://poj.peeters-leuven.be/content.php?id=2020266&url=article",
+      "finding": "Peeters identifies Matthew Morgenstern as the sole author, Le Museon 120 issue 1-2 (2007), pages 5-27, DOI 10.2143/MUS.120.1.2020266. SRC-1A922C3F041F is the article record; SRC-ED9C9D8C07C1 is the duplicate citation parsed from Waller's bibliography and is retained as repository metadata pointing to the article. The publisher abstract says the article presents a new edition, translation and philological notes for BM 91767."
+    },
+    {
+      "source_id": "SRC-0E3CF64AADCA",
+      "authoritative_locator": "https://poj.peeters-leuven.be/content.php?id=504467&url=article",
+      "finding": "Peeters gives the title Mandaic Incantations: Lead Rolls and Magic Bowls, author Edwin M. Yamauchi, ARAM 11 issue 2 (1999-2000), pages 253-268, DOI 10.2143/ARAM.11.2.504467. The abstract describes a survey of Mandaic script and publications plus first publication of one Miami University Museum bowl."
+    },
+    {
+      "source_ids": [
+        "SRC-DF29C7D96B98",
+        "SRC-62F5BFBBBF01"
+      ],
+      "authoritative_locator": "https://cris.tau.ac.il/en/publications/notes-on-a-recently-published-magic-bowl/",
+      "finding": "Tel Aviv University's record identifies Matthew Morgenstern, Aramaic Studies 2 issue 2 (2004), pages 207-222 plus plate 306, DOI 10.1177/147783510400200204. SRC-DF29C7D96B98 is retained as the article record. SRC-62F5BFBBBF01 is the duplicate Crossref-discovery record carrying a legacy Brill DOI and is retained as repository metadata pointing to the article. The abstract describes a new transcription, translation and interpretation of BM 135563."
+    },
+    {
+      "source_ids": [
+        "SRC-09196BAF91BA",
+        "SRC-53B93C8C8A0E"
+      ],
+      "authoritative_locator": "https://api.figshare.com/v2/articles/29841566",
+      "finding": "The University of Exeter repository API identifies A. Burberry's 2020 PhD thesis, handle 10871/123587, publisher University of Exeter, a downloadable 7.3 MB PDF and an all-rights-reserved license. Its description states that the thesis gives first editions of twenty-five Berlin bowls with transcription, English translation, philological notes, artwork sketches, commentary and glossaries. SRC-53B93C8C8A0E is retained as the thesis; SRC-09196BAF91BA is the duplicate OpenAlex discovery record and is retained as repository metadata pointing to it."
+    },
+    {
+      "source_id": "SRC-6729B3C461D7",
+      "authoritative_locator": "https://www.mdpi.com/2571-9408/3/1/5",
+      "finding": "The MDPI article page identifies Christopher Prescott and Josephine Munch Rasmussen as authors, Heritage 3 issue 1 (2020), pages 68-97, DOI 10.3390/heritage3010005. The abstract and article frame a provenance and research-ethics study of the Schoyen Collection, antiquities trafficking, collectors, scholars and institutions."
+    }
+  ],
+  "policy": "These corrections repair bibliographic identity and work scope only. They do not validate object provenance claims, readings, translations, identities, rights ownership, or permission to reproduce protected content."
+}
