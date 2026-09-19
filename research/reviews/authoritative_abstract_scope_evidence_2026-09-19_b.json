@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T11:54:47Z",
+  "method": "Scope was assigned only where a publisher, journal, or university repository supplied a sufficiently specific abstract describing the work's actual treatment. Titles alone and third-party summaries were not treated as sufficient evidence.",
+  "policy": "These notes support work-level scope classification only. They make no claim about complete object extraction, preferred readings, identity, rights, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-D97F8D33A387",
+      "proposed_scope": "linguistic_study",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article-abstract/66/1/27/6145766; DOI 10.1093/jss/fgaa038",
+      "finding": "The Oxford University Press abstract says the article uses bowl orthography as early evidence for the Babylonian Hebrew vocalization tradition and analyzes characteristic vowel and spelling features."
+    },
+    {
+      "source_id": "SRC-33DAA3253A63",
+      "proposed_scope": "linguistic_study",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/on-some-readings-and-interpretations-in-the-aramaic-incantation-bowls-and-related-texts/A2573BEC02D68EB83AFB0139CB476D1C; DOI 10.1017/S0041977X17000465",
+      "finding": "The Cambridge University Press abstract describes a philological re-examination of obscure passages, new lexemes and meanings in the Aramaic bowls; it also notes a preliminary edition of Nippur 12 N 387, but the stated organizing purpose is linguistic."
+    },
+    {
+      "source_id": "SRC-01E58FA07682",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_repository_abstract",
+      "locator": "https://iris.unive.it/handle/10278/3725274; DOI 10.1163/15700720-12341310",
+      "finding": "The Ca' Foscari repository abstract says the article studies the use of Ephesians 6:10-17 on IBC 3 and uses it to discuss biblical citation and religious identification in late-antique magic."
+    },
+    {
+      "source_id": "SRC-8259B2E9DA09",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_repository_abstract",
+      "locator": "https://iris.unive.it/handle/10278/3729000; DOI 10.1515/janeh-2020-0004",
+      "finding": "The Ca' Foscari repository abstract describes an analysis of Northern Mesopotamian demons on one bowl and their possible implications for the afterlife of Hatrene inhabitants and cults."
+    },
+    {
+      "source_id": "SRC-2B329A1D4550",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "journal_abstract",
+      "locator": "https://www.lockwoodonlinejournals.com/index.php/jaos/article/view/962; DOI 10.7817/jameroriesoci.138.4.0863",
+      "finding": "The journal abstract says the article compares late-antique double-bowl sets with earlier Mesopotamian double-jar burials and proposes that the bowl configuration symbolically buried hostile entities."
+    },
+    {
+      "source_id": "SRC-8783127BF3E4",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_abstract",
+      "locator": "https://research.rug.nl/en/publications/transferring-performativity-from-speech-to-writing-illocutionary-/; DOI 10.1017/S0041977X19000363",
+      "finding": "The University of Groningen abstract describes a study of orality, textuality and performative utterances across bowl spells, arguing for a transfer of performativity from speech to writing."
+    },
+    {
+      "source_id": "SRC-0DE38025EFAE",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://brill.com/view/journals/arst/13/1/article-p54_4.xml; DOI 10.1163/17455227-01301005",
+      "finding": "The Brill abstract says the article compares examples of lost midrashim in the New Testament and Aramaic bowls to demonstrate the bowls' significance for early Jewish literature."
+    },
+    {
+      "source_id": "SRC-FA9299496E5D",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_repository_abstract",
+      "locator": "https://www.iris.unict.it/handle/20.500.11769/32690; DOI 10.1163/17455227-01301007",
+      "finding": "The University of Catania abstract describes a linguistic and cultural reconsideration of how a Jewish divorce formula was translated and adapted in a series of Syriac bowl spells."
+    },
+    {
+      "source_id": "SRC-8008307DAAEE",
+      "proposed_scope": "synthesis",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://compass.onlinelibrary.wiley.com/doi/10.1111/j.1749-8171.2007.00029.x",
+      "finding": "The Wiley abstract defines the late-antique Aramaic incantation-text corpus, surveys its religious content, and identifies the field's major questions about language, identity, literacy, praxis and demonology."
+    },
+    {
+      "source_id": "SRC-30F5C3AD388A",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article-abstract/58/2/241/1712151; DOI 10.1093/jss/fgt002",
+      "finding": "The Oxford University Press abstract says the article re-analyzes and newly interprets one previously published Iraq Museum bowl, IM 9736, including a fresh reading that identifies it as a separation spell."
+    },
+    {
+      "source_id": "SRC-A08F75BDD59C",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article-abstract/52/1/59/1719483; DOI 10.1093/jss/fgl037",
+      "finding": "The Oxford University Press abstract presents and analyzes the six-part text of one bowl, Moussaieff 164, including its adjurations, threats, biblical verses and literary parallels."
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "SRC-CC72F830EAAF",
+      "reason": "The publisher page is blocked to automated access and only a third-party summary was available; the title and summary were not used as a substitute for authoritative evidence."
+    },
+    {
+      "source_ids": [
+        "SRC-09196BAF91BA",
+        "SRC-53B93C8C8A0E"
+      ],
+      "reason": "The two records appear to describe the same Burberry thesis; bibliographic reconciliation should precede scope review."
+    },
+    {
+      "source_id": "SRC-6729B3C461D7",
+      "reason": "The located MDPI article has different authors from the indexed source record; correct the source metadata before classifying it."
+    }
+  ]
+}

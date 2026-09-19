@@ -25,6 +25,28 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Second authoritative-abstract scope tranche
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (eleven append-only source-scope reviews) — state digest
+`323415682b26`
+**Tests:** 249 Python tests passed; the scope manifest replayed with zero changes;
+JSON, generated reports and corpus-state validation passed
+
+- Classified eleven previously unclassified works from publisher, journal and
+  university repository abstracts: two linguistic studies, six thematic
+  studies, two single-object editions or re-editions, and one synthesis.
+- Scope coverage rises from 77 to 88 of 217 works and the unclassified backlog
+  falls from 140 to 129; the source-linked held-document count remains 39.
+- Left Amsler 2023 unclassified because its publisher page was blocked and only
+  a third-party summary was accessible. Left two apparent Burberry thesis
+  duplicates pending bibliographic reconciliation and a Schøyen-provenance
+  record pending correction of conflicting author metadata.
+- Regenerated the maturity roadmap, campaign report and enrichment reports. No
+  title-only inference, object, identity, reading, rights or public-release
+  decision was made. Next: continue SCHOL-006 with another evidence-backed
+  cohort or correct the explicitly deferred bibliography before classifying it.
+
 ## 2026-09-19 — Codex — Sixteen-work scholarship scope tranche
 
 **Claimed:** SCHOL-006
