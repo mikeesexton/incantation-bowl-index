@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T17:29:30Z",
+  "method": "Scope was assigned only where a university repository, publisher description, publisher-hosted abstract or publisher issue record described the work in enough detail to distinguish an edition, synthesis, thematic study or provenance-and-ethics study. Titles alone were not treated as sufficient evidence.",
+  "policy": "These notes support work-level scope classification only. They make no claim about complete object extraction, preferred readings, object identity, authenticity, rights, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-EB27DA285DC5",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "university_repository_abstract",
+      "locator": "https://publications.hse.ru/en/chapters/211068754",
+      "finding": "The HSE University record says the State Hermitage holds eleven bowls and that the paper is the first publication of the entire collection, based on collations of the originals."
+    },
+    {
+      "source_id": "SRC-7BA17B55FC70",
+      "proposed_scope": "synthesis",
+      "evidence_type": "publisher_description",
+      "locator": "https://wsupress.wayne.edu/9780814336304/",
+      "finding": "Wayne State University Press describes a comprehensive study of early Jewish magic covering the phenomenon, sources, research methods and history of scholarship, with bowls among a wider body of evidence."
+    },
+    {
+      "source_id": "SRC-7FF35DD224D5",
+      "proposed_scope": "provenance_ethics",
+      "evidence_type": "research_project_full_article",
+      "locator": "https://traffickingculture.org/app/uploads/2014/11/Brodie-2014-Incantation-Bowls.pdf; published version represented by the indexed 2016 chapter",
+      "finding": "The complete article hosted by the University of Glasgow-led Trafficking Culture project states in its abstract and conclusion that it examines legal and ethical problems raised by collecting and studying unprovenanced, likely looted incantation bowls."
+    },
+    {
+      "source_id": "SRC-EAA1816C2A9E",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://lockwoodonlinejournals.com/index.php/jaos/article/view/1935; DOI 10.7817/jameroriesoci.133.1.0111",
+      "finding": "The journal abstract identifies the contribution as a response to arguments about Morgenstern's edition of BM 135563 and its terminology, rather than a new edition or a bounded object corpus."
+    },
+    {
+      "source_id": "SRC-83A3DFDE7924",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_book_preview",
+      "locator": "https://www.jstor.org/stable/j.ctt32bzp2.17; DOI 10.2307/j.ctt32bzp2.17",
+      "finding": "The chapter preview explicitly calls the work a preliminary survey of the Moussaieff Collection's Mandaic-script magic texts; it notes that only selected Jewish-script items had been published and that other materials were being prepared elsewhere."
+    },
+    {
+      "source_id": "SRC-97E75F8B4122",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_issue_section",
+      "locator": "https://lockwoodonlinejournals.com/index.php/jaos/article/view/1385; DOI 10.7817/jameroriesoci.136.3.0630",
+      "finding": "The journal record places Stadel's four-page discussion of Aramaic Bowl Spells volume one in the issue's Reviews section; it is a scholarly review, not the reviewed corpus edition itself."
+    },
+    {
+      "source_id": "SRC-A41DA8D48F0D",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_review_text_and_issue_record",
+      "locator": "https://brill.com/view/journals/aioo/77/1-2/article-p329_15.pdf; DOI 10.1163/24685631-12340038",
+      "finding": "Brill places Lusini's two-page contribution in the issue's Recensioni section, and the publisher-hosted text reviews Moriggi's methods, corpus coverage and linguistic contribution rather than presenting a separate object edition."
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "SRC-90F8951B4AA3",
+      "reason": "The university record provides a licensed full-text link but no abstract, while the publisher page exposes no abstract without paid access. The work remains unclassified rather than relying on its title alone."
+    },
+    {
+      "source_id": "SRC-CC72F830EAAF",
+      "reason": "Project MUSE blocks automated inspection and the accessible authoritative issue record gives only the title and pages. A third-party abstract was not used as the classification basis."
+    },
+    {
+      "source_id": "SRC-17A7CA53F7DB",
+      "reason": "The official article identifies Mykhailo Yelnykov as author and concerns a fourteenth-century Arabic metal magic bowl rather than a late-antique Aramaic incantation bowl. The indexed authorship and collection relevance need bibliographic review before any scope decision."
+    }
+  ]
+}

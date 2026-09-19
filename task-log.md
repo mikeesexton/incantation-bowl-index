@@ -25,6 +25,32 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — University and publisher scope tranche
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (seven append-only source-scope reviews) — state digest
+`5b93712259bd`
+**Tests:** 261 Python tests passed; scope manifest replayed with zero changes;
+JSON, generated reports and corpus-state validation passed
+
+- Classified seven works from university and publisher evidence: the State
+  Hermitage collection paper as a corpus edition, Harari 2017 as a synthesis,
+  Brodie 2016 as a provenance-and-ethics study, and four focused studies or
+  review essays as thematic studies.
+- Scope coverage rises from 101 to 108 of 207 scholarship works; the honest
+  unclassified backlog falls from 106 to 99. Evidence notes are separate from
+  the append-only decisions and record both the inspected locators and three
+  deliberately deferred records.
+- Waller 2019 and Amsler 2023 remain unclassified because accessible
+  authoritative records did not expose enough content beyond their titles.
+  The 2025 Arabic metal-bowl record remains deferred because its indexed author
+  conflicts with the official article and its relevance to the late-antique
+  Aramaic corpus needs review.
+- No bowl, identity, reading, authenticity, rights or public-release decision
+  changed. Next: repair the 2025 Arabic metal-bowl bibliography and decide its
+  collection relevance, or continue SCHOL-006 from complete documents and
+  authoritative abstracts rather than titles alone.
+
 ## 2026-09-19 — Codex — Remaining repository duplicate tranche
 
 **Claimed:** SCHOL-006
