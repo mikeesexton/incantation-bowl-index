@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Evidence-backed scholarship scope tranche (in progress)
+
+**Claimed:** SCHOL-006
+**Corpus:** unchanged pending source review — state digest `2edc733ab7c8`
+**Tests:** in progress
+
+- Reviewing currently unclassified scholarly works that have complete local
+  documents or sufficiently specific authoritative abstracts and contents.
+- Scope decisions will describe the work, not infer object readings or resolve
+  identities; ambiguous records will remain unclassified.
+- Claude's `site/` and public deployment work are explicitly out of scope.
+
 ## 2026-09-19 — Claude — Build and deploy the bowlam.com landing page
 
 **Claimed:** ACCESS-008 (deployed to pages.dev; bowlam.com DNS not changed)
@@ -74,8 +86,29 @@ local D1 through `wrangler pages dev`.
   console's version reflects real per-bowl flags. The caption says so rather
   than implying per-bowl truth. If that distinction is not wanted, the section
   should show counts alone.
-- Next session: privacy notice and an unsubscribe destination, then the
-  bowlam.com DNS flip. The D1 id and remote schema are now done.
+- bowlam.com now resolves through Cloudflare and serves the page; the DNS move
+  was Mike's, done outside this session.
+- Ported the two homepage animations that were dropped when the public page was
+  extracted from the console: the rediscovery years counting up from 750 on an
+  eased ramp, and the coverage chapters driving the circle field as you scroll.
+  Everything else was already firing; the report of "animations not working"
+  was these two absences, not a broken observer.
+- Found and fixed a real defect while verifying: the reveal targets start
+  hidden (map find region at opacity 0, chart bars at scaleY(.02)), so a fast
+  scroll that carried a section past the viewport between IntersectionObserver
+  samples left that content permanently invisible. Reproduced on the live site
+  — the map's shaded region never appeared. A scroll handler now reveals
+  anything already above the viewport.
+- Note for whoever tests this next: driving the page with `scrollTo` or
+  `scrollIntoView` from injected JavaScript does **not** reliably produce
+  IntersectionObserver samples, and makes working reveals look broken. Use real
+  scroll input. An hour went into chasing that phantom.
+- Cloudflare injects its Web Analytics beacon at the edge, and the page's CSP
+  blocks it, which logs a console error on every load. The page promises no
+  third-party tracking, so blocking is the right outcome; either disable Web
+  Analytics for this project or accept the console noise.
+- Next session: privacy notice and an unsubscribe destination. The D1 id and
+  remote schema are done.
   ACCESS-008 stays open in the roadmap; `research/roadmap/dataset_maturity.json`
   is currently modified in Codex's working tree, so I left its status alone
   rather than editing a file another agent has open.
