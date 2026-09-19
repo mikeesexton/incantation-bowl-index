@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "6582d8671ff4d6f2415022542ff7c1d39ca9ef6a85cb7982fa352b7417ddeb52",
+  "corpus_digest": "06505880b3e8ea892304ef7d4dbc7191ce170ea2c351ae02c15e3414a35395a2",
   "migrations": 15,
-  "note": "Corrected four scholarship records and added four evidence-backed scope reviews.",
-  "recorded_at": "2026-09-19T17:43:28+00:00",
-  "recorded_by": "Codex",
+  "note": "SCHOL-006: six append-only source-scope reviews from three complete open documents and three authoritative publisher or institutional records",
+  "recorded_at": "2026-09-19T19:26:49+00:00",
+  "recorded_by": "Claude",
   "schema_version": "015_document_assessments",
   "tables": {
     "appearance_object_links": {
@@ -119,8 +119,8 @@
       "rows": 45
     },
     "source_scope_reviews": {
-      "digest": "a1c92e8ac126f924a71dfd764931948f46dca4c0090c113f3e982dbfcab406ce",
-      "rows": 99
+      "digest": "8b4859848cdae420925a89f07b3b93a57563a740e858a6d93534db85eb459d8f",
+      "rows": 105
     },
     "sources": {
       "digest": "b9655abef03baa68ed1d02cd4d51bbf50a4bca0275d138cc2683b6fb4fc11e28",

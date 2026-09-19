@@ -25,16 +25,53 @@ the dated reports under `data/reports/`.
 
 ---
 
-## 2026-09-19 — Claude — SCHOL-006 pre-1930 open-document tranche (IN PROGRESS)
+## 2026-09-19 — Claude — SCHOL-006 open-document scope tranche
 
 **Claimed:** SCHOL-006
-**Corpus:** unchanged so far — baseline state digest `6582d8671ff4`
-**Tests:** not yet run
+**Corpus:** changed (six append-only source-scope reviews) — state digest
+`06505880b3e8`
+**Tests:** 264 Python tests passed; the scope manifest replayed with zero
+changes; roadmap and enrichment reports regenerated
 
-- Session opened; `ibi state` reported `match` against Codex's 17:43 UTC baseline.
-- Claiming SCHOL-006 to classify pre-1930 public-domain works whose complete
-  documents are openly available (Persée, MENAdoc, archive.org, Gallica).
-- This entry is a claim marker and will be completed before commit.
+- Classified six works. Three were read as complete open documents rather than
+  from descriptions: Ellis 1853 in Layard's *Discoveries* is a **corpus
+  edition** — it prints transcriptions reduced to Hebrew or Syriac characters,
+  translations and philological remarks for a numbered series of bowls;
+  Myhrman 1909 says his new material "is limited to a single text" and is a
+  **single-object edition**; Babelon and Schwab 1882 edit one Bibliothèque
+  Nationale vase and are the same. Three came from authoritative records:
+  Shaked, Ford and Bhayro 2013 (sixty-four Schøyen bowls, Bar-Ilan record) and
+  Naveh and Shaked 1987 (all legible Aramaic amulets plus thirteen unpublished
+  bowls, publisher description) are **corpus editions**; Mokhtarian 2015 is a
+  **thematic study** per the UC Press description.
+- Scope coverage rises from 112 to 118 of 207 scholarship works; the honest
+  unclassified backlog falls from 95 to 89. No bowl, identity, reading,
+  authenticity, rights approval or public-release decision changed.
+- Myhrman 1909 says Ellis published seven bowls; Babelon and Schwab 1882 say
+  six. Both counts are recorded in the evidence manifest and neither was
+  adopted — the scope decision does not depend on the total. Both independently
+  give the Layard locator as p. 509ff., Babelon and Schwab as p. 509-526, which
+  the held citation truncates at 509. **A locator repair is available here and
+  was deliberately left for a session claiming source corrections.**
+- Seven further works were inspected and deliberately left unclassified, with
+  reasons recorded in the evidence manifest. Persée and Gallica disallow this
+  project's user agent for all paths, which rules out automated retrieval of
+  Halévy 1877 and Schwab 1915; the Internet Archive's *Revue d'assyriologie*
+  volume 1 returns 401; the MENAdoc ZDMG volume-9 address now redirects to a
+  search page; the openly scanned ZA items do not include volume 9; and the
+  AJS Review notice of Levene 2003 is paywalled. Nothing was bypassed, and no
+  scope was inferred from a title.
+- **Concurrency note:** a second Claude session worked the public site in this
+  same tree during this session and committed `beed079`, `112add3` and
+  `76fe5c0`. That last commit swept up this entry's in-progress claim marker as
+  a side effect of committing `task-log.md`. Its work is site-layer only and
+  the corpus drift at 19:26 UTC was entirely this session's six scope rows.
+- Next: the same seam is still productive — pre-1930 public-domain scholarship
+  whose complete text is readable on a robots-permitted host, and the field's
+  major editions where a publisher or institutional record states how many
+  objects are edited. The higher-level handoff priorities are unchanged: Penn
+  media-rights review, edition-locator coverage for TEXT-001, and the queued
+  high-impact acquisitions.
 
 ## 2026-09-19 — Codex — Scholarship bibliography and scope continuation
 

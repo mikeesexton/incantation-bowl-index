@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Claude",
+  "reviewed_at": "2026-09-19T19:23:32Z",
+  "method": "Scope was assigned only from a complete document read end to end, or from an authoritative institutional or publisher description of the work's contents. Titles and page ranges alone were never treated as sufficient. Archived full texts were read from robots-permitted hosts only; Persee and Gallica disallow this project's user agent and were therefore not retrieved for archival, and no access control was bypassed anywhere.",
+  "policy": "These notes support work-level scope classification only. They make no claim about complete object extraction, preferred readings, object identity, authenticity, or permission to reproduce text or images. Counts reported by different sources are retained side by side rather than reconciled.",
+  "entries": [
+    {
+      "source_id": "SRC-5EDC66BBEFE7",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "complete_open_document",
+      "locator": "Layard, Discoveries in the Ruins of Nineveh and Babylon (New York: Putnam), chap. XXII, 'Jewish Relics'; Internet Archive item discoveriesinru01layagoog, full text; separately headed sections 'Inscription on the Bowl No. 2 / No. 3 / No. 4' and a Syriac transcription of No. 6, with closing remarks naming No. 1 as the 'Bill of Divorce to the Devils' and Nos. 5 and 6 as later",
+      "finding": "Ellis supplies transcriptions reduced to Hebrew or Syriac characters, translations, and philological remarks for a numbered series of Babylonian bowls, and closes with a summary of the fragmentary pieces. He states explicitly that in many passages the translation is conjecture because the ink is faded and several letter pairs are not distinguished. This is an edition of many objects."
+    },
+    {
+      "source_id": "SRC-5EDC66BBEFE7",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "conflicting_secondary_counts",
+      "locator": "Myhrman 1909, Hilprecht Anniversary Volume, printed p. 342; Babelon and Schwab 1882, REJ 4, printed p. 166",
+      "finding": "Two contemporaneous scholars disagree on how many bowls Ellis published. Myhrman writes that Layard's bowls were 'seven in number'; Babelon and Schwab write that the patères are 'au nombre de six'. The source record's own title says seven. Both counts are recorded and neither is adopted; the scope decision does not depend on the total. Both also cite the locator as Layard pp. 509ff., Babelon and Schwab giving the range p. 509-526, which the held citation truncates at 509."
+    },
+    {
+      "source_id": "SRC-F46C267EB36A",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "complete_open_document",
+      "locator": "Hilprecht Anniversary Volume (Leipzig: Hinrichs, 1909), printed pp. 342-351; Internet Archive item hilprechtanniver00leip, full text",
+      "finding": "Myhrman opens by placing his bowl in the University of Pennsylvania Nippur collection, notes that the whole collection will be published by Montgomery, and states that he was permitted to publish this text separately. He then says the new material he can present 'is limited to a single text' and that a general review of the subject will naturally fall to Montgomery. One object, edited alone."
+    },
+    {
+      "source_id": "SRC-A134B1DECDED",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "complete_open_document",
+      "locator": "Revue des etudes juives 4 (1882), printed pp. 165-172; Internet Archive item revuedestudesjui04soci, full text",
+      "finding": "After a short review of earlier bowl publications (Ellis, Levy, Rodwell, Halevy), the authors describe one vessel recently entered into the Cabinet des Antiques: a hemispherical bowl about 15 cm across carrying two spiral inscriptions. They transcribe, translate and comment on it, and close by naming its client, Hisda son of Ama, near the unidentified locality of Housia. The article edits a single object."
+    },
+    {
+      "source_id": "SRC-FFDF4474C458",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "institutional_record",
+      "locator": "https://cris.biu.ac.il/en/publications/aramaic-bowl-spells-jewish-babylonian-aramaic-bowls-vol-1; Brill, Magical and Religious Literature of Late Antiquity 1 / Manuscripts in the Schoyen Collection 30; ISBN 9789004203945",
+      "finding": "The Bar-Ilan record states that the volume contains editions of sixty-four Jewish Aramaic incantation bowls with introductions, translations, philological notes, photographs and indices, and that it is the first of a multi-volume project to publish the Schoyen Collection of Aramaic incantation bowls. A numbered corpus edition."
+    },
+    {
+      "source_id": "SRC-B28F4418A956",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "publisher_book_description",
+      "locator": "Magnes Press / Hebrew University, Amulets and Magic Bowls, ISBN 9789652235312, publisher description as carried on the Google Books record for the same ISBN",
+      "finding": "The description states that the book contains the texts of all the legible Aramaic amulets known at the time of writing together with thirteen hitherto unpublished bowls, that the texts are supplied with translations and commentaries, and that a detailed glossary of all the words is given. It edits many objects. The record's 1987 date is the second edition of a work first issued in 1985; the edition statement was not altered here."
+    },
+    {
+      "source_id": "SRC-F632FCD638E0",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_book_description",
+      "locator": "https://www.ucpress.edu/books/rabbis-sorcerers-kings-and-priests/hardcover",
+      "finding": "The press describes a comparative study of what impact the Sasanian Zoroastrian empire had on rabbinic identity and authority as expressed in the Talmud, drawing on Middle Persian Zoroastrian literature, archaeological data such as seals and inscriptions, and the Aramaic magical bowl spells. The bowls are one evidentiary category within a thematic argument; the book is not an object edition."
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "SRC-E75599494684",
+      "work": "Halevy 1877, CRAI 21, pp. 288-293",
+      "reason": "The full text is on Persee, whose robots.txt disallows this project's user agent for all paths, so it was not retrieved for archival. Babelon and Schwab 1882 describe it as a short notice that corrected Rodwell and Drach and established a text and translation, which points to a single-object edition, but a contemporary's description of another work is secondary and was not treated as sufficient to classify it."
+    },
+    {
+      "source_id": "SRC-5915E51A5AA2",
+      "work": "Schwab 1915, CRAI 59, pp. 383-389",
+      "reason": "Persee only; same robots exclusion. No robots-permitted copy of the article was located."
+    },
+    {
+      "source_id": "SRC-212816ED7316",
+      "work": "Levy 1855, ZDMG 9, pp. 465-491",
+      "reason": "The MENAdoc ZDMG volume structure URL now redirects to a MENAlib search page and the article could not be reached at the recorded address. Myhrman 1909 and Babelon-Schwab 1882 both describe it as a revision of texts Ellis had published, which is suggestive but secondary."
+    },
+    {
+      "source_id": "SRC-D1AD287AC9C9",
+      "work": "Hyvernat 1885, Zeitschrift fur Keilschriftforschung 2, pp. 113-148",
+      "reason": "Only volume 1 of the journal was found openly scanned. Myhrman 1909 describes Hyvernat as having published 'a similar bowl, now in the Museum of Cannes' at exactly this locator, which suggests a single-object edition, but that is a secondary description and the document itself was not read."
+    },
+    {
+      "source_id": "SRC-6AACCCF09C88",
+      "work": "Schwab 1886, Revue d'assyriologie 1, pp. 117-119",
+      "reason": "The Internet Archive item for Revue d'assyriologie volume 1 returns 401 Authorization Required. No access control was circumvented."
+    },
+    {
+      "source_id": "SRC-7E55A07F2355",
+      "work": "Fraenkel 1894, ZA 9, pp. 308-309",
+      "reason": "The openly scanned ZA items located do not contain volume 9; a search for the article title across them returned no match."
+    },
+    {
+      "source_id": "SRC-E961C60043EC",
+      "work": "Levene 2003, A Corpus of Magic Bowls",
+      "reason": "The AJS Review review that would describe its contents is paywalled on Cambridge Core and was not bypassed. The title alone is not evidence of scope, and the publisher description located was not from Kegan Paul itself."
+    }
+  ]
+}
