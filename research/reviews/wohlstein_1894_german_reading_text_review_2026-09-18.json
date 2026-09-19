@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-53202A840D51",
+  "source_pdf_path": "data/private/archive/sha256/31/31b80d4868082b202aa8c0f914049f78bb5e97fb0b70a4e73993ca1b9144be5d",
+  "source_pdf_sha256": "31b80d4868082b202aa8c0f914049f78bb5e97fb0b70a4e73993ca1b9144be5d",
+  "reviewed_by": "Codex: direct rendered-page comparison",
+  "reviewed_at": "2026-09-19T01:38:00Z",
+  "editorial_policy": "Wohlstein's German wording, historical spelling, punctuation, brackets, question marks, and visible lacuna marks are retained. Fraktur letterforms, page lineation, soft line-end hyphenation, and footnote-reference numerals are normalized or omitted; apostrophes are rendered typographically.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-WOHLSTEIN-1894-VA2416",
+      "text_id": "TXT-D39E05041A00",
+      "expected_text_sha256": "cdfc38949721da0c85b0cb7e5980bc98a6b9a53b144f3f2ca2707bd6f14a5f7b",
+      "corrected_content_path": "data/private/proofreading/wohlstein/va-2416.txt",
+      "corrected_content_sha256": "83fcdf5da02a5c53a0d3aae5b6cf8bb3c51e599c39db59b37325edf1a6de5786",
+      "pdf_pages": [24, 25, 26],
+      "status": "partial_review",
+      "correction_notes": "Compared the complete German translation on printed pp. 16-18 against rendered PDF pages 24-26. German prose, punctuation, and paragraph sequence are scan-checked; the embedded Hebrew name strings remain flagged for a second specialist reading."
+    },
+    {
+      "review_id": "IBI-PROOF-WOHLSTEIN-1894-VA2426",
+      "text_id": "TXT-0F5F558E6619",
+      "expected_text_sha256": "abfc4c31116b2e5814b5aaf74ffac5812097f652651706f236d929ff08661985",
+      "corrected_content_path": "data/private/proofreading/wohlstein/va-2426.txt",
+      "corrected_content_sha256": "6ea0d121746e4e5ff4ec8e063a0f91b4c6589e931539afcb565b04ea11300974",
+      "pdf_pages": [37],
+      "status": "reading_text_checked",
+      "correction_notes": "Compared the complete printed translation on p. 29 against rendered PDF page 37; retained brackets, punctuation, lacuna marks, and period spelling."
+    },
+    {
+      "review_id": "IBI-PROOF-WOHLSTEIN-1894-VA2414",
+      "text_id": "TXT-1EEA7F77C865",
+      "expected_text_sha256": "74d92b0ef9b2eec1c69a9aa37e0d41a8302428f5154d28d52574cd46abd7cf47",
+      "corrected_content_path": "data/private/proofreading/wohlstein/va-2414.txt",
+      "corrected_content_sha256": "6c37e1ef662417f79c316ed5cc9a495494bd882817ba586a65e05126ba500128",
+      "pdf_pages": [39],
+      "status": "reading_text_checked",
+      "correction_notes": "Compared the complete printed translation on p. 31 against rendered PDF page 39; retained authorial question marks, parentheses, dash, and lacuna marks."
+    },
+    {
+      "review_id": "IBI-PROOF-WOHLSTEIN-1894-VA2417",
+      "text_id": "TXT-BE351FA0BE2F",
+      "expected_text_sha256": "ecbfc0338e155d6000b61d42a8e3353a137fb90a9e92bc4e0f4adde6f84b5dc6",
+      "corrected_content_path": "data/private/proofreading/wohlstein/va-2417.txt",
+      "corrected_content_sha256": "c23244503bd7c3545091a420182a5601b156b547d58b5e0f7cd4fdcaad3c9682",
+      "pdf_pages": [45],
+      "status": "reading_text_checked",
+      "correction_notes": "Compared the complete printed translation on p. 37 against rendered PDF page 45; retained the edition's lacuna runs, bracketed restoration, and uncertainty marks."
+    }
+  ]
+}

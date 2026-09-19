@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "9ed79ee8df6e1f30a24448815eca00ebb83df13fbf49ec48a85e41b2b34ae9b4",
+  "corpus_digest": "6793b4023807650620f9b89e863ffa1cba03724b2163b7507b31b6ff367f9090",
   "migrations": 15,
-  "note": "Documented Penn Museum policy evidence for the 288-row RIGHTS-002 cohort; no corpus or rights dispositions changed.",
-  "recorded_at": "2026-09-19T01:02:45+00:00",
-  "recorded_by": "Codex",
+  "note": "Added five evidence-bound Wohlstein German translation rows; four scan-checked, one partial review; all publication decisions remain needs_review and withheld.",
+  "recorded_at": "2026-09-19T01:42:24+00:00",
+  "recorded_by": "codex",
   "schema_version": "015_document_assessments",
   "tables": {
     "appearance_object_links": {
@@ -127,16 +127,16 @@
       "rows": 862
     },
     "text_proofreading_reviews": {
-      "digest": "34bc7c79f23751a7b9d12fade134bc575ab9b899820b172e22d742bb23bf41e4",
-      "rows": 35
+      "digest": "6fa446bc7352da299d66007a05add7de347ea51173334ca8e06877fb1f774873",
+      "rows": 40
     },
     "text_publication_reviews": {
-      "digest": "f36a396cf906ffefc2668a511e57bf5526c4537dcc8e82604f9dffb3fcd31d06",
-      "rows": 158
+      "digest": "9da5480f99c74263be49213e734edfcf4e2ae083a3bac97e31b8021d76bc0c38",
+      "rows": 163
     },
     "texts": {
-      "digest": "af388d2d7c73da687282d6b79b2b00373da70b54c294598dddb8981897ee6330",
-      "rows": 266
+      "digest": "d38487b27bbaecc6a66734a48d0cb3af52439596359102b0a4efd7c7d0cc466e",
+      "rows": 271
     }
   }
 }

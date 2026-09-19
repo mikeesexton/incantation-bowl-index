@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-A12DF738AF6A",
+  "source_pdf_path": "data/private/archive/sha256/9b/9b6363559ec1f34c739938391eb4b03faed1cad578c79d31274e7ac5579ca527",
+  "source_pdf_sha256": "9b6363559ec1f34c739938391eb4b03faed1cad578c79d31274e7ac5579ca527",
+  "reviewed_by": "Codex: direct rendered-page comparison",
+  "reviewed_at": "2026-09-19T01:38:00Z",
+  "editorial_policy": "Wohlstein's German wording, historical spelling, punctuation, brackets, question marks, and visible lacuna marks are retained. Fraktur letterforms, page lineation, soft line-end hyphenation, and footnote-reference numerals are normalized or omitted; apostrophes are rendered typographically.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-WOHLSTEIN-1893-VA2422",
+      "text_id": "TXT-33E8BD50E1CE",
+      "expected_text_sha256": "499b3c548284be734358cef84d278f61a2df621d099d288c6fd2942028a023a0",
+      "corrected_content_path": "data/private/proofreading/wohlstein/va-2422.txt",
+      "corrected_content_sha256": "0350930905d46326d52f47787386b1e490b5f860b5b4989721f7da812045d9c7",
+      "pdf_pages": [347, 348],
+      "status": "reading_text_checked",
+      "correction_notes": "Compared the complete printed translation on pp. 331-332 against rendered PDF pages 347-348; retained period spellings and Wohlstein's uncertainty and lacuna marks."
+    }
+  ]
+}

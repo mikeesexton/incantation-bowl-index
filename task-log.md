@@ -25,6 +25,33 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Wohlstein public-domain German text tranche
+
+**Claimed:** TEXT-001
+**Corpus:** changed (five page-bound German translation rows; no publication approvals) — state digest `6793b4023807`
+**Tests:** 249 Python tests passed; both proofreading manifests and the publication manifest replayed with zero changes; live public export withheld all five rows and emitted 112 approved / 159 withheld texts
+
+- Transcribed the complete Wohlstein translations for VA 2422, VA 2416,
+  VA 2426, VA 2414 and VA 2417 from the registered 1893-1894 public-domain
+  scans, preserving period spelling, brackets, punctuation, uncertainty and
+  lacuna marks under a documented normalization policy.
+- Rendered and visually checked every translation page. Four rows are
+  `reading_text_checked`; VA 2416 remains `partial_review` because its embedded
+  Hebrew divine-name strings need a second specialist reading. The original
+  ingestion snapshots, corrected-text hashes, scan hashes and PDF page lists
+  are retained in append-only review records.
+- Recorded five fingerprint-bound `needs_review` publication decisions. All
+  remain `public_ok=false`: public-domain source status was not treated as an
+  autonomous clearance of the normalized reading texts.
+- Generalized proofreading notes to name the stored text language and added a
+  German regression test. Regenerated corpus reports and roadmap metrics;
+  translation coverage is now 53 identities and current proofreading totals
+  39 checked readings plus one partial review.
+- Next: a German/Hebrew-capable human reviewer should check VA 2416's embedded
+  strings and make explicit approve-or-withhold decisions for this five-text
+  tranche. TEXT-001 remains in progress at 604/1,075 probable or confirmed
+  identities with a publication reference (56.2% against the 80% gate).
+
 ## 2026-09-18 — Codex — Penn media policy evidence cohort
 
 **Claimed:** RIGHTS-002

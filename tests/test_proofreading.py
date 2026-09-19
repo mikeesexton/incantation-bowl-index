@@ -73,6 +73,15 @@ class ProofreadingTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'scan hash'): self.apply()
         self.assertEqual(self.conn.execute('SELECT count(*) FROM text_proofreading_reviews').fetchone()[0], 0)
 
+    def test_notes_name_the_text_language(self):
+        self.conn.execute("UPDATE texts SET language='German'")
+        self.conn.commit()
+        self.row = dict(self.conn.execute('SELECT * FROM texts').fetchone())
+        self.manifest['entries'][0]['expected_text_sha256'] = text_fingerprint(self.row)
+        self.apply()
+        notes = self.conn.execute('SELECT notes FROM texts').fetchone()[0]
+        self.assertIn('normalized German reading text', notes)
+
     def test_invalid_second_entry_does_not_partially_apply(self):
         self.manifest['entries'].append(dict(self.manifest['entries'][0], text_id='ABSENT', review_id='SECOND'))
         with self.assertRaisesRegex(ValueError, 'Missing text'): self.apply()
