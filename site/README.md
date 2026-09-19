@@ -95,8 +95,12 @@ npx wrangler d1 execute bowlam-interest --remote \
 ## Live
 
 - **Deployed:** <https://bowlam.pages.dev> (Cloudflare Pages project `bowlam`)
-- **bowlam.com:** *not* pointed here yet — it still serves the old page. The
-  DNS flip is a separate, deliberate decision.
+- **bowlam.com:** *not* pointed here, and it cannot be from this repo. The
+  domain is registered at GoDaddy and uses GoDaddy nameservers
+  (`ns03/ns04.domaincontrol.com`), serving a GoDaddy parking page. Cloudflare
+  Pages cannot attach an apex custom domain unless the zone is on Cloudflare,
+  `wrangler` has no `pages domain` command, and the stored token is
+  `zone (read)` only. Attaching it is three dashboard steps — see below.
 - **Open before the flip:** a privacy notice, and something that actually sends
   the one-click unsubscribe the page promises.
 
@@ -110,8 +114,27 @@ explicit instruction covering that deployment only.
 cd ~/Developer/incantation-bowl-index/site && npx wrangler pages deploy
 ```
 
-Then point the `bowlam.com` custom domain at the Pages project in the
-Cloudflare dashboard.
+### Attaching bowlam.com (not yet done)
+
+Checked 19 September 2026: the domain has **no MX and no TXT records**, and
+`www` is just a CNAME to the parking page. So moving DNS to Cloudflare breaks
+no email and discards nothing worth keeping — unusually low risk for a
+nameserver move, but confirm the records again before you start.
+
+1. **Cloudflare dashboard → Add a site → `bowlam.com`** (Free plan). When it
+   offers to import the scanned DNS records, drop the parking A records
+   `76.223.105.230` and `13.248.243.5`; carrying them over just keeps GoDaddy's
+   page alive. Cloudflare then shows you two nameservers.
+2. **GoDaddy → your domain → Nameservers → Change** to those two. This is the
+   only step that needs the registrar, and it is the one that actually moves
+   the domain.
+3. **Cloudflare → Workers & Pages → `bowlam` → Custom domains → Set up a custom
+   domain → `bowlam.com`.** With the zone on Cloudflare, the DNS record is
+   created for you.
+
+A subdomain such as `www.bowlam.com` could instead be CNAME'd straight to
+`bowlam.pages.dev` from GoDaddy without moving nameservers. That does not work
+for the apex: DNS forbids a CNAME there, and GoDaddy offers no ALIAS/ANAME.
 
 ## Read and export the interest list
 
