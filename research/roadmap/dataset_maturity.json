@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-09-19T01:50:00+00:00",
+ "updated_at": "2026-09-19T02:21:00+00:00",
  "portfolio_summary": {
   "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
   "strengths": [
@@ -22,7 +22,7 @@
    "Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 53 identities have a translation. Four Wohlstein translations are now scan-checked and a fifth has a checked German reading with embedded Hebrew strings still awaiting specialist review; all five remain withheld pending human publication review. Protected editions are intentionally indexed without copying their text.",
    "Release rights are unreviewed: all 327 media rows now have current fail-closed ledger holds, but zero have completed rights decisions and zero are approved for reuse. The first two-row institutional-policy evidence pilot narrowed contact paths without establishing permission.",
    "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
-   "Acquisition completeness is not yet measured corpus-wide: 50 of 862 sources have linked captures, 39 with PDFs and eleven with only non-PDF captures. All 50 captured sources are now assessed through 51 append-only holding rows: 48 sources have a complete document, Naveh-Shaked 1993 remains correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.",
+   "Acquisition completeness is not yet measured corpus-wide: 51 of 862 sources have linked captures, 40 with PDFs and eleven with only non-PDF captures. All 51 captured sources are now assessed through 52 append-only holding rows: 48 sources have a complete document, Naveh-Shaked 1993 and Juusola 1999 are correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.",
    "Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run."
   ]
  },
@@ -360,7 +360,7 @@
      "status": "in_progress",
      "owner": "Mixed",
      "done_when": "Every source record shows whether the document is held, and the want list is ranked by how much of the corpus depends on each unread work. Works with dependants are either held, or carry a documented reason they cannot be obtained.",
-     "evidence": "`ibi report-acquisitions` now records 50 of 862 sources with captures: 39 with PDFs and eleven with only non-PDF captures. The Gordon remote sweep added complete hash-bound copies of three Archiv orientální articles from the Czech Academy's Kramerius service; their contractual access terms are retained as copyrighted rather than mislabeled public domain. Gordon's complete AASOR article was inspected through an IGNCA scan but not archived because robots permission could not be verified. Complete inspected edition units now support 540 located source appearances. Segal 2000 remains the highest-impact acquisition at 252 records but is reported unavailable at LOC. Isbell 1975, Naveh-Shaked 1998, TMH 7, and Yamauchi 1967 are requested and awaiting results. Naveh-Shaked 1993 and Mokhtarian 2015 remain blocked and queued; Juusola 1999 remains unheld because the supplied file was only Wajsberg's review."
+     "evidence": "`ibi report-acquisitions` now records 51 of 862 sources with captures: 40 with PDFs and eleven with only non-PDF captures. The researcher-supplied Juusola 1999 file is a hash-bound six-page scan of title, imprint, acknowledgements and contents only; it is assessed as front matter and the complete monograph remains queued. The Gordon remote sweep added complete hash-bound copies of three Archiv orientální articles from the Czech Academy's Kramerius service; their contractual access terms are retained as copyrighted rather than mislabeled public domain. Gordon's complete AASOR article was inspected through an IGNCA scan but not archived because robots permission could not be verified. Complete inspected edition units now support 540 located source appearances. Segal 2000 remains the highest-impact acquisition at 252 records but is reported unavailable at LOC. Isbell 1975, Naveh-Shaked 1998, TMH 7, and Yamauchi 1967 are requested and awaiting results. Naveh-Shaked 1993 and Mokhtarian 2015 remain blocked and queued."
     },
     {
      "id": "SCHOL-006",
@@ -368,7 +368,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Every scholarship record carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.",
-     "evidence": "Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved publication registry supplies initial derived coverage. Explicit reviews now include the two Wohlstein and four Gordon articles. The scholarship index contains 217 works, 38 source-linked held documents and 66 scoped works; 151 remain unclassified rather than guessed."
+     "evidence": "Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved publication registry supplies initial derived coverage. Explicit reviews now include the two Wohlstein and four Gordon articles. The scholarship index contains 217 works, 39 source-linked held documents and 66 scoped works; 151 remain unclassified rather than guessed. Juusola 1999 remains classified as a linguistic study from its reviewed contents and Wajsberg's review even though only front matter is held."
     },
     {
      "id": "SCHOL-007",
@@ -426,7 +426,7 @@
      "status": "done",
      "owner": "Engineering",
      "done_when": "Each source holding distinguishes citation-only, excerpt, front matter, complete scan, physically inspected work, OCR, corrected rich text and object-level extraction, with dates, hashes and reviewer evidence.",
-     "evidence": "Migration 015 and `ibi ingest-document-assessment` provide an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every source-linked capture is now covered: all 50 captured sources have 51 hash-bound assessments, comprising 48 sources with a complete document, Naveh-Shaked 1993 with front matter only, and the archived VMBA landing page as an excerpt; Ford 2023 also retains its separate summary excerpt beside its complete article. The eleven HTML holdings were inspected structurally and by content rather than classified from MIME type: nine item or article pages have complete bounded object extraction, the complete Schoyen collection introduction has no finite item list, and VMBA's 64 recovered JBA records remain partial because the landing capture cannot establish database-wide completeness. Thirty-nine sources now have hash-bound object-level extraction, 31 complete and eight partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding."
+     "evidence": "Migration 015 and `ibi ingest-document-assessment` provide an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every source-linked capture is now covered: all 51 captured sources have 52 hash-bound assessments, comprising 48 sources with a complete document, Naveh-Shaked 1993 and Juusola 1999 with front matter only, and the archived VMBA landing page as an excerpt; Ford 2023 also retains its separate summary excerpt beside its complete article. The eleven HTML holdings were inspected structurally and by content rather than classified from MIME type: nine item or article pages have complete bounded object extraction, the complete Schoyen collection introduction has no finite item list, and VMBA's 64 recovered JBA records remain partial because the landing capture cannot establish database-wide completeness. Thirty-nine sources now have hash-bound object-level extraction, 31 complete and eight partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding."
     },
     {
      "id": "ACCESS-005",
@@ -794,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Ingested the researcher-supplied Juusola 1999 PDF conservatively after rendering and inspecting all six pages. The file contains only title and imprint pages, acknowledgements, two contents pages and one blank page; it is a copyrighted front-matter holding, not the complete monograph whose contents extend through printed page 263. Added a hash-bound private capture, document assessment, ISBN correction, refreshed linguistic-study scope evidence and an updated open access lead. Holdings rise to 51 captured sources and 52 assessment rows while complete documents remain 48; no bowl, identity, text, media or public-release decision changed."
+  },
   {
    "date": "2026-09-18",
    "note": "Advanced TEXT-001's text-coverage side while LOC work continues. Transcribed the complete German translations for Wohlstein's VA 2422, VA 2416, VA 2426, VA 2414 and VA 2417 from the registered 1893-1894 public-domain scans, retaining period spelling, punctuation, restorations, uncertainty and lacuna marks under a stated normalization policy. Rendered-page review records four as reading_text_checked; VA 2416 remains partial_review because its embedded Hebrew divine-name strings need a second specialist reading. All five have fingerprint-bound needs_review publication decisions and remain public_ok=false pending explicit human approval. Translation coverage rises to 53 identities; checked reading texts rise to 39 plus one partial review. No identity, media-rights decision or public release changed."
@@ -1166,14 +1170,14 @@
    {
     "id": "LOC-READ-012",
     "priority": 3,
-    "status": "review_held_book_still_queued",
+    "status": "partial_front_matter_book_still_queued",
     "source_id": "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES",
     "title": "Juusola — Linguistic Peculiarities in the Aramaic Magic Bowl Texts",
     "year": 1999,
     "lccn": "00307536",
     "catalog_url": "https://lccn.loc.gov/00307536",
     "call_number": "PJ5202 .J88 1999",
-    "needed_for": "META-003; Wajsberg's complete 2001 review is held, but Juusola's 1999 monograph is not"
+    "needed_for": "META-003; Wajsberg's complete 2001 review and six pages of Juusola's title, imprint, acknowledgements and contents are held, but the monograph chapters are not"
    },
    {
     "id": "LOC-READ-013",

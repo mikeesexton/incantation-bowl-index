@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-09-19T01:41:39+00:00`
+Generated: `2026-09-19T02:20:28+00:00`
 
 ## Corpus
 
@@ -64,8 +64,8 @@ Generated: `2026-09-19T01:41:39+00:00`
 | Access status | Sources |
 |---|---:|
 | available | 690 |
-| unknown | 117 |
-| partial | 50 |
+| unknown | 116 |
+| partial | 51 |
 | paywalled | 3 |
 | blocked | 1 |
 | offline | 1 |
@@ -159,7 +159,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | blocked | 2 | Obtain LMU Archaeology Museum accession numbers and item-level provenance, dimensions, scripts, texts, translations, images, and 3D records for the four-bowl project. |
 | blocked | 2 | Locate the Nippur bowls retained by the Imperial Museum at Constantinople, as reported by Montgomery on p. 15. |
 | blocked | 2 | Reconcile the National Library of Israel exhibition statement that 216 Moussaieff incantation bowls were donated with the 205 numbered incantation-bowl SRU records harvested in this campaign. |
-| open | 3 | Obtain Hannu Juusola 1999, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, for controlled language and orthography normalization. |
+| open | 3 | Obtain the complete Hannu Juusola 1999, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, for controlled language and orthography normalization. |
 | blocked | 3 | Obtain authorized access to Mokhtarian 2015, Rabbis, Sorcerers, Kings, and Priests, for contextual enrichment. |
 | blocked | 3 | Preserve a private content-addressed capture of the Menil Collection record for incantation bowl X 831 if later permitted or supplied through authorized access. |
 | blocked | 3 | Reconstruct Kedar's unenumerated analytical sample of 296 published JBA bowls from the dissertation's citations and working materials. |

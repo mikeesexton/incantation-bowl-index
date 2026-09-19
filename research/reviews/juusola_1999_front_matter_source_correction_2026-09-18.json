@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T02:18:00Z",
+  "evidence_path": "research/reviews/juusola_1999_front_matter_evidence_2026-09-18.json",
+  "evidence_sha256": "8133f08bd2fb9973d5b0fb5666875aabcc73af040dc7cc096f2b83c0ba9dc26c",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-JUUSOLA1999-FRONT-MATTER",
+      "source_id": "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES",
+      "replacement_source_id": null,
+      "rationale": "The monograph's own title and imprint pages verify the existing bibliographic identity, publisher, series, date and copyrighted status and add ISBN 951-9380-40-X. The supplied file changes access from unknown to partial, but its six pages contain front matter only and do not satisfy the complete-book acquisition need.",
+      "before": {
+        "source_type": "book",
+        "title": "Linguistic Peculiarities in the Aramaic Magic Bowl Texts",
+        "authors": "Hannu Juusola",
+        "issued_year": 1999,
+        "container_title": "Studia Orientalia 86",
+        "publisher": "Finnish Oriental Society",
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Juusola, Hannu. Linguistic Peculiarities in the Aramaic Magic Bowl Texts. Studia Orientalia 86. Helsinki: Finnish Oriental Society, 1999.",
+        "access_status": "unknown",
+        "rights_status": "copyrighted",
+        "notes": "Bibliographic details and broad scope verified from Eljakim Wajsberg's complete 2001 review, SRC-D721A94FA3B2, printed p. 167. The monograph itself is not held; the supplied Project MUSE PDF is the review."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Linguistic Peculiarities in the Aramaic Magic Bowl Texts",
+        "authors": "Hannu Juusola",
+        "issued_year": 1999,
+        "container_title": "Studia Orientalia 86",
+        "publisher": "Finnish Oriental Society",
+        "url": null,
+        "doi": null,
+        "isbn": "951-9380-40-X",
+        "citation": "Juusola, Hannu. Linguistic Peculiarities in the Aramaic Magic Bowl Texts. Studia Orientalia 86. Helsinki: Finnish Oriental Society, 1999.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "A researcher-supplied six-page scan of the monograph's title page, copyright and imprint page, acknowledgements, contents, and one blank page is held privately by SHA-256 c0bd6a93857c81d8e8f67e2fbf2ffb971e8bd85e1f336b4d70a4e63ce2ee2bee. It verifies ISBN 951-9380-40-X and the existing bibliographic record. The contents run through printed page 263, but the chapters themselves are absent; the complete monograph remains unheld. Wajsberg's complete 2001 review is held separately as SRC-D721A94FA3B2. Copyright 1999 Finnish Oriental Society; no public redistribution clearance is inferred."
+      }
+    }
+  ]
+}

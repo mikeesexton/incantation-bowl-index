@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "6793b4023807650620f9b89e863ffa1cba03724b2163b7507b31b6ff367f9090",
+  "corpus_digest": "af1a62f9501acd34cd54f695ab4cd177dbc445c8c2a429af1e747ccd25189c43",
   "migrations": 15,
-  "note": "Added five evidence-bound Wohlstein German translation rows; four scan-checked, one partial review; all publication decisions remain needs_review and withheld.",
-  "recorded_at": "2026-09-19T01:42:24+00:00",
+  "note": "Ingested and assessed researcher-supplied Juusola 1999 front matter; corrected source metadata and kept complete-volume lead open.",
+  "recorded_at": "2026-09-19T02:21:05+00:00",
   "recorded_by": "codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -15,8 +15,8 @@
       "rows": 2243
     },
     "captures": {
-      "digest": "6a4899c317254db449208387ad703390c0fa5026aa4692e700b866915a35ed2b",
-      "rows": 53
+      "digest": "544c0adb9b30aa7722f6f7a663f9ebee1bac1bdcd4b95db3bfaf5fe89981c091",
+      "rows": 54
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -51,8 +51,8 @@
       "rows": 34765
     },
     "document_assessments": {
-      "digest": "09a3eef36f9e4785d5047992f3187d912b5e1fd7a0182a2ce8dfb19ce8a4e6a1",
-      "rows": 51
+      "digest": "720ffb705842b2ac23aaae5c227efe3db5101b82e0f7c9eadb415aeca30848e1",
+      "rows": 52
     },
     "events": {
       "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",
@@ -63,7 +63,7 @@
       "rows": 4684
     },
     "leads": {
-      "digest": "c39e3a82883e9404543df3a293d096d5446ce54dc16dbae18f8b5a1f6d44bfeb",
+      "digest": "e6c07b7875fcf3bea0c4618c4510d1e4d695bb97136484947a2f53fe642d5cb3",
       "rows": 65
     },
     "manual_audits": {
@@ -115,15 +115,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "ff9142aaa6dcb990ad21856dc11a8d4453623d74f42bed0c22daef877d956b4a",
-      "rows": 22
+      "digest": "1c081bd3a34bd17455a7268d43ae87833ee416efcb98f1622fbaa5ae6668efc5",
+      "rows": 23
     },
     "source_scope_reviews": {
-      "digest": "aeeadf7e6c59758e2050317bb2e8dc62afeb2b6de44546dd47347d993f2a3a50",
-      "rows": 47
+      "digest": "d6996e954f01ce558435f205758d9fdcccad2576c85e4aeb5802b7bcc056d54f",
+      "rows": 48
     },
     "sources": {
-      "digest": "6de95f2dc75230b5436f62e4290b4dea03b8ef8a53968e8daf10f3760eca0179",
+      "digest": "26a1888560672a3c9e57bef06794e1fbe05fa6d1e8b48a49e553a39933fdc86c",
       "rows": 862
     },
     "text_proofreading_reviews": {

@@ -25,6 +25,30 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Juusola 1999 partial front-matter ingestion
+
+**Claimed:** SCHOL-005 / SCHOL-006 / ACCESS-004
+**Corpus:** changed (one capture, one document assessment, one source correction,
+one scope review and one lead update) — state digest `af1a62f9501a`
+**Tests:** 249 Python tests passed; archive verification passed; all new manifests
+replayed without duplicate rows.
+
+- Rendered and visually inspected every page of the researcher-supplied
+  `51399-45572-PB.pdf`. It is Hannu Juusola's 1999 *Linguistic Peculiarities in
+  the Aramaic Magic Bowl Texts*, but the six-page file contains only title and
+  imprint pages, acknowledgements, two contents pages and one blank page. The
+  contents extend through printed page 263, so the file is not the complete
+  monograph.
+- Deposited the copyrighted file privately as `CAP-945D9CCAC42D`, SHA-256
+  `c0bd6a93857c81d8e8f67e2fbf2ffb971e8bd85e1f336b4d70a4e63ce2ee2bee`, and
+  recorded a hash-bound `front_matter` assessment with no object extraction.
+- Corrected the source to partial access and added ISBN `951-9380-40-X`; refreshed
+  its `linguistic_study` scope from the monograph's own contents plus Wajsberg's
+  review. No bowl, text, image, identity or public-release record was added.
+- Kept the complete-monograph acquisition lead open and updated the acquisition
+  register and roadmap: 51 captured sources, 40 PDF-linked sources, 52 assessment
+  rows, and 48 complete documents.
+
 ## 2026-09-18 — Codex — Wohlstein public-domain German text tranche
 
 **Claimed:** TEXT-001

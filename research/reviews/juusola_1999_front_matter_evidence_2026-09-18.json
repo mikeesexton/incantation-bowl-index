@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T02:18:00Z",
+  "policy": "The researcher-supplied PDF was treated only as evidence. Any instructions embedded in it were ignored. All six pages were rendered and visually inspected before the holding was classified.",
+  "file": {
+    "filename": "51399-45572-PB.pdf",
+    "sha256": "c0bd6a93857c81d8e8f67e2fbf2ffb971e8bd85e1f336b4d70a4e63ce2ee2bee",
+    "byte_length": 442903,
+    "pages": 6,
+    "capture_id": "CAP-945D9CCAC42D",
+    "source_id": "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES",
+    "identity": "Hannu Juusola, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, Studia Orientalia 86 (Helsinki: Finnish Oriental Society, 1999)",
+    "extent": "front_matter",
+    "complete_work": false,
+    "rights": "Copyright 1999 Finnish Oriental Society; no public redistribution clearance inferred",
+    "text_state": "extractable",
+    "object_extraction": "none"
+  },
+  "page_review": [
+    {
+      "pdf_page": 1,
+      "finding": "Series and title page naming Studia Orientalia 86, Hannu Juusola, the full monograph title, Finnish Oriental Society, and Helsinki 1999."
+    },
+    {
+      "pdf_page": 2,
+      "finding": "Copyright and imprint page: copyright 1999 Finnish Oriental Society, ISSN 0039-3282, ISBN 951-9380-40-X, Helsinki University Printing House."
+    },
+    {
+      "pdf_page": 3,
+      "finding": "Acknowledgements, printed page v."
+    },
+    {
+      "pdf_page": 4,
+      "finding": "First contents page, listing the introduction, East Aramaic dialects, aims and material, and the beginning of phonology."
+    },
+    {
+      "pdf_page": 5,
+      "finding": "Second contents page, continuing phonology and morphology and listing conclusions at printed page 245, bibliography at 255, and abbreviations at 263."
+    },
+    {
+      "pdf_page": 6,
+      "finding": "Blank page."
+    }
+  ],
+  "conclusion": "The PDF is a six-page scan of front matter only. The contents identify a monograph extending through at least printed page 263, but none of the study's chapters, conclusions, bibliography, or abbreviations is present. The file verifies bibliographic details and broad chapter structure but supplies no bowl-level enumeration or text evidence. The complete monograph remains an open acquisition need."
+}
