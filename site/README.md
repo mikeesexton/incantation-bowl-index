@@ -67,14 +67,30 @@ cd ~/Developer/incantation-bowl-index/site
 Then, once:
 
 ```sh
-npx wrangler d1 list                                        # already created?
-npx wrangler d1 create bowlam-interest --update-config      # if not; writes the id below
+npx wrangler d1 list                                   # already created?
+npx wrangler d1 create bowlam-interest                 # if not
 npx wrangler d1 execute bowlam-interest --remote --file=schema.sql
 ```
 
-`--update-config` is what fills in `database_id` in `wrangler.toml`. Without
-it you have to paste the id by hand, and a forgotten paste shows up later as
-a 503 from the signup form rather than an error at deploy time.
+Done once, on 19 September 2026 — `database_id` below is real and the remote
+schema is applied. Repeat only if the database is ever recreated.
+
+Two traps, both of which fail quietly rather than loudly:
+
+- `--update-config` does **not** fill in `database_id` when a
+  `[[d1_databases]]` block already exists. It prints a snippet instead, and
+  the config keeps whatever was there.
+- The snippet it prints suggests `binding = "bowlam_interest"`. The Worker
+  reads `env.DB`. Take the id from the snippet, not the binding — a mismatched
+  binding leaves `env.DB` undefined and every signup answers 503.
+
+Verify both before deploying:
+
+```sh
+grep -A3 d1_databases wrangler.toml
+npx wrangler d1 execute bowlam-interest --remote \
+  --command "SELECT name FROM sqlite_master WHERE name='interest_signups'"
+```
 
 ## Deploy
 

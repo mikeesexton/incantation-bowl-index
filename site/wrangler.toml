@@ -10,9 +10,10 @@ name = "bowlam"
 compatibility_date = "2026-09-19"
 pages_build_output_dir = "public"
 
-# Create once, then paste the id Wrangler prints:
-#   npx wrangler d1 create bowlam-interest
+# Created 19 September 2026 with `npx wrangler d1 create bowlam-interest`.
+# The binding stays `DB` because functions/api/interest.js reads env.DB;
+# Wrangler's suggested `bowlam_interest` would silently 503 the signup form.
 [[d1_databases]]
 binding = "DB"
 database_name = "bowlam-interest"
-database_id = "PASTE_DATABASE_ID_HERE"
+database_id = "530d00fb-b954-4d51-ae5a-6e4c5fdc7d24"
