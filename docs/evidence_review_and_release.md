@@ -58,6 +58,16 @@ institutional-policy evidence pilot is retained in
 [`media_rights_policy_evidence_2026-09-18.md`](../research/reviews/media_rights_policy_evidence_2026-09-18.md);
 it narrows follow-up contacts without changing either row's decision.
 
+The Penn institutional cohort is scoped separately in
+[`penn_media_rights_policy_evidence_2026-09-18.md`](../research/reviews/penn_media_rights_policy_evidence_2026-09-18.md).
+That note covers 288 media rows representing 280 exact image URLs. Penn's
+current shared terms describe a non-profit, educational or personal-use path
+with required credit and linking, but prohibit commercial use; the separate CC
+BY 4.0 collections-data license explicitly excludes images. This is policy
+evidence for human review, not 288 completed assessments. All rows remain
+`needs_review`, and the three duplicated image resources must receive coherent
+resource-level decisions.
+
 ## Two distinct exports
 
 `ibi export --destination data/private/exports/latest` creates the research snapshot. This includes media URLs, capture metadata, source claims and review metadata; it is **not publication-cleared**. Text content and original text snapshots receive specific redaction, which does not make every other field public.

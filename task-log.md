@@ -25,6 +25,29 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Penn media policy evidence cohort
+
+**Claimed:** RIGHTS-002
+**Corpus:** unchanged — state digest `9ed79ee8df6e`
+**Tests:** 248 passed; public export withheld 327/327 media and emitted 0;
+corpus state matched
+
+- Scoped current official policy evidence for the 288-row Penn Museum cohort,
+  representing 280 exact image URLs. The terms describe non-profit,
+  educational or personal use with required credit and linking, exclude
+  high-resolution files and commercial use, and the separate CC BY 4.0
+  collections-data license expressly excludes images.
+- Identified three exact Penn image URLs shared by eleven media rows; each group
+  requires a coherent resource-level disposition because the exporter fails
+  closed on incomplete or conflicting decisions.
+- Added a dated evidence note, updated the review/release documentation and
+  regenerated the roadmap. This is evidence collection only: no permission,
+  withholding or legal conclusion was inferred, and completed assessments and
+  approvals remain 0/327.
+- Next: a human reviewer should choose the intended Penn reuse model, confirm
+  how the shared policy applies to these direct `_800.jpg` resources, and use
+  evidence-bound rights-review manifests for any per-resource decisions.
+
 ## 2026-09-18 — Codex — Complete current media inventory holds
 
 **Claimed:** RIGHTS-002

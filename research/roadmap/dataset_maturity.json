@@ -573,7 +573,7 @@
      "status": "in_progress",
      "owner": "Human review",
      "done_when": "One hundred percent of media records have a reviewed rights disposition; unknown remains permissible only with an explicit follow-up task.",
-     "evidence": "327/327 media now have current ledger rows; 0/327 have completed rights assessments and 0 are approved for public reuse. The first policy-evidence pilot visually checked the Ford 2023 Davidovitz 41 figure and Levene 1999 M163 plates, recorded the volume/journal notices and current official institutional metadata or terms, and narrowed the permission-contact path without inferring ownership or approval. Existing non-unknown copyright labels do not count as decisions."
+     "evidence": "327/327 media now have current ledger rows; 0/327 have completed rights assessments and 0 are approved for public reuse. Policy evidence now scopes the 288-row, 280-URL Penn Museum cohort: current official terms describe non-profit, educational or personal use with required credit and linking, exclude high-resolution files and commercial use, and the separate CC BY 4.0 collections-data license expressly excludes images. Three exact Penn image URLs are shared by eleven rows and require coherent resource-level decisions. The Ford 2023 Davidovitz 41 and Levene 1999 M163 pilot separately narrowed its permission-contact path. None of this evidence infers ownership, compatibility with the project's CC BY release or approval; existing non-unknown copyright labels do not count as decisions."
     },
     {
      "id": "RIGHTS-003",
@@ -794,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Extended RIGHTS-002 policy evidence to the largest institutional cohort without changing any disposition. Penn Museum accounts for 288 of 327 media rows and 280 exact image URLs; three URLs are shared by eleven rows. Current official Penn terms describe non-profit, educational or personal use with object-number credit and a Penn link, require modifications to be identified, exclude high-resolution files and prohibit commercial use. Penn's separate CC BY 4.0 collections-data license expressly excludes images. The evidence therefore identifies a human-review path but does not establish compatibility with this project's CC BY public export or a future paid service. Completed assessments and approvals remain 0/327; every image remains withheld."
+  },
   {
    "date": "2026-09-18",
    "note": "Completed the current RIGHTS-002 inventory tranche. Added evidence-bound, replay-safe needs_review holds for the Ford 2023 Davidovitz 41 photograph and Levene 1999 M163 plate set, bringing current ledger coverage from 325/327 to 327/327 while completed assessments and approvals correctly remain 0/327. Began institutional-policy evidence collection: visual review found no photographer or license on Ford's figure page, a volume-wide rights reservation to the Mandel Institute and article authors, Levene's statement that Shlomo Moussaieff supplied the photographs, plate captions naming only the collection, and Mohr Siebeck journal copyright; current official HUJI terms and Southampton repository metadata also provide no item-specific reuse grant. No image was approved or published."
@@ -1288,7 +1292,7 @@
   ]
  },
  "priorities": [
-  "RIGHTS-002 / ACCESS-003: continue evidence collection in shared institutional-policy batches now that all 327 media have current ledger holds. The first Ford/Levene pilot narrowed contact paths but made no rights decision; retain fail-closed treatment for protected texts, capture storage and every unapproved image.",
+  "RIGHTS-002 / ACCESS-003: obtain human review of the intended Penn reuse model and, if needed, ask Penn to confirm how its terms apply to the 288-row, 280-URL cohort. Policy evidence now scopes that cohort plus the Ford/Levene pilot, but completed assessments and approvals remain 0/327. Record decisions only through evidence-bound manifests, keep the three shared Penn URLs coherent, and retain fail-closed treatment for protected texts, capture storage and every unapproved image.",
   "TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",
   "SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.",
   "SCHOL-006: classify the remaining 151 unclassified works by scope. Thirty-eight scholarship works now have a source-linked held document and 66 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",
