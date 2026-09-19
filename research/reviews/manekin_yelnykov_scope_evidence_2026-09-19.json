@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T17:36:29Z",
+  "method": "Bibliographic fields and work scope were assigned only from the official journal article, an institutional research record, or the publisher's book description. The classification records the form of the scholarship and does not imply that every object discussed belongs to the index corpus.",
+  "policy": "These notes support bibliographic correction and work-level scope classification only. They make no claim about complete object extraction, preferred readings, object identity, authenticity, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-17A7CA53F7DB",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "complete_official_article",
+      "locator": "https://oriental-world.org.ua/index.php/journal/article/view/775; PDF https://oriental-world.org.ua/index.php/journal/article/download/775/765/; DOI 10.15407/orientw2025.02.081; p. 81 and abstract",
+      "finding": "The official article names Mykhailo Yelnykov as author and publishes a detailed cultural, chronological and inscriptional study of one fourteenth-century Arabic bronze bowl with silver inlay. This is adjacent single-object scholarship, not evidence for an in-scope late-antique Aramaic earthenware incantation bowl."
+    },
+    {
+      "source_id": "SRC-5FAA5A5945F8",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_book_description",
+      "locator": "https://books.ybz.org.il/product/seder-mazikin",
+      "finding": "Yad Izhak Ben-Zvi describes a Hebrew monograph examining the relationship between law and magic in ancient Jewish sources, with Babylonian incantation bowls and rabbinic literature at its center. It is a sustained thematic study, not a numbered object corpus edition."
+    },
+    {
+      "source_id": "SRC-A8113685A969",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "institutional_abstract",
+      "locator": "https://cris.iucc.ac.il/en/publications/who-were-the-jewish-magicians-behind-the-aramaic-incantation-bowl/; DOI 10.18647/3458/JJS-2020",
+      "finding": "The institutional abstract says the article studies the social and professional contexts of Jewish Aramaic bowl producers and argues that they belonged to a guild of professional scribes. Its purpose is social and professional interpretation rather than object publication."
+    }
+  ]
+}

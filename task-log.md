@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Scholarship bibliography and scope continuation
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (four source corrections and four append-only scope reviews) —
+state digest `6582d8671ff4`
+**Tests:** 261 Python tests passed; both correction manifests and the scope
+manifest replayed with zero changes; JSON, generated reports and corpus-state
+validation passed
+
+- Corrected the 2025 Velyki Kuchugury article to Mykhailo Yelnykov from the
+  official journal PDF and classified it as adjacent single-object scholarship.
+  Its fourteenth-century Arabic metal bowl is explicitly not treated as an
+  in-scope late-antique Aramaic object, and no candidate record was created.
+- Enriched and classified Manekin-Bamberger's 2024 *Seder Mazikin* and 2020
+  Jewish-magicians article as thematic studies from publisher and institutional
+  descriptions. Repaired Herman 2021 from a corrupted chapter citation to a
+  DOI-bearing *Semitica* article and classified its first publication of one
+  bowl as a single-object edition from the publisher's first-page abstract.
+- Scope coverage rises from 108 to 112 of 207 scholarship works; the honest
+  unclassified backlog falls from 99 to 95. No bowl, identity, reading,
+  authenticity, rights approval or public-release decision changed.
+- Next: continue SCHOL-006 only from complete documents or authoritative
+  abstracts, while the higher-level handoff priorities remain Penn media-rights
+  review, edition-locator coverage and the queued high-impact acquisitions.
+
 ## 2026-09-19 — Codex — University and publisher scope tranche
 
 **Claimed:** SCHOL-006

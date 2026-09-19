@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T17:36:29Z",
+  "evidence_path": "research/reviews/manekin_yelnykov_scope_evidence_2026-09-19.json",
+  "evidence_sha256": "32c0b263f14e589ebaac4bc694fd440f5db27b1e1fc7292bc3f881ce8fad7ed9",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-YELNYKOV2025-ARABIC-METAL-BOWL",
+      "source_id": "SRC-17A7CA53F7DB",
+      "replacement_source_id": null,
+      "rationale": "The official article page and PDF identify Mykhailo Yelnykov as the author, supply the publisher and page range, and show that the object is a fourteenth-century Arabic metal bowl rather than a late-antique Aramaic incantation bowl.",
+      "before": {
+        "source_type": "article",
+        "title": "Arabic Magic Bowl from the Velyki Kuchugury Hillfort",
+        "authors": "Ali H. Faraj",
+        "issued_year": 2025,
+        "container_title": "The World of the Orient",
+        "publisher": "National Academy of Sciences of Ukraine (Co. LTD Ukrinformnauka) (Publications)",
+        "url": "https://doi.org/10.15407/orientw2025.02.081",
+        "doi": "10.15407/orientw2025.02.081",
+        "isbn": null,
+        "citation": "Faraj, Ali H. ‘Arabic Magic Bowl from the Velyki Kuchugury Hillfort.’ The World of the Orient 2025, no. 2.",
+        "access_status": "available",
+        "rights_status": "open_license",
+        "notes": "Discovered in broad Crossref metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Arabic Magic Bowl from the Velyki Kuchugury Hillfort",
+        "authors": "Mykhailo Yelnykov",
+        "issued_year": 2025,
+        "container_title": "The World of the Orient, no. 2",
+        "publisher": "A. Yu. Krymskyi Institute of Oriental Studies, NAS of Ukraine",
+        "url": "https://oriental-world.org.ua/index.php/journal/article/view/775",
+        "doi": "10.15407/orientw2025.02.081",
+        "isbn": null,
+        "citation": "Yelnykov, Mykhailo. ‘Arabic Magic Bowl from the Velyki Kuchugury Hillfort.’ The World of the Orient, no. 2 (2025): 81-98. https://doi.org/10.15407/orientw2025.02.081.",
+        "access_status": "available",
+        "rights_status": "open_license",
+        "notes": "Author, article metadata, abstract and CC BY-NC 4.0 license verified against the official article and PDF on 19 September 2026. The object is a fourteenth-century Arabic bronze bowl with silver inlay, not an in-scope late-antique Aramaic earthenware incantation bowl; the work is retained as adjacent discovery scholarship."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-MANEKIN-BAMBERGER2024-SEDER-MAZIKIN",
+      "source_id": "SRC-5FAA5A5945F8",
+      "replacement_source_id": null,
+      "rationale": "The publisher's book page supplies the Hebrew subtitle, publisher, year and a detailed description of the monograph's treatment of law, magic, rabbinic literature and Babylonian incantation bowls.",
+      "before": {
+        "source_type": "book",
+        "title": "Seder Mazikin: Law and Magic in Late Antique Jewish Society",
+        "authors": "Avigail Manekin-Bamberger",
+        "issued_year": 2024,
+        "container_title": null,
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Manekin-Bamberger, Avigail. Seder Mazikin: Law and Magic in Late Antique Jewish Society. Hebrew. 2024.",
+        "access_status": "unknown",
+        "rights_status": "copyrighted",
+        "notes": "Hebrew monograph; part of the older-language coverage the review flags as bibliographically but not analytically represented."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Seder Mazikin: Law and Magic in Late Antique Jewish Society",
+        "authors": "Avigail Manekin-Bamberger",
+        "issued_year": 2024,
+        "container_title": null,
+        "publisher": "Yad Izhak Ben-Zvi",
+        "url": "https://books.ybz.org.il/product/seder-mazikin",
+        "doi": null,
+        "isbn": null,
+        "citation": "Manekin-Bamberger, Avigail. Seder Mazikin: Law and Magic in Late Antique Jewish Society. Jerusalem: Yad Izhak Ben-Zvi, 2024. Hebrew.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Publisher metadata and book description verified on 19 September 2026. Hebrew title and subtitle: סדר מזיקין: משפט ומאגיה בספרות חז״ל ובקערות ההשבעה הבבליות. The official description was used for work-level scope only; no protected book text was imported."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-MANEKIN-BAMBERGER2020-JEWISH-MAGICIANS",
+      "source_id": "SRC-A8113685A969",
+      "replacement_source_id": null,
+      "rationale": "The Israeli Research Community Portal supplies the complete title, issue, pages, DOI, publisher and abstract for the article.",
+      "before": {
+        "source_type": "article",
+        "title": "Who Were the Jewish Magicians?",
+        "authors": "Avigail Manekin-Bamberger",
+        "issued_year": 2020,
+        "container_title": "Journal of Jewish Studies",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Manekin-Bamberger, Avigail. 'Who Were the Jewish Magicians?' Journal of Jewish Studies 71 (2020): 235–254.",
+        "access_status": "unknown",
+        "rights_status": "copyrighted",
+        "notes": "Practitioner-identity evidence bearing directly on how the index should record scribe and practitioner attributions."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Who Were the Jewish ‘Magicians’ behind the Aramaic Incantation Bowls?",
+        "authors": "Avigail Manekin-Bamberger",
+        "issued_year": 2020,
+        "container_title": "Journal of Jewish Studies 71, issue 2",
+        "publisher": "Liverpool University Press",
+        "url": "https://cris.iucc.ac.il/en/publications/who-were-the-jewish-magicians-behind-the-aramaic-incantation-bowl/",
+        "doi": "10.18647/3458/JJS-2020",
+        "isbn": null,
+        "citation": "Manekin-Bamberger, Avigail. ‘Who Were the Jewish “Magicians” behind the Aramaic Incantation Bowls?’ Journal of Jewish Studies 71, no. 2 (2020): 235-254. https://doi.org/10.18647/3458/JJS-2020.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Bibliographic metadata and abstract verified against the Israeli Research Community Portal on 19 September 2026. The abstract supports work-level analysis of scribal and practitioner context; no protected article text was imported."
+      }
+    }
+  ]
+}

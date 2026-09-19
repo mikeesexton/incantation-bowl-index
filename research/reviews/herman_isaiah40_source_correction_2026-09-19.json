@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T17:36:29Z",
+  "evidence_path": "research/reviews/herman_isaiah40_scope_evidence_2026-09-19.json",
+  "evidence_sha256": "38d5efc120eec29802f10e7b01e2367fb7e71287ebd603e233314207012a73bd",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-HERMAN2021-ISAIAH40-BOWL",
+      "source_id": "SRC-72652F4681FB",
+      "replacement_source_id": null,
+      "rationale": "The Peeters issue record and publisher-hosted first-page preview identify this as an article by Geoffrey Herman and supply its volume, pages, DOI and abstract; the imported row was typed as a chapter and contained a corrupted citation with the following bibliography entry appended.",
+      "before": {
+        "source_type": "chapter",
+        "title": "An Unpublished Incantation Bowl with a Citation from Isaiah 40",
+        "authors": "Herman, Geoffrey",
+        "issued_year": 2021,
+        "container_title": "Semitica",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Herman, Geoffrey. “ An Unpublished Incantation Bowl with a Citation from Isaiah 40.” Semitica 63 (2021): 349–53. 44 Aramaic Incantation Bowls Hunter, Erica C. D. “Combat and Conflict in Incantation Bowls: Studies on Two Aramaic Specimens from Nippur.” In Studia Aramaica: New Sources and New Approaches, ed. Markham J. Geller, Jonas C. Greenfield, and Michael P. Weitzman, 61–75. Oxford: Oxford University Press, 1995.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "An Unpublished Incantation Bowl with a Citation from Isaiah 40",
+        "authors": "Geoffrey Herman",
+        "issued_year": 2021,
+        "container_title": "Semitica 63",
+        "publisher": "Peeters Publishers",
+        "url": "https://poj.peeters-leuven.be/content.php?id=3289909&journal_code=SE&url=article",
+        "doi": "10.2143/SE.63.0.3289909",
+        "isbn": null,
+        "citation": "Herman, Geoffrey. ‘An Unpublished Incantation Bowl with a Citation from Isaiah 40.’ Semitica 63 (2021): 349-353. https://doi.org/10.2143/SE.63.0.3289909.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Bibliographic metadata and the first-page abstract were verified against Peeters on 19 September 2026. The abstract states that the article first publishes one Jewish Babylonian Aramaic bowl containing a Hebrew citation of Isaiah 40:6-8; no protected article text was imported."
+      }
+    }
+  ]
+}
