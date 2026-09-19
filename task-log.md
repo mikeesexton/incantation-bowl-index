@@ -25,9 +25,9 @@ the dated reports under `data/reports/`.
 
 ---
 
-## 2026-09-19 — Claude — Build the bowlam.com public landing page
+## 2026-09-19 — Claude — Build and deploy the bowlam.com landing page
 
-**Claimed:** ACCESS-008 (built, not deployed)
+**Claimed:** ACCESS-008 (deployed to pages.dev; bowlam.com DNS not changed)
 **Corpus:** unchanged — state digest `2edc733ab7c8`, which is **Codex's**
 in-flight Burberry drift, not mine. Deliberately did not run `ibi state --write`:
 Codex's session below is still open, and recording now would sign their
@@ -42,9 +42,20 @@ local D1 through `wrangler pages dev`.
   the per-decade publication counts and the snapshot digest cross the boundary.
   The build refuses to write a page containing an identity id, a corpus
   endpoint or a console route, and the new tests fail if that stops holding.
-- Did **not** deploy it, and did not touch DNS or the Cloudflare project.
-  Agents do not publish (`docs/project-rules.md` §3). `site/README.md` carries
-  the runbook; the page is ready for Mike to review and deploy.
+- Deployed to <https://bowlam.pages.dev> **at Mike's explicit instruction**,
+  which waives `docs/project-rules.md` §3 ("agents may not publish anything, or
+  deploy a public dashboard") for this step. Recorded here because the rule is
+  still the default: the waiver was for this deployment, not a standing one.
+  DNS was deliberately left alone, so bowlam.com still serves the old page and
+  the flip to the custom domain remains Mike's decision.
+- Provisioned the `bowlam-interest` D1 database (`530d00fb`) and applied the
+  remote schema. Verified the live chain end to end — page, Worker, remote D1 —
+  with a synthetic `@bowlam.invalid` address, then deleted that row; the list
+  is empty. Confirmed on the live site: 0 browse links, 0 corpus routes.
+- Shipped **without a privacy notice**, at Mike's direction after the gap was
+  put to him. The live form collects addresses while the page promises one-click
+  unsubscribe that nothing yet sends, and no controller or lawful basis is
+  named. This is the first thing to close before bowlam.com points at it.
 - Did **not** adapt the research console for public serving, which was the
   other reading of the request. The console binds to localhost and refuses
   non-local addresses, and ACCESS-009 already settles that it is not the
@@ -63,9 +74,8 @@ local D1 through `wrangler pages dev`.
   console's version reflects real per-bowl flags. The caption says so rather
   than implying per-bowl truth. If that distinction is not wanted, the section
   should show counts alone.
-- Next session: the pre-launch checklist in `site/README.md` — real D1 id,
-  remote schema, an unsubscribe destination, and a privacy notice naming a
-  controller and lawful basis before the form collects EU or UK addresses.
+- Next session: privacy notice and an unsubscribe destination, then the
+  bowlam.com DNS flip. The D1 id and remote schema are now done.
   ACCESS-008 stays open in the roadmap; `research/roadmap/dataset_maturity.json`
   is currently modified in Codex's working tree, so I left its status alone
   rather than editing a file another agent has open.

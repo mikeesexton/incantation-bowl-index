@@ -92,6 +92,18 @@ npx wrangler d1 execute bowlam-interest --remote \
   --command "SELECT name FROM sqlite_master WHERE name='interest_signups'"
 ```
 
+## Live
+
+- **Deployed:** <https://bowlam.pages.dev> (Cloudflare Pages project `bowlam`)
+- **bowlam.com:** *not* pointed here yet — it still serves the old page. The
+  DNS flip is a separate, deliberate decision.
+- **Open before the flip:** a privacy notice, and something that actually sends
+  the one-click unsubscribe the page promises.
+
+Note that deploying is normally the owner's job, not an agent's
+(`docs/project-rules.md` §3). The 19 September deployment was made on an
+explicit instruction covering that deployment only.
+
 ## Deploy
 
 ```sh
@@ -118,12 +130,13 @@ npx wrangler d1 execute bowlam-interest --remote \
   --command "UPDATE interest_signups SET unsubscribed_at = datetime('now') WHERE email = 'someone@example.org'"
 ```
 
-## Before this goes live
+## Before bowlam.com points here
 
-- [ ] Confirm `database_id` in `wrangler.toml` is a real id, not the
-      placeholder. `--update-config` sets it; running `d1 create` from any
-      other directory does not.
-- [ ] Apply `schema.sql` to the **remote** D1, not just the local one.
+Done on 19 September: D1 created, `database_id` set, remote schema applied,
+live write path verified end to end.
+
+Still open:
+
 - [ ] Decide what the unsubscribe link in your first mailing will point at. The
       page promises one-click unsubscribe; the schema supports it, but nothing
       sends mail yet.
