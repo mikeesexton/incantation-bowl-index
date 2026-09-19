@@ -95,8 +95,8 @@
   <section class="intro-chapter intro-rediscovery" aria-labelledby="rediscovery-title">
     <div class="intro-section-heading"><h2 id="rediscovery-title">A thousand years later,<br><em>the bowls resurface.</em></h2></div>
     <div class="intro-milestones">
-      <article><span class="intro-date">1850</span><h3>A discovery at Nippur</h3><p>Austen Henry Layard uncovers an inscribed bowl at Nippur. Ancient spells return to view.</p></article>
-      <article><span class="intro-date">1853</span><h3>The first texts in print</h3><p>Thomas Ellis publishes bowl texts in Layard’s book. The work of reading their spells begins.</p></article>
+      <article><span class="intro-date" data-year="1850" aria-label="1850">1850</span><h3>A discovery at Nippur</h3><p>Austen Henry Layard uncovers an inscribed bowl at Nippur. Ancient spells return to view.</p></article>
+      <article><span class="intro-date" data-year="1853" aria-label="1853">1853</span><h3>The first texts in print</h3><p>Thomas Ellis publishes bowl texts in Layard’s book. The work of reading their spells begins.</p></article>
     </div>
     <details class="intro-sources"><summary>Sources for the story</summary><p><a href="https://scholars.depaul.edu/ws/portalfiles/portal/39957201/fulltext.pdf" target="_blank" rel="noreferrer">Brodie and Kersel, “WikiLeaks, Text, and Archaeology,” in Archaeologies of Text (2014), p. 200</a> dates Layard’s finds at Babylon and Nippur to 1850. Earlier bowls reached the British Museum in 1841.</p><p><a href="https://www.britishmuseum.org/collection/object/W_1841-0726-90_1" target="_blank" rel="noreferrer">British Museum: Ellis’s 1853 publication</a>, in Layard, pp. 521–522.</p></details>
   </section>
@@ -125,13 +125,13 @@
         <p class="intro-field-legend"><span class="intro-dot"></span> Recorded <span class="intro-dot intro-dot-muted"></span> Not recorded in this index</p>
       </div>
       <div class="intro-coverage-steps">
-        <article class="intro-coverage-step">
+        <article class="intro-coverage-step" data-step="all">
           <span class="intro-kicker">The collection</span>
           <h3>Meet the collection.</h3>
           <p>The index brings together 1,652 bowls from 1,969 source records — each one an appearance of a bowl in a publication, a catalogue or a collection, linked to the object it appears to describe.</p>
           <p>The collection grows as research continues.</p>
         </article>
-        <article class="intro-coverage-step"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number">718<span> / 1,652</span><small>43.5% of bowls</small></p><p>Scholarly editions that read and translate these bowls are recorded against the objects they describe.</p></article><article class="intro-coverage-step"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number">362<span> / 1,652</span><small>21.9% of bowls</small></p><p>Published accounts of where bowls were found, and the collections they have passed through, are recorded as claims attributed to their sources.</p></article><article class="intro-coverage-step"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number">326<span> / 1,652</span><small>19.7% of bowls</small></p><p>Photographs and drawings in publications and collection catalogues are indexed as references, not reproduced here.</p></article>
+        <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number">718<span> / 1,652</span><small>43.5% of bowls</small></p><p>Scholarly editions that read and translate these bowls are recorded against the objects they describe.</p></article><article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number">362<span> / 1,652</span><small>21.9% of bowls</small></p><p>Published accounts of where bowls were found, and the collections they have passed through, are recorded as claims attributed to their sources.</p></article><article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number">326<span> / 1,652</span><small>19.7% of bowls</small></p><p>Photographs and drawings in publications and collection catalogues are indexed as references, not reproduced here.</p></article>
       </div>
     </div>
     <p class="intro-coverage-note">Each circle stands for one bowl in the index. Highlighting shows how many bowls carry each kind of reference — some carry all three. Which circles light up is illustrative: this page publishes totals, not records for individual bowls.</p>
@@ -219,25 +219,82 @@
     document.querySelectorAll("[data-coverage]").forEach(function (button) {
       button.setAttribute("aria-pressed", String(button.dataset.coverage === field));
     });
-    if (!status) return;
-    status.textContent = field === "all"
+    var message = field === "all"
       ? chosen.length.toLocaleString() + " bowls in the index."
       : chosen.length.toLocaleString() + " of " + TOTAL.toLocaleString() + " ("
         + (100 * chosen.length / TOTAL).toFixed(1) + "%) " + LEGENDS[field] + ".";
+    if (status) status.textContent = message;
+    var desc = document.getElementById("intro-field-desc");
+    if (desc) desc.textContent = message
+      + " Each circle represents one bowl. Lighter circles have no reference of this kind.";
   }
+
+  // Scrolling through the coverage chapters advances the field, the way the
+  // console's introduction does. Wide screens only: on a phone the steps and
+  // the field are not on screen together, so the change would go unseen.
+  var desktop = matchMedia("(min-width: 701px)");
+  var lastStep = null, frame = 0;
+  function onScroll() {
+    if (frame || !desktop.matches) return;
+    frame = requestAnimationFrame(function () {
+      frame = 0;
+      var steps = [].slice.call(document.querySelectorAll("[data-step]"));
+      var target = innerHeight * 0.52;
+      var visible = steps.filter(function (step) {
+        var box = step.getBoundingClientRect();
+        return box.bottom > 100 && box.top < innerHeight;
+      });
+      if (!visible.length) return;
+      var closest = visible.reduce(function (a, b) {
+        return Math.abs(a.getBoundingClientRect().top + a.offsetHeight / 2 - target) <
+               Math.abs(b.getBoundingClientRect().top + b.offsetHeight / 2 - target) ? a : b;
+      });
+      // A clicked button stays selected until scrolling reaches another chapter.
+      if (closest.dataset.step !== lastStep) {
+        lastStep = closest.dataset.step;
+        setCoverage(lastStep);
+      }
+    });
+  }
+  addEventListener("scroll", onScroll, {passive: true});
+  addEventListener("resize", onScroll, {passive: true});
+  onScroll();
 
   document.querySelectorAll("[data-coverage]").forEach(function (button) {
     button.addEventListener("click", function () { setCoverage(button.dataset.coverage); });
   });
 
+  // The rediscovery dates ramp from 750 to their real year. aria-label carries
+  // the true year throughout, so a screen reader never reads the intermediate
+  // counting values as fact.
+  var dates = [].slice.call(document.querySelectorAll("[data-year]"));
+  function animateYear(date, delay) {
+    var first = 750, last = Number(date.dataset.year), duration = 3200;
+    date.textContent = String(first);
+    setTimeout(function () {
+      var started = performance.now();
+      var tick = function (now) {
+        var progress = Math.min(1, (now - started) / duration);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        date.textContent = String(Math.round(first + (last - first) * eased));
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }, delay);
+  }
+
   if (!reduced.matches && "IntersectionObserver" in window) {
+    dates.forEach(function (date) { date.textContent = "750"; });
     var reveal = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         entry.target.classList.add("is-in-view", "is-revealing");
+        if (entry.target.classList.contains("intro-milestones")) {
+          dates.forEach(function (date, index) { animateYear(date, index * 280); });
+        }
         reveal.unobserve(entry.target);
       });
-    }, {threshold: 0.25});
+    }, {threshold: 0.18});
     document.querySelectorAll(".intro-milestones, .intro-map, .intro-chart-svg, .intro-section-heading")
       .forEach(function (node) { reveal.observe(node); });
   }
