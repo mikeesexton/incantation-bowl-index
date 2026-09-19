@@ -285,18 +285,37 @@
 
   if (!reduced.matches && "IntersectionObserver" in window) {
     dates.forEach(function (date) { date.textContent = "750"; });
+    var pending = [].slice.call(document.querySelectorAll(
+      ".intro-milestones, .intro-map, .intro-chart-svg, .intro-section-heading"));
+
+    function revealNode(node) {
+      var at = pending.indexOf(node);
+      if (at < 0) return;
+      pending.splice(at, 1);
+      reveal.unobserve(node);
+      node.classList.add("is-in-view", "is-revealing");
+      if (node.classList.contains("intro-milestones")) {
+        dates.forEach(function (date, index) { animateYear(date, index * 280); });
+      }
+    }
+
     var reveal = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-in-view", "is-revealing");
-        if (entry.target.classList.contains("intro-milestones")) {
-          dates.forEach(function (date, index) { animateYear(date, index * 280); });
-        }
-        reveal.unobserve(entry.target);
+        if (entry.isIntersecting) revealNode(entry.target);
       });
     }, {threshold: 0.18});
-    document.querySelectorAll(".intro-milestones, .intro-map, .intro-chart-svg, .intro-section-heading")
-      .forEach(function (node) { reveal.observe(node); });
+    pending.forEach(function (node) { reveal.observe(node); });
+
+    // A fast scroll can carry a section past the viewport between observer
+    // samples. These sections start hidden — the map's shaded find region at
+    // opacity 0, the chart bars at scaleY(.02) — so a missed sample leaves the
+    // content permanently invisible, not merely unanimated. Reveal anything
+    // that has already gone by.
+    addEventListener("scroll", function () {
+      for (var i = pending.length - 1; i >= 0; i--) {
+        if (pending[i].getBoundingClientRect().bottom < 0) revealNode(pending[i]);
+      }
+    }, {passive: true});
   }
 
   // Interest capture. Posts to the Pages Function in site/functions/api/interest.js.
