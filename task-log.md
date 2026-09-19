@@ -25,6 +25,62 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Claude — TEXT-001 gate diagnosis and Waller concordances
+
+**Claimed:** TEXT-001
+**Corpus:** changed (seven bibliographic concordances attached to existing
+objects) — state digest `94292e8e7a3f`
+**Tests:** 264 Python tests passed; the candidate manifest replayed with zero
+new rows; roadmap, enrichment and campaign reports regenerated
+
+- Picked up TEXT-001 because it is a handoff-gate requirement and SCHOL-006 is
+  not. Measured the gate rather than adding volume to it: 611 of 1,075
+  probable/confirmed identities now carry an edition reference (56.8%) against
+  a 0.80 gate needing 860 — a shortfall of 249.
+- **Profiled the whole gap.** The 471 then-unreferenced priority identities are
+  205 National Library of Israel, 137 British Museum, 52 Waller 2022
+  designations and 77 other. Held editions are enumerated almost to
+  exhaustion: of 40 held scholarship documents only five editions have zero
+  enumerated objects, and four of those are single-object editions. **The
+  remaining gap is acquisition-bound, not effort-bound**, and Segal 2000 is the
+  largest single lever because it catalogues the 137 British Museum bowls.
+- Mined the held, hash-verified, open-licence Waller 2022 PDF. Its §4.0
+  reference guide states that bowls published in individual editions are
+  designated by author and year, and gives the siglum key (AIT = Montgomery
+  1913, AMB = Naveh-Shaked 1985, CAMIB = Segal 2000, Isbell, JBA, MSF, SHM,
+  ZHS, Corpus, Curses). Attached the seven author-year concordances it reports
+  — Müller-Kessler 2013, Müller-Kessler 1994: B2, Abousamra 2020, Shaked 2015:
+  109-110, Herman 2021, Ford/Ten-Ami 2012, Schwab 1891: 592 — through a
+  candidate manifest that matched the existing appearance locators. Object and
+  appearance counts were unchanged at 1,969 and 2,268; only seven identifiers
+  were added. Edition coverage rose 604 → 611.
+- **What I expected and did not find.** I went in assuming the 52 Waller
+  designations were publication sigla that would convert in bulk. They are
+  overwhelmingly collection numbers — Moussaieff M-numbers, Schøyen MS numbers,
+  Iraq Museum IM, Berlin VA — and only seven are author-year references. The
+  other 45 were left alone rather than forced into a publication scheme.
+- **Two facts flagged for Mike, not decided here** (recorded on the gate
+  condition in the roadmap input): (1) `publication_reference_pct` counts only
+  the `publication object key` and `bibliographic concordance` identifier
+  schemes, while TEXT-001's own `done_when` also accepts "an explicit
+  no-known-edition status, each with a source" — so doing the task correctly
+  for an unpublished bowl cannot move the gate; (2) the 205 NLI identities
+  carry no publication information at all (zero `publication_status` claims),
+  so if they prove to have no known edition the arithmetic ceiling is 870 of
+  1,075 = 80.9%, leaving ten identities of slack. Realigning the metric or
+  letting the gate slip is a review decision.
+- **Observation outside my lane:** the roadmap blocker text says 432 untriaged
+  field-difference instances; `roadmap_metrics` currently reports 595. I did
+  not edit QA-002/CONC-005 text, but Codex should re-measure before the 22nd —
+  that is also a gate condition at target 0.
+- Deliberately not done: no identity merged, no reading adopted, no
+  no-known-edition status invented for the NLI cohort, and no change to the
+  gate's operator or target.
+- Next: the gate decision above is the blocker. If the metric stands, TEXT-001
+  needs Segal 2000 and the other queued acquisitions, which need Mike. If it is
+  realigned, the productive agent work becomes sourcing explicit
+  no-known-edition statuses for the NLI and other unreferenced cohorts.
+
 ## 2026-09-19 — Claude — SCHOL-006 open-document scope tranche
 
 **Claimed:** SCHOL-006
