@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-09-19T02:21:00+00:00",
+ "updated_at": "2026-09-19T11:23:05+00:00",
  "portfolio_summary": {
   "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
   "strengths": [
@@ -368,7 +368,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Every scholarship record carries a scope, either derived from the publication registry or recorded as a reading judgment with a basis.",
-     "evidence": "Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved publication registry supplies initial derived coverage. Explicit reviews now include the two Wohlstein and four Gordon articles. The scholarship index contains 217 works, 39 source-linked held documents and 66 scoped works; 151 remain unclassified rather than guessed. Juusola 1999 remains classified as a linguistic study from its reviewed contents and Wajsberg's review even though only front matter is held."
+     "evidence": "Migration 013 adds an append-only scope ledger and `ibi ingest-source-scope`; the vocabulary is single_object_edition, corpus_edition, catalogue, thematic_study, synthesis, linguistic_study, provenance_ethics, excavation_report, not_scholarship. The resolved publication registry supplies initial derived coverage. A 19 September tranche added sixteen explicit reviews: five complete held documents were upgraded from derived to inspected classifications, and eleven recent works were classified from publisher, journal, bibliographic or university abstracts. The scholarship index contains 217 works, 39 source-linked held documents and 77 scoped works; 140 remain unclassified rather than guessed. Juusola 1999 remains classified as a linguistic study from its reviewed contents and Wajsberg's review even though only front matter is held."
     },
     {
      "id": "SCHOL-007",
@@ -794,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-19",
+   "note": "Advanced SCHOL-006 with sixteen append-only scope reviews. Five complete inspected holdings now have explicit rather than merely derived judgments: Montgomery 1913 and Ford 2014 are corpus editions, Brand 2021 is a catalogue, Moriggi 2024 is a corpus edition, and Archaeological Center Auction 57 is explicitly not scholarship. Eleven recent works were classified from sufficiently specific publisher, journal, bibliographic or university abstracts, raising scoped coverage from 66 to 77 of 217 works and reducing the unclassified backlog from 151 to 140. A work with conflicting author metadata and two works lacking specific authoritative abstracts remain unclassified; no object, identity, reading, rights or publication decision changed."
+  },
   {
    "date": "2026-09-18",
    "note": "Ingested the researcher-supplied Juusola 1999 PDF conservatively after rendering and inspecting all six pages. The file contains only title and imprint pages, acknowledgements, two contents pages and one blank page; it is a copyrighted front-matter holding, not the complete monograph whose contents extend through printed page 263. Added a hash-bound private capture, document assessment, ISBN correction, refreshed linguistic-study scope evidence and an updated open access lead. Holdings rise to 51 captured sources and 52 assessment rows while complete documents remain 48; no bowl, identity, text, media or public-release decision changed."
@@ -1303,7 +1307,7 @@
   "RIGHTS-002 / ACCESS-003: obtain human review of the intended Penn reuse model and, if needed, ask Penn to confirm how its terms apply to the 288-row, 280-URL cohort. Policy evidence now scopes that cohort plus the Ford/Levene pilot, but completed assessments and approvals remain 0/327. Record decisions only through evidence-bound manifests, keep the three shared Penn URLs coherent, and retain fail-closed treatment for protected texts, capture storage and every unapproved image.",
   "TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 732 of 1,652 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",
   "SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.",
-  "SCHOL-006: classify the remaining 151 unclassified works by scope. Thirty-eight scholarship works now have a source-linked held document and 66 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",
+  "SCHOL-006: classify the remaining 140 unclassified works by scope. Thirty-nine scholarship works now have a source-linked held document and 77 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",
   "TEXT-001 follow-through: sixteen complete corpus, catalogue, or edition units are now enumerated. Review the 376 separate candidates and exact-identifier overlaps in ordinary source batches; do not merge them automatically or import protected readings. Gordon's Harvard 8669, seven numbered Istanbul survey bowls, National Museum 207962, Berlin entry 168, Ellis's no. 7 fragment group, and Stübe's two unnamed Pahlavi bowls remain explicitly unresolved rather than falsely merged.",
   "QA-002 / CONC-005: review the 432 untriaged field-difference instances in coherent source batches, including 285 earlier reviews now stale against current evidence. Preserve reported values and uncertainty; claim-vocabulary coverage is complete.",
   "META-008: extend the Mandaic denominator now that Pognon's thirty Khouabir bowls are enumerated. Reconcile them to later editions and museum identities, then add Yamauchi 1967 if the pending request succeeds. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.",

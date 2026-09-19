@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T11:23:05Z",
+  "method": "Scope was assigned only where a complete inspected document or a publisher, journal, or university abstract stated the work's actual treatment. Titles alone were not treated as sufficient evidence.",
+  "policy": "These notes support work-level scope classification only. They make no claim about complete object extraction, preferred readings, identity, rights, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-FC77989995C8",
+      "proposed_scope": "not_scholarship",
+      "evidence_type": "complete_inspected_document",
+      "locator": "CAP-9CD9A67E0389; SHA-256 1fe6cd1c0af12a60f30c930d4258ee3e44bd76762d975754877656a5623aa14e; catalogue pp. 92-93, lots 440-442",
+      "finding": "The complete 97-page file is a commercial auction catalogue presenting sale conditions and numbered lots. Its three bowl lots are market descriptions, not a scholarly edition or study."
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "complete_inspected_document",
+      "locator": "CAP-560EB584740F; SHA-256 c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf; contents, texts 1-42, glossaries, register and plates",
+      "finding": "The complete Montgomery volume presents a numbered corpus with transcriptions, translations or commentary, glossaries, a closing register and plates."
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "complete_inspected_document",
+      "locator": "CAP-877D87C47D82; SHA-256 0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7; printed pp. 235-263, especially appendices pp. 246-258",
+      "finding": "The complete article comments on and corrects readings across a published corpus, then presents two new bowls and a revised edition of a third bowl in its appendices."
+    },
+    {
+      "source_id": "SRC-6D313A7AA389",
+      "proposed_scope": "catalogue",
+      "evidence_type": "complete_inspected_document",
+      "locator": "CAP-E1E6C8B56AD6; SHA-256 bdbe5384e38fcbe39b6b621e4cc3df0f4c70ac94f49a3348e46af29431999f06; pp. 1-3",
+      "finding": "The complete working list enumerates forty-one published Syriac 'Manichaean' bowls and separately notes related candidates; it is an object-and-publication catalogue rather than an edition."
+    },
+    {
+      "source_id": "SRC-24B0EC105BC9",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "complete_inspected_document",
+      "locator": "CAP-700164814EAB; SHA-256 5779855d0e8170030fcf19a549598a1007e19cd38e3d4f13ef6fe88502c517d8; printed pp. 193-202, sections 2-3",
+      "finding": "The complete article gives first editions of two previously unpublished Syriac incantation texts, one bowl and one British Museum fragment."
+    },
+    {
+      "source_id": "SRC-CA4B122C5F4D",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article/71/1/105/8303336; DOI 10.1093/jss/fgaf025",
+      "finding": "The Oxford University Press abstract states that the article publishes a new NLI bowl in full and re-examines three parallel Penn bowls, including a full edition of B16041."
+    },
+    {
+      "source_id": "SRC-BFA68E533DE7",
+      "proposed_scope": "linguistic_study",
+      "evidence_type": "journal_article_abstract",
+      "locator": "https://doi.org/10.14428/babelao.vol15.2026.92593",
+      "finding": "The article abstract frames the work as an onomastic and philological investigation of the divine name YHBYH across the bowl corpus, its relation to the Tetragrammaton, and its pluriconfessional setting."
+    },
+    {
+      "source_id": "SRC-85B88C970151",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "journal_article_abstract",
+      "locator": "https://doi.org/10.1163/17455227-bja10059",
+      "finding": "The abstract states that the article provides a transcription, translation and analysis of one unpublished Penn Museum bowl, B9002."
+    },
+    {
+      "source_id": "SRC-F09573688FD1",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article-abstract/70/1/1/7787792; DOI 10.1093/jss/fgae027",
+      "finding": "The Oxford University Press abstract identifies the article as the editio princeps of five Mandaic bowls in the Abgine Museum."
+    },
+    {
+      "source_id": "SRC-68A2D33D7CF9",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "bibliographic_abstract",
+      "locator": "https://ixtheo.de/Record/1932387935; JSTOR stable item 27440313",
+      "finding": "The abstract describes a study of three parallels between the Babylonian Talmud and incantation bowls to investigate textual circulation and reworking, not an edition of those objects."
+    },
+    {
+      "source_id": "SRC-FBBE3A9CAA77",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_publication_record",
+      "locator": "https://cris.huji.ac.il/en/publications/magic-formulae-and-womens-history-authorship-agency-and-gender-in/; DOI 10.1353/jqr.2025.a952518",
+      "finding": "The Hebrew University record identifies a peer-reviewed article focused on authorship, agency and gender in incantation-bowl formulae rather than an object edition."
+    },
+    {
+      "source_id": "SRC-30E9800D53CB",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_hosted_abstract",
+      "locator": "https://in.bgu.ac.il/en/humsos/goldstein-goren/Jewish%20Magic/JT6ENG%20Bhayro.pdf; DOI 10.64166/zyzcyg38",
+      "finding": "The author abstract says the article examines references to Moses in the bowls, including scribal authority, self-identification, scriptural episodes and possible imagery."
+    },
+    {
+      "source_id": "SRC-54C6C8891988",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_abstract",
+      "locator": "https://research-portal.uu.nl/en/publications/gender-and-the-mesopotamian-incantation-bowls/; DOI 10.1163/17455227-bja10055",
+      "finding": "The Utrecht University abstract describes a study of gender terminology, beneficiaries and creators across the Mesopotamian bowl corpus."
+    },
+    {
+      "source_id": "SRC-27D35A24C6BC",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article-abstract/68/2/415/7181355; DOI 10.1093/jss/fgad005",
+      "finding": "The Oxford University Press abstract states that the article presents the first publication and contextual discussion of one bowl, MC 77.233."
+    },
+    {
+      "source_id": "SRC-AB306F0110B7",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "university_repository_abstract",
+      "locator": "https://boa.unimib.it/handle/10281/362778; DOI 10.1093/jss/fgac026",
+      "finding": "The University of Milano-Bicocca repository abstract describes the work as the editio princeps of one Aramaic incantation bowl, IM 77781."
+    },
+    {
+      "source_id": "SRC-CB84220DAE0C",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_publication_record",
+      "locator": "https://cris.huji.ac.il/en/publications/babylonian-jewish-society-the-evidence-of-the-incantation-bowls/; DOI 10.1353/jqr.2022.0000",
+      "finding": "The Hebrew University record identifies a social-historical study using the bowl corpus as evidence for Babylonian Jewish society, not an edition."
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "SRC-17A7CA53F7DB",
+      "reason": "The indexed author conflicts with the author shown on the located publication page; correct the source metadata before classifying it."
+    },
+    {
+      "work": "Walker, 'An Ontology of Demonic Affliction'",
+      "reason": "No sufficiently specific authoritative abstract was located in this review."
+    },
+    {
+      "work": "Amsler, 'Affordances of an Incantation Bowl'",
+      "reason": "No sufficiently specific authoritative abstract was located in this review."
+    }
+  ]
+}

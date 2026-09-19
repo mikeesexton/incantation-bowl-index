@@ -25,6 +25,30 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Sixteen-work scholarship scope tranche
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (sixteen append-only source-scope reviews) — state digest
+`ab6d6cd010e5`
+**Tests:** 249 Python tests passed; the scope manifest replayed with zero changes;
+JSON, generated reports and corpus-state validation passed
+
+- Added explicit inspected-document classifications for five held works that
+  previously depended on derived scope: Montgomery 1913 and Ford 2014 are
+  corpus editions, Brand 2021 is a catalogue, Moriggi 2024 is a corpus edition,
+  and Archaeological Center Auction 57 is not scholarship.
+- Classified eleven genuinely unclassified recent works from sufficiently
+  specific publisher, journal, bibliographic or university abstracts. Scope
+  coverage rises from 66 to 77 of 217 works and the unclassified backlog falls
+  from 151 to 140; the held-document count remains 39.
+- Left an Arabic-bowl article unclassified because the indexed and located
+  authors disagree, and left the Walker and Amsler works unclassified because
+  no sufficiently specific authoritative abstracts were found. Titles alone
+  were not used as evidence.
+- Regenerated the maturity roadmap, campaign report and enrichment reports. No
+  object, identity, reading, rights or public-release decision changed. Next:
+  continue SCHOL-006 with another evidence-backed abstract or document tranche.
+
 ## 2026-09-18 — Codex — Juusola 1999 partial front-matter ingestion
 
 **Claimed:** SCHOL-005 / SCHOL-006 / ACCESS-004
