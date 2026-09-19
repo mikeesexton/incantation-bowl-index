@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T22:32:18Z",
+  "method": "Bibliographic correction, duplicate reconciliation and work scope were assigned only from a publisher abstract or extract, an institutional research record, or an official museum collection record that identifies the publication's treatment of a specific object. Titles alone were not treated as evidence.",
+  "policy": "These notes support bibliographic correction and work-level scope classification only. They do not verify individual readings, measurements, provenance claims, object identity, authenticity, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-81DE7ADF7FDB",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "university_abstract",
+      "locator": "https://cris.huji.ac.il/en/publications/jewish-legal-formulae-in-the-aramaic-incantation-bowls-2/; DOI 10.1163/17455227-01301006",
+      "finding": "The Hebrew University abstract says the article describes shared legal language in bowl, rabbinic and documentary divorce formulae and asks what can be learned from those parallels. It is a thematic legal-language study rather than an object edition."
+    },
+    {
+      "source_id": "SRC-0D8C4983AED9",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "official_museum_record_and_university_bibliography",
+      "locator": "https://www.museudafarmacia.pt/collection/ficha.aspx?a=1&id=3059&lang=PO&pa=; University of Exeter official publication list for Siam Bhayro; DOI 10.1163/17455227-01501002",
+      "finding": "The Pharmacy Museum record identifies inventory 010895, describes its Jewish Aramaic fertility-and-childbirth incantation and biblical citations, and points specifically to Siam Bhayro's article; Exeter's publication list records Bhayro as the sole author."
+    },
+    {
+      "source_id": "SRC-B47F6370B1D0",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "official_museum_object_record",
+      "locator": "https://www.britishmuseum.org/collection/object/W_1957-0925-1; DOI 10.1628/094457012799440203",
+      "finding": "The British Museum record for 1957,0925.1 states that the bowl was published for the first time by Levene and Bohak in 2012 and describes the deities and Mesopotamian toponyms analyzed in that publication."
+    },
+    {
+      "source_id": "SRC-5F62C41EEF94",
+      "proposed_action": "retain_as_repository_duplicate",
+      "evidence_type": "publisher_extract",
+      "locator": "https://www.cambridge.org/core/journals/iraq/article/abs/two-incantation-bowls-from-babylon/17DFEA0D62BF81531170E46E166E7861; DOI 10.2307/4200485; extract and information section",
+      "finding": "Cambridge's record identifies Erica C. D. Hunter and DOI 10.2307/4200485. Those fields match the existing canonical article SRC-2471CE31E5D9, which already carries an evidence-backed corpus-edition scope; the Waller-derived row is duplicate discovery metadata, not a second work."
+    },
+    {
+      "source_id": "SRC-57BB9AF5385E",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "publisher_abstract",
+      "locator": "https://academic.oup.com/jss/article-abstract/58/1/59/1673190; DOI 10.1093/jss/fgs038",
+      "finding": "Oxford University Press states that Bahaa Amer Al-Jubouri publishes one new eight-line Hebrew-square-script incantation bowl from the Iraq Museum, IM 212092."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T22:32:18Z",
+  "evidence_path": "research/reviews/authoritative_object_and_theme_scope_evidence_2026-09-19.json",
+  "evidence_sha256": "200b7b7b5063b83c5c3b9cd796b52c24c0063cda3be09151daf7c7c611330346",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-MANEKIN-BAMBERGER2015-LEGAL-FORMULAE",
+      "source_id": "SRC-81DE7ADF7FDB",
+      "replacement_source_id": null,
+      "rationale": "The Hebrew University research record supplies the DOI, issue, pages, publisher and abstract for the article.",
+      "before": {
+        "source_type": "article",
+        "title": "Jewish Legal Formulae in the Aramaic Incantation Bowls",
+        "authors": "Avigail Manekin-Bamberger",
+        "issued_year": 2015,
+        "container_title": "Aramaic Studies",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Manekin-Bamberger, Avigail. 'Jewish Legal Formulae in the Aramaic Incantation Bowls.' Aramaic Studies 13 (2015): 69–81.",
+        "access_status": "unknown",
+        "rights_status": "copyrighted",
+        "notes": "Divorce, oath, vow and excommunication language repurposed as supernatural acts. The review is explicit that technical resemblance shows familiarity with authoritative legal forms and does not prove a rabbinic court produced the bowl."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Jewish Legal Formulae in the Aramaic Incantation Bowls",
+        "authors": "Avigail Manekin-Bamberger",
+        "issued_year": 2015,
+        "container_title": "Aramaic Studies 13, issue 1",
+        "publisher": "Brill Academic Publishers",
+        "url": "https://cris.huji.ac.il/en/publications/jewish-legal-formulae-in-the-aramaic-incantation-bowls-2/",
+        "doi": "10.1163/17455227-01301006",
+        "isbn": null,
+        "citation": "Manekin-Bamberger, Avigail. ‘Jewish Legal Formulae in the Aramaic Incantation Bowls.’ Aramaic Studies 13, no. 1 (2015): 69-81. https://doi.org/10.1163/17455227-01301006.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Bibliographic metadata and abstract verified against the Hebrew University research portal on 19 September 2026. The abstract supports work-level analysis of divorce, oath, vow and excommunication formulae; no protected article text was imported."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-BHAYRO2017-LISBON-FERTILITY-BOWL",
+      "source_id": "SRC-0D8C4983AED9",
+      "replacement_source_id": null,
+      "rationale": "The official University of Exeter publication list records Siam Bhayro as sole author and supplies the pages; the Pharmacy Museum record ties the article to inventory 010895. The imported Crossref row incorrectly included three additional authors and named De Gruyter as publisher.",
+      "before": {
+        "source_type": "article",
+        "title": "An Aramaic Magic Bowl for Fertility and Success in Childbirth: Lisboa, Museu da Farmácia, Inv. No. 10895",
+        "authors": "Siam Bhayro; James Nathan Ford; Dan Levene; Ortal-Paz Saar",
+        "issued_year": 2017,
+        "container_title": "Aramaic Studies",
+        "publisher": "Walter de Gruyter GmbH",
+        "url": "https://doi.org/10.1163/17455227-01501002",
+        "doi": "10.1163/17455227-01501002",
+        "isbn": null,
+        "citation": "Bhayro et al. ‘An Aramaic Magic Bowl for Fertility and Success in Childbirth: Lisboa, Museu da Farmácia, Inv. No. 10895.’ Aramaic Studies 15 (2017).",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Discovered in broad Crossref metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "An Aramaic Magic Bowl for Fertility and Success in Childbirth: Lisboa, Museu da Farmácia, Inv. No. 10895",
+        "authors": "Siam Bhayro",
+        "issued_year": 2017,
+        "container_title": "Aramaic Studies 15, issue 1",
+        "publisher": "Brill Academic Publishers",
+        "url": "https://doi.org/10.1163/17455227-01501002",
+        "doi": "10.1163/17455227-01501002",
+        "isbn": null,
+        "citation": "Bhayro, Siam. ‘An Aramaic Magic Bowl for Fertility and Success in Childbirth: Lisboa, Museu da Farmácia, Inv. No. 10895.’ Aramaic Studies 15, no. 1 (2017): 106-111. https://doi.org/10.1163/17455227-01501002.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Authorship and pages verified against the University of Exeter publication list, and object linkage against the Pharmacy Museum record for inventory 010895, on 19 September 2026. No protected article text or museum image was imported."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-HUNTER2000-TWO-BABYLON-BOWLS",
+      "source_id": "SRC-5F62C41EEF94",
+      "replacement_source_id": "SRC-2471CE31E5D9",
+      "rationale": "The Cambridge journal record identifies Erica C. D. Hunter and DOI 10.2307/4200485. Those fields match the existing SOAS-derived canonical article SRC-2471CE31E5D9, so this Waller bibliography row is retained as duplicate discovery metadata rather than counted as a second work.",
+      "before": {
+        "source_type": "article",
+        "title": "Two Incantation Bowls from Babylon",
+        "authors": "Herman [and others; see citation]",
+        "issued_year": 2000,
+        "container_title": "Iraq",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "———. “Two Incantation Bowls from Babylon.” Iraq 62 (2000): 139–47.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "repository",
+        "title": "Waller 2025 bibliography entry: Two Incantation Bowls from Babylon",
+        "authors": "Erica C. D. Hunter",
+        "issued_year": 2000,
+        "container_title": "Waller 2025 JBA publication list",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Waller 2025 bibliography entry for Hunter, ‘Two Incantation Bowls from Babylon,’ Iraq 62 (2000): 139-147.",
+        "access_status": "available",
+        "rights_status": "unknown",
+        "notes": "Discovery metadata retained from Waller's printed bibliography. The DOI-bearing article is SRC-2471CE31E5D9; this row is not a second scholarly work. Exact prior values remain in IBI-SOURCE-CORR-HUNTER2000-TWO-BABYLON-BOWLS."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-AL-JUBOURI2013-IM212092",
+      "source_id": "SRC-57BB9AF5385E",
+      "replacement_source_id": null,
+      "rationale": "The Oxford University Press record supplies the full author name, journal title and issue, pages, DOI, publisher and abstract for the article.",
+      "before": {
+        "source_type": "article",
+        "title": "An Aramaic Incantation Text",
+        "authors": "Al-Jubouri [and others; see citation]",
+        "issued_year": 2013,
+        "container_title": "JSS",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "———. “ An Aramaic Incantation Text.” JSS 58 (2013): 59–63.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "An Aramaic Incantation Text",
+        "authors": "Bahaa Amer Al-Jubouri",
+        "issued_year": 2013,
+        "container_title": "Journal of Semitic Studies 58, issue 1",
+        "publisher": "Oxford University Press",
+        "url": "https://academic.oup.com/jss/article-abstract/58/1/59/1673190",
+        "doi": "10.1093/jss/fgs038",
+        "isbn": null,
+        "citation": "Al-Jubouri, Bahaa Amer. ‘An Aramaic Incantation Text.’ Journal of Semitic Studies 58, no. 1 (2013): 59-63. https://doi.org/10.1093/jss/fgs038.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Bibliographic metadata and abstract verified against Oxford University Press on 19 September 2026. The abstract states that the article publishes Iraq Museum bowl IM 212092; no protected article text was imported."
+      }
+    }
+  ]
+}

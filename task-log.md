@@ -25,6 +25,27 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Authoritative scholarship scope continuation
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (four source corrections, one duplicate reconciliation and four append-only scope reviews) — state digest `224b6aeee121`
+**Tests:** 264 passed
+
+- Classified Manekin-Bamberger 2015 as a thematic study and Bhayro 2017,
+  Levene-Bohak 2012 and Al-Jubouri 2013 as single-object editions from specific
+  university, journal and museum evidence; corrected their imported metadata
+  where the authoritative record required it.
+- Reconciled the Waller-derived Hunter 2000 row as repository discovery
+  metadata pointing to the existing DOI-bearing, already-scoped canonical
+  article. The scholarship index now has 206 works, 122 scoped and 84 awaiting
+  scope; forty works have a source-linked held document.
+- Replayed both manifests as no-ops, regenerated the roadmap and reports, and
+  left object identity, readings, authenticity, rights approval and public
+  release untouched. Continue SCHOL-006 only where a complete document or a
+  sufficiently specific authoritative description supports a decision; the
+  larger handoff priorities remain Penn rights review, Segal 2000 acquisition,
+  TEXT-001 coverage and the 432 untriaged claim differences.
+
 ## 2026-09-19 — Claude — A chart that fits the phone, and the bet comes back
 
 **Claimed:** none (site only; no corpus task)

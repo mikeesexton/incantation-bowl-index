@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-09-19T19:39:58+00:00`
+Generated: `2026-09-19T22:37:10+00:00`
 
 ## Corpus
 
@@ -63,9 +63,9 @@ Generated: `2026-09-19T19:39:58+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 695 |
-| unknown | 104 |
-| partial | 58 |
+| available | 696 |
+| unknown | 101 |
+| partial | 60 |
 | paywalled | 3 |
 | blocked | 1 |
 | offline | 1 |
