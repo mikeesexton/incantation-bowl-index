@@ -80,18 +80,31 @@ local D1 through `wrangler pages dev`.
   is currently modified in Codex's working tree, so I left its status alone
   rather than editing a file another agent has open.
 
-## 2026-09-19 — Codex — Burberry thesis acquisition and enumeration (in progress)
+## 2026-09-19 — Codex — Burberry thesis acquisition and enumeration
 
 **Claimed:** SCHOL-005, SCHOL-004, ACCESS-004
-**Corpus:** unchanged pending document review — state digest `49ae77126eff`
-**Tests:** in progress
+**Corpus:** changed (one capture and assessment, 25 exact-linked appearances,
+one resolved publication key) — state digest `2edc733ab7c8`
+**Tests:** 261 Python tests passed; archive verification passed; candidate,
+publication-registry and document-assessment manifests replayed without change;
+JSON and corpus-state validation passed
 
-- Acquiring the complete University of Exeter repository copy of Burberry's
-  2020 thesis and verifying its hash, extent, pagination and object boundaries.
-- Exact Berlin identifiers may support source appearances; uncertain matches
-  will remain separate candidates rather than being merged.
-- Protected transcription, translation, commentary and images remain private;
-  no rights or public-release decision is in scope.
+- Captured Anne Burberry's complete 477-page University of Exeter repository
+  thesis into the private hash-addressed archive and recorded a complete,
+  born-digital, extractable-text document assessment with visual checks across
+  title matter, contents, edition boundaries, glossaries and photographs.
+- Enumerated ACB 1-25 with exact page locators. All twenty-five attach to
+  existing 2018 Berlin catalogue records by complete inventory designation;
+  no new object or identity merge was needed. ACB 19's Fragment A and Fragment
+  B are retained as two non-joining pieces of the single VAN 13391 object.
+- Registered Burberry 2020 as the thirty-third resolved publication key.
+  Complete inspected edition coverage rises from 540 to 565 appearances, held
+  PDF sources from 40 to 41, and complete documents from 48 to 49.
+- Imported no protected transcription, translation, commentary, drawing,
+  photograph or personal-name data and made no rights or public-release
+  decision. Next: continue the 376 unresolved complete-edition candidates or
+  another high-impact authorized acquisition; leave Claude's public site work
+  outside this local-database workstream.
 
 ## 2026-09-19 — Codex — Deferred bibliography repair tranche
 

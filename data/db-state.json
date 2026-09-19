@@ -1,22 +1,22 @@
 {
-  "corpus_digest": "49ae77126eff1313e3bfbbd34fae8f9f3381b40a8a6b7a2f165d1f24be80847f",
+  "corpus_digest": "2edc733ab7c8ffe2af16306c20a05c44eb55312a48a459a155866a40fbc114a4",
   "migrations": 15,
-  "note": "Repaired eight deferred bibliography records, retyped three duplicate discovery records, and classified five works",
-  "recorded_at": "2026-09-19T13:34:29+00:00",
+  "note": "Archived and assessed Burberry 2020; added 25 exact-linked Berlin appearances and resolved its publication key.",
+  "recorded_at": "2026-09-19T16:55:05+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
     "appearance_object_links": {
-      "digest": "45ba96025e60020aa91a1bc705ddce292cd9d787f854c8935b64f46ccf01b1ff",
-      "rows": 2243
+      "digest": "9999f67133df04ac2f7794d6dbb028909d61faeba41eaa13d0a2b52cd0149f80",
+      "rows": 2268
     },
     "appearances": {
-      "digest": "23c0ae110da620e6bb890daf5ca584a26034e9ba9c10710ef89f365bd9b476a5",
-      "rows": 2243
+      "digest": "ec40fb1fa226977dcb8e9cf7aef32d74d4f675ea2d35978e3fd8de673bb5f209",
+      "rows": 2268
     },
     "captures": {
-      "digest": "544c0adb9b30aa7722f6f7a663f9ebee1bac1bdcd4b95db3bfaf5fe89981c091",
-      "rows": 54
+      "digest": "adcddf6d9e13501d272bac3ba6dcadfc0209a1f3b301728799c221ba944e3a8b",
+      "rows": 55
     },
     "claim_conflict_review_history": {
       "digest": "b0eb01a851248dcd5a46eb14878f4f6fe9108a82f2da91c24a93d5ef0cb013c0",
@@ -31,8 +31,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "c89c6d6e4fc0a4081f2adb4d0dc2f983f1a23cb44a5836d1b9ae4e9130f97694",
-      "rows": 7168
+      "digest": "2e6f6016a553e5b91f9a5b3a82a1231aece1a3f063ed696d0002bda7e1e2b51a",
+      "rows": 7218
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -51,16 +51,16 @@
       "rows": 34765
     },
     "document_assessments": {
-      "digest": "720ffb705842b2ac23aaae5c227efe3db5101b82e0f7c9eadb415aeca30848e1",
-      "rows": 52
+      "digest": "a2ac939e9030d07be21c4f3345774da63467cf068e35fa2cc3cce270aff7c15a",
+      "rows": 53
     },
     "events": {
       "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",
       "rows": 212
     },
     "identifiers": {
-      "digest": "336ba4f27088d2cb3ccb2512de44cda894243975b760daa7b1389283e347d048",
-      "rows": 4684
+      "digest": "a6065aac0ef11cf8a0e5cc87eedd82a9b8436a55878a212efc2bb5b13ebf2310",
+      "rows": 4734
     },
     "leads": {
       "digest": "e6c07b7875fcf3bea0c4618c4510d1e4d695bb97136484947a2f53fe642d5cb3",
@@ -95,8 +95,8 @@
       "rows": 1969
     },
     "publication_registry": {
-      "digest": "50bfa4e9e9d60f2e64940944a360db1632976e8670d47cd928adb7824a3c609d",
-      "rows": 35
+      "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
+      "rows": 36
     },
     "saturation_sweeps": {
       "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04",

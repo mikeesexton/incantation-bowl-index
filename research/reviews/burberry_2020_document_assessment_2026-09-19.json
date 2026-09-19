@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T14:35:00Z",
+  "entries": [
+    {
+      "id": "IBI-DOC-BURBERRY2020-20260919",
+      "source_id": "SRC-53B93C8C8A0E",
+      "capture_id": "CAP-FEA23FB9B4F1",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "complete",
+      "document_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+      "extraction_path": "research/enrichment/burberry_2020_berlin_bowls_2026-09-19.jsonl",
+      "extraction_sha256": "17ca3b8a8de99042a487360fadb995797816f83d6184d1967e8bda142ad4e248",
+      "basis": "The 477-page born-digital University of Exeter repository PDF is complete and unencrypted. Metadata and the full extractable text layer were inspected, with rendered visual checks spanning title and rights matter, contents, the edition opening, representative catalogue entries, the ACB 19 two-fragment boundary, the final ACB 25 entry, glossaries, photographs and the terminal page. All twenty-five ACB edition units were extracted with page locators and exact Berlin inventory designations. ACB 19's Fragment A and Fragment B are its two non-joining pieces, not extra objects. Protected readings and images remain private.",
+      "evidence_path": "research/reviews/burberry_2020_thesis_evidence_2026-09-19.json",
+      "evidence_sha256": "781677a28182ec95685e0d25ddd8a47db5901f0bd034083af336c39f899552f2"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T14:35:00Z",
+  "source_id": "SRC-53B93C8C8A0E",
+  "publication": "Anne Burberry, Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (PhD thesis, University of Exeter, 2020)",
+  "repository": {
+    "landing_page": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566",
+    "api_record": "https://api.figshare.com/v2/articles/29841566",
+    "repository_file_id": 57157415,
+    "repository_filename": "BurberryA.pdf"
+  },
+  "capture": {
+    "capture_id": "CAP-FEA23FB9B4F1",
+    "pdf_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+    "pdf_bytes": 7299114,
+    "pdf_pages": 477,
+    "page_size": "A4",
+    "encrypted": false,
+    "tagged": true,
+    "document_form": "born_digital",
+    "completeness": "complete"
+  },
+  "inspection": {
+    "method": "PDF metadata and full text-layer inspection, with rendered visual checks of title and rights matter, contents, first and last catalogue entries, the ACB 19 fragment boundary, glossary boundary, photograph boundary, and terminal photograph page.",
+    "rendered_pages_checked": [1, 2, 4, 5, 6, 109, 110, 111, 124, 313, 314, 315, 342, 346, 457, 477],
+    "text_state": "extractable",
+    "printed_and_pdf_pagination": "The numbered PDF pages and printed page numbers coincide for the catalogue and edition section.",
+    "catalogue_section": "Presentation of New Bowl Texts begins on page 109; ACB 1 begins on page 110 and ACB 25 begins on page 342; glossaries begin on page 346 and photographs on page 457.",
+    "terminal_check": "Page 477 is the final photograph page and shows ACB 24 and ACB 25, confirming the expected terminal object sequence."
+  },
+  "scope": {
+    "edition_units": 25,
+    "language": "Jewish Babylonian Aramaic",
+    "object_sequence": "ACB 1 through ACB 25",
+    "inventory_designations": [
+      "VA 2104", "VA 2430", "VA 2485", "VA 2487", "VA Bab. 2774",
+      "VA Bab. 2788", "VA 2444", "VA 2436", "VA 2442", "VA Bab. 2836",
+      "VA 2433", "VA Bab. 2785b", "VA Bab. 2789", "VA 2495", "VA Bab. 2768",
+      "VA Bab. 2762", "VA Bab. 2832", "VA Bab. 2837", "VAN 13391", "VA 2490",
+      "VA Bab. 2820", "VA 2514", "VA 2448", "VA 2505", "VA 2500"
+    ],
+    "acb_19_boundary": "ACB 19 (VAN 13391) is described on page 313 as two small non-joining rim fragments. Fragment A and Fragment B on pages 314-315 are those two edited pieces within ACB 19, not additional edition units.",
+    "reconciliation_policy": "Attach each appearance only to the unique existing Berlin-catalogue object carrying the same complete inventory designation. Preserve VA versus VA Bab. prefixes and suffix b; do not use the bare number where multiple namespaces exist. No identity merge is required.",
+    "extraction_policy": "Record catalogue-level source appearances, the ACB publication key, inventory designation, publication status, and reported language only. Do not reproduce transcription, translation, philological notes, commentary, drawings, photographs, or personal-name data."
+  },
+  "rights": {
+    "repository_statement": "All rights reserved",
+    "handling": "The repository PDF remains in the private hash-addressed archive. No protected scholarly expression or image is copied into the public corpus layer and no public-release decision is made."
+  }
+}
