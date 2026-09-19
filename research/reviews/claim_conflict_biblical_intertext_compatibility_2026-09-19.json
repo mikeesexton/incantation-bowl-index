@@ -1,0 +1,1383 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: explicit stored-evidence compatibility review authorized by Mike",
+  "reviewed_at": "2026-09-19T23:03:17+00:00",
+  "scope": "Biblical intertexts: compatible positive-reference lists and citation formats. 24 current pending instances; no claim, identity, canonical value, or substantive disagreement changed.",
+  "entries": [
+    {
+      "identity_id": "IDENT-0486433C4AA1",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "13a32bebf2a55ec98843b12c53572936dd63e34e8238cd1a9ac5693dfc8f74a5",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0486433C4AA1 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0486433C4AA1",
+        "label": "Waller 2022: JBA 07",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-0486433C4AA1",
+          "IBI-47922DD16507"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5D07C111B428",
+            "object_id": "IBI-47922DD16507",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 7 (MS 2053/12); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-DD9329575AC0",
+            "object_id": "IBI-0486433C4AA1",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 07",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-050C99E9C3F3",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "69b45b745f455199970c618cb97fdc7a5020da626bd4088ff0e50a380c848817",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-050C99E9C3F3 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-050C99E9C3F3",
+        "label": "Waller 2022: JBA 46",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-050C99E9C3F3",
+          "IBI-E71CB0A6665B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-283E51A10953",
+            "object_id": "IBI-050C99E9C3F3",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Deut 28:57.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 46 (MS 2053/249); Internet Archive snapshot 20230815105552",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-E9CC24B7CDFE",
+            "object_id": "IBI-E71CB0A6665B",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Deut. 28.57\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 46",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Deut 28:57.",
+            "[\"Deut. 28.57\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-071DAEFA6D11",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "0756e8620f8ca23d59079553c90c1210e7e0229dbffbe48aa74dcb9440c4be08",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-071DAEFA6D11 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-071DAEFA6D11",
+        "label": "Waller 2022: JBA 02",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-071DAEFA6D11",
+          "IBI-D295E71EB908"
+        ],
+        "claims": [
+          {
+            "id": "CLM-8F6D436A7722",
+            "object_id": "IBI-D295E71EB908",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 2 (MS 1927/29); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-AAD0F1011126",
+            "object_id": "IBI-071DAEFA6D11",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 104.20\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 02",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3.",
+            "[\"Exod. 15.3\", \"Ps. 104.20\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-07AB8EBC54E5",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "31c14f420a4262b797dc73e384a9fe678ef352c76bef01b8e6dcada4d6e073ad",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-07AB8EBC54E5 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-07AB8EBC54E5",
+        "label": "Schøyen MS 1927/64 (JBA 5)",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-07AB8EBC54E5",
+          "IBI-AF468D977D26",
+          "IBI-C3A694B7B3C5",
+          "IBI-F36154E31E2B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-9174D5331E26",
+            "object_id": "IBI-F36154E31E2B",
+            "source_id": "SRC-C54888E36130",
+            "field": "biblical_quotation",
+            "value_text": "Zechariah 3:2",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MS 2053/196 context: MS 1927/64",
+            "source_title": "MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples",
+            "source_url": "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+          },
+          {
+            "id": "CLM-A34A3EC2F9E2",
+            "object_id": "IBI-C3A694B7B3C5",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 05",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-EACCB6E466F1",
+            "object_id": "IBI-AF468D977D26",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18; Zech 3:2.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 5 (MS 1927/64); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotation": [
+            "Zechariah 3:2"
+          ],
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18; Zech 3:2.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0C99418FFC4A",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "4a96622143329b1759e8b437b6fbf9d1136ab52f0d8d16cef282fe0c7bcabca7",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0C99418FFC4A / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0C99418FFC4A",
+        "label": "Waller 2022: JBA 03",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-0C99418FFC4A",
+          "IBI-9BF942623298"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4AF2B587AE01",
+            "object_id": "IBI-9BF942623298",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 03",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-641C237EA33A",
+            "object_id": "IBI-0C99418FFC4A",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 3 (MS 1927/45); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-1096AC7149EC",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "9b0dac081d38966bf55bb80154806ae8cd2b41e945681bf33cc8a095dd30533a",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-1096AC7149EC / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-1096AC7149EC",
+        "label": "Waller 2022: JBA 12",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-1096AC7149EC",
+          "IBI-48EE2D615A84"
+        ],
+        "claims": [
+          {
+            "id": "CLM-50D01917E28E",
+            "object_id": "IBI-48EE2D615A84",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 24:8; Ex 15:3; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 12 (MS 2053/178); Internet Archive snapshot 20230815110351",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-DCD0F7BA9606",
+            "object_id": "IBI-1096AC7149EC",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 12",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 24:8; Ex 15:3; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-21B5ECDA71C3",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "74d7c0253c5c43cf6d6340fc1de4d366b03e44610b26d0ab9da5fe2b7588fe99",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-21B5ECDA71C3 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-21B5ECDA71C3",
+        "label": "MS 1928/8",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-21B5ECDA71C3",
+          "IBI-220D24A5C807",
+          "IBI-96F3DBB22B61",
+          "IBI-E10D2B1AF3DC"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4350A94214AD",
+            "object_id": "IBI-220D24A5C807",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Ps. 116.6\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 56",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-75699AB5DF2E",
+            "object_id": "IBI-21B5ECDA71C3",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 116:6.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 56 (MS 1928/8); Internet Archive snapshot 20230815105534",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 116:6.",
+            "[\"Ps. 116.6\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-220BCFC0023F",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "f85dd152cdfd23abdf3a1cf03e445f4d51a918250d75e73aadb088d3b9ec47dc",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-220BCFC0023F / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-220BCFC0023F",
+        "label": "Waller 2022: JBA 108",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-220BCFC0023F",
+          "IBI-B16BA47EFA4E"
+        ],
+        "claims": [
+          {
+            "id": "CLM-D4510168824B",
+            "object_id": "IBI-220BCFC0023F",
+            "source_id": "SRC-C54888E36130",
+            "field": "biblical_quotation",
+            "value_text": "Zechariah 3:2",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MS 2053/196 context: MS 2053/218",
+            "source_title": "MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples",
+            "source_url": "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+          },
+          {
+            "id": "CLM-D4E8B8A149D7",
+            "object_id": "IBI-B16BA47EFA4E",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Zech. 3.2\", \"Num. 12.13\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, JBA 108",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotation": [
+            "Zechariah 3:2"
+          ],
+          "biblical_quotations": [
+            "[\"Zech. 3.2\", \"Num. 12.13\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-2240A84876B0",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "8f0a89cf3fbf6c1040aa1e31734eb2e86ece1dd56dce4e09dfad49f348730897",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-2240A84876B0 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-2240A84876B0",
+        "label": "Waller 2022: JBA 10",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-2240A84876B0",
+          "IBI-F2F158C0F5DD"
+        ],
+        "claims": [
+          {
+            "id": "CLM-797EB7CFD236",
+            "object_id": "IBI-F2F158C0F5DD",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 10 (MS 2053/185); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-C628D58E25FE",
+            "object_id": "IBI-2240A84876B0",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 10",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-4804CC31F58D",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "672be14dcbcb49ea1ab8cebe7835117ef58025c682d472316e325df3b8ae8dcb",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-4804CC31F58D / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-4804CC31F58D",
+        "label": "Waller 2022: JBA 109",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-4804CC31F58D",
+          "IBI-F031C44350BC"
+        ],
+        "claims": [
+          {
+            "id": "CLM-24029F148129",
+            "object_id": "IBI-F031C44350BC",
+            "source_id": "SRC-C54888E36130",
+            "field": "biblical_quotation",
+            "value_text": "Zechariah 3:2",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MS 2053/196 context: MS 2053/230",
+            "source_title": "MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples",
+            "source_url": "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+          },
+          {
+            "id": "CLM-A641EE076ED2",
+            "object_id": "IBI-4804CC31F58D",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Zech. 3.2\", \"Ps. 55.9\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, JBA 109",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotation": [
+            "Zechariah 3:2"
+          ],
+          "biblical_quotations": [
+            "[\"Zech. 3.2\", \"Ps. 55.9\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-4884D32F63D1",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "b9ff39d2445d39118b4716731c3451364ab7493aa8b3a479b11bf9e252901263",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-4884D32F63D1 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-4884D32F63D1",
+        "label": "Waller 2022: JBA 31",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-4884D32F63D1",
+          "IBI-80A2CB091A04"
+        ],
+        "claims": [
+          {
+            "id": "CLM-00DD21414482",
+            "object_id": "IBI-4884D32F63D1",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Num 9:23.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 31 (MS 2053/41); Internet Archive snapshot 20230815105607",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-4B570F9497AB",
+            "object_id": "IBI-80A2CB091A04",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Num. 9.23\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 31",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Num 9:23.",
+            "[\"Num. 9.23\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-4D7E8C4473C1",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "3c268f6ab976f9f1c30e74df7d5997fbce119e255a227fbc7fb486a685132ca1",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-4D7E8C4473C1 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-4D7E8C4473C1",
+        "label": "Waller 2022: JBA 60",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-4D7E8C4473C1",
+          "IBI-BF1E6329F91D"
+        ],
+        "claims": [
+          {
+            "id": "CLM-AAEFD233868A",
+            "object_id": "IBI-BF1E6329F91D",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 3.15\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 60",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-C8239D4F7AB0",
+            "object_id": "IBI-4D7E8C4473C1",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ex 3:15.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 60 (MS 2053/212); Internet Archive snapshot 20230815105534",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ex 3:15.",
+            "[\"Exod. 3.15\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-61A96A00B7B1",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "41dec070993ad96e35516abf1ee74359c53efb02d697466757e2e2817d7528f6",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-61A96A00B7B1 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-61A96A00B7B1",
+        "label": "Waller 2022: JBA 11",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-61A96A00B7B1",
+          "IBI-CBE25247586E"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1E3147D0DBA6",
+            "object_id": "IBI-CBE25247586E",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 24:8; Ex 15:3; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 11 (MS 2053/79); Internet Archive snapshot 20230815110351",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-69E595048C00",
+            "object_id": "IBI-61A96A00B7B1",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 11",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 24:8; Ex 15:3; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-653C0F4DAF6F",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "9989964dc49aa401499b57e1114d12201c008162785963c3f47ade1453ac9a56",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-653C0F4DAF6F / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-653C0F4DAF6F",
+        "label": "Waller 2022: JBA 42",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-653C0F4DAF6F",
+          "IBI-878D276D0136"
+        ],
+        "claims": [
+          {
+            "id": "CLM-195DBEF27E90",
+            "object_id": "IBI-653C0F4DAF6F",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Num. 9.23\", \"Num. 10.36\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 42",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-8373F27481C4",
+            "object_id": "IBI-878D276D0136",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Num 9:23; Num 10:36.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 42 (MS 2053/190); Internet Archive snapshot 20230815105552",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Num 9:23; Num 10:36.",
+            "[\"Num. 9.23\", \"Num. 10.36\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6918D270707A",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "54a9f1c46d0f11a1d536fe078a62d2edebb41c93903ccafb7a2547f755f1d73b",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6918D270707A / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6918D270707A",
+        "label": "Waller 2022: JBA 09",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-6918D270707A",
+          "IBI-FEF6B893A0A7"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5050FB9D5BEC",
+            "object_id": "IBI-6918D270707A",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 09",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-9DFB639F5C3F",
+            "object_id": "IBI-FEF6B893A0A7",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 9 (MS 2053/183); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-73425D0E99C6",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "3b66f8fa4785f2769ca0df6655a0e2cee8034a6e26d89a4534268fb443e86edd",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-73425D0E99C6 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-73425D0E99C6",
+        "label": "Waller 2022: JBA 104",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-73425D0E99C6",
+          "IBI-E501E80DA715"
+        ],
+        "claims": [
+          {
+            "id": "CLM-3FECFC6CFF6E",
+            "object_id": "IBI-73425D0E99C6",
+            "source_id": "SRC-C54888E36130",
+            "field": "biblical_quotation",
+            "value_text": "Zechariah 3:2",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MS 2053/196 context: MS 2053/238",
+            "source_title": "MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples",
+            "source_url": "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+          },
+          {
+            "id": "CLM-F8E4B4C56967",
+            "object_id": "IBI-E501E80DA715",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Zech. 3.2\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, JBA 104",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotation": [
+            "Zechariah 3:2"
+          ],
+          "biblical_quotations": [
+            "[\"Zech. 3.2\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-7B9A81135B29",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "a7f9bcf0ce8e94d62a86ea12272f2923ebc5607610fd6957f9b73e0e8c2dbf60",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-7B9A81135B29 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-7B9A81135B29",
+        "label": "Waller 2022: JBA 01",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-7B9A81135B29",
+          "IBI-94A458622B13"
+        ],
+        "claims": [
+          {
+            "id": "CLM-2EFEE5767D43",
+            "object_id": "IBI-7B9A81135B29",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 01",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-8E54F7EB2607",
+            "object_id": "IBI-94A458622B13",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 1 (MS 1927/8); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-81AE4E796DC4",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "d708a644bc2ccf5179d76e216d3c823864590a70d4d71ced6aaf6a759e0c80eb",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-81AE4E796DC4 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-81AE4E796DC4",
+        "label": "Waller 2022: JBA 08",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-81AE4E796DC4",
+          "IBI-F36B9EC67F96"
+        ],
+        "claims": [
+          {
+            "id": "CLM-7746EF174A34",
+            "object_id": "IBI-F36B9EC67F96",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Ps. 104.20\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 08",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-CD569FBC2257",
+            "object_id": "IBI-81AE4E796DC4",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 8 (MS 2053/55); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20.",
+            "[\"Ps. 104.20\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-847BA478D9ED",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "44aeab0f56b0eb01cdf93b5cb1c9c4f7a31da94d4ebe9aa4447ff3e6e4c6b4bc",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-847BA478D9ED / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-847BA478D9ED",
+        "label": "Waller 2022: JBA 06",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-847BA478D9ED",
+          "IBI-A158055D97DA"
+        ],
+        "claims": [
+          {
+            "id": "CLM-13739346A4FE",
+            "object_id": "IBI-847BA478D9ED",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 06",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-34BC7B67C96A",
+            "object_id": "IBI-A158055D97DA",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 6 (MS 2053/10); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-85A9ED12421A",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "29e83e1909f0e92add01220c20e9d90e2477d1c129b255fa1087a7d64519820d",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-85A9ED12421A / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-85A9ED12421A",
+        "label": "Waller 2022: JBA 55",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-85A9ED12421A",
+          "IBI-F1230736EC4F"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1CA66DDB01BE",
+            "object_id": "IBI-85A9ED12421A",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Ps. 32.7\", \"Ps. 55.9\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 55",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-6459561F48DF",
+            "object_id": "IBI-F1230736EC4F",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ex 3:14; Ps 32:7; Ps 55:9.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 55 (MS 1928/1); Internet Archive snapshot 20230815105534",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ex 3:14; Ps 32:7; Ps 55:9.",
+            "[\"Ps. 32.7\", \"Ps. 55.9\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-85CF9D30BA6E",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "7b25a74538ec1ea28c66da8086af6d2826165517dc901ce5e7b5ea0b182e53f1",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-85CF9D30BA6E / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-85CF9D30BA6E",
+        "label": "Waller 2022: MS 2053/7",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-85CF9D30BA6E",
+          "IBI-E7EC27018B71"
+        ],
+        "claims": [
+          {
+            "id": "CLM-39D39E66C5D8",
+            "object_id": "IBI-85CF9D30BA6E",
+            "source_id": "SRC-C54888E36130",
+            "field": "biblical_quotation",
+            "value_text": "Zechariah 3:2",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MS 2053/196 context: MS 2053/7",
+            "source_title": "MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples",
+            "source_url": "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+          },
+          {
+            "id": "CLM-83F93125D35C",
+            "object_id": "IBI-E7EC27018B71",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Num. 10.35-36\", \"Zech. 3.2\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 160, distribution table, MS 2053/7",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotation": [
+            "Zechariah 3:2"
+          ],
+          "biblical_quotations": [
+            "[\"Num. 10.35-36\", \"Zech. 3.2\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-8746509B00D1",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "65bfbfea1bfae242336801ae73b0a930ac8b5b3219d578067cc8aa52a8eda8cd",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-8746509B00D1 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-8746509B00D1",
+        "label": "Waller 2022: JBA 04",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-8746509B00D1",
+          "IBI-AB499F10A21D"
+        ],
+        "claims": [
+          {
+            "id": "CLM-69860DEDAA03",
+            "object_id": "IBI-8746509B00D1",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, JBA 04",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-FD46B706388F",
+            "object_id": "IBI-AB499F10A21D",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 4 (MS 1927/47); Internet Archive snapshot 20230815110341",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18.",
+            "[\"Exod. 15.3\", \"Ps. 24.8\", \"Ps. 104.20\", \"Ps. 10.16\", \"Ps. 93.1\", \"Exod. 15.18\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A11621D03F66",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "2c37176391c90b9fc4c229c366dc0b066703d79753da01ed964b383d098d4a6d",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A11621D03F66 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305",
+        "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A11621D03F66",
+        "label": "Waller 2022: JBA 67",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-A11621D03F66",
+          "IBI-DC2AF9B46657"
+        ],
+        "claims": [
+          {
+            "id": "CLM-A93AA8AB2EC8",
+            "object_id": "IBI-DC2AF9B46657",
+            "source_id": "SRC-C54888E36130",
+            "field": "biblical_quotation",
+            "value_text": "Zechariah 3:2",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MS 2053/196 context: MS 2053/56",
+            "source_title": "MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples",
+            "source_url": "https://www.schoyencollection.com/magical-literature-introduction/asian-african-american-magic/incantation-bowl-ms-2053-196"
+          },
+          {
+            "id": "CLM-16285F2A0454",
+            "object_id": "IBI-A11621D03F66",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 3.15\", \"Isa. 40.31\", \"Isa. 60.11\", \"Gen. 27.28\", \"Ps. 121.7-8\", \"Zech. 3.2\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 67",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotation": [
+            "Zechariah 3:2"
+          ],
+          "biblical_quotations": [
+            "[\"Exod. 3.15\", \"Isa. 40.31\", \"Isa. 60.11\", \"Gen. 27.28\", \"Ps. 121.7-8\", \"Zech. 3.2\"]"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-B205D4EC9A30",
+      "field_group": "biblical_intertexts",
+      "evidence_sha256": "725d856e82c7ca7a9fcd3ee0e2712057b3152ddf471be913bf9554b0ce72a41f",
+      "disposition": "compatible",
+      "rationale": "The claims are positive references to biblical passages. Formatting variants, singular-versus-list fields, and one source naming additional passages are additive rather than mutually exclusive because no stored claim says its list is exhaustive. This does not verify the quoted text or decide whether an omitted reference is absent.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-B205D4EC9A30 / biblical_intertexts, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://humanities-research.exeter.ac.uk/vmba/",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-B205D4EC9A30",
+        "label": "Waller 2022: JBA 15",
+        "field_group": "biblical_intertexts",
+        "member_ids": [
+          "IBI-B205D4EC9A30",
+          "IBI-BA38256134C5"
+        ],
+        "claims": [
+          {
+            "id": "CLM-2BD521ACF1C9",
+            "object_id": "IBI-BA38256134C5",
+            "source_id": "SRC-99F964DDA219",
+            "field": "biblical_quotations",
+            "value_text": "Ex 3:15.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VMBA photographic archive, record JBA 15 (MS 1927/43); Internet Archive snapshot 20230815110351",
+            "source_title": "Virtual Magic Bowl Archive (archived project landing page)",
+            "source_url": "https://humanities-research.exeter.ac.uk/vmba/"
+          },
+          {
+            "id": "CLM-C8FD1ACA4BF1",
+            "object_id": "IBI-B205D4EC9A30",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "biblical_quotations",
+            "value_text": null,
+            "value_json": "[\"Exod. 3.15\"]",
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 157, distribution table, JBA 15",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "biblical_quotations": [
+            "Ex 3:15.",
+            "[\"Exod. 3.15\"]"
+          ]
+        }
+      }
+    }
+  ]
+}

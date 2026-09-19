@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Stored-evidence conflict revalidation (in progress)
+
+**Claimed:** QA-002 / CONC-005
+**Corpus:** unchanged at claim — state digest `f6a1201ec043`
+**Tests:** pending
+
+- Claimed the user-authorized compatibility lane: build and apply an
+  exact-evidence, append-only review batch for claim differences that can be
+  adjudicated from stored evidence. The five identified source-dependent
+  outliers and all current substantive disagreements remain outside scope.
+
 ## 2026-09-19 — Codex — Conflict-review queue design
 
 **Claimed:** QA-002 / CONC-005

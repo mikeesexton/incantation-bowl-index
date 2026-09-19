@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "assessed_at": "2026-09-19T23:03:17+00:00",
+  "assessed_by": "Codex: explicit stored-evidence compatibility review authorized by Mike",
+  "pending_before": 595,
+  "compatible_entries_prepared": 589,
+  "excluded_entries": 6,
+  "batch_counts": {
+    "dating": 155,
+    "provenance": 110,
+    "publication": 137,
+    "location": 74,
+    "language": 63,
+    "biblical_intertexts": 24,
+    "descriptive": 26
+  },
+  "batches": [
+    "claim_conflict_dating_compatibility_2026-09-19.json",
+    "claim_conflict_provenance_facet_compatibility_2026-09-19.json",
+    "claim_conflict_publication_facet_compatibility_2026-09-19.json",
+    "claim_conflict_location_name_compatibility_2026-09-19.json",
+    "claim_conflict_language_specificity_compatibility_2026-09-19.json",
+    "claim_conflict_biblical_intertext_compatibility_2026-09-19.json",
+    "claim_conflict_descriptive_facet_compatibility_2026-09-19.json"
+  ],
+  "exclusions": [
+    {
+      "identity_id": "IDENT-079F0B82D514",
+      "field_group": "language",
+      "reason": "CBS 9008: Syriac versus Penn's Hebrew Language label requires original-script and catalogue-history review."
+    },
+    {
+      "identity_id": "IDENT-09B23B2CE047",
+      "field_group": "location",
+      "reason": "HS 3003: Hilprecht/Jena versus private Berlin collection is a substantive collection-history disagreement."
+    },
+    {
+      "identity_id": "IDENT-0C53EA838205",
+      "field_group": "language",
+      "reason": "NLI catalogue code heb versus Jewish Aramaic requires confirmation of the catalogue code's semantics."
+    },
+    {
+      "identity_id": "IDENT-319F3DE276D8",
+      "field_group": "publication",
+      "reason": "CBS 16017: heading CBS 16917 versus register CBS 16017 requires source-level correction research."
+    },
+    {
+      "identity_id": "IDENT-3302F57D7AE1",
+      "field_group": "publication",
+      "reason": "CBS 16018: heading identifier versus blank register cell requires source-level review."
+    },
+    {
+      "identity_id": "IDENT-79D32E0C0500",
+      "field_group": "publication",
+      "reason": "CBS 2971: heading CBS 2971 versus register CBS 2972 requires source-level correction research."
+    }
+  ],
+  "limits": [
+    "Compatibility means stored claims can coexist; it does not validate the underlying fact or choose a canonical value.",
+    "No source-dependent identifier, language, location, substantive scholarly, authenticity, identity, or rights decision is included."
+  ]
+}

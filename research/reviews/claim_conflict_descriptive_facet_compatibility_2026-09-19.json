@@ -1,0 +1,1546 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: explicit stored-evidence compatibility review authorized by Mike",
+  "reviewed_at": "2026-09-19T23:03:17+00:00",
+  "scope": "Ritual, condition, text-form, text-feature, material, and script compatibility. 26 current pending instances; no claim, identity, canonical value, or substantive disagreement changed.",
+  "entries": [
+    {
+      "identity_id": "IDENT-02B43ABF13D9",
+      "field_group": "ritual",
+      "evidence_sha256": "20faf8e72a147ecaf75c3febae4ec0bc125ff75e7a3a2207bce87249941fb89b",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-02B43ABF13D9 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://cojs.org/aramaic_magic_bowl-_the_protection_of_the_family/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-02B43ABF13D9",
+        "label": "Isbell 1975 bowl 23 / AIT 12 — COJS translation appearance",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-02B43ABF13D9",
+          "IBI-3C9042E76702",
+          "IBI-4500756E262F",
+          "IBI-8516931DE44E",
+          "IBI-907E7D4A3B11"
+        ],
+        "claims": [
+          {
+            "id": "CLM-D1F93DC15E98",
+            "object_id": "IBI-8516931DE44E",
+            "source_id": "SRC-4955445F0A7A",
+            "field": "installation_instruction",
+            "value_text": "Exterior directs placement ‘for the inner room of the hall’",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Isbell bowl 23, pp. 71–72",
+            "source_title": "Aramaic Magic Bowl: The Protection of the Family",
+            "source_url": "https://cojs.org/aramaic_magic_bowl-_the_protection_of_the_family/"
+          },
+          {
+            "id": "CLM-EFEACD85755E",
+            "object_id": "IBI-8516931DE44E",
+            "source_id": "SRC-4955445F0A7A",
+            "field": "text_purpose",
+            "value_text": "Protection of a family, household, and possessions from demons, curses, liliths, and other harms",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Isbell bowl 23, pp. 71–72",
+            "source_title": "Aramaic Magic Bowl: The Protection of the Family",
+            "source_url": "https://cojs.org/aramaic_magic_bowl-_the_protection_of_the_family/"
+          }
+        ],
+        "values_by_field": {
+          "installation_instruction": [
+            "Exterior directs placement ‘for the inner room of the hall’"
+          ],
+          "text_purpose": [
+            "Protection of a family, household, and possessions from demons, curses, liliths, and other harms"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-035BA4ABBE6D",
+      "field_group": "text_form",
+      "evidence_sha256": "3981b4ff90e84165e743fef6fdb3ea2b6da7b51a1f06614f6a86a838a1745c83",
+      "disposition": "compatible",
+      "rationale": "Line count or inscription extent and layout describe separate text-form facets, or express the same count in different fields. This does not independently verify the count or layout.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-035BA4ABBE6D / text_form, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://repositorio.uam.es/bitstreams/2b3f5282-7ba1-45a2-aa8c-3a1067a36b4d/download"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-035BA4ABBE6D",
+        "label": "Museo Sefardí de Toledo AC-MSEF",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-035BA4ABBE6D"
+        ],
+        "claims": [
+          {
+            "id": "CLM-E69572220FFC",
+            "object_id": "IBI-035BA4ABBE6D",
+            "source_id": "SRC-25F456A40523",
+            "field": "inscription_extent",
+            "value_text": "10 lines",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 323–336, bowl AC-MSEF",
+            "source_title": "A Magical Bowl in Judaeo-Aramaic",
+            "source_url": "https://repositorio.uam.es/bitstreams/2b3f5282-7ba1-45a2-aa8c-3a1067a36b4d/download"
+          },
+          {
+            "id": "CLM-7FA07458E62E",
+            "object_id": "IBI-035BA4ABBE6D",
+            "source_id": "SRC-25F456A40523",
+            "field": "line_count",
+            "value_text": "10",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 323–336; AC-MSEF",
+            "source_title": "A Magical Bowl in Judaeo-Aramaic",
+            "source_url": "https://repositorio.uam.es/bitstreams/2b3f5282-7ba1-45a2-aa8c-3a1067a36b4d/download"
+          }
+        ],
+        "values_by_field": {
+          "inscription_extent": [
+            "10 lines"
+          ],
+          "line_count": [
+            "10"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-09C22FFFD031",
+      "field_group": "ritual",
+      "evidence_sha256": "3611e71ea210daded32155b8fb6e83a6e5a62262a10d137d8f4604934e03edff",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-09C22FFFD031 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://archive.org/details/aramaicincantati00mont",
+        "https://refubium.fu-berlin.de/handle/fub188/24509"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-09C22FFFD031",
+        "label": "CBS 2922",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-09C22FFFD031",
+          "IBI-10A05AFD0BE2",
+          "IBI-A2E775143F9F",
+          "IBI-B050BB4D3D83"
+        ],
+        "claims": [
+          {
+            "id": "CLM-252DCCE84632",
+            "object_id": "IBI-09C22FFFD031",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "formula_genre",
+            "value_text": "Divorce document",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 102, table 6, NFP 1",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          },
+          {
+            "id": "CLM-93B2F87E1564",
+            "object_id": "IBI-A2E775143F9F",
+            "source_id": "SRC-943673B56FB8",
+            "field": "text_purpose",
+            "value_text": "A writ of divorce dismissing Lilith, Lilith of the Desert, the hag and the ghul from a house and its children, under the ban sent by Joshua bar Perahia",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 17 translation, printed pp. 190-191; PDF pp. 196-197",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          }
+        ],
+        "values_by_field": {
+          "formula_genre": [
+            "Divorce document"
+          ],
+          "text_purpose": [
+            "A writ of divorce dismissing Lilith, Lilith of the Desert, the hag and the ghul from a house and its children, under the ban sent by Joshua bar Perahia"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-20A53178A58B",
+      "field_group": "material",
+      "evidence_sha256": "98a22e0be1d738a7c53b75d3d46ec2e242de98b28d10e6ceb2d68057137121ea",
+      "disposition": "compatible",
+      "rationale": "Pottery and terracotta are compatible material descriptions at different terminological specificity. This does not independently inspect or authenticate the object.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-20A53178A58B / material, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-20A53178A58B",
+        "label": "LiveAuctioneers item 232753117",
+        "field_group": "material",
+        "member_ids": [
+          "IBI-20A53178A58B",
+          "IBI-79CB88572315"
+        ],
+        "claims": [
+          {
+            "id": "CLM-0981E2851280",
+            "object_id": "IBI-20A53178A58B",
+            "source_id": "SRC-2227D5AC463A",
+            "field": "material",
+            "value_text": "Pottery",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "LiveAuctioneers item 232753117, lot 1203",
+            "source_title": "Aramaic Terracotta Incantation Bowl — item 232753117",
+            "source_url": "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+          },
+          {
+            "id": "CLM-1866CEB350AB",
+            "object_id": "IBI-79CB88572315",
+            "source_id": "SRC-2227D5AC463A",
+            "field": "material",
+            "value_text": "Terracotta",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "item 232753117",
+            "source_title": "Aramaic Terracotta Incantation Bowl — item 232753117",
+            "source_url": "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+          },
+          {
+            "id": "CLM-CF54DD059116",
+            "object_id": "IBI-79CB88572315",
+            "source_id": "SRC-2227D5AC463A",
+            "field": "material",
+            "value_text": "Pottery",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "item 232753117",
+            "source_title": "Aramaic Terracotta Incantation Bowl — item 232753117",
+            "source_url": "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+          }
+        ],
+        "values_by_field": {
+          "material": [
+            "Pottery",
+            "Terracotta"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-2AF0C10043BB",
+      "field_group": "condition",
+      "evidence_sha256": "a865238e412ff2515d93d861362439ecf6326e6b41abee07c92e435b6a581b6a",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-2AF0C10043BB / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "https://www.britishmuseum.org/collection/object/W_1881-0714-11"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-2AF0C10043BB",
+        "label": "British Museum 91755: incantation bowl",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-2AF0C10043BB",
+          "IBI-82E0C40BE6C7",
+          "IBI-D45A13DA10F5"
+        ],
+        "claims": [
+          {
+            "id": "CLM-12D07C80C1A0",
+            "object_id": "IBI-D45A13DA10F5",
+            "source_id": "SRC-3A8095B6D794",
+            "field": "condition",
+            "value_text": "fragmentary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "index entry BM015A",
+            "source_title": "Index of Aramaic Incantation Bowls",
+            "source_url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+          },
+          {
+            "id": "CLM-81FF4FD31283",
+            "object_id": "IBI-2AF0C10043BB",
+            "source_id": "SRC-EF1521B0C736",
+            "field": "condition",
+            "value_text": "Fair; rim damaged",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1881-0714-11",
+            "source_title": "incantation bowl: 91755",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1881-0714-11"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Fair; rim damaged",
+            "fragmentary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-2E9271010AE9",
+      "field_group": "condition",
+      "evidence_sha256": "3e84ab2be6e5855d7ddba5979afadbcda9412304e5c47eee0d1e741fb95043dc",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-2E9271010AE9 / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "https://www.britishmuseum.org/collection/object/W_1880-1112-1964"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-2E9271010AE9",
+        "label": "British Museum 127396 (Segal 021A)",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-2E9271010AE9",
+          "IBI-950537E68315",
+          "IBI-C237D8E8489F",
+          "IBI-D177CA9271FD"
+        ],
+        "claims": [
+          {
+            "id": "CLM-44BE0CB78CB4",
+            "object_id": "IBI-C237D8E8489F",
+            "source_id": "SRC-3A8095B6D794",
+            "field": "condition",
+            "value_text": "fragmentary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "index entry BM021A",
+            "source_title": "Index of Aramaic Incantation Bowls",
+            "source_url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+          },
+          {
+            "id": "CLM-627383A25211",
+            "object_id": "IBI-950537E68315",
+            "source_id": "SRC-3848F0A07B43",
+            "field": "condition",
+            "value_text": "Fair; repaired and incomplete",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1880-1112-1964",
+            "source_title": "incantation bowl: 127396",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1880-1112-1964"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Fair; repaired and incomplete",
+            "fragmentary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-30B4E8189C7A",
+      "field_group": "condition",
+      "evidence_sha256": "ba67342791328bff1f087a31e2056188a6281fafc3f3d771eac397675eaf03ad",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-30B4E8189C7A / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "https://www.britishmuseum.org/collection/object/W_1880-1112-1963"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-30B4E8189C7A",
+        "label": "British Museum 127395: incantation bowl",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-30B4E8189C7A",
+          "IBI-BDCC7E804E77",
+          "IBI-CD52D742D131"
+        ],
+        "claims": [
+          {
+            "id": "CLM-01A337A2630D",
+            "object_id": "IBI-BDCC7E804E77",
+            "source_id": "SRC-C2F92EEA870B",
+            "field": "condition",
+            "value_text": "Fair; incomplete",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1880-1112-1963",
+            "source_title": "incantation bowl: 127395",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1880-1112-1963"
+          },
+          {
+            "id": "CLM-B9EA02DA15FB",
+            "object_id": "IBI-30B4E8189C7A",
+            "source_id": "SRC-3A8095B6D794",
+            "field": "condition",
+            "value_text": "fragmentary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "index entry BM022A",
+            "source_title": "Index of Aramaic Incantation Bowls",
+            "source_url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Fair; incomplete",
+            "fragmentary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-32F8164EAC5E",
+      "field_group": "condition",
+      "evidence_sha256": "1ff87ae146087113f0647b6fdb53ff01a707ca09af500f98c765ac0b41e2009e",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-32F8164EAC5E / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "https://www.britishmuseum.org/collection/object/W_1851-1009-100"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-32F8164EAC5E",
+        "label": "British Museum 91720: incantation bowl",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-32F8164EAC5E",
+          "IBI-53CF771EE2FA",
+          "IBI-B1DFAA8ED8D6"
+        ],
+        "claims": [
+          {
+            "id": "CLM-A65C724F6EEA",
+            "object_id": "IBI-53CF771EE2FA",
+            "source_id": "SRC-3A8095B6D794",
+            "field": "condition",
+            "value_text": "fragmentary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "index entry BM007A",
+            "source_title": "Index of Aramaic Incantation Bowls",
+            "source_url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+          },
+          {
+            "id": "CLM-CB1128EF03D2",
+            "object_id": "IBI-32F8164EAC5E",
+            "source_id": "SRC-B16F06368E35",
+            "field": "condition",
+            "value_text": "Fair; repaired from several sherds",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1851-1009-100",
+            "source_title": "incantation bowl: 91720",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1851-1009-100"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Fair; repaired from several sherds",
+            "fragmentary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-51D0CCC0FDC5",
+      "field_group": "condition",
+      "evidence_sha256": "d3d5304bd379faeba1fd463d5a27bee15b937eec22e76a96d900acf70c76c576",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-51D0CCC0FDC5 / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "https://www.britishmuseum.org/collection/object/W_1851-0903-3"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-51D0CCC0FDC5",
+        "label": "British Museum 91766: incantation bowl",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-51D0CCC0FDC5",
+          "IBI-6F5058101C90",
+          "IBI-B49080BDD117",
+          "IBI-B8D8FA942816"
+        ],
+        "claims": [
+          {
+            "id": "CLM-7B2EA16B46FB",
+            "object_id": "IBI-B8D8FA942816",
+            "source_id": "SRC-815C148CDE83",
+            "field": "condition",
+            "value_text": "Fair; rim damaged",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1851-0903-3",
+            "source_title": "incantation bowl: 91766",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1851-0903-3"
+          },
+          {
+            "id": "CLM-E2822B13DC2D",
+            "object_id": "IBI-51D0CCC0FDC5",
+            "source_id": "SRC-3A8095B6D794",
+            "field": "condition",
+            "value_text": "fragmentary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "index entry BM014A",
+            "source_title": "Index of Aramaic Incantation Bowls",
+            "source_url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Fair; rim damaged",
+            "fragmentary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-5B1343517775",
+      "field_group": "ritual",
+      "evidence_sha256": "7e0edafbc73aeedfb5cea87a418fecdc995945721b26e64a1434a13971323ec5",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-5B1343517775 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://archive.org/details/aramaicincantati00mont",
+        "https://refubium.fu-berlin.de/handle/fub188/24509"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-5B1343517775",
+        "label": "CBS 2945",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-5B1343517775",
+          "IBI-5F31615726F1",
+          "IBI-A8470A9AD28F",
+          "IBI-BFAC7CA37B96"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4AE3F42918A8",
+            "object_id": "IBI-BFAC7CA37B96",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "formula_genre",
+            "value_text": "General charm",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 102, table 6, NFP 9 and note 416",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          },
+          {
+            "id": "CLM-8CCBC127FC52",
+            "object_id": "IBI-5B1343517775",
+            "source_id": "SRC-943673B56FB8",
+            "field": "text_purpose",
+            "value_text": "A counter-spell spoken in armour of iron, laying the spell of the Sea and of the monster Leviathan on fiends and adversaries who harm the household",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 2 translation, printed pp. 121-122; PDF pp. 127-128",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          }
+        ],
+        "values_by_field": {
+          "formula_genre": [
+            "General charm"
+          ],
+          "text_purpose": [
+            "A counter-spell spoken in armour of iron, laying the spell of the Sea and of the monster Leviathan on fiends and adversaries who harm the household"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-63D659859D54",
+      "field_group": "ritual",
+      "evidence_sha256": "c063ef186a930bce168216700e33b0544b1aced640a47b128bcd0abe1a5534aa",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-63D659859D54 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://eprints.soton.ac.uk/73174/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-63D659859D54",
+        "label": "Moussaieff M163",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-63D659859D54"
+        ],
+        "claims": [
+          {
+            "id": "CLM-C2D389E1D3F4",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "text_function",
+            "value_text": "Aggressive or curse magic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "M163, p. 110",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          },
+          {
+            "id": "CLM-CAB69F2C1A35",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-21417589C8F9",
+            "field": "text_purpose",
+            "value_text": "Curse / subjugation of an adversary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 283–308",
+            "source_title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+            "source_url": "https://eprints.soton.ac.uk/73174/"
+          }
+        ],
+        "values_by_field": {
+          "text_function": [
+            "Aggressive or curse magic"
+          ],
+          "text_purpose": [
+            "Curse / subjugation of an adversary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-63D659859D54",
+      "field_group": "text_description",
+      "evidence_sha256": "7c1f9c8a247af7296e68151e8a7ac0ff5c42b3270f761d2fdacefaae41f0efea",
+      "disposition": "compatible",
+      "rationale": "The stored text-feature claims describe different or differently scoped positive features and are additive, not mutually exclusive. This does not verify the underlying reading or analysis.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-63D659859D54 / text_description, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://eprints.soton.ac.uk/73174/",
+        "https://openalex.org/W129188497"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-63D659859D54",
+        "label": "Moussaieff M163",
+        "field_group": "text_description",
+        "member_ids": [
+          "IBI-63D659859D54"
+        ],
+        "claims": [
+          {
+            "id": "CLM-9A2BFB973E0A",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-5F7E0BA65D6E",
+            "field": "text_feature",
+            "value_text": "Shaked reports that M163 was the only Jewish Babylonian Aramaic bowl then known to him with an explicit allusion to Jesus",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 309",
+            "source_title": "Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’",
+            "source_url": "https://openalex.org/W129188497"
+          },
+          {
+            "id": "CLM-DC6F9280959D",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-21417589C8F9",
+            "field": "text_feature",
+            "value_text": "Invocation includes Jesus",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 283–308",
+            "source_title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+            "source_url": "https://eprints.soton.ac.uk/73174/"
+          }
+        ],
+        "values_by_field": {
+          "text_feature": [
+            "Invocation includes Jesus",
+            "Shaked reports that M163 was the only Jewish Babylonian Aramaic bowl then known to him with an explicit allusion to Jesus"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-63D659859D54",
+      "field_group": "text_form",
+      "evidence_sha256": "cce0b04f63ab56ad6bd4b8fca293c0a5cb67fd97f3365bedd004925b8a6c7df7",
+      "disposition": "compatible",
+      "rationale": "Line count or inscription extent and layout describe separate text-form facets, or express the same count in different fields. This does not independently verify the count or layout.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-63D659859D54 / text_form, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://eprints.soton.ac.uk/73174/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-63D659859D54",
+        "label": "Moussaieff M163",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-63D659859D54"
+        ],
+        "claims": [
+          {
+            "id": "CLM-B1FDA1DFDEF0",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-21417589C8F9",
+            "field": "line_count",
+            "value_text": "30",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 283",
+            "source_title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+            "source_url": "https://eprints.soton.ac.uk/73174/"
+          },
+          {
+            "id": "CLM-4E04D4F80385",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-21417589C8F9",
+            "field": "text_layout",
+            "value_text": "Clockwise spiral from the centre outward, enclosed by a circular line near the rim",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 283",
+            "source_title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+            "source_url": "https://eprints.soton.ac.uk/73174/"
+          }
+        ],
+        "values_by_field": {
+          "line_count": [
+            "30"
+          ],
+          "text_layout": [
+            "Clockwise spiral from the centre outward, enclosed by a circular line near the rim"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-66700DA0DFDA",
+      "field_group": "text_form",
+      "evidence_sha256": "bb9361eed4ba25cc0a8f19e11815517e622512e45ae7ccde641c4971ef65ef89",
+      "disposition": "compatible",
+      "rationale": "Line count or inscription extent and layout describe separate text-form facets, or express the same count in different fields. This does not independently verify the count or layout.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-66700DA0DFDA / text_form, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://journals.pan.pl/Content/134420"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-66700DA0DFDA",
+        "label": "Christie's London 1974 Hera auction lot 348",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-66700DA0DFDA"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6C37D4E153EF",
+            "object_id": "IBI-66700DA0DFDA",
+            "source_id": "SRC-24B0EC105BC9",
+            "field": "line_count",
+            "value_text": "9",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 1, pp. 194–198; Christie’s lot 348",
+            "source_title": "Relics of Syriac Magic: Another Syriac Bowl for Prwkzʿd br Kwmy and a Syriac Incantation Fragment in the British Museum",
+            "source_url": "https://journals.pan.pl/Content/134420"
+          },
+          {
+            "id": "CLM-E2740AD3D13A",
+            "object_id": "IBI-66700DA0DFDA",
+            "source_id": "SRC-24B0EC105BC9",
+            "field": "text_layout",
+            "value_text": "Clockwise spiral from centre to rim",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 1, pp. 194–198; Christie’s lot 348",
+            "source_title": "Relics of Syriac Magic: Another Syriac Bowl for Prwkzʿd br Kwmy and a Syriac Incantation Fragment in the British Museum",
+            "source_url": "https://journals.pan.pl/Content/134420"
+          }
+        ],
+        "values_by_field": {
+          "line_count": [
+            "9"
+          ],
+          "text_layout": [
+            "Clockwise spiral from centre to rim"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6A5B95130C25",
+      "field_group": "ritual",
+      "evidence_sha256": "f14bbf5497d6f56ec42c580d7a135a5997e4f335c1be1b7cf465b1e7bef508dc",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6A5B95130C25 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6A5B95130C25",
+        "label": "Davidovitz popularity-and-success bowl",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-6A5B95130C25"
+        ],
+        "claims": [
+          {
+            "id": "CLM-A0CDCB94A52F",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "formula_genre",
+            "value_text": "Favor incantation for popularity and success",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "English summary, printed p. XV; heading and opening sentence",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-462C2DFD477A",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_purpose",
+            "value_text": "Popularity and social influence; Ford infers likely economic success, but notes that livelihood or economic success is not explicit in the readable text",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 216",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-87E7DFB01ED6",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_purpose",
+            "value_text": "Popularity and economic success",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 215–230; newly published Davidovitz Collection bowl",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-3D947FF46ABE",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_tradition",
+            "value_text": "Ford places Davidovitz 41 among Jewish favor and success bowls; he lists seven previously published examples and reports about twenty-five additional unpublished bowls known to him",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 215 nn. 3–4",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          }
+        ],
+        "values_by_field": {
+          "formula_genre": [
+            "Favor incantation for popularity and success"
+          ],
+          "text_purpose": [
+            "Popularity and economic success",
+            "Popularity and social influence; Ford infers likely economic success, but notes that livelihood or economic success is not explicit in the readable text"
+          ],
+          "text_tradition": [
+            "Ford places Davidovitz 41 among Jewish favor and success bowls; he lists seven previously published examples and reports about twenty-five additional unpublished bowls known to him"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6A5B95130C25",
+      "field_group": "text_description",
+      "evidence_sha256": "0ae291b98586802a196976ccfe756992ab5fa298441c1134706721c5d363e31c",
+      "disposition": "compatible",
+      "rationale": "The stored text-feature claims describe different or differently scoped positive features and are additive, not mutually exclusive. This does not verify the underlying reading or analysis.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6A5B95130C25 / text_description, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6A5B95130C25",
+        "label": "Davidovitz popularity-and-success bowl",
+        "field_group": "text_description",
+        "member_ids": [
+          "IBI-6A5B95130C25"
+        ],
+        "claims": [
+          {
+            "id": "CLM-422EDF333147",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_feature",
+            "value_text": "The incantation seeks beauty and splendor associated with seven women, eight maidens, the dawn, and the evening",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "English summary, printed p. XV; lines 6–8",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-B4E6E31FC1CE",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_feature",
+            "value_text": "Ford concludes that the two new lexemes are Jewish Babylonian Aramaic–Mandaic isoglosses, evidence for the closeness of the dialects",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 226",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-EB755C8A098F",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_feature",
+            "value_text": "The favor formula imagines foes loving and enemies honoring Aḥay, people wearing crowns bowing to him, and horse riders dismounting before him",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "English summary, printed p. XV; lines 2–5",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-F52DCCEEBE26",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_feature",
+            "value_text": "Ford identifies two additions to the Jewish Babylonian Aramaic lexicon and two phonetic variants in the bowl text",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "English summary, printed p. XV; final paragraph",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          }
+        ],
+        "values_by_field": {
+          "text_feature": [
+            "Ford concludes that the two new lexemes are Jewish Babylonian Aramaic–Mandaic isoglosses, evidence for the closeness of the dialects",
+            "Ford identifies two additions to the Jewish Babylonian Aramaic lexicon and two phonetic variants in the bowl text",
+            "The favor formula imagines foes loving and enemies honoring Aḥay, people wearing crowns bowing to him, and horse riders dismounting before him",
+            "The incantation seeks beauty and splendor associated with seven women, eight maidens, the dawn, and the evening"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6A5B95130C25",
+      "field_group": "text_form",
+      "evidence_sha256": "fa24f053e3dc59cca39be2b21acd564c8ce8253a21e35a7c94f53ab2d5930d5d",
+      "disposition": "compatible",
+      "rationale": "Line count or inscription extent and layout describe separate text-form facets, or express the same count in different fields. This does not independently verify the count or layout.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6A5B95130C25 / text_form, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6A5B95130C25",
+        "label": "Davidovitz popularity-and-success bowl",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-6A5B95130C25"
+        ],
+        "claims": [
+          {
+            "id": "CLM-CED66AB58D14",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "line_count",
+            "value_text": "10",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "English summary, printed p. XV; numbered lines 1–10",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          },
+          {
+            "id": "CLM-A1C08CA5DA5F",
+            "object_id": "IBI-6A5B95130C25",
+            "source_id": "SRC-4071AE0F749A",
+            "field": "text_layout",
+            "value_text": "Inscription begins at the centre and spirals outward; traces of an encircling line survive near the rim",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 216",
+            "source_title": "‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success",
+            "source_url": "https://cris.iucc.ac.il/en/publications/%D7%A9%D7%95%D7%A0%D7%90%D7%99%D7%99-%D7%90%D7%94%D7%91%D7%95%D7%A0%D7%99-%D7%A7%D7%A2%D7%A8%D7%AA-%D7%94%D7%A9%D7%91%D7%A2%D7%94-%D7%97%D7%93%D7%A9%D7%94-%D7%9C%D7%A4%D7%95%D7%A4%D7%95%D7%9C%D7%A8%D7%99%D7%95%D7%AA-%D7%95%D7%94%D7%A6%D7%9C%D7%97%D7%94/"
+          }
+        ],
+        "values_by_field": {
+          "line_count": [
+            "10"
+          ],
+          "text_layout": [
+            "Inscription begins at the centre and spirals outward; traces of an encircling line survive near the rim"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-8CB0CA407E6E",
+      "field_group": "condition",
+      "evidence_sha256": "4105cf3d10480b88d73a45ababf6f1280cab14ab242f5e2a4277afe19da8df38",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-8CB0CA407E6E / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "https://www.britishmuseum.org/collection/object/W_1925-1015-7"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-8CB0CA407E6E",
+        "label": "British Museum 117827: incantation bowl",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-8CB0CA407E6E",
+          "IBI-90B88EACB9FB",
+          "IBI-F2C9E1AF8B6B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-3712943A114F",
+            "object_id": "IBI-F2C9E1AF8B6B",
+            "source_id": "SRC-3A8095B6D794",
+            "field": "condition",
+            "value_text": "fragmentary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "index entry BM018A",
+            "source_title": "Index of Aramaic Incantation Bowls",
+            "source_url": "https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+          },
+          {
+            "id": "CLM-748E30D8C923",
+            "object_id": "IBI-8CB0CA407E6E",
+            "source_id": "SRC-53AFEA741E4F",
+            "field": "condition",
+            "value_text": "Fair; base sherd only",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1925-1015-7",
+            "source_title": "incantation bowl: 117827",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1925-1015-7"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Fair; base sherd only",
+            "fragmentary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A4F154B0CB2E",
+      "field_group": "condition",
+      "evidence_sha256": "f07c6d39b3ff241cce020294ee0f7b37ae32ae233ebb8e60f9b19ed2aeb331fc",
+      "disposition": "compatible",
+      "rationale": "The broad fragmentary description and the more specific damage, repair, or surviving-extent description can both be true. This does not independently assess the object's physical condition.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A4F154B0CB2E / condition, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.csmc.uni-hamburg.de/publications/aom/026-en.html"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A4F154B0CB2E",
+        "label": "Museo delle Civiltà IsIAO 5206",
+        "field_group": "condition",
+        "member_ids": [
+          "IBI-A4F154B0CB2E"
+        ],
+        "claims": [
+          {
+            "id": "CLM-8C1708EF5F45",
+            "object_id": "IBI-A4F154B0CB2E",
+            "source_id": "SRC-455442AA727F",
+            "field": "condition",
+            "value_text": "Approximately one quarter of the text survives",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Artefact of the Month 26; IsIAO 5206",
+            "source_title": "What Will Save the Household?",
+            "source_url": "https://www.csmc.uni-hamburg.de/publications/aom/026-en.html"
+          },
+          {
+            "id": "CLM-CB9DA7290935",
+            "object_id": "IBI-A4F154B0CB2E",
+            "source_id": "SRC-455442AA727F",
+            "field": "condition",
+            "value_text": "Very fragmentary; approximately one quarter of text survives",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Artefact of the Month 26; IsIAO 5206",
+            "source_title": "What Will Save the Household?",
+            "source_url": "https://www.csmc.uni-hamburg.de/publications/aom/026-en.html"
+          }
+        ],
+        "values_by_field": {
+          "condition": [
+            "Approximately one quarter of the text survives",
+            "Very fragmentary; approximately one quarter of text survives"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A4F154B0CB2E",
+      "field_group": "script",
+      "evidence_sha256": "ca96f410f588c4c61203c7dde836c46bcdca4033aa547b7037952e56de171197",
+      "disposition": "compatible",
+      "rationale": "Classical Estrangela is a more specific form of the stored Estrangela label, so the two descriptions can coexist. This does not independently verify the script classification.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A4F154B0CB2E / script, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.csmc.uni-hamburg.de/publications/aom/026-en.html"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A4F154B0CB2E",
+        "label": "Museo delle Civiltà IsIAO 5206",
+        "field_group": "script",
+        "member_ids": [
+          "IBI-A4F154B0CB2E"
+        ],
+        "claims": [
+          {
+            "id": "CLM-69361A6D8FF3",
+            "object_id": "IBI-A4F154B0CB2E",
+            "source_id": "SRC-455442AA727F",
+            "field": "script",
+            "value_text": "Classical Estrangela",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Artefact of the Month 26; IsIAO 5206",
+            "source_title": "What Will Save the Household?",
+            "source_url": "https://www.csmc.uni-hamburg.de/publications/aom/026-en.html"
+          },
+          {
+            "id": "CLM-B67094BBEAFF",
+            "object_id": "IBI-A4F154B0CB2E",
+            "source_id": "SRC-455442AA727F",
+            "field": "script",
+            "value_text": "Estrangela",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Artefact of the Month 26; IsIAO 5206",
+            "source_title": "What Will Save the Household?",
+            "source_url": "https://www.csmc.uni-hamburg.de/publications/aom/026-en.html"
+          }
+        ],
+        "values_by_field": {
+          "script": [
+            "Classical Estrangela",
+            "Estrangela"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A8BE9F6FA177",
+      "field_group": "ritual",
+      "evidence_sha256": "3c574ccf49d2b864349385325f21a3dc6c44ce1e4668384147597722b1f4a87b",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A8BE9F6FA177 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://sammlungen.uni-jena.de/aktuelles/archiv-objekt-des-monats/News/detail/565"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A8BE9F6FA177",
+        "label": "Hilprecht Collection HS 3034",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-A8BE9F6FA177"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1F044F905F53",
+            "object_id": "IBI-A8BE9F6FA177",
+            "source_id": "SRC-4C8646D12939",
+            "field": "named_demon",
+            "value_text": "Halbas-Lilit",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Object of the Month, April 2024",
+            "source_title": "Eine Zauberschale aus der Hilprecht-Sammlung",
+            "source_url": "https://sammlungen.uni-jena.de/aktuelles/archiv-objekt-des-monats/News/detail/565"
+          },
+          {
+            "id": "CLM-7863AC2C7C59",
+            "object_id": "IBI-A8BE9F6FA177",
+            "source_id": "SRC-4C8646D12939",
+            "field": "text_purpose",
+            "value_text": "Expulsion of the child-killing demon from Mama, Abraham, and their household",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Object of the Month, April 2024",
+            "source_title": "Eine Zauberschale aus der Hilprecht-Sammlung",
+            "source_url": "https://sammlungen.uni-jena.de/aktuelles/archiv-objekt-des-monats/News/detail/565"
+          }
+        ],
+        "values_by_field": {
+          "named_demon": [
+            "Halbas-Lilit"
+          ],
+          "text_purpose": [
+            "Expulsion of the child-killing demon from Mama, Abraham, and their household"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-ADF5E95842DB",
+      "field_group": "ritual",
+      "evidence_sha256": "20dd33cdce1fb00da3007ee53e65cb54ba77068f0714f7a0eec45212f8e4e966",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-ADF5E95842DB / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://jstudies.huji.ac.il/sites/default/files/jstudies/files/mehqarim_blashon_talshir_fs_.pdf#page=23"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-ADF5E95842DB",
+        "label": "Miami University Art Museum Mandaic bowl (Yamauchi 2000)",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-ADF5E95842DB"
+        ],
+        "claims": [
+          {
+            "id": "CLM-63E807937970",
+            "object_id": "IBI-ADF5E95842DB",
+            "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+            "field": "named_demon",
+            "value_text": "The ʿAlmay dēw and the paired nālē and nʿūlē demons",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 15–16; lines 4–8",
+            "source_title": "A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum",
+            "source_url": "https://jstudies.huji.ac.il/sites/default/files/jstudies/files/mehqarim_blashon_talshir_fs_.pdf#page=23"
+          },
+          {
+            "id": "CLM-B52B393737DD",
+            "object_id": "IBI-ADF5E95842DB",
+            "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+            "field": "text_purpose",
+            "value_text": "Healing, arming, sealing, and protection for the client, his family, house, dwelling, building, food, water, and probably livestock",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 15; lines 1–10",
+            "source_title": "A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum",
+            "source_url": "https://jstudies.huji.ac.il/sites/default/files/jstudies/files/mehqarim_blashon_talshir_fs_.pdf#page=23"
+          }
+        ],
+        "values_by_field": {
+          "named_demon": [
+            "The ʿAlmay dēw and the paired nālē and nʿūlē demons"
+          ],
+          "text_purpose": [
+            "Healing, arming, sealing, and protection for the client, his family, house, dwelling, building, food, water, and probably livestock"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-ADF5E95842DB",
+      "field_group": "text_form",
+      "evidence_sha256": "6a5b0e58f115ca607de6cdbedb7b04c7a48e817c1bd01edfa7c4ef507bd0c46e",
+      "disposition": "compatible",
+      "rationale": "Line count or inscription extent and layout describe separate text-form facets, or express the same count in different fields. This does not independently verify the count or layout.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-ADF5E95842DB / text_form, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://jstudies.huji.ac.il/sites/default/files/jstudies/files/mehqarim_blashon_talshir_fs_.pdf#page=23"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-ADF5E95842DB",
+        "label": "Miami University Art Museum Mandaic bowl (Yamauchi 2000)",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-ADF5E95842DB"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1014CB04C553",
+            "object_id": "IBI-ADF5E95842DB",
+            "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+            "field": "line_count",
+            "value_text": "Eleven physical lines, with the final line on the exterior",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 14",
+            "source_title": "A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum",
+            "source_url": "https://jstudies.huji.ac.il/sites/default/files/jstudies/files/mehqarim_blashon_talshir_fs_.pdf#page=23"
+          },
+          {
+            "id": "CLM-14D18A7065A5",
+            "object_id": "IBI-ADF5E95842DB",
+            "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+            "field": "text_layout",
+            "value_text": "Spiral from the centre to the upper rim, ending in one exterior line; small and large circular rulings define the inner blank and outer boundary",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 14",
+            "source_title": "A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum",
+            "source_url": "https://jstudies.huji.ac.il/sites/default/files/jstudies/files/mehqarim_blashon_talshir_fs_.pdf#page=23"
+          }
+        ],
+        "values_by_field": {
+          "line_count": [
+            "Eleven physical lines, with the final line on the exterior"
+          ],
+          "text_layout": [
+            "Spiral from the centre to the upper rim, ending in one exterior line; small and large circular rulings define the inner blank and outer boundary"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-C478C77AFCC6",
+      "field_group": "text_form",
+      "evidence_sha256": "870f2fae1e69f1077d9ed306f201914deee57ae11f4324570b84922ef064ef5a",
+      "disposition": "compatible",
+      "rationale": "Line count or inscription extent and layout describe separate text-form facets, or express the same count in different fields. This does not independently verify the count or layout.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-C478C77AFCC6 / text_form, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://journals.pan.pl/Content/134420"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-C478C77AFCC6",
+        "label": "British Museum BM 117877 Syriac bowl fragment",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-C478C77AFCC6"
+        ],
+        "claims": [
+          {
+            "id": "CLM-E5217A7B2F34",
+            "object_id": "IBI-C478C77AFCC6",
+            "source_id": "SRC-24B0EC105BC9",
+            "field": "line_count",
+            "value_text": "Traces of 11 lines",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 2, pp. 198–201; BM 117877",
+            "source_title": "Relics of Syriac Magic: Another Syriac Bowl for Prwkzʿd br Kwmy and a Syriac Incantation Fragment in the British Museum",
+            "source_url": "https://journals.pan.pl/Content/134420"
+          },
+          {
+            "id": "CLM-5DF8061959EC",
+            "object_id": "IBI-C478C77AFCC6",
+            "source_id": "SRC-24B0EC105BC9",
+            "field": "text_layout",
+            "value_text": "Probably clockwise spiral from bottom to rim",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 2, pp. 198–201; BM 117877",
+            "source_title": "Relics of Syriac Magic: Another Syriac Bowl for Prwkzʿd br Kwmy and a Syriac Incantation Fragment in the British Museum",
+            "source_url": "https://journals.pan.pl/Content/134420"
+          }
+        ],
+        "values_by_field": {
+          "line_count": [
+            "Traces of 11 lines"
+          ],
+          "text_layout": [
+            "Probably clockwise spiral from bottom to rim"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-EAB5621DEDA2",
+      "field_group": "ritual",
+      "evidence_sha256": "330e55ab7acfc664524b0aa44964489d4fba3fb2a78ae07c5ec7ea5dc54b7ecd",
+      "disposition": "compatible",
+      "rationale": "Formula genre, purpose, tradition, named beings, function, and installation instruction are complementary analytical facets rather than rival values. This does not independently validate the scholarly interpretation.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-EAB5621DEDA2 / ritual, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://openalex.org/W129188497"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-EAB5621DEDA2",
+        "label": "Schøyen MS 2054/124",
+        "field_group": "ritual",
+        "member_ids": [
+          "IBI-EAB5621DEDA2"
+        ],
+        "claims": [
+          {
+            "id": "CLM-ABDDC3D6EEBF",
+            "object_id": "IBI-EAB5621DEDA2",
+            "source_id": "SRC-5F7E0BA65D6E",
+            "field": "formula_genre",
+            "value_text": "Egg historiola associated with a white chicken",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 309; pp. 316–319",
+            "source_title": "Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’",
+            "source_url": "https://openalex.org/W129188497"
+          },
+          {
+            "id": "CLM-5F21DE9AF922",
+            "object_id": "IBI-EAB5621DEDA2",
+            "source_id": "SRC-5F7E0BA65D6E",
+            "field": "text_purpose",
+            "value_text": "Aggressive or hate magic directed against named antagonists",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 309; pp. 316–318",
+            "source_title": "Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’",
+            "source_url": "https://openalex.org/W129188497"
+          }
+        ],
+        "values_by_field": {
+          "formula_genre": [
+            "Egg historiola associated with a white chicken"
+          ],
+          "text_purpose": [
+            "Aggressive or hate magic directed against named antagonists"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-FAA7F16C75C2",
+      "field_group": "text_description",
+      "evidence_sha256": "99655e7d64bcf5167f571b08c9f1bf2861a77ec07f9529ca1d4742e9e85dc573",
+      "disposition": "compatible",
+      "rationale": "The stored text-feature claims describe different or differently scoped positive features and are additive, not mutually exclusive. This does not verify the underlying reading or analysis.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-FAA7F16C75C2 / text_description, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.ub.edu/ipoa/wp-content/uploads/2021/08/2014AuOrFord-c.pdf"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-FAA7F16C75C2",
+        "label": "Apotropaic index MS2053/206",
+        "field_group": "text_description",
+        "member_ids": [
+          "IBI-FAA7F16C75C2"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5978AD2FC098",
+            "object_id": "IBI-FAA7F16C75C2",
+            "source_id": "SRC-FORD2014-AUOR",
+            "field": "text_feature",
+            "value_text": "Ford reports: Reinterpretation of a cosmological expression.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 236–237; JBA 23:1",
+            "source_title": "Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels",
+            "source_url": "https://www.ub.edu/ipoa/wp-content/uploads/2021/08/2014AuOrFord-c.pdf"
+          },
+          {
+            "id": "CLM-8237F734C9ED",
+            "object_id": "IBI-FAA7F16C75C2",
+            "source_id": "SRC-FORD2014-AUOR",
+            "field": "text_feature",
+            "value_text": "Ford reports: Passive-participle analysis with comparative evidence.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 237–239; JBA 23:3",
+            "source_title": "Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels",
+            "source_url": "https://www.ub.edu/ipoa/wp-content/uploads/2021/08/2014AuOrFord-c.pdf"
+          }
+        ],
+        "values_by_field": {
+          "text_feature": [
+            "Ford reports: Passive-participle analysis with comparative evidence.",
+            "Ford reports: Reinterpretation of a cosmological expression."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3721 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: explicit stored-evidence compatibility review authorized by Mike",
+  "reviewed_at": "2026-09-19T23:03:17+00:00",
+  "scope": "Language: compatible broad, specific, qualified, and catalogue labels. 63 current pending instances; no claim, identity, canonical value, or substantive disagreement changed.",
+  "entries": [
+    {
+      "identity_id": "IDENT-021B030E5BF0",
+      "field_group": "language",
+      "evidence_sha256": "6c733d6f5f994abb399a51906d9bb19ab4b8dfec00b1558b61f99198f60e3408",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-021B030E5BF0 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-021B030E5BF0",
+        "label": "Waller 2022: CAMIB 35",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-021B030E5BF0",
+          "IBI-BFEE518DA6B6",
+          "IBI-F504A461BD0B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-255D80AA4370",
+            "object_id": "IBI-021B030E5BF0",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 035A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-4ABAC874D8EE",
+            "object_id": "IBI-F504A461BD0B",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 35",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0569914882D3",
+      "field_group": "language",
+      "evidence_sha256": "01d5931c5843707e83f1f933edb05a884f3ea22954b541df4e7bb97944de1a3b",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0569914882D3 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0569914882D3",
+        "label": "Vorderasiatisches Museum VA.2434 (catalogue 30)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-0569914882D3",
+          "IBI-CB0178C61399"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1D27CAE5BDEB",
+            "object_id": "IBI-CB0178C61399",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 30 (VA.2434), p. 91",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-A5601A45110C",
+            "object_id": "IBI-0569914882D3",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2434, p. 52",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0812604AAFBD",
+      "field_group": "language",
+      "evidence_sha256": "4cad69139b41c0681a8ce964c3e72b2002d87b0928f0626b855b60f618a5fcc3",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0812604AAFBD / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://poj.peeters-leuven.be/content.php?id=2020266&url=article",
+        "https://www.britishmuseum.org/collection/object/W_1886-0109-2",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0812604AAFBD",
+        "label": "British Museum 91767: incantation bowl",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-0812604AAFBD",
+          "IBI-5C48844F88FB",
+          "IBI-B7DE88C662A8",
+          "IBI-C2906E4D88F3",
+          "IBI-F9F8F8D64319"
+        ],
+        "claims": [
+          {
+            "id": "CLM-08A65FAF4A63",
+            "object_id": "IBI-5C48844F88FB",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 040A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-6DD060F26023",
+            "object_id": "IBI-0812604AAFBD",
+            "source_id": "SRC-C0144EA934D5",
+            "field": "inscription_language",
+            "value_text": "Aramaic with Hebrew biblical passages",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1886-0109-2",
+            "source_title": "incantation bowl: 91767",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1886-0109-2"
+          },
+          {
+            "id": "CLM-759E96AF75AC",
+            "object_id": "IBI-B7DE88C662A8",
+            "source_id": "SRC-1A922C3F041F",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "bowl BM 91767",
+            "source_title": "The Jewish Babylonian Aramaic Magic Bowl BM 91767 Reconsidered",
+            "source_url": "https://poj.peeters-leuven.be/content.php?id=2020266&url=article"
+          },
+          {
+            "id": "CLM-951F352532CC",
+            "object_id": "IBI-C2906E4D88F3",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 40",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Aramaic with Hebrew biblical passages",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-09B23B2CE047",
+      "field_group": "language",
+      "evidence_sha256": "c5ebfea78e78268c90a6dc2d70cd9dbe4512f78d58b15a1c65cfbbe9b9d3f67f",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-09B23B2CE047 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004411838",
+        "https://refubium.fu-berlin.de/handle/fub188/24509",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-09B23B2CE047",
+        "label": "Waller 2022: HS 3003",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-09B23B2CE047",
+          "IBI-58CF5ED0C89C",
+          "IBI-AB9C12C9719A"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4161397B30A9",
+            "object_id": "IBI-AB9C12C9719A",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, HS 3003",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-7C817626AE89",
+            "object_id": "IBI-09B23B2CE047",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 134, note 546",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          },
+          {
+            "id": "CLM-E67D4ED78022",
+            "object_id": "IBI-58CF5ED0C89C",
+            "source_id": "SRC-8A145FAA2EBB",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic and/or Hebrew",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Section heading and entry 2, p. 14",
+            "source_title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "source_url": "https://doi.org/10.1163/9789004411838"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Jewish Babylonian Aramaic and/or Hebrew"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0A4638EC11A0",
+      "field_group": "language",
+      "evidence_sha256": "64eb052fc96b8e91b762e3b28cd6209a1b3115459a4343aaa6c2747bd523a3a1",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0A4638EC11A0 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/object/W_1886-0109-5",
+        "https://www.britishmuseum.org/collection/term/BIB3908"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0A4638EC11A0",
+        "label": "British Museum 91742: incantation bowl",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-0A4638EC11A0",
+          "IBI-43F005796278",
+          "IBI-CCC8B14D56EA"
+        ],
+        "claims": [
+          {
+            "id": "CLM-07751339A46B",
+            "object_id": "IBI-CCC8B14D56EA",
+            "source_id": "SRC-4CF084A3C54D",
+            "field": "inscription_language",
+            "value_text": "Aramaic with Hebrew phrases",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1886-0109-5",
+            "source_title": "incantation bowl: 91742",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1886-0109-5"
+          },
+          {
+            "id": "CLM-ED27A16ABC0F",
+            "object_id": "IBI-0A4638EC11A0",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 019A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Aramaic with Hebrew phrases"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0E11CB6D2517",
+      "field_group": "language",
+      "evidence_sha256": "ac540a17d4d305b01c9c471d97ab0403df6f982b90622a9b735b774f649fb7d3",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0E11CB6D2517 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0E11CB6D2517",
+        "label": "Vorderasiatisches Museum VA.2423 (catalogue 19)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-0E11CB6D2517",
+          "IBI-6332934EE686"
+        ],
+        "claims": [
+          {
+            "id": "CLM-245FB71BCE49",
+            "object_id": "IBI-0E11CB6D2517",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 19 (VA.2423), p. 83",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-E32C832DA1BC",
+            "object_id": "IBI-6332934EE686",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2423, p. 35",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0EA741BCC672",
+      "field_group": "language",
+      "evidence_sha256": "0b4e79b19a09683dc69083c5d46f0b1d8cd1bc2c925c914e0a46ccf2e6f89c7a",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-0EA741BCC672 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0EA741BCC672",
+        "label": "Waller 2022: CAMIB 65",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-0EA741BCC672",
+          "IBI-D1CA2736055D",
+          "IBI-D88FF8FE4FCB"
+        ],
+        "claims": [
+          {
+            "id": "CLM-41FAF85485CB",
+            "object_id": "IBI-D88FF8FE4FCB",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 065A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-77FB4DB71BA1",
+            "object_id": "IBI-0EA741BCC672",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 65",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-12E9DEF48BE8",
+      "field_group": "language",
+      "evidence_sha256": "0a9507cee658284773f6239e06025f048437f7a5d5390d55d79c6590908f0fbe",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-12E9DEF48BE8 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004411838",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-12E9DEF48BE8",
+        "label": "Waller 2022: HS 3027",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-12E9DEF48BE8"
+        ],
+        "claims": [
+          {
+            "id": "CLM-A9C8455D1A38",
+            "object_id": "IBI-12E9DEF48BE8",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 159, distribution table, HS 3027",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-E360CF9BA121",
+            "object_id": "IBI-12E9DEF48BE8",
+            "source_id": "SRC-8A145FAA2EBB",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic and/or Hebrew",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Section heading and entry 16, p. 86",
+            "source_title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "source_url": "https://doi.org/10.1163/9789004411838"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Jewish Babylonian Aramaic and/or Hebrew"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-15E3C4007112",
+      "field_group": "language",
+      "evidence_sha256": "5cb9a39080fd30f55d10177a827d0e0de55e866da4850bba50d4f278ae76d000",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-15E3C4007112 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-15E3C4007112",
+        "label": "Vorderasiatisches Museum VA.Bab.2785b (catalogue 120)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-15E3C4007112"
+        ],
+        "claims": [
+          {
+            "id": "CLM-9884679915FD",
+            "object_id": "IBI-15E3C4007112",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 120 (VA.Bab.2785b), p. 147",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-1D5FDB0E8017",
+            "object_id": "IBI-15E3C4007112",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 12, p. 253",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-15FA5AB2FD95",
+      "field_group": "language",
+      "evidence_sha256": "cdc7e207c30c04e02c792d43c79ffae2016f0bb477620a8690e8067fb060931f",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-15FA5AB2FD95 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/object/W_1983-1002-2",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-15FA5AB2FD95",
+        "label": "British Museum 139524: incantation bowl",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-15FA5AB2FD95",
+          "IBI-3C269118F2F6",
+          "IBI-5530C58CC7B7",
+          "IBI-8DBB2FDDBA64",
+          "IBI-E8D5C937721A"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5DE4D3011C83",
+            "object_id": "IBI-8DBB2FDDBA64",
+            "source_id": "SRC-C790CF0327BB",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "object W_1983-1002-2",
+            "source_title": "incantation bowl: 139524",
+            "source_url": "https://www.britishmuseum.org/collection/object/W_1983-1002-2"
+          },
+          {
+            "id": "CLM-E4A29D093350",
+            "object_id": "IBI-E8D5C937721A",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 23",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-E6869474D7AE",
+            "object_id": "IBI-15FA5AB2FD95",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 023A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-178BA6C8C6EF",
+      "field_group": "language",
+      "evidence_sha256": "cc6c952179f7b8404b9eb1462a58a7c4f62b52e63af6f40eedb69f3971a1ebe8",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-178BA6C8C6EF / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-178BA6C8C6EF",
+        "label": "Waller 2022: CAMIB 71",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-178BA6C8C6EF",
+          "IBI-17E201FE4602",
+          "IBI-5F60BF45DDD7"
+        ],
+        "claims": [
+          {
+            "id": "CLM-8E1476137800",
+            "object_id": "IBI-17E201FE4602",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 071A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-949676072AD4",
+            "object_id": "IBI-5F60BF45DDD7",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 71",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-1A307263804C",
+      "field_group": "language",
+      "evidence_sha256": "f9fc700c4ed5d34213951f8c6026ac518d6a4fe3dc575dcf69368d0f7b332a02",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-1A307263804C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-1A307263804C",
+        "label": "Vorderasiatisches Museum VA.2448 (catalogue 43)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-1A307263804C"
+        ],
+        "claims": [
+          {
+            "id": "CLM-508EDCF5008A",
+            "object_id": "IBI-1A307263804C",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 43 (VA.2448), p. 100",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-166E682FEA3D",
+            "object_id": "IBI-1A307263804C",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 23, p. 331",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-20A53178A58B",
+      "field_group": "language",
+      "evidence_sha256": "79358a9f32c0d815d1f7a0b2dc5e2ff04ef3c8a391c0b3fe3810ec293463f6a9",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-20A53178A58B / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-20A53178A58B",
+        "label": "LiveAuctioneers item 232753117",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-20A53178A58B",
+          "IBI-79CB88572315"
+        ],
+        "claims": [
+          {
+            "id": "CLM-F7B5588CD074",
+            "object_id": "IBI-79CB88572315",
+            "source_id": "SRC-2227D5AC463A",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "item 232753117",
+            "source_title": "Aramaic Terracotta Incantation Bowl — item 232753117",
+            "source_url": "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+          },
+          {
+            "id": "CLM-020A49FF107F",
+            "object_id": "IBI-20A53178A58B",
+            "source_id": "SRC-2227D5AC463A",
+            "field": "script_or_language",
+            "value_text": "Aramaic (auction attribution)",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "LiveAuctioneers item 232753117, lot 1203",
+            "source_title": "Aramaic Terracotta Incantation Bowl — item 232753117",
+            "source_url": "https://www.liveauctioneers.com/item/232753117_aramaic-terracotta-incantation-bowl-london-london"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic"
+          ],
+          "script_or_language": [
+            "Aramaic (auction attribution)"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-223C8B15FFAD",
+      "field_group": "language",
+      "evidence_sha256": "dbad983a5bed20e8eaf543e8d7d0190a9b764d92f7cc98028478b4d8ed01ebcc",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-223C8B15FFAD / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-223C8B15FFAD",
+        "label": "Waller 2022: CAMIB 41",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-223C8B15FFAD",
+          "IBI-2B02110E6106",
+          "IBI-41EF9D3D3B97"
+        ],
+        "claims": [
+          {
+            "id": "CLM-8922CE97142D",
+            "object_id": "IBI-2B02110E6106",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 041A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-8C21B70C8876",
+            "object_id": "IBI-41EF9D3D3B97",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 41",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-23AA6305D277",
+      "field_group": "language",
+      "evidence_sha256": "2abb12192d7ca97239491d69a1b3ffc72c776fa9aa6cae41abb6e01b4ac274b7",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-23AA6305D277 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-23AA6305D277",
+        "label": "Vorderasiatisches Museum VA.2514 (catalogue 79)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-23AA6305D277"
+        ],
+        "claims": [
+          {
+            "id": "CLM-FF6C37C6DCF5",
+            "object_id": "IBI-23AA6305D277",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 79 (VA.2514), p. 122",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-300F99CC82E7",
+            "object_id": "IBI-23AA6305D277",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 22, p. 327",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-246B77780790",
+      "field_group": "language",
+      "evidence_sha256": "8b24d12eedd7bc38b12d668657b418631eaa914f3e821d5ee2a8f3d0c1696416",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-246B77780790 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-246B77780790",
+        "label": "Vorderasiatisches Museum VA.Bab.282089 (catalogue 133)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-246B77780790"
+        ],
+        "claims": [
+          {
+            "id": "CLM-C31536933282",
+            "object_id": "IBI-246B77780790",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 133 (VA.Bab.282089), p. 154",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-11C4C02AEBDD",
+            "object_id": "IBI-246B77780790",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 21, p. 321",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-268778FE992D",
+      "field_group": "language",
+      "evidence_sha256": "10ea1e3829f8a1e7fb08f470f5ba8548b8a2133bfb24ee5c43a4b3c3a31b4e60",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-268778FE992D / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-268778FE992D",
+        "label": "Vorderasiatisches Museum VA.2509 (catalogue 75)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-268778FE992D",
+          "IBI-41983FC065EF"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1F6A20D1B121",
+            "object_id": "IBI-268778FE992D",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 75 (VA.2509), p. 119",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-13899A26DE78",
+            "object_id": "IBI-41983FC065EF",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2509, p. 30",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-27E625F08E90",
+      "field_group": "language",
+      "evidence_sha256": "e004af727705dd2cb1db068a371f8de3d319ef9183951674058a47e7ad68636b",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-27E625F08E90 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-27E625F08E90",
+        "label": "Waller 2022: CAMIB 26",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-27E625F08E90",
+          "IBI-2BC68A5CB28B",
+          "IBI-9548EB8935E2",
+          "IBI-A7A540CDFF87",
+          "IBI-D8C1FFD3FBED"
+        ],
+        "claims": [
+          {
+            "id": "CLM-158E302B9562",
+            "object_id": "IBI-A7A540CDFF87",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 154, distribution table, Isbell 66",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-1C83BF119C93",
+            "object_id": "IBI-27E625F08E90",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 026A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-4F35919B103C",
+            "object_id": "IBI-D8C1FFD3FBED",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 26",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-282211CBFEDB",
+      "field_group": "language",
+      "evidence_sha256": "d79c5e161213439e47b3b9adefee95d455a09e7bcaa6026589fd475e90a41523",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-282211CBFEDB / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-282211CBFEDB",
+        "label": "Vorderasiatisches Museum VA.2417 (catalogue 13)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-282211CBFEDB",
+          "IBI-9B8289678F00"
+        ],
+        "claims": [
+          {
+            "id": "CLM-336937E75CE6",
+            "object_id": "IBI-9B8289678F00",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 13 (VA.2417), p. 78",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-B0C9CB61A6BA",
+            "object_id": "IBI-282211CBFEDB",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2417, p. 90",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-329BB470A7D9",
+      "field_group": "language",
+      "evidence_sha256": "61a7131e33299111dd115367445f4524b12c8e21aa39bd15f5867faab4be44e0",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-329BB470A7D9 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-329BB470A7D9",
+        "label": "Vorderasiatisches Museum VA.Bab.2832 (catalogue 143)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-329BB470A7D9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-804DE5722B95",
+            "object_id": "IBI-329BB470A7D9",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 143 (VA.Bab.2832), p. 159",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-F12F7240C100",
+            "object_id": "IBI-329BB470A7D9",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 17, p. 306",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-3710A9140539",
+      "field_group": "language",
+      "evidence_sha256": "ea5ba80011a13a5f8fc3b3bbe45a0535cfe62ff1bcf6c4bffa8f30e495d74a6e",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-3710A9140539 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-3710A9140539",
+        "label": "Vorderasiatisches Museum VA.2485 (catalogue 56)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-3710A9140539"
+        ],
+        "claims": [
+          {
+            "id": "CLM-D65D353A9A38",
+            "object_id": "IBI-3710A9140539",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 56 (VA.2485), p. 107",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-72DC7929F59B",
+            "object_id": "IBI-3710A9140539",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 3, p. 139",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-39167857180F",
+      "field_group": "language",
+      "evidence_sha256": "40206055d089264fc8980e962e7190a4078c88e8bdac03d4fa6cff94d719f39a",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-39167857180F / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-39167857180F",
+        "label": "Vorderasiatisches Museum VA.3381 (catalogue 93)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-39167857180F",
+          "IBI-8D1A62EDE059"
+        ],
+        "claims": [
+          {
+            "id": "CLM-D26FED07EB0E",
+            "object_id": "IBI-39167857180F",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 93 (VA.3381), p. 130",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-A56B15EACC10",
+            "object_id": "IBI-8D1A62EDE059",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.3381, p. 79",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-3937E936916E",
+      "field_group": "language",
+      "evidence_sha256": "a94526e6648dbbdf320b39ebe32f24a17baf76f60a6e5ba43620e7877257a48a",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-3937E936916E / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-3937E936916E",
+        "label": "Vorderasiatisches Museum VA.Bab.2762 (catalogue 100)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-3937E936916E"
+        ],
+        "claims": [
+          {
+            "id": "CLM-A641C0E4D8DF",
+            "object_id": "IBI-3937E936916E",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 100 (VA.Bab.2762), p. 136",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-2D50EE6B61D1",
+            "object_id": "IBI-3937E936916E",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 16, p. 294",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-3E89893C3F16",
+      "field_group": "language",
+      "evidence_sha256": "fb2f6dd0f22510c0b83a4d6718002b6a53c1f6173326399520c4aa1160123d7c",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-3E89893C3F16 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004411838",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-3E89893C3F16",
+        "label": "Waller 2022: HS 3022",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-3E89893C3F16"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5F98A167E205",
+            "object_id": "IBI-3E89893C3F16",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, HS 3022",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-AEA9C046AAB7",
+            "object_id": "IBI-3E89893C3F16",
+            "source_id": "SRC-8A145FAA2EBB",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic and/or Hebrew",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Section heading and entry 13, p. 68",
+            "source_title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "source_url": "https://doi.org/10.1163/9789004411838"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Jewish Babylonian Aramaic and/or Hebrew"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-4388179CF590",
+      "field_group": "language",
+      "evidence_sha256": "90fa221d03426866f1aad838047238e8819bbdf3e6d13103f9aa96c1cb78cfbf",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-4388179CF590 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://echoesofegypt.peabody.yale.edu/egyptosophy/incantation-bowl"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-4388179CF590",
+        "label": "Yale Babylonian Collection YBC 2393",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-4388179CF590",
+          "IBI-DB735219142A",
+          "IBI-F91C6432EB15"
+        ],
+        "claims": [
+          {
+            "id": "CLM-0B7615D3DDA2",
+            "object_id": "IBI-F91C6432EB15",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "YBC 2393, p. 133",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          },
+          {
+            "id": "CLM-2B028606AE2D",
+            "object_id": "IBI-4388179CF590",
+            "source_id": "SRC-D2482299BAC7",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic with some Mandaic features",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "paragraph 3: YBC 2393",
+            "source_title": "Incantation Bowl",
+            "source_url": "https://echoesofegypt.peabody.yale.edu/egyptosophy/incantation-bowl"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Jewish Babylonian Aramaic with some Mandaic features"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-46A19DD5509C",
+      "field_group": "language",
+      "evidence_sha256": "5fcc1a518f34c2783720deac271c7595b30aef0770846b3668e3bac617bb3e8e",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-46A19DD5509C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-46A19DD5509C",
+        "label": "Vorderasiatisches Museum VA.2418 (catalogue 14)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-46A19DD5509C",
+          "IBI-C16B6B568B13"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5222264F7ABE",
+            "object_id": "IBI-46A19DD5509C",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 14 (VA.2418), p. 79",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-D16C2AC0466C",
+            "object_id": "IBI-C16B6B568B13",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2418, p. 87",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-4AC688F5E515",
+      "field_group": "language",
+      "evidence_sha256": "9b75fb3345b35b098828341d46b468f56d7df9e2ad32d7138d9a3c4d684bf95e",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-4AC688F5E515 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://biblio.ugent.be/publication/378915",
+        "https://refubium.fu-berlin.de/handle/fub188/24509"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-4AC688F5E515",
+        "label": "Smelik 1978 Allard Pierson bowl",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-4AC688F5E515",
+          "IBI-A3611322C9BE",
+          "IBI-E4602FCF2E34"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5FBF2E831655",
+            "object_id": "IBI-4AC688F5E515",
+            "source_id": "SRC-589994C2222B",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 174–177",
+            "source_title": "An Aramaic Incantation Bowl in the Allard Pierson Museum",
+            "source_url": "https://biblio.ugent.be/publication/378915"
+          },
+          {
+            "id": "CLM-C5E1FA6E8EFA",
+            "object_id": "IBI-E4602FCF2E34",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 102, table 6, NFP 8 and note 415",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-54E975AB2557",
+      "field_group": "language",
+      "evidence_sha256": "936610250d23e2cf8fc2a03c12b7b8d24d9e785774c0933e60f8a850844e38f4",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-54E975AB2557 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-54E975AB2557",
+        "label": "Vorderasiatisches Museum VA.2424 (catalogue 20)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-54E975AB2557",
+          "IBI-C355CFCFCA97"
+        ],
+        "claims": [
+          {
+            "id": "CLM-037AFBD00A24",
+            "object_id": "IBI-54E975AB2557",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 20 (VA.2424), p. 84",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-C770922FE190",
+            "object_id": "IBI-C355CFCFCA97",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2424, p. 57",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-56796E0EB0E2",
+      "field_group": "language",
+      "evidence_sha256": "a1e3b80c6669c9a5c6552ccaa5d63a74b671d280cb6fc969c01e4589e2c7a07b",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-56796E0EB0E2 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004411838",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-56796E0EB0E2",
+        "label": "Waller 2022: HS 3005",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-56796E0EB0E2",
+          "IBI-86EAEBF08875",
+          "IBI-9864B55DD2CF"
+        ],
+        "claims": [
+          {
+            "id": "CLM-46A6756127E3",
+            "object_id": "IBI-86EAEBF08875",
+            "source_id": "SRC-8A145FAA2EBB",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic and/or Hebrew",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Section heading and entry 3, p. 19",
+            "source_title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "source_url": "https://doi.org/10.1163/9789004411838"
+          },
+          {
+            "id": "CLM-7C830A032BE2",
+            "object_id": "IBI-9864B55DD2CF",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 154, distribution table, Isbell 55",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-AD88FA474221",
+            "object_id": "IBI-56796E0EB0E2",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, HS 3005",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Jewish Babylonian Aramaic and/or Hebrew"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-5BA864A5AA3B",
+      "field_group": "language",
+      "evidence_sha256": "f87c6f2c5eb2f63c2b79b00f58ef22b00f54b955803c151691993e39f5f9ef93",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-5BA864A5AA3B / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-5BA864A5AA3B",
+        "label": "Waller 2022: CAMIB 72",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-5BA864A5AA3B",
+          "IBI-7705A74EC455",
+          "IBI-AD36E9223E31"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4252F0A00483",
+            "object_id": "IBI-7705A74EC455",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 72",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-650C8453F0A1",
+            "object_id": "IBI-AD36E9223E31",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 072A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-5CAAE6F2D3FD",
+      "field_group": "language",
+      "evidence_sha256": "5ee0a0941a2b304ca894270e19d1904918eaf0e3211175b9c19a9480c0a941b2",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-5CAAE6F2D3FD / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-5CAAE6F2D3FD",
+        "label": "Vorderasiatisches Museum VA.2505 (catalogue 71)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-5CAAE6F2D3FD"
+        ],
+        "claims": [
+          {
+            "id": "CLM-11459D2B6C1B",
+            "object_id": "IBI-5CAAE6F2D3FD",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 71 (VA.2505), p. 117",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-20627F4CA458",
+            "object_id": "IBI-5CAAE6F2D3FD",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 24, p. 338",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-63D659859D54",
+      "field_group": "language",
+      "evidence_sha256": "f3427d068568f9d7872e6a906f6ab58abf9960fd7a44ab287a3492280d428239",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-63D659859D54 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://eprints.soton.ac.uk/73174/"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-63D659859D54",
+        "label": "Moussaieff M163",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-63D659859D54"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1D1C7F36AF83",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-21417589C8F9",
+            "field": "inscription_language",
+            "value_text": "Jewish Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 283–308",
+            "source_title": "‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic",
+            "source_url": "https://eprints.soton.ac.uk/73174/"
+          },
+          {
+            "id": "CLM-EB3019EE2067",
+            "object_id": "IBI-63D659859D54",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "M163, p. 110",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6BB2CDA1324B",
+      "field_group": "language",
+      "evidence_sha256": "399bcbf57fc4688584d99ab553c918b6cf32944338d48d36c508894dab0a3c8a",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6BB2CDA1324B / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6BB2CDA1324B",
+        "label": "Vorderasiatisches Museum VA.2433 (catalogue 29)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-6BB2CDA1324B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-32985C7479D9",
+            "object_id": "IBI-6BB2CDA1324B",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 29 (VA.2433), p. 90",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-23D15AEA116F",
+            "object_id": "IBI-6BB2CDA1324B",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 11, p. 235",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6EDBD224265D",
+      "field_group": "language",
+      "evidence_sha256": "5779625876aa35902431e546aa4a347c007ccfe23a6f0fe677640d4a009a063e",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6EDBD224265D / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://refubium.fu-berlin.de/handle/fub188/24509",
+        "https://www.britishmuseum.org/collection/term/BIB3908"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6EDBD224265D",
+        "label": "BM 91776",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-6EDBD224265D",
+          "IBI-8ADDEA9CC8CC",
+          "IBI-92B15B350110"
+        ],
+        "claims": [
+          {
+            "id": "CLM-8C91697EF145",
+            "object_id": "IBI-6EDBD224265D",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 102, table 6, NFP 7 and note 414",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          },
+          {
+            "id": "CLM-E5D011710B71",
+            "object_id": "IBI-8ADDEA9CC8CC",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 036A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6F98412BF44D",
+      "field_group": "language",
+      "evidence_sha256": "2ecc3f7306a43b7d26fa0d3625e5c371e5c68867d7ae67552a94dd17c1c529d1",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6F98412BF44D / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6F98412BF44D",
+        "label": "Vorderasiatisches Museum VA.2416 (catalogue 12)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-6F98412BF44D",
+          "IBI-83B79765A7BC",
+          "IBI-F263CF1257B9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-F654C4038DF0",
+            "object_id": "IBI-83B79765A7BC",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 12 (VA.2416), p. 77",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-57F36DE520FD",
+            "object_id": "IBI-6F98412BF44D",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, VA 2416",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-A3767278FEA1",
+            "object_id": "IBI-F263CF1257B9",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2416, p. 45",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-6FF335082D5F",
+      "field_group": "language",
+      "evidence_sha256": "b347d154b588484a7a057c337c0ccba4fcf8a3e7a0a4480aa9574b3572c2f08c",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-6FF335082D5F / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1093/jss/fgt002",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-6FF335082D5F",
+        "label": "Waller 2022: IM 9736",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-6FF335082D5F",
+          "IBI-77314E5A3199",
+          "IBI-A6D92692DBC3"
+        ],
+        "claims": [
+          {
+            "id": "CLM-783CDC17F7C0",
+            "object_id": "IBI-A6D92692DBC3",
+            "source_id": "SRC-30F5C3AD388A",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 241–256",
+            "source_title": "An Incantation Bowl for Sowing Discord",
+            "source_url": "https://doi.org/10.1093/jss/fgt002"
+          },
+          {
+            "id": "CLM-B0C06351E964",
+            "object_id": "IBI-77314E5A3199",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 159, distribution table, IM 9736",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-73E651D21AE9",
+      "field_group": "language",
+      "evidence_sha256": "f882a800497e95d4e4205183b19035005c7759c60261a600ccc5723eb4dc213e",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-73E651D21AE9 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-73E651D21AE9",
+        "label": "Vorderasiatisches Museum VA.2492 (catalogue 62)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-73E651D21AE9",
+          "IBI-BD0E2A92B719"
+        ],
+        "claims": [
+          {
+            "id": "CLM-EBBCB9E7B3F2",
+            "object_id": "IBI-BD0E2A92B719",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 62 (VA.2492), p. 110",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-BAD58ED6CA39",
+            "object_id": "IBI-73E651D21AE9",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2492, p. 84",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-74178EB3C1CC",
+      "field_group": "language",
+      "evidence_sha256": "c9dc19ad5c4294ed8d639676008e487bfec3bee4386bb1f66fe4b91bbcc844fd",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-74178EB3C1CC / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-74178EB3C1CC",
+        "label": "Vorderasiatisches Museum VA.2496 (catalogue 66)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-74178EB3C1CC",
+          "IBI-A579E5286B8B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-A3EB32A7348C",
+            "object_id": "IBI-A579E5286B8B",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 66 (VA.2496), p. 114",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-BC86771B00F9",
+            "object_id": "IBI-74178EB3C1CC",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2496, p. 62",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-7AC91C811983",
+      "field_group": "language",
+      "evidence_sha256": "42bb8f77de31c2dad07504e2fc2ad25bf5d0a1d9ab5289f1b9d16c5bfce1d002",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-7AC91C811983 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-7AC91C811983",
+        "label": "Vorderasiatisches Museum VA.2490 (catalogue 60)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-7AC91C811983"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6331C807951A",
+            "object_id": "IBI-7AC91C811983",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 60 (VA.2490), p. 109",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-DB3A462E010F",
+            "object_id": "IBI-7AC91C811983",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 20, p. 316",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-7BFAF3E1718C",
+      "field_group": "language",
+      "evidence_sha256": "6f7aca319aa3307ad31322573bdb4aac59b539ba5855d3d96ef4f07065c766c6",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-7BFAF3E1718C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-7BFAF3E1718C",
+        "label": "Waller 2022: CAMIB 43",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-7BFAF3E1718C",
+          "IBI-8F9BDB64CD08",
+          "IBI-CCF48C90D565"
+        ],
+        "claims": [
+          {
+            "id": "CLM-414351E9BB98",
+            "object_id": "IBI-CCF48C90D565",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 043A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          },
+          {
+            "id": "CLM-92FBAE91006F",
+            "object_id": "IBI-7BFAF3E1718C",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 43",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-81F94A22A26C",
+      "field_group": "language",
+      "evidence_sha256": "dd207443512c754f4fec8dfa32f6ac83589b0ceeba66c1ca19daa627ee455cb8",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-81F94A22A26C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-81F94A22A26C",
+        "label": "Vorderasiatisches Museum VA.Bab.2788 (catalogue 123)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-81F94A22A26C"
+        ],
+        "claims": [
+          {
+            "id": "CLM-40502B00662A",
+            "object_id": "IBI-81F94A22A26C",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 123 (VA.Bab.2788), p. 149",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-45C5E54E882B",
+            "object_id": "IBI-81F94A22A26C",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 6, p. 172",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-83915232010B",
+      "field_group": "language",
+      "evidence_sha256": "fc172e25cb10829be1fe65662f607058936180f5e551e8c0f579a4d323bb9aa4",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-83915232010B / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://www.britishmuseum.org/collection/term/BIB3908",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-83915232010B",
+        "label": "Waller 2022: CAMIB 73",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-83915232010B",
+          "IBI-BA03C6123DFF",
+          "IBI-BA91CB9E218A"
+        ],
+        "claims": [
+          {
+            "id": "CLM-3D97C2D53FC0",
+            "object_id": "IBI-83915232010B",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 155, distribution table, CAMIB 73",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-AEBD14DDDFC0",
+            "object_id": "IBI-BA91CB9E218A",
+            "source_id": "SRC-72D809FB4249",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "text 073A; section pp. 43–102",
+            "source_title": "Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum",
+            "source_url": "https://www.britishmuseum.org/collection/term/BIB3908"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-846252562B0E",
+      "field_group": "language",
+      "evidence_sha256": "f755adf217ed445dfbeeb48252da3c06f0e6d7900419e084dbd09251a35fd3c7",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-846252562B0E / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-846252562B0E",
+        "label": "Vorderasiatisches Museum VA.2575 (catalogue 83)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-846252562B0E",
+          "IBI-A3172261C638"
+        ],
+        "claims": [
+          {
+            "id": "CLM-D4E3111730E0",
+            "object_id": "IBI-846252562B0E",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 83 (VA.2575), p. 124",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-71AE03D6E9D7",
+            "object_id": "IBI-A3172261C638",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2575, p. 62",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-920AA91FFE7D",
+      "field_group": "language",
+      "evidence_sha256": "0dfbc2867e1f3695590bb1c7b6c0b334159b1da6d5bdb859e49f8ffe030c2048",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-920AA91FFE7D / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-920AA91FFE7D",
+        "label": "Vorderasiatisches Museum VA.2484 (catalogue 55)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-920AA91FFE7D",
+          "IBI-9F5523CA69BE",
+          "IBI-D2D12615DAA7"
+        ],
+        "claims": [
+          {
+            "id": "CLM-219D30B62FDD",
+            "object_id": "IBI-920AA91FFE7D",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 55 (VA.2484), p. 106",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-8F5BD450C3FA",
+            "object_id": "IBI-D2D12615DAA7",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 156, distribution table, VA 2484",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-95E848A19EE1",
+            "object_id": "IBI-9F5523CA69BE",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.2484, p. 20",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-92B45966E014",
+      "field_group": "language",
+      "evidence_sha256": "dd1761dde60a7e57c549ee40ed43ba33dae1db6be0b4cd299dcb14bbefb5683b",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-92B45966E014 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-92B45966E014",
+        "label": "Vorderasiatisches Museum VA.2430 (catalogue 26)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-92B45966E014"
+        ],
+        "claims": [
+          {
+            "id": "CLM-226367DCE70F",
+            "object_id": "IBI-92B45966E014",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 26 (VA.2430), p. 89",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-C9A06B987359",
+            "object_id": "IBI-92B45966E014",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 2, p. 124",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A2EAAAFBE5E5",
+      "field_group": "language",
+      "evidence_sha256": "05fdfe7b481697bac159da75fc0283b04c689a5c63975a4e3efcb13aec352cf2",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A2EAAAFBE5E5 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004257269",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A2EAAAFBE5E5",
+        "label": "Vorderasiatisches Museum VA.3382 (catalogue 94)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-A2EAAAFBE5E5",
+          "IBI-C2A3B69CBA56"
+        ],
+        "claims": [
+          {
+            "id": "CLM-93950A461A76",
+            "object_id": "IBI-A2EAAAFBE5E5",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 94 (VA.3382), p. 130",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-BA51ABF0A749",
+            "object_id": "IBI-C2A3B69CBA56",
+            "source_id": "SRC-F2BEFBEFFC2E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "VA.3382, p. 74",
+            "source_title": "Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’",
+            "source_url": "https://doi.org/10.1163/9789004257269"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A3889D8F55BA",
+      "field_group": "language",
+      "evidence_sha256": "e5720a1837fdf4a4d51d98837c172b41e1004fc729cafd1f6152894c46bef9ef",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A3889D8F55BA / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A3889D8F55BA",
+        "label": "Vorderasiatisches Museum VAN.13391 (catalogue 169)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-A3889D8F55BA"
+        ],
+        "claims": [
+          {
+            "id": "CLM-08580593A2E4",
+            "object_id": "IBI-A3889D8F55BA",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 169 (VAN.13391), p. 173",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-D33E71A58950",
+            "object_id": "IBI-A3889D8F55BA",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 19, pp. 313-315",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-A929E9853CC3",
+      "field_group": "language",
+      "evidence_sha256": "d8f366eec9a28c99a6668bab6521923164d6a6f048a78549f2e720f32c4202d5",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-A929E9853CC3 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-A929E9853CC3",
+        "label": "Vorderasiatisches Museum VA.Bab.2836 (catalogue 147)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-A929E9853CC3"
+        ],
+        "claims": [
+          {
+            "id": "CLM-236845CE7C66",
+            "object_id": "IBI-A929E9853CC3",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 147 (VA.Bab.2836), p. 162",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-AA1F8BDACAB6",
+            "object_id": "IBI-A929E9853CC3",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 10, p. 228",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-B8152163710F",
+      "field_group": "language",
+      "evidence_sha256": "8236fbc6afbeca34fa3c67b3a2105559be784345b91e07f06d19c5233b034600",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-B8152163710F / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/17455227-01501002",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-B8152163710F",
+        "label": "Waller 2022: MFL 10895",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-B8152163710F",
+          "IBI-CD463292B7B0"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4A952C05697C",
+            "object_id": "IBI-CD463292B7B0",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 161, distribution table, MFL 10895",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          },
+          {
+            "id": "CLM-99F38582563A",
+            "object_id": "IBI-B8152163710F",
+            "source_id": "SRC-0D8C4983AED9",
+            "field": "inscription_language",
+            "value_text": "Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "bowl MFL 10895",
+            "source_title": "An Aramaic Magic Bowl for Fertility and Success in Childbirth: Lisboa, Museu da Farmácia, Inv. No. 10895",
+            "source_url": "https://doi.org/10.1163/17455227-01501002"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Aramaic",
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-B89A7807868E",
+      "field_group": "language",
+      "evidence_sha256": "d2c74b2721c6a5a752a027c8d9867b969d985a57199bee756e676b195f13e332",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-B89A7807868E / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-B89A7807868E",
+        "label": "Vorderasiatisches Museum VA.2495 (catalogue 65)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-B89A7807868E"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4D506E676217",
+            "object_id": "IBI-B89A7807868E",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 65 (VA.2495), p. 113",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-FCF8458F37BF",
+            "object_id": "IBI-B89A7807868E",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 14, p. 282",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-BCABA823010C",
+      "field_group": "language",
+      "evidence_sha256": "86b8851e417bb2bfa0d25757df8811f1a32147ed8168ccf51466c859e52dd07d",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-BCABA823010C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-BCABA823010C",
+        "label": "Vorderasiatisches Museum VA.Bab.2774 (catalogue 109)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-BCABA823010C"
+        ],
+        "claims": [
+          {
+            "id": "CLM-F6F30B4FA6DC",
+            "object_id": "IBI-BCABA823010C",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 109 (VA.Bab.2774), p. 141",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-1FBA6CE4A605",
+            "object_id": "IBI-BCABA823010C",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 5, p. 163",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-C9CBD8EB2190",
+      "field_group": "language",
+      "evidence_sha256": "9534bc84e45bdfff6c218ce1821a4bf81af75577f21ee1bc73461805e8147f35",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-C9CBD8EB2190 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.2307/605019",
+        "https://refubium.fu-berlin.de/handle/fub188/24509"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-C9CBD8EB2190",
+        "label": "BM 135563",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-C9CBD8EB2190",
+          "IBI-FD3729E6B891"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4EAEFB603A5E",
+            "object_id": "IBI-C9CBD8EB2190",
+            "source_id": "SRC-195B6B6E19A1",
+            "field": "inscription_language",
+            "value_text": "Talmudic Aramaic / Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "pp. 159–165",
+            "source_title": "A Unique Talmudic Aramaic Incantation Bowl",
+            "source_url": "https://doi.org/10.2307/605019"
+          },
+          {
+            "id": "CLM-BC516A76300E",
+            "object_id": "IBI-FD3729E6B891",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 102, table 6, NFP 2",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Talmudic Aramaic / Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-D26113736570",
+      "field_group": "language",
+      "evidence_sha256": "79365990d8ad2d8b739c47e21bb38502a099c0338b7a16c9a9e759dd56500ee0",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-D26113736570 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-D26113736570",
+        "label": "Vorderasiatisches Museum VA.Bab.2789 (catalogue 124)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-D26113736570"
+        ],
+        "claims": [
+          {
+            "id": "CLM-85C6907FEF58",
+            "object_id": "IBI-D26113736570",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 124 (VA.Bab.2789), p. 149",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-C1608963B9AB",
+            "object_id": "IBI-D26113736570",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 13, p. 277",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-D3E99C7E7993",
+      "field_group": "language",
+      "evidence_sha256": "032fd8cf13c622a06292fbf48abcf3aee768003dca1f5867216c9c3eeee5f950",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-D3E99C7E7993 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-D3E99C7E7993",
+        "label": "Vorderasiatisches Museum VA.2500 (catalogue 68)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-D3E99C7E7993"
+        ],
+        "claims": [
+          {
+            "id": "CLM-03BC1C214A77",
+            "object_id": "IBI-D3E99C7E7993",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 68 (VA.2500), p. 115",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-1AED46960B19",
+            "object_id": "IBI-D3E99C7E7993",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 25, p. 342",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-DD0EB771B061",
+      "field_group": "language",
+      "evidence_sha256": "9f92a5fe2e21d0126619ae334c4bd860cc82a275d2c19c1253583bd02929f6d1",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-DD0EB771B061 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-DD0EB771B061",
+        "label": "Vorderasiatisches Museum VA.2104 (catalogue 1)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-DD0EB771B061"
+        ],
+        "claims": [
+          {
+            "id": "CLM-E971A55EB9EB",
+            "object_id": "IBI-DD0EB771B061",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 1 (VA.2104), p. 69",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-AD950B0750B7",
+            "object_id": "IBI-DD0EB771B061",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 1, p. 110",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-DE0859066564",
+      "field_group": "language",
+      "evidence_sha256": "d583d10863e893941e526bde1f6f094c00dd61a3e68fc60033162140911d583c",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-DE0859066564 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-DE0859066564",
+        "label": "Vorderasiatisches Museum VA.2442 (catalogue 38)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-DE0859066564"
+        ],
+        "claims": [
+          {
+            "id": "CLM-5037067A2159",
+            "object_id": "IBI-DE0859066564",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 38 (VA.2442), p. 96",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-08E63F78665D",
+            "object_id": "IBI-DE0859066564",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 9, p. 217",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-E18000741DAB",
+      "field_group": "language",
+      "evidence_sha256": "68d944626ce0feb029ec5355d9f501177f4bb774274de070a3e9b2036896451b",
+      "disposition": "compatible",
+      "rationale": "The stored language labels are broad, specific, or explicitly qualified descriptions that can coexist; a narrower label or noted feature does not negate the broader one. This does not choose a canonical language or independently verify the inscription.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-E18000741DAB / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004411838",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-E18000741DAB",
+        "label": "Waller 2022: HS 3030",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-E18000741DAB"
+        ],
+        "claims": [
+          {
+            "id": "CLM-0F7270AD3705",
+            "object_id": "IBI-E18000741DAB",
+            "source_id": "SRC-8A145FAA2EBB",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic and/or Hebrew",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Section heading and entry 17, p. 92",
+            "source_title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "source_url": "https://doi.org/10.1163/9789004411838"
+          },
+          {
+            "id": "CLM-89B571AD375A",
+            "object_id": "IBI-E18000741DAB",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 159, distribution table, HS 3030",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Jewish Babylonian Aramaic",
+            "Jewish Babylonian Aramaic and/or Hebrew"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-EAEC0988138C",
+      "field_group": "language",
+      "evidence_sha256": "45d3242cffa223e0309db95763d71c57cb2bda430388b37d5f44b9230e0714f8",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-EAEC0988138C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-EAEC0988138C",
+        "label": "Vorderasiatisches Museum VA.2444 (catalogue 40)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-EAEC0988138C"
+        ],
+        "claims": [
+          {
+            "id": "CLM-33C1953B1E6A",
+            "object_id": "IBI-EAEC0988138C",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 40 (VA.2444), p. 97",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-56A195BB50B1",
+            "object_id": "IBI-EAEC0988138C",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 7, p. 176",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-ED3F500BEC57",
+      "field_group": "language",
+      "evidence_sha256": "cc0d030dd3dd02877bfd8bec33480534bb559fb39ea23ebbfc095a0549806cf8",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-ED3F500BEC57 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-ED3F500BEC57",
+        "label": "Vorderasiatisches Museum VA.Bab.2768 (catalogue 105)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-ED3F500BEC57"
+        ],
+        "claims": [
+          {
+            "id": "CLM-0609B537D8E9",
+            "object_id": "IBI-ED3F500BEC57",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 105 (VA.Bab.2768), p. 139",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-1EE7CCC899A5",
+            "object_id": "IBI-ED3F500BEC57",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 15, p. 289",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-EDB0D53FD0F9",
+      "field_group": "language",
+      "evidence_sha256": "a75941c6047fa4e36ec3f270a1d798c102dab2501a9834605b763fd98f518e32",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-EDB0D53FD0F9 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-EDB0D53FD0F9",
+        "label": "Vorderasiatisches Museum VA.Bab.2837 (catalogue 148)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-EDB0D53FD0F9"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4B8E770A4C2B",
+            "object_id": "IBI-EDB0D53FD0F9",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 148 (VA.Bab.2837), p. 162",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-D9CB44646045",
+            "object_id": "IBI-EDB0D53FD0F9",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 18, p. 309",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-F094C5154A17",
+      "field_group": "language",
+      "evidence_sha256": "a2e779a82b0bce882f3a4d23931226965374fa8b31d848c84e83ec84ef61a432",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-F094C5154A17 / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-F094C5154A17",
+        "label": "Vorderasiatisches Museum VA.2487 (catalogue 57)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-F094C5154A17"
+        ],
+        "claims": [
+          {
+            "id": "CLM-B56C53EEDBF5",
+            "object_id": "IBI-F094C5154A17",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 57 (VA.2487), p. 108",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-2F35DD230230",
+            "object_id": "IBI-F094C5154A17",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 4, p. 155",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-F6520BBAE95D",
+      "field_group": "language",
+      "evidence_sha256": "fa98235e08e7fabdb37435aa6f6f5762708637c1f13898cd015d804beec8c3a9",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-F6520BBAE95D / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://www.manichaeism.de/wp-content/uploads/2021/11/Incantation-Bowls.pdf"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-F6520BBAE95D",
+        "label": "VA.Bab.2835",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-F6520BBAE95D"
+        ],
+        "claims": [
+          {
+            "id": "CLM-FA8B17427A7D",
+            "object_id": "IBI-F6520BBAE95D",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Syriac (Manichaean script).",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 146 (VA.Bab.2835), p. 161",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-923CBB9617EC",
+            "object_id": "IBI-F6520BBAE95D",
+            "source_id": "SRC-6D313A7AA389",
+            "field": "inscription_language",
+            "value_text": "Syriac",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 2, item 35",
+            "source_title": "Working List of Syriac ‘Manichaean’ Incantation Bowls",
+            "source_url": "https://www.manichaeism.de/wp-content/uploads/2021/11/Incantation-Bowls.pdf"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Syriac (Manichaean script)."
+          ],
+          "inscription_language": [
+            "Syriac"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-F755703CBB5C",
+      "field_group": "language",
+      "evidence_sha256": "881864976bd860cb44c874fbc985abe60f38612721d757729486517a4b7c0891",
+      "disposition": "compatible",
+      "rationale": "The catalogue or mixed script/language label and the inscription-language claim are separate source-attributed facets, and their stored wording is mutually consistent. This does not infer religious identity or independently verify the reading.",
+      "review_basis": "Explicit comparison of the complete current stored claim snapshot for IDENT-F755703CBB5C / language, including source attribution, certainty, and locators. No fresh primary-source or physical-object verification; claims remain unchanged and source-attributed.",
+      "supporting_references": [
+        "data/reports/claim_conflict_triage.md",
+        "https://doi.org/10.1163/9789004373686",
+        "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-F755703CBB5C",
+        "label": "Vorderasiatisches Museum VA.2436 (catalogue 32)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-F755703CBB5C"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6083813B2B0E",
+            "object_id": "IBI-F755703CBB5C",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "catalogue_dialect",
+            "value_text": "Jewish Babylonian Aramaic.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 32 (VA.2436), p. 93",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-3CC2A7617BD9",
+            "object_id": "IBI-F755703CBB5C",
+            "source_id": "SRC-53B93C8C8A0E",
+            "field": "inscription_language",
+            "value_text": "Jewish Babylonian Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "ACB 8, p. 208",
+            "source_title": "Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin)",
+            "source_url": "https://ore.exeter.ac.uk/articles/thesis/Edition_and_Analysis_of_Twenty-Five_Unpublished_Aramaic_Magic_Bowl_Texts_in_the_Collection_of_the_Vorderasiatisches_Museum_Berlin_/29841566"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_dialect": [
+            "Jewish Babylonian Aramaic."
+          ],
+          "inscription_language": [
+            "Jewish Babylonian Aramaic"
+          ]
+        }
+      }
+    }
+  ]
+}
