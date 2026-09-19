@@ -25,17 +25,27 @@ the dated reports under `data/reports/`.
 
 ---
 
-## 2026-09-19 — Codex — Evidence-backed scholarship scope tranche (in progress)
+## 2026-09-19 — Codex — Repository duplicate and scope tranche
 
 **Claimed:** SCHOL-006
-**Corpus:** unchanged pending source review — state digest `2edc733ab7c8`
-**Tests:** in progress
+**Corpus:** changed (five source corrections and three scope reviews) — state
+digest `93222ebdcd58`
+**Tests:** 261 Python tests passed; source-correction and scope manifests replayed
+with zero changes; JSON, generated reports and corpus-state validation passed
 
-- Reviewing currently unclassified scholarly works that have complete local
-  documents or sufficiently specific authoritative abstracts and contents.
-- Scope decisions will describe the work, not infer object readings or resolve
-  identities; ambiguous records will remain unclassified.
-- Claude's `site/` and public deployment work are explicitly out of scope.
+- Retained four duplicate OpenAlex, handle and direct-file discovery rows as
+  repository metadata with replacement pointers rather than deleting their
+  provenance or counting them as four extra scholarly works.
+- Corrected Brodie and Kersel's 2014 record from an article with a pluralized
+  title to the chapter “WikiLeaks, Text, and Archaeology” in *Archaeologies of
+  Text*, with its publisher and page range.
+- Classified Faraj 2016 as a single-object edition and Korsvoll 2020 plus
+  Brodie–Kersel 2014 as provenance-and-ethics studies from university repository
+  abstracts and the Trafficking Culture project description. The scholarship
+  index moves from 214 works / 98 scoped / 116 unclassified to 210 / 101 / 109.
+- No bowl, identity, reading, rights or public-release decision changed, and no
+  public-site file was touched. Next: reconcile the remaining exact-title
+  duplicate clusters or continue the authoritative-abstract scope backlog.
 
 ## 2026-09-19 — Claude — Build and deploy the bowlam.com landing page
 

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T17:20:00Z",
+  "method": "Compared exact-title source clusters with university repositories, the original article abstract, and the Trafficking Culture research-project bibliography. Canonical scholarly works remain articles or chapters; OpenAlex, duplicate handle and direct-file discovery rows are retained as repository metadata with explicit replacement pointers.",
+  "entries": [
+    {
+      "source_ids": [
+        "SRC-4C44E5816E4F",
+        "SRC-713E68ED9018",
+        "SRC-84615D159BAF"
+      ],
+      "authoritative_locator": "https://boa.unimib.it/handle/10281/200518",
+      "finding": "The University of Milano-Bicocca repository identifies one 2016 Quaderni di Studi Arabi article by A. Faraj, pages 207-220. Its abstract says the work edits, translates and comments on the inscription of one Di Castro Collection bowl. SRC-4C44E5816E4F is the canonical article; SRC-713E68ED9018 is a duplicate repository-import row for the same handle and SRC-84615D159BAF is its OpenAlex discovery row."
+    },
+    {
+      "source_ids": [
+        "SRC-59F609B5B2DF",
+        "SRC-03FD5BEF24F4"
+      ],
+      "authoritative_locator": "https://uia.brage.unit.no/uia-xmlui/handle/11250/3212070",
+      "supporting_file": "https://uia.brage.unit.no/uia-xmlui/bitstream/handle/11250/3212070/Article.pdf?isAllowed=y&sequence=4",
+      "finding": "The University of Agder repository record and indexed article file describe one Journal of Art Crime 23 article by Nils H. Korsvoll. Its abstract reports a June 2019 survey of online bowl sales, illicit trade, provenance language and price effects. SRC-59F609B5B2DF is the canonical article record; SRC-03FD5BEF24F4 is the direct repository-file discovery row for the same work."
+    },
+    {
+      "source_ids": [
+        "SRC-DAB39601BEAD",
+        "SRC-545AC7CDAC66"
+      ],
+      "authoritative_locator": "https://traffickingculture.org/publications/brodie-n-and-kersel-m-m-2014-wikileaks-text-and-archaeology-the-case-of-the-schoyen-incantation-bowls-in-rutz-m-t-and-kersel-m-m-eds-archaeology-of-text-archaeology-technology-a/",
+      "finding": "The Trafficking Culture project identifies Brodie and Kersel's work as a chapter titled ‘WikiLeaks, Text, and Archaeology: The Case of the Schøyen Incantation Bowls’ in Archaeologies of Text (Oxbow, 2014), pages 198-213. Its description centers missing provenance/provenience, authenticity, ownership history, scholarly ethics and legal consequences. SRC-DAB39601BEAD is the canonical chapter record; SRC-545AC7CDAC66 is the duplicate OpenAlex discovery row."
+    }
+  ],
+  "policy": "These corrections and scopes describe bibliographic identity and the works' organizing subjects only. They do not validate an object's authenticity or provenance, resolve bowl identities, certify readings, or grant permission to reproduce protected text or images."
+}
