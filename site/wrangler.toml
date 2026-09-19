@@ -1,0 +1,18 @@
+# Cloudflare Pages project for bowlam.com.
+#
+# Scope note: this config deploys `site/public` — the generated landing page —
+# and nothing else. The research console in `web/` is localhost-only and must
+# never be deployed (docs/project-rules.md §3). That is why the public artefact
+# lives in its own directory with its own config, rather than as a flag on the
+# console's build.
+
+name = "bowlam"
+compatibility_date = "2026-09-19"
+pages_build_output_dir = "public"
+
+# Create once, then paste the id Wrangler prints:
+#   npx wrangler d1 create bowlam-interest
+[[d1_databases]]
+binding = "DB"
+database_name = "bowlam-interest"
+database_id = "PASTE_DATABASE_ID_HERE"

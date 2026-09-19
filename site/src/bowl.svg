@@ -1,0 +1,19 @@
+<svg class="intro-bowl" viewBox="0 0 600 600" role="img" aria-labelledby="bowl-placeholder-title bowl-placeholder-desc">
+  <title id="bowl-placeholder-title">Illustrative bowl placeholder</title>
+  <desc id="bowl-placeholder-desc">Concentric clay-colored rings suggest the inside of a bowl. This is a drawing, not an artifact photograph or a transcription.</desc>
+  <defs>
+    <radialGradient id="bowl-clay" cx="43%" cy="36%" r="65%"><stop offset="0" stop-color="#cfab7d"/><stop offset=".65" stop-color="#b88150"/><stop offset=".89" stop-color="#e1c29b"/><stop offset=".95" stop-color="#9a673f"/><stop offset="1" stop-color="#d6b48c"/></radialGradient>
+    <radialGradient id="bowl-depth"><stop offset="0" stop-color="#705035" stop-opacity=".2"/><stop offset=".6" stop-color="#735335" stop-opacity="0"/><stop offset="1" stop-color="#735335" stop-opacity=".25"/></radialGradient>
+  </defs>
+  <circle cx="302" cy="315" r="239" fill="#332519" opacity=".08"/>
+  <circle cx="295" cy="294" r="238" fill="url(#bowl-clay)"/>
+  <circle cx="295" cy="294" r="214" fill="url(#bowl-depth)" stroke="#f0d6b2" stroke-width="2"/>
+  <g fill="none" stroke="#775238" stroke-width="1.7" opacity=".5">
+    <ellipse cx="295" cy="294" rx="190" ry="185"/><ellipse cx="295" cy="294" rx="170" ry="167"/>
+    <ellipse cx="295" cy="294" rx="150" ry="148"/><ellipse cx="295" cy="294" rx="129" ry="129"/>
+    <ellipse cx="295" cy="294" rx="109" ry="109"/><ellipse cx="295" cy="294" rx="89" ry="89"/>
+    <ellipse cx="295" cy="294" rx="69" ry="69"/><circle cx="295" cy="294" r="49"/>
+  </g>
+  <g fill="none" stroke="#f3d9b6" opacity=".28"><circle cx="295" cy="294" r="222"/><circle cx="295" cy="294" r="202"/><circle cx="295" cy="294" r="160"/></g>
+  <path d="M470 132l-13 44 9 14-15 32M117 454l34-21 12 4" fill="none" stroke="#785439" opacity=".35"/>
+</svg>

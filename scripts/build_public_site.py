@@ -1,0 +1,499 @@
+"""Build the static bowlam.com landing page.
+
+ACCESS-008 requires that the public page carry "no path from the page to the
+corpus". So the page is generated here, once, from a reviewed snapshot, and
+ships as flat HTML: no `/api/` call, no corpus query at view time, no link into
+the research console.
+
+What crosses the boundary is deliberately narrow. Only **aggregates** are baked
+in — four totals, the per-decade publication counts, and the snapshot digest
+that produced them. The per-identity array that the console's own introduction
+endpoint returns (`identities`, each row carrying an `identity_id`) is dropped
+here and never written to the output. The coverage field on the public page is
+drawn from the totals alone, so its circles carry no identifier and assert
+nothing about any individual bowl.
+
+Usage:
+
+    PYTHONPATH=src .venv/bin/python scripts/build_public_site.py
+
+Then review `site/public/index.html` and deploy it yourself. This script does
+not deploy: agents do not publish (docs/project-rules.md §3).
+"""
+
+from __future__ import annotations
+
+import argparse
+import html
+import json
+import random
+import shutil
+from datetime import datetime, timezone
+from pathlib import Path
+
+from bowl_index.web import CorpusCatalog
+
+ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_DB = ROOT / "data" / "private" / "ibi.sqlite3"
+SRC = ROOT / "site" / "src"
+OUT = ROOT / "site" / "public"
+FONTS = ROOT / "web" / "fonts"
+
+# Fonts the public page actually uses. The Hebrew subset is deliberately not
+# copied: the landing page publishes no bowl text, so it would never render.
+PUBLIC_FONTS = (
+    "frank-ruhl-libre-latin.woff2",
+    "frank-ruhl-libre-latin-ext.woff2",
+    "frank-ruhl-libre-OFL.txt",
+)
+
+COVERAGE_COPY = {
+    "text_edition": {
+        "kicker": "Reading the words",
+        "heading": "Read their words.",
+        "body": "Scholarly editions that read and translate these bowls are "
+                "recorded against the objects they describe.",
+        "label": "Text",
+        "legend": "has a text reference",
+    },
+    "provenance": {
+        "kicker": "Tracing a journey",
+        "heading": "Follow their journeys.",
+        "body": "Published accounts of where bowls were found, and the "
+                "collections they have passed through, are recorded as claims "
+                "attributed to their sources.",
+        "label": "Provenance",
+        "legend": "has provenance information",
+    },
+    "image": {
+        "kicker": "Seeing the object",
+        "heading": "Look closer.",
+        "body": "Photographs and drawings in publications and collection "
+                "catalogues are indexed as references, not reproduced here.",
+        "label": "Images",
+        "legend": "has an image reference",
+    },
+}
+
+
+def number(value: int) -> str:
+    return f"{value:,}"
+
+
+def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
+    """Static twin of renderChart() in web/home.js."""
+    current = current_year // 10 * 10
+    years = [row["decade"] for row in decades]
+    start, end = min(current, *years), max(current, *years)
+    by_decade = {row["decade"]: row for row in decades}
+    rows = []
+    for decade in range(start, end + 1, 10):
+        rows.append(by_decade.get(decade)
+                    or {"decade": decade, "indexed": 0, "incomplete": decade == current})
+
+    ceiling = max(5, -(-max(1, *[row["indexed"] for row in rows]) // 5) * 5)
+    width, left, right, top, baseline = 1000, 44, 16, 28, 278
+    step = (width - left - right) / len(rows)
+    bar_width = min(42, step * 0.65)
+
+    grid = "".join(
+        f'<line x1="{left}" y1="{baseline - (baseline - top) * i / 5:.1f}" x2="984" '
+        f'y2="{baseline - (baseline - top) * i / 5:.1f}" stroke="#c9bfad" stroke-width=".7"/>'
+        f'<text x="31" y="{baseline - (baseline - top) * i / 5 + 4:.1f}" text-anchor="end">'
+        f'{ceiling * i // 5}</text>'
+        for i in range(6)
+    )
+
+    label_every = max(1, -(-len(rows) // 9))
+    bars = []
+    for index, row in enumerate(rows):
+        x = left + step * index + step / 2
+        height = row["indexed"] / ceiling * (baseline - top)
+        incomplete = row["incomplete"]
+        show_label = index % label_every == 0 or index == len(rows) - 1
+        title = (f'{row["decade"]}s: {row["indexed"]} indexed publications'
+                 + ("; current decade, incomplete" if incomplete else ""))
+        value_text = (f'<text x="{x:.1f}" y="{baseline - height - 9:.1f}" text-anchor="middle">'
+                      f'{row["indexed"]}</text>') if row["indexed"] else ""
+        axis_text = (f'<text x="{x:.1f}" y="307" text-anchor="middle">{row["decade"]}'
+                     f'{"*" if incomplete else ""}</text>') if show_label else ""
+        bars.append(
+            f'<g><title>{html.escape(title)}</title>'
+            f'<rect class="intro-bar intro-bar-{index + 1}'
+            f'{" intro-bar-current" if incomplete else ""}" x="{x - bar_width / 2:.1f}" '
+            f'y="{baseline - height:.1f}" width="{bar_width:.1f}" height="{height:.1f}"/>'
+            f'{value_text}{axis_text}</g>'
+        )
+
+    desc = "; ".join(f'{row["decade"]}s: {row["indexed"]}' for row in rows)
+    svg = (
+        '<svg class="intro-chart-svg" viewBox="0 0 1000 330" role="img" '
+        'aria-labelledby="intro-chart-title intro-chart-desc">'
+        '<title id="intro-chart-title">Scholarly publications indexed, by decade</title>'
+        f'<desc id="intro-chart-desc">{html.escape(desc)}. The current decade is incomplete. '
+        'Exact values are also available in the table.</desc>'
+        '<defs><pattern id="intro-current-decade" width="7" height="7" patternUnits="userSpaceOnUse">'
+        '<rect width="7" height="7" fill="#5d4939"/>'
+        '<path d="M-1 1l8 8M5-1l3 3" stroke="#d9954f" stroke-width="2"/></pattern></defs>'
+        f'{grid}{"".join(bars)}</svg>'
+    )
+    table = (
+        '<table><caption>Indexed publications; current decade marked incomplete</caption>'
+        '<thead><tr><th scope="col">Decade</th><th scope="col">Publications</th></tr></thead><tbody>'
+        + "".join(
+            f'<tr><th scope="row">{row["decade"]}s'
+            f'{" (incomplete)" if row["incomplete"] else ""}</th>'
+            f'<td>{number(row["indexed"])}</td></tr>' for row in rows)
+        + "</tbody></table>"
+    )
+    return svg, table, str(current)
+
+
+def build_field(total: int, coverage: dict[str, int]) -> tuple[str, str]:
+    """Aggregate coverage field.
+
+    The console draws one circle per identity from real per-bowl flags. This
+    page has no per-bowl data by design, so it draws `total` circles and marks
+    the correct *number* for each category, choosing which ones from a fixed
+    seed. The proportion is exact; the assignment is illustrative, and the
+    caption on the page says so rather than implying per-bowl truth.
+    """
+    cols = max(1, int((total * 1.5) ** 0.5 + 0.999))
+    rows_count = -(-total // cols)
+    width, height = cols * 13 + 16, max(60, rows_count * 13 + 16)
+
+    circles = "".join(
+        f'<circle cx="{14 + index % cols * 13}" cy="{14 + index // cols * 13}" '
+        f'r="4.2" class="intro-circle" data-i="{index}"/>'
+        for index in range(total)
+    )
+    field = (f'<svg id="intro-circle-field" viewBox="0 0 {width} {height}" role="img" '
+             f'aria-labelledby="intro-field-title intro-field-desc">'
+             f'<title id="intro-field-title">Bowl documentation coverage</title>'
+             f'<desc id="intro-field-desc">{number(total)} circles, one for each bowl in the '
+             f'index. Selecting a category highlights the number of bowls that have that kind '
+             f'of reference.</desc><g aria-hidden="true">{circles}</g></svg>')
+
+    # Deterministic membership so a rebuild with unchanged counts is a no-op diff.
+    selections = {"all": list(range(total))}
+    for field_name, count in coverage.items():
+        picker = random.Random(f"bowlam:{field_name}:{total}:{count}")
+        selections[field_name] = sorted(picker.sample(range(total), min(count, total)))
+    return field, json.dumps(selections, separators=(",", ":"))
+
+
+def render(payload: dict, snapshot_id: str, built_at: str) -> str:
+    total = payload["identity_count"]
+    records = payload["source_record_count"]
+    coverage = payload["coverage"]
+    chart_svg, chart_table, current = build_chart(
+        payload["scholarship"]["decades"], payload["snapshot"]["current_year"])
+    field_svg, selections = build_field(total, coverage)
+    undated = payload["scholarship"]["undated_count"]
+
+    buttons = "".join(
+        f'<button type="button" data-coverage="{key}" aria-pressed="false">'
+        f'{COVERAGE_COPY[key]["label"]}</button>' for key in COVERAGE_COPY
+    )
+    steps = "".join(
+        f'<article class="intro-coverage-step">'
+        f'<span class="intro-kicker">{COVERAGE_COPY[key]["kicker"]}</span>'
+        f'<h3>{COVERAGE_COPY[key]["heading"]}</h3>'
+        f'<p class="intro-coverage-number">{number(coverage[key])}'
+        f'<span> / {number(total)}</span>'
+        f'<small>{100 * coverage[key] / total:.1f}% of bowls</small></p>'
+        f'<p>{COVERAGE_COPY[key]["body"]}</p></article>'
+        for key in COVERAGE_COPY
+    )
+    legends = json.dumps({key: COVERAGE_COPY[key]["legend"] for key in COVERAGE_COPY},
+                         separators=(",", ":"))
+
+    hero_svg = (SRC / "bowl.svg").read_text(encoding="utf-8").strip()
+    map_svg = (SRC / "map.svg").read_text(encoding="utf-8").strip()
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bowlam · The Incantation Bowl Index</title>
+<meta name="description" content="An index of Mesopotamian incantation bowls: what is known about them, what has been published about them, and what this project deliberately does not republish.">
+<meta property="og:title" content="Bowlam · The Incantation Bowl Index">
+<meta property="og:description" content="An index of Mesopotamian incantation bowls — {number(total)} bowls drawn from {number(records)} source records.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<!-- Generated by scripts/build_public_site.py from corpus snapshot
+     {snapshot_id[:16]} at {built_at}. Aggregate counts only; no per-object
+     data, no corpus endpoint. Do not hand-edit — rebuild instead. -->
+<link rel="stylesheet" href="public.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="/" aria-label="Bowlam home">
+    <span class="wordmark-seal" aria-hidden="true">◎</span>
+    <span><strong>Bowlam</strong><small>The Incantation Bowl Index</small></span>
+  </a>
+</header>
+
+<main id="main" tabindex="-1">
+<div class="intro-wrap">
+
+  <section class="intro-hero intro-chapter" aria-labelledby="home-title">
+    <div class="intro-hero-copy">
+      <h1 id="home-title">Small vessels.<br>Human hopes.<br><em>Enduring questions.</em></h1>
+      <p class="intro-lead">Ancient spells. Everyday fears. Discover the lives hidden in incantation bowls.</p>
+      <button class="intro-scroll" type="button" data-scroll="intro-origins">Discover their story <span aria-hidden="true">↓</span></button>
+    </div>
+    <figure class="intro-bowl-figure">
+      {hero_svg}
+      <figcaption><span class="intro-caption-rule"></span>An artist’s impression</figcaption>
+    </figure>
+    <div class="intro-hero-foot"><span>Clay / Language / Memory</span><span>Spells that outlived their makers</span></div>
+  </section>
+
+  <section id="intro-origins" class="intro-chapter intro-origins" aria-labelledby="origins-title">
+    <div class="intro-prose">
+      <h2 id="origins-title">Protection,<br>close to home.</h2>
+      <p>A spell against illness. A shield for a family. Written on ordinary clay, these words reveal what people feared—and what they hoped to keep safe.</p>
+      <p>Originating in Mesopotamia, in present-day Iraq and neighboring Iran, most bowls were made in the sixth and seventh centuries CE, in late antiquity—a world that changed with the rise of Islam.</p>
+    </div>
+    <figure class="intro-map-figure">
+      {map_svg}
+      <figcaption><span class="intro-region-key"></span> Approximate region of bowl finds · modern borders omitted. <a href="https://www.csmc.uni-hamburg.de/publications/aom/026-en.html" target="_blank" rel="noreferrer">About the region ↗</a></figcaption>
+    </figure>
+  </section>
+
+  <section class="intro-chapter intro-rediscovery" aria-labelledby="rediscovery-title">
+    <div class="intro-section-heading"><h2 id="rediscovery-title">A thousand years later,<br><em>the bowls resurface.</em></h2></div>
+    <div class="intro-milestones">
+      <article><span class="intro-date">1850</span><h3>A discovery at Nippur</h3><p>Austen Henry Layard uncovers an inscribed bowl at Nippur. Ancient spells return to view.</p></article>
+      <article><span class="intro-date">1853</span><h3>The first texts in print</h3><p>Thomas Ellis publishes bowl texts in Layard’s book. The work of reading their spells begins.</p></article>
+    </div>
+    <details class="intro-sources"><summary>Sources for the story</summary><p><a href="https://scholars.depaul.edu/ws/portalfiles/portal/39957201/fulltext.pdf" target="_blank" rel="noreferrer">Brodie and Kersel, “WikiLeaks, Text, and Archaeology,” in Archaeologies of Text (2014), p. 200</a> dates Layard’s finds at Babylon and Nippur to 1850. Earlier bowls reached the British Museum in 1841.</p><p><a href="https://www.britishmuseum.org/collection/object/W_1841-0726-90_1" target="_blank" rel="noreferrer">British Museum: Ellis’s 1853 publication</a>, in Layard, pp. 521–522.</p></details>
+  </section>
+
+  <section class="intro-chapter intro-scholarship" aria-labelledby="scholarship-title">
+    <div class="intro-section-heading"><h2 id="scholarship-title">More pages.<br>More questions.</h2><p>Each generation finds more to uncover.</p></div>
+    <figure class="intro-chart-figure">
+      <div class="intro-chart-heading"><strong>Scholarly publications indexed, by decade</strong><span>Publications / decade</span></div>
+      <div id="intro-chart" tabindex="0" role="region" aria-label="Publication chart, scroll horizontally on narrow screens">{chart_svg}</div>
+      <figcaption>Publications in the index, grouped by decade. * {current}s: current decade, incomplete. {number(undated)} undated works excluded. Dated scholarly works in this index; not a complete census of scholarship.</figcaption>
+      <p class="intro-chart-hint">Scroll across the chart, or open the table below for every decade.</p>
+      <details class="intro-chart-table"><summary>Read the chart as a table</summary><div id="intro-chart-data">{chart_table}</div></details>
+    </figure>
+  </section>
+
+  <section class="intro-chapter intro-coverage" aria-labelledby="coverage-title">
+    <div class="intro-section-heading"><h2 id="coverage-title">A world of bowls.<br><em>One place to explore.</em></h2><p>Bowlam brings together the bowls, their words, and their journeys. Our aim: the most complete index possible.</p></div>
+    <div class="intro-coverage-layout">
+      <div class="intro-field-panel">
+        <div class="intro-field-heading"><strong>{number(total)}</strong><span>bowls in the index</span></div>
+        <div class="intro-controls" role="group" aria-label="Highlight recorded evidence">
+          <button type="button" data-coverage="all" aria-pressed="true">All bowls</button>{buttons}
+        </div>
+        {field_svg}
+        <p id="intro-selection" class="intro-selection" role="status">{number(total)} bowls in the index.</p>
+        <p class="intro-field-legend"><span class="intro-dot"></span> Recorded <span class="intro-dot intro-dot-muted"></span> Not recorded in this index</p>
+      </div>
+      <div class="intro-coverage-steps">
+        <article class="intro-coverage-step">
+          <span class="intro-kicker">The collection</span>
+          <h3>Meet the collection.</h3>
+          <p>The index brings together {number(total)} bowls from {number(records)} source records — each one an appearance of a bowl in a publication, a catalogue or a collection, linked to the object it appears to describe.</p>
+          <p>The collection grows as research continues.</p>
+        </article>
+        {steps}
+      </div>
+    </div>
+    <p class="intro-coverage-note">Each circle stands for one bowl in the index. Highlighting shows how many bowls carry each kind of reference — some carry all three. Which circles light up is illustrative: this page publishes totals, not records for individual bowls.</p>
+  </section>
+
+  <section class="intro-chapter intro-withheld" aria-labelledby="withheld-title">
+    <div class="intro-section-heading">
+      <h2 id="withheld-title">What we index,<br><em>and what we hold back.</em></h2>
+      <p>An index of who said what about which bowl is useful only if it is honest about its own limits.</p>
+    </div>
+    <div class="intro-withheld-grid">
+      <article>
+        <h3>A bowl is not a catalogue entry.</h3>
+        <p>The same bowl can appear in several publications under several numbers. The index keeps those appearances separate and records how confident it is that they describe one object, rather than silently merging them.</p>
+      </article>
+      <article>
+        <h3>Every statement has a source.</h3>
+        <p>Dates, findspots, measurements and readings are recorded as claims attributed to a publication, with a page or catalogue locator. Where sources disagree, both readings are kept.</p>
+      </article>
+      <article>
+        <h3>We do not republish other people’s work.</h3>
+        <p>Modern transcriptions, translations, commentary and photographs belong to the scholars, publishers and collections that made them. The index records that they exist and where to find them. It does not reproduce them.</p>
+      </article>
+      <article>
+        <h3>Provenance is reported, not settled.</h3>
+        <p>Many bowls left Iraq and Iran in circumstances that are contested or undocumented. Recording what a source reports about an object’s history is not a statement that its ownership, export or authenticity is established.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="intro-chapter intro-interest" aria-labelledby="interest-title">
+    <div class="intro-section-heading">
+      <h2 id="interest-title">The index is still being built.</h2>
+      <p>Leave an address and we will write when there is something worth reading — new coverage, a public release, or access for researchers.</p>
+    </div>
+    <form class="interest-form" id="interest-form" method="post" action="/api/interest" novalidate>
+      <label for="interest-email">Email address</label>
+      <input id="interest-email" name="email" type="email" required autocomplete="email"
+             placeholder="you@example.org" inputmode="email" spellcheck="false">
+      <div class="interest-hp" aria-hidden="true">
+        <label for="interest-website">Leave this field empty</label>
+        <input id="interest-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit">Keep me posted</button>
+    </form>
+    <p class="interest-status" id="interest-status" role="status" aria-live="polite"></p>
+    <p class="interest-note">We use your address only to send occasional updates about this project. No third-party tracking, no list sharing, and every message carries a one-click unsubscribe.</p>
+  </section>
+
+</div>
+</main>
+
+<footer class="intro-footer">
+  <p>Bowlam · The Incantation Bowl Index</p>
+  <p>Counts from the research snapshot of {built_at}.</p>
+  <a href="#main">Back to the beginning ↑</a>
+</footer>
+
+<script>
+(function () {{
+  "use strict";
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  document.querySelectorAll("[data-scroll]").forEach(function (button) {{
+    button.addEventListener("click", function () {{
+      var target = document.getElementById(button.dataset.scroll);
+      if (target) target.scrollIntoView({{behavior: reduced.matches ? "auto" : "smooth", block: "start"}});
+    }});
+  }});
+
+  // Coverage field. Every number here was baked in at build time; nothing is fetched.
+  var SELECTIONS = {selections};
+  var LEGENDS = {legends};
+  var TOTAL = {total};
+  var circles = Array.prototype.slice.call(document.querySelectorAll(".intro-circle"));
+  var status = document.getElementById("intro-selection");
+
+  function setCoverage(field) {{
+    var chosen = SELECTIONS[field];
+    var marked = new Uint8Array(TOTAL);
+    for (var i = 0; i < chosen.length; i++) marked[chosen[i]] = 1;
+    circles.forEach(function (circle, index) {{
+      circle.classList.toggle("is-softened", field !== "all" && !marked[index]);
+    }});
+    document.querySelectorAll("[data-coverage]").forEach(function (button) {{
+      button.setAttribute("aria-pressed", String(button.dataset.coverage === field));
+    }});
+    if (!status) return;
+    status.textContent = field === "all"
+      ? chosen.length.toLocaleString() + " bowls in the index."
+      : chosen.length.toLocaleString() + " of " + TOTAL.toLocaleString() + " ("
+        + (100 * chosen.length / TOTAL).toFixed(1) + "%) " + LEGENDS[field] + ".";
+  }}
+
+  document.querySelectorAll("[data-coverage]").forEach(function (button) {{
+    button.addEventListener("click", function () {{ setCoverage(button.dataset.coverage); }});
+  }});
+
+  if (!reduced.matches && "IntersectionObserver" in window) {{
+    var reveal = new IntersectionObserver(function (entries) {{
+      entries.forEach(function (entry) {{
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in-view", "is-revealing");
+        reveal.unobserve(entry.target);
+      }});
+    }}, {{threshold: 0.25}});
+    document.querySelectorAll(".intro-milestones, .intro-map, .intro-chart-svg, .intro-section-heading")
+      .forEach(function (node) {{ reveal.observe(node); }});
+  }}
+
+  // Interest capture. Posts to the Pages Function in site/functions/api/interest.js.
+  var form = document.getElementById("interest-form");
+  var note = document.getElementById("interest-status");
+  if (form) form.addEventListener("submit", function (event) {{
+    event.preventDefault();
+    var button = form.querySelector("button");
+    var email = form.querySelector("#interest-email");
+    note.className = "interest-status";
+    if (!email.value || !email.checkValidity()) {{
+      note.classList.add("is-error");
+      note.textContent = "Please enter an email address we can reach you at.";
+      email.focus();
+      return;
+    }}
+    button.disabled = true;
+    button.textContent = "Sending…";
+    fetch(form.action, {{
+      method: "POST",
+      headers: {{"Content-Type": "application/json"}},
+      body: JSON.stringify({{
+        email: email.value.trim(),
+        website: form.querySelector("#interest-website").value
+      }})
+    }}).then(function (response) {{
+      return response.json().then(function (body) {{ return {{ok: response.ok, body: body}}; }});
+    }}).then(function (result) {{
+      if (!result.ok) throw new Error(result.body && result.body.error || "Something went wrong.");
+      form.reset();
+      note.classList.add("is-ok");
+      note.textContent = "Thank you — we will be in touch when there is news.";
+      button.textContent = "Keep me posted";
+    }}).catch(function (error) {{
+      note.classList.add("is-error");
+      note.textContent = error.message || "We could not save that address. Please try again.";
+      button.textContent = "Keep me posted";
+    }}).then(function () {{
+      button.disabled = false;
+    }});
+  }});
+}})();
+</script>
+</body>
+</html>
+"""
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--db", default=str(DEFAULT_DB), help="corpus database")
+    args = parser.parse_args()
+
+    payload = CorpusCatalog(args.db).introduction()
+    snapshot_id = payload["snapshot"]["id"]
+    built_at = datetime.now(timezone.utc).strftime("%-d %B %Y")
+
+    # Belt and braces: the per-identity array must not reach the output.
+    payload.pop("identities", None)
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "index.html").write_text(render(payload, snapshot_id, built_at), encoding="utf-8")
+    for name in ("public.css", "_headers", "robots.txt"):
+        shutil.copyfile(SRC / name, OUT / name)
+
+    (OUT / "fonts").mkdir(exist_ok=True)
+    for name in PUBLIC_FONTS:
+        shutil.copyfile(FONTS / name, OUT / "fonts" / name)
+
+    rendered = (OUT / "index.html").read_text(encoding="utf-8")
+    for leak in ("IDENT-", "/api/introduction", "#/explore", "#/search", "127.0.0.1"):
+        if leak in rendered:
+            raise SystemExit(f"refusing to write: output contains {leak!r}")
+
+    print(f"built {OUT / 'index.html'}")
+    print(f"  snapshot {snapshot_id[:16]}  ·  {number(payload['identity_count'])} bowls  ·  "
+          f"{len(rendered) // 1024} KB")
+    print("  aggregates only; no per-identity rows, no corpus endpoint")
+    print("\nNot deployed. Review the page, then deploy it yourself:")
+    print("  cd site && npx wrangler pages deploy")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

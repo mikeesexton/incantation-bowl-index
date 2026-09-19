@@ -170,7 +170,7 @@
     } catch {
       if (version !== request) return;
       find("#intro-data-status").classList.add("is-error");
-      find("#intro-data-status").innerHTML = `The introductory counts could not be loaded. <a href="#/search">Browse the database</a> or <button type="button" id="intro-retry">Try again</button>.`;
+      find("#intro-data-status").innerHTML = `The introductory counts could not be loaded. <a href="#/explore">Browse the database</a> or <button type="button" id="intro-retry">Try again</button>.`;
       find("#intro-retry").addEventListener("click", load);
       if (!snapshot) {
         find("#intro-chart").textContent = "Publication history is temporarily unavailable.";
