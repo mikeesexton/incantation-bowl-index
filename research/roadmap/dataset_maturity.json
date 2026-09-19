@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-09-19T19:39:51+00:00",
+ "updated_at": "2026-09-19T22:54:58+00:00",
  "portfolio_summary": {
   "current_phase": "Source-rich research corpus with one completed reference cohort; active reconciliation and enrichment; not release-ready",
   "strengths": [
@@ -18,7 +18,7 @@
   ],
   "blockers": [
    "Publication links remain incomplete: 739 of 1,652 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.",
-   "Identity and claim quality is not yet measured corpus-wide: 432 field-difference instances are untriaged, including 285 earlier reviews now stale against current evidence, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
+   "Identity and claim quality is not yet measured corpus-wide: 595 field-difference instances require current review, including 288 earlier reviews now stale against current evidence, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
    "Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 53 identities have a translation. Four Wohlstein translations are now scan-checked and a fifth has a checked German reading with embedded Hebrew strings still awaiting specialist review; all five remain withheld pending human publication review. Protected editions are intentionally indexed without copying their text.",
    "Release rights are unreviewed: all 327 media rows now have current fail-closed ledger holds, but zero have completed rights decisions and zero are approved for reuse. The first two-row institutional-policy evidence pilot narrowed contact paths without establishing permission.",
    "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
@@ -670,8 +670,8 @@
      "title": "Revalidate the historical rule-assisted conflict triage",
      "status": "in_progress",
      "owner": "Research",
-     "done_when": "All 313 reopened instances have source-level decisions on their exact current evidence, with append-only review history and explicit uncertainty preserved.",
-     "evidence": "Current full-vocabulary queue: 484 field-difference instances, 52 with current decisions and 432 needing review; 285 of those have earlier reviews requiring revalidation. The Gordon batch deliberately retains source differences such as the 1937 Ashmolean(?) attribution for no. 91731 beside the current British Museum record, so the queue increase is evidence preserved rather than silent data loss. Use coherent source batches and exact current evidence. Museum concordance confirmation does not adjudicate metadata."
+     "done_when": "Every generated claim-field difference has a source-level decision on its exact current evidence, with append-only review history and explicit uncertainty preserved.",
+     "evidence": "Current full-vocabulary queue: 644 field-difference instances, 49 with current decisions and 595 requiring review; 288 of those have earlier reviews requiring revalidation and 307 have no historical review. A 19 September structural audit estimates that about 590 can be adjudicated by Codex from stored evidence in coherent, exact-evidence batches, while about five clearly require fresh source research. The 13 current substantive rows remain visible as two scholarly disagreements, two source inconsistencies and nine unresolved cases. See research/reviews/user_conflict_decision_queue_2026-09-19.md. Compatibility never selects a canonical value or validates the underlying fact."
     },
     {
      "id": "QA-003",
@@ -794,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-19",
+   "note": "Re-audited QA-002 against the live full-vocabulary comparison model and corrected the stale roadmap snapshot. The corpus now has 644 claim-field differences: 49 current decisions and 595 requiring current review, comprising 288 stale historical reviews and 307 never-reviewed instances. A structural pass estimates that about 590 of the pending rows are stored-evidence compatibility checks suitable for bounded Codex batches and about five clearly need fresh source research; none should be decided by unsupported user preference. Added a six-item user decision packet covering delegation, research priority and stopping policies. No claim, disposition, identity, canonical value, right or public-release decision changed."
+  },
   {
    "date": "2026-09-19",
    "note": "Continued SCHOL-006 with three citation repairs and three evidence-backed thematic-study reviews. DOI-deposited abstracts identify Amsler 2023 as a materiality, affect and household-medicine study and Lanfer 2015 as an analysis of three kinds of biblical citation and their textual and social implications. Shaked 2011 was read in full: it compares several Schøyen bowls to investigate formula composition, variation, memory and transmission rather than functioning as a corpus edition. Crossref and Brill metadata repaired the journal, volume, issue and page data for Amsler and Lanfer and the containing book, publisher and pages for Shaked. Scope coverage rises from 122 to 125 of 206 works and the unclassified backlog falls from 84 to 81. No object, identity, reading, authenticity, rights approval or public-release decision changed."
@@ -1357,7 +1361,7 @@
   "SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.",
   "SCHOL-006: classify the remaining 81 unclassified works by scope. Forty scholarship works have a source-linked held document and 125 works now have a derived or inspected scope. The productive seam is pre-1930 public-domain scholarship whose complete text is openly readable on a robots-permitted host, DOI-deposited abstracts that state a work's method or argument, and the field's major editions, where a publisher or institutional record states how many objects are edited. Persée and Gallica disallow this project's user agent, so works surviving only there need another route; continue to retain duplicate discovery records as metadata and to leave genuinely ambiguous works unclassified rather than inferring scope from a title.",
   "TEXT-001 follow-through: seventeen complete corpus, catalogue, or edition units are now enumerated. Review the 376 separate candidates and exact-identifier overlaps in ordinary source batches; do not merge them automatically or import protected readings. Burberry's twenty-five ACB entries are fully attached to exact Berlin catalogue identities. Gordon's Harvard 8669, seven numbered Istanbul survey bowls, National Museum 207962, Berlin entry 168, Ellis's no. 7 fragment group, and Stübe's two unnamed Pahlavi bowls remain explicitly unresolved rather than falsely merged.",
-  "QA-002 / CONC-005: review the 432 untriaged field-difference instances in coherent source batches, including 285 earlier reviews now stale against current evidence. Preserve reported values and uncertainty; claim-vocabulary coverage is complete.",
+  "QA-002 / CONC-005: review the 595 claim-field differences requiring current evidence review in coherent source batches, including 288 earlier reviews now stale and 307 never reviewed. A structural audit estimates that about 590 are agent-adjudicable compatibility checks and about five need fresh source research; route only genuine policy or irreducible scholarly choices to Mike. Preserve every reported value and uncertainty; claim-vocabulary coverage is complete.",
   "META-008: extend the Mandaic denominator now that Pognon's thirty Khouabir bowls are enumerated. Reconcile them to later editions and museum identities, then add Yamauchi 1967 if the pending request succeeds. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.",
   "META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.",
   "META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.",

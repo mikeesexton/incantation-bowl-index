@@ -25,6 +25,25 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Conflict-review queue design
+
+**Claimed:** QA-002 / CONC-005
+**Corpus:** unchanged — state digest `f6a1201ec043`
+**Tests:** 264 passed; state check matched; `git diff --check` passed
+
+- Re-audited the live full-vocabulary queue: 644 claim-field differences now
+  comprise 49 current decisions and 595 requiring review, including 288 stale
+  historical reviews and 307 never-reviewed instances. Corrected the roadmap's
+  older 432/285 snapshot and regenerated its Markdown and conflict report.
+- Prepared `research/reviews/user_conflict_decision_queue_2026-09-19.md` with
+  six bounded decisions and a provisional route: about 590 pending instances
+  are agent-reviewable from stored evidence, while about five clearly need
+  fresh source research. None should be settled by unsupported user preference.
+- Applied no claim, conflict disposition, identity, canonical value, right, or
+  public-release decision. Next: after Mike chooses D1, process an exact-evidence
+  compatibility batch or preview it for review; keep the five source-dependent
+  outliers and 13 current substantive cases out of autonomous resolution.
+
 ## 2026-09-19 — Codex — Scholarship scope continuation II
 
 **Claimed:** SCHOL-006
