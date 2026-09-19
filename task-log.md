@@ -146,9 +146,11 @@ local D1 through `wrangler pages dev`.
   logging a console error on every load. Traced to the **zone**, not the Pages
   project: the beacon appears on bowlam.com and not on bowlam.pages.dev, so it
   was switched on by automatic setup when the domain moved onto Cloudflare.
-  Turning it off is therefore a zone setting. Blocking is the right outcome
-  either way — the page promises no third-party tracking — but the console
-  noise should go.
+  Turning it off is therefore a zone setting. Mike disabled it via Claude in
+  Chrome; verified in a fresh tab — one script, no beacon, no console output.
+  Worth remembering when reading a console: a CSP-blocked script still leaves
+  its element in the DOM, so absence of the element is the real signal, and
+  the pane's console accumulates across navigations.
 - Next session: privacy notice and an unsubscribe destination. The D1 id and
   remote schema are done.
   ACCESS-008 stays open in the roadmap; `research/roadmap/dataset_maturity.json`
