@@ -20,7 +20,7 @@
    "Publication links remain incomplete: 778 of 1,701 distinct identities carry a publication reference, including 636 of 1,110 probable or confirmed identities. All 32 current keys resolve, but the 80% TEXT-001 gate is not yet met.",
    "Identity and claim quality is not yet measured corpus-wide: 432 field-difference instances are untriaged, including 285 earlier reviews now stale against current evidence, findspot claims are not yet consistently graded by evidence basis, and a reproducible stratified identity audit has not begun.",
    "Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 48 identities have a translation. The new protected editions are intentionally indexed without copying their text.",
-   "Release rights are unreviewed: 327 media rows are present, zero have completed rights decisions and zero are approved for reuse; two newly introduced rows still need initial ledger holds.",
+   "Release rights are unreviewed: all 327 media rows now have current fail-closed ledger holds, but zero have completed rights decisions and zero are approved for reuse. The first two-row institutional-policy evidence pilot narrowed contact paths without establishing permission.",
    "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
    "Acquisition completeness is not yet measured corpus-wide: 50 of 862 sources have linked captures, 39 with PDFs and eleven with only non-PDF captures. All 50 captured sources are now assessed through 51 append-only holding rows: 48 sources have a complete document, Naveh-Shaked 1993 remains correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.",
    "Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run."
@@ -565,7 +565,7 @@
      "status": "done",
      "owner": "Research",
      "done_when": "Every media row can record creator/owner, source URL, rights statement, license, jurisdiction/date notes, private-capture status, public-reuse decision, and reviewer.",
-     "evidence": "Implemented immutable media-rights ledger, exact-evidence review batches and stale/revoked decision handling. The original 325 media have explicit initial needs_review holds; two later rows still need initial holds. None has a completed rights assessment. Workflow in docs/evidence_review_and_release.md."
+     "evidence": "Implemented immutable media-rights ledger, exact-evidence review batches and stale/revoked decision handling. The original 325 media and a two-row 18 September addendum now give all 327 records explicit current needs_review holds. None has a completed rights assessment. Workflow in docs/evidence_review_and_release.md."
     },
     {
      "id": "RIGHTS-002",
@@ -573,7 +573,7 @@
      "status": "in_progress",
      "owner": "Human review",
      "done_when": "One hundred percent of media records have a reviewed rights disposition; unknown remains permissible only with an explicit follow-up task.",
-     "evidence": "325/327 media have initial ledger rows; two need initial holds. 0/327 have completed rights assessments and 0 are approved for public reuse. Existing non-unknown copyright labels do not count as decisions."
+     "evidence": "327/327 media now have current ledger rows; 0/327 have completed rights assessments and 0 are approved for public reuse. The first policy-evidence pilot visually checked the Ford 2023 Davidovitz 41 figure and Levene 1999 M163 plates, recorded the volume/journal notices and current official institutional metadata or terms, and narrowed the permission-contact path without inferring ownership or approval. Existing non-unknown copyright labels do not count as decisions."
     },
     {
      "id": "RIGHTS-003",
@@ -794,6 +794,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-18",
+   "note": "Completed the current RIGHTS-002 inventory tranche. Added evidence-bound, replay-safe needs_review holds for the Ford 2023 Davidovitz 41 photograph and Levene 1999 M163 plate set, bringing current ledger coverage from 325/327 to 327/327 while completed assessments and approvals correctly remain 0/327. Began institutional-policy evidence collection: visual review found no photographer or license on Ford's figure page, a volume-wide rights reservation to the Mandel Institute and article authors, Levene's statement that Shlomo Moussaieff supplied the photographs, plate captions naming only the collection, and Mohr Siebeck journal copyright; current official HUJI terms and Southampton repository metadata also provide no item-specific reuse grant. No image was approved or published."
+  },
   {
    "date": "2026-09-18",
    "note": "Completed RIGHTS-004 by separating a public source-page pointer from the project's private captured copy. The projection now permits the source URL in the dedicated access-link field even when a private capture or an unapproved media row names the same page, while capture storage paths and media emission remain fail-closed. Live validation restores the five originally identified HTML pages plus three later public PDF links: seven text-pointer rows and 63 edition-pointer rows across eight source URLs. Protected text is unchanged and all 327 media remain withheld."
@@ -1284,7 +1288,7 @@
   ]
  },
  "priorities": [
-  "RIGHTS-002 / ACCESS-003: add initial ledger holds for the two newest media rows, then begin evidence collection by shared institutional policy. Public source-page pointers are repaired; retain the existing fail-closed treatment for protected texts, capture storage and all unapproved media.",
+  "RIGHTS-002 / ACCESS-003: continue evidence collection in shared institutional-policy batches now that all 327 media have current ledger holds. The first Ford/Levene pilot narrowed contact paths but made no rights decision; retain fail-closed treatment for protected texts, capture storage and every unapproved image.",
   "TEXT-001 / SCHOL-004 follow-through: all 32 publication keys resolve and 778 of 1,701 identities carry publication references. Extend checked edition locators beyond the 540-appearance complete-edition cohort toward the 80% probable/confirmed gate, without treating exact-identifier attachment as a dedupe decision.",
   "SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.",
   "SCHOL-006: classify the remaining 151 unclassified works by scope. Thirty-eight scholarship works now have a source-linked held document and 66 works have a derived or inspected scope; continue with complete documents and authoritative contents or abstracts, leaving ambiguous works unclassified.",

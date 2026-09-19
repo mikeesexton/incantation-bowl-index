@@ -74,7 +74,7 @@ The same reasoning applies to every text row whose `content_status` is
 - Bibliographic metadata — titles, authors, dates, DOIs, citations — is factual.
 - Museum catalogue prose is **not** in this repository. Full-corpus research
   snapshots under `data/exports/` are deliberately untracked for that reason.
-- Media are URLs only. Zero of 325 have a completed rights assessment and none is
+- Media are URLs only. Zero of 327 have a completed rights assessment and none is
   approved for reuse, so nothing here licenses an image. Follow the URL and
   observe the holding institution's terms.
 - The July 2026 scoping review in `research/literature/` is this project's own

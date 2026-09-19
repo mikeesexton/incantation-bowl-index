@@ -25,6 +25,26 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-18 — Codex — Complete current media inventory holds
+
+**Claimed:** RIGHTS-002
+**Corpus:** changed (two evidence-bound needs_review holds; no reuse approvals) — state digest `9ed79ee8df6e`
+**Tests:** 248 Python tests passed; manifest replayed with zero changes; live public export withheld all 327 media; corpus state recorded
+
+- Added evidence-fingerprinted, replay-safe `needs_review` holds for the Ford
+  2023 Davidovitz 41 photograph and Levene 1999 M163 plates. Current ledger
+  coverage is now 327/327; completed assessments and approvals remain 0/327.
+- Began the shared-institutional-policy evidence pass. Visual review found no
+  photographer or license on Ford's figure page, a volume-wide rights
+  reservation to the Mandel Institute and article authors, Levene's statement
+  that Shlomo Moussaieff supplied the photographs, captions naming only the
+  collection, and Mohr Siebeck journal copyright.
+- Checked current official Hebrew University terms and Southampton repository
+  metadata. They narrow the contact path but provide no item-specific reuse
+  grant; no ownership, permission or legal conclusion was inferred.
+- Regenerated the roadmap and enrichment reports. Next: continue RIGHTS-002 in
+  shared institutional batches and route actual decisions to human review.
+
 ## 2026-09-18 — Codex — Public source-link gate repair
 
 **Claimed:** RIGHTS-004

@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "ee8bac97e212dde4d14a2334c9398302d4be5d1480dbdf4146b334e95d748fcc",
+  "corpus_digest": "9ed79ee8df6e1f30a24448815eca00ebb83df13fbf49ec48a85e41b2b34ae9b4",
   "migrations": 15,
-  "note": "Completed RIGHTS-004 public source-link gate repair; corpus unchanged",
-  "recorded_at": "2026-09-18T22:44:42+00:00",
+  "note": "Added current holds for all 327 media and began policy evidence review; no media approved",
+  "recorded_at": "2026-09-19T00:54:01+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 327
     },
     "media_rights_reviews": {
-      "digest": "507bd31ce2f94db027ea68ce07774246fc08b6b714111f29f1f7e083ec420371",
-      "rows": 325
+      "digest": "86fa73c539af682da2f82ab5e70388d9cb6861bbef5468a6cc9a5e38572411e6",
+      "rows": 327
     },
     "merge_log": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

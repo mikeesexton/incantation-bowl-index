@@ -48,7 +48,15 @@ The vocabulary is:
 | `withhold` | Reviewer has decided to withhold reuse and supplied a rationale | Yes | Withheld |
 | `approved` | Reviewer supplies rights evidence, locator and attribution for this exact resource | Yes | Eligible while evidence remains current |
 
-The initial 325 rows are mechanical `needs_review` inventory holds. They contain no inferred permissions and count as **zero completed assessments**. Historical `media.rights_status` labels and a source's public-domain label are not media approvals. The software validates the decision record; it cannot establish the legal correctness of its rationale.
+The initial 325 rows and the two-row 18 September addendum are mechanical
+`needs_review` inventory holds. All 327 media records therefore have current
+ledger coverage, but they contain no inferred permissions and count as **zero
+completed assessments**. Historical `media.rights_status` labels and a source's
+public-domain label are not media approvals. The software validates the decision
+record; it cannot establish the legal correctness of its rationale. The first
+institutional-policy evidence pilot is retained in
+[`media_rights_policy_evidence_2026-09-18.md`](../research/reviews/media_rights_policy_evidence_2026-09-18.md);
+it narrows follow-up contacts without changing either row's decision.
 
 ## Two distinct exports
 
