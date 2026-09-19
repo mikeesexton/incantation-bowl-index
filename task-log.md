@@ -25,16 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
-## 2026-09-19 — Codex — Stored-evidence conflict revalidation (in progress)
+## 2026-09-19 — Codex — Stored-evidence conflict revalidation
 
 **Claimed:** QA-002 / CONC-005
-**Corpus:** unchanged at claim — state digest `f6a1201ec043`
-**Tests:** pending
+**Corpus:** changed (589 append-only compatibility reviews; no source claim changed) — state digest `7fdfa285e6dc`
+**Tests:** 264 passed; SQLite integrity check and `git diff --check` passed
 
-- Claimed the user-authorized compatibility lane: build and apply an
-  exact-evidence, append-only review batch for claim differences that can be
-  adjudicated from stored evidence. The five identified source-dependent
-  outliers and all current substantive disagreements remain outside scope.
+- Built seven checked-in schema-v2 manifests with complete inspected snapshots
+  and evidence fingerprints, then validated them against a consistent database
+  backup. The dry run applied all 589 entries and an immediate replay changed
+  zero rows before the same batches were applied to the working corpus.
+- Recorded 155 dating, 110 provenance, 137 publication, 74 location, 63
+  language, 24 biblical-intertext and 26 other descriptive-facet decisions as
+  `compatible`. Every claim remains source-attributed; the decisions do not
+  validate a fact or select a canonical value. Current review coverage is now
+  638/644, up from 49/644.
+- Left six source-dependent rows untouched: CBS 9008 language, NLI Ms. Heb.
+  9467.163 language-code semantics, HS 3003 collection location, and the CBS
+  16017, CBS 16018 and CBS 2971 publication-identifier anomalies. The complete
+  pass added HS 3003 to the initial five-item exception estimate. All thirteen
+  already-current substantive decisions remain unchanged.
+- Regenerated the conflict, roadmap and enrichment reports plus the private
+  export; updated the user decision packet and roadmap. Created and verified a
+  pre-batch SQLite backup and rotated the oldest backup to retain ten. Next:
+  investigate the six remaining rows only from the cited primary sources; do
+  not resolve them by preference.
 
 ## 2026-09-19 — Codex — Conflict-review queue design
 

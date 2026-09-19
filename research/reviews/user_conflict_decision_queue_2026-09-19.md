@@ -1,12 +1,21 @@
 # Claim-difference decision queue for Mike
 
-Prepared 19 September 2026 from the current private corpus and
-`data/reports/claim_conflict_triage.md`. This is a proposal only: no claim,
-disposition, identity, or canonical value was changed while preparing it.
+Prepared and applied 19 September 2026 from the current private corpus and
+`data/reports/claim_conflict_triage.md`. The packet began as a proposal; the
+outcome below records the authorized compatibility review. No claim, identity,
+or canonical value was changed.
+
+## Outcome after authorization
+
+Mike authorized the agent-adjudicable lane. Seven exact-evidence manifests
+recorded 589 compatible decisions without altering any source claim. The live
+review queue is now six, not five: the full pass exposed HS 3003's stale
+Hilprecht/Jena-versus-private-Berlin location disagreement in addition to the
+five initially identified outliers.
 
 ## What the headline number means
 
-The live queue contains 595 claim-field instances requiring a current review.
+The initial live queue contained 595 claim-field instances requiring a current review.
 Of those, 288 have a historical review whose evidence fingerprint or supporting
 rule is now stale, and 307 have never had a review. A queued instance is an
 apparent difference, not necessarily a contradiction.
@@ -15,11 +24,11 @@ My first-pass structural assessment is:
 
 | Provisional route | Instances | Share | What happens next |
 |---|---:|---:|---|
-| Codex can adjudicate from stored evidence | about 590 | about 99.2% | Review in coherent, exact-evidence batches; normally record `compatible` while preserving every source claim. |
-| Fresh source research is clearly needed | about 5 | about 0.8% | Inspect the cited primary catalogue or its history before recording a disposition. |
+| Codex adjudicated from stored evidence | 589 | 99.0% | Completed in seven coherent, exact-evidence batches; every source claim was preserved. |
+| Fresh source research is needed | 6 | 1.0% | Inspect the cited primary catalogue or its history before recording a disposition. |
 | Mike must make a factual judgment now | 0 | 0% | None should be settled by preference when the evidence is inadequate. |
 
-The approximately 590 agent-reviewable instances are dominated by orthogonal
+The 589 agent-reviewed instances are dominated by orthogonal
 or additive facets: date plus period (155), findspot plus production place
 (roughly 100), separate publication states (roughly 140), institution-name
 variants (most of 75 location rows), broad versus specific language labels,
@@ -38,7 +47,7 @@ want changed (for example, “D2 now; defer D6”).
 
 ### D1 — Delegate the compatibility backlog
 
-**Recommended:** Let Codex work through the approximately 590 agent-reviewable
+**Completed:** Codex worked through the 589 agent-reviewable
 instances in bounded source-coherent batches, with an append-only manifest,
 tests, and a before/after report for every batch. Route exceptions back here.
 
@@ -95,7 +104,7 @@ documentation.
 **Choice:** Accept the cohort policy, or prioritize physical/catalogue-history
 research.
 
-### D6 — Five source-dependent outliers in the pending queue
+### D6 — Six source-dependent outliers in the pending queue
 
 **Current evidence:**
 
@@ -103,12 +112,14 @@ research.
   Language.”
 - NLI Ms. Heb. 9467.163: the catalogue code is `heb`, while an inspected study
   calls the inscription Jewish Aramaic; the code's semantics need confirmation.
+- HS 3003: Hilprecht/Jena collection claims conflict with a private Berlin
+  collection claim; transfer, miscitation, or mistaken concordance remains open.
 - CBS 16017: a text heading says CBS 16917 while the register says CBS 16017.
 - CBS 16018: the text heading supplies CBS 16018 but the printed register cell
   is blank.
 - CBS 2971: the text heading says CBS 2971 while the register says CBS 2972.
 
-**Recommended:** Keep all five out of compatibility batches and investigate
+**Recommended:** Keep all six out of compatibility batches and investigate
 the cited catalogues before disposition. These are research tasks, not matters
 for an unsupported user vote.
 
@@ -122,7 +133,9 @@ follow-up: two scholarly disagreements, two internal source inconsistencies,
 and nine unresolved rows. They comprise D2–D5 above: CBS 16020, VA 3383, two
 Apollo lot 272 fields, seven measurement rows, British Museum 117882 language,
 and CBS 9010 language. The last two require source/original-script inspection
-and do not presently require a user preference.
+and do not presently require a user preference. HS 3003 is a fourteenth known
+substantive follow-up whose earlier scholarly-disagreement review is stale
+against the newly expanded evidence snapshot.
 
 ## Proposed reviewer boundary
 
@@ -136,4 +149,4 @@ from their stored fields, wording, and cited sources. Mike should review only:
    been assembled.
 
 This boundary preserves user control without turning data cleaning into a
-595-click approval exercise.
+595-click approval exercise. The completed work leaves six source-bound cases.
