@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Remaining repository duplicate tranche (in progress)
+
+**Claimed:** SCHOL-006
+**Corpus:** unchanged pending source review — state digest `93222ebdcd58`
+**Tests:** in progress
+
+- Reviewing the remaining exact-title repository/OpenAlex clusters against
+  authoritative institutional records, retaining discovery provenance while
+  preventing duplicate scholarship counts.
+- Ambiguous same-title records and scope judgments without an authoritative
+  abstract, contents description or inspected text will remain unresolved.
+- Public-site files are outside this database-only workstream and will not be
+  touched.
+
 ## 2026-09-19 — Codex — Repository duplicate and scope tranche
 
 **Claimed:** SCHOL-006
@@ -113,10 +127,18 @@ local D1 through `wrangler pages dev`.
   `scrollIntoView` from injected JavaScript does **not** reliably produce
   IntersectionObserver samples, and makes working reveals look broken. Use real
   scroll input. An hour went into chasing that phantom.
-- Cloudflare injects its Web Analytics beacon at the edge, and the page's CSP
-  blocks it, which logs a console error on every load. The page promises no
-  third-party tracking, so blocking is the right outcome; either disable Web
-  Analytics for this project or accept the console noise.
+- Slowed the scholarship chart: all 18 bars were growing at once in 1.2s
+  because the console's 19 hand-written `.intro-bar-N` stagger rules were never
+  ported. The delay is now emitted per bar from the build script, so it scales
+  with the number of decades instead of stopping at the console's bar 20, and
+  the chart waits for half of itself to be on screen rather than a 0.18 sliver.
+- Cloudflare injects its Web Analytics beacon and the page's CSP blocks it,
+  logging a console error on every load. Traced to the **zone**, not the Pages
+  project: the beacon appears on bowlam.com and not on bowlam.pages.dev, so it
+  was switched on by automatic setup when the domain moved onto Cloudflare.
+  Turning it off is therefore a zone setting. Blocking is the right outcome
+  either way — the page promises no third-party tracking — but the console
+  noise should go.
 - Next session: privacy notice and an unsubscribe destination. The D1 id and
   remote schema are done.
   ACCESS-008 stays open in the roadmap; `research/roadmap/dataset_maturity.json`
