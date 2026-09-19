@@ -245,11 +245,22 @@ Agents may collect appearances and open leads. Agents may **not**:
 - adjudicate conflicting scholarly claims,
 - declare an object authentic or fake,
 - clear copyright or approve media for reuse,
-- publish anything, or deploy a public dashboard,
 - bypass an access control.
 
 Those are review decisions. The research console binds to localhost and refuses
 non-local addresses; keep it that way.
+
+**Deploying `site/` is not one of them.** An agent working interactively, with
+Mike reading what it produces, may build and deploy the public page when asked.
+The judgement that matters is what goes *into* the page — the release boundary
+in §4, and the evidence rules above — and that is held by the build script's
+leak guard and by review before the deploy, not by keeping `wrangler` out of an
+agent's hands. Deploy on an explicit instruction, not on your own initiative,
+and record it in `task-log.md` like any other change.
+
+Revisit this if unattended agents ever arrive. A scheduled or 24/7 search agent,
+running with nobody reading its output, should not hold a deploy credential.
+That is not the current setup and is not planned.
 
 ---
 

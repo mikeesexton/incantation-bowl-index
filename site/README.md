@@ -95,18 +95,16 @@ npx wrangler d1 execute bowlam-interest --remote \
 ## Live
 
 - **Deployed:** <https://bowlam.pages.dev> (Cloudflare Pages project `bowlam`)
-- **bowlam.com:** *not* pointed here, and it cannot be from this repo. The
-  domain is registered at GoDaddy and uses GoDaddy nameservers
-  (`ns03/ns04.domaincontrol.com`), serving a GoDaddy parking page. Cloudflare
-  Pages cannot attach an apex custom domain unless the zone is on Cloudflare,
-  `wrangler` has no `pages domain` command, and the stored token is
-  `zone (read)` only. Attaching it is three dashboard steps — see below.
-- **Open before the flip:** a privacy notice, and something that actually sends
-  the one-click unsubscribe the page promises.
+- **bowlam.com:** live, and served from this Pages project. The zone moved to
+  Cloudflare (`asa`/`micah.ns.cloudflare.com`) and the apex is attached, so a
+  deploy updates the public domain, not just `bowlam.pages.dev`. Verify with
+  `dig +short NS bowlam.com`.
+- **Still open:** a privacy notice, and something that actually sends the
+  one-click unsubscribe the page promises. Both are now promises made on a
+  live public page.
 
-Note that deploying is normally the owner's job, not an agent's
-(`docs/project-rules.md` §3). The 19 September deployment was made on an
-explicit instruction covering that deployment only.
+An agent may deploy on an explicit instruction (`docs/project-rules.md` §3),
+but not on its own initiative. Record each deployment in `task-log.md`.
 
 ## Deploy
 
@@ -114,12 +112,12 @@ explicit instruction covering that deployment only.
 cd ~/Developer/incantation-bowl-index/site && npx wrangler pages deploy
 ```
 
-### Attaching bowlam.com (not yet done)
+### Attaching bowlam.com (done)
 
-Checked 19 September 2026: the domain has **no MX and no TXT records**, and
-`www` is just a CNAME to the parking page. So moving DNS to Cloudflare breaks
-no email and discards nothing worth keeping — unusually low risk for a
-nameserver move, but confirm the records again before you start.
+Kept as the record of how the apex was attached. Checked 19 September 2026
+before the move: the domain had **no MX and no TXT records**, and `www` was
+just a CNAME to the parking page, so moving DNS to Cloudflare broke no email
+and discarded nothing worth keeping.
 
 1. **Cloudflare dashboard → Add a site → `bowlam.com`** (Free plan). When it
    offers to import the scanned DNS records, drop the parking A records

@@ -142,9 +142,13 @@
   .intro-bowl-figure figcaption { margin-top: 0; font-size: .64rem; }
   .intro-hero-foot { bottom: 20px; }
   .intro-hero-foot span:last-child { display: none; }
-  .intro-origins, .intro-coverage-layout { grid-template-columns: 1fr; }
+  .intro-origins { grid-template-columns: 1fr; }
+  /* Not a 1-column grid: a sticky child is trapped in its own grid row, which is
+     only as tall as the panel. As a block, panel and steps share one containing
+     block and the panel can stay pinned while the steps scroll past it. */
+  .intro-coverage-layout { display: block; }
   .intro-map-figure { margin-top: 1rem; }
-  .intro-milestones { gap: 28px; margin-top: 3rem; }
+  .intro-milestones { gap: 28px; margin-top: 3rem; grid-template-columns: 1fr; }
   .intro-milestones article { padding: 2rem 0 0; }
   .intro-milestones h3 { font-size: 25px; }
   .intro-milestones p { font-size: .82rem; }
@@ -152,8 +156,9 @@
   .intro-chart-svg { min-width: 800px; }
   .intro-chart-svg text { font-size: 16px; }
   .intro-chart-hint { display: block; font-size: .72rem; }
-  .intro-field-panel { position: static; }
-  #intro-circle-field { max-height: none; }
+  .intro-field-panel { position: sticky; top: 70px; z-index: 5; padding: .9rem;
+    margin-bottom: 30px; max-height: calc(100svh - 84px); }
+  #intro-circle-field { max-height: 30svh; }
   .intro-coverage-step { min-height: auto; padding: 2.5rem 0; }
   .intro-coverage-step:first-child { padding-top: 1rem; }
   .intro-footer { flex-direction: column; align-items: center; gap: .6rem; text-align: center; margin-top: 4rem; }
@@ -204,6 +209,7 @@
 }
 @keyframes intro-rise { from { opacity: 0; transform: translateY(34px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes intro-line { to { transform: scaleX(1); } }
+@keyframes intro-line-vertical { to { transform: scaleY(1); } }
 @keyframes intro-region { from { opacity: 0; clip-path: inset(0 100% 0 0); fill-opacity: .08; } 70% { opacity: 1; fill-opacity: .5; } to { opacity: 1; clip-path: inset(0); fill-opacity: .3; } }
 @keyframes intro-grow { from { transform: scaleY(.02); } to { transform: scaleY(1); } }
 @keyframes intro-inscribe { from { stroke-dashoffset: 1300; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
@@ -213,4 +219,20 @@
   .is-home .intro-browse-link { transition: none; }
   .intro-milestones::after { transform: scaleX(1); }
   .intro-chart-svg .intro-bar { transform: scaleY(1); }
+}
+
+/* Stacked, the rail runs down the left instead of across the top, so every
+   milestone sits on it rather than only the first. Declared after the base rail
+   above, which is unconditional and would otherwise win on source order. */
+@media (max-width: 700px) {
+  .intro-milestones { padding-left: 26px; border-top: 0; border-left: 1px solid var(--intro-line); }
+  .intro-milestones::after { top: 0; left: -1px; width: 2px; height: 100%;
+    transform: scaleY(0); transform-origin: top; }
+  .intro-milestones article::before { top: 2.4rem; left: -30px; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 700px) {
+  .intro-milestones.is-in-view::after { animation-name: intro-line-vertical; }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 700px) {
+  .intro-milestones::after { transform: scaleY(1); }
 }

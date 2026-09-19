@@ -180,15 +180,26 @@
     }
   }
 
+  // Narrow screens stick the field panel to the top rather than placing it beside
+  // the steps, so the reading line sits below the panel instead of mid-screen.
+  function readingFloor() {
+    const panel = find(".intro-field-panel");
+    if (desktop.matches || !panel) return 100;
+    return Math.max(100, Math.min(panel.getBoundingClientRect().bottom, innerHeight));
+  }
+
   function onScroll() {
-    if (frame || !snapshot || !root.classList.contains("is-active") || !desktop.matches) return;
+    if (frame || !snapshot || !root.classList.contains("is-active")) return;
     frame = requestAnimationFrame(() => {
       frame = 0;
       const steps = all("[data-step]");
-      const target = innerHeight * .52;
+      const floor = readingFloor();
+      const target = desktop.matches
+        ? innerHeight * .52
+        : floor + (innerHeight - floor) * .45;
       const visible = steps.filter(step => {
         const box = step.getBoundingClientRect();
-        return box.bottom > 100 && box.top < innerHeight;
+        return box.bottom > floor && box.top < innerHeight;
       });
       if (!visible.length) return;
       const closest = visible.reduce((a, b) =>

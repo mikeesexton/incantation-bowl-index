@@ -25,6 +25,52 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Claude — Mobile fixes on bowlam.com, and agents may now deploy
+
+**Claimed:** none (site and docs; no corpus task)
+**Corpus:** unchanged — state digest `94292e8e7a3f`
+**Tests:** 264 Python tests passed; public site rebuilt and deployed
+
+- **Fixed the stacked milestone rail.** `.intro-milestones::after` draws the
+  clay rail as `width: 100%; height: 2px`. At ≤700px the grid collapses to one
+  column but nothing re-oriented the rail, so 1850 got a full-width line and
+  1853 an orphaned dot with no line. The rail now runs vertically down the left
+  with a dot beside each entry. This needed an `intro-line-vertical` keyframe
+  *and* a `prefers-reduced-motion: reduce` companion — the existing reduce rule
+  pins `scaleX(1)`, which on a 2px-wide vertical rail would have left
+  reduced-motion readers with no rail at all.
+- **Made the coverage panel sticky on phones**, replacing the previous
+  deliberate degradation (the panel used to scroll away before the four steps
+  it drives). Two non-obvious parts: `.intro-coverage-layout` had to become
+  `display: block`, because a sticky child of a 1-column grid is confined to
+  its own row and would silently not stick; and the step detection aimed at
+  `innerHeight * 0.52`, which lands *behind* a sticky panel, so both handlers
+  now derive a reading floor from the panel's bottom edge. Checked step/chip
+  agreement across eight scroll positions.
+- Chips raised 40px → 44px; `scroll-margin-top` corrected to 84px for the 70px
+  mobile topbar.
+- **Fixed pre-existing drift in the `web/home.css` fork**, which stacks the
+  milestones on the public page but never did in the console. Both forks now
+  carry the same mobile treatment.
+- **Changed `docs/project-rules.md` §3 on Mike's instruction**: deploying
+  `site/` is no longer on the never-automate list. An interactive agent may
+  build and deploy when asked, but not on its own initiative. The rule notes
+  this should be revisited if unattended or 24/7 agents are ever introduced —
+  they are not planned. `CLAUDE.md` and `AGENTS.md` updated in parity.
+- **Deployed** to Cloudflare Pages (`8284f469`), verified live on the apex.
+- **Corrected a stale claim in `site/README.md`.** It said bowlam.com was *not*
+  pointed here and sat on GoDaddy nameservers. It is: the zone is on Cloudflare
+  (`asa`/`micah.ns.cloudflare.com`) and the apex is attached, so a deploy
+  updates the public domain. Anyone reading that section would have believed
+  deploys were invisible to the public.
+- Deliberately not done: the console's chips are still 40px, since it is a
+  localhost desktop tool. `web/home.css:125` still keeps `.intro-origins` at
+  two columns at ≤900px where the public sheet only changes the gap — left
+  alone as pre-existing and out of scope.
+- **Next session:** the two open promises on a now-public page — a privacy
+  notice, and something that actually sends the one-click unsubscribe the
+  signup form advertises. Both are noted in `site/README.md`.
+
 ## 2026-09-19 — Claude — TEXT-001 gate diagnosis and Waller concordances
 
 **Claimed:** TEXT-001

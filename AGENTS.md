@@ -46,8 +46,9 @@ The rules most easily broken in practice. Full text in
    `task-log.md`, and commit. Documentation-only sessions included. Do not push
    unless Mike asks.
 6. **Agents collect and flag; they do not decide.** No merging uncertain
-   identities, adjudicating scholarly claims, declaring authenticity, clearing
-   rights, or publishing.
+   identities, adjudicating scholarly claims, declaring authenticity, or
+   clearing rights. Deploying `site/` on an explicit instruction is allowed
+   (`docs/project-rules.md` §3); doing it unasked is not.
 
 ## Before specific kinds of work
 

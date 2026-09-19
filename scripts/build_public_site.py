@@ -425,19 +425,28 @@ def render(payload: dict, snapshot_id: str, built_at: str, css_hash: str = "dev"
   }}
 
   // Scrolling through the coverage chapters advances the field, the way the
-  // console's introduction does. Wide screens only: on a phone the steps and
-  // the field are not on screen together, so the change would go unseen.
+  // console's introduction does. On a phone the panel is sticky rather than
+  // beside the steps, so the reading line sits below it instead of mid-screen.
   var desktop = matchMedia("(min-width: 701px)");
+  var panel = document.querySelector(".intro-field-panel");
   var lastStep = null, frame = 0;
+  function readingFloor() {{
+    if (desktop.matches || !panel) return 100;
+    // Steps behind the sticky panel are not being read, whatever the geometry says.
+    return Math.max(100, Math.min(panel.getBoundingClientRect().bottom, innerHeight));
+  }}
   function onScroll() {{
-    if (frame || !desktop.matches) return;
+    if (frame) return;
     frame = requestAnimationFrame(function () {{
       frame = 0;
       var steps = [].slice.call(document.querySelectorAll("[data-step]"));
-      var target = innerHeight * 0.52;
+      var floor = readingFloor();
+      var target = desktop.matches
+        ? innerHeight * 0.52
+        : floor + (innerHeight - floor) * 0.45;
       var visible = steps.filter(function (step) {{
         var box = step.getBoundingClientRect();
-        return box.bottom > 100 && box.top < innerHeight;
+        return box.bottom > floor && box.top < innerHeight;
       }});
       if (!visible.length) return;
       var closest = visible.reduce(function (a, b) {{
