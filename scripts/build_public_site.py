@@ -140,6 +140,52 @@ def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
         )
 
     desc = "; ".join(f'{row["decade"]}s: {row["indexed"]}' for row in rows)
+
+    # Narrow screens get the same data turned on its side. A vertical bar chart
+    # with 18 decades cannot be read at 327px without scrolling, and scrolling
+    # it kept the reveal animation from ever firing: an 800px-wide SVG in a
+    # 375px viewport tops out at an intersectionRatio of ~0.47, under the 0.5
+    # the cascade waits for. Rows are cheap in a direction phones have to spare.
+    h_width, h_label, h_track, h_pitch, h_bar, h_top = 320, 40, 258, 25, 13, 24
+    h_height = h_top + h_pitch * len(rows) + 8
+    h_grid = "".join(
+        f'<line x1="{h_label + 2 + h_track * i / 2:.1f}" y1="20" '
+        f'x2="{h_label + 2 + h_track * i / 2:.1f}" y2="{h_height - 8}" '
+        f'stroke="#3d4542" stroke-width=".7"/>'
+        f'<text x="{h_label + 2 + h_track * i / 2:.1f}" y="12" text-anchor="middle">'
+        f'{ceiling * i // 2}</text>'
+        for i in range(3)
+    )
+    h_bars = []
+    for index, row in enumerate(rows):
+        y = h_top + h_pitch * index
+        length = row["indexed"] / ceiling * h_track
+        incomplete = row["incomplete"]
+        title = (f'{row["decade"]}s: {row["indexed"]} indexed publications'
+                 + ("; current decade, incomplete" if incomplete else ""))
+        h_bars.append(
+            f'<g><title>{html.escape(title)}</title>'
+            f'<text x="{h_label - 4}" y="{y + h_bar - 2:.1f}" text-anchor="end">'
+            f'{row["decade"]}{"*" if incomplete else ""}</text>'
+            f'<rect class="intro-bar intro-bar-{index + 1}'
+            f'{" intro-bar-current" if incomplete else ""}" x="{h_label + 2}" '
+            f'y="{y:.1f}" width="{max(length, 1.5):.1f}" height="{h_bar}" '
+            f'style="animation-delay:{index * BAR_STAGGER_MS}ms"/>'
+            f'<text x="{h_label + 2 + max(length, 1.5) + 5:.1f}" y="{y + h_bar - 2:.1f}">'
+            f'{row["indexed"]}</text></g>'
+        )
+    svg_stacked = (
+        f'<svg class="intro-chart-svg-h" viewBox="0 0 {h_width} {h_height}" role="img" '
+        'aria-labelledby="intro-chart-title-h intro-chart-desc-h">'
+        '<title id="intro-chart-title-h">Scholarly publications indexed, by decade</title>'
+        f'<desc id="intro-chart-desc-h">{html.escape(desc)}. The current decade is '
+        'incomplete. Exact values are also available in the table.</desc>'
+        '<defs><pattern id="intro-current-decade-h" width="7" height="7" '
+        'patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#5d4939"/>'
+        '<path d="M-1 1l8 8M5-1l3 3" stroke="#d9954f" stroke-width="2"/></pattern></defs>'
+        f'{h_grid}{"".join(h_bars)}</svg>'
+    )
+
     svg = (
         '<svg class="intro-chart-svg" viewBox="0 0 1000 330" role="img" '
         'aria-labelledby="intro-chart-title intro-chart-desc">'
@@ -150,7 +196,7 @@ def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
         '<rect width="7" height="7" fill="#5d4939"/>'
         '<path d="M-1 1l8 8M5-1l3 3" stroke="#d9954f" stroke-width="2"/></pattern></defs>'
         f'{grid}{"".join(bars)}</svg>'
-    )
+    ) + svg_stacked
     table = (
         '<table><caption>Indexed publications; current decade marked incomplete</caption>'
         '<thead><tr><th scope="col">Decade</th><th scope="col">Publications</th></tr></thead><tbody>'
@@ -295,9 +341,9 @@ def render(payload: dict, snapshot_id: str, built_at: str, css_hash: str = "dev"
     <div class="intro-section-heading"><h2 id="scholarship-title">More pages.<br>More questions.</h2><p>Each generation finds more to uncover.</p></div>
     <figure class="intro-chart-figure">
       <div class="intro-chart-heading"><strong>Scholarly publications indexed, by decade</strong><span>Publications / decade</span></div>
-      <div id="intro-chart" tabindex="0" role="region" aria-label="Publication chart, scroll horizontally on narrow screens">{chart_svg}</div>
+      <div id="intro-chart">{chart_svg}</div>
       <figcaption>Publications in the index, grouped by decade. * {current}s: current decade, incomplete. {number(undated)} undated works excluded. Dated scholarly works in this index; not a complete census of scholarship.</figcaption>
-      <p class="intro-chart-hint">Scroll across the chart, or open the table below for every decade.</p>
+      <p class="intro-chart-hint">Open the table below for exact figures by decade.</p>
       <details class="intro-chart-table"><summary>Read the chart as a table</summary><div id="intro-chart-data">{chart_table}</div></details>
     </figure>
   </section>
@@ -490,7 +536,8 @@ def render(payload: dict, snapshot_id: str, built_at: str, css_hash: str = "dev"
   if (!reduced.matches && "IntersectionObserver" in window) {{
     dates.forEach(function (date) {{ date.textContent = "750"; }});
     var pending = [].slice.call(document.querySelectorAll(
-      ".intro-milestones, .intro-map, .intro-chart-svg, .intro-section-heading"));
+      ".intro-milestones, .intro-map, .intro-chart-svg, .intro-chart-svg-h, "
+      + ".intro-section-heading"));
 
     function revealNode(node) {{
       var at = pending.indexOf(node);
@@ -508,8 +555,15 @@ def render(payload: dict, snapshot_id: str, built_at: str, css_hash: str = "dev"
         if (!entry.isIntersecting) return;
         // The chart's bars cascade for several seconds, so it waits until it is
         // genuinely on screen rather than starting on a first sliver.
-        var needed = entry.target.classList.contains("intro-chart-svg") ? 0.5 : 0.18;
-        if (entry.intersectionRatio < needed) return;
+        var chart = entry.target.classList.contains("intro-chart-svg")
+                 || entry.target.classList.contains("intro-chart-svg-h");
+        var needed = chart ? 0.5 : 0.18;
+        // An element larger than the viewport can never reach 0.5, so also
+        // accept "it fills most of the screen" — otherwise the cascade that
+        // ratio is guarding simply never runs.
+        var box = entry.intersectionRect;
+        var fills = box.height >= innerHeight * 0.6 || box.width >= innerWidth * 0.9;
+        if (entry.intersectionRatio < needed && !fills) return;
         revealNode(entry.target);
       }});
     }}, {{threshold: [0.18, 0.5]}});

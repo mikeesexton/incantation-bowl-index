@@ -25,6 +25,51 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Claude — A chart that fits the phone, and the bet comes back
+
+**Claimed:** none (site only; no corpus task)
+**Corpus:** unchanged — state digest `94292e8e7a3f`
+**Tests:** 264 Python tests passed; rebuilt and deployed (`55931972`)
+
+- **The decade chart never animated on mobile, and the reason was arithmetic.**
+  The reveal observer waits for `intersectionRatio >= 0.5` before starting the
+  bar cascade. The SVG is forced to `min-width: 800px` on narrow screens, and
+  an 800px box in a 375px viewport tops out at a ratio of ~0.469 — the
+  threshold was unreachable, so `is-revealing` was never added and every bar
+  stayed pinned at its `scaleY(.02)` start state. The chart has been rendering
+  as eighteen 2%-height stubs on every phone, not merely un-animated.
+- **Fixed by turning the chart on its side below 700px** rather than shrinking
+  it. `build_chart()` now also emits a horizontal-bar twin (`.intro-chart-svg-h`,
+  viewBox 320×470) that swaps in by media query: one row per decade, every
+  decade labelled, every value printed at the bar end, gridlines at 0/30/60.
+  Eighteen rows are cheap in the direction a phone has to spare. It fits 327px
+  with no scrolling, so the ratio reaches 1.0 and the cascade runs — and it is
+  frankly more legible than the upright version ever was at this width.
+- Bars grow on their own axis: added `intro-grow-h` (`scaleX`) alongside
+  `intro-grow`. Both `scale(.02)` start states stay inside
+  `prefers-reduced-motion: no-preference`, so reduced-motion readers get
+  full-size bars rather than stubs — the same trick the desktop chart uses.
+- **Made the threshold non-fatal in general.** The reveal now also accepts "it
+  fills most of the screen", so an element larger than the viewport can never
+  again be silently locked out of its own animation.
+- Unique IDs throughout for the second SVG (`intro-chart-title-h`,
+  `intro-chart-desc-h`, pattern `intro-current-decade-h`); only one chart is
+  ever displayed, so exactly one is exposed to assistive tech.
+- Dropped `role="region" tabindex="0"` and the "scroll horizontally" label from
+  `#intro-chart`, and reworded `.intro-chart-hint`. Nothing scrolls at any
+  width now, so the scroller affordance was describing something that no
+  longer exists.
+- **Restored the bet ב in the topbar on mobile** at 32px (36px on desktop). It
+  had been `display: none` below 700px; there is ample room — the header holds
+  nothing else, and the wordmark still fits at 320px.
+- Checked 320 / 375 / 768 / 1280: no horizontal overflow anywhere, and 768/1280
+  render the upright chart exactly as before.
+- Deliberately not done: `web/home.js` was left alone. Its chart observer uses
+  `threshold: .25` with no ratio gate, so the console never had this bug — the
+  two implementations diverge here and only the public one was broken.
+- **Next session:** unchanged — the privacy notice and a working one-click
+  unsubscribe, both promised on a live public page.
+
 ## 2026-09-19 — Claude — Mobile fixes on bowlam.com, and agents may now deploy
 
 **Claimed:** none (site and docs; no corpus task)

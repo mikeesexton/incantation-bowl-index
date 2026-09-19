@@ -144,6 +144,10 @@ figcaption { margin-top: 1.25rem; color: var(--intro-muted); font-size: .71rem; 
 #intro-chart { overflow-x: auto; }
 .intro-chart-hint { display: none; }
 .intro-chart-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.intro-chart-svg-h { display: none; width: 100%; height: auto; overflow: visible; }
+.intro-chart-svg-h text { font-family: var(--sans); font-size: 11px; fill: #aaa093; }
+.intro-chart-svg-h .intro-bar { fill: var(--intro-clay); }
+.intro-chart-svg-h .intro-bar-current { fill: url(#intro-current-decade-h); stroke: var(--intro-clay); stroke-width: 1; }
 .intro-chart-svg text { font-family: var(--sans); font-size: 12px; fill: #aaa093; }
 .intro-chart-svg line { stroke: #3d4542; }
 .intro-chart-svg .intro-bar { fill: var(--intro-clay); }
@@ -235,7 +239,7 @@ figcaption { margin-top: 1.25rem; color: var(--intro-muted); font-size: .71rem; 
   .intro-controls button { padding: .4rem .5rem; }
 }
 @media (max-width: 700px) {
-  .wordmark-seal { display: none; }
+  .wordmark-seal { width: 32px; height: 32px; font-size: 1.25rem; }
   .wordmark small { display: block; font-size: .5rem; letter-spacing: .03em; }
   .wordmark strong { max-width: 130px; font-size: .8rem; line-height: 1.25; }
   .intro-chapter { padding: 65px 24px; }
@@ -263,8 +267,11 @@ figcaption { margin-top: 1.25rem; color: var(--intro-muted); font-size: .71rem; 
   .intro-milestones h3 { font-size: 25px; }
   .intro-milestones p { font-size: .82rem; }
   .intro-date { font-size: 65px; }
-  .intro-chart-svg { min-width: 800px; }
-  .intro-chart-svg text { font-size: 16px; }
+  /* 18 decades will not read at this width standing up, and an 800px SVG in a
+     375px viewport can never reach the 0.5 intersection ratio the bar cascade
+     waits for — so it never animated either. Lay it on its side instead. */
+  .intro-chart-svg { display: none; }
+  .intro-chart-svg-h { display: block; }
   .intro-chart-hint { display: block; font-size: .72rem; }
   .intro-field-panel { position: sticky; top: 70px; z-index: 5; padding: .9rem;
     margin-bottom: 30px; max-height: calc(100svh - 84px); }
@@ -289,6 +296,8 @@ figcaption { margin-top: 1.25rem; color: var(--intro-muted); font-size: .71rem; 
   .intro-map.is-in-view .intro-find-region { animation: intro-region 2.8s cubic-bezier(.16,.75,.25,1) both; }
   .intro-chart-svg .intro-bar { transform: scaleY(.02); transform-box: fill-box; transform-origin: bottom; }
   .intro-chart-svg.is-revealing .intro-bar { animation: intro-grow 1.2s cubic-bezier(.16,.72,.25,1) both; }
+  .intro-chart-svg-h .intro-bar { transform: scaleX(.02); transform-box: fill-box; transform-origin: left; }
+  .intro-chart-svg-h.is-revealing .intro-bar { animation: intro-grow-h 1.2s cubic-bezier(.16,.72,.25,1) both; }
   .intro-section-heading.is-in-view, .intro-interest h2.is-in-view { animation: intro-rise .9s ease-out both; }
 }
 @keyframes intro-rise { from { opacity: 0; transform: translateY(34px); } to { opacity: 1; transform: translateY(0); } }
@@ -296,6 +305,7 @@ figcaption { margin-top: 1.25rem; color: var(--intro-muted); font-size: .71rem; 
 @keyframes intro-line-vertical { to { transform: scaleY(1); } }
 @keyframes intro-region { from { opacity: 0; clip-path: inset(0 100% 0 0); fill-opacity: .08; } 70% { opacity: 1; fill-opacity: .5; } to { opacity: 1; clip-path: inset(0); fill-opacity: .3; } }
 @keyframes intro-grow { from { transform: scaleY(.02); } to { transform: scaleY(1); } }
+@keyframes intro-grow-h { from { transform: scaleX(.02); } to { transform: scaleX(1); } }
 @keyframes intro-inscribe { from { stroke-dashoffset: 1300; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
 @keyframes intro-bowl-arrive { from { opacity: 0; transform: translateY(45px) rotate(-18deg) scale(.9); } to { opacity: 1; transform: none; } }
 @keyframes intro-nudge { 50% { transform: translateY(7px); } }
