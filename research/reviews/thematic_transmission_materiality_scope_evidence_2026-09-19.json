@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T22:44:43Z",
+  "method": "Work scope and bibliographic corrections were assigned from two DOI-deposited abstracts, the publisher's chapter record and a complete inspected copy of the Shaked chapter. Titles alone were not treated as evidence.",
+  "policy": "These notes support bibliographic correction and work-level scope classification only. They do not verify individual readings, translations, measurements, provenance claims, object identity, authenticity, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-CC72F830EAAF",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "doi_deposited_abstract",
+      "locator": "Crossref record for DOI 10.1353/hbr.2023.a912651; https://muse.jhu.edu/pub/137/article/912651",
+      "finding": "The abstract says Amsler centers the bowls' material affordances, affect, preparation and physical caregiving in late-antique household medicine rather than editing a bowl text. Crossref also identifies Hebrew Studies 64, issue 1, pages 83-109 as the journal citation."
+    },
+    {
+      "source_id": "SRC-DB6414713F7B",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "doi_deposited_abstract",
+      "locator": "Crossref record for DOI 10.1163/17455227-01301003",
+      "finding": "The abstract says Lanfer categorizes bowl spells by three types of biblical citation and studies their implications for textual and linguistic development, the social location of biblical knowledge and beliefs about Hebrew textual power. Crossref also supplies Aramaic Studies 13, issue 1, pages 9-23."
+    },
+    {
+      "source_id": "SRC-BE7030C8987B",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "complete_chapter_and_publisher_record",
+      "locator": "Complete chapter, pp. 187-218, inspected 19 September 2026; https://brill.com/view/book/edcoll/9789004215269/Bej.9789004203518.i-390_009.xml; DOI 10.1163/ej.9789004203518.i-390.53",
+      "finding": "Shaked defines formula, spell and incantation, then compares several Schøyen bowls to investigate composition, variation, memory and transmission. The publisher record supplies the book title, pages and Brill imprint. The work uses bowl texts as a comparative thematic case study rather than presenting itself as a corpus edition."
+    }
+  ]
+}

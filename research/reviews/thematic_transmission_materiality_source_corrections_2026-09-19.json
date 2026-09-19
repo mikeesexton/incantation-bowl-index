@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T22:44:43Z",
+  "evidence_path": "research/reviews/thematic_transmission_materiality_scope_evidence_2026-09-19.json",
+  "evidence_sha256": "c1fbf7a2eec0287deb04fb2d970a0e2cda207bbe0e1fd1736153c96cf2f2b9a1",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-AMSLER2023-BOWL-AFFORDANCES",
+      "source_id": "SRC-CC72F830EAAF",
+      "replacement_source_id": null,
+      "rationale": "The DOI-deposited metadata supplies the actual journal, volume, issue and pages; the imported record incorrectly put the hosting platform in the journal field.",
+      "before": {
+        "source_type": "article",
+        "title": "What's (in) Your Bowl? Affordances of Incantation Bowls and their Use in Household Medicine",
+        "authors": "Monika Amsler",
+        "issued_year": 2023,
+        "container_title": "Project Muse (Johns Hopkins University)",
+        "publisher": "Project MUSE",
+        "url": "https://doi.org/10.1353/hbr.2023.a912651",
+        "doi": "10.1353/hbr.2023.a912651",
+        "isbn": null,
+        "citation": "What's (in) Your Bowl? Affordances of Incantation Bowls and their Use in Household Medicine (2023). Repository location indexed by OpenAlex W4389103855.",
+        "access_status": "available",
+        "rights_status": "unknown",
+        "notes": "Institutional repository: Project Muse (Johns Hopkins University); landing page: https://muse.jhu.edu/pub/137/article/912651"
+      },
+      "after": {
+        "source_type": "article",
+        "title": "What's (in) Your Bowl? Affordances of Incantation Bowls and their Use in Household Medicine",
+        "authors": "Monika Amsler",
+        "issued_year": 2023,
+        "container_title": "Hebrew Studies 64, issue 1",
+        "publisher": "Project MUSE",
+        "url": "https://doi.org/10.1353/hbr.2023.a912651",
+        "doi": "10.1353/hbr.2023.a912651",
+        "isbn": null,
+        "citation": "Amsler, Monika. ‘What's (in) Your Bowl? Affordances of Incantation Bowls and their Use in Household Medicine.’ Hebrew Studies 64, no. 1 (2023): 83-109. https://doi.org/10.1353/hbr.2023.a912651.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Citation and abstract verified against DOI-deposited metadata on 19 September 2026. The abstract supports work-level analysis of material affordances and household medicine; no protected article text was imported."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-LANFER2015-BIBLICAL-SCHOLARS",
+      "source_id": "SRC-DB6414713F7B",
+      "replacement_source_id": null,
+      "rationale": "The DOI-deposited metadata supplies the journal volume, issue, pages and abstract for the article.",
+      "before": {
+        "source_type": "article",
+        "title": "Why Biblical Scholars Should Study Aramaic Bowl Spells",
+        "authors": "Peter T. Lanfer",
+        "issued_year": 2015,
+        "container_title": "Aramaic Studies",
+        "publisher": "Walter de Gruyter GmbH",
+        "url": "https://doi.org/10.1163/17455227-01301003",
+        "doi": "10.1163/17455227-01301003",
+        "isbn": null,
+        "citation": "Why Biblical Scholars Should Study Aramaic Bowl Spells (2015). Crossref DOI 10.1163/17455227-01301003.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad Crossref metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "Why Biblical Scholars Should Study Aramaic Bowl Spells",
+        "authors": "Peter T. Lanfer",
+        "issued_year": 2015,
+        "container_title": "Aramaic Studies 13, issue 1",
+        "publisher": "Walter de Gruyter GmbH",
+        "url": "https://doi.org/10.1163/17455227-01301003",
+        "doi": "10.1163/17455227-01301003",
+        "isbn": null,
+        "citation": "Lanfer, Peter T. ‘Why Biblical Scholars Should Study Aramaic Bowl Spells.’ Aramaic Studies 13, no. 1 (2015): 9-23. https://doi.org/10.1163/17455227-01301003.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Citation and abstract verified against DOI-deposited metadata on 19 September 2026. The abstract supports work-level analysis of three types of biblical citation; no protected article text was imported."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-SHAKED2011-TRANSMISSION-SPELLS",
+      "source_id": "SRC-BE7030C8987B",
+      "replacement_source_id": null,
+      "rationale": "The Brill chapter record and DOI metadata supply the containing volume, pages, publisher and complete citation missing from the OpenAlex-derived record.",
+      "before": {
+        "source_type": "chapter",
+        "title": "Transmission And Transformation Of Spells: The Case Of The Jewish Babylonian Aramaic Bowls",
+        "authors": "Shaul Shaked",
+        "issued_year": 2011,
+        "container_title": null,
+        "publisher": null,
+        "url": "https://doi.org/10.1163/ej.9789004203518.i-390.53",
+        "doi": "10.1163/ej.9789004203518.i-390.53",
+        "isbn": null,
+        "citation": "Transmission And Transformation Of Spells: The Case Of The Jewish Babylonian Aramaic Bowls (2011). OpenAlex W764721192.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Discovered in broad OpenAlex metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "chapter",
+        "title": "Transmission And Transformation Of Spells: The Case Of The Jewish Babylonian Aramaic Bowls",
+        "authors": "Shaul Shaked",
+        "issued_year": 2011,
+        "container_title": "Continuity and Innovation in the Magical Tradition",
+        "publisher": "Brill",
+        "url": "https://brill.com/view/book/edcoll/9789004215269/Bej.9789004203518.i-390_009.xml",
+        "doi": "10.1163/ej.9789004203518.i-390.53",
+        "isbn": null,
+        "citation": "Shaked, Shaul. ‘Transmission and Transformation of Spells: The Case of the Jewish Babylonian Aramaic Bowls.’ In Continuity and Innovation in the Magical Tradition, 187-218. Leiden: Brill, 2011. https://doi.org/10.1163/ej.9789004203518.i-390.53.",
+        "access_status": "paywalled",
+        "rights_status": "copyrighted",
+        "notes": "Citation verified against the Brill chapter record and the complete chapter inspected on 19 September 2026. The chapter supports a work-level study of formula composition and transmission; no protected text was imported."
+      }
+    }
+  ]
+}

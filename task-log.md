@@ -25,6 +25,28 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Scholarship scope continuation II
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (three source corrections and three append-only thematic-study reviews) — state digest `f6a1201ec043`
+**Tests:** 264 passed
+
+- Classified Amsler 2023, Lanfer 2015 and Shaked 2011 as thematic studies from
+  two DOI-deposited abstracts and a complete reading of Shaked's chapter. The
+  evidence concerns materiality and household medicine, biblical citation, and
+  spell composition and transmission respectively; no title-only inference was
+  used.
+- Repaired the journal, volume, issue and page data for Amsler and Lanfer and
+  the containing book, publisher and pages for Shaked. Access and copyright
+  labels remain fail-closed; no rights approval or protected article text was
+  added.
+- Replayed both manifests as no-ops and regenerated the roadmap and reports.
+  The scholarship index remains 206 works, with scoped coverage rising from
+  122 to 125 and the unclassified queue falling from 84 to 81. Continue only
+  where a complete readable document or a specific abstract supports scope;
+  the higher handoff priorities remain Penn rights review, Segal 2000 and other
+  acquisitions, TEXT-001 coverage, and the 432 untriaged claim differences.
+
 ## 2026-09-19 — Codex — Authoritative scholarship scope continuation
 
 **Claimed:** SCHOL-006
