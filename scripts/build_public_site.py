@@ -39,11 +39,14 @@ SRC = ROOT / "site" / "src"
 OUT = ROOT / "site" / "public"
 FONTS = ROOT / "web" / "fonts"
 
-# Fonts the public page actually uses. The Hebrew subset is deliberately not
-# copied: the landing page publishes no bowl text, so it would never render.
+# Fonts the public page actually uses. The Hebrew subset is here for exactly
+# one glyph — the bet in the wordmark. Frank Ruhl Libre is a Hebrew typeface,
+# so the letter belongs in it rather than in whatever Hebrew face the visitor's
+# system happens to substitute. The page still publishes no bowl text.
 PUBLIC_FONTS = (
     "frank-ruhl-libre-latin.woff2",
     "frank-ruhl-libre-latin-ext.woff2",
+    "frank-ruhl-libre-hebrew.woff2",
     "frank-ruhl-libre-OFL.txt",
 )
 
@@ -55,6 +58,7 @@ COVERAGE_COPY = {
                 "recorded against the objects they describe.",
         "label": "Text",
         "legend": "has a text reference",
+        "total_label": "bowls with a text reference",
     },
     "provenance": {
         "kicker": "Tracing a journey",
@@ -64,6 +68,7 @@ COVERAGE_COPY = {
                 "attributed to their sources.",
         "label": "Provenance",
         "legend": "has provenance information",
+        "total_label": "bowls with provenance information",
     },
     "image": {
         "kicker": "Seeing the object",
@@ -72,6 +77,7 @@ COVERAGE_COPY = {
                 "catalogues are indexed as references, not reproduced here.",
         "label": "Images",
         "legend": "has an image reference",
+        "total_label": "bowls with an image reference",
     },
 }
 
@@ -214,6 +220,10 @@ def render(payload: dict, snapshot_id: str, built_at: str) -> str:
     )
     legends = json.dumps({key: COVERAGE_COPY[key]["legend"] for key in COVERAGE_COPY},
                          separators=(",", ":"))
+    total_labels = json.dumps(
+        {"all": "bowls in the index",
+         **{key: COVERAGE_COPY[key]["total_label"] for key in COVERAGE_COPY}},
+        separators=(",", ":"))
 
     hero_svg = (SRC / "bowl.svg").read_text(encoding="utf-8").strip()
     map_svg = (SRC / "map.svg").read_text(encoding="utf-8").strip()
@@ -238,7 +248,7 @@ def render(payload: dict, snapshot_id: str, built_at: str) -> str:
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar">
   <a class="wordmark" href="/" aria-label="Bowlam home">
-    <span class="wordmark-seal" aria-hidden="true">◎</span>
+    <span class="wordmark-seal" lang="he" aria-hidden="true">ב</span>
     <span><strong>Bowlam</strong><small>The Incantation Bowl Index</small></span>
   </a>
 </header>
@@ -295,7 +305,7 @@ def render(payload: dict, snapshot_id: str, built_at: str) -> str:
     <div class="intro-section-heading"><h2 id="coverage-title">A world of bowls.<br><em>One place to explore.</em></h2><p>Bowlam brings together the bowls, their words, and their journeys. Our aim: the most complete index possible.</p></div>
     <div class="intro-coverage-layout">
       <div class="intro-field-panel">
-        <div class="intro-field-heading"><strong>{number(total)}</strong><span>bowls in the index</span></div>
+        <div class="intro-field-heading"><strong id="intro-total">{number(total)}</strong><span id="intro-total-label">bowls in the index</span></div>
         <div class="intro-controls" role="group" aria-label="Highlight recorded evidence">
           <button type="button" data-coverage="all" aria-pressed="true">All bowls</button>{buttons}
         </div>
@@ -384,6 +394,7 @@ def render(payload: dict, snapshot_id: str, built_at: str) -> str:
   // Coverage field. Every number here was baked in at build time; nothing is fetched.
   var SELECTIONS = {selections};
   var LEGENDS = {legends};
+  var TOTAL_LABELS = {total_labels};
   var TOTAL = {total};
   var circles = Array.prototype.slice.call(document.querySelectorAll(".intro-circle"));
   var status = document.getElementById("intro-selection");
@@ -403,6 +414,10 @@ def render(payload: dict, snapshot_id: str, built_at: str) -> str:
       : chosen.length.toLocaleString() + " of " + TOTAL.toLocaleString() + " ("
         + (100 * chosen.length / TOTAL).toFixed(1) + "%) " + LEGENDS[field] + ".";
     if (status) status.textContent = message;
+    var totalEl = document.getElementById("intro-total");
+    var labelEl = document.getElementById("intro-total-label");
+    if (totalEl) totalEl.textContent = chosen.length.toLocaleString();
+    if (labelEl) labelEl.textContent = TOTAL_LABELS[field];
     var desc = document.getElementById("intro-field-desc");
     if (desc) desc.textContent = message
       + " Each circle represents one bowl. Lighter circles have no reference of this kind.";
