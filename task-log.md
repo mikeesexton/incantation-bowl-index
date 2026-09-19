@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Claude — SCHOL-006 pre-1930 open-document tranche (IN PROGRESS)
+
+**Claimed:** SCHOL-006
+**Corpus:** unchanged so far — baseline state digest `6582d8671ff4`
+**Tests:** not yet run
+
+- Session opened; `ibi state` reported `match` against Codex's 17:43 UTC baseline.
+- Claiming SCHOL-006 to classify pre-1930 public-domain works whose complete
+  documents are openly available (Persée, MENAdoc, archive.org, Gallica).
+- This entry is a claim marker and will be completed before commit.
+
 ## 2026-09-19 — Codex — Scholarship bibliography and scope continuation
 
 **Claimed:** SCHOL-006
@@ -202,6 +213,22 @@ local D1 through `wrangler pages dev`.
   Worth remembering when reading a console: a CSP-blocked script still leaves
   its element in the DOM, so absence of the element is the real signal, and
   the pane's console accumulates across navigations.
+- Wordmark is now the Hebrew letter bet, which brought the Frank Ruhl Libre
+  Hebrew subset back into the public build after it was dropped as unused.
+- The headline count in the coverage panel now tracks the selected category by
+  click and by scroll. It had sat at the corpus total while the panel beneath
+  it described a subset: selecting Text read "1,652 bowls in the index" above
+  "719 of 1,652".
+- Found a caching defect while verifying the above. Pages serves index.html
+  must-revalidate but public.css with a four-hour TTL, so for four hours after
+  any deploy a returning visitor gets new markup with the previous stylesheet.
+  It showed up as the bet rendering in a system font because the cached CSS had
+  no Hebrew `@font-face`. The stylesheet is now requested as
+  `public.css?v=<content hash>`, which also lets it be cached hard instead of
+  for four hours. This affected every earlier deploy this session too.
+- Note: `.wordmark-seal` is still hidden below 700px, inherited from the
+  console. That was defensible for a generic ring glyph and is more debatable
+  now that the mark is a letter. Left as-is rather than changed unasked.
 - Next session: privacy notice and an unsubscribe destination. The D1 id and
   remote schema are done.
   ACCESS-008 stays open in the roadmap; `research/roadmap/dataset_maturity.json`
