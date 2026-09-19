@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T12:12:25Z",
+  "method": "Scope was assigned only where a publisher or university record described the work's treatment in enough detail to distinguish an edition from a thematic study. Titles alone and third-party summaries were not treated as sufficient evidence.",
+  "policy": "These notes support work-level scope classification only. They make no claim about complete object extraction, preferred readings, identity, rights, or permission to reproduce text or images.",
+  "entries": [
+    {
+      "source_id": "SRC-9D7F88975731",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "university_repository_abstract",
+      "locator": "https://cris.biu.ac.il/en/publications/a-new-parallel-to-the-jewish-babylonian-aramaic-magic-bowl-im-761-4/; DOI 10.1163/147783511X619845",
+      "finding": "The Bar-Ilan University abstract says the study gives a new edition of IM 76106 and an edition of a parallel bowl in a private collection, with lexical and phonological analysis."
+    },
+    {
+      "source_id": "SRC-2471CE31E5D9",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "publisher_extract_and_institutional_copy",
+      "locator": "https://www.cambridge.org/core/journals/iraq/article/abs/two-incantation-bowls-from-babylon/17DFEA0D62BF81531170E46E166E7861; https://eprints.soas.ac.uk/19435/1/two_incantation_bowls_from_babylon.pdf; DOI 10.2307/4200485",
+      "finding": "The Cambridge extract identifies IM 9726, says that a complete translation can now be offered, and notes the article's republication of the Pearson bowl; the SOAS institutional copy is the complete nine-page article."
+    },
+    {
+      "source_id": "SRC-B1AA93ACD1E1",
+      "proposed_scope": "corpus_edition",
+      "evidence_type": "publisher_extract",
+      "locator": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/two-incantation-bowls-inscribed-in-syriac-and-aramaic/EAC2713DD5331D0C6456F089FE7934ED; DOI 10.1017/S0041977X00050096",
+      "finding": "The Cambridge extract introduces the first bowl's physical and textual features, while the publisher title and article notes identify two bowl texts and explicitly discuss revised readings and translation."
+    },
+    {
+      "source_id": "SRC-F182BDCFD377",
+      "proposed_scope": "single_object_edition",
+      "evidence_type": "publisher_table_of_contents",
+      "locator": "https://gorgiaspress450.forefrontinfotech.com/the-harp-volume-25; DOI 10.31826/9781463233143-015",
+      "finding": "The Gorgias Press contents enumerate description of one bowl and inscription, palaeographic remarks, text and translation, division of the text, and line-by-line content."
+    },
+    {
+      "source_id": "SRC-E2DD336E0B73",
+      "proposed_scope": "thematic_study",
+      "evidence_type": "publisher_preview",
+      "locator": "https://brill.com/previewpdf/display/book/edcoll/9789004304895/B9789004304895_009.xml; DOI 10.1163/9789004304895_009",
+      "finding": "The Brill chapter preview frames a comparative study of incantation-bowl iconography in light of Talmudic descriptions rather than an edition of a single object or bounded corpus."
+    }
+  ],
+  "deferred": [
+    {
+      "source_id": "SRC-1A922C3F041F",
+      "reason": "The Peeters record identifies Matthew Morgenstern as author, while the indexed source names Christa Muller-Kessler; source metadata should be corrected before scope review."
+    },
+    {
+      "source_id": "SRC-0E3CF64AADCA",
+      "reason": "The Peeters record gives DOI 10.2143/ARAM.11.2.504467 and publication date 1999-2000, while the indexed source gives issue 1 and 2005; source metadata should be reconciled before scope review."
+    },
+    {
+      "source_ids": [
+        "SRC-DF29C7D96B98",
+        "SRC-62F5BFBBBF01"
+      ],
+      "reason": "These records appear to represent the same Morgenstern article with conflicting DOI metadata; bibliographic reconciliation should precede scope review."
+    },
+    {
+      "source_id": "SRC-195B6B6E19A1",
+      "reason": "A sufficiently specific abstract was found only on a third-party service; JSTOR confirms the citation but does not expose the abstract, so the work remains unclassified under the authoritative-evidence rule."
+    }
+  ]
+}

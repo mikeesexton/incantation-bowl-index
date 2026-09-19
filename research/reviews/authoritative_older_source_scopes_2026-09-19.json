@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-19T12:12:25Z",
+  "batch": "Classify five older works from publisher and university evidence",
+  "policy": "These are work-scope judgments only. They do not certify complete object extraction, endorse readings, resolve identities, or change text and media rights.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-FORD2011-IM76106-20260919",
+      "source_id": "SRC-9D7F88975731",
+      "scope": "corpus_edition",
+      "basis": "Bar-Ilan University's abstract for DOI 10.1163/147783511X619845 describes editions of IM 76106 and a new parallel bowl."
+    },
+    {
+      "review_id": "IBI-SCOPE-HUNTER2000-BABYLON-20260919",
+      "source_id": "SRC-2471CE31E5D9",
+      "scope": "corpus_edition",
+      "basis": "Cambridge's publisher extract and the complete SOAS institutional copy describe publication of IM 9726 and republication of the Pearson bowl."
+    },
+    {
+      "review_id": "IBI-SCOPE-GELLER1976-TWO-BOWLS-20260919",
+      "source_id": "SRC-B1AA93ACD1E1",
+      "scope": "corpus_edition",
+      "basis": "Cambridge's publisher extract and article notes describe readings and translation for two incantation-bowl texts."
+    },
+    {
+      "review_id": "IBI-SCOPE-ABOUSAMRA2012-SYRIAC-20260919",
+      "source_id": "SRC-F182BDCFD377",
+      "scope": "single_object_edition",
+      "basis": "Gorgias Press's detailed contents list description, palaeography, text, translation and line-by-line discussion for one Syriac bowl."
+    },
+    {
+      "review_id": "IBI-SCOPE-VILOZNY2015-IMAGERY-20260919",
+      "source_id": "SRC-E2DD336E0B73",
+      "scope": "thematic_study",
+      "basis": "Brill's chapter preview presents a comparative study of incantation-bowl imagery and Talmudic descriptions."
+    }
+  ]
+}

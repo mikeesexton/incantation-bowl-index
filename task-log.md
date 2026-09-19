@@ -25,6 +25,27 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Older-literature scope tranche
+
+**Claimed:** SCHOL-006
+**Corpus:** changed (five append-only source-scope reviews) — state digest
+`5e67174bd38c`
+**Tests:** 249 Python tests passed; the scope manifest replayed with zero changes;
+JSON, generated reports and corpus-state validation passed
+
+- Classified five older works from publisher and university evidence: three
+  corpus editions (Geller 1976, Hunter 2000 and Ford 2011), one single-object
+  edition (Abousamra 2012), and one thematic study (Vilozny 2015).
+- Scope coverage rises from 88 to 93 of 217 works and the unclassified backlog
+  falls from 129 to 124; the source-linked held-document count remains 39.
+- Deferred records with conflicting author or DOI metadata, apparent duplicate
+  citations, and one work whose specific abstract was available only from a
+  third-party service. Titles alone were not used as evidence.
+- Regenerated the maturity roadmap, campaign report and enrichment reports. No
+  object, identity, reading, rights or public-release decision changed. Next:
+  repair the documented bibliography conflicts or continue SCHOL-006 with
+  complete documents and authoritative abstracts or contents.
+
 ## 2026-09-19 — Codex — Second authoritative-abstract scope tranche
 
 **Claimed:** SCHOL-006
