@@ -18,7 +18,7 @@
   ],
   "blockers": [
    "Publication links remain incomplete: 739 of 1,652 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.",
-   "Identity and claim quality is not yet measured corpus-wide: six of 644 claim-field differences require current review, including two earlier substantive reviews now stale against current evidence and four never-reviewed source anomalies. The other 638 have current exact-evidence decisions, but findspot claims are not yet consistently graded by evidence basis and a reproducible stratified identity audit has not begun.",
+   "Identity and claim quality is not yet measured corpus-wide. All 644 claim-field differences now have current exact-evidence decisions, but findspot claims are not yet consistently graded by evidence basis and a reproducible stratified identity audit has not begun.",
    "Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 53 identities have a translation. Four Wohlstein translations are now scan-checked and a fifth has a checked German reading with embedded Hebrew strings still awaiting specialist review; all five remain withheld pending human publication review. Protected editions are intentionally indexed without copying their text.",
    "Release rights are unreviewed: all 327 media rows now have current fail-closed ledger holds, but zero have completed rights decisions and zero are approved for reuse. The first two-row institutional-policy evidence pilot narrowed contact paths without establishing permission.",
    "The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.",
@@ -676,7 +676,7 @@
     {
      "id": "QA-003",
      "title": "Audit a stratified sample of identity and extraction decisions",
-     "status": "queued",
+     "status": "in_progress",
      "owner": "Research",
      "done_when": "Publish reproducible sample selection across institutions, market records, status classes and merge methods; check primary evidence and report denominators, error categories and uncertainty.",
      "evidence": "Zero generated pending dedupe candidates is queue completion, not measured identity accuracy. Current review examined architecture, integrity, archive hashes, aggregate metrics and selected rule evidence, not all objects."

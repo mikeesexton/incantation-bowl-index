@@ -1,0 +1,3144 @@
+{
+  "schema_version": 1,
+  "audit_id": "QA003-2026-09-20",
+  "generated_at": "2026-09-20T04:00:00+00:00",
+  "seed": "qa003-identity-accuracy-2026-09-20-v1",
+  "population_definition": "All current derived identity hypotheses, including confirmed, probable, candidate, and rejected canonical statuses; one row per identity cluster.",
+  "population_n": 1652,
+  "representative_target_n": 60,
+  "high_risk_target_n": 20,
+  "design": {
+    "strata": [
+      "record_status",
+      "linkage_method",
+      "dominant_source_family"
+    ],
+    "allocation": "One seat per non-empty composite stratum, then largest-remainder allocation proportional to remaining stratum capacity.",
+    "selection": "Ascending SHA-256 rank of seed, sample role, and identity_id.",
+    "estimation": "Representative outcomes use analysis_weight = population_n / stratum_sample_n. High-risk outcomes are reported separately and never pooled into the estimate."
+  },
+  "source_family_mapping": {
+    "museum": [
+      "museum_record"
+    ],
+    "scholarship": [
+      "article",
+      "book",
+      "catalogue",
+      "chapter",
+      "excavation_report",
+      "thesis"
+    ],
+    "market": [
+      "auction_record",
+      "dealer_record"
+    ],
+    "repository_web": [
+      "archive_snapshot",
+      "database",
+      "other",
+      "repository",
+      "web_page"
+    ]
+  },
+  "population_counts_by_stratum": {
+    "candidate|concordance|repository_web": 1,
+    "candidate|exact_identifier|market": 4,
+    "candidate|exact_identifier|museum": 2,
+    "candidate|singleton|market": 30,
+    "candidate|singleton|museum": 279,
+    "candidate|singleton|repository_web": 178,
+    "candidate|singleton|scholarship": 77,
+    "confirmed|exact_identifier|museum": 6,
+    "confirmed|exact_identifier|repository_web": 2,
+    "confirmed|exact_identifier|scholarship": 6,
+    "confirmed|singleton|museum": 235,
+    "confirmed|singleton|repository_web": 3,
+    "confirmed|singleton|scholarship": 20,
+    "probable|concordance|museum": 7,
+    "probable|concordance|repository_web": 7,
+    "probable|concordance|scholarship": 4,
+    "probable|exact_identifier|museum": 38,
+    "probable|exact_identifier|repository_web": 66,
+    "probable|exact_identifier|scholarship": 57,
+    "probable|singleton|market": 4,
+    "probable|singleton|museum": 141,
+    "probable|singleton|repository_web": 3,
+    "probable|singleton|scholarship": 476,
+    "rejected|singleton|scholarship": 6
+  },
+  "representative": [
+    {
+      "identity_id": "IDENT-02B43ABF13D9",
+      "canonical_object_id": "IBI-8516931DE44E",
+      "label": "Isbell 1975 bowl 23 / AIT 12 — COJS translation appearance",
+      "member_ids": [
+        "IBI-02B43ABF13D9",
+        "IBI-3C9042E76702",
+        "IBI-4500756E262F",
+        "IBI-8516931DE44E",
+        "IBI-907E7D4A3B11"
+      ],
+      "member_count": 5,
+      "record_status": "confirmed",
+      "linkage_method": "exact_identifier",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-4955445F0A7A",
+        "SRC-73C44B143A9D",
+        "SRC-943673B56FB8",
+        "SRC-E62506EF1954"
+      ],
+      "source_count": 5,
+      "appearance_count": 5,
+      "claim_count": 16,
+      "identifiers": [
+        "Montgomery 1913 text number: 12",
+        "Penn web object ID: 271620",
+        "Waller 2022 table designation: Isbell 23",
+        "bibliographic concordance: CAIB23",
+        "bibliographic concordance: Montgomery 1913 no. 12",
+        "collection designation: AIT12",
+        "collection designation: B9009",
+        "collection designation: CBS 9009",
+        "publication object key: Isbell 1975::23",
+        "publication object key: Montgomery 1913::12"
+      ],
+      "raw_conflict_fields": [
+        "dimensions",
+        "ritual"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "confirmed|exact_identifier|repository_web",
+      "population_n": 2,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.5,
+      "analysis_weight": 2.0,
+      "evidence_sha256": "c57c228563f77b9afc1644138af2e2a3edbe293231edb4315cdfdfbbb58b6c09"
+    },
+    {
+      "identity_id": "IDENT-04E65150CB94",
+      "canonical_object_id": "IBI-04E65150CB94",
+      "label": "Kedem Auction 32 lot 153",
+      "member_ids": [
+        "IBI-04E65150CB94"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "market",
+      "source_ids": [
+        "SRC-8EBCA8FEF9B5"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 6,
+      "identifiers": [
+        "auction lot key: Kedem 2013-07-02::153"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|market",
+      "population_n": 30,
+      "stratum_sample_n": 2,
+      "inclusion_probability": 0.06666666666666667,
+      "analysis_weight": 15.0,
+      "evidence_sha256": "1687da79579bf75a066547f277e2ae8344401b1b9f118e1b51213b574e7ee4c8"
+    },
+    {
+      "identity_id": "IDENT-0585D0CB4219",
+      "canonical_object_id": "IBI-0585D0CB4219",
+      "label": "Waller 2022: MS 1927/2",
+      "member_ids": [
+        "IBI-0585D0CB4219"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-73C44B143A9D"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Waller 2022 table designation: MS 1927/2",
+        "collection designation: MS 1927/2"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "3eee45da44acadd2fdd3d215a94179d7ed04093c4498af9a007b6169e9318d02"
+    },
+    {
+      "identity_id": "IDENT-071DAEFA6D11",
+      "canonical_object_id": "IBI-071DAEFA6D11",
+      "label": "Waller 2022: JBA 02",
+      "member_ids": [
+        "IBI-071DAEFA6D11",
+        "IBI-D295E71EB908"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 10,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 02",
+        "bibliographic concordance: JBA2",
+        "collection designation: MS 1927/29",
+        "collection designation: MS1927/29",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 2"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|repository_web",
+      "population_n": 66,
+      "stratum_sample_n": 3,
+      "inclusion_probability": 0.045454545454545456,
+      "analysis_weight": 22.0,
+      "evidence_sha256": "65bdd06510b85ebd7b5c584c15f694ef4f33e8298c86506e5f7bff3ed6cb7860"
+    },
+    {
+      "identity_id": "IDENT-0BA49543A616",
+      "canonical_object_id": "IBI-0BA49543A616",
+      "label": "Hilprecht Collection HS 3032 (MRLA 8, 18)",
+      "member_ids": [
+        "IBI-0BA49543A616"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-8A145FAA2EBB"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "collection designation: HS 3032",
+        "publication object key: MRLA 8::18"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "eebd3793d803a9668a46d2aed9f3b5b7f4bd76df6c3aed3234ae5b1a9122697a"
+    },
+    {
+      "identity_id": "IDENT-0C91DE9D2AEC",
+      "canonical_object_id": "IBI-0C91DE9D2AEC",
+      "label": "Apollo Art Auctions 2026 lot 917 warrior bowl",
+      "member_ids": [
+        "IBI-0C91DE9D2AEC",
+        "IBI-793E7D2CCAFD"
+      ],
+      "member_count": 2,
+      "record_status": "candidate",
+      "linkage_method": "exact_identifier",
+      "source_family": "market",
+      "source_ids": [
+        "SRC-77C56EEC7912",
+        "SRC-E7A2136AADE8"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 9,
+      "identifiers": [
+        "auction lot key: Apollo 2026-04-12::917",
+        "auction platform record: Auction Eagle 135362",
+        "auction platform record: Barnebys fiLN9BK-626947463"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|exact_identifier|market",
+      "population_n": 4,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.25,
+      "analysis_weight": 4.0,
+      "evidence_sha256": "e2316e2b1689be684e7930b9928c842644145fa694293afeec216d1204303eb7"
+    },
+    {
+      "identity_id": "IDENT-1096AC7149EC",
+      "canonical_object_id": "IBI-1096AC7149EC",
+      "label": "Waller 2022: JBA 12",
+      "member_ids": [
+        "IBI-1096AC7149EC",
+        "IBI-48EE2D615A84"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 10,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 12",
+        "bibliographic concordance: JBA12",
+        "collection designation: MS 2053/178",
+        "collection designation: MS2053/178",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 12"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|repository_web",
+      "population_n": 7,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.14285714285714285,
+      "analysis_weight": 7.0,
+      "evidence_sha256": "2cff0447d60d8e0f41adc3e450627c2b1a281cd1c36a86fb1ddec08e31d3ec0b"
+    },
+    {
+      "identity_id": "IDENT-15FA5AB2FD95",
+      "canonical_object_id": "IBI-8DBB2FDDBA64",
+      "label": "British Museum 139524: incantation bowl",
+      "member_ids": [
+        "IBI-15FA5AB2FD95",
+        "IBI-3C269118F2F6",
+        "IBI-5530C58CC7B7",
+        "IBI-8DBB2FDDBA64",
+        "IBI-E8D5C937721A"
+      ],
+      "member_count": 5,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-3D4B57D27A24",
+        "SRC-72D809FB4249",
+        "SRC-73C44B143A9D",
+        "SRC-C790CF0327BB"
+      ],
+      "source_count": 5,
+      "appearance_count": 6,
+      "claim_count": 15,
+      "identifiers": [
+        "British Museum museum number: 139524",
+        "British Museum object key: W_1983-1002-2",
+        "British Museum registration URL value: 1983-1002-2",
+        "Waller 2022 table designation: CAMIB 23",
+        "bibliographic concordance: BM023A",
+        "bibliographic concordance: GelC",
+        "collection designation: 023A",
+        "collection designation: BM023A",
+        "collection designation: GelC",
+        "publication object key: Segal 2000::023A"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "language",
+        "location"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|museum",
+      "population_n": 7,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.14285714285714285,
+      "analysis_weight": 7.0,
+      "evidence_sha256": "7761b2b067b8633d32fcf61e60ae71a5bc8d1053f98efb11bfdf3331f69f924d"
+    },
+    {
+      "identity_id": "IDENT-171905420AEE",
+      "canonical_object_id": "IBI-171905420AEE",
+      "label": "Penn B6366: Hebrew Bowl",
+      "member_ids": [
+        "IBI-171905420AEE"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3D9E46333303"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 325247",
+        "collection designation: B6366"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "4b79d4e979f4938c46f8445541cee818b9d981bbcdf6cfd19085e1182cec1188"
+    },
+    {
+      "identity_id": "IDENT-28CCB551F9CE",
+      "canonical_object_id": "IBI-28CCB551F9CE",
+      "label": "Penn 85-48-953: Hebrew Bowl",
+      "member_ids": [
+        "IBI-28CCB551F9CE"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-5B067D515306"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 70578",
+        "collection designation: 85-48-953"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "599a82f7df321cfb19f40db1bb3040dacbd5a67ae28cfd75f1eaadaccc89f3fc"
+    },
+    {
+      "identity_id": "IDENT-2A62E7C24655",
+      "canonical_object_id": "IBI-2A62E7C24655",
+      "label": "Penn B16078: Hebrew Bowl",
+      "member_ids": [
+        "IBI-2A62E7C24655"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3D4D1109BDBA"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 21452",
+        "collection designation: B16078"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "pseudo_script",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "a82eaeac93a5ced0aeef22ab6cde084eed17f132a76bf37a1436489dff08da6d"
+    },
+    {
+      "identity_id": "IDENT-2DB1150EAABF",
+      "canonical_object_id": "IBI-2DB1150EAABF",
+      "label": "056A",
+      "member_ids": [
+        "IBI-2DB1150EAABF",
+        "IBI-9DD46C157766"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-72D809FB4249"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 2,
+      "identifiers": [
+        "collection designation: 056A",
+        "collection designation: BM056A",
+        "publication object key: Segal 2000::056A"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|repository_web",
+      "population_n": 66,
+      "stratum_sample_n": 3,
+      "inclusion_probability": 0.045454545454545456,
+      "analysis_weight": 22.0,
+      "evidence_sha256": "ccd6d0ec436722a8e6d8a23ce65d7238ca994b47cc27b53c9ba0db8a0248ff14"
+    },
+    {
+      "identity_id": "IDENT-329BB470A7D9",
+      "canonical_object_id": "IBI-329BB470A7D9",
+      "label": "Vorderasiatisches Museum VA.Bab.2832 (catalogue 143)",
+      "member_ids": [
+        "IBI-329BB470A7D9"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-53B93C8C8A0E",
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 6,
+      "identifiers": [
+        "collection designation: VA Bab. 2832",
+        "collection designation: VA.Bab.2832",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::143",
+        "publication object key: Burberry 2020::ACB 17"
+      ],
+      "raw_conflict_fields": [
+        "language",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "8db2ca1ed152c2490de5c90a19e5453365417e0b83791699f25da11e2b3423dd"
+    },
+    {
+      "identity_id": "IDENT-3710A9140539",
+      "canonical_object_id": "IBI-3710A9140539",
+      "label": "Vorderasiatisches Museum VA.2485 (catalogue 56)",
+      "member_ids": [
+        "IBI-3710A9140539"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-53B93C8C8A0E",
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 6,
+      "identifiers": [
+        "collection designation: VA 2485",
+        "collection designation: VA.2485",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::56",
+        "publication object key: Burberry 2020::ACB 3"
+      ],
+      "raw_conflict_fields": [
+        "language",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "4623bb30120b11caf09d3177421f1a0df82159bedc2e4b3462e22ce82414ecb5"
+    },
+    {
+      "identity_id": "IDENT-392B4F4424B7",
+      "canonical_object_id": "IBI-392B4F4424B7",
+      "label": "Penn B16071: Hebrew Bowl",
+      "member_ids": [
+        "IBI-392B4F4424B7"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-9B4DFF0C5A9E"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 339952",
+        "collection designation: B16071"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "pseudo_script",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "2805a0c7d6bfb92b4206f37acb4d6d0dee73980756470088ef3c9817ef1f095e"
+    },
+    {
+      "identity_id": "IDENT-3AE967E7EFF9",
+      "canonical_object_id": "IBI-3AE967E7EFF9",
+      "label": "Apotropaic index AMBB12a",
+      "member_ids": [
+        "IBI-3AE967E7EFF9"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 0,
+      "identifiers": [
+        "collection designation: AMBB12a"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|repository_web",
+      "population_n": 178,
+      "stratum_sample_n": 5,
+      "inclusion_probability": 0.028089887640449437,
+      "analysis_weight": 35.6,
+      "evidence_sha256": "88a97f14042443a8f563a48d1c0b70bf3e0da62929d18d9f9ebfe81de3a4dfca"
+    },
+    {
+      "identity_id": "IDENT-3D8358A1D0CC",
+      "canonical_object_id": "IBI-3D8358A1D0CC",
+      "label": "Ostracon Ancient Art item 1455520",
+      "member_ids": [
+        "IBI-3D8358A1D0CC"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "market",
+      "source_ids": [
+        "SRC-7E3137FE462C"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 9,
+      "identifiers": [
+        "dealer item key: Ostracon/Trocadero 1455520"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "pseudo_script",
+      "stratum": "candidate|singleton|market",
+      "population_n": 30,
+      "stratum_sample_n": 2,
+      "inclusion_probability": 0.06666666666666667,
+      "analysis_weight": 15.0,
+      "evidence_sha256": "2bce100c8b285c44ef0d9cbd52d2347652d2b677de184e37977bdf6e929bfdee"
+    },
+    {
+      "identity_id": "IDENT-452BB04A61D1",
+      "canonical_object_id": "IBI-452BB04A61D1",
+      "label": "Naveh–Shaked 1985 Bowl 13: V. Klagsbald collection",
+      "member_ids": [
+        "IBI-452BB04A61D1"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-1E2E21DC61BD"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "publication object key: Naveh-Shaked 1985::Bowl 13"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "44292dc0b51eb26f96562e02ff3f2274a135790957c7834433dc4ee0deb5e479"
+    },
+    {
+      "identity_id": "IDENT-49DD527F5D94",
+      "canonical_object_id": "IBI-49DD527F5D94",
+      "label": "Apotropaic index MS2053/167",
+      "member_ids": [
+        "IBI-49DD527F5D94"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 7,
+      "identifiers": [
+        "bibliographic concordance: JBA40",
+        "collection designation: MS 2053/167",
+        "collection designation: MS2053/167",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 40"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|repository_web",
+      "population_n": 178,
+      "stratum_sample_n": 5,
+      "inclusion_probability": 0.028089887640449437,
+      "analysis_weight": 35.6,
+      "evidence_sha256": "50a28ebd00f6c319b1e4f18fe210deeb31a967caecca9e61e1afab3ba56cb007"
+    },
+    {
+      "identity_id": "IDENT-4AC688F5E515",
+      "canonical_object_id": "IBI-E4602FCF2E34",
+      "label": "Smelik 1978 Allard Pierson bowl",
+      "member_ids": [
+        "IBI-4AC688F5E515",
+        "IBI-A3611322C9BE",
+        "IBI-E4602FCF2E34"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-589994C2222B",
+        "SRC-A90AB34CA3FE"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 6,
+      "identifiers": [
+        "Kedar 2019 NFP number: 8",
+        "bibliographic concordance: AP 9163",
+        "collection designation: AP9163",
+        "collection designation: Smelik 1978 Allard Pierson bowl"
+      ],
+      "raw_conflict_fields": [
+        "language",
+        "location"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|scholarship",
+      "population_n": 4,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.25,
+      "analysis_weight": 4.0,
+      "evidence_sha256": "c43318e45dc991c4b0e0d3965ee8914f966ba3c548e7d9db5664cd56025e8e63"
+    },
+    {
+      "identity_id": "IDENT-4DB8590DEAB5",
+      "canonical_object_id": "IBI-4DB8590DEAB5",
+      "label": "Vorderasiatisches Museum VA.Bab.4366a (catalogue 166)",
+      "member_ids": [
+        "IBI-4DB8590DEAB5"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "collection designation: VA.Bab.4366a",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::166"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "pseudo_script",
+      "stratum": "candidate|singleton|scholarship",
+      "population_n": 77,
+      "stratum_sample_n": 3,
+      "inclusion_probability": 0.03896103896103896,
+      "analysis_weight": 25.666666666666668,
+      "evidence_sha256": "c60e39cf148bc6dc9318bb4450949885e6475995e91b9aa4e55dd91478597e3e"
+    },
+    {
+      "identity_id": "IDENT-5344FF63115C",
+      "canonical_object_id": "IBI-5344FF63115C",
+      "label": "Penn B16038: Hebrew Bowl",
+      "member_ids": [
+        "IBI-5344FF63115C"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-FF18D9451680"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 151160",
+        "collection designation: B16038"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "d391ee7765d35233d907ded4a6d2fde04fbd2db348f4f70f2a5e381c93f9b7f0"
+    },
+    {
+      "identity_id": "IDENT-5430A0855D0E",
+      "canonical_object_id": "IBI-5430A0855D0E",
+      "label": "Nippur 18N18",
+      "member_ids": [
+        "IBI-5430A0855D0E"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-899462FAA735"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "field number: 18N18"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "confirmed|singleton|scholarship",
+      "population_n": 20,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.05,
+      "analysis_weight": 20.0,
+      "evidence_sha256": "375c365a04976bc74490ad188f0439d8e091444a4d2816a7e8b71960a51ec244"
+    },
+    {
+      "identity_id": "IDENT-558CF7614F99",
+      "canonical_object_id": "IBI-EAC93F99B3EE",
+      "label": "068A",
+      "member_ids": [
+        "IBI-558CF7614F99",
+        "IBI-EAC93F99B3EE"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-72D809FB4249"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 1,
+      "identifiers": [
+        "collection designation: 068A",
+        "collection designation: BM068A",
+        "publication object key: Segal 2000::068A"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|repository_web",
+      "population_n": 66,
+      "stratum_sample_n": 3,
+      "inclusion_probability": 0.045454545454545456,
+      "analysis_weight": 22.0,
+      "evidence_sha256": "a1d75b45c397e3bb30d55ec3cb07187fe238553b52b758cde34b22cd34b843b1"
+    },
+    {
+      "identity_id": "IDENT-56796E0EB0E2",
+      "canonical_object_id": "IBI-56796E0EB0E2",
+      "label": "Waller 2022: HS 3005",
+      "member_ids": [
+        "IBI-56796E0EB0E2",
+        "IBI-86EAEBF08875",
+        "IBI-9864B55DD2CF"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-73C44B143A9D",
+        "SRC-8A145FAA2EBB"
+      ],
+      "source_count": 2,
+      "appearance_count": 3,
+      "claim_count": 9,
+      "identifiers": [
+        "Waller 2022 table designation: HS 3005",
+        "Waller 2022 table designation: Isbell 55",
+        "bibliographic concordance: HS 3005",
+        "collection designation: HS 3005",
+        "publication object key: Isbell 1975::55",
+        "publication object key: MRLA 8::3"
+      ],
+      "raw_conflict_fields": [
+        "language",
+        "location"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|scholarship",
+      "population_n": 57,
+      "stratum_sample_n": 2,
+      "inclusion_probability": 0.03508771929824561,
+      "analysis_weight": 28.5,
+      "evidence_sha256": "bb93dac54867d4ac8c90801bb3d47ff276194309f3318226e26f93da919e7db7"
+    },
+    {
+      "identity_id": "IDENT-6005503283A5",
+      "canonical_object_id": "IBI-B6246E14776E",
+      "label": "CBS 2916",
+      "member_ids": [
+        "IBI-6005503283A5",
+        "IBI-97EA83DC09F6",
+        "IBI-B6246E14776E"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-756FA4A26B5C",
+        "SRC-943673B56FB8"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 12,
+      "identifiers": [
+        "Montgomery 1913 text number: 6",
+        "Penn web object ID: 254819",
+        "bibliographic concordance: CAIB11",
+        "bibliographic concordance: Montgomery 1913 no. 6",
+        "collection designation: AIT6",
+        "collection designation: B2916",
+        "collection designation: CBS 2916",
+        "publication object key: Montgomery 1913::6"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|museum",
+      "population_n": 38,
+      "stratum_sample_n": 2,
+      "inclusion_probability": 0.05263157894736842,
+      "analysis_weight": 19.0,
+      "evidence_sha256": "ab075505568eafdc29a3a9f1079796c6b389f552fff867c160b34036928c8a2c"
+    },
+    {
+      "identity_id": "IDENT-618DB7091347",
+      "canonical_object_id": "IBI-618DB7091347",
+      "label": "NLI incantation bowl 195 (Ms. Heb. 9467.182)",
+      "member_ids": [
+        "IBI-618DB7091347"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-4E99FA9CB36E"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "NLI MMS ID: 997008712398005171",
+        "NLI bowl number: 195",
+        "collection designation: Ms. Heb. 9467.182"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "confirmed|singleton|museum",
+      "population_n": 235,
+      "stratum_sample_n": 6,
+      "inclusion_probability": 0.02553191489361702,
+      "analysis_weight": 39.166666666666664,
+      "evidence_sha256": "3307df628bd68c2e6e2ad5a2623b32cf8f7150caee1c5b3450124c0cf8e27598"
+    },
+    {
+      "identity_id": "IDENT-620A239DAA70",
+      "canonical_object_id": "IBI-620A239DAA70",
+      "label": "Schøyen MS 2053/156 (context citation)",
+      "member_ids": [
+        "IBI-620A239DAA70",
+        "IBI-6290A5A4DDFB"
+      ],
+      "member_count": 2,
+      "record_status": "candidate",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-C54888E36130"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 2,
+      "identifiers": [
+        "bibliographic concordance: JBA58",
+        "collection designation: MS 2053/156",
+        "collection designation: MS2053/156"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|exact_identifier|museum",
+      "population_n": 2,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.5,
+      "analysis_weight": 2.0,
+      "evidence_sha256": "36f7af09d493257153c7c44670aae0b21b27bbab2a13d25775d8bb26492f93d6"
+    },
+    {
+      "identity_id": "IDENT-68042E5AC552",
+      "canonical_object_id": "IBI-68042E5AC552",
+      "label": "Apotropaic index MS2053/209",
+      "member_ids": [
+        "IBI-68042E5AC552"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 6,
+      "identifiers": [
+        "bibliographic concordance: JBA51",
+        "collection designation: MS 2053/209",
+        "collection designation: MS2053/209",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 51"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|repository_web",
+      "population_n": 178,
+      "stratum_sample_n": 5,
+      "inclusion_probability": 0.028089887640449437,
+      "analysis_weight": 35.6,
+      "evidence_sha256": "42c567b57a6c4f292e82d950328333643db95eae1574fc7bd5681aa077695ad0"
+    },
+    {
+      "identity_id": "IDENT-6849AB56769C",
+      "canonical_object_id": "IBI-6849AB56769C",
+      "label": "Pognon 1898 Khouabir bowl 4",
+      "member_ids": [
+        "IBI-6849AB56769C"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-E7D5F020B31C"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "publication object key: Pognon 1898::4"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "4e860112b604daea93eeb3d25e4cac9e0367abd8d294517be30fccf11efb6e75"
+    },
+    {
+      "identity_id": "IDENT-6FFBC39A1B6B",
+      "canonical_object_id": "IBI-6FFBC39A1B6B",
+      "label": "Vorderasiatisches Museum VA.Bab.2824 (catalogue 135)",
+      "member_ids": [
+        "IBI-6FFBC39A1B6B"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "collection designation: VA.Bab.2824",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::135"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "9a4c3c280115cf455592ba3b03401c856eab9c9400264166a67d72f58349ae35"
+    },
+    {
+      "identity_id": "IDENT-7121B35A7FC1",
+      "canonical_object_id": "IBI-7121B35A7FC1",
+      "label": "Levene 2013: Royal Ontario Museum 907.1.1",
+      "member_ids": [
+        "IBI-7121B35A7FC1"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-F2BEFBEFFC2E"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "collection designation: Royal Ontario Museum 907.1.1",
+        "publication object key: Levene 2013::Royal Ontario Museum 907.1.1"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "df948ca5c5b5adb41c499d714d23aa4faa69f5437cd533f6ff7f0f61b95f4d10"
+    },
+    {
+      "identity_id": "IDENT-79A4D3B0726E",
+      "canonical_object_id": "IBI-79A4D3B0726E",
+      "label": "NLI incantation bowl 64 (Ms. Heb. 9467.60)",
+      "member_ids": [
+        "IBI-79A4D3B0726E"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-C0872322A931"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "NLI MMS ID: 997008712406605171",
+        "NLI bowl number: 64",
+        "collection designation: Ms. Heb. 9467.60"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "confirmed|singleton|museum",
+      "population_n": 235,
+      "stratum_sample_n": 6,
+      "inclusion_probability": 0.02553191489361702,
+      "analysis_weight": 39.166666666666664,
+      "evidence_sha256": "d9b5887f97e78570743ac51c9c014d8c4e53eb8cef2074e31eeb195f1e812e20"
+    },
+    {
+      "identity_id": "IDENT-83E3E5673339",
+      "canonical_object_id": "IBI-83E3E5673339",
+      "label": "Apotropaic index MSFB18",
+      "member_ids": [
+        "IBI-83E3E5673339",
+        "IBI-AD2976FBA996"
+      ],
+      "member_count": 2,
+      "record_status": "candidate",
+      "linkage_method": "concordance",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794"
+      ],
+      "source_count": 1,
+      "appearance_count": 2,
+      "claim_count": 0,
+      "identifiers": [
+        "bibliographic concordance: ABA",
+        "bibliographic concordance: JFM7",
+        "collection designation: ABA",
+        "collection designation: MSFB18"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|concordance|repository_web",
+      "population_n": 1,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 1.0,
+      "analysis_weight": 1.0,
+      "evidence_sha256": "4c5d98fb339efa6ab3bb2cdd04ee8d46ad31a570f395bfea42e3df1d9f703b6f"
+    },
+    {
+      "identity_id": "IDENT-843CFCE02D20",
+      "canonical_object_id": "IBI-843CFCE02D20",
+      "label": "State Hermitage Museum S-447",
+      "member_ids": [
+        "IBI-843CFCE02D20",
+        "IBI-84940DBA48F7"
+      ],
+      "member_count": 2,
+      "record_status": "confirmed",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-73C44B143A9D",
+        "SRC-EB27DA285DC5"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 3,
+      "identifiers": [
+        "Waller 2022 table designation: S-447",
+        "bibliographic concordance: SHM 5",
+        "collection designation: S-447"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "confirmed|exact_identifier|scholarship",
+      "population_n": 6,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.16666666666666666,
+      "analysis_weight": 6.0,
+      "evidence_sha256": "3bece6e134ab50a58d0d0885666da8934634e0e4fb6edec9f75faa5851b1fa51"
+    },
+    {
+      "identity_id": "IDENT-898A714F8DDE",
+      "canonical_object_id": "IBI-898A714F8DDE",
+      "label": "Penn B16069: Hebrew Bowl",
+      "member_ids": [
+        "IBI-898A714F8DDE"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-57D7DC37C6A4"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 54420",
+        "collection designation: B16069"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "7df59155663be3a22f1e104ab69f7127f796873da50b4c1c82eefb5932f244eb"
+    },
+    {
+      "identity_id": "IDENT-8CB0CA407E6E",
+      "canonical_object_id": "IBI-8CB0CA407E6E",
+      "label": "British Museum 117827: incantation bowl",
+      "member_ids": [
+        "IBI-8CB0CA407E6E",
+        "IBI-90B88EACB9FB",
+        "IBI-F2C9E1AF8B6B"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-3D4B57D27A24",
+        "SRC-53AFEA741E4F",
+        "SRC-72D809FB4249"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 15,
+      "identifiers": [
+        "British Museum museum number: 117827",
+        "British Museum object key: W_1925-1015-7",
+        "British Museum registration URL value: 1925-1015-7",
+        "collection designation: 018A",
+        "collection designation: BM018A",
+        "publication object key: Segal 2000::018A"
+      ],
+      "raw_conflict_fields": [
+        "condition",
+        "dating",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|museum",
+      "population_n": 38,
+      "stratum_sample_n": 2,
+      "inclusion_probability": 0.05263157894736842,
+      "analysis_weight": 19.0,
+      "evidence_sha256": "a72f9eee1faeaaac29c4c63f54c8fece54e0654a07ad551fd2af542cecd98393"
+    },
+    {
+      "identity_id": "IDENT-9078953DB2E7",
+      "canonical_object_id": "IBI-9078953DB2E7",
+      "label": "Barakat Gallery X.0552",
+      "member_ids": [
+        "IBI-9078953DB2E7"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "market",
+      "source_ids": [
+        "SRC-B1A37FD6D79D"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 10,
+      "identifiers": [
+        "dealer stock number: X.0552",
+        "dealer web record: 54886"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|market",
+      "population_n": 4,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.25,
+      "analysis_weight": 4.0,
+      "evidence_sha256": "31777588743a50450e39997b4d4a908eb2690335abd5ebf77b08933ae239641d"
+    },
+    {
+      "identity_id": "IDENT-9092CCC4D2C5",
+      "canonical_object_id": "IBI-9092CCC4D2C5",
+      "label": "NLI incantation bowl 208 (Ms. Heb. 9467.4)",
+      "member_ids": [
+        "IBI-9092CCC4D2C5"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-AF90A597E493"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "NLI MMS ID: 997008712410305171",
+        "NLI bowl number: 208",
+        "collection designation: Ms. Heb. 9467.4"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "confirmed|singleton|museum",
+      "population_n": 235,
+      "stratum_sample_n": 6,
+      "inclusion_probability": 0.02553191489361702,
+      "analysis_weight": 39.166666666666664,
+      "evidence_sha256": "1f53b72302f0254190c46565a2045da65b4469a03f7ab5555cf8e4a8252a6d23"
+    },
+    {
+      "identity_id": "IDENT-90E3D2265AC0",
+      "canonical_object_id": "IBI-90E3D2265AC0",
+      "label": "MS 2056/12: Zoroastrian Incantations Against Demons",
+      "member_ids": [
+        "IBI-90E3D2265AC0"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-CCB4BB4FAD99"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 8,
+      "identifiers": [
+        "collection designation: MS 2056/12"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "probable|singleton|museum",
+      "population_n": 141,
+      "stratum_sample_n": 4,
+      "inclusion_probability": 0.028368794326241134,
+      "analysis_weight": 35.25,
+      "evidence_sha256": "edec69dab2130c95a76482a7d0d6e4e2341dd39e63c84dc6637d932929bfc24a"
+    },
+    {
+      "identity_id": "IDENT-920AA91FFE7D",
+      "canonical_object_id": "IBI-920AA91FFE7D",
+      "label": "Vorderasiatisches Museum VA.2484 (catalogue 55)",
+      "member_ids": [
+        "IBI-920AA91FFE7D",
+        "IBI-9F5523CA69BE",
+        "IBI-D2D12615DAA7"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-0B6C0E1133EF",
+        "SRC-73C44B143A9D",
+        "SRC-DA708912C2D3",
+        "SRC-F2BEFBEFFC2E"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 12,
+      "identifiers": [
+        "Waller 2022 table designation: VA 2484",
+        "collection designation: VA 2484",
+        "collection designation: VA.2484",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::55",
+        "publication object key: Levene 2013::VA.2484",
+        "publication object key: Stübe 1895::10"
+      ],
+      "raw_conflict_fields": [
+        "language",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|scholarship",
+      "population_n": 57,
+      "stratum_sample_n": 2,
+      "inclusion_probability": 0.03508771929824561,
+      "analysis_weight": 28.5,
+      "evidence_sha256": "85b023385d8c1d2e8e3fd05e9524d95cd26aa53168472909c0c092338c2e5529"
+    },
+    {
+      "identity_id": "IDENT-92F5B3CC2C41",
+      "canonical_object_id": "IBI-92F5B3CC2C41",
+      "label": "British Museum 136203: incantation bowl",
+      "member_ids": [
+        "IBI-92F5B3CC2C41"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3D4B57D27A24"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "British Museum museum number: 136203",
+        "British Museum object key: W_1974-1209-1",
+        "British Museum registration URL value: 1974-1209-1"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|museum",
+      "population_n": 141,
+      "stratum_sample_n": 4,
+      "inclusion_probability": 0.028368794326241134,
+      "analysis_weight": 35.25,
+      "evidence_sha256": "dd6acc7049fdde0d5d656c9a20097ed59b928961ca2cf76b9ee1f19b090eee27"
+    },
+    {
+      "identity_id": "IDENT-961CF43D968B",
+      "canonical_object_id": "IBI-961CF43D968B",
+      "label": "Schøyen MS 2053/166 (JBA 58)",
+      "member_ids": [
+        "IBI-961CF43D968B"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 6,
+      "identifiers": [
+        "collection designation: MS 2053/166",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 58"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|repository_web",
+      "population_n": 3,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.3333333333333333,
+      "analysis_weight": 3.0,
+      "evidence_sha256": "28fd332bc8d5df3b05aaf7207f9eaae97046467e94269b578e676a7e1b0294fe"
+    },
+    {
+      "identity_id": "IDENT-9DBFAB96E544",
+      "canonical_object_id": "IBI-9DBFAB96E544",
+      "label": "Vorderasiatisches Museum VA.2574 (catalogue 82)",
+      "member_ids": [
+        "IBI-9DBFAB96E544"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "collection designation: VA.2574",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::82"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "b6cc9616733032fc24129ef61b5ee0f0474ba99a0219ef2cd302cab3dc8aee37"
+    },
+    {
+      "identity_id": "IDENT-A4F154B0CB2E",
+      "canonical_object_id": "IBI-A4F154B0CB2E",
+      "label": "Museo delle Civiltà IsIAO 5206",
+      "member_ids": [
+        "IBI-A4F154B0CB2E"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3C4294DDB367",
+        "SRC-455442AA727F"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 14,
+      "identifiers": [
+        "collection designation: IsIAO 5206",
+        "publication designation: Moriggi 2014 bowl 26: IsIAO 5206",
+        "publication object key: Moriggi 2014::26",
+        "publication object key: Moriggi 2014::IsIAO5206"
+      ],
+      "raw_conflict_fields": [
+        "condition",
+        "dating",
+        "script"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "confirmed|singleton|repository_web",
+      "population_n": 3,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.3333333333333333,
+      "analysis_weight": 3.0,
+      "evidence_sha256": "adaea55e03431240d044c63afcea52c0492cea8a3e59c84f80c9206fdd5b5878"
+    },
+    {
+      "identity_id": "IDENT-A64AB908A49B",
+      "canonical_object_id": "IBI-A64AB908A49B",
+      "label": "Vorderasiatisches Museum VA.2453 (catalogue 47)",
+      "member_ids": [
+        "IBI-A64AB908A49B"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "collection designation: VA.2453",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::47"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "5616a70c440912e36dae45b02ee3d193512051ebef51be76cec0c94d0f20f483"
+    },
+    {
+      "identity_id": "IDENT-AA67AEE8E98C",
+      "canonical_object_id": "IBI-AA67AEE8E98C",
+      "label": "Schwab P (Dieulafoy Susiana bowl)",
+      "member_ids": [
+        "IBI-AA67AEE8E98C"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-943673B56FB8",
+        "SRC-F42955665921"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 7,
+      "identifiers": [
+        "Montgomery 1913 bibliography letter: P",
+        "Schwab 1891 item: P"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "217577f2e9a16d8cd12993ac420ae01e053c92d5ce5c6a2d8e6065400b93895c"
+    },
+    {
+      "identity_id": "IDENT-AD8EFB15E4A0",
+      "canonical_object_id": "IBI-AD8EFB15E4A0",
+      "label": "Schøyen Collection MS 1911/2",
+      "member_ids": [
+        "IBI-AD8EFB15E4A0"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-292E3E15363B"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 8,
+      "identifiers": [
+        "collection designation: MS 1911/2"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "confirmed|singleton|museum",
+      "population_n": 235,
+      "stratum_sample_n": 6,
+      "inclusion_probability": 0.02553191489361702,
+      "analysis_weight": 39.166666666666664,
+      "evidence_sha256": "16ea55beb01bba2f4e256cdcc007914945dc5f9509d7447bd799a517b4e22fd9"
+    },
+    {
+      "identity_id": "IDENT-BA780DAAB6D8",
+      "canonical_object_id": "IBI-BA780DAAB6D8",
+      "label": "Vorderasiatisches Museum VA.2459 (skull) (catalogue 53)",
+      "member_ids": [
+        "IBI-BA780DAAB6D8"
+      ],
+      "member_count": 1,
+      "record_status": "rejected",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-0B6C0E1133EF",
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 6,
+      "identifiers": [
+        "collection designation: VA 2459",
+        "collection designation: VA.2459",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::53",
+        "publication object key: Stübe 1895::15"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "pseudo_script",
+      "stratum": "rejected|singleton|scholarship",
+      "population_n": 6,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.16666666666666666,
+      "analysis_weight": 6.0,
+      "evidence_sha256": "d9d597f893adb509fbb4c22acb2aa0901e0280d2a3999428439512b1211a6866"
+    },
+    {
+      "identity_id": "IDENT-C31D6B6016A8",
+      "canonical_object_id": "IBI-C31D6B6016A8",
+      "label": "British Museum 91768: incantation bowl",
+      "member_ids": [
+        "IBI-C31D6B6016A8"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3D4B57D27A24"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "British Museum museum number: 91768",
+        "British Museum object key: W_1886-0109-9",
+        "British Museum registration URL value: 1886-0109-9"
+      ],
+      "raw_conflict_fields": [
+        "dating"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|museum",
+      "population_n": 141,
+      "stratum_sample_n": 4,
+      "inclusion_probability": 0.028368794326241134,
+      "analysis_weight": 35.25,
+      "evidence_sha256": "c6d6a1182bc36dd22addf09d850fba0408ccc9cbc394f2fea0009d120611d607"
+    },
+    {
+      "identity_id": "IDENT-C7A7DEBCC1FE",
+      "canonical_object_id": "IBI-C7A7DEBCC1FE",
+      "label": "Penn B2949: Hebrew Bowl",
+      "member_ids": [
+        "IBI-C7A7DEBCC1FE"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-76E6A8834112"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Penn web object ID: 67590",
+        "collection designation: B2949"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|museum",
+      "population_n": 279,
+      "stratum_sample_n": 7,
+      "inclusion_probability": 0.025089605734767026,
+      "analysis_weight": 39.857142857142854,
+      "evidence_sha256": "118bd1b6de9041c8fdc8005791d41de52d433de7e7584f31add74edb009de0e5"
+    },
+    {
+      "identity_id": "IDENT-CEBD4DE0052A",
+      "canonical_object_id": "IBI-CEBD4DE0052A",
+      "label": "Vorderasiatisches Museum VA.2413 (catalogue 9)",
+      "member_ids": [
+        "IBI-CEBD4DE0052A"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-0B6C0E1133EF",
+        "SRC-DA708912C2D3"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 7,
+      "identifiers": [
+        "collection designation: VA 2413",
+        "collection designation: VA.2413",
+        "publication object key: Bhayro-Ford-Levene-Saar 2018::9",
+        "publication object key: Stübe 1895::2"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "pseudo_script",
+      "stratum": "candidate|singleton|scholarship",
+      "population_n": 77,
+      "stratum_sample_n": 3,
+      "inclusion_probability": 0.03896103896103896,
+      "analysis_weight": 25.666666666666668,
+      "evidence_sha256": "7dd8ef971979671cccb375a495e12b60f9d13e3a0ecc98b61952b015b28078a7"
+    },
+    {
+      "identity_id": "IDENT-CFBE7C2A87F5",
+      "canonical_object_id": "IBI-CFBE7C2A87F5",
+      "label": "NLI incantation bowl 44 (Ms. Heb. 9467.175)",
+      "member_ids": [
+        "IBI-CFBE7C2A87F5"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-9D9A654A4A94"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "NLI MMS ID: 997008712395405171",
+        "NLI bowl number: 44",
+        "collection designation: Ms. Heb. 9467.175"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "confirmed|singleton|museum",
+      "population_n": 235,
+      "stratum_sample_n": 6,
+      "inclusion_probability": 0.02553191489361702,
+      "analysis_weight": 39.166666666666664,
+      "evidence_sha256": "f4500d40b94f422e93200d808a6905ee431ae174b556208c5f9845dc4df41090"
+    },
+    {
+      "identity_id": "IDENT-D4E7693AE9F1",
+      "canonical_object_id": "IBI-D4E7693AE9F1",
+      "label": "Apotropaic index IM49972",
+      "member_ids": [
+        "IBI-D4E7693AE9F1"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 0,
+      "identifiers": [
+        "collection designation: IM49972"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|repository_web",
+      "population_n": 178,
+      "stratum_sample_n": 5,
+      "inclusion_probability": 0.028089887640449437,
+      "analysis_weight": 35.6,
+      "evidence_sha256": "fa66979dea457eb007065b9cb49e71968e1c7d75373246c78b30197fd02232d3"
+    },
+    {
+      "identity_id": "IDENT-DB6683F21ED5",
+      "canonical_object_id": "IBI-DB6683F21ED5",
+      "label": "Yale Babylonian Collection YBC 2359",
+      "member_ids": [
+        "IBI-DB6683F21ED5",
+        "IBI-E27F43D96092"
+      ],
+      "member_count": 2,
+      "record_status": "confirmed",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-D2482299BAC7"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 6,
+      "identifiers": [
+        "bibliographic concordance: CAIB61",
+        "collection designation: YBC 2359",
+        "collection designation: YBC2359"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "confirmed|exact_identifier|museum",
+      "population_n": 6,
+      "stratum_sample_n": 1,
+      "inclusion_probability": 0.16666666666666666,
+      "analysis_weight": 6.0,
+      "evidence_sha256": "767571518a7dc845ac2c7b0920a40c0849f0db9624d9cef4dc2eaba8fa2564ac"
+    },
+    {
+      "identity_id": "IDENT-DE76B61B6C76",
+      "canonical_object_id": "IBI-DE76B61B6C76",
+      "label": "Waller 2022: MS 2053/130",
+      "member_ids": [
+        "IBI-DE76B61B6C76"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-73C44B143A9D"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 3,
+      "identifiers": [
+        "Waller 2022 table designation: MS 2053/130",
+        "collection designation: MS 2053/130"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "accepted",
+      "stratum": "probable|singleton|scholarship",
+      "population_n": 476,
+      "stratum_sample_n": 12,
+      "inclusion_probability": 0.025210084033613446,
+      "analysis_weight": 39.666666666666664,
+      "evidence_sha256": "f8716516cea15b3667a9f4fa43486c6b928af7dc3f88b820855dbed81ca60a96"
+    },
+    {
+      "identity_id": "IDENT-F881E6B2BBA7",
+      "canonical_object_id": "IBI-F881E6B2BBA7",
+      "label": "British Museum 91741: incantation bowl",
+      "member_ids": [
+        "IBI-F881E6B2BBA7"
+      ],
+      "member_count": 1,
+      "record_status": "probable",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3D4B57D27A24"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "British Museum museum number: 91741",
+        "British Museum object key: W_1881-0714-9",
+        "British Museum registration URL value: 1881-0714-9"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "probable|singleton|museum",
+      "population_n": 141,
+      "stratum_sample_n": 4,
+      "inclusion_probability": 0.028368794326241134,
+      "analysis_weight": 35.25,
+      "evidence_sha256": "37fdbb3066905de324e5caa27b5efd9689345ae30ac2986088c5e3c27094a41f"
+    },
+    {
+      "identity_id": "IDENT-F99341421AE4",
+      "canonical_object_id": "IBI-F99341421AE4",
+      "label": "NLI incantation bowl 174 (Ms. Heb. 9467.97)",
+      "member_ids": [
+        "IBI-F99341421AE4"
+      ],
+      "member_count": 1,
+      "record_status": "confirmed",
+      "linkage_method": "singleton",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-A48B67BA0E61"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 5,
+      "identifiers": [
+        "NLI MMS ID: 997008712405705171",
+        "NLI bowl number: 174",
+        "collection designation: Ms. Heb. 9467.97"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "confirmed|singleton|museum",
+      "population_n": 235,
+      "stratum_sample_n": 6,
+      "inclusion_probability": 0.02553191489361702,
+      "analysis_weight": 39.166666666666664,
+      "evidence_sha256": "4e5f2ca60fab8bd4abd86a0c179017f9def3d16664d81720aa41c0f82cee57c4"
+    },
+    {
+      "identity_id": "IDENT-FA62D628951C",
+      "canonical_object_id": "IBI-FA62D628951C",
+      "label": "Apotropaic index CAIB63",
+      "member_ids": [
+        "IBI-FA62D628951C"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 0,
+      "identifiers": [
+        "collection designation: CAIB63"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|repository_web",
+      "population_n": 178,
+      "stratum_sample_n": 5,
+      "inclusion_probability": 0.028089887640449437,
+      "analysis_weight": 35.6,
+      "evidence_sha256": "1f8bf8d87cb439513342d8dc313ddbbf9199d7827480fbe7df341bd95dc39c13"
+    },
+    {
+      "identity_id": "IDENT-FORD2014-DAV27",
+      "canonical_object_id": "IBI-FORD2014-DAV27",
+      "label": "Davidovitz 27 (Ford 2014)",
+      "member_ids": [
+        "IBI-FORD2014-DAV27"
+      ],
+      "member_count": 1,
+      "record_status": "candidate",
+      "linkage_method": "singleton",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-FORD2014-AUOR"
+      ],
+      "source_count": 1,
+      "appearance_count": 1,
+      "claim_count": 4,
+      "identifiers": [
+        "collection designation: Davidovitz 27",
+        "publication object key: Ford 2014 Aula Orientalis::Davidovitz 27"
+      ],
+      "raw_conflict_fields": [],
+      "substantive_conflict_fields": [],
+      "authenticity": "unassessed",
+      "stratum": "candidate|singleton|scholarship",
+      "population_n": 77,
+      "stratum_sample_n": 3,
+      "inclusion_probability": 0.03896103896103896,
+      "analysis_weight": 25.666666666666668,
+      "evidence_sha256": "153c870351f63f1676bfa2a3c3027249c86a3c167984aeaf123cc70e3398cce2"
+    }
+  ],
+  "high_risk": [
+    {
+      "identity_id": "IDENT-01B582E3244E",
+      "canonical_object_id": "IBI-74B3A0AA8A87",
+      "label": "British Museum 117882: incantation bowl; lid",
+      "member_ids": [
+        "IBI-01B582E3244E",
+        "IBI-74B3A0AA8A87"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3D4B57D27A24",
+        "SRC-71F6B506CE96",
+        "SRC-72D809FB4249"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 14,
+      "identifiers": [
+        "British Museum museum number: 117882",
+        "British Museum object key: W_1883-0118-AH-2601",
+        "British Museum registration URL value: 1883-0118-AH-2601",
+        "collection designation: 119ES",
+        "publication object key: Segal 2000::119ES"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "language",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [
+        "language"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|museum",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "32a92274249d53f227af06891434b8d5598ec97537a3a61b24e7e2bff29dd951"
+    },
+    {
+      "identity_id": "IDENT-079F0B82D514",
+      "canonical_object_id": "IBI-079F0B82D514",
+      "label": "CBS 9008",
+      "member_ids": [
+        "IBI-079F0B82D514",
+        "IBI-4B7488D77F24",
+        "IBI-92BA58D99251",
+        "IBI-F9670CEFD548"
+      ],
+      "member_count": 4,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3C4294DDB367",
+        "SRC-6D313A7AA389",
+        "SRC-943673B56FB8",
+        "SRC-BAAFF2F10461"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 18,
+      "identifiers": [
+        "Brand 2021 working-list number: 3",
+        "Montgomery 1913 text number: 31",
+        "Penn web object ID: 222626",
+        "bibliographic concordance: Hamilton 1971 no. 3",
+        "bibliographic concordance: Montgomery 1913 no. 31",
+        "bibliographic concordance: Moriggi 2014 no. 3",
+        "collection designation: B9008",
+        "collection designation: CBS 9008",
+        "publication designation: Moriggi 2014 bowl 3: CBS 9008",
+        "publication object key: Montgomery 1913::31",
+        "publication object key: Moriggi 2014::3"
+      ],
+      "raw_conflict_fields": [
+        "language",
+        "publication"
+      ],
+      "substantive_conflict_fields": [
+        "language"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|scholarship",
+      "risk_score": 32,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "96746b5def2314091aa498421bbe5807ed097a7b53135874d99374a2204b8465"
+    },
+    {
+      "identity_id": "IDENT-0812604AAFBD",
+      "canonical_object_id": "IBI-0812604AAFBD",
+      "label": "British Museum 91767: incantation bowl",
+      "member_ids": [
+        "IBI-0812604AAFBD",
+        "IBI-5C48844F88FB",
+        "IBI-B7DE88C662A8",
+        "IBI-C2906E4D88F3",
+        "IBI-F9F8F8D64319"
+      ],
+      "member_count": 5,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-1A922C3F041F",
+        "SRC-3A8095B6D794",
+        "SRC-3D4B57D27A24",
+        "SRC-72D809FB4249",
+        "SRC-73C44B143A9D",
+        "SRC-C0144EA934D5"
+      ],
+      "source_count": 6,
+      "appearance_count": 6,
+      "claim_count": 19,
+      "identifiers": [
+        "British Museum museum number: 91767",
+        "British Museum object key: W_1886-0109-2",
+        "British Museum registration URL value: 1886-0109-2",
+        "Waller 2022 table designation: CAMIB 40",
+        "collection designation: 040A",
+        "collection designation: BM040A",
+        "publication object key: Segal 2000::040A"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "language",
+        "location",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|scholarship",
+      "risk_score": 29,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "586a75a7f5282077411388c82d2c9e3c1d3affca6e76782997eaddb41566f9fd"
+    },
+    {
+      "identity_id": "IDENT-2240A84876B0",
+      "canonical_object_id": "IBI-2240A84876B0",
+      "label": "Waller 2022: JBA 10",
+      "member_ids": [
+        "IBI-2240A84876B0",
+        "IBI-F2F158C0F5DD"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 10,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 10",
+        "bibliographic concordance: JBA10",
+        "collection designation: MS 2053/185",
+        "collection designation: MS2053/185",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 10"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|repository_web",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "713b5f3b87c0ef9c924a9ae574a241af47eae5e29494576531d47635e3f32a14"
+    },
+    {
+      "identity_id": "IDENT-27E625F08E90",
+      "canonical_object_id": "IBI-D8C1FFD3FBED",
+      "label": "Waller 2022: CAMIB 26",
+      "member_ids": [
+        "IBI-27E625F08E90",
+        "IBI-2BC68A5CB28B",
+        "IBI-9548EB8935E2",
+        "IBI-A7A540CDFF87",
+        "IBI-D8C1FFD3FBED"
+      ],
+      "member_count": 5,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-72D809FB4249",
+        "SRC-73C44B143A9D"
+      ],
+      "source_count": 3,
+      "appearance_count": 5,
+      "claim_count": 6,
+      "identifiers": [
+        "Waller 2022 table designation: CAMIB 26",
+        "Waller 2022 table designation: Isbell 66",
+        "bibliographic concordance: BM026A",
+        "bibliographic concordance: CAIB66",
+        "bibliographic concordance: CAMIB 26",
+        "bibliographic concordance: J.",
+        "bibliographic concordance: SchwabH",
+        "collection designation: 026A",
+        "collection designation: BM 91765",
+        "collection designation: BM026A",
+        "collection designation: CAIB66",
+        "publication object key: Isbell 1975::66",
+        "publication object key: Segal 2000::026A"
+      ],
+      "raw_conflict_fields": [
+        "language"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|scholarship",
+      "risk_score": 29,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "b8027b7c04e33693ba47cd487c2cd2003ae8be01797619de43bab3e012132652"
+    },
+    {
+      "identity_id": "IDENT-283FD9063B32",
+      "canonical_object_id": "IBI-7B5FC6F7A0FA",
+      "label": "British Museum 91726: incantation bowl",
+      "member_ids": [
+        "IBI-283FD9063B32",
+        "IBI-66ED0C90B161",
+        "IBI-77AF26949E80",
+        "IBI-7B5FC6F7A0FA"
+      ],
+      "member_count": 4,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-3D4B57D27A24",
+        "SRC-72D809FB4249",
+        "SRC-76DC03BE6AEF"
+      ],
+      "source_count": 4,
+      "appearance_count": 5,
+      "claim_count": 15,
+      "identifiers": [
+        "British Museum museum number: 91726",
+        "British Museum object key: W_1851-1009-97",
+        "British Museum registration URL value: 1851-1009-97",
+        "bibliographic concordance: BM010A",
+        "bibliographic concordance: Ellis4",
+        "collection designation: 010A",
+        "collection designation: BM010A",
+        "collection designation: Ellis4",
+        "publication object key: Segal 2000::010A"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|museum",
+      "risk_score": 30,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "569611c6331b8cbf301f3f048ab9e38c0a9eb1f0c7daf490bc810af1a4ee5cf0"
+    },
+    {
+      "identity_id": "IDENT-2D03029F6DEE",
+      "canonical_object_id": "IBI-B54D497CC676",
+      "label": "CBS 9010",
+      "member_ids": [
+        "IBI-2D03029F6DEE",
+        "IBI-457F94914353",
+        "IBI-B54D497CC676"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-6BCE45CAE460",
+        "SRC-943673B56FB8"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 14,
+      "identifiers": [
+        "Montgomery 1913 text number: 9",
+        "Penn web object ID: 271621",
+        "bibliographic concordance: CAIB15",
+        "bibliographic concordance: Montgomery 1913 no. 9",
+        "collection designation: AIT9",
+        "collection designation: B9010",
+        "collection designation: CBS 9010",
+        "publication object key: Montgomery 1913::9"
+      ],
+      "raw_conflict_fields": [
+        "dimensions",
+        "language"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions",
+        "language"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|museum",
+      "risk_score": 30,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "5380c88312197ad0bb17edaabc15dfec2fd41fa777cd064ffe63cc0107b84767"
+    },
+    {
+      "identity_id": "IDENT-319F3DE276D8",
+      "canonical_object_id": "IBI-CF7556423B9D",
+      "label": "CBS 16017",
+      "member_ids": [
+        "IBI-319F3DE276D8",
+        "IBI-691D04D6C1D1",
+        "IBI-CF7556423B9D",
+        "IBI-EE139B7E7FDB"
+      ],
+      "member_count": 4,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-8E2DACBA5AC1",
+        "SRC-943673B56FB8"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 16,
+      "identifiers": [
+        "Montgomery 1913 text number: 14",
+        "Penn web object ID: 97562",
+        "Waller 2022 table designation: Isbell 09",
+        "bibliographic concordance: CAIB9",
+        "bibliographic concordance: Montgomery 1913 no. 14",
+        "collection designation: AIT14",
+        "collection designation: B16017",
+        "collection designation: CBS 16017",
+        "publication object key: Isbell 1975::09",
+        "publication object key: Montgomery 1913::14"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [
+        "publication"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|scholarship",
+      "risk_score": 31,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "3388aa4a01739211a3670347528cb7a5351d61820f18822d23621cb4eb10f689"
+    },
+    {
+      "identity_id": "IDENT-3302F57D7AE1",
+      "canonical_object_id": "IBI-84F6B8FD30B3",
+      "label": "CBS 16018 [Montgomery text 19]",
+      "member_ids": [
+        "IBI-3302F57D7AE1",
+        "IBI-84F6B8FD30B3",
+        "IBI-E179BADB3761"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-943673B56FB8",
+        "SRC-9DE6760E76E4"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 16,
+      "identifiers": [
+        "Montgomery 1913 text number: 19",
+        "Penn catalogue number: CBS 16018",
+        "Penn web object ID: 104403",
+        "bibliographic concordance: CAIB21",
+        "bibliographic concordance: Montgomery 1913 no. 19",
+        "collection designation: AIT19",
+        "collection designation: B16018",
+        "collection designation: Montgomery 1913 bowl 19 (catalogue number omitted)",
+        "publication object key: Montgomery 1913::19"
+      ],
+      "raw_conflict_fields": [
+        "dimensions",
+        "publication"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|museum",
+      "risk_score": 33,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "08ff044c28004130ef61b373ca0e6b8f0605aeab5e0cd5ddc741107af7c92951"
+    },
+    {
+      "identity_id": "IDENT-33C9806531BF",
+      "canonical_object_id": "IBI-B860E80111E3",
+      "label": "Penn Museum CBS 2923 / B2923 exhibition appearance",
+      "member_ids": [
+        "IBI-33C9806531BF",
+        "IBI-917276249B87",
+        "IBI-AE7EC914E754",
+        "IBI-B860E80111E3",
+        "IBI-F5189CBA8227"
+      ],
+      "member_count": 5,
+      "record_status": "confirmed",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-6181E1924D9F",
+        "SRC-943673B56FB8",
+        "SRC-A90AB34CA3FE",
+        "SRC-F168D061C401"
+      ],
+      "source_count": 5,
+      "appearance_count": 5,
+      "claim_count": 20,
+      "identifiers": [
+        "Montgomery 1913 text number: 4",
+        "Penn legacy designation: B2923",
+        "Penn web object ID: 275285",
+        "bibliographic concordance: CAIB5",
+        "bibliographic concordance: Montgomery 1913 no. 4",
+        "collection designation: AIT4",
+        "collection designation: B2923",
+        "collection designation: CBS 2923",
+        "publication object key: Montgomery 1913::4"
+      ],
+      "raw_conflict_fields": [
+        "dimensions",
+        "location",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "confirmed|exact_identifier|scholarship",
+      "risk_score": 35,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "98012ca92ae8b10605849358228cf30547138139924c9bbcea16ced672cbebc7"
+    },
+    {
+      "identity_id": "IDENT-372A705104A0",
+      "canonical_object_id": "IBI-5689D7C131FC",
+      "label": "British Museum 91710: incantation bowl",
+      "member_ids": [
+        "IBI-372A705104A0",
+        "IBI-5689D7C131FC",
+        "IBI-B88F64EB52FE",
+        "IBI-F1591D764E61"
+      ],
+      "member_count": 4,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-3D4B57D27A24",
+        "SRC-72D809FB4249",
+        "SRC-84678662059D"
+      ],
+      "source_count": 4,
+      "appearance_count": 5,
+      "claim_count": 14,
+      "identifiers": [
+        "British Museum museum number: 91710",
+        "British Museum object key: W_1851-0903-2",
+        "British Museum registration URL value: 1851-0903-2",
+        "bibliographic concordance: BM013A",
+        "bibliographic concordance: Chwolson18",
+        "bibliographic concordance: Ellis1",
+        "bibliographic concordance: SchwabA",
+        "collection designation: 013A",
+        "collection designation: BM013A",
+        "collection designation: Ellis1",
+        "publication object key: Segal 2000::013A"
+      ],
+      "raw_conflict_fields": [
+        "dating",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|museum",
+      "risk_score": 30,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "e4c1c71c1fcc4483d886c97839b8795d3ec7e82b62f26674980824c79465a4d8"
+    },
+    {
+      "identity_id": "IDENT-4D7E8C4473C1",
+      "canonical_object_id": "IBI-BF1E6329F91D",
+      "label": "Waller 2022: JBA 60",
+      "member_ids": [
+        "IBI-4D7E8C4473C1",
+        "IBI-BF1E6329F91D"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 10,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 60",
+        "bibliographic concordance: JBA60",
+        "collection designation: MS 2053/212",
+        "collection designation: MS2053/212",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 60"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|repository_web",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "d8a9414969f16bf2d1d5933b1ec56338a9987585994354db80bf3ce3d8fa9159"
+    },
+    {
+      "identity_id": "IDENT-5002143E0DC9",
+      "canonical_object_id": "IBI-6C4D8112FFE2",
+      "label": "CBS 16006",
+      "member_ids": [
+        "IBI-5002143E0DC9",
+        "IBI-6C4D8112FFE2",
+        "IBI-8D8C026752CF"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-943673B56FB8",
+        "SRC-B171946A119D"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 13,
+      "identifiers": [
+        "Montgomery 1913 text number: 22",
+        "Penn web object ID: 102142",
+        "bibliographic concordance: CAIB29",
+        "bibliographic concordance: Montgomery 1913 no. 22",
+        "collection designation: AIT22",
+        "collection designation: B16006",
+        "collection designation: CBS 16006",
+        "publication object key: Montgomery 1913::22"
+      ],
+      "raw_conflict_fields": [
+        "dimensions"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|museum",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "49ca51b9d3d812d086e55401adb0391005835ba02c22caad2952d6b4eb35e12b"
+    },
+    {
+      "identity_id": "IDENT-51D0CCC0FDC5",
+      "canonical_object_id": "IBI-B8D8FA942816",
+      "label": "British Museum 91766: incantation bowl",
+      "member_ids": [
+        "IBI-51D0CCC0FDC5",
+        "IBI-6F5058101C90",
+        "IBI-B49080BDD117",
+        "IBI-B8D8FA942816"
+      ],
+      "member_count": 4,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-3D4B57D27A24",
+        "SRC-72D809FB4249",
+        "SRC-815C148CDE83"
+      ],
+      "source_count": 4,
+      "appearance_count": 5,
+      "claim_count": 15,
+      "identifiers": [
+        "British Museum museum number: 91766",
+        "British Museum object key: W_1851-0903-3",
+        "British Museum registration URL value: 1851-0903-3",
+        "bibliographic concordance: Chwolson21",
+        "bibliographic concordance: Ellis5",
+        "bibliographic concordance: SchwabD",
+        "collection designation: 014A",
+        "collection designation: BM014A",
+        "collection designation: Ellis5",
+        "publication object key: Segal 2000::014A"
+      ],
+      "raw_conflict_fields": [
+        "condition",
+        "dating",
+        "provenance"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|museum",
+      "risk_score": 31,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "cf905949796aee48b17ff51f8396e215116784932f93b0614e23afa4b0bc6644"
+    },
+    {
+      "identity_id": "IDENT-5B1343517775",
+      "canonical_object_id": "IBI-5B1343517775",
+      "label": "CBS 2945",
+      "member_ids": [
+        "IBI-5B1343517775",
+        "IBI-5F31615726F1",
+        "IBI-A8470A9AD28F",
+        "IBI-BFAC7CA37B96"
+      ],
+      "member_count": 4,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-4EA42B8F7C75",
+        "SRC-943673B56FB8",
+        "SRC-A90AB34CA3FE"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 16,
+      "identifiers": [
+        "Kedar 2019 NFP number: 9",
+        "Montgomery 1913 text number: 2",
+        "Penn web object ID: 82460",
+        "bibliographic concordance: CAIB2",
+        "bibliographic concordance: Montgomery 1913 no. 2",
+        "collection designation: AIT2",
+        "collection designation: B2945",
+        "collection designation: CBS 2945",
+        "publication object key: Montgomery 1913::2"
+      ],
+      "raw_conflict_fields": [
+        "dimensions",
+        "ritual"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|scholarship",
+      "risk_score": 32,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "20f5e200a74a4a53ce8d0500c0ad3b5f4e4f041c17f89539720cf15ffa775ef0"
+    },
+    {
+      "identity_id": "IDENT-653C0F4DAF6F",
+      "canonical_object_id": "IBI-653C0F4DAF6F",
+      "label": "Waller 2022: JBA 42",
+      "member_ids": [
+        "IBI-653C0F4DAF6F",
+        "IBI-878D276D0136"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "repository_web",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219"
+      ],
+      "source_count": 4,
+      "appearance_count": 4,
+      "claim_count": 10,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 42",
+        "bibliographic concordance: JBA42",
+        "collection designation: MS 2053/190",
+        "collection designation: MS2053/190",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 42"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|repository_web",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "5c47910b6ee05f27a708a1ae7b008a4e96a010a83503182d826c9963ab179095"
+    },
+    {
+      "identity_id": "IDENT-79D32E0C0500",
+      "canonical_object_id": "IBI-A3736CD7D997",
+      "label": "CBS 2971 [Montgomery text 40]",
+      "member_ids": [
+        "IBI-79D32E0C0500",
+        "IBI-A3736CD7D997"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-943673B56FB8",
+        "SRC-E03AC9F337A8"
+      ],
+      "source_count": 2,
+      "appearance_count": 2,
+      "claim_count": 14,
+      "identifiers": [
+        "Montgomery 1913 text number: 40",
+        "Penn catalogue number: CBS 2971",
+        "Penn web object ID: 64458",
+        "bibliographic concordance: Montgomery 1913 no. 40",
+        "collection designation: B2971",
+        "collection designation: CBS 2971",
+        "publication object key: Montgomery 1913::40"
+      ],
+      "raw_conflict_fields": [
+        "publication"
+      ],
+      "substantive_conflict_fields": [
+        "publication"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|museum",
+      "risk_score": 30,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "d438477f062b25aba83eebb7667bbe069d1c154106c2d13faf7f7ac1e4f6ac8c"
+    },
+    {
+      "identity_id": "IDENT-85A9ED12421A",
+      "canonical_object_id": "IBI-85A9ED12421A",
+      "label": "Waller 2022: JBA 55",
+      "member_ids": [
+        "IBI-85A9ED12421A",
+        "IBI-F1230736EC4F"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219",
+        "SRC-FORD2014-AUOR"
+      ],
+      "source_count": 5,
+      "appearance_count": 5,
+      "claim_count": 12,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 55",
+        "bibliographic concordance: JBA55",
+        "collection designation: MS 1928/1",
+        "collection designation: MS1928/1",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 55"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|scholarship",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "99934d0e2f7e65e1bf3a461f1380ec3c6b6211c724e234a498d80e4541155abf"
+    },
+    {
+      "identity_id": "IDENT-ABDE8A973358",
+      "canonical_object_id": "IBI-ABDE8A973358",
+      "label": "CBS 16023",
+      "member_ids": [
+        "IBI-ABDE8A973358",
+        "IBI-B76674787AA7",
+        "IBI-C4B29A1F2B90"
+      ],
+      "member_count": 3,
+      "record_status": "probable",
+      "linkage_method": "exact_identifier",
+      "source_family": "museum",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-943673B56FB8",
+        "SRC-ABE0A4D150BF"
+      ],
+      "source_count": 3,
+      "appearance_count": 3,
+      "claim_count": 13,
+      "identifiers": [
+        "Montgomery 1913 text number: 20",
+        "Penn web object ID: 284364",
+        "bibliographic concordance: CAIB27",
+        "bibliographic concordance: Montgomery 1913 no. 20",
+        "collection designation: AIT20",
+        "collection designation: B16023",
+        "collection designation: CBS 16023",
+        "publication object key: Montgomery 1913::20"
+      ],
+      "raw_conflict_fields": [
+        "dimensions"
+      ],
+      "substantive_conflict_fields": [
+        "dimensions"
+      ],
+      "authenticity": "conflicting",
+      "stratum": "probable|exact_identifier|museum",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "multiple stored values",
+        "substantive claim disagreement",
+        "authenticity-sensitive metadata",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "5b12dc71e2fc748c40831525a6cd3f7e6083a3489a71d9b12ae5057105d9e0c4"
+    },
+    {
+      "identity_id": "IDENT-B205D4EC9A30",
+      "canonical_object_id": "IBI-B205D4EC9A30",
+      "label": "Waller 2022: JBA 15",
+      "member_ids": [
+        "IBI-B205D4EC9A30",
+        "IBI-BA38256134C5"
+      ],
+      "member_count": 2,
+      "record_status": "probable",
+      "linkage_method": "concordance",
+      "source_family": "scholarship",
+      "source_ids": [
+        "SRC-3A8095B6D794",
+        "SRC-73C44B143A9D",
+        "SRC-7FBBB775E502",
+        "SRC-99F964DDA219",
+        "SRC-FORD2014-AUOR"
+      ],
+      "source_count": 5,
+      "appearance_count": 5,
+      "claim_count": 12,
+      "identifiers": [
+        "Waller 2022 table designation: JBA 15",
+        "bibliographic concordance: JBA15",
+        "collection designation: MS 1927/43",
+        "collection designation: MS1927/43",
+        "publication object key: Shaked-Ford-Bhayro 2013::JBA 15"
+      ],
+      "raw_conflict_fields": [
+        "biblical_intertexts",
+        "location",
+        "publication"
+      ],
+      "substantive_conflict_fields": [],
+      "authenticity": "conflicting",
+      "stratum": "probable|concordance|scholarship",
+      "risk_score": 27,
+      "risk_reasons": [
+        "multi-record identity cluster",
+        "concordance-based linkage",
+        "multiple stored values",
+        "authenticity-sensitive metadata",
+        "four or more cited sources",
+        "five or more identifiers"
+      ],
+      "evidence_sha256": "1323606d18f30c74cd3c8b08aa558947c663d35dcdca3e8b8149a936c01aab15"
+    }
+  ]
+}

@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Reproducible stratified accuracy audit (in progress)
+
+**Claimed:** QA-003
+**Corpus:** unchanged at claim — state digest `72ca747ba5bd`
+**Tests:** pending
+
+- Claimed a representative identity/extraction accuracy audit plus a separately
+  reported high-risk sample. Selection will be deterministic and checked in;
+  inaccessible evidence and ambiguous cases will count explicitly rather than
+  being replaced by convenient records.
+- Claude's untracked `docs/public_export_boundary.md` is concurrent staging
+  work and will remain untouched.
+
 ## 2026-09-19 — Codex — Six-exception source review
 
 **Claimed:** QA-002 / CONC-005 / CONC-006 / META-003
