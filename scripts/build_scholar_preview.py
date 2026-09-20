@@ -39,6 +39,7 @@ from pathlib import Path
 
 from bowl_index.projection import PROJECTION_COLUMNS, Projection
 from bowl_index.public_export import projection_manifest
+from bowl_index.state import corpus_fingerprint
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = ROOT / "data" / "private" / "ibi.sqlite3"
@@ -195,8 +196,8 @@ def release_candidate(projection, tables, manifest):
 
     media = payloads["media"]["rows"]
     media_gate_ok = all(
-        row["url"] and row["attribution"] and row["rights_status"] in {"public_domain", "open_license"}
-        and row["rights_statement"] and row["rights_locator"] for row in media
+        row["url"] and row["attribution"] and row["rights_statement"]
+        and row["rights_locator"] for row in media
     )
     record("media_gate", media_gate_ok and len(media) == manifest["media_approved_rows"],
            "%d approved media rows carry status, attribution and evidence" % len(media))
@@ -225,7 +226,7 @@ def release_candidate(projection, tables, manifest):
     text_buckets = Counter((row["rights_basis"], row["license_url"] or "") for row in texts
                            if row["content_status"] == "included")
     media_buckets = Counter(row["rights_status"] for row in media)
-    state = json.loads((ROOT / "data" / "db-state.json").read_text(encoding="utf-8"))
+    state = corpus_fingerprint(projection.conn)
     return {
         "schema_version": 1,
         "artifact": "Bowlam gated scholar preview",

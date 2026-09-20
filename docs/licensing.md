@@ -28,9 +28,10 @@ otherwise — which is the same discipline it applies to provenance.
 
 ### Public-domain texts are not licensed, they are already free
 
-The 35 Montgomery translations in `data/public/` are from *Aramaic Incantation
-Texts from Nippur* (Philadelphia, 1913). United States copyright has expired.
-They are marked `public_domain_expired` in the publication ledger and are **not**
+The 35 Montgomery translations from *Aramaic Incantation Texts from Nippur*
+(Philadelphia, 1913) and four scan-checked Wohlstein translations from
+1893–1894 are published from United States public-domain sources. They are
+marked `public_domain_expired` in the publication ledger and are **not**
 offered under CC BY 4.0: applying a licence to public-domain material would claim
 a right nobody holds.
 
@@ -75,7 +76,10 @@ repository's CC BY 4.0. Each carries `rights_basis` = `open_license` and
 `license_url` = the CC BY-NC 4.0 deed, so a consumer can tell them apart, and the
 export manifest's `license_scope` names them and their count. If you build on those
 rows, Waller's terms govern — including the non-commercial condition — not this
-repository's.
+repository's. Two Martínez Borobio rows from *A Magical Bowl in
+Judaeo-Aramaic* are also published under CC BY-NC 4.0: the source
+transliteration and a clearly labelled project paraphrase. They carry the same
+per-row licence link and attribution discipline.
 
 The narrower-licence reasoning still applies to every text row whose
 `content_status` is `withheld_consult_the_edition`: the pointer is ours to give,
@@ -86,12 +90,13 @@ the text is not.
 - Bibliographic metadata — titles, authors, dates, DOIs, citations — is factual.
 - Museum catalogue prose is **not** in this repository. Full-corpus research
   snapshots under `data/exports/` are deliberately untracked for that reason.
-- Media are URLs only, and nothing here licenses an image. Ten of 327 carry a
-  rights decision and an attribution, taken on the project owner's standing policy
-  of 20 September 2026 that a recorded `public_domain` or `open_license` label is
-  the decision. That basis is the recorded label, not a per-resource licence
-  instrument inspected for each image, and the ledger says so. The other 317 are
-  withheld. Either way, follow the URL and observe the holding institution's terms.
+- Media are URLs only, and nothing here relicenses an image. Ten of 327 carry
+  owner approvals based on their recorded public-domain or open-license status.
+  Another 288 Penn rows carry the owner's exact approval for Bowlam's declared
+  nonprofit educational, noncommercial use under Penn's current policy, with
+  the required object credit and policy link. Those institutional terms remain
+  narrower than this project's CC BY grant. The other 29 are withheld. Follow
+  every URL and observe the holding institution's current terms.
 - The July 2026 scoping review in `research/literature/` is this project's own
   work and is covered by CC BY 4.0. The works it discusses are not.
 

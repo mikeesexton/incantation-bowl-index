@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "artifact": "Bowlam gated scholar preview",
+  "candidate_id": "a16b8f19061b5169ab1b98a9a7ec137b493fc9629d5fbffc4731342f14c54abc",
+  "built_at": "2026-09-20T17:50:16+00:00",
+  "corpus_state_digest": "6cd15c856898b35cad459a064788a5db30bbff6981e8499de91f6e7b7a5fabb3",
+  "approval": {
+    "status": "pending_owner_approval",
+    "approved_by": null,
+    "approved_at": null,
+    "note": null
+  },
+  "projection_counts": {
+    "sources": 862,
+    "objects": 1969,
+    "identifiers": 4741,
+    "appearances": 2268,
+    "appearance_object_links": 2268,
+    "texts": 271,
+    "editions": 1063,
+    "media": 298,
+    "identity_clusters": 1652,
+    "facts": 6352,
+    "facets": 3245,
+    "works": 206,
+    "contributors": 114,
+    "scholarship_decades": 18,
+    "publications": 33
+  },
+  "withheld_counts": {
+    "source_wording": 30,
+    "text_content": 19,
+    "media": 29,
+    "private_capture_rows": 55,
+    "private_storage_paths": 51
+  },
+  "licensing": {
+    "project_contribution": {
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "texts": [
+      {
+        "rights_basis": "open_license",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "rows": 136
+      },
+      {
+        "rights_basis": "own_work",
+        "license_url": null,
+        "rows": 77
+      },
+      {
+        "rights_basis": "public_domain_expired",
+        "license_url": null,
+        "rows": 39
+      }
+    ],
+    "media": [
+      {
+        "rights_status": "open_license",
+        "rows": 5
+      },
+      {
+        "rights_status": "public_domain",
+        "rows": 5
+      },
+      {
+        "rights_status": "unknown",
+        "rows": 288
+      }
+    ],
+    "scope_notice": "Covers this project's own contribution: records, concordances, judgments, summaries, and the selection and arrangement. 39 text rows are public domain and are not licensed here. 136 text rows carry their source's own licence, which travels with them and is NOT replaced by CC BY 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). Read the row's license_url before reuse. 19 withheld rows carry a pointer only; the source's own terms govern them. 298 of 327 media URLs carry an explicit rights decision and its attribution; the rest are withheld, and none is relicensed here. See docs/licensing.md."
+  },
+  "audit_checks": [
+    {
+      "name": "projection_schema",
+      "passed": true,
+      "detail": "15 projected tables match their declared columns"
+    },
+    {
+      "name": "projection_row_equivalence",
+      "passed": true,
+      "detail": "built rows equal the shared in-memory projection"
+    },
+    {
+      "name": "private_columns_absent",
+      "passed": true,
+      "detail": "no capture, note, quotation, raw-value or reviewer-only columns"
+    },
+    {
+      "name": "local_paths_contacts_and_secrets_absent",
+      "passed": true,
+      "detail": "no local path, private-directory, localhost, email-address or secret pattern"
+    },
+    {
+      "name": "private_capture_paths_absent",
+      "passed": true,
+      "detail": "51 private capture paths tested"
+    },
+    {
+      "name": "withheld_source_wording_absent",
+      "passed": true,
+      "detail": "30 priority wording values tested"
+    },
+    {
+      "name": "short_claim_boundary",
+      "passed": true,
+      "detail": "185 short factual claims are cited, at most 80 characters, and contain no quotation"
+    },
+    {
+      "name": "text_gate",
+      "passed": true,
+      "detail": "252 included; 19 withheld"
+    },
+    {
+      "name": "media_gate",
+      "passed": true,
+      "detail": "298 approved media rows carry status, attribution and evidence"
+    },
+    {
+      "name": "facet_traceability",
+      "passed": true,
+      "detail": "3245 controlled labels resolve to a source claim"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/appearance_object_links.json",
+      "sha256": "d088ef1221bc47e36ace47a2b04b18527a799a708fde4d2e53297c210c181f48",
+      "bytes": 270046
+    },
+    {
+      "path": "data/appearances.json",
+      "sha256": "707b7a48f65b34a8ca26142ad1b06e202bc081a9b78bd5a7b7b9a8eb919b6318",
+      "bytes": 239882
+    },
+    {
+      "path": "data/contributors.json",
+      "sha256": "17defbc5fa474e7e3dc83e1cf3b698645d37daf9df6362587cd0e84f953dae0f",
+      "bytes": 23735
+    },
+    {
+      "path": "data/editions.json",
+      "sha256": "087c77ea292650e6a259cc9dddc9e1b3dc581966b9d430d86fe97f0f383bbfc4",
+      "bytes": 494676
+    },
+    {
+      "path": "data/facets.json",
+      "sha256": "9aa2ef93ea5b7f96312903447b92a70c17b587ee5f816449b7ca77028e3fad71",
+      "bytes": 706248
+    },
+    {
+      "path": "data/facts.json",
+      "sha256": "c10065cf1384e59a369f03d7ea6b94d3970e35e474210953e0c027aa65f9f9f3",
+      "bytes": 1749165
+    },
+    {
+      "path": "data/identifiers.json",
+      "sha256": "dda6cf01863ba9c5f0c38acec3d37a62da37a433282290b0bcb9bb3fab3271b4",
+      "bytes": 646890
+    },
+    {
+      "path": "data/identity_clusters.json",
+      "sha256": "9dab4f1af41428288cc4f0b60876814f60fbb859f33199525679d3e305b7649c",
+      "bytes": 772748
+    },
+    {
+      "path": "data/manifest.json",
+      "sha256": "3a973e2f033e4a93111d443f56aebc70a7ed0da623156ab82c63444b503cc7e5",
+      "bytes": 2791
+    },
+    {
+      "path": "data/media.json",
+      "sha256": "63db59f1a3eba55c8c56f07af2988a0b9759213e10d9f67accf8d0a82a712153",
+      "bytes": 225650
+    },
+    {
+      "path": "data/objects.json",
+      "sha256": "80b46fc6b2088171fc2de99492ce7c7a12d6a0c1f418e9d9990cf75a84c37322",
+      "bytes": 311515
+    },
+    {
+      "path": "data/publications.json",
+      "sha256": "46021263c02b08a71c7ed1a55a0e62bbe5619d76c9e88cc75b0aab8da67e5290",
+      "bytes": 26166
+    },
+    {
+      "path": "data/scholarship_decades.json",
+      "sha256": "556a2f858fbda5b26cf666153c1af8a6582623dc2a02befe9d6c0e8c8499a66a",
+      "bytes": 1100
+    },
+    {
+      "path": "data/sources.json",
+      "sha256": "cb4e4607af823ee553d63801695df782c135882b1a2d21b431b7c949eb656315",
+      "bytes": 268175
+    },
+    {
+      "path": "data/texts.json",
+      "sha256": "a3340bba5f0c09ade7b8861e38015668dbfde6124d28a31a0ead3b15ddc2bbf3",
+      "bytes": 408547
+    },
+    {
+      "path": "data/works.json",
+      "sha256": "8a7d3e92eb913ad8a9fa8889bcd7907651c4f276b17e02b6544e3a4e57c6557a",
+      "bytes": 123867
+    },
+    {
+      "path": "index.html",
+      "sha256": "17b191d4fe8e2c70d5cc76f0f6f8aa79f30168d375df6fd1961bc2626f4e14a8",
+      "bytes": 1882
+    },
+    {
+      "path": "preview.css",
+      "sha256": "e749b9ca9b9d5213b57001ae4b09d9fcecb235c84eb53bf9262bf1e80a0b97c5",
+      "bytes": 13295
+    },
+    {
+      "path": "reading.js",
+      "sha256": "d6f25a74416ffba0d0dbfaf3b9eaeb2cbc9bd0abaa0db06e6e7c1133f11263b0",
+      "bytes": 37410
+    }
+  ]
+}

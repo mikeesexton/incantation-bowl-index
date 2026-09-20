@@ -271,8 +271,8 @@ That is not the current setup and is not planned.
 The private database is the authoritative store and stays private. Research
 exports retain provenance and rights metadata but blank content unless the
 record is explicitly `public_ok`; raw source payloads stay private. The separate
-`export-public` path applies a narrower set of gates and currently withholds all
-325 media, because zero have a completed rights decision.
+`export-public` path applies a narrower set of gates and currently releases 298
+of 327 media rows with completed owner decisions while withholding the other 29.
 
 Historical exports labelled "public-safe" overstate that boundary and should not
 be treated as publication-cleared. A future public dashboard consumes a reviewed

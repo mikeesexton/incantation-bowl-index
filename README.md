@@ -32,7 +32,12 @@ The public reading-room count is deliberately narrower than edition coverage. It
 
 An importer defect was repaired in 137 Segal claim locators, with immutable before/after records and no changes to scholarly values or identity links. This explains the BM 117882 117ES/119ES pointer mismatch; its language uncertainty still needs catalogue review. The Penn review added eleven reported metadata claims and six follow-up leads. Current evidence has 52 triaged claim-field differences and 432 that require review, including 285 older decisions that must be revalidated against changed evidence. Five source-reported Penn relationships are stored separately from physical identity, with no automatic merges. The full decision history is preserved.
 
-Of 327 media rows, 325 have explicit rights-ledger entries, with **zero completed rights assessments and zero media approvals**. A separate tested public-export path creates a narrow reference scaffold while withholding unapproved media; the research export remains private. No public dashboard has been deployed.
+All 327 media rows have current rights-ledger entries. **298 have explicit owner
+approvals for their recorded public-domain, open-license or nonprofit educational
+use; 29 remain withheld.** A separate tested public-export path creates a narrow
+reference scaffold while withholding unapproved media; the research export
+remains private. The current richer preview is Access-gated. A 454-bowl public
+educational library candidate is built and audited locally but not yet deployed.
 
 - [Forty Penn concordances and catalogue follow-ups](data/reports/penn_montgomery_concordance_review_2026-09-05.md)
 - [Penn field, dating-context, and object-relationship review](data/reports/penn_anomaly_review_2026-09-05.md)

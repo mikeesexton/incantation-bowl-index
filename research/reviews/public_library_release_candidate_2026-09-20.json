@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "artifact": "Bowlam public educational library",
+  "candidate_id": "67c72de026211b0d67c5c96cb37182ab08c274e76daea8549df4346c48f38cfc",
+  "built_at": "2026-09-20T17:59:38+00:00",
+  "corpus_state_digest": "6cd15c856898b35cad459a064788a5db30bbff6981e8499de91f6e7b7a5fabb3",
+  "approval": {
+    "status": "pending_owner_approval",
+    "approved_by": null,
+    "approved_at": null,
+    "note": null
+  },
+  "counts": {
+    "items": 454,
+    "texts": 252,
+    "media": 298
+  },
+  "licensing": {
+    "project_contribution": "CC BY 4.0",
+    "texts": [
+      {
+        "rights_basis": "open_license",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "rows": 136
+      },
+      {
+        "rights_basis": "own_work",
+        "license_url": null,
+        "rows": 77
+      },
+      {
+        "rights_basis": "public_domain_expired",
+        "license_url": null,
+        "rows": 39
+      }
+    ],
+    "media": [
+      {
+        "recorded_rights_status": "open_license",
+        "rows": 5
+      },
+      {
+        "recorded_rights_status": "public_domain",
+        "rows": 5
+      },
+      {
+        "recorded_rights_status": "unknown",
+        "rows": 288
+      }
+    ],
+    "scope_notice": "Some rows carry CC BY-NC or institution-specific educational-use terms. Terms shown with each item govern those materials."
+  },
+  "audit_checks": [
+    {
+      "name": "allowlisted_fields",
+      "passed": true,
+      "detail": "no private, raw-evidence or reviewer-only fields"
+    },
+    {
+      "name": "text_gate",
+      "passed": true,
+      "detail": "252 currently approved text rows"
+    },
+    {
+      "name": "excluded_text_absent",
+      "passed": true,
+      "detail": "partially reviewed Wohlstein row remains withheld"
+    },
+    {
+      "name": "media_gate",
+      "passed": true,
+      "detail": "298 currently approved media rows"
+    },
+    {
+      "name": "shared_media_terms_coherent",
+      "passed": true,
+      "detail": "289 distinct media URLs have coherent terms"
+    },
+    {
+      "name": "penn_credit",
+      "passed": true,
+      "detail": "288 Penn rows carry object credit and policy locator"
+    },
+    {
+      "name": "local_paths_contacts_and_secrets_absent",
+      "passed": true,
+      "detail": "no local path, private-directory, localhost, email-address or secret pattern"
+    },
+    {
+      "name": "private_capture_paths_absent",
+      "passed": true,
+      "detail": "51 private storage paths tested"
+    },
+    {
+      "name": "counts_match",
+      "passed": true,
+      "detail": "declared library counts match emitted rows"
+    },
+    {
+      "name": "source_pointers",
+      "passed": true,
+      "detail": "every text carries a source citation and locator"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/library.json",
+      "sha256": "2915210b44a2b660f13c2babce2856adcfdbe9e96e3cbd9869f3d71b7e59a7e3",
+      "bytes": 758384
+    },
+    {
+      "path": "fonts/frank-ruhl-libre-OFL.txt",
+      "sha256": "c21ced812a9b642640aed1e446b0fbc2b90736f8d5cf2e9a651b324aa14cc9f4",
+      "bytes": 4501
+    },
+    {
+      "path": "fonts/frank-ruhl-libre-hebrew.woff2",
+      "sha256": "882f7b8caedc3a52b54d8d848851c199e9f9e5dabda79928d1290082aa5e02bd",
+      "bytes": 18760
+    },
+    {
+      "path": "fonts/frank-ruhl-libre-latin-ext.woff2",
+      "sha256": "2bee6eb093cac799c4d4fafeae8a054b2c6acdd000dff16facbead136b9c9f75",
+      "bytes": 20896
+    },
+    {
+      "path": "fonts/frank-ruhl-libre-latin.woff2",
+      "sha256": "45643b397ce1fff9d37096392e3662d3cc6a4e1dd98748c93e32b2c8a20336f1",
+      "bytes": 44272
+    },
+    {
+      "path": "index.html",
+      "sha256": "2649626eff0cb444cbc515325aceed34c913e71d43cc441da5dd914c528f81ef",
+      "bytes": 2734
+    },
+    {
+      "path": "library.css",
+      "sha256": "5f165fce922e8f64f0a52cf99911847fc995939c7838410d209c3a4012a06f27",
+      "bytes": 4351
+    },
+    {
+      "path": "library.js",
+      "sha256": "0848dd6a7aa6188a58a83fbe25baee76ceb675d95c0c654adf68641ccb03e514",
+      "bytes": 3404
+    }
+  ]
+}

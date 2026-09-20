@@ -76,6 +76,9 @@ class ProjectionTests(unittest.TestCase):
         after=self.rows('texts')[0]
         self.assertEqual(after['content_status'],'included')
         self.assertEqual(after['content'],'WITHHELD TRANSLATION')
+        self.assertEqual(after['attribution'],'Test')
+        self.assertEqual(after['rights_locator'],'Test')
+        self.assertEqual(after['editorial_status'],'Test')
 
     # -- the hinge -----------------------------------------------------------
 

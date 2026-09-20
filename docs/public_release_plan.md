@@ -1,6 +1,6 @@
 # Public release preparation
 
-Status: working plan at corpus state `abf8105be933`, 20 September 2026. This is
+Status: working plan at corpus state `6cd15c856898`, 20 September 2026. This is
 release engineering and conservative rights triage, not legal advice or a
 substitute for an item-specific decision by the project owner.
 
@@ -42,12 +42,14 @@ The shared projection currently contains:
 | Identifiers | 4,741 | Factual metadata |
 | Short fact candidates | 6,382 | 6,352 included; 30 non-public-domain wording values withheld for priority review |
 | Project-authored controlled facets | 3,245 | Public candidate, with claim-level traceability |
-| Text rows | 271 | 246 included by recorded decision; 25 withheld with citation and locator |
-| Media resources known | 327 | 10 included by recorded decision; 317 withheld |
+| Text rows | 271 | 252 included by recorded decision; 19 withheld with citation and locator |
+| Media resources known | 327 | 298 included by recorded decision; 29 withheld |
 | Private captures | 55 | Never staged; storage paths are forbidden by the projection guard |
 
-The 246 included text rows comprise 35 public-domain translations, 77
-project-authored summaries, and 134 open-license summary rows. The last group is
+The 252 included text rows comprise 39 public-domain translations, 77
+project-authored summaries, and 136 open-license rows. The last group includes
+134 Waller summaries and the Martínez Borobio transliteration and labelled
+project paraphrase; it is
 CC BY-NC 4.0 and must retain its attribution, licence link and noncommercial
 limit; it cannot silently become CC BY 4.0 or enter a commercial surface. The
 [CC BY-NC 4.0 terms](https://creativecommons.org/licenses/by-nc/4.0/) also forbid
@@ -55,7 +57,7 @@ adding legal or technological restrictions that prevent recipients from doing
 what that licence allows. This means the Access gate may protect the preview as
 a whole, but it must not be presented as changing the licence of those rows.
 
-## Approved gated staging release
+## Deployed gated staging baseline
 
 The exact candidate is recorded in
 `research/reviews/scholar_preview_release_candidate_2026-09-20.json` as
@@ -68,7 +70,10 @@ wording values, the short-claim boundary, text and media gates, and traceability
 of all controlled facets. Those exact nineteen files are deployed at
 `https://bowlam.com/preview/` behind Cloudflare Access in production deployment
 `e5aabb22-bf0d-4cc3-85d1-193d687e6cff`. The host lock returns 404 for the
-project's `*.pages.dev` aliases.
+project's `*.pages.dev` aliases. A new expanded preview candidate,
+`a16b8f19061b...`, has since been built from the approved rights cohort. It
+contains 252 text rows and 298 media rows, passes all ten release checks, and is
+not deployed.
 
 ## Controlled browse vocabulary
 
@@ -100,7 +105,7 @@ uncertainty.
 - Facts marked `factual_metadata`, subject to a final privacy and accuracy scan.
 - Controlled `facets`, because their wording and selection are project-authored
   and every row is traceable.
-- The 246 text rows and 10 media rows that already have current, evidence-bound
+- The 252 text rows and 298 media rows that already have current, evidence-bound
   publication decisions, on their individual terms.
 
 ### Keep local for review, not presumed cleared for an open launch
@@ -122,8 +127,8 @@ controlled facet and the ordinary source/citation structure.
 
 ### Withhold until a new decision exists
 
-- All 25 text rows whose content is currently withheld.
-- All 317 media resources without an approved reuse decision.
+- All 19 text rows whose content is currently withheld.
+- All 29 media resources without an approved reuse decision.
 - Every source scan, local capture, OCR product, rich-text package, research
   note and filesystem path from the private vault.
 - Any commercial use of the 134 CC BY-NC rows unless the rights holder supplies
@@ -138,20 +143,26 @@ basis and will remain separate from the general landing page. The gated
 A separate workshop tier is unnecessary unless the owner later chooses an
 item-specific fair-use position for protected modern expression.
 
-The pending exact proposal is
+The owner-approved exact proposal is
 `research/reviews/public_library_expansion_review_2026-09-20.json`, cohort hash
 `cc5f8440930decc9a7c42d4cc4fc13de910618837ffddd4d72d575d3d8f92c44`.
-It proposes four scan-checked public-domain Wohlstein translations, two CC
+It approves four scan-checked public-domain Wohlstein translations, two CC
 BY-NC Martínez Borobio rows and 288 Penn Museum media rows under Penn's stated
 nonprofit educational/personal noncommercial terms. It deliberately excludes
 the fifth partially reviewed Wohlstein translation, thirteen protected modern
-translations and twenty-nine other unapproved media rows. No proposal row enters
-either projection until the owner approves the exact cohort.
+translations and twenty-nine other unapproved media rows. The append-only
+publication and rights ledgers now carry those decisions.
+
+The public `/library` candidate `67c72de02621...` groups the released material
+into 454 browseable bowl records. It contains 252 texts and 298 media rows and
+passes ten checks covering projection gates, required attribution and terms,
+Penn credits, coherent shared URLs, private paths, reviewer-only fields and
+declared counts. It is built outside `site/public` and is not deployed.
 
 ## Next release sequence
 
-1. Rebuild the gated preview from the shared projection and verify all fifteen
-   projected tables, including `facets`; do not introduce a second export path.
+1. Have the owner inspect and approve or reject the exact public-library and
+   expanded gated-preview candidates; only then promote their hash-bound bytes.
 2. Review the 30 priority wording rows in source cohorts. The 185 short claims
    passed a structural spot-check. Replace copied descriptive phrasing with a project-authored
    summary where useful, retain the original in the private evidence layer, and

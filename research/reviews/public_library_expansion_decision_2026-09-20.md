@@ -1,6 +1,9 @@
 # Bowlam public-library expansion: owner decision
 
-Status: **pending owner decision** at corpus state `abf8105be933`.
+Status: **approved by the project owner** on 20 September 2026 at corpus state
+`abf8105be933`. The approval covers the exact six-text and 288-media cohort
+below for the public educational library and Access-gated scholar preview.
+Deployment is not part of this approval.
 
 This packet implements the owner's declared use: strictly educational and
 noncommercial, with no sales, commissions, advertising or business use. It
@@ -13,7 +16,7 @@ as cohort SHA-256
 `cc5f8440930decc9a7c42d4cc4fc13de910618837ffddd4d72d575d3d8f92c44`.
 The JSON contains evidence fingerprints and metadata, not text content.
 
-## Proposed architecture
+## Approved architecture
 
 - `bowlam.com/library` will be public and will contain only affirmatively
   reusable text and images, with per-item attribution and terms.
@@ -23,7 +26,7 @@ The JSON contains evidence fingerprints and metadata, not text content.
   tier would be justified only if the owner chose an item-specific fair-use
   position for protected material. This packet does not do that.
 
-## Proposed approvals
+## Approved rows
 
 | Cohort | Rows | Basis | Conditions carried into the interface |
 |---|---:|---|---|
@@ -53,12 +56,12 @@ Evidence:
 - Twenty-nine other unapproved media rows: no affirmative permission basis.
 - Source scans, PDFs, OCR, private notes, capture paths and review payloads.
 
-## Decision requested
+## Recorded decision
 
-The owner may approve the exact cohort, approve only the six text rows, approve
-only the 288 Penn media rows, or leave either cohort pending. Approval authorizes
-append-only evidence-bound publication/rights decisions and construction of the
-two local release candidates; deployment remains a separate approval after the
-built bytes and privacy audit are available.
+The owner approved the entire exact cohort in the Codex task at
+`2026-09-20T17:45:52Z`. This authorizes append-only evidence-bound
+publication/rights decisions and construction of the two local release
+candidates. Deployment remains a separate approval after the built bytes and
+privacy audit are available.
 
 This is operational rights triage, not legal advice.

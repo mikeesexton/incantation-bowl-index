@@ -25,6 +25,28 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Apply approved educational release cohort
+
+**Claimed:** RIGHTS-002, ACCESS-003
+**Corpus:** changed — six text-publication decisions and 288 Penn media-rights
+decisions appended — state digest `6cd15c856898`
+**Tests:** 294 Python passed; 24 Node passed; SQLite integrity and foreign keys
+passed; public library and expanded preview each passed 10/10 release checks;
+visual search/filter check passed
+
+- Applied the project owner's explicit approval of exact cohort
+  `cc5f8440930d` through checked-in append-only manifests. Published content now
+  comprises 252 text rows (39 public-domain, 77 own-work, 136 CC BY-NC) and 298
+  media rows; 19 text contents and 29 media rows remain withheld.
+- Built the public `/library` candidate `67c72de02621` with 454 bowl records,
+  search and material filters, per-item attribution/terms, and no private or
+  reviewer-only fields. Built expanded Access-preview candidate
+  `a16b8f19061b` from the same shared projection.
+- Took and integrity-checked the required pre-batch backup, retained the newest
+  ten backups, refreshed roadmap and reports, and verified a fresh narrow public
+  export. Deployment remains deliberately separate: neither candidate was
+  promoted into `site/public` or sent to Cloudflare.
+
 ## 2026-09-20 — Codex — Prepare rights-clear public library expansion
 
 **Claimed:** RIGHTS-002

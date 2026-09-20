@@ -5,7 +5,7 @@ This document enumerates what it withholds and why, so the boundary can be read
 without running the exporter and diffing its output against the database.
 
 Counts below are from the export run on 20 September 2026 against corpus digest
-`abf8105be9339a684fdcb94fa7b80c9168043121deb5c0a277ac2b27d0baf5c4`
+`6cd15c856898b35cad459a064788a5db30bbff6981e8499de91f6e7b7a5fabb3`
 (1,969 candidate objects, 1,652 identities after resolved dedupe). Regenerate with:
 
 ```sh
@@ -38,9 +38,9 @@ which is why the two figures do not sum to 34.)
 | `claim_conflict_review_history` | 962 | Every revision of a conflict decision |
 | `claim_conflict_reviews` | 644 | Conflict adjudications |
 | `search_queries` | 361 | The multilingual discovery matrix |
-| `media_rights_reviews` | 327 | Rights ledger for media |
+| `media_rights_reviews` | 625 | Append-only rights ledger for media |
 | `events` | 212 | Provenance and session event trail |
-| `text_publication_reviews` | 163 | The ledger that decides `public_ok` |
+| `text_publication_reviews` | 303 | The ledger that decides `public_ok` |
 | `claim_locator_corrections` | 137 | Citation-pointer repairs with originals |
 | `source_scope_reviews` | 112 | What kind of work each source is |
 | `leads` | 65 | Open research leads |
@@ -57,15 +57,15 @@ which is why the two figures do not sum to 34.)
 held in the private vault. Private possession does not authorize distribution,
 and the export never names a capture or its storage path.
 
-## Tier 2 — Media: 317 of 327 withheld
+## Tier 2 — Media: 29 of 327 withheld
 
-Ten reviewed resources survive with their URL, attribution, rights statement,
-rights locator and licence URL. The other 317 do not emit a row; **not even their
+298 reviewed resources survive with their URL, attribution, rights statement,
+rights locator and licence URL. The other 29 do not emit a row; **not even their
 URLs survive.**
 
 | `rights_status` | Included | Withheld |
 |---|---:|---:|
-| `unknown` | 0 | 288 |
+| `unknown` | 288 | 0 |
 | `copyrighted` | 0 | 29 |
 | `public_domain` | 5 | 0 |
 | `open_license` | 5 | 0 |
@@ -73,7 +73,7 @@ URLs survive.**
 The ten permissive rows have current evidence-bound owner decisions. A status by
 itself is still not a decision, and every unknown or copyrighted row fails closed.
 
-## Tier 3 — Texts: 25 of 271 blanked
+## Tier 3 — Texts: 19 of 271 blanked
 
 Only `content` is nulled. A withheld row keeps `editor`, `language`, `script`,
 `text_type`, `locator`, `access_citation`, `access_locator`, `access_url` and
@@ -82,18 +82,22 @@ Only `content` is nulled. A withheld row keeps `editor`, `language`, `script`,
 | `text_type` | Released | Withheld |
 |---|---|---|
 | summary | 211 | 5 |
-| translation | **35** | 19 |
-| transliteration | 0 | 1 |
+| translation | **40** | 14 |
+| transliteration | 1 | 0 |
 
-Genre is not the gate — rights are. All 35 released translations are Montgomery
-1913, whose US copyright has expired. The 134 Waller 2022 summary rows are
+Genre is not the gate — rights are. The released translations include 35 from
+Montgomery 1913 and four from Wohlstein 1893–1894, whose US copyrights have
+expired, plus one CC BY-NC project paraphrase of Martínez Borobio 2003. The
+Martínez Borobio transliteration is also released. The 134 Waller 2022 summary rows are
 released under CC BY-NC 4.0 and carry that narrower licence on each row; they
 cannot be relicensed under this repository's CC BY 4.0.
 
-Released rows by editor: Daniel James Waller (134), Incantation Bowl Index card
-line (68), James A. Montgomery (35), Incantation Bowl Index summary (7), and two
-discovery-campaign summaries. The largest withheld editor groups are Wohlstein
-(5), Schøyen Collection specialist (4), Index summary (3), and Isbell (2).
+Released rows by editor include Daniel James Waller (134), Incantation Bowl
+Index card line (68), James A. Montgomery (35), Incantation Bowl Index summary
+(7), Josef Wohlstein (4), two Martínez Borobio-derived rows, and two
+discovery-campaign summaries. The largest withheld editor groups are Schøyen
+Collection specialist (4), Index summary (3), Isbell (2), and the partially
+reviewed Wohlstein row (1).
 
 ## Tier 4 — 866 claims omitted from public `facts`
 
@@ -158,15 +162,15 @@ source field, source and locator retained; it never replaces the raw claim.
 
 The export spans 15 tables: 1,969 objects, 6,352 facts, 3,245 controlled facets,
 2,268 appearances and links, 4,741 identifiers, 1,063 editions, 862 sources, 271 text
-rows (246 with content), 10 approved media rows, 206 works, 114 contributors,
+rows (252 with content), 298 approved media rows, 206 works, 114 contributors,
 and 33 publications. It
 carries its own `manifest.json` with the attribution string, the CC BY 4.0 grant
 and its scope, and the included/withheld counts.
 
 That grant reaches this project's own contribution — the schema, the records,
 the concordances and confidence judgments, the summaries, and the selection and
-arrangement. It does not reach material the project does not own, and the 35
-Montgomery translations are public domain rather than licensed.
+arrangement. It does not reach material the project does not own, and the 39
+Montgomery/Wohlstein translation rows are public domain rather than licensed.
 
 Each published text row carries `rights_basis` and `license_url`, so a row whose
 source licence is narrower than CC BY 4.0 can be identified as such rather than

@@ -50,8 +50,10 @@ The vocabulary is:
 
 The initial 325 rows and the two-row 18 September addendum were mechanical
 `needs_review` inventory holds. All 327 media records have current ledger
-coverage. Ten later received explicit owner approvals on 20 September; 317
-remain withheld. Historical `media.rights_status` labels and a source's
+coverage. Ten first received explicit owner approvals on 20 September; the
+owner later approved the exact 288-row Penn educational-use cohort. The current
+projection therefore includes 298 media rows and withholds 29. Historical
+`media.rights_status` labels and a source's
 public-domain label are not by themselves media approvals. The software validates
 the decision record; it cannot establish the legal correctness of its rationale.
 The first institutional-policy evidence pilot is retained in
@@ -64,13 +66,13 @@ That note covers 288 media rows representing 280 exact image URLs. Penn's
 current shared terms describe a non-profit, educational or personal-use path
 with required credit and linking, but prohibit commercial use; the separate CC
 BY 4.0 collections-data license explicitly excludes images. This is policy
-evidence for human review, not 288 completed assessments. All rows remain
-`needs_review`, and the three duplicated image resources must receive coherent
-resource-level decisions. On 20 September the owner declared the intended use
-strictly educational and noncommercial. The exact 288-row proposal, including
-required object-number credits and current evidence fingerprints, is now bound
-in `public_library_expansion_review_2026-09-20.json`; it remains pending a
-specific owner decision and changes no rights row by itself.
+evidence for human review rather than an automatic permission inference. On 20
+September the owner declared the intended use strictly educational and
+noncommercial, then approved the exact 288-row proposal for the public library
+and Access-gated preview. The approval, required object-number credits, three
+coherent shared-URL groups and current evidence fingerprints are bound in
+`public_library_expansion_review_2026-09-20.json` at cohort hash
+`cc5f8440930d`. The 29 non-Penn unapproved rows remain withheld.
 
 ## Two distinct exports
 
@@ -84,4 +86,10 @@ The exporter rejects known private media/capture references repeated in its perm
 
 Private corrected-text files, scans, database snapshots and research exports stay outside Git. Retain them together for replay; public manifests intentionally do not embed the private content. The September 4 validation compared the live database with the pre-work backup, checked exact preserved originals, verified all eighteen archived captures, checked SQLite integrity and foreign keys, and opened a new database backup successfully.
 
-Next: arrange an independent second text review, reconcile the newly documented Penn metadata differences and extend to the remaining museum holdings, source-review the pending conflict instances, and investigate actual rights evidence before any media release. Keep institutional-cohort work and a representative accuracy audit separate: the Montgomery cohort is not a statistically representative sample of the whole corpus.
+Next: arrange an independent second text review, reconcile the newly documented
+Penn metadata differences, source-review the pending conflict instances, and
+seek item-specific rights evidence for the remaining 29 media rows. The public
+library and expanded gated-preview candidates remain pending deployment
+approval. Keep institutional-cohort work and a representative accuracy audit
+separate: the Montgomery cohort is not a statistically representative sample of
+the whole corpus.

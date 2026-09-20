@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "abf8105be9339a684fdcb94fa7b80c9168043121deb5c0a277ac2b27d0baf5c4",
+  "corpus_digest": "6cd15c856898b35cad459a064788a5db30bbff6981e8499de91f6e7b7a5fabb3",
   "migrations": 16,
-  "note": "Prepared exact pending public-library rights review packet; no rights or corpus decision changed",
-  "recorded_at": "2026-09-20T17:38:19+00:00",
+  "note": "Applied owner-approved six-text and 288-Penn-media educational release cohort; built audited public-library and expanded gated-preview candidates without deployment.",
+  "recorded_at": "2026-09-20T17:58:30+00:00",
   "recorded_by": "Codex",
   "schema_version": "016_accuracy_audit_reviews",
   "tables": {
@@ -79,8 +79,8 @@
       "rows": 327
     },
     "media_rights_reviews": {
-      "digest": "7588b8ca439e12ecb505469befb4017ade2a9d2e40c43f28f5230fef5b4f1591",
-      "rows": 337
+      "digest": "804bd55de77037a2304903c25206bcd99c0f3e2963f4f67848fdcf4ea6772d9d",
+      "rows": 625
     },
     "merge_log": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -135,11 +135,11 @@
       "rows": 40
     },
     "text_publication_reviews": {
-      "digest": "1b372e34bbb932a998ca43e9438e427ff864068446561b6482e03cc5981b7e4a",
-      "rows": 297
+      "digest": "08869a5ced2aa2c5eec159028322234ff8764199e06c87730db4825c3c971cad",
+      "rows": 303
     },
     "texts": {
-      "digest": "363b88033855e127c69c7adb4d5f2c35d3faee68f553c8c4ee94c3d93c96548f",
+      "digest": "fd6f66757d7a8f6449134c1aac7d22567855b853157a1d0ddad7f7d7fad7e66b",
       "rows": 271
     }
   }
