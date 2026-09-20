@@ -28,3 +28,6 @@ data/exports/**/dedupe_evidence.*
 # fields, catalogue descriptions and media URLs have had no release review — the
 # export manifest says so. The reviewed, gated projection lives in data/public/.
 data/exports/*/
+
+# Generated gated-preview build (ACCESS-009); promoted into site/public only once Access is attached.
+site/preview-build/

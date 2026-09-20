@@ -1,11 +1,21 @@
 /* The reading room — the tab labelled "Explore", routed at #/explore.
  *
- * Reads only /api/reader/*, which serves the same gated projection the file
- * export writes. Everything here would work unchanged against static JSON, so
- * a published version is the same code and cannot see more than this one does.
+ * Reads only the gated projection: the same rows the file export writes, served
+ * by the local console at /api/reader/* or, in the gated scholar preview, as
+ * static JSON beside the page. That is the point of the indirection below — the
+ * published build is this same file, so it cannot see more than the console can.
+ *
+ * A host page opts into the static build by setting, before this script loads:
+ *   window.READER_BASE      where the projected tables live  (default /api/reader)
+ *   window.READER_SUFFIX    file extension, if any           (default none)
+ *   window.READER_STANDALONE  true when there is no console to link back to
  */
 (function () {
   "use strict";
+  const READER = String(window.READER_BASE || "/api/reader").replace(/\/+$/, "");
+  const SUFFIX = String(window.READER_SUFFIX || "");
+  const STANDALONE = Boolean(window.READER_STANDALONE);
+  const source = name => `${READER}/${name}${SUFFIX}`;
   const TABLES = ["identity_clusters", "objects", "identifiers", "facts", "texts", "editions", "sources", "media",
     "works", "contributors", "scholarship_decades", "publications"];
   const data = {loaded: false};
@@ -14,9 +24,9 @@
 
   async function load() {
     if (data.loaded) return data;
-    const manifest = await fetch("/api/reader/manifest").then(r => r.json());
+    const manifest = await fetch(source("manifest")).then(r => r.json());
     const fetched = await Promise.all(TABLES.map(name =>
-      fetch(`/api/reader/${name}`).then(r => r.json()).then(payload => [name, payload.rows])));
+      fetch(source(name)).then(r => r.json()).then(payload => [name, payload.rows])));
     fetched.forEach(([name, rows]) => { data[name] = rows; });
     data.manifest = manifest;
 
@@ -59,11 +69,12 @@
   const first = (id, group) => values(id, group)[0] || "";
 
   function catalogueReturn() {
+    const home = STANDALONE ? "#/explore" : "#/search";
     try {
       const saved = JSON.parse(sessionStorage.getItem("bowlam.catalogue.return") || "null");
-      if (saved?.hash?.startsWith("#/search")) return saved.hash;
+      if (saved?.hash?.startsWith(home)) return saved.hash;
     } catch { /* use the collection root */ }
-    return "#/search";
+    return home;
   }
 
   function titleMarkup(cluster) {
@@ -343,8 +354,13 @@
           summaries are readable here. Another <strong>${m.texts_withheld_rows}</strong> text
           records preserve their edition and locator while withholding protected scholarly wording.
           These are release counts, not the number of bowls known from editions.
-          No image is cleared for reuse yet, so every mark below is drawn from the object's own
-          recorded line count.</p>`}
+          ${m.media_approved_rows
+            ? `Marks below are drawn from the object's own recorded line count, not from a
+               photograph: ${m.media_approved_rows} of
+               ${m.media_approved_rows + m.media_withheld_rows} image references carry a rights
+               decision, and the rest stay withheld.`
+            : `No image is cleared for reuse yet, so every mark below is drawn from the object's
+               own recorded line count.`}</p>`}
       </div>
       <form class="reading-search" id="reading-search-form" role="search">
         <input id="reading-search" type="search" name="q" value="${esc(term)}"
@@ -358,8 +374,11 @@
       ${readable.length ? "" : `<p class="thin-note">${term
         ? "Nothing matches. Try fewer words."
         : "Nothing here yet. The note above says why."}</p>`}
-      ${filtered ? "" : `<p class="thin-note"><a href="#/search">${thin.toLocaleString()} further records</a>
-        hold little beyond an identifier and a source. They are in the research explorer.</p>`}`;
+      ${filtered ? "" : `<p class="thin-note">${STANDALONE
+        ? `A further ${thin.toLocaleString()} records hold little beyond an identifier and a
+           source, and are not shown here.`
+        : `<a href="#/search">${thin.toLocaleString()} further records</a> hold little beyond an
+           identifier and a source. They are in the research explorer.`}</p>`}`;
     const form = view.querySelector("#reading-search-form");
     if (form) form.addEventListener("submit", event => {
       event.preventDefault();
@@ -533,7 +552,7 @@
           <dt>Evidence</dt><dd>${cluster.source_count} source(s), ${cluster.appearance_count} appearance(s)</dd>
           <dt>Coverage</dt><dd>${cluster.completeness_score}/10 core · ${cluster.content_completeness}/13 content</dd>
         </dl>
-        <p><a href="#/search">Open the research explorer</a> for the full claim-by-claim evidence chain.</p>
+        ${STANDALONE ? "" : `<p><a href="#/search">Open the research explorer</a> for the full claim-by-claim evidence chain.</p>`}
       </details>
     </article>`;
   }

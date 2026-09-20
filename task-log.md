@@ -25,6 +25,33 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Claude — Build the ACCESS-009 scholar preview artefact
+
+**Claimed:** ACCESS-009 (artefact only; the Access policy is not an agent's to configure)
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 274 Python passed, 21 Node passed; preview rendered from a plain static file
+server with no console and no API, and checked for console-route leakage in the DOM
+
+- Added `scripts/build_scholar_preview.py`. Rows come from `projection.Projection`, the
+  same builder the file exporter and the reader API use, so a row withheld in one surface
+  is withheld in all three and there is no second implementation to disagree.
+- Taught the reading room to read from somewhere other than the console: `READER_BASE`,
+  `READER_SUFFIX` and `READER_STANDALONE` on the host page. The published build is the same
+  `reading.js` the console runs, copied verbatim, which is what keeps the two honest.
+  Standalone suppresses the three links into console-only views.
+- The build writes `site/preview-build/`, **not** `site/public/preview/`. Anything under
+  `site/public` ships with the next `wrangler pages deploy`, and this artefact is data that
+  ACCESS-009 says must sit behind Access. Promotion is one `cp -R` once the gate is up, and
+  the script says so and warns if a promoted copy is already sitting there.
+- Fixed a standfirst sentence that still read "No image is cleared for reuse yet" after ten
+  media were approved; it now derives from the manifest like the counts beside it.
+- `tests/test_scholar_preview.py` holds the boundary: built outside the Pages output, only
+  `reading.js` copied out of `web/`, rows from the shared projection, and every withheld row
+  shipping a null `content` and `license_url` but keeping its citation.
+- **Next:** Mike attaches a Cloudflare Access policy to `bowlam.com/preview*` — one-time PIN
+  identity provider, allow-list of named scholars, free tier covers 50. Then promote and
+  deploy. Nothing is deployed and the preview is not reachable from bowlam.com today.
+
 ## 2026-09-20 — Claude — Publish the landing page; apply the two release decisions
 
 **Claimed:** ACCESS-008
