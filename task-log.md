@@ -25,6 +25,24 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Deploy expanded Access-gated preview
+
+**Claimed:** ACCESS-003
+**Corpus:** unchanged — state digest `6cd15c856898`
+**Tests:** 294 Python passed; 24 Node passed; 19/19 promoted payload hashes
+matched; 10/10 release checks passed; live Access and alternate-host checks passed
+
+- Recorded the project owner's approval of exact gated-preview candidate
+  `a16b8f19061b`, promoted only its hash-bound bytes, and deployed it as
+  Cloudflare Pages production deployment
+  `a78d885f-18c7-46db-9c57-07f73ae1d211`.
+- Verified `bowlam.com/preview/`, nested media data and the release manifest all
+  redirect through Cloudflare Access. Both `bowlam.pages.dev` and the new
+  per-deployment alias return 404 for preview and data paths.
+- The public `/library` candidate remains local and was not promoted. A request
+  for its candidate data path returns the ordinary public landing page, not
+  library data.
+
 ## 2026-09-20 — Codex — Apply approved educational release cohort
 
 **Claimed:** RIGHTS-002, ACCESS-003

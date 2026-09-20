@@ -53,12 +53,16 @@ class ScholarPreviewBuildTests(unittest.TestCase):
             self.assertIsNone(row['license_url'])
             self.assertTrue(row['access_citation'], 'a withheld row lost its pointer')
 
-    def test_built_output_carries_a_pending_release_candidate(self):
+    def test_built_output_carries_a_reviewed_release_candidate(self):
         if not build.OUT.exists():
             self.skipTest('preview not built; run scripts/build_scholar_preview.py')
         candidate = json.loads(
             (build.OUT / 'release-candidate.json').read_text(encoding='utf-8'))
-        self.assertEqual(candidate['approval']['status'], 'pending_owner_approval')
+        self.assertIn(candidate['approval']['status'], {
+            'pending_owner_approval', 'approved_for_gated_staging'})
+        if candidate['approval']['status'] == 'approved_for_gated_staging':
+            self.assertTrue(candidate['approval']['approved_by'])
+            self.assertTrue(candidate['approval']['approved_at'])
         self.assertTrue(candidate['candidate_id'])
         self.assertTrue(all(check['passed'] for check in candidate['audit_checks']))
         self.assertEqual(candidate['withheld_counts']['source_wording'], 30)
@@ -67,7 +71,6 @@ class ScholarPreviewBuildTests(unittest.TestCase):
         self.assertEqual(candidate['withheld_counts']['private_capture_rows'], 55)
         index = (build.OUT / 'index.html').read_text(encoding='utf-8')
         self.assertIn('release-candidate.json', index)
-        self.assertIn('pending project-owner approval', index)
 
     def test_rows_come_from_the_shared_projection(self):
         """A second row-builder would be a second chance to publish something withheld."""

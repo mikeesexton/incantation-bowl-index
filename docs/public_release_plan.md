@@ -70,10 +70,12 @@ wording values, the short-claim boundary, text and media gates, and traceability
 of all controlled facets. Those exact nineteen files are deployed at
 `https://bowlam.com/preview/` behind Cloudflare Access in production deployment
 `e5aabb22-bf0d-4cc3-85d1-193d687e6cff`. The host lock returns 404 for the
-project's `*.pages.dev` aliases. A new expanded preview candidate,
-`a16b8f19061b...`, has since been built from the approved rights cohort. It
-contains 252 text rows and 298 media rows, passes all ten release checks, and is
-not deployed.
+project's `*.pages.dev` aliases. Expanded preview candidate
+`a16b8f19061b...` was then approved and deployed as Cloudflare Pages production
+deployment `a78d885f-18c7-46db-9c57-07f73ae1d211`. It contains 252 text rows
+and 298 media rows and passes all ten release checks. The custom-domain preview
+and its nested data redirect through Cloudflare Access; the project and
+per-deployment `*.pages.dev` aliases return 404 for preview paths.
 
 ## Controlled browse vocabulary
 
@@ -161,8 +163,8 @@ declared counts. It is built outside `site/public` and is not deployed.
 
 ## Next release sequence
 
-1. Have the owner inspect and approve or reject the exact public-library and
-   expanded gated-preview candidates; only then promote their hash-bound bytes.
+1. Keep the exact public-library candidate local until the owner separately
+   approves it; the expanded gated preview is already deployed.
 2. Review the 30 priority wording rows in source cohorts. The 185 short claims
    passed a structural spot-check. Replace copied descriptive phrasing with a project-authored
    summary where useful, retain the original in the private evidence layer, and

@@ -5,10 +5,19 @@
   "built_at": "2026-09-20T17:50:16+00:00",
   "corpus_state_digest": "6cd15c856898b35cad459a064788a5db30bbff6981e8499de91f6e7b7a5fabb3",
   "approval": {
-    "status": "pending_owner_approval",
-    "approved_by": null,
-    "approved_at": null,
-    "note": null
+    "status": "approved_for_gated_staging",
+    "approved_by": "project_owner",
+    "approved_at": "2026-09-20T21:51:43Z",
+    "note": "Approved in the Codex task for promotion behind the existing Cloudflare Access gate; the public library remains unpublished."
+  },
+  "deployment": {
+    "status": "production",
+    "deployed_at": "2026-09-20T21:54:30Z",
+    "cloudflare_pages_deployment_id": "a78d885f-18c7-46db-9c57-07f73ae1d211",
+    "custom_domain_url": "https://bowlam.com/preview/",
+    "cloudflare_access": "redirect_verified",
+    "alternate_host_lock": "bowlam.pages.dev and a78d885f.bowlam.pages.dev return 404 for preview paths",
+    "public_library_deployed": false
   },
   "projection_counts": {
     "sources": 862,
