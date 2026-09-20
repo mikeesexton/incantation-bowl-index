@@ -25,6 +25,57 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Prepare independent Montgomery text-review packet
+
+**Claimed:** TEXT-006
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 278 Python passed; packet validator matched 15 priority hashes and all
+35 inventory rows to the live corpus; roadmap JSON and `git diff --check` passed
+
+- Prepared a bounded, hash-bound specialist packet for the independent second
+  review of Montgomery's 35 scan-checked English reading texts. Fifteen
+  formula-, restoration- and classification-sensitive texts form the first pass;
+  all 35 remain explicitly inventoried for the complete review.
+- The packet names the exact public-domain scan and hash, precise review pages,
+  permitted outcomes, and append-only correction intake. TEXT-006 is now in
+  progress, not complete; no independent specialist findings have been returned.
+- No text, claim, identity, publication decision, or right will change in this
+  session; any later specialist correction must be recorded append-only.
+- The Penn, British Museum and NLI institutional inquiries reported by Mike are
+  in flight. Next: send this packet to the selected specialist, then ingest only
+  page-cited findings against the bound text hashes.
+
+## 2026-09-20 — Claude — Promote and deploy the gated scholar preview
+
+**Claimed:** ACCESS-009
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 278 Python passed, 21 Node passed; live checks across every host the Pages
+project answers on
+
+- bowlam.com/preview now serves the reviewed projection behind the Cloudflare Access
+  one-time-PIN policy. ACCESS-009 marked done.
+- **An ungated exposure happened, and is recorded here rather than tidied away.** Access
+  policies bind to a hostname; a Pages project also answers on `bowlam.pages.dev` and on a
+  per-deployment `<hash>.bowlam.pages.dev`. The first promoted build was therefore
+  downloadable at `bowlam.pages.dev/preview/data/*.json` with no gate, while bowlam.com
+  correctly redirected to Access. Caught on the post-deploy check, withdrawn by redeploying
+  without the directory within minutes. Only `texts.json` was ever edge-cached, and only
+  because this session's own verification request populated it; every other file was already
+  returning the landing-page fallback.
+- Root cause was trusting a dashboard-side control to be the only thing in front of the
+  data. Fixed in code: `site/functions/preview/[[path]].js` serves `/preview*` on the one
+  host Access covers and answers 404 on every other, ahead of both the static asset and
+  anything cached, and marks responses `no-store` so no intermediary keeps a copy. That
+  also cleared the cached object without needing a purge.
+- Verified after re-publishing: bowlam.com 200; bowlam.com/preview/, its nested data paths
+  and reading.js all 302 to Access; bowlam.pages.dev and the deployment alias 404 on every
+  preview path, checked repeatedly and with a cache-busting parameter.
+- `tests/test_scholar_preview.py` now also asserts the lock exists, names the gated host,
+  short-circuits before `env.ASSETS` is consulted, and sets no-store.
+- **Next:** Mike should sign in once at bowlam.com/preview to confirm the reading room
+  renders for an allow-listed scholar — this session verified the gate and the artefact
+  separately but never behind a live session, since authenticating is his to do.
+
 ## 2026-09-20 — Claude — Build the ACCESS-009 scholar preview artefact
 
 **Claimed:** ACCESS-009 (artefact only; the Access policy is not an agent's to configure)

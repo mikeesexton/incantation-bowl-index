@@ -31,3 +31,6 @@ data/exports/*/
 
 # Generated gated-preview build (ACCESS-009); promoted into site/public only once Access is attached.
 site/preview-build/
+
+# Promoted copy of the gated preview; regenerate with scripts/build_scholar_preview.py.
+site/public/preview/

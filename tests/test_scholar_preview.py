@@ -81,5 +81,36 @@ class ScholarPreviewBuildTests(unittest.TestCase):
         self.assertIn('window.READER_STANDALONE', reading)
 
 
+class PreviewHostLockTests(unittest.TestCase):
+    """A Cloudflare Access policy covers one hostname; a Pages project answers on several.
+
+    bowlam.com, bowlam.pages.dev and a per-deployment <hash>.bowlam.pages.dev all
+    serve the same bytes, so a policy on the custom domain alone leaves the rest
+    ungated. That happened on 20 September 2026. The host lock is the code-side
+    guarantee, and it must not be quietly removed.
+    """
+
+    worker = (ROOT / 'site' / 'functions' / 'preview' / '[[path]].js').read_text(encoding='utf-8')
+
+    def test_the_lock_exists(self):
+        self.assertTrue((ROOT / 'site' / 'functions' / 'preview' / '[[path]].js').is_file())
+
+    def test_serves_only_the_host_access_covers(self):
+        self.assertIn('const GATED_HOST = "bowlam.com"', self.worker)
+        self.assertIn('!==', self.worker)
+        self.assertIn('404', self.worker)
+
+    def test_refuses_before_reaching_the_asset(self):
+        """The 404 must return before env.ASSETS is consulted, or it serves the file."""
+        guard = self.worker.index('404')
+        assets = self.worker.index('ASSETS')
+        self.assertLess(guard, assets,
+                        'the host check must short-circuit before the asset is fetched')
+
+    def test_gated_responses_are_never_stored(self):
+        self.assertIn('no-store', self.worker)
+        self.assertIn('noindex', self.worker)
+
+
 if __name__ == '__main__':
     unittest.main()

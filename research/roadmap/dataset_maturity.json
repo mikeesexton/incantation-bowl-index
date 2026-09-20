@@ -292,10 +292,10 @@
     {
      "id": "TEXT-006",
      "title": "Independently review the Montgomery reading-text cohort",
-     "status": "queued",
+     "status": "in_progress",
      "owner": "Research",
      "done_when": "A separate reviewer checks all 35 edited English texts against the scans, explicitly reviews names, magical formulas, gaps and restorations, and records disagreements or corrections without overwriting earlier reviews.",
-     "evidence": "First scan-review pass complete for 35/35. No independent specialist certification or original-language verification is claimed; publication approval remains separate."
+     "evidence": "First scan-review pass complete for 35/35. A hash-bound independent-review packet prepared on 20 September 2026 defines a fifteen-text high-risk first pass, a complete 35-text inventory, exact scan pages, reviewer outcomes and append-only intake boundaries. No independent specialist certification has yet been returned, and original-language verification and publication approval remain separate."
     },
     {
      "id": "TEXT-007",
@@ -464,10 +464,10 @@
     {
      "id": "ACCESS-009",
      "title": "Gate a factual scholar preview behind Cloudflare Access",
-     "status": "queued",
+     "status": "done",
      "owner": "Research owner and engineering",
      "done_when": "Named scholars reach a factual view of the corpus at bowlam.com through per-person authentication; the deployed artefact is a reviewed `ibi export-public` build rather than the working database; no protected transcription, translation or image is behind the gate; and access is individually revocable and logged.",
-     "evidence": "Cloudflare Access is provisioned on the free tier (50 users, one-time email PIN), so the authentication layer costs nothing and gives per-person revocation rather than a shared password. Three constraints are already settled and should not be relitigated at build time. The research console is not the deliverable: it binds to localhost, refuses non-local addresses, and authenticates with a single local token, so it must never be exposed. The gate is the export, not the password: a shared or per-person credential does not make distribution private, so what sits behind it must already be publishable on its own terms. And the corpus file is not shareable even privately, because it carries 136 CC BY-NC rows and 15 copyrighted text rows that `export-public` withholds by design. Unblocked on the data side as of 20 September 2026: the reviewed export now carries 246 published text rows and 10 approved media, each published row naming its own rights_basis and license_url so a CC BY-NC row is identifiable. The remaining work is the gated artefact and the Access policy, not a rights decision."
+     "evidence": "Done 20 September 2026. bowlam.com/preview serves the reviewed projection (246 published text rows, 10 approved media, each row naming its rights_basis and license_url) behind a Cloudflare Access one-time-PIN policy on an allow-list; the free tier covers 50 named users. Built by scripts/build_scholar_preview.py from projection.Projection, the same builder the file exporter and reader API use. Verified: bowlam.com is public, bowlam.com/preview* redirects to Access including nested data paths, and every *.pages.dev host answers 404 for /preview*."
     }
    ]
   },
@@ -795,6 +795,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-20",
+   "note": "Published ACCESS-009 behind Cloudflare Access. An Access policy binds to one hostname, but a Pages project also answers on bowlam.pages.dev and a per-deployment alias, so the first promoted build was briefly downloadable there with no gate. Withdrawn within minutes and re-published behind a host lock in site/functions/preview/[[path]].js, which 404s every host the policy does not cover. tests/test_scholar_preview.py holds it."
+  },
   {
    "date": "2026-09-20",
    "note": "Published ACCESS-008: bowlam.com is live from the Pages project. Applied the owner's two release decisions — the 134 Waller verse-citation rows are published on the open_license basis with CC BY-NC travelling with them, and a recorded permissive media label is now treated as the rights decision, approving 10 of 327. Published texts went 112 to 246 and the reading room's default pool 70 bowls to 191."
@@ -1378,7 +1382,7 @@
   "META-008: extend the Mandaic denominator now that Pognon's thirty Khouabir bowls are enumerated. Reconcile them to later editions and museum identities, then add Yamauchi 1967 if the pending request succeeds. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.",
   "META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.",
   "META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.",
-  "TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.",
+  "TEXT-006 / TEXT-003: send the prepared hash-bound review packet for the fifteen highest-risk Montgomery English texts, then complete the remaining twenty and develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete; independent specialist findings have not yet been returned.",
   "CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.",
   "QA-003 follow-through: acquire or inspect the Segal 2000 entry for BM068A and supersede the one indeterminate audit row; plan an independent second audit round before treating the 98.7% weighted verified-or-noted baseline as a durable accuracy claim.",
   "TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.",

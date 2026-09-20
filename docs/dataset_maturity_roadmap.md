@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-20T04:42:07+00:00`
+Generated: `2026-09-20T12:25:08+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 27 done · 19 in progress · 18 queued · 0 blocked |
+| Roadmap tasks | 28 done · 20 in progress · 16 queued · 0 blocked |
 | Quantitative handoff gates passing | 3/5 |
 | Required handoff tasks complete | 10/24 |
 
@@ -197,7 +197,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 7. META-008: extend the Mandaic denominator now that Pognon's thirty Khouabir bowls are enumerated. Reconcile them to later editions and museum identities, then add Yamauchi 1967 if the pending request succeeds. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
 8. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
 9. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
-10. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
+10. TEXT-006 / TEXT-003: send the prepared hash-bound review packet for the fifteen highest-risk Montgomery English texts, then complete the remaining twenty and develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete; independent specialist findings have not yet been returned.
 11. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
 12. QA-003 follow-through: acquire or inspect the Segal 2000 entry for BM068A and supersede the one indeterminate audit row; plan an independent second audit round before treating the 98.7% weighted verified-or-noted baseline as a durable accuracy claim.
 13. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
@@ -315,9 +315,9 @@ Record where editions, transliterations, translations, incipits, and commentary 
 - [x] **TEXT-005 — Account for every main Montgomery entry and source exception** · Done · Research
   - Done when: All forty main entries have explicit publication, translation and register status; appendix material is separately scoped.
   - Evidence/status: 40-row cohort report: 35 checked reading texts, zero OCR drafts, and 5 source-documented cases with no separate translation (18, 21, 23, 27, 33). Appendix 42 remains a separate uncertain possible bowl candidate; Appendix 41 is explicitly a skull.
-- [ ] **TEXT-006 — Independently review the Montgomery reading-text cohort** · Queued · Research
+- [ ] **TEXT-006 — Independently review the Montgomery reading-text cohort** · In progress · Research
   - Done when: A separate reviewer checks all 35 edited English texts against the scans, explicitly reviews names, magical formulas, gaps and restorations, and records disagreements or corrections without overwriting earlier reviews.
-  - Evidence/status: First scan-review pass complete for 35/35. No independent specialist certification or original-language verification is claimed; publication approval remains separate.
+  - Evidence/status: First scan-review pass complete for 35/35. A hash-bound independent-review packet prepared on 20 September 2026 defines a fifteen-text high-risk first pass, a complete 35-text inventory, exact scan pages, reviewer outcomes and append-only intake boundaries. No independent specialist certification has yet been returned, and original-language verification and publication approval remain separate.
 - [ ] **TEXT-007 — Grade object evidence A-D alongside identity status** · Queued · Research
   - Done when: Every probable or confirmed identity carries an evidence grade on the scoping review's A-D scale, recorded per assertion and separately from record_status.
   - Evidence/status: record_status measures identity confidence; the A-D scale measures evidence quality. They are different axes and a confirmed identity can rest on a dealer photograph. Scale in docs/project-rules.md, from the review section 1.4.
@@ -382,9 +382,9 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
 - [x] **ACCESS-008 — Publish the bowlam.com public landing page** · Done · Research owner
   - Done when: bowlam.com serves a project-authored overview of the index — what it covers, how bowls are counted, what is deliberately withheld and why — plus an interest-capture field, with no third-party text or images and no path from the page to the corpus.
   - Evidence/status: Done 20 September 2026. bowlam.com serves the generated landing page from Cloudflare Pages project `bowlam` at snapshot digest 6075922202342008: project-authored overview, the counting method, the withheld-by-design chapter, and the /api/interest field. tests/test_public_site.py holds the boundary — no corpus endpoint, no console route, no identity identifier, aggregates only.
-- [ ] **ACCESS-009 — Gate a factual scholar preview behind Cloudflare Access** · Queued · Research owner and engineering
+- [x] **ACCESS-009 — Gate a factual scholar preview behind Cloudflare Access** · Done · Research owner and engineering
   - Done when: Named scholars reach a factual view of the corpus at bowlam.com through per-person authentication; the deployed artefact is a reviewed `ibi export-public` build rather than the working database; no protected transcription, translation or image is behind the gate; and access is individually revocable and logged.
-  - Evidence/status: Cloudflare Access is provisioned on the free tier (50 users, one-time email PIN), so the authentication layer costs nothing and gives per-person revocation rather than a shared password. Three constraints are already settled and should not be relitigated at build time. The research console is not the deliverable: it binds to localhost, refuses non-local addresses, and authenticates with a single local token, so it must never be exposed. The gate is the export, not the password: a shared or per-person credential does not make distribution private, so what sits behind it must already be publishable on its own terms. And the corpus file is not shareable even privately, because it carries 136 CC BY-NC rows and 15 copyrighted text rows that `export-public` withholds by design. Unblocked on the data side as of 20 September 2026: the reviewed export now carries 246 published text rows and 10 approved media, each published row naming its own rights_basis and license_url so a CC BY-NC row is identifiable. The remaining work is the gated artefact and the Access policy, not a rights decision.
+  - Evidence/status: Done 20 September 2026. bowlam.com/preview serves the reviewed projection (246 published text rows, 10 approved media, each row naming its rights_basis and license_url) behind a Cloudflare Access one-time-PIN policy on an allow-list; the free tier covers 50 named users. Built by scripts/build_scholar_preview.py from projection.Projection, the same builder the file exporter and reader API use. Verified: bowlam.com is public, bowlam.com/preview* redirects to Access including nested data paths, and every *.pages.dev host answers 404 for /preview*.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -546,6 +546,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-20:** Published ACCESS-009 behind Cloudflare Access. An Access policy binds to one hostname, but a Pages project also answers on bowlam.pages.dev and a per-deployment alias, so the first promoted build was briefly downloadable there with no gate. Withdrawn within minutes and re-published behind a host lock in site/functions/preview/[[path]].js, which 404s every host the policy does not cover. tests/test_scholar_preview.py holds it.
 - **2026-09-20:** Published ACCESS-008: bowlam.com is live from the Pages project. Applied the owner's two release decisions — the 134 Waller verse-citation rows are published on the open_license basis with CC BY-NC travelling with them, and a recorded permissive media label is now treated as the rights decision, approving 10 of 327. Published texts went 112 to 246 and the reading room's default pool 70 bowls to 191.
 - **2026-09-19:** Completed QA-002 with a held-source review of the six remaining claim differences. Rendered and visually checked the relevant Montgomery and Kedar pages, compared the Ford-Morgenstern, Waller, Moriggi, Brand and Penn evidence, and verified from the official MARC list that heb denotes Hebrew. CBS 16018 is compatible because the register cell is blank rather than contradictory; CBS 16017 and CBS 2971 are documented internal Montgomery inconsistencies. CBS 9008 and NLI Ms. Heb. 9467.163 remain unresolved language questions, and HS 3003 remains a scholarly collection-history disagreement. All 644 differences now have current exact-evidence decisions: 626 compatible and 18 substantive, with zero awaiting first-pass review. No source claim, identity or canonical value changed.
 - **2026-09-19:** Applied seven evidence-bound, append-only compatibility manifests after a clean copied-database dry run and idempotent replay. Explicit stored-evidence review revalidated 589 claim-field instances: 155 dating, 110 provenance, 137 publication, 74 location, 63 language, 24 biblical-intertext and 26 other descriptive facets. Compatibility means the claims can coexist; it does not validate a fact or select a canonical value. The current review queue falls from 595 to six. CBS 9008 language, NLI Ms. Heb. 9467.163 language-code semantics, HS 3003 collection location, and three Montgomery publication-identifier anomalies remain untouched for source-level work. All 13 already-current substantive dispositions remain visible. No claim, identity, canonical value, authenticity, right or public-release decision changed.
