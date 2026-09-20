@@ -125,9 +125,11 @@ facts, not the editor's expression.
 
 Watch the source's own licence, though, because a narrower one travels with the
 material. Waller 2022 is CC BY-NC 4.0, which forbids commercial use and therefore
-cannot be relicensed under this repository's CC BY 4.0. Its 134 derived rows are
-withheld and carry only their pointer. Check the source's licence before approving
-anything derived from it, and see [`licensing.md`](licensing.md).
+cannot be relicensed under this repository's CC BY 4.0. Its 134 fact-like
+verse-citation rows are published by an explicit owner decision with their
+attribution and CC BY-NC licence URL; that narrower licence still governs them.
+Check the source's licence before approving anything derived from it, and see
+[`licensing.md`](licensing.md).
 
 A source's copyright status is necessary but not sufficient. The editorial state of
 the stored row is declared too, because a normalized reading text produced from a

@@ -566,7 +566,7 @@
      "status": "done",
      "owner": "Research",
      "done_when": "Every media row can record creator/owner, source URL, rights statement, license, jurisdiction/date notes, private-capture status, public-reuse decision, and reviewer.",
-     "evidence": "Implemented immutable media-rights ledger, exact-evidence review batches and stale/revoked decision handling. The original 325 media and a two-row 18 September addendum now give all 327 records explicit current needs_review holds. None has a completed rights assessment. Workflow in docs/evidence_review_and_release.md."
+     "evidence": "Implemented immutable media-rights ledger, exact-evidence review batches and stale/revoked decision handling. The original 325 media and a two-row 18 September addendum gave all 327 records explicit current needs_review holds; ten later received current owner approvals. Workflow in docs/evidence_review_and_release.md."
     },
     {
      "id": "RIGHTS-002",
@@ -574,7 +574,7 @@
      "status": "in_progress",
      "owner": "Human review",
      "done_when": "One hundred percent of media records have a reviewed rights disposition; unknown remains permissible only with an explicit follow-up task.",
-     "evidence": "327/327 media now have current ledger rows; 0/327 have completed rights assessments and 0 are approved for public reuse. Policy evidence now scopes the 288-row, 280-URL Penn Museum cohort: current official terms describe non-profit, educational or personal use with required credit and linking, exclude high-resolution files and commercial use, and the separate CC BY 4.0 collections-data license expressly excludes images. Three exact Penn image URLs are shared by eleven rows and require coherent resource-level decisions. The Ford 2023 Davidovitz 41 and Levene 1999 M163 pilot separately narrowed its permission-contact path. None of this evidence infers ownership, compatibility with the project's CC BY release or approval; existing non-unknown copyright labels do not count as decisions."
+     "evidence": "327/327 media have current ledger rows; ten have completed owner approvals and 317 remain withheld. Policy evidence scopes the 288-row, 280-URL Penn Museum cohort: current official terms permit nonprofit educational or personal noncommercial sharing with required credit and linking, exclude high-resolution files and commercial use, and the separate CC BY 4.0 collections-data license expressly excludes images. The owner has declared the intended Bowlam library use strictly educational and noncommercial. A content-free exact proposal binds all 288 rows, required object credits and three shared-URL groups to cohort hash cc5f8440930d, but remains pending an explicit cohort decision; no agent inferred approval. The Ford 2023 Davidovitz 41 and Levene 1999 M163 pilot separately narrowed its permission-contact path."
     },
     {
      "id": "RIGHTS-003",
@@ -598,7 +598,7 @@
      "status": "done",
      "owner": "Engineering",
      "done_when": "The reading room shows a bowl's photograph when its media has a completed approval, and shows nothing of it otherwise, with tests covering both directions.",
-     "evidence": "The reading room renders whatever media the projection emits, and the projection emits a media row only for a current approval - so an uncleared image has no row to render and the data-drawn spiral carries the grid instead. tests/test_media_gate.py covers all three states: a public-domain source alone releases nothing, a completed approval releases the URL with its attribution, and a withhold decision keeps it off the page. Currently 0 of 327 media are approved, so no image appears; when RIGHTS-002 clears one it appears with no further work. Circular crop, since a bowl photographed from above is a circle."
+     "evidence": "The reading room renders whatever media the projection emits, and the projection emits a media row only for a current approval - so an uncleared image has no row to render and the data-drawn spiral carries the grid instead. tests/test_media_gate.py covers all three states: a public-domain source alone releases nothing, a completed approval releases the URL with its attribution, and a withhold decision keeps it off the page. Ten of 327 media are currently approved and display with attribution and reviewed rights status; new approvals appear with no second media path. Circular crop, since a bowl photographed from above is a circle."
     }
    ]
   },

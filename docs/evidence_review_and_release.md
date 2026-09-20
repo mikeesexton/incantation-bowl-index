@@ -48,13 +48,13 @@ The vocabulary is:
 | `withhold` | Reviewer has decided to withhold reuse and supplied a rationale | Yes | Withheld |
 | `approved` | Reviewer supplies rights evidence, locator and attribution for this exact resource | Yes | Eligible while evidence remains current |
 
-The initial 325 rows and the two-row 18 September addendum are mechanical
-`needs_review` inventory holds. All 327 media records therefore have current
-ledger coverage, but they contain no inferred permissions and count as **zero
-completed assessments**. Historical `media.rights_status` labels and a source's
-public-domain label are not media approvals. The software validates the decision
-record; it cannot establish the legal correctness of its rationale. The first
-institutional-policy evidence pilot is retained in
+The initial 325 rows and the two-row 18 September addendum were mechanical
+`needs_review` inventory holds. All 327 media records have current ledger
+coverage. Ten later received explicit owner approvals on 20 September; 317
+remain withheld. Historical `media.rights_status` labels and a source's
+public-domain label are not by themselves media approvals. The software validates
+the decision record; it cannot establish the legal correctness of its rationale.
+The first institutional-policy evidence pilot is retained in
 [`media_rights_policy_evidence_2026-09-18.md`](../research/reviews/media_rights_policy_evidence_2026-09-18.md);
 it narrows follow-up contacts without changing either row's decision.
 
@@ -66,7 +66,11 @@ with required credit and linking, but prohibit commercial use; the separate CC
 BY 4.0 collections-data license explicitly excludes images. This is policy
 evidence for human review, not 288 completed assessments. All rows remain
 `needs_review`, and the three duplicated image resources must receive coherent
-resource-level decisions.
+resource-level decisions. On 20 September the owner declared the intended use
+strictly educational and noncommercial. The exact 288-row proposal, including
+required object-number credits and current evidence fingerprints, is now bound
+in `public_library_expansion_review_2026-09-20.json`; it remains pending a
+specific owner decision and changes no rights row by itself.
 
 ## Two distinct exports
 

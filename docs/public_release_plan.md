@@ -129,6 +129,25 @@ controlled facet and the ordinary source/citation structure.
 - Any commercial use of the 134 CC BY-NC rows unless the rights holder supplies
   broader permission.
 
+## Proposed public educational library
+
+The next public surface should be `bowlam.com/library`, not a public
+`/workshop`. It will contain only material with an affirmative public reuse
+basis and will remain separate from the general landing page. The gated
+`/preview` will consume the same approved rows inside its richer scholarly view.
+A separate workshop tier is unnecessary unless the owner later chooses an
+item-specific fair-use position for protected modern expression.
+
+The pending exact proposal is
+`research/reviews/public_library_expansion_review_2026-09-20.json`, cohort hash
+`cc5f8440930decc9a7c42d4cc4fc13de910618837ffddd4d72d575d3d8f92c44`.
+It proposes four scan-checked public-domain Wohlstein translations, two CC
+BY-NC Martínez Borobio rows and 288 Penn Museum media rows under Penn's stated
+nonprofit educational/personal noncommercial terms. It deliberately excludes
+the fifth partially reviewed Wohlstein translation, thirteen protected modern
+translations and twenty-nine other unapproved media rows. No proposal row enters
+either projection until the owner approves the exact cohort.
+
 ## Next release sequence
 
 1. Rebuild the gated preview from the shared projection and verify all fifteen

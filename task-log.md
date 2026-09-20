@@ -25,6 +25,30 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Prepare rights-clear public library expansion
+
+**Claimed:** RIGHTS-002
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 288 Python passed; 24 Node passed; exact proposal regenerated from
+live evidence; roadmap and `git diff --check` passed
+
+- Defined the next architecture as a public `/library` of affirmatively reusable
+  material plus the existing gated `/preview`; no separate workshop surface or
+  fair-use tier is needed for the present expansion.
+- Generated a content-free exact owner-review packet for four scan-checked
+  public-domain Wohlstein translations, two CC BY-NC Martínez Borobio rows and
+  288 Penn Museum media rows / 280 image URLs. Every Penn row has its required
+  object-number credit; the proposal is bound to cohort hash `cc5f8440930d`.
+- Corrected stale rights-roadmap documentation: ten media rows are already
+  approved, not zero, while 317 remain withheld. The new 294-row proposal stays
+  `pending_owner_decision`; no agent converted institutional policy into a
+  rights decision.
+- No corpus, rights, publication, Cloudflare or deployment state changed.
+  Protected modern translations, the partially reviewed Wohlstein text and 29
+  other unapproved media rows remain withheld. Next: owner approval of the exact
+  text cohort, Penn cohort, both or neither; then ingest, build and audit both
+  release candidates before a separate deployment approval.
+
 ## 2026-09-20 — Codex — Deploy the approved gated staging candidate
 
 **Claimed:** ACCESS-003
