@@ -1,0 +1,445 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex: primary-source exception review authorized by Mike",
+  "reviewed_at": "2026-09-20T03:36:22+00:00",
+  "scope": "Six current claim differences reviewed from held sources and official metadata semantics. No source claim, identity, or canonical value changed; unresolved scholarly questions remain flagged.",
+  "entries": [
+    {
+      "identity_id": "IDENT-079F0B82D514",
+      "field_group": "language",
+      "evidence_sha256": "0f73b22c7e341d43834682fd5bd3e19361b41c40b79b67a372c72b68827f9ea8",
+      "disposition": "unresolved",
+      "rationale": "Three specialist publications classify CBS 9008 as Syriac, while the dated Penn catalogue observation labels its inscription language Hebrew Language. The stronger edition evidence does not by itself establish whether Penn's field is erroneous, historical, or governed by a different catalogue convention. Both assertions remain source-attributed pending an original-script and catalogue-history review.",
+      "review_basis": "Compared the complete current claim snapshot with Montgomery 1913, Moriggi 2014, Brand 2021, and the dated Penn record. The held specialist sources were inspected, but no independent palaeographic review or authoritative Penn field-history explanation was available; no language winner was selected.",
+      "supporting_references": [
+        "research/reviews/penn_montgomery_concordance_2026-09-05.json",
+        "research/reviews/penn_field_conflicts_2026-09-05.json",
+        "https://archive.org/details/aramaicincantati00mont",
+        "https://doi.org/10.1163/9789004272798",
+        "https://www.manichaeism.de/wp-content/uploads/2021/11/Incantation-Bowls.pdf",
+        "https://collections.penn.museum/collections/object/222626"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-079F0B82D514",
+        "label": "CBS 9008",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-079F0B82D514",
+          "IBI-4B7488D77F24",
+          "IBI-92BA58D99251",
+          "IBI-F9670CEFD548"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6AEA2713BC04",
+            "object_id": "IBI-4B7488D77F24",
+            "source_id": "SRC-6D313A7AA389",
+            "field": "inscription_language",
+            "value_text": "Syriac",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 1, item 3",
+            "source_title": "Working List of Syriac ‘Manichaean’ Incantation Bowls",
+            "source_url": "https://www.manichaeism.de/wp-content/uploads/2021/11/Incantation-Bowls.pdf"
+          },
+          {
+            "id": "CLM-AC8C2FB5E38D",
+            "object_id": "IBI-F9670CEFD548",
+            "source_id": "SRC-BAAFF2F10461",
+            "field": "inscription_language",
+            "value_text": "Hebrew Language",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "https://collections.penn.museum/collections/object/222626; Details table; observed 2026-09-05T14:31:02.860Z; Inscription Language",
+            "source_title": "Hebrew Bowl B9008",
+            "source_url": "https://collections.penn.museum/collections/object/222626"
+          },
+          {
+            "id": "CLM-AFAD6FE7ECB5",
+            "object_id": "IBI-079F0B82D514",
+            "source_id": "SRC-943673B56FB8",
+            "field": "inscription_language",
+            "value_text": "Syriac",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 325, item 31",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-C13DEA433EC5",
+            "object_id": "IBI-92BA58D99251",
+            "source_id": "SRC-3C4294DDB367",
+            "field": "inscription_language",
+            "value_text": "Syriac",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Bowl no. 3, p. 32",
+            "source_title": "A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia",
+            "source_url": "https://doi.org/10.1163/9789004272798"
+          }
+        ],
+        "values_by_field": {
+          "inscription_language": [
+            "Hebrew Language",
+            "Syriac"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-09B23B2CE047",
+      "field_group": "location",
+      "evidence_sha256": "1eaf6a1d9577471584cc599d810281989346ba5b2862855ec858cdc7c328e803",
+      "disposition": "scholarly_disagreement",
+      "rationale": "Ford and Morgenstern's 2020 Hilprecht collection catalogue and Waller 2022 place HS 3003 in the Hilprecht collection in Jena, while Kedar 2019 associates HS 3003 with a private Berlin collection in a densely punctuated note. The available evidence does not establish whether this is a transfer, miscitation, punctuation problem, or mistaken concordance, so no collection value is selected.",
+      "review_basis": "Inspected Ford and Morgenstern 2020 entry 2, Waller 2022's distribution table, and Kedar 2019 p. 134 note 546, including a rendered visual check of the Kedar page. The sources support a real attribution difference but do not resolve its history.",
+      "supporting_references": [
+        "research/reviews/claim_conflict_triage_2026-09-04.json",
+        "https://doi.org/10.1163/9789004411838",
+        "https://refubium.fu-berlin.de/handle/fub188/24509",
+        "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-09B23B2CE047",
+        "label": "Waller 2022: HS 3003",
+        "field_group": "location",
+        "member_ids": [
+          "IBI-09B23B2CE047",
+          "IBI-58CF5ED0C89C",
+          "IBI-AB9C12C9719A"
+        ],
+        "claims": [
+          {
+            "id": "CLM-9BA5643E5EFD",
+            "object_id": "IBI-58CF5ED0C89C",
+            "source_id": "SRC-8A145FAA2EBB",
+            "field": "current_or_reported_collection",
+            "value_text": "Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Entry 2, p. 14",
+            "source_title": "Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "source_url": "https://doi.org/10.1163/9789004411838"
+          },
+          {
+            "id": "CLM-A1F130FF89C9",
+            "object_id": "IBI-09B23B2CE047",
+            "source_id": "SRC-A90AB34CA3FE",
+            "field": "current_or_reported_collection",
+            "value_text": "Private collection, Berlin",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 134, note 546",
+            "source_title": "Who Wrote the Incantation Bowls?",
+            "source_url": "https://refubium.fu-berlin.de/handle/fub188/24509"
+          },
+          {
+            "id": "CLM-F89C3B13571D",
+            "object_id": "IBI-AB9C12C9719A",
+            "source_id": "SRC-73C44B143A9D",
+            "field": "current_or_reported_collection",
+            "value_text": "Frau Professor Hilprecht Collection, Jena",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "p. 158, distribution table, HS 3003",
+            "source_title": "The Bible in the Bowls: A Catalogue of Biblical Quotations in Published Jewish Babylonian Aramaic Magic Bowls",
+            "source_url": "https://www.openbookpublishers.com/books/10.11647/obp.0305"
+          }
+        ],
+        "values_by_field": {
+          "current_or_reported_collection": [
+            "Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena",
+            "Frau Professor Hilprecht Collection, Jena",
+            "Private collection, Berlin"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-0C53EA838205",
+      "field_group": "language",
+      "evidence_sha256": "bb304c95c6b7bed343ad57d8c9bcd227bbb2965191e95662920c6420a8164102",
+      "disposition": "unresolved",
+      "rationale": "The NLI catalogue supplies the code heb, which the official MARC language list maps to Hebrew, while Abudraham 2026 classifies the inscription as Jewish Aramaic. These are different metadata fields, but the official code semantics prevent treating the values as automatically compatible. The record remains unresolved pending inspection of the NLI record history and the edition's linguistic evidence.",
+      "review_basis": "Compared the complete current claim snapshot and verified the official Library of Congress MARC mapping heb = Hebrew. The live NLI record was not accessible to the web retrieval tool, and the Abudraham article was not held locally; no original-script or catalogue-history review was performed.",
+      "supporting_references": [
+        "https://www.nli.org.il/en/manuscripts/NNL_ALEPH997008712395705171/NLI",
+        "https://www.loc.gov/marc/languages/language_code.html",
+        "https://doi.org/10.1093/jss/fgaf025"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-0C53EA838205",
+        "label": "NLI incantation bowl 41 (Ms. Heb. 9467.163)",
+        "field_group": "language",
+        "member_ids": [
+          "IBI-0C53EA838205",
+          "IBI-8176C19CFDAF"
+        ],
+        "claims": [
+          {
+            "id": "CLM-B71174D25D1D",
+            "object_id": "IBI-8176C19CFDAF",
+            "source_id": "SRC-63E581DB2C77",
+            "field": "catalogue_language_codes",
+            "value_text": "heb",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "MMS 997008712395705171",
+            "source_title": "קערת השבעה מס' 41",
+            "source_url": "https://www.nli.org.il/en/manuscripts/NNL_ALEPH997008712395705171/NLI"
+          },
+          {
+            "id": "CLM-391D781F6DD6",
+            "object_id": "IBI-0C53EA838205",
+            "source_id": "SRC-CA4B122C5F4D",
+            "field": "inscription_language",
+            "value_text": "Jewish Aramaic",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "NLI Ms. Heb. 9467.163, pp. 105–134",
+            "source_title": "Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels",
+            "source_url": "https://doi.org/10.1093/jss/fgaf025"
+          }
+        ],
+        "values_by_field": {
+          "catalogue_language_codes": [
+            "heb"
+          ],
+          "inscription_language": [
+            "Jewish Aramaic"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-319F3DE276D8",
+      "field_group": "publication",
+      "evidence_sha256": "4197e383a0edaf114ec38d55dc6885855e15b2a30009ca3c2247b06ddfd5bcf7",
+      "disposition": "source_inconsistency",
+      "rationale": "Montgomery 1913 identifies text 14 as CBS 16917 in its heading but as CBS 16017 in the closing register. Both readings are visible in the archived scan, and Penn's current B16017 record links the object to PBS III text 14. The conflict is therefore an internal publication inconsistency; the source claims remain unchanged.",
+      "review_basis": "Visually checked Montgomery's text 14 heading on printed p. 183/PDF p. 189 and the register row on printed p. 323/PDF p. 329, then compared the dated Penn concordance record. This disposition documents the inconsistency without silently correcting the historical source.",
+      "supporting_references": [
+        "research/enrichment/montgomery_1913_review_2026-09-04.json",
+        "research/reviews/penn_montgomery_concordance_2026-09-05.json",
+        "https://archive.org/details/aramaicincantati00mont",
+        "https://collections.penn.museum/collections/object/97562"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-319F3DE276D8",
+        "label": "CBS 16017",
+        "field_group": "publication",
+        "member_ids": [
+          "IBI-319F3DE276D8",
+          "IBI-691D04D6C1D1",
+          "IBI-CF7556423B9D",
+          "IBI-EE139B7E7FDB"
+        ],
+        "claims": [
+          {
+            "id": "CLM-75AE940A7647",
+            "object_id": "IBI-CF7556423B9D",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_heading_identifier",
+            "value_text": "CBS 16917",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "disputed",
+            "locator": "text 14 heading, printed p. 183; PDF p. 189",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-69FF820D9E91",
+            "object_id": "IBI-CF7556423B9D",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_register_identifier",
+            "value_text": "CBS 16017",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue, text 14, printed p. 323; PDF p. 329; catalogue number column",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-E82939A87CF9",
+            "object_id": "IBI-CF7556423B9D",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_register_identifier",
+            "value_text": "CBS 16017",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "probable",
+            "locator": "closing register, printed p. 323; PDF p. 329",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          }
+        ],
+        "values_by_field": {
+          "publication_heading_identifier": [
+            "CBS 16917"
+          ],
+          "publication_register_identifier": [
+            "CBS 16017"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-3302F57D7AE1",
+      "field_group": "publication",
+      "evidence_sha256": "231e26fe313e3d56be7907b726ad97d943192d6120c39569803e99877adcaf7f",
+      "disposition": "compatible",
+      "rationale": "Montgomery's text 19 heading explicitly gives CBS 16018, while the closing register's catalogue-number cell is blank. A blank cell is absence of a repeated identifier, not a competing identifier; Penn's current B16018 record independently links PBS III text 19 to B16018. The stored source observations can coexist.",
+      "review_basis": "Visually checked Montgomery's text 19 heading on printed p. 195/PDF p. 201 and the blank register cell on printed p. 324/PDF p. 330, then compared the dated Penn concordance record. This compatibility decision does not infer content for the blank cell or alter either claim.",
+      "supporting_references": [
+        "research/enrichment/montgomery_1913_review_2026-09-04.json",
+        "research/reviews/penn_montgomery_concordance_2026-09-05.json",
+        "https://archive.org/details/aramaicincantati00mont",
+        "https://collections.penn.museum/collections/object/104403"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-3302F57D7AE1",
+        "label": "CBS 16018 [Montgomery text 19]",
+        "field_group": "publication",
+        "member_ids": [
+          "IBI-3302F57D7AE1",
+          "IBI-84F6B8FD30B3",
+          "IBI-E179BADB3761"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6F38DE8EE289",
+            "object_id": "IBI-84F6B8FD30B3",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_heading_identifier",
+            "value_text": "CBS 16018",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "certain",
+            "locator": "text 19 heading, printed p. 195; PDF p. 201",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-567E28E70C6B",
+            "object_id": "IBI-84F6B8FD30B3",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_register_identifier",
+            "value_text": "blank",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue, text 19, printed p. 324; PDF p. 330; catalogue number column",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-ACDAF444443F",
+            "object_id": "IBI-84F6B8FD30B3",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_register_identifier",
+            "value_text": "blank",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "certain",
+            "locator": "closing register, printed p. 324; PDF p. 330",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          }
+        ],
+        "values_by_field": {
+          "publication_heading_identifier": [
+            "CBS 16018"
+          ],
+          "publication_register_identifier": [
+            "blank"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-79D32E0C0500",
+      "field_group": "publication",
+      "evidence_sha256": "b1b026b803bb390c67afa23243638d57150a1b1b507ed99ea47f93d81e3c3b5f",
+      "disposition": "source_inconsistency",
+      "rationale": "Montgomery 1913 identifies text 40 as CBS 2971 in its heading but as CBS 2972 in the closing register. Both readings are visible in the archived scan. Penn's current B2971 record links text 40 to B2971, and its B2972 record explicitly notes that text 40 is really B2971. The conflict is an internal publication inconsistency; the source claims remain unchanged.",
+      "review_basis": "Visually checked Montgomery's text 40 heading on printed p. 252/PDF p. 258 and the register row on printed p. 326/PDF p. 332, then compared both dated Penn concordance records. This disposition documents the inconsistency without silently correcting the historical source.",
+      "supporting_references": [
+        "research/enrichment/montgomery_1913_review_2026-09-04.json",
+        "research/reviews/penn_montgomery_concordance_2026-09-05.json",
+        "https://archive.org/details/aramaicincantati00mont",
+        "https://collections.penn.museum/collections/object/64458",
+        "https://collections.penn.museum/collections/object/19798"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-79D32E0C0500",
+        "label": "CBS 2971 [Montgomery text 40]",
+        "field_group": "publication",
+        "member_ids": [
+          "IBI-79D32E0C0500",
+          "IBI-A3736CD7D997"
+        ],
+        "claims": [
+          {
+            "id": "CLM-1BBE53CF3C4C",
+            "object_id": "IBI-A3736CD7D997",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_heading_identifier",
+            "value_text": "CBS 2971",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "certain",
+            "locator": "text 40 heading, printed p. 252; PDF p. 258",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-2AB00431F830",
+            "object_id": "IBI-A3736CD7D997",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_register_identifier",
+            "value_text": "CBS 2972",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "disputed",
+            "locator": "closing register, printed p. 326; PDF p. 332",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          },
+          {
+            "id": "CLM-5221387D5230",
+            "object_id": "IBI-A3736CD7D997",
+            "source_id": "SRC-943673B56FB8",
+            "field": "publication_register_identifier",
+            "value_text": "CBS 2972",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue, text 40, printed p. 326; PDF p. 332; catalogue number column",
+            "source_title": "Aramaic Incantation Texts from Nippur",
+            "source_url": "https://archive.org/details/aramaicincantati00mont"
+          }
+        ],
+        "values_by_field": {
+          "publication_heading_identifier": [
+            "CBS 2971"
+          ],
+          "publication_register_identifier": [
+            "CBS 2972"
+          ]
+        }
+      }
+    }
+  ]
+}
