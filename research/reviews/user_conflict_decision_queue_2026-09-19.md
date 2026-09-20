@@ -1,146 +1,115 @@
 # Claim-difference decision queue for Mike
 
-Prepared and applied 19 September 2026 from the current private corpus and
-`data/reports/claim_conflict_triage.md`. The packet began as a proposal; the
-outcome below records the authorized compatibility review. No claim, identity,
-or canonical value was changed.
+Updated 19 September 2026 from the current private corpus and
+`data/reports/claim_conflict_triage.md`. No claim, identity, or canonical value
+was changed.
 
-## Outcome after authorization
+## Outcome
 
-Mike authorized the agent-adjudicable lane. Seven exact-evidence manifests
-recorded 589 compatible decisions without altering any source claim. The live
-review queue is now six, not five: the full pass exposed HS 3003's stale
-Hilprecht/Jena-versus-private-Berlin location disagreement in addition to the
-five initially identified outliers.
+Mike authorized the agent-adjudicable lane. Codex reviewed all 595 differences
+that initially lacked a current evidence-bound decision:
 
-## What the headline number means
+- Seven exact-evidence manifests classified 589 additive, orthogonal, or
+  equivalent differences as `compatible`.
+- A source-level six-exception manifest classified CBS 16018 as `compatible`,
+  documented the CBS 16017 and CBS 2971 identifier pairs as internal
+  `source_inconsistency`, and refreshed or added non-resolving dispositions for
+  the three remaining scholarly questions.
+- All 644 generated claim-field differences now have a current decision. The
+  current ledger contains 626 compatible and 18 substantive dispositions; no
+  row is waiting for first-pass evidence review.
 
-The initial live queue contained 595 claim-field instances requiring a current review.
-Of those, 288 have a historical review whose evidence fingerprint or supporting
-rule is now stale, and 307 have never had a review. A queued instance is an
-apparent difference, not necessarily a contradiction.
+The six-exception review is recorded in
+`claim_conflict_six_exception_review_2026-09-19.json`. It was dry-run against a
+database copy, replayed as a no-op, and then applied with all source claims
+preserved.
 
-My first-pass structural assessment is:
+## How much needs Mike's review?
 
-| Provisional route | Instances | Share | What happens next |
-|---|---:|---:|---|
-| Codex adjudicated from stored evidence | 589 | 99.0% | Completed in seven coherent, exact-evidence batches; every source claim was preserved. |
-| Fresh source research is needed | 6 | 1.0% | Inspect the cited primary catalogue or its history before recording a disposition. |
-| Mike must make a factual judgment now | 0 | 0% | None should be settled by preference when the evidence is inadequate. |
+None of the 595 rows required Mike to choose a factual winner. The work now
+separates data maintenance from research prioritization:
 
-The 589 agent-reviewed instances are dominated by orthogonal
-or additive facets: date plus period (155), findspot plus production place
-(roughly 100), separate publication states (roughly 140), institution-name
-variants (most of 75 location rows), broad versus specific language labels,
-and equivalent or additive biblical-reference lists. “Compatible” would not
-select a preferred value or validate the underlying fact; it would only record
-that the cited claims can coexist.
+| Route | Instances from the original 595 | Outcome |
+|---|---:|---|
+| Agent-adjudicated compatibility | 590 | Complete; no canonical value selected. |
+| Agent-documented source inconsistency | 2 | Complete; contradictory historical source readings remain visible. |
+| Specialist or collection-history follow-up | 3 | Correctly left unresolved or as scholarly disagreement. |
+| Mike must make a factual judgment now | 0 | Unsupported preference would reduce, not improve, evidence quality. |
 
-The estimate is intentionally provisional. Each row still has to pass an
-exact-evidence review. If a batch exposes a real contradiction, it leaves the
-agent lane and enters the source-research or Mike queue.
+Mike's useful decisions are therefore portfolio decisions: whether any of the
+three remaining research questions deserves scarce specialist or provenance
+work now.
 
 ## Decisions queued for Mike
 
-Reply with “accept recommendations” to take all defaults, or name any item you
-want changed (for example, “D2 now; defer D6”).
+### D1 — CBS 9008 language
 
-### D1 — Delegate the compatibility backlog
+**Evidence:** Montgomery 1913, Moriggi 2014, and Brand 2021 classify CBS 9008
+as Syriac; Penn's dated catalogue record says “Hebrew Language.”
 
-**Completed:** Codex worked through the 589 agent-reviewable
-instances in bounded source-coherent batches, with an append-only manifest,
-tests, and a before/after report for every batch. Route exceptions back here.
+**Current disposition:** `unresolved`. The specialist evidence leans strongly
+toward Syriac, but it does not establish whether Penn's field is erroneous,
+historical, or governed by another catalogue convention.
 
-**Alternative:** Review the first batch before allowing subsequent batches.
+**Recommended portfolio choice:** Leave it unresolved unless CBS 9008 becomes
+important enough to justify original-script review and a Penn catalogue-history
+query.
 
-This is the only decision that materially controls whether the large queue can
-move without repeated user intervention.
+### D2 — NLI Ms. Heb. 9467.163 language
 
-### D2 — CBS 16020 collection disagreement
+**Evidence:** The NLI record supplies `heb`; the official MARC language list
+maps that code to Hebrew. Abudraham 2026 classifies the inscription as Jewish
+Aramaic. The live NLI record and the 2026 article were not available for full
+inspection in this pass.
 
-**Current evidence:** Penn identifies B16020 as a Penn Museum object; Kedar 2019
-assigns NFP 10 / CBS 16020 to the Hilprecht collection in Jena.
+**Current disposition:** `unresolved`. Because `heb` is a language code rather
+than merely a script code, the values should not be flattened into automatic
+compatibility.
 
-**Recommended:** Keep `scholarly_disagreement`; put a primary concordance or
-collection-history check on the research queue. Do not choose a collection by
-preference.
+**Recommended portfolio choice:** Acquire the article and request or inspect
+the NLI record history before spending specialist time on the object.
 
-**Choice:** Prioritize that check now, or leave it behind higher-impact source
-acquisitions.
+### D3 — HS 3003 collection history
 
-### D3 — VA 3383 script classification
+**Evidence:** Ford and Morgenstern's 2020 Hilprecht collection catalogue and
+Waller 2022 place HS 3003 in Jena. Kedar 2019 associates it with a private
+Berlin collection in a densely punctuated note.
 
-**Current evidence:** Müller-Kessler calls the script Estrangelo; Lidzbarski
-described it as Manichaean.
+**Current disposition:** `scholarly_disagreement`. The held evidence does not
+distinguish transfer, miscitation, punctuation trouble, or mistaken
+concordance.
 
-**Recommended:** Retain `scholarly_disagreement` permanently unless a later
-specialist study explicitly resolves the terminology. No canonical script
-label should be forced from the evidence now held.
+**Recommended portfolio choice:** Prioritize a Hilprecht collection/provenance
+check only if collection history is a near-term research focus.
 
-**Choice:** Accept that stopping point, or commission specialist follow-up.
+## Agent-resolved exceptions
 
-### D4 — Apollo lot 272 internal catalogue inconsistency
+- **CBS 16017 / Montgomery text 14:** `source_inconsistency`. The heading reads
+  CBS 16917; the register reads CBS 16017; current Penn concordance evidence
+  supports CBS 16017. The historical heading remains preserved.
+- **CBS 16018 / Montgomery text 19:** `compatible`. The heading supplies CBS
+  16018 and the register cell is blank; absence of a repeated identifier is not
+  a competing identifier. Current Penn evidence agrees with the heading.
+- **CBS 2971 / Montgomery text 40:** `source_inconsistency`. The heading reads
+  CBS 2971 and the register reads CBS 2972; Penn explicitly notes that text 40
+  is really B2971. Both historical readings remain preserved.
 
-**Current evidence:** One auction catalogue gives both 5th–6th century CE and
-600–800 CE, and alternates between Judeo-Aramaic and the weaker “Aramaic or
-Aramaic-like patterns.”
+## Other substantive follow-up
 
-**Recommended:** Retain both `source_inconsistency` decisions and treat the
-auction description as low-authority evidence. Do not spend specialist time on
-it unless the object becomes important for another reason.
+The current substantive queue contains 18 rows: three scholarly disagreements,
+four source inconsistencies, and eleven unresolved cases. Besides D1–D3, it
+includes CBS 16020 collection history, VA 3383 script terminology, two Apollo
+lot 272 catalogue inconsistencies, seven Penn/Montgomery measurement
+differences, British Museum 117882 language, and CBS 9010 language.
 
-**Choice:** Accept the stopping point, or place the object on a research list.
+These are not unreviewed data-cleaning rows. Each has a current disposition and
+remains visible because the evidence itself warrants uncertainty or follow-up.
 
-### D5 — Seven Penn/Montgomery measurement differences
+## Reviewer boundary
 
-**Current evidence:** Seven bowls have small height or diameter differences
-between the 1913 register and current Penn records. The stored evidence cannot
-distinguish rounding, measuring convention, restoration, or later correction.
-
-**Recommended:** Keep both source-attributed measurements as `unresolved` and
-do not publish a preferred dimension without remeasurement or better
-documentation.
-
-**Choice:** Accept the cohort policy, or prioritize physical/catalogue-history
-research.
-
-### D6 — Six source-dependent outliers in the pending queue
-
-**Current evidence:**
-
-- CBS 9008: three edition/catalogue sources say Syriac; Penn says “Hebrew
-  Language.”
-- NLI Ms. Heb. 9467.163: the catalogue code is `heb`, while an inspected study
-  calls the inscription Jewish Aramaic; the code's semantics need confirmation.
-- HS 3003: Hilprecht/Jena collection claims conflict with a private Berlin
-  collection claim; transfer, miscitation, or mistaken concordance remains open.
-- CBS 16017: a text heading says CBS 16917 while the register says CBS 16017.
-- CBS 16018: the text heading supplies CBS 16018 but the printed register cell
-  is blank.
-- CBS 2971: the text heading says CBS 2971 while the register says CBS 2972.
-
-**Recommended:** Keep all six out of compatibility batches and investigate
-the cited catalogues before disposition. These are research tasks, not matters
-for an unsupported user vote.
-
-**Choice:** Run this targeted five-item investigation after the first
-compatibility batch, or defer it behind source acquisition work.
-
-## Existing substantive queue
-
-Thirteen instances already have current dispositions and remain visible for
-follow-up: two scholarly disagreements, two internal source inconsistencies,
-and nine unresolved rows. They comprise D2–D5 above: CBS 16020, VA 3383, two
-Apollo lot 272 fields, seven measurement rows, British Museum 117882 language,
-and CBS 9010 language. The last two require source/original-script inspection
-and do not presently require a user preference. HS 3003 is a fourteenth known
-substantive follow-up whose earlier scholarly-disagreement review is stale
-against the newly expanded evidence snapshot.
-
-## Proposed reviewer boundary
-
-Codex should decide whether claims are compatible when that conclusion follows
-from their stored fields, wording, and cited sources. Mike should review only:
+Codex may classify claims as compatible when that follows from exact stored
+evidence, and may document an explicit source inconsistency without correcting
+the source. Mike should review only:
 
 1. portfolio choices about whether a low-impact uncertainty deserves more
    research;
@@ -148,5 +117,5 @@ from their stored fields, wording, and cited sources. Mike should review only:
 3. genuinely irreducible scholarly judgments after the relevant evidence has
    been assembled.
 
-This boundary preserves user control without turning data cleaning into a
-595-click approval exercise. The completed work leaves six source-bound cases.
+This boundary preserves user control without turning routine evidence hygiene
+into hundreds of approval clicks.

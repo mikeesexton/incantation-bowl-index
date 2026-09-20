@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-19T23:35:48+00:00`
+Generated: `2026-09-20T03:40:32+00:00`
 
 ## Portfolio status
 
@@ -10,9 +10,9 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 24 done · 20 in progress · 20 queued · 0 blocked |
-| Quantitative handoff gates passing | 2/5 |
-| Required handoff tasks complete | 8/24 |
+| Roadmap tasks | 25 done · 19 in progress · 20 queued · 0 blocked |
+| Quantitative handoff gates passing | 3/5 |
+| Required handoff tasks complete | 9/24 |
 
 ### What is solid
 
@@ -81,11 +81,11 @@ Current evidence: **206 scholarship works indexed; 40 with a source-linked held 
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 400 |
-| Triaged claim-field differences | 638/644 |
-| Compatible differences | 625 |
-| Review required (missing or no longer valid) | 6 |
-| Existing reviews requiring revalidation | 2 |
-| Substantive conflict instances | 13 across 11 identities |
+| Triaged claim-field differences | 644/644 |
+| Compatible differences | 626 |
+| Review required (missing or no longer valid) | 0 |
+| Existing reviews requiring revalidation | 0 |
+| Substantive conflict instances | 18 across 16 identities |
 | All identities with a publication reference | 739/1652 (44.7%) |
 | Probable/confirmed identities with a publication reference | 611/1075 (56.8%) |
 | Identities with a translation | 53 |
@@ -192,7 +192,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 3. SCHOL-005 / QA-004: await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items. Keep Segal 2000, Naveh-Shaked 1993, and Mokhtarian 2015 queued after the reported LOC failures, and pursue authorized alternate libraries, interlibrary loan, or purchase in that order of corpus impact. Juusola 1999 and the full Syriac traditions volume remain second-line requests; Stübe 1895 is now satisfied through its open BSB scan.
 4. SCHOL-006: classify the remaining 81 unclassified works by scope. Forty scholarship works have a source-linked held document and 125 works now have a derived or inspected scope. The productive seam is pre-1930 public-domain scholarship whose complete text is openly readable on a robots-permitted host, DOI-deposited abstracts that state a work's method or argument, and the field's major editions, where a publisher or institutional record states how many objects are edited. Persée and Gallica disallow this project's user agent, so works surviving only there need another route; continue to retain duplicate discovery records as metadata and to leave genuinely ambiguous works unclassified rather than inferring scope from a title.
 5. TEXT-001 follow-through: seventeen complete corpus, catalogue, or edition units are now enumerated. Review the 376 separate candidates and exact-identifier overlaps in ordinary source batches; do not merge them automatically or import protected readings. Burberry's twenty-five ACB entries are fully attached to exact Berlin catalogue identities. Gordon's Harvard 8669, seven numbered Istanbul survey bowls, National Museum 207962, Berlin entry 168, Ellis's no. 7 fragment group, and Stübe's two unnamed Pahlavi bowls remain explicitly unresolved rather than falsely merged.
-6. QA-002 / CONC-005: resolve or explicitly retain the six source-dependent claim differences still requiring current review: CBS 9008 language, NLI Ms. Heb. 9467.163 language-code semantics, HS 3003 collection location, and the CBS 16017, CBS 16018 and CBS 2971 publication-identifier anomalies. The other 638 of 644 instances now have current exact-evidence decisions after seven manifests revalidated 589 compatible rows. Preserve every reported value and uncertainty; claim-vocabulary coverage is complete.
+6. META-003 / CONC-005: the claim-review backlog is complete, leaving three optional research questions rather than unreviewed data: original-script and Penn catalogue-history review for CBS 9008, acquisition and record-history review for NLI Ms. Heb. 9467.163, and collection/provenance research for HS 3003. Preserve every reported value and uncertainty; do not force a canonical winner without stronger evidence.
 7. META-008: extend the Mandaic denominator now that Pognon's thirty Khouabir bowls are enumerated. Reconcile them to later editions and museum identities, then add Yamauchi 1967 if the pending request succeeds. The earlier 23% expectation is Morony's historical estimate, not a collection target; no dedicated control list has yet been identified by this project.
 8. META-002 / META-003: continue the B2963 object-specific dating investigation and inspect original scripts for Montgomery 9 and 31 before assigning language source errors. The relationship and measurement anomaly reviews are complete at the available evidence level.
 9. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
@@ -461,9 +461,9 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
 - [x] **QA-001 — Bind conflict review validity to current evidence and conservative rules** · Done · Engineering
   - Done when: Changed claims, sources, cluster membership, and unsupported compatibility rules reopen review without deleting historical decisions; orphan reviews cannot satisfy roadmap gates.
   - Evidence/status: Implemented in conflict_review.py, identity.py, roadmap.py and current conflict reports. Regression tests cover changed evidence and unsafe equivalence; 313 reviews reopen in the existing corpus. See data/reports/quality_review_2026-09-04.md.
-- [ ] **QA-002 — Revalidate the historical rule-assisted conflict triage** · In progress · Research
+- [x] **QA-002 — Revalidate the historical rule-assisted conflict triage** · Done · Research
   - Done when: Every generated claim-field difference has a source-level decision on its exact current evidence, with append-only review history and explicit uncertainty preserved.
-  - Evidence/status: Current full-vocabulary queue: 644 field-difference instances, 638 with current decisions and six requiring source-level review. Seven evidence-bound manifests explicitly revalidated 589 compatible instances: 155 dating, 110 provenance, 137 publication, 74 location, 63 language, 24 biblical-intertext and 26 other descriptive facets. The remaining six are CBS 9008 language, NLI Ms. Heb. 9467.163 language-code semantics, HS 3003 collection location, and the CBS 16017, CBS 16018 and CBS 2971 publication-identifier anomalies; two retain stale substantive reviews and four have no decision. The 13 other current substantive rows remain visible as two scholarly disagreements, two source inconsistencies and nine unresolved cases. See research/reviews/claim_conflict_compatibility_batch_summary_2026-09-19.json and user_conflict_decision_queue_2026-09-19.md. Compatibility never selects a canonical value or validates the underlying fact.
+  - Evidence/status: All 644 full-vocabulary claim-field differences now have decisions bound to their exact current evidence. Seven manifests revalidated 589 compatible instances, and a held-source review closed the six exceptions: CBS 16018 is compatible; CBS 16017 and CBS 2971 are documented internal source inconsistencies; CBS 9008 and NLI Ms. Heb. 9467.163 remain unresolved language questions; and HS 3003 remains a scholarly collection-history disagreement. The current ledger contains 626 compatible and 18 substantive dispositions (three scholarly disagreements, four source inconsistencies, and eleven unresolved), with zero rows requiring first-pass review. See research/reviews/claim_conflict_compatibility_batch_summary_2026-09-19.json, claim_conflict_six_exception_review_2026-09-19.json, and user_conflict_decision_queue_2026-09-19.md. Compatibility never selects a canonical value or validates the underlying fact.
 - [ ] **QA-003 — Audit a stratified sample of identity and extraction decisions** · Queued · Research
   - Done when: Publish reproducible sample selection across institutions, market records, status classes and merge methods; check primary evidence and report denominators, error categories and uncertainty.
   - Evidence/status: Zero generated pending dedupe candidates is queue completion, not measured identity accuracy. Current review examined architecture, integrity, archive hashes, aggregate metrics and selected rule evidence, not all objects.
@@ -472,7 +472,7 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
   - Evidence/status: Roadmap now separates 325 initial media ledger holds from 0 completed rights assessments and 0 public approvals. The newly indexed M163 plate reference brings media to 326 rows and remains without a rights decision; no image was republished. The roadmap counts 35 current scan-checked reading texts separately from text presence. Main Montgomery denominator is explicit: 40 entries, 35 translations and 5 documented absences in this edition. General field-assessment and edition-reference metrics still need work. Forty current-evidence museum concordance reviews are now counted separately from existing identity links; observations retain review dates and do not certify unchanged live websites or unrelated metadata. On 2026-09-06 acquisition reporting was corrected to separate any capture, PDF capture and unassessed document completeness. Publication and acquisition totals now count unique candidate records rather than identifiers or summed memberships. Regression tests cover aliases, overlapping publications, non-PDF captures and excerpts. Completeness review remains outstanding.
 - [x] **QA-005 — Implement evidence-bound subset reviews and append-only history** · Done · Engineering
   - Done when: Review batches reject changed evidence, duplicate or absent fields and count-only overrides; writes are atomic and replay-idempotent; all original and subsequent decisions remain in immutable history.
-  - Evidence/status: Migration 005 preserved all 328 starting decisions. The nine-instance batch and one later refreshed decision yield 338 immutable snapshots; all original and subsequent judgments remain inspectable.
+  - Evidence/status: Migration 005 preserved all 328 starting decisions. Exact-evidence revalidation batches and later source-level reviews bring the immutable review history to 962 snapshots while retaining all superseded judgments; all 644 current conflict rows are evidence-bound and replay-idempotent.
 - [x] **QA-006 — Repair range-generated citation pointers with retained originals** · Done · Engineering
   - Done when: Importer assigns each range item its own locator and exact-evidence repairs retain before/after snapshots; regression tests cover exceptions, replay, stale input and rollback.
   - Evidence/status: 137/137 affected Segal claims repaired; zero remaining source/appearance locator mismatches in that scoped audit. Scholarly values, uncertainty and identity links unchanged. Migration 008 and research/reviews/segal_locator_corrections_2026-09-04.json.
@@ -495,7 +495,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `6`; target `<= 0`.
+- [x] Every generated claim-difference flag has a recorded triage — current `0`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage. Measured 2026-09-19 at 0.568 (611/1,075). The proxy counts only the 'publication object key' and 'bibliographic concordance' identifier schemes, so the sourced no-known-edition status that TEXT-001's done_when also accepts cannot move it; and if the 205 NLI bowls have no known edition the ceiling is 0.809. Whether to realign the metric with the task definition or to let the gate slip on acquisitions is a review decision, not an agent decision. — current `56.8%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
@@ -518,7 +518,7 @@ Overall gate: **NOT READY**
 - [ ] OPS-004 — Complete a 14-day shadow run
 - [ ] OPS-005 — Adopt collect-and-flag autonomy boundaries
 - [x] QA-001 — Bind conflict review validity to current evidence and conservative rules
-- [ ] QA-002 — Revalidate the historical rule-assisted conflict triage
+- [x] QA-002 — Revalidate the historical rule-assisted conflict triage
 - [ ] QA-003 — Audit a stratified sample of identity and extraction decisions
 - [ ] QA-004 — Separate presence, assessment, verification and source coverage metrics
 - [x] QA-005 — Implement evidence-bound subset reviews and append-only history
@@ -545,6 +545,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-19:** Completed QA-002 with a held-source review of the six remaining claim differences. Rendered and visually checked the relevant Montgomery and Kedar pages, compared the Ford-Morgenstern, Waller, Moriggi, Brand and Penn evidence, and verified from the official MARC list that heb denotes Hebrew. CBS 16018 is compatible because the register cell is blank rather than contradictory; CBS 16017 and CBS 2971 are documented internal Montgomery inconsistencies. CBS 9008 and NLI Ms. Heb. 9467.163 remain unresolved language questions, and HS 3003 remains a scholarly collection-history disagreement. All 644 differences now have current exact-evidence decisions: 626 compatible and 18 substantive, with zero awaiting first-pass review. No source claim, identity or canonical value changed.
 - **2026-09-19:** Applied seven evidence-bound, append-only compatibility manifests after a clean copied-database dry run and idempotent replay. Explicit stored-evidence review revalidated 589 claim-field instances: 155 dating, 110 provenance, 137 publication, 74 location, 63 language, 24 biblical-intertext and 26 other descriptive facets. Compatibility means the claims can coexist; it does not validate a fact or select a canonical value. The current review queue falls from 595 to six. CBS 9008 language, NLI Ms. Heb. 9467.163 language-code semantics, HS 3003 collection location, and three Montgomery publication-identifier anomalies remain untouched for source-level work. All 13 already-current substantive dispositions remain visible. No claim, identity, canonical value, authenticity, right or public-release decision changed.
 - **2026-09-19:** Re-audited QA-002 against the live full-vocabulary comparison model and corrected the stale roadmap snapshot. The corpus now has 644 claim-field differences: 49 current decisions and 595 requiring current review, comprising 288 stale historical reviews and 307 never-reviewed instances. A structural pass estimates that about 590 of the pending rows are stored-evidence compatibility checks suitable for bounded Codex batches and about five clearly need fresh source research; none should be decided by unsupported user preference. Added a six-item user decision packet covering delegation, research priority and stopping policies. No claim, disposition, identity, canonical value, right or public-release decision changed.
 - **2026-09-19:** Continued SCHOL-006 with three citation repairs and three evidence-backed thematic-study reviews. DOI-deposited abstracts identify Amsler 2023 as a materiality, affect and household-medicine study and Lanfer 2015 as an analysis of three kinds of biblical citation and their textual and social implications. Shaked 2011 was read in full: it compares several Schøyen bowls to investigate formula composition, variation, memory and transmission rather than functioning as a corpus edition. Crossref and Brill metadata repaired the journal, volume, issue and page data for Amsler and Lanfer and the containing book, publisher and pages for Shaked. Scope coverage rises from 122 to 125 of 206 works and the unclassified backlog falls from 84 to 81. No object, identity, reading, authenticity, rights approval or public-release decision changed.

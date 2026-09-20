@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "7fdfa285e6dcc440f98a2c451588e46aa8fbce2ae2701f1e138a0f640ccbc819",
+  "corpus_digest": "72ca747ba5bde64a5d62a5087bab2dfc7c90333881e1d3f3b9c9cfa5853b7637",
   "migrations": 15,
-  "note": "Applied seven evidence-bound compatibility manifests for 589 claim-field differences; six source-dependent rows remain pending",
-  "recorded_at": "2026-09-19T23:36:39+00:00",
+  "note": "Completed QA-002 with six exact-evidence exception reviews; all 644 conflict instances now have current dispositions.",
+  "recorded_at": "2026-09-20T03:41:07+00:00",
   "recorded_by": "Codex",
   "schema_version": "015_document_assessments",
   "tables": {
@@ -19,12 +19,12 @@
       "rows": 55
     },
     "claim_conflict_review_history": {
-      "digest": "1f01bcb5e0e80201ceac32a501182f544bf4328f38fa16a695dc366dfddccffb",
-      "rows": 956
+      "digest": "c8f49d91c87ca0ab000110c5c3bcbed83cad2dac0ea74d85eb168109e8f5c197",
+      "rows": 962
     },
     "claim_conflict_reviews": {
-      "digest": "09131182cd7c896784e60d9b39abe130186b22c4cdcee444e920285346ab7980",
-      "rows": 640
+      "digest": "7c657b54d8611bff06f2450c7c0f2f1a09f820216fd599afbad1cbcbdd0339ad",
+      "rows": 644
     },
     "claim_locator_corrections": {
       "digest": "447bcfb7bb629f286fb32c4dd364bdc10ae662429589d7f8ee7e1d7fde81d1bd",

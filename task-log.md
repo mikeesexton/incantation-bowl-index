@@ -25,6 +25,29 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-19 — Codex — Six-exception source review
+
+**Claimed:** QA-002 / CONC-005 / CONC-006 / META-003
+**Corpus:** changed (six evidence-bound conflict reviews; no source claim changed) — state digest `72ca747ba5bd`
+**Tests:** 264 passed; SQLite integrity check, manifest replay and `git diff --check` passed
+
+- Rendered and visually checked the relevant Montgomery and Kedar pages;
+  compared the Ford-Morgenstern, Waller, Moriggi, Brand and Penn evidence; and
+  verified from the official MARC list that `heb` denotes Hebrew.
+- Recorded CBS 16018 as `compatible`, CBS 16017 and CBS 2971 as internal
+  `source_inconsistency`, CBS 9008 and NLI Ms. Heb. 9467.163 as `unresolved`,
+  and HS 3003 as `scholarly_disagreement`. No source claim, identity or
+  canonical value changed.
+- All 644 claim-field differences now have a current exact-evidence decision:
+  626 compatible and 18 substantive, with zero awaiting first-pass review.
+  Marked QA-002 done and reduced the user queue to three optional specialist or
+  collection-history priorities rather than factual votes.
+- Dry-ran the six-entry manifest against a copied database, confirmed an
+  immediate replay changed zero rows, created and verified the production
+  backup `before-six-exception-review-20260920T033900Z.sqlite3`, and rotated the
+  oldest backup to retain ten. Regenerated conflict, roadmap and enrichment
+  reports plus the private export.
+
 ## 2026-09-19 — Codex — Stored-evidence conflict revalidation
 
 **Claimed:** QA-002 / CONC-005
