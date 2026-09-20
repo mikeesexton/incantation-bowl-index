@@ -95,10 +95,11 @@ line (68), James A. Montgomery (35), Incantation Bowl Index summary (7), and two
 discovery-campaign summaries. The largest withheld editor groups are Wohlstein
 (5), Schøyen Collection specialist (4), Index summary (3), and Isbell (2).
 
-## Tier 4 — 864 claims omitted from public `facts`
+## Tier 4 — 866 claims omitted from public `facts`
 
-7,218 claims first become 6,382 short fact candidates. Of those, 6,354 are
-emitted and 28 longer non-public-domain source-wording values fail closed. The
+7,218 claims first become 6,382 short fact candidates. Of those, 6,352 are
+emitted and 30 non-public-domain source-wording values fail closed: 28 longer
+statements and two short rows containing embedded quotation. The
 other 836 claims never become candidates because their fields sit outside the
 comparison model; 37 field types are excluded. The reasons are recorded per
 field in `EXCLUDED_CLAIM_FIELDS` in
@@ -145,8 +146,8 @@ review rather than for readers.
 
 The emitted facts carry `release_class`. This is conservative triage, not an
 automated copyright decision: 6,127 are ordinary factual metadata, 40
-prose-prone rows come from public-domain sources, and 187 are short source
-claims. The 28 longer non-public-domain candidates are the private priority
+prose-prone rows come from public-domain sources, and 185 are short source
+claims with no embedded quotation. The 30 non-public-domain candidates are the private priority
 wording-review queue and do not emit a fact row.
 The derived `facets` table supplies 3,245 project-authored browse labels with the
 source field, source and locator retained; it never replaces the raw claim.
@@ -155,7 +156,7 @@ source field, source and locator retained; it never replaces the raw claim.
 
 ## What does survive
 
-The export spans 15 tables: 1,969 objects, 6,354 facts, 3,245 controlled facets,
+The export spans 15 tables: 1,969 objects, 6,352 facts, 3,245 controlled facets,
 2,268 appearances and links, 4,741 identifiers, 1,063 editions, 862 sources, 271 text
 rows (246 with content), 10 approved media rows, 206 works, 114 contributors,
 and 33 publications. It

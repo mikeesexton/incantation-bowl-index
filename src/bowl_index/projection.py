@@ -42,7 +42,7 @@ PROJECTION_COLUMNS = {
     "editions": ("object_id", "source_id", "source_type", "citation", "locator",
                  "access_url", "access_status"),
     "media": ("id", "object_id", "appearance_id", "source_id", "media_type", "url", "attribution",
-              "rights_statement", "rights_locator", "license_url"),
+              "rights_status", "rights_statement", "rights_locator", "license_url"),
     "identity_clusters": ("identity_id", "canonical_object_id", "member_ids", "display_name",
                           "display_date", "display_language", "display_collection",
                           "record_status", "member_count", "source_count", "appearance_count",
@@ -87,6 +87,7 @@ SOURCE_WORDING_REVIEW_FIELDS = frozenset({
     "authenticity_assessment", "technical_test",
 })
 SOURCE_WORDING_PRIORITY_LENGTH = 80
+EMBEDDED_QUOTATION = re.compile(r'“[^”]+”|‘[^’]+’|"[^"]+"')
 
 TABLE_NAMES = tuple(PROJECTION_COLUMNS)
 
@@ -102,9 +103,9 @@ class Projection:
         blocked = {row["url"] for k, row in evidence.items() if k not in approved and row["url"]}
         approved = {k for k in approved if evidence[k]["url"] not in blocked}
         self.reviews, self.evidence, self.approved = reviews, evidence, approved
-        self.private_storage = {
-            r["storage_path"] for r in conn.execute("SELECT storage_path FROM captures")
-        }
+        capture_rows = list(conn.execute("SELECT storage_path FROM captures"))
+        self.capture_count = len(capture_rows)
+        self.private_storage = {r["storage_path"] for r in capture_rows}
         self.forbidden = blocked | self.private_storage
         # A dict, not a set: an approved row has to publish the terms it was
         # approved under. `in` and `len` behave the same, so the gates above and
@@ -331,7 +332,8 @@ class Projection:
             if row["field"] in SOURCE_WORDING_REVIEW_FIELDS:
                 if row["source_rights_status"] == "public_domain":
                     release_class = "public_domain_source_wording"
-                elif len(value) <= SOURCE_WORDING_PRIORITY_LENGTH:
+                elif (len(value) <= SOURCE_WORDING_PRIORITY_LENGTH
+                      and not EMBEDDED_QUOTATION.search(value)):
                     release_class = "short_source_claim"
                 else:
                     release_class = "review_source_wording"

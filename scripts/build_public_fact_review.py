@@ -18,7 +18,7 @@ from bowl_index.projection import Projection
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_DB = ROOT / "data" / "private" / "ibi.sqlite3"
-# The packet deliberately repeats the longer source wording under review. Keep
+# The packet deliberately repeats the source wording under review. Keep
 # it beside the private corpus, not in Git; only the builder and aggregate counts
 # are checked in.
 DEFAULT_OUT = ROOT / "data" / "private" / "reviews" / "public_fact_wording_review_2026-09-20.json"
@@ -88,7 +88,7 @@ def main():
     state = json.loads((ROOT / "data" / "db-state.json").read_text(encoding="utf-8"))
     packet = {
         "schema_version": 1,
-        "purpose": "Human review of longer non-public-domain source wording before open release",
+        "purpose": "Human review of non-public-domain source wording before open release",
         "corpus_state_digest": state["corpus_digest"],
         "generated_date": "2026-09-20",
         "allowed_dispositions": [

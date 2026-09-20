@@ -112,6 +112,19 @@
     ? value.slice(0, value.lastIndexOf(" ", limit) > 0 ? value.lastIndexOf(" ", limit) : limit) + "…"
     : value;
 
+  /* A Creative Commons deed asks for a link to itself, not just a name. Rows
+     published on the open_license basis carry the source's own licence, which is
+     narrower than this index's CC BY 4.0, so the credit line has to say which one
+     governs the words or image above it. `license_url` may be null where a rights
+     statement instead records public-domain status or another reviewed basis. */
+  function licenceLink(item) {
+    const url = (item.license_url || "").trim();
+    if (!url) return "";
+    const cc = url.match(/creativecommons\.org\/licenses\/([a-z-]+)\/([\d.]+)/i);
+    const label = cc ? `CC ${cc[1].toUpperCase()} ${cc[2]}` : "Licence";
+    return ` · <a href="${esc(url)}" rel="license noreferrer">${esc(label)}</a>`;
+  }
+
   /* An approved image, or nothing. The projection emits a media row only for a
      current approval, so this cannot show an uncleared picture — there is simply
      no row to render, and the spiral carries the grid until RIGHTS-002 lands. */
@@ -119,9 +132,11 @@
     const image = (data.mediaBy[cluster.identity_id] || [])
       .find(m => m.media_type === "image" && m.url);
     if (!image) return spiral(cluster);
+    const rights = image.rights_status === "public_domain" ? "public domain"
+      : image.rights_status === "open_license" ? "open licence" : "reviewed reuse";
     return `<img class="bowl-image" src="${esc(image.url)}" alt="${esc(cluster.display_name)}"
       loading="lazy" decoding="async">${image.attribution
-        ? `<span class="bowl-credit">${esc(image.attribution)}</span>` : ""}`;
+        ? `<span class="bowl-credit">${esc(image.attribution)} · ${esc(rights)}${licenceLink(image)}</span>` : ""}`;
   }
 
   /* The index's own one-line description of what a bowl's text does, written
@@ -452,18 +467,6 @@
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
       return `<li><span>${link}</span>${item.locators.size ? `<small>${[...item.locators].map(esc).join(" · ")}</small>` : ""}</li>`;
     }).join("")}</ul></section>`;
-  }
-
-  /* A Creative Commons deed asks for a link to itself, not just a name. Rows
-     published on the open_license basis carry the source's own licence, which is
-     narrower than this index's CC BY 4.0, so the credit line has to say which one
-     governs the words above it. `license_url` is null on everything else. */
-  function licenceLink(text) {
-    const url = (text.license_url || "").trim();
-    if (!url) return "";
-    const cc = url.match(/creativecommons\.org\/licenses\/([a-z-]+)\/([\d.]+)/i);
-    const label = cc ? `CC ${cc[1].toUpperCase()} ${cc[2]}` : "Licence";
-    return ` · <a href="${esc(url)}" rel="license noreferrer">${esc(label)}</a>`;
   }
 
   /* The citation usually opens with the editor's name; do not say it twice. */

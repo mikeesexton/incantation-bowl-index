@@ -10,14 +10,15 @@ const vm = require("node:vm");
 const source = fs.readFileSync("web/reading.js", "utf8");
 const body = source.slice(source.indexOf('const TABLES'), source.indexOf("function card(cluster)"));
 const context = vm.createContext({});
-vm.runInContext(body + "\nglobalThis.T = {summarise, data};", context);
-const {summarise, data} = context.T;
+vm.runInContext(body + "\nglobalThis.T = {summarise, mark, data};", context);
+const {summarise, mark, data} = context.T;
 
 const ID = "IDENT-TEST";
 const cluster = {identity_id: ID};
-function given({facts = [], texts = []}) {
+function given({facts = [], texts = [], media = []}) {
   data.factsBy = {[ID]: facts};
   data.textsBy = {[ID]: texts};
+  data.mediaBy = {[ID]: media};
 }
 const fact = (field, field_group, value) => ({field, field_group, value});
 
@@ -78,4 +79,11 @@ test("a list of clients keeps the first name whole", () => {
   ]});
   assert.strictEqual(summarise(cluster),
     "Protection of a household — for Dadbeh son of Asmanduk and others");
+});
+
+test("an approved image prints its attribution and reviewed rights status", () => {
+  given({media: [{media_type: "image", url: "https://example.org/bowl.jpg",
+    attribution: "Test Museum", rights_status: "open_license", license_url: ""}]});
+  const html = mark({...cluster, display_name: "Test bowl"});
+  assert.match(html, /Test Museum · open licence/);
 });

@@ -43,6 +43,7 @@ class MediaGateTests(unittest.TestCase):
         self.assertEqual(len(media), 1)
         self.assertEqual(media[0]['url'], 'https://example.org/bowl.jpg')
         self.assertEqual(media[0]['attribution'], 'Test Museum')
+        self.assertEqual(media[0]['rights_status'], 'public_domain')
         self.assertEqual(media[0]['rights_statement'], 'Museum states public domain')
         self.assertEqual(media[0]['rights_locator'], 'Rights page')
         self.assertEqual(media[0]['media_type'], 'image')

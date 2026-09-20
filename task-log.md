@@ -25,6 +25,32 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Harden the local staging release candidate
+
+**Claimed:** ACCESS-003
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 285 Python passed; 24 Node passed; local scholar-preview build
+passed 10/10 release checks; roadmap regenerated; `git diff --check` passed
+
+- Built the exact, undeployed scholar-preview candidate
+  `1b16d886bb3ef092e0b5a324abac796bf6d6d9b1d3de9cc66a87a12ec2a01fc0`
+  and recorded its nineteen file hashes, projection counts, licence buckets and
+  pending owner-approval state in a checked-in release manifest.
+- Added a fail-closed release audit over the bytes on disk. All ten checks pass:
+  the build matches the shared projection; private/reviewer columns, contact
+  details, secrets, all 51 private storage paths and all 30 withheld wording
+  values are absent; text, media, short-claim and facet gates hold.
+- Tightened wording triage after a longest-value spot-check of the 187-row tier
+  found two short embedded quotations. The public candidate now has 6,352 facts
+  and 3,245 facets; the
+  private review packet has 30 rows, while 185 short cited claims pass the
+  structural boundary. Approved media now publishes its reviewed rights status
+  beside attribution, and the preview footer states its mixed licence buckets.
+- No corpus, rights, publication, identity, Cloudflare, promotion or deployment
+  decision changed. Next: the owner may approve this exact fail-closed candidate
+  for gated staging without first resolving the 30-row wording packet; those
+  rows can remain withheld until later human review.
+
 ## 2026-09-20 — Codex — Normalize public facets and assess release boundary
 
 **Claimed:** ACCESS-003

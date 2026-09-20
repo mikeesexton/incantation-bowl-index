@@ -6,6 +6,7 @@ console's own scripts, and it is not written into the Pages output directory
 where it would deploy before an Access policy exists.
 """
 import re
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -43,7 +44,6 @@ class ScholarPreviewBuildTests(unittest.TestCase):
     def test_built_output_withholds_what_the_projection_withholds(self):
         if not build.OUT.exists():
             self.skipTest('preview not built; run scripts/build_scholar_preview.py')
-        import json
         texts = json.loads((build.OUT / 'data' / 'texts.json').read_text(encoding='utf-8'))
         withheld = [row for row in texts['rows']
                     if row['content_status'] != 'included']
@@ -52,6 +52,22 @@ class ScholarPreviewBuildTests(unittest.TestCase):
             self.assertIsNone(row['content'], 'a withheld row shipped its content')
             self.assertIsNone(row['license_url'])
             self.assertTrue(row['access_citation'], 'a withheld row lost its pointer')
+
+    def test_built_output_carries_a_pending_release_candidate(self):
+        if not build.OUT.exists():
+            self.skipTest('preview not built; run scripts/build_scholar_preview.py')
+        candidate = json.loads(
+            (build.OUT / 'release-candidate.json').read_text(encoding='utf-8'))
+        self.assertEqual(candidate['approval']['status'], 'pending_owner_approval')
+        self.assertTrue(candidate['candidate_id'])
+        self.assertTrue(all(check['passed'] for check in candidate['audit_checks']))
+        self.assertEqual(candidate['withheld_counts']['source_wording'], 30)
+        self.assertEqual(candidate['withheld_counts']['text_content'], 25)
+        self.assertEqual(candidate['withheld_counts']['media'], 317)
+        self.assertEqual(candidate['withheld_counts']['private_capture_rows'], 55)
+        index = (build.OUT / 'index.html').read_text(encoding='utf-8')
+        self.assertIn('release-candidate.json', index)
+        self.assertIn('pending project-owner approval', index)
 
     def test_rows_come_from_the_shared_projection(self):
         """A second row-builder would be a second chance to publish something withheld."""
