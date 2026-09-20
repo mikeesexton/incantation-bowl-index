@@ -1,11 +1,15 @@
 {
-  "corpus_digest": "72ca747ba5bde64a5d62a5087bab2dfc7c90333881e1d3f3b9c9cfa5853b7637",
-  "migrations": 15,
-  "note": "Completed QA-002 with six exact-evidence exception reviews; all 644 conflict instances now have current dispositions.",
-  "recorded_at": "2026-09-20T03:41:07+00:00",
-  "recorded_by": "Codex",
-  "schema_version": "015_document_assessments",
+  "corpus_digest": "f03b960f967db427499c7c37ba8e9e06ea7dfbe5b4a5e985e6c4255a39de5297",
+  "migrations": 16,
+  "note": "Completed QA-003 stratified accuracy audit: 60 representative and 20 high-risk evidence-bound reviews; no source claims or identities changed.",
+  "recorded_at": "2026-09-20T04:28:48+00:00",
+  "recorded_by": "codex",
+  "schema_version": "016_accuracy_audit_reviews",
   "tables": {
+    "accuracy_audit_reviews": {
+      "digest": "3941b643cb346dce143d92a3798831040e9be66ae7b6fdf65f07e61827db8586",
+      "rows": 80
+    },
     "appearance_object_links": {
       "digest": "9999f67133df04ac2f7794d6dbb028909d61faeba41eaa13d0a2b52cd0149f80",
       "rows": 2268
@@ -103,8 +107,8 @@
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "9a2e7b8dfb573976aca5f58f5ef3892fd72076fdc7fea622c5a518fc2b153f73",
-      "rows": 15
+      "digest": "1c8dd52723299945e5b4c8404db5d87a413d1145c1e4b33083018d3f549c7cb5",
+      "rows": 16
     },
     "search_queries": {
       "digest": "cc6d1a38c33e10d1507478c07c59a64adf3d418d7bca1fc86e8f9d54b4861ed0",

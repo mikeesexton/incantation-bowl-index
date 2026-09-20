@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-20T03:40:32+00:00`
+Generated: `2026-09-20T04:27:59+00:00`
 
 ## Portfolio status
 
@@ -10,14 +10,15 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 25 done · 19 in progress · 20 queued · 0 blocked |
+| Roadmap tasks | 26 done · 19 in progress · 19 queued · 0 blocked |
 | Quantitative handoff gates passing | 3/5 |
-| Required handoff tasks complete | 9/24 |
+| Required handoff tasks complete | 10/24 |
 
 ### What is solid
 
 - Discovery is broad and reproducible within the classes it searched: 862 sources and 2,268 appearances support 1,969 candidate records representing an estimated 1,652 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
+- Identity and extraction accuracy now has a reproducible baseline: a 60-identity stratified sample spanning 24 status/linkage/source strata found 36 fully verified rows, 23 verified with evidence notes, no demonstrated errors, and one indeterminate BM068A claim check. The inverse-probability weighted verified-or-noted estimate is 98.7%; a separate 20-identity high-risk diagnostic sample found no unsupported cluster, while preserving source disagreements rather than choosing canonical values.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
 - The evidence discipline is genuinely unusual: identifiers record who reported a designation, original source strings are retained beside structured values, the 4 September review published its own permissive-rule defect, and the public export fails closed.
 - The public boundary is now positive rather than merely defensive: 112 text records are currently published on a stated rights basis—35 public-domain English translations and 77 project-authored summaries—and every one of the 159 withheld text records still names its edition and locator, with a public link where the source permits one. Five public-domain Wohlstein translations remain withheld pending human publication review; one also needs a second reading of embedded Hebrew strings. Three earlier own-work approvals no longer match the current content fingerprint and correctly fail closed. These are release-rights counts, not a count of bowls known from editions.
@@ -31,7 +32,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 ### What prevents release readiness
 
 - Publication links remain incomplete: 739 of 1,652 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.
-- Identity and claim quality is not yet measured corpus-wide: six of 644 claim-field differences require current review, including two earlier substantive reviews now stale against current evidence and four never-reviewed source anomalies. The other 638 have current exact-evidence decisions, but findspot claims are not yet consistently graded by evidence basis and a reproducible stratified identity audit has not begun.
+- The first stratified identity-and-extraction audit is complete, but it is a 60-identity baseline rather than corpus-wide certification: unequal weighting reduces its effective sample size to 47.5, one BM068A claim check is indeterminate, the review was not independent, and findspot claims are not yet consistently graded by evidence basis.
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 53 identities have a translation. Four Wohlstein translations are now scan-checked and a fifth has a checked German reading with embedded Hebrew strings still awaiting specialist review; all five remain withheld pending human publication review. Protected editions are intentionally indexed without copying their text.
 - Release rights are unreviewed: all 327 media rows now have current fail-closed ledger holds, but zero have completed rights decisions and zero are approved for reuse. The first two-row institutional-policy evidence pilot narrowed contact paths without establishing permission.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
@@ -198,7 +199,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 9. META-005: apply Waller's evidence-basis distinction to the location corpus, starting with claims labelled Excavated/Findspot and the Susa controlled-excavation group. Preserve museum and market claims as reports rather than silently upgrading them to archaeological facts.
 10. TEXT-006 / TEXT-003: obtain independent review of all 35 checked English reading texts, particularly magical formulas and restorations, then develop a checked original-script transcription/transliteration pilot. The first English scan-review pass is complete.
 11. CONC-002: extend beyond the completed forty-entry reference cohort to reconcile the remaining Penn holdings and historical inventory. Check precise identifiers and publication references; do not generalize the 40/40 result to the broader collection.
-12. QA-003: select and audit a reproducible stratified sample before assigning an overall accuracy percentage. The forty-entry Montgomery source audit is useful but not representative of the entire corpus.
+12. QA-003 follow-through: acquire or inspect the Segal 2000 entry for BM068A and supersede the one indeterminate audit row; plan an independent second audit round before treating the 98.7% weighted verified-or-noted baseline as a durable accuracy claim.
 13. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
 14. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
 15. OPS-001 / OPS-002 / ACCESS-002: defer commissioning until the Mac mini and dedicated 1 TB SSD arrive. Then apply the [Mac mini setup runbook](mac_mini_setup_runbook.md): provision the primary host, encrypted Restic repositories on APFS and Backblaze B2, Keychain and offline recovery copies, Healthchecks email, and independent restore receipts. Retain all eleven legacy SQLite snapshots and do not begin a real TEI pilot before both restores pass.
@@ -464,9 +465,9 @@ Measure current evidence validity, sampled scholarly accuracy, and release safet
 - [x] **QA-002 — Revalidate the historical rule-assisted conflict triage** · Done · Research
   - Done when: Every generated claim-field difference has a source-level decision on its exact current evidence, with append-only review history and explicit uncertainty preserved.
   - Evidence/status: All 644 full-vocabulary claim-field differences now have decisions bound to their exact current evidence. Seven manifests revalidated 589 compatible instances, and a held-source review closed the six exceptions: CBS 16018 is compatible; CBS 16017 and CBS 2971 are documented internal source inconsistencies; CBS 9008 and NLI Ms. Heb. 9467.163 remain unresolved language questions; and HS 3003 remains a scholarly collection-history disagreement. The current ledger contains 626 compatible and 18 substantive dispositions (three scholarly disagreements, four source inconsistencies, and eleven unresolved), with zero rows requiring first-pass review. See research/reviews/claim_conflict_compatibility_batch_summary_2026-09-19.json, claim_conflict_six_exception_review_2026-09-19.json, and user_conflict_decision_queue_2026-09-19.md. Compatibility never selects a canonical value or validates the underlying fact.
-- [ ] **QA-003 — Audit a stratified sample of identity and extraction decisions** · Queued · Research
+- [x] **QA-003 — Audit a stratified sample of identity and extraction decisions** · Done · Research
   - Done when: Publish reproducible sample selection across institutions, market records, status classes and merge methods; check primary evidence and report denominators, error categories and uncertainty.
-  - Evidence/status: Zero generated pending dedupe candidates is queue completion, not measured identity accuracy. Current review examined architecture, integrity, archive hashes, aggregate metrics and selected rule evidence, not all objects.
+  - Evidence/status: QA003-2026-09-20 selected 60 identity hypotheses across all 24 non-empty status/linkage/source-family strata with fixed-seed SHA-256 ranking and inverse-probability weights, plus a separate 20-identity high-risk sample. The representative review found 36 verified, 23 verified with notes, zero demonstrated errors, and one indeterminate BM068A claim check; the weighted verified-or-noted estimate is 98.7% and the Kish effective sample size is 47.5. All 20 high-risk rows were verified with notes and were not pooled into the estimate. Each ledger row is append-only and bound to the exact objects, sources, captures, appearances, identifiers, claims, and dedupe evidence. See research/audits/qa003_accuracy_audit_report_2026-09-20.md.
 - [ ] **QA-004 — Separate presence, assessment, verification and source coverage metrics** · In progress · Mixed
   - Done when: Track field assessment and verification independently of presence; distinguish excavation provenance from production region and ownership; reconcile item-level denominators for major sources; align publication and rights gates with reviewed evidence.
   - Evidence/status: Roadmap now separates 325 initial media ledger holds from 0 completed rights assessments and 0 public approvals. The newly indexed M163 plate reference brings media to 326 rows and remains without a rights decision; no image was republished. The roadmap counts 35 current scan-checked reading texts separately from text presence. Main Montgomery denominator is explicit: 40 entries, 35 translations and 5 documented absences in this edition. General field-assessment and edition-reference metrics still need work. Forty current-evidence museum concordance reviews are now counted separately from existing identity links; observations retain review dates and do not certify unchanged live websites or unrelated metadata. On 2026-09-06 acquisition reporting was corrected to separate any capture, PDF capture and unassessed document completeness. Publication and acquisition totals now count unique candidate records rather than identifiers or summed memberships. Regression tests cover aliases, overlapping publications, non-PDF captures and excerpts. Completeness review remains outstanding.
@@ -519,7 +520,7 @@ Overall gate: **NOT READY**
 - [ ] OPS-005 — Adopt collect-and-flag autonomy boundaries
 - [x] QA-001 — Bind conflict review validity to current evidence and conservative rules
 - [x] QA-002 — Revalidate the historical rule-assisted conflict triage
-- [ ] QA-003 — Audit a stratified sample of identity and extraction decisions
+- [x] QA-003 — Audit a stratified sample of identity and extraction decisions
 - [ ] QA-004 — Separate presence, assessment, verification and source coverage metrics
 - [x] QA-005 — Implement evidence-bound subset reviews and append-only history
 - [x] SCHOL-002 — Seed the missing foundational bibliography

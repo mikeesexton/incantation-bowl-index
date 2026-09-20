@@ -25,18 +25,36 @@ the dated reports under `data/reports/`.
 
 ---
 
-## 2026-09-19 — Codex — Reproducible stratified accuracy audit (in progress)
+## 2026-09-20 — Codex — Reproducible stratified accuracy audit
 
 **Claimed:** QA-003
-**Corpus:** unchanged at claim — state digest `72ca747ba5bd`
-**Tests:** pending
+**Corpus:** changed (80 append-only accuracy reviews; no source claim or identity changed) — state digest `f03b960f967d`
+**Tests:** 266 passed; sample/report reproduction, copied-DB dry run, replay no-op, SQLite integrity check and `git diff --check` passed
 
-- Claimed a representative identity/extraction accuracy audit plus a separately
-  reported high-risk sample. Selection will be deterministic and checked in;
-  inaccessible evidence and ambiguous cases will count explicitly rather than
-  being replaced by convenient records.
-- Claude's untracked `docs/public_export_boundary.md` is concurrent staging
-  work and will remain untouched.
+- Completed a deterministic 60-identity representative sample across all 24
+  non-empty status/linkage/source-family strata, plus a separately reported
+  20-identity high-risk sample. The representative audit found 36 verified,
+  23 verified with evidence notes, zero demonstrated errors, and one
+  indeterminate BM068A claim check; the inverse-probability weighted
+  verified-or-noted estimate is 98.7% with Kish effective sample size 47.5.
+- All 20 high-risk clusters were verified with notes. Existing source
+  disagreements remain source-attributed; no canonical claim, authenticity,
+  right, merge, or split was decided. No user adjudication was queued because
+  the audit found no demonstrated error.
+- Added a stale-safe, append-only accuracy-review ledger whose digest covers
+  the exact objects, sources, captures, appearances, identifiers, claims and
+  dedupe evidence. The 80-row production manifest replayed with zero changes.
+  Regenerated the roadmap, campaign report, and private export; marked QA-003
+  done.
+- Created and integrity-checked
+  `before-qa003-accuracy-audit-20260920T052500Z.sqlite3`. Rotated the oldest
+  snapshot out of the retained ten to
+  `/private/tmp/before-card-lines-20260915T023458Z.sqlite3.gz` (recoverable
+  during this host session).
+- Next: obtain or inspect Segal 2000 entry BM068A and supersede the one
+  indeterminate row; plan an independent second audit before treating the
+  weighted baseline as a durable corpus-wide accuracy claim. Claude's staging
+  files remained untouched.
 
 ## 2026-09-19 — Codex — Six-exception source review
 
