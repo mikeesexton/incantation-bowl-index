@@ -16,6 +16,7 @@ from pathlib import Path
 
 from bowl_index.db import connect
 from bowl_index.identity import identity_rows
+from bowl_index.accuracy_audit import _selection_evidence_digest
 
 
 SEED = "qa003-identity-accuracy-2026-09-20-v1"
@@ -33,19 +34,6 @@ SOURCE_FAMILIES = {
 def stable_rank(*parts):
     payload = "\x1f".join(str(part) for part in (SEED,) + parts)
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
-
-
-def evidence_digest(item):
-    payload = {
-        key: item[key]
-        for key in (
-            "identity_id", "canonical_object_id", "member_ids", "record_status",
-            "linkage_method", "source_family", "source_ids", "identifiers",
-        )
-    }
-    return hashlib.sha256(
-        json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
-    ).hexdigest()
 
 
 def largest_remainder_alloc(counts, target):
@@ -207,7 +195,7 @@ def build_manifest(conn):
                 "inclusion_probability": allocation[stratum] / counts[stratum],
                 "analysis_weight": counts[stratum] / allocation[stratum],
             })
-            entry["evidence_sha256"] = evidence_digest(entry)
+            entry["evidence_sha256"] = _selection_evidence_digest(conn, entry)
             representative.append(entry)
     representative_ids = {item["identity_id"] for item in representative}
     high_risk_pool = []
@@ -224,7 +212,7 @@ def build_manifest(conn):
         key=lambda item: (-item["risk_score"], stable_rank("high-risk", item["identity_id"])),
     )[:HIGH_RISK_N]
     for entry in high_risk:
-        entry["evidence_sha256"] = evidence_digest(entry)
+        entry["evidence_sha256"] = _selection_evidence_digest(conn, entry)
 
     manifest = {
         "schema_version": 1,

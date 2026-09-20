@@ -18,6 +18,7 @@ PREFIXES = {
     "dedupe": "DED",
     "dedupe_evidence": "DEV",
     "claim_conflict_review": "CFR",
+    "accuracy_audit_review": "AAR",
     "merge": "MRG",
 }
 

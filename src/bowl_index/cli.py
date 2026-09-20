@@ -42,6 +42,7 @@ from .relationships import apply_relationship_review
 from .documents import apply_document_assessments
 from .vault import validate_rich_text_package
 from .backup import private_backup_readiness
+from .accuracy_audit import apply_accuracy_audit
 
 
 def build_parser():
@@ -59,6 +60,10 @@ def build_parser():
     saturation_log.add_argument("path")
     audit_log = sub.add_parser("ingest-audit-log", help="ingest a checked manual-audit sample")
     audit_log.add_argument("path")
+    accuracy_audit = sub.add_parser(
+        "ingest-accuracy-audit", help="ingest evidence-bound QA-003 identity accuracy reviews"
+    )
+    accuracy_audit.add_argument("path")
     dedupe_review = sub.add_parser(
         "ingest-dedupe-review", help="ingest reversible checked dedupe decisions from JSONL"
     )
@@ -231,6 +236,10 @@ def main(argv=None):
         print("ingested %s saturation rows" % load_saturation_log(conn, args.path))
     elif args.command == "ingest-audit-log":
         print("ingested %s manual-audit rows" % load_audit_log(conn, args.path))
+    elif args.command == "ingest-accuracy-audit":
+        print(json.dumps(
+            apply_accuracy_audit(conn, args.path, PROJECT_ROOT), indent=2, sort_keys=True
+        ))
     elif args.command == "ingest-dedupe-review":
         print("ingested %s dedupe reviews" % load_dedupe_reviews(conn, args.path))
     elif args.command == "triage-conflicts":

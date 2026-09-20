@@ -1,0 +1,1408 @@
+{
+  "schema_version": 1,
+  "audit_id": "QA003-2026-09-20",
+  "selection_manifest": "research/audits/qa003_identity_accuracy_sample_2026-09-20.json",
+  "selection_manifest_sha256": "bb97a2344c2e11ff09a5c3607aafb0e218816fb14b3035a3a21c9570b83497f0",
+  "reviewed_by": "Codex research audit (Mike Sexton workspace)",
+  "reviewed_at": "2026-09-20T05:00:00+00:00",
+  "entries": [
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-01B582E3244E",
+      "selection_evidence_sha256": "f5eeea5669f99f4726a187331369b65e23c49e0a444e4e04e0e962918847f222",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-A880EE0A5FEF",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1883-0118-AH-2601",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-5B080DC1AC82 sha256:ae35dc235ff4ef5257a19a40d4ae580d420cc418c917b3bc001fe00c7c9edc12"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 9 stored claim(s) from an uncaptured source could not all be rechecked; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-079F0B82D514",
+      "selection_evidence_sha256": "7c6c184fb9894aab14481f0bdff0b04cd316dc23996db436f69e53484023e667",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "capture:CAP-E1E6C8B56AD6 sha256:bdbe5384e38fcbe39b6b621e4cc3df0f4c70ac94f49a3348e46af29431999f06",
+        "capture:CAP-EA64131E5F1D sha256:ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+        "dedupe_evidence:DEV-08EDF9701740",
+        "dedupe_evidence:DEV-1A92FE3A414B",
+        "dedupe_evidence:DEV-4F85BBEB3810",
+        "dedupe_evidence:DEV-8DBA3473321C",
+        "dedupe_evidence:DEV-AA07CAC9AA8E",
+        "dedupe_evidence:DEV-D29893D29B56",
+        "raw_payload:APP-C936ED916369 sha256:51ccbc921dfa5f5cffe06a477c6dd7cf07ea7643608f3e46200d613104bf3d66"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-0812604AAFBD",
+      "selection_evidence_sha256": "255ffede44532d1a4c6fa0dae816d87105962f19635e024eeedce09985239dc4",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "dedupe_evidence:DEV-02E71DABBAE3",
+        "dedupe_evidence:DEV-1CE78CFEB03B",
+        "dedupe_evidence:DEV-320249C389F1",
+        "dedupe_evidence:DEV-72BFF4F5C695",
+        "dedupe_evidence:DEV-7A310F613F8E",
+        "dedupe_evidence:DEV-D213A21D8BE8",
+        "dedupe_evidence:DEV-F361F9E2988F",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://poj.peeters-leuven.be/content.php?id=2020266&url=article",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1886-0109-2",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-43413A3F8BB9 sha256:127f6a679fbd955571bd59b5972795ee7494b61cb3f742cb7aa41963d42b3a64"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 11 stored claim(s) from an uncaptured source could not all be rechecked; 4 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-2240A84876B0",
+      "selection_evidence_sha256": "53b2bc93f5aca8813c87048a8d0207ab639a677b21d228d8ee24fa759862aab2",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-0AEB1103EDDA",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-27E625F08E90",
+      "selection_evidence_sha256": "b48fd93a3be94baa2746624bcbcb62b9f8a7ad2672432f9d31bee252f955f632",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "dedupe_evidence:DEV-26D52B3418AD",
+        "dedupe_evidence:DEV-4B61002075E6",
+        "dedupe_evidence:DEV-C6E1B30A5746",
+        "dedupe_evidence:DEV-D61234366B19",
+        "dedupe_evidence:DEV-F2EA3FA55AC2",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 1 stored claim(s) from an uncaptured source could not all be rechecked; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-283FD9063B32",
+      "selection_evidence_sha256": "1dd226857c2db1869156cfbf293de475d2ecb8608eff89adbb0782ed5ebf1bd5",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-1E02431845BA",
+        "dedupe_evidence:DEV-6D4C7189F849",
+        "dedupe_evidence:DEV-936E15F193C1",
+        "dedupe_evidence:DEV-9A2C9B84C12A",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1851-1009-97",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-0CB328E857D3 sha256:e8aabb21ed9e3007d04a24937a3023d9f8bae92205d801ae18b0e412de2f24e0"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 10 stored claim(s) from an uncaptured source could not all be rechecked; 3 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-2D03029F6DEE",
+      "selection_evidence_sha256": "71f30d581b00f0cb73f206833a591c65887d419b8c5f8b2de37a9e05b3469848",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-AAAABEEDA9B6",
+        "dedupe_evidence:DEV-DEDFD31444C2",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-D7A3301C5C89 sha256:95675994915e01446e962f8fe77b1f53b5571424d6a729071fd9b89939631b71"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-319F3DE276D8",
+      "selection_evidence_sha256": "b7e7685da9050d9ae279e629342733b7544a4f3bf6c921ba8c536f626d284ef8",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-0E3E15ED3C16",
+        "dedupe_evidence:DEV-12F1E750D309",
+        "dedupe_evidence:DEV-1C7B8C604C7E",
+        "dedupe_evidence:DEV-F49D17F9CC6E",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-6D2B1937E59C sha256:85ad229b958613277b9fb3c84819c784f1fb4b5b584bff0aacfdab89a457cfd9"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-3302F57D7AE1",
+      "selection_evidence_sha256": "23a05afde9c0b06ac2d07feb406bb87a9ad83477c69f41101fee5a03551e8a75",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-15BC0AC8B11D",
+        "dedupe_evidence:DEV-CE0DF8BFD4E9",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-7B798BC9A00B sha256:47d2dfad81f92f5ecc60f99971ba35dbed53ec12e9b0cd64d71ca7ec9cb15d9c"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-33C9806531BF",
+      "selection_evidence_sha256": "ad94dbd558b32d74f572e53d7042798de8f921510a634ab96a4fabc4d9322cea",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "capture:CAP-E1FB74EF0432 sha256:8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+        "dedupe_evidence:DEV-137CF525E719",
+        "dedupe_evidence:DEV-155934349D52",
+        "dedupe_evidence:DEV-40DA2AA63903",
+        "dedupe_evidence:DEV-49D24C127D0C",
+        "dedupe_evidence:DEV-8046D35B3D2A",
+        "dedupe_evidence:DEV-82B10E6D7176",
+        "dedupe_evidence:DEV-B0C9E0F36111",
+        "dedupe_evidence:DEV-B4C8D475CB1C",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.themorgan.org/sites/default/files/pdf/exhibitions/PsalmsLargePrintLabels.pdf",
+        "raw_payload:APP-45692670B4B8 sha256:20a951205adb41a7dde6e130bb5270e6e1e37411b44ff079182b36709baee030"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 6 stored claim(s) from an uncaptured source could not all be rechecked; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-372A705104A0",
+      "selection_evidence_sha256": "201f676767c42ca2c3850929c84e26d659bf68f7f72f6c6589fdc4b187e9acd5",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-10B3D25F4462",
+        "dedupe_evidence:DEV-CDBEEF0B997F",
+        "dedupe_evidence:DEV-E1DD94FE377C",
+        "dedupe_evidence:DEV-F08227D08B4C",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1851-0903-2",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-C2B3BA0A92B3 sha256:7b2505edd409b97e2746ad7ef97b7ad90e9c9042dcd3950789392a1ef0d4b8ee"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 9 stored claim(s) from an uncaptured source could not all be rechecked; 3 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-4D7E8C4473C1",
+      "selection_evidence_sha256": "ad231b6457bb2ef5711437b1847bae700682647760a07104b198e6974004794a",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-87401B14E5C6",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-5002143E0DC9",
+      "selection_evidence_sha256": "8c31c7e3eb48bce9e7e69ff0e135427f9a15d90ce6b08967a49a69df0c4bd5d7",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-3982B3800719",
+        "dedupe_evidence:DEV-CB5B0F9049AC",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-C2C2E7B53C42 sha256:36c54d5858918b63899b8b094708a0b659f2f00c1f80584f6e468645dffec42b"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-51D0CCC0FDC5",
+      "selection_evidence_sha256": "4eeb0c085c23fb6858658d5bfc13a8d5c23742ecaaabc0250f5942d601d11726",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-101D28D54956",
+        "dedupe_evidence:DEV-1F9C0A725F34",
+        "dedupe_evidence:DEV-600F49734B1A",
+        "dedupe_evidence:DEV-A6411CF9B938",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1851-0903-3",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-07DEAB9C072C sha256:6738ef1fa501287fcc58b7b2a4e322f50135768740af41a2c6c3b78df0272655"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 10 stored claim(s) from an uncaptured source could not all be rechecked; 3 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-5B1343517775",
+      "selection_evidence_sha256": "ac608f13295f38aca166224c62a658849f8739ae38a30219aad3ac0127efd73c",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "capture:CAP-E1FB74EF0432 sha256:8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+        "dedupe_evidence:DEV-30F6B2727AAF",
+        "dedupe_evidence:DEV-4DA26CC12B4E",
+        "dedupe_evidence:DEV-7BAA30108DF2",
+        "dedupe_evidence:DEV-BEC6BD399C13",
+        "dedupe_evidence:DEV-FA768FE985E8",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-A1EA9268732A sha256:88086506f47b1e4e95692651d4d3ef72369fa5ba04ace13529a324c5d5eb6afb"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-653C0F4DAF6F",
+      "selection_evidence_sha256": "ff6f4c64a705531bd422701e52d056a1732807178591a3f48560575c0026c715",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-DDB9E4B4F74B",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-79D32E0C0500",
+      "selection_evidence_sha256": "07a90173028e7691082700c70f726fc02a93fc986f9e54c8c406e43c8e20999f",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-3DB7FCACDE0A",
+        "dedupe_evidence:DEV-4059C0DED4DA",
+        "raw_payload:APP-CE2ADF9516E5 sha256:31b2b5747f75a2fd2ab96d4c60983b9fba406f152e6764d55b7fb0a6289221f3"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-85A9ED12421A",
+      "selection_evidence_sha256": "0a28b198ea46d9a5b8429158fd52b2767d256eed073e652e69e9a923dcefa55c",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-877D87C47D82 sha256:0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-BAD353877B00",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-ABDE8A973358",
+      "selection_evidence_sha256": "2c0452fd8b5b2667c7ca03b6acbfc42fa06e9cc8e00de064dfbd3f67c60ef9e5",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-434D1F864215",
+        "dedupe_evidence:DEV-D9F059472511",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-10B39EF6ED80 sha256:ddde6596716ba66d9afba55e53d061236934a104895c161721c6f71c3d3c3619"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "high_risk",
+      "identity_id": "IDENT-B205D4EC9A30",
+      "selection_evidence_sha256": "3493d49ce2eb151d0f41c2d9085aa5cbf56e299da0cda6e1a063d5d808b06aba",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-877D87C47D82 sha256:0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-0CB8E66072BF",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture; high-risk selection contains source-attributed value differences; the audit does not choose a preferred scholarly value."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-02B43ABF13D9",
+      "selection_evidence_sha256": "aa2384f21bc875396ddea3a5fa3f85b20ef1db60010c40a71a87f0a0b8114201",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-3EFA25A30366",
+        "dedupe_evidence:DEV-56610FAFCEAD",
+        "dedupe_evidence:DEV-66918FF4AEB3",
+        "dedupe_evidence:DEV-66D0184CA94D",
+        "dedupe_evidence:DEV-CAAA5FA51FB8",
+        "dedupe_evidence:DEV-E08FE9B141A6",
+        "dedupe_evidence:DEV-F824D60F540D",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://cojs.org/aramaic_magic_bowl-_the_protection_of_the_family/",
+        "raw_payload:APP-1E9CF57E593C sha256:c2d4e0067e5aeedfb4780f5d642d88bf35ae73c2f44cbd47ddfee00d3d7af938"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 4 stored claim(s) from an uncaptured source could not all be rechecked; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-04E65150CB94",
+      "selection_evidence_sha256": "1057780af3563326efda446b4c16da7a329760c2bb11b4496c5a3539333b6233",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://www.kedem-auctions.com/en/incantation-bowl"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-0585D0CB4219",
+      "selection_evidence_sha256": "c2666523a3dea7f942f331d36c18055c7208e8b2850ce8e8a7efb40e2ee87ebf",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-071DAEFA6D11",
+      "selection_evidence_sha256": "177ceac3db3c0cc4d97594d9adfec4fa8912d7776ed42953ac77cedce7f351e3",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-05C22F54C5DB",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-0BA49543A616",
+      "selection_evidence_sha256": "7a5a9b12441fb12a408efd20fa938edb6d7525901cf3ea175aec4dd12c344dd1",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-2861B06070B4 sha256:23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-0C91DE9D2AEC",
+      "selection_evidence_sha256": "d7583bb161191832acf4e9f363d889f21214260c75dec96ca83d1c2e4175c227",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-44E18514EEC3",
+        "live_or_bibliographic_source:https://auctioneagle.co.uk/auction/fine-antiquities-the-prince-collection/lot/135362-aramaic-terracotta-incantation-bowl-with-warrior",
+        "live_or_bibliographic_source:https://www.barnebys.co.uk/auctions/lot/aramaic-terracotta-incantation-bowl-with-warrior-fiLN9BK-626947463"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 9 stored claim(s) from an uncaptured source could not all be rechecked; live evidence verified only part of the sampled claim set; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-1096AC7149EC",
+      "selection_evidence_sha256": "7d54ad1b34f08b08030ec848f792e4a12a9705b3502b33dcae29b92b4d035ba0",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "dedupe_evidence:DEV-C8F3AD0605B9",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-15FA5AB2FD95",
+      "selection_evidence_sha256": "3a7d9d1c2e26c369ef75d52223400843f543fd2160440a4b78629cdd7083a3bf",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "dedupe_evidence:DEV-376D8AEF7FD4",
+        "dedupe_evidence:DEV-4F437D487E21",
+        "dedupe_evidence:DEV-92362A5CD959",
+        "dedupe_evidence:DEV-A92AAD6DA588",
+        "dedupe_evidence:DEV-D04868E14D63",
+        "dedupe_evidence:DEV-D71CC0A9097F",
+        "dedupe_evidence:DEV-E222B770D982",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1983-1002-2",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-7063BDFC5A7F sha256:e39f043125ca2189af94000bb5df7cbe8140d6f34d1d7903460237c4a4781786"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 8 stored claim(s) from an uncaptured source could not all be rechecked; 3 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-171905420AEE",
+      "selection_evidence_sha256": "991ec8171c7cea73167cab78665d27a9d2783e3ebffcba45b2d4c0d5a6afc6f3",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-8D74FBFF57E2 sha256:f3c5e2dc78f592d6ea796f0b4bdbd8a9ef46e57e6e242dece7295e5681423743"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-28CCB551F9CE",
+      "selection_evidence_sha256": "e8b38913a625653160461d4e76a24b1075d6af9934807a4c337f7a34a1003505",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-65E570EA51DB sha256:6eb73f5326996308957f5b50d3ecf130d5b7557ebdac2db10c385410ecd8b268"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-2A62E7C24655",
+      "selection_evidence_sha256": "b2124371da1107b1bd96e727acbc931d7bd3ec7408c95f37115eb3106c0592c8",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-0F7DD7AEB0FE sha256:bd8b0d73fd76aeb3144809030bc29a9603be4f51ccc11ede3610c7d66155241c"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-2DB1150EAABF",
+      "selection_evidence_sha256": "870f1343ba8c0e9e552db5510ab89f505f3464b06013754b7bc9b7b95619e6ff",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-E753F22AD475",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 2 stored claim(s) from an uncaptured source could not all be rechecked; live evidence verified only part of the sampled claim set; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-329BB470A7D9",
+      "selection_evidence_sha256": "52f873f0b9bea8cf33fda709d5715b99deb5f2b304dea6b4dec5e75159a3b63d",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+        "capture:CAP-FEA23FB9B4F1 sha256:63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-3710A9140539",
+      "selection_evidence_sha256": "64e72718205ed620efc7a1ca449bf1d9ecbe7c7f8405d4f56520e03c7b0a1074",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+        "capture:CAP-FEA23FB9B4F1 sha256:63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-392B4F4424B7",
+      "selection_evidence_sha256": "2469347bf754e783c91dabc2c17a2386c6024649fdcd58623a4dda175d09f6a1",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-DB97525A50CA sha256:fafcf6a5f7a65633cf9703c1f832fa2c36632704c37ba81bfac04920b5c5e60a"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-3AE967E7EFF9",
+      "selection_evidence_sha256": "a210289967b2d6851caa9882791ac501219c0205f60f8bf2ec128993da5d28ba",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "not_applicable",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. No factual claims are stored for this identity. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-3D8358A1D0CC",
+      "selection_evidence_sha256": "0805a9ae3a36f4e82ccc48aa40c6461bcc3ee4d3324adbde3872446826034e4a",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://www.trocadero.com/stores/Ostracon/items/1455520/Mesopotamian-Incantation-Bowl-5th-7th-Century-AD"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-452BB04A61D1",
+      "selection_evidence_sha256": "554d9c46979155e6ba5d0f749b7df5a8271937cabc2b9561b1554aa85cbd3675",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-E77DD534FF79 sha256:545d89c8de51dee8871cf4bf48b18202ea57cbe023b745cedbf997f6da07548b"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-49DD527F5D94",
+      "selection_evidence_sha256": "8344364c37fad95f1ee6f9dc2c07579e72320d752fb3f5ed7a4debd129fe7166",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-4AC688F5E515",
+      "selection_evidence_sha256": "f3a88c89ae506d2eb615087982a4f849d86f40f41654e71779638f25fa1a2881",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-E1FB74EF0432 sha256:8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+        "dedupe_evidence:DEV-00CF64590412",
+        "dedupe_evidence:DEV-9C8226134EC1",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://biblio.ugent.be/publication/378915"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 2 stored claim(s) from an uncaptured source could not all be rechecked; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-4DB8590DEAB5",
+      "selection_evidence_sha256": "e0391c03a454187d69a0aec9782a0d8f60f193f9d6fff884a40eb882a4e3f3a4",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-5344FF63115C",
+      "selection_evidence_sha256": "e3d36a9059e93b698ae1f5a8458bc36782dfbb5d569b1076824343d0f0b8ee73",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-A137EAD44F63 sha256:e0d9894128452ad126c1a41f08b2b9b3eaec19579070e3b3a0be6b428a1b4472"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-5430A0855D0E",
+      "selection_evidence_sha256": "76b8055303cd02853d0c09bb6bf8e57d30a9951088b8632fc42b2a114a1b57ad",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/Publications/SAOC/saoc71.pdf"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 4 stored claim(s) from an uncaptured source could not all be rechecked; live evidence verified only part of the sampled claim set; 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-558CF7614F99",
+      "selection_evidence_sha256": "cd018cc63d80308b82b0aa95e9023d4a22e9c2d0ce708aebb6dd99105afdd475",
+      "outcome": "indeterminate",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-5D8D7FDC584D",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 1 stored claim(s) from an uncaptured source could not all be rechecked; live evidence verified only part of the sampled claim set; 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-56796E0EB0E2",
+      "selection_evidence_sha256": "91f6b8b6e5c29f6818a7af3310ed8a4f0bffe50776ef16a428f01ed5106c287b",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-2861B06070B4 sha256:23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+        "dedupe_evidence:DEV-358FF20BC564",
+        "dedupe_evidence:DEV-7A08F93A4166",
+        "dedupe_evidence:DEV-BFC1B28C648E"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-6005503283A5",
+      "selection_evidence_sha256": "bbdbaae87e457620867847adff0dc7781dffae7f58c24a51d5e6395041d80a5c",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "dedupe_evidence:DEV-049523BA3155",
+        "dedupe_evidence:DEV-64BE826DAAAD",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "raw_payload:APP-215C064CF1BC sha256:8b175d65d5389f644111ea9b32e23b4fc51cd127c36871b587718294785095dd"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-618DB7091347",
+      "selection_evidence_sha256": "c28284a74f3a991cfec51b7e9f51a0fd6595cde7d60168485d1d8cc4a240aee4",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-1FD3C0DBEA6A sha256:7763f66407749abf99705532d5021753f506184b1339681f3e2640d17b5d1ebd"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-620A239DAA70",
+      "selection_evidence_sha256": "ea96c81e216dfc6a366e8eacc0a701c18b826ba1544ac24603f77a9f13267f50",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-EF6226A2D422 sha256:34d30321af8c413fd28c0ae322ef8c6024f6b3da240a276fb9276a520fcfb240",
+        "dedupe_evidence:DEV-10C72B2DF753",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-68042E5AC552",
+      "selection_evidence_sha256": "580d6789cc52a5106c60f34945dd86fa71d0223bc13feee1355e4a5c0d1033f1",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-6849AB56769C",
+      "selection_evidence_sha256": "34c49195f4bc2092bb962007dccf6017e83fa2a94c076383c6710c9b574d8831",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-EED4A3FE59EC sha256:667521b689e12947f7911d9542b7fc0e57bee1179f0c057ec7d59de7ee5ed44a"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-6FFBC39A1B6B",
+      "selection_evidence_sha256": "30436b1d1c98d246d5b73a422520553b41046a245325cc72c9b47b24763cf767",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-7121B35A7FC1",
+      "selection_evidence_sha256": "f0eb4356ef7b030de13d6c52e58fa84483b55cbabbfd0466e9ffce7e4134d102",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-67B01E39FED1 sha256:d4b2c6e2946e10ab295d5b45a7ce2b132b674e35da40c09e1818a8af53d92a3d"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-79A4D3B0726E",
+      "selection_evidence_sha256": "b68fb781c9a0393ba4a37ebfb4091950147494078033b2e144f80c1a49403d08",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-5D51A77A05C2 sha256:4eef059964e432af9f8b1e001ffe9a7fa8b343d7c9f855cc0c6dab806257111e"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-83E3E5673339",
+      "selection_evidence_sha256": "393f7619315bfd445c8fce39c0490f54c292db5b5046e78fa72f65302b256d7e",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_applicable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-378311F512ED",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No factual claims are stored for this identity. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-843CFCE02D20",
+      "selection_evidence_sha256": "91af3b2800dc3788ce482789d2f348cc09e8c31b649624d3d034d04dfd96fbd2",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "dedupe_evidence:DEV-EA30A7B6F978",
+        "live_or_bibliographic_source:https://publications.hse.ru/en/chapters/211068754"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 1 stored claim(s) from an uncaptured source could not all be rechecked; 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-898A714F8DDE",
+      "selection_evidence_sha256": "d79e64e259956f0b1030fe89f00faf04d51dd5609f483ed88551993f764cbf91",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-7ED508514126 sha256:5daf835d1c253c59e6b65e5b4fd831c5a4e4368131106922063a3fb183e367ac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-8CB0CA407E6E",
+      "selection_evidence_sha256": "383d5533a9c8a95ef70c93971185bf2af4ca9928767a948a8df4ec6329e11190",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "not_reverifiable",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-2102679A23D3",
+        "dedupe_evidence:DEV-7513A6F7E4FA",
+        "dedupe_evidence:DEV-7EDAF330DDB5",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/object/W_1925-1015-7",
+        "live_or_bibliographic_source:https://www.britishmuseum.org/collection/term/BIB3908",
+        "raw_payload:APP-D85A15D4B75E sha256:54e9c271b39785e84efe95b2efba6cd6dceeae0f6b6906b0012ed466a11e6599"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. No contradictory value was found, but the full sampled claim set was not re-verifiable. Limitations: 10 stored claim(s) from an uncaptured source could not all be rechecked; 3 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-9078953DB2E7",
+      "selection_evidence_sha256": "335c33b6094cc07601c9066ecbd479ec152818d002bd905c3130c9bb9bf03b19",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://barakatgallery.eu/artworks/54886-terracotta-incantation-bowl-with-aramaic-inscription-500-ce-800-ce/"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-9092CCC4D2C5",
+      "selection_evidence_sha256": "bc2f0fd4fe1a2d68a37d74bb6d4833ae58712ddfc460155ccfa258ee29d88d70",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-B69EA4233EDC sha256:4c13a7e5dd262f47c26265ad7a80daf910aa367d71472e6db2c995a37fce4a8f"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-90E3D2265AC0",
+      "selection_evidence_sha256": "6d4d26275b5223b5c291f92966c370def3140f51cb6825f9bd41643468556f91",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-835C446C1548 sha256:16a0995614d335d2a2f0be5b1d71efbac443b84d5221ee9485516aad7f5da7f5",
+        "raw_payload:APP-C7EAA57B2112 sha256:9492befa483c1682d21c0d9e6c07e0cbc7b54c128492a2b31d5dc85c73137b40"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-920AA91FFE7D",
+      "selection_evidence_sha256": "96382b2fc07edf065ce0ff44fbc8453c7411ed803ddb41c9f52bb9b9a70e6b33",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+        "capture:CAP-4C9D532C9194 sha256:ef983942f7fdc4c57af6ceb3c3b62c3444e75fd292cd241a2882f8d9a6b34650",
+        "capture:CAP-67B01E39FED1 sha256:d4b2c6e2946e10ab295d5b45a7ce2b132b674e35da40c09e1818a8af53d92a3d",
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+        "dedupe_evidence:DEV-3E874A354EF1",
+        "dedupe_evidence:DEV-D18C21B2029F"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-92F5B3CC2C41",
+      "selection_evidence_sha256": "046dab739c47d57b6f6f66e705d6548ca55483ef4d4c5b0b7818e4cfe897f207",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-9FCD992E707D sha256:1415b0cc219eda7f7cd4be5b4fcfbafedaf3e175d036e78e4c14eeaffb79ff5d"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-961CF43D968B",
+      "selection_evidence_sha256": "bb6069f544c4fe60d11da5cb134075052560c7fc59482ae3a8d654a619c9b24b",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-295A7FE7BF01 sha256:39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+        "capture:CAP-9AB3DB64A0CC sha256:e34d25efcdfc7f4087cd137976ca66810f0d2279cf107048d32b9404f5ef411d"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-9DBFAB96E544",
+      "selection_evidence_sha256": "d4cebfac012bbfaa4f477dc5c0822fe4d40546c495287dbaffa178e57c51bef4",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-A4F154B0CB2E",
+      "selection_evidence_sha256": "58786e34ae6e7fe2a30bce078cf07feca9bc199386360bf0d32abec98bf5028f",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-16DA069FCC7F sha256:3ebd1b37aa022fce8613023da9d69034a620532ef23c9e4ee0ce973bc67c0f71",
+        "capture:CAP-EA64131E5F1D sha256:ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-A64AB908A49B",
+      "selection_evidence_sha256": "b65a3af1abcf3a7786caa78e5bd1a83946fffb6ab79593955a2090d429547bbb",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-AA67AEE8E98C",
+      "selection_evidence_sha256": "ff3a64efe21f8c82d791dd11cf284d1f76c61656b74d723d53a209f170725ef2",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-560EB584740F sha256:c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+        "capture:CAP-A514265C9E93 sha256:f34353aac1877681ca20691e6e2fb955f11cb37766fe943067f1255944d2f43d"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-AD8EFB15E4A0",
+      "selection_evidence_sha256": "e72d5a1a9fe6ebdc7cfc4466c49e52edda76226f2113bbf64991ddf829d6b960",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://www.schoyencollection.com/palaeography-collection-introduction/aramaic-hebrew-syriac/4-6-14-mandaic/ms-1911-2"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-BA780DAAB6D8",
+      "selection_evidence_sha256": "dcfa17031c2a123c127fa9352f8f1931e7f920509502caf56cce18dfed04d84e",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-4C9D532C9194 sha256:ef983942f7fdc4c57af6ceb3c3b62c3444e75fd292cd241a2882f8d9a6b34650",
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-C31D6B6016A8",
+      "selection_evidence_sha256": "60e8856e5634eeedc7b04415d3389341669d970a4232b919361a468e4285af97",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-CD6FB4A75074 sha256:858d240a33705ab04b4f5893639a715204c27e2da5a2604d6a47e74182e3ca6f"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-C7A7DEBCC1FE",
+      "selection_evidence_sha256": "1240fe8c51297a8bda273c1918aa37e653335c3c5134c9f88364a2be474b5770",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-AC6EFA398F62 sha256:6edc390b28ec4709784de7efd916149155f96f397f209bee10530cae34dae87c"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-CEBD4DE0052A",
+      "selection_evidence_sha256": "3a50221424be296883449596921adb7a693d6c60fd1062f2234c50f937bb1970",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-4C9D532C9194 sha256:ef983942f7fdc4c57af6ceb3c3b62c3444e75fd292cd241a2882f8d9a6b34650",
+        "capture:CAP-DBB06BEA4670 sha256:7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-CFBE7C2A87F5",
+      "selection_evidence_sha256": "1682260c8d148c68133475c7473f22ecf440def45623a0e81cc0a113f882f6c5",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-6C64BBC191D1 sha256:6625bff3c05f04bb13d0bd1f565ef4370020f603adbd290be9e75199c5653ef9"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-D4E7693AE9F1",
+      "selection_evidence_sha256": "81702201c6b17578e0ebe91c555411736fa749220069992b3432bf2bf9872a2e",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "not_applicable",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. No factual claims are stored for this identity. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-DB6683F21ED5",
+      "selection_evidence_sha256": "1bbcee968d54fe8e18ab5c1ef0b08e3235e743b767fe2071a6bc4fb064f913c4",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "verified",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "dedupe_evidence:DEV-284BF42B994C",
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/",
+        "live_or_bibliographic_source:https://echoesofegypt.peabody.yale.edu/egyptosophy/incantation-bowl"
+      ],
+      "notes": "Citation and designation checks passed. Exact-identifier or explicit-concordance evidence supports the current multi-record cluster. Sampled factual claims agree with inspected retained/live evidence. Limitations: 2 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-DE76B61B6C76",
+      "selection_evidence_sha256": "9a0ac653554c6a3d0cc0d93680462cdf9a12e195a3e33a9e638d5cb75942e7b6",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-0D9545A92AFD sha256:44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-F881E6B2BBA7",
+      "selection_evidence_sha256": "99547fbbe0cadd74d35f791e0b59076f3954ea4a2f2ee2668c5b716c5f9b6db3",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-F4A93FCBD733 sha256:fca5a0ceb49afe04324bb11ff51af941b029bc6496187a4b7318600842840e89"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-F99341421AE4",
+      "selection_evidence_sha256": "afcef23959b1bdf0e6b1a13391ac920ce9eecfd9cfdb0589ce453f93dc080ea5",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "raw_payload:APP-7FE08FF26B02 sha256:8a8380ab40c635c8cddd6349f6236cb5678deea4e3dd0c25afb1c4a1943a0427"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-FA62D628951C",
+      "selection_evidence_sha256": "b31bca63003e50fbd86599faa41fd715119f5fbbac59f410c568e4948f1824e3",
+      "outcome": "verified_with_notes",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "not_applicable",
+      "error_categories": [],
+      "evidence": [
+        "live_or_bibliographic_source:https://apotropaicarts.com/articles/amuletindices/bowlsa/"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. No factual claims are stored for this identity. Limitations: 1 cited source(s) were checked as live/bibliographic evidence rather than a retained capture."
+    },
+    {
+      "sample_role": "representative",
+      "identity_id": "IDENT-FORD2014-DAV27",
+      "selection_evidence_sha256": "dadf06ec07f6947ddf4702defc790b021304067c4f3d7475809996f326816556",
+      "outcome": "verified",
+      "citation_check": "verified",
+      "identifier_check": "verified",
+      "identity_check": "not_applicable",
+      "claim_check": "verified",
+      "error_categories": [],
+      "evidence": [
+        "capture:CAP-877D87C47D82 sha256:0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7"
+      ],
+      "notes": "Citation and designation checks passed. Singleton review found no positive evidence of an erroneous separation. Sampled factual claims agree with inspected retained/live evidence."
+    }
+  ]
+}
