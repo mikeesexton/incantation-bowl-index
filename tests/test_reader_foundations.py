@@ -3,7 +3,10 @@ from pathlib import Path
 from bowl_index.db import connect, migrate
 from bowl_index.ingest import add_candidate
 from bowl_index.identity import CONTENT_COVERAGE, CORE_ORDER, identity_rows, reading_score
-from bowl_index.presentation import display_date, display_name, format_date
+from bowl_index.presentation import (
+    collection_facet, display_date, display_name, format_date, language_facets,
+    origin_facets, purpose_facets,
+)
 
 class DisplayNameTests(unittest.TestCase):
     """Labels record how a record was found. A reader needs what it is."""
@@ -72,6 +75,39 @@ class DatePresentationTests(unittest.TestCase):
     def test_periods_are_not_dates(self):
         self.assertEqual(display_date([{'field':'period', 'value_text':'Sasanian'}]),
                          'Date not recorded')
+
+
+class ControlledFacetTests(unittest.TestCase):
+    def test_repository_aliases_collapse_without_changing_source_values(self):
+        self.assertEqual(collection_facet('Schøyen Collection'), ['Schøyen Collection'])
+        self.assertEqual(collection_facet('The Schøyen Collection'), ['Schøyen Collection'])
+        self.assertEqual(collection_facet('British Museum 113189'), ['British Museum, London'])
+        self.assertEqual(collection_facet(
+            'Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena'),
+            ['Hilprecht Collection, Jena'])
+
+    def test_language_noise_collapses_to_broad_categories(self):
+        self.assertEqual(language_facets('Jewish Babylonian Aramaic.'),
+                         ['Jewish Babylonian Aramaic'])
+        self.assertEqual(language_facets('The bowl is inscribed in pseudo-\u200bscript.'),
+                         ['Pseudo-script / non-lexical'])
+        self.assertEqual(language_facets('Jewish Babylonian Aramaic or pseudo-script'),
+                         ['Pseudo-script / non-lexical', 'Jewish Babylonian Aramaic'])
+        self.assertEqual(language_facets('Mandaic. 168 \x08Catalogue'), ['Mandaic'])
+        self.assertEqual(language_facets('arc; myz'), ['Aramaic (unspecified)', 'Mandaic'])
+
+    def test_ownership_history_is_not_presented_as_an_origin(self):
+        self.assertEqual(origin_facets('provenance',
+            'Private UK collection; purchased on the London art market'), [])
+        self.assertEqual(origin_facets('findspot', 'Nippur, Area WG, locus 14'), ['Nippur'])
+        self.assertEqual(origin_facets('findspot',
+            'Babylon | Ibrahim al-Khalil (Borsippa)'), ['Borsippa', 'Babylon'])
+
+    def test_names_and_traditions_are_not_presented_as_purposes(self):
+        self.assertEqual(purpose_facets('named_demon', 'Halbas-Lilit'), [])
+        self.assertEqual(purpose_facets('formula_genre', 'Talmudic'), [])
+        self.assertEqual(purpose_facets('text_purpose',
+            'Healing and guarding a household against demons'), ['Healing', 'Protection'])
 
 
 class ReadingScoreTests(unittest.TestCase):

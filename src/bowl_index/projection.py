@@ -14,7 +14,7 @@ import json
 import re
 
 from .identity import COVERAGE_GROUPS, identity_rows
-from .presentation import format_date
+from .presentation import format_date, public_facets
 from .publication import current_text_reviews
 from .publications import current_registry, publication_keys
 from .rights import current_media_reviews, media_evidence
@@ -41,12 +41,17 @@ PROJECTION_COLUMNS = {
               "license_url", "access_citation", "access_locator", "access_url", "access_status"),
     "editions": ("object_id", "source_id", "source_type", "citation", "locator",
                  "access_url", "access_status"),
-    "media": ("id", "object_id", "appearance_id", "source_id", "media_type", "url", "attribution"),
+    "media": ("id", "object_id", "appearance_id", "source_id", "media_type", "url", "attribution",
+              "rights_statement", "rights_locator", "license_url"),
     "identity_clusters": ("identity_id", "canonical_object_id", "member_ids", "display_name",
                           "display_date", "display_language", "display_collection",
                           "record_status", "member_count", "source_count", "appearance_count",
                           "completeness_score", "content_completeness", "reading_score"),
-    "facts": ("object_id", "field", "field_group", "value", "certainty", "source_id", "locator"),
+    "facts": ("object_id", "field", "field_group", "value", "certainty", "source_id", "locator",
+              "release_class"),
+    # Project-authored browse labels. Every row points back to the raw claim that
+    # generated it; this table never replaces or silently rewrites source wording.
+    "facets": ("object_id", "facet_group", "facet_label", "source_field", "source_id", "locator"),
     "works": ("source_id", "title", "authors", "issued_year", "container_title", "citation",
               "doi", "source_type", "access_status", "scope", "scope_label", "scope_basis",
               "objects_published", "document_held"),
@@ -69,6 +74,19 @@ PROJECTION_COLUMNS = {
 FACT_FIELDS = frozenset(field for fields in COVERAGE_GROUPS.values() for field in fields)
 FACT_FIELD_GROUP = {field: group for group, fields in COVERAGE_GROUPS.items() for field in fields}
 FACT_MAX_LENGTH = 300
+
+# Conservative triage, not a legal conclusion. Values in these fields are more
+# likely to preserve source expression. Public-domain wording and short claims
+# are identified separately; longer wording from a non-public-domain source is
+# the bounded human queue. An open release can prefer ``facets`` in every tier.
+SOURCE_WORDING_REVIEW_FIELDS = frozenset({
+    "text_content", "text_feature", "textual_feature", "text_characterization",
+    "catalogue_classification", "text_purpose", "text_function", "text_tradition",
+    "installation_instruction", "provenance", "provenance_summary", "collection_history",
+    "excavation_context", "associated_find", "iconography_or_caption",
+    "authenticity_assessment", "technical_test",
+})
+SOURCE_WORDING_PRIORITY_LENGTH = 80
 
 TABLE_NAMES = tuple(PROJECTION_COLUMNS)
 
@@ -227,10 +245,14 @@ class Projection:
         return rows
 
     def _media(self):
-        keys = [k for k in PROJECTION_COLUMNS["media"] if k != "attribution"]
+        evidence_keys = [
+            key for key in PROJECTION_COLUMNS["media"]
+            if key not in {"attribution", "rights_statement", "rights_locator", "license_url"}
+        ]
         return [
-            {**{key: self.evidence[mid][key] for key in keys},
-             "attribution": self.reviews[mid]["attribution"]}
+            {**{key: self.evidence[mid][key] for key in evidence_keys},
+             **{key: self.reviews[mid][key] for key in (
+                 "attribution", "rights_statement", "rights_locator", "license_url")}}
             for mid in sorted(self.approved)
         ]
 
@@ -286,7 +308,7 @@ class Projection:
     def _scholarship_decades(self):
         return decade_series(self.conn)
 
-    def _facts(self):
+    def _fact_candidates(self):
         """Short, checkable assertions about an object, with their source.
 
         Without this the projection can say a bowl exists and nothing about it —
@@ -294,8 +316,9 @@ class Projection:
         """
         rows = []
         for row in self.conn.execute(
-            "SELECT object_id,field,value_text,value_json,normalized_value,certainty,source_id,"
-            "locator FROM claims ORDER BY object_id,field,id"
+            "SELECT c.object_id,c.field,c.value_text,c.value_json,c.normalized_value,c.certainty,"
+            "c.source_id,c.locator,s.rights_status source_rights_status FROM claims c "
+            "JOIN sources s ON s.id=c.source_id ORDER BY c.object_id,c.field,c.id"
         ):
             if row["field"] not in FACT_FIELDS:
                 continue
@@ -304,21 +327,58 @@ class Projection:
                 continue
             if row["field"] == "dating":
                 value = format_date(value)
+            release_class = "factual_metadata"
+            if row["field"] in SOURCE_WORDING_REVIEW_FIELDS:
+                if row["source_rights_status"] == "public_domain":
+                    release_class = "public_domain_source_wording"
+                elif len(value) <= SOURCE_WORDING_PRIORITY_LENGTH:
+                    release_class = "short_source_claim"
+                else:
+                    release_class = "review_source_wording"
             rows.append({
                 "object_id": row["object_id"], "field": row["field"],
                 "field_group": FACT_FIELD_GROUP[row["field"]], "value": value,
                 "certainty": row["certainty"], "source_id": row["source_id"],
                 "locator": row["locator"],
+                "release_class": release_class,
             })
+        return rows
+
+    def _facts(self):
+        """Public fact rows; longer uncleared source wording fails closed."""
+        return [
+            row for row in self._fact_candidates()
+            if row["release_class"] != "review_source_wording"
+        ]
+
+    def _facets(self):
+        """Controlled visitor labels derived from, and traceable to, raw facts."""
+        rows = []
+        # Facet wording is the project's own. It may safely express the
+        # underlying fact even when the longer raw source wording is withheld.
+        for fact in self._fact_candidates():
+            for label in public_facets(fact["field"], fact["field_group"], fact["value"]):
+                rows.append({
+                    "object_id": fact["object_id"], "facet_group": fact["field_group"],
+                    "facet_label": label, "source_field": fact["field"],
+                    "source_id": fact["source_id"], "locator": fact["locator"],
+                })
         return rows
 
     # -- reporting -----------------------------------------------------------
 
     def gate_counts(self, texts=None):
         texts = self._texts() if texts is None else texts
+        fact_candidates = self._fact_candidates()
         return {
             "texts_included_rows": len(self.approved_texts),
             "texts_withheld_rows": len(texts) - len(self.approved_texts),
             "media_approved_rows": len(self.approved),
             "media_withheld_rows": len(self.evidence) - len(self.approved),
+            "facts_included_rows": sum(
+                row["release_class"] != "review_source_wording" for row in fact_candidates
+            ),
+            "facts_withheld_wording_rows": sum(
+                row["release_class"] == "review_source_wording" for row in fact_candidates
+            ),
         }

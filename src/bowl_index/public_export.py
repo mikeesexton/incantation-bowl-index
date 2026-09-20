@@ -16,7 +16,7 @@ from .projection import EDITION_SOURCE_TYPES  # noqa: F401
 EXPORT_POLICY = (
     'Reference scaffold with explicit text and media gates. Not a certification of scholarly '
     'accuracy. No capture records/files, claim payloads, notes, raw JSON, or review history. '
-    'No public dashboard is deployed. A withheld text keeps its citation, locator and link so a '
+    'No unrestricted corpus dashboard is deployed. A withheld text keeps its citation, locator and link so a '
     'reader can consult the edition; the editions table names where each object has been published.'
 )
 LICENSE_BASE = (

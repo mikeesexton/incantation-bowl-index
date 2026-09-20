@@ -25,6 +25,30 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Normalize public facets and assess release boundary
+
+**Claimed:** ACCESS-003
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 284 Python passed; 23 Node passed; local scholar preview rebuilt and
+verified at 15 tables / 6,354 public facts / 3,245 controlled facets; roadmap,
+private 28-row packet and `git diff --check` passed
+
+- Added a project-authored, source-traceable `facets` projection. The four noisy
+  browse axes now expose 11 purpose, 48 repository, 9 language and 29 origin
+  labels; names such as Halbas-Lilit remain raw facts but no longer appear as
+  ritual purposes, and ownership narratives no longer appear as origins.
+- Added conservative fact-release triage. Of 6,382 candidates, 6,354 ship and
+  28 longer non-public-domain source-wording values now fail closed. Their
+  evidence-bound review packet remains under `data/private/reviews/`, outside
+  Git; the controlled labels remain available while raw wording is withheld.
+- The projection now carries media rights statements, locators and licence URLs
+  with all ten approved media rows. Wrote the quantified public-release plan and
+  corrected the stale export-boundary and roadmap evidence.
+- No corpus, identity, text-publication, media-rights or legal decision changed.
+  The clean local preview is not promoted or deployed, avoiding overlap with
+  Claude's staging work. Next: owner review of the 28-row private packet, then a
+  spot-check of the 187 short claims and a versioned release-manifest decision.
+
 ## 2026-09-20 — Codex — Prepare independent Montgomery text-review packet
 
 **Claimed:** TEXT-006

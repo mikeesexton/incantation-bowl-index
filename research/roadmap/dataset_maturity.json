@@ -419,7 +419,7 @@
      "status": "in_progress",
      "owner": "Mixed",
      "done_when": "Every publishable bowl fact, citation, source relationship and project-authored summary can enter the reviewed public projection while private captures, protected text and unapproved images fail closed.",
-     "evidence": "A narrow public export and localhost reader already gate text and media independently. Forty-five texts have a recorded public basis and all current media fail closed. Public source-page pointers are no longer suppressed merely because the same page was archived privately; capture storage paths remain forbidden. Rights review, factual coverage and release QA remain incomplete."
+     "evidence": "The shared projection now feeds the file export, localhost reader and Cloudflare Access scholar preview through one set of fail-closed gates. It exposes 6,354 short facts, 3,245 source-traceable project-authored facets, 246 text rows and 10 media rows with current publication decisions; it withholds 28 longer source-wording values, 25 text contents and 317 media resources while retaining their controlled labels or bibliographic pointers. Fact triage identifies 6,127 factual-metadata rows, 40 prose-prone rows from sources recorded as public domain, 187 short source claims, and only 28 longer non-public-domain values in the private human wording-review queue. Private capture paths remain forbidden. docs/public_release_plan.md records the release sequence; rights review and final owner approval remain incomplete."
     },
     {
      "id": "ACCESS-004",
@@ -548,7 +548,7 @@
      "status": "done",
      "owner": "Engineering",
      "done_when": "Every content facet is an entry point with counts, and a reader can move from a value to the bowls carrying it.",
-     "evidence": "Eight browse axes in the reading room - people named, what they do, scripture quoted, hands and scribes, what is drawn, where they are, language, provenance - counted from the projection's facts table client-side, so a published static export computes them the same way and no query endpoint breaks the equivalence. Ritual purpose alone yields 35 distinct values across 43 bowls, including 'Divorce document' (4) and 'Semamit historiola' (4). Corpus-wide search covers display names, every fact value and the 45 published texts; 'lilith' returns 31 bowls."
+     "evidence": "Eight browse axes remain client-side and use the same shared projection in the local reader and static preview. Four noisy axes now browse a separate, project-authored and source-traceable facets table rather than raw source strings: what they do has 11 labels across 102 identities, where they are 48 across 1,205, language 9 across 1,032, and where they come from 29 across 304. Named demons such as Halbas-Lilit no longer appear as ritual purposes; ownership histories no longer appear as origins; Schøyen, British Museum, Hilprecht and other repository variants collapse without overwriting their raw claims. Search still includes raw values and now also includes controlled labels."
     }
    ]
   },
@@ -582,7 +582,7 @@
      "status": "done",
      "owner": "Engineering",
      "done_when": "A separate public-export path excludes unapproved media URLs/bytes and private source payloads, with regression tests. Any later public dashboard must consume that reviewed projection and receive its own release check.",
-     "evidence": "Added separate allowlist-based export-public reference scaffold: excludes captures, private payloads, claim content, notes and review histories; text public_ok and current per-media approval are separate gates. Tests cover stale approval, revocation, duplicate URLs, known private references and residual destination files. Live validation withholds all 327 media because none has a current approval. No public dashboard is deployed."
+     "evidence": "The allowlist-based shared projection excludes captures, private payloads, notes and review histories; text publication, source wording and per-media approval are independent fail-closed gates. Tests cover stale approval, revocation, duplicate URLs, known private references and residual destination files. Ten public-domain/open-license media now have current owner approvals and emit their attribution, rights statement, rights locator and licence URL; the remaining 317 emit no row or URL. The only corpus dashboard on bowlam.com is the individually gated scholar preview, and ungated Pages aliases return 404."
     },
     {
      "id": "RIGHTS-004",

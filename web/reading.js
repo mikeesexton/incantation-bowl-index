@@ -16,7 +16,7 @@
   const SUFFIX = String(window.READER_SUFFIX || "");
   const STANDALONE = Boolean(window.READER_STANDALONE);
   const source = name => `${READER}/${name}${SUFFIX}`;
-  const TABLES = ["identity_clusters", "objects", "identifiers", "facts", "texts", "editions", "sources", "media",
+  const TABLES = ["identity_clusters", "objects", "identifiers", "facts", "facets", "texts", "editions", "sources", "media",
     "works", "contributors", "scholarship_decades", "publications"];
   const data = {loaded: false};
   const esc = value => String(value === null || value === undefined ? "" : value)
@@ -46,6 +46,7 @@
       return index;
     };
     data.factsBy = bucket("facts");
+    data.facetsBy = bucket("facets");
     data.identifiersBy = bucket("identifiers");
     data.textsBy = bucket("texts");
     data.editionsBy = bucket("editions");
@@ -55,9 +56,10 @@
     data.clusterById = Object.fromEntries(data.identity_clusters.map(c => [c.identity_id, c]));
     data.identity_clusters.forEach(c => {
       const facts = data.factsBy[c.identity_id] || [];
+      const facets = data.facetsBy[c.identity_id] || [];
       const text = (data.textsBy[c.identity_id] || []).find(x => x.content_status === "included");
       c.haystack = [c.display_name, ...(data.identifiersBy[c.identity_id] || []).flatMap(i => [i.scheme, i.value]),
-        ...facts.map(f => f.value), text ? text.content : ""]
+        ...facts.map(f => f.value), ...facets.map(f => f.facet_label), text ? text.content : ""]
         .join(" ").toLowerCase();
     });
     data.loaded = true;
@@ -197,7 +199,8 @@
       </div></a></article>`;
   }
 
-  /* Ways in: every content facet, counted, from the facts already loaded. */
+  /* Ways in. Four noisy source vocabularies use project-authored controlled
+     labels; the remaining groups are already concise enough to browse raw. */
   const BROWSE = [
     ["client", "People named"], ["ritual", "What they do"],
     ["biblical_intertexts", "Scripture quoted"], ["practitioner", "Hands and scribes"],
@@ -222,9 +225,14 @@
   const hasPresent = (id, facet) =>
     (PRESENT[facet] || (identity => factsOf(identity, facet).length > 0))(id);
 
+  const CONTROLLED_FACETS = new Set(["ritual", "location", "language", "provenance"]);
+
   function facetCounts(group) {
     const tally = {};
-    data.facts.filter(f => f.field_group === group).forEach(f => {
+    const rows = CONTROLLED_FACETS.has(group)
+      ? data.facets.filter(f => f.facet_group === group).map(f => ({...f, value: f.facet_label}))
+      : data.facts.filter(f => f.field_group === group);
+    rows.forEach(f => {
       const owner = data.clusterById[ownerOf(f.object_id)];
       if (!owner) return;
       f.value.replace(/^\[|\]$/g, "").split(/"\s*,\s*"|;\s*/).forEach(raw => {

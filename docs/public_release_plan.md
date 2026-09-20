@@ -1,0 +1,143 @@
+# Public release preparation
+
+Status: working plan at corpus state `abf8105be933`, 20 September 2026. This is
+release engineering and conservative rights triage, not legal advice or a
+substitute for an item-specific decision by the project owner.
+
+## The governing distinction
+
+Cloudflare Access controls who can reach a copy; it does not create permission
+to make or distribute that copy. The staged scholar preview must therefore use
+the same fail-closed projection as an open release. Protected scans, OCR,
+transcriptions, translations, photographs and source prose stay in the private
+vault unless a recorded basis covers the actual use.
+
+United States Copyright Office guidance distinguishes facts from their
+expression: facts and individual short phrases are not protected, while the way
+facts are expressed and a sufficiently original database selection or
+arrangement may be. See the [Copyright Office FAQ](https://copyright.gov/help/faq/faq-protect.html),
+[37 C.F.R. § 202.1](https://www.copyright.gov/title37/202/37cfr202-1.html), and
+the Office's [automated-database guidance](https://www.copyright.gov/register/tx-databases.html).
+The practical rule for Bowlam is therefore:
+
+1. Preserve each source's wording, citation and locator in the research record.
+2. Browse through concise project-authored labels instead of reproducing a
+   source's descriptive sentence as the taxonomy.
+3. Treat terse factual metadata separately from sentence-like source wording.
+4. Never infer permission for a text or image from permission to publish facts.
+
+The new `facets` projection implements the second rule. It does not overwrite
+claims. Each controlled label retains the object, source field, source and
+locator from which it was derived.
+
+## Current release inventory
+
+The shared projection currently contains:
+
+| Material | Rows | Operational status |
+|---|---:|---|
+| Working physical identities | 1,652 | Public-reference structure |
+| Sources and citations | 862 | Public-reference structure |
+| Object/source appearances | 2,268 | Public-reference structure |
+| Identifiers | 4,741 | Factual metadata |
+| Short fact candidates | 6,382 | 6,354 included; 28 longer non-public-domain values withheld for priority wording review |
+| Project-authored controlled facets | 3,245 | Public candidate, with claim-level traceability |
+| Text rows | 271 | 246 included by recorded decision; 25 withheld with citation and locator |
+| Media resources known | 327 | 10 included by recorded decision; 317 withheld |
+| Private captures | 55 | Never staged; storage paths are forbidden by the projection guard |
+
+The 246 included text rows comprise 35 public-domain translations, 77
+project-authored summaries, and 134 open-license summary rows. The last group is
+CC BY-NC 4.0 and must retain its attribution, licence link and noncommercial
+limit; it cannot silently become CC BY 4.0 or enter a commercial surface. The
+[CC BY-NC 4.0 terms](https://creativecommons.org/licenses/by-nc/4.0/) also forbid
+adding legal or technological restrictions that prevent recipients from doing
+what that licence allows. This means the Access gate may protect the preview as
+a whole, but it must not be presented as changing the licence of those rows.
+
+## Controlled browse vocabulary
+
+The first normalization pass changes the visitor-facing cardinality without
+discarding evidence:
+
+| Bowlam facet | Raw distinct values | Controlled labels | Key correction |
+|---|---:|---:|---|
+| What they do | 78 | 11 | Excludes named demons, named angels, installation instructions and non-functional traditions |
+| Where they are | 78 | 48 | Collapses articles, accessions and institutional spelling variants |
+| Language | 52 | 9 | Collapses punctuation, catalogue codes, historical prose and OCR debris; preserves multi-language claims |
+| Where they come from | 101 | 29 | Uses geographic claims only; excludes owners, donors, dealers and acquisition narratives |
+
+Examples: `Schøyen Collection` and `The Schøyen Collection` now browse together;
+`Halbas-Lilit` remains a cited `named_demon` fact but is no longer a ritual
+purpose; a private-collection acquisition narrative remains provenance history
+but is no longer treated as a place of origin.
+
+These categories are deliberately broad. They are navigation, not adjudication:
+a bowl can appear in more than one language or purpose label when its sources
+are composite or disagree. The raw object page remains the place to see that
+uncertainty.
+
+## Release classes and decisions
+
+### Ready for staging under current project policy
+
+- Identity, source, citation, identifier and appearance structure.
+- Facts marked `factual_metadata`, subject to a final privacy and accuracy scan.
+- Controlled `facets`, because their wording and selection are project-authored
+  and every row is traceable.
+- The 246 text rows and 10 media rows that already have current, evidence-bound
+  publication decisions, on their individual terms.
+
+### Keep local for review, not presumed cleared for an open launch
+
+The triage deliberately does not turn a copyright principle into an automated
+legal decision. Forty rows in prose-prone fields come from sources already
+recorded as public domain. Another 187 are at most 80 characters and are marked
+`short_source_claim`; they are strong candidates for direct publication or
+replacement by a controlled label, but retain their source attribution. Only 28
+longer rows from non-public-domain sources are marked `review_source_wording`.
+Those 28 are the first human review packet, generated by
+`scripts/build_public_fact_review.py` under
+`data/private/reviews/public_fact_wording_review_2026-09-20.json`. The packet
+itself repeats the wording under review and therefore stays out of Git. Until
+reviewed, the shared projection omits the raw value while still exposing the
+controlled facet and the ordinary source/citation structure.
+
+### Withhold until a new decision exists
+
+- All 25 text rows whose content is currently withheld.
+- All 317 media resources without an approved reuse decision.
+- Every source scan, local capture, OCR product, rich-text package, research
+  note and filesystem path from the private vault.
+- Any commercial use of the 134 CC BY-NC rows unless the rights holder supplies
+  broader permission.
+
+## Next release sequence
+
+1. Rebuild the gated preview from the shared projection and verify all fifteen
+   projected tables, including `facets`; do not introduce a second export path.
+2. Review the 28 priority wording rows in source cohorts. Then spot-check the
+   187 short claims. Replace copied descriptive phrasing with a project-authored
+   summary where useful, retain the original in the private evidence layer, and
+   record who made the determination.
+3. Run a privacy scan for living-person contact details, private notes and local
+   paths even though the projection already excludes those fields.
+4. Split the downloadable licence notice by material: Bowlam-authored database
+   elements, public-domain material, CC BY-NC rows, and item-specific media
+   terms must not be described by one blanket licence.
+5. Have the project owner approve a versioned release manifest. Counsel review
+   is advisable before an unrestricted or commercial launch; engineering gates
+   cannot make that legal judgment.
+6. Publish first as a factual reference. Add protected editions or images later
+   only through evidence-bound decisions or executed licences.
+
+## Acceptance checks
+
+- A visitor cannot retrieve any private capture path or unapproved text/media.
+- Every controlled facet row resolves to at least one cited source claim.
+- Removing the raw facts table still leaves a coherent public browse surface.
+- Every included text and media row states its rights basis and applicable
+  licence or permission locator.
+- The Pages host lock still returns 404 on every ungated `*.pages.dev` alias.
+- The owner signs the release manifest; an agent never converts “likely factual”
+  into a copyright approval.

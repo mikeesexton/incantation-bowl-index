@@ -16,6 +16,12 @@ class ProjectionTests(unittest.TestCase):
             'access_status':'paywalled'},
             'appearance':{'locator':'no. 042A','confidence':1},
             'media':[{'url':'https://example.org/bowl.jpg','rights_status':'copyrighted'}],
+            'claims':[{'field':'current_location','value_text':'The Schøyen Collection'},
+                      {'field':'text_purpose','value_text':'Protection from illness'},
+                      {'field':'text_feature','value_text':
+                       'The editor presents a long interpretive description whose wording should be reviewed before open release.'},
+                      {'field':'named_demon','value_text':'Halbas-Lilit'},
+                      {'field':'findspot','value_text':'Nippur, Iraq'}],
             'texts':[{'text_type':'translation','content':'WITHHELD TRANSLATION',
                       'public_ok':False,'locator':'text 42, p. 88'}]})
         self.conn.commit()
@@ -79,6 +85,25 @@ class ProjectionTests(unittest.TestCase):
                 self.assertEqual(set(row), set(PROJECTION_COLUMNS[name]),
                                  '%s row does not match its declared columns' % name)
 
+    def test_controlled_facets_are_traceable_and_do_not_publish_a_demon_as_a_purpose(self):
+        rows=self.rows('facets')
+        labels={(row['facet_group'],row['facet_label']) for row in rows}
+        self.assertIn(('location','Schøyen Collection'),labels)
+        self.assertIn(('ritual','Protection'),labels)
+        self.assertIn(('ritual','Healing'),labels)
+        self.assertIn(('provenance','Nippur'),labels)
+        self.assertNotIn(('ritual','Halbas-Lilit'),labels)
+        self.assertTrue(all(row['source_id'] and row['locator'] for row in rows))
+
+    def test_fact_release_class_is_conservative_triage_not_silent_withholding(self):
+        rows={row['field']:row for row in self.rows('facts')}
+        self.assertEqual(rows['current_location']['release_class'],'factual_metadata')
+        self.assertEqual(rows['text_purpose']['release_class'],'short_source_claim')
+        self.assertEqual(rows['text_purpose']['value'],'Protection from illness')
+        self.assertNotIn('text_feature',rows)
+        candidates={row['field']:row for row in Projection(self.conn)._fact_candidates()}
+        self.assertEqual(candidates['text_feature']['release_class'],'review_source_wording')
+
     def test_the_api_projection_and_the_file_export_are_identical(self):
         """The publish-safety guarantee: one gating implementation, not two.
 
@@ -100,6 +125,7 @@ class ProjectionTests(unittest.TestCase):
         self.assertEqual(manifest['texts_withheld_rows'],1)
         self.assertEqual(manifest['media_approved_rows'],0)
         self.assertEqual(manifest['media_withheld_rows'],1)
+        self.assertEqual(manifest['facts_withheld_wording_rows'],1)
         self.assertEqual(manifest['license'],'CC-BY-4.0')
 
 if __name__=='__main__':

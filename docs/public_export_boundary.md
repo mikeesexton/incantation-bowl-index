@@ -5,7 +5,7 @@ This document enumerates what it withholds and why, so the boundary can be read
 without running the exporter and diffing its output against the database.
 
 Counts below are from the export run on 20 September 2026 against corpus digest
-`f03b960f967db427499c7c37ba8e9e06ea7dfbe5b4a5e985e6c4255a39de5297`
+`abf8105be9339a684fdcb94fa7b80c9168043121deb5c0a277ac2b27d0baf5c4`
 (1,969 candidate objects, 1,652 identities after resolved dedupe). Regenerate with:
 
 ```sh
@@ -23,25 +23,11 @@ means recording a decision with `ibi ingest-text-publication` or
 `ibi ingest-rights-review` against a manifest under `research/reviews/` — see
 [`project-rules.md`](project-rules.md) §1 and [`licensing.md`](licensing.md).
 
-> **Two decisions are recorded but not yet applied.** The counts in this document
-> describe the boundary as it stands today. Two owner decisions of 20 September
-> 2026 sit in manifests waiting to be ingested, and both loosen it:
->
-> | Decision | Manifest | Effect on ingest |
-> |---|---|---|
-> | The 134 Waller rows are equally publishable | `research/reviews/waller_2022_text_publication_2026-09-20.json` | Texts published 112 → 246, withheld 159 → 25 |
-> | A recorded `public_domain`/`open_license` label is the rights decision | `research/reviews/media_rights_permissive_candidates_2026-09-20.json` | Media approved 0 → 10, withheld 327 → 317 |
->
-> Together they lift 122 bowls' `reading_score`, taking the reading room's default
-> pool from 70 bowls to 191. Regenerate the counts below once both are applied.
-
----
-
 ## Tier 1 — Tables never exported
 
 27 of the database's 34 tables have no public representation at all. This is the
 research apparatus: how records were found, compared, argued over, and decided.
-(Seven of the fourteen exported names are derived views rather than stored tables,
+(Eight of the fifteen exported names are derived views rather than stored tables,
 which is why the two figures do not sum to 34.)
 
 | Table | Rows | What it holds |
@@ -71,22 +57,23 @@ which is why the two figures do not sum to 34.)
 held in the private vault. Private possession does not authorize distribution,
 and the export never names a capture or its storage path.
 
-## Tier 2 — Media: all 327 withheld
+## Tier 2 — Media: 317 of 327 withheld
 
-`media.jsonl` is empty and `media.csv` is a bare header. **Not even the URLs
-survive.**
+Ten reviewed resources survive with their URL, attribution, rights statement,
+rights locator and licence URL. The other 317 do not emit a row; **not even their
+URLs survive.**
 
-| `rights_status` | Rows |
-|---|---|
-| `unknown` | 288 |
-| `copyrighted` | 29 |
-| `public_domain` | 5 |
-| `open_license` | 5 |
+| `rights_status` | Included | Withheld |
+|---|---:|---:|
+| `unknown` | 0 | 288 |
+| `copyrighted` | 0 | 29 |
+| `public_domain` | 5 | 0 |
+| `open_license` | 5 | 0 |
 
-Zero have a *completed* rights assessment, so the gate fails closed on all 327 —
-including the ten whose status looks permissive. A status is not a decision.
+The ten permissive rows have current evidence-bound owner decisions. A status by
+itself is still not a decision, and every unknown or copyrighted row fails closed.
 
-## Tier 3 — Texts: 159 of 271 blanked
+## Tier 3 — Texts: 25 of 271 blanked
 
 Only `content` is nulled. A withheld row keeps `editor`, `language`, `script`,
 `text_type`, `locator`, `access_citation`, `access_locator`, `access_url` and
@@ -94,25 +81,27 @@ Only `content` is nulled. A withheld row keeps `editor`, `language`, `script`,
 
 | `text_type` | Released | Withheld |
 |---|---|---|
-| summary | 77 | 139 |
+| summary | 211 | 5 |
 | translation | **35** | 19 |
 | transliteration | 0 | 1 |
 
 Genre is not the gate — rights are. All 35 released translations are Montgomery
-1913, whose US copyright has expired. The largest withheld block is 134 rows
-from Waller 2022, which is CC BY-NC 4.0 and therefore cannot be relicensed under
-this repository's CC BY 4.0.
+1913, whose US copyright has expired. The 134 Waller 2022 summary rows are
+released under CC BY-NC 4.0 and carry that narrower licence on each row; they
+cannot be relicensed under this repository's CC BY 4.0.
 
-Released rows by editor: Incantation Bowl Index card line (68), James A.
-Montgomery (35), Incantation Bowl Index summary (7), two discovery-campaign
-summaries. Withheld by editor: Waller (134), Wohlstein (5), Schøyen Collection
-specialist (4), Index summary (3), Isbell (2), and six others.
+Released rows by editor: Daniel James Waller (134), Incantation Bowl Index card
+line (68), James A. Montgomery (35), Incantation Bowl Index summary (7), and two
+discovery-campaign summaries. The largest withheld editor groups are Wohlstein
+(5), Schøyen Collection specialist (4), Index summary (3), and Isbell (2).
 
-## Tier 4 — 836 claims dropped from `facts`
+## Tier 4 — 864 claims omitted from public `facts`
 
-7,218 claims become 6,382 facts. A claim is publishable as a fact when its field
-sits in a comparison group; 37 field types sit outside one. The reasons are
-recorded per field in `EXCLUDED_CLAIM_FIELDS` in
+7,218 claims first become 6,382 short fact candidates. Of those, 6,354 are
+emitted and 28 longer non-public-domain source-wording values fail closed. The
+other 836 claims never become candidates because their fields sit outside the
+comparison model; 37 field types are excluded. The reasons are recorded per
+field in `EXCLUDED_CLAIM_FIELDS` in
 [`identity.py`](../src/bowl_index/identity.py).
 
 **Third-party expression** — someone else's prose, not ours to pass on:
@@ -154,13 +143,22 @@ comparable field value.
 claim is the source's expression, and a note is working commentary written for
 review rather than for readers.
 
+The emitted facts carry `release_class`. This is conservative triage, not an
+automated copyright decision: 6,127 are ordinary factual metadata, 40
+prose-prone rows come from public-domain sources, and 187 are short source
+claims. The 28 longer non-public-domain candidates are the private priority
+wording-review queue and do not emit a fact row.
+The derived `facets` table supplies 3,245 project-authored browse labels with the
+source field, source and locator retained; it never replaces the raw claim.
+
 ---
 
 ## What does survive
 
-The export is 7.4 MB across 14 tables: 1,969 objects, 6,382 facts, 2,268
-appearances and links, 4,741 identifiers, 1,063 editions, 862 sources, 271 text
-rows (112 with content), 206 works, 114 contributors, 33 publications. It
+The export spans 15 tables: 1,969 objects, 6,354 facts, 3,245 controlled facets,
+2,268 appearances and links, 4,741 identifiers, 1,063 editions, 862 sources, 271 text
+rows (246 with content), 10 approved media rows, 206 works, 114 contributors,
+and 33 publications. It
 carries its own `manifest.json` with the attribution string, the CC BY 4.0 grant
 and its scope, and the included/withheld counts.
 
@@ -176,3 +174,7 @@ withheld row: they state the terms content is published under, and a row with no
 content has none. `license_scope` in the manifest is derived from that ledger
 rather than written by hand, so it cannot drift from what the export actually
 contains.
+
+Each published media row similarly carries its attribution, rights statement,
+rights locator and licence URL from the current media review. Those fields are
+absent along with the whole row when no current approval exists.
