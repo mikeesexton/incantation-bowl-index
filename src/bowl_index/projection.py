@@ -32,9 +32,13 @@ PROJECTION_COLUMNS = {
     "appearances": ("id", "source_id", "locator"),
     # Free-text review rationales are private; keep the relation structure only.
     "appearance_object_links": ("appearance_id", "object_id", "relation_type", "confidence"),
+    # `rights_basis` and `license_url` describe the terms the content is published
+    # under, so they are populated only where there is content. A source licence
+    # narrower than this repository's CC BY 4.0 travels with its rows, and without
+    # these two columns a consumer could not tell which rows those are.
     "texts": ("id", "object_id", "source_id", "text_type", "language", "script", "editor",
-              "locator", "rights_status", "content_status", "content", "access_citation",
-              "access_locator", "access_url", "access_status"),
+              "locator", "rights_status", "content_status", "content", "rights_basis",
+              "license_url", "access_citation", "access_locator", "access_url", "access_status"),
     "editions": ("object_id", "source_id", "source_type", "citation", "locator",
                  "access_url", "access_status"),
     "media": ("id", "object_id", "appearance_id", "source_id", "media_type", "url", "attribution"),
@@ -84,8 +88,11 @@ class Projection:
             r["storage_path"] for r in conn.execute("SELECT storage_path FROM captures")
         }
         self.forbidden = blocked | self.private_storage
+        # A dict, not a set: an approved row has to publish the terms it was
+        # approved under. `in` and `len` behave the same, so the gates above and
+        # the counts below are unchanged.
         self.approved_texts = {
-            key for key, review in current_text_reviews(conn).items()
+            key: review for key, review in current_text_reviews(conn).items()
             if review["publication_decision"] == "approved"
         }
 
@@ -177,7 +184,8 @@ class Projection:
             "FROM texts t JOIN sources s ON s.id=t.source_id ORDER BY t.id"
         ):
             row = dict(row)
-            included = row["id"] in self.approved_texts
+            review = self.approved_texts.get(row["id"])
+            included = review is not None
             rows.append({
                 "id": row["id"], "object_id": row["object_id"], "source_id": row["source_id"],
                 "text_type": row["text_type"], "language": row["language"],
@@ -185,6 +193,8 @@ class Projection:
                 "rights_status": row["rights_status"],
                 "content_status": "included" if included else "withheld_consult_the_edition",
                 "content": row["content"] if included else None,
+                "rights_basis": review["rights_basis"] if included else None,
+                "license_url": review["license_url"] if included else None,
                 "access_citation": row["source_citation"],
                 "access_locator": row["locator"],
                 "access_url": self.access_link(row["source_doi"], row["source_url"]),

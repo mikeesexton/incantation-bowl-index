@@ -15,7 +15,7 @@
     <script src="/app.js" defer></script>
   </head>
   <body class="is-home">
-    <a class="skip-link" href="#/search">Skip to records</a>
+    <a class="skip-link" href="#/explore">Skip to the bowls</a>
     <div class="app-shell">
       <header class="topbar">
         <a class="wordmark" href="#/home" aria-label="Bowlam home">
@@ -221,9 +221,9 @@
                 </div>
                 <div class="intro-coverage-steps">
                   <article class="intro-coverage-step" data-step="all"><span class="intro-kicker">The collection</span><h3>Meet the collection.</h3><p>The index brings together <span id="intro-identity-count">—</span> bowls from <span id="intro-record-count">—</span> records. Explore their inscriptions, where they have been, and where to learn more.</p><p>The collection grows as research continues.</p></article>
-                  <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number" data-count="text_edition">—</p><p>Find the books and articles that read and translate these bowls.</p><a href="#/search?present=text_edition">Explore bowls with text references <span aria-hidden="true">↗</span></a></article>
-                  <article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number" data-count="provenance">—</p><p>Trace accounts of where bowls were found and the collections they passed through.</p><a href="#/search?present=provenance">Explore bowls with provenance information <span aria-hidden="true">↗</span></a></article>
-                  <article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number" data-count="image">—</p><p>Find photographs and drawings in publications and collections.</p><a href="#/search?present=image">Explore bowls with image references <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="text_edition"><span class="intro-kicker">Reading the words</span><h3>Read their words.</h3><p class="intro-coverage-number" data-count="text_edition">—</p><p>Find the books and articles that read and translate these bowls.</p><a href="#/explore?present=text_edition">Explore bowls with text references <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="provenance"><span class="intro-kicker">Tracing a journey</span><h3>Follow their journeys.</h3><p class="intro-coverage-number" data-count="provenance">—</p><p>Trace accounts of where bowls were found and the collections they passed through.</p><a href="#/explore?present=provenance">Explore bowls with provenance information <span aria-hidden="true">↗</span></a></article>
+                  <article class="intro-coverage-step" data-step="image"><span class="intro-kicker">Seeing the object</span><h3>Look closer.</h3><p class="intro-coverage-number" data-count="image">—</p><p>Find photographs and drawings in publications and collections.</p><!-- No link: all 327 media rows are withheld pending a rights decision, so this filter returns nothing. Restore it once `ibi ingest-rights-review` approves a row. --></article>
                 </div>
               </div>
               <p class="intro-coverage-note">Each circle is a bowl. Highlight those with text, history, or image references; some have all three.</p>
@@ -232,8 +232,8 @@
             <section class="intro-chapter intro-finale" aria-labelledby="finale-title">
               <h2 id="finale-title">Every bowl has a story.<br><em>Find one that draws you in.</em></h2>
 
-              <a class="intro-button" href="#/search">Browse all bowls <span aria-hidden="true">↗</span></a>
-              <div class="intro-shortcuts"><a href="#/search?present=text_edition">With text references ↗</a><a href="#/search?present=provenance">With provenance information ↗</a><a href="#/search?present=image">With image references ↗</a></div>
+              <a class="intro-button" href="#/explore">Browse all bowls <span aria-hidden="true">↗</span></a>
+              <div class="intro-shortcuts"><a href="#/explore?present=text_edition">With text references ↗</a><a href="#/explore?present=provenance">With provenance information ↗</a></div>
               <footer class="intro-footer"><span>Bowlam · The Incantation Bowl Index</span><span id="intro-snapshot-note">Local collection · introductory copy in development</span><a href="#/home" data-intro-scroll="home-title">Back to the beginning ↑</a></footer>
             </section>
           </div>

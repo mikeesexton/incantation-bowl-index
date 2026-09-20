@@ -25,6 +25,41 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Claude — Publish the landing page; apply the two release decisions
+
+**Claimed:** ACCESS-008
+**Corpus:** changed (134 text-publication approvals, 10 media-rights approvals; no claim,
+identity or merge changed) — state digest `abf8105be933`
+**Tests:** 266 Python passed, 21 Node passed; both manifests dry-run on a copied DB before
+application, and the rebuilt page checked against the ACCESS-008 guard
+
+- **Deployed bowlam.com** from the Pages project at snapshot digest 6075922202342008 and
+  verified the live apex serves it, not just the preview URL. ACCESS-008 marked done.
+- Applied Mike's two release decisions, both prepared as manifests under `research/reviews/`
+  and approved by him rather than by an agent. The 134 Waller rows are verse-citation lists
+  (`Biblical quotations: Zech. 3.2`) whose content already shipped as `biblical_intertexts`
+  facts from the same source and locator, so the boundary was publishing the fact while
+  withholding the row that stated it. Published texts 112 → 246, withheld 159 → 25. A
+  recorded `public_domain`/`open_license` media label is now treated as the rights decision:
+  10 of 327 approved, 317 still withheld.
+- Waller 2022 is CC BY-NC 4.0 and is **not** relicensed under this repository's CC BY 4.0.
+  Added `rights_basis` and `license_url` to the texts projection so a narrower-licensed row
+  is identifiable, made the export manifest's `license_scope` derive from the ledger instead
+  of a hardcoded string that would have gone stale silently, and made the reading room print
+  the governing licence beside the text it displays.
+- Wrote `docs/public_export_boundary.md`, enumerating every tier the export withholds.
+  Correcting my own first draft: it said "19 of 33 tables", which counted table rows rather
+  than tables; it is 27 of 34.
+- Reading room: every homepage button now points at `#/explore` rather than `#/search`, and
+  the reading room learned `?present=` so those links keep their filters. Hid the two
+  image-reference links at Mike's request — all 327 media were withheld, so they led nowhere.
+  Fixed a stale `test_home_unit.cjs` assertion that was already failing at HEAD.
+- Committed Codex's finished-but-uncommitted QA-003 close first so they can resume cleanly.
+- **Next:** ACCESS-009. The data side is now unblocked; what remains is the gated artefact
+  (a reviewed `export-public` build served as static reader JSON) and the Access policy.
+  Note `tests/test_public_site.py` forbids `/api/reader` and `#/explore` on the ACCESS-008
+  page, so the preview belongs on its own surface rather than on the landing page.
+
 ## 2026-09-20 — Codex — Reproducible stratified accuracy audit
 
 **Claimed:** QA-003

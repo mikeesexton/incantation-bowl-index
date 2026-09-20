@@ -61,22 +61,37 @@ Daniel James Waller's *The Bible in the Bowls* (Open Book Publishers, 2022) is
 **CC BY-NC 4.0**: it forbids commercial use, so its content cannot be relicensed
 here under CC BY 4.0, which permits it.
 
-Accordingly the 134 text rows derived from that catalogue are **withheld** in
-`data/public/`. They keep their citation, locator, and DOI so a reader can consult
-the open-access original, and nothing of Waller's is republished. If you build on
-those rows, Waller's terms govern, not this repository's.
+The 134 text rows derived from that catalogue are **published**, on the
+`open_license` basis, by the project owner's decision of 20 September 2026. Their
+whole content is a verse-citation list of the form `Biblical quotations: Zech. 3.2`
+— what [`project-rules.md`](project-rules.md) calls a fact rather than the editor's
+expression — and the identical information, from the same source at the same
+locator, already exported as a `biblical_intertexts` fact. Publishing the fact while
+withholding the text row stating it was incoherent, and the decision resolves it
+toward publication.
 
-The same reasoning applies to every text row whose `content_status` is
-`withheld_consult_the_edition`: the pointer is ours to give, the text is not.
+**Waller's terms travel with those rows.** They are not relicensed under this
+repository's CC BY 4.0. Each carries `rights_basis` = `open_license` and
+`license_url` = the CC BY-NC 4.0 deed, so a consumer can tell them apart, and the
+export manifest's `license_scope` names them and their count. If you build on those
+rows, Waller's terms govern — including the non-commercial condition — not this
+repository's.
+
+The narrower-licence reasoning still applies to every text row whose
+`content_status` is `withheld_consult_the_edition`: the pointer is ours to give,
+the text is not.
 
 ### Third-party material recorded but not licensed here
 
 - Bibliographic metadata — titles, authors, dates, DOIs, citations — is factual.
 - Museum catalogue prose is **not** in this repository. Full-corpus research
   snapshots under `data/exports/` are deliberately untracked for that reason.
-- Media are URLs only. Zero of 327 have a completed rights assessment and none is
-  approved for reuse, so nothing here licenses an image. Follow the URL and
-  observe the holding institution's terms.
+- Media are URLs only, and nothing here licenses an image. Ten of 327 carry a
+  rights decision and an attribution, taken on the project owner's standing policy
+  of 20 September 2026 that a recorded `public_domain` or `open_license` label is
+  the decision. That basis is the recorded label, not a per-resource licence
+  instrument inspected for each image, and the ledger says so. The other 317 are
+  withheld. Either way, follow the URL and observe the holding institution's terms.
 - The July 2026 scoping review in `research/literature/` is this project's own
   work and is covered by CC BY 4.0. The works it discusses are not.
 
@@ -84,9 +99,12 @@ The same reasoning applies to every text row whose `content_status` is
 
 When you add a text row, record its rights basis in the publication ledger before
 it can become public — `ibi ingest-text-publication`, never `texts.public_ok` by
-hand. When a source's licence is narrower than CC BY 4.0, withhold the content and
-publish the pointer. See [`project-rules.md`](project-rules.md) → *Publishing text:
-what belongs to whom*.
+hand. When a source's licence is narrower than CC BY 4.0, the decision is the owner's:
+withhold the content and publish the pointer, or publish on the `open_license` basis
+with the source's `license_url` recorded so its terms travel with the row. Do not make
+that call yourself. See [`project-rules.md`](project-rules.md) → *Publishing text:
+what belongs to whom*, and [`public_export_boundary.md`](public_export_boundary.md)
+for what the export withholds.
 
 None of this is legal advice.
 

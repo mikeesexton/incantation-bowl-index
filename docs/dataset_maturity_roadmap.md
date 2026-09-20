@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-20T04:27:59+00:00`
+Generated: `2026-09-20T04:42:07+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 26 done · 19 in progress · 19 queued · 0 blocked |
+| Roadmap tasks | 27 done · 19 in progress · 18 queued · 0 blocked |
 | Quantitative handoff gates passing | 3/5 |
 | Required handoff tasks complete | 10/24 |
 
@@ -34,7 +34,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - Publication links remain incomplete: 739 of 1,652 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.
 - The first stratified identity-and-extraction audit is complete, but it is a 60-identity baseline rather than corpus-wide certification: unequal weighting reduces its effective sample size to 47.5, one BM068A claim check is indeterminate, the review was not independent, and findspot claims are not yet consistently graded by evidence basis.
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just one identity has a recorded transcription or transliteration and only 53 identities have a translation. Four Wohlstein translations are now scan-checked and a fifth has a checked German reading with embedded Hebrew strings still awaiting specialist review; all five remain withheld pending human publication review. Protected editions are intentionally indexed without copying their text.
-- Release rights are unreviewed: all 327 media rows now have current fail-closed ledger holds, but zero have completed rights decisions and zero are approved for reuse. The first two-row institutional-policy evidence pilot narrowed contact paths without establishing permission.
+- Release rights are only partly reviewed: all 327 media rows carry current ledger holds and 10 now have completed rights decisions and are approved for reuse, on the owner's standing policy of 20 September 2026 that a recorded public_domain or open_license label is the decision. The remaining 317 are withheld, 288 of them with an unknown status, and the institutional-policy evidence pilot narrowed contact paths without establishing permission.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
 - Acquisition completeness is not yet measured corpus-wide: 52 of 862 sources have linked captures, 41 with PDFs and eleven with only non-PDF captures. All 52 captured sources are now assessed through 53 append-only holding rows: 49 sources have a complete document, Naveh-Shaked 1993 and Juusola 1999 are correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Burberry 2020 is now a complete, hash-bound University of Exeter repository holding with all twenty-five ACB units extracted. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.
 - Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run.
@@ -98,7 +98,7 @@ Current evidence: **206 scholarship works indexed; 40 with a source-linked held 
 | Identities with a transcription/transliteration | 1 |
 | Media records with a non-unknown rights status | 39/327 (11.9%) |
 | Media with a current ledger entry | 327/327 |
-| Media with completed rights decisions / approved for reuse | 0 / 0 |
+| Media with completed rights decisions / approved for reuse | 10 / 10 |
 | Blocked leads | 31 |
 | Open or active leads | 16 |
 | Qualifying discovery-saturation sweeps | 2 |
@@ -379,12 +379,12 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
 - [ ] **ACCESS-007 — Launch paid access only behind contractual and technical gates** · Queued · Research owner, engineering and qualified rights counsel
   - Done when: A paid service has counsel-reviewed terms, executed licenses for every protected item, entitlement controls, export limits, audit logs, royalty accounting, takedown procedures, security review and a clean separation from the private vault.
   - Evidence/status: Not started. A subscription is an allowed business model; missing rights are the blocker, not the billing mechanism.
-- [ ] **ACCESS-008 — Publish the bowlam.com public landing page** · Queued · Research owner
+- [x] **ACCESS-008 — Publish the bowlam.com public landing page** · Done · Research owner
   - Done when: bowlam.com serves a project-authored overview of the index — what it covers, how bowls are counted, what is deliberately withheld and why — plus an interest-capture field, with no third-party text or images and no path from the page to the corpus.
-  - Evidence/status: Not started. This layer needs no rights decision: the page describes the project in the project's own words. It is deliberately separate from ACCESS-009, which exposes data and therefore does need one.
+  - Evidence/status: Done 20 September 2026. bowlam.com serves the generated landing page from Cloudflare Pages project `bowlam` at snapshot digest 6075922202342008: project-authored overview, the counting method, the withheld-by-design chapter, and the /api/interest field. tests/test_public_site.py holds the boundary — no corpus endpoint, no console route, no identity identifier, aggregates only.
 - [ ] **ACCESS-009 — Gate a factual scholar preview behind Cloudflare Access** · Queued · Research owner and engineering
   - Done when: Named scholars reach a factual view of the corpus at bowlam.com through per-person authentication; the deployed artefact is a reviewed `ibi export-public` build rather than the working database; no protected transcription, translation or image is behind the gate; and access is individually revocable and logged.
-  - Evidence/status: Cloudflare Access is provisioned on the free tier (50 users, one-time email PIN), so the authentication layer costs nothing and gives per-person revocation rather than a shared password. Three constraints are already settled and should not be relitigated at build time. The research console is not the deliverable: it binds to localhost, refuses non-local addresses, and authenticates with a single local token, so it must never be exposed. The gate is the export, not the password: a shared or per-person credential does not make distribution private, so what sits behind it must already be publishable on its own terms. And the corpus file is not shareable even privately, because it carries 136 CC BY-NC rows and 15 copyrighted text rows that `export-public` withholds by design.
+  - Evidence/status: Cloudflare Access is provisioned on the free tier (50 users, one-time email PIN), so the authentication layer costs nothing and gives per-person revocation rather than a shared password. Three constraints are already settled and should not be relitigated at build time. The research console is not the deliverable: it binds to localhost, refuses non-local addresses, and authenticates with a single local token, so it must never be exposed. The gate is the export, not the password: a shared or per-person credential does not make distribution private, so what sits behind it must already be publishable on its own terms. And the corpus file is not shareable even privately, because it carries 136 CC BY-NC rows and 15 copyrighted text rows that `export-public` withholds by design. Unblocked on the data side as of 20 September 2026: the reviewed export now carries 246 published text rows and 10 approved media, each published row naming its own rights_basis and license_url so a CC BY-NC row is identifiable. The remaining work is the gated artefact and the Access policy, not a rights decision.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -499,7 +499,7 @@ Overall gate: **NOT READY**
 - [x] Every generated claim-difference flag has a recorded triage — current `0`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage. Measured 2026-09-19 at 0.568 (611/1,075). The proxy counts only the 'publication object key' and 'bibliographic concordance' identifier schemes, so the sourced no-known-edition status that TEXT-001's done_when also accepts cannot move it; and if the 205 NLI bowls have no known edition the ceiling is 0.809. Whether to realign the metric with the task definition or to let the gate slip on acquisitions is a review decision, not an agent decision. — current `56.8%`; target `>= 80.0%`.
-- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `0.0%`; target `>= 100.0%`.
+- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `3.1%`; target `>= 100.0%`.
 
 ### Required setup tasks
 
@@ -546,6 +546,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-20:** Published ACCESS-008: bowlam.com is live from the Pages project. Applied the owner's two release decisions — the 134 Waller verse-citation rows are published on the open_license basis with CC BY-NC travelling with them, and a recorded permissive media label is now treated as the rights decision, approving 10 of 327. Published texts went 112 to 246 and the reading room's default pool 70 bowls to 191.
 - **2026-09-19:** Completed QA-002 with a held-source review of the six remaining claim differences. Rendered and visually checked the relevant Montgomery and Kedar pages, compared the Ford-Morgenstern, Waller, Moriggi, Brand and Penn evidence, and verified from the official MARC list that heb denotes Hebrew. CBS 16018 is compatible because the register cell is blank rather than contradictory; CBS 16017 and CBS 2971 are documented internal Montgomery inconsistencies. CBS 9008 and NLI Ms. Heb. 9467.163 remain unresolved language questions, and HS 3003 remains a scholarly collection-history disagreement. All 644 differences now have current exact-evidence decisions: 626 compatible and 18 substantive, with zero awaiting first-pass review. No source claim, identity or canonical value changed.
 - **2026-09-19:** Applied seven evidence-bound, append-only compatibility manifests after a clean copied-database dry run and idempotent replay. Explicit stored-evidence review revalidated 589 claim-field instances: 155 dating, 110 provenance, 137 publication, 74 location, 63 language, 24 biblical-intertext and 26 other descriptive facets. Compatibility means the claims can coexist; it does not validate a fact or select a canonical value. The current review queue falls from 595 to six. CBS 9008 language, NLI Ms. Heb. 9467.163 language-code semantics, HS 3003 collection location, and three Montgomery publication-identifier anomalies remain untouched for source-level work. All 13 already-current substantive dispositions remain visible. No claim, identity, canonical value, authenticity, right or public-release decision changed.
 - **2026-09-19:** Re-audited QA-002 against the live full-vocabulary comparison model and corrected the stale roadmap snapshot. The corpus now has 644 claim-field differences: 49 current decisions and 595 requiring current review, comprising 288 stale historical reviews and 307 never-reviewed instances. A structural pass estimates that about 590 of the pending rows are stored-evidence compatibility checks suitable for bounded Codex batches and about five clearly need fresh source research; none should be decided by unsupported user preference. Added a six-item user decision packet covering delegation, research priority and stopping policies. No claim, disposition, identity, canonical value, right or public-release decision changed.

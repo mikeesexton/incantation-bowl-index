@@ -194,6 +194,23 @@
     ["language", "Language"], ["provenance", "Where they come from"],
   ];
 
+  /* The homepage's coverage links arrive as ?present=<facet>. Most facets are
+     fact groups and answer from `facts`, but a text edition and an image are
+     not: they live in their own tables. `media` is empty in the gated
+     projection, so an image link finds nothing here rather than quietly
+     matching every bowl — the honest answer until a rights decision lands. */
+  const PRESENT = {
+    text_edition: id => (data.textsBy[id] || []).length > 0 || (data.editionsBy[id] || []).length > 0,
+    image: id => (data.mediaBy[id] || []).length > 0,
+  };
+  const PRESENT_LABELS = {
+    text_edition: ["Bowls you can trace to an edition", "Bowls this index can point to a published reading of."],
+    provenance: ["Bowls with a recorded journey", "Bowls with an account of where they were found or held."],
+    image: ["Bowls with a published image", "Bowls whose image references have cleared a rights decision."],
+  };
+  const hasPresent = (id, facet) =>
+    (PRESENT[facet] || (identity => factsOf(identity, facet).length > 0))(id);
+
   function facetCounts(group) {
     const tally = {};
     data.facts.filter(f => f.field_group === group).forEach(f => {
@@ -256,6 +273,7 @@
     const publication = params.get("publication");
     const facetGroup = BROWSE.map(b => b[0]).find(g => params.get(g));
     const facetValue = facetGroup ? params.get(facetGroup) : null;
+    const present = params.get("present");
     let pool = data.identity_clusters;
     let heading = "Bowls worth reading", note = "";
     if (publication) {
@@ -268,11 +286,19 @@
       const ids = new Set(hit ? hit.ids : []);
       pool = pool.filter(c => ids.has(c.identity_id));
       heading = facetValue; note = `Bowls where ${facetGroup.replace(/_/g, " ")} is “${facetValue}”.`;
+    } else if (present) {
+      pool = pool.filter(c => hasPresent(c.identity_id, present));
+      const [label, description] = PRESENT_LABELS[present]
+        || [present.replace(/_/g, " "), `Bowls with ${present.replace(/_/g, " ")} recorded.`];
+      heading = label;
+      note = pool.length
+        ? `${description} ${pool.length.toLocaleString()} in the index.`
+        : `${description} None has cleared that gate yet.`;
     } else if (term) {
       pool = pool.filter(c => term.split(/\s+/).every(word => c.haystack.includes(word)));
       heading = `“${term}”`; note = `${pool.length.toLocaleString()} bowls match.`;
     }
-    const filtered = Boolean(term || facetValue || publication);
+    const filtered = Boolean(term || facetValue || publication || present);
     /* At equal score, a bowl that can say what it does comes first: ties used to
        fall to the alphabet, which parked six blank Isbell cards near the top. */
     const described = c => (summarise(c) ? 1 : 0);
@@ -329,7 +355,9 @@
         ${BROWSE.map(([g, l]) => `<a href="#/explore/browse/${g}">${esc(l)}</a>`).join("")}
         <a href="#/explore/publications">By publication</a></nav>`}
       <div class="bowl-grid">${readable.map(card).join("")}</div>
-      ${readable.length ? "" : `<p class="thin-note">Nothing matches. Try fewer words.</p>`}
+      ${readable.length ? "" : `<p class="thin-note">${term
+        ? "Nothing matches. Try fewer words."
+        : "Nothing here yet. The note above says why."}</p>`}
       ${filtered ? "" : `<p class="thin-note"><a href="#/search">${thin.toLocaleString()} further records</a>
         hold little beyond an identifier and a source. They are in the research explorer.</p>`}`;
     const form = view.querySelector("#reading-search-form");
@@ -399,6 +427,18 @@
     }).join("")}</ul></section>`;
   }
 
+  /* A Creative Commons deed asks for a link to itself, not just a name. Rows
+     published on the open_license basis carry the source's own licence, which is
+     narrower than this index's CC BY 4.0, so the credit line has to say which one
+     governs the words above it. `license_url` is null on everything else. */
+  function licenceLink(text) {
+    const url = (text.license_url || "").trim();
+    if (!url) return "";
+    const cc = url.match(/creativecommons\.org\/licenses\/([a-z-]+)\/([\d.]+)/i);
+    const label = cc ? `CC ${cc[1].toUpperCase()} ${cc[2]}` : "Licence";
+    return ` · <a href="${esc(url)}" rel="license noreferrer">${esc(label)}</a>`;
+  }
+
   /* The citation usually opens with the editor's name; do not say it twice. */
   function credit(text) {
     const citation = (text.access_citation || "").trim();
@@ -443,7 +483,7 @@
       ${readable.length ? readable.map(t => `<section class="entry-block entry-text">
         <h2>What it says</h2>
         <blockquote dir="auto" lang="${esc(t.language === "English" ? "en" : "")}">${esc(t.content)}</blockquote>
-        <p class="entry-credit">${esc(credit(t))}</p>
+        <p class="entry-credit">${esc(credit(t))}${licenceLink(t)}</p>
       </section>`).join("") : ""}
 
       ${withheld.length ? `<section class="entry-block">
