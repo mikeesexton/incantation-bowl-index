@@ -25,6 +25,27 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Deploy the approved gated staging candidate
+
+**Claimed:** ACCESS-003
+**Corpus:** unchanged — state digest `abf8105be933`
+**Tests:** 285 Python passed; 24 Node passed; all 19 promoted file hashes
+matched; production custom-domain and host-lock checks passed
+
+- Recorded the project owner's explicit approval of candidate
+  `1b16d886bb3ef092e0b5a324abac796bf6d6d9b1d3de9cc66a87a12ec2a01fc0`
+  for gated staging, then promoted the exact hash-bound files.
+- Deployed through the existing Cloudflare Pages project as production
+  deployment `e5aabb22-bf0d-4cc3-85d1-193d687e6cff`. `bowlam.com` remains live;
+  `/preview`, the facets data, client script and release manifest all redirect
+  through Cloudflare Access.
+- Verified both `bowlam.pages.dev` and the per-deployment alias return 404 for
+  the preview root and nested data. Cloudflare already holds the authoritative
+  `asa` and `micah` nameservers, so no GoDaddy or DNS mutation was needed.
+- No corpus, rights, identity, allow-list or unrestricted-publication decision
+  changed. Next: the project owner should sign in once and visually confirm the
+  reading room behind an authenticated Access session.
+
 ## 2026-09-20 — Codex — Harden the local staging release candidate
 
 **Claimed:** ACCESS-003

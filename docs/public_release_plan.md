@@ -55,18 +55,20 @@ adding legal or technological restrictions that prevent recipients from doing
 what that licence allows. This means the Access gate may protect the preview as
 a whole, but it must not be presented as changing the licence of those rows.
 
-## Local staging candidate
+## Approved gated staging release
 
-The exact undeployed candidate is recorded in
+The exact candidate is recorded in
 `research/reviews/scholar_preview_release_candidate_2026-09-20.json` as
 `1b16d886bb3ef092e0b5a324abac796bf6d6d9b1d3de9cc66a87a12ec2a01fc0`.
 It binds nineteen built files by SHA-256 to corpus state `abf8105be933` and is
-explicitly `pending_owner_approval`. Ten of ten automated checks pass: declared
+approved by the project owner for gated staging. Ten of ten automated checks pass: declared
 schema, shared-projection row equivalence, absence of private/reviewer columns,
 local paths/contact data/secrets, all 51 private storage paths, all 30 withheld
 wording values, the short-claim boundary, text and media gates, and traceability
-of all controlled facets. The build remains under `site/preview-build`; it has
-not replaced `site/public/preview` and has not been deployed.
+of all controlled facets. Those exact nineteen files are deployed at
+`https://bowlam.com/preview/` behind Cloudflare Access in production deployment
+`e5aabb22-bf0d-4cc3-85d1-193d687e6cff`. The host lock returns 404 for the
+project's `*.pages.dev` aliases.
 
 ## Controlled browse vocabulary
 
