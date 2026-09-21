@@ -5,6 +5,7 @@ source-attributed claim values remain untouched and available in the research
 record.
 """
 
+import json
 import re
 
 
@@ -33,7 +34,7 @@ _COLLECTION_PATTERNS = (
     (r"kelsey museum", "Kelsey Museum of Archaeology, Ann Arbor"),
     (r"metropolitan museum", "Metropolitan Museum of Art, New York"),
     (r"institute for the study of ancient cultures|isac museum", "ISAC Museum, Chicago"),
-    (r"museo sefard", "Museo Sefardí, Toledo"),
+    (r"museo sefard[ií]", "Museo Sefardí, Toledo"),
     (r"mus.e du louvre", "Musée du Louvre, Paris"),
     (r"state hermitage", "State Hermitage Museum, St. Petersburg"),
     (r".bg.ne museum", "Ābgīne Museum, Tehran"),
@@ -92,10 +93,38 @@ def clean_label(label):
     return _LABEL_NOISE.sub("", cleaned).strip(" -\u2014\u00b7")
 
 
-def display_name(label, identifiers=()):
+def _repository_identifier(repository, ids):
+    """Choose a recorded collection number without mistaking a publication key for one."""
+    candidates = []
+    for key in (
+        "penn catalogue number", "british museum museum number", "accession number",
+        "museum number", "collection designation", "registration number",
+    ):
+        candidates.extend(ids.get(key, ()))
+    if not candidates:
+        return ""
+    for value in candidates:
+        for pattern, label in _COLLECTION_PATTERNS:
+            if label != repository:
+                continue
+            match = re.search(pattern, value, re.I)
+            if match:
+                suffix = value[match.end():].strip(" ,:·–—-")
+                if suffix:
+                    return suffix
+    return candidates[0]
+
+
+def display_name(label, identifiers=(), locations=()):
     """Return a recognizable catalogue title without inventing an accession."""
     cleaned = clean_label(label)
     ids = _identifier_map(identifiers)
+
+    repository = next((labels[0] for value in locations
+                       if (labels := collection_facet(value))), "")
+    repository_id = _repository_identifier(repository, ids) if repository else ""
+    if repository and repository_id:
+        return f"{repository} · {repository_id}"
 
     penn = (ids.get("penn catalogue number") or [None])[0]
     if penn:
@@ -145,15 +174,17 @@ def display_name(label, identifiers=()):
 
 def collection_name(label, identifiers=(), locations=()):
     """A concise collection label, using only recorded collection evidence."""
-    title = display_name(label, identifiers)
-    if " · " in title:
-        prefix = title.split(" · ", 1)[0]
-        if prefix not in {"Museum"} and not re.search(r"\b\d{4}$", prefix):
-            return prefix
+    # A publication-derived title is not a repository. Prefer an explicit
+    # location claim, then fall back to a recognizable collection in the label.
     for location in locations:
         labels = collection_facet(location)
         if labels:
             return labels[0]
+    title = display_name(label, identifiers, locations)
+    if " · " in title:
+        prefix = title.split(" · ", 1)[0]
+        if prefix not in {"Museum"} and not re.search(r"\b\d{4}$", prefix):
+            return prefix
     return next((str(value).strip() for value in locations if str(value).strip()), "Collection not recorded")
 
 
@@ -166,7 +197,7 @@ def collection_facet(value):
     if any(token in folded for token in (
         "unknown", "unlocated", "not exposed in accessible bibliographic metadata"
     )):
-        return ["Location unknown / unlocated"]
+        return []
     for pattern, label in _COLLECTION_PATTERNS:
         if re.search(pattern, folded):
             return [label]
@@ -209,7 +240,7 @@ def language_facets(value):
     if labels:
         return labels
     if folded in {"?", "n/a", "n/a.", "n/​a."} or "not adjudicated" in folded:
-        return ["Classification unresolved"]
+        return []
     return [raw.rstrip(".")]
 
 
@@ -308,11 +339,13 @@ def public_facets(field, field_group, value):
         return origin_facets(field, value)
     if field_group == "ritual":
         return purpose_facets(field, value)
+    if field_group == "biblical_intertexts":
+        return scripture_facets(value)
     return []
 
 
 def language_name(claims):
-    """Prefer an explicit inscription language to mixed catalogue code fields."""
+    """Prefer explicit evidence, but present it through the controlled vocabulary."""
     precedence = ("inscription_language", "script_or_language", "catalogue_language_codes")
     for field in precedence:
         values = []
@@ -324,11 +357,13 @@ def language_name(claims):
             if value and value not in values:
                 values.append(value)
         if values:
-            value = values[0]
-            codes = [part.strip().casefold() for part in re.split(r"[;,]", value)]
-            if codes and all(code in _LANGUAGE_CODES for code in codes):
-                return " / ".join(_LANGUAGE_CODES[code] for code in codes)
-            return value
+            labels = []
+            for value in values:
+                for label in language_facets(value):
+                    if label not in labels:
+                        labels.append(label)
+            if labels:
+                return " / ".join(labels)
     return "Language not recorded"
 
 
@@ -338,7 +373,7 @@ def format_date(value):
     if not original:
         return ""
     text = original.replace("-", "–")
-    text = re.sub(r"^(?:circa|ca\.)\s+", "c. ", text, flags=re.I)
+    text = re.sub(r"^(?:about\s+the|about|circa|ca\.)\s+", "c. ", text, flags=re.I)
     text = re.sub(r"\b(\d+)(st|nd|rd|th)C\s*[–]\s*(\d+)(st|nd|rd|th)C\b",
                   lambda match: (f"{match.group(1)}{match.group(2).lower()}–"
                                  f"{match.group(3)}{match.group(4).lower()} centuries CE"),
@@ -352,16 +387,95 @@ def format_date(value):
 
 def display_date(claims):
     """Display explicit dates only; periods and cultures remain separate facts."""
-    values = []
+    groups = {}
     for claim in claims:
         if claim.get("field") != "dating":
             continue
         raw = claim.get("normalized_value") or claim.get("value_text") or claim.get("value_json")
         value = format_date(raw)
-        if value and value.casefold() not in {item.casefold() for item in values}:
-            values.append(value)
-    if not values:
+        if value:
+            key = re.sub(r"^c\.\s+", "", value, flags=re.I).casefold()
+            groups.setdefault(key, []).append(value)
+    if not groups:
         return "Date not recorded"
-    if len(values) == 1:
-        return values[0]
+    calendar_groups = {
+        key: values for key, values in groups.items()
+        if re.search(r"\d|\bcentur(?:y|ies)\b|\b(?:CE|BCE|AD|BC)\b", values[0], re.I)
+    }
+    if calendar_groups:
+        groups = calendar_groups
+    if len(groups) == 1:
+        values = next(iter(groups.values()))
+        base = re.sub(r"^c\.\s+", "", values[0], flags=re.I)
+        return "c. " + base if any(re.match(r"^c\.\s+", item, re.I) for item in values) else values[0]
     return "Multiple proposed dates"
+
+
+_SCRIPTURE_BOOKS = (
+    (r"(?:Genesis|Gen)", "Gen"), (r"(?:Exodus|Exod|Ex)", "Exod"),
+    (r"(?:Leviticus|Lev)", "Lev"), (r"(?:Numbers|Num)", "Num"),
+    (r"(?:Deuteronomy|Deut)", "Deut"), (r"(?:Joshua|Josh)", "Josh"),
+    (r"(?:Judges|Judg)", "Judg"), (r"Ruth", "Ruth"),
+    (r"1\s*(?:Samuel|Sam)", "1 Sam"), (r"2\s*(?:Samuel|Sam)", "2 Sam"),
+    (r"1\s*(?:Kings|Kgs)", "1 Kgs"), (r"2\s*(?:Kings|Kgs)", "2 Kgs"),
+    (r"1\s*(?:Chronicles|Chron)\.?", "1 Chron"),
+    (r"2\s*(?:Chronicles|Chron)\.?", "2 Chron"), (r"Ezra", "Ezra"),
+    (r"(?:Nehemiah|Neh)\.?", "Neh"), (r"(?:Esther|Esth)\.?", "Esth"),
+    (r"Job", "Job"), (r"(?:Psalms?|Ps)\.?", "Ps"),
+    (r"(?:Proverbs|Prov)\.?", "Prov"),
+    (r"(?:Ecclesiastes|Eccl|Qoheleth|Qoh)\.?", "Eccl"),
+    (r"(?:Song(?:\s+of\s+Songs)?|Canticles|Cant)\.?", "Song"),
+    (r"(?:Isaiah|Isa)\.?", "Isa"), (r"(?:Jeremiah|Jer)\.?", "Jer"),
+    (r"(?:Lamentations|Lam)\.?", "Lam"),
+    (r"(?:Ezekiel|Ezek|Exek)\.?", "Ezek"), (r"(?:Daniel|Dan)\.?", "Dan"),
+    (r"(?:Hosea|Hos)\.?", "Hos"), (r"Joel", "Joel"), (r"Amos", "Amos"),
+    (r"(?:Obadiah|Obad)\.?", "Obad"), (r"Jonah", "Jonah"),
+    (r"(?:Micah|Mic)\.?", "Mic"), (r"(?:Nahum|Nah)\.?", "Nah"),
+    (r"(?:Habakkuk|Hab)\.?", "Hab"), (r"(?:Zephaniah|Zeph)\.?", "Zeph"),
+    (r"(?:Haggai|Hag)\.?", "Hag"), (r"(?:Zechariah|Zech)\.?", "Zech"),
+    (r"(?:Malachi|Mal)\.?", "Mal"), (r"(?:Matthew|Matt)\.?", "Matt"),
+    (r"Mark", "Mark"), (r"Luke", "Luke"), (r"John", "John"),
+    (r"Acts", "Acts"), (r"(?:Romans|Rom)\.?", "Rom"),
+    (r"1\s*(?:Corinthians|Cor)\.?", "1 Cor"),
+    (r"2\s*(?:Corinthians|Cor)\.?", "2 Cor"),
+    (r"(?:Galatians|Gal)\.?", "Gal"), (r"(?:Ephesians|Eph)\.?", "Eph"),
+    (r"(?:Philippians|Phil)\.?", "Phil"), (r"(?:Colossians|Col)\.?", "Col"),
+    (r"1\s*(?:Thessalonians|Thess)\.?", "1 Thess"),
+    (r"2\s*(?:Thessalonians|Thess)\.?", "2 Thess"),
+    (r"1\s*(?:Timothy|Tim)\.?", "1 Tim"),
+    (r"2\s*(?:Timothy|Tim)\.?", "2 Tim"),
+    (r"Titus", "Titus"), (r"(?:Philemon|Phlm)\.?", "Phlm"),
+    (r"(?:Hebrews|Heb)\.?", "Heb"), (r"(?:James|Jas)\.?", "Jas"),
+    (r"1\s*(?:Peter|Pet)\.?", "1 Pet"), (r"2\s*(?:Peter|Pet)\.?", "2 Pet"),
+    (r"1\s*(?:John|Jn)\.?", "1 John"), (r"2\s*(?:John|Jn)\.?", "2 John"),
+    (r"3\s*(?:John|Jn)\.?", "3 John"), (r"Jude", "Jude"),
+    (r"(?:Revelation|Rev)\.?", "Rev"),
+)
+_SCRIPTURE_REFERENCE = re.compile(
+    r"(?P<book>" + "|".join(f"(?:{pattern})" for pattern, _ in _SCRIPTURE_BOOKS) +
+    r")\.?\s+(?P<chapter>\d+)[\.:](?P<verse>\d+(?:\s*[-–]\s*\d+)?[a-z]?)",
+    re.I,
+)
+
+
+def scripture_facets(value):
+    """Split combined source citations into stable, project-authored references."""
+    raw = str(value or "").strip()
+    if not raw:
+        return []
+    try:
+        decoded = json.loads(raw)
+        if isinstance(decoded, list):
+            raw = "; ".join(str(item) for item in decoded)
+    except (json.JSONDecodeError, TypeError):
+        pass
+    labels = []
+    for match in _SCRIPTURE_REFERENCE.finditer(raw):
+        book_raw = match.group("book")
+        book = next(label for pattern, label in _SCRIPTURE_BOOKS
+                    if re.fullmatch(pattern, book_raw, re.I))
+        verse = re.sub(r"\s*[-–]\s*", "–", match.group("verse"))
+        label = f"{book} {match.group('chapter')}:{verse}"
+        if label not in labels:
+            labels.append(label)
+    return labels

@@ -8,6 +8,16 @@ const presentationOnly = source.slice(0, source.indexOf("async function loadIden
 const context = vm.createContext({URL, URLSearchParams, FormData});
 vm.runInContext(presentationOnly, context);
 
+test("search controls follow the approved reader-first order", () => {
+  const html = fs.readFileSync("web/index.html", "utf8");
+  const ids = ["ritual-filter", "language-filter", "provenance-filter", "collection-filter",
+    'name="available"', "type-filter"];
+  const positions = ids.map(value => html.indexOf(value));
+  assert.ok(positions.every(position => position >= 0));
+  assert.deepEqual([...positions].sort((a, b) => a - b), positions);
+  assert.match(html, /Most content available/);
+});
+
 function render(item) {
   context.fixture = item;
   return vm.runInContext("identityRow(fixture)", context);

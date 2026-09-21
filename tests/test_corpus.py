@@ -107,6 +107,8 @@ class CorpusTests(unittest.TestCase):
         stats = statistics(self.conn)
         self.assertEqual(stats["candidate_objects"], 1)
         self.assertEqual(stats["objects_without_evidence"], 0)
+        self.assertEqual(stats["same_source_duplicate_identifier_groups"], 0)
+        self.assertEqual(stats["same_source_duplicate_claim_groups"], 0)
 
     def test_repeat_candidate_ingest_can_enrich_without_duplication(self):
         record = self.candidate("Bowl A", "A-1")
@@ -456,6 +458,25 @@ class CorpusTests(unittest.TestCase):
         self.assertEqual({claim["field"] for claim in dossier["claims"]}, {
             "current_location", "inscription_language", "dating",
         })
+
+    def test_research_console_uses_counted_controlled_facets(self):
+        record = self.candidate("Controlled facet bowl", "UI-FACET-1")
+        record["claims"].extend([
+            {"field": "inscription_language",
+             "value_text": "Mandaic (historical catalogue classification)"},
+            {"field": "text_purpose", "value_text": "Protection from illness"},
+            {"field": "findspot", "value_text": "Nippur, Iraq"},
+        ])
+        add_candidate(self.conn, record)
+        self.conn.commit()
+        catalog = CorpusCatalog(self.db_path)
+        result = catalog.search({})
+        self.assertIn({"value": "Mandaic", "count": 1}, result["facets"]["languages"])
+        self.assertIn({"value": "Test Museum", "count": 1}, result["facets"]["collections"])
+        self.assertIn({"value": "Protection", "count": 1}, result["facets"]["ritual"])
+        self.assertIn({"value": "Nippur", "count": 1}, result["facets"]["provenance"])
+        self.assertEqual(catalog.search({"ritual": ["Protection"]})["total"], 1)
+        self.assertEqual(catalog.search({"provenance": ["Nippur"]})["total"], 1)
 
     def test_research_console_searches_private_text_content(self):
         record = self.candidate("Bowl with translated client", "UI-TEXT-1")

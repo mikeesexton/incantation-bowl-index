@@ -51,8 +51,10 @@
             <summary>Filters</summary>
           <fieldset>
             <legend>Explore</legend>
-            <label>Collection<select name="collection" id="collection-filter"><option value="">All collections</option></select></label>
-            <label>Language<select name="language" id="language-filter"><option value="">All languages</option></select></label>
+            <label>What they do<select name="ritual" id="ritual-filter"><option value="">Any purpose</option></select></label>
+            <label>Language<select name="language" id="language-filter"><option value="">Any language</option></select></label>
+            <label>Where they come from<select name="provenance" id="provenance-filter"><option value="">Any reported origin</option></select></label>
+            <label>Where they are now<select name="collection" id="collection-filter"><option value="">Any current repository</option></select></label>
             <label>Available material<select name="available">
               <option value="">Any material</option>
               <option value="text_here">Text available here</option>
@@ -64,7 +66,7 @@
           </fieldset>
 
           <details class="research-filters">
-            <summary>More research filters</summary>
+            <summary>Research filters</summary>
             <fieldset>
             <legend>Research state</legend>
             <label>Status<select name="status" id="status-filter"><option value="">All statuses</option></select></label>
@@ -249,9 +251,9 @@
               <span id="result-count" aria-live="polite">Loading…</span>
               <label class="compact-select">Sort
                 <select id="sort">
-                  <option value="explore">Most to explore</option>
-                  <option value="sources">Most sources</option>
+                  <option value="explore">Most content available</option>
                   <option value="label">Name A–Z</option>
+                  <option value="sources">Most sources</option>
                   <option value="completeness_desc">Research completeness</option>
                 </select>
               </label>

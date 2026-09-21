@@ -23,6 +23,7 @@ class ProjectionTests(unittest.TestCase):
                       {'field':'installation_instruction','value_text':
                        'Exterior directs placement “for the inner room”'},
                       {'field':'named_demon','value_text':'Halbas-Lilit'},
+                      {'field':'biblical_citations','value_text':'Deut. 6.4; Zechariah 3:2'},
                       {'field':'findspot','value_text':'Nippur, Iraq'}],
             'texts':[{'text_type':'translation','content':'WITHHELD TRANSLATION',
                       'public_ok':False,'locator':'text 42, p. 88'}]})
@@ -97,6 +98,8 @@ class ProjectionTests(unittest.TestCase):
         self.assertIn(('ritual','Protection'),labels)
         self.assertIn(('ritual','Healing'),labels)
         self.assertIn(('provenance','Nippur'),labels)
+        self.assertIn(('biblical_intertexts','Deut 6:4'),labels)
+        self.assertIn(('biblical_intertexts','Zech 3:2'),labels)
         self.assertNotIn(('ritual','Halbas-Lilit'),labels)
         self.assertTrue(all(row['source_id'] and row['locator'] for row in rows))
 
@@ -105,6 +108,7 @@ class ProjectionTests(unittest.TestCase):
         self.assertEqual(rows['current_location']['release_class'],'factual_metadata')
         self.assertEqual(rows['text_purpose']['release_class'],'short_source_claim')
         self.assertEqual(rows['text_purpose']['value'],'Protection from illness')
+        self.assertEqual(rows['current_location']['recorded_value'],'The Schøyen Collection')
         self.assertNotIn('text_feature',rows)
         self.assertNotIn('installation_instruction',rows)
         candidates={row['field']:row for row in Projection(self.conn)._fact_candidates()}

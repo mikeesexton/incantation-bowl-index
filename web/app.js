@@ -49,9 +49,14 @@ function toast(message) {
 
 function optionList(select, values = []) {
   const current = select.value;
-  values.filter(value => ![...select.options].some(option => option.value === value)).forEach(value => select.insertAdjacentHTML(
-    "beforeend", `<option value="${escapeHtml(value)}">${escapeHtml(humanize(value))}</option>`
-  ));
+  const preserveLabel = new Set([
+    "ritual-filter", "language-filter", "provenance-filter", "collection-filter",
+  ]).has(select.id);
+  values.map(item => typeof item === "string" ? {value: item, count: null} : item)
+    .filter(item => ![...select.options].some(option => option.value === item.value))
+    .forEach(item => select.insertAdjacentHTML(
+      "beforeend", `<option value="${escapeHtml(item.value)}">${escapeHtml(preserveLabel ? item.value : humanize(item.value))}${Number.isFinite(item.count) ? ` (${item.count})` : ""}</option>`
+    ));
   select.value = current;
 }
 
@@ -68,11 +73,14 @@ function queryParams() {
 function renderActiveFilters(params) {
   const labels = [];
   const friendly = {present: "Recorded field", coverage: "Missing field", object_type: "Object form",
-    available: "Available material", q: "Search"};
+    available: "Available material", q: "Search", ritual: "What they do",
+    provenance: "Where they come from", collection: "Where they are now"};
+  const controlled = new Set(["ritual", "provenance", "collection", "language"]);
   for (const [key, value] of params) {
     if (["page", "page_size", "sort"].includes(key)) continue;
     const label = friendly[key] || humanize(key);
-    labels.push(`<button class="filter-chip" type="button" data-clear-filter="${escapeHtml(key)}">${escapeHtml(label)}: ${escapeHtml(humanize(value))} <span aria-hidden="true">×</span></button>`);
+    const shown = controlled.has(key) ? value : humanize(value);
+    labels.push(`<button class="filter-chip" type="button" data-clear-filter="${escapeHtml(key)}">${escapeHtml(label)}: ${escapeHtml(shown)} <span aria-hidden="true">×</span></button>`);
   }
   $("#active-filters").innerHTML = labels.join("");
   $$(`[data-clear-filter]`).forEach(button => button.addEventListener("click", () => {
@@ -148,6 +156,8 @@ async function loadIdentities() {
       optionList($("#status-filter"), data.facets.statuses);
       optionList($("#authenticity-filter"), data.facets.authenticities);
       optionList($("#type-filter"), data.facets.object_types);
+      optionList($("#ritual-filter"), data.facets.ritual);
+      optionList($("#provenance-filter"), data.facets.provenance);
       optionList($("#collection-filter"), data.facets.collections);
       optionList($("#language-filter"), data.facets.languages);
       $("#status-filter").dataset.ready = "true";

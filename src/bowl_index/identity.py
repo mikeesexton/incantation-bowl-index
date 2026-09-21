@@ -319,14 +319,16 @@ def identity_rows(conn):
             "member_ids_json": json.dumps(member_ids, ensure_ascii=False),
             "identifiers_json": json.dumps(sorted(cluster_identifiers), ensure_ascii=False),
         }
-        row.update({"has_" + key: int(value) for key, value in coverage.items()})
-        row["display_name"] = display_name(row["label"], sorted(cluster_identifiers))
-        row["display_date"] = display_date(cluster_claims)
-        row["display_language"] = language_name(cluster_claims)
         location_values = sorted({
             (claim["normalized_value"] or claim["value_text"] or claim["value_json"] or "").strip()
             for claim in cluster_claims if claim["field"] in CORE_COVERAGE["location"]
         } - {""})
+        row.update({"has_" + key: int(value) for key, value in coverage.items()})
+        row["display_name"] = display_name(
+            row["label"], sorted(cluster_identifiers), location_values
+        )
+        row["display_date"] = display_date(cluster_claims)
+        row["display_language"] = language_name(cluster_claims)
         row["display_collection"] = collection_name(
             row["label"], sorted(cluster_identifiers), location_values
         )

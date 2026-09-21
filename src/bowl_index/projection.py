@@ -48,8 +48,8 @@ PROJECTION_COLUMNS = {
                           "display_date", "display_language", "display_collection",
                           "record_status", "member_count", "source_count", "appearance_count",
                           "completeness_score", "content_completeness", "reading_score"),
-    "facts": ("object_id", "field", "field_group", "value", "certainty", "source_id", "locator",
-              "release_class"),
+    "facts": ("object_id", "field", "field_group", "value", "recorded_value", "certainty",
+              "source_id", "locator", "release_class"),
     # Project-authored browse labels. Every row points back to the raw claim that
     # generated it; this table never replaces or silently rewrites source wording.
     "facets": ("object_id", "facet_group", "facet_label", "source_field", "source_id", "locator"),
@@ -330,6 +330,7 @@ class Projection:
             value = row["normalized_value"] or row["value_text"] or row["value_json"]
             if not value or len(value) > FACT_MAX_LENGTH:
                 continue
+            recorded_value = row["value_text"] or row["value_json"] or value
             if row["field"] == "dating":
                 value = format_date(value)
             release_class = "factual_metadata"
@@ -341,9 +342,18 @@ class Projection:
                     release_class = "short_source_claim"
                 else:
                     release_class = "review_source_wording"
+            # Raw source wording is useful for explaining a normalized display
+            # value, but it must pass the same expression gate independently.
+            safe_recorded_value = recorded_value
+            if (row["field"] in SOURCE_WORDING_REVIEW_FIELDS
+                    and row["source_rights_status"] != "public_domain"
+                    and (len(recorded_value) > SOURCE_WORDING_PRIORITY_LENGTH
+                         or EMBEDDED_QUOTATION.search(recorded_value))):
+                safe_recorded_value = value
             rows.append({
                 "object_id": row["object_id"], "field": row["field"],
                 "field_group": FACT_FIELD_GROUP[row["field"]], "value": value,
+                "recorded_value": safe_recorded_value,
                 "certainty": row["certainty"], "source_id": row["source_id"],
                 "locator": row["locator"],
                 "release_class": release_class,

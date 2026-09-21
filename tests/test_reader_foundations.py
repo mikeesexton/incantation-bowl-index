@@ -4,8 +4,8 @@ from bowl_index.db import connect, migrate
 from bowl_index.ingest import add_candidate
 from bowl_index.identity import CONTENT_COVERAGE, CORE_ORDER, identity_rows, reading_score
 from bowl_index.presentation import (
-    collection_facet, display_date, display_name, format_date, language_facets,
-    origin_facets, purpose_facets,
+    collection_facet, collection_name, display_date, display_name, format_date,
+    language_facets, language_name, origin_facets, purpose_facets, scripture_facets,
 )
 
 class DisplayNameTests(unittest.TestCase):
@@ -39,6 +39,17 @@ class DisplayNameTests(unittest.TestCase):
         self.assertEqual(display_name('089M',
             ['publication object key: Segal 2000::089M']), 'Segal 2000 · Bowl 089M')
 
+    def test_recorded_repository_outranks_a_publication_cohort(self):
+        identifiers = [
+            'publication object key: Ford 2014 Aula Orientalis::Museo Sefardí 1073',
+            'collection designation: Museo Sefardí 1073',
+        ]
+        locations = ['Museo Sefardí de Toledo, Spain']
+        self.assertEqual(display_name('Museo Sefardí de Toledo AC-MSEF', identifiers, locations),
+                         'Museo Sefardí, Toledo · 1073')
+        self.assertEqual(collection_name('Ford 2014 bowl', identifiers, locations),
+                         'Museo Sefardí, Toledo')
+
 
 class DatePresentationTests(unittest.TestCase):
     def test_requested_date_spellings(self):
@@ -53,6 +64,12 @@ class DatePresentationTests(unittest.TestCase):
         self.assertEqual(display_date(equivalent), '6th–8th centuries CE')
         different = equivalent + [{'field':'dating', 'value_text':'500–700 CE'}]
         self.assertEqual(display_date(different), 'Multiple proposed dates')
+
+    def test_approximate_spellings_collapse_and_period_is_context(self):
+        rows = [{'field':'dating', 'value_text':'About the 6th century CE'},
+                {'field':'dating', 'value_text':'c. 6th century CE'},
+                {'field':'dating', 'value_text':'Late Sasanian'}]
+        self.assertEqual(display_date(rows), 'c. 6th century CE')
 
     def test_a_nickname_yields_to_the_collection_number(self):
         self.assertEqual(
@@ -85,6 +102,7 @@ class ControlledFacetTests(unittest.TestCase):
         self.assertEqual(collection_facet(
             'Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena'),
             ['Hilprecht Collection, Jena'])
+        self.assertEqual(collection_facet('Unknown / unlocated'), [])
 
     def test_language_noise_collapses_to_broad_categories(self):
         self.assertEqual(language_facets('Jewish Babylonian Aramaic.'),
@@ -95,6 +113,12 @@ class ControlledFacetTests(unittest.TestCase):
                          ['Pseudo-script / non-lexical', 'Jewish Babylonian Aramaic'])
         self.assertEqual(language_facets('Mandaic. 168 \x08Catalogue'), ['Mandaic'])
         self.assertEqual(language_facets('arc; myz'), ['Aramaic (unspecified)', 'Mandaic'])
+        self.assertEqual(language_facets('Not adjudicated'), [])
+
+    def test_primary_language_uses_controlled_labels(self):
+        claims = [{'field':'inscription_language',
+                   'value_text':"Mandaic (Pognon's historical classification)"}]
+        self.assertEqual(language_name(claims), 'Mandaic')
 
     def test_ownership_history_is_not_presented_as_an_origin(self):
         self.assertEqual(origin_facets('provenance',
@@ -108,6 +132,13 @@ class ControlledFacetTests(unittest.TestCase):
         self.assertEqual(purpose_facets('formula_genre', 'Talmudic'), [])
         self.assertEqual(purpose_facets('text_purpose',
             'Healing and guarding a household against demons'), ['Healing', 'Protection'])
+
+    def test_scripture_references_are_split_and_canonicalized(self):
+        self.assertEqual(scripture_facets('["Deut. 6.4", "Zechariah 3:2", "Ps 91:1"]'),
+                         ['Deut 6:4', 'Zech 3:2', 'Ps 91:1'])
+        self.assertEqual(scripture_facets(
+            '["Prov. 30.17", "Song 3.7-8", "Mic. 7.16-17", "Exek. 32.27"]'),
+            ['Prov 30:17', 'Song 3:7–8', 'Mic 7:16–17', 'Ezek 32:27'])
 
 
 class ReadingScoreTests(unittest.TestCase):

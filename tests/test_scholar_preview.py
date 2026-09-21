@@ -30,8 +30,8 @@ class ScholarPreviewBuildTests(unittest.TestCase):
     def test_never_copies_the_console(self):
         """styles.css is read for its palette tokens; nothing of it is shipped."""
         copied = re.findall(r'shutil\.copy\w*\(WEB / "([^"]+)"', self.source)
-        self.assertEqual(copied, ['reading.js'],
-                         'only the reading room may be copied out of web/, got %r' % copied)
+        self.assertEqual(copied, ['reading.js', 'fonts'],
+                         'only reader assets may be copied out of web/, got %r' % copied)
 
     def test_built_output_carries_no_console_asset(self):
         if not build.OUT.exists():
@@ -40,6 +40,17 @@ class ScholarPreviewBuildTests(unittest.TestCase):
         for forbidden in ('app.js', 'home.js', 'styles.css'):
             self.assertNotIn(forbidden, names,
                              '%s belongs to the research console' % forbidden)
+
+    def test_built_output_is_self_contained_for_its_typeface(self):
+        if not build.OUT.exists():
+            self.skipTest('preview not built; run scripts/build_scholar_preview.py')
+        css = (build.OUT / 'preview.css').read_text(encoding='utf-8')
+        self.assertNotIn('url("/fonts/', css)
+        for font in ('frank-ruhl-libre-hebrew.woff2',
+                     'frank-ruhl-libre-latin-ext.woff2',
+                     'frank-ruhl-libre-latin.woff2'):
+            self.assertIn('url("./fonts/%s")' % font, css)
+            self.assertTrue((build.OUT / 'fonts' / font).is_file())
 
     def test_built_output_withholds_what_the_projection_withholds(self):
         if not build.OUT.exists():
@@ -71,6 +82,8 @@ class ScholarPreviewBuildTests(unittest.TestCase):
         self.assertEqual(candidate['withheld_counts']['private_capture_rows'], 55)
         index = (build.OUT / 'index.html').read_text(encoding='utf-8')
         self.assertIn('release-candidate.json', index)
+        self.assertNotIn('pending project-owner approval', index)
+        self.assertIn('Reuse terms and attribution appear with each included item', index)
 
     def test_rows_come_from_the_shared_projection(self):
         """A second row-builder would be a second chance to publish something withheld."""

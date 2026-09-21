@@ -35,6 +35,12 @@ def statistics(conn):
         "unclassified_claim_fields": unclassified,
         "estimated_distinct_objects_after_resolved_dedupe": estimated_distinct,
         "resolved_duplicate_records": total - estimated_distinct,
+        "same_source_duplicate_identifier_groups": _count(conn,
+            "SELECT count(*) FROM (SELECT 1 FROM identifiers WHERE object_id IS NOT NULL "
+            "GROUP BY object_id,source_id,scheme,normalized_value HAVING count(*)>1)"),
+        "same_source_duplicate_claim_groups": _count(conn,
+            "SELECT count(*) FROM (SELECT 1 FROM claims GROUP BY object_id,source_id,field,"
+            "coalesce(normalized_value,value_text,value_json),locator HAVING count(*)>1)"),
         "probable_or_confirmed": _count(conn, "SELECT count(*) FROM objects WHERE record_status IN ('probable','confirmed')"),
         "source_appearances": _count(conn, "SELECT count(*) FROM appearances"),
         "sources": _count(conn, "SELECT count(*) FROM sources"),

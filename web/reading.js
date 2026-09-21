@@ -214,13 +214,13 @@
       </div></a></article>`;
   }
 
-  /* Ways in. Four noisy source vocabularies use project-authored controlled
-     labels; the remaining groups are already concise enough to browse raw. */
+  /* Ways in. Noisy categorical vocabularies use project-authored controlled
+     labels; names, hands and concise visual descriptions remain source terms. */
   const BROWSE = [
-    ["client", "People named"], ["ritual", "What they do"],
-    ["biblical_intertexts", "Scripture quoted"], ["practitioner", "Hands and scribes"],
-    ["visual", "What is drawn"], ["location", "Where they are"],
+    ["ritual", "What they do"], ["client", "People named"],
+    ["visual", "What is drawn"], ["biblical_intertexts", "Scripture quoted"],
     ["language", "Language"], ["provenance", "Where they come from"],
+    ["location", "Where they are"], ["practitioner", "Hands and scribes"],
   ];
 
   /* The homepage's coverage links arrive as ?present=<facet>. Most facets are
@@ -240,7 +240,32 @@
   const hasPresent = (id, facet) =>
     (PRESENT[facet] || (identity => factsOf(identity, facet).length > 0))(id);
 
-  const CONTROLLED_FACETS = new Set(["ritual", "location", "language", "provenance"]);
+  const CONTROLLED_FACETS = new Set([
+    "ritual", "biblical_intertexts", "location", "language", "provenance",
+  ]);
+  const ALPHABETICAL_FACETS = new Set(["client", "practitioner"]);
+  const SCRIPTURE_BOOK_ORDER = ["Gen", "Exod", "Lev", "Num", "Deut", "Josh", "Judg",
+    "Ruth", "1 Sam", "2 Sam", "1 Kgs", "2 Kgs", "1 Chron", "2 Chron", "Ezra", "Neh",
+    "Esth", "Job", "Ps", "Prov", "Eccl", "Song", "Isa", "Jer", "Lam", "Ezek", "Dan",
+    "Hos", "Joel", "Amos", "Obad", "Jonah", "Mic", "Nah", "Hab", "Zeph", "Hag",
+    "Zech", "Mal", "Matt", "Mark", "Luke", "John", "Acts", "Rom", "1 Cor", "2 Cor",
+    "Gal", "Eph", "Phil", "Col", "1 Thess", "2 Thess", "1 Tim", "2 Tim", "Titus",
+    "Phlm", "Heb", "Jas", "1 Pet", "2 Pet", "1 John", "2 John", "3 John", "Jude", "Rev"];
+  function scriptureOrder(value) {
+    const match = value.match(/^(.*)\s+(\d+):(\d+)/);
+    if (!match) return [999, 999, 999, value];
+    const book = SCRIPTURE_BOOK_ORDER.indexOf(match[1]);
+    return [book < 0 ? 998 : book, Number(match[2]), Number(match[3]), value];
+  }
+  function compareTuple(a, b) {
+    for (let i = 0; i < Math.max(a.length, b.length); i += 1) {
+      if (typeof a[i] === "string" || typeof b[i] === "string") {
+        const compared = String(a[i] || "").localeCompare(String(b[i] || ""));
+        if (compared) return compared;
+      } else if ((a[i] || 0) !== (b[i] || 0)) return (a[i] || 0) - (b[i] || 0);
+    }
+    return 0;
+  }
 
   function facetCounts(group) {
     const tally = {};
@@ -256,8 +281,12 @@
         (tally[value] = tally[value] || new Set()).add(owner.identity_id);
       });
     });
-    return Object.entries(tally).map(([value, ids]) => ({value, count: ids.size, ids: [...ids]}))
-      .sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
+    const result = Object.entries(tally).map(([value, ids]) => ({value, count: ids.size, ids: [...ids]}));
+    if (group === "biblical_intertexts") {
+      return result.sort((a, b) => compareTuple(scriptureOrder(a.value), scriptureOrder(b.value)));
+    }
+    if (ALPHABETICAL_FACETS.has(group)) return result.sort((a, b) => a.value.localeCompare(b.value));
+    return result.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
   }
 
   let ownerIndex = null;
@@ -362,28 +391,27 @@
         ${filtered ? `<a class="entry-back" href="#/explore">← Bowls worth reading</a>` :
           `<span class="eyebrow">Late antique Mesopotamia, roughly 500–700 CE</span>`}
         <h1 id="explore-title">${esc(heading)}</h1>
-        ${filtered ? "" : `<p class="standfirst">Ordinary clay vessels, inscribed in a spiral and buried upside
-          down beneath the floors of houses in Sasanian Mesopotamia to keep something out.
-          This index currently represents <strong>${data.identity_clusters.length.toLocaleString()}</strong>
-          working object identities. It has checked bowl-level references in
-          <strong>${resolvedPublications.length.toLocaleString()}</strong> editions, connecting
-          <strong>${publicationObjects.size.toLocaleString()}</strong> candidate records to
-          <strong>${publicationIdentities.size.toLocaleString()}</strong> of those identities.
-          Separately, its 115-title JBA bibliography records what the field has published; that
-          checklist tells us what remains to inspect, not how many bowls are linked.</p>`}
+        ${filtered ? "" : `<p class="standfirst">Explore incantation bowls through what their
+          texts do, the people they name, their languages, imagery, histories and publications.</p>
+          <dl class="reading-stats">
+            <div><dt>Bowls</dt><dd>${data.identity_clusters.length.toLocaleString()}</dd></div>
+            <div><dt>Linked editions</dt><dd>${resolvedPublications.length.toLocaleString()}</dd></div>
+            <div><dt>Readable texts</dt><dd>${readableTexts.length.toLocaleString()}</dd></div>
+            <div><dt>Images</dt><dd>${m.media_approved_rows.toLocaleString()}</dd></div>
+          </dl>`}
         ${note ? `<p class="standfirst">${esc(note)}</p>` : ""}
-        ${filtered ? "" : `<p class="standfirst-note"><strong>${readableTranslations}</strong>
-          public-domain translations and <strong>${readableSummaries}</strong> project-authored
-          summaries are readable here. Another <strong>${m.texts_withheld_rows}</strong> text
-          records preserve their edition and locator while withholding protected scholarly wording.
-          These are release counts, not the number of bowls known from editions.
-          ${m.media_approved_rows
-            ? `Marks below are drawn from the object's own recorded line count, not from a
-               photograph: ${m.media_approved_rows} of
-               ${m.media_approved_rows + m.media_withheld_rows} image references carry a rights
-               decision, and the rest stay withheld.`
-            : `No image is cleared for reuse yet, so every mark below is drawn from the object's
-               own recorded line count.`}</p>`}
+        ${filtered ? "" : `<p class="standfirst-note">Reuse terms appear with each included text
+          or image. When modern wording cannot be shown, its citation and locator remain available.</p>
+          <details class="about-preview"><summary>About this preview and its coverage</summary>
+            <p><strong>${readableTranslations}</strong> public-domain translations and
+              <strong>${readableSummaries}</strong> project-authored summaries are readable here;
+              <strong>${m.texts_withheld_rows}</strong> text records point to an edition without
+              reproducing protected wording.</p>
+            <p>Publication links connect ${publicationObjects.size.toLocaleString()} candidate
+              records to ${publicationIdentities.size.toLocaleString()} bowl identities. Images
+              appear only when their recorded reuse decision and attribution pass the release gate;
+              otherwise the interface draws a diagram from the recorded line count.</p>
+          </details>`}
       </div>
       <form class="reading-search" id="reading-search-form" role="search">
         <input id="reading-search" type="search" name="q" value="${esc(term)}"
@@ -410,25 +438,150 @@
     });
   }
 
-  function factList(id, group, heading) {
-    const rows = factsOf(id, group);
-    if (!rows.length) return "";
+  const tidy = value => String(value || "").trim().replace(/\s+/g, " ");
+  function dateValue(value) {
+    const display = tidy(value).replaceAll("-", "–")
+      .replace(/^(?:about\s+the|about|circa|ca\.)\s+/i, "c. ");
+    const calendar = /\d|\bcentur(?:y|ies)\b|\b(?:CE|BCE|AD|BC)\b/i.test(display);
+    return {key: `${calendar ? "date" : "period"}:${display.replace(/^c\.\s+/i, "").toLowerCase()}`,
+      display, calendar};
+  }
+
+  function measurementValue(value) {
+    const text = tidy(value);
+    const found = new Map();
+    const add = (role, amount, unit) => {
+      role = role.toLowerCase().replace(/^opening\s+/, "");
+      const millimetres = Number(amount) * (unit.toLowerCase() === "cm" ? 10 : 1);
+      const prior = found.get(role);
+      if (prior !== undefined && Math.abs(prior - millimetres) > .0001) return false;
+      found.set(role, millimetres);
+      return true;
+    };
+    const patterns = [
+      /(opening diameter|diameter|height|depth)\s*(\d+(?:\.\d+)?)\s*(cm|mm)\b/gi,
+      /(\d+(?:\.\d+)?)\s*(cm|mm)\s*(opening diameter|diameter|height|depth)\b/gi,
+    ];
+    let valid = true;
+    for (const [index, pattern] of patterns.entries()) {
+      for (const match of text.matchAll(pattern)) {
+        valid = index === 0 ? add(match[1], match[2], match[3]) && valid
+          : add(match[3], match[1], match[2]) && valid;
+      }
+    }
+    if (!valid || found.size < 2) return null;
+    const order = ["diameter", "height", "depth"];
+    const roles = [...found].sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
+    const number = mm => Number((mm / 10).toFixed(3)).toString();
+    return {
+      key: "measure:" + [...found].sort().map(([role, mm]) => `${role}:${mm.toFixed(3)}`).join("|"),
+      display: roles.map(([role, mm]) => `${role[0].toUpperCase() + role.slice(1)} ${number(mm)} cm`).join(" · "),
+    };
+  }
+
+  function factPresentation(row, group) {
+    if (group === "dating") return dateValue(row.value);
+    if (group === "dimensions") {
+      const measurement = measurementValue(row.value);
+      if (measurement) return measurement;
+    }
+    const display = tidy(row.value).replace(/^\["|"\]$/g, "").replace(/","/g, ", ");
+    return {key: `text:${display.toLowerCase()}`, display};
+  }
+
+  function groupedFacts(id, group) {
     const grouped = new Map();
-    rows.forEach(r => {
-      const key = r.value;
-      if (!grouped.has(key)) grouped.set(key, []);
-      grouped.get(key).push(r);
+    factsOf(id, group).forEach(row => {
+      const presentation = factPresentation(row, group);
+      if (!grouped.has(presentation.key)) grouped.set(presentation.key, {
+        ...presentation, reports: [], variants: new Set(), approximate: false,
+      });
+      const item = grouped.get(presentation.key);
+      item.reports.push(row);
+      item.variants.add(tidy(row.recorded_value || row.value));
+      if (group === "dating" && /^c\.\s+/i.test(presentation.display)) item.approximate = true;
     });
-    const items = [...grouped].map(([value, reports]) => {
-      const citations = reports.map(r => {
-        const source = data.sourceById[r.source_id];
-        const cite = source ? `${source.authors || source.title || ""} ${source.issued_year || ""}`.trim() : "";
-        return [cite, r.locator].filter(Boolean).join(" · ");
-      }).filter(Boolean);
-      return `<li><span>${esc(value.replace(/^\["|"\]$/g, "").replace(/","/g, ", "))}</span>
-        ${citations.length ? `<cite>${citations.map(esc).join("; ")}</cite>` : ""}</li>`;
+    for (const item of grouped.values()) {
+      if (item.approximate) item.display = `c. ${item.display.replace(/^c\.\s+/i, "")}`;
+    }
+    return [...grouped.values()];
+  }
+
+  function canonicalLocator(value) {
+    return tidy(value).toLowerCase().replace(/\bbowl\b/g, "").replace(/[;,·]/g, " ")
+      .replace(/\s+/g, " ").trim();
+  }
+
+  function citationsFor(reports) {
+    const unique = new Map();
+    reports.forEach(row => {
+      const key = `${row.source_id || ""}|${canonicalLocator(row.locator)}`;
+      const prior = unique.get(key);
+      if (!prior || tidy(row.locator).length > tidy(prior.locator).length) unique.set(key, row);
     });
-    return `<section class="entry-block"><h2>${esc(heading)}</h2><ul class="fact-list">${items.join("")}</ul></section>`;
+    return [...unique.values()].map(row => {
+      const source = data.sourceById[row.source_id];
+      const cite = source ? `${source.authors || source.title || ""} ${source.issued_year || ""}`.trim() : "";
+      return [cite, row.locator].filter(Boolean).join(" · ");
+    }).filter(Boolean);
+  }
+
+  function distinctLocators(rows) {
+    const unique = new Map();
+    rows.forEach(row => {
+      if (!row.locator) return;
+      const key = canonicalLocator(row.locator);
+      const prior = unique.get(key);
+      if (!prior || tidy(row.locator).length > tidy(prior).length) unique.set(key, row.locator);
+    });
+    return [...unique.values()];
+  }
+
+  function groupedEditions(rows) {
+    const grouped = new Map();
+    rows.forEach(row => {
+      const key = [row.source_id, row.citation, row.access_url].map(tidy).join("|");
+      if (!grouped.has(key)) grouped.set(key, {...row, rows: []});
+      grouped.get(key).rows.push(row);
+    });
+    return [...grouped.values()].map(item => ({...item, locators: distinctLocators(item.rows)}));
+  }
+
+  function factItems(id, group, showVariants = false) {
+    return groupedFacts(id, group).map(item => {
+      const citations = citationsFor(item.reports);
+      const variants = [...item.variants].filter(Boolean);
+      return `<li><span>${item.key.startsWith("period:") ? "<small>Period</small>" : ""}${esc(item.display)}</span>
+        ${citations.length ? `<cite>${citations.map(esc).join("; ")}</cite>` : ""}
+        ${showVariants && variants.length > 1 ? `<details class="recorded-forms"><summary>Recorded forms</summary><ul>${variants.map(value => `<li>${esc(value)}</li>`).join("")}</ul></details>` : ""}</li>`;
+    }).join("");
+  }
+
+  function factList(id, group, heading, showVariants = false) {
+    if (!factsOf(id, group).length) return "";
+    return `<section class="entry-block"><h2>${esc(heading)}</h2><ul class="fact-list">${factItems(id, group, showVariants)}</ul></section>`;
+  }
+
+  function datingEvidence(id) {
+    const groups = groupedFacts(id, "dating");
+    const dates = groups.filter(item => !item.key.startsWith("period:"));
+    const periods = groups.filter(item => item.key.startsWith("period:"));
+    if (dates.length <= 1 && !periods.length) return "";
+    return `<section class="entry-block"><h2>${dates.length > 1 ? "Proposed dates" : "Dating evidence"}</h2>
+      <ul class="fact-list">${factItems(id, "dating")}</ul></section>`;
+  }
+
+  function recordedFormsSection(id) {
+    const groups = [...new Set((data.factsBy[id] || []).map(row => row.field_group))];
+    const items = groups.flatMap(group => groupedFacts(id, group)
+      .filter(item => item.variants.size > 1)
+      .map(item => ({group, ...item})));
+    if (!items.length) return "";
+    return `<section class="entry-block recorded-source-forms"><h2>Recorded source forms</h2>
+      <p class="entry-note">Equivalent wording is combined in the main display; the forms recorded by the sources remain here.</p>
+      <ul class="fact-list">${items.map(item => `<li><span><small>${esc(item.group.replaceAll("_", " "))}</small>${esc(item.display)}</span>
+        <cite>${citationsFor(item.reports).map(esc).join("; ")}</cite>
+        <details class="recorded-forms" open><summary>Recorded forms</summary><ul>${[...item.variants].map(value => `<li>${esc(value)}</li>`).join("")}</ul></details></li>`).join("")}</ul></section>`;
   }
 
   function journeySection(id) {
@@ -451,9 +604,13 @@
     const grouped = new Map();
     const add = (sourceId, locator, url) => {
       if (!sourceId) return;
-      if (!grouped.has(sourceId)) grouped.set(sourceId, {locators: new Set(), url: ""});
+      if (!grouped.has(sourceId)) grouped.set(sourceId, {locators: new Map(), url: ""});
       const item = grouped.get(sourceId);
-      if (locator) item.locators.add(locator);
+      if (locator) {
+        const key = canonicalLocator(locator);
+        const prior = item.locators.get(key);
+        if (!prior || tidy(locator).length > tidy(prior).length) item.locators.set(key, locator);
+      }
       if (url) item.url = url;
     };
     (data.factsBy[id] || []).forEach(r => add(r.source_id, r.locator));
@@ -465,7 +622,7 @@
       const source = data.sourceById[sourceId] || {};
       const label = source.citation || source.title || sourceId;
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
-      return `<li><span>${link}</span>${item.locators.size ? `<small>${[...item.locators].map(esc).join(" · ")}</small>` : ""}</li>`;
+      return `<li><span>${link}</span>${item.locators.size ? `<small>${[...item.locators.values()].map(esc).join(" · ")}</small>` : ""}</li>`;
     }).join("")}</ul></section>`;
   }
 
@@ -479,6 +636,87 @@
     return [lead + citation, text.access_locator].filter(Boolean).join(" · ");
   }
 
+  function identifierRank(scheme) {
+    const value = scheme.toLowerCase();
+    if (/accession|museum number|collection designation|registration number|penn catalogue/.test(value)) return 0;
+    if (/publication designation|text number|table designation|bibliographic concordance/.test(value)) return 1;
+    if (/key|record|uuid|asset|dataset|url|platform|product id/.test(value)) return 3;
+    return 2;
+  }
+
+  function publicationKeyParts(item) {
+    if (item.scheme !== "publication object key" || !tidy(item.value).includes("::")) return null;
+    return tidy(item.value).split("::", 2).map(tidy);
+  }
+
+  function identifierValue(item, full = false) {
+    const value = tidy(item.value);
+    const publication = publicationKeyParts(item);
+    if (publication) return full ? `${publication[0]} — ${publication[1]}` : publication[1];
+    return value;
+  }
+
+  function identifierValueMarkup(item, full = false) {
+    const value = identifierValue(item, full);
+    return /^IsIAO\b/i.test(value)
+      ? `<abbr class="identifier-help" tabindex="0" title="Italian Institute for Africa and the Orient; a historical collection prefix.">${esc(value)}</abbr>`
+      : esc(value);
+  }
+
+  function groupedIdentifiers(identifiers) {
+    const grouped = new Map();
+    identifiers.forEach(item => {
+      const key = identifierValue(item).toLowerCase();
+      if (!grouped.has(key)) grouped.set(key, {value: identifierValue(item), rows: []});
+      grouped.get(key).rows.push(item);
+    });
+    return [...grouped.values()].map(group => {
+      const rows = [...new Map(group.rows.map(row => [
+        `${row.scheme}|${row.value}|${row.assigning_body || ""}`, row,
+      ])).values()];
+      return {...group, rows, rank: Math.min(...rows.map(row => identifierRank(row.scheme)))};
+    }).sort((a, b) => a.rank - b.rank || identifierValue(a.rows[0]).localeCompare(identifierValue(b.rows[0])));
+  }
+
+  function identifiersSection(rawLabels, identifiers, displayName) {
+    const groups = groupedIdentifiers(identifiers);
+    const identifierValues = groups.map(group => group.value.toLowerCase());
+    const labels = [...new Set(rawLabels)].filter(label => {
+      const normalized = tidy(label).toLowerCase();
+      return normalized !== tidy(displayName).toLowerCase()
+        && !identifierValues.some(value => value.length > 2 && normalized.includes(value));
+    });
+    if (!groups.length && !labels.length) return "";
+    const rows = groups.map(group => {
+      const schemes = [...new Set(group.rows.map(row => {
+        const publication = publicationKeyParts(row);
+        return publication ? `published in ${publication[0]}` : row.scheme;
+      }))]
+        .sort((a, b) => identifierRank(a) - identifierRank(b) || a.localeCompare(b));
+      return `<li><span>${schemes.map(esc).join(" · ")}</span> ${identifierValueMarkup(group.rows[0])}</li>`;
+    });
+    if (labels.length) rows.push(...labels.map(label => `<li><span>Also recorded as</span> ${esc(label)}</li>`));
+    return `<section class="entry-block"><h2>Names and identifiers</h2><ul class="alias-list">${rows.join("")}</ul></section>`;
+  }
+
+  function identifierDetails(identifiers, rawLabels = []) {
+    const groups = groupedIdentifiers(identifiers);
+    if (!groups.length && !rawLabels.length) return "";
+    return `<section class="entry-block identifier-details"><h2>Identifier details</h2>
+      <ul class="fact-list">${groups.flatMap(group => {
+        const byScheme = new Map();
+        group.rows.forEach(row => {
+          const key = `${row.scheme}|${row.value}`;
+          if (!byScheme.has(key)) byScheme.set(key, {row, bodies: new Set()});
+          if (row.assigning_body) byScheme.get(key).bodies.add(row.assigning_body);
+        });
+        return [...byScheme.values()].map(({row, bodies}) => `<li><span><small>${esc(row.scheme)}</small>${identifierValueMarkup(row, true)}</span>
+          ${bodies.size ? `<cite>Assigned by ${[...bodies].map(esc).join("; ")}</cite>` : ""}</li>`);
+      }).join("")}
+        ${[...new Set(rawLabels)].map(label => `<li><span><small>source record label</small>${esc(label)}</span></li>`).join("")}
+      </ul></section>`;
+  }
+
   function renderObject(view, identityId) {
     const cluster = data.clusterById[identityId];
     if (!cluster) { view.innerHTML = `<p class="dossier-loading">No such record.</p>`; return; }
@@ -489,7 +727,7 @@
     const bowlTexts = texts.filter(t => t.editor !== CARD_LINE_EDITOR);
     const readable = bowlTexts.filter(t => t.content_status === "included");
     const withheld = bowlTexts.filter(t => t.content_status !== "included");
-    const editions = data.editionsBy[id] || [];
+    const editions = groupedEditions(data.editionsBy[id] || []);
     const rawLabels = cluster.members.map(m => (data.objectById[m] || {}).label).filter(Boolean);
     const identifiers = data.identifiersBy[id] || [];
     const objects = cluster.members.map(m => data.objectById[m]).filter(Boolean);
@@ -524,7 +762,7 @@
             : esc(t.access_citation || "edition")}${t.access_locator ? " · " + esc(t.access_locator) : ""}</cite></li>`).join("")}</ul>
       </section>` : ""}
 
-      ${cluster.display_date === "Multiple proposed dates" ? factList(id, "dating", "Proposed dates") : ""}
+      ${datingEvidence(id)}
       ${factList(id, "material", "The bowl — material")}
       ${factList(id, "dimensions", "The bowl — dimensions")}
       ${factList(id, "condition", "The bowl — condition")}
@@ -534,7 +772,7 @@
 
       ${editions.length ? `<section class="entry-block"><h2>Where it is published</h2>
         <ul class="fact-list">${editions.map(e => `<li><span>${esc(e.citation)}</span>
-          <cite>${e.locator ? esc(e.locator) + " · " : ""}${e.access_url
+          <cite>${e.locators.length ? e.locators.map(esc).join(" · ") + " · " : ""}${e.access_url
             ? `<a href="${esc(e.access_url)}" rel="noreferrer">link</a>` : esc(e.access_status || "")}</cite></li>`).join("")}</ul>
       </section>` : ""}
 
@@ -544,14 +782,11 @@
 
       ${sourcesSection(id)}
 
-      <section class="entry-block"><h2>Other names and catalogue numbers</h2>
-        <ul class="alias-list">${[...new Set(rawLabels)].map(label => `<li>${esc(label)}</li>`).join("")}
-        ${identifiers.map(item => `<li><span>${esc(item.scheme)}</span> ${/^IsIAO\b/i.test(item.value)
-          ? `<abbr class="identifier-help" tabindex="0" title="Italian Institute for Africa and the Orient; a historical collection prefix.">${esc(item.value)}</abbr>`
-          : esc(item.value)}</li>`).join("")}</ul>
-      </section>
+      ${identifiersSection(rawLabels, identifiers, cluster.display_name)}
 
       <details class="entry-apparatus"><summary>Research details</summary>
+        ${recordedFormsSection(id)}
+        ${identifierDetails(identifiers, rawLabels)}
         ${factList(id, "client", "Who it names")}
         ${factList(id, "practitioner", "Maker or hand, as reported")}
         ${factList(id, "target", "What it acts against")}

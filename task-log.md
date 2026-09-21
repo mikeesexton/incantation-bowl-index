@@ -25,6 +25,25 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-20 — Codex — Consolidate reader and search UX
+
+**Claimed:** ACCESS-009, QA-004
+**Corpus:** unchanged — state digest `6cd15c856898`
+**Tests:** 300 Python passed; 31 Node passed; 10/10 release checks passed;
+desktop and 390px mobile visual checks passed
+
+- Implemented the approved layered reader, meaning-first Explore order,
+  controlled counted Search filters, conservative claim grouping, canonical
+  Scripture references, identity-wide identifier grouping, and concise preview
+  copy without deleting source claims or historical rows.
+- Verified the Museo Sefardí example in the browser: one primary `AC-MSEF`, one
+  normalized approximate date, one measurement set, distinct publication
+  sources, and all original forms and assigning bodies reachable in Research
+  Details.
+- Built and audited self-contained local preview candidate `a69f752d8083`. The public
+  `/library`, `site/public/preview`, and deployed Access preview were deliberately
+  left unchanged; promotion remains a separate owner-approved step.
+
 ## 2026-09-20 — Codex — Deploy expanded Access-gated preview
 
 **Claimed:** ACCESS-003

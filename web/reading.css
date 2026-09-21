@@ -38,6 +38,14 @@
 .reading-head h1 { font: 400 2.9rem/1.1 var(--serif); margin: .3rem 0 1.1rem; letter-spacing: -.01em; }
 .standfirst { font: 1.16rem/1.62 var(--serif); max-width: 38rem; margin: 0 0 1rem; }
 .standfirst-note { font-size: .93rem; color: var(--brownink-soft); max-width: 38rem; margin: 0; }
+.reading-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .6rem;
+  max-width: 38rem; margin: 1.2rem 0; }
+.reading-stats div { padding: .7rem .8rem; background: var(--reading-surface); border: 1px solid var(--clay-line); }
+.reading-stats dt { color: var(--brownink-soft); font-size: .7rem; text-transform: uppercase; letter-spacing: .07em; }
+.reading-stats dd { margin: .15rem 0 0; font: 600 1.1rem var(--serif); }
+.about-preview { max-width: 38rem; margin-top: .9rem; color: var(--brownink-soft); font-size: .86rem; }
+.about-preview summary { color: var(--reading-accent); cursor: pointer; }
+.about-preview p { margin: .6rem 0; }
 
 /* A bowl seen from above is a circle. The grid keeps that. */
 .bowl-grid { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); padding-bottom: 2.5rem; }
@@ -86,9 +94,9 @@
 .entry-note { font-size: .88rem; color: var(--brownink-soft); margin: 0 0 .6rem; }
 
 .fact-list { list-style: none; margin: 0; padding: 0; }
-.fact-list li { display: flex; gap: 1rem; justify-content: space-between; align-items: baseline;
+.fact-list > li { display: flex; gap: 1rem; justify-content: space-between; align-items: baseline;
   padding: .5rem 0; border-bottom: 1px solid var(--clay-line); font: 1rem/1.5 var(--serif); }
-.fact-list li:last-child { border-bottom: 0; }
+.fact-list > li:last-child { border-bottom: 0; }
 .fact-list cite { font: .78rem/1.4 var(--sans); font-style: normal; color: var(--brownink-soft);
   text-align: right; flex: 0 0 auto; max-width: 45%; }
 
@@ -102,6 +110,12 @@
 .entry-apparatus dt { color: var(--brownink-soft); }
 .entry-apparatus dd { margin: 0; }
 .entry-apparatus code { font-size: .82rem; }
+.entry-apparatus > .entry-block:first-of-type { margin-top: 1.35rem; }
+.recorded-source-forms .fact-list > li { flex-wrap: wrap; }
+.recorded-forms { flex: 0 0 100%; color: var(--brownink-soft); font: .78rem/1.4 var(--sans); }
+.recorded-forms summary { cursor: pointer; text-transform: none; letter-spacing: 0; }
+.recorded-forms ul { margin: .35rem 0 0; padding-left: 1.1rem; }
+.recorded-forms li { padding: .12rem 0; }
 .source-groups, .alias-list { list-style: none; margin: 0; padding: 0; }
 .source-groups li, .alias-list li { padding: .62rem 0; border-bottom: 1px solid var(--clay-line); }
 .source-groups li:last-child, .alias-list li:last-child { border-bottom: 0; }
@@ -114,9 +128,10 @@
 
 @media (max-width: 620px) {
   .reading-head h1 { font-size: 2.1rem; }
+  .reading-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .entry-head { flex-direction: column; gap: .9rem; }
   .entry-mark { flex-basis: 72px; width: 72px; }
-  .fact-list li { flex-direction: column; gap: .15rem; }
+  .fact-list > li { flex-direction: column; gap: .15rem; }
   .fact-list cite { text-align: left; max-width: none; }
 }
 

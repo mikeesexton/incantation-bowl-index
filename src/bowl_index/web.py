@@ -179,6 +179,21 @@ class CorpusCatalog:
             # published static export are the same bytes through the same code.
             projection = Projection(conn)
             projection_tables = projection.tables()
+            controlled_facets = defaultdict(lambda: defaultdict(set))
+            for facet in projection_tables["facets"]:
+                identity_id = member_to_identity.get(facet["object_id"])
+                if identity_id:
+                    controlled_facets[identity_id][facet["facet_group"]].add(
+                        facet["facet_label"]
+                    )
+            for row in catalog_rows:
+                groups = controlled_facets[row["identity_id"]]
+                row["controlled_facets"] = {
+                    group: sorted(values) for group, values in groups.items()
+                }
+                labels = [label for values in groups.values() for label in values]
+                if labels:
+                    row["search_blob"] += " " + " ".join(labels).casefold()
             manifest = projection_manifest(projection, projection_tables)
             manifest["tables"] = {
                 name: {"rows": len(rows), "url": "/api/reader/" + name}
@@ -307,6 +322,8 @@ class CorpusCatalog:
         object_type = params.get("object_type", [""])[0]
         collection = params.get("collection", [""])[0]
         language = params.get("language", [""])[0]
+        ritual = params.get("ritual", [""])[0]
+        provenance = params.get("provenance", [""])[0]
         available = params.get("available", [""])[0]
         sort = params.get("sort", ["explore"])[0]
         try:
@@ -335,9 +352,14 @@ class CorpusCatalog:
                 continue
             if object_type and object_type not in row["object_types"]:
                 continue
-            if collection and row["display_collection"] != collection:
+            controlled = row.get("controlled_facets", {})
+            if collection and collection not in controlled.get("location", ()):
                 continue
-            if language and row["display_language"] != language:
+            if language and language not in controlled.get("language", ()):
+                continue
+            if ritual and ritual not in controlled.get("ritual", ()):
+                continue
+            if provenance and provenance not in controlled.get("provenance", ()):
                 continue
             availability = {
                 "text_here": bool(row["has_text_here"]),
@@ -361,8 +383,16 @@ class CorpusCatalog:
         }
         items.sort(key=sorters.get(sort, sorters["explore"]))
         start = (page - 1) * page_size
-        public_items = [{key: value for key, value in item.items() if key != "search_blob"}
+        public_items = [{key: value for key, value in item.items()
+                         if key not in {"search_blob", "controlled_facets"}}
                         for item in items[start:start + page_size]]
+        def facet_options(group):
+            counts = Counter(
+                value for row in self.rows
+                for value in row.get("controlled_facets", {}).get(group, ())
+            )
+            return [{"value": value, "count": counts[value]}
+                    for value in sorted(counts, key=str.casefold)]
         return {
             "items": public_items,
             "snapshot_id": self.intro_snapshot["snapshot"]["id"],
@@ -374,8 +404,10 @@ class CorpusCatalog:
                 "authenticities": sorted({row["authenticity"] for row in self.rows}),
                 "next_actions": sorted({row["next_action"] for row in self.rows}),
                 "object_types": sorted({value for row in self.rows for value in row["object_types"]}),
-                "collections": sorted({row["display_collection"] for row in self.rows}),
-                "languages": sorted({row["display_language"] for row in self.rows}),
+                "ritual": facet_options("ritual"),
+                "languages": facet_options("language"),
+                "provenance": facet_options("provenance"),
+                "collections": facet_options("location"),
             },
         }
 
