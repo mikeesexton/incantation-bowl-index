@@ -7,11 +7,21 @@ the public and Cloudflare Access builds continue to use ``Projection`` and fail
 closed.
 """
 
+from pathlib import Path
+
+from .db import PROJECT_ROOT
 from .projection import Projection
+
+
+DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 
 
 class PrivateResearchProjection(Projection):
     """A private reader snapshot; never use this class in an export builder."""
+
+    def __init__(self, conn, media_root=None):
+        super().__init__(conn)
+        self.media_root = Path(media_root or DEFAULT_PRIVATE_MEDIA_ROOT)
 
     def guard(self, name, rows):
         """Keep local capture paths out of the browser even in the private view."""
@@ -51,13 +61,17 @@ class PrivateResearchProjection(Projection):
             evidence = self.evidence[media_id]
             review = self.reviews.get(media_id) or {}
             approved = review.get("public_reuse_decision") == "approved"
+            local_derivative = self.media_root / (media_id + ".png")
             rows.append({
                 "id": evidence["id"],
                 "object_id": evidence["object_id"],
                 "appearance_id": evidence["appearance_id"],
                 "source_id": evidence["source_id"],
                 "media_type": evidence["media_type"],
-                "url": evidence["url"],
+                "url": (
+                    "/api/private-media/" + media_id + ".png"
+                    if local_derivative.is_file() else evidence["url"]
+                ),
                 "attribution": (
                     review.get("attribution") if approved
                     else evidence.get("source_title") or evidence.get("source_url")
@@ -90,6 +104,9 @@ class PrivateResearchProjection(Projection):
             "media_approved_rows": len(self.approved),
             "media_private_rows": len(media) - len(self.approved),
             "media_available_rows": len(media),
+            "media_local_derivative_rows": sum(
+                row["url"].startswith("/api/private-media/") for row in media
+            ),
             "media_withheld_rows": 0,
             "facts_included_rows": len(facts),
             "facts_private_wording_rows": sum(

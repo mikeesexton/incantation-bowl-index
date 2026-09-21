@@ -25,6 +25,32 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-21 — Codex — Repair private images and inscription access
+
+**Claimed:** ACCESS-002, RIGHTS-002, TEXT-005
+**Corpus:** changed (two private Ford 2023 text rows) — state digest `be8ca54172dd`
+**Tests:** 305 Python passed; 35 Node passed; both static builders passed
+10/10 release audits; real browser image/text/RTL checks passed
+
+- Repaired Davidovitz 41 end to end: visually checked Ford 2023, ingested its
+  full English translation and ten-line Jewish Babylonian Aramaic transcription
+  as source-located private rows, and built a reproducible hash-bound private
+  derivative of the bowl photograph from figure 1.
+- Reworked the shared reader to lead with translations, put original-language
+  material under “Show original incantation,” preserve lineation and RTL, link
+  back to the edition, and label private rows as not cleared for redistribution.
+- Swept all 327 media rows. The 28 PDF/page references no longer become broken
+  images; 299 apparent raster URLs gain a runtime fallback. The localhost-only
+  media route accepts only exact `MED-*.png` derivatives under the private tree.
+- Recorded the corpus-wide text/media audit. Mike's reader now exposes all 273
+  stored text rows; the local shared candidate withholds the two new Ford rows
+  (21 withheld total). Access candidate `15139c070386` and public candidate
+  `3fe90c33d7b5` passed 10/10 audits but were deliberately not deployed.
+- Next: page-check and ingest the public-domain Montgomery original-script
+  cohort, then use the same private-only pattern for held modern editions. The
+  Mac mini / encrypted Restic restore gate remains necessary before treating
+  the private bank as durable remote infrastructure.
+
 ## 2026-09-21 — Codex — Restore the private local research reader
 
 **Claimed:** ACCESS-002, OPS-001

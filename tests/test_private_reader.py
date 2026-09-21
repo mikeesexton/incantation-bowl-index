@@ -86,6 +86,17 @@ class PrivateReaderTests(unittest.TestCase):
         self.assertEqual(catalog.search({"available": ["text_here"]})["total"], 1)
         self.assertEqual(catalog.search({"available": ["image_here"]})["total"], 1)
 
+    def test_private_projection_prefers_a_reviewed_local_derivative(self):
+        media_id = self.conn.execute("SELECT id FROM media").fetchone()[0]
+        media_root = Path(self.temp.name) / "media"
+        media_root.mkdir()
+        (media_root / f"{media_id}.png").write_bytes(b"\x89PNG\r\n\x1a\nfixture")
+        projection = PrivateResearchProjection(self.conn, media_root=media_root)
+        tables = projection.tables()
+        self.assertEqual(tables["media"][0]["url"],
+                         f"/api/private-media/{media_id}.png")
+        self.assertEqual(projection.gate_counts(tables["texts"])["media_local_derivative_rows"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

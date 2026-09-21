@@ -10,8 +10,8 @@ const vm = require("node:vm");
 const source = fs.readFileSync("web/reading.js", "utf8");
 const body = source.slice(source.indexOf('const TABLES'), source.indexOf("function card(cluster)"));
 const context = vm.createContext({});
-vm.runInContext(body + "\nglobalThis.T = {summarise, mark, readableText, data};", context);
-const {summarise, mark, readableText, data} = context.T;
+vm.runInContext(body + "\nglobalThis.T = {summarise, mark, readableText, textSections, data};", context);
+const {summarise, mark, readableText, textSections, data} = context.T;
 
 const ID = "IDENT-TEST";
 const cluster = {identity_id: ID};
@@ -19,6 +19,7 @@ function given({facts = [], texts = [], media = [], accessTier = "release"}) {
   data.factsBy = {[ID]: facts};
   data.textsBy = {[ID]: texts};
   data.mediaBy = {[ID]: media};
+  data.sourceById = {};
   data.manifest = {access_tier: accessTier};
 }
 const fact = (field, field_group, value) => ({field, field_group, value});
@@ -105,4 +106,31 @@ test("an unapproved local image is labelled private research, not reviewed reuse
   const html = mark({...cluster, display_name: "Private bowl"});
   assert.match(html, /private research view/);
   assert.doesNotMatch(html, /reviewed reuse/);
+});
+
+test("a PDF or catalogue page is a source link, never a broken image", () => {
+  given({accessTier: "private_research", media: [{media_type: "image",
+    url: "https://example.org/edition.pdf", source_id: "SRC-TEST",
+    attribution: "Test edition", rights_status: "copyrighted",
+    rights_statement: "Private research view only; no public reuse permission recorded."}]});
+  data.sourceById["SRC-TEST"] = {url: "https://example.org/source-record"};
+  const html = mark({...cluster, display_name: "Referenced bowl"});
+  assert.doesNotMatch(html, /<img/);
+  assert.match(html, /Open image source/);
+  assert.match(html, /href="https:\/\/example.org\/source-record"/);
+});
+
+test("a translation leads and the Aramaic transcription is expandable", () => {
+  const html = textSections([
+    {text_type: "summary", content: "A short research summary.", language: "English"},
+    {text_type: "transcription", content: "בשמך אנא", language: "Jewish Babylonian Aramaic",
+      script: "Jewish square script", content_status: "private_research"},
+    {text_type: "translation", content: "In your name, I...", language: "English",
+      content_status: "private_research"},
+  ]);
+  assert.ok(html.indexOf("Translation") < html.indexOf("Show original incantation"));
+  assert.match(html, /Show original incantation/);
+  assert.match(html, /dir="rtl"/);
+  assert.match(html, /בשמך אנא/);
+  assert.match(html, /Research summary/);
 });

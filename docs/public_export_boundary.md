@@ -73,7 +73,7 @@ URLs survive.**
 The ten permissive rows have current evidence-bound owner decisions. A status by
 itself is still not a decision, and every unknown or copyrighted row fails closed.
 
-## Tier 3 — Texts: 19 of 271 blanked
+## Tier 3 — Texts: 21 of 273 blanked
 
 Only `content` is nulled. A withheld row keeps `editor`, `language`, `script`,
 `text_type`, `locator`, `access_citation`, `access_locator`, `access_url` and
@@ -82,7 +82,8 @@ Only `content` is nulled. A withheld row keeps `editor`, `language`, `script`,
 | `text_type` | Released | Withheld |
 |---|---|---|
 | summary | 211 | 5 |
-| translation | **40** | 14 |
+| transcription | 0 | 1 |
+| translation | **40** | 15 |
 | transliteration | 1 | 0 |
 
 Genre is not the gate — rights are. The released translations include 35 from
@@ -153,15 +154,15 @@ automated copyright decision: 6,127 are ordinary factual metadata, 40
 prose-prone rows come from public-domain sources, and 185 are short source
 claims with no embedded quotation. The 30 non-public-domain candidates are the private priority
 wording-review queue and do not emit a fact row.
-The derived `facets` table supplies 3,245 project-authored browse labels with the
+The derived `facets` table supplies 3,636 project-authored browse labels with the
 source field, source and locator retained; it never replaces the raw claim.
 
 ---
 
 ## What does survive
 
-The export spans 15 tables: 1,969 objects, 6,352 facts, 3,245 controlled facets,
-2,268 appearances and links, 4,741 identifiers, 1,063 editions, 862 sources, 271 text
+The export spans 15 tables: 1,969 objects, 6,352 facts, 3,636 controlled facets,
+2,268 appearances and links, 4,741 identifiers, 1,063 editions, 862 sources, 273 text
 rows (252 with content), 298 approved media rows, 206 works, 114 contributors,
 and 33 publications. It
 carries its own `manifest.json` with the attribution string, the CC BY 4.0 grant

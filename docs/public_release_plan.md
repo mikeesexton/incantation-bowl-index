@@ -34,7 +34,7 @@ locator from which it was derived.
 
 | Reader | Audience | Data source | Current boundary |
 |---|---|---|---|
-| Private localhost | Mike | `PrivateResearchProjection` | All 271 stored texts, all 327 recorded media links and all eligible source wording; binds only to loopback and is not a redistribution surface |
+| Private localhost | Mike | `PrivateResearchProjection` | All 273 stored texts, all 327 recorded media records, one reviewed local image derivative, and all eligible source wording; binds only to loopback and is not a redistribution surface |
 | Cloudflare Access preview | Up to 50 individually authorized users | `Projection` | The reviewed release candidate only: currently 252 text rows and 298 approved media rows |
 | Public library | Anyone | `Projection` | The same fail-closed rights model; remains local and unpublished |
 
@@ -53,8 +53,8 @@ The rights-gated release projection currently contains:
 | Object/source appearances | 2,268 | Public-reference structure |
 | Identifiers | 4,741 | Factual metadata |
 | Short fact candidates | 6,382 | 6,352 included; 30 non-public-domain wording values withheld for priority review |
-| Project-authored controlled facets | 3,245 | Public candidate, with claim-level traceability |
-| Text rows | 271 | 252 included by recorded decision; 19 withheld with citation and locator |
+| Project-authored controlled facets | 3,636 | Public candidate, with claim-level traceability |
+| Text rows | 273 | 252 included by recorded decision; 21 withheld with citation and locator |
 | Media resources known | 327 | 298 included by recorded decision; 29 withheld |
 | Private captures | 55 | Never staged; storage paths are forbidden by the projection guard |
 
@@ -141,7 +141,7 @@ controlled facet and the ordinary source/citation structure.
 
 ### Withhold until a new decision exists
 
-- All 19 text rows whose content is currently withheld.
+- All 21 text rows whose content is currently withheld.
 - All 29 media resources without an approved reuse decision.
 - Every source scan, local capture, OCR product, rich-text package, research
   note and filesystem path from the private vault.
@@ -163,15 +163,17 @@ The owner-approved exact proposal is
 It approves four scan-checked public-domain Wohlstein translations, two CC
 BY-NC Martínez Borobio rows and 288 Penn Museum media rows under Penn's stated
 nonprofit educational/personal noncommercial terms. It deliberately excludes
-the fifth partially reviewed Wohlstein translation, thirteen protected modern
-translations and twenty-nine other unapproved media rows. The append-only
+the fifth partially reviewed Wohlstein translation, fourteen protected modern
+translations, one modern transcription, and twenty-nine other unapproved media rows. The append-only
 publication and rights ledgers now carry those decisions.
 
-The public `/library` candidate `67c72de02621...` groups the released material
+The current public `/library` candidate `3fe90c33d7b5...` groups the released material
 into 454 browseable bowl records. It contains 252 texts and 298 media rows and
 passes ten checks covering projection gates, required attribution and terms,
 Penn credits, coherent shared URLs, private paths, reviewer-only fields and
-declared counts. It is built outside `site/public` and is not deployed.
+declared counts. It supersedes the earlier local candidate only because the two
+new private Ford pointers change the projection; no new protected content is
+released. It is built outside `site/public` and is not deployed.
 
 ## Next release sequence
 

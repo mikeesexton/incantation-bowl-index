@@ -178,6 +178,37 @@ class IntroductionTests(unittest.TestCase):
                 self.assertEqual(json.loads(body), catalog.introduction())
                 self.assertIn(b"Cache-Control: no-store", headers)
 
+    def test_private_media_endpoint_serves_only_a_named_local_derivative(self):
+        from unittest.mock import patch
+
+        catalog = self.populated_catalog()
+        handler = make_handler(catalog, "test-token")
+        media_root = Path(self.temp.name) / "media"
+        media_root.mkdir()
+        name = "MED-A169B8B5D5A4.png"
+        payload = b"\x89PNG\r\n\x1a\nfixture"
+        (media_root / name).write_bytes(payload)
+
+        class Socket:
+            def __init__(self, request):
+                self.input = io.BytesIO(request)
+                self.output = io.BytesIO()
+            def makefile(self, *args, **kwargs):
+                return self.input
+            def sendall(self, data):
+                self.output.write(data)
+
+        with patch("bowl_index.web.PRIVATE_MEDIA_ROOT", media_root):
+            sock = Socket(
+                f"GET /api/private-media/{name} HTTP/1.0\r\nHost: localhost\r\n\r\n".encode()
+            )
+            handler(sock, ("127.0.0.1", 12345), None)
+        headers, body = sock.output.getvalue().split(b"\r\n\r\n", 1)
+        self.assertIn(b"200 OK", headers)
+        self.assertIn(b"Content-Type: image/png", headers)
+        self.assertIn(b"Cache-Control: no-store", headers)
+        self.assertEqual(body, payload)
+
 
 if __name__ == "__main__":
     unittest.main()

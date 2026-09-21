@@ -77,7 +77,7 @@ class ScholarPreviewBuildTests(unittest.TestCase):
         self.assertTrue(candidate['candidate_id'])
         self.assertTrue(all(check['passed'] for check in candidate['audit_checks']))
         self.assertEqual(candidate['withheld_counts']['source_wording'], 30)
-        self.assertEqual(candidate['withheld_counts']['text_content'], 19)
+        self.assertEqual(candidate['withheld_counts']['text_content'], 21)
         self.assertEqual(candidate['withheld_counts']['media'], 29)
         self.assertEqual(candidate['withheld_counts']['private_capture_rows'], 55)
         index = (build.OUT / 'index.html').read_text(encoding='utf-8')

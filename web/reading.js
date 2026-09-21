@@ -136,20 +136,57 @@
     return licenceLink(item);
   }
 
+  /* The citation usually opens with the editor's name; do not say it twice. */
+  function credit(text) {
+    const citation = (text.access_citation || "").trim();
+    const editor = (text.editor || "").trim();
+    const surname = editor.split(/\s+/).pop();
+    const lead = editor && surname && !citation.toLowerCase().startsWith(surname.toLowerCase())
+      ? editor + ", " : "";
+    return [lead + citation, text.access_locator].filter(Boolean).join(" · ");
+  }
+
+  function embeddableImage(url) {
+    const clean = String(url || "").split(/[?#]/)[0];
+    return clean.startsWith("/api/private-media/")
+      || /\.(?:avif|gif|jpe?g|png|webp)$/i.test(clean);
+  }
+
+  function mediaSourceLink(image) {
+    const sourceRow = data.sourceById?.[image.source_id] || {};
+    const editionRow = (data.editions || []).find(row => row.source_id === image.source_id);
+    const url = sourceRow.url || editionRow?.access_url || image.url;
+    return url ? `<a class="media-source" href="${esc(url)}" rel="noreferrer">Open image source</a>` : "";
+  }
+
   /* Release projections emit approved images only. The on-device projection may
      also emit private research links, identified by their explicit rights note. */
   function mark(cluster) {
     const image = (data.mediaBy[cluster.identity_id] || [])
       .find(m => m.media_type === "image" && m.url);
     if (!image) return spiral(cluster);
+    const sourceLink = mediaSourceLink(image);
+    if (!embeddableImage(image.url)) {
+      return `<span class="bowl-media is-reference">${spiral(cluster)}${sourceLink}</span>`;
+    }
     const privateOnly = privateResearch()
-      && image.rights_statement.startsWith("Private research view only;");
+      && String(image.rights_statement || "").startsWith("Private research view only;");
     const rights = privateOnly ? "private research view"
       : image.rights_status === "public_domain" ? "public domain"
       : image.rights_status === "open_license" ? "open licence" : "reviewed reuse";
-    return `<img class="bowl-image" src="${esc(image.url)}" alt="${esc(cluster.display_name)}"
-      loading="lazy" decoding="async">${image.attribution
-        ? `<span class="bowl-credit">${esc(image.attribution)} · ${esc(rights)}${licenceLink(image)}</span>` : ""}`;
+    return `<span class="bowl-media"><img class="bowl-image" src="${esc(image.url)}"
+      alt="${esc(cluster.display_name)}" loading="lazy" decoding="async">
+      <span class="media-fallback">${spiral(cluster)}</span>${image.attribution
+        ? `<span class="bowl-credit">${esc(image.attribution)} · ${esc(rights)}${licenceLink(image)}</span>` : ""}
+      ${sourceLink}</span>`;
+  }
+
+  function bindMediaFallbacks(root) {
+    root.querySelectorAll(".bowl-media img.bowl-image").forEach(img => {
+      const fail = () => img.closest(".bowl-media")?.classList.add("is-broken");
+      img.addEventListener("error", fail, {once: true});
+      if (img.complete && !img.naturalWidth) fail();
+    });
   }
 
   /* The index's own one-line description of what a bowl's text does, written
@@ -208,6 +245,43 @@
       if (verses.length) line = `Quotes ${verses.slice(0, 3).join(", ").replace(/[[\]"]/g, "")}`;
     }
     return limit ? clip(line, limit) : line;
+  }
+
+  const ORIGINAL_TEXT_TYPES = new Set(["inscription", "transcription", "transliteration", "incipit"]);
+
+  function textCredit(item) {
+    return `<p class="entry-credit">${esc(credit(item))}${textTerms(item)}</p>`;
+  }
+
+  function originalText(item) {
+    const rtl = item.script && item.script !== "Latin";
+    return `<div class="original-reading"><h3>${esc(item.text_type)}${item.language
+      ? " · " + esc(item.language) : ""}</h3>
+      <blockquote class="original-text" dir="${rtl ? "rtl" : "auto"}"
+        lang="${rtl ? "arc" : ""}">${esc(item.content)}</blockquote>${textCredit(item)}</div>`;
+  }
+
+  function textSections(rows) {
+    const translations = rows.filter(item => item.text_type === "translation");
+    const originals = rows.filter(item => ORIGINAL_TEXT_TYPES.has(item.text_type));
+    const summaries = rows.filter(item => item.text_type === "summary");
+    const other = rows.filter(item => item.text_type !== "translation"
+      && item.text_type !== "summary" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
+    const sections = translations.map(item => `<section class="entry-block entry-text">
+      <h2>Translation${item.language && item.language !== "English" ? " · " + esc(item.language) : ""}</h2>
+      <blockquote dir="auto" lang="${item.language === "English" ? "en" : ""}">${esc(item.content)}</blockquote>
+      ${textCredit(item)}</section>`);
+    if (originals.length) sections.push(`<details class="entry-block entry-original">
+      <summary>Show original incantation</summary>${originals.map(originalText).join("")}</details>`);
+    if (summaries.length) {
+      const body = summaries.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
+      sections.push(translations.length
+        ? `<details class="entry-block entry-summary"><summary>Research summary</summary>${body}</details>`
+        : `<section class="entry-block entry-text"><h2>What it says</h2>${body}</section>`);
+    }
+    sections.push(...other.map(item => `<section class="entry-block entry-text">
+      <h2>${esc(item.text_type)}</h2><blockquote>${esc(item.content)}</blockquote>${textCredit(item)}</section>`));
+    return sections.join("");
   }
 
   function card(cluster) {
@@ -642,7 +716,10 @@
         const prior = item.locators.get(key);
         if (!prior || tidy(locator).length > tidy(prior).length) item.locators.set(key, locator);
       }
-      if (url) item.url = url;
+      // Text and edition access links are added before media. A local private
+      // image derivative is useful to display, but must not replace the
+      // publication link in the bibliography.
+      if (url && !item.url) item.url = url;
     };
     (data.factsBy[id] || []).forEach(r => add(r.source_id, r.locator));
     (data.textsBy[id] || []).forEach(r => add(r.source_id, r.access_locator, r.access_url));
@@ -655,16 +732,6 @@
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
       return `<li><span>${link}</span>${item.locators.size ? `<small>${[...item.locators.values()].map(esc).join(" · ")}</small>` : ""}</li>`;
     }).join("")}</ul></section>`;
-  }
-
-  /* The citation usually opens with the editor's name; do not say it twice. */
-  function credit(text) {
-    const citation = (text.access_citation || "").trim();
-    const editor = (text.editor || "").trim();
-    const surname = editor.split(/\s+/).pop();
-    const lead = editor && surname && !citation.toLowerCase().startsWith(surname.toLowerCase())
-      ? editor + ", " : "";
-    return [lead + citation, text.access_locator].filter(Boolean).join(" · ");
   }
 
   function identifierRank(scheme) {
@@ -779,11 +846,7 @@
         </div>
       </header>
 
-      ${readable.length ? readable.map(t => `<section class="entry-block entry-text">
-        <h2>What it says</h2>
-        <blockquote dir="auto" lang="${esc(t.language === "English" ? "en" : "")}">${esc(t.content)}</blockquote>
-        <p class="entry-credit">${esc(credit(t))}${textTerms(t)}</p>
-      </section>`).join("") : ""}
+      ${textSections(readable)}
 
       ${withheld.length ? `<section class="entry-block">
         <h2>${readable.length ? "Further texts" : "What it says"}</h2>
@@ -928,6 +991,7 @@
     else if (browse) renderBrowse(view, browse[1]);
     else if (object) renderObject(view, decodeURIComponent(object[1]));
     else renderIndex(view, hash.split("?")[1] || "");
+    bindMediaFallbacks(view);
     view.scrollTop = 0;
   }
 

@@ -2,6 +2,7 @@
 
 import json
 import hashlib
+import re
 from functools import wraps
 from threading import RLock
 import mimetypes
@@ -24,6 +25,8 @@ from .rights import current_media_reviews
 
 
 WEB_ROOT = PROJECT_ROOT / "web"
+PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
+PRIVATE_MEDIA_NAME = re.compile(r"^MED-[A-F0-9]{12}\.png$")
 INTRO_COVERAGE = ("text_edition", "provenance", "image")
 
 
@@ -637,6 +640,15 @@ def make_handler(catalog, token):
                 elif path.startswith("/api/reader/"):
                     result = catalog.reader_table(path.rsplit("/", 1)[-1], params)
                     self._json(result) if result else self._error(404, "No such projected table")
+                elif path.startswith("/api/private-media/"):
+                    name = path.rsplit("/", 1)[-1]
+                    candidate = PRIVATE_MEDIA_ROOT / name
+                    if not PRIVATE_MEDIA_NAME.fullmatch(name) or not candidate.is_file():
+                        self._error(404, "Private media derivative not found")
+                    else:
+                        body = candidate.read_bytes()
+                        self._headers(200, "image/png", len(body))
+                        self.wfile.write(body)
                 elif path == "/api/reviews":
                     self._json(catalog.reviews(params))
                 elif path.startswith("/api/reviews/"):
