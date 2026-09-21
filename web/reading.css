@@ -46,6 +46,8 @@
 .about-preview { max-width: 38rem; margin-top: .9rem; color: var(--brownink-soft); font-size: .86rem; }
 .about-preview summary { color: var(--reading-accent); cursor: pointer; }
 .about-preview p { margin: .6rem 0; }
+.private-reading-notice { border-left: 2px solid var(--reading-accent); padding-left: .8rem; }
+.private-access-note { color: var(--ochre); font-weight: 600; }
 
 /* A bowl seen from above is a circle. The grid keeps that. */
 .bowl-grid { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); padding-bottom: 2.5rem; }

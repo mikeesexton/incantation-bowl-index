@@ -85,7 +85,7 @@ class ScholarPreviewBuildTests(unittest.TestCase):
         self.assertNotIn('pending project-owner approval', index)
         self.assertIn('Reuse terms and attribution appear with each included item', index)
 
-    def test_rows_come_from_the_shared_projection(self):
+    def test_rows_come_from_the_shared_release_projection(self):
         """A second row-builder would be a second chance to publish something withheld."""
         self.assertIn('from bowl_index.projection import', self.source)
         self.assertIn('Projection(conn)', self.source)

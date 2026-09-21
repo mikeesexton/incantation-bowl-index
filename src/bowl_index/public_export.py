@@ -67,6 +67,7 @@ def projection_manifest(projection, tables):
     counts = projection.gate_counts(tables['texts'])
     return {
         'generated_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'access_tier': 'reviewed_release',
         'export_policy': EXPORT_POLICY,
         'license': 'CC-BY-4.0',
         'license_url': 'https://creativecommons.org/licenses/by/4.0/',

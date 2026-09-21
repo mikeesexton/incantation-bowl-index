@@ -30,9 +30,21 @@ The new `facets` projection implements the second rule. It does not overwrite
 claims. Each controlled label retains the object, source field, source and
 locator from which it was derived.
 
+## Operational reader tiers
+
+| Reader | Audience | Data source | Current boundary |
+|---|---|---|---|
+| Private localhost | Mike | `PrivateResearchProjection` | All 271 stored texts, all 327 recorded media links and all eligible source wording; binds only to loopback and is not a redistribution surface |
+| Cloudflare Access preview | Up to 50 individually authorized users | `Projection` | The reviewed release candidate only: currently 252 text rows and 298 approved media rows |
+| Public library | Anyone | `Projection` | The same fail-closed rights model; remains local and unpublished |
+
+The UI code is shared, but its manifest identifies the tier. A row marked
+`private_research` is rendered only when the manifest itself is the local
+private tier. The static preview and public builders never receive those rows.
+
 ## Current release inventory
 
-The shared projection currently contains:
+The rights-gated release projection currently contains:
 
 | Material | Rows | Operational status |
 |---|---:|---|

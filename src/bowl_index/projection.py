@@ -1,4 +1,4 @@
-"""The single gated view of the corpus.
+"""The rights-gated release view of the corpus.
 
 Both the file exporter and the reader API build their rows here. That is
 deliberate: the gates that decide whether a text may be shown, whether a media
@@ -6,8 +6,9 @@ URL may be named, and whether a link would expose private capture storage must
 exist in exactly one place. A second implementation is a second chance to
 publish something withheld.
 
-The reader API serves these tables unchanged, so a published static export and
-the local console are the same bytes through the same code path.
+Static Access and public builds serve these tables unchanged. The localhost-only
+research console uses ``PrivateResearchProjection`` with the same table shapes,
+but may expose material held privately that this release projection withholds.
 """
 
 import json
@@ -313,7 +314,7 @@ class Projection:
     def _scholarship_decades(self):
         return decade_series(self.conn)
 
-    def _fact_candidates(self):
+    def _fact_candidates(self, retain_source_wording=False):
         """Short, checkable assertions about an object, with their source.
 
         Without this the projection can say a bowl exists and nothing about it —
@@ -345,7 +346,8 @@ class Projection:
             # Raw source wording is useful for explaining a normalized display
             # value, but it must pass the same expression gate independently.
             safe_recorded_value = recorded_value
-            if (row["field"] in SOURCE_WORDING_REVIEW_FIELDS
+            if (not retain_source_wording
+                    and row["field"] in SOURCE_WORDING_REVIEW_FIELDS
                     and row["source_rights_status"] != "public_domain"
                     and (len(recorded_value) > SOURCE_WORDING_PRIORITY_LENGTH
                          or EMBEDDED_QUOTATION.search(recorded_value))):

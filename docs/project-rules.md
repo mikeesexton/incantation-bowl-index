@@ -45,6 +45,13 @@ access is paid.
 | **General public reference** | Bowl facts, citations, relationships, project-authored summaries, public-domain material, compatible open-license material, and specifically permitted content | Evidence-bound public-release decision; private captures and unapproved text or images fail closed |
 | **Paid licensed service** | Research tools plus public-domain, compatible open-license, project-authored, or contractually licensed material | Documented rights chain and executed license for the actual text, transcription, translation, image, territory, term, display/export behavior, and revenue arrangement |
 
+The reader currently has three operational visibility tiers inside that rights
+model: Mike's localhost-only private reader, the named-user Cloudflare Access
+preview, and the future open public library. The latter two consume the reviewed
+public-reference projection; Access authentication does not relax its rights
+gates. Only the localhost reader may consume the richer private projection, and
+it must remain bound to a loopback address.
+
 Private possession does not authorize public distribution. Free public access
 does not make protected expression reusable. Charging does not cure missing
 permission. A private record may remain private permanently while its factual

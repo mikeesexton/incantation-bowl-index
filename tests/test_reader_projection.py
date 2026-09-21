@@ -117,11 +117,11 @@ class ProjectionTests(unittest.TestCase):
                          'review_source_wording')
 
     def test_the_api_projection_and_the_file_export_are_identical(self):
-        """The publish-safety guarantee: one gating implementation, not two.
+        """The release/export safety guarantee: one gating implementation.
 
-        If these ever diverge, the local console and a published export are no
-        longer the same bytes, and the export's gates stop guaranteeing the
-        console's behaviour.
+        If these ever diverge, the static preview and public export are no longer
+        the same bytes. The localhost console deliberately uses a separate,
+        explicitly private projection with these same table shapes.
         """
         tables=Projection(self.conn).tables()
         destination=self.root/'export'
@@ -138,6 +138,7 @@ class ProjectionTests(unittest.TestCase):
         self.assertEqual(manifest['media_approved_rows'],0)
         self.assertEqual(manifest['media_withheld_rows'],1)
         self.assertEqual(manifest['facts_withheld_wording_rows'],2)
+        self.assertEqual(manifest['access_tier'],'reviewed_release')
         self.assertEqual(manifest['license'],'CC-BY-4.0')
 
 if __name__=='__main__':

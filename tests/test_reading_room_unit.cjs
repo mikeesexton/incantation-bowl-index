@@ -10,15 +10,16 @@ const vm = require("node:vm");
 const source = fs.readFileSync("web/reading.js", "utf8");
 const body = source.slice(source.indexOf('const TABLES'), source.indexOf("function card(cluster)"));
 const context = vm.createContext({});
-vm.runInContext(body + "\nglobalThis.T = {summarise, mark, data};", context);
-const {summarise, mark, data} = context.T;
+vm.runInContext(body + "\nglobalThis.T = {summarise, mark, readableText, data};", context);
+const {summarise, mark, readableText, data} = context.T;
 
 const ID = "IDENT-TEST";
 const cluster = {identity_id: ID};
-function given({facts = [], texts = [], media = []}) {
+function given({facts = [], texts = [], media = [], accessTier = "release"}) {
   data.factsBy = {[ID]: facts};
   data.textsBy = {[ID]: texts};
   data.mediaBy = {[ID]: media};
+  data.manifest = {access_tier: accessTier};
 }
 const fact = (field, field_group, value) => ({field, field_group, value});
 
@@ -86,4 +87,22 @@ test("an approved image prints its attribution and reviewed rights status", () =
     attribution: "Test Museum", rights_status: "open_license", license_url: ""}]});
   const html = mark({...cluster, display_name: "Test bowl"});
   assert.match(html, /Test Museum · open licence/);
+});
+
+test("a private text is readable only in the localhost research tier", () => {
+  const row = {content_status: "private_research", content: "PRIVATE TRANSLATION"};
+  given({texts: [row]});
+  assert.strictEqual(readableText(row), false);
+  given({texts: [row], accessTier: "private_research"});
+  assert.strictEqual(readableText(row), true);
+});
+
+test("an unapproved local image is labelled private research, not reviewed reuse", () => {
+  given({accessTier: "private_research", media: [{media_type: "image",
+    url: "https://example.org/private.jpg", attribution: "Test catalogue",
+    rights_status: "copyrighted",
+    rights_statement: "Private research view only; no public reuse permission recorded."}]});
+  const html = mark({...cluster, display_name: "Private bowl"});
+  assert.match(html, /private research view/);
+  assert.doesNotMatch(html, /reviewed reuse/);
 });

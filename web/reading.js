@@ -1,9 +1,10 @@
 /* The reading room — the tab labelled "Explore", routed at #/explore.
  *
- * Reads only the gated projection: the same rows the file export writes, served
- * by the local console at /api/reader/* or, in the gated scholar preview, as
- * static JSON beside the page. That is the point of the indirection below — the
- * published build is this same file, so it cannot see more than the console can.
+ * The interface has two data providers with the same table shapes. The local
+ * console serves Mike's on-device research projection; static Access and public
+ * builds serve the rights-gated release projection. The manifest identifies the
+ * tier, so a private row can never become readable in a static release merely
+ * because this shared interface knows how to display it.
  *
  * A host page opts into the static build by setting, before this script loads:
  *   window.READER_BASE      where the projected tables live  (default /api/reader)
@@ -19,6 +20,9 @@
   const TABLES = ["identity_clusters", "objects", "identifiers", "facts", "facets", "texts", "editions", "sources", "media",
     "works", "contributors", "scholarship_decades", "publications"];
   const data = {loaded: false};
+  const privateResearch = () => data.manifest?.access_tier === "private_research";
+  const readableText = row => row.content_status === "included"
+    || (privateResearch() && row.content_status === "private_research");
   const esc = value => String(value === null || value === undefined ? "" : value)
     .replace(/[&<>"']/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[ch]));
 
@@ -57,7 +61,7 @@
     data.identity_clusters.forEach(c => {
       const facts = data.factsBy[c.identity_id] || [];
       const facets = data.facetsBy[c.identity_id] || [];
-      const text = (data.textsBy[c.identity_id] || []).find(x => x.content_status === "included");
+      const text = (data.textsBy[c.identity_id] || []).find(readableText);
       c.haystack = [c.display_name, ...(data.identifiersBy[c.identity_id] || []).flatMap(i => [i.scheme, i.value]),
         ...facts.map(f => f.value), ...facets.map(f => f.facet_label), text ? text.content : ""]
         .join(" ").toLowerCase();
@@ -125,14 +129,23 @@
     return ` · <a href="${esc(url)}" rel="license noreferrer">${esc(label)}</a>`;
   }
 
-  /* An approved image, or nothing. The projection emits a media row only for a
-     current approval, so this cannot show an uncleared picture — there is simply
-     no row to render, and the spiral carries the grid until RIGHTS-002 lands. */
+  function textTerms(item) {
+    if (item.content_status === "private_research") {
+      return ` · <span class="private-access-note">Private research copy · not cleared for redistribution</span>`;
+    }
+    return licenceLink(item);
+  }
+
+  /* Release projections emit approved images only. The on-device projection may
+     also emit private research links, identified by their explicit rights note. */
   function mark(cluster) {
     const image = (data.mediaBy[cluster.identity_id] || [])
       .find(m => m.media_type === "image" && m.url);
     if (!image) return spiral(cluster);
-    const rights = image.rights_status === "public_domain" ? "public domain"
+    const privateOnly = privateResearch()
+      && image.rights_statement.startsWith("Private research view only;");
+    const rights = privateOnly ? "private research view"
+      : image.rights_status === "public_domain" ? "public domain"
       : image.rights_status === "open_license" ? "open licence" : "reviewed reuse";
     return `<img class="bowl-image" src="${esc(image.url)}" alt="${esc(cluster.display_name)}"
       loading="lazy" decoding="async">${image.attribution
@@ -144,7 +157,7 @@
      its editor so it never renders as the bowl's text further down the page. */
   const CARD_LINE_EDITOR = "Incantation Bowl Index card line";
   const cardLine = id => ((data.textsBy[id] || [])
-    .find(t => t.editor === CARD_LINE_EDITOR && t.content_status === "included") || {}).content || "";
+    .find(t => t.editor === CARD_LINE_EDITOR && readableText(t)) || {}).content || "";
 
   /* Falling back to the claims, choose by field, not by length. The shortest
      ritual value used to win, which put an installation instruction — "Exterior
@@ -199,7 +212,7 @@
 
   function card(cluster) {
     const id = cluster.identity_id;
-    const text = (data.textsBy[id] || []).find(t => t.content_status === "included");
+    const text = (data.textsBy[id] || []).find(readableText);
     const line = summarise(cluster, 96);
     const place = cluster.display_collection;
     const tongue = cluster.display_language;
@@ -383,10 +396,14 @@
     });
     // Card lines are counted with the descriptions, not with the texts: the
     // sentence below is about how much of the corpus a visitor can read.
-    const readableTexts = data.texts.filter(row => row.content_status === "included"
+    const readableTexts = data.texts.filter(row => readableText(row)
       && row.editor !== CARD_LINE_EDITOR);
     const readableTranslations = readableTexts.filter(row => row.text_type === "translation").length;
     const readableSummaries = readableTexts.filter(row => row.text_type === "summary").length;
+    const privateTexts = readableTexts.filter(row => row.content_status === "private_research");
+    const privateTranslations = privateTexts.filter(row => row.text_type === "translation").length;
+    const privateSummaries = privateTexts.filter(row => row.text_type === "summary").length;
+    const localTier = privateResearch();
     view.innerHTML = `<div class="reading-head">
         ${filtered ? `<a class="entry-back" href="#/explore">← Bowls worth reading</a>` :
           `<span class="eyebrow">Late antique Mesopotamia, roughly 500–700 CE</span>`}
@@ -397,10 +414,24 @@
             <div><dt>Bowls</dt><dd>${data.identity_clusters.length.toLocaleString()}</dd></div>
             <div><dt>Linked editions</dt><dd>${resolvedPublications.length.toLocaleString()}</dd></div>
             <div><dt>Readable texts</dt><dd>${readableTexts.length.toLocaleString()}</dd></div>
-            <div><dt>Images</dt><dd>${m.media_approved_rows.toLocaleString()}</dd></div>
+            <div><dt>Images</dt><dd>${(localTier ? m.media_available_rows : m.media_approved_rows).toLocaleString()}</dd></div>
           </dl>`}
         ${note ? `<p class="standfirst">${esc(note)}</p>` : ""}
-        ${filtered ? "" : `<p class="standfirst-note">Reuse terms appear with each included text
+        ${filtered ? "" : localTier ? `<p class="standfirst-note private-reading-notice">This is Mike's
+          on-device research bank. Availability here is not permission to publish, redistribute,
+          or share a text or image.</p>
+          <details class="about-preview"><summary>About this private reader and its coverage</summary>
+            <p><strong>${readableTranslations}</strong> translations and
+              <strong>${readableSummaries}</strong> research summaries are readable here, along with
+              <strong>${data.texts.filter(row => row.editor === CARD_LINE_EDITOR).length}</strong>
+              project-authored card descriptions. Of those research texts,
+              <strong>${privateTranslations}</strong> translations and
+              <strong>${privateSummaries}</strong> summaries are private-only.</p>
+            <p>All <strong>${m.media_available_rows}</strong> recorded image links are available;
+              <strong>${m.media_private_rows}</strong> are private-only because no public reuse
+              approval is recorded. Publication links connect ${publicationObjects.size.toLocaleString()}
+              candidate records to ${publicationIdentities.size.toLocaleString()} bowl identities.</p>
+          </details>` : `<p class="standfirst-note">Reuse terms appear with each included text
           or image. When modern wording cannot be shown, its citation and locator remain available.</p>
           <details class="about-preview"><summary>About this preview and its coverage</summary>
             <p><strong>${readableTranslations}</strong> public-domain translations and
@@ -725,8 +756,8 @@
     // The card line is our own description, not a text of the bowl; it leads the
     // page as the standfirst and must not appear among its editions below.
     const bowlTexts = texts.filter(t => t.editor !== CARD_LINE_EDITOR);
-    const readable = bowlTexts.filter(t => t.content_status === "included");
-    const withheld = bowlTexts.filter(t => t.content_status !== "included");
+    const readable = bowlTexts.filter(readableText);
+    const withheld = bowlTexts.filter(t => !readableText(t));
     const editions = groupedEditions(data.editionsBy[id] || []);
     const rawLabels = cluster.members.map(m => (data.objectById[m] || {}).label).filter(Boolean);
     const identifiers = data.identifiersBy[id] || [];
@@ -751,7 +782,7 @@
       ${readable.length ? readable.map(t => `<section class="entry-block entry-text">
         <h2>What it says</h2>
         <blockquote dir="auto" lang="${esc(t.language === "English" ? "en" : "")}">${esc(t.content)}</blockquote>
-        <p class="entry-credit">${esc(credit(t))}${licenceLink(t)}</p>
+        <p class="entry-credit">${esc(credit(t))}${textTerms(t)}</p>
       </section>`).join("") : ""}
 
       ${withheld.length ? `<section class="entry-block">

@@ -16,8 +16,8 @@ from urllib.parse import parse_qs, unquote, urlparse
 from .db import PROJECT_ROOT, connect, migrate
 from .dedupe import pair_evidence
 from .identity import CORE_COVERAGE, identity_rows
-from .projection import PROJECTION_COLUMNS, Projection
-from .public_export import projection_manifest
+from .projection import PROJECTION_COLUMNS
+from .private_projection import PrivateResearchProjection, private_manifest
 from .ids import new_id
 from .proofreading import current_text_reviews
 from .rights import current_media_reviews
@@ -174,10 +174,10 @@ class CorpusCatalog:
             for identity_id, values in object_types.items():
                 by_id[identity_id]["object_types"] = sorted(values)
 
-            # The reader surface never touches the rows above. It reads the same
-            # gated projection the file export writes, so the local console and a
-            # published static export are the same bytes through the same code.
-            projection = Projection(conn)
+            # The local reader is Mike's private research bank. It intentionally
+            # shows every stored text and media URL, while static release builders
+            # continue to use the fail-closed public Projection.
+            projection = PrivateResearchProjection(conn)
             projection_tables = projection.tables()
             controlled_facets = defaultdict(lambda: defaultdict(set))
             for facet in projection_tables["facets"]:
@@ -194,12 +194,8 @@ class CorpusCatalog:
                 labels = [label for values in groups.values() for label in values]
                 if labels:
                     row["search_blob"] += " " + " ".join(labels).casefold()
-            manifest = projection_manifest(projection, projection_tables)
-            manifest["tables"] = {
-                name: {"rows": len(rows), "url": "/api/reader/" + name}
-                for name, rows in projection_tables.items()
-            }
-            manifest["served_from"] = "local console"
+            generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            manifest = private_manifest(projection, projection_tables, generated_at)
             # The introduction counts edition pointers as well as stored text rows.
             # Preserve the research console's narrower has_text_edition / missing
             # text filter. A generic scholarly mention is not an edition.
@@ -215,14 +211,19 @@ class CorpusCatalog:
             ):
                 if link["source_id"] in edition_sources:
                     edition_objects.add(link["object_id"])
-            approved_image_objects = {item["object_id"] for item in projection_tables["media"]}
+            viewable_image_objects = {item["object_id"] for item in projection_tables["media"]}
+            approved_image_objects = {
+                item["object_id"] for item in projection_tables["media"]
+                if item["id"] in projection.approved
+            }
             included_text_objects = {
                 item["object_id"] for item in projection_tables["texts"]
-                if item["content_status"] == "included"
+                if item["content_status"] in {"included", "private_research"}
             }
             for row in catalog_rows:
                 row["has_edition_reference"] = bool(row["has_text_edition"] or
                                                    edition_objects.intersection(row["member_ids"]))
+                row["has_image_here"] = bool(viewable_image_objects.intersection(row["member_ids"]))
                 row["has_approved_image"] = bool(approved_image_objects.intersection(row["member_ids"]))
                 row["has_text_here"] = bool(included_text_objects.intersection(row["member_ids"]))
             identities = [
@@ -364,7 +365,7 @@ class CorpusCatalog:
             availability = {
                 "text_here": bool(row["has_text_here"]),
                 "published_text": bool(row["has_edition_reference"]),
-                "image_here": bool(row["has_approved_image"]),
+                "image_here": bool(row["has_image_here"]),
                 "image_reference": bool(row["has_image"]),
             }
             if available and not availability.get(available, False):
@@ -373,7 +374,7 @@ class CorpusCatalog:
 
         sorters = {
             "explore": lambda row: (-bool(row["has_text_here"]),
-                                      -bool(row["has_approved_image"]),
+                                      -bool(row["has_image_here"]),
                                       -row["content_completeness"],
                                       row["display_name"].casefold(), row["identity_id"]),
             "completeness_desc": lambda row: (-row["completeness_score"], row["display_name"].casefold()),

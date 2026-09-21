@@ -25,6 +25,26 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-21 — Codex — Restore the private local research reader
+
+**Claimed:** ACCESS-002, OPS-001
+**Corpus:** unchanged — state digest `6cd15c856898`
+**Tests:** 303 Python passed; 33 Node passed; 10/10 release checks passed;
+real-corpus and browser checks passed
+
+- Split the on-device research reader from the reviewed release projection. The
+  private reader now exposes all 271 stored texts — 54 translations, 148
+  research summaries, one transliteration and 68 project card descriptions —
+  all 327 recorded media links and all 6,382 eligible fact rows, with explicit
+  private/no-redistribution labels where a release decision is absent.
+- Visually verified the formerly withheld Barakat Gallery X.0552 translation in
+  the private reader. Rebuilt release candidate `46e0709eff71`; it still
+  withholds 19 text contents and 29 media rows and passed all ten release audits.
+- Documented the three operational reader tiers and the recommended separation.
+  Cloudflare Access, the deployed preview and the public library were not
+  changed or deployed. A private Mac mini should remain loopback-bound and be
+  reached through Tailscale plus an SSH tunnel, with encrypted Restic backups.
+
 ## 2026-09-20 — Codex — Consolidate reader and search UX
 
 **Claimed:** ACCESS-009, QA-004

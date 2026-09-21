@@ -91,15 +91,16 @@ class IntroductionTests(unittest.TestCase):
         self.assertNotIn("private-photo.jpg", payload)
         self.assertNotIn("Reported place", payload)
 
-    def test_text_available_here_follows_the_gated_projection(self):
+    def test_text_available_here_uses_the_private_local_bank(self):
         catalog = self.populated_catalog()
-        # The legacy convenience flag is not a release decision. Without a
-        # current publication-ledger approval, the visitor label must stay off.
+        self.assertEqual(catalog.search({"available": ["text_here"]})["total"], 1)
+        self.assertTrue(any(row["has_text_here"] for row in catalog.rows))
+        # The legacy public flag does not affect private availability either.
         self.conn.execute("UPDATE texts SET public_ok=1")
         self.conn.commit()
         catalog.refresh()
-        self.assertEqual(catalog.search({"available": ["text_here"]})["total"], 0)
-        self.assertFalse(any(row["has_text_here"] for row in catalog.rows))
+        self.assertEqual(catalog.search({"available": ["text_here"]})["total"], 1)
+        self.assertTrue(any(row["has_text_here"] for row in catalog.rows))
 
     def test_read_only_snapshot_stays_stable_until_refresh(self):
         catalog = self.populated_catalog()
@@ -122,7 +123,7 @@ class IntroductionTests(unittest.TestCase):
         original = catalog.introduction()
         add_candidate(self.conn, self.candidate("Later object", "LATER-9"))
         self.conn.commit()
-        with patch("bowl_index.web.Projection.tables", side_effect=ValueError("Test failure")):
+        with patch("bowl_index.web.PrivateResearchProjection.tables", side_effect=ValueError("Test failure")):
             with self.assertRaises(ValueError):
                 catalog.refresh()
         self.assertEqual(catalog.introduction(), original)

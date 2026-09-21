@@ -103,7 +103,7 @@ function identityRow(item) {
   const flags = [];
   if (item.has_text_here) flags.push("Text available here");
   else if (item.has_edition_reference) flags.push("Published text reference");
-  if (item.has_approved_image) flags.push("Image available here");
+  if (item.has_image_here ?? item.has_approved_image) flags.push("Image available here");
   else if (item.has_image) flags.push("Image reference");
   const caution = ["suspected_fake", "disputed", "uncertain", "pseudo_script"].includes(item.authenticity)
     ? `<span class="object-caution">${escapeHtml(humanize(item.authenticity))}</span>` : "";

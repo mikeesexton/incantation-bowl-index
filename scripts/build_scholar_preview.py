@@ -7,11 +7,12 @@ the corpus, and `tests/test_public_site.py` enforces that by forbidding
 that does show data, so it lives at its own path and is expected to be closed by
 a Cloudflare Access policy before anyone is pointed at it.
 
-What crosses the boundary is the reviewed projection and nothing else. The rows
-are built by `projection.Projection` — the same code the file exporter and the
-local reader API use — so a row that is withheld here is withheld everywhere,
-and there is no second implementation to disagree with the first. The console's
-own `app.js`, with its review and refresh endpoints, is never copied.
+What crosses the boundary is the reviewed release projection and nothing else.
+The rows are built by `projection.Projection` — the same code the file exporter
+and future public library use — so a row withheld from release is withheld from
+every shared surface. The localhost reader deliberately uses a separate private
+projection. The console's own `app.js`, with its review and refresh endpoints,
+is never copied.
 
 Usage:
 
