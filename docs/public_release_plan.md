@@ -167,7 +167,7 @@ the fifth partially reviewed Wohlstein translation, fourteen protected modern
 translations, one modern transcription, and twenty-nine other unapproved media rows. The append-only
 publication and rights ledgers now carry those decisions.
 
-The current public `/library` candidate `3fe90c33d7b5...` groups the released material
+The current public `/library` candidate `8491daf233bf...` groups the released material
 into 454 browseable bowl records. It contains 252 texts and 298 media rows and
 passes ten checks covering projection gates, required attribution and terms,
 Penn credits, coherent shared URLs, private paths, reviewer-only fields and

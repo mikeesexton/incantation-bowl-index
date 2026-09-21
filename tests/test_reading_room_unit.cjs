@@ -8,10 +8,10 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 
 const source = fs.readFileSync("web/reading.js", "utf8");
-const body = source.slice(source.indexOf('const TABLES'), source.indexOf("function card(cluster)"));
+const body = source.slice(source.indexOf('const TABLES'), source.indexOf("const BROWSE"));
 const context = vm.createContext({});
-vm.runInContext(body + "\nglobalThis.T = {summarise, mark, readableText, textSections, data};", context);
-const {summarise, mark, readableText, textSections, data} = context.T;
+vm.runInContext(body + "\nglobalThis.T = {summarise, mark, readableText, textSections, card, data};", context);
+const {summarise, mark, readableText, textSections, card, data} = context.T;
 
 const ID = "IDENT-TEST";
 const cluster = {identity_id: ID};
@@ -118,6 +118,14 @@ test("a PDF or catalogue page is a source link, never a broken image", () => {
   assert.doesNotMatch(html, /<img/);
   assert.match(html, /Open image source/);
   assert.match(html, /href="https:\/\/example.org\/source-record"/);
+  const cardMark = mark({...cluster, display_name: "Referenced bowl"}, false);
+  assert.doesNotMatch(cardMark, /<a\b/);
+  assert.doesNotMatch(cardMark, /Open image source/);
+  const cardHtml = card({...cluster, display_name: "Referenced bowl",
+    display_collection: "Test collection", display_language: "Aramaic",
+    display_date: "Date not recorded"});
+  assert.strictEqual((cardHtml.match(/<a\b/g) || []).length, 1,
+    "a card must contain only its single outer link");
 });
 
 test("a translation leads and the Aramaic transcription is expandable", () => {

@@ -161,11 +161,11 @@
 
   /* Release projections emit approved images only. The on-device projection may
      also emit private research links, identified by their explicit rights note. */
-  function mark(cluster) {
+  function mark(cluster, includeSourceLink = true) {
     const image = (data.mediaBy[cluster.identity_id] || [])
       .find(m => m.media_type === "image" && m.url);
     if (!image) return spiral(cluster);
-    const sourceLink = mediaSourceLink(image);
+    const sourceLink = includeSourceLink ? mediaSourceLink(image) : "";
     if (!embeddableImage(image.url)) {
       return `<span class="bowl-media is-reference">${spiral(cluster)}${sourceLink}</span>`;
     }
@@ -292,7 +292,7 @@
     const tongue = cluster.display_language;
     const when = cluster.display_date;
     return `<article class="bowl-card"><a href="#/explore/${encodeURIComponent(id)}">
-      <div class="bowl-card-mark">${mark(cluster)}</div>
+      <div class="bowl-card-mark">${mark(cluster, false)}</div>
       <div class="bowl-card-body">
         <h3>${titleMarkup(cluster)}</h3>
         ${line ? `<p class="bowl-card-line">${esc(line)}</p>` : ""}

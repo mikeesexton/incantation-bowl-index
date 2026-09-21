@@ -25,6 +25,24 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-21 — Codex — Repair Explore card layout regression
+
+**Claimed:** ACCESS-002, QA-004
+**Corpus:** unchanged — state digest `be8ca54172dd`
+**Tests:** 305 Python passed; 35 Node passed; both static builders passed
+10/10 release audits; desktop grid visually checked at top and lower rows
+
+- Fixed the oversized blank cards visible in Mike's local Explore grid. The
+  browser was repairing invalid nested anchors because an image-source link had
+  been placed inside each card's existing link.
+- Compact cards now omit the secondary source link; individual bowl pages keep
+  it. A regression test renders the real card function and requires exactly one
+  anchor, preventing the invalid structure from returning.
+- Visually checked both the first Explore row and lower image-heavy rows: cards
+  remain compact and populated after successful images, failed images and
+  source-reference fallbacks. Local candidates `6f983e17ff6e` (Access) and
+  `8491daf233bf` (public) pass all release audits and were not deployed.
+
 ## 2026-09-21 — Codex — Repair private images and inscription access
 
 **Claimed:** ACCESS-002, RIGHTS-002, TEXT-005
