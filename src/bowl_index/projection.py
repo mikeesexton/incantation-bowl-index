@@ -6,8 +6,8 @@ URL may be named, and whether a link would expose private capture storage must
 exist in exactly one place. A second implementation is a second chance to
 publish something withheld.
 
-Static Access and public builds serve these tables unchanged. The localhost-only
-research console uses ``PrivateResearchProjection`` with the same table shapes,
+Shared scholar and public builds serve these tables unchanged. Mike-only
+research surfaces use ``PrivateResearchProjection`` with the same table shapes,
 but may expose material held privately that this release projection withholds.
 """
 

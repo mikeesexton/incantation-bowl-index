@@ -49,6 +49,9 @@ The rules most easily broken in practice. Full text in
    identities, adjudicating scholarly claims, declaring authenticity, or
    clearing rights. Deploying `site/` on an explicit instruction is allowed
    (`docs/project-rules.md` §3); doing it unasked is not.
+7. **“Mike Access” and “Mike-facing” mean Mike alone.** They use the complete
+   private research projection, including protected text and recorded images;
+   public-release gates apply only to shared or public surfaces.
 
 ## Before specific kinds of work
 

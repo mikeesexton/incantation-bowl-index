@@ -25,6 +25,37 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-22 — Codex — Audit Barakat listings and regional findspots
+
+**Claimed:** DISC-002, META-001, META-002, META-003, META-005, ACCESS-002,
+ACCESS-003, ACCESS-010
+**Corpus:** changed (two new Barakat objects; one enriched; all text, images,
+claims, offers and captures retained) — state digest `a176b21223f1`
+**Tests:** 312 Python passed; 37 Node passed; shared release audit 10/10; Mike
+Access completeness audit 6/6; `git diff --check` passed
+
+- Added PF.5729 and LO.769 as new probable objects and enriched existing
+  X.0552 from the complete live listings: 47 object claims, seven text rows,
+  five locally retained images, seven catalogue identifiers, current offers and
+  three hash-addressed page captures. Preserved the LO.76/LO.769 discrepancy
+  as unresolved and kept generic catalogue copy separate from object provenance.
+- Recorded Mike's permanent terminology rule: “Mike Access” and “Mike-facing”
+  mean Mike alone and use the complete private projection, not a release gate.
+  Added an ignored Mike-only builder and host lock. Snapshot `24fc8696c4d9`
+  contains 278/278 texts, 353/353 media and all retained source wording,
+  including every Barakat translation and image. It was not deployed because
+  the `/mike` identity policy has not yet been verified as single-user.
+- Kept the separate shared/public projection conservative: three project card
+  lines are readable there, while four dealer-derived text rows and five
+  photographs remain withheld from distribution. Candidate `af488e34d8c3`
+  passes all ten release checks and was not deployed.
+- Audited the regional-distribution sentence. Waller supports Susa as the secure
+  controlled-excavation case outside Iraq; BM 91711's Syrian attribution is
+  plausible but unverified; the documented Jordan and Uzbekistan objects are a
+  juglet and jug; no object-level corroboration was located for Lebanon or
+  Egypt. The full evidence note and Barakat questions are saved under
+  `research/reviews/`.
+
 ## 2026-09-22 — Codex — Refine Penn questions and expand object images
 
 **Claimed:** CONC-002, RIGHTS-002, ACCESS-003
@@ -40,7 +71,7 @@ five requested galleries visually/count checked; `git diff --check` passed
 - Added all additional gallery views exposed on Penn's Object Images pages for
   B16007, B16081, B16086, B16062, and B6353: respectively 5, 5, 8, 5, and 3
   total views after projection. All 21 new media rows have exact rights-review
-  history for the gated Mike Access educational preview.
+  history for the shared gated scholar preview.
 - Added the multi-image dossier gallery and normalized retired Penn asset URLs
   to the working 1600-pixel Collections host. Candidate `68a078f43e32` includes
   319 approved media and passed all ten release checks.

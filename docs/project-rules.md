@@ -41,16 +41,26 @@ access is paid.
 
 | Layer | May contain | Gate |
 |---|---|---|
-| **Private research vault** | Lawfully obtained source scans, working OCR and rich text, research notes, page-image coordinates, and protected scholarly expression needed for personal analysis | Record provenance, content hash, completeness, access restrictions, and any library copying conditions; keep local, encrypted, backed up, and outside Git |
+| **Private research vault / Mike Access** | Lawfully obtained source scans, working OCR and rich text, research notes, page-image coordinates, and protected scholarly expression needed for Mike's personal analysis | Record provenance, content hash, completeness, access restrictions, and any library copying conditions; keep outside Git and restrict every interface to Mike alone |
 | **General public reference** | Bowl facts, citations, relationships, project-authored summaries, public-domain material, compatible open-license material, and specifically permitted content | Evidence-bound public-release decision; private captures and unapproved text or images fail closed |
 | **Paid licensed service** | Research tools plus public-domain, compatible open-license, project-authored, or contractually licensed material | Documented rights chain and executed license for the actual text, transcription, translation, image, territory, term, display/export behavior, and revenue arrangement |
 
-The reader currently has three operational visibility tiers inside that rights
-model: Mike's localhost-only private reader, the named-user Cloudflare Access
-preview, and the future open public library. The latter two consume the reviewed
-public-reference projection; Access authentication does not relax its rights
-gates. Only the localhost reader may consume the richer private projection, and
-it must remain bound to a loopback address.
+The reader has distinct operational visibility tiers inside that rights model:
+Mike's private reader (localhost or a single-user authenticated remote surface),
+the shared named-user scholar preview, and the future open public library. The
+terms **Mike Access** and **Mike-facing** always mean that Mike is the sole user.
+They are personal research access, not release, publication or distribution, and
+must expose the complete lawfully held research record through
+`PrivateResearchProjection`, including protected text and recorded images. Do
+not apply public text or media-reuse gates to Mike Access.
+
+The shared scholar preview and public library consume the reviewed
+public-reference projection and continue to fail closed. Cloudflare Access by
+itself does not define the tier: a route open to any person besides Mike is a
+shared surface and may not consume the private projection. A remote Mike Access
+route must be identity-restricted to Mike, prevent access through alternate
+deployment hostnames, disable caching and indexing, and never place private
+captures or database files in a repository.
 
 Private possession does not authorize public distribution. Free public access
 does not make protected expression reusable. Charging does not cure missing

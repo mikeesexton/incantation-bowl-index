@@ -1,7 +1,7 @@
 /* The reading room — the tab labelled "Explore", routed at #/explore.
  *
  * The interface has two data providers with the same table shapes. The local
- * console serves Mike's on-device research projection; static Access and public
+ * Mike-only surfaces serve the private research projection; shared scholar and public
  * builds serve the rights-gated release projection. The manifest identifies the
  * tier, so a private row can never become readable in a static release merely
  * because this shared interface knows how to display it.
@@ -185,7 +185,7 @@
       : image.rights_status === "open_license" ? "open licence" : "reviewed reuse";
   }
 
-  /* Release projections emit approved images only. The on-device projection may
+  /* Release projections emit approved images only. The Mike-only projection may
      also emit private research links, identified by their explicit rights note. */
   function mark(cluster, includeSourceLink = true) {
     const image = orderedImages(cluster)[0];
@@ -536,7 +536,7 @@
           </dl>`}
         ${note ? `<p class="standfirst">${esc(note)}</p>` : ""}
         ${filtered ? "" : localTier ? `<p class="standfirst-note private-reading-notice">This is Mike's
-          on-device research bank. Availability here is not permission to publish, redistribute,
+          private research bank. Availability here is not permission to publish, redistribute,
           or share a text or image.</p>
           <details class="about-preview"><summary>About this private reader and its coverage</summary>
             <p><strong>${readableTranslations}</strong> translations and
@@ -760,7 +760,7 @@
         const prior = item.locators.get(key);
         if (!prior || tidy(locator).length > tidy(prior).length) item.locators.set(key, locator);
       }
-      // Text and edition access links are added before media. A local private
+      // Text and edition access links are added before media. A Mike-private
       // image derivative is useful to display, but must not replace the
       // publication link in the bibliography.
       if (url && !item.url) item.url = url;

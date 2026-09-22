@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex: project-policy review for Mike's Access corpus request",
+  "reviewed_at": "2026-09-22T16:15:00+00:00",
+  "policy": "Publish only the index's short factual card lines. Withhold Barakat's translations, including the older abbreviated translation row, because access authentication does not supply a reuse licence.",
+  "entries": [
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-PF5729-SUMMARY-20260922",
+      "text_id": "TXT-999BF8A68C11",
+      "evidence_sha256": "9071fc729e6baf47483ef32c3177113464c4e41085d24499535cdbea433ea00d",
+      "rights_basis": "own_work",
+      "rights_locator": "Original Incantation Bowl Index card line based on the cited Barakat PF.5729 listing; it states factual features without reproducing the dealer translation.",
+      "license_url": null,
+      "publication_decision": "approved",
+      "attribution": "Incantation Bowl Index factual summary; source facts reported by Barakat Gallery, PF.5729.",
+      "editorial_status": "Project-authored factual card line; the seller's reading has not been independently verified.",
+      "rationale": "The row is the index's own concise statement of the named client, line count and protective purpose. It does not reproduce Barakat's translation or commentary.",
+      "followup": null
+    },
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-X0552-SUMMARY-20260922",
+      "text_id": "TXT-3425383F7D47",
+      "evidence_sha256": "5b5e23131a0d92a8b3f09a1579c504b0cefed4a31ce468c5fe8f94f1eab0b5c7",
+      "rights_basis": "own_work",
+      "rights_locator": "Original Incantation Bowl Index card line based on the cited Barakat X.0552 listing; it states factual features without reproducing the dealer translation.",
+      "license_url": null,
+      "publication_decision": "approved",
+      "attribution": "Incantation Bowl Index factual summary; source facts reported by Barakat Gallery, X.0552.",
+      "editorial_status": "Project-authored factual card line; the seller's reading has not been independently verified.",
+      "rationale": "This rebinds the existing project-authored summary to the updated live-source evidence fingerprint. The row remains a factual paraphrase rather than dealer expression.",
+      "followup": null
+    },
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-LO769-SUMMARY-20260922",
+      "text_id": "TXT-6E87B8609F6A",
+      "evidence_sha256": "83fb5e3be465c309ab3af0c048bf6f933a17ac071e0cb6104a5b221907d673fd",
+      "rights_basis": "own_work",
+      "rights_locator": "Original Incantation Bowl Index card line based on the cited Barakat LO.769 listing; it states factual features without reproducing the dealer translation or commentary.",
+      "license_url": null,
+      "publication_decision": "approved",
+      "attribution": "Incantation Bowl Index factual summary; source facts reported by Barakat Gallery, LO.769.",
+      "editorial_status": "Project-authored factual card line; the seller's reading and commentary have not been independently verified.",
+      "rationale": "The row is the index's own concise statement of the named client, harmful spirit and named opponent. It does not reproduce the dealer's wording.",
+      "followup": null
+    },
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-PF5729-TRANSLATION-HOLD-20260922",
+      "text_id": "TXT-C505BEFE7A31",
+      "evidence_sha256": "d1e9e475b1c45a07963e619c450ad299e0dfa4b86e557f6ccbe1fb3dbc276939",
+      "rights_basis": "not_established",
+      "rights_locator": "Barakat Gallery PF.5729 listing, full description.",
+      "license_url": null,
+      "publication_decision": "withhold",
+      "attribution": "Unsigned translation displayed by Barakat Gallery.",
+      "editorial_status": "Verbatim dealer-page translation, retained privately and unverified.",
+      "rationale": "The listing supplies no licence permitting republication of its full English translation. It remains available only in the private research layer.",
+      "followup": "Ask Barakat to identify the translator and grant or decline permission for the intended Access-gated scholarly display."
+    },
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-X0552-TRANSLATION-HOLD-20260922",
+      "text_id": "TXT-54760D54FFC4",
+      "evidence_sha256": "d7f87335e3083645a0c914e1e52207b82b7c53d492a372ec5115e31d2fcaca95",
+      "rights_basis": "not_established",
+      "rights_locator": "Barakat Gallery X.0552 listing, numbered translation lines 1–7.",
+      "license_url": null,
+      "publication_decision": "withhold",
+      "attribution": "Unsigned translation displayed by Barakat Gallery.",
+      "editorial_status": "Verbatim dealer-page translation, retained privately and unverified.",
+      "rationale": "The listing supplies no licence permitting republication of its full English translation. It remains available only in the private research layer.",
+      "followup": "Ask Barakat to identify the translator and grant or decline permission for the intended Access-gated scholarly display."
+    },
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-X0552-OLDER-SUMMARY-HOLD-20260922",
+      "text_id": "TXT-C4E64CF6D96B",
+      "evidence_sha256": "2062af4f959134839fc58c999aeff2c3e062f3f8321a521033771d65e692e3e4",
+      "rights_basis": "not_established",
+      "rights_locator": "Barakat Gallery X.0552 listing, older stored translation summary at listing lines 34–35.",
+      "license_url": null,
+      "publication_decision": "withhold",
+      "attribution": "Older unsigned dealer-translation summary.",
+      "editorial_status": "Legacy summarized translation; superseded for public display by a separately reviewed project-authored card line.",
+      "rationale": "The older row was stored as copyrighted dealer-derived translation content and is unnecessary for public display because the index has a distinct factual summary.",
+      "followup": "Retain privately for audit continuity; use the project-authored card line in rights-safe projections."
+    },
+    {
+      "review_id": "IBI-TEXTPUB-BARAKAT-LO769-TRANSLATION-HOLD-20260922",
+      "text_id": "TXT-A3DE24EB8BE0",
+      "evidence_sha256": "41f9c74e25d34533800535c661cc33cf764087c7b930dc2a52f2b01f8e3fa2d8",
+      "rights_basis": "not_established",
+      "rights_locator": "Barakat Gallery LO.769 listing, translation headed ‘LO.76’ and commentary followed by a Siam Bhayro attribution.",
+      "license_url": null,
+      "publication_decision": "withhold",
+      "attribution": "Siam Bhayro, as attributed on the dealer page after the translation and commentary; exact authorship scope requires confirmation.",
+      "editorial_status": "Verbatim dealer-page translation, retained privately and unverified; identifier discrepancy preserved.",
+      "rationale": "The listing supplies no licence permitting republication of its full English translation, and the precise scope of the displayed attribution is not explicit. It remains available only in the private research layer.",
+      "followup": "Ask Barakat to confirm the translator/commentator, resolve LO.76 versus LO.769, and grant or decline permission for the intended Access-gated scholarly display."
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "815f38aafd3398ea489d9a6b01a50bc3eaaebfb65d4215a41622faa7f7638bf4",
+  "corpus_digest": "a176b21223f1aa420ff08dacdd28b403c6d431a64ad6d0e1be906ec20ee09878",
   "migrations": 16,
-  "note": "Added 21 reviewed Penn object-image views, refined the priority reconciliation questions, and added multi-image Mike Access galleries.",
-  "recorded_at": "2026-09-22T10:10:44+00:00",
+  "note": "Added and fully extracted Barakat PF.5729, X.0552, and LO.769; captured pages; reviewed shared-release boundaries; staged complete single-user Mike Access snapshot; documented regional findspot evidence.",
+  "recorded_at": "2026-09-22T16:29:00+00:00",
   "recorded_by": "codex",
   "schema_version": "016_accuracy_audit_reviews",
   "tables": {
@@ -11,16 +11,16 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "9999f67133df04ac2f7794d6dbb028909d61faeba41eaa13d0a2b52cd0149f80",
-      "rows": 2268
+      "digest": "210cc9a0cfeefc2d4a5bcbba882e3dfc98aa3e4d8b8110c0027fd6861ec4dd3d",
+      "rows": 2270
     },
     "appearances": {
-      "digest": "ec40fb1fa226977dcb8e9cf7aef32d74d4f675ea2d35978e3fd8de673bb5f209",
-      "rows": 2268
+      "digest": "3e7a07a725b284b40ee9b7717a3887bfbfae1b37ff05330cb7deed8ae175f617",
+      "rows": 2270
     },
     "captures": {
-      "digest": "adcddf6d9e13501d272bac3ba6dcadfc0209a1f3b301728799c221ba944e3a8b",
-      "rows": 55
+      "digest": "230ecbdb1f3f53db6b9fe3ed7032e01621d02a5720a7b3eb2fceffa14885411c",
+      "rows": 58
     },
     "claim_conflict_review_history": {
       "digest": "c8f49d91c87ca0ab000110c5c3bcbed83cad2dac0ea74d85eb168109e8f5c197",
@@ -35,8 +35,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "2e6f6016a553e5b91f9a5b3a82a1231aece1a3f063ed696d0002bda7e1e2b51a",
-      "rows": 7218
+      "digest": "0bf7de0a0ad60c0bc412c14776e88eb35c1404f2fc75008b82514f69435e058e",
+      "rows": 7255
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -59,12 +59,12 @@
       "rows": 53
     },
     "events": {
-      "digest": "9793aaaa898c1e41f3e3f9ba8660ec2aebebfc7b1f440fa3181b0115c4d0a3fb",
-      "rows": 212
+      "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
+      "rows": 215
     },
     "identifiers": {
-      "digest": "1822c179d8e2dc30b8612af27902d575196afa21b9f3495c253141dd778d6200",
-      "rows": 4741
+      "digest": "c0d6448b8d1b15d1d68ee8d14368662338486bd3fcedb8e3521d2304a224f575",
+      "rows": 4746
     },
     "leads": {
       "digest": "e6c07b7875fcf3bea0c4618c4510d1e4d695bb97136484947a2f53fe642d5cb3",
@@ -75,12 +75,12 @@
       "rows": 14
     },
     "media": {
-      "digest": "3e21775eb99ac93b865d6df400e22c2cb43ba3ef87405cf3d2880c1367c45218",
-      "rows": 348
+      "digest": "26cd7907d2413f927cac8bf3202d060463a28907d7bedf44e111ce4ae6bbf9c1",
+      "rows": 353
     },
     "media_rights_reviews": {
-      "digest": "f00ec8d08a48493bd89983fbc149ec25b7c3b7f44701a8db055ae4f3081e86bc",
-      "rows": 646
+      "digest": "6df2b53269f597910cb99c5e04ee5183925681f95535c9abccb3f02f30f4e2fa",
+      "rows": 651
     },
     "merge_log": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -95,8 +95,8 @@
       "rows": 5
     },
     "objects": {
-      "digest": "a53f9bb511ac1a63869833908bd8a3788f6e43a6a55eb548bc09cfacd068c905",
-      "rows": 1969
+      "digest": "ccfab7eafc5118ffc44115fbd1686da8d5eb6c118e612edecb68149ff2ff1a14",
+      "rows": 1971
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -127,20 +127,20 @@
       "rows": 112
     },
     "sources": {
-      "digest": "b8cf099ccca48b9d82935a4b27681ec8951ec95ad13dd0b6c1a5c8875cb400fc",
-      "rows": 862
+      "digest": "d054ad22f3ccf4054a20c64cd1912aff6a3faa20f24231f02b41a5a77d2939de",
+      "rows": 864
     },
     "text_proofreading_reviews": {
       "digest": "6fa446bc7352da299d66007a05add7de347ea51173334ca8e06877fb1f774873",
       "rows": 40
     },
     "text_publication_reviews": {
-      "digest": "08869a5ced2aa2c5eec159028322234ff8764199e06c87730db4825c3c971cad",
-      "rows": 303
+      "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
+      "rows": 310
     },
     "texts": {
-      "digest": "b6a5bf148b930e784bdf100c981ba9a9755e72ae9b627b565bbc9996af5f6b96",
-      "rows": 273
+      "digest": "91e82225b39af99be247542c4cbd8372c9b102c2b84462df850da280d28c45a7",
+      "rows": 278
     }
   }
 }

@@ -120,7 +120,7 @@ class ProjectionTests(unittest.TestCase):
         """The release/export safety guarantee: one gating implementation.
 
         If these ever diverge, the static preview and public export are no longer
-        the same bytes. The localhost console deliberately uses a separate,
+        the same bytes. Mike-only surfaces deliberately use a separate,
         explicitly private projection with these same table shapes.
         """
         tables=Projection(self.conn).tables()

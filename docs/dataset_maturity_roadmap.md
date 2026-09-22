@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-22T10:10:10+00:00`
+Generated: `2026-09-22T16:27:57+00:00`
 
 ## Portfolio status
 
@@ -10,8 +10,8 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 28 done · 20 in progress · 16 queued · 0 blocked |
-| Quantitative handoff gates passing | 3/5 |
+| Roadmap tasks | 28 done · 21 in progress · 16 queued · 0 blocked |
+| Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 10/24 |
 
 ### What is solid
@@ -34,7 +34,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - Publication links remain incomplete: 739 of 1,652 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.
 - The first stratified identity-and-extraction audit is complete, but it is a 60-identity baseline rather than corpus-wide certification: unequal weighting reduces its effective sample size to 47.5, one BM068A claim check is indeterminate, the review was not independent, and findspot claims are not yet consistently graded by evidence basis.
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just two identities have a recorded transcription or transliteration and only 54 identities have a translation. Davidovitz 41 is the first modern private transcription-and-translation pilot; four scan-checked Wohlstein translations and the Martínez Borobio transliteration and project paraphrase are released on recorded bases, while the fifth Wohlstein reading still awaits specialist review and other protected editions remain private or pointer-only.
-- Release rights are only partly reviewed: all 327 media rows carry current ledger entries and 298 now have completed owner approvals—ten on recorded public-domain/open-license status and 288 for Penn's stated nonprofit educational use. The remaining 29 are withheld. The expanded preview is deployed behind Cloudflare Access; the public-library candidate remains local and unpublished.
+- Release rights remain separate from Mike's private access: 319 of 353 media rows have completed decisions for shared/public reuse and 34 remain withheld from those surfaces. Mike Access contains all 353 recorded media rows because it is a single-user personal research surface, not a release. The expanded shared scholar preview remains deployed behind Cloudflare Access; the public-library candidate remains local and unpublished.
 - The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
 - Acquisition completeness is not yet measured corpus-wide: 52 of 862 sources have linked captures, 41 with PDFs and eleven with only non-PDF captures. All 52 captured sources are now assessed through 53 append-only holding rows: 49 sources have a complete document, Naveh-Shaked 1993 and Juusola 1999 are correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Burberry 2020 is now a complete, hash-bound University of Exeter repository holding with all twenty-five ACB units extracted. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.
 - Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run.
@@ -45,14 +45,14 @@ The project has three deliberately separate access layers. Lawful private posses
 
 | Layer | Status | Audience | Content boundary | Next gate |
 |---|---|---|---|---|
-| 1. Private research vault | Active | Researcher only | Lawfully obtained scans, working OCR/rich text, research notes and page-image coordinates; no redistribution entitlement implied | Document assessment ledger, encrypted backup, LC copying log and rich-text pilot |
+| 1. Private research vault / Mike Access | Active | Mike alone | Lawfully obtained scans, working OCR/rich text, research notes and page-image coordinates; no redistribution entitlement implied | Single-user remote gate verification, encrypted backup, LC copying log and rich-text pilot |
 | 2. General public reference | Active Local Only | Anyone after release review | Maximum factual bowl detail, citations, relationships and own summaries; protected expression and unapproved images withheld | Complete release QA, rights review and reviewed public export |
 | 3. Paid licensed research service | Exploratory | Individuals and institutions under terms | Research tools plus only public-domain, compatibly licensed, project-authored or contractually licensed content | Demand validation, counsel-reviewed rights chain, agreements, royalty accounting and access controls |
 
 Promotion rules:
 
 - Every source capture records provenance, content hash, access method and a provisional rights status before any OCR or structured extraction is treated as durable research material.
-- Private rich text may preserve working OCR, ancient scripts, editorial apparatus and page-image coordinates, but it remains local and must retain page-level links to the source scan.
+- Private rich text may preserve working OCR, ancient scripts, editorial apparatus and page-image coordinates. Mike Access may serve it locally or through a route restricted to Mike alone, with page-level links to the source scan and no repository-tracked private payload.
 - The public layer maximizes facts, citations, relationships and project-authored summaries while releasing third-party text or images only on public-domain, compatible open-license, written-permission or own-work grounds.
 - The paid layer may use a subscription model, but protected full text, modern transcriptions, translations, commentary and images require a documented chain of rights and a license covering the actual use, territory, term and revenue arrangement.
 - No content is promoted automatically between layers. A private record can remain private permanently while its factual claims and bibliographic pointer appear publicly.
@@ -73,31 +73,31 @@ Current evidence: **206 scholarship works indexed; 40 with a source-linked held 
 
 | Measure | Current |
 |---|---:|
-| Candidate source records | 1969 |
-| Working physical identity hypotheses (all statuses) | 1652 |
-| Source appearances | 2268 |
-| Sources | 862 |
+| Candidate source records | 1971 |
+| Working physical identity hypotheses (all statuses) | 1654 |
+| Source appearances | 2270 |
+| Sources | 864 |
 | Source documents with current assessments | 52 |
 | Source documents assessed complete | 49 |
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 400 |
-| Triaged claim-field differences | 644/644 |
+| Identities triggering raw claim-difference flags | 403 |
+| Triaged claim-field differences | 644/654 |
 | Compatible differences | 626 |
-| Review required (missing or no longer valid) | 0 |
+| Review required (missing or no longer valid) | 10 |
 | Existing reviews requiring revalidation | 0 |
 | Substantive conflict instances | 18 across 16 identities |
-| All identities with a publication reference | 739/1652 (44.7%) |
-| Probable/confirmed identities with a publication reference | 611/1075 (56.8%) |
-| Identities with a translation | 54 |
+| All identities with a publication reference | 739/1654 (44.7%) |
+| Probable/confirmed identities with a publication reference | 611/1077 (56.7%) |
+| Identities with a translation | 56 |
 | Scan-checked normalized reading texts | 39 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 895/895 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 2 |
-| Media records with a non-unknown rights status | 39/348 (11.2%) |
-| Media with a current ledger entry | 348/348 |
+| Media records with a non-unknown rights status | 44/353 (12.5%) |
+| Media with a current ledger entry | 353/353 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 31 |
 | Open or active leads | 16 |
@@ -109,16 +109,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1205 | 72.9% |
+| Location | 1207 | 73.0% |
 | Provenance | 362 | 21.9% |
-| Dating | 482 | 29.2% |
-| Dimensions | 457 | 27.7% |
-| Material | 408 | 24.7% |
-| Language | 1032 | 62.5% |
+| Dating | 484 | 29.3% |
+| Dimensions | 459 | 27.8% |
+| Material | 410 | 24.8% |
+| Language | 1032 | 62.4% |
 | Script | 93 | 5.6% |
 | Text Edition | 2 | 0.1% |
-| Translation | 54 | 3.3% |
-| Image | 326 | 19.7% |
+| Translation | 56 | 3.4% |
+| Image | 329 | 19.9% |
 
 ### Content-facet coverage
 
@@ -126,19 +126,19 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 551 | 33.4% |
-| Biblical Intertexts | 167 | 10.1% |
-| Client | 157 | 9.5% |
+| Publication | 552 | 33.4% |
+| Biblical Intertexts | 169 | 10.2% |
+| Client | 159 | 9.6% |
 | Condition | 142 | 8.6% |
-| Ritual | 107 | 6.5% |
-| Text Description | 89 | 5.4% |
-| Text Form | 41 | 2.5% |
+| Ritual | 109 | 6.6% |
+| Text Description | 92 | 5.6% |
+| Text Form | 42 | 2.5% |
 | Practitioner | 29 | 1.8% |
 | Visual | 27 | 1.6% |
 | Parallels | 7 | 0.4% |
 | Authenticity Assessment | 4 | 0.2% |
 | Vessel Form | 4 | 0.2% |
-| Target | 2 | 0.1% |
+| Target | 3 | 0.2% |
 
 ## Maturity scale
 
@@ -363,10 +363,10 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: The 2026-09-09 access model names all three layers, their audiences, allowed content, next gates and five non-automatic promotion rules. It expressly avoids treating private use, free distribution or payment as a substitute for permission.
 - [ ] **ACCESS-002 — Build the private rich-text evidence vault** · In progress · Mixed
   - Done when: Every retained document has lawful-acquisition notes, a content hash, completeness assessment and access restrictions; rich text preserves Unicode ancient scripts, editorial uncertainty, printed pagination and links back to page images without becoming public by default.
-  - Evidence/status: The content-addressed private archive holds complete source documents with hashes, acquisition notes, visual checks, source scopes and explicit rights status, including the four Brill corpus editions supplied during the Library of Congress visit. Catalogue-level extraction is complete for 236 Brill appearances. A versioned private TEI package contract and read-only validator bind a future rich-text transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. The localhost reader uses a separate private projection and now exposes all 273 stored rows: 55 translations, 148 research summaries, 68 project card descriptions, one transliteration and one Jewish Babylonian Aramaic transcription. Davidovitz 41 is the first source-page-checked private text-and-image pilot: its English translation and lineated Aramaic transcription are stored with exact locators and no-redistribution status, while a hash-bound builder extracts its reviewed bowl photograph from the held PDF into a loopback-only derivative. The reader exposes all 327 recorded media references, treats the 28 PDF/page URLs as links rather than broken images, and uses runtime fallbacks for failing remote rasters. The broader TEI pilot and durable remote availability remain gated by successful encrypted Restic restores from both the planned local SSD and Backblaze B2 repositories after the Mac mini arrives.
+  - Evidence/status: The content-addressed private archive holds complete source documents with hashes, acquisition notes, visual checks, source scopes and explicit rights status, including the four Brill corpus editions supplied during the Library of Congress visit. Catalogue-level extraction is complete for 236 Brill appearances. A versioned private TEI package contract and read-only validator bind a future rich-text transformation to one source, retained capture, document hash and text hash; require item-specific acquisition, copying and download notes; enforce private-only status, UTF-8 NFC, increasing printed-page/image anchors and explicit transformation metadata; and return no protected content. Mike clarified on 22 September that ‘Mike Access’ and ‘Mike-facing’ always mean his single-user personal research surface, not distribution. PrivateResearchProjection now defines both the localhost reader and any future Mike-only authenticated route: all 278 stored text rows (58 translations, 218 summaries, one transliteration and one transcription), all 353 media records and retained source wording are available with zero private-tier withholding. Snapshot 24fc8696c4d9 stages that complete view outside Git, including durable local copies of all five Barakat images, and passes 6/6 private completeness and path-leak checks. It is not deployed until a bowlam.com/mike* policy is verified to admit Mike alone and alternate Pages hosts are confirmed locked. The broader TEI pilot and durable remote availability remain gated by successful encrypted Restic restores from both the planned local SSD and Backblaze B2 repositories after the Mac mini arrives.
 - [ ] **ACCESS-003 — Maintain the maximal factual public reference layer** · In progress · Mixed
   - Done when: Every publishable bowl fact, citation, source relationship and project-authored summary can enter the reviewed public projection while private captures, protected text and unapproved images fail closed.
-  - Evidence/status: The rights-gated Projection feeds the file export, Cloudflare Access scholar preview and future public library through one set of fail-closed gates. The current local candidate exposes 6,352 short facts, 3,636 source-traceable project-authored facets, 252 text contents and 298 media rows with current publication decisions; it withholds 30 source-wording values, 21 text contents and 29 media resources while retaining their controlled labels or bibliographic pointers. The two added Ford rows are available only through the separate localhost PrivateResearchProjection and remain blank in candidate 6f983e17ff6e, whose ten release audits pass. Fact triage identifies 6,127 factual-metadata rows, 40 prose-prone rows from sources recorded as public domain, 185 cited short source claims and 30 non-public-domain values in the private human wording-review queue. Private capture paths remain forbidden. Expanded gated candidate a16b8f19061b remains the deployed production baseline a78d885f-18c7-46db-9c57-07f73ae1d211; custom-domain preview paths redirect to Access and the ungated Pages aliases return 404. The new candidate was not promoted, and the public library remains local and unpublished.
+  - Evidence/status: The rights-gated Projection feeds the file export, Cloudflare Access scholar preview and future public library through one set of fail-closed gates. The 22 September local candidate af488e34d8c3 exposes 6,379 short facts, 3,645 source-traceable project-authored facets, 254 text contents and 319 media rows with current publication decisions; it withholds 34 source-wording values, 24 text contents and 34 media resources while retaining their controlled labels or bibliographic pointers. It adds all three Barakat records and their project-authored card lines while withholding four dealer-derived text rows and five listing photographs. Ten of ten release audits pass. Private capture paths remain forbidden. Expanded gated candidate a16b8f19061b remains the deployed production baseline a78d885f-18c7-46db-9c57-07f73ae1d211; custom-domain preview paths redirect to Access and the ungated Pages aliases return 404. The new candidate was not promoted, and the public library remains local and unpublished.
 - [x] **ACCESS-004 — Create a document-completeness and transformation ledger** · Done · Engineering
   - Done when: Each source holding distinguishes citation-only, excerpt, front matter, complete scan, physically inspected work, OCR, corrected rich text and object-level extraction, with dates, hashes and reviewer evidence.
   - Evidence/status: Migration 015 and `ibi ingest-document-assessment` provide an immutable, supersedable per-holding ledger that keeps document form and extent, inspection method, text transformation and object-level extraction separate. Every source-linked capture is now covered: all 52 captured sources have 53 hash-bound assessments, comprising 49 sources with a complete document, Naveh-Shaked 1993 and Juusola 1999 with front matter only, and the archived VMBA landing page as an excerpt; Ford 2023 also retains its separate summary excerpt beside its complete article. Burberry 2020 adds a complete born-digital holding with extractable text and complete catalogue-level extraction of twenty-five ACB units. The eleven HTML holdings were inspected structurally and by content rather than classified from MIME type: nine item or article pages have complete bounded object extraction, the complete Schoyen collection introduction has no finite item list, and VMBA's 64 recovered JBA records remain partial because the landing capture cannot establish database-wide completeness. Forty sources now have hash-bound object-level extraction, 32 complete and eight partial. No scan is mislabeled OCR or corrected rich text, and Gordon's inspected-but-unarchived AASOR article is not counted as a holding.
@@ -384,7 +384,10 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: Done 20 September 2026. bowlam.com serves the generated landing page from Cloudflare Pages project `bowlam` at snapshot digest 6075922202342008: project-authored overview, the counting method, the withheld-by-design chapter, and the /api/interest field. tests/test_public_site.py holds the boundary — no corpus endpoint, no console route, no identity identifier, aggregates only.
 - [x] **ACCESS-009 — Gate a factual scholar preview behind Cloudflare Access** · Done · Research owner and engineering
   - Done when: Named scholars reach a factual view of the corpus at bowlam.com through per-person authentication; the deployed artefact is a reviewed `ibi export-public` build rather than the working database; no protected transcription, translation or image is behind the gate; and access is individually revocable and logged.
-  - Evidence/status: Done 20 September 2026. bowlam.com/preview serves the expanded reviewed projection (252 published text rows and 298 approved media) behind a Cloudflare Access one-time-PIN policy on an allow-list; the free tier covers 50 named users. Built by scripts/build_scholar_preview.py from projection.Projection, the same release gate the file exporter and future public library use; the localhost reader is a distinct private tier. Candidate a16b8f19061b was approved and deployed as production deployment a78d885f-18c7-46db-9c57-07f73ae1d211. Verified: bowlam.com remains public, bowlam.com/preview* redirects to Access including nested data paths, and the project and per-deployment Pages hosts answer 404 for /preview*.
+  - Evidence/status: Done 20 September 2026. bowlam.com/preview serves the expanded reviewed projection (252 published text rows and 298 approved media) behind a Cloudflare Access one-time-PIN policy on an allow-list; the free tier covers 50 named users. Built by scripts/build_scholar_preview.py from projection.Projection, the same release gate the file exporter and future public library use; Mike Access is a distinct private tier. Candidate a16b8f19061b was approved and deployed as production deployment a78d885f-18c7-46db-9c57-07f73ae1d211. Verified: bowlam.com remains public, bowlam.com/preview* redirects to Access including nested data paths, and the project and per-deployment Pages hosts answer 404 for preview paths.
+- [ ] **ACCESS-010 — Provide complete remote Mike Access** · In progress · Mike and engineering
+  - Done when: Mike alone can reach the complete PrivateResearchProjection remotely; the identity policy admits no second user, alternate deployment hosts return 404, responses are private/no-store and noindex, the snapshot stays outside Git, and all stored texts, media and source wording pass completeness checks.
+  - Evidence/status: The durable rule is recorded in project-rules.md and both agent instruction files. scripts/build_mike_access.py builds ignored snapshot 24fc8696c4d9 with 278/278 texts, 353/353 media rows, six local image derivatives and all 6,413 private fact rows; 6/6 completeness and path-leak checks pass. A /mike host lock is checked in. Deployment remains pending verification of a Cloudflare Access policy restricted to Mike alone and an explicit deployment instruction.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
@@ -403,7 +406,7 @@ Add source-attributed findspots, current locations, collection and acquisition h
   - Evidence/status: Forty Montgomery register rows, all thirty-five available English translations, and forty Penn number concordances have direct source review. Nine new field differences are explicitly adjudicated as unresolved; five Penn relationship assertions are structured separately from identity. Waller's excavation-site review now supplies an explicit distinction between documented excavation and unverified reported provenance. Original-script work and independent second text review remain.
 - [ ] **META-005 — Grade findspot claims by evidence basis** · In progress · Research
   - Done when: Every probable or confirmed identity with a findspot claim records whether the place derives from documented controlled excavation, a museum or accessions register, a dealer or market report, later scholarly inference, or unverified evidence; original place claims and uncertainty remain source-attributed.
-  - Evidence/status: Waller 2025, printed pp. 10–13, distinguishes documented excavation sites from unverified register and dealer provenances. BM 91711 has a separate source-attributed assessment marking its plausible Arban attribution unverified. Primary-source review of Schwab 1891 pp. 590–593 now enumerates three Dieulafoy mission Susiana bowls, N–P, with separate records, dimensions, and excavation-evidence assessments corroborated by Montgomery 1913 p. 19. Current museum accessions and precise contexts remain open.
+  - Evidence/status: Waller 2025, printed pp. 10–13, distinguishes documented excavation sites from unverified register and dealer provenances. BM 91711 has a separate source-attributed assessment marking its plausible Arban attribution unverified. Primary-source review of Schwab 1891 pp. 590–593 now enumerates three Dieulafoy mission Susiana bowls, N–P, with separate records, dimensions, and excavation-evidence assessments corroborated by Montgomery 1913 p. 19. A 22 September audit of Barakat LO.769's broad Jordan/Syria/Lebanon/Egypt/Uzbekistan claim found that the likely Schøyen source names an Uzbekistan jug rather than a bowl; Jordan's documented Aqaba object is likewise a juglet; Syria's BM 91711 attribution remains plausible but unverified; and no object-level excavation support was located for Lebanon or Egypt. Current museum accessions and precise contexts remain open.
 - [x] **META-006 — Extend the field model to the content facets** · Done · Mixed
   - Done when: People, Ritual, Intertexts, Visual and Scholarship are modelled field groups with coverage reporting and conflict comparison, not stray claim names.
   - Evidence/status: Thirteen content groups added alongside the seven release-gate facets: condition, vessel_form, text_form, text_description, client, target, practitioner, ritual, biblical_intertexts, parallels, visual, publication and authenticity_assessment. They are counted for coverage and compared for conflicts, and they flow through identity_rows, the enrichment report and the identity export without changing next_action or the handoff gate. Biblical intertexts are the best-covered content facet at 168 identities (12.7%), then client 58, ritual 43, practitioner 29, publication 62, condition 139. Widening the language group with catalogue_language_codes raised language coverage from 459 (34.8%) to 663 (50.2%).
@@ -496,10 +499,10 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [x] Every generated claim-difference flag has a recorded triage — current `0`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `10`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
-- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage. Measured 2026-09-19 at 0.568 (611/1,075). The proxy counts only the 'publication object key' and 'bibliographic concordance' identifier schemes, so the sourced no-known-edition status that TEXT-001's done_when also accepts cannot move it; and if the 205 NLI bowls have no known edition the ceiling is 0.809. Whether to realign the metric with the task definition or to let the gate slip on acquisitions is a review decision, not an agent decision. — current `56.8%`; target `>= 80.0%`.
-- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `91.7%`; target `>= 100.0%`.
+- [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage. Measured 2026-09-19 at 0.568 (611/1,075). The proxy counts only the 'publication object key' and 'bibliographic concordance' identifier schemes, so the sourced no-known-edition status that TEXT-001's done_when also accepts cannot move it; and if the 205 NLI bowls have no known edition the ceiling is 0.809. Whether to realign the metric with the task definition or to let the gate slip on acquisitions is a review decision, not an agent decision. — current `56.7%`; target `>= 80.0%`.
+- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `90.4%`; target `>= 100.0%`.
 
 ### Required setup tasks
 
@@ -546,6 +549,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-22:** Added and fully extracted three live Barakat Gallery listings: PF.5729 and LO.769 as new probable records and X.0552 as a substantially enriched existing record. Preserved dealer wording, full translations, five visually checked and locally retained images, current-offer appearances, and three hash-addressed private page captures; separated every object-specific fact from generic catalogue copy and preserved LO.76 versus LO.769 as an unresolved identifier discrepancy. Mike clarified the permanent terminology: Mike Access and Mike-facing always mean his single-user private research bank, not distribution. The new private builder therefore includes every stored text and media row regardless of shared-release decisions; snapshot 24fc8696c4d9 contains all Barakat translations and images and passes 6/6 completeness checks. Shared/public projections still approve only project-authored card lines and withhold dealer text and images. A source audit found no support for the dealer's regional-distribution sentence as written: the located Jordan and Uzbekistan comparanda are juglets/jugs, Syria is plausible but unverified, and Lebanon and Egypt lack object-level corroboration. The Mike snapshot and shared candidate af488e34d8c3 remain local pending their respective deployment gates.
 - **2026-09-21:** Repaired the localhost private reader as an actual personal research bank rather than a release-shaped preview. Visually checked Ford 2023's source pages, stored its ten-line English translation and Jewish Babylonian Aramaic transcription for Davidovitz 41 as source-located private rows, and built a reproducible hash-bound derivative of the bowl photograph from figure 1. The shared UI now places a full translation first, offers original-language material under ‘Show original incantation’, refuses to treat PDF or catalogue-page URLs as images, and falls back safely when a remote raster fails. All 273 stored text rows remain available to Mike on loopback; the local shared-release candidate withholds the two new Ford rows and passes 10/10 release audits. No Cloudflare or public deployment was changed.
 - **2026-09-20:** Published ACCESS-009 behind Cloudflare Access. An Access policy binds to one hostname, but a Pages project also answers on bowlam.pages.dev and a per-deployment alias, so the first promoted build was briefly downloadable there with no gate. Withdrawn within minutes and re-published behind a host lock in site/functions/preview/[[path]].js, which 404s every host the policy does not cover. tests/test_scholar_preview.py holds it.
 - **2026-09-20:** Published ACCESS-008: bowlam.com is live from the Pages project. Applied the owner's two release decisions — the 134 Waller verse-citation rows are published on the open_license basis with CC BY-NC travelling with them, and a recorded permissive media label is now treated as the rights decision, approving 10 of 327. Published texts went 112 to 246 and the reading room's default pool 70 bowls to 191.

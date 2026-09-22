@@ -1,10 +1,9 @@
-"""Localhost-only projection of the private research bank.
+"""Mike-only projection of the private research bank.
 
 This deliberately shares the public projection's table shapes and presentation
-logic, but not its release decisions.  It is for Mike's personal research
-console only: every stored text and every recorded media URL is visible, while
-the public and Cloudflare Access builds continue to use ``Projection`` and fail
-closed.
+logic, but not its release decisions. It is for Mike's personal research
+surfaces only: every stored text and every recorded media URL is visible. Shared
+scholar and public builds continue to use ``Projection`` and fail closed.
 """
 
 from pathlib import Path
@@ -17,7 +16,7 @@ DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 
 
 class PrivateResearchProjection(Projection):
-    """A private reader snapshot; never use this class in an export builder."""
+    """A private reader snapshot; never use it in a shared or public builder."""
 
     def __init__(self, conn, media_root=None):
         super().__init__(conn)
@@ -130,5 +129,5 @@ def private_manifest(projection, tables, generated_at):
             name: {"rows": len(rows), "url": "/api/reader/" + name}
             for name, rows in tables.items()
         },
-        "served_from": "localhost-only private research console",
+        "served_from": "Mike-only private research surface",
     }

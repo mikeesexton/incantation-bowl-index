@@ -114,7 +114,7 @@ test("legacy Penn asset URLs use the current Collections image host", () => {
     /https:\/\/collections\.penn\.museum\/collections\/assets\/065T\/658k\/658212_1600\.jpg/);
 });
 
-test("a private text is readable only in the localhost research tier", () => {
+test("a private text is readable only in the Mike-only research tier", () => {
   const row = {content_status: "private_research", content: "PRIVATE TRANSLATION"};
   given({texts: [row]});
   assert.strictEqual(readableText(row), false);

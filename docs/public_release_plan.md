@@ -7,7 +7,7 @@ substitute for an item-specific decision by the project owner.
 ## The governing distinction
 
 Cloudflare Access controls who can reach a copy; it does not create permission
-to make or distribute that copy. The staged scholar preview must therefore use
+to make or distribute that copy. The staged shared scholar preview must therefore use
 the same fail-closed projection as an open release. Protected scans, OCR,
 transcriptions, translations, photographs and source prose stay in the private
 vault unless a recorded basis covers the actual use.
@@ -34,13 +34,16 @@ locator from which it was derived.
 
 | Reader | Audience | Data source | Current boundary |
 |---|---|---|---|
-| Private localhost | Mike | `PrivateResearchProjection` | All 273 stored texts, all 327 recorded media records, one reviewed local image derivative, and all eligible source wording; binds only to loopback and is not a redistribution surface |
-| Cloudflare Access preview | Up to 50 individually authorized users | `Projection` | The reviewed release candidate only: currently 252 text rows and 298 approved media rows |
+| Mike Access | Mike alone, locally or through a single-user authenticated route | `PrivateResearchProjection` | Every lawfully held text, recorded media item and retained source wording; personal research access, not a release surface |
+| Shared Cloudflare Access preview | Individually authorized scholars other than Mike | `Projection` | The reviewed release candidate only: currently 252 text rows and 298 approved media rows |
 | Public library | Anyone | `Projection` | The same fail-closed rights model; remains local and unpublished |
 
 The UI code is shared, but its manifest identifies the tier. A row marked
-`private_research` is rendered only when the manifest itself is the local
-private tier. The static preview and public builders never receive those rows.
+`private_research` is rendered only when the manifest itself is the Mike-only
+private tier. Shared preview and public builders never receive those rows. A
+remote Mike Access route must admit Mike alone, reject alternate deployment
+hostnames, disable caching and indexing, and revert to the shared projection
+before any second user is authorized.
 
 ## Current release inventory
 

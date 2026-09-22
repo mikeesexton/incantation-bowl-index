@@ -32,6 +32,10 @@ data/exports/*/
 # Generated gated-preview build (ACCESS-009); promoted into site/public only once Access is attached.
 site/preview-build/
 
+# Generated Mike-only research build; contains private texts and media and must never enter Git.
+site/mike-build/
+site/public/mike/
+
 # Generated public-library build; it is promoted only after owner approval.
 site/library-build/
 
