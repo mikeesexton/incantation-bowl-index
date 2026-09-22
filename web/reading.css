@@ -90,6 +90,17 @@
   font: 700 .7rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
 .identifier-help { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
 .identifier-help:focus-visible { outline: 2px solid var(--reading-accent); outline-offset: 3px; }
+.entry-gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+.entry-gallery figure { margin: 0; min-width: 0; }
+.entry-gallery figure > a { display: grid; place-items: center; aspect-ratio: 1; overflow: hidden;
+  background: var(--clay-deep); border: 1px solid var(--clay-line); text-decoration: none; }
+.entry-gallery .gallery-image { width: 100%; height: 100%; object-fit: contain; display: block; }
+.gallery-fallback { display: none; padding: 1rem; color: var(--reading-accent); text-align: center; }
+.entry-gallery figure.is-broken .gallery-image { display: none; }
+.entry-gallery figure.is-broken .gallery-fallback { display: block; }
+.entry-gallery figcaption { margin-top: .35rem; color: var(--brownink-soft);
+  font: .68rem/1.35 var(--sans); text-align: center; }
+.entry-gallery figcaption .media-source { font-size: inherit; }
 
 .entry-block { margin: 0 0 2.1rem; }
 .entry-block h2 { font: 600 .76rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;

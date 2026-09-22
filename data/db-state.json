@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "be8ca54172ddd6fcb060c913efff2e3d791df2871448cf5feb5a5d03f3a277a5",
+  "corpus_digest": "815f38aafd3398ea489d9a6b01a50bc3eaaebfb65d4215a41622faa7f7638bf4",
   "migrations": 16,
-  "note": "Prepared bounded Penn Museum reconciliation question list; corpus unchanged",
-  "recorded_at": "2026-09-22T09:24:07+00:00",
-  "recorded_by": "Codex",
+  "note": "Added 21 reviewed Penn object-image views, refined the priority reconciliation questions, and added multi-image Mike Access galleries.",
+  "recorded_at": "2026-09-22T10:10:44+00:00",
+  "recorded_by": "codex",
   "schema_version": "016_accuracy_audit_reviews",
   "tables": {
     "accuracy_audit_reviews": {
@@ -75,12 +75,12 @@
       "rows": 14
     },
     "media": {
-      "digest": "13ed51f56facf0fbe74438c891fe4ae4292555fc8e66bf3db7981921a52af33a",
-      "rows": 327
+      "digest": "3e21775eb99ac93b865d6df400e22c2cb43ba3ef87405cf3d2880c1367c45218",
+      "rows": 348
     },
     "media_rights_reviews": {
-      "digest": "804bd55de77037a2304903c25206bcd99c0f3e2963f4f67848fdcf4ea6772d9d",
-      "rows": 625
+      "digest": "f00ec8d08a48493bd89983fbc149ec25b7c3b7f44701a8db055ae4f3081e86bc",
+      "rows": 646
     },
     "merge_log": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

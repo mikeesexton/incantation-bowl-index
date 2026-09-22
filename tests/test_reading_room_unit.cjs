@@ -10,8 +10,8 @@ const vm = require("node:vm");
 const source = fs.readFileSync("web/reading.js", "utf8");
 const body = source.slice(source.indexOf('const TABLES'), source.indexOf("const BROWSE"));
 const context = vm.createContext({});
-vm.runInContext(body + "\nglobalThis.T = {summarise, mark, readableText, textSections, card, data};", context);
-const {summarise, mark, readableText, textSections, card, data} = context.T;
+vm.runInContext(body + "\nglobalThis.T = {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, card, data};", context);
+const {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, card, data} = context.T;
 
 const ID = "IDENT-TEST";
 const cluster = {identity_id: ID};
@@ -88,6 +88,30 @@ test("an approved image prints its attribution and reviewed rights status", () =
     attribution: "Test Museum", rights_status: "open_license", license_url: ""}]});
   const html = mark({...cluster, display_name: "Test bowl"});
   assert.match(html, /Test Museum · open licence/);
+});
+
+test("the catalogue thumbnail stays primary and every approved view appears in the dossier gallery", () => {
+  given({media: [
+    {media_type: "image", url: "https://example.org/second_1600.jpg", attribution: "Museum"},
+    {media_type: "image", url: "https://example.org/primary_800.jpg", attribution: "Museum"},
+    {media_type: "image", url: "https://example.org/third_1600.jpg", attribution: "Museum"},
+  ]});
+  const named = {...cluster, display_name: "Test bowl"};
+  assert.match(orderedImages(named)[0].url, /primary_800\.jpg$/);
+  assert.match(mark(named), /primary_800\.jpg/);
+  const gallery = mediaGallery(named);
+  assert.equal((gallery.match(/class="gallery-image"/g) || []).length, 3);
+  assert.match(gallery, /3 views recorded for this object/);
+  assert.match(gallery, /Test bowl — view 3/);
+});
+
+test("legacy Penn asset URLs use the current Collections image host", () => {
+  const legacy = "https://www.penn.museum//collections/assets/065T/658k/658212_800.jpg";
+  assert.strictEqual(displayImageUrl(legacy),
+    "https://collections.penn.museum/collections/assets/065T/658k/658212_1600.jpg");
+  given({media: [{media_type: "image", url: legacy, attribution: "Penn Museum"}]});
+  assert.match(mark({...cluster, display_name: "Penn bowl"}),
+    /https:\/\/collections\.penn\.museum\/collections\/assets\/065T\/658k\/658212_1600\.jpg/);
 });
 
 test("a private text is readable only in the localhost research tier", () => {

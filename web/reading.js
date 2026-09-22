@@ -152,6 +152,14 @@
       || /\.(?:avif|gif|jpe?g|png|webp)$/i.test(clean);
   }
 
+  function displayImageUrl(url) {
+    return String(url || "")
+      .replace(/^https:\/\/www\.penn\.museum\/\/collections\/assets\//i,
+        "https://collections.penn.museum/collections/assets/")
+      .replace(/^(https:\/\/collections\.penn\.museum\/collections\/assets\/.*)_800(\.jpe?g)$/i,
+        "$1_1600$2");
+  }
+
   function mediaSourceLink(image) {
     const sourceRow = data.sourceById?.[image.source_id] || {};
     const editionRow = (data.editions || []).find(row => row.source_id === image.source_id);
@@ -159,31 +167,67 @@
     return url ? `<a class="media-source" href="${esc(url)}" rel="noreferrer">Open image source</a>` : "";
   }
 
+  function orderedImages(cluster) {
+    return (data.mediaBy[cluster.identity_id] || [])
+      .filter(item => item.media_type === "image" && item.url)
+      .sort((a, b) => {
+        const aPrimary = /_800\.jpe?g(?:[?#]|$)/i.test(a.url) ? 0 : 1;
+        const bPrimary = /_800\.jpe?g(?:[?#]|$)/i.test(b.url) ? 0 : 1;
+        return aPrimary - bPrimary || a.url.localeCompare(b.url);
+      });
+  }
+
+  function mediaRightsLabel(image) {
+    const privateOnly = privateResearch()
+      && String(image.rights_statement || "").startsWith("Private research view only;");
+    return privateOnly ? "private research view"
+      : image.rights_status === "public_domain" ? "public domain"
+      : image.rights_status === "open_license" ? "open licence" : "reviewed reuse";
+  }
+
   /* Release projections emit approved images only. The on-device projection may
      also emit private research links, identified by their explicit rights note. */
   function mark(cluster, includeSourceLink = true) {
-    const image = (data.mediaBy[cluster.identity_id] || [])
-      .find(m => m.media_type === "image" && m.url);
+    const image = orderedImages(cluster)[0];
     if (!image) return spiral(cluster);
     const sourceLink = includeSourceLink ? mediaSourceLink(image) : "";
     if (!embeddableImage(image.url)) {
       return `<span class="bowl-media is-reference">${spiral(cluster)}${sourceLink}</span>`;
     }
-    const privateOnly = privateResearch()
-      && String(image.rights_statement || "").startsWith("Private research view only;");
-    const rights = privateOnly ? "private research view"
-      : image.rights_status === "public_domain" ? "public domain"
-      : image.rights_status === "open_license" ? "open licence" : "reviewed reuse";
-    return `<span class="bowl-media"><img class="bowl-image" src="${esc(image.url)}"
+    const rights = mediaRightsLabel(image);
+    const displayUrl = displayImageUrl(image.url);
+    return `<span class="bowl-media"><img class="bowl-image" src="${esc(displayUrl)}"
       alt="${esc(cluster.display_name)}" loading="lazy" decoding="async">
       <span class="media-fallback">${spiral(cluster)}</span>${image.attribution
         ? `<span class="bowl-credit">${esc(image.attribution)} · ${esc(rights)}${licenceLink(image)}</span>` : ""}
       ${sourceLink}</span>`;
   }
 
+  function mediaGallery(cluster) {
+    const images = orderedImages(cluster).filter(item => embeddableImage(item.url));
+    if (images.length < 2) return "";
+    return `<section class="entry-block entry-gallery"><h2>Object images</h2>
+      <p class="entry-note">${images.length} views recorded for this object. Select an image to open the museum file.</p>
+      <div class="entry-gallery-grid">${images.map((image, index) => {
+        const displayUrl = displayImageUrl(image.url);
+        return `<figure>
+        <a href="${esc(displayUrl)}" rel="noreferrer"><img class="gallery-image" src="${esc(displayUrl)}"
+          alt="${esc(cluster.display_name)} — view ${index + 1}" loading="lazy" decoding="async">
+          <span class="gallery-fallback">Open image at Penn</span></a>
+        <figcaption>${image.attribution ? `${esc(image.attribution)} · ${esc(mediaRightsLabel(image))}${licenceLink(image)}` : ""}
+          ${mediaSourceLink(image)}</figcaption>
+      </figure>`;
+      }).join("")}</div></section>`;
+  }
+
   function bindMediaFallbacks(root) {
     root.querySelectorAll(".bowl-media img.bowl-image").forEach(img => {
       const fail = () => img.closest(".bowl-media")?.classList.add("is-broken");
+      img.addEventListener("error", fail, {once: true});
+      if (img.complete && !img.naturalWidth) fail();
+    });
+    root.querySelectorAll(".entry-gallery img.gallery-image").forEach(img => {
+      const fail = () => img.closest("figure")?.classList.add("is-broken");
       img.addEventListener("error", fail, {once: true});
       if (img.complete && !img.naturalWidth) fail();
     });
@@ -845,6 +889,8 @@
           ${cautions.map(value => `<p class="entry-object-caution">${esc(value.replaceAll("_", " "))}</p>`).join("")}
         </div>
       </header>
+
+      ${mediaGallery(cluster)}
 
       ${textSections(readable)}
 

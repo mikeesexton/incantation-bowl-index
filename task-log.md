@@ -25,6 +25,29 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-22 — Codex — Refine Penn questions and expand object images
+
+**Claimed:** CONC-002, RIGHTS-002, ACCESS-003
+**Corpus:** changed (21 reviewed Penn image views added) — state digest `815f38aafd33`
+**Tests:** 305 Python passed; 37 Node passed; scholar preview audit 10/10;
+five requested galleries visually/count checked; `git diff --check` passed
+
+- Refined the Penn follow-up to four priority groups. Montgomery resolves
+  B16007/B16081 as different physical bowls with parallel texts, so that item
+  is now an optional catalogue-wording correction. Moriggi confirms that
+  B16062 + B6354 is a separate textual parallel to B16086; B2963's BCE date and
+  the B9010/B9008 language fields remain substantive Penn questions.
+- Added all additional gallery views exposed on Penn's Object Images pages for
+  B16007, B16081, B16086, B16062, and B6353: respectively 5, 5, 8, 5, and 3
+  total views after projection. All 21 new media rows have exact rights-review
+  history for the gated Mike Access educational preview.
+- Added the multi-image dossier gallery and normalized retired Penn asset URLs
+  to the working 1600-pixel Collections host. Candidate `68a078f43e32` includes
+  319 approved media and passed all ten release checks.
+- No uncertain physical identities were merged. The exact Access candidate was
+  deliberately not deployed; owner approval of that candidate remains the next
+  step.
+
 ## 2026-09-22 — Codex — Prepare Penn reconciliation question list
 
 **Claimed:** CONC-002

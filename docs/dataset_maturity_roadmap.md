@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-21T15:21:13+00:00`
+Generated: `2026-09-22T10:10:10+00:00`
 
 ## Portfolio status
 
@@ -96,9 +96,9 @@ Current evidence: **206 scholarship works indexed; 40 with a source-linked held 
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 2 |
-| Media records with a non-unknown rights status | 39/327 (11.9%) |
-| Media with a current ledger entry | 327/327 |
-| Media with completed rights decisions / approved for reuse | 298 / 298 |
+| Media records with a non-unknown rights status | 39/348 (11.2%) |
+| Media with a current ledger entry | 348/348 |
+| Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 31 |
 | Open or active leads | 16 |
 | Qualifying discovery-saturation sweeps | 2 |
@@ -499,7 +499,7 @@ Overall gate: **NOT READY**
 - [x] Every generated claim-difference flag has a recorded triage — current `0`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage. Measured 2026-09-19 at 0.568 (611/1,075). The proxy counts only the 'publication object key' and 'bibliographic concordance' identifier schemes, so the sourced no-known-edition status that TEXT-001's done_when also accepts cannot move it; and if the 205 NLI bowls have no known edition the ceiling is 0.809. Whether to realign the metric with the task definition or to let the gate slip on acquisitions is a review decision, not an agent decision. — current `56.8%`; target `>= 80.0%`.
-- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `91.1%`; target `>= 100.0%`.
+- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `91.7%`; target `>= 100.0%`.
 
 ### Required setup tasks
 
