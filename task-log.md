@@ -25,6 +25,23 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-22 — Codex — Prepare Penn reconciliation question list
+
+**Claimed:** CONC-002
+**Corpus:** unchanged — state digest `be8ca54172dd`
+**Tests:** 305 Python passed; `git diff --check` passed
+
+- Prepared a bounded, human-readable list of Penn catalogue records where staff
+  clarification could resolve a specific ambiguity: four priority question
+  groups covering eight records, plus an optional seven-record measurement
+  appendix.
+- Kept the completed forty-object Montgomery/Penn number concordance out of the
+  request so the inquiry does not imply that already-verified mappings remain
+  unresolved.
+- No source claim, identity decision, or relationship interpretation changed.
+  Next: send the short list to Katy or use it as the agenda for a brief call;
+  record any reply as source-attributed evidence before changing the corpus.
+
 ## 2026-09-21 — Codex — Repair Explore card layout regression
 
 **Claimed:** ACCESS-002, QA-004
