@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "a176b21223f1aa420ff08dacdd28b403c6d431a64ad6d0e1be906ec20ee09878",
+  "corpus_digest": "591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8",
   "migrations": 16,
-  "note": "Added and fully extracted Barakat PF.5729, X.0552, and LO.769; captured pages; reviewed shared-release boundaries; staged complete single-user Mike Access snapshot; documented regional findspot evidence.",
-  "recorded_at": "2026-09-22T16:29:00+00:00",
+  "note": "Enriched SD12 from supplied article with source correction, source-attributed facts, private texts, and private bowl photograph under rights hold.",
+  "recorded_at": "2026-09-24T20:02:25+00:00",
   "recorded_by": "codex",
   "schema_version": "016_accuracy_audit_reviews",
   "tables": {
@@ -11,16 +11,16 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "210cc9a0cfeefc2d4a5bcbba882e3dfc98aa3e4d8b8110c0027fd6861ec4dd3d",
-      "rows": 2270
+      "digest": "903a9216bff1d0ead86d8a8b101cde64f22987d9de931430c6e5265da48b7c0d",
+      "rows": 2271
     },
     "appearances": {
-      "digest": "3e7a07a725b284b40ee9b7717a3887bfbfae1b37ff05330cb7deed8ae175f617",
-      "rows": 2270
+      "digest": "6a1b7b880e3b9dccbc6bdfcefcafb114578d7595c30539185866b2e8881bd442",
+      "rows": 2271
     },
     "captures": {
-      "digest": "230ecbdb1f3f53db6b9fe3ed7032e01621d02a5720a7b3eb2fceffa14885411c",
-      "rows": 58
+      "digest": "3216f916bc07362284573970d7897832512f12ea888186d8f2f7033aa53d1b14",
+      "rows": 59
     },
     "claim_conflict_review_history": {
       "digest": "c8f49d91c87ca0ab000110c5c3bcbed83cad2dac0ea74d85eb168109e8f5c197",
@@ -35,8 +35,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "0bf7de0a0ad60c0bc412c14776e88eb35c1404f2fc75008b82514f69435e058e",
-      "rows": 7255
+      "digest": "0bd9c2d6d581ab513f6e14a133515de32ed5721e27aa386edf0d74101e982e5d",
+      "rows": 7275
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,8 +63,8 @@
       "rows": 215
     },
     "identifiers": {
-      "digest": "c0d6448b8d1b15d1d68ee8d14368662338486bd3fcedb8e3521d2304a224f575",
-      "rows": 4746
+      "digest": "873f235e3dc18e677a67b425927302210dd11b503ac82e782aeefbc59340de9a",
+      "rows": 4747
     },
     "leads": {
       "digest": "e6c07b7875fcf3bea0c4618c4510d1e4d695bb97136484947a2f53fe642d5cb3",
@@ -75,12 +75,12 @@
       "rows": 14
     },
     "media": {
-      "digest": "26cd7907d2413f927cac8bf3202d060463a28907d7bedf44e111ce4ae6bbf9c1",
-      "rows": 353
+      "digest": "8e46da15c3329a25ab3aa80b58cb20e135703c497a55473ebc96843f66409efe",
+      "rows": 354
     },
     "media_rights_reviews": {
-      "digest": "6df2b53269f597910cb99c5e04ee5183925681f95535c9abccb3f02f30f4e2fa",
-      "rows": 651
+      "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
+      "rows": 652
     },
     "merge_log": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -119,15 +119,15 @@
       "rows": 17
     },
     "source_corrections": {
-      "digest": "a3232720467e8eccfa15d84e42e45757081cd50f392d013bb04eaf355fb2f07a",
-      "rows": 52
+      "digest": "4a0ef8e4f971418e86584875d6b5491495febf1f14bebd23ea1ce5bd14465cb3",
+      "rows": 53
     },
     "source_scope_reviews": {
       "digest": "666c768ba2215f9698c96c036b6eb19e1bf127dc23ddd74453e6aeb7f2dbdc54",
       "rows": 112
     },
     "sources": {
-      "digest": "d054ad22f3ccf4054a20c64cd1912aff6a3faa20f24231f02b41a5a77d2939de",
+      "digest": "673bb17cb7cb1da6677a692590d41403ba4588cbc2d8f513470d3d7247403c18",
       "rows": 864
     },
     "text_proofreading_reviews": {
@@ -139,8 +139,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "91e82225b39af99be247542c4cbd8372c9b102c2b84462df850da280d28c45a7",
-      "rows": 278
+      "digest": "430ffc601226a0f4b80b4d8026089618ecd5e1098207b06b88c6802fff97e274",
+      "rows": 280
     }
   }
 }

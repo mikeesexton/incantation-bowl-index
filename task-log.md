@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-24 — Codex — Document SD12 and prepare Stacie commission
+
+**Claimed:** TEXT-007, RIGHTS-002
+**Corpus:** changed (SD12 source correction, article appearance, 20 claims, two private texts, and one private photograph) — state digest `591faac7157c`
+**Tests:** 312 Python passed; private projection confirmed the local image and both protected texts; `ibi roadmap`, `ibi report-enrichment`, and `ibi state --write` completed
+
+- Checked the complete researcher-supplied article against the photograph, edition, translation, physical description, and commentary. Corrected its bibliographic record; appended source-attributed SD12 evidence to the existing candidate object without adjudicating its identity.
+- Stored the article capture, scholarly text, and extracted bowl photograph in the private vault. Recorded a rights hold for the photograph; no public or customer-facing image reuse was cleared.
+- Prepared a three-page bilingual Stacie review edition: SD12 arrangement and seal, selected Davidovitz 41 imagery, Psalm 121:8, a short Psalm 90:17 echo, and the complete historical SD12 incantation in a new English rendering after the proposed incantation. The protected scholarly Hebrew edition remains in the private bank; the Hebrew spellings of Stacie and Fredrica await customer confirmation.
+- Next: obtain item-specific photograph reuse permission if a shared image is wanted; retain the candidate identity status until an authorized reviewer adjudicates it.
+
 ## 2026-09-23 — Codex — Migrate repositories and private research host to Mac mini
 
 **Claimed:** OPS-001, OPS-002

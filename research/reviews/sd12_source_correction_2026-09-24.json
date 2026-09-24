@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-24T19:55:00Z",
+  "evidence_path": "research/reviews/sd12_article_evidence_2026-09-24.json",
+  "evidence_sha256": "61d2e66f72b381e50f6910e0fb5d8ebdcd87e3a0b879f30af239327581b97d2a",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-SD12-20260924",
+      "source_id": "SRC-B891A0061CEA",
+      "replacement_source_id": null,
+      "rationale": "The complete article supplied by the researcher resolves the provisional author, publisher, access, and rights metadata imported from a secondary bibliography.",
+      "before": {
+        "source_type": "article",
+        "title": "‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore",
+        "authors": "Levene [and others; see citation]",
+        "issued_year": 2014,
+        "container_title": "Studia Mesopotamica",
+        "publisher": null,
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "———, Dalia Marx, and Siam Bhayro. “‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore.” Studia Mesopotamica 1 (2014): 185–98.",
+        "access_status": "unknown",
+        "rights_status": "unknown",
+        "notes": "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore",
+        "authors": "Dan Levene; Dalia Marx; Siam Bhayro",
+        "issued_year": 2014,
+        "container_title": "Studia Mesopotamica",
+        "publisher": "Ugarit-Verlag",
+        "url": null,
+        "doi": null,
+        "isbn": null,
+        "citation": "Levene, Dan, Dalia Marx, and Siam Bhayro. “Gabriel Is on Their Right: Angelic Protection in Jewish Magic and Babylonian Lore.” Studia Mesopotamica 1 (2014): 185–198.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete researcher-supplied article privately deposited as CAP-3F4E70C7C0D6, SHA-256 224856009f823b7021843c206096b729b5d86ed7c651fa51b2ee786a6f49a152. SD12 photograph and Hebrew edition on printed p. 188; translation p. 189. Source copyright notice is on PDF p. 2."
+      }
+    }
+  ]
+}
