@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-23 — Codex — Migrate repositories and private research host to Mac mini
+
+**Claimed:** OPS-001, OPS-002
+**Corpus:** unchanged — state digest `a176b21223f1`
+**Tests:** in progress
+
+- Preparing the Git-tracked repositories for a clean GitHub-to-Mac-mini clone while
+  retaining the complete Mike-only corpus and source vault for encrypted private transfer.
+- Commissioning and restore evidence will be recorded after the Mac mini is reachable.
+
 ## 2026-09-22 — Codex — Audit Barakat listings and regional findspots
 
 **Claimed:** DISC-002, META-001, META-002, META-003, META-005, ACCESS-002,
