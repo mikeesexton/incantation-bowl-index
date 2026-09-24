@@ -40,6 +40,12 @@ path audit passed; `git diff --check` passed
   in `research/receipts/private_manifest_migration_2026-09-23.json`.
 - Tightened the canonical project rule and `.gitignore` so manifests carrying protected
   source expression travel and back up with the private vault rather than public Git.
+- Published sanitized commit `97aa887` to GitHub `main`. Bundled all four local Bowl Index
+  branches, including the two private-history branches, into the ignored private vault;
+  the bundle verified as complete and its hash is recorded in the migration receipt.
+- Verified all 55 archived captures, SQLite integrity/quick/foreign-key checks and both
+  protected-manifest hashes. The private payload contains 550 files and was 1,607,855,101
+  bytes before adding the 2,998,470-byte local-ref bundle.
 - The Mac mini was not reachable from the laptop: no Tailscale peer, SSH host alias or
   Bonjour SSH service was available. Repository publication can proceed now; private
   transfer, FileVault/Restic commissioning and restore evidence wait for host access.
