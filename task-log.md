@@ -29,11 +29,20 @@ the dated reports under `data/reports/`.
 
 **Claimed:** OPS-001, OPS-002
 **Corpus:** unchanged — state digest `a176b21223f1`
-**Tests:** in progress
+**Tests:** 312 Python passed; 37 Node passed; corpus state matched; public-history
+path audit passed; `git diff --check` passed
 
-- Preparing the Git-tracked repositories for a clean GitHub-to-Mac-mini clone while
-  retaining the complete Mike-only corpus and source vault for encrypted private transfer.
-- Commissioning and restore evidence will be recorded after the Mac mini is reachable.
+- Rebuilt the 30 unpublished commits from `origin/main` and removed two protected
+  full-text ingest manifests from every commit reachable by the public branch. Preserved
+  the original history locally as `local/private-history-before-mac-mini-20260923`.
+- Moved byte-identical Ford and Barakat manifests into the ignored
+  `data/private/manifests/` vault and recorded only paths, byte lengths and SHA-256 values
+  in `research/receipts/private_manifest_migration_2026-09-23.json`.
+- Tightened the canonical project rule and `.gitignore` so manifests carrying protected
+  source expression travel and back up with the private vault rather than public Git.
+- The Mac mini was not reachable from the laptop: no Tailscale peer, SSH host alias or
+  Bonjour SSH service was available. Repository publication can proceed now; private
+  transfer, FileVault/Restic commissioning and restore evidence wait for host access.
 
 ## 2026-09-22 — Codex — Audit Barakat listings and regional findspots
 

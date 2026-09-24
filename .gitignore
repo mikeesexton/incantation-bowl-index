@@ -7,6 +7,11 @@ tmp/
 data/private/**
 !data/private/.gitkeep
 
+# These ingest manifests contain protected full text and belong in the private
+# vault at data/private/manifests/, not in the public Git history.
+research/enrichment/ford_2023_davidovitz_41_private_texts_2026-09-21.jsonl
+research/seeds/barakat_three_listings_2026-09-22.jsonl
+
 # Wrangler's local Pages/D1 emulation state. It holds real addresses typed into
 # the local signup form during development, so it stays out of Git for the same
 # reason the corpus does.

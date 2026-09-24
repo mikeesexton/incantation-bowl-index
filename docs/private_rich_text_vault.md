@@ -6,6 +6,11 @@ corpus import. The text packages live under `data/private/rich_text/`, which is
 Git-ignored, encrypted at rest with the research machine's storage controls and
 included in the private backup set.
 
+Private ingestion manifests that carry protected text or quotation live under
+`data/private/manifests/` for the same reason. A content-free tracked receipt may
+record their private path, byte length and SHA-256, but the manifest itself must
+not be placed under `research/` or in any Git commit.
+
 ## Package layout
 
 Each transformed document gets one directory:

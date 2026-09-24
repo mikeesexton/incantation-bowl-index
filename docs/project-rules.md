@@ -195,11 +195,14 @@ Then read the top entry of [`task-log.md`](../task-log.md).
 - **One workstream per session.** Claim the task IDs you are taking in
   `task-log.md` before you start, not after. The workstreams are `DISC`, `CONC`,
   `TEXT`, `META`, `RIGHTS`, `OPS`, `QA`, and `SCHOL`.
-- **Every corpus write goes through a checked-in manifest.** Write the JSON or
-  JSONL under `research/`, then apply it with an `ibi ingest-*` command. Never
-  hand-edit the database. The manifest is the reviewable artifact and it makes
-  the corpus reproducible; a direct `UPDATE` is invisible to review and to the
-  other agent.
+- **Every corpus write goes through a manifest.** Public-domain, permissively
+  licensed, and project-authored manifests are checked in under `research/`.
+  A manifest containing protected source text, transcription, translation,
+  quotation, or other private expression lives under
+  `data/private/manifests/` and is transferred and backed up with the private
+  vault; Git may retain only a content-free receipt and hash. Never hand-edit
+  the database. The manifest is the reviewable artifact and it makes the corpus
+  reproducible; a direct `UPDATE` is invisible to review and to the other agent.
 - **Append, never overwrite.** Reviews, corrections, and revisions keep their
   originals. If a decision turns out wrong, add a superseding decision.
 - **Back up before a batch that changes many rows.** Copy the database to
