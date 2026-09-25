@@ -1,0 +1,20 @@
+# Version-control data is synchronized through GitHub or the private Git bundle.
+**/.git
+**/.git/**
+
+# Reproducible runtimes and dependency caches.
+**/.venv
+**/.venv/**
+**/node_modules
+**/node_modules/**
+**/__pycache__
+**/__pycache__/**
+**/.DS_Store
+
+# Disposable agent worktrees and build-tool caches.
+**/.claude/worktrees
+**/.claude/worktrees/**
+**/site/.wrangler
+**/site/.wrangler/**
+**/tmp
+**/tmp/**
