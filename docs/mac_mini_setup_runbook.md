@@ -2,9 +2,11 @@
 
 > **Status: commissioning in progress.** The repositories and private research
 > vault were migrated to the Mac mini on 25 September 2026 UTC and verified on
-> that host. The external-SSD, Restic, B2, Tailscale, monitoring and independent
-> restore gates remain open; OPS-001 and OPS-002 are not yet accepted. Complete
-> the remaining arrival checklist on the Mac mini and record each result below.
+> that host. The encrypted local Restic backup and independent local restore
+> gate passed on 25 September 2026 UTC. B2, scheduling, monitoring, full
+> Tailscale access and account-separation gates remain open; OPS-001 and OPS-002
+> are not yet accepted. Complete the remaining arrival checklist on the Mac mini
+> and record each result below.
 
 This is the canonical operating plan for the shared Mac mini. The first half is
 the general host baseline; the second half applies it to the Incantation Bowl
@@ -235,20 +237,20 @@ Leave unknown fields blank until verified on the Mac mini.
 | Administrator account tested | `mikesexton` is an administrator; SSH key login passed |
 | Standard research account tested | Not yet created or verified separately from the administrator account |
 | Internal storage / free space | 926 GiB volume; 827 GiB available at 2026-09-25T00:22:27Z |
-| External SSD model, capacity and APFS encryption status | No external SSD mounted; not configured |
-| Tailscale device and remote-access test | Tailscale absent; SSH over the local network passed with a dedicated Ed25519 key |
+| External SSD model, capacity and APFS encryption status | 2 TB USB `Mobile Drive`; GUID partition map; encrypted APFS (`FileVault: Yes`); mounted as `IBI Backup`. The USB enclosure does not expose SMART status, so retain B2 as the independent failure-domain copy. |
+| Tailscale device and remote-access test | `mikes-mac-mini` connected; `mikes-laptop` enrolled but last observed offline. SSH over the local network passed with a dedicated Ed25519 key; Tailscale SSH path not yet tested end to end. |
 | Public inbound ports confirmed absent | Not verified; router configuration was not examined |
 | Repository path and Git revision | `~/Developer/incantation-bowl-index` content baseline `20f738e` plus subsequent acceptance-record commits; `~/Developer/ivritelite` at `3d75f04`; both clean and aligned with `origin/main` |
 | Bowl Index corpus digest | `591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8` (`ibi state`: match) |
-| Local Restic repository and latest snapshot ID | Restic 0.19.1 arm64 client installed with verified release checksum; repository not configured |
+| Local Restic repository and latest snapshot ID | Restic 0.19.1; encrypted repository on `IBI Backup`; snapshot `6b5ec6e564e4cf874ce38c46a464ee52fb8fd1f0e3d26558a455dafba4c2e0e1` |
 | B2 bucket/repository and latest snapshot ID | Not configured |
-| Local schedule and last successful run | Not configured |
+| Local schedule and last successful run | First manual snapshot completed 2026-09-25T01:35:53Z; four-hour schedule not configured |
 | Off-device schedule and last successful run | Not configured |
 | Healthchecks email delivery tested | Not configured |
-| Local restore receipt | Not available |
+| Local restore receipt | `data/private/backup-receipts/local-restic-restore-20260925T014137Z.log`: PASS; restored 1.746 GiB / 1,664 files and directories, then reviewed and removed the temporary copy |
 | B2 restore receipt | Not available |
 | SQLite and capture verification result | `integrity_check` and `quick_check`: `ok`; foreign-key check empty; archive verification valid for 56 captures; all 556 private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f` |
 | Rich-text package validation result | No private rich-text package is present (`rich_text_packages: 0`); no package validation required for this migration |
-| Outstanding blockers / deviations | Separate standard account; external encrypted SSD; local and B2 Restic repositories; distinct recovery secrets; Tailscale; router/public-port audit; launchd schedules; Healthchecks; both independent restore tests. Seventeen legacy SQLite snapshots are retained. |
+| Outstanding blockers / deviations | Separate standard account; B2 Restic repository and distinct recovery secret; laptop Tailscale connectivity and end-to-end remote-access test; router/public-port audit; launchd schedules; Healthchecks; B2 restore test. Seventeen legacy SQLite snapshots are retained. |
 | OPS-001 accepted by/date | |
 | OPS-002 accepted by/date | |
