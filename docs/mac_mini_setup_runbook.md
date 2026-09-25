@@ -238,9 +238,9 @@ Leave unknown fields blank until verified on the Mac mini.
 | External SSD model, capacity and APFS encryption status | No external SSD mounted; not configured |
 | Tailscale device and remote-access test | Tailscale absent; SSH over the local network passed with a dedicated Ed25519 key |
 | Public inbound ports confirmed absent | Not verified; router configuration was not examined |
-| Repository path and Git revision | `~/Developer/incantation-bowl-index` at `20f738e`; `~/Developer/ivritelite` at `3d75f04`; both clean and aligned with `origin/main` |
+| Repository path and Git revision | `~/Developer/incantation-bowl-index` content baseline `20f738e` plus subsequent acceptance-record commits; `~/Developer/ivritelite` at `3d75f04`; both clean and aligned with `origin/main` |
 | Bowl Index corpus digest | `591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8` (`ibi state`: match) |
-| Local Restic repository and latest snapshot ID | Not configured; Restic absent |
+| Local Restic repository and latest snapshot ID | Restic 0.19.1 arm64 client installed with verified release checksum; repository not configured |
 | B2 bucket/repository and latest snapshot ID | Not configured |
 | Local schedule and last successful run | Not configured |
 | Off-device schedule and last successful run | Not configured |
@@ -249,6 +249,6 @@ Leave unknown fields blank until verified on the Mac mini.
 | B2 restore receipt | Not available |
 | SQLite and capture verification result | `integrity_check` and `quick_check`: `ok`; foreign-key check empty; archive verification valid for 56 captures; all 556 private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f` |
 | Rich-text package validation result | No private rich-text package is present (`rich_text_packages: 0`); no package validation required for this migration |
-| Outstanding blockers / deviations | Separate standard account; external encrypted SSD; Restic local and B2 repositories; distinct recovery secrets; Tailscale; router/public-port audit; launchd schedules; Healthchecks; both independent restore tests. Seventeen legacy SQLite snapshots are retained. |
+| Outstanding blockers / deviations | Separate standard account; external encrypted SSD; local and B2 Restic repositories; distinct recovery secrets; Tailscale; router/public-port audit; launchd schedules; Healthchecks; both independent restore tests. Seventeen legacy SQLite snapshots are retained. |
 | OPS-001 accepted by/date | |
 | OPS-002 accepted by/date | |
