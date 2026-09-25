@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-24 — Codex — Move live projects and private vault to Mac mini
+
+**Claimed:** OPS-001, OPS-002
+**Corpus:** unchanged — state digest `591faac7157c`
+**Tests:** Mac mini: 312 Bowl Index Python tests passed; IvritElite 516 Node tests passed and 1 skipped; SQLite integrity/quick/foreign-key checks passed; archive verification valid; both repository checkouts clean
+
+- Connected to `Mikes-Mac-Mini.local` with a dedicated Ed25519 key and verified FileVault, hardware, storage and runtime state without recording a serial number or secret. Corrected IvritElite's stale `ulpango` origin, fast-forwarded both public checkouts and recreated all local branch pointers: three private/local Bowl branches from the verified private bundle and nine IvritElite branches from fetched Git objects.
+- Transferred the complete ignored Bowl private tree directly between the two Macs over encrypted SSH, never through GitHub. All 556 private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f`; the SQLite database, protected manifests and private Git bundle also matched individually. Copied the Mike-only build, generated exports and previews, working research output and local project settings by the same direct path.
+- Published only the metadata-only SD12 commit `20f738e` after confirming that it contains no protected image bytes, then fast-forwarded the Mac mini. IvritElite remains at published `main` commit `3d75f04`. Installed the checksum-verified official Node 24.21.0 arm64 runtime in the Mac mini user account; the Bowl Python environment was already functional.
+- Migration is complete, but OPS-001 and OPS-002 remain unaccepted. Tailscale, the separate standard account, the external encrypted SSD, Restic, B2, Healthchecks, schedules and both independent restore tests are not configured. The Mac mini readiness audit correctly remains failing, and all seventeen legacy SQLite snapshots were retained.
+
 ## 2026-09-24 — Codex — Document SD12 and prepare Stacie commission
 
 **Claimed:** TEXT-007, RIGHTS-002

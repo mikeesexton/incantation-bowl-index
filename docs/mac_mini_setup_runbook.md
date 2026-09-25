@@ -1,10 +1,10 @@
 # Mac mini setup runbook
 
-> **Status: planned, not deployed.** This document records the approved setup
-> for the Mac mini that is waiting for delivery. Do not create accounts, keys,
-> backup repositories, schedules, services or remote-access rules on another
-> machine as a substitute. Complete the arrival checklist on the Mac mini and
-> record the results in the acceptance record below.
+> **Status: commissioning in progress.** The repositories and private research
+> vault were migrated to the Mac mini on 25 September 2026 UTC and verified on
+> that host. The external-SSD, Restic, B2, Tailscale, monitoring and independent
+> restore gates remain open; OPS-001 and OPS-002 are not yet accepted. Complete
+> the remaining arrival checklist on the Mac mini and record each result below.
 
 This is the canonical operating plan for the shared Mac mini. The first half is
 the general host baseline; the second half applies it to the Incantation Bowl
@@ -226,29 +226,29 @@ Leave unknown fields blank until verified on the Mac mini.
 
 | Field | Recorded value / evidence |
 |---|---|
-| Commissioning date (UTC) | |
-| Operator | |
-| Hardware model / non-secret asset reference | |
-| Hostname | |
-| macOS version and build | |
-| FileVault enabled and recovery copy stored offline | |
-| Administrator account tested | |
-| Standard research account tested | |
-| Internal storage / free space | |
-| External SSD model, capacity and APFS encryption status | |
-| Tailscale device and remote-access test | |
-| Public inbound ports confirmed absent | |
-| Repository path and Git revision | |
-| Bowl Index corpus digest | |
-| Local Restic repository and latest snapshot ID | |
-| B2 bucket/repository and latest snapshot ID | |
-| Local schedule and last successful run | |
-| Off-device schedule and last successful run | |
-| Healthchecks email delivery tested | |
-| Local restore receipt | |
-| B2 restore receipt | |
-| SQLite and capture verification result | |
-| Rich-text package validation result | |
-| Outstanding blockers / deviations | |
+| Commissioning date (UTC) | 2026-09-25 (migration and first host verification) |
+| Operator | Mike Sexton; Codex-assisted migration over local SSH |
+| Hardware model / non-secret asset reference | Mac mini (Mac18,5), Apple M6, 24 GB memory |
+| Hostname | `Mikes-Mac-Mini.local` |
+| macOS version and build | macOS 27.0 (26A428), arm64 |
+| FileVault enabled and recovery copy stored offline | FileVault On; offline recovery copy not verified |
+| Administrator account tested | `mikesexton` is an administrator; SSH key login passed |
+| Standard research account tested | Not yet created or verified separately from the administrator account |
+| Internal storage / free space | 926 GiB volume; 827 GiB available at 2026-09-25T00:22:27Z |
+| External SSD model, capacity and APFS encryption status | No external SSD mounted; not configured |
+| Tailscale device and remote-access test | Tailscale absent; SSH over the local network passed with a dedicated Ed25519 key |
+| Public inbound ports confirmed absent | Not verified; router configuration was not examined |
+| Repository path and Git revision | `~/Developer/incantation-bowl-index` at `20f738e`; `~/Developer/ivritelite` at `3d75f04`; both clean and aligned with `origin/main` |
+| Bowl Index corpus digest | `591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8` (`ibi state`: match) |
+| Local Restic repository and latest snapshot ID | Not configured; Restic absent |
+| B2 bucket/repository and latest snapshot ID | Not configured |
+| Local schedule and last successful run | Not configured |
+| Off-device schedule and last successful run | Not configured |
+| Healthchecks email delivery tested | Not configured |
+| Local restore receipt | Not available |
+| B2 restore receipt | Not available |
+| SQLite and capture verification result | `integrity_check` and `quick_check`: `ok`; foreign-key check empty; archive verification valid for 56 captures; all 556 private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f` |
+| Rich-text package validation result | No private rich-text package is present (`rich_text_packages: 0`); no package validation required for this migration |
+| Outstanding blockers / deviations | Separate standard account; external encrypted SSD; Restic local and B2 repositories; distinct recovery secrets; Tailscale; router/public-port audit; launchd schedules; Healthchecks; both independent restore tests. Seventeen legacy SQLite snapshots are retained. |
 | OPS-001 accepted by/date | |
 | OPS-002 accepted by/date | |
