@@ -25,6 +25,32 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-24 — Codex — Establish encrypted Backblaze B2 recovery
+
+**Claimed:** OPS-002
+**Corpus:** unchanged — state digest `591faac7157c`
+**Tests:** B2 full 45-pack read check passed; independent 1.746 GiB restore passed SQLite integrity/quick/foreign-key checks, archive verification, corpus state, 312 Bowl Index Python tests and the IvritElite Node suite
+
+- Created a private, encrypted Backblaze B2 bucket with Object Lock disabled and
+  the Restic-compatible “keep only the last version” lifecycle. Created a
+  read/write application key restricted to that bucket, with only the additional
+  list-all-bucket-names capability required by the S3-compatible API.
+- Moved the one-time B2 credential directly into three Mac mini login-Keychain
+  items without printing it or adding it to shell history. Generated a distinct
+  B2 Restic repository password there; temporary credential handoff files were
+  removed from both Macs after metadata-only verification.
+- Added versioned B2 backup and restore helpers plus an explicit exclude list.
+  Initialized Restic repository `0399adc293`, created snapshot `f4dc13dc3ba6`
+  from 1,502 files / 1.746 GiB, and completed a full read-back check of all 45
+  stored packs without errors.
+- Independently restored snapshot `f4dc13dc3ba6` into a new temporary directory.
+  The database SHA-256 matched the local restore, all checks and test suites
+  passed, and the private receipt was retained before removing the reviewed
+  temporary copy.
+- OPS-002 remains open for offline recovery-secret copies, the daily and
+  four-hour `launchd` schedules, and Healthchecks monitoring. No legacy SQLite
+  snapshot was deleted.
+
 ## 2026-09-24 — Codex — Move live projects and private vault to Mac mini
 
 **Claimed:** OPS-001, OPS-002

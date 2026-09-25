@@ -2,11 +2,11 @@
 
 > **Status: commissioning in progress.** The repositories and private research
 > vault were migrated to the Mac mini on 25 September 2026 UTC and verified on
-> that host. The encrypted local Restic backup and independent local restore
-> gate passed on 25 September 2026 UTC. B2, scheduling, monitoring, full
-> Tailscale access and account-separation gates remain open; OPS-001 and OPS-002
-> are not yet accepted. Complete the remaining arrival checklist on the Mac mini
-> and record each result below.
+> that host. The encrypted local and Backblaze B2 Restic backups and independent
+> restore gates passed on 25 September 2026 UTC. Scheduling, monitoring, full
+> Tailscale access, offline recovery copies and account separation remain open;
+> OPS-001 and OPS-002 are not yet accepted. Complete the remaining arrival
+> checklist on the Mac mini and record each result below.
 
 This is the canonical operating plan for the shared Mac mini. The first half is
 the general host baseline; the second half applies it to the Incantation Bowl
@@ -16,7 +16,7 @@ machine and external drive are present.
 ## Target architecture
 
 - The Mac mini is the primary always-on research host.
-- A dedicated **1 TB encrypted APFS external SSD** is the fast local recovery
+- A dedicated **2 TB encrypted APFS external drive** is the fast local recovery
   destination. It is a backup destination, not the working copy.
 - **Restic** encrypts separate local and off-device repositories. The local
   repository runs every four hours; the **Backblaze B2** repository runs daily,
@@ -181,10 +181,10 @@ not be "fixed" on the temporary workstation.
 
 ### Rich-text pilot gate
 
-ACCESS-002 remains in progress. Do not create the first real TEI package until
-the local and B2 restores both pass. The first transformation stays limited to
-one bounded article or one bowl edition and must pass the existing package
-validator and page-image review before any larger batch begins.
+The local and B2 restore prerequisites passed on 25 September 2026 UTC.
+ACCESS-002 remains in progress: the first transformation stays limited to one
+bounded article or one bowl edition and must pass the existing package validator
+and page-image review before any larger batch begins.
 
 ## Arrival-day checklist
 
@@ -193,7 +193,7 @@ acceptance record.
 
 ### Host
 
-- [ ] Record the hardware model, a non-secret asset reference, hostname and
+- [x] Record the hardware model, a non-secret asset reference, hostname and
       macOS version. Do not commit the full hardware serial number.
 - [ ] Create and test the separate administrator and standard research accounts.
 - [ ] Enable FileVault and place its recovery key offline.
@@ -202,24 +202,24 @@ acceptance record.
 
 ### Development and access
 
-- [ ] Install the required runtimes and clone repositories under `~/Developer/`.
-- [ ] Verify GitHub authentication without placing tokens in repository files.
+- [x] Install the required runtimes and clone repositories under `~/Developer/`.
+- [x] Verify GitHub authentication without placing tokens in repository files.
 - [ ] Enroll and approve Tailscale; test SSH or Screen Sharing over Tailscale.
 - [ ] Confirm that no public inbound port or router port-forward is enabled.
-- [ ] Run the Bowl Index tests and confirm the recorded corpus digest before any
+- [x] Run the Bowl Index tests and confirm the recorded corpus digest before any
       private-data work.
 
 ### Backup and monitoring
 
-- [ ] Attach, erase and encrypt the dedicated 1 TB APFS external SSD.
-- [ ] Create separate local and B2 Restic repositories and recovery secrets.
+- [x] Attach, erase and encrypt the dedicated 2 TB APFS external drive.
+- [x] Create separate local and B2 Restic repositories and recovery secrets.
 - [ ] Store runtime secrets in Keychain and recovery copies offline.
 - [ ] Install disabled-by-default `launchd` jobs, inspect their paths and
       include/exclude lists, then enable them deliberately.
 - [ ] Configure Healthchecks email for local, off-device and restore jobs.
-- [ ] Complete one local and one B2 backup without errors.
-- [ ] Complete and record independent restore tests from both repositories.
-- [ ] Confirm the eleven legacy SQLite snapshots are still present; authorize
+- [x] Complete one local and one B2 backup without errors.
+- [x] Complete and record independent restore tests from both repositories.
+- [x] Confirm the seventeen legacy SQLite snapshots are still present; authorize
       any later retention cleanup as a separate reviewed action.
 
 ## Acceptance record
@@ -243,14 +243,14 @@ Leave unknown fields blank until verified on the Mac mini.
 | Repository path and Git revision | `~/Developer/incantation-bowl-index` content baseline `20f738e` plus subsequent acceptance-record commits; `~/Developer/ivritelite` at `3d75f04`; both clean and aligned with `origin/main` |
 | Bowl Index corpus digest | `591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8` (`ibi state`: match) |
 | Local Restic repository and latest snapshot ID | Restic 0.19.1; encrypted repository on `IBI Backup`; snapshot `6b5ec6e564e4cf874ce38c46a464ee52fb8fd1f0e3d26558a455dafba4c2e0e1` |
-| B2 bucket/repository and latest snapshot ID | Not configured |
+| B2 bucket/repository and latest snapshot ID | Private bucket `archive-9f4c72d1e6b8`; S3 endpoint `s3.us-east-005.backblazeb2.com`; encrypted Restic repository `0399adc293`; snapshot `f4dc13dc3ba6577aab0e9071e5b646e0b7054dcd7bf414a1e1189c7999e8f51d` |
 | Local schedule and last successful run | First manual snapshot completed 2026-09-25T01:35:53Z; four-hour schedule not configured |
-| Off-device schedule and last successful run | Not configured |
+| Off-device schedule and last successful run | First manual B2 snapshot completed 2026-09-25T02:29:56Z with a full 45-pack read-back check; daily schedule not configured |
 | Healthchecks email delivery tested | Not configured |
 | Local restore receipt | `data/private/backup-receipts/local-restic-restore-20260925T014137Z.log`: PASS; restored 1.746 GiB / 1,664 files and directories, then reviewed and removed the temporary copy |
-| B2 restore receipt | Not available |
-| SQLite and capture verification result | `integrity_check` and `quick_check`: `ok`; foreign-key check empty; archive verification valid for 56 captures; all 556 private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f` |
+| B2 restore receipt | `data/private/backup-receipts/b2-restic-restore-20260925T023036Z.log`: PASS; restored 1.746 GiB / 1,671 files and directories, then reviewed and removed the temporary copy |
+| SQLite and capture verification result | Both Restic restores returned `integrity_check` and `quick_check`: `ok`, zero foreign-key violations, database SHA-256 `9695ff17ba3439830c76590bb18171c5830a0c6f637cf3fe34e030d8eaafadb2`, valid archive verification and matching corpus state. All 556 migrated private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f`. |
 | Rich-text package validation result | No private rich-text package is present (`rich_text_packages: 0`); no package validation required for this migration |
-| Outstanding blockers / deviations | Separate standard account; B2 Restic repository and distinct recovery secret; laptop Tailscale connectivity and end-to-end remote-access test; router/public-port audit; launchd schedules; Healthchecks; B2 restore test. Seventeen legacy SQLite snapshots are retained. |
+| Outstanding blockers / deviations | Separate standard account; offline recovery copies for the FileVault and Restic secrets; laptop Tailscale connectivity and end-to-end remote-access test; router/public-port audit; launchd schedules; Healthchecks. Seventeen legacy SQLite snapshots are retained. |
 | OPS-001 accepted by/date | |
 | OPS-002 accepted by/date | |
