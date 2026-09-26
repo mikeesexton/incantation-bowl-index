@@ -22,6 +22,7 @@ from .private_projection import PrivateResearchProjection, private_manifest
 from .ids import new_id
 from .proofreading import current_text_reviews
 from .rights import current_media_reviews
+from .publication_assessments import current_publication_assessments
 
 
 WEB_ROOT = PROJECT_ROOT / "web"
@@ -208,6 +209,11 @@ class CorpusCatalog:
             for publication in projection_tables["publications"]:
                 if publication["resolution"] == "resolved":
                     edition_objects.update(json.loads(publication["object_ids"]))
+            edition_objects.update(
+                review["object_id"]
+                for review in current_publication_assessments(conn)
+                if review["disposition"] == "linked"
+            )
             for link in conn.execute(
                 "SELECT l.object_id,a.source_id FROM appearance_object_links l "
                 "JOIN appearances a ON a.id=l.appearance_id WHERE l.relation_type<>'rejected'"

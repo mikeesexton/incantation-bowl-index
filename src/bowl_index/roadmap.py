@@ -7,6 +7,7 @@ from pathlib import Path
 from .identity import CONTENT_COVERAGE, identity_rows
 from .proofreading import current_text_reviews
 from .publications import publication_coverage
+from .publication_assessments import current_publication_assessments
 from .rights import rights_metrics
 from .concordance import current_concordance_reviews
 from .scholarship import scholarship_metrics
@@ -34,18 +35,41 @@ def roadmap_metrics(conn):
     )
     publication_referenced = 0
     publication_referenced_priority = 0
+    publication_assessed = 0
+    publication_assessed_priority = 0
+    publication_no_known = 0
+    publication_no_known_priority = 0
     priority_identities = 0
+    assessments_by_object = {}
+    for assessment in current_publication_assessments(conn):
+        assessments_by_object.setdefault(assessment["object_id"], []).append(assessment)
     for row in identities:
         identifiers = json.loads(row["identifiers_json"])
+        member_ids = json.loads(row["member_ids_json"])
+        reviews = [
+            review for object_id in member_ids
+            for review in assessments_by_object.get(object_id, [])
+        ]
         has_publication_reference = any(
             value.casefold().startswith(("publication object key:", "bibliographic concordance:"))
             for value in identifiers
+        ) or any(review["disposition"] == "linked" for review in reviews)
+        has_no_known_edition = (
+            not has_publication_reference
+            and any(review["disposition"] == "no_known_edition" for review in reviews)
         )
+        has_publication_assessment = has_publication_reference or has_no_known_edition
         if has_publication_reference:
             publication_referenced += 1
+        if has_no_known_edition:
+            publication_no_known += 1
+        if has_publication_assessment:
+            publication_assessed += 1
         if row["record_status"] in ("probable", "confirmed"):
             priority_identities += 1
             publication_referenced_priority += int(has_publication_reference)
+            publication_no_known_priority += int(has_no_known_edition)
+            publication_assessed_priority += int(has_publication_assessment)
     media_total = conn.execute("SELECT count(*) FROM media").fetchone()[0]
     media_rights_known = conn.execute(
         "SELECT count(*) FROM media WHERE rights_status NOT IN ('unknown','')"
@@ -90,8 +114,15 @@ def roadmap_metrics(conn):
         "publication_referenced_identities": publication_referenced,
         "priority_identities": priority_identities,
         "publication_referenced_priority_identities": publication_referenced_priority,
+        "publication_no_known_identities": publication_no_known,
+        "publication_no_known_priority_identities": publication_no_known_priority,
+        "publication_assessed_identities": publication_assessed,
+        "publication_assessed_priority_identities": publication_assessed_priority,
         "publication_reference_pct": (
             publication_referenced_priority / priority_identities if priority_identities else 0
+        ),
+        "publication_assessment_pct": (
+            publication_assessed_priority / priority_identities if priority_identities else 0
         ),
         "translation_identities": sum(row["has_translation"] for row in identities),
         "text_edition_identities": sum(row["has_text_edition"] for row in identities),
@@ -298,6 +329,16 @@ def write_roadmap(conn, config_path, destination):
             metrics["publication_referenced_priority_identities"],
             metrics["priority_identities"], 100 * metrics["publication_reference_pct"],
         ),
+        "| Probable/confirmed identities reviewed as having no known edition | %s/%s (%.1f%%) |" % (
+            metrics["publication_no_known_priority_identities"],
+            metrics["priority_identities"],
+            100 * metrics["publication_no_known_priority_identities"] / metrics["priority_identities"]
+            if metrics["priority_identities"] else 0,
+        ),
+        "| Probable/confirmed identities with a publication disposition | %s/%s (%.1f%%) |" % (
+            metrics["publication_assessed_priority_identities"],
+            metrics["priority_identities"], 100 * metrics["publication_assessment_pct"],
+        ),
         "| Identities with a translation | %s |" % metrics["translation_identities"],
         "| Scan-checked normalized reading texts | %s |" % metrics["checked_reading_texts"],
         "| Publication keys resolved to the publication they designate | %s/%s |" % (
@@ -321,7 +362,9 @@ def write_roadmap(conn, config_path, destination):
         "| Qualifying discovery-saturation sweeps | %s |" % metrics["qualifying_saturation_sweeps"],
         "",
         "Coverage means a field or reference is present, not independently verified. "
-        "Publication coverage currently uses identifier schemes as a proxy. A non-unknown "
+        "Publication-link coverage combines publication identifiers with reviewed object-level "
+        "publication links. Publication-disposition coverage additionally counts a sourced "
+        "no-known-edition finding; catalogue silence alone does not qualify. A non-unknown "
         "rights label is not a reviewed public-reuse decision. Discovery saturation applies "
         "only to the logged searches and does not estimate global completeness.",
         "",

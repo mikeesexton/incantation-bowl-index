@@ -25,6 +25,39 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-26 — Codex — Refine publication maturity and refresh Bowlam
+
+**Claimed:** TEXT-001, SCHOL-005, ACCESS-008
+**Corpus:** changed (159 evidence-bound British Museum–Segal publication
+assessments in a new append-only ledger) — state digest `229ad81a85a3`
+**Tests:** 320 Python tests passed; copied-database migration and idempotent
+159-row replay passed; SQLite integrity and foreign-key checks passed; public
+leak guard, live custom-domain figures, preview Access redirect, and
+`git diff --check` passed
+
+- Replaced the structurally inconsistent publication gate with an 80%
+  evidence-backed disposition gate—linked publication or sourced
+  no-known-edition finding—plus a 50% actual-link safeguard. Added a reviewed,
+  append-only corpus ledger and CLI importer; catalogue silence alone cannot
+  satisfy the gate.
+- Used the British Museum's official BIB3908 relation to record publication
+  links for all 159 objects associated with Segal 2000, without inventing exact
+  Segal numbers or changing any identity. Probable/confirmed publication-link
+  coverage is now 744/1,077 (69.1%), up from the prior 611/1,075 planning
+  snapshot; the 80% threshold is 118 identities away.
+- Refreshed stale roadmap conflict, readable-text, media-rights and acquisition
+  figures; promoted the pending NLI clarification and remaining 333 unlinked
+  priority identities in the research order. Segal remains a high-value exact
+  concordance and text acquisition through the documented NYPL/ILL route.
+- Rebuilt and deployed bowlam.com as Cloudflare Pages deployment
+  `fdac3532`: 1,736 bowls, 2,053 source records, 860 edition references, 371
+  provenance references and 330 image references. The custom domain shows the
+  new figures and `/preview/` still redirects through Cloudflare Access.
+- Deliberately recorded no no-known-edition findings for the NLI cohort: absence
+  of publication information in its catalogue is not evidence that no edition
+  exists. Next: incorporate NLI's reply, then work the 128 non-NLI unlinked
+  priority identities while pursuing exact Segal concordances.
+
 ## 2026-09-26 — Codex — Reconcile expanded NLI catalogue series
 
 **Claimed:** CONC-003

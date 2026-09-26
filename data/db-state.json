@@ -1,10 +1,10 @@
 {
-  "corpus_digest": "956c0e4d9e45ff752e325b8b261a84da0ecabd520fc425bedf4457209c4bbbc9",
-  "migrations": 16,
-  "note": "Ingested NLI IAA Bowl 1-74 catalogue series and eight Scholem/Klagsbald item records; retained catalogue anomalies and reconciliation leads without identity merges.",
-  "recorded_at": "2026-09-26T23:22:39+00:00",
+  "corpus_digest": "229ad81a85a3448e01d1b0f34c9dd84a243a22809a5d9bcbe525890956f0dda9",
+  "migrations": 17,
+  "note": "Added evidence-bound publication dispositions, linked all 159 British Museum Segal relation objects, refined maturity gates, and refreshed Bowlam aggregates",
+  "recorded_at": "2026-09-26T23:54:48+00:00",
   "recorded_by": "codex",
-  "schema_version": "016_accuracy_audit_reviews",
+  "schema_version": "017_publication_assessments",
   "tables": {
     "accuracy_audit_reviews": {
       "digest": "3941b643cb346dce143d92a3798831040e9be66ae7b6fdf65f07e61827db8586",
@@ -98,6 +98,10 @@
       "digest": "471932cb539de53a98e90b99b8bff8c6bcf67a9a566293ff4b967d0655a484ce",
       "rows": 2053
     },
+    "publication_assessments": {
+      "digest": "f327e8ad65152d313c6431e935eeff6b374e8f5a9a94f3ba6b11c5f665a72b47",
+      "rows": 159
+    },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
       "rows": 36
@@ -107,8 +111,8 @@
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "1c8dd52723299945e5b4c8404db5d87a413d1145c1e4b33083018d3f549c7cb5",
-      "rows": 16
+      "digest": "eb44f513faacb188b0093db9b821cf1357dee8fa924e6726d109f31453d5c893",
+      "rows": 17
     },
     "search_queries": {
       "digest": "64230fd2056c80b6dcb4426e9c1ebb32650b1cafe9b7cfc2759d22ccf1e39ca9",

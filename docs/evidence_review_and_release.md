@@ -49,10 +49,12 @@ The vocabulary is:
 | `approved` | Reviewer supplies rights evidence, locator and attribution for this exact resource | Yes | Eligible while evidence remains current |
 
 The initial 325 rows and the two-row 18 September addendum were mechanical
-`needs_review` inventory holds. All 327 media records have current ledger
-coverage. Ten first received explicit owner approvals on 20 September; the
-owner later approved the exact 288-row Penn educational-use cohort. The current
-projection therefore includes 298 media rows and withholds 29. Historical
+`needs_review` inventory holds. Subsequent evidence-bound batches bring current
+ledger coverage to all 354 media records. Ten first received explicit owner
+approvals on 20 September; the owner later approved the exact 288-row Penn
+educational-use cohort, and later reviewed additions bring completed approvals
+to 319. The current projection therefore includes 319 media rows and withholds
+35. Historical
 `media.rights_status` labels and a source's
 public-domain label are not by themselves media approvals. The software validates
 the decision record; it cannot establish the legal correctness of its rationale.
@@ -72,7 +74,7 @@ noncommercial, then approved the exact 288-row proposal for the public library
 and Access-gated preview. The approval, required object-number credits, three
 coherent shared-URL groups and current evidence fingerprints are bound in
 `public_library_expansion_review_2026-09-20.json` at cohort hash
-`cc5f8440930d`. The 29 non-Penn unapproved rows remain withheld.
+`cc5f8440930d`. The 35 currently unapproved rows remain withheld.
 
 ## Two distinct exports
 
@@ -88,7 +90,7 @@ Private corrected-text files, scans, database snapshots and research exports sta
 
 Next: arrange an independent second text review, reconcile the newly documented
 Penn metadata differences, source-review the pending conflict instances, and
-seek item-specific rights evidence for the remaining 29 media rows. The public
+seek item-specific rights evidence for the remaining 35 media rows. The public
 library and expanded gated-preview candidates remain pending deployment
 approval. Keep institutional-cohort work and a representative accuracy audit
 separate: the Montgomery cohort is not a statistically representative sample of

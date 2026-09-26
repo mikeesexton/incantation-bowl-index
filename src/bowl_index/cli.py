@@ -34,6 +34,7 @@ from .publication import apply_publication_batch, publication_metrics
 from .acquisitions import write_acquisition_report
 from .scholarship import apply_scope_batch
 from .publications import apply_publication_registry, publication_object_counts
+from .publication_assessments import apply_publication_assessments
 from .claim_corrections import apply_locator_corrections
 from .source_corrections import apply_source_corrections
 from .cohort import write_montgomery_cohort, apply_montgomery_register
@@ -89,6 +90,11 @@ def build_parser():
         "ingest-publication-registry", help="resolve publication keys to the publication they designate"
     )
     pubreg.add_argument("path")
+    pub_assess = sub.add_parser(
+        "ingest-publication-assessments",
+        help="record evidence-bound publication links and no-known-edition findings",
+    )
+    pub_assess.add_argument("path")
     scope = sub.add_parser("ingest-source-scope", help="record what kind of work a source is")
     scope.add_argument("path")
     documents = sub.add_parser(
@@ -256,6 +262,9 @@ def main(argv=None):
     elif args.command == "ingest-publication-registry":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_publication_registry(conn, review), indent=2, sort_keys=True))
+    elif args.command == "ingest-publication-assessments":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(apply_publication_assessments(conn, review), indent=2, sort_keys=True))
     elif args.command == "ingest-source-scope":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_scope_batch(conn, review), indent=2, sort_keys=True))
