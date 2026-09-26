@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8",
+  "corpus_digest": "956c0e4d9e45ff752e325b8b261a84da0ecabd520fc425bedf4457209c4bbbc9",
   "migrations": 16,
-  "note": "Started bounded metadata-only shadow-monitoring baseline; corpus unchanged",
-  "recorded_at": "2026-09-26T21:28:24+00:00",
+  "note": "Ingested NLI IAA Bowl 1-74 catalogue series and eight Scholem/Klagsbald item records; retained catalogue anomalies and reconciliation leads without identity merges.",
+  "recorded_at": "2026-09-26T23:22:39+00:00",
   "recorded_by": "codex",
   "schema_version": "016_accuracy_audit_reviews",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "903a9216bff1d0ead86d8a8b101cde64f22987d9de931430c6e5265da48b7c0d",
-      "rows": 2271
+      "digest": "35f227b22c1ebf8e045cf7ccd5ae02f923a7d87d3f2c6599af65d7594f915e3d",
+      "rows": 2353
     },
     "appearances": {
-      "digest": "6a1b7b880e3b9dccbc6bdfcefcafb114578d7595c30539185866b2e8881bd442",
-      "rows": 2271
+      "digest": "d6ea8cb412da1571af4eccf87b25eece31869beb3f98cd99faf4736404bbe53c",
+      "rows": 2353
     },
     "captures": {
       "digest": "3216f916bc07362284573970d7897832512f12ea888186d8f2f7033aa53d1b14",
@@ -35,8 +35,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "0bd9c2d6d581ab513f6e14a133515de32ed5721e27aa386edf0d74101e982e5d",
-      "rows": 7275
+      "digest": "d92fd71bf98a1598ad55ea95e0560307b1e205f49983c2d9676daccb821dee33",
+      "rows": 7469
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,12 +63,12 @@
       "rows": 215
     },
     "identifiers": {
-      "digest": "873f235e3dc18e677a67b425927302210dd11b503ac82e782aeefbc59340de9a",
-      "rows": 4747
+      "digest": "acbc09ad2ff72382609f84d9f54741cdc26f3a4c347ef3b1c5bcd98d469070c1",
+      "rows": 4985
     },
     "leads": {
-      "digest": "e6c07b7875fcf3bea0c4618c4510d1e4d695bb97136484947a2f53fe642d5cb3",
-      "rows": 65
+      "digest": "84d421098d48958f38f624c4040cece30bf063958dd13181dd8b0e2862317ea5",
+      "rows": 67
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
@@ -95,8 +95,8 @@
       "rows": 5
     },
     "objects": {
-      "digest": "ccfab7eafc5118ffc44115fbd1686da8d5eb6c118e612edecb68149ff2ff1a14",
-      "rows": 1971
+      "digest": "471932cb539de53a98e90b99b8bff8c6bcf67a9a566293ff4b967d0655a484ce",
+      "rows": 2053
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -111,12 +111,12 @@
       "rows": 16
     },
     "search_queries": {
-      "digest": "cc6d1a38c33e10d1507478c07c59a64adf3d418d7bca1fc86e8f9d54b4861ed0",
-      "rows": 361
+      "digest": "64230fd2056c80b6dcb4426e9c1ebb32650b1cafe9b7cfc2759d22ccf1e39ca9",
+      "rows": 363
     },
     "search_runs": {
-      "digest": "ca1f3db14c044a5a0398c1a36ed8ac58f13e2e2c872c40a01b80ac660380c0d0",
-      "rows": 17
+      "digest": "f71feba525d4869c823293157f66cc41ea310cdd9334930ad8bf95beb3f5ce5f",
+      "rows": 18
     },
     "source_corrections": {
       "digest": "4a0ef8e4f971418e86584875d6b5491495febf1f14bebd23ea1ce5bd14465cb3",
@@ -127,8 +127,8 @@
       "rows": 112
     },
     "sources": {
-      "digest": "673bb17cb7cb1da6677a692590d41403ba4588cbc2d8f513470d3d7247403c18",
-      "rows": 864
+      "digest": "d79cc42803e4b664ead2479e7019aabf5b8e85babc3d811d90cd466536cb6d4f",
+      "rows": 947
     },
     "text_proofreading_reviews": {
       "digest": "6fa446bc7352da299d66007a05add7de347ea51173334ca8e06877fb1f774873",

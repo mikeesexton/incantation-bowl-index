@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-09-20T17:56:04+00:00`
+Generated: `2026-09-26T23:21:37+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -12,7 +12,7 @@ The original source claims remain unchanged. This review classifies apparent dif
 | Scholarly Disagreement | 3 |
 | Source Inconsistency | 4 |
 | Unresolved | 11 |
-| Requires current evidence review | 0 |
+| Requires current evidence review | 21 |
 
 ## Revalidation queue
 
@@ -20,6 +20,27 @@ Historical decisions are retained. This queue contains missing reviews and decis
 
 | Identity | Field | Current cited values |
 |---|---|---|
+| IDENT-01C31C5A30D5 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.4=34) | provenance | collection_history: Donated by Avigdor Klagsbald. [SRC-F39B764D9E75; MMS 990039100320205171]; collection_history: Formerly Paris – Klagsbald. [SRC-F39B764D9E75; MMS 990039100320205171] |
+| IDENT-20D95CDFD0DB — NLI Klagsbald incantation bowl (Ms. Heb. 6417.2=34) | provenance | collection_history: Donated by Avigdor Klagsbald. [SRC-216AB932933B; MMS 990039099740205171]; collection_history: Formerly Paris – Klagsbald. [SRC-216AB932933B; MMS 990039099740205171] |
+| IDENT-42276229F0AD — Barakat Gallery PF.5729 | dating | dating: 400–700 CE [SRC-0AC8CA3CDF84; listing title]; period: Byzantine Period [SRC-0AC8CA3CDF84; listing title] |
+| IDENT-42276229F0AD — Barakat Gallery PF.5729 | text_description | catalogue_classification: Jewish Babylonian Aramaic script [SRC-0AC8CA3CDF84; full description, object-specific paragraph]; textual_feature: Protective knife extending from earth to sky and used against demons, dews, satans, idols and Liliths [SRC-0AC8CA3CDF84; listing translation]; textual_feature: Invokes seven words said to bind heaven and earth [SRC-0AC8CA3CDF84; listing translation] |
+| IDENT-42276229F0AD — Barakat Gallery PF.5729 | text_form | line_count: 9 [SRC-0AC8CA3CDF84; full description, object-specific paragraph]; text_layout: Spirals outward clockwise from the centre [SRC-0AC8CA3CDF84; full description, object-specific paragraph] |
+| IDENT-49CEAC0103D2 — Barakat Gallery LO.769 | dating | dating: 500–800 CE [SRC-658C490CF6BF; listing title]; period: Late Sasanian / early Islamic period (6th–8th century CE) [SRC-658C490CF6BF; full description, generic dating paragraph] |
+| IDENT-49CEAC0103D2 — Barakat Gallery LO.769 | ritual | text_purpose: Healing for Immi daughter of Revita and expulsion of a harmful spirit [SRC-658C490CF6BF; listing translation]; text_purpose: Apparently also curses a named opponent [SRC-658C490CF6BF; listing commentary attributed to Siam Bhayro] |
+| IDENT-49CEAC0103D2 — Barakat Gallery LO.769 | target | target: Evil spirit of apoplexy affecting the head, temple, eye and eyelid of Immi daughter of Revita [SRC-658C490CF6BF; listing translation]; target: Minnim son of Tibbi [SRC-658C490CF6BF; listing translation and commentary] |
+| IDENT-49CEAC0103D2 — Barakat Gallery LO.769 | text_description | textual_feature: Described by the commentator as the best-preserved example of the rare Isaiah 14:6 quotation known to him [SRC-658C490CF6BF; listing commentary attributed to Siam Bhayro]; textual_feature: Isaiah 14:6 described as very rare in the bowls; the commentator reports knowing two other unpublished examples [SRC-658C490CF6BF; listing commentary attributed to Siam Bhayro] |
+| IDENT-740412BDAA80 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.6=34) | provenance | collection_history: Formerly Paris – Klagsbald. [SRC-E098E3947D1F; MMS 990039101770205171]; collection_history: Donated by Avigdor Klagsbald. [SRC-E098E3947D1F; MMS 990039101770205171] |
+| IDENT-9078953DB2E7 — Barakat Gallery X.0552 | dating | dating: 5th–7th century CE [SRC-B1A37FD6D79D; full description, object-specific paragraph]; dating: 500–800 CE [SRC-B1A37FD6D79D; stock X.0552 / record 54886] |
+| IDENT-9078953DB2E7 — Barakat Gallery X.0552 | ritual | formula_genre: Sealing and binding against harmful dreams [SRC-B1A37FD6D79D; full description and translation]; text_purpose: Protection from dreams of the night and day [SRC-B1A37FD6D79D; stock X.0552 / record 54886] |
+| IDENT-9078953DB2E7 — Barakat Gallery X.0552 | text_description | catalogue_classification: Jewish Aramaic [SRC-B1A37FD6D79D; full description, object-specific paragraph]; textual_feature: Handwriting generally clear, with unclear passages marked by dots and a scribal insertion marked by chevrons [SRC-B1A37FD6D79D; full description, object-specific paragraph] |
+| IDENT-CB1D9D72E7BD — Apotropaic index SD12 | biblical_intertexts | biblical_citation: Exodus 3:14 [SRC-B891A0061CEA; p. 189, translation line 5]; biblical_citation: Isaiah 51:15 [SRC-B891A0061CEA; p. 189, translation line 3] |
+| IDENT-CB1D9D72E7BD — Apotropaic index SD12 | ritual | formula_genre: Angels on all sides protective formula [SRC-B891A0061CEA; pp. 185–186, 189–191]; text_purpose: Protection of Dudita and her children from harmful beings, words, and utterances [SRC-B891A0061CEA; p. 189, translation lines 1–5] |
+| IDENT-CB1D9D72E7BD — Apotropaic index SD12 | text_description | text_feature: Conclusion uses Amen, Selah, Hallelujah, a legal-style sound-and-established formula, and an enduring seal [SRC-B891A0061CEA; p. 189, translation lines 5–6 and Notes]; text_feature: The article compares SD12 with other bowl, amulet, Geniza, and bedtime-prayer versions of the surrounding-angels formula [SRC-B891A0061CEA; pp. 185–193] |
+| IDENT-CB1D9D72E7BD — Apotropaic index SD12 | text_form | line_count: Six lines [SRC-B891A0061CEA; pp. 185, 188]; text_layout: Six lines spiral clockwise from the bottom of the concave side to the rim, surrounded by a circle [SRC-B891A0061CEA; p. 185] |
+| IDENT-CCFCF40300C5 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.5=34) | provenance | collection_history: Formerly Paris – Klagsbald. [SRC-F4EFCC759A72; MMS 990039100340205171]; collection_history: Donated by Avigdor Klagsbald. [SRC-F4EFCC759A72; MMS 990039100340205171] |
+| IDENT-D24864CAB7E0 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.7=34) | provenance | collection_history: Formerly Paris – Klagsbald. [SRC-9C22E11B8B7E; MMS 990039101780205171]; collection_history: Donated by Avigdor Klagsbald. [SRC-9C22E11B8B7E; MMS 990039101780205171] |
+| IDENT-DE61804A3104 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.3=34) | provenance | collection_history: Donated by Avigdor Klagsbald. [SRC-7217B97CB1EF; MMS 990039100300205171]; collection_history: Formerly Paris – Klagsbald. [SRC-7217B97CB1EF; MMS 990039100300205171] |
+| IDENT-EABAA030C14A — NLI Klagsbald incantation bowl (Ms. Heb. 6417.1=34) | provenance | collection_history: Formerly Paris – Klagsbald. [SRC-91E7EC97317B; MMS 990035341600205171]; collection_history: Donated by Avigdor Klagsbald. [SRC-91E7EC97317B; MMS 990035341600205171] |
 
 ## Substantive follow-up queue
 

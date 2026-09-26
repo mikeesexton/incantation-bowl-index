@@ -25,6 +25,33 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-26 — Codex — Reconcile expanded NLI catalogue series
+
+**Claimed:** CONC-003
+**Corpus:** changed (82 catalogue candidates and appearances, 238 identifiers,
+194 claims, two net-new leads, and two search-log rows) — state digest
+`956c0e4d9e45`
+**Tests:** 316 Python tests passed; copied-database dry run, idempotent
+candidate/lead replay, SQLite integrity and foreign-key checks passed;
+`ibi stats` reports zero unclassified claim fields; `git diff --check` passed
+
+- Added 74 NLI catalogue appearances numbered Bowl 1–74 whose MARC metadata
+  names the Israel Antiquities Authority as current owner. Retained exact MMS,
+  owner, title, 942 and 907 metadata without expanding `רה"ע`; preserved the
+  bowl 68 / digital-label 14 inconsistency rather than correcting it silently.
+- Added the exact NLI appearances for the Scholem bowl at Ms. Heb. 6079=34 and
+  the seven Klagsbald bowls at Ms. Heb. 6417.1–7=34. They remain separate
+  candidates pending checked concordances to the existing source-derived
+  records; no identity was merged.
+- Verified that the 205 existing numbered NLI records form the complete
+  shelfmark run Ms. Heb. 9467.3–207 and omit title numbers 2, 52, 97, 98, 152,
+  202–206 and 216. Updated the 216-versus-205 and Klagsbald leads to in progress
+  and opened precise IAA-series and Scholem identity leads.
+- No object was created for any of the eleven unlisted Moussaieff numbers.
+  Their status remains dependent on NLI's reply. Seven new complementary
+  Klagsbald collection-history comparisons remain visible for ordinary
+  evidence-bound conflict review rather than being auto-adjudicated.
+
 ## 2026-09-26 — Codex — Start read-only source-monitoring shadow run
 
 **Claimed:** DISC-003, OPS-003, OPS-004

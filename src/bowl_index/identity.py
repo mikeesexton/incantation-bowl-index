@@ -59,7 +59,7 @@ CONTENT_COVERAGE = {
         "biblical_quotations", "biblical_quotation", "biblical_citation", "biblical_citations",
     },
     "parallels": {"text_parallel", "textual_parallel", "comparandum"},
-    "visual": {"iconography", "iconography_or_caption"},
+    "visual": {"iconography", "iconography_or_caption", "directional_figures"},
     "publication": {
         "bibliography", "publication_status", "catalogue_concordance",
         "publication_register_identifier", "publication_heading_identifier",
@@ -111,6 +111,9 @@ def reading_score(row):
 # is neither grouped nor listed here is a gap, not a default: see
 # `unclassified_claim_fields` and tests/test_field_model.py.
 EXCLUDED_CLAIM_FIELDS = {
+    "catalogue_title": "Title of the source appearance, already represented on the source and appearance records rather than a competing object assertion.",
+    "collection_designation": "Collection designations belong in the identifier table; a retained claim copy is not a competing descriptive assertion.",
+    "collection_history_source_text": "Verbatim source wording retained behind normalized collection-history claims, not an independent normalized assertion.",
     "dimensions_source_text": "Retained original source string behind a structured dimensions claim, not an independent assertion.",
     "dating_context": "Context supporting a dating argument, not a competing date.",
     "catalogue_description": "Free-text catalogue prose. Third-party expression rather than a comparable assertion, and withheld from public export.",
@@ -119,6 +122,10 @@ EXCLUDED_CLAIM_FIELDS = {
     "findspot_evidence": "Grades the basis of a findspot claim (META-005).",
     "findspot_assessment": "Grades the basis of a findspot claim (META-005).",
     "provenance_quality": "Assesses the quality of a provenance claim (META-005).",
+    "evidence_grade": "Grades the evidence supporting a reading or description; an assessment of claims rather than a competing object property.",
+    "handwriting": "Free-text palaeographic description retained for research; not yet normalized into a comparison vocabulary.",
+    "object_description": "Free-text physical description retained with its source; not yet normalized into comparable physical facets.",
+    "textual_uncertainty": "Editorial uncertainty note qualifying a reading, not a competing transcription or object assertion.",
     "former_location": "Ownership history is a sequence, not a competing description. Model it in `events` with the provenance event types.",
     "historical_collection": "Ownership history is a sequence; see `events`.",
     "historical_location_status": "Ownership history is a sequence; see `events`.",

@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-26T21:27:24+00:00`
+Generated: `2026-09-26T23:20:49+00:00`
 
 ## Portfolio status
 
@@ -10,13 +10,13 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 28 done · 24 in progress · 13 queued · 0 blocked |
+| Roadmap tasks | 28 done · 25 in progress · 12 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 10/24 |
 
 ### What is solid
 
-- Discovery is broad and reproducible within the classes it searched: 862 sources and 2,268 appearances support 1,969 candidate records representing an estimated 1,652 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
+- Discovery is broad and reproducible within the classes it searched: 947 sources and 2,353 appearances support 2,053 object records representing an estimated 1,736 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
 - Identity and extraction accuracy now has a reproducible baseline: a 60-identity stratified sample spanning 24 status/linkage/source strata found 36 fully verified rows, 23 verified with evidence notes, no demonstrated errors, and one indeterminate BM068A claim check. The inverse-probability weighted verified-or-noted estimate is 98.7%; a separate 20-identity high-risk diagnostic sample found no unsupported cluster, while preserving source disagreements rather than choosing canonical values.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
@@ -31,12 +31,12 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 ### What prevents release readiness
 
-- Publication links remain incomplete: 739 of 1,652 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.
+- Publication links remain incomplete: 739 of 1,736 distinct identities carry a publication reference, including 611 of 1,075 probable or confirmed identities (56.8%). All 33 current keys resolve, but the 80% TEXT-001 gate is 249 identities away and is now acquisition-bound: held editions are enumerated almost to exhaustion, and 205 of the unreferenced priority identities are NLI museum records carrying no publication information of any kind.
 - The first stratified identity-and-extraction audit is complete, but it is a 60-identity baseline rather than corpus-wide certification: unequal weighting reduces its effective sample size to 47.5, one BM068A claim check is indeterminate, the review was not independent, and findspot claims are not yet consistently graded by evidence basis.
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just two identities have a recorded transcription or transliteration and only 54 identities have a translation. Davidovitz 41 is the first modern private transcription-and-translation pilot; four scan-checked Wohlstein translations and the Martínez Borobio transliteration and project paraphrase are released on recorded bases, while the fifth Wohlstein reading still awaits specialist review and other protected editions remain private or pointer-only.
 - Release rights remain separate from Mike's private access: 319 of 353 media rows have completed decisions for shared/public reuse and 34 remain withheld from those surfaces. Mike Access contains all 353 recorded media rows because it is a single-user personal research surface, not a release. The expanded shared scholar preview remains deployed behind Cloudflare Access; the public-library candidate remains local and unpublished.
-- The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete. The Mac mini and both encrypted Restic destinations have passed independent restores, and a metadata-only monitoring baseline now exists, but scheduling, Healthchecks, account separation, offline recovery copies, and the full 14-day shadow run remain incomplete.
-- Acquisition completeness is not yet measured corpus-wide: 52 of 862 sources have linked captures, 41 with PDFs and eleven with only non-PDF captures. All 52 captured sources are now assessed through 53 append-only holding rows: 49 sources have a complete document, Naveh-Shaked 1993 and Juusola 1999 are correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Burberry 2020 is now a complete, hash-bound University of Exeter repository holding with all twenty-five ACB units extracted. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.
+- The NLI IAA-owned series and the separate Scholem/Klagsbald catalogue records are now retained, but the 205-versus-216 Moussaieff discrepancy and their publication concordances remain unresolved; Schøyen, broader Penn, and remaining British Museum/Segal concordances are also incomplete. The Mac mini and both encrypted Restic destinations have passed independent restores, and a metadata-only monitoring baseline now exists, but scheduling, Healthchecks, account separation, offline recovery copies, and the full 14-day shadow run remain incomplete.
+- Acquisition completeness is not yet measured corpus-wide: 52 of 947 sources have linked captures, 41 with PDFs and eleven with only non-PDF captures. All 52 captured sources are now assessed through 53 append-only holding rows: 49 sources have a complete document, Naveh-Shaked 1993 and Juusola 1999 are correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Burberry 2020 is now a complete, hash-bound University of Exeter repository holding with all twenty-five ACB units extracted. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.
 - Unattended internet research is not operationally ready: a reviewed six-source registry and thirteen-request read-only baseline now provide bounded retries, rate delay, hashes, semantic diffs, private raw retention, a disable switch, overlap locking, and lead-only output. Scheduling and Healthchecks are still absent, the standard research account is not commissioned, and no source-specific collector has completed the required 14-day shadow run.
 
 ## Access and commercialization layers
@@ -73,21 +73,21 @@ Current evidence: **206 scholarship works indexed; 41 with a source-linked held 
 
 | Measure | Current |
 |---|---:|
-| Candidate source records | 1971 |
-| Working physical identity hypotheses (all statuses) | 1654 |
-| Source appearances | 2271 |
-| Sources | 864 |
+| Candidate source records | 2053 |
+| Working physical identity hypotheses (all statuses) | 1736 |
+| Source appearances | 2353 |
+| Sources | 947 |
 | Source documents with current assessments | 52 |
 | Source documents assessed complete | 49 |
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 404 |
-| Triaged claim-field differences | 644/658 |
+| Identities triggering raw claim-difference flags | 411 |
+| Triaged claim-field differences | 644/665 |
 | Compatible differences | 626 |
-| Review required (missing or no longer valid) | 14 |
+| Review required (missing or no longer valid) | 21 |
 | Existing reviews requiring revalidation | 0 |
 | Substantive conflict instances | 18 across 16 identities |
-| All identities with a publication reference | 739/1654 (44.7%) |
+| All identities with a publication reference | 739/1736 (42.6%) |
 | Probable/confirmed identities with a publication reference | 611/1077 (56.7%) |
 | Identities with a translation | 57 |
 | Scan-checked normalized reading texts | 39 |
@@ -99,8 +99,8 @@ Current evidence: **206 scholarship works indexed; 41 with a source-linked held 
 | Media records with a non-unknown rights status | 45/354 (12.7%) |
 | Media with a current ledger entry | 354/354 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
-| Blocked leads | 31 |
-| Open or active leads | 16 |
+| Blocked leads | 29 |
+| Open or active leads | 20 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication coverage currently uses identifier schemes as a proxy. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.
@@ -109,16 +109,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1207 | 73.0% |
-| Provenance | 363 | 21.9% |
-| Dating | 484 | 29.3% |
-| Dimensions | 460 | 27.8% |
-| Material | 410 | 24.8% |
-| Language | 1033 | 62.5% |
-| Script | 94 | 5.7% |
+| Location | 1289 | 74.3% |
+| Provenance | 371 | 21.4% |
+| Dating | 484 | 27.9% |
+| Dimensions | 460 | 26.5% |
+| Material | 410 | 23.6% |
+| Language | 1041 | 60.0% |
+| Script | 94 | 5.4% |
 | Text Edition | 3 | 0.2% |
-| Translation | 57 | 3.4% |
-| Image | 330 | 20.0% |
+| Translation | 57 | 3.3% |
+| Image | 330 | 19.0% |
 
 ### Content-facet coverage
 
@@ -126,15 +126,15 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 553 | 33.4% |
-| Biblical Intertexts | 170 | 10.3% |
-| Client | 160 | 9.7% |
-| Condition | 142 | 8.6% |
-| Ritual | 110 | 6.7% |
-| Text Description | 93 | 5.6% |
-| Text Form | 43 | 2.6% |
-| Practitioner | 29 | 1.8% |
-| Visual | 27 | 1.6% |
+| Publication | 553 | 31.9% |
+| Biblical Intertexts | 170 | 9.8% |
+| Client | 160 | 9.2% |
+| Condition | 142 | 8.2% |
+| Ritual | 110 | 6.3% |
+| Text Description | 93 | 5.4% |
+| Text Form | 43 | 2.5% |
+| Practitioner | 29 | 1.7% |
+| Visual | 28 | 1.6% |
 | Parallels | 7 | 0.4% |
 | Authenticity Assessment | 4 | 0.2% |
 | Vessel Form | 4 | 0.2% |
@@ -280,8 +280,9 @@ Reconcile physical bowls across museum records, publications, auctions, dealers,
 - [ ] **CONC-002 — Finish Penn Museum concordances** · In progress · Research
   - Done when: Every identifiable Montgomery/Penn publication number is mapped to a current Penn object or a documented lost/unresolved state.
   - Evidence/status: All forty main Montgomery/Penn concordances now have dated, evidence-bound current museum-page reviews (2026-09-05): Object Number and explicit PBS III number agree in every case. Register/heading discrepancies for 14, 19 and 40 remain preserved; B2972 explicitly corrects text 40 to B2971. Nine exposed field differences were individually reviewed and five directed Penn relationship assertions were recorded without merging identities. Broader Penn holdings and the historical 150-plus inventory still need reconciliation.
-- [ ] **CONC-003 — Finish National Library of Israel concordances** · Queued · Research
+- [ ] **CONC-003 — Finish National Library of Israel concordances** · In progress · Research
   - Done when: The 205 harvested records, 216-object donation statement, exhibition names, and seven Klagsbald bowls are reconciled without inventing missing item identities.
+  - Evidence/status: The public NLI catalogue now accounts for three separately modelled groups: the existing 205-record Ms. Heb. 9467.3–207 run; 74 newly retained candidate appearances numbered Bowl 1–74 whose MARC owner is the Israel Antiquities Authority; and eight separately shelfmarked NLI holdings comprising Ms. Heb. 6079=34 and Ms. Heb. 6417.1–7=34. Exact MMS, shelfmark, owner, catalogue-title and provenance metadata are retained without expanding the unexplained abbreviation רה"ע or merging identities. The 205 titles omit numbers 2, 52, 97, 98, 152, 202–206 and 216; NLI clarification is pending.
 - [ ] **CONC-004 — Finish Schøyen publication and collection concordances** · Queued · Research
   - Done when: Individually identifiable MS records are reconciled with publication numbers and aggregate collection claims; unenumerated remainder stays explicitly aggregate.
 - [ ] **CONC-005 — Triage every conflicting identity-level core claim** · In progress · Research
@@ -499,7 +500,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `14`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `21`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] Publication-reference coverage reaches the operational threshold. Currently a proxy over identifier schemes; SCHOL-004 must land before this gate means edition coverage. Measured 2026-09-19 at 0.568 (611/1,075). The proxy counts only the 'publication object key' and 'bibliographic concordance' identifier schemes, so the sourced no-known-edition status that TEXT-001's done_when also accepts cannot move it; and if the 205 NLI bowls have no known edition the ceiling is 0.809. Whether to realign the metric with the task definition or to let the gate slip on acquisitions is a review decision, not an agent decision. — current `56.7%`; target `>= 80.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `90.1%`; target `>= 100.0%`.
@@ -549,6 +550,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-26:** Advanced CONC-003 through a checked NLI Alma SRU reconciliation. Added 74 candidate catalogue appearances numbered Bowl 1–74 whose MARC records name the Israel Antiquities Authority as current owner, plus the item-level Scholem record Ms. Heb. 6079=34 and seven Klagsbald records Ms. Heb. 6417.1–7=34. Preserved exact Hebrew titles, MMS identifiers, owner designations, provenance notes and digital-label anomalies, including bowl 68's conflicting MARC 907 label ‘IAA Bowl 14’; did not expand רה"ע or merge any identity. Verified that the existing 205 numbered NLI records form the complete shelfmark run Ms. Heb. 9467.3–207 and omit exactly 2, 52, 97, 98, 152, 202–206 and 216. Updated the collection leads while leaving all eleven unlisted numbers uninstantiated pending NLI clarification.
 - **2026-09-22:** Added and fully extracted three live Barakat Gallery listings: PF.5729 and LO.769 as new probable records and X.0552 as a substantially enriched existing record. Preserved dealer wording, full translations, five visually checked and locally retained images, current-offer appearances, and three hash-addressed private page captures; separated every object-specific fact from generic catalogue copy and preserved LO.76 versus LO.769 as an unresolved identifier discrepancy. Mike clarified the permanent terminology: Mike Access and Mike-facing always mean his single-user private research bank, not distribution. The new private builder therefore includes every stored text and media row regardless of shared-release decisions; snapshot 24fc8696c4d9 contains all Barakat translations and images and passes 6/6 completeness checks. Shared/public projections still approve only project-authored card lines and withhold dealer text and images. A source audit found no support for the dealer's regional-distribution sentence as written: the located Jordan and Uzbekistan comparanda are juglets/jugs, Syria is plausible but unverified, and Lebanon and Egypt lack object-level corroboration. The Mike snapshot and shared candidate af488e34d8c3 remain local pending their respective deployment gates.
 - **2026-09-21:** Repaired the localhost private reader as an actual personal research bank rather than a release-shaped preview. Visually checked Ford 2023's source pages, stored its ten-line English translation and Jewish Babylonian Aramaic transcription for Davidovitz 41 as source-located private rows, and built a reproducible hash-bound derivative of the bowl photograph from figure 1. The shared UI now places a full translation first, offers original-language material under ‘Show original incantation’, refuses to treat PDF or catalogue-page URLs as images, and falls back safely when a remote raster fails. All 273 stored text rows remain available to Mike on loopback; the local shared-release candidate withholds the two new Ford rows and passes 10/10 release audits. No Cloudflare or public deployment was changed.
 - **2026-09-20:** Published ACCESS-009 behind Cloudflare Access. An Access policy binds to one hostname, but a Pages project also answers on bowlam.pages.dev and a per-deployment alias, so the first promoted build was briefly downloadable there with no gate. Withdrawn within minutes and re-published behind a host lock in site/functions/preview/[[path]].js, which 404s every host the policy does not cover. tests/test_scholar_preview.py holds it.

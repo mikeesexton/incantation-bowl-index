@@ -1,24 +1,26 @@
 # Discovery campaign status
 
-Generated: `2026-09-20T17:56:04+00:00`
+Generated: `2026-09-26T23:21:37+00:00`
 
 ## Corpus
 
-- Candidate objects: **1969**
+- Candidate objects: **2053**
 - Unclassified claim fields: **[]**
-- Estimated distinct objects after resolved dedupe: **1652**
+- Estimated distinct objects after resolved dedupe: **1736**
 - Resolved duplicate records: **317**
-- Probable or confirmed: **1188**
-- Source appearances: **2268**
-- Sources: **862**
+- Same source duplicate identifier groups: **1**
+- Same source duplicate claim groups: **0**
+- Probable or confirmed: **1190**
+- Source appearances: **2353**
+- Sources: **947**
 - Dedupe clusters pending: **0**
-- Objects with text: **209**
-- Objects with translation: **54**
+- Objects with text: **212**
+- Objects with translation: **58**
 - Objects with provenance: **163**
-- Objects with current location: **793**
-- Open leads: **16**
+- Objects with current location: **877**
+- Open leads: **20**
 - Planned queries: **0**
-- Searched queries: **321**
+- Searched queries: **322**
 - Coverage targets remaining: **0**
 - Qualifying saturation sweeps: **2**
 - Manual audits: **14**
@@ -36,7 +38,7 @@ Generated: `2026-09-20T17:56:04+00:00`
 | chapter | 0 | 17 | 0 |
 | dealer | 0 | 33 | 0 |
 | excavation_report | 0 | 34 | 0 |
-| museum | 0 | 28 | 0 |
+| museum | 0 | 29 | 0 |
 | private_collection | 0 | 17 | 0 |
 | scholarship | 0 | 8 | 0 |
 | thesis | 0 | 34 | 0 |
@@ -63,8 +65,8 @@ Generated: `2026-09-20T17:56:04+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 695 |
-| unknown | 99 |
+| available | 781 |
+| unknown | 98 |
 | partial | 62 |
 | paywalled | 4 |
 | blocked | 1 |
@@ -74,16 +76,16 @@ Generated: `2026-09-20T17:56:04+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1245 |
+| object type | whole_bowl | 1329 |
 | object type | fragment | 374 |
 | object type | uncertain | 331 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 5 |
-| record status | probable | 915 |
-| record status | candidate | 775 |
+| record status | probable | 917 |
+| record status | candidate | 857 |
 | record status | confirmed | 273 |
 | record status | rejected | 6 |
-| authenticity | unassessed | 1435 |
+| authenticity | unassessed | 1519 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |
@@ -140,9 +142,13 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Classify corpus findspot and provenance assertions by evidence basis: documented controlled excavation, museum or accessions register, dealer or antiquities-market report, later scholarly inference, or unverified/unknown. Preserve the original place claim and its source separately from the assessment. |
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | blocked | 1 | Retrieve the preserved Virtual Magic Bowl Archive data package and enumerate all item records once either Open Research Exeter or the Internet Archive permits access. |
+| open | 1 | Find publication or collection concordances for the 74 NLI digital records labelled IAA Bowl 1–74 and determine overlap with previously indexed objects. |
+| in_progress | 1 | Map the seven Avigdor Klagsbald donation bowls to exact NLI catalogue/manuscript identifiers and determine which overlap the 205 harvested NLI SRU records. |
 | blocked | 1 | The National Library of Israel exhibition material highlights two bowls for Kafnai son of Imma (with Immai daughter of Anai) and Hai son of Aspindarmid. Resolve their names to the exact MMS and manuscript-part records among the 205 numbered NLI bowls already collected before adding appearances or claims. |
 | blocked | 1 | Penn Museum robots.txt was unavailable; metadata was collected slowly, but full page captures were not archived. |
 | blocked | 1 | Obtain authorized access to the complete Segal 2000 catalogue; the openly indexed PDF located during discovery is only a two-page title/contents preview. |
+| open | 1 | Reconcile NLI Ms. Heb. 6079=34 (MMS 990026405980205171) with the existing JNL Heb 4, 6079 and Naveh–Shaked 1985 Bowl 12a records. |
+| in_progress | 1 | Reconcile the National Library of Israel exhibition statement that 216 Moussaieff incantation bowls were donated with the 205 numbered incantation-bowl SRU records harvested in this campaign. |
 | blocked | 2 | Obtain an authorized local copy of Ford 2002, Another Look at Mandaic Incantation Bowl BM 91715, JANES 29, pp. 31–47. |
 | open | 2 | Review whether provisional Davidovitz 27 (IBI-FORD2014-DAV27) has another source appearance under a different designation, including the existing Davidovitz popularity-and-success bowl IBI-6A5B95130C25. |
 | open | 2 | Review Ford 2014 proposed readings and interpretations against the 2013 edition and relevant photographs, using the 14-discussion index; preserve differences as attributed evidence. |
@@ -155,10 +161,8 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 2 | Consult Yamauchi 1967, Mandaic Incantation Texts, for a page-level Mandaic text census and object indexing. |
 | blocked | 2 | Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access. |
 | blocked | 2 | Obtain authorized full-text access to Faraj 2023 to capture the edition, translation, dimensions, provenance details, and imagery for IM 77781. |
-| blocked | 2 | Map the seven Avigdor Klagsbald donation bowls to exact NLI catalogue/manuscript identifiers and determine which overlap the 205 harvested NLI SRU records. |
 | blocked | 2 | Obtain LMU Archaeology Museum accession numbers and item-level provenance, dimensions, scripts, texts, translations, images, and 3D records for the four-bowl project. |
 | blocked | 2 | Locate the Nippur bowls retained by the Imperial Museum at Constantinople, as reported by Montgomery on p. 15. |
-| blocked | 2 | Reconcile the National Library of Israel exhibition statement that 216 Moussaieff incantation bowls were donated with the 205 numbered incantation-bowl SRU records harvested in this campaign. |
 | open | 3 | Obtain the complete Hannu Juusola 1999, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, for controlled language and orthography normalization. |
 | blocked | 3 | Obtain authorized access to Mokhtarian 2015, Rabbis, Sorcerers, Kings, and Priests, for contextual enrichment. |
 | blocked | 3 | Preserve a private content-addressed capture of the Menil Collection record for incantation bowl X 831 if later permitted or supplied through authorized access. |

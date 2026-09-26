@@ -2,32 +2,32 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1654**
+- Working physical identity hypotheses (all statuses): **1736**
 - Multi-record identity clusters: **200**
-- Underlying source records (all identities): **1971**
+- Underlying source records (all identities): **2053**
 - Pending dedupe decisions: **0**
 
 ## Identity-level coverage
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1207 | 73.0% |
-| Provenance | 363 | 21.9% |
-| Dating | 484 | 29.3% |
-| Dimensions | 460 | 27.8% |
-| Material | 410 | 24.8% |
-| Language | 1033 | 62.5% |
-| Script | 94 | 5.7% |
+| Location | 1289 | 74.3% |
+| Provenance | 371 | 21.4% |
+| Dating | 484 | 27.9% |
+| Dimensions | 460 | 26.5% |
+| Material | 410 | 23.6% |
+| Language | 1041 | 60.0% |
+| Script | 94 | 5.4% |
 | Text Edition | 3 | 0.2% |
-| Translation | 57 | 3.4% |
-| Image | 330 | 20.0% |
+| Translation | 57 | 3.3% |
+| Image | 330 | 19.0% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 751 |
-| 3–5 of 10 | 787 |
+| 0–2 of 10 | 825 |
+| 3–5 of 10 | 795 |
 | 6–8 of 10 | 115 |
 | 9–10 of 10 | 1 |
 
@@ -36,8 +36,8 @@
 | Next action | Identities |
 |---|---:|
 | Location | 447 |
-| Provenance | 937 |
-| Dating | 55 |
+| Provenance | 1011 |
+| Dating | 63 |
 | Dimensions | 139 |
 | Material | 23 |
 | Language | 7 |
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**404** identities triggered raw difference flags. Current reviews support **626** compatible field-level instances and **18** substantive instances. **14** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**411** identities triggered raw difference flags. Current reviews support **626** compatible field-level instances and **18** substantive instances. **21** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

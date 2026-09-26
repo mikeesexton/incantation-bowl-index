@@ -1,0 +1,67 @@
+{
+  "iaa_owned_series": {
+    "digital_label_anomalies": [
+      {
+        "digital_designations": [
+          "IAA Bowl 14"
+        ],
+        "number": 68
+      }
+    ],
+    "number_range": [
+      1,
+      74
+    ],
+    "query_url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=1&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94+%D7%A8%D7%94%5C%22%D7%A2%22",
+    "record_count": 74,
+    "validation": "Every record identifies Israel Antiquities Authority as current owner and contains the matching MARC 942 designation Bowl N. Exact MARC 907 digital labels are retained, including catalogue anomalies."
+  },
+  "limits": [
+    "The 74-record result establishes the extent of this NLI catalogue series, not the total size of all IAA bowl holdings.",
+    "The expansion of רה\"ע is not established by the catalogue metadata and remains unasserted.",
+    "No identity merge follows solely from these catalogue records.",
+    "No records were created for the eleven unlisted Moussaieff-series numbers."
+  ],
+  "main_numbered_series": {
+    "missing_numbers": [
+      2,
+      52,
+      97,
+      98,
+      152,
+      202,
+      203,
+      204,
+      205,
+      206,
+      216
+    ],
+    "number_range_checked": [
+      1,
+      216
+    ],
+    "query_url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=1&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+    "record_count": 205,
+    "shelfmark_count": 205,
+    "shelfmark_run": [
+      "Ms. Heb. 9467.3",
+      "Ms. Heb. 9467.207"
+    ]
+  },
+  "observed_at": "2026-09-26",
+  "separate_nli_holdings": {
+    "query_url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=1&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%94+%D7%9E%D7%90%D7%92%D7%99%D7%AA%22",
+    "record_count": 8,
+    "shelfmarks": [
+      "Ms. Heb. 6079=34",
+      "Ms. Heb. 6417.1=34",
+      "Ms. Heb. 6417.2=34",
+      "Ms. Heb. 6417.3=34",
+      "Ms. Heb. 6417.4=34",
+      "Ms. Heb. 6417.5=34",
+      "Ms. Heb. 6417.6=34",
+      "Ms. Heb. 6417.7=34"
+    ]
+  },
+  "source": "National Library of Israel public Alma SRU"
+}
