@@ -25,6 +25,37 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-26 — Codex — Start read-only source-monitoring shadow run
+
+**Claimed:** DISC-003, OPS-003, OPS-004
+**Corpus:** unchanged — state digest `591faac7157c`
+**Tests:** 316 Python tests passed; two live thirteen-request passes completed
+without errors; the corrected repeat was 13/13 unchanged; corpus state matched;
+`git diff --check` passed
+
+- Added a database-independent shadow runner and reviewed registry for six
+  source groups: three Kramerius Gordon records, five LOC priority catalog
+  records, one LOC open-book record and file route, OpenAlex, Crossref, and the
+  Met collection API. The registry records access and robots status, cadence,
+  identifiers, and a lead-only automation tier.
+- Enforced GET/HEAD only, bounded size/time/retries, one-second spacing, a
+  disable switch, overlap lock, content-addressed private raw retention,
+  semantic fingerprints, and private change leads. The runner has no database
+  import or corpus-write path.
+- The first Mac mini pass established thirteen successful baselines. An
+  immediate repeat exposed noisy LOC recommendation/timing fields; the policy
+  now excludes only those fields from comparison while retaining the complete
+  raw response. A registry change safely re-baselined, and the corrected repeat
+  reported thirteen unchanged endpoints, zero changes and zero errors.
+- Updated the roadmap from obsolete pre-arrival OPS evidence: the Mac mini and
+  both independent Restic restore gates are real, while OPS-001/002/003 remain
+  in progress. OPS-004 is still queued because no daily schedule or alert path
+  has been accepted.
+- Deliberately did not install `launchd` or call this a fourteen-day run. Next:
+  create the separate standard research account, configure and test
+  Healthchecks, then install the reviewed daily schedule and evaluate fourteen
+  complete days of receipts before enabling any broader automation.
+
 ## 2026-09-24 — Codex — Establish encrypted Backblaze B2 recovery
 
 **Claimed:** OPS-002

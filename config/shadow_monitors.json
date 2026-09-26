@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "shadow_only": true,
+  "settings": {
+    "user_agent": "IncantationBowlIndexResearch/0.2 (+noncommercial scholarly monitoring; metadata only)",
+    "timeout_seconds": 30,
+    "retry_count": 2,
+    "max_response_bytes": 2097152,
+    "delay_seconds": 1.0
+  },
+  "sources": [
+    {
+      "id": "kramerius-gordon",
+      "label": "Czech Academy Kramerius Gordon article records",
+      "enabled": true,
+      "access_class": "documented public metadata API",
+      "robots_status": "robots.txt resolves to the web client rather than a robots policy; the public API is documented by the Kramerius project",
+      "documentation_url": "https://github.com/ceskaexpedice/kramerius/wiki/API-v7",
+      "cadence_hours": 24,
+      "expected_identifier": "Kramerius UUID",
+      "automation_tier": "metadata diff and lead only",
+      "lead_priority": 3,
+      "requests": [
+        {
+          "id": "gordon-1934-a-info",
+          "url": "https://kramerius.lib.cas.cz/search/api/client/v7.0/items/uuid:4a5877af-4e59-43cd-8466-495357b59642/info"
+        },
+        {
+          "id": "gordon-1934-b-info",
+          "url": "https://kramerius.lib.cas.cz/search/api/client/v7.0/items/uuid:8a069457-1e3c-40d3-a658-3b1c51fe66e8/info"
+        },
+        {
+          "id": "gordon-1937-info",
+          "url": "https://kramerius.lib.cas.cz/search/api/client/v7.0/items/uuid:b2bef7bf-5a00-4d50-ad2c-40872e98e1ff/info"
+        }
+      ]
+    },
+    {
+      "id": "loc-priority-catalog",
+      "label": "Library of Congress priority edition records",
+      "enabled": true,
+      "access_class": "public item JSON",
+      "robots_status": "allowed item paths; /search is deliberately not monitored because LOC robots.txt disallows it",
+      "documentation_url": "https://www.loc.gov/apis/",
+      "cadence_hours": 24,
+      "expected_identifier": "LCCN",
+      "automation_tier": "catalog availability diff and lead only",
+      "lead_priority": 2,
+      "requests": [
+        {
+          "id": "segal-2000",
+          "url": "https://www.loc.gov/item/2001369942/?fo=json",
+          "ignore_json_paths": ["more_like_this", "related_items", "options", "timestamp"]
+        },
+        {
+          "id": "isbell-1975",
+          "url": "https://www.loc.gov/item/75015949/?fo=json",
+          "ignore_json_paths": ["more_like_this", "related_items", "options", "timestamp"]
+        },
+        {
+          "id": "naveh-shaked-1998",
+          "url": "https://www.loc.gov/item/99201169/?fo=json",
+          "ignore_json_paths": ["more_like_this", "related_items", "options", "timestamp"]
+        },
+        {
+          "id": "tmh7-2005",
+          "url": "https://www.loc.gov/item/2006364726/?fo=json",
+          "ignore_json_paths": ["more_like_this", "related_items", "options", "timestamp"]
+        },
+        {
+          "id": "yamauchi-1967",
+          "url": "https://www.loc.gov/item/68001338/?fo=json",
+          "ignore_json_paths": ["more_like_this", "related_items", "options", "timestamp"]
+        }
+      ]
+    },
+    {
+      "id": "loc-open-digital-book",
+      "label": "Library of Congress open digital-book route",
+      "enabled": true,
+      "access_class": "public item JSON and metadata-only HEAD check",
+      "robots_status": "allowed item and storage paths",
+      "documentation_url": "https://www.loc.gov/apis/",
+      "cadence_hours": 24,
+      "expected_identifier": "LCCN and stable storage URL",
+      "automation_tier": "access-state diff and lead only",
+      "lead_priority": 3,
+      "requests": [
+        {
+          "id": "semitic-vocalisation-item",
+          "url": "https://www.loc.gov/item/2019394570/?fo=json",
+          "ignore_json_paths": ["more_like_this", "related_items", "options", "timestamp"]
+        },
+        {
+          "id": "semitic-vocalisation-pdf-head",
+          "method": "HEAD",
+          "url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/39/45/70/2019394570/2019394570.pdf"
+        }
+      ]
+    },
+    {
+      "id": "openalex-bowl-metadata",
+      "label": "OpenAlex recent incantation-bowl metadata",
+      "enabled": true,
+      "access_class": "public scholarly metadata API",
+      "robots_status": "robots.txt allows all",
+      "documentation_url": "https://docs.openalex.org/",
+      "cadence_hours": 24,
+      "expected_identifier": "OpenAlex work ID and DOI",
+      "automation_tier": "citation lead only",
+      "lead_priority": 3,
+      "requests": [
+        {
+          "id": "recent-bowl-works",
+          "url": "https://api.openalex.org/works?search=incantation%20bowl&per-page=25&sort=publication_date:desc&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location",
+          "ignore_json_paths": [
+            "meta.db_response_time_ms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossref-bowl-metadata",
+      "label": "Crossref recent incantation-bowl metadata",
+      "enabled": true,
+      "access_class": "public scholarly metadata API",
+      "robots_status": "API host exposes no robots.txt; access is through the documented REST API",
+      "documentation_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "cadence_hours": 24,
+      "expected_identifier": "DOI",
+      "automation_tier": "citation lead only",
+      "lead_priority": 3,
+      "requests": [
+        {
+          "id": "recent-bowl-works",
+          "url": "https://api.crossref.org/works?query.bibliographic=incantation%20bowl&rows=25&sort=published&order=desc&select=DOI,title,author,published,URL,type,publisher,container-title,indexed",
+          "ignore_json_paths": [
+            "message.timestamp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "met-bowl-search",
+      "label": "Metropolitan Museum incantation-bowl search",
+      "enabled": true,
+      "access_class": "public museum collection API",
+      "robots_status": "API host exposes no robots.txt; access is through the Met's documented collection API",
+      "documentation_url": "https://metmuseum.github.io/",
+      "cadence_hours": 24,
+      "expected_identifier": "Met object ID",
+      "automation_tier": "museum lead only",
+      "lead_priority": 3,
+      "requests": [
+        {
+          "id": "incantation-bowl-search",
+          "url": "https://collectionapi.metmuseum.org/public/collection/v1/search?q=incantation%20bowl"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-24T20:02:18+00:00`
+Generated: `2026-09-26T21:27:24+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 28 done · 21 in progress · 16 queued · 0 blocked |
+| Roadmap tasks | 28 done · 24 in progress · 13 queued · 0 blocked |
 | Quantitative handoff gates passing | 2/5 |
 | Required handoff tasks complete | 10/24 |
 
@@ -35,9 +35,9 @@ Current phase: **Source-rich research corpus with one completed reference cohort
 - The first stratified identity-and-extraction audit is complete, but it is a 60-identity baseline rather than corpus-wide certification: unequal weighting reduces its effective sample size to 47.5, one BM068A claim check is indeterminate, the review was not independent, and findspot claims are not yet consistently graded by evidence basis.
 - Readable text coverage remains sparse outside Montgomery: edition-reference coverage has improved, but just two identities have a recorded transcription or transliteration and only 54 identities have a translation. Davidovitz 41 is the first modern private transcription-and-translation pilot; four scan-checked Wohlstein translations and the Martínez Borobio transliteration and project paraphrase are released on recorded bases, while the fifth Wohlstein reading still awaits specialist review and other protected editions remain private or pointer-only.
 - Release rights remain separate from Mike's private access: 319 of 353 media rows have completed decisions for shared/public reuse and 34 remain withheld from those surfaces. Mike Access contains all 353 recorded media rows because it is a single-user personal research surface, not a release. The expanded shared scholar preview remains deployed behind Cloudflare Access; the public-library candidate remains local and unpublished.
-- The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete; continuous operations, encrypted off-device backup, and a 14-day shadow run are not set up.
+- The National Library of Israel, Schøyen, broader Penn, and remaining British Museum/Segal concordances are incomplete. The Mac mini and both encrypted Restic destinations have passed independent restores, and a metadata-only monitoring baseline now exists, but scheduling, Healthchecks, account separation, offline recovery copies, and the full 14-day shadow run remain incomplete.
 - Acquisition completeness is not yet measured corpus-wide: 52 of 862 sources have linked captures, 41 with PDFs and eleven with only non-PDF captures. All 52 captured sources are now assessed through 53 append-only holding rows: 49 sources have a complete document, Naveh-Shaked 1993 and Juusola 1999 are correctly limited to front matter, and the retained VMBA project page remains an excerpt rather than being mistaken for the archived database. Ford 2023 also retains its separate one-page summary as an excerpt beside its complete article. Burberry 2020 is now a complete, hash-bound University of Exeter repository holding with all twenty-five ACB units extracted. Segal 2000 is reported unavailable at the Library of Congress and remains the highest-impact alternate-route acquisition; Isbell 1975, Müller-Kessler's TMH 7, Naveh-Shaked 1998, and Yamauchi 1967 have been requested and await results. Gordon's AASOR article was fully inspected through a public institutional scan but remains outside the holdings ledger because robots permission could not be verified and the file was not archived.
-- Unattended internet research is not operationally ready: DISC-003 is only beginning, the Mac mini runtime and encrypted off-device backup are not configured, collector scheduling and alerting are absent, and no source-specific collector has completed the required 14-day shadow run.
+- Unattended internet research is not operationally ready: a reviewed six-source registry and thirteen-request read-only baseline now provide bounded retries, rate delay, hashes, semantic diffs, private raw retention, a disable switch, overlap locking, and lead-only output. Scheduling and Healthchecks are still absent, the standard research account is not commissioned, and no source-specific collector has completed the required 14-day shadow run.
 
 ## Access and commercialization layers
 
@@ -164,7 +164,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 | ACCESS | Private, public and licensed access layers | L1 | L4 | Research owner, engineering and qualified rights counsel |
 | META | Physical, chronological, linguistic, and provenance enrichment | L1 | L3 | Mixed |
 | RIGHTS | Images and rights | L1 | L4 | Human rights review |
-| OPS | Mac mini continuous operations | L0 | L5 | Mac mini after 2026-09-22 |
+| OPS | Mac mini continuous operations | L1 | L5 | Mac mini after 2026-09-22 |
 | QA | Evidence quality and regression controls | L2 | L3 | Research and engineering |
 
 ## Automation readiness
@@ -202,8 +202,8 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 12. QA-003 follow-through: acquire or inspect the Segal 2000 entry for BM068A and supersede the one indeterminate audit row; plan an independent second audit round before treating the 98.7% weighted verified-or-noted baseline as a durable accuracy claim.
 13. TEXT-001 / QA-004: align edition-reference and field-assessment metrics with cited evidence; then extend the checked institutional cohorts.
 14. DISC-002: pursue precise source gaps, including IBI-LEAD-MONT42 and authorized Segal catalogue access; defer another undirected discovery expansion.
-15. OPS-001 / OPS-002 / ACCESS-002: defer commissioning until the Mac mini and dedicated 1 TB SSD arrive. Then apply the [Mac mini setup runbook](mac_mini_setup_runbook.md): provision the primary host, encrypted Restic repositories on APFS and Backblaze B2, Keychain and offline recovery copies, Healthchecks email, and independent restore receipts. Retain all eleven legacy SQLite snapshots and do not begin a real TEI pilot before both restores pass.
-16. DISC-003 / OPS-003: after the Mac mini backup and alert gates pass, convert the successful Wohlstein and Gordon repository work into a 14-day read-only shadow run over Kramerius, the LOC catalog and loc.gov digital books, followed by Crossref/OpenAlex alerts and one stable museum endpoint. Record per-source access class, robots status, cadence and identifiers; retain raw responses by hash; create leads and access diffs only; do not apply corpus manifests automatically.
+15. OPS-001 / OPS-002 / ACCESS-002: the Mac mini migration, encrypted APFS and B2 repositories, full pack checks, and independent restores are complete. Finish the separate standard research account, offline recovery copies, Tailscale and router checks, four-hour and daily launchd schedules, Healthchecks email, and formal acceptance. Retain all seventeen legacy SQLite snapshots until a separately reviewed retention decision.
+16. DISC-003 / OPS-003 / OPS-004: the 26 September metadata-only baseline covered Kramerius, five LOC priority catalog records, one LOC open digital-book route, OpenAlex, Crossref and the Met API: thirteen successful requests, raw responses retained by hash, no changes and no corpus writes. After the standard account and alert path pass, schedule the daily job and review fourteen full days of receipts. Create leads and access diffs only; do not apply corpus manifests automatically.
 17. ACCESS-006: after a rights-safe prototype demonstrates the scholarship graph, test demand with scholars, librarians and museums before spending materially on commercial licenses or legal drafting.
 
 ## Offline research queue
@@ -268,7 +268,7 @@ Maintain maximum-recall discovery across scholarship, catalogues, museums, aucti
   - Evidence/status: Ongoing rule; discovery can reveal new objects even after phase-one saturation.
 - [ ] **DISC-003 — Classify recurring discovery sources for automation** · In progress · Research
   - Done when: Every monitored source has a documented endpoint, cadence, access/robots status, expected identifier, and automation tier.
-  - Evidence/status: The LOC review established the first source-class distinction: open digital resources, onsite-only digital Stacks records, physical books, and microform require different automation and access handling. The 12 September supplied-file batch successfully distinguished an exact duplicate, complete open books, public-domain scans, a partial front-matter file, and a review masquerading under its subject title. Two live remote pilots have now succeeded. The Wohlstein pilot used repository metadata and exact VA numbers. The Gordon pilot used the Czech Academy's public Kramerius API to recover three complete article-and-plate sequences, kept the archive's contractual reuse limits, and produced 24 human-reviewed appearances without automatic merges. The AASOR scan was inspected but not captured when robots permission could not be verified. The full per-source registry and 14-day shadow run are not complete, so broad unattended collection remains out of scope.
+  - Evidence/status: The LOC review established the first source-class distinction: open digital resources, onsite-only digital Stacks records, physical books, and microform require different automation and access handling. Two live repository pilots succeeded without automatic merges: Wohlstein through repository metadata and Gordon through the Czech Academy Kramerius API. On 26 September a reviewed registry classified six monitored source groups: Kramerius, LOC priority catalog records, one LOC open digital-book route, OpenAlex, Crossref, and the Met API. It records endpoint, cadence, access and robots status, stable identifiers and lead-only automation tier. A thirteen-request Mac mini baseline completed with thirteen HTTP 200 responses and no corpus writes. The 14-day run and any broader source registry remain incomplete, so broad unattended collection stays out of scope.
 
 ### CONC — Identity and museum concordances
 
@@ -444,15 +444,15 @@ Build a rights ledger before copying images into the corpus or exposing any medi
 
 Prepare a private, recoverable, observable 24/7 research worker that detects changes and opens evidence-backed leads without autonomously making sensitive scholarly or rights decisions.
 
-- [ ] **OPS-001 — Provision the Mac mini research runtime** · Queued · Engineering
+- [ ] **OPS-001 — Provision the Mac mini research runtime** · In progress · Engineering
   - Done when: Repository, isolated Python runtime, secrets storage, launch-on-boot service account, logs, health checks, and least-privilege filesystem layout are documented and reproducible.
-  - Evidence/status: The canonical plan and arrival-day acceptance record are versioned in the [Mac mini setup runbook](mac_mini_setup_runbook.md). The primary-host role, FileVault baseline, separate administrator and standard research access, `~/Developer` Git layout, Tailscale-only remote administration, launchd services, logging and Healthchecks email are specified. Hardware-dependent work is deliberately queued until the Mac mini arrives; none of this configuration has been deployed or accepted.
-- [ ] **OPS-002 — Configure encrypted local and off-device backups** · Queued · Engineering
+  - Evidence/status: The Mac mini is now the verified primary host: the repository, isolated runtime and complete private vault are present; FileVault is on; Git and the corpus state are clean; and Tailscale is enrolled. OPS-001 remains in progress because the separate standard research account, launch-on-boot jobs, Healthchecks delivery, full Tailscale path test, public-port audit and final acceptance are still open. The canonical evidence remains in the [Mac mini setup runbook](mac_mini_setup_runbook.md).
+- [ ] **OPS-002 — Configure encrypted local and off-device backups** · In progress · Engineering
   - Done when: Database, capture manifests, and private archive are backed up on schedule and a sampled restore has been completed successfully.
-  - Evidence/status: Waiting for the Mac mini and its dedicated 1 TB external SSD. The [Mac mini setup runbook](mac_mini_setup_runbook.md) specifies separate encrypted Restic repositories on the encrypted APFS SSD every four hours and Backblaze B2 daily, different repository passwords in macOS Keychain with offline recovery copies, Healthchecks email, explicit include/exclude boundaries and an independent sampled restore from each destination. The existing read-only `ibi backup-readiness` audit and dated result remain useful interim GPG-oriented evidence, not the target implementation or a completion gate. The current workstation still has no configured encrypted destination or restore receipt, and all eleven legacy SQLite snapshots are retained until both Restic restores pass. No key, account, schedule, transfer or deletion has been performed.
-- [ ] **OPS-003 — Implement safe collector scheduling and change detection** · Queued · Engineering
+  - Evidence/status: Distinct encrypted Restic repositories now exist on the encrypted 2 TB APFS drive and private Backblaze B2 bucket. Full pack checks and independent 1.746 GiB restores from both destinations passed SQLite integrity, archive verification, corpus-state and test-suite gates on 25 September. OPS-002 remains in progress because four-hour and daily schedules, Healthchecks, and offline recovery-secret copies are not yet accepted. Seventeen legacy SQLite snapshots remain retained. See the [Mac mini setup runbook](mac_mini_setup_runbook.md).
+- [ ] **OPS-003 — Implement safe collector scheduling and change detection** · In progress · Engineering
   - Done when: Approved collectors have bounded schedules, rate limits, idempotency, hashes/diffs, retry limits, failure alerts, and per-source disable switches.
-  - Evidence/status: The corpus already has content hashes, idempotent manifest ingestion, search logs and lead states, which are enough for a read-only lead-generation pilot. The Mac mini runbook now defines the general launchd, logging, least-privilege, Tailscale, failure-alert and manual-disable baseline, but no collector schedule is deployed. Per-source rate policy, disable switches and shadow-run evidence remain unimplemented, so unattended corpus writes remain prohibited.
+  - Evidence/status: A database-independent shadow runner and reviewed six-source registry now enforce GET/HEAD only, a two-megabyte response ceiling, timeouts, bounded retries, one-second request spacing, an atomic overlap lock and a private manual disable switch. Raw bodies are retained by SHA-256; normalized fingerprints suppress declared volatile API timing fields; changes create private review leads only. The 26 September baseline completed thirteen requests with no errors and no corpus writes. OPS-003 remains in progress because launchd, Healthchecks and the separate standard research account are not commissioned. Unattended corpus writes remain prohibited.
 - [ ] **OPS-004 — Complete a 14-day shadow run** · Queued · Mac mini agent
   - Done when: Continuous collectors run for 14 days with no silent data loss, uncontrolled duplicates, rights leakage, or unresolved operational failures; alerts are reviewed for usefulness.
 - [ ] **OPS-005 — Adopt collect-and-flag autonomy boundaries** · Queued · Research owner
