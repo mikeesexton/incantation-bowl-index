@@ -1,9 +1,8 @@
 {
-  "corpus_digest": "229ad81a85a3448e01d1b0f34c9dd84a243a22809a5d9bcbe525890956f0dda9",
+  "corpus_digest": "f50a49512b48de2a7b07396fd53b2832c12b06d742c1d7a36184ea8bdd591b12",
   "migrations": 17,
-  "note": "Added evidence-bound publication dispositions, linked all 159 British Museum Segal relation objects, refined maturity gates, and refreshed Bowlam aggregates",
-  "recorded_at": "2026-09-26T23:54:48+00:00",
-  "recorded_by": "codex",
+  "recorded_at": "2026-09-27T16:42:06+00:00",
+  "recorded_by": "claude",
   "schema_version": "017_publication_assessments",
   "tables": {
     "accuracy_audit_reviews": {
@@ -35,8 +34,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "d92fd71bf98a1598ad55ea95e0560307b1e205f49983c2d9676daccb821dee33",
-      "rows": 7469
+      "digest": "8401fb846d3a4370cb27c20ce0495a276d7ccb7418e89e14c7fec069cdd2212c",
+      "rows": 7696
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -143,8 +142,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "430ffc601226a0f4b80b4d8026089618ecd5e1098207b06b88c6802fff97e274",
-      "rows": 280
+      "digest": "4e0d0aca051fda0191af816a4154e305c15c3fd98102337913606f501c54fecd",
+      "rows": 308
     }
   }
 }

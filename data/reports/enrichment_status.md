@@ -18,16 +18,16 @@
 | Material | 410 | 23.6% |
 | Language | 1041 | 60.0% |
 | Script | 94 | 5.4% |
-| Text Edition | 3 | 0.2% |
-| Translation | 57 | 3.3% |
+| Text Edition | 17 | 1.0% |
+| Translation | 71 | 4.1% |
 | Image | 330 | 19.0% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 825 |
-| 3–5 of 10 | 795 |
+| 0–2 of 10 | 811 |
+| 3–5 of 10 | 809 |
 | 6–8 of 10 | 115 |
 | 9–10 of 10 | 1 |
 
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**411** identities triggered raw difference flags. Current reviews support **626** compatible field-level instances and **18** substantive instances. **21** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**425** identities triggered raw difference flags. Current reviews support **626** compatible field-level instances and **18** substantive instances. **48** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

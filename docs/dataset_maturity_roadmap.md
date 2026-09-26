@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-26T23:52:13+00:00`
+Generated: `2026-09-27T16:41:30+00:00`
 
 ## Portfolio status
 
@@ -81,23 +81,23 @@ Current evidence: **206 scholarship works indexed; 41 with a source-linked held 
 | Source documents assessed complete | 49 |
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 411 |
-| Triaged claim-field differences | 644/665 |
+| Identities triggering raw claim-difference flags | 425 |
+| Triaged claim-field differences | 644/692 |
 | Compatible differences | 626 |
-| Review required (missing or no longer valid) | 21 |
+| Review required (missing or no longer valid) | 48 |
 | Existing reviews requiring revalidation | 0 |
 | Substantive conflict instances | 18 across 16 identities |
 | All identities with a publication reference | 872/1736 (50.2%) |
 | Probable/confirmed identities with a publication reference | 744/1077 (69.1%) |
 | Probable/confirmed identities reviewed as having no known edition | 0/1077 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 744/1077 (69.1%) |
-| Identities with a translation | 57 |
+| Identities with a translation | 71 |
 | Scan-checked normalized reading texts | 39 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 895/895 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
-| Identities with a transcription/transliteration | 3 |
+| Identities with a transcription/transliteration | 17 |
 | Media records with a non-unknown rights status | 45/354 (12.7%) |
 | Media with a current ledger entry | 354/354 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
@@ -118,8 +118,8 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Material | 410 | 23.6% |
 | Language | 1041 | 60.0% |
 | Script | 94 | 5.4% |
-| Text Edition | 3 | 0.2% |
-| Translation | 57 | 3.3% |
+| Text Edition | 17 | 1.0% |
+| Translation | 71 | 4.1% |
 | Image | 330 | 19.0% |
 
 ### Content-facet coverage
@@ -129,15 +129,15 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 | Facet | Identities | Coverage |
 |---|---:|---:|
 | Publication | 553 | 31.9% |
+| Client | 172 | 9.9% |
 | Biblical Intertexts | 170 | 9.8% |
-| Client | 160 | 9.2% |
 | Condition | 142 | 8.2% |
-| Ritual | 110 | 6.3% |
+| Ritual | 124 | 7.1% |
 | Text Description | 93 | 5.4% |
 | Text Form | 43 | 2.5% |
 | Practitioner | 29 | 1.7% |
 | Visual | 28 | 1.6% |
-| Parallels | 7 | 0.4% |
+| Parallels | 16 | 0.9% |
 | Authenticity Assessment | 4 | 0.2% |
 | Vessel Form | 4 | 0.2% |
 | Target | 3 | 0.2% |
@@ -503,7 +503,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `21`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `48`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have a research-complete publication disposition: an evidence-backed publication link or an explicit sourced no-known-edition finding. Catalogue silence alone does not count. Current: 744/1,077 (69.1%), including zero no-known-edition findings. — current `69.1%`; target `>= 80.0%`.
 - [x] At least half of probable/confirmed identities retain an actual publication link, preventing the disposition gate from being satisfied primarily by negative findings. Current: 744/1,077 (69.1%). — current `69.1%`; target `>= 50.0%`.

@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-09-26T14:57:46Z",
+  "agent": "codex",
+  "source_id": "SRC-1E2E21DC61BD",
+  "source_citation": "Naveh, Joseph, and Shaul Shaked. Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity. Jerusalem: The Magnes Press; Leiden: E. J. Brill, 1985.",
+  "private_source_capture": {
+    "capture_id": "CAP-E77DD534FF79",
+    "sha256": "545d89c8de51dee8871cf4bf48b18202ea57cbe023b745cedbf997f6da07548b",
+    "access_tier": "private_research"
+  },
+  "private_manifest": {
+    "path": "data/private/manifests/naveh_shaked_1985_bowl_texts_2026-09-26.jsonl",
+    "sha256": "1707bca7dee0775caa1a6bf208f74d60851cd55d6dfad1fed6f66a6e3d744e13",
+    "bytes": 128323,
+    "records": 14,
+    "claims": 227,
+    "texts": {
+      "transcriptions": 14,
+      "translations": 14
+    }
+  },
+  "database_result": {
+    "objects_with_transcription_and_translation": 14,
+    "source_claims_after_ingest": 269,
+    "source_texts_after_ingest": 28,
+    "private_projection_texts_visible": 28,
+    "public_projection_texts_withheld": 28
+  },
+  "quality_and_rights": {
+    "transcription_status": "machine-assisted diplomatic drafts checked against rendered page images; character-level OCR errors may remain and the cited page must be checked before customer-facing use",
+    "translation_status": "editors' published English translations with page-wrap normalization and limited obvious legacy-font cleanup",
+    "rights_status": "copyrighted",
+    "public_ok": false,
+    "access_notice": "Mike Access only. This receipt contains no protected source text. The private manifest and source capture remain outside Git."
+  }
+}

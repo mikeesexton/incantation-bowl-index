@@ -25,6 +25,31 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude Code — Reconcile laptop/Mac mini corpus fork
+
+**Claimed:** none (reconciliation of TEXT-001/TEXT-006 work already done)
+**Corpus:** changed (replayed the Naveh–Shaked 1985 private text manifest onto
+the Mac mini database) — state digest `f50a49512b48`
+**Tests:** 320 Python passed; copied-database dry run and idempotent replay
+matched the receipt (269 source claims, 28 texts, 14 objects, no new objects);
+SQLite integrity and foreign-key checks passed; 28/28 texts visible through
+`PrivateResearchProjection` and 0/28 through the public projection
+
+- Found that the laptop and Mac mini had forked from `ad65533` (digest
+  `591faac7157c`). The laptop held the Naveh–Shaked commit `09958be`; the mini
+  held the monitoring, NLI and BM–Segal commits. Neither side was pushed.
+- The Mac mini is authoritative. Copied the private manifest over Tailscale SSH,
+  verified its SHA-256 against the committed receipt, backed up the mini
+  database to `data/private/backups/before-naveh-shaked-replay-20260927T164001Z.sqlite3`,
+  and replayed it with `ibi ingest candidate`. Cherry-picked the commit and
+  kept its task-log entry in chronological position. The generated roadmap,
+  enrichment report and state were rebuilt rather than merged.
+- The replayed claims raise review-required claim-field differences from 21 to
+  48. They are left for ordinary evidence-bound conflict review; none was
+  adjudicated.
+- The laptop database (digest `4afbf3738134`) is now stale. Do not write to it.
+  Its `09958be` is superseded by this commit once the mini is pushed.
+
 ## 2026-09-26 — Codex — Refine publication maturity and refresh Bowlam
 
 **Claimed:** TEXT-001, SCHOL-005, ACCESS-008
@@ -115,6 +140,33 @@ without errors; the corrected repeat was 13/13 unchanged; corpus state matched;
   create the separate standard research account, configure and test
   Healthchecks, then install the reviewed daily schedule and evaluate fourteen
   complete days of receipts before enabling any broader automation.
+
+## 2026-09-26 — Codex — Extract Naveh–Shaked bowl texts for Mike Access
+
+**Claimed:** TEXT-001, TEXT-006
+**Corpus:** changed (14 bowl objects gained 227 source-linked claims and 28
+private transcription/translation texts) — state digest `4afbf3738134`
+**Tests:** 312 Python passed; all 28 source texts visible through
+`PrivateResearchProjection` and withheld by the public projection; manifest
+hash and private-path ignore gate verified
+
+- Extracted the thirteen numbered entries (fourteen physical bowls, including
+  12a and 12b) from Naveh and Shaked's 1985 first edition. Stored a
+  machine-assisted diplomatic transcription and the published English
+  translation for every object, with exact page locators, rights metadata and
+  explicit page-image verification warnings.
+- Added edition-based factual claims for purposes, clients and targets,
+  formulae, named supernatural figures, layouts and textual parallels. The
+  p. 152 heading's `1402` / existing `1042` identifier discrepancy is preserved
+  as an unresolved warning; no identity was changed.
+- Kept the protected manifest in `data/private/manifests/` and committed only a
+  content-free receipt with its SHA-256, counts and private source-capture hash.
+  All 28 text rows are available to Mike Access and remain withheld from the
+  public projection; no public-release, authenticity or rights decision was
+  made.
+- Regenerated the maturity roadmap and enrichment report. Next: specialist
+  proofreading should resolve remaining character-level OCR uncertainty before
+  any transcription is used in customer-facing work.
 
 ## 2026-09-24 — Codex — Establish encrypted Backblaze B2 recovery
 
