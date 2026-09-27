@@ -25,6 +25,44 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude Code — Link Waller-designated bowls to their editions
+
+**Claimed:** TEXT-001
+**Corpus:** changed (38 append-only publication assessments and one citation
+lead) — state digest `8dfebf81bcec`
+**Tests:** 320 Python passed; copied-database dry run and idempotent replay
+(38 changed, then 0); lead replay idempotent; SQLite integrity and foreign-key
+checks passed; `git diff --check` passed
+
+- Profiled the 333 unlinked probable/confirmed identities. All 45
+  Waller-designated records come from Waller 2022's Table of Distribution
+  (printed pp. 155-161), which groups every bowl under the edition that
+  publishes it. Transcribed those 45 rows into
+  `research/seeds/waller_2022_table_of_distribution_publications.json`,
+  resolving short titles against Waller's own sigla (p. 44) and bibliography.
+- Built `research/reviews/waller_2022_publication_assessments_2026-09-27.json`
+  with `scripts/build_waller_publication_assessments.py`, then applied it with
+  `ibi ingest-publication-assessments`. That gives 38 `linked` rows with
+  Waller as the evidence source and the cited edition as the publication. The
+  rows are nine Moussaieff bowls under Levene's Corpus (2003), VA 2423 and
+  VA 2509 under Curses (2013), VA 3853/3854 under Levene's 'Heal O' Israel'
+  (2003), and 25 smaller-publication entries with Waller's page locators.
+  Probable/confirmed coverage went from 744 to 782 of 1,077 (72.6%); the 80%
+  gate is now 80 identities away.
+- Held seven rows under `IBI-LEAD-WALLER-TOD-MISSING-EDITIONS` rather than
+  guessing. Five cite works with no source record: Faraj 2021, Al-Jubouri
+  2015, Shaked 1999, Bohak 2012 (×2) and Ford 2016. IM 141803's 'Faraj 2010'
+  is ambiguous between two works. Bohak 2012's cited pp. 48-59 run past its
+  listed end page.
+- SD 34 is linked to the OpenAlex record of Levene–Bhayro 2005/6. A duplicate
+  Southampton ePrints record remains unreconciled (SCHOL-006). No identity
+  was merged, no reading adopted, and no no-known-edition finding recorded.
+- Next: add verified source records for the five missing editions and link
+  the held rows, then work the 82 remaining non-NLI unlinked identities
+  (Kedar 2021, Morgenstern, Hunter, Šafiʿī and others). Several of those
+  appear only in sources that may themselves be editions, and each source's
+  scope must be checked before any link.
+
 ## 2026-09-27 — Claude Code — Reconcile laptop/Mac mini corpus fork
 
 **Claimed:** none (reconciliation of TEXT-001/TEXT-006 work already done)
