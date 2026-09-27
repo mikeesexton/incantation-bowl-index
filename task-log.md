@@ -30,10 +30,9 @@ the dated reports under `data/reports/`.
 **Claimed:** TEXT-001
 **Corpus:** changed (5 source records, 1 scope review, 26 append-only publication
 assessments, 1 lead resolved, 3 leads opened) — state digest `a08cbcacdf75`
-**Tests:** 315 Python passed; `test_mike_access` errored in setUpClass because
-this session's shell cannot delete files, so `build_mike_access.py` could not
-clear its output folder — environmental, not a code failure; rerun on the Mac
-mini. Copied-database dry runs and idempotent replays (7 then 0; 19 then 0);
+**Tests:** 322 Python passed (`test_mike_access` first errored because the
+shell could not delete files; passed 7/7 once deletion was allowed). Copied-
+database dry runs and idempotent replays (7 then 0; 19 then 0);
 SQLite integrity and foreign-key checks passed
 
 - Resolved `IBI-LEAD-WALLER-TOD-MISSING-EDITIONS`. Verified and added source
