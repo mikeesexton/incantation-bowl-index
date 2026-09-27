@@ -25,6 +25,50 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude (Cowork) — Scope single-bowl editions; follow Kedar 2019's citations
+
+**Claimed:** TEXT-001
+**Corpus:** changed (3 scope reviews, 6 append-only publication assessments,
+1 source record, 4 leads opened) — state digest `11f0260a239c`
+**Tests:** 320 Python passed; copied-database dry runs and idempotent replays
+(3 then 0, twice); SQLite integrity and foreign-key checks passed
+
+- Scope-reviewed three articles as single-bowl editions and linked
+  their bowls:
+  - Harviainen 1981 (Borsippa), from the journal's article record.
+  - Ford–Ten-Ami 2012 (Rav Mešaršia), from the Magnes table of
+    contents and Ford's publication list.
+  - Müller-Kessler–Kwasman 2000 (BM 135563), from later scholarship
+    that names it as the first edition.
+- Extracted the footnotes of the held Kedar 2019 dissertation
+  (`CAP-E1FB74EF0432`). Linked three bowls to the editions she cites,
+  with the new `scripts/build_cited_edition_assessments.py`:
+  - JNL Heb 4, 6079 → Naveh–Shaked, p. 117.
+  - Berlin XI-t 5178 → Müller-Kessler, Orientalia 63 (1994).
+  - CBS 16020 → Müller-Kessler 2005, pp. 46-48.
+- Kedar calls ten bowls unpublished as of 2019: six JNF bowls, Wolf 23,
+  Wolf 69, CBS 85-48-914, and Davidovitz 2 (in preparation). They are
+  **not** recorded as no-known-edition findings. That would be the
+  corpus's first such finding, resting on dated evidence, so Mike should
+  decide the policy first (`IBI-LEAD-KEDAR2019-UNPUBLISHED-CANDIDATES`).
+- Added Morgenstern 2021 (Eretz-Israel 34: 106-122) as a source record.
+  It edits five of the nine Moussaieff Mandaic survey bowls, but which
+  five is not known from open metadata, so the seven unlinked survey
+  bowls are held under `IBI-LEAD-MOUSSAIEFF-MANDAIC-EDITIONS`.
+- `IBI-LEAD-NLI-HEB4-6079-THREE-RECORDS`: three identities appear to be
+  the one Scholem bowl. No merge made; the lead belongs with CONC-003.
+- Left unscoped:
+  - Montgomery 1918, because JSTOR, the publisher DOI and Internet
+    Archive were unreachable (`IBI-LEAD-MONTGOMERY1918-SCOPE`).
+  - The Nippur 1989 Area WG chapter, not attempted.
+- TEXT-001 is now 814/1,077 (75.6%); the gate is 48 away.
+- Next:
+  - Get the Eretz-Israel 34 and Mehqarim be-Lashon contents (up to +7).
+  - Decide the dated-negative-evidence policy (up to +10).
+  - Scope Montgomery 1918 (+1).
+  - Then the Nippur 1989 field numbers and the museum and dealer
+    records.
+
 ## 2026-09-27 — Claude (Cowork) — Resolve held Waller editions; link edition appearances
 
 **Claimed:** TEXT-001

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Claude Code",
+  "reviewed_at": "2026-09-27T21:10:00Z",
+  "batch": "Classify three single-bowl articles from journal, publisher and later-scholarship records",
+  "policy": "Work-scope judgments only. They do not certify complete object extraction, endorse readings, resolve identities or authenticity, or change text and media rights.",
+  "entries": [
+    {
+      "review_id": "IBI-SCOPE-HARVIAINEN1981-BORSIPPA-20260927",
+      "source_id": "SRC-0D5A017F426B",
+      "scope": "single_object_edition",
+      "basis": "The journal's own article record (Studia Orientalia Electronica, https://journal.fi/store/article/view/49806) gives the full title 'An Aramaic Incantation Bowl from Borsippa. Another specimen of Eastern Aramaic \"koiné\". Appendix: A Cryptographic bowl text or an original fake?'. The article is devoted to one Borsippa bowl; the appendix discusses a further text whose object status was not inspected, so this does not certify that the appendix edits a second in-scope bowl."
+    },
+    {
+      "review_id": "IBI-SCOPE-FORD-TENAMI2012-MESARSIA-20260927",
+      "source_id": "SRC-8F8BA58FAE9F",
+      "scope": "single_object_edition",
+      "basis": "Magnes Press's table of contents for Tarbiz 80/2 and James Nathan Ford's Bar-Ilan publication list both give the article as 'An Incantation Bowl for Rav Mešaršia son of Qaqay', Tarbiz 80 (2011/12): 219-230 [Hebrew]: a twelve-page article devoted to one bowl for one named client. JSTOR metadata for 23607828 describes the same."
+    },
+    {
+      "review_id": "IBI-SCOPE-MULLERKESSLER-KWASMAN2000-BM135563-20260927",
+      "source_id": "SRC-195B6B6E19A1",
+      "scope": "single_object_edition",
+      "basis": "Later scholarship on the same bowl, 'Yet Again on the Unique Incantation Bowl BM 135563' (author-deposited, https://www.academia.edu/8295036), names Müller-Kessler and Kwasman, JAOS 120 (2000): 159-165, as the first publication of BM 135563, with Segal 2000 and Morgenstern 2004/2005 as later editions. The article is devoted to that one bowl."
+    }
+  ]
+}
