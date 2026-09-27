@@ -25,6 +25,56 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude (Cowork) — Resolve held Waller editions; link edition appearances
+
+**Claimed:** TEXT-001
+**Corpus:** changed (5 source records, 1 scope review, 26 append-only publication
+assessments, 1 lead resolved, 3 leads opened) — state digest `a08cbcacdf75`
+**Tests:** 315 Python passed; `test_mike_access` errored in setUpClass because
+this session's shell cannot delete files, so `build_mike_access.py` could not
+clear its output folder — environmental, not a code failure; rerun on the Mac
+mini. Copied-database dry runs and idempotent replays (7 then 0; 19 then 0);
+SQLite integrity and foreign-key checks passed
+
+- Resolved `IBI-LEAD-WALLER-TOD-MISSING-EDITIONS`. Verified and added source
+  records for Faraj 2021 (ARAM 33, from the author's CV; the title names
+  IM 76752), Faraj's 2010 Udine proceedings article, Shaked 1999 (Brill chapter
+  listing and Open Library), Bohak 2012 (SISMEL page and author's offprint) and
+  Ford 2016 (IES page and author's offprint). Al-Jubouri 2015 already had a
+  record (`SRC-1AA4E8BFC7B3`) from Waller 2025's list; the last session missed
+  it because its authors field reads "Al-Jubouri [and others; see citation]",
+  which still needs a source correction.
+- IM 141803 resolves to the Udine article, not *Coppe magiche*, because the
+  author-deposited text names IM 141803. The monograph is unchecked and may also
+  edit it. The new canonical record makes `SRC-B92E2E9C97F8` and
+  `SRC-AEFFFBEB3F0B` discovery duplicates for SCHOL-006.
+- Bohak 2012's offprint ends at p. 52 and edits MS 2053/236 in Shaked's
+  appendix, so Waller's "48-59" is recorded as a locator error and not adopted.
+- Linked the seven held rows (`research/reviews/waller_2022_held_edition_assessments_2026-09-27.json`,
+  built with a new `--skip-applied` flag so the 38 earlier rows are not re-stamped).
+- Added `scripts/build_edition_appearance_assessments.py`. It links an identity
+  to an edition only when the source's current scope review is a single-object
+  or corpus edition and the object's single appearance there is the edition's
+  own treatment of it. Applied to 19 explicitly listed identities: Hunter 2000
+  (2), Geller 1976, Šafiʿī 2025 (5), Schwab 1891 N/O/P, Cook 1992, Faraj 2016,
+  Faraj 2022, Marcus 2023, Levene 2007, Levene–Bohak 2012, Levene–Bhayro SD 34
+  and Harviainen 1978. Scope-reviewed Harviainen 1978 first, from the Finnish
+  National Library record.
+- Excluded Yelnykov 2025 (an out-of-scope 14th-century metal bowl; opened
+  `IBI-LEAD-YELNYKOV-OUT-OF-SCOPE-PRIORITY`), Abudraham 2023 (VT 1981.8 is only
+  in its notes) and Ford 2011 (a parallel *to* IM 76106, not its edition).
+  Opened `IBI-LEAD-BM-1957-0925-1-DUPLICATE` for two identities that share that
+  museum number. An SD 34 lead I opened duplicated `IBI-LEAD-SD34-DUPLICATE`
+  and is closed as `rejected`.
+- TEXT-001 is now 808/1,077 (75.0%); the 80% gate is 54 identities away.
+  Harviainen 1981, Ford–Ten-Ami 2012, Müller-Kessler–Kwasman 2000 and
+  Montgomery 1918 look like single-bowl editions but have no scope review.
+  I could not reach JSTOR, journal.fi or the UChicago DOI from this session
+  (bot walls and a rate limit), so they stay unscoped.
+- Next: scope those four editions (+4), then trace the 13 Kedar-2019 and seven
+  Moussaieff Mandaic identities to their editions, then the Nippur 1989 field
+  numbers.
+
 ## 2026-09-27 — Claude Code — Link Waller-designated bowls to their editions
 
 **Claimed:** TEXT-001

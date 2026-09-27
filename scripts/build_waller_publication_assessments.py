@@ -27,7 +27,7 @@ def stable_id(object_id, publication_source):
     return "IBI-PUBASSESS-" + digest
 
 
-def build(conn, reviewed_at):
+def build(conn, reviewed_at, skip_applied=False):
     dataset = json.loads(SEED.read_text(encoding="utf-8"))
     if dataset.get("source_id") != EVIDENCE_SOURCE:
         raise ValueError("seed must be transcribed from Waller 2022")
@@ -55,8 +55,13 @@ def build(conn, reviewed_at):
         )
         if record.get("resolution"):
             basis += " " + record["resolution"]
+        assessment_id = stable_id(object_id, publication_source)
+        if skip_applied and conn.execute(
+            "SELECT 1 FROM publication_assessments WHERE id=?", (assessment_id,)
+        ).fetchone():
+            continue
         entries.append({
-            "id": stable_id(object_id, publication_source),
+            "id": assessment_id,
             "object_id": object_id,
             "disposition": "linked",
             "publication_source_id": publication_source,
@@ -71,8 +76,12 @@ def build(conn, reviewed_at):
         "reviewed_at": reviewed_at,
         "scope": (
             "Waller 2022 Table of Distribution designations lacking a publication "
-            "link on 2026-09-27; %d linked, %d held for missing or ambiguous "
-            "publication source records." % (len(entries), len(held))
+            "link on 2026-09-27; %d linked%s, %d held for missing or ambiguous "
+            "publication source records." % (
+                len(entries),
+                " (not already in the ledger)" if skip_applied else "",
+                len(held),
+            )
         ),
         "entries": entries,
     }, held
@@ -82,9 +91,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--reviewed-at", required=True)
     parser.add_argument("--destination", type=Path, required=True)
+    parser.add_argument(
+        "--skip-applied", action="store_true",
+        help="omit rows whose assessment id is already in the ledger",
+    )
     args = parser.parse_args()
     with connect() as conn:
-        manifest, held = build(conn, args.reviewed_at)
+        manifest, held = build(conn, args.reviewed_at, args.skip_applied)
     args.destination.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

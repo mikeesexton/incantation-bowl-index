@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Claude Code",
+  "reviewed_at": "2026-09-27T19:35:00Z",
+  "scope": "Waller 2022 Table of Distribution designations lacking a publication link on 2026-09-27; 7 linked (not already in the ledger), 0 held for missing or ambiguous publication source records.",
+  "entries": [
+    {
+      "id": "IBI-PUBASSESS-29F21BA8309B",
+      "object_id": "IBI-4F498F59E098",
+      "disposition": "linked",
+      "publication_source_id": "SRC-9D0B124CB0FB",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 159, distribution table, IM 76752",
+      "publication_locator": "pp. 289-294",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'IM 76752 = Faraj 2021', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: the edition's own title names IM 76752 (author's CV)."
+    },
+    {
+      "id": "IBI-PUBASSESS-211E1CD4B36A",
+      "object_id": "IBI-3C7C76482C2A",
+      "disposition": "linked",
+      "publication_source_id": "SRC-65011834E1FC",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 159, distribution table, IM 141803",
+      "publication_locator": "pp. 205-212",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'IM 141803 = Faraj 2010', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: Waller's short title 'Faraj 2010' is taken as the Udine proceedings article because the author-deposited text identifies its first bowl as IM 141803. Faraj's 2010 Coppe magiche monograph has not been checked and may also include it."
+    },
+    {
+      "id": "IBI-PUBASSESS-B5403C783817",
+      "object_id": "IBI-90E4425BBD7D",
+      "disposition": "linked",
+      "publication_source_id": "SRC-1AA4E8BFC7B3",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 159, distribution table, IM 212093",
+      "publication_locator": "pp. 211-216",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'IM 212093 = Al-Jubouri 2015', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: the source record already existed from Waller 2025's list (title 'A New Aramaic Incantation Bowl', Semitica 57, pp. 211-216, confirmed on the volume editor's table of contents); its authors field needs a separate source correction."
+    },
+    {
+      "id": "IBI-PUBASSESS-FDF5347A061C",
+      "object_id": "IBI-B74372055B1B",
+      "disposition": "linked",
+      "publication_source_id": "SRC-07D409983D98",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 159, distribution table, M 5",
+      "publication_locator": "p. 194",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'M 5 = Shaked 1999: 194', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: new source record verified against Brill and Open Library."
+    },
+    {
+      "id": "IBI-PUBASSESS-C0F893B7EA46",
+      "object_id": "IBI-E7EC27018B71",
+      "disposition": "linked",
+      "publication_source_id": "SRC-74F3590433C4",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 160, distribution table, MS 2053/7",
+      "publication_locator": "p. 47",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'MS 2053/7 = Bohak 2012: 47', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: new source record verified against SISMEL and the author's offprint; the bowl is edited in Shaked's appendix."
+    },
+    {
+      "id": "IBI-PUBASSESS-5D83DA9860B7",
+      "object_id": "IBI-3D640F2A8374",
+      "disposition": "linked",
+      "publication_source_id": "SRC-74F3590433C4",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 160, distribution table, MS 2053/236",
+      "publication_locator": "Shaked appendix, within pp. 31-52",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'MS 2053/236 = Bohak 2012: 48-59', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: the author's offprint ends at p. 52 and edits MS 2053/236 in Shaked's appendix, so Waller's 'pp. 48-59' is recorded as an evident locator error rather than adopted. The link is not affected."
+    },
+    {
+      "id": "IBI-PUBASSESS-0A40AB817C41",
+      "object_id": "IBI-214D07893EE2",
+      "disposition": "linked",
+      "publication_source_id": "SRC-BF923C82D6B9",
+      "evidence_source_id": "SRC-73C44B143A9D",
+      "evidence_locator": "p. 161, distribution table, JNF 124",
+      "publication_locator": "pp. 153-154",
+      "basis": "Waller 2022's Table of Distribution lists this bowl as 'JNF 124 = Ford 2016: 153-154', naming the publication that edits it. This records the publication link only; it does not adopt Waller's or the edition's reading. Resolved 2026-09-27: new source record verified against the Israel Exploration Society and the author's offprint, which edits JNF 124; the offprint runs pp. 149-162 against Waller's 149-161."
+    }
+  ]
+}

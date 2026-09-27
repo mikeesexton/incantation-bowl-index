@@ -1,0 +1,31 @@
+{
+  "prepared_by": "Claude Code",
+  "prepared_at": "2026-09-27",
+  "method": "Unlinked probable/confirmed identities whose only scholarly appearance is in a source already scope-reviewed as a single-object or corpus edition, where the appearance locator is the edition's own treatment of the object (pages, plate, or numbered item) rather than a passing mention. The edition is both the evidence and the publication. Objects mentioned only in notes, parallels, or abstracts of thematic studies are excluded.",
+  "excluded": [
+    {"object_id": "IBI-2F865119B495", "reason": "Yelnykov 2025 edits a fourteenth-century Arabic metal bowl that its own scope review calls out of scope; flagged rather than linked, because it should probably leave the priority denominator instead."},
+    {"object_id": "IBI-B5259E1CC555", "reason": "Abudraham 2023 cites VT 1981.8 only in notes (pp. 14-15 nn. 4, 9-10)."},
+    {"object_id": "IBI-7394BFD7A73B", "reason": "Ford's 2011 article publishes a new parallel to IM 76106; it is not evidence that IM 76106 itself is edited there."}
+  ],
+  "records": [
+    {"object_id": "IBI-790A43FE121F", "source_id": "SRC-4C44E5816E4F", "note": "Faraj 2016, Di Castro bowl"},
+    {"object_id": "IBI-7B7F91559A1C", "source_id": "SRC-27D35A24C6BC", "note": "Marcus 2023, MC 77.233"},
+    {"object_id": "IBI-83A0A347B7C4", "source_id": "SRC-A08F75BDD59C", "note": "Levene 2007, Moussaieff 164"},
+    {"object_id": "IBI-874E34F7B3B5", "source_id": "SRC-B47F6370B1D0", "note": "Levene-Bohak 2012, BM 1957,0925.1"},
+    {"object_id": "IBI-BCA2A671CAFF", "source_id": "SRC-AB306F0110B7", "note": "Faraj 2022, IM 77781"},
+    {"object_id": "IBI-12617DC13FC0", "source_id": "SRC-A84A167A5779", "note": "Levene-Bhayro 2005/6, SD 34 (a second identity also carries SD 34; see dedupe lead)"},
+    {"object_id": "IBI-3657945A6155", "source_id": "SRC-2471CE31E5D9", "note": "Hunter 2000, Pearson bowl (republished)"},
+    {"object_id": "IBI-61CFB166EF10", "source_id": "SRC-2471CE31E5D9", "note": "Hunter 2000, IM 9726"},
+    {"object_id": "IBI-4BE4B69AB2D2", "source_id": "SRC-B1AA93ACD1E1", "note": "Geller 1976, BM 2010,6023.1"},
+    {"object_id": "IBI-F51D33F280A7", "source_id": "SRC-F09573688FD1", "note": "Šafiʿī 2025, 108-S"},
+    {"object_id": "IBI-17BB2C48B051", "source_id": "SRC-F09573688FD1", "note": "Šafiʿī 2025, 109-S"},
+    {"object_id": "IBI-B75AF2D8983C", "source_id": "SRC-F09573688FD1", "note": "Šafiʿī 2025, 110-S"},
+    {"object_id": "IBI-BBB46EF28115", "source_id": "SRC-F09573688FD1", "note": "Šafiʿī 2025, 626-S"},
+    {"object_id": "IBI-B7981E70CCE1", "source_id": "SRC-F09573688FD1", "note": "Šafiʿī 2025, 627-S"},
+    {"object_id": "IBI-9D21947B0388", "source_id": "SRC-F42955665921", "note": "Schwab 1891, Dieulafoy Susa bowl N"},
+    {"object_id": "IBI-46C8C30E20BF", "source_id": "SRC-F42955665921", "note": "Schwab 1891, Dieulafoy Susa bowl O"},
+    {"object_id": "IBI-AA67AEE8E98C", "source_id": "SRC-F42955665921", "note": "Schwab 1891, Dieulafoy Susa bowl P"},
+    {"object_id": "IBI-B8B09844C8B9", "source_id": "SRC-FF4308945F0F", "note": "Cook 1992, OI A17877"},
+    {"object_id": "IBI-F1D484247D42", "source_id": "SRC-77BC594D2166", "note": "Harviainen 1978, Finnish National Museum bowl"}
+  ]
+}
