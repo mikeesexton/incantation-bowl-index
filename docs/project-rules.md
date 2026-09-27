@@ -98,6 +98,28 @@ Grade object evidence A–D, following the scoping review §1.4:
 The grade is a property of the evidence for a specific assertion, not a verdict
 on the object or on the scholar.
 
+### Mike's standing rulings
+
+Decisions Mike has made that settle a class of question. Apply them; do not
+re-ask. Record each application in a manifest with the ruling named in its
+evidence notes.
+
+- **One designation is one bowl** (2026-09-27). Records that share one
+  institution- or collection-scoped designation (a museum number, a shelfmark,
+  a private-collection number) are the same bowl unless there is evidence that
+  they differ. Differences of spelling, scheme, or completeness are not such
+  evidence; conflicting physical facts, texts, or clients are. Record the
+  decision with `ibi ingest-dedupe-review`, using `create_candidate` when the
+  generated queue missed the pair.
+- **Late-antique incantation bowls only** (2026-09-27). Later metal bowls,
+  such as medieval Islamic magic-medicine bowls, are outside the corpus. Keep
+  the record and its source, and mark it `rejected` / `non_bowl` with
+  `ibi ingest-object-scope`.
+- **Dated negative evidence is not current** (2026-09-27). A source saying a
+  bowl was "unpublished" or "in preparation" as of its own date is not a
+  no-known-edition finding. Keep such bowls as follow-up leads for later
+  publication searches.
+
 ### Separate the roles behind a name
 
 Never collapse author, textual voice, copyist, producer, commissioner, client,

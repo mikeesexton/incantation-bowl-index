@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "11f0260a239c8cfd785a1dbacd97894b098ab430e99c558f9ccf0ad7aa49454c",
-  "migrations": 17,
-  "recorded_at": "2026-09-27T20:09:50+00:00",
+  "corpus_digest": "68e9367559e0e041698659a612f31cca6b35dc6ec843c97b5fb470db556a1348",
+  "migrations": 18,
+  "recorded_at": "2026-09-27T20:21:29+00:00",
   "recorded_by": "claude",
-  "schema_version": "017_publication_assessments",
+  "schema_version": "018_object_scope_reviews",
   "tables": {
     "accuracy_audit_reviews": {
       "digest": "3941b643cb346dce143d92a3798831040e9be66ae7b6fdf65f07e61827db8586",
@@ -46,12 +46,12 @@
       "rows": 12
     },
     "dedupe_candidates": {
-      "digest": "dafb4d79ea34132577ef2609d97ea2639a76f91d1b5eb24b07c45128d4060830",
-      "rows": 34763
+      "digest": "0bcab69e89d2f34958290e77d650ff485161be6da1ed5f3f9371dfc3fff1d954",
+      "rows": 34767
     },
     "dedupe_evidence": {
-      "digest": "3d03b456da15bebefe30d19320e2a6d8491f51058fc6138fc0fac741c189412b",
-      "rows": 34765
+      "digest": "3fe1367a477592b641955f607b53a6b8ff12fda155f35b3b17474b3e79f9f8e3",
+      "rows": 34769
     },
     "document_assessments": {
       "digest": "a2ac939e9030d07be21c4f3345774da63467cf068e35fa2cc3cce270aff7c15a",
@@ -66,7 +66,7 @@
       "rows": 4985
     },
     "leads": {
-      "digest": "35e557e94499902de375b7adc828d37ba6ee7d289c681ce8dcac25e07fd501dc",
+      "digest": "b3ad085ebc0e666b34b747d25f5bf7f56d4cf4fe5b494b4f9ef9833d4d3af392",
       "rows": 75
     },
     "manual_audits": {
@@ -93,8 +93,12 @@
       "digest": "22806221af1dc10db768d00e4d381c59f20a11a9bded2d7ff037b3407edda3a6",
       "rows": 5
     },
+    "object_scope_reviews": {
+      "digest": "78f9e892ad564b91281a2d0841dda6bc938e20cabb6276cc084a8bab78b0465b",
+      "rows": 1
+    },
     "objects": {
-      "digest": "471932cb539de53a98e90b99b8bff8c6bcf67a9a566293ff4b967d0655a484ce",
+      "digest": "071b304a62308af1e8d276a491798f14751bd577bd985807ba96a59945737c3d",
       "rows": 2053
     },
     "publication_assessments": {
@@ -110,8 +114,8 @@
       "rows": 3
     },
     "schema_migrations": {
-      "digest": "eb44f513faacb188b0093db9b821cf1357dee8fa924e6726d109f31453d5c893",
-      "rows": 17
+      "digest": "d4e4fe241d13119d4d746db0ec6a8e01dce101ab5ccf7790d4fb29e29bfc76d7",
+      "rows": 18
     },
     "search_queries": {
       "digest": "64230fd2056c80b6dcb4426e9c1ebb32650b1cafe9b7cfc2759d22ccf1e39ca9",

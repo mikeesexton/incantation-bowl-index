@@ -22,6 +22,29 @@ def apply_dedupe_review(conn, record):
             "SELECT * FROM dedupe_candidates WHERE object_a_id=? AND object_b_id=?",
             (object_a_id, object_b_id),
         ).fetchone()
+    if not row and record.get("create_candidate"):
+        # A researcher-identified pair the generated queue missed (for example,
+        # one designation recorded under two different schemes). The pair is
+        # queued explicitly, with its own rationale, and then decided below.
+        created = record["create_candidate"]
+        if not record.get("object_a_id") or not record.get("object_b_id"):
+            raise ValueError("create_candidate requires object_a_id and object_b_id")
+        if not (created.get("rationale") or "").strip():
+            raise ValueError("create_candidate requires a rationale")
+        object_a_id, object_b_id = sorted((record["object_a_id"], record["object_b_id"]))
+        for object_id in (object_a_id, object_b_id):
+            if not conn.execute("SELECT 1 FROM objects WHERE id=?", (object_id,)).fetchone():
+                raise ValueError("no such object: %s" % object_id)
+        dedupe_id = new_id("dedupe")
+        conn.execute(
+            "INSERT INTO dedupe_candidates (id,object_a_id,object_b_id,score,method,rationale) "
+            "VALUES (?,?,?,?,?,?)",
+            (
+                dedupe_id, object_a_id, object_b_id, created.get("score", 0.95),
+                created.get("method", "researcher_identified"), created["rationale"],
+            ),
+        )
+        row = conn.execute("SELECT * FROM dedupe_candidates WHERE id=?", (dedupe_id,)).fetchone()
     if not row:
         raise ValueError("review does not resolve an existing dedupe candidate")
     conn.execute(

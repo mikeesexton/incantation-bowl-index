@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-27T20:09:16+00:00`
+Generated: `2026-09-27T20:21:29+00:00`
 
 ## Portfolio status
 
@@ -16,7 +16,7 @@ Current phase: **Credible public index and source-rich research corpus; active r
 
 ### What is solid
 
-- Discovery is broad and reproducible within the classes it searched: 947 sources and 2,353 appearances support 2,053 object records representing an estimated 1,736 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
+- Discovery is broad and reproducible within the classes it searched: 947 sources and 2,353 appearances support 2,053 object records representing an estimated 1,732 distinct identities, every record has evidence, the generated dedupe queue is empty, and two measured saturation sweeps passed the phase-one rule. Saturation is bounded by those twelve source classes and does not substitute for corpus-edition or bibliographic-database coverage.
 - The Montgomery/Penn reference cohort is now internally complete at its stated level: 40/40 printed register entries checked, 35/35 available English translations checked against scans, five source absences documented, and 40/40 current Penn number concordances individually verified.
 - Identity and extraction accuracy now has a reproducible baseline: a 60-identity stratified sample spanning 24 status/linkage/source strata found 36 fully verified rows, 23 verified with evidence notes, no demonstrated errors, and one indeterminate BM068A claim check. The inverse-probability weighted verified-or-noted estimate is 98.7%; a separate 20-identity high-risk diagnostic sample found no unsupported cluster, while preserving source disagreements rather than choosing canonical values.
 - Research corrections are reversible and inspectable: conflict decisions, text revisions, citation repairs, media-rights reviews, museum concordance reviews, and source-reported object relationships retain evidence-bound append-only history. The narrow public export fails closed on texts and media.
@@ -31,7 +31,7 @@ Current phase: **Credible public index and source-rich research corpus; active r
 
 ### What prevents release readiness
 
-- Publication research remains incomplete: 942 of 1,736 distinct identities carry a publication link, including 814 of 1,077 probable or confirmed identities (75.6%). The revised TEXT-001 gate measures research dispositions—an evidence-backed publication link or a sourced no-known-edition finding—and separately requires at least 50% actual links. No identity currently carries a no-known-edition finding, so disposition coverage is also 814/1,077 and the 80% gate is 48 identities away. Of the 263 unlinked priority identities, 205 are NLI museum records whose catalogue silence does not by itself establish that no edition is known.
+- Publication research remains incomplete: 940 of 1,732 distinct identities carry a publication link, including 812 of 1,073 probable or confirmed identities (75.7%). The revised TEXT-001 gate measures research dispositions—an evidence-backed publication link or a sourced no-known-edition finding—and separately requires at least 50% actual links. No identity currently carries a no-known-edition finding, so disposition coverage is also 812/1,073 and the 80% gate is 47 identities away. Of the 261 unlinked priority identities, 205 are NLI museum records whose catalogue silence does not by itself establish that no edition is known.
 - The first stratified identity-and-extraction audit is complete, but it is a 60-identity baseline rather than corpus-wide certification: unequal weighting reduces its effective sample size to 47.5, one BM068A claim check is indeterminate, the review was not independent, and findspot claims are not yet consistently graded by evidence basis.
 - Readable text coverage remains sparse outside Montgomery: publication-link coverage has improved, but just three identities have a recorded transcription or transliteration and only 57 identities have a translation. Davidovitz 41 is the first modern private transcription-and-translation pilot; four scan-checked Wohlstein translations and the Martínez Borobio transliteration and project paraphrase are released on recorded bases, while the fifth Wohlstein reading still awaits specialist review and other protected editions remain private or pointer-only.
 - Release rights remain separate from Mike's private access: all 354 media rows have current ledger entries, 319 have completed approval decisions for shared/public reuse, and 35 remain at needs_review and therefore withheld from those surfaces. Mike Access contains all 354 recorded media rows because it is a single-user personal research surface, not a release. The expanded shared scholar preview remains deployed behind Cloudflare Access; the public-library candidate remains local and unpublished.
@@ -74,23 +74,23 @@ Current evidence: **212 scholarship works indexed; 41 with a source-linked held 
 | Measure | Current |
 |---|---:|
 | Candidate source records | 2053 |
-| Working physical identity hypotheses (all statuses) | 1736 |
+| Working physical identity hypotheses (all statuses) | 1732 |
 | Source appearances | 2353 |
 | Sources | 953 |
 | Source documents with current assessments | 52 |
 | Source documents assessed complete | 49 |
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 425 |
-| Triaged claim-field differences | 644/692 |
-| Compatible differences | 626 |
-| Review required (missing or no longer valid) | 48 |
+| Identities triggering raw claim-difference flags | 426 |
+| Triaged claim-field differences | 642/696 |
+| Compatible differences | 624 |
+| Review required (missing or no longer valid) | 54 |
 | Existing reviews requiring revalidation | 0 |
 | Substantive conflict instances | 18 across 16 identities |
-| All identities with a publication reference | 942/1736 (54.3%) |
-| Probable/confirmed identities with a publication reference | 814/1077 (75.6%) |
-| Probable/confirmed identities reviewed as having no known edition | 0/1077 (0.0%) |
-| Probable/confirmed identities with a publication disposition | 814/1077 (75.6%) |
+| All identities with a publication reference | 940/1732 (54.3%) |
+| Probable/confirmed identities with a publication reference | 812/1073 (75.7%) |
+| Probable/confirmed identities reviewed as having no known edition | 0/1073 (0.0%) |
+| Probable/confirmed identities with a publication disposition | 812/1073 (75.7%) |
 | Identities with a translation | 71 |
 | Scan-checked normalized reading texts | 39 |
 | Publication keys resolved to the publication they designate | 33/33 |
@@ -102,7 +102,7 @@ Current evidence: **212 scholarship works indexed; 41 with a source-linked held 
 | Media with a current ledger entry | 354/354 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 29 |
-| Open or active leads | 26 |
+| Open or active leads | 22 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication-link coverage combines publication identifiers with reviewed object-level publication links. Publication-disposition coverage additionally counts a sourced no-known-edition finding; catalogue silence alone does not qualify. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.
@@ -111,16 +111,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1289 | 74.3% |
+| Location | 1286 | 74.2% |
 | Provenance | 371 | 21.4% |
 | Dating | 484 | 27.9% |
-| Dimensions | 460 | 26.5% |
-| Material | 410 | 23.6% |
-| Language | 1041 | 60.0% |
+| Dimensions | 460 | 26.6% |
+| Material | 410 | 23.7% |
+| Language | 1037 | 59.9% |
 | Script | 94 | 5.4% |
 | Text Edition | 17 | 1.0% |
 | Translation | 71 | 4.1% |
-| Image | 330 | 19.0% |
+| Image | 330 | 19.1% |
 
 ### Content-facet coverage
 
@@ -132,7 +132,7 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 | Client | 172 | 9.9% |
 | Biblical Intertexts | 170 | 9.8% |
 | Condition | 142 | 8.2% |
-| Ritual | 124 | 7.1% |
+| Ritual | 123 | 7.1% |
 | Text Description | 93 | 5.4% |
 | Text Form | 43 | 2.5% |
 | Practitioner | 29 | 1.7% |
@@ -191,7 +191,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 ## Current priority order
 
 1. CONC-003: await NLI's answer on the eleven unlisted Moussaieff numbers, then record the exact explanation without creating inferred objects. In parallel, seek checked publication concordances for the 74 IAA-owned catalogue records and the eight Scholem/Klagsbald holdings; keep the three groups separate.
-2. TEXT-001: 814 of 1,077 probable/confirmed identities carry an evidence-backed publication link (75.6%), and no identity yet carries a sourced no-known-edition finding. The revised 80% disposition gate needs 862, a shortfall of 48; a separate 50% actual-link safeguard already passes. The 263 unlinked priority identities comprise 205 NLI records and 58 others. The largest workable groups are the seven Moussaieff Mandaic survey bowls (IBI-LEAD-MOUSSAIEFF-MANDAIC-EDITIONS: map them to Morgenstern 2021 and Morgenstern–Abudraham), ten bowls Kedar 2019 calls unpublished (IBI-LEAD-KEDAR2019-UNPUBLISHED-CANDIDATES: check post-2019 publication, then settle a policy for dated negative evidence before recording any no-known-edition finding), six Nippur 1989 field numbers, and Montgomery 1918 (IBI-LEAD-MONTGOMERY1918-SCOPE). Never promote catalogue silence into a no-known-edition finding.
+2. TEXT-001: 812 of 1,073 probable/confirmed identities carry an evidence-backed publication link (75.7%), and no identity yet carries a sourced no-known-edition finding. The revised 80% disposition gate needs 859, a shortfall of 47; a separate 50% actual-link safeguard already passes. The 261 unlinked priority identities comprise 205 NLI records and 56 others. The largest workable groups are the seven Moussaieff Mandaic survey bowls (IBI-LEAD-MOUSSAIEFF-MANDAIC-EDITIONS: map them to Morgenstern 2021 and Morgenstern–Abudraham), ten bowls Kedar 2019 calls unpublished (IBI-LEAD-KEDAR2019-UNPUBLISHED-CANDIDATES: follow-up targets only; Mike ruled that a dated 'unpublished' statement is not a no-known-edition finding), six Nippur 1989 field numbers, and Montgomery 1918 (IBI-LEAD-MONTGOMERY1918-SCOPE). Never promote catalogue silence into a no-known-edition finding.
 3. SCHOL-005 / CONC-001 / QA-004: pursue Segal 2000 through the documented NYPL offsite advance-request route or interlibrary loan. The British Museum relation now establishes publication links for all 159 related objects, so the book is no longer needed merely to move the link metric; it remains the largest lever for exact Segal-number concordances, BM068A review, readings, translations and the 142-versus-159 explanation. Await the requested Isbell 1975, TMH 7, Naveh-Shaked 1998 and Yamauchi 1967 items.
 4. ACCESS-003 / RIGHTS-002: rebuild the public-library candidate from the current corpus before any review or deployment; older candidate hashes and 298/327 media counts are superseded as current planning evidence. The live shared projection now has 354 media ledger rows, 319 completed approvals and 35 needs_review holds. Retain fail-closed treatment for protected texts, capture storage and every unapproved image.
 5. SCHOL-006: classify the remaining 81 unclassified works by scope. Forty scholarship works have a source-linked held document and 125 works now have a derived or inspected scope. The productive seam is pre-1930 public-domain scholarship whose complete text is openly readable on a robots-permitted host, DOI-deposited abstracts that state a work's method or argument, and the field's major editions, where a publisher or institutional record states how many objects are edited. Persée and Gallica disallow this project's user agent, so works surviving only there need another route; continue to retain duplicate discovery records as metadata and to leave genuinely ambiguous works unclassified rather than inferring scope from a title.
@@ -307,7 +307,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
 
 - [ ] **TEXT-001 — Create publication-reference coverage for known texts** · In progress · Research
   - Done when: At least 80% of probable/confirmed identities have an evidence-backed publication disposition—either a publication link or an explicit sourced no-known-edition finding—and at least 50% have an actual publication link. Catalogue silence alone does not qualify as no-known-edition evidence.
-  - Evidence/status: Current publication-link coverage is 942/1,736 distinct identities (54.3%) and 814/1,077 probable or confirmed identities (75.6%). No identity currently carries a no-known-edition review, so disposition coverage is also 814/1,077; the 80% threshold requires 862 and is 48 identities away, while the 50% actual-link safeguard passes. All 33 publication keys resolve to publication sources, covering 895 candidate records before identity deduplication. A new append-only assessment ledger records publication relationships that lack an exact object number and keeps them separate from no-known-edition findings. The British Museum's official BIB3908 relation now supports 159 evidence-bound Segal 2000 links; these add no exact Segal text number and make no identity change. Waller 2022's Table of Distribution (printed pp. 155-161) supports 45 further links for bowls known only by their Waller designation; the last seven followed once the five cited editions were given verified source records (IBI-LEAD-WALLER-TOD-MISSING-EDITIONS, resolved). Nineteen more link identities whose own appearance is in a scope-reviewed single-object or corpus edition, the edition serving as both evidence and publication. Seventeen complete corpus, catalogue, or edition units support 565 page-located source appearances. Exact collection or publication identifiers attached 189 appearances to existing objects; 376 remain separate candidates because no unique exact match existed. Five complete public-domain Wohlstein translations have page-bound reading records: four are scan-checked and VA 2416 is partial-review pending a specialist check of its embedded Hebrew strings. No uncertain identities were merged and no protected scholarly wording was published.
+  - Evidence/status: Current publication-link coverage is 940/1,732 distinct identities (54.3%) and 812/1,073 probable or confirmed identities (75.7%). No identity currently carries a no-known-edition review, so disposition coverage is also 812/1,073; the 80% threshold requires 859 and is 47 identities away, while the 50% actual-link safeguard passes. All 33 publication keys resolve to publication sources, covering 895 candidate records before identity deduplication. A new append-only assessment ledger records publication relationships that lack an exact object number and keeps them separate from no-known-edition findings. The British Museum's official BIB3908 relation now supports 159 evidence-bound Segal 2000 links; these add no exact Segal text number and make no identity change. Waller 2022's Table of Distribution (printed pp. 155-161) supports 45 further links for bowls known only by their Waller designation; the last seven followed once the five cited editions were given verified source records (IBI-LEAD-WALLER-TOD-MISSING-EDITIONS, resolved). Nineteen more link identities whose own appearance is in a scope-reviewed single-object or corpus edition, the edition serving as both evidence and publication. Seventeen complete corpus, catalogue, or edition units support 565 page-located source appearances. Exact collection or publication identifiers attached 189 appearances to existing objects; 376 remain separate candidates because no unique exact match existed. Five complete public-domain Wohlstein translations have page-bound reading records: four are scan-checked and VA 2416 is partial-review pending a specialist check of its embedded Hebrew strings. No uncertain identities were merged and no protected scholarly wording was published.
 - [x] **TEXT-002 — Proofread Montgomery's 35 extracted translations** · Done · Research
   - Done when: Every translation is checked line by line against the scan, corrections are logged, and public_ok is decided independently of public-domain status.
   - Evidence/status: 35/35 available translations visually checked against archived scans as normalized English reading texts, in batches of 11 and 24. Exact original rows, corrected text hashes, source-PDF hash, page locators and correction notes retained. Zero OCR drafts remain in this cohort. All 35 remain public_ok=false; independent specialist review and original-language verification are separate work. Completion manifest: research/reviews/montgomery_reading_texts_completion_2026-09-05.json.
@@ -503,10 +503,10 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `48`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `54`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
-- [ ] At least 80% of probable/confirmed identities have a research-complete publication disposition: an evidence-backed publication link or an explicit sourced no-known-edition finding. Catalogue silence alone does not count. Current: 814/1,077 (75.6%), including zero no-known-edition findings. — current `75.6%`; target `>= 80.0%`.
-- [x] At least half of probable/confirmed identities retain an actual publication link, preventing the disposition gate from being satisfied primarily by negative findings. Current: 814/1,077 (75.6%). — current `75.6%`; target `>= 50.0%`.
+- [ ] At least 80% of probable/confirmed identities have a research-complete publication disposition: an evidence-backed publication link or an explicit sourced no-known-edition finding. Catalogue silence alone does not count. Current: 812/1,073 (75.7%), including zero no-known-edition findings. — current `75.7%`; target `>= 80.0%`.
+- [x] At least half of probable/confirmed identities retain an actual publication link, preventing the disposition gate from being satisfied primarily by negative findings. Current: 812/1,073 (75.7%). — current `75.7%`; target `>= 50.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `90.1%`; target `>= 100.0%`.
 
 ### Required setup tasks
@@ -554,6 +554,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-09-27:** Applied three standing rulings from Mike, now recorded in docs/project-rules.md. One designation is one bowl absent contrary evidence: merged British Museum 1957,0925.1 (two records), SD 34 (two) and NLI Heb. 4° 6079 (three), using a new researcher-identified path in ingest-dedupe-review for pairs the generated queue missed. Late-antique bowls only: marked the Yelnykov fourteenth-century metal bowl rejected/non_bowl through a new append-only object-scope ledger (migration 018). Dated negative evidence is not current: Kedar 2019's unpublished bowls stay follow-up leads. Probable/confirmed identities fall from 1,077 to 1,073; publication coverage is 812/1,073 (75.7%).
 - **2026-09-27:** Advanced TEXT-001 by six identities to 814/1,077 (75.6%). Scope-reviewed Harviainen 1981, Ford–Ten-Ami 2012 and Müller-Kessler–Kwasman 2000 as single-bowl editions and linked their bowls. Read Kedar 2019's footnotes in the held dissertation and linked three bowls to the editions she cites (Naveh–Shaked, Müller-Kessler 1994 and 2005). Added Morgenstern 2021 (Eretz-Israel 34) as a source and opened leads to map the Moussaieff Mandaic bowls, to check the ten bowls Kedar calls unpublished, to review three records of NLI Heb. 4° 6079, and to scope Montgomery 1918. No identity merged and no no-known-edition finding recorded.
 - **2026-09-27:** Advanced TEXT-001 by 26 identities to 808/1,077 (75.0%). Resolved IBI-LEAD-WALLER-TOD-MISSING-EDITIONS: added verified source records for Faraj 2021, Faraj's 2010 Udine article, Shaked 1999, Bohak 2012 and Ford 2016, reused the existing Al-Jubouri 2015 record, and linked the seven held Waller designations. Linked 19 further identities whose own appearance is in a scope-reviewed edition (Hunter 2000, Geller 1976, Šafiʿī 2025, Schwab 1891, Cook 1992 and seven single-bowl articles), after scope-reviewing Harviainen 1978 from the Finnish National Library record. Opened leads for the duplicate British Museum 1957,0925.1 identities and for the out-of-scope Yelnykov metal bowl in the priority denominator. No identity merged and no reading adopted.
 - **2026-09-27:** Advanced TEXT-001 with 38 evidence-bound publication links from Waller 2022's Table of Distribution, which names the edition for each bowl it tabulates. The links cover the Moussaieff bowls under Levene 2003, Berlin bowls under Levene 2013 and Levene's Heal O' Israel article, and 25 smaller-publication entries. Seven designations are held under IBI-LEAD-WALLER-TOD-MISSING-EDITIONS: five cite works with no source record and one cites an ambiguous Faraj 2010. Probable/confirmed coverage rose from 744/1,077 to 782/1,077 (72.6%); the 80% gate is 80 identities away. No identity, reading or no-known-edition finding changed.

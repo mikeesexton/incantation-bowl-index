@@ -25,6 +25,41 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude (Cowork) — Apply Mike's identity, scope and dated-evidence rulings
+
+**Claimed:** TEXT-001, CONC-003 (Scholem record only)
+**Corpus:** changed (4 researcher-identified same-object decisions, 1 object
+scope review, 5 leads updated; migration 018) — state digest `68e9367559e0`
+**Tests:** 325 Python passed (+5 in `tests/test_object_scope.py`); copied-
+database dry run and idempotent replay; SQLite integrity and foreign-key
+checks passed
+
+- Mike made three standing rulings, now written into
+  `docs/project-rules.md` under "Mike's standing rulings":
+  - One designation is one bowl, absent contrary evidence.
+  - The corpus covers late-antique bowls only.
+  - Dated "unpublished" statements are not current evidence.
+- Merged three groups under the first ruling, with no conflicting claims
+  in any of them:
+  - British Museum 1957,0925.1: two records.
+  - SD 34: two records.
+  - NLI Heb. 4° 6079: three records, including the NLI catalogue's
+    Scholem bowl at Ms. Heb. 6079=34. The '=34' suffix is still
+    unexplained.
+- The generated queue had missed all three groups because each
+  designation sat under a different scheme. `apply_dedupe_review` now
+  accepts `create_candidate` for a researcher-identified pair.
+- Added migration 018 and `ibi ingest-object-scope`, an append-only
+  ledger that keeps the prior status and type. Used it to mark the
+  Yelnykov 14th-century metal bowl `rejected` / `non_bowl`.
+- `IBI-LEAD-KEDAR2019-UNPUBLISHED-CANDIDATES` stays open as follow-up
+  targets only.
+- Probable/confirmed identities went from 1,077 to 1,073. TEXT-001 is
+  812/1,073 (75.7%); the gate (859) is 47 away.
+- Next: sweep the corpus for designations shared across different
+  schemes. Under the first ruling each one is a merge unless the claims
+  conflict, and the same scheme mismatch has probably hidden more pairs.
+
 ## 2026-09-27 — Claude (Cowork) — Scope single-bowl editions; follow Kedar 2019's citations
 
 **Claimed:** TEXT-001
