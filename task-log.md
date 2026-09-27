@@ -25,6 +25,32 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude (Cowork) — Map Morgenstern 2021's five Moussaieff bowls
+
+**Claimed:** TEXT-001
+**Corpus:** changed (4 candidates, 4 same-object decisions, 4 publication
+assessments, 1 lead updated) — state digest `5f73c9a5f5f2`
+**Tests:** 325 Python passed; candidate replay idempotent; integrity passed
+
+- Mike logged into JSTOR in Chrome. JSTOR sees his access as provided by the
+  Library of Congress, and online reading is free but capped at 10 articles
+  a month. This session used 1, leaving 9.
+- Read all 18 pages of Morgenstern 2021 (JSTOR 27165940). It edits
+  Moussaieff 23 (p. 106), 24 (p. 109), 26 (p. 112), 139 (p. 114) and 154
+  (p. 118).
+- Each bowl agrees with its 2012 survey record on client, line count or
+  dimensions. All five are merged under the one-designation ruling and
+  linked. The seed file was renamed to
+  `research/seeds/morgenstern_2021_five_bowls_2026-09-27.jsonl`; the
+  identity file to `research/reviews/morgenstern_2021_identity_decisions_2026-09-27.jsonl`.
+- Still unlinked:
+  - M25: the article reserves it, with M158, for a planned book.
+  - M45 and unnumbered A and B: presumably in Morgenstern–Abudraham's
+    forthcoming Mehqarim be-Lashon article.
+- Open question: JSTOR's indexed text of the 2012 chapter reads "Twelve
+  Mandaic Magic Bowls", while the corpus records nine.
+- TEXT-001 is 817/1,073 (76.1%); the gate is 42 away.
+
 ## 2026-09-27 — Claude (Cowork) — First sources read through Mike's Chrome
 
 **Claimed:** TEXT-001
