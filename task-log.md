@@ -25,6 +25,38 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-27 — Claude (Cowork) — First sources read through Mike's Chrome
+
+**Claimed:** TEXT-001
+**Corpus:** changed (1 candidate, 1 researcher-identified same-object decision,
+2 scope reviews, 2 publication assessments, 2 leads updated) — state digest `560b875995b7`
+**Tests:** 325 Python passed; candidate replay idempotent; SQLite integrity
+and foreign-key checks passed
+
+- The sandbox's network blocks JSTOR, journal.fi and Internet Archive. Mike's
+  Chrome (Claude in Chrome) reaches them, so reading now happens there. Every
+  source read that way is named with its stable URL in the manifest.
+- Montgomery 1918 (JSTOR 528416, Open JSTOR, public domain): read in full.
+  It is a one-bowl edition of the Hyvernat bowl (eleven spiral lines; client
+  Nuri daughter of Giloi). Scoped and linked.
+- Morgenstern 2021, Eretz-Israel 34: 106-122 (JSTOR 27165940). The preview
+  shows only p. 106:
+  - The first edition there is **Moussaieff 23**, for Asmāndād bar Marjā,
+    eleven lines. Added it as an appearance and merged it with survey M23
+    under the one-designation ruling (the client and line count agree).
+  - The introduction says **Moussaieff 25 and 158 are not in the article**;
+    they are reserved for a planned book on Mandaic bowls in private
+    collections. M25 therefore stays unlinked.
+- Library of Congress: Eretz-Israel 31-35 is LCCN 2021420184, call number
+  DS108.9 .E74 2015 Hebr. v. 34 is onsite only in the African & Middle
+  Eastern Reading Room (LJ229). The request form says it cannot be requested
+  online; ask staff or ask.loc.gov. Nothing was submitted.
+- TEXT-001 is 814/1,073 (75.9%); the gate (859) is 45 away.
+- Next:
+  - Read pp. 107-122 of Morgenstern 2021 (JSTOR "Read online" with a free
+    account, or at LoC) to link the other four bowls.
+  - Sweep for designations shared across different schemes.
+
 ## 2026-09-27 — Claude (Cowork) — Apply Mike's identity, scope and dated-evidence rulings
 
 **Claimed:** TEXT-001, CONC-003 (Scholem record only)
