@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Gordon 1934 and 1937 bowl editions
+
+**Claimed:** TEXT-004
+**Corpus:** changed (36 private working text rows and 69 page links for 22 appearances) — state digest `4aa629c67618`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; extractors, manifests, and all 69 page-image hashes verified
+
+- Extracted Gordon 1934's six edited texts A–F and seven survey appearances into Mike Access. The six editions have separately indexed working English translation spans and individual plates X–XV. E/F share Gordon's combined parallel translation; the shared scope is explicit on each row. This source adds 19 private text rows and 31 page links across 13 appearances.
+- Extracted Gordon 1937's eight edited texts H–O with eight separately indexed working English translation spans, plus the introductory National Museum footnote appearance. H–N have their article plates; O has source pages but no usable plate in this assembled scan, whose PDF p. 36 is blank. This source adds 17 text rows and 38 page links across nine appearances. The scans' original-script text layers are garbled, so no OCR was classified as an inscription transcription; translations require page proofing.
+- Held protected manifests outside Git and checked in content-free source, manifest, and derivative receipts. Took and integrity-checked a pre-batch database backup, keeping the newest ten. Rebuilt Mike Access with 1,347/1,347 private texts, 1,074/1,074 media, 727 local images and all 59 captures. Three of 33 appearance-bearing held-PDF sources now have zero linked content; no public reuse decision changed. Next address those three, then recover original-script readings and proof working translations from facsimiles.
+
 ## 2026-09-28 — Codex — Ellis/Layard and Schwab historical editions
 
 **Claimed:** TEXT-004
