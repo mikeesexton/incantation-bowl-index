@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for complete Mike-only Jena numbered-section text-layer extracts",
+  "source_id": "SRC-8A145FAA2EBB",
+  "capture_id": "CAP-2861B06070B4",
+  "capture_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+  "private_manifest": "data/private/manifests/aibm_2020_jena_full_sections_private_2026-09-28.jsonl",
+  "private_manifest_sha256": "2b547ca97a5916f6d7c61697be32079b75d2ec9a2e0d59a4af341a51d0eedb25",
+  "extractor": "scripts/build_jena_private_sections.py",
+  "extractor_sha256": "0fa9fd8c12798c26c1e2ca0e6c34863e60ce2df31416878857ded3cd5b5ee8d2",
+  "numbered_entries": 68,
+  "source_appearance_text_rows": 68,
+  "working_text_characters": 437391,
+  "separately_indexed_translation_rows_added": 0,
+  "separately_indexed_original_script_rows_added": 0,
+  "scope_note": "Complete source sections for all 68 existing appearances are private under summary, including any printed original-script edition, translation, description, commentary and notes. Text-layer order, damaged glyphs and typography require page proofing. Entry 69 describes assorted fragments in one box and is not yet linked to an object. No public release decision changed."
+}

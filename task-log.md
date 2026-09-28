@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Jena catalogue full-section extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (68 protected full-section text rows) — state digest `b6dcf6060613`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source, extractor and manifest hashes verified
+
+- Retained complete numbered-section working text-layer extracts for all 68 previously indexed Jena source appearances (437,391 characters), with exact printed/PDF page ranges, catalogue number, shelf mark, author, capture ID and SHA-256. The sections include the edition, scholarly translation, description, commentary, notes and figure captions where printed. Protected manifest and text remain outside Git; a content-free receipt and reproducible extractor are checked in.
+- The local Mike Access build now contains 1,130/1,130 private text rows, 904/904 media rows, 557 local images and all 59 captures, passing 7/7 private checks. Jena now has 96 text rows and 96 retained figure pages across its 68 indexed appearances; the 14 previously separated translations and transcriptions remain. No public release decision changed.
+- The extraction sequence was checked against all 69 printed entry headings and the 68 existing appearance shelf marks. Entry 69 is a box of assorted fragments and has no source appearance; it was left for object/appearance review rather than treated as one bowl. The 26 edited entries without separately indexed translation and original-script rows need page-aware separation; the full source sections are already privately searchable. Page proofing of column order, damaged glyphs and typography also remains. Took and integrity-checked a pre-batch backup and retained the newest ten database backups.
+
 ## 2026-09-28 — Codex — Pognon numbered-section and plate extraction
 
 **Claimed:** TEXT-004
