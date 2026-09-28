@@ -23,6 +23,10 @@ This audits registered PDF captures against bowl-level structured text and media
 - Waller's state-of-the-art chapter: its BM 91711 appearance has the complete printed p. 13 discussion and footnote in private text, plus the exact source-page image. The reported Arban, Syria, location is retained as an uncertain, attributed accession-register claim because Waller notes that Layard did not record a bowl find there. This chapter is contextual, not an edition of BM 91711.
 - Oriental Institute *Highlights* no. 27: OIM A32675 has its printed p. 51 photograph and entry available privately, a project-authored factual summary, and five source-attributed claims for reported surface recovery at Nippur, catalogue date, dimensions, and pseudoscript. The PDF permits printing but marks text copying as disabled, so its prose text layer was not extracted. The entry offers no inscription edition or translation; the bowl image and legally permissible facts were retained without assigning the catalogue's wording to a text row.
 
+## Scan proofing started
+
+Seven Gordon translation rows now have evidence-bound page reviews in the append-only proofreading ledger. Gordon 1937 I, J and K (printed pp. 91–92) and Gordon 1934 A and C (printed pp. 322, 326–327) are marked `reading_text_checked` after direct comparison with their facsimiles. The corrections restore lost lacunae and bracketed readings, repair OCR-damaged names and words, and recover text C's biblical quotation from the following page. Gordon 1934 B and 1937 L are marked `partial_review`: their prose and page boundaries were checked, but magical syllables or transliterated names still require closer collation. These are checks of Gordon's English translation text, not of his original-script editions; public reuse remains unapproved.
+
 These born-digital text-layer extractions have not had page-by-page scholarly proofing. Damaged lines, word spacing, restoration marks, typography, commentary, linguistic notes, introductory material, and indexes still need extraction or review.
 
 | Capture | Source | Appearances | Text rows | Media rows |

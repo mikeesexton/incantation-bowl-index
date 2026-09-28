@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Gordon translation scan proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (five checked translation rows and two partial reviews) — state digest `45f65632497e`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; corrected file hashes verified
+
+- Compared seven working Gordon translations with eight distinct pages in the held 1934 and 1937 facsimiles. Corrected OCR spelling, omitted brackets and lacunae, line-wrap artifacts and punctuation; restored the end of Gordon 1934 C's biblical quotation from printed p. 327. Five rows (1934 A/C and 1937 I/J/K) are scan checked. Two (1934 B and 1937 L) remain partial because magic syllables or transliterated names need closer review.
+- Kept corrected translations and review manifests in the private vault. Ingested all seven reviews append-only, retaining earlier working text in review history; committed a content-free receipt with source, manifest and corrected-text hashes. Took and integrity-checked a pre-batch backup, retaining the newest ten. Rebuilt Mike Access with 1,351/1,351 private texts, 1,089/1,089 media rows, 742 local images and all 59 captures. No public reuse decision changed.
+- Next proof the remaining Gordon translation rows and continue through the larger working OCR backlog; recover original-script readings separately from legible source facsimiles.
+
 ## 2026-09-28 — Codex — final three empty held PDF sources
 
 **Claimed:** TEXT-004
