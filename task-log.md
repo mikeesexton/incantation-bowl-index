@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Stübe catalogue and VA 2416 edition scan
+
+**Claimed:** TEXT-004
+**Corpus:** changed (three protected translation rows and 30 private page links) — state digest `3e2aa2b57520`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source, manifest, transcription and rendered-page hashes verified
+
+- Linked all 19 previously indexed Stübe catalogue appearances to their exact description pages; nos. 14 and 15 remain inscribed skulls rather than bowls. Linked all six VA 2416 edition pages, alternating Hebrew-script transcription and German translation, and keyed the three German translation pages as searchable working text with explicit placeholders at unclear Hebrew words. The source scan has no text layer; no Hebrew transcription was inferred from images.
+- Rendered 30 private page links from twelve distinct PDF pages and rebuilt Mike Access with 1,290/1,290 text rows, 936/936 media rows, 589 local images and all 59 captures. A content-free receipt binds the protected working transcription, private manifest, source capture and image derivatives. The held-PDF audit now has nine of 33 appearance-bearing sources with no source-linked content. Took and integrity-checked a pre-batch database backup, retained the newest ten, and changed no public-reuse decision.
+- Next proof Stübe's German working text against the facsimiles, recover its Hebrew-script reading with a reliable text method, and continue into remaining zero-content editions and illustrated articles.
+
 ## 2026-09-28 — Codex — Brand list and Kedar thesis private extraction
 
 **Claimed:** TEXT-004
