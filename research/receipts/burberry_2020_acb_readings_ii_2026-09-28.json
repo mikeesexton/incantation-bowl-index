@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for five more private Burberry 2020 scholarly translations",
+  "source_id": "SRC-53B93C8C8A0E",
+  "capture_id": "CAP-FEA23FB9B4F1",
+  "capture_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+  "private_manifest": "data/private/manifests/burberry_2020_acb_readings_ii_2026-09-28.jsonl",
+  "private_manifest_sha256": "0d2b315825eb1742fd254ec55999c2986e4c93f908a528176eb41f05ed651469",
+  "source_rights": "all_rights_reserved; private research only",
+  "texts": [
+    {
+      "id": "TXT-6C7377CB8F4B",
+      "object_id": "IBI-3710A9140539",
+      "text_type": "translation",
+      "locator": "ACB 3, printed pp. 140–141"
+    },
+    {
+      "id": "TXT-D79D0DDA9799",
+      "object_id": "IBI-F094C5154A17",
+      "text_type": "translation",
+      "locator": "ACB 4, printed pp. 157–158"
+    },
+    {
+      "id": "TXT-C36C22F2D594",
+      "object_id": "IBI-BCABA823010C",
+      "text_type": "translation",
+      "locator": "ACB 5, printed pp. 164–165"
+    },
+    {
+      "id": "TXT-18AAB3D8351D",
+      "object_id": "IBI-F755703CBB5C",
+      "text_type": "translation",
+      "locator": "ACB 8, printed pp. 210–211"
+    },
+    {
+      "id": "TXT-AD41AC226834",
+      "object_id": "IBI-A929E9853CC3",
+      "text_type": "translation",
+      "locator": "ACB 10, printed pp. 229–230"
+    }
+  ],
+  "scope_note": "Five page-checked translation rows for ACB 3, 4, 5, 8 and 10. Printed line numbers and damage brackets are retained. Letter strings and typography should be checked against the linked source page before quotation."
+}

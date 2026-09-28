@@ -280,7 +280,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "For each lawfully held edition, Mike Access has the available inscription, scholarly transcription or transliteration, scholarly translation and bowl image, or a documented item-specific reason for absence. Every private capture is attributed and page-located; shared/public release decisions remain independent.",
-     "evidence": "The 11 September complete-volume batches indexed 450 appearances with volume and page locators, but all seven held copyrighted sources still have zero structured text and media rows. This is an extraction backlog, not a reason to withhold scholarly text from Mike. A 28 September audit found 17 of 26 complete held, scope-reviewed editions or catalogues have no structured text or media; only seven of the then 354 media rows had local image derivatives. Cook 1992 adds an attributed private translation and figure derivative. Burberry 2020 now has all 25 ACB photograph plates, one full scholarly transcription and thirteen source-checked translation rows across twelve bowls, including the two separate ACB 19 fragments. Twelve edition units still need translation extraction; ACB 25 has none in the thesis. Mike directed that scholarly transcriptions and translations be retained for his private research view from lawfully held sources, without requiring new translations. Private manifests and protected payloads stay outside Git."
+     "evidence": "The 11 September complete-volume batches indexed 450 appearances with volume and page locators, but all seven held copyrighted sources still have zero structured text and media rows. This is an extraction backlog, not a reason to withhold scholarly text from Mike. A 28 September audit found 17 of 26 complete held, scope-reviewed editions or catalogues have no structured text or media; only seven of the then 354 media rows had local image derivatives. Cook 1992 adds an attributed private translation and figure derivative. Burberry 2020 now has all 25 ACB photograph plates, one full scholarly transcription and eighteen source-checked translation rows across seventeen bowls, including the two separate ACB 19 fragments. Seven edition units still need translation extraction; ACB 25 has none in the thesis. Mike directed that scholarly transcriptions and translations be retained for his private research view from lawfully held sources, without requiring new translations. Private manifests and protected payloads stay outside Git."
     },
     {
      "id": "TEXT-005",
@@ -476,7 +476,7 @@
      "status": "in_progress",
      "owner": "Mike and engineering",
      "done_when": "Mike alone can reach the complete lawfully held research record remotely, including stored text, recorded images, and retained source scans; the identity policy admits no second user, alternate deployment hosts return 404, responses are private/no-store and noindex, and the private payload stays outside Git.",
-     "evidence": "The local PrivateResearchProjection exposes all 323 stored text rows and 380 recorded image rows without public-release gates. The localhost research console now links registered source captures by opaque ID, while the static Mike snapshot still omits all 59 retained source files and includes 33 local image derivatives. The original content-coverage audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media rows; Burberry now has private text and image rows, reducing that zero-content cohort to 16. Remote access is not complete: it needs source-document delivery, private extraction of held inscriptions and translations, and a verified Mike-only identity policy before any deployment. The /mike host lock is checked in."
+     "evidence": "The local PrivateResearchProjection exposes all 328 stored text rows and 380 recorded image rows without public-release gates. The localhost research console now links registered source captures by opaque ID, while the static Mike snapshot still omits all 59 retained source files and includes 33 local image derivatives. The original content-coverage audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media rows; Burberry now has private text and image rows, reducing that zero-content cohort to 16. Remote access is not complete: it needs source-document delivery, private extraction of held inscriptions and translations, and a verified Mike-only identity policy before any deployment. The /mike host lock is checked in."
     }
    ]
   },
@@ -810,6 +810,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-09-28",
+   "note": "Added five more page-checked Burberry 2020 scholarly translations privately for ACB 3, 4, 5, 8 and 10. Protected text lives in a separate ignored manifest; a content-free receipt records exact source, page and hash. Burberry coverage is now 18 translation rows for 17 bowls, plus one transcription and all 25 photograph plates. Seven ACB editions still need translation extraction; ACB 25 has no translation in the thesis. Mike Access displays 328 text rows and 380 media rows without public rights approval for the new content."
+  },
   {
    "date": "2026-09-28",
    "note": "Continued Burberry 2020 private extraction with nine more source-checked translation rows for ACB 6, 9, 15, 17, 18, 19 (separate fragment A and B rows), 21 and 22. Printed line numbering and damage brackets were retained; the ACB 21 receipt notes that divine-name boxes remain visible only on the source page. Mike Access now exposes all 323 text rows. Twelve Burberry edition units still await translation extraction, while ACB 25 has no translation in the thesis. No image, identity or rights decision changed."
