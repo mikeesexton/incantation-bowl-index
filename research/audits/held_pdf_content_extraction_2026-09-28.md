@@ -7,12 +7,13 @@ This audits registered PDF captures against bowl-level structured text and media
 - Both complete *Aramaic Bowl Spells* volumes (Shaked, Ford, Bhayro 2013 and 2022): all 119 JBA entries have a private English translation, a working Hebrew-script transcription, and at least one photograph page. Volume one has 90 plate images; volume two has 66 photograph and 23 artist-impression figure page images. Across the volumes, 119 dimensions, 113 client descriptions, and 38 biblical-quotation lists were added as source claims.
 - Ford and Morgenstern’s 2020 Jena catalogue: 96 figure pages retained for all 68 previously indexed appearances. Fourteen first-section entries also have working English translation and Hebrew-script transcription rows. The remaining edition text and catalogue descriptions are still unextracted. The PDF contains entry 69 (HS 3070, printed pp. 243–244), a box of assorted fragments that is missing from this catalogue’s appearance set; an older Brand-list record exists. Its physical unity and scope require explicit review before a new object link.
 - Moriggi’s 2014 *Corpus of Syriac Incantation Bowls*: all 49 numbered entries now have a private English translation and Latin-script Syriac transliteration from the two-column edition. Fifty-eight illustrated pages are retained for 46 entries. Nos. 33, 43, and 44 have no illustration in this held volume; no. 33 points to a photograph in Salvesen 1998, while nos. 43–44 list none. The edition text is a working digital extraction and still needs line-by-line page proofing; source descriptions, commentary, and indexes are open.
+- Bhayro, Ford, Levene, and Saar’s 2018 Berlin catalogue: all 169 numbered catalogue entries are retained as 170 private source-appearance extracts (entry 168 represents at least two bowls), with 973 additional short source-attributed factual claims. The 16 selected edition sections are retained in full on 17 appearances; 15 contain separately indexed working English translation and Latin-script transliteration blocks. Eighteen private page images cover 17 appearances. Edition XVI is pseudo-script and has no translation. Some selected sections cover fragments from more than one inventory number within one catalogue entry. The generic `summary` text type stores each full protected catalogue or edition extract because the current schema lacks dedicated types; their locators and notes identify them precisely. These text-layer extracts have not been proofread against every printed page.
 
 These born-digital text-layer extractions have not had page-by-page scholarly proofing. Damaged lines, word spacing, restoration marks, typography, commentary, linguistic notes, introductory material, and indexes still need extraction or review.
 
 | Capture | Source | Appearances | Text rows | Media rows |
 |---|---|---:|---:|---:|
-| CAP-DBB06BEA4670 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descripti… | 170 | 0 | 0 |
+| CAP-DBB06BEA4670 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descripti… | 170 | 217 | 18 |
 | CAP-0D9545A92AFD | The Bible in the Bowls: A Catalogue of Biblical Quotations in Published … | 134 | 137 | 0 |
 | CAP-2861B06070B4 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Pr… | 68 | 28 | 96 |
 | CAP-295A7FE7BF01 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One | 64 | 128 | 90 |
@@ -61,6 +62,10 @@ These born-digital text-layer extractions have not had page-by-page scholarly pr
 ## Next extraction priority
 
 1. Finish Jena entry texts, including the Mandaic and Syriac-script sections with separate extraction methods, and resolve the missing entry 69 appearance from the source.
-2. Extract the Berlin catalogue, the largest complete held edition still without bowl-level text/media, followed by Pognon 1898 and the Jewish Aramaic curse-text corpus.
+2. Extract Pognon 1898 and the Jewish Aramaic curse-text corpus, then other zero-content held sources. Berlin has catalogue-level coverage and its selected editions, but its working readings need page proofing.
 3. Proof the working readings against printed pages and extract source descriptions, image descriptions, commentary, and intertexts into attributed fields.
 4. Expand the inventory to held PDF material outside the registered capture ledger, with page/content-level coverage and explicit absence reasons.
+
+## Current coverage proxy
+
+The 42 distinct PDF-linked sources include 33 with bowl appearances. Of these, 14 still have no source-linked text or media rows. Across 852 PDF-source appearances, 278 have a source-linked translation, 238 have an original-language rendering, 281 have an image record, and 220 have all three. These are inventory counts, not a percentage of scholarly completion: many sources are contextual, some catalogue entries were never translated or illustrated, and working readings still need page proofing. Berlin’s 169 catalogue entries are now privately available, while further fact extraction from their descriptions, cross-references, and edition commentary remains.

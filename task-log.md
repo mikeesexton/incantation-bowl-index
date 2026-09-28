@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Berlin catalogue private extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (217 protected text rows, 18 media rows and 973 short factual claims) — state digest `cdda1a38bc77`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; receipt hash verified
+
+- Extracted all 169 numbered Berlin catalogue entries into 170 Mike-only appearance-linked full extracts, retaining entry 168's two minimum bowl objects separately. Stored the full 16 selected-edition sections on 17 appearances and separately indexed 15 English translations and 15 Latin-script transliterations. Retained 18 photographed figure pages covering 17 appearances, including both sides/views where provided. Added 973 page-located short factual claims. A hash-checked protected manifest and 18 local image derivatives remain outside Git; checked-in receipts record hashes and counts.
+- Rebuilt the local Mike Access snapshot: 941/941 stored text rows, 731/731 media rows, 384 local images, and all 59 captures, with 7/7 private checks passing. The held-PDF audit now shows 14 of 33 appearance-bearing PDF sources with no text/media; 220 of 852 PDF-source appearances have translation, original-language rendering, and image records. These are inventory proxies, not proofreading or completeness certificates.
+- The schema's `summary` type holds full protected catalogue and selected-edition extracts with precise locators and notes. The PDF text-layer readings and automatic section boundaries need page proofing. Continue with Pognon 1898, the Jewish Aramaic curse corpus, and Jena's remaining texts; then deepen Berlin's commentary, cross-references and role-specific name facts.
+
 ## 2026-09-28 — Codex — Public Bowlam statistics refresh staged
 
 **Claimed:** ACCESS-008 maintenance

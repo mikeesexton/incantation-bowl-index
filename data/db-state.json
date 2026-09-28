@@ -1,8 +1,7 @@
 {
-  "corpus_digest": "470f16c0cd0dffb22db94e877b6e7b3808aa953eb584d53a82d71c8f0d2d17ff",
+  "corpus_digest": "cdda1a38bc7724bcf9bc3925ea2cdf3f4a9adaab62d0030a7030e0349155ebbf",
   "migrations": 18,
-  "note": "Public Bowlam aggregate page rebuilt from current corpus; deployment awaits Cloudflare sign-in",
-  "recorded_at": "2026-09-28T14:39:27+00:00",
+  "recorded_at": "2026-09-28T15:22:48+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -35,8 +34,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "660ecef3de9befa04bf8ce97bde791050ccb58e5c7812e81a7ae30c4d1a3d846",
-      "rows": 7980
+      "digest": "2f915310f49f1df4056e2d1fd16889af26953a5e41fbbe59c3a5f31742fc3bdf",
+      "rows": 8953
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -75,8 +74,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "73b6c8aeabef301136cd483baa8e0e91d7ba0dc36a38c0f86ba22f708a17fe7e",
-      "rows": 713
+      "digest": "18309c3007a31bd214434b51b8c90ed2d703bb6d9abc631e3c8d1689f5926e12",
+      "rows": 731
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -147,8 +146,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "b888c0405f9dffc1f8849d789e696454f16af544f54c60f8721d32fc1b2c2592",
-      "rows": 724
+      "digest": "e4e0635082d18b4349f7717af5abeac7705cd5ac230a5ccd50547763b30a7232",
+      "rows": 941
     }
   }
 }
