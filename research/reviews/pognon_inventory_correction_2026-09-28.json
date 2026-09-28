@@ -1,0 +1,12 @@
+{
+  "source_id": "SRC-E7D5F020B31C",
+  "capture_id": "CAP-EED4A3FE59EC",
+  "capture_sha256": "667521b689e12947f7911d9542b7fc0e57bee1179f0c057ec7d59de7ee5ed44a",
+  "corrects_review": "research/reviews/researcher_pdf_batch_evidence_2026-09-12.json",
+  "finding": "The complete volume has 31 separately numbered edited cup sections, not 30. No. 31 begins on printed p. 88 (PDF p. 99) and continues through printed p. 92. The held plates show numbered drawings 1–30 only; no plate 31 was found.",
+  "verification": [
+    "Rendered and visually checked PDF p. 99 for the distinct no. 31 heading and cup description.",
+    "Inspected the plate sequence: PDF pp. 118–176 carry plates 1–30 on alternating pages; intervening versos and PDF p. 177 are blank."
+  ],
+  "action": "Added a separate source appearance and object candidate for no. 31 without inferring any modern collection identity."
+}

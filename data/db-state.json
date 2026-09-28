@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "ac42a60f6ac427fc57329bce72f28b73883781221c01226e8ab62d73c01cba38",
+  "corpus_digest": "461630161ad1a17e344c9a6ea01054c53c04469f9ef15dc1c76825172ede2cfc",
   "migrations": 18,
-  "note": "Levene 2013 private content extraction for 30 appearances",
-  "recorded_at": "2026-09-28T15:31:55+00:00",
+  "note": "Pognon numbered-section OCR, plate facsimiles, and no. 31 correction",
+  "recorded_at": "2026-09-28T15:42:28+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "54f15b92240791e6c3f0e1db1def2e13282174a3d9476d4f98f6b76d7620da54",
-      "rows": 2358
+      "digest": "c78b9ae2b20b8df9efb62d8e51f7a7f5fdbf9d2461ab5f869a4cbbbded550ec2",
+      "rows": 2359
     },
     "appearances": {
-      "digest": "9cae5a09ed49d53562fd0f4fbc5865e4a71f9919e3e837a024f2249d135573be",
-      "rows": 2358
+      "digest": "42c1685b2cc5868d760ae1b4605ef737c8b5812f39b333f5b35e2327d82d575b",
+      "rows": 2359
     },
     "captures": {
       "digest": "3216f916bc07362284573970d7897832512f12ea888186d8f2f7033aa53d1b14",
@@ -35,8 +35,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "28a8ae3690a27b6d4958de8c81aae47044d7f81b91d8ba68f54b9f57ee5abe09",
-      "rows": 8980
+      "digest": "d2e2d3a6cfc1215d56a6c44dd6d7d3d9aa3ef68b0f332b507bbfa369ca449c4f",
+      "rows": 9011
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,8 +63,8 @@
       "rows": 215
     },
     "identifiers": {
-      "digest": "0e197a8a6e0cffea952c202c5957c4e752a688566cbbcc840db56ce71666aa82",
-      "rows": 4990
+      "digest": "d031c5789b6cf0e9a26d2fd6be724a48288a0252a4108ee1b3058f966c86a43b",
+      "rows": 4991
     },
     "leads": {
       "digest": "b1f18976ab16a2d8a55a66d0db4f9d2db9ba79ec20290ae8d9bccf739504c865",
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "9cf40818b6515f9e18138a5545dcaec0e279feff45dbc73e7f3f0921675e7a06",
-      "rows": 768
+      "digest": "a5359fb87a3850563d2dd9f6e65a2129d289dc5a8b5372df94f72dbddb53f7aa",
+      "rows": 904
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -99,8 +99,8 @@
       "rows": 1
     },
     "objects": {
-      "digest": "be8b3516ea3f0accd564b39a7d98ad5cd85bee96c1057415fbc1ffba210cfa4f",
-      "rows": 2058
+      "digest": "151150c2224087a87dc7e11ea1bc525ee38eec3928aff63faad20d4f54cd5630",
+      "rows": 2059
     },
     "publication_assessments": {
       "digest": "bd06d9dd19cdd7729502512395fe53464eb9901d7aa5edf1b52c6577900951fe",
@@ -147,8 +147,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "6743d9355c954e187381ed6aa3e5eee341248a9a94977f0560e4fa6bb365a174",
-      "rows": 1031
+      "digest": "8c3f2e3267974473e893afdd5e17779ae156534e1d9c0809708c261a284d6a61",
+      "rows": 1062
     }
   }
 }

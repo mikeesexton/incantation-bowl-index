@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-28T15:31:21+00:00`
+Generated: `2026-09-28T15:42:10+00:00`
 
 ## Portfolio status
 
@@ -73,9 +73,9 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 
 | Measure | Current |
 |---|---:|
-| Candidate source records | 2058 |
-| Working physical identity hypotheses (all statuses) | 1710 |
-| Source appearances | 2358 |
+| Candidate source records | 2059 |
+| Working physical identity hypotheses (all statuses) | 1711 |
+| Source appearances | 2359 |
 | Sources | 954 |
 | Source documents with current assessments | 52 |
 | Source documents assessed complete | 49 |
@@ -87,19 +87,19 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 | Review required (missing or no longer valid) | 266 |
 | Existing reviews requiring revalidation | 46 |
 | Substantive conflict instances | 16 across 14 identities |
-| All identities with a publication reference | 926/1710 (54.2%) |
-| Probable/confirmed identities with a publication reference | 798/1052 (75.9%) |
-| Probable/confirmed identities reviewed as having no known edition | 0/1052 (0.0%) |
-| Probable/confirmed identities with a publication disposition | 798/1052 (75.9%) |
+| All identities with a publication reference | 927/1711 (54.2%) |
+| Probable/confirmed identities with a publication reference | 799/1053 (75.9%) |
+| Probable/confirmed identities reviewed as having no known edition | 0/1053 (0.0%) |
+| Probable/confirmed identities with a publication disposition | 799/1053 (75.9%) |
 | Identities with a translation | 311 |
 | Scan-checked normalized reading texts | 39 |
 | Publication keys resolved to the publication they designate | 33/33 |
-| Objects under a resolved publication | 895/895 |
+| Objects under a resolved publication | 896/896 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 268 |
-| Media records with a non-unknown rights status | 459/768 (59.8%) |
-| Media with a current ledger entry | 354/768 |
+| Media records with a non-unknown rights status | 595/904 (65.8%) |
+| Media with a current ledger entry | 354/904 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 29 |
 | Open or active leads | 22 |
@@ -111,12 +111,12 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1277 | 74.7% |
+| Location | 1277 | 74.6% |
 | Provenance | 371 | 21.7% |
 | Dating | 484 | 28.3% |
-| Dimensions | 514 | 30.1% |
+| Dimensions | 514 | 30.0% |
 | Material | 410 | 24.0% |
-| Language | 1026 | 60.0% |
+| Language | 1027 | 60.0% |
 | Script | 94 | 5.5% |
 | Text Edition | 268 | 15.7% |
 | Translation | 311 | 18.2% |
@@ -128,7 +128,7 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 552 | 32.3% |
+| Publication | 553 | 32.3% |
 | Client | 225 | 13.2% |
 | Biblical Intertexts | 171 | 10.0% |
 | Condition | 142 | 8.3% |
@@ -315,7 +315,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
   - Done when: Each of Montgomery's 40 bowl texts has a checked transliteration or a precise reason it cannot yet be captured.
 - [ ] **TEXT-004 — Capture held editions' inscriptions and translations for Mike Access** · In progress · Research
   - Done when: For each lawfully held edition, Mike Access has the available inscription, scholarly transcription or transliteration, scholarly translation and bowl image, or a documented item-specific reason for absence. Every private capture is attributed and page-located; shared/public release decisions remain independent.
-  - Evidence/status: The 11 September complete-volume batches indexed 450 appearances with volume and page locators but left held text largely unextracted. A 28 September held-PDF audit (research/audits/held_pdf_content_extraction_2026-09-28.md) tracks the remaining source-level gaps. Cook 1992 and Burberry 2020 have private content; Burberry has all 25 ACB plates, 26 transcription rows covering 25 bowls and 25 translation rows covering the 24 translated bowls. Both complete Aramaic Bowl Spells volumes now have private translation and working Hebrew-script transcription rows for all 119 JBA entries, 179 retained photograph/figure page images, plus 119 dimensions, 113 client descriptions and 38 biblical-quotation lists. The Jena collection volume now has 96 retained figure pages covering all 68 previously indexed appearances, plus working translation and transcription rows for 14 first-section entries; its remaining texts and omitted entry 69 require further work. These born-digital text-layer readings are not independently page-proofread; damaged lines, word spacing, restoration marks, typography, descriptive prose, commentary and indexes still need review/extraction. Mike directed that scholarly transcriptions, translations and images be retained for his private research view from lawfully held sources. Protected payloads and manifests stay outside Git. Moriggi 2014 now contributes private English translations and Latin-script Syriac transliterations for all 49 numbered bowls, plus 58 retained image pages for 46; nos. 33, 43 and 44 have no illustration in the held volume. The two-column text extraction is working material, not independently page-proofread. Berlin 2018 now has private full-catalogue extracts for all 169 entries across 170 appearances, 973 short source-attributed factual claims, full selected-edition sections, 15 separately indexed working translations and transliterations, and 18 retained figure-page images. The schema records full catalogue and edition extracts under summary with clear locators and notes. The held-PDF proxy now has 14 of 33 appearance-bearing sources with zero text/media; 220 of 852 PDF-source appearances have a translation, original-language rendering and image record. Levene 2013 now adds full private edited sections, working English translations and Hebrew-script transcriptions for all 30 indexed appearances, plus 37 retained photo-page links covering its 14 newly edited bowls and 27 short factual claims. The PDF text layer interleaves the two scripts, so the separated readings need page proofing; the complete section is retained for each appearance. The held-PDF proxy now has 13 of 33 appearance-bearing sources with zero text/media; 234 of 852 PDF-source appearances have translation, original-language rendering and image. Pognon 1898 needs page-based OCR because the held scan has a damaged text layer; the rest of Jena and page proofing also remain.
+  - Evidence/status: The 11 September complete-volume batches indexed 450 appearances with volume and page locators but left held text largely unextracted. A 28 September held-PDF audit (research/audits/held_pdf_content_extraction_2026-09-28.md) tracks the remaining source-level gaps. Cook 1992 and Burberry 2020 have private content; Burberry has all 25 ACB plates, 26 transcription rows covering 25 bowls and 25 translation rows covering the 24 translated bowls. Both complete Aramaic Bowl Spells volumes now have private translation and working Hebrew-script transcription rows for all 119 JBA entries, 179 retained photograph/figure page images, plus 119 dimensions, 113 client descriptions and 38 biblical-quotation lists. The Jena collection volume now has 96 retained figure pages covering all 68 previously indexed appearances, plus working translation and transcription rows for 14 first-section entries; its remaining texts and omitted entry 69 require further work. These born-digital text-layer readings are not independently page-proofread; damaged lines, word spacing, restoration marks, typography, descriptive prose, commentary and indexes still need review/extraction. Mike directed that scholarly transcriptions, translations and images be retained for his private research view from lawfully held sources. Protected payloads and manifests stay outside Git. Moriggi 2014 now contributes private English translations and Latin-script Syriac transliterations for all 49 numbered bowls, plus 58 retained image pages for 46; nos. 33, 43 and 44 have no illustration in the held volume. The two-column text extraction is working material, not independently page-proofread. Berlin 2018 now has private full-catalogue extracts for all 169 entries across 170 appearances, 973 short source-attributed factual claims, full selected-edition sections, 15 separately indexed working translations and transliterations, and 18 retained figure-page images. The schema records full catalogue and edition extracts under summary with clear locators and notes. The held-PDF proxy now has 14 of 33 appearance-bearing sources with zero text/media; 220 of 852 PDF-source appearances have a translation, original-language rendering and image record. Levene 2013 now adds full private edited sections, working English translations and Hebrew-script transcriptions for all 30 indexed appearances, plus 37 retained photo-page links covering its 14 newly edited bowls and 27 short factual claims. The PDF text layer interleaves the two scripts, so the separated readings need page proofing; the complete section is retained for each appearance. The held-PDF proxy now has 13 of 33 appearance-bearing sources with zero text/media; 234 of 852 PDF-source appearances have translation, original-language rendering and image. Pognon 1898–99 now has 31 numbered source appearances after discovery of a previously omitted no. 31 on printed p. 88. All 31 have private working OCR section extracts and 106 linked text-page facsimiles; 30 bowl plate drawings and 29 printed diameter facts are retained. No. 31 has no numbered plate in the held scan. The Mandaic OCR encoding is corrupt, so Pognon does not yet count toward separately indexed translation or original-language reading coverage; its French translation and source transcription remain accessible in section facsimiles for manual separation and proofing. The held-PDF proxy now has 12 of 33 appearance-bearing sources with zero text/media; 234 of 853 PDF-source appearances have translation, original-language rendering and bowl visual. The rest of Jena, other held sources, and page proofing remain.
 - [x] **TEXT-005 — Account for every main Montgomery entry and source exception** · Done · Research
   - Done when: All forty main entries have explicit publication, translation and register status; appendix material is separately scoped.
   - Evidence/status: 40-row cohort report: 35 checked reading texts, zero OCR drafts, and 5 source-documented cases with no separate translation (18, 21, 23, 27, 33). Appendix 42 remains a separate uncertain possible bowl candidate; Appendix 41 is explicitly a skull.
@@ -507,7 +507,7 @@ Overall gate: **NOT READY**
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have a research-complete publication disposition: an evidence-backed publication link or an explicit sourced no-known-edition finding. Catalogue silence alone does not count. Current: 798/1,052 (75.9%), including zero no-known-edition findings. — current `75.9%`; target `>= 80.0%`.
 - [x] At least half of probable/confirmed identities retain an actual publication link, preventing the disposition gate from being satisfied primarily by negative findings. Current: 798/1,052 (75.9%). — current `75.9%`; target `>= 50.0%`.
-- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `41.5%`; target `>= 100.0%`.
+- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `35.3%`; target `>= 100.0%`.
 
 ### Required setup tasks
 

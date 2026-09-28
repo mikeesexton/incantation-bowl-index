@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Pognon numbered-section and plate extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (one omitted candidate, 31 private OCR section rows, 136 page-media rows and 29 diameter claims) — state digest `461630161ad1`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; manifest hash verified
+
+- Corrected the old 30-entry inventory after visually checking Pognon's separately headed no. 31 on printed p. 88 (PDF p. 99). Added no. 31 as a separate source-attributed object candidate without an inferred identity. The held plates cover nos. 1–30; no. 31 has no corresponding numbered plate.
+- Retained working OCR for all 31 numbered French edition sections, 106 linked text-page facsimiles and 30 bowl-plate drawings, with exact printed and PDF page locators. Captured 29 printed plate diameters; no. 30 is an unmeasured fragment plate. The protected manifest and 136 private page derivatives remain outside Git; checked-in receipts record hashes, counts and the source-capture identity.
+- Rebuilt Mike Access with 1,062/1,062 texts, 904/904 media rows, 557 local page images and all 59 captures, passing 7/7 private checks. All 31 new OCR rows are visible privately and withheld in the public projection. The held-PDF audit now shows 12 of 33 appearance-bearing sources without content and 234 of 853 appearances with translation, original-language rendering and a bowl visual.
+- The scan's Mandaic OCR is corrupt; the per-bowl OCR holds the French translation and commentary but is not classified as a checked standalone translation or transcription. Next, separate and proof the French translations from facsimiles, transcribe Mandaic from the plates, and continue Jena's remaining entries and other zero-content sources.
+
 ## 2026-09-28 — Codex — Levene curse-text private extraction
 
 **Claimed:** TEXT-004
