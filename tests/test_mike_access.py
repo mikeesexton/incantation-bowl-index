@@ -53,6 +53,20 @@ class MikeAccessBuildTests(unittest.TestCase):
         self.assertEqual(snapshot["access"]["audience"], "Mike alone")
         self.assertTrue(all(check["passed"] for check in snapshot["audit_checks"]))
 
+    def test_every_recorded_source_capture_is_packaged(self):
+        snapshot = json.loads((build.OUT / "private-snapshot.json").read_text(encoding="utf-8"))
+        manifest = json.loads((build.OUT / "data" / "manifest.json").read_text(encoding="utf-8"))
+        captures = json.loads((build.OUT / "data" / "captures.json").read_text(encoding="utf-8"))["rows"]
+        self.assertEqual(len(captures), snapshot["access"]["source_captures_held"])
+        self.assertEqual(snapshot["access"]["source_captures_packaged"], len(captures))
+        self.assertEqual(manifest["source_captures_url"], "./data/captures.json")
+        self.assertTrue(all((build.OUT / row["url"].removeprefix("./")).is_file()
+                            for row in captures))
+        self.assertTrue(any(row["byte_length"] > 25 * 1024 * 1024 for row in captures))
+        shell = (build.OUT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('href="#/scholarship"', shell)
+        self.assertIn('!location.hash.startsWith("#/scholarship")', shell)
+
 
 class MikeAccessHostLockTests(unittest.TestCase):
     worker_path = ROOT / "site" / "functions" / "mike" / "[[path]].js"

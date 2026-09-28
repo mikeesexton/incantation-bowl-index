@@ -18,17 +18,21 @@ DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 class PrivateResearchProjection(Projection):
     """A private reader snapshot; never use it in a shared or public builder."""
 
-    def __init__(self, conn, media_root=None, capture_base=None):
+    def __init__(self, conn, media_root=None, capture_base=None, capture_urls=None):
         super().__init__(conn)
         self.media_root = Path(media_root or DEFAULT_PRIVATE_MEDIA_ROOT)
         self.capture_base = capture_base
         self.capture_links = {}
-        if capture_base:
+        if capture_base or capture_urls:
             for row in conn.execute(
                 "SELECT id,source_id FROM captures ORDER BY retrieved_at,id"
             ):
                 if row["source_id"]:
-                    self.capture_links[row["source_id"]] = capture_base + row["id"]
+                    url = (capture_urls or {}).get(row["id"])
+                    if url is None and capture_base:
+                        url = capture_base + row["id"]
+                    if url:
+                        self.capture_links[row["source_id"]] = url
 
     def guard(self, name, rows):
         """Keep local capture paths out of the browser even in the private view."""

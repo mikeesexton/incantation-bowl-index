@@ -45,3 +45,12 @@ the complete article remains linked from the local reader. The content-free
 [receipt](../receipts/cook_1992_khafaje_private_2026-09-28.json) binds both to
 the held PDF and protected ingestion manifest. The original-script OCR was
 unusable, so the inscription still needs visual transcription from the page.
+
+## Source delivery update
+
+The later 28 September `ACCESS-010` session packaged and hash-checked all 59
+registered captures in the ignored local static Mike build. The local research
+console and static reader now list every capture, including the two without a
+source assignment. The remote deployment remains pending a Mike-only identity
+policy and private delivery for nine PDFs larger than Cloudflare Pages' 25 MiB
+per-asset limit. See the [delivery roadmap](../../docs/mike_access_source_delivery.md).

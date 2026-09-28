@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Mike Access local source delivery
+
+**Claimed:** ACCESS-010
+**Corpus:** unchanged — state digest `a311407cc840`
+**Tests:** 327 Python and 21 JavaScript passed; archive valid; Mike build 7/7 private checks passed with 59/59 captures; `git diff --check` clean
+
+- Audited 59 registered captures (762,231,658 recorded bytes, 55 distinct hashes) from 56 sources; two captures have no source assignment. Nine PDFs exceed Cloudflare Pages' current 25 MiB per-asset limit. Added a private capture inventory to the local console and static Mike reader. The ignored local build now packages and SHA-256 checks all 59 files, exposes each by opaque ID in a Scholarship source list, and points linked text/edition rows to their local copies. Saved HTML downloads as binary rather than running in the site's origin. All 360 texts and 380 media rows remain in Mike Access.
+- Wrote a staged [delivery roadmap](docs/mike_access_source_delivery.md). Remote availability still requires a private object bucket, authenticated range-capable capture route, remote build mode, and a verified Mike-only Access policy with alias denial. The current local package is too large for direct Pages promotion; nothing was deployed or pushed. Shared/public projections remain unchanged.
+- Next: implement and test private R2-backed remote capture delivery and its manifest sync, then verify the identity gate and parity before promotion.
+
 ## 2026-09-28 — Codex — Burberry original-script extraction
 
 **Claimed:** TEXT-004

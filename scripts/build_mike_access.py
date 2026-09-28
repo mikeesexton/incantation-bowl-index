@@ -2,8 +2,8 @@
 
 This is not a release builder. It uses ``PrivateResearchProjection`` and retains
 every stored text, recorded media row and source wording available to Mike's
-private reader. Archived source scans are still served by the localhost reader
-and are not packaged in this static snapshot. The generated directory contains protected third-party material,
+private reader. Archived source scans are packaged by opaque capture ID in the
+local snapshot. The generated directory contains protected third-party material,
 is ignored by Git, and must never be promoted until a Cloudflare Access policy
 admits Mike alone. Any shared or public reader must use ``Projection`` instead.
 """
@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from bowl_index.db import PROJECT_ROOT
+from bowl_index.private_captures import ARCHIVE_ROOT, capture_filename, capture_inventory, checked_capture_path
 from bowl_index.private_projection import PrivateResearchProjection, private_manifest
 from bowl_index.projection import PROJECTION_COLUMNS
 from bowl_index.state import corpus_fingerprint
@@ -42,10 +43,14 @@ SECRET_PATTERNS = (
 
 
 def digest(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    hash_ = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            hash_.update(chunk)
+    return hash_.hexdigest()
 
 
-def inventory(projection, tables, manifest):
+def inventory(projection, tables, manifest, captures):
     checks = []
 
     def record(name, passed, detail):
@@ -82,7 +87,8 @@ def inventory(projection, tables, manifest):
 
     staged_text = "\n".join(
         path.read_text(encoding="utf-8", errors="ignore")
-        for path in sorted(OUT.rglob("*")) if path.is_file()
+        for path in sorted(OUT.rglob("*"))
+        if path.is_file() and path.suffix in {".json", ".js", ".css", ".html", ".txt"}
     )
     bad_patterns = [pattern.pattern for pattern in SECRET_PATTERNS if pattern.search(staged_text)]
     record("local_paths_and_secrets_absent", not bad_patterns,
@@ -91,6 +97,14 @@ def inventory(projection, tables, manifest):
     private_paths = [path for path in projection.private_storage if path and path in staged_text]
     record("capture_storage_paths_absent", not private_paths,
            "%d private capture paths tested" % len(projection.private_storage))
+
+    packaged = [(row, OUT / "captures" / capture_filename(row)) for row in captures]
+    capture_hashes_ok = all(
+        path.is_file() and path.stat().st_size == row["byte_length"]
+        and digest(path) == row["sha256"] for row, path in packaged
+    )
+    record("all_captures_packaged", capture_hashes_ok and len(packaged) == projection.capture_count,
+           "%d/%d captures have exact archived bytes" % (len(packaged), projection.capture_count))
 
     if not all(check["passed"] for check in checks):
         failed = ", ".join(check["name"] for check in checks if not check["passed"])
@@ -109,10 +123,10 @@ def inventory(projection, tables, manifest):
         "corpus_state_digest": corpus_fingerprint(projection.conn)["corpus_digest"],
         "access": {
             "audience": "Mike alone",
-            "status": "pending_single_user_access_gate_and_source_document_delivery",
+            "status": "local_complete_remote_pending_single_user_gate_and_private_object_storage",
             "shared_or_public_use": "forbidden; rebuild with Projection",
             "source_captures_held": projection.capture_count,
-            "source_captures_packaged": 0,
+            "source_captures_packaged": len(packaged),
         },
         "projection_counts": {name: len(rows) for name, rows in tables.items()},
         "private_counts": projection.gate_counts(tables["texts"]),
@@ -129,13 +143,24 @@ def main() -> None:
 
     conn = sqlite3.connect("file:%s?mode=ro" % args.db, uri=True)
     conn.row_factory = sqlite3.Row
-    projection = PrivateResearchProjection(conn)
+    captures = capture_inventory(
+        conn, lambda row: "./captures/" + capture_filename(row)
+    )
+    projection = PrivateResearchProjection(
+        conn, capture_urls={row["id"]: row["url"] for row in captures}
+    )
     tables = projection.tables()
     generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     if OUT.exists():
         shutil.rmtree(OUT)
     (OUT / "data").mkdir(parents=True)
+    (OUT / "captures").mkdir()
+    for row in conn.execute("SELECT id,storage_path,mime_type,byte_length,sha256 FROM captures"):
+        source = checked_capture_path(row, ARCHIVE_ROOT)
+        if source.stat().st_size != row["byte_length"]:
+            raise SystemExit("refusing to write: capture length mismatch " + row["id"])
+        shutil.copy2(source, OUT / "captures" / capture_filename(row))
 
     # PrivateResearchProjection uses an API path for local derivatives. Static
     # Mike Access copies those exact files into its ignored build directory.
@@ -161,6 +186,10 @@ def main() -> None:
         for name, rows in tables.items()
     }
     manifest["served_from"] = "Mike-only authenticated research surface"
+    manifest["source_captures_url"] = "./data/captures.json"
+    (OUT / "data" / "captures.json").write_text(
+        json.dumps({"rows": captures}, ensure_ascii=False), encoding="utf-8"
+    )
 
     written = 0
     for name, rows in tables.items():
@@ -191,7 +220,7 @@ def main() -> None:
         SHELL.replace("__GENERATED__", generated_at), encoding="utf-8")
 
     try:
-        snapshot = inventory(projection, tables, manifest)
+        snapshot = inventory(projection, tables, manifest, captures)
     except ValueError as error:
         shutil.rmtree(OUT)
         raise SystemExit("refusing to write: %s" % error)
@@ -213,6 +242,8 @@ def main() -> None:
     print("  private audit %d/%d checks passed  ·  snapshot %s" % (
         sum(check["passed"] for check in snapshot["audit_checks"]),
         len(snapshot["audit_checks"]), snapshot["snapshot_id"][:12]))
+    print("  source captures %d/%d packaged locally" % (
+        snapshot["access"]["source_captures_packaged"], projection.capture_count))
     print("\nNot deployed. Promote only after bowlam.com/mike* is restricted to Mike alone")
     print("and the Pages aliases are covered by the host lock. Any second user requires")
     print("the shared Projection instead.")
@@ -234,12 +265,14 @@ SHELL = """<!doctype html>
 <header class="preview-bar">
   <strong><span class="preview-seal" aria-hidden="true">&#x10840;</span>Bowlam</strong>
 <small>Mike Access &middot; structured personal research bank</small>
+<nav aria-label="Mike Access sections"><a href="#/explore">Explore</a> &middot;
+  <a href="#/scholarship">Scholarship and source files</a></nav>
 </header>
 <main><section id="explore-view" class="reading-room" aria-labelledby="explore-title"></section></main>
 <footer class="preview-foot">
   <p>Private research access for Mike alone. This surface includes all stored
-     text rows and recorded image links; archived source scans remain in the
-     local vault. It is not a public or shared release.</p>
+     text rows, recorded image links, and locally packaged archived source files.
+     It is not a public or shared release.</p>
   <p><a href="private-snapshot.json">Private snapshot inventory</a>
      &middot; built __GENERATED__.</p>
 </footer>
@@ -252,7 +285,9 @@ SHELL = """<!doctype html>
 <script>
   addEventListener("DOMContentLoaded", function () {
     function go() {
-      if (!location.hash.startsWith("#/explore")) history.replaceState(null, "", "#/explore");
+      if (!location.hash.startsWith("#/explore") &&
+          !location.hash.startsWith("#/scholarship"))
+        history.replaceState(null, "", "#/explore");
       window.ReadingRoom.render();
     }
     addEventListener("hashchange", go); go();

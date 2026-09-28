@@ -19,6 +19,7 @@ from .dedupe import pair_evidence
 from .identity import CORE_COVERAGE, identity_rows
 from .projection import PROJECTION_COLUMNS
 from .private_projection import PrivateResearchProjection, private_manifest
+from .private_captures import capture_inventory
 from .ids import new_id
 from .proofreading import current_text_reviews
 from .rights import current_media_reviews
@@ -204,6 +205,10 @@ class CorpusCatalog:
                     row["search_blob"] += " " + " ".join(labels).casefold()
             generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
             manifest = private_manifest(projection, projection_tables, generated_at)
+            capture_rows = capture_inventory(
+                conn, lambda row: "/api/private-captures/" + row["id"]
+            )
+            manifest["source_captures_url"] = "/api/private-captures"
             # The introduction counts edition pointers as well as stored text rows.
             # Preserve the research console's narrower has_text_edition / missing
             # text filter. A generic scholarly mention is not an edition.
@@ -274,6 +279,7 @@ class CorpusCatalog:
             self.member_to_identity = member_to_identity
             self.projection_tables = projection_tables
             self.projection_manifest = manifest
+            self.private_capture_rows = capture_rows
             self.intro_snapshot = payload
 
     @_catalog_locked
@@ -669,6 +675,8 @@ def make_handler(catalog, token):
                     self._json(result) if result else self._error(404, "Identity not found")
                 elif path == "/api/reader/manifest":
                     self._json(catalog.reader_manifest())
+                elif path == "/api/private-captures":
+                    self._json({"rows": catalog.private_capture_rows})
                 elif path.startswith("/api/reader/"):
                     result = catalog.reader_table(path.rsplit("/", 1)[-1], params)
                     self._json(result) if result else self._error(404, "No such projected table")

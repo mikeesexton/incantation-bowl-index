@@ -84,7 +84,11 @@ its text and edition pointer opens that archived file through
 capture ID, resolves files inside the private archive, and streams them with
 `Cache-Control: no-store`. Archived PDFs let Mike inspect inscriptions, editions,
 translations and plates before their contents are structured as bowl-level rows.
-The static Mike build does not contain these source scans; see the
+The local static Mike build now packages all registered captures in its ignored
+private directory and checks their hashes. Both private readers show a source
+list in Scholarship, including captures not assigned to a source. The remote
+surface still needs private large-file delivery and Mike-only authentication;
+see the [source delivery roadmap](mike_access_source_delivery.md) and
 [content-coverage audit](../research/audits/mike_access_content_coverage_2026-09-28.md).
 
 ## Review safety

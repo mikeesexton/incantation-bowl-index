@@ -1,4 +1,5 @@
 import io
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -119,6 +120,10 @@ class PrivateReaderTests(unittest.TestCase):
             self.assertEqual(text["access_url"], "/api/private-captures/CAP-ABCDEF123456")
             self.assertEqual(catalog.private_capture("CAP-ABCDEF123456"),
                              (capture.resolve(), "application/pdf"))
+            self.assertEqual(catalog.reader_manifest()["source_captures_url"],
+                             "/api/private-captures")
+            self.assertEqual(catalog.private_capture_rows[0]["url"],
+                             "/api/private-captures/CAP-ABCDEF123456")
             self.assertIsNone(catalog.private_capture("../../document.pdf"))
             self.assertNotIn(str(archive), str(catalog.reader_manifest()))
 
@@ -140,6 +145,17 @@ class PrivateReaderTests(unittest.TestCase):
             self.assertIn(b"200 OK", headers)
             self.assertIn(b"Cache-Control: no-store", headers)
             self.assertEqual(body, capture.read_bytes())
+
+            index_socket = Socket()
+            index_socket.input = io.BytesIO(
+                b"GET /api/private-captures HTTP/1.0\r\nHost: localhost\r\n\r\n"
+            )
+            make_handler(catalog, "test-token")(
+                index_socket, ("127.0.0.1", 12345), None
+            )
+            index_headers, index_body = index_socket.output.getvalue().split(b"\r\n\r\n", 1)
+            self.assertIn(b"200 OK", index_headers)
+            self.assertEqual(json.loads(index_body)["rows"][0]["id"], "CAP-ABCDEF123456")
 
 
 if __name__ == "__main__":

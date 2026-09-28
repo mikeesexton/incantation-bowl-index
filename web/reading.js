@@ -33,6 +33,12 @@
       fetch(source(name)).then(r => r.json()).then(payload => [name, payload.rows])));
     fetched.forEach(([name, rows]) => { data[name] = rows; });
     data.manifest = manifest;
+    data.captures = privateResearch() && manifest.source_captures_url
+      ? await fetch(manifest.source_captures_url).then(r => {
+          if (!r.ok) throw new Error("Private source inventory unavailable");
+          return r.json();
+        }).then(payload => payload.rows)
+      : [];
 
     // Index by object, then roll up to the identity that owns the object.
     const owner = {};
@@ -549,11 +555,8 @@
               <strong>${m.media_private_rows}</strong> are private-only because no public reuse
               approval is recorded. Publication links connect ${publicationObjects.size.toLocaleString()}
               candidate records to ${publicationIdentities.size.toLocaleString()} bowl identities.</p>
-            <p><strong>${m.source_captures_recorded_rows || 0}</strong> source captures are held in
-              the private vault. ${m.source_capture_sources_linked
-                ? `${m.source_capture_sources_linked} source records link to a local copy in this reader.`
-                : `This static snapshot does not package the source scans; open the local research console to consult them.`}
-              Recorded image links are not necessarily retained image files.</p>
+            <p><strong>${data.captures.length}</strong> retained source files can be opened from
+              the Scholarship source list. Recorded image links are not necessarily retained image files.</p>
           </details>` : `<p class="standfirst-note">Reuse terms appear with each included text
           or image. When modern wording cannot be shown, its citation and locator remain available.</p>
           <details class="about-preview"><summary>About this preview and its coverage</summary>
@@ -993,6 +996,21 @@
           museum, auction and dealer records that are sources but not scholarship.
           <strong>${held}</strong> are held here as a document; the rest are cited and unread.</p>
       </div>
+
+      ${privateResearch() ? `<section class="entry-block"><h2>Retained source files</h2>
+        <p class="entry-note">${data.captures.length} private captures are available here. Some
+          sources have more than one version; captures without a source assignment are shown too.</p>
+        <details class="scope-group"><summary>Browse the private source archive
+          <span>${data.captures.length}</span></summary>
+          <ul class="fact-list">${data.captures.map(row => {
+            const sourceRow = data.sourceById[row.source_id] || {};
+            const title = sourceRow.citation || sourceRow.title || "Unassigned capture";
+            const download = row.url.endsWith(".bin") ? " download" : "";
+            return `<li><a href="${esc(row.url)}" target="_blank" rel="noopener noreferrer"${download}>${esc(title)}</a>
+              <cite>${esc(row.id)} · ${(row.byte_length / 1048576).toFixed(1)} MiB ·
+                ${esc(row.mime_type || "file")}</cite></li>`;
+          }).join("")}</ul></details>
+      </section>` : ""}
 
       <section class="entry-block"><h2>How the field grew</h2>${growthChart(data.scholarship_decades)}</section>
 

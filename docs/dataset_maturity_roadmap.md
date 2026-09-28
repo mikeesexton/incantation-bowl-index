@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-28T12:01:50+00:00`
+Generated: `2026-09-28T12:09:49+00:00`
 
 ## Portfolio status
 
@@ -391,7 +391,7 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: Done 20 September 2026. bowlam.com/preview serves the expanded reviewed projection (252 published text rows and 298 approved media) behind a Cloudflare Access one-time-PIN policy on an allow-list; the free tier covers 50 named users. Built by scripts/build_scholar_preview.py from projection.Projection, the same release gate the file exporter and future public library use; Mike Access is a distinct private tier. Candidate a16b8f19061b was approved and deployed as production deployment a78d885f-18c7-46db-9c57-07f73ae1d211. Verified: bowlam.com remains public, bowlam.com/preview* redirects to Access including nested data paths, and the project and per-deployment Pages hosts answer 404 for preview paths.
 - [ ] **ACCESS-010 — Provide complete remote Mike Access** · In progress · Mike and engineering
   - Done when: Mike alone can reach the complete lawfully held research record remotely, including stored text, recorded images, and retained source scans; the identity policy admits no second user, alternate deployment hosts return 404, responses are private/no-store and noindex, and the private payload stays outside Git.
-  - Evidence/status: The local PrivateResearchProjection exposes all 360 stored text rows and 380 recorded image rows without public-release gates. The localhost research console now links registered source captures by opaque ID, while the static Mike snapshot still omits all 59 retained source files and includes 33 local image derivatives. The original content-coverage audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media rows; Burberry now has private text and image rows, reducing that zero-content cohort to 16. Remote access is not complete: it needs source-document delivery, private extraction of held inscriptions and translations, and a verified Mike-only identity policy before any deployment. The /mike host lock is checked in.
+  - Evidence/status: The local PrivateResearchProjection exposes all 360 stored text rows and 380 recorded image rows without public-release gates. The localhost research console streams registered source captures by opaque ID; its private reader lists all 59. The ignored local static Mike build now packages and hash-checks all 59 registered captures (762,231,658 recorded bytes, 55 distinct content hashes), including two without source assignment, as well as 33 local image derivatives. Nine PDFs exceed the current 25 MiB Pages per-asset limit, so the complete build is local-only and cannot simply be promoted to Pages. Remote access still needs private object storage, an authenticated capture route, a remote build mode, and verification that Cloudflare Access admits Mike alone with alternate hosts blocked. The /mike host lock is checked in. Other held-edition text and image extraction remains a separate backlog, not a prerequisite to delivery of the retained source files. See docs/mike_access_source_delivery.md.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
