@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-09-28T01:55:00Z",
+  "reviewed_by": "Claude Code (via Mike's Chrome)",
+  "source_id": "SRC-72D809FB4249",
+  "supplements": "research/acquisitions/segal_2000_access_review_2026-09-06.json",
+  "routes_checked": [
+    {
+      "route": "Georgetown University Library (HoyaSearch, WRLC consortium scope)",
+      "url": "https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?query=any,contains,9780714111452&vid=01WRLC_GUNIV:01WRLC_GUNIV&tab=Everything",
+      "outcome": "One copy listed as available at Lauinger Library Off-Campus Shelving, call number PJ5208.A5 B75 S44. Off-campus shelving is normally retrieved on request; Georgetown alumni or visitor access, or a WRLC consortium loan, would be needed."
+    },
+    {
+      "route": "Internet Archive search",
+      "url": "https://archive.org/search?query=%22incantation+bowls+in+the+British+Museum%22+Segal",
+      "outcome": "No results."
+    },
+    {
+      "route": "WorldCat ISBN search",
+      "url": "https://search.worldcat.org/search?q=bn%3A9780714111452",
+      "outcome": "Blocked by a Cloudflare rate limit; not retried."
+    }
+  ],
+  "decision": "Georgetown is the nearest authorized route for Mike in Washington, and it is closer than the NYPL offsite copy. Nothing was requested, borrowed or read.",
+  "limits": "No catalogue content, bowl claim, identity decision, text, image or rights determination was imported."
+}

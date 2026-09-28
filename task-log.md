@@ -25,6 +25,28 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Claude (Cowork) — Second sweep; Moussaieff follow-up; Segal route
+
+**Claimed:** TEXT-001, SCHOL-005
+**Corpus:** changed (1 researcher-identified same-object decision) — state
+digest `a8e34735bdc9`
+**Tests:** 325 Python passed; integrity passed
+
+- Second cross-scheme sweep, normalizing collection prefixes (M/Moussaieff,
+  CBS/B, IM, MS, HS, YBC, OI, Met). It found only Waller's "M 164" and
+  Levene 2007's "Moussaieff 164", both already linked to Levene 2007.
+  Merged. Penn, Iraq Museum and Schøyen numbers produced no cross-scheme
+  pairs; the exact-identifier queue had already caught those.
+- Morgenstern–Abudraham, "Additional Mandaic Magic Bowls from the Moussaieff
+  Collection", is still unpublished (TAU profile and academia.edu,
+  2026-09-28). M45 and unnumbered A and B stay open.
+- Segal 2000 is in Georgetown's HoyaSearch: Lauinger Library off-campus
+  shelving, PJ5208.A5 B75 S44
+  (`research/acquisitions/segal_2000_dc_route_2026-09-28.json`).
+  - Internet Archive has no copy.
+  - WorldCat rate-limited the lookup, and I did not retry it.
+- TEXT-001 is 796/1,052 (75.7%); the gate (842) is 46 away.
+
 ## 2026-09-28 — Claude (Cowork) — Cross-scheme designation sweep
 
 **Claimed:** CONC-001 (British Museum pairs), TEXT-001
