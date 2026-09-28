@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-28",
+  "sources": [
+    {
+      "label": "Brand working list",
+      "source_id": "SRC-6D313A7AA389",
+      "capture_id": "CAP-E1E6C8B56AD6",
+      "capture_sha256": "bdbe5384e38fcbe39b6b621e4cc3df0f4c70ac94f49a3348e46af29431999f06",
+      "extractor": "scripts/build_brand_working_list_private.py",
+      "extractor_sha256": "00d95f165eeb290479c0f2d4f4336bb23f51d46926d471cf6b7068ac1a047b59",
+      "private_manifest_path": "data/private/manifests/brand_2021_working_list_private_2026-09-28.jsonl",
+      "private_manifest_sha256": "3e3b1c8b48aa80fc9fad1441a74aae333eb25ec5ae648a65f21c66f71515a04a",
+      "appearances": 44,
+      "text_rows": 44,
+      "media_rows": 0,
+      "rights": "protected; Mike-only; public_ok false"
+    },
+    {
+      "label": "Kedar NFP context",
+      "source_id": "SRC-A90AB34CA3FE",
+      "capture_id": "CAP-E1FB74EF0432",
+      "capture_sha256": "8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+      "extractor": "scripts/build_kedar_private_context.py",
+      "extractor_sha256": "36d457d53d9ec87c5d4dbeedd656878bab54a955f21e085c1e6cf030ecf59a92",
+      "private_manifest_path": "data/private/manifests/kedar_2019_context_private_2026-09-28.jsonl",
+      "private_manifest_sha256": "de9aed0799d4f82038a5a1bb88fae82625e8ce2800838cae74201f260ef4bb5f",
+      "appearances": 29,
+      "text_rows": 30,
+      "media_rows": 2,
+      "rights": "protected; Mike-only; public_ok false"
+    }
+  ],
+  "quality": "Brand is a bibliography with no editions/images. Kedar excerpts are page-level group discussions; handwritten authorship is attributed to the dissertation and not adjudicated. Two figure pages privately retained with source credits."
+}

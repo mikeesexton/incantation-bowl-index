@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Brand list and Kedar thesis private extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (74 protected text rows and two private image links) — state digest `c0d6cd14709f`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; extractor, manifest, and private image hashes verified
+
+- Indexed all 41 numbered references and three contextual mentions in Brand's 2021 three-page working list as 44 private, page-located text rows. The list is a bibliographic concordance with no incantation edition or bowl image; its three contextual mentions were not promoted into numbered Syriac-script bowls.
+- Linked Kedar's 2019 NFP table, authorship/handwriting discussion, and Semamit page to all 29 already indexed thesis appearances in 30 private text rows. The excerpts are explicitly marked as shared page-level material and Kedar's interpretations, not verified hand or author identifications. Retained two source-credited bowl photograph pages for JNL Heb 4, 6079 and Gorea 2003 B2 as private image derivatives; the latter's image discussion is separately indexed. No public reuse decision changed.
+- Rebuilt local Mike Access with 1,287/1,287 text rows, 906/906 media rows, 559 local images and all 59 captures; all seven private checks passed. Ten of 33 appearance-bearing held PDF sources now have no linked text/media, down from twelve. Translation/original-language counts remain unchanged because these two sources are bibliography and thematic analysis. Took and integrity-checked a pre-batch backup and retained the newest ten; checked-in extractors and content-free receipts bind the protected manifests and image hashes. Next prioritize true editions/illustrated articles among the remaining ten, including scan-only works that need reliable OCR or manual reading.
+
 ## 2026-09-28 — Codex — Pognon French translation spans
 
 **Claimed:** TEXT-004
