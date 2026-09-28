@@ -14,22 +14,22 @@
 | Location | 1277 | 74.7% |
 | Provenance | 371 | 21.7% |
 | Dating | 484 | 28.3% |
-| Dimensions | 460 | 26.9% |
+| Dimensions | 514 | 30.1% |
 | Material | 410 | 24.0% |
 | Language | 1026 | 60.0% |
 | Script | 94 | 5.5% |
-| Text Edition | 106 | 6.2% |
-| Translation | 160 | 9.4% |
-| Image | 420 | 24.6% |
+| Text Edition | 175 | 10.2% |
+| Translation | 227 | 13.3% |
+| Image | 543 | 31.8% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 760 |
-| 3–5 of 10 | 770 |
-| 6–8 of 10 | 179 |
-| 9–10 of 10 | 1 |
+| 0–2 of 10 | 674 |
+| 3–5 of 10 | 801 |
+| 6–8 of 10 | 233 |
+| 9–10 of 10 | 2 |
 
 ## Next-action queue
 
@@ -46,7 +46,7 @@
 
 ## Claim conflicts
 
-**428** identities triggered raw difference flags. Current reviews support **574** compatible field-level instances and **16** substantive instances. **249** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**428** identities triggered raw difference flags. Current reviews support **570** compatible field-level instances and **16** substantive instances. **266** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

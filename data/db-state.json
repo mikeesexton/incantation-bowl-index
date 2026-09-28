@@ -1,7 +1,8 @@
 {
-  "corpus_digest": "30bb971badec4efdea08ddeef91550229927c355f66c66c3c683b2abdca1a390",
+  "corpus_digest": "a5457f19fb1a01f326fb1bfdde298f5a8b08fc57fc83550b03442a5868e84df1",
   "migrations": 18,
-  "recorded_at": "2026-09-28T12:22:00+00:00",
+  "note": "Private extraction of ABS volume two and Jena catalogue images and working texts",
+  "recorded_at": "2026-09-28T12:37:56+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -34,8 +35,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "25166ef0d3c847cf73f1dbe3e874f429f2782aa1ce4ef515b7299ba583e2e29e",
-      "rows": 7856
+      "digest": "660ecef3de9befa04bf8ce97bde791050ccb58e5c7812e81a7ae30c4d1a3d846",
+      "rows": 7980
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -74,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "53146a8859ef0db384e1c11a7912e6b8e9d6739aa00eb744e56b455c000569dc",
-      "rows": 470
+      "digest": "c06e4e312269c9a89d9448cfa425b919abfde2f044a397f2c6f3dfba304dab40",
+      "rows": 655
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -146,8 +147,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "46a7c2acaa81e6394a82cb4cfd917c937ac073d2dad76f927e8bff571339daba",
-      "rows": 488
+      "digest": "df5ebd8d81b4aa88a7f4413de368f6731b55d11f7b7ebfc7a72fdabe5c72276d",
+      "rows": 626
     }
   }
 }

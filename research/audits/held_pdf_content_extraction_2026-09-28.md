@@ -2,15 +2,20 @@
 
 This audits registered PDF captures against bowl-level structured text and media in the private corpus. A held file or edition pointer alone does not count as extracted content. Counts are source-linked and can include records made from other captures of the same source. They do not certify proofreading or completeness of commentary, indexes, or images. The separate July 2026 literature-review PDF has a `.txt` extraction and is outside the source-capture ledger.
 
-This session extracted *Aramaic Bowl Spells*, volume one (Shaked, Ford, Bhayro 2013): all 64 JBA entries now have a private English translation row, a working Hebrew-script transcription row, and at least one retained plate page. Ninety photo/figure pages were rendered; 64 dimensions, 61 client descriptions, and 21 biblical-quotation lists were also captured as source claims. The text is machine extracted and has not had page-by-page scholarly proofing. Several severely damaged lines have unresolved script fragments. Scholarly commentary, linguistic notes, and all introductory/index content still require extraction.
+## Extracted in these sessions
+
+- Both complete *Aramaic Bowl Spells* volumes (Shaked, Ford, Bhayro 2013 and 2022): all 119 JBA entries have a private English translation, a working Hebrew-script transcription, and at least one photograph page. Volume one has 90 plate images; volume two has 66 photograph and 23 artist-impression figure page images. Across the volumes, 119 dimensions, 113 client descriptions, and 38 biblical-quotation lists were added as source claims.
+- Ford and Morgenstern’s 2020 Jena catalogue: 96 figure pages retained for all 68 previously indexed appearances. Fourteen first-section entries also have working English translation and Hebrew-script transcription rows. The remaining edition text and catalogue descriptions are still unextracted. The PDF contains entry 69 (HS 3070, printed pp. 243–244), a box of assorted fragments that is missing from this catalogue’s appearance set; an older Brand-list record exists. Its physical unity and scope require explicit review before a new object link.
+
+These born-digital text-layer extractions have not had page-by-page scholarly proofing. Damaged lines, word spacing, restoration marks, typography, commentary, linguistic notes, introductory material, and indexes still need extraction or review.
 
 | Capture | Source | Appearances | Text rows | Media rows |
 |---|---|---:|---:|---:|
 | CAP-DBB06BEA4670 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descripti… | 170 | 0 | 0 |
 | CAP-0D9545A92AFD | The Bible in the Bowls: A Catalogue of Biblical Quotations in Published … | 134 | 137 | 0 |
-| CAP-2861B06070B4 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Pr… | 68 | 0 | 0 |
+| CAP-2861B06070B4 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Pr… | 68 | 28 | 96 |
 | CAP-295A7FE7BF01 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One | 64 | 128 | 90 |
-| CAP-DE113C20CBBA | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two | 55 | 0 | 0 |
+| CAP-DE113C20CBBA | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two | 55 | 110 | 89 |
 | CAP-EA64131E5F1D | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Ant… | 49 | 0 | 0 |
 | CAP-560EB584740F | Aramaic Incantation Texts from Nippur | 44 | 70 | 0 |
 | CAP-E1E6C8B56AD6 | Working List of Syriac ‘Manichaean’ Incantation Bowls | 44 | 0 | 0 |
@@ -54,6 +59,7 @@ This session extracted *Aramaic Bowl Spells*, volume one (Shaked, Ford, Bhayro 2
 
 ## Next extraction priority
 
-1. Proof the volume-one working readings against printed pages, focusing first on damaged entries and unresolved Hebrew lines; extract source descriptions, image descriptions, commentary, and intertexts into appropriately attributed fields.
-2. Extract the other complete held editions with zero bowl-level text/media, starting with the Berlin catalogue and the two other Brill volumes; retain their protected text and images privately.
-3. Expand the audit to held PDF material not registered as a source capture, then record page/content-level coverage and explicit absence reasons for every source.
+1. Finish Jena entry texts, including the Mandaic and Syriac-script sections with separate extraction methods, and resolve the missing entry 69 appearance from the source.
+2. Extract the Berlin catalogue and Moriggi’s Syriac corpus, the largest complete held editions still without bowl-level text/media.
+3. Proof the working readings against printed pages and extract source descriptions, image descriptions, commentary, and intertexts into attributed fields.
+4. Expand the inventory to held PDF material outside the registered capture ledger, with page/content-level coverage and explicit absence reasons.

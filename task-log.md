@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — ABS volume two and Jena catalogue extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (138 private text rows, 185 retained image pages, 124 source claims) — state digest `a5457f19fb1a`
+**Tests:** 327 unittest tests pass; Mike Access private build audit 7/7; SQLite integrity and foreign keys pass
+
+- Extracted Shaked, Ford, and Bhayro 2022 JBA 65–119 from the complete held second volume: 55 scholarly translations, 55 working Hebrew-script transcriptions, 66 photograph pages, 23 artist-impression figure pages, 55 source dimensions, 52 client descriptions and 17 biblical-quotation lists. Every entry has both text types and a photograph in Mike Access.
+- Retained 96 figure pages for all 68 indexed entries of Ford and Morgenstern's Jena catalogue. Added working private translations and Hebrew-script transcriptions for 14 entries whose line sequence and original-script column were recoverable; the other entries need separate/manual extraction, including Syriac and Mandaic sections.
+- Found printed catalogue entry 69 (HS 3070, pp. 243–244), a box of assorted fragments, missing from this source's appearances. An older working-list object exists, but physical unity and the link require review. Did not merge or classify it from this extraction pass.
+- Updated the held-PDF audit and TEXT-004 roadmap. Protected payloads and manifests remain outside Git; checked-in receipts contain hashes and counts only. Source-page proofing, descriptions, commentary, notes and indexes remain open.
+
 ## 2026-09-28 — Codex — Held-PDF content extraction, ABS volume one
 
 **Claimed:** TEXT-004

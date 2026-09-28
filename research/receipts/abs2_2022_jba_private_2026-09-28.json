@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for private JBA 65–119 scholarly text, photographs and figures",
+  "source_id": "SRC-8C611BF93288",
+  "capture_id": "CAP-DE113C20CBBA",
+  "capture_sha256": "e15f96f25da902065ea972aacb441034f99ca08fbdcdff73be5b11cc80fc3b00",
+  "private_manifest": "data/private/manifests/abs2_2022_jba_private_2026-09-28.jsonl",
+  "private_manifest_sha256": "19165ea377a448e0117f81836aa2dd1cbd85b7e5c2f2fee13fb1ab6ab97cff43",
+  "appearance_count": 55,
+  "translation_count": 55,
+  "working_transcription_count": 55,
+  "retained_photo_page_count": 66,
+  "retained_figure_page_count": 23,
+  "local_image_count": 89,
+  "local_image_bytes": 58421876,
+  "facts_manifest": "research/manifests/abs2_2022_jba_facts_2026-09-28.jsonl",
+  "facts_manifest_sha256": "74049a4747febd8afb8bfcee6afdf68ca83df3e0c77a1fabff54e1a3e10157ec",
+  "scope_note": "Private research extraction from lawfully held complete 2022 Brill PDF. Translation and Hebrew-script transcription are working text-layer extractions, not page-by-page proofread. Some damaged Hebrew lines remain unresolved. Photographs and artist-impression figures are private full-page raster derivatives. Public reuse is unapproved."
+}

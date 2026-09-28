@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for private Jena catalogue figures and initial working bowl texts",
+  "source_id": "SRC-8A145FAA2EBB",
+  "capture_id": "CAP-2861B06070B4",
+  "capture_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+  "private_figure_manifest": "data/private/manifests/aibm_2020_jena_figures_private_2026-09-28.jsonl",
+  "private_figure_manifest_sha256": "7d4686b6cbb8c064d0d568b9a4260104e03f35e382f7aec6acf3f2827cb180dc",
+  "private_text_manifest": "data/private/manifests/aibm_2020_jena_working_texts_2026-09-28.jsonl",
+  "private_text_manifest_sha256": "8bf53c1c56bdcd30c2aa03175ab8e589805daa576fa9d203945825bd8361b461",
+  "figure_page_count": 96,
+  "appearances_with_figure": 68,
+  "working_translation_count": 14,
+  "working_transcription_count": 14,
+  "local_image_bytes": 77431353,
+  "scope_note": "Private research extraction from lawfully held 2020 Brill catalogue. Figures for all 68 previously indexed appearances; 14 first-section entries have working text-layer translation and Hebrew-script transcription. Other entries remain unextracted or need individual parser/manual review; entry 69 HS 3070 is not yet indexed from this source. Public image/text reuse unapproved."
+}
