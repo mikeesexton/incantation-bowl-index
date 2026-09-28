@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Finish Burberry translation coverage
+
+**Claimed:** TEXT-004
+**Corpus:** changed (five scholarly translation rows) — state digest `859606ef7e05`
+**Tests:** 326 Python passed; archive valid; Mike build 6/6 private checks passed; five protected rows and receipt hash checked; `git diff --check` clean
+
+- Extracted the remaining five printed translation columns from the held born-digital Burberry 2020 thesis: ACB 7, 11, 12, 14 and 16. Retained printed line numbers, page boundaries, damage brackets, author, exact locators and capture hash. Rendered source pages were inspected; plain text cannot preserve all boxes, emphasis, strikeout or letter spacing, so rows point back to the PDF before quotation. ACB 14 includes the scholar's untranslated transliterations. A database backup preceded ingestion.
+- All 24 ACB bowls with a printed translation now have private rows (25 rows because ACB 19 has two fragment translations), and all 25 have retained photograph pages. ACB 25 is pseudotext without a thesis translation. Mike Access exposes all 335 text and 380 media rows. Protected text and manifest stay outside Git under a content-free receipt. No public rights or identity decision changed.
+- Next: extract the remaining 24 ACB original-script transcriptions, then move to another complete held edition. TEXT-004 remains in progress across other held sources.
+
 ## 2026-09-28 — Codex — Continue Burberry private translations
 
 **Claimed:** TEXT-004
