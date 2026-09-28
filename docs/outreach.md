@@ -6,22 +6,28 @@ record replies; they never send anything.
 
 ## How to write these messages
 
-Two earlier messages (British Museum, Penn Museum) lost their readers by
-packing in project jargon and several requests. From now on:
+Write to people the way a person would, not the way a database would.
 
-- **One question per email.** If there are three questions, send the first
-  and keep the others for the reply.
-- **Plain words.** Say "a list matching Segal's text numbers to your
-  registration numbers", not "an accession-number concordance". Never use
-  our internal terms: identity, appearance, extraction, mapping, candidate,
-  corpus.
-- **Show one concrete example** ("for example 068A") rather than totals.
-- **Say why it helps them**, for example that it lets us link each bowl to
-  their online collection page.
-- **Keep it under about 100 words**, with a link to https://bowlam.com.
-- **Offer an easy out:** "or could you point me to the right person?"
-- **For scholars, lead with their work**, then ask one factual question
-  about it. Don't ask for unpublished texts outright; ask about status.
+- **Introduce Bowlam and why their work or collection matters to it.** That
+  comes first; everything else is secondary.
+- **Be upfront about the real difficulty** (for example, "Segal 2000 has
+  been very hard to get hold of") rather than guessing at internal records
+  they may not have or know about.
+- **Ask broadly for help.** "Any help or guidance you can offer" lets the
+  recipient decide what they can give. Don't ask for specific lists, numbers
+  or datasets in a first message; the recipient may not know they exist, and
+  a narrow ask is easy to decline.
+- **No project jargon or counts.** Leave out totals, internal designations and
+  terms like concordance, mapping, extraction, identity or appearance.
+- **Short, warm, and easy to answer:** a few sentences, a link to
+  https://bowlam.com, and an invitation to point us to someone else.
+- **Specific questions come later**, once someone has replied and offered to
+  help. The queue's "question" column is for that later stage, not the
+  first email.
+
+Earlier messages to the British Museum and Penn Museum lost their readers by
+being technical and asking for things staff were unlikely to have. The
+2026-09-27 follow-up drafts follow this guide.
 
 ## Recording replies
 
@@ -35,15 +41,15 @@ it says like any other source: attributed, never silently adopted.
 |---|---|---|---|
 | (earlier, date not recorded) | Penn Museum (Katy Blanchard) | Several catalogue-wording questions; see `docs/penn_records_to_reconcile_2026-09-22.md` | Sent in a technical form; no usable reply recorded. Resend one simple question. |
 | (earlier, date not recorded) | National Library of Israel | The 216 vs 205 Moussaieff bowl count (lead `LED-F6E157C6B6AD`) | Requested; reply pending. |
-| 2026-09-27 | British Museum | Segal concordance and study-room access | Sent; judged too technical. Simpler follow-up drafted 2026-09-27 (one question: is there a list matching Segal text numbers to registration numbers?). |
+| 2026-09-27 | British Museum | Segal concordance and study-room access | Sent; too technical. Plain follow-up drafted 2026-09-27: says Segal 2000 is hard to obtain and asks for any help they can offer. |
 
 ## Queue (best first)
 
-| # | To | The one question | Why it matters | Lead |
+| # | To | Specific question for later (after a first friendly contact) | Why it matters | Lead |
 |---|---|---|---|---|
-| 1 | British Museum (follow-up) | Is there a list matching Segal's text numbers to registration numbers? | Exact Segal numbers for ~150 bowls; the 142 vs 159 gap | `LED-C8A3B84A6042`, `LED-DE0D3C9091A8` |
-| 2 | James Nathan Ford (Bar-Ilan) | Have JNF 18, 125, 149, 152, 153 and 188 been published since 2019? | Up to ten bowls; then ask about Davidovitz 2 and Wolf 23/69 | `IBI-LEAD-KEDAR2019-UNPUBLISHED-CANDIDATES` |
-| 3 | Matthew Morgenstern / Ohad Abudraham (Tel Aviv) | Has "Additional Mandaic Magic Bowls from the Moussaieff Collection" appeared, and where? | M45 and unnumbered A and B | `IBI-LEAD-MOUSSAIEFF-MANDAIC-EDITIONS` |
+| 1 | British Museum (follow-up) | First message: Segal 2000 is hard to obtain; any help? Later, if they offer: how best to match Segal's numbers to collection records | Exact Segal numbers for ~150 bowls; the 142 vs 159 gap | `LED-C8A3B84A6042`, `LED-DE0D3C9091A8` |
+| 2 | James Nathan Ford (Bar-Ilan) | First message: introduction and a broad request for guidance (drafted 2026-09-27). Later: status of the JNF bowls Kedar lists as unpublished | Up to ten bowls; then ask about Davidovitz 2 and Wolf 23/69 | `IBI-LEAD-KEDAR2019-UNPUBLISHED-CANDIDATES` |
+| 3 | Matthew Morgenstern / Ohad Abudraham (Tel Aviv) | First message: introduction and a broad request for guidance (drafted 2026-09-27). Later: the forthcoming Moussaieff Mandaic article | M45 and unnumbered A and B | `IBI-LEAD-MOUSSAIEFF-MANDAIC-EDITIONS` |
 | 4 | National Library of Israel (follow-up) | Are bowl numbers 2, 52, 97, 98, 152, 202-206 and 216 in the collection under other records? | The single largest group of unlinked bowls (205) | `LED-F6E157C6B6AD` |
 | 5 | Penn Museum (simple resend) | Does "Duplicate of 16081" on B16007 mean the same text rather than the same bowl? | Opens the door for the other three questions | `docs/penn_records_to_reconcile_2026-09-22.md` |
 | 6 | Siam Bhayro (Exeter) | Could the Virtual Magic Bowl Archive data be shared as a file? | Exeter's repository blocks automated access | `LED-1763D2B30809` |
