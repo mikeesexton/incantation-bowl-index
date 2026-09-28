@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Jena Hebrew and Syriac edition columns
+
+**Claimed:** TEXT-004
+**Corpus:** changed (21 protected original-script rows) — state digest `14d3eaf39460`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; manifest and extractor hashes verified
+
+- Separated 21 more Jena original-script edition columns into private, page-located working transcriptions: 15 Hebrew-script entries and all six Syriac/Manichaean entries. Jena now has 35 separately indexed original-script readings across 40 edited entries, alongside 36 English translations, 77 full-section/supplement rows and 96 figure-page links. The protected manifest stays outside Git; the checked-in extractor and content-free receipt bind the source and manifest hashes.
+- Rebuilt Mike Access with 1,182/1,182 text rows, 904/904 media rows, 557 local images and all 59 captures, passing 7/7 private checks. The held-PDF proxy now has 289 of 853 appearances with an original-language rendering and 252 with translation, original rendering and image, while 12 of 33 appearance-bearing PDF sources still have no source-linked text/media. These are presence counts, not proofread completeness.
+- The PDF text layer substitutes glyphs in Jena's four Mandaic edited entries (37–40), so separate transcriptions await image-based recovery. Entry 21 has no continuous original-script edition. All 35 script rows need source-page proofing of damage, line order and typography; the complete private sections and facsimiles remain available. Took and integrity-checked a pre-batch backup, retained the newest ten, and changed no public-release decision. Next prioritize Pognon's French/Mandaic separation and zero-content held PDFs.
+
 ## 2026-09-28 — Codex — Jena translation columns and page-layout repair
 
 **Claimed:** TEXT-004

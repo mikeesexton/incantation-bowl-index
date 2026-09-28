@@ -18,7 +18,7 @@
 | Material | 410 | 24.0% |
 | Language | 1027 | 60.0% |
 | Script | 94 | 5.5% |
-| Text Edition | 268 | 15.7% |
+| Text Edition | 283 | 16.5% |
 | Translation | 327 | 19.1% |
 | Image | 604 | 35.3% |
 
