@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for private thesis transcription, translations and photographs",
+  "source_id": "SRC-53B93C8C8A0E",
+  "capture_id": "CAP-FEA23FB9B4F1",
+  "capture_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+  "private_manifest": "data/private/manifests/burberry_2020_acb_private_2026-09-28.jsonl",
+  "private_manifest_sha256": "91bc79445d751dda586990784cf58c429c72478ed86ce80ac1ba63c62255a5e5",
+  "source_rights": "all_rights_reserved; private research only",
+  "render_command": "pdftoppm -f 458 -l 477 -r 130 -png <archived-pdf> <temporary-prefix>",
+  "translations_and_transcription": [
+    {
+      "id": "TXT-366A7909BEC6",
+      "object_id": "IBI-DD0EB771B061",
+      "text_type": "transcription",
+      "locator": "ACB 1, printed pp. 112–113"
+    },
+    {
+      "id": "TXT-D3ACB4BC8B53",
+      "object_id": "IBI-DD0EB771B061",
+      "text_type": "translation",
+      "locator": "ACB 1, printed pp. 112–113"
+    },
+    {
+      "id": "TXT-CA46C03A60E4",
+      "object_id": "IBI-7AC91C811983",
+      "text_type": "translation",
+      "locator": "ACB 20, printed p. 317"
+    },
+    {
+      "id": "TXT-CC00870F1099",
+      "object_id": "IBI-1A307263804C",
+      "text_type": "translation",
+      "locator": "ACB 23, printed p. 334"
+    },
+    {
+      "id": "TXT-DB7205AB1C6A",
+      "object_id": "IBI-5CAAE6F2D3FD",
+      "text_type": "translation",
+      "locator": "ACB 24, printed pp. 339–340"
+    }
+  ],
+  "photographs": [
+    {
+      "acb": 1,
+      "media_id": "MED-422A70EFE893",
+      "object_id": "IBI-DD0EB771B061",
+      "plate_page": 458,
+      "private_derivative": "data/private/media/MED-422A70EFE893.png",
+      "derivative_sha256": "58da213da4f9ab945a52b63fcc1aaa90d821f41d15d4436fcbd9d9cd6d565ed3",
+      "bytes": 775976
+    },
+    {
+      "acb": 2,
+      "media_id": "MED-38E9ECCFE9F0",
+      "object_id": "IBI-92B45966E014",
+      "plate_page": 459,
+      "private_derivative": "data/private/media/MED-38E9ECCFE9F0.png",
+      "derivative_sha256": "4a24535682ce673ea9be5d80ef0f603689add6933ba0c8326a8d4a4a61be3bc3",
+      "bytes": 720857
+    },
+    {
+      "acb": 3,
+      "media_id": "MED-E35F21D849AF",
+      "object_id": "IBI-3710A9140539",
+      "plate_page": 460,
+      "private_derivative": "data/private/media/MED-E35F21D849AF.png",
+      "derivative_sha256": "5b6136fd55af8bb5f612ec33ad7716ab9af54dc3c30b01fe7ff778b12882fe32",
+      "bytes": 568614
+    },
+    {
+      "acb": 4,
+      "media_id": "MED-E9D6A26CA9D0",
+      "object_id": "IBI-F094C5154A17",
+      "plate_page": 461,
+      "private_derivative": "data/private/media/MED-E9D6A26CA9D0.png",
+      "derivative_sha256": "3021c6f3d8ad71881c713499e49b95373d3354b59cbc9435549bbe50fb93b3e1",
+      "bytes": 698594
+    },
+    {
+      "acb": 5,
+      "media_id": "MED-F0504B0136EF",
+      "object_id": "IBI-BCABA823010C",
+      "plate_page": 462,
+      "private_derivative": "data/private/media/MED-F0504B0136EF.png",
+      "derivative_sha256": "936adb0d2252d7105767128d266c3f7165de4822846a4c5165b7c8d4a67a472d",
+      "bytes": 668370
+    },
+    {
+      "acb": 6,
+      "media_id": "MED-E9FDEB66AE6B",
+      "object_id": "IBI-81F94A22A26C",
+      "plate_page": 463,
+      "private_derivative": "data/private/media/MED-E9FDEB66AE6B.png",
+      "derivative_sha256": "a9739337562ca4c45dab11ab0478c611657efcbb00e7b3d0152d12974a02bc27",
+      "bytes": 562255
+    },
+    {
+      "acb": 7,
+      "media_id": "MED-FFE5006FB714",
+      "object_id": "IBI-EAEC0988138C",
+      "plate_page": 464,
+      "private_derivative": "data/private/media/MED-FFE5006FB714.png",
+      "derivative_sha256": "5c378f4c798c9eeedebde55ad44c532e6cb8ea36cf0b3055e9388b207ffcd747",
+      "bytes": 717824
+    },
+    {
+      "acb": 8,
+      "media_id": "MED-F2A85939D2E4",
+      "object_id": "IBI-F755703CBB5C",
+      "plate_page": 465,
+      "private_derivative": "data/private/media/MED-F2A85939D2E4.png",
+      "derivative_sha256": "de1cac1703a87f210ec9d0360aff8f5ac97f68b202c07ebbe3b5dca17132ba98",
+      "bytes": 405729
+    },
+    {
+      "acb": 9,
+      "media_id": "MED-43436E64DC49",
+      "object_id": "IBI-DE0859066564",
+      "plate_page": 466,
+      "private_derivative": "data/private/media/MED-43436E64DC49.png",
+      "derivative_sha256": "be15f630d2074b00747fe89f27bf42e7e3519c407a042598daf429997842705c",
+      "bytes": 646760
+    },
+    {
+      "acb": 10,
+      "media_id": "MED-70F2F1EC8202",
+      "object_id": "IBI-A929E9853CC3",
+      "plate_page": 467,
+      "private_derivative": "data/private/media/MED-70F2F1EC8202.png",
+      "derivative_sha256": "8511316f800b96504a12dd7983b1fb959a0dca874e4bc025c28560d6b2d98e7d",
+      "bytes": 862109
+    },
+    {
+      "acb": 11,
+      "media_id": "MED-6A4FA96FF7C9",
+      "object_id": "IBI-6BB2CDA1324B",
+      "plate_page": 468,
+      "private_derivative": "data/private/media/MED-6A4FA96FF7C9.png",
+      "derivative_sha256": "074ee7ca93a6cdc7a6e2d99c88e96b112d53e6321ea389a3fb4c51b5a35c7cea",
+      "bytes": 671547
+    },
+    {
+      "acb": 12,
+      "media_id": "MED-8ADB8346A82A",
+      "object_id": "IBI-15E3C4007112",
+      "plate_page": 469,
+      "private_derivative": "data/private/media/MED-8ADB8346A82A.png",
+      "derivative_sha256": "3a03bafdeac644730cad7678d5a0572fcf9a0c19aee28d99448650c41f94e59e",
+      "bytes": 736058
+    },
+    {
+      "acb": 13,
+      "media_id": "MED-F423E77DDC77",
+      "object_id": "IBI-D26113736570",
+      "plate_page": 470,
+      "private_derivative": "data/private/media/MED-F423E77DDC77.png",
+      "derivative_sha256": "a26424fea50f5c859c73aa6daee0e2043f8e0cd3f0e46a05a279269f89f84c1c",
+      "bytes": 747750
+    },
+    {
+      "acb": 14,
+      "media_id": "MED-4361C4A8C044",
+      "object_id": "IBI-B89A7807868E",
+      "plate_page": 471,
+      "private_derivative": "data/private/media/MED-4361C4A8C044.png",
+      "derivative_sha256": "c90e5ca54f8a019c522cf351a21c18b1a1638826dc8b5a9f995fb06eab3f2f07",
+      "bytes": 765063
+    },
+    {
+      "acb": 15,
+      "media_id": "MED-040872FDFB34",
+      "object_id": "IBI-ED3F500BEC57",
+      "plate_page": 472,
+      "private_derivative": "data/private/media/MED-040872FDFB34.png",
+      "derivative_sha256": "88ee3ddc7e9d7f0edd5db63d8906d97924baa14143db6df96075a94edef934e2",
+      "bytes": 516276
+    },
+    {
+      "acb": 16,
+      "media_id": "MED-72467449F977",
+      "object_id": "IBI-3937E936916E",
+      "plate_page": 473,
+      "private_derivative": "data/private/media/MED-72467449F977.png",
+      "derivative_sha256": "2104fd20049ee9ce33ed606641a578cb27f757620c883ffec9ce18313896464a",
+      "bytes": 775538
+    },
+    {
+      "acb": 17,
+      "media_id": "MED-39DAAE98AA2D",
+      "object_id": "IBI-329BB470A7D9",
+      "plate_page": 473,
+      "private_derivative": "data/private/media/MED-39DAAE98AA2D.png",
+      "derivative_sha256": "2104fd20049ee9ce33ed606641a578cb27f757620c883ffec9ce18313896464a",
+      "bytes": 775538
+    },
+    {
+      "acb": 18,
+      "media_id": "MED-2457F757B4CB",
+      "object_id": "IBI-EDB0D53FD0F9",
+      "plate_page": 474,
+      "private_derivative": "data/private/media/MED-2457F757B4CB.png",
+      "derivative_sha256": "8d8e76120f4dc6e4521fa08498818150252e0afe3de7ce30516ce2470ae0f19e",
+      "bytes": 558278
+    },
+    {
+      "acb": 19,
+      "media_id": "MED-DB53AB3F7272",
+      "object_id": "IBI-A3889D8F55BA",
+      "plate_page": 474,
+      "private_derivative": "data/private/media/MED-DB53AB3F7272.png",
+      "derivative_sha256": "8d8e76120f4dc6e4521fa08498818150252e0afe3de7ce30516ce2470ae0f19e",
+      "bytes": 558278
+    },
+    {
+      "acb": 20,
+      "media_id": "MED-6BD0EB627BA0",
+      "object_id": "IBI-7AC91C811983",
+      "plate_page": 475,
+      "private_derivative": "data/private/media/MED-6BD0EB627BA0.png",
+      "derivative_sha256": "d95a64db054ddd1ce3c910d24f8d25be8d3ae2b9217cf37b70ee38850f5ecf62",
+      "bytes": 505800
+    },
+    {
+      "acb": 21,
+      "media_id": "MED-C99566A6C55A",
+      "object_id": "IBI-246B77780790",
+      "plate_page": 475,
+      "private_derivative": "data/private/media/MED-C99566A6C55A.png",
+      "derivative_sha256": "d95a64db054ddd1ce3c910d24f8d25be8d3ae2b9217cf37b70ee38850f5ecf62",
+      "bytes": 505800
+    },
+    {
+      "acb": 22,
+      "media_id": "MED-E35AEC047705",
+      "object_id": "IBI-23AA6305D277",
+      "plate_page": 475,
+      "private_derivative": "data/private/media/MED-E35AEC047705.png",
+      "derivative_sha256": "d95a64db054ddd1ce3c910d24f8d25be8d3ae2b9217cf37b70ee38850f5ecf62",
+      "bytes": 505800
+    },
+    {
+      "acb": 23,
+      "media_id": "MED-1B3CBBCEA4AD",
+      "object_id": "IBI-1A307263804C",
+      "plate_page": 476,
+      "private_derivative": "data/private/media/MED-1B3CBBCEA4AD.png",
+      "derivative_sha256": "deb58ceba4ebf98730606705c76c99b312174d7e313c75f5a89da999fbabe8b2",
+      "bytes": 378508
+    },
+    {
+      "acb": 24,
+      "media_id": "MED-3C9559D240EA",
+      "object_id": "IBI-5CAAE6F2D3FD",
+      "plate_page": 477,
+      "private_derivative": "data/private/media/MED-3C9559D240EA.png",
+      "derivative_sha256": "741c8d5a960a25f71b60dc308b382cde4398d7e83b74cae406b0ee6245752c18",
+      "bytes": 402607
+    },
+    {
+      "acb": 25,
+      "media_id": "MED-1C88F0421F2A",
+      "object_id": "IBI-D3E99C7E7993",
+      "plate_page": 477,
+      "private_derivative": "data/private/media/MED-1C88F0421F2A.png",
+      "derivative_sha256": "741c8d5a960a25f71b60dc308b382cde4398d7e83b74cae406b0ee6245752c18",
+      "bytes": 402607
+    }
+  ],
+  "scope_note": "Twenty-five ACB items have a private full-page photograph. One has a checked published transcription and four have checked published translations. ACB 25 has no translation in the thesis; the remaining readings need line-level extraction and review."
+}

@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Burberry thesis private extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (25 image rows, four translation rows, one transcription row) — state digest `fcf78776c8c0`
+**Tests:** 326 Python passed; archive valid; Mike build 6/6 private checks passed; `git diff --check` clean
+
+- Bound all 25 ACB photograph plates in Burberry 2020's complete Exeter thesis to the existing Berlin bowls. Twenty source pages were rendered as 25 private full-page image derivatives, with captions, page numbers, source hash, object IDs and derivative hashes checked and recorded in a content-free receipt. No public reuse approval was inferred.
+- Ingested Burberry's printed ACB 1 transcription and translation and her translations for ACB 20, 23 and 24, checked against rendered pages. Protected text and image files stay outside Git. ACB 25 has no translation in the thesis; the other ACB readings remain an extraction queue. A database backup preceded the batch.
+- Mike Access now shows all 314 text rows and 380 media rows, including 33 locally retained images. Burberry leaves the zero-content held-edition cohort, now 16 sources. Next: continue line-level transcription and translation extraction from this thesis and then the other held editions.
+
 ## 2026-09-28 — Codex — Mike Access private-content audit and first extraction
 
 **Claimed:** ACCESS-002, ACCESS-010, TEXT-004
