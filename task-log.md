@@ -25,6 +25,15 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Public Bowlam statistics refresh staged
+
+**Claimed:** ACCESS-008 maintenance
+**Corpus:** unchanged — state digest `470f16c0cd0d`
+**Tests:** 327 unittest tests pass, including 15 public-site checks; `git diff --check` clean
+
+- Rebuilt the aggregate-only page from current snapshot `ae0111a6f0e970b3`: 1,710 bowls, 2,058 source records, 896 text references, 371 provenance references and 574 image references. The live bowlam.com page still displays the 26 September snapshot (1,736 / 2,053 / 860 / 371 / 330); verified in browser after reload.
+- Public build leak checks pass and the generated page is committed locally. Deployment was explicitly requested, but the CLI has no `CLOUDFLARE_API_TOKEN` and the in-app Cloudflare dashboard is signed out. An installed Wrangler executable also failed for missing authentication. Requested a Cloudflare sign-in from Mike; deploy and verify the live page after credentials are restored. No site files outside `site/public` were prepared for deployment.
+
 ## 2026-09-28 — Codex — Moriggi private Syriac corpus extraction
 
 **Claimed:** TEXT-004
