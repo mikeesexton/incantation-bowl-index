@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-28T12:09:49+00:00`
+Generated: `2026-09-28T12:21:21+00:00`
 
 ## Portfolio status
 
@@ -82,24 +82,24 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 428 |
-| Triaged claim-field differences | 608/712 |
-| Compatible differences | 592 |
-| Review required (missing or no longer valid) | 104 |
-| Existing reviews requiring revalidation | 24 |
+| Triaged claim-field differences | 590/839 |
+| Compatible differences | 574 |
+| Review required (missing or no longer valid) | 249 |
+| Existing reviews requiring revalidation | 42 |
 | Substantive conflict instances | 16 across 14 identities |
 | All identities with a publication reference | 926/1710 (54.2%) |
 | Probable/confirmed identities with a publication reference | 798/1052 (75.9%) |
 | Probable/confirmed identities reviewed as having no known edition | 0/1052 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 798/1052 (75.9%) |
-| Identities with a translation | 96 |
+| Identities with a translation | 160 |
 | Scan-checked normalized reading texts | 39 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 895/895 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
-| Identities with a transcription/transliteration | 42 |
-| Media records with a non-unknown rights status | 71/380 (18.7%) |
-| Media with a current ledger entry | 354/380 |
+| Identities with a transcription/transliteration | 106 |
+| Media records with a non-unknown rights status | 161/470 (34.3%) |
+| Media with a current ledger entry | 354/470 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 29 |
 | Open or active leads | 22 |
@@ -118,9 +118,9 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Material | 410 | 24.0% |
 | Language | 1026 | 60.0% |
 | Script | 94 | 5.5% |
-| Text Edition | 42 | 2.5% |
-| Translation | 96 | 5.6% |
-| Image | 356 | 20.8% |
+| Text Edition | 106 | 6.2% |
+| Translation | 160 | 9.4% |
+| Image | 420 | 24.6% |
 
 ### Content-facet coverage
 
@@ -315,7 +315,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
   - Done when: Each of Montgomery's 40 bowl texts has a checked transliteration or a precise reason it cannot yet be captured.
 - [ ] **TEXT-004 — Capture held editions' inscriptions and translations for Mike Access** · In progress · Research
   - Done when: For each lawfully held edition, Mike Access has the available inscription, scholarly transcription or transliteration, scholarly translation and bowl image, or a documented item-specific reason for absence. Every private capture is attributed and page-located; shared/public release decisions remain independent.
-  - Evidence/status: The 11 September complete-volume batches indexed 450 appearances with volume and page locators but left held text largely unextracted. A 28 September audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media; Cook 1992 and Burberry 2020 now have private content. Burberry has all 25 ACB photograph plates, 26 scholarly transcription rows covering all 25 bowls (ACB 19 has two fragments), and 25 private scholarly translation rows covering all 24 bowls with a printed translation. ACB 25 is source-described pseudotext without translation. The 25 newly ingested original-script rows are working extractions from the born-digital PDF, not independently proofread; the extraction method reproduced the previously page-checked ACB 1 row exactly. Damaged readings and source typography still require page-by-page proofing. Mike directed that scholarly transcriptions and translations be retained for his private research view from lawfully held sources. Protected payloads and manifests stay outside Git. Other held editions remain an extraction backlog.
+  - Evidence/status: The 11 September complete-volume batches indexed 450 appearances with volume and page locators but left held text largely unextracted. A 28 September held-PDF audit (research/audits/held_pdf_content_extraction_2026-09-28.md) tracks the remaining source-level gaps. Cook 1992 and Burberry 2020 have private content; Burberry has all 25 ACB plates, 26 transcription rows covering 25 bowls and 25 translation rows covering the 24 translated bowls. The complete 2013 Aramaic Bowl Spells volume one now has private translation and working Hebrew-script transcription rows for all 64 JBA entries, 90 retained plate page images, plus 64 dimensions, 61 client descriptions and 21 biblical-quotation lists. These born-digital text-layer readings are not independently page-proofread; damaged lines, word spacing, restoration marks, typography, descriptive prose, commentary and indexes still need review/extraction. Mike directed that scholarly transcriptions, translations and images be retained for his private research view from lawfully held sources. Protected payloads and manifests stay outside Git. Other held editions remain an extraction backlog.
 - [x] **TEXT-005 — Account for every main Montgomery entry and source exception** · Done · Research
   - Done when: All forty main entries have explicit publication, translation and register status; appendix material is separately scoped.
   - Evidence/status: 40-row cohort report: 35 checked reading texts, zero OCR drafts, and 5 source-documented cases with no separate translation (18, 21, 23, 27, 33). Appendix 42 remains a separate uncertain possible bowl candidate; Appendix 41 is explicitly a skull.
@@ -503,11 +503,11 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `104`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `249`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have a research-complete publication disposition: an evidence-backed publication link or an explicit sourced no-known-edition finding. Catalogue silence alone does not count. Current: 798/1,052 (75.9%), including zero no-known-edition findings. — current `75.9%`; target `>= 80.0%`.
 - [x] At least half of probable/confirmed identities retain an actual publication link, preventing the disposition gate from being satisfied primarily by negative findings. Current: 798/1,052 (75.9%). — current `75.9%`; target `>= 50.0%`.
-- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `83.9%`; target `>= 100.0%`.
+- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `67.9%`; target `>= 100.0%`.
 
 ### Required setup tasks
 

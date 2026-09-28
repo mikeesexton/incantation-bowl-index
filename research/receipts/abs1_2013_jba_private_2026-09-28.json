@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for private JBA 1–64 scholarly text and plate extraction",
+  "source_id": "SRC-7FBBB775E502",
+  "capture_id": "CAP-295A7FE7BF01",
+  "capture_sha256": "39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+  "private_manifest": "data/private/manifests/abs1_2013_jba_private_2026-09-28.jsonl",
+  "private_manifest_sha256": "20904ebdd849d51d9994c2336c3c60a2eb3b58b08e97cd3f321365dcaa7badc1",
+  "appearance_count": 64,
+  "translation_count": 64,
+  "working_transcription_count": 64,
+  "retained_plate_page_count": 90,
+  "plate_derivative_bytes": 58844381,
+  "facts_manifest": "research/manifests/abs1_2013_jba_facts_2026-09-28.jsonl",
+  "facts_manifest_sha256": "7d4931f4718f58344797b302ace632bf906f7038fdceab2a4b24883f9f66ee6a",
+  "scope_note": "Private research extraction from lawfully held complete 2013 Brill PDF. Translation and Hebrew-script transcription are working text-layer extractions, not page-by-page proofread. Plate pages are private full-page raster derivatives. Public reuse is unapproved."
+}

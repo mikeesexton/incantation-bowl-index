@@ -1,8 +1,7 @@
 {
-  "corpus_digest": "a311407cc8403f7328c0a9a6958ec08b6b241aad50aa7694f5ded4d4000acbd4",
+  "corpus_digest": "30bb971badec4efdea08ddeef91550229927c355f66c66c3c683b2abdca1a390",
   "migrations": 18,
-  "note": "Mike Access local capture packaging and source inventory; corpus unchanged",
-  "recorded_at": "2026-09-28T12:11:10+00:00",
+  "recorded_at": "2026-09-28T12:22:00+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -35,8 +34,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "8d76ab7d35e62098cc43592ace5bb3ee9a7005bc82898fd81b227e38041aba17",
-      "rows": 7710
+      "digest": "25166ef0d3c847cf73f1dbe3e874f429f2782aa1ce4ef515b7299ba583e2e29e",
+      "rows": 7856
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -75,8 +74,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "87657bb6706a26d42529da637aada2c1e66ec5085d1f5ece7f4c1d17120957da",
-      "rows": 380
+      "digest": "53146a8859ef0db384e1c11a7912e6b8e9d6739aa00eb744e56b455c000569dc",
+      "rows": 470
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -147,8 +146,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "7843e90bacf638924b0d63a400000a8ba3846ee2a95cf9ad72f517ef95fe4e35",
-      "rows": 360
+      "digest": "46a7c2acaa81e6394a82cb4cfd917c937ac073d2dad76f927e8bff571339daba",
+      "rows": 488
     }
   }
 }

@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Held-PDF content extraction, ABS volume one
+
+**Claimed:** TEXT-004
+**Corpus:** changed (64 JBA entries: 128 private text rows, 90 retained plate pages, 146 source claims) — state digest `30bb971badec`
+**Tests:** 327 unittest tests pass; Mike Access private build audit 7/7; SQLite integrity and foreign keys pass
+
+- Audited registered held PDFs for structured text/media coverage. Recorded the full table and prioritized remaining gaps in `research/audits/held_pdf_content_extraction_2026-09-28.md`.
+- Extracted Shaked, Ford, and Bhayro 2013 JBA 1–64 scholarly translations and Hebrew-script transcriptions into the private corpus, with exact source capture hash and page locators. Retained 90 photo/figure plate page images at 150 DPI. All 64 appearances have both text types and at least one local plate image in Mike Access.
+- Added source-reported dimensions for 64, client descriptions for 61, and biblical-quotation lists for 21 entries. Protected text and images remain private; checked-in artifacts are a content-free receipt, factual manifest, and audit.
+- Working text-layer extraction has not been page-proofread. Damaged Hebrew lines, word spacing, brackets, typography, descriptions, commentary, and indexes need further work. Other held PDFs still have substantial content gaps; take the Berlin catalogue and other Brill volumes next.
+
 ## 2026-09-28 — Codex — Mike Access local source delivery
 
 **Claimed:** ACCESS-010
