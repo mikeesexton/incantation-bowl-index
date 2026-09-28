@@ -19,17 +19,17 @@
 | Language | 1027 | 60.0% |
 | Script | 94 | 5.5% |
 | Text Edition | 283 | 16.5% |
-| Translation | 358 | 20.9% |
-| Image | 606 | 35.4% |
+| Translation | 360 | 21.0% |
+| Image | 612 | 35.8% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 589 |
+| 0–2 of 10 | 587 |
 | 3–5 of 10 | 861 |
-| 6–8 of 10 | 251 |
-| 9–10 of 10 | 10 |
+| 6–8 of 10 | 252 |
+| 9–10 of 10 | 11 |
 
 ## Next-action queue
 

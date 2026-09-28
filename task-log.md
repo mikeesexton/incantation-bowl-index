@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Ford article and Auction 57 private extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (six private text rows, 45 private page links and six attributed claims) — state digest `b9884e65dc91`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; extractor, manifest and image hashes verified
+
+- Linked all 16 Ford 2014 appearances to 39 source-page facsimiles from 25 distinct pages, including source photographs of AS 13, Davidovitz 27 and Museo Sefardí 1073. Manually keyed the three published English translation blocks on printed pp. 248, 254 and 256 as private working translations. The scan has no selectable text, so its original-script edition pages are privately visible but not classified as searchable transcriptions. The translation rows need line-by-line page proofing; the source's Museo photograph credit is retained as a claim.
+- Retained complete lot descriptions and catalogue/image-page links for Auction 57 bowls 440–442. Added the source's Pavel Shrago photo credit and the auction's reported former Hillel Bar-Sadeh collection statements for lots 441–442 as attributed claims, without treating dealer assertions as verified history or authenticity.
+- Rebuilt Mike Access with 1,296/1,296 private texts, 981/981 media rows, 634 local images and all 59 captures; seven of 33 appearance-bearing held-PDF sources still have zero source-linked content. Protected manifests and working translations remain in the private vault; content-free receipts bind their hashes and all 45 rendered derivatives. Took and integrity-checked a pre-batch database backup and retained the newest ten. No public reuse decision changed. Next recover original-script text from Ford's edition images with a trustworthy reading method and continue the remaining seven zero-content sources.
+
 ## 2026-09-28 — Codex — Stübe catalogue and VA 2416 edition scan
 
 **Claimed:** TEXT-004

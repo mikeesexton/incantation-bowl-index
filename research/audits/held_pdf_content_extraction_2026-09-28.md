@@ -13,6 +13,8 @@ This audits registered PDF captures against bowl-level structured text and media
 - Brand's 2021 *Working List of Syriac “Manichaean” Incantation Bowls*: all 41 numbered references and three separately indexed contextual comparisons now have exact, page-linked private list excerpts. This three-page source is a dated bibliographic concordance; it contains no incantation edition or bowl image. The contextual mentions of CBS 16014, MS 2055/16, and MS 2055/25 are labelled as such, without making them additional numbered Syriac-script bowls.
 - Kedar's 2019 *Who Wrote the Incantation Bowls?*: 29 already indexed appearances now link to their five relevant table/discussion pages in 30 private working text rows. These page-level group extracts preserve the thesis's named-author, handwriting, and Semamit discussion without treating its interpretations as verified identifications. Two exact bowl photographs were retained as private page images with the source's institution credits: JNL Heb 4, 6079 (image 8, printed p. 134) and Gorea 2003 B2 (image 9, printed p. 135). The latter also has its bowl/image discussion separately indexed. Neither image has a public-release decision.
 - Stübe's 1895 *Jüdisch-babylonische Zaubertexte*: all 19 already indexed numbered catalogue appearances now have their exact descriptive page facsimiles in Mike Access (30 page links overall), including the two objects explicitly identified as inscribed skulls. VA 2416 has all six edition pages (printed pp. 22–27): the three Hebrew-script transcription pages and Stübe's three alternating German translation pages. The latter have three searchable, manually keyed working translation rows (printed pp. 23, 25, 27). Editorial placeholders mark uncertain Hebrew names; the rows need proofing from the linked facsimiles. The source PDF has no text layer. Twelve distinct PDF pages have private rendered derivatives, retaining the BSB digitization-use notice; no public reuse decision was made.
+- Ford's 2014 *Notes on Some Recently Published Magic Bowls*: all 16 indexed appearances now link to their exact commentary or edition pages (39 private links from 25 distinct PDF pages). Manually keyed working English translation blocks cover the two new editions AS 13 (printed p. 248) and Davidovitz 27 (p. 254), plus Ford's revised Museo Sefardí 1073 translation (p. 256). AS 13 has its bowl and exterior detail photographs (pp. 250–252); Davidovitz 27 its interior and exterior views (pp. 257–258); Museo Sefardí 1073 its two credited photographs (pp. 259–260). Original-script editions are visible on source-page facsimiles but are not searchable transcriptions because the scan has no text layer. The working translations need page proofing; no public reuse decision was made.
+- Archaeological Center Auction 57: all three bowl lots 440–442 now have their complete private lot descriptions and the shared, individually numbered photo page, with six linked page records. The catalogue's credit to Pavel Shrago is recorded. Lots 441–442 also retain the auction's attributed former Hillel Bar-Sadeh collection statements as claims; those claims do not verify the ownership chain or authenticity. The already indexed dimensions, condition, dealer dating and price estimates remain source claims. No public image reuse decision was made.
 
 These born-digital text-layer extractions have not had page-by-page scholarly proofing. Damaged lines, word spacing, restoration marks, typography, commentary, linguistic notes, introductory material, and indexes still need extraction or review.
 
@@ -31,14 +33,14 @@ These born-digital text-layer extractions have not had page-by-page scholarly pr
 | CAP-E1FB74EF0432 | Who Wrote the Incantation Bowls? | 29 | 30 | 2 |
 | CAP-FEA23FB9B4F1 | Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts… | 25 | 51 | 25 |
 | CAP-4C9D532C9194 | Jüdisch-babylonische Zaubertexte | 19 | 3 | 30 |
-| CAP-877D87C47D82 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection a… | 16 | 0 | 0 |
+| CAP-877D87C47D82 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection a… | 16 | 3 | 39 |
 | CAP-E77DD534FF79 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity | 14 | 28 | 0 |
 | CAP-138518C319C8 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums | 13 | 0 | 0 |
 | CAP-A5A03BFD5DC7 | Aramaic and Mandaic Magical Bowls | 9 | 0 | 0 |
 | CAP-9ACDF2639CDE | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia… | 6 | 0 | 0 |
 | CAP-5F60513AB552 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Mus… | 6 | 1 | 0 |
 | CAP-4C32F88FD318 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Mus… | 5 | 4 | 0 |
-| CAP-9CD9A67E0389 | Archaeological Center Auction 57 | 3 | 0 | 0 |
+| CAP-9CD9A67E0389 | Archaeological Center Auction 57 | 3 | 3 | 6 |
 | CAP-A514265C9E93 | Coupes à inscriptions magiques | 3 | 0 | 0 |
 | CAP-FCB6A9A42AA1 | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success | 3 | 4 | 1 |
 | CAP-FE8DC3F9FB6A | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success | 3 | 4 | 1 |
