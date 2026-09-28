@@ -19,7 +19,7 @@
 | Language | 1026 | 60.0% |
 | Script | 94 | 5.5% |
 | Text Edition | 18 | 1.1% |
-| Translation | 76 | 4.4% |
+| Translation | 84 | 4.9% |
 | Image | 356 | 20.8% |
 
 ## Completeness distribution

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for additional private Burberry 2020 scholarly translations",
+  "source_id": "SRC-53B93C8C8A0E",
+  "capture_id": "CAP-FEA23FB9B4F1",
+  "capture_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+  "private_manifest": "data/private/manifests/burberry_2020_acb_readings_2026-09-28.jsonl",
+  "private_manifest_sha256": "a17ad1e9c1126cd9efba05ac6bff89a0afaa0574eec20b40a9bda48ff8dca2d8",
+  "source_rights": "all_rights_reserved; private research only",
+  "texts": [
+    {
+      "id": "TXT-89124A9FADB5",
+      "object_id": "IBI-81F94A22A26C",
+      "text_type": "translation",
+      "locator": "ACB 6, printed p. 173"
+    },
+    {
+      "id": "TXT-E2D2C88EDAC9",
+      "object_id": "IBI-DE0859066564",
+      "text_type": "translation",
+      "locator": "ACB 9, printed pp. 219–220"
+    },
+    {
+      "id": "TXT-D5B85946885D",
+      "object_id": "IBI-ED3F500BEC57",
+      "text_type": "translation",
+      "locator": "ACB 15, printed pp. 290–291"
+    },
+    {
+      "id": "TXT-FCB4AFBE9ADC",
+      "object_id": "IBI-329BB470A7D9",
+      "text_type": "translation",
+      "locator": "ACB 17, printed p. 307"
+    },
+    {
+      "id": "TXT-09AFE5D25472",
+      "object_id": "IBI-EDB0D53FD0F9",
+      "text_type": "translation",
+      "locator": "ACB 18, printed p. 310"
+    },
+    {
+      "id": "TXT-017850192419",
+      "object_id": "IBI-A3889D8F55BA",
+      "text_type": "translation",
+      "locator": "ACB 19, printed Fragment A, p. 314"
+    },
+    {
+      "id": "TXT-406792F4ACB7",
+      "object_id": "IBI-A3889D8F55BA",
+      "text_type": "translation",
+      "locator": "ACB 19, printed Fragment B, p. 315"
+    },
+    {
+      "id": "TXT-83B8FA5A0A80",
+      "object_id": "IBI-246B77780790",
+      "text_type": "translation",
+      "locator": "ACB 21, printed p. 323"
+    },
+    {
+      "id": "TXT-EE68B3D7EF7D",
+      "object_id": "IBI-23AA6305D277",
+      "text_type": "translation",
+      "locator": "ACB 22, printed p. 328"
+    }
+  ],
+  "scope_note": "Nine checked translation rows for eight ACB bowl records. ACB 19 has separate rows for its two non-joining fragments. Printed wraps were joined; source brackets and line numbering retained. ACB 21 printed boxes around divine names require consultation of the source page."
+}
