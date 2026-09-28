@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Jena translation columns and page-layout repair
+
+**Claimed:** TEXT-004
+**Corpus:** changed (22 protected translations and nine section supplements) — state digest `feaccb44a1dc`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source, extractor and manifest hashes verified
+
+- Extracted page-specific English translation columns for 22 further Jena edited entries, including fragmentary and Mandaic/Syriac sections, with printed line numbers, capture hash, exact page spans, editor attribution and private copyrighted status. Jena now has 36 separately indexed translations among its 40 edited entries. The other four (4, 16, 21, 27) have no separately usable English translation in this catalogue; their complete source sections and page images remain available privately.
+- Rendered source pages revealed nine portions emitted before their own entry heading by the PDF text stream. Added them as nine protected supplements to those same entries, correcting gaps in the prior full-section pass without overwriting the earlier rows. The Jena source now has 127 text rows and 96 figure-page records across 68 indexed appearances. A private manifest and text remain outside Git; checked-in extractor and content-free receipt record page zones and hashes.
+- Rebuilt Mike Access with 1,161/1,161 text rows, 904/904 media rows, 557 local images and all 59 captures; all seven private checks passed. The English columns are working text-layer readings: italic word order, glyph damage, brackets and typography need source-page proofing. Next separate original-script editions for 26 edited entries, proof the English rows, and review entry 69's assorted fragments without treating one storage box as one bowl. Took and integrity-checked a pre-batch backup and retained the newest ten database backups. No public-release decision changed.
+
 ## 2026-09-28 — Codex — Jena catalogue full-section extraction
 
 **Claimed:** TEXT-004
