@@ -1,7 +1,8 @@
 {
-  "corpus_digest": "cdda1a38bc7724bcf9bc3925ea2cdf3f4a9adaab62d0030a7030e0349155ebbf",
+  "corpus_digest": "ac42a60f6ac427fc57329bce72f28b73883781221c01226e8ab62d73c01cba38",
   "migrations": 18,
-  "recorded_at": "2026-09-28T15:22:48+00:00",
+  "note": "Levene 2013 private content extraction for 30 appearances",
+  "recorded_at": "2026-09-28T15:31:55+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -34,8 +35,8 @@
       "rows": 137
     },
     "claims": {
-      "digest": "2f915310f49f1df4056e2d1fd16889af26953a5e41fbbe59c3a5f31742fc3bdf",
-      "rows": 8953
+      "digest": "28a8ae3690a27b6d4958de8c81aae47044d7f81b91d8ba68f54b9f57ee5abe09",
+      "rows": 8980
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -74,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "18309c3007a31bd214434b51b8c90ed2d703bb6d9abc631e3c8d1689f5926e12",
-      "rows": 731
+      "digest": "9cf40818b6515f9e18138a5545dcaec0e279feff45dbc73e7f3f0921675e7a06",
+      "rows": 768
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -146,8 +147,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "e4e0635082d18b4349f7717af5abeac7705cd5ac230a5ccd50547763b30a7232",
-      "rows": 941
+      "digest": "6743d9355c954e187381ed6aa3e5eee341248a9a94977f0560e4fa6bb365a174",
+      "rows": 1031
     }
   }
 }

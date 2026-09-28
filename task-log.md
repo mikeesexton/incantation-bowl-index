@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Levene curse-text private extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (90 protected text rows, 37 media rows, 27 factual claims) — state digest `ac42a60f6ac4`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; manifest hash verified
+
+- Extracted Levene 2013's 30 indexed curse-text appearances into full private edited-section extracts, plus separate working English translations and Hebrew-script transcriptions. Preserved 37 photograph-page links covering all 14 newly edited appearances; the other 16 sections provide readings of previously published texts but no new bowl plates in this volume. Added 27 source-reported dimensions/location claims. VA.2496 and VA.2575 retain the joint comparative section rather than an invented line attribution. Protected payload and manifest remain outside Git, with content-free hash receipts checked in.
+- Rebuilt Mike Access with 1,031/1,031 text rows, 768/768 media rows, 421 local image derivatives and all 59 registered captures; 7/7 private checks passed. All 90 new text rows are visible privately and withheld from the public projection. The held-PDF proxy now has 13 of 33 appearance-bearing sources with no text/media and 234 of 852 appearances with translation, original-language rendering and image.
+- The PDF interleaves English and Hebrew. Its automatic reading split, Hebrew character order, damaged glyphs and line breaks need page proofing. Pognon 1898 remains next, requiring page-based OCR because its held scan has a damaged text layer; continue Jena's remaining entries afterward.
+
 ## 2026-09-28 — Codex — Berlin catalogue private extraction
 
 **Claimed:** TEXT-004
