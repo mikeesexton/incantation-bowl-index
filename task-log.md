@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — final three empty held PDF sources
+
+**Claimed:** TEXT-004
+**Corpus:** changed (four private texts, 15 page links and six attributed claims across three appearances) — state digest `e877e6f7d71d`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source, manifest and all 15 page-image hashes verified
+
+- Gordon's *An Aramaic Exorcism* now contributes a full private working OCR extract for text G (printed pp. 466–474), its separately indexed English translation (pp. 470–471), all four plates XXII–XXV and 13 exact source-page links. Its original-script OCR is garbled; the plates show the inscription privately, but no unreliable transcription was declared.
+- Waller's state-of-the-art chapter now has its BM 91711 printed-p. 13 discussion and facsimile, with an attributed uncertain claim for the accession register's Arban findspot and Waller's explicit reservation. This is contextual evidence, not a bowl edition. Oriental Institute highlight 27 now has OIM A32675's exact photograph page, a project-authored factual summary and five attributed facts. Its PDF permits printing but disables text copying, so the restricted prose layer was not extracted; the entry has no inscription edition or translation.
+- Private manifests remain outside Git; content-free receipts bind source PDFs, manifests, extractor and all 15 page images. Took and integrity-checked a pre-batch database backup and kept the newest ten. Rebuilt Mike Access with 1,351/1,351 private texts, 1,089/1,089 media rows, 742 local images and all 59 captures. Every one of the 33 appearance-bearing held-PDF sources now has source-linked text or media. This is a source-level inventory floor; page proofing, missing original-script transcriptions and item-level gaps remain. No public reuse decision changed.
+
 ## 2026-09-28 — Codex — Gordon 1934 and 1937 bowl editions
 
 **Claimed:** TEXT-004
