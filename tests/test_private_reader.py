@@ -1,12 +1,14 @@
+import io
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from bowl_index.db import connect, migrate
 from bowl_index.ingest import add_candidate
 from bowl_index.private_projection import PrivateResearchProjection, private_manifest
 from bowl_index.projection import PROJECTION_COLUMNS, Projection
-from bowl_index.web import CorpusCatalog
+from bowl_index.web import CorpusCatalog, make_handler
 
 
 class PrivateReaderTests(unittest.TestCase):
@@ -96,6 +98,48 @@ class PrivateReaderTests(unittest.TestCase):
         self.assertEqual(tables["media"][0]["url"],
                          f"/api/private-media/{media_id}.png")
         self.assertEqual(projection.gate_counts(tables["texts"])["media_local_derivative_rows"], 1)
+
+    def test_local_reader_links_registered_capture_without_exposing_its_path(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        archive = Path(self.temp.name) / "archive"
+        (archive / "sha256").mkdir(parents=True)
+        capture = archive / "sha256" / "document.pdf"
+        capture.write_bytes(b"%PDF-1.4\nprivate fixture")
+        self.conn.execute(
+            "INSERT INTO captures (id,source_id,url,retrieved_at,storage_path,mime_type,"
+            "sha256,byte_length,rights_status) VALUES (?,?,?,?,?,?,?,?,?)",
+            ("CAP-ABCDEF123456", source_id, "https://example.org/private-document.pdf",
+             "2026-09-28T00:00:00Z", "sha256/document.pdf", "application/pdf",
+             "0" * 64, capture.stat().st_size, "copyrighted"),
+        )
+        self.conn.commit()
+        with patch("bowl_index.web.PRIVATE_ARCHIVE_ROOT", archive):
+            catalog = CorpusCatalog(self.path)
+            text = catalog.reader_table("texts", {})["rows"][0]
+            self.assertEqual(text["access_url"], "/api/private-captures/CAP-ABCDEF123456")
+            self.assertEqual(catalog.private_capture("CAP-ABCDEF123456"),
+                             (capture.resolve(), "application/pdf"))
+            self.assertIsNone(catalog.private_capture("../../document.pdf"))
+            self.assertNotIn(str(archive), str(catalog.reader_manifest()))
+
+            class Socket:
+                def __init__(self):
+                    self.input = io.BytesIO(
+                        b"GET /api/private-captures/CAP-ABCDEF123456 HTTP/1.0\r\n"
+                        b"Host: localhost\r\n\r\n"
+                    )
+                    self.output = io.BytesIO()
+                def makefile(self, *args, **kwargs):
+                    return self.input
+                def sendall(self, data):
+                    self.output.write(data)
+
+            sock = Socket()
+            make_handler(catalog, "test-token")(sock, ("127.0.0.1", 12345), None)
+            headers, body = sock.output.getvalue().split(b"\r\n\r\n", 1)
+            self.assertIn(b"200 OK", headers)
+            self.assertIn(b"Cache-Control: no-store", headers)
+            self.assertEqual(body, capture.read_bytes())
 
 
 if __name__ == "__main__":

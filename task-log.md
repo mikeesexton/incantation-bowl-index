@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Mike Access private-content audit and first extraction
+
+**Claimed:** ACCESS-002, ACCESS-010, TEXT-004
+**Corpus:** changed (Cook 1992 attributed private translation and figure page image) — state digest `e2aa64537b21`
+**Tests:** 326 Python and 13 JavaScript passed; archive verification valid; private build 6/6 checks passed; `git diff --check` clean
+
+- Audited Mike Access against held sources. All 309 stored text and 355 media rows now appear privately, but 17 of 26 complete held, scope-reviewed editions or catalogues have no structured text or media. Only eight images are locally retained. The local research console now opens 59 registered source captures from 56 sources by opaque ID; the static remote snapshot still packages none.
+- Recorded the private-ingestion policy explicitly: retain available scholarly inscriptions, transcriptions, translations and pictures from lawfully held sources with attribution and locators. Cook 1992's translation and figure page are the first source-checked private ingestion under this policy; protected text and raster stay outside Git, bound by a content-free receipt. The original-script OCR was unusable and needs manual transcription.
+- Corrected the static Mike build's completeness language and the roadmap. No public rights approval or deployment occurred. Next: extract held editions source by source, starting with the 17 zero-content works, and design Mike-only remote source-scan delivery before calling remote Access complete.
+
 ## 2026-09-28 — Codex — Hunter's Nippur bowl publication gap
 
 **Claimed:** DISC-002

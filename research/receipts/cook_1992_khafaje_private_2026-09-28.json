@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for private scholarly text and image ingestion",
+  "source_id": "SRC-FF4308945F0F",
+  "object_id": "IBI-B8B09844C8B9",
+  "capture_id": "CAP-25073D24CC38",
+  "capture_sha256": "1e5a426aa7bf94799af27892100f3b71ed029e50242df1c15e67c021f608a987",
+  "private_manifest": "data/private/manifests/cook_1992_khafaje_private.jsonl",
+  "private_manifest_sha256": "af1c2373fb999929e6a485bf03cb5c881b30663ac22c885a4bfc3ada9f769b51",
+  "translation": {
+    "text_id": "TXT-AF1855D17767",
+    "source_locator": "p. 79, lines 1–5",
+    "editor": "Edward M. Cook",
+    "public_ok": false
+  },
+  "image": {
+    "media_id": "MED-E6EBB0B5E59D",
+    "source_locator": "fig. 1, printed p. 80, PDF p. 2",
+    "private_derivative": "data/private/media/MED-E6EBB0B5E59D.png",
+    "private_derivative_sha256": "61764e558bd496c8bd8ff99ab51cd1a586712a4cd64914cde70204ad39997015",
+    "render_command": "pdftoppm -f 2 -l 2 -singlefile -r 150 -png <archived-pdf> <private-derivative-without-extension>"
+  },
+  "unextracted": "Original-script lines require manual visual transcription; PDF OCR was unusable."
+}

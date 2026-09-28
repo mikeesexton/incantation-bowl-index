@@ -28,6 +28,8 @@ from .publication_assessments import current_publication_assessments
 WEB_ROOT = PROJECT_ROOT / "web"
 PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 PRIVATE_MEDIA_NAME = re.compile(r"^MED-[A-F0-9]{12}\.png$")
+PRIVATE_ARCHIVE_ROOT = PROJECT_ROOT / "data" / "private" / "archive"
+PRIVATE_CAPTURE_NAME = re.compile(r"^CAP-[A-F0-9]{12}$")
 INTRO_COVERAGE = ("text_edition", "provenance", "image")
 
 
@@ -181,7 +183,9 @@ class CorpusCatalog:
             # The local reader is Mike's private research bank. It intentionally
             # shows every stored text and media URL, while static release builders
             # continue to use the fail-closed public Projection.
-            projection = PrivateResearchProjection(conn)
+            projection = PrivateResearchProjection(
+                conn, capture_base="/api/private-captures/"
+            )
             projection_tables = projection.tables()
             controlled_facets = defaultdict(lambda: defaultdict(set))
             for facet in projection_tables["facets"]:
@@ -293,6 +297,28 @@ class CorpusCatalog:
         window = rows[offset:offset + limit] if limit > 0 else rows[offset:]
         return {"table": name, "columns": list(PROJECTION_COLUMNS[name]),
                 "total": len(rows), "offset": offset, "rows": window}
+
+    def private_capture(self, capture_id):
+        """Resolve one registered archive file for the localhost research reader."""
+        if not PRIVATE_CAPTURE_NAME.fullmatch(capture_id):
+            return None
+        with closing(self.connection()) as conn:
+            row = conn.execute(
+                "SELECT storage_path,mime_type FROM captures WHERE id=?", (capture_id,)
+            ).fetchone()
+        if row is None:
+            return None
+        root = PRIVATE_ARCHIVE_ROOT.resolve()
+        candidate = (root / row["storage_path"]).resolve()
+        try:
+            candidate.relative_to(root)
+        except ValueError:
+            return None
+        if not candidate.is_file() or candidate.is_symlink():
+            return None
+        safe_types = {"application/pdf", "image/png", "image/jpeg", "image/webp", "image/tiff"}
+        mime_type = row["mime_type"] if row["mime_type"] in safe_types else "application/octet-stream"
+        return candidate, mime_type
 
     @_catalog_locked
     def stats(self):
@@ -655,6 +681,16 @@ def make_handler(catalog, token):
                         body = candidate.read_bytes()
                         self._headers(200, "image/png", len(body))
                         self.wfile.write(body)
+                elif path.startswith("/api/private-captures/"):
+                    result = catalog.private_capture(path.rsplit("/", 1)[-1])
+                    if result is None:
+                        self._error(404, "Private source capture not found")
+                    else:
+                        capture_path, mime_type = result
+                        self._headers(200, mime_type, capture_path.stat().st_size)
+                        with capture_path.open("rb") as handle:
+                            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                                self.wfile.write(chunk)
                 elif path == "/api/reviews":
                     self._json(catalog.reviews(params))
                 elif path.startswith("/api/reviews/"):

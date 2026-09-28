@@ -1,8 +1,9 @@
-"""Build Mike's complete, single-user private research surface.
+"""Build Mike's structured, single-user private research surface.
 
 This is not a release builder. It uses ``PrivateResearchProjection`` and retains
 every stored text, recorded media row and source wording available to Mike's
-private reader. The generated directory contains protected third-party material,
+private reader. Archived source scans are still served by the localhost reader
+and are not packaged in this static snapshot. The generated directory contains protected third-party material,
 is ignored by Git, and must never be promoted until a Cloudflare Access policy
 admits Mike alone. Any shared or public reader must use ``Projection`` instead.
 """
@@ -108,8 +109,10 @@ def inventory(projection, tables, manifest):
         "corpus_state_digest": corpus_fingerprint(projection.conn)["corpus_digest"],
         "access": {
             "audience": "Mike alone",
-            "status": "pending_single_user_access_gate_and_explicit_deployment",
+            "status": "pending_single_user_access_gate_and_source_document_delivery",
             "shared_or_public_use": "forbidden; rebuild with Projection",
+            "source_captures_held": projection.capture_count,
+            "source_captures_packaged": 0,
         },
         "projection_counts": {name: len(rows) for name, rows in tables.items()},
         "private_counts": projection.gate_counts(tables["texts"]),
@@ -230,12 +233,13 @@ SHELL = """<!doctype html>
 <a class="skip-link" href="#explore-view">Skip to the bowls</a>
 <header class="preview-bar">
   <strong><span class="preview-seal" aria-hidden="true">&#x10840;</span>Bowlam</strong>
-  <small>Mike Access &middot; complete personal research bank</small>
+<small>Mike Access &middot; structured personal research bank</small>
 </header>
 <main><section id="explore-view" class="reading-room" aria-labelledby="explore-title"></section></main>
 <footer class="preview-foot">
-  <p>Private research access for Mike alone. This surface includes complete held
-     texts and recorded images; it is not a public or shared release.</p>
+  <p>Private research access for Mike alone. This surface includes all stored
+     text rows and recorded image links; archived source scans remain in the
+     local vault. It is not a public or shared release.</p>
   <p><a href="private-snapshot.json">Private snapshot inventory</a>
      &middot; built __GENERATED__.</p>
 </footer>

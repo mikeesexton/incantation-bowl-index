@@ -2,9 +2,18 @@
 
 This is the package contract for OCR and corrected scholarly text kept in the
 private research layer. It does not authorize publication, licensing, sharing or
-corpus import. The text packages live under `data/private/rich_text/`, which is
+automatic corpus import. The text packages live under `data/private/rich_text/`, which is
 Git-ignored, encrypted at rest with the research machine's storage controls and
 included in the private backup set.
+
+Mike Access should retain the edition's own inscription, transcription or
+transliteration, and scholarly translation when lawfully obtained and available.
+Preserve the editor's attribution, printed-page and bowl locators, capture hash,
+and uncertainty marks. A project-authored replacement translation is optional,
+not a prerequisite for private access. Use a separate private ingestion manifest
+to add reviewed bowl-level rows to the working database; the TEI package alone
+does not import them. See the current gap audit in
+[`research/audits/mike_access_content_coverage_2026-09-28.md`](../research/audits/mike_access_content_coverage_2026-09-28.md).
 
 Private ingestion manifests that carry protected text or quotation live under
 `data/private/manifests/` for the same reason. A content-free tracked receipt may

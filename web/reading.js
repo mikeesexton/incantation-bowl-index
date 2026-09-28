@@ -549,6 +549,11 @@
               <strong>${m.media_private_rows}</strong> are private-only because no public reuse
               approval is recorded. Publication links connect ${publicationObjects.size.toLocaleString()}
               candidate records to ${publicationIdentities.size.toLocaleString()} bowl identities.</p>
+            <p><strong>${m.source_captures_recorded_rows || 0}</strong> source captures are held in
+              the private vault. ${m.source_capture_sources_linked
+                ? `${m.source_capture_sources_linked} source records link to a local copy in this reader.`
+                : `This static snapshot does not package the source scans; open the local research console to consult them.`}
+              Recorded image links are not necessarily retained image files.</p>
           </details>` : `<p class="standfirst-note">Reuse terms appear with each included text
           or image. When modern wording cannot be shown, its citation and locator remain available.</p>
           <details class="about-preview"><summary>About this preview and its coverage</summary>

@@ -18,9 +18,17 @@ DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 class PrivateResearchProjection(Projection):
     """A private reader snapshot; never use it in a shared or public builder."""
 
-    def __init__(self, conn, media_root=None):
+    def __init__(self, conn, media_root=None, capture_base=None):
         super().__init__(conn)
         self.media_root = Path(media_root or DEFAULT_PRIVATE_MEDIA_ROOT)
+        self.capture_base = capture_base
+        self.capture_links = {}
+        if capture_base:
+            for row in conn.execute(
+                "SELECT id,source_id FROM captures ORDER BY retrieved_at,id"
+            ):
+                if row["source_id"]:
+                    self.capture_links[row["source_id"]] = capture_base + row["id"]
 
     def guard(self, name, rows):
         """Keep local capture paths out of the browser even in the private view."""
@@ -40,10 +48,19 @@ class PrivateResearchProjection(Projection):
             for row in self.conn.execute("SELECT id,content FROM texts")
         }
         for row in rows:
+            if row["source_id"] in self.capture_links:
+                row["access_url"] = self.capture_links[row["source_id"]]
             if row["content_status"] == "included":
                 continue
             row["content_status"] = "private_research"
             row["content"] = content[row["id"]]
+        return rows
+
+    def _editions(self):
+        rows = super()._editions()
+        for row in rows:
+            if row["source_id"] in self.capture_links:
+                row["access_url"] = self.capture_links[row["source_id"]]
         return rows
 
     def _fact_candidates(self, retain_source_wording=True):
@@ -112,6 +129,8 @@ class PrivateResearchProjection(Projection):
                 row["release_class"] == "review_source_wording" for row in facts
             ),
             "facts_withheld_wording_rows": 0,
+            "source_captures_recorded_rows": self.capture_count,
+            "source_capture_sources_linked": len(self.capture_links),
         }
 
 

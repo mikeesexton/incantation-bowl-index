@@ -54,6 +54,19 @@ must expose the complete lawfully held research record through
 `PrivateResearchProjection`, including protected text and recorded images. Do
 not apply public text or media-reuse gates to Mike Access.
 
+For Mike Access, extract and retain the inscriptions, scholarly transcriptions,
+transliterations, and translations that occur in lawfully held sources, with the
+scholar's attribution, exact object and page locator, capture hash, and any
+uncertainty or editorial intervention. Preserve the scholar's translation when
+it is available; making a new translation is optional research, not a condition
+for private access. Retain lawfully obtained bowl photographs and plates in the
+private vault when source-specific copying conditions allow it, even when public
+reuse is unapproved. A link to a book or an image is a useful pointer, but does
+not count as capture of the inscription, translation, or image itself. Keep
+protected payloads and their ingestion manifests outside Git. Record private
+availability separately from public-release status, and never let a public gate
+remove material from Mike's personal view.
+
 The shared scholar preview and public library consume the reviewed
 public-reference projection and continue to fail closed. Cloudflare Access by
 itself does not define the tier: a route open to any person besides Mike is a

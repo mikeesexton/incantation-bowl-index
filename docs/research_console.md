@@ -77,6 +77,16 @@ labelled **Search**.
 - **Enrichment** (`#/queues`) presents mutually exclusive next-action queues and field-coverage totals. Selecting a queue returns to a filtered identity list.
 - **Concordance** (`#/reviews`) has no tab of its own; reach it from Enrichment's "Open workbench" or by typing the route. It compares candidate identities side by side, displays all matching evidence, and records a reversible same-object, different-object, or insufficient-evidence decision.
 
+The local Mike-only reader exposes every stored text row and recorded image URL,
+independent of public-release approval. Where the source has a retained capture,
+its text and edition pointer opens that archived file through
+`/api/private-captures/<capture-id>`. The route accepts only an exact registered
+capture ID, resolves files inside the private archive, and streams them with
+`Cache-Control: no-store`. Archived PDFs let Mike inspect inscriptions, editions,
+translations and plates before their contents are structured as bowl-level rows.
+The static Mike build does not contain these source scans; see the
+[content-coverage audit](../research/audits/mike_access_content_coverage_2026-09-28.md).
+
 ## Review safety
 
 The console is read-only except for explicit concordance decisions. A decision requires a written evidence note, updates the existing dedupe record, and appends a new `manual_ui_review` evidence row documenting the previous and new states. It never deletes or rewrites an object record. Review writes require a random token delivered only to the loaded local page.
