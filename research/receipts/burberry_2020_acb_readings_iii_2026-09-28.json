@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "purpose": "Content-free receipt for two more private Burberry 2020 scholarly translations",
+  "source_id": "SRC-53B93C8C8A0E",
+  "capture_id": "CAP-FEA23FB9B4F1",
+  "capture_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+  "private_manifest": "data/private/manifests/burberry_2020_acb_readings_iii_2026-09-28.jsonl",
+  "private_manifest_sha256": "d6110f76cfef0cab7d141d128826bb1689016927c98f35ea8a30042109d12c7f",
+  "source_rights": "all_rights_reserved; private research only",
+  "texts": [
+    {
+      "id": "TXT-918C4B0AE9AA",
+      "object_id": "IBI-92B45966E014",
+      "text_type": "translation",
+      "locator": "ACB 2, printed pp. 126–128"
+    },
+    {
+      "id": "TXT-65F68A66E825",
+      "object_id": "IBI-D26113736570",
+      "text_type": "translation",
+      "locator": "ACB 13, printed pp. 279–281"
+    }
+  ],
+  "scope_note": "Two page-checked translation rows for ACB 2 and 13. Printed line numbers and damage brackets are retained. ACB 13 strikethrough and typography require the source page before quotation."
+}

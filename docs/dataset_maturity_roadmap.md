@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-28T11:42:42+00:00`
+Generated: `2026-09-28T11:47:52+00:00`
 
 ## Portfolio status
 
@@ -91,7 +91,7 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 | Probable/confirmed identities with a publication reference | 798/1052 (75.9%) |
 | Probable/confirmed identities reviewed as having no known edition | 0/1052 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 798/1052 (75.9%) |
-| Identities with a translation | 89 |
+| Identities with a translation | 91 |
 | Scan-checked normalized reading texts | 39 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 895/895 |
@@ -119,7 +119,7 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Language | 1026 | 60.0% |
 | Script | 94 | 5.5% |
 | Text Edition | 18 | 1.1% |
-| Translation | 89 | 5.2% |
+| Translation | 91 | 5.3% |
 | Image | 356 | 20.8% |
 
 ### Content-facet coverage

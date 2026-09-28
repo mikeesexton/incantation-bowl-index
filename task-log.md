@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Continue Burberry private translations
+
+**Claimed:** TEXT-004
+**Corpus:** changed (two scholarly translation rows) — state digest `2f9c0d9103ba`
+**Tests:** 326 Python passed; archive valid; Mike build 6/6 private checks passed; receipt hash and two rows checked; `git diff --check` clean
+
+- Added page-checked private translations from Burberry 2020 for ACB 2 and 13, with printed line numbers, damage brackets, attribution, locators, capture hash and copyrighted/private flags. ACB 13's struck-through text and typography require the source PDF before quotation. Protected text and manifest remain outside Git; a content-free receipt records the batch. A database backup preceded ingestion.
+- Mike Access now includes all 330 stored text and 380 media rows. Five Burberry bowls still need translation extraction: ACB 7, 11, 12, 14 and 16. ACB 25 has no translation in the thesis. The remaining inscriptions need transcription, and no rights or identity decision changed.
+- Next: extract the five remaining Burberry translations, then transcriptions, and continue held-source extraction.
+
 ## 2026-09-28 — Codex — Further Burberry private extraction
 
 **Claimed:** TEXT-004
