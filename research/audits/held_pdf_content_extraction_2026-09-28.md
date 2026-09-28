@@ -6,6 +6,7 @@ This audits registered PDF captures against bowl-level structured text and media
 
 - Both complete *Aramaic Bowl Spells* volumes (Shaked, Ford, Bhayro 2013 and 2022): all 119 JBA entries have a private English translation, a working Hebrew-script transcription, and at least one photograph page. Volume one has 90 plate images; volume two has 66 photograph and 23 artist-impression figure page images. Across the volumes, 119 dimensions, 113 client descriptions, and 38 biblical-quotation lists were added as source claims.
 - Ford and Morgenstern’s 2020 Jena catalogue: 96 figure pages retained for all 68 previously indexed appearances. Fourteen first-section entries also have working English translation and Hebrew-script transcription rows. The remaining edition text and catalogue descriptions are still unextracted. The PDF contains entry 69 (HS 3070, printed pp. 243–244), a box of assorted fragments that is missing from this catalogue’s appearance set; an older Brand-list record exists. Its physical unity and scope require explicit review before a new object link.
+- Moriggi’s 2014 *Corpus of Syriac Incantation Bowls*: all 49 numbered entries now have a private English translation and Latin-script Syriac transliteration from the two-column edition. Fifty-eight illustrated pages are retained for 46 entries. Nos. 33, 43, and 44 have no illustration in this held volume; no. 33 points to a photograph in Salvesen 1998, while nos. 43–44 list none. The edition text is a working digital extraction and still needs line-by-line page proofing; source descriptions, commentary, and indexes are open.
 
 These born-digital text-layer extractions have not had page-by-page scholarly proofing. Damaged lines, word spacing, restoration marks, typography, commentary, linguistic notes, introductory material, and indexes still need extraction or review.
 
@@ -16,7 +17,7 @@ These born-digital text-layer extractions have not had page-by-page scholarly pr
 | CAP-2861B06070B4 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Pr… | 68 | 28 | 96 |
 | CAP-295A7FE7BF01 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One | 64 | 128 | 90 |
 | CAP-DE113C20CBBA | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two | 55 | 110 | 89 |
-| CAP-EA64131E5F1D | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Ant… | 49 | 0 | 0 |
+| CAP-EA64131E5F1D | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Ant… | 49 | 98 | 58 |
 | CAP-560EB584740F | Aramaic Incantation Texts from Nippur | 44 | 70 | 0 |
 | CAP-E1E6C8B56AD6 | Working List of Syriac ‘Manichaean’ Incantation Bowls | 44 | 0 | 0 |
 | CAP-EED4A3FE59EC | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et comm… | 30 | 0 | 0 |
@@ -60,6 +61,6 @@ These born-digital text-layer extractions have not had page-by-page scholarly pr
 ## Next extraction priority
 
 1. Finish Jena entry texts, including the Mandaic and Syriac-script sections with separate extraction methods, and resolve the missing entry 69 appearance from the source.
-2. Extract the Berlin catalogue and Moriggi’s Syriac corpus, the largest complete held editions still without bowl-level text/media.
+2. Extract the Berlin catalogue, the largest complete held edition still without bowl-level text/media, followed by Pognon 1898 and the Jewish Aramaic curse-text corpus.
 3. Proof the working readings against printed pages and extract source descriptions, image descriptions, commentary, and intertexts into attributed fields.
 4. Expand the inventory to held PDF material outside the registered capture ledger, with page/content-level coverage and explicit absence reasons.

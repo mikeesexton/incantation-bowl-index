@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Moriggi private Syriac corpus extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (98 private text rows and 58 retained illustrated pages) — state digest `470f16c0cd0d`
+**Tests:** 327 unittest tests pass; Mike Access private build audit 7/7; SQLite integrity and foreign keys pass; rebuilt manifest hash matches receipt
+
+- Extracted Moriggi 2014's numbered bowls 1–49 into 49 attributed English translations and 49 Latin-script Syriac transliterations, with printed-page locators and the held PDF's SHA-256. Retained 58 illustrated page images across 46 bowls. Nos. 33, 43, and 44 have no image in this volume; no. 33 refers to an external Salvesen photograph, and nos. 43–44 list none.
+- Built the local Mike Access snapshot with all 724 private text rows, 713 media rows, 366 local image derivatives, and all 59 source captures. The protected manifest and images remain outside Git; checked-in receipts record hashes, counts and page mappings. No public reuse decision changed.
+- The two-column text extraction is a working reading, not a line-by-line scholarly proof. Continue with the Berlin catalogue and Jena's remaining texts, then proof working readings and extract edition descriptions, commentary, and indexes.
+
 ## 2026-09-28 — Codex — ABS volume two and Jena catalogue extraction
 
 **Claimed:** TEXT-004
