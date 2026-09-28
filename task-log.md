@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Pognon French translation spans
+
+**Claimed:** TEXT-004
+**Corpus:** changed (31 protected French translation OCR rows) — state digest `d27cead7355f`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; manifest and extractor hashes verified
+
+- Separated bounded French translation spans for all 31 Pognon Khouabir entries (36,184 OCR characters) from the held historical scan, with exact printed/PDF page ranges, editor attribution, capture SHA-256 and private status. Entries 3 and 29 retain distinct interior and exterior passages in one appearance-level translation row. The prior 31 complete section OCR rows, 106 text-page facsimiles and 30 plate drawings remain. A content-free receipt and reproducible extractor are checked in; protected manifest content stays outside Git.
+- Rebuilt Mike Access with 1,213/1,213 texts, 904/904 media rows, 557 local images and all 59 captures; all seven private checks passed. The held-PDF coverage proxy rises to 361 of 853 appearances with a source-linked translation; 252 have translation, original-language rendering and visual record. Twelve of 33 appearance-bearing PDF sources still have no source-linked text/media.
+- These are working OCR spans: page footnotes, line-end hyphenation, glyphs and spacing need page proofing. The Mandaic text layer remains corrupt and is not classified as a transcription. Next proof these French rows from the facsimiles, recover Mandaic readings from page images, and extract from zero-content held sources. Took and integrity-checked a pre-batch backup and retained the newest ten. No public-release decision changed.
+
 ## 2026-09-28 — Codex — Jena Hebrew and Syriac edition columns
 
 **Claimed:** TEXT-004

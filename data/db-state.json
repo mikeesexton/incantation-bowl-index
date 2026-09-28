@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "14d3eaf39460f93572af0d69744bac84f699301537d91526f677f870ef785154",
+  "corpus_digest": "d27cead7355f95931169493f1e0e58e60de49ba7fdd4f2807952fd4fa05c41f8",
   "migrations": 18,
-  "note": "Added 21 private Jena Hebrew and Syriac original-script working readings, rebuilt Mike Access, updated PDF coverage audit",
-  "recorded_at": "2026-09-28T21:44:59+00:00",
+  "note": "Separated all 31 Pognon French translation OCR spans for private Mike Access and rebuilt local access",
+  "recorded_at": "2026-09-28T21:57:39+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -147,8 +147,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "70b36e56ca8c2aeb87d67ea044c65a9e453d1fc2eb8b74b19e42a2b648bf67dc",
-      "rows": 1182
+      "digest": "153e92351c5d27933020e130a2e9c28084553d0b5ec4179eada825ef9aa573a4",
+      "rows": 1213
     }
   }
 }
