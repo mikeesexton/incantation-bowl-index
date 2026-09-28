@@ -1,7 +1,7 @@
 {
-  "corpus_digest": "5f73c9a5f5f260cb9281b54242ee88af66a757d33d0aaf6d542064f847ad8a06",
+  "corpus_digest": "9d8a8952f5b7e606fa52efa64170a381761ef61f9d10d85f039384b5b9a2e64e",
   "migrations": 18,
-  "recorded_at": "2026-09-27T20:42:24+00:00",
+  "recorded_at": "2026-09-28T01:43:55+00:00",
   "recorded_by": "claude",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -46,12 +46,12 @@
       "rows": 12
     },
     "dedupe_candidates": {
-      "digest": "85335c97ee6730634c17b29b11b666f42ad4f949ee69a3a1bf7b5a3df7800500",
-      "rows": 34772
+      "digest": "f8456383fced7d786f1f762b542bada6ea21395fbc4588f8b7a37029db400dc4",
+      "rows": 34793
     },
     "dedupe_evidence": {
-      "digest": "2e59d57065919df11ed5d5a5ecaca7024dc0db50ed018959febdb7eb025bbc56",
-      "rows": 34774
+      "digest": "44ebf24510911c9078d034c55379a16a8506bd73abddc2925900f39afcfa41a5",
+      "rows": 34795
     },
     "document_assessments": {
       "digest": "a2ac939e9030d07be21c4f3345774da63467cf068e35fa2cc3cce270aff7c15a",
@@ -66,7 +66,7 @@
       "rows": 4990
     },
     "leads": {
-      "digest": "2c7539fe2b9fbf27c69d574bedb12d5cbc4ce5ac32583f756a2ff155983786b4",
+      "digest": "fb76f2a1978738a7ff3c757ad36c66d27025845f07e2271ae4668b4db62f0705",
       "rows": 75
     },
     "manual_audits": {

@@ -25,6 +25,41 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Claude (Cowork) — Cross-scheme designation sweep
+
+**Claimed:** CONC-001 (British Museum pairs), TEXT-001
+**Corpus:** changed (21 researcher-identified same-object decisions, 1 lead
+note) — state digest `9d8a8952f5b7`
+**Tests:** 325 Python passed; copied-database dry run and idempotent replay;
+integrity passed
+
+- The exact-identifier queue only pairs records whose scheme and normalized
+  value match. So 'VA.2423' (Berlin catalogue) never met 'VA 2423' (Waller
+  table), and 'BM 91745' (collection designation) never met museum number
+  '91745'. I swept every institution-scoped identifier with one
+  normalization: punctuation and spacing stripped, the BM prefix and
+  registration formats unified.
+- Excluded from the sweep: source-scoped numbers (text numbers, NFP,
+  working-list numbers, bibliography letters, publication object keys),
+  URLs and IDs, and letterless short values.
+- Found 21 identity pairs:
+  - 13 British Museum (for example 91712-91776, 117882, 135563).
+  - 7 Vorderasiatisches Museum (VA 2423, 2509, 3383, 3853, 3854; VA Bab
+    2813/2814 joined).
+  - Geller 1976 bowl 2A.
+- None has conflicting claims on client, dimensions, lines, language,
+  script, findspot or material, so all 21 are merged under the
+  one-designation ruling
+  (`research/reviews/cross_scheme_designation_merges_2026-09-28.jsonl`).
+- Coverage falls in raw terms, from 817/1,073 to 797/1,053 (75.7%), because
+  most pairs had a link on one side: duplicates had been inflating the
+  numerator. The gate (843) is 46 away.
+- Closed the "twelve vs nine" question: JSTOR's book contents show
+  "Twelve" is the chapter number of Morgenstern 2012.
+- Next: a looser sweep that is still conflict-checked, for Penn CBS / museum
+  web IDs and Iraq Museum numbers written with and without 'IM'. Then back
+  to acquisition: Morgenstern–Abudraham and the Segal 2000 route.
+
 ## 2026-09-27 — Claude (Cowork) — Map Morgenstern 2021's five Moussaieff bowls
 
 **Claimed:** TEXT-001
