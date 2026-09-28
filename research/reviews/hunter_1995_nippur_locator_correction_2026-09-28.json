@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-28T02:12:34Z",
+  "scope": "Supersedes the two same-session links to correct Hunter 1994 footnote 4 from printed p. 606 to printed p. 605 after inspecting the complete 1994 PDF.",
+  "entries": [
+    {
+      "id": "IBI-PUBASSESS-HUNTER1995-18N18-CORR1",
+      "object_id": "IBI-5430A0855D0E",
+      "disposition": "linked",
+      "publication_source_id": "SRC-9A44D74C0872",
+      "evidence_source_id": "SRC-899462FAA735",
+      "evidence_locator": "Hunter 2021, printed p. 138, paragraph on the Nippur Area WG courtyard, citing Hunter 1995 p. 64",
+      "publication_locator": "Hunter 1995, p. 64 (as cited by Hunter 2021); full chapter pp. 61–75 according to CAL/IUCAT",
+      "basis": "Hunter 2021 identifies 18N18 as one of the two Aramaic bowls and cites Hunter 1995 p. 64 for its named client. Hunter 1994 p. 605 n. 4 independently says 18N18 and 18N98 were discussed in the forthcoming Combat and Conflict chapter, while distinguishing the later 18N20. The chapter is not held; this links the publication, not its reading.",
+      "supersedes_id": "IBI-PUBASSESS-HUNTER1995-18N18"
+    },
+    {
+      "id": "IBI-PUBASSESS-HUNTER1995-18N98-CORR1",
+      "object_id": "IBI-3192995163A4",
+      "disposition": "linked",
+      "publication_source_id": "SRC-9A44D74C0872",
+      "evidence_source_id": "SRC-899462FAA735",
+      "evidence_locator": "Hunter 2021, printed p. 138 n. 18 and paragraph on the Nippur Area WG courtyard",
+      "publication_locator": "Hunter 1995, pp. 61–77 (as cited by Hunter 2021 n. 18); CAL/IUCAT bibliography gives pp. 61–75",
+      "basis": "Hunter 2021 explicitly points to Hunter 1995 for a comprehensive discussion of 18N98 and five parallel texts. Hunter 1994 p. 605 n. 4 also names 18N98 among the two contemporary Aramaic bowls discussed there. The chapter is not held; this links the publication, not its reading or parallel-object identities.",
+      "supersedes_id": "IBI-PUBASSESS-HUNTER1995-18N98"
+    }
+  ]
+}

@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Hunter's Nippur bowl publication gap
+
+**Claimed:** DISC-002
+**Corpus:** changed (one chapter source, two publication links, one discovery lead, search log) — state digest `48440b7c1be5`
+**Tests:** 325 Python passed; SQLite integrity check passed; `git diff --check` clean
+
+- Hunter 1994 p. 605 n. 4 and Hunter 2021 p. 138 identify 18N18 and 18N98 as the two Aramaic Nippur bowls treated in Hunter's 1995 chapter. The chapter was absent from `sources`; added it and two object-level publication assessments, without claiming to hold its text or adopting a reading. Corrected the 1994 page locator through superseding assessments after inspecting the complete article PDF. Priority publication links rise from 796/1,052 to 798/1,052 (75.9%), leaving 44 to the 80% gate.
+- The open Hunter 2021 chapter also names twelve exact Nippur field numbers absent from current identifiers, including 18N71, 18N99, 18N100 and earlier-season fragments. Opened `IBI-LEAD-HUNTER2021-NIPPUR-OMISSIONS` for full page and figure review before candidate creation. Its 18N70 is an ostracon, so its scope needs separate attention.
+- Segal 2000 remains unheld. Next: check Hunter 2021's pages and cited excavation reports against the twelve designations; acquire Hunter 1995 for readings and terminal-page verification. The 1994 article and official ISAC chapter are accessible without Segal.
+
 ## 2026-09-28 — Claude (Cowork) — Second sweep; Moussaieff follow-up; Segal route
 
 **Claimed:** TEXT-001, SCHOL-005

@@ -1,8 +1,9 @@
 {
-  "corpus_digest": "a8e34735bdc931bc2c81c230626b8481ae6a8e5ef4ad0aaca4fe738b45eb0741",
+  "corpus_digest": "48440b7c1be59d8615ad40ea042cd516a9f13f8989d4e61042b93b9cc71b4bc6",
   "migrations": 18,
-  "recorded_at": "2026-09-28T01:50:27+00:00",
-  "recorded_by": "claude",
+  "note": "Added Hunter 1995 source, two Nippur publication links, and a checked omission lead",
+  "recorded_at": "2026-09-28T02:13:55+00:00",
+  "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
     "accuracy_audit_reviews": {
@@ -66,8 +67,8 @@
       "rows": 4990
     },
     "leads": {
-      "digest": "fb76f2a1978738a7ff3c757ad36c66d27025845f07e2271ae4668b4db62f0705",
-      "rows": 75
+      "digest": "b1f18976ab16a2d8a55a66d0db4f9d2db9ba79ec20290ae8d9bccf739504c865",
+      "rows": 76
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
@@ -102,8 +103,8 @@
       "rows": 2058
     },
     "publication_assessments": {
-      "digest": "729a8612549d1acec629df01c222b9f29c1a1acadf420b1bb0b70b33b5dad23c",
-      "rows": 235
+      "digest": "bd06d9dd19cdd7729502512395fe53464eb9901d7aa5edf1b52c6577900951fe",
+      "rows": 239
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -118,12 +119,12 @@
       "rows": 18
     },
     "search_queries": {
-      "digest": "64230fd2056c80b6dcb4426e9c1ebb32650b1cafe9b7cfc2759d22ccf1e39ca9",
-      "rows": 363
+      "digest": "2df7913c41dd4d136a9d773cc659e41e7cb8dfa484548301767943dc840498ad",
+      "rows": 366
     },
     "search_runs": {
-      "digest": "f71feba525d4869c823293157f66cc41ea310cdd9334930ad8bf95beb3f5ce5f",
-      "rows": 18
+      "digest": "5331ebfcbed74e99a20310c6ac176cf46afef53343c9651571a9f4e9d1cf328e",
+      "rows": 21
     },
     "source_corrections": {
       "digest": "4a0ef8e4f971418e86584875d6b5491495febf1f14bebd23ea1ce5bd14465cb3",
@@ -134,8 +135,8 @@
       "rows": 118
     },
     "sources": {
-      "digest": "cc644d280ed704e6207234685279936929eecd00b66a3960f660564767eb0c00",
-      "rows": 953
+      "digest": "c7fc96f724cb028940929c869f4f647e7a34c7c2df72cbb82d5f7bbdde2cf70e",
+      "rows": 954
     },
     "text_proofreading_reviews": {
       "digest": "6fa446bc7352da299d66007a05add7de347ea51173334ca8e06877fb1f774873",
