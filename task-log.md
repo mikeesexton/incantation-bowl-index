@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Ellis/Layard and Schwab historical editions
+
+**Claimed:** TEXT-004
+**Corpus:** changed (15 private working text rows and 24 page links for nine appearances) — state digest `b94dcfe40fb2`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source OCR, PDF, private manifest and page-image hashes verified
+
+- Paired the held Ellis/Layard 1853 and Schwab 1891 scans with hash-bound Internet Archive OCR companions kept in the private vault. Indexed all six Ellis and three Schwab numbered sections as bounded working OCR, with five Ellis English translation spans and Schwab N's qualified French translation separately searchable. Linked 16 and eight exact source-page facsimiles, respectively; rendered all 24 private page images. Ellis no. 3 lacks a separate translation, and Schwab O/P have no continuous separately published translations.
+- The OCR corrupts original-script glyphs, so none was represented as a transcription; the prose also needs page proofing. Private manifests remain outside Git, while content-free receipts bind the manifests and derivatives. Backed up and integrity-checked the database before ingest, keeping the newest ten backups. Rebuilt Mike Access with 1,311/1,311 private texts, 1,005/1,005 media rows, 658 local images and all 59 captures. Five of 33 appearance-bearing held-PDF sources still have zero source-linked content. No public reuse decision changed.
+- Next prioritize the two empty bowl-edition sources (Istanbul/Baghdad and Aramaic and Mandaic Magical Bowls), then recover original-script readings from facsimiles and proof working translations against pages.
+
 ## 2026-09-28 — Codex — Ford article and Auction 57 private extraction
 
 **Claimed:** TEXT-004

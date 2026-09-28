@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "b9884e65dc91b8213ab0502b574816b84ca3c0fbb38d624dd7e47050fc48116e",
+  "corpus_digest": "b94dcfe40fb22ff28e260e08ddb9f8f036d78844e1605ae7848dd11b4b267292",
   "migrations": 18,
-  "note": "Ford 2014 and Auction 57: six private text rows, 45 media links, six attributed claims",
-  "recorded_at": "2026-09-28T22:36:58+00:00",
+  "note": "Ellis/Layard 1853 and Schwab 1891: 15 private working OCR rows and 24 page links for nine appearances",
+  "recorded_at": "2026-09-28T23:10:22+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "67abee45ee7e598b7cc3ebf13c6c98aa2ce8cc3d2d6db471fd9fafa0ceb60c3d",
-      "rows": 981
+      "digest": "8929023d70e3322c2fdc7423f01f6397b35302eb06996478ec8bccc36d69f264",
+      "rows": 1005
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -147,8 +147,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "9e5a2a7cbffefc5ec3de776bedc7deeb7cc16c701a5be5c1da86d768a7bc0864",
-      "rows": 1296
+      "digest": "8bcc8d8953aa7050e94c40efb2b937137ed26399cf4092b411ec9a105ff52ca3",
+      "rows": 1311
     }
   }
 }
