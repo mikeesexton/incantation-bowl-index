@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Burberry original-script extraction
+
+**Claimed:** TEXT-004
+**Corpus:** changed (25 private transcription rows) — state digest `a311407cc840`
+**Tests:** 326 Python passed; archive valid; Mike build 6/6 private checks passed; 25 receipt rows and flags checked; `git diff --check` clean
+
+- Mike's `BurberryA.pdf` is byte-identical to the complete 477-page Burberry thesis already in the archive (SHA-256 `63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe`), so no second capture was made. Extracted its remaining 25 printed Hebrew-script transcription columns as private working rows: ACB 2–25, with ACB 19's two fragments separate. The original-script layout extraction reproduced the previously page-checked ACB 1 stored transcription exactly. A database backup preceded ingestion.
+- The thesis now has 26 transcription rows across all 25 ACB bowls and 25 translation rows across the 24 translated bowls; all 25 photograph pages remain retained. ACB 25 is source-described pseudotext and has no translation. The new text has source locators, editor, capture hash and private copyright flags; protected payload and manifest remain outside Git under a content-free receipt. Mike Access shows all 360 text and 380 media rows.
+- These are source-derived working transcriptions, not line-by-line independent proofing. Next: inspect damaged letters, boxes, strikeout and typography against the printed pages, then continue extraction from other complete held editions. No public rights or identity decision changed.
+
 ## 2026-09-28 — Codex — Finish Burberry translation coverage
 
 **Claimed:** TEXT-004

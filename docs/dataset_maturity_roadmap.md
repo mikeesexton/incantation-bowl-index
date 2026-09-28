@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-28T11:55:24+00:00`
+Generated: `2026-09-28T12:01:50+00:00`
 
 ## Portfolio status
 
@@ -97,7 +97,7 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 | Objects under a resolved publication | 895/895 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
-| Identities with a transcription/transliteration | 18 |
+| Identities with a transcription/transliteration | 42 |
 | Media records with a non-unknown rights status | 71/380 (18.7%) |
 | Media with a current ledger entry | 354/380 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
@@ -118,7 +118,7 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Material | 410 | 24.0% |
 | Language | 1026 | 60.0% |
 | Script | 94 | 5.5% |
-| Text Edition | 18 | 1.1% |
+| Text Edition | 42 | 2.5% |
 | Translation | 96 | 5.6% |
 | Image | 356 | 20.8% |
 
@@ -315,7 +315,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
   - Done when: Each of Montgomery's 40 bowl texts has a checked transliteration or a precise reason it cannot yet be captured.
 - [ ] **TEXT-004 — Capture held editions' inscriptions and translations for Mike Access** · In progress · Research
   - Done when: For each lawfully held edition, Mike Access has the available inscription, scholarly transcription or transliteration, scholarly translation and bowl image, or a documented item-specific reason for absence. Every private capture is attributed and page-located; shared/public release decisions remain independent.
-  - Evidence/status: The 11 September complete-volume batches indexed 450 appearances with volume and page locators but left held text largely unextracted. A 28 September audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media; Cook 1992 and Burberry 2020 now have private content. Burberry has all 25 ACB photograph plates, one scholarly transcription, and 25 private scholarly translation rows covering every one of its 24 translated ACB bowls; ACB 19 has two fragment rows. ACB 25 has no translation in the thesis, and 24 ACB transcriptions remain to be extracted. Some plain-text translation rows simplify boxes, typography and letter spacing, and point back to exact printed pages. Mike directed that scholarly transcriptions and translations be retained for his private research view from lawfully held sources, without requiring new translations. Private manifests and protected payloads stay outside Git. Other held editions remain an extraction backlog.
+  - Evidence/status: The 11 September complete-volume batches indexed 450 appearances with volume and page locators but left held text largely unextracted. A 28 September audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media; Cook 1992 and Burberry 2020 now have private content. Burberry has all 25 ACB photograph plates, 26 scholarly transcription rows covering all 25 bowls (ACB 19 has two fragments), and 25 private scholarly translation rows covering all 24 bowls with a printed translation. ACB 25 is source-described pseudotext without translation. The 25 newly ingested original-script rows are working extractions from the born-digital PDF, not independently proofread; the extraction method reproduced the previously page-checked ACB 1 row exactly. Damaged readings and source typography still require page-by-page proofing. Mike directed that scholarly transcriptions and translations be retained for his private research view from lawfully held sources. Protected payloads and manifests stay outside Git. Other held editions remain an extraction backlog.
 - [x] **TEXT-005 — Account for every main Montgomery entry and source exception** · Done · Research
   - Done when: All forty main entries have explicit publication, translation and register status; appendix material is separately scoped.
   - Evidence/status: 40-row cohort report: 35 checked reading texts, zero OCR drafts, and 5 source-documented cases with no separate translation (18, 21, 23, 27, 33). Appendix 42 remains a separate uncertain possible bowl candidate; Appendix 41 is explicitly a skull.
@@ -391,7 +391,7 @@ Maintain three non-interchangeable product surfaces: a private evidence vault fo
   - Evidence/status: Done 20 September 2026. bowlam.com/preview serves the expanded reviewed projection (252 published text rows and 298 approved media) behind a Cloudflare Access one-time-PIN policy on an allow-list; the free tier covers 50 named users. Built by scripts/build_scholar_preview.py from projection.Projection, the same release gate the file exporter and future public library use; Mike Access is a distinct private tier. Candidate a16b8f19061b was approved and deployed as production deployment a78d885f-18c7-46db-9c57-07f73ae1d211. Verified: bowlam.com remains public, bowlam.com/preview* redirects to Access including nested data paths, and the project and per-deployment Pages hosts answer 404 for preview paths.
 - [ ] **ACCESS-010 — Provide complete remote Mike Access** · In progress · Mike and engineering
   - Done when: Mike alone can reach the complete lawfully held research record remotely, including stored text, recorded images, and retained source scans; the identity policy admits no second user, alternate deployment hosts return 404, responses are private/no-store and noindex, and the private payload stays outside Git.
-  - Evidence/status: The local PrivateResearchProjection exposes all 335 stored text rows and 380 recorded image rows without public-release gates. The localhost research console now links registered source captures by opaque ID, while the static Mike snapshot still omits all 59 retained source files and includes 33 local image derivatives. The original content-coverage audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media rows; Burberry now has private text and image rows, reducing that zero-content cohort to 16. Remote access is not complete: it needs source-document delivery, private extraction of held inscriptions and translations, and a verified Mike-only identity policy before any deployment. The /mike host lock is checked in.
+  - Evidence/status: The local PrivateResearchProjection exposes all 360 stored text rows and 380 recorded image rows without public-release gates. The localhost research console now links registered source captures by opaque ID, while the static Mike snapshot still omits all 59 retained source files and includes 33 local image derivatives. The original content-coverage audit found 17 of 26 complete held, scope-reviewed editions or catalogues with no structured text or media rows; Burberry now has private text and image rows, reducing that zero-content cohort to 16. Remote access is not complete: it needs source-document delivery, private extraction of held inscriptions and translations, and a verified Mike-only identity policy before any deployment. The /mike host lock is checked in.
 
 ### META — Physical, chronological, linguistic, and provenance enrichment
 
