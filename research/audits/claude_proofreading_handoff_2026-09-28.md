@@ -2,7 +2,7 @@
 
 This handoff is a work order for the shared `incantation-bowl-index` checkout, not a claim that the remaining rows have been checked. It contains no protected source text.
 
-> **Status, end of Claude session (28 September 2026):** steps 1–3 are complete except the two joint VA.2496/VA.2575 Hebrew rows, which need a modelling decision. See the [continuation note](levene_geometry_proofing_2026-09-28.md#claude-continuation--all-but-the-joint-va2496va2575-hebrew). Step 4 (Jena) is next. The checkpoint figures below are the starting point of that session, kept for the record.
+> **Status, end of Claude session (28 September 2026):** steps 1–4 are done. All 60 Levene rows are checked, including VA.2496 and VA.2575 Hebrew, split into each bowl's own printed column on Mike's instruction. All 71 Jena rows are reviewed: 65 checked, six Syriac partial. See the [Levene continuation](levene_geometry_proofing_2026-09-28.md#claude-continuation--all-but-the-joint-va2496va2575-hebrew) and the [Jena note](jena_proofreading_2026-09-28.md). The checkpoint figures below are the starting point of that session, kept for the record.
 
 ## Current checkpoint
 

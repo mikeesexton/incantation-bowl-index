@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-29T02:02:54+00:00`
+Generated: `2026-09-29T03:07:39+00:00`
 
 ## Portfolio status
 
@@ -92,7 +92,7 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 | Probable/confirmed identities reviewed as having no known edition | 0/1053 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 799/1053 (75.9%) |
 | Identities with a translation | 381 |
-| Scan-checked normalized reading texts | 114 |
+| Scan-checked normalized reading texts | 181 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 896/896 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |

@@ -33,3 +33,5 @@ Claude compared 51 further Levene rows with rendered pages of the same held PDF 
 
 Levene is now **58 checked, 0 partial, 2 unreviewed** of 60 rows. Across all sources the ledger is **114 checked, 2 partial, 581 unreviewed out of 697** edition rows.
 
+**Follow-up, same day.** Mike decided that each bowl of the joint VA.2496/VA.2575 section should carry only its own printed Hebrew column. Both rows were rebuilt from their own column on PDF pp. 78–79, collated and checked ([receipt](../receipts/levene_claude_va2496_va2575_split_2026-09-28.json)); together they account for every Hebrew letter of the former merged text. The shared translation is unchanged. Levene is now **60 of 60 checked**.
+

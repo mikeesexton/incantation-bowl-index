@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "026f19f19938febc78ebeb6a1e99c5c03dfeabb7fe9c593e782ff81ba1b39d9f",
+  "corpus_digest": "13a99da32162cc1d0238ba9595df79bd899dc41559befafe7bac980dedfc8b11",
   "migrations": 18,
-  "note": "TEXT-004: 51 Levene rows scan-checked via two private proofreading manifests (24 English, 27 Hebrew); both Levene partial reviews closed; ledger 114/2/581 of 697",
-  "recorded_at": "2026-09-29T02:07:29+00:00",
+  "note": "TEXT-004: VA.2496/VA.2575 Hebrew split per Mike and checked; 71 Jena edition rows reviewed (65 checked, 6 Syriac partial); ledger 181/8/508 of 697",
+  "recorded_at": "2026-09-29T03:11:55+00:00",
   "recorded_by": "claude",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -139,15 +139,15 @@
       "rows": 954
     },
     "text_proofreading_reviews": {
-      "digest": "9b7722bdbe9d522224afe19475b7549e1e1cb11486d2fc42ca27c2520d372d20",
-      "rows": 120
+      "digest": "fbcff989a75afac84f4b32cdaad7663e85118782d602caf9a3e2d312a20b3809",
+      "rows": 193
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "43a9ea7a673de7ee57607b8a1c49427642a5f20769ff9b2dad1e4cefa3aa64ca",
+      "digest": "8e7939b9b09c6d6df728359c7c157281aef2ef051ea977792fe7d908e74ef5bc",
       "rows": 1351
     }
   }

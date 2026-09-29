@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Claude — VA.2496/VA.2575 split and Jena page proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (2 Levene and 71 Jena edition rows reviewed) — state digest `13a99da32162`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backups and the working database; manifest fingerprints matched pre-session snapshots
+
+- On Mike's decision, rebuilt VA.2496 and VA.2575 Hebrew so each row carries only its own printed column (PDF pp. 78–79) and checked both; the shared translation is unchanged. Levene is 60/60 checked. Receipt: `research/receipts/levene_claude_va2496_va2575_split_2026-09-28.json`.
+- Proofed all 71 Jena (Ford and Morgenstern 2020) edition rows against rendered pages: 36 English and 29 Hebrew-script rows checked; six Syriac rows partial because seyame placement was not collated mark by mark. Fixed reversed brackets and sigla, recorded grey partially preserved letters (U+0323) and raised letters (⸌ ⸍), removed fused footnote numerals, rejoined wraps, cleaned entry 20, and restored omitted continuation lines in entries 25, 28 and 40. Added `scripts/stage_jena_edition_columns.py` (staging aid) and `research/audits/jena_proofreading_2026-09-28.md`; updated the handoff status.
+- Ledger: 181 checked, 8 partial, 508 unreviewed of 697 edition rows (session start 114/2/581). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access (1,351 texts, 59 captures). Pre-batch backups taken through a verified VM-local copy; backups pruned to ten.
+- Not done: locator fields for Jena entries 25, 28 and 40 still name the shorter page span (needs a locator manifest); entry 16's printed translation has no row; entry 28's fragment a–d transcriptions and the four Mandaic originals are not rows. No public reuse decided. Next: ABS1/ABS2 Hebrew word spacing (119 rows), then Moriggi and Burberry on demand.
+
 ## 2026-09-28 — Claude — Levene English and Hebrew page proofing
 
 **Claimed:** TEXT-004
