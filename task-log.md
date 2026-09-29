@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-29 — Claude — Moriggi Syriac corpus page proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (all 98 Moriggi 2014 edition rows reviewed) — state digest `76abe7b1be2b`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backup and the working database; manifest fingerprints matched the pre-session snapshot
+
+- Rebuilt the transliteration and English columns of all 49 bowls in Moriggi 2014 (`SRC-3C4294DDB367`) from PDF glyph positions and compared them with rendered pages; all 98 rows ingested as `reading_text_checked` through two private manifests, receipts `research/receipts/moriggi_claude_{transliteration,english}_proofreading_2026-09-29.json`. Seyame and other combining marks are attached by drawn position (the text layer often stores them after the following letter or bracket); all 128 position/order disagreements were checked on 400 dpi crops. Line numbers now lead each line; English rows gained line numbers, headings and number-column labels, words dropped at section ends in 16 bowls, and bowl 47's final lines (printed underlining, shown with U+0332).
+- Added `scripts/stage_moriggi_edition_columns.py` (staging aid only) and `research/audits/moriggi_proofreading_2026-09-29.md`; noted the batch in the Claude handoff status.
+- Ledger: 517 checked, 8 partial, 172 unreviewed of 697 edition rows (session start 419/8/270). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access (1,351 texts, 59 captures). Pre-batch backup taken through the verified VM-local copy; backups pruned to ten.
+- Not done: no public reuse decided. Next: apply the position-based mark attachment to close the six partial Jena Syriac rows; then the Berlin VAM editions (51 and 30 rows), Mandaic Khouabir (31) and *Amulets and Magic Bowls* (28).
+
 ## 2026-09-29 — Claude — Aramaic Bowl Spells page proofing
 
 **Claimed:** TEXT-004

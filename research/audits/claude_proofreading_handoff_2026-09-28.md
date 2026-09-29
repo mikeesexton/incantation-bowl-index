@@ -2,7 +2,7 @@
 
 This handoff is a work order for the shared `incantation-bowl-index` checkout, not a claim that the remaining rows have been checked. It contains no protected source text.
 
-> **Status, end of Claude session (28 September 2026):** steps 1–4 are done. All 60 Levene rows are checked, including VA.2496 and VA.2575 Hebrew, split into each bowl's own printed column on Mike's instruction. All 71 Jena rows are reviewed: 65 checked, six Syriac partial. On 29 September Claude also checked all 238 *Aramaic Bowl Spells* vol. 1–2 edition rows ([ABS note](abs_proofreading_2026-09-29.md)). See the [Levene continuation](levene_geometry_proofing_2026-09-28.md#claude-continuation--all-but-the-joint-va2496va2575-hebrew) and the [Jena note](jena_proofreading_2026-09-28.md). The checkpoint figures below are the starting point of that session, kept for the record.
+> **Status, end of Claude session (28 September 2026):** steps 1–4 are done. All 60 Levene rows are checked, including VA.2496 and VA.2575 Hebrew, split into each bowl's own printed column on Mike's instruction. All 71 Jena rows are reviewed: 65 checked, six Syriac partial. On 29 September Claude also checked all 238 *Aramaic Bowl Spells* vol. 1–2 edition rows ([ABS note](abs_proofreading_2026-09-29.md)). All 98 Moriggi 2014 rows followed ([Moriggi note](moriggi_proofreading_2026-09-29.md)). See the [Levene continuation](levene_geometry_proofing_2026-09-28.md#claude-continuation--all-but-the-joint-va2496va2575-hebrew) and the [Jena note](jena_proofreading_2026-09-28.md). The checkpoint figures below are the starting point of that session, kept for the record.
 
 ## Current checkpoint
 
