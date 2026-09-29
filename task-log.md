@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Gordon and Ellis scan proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (five checked translation rows and one bounded partial review) — state digest `b8d09050844d`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source, manifest and corrected-text hashes verified
+
+- Completed page collation of Gordon 1934 B and 1937 L after resolving the prior partial reviews as fidelity checks of the printed English, while preserving Gordon's uncertainty rather than adjudicating the original-script names. Checked Gordon's separate text G translation on printed pp. 470–471, removing a page heading and repairing dropped words, punctuation and an OCR-damaged letter sequence. Gordon 1937 H received a partial review: prose, line markers and page boundaries were repaired, but dense demon-name strings still need full collation.
+- Checked the short Ellis 1853 English translations for bowls 5 and 6 on printed pp. 519 and 521, restoring several omitted lacunae and keeping the original-script editions separate. Ingested all six rows through private manifests into the append-only ledger, with a content-free receipt in Git. Took and integrity-checked two pre-batch database backups, keeping ten.
+- Regenerated the tracked proofreading report and private row-level queue: 55 of 697 edition text rows now have current completed reviews, two are partial and 640 have no current ledger review; 654 other stored text rows are tracked separately. Rebuilt Mike Access with 1,351/1,351 private texts, 1,089/1,089 media rows, 742 local images and all 59 captures. No public reuse decision changed. Next finish H's letter strings and continue Ellis 1/2/4, then the larger source cohorts.
+
 ## 2026-09-28 — Codex — proofing tracker and next Gordon scan batch
 
 **Claimed:** TEXT-004

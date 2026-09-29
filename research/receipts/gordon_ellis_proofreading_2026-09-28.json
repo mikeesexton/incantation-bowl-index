@@ -1,0 +1,92 @@
+{
+  "reviewed_by": "Codex",
+  "manifest_batches": [
+    {
+      "source_id": "SRC-60CB324330C9",
+      "source_pdf_sha256": "5abd9af65823f4fe8b19eb76ecc7f9668f1e3de35b2535c5166461eca23bd1ce",
+      "manifest_sha256": "5b929ede8dcbb678bba12074653c86742b863191e3c1f259c8255ce0adb68558",
+      "entries": [
+        {
+          "review_id": "IBI-PROOF-GORDON-1934-B-COMPLETED-B-20260928",
+          "text_id": "TXT-710AA6DD195A",
+          "pdf_pages": [
+            7,
+            8
+          ],
+          "status": "reading_text_checked",
+          "content_sha256": "1f9e952c5d5c79536fe068987a2c1b8c7481b3aa581ac17489b735285ee51dcf"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "source_pdf_sha256": "c2c86d28ae3201f95475d89c45789d58a37a0e9ba125876503b833c78d7fb612",
+      "manifest_sha256": "da4bba43fef65c59c7ac505720f2385547ad6576e9416c06b4aec6e068fd2262",
+      "entries": [
+        {
+          "review_id": "IBI-PROOF-GORDON-1937-HL-FOLLOWUP-L-20260928",
+          "text_id": "TXT-83115966979E",
+          "pdf_pages": [
+            12
+          ],
+          "status": "reading_text_checked",
+          "content_sha256": "a327ad2b34ab52560568f1af488265ceb7c95b44de2d22653f577bb2aa0a6a92"
+        },
+        {
+          "review_id": "IBI-PROOF-GORDON-1937-HL-FOLLOWUP-H-20260928",
+          "text_id": "TXT-BC8A69E11A0E",
+          "pdf_pages": [
+            5,
+            6
+          ],
+          "status": "partial_review",
+          "content_sha256": "135b46b93ed1086e59792d41455830255479ecc12d6e10a9ddb040dc29e86662"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-0383E0E0A2F2",
+      "source_pdf_sha256": "71de7b86e0cc549b73d949f4a4b8923886f4d92dfd1b2f21907c9fe6058bafcc",
+      "manifest_sha256": "2bab87c0de9cc190914562277757b92a963c5b4196d0797a655d7b9b15274d70",
+      "entries": [
+        {
+          "review_id": "IBI-PROOF-GORDON1935-G-20260928",
+          "text_id": "TXT-4E6A560DA740",
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "status": "reading_text_checked",
+          "content_sha256": "e3e1f0f125fdfceb6d1b90da5199cb90ddeb7682e0ffc737adfcd641e6b98fd2"
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "source_pdf_sha256": "bf304bcb7f5600b3186468de76dd50aba6de7ef58331c886d2e33befea16c633",
+      "manifest_sha256": "1f5cd3dafa8df58c34b71f731bd0b5bf06ad3f5883e004f907b24db857aa8f04",
+      "entries": [
+        {
+          "review_id": "IBI-PROOF-ELLIS1853-5-20260928",
+          "text_id": "TXT-5587C1F8F511",
+          "pdf_pages": [
+            578
+          ],
+          "status": "reading_text_checked",
+          "content_sha256": "65cbf26022472213ffead40014718f080c35bebdfce4a43118e840b887f1bc13"
+        },
+        {
+          "review_id": "IBI-PROOF-ELLIS1853-6-20260928",
+          "text_id": "TXT-127160289B0F",
+          "pdf_pages": [
+            580
+          ],
+          "status": "reading_text_checked",
+          "content_sha256": "a4907f667738ad39370b96de58ba045ad49088332245bec83897ff3781197e69"
+        }
+      ]
+    }
+  ],
+  "distinct_page_facsimiles_inspected": 9,
+  "notes": "Five scan-checked English translation rows and one partial review. Protected corrected text and manifests remain private. This records fidelity to printed translation pages, not original-script verification or public reuse approval."
+}

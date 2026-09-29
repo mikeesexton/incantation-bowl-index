@@ -7,15 +7,15 @@ A completed review means a normalized reading text was compared with its source 
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 50 | 3 | 644 | 697 | 7.2% |
+| Edition text (translation, transcription, transliteration) | 55 | 2 | 640 | 697 | 7.9% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 654 | 654 | 0.0% |
-| All stored text | 50 | 3 | 1298 | 1351 | 3.7% |
+| All stored text | 55 | 2 | 1294 | 1351 | 4.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 50 | 3 | 353 | 406 |
+| translation | 55 | 2 | 349 | 406 |
 | transcription | 0 | 0 | 226 | 226 |
 | transliteration | 0 | 0 | 65 | 65 |
 
@@ -32,8 +32,8 @@ A completed review means a normalized reading text was compared with its source 
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 0 | 0 | 31 | 31 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 0 | 0 | 30 | 30 |
 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (`SRC-1E2E21DC61BD`) | 0 | 0 | 28 | 28 |
-| Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 0 | 0 | 5 | 5 |
 | Jüdisch-babylonische Zaubertexte (`SRC-0B6C0E1133EF`) | 0 | 0 | 3 | 3 |
+| Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 2 | 0 | 3 | 5 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 0 | 0 | 3 | 3 |
 | A Magical Bowl in Judaeo-Aramaic (`SRC-25F456A40523`) | 0 | 0 | 2 | 2 |
 | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success (`SRC-4071AE0F749A`) | 0 | 0 | 2 | 2 |
@@ -41,12 +41,10 @@ A completed review means a normalized reading text was compared with its source 
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 0 | 0 | 2 | 2 |
 | ‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore (`SRC-B891A0061CEA`) | 0 | 0 | 2 | 2 |
 | Mandaic Bowl (`SRC-03395C3A94A7`) | 0 | 0 | 1 | 1 |
-| An Aramaic Exorcism (`SRC-0383E0E0A2F2`) | 0 | 0 | 1 | 1 |
 | Byzantine Period Terracotta Incantation Bowl, 400 CE–700 CE (`SRC-0AC8CA3CDF84`) | 0 | 0 | 1 | 1 |
 | An Incantation Bowl from the Matenadaran (`SRC-0B9E40B67D88`) | 0 | 0 | 1 | 1 |
 | Aramaic Magic Bowl: The Expulsion of Lilith (`SRC-1B966F866CDF`) | 0 | 0 | 1 | 1 |
 | Incantation Bowl in Mandaic — MS 1911/2 (`SRC-292E3E15363B`) | 0 | 0 | 1 | 1 |
-| Aramaic and Mandaic Magical Bowls (`SRC-43C1E102538E`) | 6 | 1 | 1 | 8 |
 | What Will Save the Household? (`SRC-455442AA727F`) | 0 | 0 | 1 | 1 |
 | Aramaic Magic Bowl: The Protection of the Family (`SRC-4955445F0A7A`) | 0 | 0 | 1 | 1 |
 | Eine Zauberschale aus der Hilprecht-Sammlung (`SRC-4C8646D12939`) | 0 | 0 | 1 | 1 |
@@ -56,7 +54,9 @@ A completed review means a normalized reading text was compared with its source 
 | Incantation Bowl — Auction 32 lot 154 (`SRC-E94437DF5962`) | 0 | 0 | 1 | 1 |
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 0 | 0 | 1 | 1 |
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 0 | 0 | 1 | 1 |
+| An Aramaic Exorcism (`SRC-0383E0E0A2F2`) | 1 | 0 | 0 | 1 |
+| Aramaic and Mandaic Magical Bowls (`SRC-43C1E102538E`) | 7 | 1 | 0 | 8 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-53202A840D51`) | 3 | 1 | 0 | 4 |
-| Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 5 | 1 | 0 | 6 |
+| Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 6 | 0 | 0 | 6 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 35 | 0 | 0 | 35 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 0 | 0 | 1 |
