@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — six-source proofing method audit and Burberry ACB 24
+
+**Claimed:** TEXT-004
+**Corpus:** changed (one English translation scan checked) — state digest `b1d832b68c1`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source and private manifest hashes verified
+
+- Screened 36 edition rows across 18 entries from the six largest unreviewed sources, with exact IDs, page spans and source hashes in a content-free reproducible audit. Inspected eight rendered pages. This source-level screen did not certify unsampled or uncollated rows.
+- Found systemic reversed and unspaced Hebrew in Levene's 30 transcriptions, damaged original-script extraction in Jena, and missing Hebrew word spacing in the 119 transcriptions across the two *Aramaic Bowl Spells* volumes. Moriggi and Burberry samples did not expose a bowl/column swap. Documented the priority change without silently modifying affected readings.
+- Fully checked Burberry ACB 24's nine-line English translation against printed pp. 339–340; existing normalized wording matched. Ingested one private proofreading manifest after backup and committed a content-free receipt. Ledger: 56/697 checked, two partial, 639 unreviewed edition rows. Rebuilt Mike Access with all 1,351 texts and 59 captures. Next rebuild Levene Hebrew with page-aware direction and spacing checks, then repair Jena originals; separately finish the planned additional sample pairs once affected methods are repaired.
+
 ## 2026-09-28 — Codex — risk-ranked proofreading triage
 
 **Claimed:** TEXT-004

@@ -1,0 +1,462 @@
+{
+  "method": "normalized 12-character non-overlapping window presence in cited PDF text-layer pages",
+  "meaning": "screen only; not visual collation or an individual proofreading review",
+  "sources": [
+    {
+      "label": "ABS1",
+      "source_id": "SRC-7FBBB775E502",
+      "capture_sha256": "39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+      "entries": [
+        {
+          "locator": "JBA 1, printed pp. 56–57",
+          "pdf_pages": [
+            84,
+            85
+          ],
+          "rows": [
+            {
+              "id": "TXT-2609328BC7A0",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 82,
+              "content_sha256": "668fc4323fe8f4eca9c9951a5e8a9e3d589bd3b9ebda30fc5e7980896a7dd50f"
+            },
+            {
+              "id": "TXT-1C9C72103828",
+              "text_type": "translation",
+              "windows_found": 104,
+              "windows_total": 116,
+              "content_sha256": "878ed62e4aa069d94ea8670506579151c4a8c54fc7375bb19ceb79b337a5fd6c"
+            }
+          ]
+        },
+        {
+          "locator": "JBA 32, printed p. 172",
+          "pdf_pages": [
+            200,
+            200
+          ],
+          "rows": [
+            {
+              "id": "TXT-E24F101B5DF7",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 44,
+              "content_sha256": "868150325472249e72c456b5e783fb6f2dd8d46d5693649a6d6dcaef0d086035"
+            },
+            {
+              "id": "TXT-86926783D2D5",
+              "text_type": "translation",
+              "windows_found": 61,
+              "windows_total": 71,
+              "content_sha256": "7af670cffe69dd632de569d0f950414868c355cc95867f91723904af945a623e"
+            }
+          ]
+        },
+        {
+          "locator": "JBA 64, printed pp. 273–274",
+          "pdf_pages": [
+            301,
+            302
+          ],
+          "rows": [
+            {
+              "id": "TXT-CDFBC0E3025B",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 70,
+              "content_sha256": "38ba4ce50cc926fb8d259e1f98e8bdb5756ed96952266f390b8efe25ad32c9dc"
+            },
+            {
+              "id": "TXT-E18D5751DE5C",
+              "text_type": "translation",
+              "windows_found": 98,
+              "windows_total": 107,
+              "content_sha256": "1e492b1ad7167c944d0b74ca4a9978d5ec59a5350e4aa357a2aaf32cce99a4a7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ABS2",
+      "source_id": "SRC-8C611BF93288",
+      "capture_sha256": "e15f96f25da902065ea972aacb441034f99ca08fbdcdff73be5b11cc80fc3b00",
+      "entries": [
+        {
+          "locator": "JBA 65, printed pp. 19–20",
+          "pdf_pages": [
+            39,
+            40
+          ],
+          "rows": [
+            {
+              "id": "TXT-D30A97CA4957",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 45,
+              "content_sha256": "9a7ece470da36925ad33773fddf116c59db091dd48c2a9bf54a962a58a4c5577"
+            },
+            {
+              "id": "TXT-558D40EE4DE5",
+              "text_type": "translation",
+              "windows_found": 69,
+              "windows_total": 76,
+              "content_sha256": "5156e7455c37ed4bb0c9a0925abbe6dde4617fc8d4d1d3145c01c083cce7546e"
+            }
+          ]
+        },
+        {
+          "locator": "JBA 92, printed pp. 120–121",
+          "pdf_pages": [
+            140,
+            141
+          ],
+          "rows": [
+            {
+              "id": "TXT-68528A9E4B0F",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 79,
+              "content_sha256": "f686abb3d1539417991de6292ed72e9eaa6e4b9691caf453ee9b055c957a68f3"
+            },
+            {
+              "id": "TXT-C099CF787303",
+              "text_type": "translation",
+              "windows_found": 128,
+              "windows_total": 138,
+              "content_sha256": "2d3d637b054263936668213ef2292297bbc0feace8724dff5a522221909fef73"
+            }
+          ]
+        },
+        {
+          "locator": "JBA 119, printed p. 228",
+          "pdf_pages": [
+            248,
+            248
+          ],
+          "rows": [
+            {
+              "id": "TXT-BB04EFDEA95A",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 23,
+              "content_sha256": "b7ed535d4df300b6d8b3ef552efa58bb44f9ce6f57625f3d7d3acc8df4ef5867"
+            },
+            {
+              "id": "TXT-641B6FC2AF95",
+              "text_type": "translation",
+              "windows_found": 35,
+              "windows_total": 39,
+              "content_sha256": "aa726587656b4ec5b68c37fbbb88421e864d465e7b9752568e0e07401b12800c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Moriggi",
+      "source_id": "SRC-3C4294DDB367",
+      "capture_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+      "entries": [
+        {
+          "locator": "Bowl no. 1, printed pp. 23",
+          "pdf_pages": [
+            41,
+            41
+          ],
+          "rows": [
+            {
+              "id": "TXT-A858271FF324",
+              "text_type": "translation",
+              "windows_found": 62,
+              "windows_total": 66,
+              "content_sha256": "fe05fc0c7ebf38d4ffcec8907fde358d0d0484592452c181aff14f515f16857b"
+            },
+            {
+              "id": "TXT-BFFB3840CAA1",
+              "text_type": "transliteration",
+              "windows_found": 27,
+              "windows_total": 39,
+              "content_sha256": "e59f450b206fc177d56576e1b3b42e7783c3938f85c7b1ee532c4667d48b2c0a"
+            }
+          ]
+        },
+        {
+          "locator": "Bowl no. 25, printed pp. 125",
+          "pdf_pages": [
+            143,
+            143
+          ],
+          "rows": [
+            {
+              "id": "TXT-8DC822C904BB",
+              "text_type": "translation",
+              "windows_found": 60,
+              "windows_total": 66,
+              "content_sha256": "dfa0ed48bf3e6d13b3398908845a8d49e5a780426d51060acff8085c7c7bc950"
+            },
+            {
+              "id": "TXT-EBA1DD7BBE29",
+              "text_type": "transliteration",
+              "windows_found": 29,
+              "windows_total": 40,
+              "content_sha256": "7470b4a70f52a7be57a4c90370f5bb8c0fcec09756dc37ccbc5758bb98d3e699"
+            }
+          ]
+        },
+        {
+          "locator": "Bowl no. 49, printed pp. 209",
+          "pdf_pages": [
+            227,
+            227
+          ],
+          "rows": [
+            {
+              "id": "TXT-C4BCB13D2A04",
+              "text_type": "translation",
+              "windows_found": 57,
+              "windows_total": 64,
+              "content_sha256": "98867fa14f464a6e4591fdb8148ae9e808043a53a60b8097768c16e1bf9c5289"
+            },
+            {
+              "id": "TXT-0D6051199F96",
+              "text_type": "transliteration",
+              "windows_found": 25,
+              "windows_total": 38,
+              "content_sha256": "8bb594570539ef43822ab6b7467c95b1ca2ebfd16eceb769eddb495bf336ea2b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Jena",
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "entries": [
+        {
+          "locator": "Entry 1, printed p. 11",
+          "pdf_pages": [
+            35,
+            35
+          ],
+          "rows": [
+            {
+              "id": "TXT-A20E90C23056",
+              "text_type": "transcription",
+              "windows_found": 17,
+              "windows_total": 26,
+              "content_sha256": "4abcb4598ae6f6ecc6142904c8974e3d47a384c2be0fee3c122ed643f4ac539b"
+            },
+            {
+              "id": "TXT-C98736B1E0A5",
+              "text_type": "translation",
+              "windows_found": 41,
+              "windows_total": 45,
+              "content_sha256": "d2db3a9d80ce86148e89fa1666c5c0fcf85dc253774676459061347166c27e7e"
+            }
+          ]
+        },
+        {
+          "locator": "Entry 20, printed pp. 102–103",
+          "pdf_pages": [
+            126,
+            127
+          ],
+          "rows": [
+            {
+              "id": "TXT-FE8E55C37C60",
+              "text_type": "transcription",
+              "windows_found": 12,
+              "windows_total": 39,
+              "content_sha256": "b28e7efae39cc3a764dc290259fcab6e9a3cdd266ae7d397080338845be8fca6"
+            },
+            {
+              "id": "TXT-C251344A515D",
+              "text_type": "translation",
+              "windows_found": 58,
+              "windows_total": 64,
+              "content_sha256": "07d2c64a7d2055716589ba07b996134833b6d12fcf7d5719bb89e5302015ecdc"
+            }
+          ]
+        },
+        {
+          "locator": "Entry 36 (HS 3066), original-script edition column, printed pp. 187–187; PDF pp. 211–211",
+          "pdf_pages": [
+            211,
+            211
+          ],
+          "rows": [
+            {
+              "id": "TXT-76BC21B48880",
+              "text_type": "transcription",
+              "windows_found": 0,
+              "windows_total": 3,
+              "content_sha256": "737fe9472b4fa7ee2967f9047b0c79d2843af5c0fbe287e8c8bfe0019be75a17"
+            },
+            {
+              "id": "TXT-2DEAEBA9D777",
+              "text_type": "translation",
+              "windows_found": 2,
+              "windows_total": 6,
+              "content_sha256": "ccb7680c234cca93eed72088b650a0c088a5d441a9e21ea2329d70016672c79c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Levene",
+      "source_id": "SRC-F2BEFBEFFC2E",
+      "capture_sha256": "d4b2c6e2946e10ab295d5b45a7ce2b132b674e35da40c09e1818a8af53d92a3d",
+      "entries": [
+        {
+          "locator": "Edited section VA.2484, printed pp. 20–29, Hebrew reading block",
+          "pdf_pages": [
+            34,
+            43
+          ],
+          "rows": [
+            {
+              "id": "TXT-2F52B2B1C28A",
+              "text_type": "transcription",
+              "windows_found": 183,
+              "windows_total": 203,
+              "content_sha256": "e1afdfe5a0dd01991d9091b759241cdf26f22ba4b8dc91e77875da8ba8a413dc"
+            },
+            {
+              "id": "TXT-83B6C1C8C3F6",
+              "text_type": "translation",
+              "windows_found": 323,
+              "windows_total": 341,
+              "content_sha256": "29ad587fc26333db9572b8b99d52c19810ecdd3a99f98aa6f93ec61c1736abe0"
+            }
+          ]
+        },
+        {
+          "locator": "Edited section M102, printed pp. 108–109, Hebrew reading block",
+          "pdf_pages": [
+            122,
+            123
+          ],
+          "rows": [
+            {
+              "id": "TXT-1A6661D831E5",
+              "text_type": "transcription",
+              "windows_found": 123,
+              "windows_total": 129,
+              "content_sha256": "8a993421fea6fcd2297e9e57db34284425082e67d49f9882f1cc7c91ac854616"
+            },
+            {
+              "id": "TXT-5E2F1A228089",
+              "text_type": "translation",
+              "windows_found": 201,
+              "windows_total": 207,
+              "content_sha256": "618a9161c5d2705ab4c60ac134addcc20e0551cfbd1bf33210f1d7cc4304210c"
+            }
+          ]
+        },
+        {
+          "locator": "Edited section YBC 2393, printed pp. 133–133, Hebrew reading block",
+          "pdf_pages": [
+            147,
+            147
+          ],
+          "rows": [
+            {
+              "id": "TXT-770D2D23C9F5",
+              "text_type": "transcription",
+              "windows_found": 35,
+              "windows_total": 36,
+              "content_sha256": "270045d5e3e612d1fd0d8511fd9a3ac2c8cdd3899303d8067b3959b290e718ae"
+            },
+            {
+              "id": "TXT-C989B1FFF554",
+              "text_type": "translation",
+              "windows_found": 53,
+              "windows_total": 56,
+              "content_sha256": "26a9b42a46f7f5522c6367e45671e641fba7e6e0c3b8de8c1e035e25eeff54a7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Burberry",
+      "source_id": "SRC-53B93C8C8A0E",
+      "capture_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+      "entries": [
+        {
+          "locator": "ACB 1, printed pp. 112–113",
+          "pdf_pages": [
+            112,
+            113
+          ],
+          "rows": [
+            {
+              "id": "TXT-366A7909BEC6",
+              "text_type": "transcription",
+              "windows_found": 30,
+              "windows_total": 37,
+              "content_sha256": "3020e21c4776bcbbe6dcbbc64d8d2852e0c805621698da371bca001eecc1bd0a"
+            },
+            {
+              "id": "TXT-D3ACB4BC8B53",
+              "text_type": "translation",
+              "windows_found": 53,
+              "windows_total": 58,
+              "content_sha256": "9d1c1bf3f784f632a918d265b772d1c53b0ba47f93888c3acacda844c791cbba"
+            }
+          ]
+        },
+        {
+          "locator": "ACB 13, printed pp. 279–281",
+          "pdf_pages": [
+            279,
+            281
+          ],
+          "rows": [
+            {
+              "id": "TXT-CD9A010CF55F",
+              "text_type": "transcription",
+              "windows_found": 49,
+              "windows_total": 71,
+              "content_sha256": "2aa14ebb79e9fea5845922ee80d1aa9df0990047171bd82bd0c5e09c06d25caa"
+            },
+            {
+              "id": "TXT-65F68A66E825",
+              "text_type": "translation",
+              "windows_found": 101,
+              "windows_total": 111,
+              "content_sha256": "b3b38415fcbcf07702258186564dc8af9a42ddf9baa58f96c98e9d7d16973779"
+            }
+          ]
+        },
+        {
+          "locator": "ACB 24, printed pp. 339–340",
+          "pdf_pages": [
+            339,
+            340
+          ],
+          "rows": [
+            {
+              "id": "TXT-78F56A87476F",
+              "text_type": "transcription",
+              "windows_found": 2,
+              "windows_total": 12,
+              "content_sha256": "652560edd4dd879a586d10c3bd93bdbb1b31b486ba7b5a7ba3831949e5d1d807"
+            },
+            {
+              "id": "TXT-DB7205AB1C6A",
+              "text_type": "translation",
+              "windows_found": 12,
+              "windows_total": 19,
+              "content_sha256": "ee80b87fb587e5943f52a1a71557726a6625810f943fc130a89acb1de612b2ca"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
