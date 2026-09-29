@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-29 — Claude — Pognon 1898 French translation proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (31 Pognon 1898 translation rows reviewed) — state digest `f4c4adc5b278`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backup and the working database; manifest fingerprints matched the pre-session snapshot
+
+- Rebuilt the French translations of Nos. 1–31 in Pognon, *Inscriptions mandaïtes des coupes de Khouabir* (`SRC-E7D5F020B31C`), from 300 dpi Tesseract OCR of the scanned pages, checked every line against the page image and corrected the OCR misreadings; all 31 rows ingested as `reading_text_checked`. Printed location headings and inline «…» exterior-legend translations are kept; footnotes and reference numerals are removed; No. 5's missing exterior translation is restored. Receipt `research/receipts/pognon_claude_french_proofreading_2026-09-29.json`.
+- Added `scripts/stage_pognon_ocr.py` (staging aid only; its specs and correction pairs stay under `data/private/`) and `research/audits/pognon_proofreading_2026-09-29.md`. The Mandaic transliterations were not in scope.
+- Ledger: 634 checked, 2 partial, 61 unreviewed of 697 edition rows (session start 603/2/92). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access.
+- Next: *Amulets and Magic Bowls* (28, scanned), the small 1–5-row sources, and the two remaining partials.
+
 ## 2026-09-29 — Claude — Berlin 2018 selected-text proofing
 
 **Claimed:** TEXT-004
