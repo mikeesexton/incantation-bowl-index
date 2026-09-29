@@ -8,23 +8,22 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 523 | 2 | 172 | 697 | 75.0% |
+| Edition text (translation, transcription, transliteration) | 573 | 2 | 122 | 697 | 82.2% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 654 | 654 | 0.0% |
-| All stored text | 523 | 2 | 826 | 1351 | 38.7% |
+| All stored text | 573 | 2 | 776 | 1351 | 42.4% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 290 | 2 | 114 | 406 |
-| transcription | 184 | 0 | 42 | 226 |
+| translation | 314 | 2 | 90 | 406 |
+| transcription | 210 | 0 | 16 | 226 |
 | transliteration | 49 | 0 | 16 | 65 |
 
 ## Edition text by source
 
 | Source | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (`SRC-53B93C8C8A0E`) | 1 | 0 | 50 | 51 |
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 0 | 0 | 31 | 31 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 0 | 0 | 30 | 30 |
 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (`SRC-1E2E21DC61BD`) | 0 | 0 | 28 | 28 |
@@ -54,6 +53,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 98 | 0 | 0 | 98 |
 | Aramaic and Mandaic Magical Bowls (`SRC-43C1E102538E`) | 7 | 1 | 0 | 8 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-53202A840D51`) | 3 | 1 | 0 | 4 |
+| Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (`SRC-53B93C8C8A0E`) | 51 | 0 | 0 | 51 |
 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 6 | 0 | 0 | 6 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 128 | 0 | 0 | 128 |
 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 71 | 0 | 0 | 71 |

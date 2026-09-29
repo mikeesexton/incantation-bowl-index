@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-29 — Claude — Burberry 2020 page proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (50 Burberry edition rows reviewed) — state digest `bb0f17a440b1`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backup and the working database; manifest fingerprints matched the pre-session snapshot
+
+- Rebuilt the Hebrew-script and English columns of ACB 1–25 (Burberry 2020, `SRC-53B93C8C8A0E`) from PDF glyph positions and compared them with rendered pages; 26 Hebrew and 24 English rows ingested as `reading_text_checked` (ACB 24 English was already checked; ACB 25 is printed without a translation), so the source is 51/51. Bracket orientation is read from the rendered glyph (the Word text layer reverses some brackets, even in English; classification verified on 66 sampled glyphs); grey highlights (partially visible), cartouches, crossed-out text and raised insertions are now marked; stray space glyphs over final letters dropped; dropped English words restored. Receipts `research/receipts/burberry_claude_{hebrew,english}_proofreading_2026-09-29.json`.
+- Added `scripts/stage_burberry_edition_columns.py` (staging aid only) and `research/audits/burberry_proofreading_2026-09-29.md`.
+- Ledger: 573 checked, 2 partial, 122 unreviewed of 697 edition rows (session start 523/2/172). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access.
+- Next: Mandaic Khouabir (31), the Berlin 2018 catalogue edition rows (30), *Amulets and Magic Bowls* (28), and the two remaining partials.
+
 ## 2026-09-29 — Claude — Jena Syriac mark collation
 
 **Claimed:** TEXT-004
