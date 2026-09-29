@@ -30,3 +30,7 @@ Footnote reference numerals are omitted; printed page markers and section headin
 - **Entry 28's** fragment-by-fragment transcriptions (fragments a–d, p. 142) are not in the row, which holds the edited composite text.
 - The **four Mandaic originals** (entries 37–40) remain unextracted; only their translations are rows. The PDF substitutes glyphs in the Mandaic font.
 - The p. 133 fragment edited within entry 25's commentary (HS 3069 joined to HS 3046) is not a row.
+
+## Syriac mark collation (29 September 2026)
+
+The six Syriac original-script rows (entries 31–36) that were left `partial_review` are now `reading_text_checked`. Every seyame (U+0308) and rwaha (U+073F) attached inside the six edition blocks, 69 in all, was cropped at 500 dpi with its assigned letter boxed and compared with the print; each sits on the letter it is drawn over. One seyame in entry 34, carried by the text layer on a grey yod, is not drawn on the page and was removed. Manifest `data/private/manifests/jena_claude_syriac_marks_proofreading_2026-09-29.json`; receipt `research/receipts/jena_claude_syriac_marks_proofreading_2026-09-29.json`. Jena is now 71/71 checked.

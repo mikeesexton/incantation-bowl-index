@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 517 | 8 | 172 | 697 | 74.2% |
+| Edition text (translation, transcription, transliteration) | 523 | 2 | 172 | 697 | 75.0% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 654 | 654 | 0.0% |
-| All stored text | 517 | 8 | 826 | 1351 | 38.3% |
+| All stored text | 523 | 2 | 826 | 1351 | 38.7% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | translation | 290 | 2 | 114 | 406 |
-| transcription | 178 | 6 | 42 | 226 |
+| transcription | 184 | 0 | 42 | 226 |
 | transliteration | 49 | 0 | 16 | 65 |
 
 ## Edition text by source
@@ -56,7 +56,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-53202A840D51`) | 3 | 1 | 0 | 4 |
 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 6 | 0 | 0 | 6 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 128 | 0 | 0 | 128 |
-| Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 65 | 6 | 0 | 71 |
+| Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 71 | 0 | 0 | 71 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 35 | 0 | 0 | 35 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 0 | 0 | 1 |

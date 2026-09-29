@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-29 — Claude — Jena Syriac mark collation
+
+**Claimed:** TEXT-004
+**Corpus:** changed (six Jena Syriac rows closed) — state digest `864f4f8429bb`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backup and the working database; manifest fingerprints matched the pre-session snapshot
+
+- Collated all 69 seyame and rwaha marks in the six partial Jena Syriac original-script rows (entries 31–36) against 500 dpi crops with each assigned letter boxed; all sit on the letter drawn under them. Removed one seyame in entry 34 that the text layer carries but the page does not draw. All six ingested as `reading_text_checked`; Jena is 71/71. Receipt `research/receipts/jena_claude_syriac_marks_proofreading_2026-09-29.json`; section added to `research/audits/jena_proofreading_2026-09-28.md`.
+- Ledger: 523 checked, 2 partial, 172 unreviewed of 697 edition rows (session start 517/8/172). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access.
+- Next: the Berlin VAM editions (51 and 30 rows), Mandaic Khouabir (31), *Amulets and Magic Bowls* (28), and the two remaining partials.
+
 ## 2026-09-29 — Claude — Moriggi Syriac corpus page proofing
 
 **Claimed:** TEXT-004
