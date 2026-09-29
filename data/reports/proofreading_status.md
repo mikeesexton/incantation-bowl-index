@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 56 | 2 | 639 | 697 | 8.0% |
+| Edition text (translation, transcription, transliteration) | 62 | 3 | 632 | 697 | 8.9% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 654 | 654 | 0.0% |
-| All stored text | 56 | 2 | 1293 | 1351 | 4.1% |
+| All stored text | 62 | 3 | 1286 | 1351 | 4.6% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 56 | 2 | 348 | 406 |
-| transcription | 0 | 0 | 226 | 226 |
+| translation | 61 | 2 | 343 | 406 |
+| transcription | 1 | 1 | 224 | 226 |
 | transliteration | 0 | 0 | 65 | 65 |
 
 ## Edition text by source
@@ -28,7 +28,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 0 | 0 | 110 | 110 |
 | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 0 | 0 | 98 | 98 |
 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 0 | 0 | 71 | 71 |
-| Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 0 | 0 | 60 | 60 |
+| Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 6 | 1 | 53 | 60 |
 | Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (`SRC-53B93C8C8A0E`) | 1 | 0 | 50 | 51 |
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 0 | 0 | 31 | 31 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 0 | 0 | 30 | 30 |

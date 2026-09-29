@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Levene glyph-position proofing batch
+
+**Claimed:** TEXT-004
+**Corpus:** changed (six checked rows and one partial review) — state digest `a632e54cbb21`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; source, private manifest and corrected-file hashes verified
+
+- Added a glyph-position staging extractor for Levene's reversed, unspaced Hebrew text layer. Compared rendered pp. 116, 124, 125, 130 and 133 with five entries, correcting seven rows through two private manifests and retaining prior text in the append-only ledger.
+- Fully checked 024A's Hebrew and English, and the English of YBC 2393, N&Sh B6, B7 and B23. Restored 024A's missing Hebrew closing line and B7's omitted untranslated line 5; removed right-column Hebrew leakage from all five English rows. YBC 2393's Hebrew is explicitly partial because two editorial mark sequences remain uncertain. No public reuse or ancient-text interpretation was decided.
+- Regenerated the private Mike Access build (1,351 texts, 59 captures) and reports. Ledger: 62/697 checked, three partial, 632 unreviewed edition rows. Took two integrity-checked backups and retained the latest ten. Next continue Levene with page-bounded geometry, checking remaining translation contamination and Hebrew editorial marks entry by entry; then Jena originals.
+
 ## 2026-09-28 — Codex — six-source proofing method audit and Burberry ACB 24
 
 **Claimed:** TEXT-004
