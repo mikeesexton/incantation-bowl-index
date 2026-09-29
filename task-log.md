@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — Levene continuation and Claude handoff
+
+**Claimed:** TEXT-004
+**Corpus:** changed (one translation checked, one partial review) — state digest `fa0c81c4f08c`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; private manifest and receipt hashes verified
+
+- Page-checked Levene 005A English against printed pp. 114–115, removing an editorial preface and footnotes that had entered the translation and repairing a line marker and joined word. It is fully checked. Page-checked 043A English against p. 123, removing an editorial preface and Hebrew column leakage and repairing line markers; it remains partial because the printed strikeout on line 14 has not been represented in the normalized row. YBC 2393 Hebrew also remains partial for two editorial symbols.
+- Added a regenerable, content-free 30-entry Levene queue with exact row IDs, PDF spans, review states and extraction-risk flags, plus a copyable Claude handoff. Ten remaining English rows contain Hebrew characters, some potentially legitimate; the handoff requires page-specific judgment. The Levene ledger is seven checked, two partial, 51 unreviewed; all sources together are 63 checked, four partial, 630 unreviewed edition rows.
+- Took and integrity-checked a pre-batch backup, retained the latest ten, regenerated reports and the Mike Access local build (1,351 texts, 59 captures). Next Claude should follow `research/audits/claude_proofreading_handoff_2026-09-28.md`, starting with the two partial reviews and the 039A/040A/041A/Royal Ontario Museum English rows. Do not count geometry staging as a completed Hebrew review.
+
 ## 2026-09-28 — Codex — Levene glyph-position proofing batch
 
 **Claimed:** TEXT-004

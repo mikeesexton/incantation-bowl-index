@@ -1,0 +1,28 @@
+{
+  "source_id": "SRC-F2BEFBEFFC2E",
+  "source_pdf_sha256": "d4b2c6e2946e10ab295d5b45a7ce2b132b674e35da40c09e1818a8af53d92a3d",
+  "private_manifest_sha256": "cde9ad00ac1b230d7095021d36b2939bbdcaeb3ef389aca64b41b4fd6ce380ad",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-LEVENE-005A-TRANSLATION-20260928",
+      "text_id": "TXT-A565E786BDEA",
+      "pdf_pages": [
+        128,
+        129
+      ],
+      "status": "reading_text_checked",
+      "corrected_content_sha256": "b6996123b0f0c49438d9985b20f55040d65d9d475eb06ab7e1ef49ccb146a3d0",
+      "private_corrected_file_sha256": "02087fe2f6dcecbcdfa24ef9873e2b78377d11f48bef4708cf07ece34521cac5"
+    },
+    {
+      "review_id": "IBI-PROOF-LEVENE-043A-TRANSLATION-20260928",
+      "text_id": "TXT-CFB30ADE4D88",
+      "pdf_pages": [
+        137
+      ],
+      "status": "partial_review",
+      "corrected_content_sha256": "5b8c860c2321c5a380903c4065f68c75ef552ddb692afa2f3efc14d17f169ec7",
+      "private_corrected_file_sha256": "9e6bc49f2826827774306ca4f8772c5a456816b4152640b51c41a57624200281"
+    }
+  ]
+}

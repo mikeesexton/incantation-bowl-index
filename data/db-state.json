@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "a632e54cbb21140ff34e3befe44553034e56ec2a1133d74a93dea9fc92dc99af",
+  "corpus_digest": "fa0c81c4f08c2873ba0ea57647655eff17757f553863d9b88cb3baf847696fe8",
   "migrations": 18,
-  "note": "Levene geometry-assisted Hebrew and five translation page reviews",
-  "recorded_at": "2026-09-29T01:11:14+00:00",
+  "note": "Levene 005A and 043A page checks and Claude proofreading handoff",
+  "recorded_at": "2026-09-29T01:17:43+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -139,15 +139,15 @@
       "rows": 954
     },
     "text_proofreading_reviews": {
-      "digest": "cbc76bc7aefca60dbd75b5758eba76ed57e0bc809a08120c671002a1982c2ad7",
-      "rows": 67
+      "digest": "1ed68c54f7dc4a9ad2eabb7a28fd24e0113792f027e34d505ee54d0e61e84da7",
+      "rows": 69
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "0dc1c5229db44799a2e535f87cfb00e49463a579545d11d79ad0f21e4344f113",
+      "digest": "c5b75f3ccb68a19e98405c072d41c927f625dc01cc5190a5d1956242c1067caf",
       "rows": 1351
     }
   }
