@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Claude — Levene English and Hebrew page proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (51 Levene rows scan checked; both Levene partial reviews closed) — state digest `026f19f19938`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the working database and the pre-batch backup; manifest fingerprints matched the pre-session snapshot
+
+- Compared 51 Levene 2013 rows with rendered PDF pages and ingested them as `reading_text_checked` through two private manifests (24 English, 27 Hebrew) with content-free receipts under `research/receipts/levene_claude_*`. Closed both partials: 043A English now represents the printed strikeout in line 14; YBC 2393 Hebrew reproduces the printed caret–dot–caret and brace signs (brace orientation corrected) without interpreting them. English fixes: prefaces, footnotes, headings and Hebrew leakage removed; line markers, joined words and omitted lines restored. Hebrew: all remaining readings rebuilt from glyph positions and collated line by line; strikeouts shown with U+0336; VA.3382 regained nine fallback-font yods; VA.3381 no longer interleaves the parallel AIT 12 column.
+- Improved `scripts/extract_levene_hebrew_geometry.py` (mirrored signs, LTR runs, strikeout detection, fallback-font merge, `--x-min/--x-max`); still a staging aid only. Documented the batch in `research/audits/levene_geometry_proofing_2026-09-28.md` and marked the handoff status.
+- Ledger: Levene 58 checked, 0 partial, 2 unreviewed of 60; all sources 114 checked, 2 partial, 581 unreviewed of 697 edition rows. Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access (1,351 texts, 59 captures). Took a pre-batch backup and pruned `data/private/backups` to ten.
+- Process note: SQLite writes over the desktop folder mount fail (and are unsafe across the Linux VM/macOS boundary), so the batch ran on a verified VM-local copy of `ibi.sqlite3` that was copied back only after confirming the original was unchanged; integrity and state were then rechecked on the real file.
+- Not done: VA.2496 and VA.2575 Hebrew (`TXT-5DBC54A45B0E`, `TXT-B1508DB0C989`) remain unreviewed. Both hold the same merged text, while the edition prints a separate Hebrew column per bowl under one joint translation; splitting them is a modelling decision for Mike or Codex. No public reuse was decided. Next: that decision, then the Jena original-script failures (handoff step 4).
+
 ## 2026-09-28 — Codex — Levene continuation and Claude handoff
 
 **Claimed:** TEXT-004

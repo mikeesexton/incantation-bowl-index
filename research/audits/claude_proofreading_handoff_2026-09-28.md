@@ -2,6 +2,8 @@
 
 This handoff is a work order for the shared `incantation-bowl-index` checkout, not a claim that the remaining rows have been checked. It contains no protected source text.
 
+> **Status, end of Claude session (28 September 2026):** steps 1–3 are complete except the two joint VA.2496/VA.2575 Hebrew rows, which need a modelling decision. See the [continuation note](levene_geometry_proofing_2026-09-28.md#claude-continuation--all-but-the-joint-va2496va2575-hebrew). Step 4 (Jena) is next. The checkpoint figures below are the starting point of that session, kept for the record.
+
 ## Current checkpoint
 
 - Task: `TEXT-004`. The latest proofreading report has **63 checked, four partial, 630 unreviewed edition rows out of 697**. Levene 2013 accounts for seven checked, two partial, and 51 unreviewed of its 60 translation/transcription rows.

@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "fa0c81c4f08c2873ba0ea57647655eff17757f553863d9b88cb3baf847696fe8",
+  "corpus_digest": "026f19f19938febc78ebeb6a1e99c5c03dfeabb7fe9c593e782ff81ba1b39d9f",
   "migrations": 18,
-  "note": "Levene 005A and 043A page checks and Claude proofreading handoff",
-  "recorded_at": "2026-09-29T01:17:43+00:00",
-  "recorded_by": "codex",
+  "note": "TEXT-004: 51 Levene rows scan-checked via two private proofreading manifests (24 English, 27 Hebrew); both Levene partial reviews closed; ledger 114/2/581 of 697",
+  "recorded_at": "2026-09-29T02:07:29+00:00",
+  "recorded_by": "claude",
   "schema_version": "018_object_scope_reviews",
   "tables": {
     "accuracy_audit_reviews": {
@@ -139,15 +139,15 @@
       "rows": 954
     },
     "text_proofreading_reviews": {
-      "digest": "1ed68c54f7dc4a9ad2eabb7a28fd24e0113792f027e34d505ee54d0e61e84da7",
-      "rows": 69
+      "digest": "9b7722bdbe9d522224afe19475b7549e1e1cb11486d2fc42ca27c2520d372d20",
+      "rows": 120
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "c5b75f3ccb68a19e98405c072d41c927f625dc01cc5190a5d1956242c1067caf",
+      "digest": "43a9ea7a673de7ee57607b8a1c49427642a5f20769ff9b2dad1e4cefa3aa64ca",
       "rows": 1351
     }
   }
