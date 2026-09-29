@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-29 — Claude — Aramaic Bowl Spells page proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (all 238 ABS1/ABS2 edition rows reviewed) — state digest `a618b1b84262`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backup and the working database; manifest fingerprints matched the pre-session snapshot
+
+- Rebuilt the Hebrew-script and English columns of all 119 JBA entries in *Aramaic Bowl Spells* vols. 1–2 (`SRC-7FBBB775E502`, `SRC-8C611BF93288`) from PDF glyph positions and compared every entry with rendered pages; all 238 rows ingested as `reading_text_checked` through four private manifests, with content-free receipts `research/receipts/abs{1,2}_claude_{hebrew,english}_proofreading_2026-09-29.json`. Replaced unspaced Hebrew and "unresolved in PDF extraction" placeholders, restored sigla, page-top continuation lines and printed headings, removed footnote numerals and running-head remnants, and marked small/raised type, strikeout, underline and boxes. Printed spacing irregularities are kept as printed.
+- Added `scripts/stage_abs_edition_columns.py` (staging aid only) and `research/audits/abs_proofreading_2026-09-29.md`; noted the batch in the Claude handoff status.
+- Ledger: 419 checked, 8 partial, 270 unreviewed of 697 edition rows (session start 181/8/508). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access (1,351 texts, 59 captures). Pre-batch backup taken through the verified VM-local copy; backups pruned to ten.
+- Not done: transcriptions printed only inside figures have no rows; no public reuse decided. Next largest unreviewed sources: Moriggi's Syriac corpus (98), the Berlin VAM editions (51 and 30), Mandaic Khouabir (31) and *Amulets and Magic Bowls* (28).
+
 ## 2026-09-28 — Claude — VA.2496/VA.2575 split and Jena page proofing
 
 **Claimed:** TEXT-004
