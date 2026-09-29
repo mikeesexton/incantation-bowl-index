@@ -272,6 +272,7 @@ generated. Edit the input, not the output:
 | `data/reports/campaign_status.md` | the corpus | `ibi report` |
 | `data/reports/claim_conflict_revalidation_current.md` | the corpus | `ibi report-conflicts` |
 | `data/reports/montgomery_cohort_current.md` | the corpus | `ibi report-montgomery-cohort` |
+| `data/reports/proofreading_status.md` | the corpus and current proofreading reviews | `PYTHONPATH=src .venv/bin/python scripts/report_proofreading.py` |
 
 Only the session that changed the corpus regenerates these. Two agents
 regenerating from divergent database states produce conflicting files that look

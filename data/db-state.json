@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "45f65632497e3ae684567fea03cbe4d2b29a48221592ac3df451a304c496f85c",
+  "corpus_digest": "66d00405f890484851d5ee2b448a15e4e84f912927a97ed975e04d71f5cecbfd",
   "migrations": 18,
-  "note": "Scan-checked five Gordon translations and recorded two partial reviews",
-  "recorded_at": "2026-09-28T23:58:24+00:00",
+  "note": "Proofed six Gordon translations and generated corpus-wide proofreading queue",
+  "recorded_at": "2026-09-29T00:14:25+00:00",
   "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
@@ -139,15 +139,15 @@
       "rows": 954
     },
     "text_proofreading_reviews": {
-      "digest": "dddecffb44b4c38aba21e4e9b418c0a073863de9339b09c4283383341314d4a4",
-      "rows": 47
+      "digest": "d6e475cf4e70acafc4894d8bab397abead8214db5a2b1e047270057f81ced411",
+      "rows": 53
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "54fa31130e9f0b78c9c7fdfaaceecd8e0cbd105f51c253a3d673371950b50f3d",
+      "digest": "217b1035f833b82931811cfb38b9e7394ed907e0ec4763728531d6cd51177b83",
       "rows": 1351
     }
   }

@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — proofing tracker and next Gordon scan batch
+
+**Claimed:** TEXT-004
+**Corpus:** changed (six English translation rows scan checked) — state digest `66d00405f890`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; receipt hashes and current review status verified
+
+- Compared Gordon 1934 D/E/F and 1937 M/N/O with eight distinct held facsimile pages. Corrected missing lacunae, damaged names and words, line-wrap artifacts, page headings and editorial marks. E/F share Gordon's printed parallel translation, with brackets and parentheses signaling each text's variants. O's translation crosses nonadjacent PDF pp. 22 and 37 in the assembled scan; both were inspected. Private revisions and manifests were ingested through the append-only proofreading ledger; a content-free receipt records source, manifest and corrected-text hashes.
+- Added `scripts/report_proofreading.py`, a private row-level queue at `data/private/proofreading_inventory.csv`, and a tracked aggregate report at `data/reports/proofreading_status.md`. Of 697 edition text rows, 50 have current completed scan reviews, three are partial, and 644 have no current ledger review. Another 654 summary/source-extract rows are tracked separately. The remaining Gordon translations are B and L (partial) and H (unreviewed); original-script rows throughout the corpus need their own review.
+- Backed up and integrity-checked the database before ingestion, keeping ten backups. Rebuilt Mike Access with 1,351/1,351 private texts, 1,089/1,089 media rows, 742 local images and all 59 captures. No public reuse decision changed. Next start with Gordon H, resolve the B/L uncertain strings, then prioritize the larger unreviewed edition cohorts shown in the report.
+
 ## 2026-09-28 — Codex — Gordon translation scan proofing
 
 **Claimed:** TEXT-004
