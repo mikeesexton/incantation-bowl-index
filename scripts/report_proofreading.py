@@ -49,6 +49,7 @@ def main():
         'This report contains counts and source titles only. The private row-level queue, including text IDs and locators, is `data/private/proofreading_inventory.csv`.',
         '',
         'A completed review means a normalized reading text was compared with its source pages. It does not certify an original inscription where the reviewed row is a translation, resolve scholarly uncertainty, or grant public reuse. “Unreviewed” means no current review is in the ledger; some rows were manually keyed or checked by another process.',
+        'These percentages describe exact review coverage of **stored rows**, not how close Mike Access or the research corpus is to completion. Missing inscriptions have no row in this denominator. See the [risk-ranked triage plan](../../research/audits/proofreading_triage_2026-09-28.md) for the smaller first milestone and the separate private-search and exact-quotation thresholds.',
         '',
         '| Scope | Checked | Partial | Unreviewed | Total | Checked share |',
         '|---|---:|---:|---:|---:|---:|',

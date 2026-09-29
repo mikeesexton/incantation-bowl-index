@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-28 — Codex — risk-ranked proofreading triage
+
+**Claimed:** TEXT-004
+**Corpus:** unchanged — state digest `b8d09050844d`
+**Tests:** 327 unittest tests pass; proofreading report regenerated; corpus state matches
+
+- Added a risk-ranked triage plan that separates Mike's private searchable working extracts, source-level extraction-method validation, and full row checks needed for exact quotation or release. The 55/697 ledger figure measures checked stored rows, not research completion; unextracted inscriptions are outside that denominator.
+- Six large sources account for 518 of 640 edition rows without a current review. The first bounded milestone samples five varied row/page pairs per source, records failures by extraction method, and repairs any affected batch. Missing original-script readings and known column/encoding corruption are prioritized over routine punctuation. A passing sample never marks uninspected rows scan checked.
+- Updated the generated proofreading report to link the plan and state its denominator limits. Next perform the six-source method audit and create a separate inventory of missing structured inscription readings.
+
 ## 2026-09-28 — Codex — Gordon and Ellis scan proofing
 
 **Claimed:** TEXT-004
