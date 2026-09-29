@@ -8,24 +8,23 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 573 | 2 | 122 | 697 | 82.2% |
+| Edition text (translation, transcription, transliteration) | 603 | 2 | 92 | 697 | 86.5% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 654 | 654 | 0.0% |
-| All stored text | 573 | 2 | 776 | 1351 | 42.4% |
+| All stored text | 603 | 2 | 746 | 1351 | 44.6% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 314 | 2 | 90 | 406 |
+| translation | 329 | 2 | 75 | 406 |
 | transcription | 210 | 0 | 16 | 226 |
-| transliteration | 49 | 0 | 16 | 65 |
+| transliteration | 64 | 0 | 1 | 65 |
 
 ## Edition text by source
 
 | Source | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 0 | 0 | 31 | 31 |
-| Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 0 | 0 | 30 | 30 |
 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (`SRC-1E2E21DC61BD`) | 0 | 0 | 28 | 28 |
 | Jüdisch-babylonische Zaubertexte (`SRC-0B6C0E1133EF`) | 0 | 0 | 3 | 3 |
 | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 2 | 0 | 3 | 5 |
@@ -60,4 +59,5 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 35 | 0 | 0 | 35 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 0 | 0 | 1 |
+| Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 30 | 0 | 0 | 30 |
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |

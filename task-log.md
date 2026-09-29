@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-29 — Claude — Berlin 2018 selected-text proofing
+
+**Claimed:** TEXT-004
+**Corpus:** changed (30 Berlin 2018 edition rows reviewed) — state digest `6498793fe32d`
+**Tests:** 327 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass on the pre-batch backup and the working database; manifest fingerprints matched the pre-session snapshot
+
+- Rebuilt the numbered transliteration and translation of all 15 selected-text editions in Bhayro et al. 2018 (`SRC-DA708912C2D3`) from PDF glyph positions and compared them with rendered pages; all 30 rows ingested as `reading_text_checked`. Removed footnote text and reference numerals that the earlier extraction had mixed into most rows, moved Edition 9's fragment b transliteration out of the translation row, kept part and position headings, and marked grey-shaded unclear letters (⸢ ⸣) and small raised/lowered insertions. Receipts `research/receipts/berlin2018_claude_{transliteration,translation}_proofreading_2026-09-29.json`.
+- Added `scripts/stage_berlin2018_editions.py` (staging aid only) and `research/audits/berlin2018_proofreading_2026-09-29.md`. The 187 catalogue summary rows are not edition text and were not reviewed.
+- Ledger: 603 checked, 2 partial, 92 unreviewed of 697 edition rows (session start 573/2/122). Regenerated the proofreading report, Levene queue, roadmap, enrichment reports and Mike Access.
+- Next: Pognon 1898 Khouabir French translations (31, scanned OCR), *Amulets and Magic Bowls* (28, scanned), and the two remaining partials.
+
 ## 2026-09-29 — Claude — Burberry 2020 page proofing
 
 **Claimed:** TEXT-004
