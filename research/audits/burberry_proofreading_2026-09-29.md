@@ -22,14 +22,14 @@ ACB 24's translation was already checked on 28 September and was not touched, so
 
 `scripts/stage_burberry_edition_columns.py` stages the text; it is a staging aid only. The PDF page number equals the printed page number. Each bowl's text follows an italic "Text" heading and ends at italic "Notes" or "Commentary". On each page, the columns are split at the median x of the line numbers.
 
-- **Hebrew order and spacing.** Hebrew is ordered right to left. The Word text layer also lays space glyphs over some final letters, which split words such as *ומחתמין*, so a space that overlaps a letter is dropped.
+- **Hebrew order and spacing.** Hebrew is ordered right to left. The Word text layer also lays space glyphs over some final letters, which split some words before their final letter, so a space that overlaps a letter is dropped.
 - **Bracket orientation.** Orientation is read from the rendered glyph in both columns, because the text layer's bracket codes are sometimes reversed, even in English. The test uses a slant-safe tick comparison for square brackets and a shape test for parentheses and braces. The classification was checked on a sample of 66 rendered brackets, including italic ones, and all were correct. Many stored rows had reversed brackets, such as `]---[`, and these are fixed.
 - **Thesis sigla.** The printed signs are marked as follows:
   - Grey highlight ("text partially visible") becomes U+05AF after each letter.
   - A cartouche box becomes ⟦ ⟧; it is built from its four rules. ACB 11, 14 and 21 have boxes, and ACB 21 has boxes in both columns.
   - Crossed-out text becomes U+0336 (ACB 12, 13 and 16).
   - Small raised Hebrew insertions become ⸌ ⸍.
-  - `[-]`, `[---]`, `{ }` and `(!)` are kept as printed. Printed spacing irregularities such as `בת[ כורשד` are also kept.
+  - `[-]`, `[---]`, `{ }` and `(!)` are kept as printed. Printed spacing irregularities, such as a space inside a bracketed name, are also kept.
 - **Line wraps.** A wrap after a hyphen is joined without a space, since Word breaks inside `[---]`. An English wrap before a capital keeps its hyphen, as in *Bat-Šabbetay*.
 - **Italic English lines.** Some English lines are wholly italic, such as the Shema in ACB 16–18. They are kept as translation text and are not treated as headings.
 - **Footnote numerals.** These are dropped.
