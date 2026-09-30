@@ -100,3 +100,37 @@ class ProofreadingTests(unittest.TestCase):
         output = ''.join(p.read_text() for p in destination.iterdir())
         self.assertNotIn('OCR PRIVATE TEXT', output)
         self.assertNotIn('Corrected ... private text.', output)
+
+    def html_manifest(self):
+        source = self.root / 'source.html'
+        source.write_text('<p>Corrected ... private text.</p>')
+        sha = hashlib.sha256(source.read_bytes()).hexdigest()
+        self.conn.execute('UPDATE captures SET mime_type=?,sha256=?,storage_path=?',
+                          ('text/html', sha, 'source.html'))
+        self.conn.commit()
+        self.manifest.update(schema_version=2, source_kind='html',
+                             source_capture_path='source.html', source_capture_sha256=sha)
+        self.manifest['entries'][0].pop('pdf_pages')
+        self.manifest['entries'][0]['source_locators'] = ['Quoted text in catalogue description']
+
+    def test_html_review_preserves_original_and_replays(self):
+        self.html_manifest()
+        self.assertEqual(self.apply()['changed'], 1)
+        self.assertEqual(self.apply()['changed'], 0)
+        review = self.conn.execute('SELECT * FROM text_proofreading_reviews').fetchone()
+        self.assertEqual(json.loads(review['source_pages_json']), ['Quoted text in catalogue description'])
+        self.assertEqual(json.loads(review['before_json']), self.row)
+        self.assertEqual(self.conn.execute('SELECT public_ok FROM texts').fetchone()[0], 0)
+        self.assertEqual(len(current_text_reviews(self.conn)), 1)
+        (self.root / 'source.html').write_text('altered')
+        with self.assertRaisesRegex(ValueError, 'scan hash'): self.apply()
+
+    def test_html_requires_registered_mime_and_nonempty_locators(self):
+        self.html_manifest()
+        self.manifest['entries'][0]['source_locators'] = [1]
+        with self.assertRaisesRegex(ValueError, 'locators'): self.apply()
+        self.manifest['entries'][0]['source_locators'] = ['Text section']
+        self.conn.execute("UPDATE captures SET mime_type='application/pdf'")
+        self.conn.commit()
+        with self.assertRaisesRegex(ValueError, 'not HTML'): self.apply()
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM text_proofreading_reviews').fetchone()[0], 0)

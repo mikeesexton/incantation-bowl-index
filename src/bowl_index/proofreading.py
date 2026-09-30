@@ -57,14 +57,18 @@ def current_text_reviews(conn):
 
 def apply_proofreading(conn, manifest_path, project_root):
     review = json.loads(Path(manifest_path).read_text())
-    if review.get('schema_version') != 1:
+    version = review.get('schema_version')
+    if version not in (1, 2):
         raise ValueError('Unsupported proofreading manifest version')
     root = Path(project_root)
-    pdf = root / review['source_pdf_path']
-    source_sha = hashlib.sha256(pdf.read_bytes()).hexdigest()
-    if source_sha != review['source_pdf_sha256']:
+    html = version == 2 and review.get('source_kind') == 'html'
+    if version == 2 and not html:
+        raise ValueError('Version 2 requires an HTML capture')
+    source = root / review['source_capture_path' if html else 'source_pdf_path']
+    source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
+    if source_sha != review['source_capture_sha256' if html else 'source_pdf_sha256']:
         raise ValueError('Source scan hash changed')
-    page_count = len(PdfReader(str(pdf)).pages)
+    page_count = None if html else len(PdfReader(str(source)).pages)
     stamp = datetime.fromisoformat(review['reviewed_at'].replace('Z', '+00:00'))
     if stamp.utcoffset() is None or stamp.utcoffset().total_seconds() != 0:
         raise ValueError('Review timestamp must be UTC')
@@ -76,9 +80,12 @@ def apply_proofreading(conn, manifest_path, project_root):
     with conn:
         if not conn.in_transaction:
             conn.execute('BEGIN IMMEDIATE')
-        if not conn.execute('SELECT 1 FROM captures WHERE source_id=? AND sha256=?',
-                            (review['source_id'], source_sha)).fetchone():
+        capture = conn.execute('SELECT mime_type FROM captures WHERE source_id=? AND sha256=?',
+                               (review['source_id'], source_sha)).fetchone()
+        if not capture:
             raise ValueError('The scan is not registered to this source')
+        if html and capture['mime_type'] != 'text/html':
+            raise ValueError('The registered capture is not HTML')
         planned, seen = [], set()
         for entry in review['entries']:
             text_id = entry['text_id']
@@ -92,8 +99,12 @@ def apply_proofreading(conn, manifest_path, project_root):
             content = (root / entry['corrected_content_path']).read_text().rstrip('\n')
             if not content.strip() or digest_text(content) != entry['corrected_content_sha256']:
                 raise ValueError('Corrected content hash mismatch or empty text')
-            pages = entry['pdf_pages']
-            if not pages or any(type(p) is not int or not 1 <= p <= page_count for p in pages):
+            pages = entry.get('source_locators' if html else 'pdf_pages')
+            if html:
+                if (not isinstance(pages, list) or not pages
+                        or any(not isinstance(p, str) or not p.strip() for p in pages)):
+                    raise ValueError('HTML source locators are required')
+            elif not pages or any(type(p) is not int or not 1 <= p <= page_count for p in pages):
                 raise ValueError('Invalid scan page range')
             if entry['status'] not in ('reading_text_checked', 'partial_review') or not entry.get('correction_notes', '').strip():
                 raise ValueError('Status and correction notes are required')
@@ -117,16 +128,16 @@ def apply_proofreading(conn, manifest_path, project_root):
                 raise ValueError('Text changed since proofreading snapshot')
             language = old.get('language') or 'source-language'
             after = dict(old, content=content, public_ok=0,
-                         notes=f'Scan-checked normalized {language} reading text. ' + review['editorial_policy']
+                         notes=f'{"Capture" if html else "Scan"}-checked normalized {language} reading text. ' + review['editorial_policy']
                                + ' Review: ' + entry['review_id'] + '. Public reuse remains unapproved.')
-            planned.append((entry, old, after))
-        for entry, old, after in planned:
+            planned.append((entry, old, after, pages))
+        for entry, old, after, pages in planned:
             conn.execute('UPDATE texts SET content=?,notes=?,public_ok=0 WHERE id=?',
                          (after['content'], after['notes'], old['id']))
             conn.execute('INSERT INTO text_proofreading_reviews VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)', (
                 entry['review_id'], old['id'], review['source_id'], source_sha,
                 entry['expected_text_sha256'], text_fingerprint(after), entry['status'],
-                review['reviewed_by'], stamp.isoformat(timespec='seconds'), json.dumps(entry['pdf_pages']),
+                review['reviewed_by'], stamp.isoformat(timespec='seconds'), json.dumps(pages),
                 review['editorial_policy'], entry['correction_notes'],
                 json.dumps(old, ensure_ascii=False, sort_keys=True),
                 json.dumps(after, ensure_ascii=False, sort_keys=True)))

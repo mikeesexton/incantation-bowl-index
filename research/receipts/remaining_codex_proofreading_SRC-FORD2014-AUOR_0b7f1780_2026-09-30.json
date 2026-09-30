@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-FORD2014-AUOR",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-30T23:23:49+00:00",
+  "source_capture_sha256": "0b7f1780d434c86cd2999eb895c2729130a105f74759708129f89c8e2f1b2dd7",
+  "source_kind": "pdf",
+  "private_manifest_sha256": "7cb33306d599e4d4aa34c9c7efd31b0a3075140459a8f4621e43da60b3ec2f57",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-TXT-71F2EF117E8A-CODEX-20260930",
+      "text_id": "TXT-71F2EF117E8A",
+      "corrected_content_sha256": "73bf2d6d261c703f70aa7d232f22074cb6846e1efeb88302babe7d2d9c2dbd2d",
+      "status": "reading_text_checked",
+      "pdf_pages": [
+        14
+      ],
+      "private_corrected_file_sha256": "88b031e0c4af76a0c259e47e75a1667c415d0d66278ff9dd8b7c780bf9930129"
+    },
+    {
+      "review_id": "IBI-PROOF-TXT-22A0474684B8-CODEX-20260930",
+      "text_id": "TXT-22A0474684B8",
+      "corrected_content_sha256": "e638954e3e1fee9d14d0dd9f7055ee93766ffceb615ba37429a7562b3304f95e",
+      "status": "reading_text_checked",
+      "pdf_pages": [
+        20
+      ],
+      "private_corrected_file_sha256": "5912be317083f4b027f026aa62244e10e312b7b633a70fe30b9be8b6f942e06d"
+    },
+    {
+      "review_id": "IBI-PROOF-TXT-A1D61B9A9C8C-CODEX-20260930",
+      "text_id": "TXT-A1D61B9A9C8C",
+      "corrected_content_sha256": "ffc5838f7bf1a2d3602816e813273e942c51488afe17db9e4685fa23c69c5653",
+      "status": "reading_text_checked",
+      "pdf_pages": [
+        22
+      ],
+      "private_corrected_file_sha256": "90b83eb79998f034f5d7bc9aa8df4de1bbe2ec7c72763e94bb0b66b4b47e8cfd"
+    }
+  ]
+}

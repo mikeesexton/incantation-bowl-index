@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-29T23:40:43+00:00`
+Generated: `2026-09-30T23:27:22+00:00`
 
 ## Portfolio status
 
@@ -61,13 +61,13 @@ Promotion rules:
 
 These are provisional planning ranges for complete or physically inspected core works, not promises of completeness. Raw file count is never sufficient: language balance, object-level enumeration, scope review, citation coverage and an explicit missing-work register are required at every band. Current strength is bibliographic and structural; the held full-text layer is still early.
 
-Current evidence: **213 scholarship works indexed; 41 with a source-linked held document; 131 with a classified scope; 82 awaiting scope.** The project also has **42 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work. The document ledger currently assesses **52 sources**, including **49 complete documents** and **40 with object-level extraction**.
+Current evidence: **213 scholarship works indexed; 42 with a source-linked held document; 131 with a classified scope; 82 awaiting scope.** The project also has **43 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work. The document ledger currently assesses **52 sources**, including **49 complete documents** and **40 with object-level extraction**.
 
 | Band | Complete or inspected core works | Additional from current holdings | What must also be true |
 |---|---:|---:|---|
 | Strong foundation | 15–30 | 0–0 | Core bibliography and external control list are present; holdings are provenance- and hash-tracked; at least one reference cohort is fully checked |
-| Visibly impressive / plausibly comprehensive | 50–75 | 9–34 | All high-impact LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
-| Expert-comprehensive | 150–200 | 109–159 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
+| Visibly impressive / plausibly comprehensive | 50–75 | 8–33 | All high-impact LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
+| Expert-comprehensive | 150–200 | 108–158 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
 
 ## Current scope snapshot
 
@@ -92,7 +92,7 @@ Current evidence: **213 scholarship works indexed; 41 with a source-linked held 
 | Probable/confirmed identities reviewed as having no known edition | 0/1053 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 799/1053 (75.9%) |
 | Identities with a translation | 381 |
-| Scan-checked normalized reading texts | 634 |
+| Scan-checked normalized reading texts | 688 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 896/896 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-B891A0061CEA",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-09-30T23:23:49+00:00",
+  "source_capture_sha256": "224856009f823b7021843c206096b729b5d86ed7c651fa51b2ee786a6f49a152",
+  "source_kind": "pdf",
+  "private_manifest_sha256": "e33a18658fd6ce3001a70b1be0781f50606abb1ad3f31622fb01b591267f1ddf",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-TXT-BC68A43D18A0-CODEX-20260930",
+      "text_id": "TXT-BC68A43D18A0",
+      "corrected_content_sha256": "de5edd4c1ef6e0ce2b55683d7eea7084e70a3dc27af4b3e336ef2802d2c4d22d",
+      "status": "reading_text_checked",
+      "pdf_pages": [
+        7
+      ],
+      "private_corrected_file_sha256": "4cd5b45c88430f1b1986a02e218f619fef0e435071fd8f441e504d6b224bef86"
+    },
+    {
+      "review_id": "IBI-PROOF-TXT-9A8ED75A4C03-CODEX-20260930",
+      "text_id": "TXT-9A8ED75A4C03",
+      "corrected_content_sha256": "b0038a28e615789059524cf68d0d8f312450a1ce5c89bbc1ca687bfd09a966e9",
+      "status": "reading_text_checked",
+      "pdf_pages": [
+        6
+      ],
+      "private_corrected_file_sha256": "3d935883fe358c83284ef00b592a47cc274f7f6fc5dc82e5e1f97d29833c2d61"
+    }
+  ]
+}

@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — Remaining held editions and quotation proofreading
+
+**Claimed:** TEXT-004
+**Corpus:** changed (54 distinct rows checked; four captures retained) — state digest `7b8f0277713f`
+**Tests:** 329 unittest tests pass; Mike Access private audit 7/7; SQLite integrity and foreign keys pass; original snapshots retained and new reviewed rows remain private
+
+- Took Claude's 634/2/61 handoff to **688 checked, zero partial and nine unreviewed of 697**. Completed all 28 *Amulets and Magic Bowls* rows, 15 other previously unreviewed PDF rows, both old partials (Gordon H and Wohlstein), and nine source-quotation rows. Restored omitted passages, embedded Hebrew names and printed uncertainty marks; preserved source readings rather than adjudicating them.
+- Added version 2 HTML proofreading manifests with registered capture hashes and named section locators, retaining the version 1 PDF path. Added tests for evidence binding, replay, original preservation and private status. HTML checks cover reproduction of source quotations, not independent inscription verification or a complete edition.
+- Retained three missing HTML sources and the related McCullough thesis using the standard capture command from a private acquisition manifest. The thesis is not the cited 1967 book, so neither ROM row was certified against it. Kedem robots rules prohibit archival fetching; UAM robots permission could not be verified.
+- Protected staging, corrections, full diffs and manifests remain under `data/private/`; 20 initial content-free proofreading receipts plus one superseding Ford mark-collation receipt and one acquisition receipt are in `research/receipts/`. The second Ford check corrected neighboring-letter mark attachments and retained an unidentified sign without claiming an erased alef.
+- Regenerated proofreading, Levene queue, roadmap and enrichment outputs and the Mike Access snapshot (all 63 captures packaged). Pre-batch backup checked and backups retained to ten. No deployment or push.
+- **TEXT-004 remains open:** nine rows require source evidence or replacing summaries stored as translations with attributed edition text. The exact row IDs and next steps are in `research/audits/remaining_proofreading_2026-09-30.md`. Do not mark summaries checked or change the denominator merely to close the queue.
+
 ## 2026-09-29 — Claude — Pognon 1898 French translation proofing
 
 **Claimed:** TEXT-004

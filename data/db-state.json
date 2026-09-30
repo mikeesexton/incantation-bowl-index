@@ -1,9 +1,9 @@
 {
-  "corpus_digest": "f4c4adc5b2783c3920f8f4ee960e6225fc6f1c0ea2c247ebf0206336945f795e",
+  "corpus_digest": "7b8f0277713fdf0138c4b3c04f0055781903f012265f17ed0444aad4dfa4c934",
   "migrations": 18,
-  "note": "Pognon 1898 French translations proofread (31 rows); 634/2/61",
-  "recorded_at": "2026-09-29T23:42:39+00:00",
-  "recorded_by": "claude",
+  "note": "54 distinct remaining edition rows checked (45 PDF, 9 HTML), plus superseding Ford mark collation; both old partials closed. Coverage 688/0/9 of 697. Nine rows require source evidence or edition replacement. No public reuse approved.",
+  "recorded_at": "2026-09-30T23:27:24+00:00",
+  "recorded_by": "codex",
   "schema_version": "018_object_scope_reviews",
   "tables": {
     "accuracy_audit_reviews": {
@@ -19,8 +19,8 @@
       "rows": 2359
     },
     "captures": {
-      "digest": "3216f916bc07362284573970d7897832512f12ea888186d8f2f7033aa53d1b14",
-      "rows": 59
+      "digest": "c7e60aecfccf8b985ee5bea1550a0da871ba67f3ef3004385498442a7fd8b1cf",
+      "rows": 63
     },
     "claim_conflict_review_history": {
       "digest": "c8f49d91c87ca0ab000110c5c3bcbed83cad2dac0ea74d85eb168109e8f5c197",
@@ -139,15 +139,15 @@
       "rows": 954
     },
     "text_proofreading_reviews": {
-      "digest": "3b519038f9fa8cc3403041c094535f14c5a04be287b50cac507ab51e504e0cab",
-      "rows": 646
+      "digest": "57a9d0d941f08f9ea88720e69dcc38c26c38cfe42618775aeee457b8f732e24b",
+      "rows": 701
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "b5c7710843e741ec64b0e11e5f5b1752305d480f2eea7ede363919a78d5fb1ba",
+      "digest": "0d920b53ecd67a2eb7eb55392a1a80656f54e2cf1ef3736b2b55e8dae38cc1f3",
       "rows": 1351
     }
   }
