@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "e7a5706f81f96048b4de6977bff6810cde224f10e5166461bbbf597310188b2c",
+  "corpus_digest": "f36d42ac6e0cabdb1eb547c1d87debdacc12d9d6df4e3026e6a55fece781cf4e",
   "migrations": 19,
-  "note": "First personal audit: translation labels, page pointers, sourced documentation and original facsimile; preserve all original text content and identity membership",
-  "recorded_at": "2026-10-01T02:45:25+00:00",
+  "note": "Linked AIT27 later edition and documented original-script extraction gap; no incantation payload or identity changed",
+  "recorded_at": "2026-10-01T03:15:35+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "c78b9ae2b20b8df9efb62d8e51f7a7f5fdbf9d2461ab5f869a4cbbbded550ec2",
-      "rows": 2359
+      "digest": "40e023bd658fb8e6be43473034e162977628b8002da141f6db5ef5a70a06ec3b",
+      "rows": 2360
     },
     "appearances": {
-      "digest": "42c1685b2cc5868d760ae1b4605ef737c8b5812f39b333f5b35e2327d82d575b",
-      "rows": 2359
+      "digest": "0c6d4d1afc0c78d75ec4684c2ab4ec3197fa6807443b4a2219ef2471dff95fbb",
+      "rows": 2360
     },
     "captures": {
       "digest": "c7e60aecfccf8b985ee5bea1550a0da871ba67f3ef3004385498442a7fd8b1cf",
@@ -67,8 +67,8 @@
       "rows": 4992
     },
     "leads": {
-      "digest": "9646ddfa6a74c9bd3fca306b8db79c27e8bcf5d54f243659f628c04fbf90d54b",
-      "rows": 79
+      "digest": "96934e3e54473093c62f96bc0e574b03574f0991b9b36d43445895a3de635ab6",
+      "rows": 80
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
@@ -103,8 +103,8 @@
       "rows": 2059
     },
     "publication_assessments": {
-      "digest": "bd06d9dd19cdd7729502512395fe53464eb9901d7aa5edf1b52c6577900951fe",
-      "rows": 239
+      "digest": "42d348453d27db83fe3939491a8ef479c3bdb2690f1b32ee428032d0261a707d",
+      "rows": 240
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -151,8 +151,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "f8c3f9f67ec10a8d7789fb67d2cc336b1d74efe1caf1356ae7b9110e48c02e0c",
-      "rows": 1352
+      "digest": "99f321fddc280c191d5628f9e7f314036ca3a626a3b64b7cb82613f346cd0ad2",
+      "rows": 1353
     }
   }
 }

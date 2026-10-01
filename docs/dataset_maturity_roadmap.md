@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-01T02:45:24+00:00`
+Generated: `2026-10-01T03:15:21+00:00`
 
 ## Portfolio status
 
@@ -75,7 +75,7 @@ Current evidence: **213 scholarship works indexed; 42 with a source-linked held 
 |---|---:|
 | Candidate source records | 2059 |
 | Working physical identity hypotheses (all statuses) | 1711 |
-| Source appearances | 2359 |
+| Source appearances | 2360 |
 | Sources | 954 |
 | Source documents with current assessments | 52 |
 | Source documents assessed complete | 49 |
@@ -95,14 +95,14 @@ Current evidence: **213 scholarship works indexed; 42 with a source-linked held 
 | Scan-checked normalized reading texts | 688 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 896/896 |
-| Montgomery/Penn concordances with dated current-evidence review | 33 |
+| Montgomery/Penn concordances with dated current-evidence review | 32 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 283 |
 | Media records with a non-unknown rights status | 697/1091 (63.9%) |
 | Media with a current ledger entry | 354/1091 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 29 |
-| Open or active leads | 25 |
+| Open or active leads | 26 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication-link coverage combines publication identifiers with reviewed object-level publication links. Publication-disposition coverage additionally counts a sourced no-known-edition finding; catalogue silence alone does not qualify. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.

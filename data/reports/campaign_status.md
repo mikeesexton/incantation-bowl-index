@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-01T02:45:25+00:00`
+Generated: `2026-10-01T03:15:21+00:00`
 
 ## Corpus
 
@@ -11,14 +11,14 @@ Generated: `2026-10-01T02:45:25+00:00`
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2359**
+- Source appearances: **2360**
 - Sources: **954**
 - Dedupe clusters pending: **0**
-- Objects with text: **766**
+- Objects with text: **767**
 - Objects with translation: **388**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **25**
+- Open leads: **26**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -133,6 +133,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 
 | Status | Priority | Lead |
 |---|---:|---|
+| open | 1 | Acquire a lawful full private PDF capture of Abudraham 2026, Bridging the Gaps; separately extract AIT27/B16041’s central synoptic column (pp. 111–116), photograph/drawing (pp. 119–120), and the comparative translation and relevant variants (pp. 120–123). Preserve NLI-vs-AIT27 personal names and lacunae; do not relabel the whole common translation as AIT27-specific. |
 | blocked | 1 | BM 117882 / Segal 119ES: inspect the full catalogue entry to assess the uncertain Syriac? classification against existing museum descriptions of Syriac. The apparent 117ES/119ES locator mismatch has been resolved as an importer defect; identity links remain unchanged. |
 | in_progress | 1 | Investigate Penn B2963 / Montgomery 3 Date Made: ca. 200 BCE. The value is preserved as a museum-reported claim, not accepted as a corrected chronology. Check primary catalogue dating and later scholarship; do not infer a replacement date. |
 | in_progress | 1 | Reconcile Penn B9010 / Montgomery 9 Inscription Language: Hebrew Language with the edition-based Jewish Babylonian Aramaic claim. Determine whether the catalogue field reflects historical terminology, a script/language confusion or an error; preserve both assertions pending review. |

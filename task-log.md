@@ -25,6 +25,37 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — AIT27 later edition and original-script coverage
+
+**Claimed:** TEXT-003 / TEXT-004 (Mike-requested AIT27 follow-up and extraction feasibility)
+**Corpus:** changed (one exact source appearance, availability summary, publication assessment and acquisition lead; no existing text or identity change) — state digest `f36d42ac6e0c`
+**Tests:** 353 unittest tests pass; SQLite integrity/foreign keys pass; publication assessment replay changes zero rows; candidate replay does not duplicate; Mike Access 7/7 private audit checks
+
+- Corrected the research conclusion: Montgomery omits a separate AIT27
+  translation, but that does not establish an absence in later scholarship.
+  Located Abudraham 2026 (online 2025), “Bridging the Gaps,” already in the
+  bibliography but previously linked only to its NLI appearance. Direct PDF
+  text inspection locates B16041/AIT27 in section 2.2 and the central synoptic
+  column, with a comparative English translation primarily based on the NLI
+  parallel and explicit witness variants. No readings or variants were adjudicated.
+- Attached one exact-designation appearance to the existing Montgomery object
+  without creating or merging bowls; retained an own-prose availability note,
+  explicit publication link and open capture/extraction lead. Do not copy the
+  entire shared translation or NLI personal names into an AIT27-only row.
+- Visually rechecked Montgomery printed p. 212. Read-only queries find 35
+  translation rows and 35 summary rows, but zero original-script rows for that
+  source. TEXT-003 remains queued; TEXT-002's completion never established
+  full original-language extraction. Recorded extraction/translation feasibility
+  and limits in `research/audits/ait27_translation_and_script_coverage_2026-09-30.md`.
+- The publisher's automated capture is robots-disallowed; normal browser PDF
+  download did not complete, and the author’s normal download required account
+  sign-up. No access controls bypassed or account created. Full capture and
+  independent source-page proofing remain open; no incantation payload, draft
+  translation or public-release approval was manufactured from snippets.
+- Regenerated roadmap, enrichment/campaign outputs and the private Mike build
+  (1,353/1,353 texts; 1,091/1,091 media; 63/63 captures). Audit completion remains
+  separate. No push, deployment, outgoing communication or new translation claim.
+
 ## 2026-09-30 — Codex — First personal audit follow-ups
 
 **Claimed:** QA-004 (reader text semantics and presentation; Mike's first audit follow-ups)
