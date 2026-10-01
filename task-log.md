@@ -25,6 +25,15 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Refresh roadmap and define the checked research core
+
+**Claimed:** QA-004 (Mike's roadmap refresh instruction; research follows as a separate workstream)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 371 Python tests pass; roadmap regenerated from matching live corpus
+
+- Reconciled portfolio summaries, task evidence and priorities with current live metrics and 1 October source audits; preserved historical completion evidence and separated research, public-release and operations milestones. Reopened CONC-007 because only 32 of 40 dated Penn reviews bind current evidence. Defined the checked research-core milestone; acquisition, multilingual bibliography and evidence grading remain explicit priorities. No corpus or rights decision changed.
+- Mike authorizes ambitious sustained research and use of at most one of two allowance resets. Account inspection confirms two available resets; no redemption capability is exposed and native Codex UI control is blocked. No reset consumed.
+
 ## 2026-10-01 — Codex — Assess remaining research roadmap work
 
 **Claimed:** QA-004 (roadmap status and evidence-metric assessment requested by Mike)
