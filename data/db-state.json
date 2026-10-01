@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "65e21e1bc3c06351750fa0b146558fc2289f3e33ec7898aaf9e7f6c895db9d0f",
+  "corpus_digest": "c652edc61ca2e46f578dd33e9d36cba3116a0f85ab98ccb2468d7960b6c03bf4",
   "migrations": 19,
-  "note": "Exact Met 86.11.259 edition concordance under Mike standing ruling; two Berlin dimension discrepancies retained as unresolved pairs",
-  "recorded_at": "2026-10-01T14:51:45+00:00",
+  "note": "Forty partial English translation-layer reviews with hash-bound source rows and four unresolved translation-choice flags; contents unchanged",
+  "recorded_at": "2026-10-01T15:04:45+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -143,15 +143,15 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "24d76f163799be4641204425b75903c83e48006e2c2d794fcf7ca2b38587090b",
-      "rows": 810
+      "digest": "ed5b2f47851c981c8043af7de03543004ba8f3b34994798facc2203f6ac4b108",
+      "rows": 850
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "d5e51c3709594abce8e180826b0dcaff639cfb0fe6ea02aac976ede36662d6e7",
+      "digest": "462af1d66bb437436433721f760344ead32640112c38ed2b721880ec7ae19bee",
       "rows": 1463
     }
   }

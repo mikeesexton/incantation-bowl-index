@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Check project English against older source translations
+
+**Claimed:** TEXT-004 (source comparison of unreviewed project English renderings)
+**Corpus:** changed (forty partial translation-layer reviews; contents unchanged) — state digest `c652edc61ca2`
+**Tests:** 371 Python tests pass; all forty contents/private flags checked; proofreading, enrichment and roadmap regenerated
+
+- Compared all forty project English working renderings with their exact current source-translation snapshots: Pognon 31, Schwab 1, Stübe 3, Wohlstein 1893 4 and Wohlstein 1894 1. Read full paired passages for names, relationships, repetitions, gaps, negation, numbers and uncertainty. Three fresh Pognon scan spot checks (PDF 49, 54, 99) confirmed four translation-choice flags involving grammatical number, reference, narrative tense and lexical scope. No English content changed and no French print normalized away.
+- Applied five private manifests as partial_review, preserving draft status and explicit limits: this is comparison against checked French/German, not full fresh scan collation or a native-inscription reading. Ledger now 688 checked / 108 partial / 2 unreviewed of 798 edition rows. Content-free receipt: research/receipts/english_translation_layer_review_2026-10-01.json. Source rows and original English snapshots retained; no public rights changed.
+- Online SQLite backup retained before ingestion. Remaining unreviewed stored rows are an auction translation excerpt and an article transliteration; missing native-script texts remain outside the denominator. Read-only investigation found a potentially systematic two-page-early Berlin metadata locator error; take it in a separate QA session.
+
 ## 2026-10-01 — Codex — Verify Met accession concordance
 
 **Claimed:** none (CONC workstream; exact named-object concordance found during authorized research)

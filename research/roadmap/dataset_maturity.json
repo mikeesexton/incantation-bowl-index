@@ -281,7 +281,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "For each lawfully held edition, Mike Access has the available inscription, scholarly transcription or transliteration, scholarly translation and bowl image, or a documented item-specific reason for absence. Every private capture is attributed and page-located; shared/public release decisions remain independent.",
-     "evidence": "All 33 appearance-bearing held-PDF sources had at least one source-linked text/media row by the 28 September audit; that source-level floor does not certify item completeness. Both ABS volumes, Moriggi, Berlin selected editions, Levene, Burberry, Jena and early editions have private content. The 1 October report inventories 798 edition-text rows (688 checked, 68 partial, 42 unreviewed), plus 665 source extracts/summaries. The frozen 99 recovery roster adds explicit dispositions and 54 native working texts but leaves 45 native gaps. Expand an appearance-level inventory to other held editions; track absent source translations/illustrations, omitted fragment groups, commentary and witness boundaries separately. See research/audits/held_pdf_content_extraction_2026-09-28.md, original_script_all_held_2026-10-01.md and data/reports/proofreading_status.md."
+     "evidence": "All 33 appearance-bearing held-PDF sources had at least one source-linked text/media row by the 28 September audit; that source-level floor does not certify item completeness. Both ABS volumes, Moriggi, Berlin selected editions, Levene, Burberry, Jena and early editions have private content. The 1 October report inventories 798 edition-text rows (688 checked, 68 partial, 42 unreviewed), plus 665 source extracts/summaries. The frozen 99 recovery roster adds explicit dispositions and 54 native working texts but leaves 45 native gaps. Expand an appearance-level inventory to other held editions; track absent source translations/illustrations, omitted fragment groups, commentary and witness boundaries separately. See research/audits/held_pdf_content_extraction_2026-09-28.md, original_script_all_held_2026-10-01.md and data/reports/proofreading_status.md. 1 October follow-through: all forty project English renderings from Pognon/Schwab/Wohlstein/Stübe were semantically compared against their current hash-bound scan-checked French/German source rows. Three Pognon scan spot checks confirmed four translation-choice flags. Recorded partial_review for all forty with content unchanged; no full fresh scan or native-inscription check claimed. Ledger now 688 checked / 108 partial / 2 unreviewed of 798. Receipt: research/receipts/english_translation_layer_review_2026-10-01.json."
     },
     {
      "id": "TEXT-005",
@@ -827,6 +827,11 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-10-01",
+   "agent": "Codex",
+   "note": "Reviewed forty project English drafts against their checked source translations. Partial reviews record the exact limits; four translation choices remain flagged. No content, native-script coverage or public rights changed."
+  },
   {
    "date": "2026-10-01",
    "agent": "Codex",
