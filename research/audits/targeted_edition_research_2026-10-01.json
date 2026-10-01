@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-01T14:44:05+00:00",
+  "task": "TEXT-001",
+  "baseline": {
+    "priority_unlinked": 254,
+    "priority_total": 1053,
+    "priority_linked": 799
+  },
+  "publication_assessments": {
+    "path": "research/reviews/targeted_edition_links_2026-10-01.json",
+    "sha256": "ec8d87a0c6ff67210d5b1188a55eba5d710a1f336da49d7f26cd24b8ab1ddfb5",
+    "new_object_links": 2
+  },
+  "source_manifest": {
+    "path": "research/sources/levene_2000_thesis_2026-10-01.jsonl",
+    "sha256": "56d8370975dbc096413680915b25cdd8e8bc23678a205d57710abb76c2206c10"
+  },
+  "checked_scan_evidence": [
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "pdf_pages": [
+        220
+      ],
+      "printed_pages": [
+        196
+      ]
+    },
+    {
+      "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+      "sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "pdf_pages": [
+        24
+      ],
+      "printed_pages": [
+        14
+      ]
+    },
+    {
+      "source_id": "SRC-1E2E21DC61BD",
+      "sha256": "545d89c8de51dee8871cf4bf48b18202ea57cbe023b745cedbf997f6da07548b",
+      "pdf_pages": [
+        189,
+        194
+      ],
+      "printed_pages": [
+        189,
+        194
+      ],
+      "visual_check": "pending; extracted exact museum number checked"
+    }
+  ],
+  "followups": [
+    {
+      "object_id": "IBI-B5C397BC11F8",
+      "designation": "Met 86.11.259",
+      "finding": "NS 1985 p. 189 explicitly identifies Bowl 12b with this accession. Existing edition record IBI-35476A95A17A is a potential exact-designation duplicate; handle in a separate CONC session under Mike’s standing ruling. Waller 2022 p. 94/PDF 103 table visually confirms AMB 12b. Adjacent Herman 2021 row is a different bowl.",
+      "status": "exact designation review pending"
+    },
+    {
+      "object_id": "IBI-9CDD9096F957",
+      "designation": "M59",
+      "finding": "Officially available Levene 2000 thesis is a newly registered primary-edition lead. Thesis M59 pages and overlap with Levene 2003 remain unverified.",
+      "status": "manual acquisition"
+    },
+    {
+      "object_id": "IBI-7394BFD7A73B",
+      "designation": "IM 76106 / 11N78",
+      "finding": "Kaufman Appendix C, pp. 151–152 is cited as the first edition by later scholarly works. Existing source SRC-D670EE201303 says 1975; official publisher record for OIC 22 says 1976. Retain the discrepancy until title/copyright pages are inspected.",
+      "status": "primary edition pages needed"
+    },
+    {
+      "object_id": "IBI-E79DBD4D7298",
+      "designation": "C10-117",
+      "finding": "Hunter 2021 points to Franco 1978–79 five-bowl publication. Full primary citation/entry mapping requires inspection; no new edition link applied.",
+      "status": "check Franco entry"
+    },
+    {
+      "object_id": "IBI-EC0E16D4FA07",
+      "designation": "Tell Baruda northwest threshold bowl",
+      "finding": "Unnamed archaeological bowl must not be assigned a Franco number by proximity or count.",
+      "status": "explicit concordance needed"
+    }
+  ],
+  "access_checks": [
+    {
+      "url": "https://discovery.ucl.ac.uk/robots.txt",
+      "result": "HTTP 403; no PDF fetched"
+    },
+    {
+      "url": "https://isac-assets.s3.amazonaws.com/robots.txt",
+      "result": "HTTP 403 AccessDenied; archive capture gate disallows retrieval; no PDF fetched"
+    }
+  ],
+  "official_download_leads": [
+    {
+      "source_id": "SRC-D670EE201303",
+      "landing_page": "https://isac.uchicago.edu/publications/excavations-nippur-eleventh-season",
+      "pdf_url": "https://isac-assets.s3.amazonaws.com/isac-publications/oic22.pdf?VersionId=oG5y.R.W7R8PJKf_kr4GrJ5.a.3CzxFy"
+    },
+    {
+      "source_id": "SRC-899462FAA735",
+      "landing_page": "https://isac.uchicago.edu/publications/sherds-landscapes-studies-ancient-near-east-honor-mcguire-gibson",
+      "pdf_url": "https://isac-assets.s3.amazonaws.com/isac-publications/saoc71.pdf?VersionId=IzcOX7TLpnXUjUQNVr6lgxomELH4I9BS"
+    }
+  ],
+  "limitations": "Targeted primary-source checks, not a systematic multilingual/database sweep. No current no-known-edition disposition, scholarly claim adjudication, private-text export, rights clearance or reset redemption."
+}

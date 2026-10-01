@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Targeted edition research beyond Segal
+
+**Claimed:** TEXT-001 (ambitious research follow-through requested by Mike)
+**Corpus:** changed (two publication assessments; one thesis source) — state digest `02c76c463cc8`
+**Tests:** 371 Python tests pass; roadmap, enrichment, acquisition and campaign reports regenerated
+
+- Applied source-backed TMH 7 links for Yale YBC 15334 and VT 1981.8 using explicit museum and held scholarly citations; retained exact printed/PDF pages and source hashes in research/audits/targeted_edition_research_2026-10-01.json. Priority links rise from 799 to 801 of 1,053; 252 remain unlinked and the 80% gate needs 42 more. No absent-edition reading or negative publication disposition inferred.
+- Registered Levene 2000 as a distinct thesis source declaring twenty editions; overlap with the 2003 book and M59 pages require full inspection. Saved current official Chicago download links and the Kaufman 1975/1976 metadata discrepancy. UCL and the linked Chicago asset host return robots HTTP 403; no prohibited capture or mislabeled local deposit.
+- Read-only queue covers all 254 baseline targets; targeted checks found an exact Met 86.11.259/NS 1985 Bowl 12b concordance for a separate CONC session. Waller p. 94 was visually checked to distinguish it from the adjacent Herman 2021 row. Primary figures/entry mappings for Tell Baruda and Kaufman remain acquisition leads. SQLite online backup retained before ingestion; no rights clearance, uncertain merge, outbound message, reset consumption, deployment or push.
+
 ## 2026-10-01 — Codex — Refresh roadmap and define the checked research core
 
 **Claimed:** QA-004 (Mike's roadmap refresh instruction; research follows as a separate workstream)

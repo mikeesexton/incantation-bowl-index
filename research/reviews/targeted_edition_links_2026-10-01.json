@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-01T14:44:05+00:00",
+  "scope": "Two exact named-object edition citations checked against museum and held scholarly sources; no reading, rights or uncertain identity decision.",
+  "entries": [
+    {
+      "id": "IBI-PUBASSESS-20261001-YBC15334-TMHC7",
+      "object_id": "IBI-8FDA7C4C0FF6",
+      "disposition": "linked",
+      "publication_source_id": "SRC-63345F60155B",
+      "evidence_source_id": "SRC-D2482299BAC7",
+      "evidence_locator": "Yale Peabody, Echoes of Egypt, Incantation Bowl, paragraph 3; checked 2026-10-01",
+      "publication_locator": "Müller-Kessler 2005, pp. 121–122; p. 236, plate 30; no. 40b (the number is independently supplied by Jena 2020 p. 196)",
+      "basis": "Yale explicitly identifies YBC 15334 and names its edition and exact pages. Independently, Ford and Morgenstern 2020, entry 38 HS 3021, printed p. 196/PDF p. 220, lists YBC 15334:3–6 as TMHC 7, 40b; that held page was visually checked. This establishes an edition pointer, not verification of the absent 2005 edition or its Mandaic reading."
+    },
+    {
+      "id": "IBI-PUBASSESS-20261001-VT1981-8-TMHC7",
+      "object_id": "IBI-B5259E1CC555",
+      "disposition": "linked",
+      "publication_source_id": "SRC-63345F60155B",
+      "evidence_source_id": "SRC-ABUDRAHAM2023-MIAMI",
+      "evidence_locator": "Abudraham 2023, printed p. 14 n. 4/PDF p. 24; visually checked held complete volume on 2026-10-01",
+      "publication_locator": "Müller-Kessler 2005, no. 40c, pp. 123–124, 237–238 (as explicitly cited by Abudraham)",
+      "basis": "The footnote names VT 1981.8 and expressly gives TMH 7, 40c and the edition pages. The edition number 40c is independently present among the parallels in Ford and Morgenstern 2020, p. 196. No full reading of the unheld 2005 edition or merging of parallel bowls is inferred."
+    }
+  ]
+}
