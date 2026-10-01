@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 688 | 111 | 2 | 801 | 85.9% |
+| Edition text (translation, transcription, transliteration) | 700 | 111 | 2 | 813 | 86.1% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 688 | 111 | 667 | 1466 | 46.9% |
+| All stored text | 700 | 111 | 667 | 1478 | 47.4% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 398 | 42 | 1 | 441 |
+| translation | 410 | 42 | 1 | 453 |
 | transcription | 226 | 56 | 0 | 282 |
 | transliteration | 64 | 13 | 1 | 78 |
 
@@ -44,6 +44,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 6 | 6 | 0 | 12 |
 | Terracotta Incantation Bowl, 500 CE–800 CE (`SRC-658C490CF6BF`) | 1 | 0 | 0 | 1 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 128 | 0 | 0 | 128 |
+| Notes on the Mandaic Incantation Bowls in the British Museum (`SRC-86CBCD17FECC`) | 12 | 0 | 0 | 12 |
 | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 5 | 5 | 0 | 10 |
 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 71 | 4 | 0 | 75 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |

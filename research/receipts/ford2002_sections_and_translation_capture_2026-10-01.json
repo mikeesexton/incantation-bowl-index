@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-01T22:26:43+00:00",
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-001",
+    "TEXT-004",
+    "TEXT-010"
+  ],
+  "prior_goal_turn": "progress",
+  "goal_status": "active",
+  "source_id": "SRC-86CBCD17FECC",
+  "capture_id": "CAP-7855872E23E9",
+  "source_pdf_path": "data/private/archive/sha256/86/86cbcd17fecce128a85b8c17d298522874cba2af77d3553f16773b19e73eaebd",
+  "source_pdf_sha256": "86cbcd17fecce128a85b8c17d298522874cba2af77d3553f16773b19e73eaebd",
+  "source_extent": {
+    "printed_pages": [
+      237,
+      272
+    ],
+    "pdf_spreads": 19
+  },
+  "scope": "Index the 36 explicitly headed Segal bowl sections in Ford 2002 and privately capture twelve substantial English translation blocks; preserve proposed readings separately. Whole article inspected, but shorter corrections, contextual witnesses and Latin transliterations remain pending. Not a complete source extraction.",
+  "appearance_rows_added": 36,
+  "existing_objects_only": true,
+  "identifiers_added": 36,
+  "media_rows_added": 53,
+  "unique_derivative_pdf_spreads": 18,
+  "translation_rows_added": 12,
+  "translation_characters": 20738,
+  "translation_reviews_checked": 12,
+  "translation_entries": [
+    {
+      "designation": "076M",
+      "object_id": "IBI-419B3DDFF35E",
+      "appearance_id": "APP-37973C95E3EA",
+      "text_id": "TXT-E79B357DB9C6",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-076M-ENGLISH",
+      "printed_pages": [
+        239,
+        239
+      ],
+      "pdf_pages": [
+        2
+      ],
+      "extent": "full published translation block",
+      "characters": 758,
+      "content_sha256": "7bf207b6cc3c01a5477f54ea413befe4b261a69519e7230113c1bb413908fdc9",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "080M",
+      "object_id": "IBI-C64F25E8FE6E",
+      "appearance_id": "APP-D4F418940F1C",
+      "text_id": "TXT-576DD0739E75",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-080M-ENGLISH",
+      "printed_pages": [
+        241,
+        241
+      ],
+      "pdf_pages": [
+        3
+      ],
+      "extent": "full published translation block",
+      "characters": 965,
+      "content_sha256": "b1eab2de3cefffd8ae549aa772fd5c84b7ae4753053cce7fa628828387db3eb4",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "084M",
+      "object_id": "IBI-D7459063D2FE",
+      "appearance_id": "APP-5FCCC8BF3EE3",
+      "text_id": "TXT-959DBB3396DC",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-084M-ENGLISH",
+      "printed_pages": [
+        247,
+        248
+      ],
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "extent": "provisional retranslation; two incantations and label",
+      "characters": 3076,
+      "content_sha256": "f44a3ff2c547886ad56280102a006b7ae180bd0b29f6beac480e41b40add6991",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "085M",
+      "object_id": "IBI-7C446F6E0A21",
+      "appearance_id": "APP-81FF3F1A8955",
+      "text_id": "TXT-3294DE73BAEA",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-085M-ENGLISH",
+      "printed_pages": [
+        249,
+        249
+      ],
+      "pdf_pages": [
+        7
+      ],
+      "extent": "translated excerpt only; forthcoming full retranslation not supplied",
+      "characters": 860,
+      "content_sha256": "399a9a4fd9740e09c4d3b87cfead057705197be27b2e1c2ae0ff8ff370a353c5",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "100M",
+      "object_id": "IBI-6AE031E07D30",
+      "appearance_id": "APP-4762CDAD3B80",
+      "text_id": "TXT-C0391950D0C0",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-100M-ENGLISH",
+      "printed_pages": [
+        256,
+        256
+      ],
+      "pdf_pages": [
+        11
+      ],
+      "extent": "full printed translation block with lacunae",
+      "characters": 1215,
+      "content_sha256": "2214253a2ed1ac0b3be54b985dc9b4a786cd68044e8d87f74df44e2da2ec90b6",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "102M",
+      "object_id": "IBI-30CBF5B8E3C2",
+      "appearance_id": "APP-94E2FE1C0D3E",
+      "text_id": "TXT-0EBFFE62C5BA",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-102M-ENGLISH",
+      "printed_pages": [
+        258,
+        259
+      ],
+      "pdf_pages": [
+        12
+      ],
+      "extent": "translated excerpt only; lines 1–4 absent",
+      "characters": 1344,
+      "content_sha256": "0ab106ee74caae0bad4eaba03432ad66fd391c426454c71d467527867c0b3df0",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "104M",
+      "object_id": "IBI-DAA9CA20E17D",
+      "appearance_id": "APP-8C1932B7E284",
+      "text_id": "TXT-C562158E5847",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-104M-ENGLISH",
+      "printed_pages": [
+        260,
+        261
+      ],
+      "pdf_pages": [
+        13
+      ],
+      "extent": "translated excerpt only; lines 1–2 absent",
+      "characters": 2490,
+      "content_sha256": "afdd21c65fdc682aedc17374154f4c738b24d165d0cc24ecf2fda0932ac88d27",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "106M",
+      "object_id": "IBI-ABBE8A2E6E8E",
+      "appearance_id": "APP-3478E0E759F8",
+      "text_id": "TXT-142D972BB144",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-106M-ENGLISH",
+      "printed_pages": [
+        264,
+        265
+      ],
+      "pdf_pages": [
+        15
+      ],
+      "extent": "full printed block; exterior 16′–17′",
+      "characters": 1556,
+      "content_sha256": "089f80254f55dc384a0c6d59cb851eff5f5e91eb159216e82e42f97ce1ded3a5",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "107M",
+      "object_id": "IBI-A4D8C4C956A2",
+      "appearance_id": "APP-A823373C68B9",
+      "text_id": "TXT-DAF957648878",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-107M-ENGLISH",
+      "printed_pages": [
+        267,
+        269
+      ],
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "extent": "provisional translated excerpt; primed lines 3′–21′",
+      "characters": 6194,
+      "content_sha256": "fab669c03f64aacb600693a5617ddae690ce18657456417ed1b7d67308a9206b",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "110M",
+      "object_id": "IBI-884C0EC644E9",
+      "appearance_id": "APP-BE1CB90D5FDE",
+      "text_id": "TXT-5CEDC866F77A",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-110M-ENGLISH",
+      "printed_pages": [
+        270,
+        270
+      ],
+      "pdf_pages": [
+        18
+      ],
+      "extent": "section I only; includes angled label",
+      "characters": 240,
+      "content_sha256": "a3c9fe5910f425c9e98461ebf5c1288e1909e9102c62766afbb02976d28e9569",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "111M",
+      "object_id": "IBI-8750B6F61AFD",
+      "appearance_id": "APP-2CC93FE0A22F",
+      "text_id": "TXT-807D5C5F0B73",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-111M-ENGLISH",
+      "printed_pages": [
+        271,
+        271
+      ],
+      "pdf_pages": [
+        18
+      ],
+      "extent": "translated excerpt and exterior label; lines 1–2 absent",
+      "characters": 1391,
+      "content_sha256": "f238cb0d93fef2b60b5114becb365520fa7f917fb676e04c3c857bb483f348ae",
+      "status": "reading_text_checked"
+    },
+    {
+      "designation": "112M",
+      "object_id": "IBI-364CBA12A40B",
+      "appearance_id": "APP-8F7A63115844",
+      "text_id": "TXT-F49DD1F463BA",
+      "proofreading_review_id": "IBI-PROOF-20261001-FORD2002-112M-ENGLISH",
+      "printed_pages": [
+        272,
+        272
+      ],
+      "pdf_pages": [
+        19
+      ],
+      "extent": "translated excerpt only; no added (7) anchor in English block",
+      "characters": 649,
+      "content_sha256": "6d5f0c18581dd7fd21532a7f7236d1f8046db1224181e85838604bdf620e0bef",
+      "status": "reading_text_checked"
+    }
+  ],
+  "new_native_script_transcriptions": 0,
+  "new_latin_transliterations": 0,
+  "new_document_assessment": {
+    "id": "IBI-DOC-FORD-MANDAIC2002-20261001",
+    "supersedes": "IBI-DOC-FORD-MANDAIC2002-20260910",
+    "document_extent": "complete",
+    "object_extraction": "partial"
+  },
+  "normalizations": [
+    "Printed line wraps joined; whitespace and spaced ellipses normalized.",
+    "Font italics and underlining flattened; source gaps, restorations, repeated wording, numbered/primed anchors and source division/label markers retained.",
+    "Dedicated enlarged crops resolve initial Mšišta and Kušṭa capture doubts; marked first-pass files and draft snapshots retained."
+  ],
+  "scholarly_limits": [
+    "Reading-text checks verify the normalized stored English against Ford’s published blocks. They do not adjudicate Ford versus Segal or certify readings from original clay/photographs.",
+    "Excerpted or provisional translation extent remains source-attributed; no missing lines supplied.",
+    "Ford’s report on p. 265 that Segal plate 121 shows 107M but is labelled 102M is retained as his report; the Segal plate itself remains unheld.",
+    "Dated in-press notices and earlier-edition references are follow-up leads, not current unpublished/no-known-edition findings."
+  ],
+  "remaining_source_work": [
+    "Exact Latin transliterations and shorter translated corrections across 36 sections.",
+    "Contextual witness and quoted-reading audit beyond the headed section roster.",
+    "Check Ford JANES 29 and cited Müller-Kessler re-editions and Gordon 1951 earlier edition; acquire/check Segal 2000 photographs/captions."
+  ],
+  "corpus_before": "265f799905c42b8108290416b59e43496813c4405cee3340fbc73537e8689ea1",
+  "corpus_after": "a12312c0be0c9973a260439a8bf2f72b6d73e1a03899c65d532bbafb0486b8f8",
+  "changed_tables": [
+    {
+      "table": "appearances",
+      "before": 2360,
+      "after": 2396,
+      "added": 36
+    },
+    {
+      "table": "appearance_object_links",
+      "before": 2360,
+      "after": 2396,
+      "added": 36
+    },
+    {
+      "table": "identifiers",
+      "before": 4992,
+      "after": 5028,
+      "added": 36
+    },
+    {
+      "table": "texts",
+      "before": 1466,
+      "after": 1478,
+      "added": 12
+    },
+    {
+      "table": "media",
+      "before": 1154,
+      "after": 1207,
+      "added": 53
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "before": 853,
+      "after": 865,
+      "added": 12
+    },
+    {
+      "table": "document_assessments",
+      "before": 53,
+      "after": 54,
+      "added": 1
+    }
+  ],
+  "validation": {
+    "python_tests_passed": 371,
+    "mike_access_checks_passed": "7/7",
+    "all_preexisting_rows_identical": true,
+    "candidate_and_proofreading_replay_unchanged": true,
+    "document_assessment_replay_changed": 0,
+    "integrity": "ok",
+    "foreign_key_errors": 0,
+    "all_new_translation_contents_match_reader": true,
+    "all_53_images_match_reader": true,
+    "all_baseline_inventory_hashes_unchanged": true,
+    "live_edition_text_rows": 813,
+    "live_checked": 700,
+    "live_partial": 111,
+    "live_unreviewed": 2,
+    "private_texts": 1478,
+    "private_media": 1207,
+    "local_private_images": 847,
+    "captures": 63
+  },
+  "publication_cohort": {
+    "priority_linked": 803,
+    "priority_denominator": 1052,
+    "frozen_unlinked": 249,
+    "new_sections_overlap_frozen_unlinked": 0,
+    "new_no_known_edition_findings": 0
+  },
+  "frozen_native_roster_gap_count": 45,
+  "artifacts": [
+    {
+      "path": "research/reviews/ford2002_section_appearances_2026-10-01.jsonl",
+      "sha256": "a90d65c3481dee27f1965f738ce458f236c0a3a6b4d1480a553d8dc047dcedb7"
+    },
+    {
+      "path": "research/reviews/ford2002_document_assessment_2026-10-01.json",
+      "sha256": "43a5ff87d6a840bd9cf0ed636ea9a483fbd5b84edb253a6b2f1365de9e348fbf"
+    },
+    {
+      "path": "data/private/manifests/ford2002_translation_blocks_2026-10-01.jsonl",
+      "sha256": "598cecbd3231bbc8c32ce7a4a1e1396f12eae8b02ed3b39d767c49b54ed32c75"
+    },
+    {
+      "path": "data/private/manifests/ford2002_translation_proofreading_2026-10-01_production.json",
+      "sha256": "f912fa488ca7beb0ce13fed70fa7e181fac7a607d38b14b58ca4770d4d208783"
+    },
+    {
+      "path": "data/private/research-work/ford2002-2026-10-01/section-inventory-final.json",
+      "sha256": "a8b410c3fce6a08021bf2ddca4de0d4ed6cfe2532d89a0ba41435a6f9ce5551a"
+    },
+    {
+      "path": "data/private/research-work/ford2002-2026-10-01/source-check-corrections.json",
+      "sha256": "a561091f8f888bc6c7a8d1ad886952bbdb08f85780cb3ae9e0accf9af7f0591f"
+    },
+    {
+      "path": "data/private/research-work/ford2002-2026-10-01/name-collation.json",
+      "sha256": "557c78e59e43778f1532ee2cad2ac4c5ad99f75b38aea877781d32f3f72b2693"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0002_ford2002_sections_translations.json",
+      "sha256": "6bab9c8f451ba35b976c00d913212a623d25e04a066f318f6df9c9cb09bca3a1"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0002b_ford2002_document_ledger.json",
+      "sha256": "1794c60dfac9782d9d32c5bd36ff7b40ba4ab5bb50ec13989864cc5885d31d8a"
+    }
+  ],
+  "protected_payloads": "All modern translations, working extracts, source crops and proofreading snapshots remain in the ignored private vault. This receipt contains metadata/hashes only; no public text/media reuse was approved.",
+  "allowance_resets_used": 0,
+  "deployed": false,
+  "pushed": false
+}

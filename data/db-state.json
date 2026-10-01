@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "265f799905c42b8108290416b59e43496813c4405cee3340fbc73537e8689ea1",
+  "corpus_digest": "a12312c0be0c9973a260439a8bf2f72b6d73e1a03899c65d532bbafb0486b8f8",
   "migrations": 19,
-  "note": "Goal checkpoint 1: M163 native Hebrew-script working edition and separate partial source review; four published photo views on three retained plate spreads; existing corpus rows unchanged.",
-  "recorded_at": "2026-10-01T21:58:12+00:00",
+  "note": "Ford 2002: 36 exact section appearances, twelve separately checked private translations, 53 facsimiles and superseding partial extraction assessment",
+  "recorded_at": "2026-10-01T22:26:43+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "40e023bd658fb8e6be43473034e162977628b8002da141f6db5ef5a70a06ec3b",
-      "rows": 2360
+      "digest": "74a985350a2a3c587de27f511b84cb6f5a7488cc4894f1305c4660f4273603d8",
+      "rows": 2396
     },
     "appearances": {
-      "digest": "0c6d4d1afc0c78d75ec4684c2ab4ec3197fa6807443b4a2219ef2471dff95fbb",
-      "rows": 2360
+      "digest": "2d3b8edda1a0b1384f7da278909deb2f4314398acdaab59e62af56e3accdaaa8",
+      "rows": 2396
     },
     "captures": {
       "digest": "c7e60aecfccf8b985ee5bea1550a0da871ba67f3ef3004385498442a7fd8b1cf",
@@ -55,16 +55,16 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "a2ac939e9030d07be21c4f3345774da63467cf068e35fa2cc3cce270aff7c15a",
-      "rows": 53
+      "digest": "2dc9edb2ced2cae64a943df1b32309a9df6812c3a20b9b4934b2f9b09cf88b40",
+      "rows": 54
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
       "rows": 215
     },
     "identifiers": {
-      "digest": "3837b3c715c6683169c70e1b0759d68bbc5cc9c8b52e0525fa266819f3cb1fc1",
-      "rows": 4992
+      "digest": "91882e3f5013cbaf3ed9e537ed1201a69eb67ad2ee5845984113213780c07590",
+      "rows": 5028
     },
     "leads": {
       "digest": "6681d49dbb6ae876dd1a3ff09e609cc4a866e4788beec1cefaed626959ecbfc4",
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "fef4c1b13edd2c64adf9b6e65d37516fb419d81f1539b59953cb0b9628495756",
-      "rows": 1154
+      "digest": "ef1584813463498a9ef829f5086e52fb4733afb7543f9a64892a000a07f3abbb",
+      "rows": 1207
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "e29d9fb902020a593143a6ce7776d7efd22dac8e06d542bf8264a147833a8be6",
-      "rows": 853
+      "digest": "64697679952d7c5f24855c5eb497c1d0c38da1a25b604192d584c2f28f90dbcc",
+      "rows": 865
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "b9577e8288dd806843979571b6e4907575c5d963dfe216b98e14e07d15dad300",
-      "rows": 1466
+      "digest": "372f2a67e6fa7a06a18b5c67f185be9417fca4768866c1f4a26b5ff138d3bd73",
+      "rows": 1478
     }
   }
 }

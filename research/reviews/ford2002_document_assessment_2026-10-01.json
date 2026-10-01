@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-01T22:23:43+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-FORD-MANDAIC2002-20261001",
+      "source_id": "SRC-86CBCD17FECC",
+      "capture_id": "CAP-7855872E23E9",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "86cbcd17fecce128a85b8c17d298522874cba2af77d3553f16773b19e73eaebd",
+      "basis": "Whole nineteen-spread Ford 2002 article inspected directly, printed pp. 237–272; source author verified on p. 272. Thirty-six explicitly headed Segal bowl sections now have source-specific appearances, locators, exact edition-code concordances and private page facsimiles. Twelve substantial published English translation blocks captured and separately source-checked with actual full/excerpt extent retained. The bound extraction artifact indexes the headed sections only. Latin transliterations, shorter translated corrections and contextual witnesses remain pending, so object extraction is partial. This assessment supersedes the earlier no-extraction state without altering it; no new source interpretation, original-bowl or Segal-plate verification. The embedded text layer is extractable but contains severe OCR corruption; no complete corrected-rich-text artifact or native-script capture is claimed.",
+      "evidence_path": "research/reviews/ford2002_section_appearances_2026-10-01.jsonl",
+      "evidence_sha256": "a90d65c3481dee27f1965f738ce458f236c0a3a6b4d1480a553d8dc047dcedb7",
+      "extraction_path": "research/reviews/ford2002_section_appearances_2026-10-01.jsonl",
+      "extraction_sha256": "a90d65c3481dee27f1965f738ce458f236c0a3a6b4d1480a553d8dc047dcedb7",
+      "supersedes_id": "IBI-DOC-FORD-MANDAIC2002-20260910"
+    }
+  ]
+}
