@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "checkpoint": 3,
+  "created_at": "2026-10-01T23:01:15+00:00",
+  "goal_status": "active",
+  "corpus_before": "a12312c0be0c9973a260439a8bf2f72b6d73e1a03899c65d532bbafb0486b8f8",
+  "corpus_after": "635e7c05c573f5c5cc709e312a8e36676a536d741ad4683e90c2bf7034074921",
+  "fixed_cohort_size": 249,
+  "attempted_frozen_identities_this_checkpoint": 29,
+  "publication_reference_additions": 8,
+  "unlinked_priority_identities_now": 241,
+  "complete_case_investigations_claimed": 0,
+  "extent": "Four native and four English quoted excerpts; no whole-inscription/full-source completeness claim.",
+  "all_frozen_baseline_hashes_unchanged": true,
+  "next_actions": [
+    "Visually inspect ABS vol. 2 printed p. 42 / PDF p. 62 for Davidovitz 2; index alone is not text capture.",
+    "Inspect ABS vol. 1 PDF pp. 131, 151–152 for Wolfe 69; exact scholarly quoted text may resolve a bibliography gap.",
+    "Capture MS 2053/198 line 13 from held 2020 pp. 35–36, then inspect JNF 149/188 quotation contexts.",
+    "Capture M59 institutional online transcription/translation with a lawful hash-bound capture and separate proof.",
+    "Inspect remaining 15 non-NLI and 205 NLI frozen cases; 29 investigated here still have case extent/source work pending.",
+    "Audit eight zero-appearance PDF sources, two unlinked PDF captures and non-PDF holdings."
+  ],
+  "allowance_resets_used": 0,
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-001",
+    "TEXT-004",
+    "TEXT-010"
+  ],
+  "source_metadata_corrections": 2,
+  "scope": "Eight exact publication references: declared edition, online edition, two scholarly pseudo-script descriptions and four quoted excerpts. References do not certify complete editions/readings. Corrected source attribution/publisher with original metadata retained.",
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 4,
+      "modified": 0
+    },
+    {
+      "table": "appearances",
+      "added": 4,
+      "modified": 0
+    },
+    {
+      "table": "media",
+      "added": 4,
+      "modified": 0
+    },
+    {
+      "table": "publication_assessments",
+      "added": 8,
+      "modified": 0
+    },
+    {
+      "table": "source_corrections",
+      "added": 2,
+      "modified": 0
+    },
+    {
+      "table": "sources",
+      "added": 0,
+      "modified": 2
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 8,
+      "modified": 0
+    },
+    {
+      "table": "texts",
+      "added": 8,
+      "modified": 0
+    }
+  ],
+  "edition_text_rows": 821,
+  "edition_review_counts": {
+    "reading_text_checked": 705,
+    "unreviewed": 2,
+    "partial_review": 114
+  },
+  "new_texts": [
+    {
+      "text_id": "TXT-24D69D8D2944",
+      "appearance_id": "APP-809EB1875511",
+      "type": "transcription",
+      "status": "partial_review",
+      "characters": 150,
+      "content_sha256": "1e7adfd644b0a0f6130fa6b6fb0536b7087333c30f8b25ae4fa777998d19d7a2",
+      "review_id": "IBI-PROOF-20261001-COHORT-JNF152-HE",
+      "pdf_pages": [
+        49
+      ]
+    },
+    {
+      "text_id": "TXT-446AAECE1F56",
+      "appearance_id": "APP-809EB1875511",
+      "type": "translation",
+      "status": "reading_text_checked",
+      "characters": 244,
+      "content_sha256": "36086a001ab1096a13bff635e56136e8639966842f7cc756d771af2d3db4370d",
+      "review_id": "IBI-PROOF-20261001-COHORT-JNF152-EN",
+      "pdf_pages": [
+        49
+      ]
+    },
+    {
+      "text_id": "TXT-581C7D7C59A5",
+      "appearance_id": "APP-5FF7F8FB5D63",
+      "type": "transcription",
+      "status": "partial_review",
+      "characters": 51,
+      "content_sha256": "4369d122ad2c737f3c8d2bc7d77f91307a10001ef4848ac2c3a187adb5b61da8",
+      "review_id": "IBI-PROOF-20261001-COHORT-JNF153-HE",
+      "pdf_pages": [
+        159
+      ]
+    },
+    {
+      "text_id": "TXT-33D947F8D9ED",
+      "appearance_id": "APP-5FF7F8FB5D63",
+      "type": "translation",
+      "status": "reading_text_checked",
+      "characters": 91,
+      "content_sha256": "66ed5744e0a5f56d54ab7e32132ea7b08455bf8ea4a46464195da617e072bdae",
+      "review_id": "IBI-PROOF-20261001-COHORT-JNF153-EN",
+      "pdf_pages": [
+        159
+      ]
+    },
+    {
+      "text_id": "TXT-6C12937ED582",
+      "appearance_id": "APP-BA8C28159FE4",
+      "type": "transcription",
+      "status": "reading_text_checked",
+      "characters": 33,
+      "content_sha256": "e1cfbf21e3f06dc3c3ea959f0d55e62d013c886be885dd194029e14d762bf8f5",
+      "review_id": "IBI-PROOF-20261001-COHORT-WOLFE23-HE",
+      "pdf_pages": [
+        120
+      ]
+    },
+    {
+      "text_id": "TXT-4C14DB2C1F8A",
+      "appearance_id": "APP-BA8C28159FE4",
+      "type": "translation",
+      "status": "reading_text_checked",
+      "characters": 58,
+      "content_sha256": "5ad5f87c0ff86787e68bfdfe6691a42f4fadd318c25531a6ea743df500382388",
+      "review_id": "IBI-PROOF-20261001-COHORT-WOLFE23-EN",
+      "pdf_pages": [
+        120
+      ]
+    },
+    {
+      "text_id": "TXT-6AB26F1C10B4",
+      "appearance_id": "APP-C36BD08D0F9C",
+      "type": "transcription",
+      "status": "partial_review",
+      "characters": 221,
+      "content_sha256": "08089dfebe0da613748d0f3ec4d84ea8f390a6d686dd7dbd4a7189cf7b7da700",
+      "review_id": "IBI-PROOF-20261001-COHORT-MS2053-198-HE",
+      "pdf_pages": [
+        60
+      ]
+    },
+    {
+      "text_id": "TXT-13ABE6978E62",
+      "appearance_id": "APP-C36BD08D0F9C",
+      "type": "translation",
+      "status": "reading_text_checked",
+      "characters": 368,
+      "content_sha256": "a6fa28423ac4d136e7ad4876ca754c9aabcab72e6ee7dfac8659c8653b78aa00",
+      "review_id": "IBI-PROOF-20261001-COHORT-MS2053-198-EN",
+      "pdf_pages": [
+        60
+      ]
+    }
+  ],
+  "held_pdf_discovery": {
+    "attempted_pdf_captures": 46,
+    "successfully_text_searched_captures": 45,
+    "pages_processed": 9563,
+    "nonempty_embedded_text_pages": 8947,
+    "designation_page_matches": 68,
+    "designations_queried": 16,
+    "designations_with_matches": 13,
+    "failed_captures": [
+      {
+        "capture_id": "CAP-66A5F6A4ACC7",
+        "error": "cryptography>=3.1 is required for AES algorithm"
+      }
+    ],
+    "limitations": [
+      "Embedded-text-only discovery: raster/encoding failures and missing fontTools can conceal matches.",
+      "One AES-encrypted holding could not be read by this available library; no access bypass or unsupported dependency installation.",
+      "No negative source-completeness or no-known-edition assertion follows from regex silence."
+    ]
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0003_publication_cases_held_excerpts.json",
+      "sha256": "e06cc497a9be687f81581238d615941bacb6b735495269914b15f72c577b1dab"
+    },
+    {
+      "path": "data/private/research-work/publication-cases-2026-10-01/production_proof_inventory.json",
+      "sha256": "0b25a956606a349ea3bec049fb311bbf3beab95c9c38ab3f17567efa0651cd3b"
+    },
+    {
+      "path": "data/private/research-work/publication-cases-2026-10-01/production-verification.json",
+      "sha256": "bc51cd962ce7035852171006b7afc9b6fbcb8ee3e23d8f2e6aa8aa1bf10ba76c"
+    },
+    {
+      "path": "data/private/research-work/publication-cases-2026-10-01/held_exact_search.json",
+      "sha256": "c8d81e5e5e72d38a860bf4b582032814e721237813bbc92a36b661ba5d202e7e"
+    },
+    {
+      "path": "research/reviews/publication_case_bibliography_evidence_2026-10-01.json",
+      "sha256": "3e9842dab1e17976eb033e1039673f159a5575cc40c51a0b45d59ea4a635d07f"
+    },
+    {
+      "path": "research/reviews/publication_case_source_corrections_2026-10-01.json",
+      "sha256": "f762c55c43e359882cb648aa60f5d283ddabb5f5e01d019348668794cdb6fb5c"
+    },
+    {
+      "path": "research/reviews/frozen_publication_case_links_2026-10-01.json",
+      "sha256": "04b6a274d10dba8e52bfe17298693ef4dd1df9a0c99885c76919b029a56e26a4"
+    },
+    {
+      "path": "research/reviews/frozen_cohort_held_excerpts_2026-10-01.jsonl",
+      "sha256": "ee7b492aafbb7667c5959b1d0ededc668e452cbf2a54b177cb3c4bf61c62f97a"
+    },
+    {
+      "path": "data/private/manifests/frozen_cohort_held_excerpts_2026-10-01.jsonl",
+      "sha256": "2b1c239529367e288b143a84d5e69bd26f92752bf3b220fadbbec35fba696e90"
+    },
+    {
+      "path": "research/reviews/frozen_cohort_held_excerpt_links_2026-10-01.json",
+      "sha256": "1a67894ba718ee14e58cbec55eef58d27b57bfa6feca323d9320db3fd942d121"
+    },
+    {
+      "path": "data/private/manifests/frozen_cohort_held_excerpt_proofreading_2026-10-01_production.json",
+      "sha256": "d02be297dcb0caa11b2efba6df35ffeadaeba80abddcbb646aa114d2617c4457"
+    },
+    {
+      "path": "research/receipts/frozen_cohort_held_excerpt_images_2026-10-01.json",
+      "sha256": "8840164ca223019c5f705b8ed4cbee83b58da2b67b5804bc52c764aa76c31d75"
+    },
+    {
+      "path": "data/private/research-work/publication-cases-2026-10-01/reader-verification.json",
+      "sha256": "877271a4bda3f2d9caa8c474bc198d2ba9e11279ea5d6b467a50bd17b30ee76f"
+    }
+  ],
+  "validation": {
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "all_preexisting_rows_preserved_except_two_source_corrections": true,
+    "all_six_production_manifests_replay_with_identical_digest": true,
+    "frozen_baseline_hashes_match": true,
+    "python_tests": "passed after sequential reader build; initial concurrent-build collision corrected",
+    "reader": {
+      "new_text_hashes_match": 8,
+      "new_image_hashes_match": 4,
+      "pdf_source_appearances": 895,
+      "pdf_sources_with_appearances": 35,
+      "pdf_sources_without_appearances": 8
+    },
+    "python_tests_passed": 371,
+    "reader_checks_passed": 7,
+    "reader_corpus_digest_matches": true
+  },
+  "backup_path": "data/private/backups/before-publication-cases-20261001T224159Z.sqlite3",
+  "reader_counts": {
+    "texts": 1486,
+    "media": 1211,
+    "sources": 955,
+    "appearances": 2400,
+    "local_images": 851,
+    "captures_packaged": 63
+  }
+}

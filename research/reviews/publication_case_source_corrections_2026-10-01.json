@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-01T22:41:28+00:00",
+  "evidence_path": "research/reviews/publication_case_bibliography_evidence_2026-10-01.json",
+  "evidence_sha256": "3e9842dab1e17976eb033e1039673f159a5575cc40c51a0b45d59ea4a635d07f",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-FORD2011-20261001",
+      "source_id": "SRC-9D7F88975731",
+      "rationale": "Correct active bibliographic metadata from the explicit institutional byline/journal fields; preserve original metadata in correction snapshots. No inscription or scholarly adjudication.",
+      "before": {
+        "source_type": "article",
+        "title": "A New Parallel to the Jewish Babylonian Aramaic Magic Bowl IM 76106 (Nippur 11 N78)",
+        "authors": "James Nathan Ford",
+        "issued_year": 2011,
+        "container_title": "Aramaic Studies",
+        "publisher": "Walter de Gruyter GmbH",
+        "url": "https://doi.org/10.1163/147783511X619845",
+        "doi": "10.1163/147783511X619845",
+        "isbn": null,
+        "citation": "Ford, James Nathan. ‘A New Parallel to the Jewish Babylonian Aramaic Magic Bowl IM 76106 (Nippur 11 N78).’ Aramaic Studies 9 (2011).",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Discovered in broad OpenAlex metadata sweep; object-level contents require source inspection."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "A New Parallel to the Jewish Babylonian Aramaic Magic Bowl IM 76106 (Nippur 11 N78)",
+        "authors": "James Nathan Ford",
+        "issued_year": 2011,
+        "container_title": "Aramaic Studies 9, issue 2",
+        "publisher": "Brill Academic Publishers",
+        "url": "https://doi.org/10.1163/147783511X619845",
+        "doi": "10.1163/147783511X619845",
+        "isbn": null,
+        "citation": "Ford, James Nathan. “A New Parallel to the Jewish Babylonian Aramaic Magic Bowl IM 76106 (Nippur 11 N78).” Aramaic Studies 9, no. 2 (2011): 249–277. https://doi.org/10.1163/147783511X619845.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Bibliographic details and declared edition of IM 76106 verified in Ford’s Bar-Ilan institutional record on 2026-10-01. The full article remains unheld; abstract metadata does not verify readings. Original OpenAlex-derived publisher/citation preserved in IBI-SOURCE-CORR-FORD2011-20261001."
+      }
+    },
+    {
+      "id": "IBI-SOURCE-CORR-LEVENEONLINE-20261001",
+      "source_id": "SRC-C5AA2D8C1284",
+      "rationale": "Correct active bibliographic metadata from the explicit institutional byline/journal fields; preserve original metadata in correction snapshots. No inscription or scholarly adjudication.",
+      "before": {
+        "source_type": "web_page",
+        "title": "Jewish Aramaic Incantation Bowls",
+        "authors": "University of Edinburgh, Jewish Non-Jewish Relations",
+        "issued_year": null,
+        "container_title": null,
+        "publisher": "University of Edinburgh",
+        "url": "https://jnjr.div.ed.ac.uk/primary-sources/biblical/jewish-aramaic-incantation-bowls/",
+        "doi": null,
+        "isbn": null,
+        "citation": "University of Edinburgh, Jewish Non-Jewish Relations, ‘Jewish Aramaic Incantation Bowls,’ primary-source guide, accessed 4 September 2026.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Object identification cross-checked against Dan Levene, A Corpus of Magic Bowls (UCL dissertation), pp. 39–40, discoverable at https://discovery.ucl.ac.uk/id/eprint/10179220/."
+      },
+      "after": {
+        "source_type": "web_page",
+        "title": "Jewish Aramaic Incantation Bowls",
+        "authors": "Dan Levene",
+        "issued_year": null,
+        "container_title": null,
+        "publisher": "University of Edinburgh",
+        "url": "https://jnjr.div.ed.ac.uk/primary-sources/biblical/jewish-aramaic-incantation-bowls/",
+        "doi": null,
+        "isbn": null,
+        "citation": "Levene, Dan. “Jewish Aramaic Incantation Bowls.” Jewish/non-Jewish Relations: Between Exclusion and Embrace. University of Edinburgh, online primary-source teaching edition, accessed 1 October 2026.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Object identification cross-checked against Dan Levene, A Corpus of Magic Bowls (UCL dissertation), pp. 39–40, discoverable at https://discovery.ucl.ac.uk/id/eprint/10179220/. Byline checked 2026-10-01: Dan Levene is the credited author, University of Edinburgh the host/publisher. Hebrew-script text and English translation sections I–VIII are present online. No new character/source proofreading review or thesis acquisition is implied."
+      }
+    }
+  ]
+}

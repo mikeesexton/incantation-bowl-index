@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-01T22:41:28+00:00",
+  "scope": "Four exact scholarly publication references with explicit full/limited scope; two pseudo-script descriptions and one online teaching edition do not become complete legible inscription editions. Frozen cohort remains fixed.",
+  "entries": [
+    {
+      "id": "IBI-PUBASSESS-20261001-IM76106-FORD2011",
+      "object_id": "IBI-7394BFD7A73B",
+      "disposition": "linked",
+      "publication_source_id": "SRC-9D7F88975731",
+      "evidence_source_id": "SRC-9D7F88975731",
+      "evidence_locator": "Institutional abstract and article title, https://cris.biu.ac.il/en/publications/a-new-parallel-to-the-jewish-babylonian-aramaic-magic-bowl-im-761-4/, checked 2026-10-01",
+      "publication_locator": "Aramaic Studies 9(2) (2011): 249–277; abstract explicitly declares new edition of IM 76106",
+      "basis": "The author’s institutional record explicitly identifies the article as re-editing IM 76106 (Nippur 11 N78), separately from a new parallel. This is a declared edition pointer only. Full article is unheld; no inscription, translation, page-specific edition range or private-parallel identity is verified."
+    },
+    {
+      "id": "IBI-PUBASSESS-20261001-SMITHSONIAN-GORDON1937",
+      "object_id": "IBI-3E8AE8D72F0E",
+      "disposition": "linked",
+      "publication_source_id": "SRC-43C1E102538E",
+      "evidence_source_id": "SRC-A180AB5C85FF",
+      "evidence_locator": "Smithsonian record nmnhanthropology_8046133, Object Details / Notes; fresh indexed institution text 2026-10-01 (direct open failed)",
+      "publication_locator": "Gordon 1937, printed p. 85, footnote 4; PDF p. 3 in CAP-A5A03BFD5DC7",
+      "basis": "Smithsonian explicitly cites this footnote for its object. Visually checked held PDF p. 3: footnote describes National Museum no. 207962, distinct from main text L/no. 207963. SHA-256 c2c86d28ae3201f95475d89c45789d58a37a0e9ba125876503b833c78d7fb612. Link is the museum-attributed scholarly description of a pseudo-script bowl, not an edited legible inscription, physical merge or project authenticity judgment."
+    },
+    {
+      "id": "IBI-PUBASSESS-20261001-M59-LEVENEONLINE",
+      "object_id": "IBI-9CDD9096F957",
+      "disposition": "linked",
+      "publication_source_id": "SRC-C5AA2D8C1284",
+      "evidence_source_id": "SRC-C5AA2D8C1284",
+      "evidence_locator": "Credited Dan Levene byline and sections 2a/2b, institutional online teaching edition, freshly opened 2026-10-01",
+      "publication_locator": "Sections 2a (Hebrew-script transcription) and 2b (English translation), I–VIII; numbered inscription anchors 1–15",
+      "basis": "Record the scholarly online text already attributed to this object by the existing appearance and its documented Levene dissertation pp. 39–40 identification. Both transcription and translation are actually present on the institutional page. Do not infer a new physical match or link the book/thesis solely from a generic bibliography. No new private capture or separate text proofreading is claimed."
+    },
+    {
+      "id": "IBI-PUBASSESS-20261001-S444-FAIN2016",
+      "object_id": "IBI-664456D75E41",
+      "disposition": "linked",
+      "publication_source_id": "SRC-EB27DA285DC5",
+      "evidence_source_id": "SRC-6AE1D2F1E16E",
+      "evidence_locator": "HSE illustrated object S-444; indexed institutional caption rechecked 2026-10-01. Explicit S-444 section corroborated in author-posted article linked by HSE publication record",
+      "publication_locator": "Fain, Ford and Lyavdansky 2016, p. 307, section 3 Pseudoscript bowls, IX. S-444",
+      "basis": "HSE caption supplies exact Hermitage designation S-444. HSE-linked author-posted public text at https://www.academia.edu/34960657/Aramaic_Incantation_Bowls_at_the_State_Hermitage_Museum_St_Petersburg explicitly describes S-444 in section IX, p. 307, before the printed p. 308 transition. This is an exact scholarly catalogue discussion of a pseudo-script bowl, not a readable-text edition or original-clay verification. HSE PDF route redirects to restricted login; it was not bypassed. Public HTML text inspected, PDF/images unheld."
+    }
+  ]
+}
