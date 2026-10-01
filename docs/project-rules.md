@@ -337,3 +337,26 @@ export or a read-only API — never the ingestion database.
 Provenance statements describe what sources report. They do not legitimize
 ownership, export history, or authenticity, and the index should never read as
 though publication settles any of those.
+
+---
+
+## 5. Mike's personal audit runtime
+
+The [daily personal audit](personal_audit.md) uses a private operational ledger
+outside the corpus. Mike alone marks reviews complete; personal completion does
+not verify every source claim or authorize identity, authenticity, or rights
+decisions. Corrections still require the existing manifest/ingest workflows.
+When Mike gives a personal audit response in chat, follow that document to record
+the explicit result against the shown batch and fingerprint immediately. Do not
+wait for the next scheduled run or merely acknowledge his review without saving it.
+
+Scheduled preparation opens the corpus read-only, bypasses migrations, and may
+write only private audit progress. It must not advance on delivery alone, skip
+unfinished bowls, infer reviews, or silently transfer reviews across identity
+membership changes. This bounded runtime is authorized by Mike's five-bowl
+personal audit instruction; unattended corpus writes remain prohibited.
+
+Runtime-only audit deliveries and recording Mike's audit responses do not edit
+the repository or corpus, so they do not require a new task-log entry, state
+stamp, report regeneration, or commit on each reminder. Implementation changes
+and corpus corrections remain full working sessions under §2.

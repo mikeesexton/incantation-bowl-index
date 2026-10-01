@@ -25,6 +25,36 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — Daily personal audit
+
+**Claimed:** none (OPS — Mike-requested five-bowl daily personal audit)
+**Corpus:** unchanged — state digest `7b8f0277713f`
+**Tests:** 348 unittest tests pass (19 new audit tests); all five first-batch private dossier links resolve; corpus fingerprint unchanged; private ledger and packet ignored by Git
+
+- Added atomic, locked private audit progress and append-only events; saved one
+  shuffled order for all 1,704 non-rejected identities, including candidates.
+  Issued batch 1 and opened its private Markdown packet for Mike. No bowl was
+  marked reviewed. Prepared/report-produced events never imply that Mike read it.
+- Added read-only audit CLI commands for initialization, daily preparation,
+  explicit reviews, progress, issue resolution, rechecks, delivery results, and
+  saving the reminder identity. Partial batches carry forward without top-ups;
+  no completed review releases another same-day batch. New identities append;
+  changed membership/scope needs explicit reconciliation, and changed completed
+  evidence opens a separate issue without erasing review history.
+- Created the active existing-chat heartbeat `daily-five-bowl-personal-audit`
+  for 9 a.m. daily, including weekends, and saved its ID in the private ledger.
+  Runtime instructions keep the corpus read-only, consume only explicit Mike
+  responses, report new/unfinished daily batches, and pause the reminder after
+  queue completion. The computer and app must be running; the localhost reader
+  is verified available. Nothing was deployed or pushed.
+- Documented the workflow in `docs/personal_audit.md` and the operational-session
+  exception in project rules. Personal audit progress is separate from scholarly
+  decisions; actual corrections retain the existing manifest/ingest discipline.
+- Tests cover full-pass coverage, carryover, absences, retries, concurrent runs,
+  atomic failure recovery, shorter final batches, citation changes, rechecks,
+  merges/splits/rejections, source isolation, read failures, drift, and read-only
+  CLI dispatch. Generated corpus reports were not invalidated or regenerated.
+
 ## 2026-09-30 — Codex — Push proofreading work to GitHub
 
 **Claimed:** none (OPS — user-requested push)

@@ -1,5 +1,6 @@
 import argparse
 import json
+import sqlite3
 from pathlib import Path
 
 from .archive import capture_file, capture_url, verify_archive
@@ -225,11 +226,79 @@ def build_parser():
     serve_parser = sub.add_parser("serve", help="run the private localhost research console")
     serve_parser.add_argument("--host", default="127.0.0.1")
     serve_parser.add_argument("--port", type=int, default=8765)
+    for command, help_text in (
+        ("audit-init", "initialize Mike's saved personal audit queue"),
+        ("audit-daily", "prepare five bowls or unfinished carryover, with a read-only corpus"),
+        ("audit-status", "show personal audit progress and open follow-ups"),
+        ("audit-record", "record Mike's explicit personal review of a presented bowl"),
+        ("audit-resolve", "record Mike's resolution of an operational audit issue"),
+        ("audit-delivery", "record reporting or failure of a prepared daily packet"),
+        ("audit-show", "show a previously issued bowl again for an explicit recheck"),
+        ("audit-schedule", "save the app reminder's identity in the private ledger"),
+    ):
+        audit = sub.add_parser(command, help=help_text)
+        audit.add_argument("--ledger", help="override the private operational audit ledger")
+        audit.add_argument("--format", choices=("json", "markdown"), default="json")
+        if command == "audit-init":
+            audit.add_argument("--reader-base", default="http://127.0.0.1:8765/")
+        elif command == "audit-record":
+            audit.add_argument("bowl", help="bowl number, identity ID, object ID, or audit item ID")
+            audit.add_argument("--batch", type=int, required=True)
+            audit.add_argument("--result", choices=("no_issues", "followup", "not_finished"), required=True)
+            audit.add_argument("--fingerprint", required=True)
+            audit.add_argument("--notes", default="")
+            audit.add_argument("--request-id", help="stable ID for retry-safe recording of a user message")
+        elif command == "audit-resolve":
+            audit.add_argument("issue")
+            audit.add_argument("--notes", required=True)
+            audit.add_argument("--retire", action="store_true")
+        elif command == "audit-delivery":
+            audit.add_argument("attempt")
+            audit.add_argument("--outcome", choices=("reported", "failed"), required=True)
+            audit.add_argument("--notes", default="")
+        elif command == "audit-show":
+            audit.add_argument("bowl")
+            audit.add_argument("--batch", type=int, required=True)
+        elif command == "audit-schedule":
+            audit.add_argument("automation_id")
     return parser
 
 
 def main(argv=None):
     args = build_parser().parse_args(argv)
+    # Audit preparation must never enter connect()/migrate(): even a new schema
+    # migration must not turn an unattended reminder into a corpus write.
+    if args.command.startswith("audit-"):
+        from . import personal_audit as audit
+        options = {"path": Path(args.ledger) if args.ledger else audit.DEFAULT_LEDGER}
+        corpus = {"database": args.db, "project_root": PROJECT_ROOT if not args.db else None}
+        try:
+            if args.command == "audit-init":
+                result = audit.initialize(reader_base=args.reader_base, **options, **corpus)
+            elif args.command == "audit-daily":
+                result = audit.prepare(**options, **corpus)
+            elif args.command == "audit-status":
+                result = audit.read_status(**options)
+            elif args.command == "audit-record":
+                result = audit.record(args.bowl, args.result, args.fingerprint, args.batch,
+                                      notes=args.notes, request_id=args.request_id, **options, **corpus)
+            elif args.command == "audit-resolve":
+                result = audit.close_issue(args.issue, args.notes, retire=args.retire, **options, **corpus)
+            elif args.command == "audit-delivery":
+                result = audit.delivery(args.attempt, args.outcome, notes=args.notes, **options)
+            elif args.command == "audit-show":
+                result = audit.show(args.bowl, args.batch, **options, **corpus)
+            elif args.command == "audit-schedule":
+                result = audit.configure_reminder(args.automation_id, **options)
+            if args.format == "markdown" and args.command in {"audit-daily", "audit-show"}:
+                print(audit.markdown(result))
+            else:
+                print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
+            if result.get("error"):
+                raise SystemExit(1)
+        except (ValueError, OSError, sqlite3.Error) as exc:
+            raise SystemExit("Personal audit: %s" % exc) from exc
+        return
     conn = connect(args.db)
     migrate(conn)
     if args.command == "init":
