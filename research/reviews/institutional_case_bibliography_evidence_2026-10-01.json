@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-01T23:38:16+00:00",
+  "checks": [
+    {
+      "source_id": "SRC-1F676D0669B6",
+      "evidence_kind": "held full page visual inspection",
+      "capture_id": "CAP-66A5F6A4ACC7",
+      "sha256": "b3564079a55188e295fe49a88c4cb37804a79d404e70b3ec7eed65b19b23259d",
+      "locators": [
+        "PDF 4 title page",
+        "PDF 5 copyright page",
+        "printed 13 / PDF 14 contributors",
+        "printed 51 / PDF 52 entry 27"
+      ],
+      "finding": "Entry signed KG; contributors identifies Kathryn Grossman. Book edited by Jean M. Evans, Jack Green and Emily Teeter; published 2017. OIM A32675 and photograph D.15784 exactly present. Scholarly museum description attributes pseudoscript to this example, supplies no transcription or translation. PDF permits printing but disallows copying; used permitted visual rendering, no decryption, permission removal or text extraction."
+    },
+    {
+      "source_id": "SRC-899462FAA735",
+      "url": "https://isac.uchicago.edu/publications/sherds-landscapes-studies-ancient-near-east-honor-mcguire-gibson",
+      "evidence_kind": "publisher bibliography plus indexed primary chapter body",
+      "locators": [
+        "publisher table of contents chapter 8",
+        "indexed chapter printed 137–138, figure 8.1, table 8.1/note 17 and Tell Baruda paragraph",
+        "indexed bibliography printed 143"
+      ],
+      "finding": "Actual chapter title Celebrating the Centenary of Incantation Bowls at Nippur; volume From Sherds to Landscapes (not Shreds), editors Mark Altaweel and Carrie Hritz, 2021. Indexed primary body explicitly names 18N20 and 18N21, C10-116/117/119 SW threshold group and one unnamed NW threshold bowl; cites Franco 1978–79 p.233 for the latter. Primary bibliography resolves Franco article Mesopotamia 13–14:233–249. Full PDF pages not held or visually checked: publisher S3 download exceeds web size limit and archive route fails robots verification. No readings, findspot normalization, uncertain NW/Franco-number match or current unpublished finding."
+    },
+    {
+      "source_id": "SRC-59F609B5B2DF",
+      "url": "https://uia.brage.unit.no/uia-xmlui/bitstream/handle/11250/3212070/Article.pdf?isAllowed=y&sequence=4",
+      "evidence_kind": "indexed primary author repository article body",
+      "locator": "concluding discussion of dealer translation attribution; PDF page number not independently verified",
+      "finding": "Indexed primary article explicitly names Barakat SKU LO.769 and SKU X.0552 and discusses signed versus unsigned translations. Exact scholarly contextual pointers only; no author attribution inferred for unsigned translation. Full file returns web HTTP502 and archive robots verification fails; neither translation nor full PDF acquired."
+    }
+  ]
+}

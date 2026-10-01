@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "checkpoint": 5,
+  "created_at": "2026-10-01T23:43:36+00:00",
+  "goal_status": "active",
+  "corpus_before": "0ff244d49dfe1e89d465f8c7e8bf9426073a4449f5f70e2298fcfa6703223c4c",
+  "corpus_after": "be465245f4b747f053e6a31cc71810dac5569d8671b83ac174de9396cd448764",
+  "frozen_cohort_size": 249,
+  "cases_with_appended_source_work_this_checkpoint": 220,
+  "complete_case_investigations_claimed": 0,
+  "publication_assessments_added": 8,
+  "newly_linked_frozen_identities": 7,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "nli_audit": {
+    "query_total": 281,
+    "matched_frozen_cohort": 205,
+    "bibliography_field_record_count": 0,
+    "exhibition_inventory_records": 36,
+    "scope": "All structured catalogue datafields inspected; not full image/text-edition investigation or present nonpublication finding.",
+    "audit_path": "data/private/research-work/institutional-cases-2026-10-01/nli_catalogue_field_audit.json",
+    "all_six_archive_hashes_verified": true
+  },
+  "source_routes": [
+    {
+      "url": "https://isac-assets.s3.amazonaws.com/isac-publications/saoc71.pdf?VersionId=IzcOX7TLpnXUjUQNVr6lgxomELH4I9BS",
+      "outcome": "web size limit17415137bytes; archive capture robots unavailable/disallowed; no PDF acquired."
+    },
+    {
+      "url": "https://uia.brage.unit.no/uia-xmlui/bitstream/handle/11250/3212070/Article.pdf?isAllowed=y&sequence=4",
+      "outcome": "indexed primary body accessible; full webHTTP502; archive robots unverifiable; no PDF acquired."
+    }
+  ],
+  "nli_capture_receipts": [
+    {
+      "id": "CAP-E095BE5E98F8",
+      "sha256": "89eca65b77ce9733332f313ca55133197fca2765934bdc68021d5fec7be29f10",
+      "storage_path": "sha256/89/89eca65b77ce9733332f313ca55133197fca2765934bdc68021d5fec7be29f10",
+      "retrieved_at": "2026-10-01T23:35:53+00:00",
+      "url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=1&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+      "byte_length": 320005,
+      "record_count": 50
+    },
+    {
+      "id": "CAP-51BDEB780B24",
+      "sha256": "41fde3c6081e35211dfc1df47ae915ee78e1e7fbf33c8ba6df7c273d1e982b69",
+      "storage_path": "sha256/41/41fde3c6081e35211dfc1df47ae915ee78e1e7fbf33c8ba6df7c273d1e982b69",
+      "retrieved_at": "2026-10-01T23:36:41+00:00",
+      "url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=51&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+      "byte_length": 317138,
+      "record_count": 50
+    },
+    {
+      "id": "CAP-AC752DAC298E",
+      "sha256": "01c6336b1f7e0c39ebd025c78f2020e05d76c7ec5a0df8db7c50916c1d76c0e8",
+      "storage_path": "sha256/01/01c6336b1f7e0c39ebd025c78f2020e05d76c7ec5a0df8db7c50916c1d76c0e8",
+      "retrieved_at": "2026-10-01T23:36:46+00:00",
+      "url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=101&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+      "byte_length": 322826,
+      "record_count": 50
+    },
+    {
+      "id": "CAP-E4F5A8043B2B",
+      "sha256": "3f57446bfbf6a585a38f290aff250980af64f6d5bb6466b319afd5e0ddb83e61",
+      "storage_path": "sha256/3f/3f57446bfbf6a585a38f290aff250980af64f6d5bb6466b319afd5e0ddb83e61",
+      "retrieved_at": "2026-10-01T23:36:50+00:00",
+      "url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=151&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+      "byte_length": 319815,
+      "record_count": 50
+    },
+    {
+      "id": "CAP-3EE2AD23D567",
+      "sha256": "0288477d24954b8594c4630781d014ce441271391e65c2500875973966185198",
+      "storage_path": "sha256/02/0288477d24954b8594c4630781d014ce441271391e65c2500875973966185198",
+      "retrieved_at": "2026-10-01T23:36:54+00:00",
+      "url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=201&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+      "byte_length": 271816,
+      "record_count": 50
+    },
+    {
+      "id": "CAP-D93892D51197",
+      "sha256": "428888fb568c6785d4d44b59a2de499fc965584d4a50024821080573226d8e1a",
+      "storage_path": "sha256/42/428888fb568c6785d4d44b59a2de499fc965584d4a50024821080573226d8e1a",
+      "retrieved_at": "2026-10-01T23:36:57+00:00",
+      "url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=251&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+      "byte_length": 160942,
+      "record_count": 31
+    }
+  ],
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Use exact NLI digital/physical exhibition identifiers to seek former collection/edition concordances; inspect images with source-specific attribution.",
+    "Acquire/inspect full Hunter2021/Franco/Korsvoll primary pages through lawful available routes; bibliographic context does not certify readings.",
+    "Continue held-source native/translation/quote and eight zero-appearance PDF audits."
+  ],
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-001",
+    "TEXT-004",
+    "TEXT-010"
+  ],
+  "scope": "Scholarly catalogue/archaeological/dealer-context publication references; all205 exact MMS catalogue field audits. No new inscription/translation, edition-completion, identity decision or rights approval.",
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 2
+    },
+    {
+      "table": "appearances",
+      "added": 2
+    },
+    {
+      "table": "captures",
+      "added": 6
+    },
+    {
+      "table": "publication_assessments",
+      "added": 8
+    },
+    {
+      "table": "source_corrections",
+      "added": 2
+    },
+    {
+      "table": "sources",
+      "added": 0
+    }
+  ],
+  "backup_path": "data/private/backups/before-institutional-cases-20261001T233122Z.sqlite3",
+  "existing_exact_page_media_reused": "MED-80C4080F4D81",
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0005_institutional_references_and_all_nli_catalogue_fields.json",
+      "sha256": "d70c90cc0d7f38b0af145c9c756a2d65e485703dffed255f8ccfdb6f28adeee5"
+    },
+    {
+      "path": "data/private/research-work/institutional-cases-2026-10-01/search_actions.json",
+      "sha256": "52e5d3df784d3563062b425b14905072fa12d6118a2f5e0c5da3412ada1fb159"
+    },
+    {
+      "path": "data/private/research-work/institutional-cases-2026-10-01/nli_catalogue_field_audit.json",
+      "sha256": "6caf099dc7f4a65a63ebc98c73cd077c8785374c7dcc46df00109ad09a4cfd3c"
+    },
+    {
+      "path": "data/private/research-work/institutional-cases-2026-10-01/prepare.py",
+      "sha256": "64ca4a656033eaa3137a90f7e2f2e582a9666d05932c15b37002eceaccc30473"
+    },
+    {
+      "path": "data/private/research-work/institutional-cases-2026-10-01/analyze_nli.py",
+      "sha256": "5c2d092fef18d6aa6ba9ba19f434376cbe6c28a306747d6ed6e632483a1c0c33"
+    },
+    {
+      "path": "data/private/research-work/institutional-cases-2026-10-01/capture_nli_pages.py",
+      "sha256": "a2a371b3d5d59f168558a7ff0a5ca51f941f02061c06b3c1b907640debd160ca"
+    },
+    {
+      "path": "data/private/research-work/institutional-cases-2026-10-01/production-verification.json",
+      "sha256": "b35eb2ceebd03baf827e00461daaba8bc85faf9a96a3f1a8be70d7a2a43e1453"
+    },
+    {
+      "path": "research/reviews/institutional_case_bibliography_evidence_2026-10-01.json",
+      "sha256": "b0172306774b1308e2c48a6980fc1a62b77e983f464f55bcc0022ddaa42400a4"
+    },
+    {
+      "path": "research/reviews/institutional_case_source_corrections_2026-10-01.json",
+      "sha256": "733e315b32a99256c75412da2bd35cf7c53b2edfe9d08ead3bdb9791fa794519"
+    },
+    {
+      "path": "research/reviews/institutional_case_appearances_2026-10-01.jsonl",
+      "sha256": "0d701540ceec0c0dd35a812bce138baeffb6ffeee6e399945cecfcd423f3e7da"
+    },
+    {
+      "path": "research/reviews/institutional_case_publication_references_2026-10-01.json",
+      "sha256": "5243ee5f3c667fae8a1751bb494e389fc16429dc6350ee8ed70edcba923bd9f2"
+    }
+  ],
+  "validation": {
+    "copied_database_rehearsal": "pass",
+    "three_manifest_replays_unchanged": true,
+    "preexisting_rows_preserved_except_two_immutable_source_repairs": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "371 pass",
+    "reader": {
+      "audit_checks": "7/7",
+      "corpus_digest_matches": true,
+      "all_six_new_xml_captures_hash_match": true,
+      "sources_corrected_titles_match": true,
+      "existing_page_media_bytes_match": true,
+      "captures_packaged": 70,
+      "edition_texts_unchanged": 826,
+      "all_text_rows_present": 1491,
+      "all_media_rows_present": 1216,
+      "local_image_rows": 856
+    }
+  }
+}
