@@ -12,14 +12,14 @@
 | Field | Identities | Coverage |
 |---|---:|---:|
 | Location | 1277 | 74.6% |
-| Provenance | 371 | 21.7% |
+| Provenance | 372 | 21.7% |
 | Dating | 484 | 28.3% |
-| Dimensions | 514 | 30.0% |
+| Dimensions | 515 | 30.1% |
 | Material | 410 | 24.0% |
-| Language | 1027 | 60.0% |
+| Language | 1028 | 60.1% |
 | Script | 94 | 5.5% |
 | Text Edition | 283 | 16.5% |
-| Translation | 381 | 22.3% |
+| Translation | 377 | 22.0% |
 | Image | 612 | 35.8% |
 
 ## Completeness distribution
@@ -27,8 +27,8 @@
 | Core fields present | Identities |
 |---|---:|
 | 0–2 of 10 | 586 |
-| 3–5 of 10 | 862 |
-| 6–8 of 10 | 252 |
+| 3–5 of 10 | 863 |
+| 6–8 of 10 | 251 |
 | 9–10 of 10 | 11 |
 
 ## Next-action queue
@@ -36,8 +36,8 @@
 | Next action | Identities |
 |---|---:|
 | Location | 434 |
-| Provenance | 998 |
-| Dating | 64 |
+| Provenance | 997 |
+| Dating | 65 |
 | Dimensions | 139 |
 | Material | 23 |
 | Language | 7 |
@@ -47,7 +47,7 @@
 
 ## Claim conflicts
 
-**428** identities triggered raw difference flags. Current reviews support **570** compatible field-level instances and **16** substantive instances. **266** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**430** identities triggered raw difference flags. Current reviews support **572** compatible field-level instances and **16** substantive instances. **266** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

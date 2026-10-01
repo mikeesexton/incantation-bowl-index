@@ -31,7 +31,7 @@ class PublicLibraryReviewPacketTests(unittest.TestCase):
         self.assertFalse(self.packet["approval"]["deployment_authorized"])
         self.assertNotIn('"content"', self.packet_path.read_text(encoding="utf-8"))
 
-    def test_exact_proposal_still_matches_live_evidence(self):
+    def test_approved_packet_matches_live_or_retained_original_and_revisions_fail_closed(self):
         packet_material = {
             "texts": self.packet["texts"],
             "media": self.packet["media"],
@@ -40,8 +40,27 @@ class PublicLibraryReviewPacketTests(unittest.TestCase):
         live_text = {row["text_id"]: row for row in review.proposed_text_entries(self.conn)}
         live_media = {row["media_id"]: row for row in review.proposed_media_entries(self.conn)}
         for row in self.packet["texts"]:
-            self.assertEqual(row["evidence_sha256"], live_text[row["text_id"]]["evidence_sha256"])
-            self.assertEqual(row["proposed_review"], live_text[row["text_id"]]["proposed_review"])
+            if row["evidence_sha256"] == live_text[row["text_id"]]["evidence_sha256"]:
+                self.assertEqual(row["proposed_review"], live_text[row["text_id"]]["proposed_review"])
+                continue
+            # Owner approval remains an immutable historical packet. A metadata
+            # repair must preserve exactly what was approved and revoke release
+            # for the changed row; never rewrite approval to make a test pass.
+            from bowl_index.publication import text_evidence, text_fingerprint, current_text_reviews
+            from bowl_index.projection import Projection
+            correction = self.conn.execute(
+                "SELECT before_json FROM text_metadata_corrections WHERE text_id=? ORDER BY rowid DESC LIMIT 1",
+                (row["text_id"],),
+            ).fetchone()
+            self.assertIsNotNone(correction, "unexplained change to owner-approved evidence")
+            before = json.loads(correction["before_json"])
+            evidence = text_evidence(self.conn)[row["text_id"]]
+            original = {key: before.get(key, value) for key, value in evidence.items()}
+            self.assertEqual(text_fingerprint(original), row["evidence_sha256"])
+            self.assertNotIn(row["text_id"], current_text_reviews(self.conn))
+            projected = next(item for item in Projection(self.conn)._texts() if item["id"] == row["text_id"])
+            self.assertIsNone(projected["content"])
+            self.assertEqual(projected["content_status"], "withheld_consult_the_edition")
         for row in self.packet["media"]:
             self.assertEqual(row["evidence_sha256"], live_media[row["media_id"]]["evidence_sha256"])
             self.assertEqual(row["proposed_review"], live_media[row["media_id"]]["proposed_review"])

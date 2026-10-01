@@ -38,6 +38,7 @@ from .publications import apply_publication_registry, publication_object_counts
 from .publication_assessments import apply_publication_assessments
 from .claim_corrections import apply_locator_corrections
 from .source_corrections import apply_source_corrections
+from .text_metadata import apply_text_metadata
 from .cohort import write_montgomery_cohort, apply_montgomery_register
 from .concordance import apply_concordance_review
 from .relationships import apply_relationship_review
@@ -120,6 +121,10 @@ def build_parser():
         "ingest-source-corrections", help="apply bibliographic repairs with immutable originals"
     )
     source_corrections.add_argument("path")
+    text_metadata = sub.add_parser(
+        "ingest-text-metadata", help="repair text labels and locators with retained originals"
+    )
+    text_metadata.add_argument("path")
     object_scope = sub.add_parser(
         "ingest-object-scope", help="record researcher decisions that an object is outside the corpus"
     )
@@ -360,6 +365,9 @@ def main(argv=None):
     elif args.command == "ingest-locator-corrections":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_locator_corrections(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))
+    elif args.command == "ingest-text-metadata":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(apply_text_metadata(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))
     elif args.command == "ingest-object-scope":
         from .object_scope import apply_object_scope_reviews
         review = json.loads(Path(args.path).read_text())

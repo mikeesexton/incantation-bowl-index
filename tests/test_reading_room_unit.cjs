@@ -166,3 +166,34 @@ test("a translation leads and the Aramaic transcription is expandable", () => {
   assert.match(html, /בשמך אנא/);
   assert.match(html, /Research summary/);
 });
+
+test("commentary never substitutes for the translation and empty originals are explicit", () => {
+  const html = textSections([{text_type: "summary", content: "A catalogue description."}]);
+  const translation = html.slice(0, html.indexOf("Research summary and commentary"));
+  assert.match(translation, /What it says/);
+  assert.match(translation, /No translation is available/);
+  assert.match(translation, /No transcription or transliteration is stored/);
+  assert.doesNotMatch(translation, /A catalogue description/);
+  assert.match(html, /<details[^>]*><summary>Research summary and commentary/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
+
+test("Latin transliterations stay readable and original markup is escaped", () => {
+  const html = textSections([{text_type: "transliteration", script: "Latin",
+    language: "Mandaic", content: "<script>bad()</script>"}]);
+  assert.match(html, /dir="auto"/);
+  assert.doesNotMatch(html, /dir="rtl"/);
+  assert.match(html, /&lt;script&gt;/);
+});
+
+test("a retained original page is expandable and distinguished from a transcription", () => {
+  given({accessTier: "private_research"});
+  const html = textSections([], [{media_type: "scan", url: "/api/private-media/MED-TEST.png",
+    attribution: "Montgomery 1913", rights_statement: "Private research view only;"}]);
+  assert.match(html, /No transcription or transliteration is stored/);
+  assert.match(html, /Recorded source pages are available/);
+  assert.match(html, /Published source page · facsimile/);
+  assert.match(html, /private research view/);
+  assert.match(html, /alt="Published source page"/);
+  assert.ok(html.indexOf("<details") < html.indexOf("<img"));
+});

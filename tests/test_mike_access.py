@@ -42,7 +42,11 @@ class MikeAccessBuildTests(unittest.TestCase):
         private_translations = [row for row in texts
                                 if row["object_id"] in objects and row["text_type"] == "translation"]
         barakat_media = [row for row in media if row["object_id"] in objects]
-        self.assertEqual(len(private_translations), 4)
+        self.assertEqual(len(private_translations), 3)
+        summary = next(row for row in texts if row["id"] == "TXT-C4E64CF6D96B")
+        self.assertEqual(summary["text_type"], "summary")
+        self.assertTrue(summary["content"])
+        self.assertEqual(summary["content_status"], "private_research")
         self.assertTrue(all(row["content"] for row in private_translations))
         self.assertEqual(len(barakat_media), 5)
         self.assertTrue(all(row["url"] for row in barakat_media))

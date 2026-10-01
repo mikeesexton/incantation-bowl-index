@@ -1,26 +1,26 @@
 # Discovery campaign status
 
-Generated: `2026-09-26T23:21:37+00:00`
+Generated: `2026-10-01T02:45:25+00:00`
 
 ## Corpus
 
-- Candidate objects: **2053**
-- Unclassified claim fields: **[]**
-- Estimated distinct objects after resolved dedupe: **1736**
-- Resolved duplicate records: **317**
+- Candidate objects: **2059**
+- Unclassified claim fields: **['adversary_or_target', 'catalogue_script', 'edition_language_and_script_label', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'publication_reference', 'reported_bowl_form', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_dimensions', 'reported_findspot', 'reported_fragment_type', 'reported_height', 'reported_physical_condition', 'reported_writing_condition', 'source_language_or_script_label', 'supernatural_name_or_class']**
+- Estimated distinct objects after resolved dedupe: **1711**
+- Resolved duplicate records: **348**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
-- Probable or confirmed: **1190**
-- Source appearances: **2353**
-- Sources: **947**
+- Probable or confirmed: **1195**
+- Source appearances: **2359**
+- Sources: **954**
 - Dedupe clusters pending: **0**
-- Objects with text: **212**
-- Objects with translation: **58**
+- Objects with text: **766**
+- Objects with translation: **388**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **20**
+- Open leads: **25**
 - Planned queries: **0**
-- Searched queries: **322**
+- Searched queries: **328**
 - Coverage targets remaining: **0**
 - Qualifying saturation sweeps: **2**
 - Manual audits: **14**
@@ -40,7 +40,7 @@ Generated: `2026-09-26T23:21:37+00:00`
 | excavation_report | 0 | 34 | 0 |
 | museum | 0 | 29 | 0 |
 | private_collection | 0 | 17 | 0 |
-| scholarship | 0 | 8 | 0 |
+| scholarship | 0 | 14 | 0 |
 | thesis | 0 | 34 | 0 |
 | web | 0 | 12 | 0 |
 
@@ -65,10 +65,10 @@ Generated: `2026-09-26T23:21:37+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 781 |
-| unknown | 98 |
+| available | 783 |
+| unknown | 102 |
 | partial | 62 |
-| paywalled | 4 |
+| paywalled | 5 |
 | blocked | 1 |
 | offline | 1 |
 
@@ -76,16 +76,16 @@ Generated: `2026-09-26T23:21:37+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1329 |
+| object type | whole_bowl | 1333 |
 | object type | fragment | 374 |
-| object type | uncertain | 331 |
+| object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
-| object type | non_bowl | 5 |
-| record status | probable | 917 |
+| object type | non_bowl | 6 |
+| record status | probable | 922 |
 | record status | candidate | 857 |
 | record status | confirmed | 273 |
-| record status | rejected | 6 |
-| authenticity | unassessed | 1519 |
+| record status | rejected | 7 |
+| authenticity | unassessed | 1525 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |
@@ -137,7 +137,6 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Investigate Penn B2963 / Montgomery 3 Date Made: ca. 200 BCE. The value is preserved as a museum-reported claim, not accepted as a corrected chronology. Check primary catalogue dating and later scholarship; do not infer a replacement date. |
 | in_progress | 1 | Reconcile Penn B9010 / Montgomery 9 Inscription Language: Hebrew Language with the edition-based Jewish Babylonian Aramaic claim. Determine whether the catalogue field reflects historical terminology, a script/language confusion or an error; preserve both assertions pending review. |
 | in_progress | 1 | Reconcile Penn B9008 / Montgomery 31 Inscription Language: Hebrew Language with the existing Syriac attribution. The museum description also says Proto-Manichean. Distinguish language from script and catalogue terminology; retain disagreement. |
-| open | 1 | Two object records carry the identifier SD 34 and are very likely one physical bowl: IBI-358AAAF4ED2B ('Waller 2022: SD 34', from Waller's biblical-quotation table) and IBI-12617DC13FC0 ('Success-in-business bowl SD 34', from Levene and Bhayro's publication). The generated dedupe queue is empty, so this pair was never surfaced - probably because the two designations arrived under different schemes ('Waller 2022 table designation' and 'publication designation') rather than a shared trusted namespace. Review as a same-object candidate and, separately, check why the scheme mismatch hid it. |
 | open | 1 | Reconcile BM 91711 / N-1847's reported Arban findspot with Waller's assessment that the accessions-register attribution to Layard is plausible but unverified. Check the original museum register, Layard's excavation account, the published prospectus, and any later object-specific scholarship before changing the findspot status. |
 | in_progress | 1 | Classify corpus findspot and provenance assertions by evidence basis: documented controlled excavation, museum or accessions register, dealer or antiquities-market report, later scholarly inference, or unverified/unknown. Preserve the original place claim and its source separately from the assessment. |
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
@@ -152,13 +151,19 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | blocked | 2 | Obtain an authorized local copy of Ford 2002, Another Look at Mandaic Incantation Bowl BM 91715, JANES 29, pp. 31–47. |
 | open | 2 | Review whether provisional Davidovitz 27 (IBI-FORD2014-DAV27) has another source appearance under a different designation, including the existing Davidovitz popularity-and-success bowl IBI-6A5B95130C25. |
 | open | 2 | Review Ford 2014 proposed readings and interpretations against the 2013 edition and relevant photographs, using the 14-discussion index; preserve differences as attributed evidence. |
+| open | 2 | Hunter 2021's section on Nippur seasons names additional excavated or surface-find candidates absent from the index by exact field number: 18N71 (Mandaic bowl fragment), 18N99 (incomplete Mandaic bowl), 18N100 (incomplete Aramaic bowl with traces of characters), 11N7, 11N8 and 11N9 (bowl sherds), 11N77 and 11N78 (whole bowls), 11N104 (fragment with pseudo script), 12N387 (rim sherd), and 4N17 and 4N72 (incomplete pseudo-script bowls). Verify each against the chapter's printed pages and cited excavation catalogues, then ingest distinct source appearances and object candidates where appropriate. The chapter also mentions 18N70, an ostracon with pseudo script; assess scope separately rather than treating it as a bowl. |
 | in_progress | 2 | Obtain authorized access to Isbell 1975, Corpus of the Aramaic Incantation Bowls, for page-level edition checks. |
+| open | 2 | Kedar 2019 states that ten bowls were unpublished when she wrote: JNF 18, JNF 125, JNF 149, JNF 152, JNF 153 and JNF 188 ('unpublished texts by James Nathan Ford', p. 134 n. 546), Wolf 69 and CBS 85-48-914 (p. 105 n. 434), Wolf 23 (p. 135) and Davidovitz 2 ('being prepared for publishing by James Nathan Ford', p. 102 n. 410). Check Ford's and others' publications since 2019 (Ford published JNF 124 in 2016 and Davidovitz 41 in 2023). Any bowl still unpublished could become the corpus's first sourced no-known-edition finding, but a 2019 statement is dated evidence: decide the policy before recording one. |
 | open | 2 | Investigate Montgomery 1913 appendix no. 42: locate Gottheil's original notes or later scholarship assessing whether the unlocated original was a bowl or another amulet. Do not assign a Nippur findspot, ancient date, CBS number or physical identity from the main forty-bowl corpus. |
+| in_progress | 2 | Map the nine Mandaic bowls of Morgenstern 2012's preliminary survey to their editions. Five are edited in Morgenstern, 'Five Mandaic Magic Bowls from the Moussaieff Collection', Eretz-Israel 34 (2021): 106-122 (source SRC-553965D06B17); the rest in Morgenstern and Abudraham, 'Additional Mandaic Magic Bowls from the Moussaieff Collection', Mehqarim be-Lashon (Hebrew; listed as forthcoming on the author's page, reported elsewhere in the corpus as 2025). Seven survey identities are unlinked in TEXT-001: M23, M25, M26, M139, M154 and unnumbered A and B. Obtain the tables of contents or first pages before linking any bowl. |
 | blocked | 2 | Obtain a complete authorized copy of Naveh and Shaked 1993, Magic Spells and Formulae, for object-level indexing. |
 | in_progress | 2 | Consult the 1998 third edition of Naveh and Shaked, Amulets and Magic Bowls, through the Library of Congress for object-level edition indexing. |
 | open | 2 | Two source records describe the same article: SRC-69C22D670211 (2005) and SRC-A84A167A5779 (2006). Archiv fuer Orientforschung 51 is a 2005/2006 volume, which explains the split. Reconcile to one record with the correct year and page range, keeping both citations in history. |
 | in_progress | 2 | Consult Müller-Kessler 2005, TMH 7, through the Library of Congress for object-level edition indexing. |
 | in_progress | 2 | Consult Yamauchi 1967, Mandaic Incantation Texts, for a page-level Mandaic text census and object indexing. |
+| open | 2 | Penn B2970 (object 79917): obtain any inscription edition or curatorial documentation; current museum bibliography is empty, but the object has 13 reported interior lines and two images. |
+| open | 2 | Acquire Geller, Four Aramaic Incantation Bowls, The Bible World (1980), pp. 47–60, and check bowl D against index designation GelD; establish museum accession and location without guessing a concordance. |
+| open | 2 | Berlin VA.2451: seek later publication, legible imaging or curatorial documentation after the 2018 catalogue's dated unpublished and nearly-illegible reports. |
 | blocked | 2 | Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access. |
 | blocked | 2 | Obtain authorized full-text access to Faraj 2023 to capture the edition, translation, dimensions, provenance details, and imagery for IM 77781. |
 | blocked | 2 | Obtain LMU Archaeology Museum accession numbers and item-level provenance, dimensions, scripts, texts, translations, images, and 3D records for the four-bowl project. |

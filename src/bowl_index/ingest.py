@@ -111,6 +111,10 @@ def add_candidate(conn, record):
     if record.get("authenticity") in authenticity_aliases:
         record = dict(record)
         record["authenticity"] = authenticity_aliases[record["authenticity"]]
+    # Explicitly declared paraphrases are commentary, never literal translations.
+    from .text_metadata import validate_text_classification, previously_corrected_import
+    for text in record.get("texts", []):
+        validate_text_classification(text)
     source = record.get("source")
     source_id = record.get("source_id")
     if source:
@@ -175,6 +179,9 @@ def add_candidate(conn, record):
             )
         for item in record.get("texts", []):
             locator = item.get("locator", appearance["locator"])
+            if previously_corrected_import(conn, existing["object_id"], existing["appearance_id"],
+                                           source_id, item, locator):
+                continue
             if conn.execute(
                 "SELECT 1 FROM texts WHERE object_id=? AND appearance_id=? AND source_id=? "
                 "AND text_type=? AND content=? AND locator=?",

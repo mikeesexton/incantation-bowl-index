@@ -25,6 +25,46 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — First personal audit follow-ups
+
+**Claimed:** QA-004 (reader text semantics and presentation; Mike's first audit follow-ups)
+**Corpus:** changed (seven text classifications; source pointers and documentation; originals retained) — state digest `e7a5706f81f9`
+**Tests:** 353 Python and 42 Node tests pass; Mike Access private audit 7/7; SQLite integrity/foreign keys pass; manifest replay and original-payload/membership preservation verified
+
+- Saved all five explicit batch-one reviews with Mike's follow-up notes; progress
+  is 5 reviewed / 1,699 remaining. Documentation and acquisition leads remain
+  separate from audit completion. No review history or identity was transferred.
+- Reserved “What it says” for translations; moved commentary into its own
+  collapsed panel, added explicit missing-text states, and placed the original
+  incantation/transliteration and held page facsimiles in an expandable field.
+  Promoted maker/hand and substantive textual facts; kept collection designations
+  and source labels in one collapsed apparatus. Combined equivalent page/item
+  citations while retaining all claims and specific line/figure references.
+- Corrected seven explicitly labelled summaries/paraphrases stored as translations
+  through a new evidence-bound metadata importer and append-only private snapshots.
+  Added ingestion protection against those declarations and recreating repaired
+  locator originals. All 1,351 previous text payloads remain unchanged; exports
+  redact snapshots and changed release evidence fails closed. Original owner
+  approval packets were preserved, not refreshed into new approvals.
+- Checked B2970's live museum details and empty bibliography, retained its second
+  image URL and added sourced physical/layout facts. Visually checked VA.2451's
+  held 2018 catalogue, repaired the text and six claim page pointers, and retained
+  dated unpublished/illegible reports as follow-up leads. Recorded two structural
+  facet compatibility reviews without certifying readings or resolving scholarly
+  disagreements. Exact-designation searches located no additional editions.
+- Traced GelD to the Apotropaic Arts index's Geller 1980 group and added a clear
+  project description plus a primary-edition acquisition lead. Identified Erica
+  Hunter, a Segal contributor, as a contact beyond the museum; drafted an email
+  for Mike without sending it. Captured AIT27's original-script source page as a
+  private facsimile; Montgomery gives no separate translation for No. 27.
+- Regenerated roadmap, campaign, enrichment, conflict and proofreading outputs
+  plus Mike Access. Seven reclassified summaries reduce the edition-row queue
+  to 688 checked / 2 unreviewed of 690; missing translations and editions remain
+  acquisition work, not completed proofreading. Backed up before migration and
+  kept backups to ten. Private ledger, derivative and screenshot remain ignored.
+  See `research/audits/first_audit_implementation_2026-09-30.md`. No deployment,
+  outgoing email, push, uncertain merge, or new public-reuse approval.
+
 ## 2026-09-30 — Codex — Daily personal audit
 
 **Claimed:** none (OPS — Mike-requested five-bowl daily personal audit)

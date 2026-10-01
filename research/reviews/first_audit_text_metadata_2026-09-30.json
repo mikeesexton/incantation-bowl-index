@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex — Mike-requested metadata audit",
+  "reviewed_at": "2026-10-01T02:34:40+00:00",
+  "evidence_path": "research/audits/first_personal_audit_2026-09-30.md",
+  "evidence_sha256": "c0e6f156cd4680edb6a265a9c6619430fe6d048c19230ff3bea6e7ce09cf2539",
+  "entries": [
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-5AD1D8AE244B",
+      "text_id": "TXT-5AD1D8AE244B",
+      "expected_text_sha256": "620adb5e2b5002e8685a938ed3ea7ba1dab0f94d104afaac882f470947444315",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-809171D23704",
+      "text_id": "TXT-809171D23704",
+      "expected_text_sha256": "7e193e47e8479a6adf21d418e44642903c39a95c468d4d10c0fa3896defd8705",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-B40E7B6820A5",
+      "text_id": "TXT-B40E7B6820A5",
+      "expected_text_sha256": "b30aff647e6dc67c911b762f9e48bc7645ccd59d07ddc43cf7f47b027c799353",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-B91E459A48AD",
+      "text_id": "TXT-B91E459A48AD",
+      "expected_text_sha256": "e242e863368fd45ce8f7326c1654cc27334df5ac182b90cf01f401b596098800",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-C4296C80CCD2",
+      "text_id": "TXT-C4296C80CCD2",
+      "expected_text_sha256": "e6c0856bf0bcd3ed8de19bf64fd1753155ac8386671e99852c909d8967c27aa9",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-C4E64CF6D96B",
+      "text_id": "TXT-C4E64CF6D96B",
+      "expected_text_sha256": "0bedf60396648741494725c4d8d597a915cda3752e8aab15483657cfa06c3571",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-D40450F0C247",
+      "text_id": "TXT-D40450F0C247",
+      "expected_text_sha256": "9c5a8e0580ababdb8de110ae201b93f3b97c7aeffffb6d02efea265460d2312b",
+      "changes": {
+        "text_type": "summary"
+      },
+      "rationale": "The existing editor/notes explicitly declares a summary or paraphrase; retain content as commentary, not an attributed translation."
+    },
+    {
+      "id": "TMC-FIRST-AUDIT-TXT-EFAD2D37F83B",
+      "text_id": "TXT-EFAD2D37F83B",
+      "expected_text_sha256": "0a9a29d92a79e06b18418694c2dd7a8c11b6aa356d38d88314610c52c300fc23",
+      "changes": {
+        "locator": "Catalogue entry 45 (VA.2451), printed p. 101; PDF p. 115"
+      },
+      "rationale": "Source page visually checked: entry 45 is printed p. 101, not p. 99."
+    }
+  ]
+}

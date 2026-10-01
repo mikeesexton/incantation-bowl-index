@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-09-30T23:27:22+00:00`
+Generated: `2026-10-01T02:45:24+00:00`
 
 ## Portfolio status
 
@@ -81,9 +81,9 @@ Current evidence: **213 scholarship works indexed; 42 with a source-linked held 
 | Source documents assessed complete | 49 |
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 428 |
-| Triaged claim-field differences | 586/852 |
-| Compatible differences | 570 |
+| Identities triggering raw claim-difference flags | 430 |
+| Triaged claim-field differences | 588/854 |
+| Compatible differences | 572 |
 | Review required (missing or no longer valid) | 266 |
 | Existing reviews requiring revalidation | 46 |
 | Substantive conflict instances | 16 across 14 identities |
@@ -91,18 +91,18 @@ Current evidence: **213 scholarship works indexed; 42 with a source-linked held 
 | Probable/confirmed identities with a publication reference | 799/1053 (75.9%) |
 | Probable/confirmed identities reviewed as having no known edition | 0/1053 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 799/1053 (75.9%) |
-| Identities with a translation | 381 |
+| Identities with a translation | 377 |
 | Scan-checked normalized reading texts | 688 |
 | Publication keys resolved to the publication they designate | 33/33 |
 | Objects under a resolved publication | 896/896 |
 | Montgomery/Penn concordances with dated current-evidence review | 33 |
 | Source-reported object relationships / unresolved scope | 5 / 4 |
 | Identities with a transcription/transliteration | 283 |
-| Media records with a non-unknown rights status | 696/1089 (63.9%) |
-| Media with a current ledger entry | 354/1089 |
+| Media records with a non-unknown rights status | 697/1091 (63.9%) |
+| Media with a current ledger entry | 354/1091 |
 | Media with completed rights decisions / approved for reuse | 319 / 319 |
 | Blocked leads | 29 |
-| Open or active leads | 22 |
+| Open or active leads | 25 |
 | Qualifying discovery-saturation sweeps | 2 |
 
 Coverage means a field or reference is present, not independently verified. Publication-link coverage combines publication identifiers with reviewed object-level publication links. Publication-disposition coverage additionally counts a sourced no-known-edition finding; catalogue silence alone does not qualify. A non-unknown rights label is not a reviewed public-reuse decision. Discovery saturation applies only to the logged searches and does not estimate global completeness.
@@ -112,14 +112,14 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Field | Identities | Coverage |
 |---|---:|---:|
 | Location | 1277 | 74.6% |
-| Provenance | 371 | 21.7% |
+| Provenance | 372 | 21.7% |
 | Dating | 484 | 28.3% |
-| Dimensions | 514 | 30.0% |
+| Dimensions | 515 | 30.1% |
 | Material | 410 | 24.0% |
-| Language | 1027 | 60.0% |
+| Language | 1028 | 60.1% |
 | Script | 94 | 5.5% |
 | Text Edition | 283 | 16.5% |
-| Translation | 381 | 22.3% |
+| Translation | 377 | 22.0% |
 | Image | 612 | 35.8% |
 
 ### Content-facet coverage
@@ -131,10 +131,10 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 | Publication | 553 | 32.3% |
 | Client | 225 | 13.2% |
 | Biblical Intertexts | 171 | 10.0% |
-| Condition | 142 | 8.3% |
+| Condition | 144 | 8.4% |
 | Ritual | 122 | 7.1% |
 | Text Description | 93 | 5.4% |
-| Text Form | 43 | 2.5% |
+| Text Form | 44 | 2.6% |
 | Practitioner | 29 | 1.7% |
 | Visual | 28 | 1.6% |
 | Parallels | 16 | 0.9% |
@@ -507,7 +507,7 @@ Overall gate: **NOT READY**
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have a research-complete publication disposition: an evidence-backed publication link or an explicit sourced no-known-edition finding. Catalogue silence alone does not count. Current: 798/1,052 (75.9%), including zero no-known-edition findings. — current `75.9%`; target `>= 80.0%`.
 - [x] At least half of probable/confirmed identities retain an actual publication link, preventing the disposition gate from being satisfied primarily by negative findings. Current: 798/1,052 (75.9%). — current `75.9%`; target `>= 50.0%`.
-- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `29.3%`; target `>= 100.0%`.
+- [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `29.2%`; target `>= 100.0%`.
 
 ### Required setup tasks
 

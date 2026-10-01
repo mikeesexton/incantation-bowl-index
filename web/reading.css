@@ -212,3 +212,8 @@
 .fact-list em.unresolved { font: .7rem var(--sans); font-style: normal; letter-spacing: .05em;
   text-transform: uppercase; color: var(--amber); margin-left: .5rem; }
 @media (max-width: 620px) { .facet-list { columns: 1; } }
+
+/* Printed originals belong with the incantation, apart from object photographs. */
+.original-facsimile { margin: 1rem 0; }
+.original-page { display: block; width: 100%; height: auto; }
+.original-facsimile figcaption { margin-top: .6rem; font-size: .85rem; color: var(--brownink-soft); }

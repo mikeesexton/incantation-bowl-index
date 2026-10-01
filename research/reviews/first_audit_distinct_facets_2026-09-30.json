@@ -1,0 +1,117 @@
+{
+  "schema_version": 2,
+  "reviewed_by": "Codex — structural facets in Mike-requested documentation follow-up",
+  "reviewed_at": "2026-10-01T02:43:55+00:00",
+  "entries": [
+    {
+      "identity_id": "IDENT-62DA4A36AF2B",
+      "field_group": "text_form",
+      "evidence_sha256": "f764e8fcfac4f0fa92e4119fdef82782ff1763d1ae63f2c7ae4a56618a12714e",
+      "disposition": "compatible",
+      "rationale": "The catalogue paragraph separately reports line count and concentric-circle layout. These are complementary inscription features, not competing values for the same feature.",
+      "review_basis": "Stored line_count and text_layout claims compared with the museum Details paragraph in the normal browser. This structural compatibility neither verifies the inscription reading nor approves public reuse.",
+      "supporting_references": [
+        "research/enrichment/first_audit_followups_2026-09-30.jsonl",
+        "https://collections.penn.museum/collections/object/79917"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-62DA4A36AF2B",
+        "label": "Penn B2970: Hebrew Bowl",
+        "field_group": "text_form",
+        "member_ids": [
+          "IBI-62DA4A36AF2B"
+        ],
+        "claims": [
+          {
+            "id": "CLM-4404A9DA8CC3",
+            "object_id": "IBI-62DA4A36AF2B",
+            "source_id": "SRC-F7F68B42D30F",
+            "field": "line_count",
+            "value_text": "13 interior lines",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Object 79917 (B2970), Details: Description; checked 2026-09-30",
+            "source_title": "Hebrew Bowl B2970",
+            "source_url": "https://collections.penn.museum/collections/object/79917"
+          },
+          {
+            "id": "CLM-147BD5C58D18",
+            "object_id": "IBI-62DA4A36AF2B",
+            "source_id": "SRC-F7F68B42D30F",
+            "field": "text_layout",
+            "value_text": "Concentric circles",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Object 79917 (B2970), Details: Description; checked 2026-09-30",
+            "source_title": "Hebrew Bowl B2970",
+            "source_url": "https://collections.penn.museum/collections/object/79917"
+          }
+        ],
+        "values_by_field": {
+          "line_count": [
+            "13 interior lines"
+          ],
+          "text_layout": [
+            "Concentric circles"
+          ]
+        }
+      }
+    },
+    {
+      "identity_id": "IDENT-BFA332B1C70A",
+      "field_group": "publication",
+      "evidence_sha256": "5dd3a365c5ebaa708386055e7d765d05e74c63b41d9646cee6d6a6386f29b162",
+      "disposition": "compatible",
+      "rationale": "The 2018 volume catalogues this object while reporting its inscription unpublished as of 2018. A descriptive catalogue appearance and that dated inscription-edition status can coexist.",
+      "review_basis": "Stored publication_status claims compared with the held 2018 catalogue entry 45, printed p. 101 / PDF p. 115. This clarifies different bibliographic facets without claiming any present unpublished status or ruling on scholarly readings.",
+      "supporting_references": [
+        "research/enrichment/first_audit_followups_2026-09-30.jsonl",
+        "https://doi.org/10.1163/9789004373686"
+      ],
+      "inspected_evidence": {
+        "identity_id": "IDENT-BFA332B1C70A",
+        "label": "Vorderasiatisches Museum VA.2451 (catalogue 45)",
+        "field_group": "publication",
+        "member_ids": [
+          "IBI-BFA332B1C70A"
+        ],
+        "claims": [
+          {
+            "id": "CLM-6291B2F47981",
+            "object_id": "IBI-BFA332B1C70A",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "publication_status",
+            "value_text": "Reported unpublished in the 2018 catalogue",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 45 (VA.2451), printed p. 101; PDF p. 115",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          },
+          {
+            "id": "CLM-D4E9B9894047",
+            "object_id": "IBI-BFA332B1C70A",
+            "source_id": "SRC-DA708912C2D3",
+            "field": "publication_status",
+            "value_text": "Catalogued in a complete researcher-inspected edition.",
+            "value_json": null,
+            "normalized_value": null,
+            "certainty": "reported",
+            "locator": "Catalogue entry 45 (VA.2451), p. 101",
+            "source_title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+            "source_url": "https://doi.org/10.1163/9789004373686"
+          }
+        ],
+        "values_by_field": {
+          "publication_status": [
+            "Catalogued in a complete researcher-inspected edition.",
+            "Reported unpublished in the 2018 catalogue"
+          ]
+        }
+      }
+    }
+  ]
+}

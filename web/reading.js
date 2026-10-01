@@ -304,30 +304,46 @@
   }
 
   function originalText(item) {
-    const rtl = item.script && item.script !== "Latin";
+    const rtl = /Hebrew|Jewish square|Aramaic|Syriac|Mandaic/i.test(item.script || "")
+      && !/Latin/i.test(item.script || "");
     return `<div class="original-reading"><h3>${esc(item.text_type)}${item.language
       ? " · " + esc(item.language) : ""}</h3>
       <blockquote class="original-text" dir="${rtl ? "rtl" : "auto"}"
         lang="${rtl ? "arc" : ""}">${esc(item.content)}</blockquote>${textCredit(item)}</div>`;
   }
 
-  function textSections(rows) {
+  function originalPage(item) {
+    const image = embeddableImage(item.url)
+      ? `<a href="${esc(item.url)}" rel="noreferrer"><img class="original-page" src="${esc(item.url)}"
+          alt="Published source page" loading="lazy" decoding="async"></a>`
+      : `<a href="${esc(item.url)}" rel="noreferrer">Open the published original text</a>`;
+    return `<figure class="original-facsimile">${image}<figcaption>Published source page · facsimile.
+      ${esc(item.attribution || "")}${item.attribution ? " · " : ""}${esc(mediaRightsLabel(item))}
+      ${licenceLink(item)}</figcaption></figure>`;
+  }
+
+  function textSections(rows, sourcePages = []) {
     const translations = rows.filter(item => item.text_type === "translation");
     const originals = rows.filter(item => ORIGINAL_TEXT_TYPES.has(item.text_type));
     const summaries = rows.filter(item => item.text_type === "summary");
     const other = rows.filter(item => item.text_type !== "translation"
       && item.text_type !== "summary" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
-    const sections = translations.map(item => `<section class="entry-block entry-text">
-      <h2>Translation${item.language && item.language !== "English" ? " · " + esc(item.language) : ""}</h2>
-      <blockquote dir="auto" lang="${item.language === "English" ? "en" : ""}">${esc(item.content)}</blockquote>
-      ${textCredit(item)}</section>`);
-    if (originals.length) sections.push(`<details class="entry-block entry-original">
-      <summary>Show original incantation</summary>${originals.map(originalText).join("")}</details>`);
+    const sections = [`<section class="entry-block entry-text"><h2>What it says</h2>
+      ${translations.length ? translations.map(item => `<div class="translated-reading">
+        <h3>Translation${item.language ? " · " + esc(item.language) : ""}</h3>
+        <blockquote dir="auto" lang="${item.language === "English" ? "en" : ""}">${esc(item.content)}</blockquote>
+        ${textCredit(item)}</div>`).join("")
+      : `<p class="entry-note">No translation is available to read here. Consult the sources below for further documentation.</p>`}
+      <details class="entry-original"><summary>Show original incantation</summary>
+        ${originals.length ? originals.map(originalText).join("")
+          : `<p class="entry-note">No transcription or transliteration is stored for this bowl.${sourcePages.length
+            ? " Recorded source pages are available below." : " Consult the sources below for any published original text."}</p>`}
+        ${sourcePages.length ? `<h3>Recorded source pages</h3><p class="entry-note">These facsimiles may include original text, translations, commentary or photographs.</p>` : ""}
+        ${sourcePages.filter(item => item.url && embeddableImage(item.url)).map(originalPage).join("")}
+      </details></section>`];
     if (summaries.length) {
       const body = summaries.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
-      sections.push(translations.length
-        ? `<details class="entry-block entry-summary"><summary>Research summary</summary>${body}</details>`
-        : `<section class="entry-block entry-text"><h2>What it says</h2>${body}</section>`);
+      sections.push(`<details class="entry-block entry-summary"><summary>Research summary and commentary</summary>${body}</details>`);
     }
     sections.push(...other.map(item => `<section class="entry-block entry-text">
       <h2>${esc(item.text_type)}</h2><blockquote>${esc(item.content)}</blockquote>${textCredit(item)}</section>`));
@@ -665,7 +681,13 @@
   }
 
   function canonicalLocator(value) {
-    return tidy(value).toLowerCase().replace(/\bbowl\b/g, "").replace(/[;,·]/g, " ")
+    const locator = tidy(value).toLowerCase();
+    const printed = locator.replace(/\bpdf\s+p(?:p)?\.?\s*\d+(?:[–-]\d+)?/g, "");
+    const page = printed.match(/\bp(?:p)?\.\s*(\d+(?:[–-]\d+)?)/);
+    const item = printed.match(/\b(?:text|item|entry|bowl)\s+(\d+[a-z]?)(?![\w])/);
+    const qualified = /\b(?:lines?|figures?|plates?|columns?|cols?|notes?|footnotes?|tables?|sections?)\s*\.?\s*[\divx]/.test(printed);
+    if (page && item && !qualified) return `page:${page[1]}|item:${item[1]}`;
+    return (page ? printed : locator).replace(/\bbowl\b/g, "").replace(/[;,·]/g, " ")
       .replace(/\s+/g, " ").trim();
   }
 
@@ -736,8 +758,7 @@
     if (!items.length) return "";
     return `<section class="entry-block recorded-source-forms"><h2>Recorded source forms</h2>
       <p class="entry-note">Equivalent wording is combined in the main display; the forms recorded by the sources remain here.</p>
-      <ul class="fact-list">${items.map(item => `<li><span><small>${esc(item.group.replaceAll("_", " "))}</small>${esc(item.display)}</span>
-        <cite>${citationsFor(item.reports).map(esc).join("; ")}</cite>
+      <ul class="fact-list">${items.map(item => `<li><span><small>${esc(item.group.replaceAll("_", " "))}</small></span>
         <details class="recorded-forms" open><summary>Recorded forms</summary><ul>${[...item.variants].map(value => `<li>${esc(value)}</li>`).join("")}</ul></details></li>`).join("")}</ul></section>`;
   }
 
@@ -776,7 +797,10 @@
     (data.factsBy[id] || []).forEach(r => add(r.source_id, r.locator));
     (data.textsBy[id] || []).forEach(r => add(r.source_id, r.access_locator, r.access_url));
     (data.editionsBy[id] || []).forEach(r => add(r.source_id, r.locator, r.access_url));
-    (data.mediaBy[id] || []).forEach(r => add(r.source_id, "", r.url));
+    (data.factsBy[id] || []).forEach(r => add(r.source_id, "",
+      /^https?:\/\/\S+$/.test(tidy(r.locator)) ? tidy(r.locator) : ""));
+    [...grouped.keys()].forEach(sourceId => add(sourceId, "", data.sourceById[sourceId]?.url));
+    (data.mediaBy[id] || []).forEach(r => add(r.source_id, "", data.sourceById[r.source_id]?.url || r.url));
     if (!grouped.size) return "";
     return `<section class="entry-block"><h2>Sources</h2><ul class="source-groups">${[...grouped].map(([sourceId, item]) => {
       const source = data.sourceById[sourceId] || {};
@@ -900,10 +924,10 @@
 
       ${mediaGallery(cluster)}
 
-      ${textSections(readable)}
+      ${textSections(readable, (data.mediaBy[id] || []).filter(item => item.media_type === "scan" && embeddableImage(item.url)))}
 
       ${withheld.length ? `<section class="entry-block">
-        <h2>${readable.length ? "Further texts" : "What it says"}</h2>
+        <h2>Texts to consult in the sources</h2>
         <p class="entry-note">Printed in the edition below rather than reproduced here.</p>
         <ul class="fact-list">${withheld.map(t => `<li><span>${esc(t.text_type)}${t.language ? " · " + esc(t.language) : ""}</span>
           <cite>${t.access_url ? `<a href="${esc(t.access_url)}" rel="noreferrer">${esc(t.access_citation || "edition")}</a>`
@@ -930,16 +954,15 @@
 
       ${sourcesSection(id)}
 
-      ${identifiersSection(rawLabels, identifiers, cluster.display_name)}
+      ${factList(id, "practitioner", "Maker or hand, as reported")}
+      ${factList(id, "client", "Who it names")}
+      ${factList(id, "target", "What it acts against")}
+      ${factList(id, "ritual", "What it does")}
+      ${factList(id, "biblical_intertexts", "Scripture it quotes")}
 
       <details class="entry-apparatus"><summary>Research details</summary>
         ${recordedFormsSection(id)}
         ${identifierDetails(identifiers, rawLabels)}
-        ${factList(id, "client", "Who it names")}
-        ${factList(id, "practitioner", "Maker or hand, as reported")}
-        ${factList(id, "target", "What it acts against")}
-        ${factList(id, "ritual", "What it does")}
-        ${factList(id, "biblical_intertexts", "Scripture it quotes")}
         <dl>
           <dt>Identity</dt><dd><code>${esc(cluster.identity_id)}</code>
             · ${esc(cluster.record_status)} · ${cluster.member_count} linked record(s)</dd>

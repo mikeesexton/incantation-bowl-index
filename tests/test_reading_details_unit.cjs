@@ -13,9 +13,10 @@ vm.runInContext(`
   const esc = value => String(value ?? "");
   ${grouping}
   ${identifiers}
-  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection};
+  ${source.slice(source.indexOf("function sourcesSection"), source.indexOf("function identifierRank"))}
+  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection};
 `, context);
-const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection} = context.T;
+const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection} = context.T;
 
 test("equivalent date and measurement wording becomes one display value", () => {
   data.factsBy.ID = [
@@ -76,4 +77,37 @@ test("identity-wide identifier duplicates collapse and publication keys remain r
   assert.equal((html.match(/AC-MSEF/g) || []).length, 1);
   assert.match(html, /published in Martínez Borobio 2003/);
   assert.match(html, /Museo Sefardí 1073/);
+});
+
+test("AIT27 duplicate page and item citations use the richer locator only", () => {
+  const rows = [
+    {source_id: "SRC", locator: "p. 325, item 27"},
+    {source_id: "SRC", locator: "Catalogue, text 27, printed p. 325; PDF p. 331; size column (height by diameter)"},
+  ];
+  assert.equal(citationsFor(rows).length, 1);
+  assert.match(citationsFor(rows)[0], /PDF p. 331/);
+  assert.equal(citationsFor([...rows, {source_id: "SRC", locator: "p. 325, item 28"}]).length, 2);
+  assert.equal(citationsFor([...rows, {source_id: "SRC", locator: "p. 326, item 27"}]).length, 2);
+  assert.equal(citationsFor([...rows, {source_id: "OTHER", locator: "p. 325, item 27"}]).length, 2);
+  assert.equal(citationsFor([...rows, {source_id: "SRC", locator: "p. 325, item 27; lines 1–3"}]).length, 2);
+  assert.equal(citationsFor([{source_id: "SRC", locator: "PDF p. 325, item 27"}, rows[0]]).length, 2);
+});
+
+
+test("bibliography prefers a museum record over its photograph and preserves private editions", () => {
+  data.sourceById.SRC.url = "https://museum.test/object/79917";
+  data.factsBy.ID = [{source_id: "SRC", locator: "Details"}];
+  data.textsBy = {};
+  data.editionsBy = {};
+  data.mediaBy = {ID: [{source_id: "SRC", url: "https://museum.test/photo.jpg"}]};
+  const museum = sourcesSection("ID");
+  assert.match(museum, /href="https:\/\/museum.test\/object\/79917"/);
+  assert.doesNotMatch(museum, /photo.jpg/);
+  // The projection keeps museum URLs in citation locators, rather than a URL
+  // column on its bounded source metadata table.
+  delete data.sourceById.SRC.url;
+  data.factsBy.ID[0].locator = "https://museum.test/object/79917";
+  assert.match(sourcesSection("ID"), /href="https:\/\/museum.test\/object\/79917"/);
+  data.editionsBy.ID = [{source_id: "SRC", access_url: "/api/private-captures/CAP-TEST", locator: "p. 1"}];
+  assert.match(sourcesSection("ID"), /href="\/api\/private-captures\/CAP-TEST"/);
 });
