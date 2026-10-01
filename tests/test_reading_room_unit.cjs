@@ -63,11 +63,11 @@ test("a partially proofread private original carries its working-text warning", 
   given({accessTier: "private_research"});
   const html = textSections([{text_type: "transcription", content: "א", script: "Hebrew",
     editorial_status: "partial_review"}]);
-  assert.match(html, /Working text · partly proofread/);
-  assert.match(html, /Full source-page proofreading remains open/);
+  assert.match(html, /Partial review/);
+  assert.doesNotMatch(html, /Full source-page proofreading|Working text/);
   given({accessTier: "release"});
   assert.doesNotMatch(textSections([{text_type: "transcription", content: "א", script: "Hebrew",
-    editorial_status: "partial_review"}]), /Working text · partly proofread/);
+    editorial_status: "partial_review"}]), /Partial review/);
 });
 
 test("a written card line is preferred to anything composed from claims", () => {
@@ -206,11 +206,11 @@ test("a translation leads and the Aramaic transcription is expandable", () => {
     {text_type: "translation", content: "In your name, I...", language: "English",
       content_status: "private_research"},
   ]);
-  assert.ok(html.indexOf("Translation") < html.indexOf("Show original incantation"));
-  assert.match(html, /Show original incantation/);
+  assert.ok(html.indexOf("Translation") < html.indexOf("Original incantation"));
+  assert.match(html, /Original incantation/);
   assert.match(html, /dir="rtl"/);
   assert.match(html, /בשמך אנא/);
-  assert.match(html, /Summary and commentary/);
+  assert.match(html, /Commentary/);
 });
 
 test("English leads while source-language translations stay available separately", () => {
@@ -219,11 +219,11 @@ test("English leads while source-language translations stay available separately
     {text_type: "translation", language: "English", content: "In the name of Life",
       editor: "Incantation Bowl Index — English rendering of Henri Pognon’s French translation (draft)"},
   ]);
-  assert.ok(html.indexOf("In the name of Life") < html.indexOf("Source-language translations"));
-  assert.ok(html.indexOf("Au nom de la Vie") > html.indexOf("Source-language translations"));
-  assert.match(html, /Draft; not an independent translation from the inscription/);
-  assert.match(textSections([{text_type: "translation", language: "German", content: "In deinem Namen"}]),
-    /No English translation is available/);
+  assert.ok(html.indexOf("In the name of Life") < html.indexOf("French translation"));
+  assert.ok(html.indexOf("Au nom de la Vie") > html.indexOf("French translation"));
+  assert.match(html, /Draft from Henri Pognon’s French translation/);
+  assert.doesNotMatch(html, /English rendering|not an independent translation|Private research copy/);
+  assert.match(textSections([{text_type: "translation", language: "German", content: "In deinem Namen"}]), /German translation/);
 });
 
 test("only inscription facsimiles appear in originals, excluding whole source pages", () => {
@@ -233,18 +233,16 @@ test("only inscription facsimiles appear in originals, excluding whole source pa
   ]);
   assert.match(html, /NATIVE.png/);
   assert.doesNotMatch(html, /FULL.png/);
-  assert.match(html, /Original-script edition text · facsimile/);
-  assert.match(html, /Not a searchable transcription/);
+  assert.match(html, /Facsimile/);
+  assert.doesNotMatch(html, /Not a searchable transcription/);
 });
 
-test("commentary never substitutes for the translation and empty originals are explicit", () => {
+test("commentary does not create empty translation or original sections", () => {
   const html = textSections([{text_type: "summary", content: "A catalogue description."}]);
-  const translation = html.slice(0, html.indexOf("Summary and commentary"));
-  assert.match(translation, /What it says/);
-  assert.match(translation, /No translation is available/);
-  assert.match(translation, /No original incantation is available/);
+  const translation = html.slice(0, html.indexOf("Commentary"));
+  assert.doesNotMatch(translation, /What it says|No translation|No original|Consult|Original incantation/);
   assert.doesNotMatch(translation, /A catalogue description/);
-  assert.match(html, /<details[^>]*><summary>Summary and commentary/);
+  assert.match(html, /<details[^>]*><summary>Commentary/);
   assert.doesNotMatch(html, /<details[^>]* open/);
 });
 
@@ -258,7 +256,7 @@ test("Latin transliterations stay readable and original markup is escaped", () =
 
 test("whole PDF page snapshots remain outside the original-incantation section", () => {
   const html = textSections([], [{media_type: "scan", url: "/api/private-media/MED-TEST.png"}]);
-  assert.match(html, /No original incantation is available/);
+  assert.equal(html, "");
   assert.doesNotMatch(html, /MED-TEST.png|Published source page|<img/);
 });
 
@@ -270,21 +268,33 @@ test("translation page markers disappear while editorial brackets and source loc
   assert.doesNotMatch(html, /\[PDF page/);
   assert.equal((html.match(/First \[restored\] words/g) || []).length, 2);
   assert.equal((html.match(/last words\? …/g) || []).length, 2);
-  assert.match(html, /PDF pp. 53–54/);
+  assert.doesNotMatch(html, /PDF pp. 53–54/);
+  assert.equal(rows[0].access_locator, "printed pp. 42–43; PDF pp. 53–54");
   assert.match(rows[0].content, /\[PDF page 53/);
 });
 
 test("raw whole-section OCR is research apparatus, separate from a readable source summary", () => {
   const rows = [{text_type: "source_ocr", content: "GARBLED OCR", language: "French and Mandaic"},
-    {text_type: "summary", content: "Pognon translates only the opening.", language: "English",
+    {text_type: "summary", content: "Pognon considers the later passage unintelligible and translates only the opening.", language: "English",
      editor: "Incantation Bowl Index source commentary"}];
   const html = textSections(rows);
   assert.doesNotMatch(html, /GARBLED OCR/);
-  assert.match(html, /Source commentary · English/);
-  assert.match(html, /Project summary of the edition’s commentary/);
+  assert.match(html, /Translation covers the opening; later passage reportedly unintelligible/);
+  assert.doesNotMatch(html, /Commentary|Source commentary|Project summary/);
   const apparatus = sourceExtractions(rows);
   assert.match(apparatus, /Uncorrected source OCR/);
-  assert.match(apparatus, /may mix inscription, commentary and translation/);
+  assert.match(apparatus, /script may be garbled/);
   assert.match(apparatus, /GARBLED OCR/);
   assert.doesNotMatch(apparatus, /Pognon translates only/);
+});
+
+
+test("empty readings disappear and draft translations have one compact credit", () => {
+  assert.equal(textSections([]), "");
+  const html = textSections([{text_type: "translation", language: "English", content: "In the name of Life",
+    editor: "Incantation Bowl Index — English rendering of Henri Pognon’s French translation (draft)",
+    access_citation: "A very long bibliography", access_locator: "Project English rendering · PDF pp. 52–54",
+    content_status: "private_research"}]);
+  assert.equal((html.match(/Draft from/g) || []).length, 1);
+  assert.doesNotMatch(html, /Consult|No original|English rendering|very long bibliography|PDF pp|not cleared/);
 });

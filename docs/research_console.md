@@ -95,14 +95,16 @@ English translations lead the reading room. The source-language translations
 remain expandable separately. Project English renderings of French or German
 translations are attributed drafts, not independent translations from the ancient
 inscription or scan-checked scholarly editions. Exact native-script edition
-facsimiles appear inside “Show original incantation” and are labelled as images,
+facsimiles appear inside “Original incantation” and are labelled as facsimiles,
 without claiming searchable transcription. When these inscription crops exist,
 they alone appear in that section; whole PDF page snapshots do not. The retained
 source PDF remains linked from Sources. Extraction page markers are omitted from
 French and English reading text, while locators and editorial brackets remain.
 Whole-section historical OCR is labelled “Uncorrected source OCR” under Research
-details, rather than presented as a research summary. Project commentary summaries
-identify their relationship to the edition and the incantation.
+details. Useful reading limitations appear as a brief sentence beside the text.
+Each translation has one compact attribution; full bibliographic details belong
+in Sources. Empty reading sections and their controls are omitted. Every reader
+disclosure uses the same sentence-case formatting.
 
 Dimension presentation uses centimetres for fully parsed exact measurements,
 retains distinctions such as outside/opening diameter and height/depth, and names
@@ -110,13 +112,39 @@ unspecified axes explicitly. NLI's `הקף` is displayed simply as circumference
 per Mike's October 1 display instruction; no diameter is inferred.
 Ranges, approximations and unparsed source reports remain intact. Original source
 values remain in the corpus and research details. Repeated provenance places are
-grouped with their distinct source roles and citations; dating evidence replaces
+grouped with their distinct source roles; dating evidence replaces
 the date in the entry header when that evidence block is present. A single date
-and period with the same source and locator share one statement and citation.
+and period with the same source and locator share one statement. Citations,
+locators, catalogue IDs, related-object pointers and check dates are consolidated
+under Sources, never repeated beside each fact. Source details retain the full
+bibliography and locators.
 Repeated parenthetical source labels such as “museum description”, “museum
 classification” and “museum-reported provenience” are omitted from displayed
 facts throughout the reader and audit cards. Sources and recorded wording remain;
 substantive qualifiers such as “possibly” and “approximately” remain visible.
+
+## Whole-corpus editorial review
+
+The October 1 streamlining policy in [project rules](project-rules.md) applies to
+every page. The read-only `scripts/audit_reader_streamlining.cjs` renders the full
+private build and checks for recurring clutter. Its content-free
+[review queue](../research/audits/reader_streamlining_2026-10-01.json) includes
+every identity, ordered by possible repetition or excessive wording. Automated
+checks do not count as an individual editorial review.
+
+1. Review the flagged pages first, then every remaining page, in batches of 50.
+   Mark each queue entry reviewed only after inspecting its rendered page.
+2. Remove repeated facts, duplicated overview wording, source logistics and
+   unhelpful commentary. Fix common patterns in the presentation; use reviewed
+   manifests for stored wording corrections. Preserve source records, conflicting
+   evidence, substantive uncertainty and inscription text.
+3. Verify each batch on desktop and mobile. A finished page has useful facts
+   stated once, metadata in Sources, one translation credit, concise reading
+   limitations and consistent, nonempty disclosures. Rerun the whole-corpus
+   check after each batch; record reviewed and remaining counts.
+
+The initial queue is a baseline: all identities still await individual editorial
+inspection. This review is separate from Mike's personal audit ledger.
 
 ## Review safety
 

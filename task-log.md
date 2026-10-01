@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Streamline the bowl reader
+
+**Claimed:** OPS (Mike's project-wide streamlining imperative and whole-corpus review plan)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 367 Python and 53 Node tests pass; all 1,711 rendered pages pass the boilerplate/citation placement check; Mike Access build audit 7/7; live Penn/Pognon checks and saved Penn screenshot pass
+
+- Removed empty text sections and controls, consult-the-sources instructions, repeated fact citation columns, repeated translation caveats and duplicate publication sections. Sources now holds full bibliography/locators in consistent disclosures; MMS IDs, related-object pointers, Penn field/check metadata and URLs no longer accompany every fact. Source records and corpus content remain intact.
+- One short English rendering credit; Pognon14's coverage note is now “Translation covers the opening; later passage reportedly unintelligible.” Exact facsimiles remain in Original incantation; page snapshots stay out. All reader disclosure controls use the same sentence-case style. Required licence links remain.
+- Recorded Mike's five explicit follow-up notes; no audit resolution inferred. Added the persistent streamline editorial policy to project rules and the whole-corpus plan to research console documentation.
+- Created a reproducible content-free review queue for all 1,711 identities: 336 flagged for possible excessive/repeated wording (307 long commentary, 26 long facts, 19 overview repeats, two long credits; categories overlap). All remain pending individual editorial inspection. Automated pattern checks are complete; this is not a completed manual corpus review.
+- Regenerated local Mike Access and enrichment reports, recorded unchanged state and saved a Penn proof. Phone viewport preview failed because the browser capability timed out; normal viewport reset was attempted. No mobile verification claimed. No deployment or push.
+- Next: inspect the 336 flagged pages first, then every remaining page in batches of 50; source-preserving corrections, desktop/mobile checks and explicit progress counts after each batch.
+
 ## 2026-10-01 — Codex — Held-source original-script pass and separate proofreading
 
 **Claimed:** TEXT-003 / TEXT-009 / TEXT-010 (Mike requested the whole held-source worklist and a separate proofreading pass)

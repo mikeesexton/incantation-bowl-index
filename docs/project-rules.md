@@ -133,6 +133,27 @@ evidence notes.
   no-known-edition finding. Keep such bowls as follow-up leads for later
   publication searches.
 
+### Reader editorial policy — streamline (Mike, 2026-10-01)
+
+Streamlining is a project-wide requirement. Default to the shortest presentation
+that helps the reader understand the bowl. Extra information must earn its place.
+
+- Show each useful fact once. Keep source citations, locators, URLs, MMS IDs,
+  related-object pointers, check dates and ingestion notes in Sources or research
+  details; never repeat them beside every fact.
+- Omit empty sections and empty disclosure controls. Remove generic instructions
+  such as “consult the sources” and repeated boilerplate caveats.
+- Give a translation one brief attribution/status line. Keep full bibliographic,
+  editorial and access metadata in Sources; retain required licence attribution.
+- Summarize a meaningful limitation in one sentence beside the reading, for
+  example “Translation covers the opening; later passage reportedly unintelligible.”
+  Do not add a separate commentary panel merely to explain the same thing again.
+- Use consistent typography, casing, spacing and indicators for disclosures.
+- Preserve complete source records and substantive uncertainty in the underlying
+  research data. Retention is not an instruction to display everything.
+- Review the rendered bowl page for repetition and visual clutter before calling
+  a reader change finished. Apply improvements across the corpus, not just examples.
+
 ### Separate the roles behind a name
 
 Never collapse author, textual voice, copyist, producer, commissioner, client,

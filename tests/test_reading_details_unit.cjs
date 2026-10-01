@@ -8,15 +8,15 @@ const grouping = source.slice(source.indexOf("const tidy"), source.indexOf("func
 const identifiers = source.slice(source.indexOf("function identifierRank"), source.indexOf("function renderObject"));
 const context = vm.createContext({});
 vm.runInContext(`
-  const data = {factsBy: {}, sourceById: {SRC: {authors: "Scholar", issued_year: 2003}}};
+  const data = {factsBy: {}, textsBy: {}, editionsBy: {}, mediaBy: {}, sourceById: {SRC: {authors: "Scholar", issued_year: 2003}}};
   const factsOf = (id, group) => (data.factsBy[id] || []).filter(row => row.field_group === group);
   const esc = value => String(value ?? "");
   ${grouping}
   ${identifiers}
   ${source.slice(source.indexOf("function sourcesSection"), source.indexOf("function identifierRank"))}
-  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence};
+  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems};
 `, context);
-const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence} = context.T;
+const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems} = context.T;
 
 test("equivalent date and measurement wording becomes one display value", () => {
   data.factsBy.ID = [
@@ -66,8 +66,9 @@ test("repeated place reports show one place while retaining both roles and all s
   const html = journeySection("ID");
   assert.equal((html.match(/Iraq, South/g) || []).length, 1);
   assert.match(html, /Find or acquisition place · Reported production place/);
-  assert.equal((html.match(/Related objects: 1980-0415-19/g) || []).length, 1);
-  assert.match(html, /p. 4/);
+  assert.doesNotMatch(html, /Related objects|p\. 4|<cite/);
+  assert.match(sourcesSection("ID"), /Related objects: 1980-0415-19/);
+  assert.match(sourcesSection("ID"), /p\. 4/);
   data.factsBy.ID.push({field_group: "provenance", field: "findspot", value: "Iraq, South", certainty: "uncertain"});
   assert.equal((journeySection("ID").match(/Iraq, South/g) || []).length, 2);
 });
@@ -88,7 +89,8 @@ test("a date and its period share one statement and citation without merging dif
   const html = datingEvidence("ID");
   assert.match(html, /6th–8th centuries CE · Late–Post Sasanian/);
   assert.equal((html.match(/<li>/g) || []).length, 1);
-  assert.equal((html.match(/Scholar 2003 · Details/g) || []).length, 1);
+  assert.doesNotMatch(html, /Scholar 2003|Details|<cite/);
+  assert.match(sourcesSection("ID"), /Source details/);
   data.factsBy.ID[1].source_id = "OTHER";
   assert.equal((datingEvidence("ID").match(/<li>/g) || []).length, 2);
   data.factsBy.ID.push({field_group: "dating", value: "5th century CE", source_id: "SRC", locator: "Details"});
@@ -159,4 +161,18 @@ test("bibliography prefers a museum record over its photograph and preserves pri
   assert.match(sourcesSection("ID"), /href="https:\/\/museum.test\/object\/79917"/);
   data.editionsBy.ID = [{source_id: "SRC", access_url: "/api/private-captures/CAP-TEST", locator: "p. 1"}];
   assert.match(sourcesSection("ID"), /href="\/api\/private-captures\/CAP-TEST"/);
+});
+
+
+test("machine locators occur only under Sources, including NLI and Penn facts", () => {
+  data.factsBy.ID = [
+    {field_group: "dimensions", value: "Height 7.2 cm · Circumference 16.4 cm", source_id: "SRC", locator: "MMS 997008712546905171"},
+    {field_group: "condition", value: "Incomplete; 11 fragments", source_id: "SRC", locator: "Penn object 151160; Details: Description; checked 2026-10-01"},
+  ];
+  const main = factItems("ID", "dimensions") + factItems("ID", "condition");
+  assert.doesNotMatch(main, /MMS|Penn object|checked|<cite/);
+  const sources = sourcesSection("ID");
+  assert.match(sources, /MMS 997008712546905171/);
+  assert.match(sources, /Penn object 151160/);
+  assert.match(sources, /Source details/);
 });

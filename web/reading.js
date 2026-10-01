@@ -140,20 +140,16 @@
   }
 
   function textTerms(item) {
-    if (item.content_status === "private_research") {
-      return ` · <span class="private-access-note">Private research copy · not cleared for redistribution</span>`;
-    }
     return licenceLink(item);
   }
 
   /* The citation usually opens with the editor's name; do not say it twice. */
   function credit(text) {
-    const citation = (text.access_citation || "").trim();
-    const editor = (text.editor || "").trim();
-    const surname = editor.split(/\s+/).pop();
-    const lead = editor && surname && !citation.toLowerCase().startsWith(surname.toLowerCase())
-      ? editor + ", " : "";
-    return [lead + citation, text.access_locator].filter(Boolean).join(" · ");
+    const rendering = (text.editor || "").match(/English rendering of (.+?)[’']s (\w+) translation/i);
+    if (rendering) return `Draft from ${rendering[1]}’s ${rendering[2]} translation.`;
+    const source = data.sourceById[text.source_id] || {};
+    const author = text.attribution || source.authors || text.editor || "";
+    return [author, source.issued_year].filter(Boolean).join(" · ");
   }
 
   function embeddableImage(url) {
@@ -304,21 +300,15 @@
   const ORIGINAL_TEXT_TYPES = new Set(["inscription", "transcription", "transliteration", "incipit"]);
 
   function textCredit(item) {
-    const reviewNote = item.editor === "Incantation Bowl Index source commentary"
-      ? "Project summary of the edition’s commentary; separate from the inscription’s translation."
-      : /Incantation Bowl Index.*English rendering/i.test(item.editor || "")
-      ? "Project English rendering of the source-language translation. Draft; not an independent translation from the inscription."
-      : privateResearch() && item.editorial_status === "partial_review"
-      ? "Working text · partly proofread. Full source-page proofreading remains open."
-      : privateResearch() && item.editorial_status === "not_checked"
-        ? "Source-page proofreading is not recorded for this text." : "";
-    return `${reviewNote ? `<p class="entry-note">${esc(reviewNote)}</p>` : ""}
-      <p class="entry-credit">${esc(credit(item))}${textTerms(item)}</p>`;
+    const status = privateResearch() && item.editorial_status === "partial_review" ? "Partial review" : "";
+    const line = [credit(item), status].filter(Boolean).join(" · ");
+    const terms = textTerms(item);
+    return line || terms ? `<p class="entry-credit">${esc(line)}${terms}</p>` : "";
   }
 
   function translationContent(content) {
     // These are extraction locators, not supplied words or restorations.
-    // Keep them in the source record and credit, outside the reading text.
+    // Keep them in Sources, outside the reading text.
     return String(content || "").replace(/\s*\[PDF pages?\s+\d+(?:[–-]\d+)?;\s*printed pp?\.\s*\d+(?:[–-]\d+)?\]\s*/gi, " ").trim();
   }
 
@@ -326,7 +316,7 @@
     const ocr = rows.filter(item => item.text_type === "source_ocr");
     if (!ocr.length) return "";
     return `<details class="entry-source-ocr"><summary>Uncorrected source OCR</summary>
-      <p class="entry-note">Automatic extraction of whole edition sections. It may mix inscription, commentary and translation; ancient-script glyphs may be garbled. Use the facsimiles for the original text.</p>
+      <p class="entry-note">Uncorrected OCR; script may be garbled.</p>
       ${ocr.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("")}</details>`;
   }
 
@@ -345,10 +335,8 @@
       ? `<a href="${esc(item.url)}" rel="noreferrer"><img class="original-page" src="${esc(item.url)}"
           alt="${native ? "Original-script edition text" : "Published source page"}" loading="lazy" decoding="async"></a>`
       : `<a href="${esc(item.url)}" rel="noreferrer">Open the published original text</a>`;
-    return `<figure class="original-facsimile">${image}<figcaption>${native
-      ? "Original-script edition text · facsimile. Not a searchable transcription."
-      : "Published source page · facsimile."}
-      ${esc(item.attribution || "")}${item.attribution ? " · " : ""}${esc(mediaRightsLabel(item))}
+    const page = (item.attribution || "").match(/printed p\.\s*(\d+)/i);
+    return `<figure class="original-facsimile">${image}<figcaption>Facsimile${page ? " · p. " + esc(page[1]) : ""}
       ${licenceLink(item)}</figcaption></figure>`;
   }
 
@@ -363,24 +351,24 @@
       <blockquote dir="auto" lang="${/^(?:English|en)$/i.test(item.language || "") ? "en" : ""}">${esc(translationContent(item.content))}</blockquote>
       ${textCredit(item)}</div>`;
     const originals = rows.filter(item => ORIGINAL_TEXT_TYPES.has(item.text_type));
-    const summaries = rows.filter(item => item.text_type === "summary");
+    const readingNotes = rows.filter(item => item.editor === "Incantation Bowl Index source commentary");
+    const summaries = rows.filter(item => item.text_type === "summary" && !readingNotes.includes(item));
+    const conciseNote = item => /translates only the opening|translation (?:of|covers) (?:only )?the opening/i.test(item.content || "")
+      && /unintelligible/i.test(item.content || "")
+      ? "Translation covers the opening; later passage reportedly unintelligible." : item.content;
     const other = rows.filter(item => item.text_type !== "translation"
       && item.text_type !== "summary" && item.text_type !== "source_ocr" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
-    const sections = [`<section class="entry-block entry-text"><h2>What it says</h2>
-      ${english.length ? english.map(translation).join("")
-      : `<p class="entry-note">${translations.length ? "No English translation is available to read here. The source-language translation is retained below."
-        : "No translation is available to read here. Consult the sources below for further documentation."}</p>`}
-      ${sourceTranslations.length ? `<details class="entry-source-translations"><summary>Source-language translations · ${[...new Set(sourceTranslations.map(item => item.language || "Language not recorded"))].map(esc).join(", ")}</summary>${sourceTranslations.map(translation).join("")}</details>` : ""}
-      <details class="entry-original"><summary>Show original incantation</summary>
-        ${facsimiles.length ? `<h3>Original incantation · facsimiles</h3>${facsimiles.map(originalPage).join("")}`
-          : originals.length ? originals.map(originalText).join("")
-          : `<p class="entry-note">No original incantation is available to read here. Consult the sources below for any published original text.</p>`}
-      </details></section>`];
+    const hasReading = translations.length || originals.length || facsimiles.length || readingNotes.length;
+    const sections = hasReading ? [`<section class="entry-block entry-text"><h2>What it says</h2>
+      ${english.map(translation).join("")}
+      ${readingNotes.map(item => `<p class="entry-note reading-limitation">${esc(conciseNote(item))}</p>`).join("")}
+      ${sourceTranslations.length ? `<details class="entry-source-translations"><summary>${[...new Set(sourceTranslations.map(item => item.language || "Other language"))].map(esc).join(", ")} translation</summary>${sourceTranslations.map(translation).join("")}</details>` : ""}
+      ${facsimiles.length || originals.length ? `<details class="entry-original"><summary>Original incantation</summary>
+        ${facsimiles.length ? facsimiles.map(originalPage).join("") : originals.map(originalText).join("")}
+      </details>` : ""}</section>`] : [];
     if (summaries.length) {
-      const body = summaries.map(item => `${item.editor === "Incantation Bowl Index source commentary"
-        ? `<h3>Source commentary${item.language ? " · " + esc(item.language) : ""}</h3>` : ""}
-        <blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
-      sections.push(`<details class="entry-block entry-summary"><summary>Summary and commentary</summary>${body}</details>`);
+      const body = summaries.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
+      sections.push(`<details class="entry-block entry-summary"><summary>Commentary</summary>${body}</details>`);
     }
     sections.push(...other.map(item => `<section class="entry-block entry-text">
       <h2>${esc(item.text_type)}</h2><blockquote>${esc(item.content)}</blockquote>${textCredit(item)}</section>`));
@@ -759,10 +747,8 @@
 
   function factItems(id, group, showVariants = false) {
     return groupedFacts(id, group).map(item => {
-      const citations = citationsFor(item.reports);
       const variants = [...item.variants].filter(Boolean);
       return `<li><span>${item.key.startsWith("period:") ? "<small>Period</small>" : ""}${esc(item.display)}</span>
-        ${citations.length ? `<cite>${citations.map(esc).join("; ")}</cite>` : ""}
         ${showVariants && variants.length > 1 ? `<details class="recorded-forms"><summary>Recorded forms</summary><ul>${variants.map(value => `<li>${esc(value)}</li>`).join("")}</ul></details>` : ""}</li>`;
     }).join("");
   }
@@ -780,8 +766,7 @@
     const signature = item => citationsFor(item.reports).sort().join("|");
     const combined = dates.length === 1 && periods.length === 1 &&
       signature(dates[0]) && signature(dates[0]) === signature(periods[0]);
-    const items = combined ? `<li><span>${esc(dates[0].display)} · ${esc(periods[0].display)}</span>
-      <cite>${citationsFor([...dates[0].reports, ...periods[0].reports]).map(esc).join("; ")}</cite></li>`
+    const items = combined ? `<li><span>${esc(dates[0].display)} · ${esc(periods[0].display)}</span></li>`
       : factItems(id, "dating");
     return `<section class="entry-block"><h2>${dates.length > 1 ? "Proposed dates" : "Dating evidence"}</h2>
       <ul class="fact-list">${items}</ul></section>`;
@@ -819,9 +804,7 @@
       item.reports.push(row);
     });
     return `<section class="entry-block"><h2>Its journey</h2><ul class="fact-list">${[...grouped.values()].map(item => {
-      const citations = citationsFor(item.reports);
-      return `<li><span><small>${[...item.labels].map(esc).join(" · ")}</small>${esc(item.value)}</span>
-        ${citations.length ? `<cite>${citations.map(esc).join("; ")}</cite>` : ""}</li>`;
+      return `<li><span><small>${[...item.labels].map(esc).join(" · ")}</small>${esc(item.value)}</span></li>`;
     }).join("")}</ul></section>`;
   }
 
@@ -851,9 +834,14 @@
     if (!grouped.size) return "";
     return `<section class="entry-block"><h2>Sources</h2><ul class="source-groups">${[...grouped].map(([sourceId, item]) => {
       const source = data.sourceById[sourceId] || {};
-      const label = source.citation || source.title || sourceId;
+      const label = [source.authors || source.title || sourceId, source.issued_year].filter(Boolean).join(" · ");
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
-      return `<li><span>${link}</span>${item.locators.size ? `<small>${[...item.locators.values()].map(esc).join(" · ")}</small>` : ""}</li>`;
+      const citation = source.citation || source.title || "";
+      const locators = [...item.locators.values()].filter(locator => !tidy(citation).includes(tidy(locator)));
+      const details = (citation && citation !== label) || locators.length;
+      return `<li><span>${link}</span>${details ? `<details class="source-details"><summary>Source details</summary>
+        ${citation && citation !== label ? `<p>${esc(citation)}</p>` : ""}
+        ${locators.length ? `<ul>${locators.map(locator => `<li>${esc(locator)}</li>`).join("")}</ul>` : ""}</details>` : ""}</li>`;
     }).join("")}</ul></section>`;
   }
 
@@ -947,8 +935,6 @@
     // page as the standfirst and must not appear among its editions below.
     const bowlTexts = texts.filter(t => t.editor !== CARD_LINE_EDITOR);
     const readable = bowlTexts.filter(readableText);
-    const withheld = bowlTexts.filter(t => !readableText(t));
-    const editions = groupedEditions(data.editionsBy[id] || []);
     const rawLabels = cluster.members.map(m => (data.objectById[m] || {}).label).filter(Boolean);
     const identifiers = data.identifiersBy[id] || [];
     const objects = cluster.members.map(m => data.objectById[m]).filter(Boolean);
@@ -963,8 +949,9 @@
         <div>
           <h1 id="explore-title">${titleMarkup(cluster)}</h1>
           ${overview ? `<p class="entry-standfirst">${esc(overview)}</p>` : ""}
-          <p class="entry-meta">${[datingEvidence(id) ? "" : cluster.display_date, cluster.display_language, cluster.display_collection]
-            .filter(Boolean).map(esc).join(" · ")}</p>
+          <p class="entry-meta">${[datingEvidence(id) ? "" : cluster.display_date, cluster.display_language,
+              cluster.display_name.includes(cluster.display_collection || "") ? "" : cluster.display_collection]
+            .filter(value => value && !/not recorded/i.test(value)).map(esc).join(" · ")}</p>
           ${cautions.map(value => `<p class="entry-object-caution">${esc(value.replaceAll("_", " "))}</p>`).join("")}
         </div>
       </header>
@@ -972,14 +959,6 @@
       ${mediaGallery(cluster)}
 
       ${textSections(readable, (data.mediaBy[id] || []).filter(item => ["scan", "inscription_facsimile"].includes(item.media_type) && embeddableImage(item.url)))}
-
-      ${withheld.length ? `<section class="entry-block">
-        <h2>Texts to consult in the sources</h2>
-        <p class="entry-note">Printed in the edition below rather than reproduced here.</p>
-        <ul class="fact-list">${withheld.map(t => `<li><span>${esc(t.text_type)}${t.language ? " · " + esc(t.language) : ""}</span>
-          <cite>${t.access_url ? `<a href="${esc(t.access_url)}" rel="noreferrer">${esc(t.access_citation || "edition")}</a>`
-            : esc(t.access_citation || "edition")}${t.access_locator ? " · " + esc(t.access_locator) : ""}</cite></li>`).join("")}</ul>
-      </section>` : ""}
 
       ${datingEvidence(id)}
       ${factList(id, "material", "The bowl — material")}
@@ -989,23 +968,15 @@
       ${factList(id, "visual", "The bowl — what is drawn")}
       ${factList(id, "text_form", "The bowl — inscription layout")}
 
-      ${editions.length ? `<section class="entry-block"><h2>Where it is published</h2>
-        <ul class="fact-list">${editions.map(e => `<li><span>${esc(e.citation)}</span>
-          <cite>${e.locators.length ? e.locators.map(esc).join(" · ") + " · " : ""}${e.access_url
-            ? `<a href="${esc(e.access_url)}" rel="noreferrer">link</a>` : esc(e.access_status || "")}</cite></li>`).join("")}</ul>
-      </section>` : ""}
-
       ${journeySection(id)}
-      ${factsOf(id, "provenance").length ? `<p class="entry-caveat">A reported findspot is a report. Listing an object here says
-        nothing about its ownership, export history, or authenticity.</p>` : ""}
-
-      ${sourcesSection(id)}
 
       ${factList(id, "practitioner", "Maker or hand, as reported")}
       ${factList(id, "client", "Who it names")}
       ${factList(id, "target", "What it acts against")}
       ${factList(id, "ritual", "What it does")}
       ${factList(id, "biblical_intertexts", "Scripture it quotes")}
+
+      ${sourcesSection(id)}
 
       <details class="entry-apparatus"><summary>Research details</summary>
         ${sourceExtractions(readable)}
@@ -1017,7 +988,7 @@
           <dt>Evidence</dt><dd>${cluster.source_count} source(s), ${cluster.appearance_count} appearance(s)</dd>
           <dt>Coverage</dt><dd>${cluster.completeness_score}/10 core · ${cluster.content_completeness}/13 content</dd>
         </dl>
-        ${STANDALONE ? "" : `<p><a href="#/search">Open the research explorer</a> for the full claim-by-claim evidence chain.</p>`}
+        ${STANDALONE ? "" : `<p><a href="#/search">Research explorer</a></p>`}
       </details>
     </article>`;
   }
