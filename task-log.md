@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Verify NLI catalogue language labels
+
+**Claimed:** OPS (Mike's question about the two NLI bowls' Hebrew labels)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 368 Python and 53 Node tests pass; local Mike Access build audit 7/7; live qualified NLI heading and screenshot verified
+
+- Queried both exact NLI MMS records through public Alma SRU: MARC 041$a is `heb` for Ms. Heb. 9467.72 and .91. Retained the factual verification receipt in research/audits/nli_two_bowl_language_2026-10-01.json. This verifies a catalogue language code, not an independent inscription reading or script identification.
+- Catalogue-only language headings now say “Catalogued as Hebrew” (or the corresponding language), throughout the corpus. Explicit inscription-language reports still take precedence. Original catalogue claims are unchanged; no Aramaic or script identification inferred.
+- Regenerated local Mike Access and enrichment reports; restarted the local reader, verified the qualified heading and saved its proof. First private-build attempt failed during a capture copy; retry completed with all capture and content checks passing. Recorded unchanged state; personal audit ledger unchanged because a question is not a new completed review. No deployment or push.
+
 ## 2026-10-01 — Codex — Streamline the bowl reader
 
 **Claimed:** OPS (Mike's project-wide streamlining imperative and whole-corpus review plan)

@@ -409,7 +409,7 @@ def public_facets(field, field_group, value):
 
 
 def language_name(claims):
-    """Prefer explicit evidence, but present it through the controlled vocabulary."""
+    """Prefer explicit evidence; distinguish a catalogue code from a reading."""
     precedence = ("inscription_language", "script_or_language", "catalogue_language_codes")
     for field in precedence:
         labels = []
@@ -426,7 +426,8 @@ def language_name(claims):
                 if label not in labels:
                     labels.append(label)
         if labels:
-            return " / ".join(labels)
+            label = " / ".join(labels)
+            return "Catalogued as " + label if field == "catalogue_language_codes" else label
     return "Language not recorded"
 
 

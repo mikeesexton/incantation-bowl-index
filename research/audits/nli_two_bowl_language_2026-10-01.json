@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-10-01",
+  "source": "National Library of Israel public Alma SRU",
+  "query_url": "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=5&query=alma.mms_id%3D997008712407305171+or+alma.mms_id%3D997008712546905171",
+  "records": [
+    {
+      "shelfmark": "Ms. Heb. 9467.72",
+      "mms_id": "997008712407305171",
+      "marc_041_a": [
+        "heb"
+      ]
+    },
+    {
+      "shelfmark": "Ms. Heb. 9467.91",
+      "mms_id": "997008712546905171",
+      "marc_041_a": [
+        "heb"
+      ]
+    }
+  ],
+  "interpretation": "Both catalogue records code the language as Hebrew. No independent inscription-language reading or script identification follows from this code. Preserve the catalogue claims and qualify catalogue-only display labels."
+}

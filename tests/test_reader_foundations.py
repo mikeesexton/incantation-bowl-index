@@ -120,6 +120,12 @@ class ControlledFacetTests(unittest.TestCase):
                    'value_text':"Mandaic (Pognon's historical classification)"}]
         self.assertEqual(language_name(claims), 'Mandaic')
 
+    def test_catalogue_code_is_not_promoted_to_an_inscription_reading(self):
+        catalogue = {'field': 'catalogue_language_codes', 'value_text': 'heb'}
+        self.assertEqual(language_name([catalogue]), 'Catalogued as Hebrew')
+        inscription = {'field': 'inscription_language', 'value_text': 'Jewish Babylonian Aramaic'}
+        self.assertEqual(language_name([catalogue, inscription]), 'Jewish Babylonian Aramaic')
+
     def test_ownership_history_is_not_presented_as_an_origin(self):
         self.assertEqual(origin_facets('provenance',
             'Private UK collection; purchased on the London art market'), [])
