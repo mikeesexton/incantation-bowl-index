@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-01T21:20:01+00:00",
+  "scope": "Two explicit source-attributed publication pointers; Shaked is a translated excerpt publication, Gorea remains unheld. No identity merge or reading adjudication.",
+  "entries": [
+    {
+      "id": "IBI-PUBASSESS-20261001-MS2054-124-SHAKED1999",
+      "object_id": "IBI-EAB5621DEDA2",
+      "disposition": "linked",
+      "publication_source_id": "SRC-5F7E0BA65D6E",
+      "evidence_source_id": "SRC-5F7E0BA65D6E",
+      "evidence_locator": "Printed p. 309 and p. 316 introduction; p. 318 final object citation (PDF pp. 14, 19, 20), visually checked held source on 2026-10-01",
+      "publication_locator": "Translated excerpts numbered 3–27, printed pp. 317–318; full study explicitly deferred on p. 316",
+      "basis": "Shaked explicitly names MS 2054/124, provides translated portions, and repeats the accession at the end of the translation on p. 318. This is a publication pointer to the translated excerpts actually present, not a complete Mandaic transcription/edition claim. Capture SHA-256 19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3."
+    },
+    {
+      "id": "IBI-PUBASSESS-20261001-AMKUR-GOREA2003",
+      "object_id": "IBI-5337D0961A00",
+      "disposition": "linked",
+      "publication_source_id": "SRC-A01A00423544",
+      "evidence_source_id": "SRC-36BB3396A927",
+      "evidence_locator": "Gazette Drouot lot 47 / record 23199669, public object description Publication field; freshly checked 2026-10-01",
+      "publication_locator": "Gorea 2003, pp. 73–78; illustration p. 90 (as explicitly cited by the auction record)",
+      "basis": "The object listing explicitly names Gorea, the article title, publication year, object-specific text pages and illustration page. Official Semitica volume LI contents separately confirms author/title and 2003 publication (volume labelled 2001). This records the auction-attributed edition pointer only; Gorea pages are unheld and were not inspected, and the physical match, inscription reading, sale date and article-wide pagination are not independently verified."
+    }
+  ]
+}

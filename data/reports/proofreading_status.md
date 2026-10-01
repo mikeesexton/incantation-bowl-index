@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 688 | 108 | 2 | 798 | 86.2% |
+| Edition text (translation, transcription, transliteration) | 688 | 110 | 2 | 800 | 86.0% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 688 | 108 | 667 | 1463 | 47.0% |
+| All stored text | 688 | 110 | 667 | 1465 | 47.0% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 398 | 40 | 1 | 439 |
+| translation | 398 | 42 | 1 | 441 |
 | transcription | 226 | 55 | 0 | 281 |
 | transliteration | 64 | 13 | 1 | 78 |
 
@@ -31,6 +31,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jüdisch-babylonische Zaubertexte (`SRC-0B6C0E1133EF`) | 3 | 4 | 0 | 7 |
 | Aramaic Magic Bowl: The Expulsion of Lilith (`SRC-1B966F866CDF`) | 1 | 0 | 0 | 1 |
 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (`SRC-1E2E21DC61BD`) | 28 | 0 | 0 | 28 |
+| ‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic (`SRC-21417589C8F9`) | 0 | 1 | 0 | 1 |
 | Incantation Bowl in Mandaic — MS 1911/2 (`SRC-292E3E15363B`) | 1 | 0 | 0 | 1 |
 | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 98 | 0 | 0 | 98 |
 | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success (`SRC-4071AE0F749A`) | 2 | 0 | 0 | 2 |
@@ -39,6 +40,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Magic Bowl: The Protection of the Family (`SRC-4955445F0A7A`) | 1 | 0 | 0 | 1 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-53202A840D51`) | 4 | 4 | 0 | 8 |
 | Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (`SRC-53B93C8C8A0E`) | 51 | 0 | 0 | 51 |
+| Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’ (`SRC-5F7E0BA65D6E`) | 0 | 1 | 0 | 1 |
 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 6 | 6 | 0 | 12 |
 | Terracotta Incantation Bowl, 500 CE–800 CE (`SRC-658C490CF6BF`) | 1 | 0 | 0 | 1 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 128 | 0 | 0 | 128 |

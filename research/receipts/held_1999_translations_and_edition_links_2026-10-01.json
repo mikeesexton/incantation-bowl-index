@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-01T21:28:38+00:00",
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-001",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "scope": "Held-source English translation capture and two additional explicit publication pointers; bounded native Syriac source check remains unresolved.",
+  "source_pdf_sha256": "19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3",
+  "private_manifests": [
+    {
+      "path": "data/private/manifests/shaked_levene_1999_translations_2026-10-01.jsonl",
+      "sha256": "a351d0fb7a6739f2199c66e092fdaed1b2a1e0011a033b35cc08aa824209e6c8"
+    },
+    {
+      "path": "data/private/manifests/shaked_1999_english_proofreading_2026-10-01_production.json",
+      "sha256": "031c370979fb99de38de38191bd4124dc09028384d407fef0e07f160a56ee004"
+    },
+    {
+      "path": "data/private/manifests/levene_1999_english_proofreading_2026-10-01_production.json",
+      "sha256": "e5ea0eb5c86992c83e67db255540e337cf89647f1099c759338e0ac2bca23498"
+    }
+  ],
+  "before_digest": "3a288643ff086d6e4e9bf41c046f6613cf4cda63b644104da5b9364573f40e55",
+  "after_digest": "596c454a0f57defadcfade14b304d7f291dbd2ac98a786c6e1f18bf357f594bd",
+  "changed_tables": {
+    "media": {
+      "before": 1145,
+      "after": 1150
+    },
+    "publication_assessments": {
+      "before": 242,
+      "after": 244
+    },
+    "text_proofreading_reviews": {
+      "before": 850,
+      "after": 852
+    },
+    "texts": {
+      "before": 1463,
+      "after": 1465
+    }
+  },
+  "all_preexisting_rows_unchanged": true,
+  "replay_unchanged": true,
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "texts": [
+    {
+      "id": "TXT-2CFB77163DBA",
+      "object_id": "IBI-EAB5621DEDA2",
+      "appearance_id": "APP-B67CDF5C035E",
+      "source_id": "SRC-5F7E0BA65D6E",
+      "editor": "Shaul Shaked",
+      "locator": "MS 2054/124, translated excerpts numbered 3–27, printed pp. 317–318; PDF pp. 19 (right) and 20 (left)",
+      "characters": 5001,
+      "review_status": "partial_review"
+    },
+    {
+      "id": "TXT-B337946284FB",
+      "object_id": "IBI-63D659859D54",
+      "appearance_id": "APP-69D88D5FAE03",
+      "source_id": "SRC-21417589C8F9",
+      "editor": "Dan Levene",
+      "locator": "Moussaieff M163, Translation, sections 1–10 and inscription anchors [1]–[30], printed pp. 287–290; PDF pp. 3 (right), 4 (both), 5 (left)",
+      "characters": 6733,
+      "review_status": "partial_review"
+    }
+  ],
+  "method": "Manual working capture followed by a separate full-page/name-crop comparison against the held raster scan. Review status remains partial for unresolved Latin-name diacritics. Initial contents and later corrections retained in immutable before/after snapshots; protected payloads remain outside Git.",
+  "text_extents": {
+    "TXT-2CFB77163DBA": {
+      "published_english": "Selected translated portions numbered 3–27",
+      "printed_pages": [
+        317,
+        318
+      ],
+      "pdf_pages": [
+        19,
+        20
+      ],
+      "not_supplied": "Portions 1–2; full Mandaic transcription/edition",
+      "doubt": "One Latin-name diacritic captured with an explicit project uncertainty marker"
+    },
+    "TXT-B337946284FB": {
+      "published_english": "Complete published translation block, ten sections with anchors 1–30",
+      "printed_pages": [
+        287,
+        288,
+        289,
+        290
+      ],
+      "pdf_pages": [
+        3,
+        4,
+        5
+      ],
+      "not_captured_this_session": "Hebrew-script scholarly transcription on printed pp. 285–287",
+      "doubt": "Three magical-name spellings/diacritics marked as project capture doubts; source editorial marks retained"
+    }
+  },
+  "publication_manifest": "research/reviews/additional_edition_links_2026-10-01.json",
+  "publication_manifest_sha256": "5051992071f3a92527981a16eb8de738264f7945178aeb979c5c3558b3f08759",
+  "publication_evidence": [
+    {
+      "object_id": "IBI-EAB5621DEDA2",
+      "source_id": "SRC-5F7E0BA65D6E",
+      "method": "Held scan names MS 2054/124 in introduction and at end of translated excerpts",
+      "evidence_printed_pages": [
+        309,
+        316,
+        318
+      ],
+      "publication_extent": "Translated excerpts, not full edition"
+    },
+    {
+      "object_id": "IBI-5337D0961A00",
+      "source_id": "SRC-A01A00423544",
+      "evidence_source_id": "SRC-36BB3396A927",
+      "evidence_url": "https://www.gazette-drouot.com/en/lots/23199669-mandaean-magic-cup-of-amkur---",
+      "bibliography_url": "https://semitica.fr/volumes-anterieurs/",
+      "reported_publication_locator": "Gorea 2003, pp. 73–78; illustration p. 90",
+      "evidence_limit": "Auction-attributed publication pointer only. Gorea article unheld; physical correspondence, reading and article-wide pagination not independently verified."
+    }
+  ],
+  "post_research_metrics": {
+    "priority_publication_links": 803,
+    "priority_identities": 1052,
+    "priority_unlinked": 249,
+    "intermediate_gate_target": 842,
+    "further_dispositions_to_gate": 39,
+    "all_identity_publication_links": 931,
+    "edition_text_rows": 800,
+    "checked": 688,
+    "partial": 110,
+    "unreviewed": 2,
+    "frozen_native_script_gaps": 45
+  },
+  "public_text_approvals": 0,
+  "allowance_resets_used": 0,
+  "deployment": false,
+  "ellis6_native_check": {
+    "object_id": "IBI-D7226A7631D3",
+    "source_id": "SRC-8900A7CAF037",
+    "printed_page": 522,
+    "pdf_page": 581,
+    "source_sha256": "bf304bcb7f5600b3186468de76dd50aba6de7ef58331c886d2e33befea16c633",
+    "outcome": "Historical Syriac glyph distinctions remain uncertain; no searchable draft ingested and no recovery-gap closure. Source page retained privately."
+  },
+  "closing_validation": {
+    "python_tests": 371,
+    "python_tests_passed": true,
+    "mike_access_checks_passed": 7,
+    "mike_access_checks_total": 7,
+    "reader_text_rows": 1465,
+    "reader_media_rows": 1150,
+    "packaged_source_captures": 63,
+    "new_texts_match_reader_payload": true,
+    "corpus_digest_after_reports_and_build": "596c454a0f57defadcfade14b304d7f291dbd2ac98a786c6e1f18bf357f594bd",
+    "all_existing_summaries_and_berlin_claims_unchanged": true
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "3a288643ff086d6e4e9bf41c046f6613cf4cda63b644104da5b9364573f40e55",
+  "corpus_digest": "596c454a0f57defadcfade14b304d7f291dbd2ac98a786c6e1f18bf357f594bd",
   "migrations": 19,
-  "note": "Rechecked two Berlin measurement discrepancies and verified all 967 corrected current locators; corpus unchanged.",
-  "recorded_at": "2026-10-01T21:01:18+00:00",
+  "note": "Two private held-source 1999 English translations, partial source reviews, five exact page links and two explicit publication pointers; Ellis 6 native recovery remains open.",
+  "recorded_at": "2026-10-01T21:30:33+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "4364f26a2653298c0efbf9a22cd2a291c94138cf672eb0d13ab791c46210cf49",
-      "rows": 1145
+      "digest": "5ba603853011d85299c9e1946f854f0b74021702f03fe612ff46e8d2d649e365",
+      "rows": 1150
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -103,8 +103,8 @@
       "rows": 2059
     },
     "publication_assessments": {
-      "digest": "2aeb86073bdedb387074d52d9fe2f1954530fd312a484dbd455d6882c91a1fee",
-      "rows": 242
+      "digest": "0c7d465702d53e93372284c185d2e426c62878dbfc2775dcff51e5d315b2a1c3",
+      "rows": 244
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "ed5b2f47851c981c8043af7de03543004ba8f3b34994798facc2203f6ac4b108",
-      "rows": 850
+      "digest": "6174e6dbe0bcdd7617e711f1085b4f735ec6881ae9a5401f83cfd82a86ae08cd",
+      "rows": 852
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "462af1d66bb437436433721f760344ead32640112c38ed2b721880ec7ae19bee",
-      "rows": 1463
+      "digest": "7504e6634a654a35bb159a4f6254e53ab0ebf08fb8bc6b262102acf71cc115e7",
+      "rows": 1465
     }
   }
 }

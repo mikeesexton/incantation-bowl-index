@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Capture held 1999 translations and additional edition links
+
+**Claimed:** TEXT-009, TEXT-010 and TEXT-001 (next research step authorized by Mike; source recovery, separate source checks and edition links)
+**Corpus:** changed (two private scholarly English translations, five exact page links, two partial source reviews and two publication assessments) — state digest `596c454a0f57`
+**Tests:** 371 Python tests pass; copied-database rehearsal, identical full-manifest replays, before/after row preservation, integrity and foreign keys pass; private reader completeness 7/7
+
+- Inspected Ellis 1853 bowl 6 printed p. 522 / PDF p. 581 directly. Historical Syriac letter distinctions remain uncertain, so no searchable draft was ingested and the frozen roster retains all 45 native-script gaps. The rendered source remains private for a better supported capture method.
+- Captured Dan Levene's published M163 English translation, printed pp. 287–290 (ten sections; anchors 1–30), and Shaul Shaked's MS 2054/124 English excerpts, pp. 317–318 (numbered parts 3–27, with 1–2 not supplied). These are the scholars' translations, not project retranslations. Exact held-scan hash, attribution, extent and five page links accompany the private rows. Separate source passes corrected draft names/repetition and distinguished project capture doubts from source editorial marks; unresolved Latin-name diacritics keep both reviews partial. Initial captures and corrected snapshots are retained privately.
+- Added an explicit MS 2054/124 publication pointer to Shaked's translated excerpts and an auction-attributed Gorea 2003 edition pointer for Amkur, pp. 73–78 / illustration p. 90. The Gorea article remains unheld: the pointer does not verify its reading or physical correspondence. Priority links are now 803/1,052 (76.3%); 249 remain unlinked, requiring 39 more evidence-backed dispositions for the intermediate 80% gate. Content-free provenance/validation receipt: research/receipts/held_1999_translations_and_edition_links_2026-10-01.json.
+- Every pre-existing corpus row remains identical to the pre-batch backup, including summaries, Berlin measurements, identities and release decisions. Only texts, media, publication assessments and proofreading history changed. The stored edition-text inventory is now 800: 688 checked / 110 partial / 2 unreviewed. Replayed all four applied manifests with the full corpus fingerprint unchanged.
+- Updated roadmap input/output and regenerated proofreading, enrichment, conflicts, acquisitions, campaign and private research exports. Rebuilt local Mike Access with all 1,465 texts, 1,150 media and 63 source captures; both new contents match the reader payload. Next useful held-source work is M163's printed Hebrew-script edition (pp. 285–287), exact Latin-name collation, and a reliable Syriac/Mandaic glyph recovery method. No deployment, push, outbound message or allowance reset.
+
 ## 2026-10-01 — Codex — Recheck Berlin measurements and current citations
 
 **Claimed:** none (CONC; Mike requests source details and a fresh discrepancy check)
