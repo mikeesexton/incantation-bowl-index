@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-01T02:43:56+00:00`
+Generated: `2026-10-01T14:50:29+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -8,11 +8,11 @@ The original source claims remain unchanged. This review classifies apparent dif
 
 | Disposition | Claim-field instances |
 |---|---:|
-| Compatible | 572 |
+| Compatible | 570 |
 | Scholarly Disagreement | 2 |
 | Source Inconsistency | 4 |
 | Unresolved | 10 |
-| Requires current evidence review | 266 |
+| Requires current evidence review | 272 |
 
 ## Revalidation queue
 
@@ -96,7 +96,11 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-2ED8FD24653C — Naveh–Shaked 1985 Bowl 11: Jewish Historical Museum, Belgrade 242/1 | ritual | formula_genre: protection from illness, jealousy, curses and evil speech [SRC-1E2E21DC61BD; pp. 184-187]; formula_genre: biblical verses: Zech 3:2, Deut 6:4 (Shema), Ps 91:1 [SRC-1E2E21DC61BD; pp. 184-187]; text_purpose: Protection of two (probable) brothers from illness, sorcery and curses [SRC-1E2E21DC61BD; pp. 184-187] |
 | IDENT-345C1F4B0D7C — Naveh–Shaked 1985 Bowl 7: Israel Museum 80.1.3 | ritual | formula_genre: curse / 'perdition' against a named person [SRC-1E2E21DC61BD; pp. 168-171]; formula_genre: fire from the ditch and from the tombs [SRC-1E2E21DC61BD; pp. 168-171]; text_purpose: Probably a curse against a named individual (editors uncertain) [SRC-1E2E21DC61BD; pp. 168-171] |
 | IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | client | client_or_beneficiary: Duti; parent: Gusi (mother); role: client (wife of Zabinu) [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)]; client_or_beneficiary: Zabinu; parent: Zuni (mother); role: client [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)]; client_or_beneficiary: Zuna; parent: Duti (mother); role: client (child) [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)] |
+| IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | dating | culture: Sasanian [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885]; dating: ca. 5th–6th century CE [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885]; period: Sasanian [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885] |
+| IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | language | inscription_language: Jewish Babylonian Aramaic [SRC-1E2E21DC61BD; Bowl 12b, p. 188]; inscription_language: Aramaic [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885] |
+| IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | location | current_location: Metropolitan Museum of Art, New York, NY [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885]; current_or_reported_collection: Metropolitan Museum of Art 86.11.259 [SRC-1E2E21DC61BD; contents and Bowl 12b, p. 188] |
 | IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | parallels | textual_parallel: Amulet 15 [SRC-1E2E21DC61BD; pp. 188-197]; textual_parallel: NS-B12a [SRC-1E2E21DC61BD; pp. 188-197] |
+| IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | provenance | geography: Mesopotamia [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885]; provenance_summary: Purchase, 1886 [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885] |
 | IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | ritual | formula_genre: historiola: Smamit legend [SRC-1E2E21DC61BD; pp. 188-197]; formula_genre: oath by the one who measured the waters (Isa 40:12) [SRC-1E2E21DC61BD; pp. 188-197]; formula_genre: 'bound and sealed are you' [SRC-1E2E21DC61BD; pp. 188-197]; text_purpose: Protecting a husband, wife and child from a child-harming demon [SRC-1E2E21DC61BD; pp. 188-197] |
 | IDENT-3B427B140A4C — Vorderasiatisches Museum VA.Bab.2813 + VA.Bab.281488 (catalogue 130) | language | catalogue_dialect: Syriac (Estrangelo script). [SRC-DA708912C2D3; Catalogue entry 130 (VA.Bab.2813 + VA.Bab.281488), p. 153]; inscription_language: Syriac [SRC-3C4294DDB367; Bowl no. 45, p. 194] |
 | IDENT-3B427B140A4C — Vorderasiatisches Museum VA.Bab.2813 + VA.Bab.281488 (catalogue 130) | publication | publication_status: Catalogued in a complete researcher-inspected corpus edition. [SRC-3C4294DDB367; p. 194]; publication_status: Catalogued in a complete researcher-inspected edition. [SRC-DA708912C2D3; Catalogue entry 130 (VA.Bab.2813 + VA.Bab.281488), p. 153] |
@@ -140,6 +144,8 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-4E08DA500DE2 — Vorderasiatisches Museum VA.3854 (catalogue 99) | publication | publication_status: Catalogued in a complete researcher-inspected edition. [SRC-DA708912C2D3; Catalogue entry 99 (VA.3854), p. 135]; publication_status: Receives a selected full edition as text II. [SRC-DA708912C2D3; Text II, p. 16] |
 | IDENT-4E0DCBDCC1F2 — MS 2053/132 | client | client: Hormiz son of Imma; Šaburdukh daughter of Ṭuṭay, his wife. [SRC-99F964DDA219; VMBA photographic archive, record JBA 19 (MS 2053/132); Internet Archive snapshot 20230815110351]; client: Hormiz son of Imma; Šaburdukh daughter of Ṭuṭay, his wife [SRC-7FBBB775E502; JBA 19, printed p. 123] |
 | IDENT-4E0DCBDCC1F2 — MS 2053/132 | dimensions | dimensions: 155 × 65 mm [SRC-7FBBB775E502; JBA 19, printed p. 123]; dimensions: 155x65 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 19 (MS 2053/132); Internet Archive snapshot 20230815110351] |
+| IDENT-5344FF63115C — Penn B16038: Hebrew Bowl | provenance | collection_history: Gift of Mrs. Ida Hilprecht; credited to Babylonian Expedition to Nippur IV, 1900 [SRC-FF18D9451680; Penn object 151160 (B16038), Details: Credit Line; web-visible catalogue checked 2026-10-01]; findspot: Nippur, Iraq (museum-reported provenience) [SRC-FF18D9451680; Penn object 151160 (B16038), Details: Provenience; web-visible catalogue checked 2026-10-01] |
+| IDENT-5344FF63115C — Penn B16038: Hebrew Bowl | text_form | line_count: 12–13 lines (museum description) [SRC-FF18D9451680; Penn object 151160 (B16038), Details: Description; web-visible catalogue checked 2026-10-01]; text_layout: Concentric circles around a demon; black line around the rim [SRC-FF18D9451680; Penn object 151160 (B16038), Details: Description; web-visible catalogue checked 2026-10-01] |
 | IDENT-549372009A48 — Apotropaic index MS2053/123 | client | client: Dukhtbeh (or Dukhtbe) daughter of Gušnaṣp-fri; Farrokh son of Rašewandukh. [SRC-99F964DDA219; VMBA photographic archive, record JBA 37 (MS 2053/123); Internet Archive snapshot 20230815105607]; client: Dukhtbeh (or Dukhtbe) daughter of Gušnaṣp-fri; Farrokh son of Rašewandukh [SRC-7FBBB775E502; JBA 37, printed p. 185] |
 | IDENT-549372009A48 — Apotropaic index MS2053/123 | dimensions | dimensions: 180x60 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 37 (MS 2053/123); Internet Archive snapshot 20230815105607]; dimensions: 180 × 60 mm [SRC-7FBBB775E502; JBA 37, printed p. 185] |
 | IDENT-572A3A5EA968 — Naveh–Shaked 1985 Bowl 4: Hebrew University Institute of Archaeology 1042 | client | client_or_beneficiary: Immi; parent: Lili (mother); role: speaker/client (verify) [SRC-1E2E21DC61BD; p. 153]; client_or_beneficiary: Barazdukh; parent: Mama (mother); role: protected [SRC-1E2E21DC61BD; p. 153]; client_or_beneficiary: Qayyamta; parent: Kabnay (mother); role: protected [SRC-1E2E21DC61BD; p. 153]; client_or_beneficiary: Mah-ized-dukh; parent: Barazdukh (mother); role: protected [SRC-1E2E21DC61BD; p. 153]; client_or_beneficiary: Nanay; parent: Qayyamta (mother); role: protected [SRC-1E2E21DC61BD; p. 153]; client_or_beneficiary: Bita; parent: Barazdukh (mother); role: protected [SRC-1E2E21DC61BD; p. 153]; client_or_beneficiary: Mahdad; parent: Mama (mother); role: protected [SRC-1E2E21DC61BD; p. 153] |

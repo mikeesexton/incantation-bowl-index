@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-01T14:46:08+00:00`
+Generated: `2026-10-01T14:52:46+00:00`
 
 ## Portfolio status
 
@@ -74,23 +74,23 @@ Current evidence: **214 scholarship works indexed; 42 with a source-linked held 
 | Measure | Current |
 |---|---:|
 | Candidate source records | 2059 |
-| Working physical identity hypotheses (all statuses) | 1711 |
+| Working physical identity hypotheses (all statuses) | 1710 |
 | Source appearances | 2360 |
 | Sources | 955 |
 | Source documents with current assessments | 52 |
 | Source documents assessed complete | 49 |
 | Source documents with object-level extraction | 40 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 431 |
-| Triaged claim-field differences | 588/856 |
-| Compatible differences | 572 |
-| Review required (missing or no longer valid) | 268 |
+| Identities triggering raw claim-difference flags | 430 |
+| Triaged claim-field differences | 586/858 |
+| Compatible differences | 570 |
+| Review required (missing or no longer valid) | 272 |
 | Existing reviews requiring revalidation | 46 |
 | Substantive conflict instances | 16 across 14 identities |
-| All identities with a publication reference | 929/1711 (54.3%) |
-| Probable/confirmed identities with a publication reference | 801/1053 (76.1%) |
-| Probable/confirmed identities reviewed as having no known edition | 0/1053 (0.0%) |
-| Probable/confirmed identities with a publication disposition | 801/1053 (76.1%) |
+| All identities with a publication reference | 929/1710 (54.3%) |
+| Probable/confirmed identities with a publication reference | 801/1052 (76.1%) |
+| Probable/confirmed identities reviewed as having no known edition | 0/1052 (0.0%) |
+| Probable/confirmed identities with a publication disposition | 801/1052 (76.1%) |
 | Identities with a translation | 377 |
 | Scan-checked normalized reading texts | 688 |
 | Publication keys resolved to the publication they designate | 33/33 |
@@ -111,12 +111,12 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1277 | 74.6% |
+| Location | 1276 | 74.6% |
 | Provenance | 373 | 21.8% |
 | Dating | 484 | 28.3% |
 | Dimensions | 515 | 30.1% |
 | Material | 410 | 24.0% |
-| Language | 1029 | 60.1% |
+| Language | 1028 | 60.1% |
 | Script | 94 | 5.5% |
 | Text Edition | 342 | 20.0% |
 | Translation | 377 | 22.0% |
@@ -288,7 +288,7 @@ Reconcile physical bowls across museum records, publications, auctions, dealers,
   - Evidence/status: 1 October live metrics: 588/856 current field differences reviewed, including 572 compatible and 16 substantive instances across 14 identities. 268 instances require current review, including 46 stale decisions. This supersedes earlier current-queue counts, not their immutable history; compatibility never validates the underlying physical fact or selects a canonical scholarly value.
 - [ ] **CONC-006 — Follow up substantive claim discrepancies from primary evidence** · Queued · Research
   - Done when: Each currently substantive disagreement has a source-specific investigation or precise blocker; human adjudication is recorded only when authorized and supported. Preserve every original value and uncertainty.
-  - Evidence/status: The historical five-discrepancy queue has evolved. Current generated metrics show 16 substantive instances across 14 identities. Use the current conflict report and evidence snapshots; do not treat the old five-case list as the current universe.
+  - Evidence/status: The historical five-discrepancy queue has evolved. Current generated metrics show 16 substantive instances across 14 identities. Use the current conflict report and evidence snapshots; do not treat the old five-case list as the current universe. 1 October targeted checks flagged two further cross-identity Berlin designation matches with contrary height/diameter claims: VA Bab 02836/2836 and 04366 a/4366a. Both remain insufficient_evidence in research/reviews/met_and_berlin_designation_review_2026-10-01.jsonl; catalogue pages 162 and 171 were visually checked, and no identity or measurement adjudication was applied.
 - [ ] **CONC-007 — Check all forty main Montgomery/Penn number concordances** · In progress · Research
   - Done when: Each main entry has an individually inspected Penn Object Number and explicit publication number, or a documented discrepancy, with dated evidence and reversible review history.
   - Evidence/status: All forty main mappings were individually confirmed on 5 September. The 1 October live fingerprint count is 32 current reviews; eight older reviews no longer bind current evidence and require a new inspection/superseding review. Historical observations remain retained; this is not a finding that eight mappings are wrong.
@@ -302,7 +302,7 @@ Record where editions, transliterations, translations, incipits, and commentary 
 
 - [ ] **TEXT-001 — Create publication-reference coverage for known texts** · In progress · Research
   - Done when: At least 80% of probable/confirmed identities have an evidence-backed publication disposition—either a publication link or an explicit sourced no-known-edition finding—and at least 50% have an actual publication link. Catalogue silence alone does not qualify as no-known-edition evidence.
-  - Evidence/status: 1 October baseline: 927/1,711 total identities and 799/1,053 probable/confirmed identities have publication links (75.9% of the priority cohort). No current no-known-edition findings. The 80% disposition gate requires 843, a shortfall of 44; the separate 50% actual-link safeguard passes. All 33 keys resolve and 896 candidate records carry a resolved key. BM contributes 159 object-level Segal links. The remaining 254 priority identities need edition research or properly sourced negative findings; dated unpublished notices and catalogue silence are follow-up leads only. Targeted 1 October follow-through links YBC 15334 and VT 1981.8 to TMH 7 from explicit checked citations: 801/1,053 priority identities linked, 252 unlinked, 42 short of the 80% gate. See research/audits/targeted_edition_research_2026-10-01.json. Levene 2000 thesis is registered as a distinct twenty-edition acquisition lead; full pages and overlap with the 2003 book remain unchecked.
+  - Evidence/status: 1 October baseline: 927/1,711 total identities and 799/1,053 probable/confirmed identities have publication links (75.9% of the priority cohort). No current no-known-edition findings. The 80% disposition gate requires 843, a shortfall of 44; the separate 50% actual-link safeguard passes. All 33 keys resolve and 896 candidate records carry a resolved key. BM contributes 159 object-level Segal links. The remaining 254 priority identities need edition research or properly sourced negative findings; dated unpublished notices and catalogue silence are follow-up leads only. Targeted 1 October follow-through links YBC 15334 and VT 1981.8 to TMH 7 from explicit checked citations: 801/1,053 priority identities linked, 252 unlinked, 42 short of the 80% gate. See research/audits/targeted_edition_research_2026-10-01.json. Levene 2000 thesis is registered as a distinct twenty-edition acquisition lead; full pages and overlap with the 2003 book remain unchecked. Same-day exact Met accession concordance brings the priority denominator to 1,052: 801 linked (76.1%), 251 unlinked, 41 additional dispositions needed for the 80% gate; no text rows deleted.
 - [x] **TEXT-002 — Proofread Montgomery's 35 extracted translations** · Done · Research
   - Done when: Every translation is checked line by line against the scan, corrections are logged, and public_ok is decided independently of public-domain status.
   - Evidence/status: 35/35 available translations visually checked against archived scans as normalized English reading texts, in batches of 11 and 24. Exact original rows, corrected text hashes, source-PDF hash, page locators and correction notes retained. Zero OCR drafts remain in this cohort. All 35 remain public_ok=false; independent specialist review and original-language verification are separate work. Completion manifest: research/reviews/montgomery_reading_texts_completion_2026-09-05.json.
@@ -505,7 +505,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `268`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `272`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have an evidence-backed publication disposition; catalogue silence does not qualify. This intermediate milestone does not certify comprehensive coverage. — current `76.1%`; target `>= 80.0%`.
 - [x] At least 50% of probable/confirmed identities retain an actual publication link; negative findings cannot dominate the disposition milestone. — current `76.1%`; target `>= 50.0%`.
@@ -556,6 +556,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-10-01:** Applied Mike’s exact-designation ruling to Met 86.11.259 and NS 1985 Bowl 12b. Flagged two Berlin pairs with contrary dimensions; retained all candidate records, text and claim history. Current claim-comparison reviews needing work: 272.
 - **2026-10-01:** Two exact edition citations recorded beyond Segal; Levene 2000 thesis identified; official Chicago download routes recorded with automated-access limits. TEXT-001 remains in progress.
 - **2026-10-01:** QA-004 roadmap refresh requested by Mike: replaced stale portfolio/task summaries with dated live evidence; reopened CONC-007 because only 32/40 Penn concordance fingerprints are current; retained QA-002 as a completed historical batch and restored its distinction from268 current review/revalidation instances. Defined a checked research-core milestone and separated extraction, proofing, publication, rights andoperations. Current baseline799/1, 053 edition links, 688/798 checked edition-text rows, 45 native gaps, 213 scholarship works/82 unclassified, 319/1, 145 media approvals. No corpus, identity, rights or scholarly decision changed.
 - **2026-10-01:** TEXT-003/TEXT-009/TEXT-010: frozen99 held-source pass dispositions complete;28 new working texts,25 native and3 Hebrew-letter Mandaic transliterations,28,663 characters. Separate pass corrects22 new drafts and8 earlier Montgomery texts;68 partial reviews, no full character checks. Roster67 working texts (54 native,13 transliterations),32 unrecovered character texts and45 native-script gaps. Exact native edition pages retained for Pognon31/Ellis6. Original drafts, protected manifests and source images private; no release, translation, identity or personal-audit decision.

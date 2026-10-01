@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Verify Met accession concordance
+
+**Claimed:** none (CONC workstream; exact named-object concordance found during authorized research)
+**Corpus:** changed (one exact designation decision; two unresolved pair reviews) — state digest `65e21e1bc3c0`
+**Tests:** 371 Python tests pass; roadmap, conflict, enrichment, campaign and private research exports regenerated
+
+- Visually checked NS 1985 printed/PDF p. 189: Metropolitan Museum accession 86.11.259 explicitly identifies Bowl 12b. Applied Mike's 27 September one-designation ruling through research/reviews/met_and_berlin_designation_review_2026-10-01.jsonl; preserved both source records and all texts. Identity count is 1,710; publication coverage is 801/1,052 priority identities (76.1%), with 251 unlinked and 41 further dispositions needed for the intermediate 80% gate.
+- Searched the non-NLI unlinked cohort for missed accession matches, then visually checked Berlin catalogue pp. 162 and 171. VA Bab 02836/2836 and VA Bab 04366 a/4366a have contradictory museum/catalogue dimensions; retained both as insufficient_evidence under the exception in Mike's ruling. No measurement or language adjudication. Flagged two-page-early locators in later Berlin metadata for a separate correction batch.
+- Expanded identity evidence produces 272 current claim-comparison reviews needing work, including the same 46 stale reviews. No automatic compatible classification. Online SQLite backup retained before the batch; no source record deletion, rights clearance, deployment or push. Restored the roadmap input's established one-space formatting.
+
 ## 2026-10-01 — Codex — Targeted edition research beyond Segal
 
 **Claimed:** TEXT-001 (ambitious research follow-through requested by Mike)

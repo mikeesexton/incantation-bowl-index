@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "cda11337fcb1ce1a22bd077737fb41fb0c9e0cfad378d1cd799710de3e5dca41",
+  "corpus_digest": "65e21e1bc3c06351750fa0b146558fc2289f3e33ec7898aaf9e7f6c895db9d0f",
   "migrations": 19,
-  "note": "Roadmap refresh; checked research-core milestone; no corpus changes",
-  "recorded_at": "2026-10-01T14:24:08+00:00",
+  "note": "Exact Met 86.11.259 edition concordance under Mike standing ruling; two Berlin dimension discrepancies retained as unresolved pairs",
+  "recorded_at": "2026-10-01T14:51:45+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -47,12 +47,12 @@
       "rows": 12
     },
     "dedupe_candidates": {
-      "digest": "8fb07dd74a4246d306c082c659d531c6315bee08a833f7f02efe866ce5c4d5d9",
-      "rows": 34794
+      "digest": "2810de316f53451b225438e927083462a0a4a39bb05acd35430d3df68bb88c9f",
+      "rows": 34797
     },
     "dedupe_evidence": {
-      "digest": "6a73abe5c64a2b5b8828d7ca24032ee5bcd71d230a4582c01ff2c81e30e61055",
-      "rows": 34796
+      "digest": "3d27399ffaa18262e14926842ff1018202d0f734dd7d0bd02a986a7dc687264b",
+      "rows": 34802
     },
     "document_assessments": {
       "digest": "a2ac939e9030d07be21c4f3345774da63467cf068e35fa2cc3cce270aff7c15a",
@@ -103,8 +103,8 @@
       "rows": 2059
     },
     "publication_assessments": {
-      "digest": "42d348453d27db83fe3939491a8ef479c3bdb2690f1b32ee428032d0261a707d",
-      "rows": 240
+      "digest": "2aeb86073bdedb387074d52d9fe2f1954530fd312a484dbd455d6882c91a1fee",
+      "rows": 242
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -135,8 +135,8 @@
       "rows": 118
     },
     "sources": {
-      "digest": "c7fc96f724cb028940929c869f4f647e7a34c7c2df72cbb82d5f7bbdde2cf70e",
-      "rows": 954
+      "digest": "28ed7c3e007753c311ec2492b733d1e08dd7677f89a10c9f30b8ccdd7cc1c0eb",
+      "rows": 955
     },
     "text_metadata_corrections": {
       "digest": "77785373950866528f3f6fa57ef7a2a54dade521d72d08f7a325df6354d486b0",
