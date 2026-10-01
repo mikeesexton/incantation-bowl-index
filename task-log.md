@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Check automated backups and public website freshness
+
+**Claimed:** OPS-002 and OPS (Mike’s backup and bowlam.com status questions)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 368 Python tests pass; corpus state match; encrypted SSD snapshot metadata and database presence verified; live HTTPS page compared with current aggregate snapshot
+
+- Verified the connected 2 TB IBI Backup SSD is mounted and encrypted. Its sole Restic snapshot is `6b5ec6e5`, completed 2026-09-25T01:35:53Z (September 24, 9:35 p.m. Eastern), and includes the authoritative SQLite database. No IBI/Restic launchd jobs or user crontab are installed; the runbook confirms the four-hour SSD and daily B2 schedules remain unconfigured. Existing independent local/B2 restore receipts passed at commissioning.
+- Fetched bowlam.com directly over HTTPS: it still publishes the September 26 snapshot `9b1adcb4aa4c80ec`: 1,736 bowl identities, 2,053 source records, 860 text references, 371 provenance references and 330 image references. Current figures from a consistent temporary copy of the read-only live database are 1,711, 2,059, 897, 373 and 612 respectively (aggregate snapshot `ac143cd9f049958b`). Local site/public is also stale, dated September 28.
+- Recorded content-free verification evidence in research/audits/backup_and_public_site_status_2026-10-01.json. No corpus change, new backup, schedule installation, deployment or push; reports were not invalidated. Next enable the intended backup schedules and monitoring, then rebuild/review/deploy public aggregates when Mike instructs.
+
 ## 2026-10-01 — Codex — Restore reported catalogue languages and draft NLI enquiry
 
 **Claimed:** OPS (Mike's instruction to reverse catalogue-language display changes)

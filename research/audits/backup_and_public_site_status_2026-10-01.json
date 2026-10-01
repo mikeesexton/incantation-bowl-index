@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-01T13:19:34.368303+00:00",
+  "agent": "codex",
+  "scope": "Read-only backup schedule and public landing-page freshness audit; no backup created, schedule enabled, or site deployed.",
+  "corpus_digest": "cda11337fcb1ce1a22bd077737fb41fb0c9e0cfad378d1cd799710de3e5dca41",
+  "local_backup": {
+    "volume": "IBI Backup",
+    "mounted": true,
+    "encrypted_apfs": true,
+    "capacity_bytes": 2000189177856,
+    "snapshot_count": 1,
+    "latest_snapshot_id": "6b5ec6e564e4cf874ce38c46a464ee52fb8fd1f0e3d26558a455dafba4c2e0e1",
+    "backup_completed_at": "2026-09-24T21:35:53.71221-04:00",
+    "database_in_snapshot": true,
+    "automatic_schedule_installed": false,
+    "evidence": [
+      "Restic snapshots --json --no-lock using existing Keychain password command",
+      "Restic ls latest: data/private/ibi.sqlite3 present",
+      "diskutil info: Mounted Yes, FileVault Yes",
+      "No IBI/Restic launchctl jobs; no user crontab; no backup LaunchAgents or LaunchDaemons",
+      "docs/mac_mini_setup_runbook.md acceptance record: four-hour and daily schedules not configured"
+    ]
+  },
+  "website": {
+    "url": "https://bowlam.com/",
+    "retrieval": "Direct HTTPS fetch",
+    "html_sha256": "cb499f669df1c4afddf5ef476b4f2563b8b240480c13752f415333dc0b174126",
+    "published_snapshot_id": "9b1adcb4aa4c80ec",
+    "published_snapshot_date": "2026-09-26",
+    "published": {
+      "identity_count": 1736,
+      "source_record_count": 2053,
+      "coverage": {
+        "text_edition": 860,
+        "provenance": 371,
+        "image": 330
+      }
+    },
+    "current": {
+      "identity_count": 1711,
+      "source_record_count": 2059,
+      "coverage": {
+        "text_edition": 897,
+        "provenance": 373,
+        "image": 612
+      }
+    },
+    "current_snapshot_id": "ac143cd9f049958b0dfa8afddf35be1c54ccf6a040a3ea2da4c142e7db44a3ed",
+    "current_aggregate_method": "CorpusCatalog.introduction from consistent SQLite backup of read-only live connection; temporary database removed",
+    "up_to_date": false
+  }
+}
