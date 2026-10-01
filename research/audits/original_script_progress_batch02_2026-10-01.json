@@ -1,0 +1,1894 @@
+{
+  "schema_version": 2,
+  "observed_at": "2026-10-01T10:27:09+00:00",
+  "corpus_digest": "84308ebcd2a6bb181d7c594b0ecc52c61281d4133f4e1eba648bf3e76bf8964c",
+  "baseline_inventory": "research/audits/original_script_backlog_2026-09-30.json",
+  "scope": "Content-free status of frozen99 source appearances. Edition capture, native-script recovery, full source proofreading and physical-bowl completeness are separate. Identity groups do not certify distinct physical objects. AIT27 pilot not in frozen99 roster; it is included only in Montgomery main-cohort40 totals. All new rows are partial_review.",
+  "totals": {
+    "baseline_targets": 99,
+    "targets_with_working_native_transcription": 29,
+    "targets_with_hebrew_letter_transliteration_native_recovery_open": 10,
+    "targets_without_either_edition_rendering": 60,
+    "targets_without_same_source_native_transcription": 70,
+    "new_transcription_rows": 9,
+    "new_transliteration_rows": 10,
+    "new_partial_reviews": 19,
+    "new_full_character_checks": 0,
+    "new_numbered_edition_anchors": 240,
+    "new_text_characters": 21493,
+    "new_source_page_media": 24,
+    "montgomery_main_entries_with_some_working_edition_text": 40,
+    "montgomery_main_entries_with_hebrew_script_transcription": 30,
+    "montgomery_main_entries_with_hebrew_letter_syriac_mandaic_transliteration": 10
+  },
+  "source_rendering_convention": {
+    "source_id": "SRC-943673B56FB8",
+    "locator": "printed p.11 / PDF p.17; contents printed p.vi / PDF p.12; No31 commentary printed p.223 / PDF p.229",
+    "hebrew_script_edition_entries": "1–30",
+    "hebrew_letter_syriac_transliterations": "31–37",
+    "hebrew_letter_mandaic_transliterations": "38–40",
+    "original_syriac_mandaic_scripts": "not recovered by this batch; retained facsimiles remain the native-script evidence"
+  },
+  "batch": [
+    {
+      "number": 3,
+      "appearance_id": "APP-FE0FFEDE62F8",
+      "appearance_locator": "p. 321, item 3",
+      "pdf_pages": [
+        133
+      ],
+      "printed_pages": [
+        127
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_line_count": 12,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "All twelve printed lines retained, including the biblical closing restoration. Repeated magical strings, exact letter counts, word division, inferior dots and names require precise collation.",
+      "text_id": "TXT-DC35DC37F907",
+      "media_ids": [
+        "MED-721AB767DA95"
+      ]
+    },
+    {
+      "number": 4,
+      "appearance_id": "APP-C772190086F2",
+      "appearance_locator": "p. 321, item 4",
+      "pdf_pages": [
+        139
+      ],
+      "printed_pages": [
+        133
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "printed_line_count": 7,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Seven printed lines retained. Unusual opening, astrological terminology and the broken לא תי closing require source collation; no grammar-based repair.",
+      "text_id": "TXT-701DBFDAB61A",
+      "media_ids": [
+        "MED-5601E0B5946C"
+      ]
+    },
+    {
+      "number": 5,
+      "appearance_id": "APP-1310B7191112",
+      "appearance_locator": "p. 322, item 5",
+      "pdf_pages": [
+        144
+      ],
+      "printed_pages": [
+        138
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "printed_line_count": 7,
+      "text_type": "transcription",
+      "language": "Hebrew/Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Six spiral lines and the two lines on either side of the central figure grouped under printed (7) retained. Source elided-name parenthesis, English figure caption and sic wording are editorial. Hebrew quotation spellings and erased/deleted form require exact checking.",
+      "text_id": "TXT-A5C9F6D65B1E",
+      "media_ids": [
+        "MED-9350657989C2"
+      ]
+    },
+    {
+      "number": 6,
+      "appearance_id": "APP-864157C44B8B",
+      "appearance_locator": "p. 322, item 6",
+      "pdf_pages": [
+        147
+      ],
+      "printed_pages": [
+        141
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_line_count": 12,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Twelve lines, seven formula names and the fragmentary line10 retained. Incantatory names, source dots and exact final letters remain open.",
+      "text_id": "TXT-E48A31837588",
+      "media_ids": [
+        "MED-5F0893C72A2F"
+      ]
+    },
+    {
+      "number": 7,
+      "appearance_id": "APP-78ECA5E16211",
+      "appearance_locator": "p. 322, item 7",
+      "pdf_pages": [
+        151,
+        152,
+        153
+      ],
+      "printed_pages": [
+        145,
+        146,
+        147
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "printed_line_count": 17,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "CBS16007 LEFT column only, PDF151–153. Excludes the right-hand CBS16081/Myhrman witness. Shared-width closing at line17 follows the source’s left-column continuation. Cross-line restoration7–8 preserved. Name spellings, layout and dots require precise review.",
+      "text_id": "TXT-2B13CEE8FD44",
+      "media_ids": [
+        "MED-E5C354368703",
+        "MED-FD77E31A2F4A",
+        "MED-2B3A37AFB88F"
+      ]
+    },
+    {
+      "number": 8,
+      "appearance_id": "APP-D433CFA5D994",
+      "appearance_locator": "p. 322, item 8",
+      "pdf_pages": [
+        160,
+        161
+      ],
+      "printed_pages": [
+        154,
+        155
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "printed_line_count": 17,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Seventeen-line printed block across PDF160–161; final line17 is on PDF161. Many damaged phrases, divine-name fragments and source dot positions remain open; a project doubt explicitly marks the difficult דוריפתא sequence.",
+      "text_id": "TXT-49CF317613E4",
+      "media_ids": [
+        "MED-7AB3762CC8DF",
+        "MED-C6C0086D4CFF"
+      ]
+    },
+    {
+      "number": 9,
+      "appearance_id": "APP-07A0BD3CAEDC",
+      "appearance_locator": "p. 322, item 9",
+      "pdf_pages": [
+        167
+      ],
+      "printed_pages": [
+        161
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "printed_line_count": 11,
+      "text_type": "transcription",
+      "language": "Hebrew/Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Ten interior lines plus Exterior line11 retained. Hebrew exterior beside Aramaic interior source-labeled. Names, restored cross-line text and source dots need exact collation.",
+      "text_id": "TXT-E7B6A380160B",
+      "media_ids": [
+        "MED-EEE2FAEFB22F"
+      ]
+    },
+    {
+      "number": 11,
+      "appearance_id": "APP-3126B58BCEBD",
+      "appearance_locator": "p. 322, item 11",
+      "pdf_pages": [
+        174,
+        175,
+        176
+      ],
+      "printed_pages": [
+        168,
+        169,
+        170
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "printed_line_count": 9,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "No.11 LEFT column only across PDF174–176, excluding Ellis1 and Lidzbarski5. Source has an apparently unpaired bracket by ד in line5; retained inside project doubt, closing boundary unresolved. Line7 difficult syllable marked as project doubt; magical names, dots and layout need further review.",
+      "text_id": "TXT-E3663576CF80",
+      "media_ids": [
+        "MED-E27C463B9D01",
+        "MED-7ADF4129E20A",
+        "MED-DF81C836EEA2"
+      ]
+    },
+    {
+      "number": 19,
+      "appearance_id": "APP-EAD0AE7DED3E",
+      "appearance_locator": "p. 324, item 19",
+      "pdf_pages": [
+        201
+      ],
+      "printed_pages": [
+        195
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "printed_line_count": 20,
+      "text_type": "transcription",
+      "language": "Aramaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "All twenty lines captured. Printed heading is CBS16018, while the existing catalogue appearance title notes the register omitted an inventory number. Locator reports the edition heading; no identifier, claim or identity link changes. Magical names, line18–19 project doubts, broken compounds and dots require precise collation.",
+      "text_id": "TXT-00CAB584E3AA",
+      "media_ids": [
+        "MED-999CB9AF28D7"
+      ]
+    },
+    {
+      "number": 31,
+      "appearance_id": "APP-0793AD650B2E",
+      "appearance_locator": "p. 325, item 31",
+      "pdf_pages": [
+        229
+      ],
+      "printed_pages": [
+        223
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "printed_line_count": 10,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, ten lines with seven crosses after the Amen closing. Upper Syriac dots/seyame are not exhaustively encoded; repeated magical-letter counts and source dots need collation.",
+      "text_id": "TXT-EDDDC317B5F5",
+      "media_ids": [
+        "MED-01D1105BA6BA"
+      ]
+    },
+    {
+      "number": 32,
+      "appearance_id": "APP-D4C5D8A61D40",
+      "appearance_locator": "p. 325, item 32",
+      "pdf_pages": [
+        231
+      ],
+      "printed_pages": [
+        225
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_line_count": 12,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, twelve lines. Cross-line restoration10–11 retained. Divine-name sequences, magic syllables, final loss and upper/lower dots remain open.",
+      "text_id": "TXT-C1BEDCEA7A10",
+      "media_ids": [
+        "MED-74A74029D7C9"
+      ]
+    },
+    {
+      "number": 33,
+      "appearance_id": "APP-802C87223FEE",
+      "appearance_locator": "p. 326, item 33",
+      "pdf_pages": [
+        236
+      ],
+      "printed_pages": [
+        230
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "printed_line_count": 13,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, thirteen lines. Restoration ודי[וא וסט]נא crosses the printed wrap within numbered line9. Existing no.32 parallel is not used to supply readings. Magic letters, exact dots and spellings remain open.",
+      "text_id": "TXT-B2CD420D3491",
+      "media_ids": [
+        "MED-1805D01AD5D8"
+      ]
+    },
+    {
+      "number": 34,
+      "appearance_id": "APP-D724A7994ABA",
+      "appearance_locator": "p. 326, item 34",
+      "pdf_pages": [
+        237
+      ],
+      "printed_pages": [
+        231
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "printed_line_count": 14,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, fourteen lines. Repeated דאית and source name/formula variants retained; no harmonization. Exact seyame, upper/lower dots and consonants require collation.",
+      "text_id": "TXT-4F6D97A138F9",
+      "media_ids": [
+        "MED-55BC17515616"
+      ]
+    },
+    {
+      "number": 35,
+      "appearance_id": "APP-0D6521BE33C9",
+      "appearance_locator": "p. 326, item 35",
+      "pdf_pages": [
+        242
+      ],
+      "printed_pages": [
+        236
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_line_count": 12,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, twelve lines; cross-line restoration7–8 preserved. Multiple named clients remain as printed. Magic fragments, upper/lower dots and final letters require full collation.",
+      "text_id": "TXT-9C9A855DA25F",
+      "media_ids": [
+        "MED-313115E28981"
+      ]
+    },
+    {
+      "number": 36,
+      "appearance_id": "APP-83950F7E2B49",
+      "appearance_locator": "p. 326, item 36",
+      "pdf_pages": [
+        244
+      ],
+      "printed_pages": [
+        238
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "printed_line_count": 8,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, eight damaged lines. All loss runs and restorations retained without completing names. Inferior/upper dots, destructive-spirit names and difficult final wording require full collation.",
+      "text_id": "TXT-1E3902E1EC41",
+      "media_ids": [
+        "MED-F1573C6C9895"
+      ]
+    },
+    {
+      "number": 37,
+      "appearance_id": "APP-E275724F7B16",
+      "appearance_locator": "p. 326, item 37",
+      "pdf_pages": [
+        248
+      ],
+      "printed_pages": [
+        242
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "printed_line_count": 11,
+      "text_type": "transliteration",
+      "language": "Syriac (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Syriac, eleven damaged lines; source contents and No31 commentary classify Nos31–37 as Syriac. Project doubt marks uncertain וג fragment. Brackets, source dots and magic terms remain open.",
+      "text_id": "TXT-29009DDA1861",
+      "media_ids": [
+        "MED-3DBDCF3E0114"
+      ]
+    },
+    {
+      "number": 38,
+      "appearance_id": "APP-96871B3E4365",
+      "appearance_locator": "p. 326, item 38",
+      "pdf_pages": [
+        250
+      ],
+      "printed_pages": [
+        244
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "printed_line_count": 15,
+      "text_type": "transliteration",
+      "language": "Mandaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Mandaic, fourteen interior lines plus short Exterior15. Printed erasure annotation retained as editorial. Cross-line restoration13–14 remains open/closed as printed. Marked-dalet placement, consonants, names and original Mandaic-script facsimiles require further work.",
+      "text_id": "TXT-1C2EC7F546FD",
+      "media_ids": [
+        "MED-B98538860920"
+      ]
+    },
+    {
+      "number": 39,
+      "appearance_id": "APP-B8B7514BF026",
+      "appearance_locator": "p. 326, item 39",
+      "pdf_pages": [
+        254
+      ],
+      "printed_pages": [
+        248
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "printed_line_count": 12,
+      "text_type": "transliteration",
+      "language": "Mandaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Mandaic, twelve lines. Source restorations retained, including פ[ת דא]דיא, marked dalet and damaged names; no grammatical correction. Exhaustive marked-dalet/letter-dot collation and actual Mandaic-script recovery remain open.",
+      "text_id": "TXT-380CCE8D008B",
+      "media_ids": [
+        "MED-9B6B24578F94"
+      ]
+    },
+    {
+      "number": 40,
+      "appearance_id": "APP-7F442D32415F",
+      "appearance_locator": "p. 326, item 40",
+      "pdf_pages": [
+        258
+      ],
+      "printed_pages": [
+        252
+      ],
+      "printed_line_anchors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "printed_line_count": 21,
+      "text_type": "transliteration",
+      "language": "Mandaic (Montgomery edition)",
+      "script": "Hebrew",
+      "extent": "Complete bounded printed edition block with source gaps and restorations; partial proofreading, not evidence of a complete physical inscription.",
+      "status": "partial_review",
+      "unresolved": "Hebrew-letter rendering of Mandaic with printed numbered extent1–26 but only21 numbered anchors:1–6 and12–26. Source has a loss-dot row for lines7–11; not reconstructed or counted as captured text. Exterior16–26 retained. Broad restoration22–25, other gaps, marked dalet and names require precise collation; source sic retained.",
+      "text_id": "TXT-92D0E6685DA8",
+      "media_ids": [
+        "MED-6B5116B09506"
+      ]
+    }
+  ],
+  "worklist_status": [
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-CDECE1AA8025",
+      "identity_ids": [
+        "IDENT-3799CFE813B5"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-DB7EE3F0F524"
+      ],
+      "review_statuses": {
+        "TXT-DB7EE3F0F524": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D9DDA0AC69C7",
+      "identity_ids": [
+        "IDENT-5B1343517775"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-B3E117E7C76A"
+      ],
+      "review_statuses": {
+        "TXT-B3E117E7C76A": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-FE0FFEDE62F8",
+      "identity_ids": [
+        "IDENT-28AFCD028373"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-DC35DC37F907"
+      ],
+      "review_statuses": {
+        "TXT-DC35DC37F907": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-C772190086F2",
+      "identity_ids": [
+        "IDENT-33C9806531BF"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-701DBFDAB61A"
+      ],
+      "review_statuses": {
+        "TXT-701DBFDAB61A": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-438DDE9F3E25",
+      "identity_ids": [
+        "IDENT-412E0B1680FB"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-7662F04E373F"
+      ],
+      "review_statuses": {
+        "TXT-7662F04E373F": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-3126B58BCEBD",
+      "identity_ids": [
+        "IDENT-3E0C956BD836"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-E3663576CF80"
+      ],
+      "review_statuses": {
+        "TXT-E3663576CF80": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-1310B7191112",
+      "identity_ids": [
+        "IDENT-24674D1820C6"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-A5C9F6D65B1E"
+      ],
+      "review_statuses": {
+        "TXT-A5C9F6D65B1E": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-864157C44B8B",
+      "identity_ids": [
+        "IDENT-6005503283A5"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-E48A31837588"
+      ],
+      "review_statuses": {
+        "TXT-E48A31837588": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-78ECA5E16211",
+      "identity_ids": [
+        "IDENT-013FBB80706C"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-2B13CEE8FD44"
+      ],
+      "review_statuses": {
+        "TXT-2B13CEE8FD44": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D433CFA5D994",
+      "identity_ids": [
+        "IDENT-586A5A88B7DC"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-49CF317613E4"
+      ],
+      "review_statuses": {
+        "TXT-49CF317613E4": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-07A0BD3CAEDC",
+      "identity_ids": [
+        "IDENT-2D03029F6DEE"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-E7B6A380160B"
+      ],
+      "review_statuses": {
+        "TXT-E7B6A380160B": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-6434CEAE80BD",
+      "identity_ids": [
+        "IDENT-02B43ABF13D9"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-618B05B28A08"
+      ],
+      "review_statuses": {
+        "TXT-618B05B28A08": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-24BFA2C91F7E",
+      "identity_ids": [
+        "IDENT-2CD9170DA696"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-8CCF16F0BDEE"
+      ],
+      "review_statuses": {
+        "TXT-8CCF16F0BDEE": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-E987653764E6",
+      "identity_ids": [
+        "IDENT-319F3DE276D8"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-7F3508798F65"
+      ],
+      "review_statuses": {
+        "TXT-7F3508798F65": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-681E7CFAACAF",
+      "identity_ids": [
+        "IDENT-0DDF3246CBCA"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-23DA7F7A7A3B"
+      ],
+      "review_statuses": {
+        "TXT-23DA7F7A7A3B": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-79114E948F02",
+      "identity_ids": [
+        "IDENT-2C4A68905E21"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-1A53F04B1B8D"
+      ],
+      "review_statuses": {
+        "TXT-1A53F04B1B8D": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-C3C4F898D923",
+      "identity_ids": [
+        "IDENT-09C22FFFD031"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-C4227E0C8605"
+      ],
+      "review_statuses": {
+        "TXT-C4227E0C8605": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-A79508FF2125",
+      "identity_ids": [
+        "IDENT-63DC1A6B27EF"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-5E3D46D41FE7"
+      ],
+      "review_statuses": {
+        "TXT-5E3D46D41FE7": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-EAD0AE7DED3E",
+      "identity_ids": [
+        "IDENT-3302F57D7AE1"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-00CAB584E3AA"
+      ],
+      "review_statuses": {
+        "TXT-00CAB584E3AA": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-279C27F275C2",
+      "identity_ids": [
+        "IDENT-ABDE8A973358"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-94810881E40B"
+      ],
+      "review_statuses": {
+        "TXT-94810881E40B": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-76436A9290DC",
+      "identity_ids": [
+        "IDENT-26BDEA55EA1E"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-5C1B2110498F"
+      ],
+      "review_statuses": {
+        "TXT-5C1B2110498F": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-07648364502C",
+      "identity_ids": [
+        "IDENT-5002143E0DC9"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-2AD343A4E286"
+      ],
+      "review_statuses": {
+        "TXT-2AD343A4E286": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-49C686AFBC6E",
+      "identity_ids": [
+        "IDENT-C6413BF444D0"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-AB2E78F08206"
+      ],
+      "review_statuses": {
+        "TXT-AB2E78F08206": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-2A8A4134889F",
+      "identity_ids": [
+        "IDENT-C2E332F154A0"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-1EDCFF951B2E"
+      ],
+      "review_statuses": {
+        "TXT-1EDCFF951B2E": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-F4AE8487EFD4",
+      "identity_ids": [
+        "IDENT-74625165CE1F"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-E5DB6B3A7C8D"
+      ],
+      "review_statuses": {
+        "TXT-E5DB6B3A7C8D": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-F9A77B2A4270",
+      "identity_ids": [
+        "IDENT-5FCC4322461F"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-76D57DE9FCD0"
+      ],
+      "review_statuses": {
+        "TXT-76D57DE9FCD0": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-5C2E170AF9AA",
+      "identity_ids": [
+        "IDENT-310095C53E06"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-9B748691CB2A"
+      ],
+      "review_statuses": {
+        "TXT-9B748691CB2A": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-19E688CF629E",
+      "identity_ids": [
+        "IDENT-2302CEAE11AF"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-2093AEACB9E1"
+      ],
+      "review_statuses": {
+        "TXT-2093AEACB9E1": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-64DA17599F84",
+      "identity_ids": [
+        "IDENT-32E80C06D6CC"
+      ],
+      "status": "working_native_transcription_present",
+      "text_ids": [
+        "TXT-BCECFE85E90E"
+      ],
+      "review_statuses": {
+        "TXT-BCECFE85E90E": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-0793AD650B2E",
+      "identity_ids": [
+        "IDENT-079F0B82D514"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-EDDDC317B5F5"
+      ],
+      "review_statuses": {
+        "TXT-EDDDC317B5F5": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D4C5D8A61D40",
+      "identity_ids": [
+        "IDENT-527704D6B074"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-C1BEDCEA7A10"
+      ],
+      "review_statuses": {
+        "TXT-C1BEDCEA7A10": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-802C87223FEE",
+      "identity_ids": [
+        "IDENT-2422A6BE70E3"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-B2CD420D3491"
+      ],
+      "review_statuses": {
+        "TXT-B2CD420D3491": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D724A7994ABA",
+      "identity_ids": [
+        "IDENT-1A098436B031"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-4F6D97A138F9"
+      ],
+      "review_statuses": {
+        "TXT-4F6D97A138F9": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-0D6521BE33C9",
+      "identity_ids": [
+        "IDENT-2F518E039625"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-9C9A855DA25F"
+      ],
+      "review_statuses": {
+        "TXT-9C9A855DA25F": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-83950F7E2B49",
+      "identity_ids": [
+        "IDENT-06BD95937A55"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-1E3902E1EC41"
+      ],
+      "review_statuses": {
+        "TXT-1E3902E1EC41": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-E275724F7B16",
+      "identity_ids": [
+        "IDENT-29AAFE861F78"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-29009DDA1861"
+      ],
+      "review_statuses": {
+        "TXT-29009DDA1861": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-96871B3E4365",
+      "identity_ids": [
+        "IDENT-544ABA7B7DAA"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-1C2EC7F546FD"
+      ],
+      "review_statuses": {
+        "TXT-1C2EC7F546FD": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-B8B7514BF026",
+      "identity_ids": [
+        "IDENT-9D13CDD62235"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-380CCE8D008B"
+      ],
+      "review_statuses": {
+        "TXT-380CCE8D008B": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-7F442D32415F",
+      "identity_ids": [
+        "IDENT-79D32E0C0500"
+      ],
+      "status": "working_hebrew_letter_transliteration_present_native_recovery_open",
+      "text_ids": [
+        "TXT-92D0E6685DA8"
+      ],
+      "review_statuses": {
+        "TXT-92D0E6685DA8": "partial_review"
+      }
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-0EF7B5C8D91C",
+      "identity_ids": [
+        "IDENT-85880E054A2C"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-7A295C8A0971",
+      "identity_ids": [
+        "IDENT-B9953E43CB15"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-ABE046D0377C",
+      "identity_ids": [
+        "IDENT-81533E5D52C6"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-129525A3C993",
+      "identity_ids": [
+        "IDENT-F5AF07BA4A16"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-7F38071BF44D",
+      "identity_ids": [
+        "IDENT-4CE4A3A99CC4"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-B89D47597FD7",
+      "identity_ids": [
+        "IDENT-73CCCFD9AAC1"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-D3FD184611BD",
+      "identity_ids": [
+        "IDENT-066A91C46861"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-D7FE89B99298",
+      "identity_ids": [
+        "IDENT-8006D542AA18"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-FCECCBBB81E4",
+      "identity_ids": [
+        "IDENT-87F95AD9539A"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-091BF3379EE0",
+      "identity_ids": [
+        "IDENT-DF12373ABCD4"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-CDAA297CE95A",
+      "identity_ids": [
+        "IDENT-803DAD53D57E"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-3997D9594090",
+      "identity_ids": [
+        "IDENT-4BA618E6BAB7"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-44D928BC072B",
+      "identity_ids": [
+        "IDENT-5F8407C1637E"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-DB21293C4776",
+      "identity_ids": [
+        "IDENT-F0D16C11FE27"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-0F2F71E04948",
+      "identity_ids": [
+        "IDENT-EF7BDE184446"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-3733E65ECF01",
+      "identity_ids": [
+        "IDENT-1D5F283ECCE9"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-1FE3188E1492",
+      "identity_ids": [
+        "IDENT-6BE776EF5D76"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-2C3E6DCCDCCA",
+      "identity_ids": [
+        "IDENT-A63FE866AC15"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-6CF600CC7FF0",
+      "identity_ids": [
+        "IDENT-6F0F7DCA91B9"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-953232579597",
+      "identity_ids": [
+        "IDENT-53436A3039A9"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-68DC465FB10C",
+      "identity_ids": [
+        "IDENT-602DCEB1131F"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-EBEEFEECEFC7",
+      "identity_ids": [
+        "IDENT-27D5447503D1"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-73F7911C0BA2",
+      "identity_ids": [
+        "IDENT-55A65753F98F"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-4CA754C44EDE",
+      "identity_ids": [
+        "IDENT-553C439A9041"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-1EEC6342BDB6",
+      "identity_ids": [
+        "IDENT-841834AA23EE"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-883E9B89B134",
+      "identity_ids": [
+        "IDENT-6849AB56769C"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-111C687B7B7E",
+      "identity_ids": [
+        "IDENT-0F893C3C8B27"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-9BE810564E11",
+      "identity_ids": [
+        "IDENT-C3B7AF19392E"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-B12F194FE0AD",
+      "identity_ids": [
+        "IDENT-D35F31FD9609"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-35ABA29FF278",
+      "identity_ids": [
+        "IDENT-D9305B05E1A2"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-9211ED37685E",
+      "identity_ids": [
+        "IDENT-F1DDD0F5B05B"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-8741DAD4DE16",
+      "identity_ids": [
+        "IDENT-9C9E9A51F4FD"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-B931ED426F18",
+      "identity_ids": [
+        "IDENT-A827C761AE03"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-302F40CE8B7C",
+      "identity_ids": [
+        "IDENT-0FD203FF2582"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-886631B0382E",
+      "identity_ids": [
+        "IDENT-083CF78A7803"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-E9A404BCD123",
+      "identity_ids": [
+        "IDENT-444B0B07BA0E"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-8A3CC20AE0AC",
+      "identity_ids": [
+        "IDENT-6CF4E4167D3E"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-803A0D1650EF",
+      "identity_ids": [
+        "IDENT-87782BA285D5"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-9D5B95899923",
+      "identity_ids": [
+        "IDENT-54398C1767BE"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-938C8FBAA0F3",
+      "identity_ids": [
+        "IDENT-8B111BFD04DA"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-0E6FA47A609E",
+      "identity_ids": [
+        "IDENT-AA3D4D3C35CC"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-17C03AF3619C",
+      "identity_ids": [
+        "IDENT-F0173A70F87B"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-5F9139280903",
+      "identity_ids": [
+        "IDENT-67E68F81FE63"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-EF64B75190FC",
+      "identity_ids": [
+        "IDENT-A941F1E8B2F0"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-ADDBA35701BF",
+      "identity_ids": [
+        "IDENT-4949F2DB777F"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-917017918A3E",
+      "identity_ids": [
+        "IDENT-410C07F078B6"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-4FA37630332D",
+      "identity_ids": [
+        "IDENT-427650BDA7A4"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-17AD10B763C7",
+      "identity_ids": [
+        "IDENT-F265C68D7662"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-89A2A73925B7",
+      "identity_ids": [
+        "IDENT-7BCBBD6A6A80"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-0383E0E0A2F2",
+      "appearance_id": "APP-B5699D55E0FB",
+      "identity_ids": [
+        "IDENT-28C0A68E5312"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-829C76DB8F2E",
+      "identity_ids": [
+        "IDENT-4C1386AD9E0F"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-50F110045D95",
+      "identity_ids": [
+        "IDENT-051F7A38EFC3"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-7D9BC867F41F",
+      "identity_ids": [
+        "IDENT-8DF305A4F33B"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-534FCA4882A6",
+      "identity_ids": [
+        "IDENT-FB321527E8F5"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-712D929010E0",
+      "identity_ids": [
+        "IDENT-BABC0EF172D2"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-41311FE3F76D",
+      "identity_ids": [
+        "IDENT-D7226A7631D3"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-0B6C0E1133EF",
+      "appearance_id": "APP-873346F76810",
+      "identity_ids": [
+        "IDENT-6F98412BF44D"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "appearance_id": "APP-A3099A2F0CC8",
+      "identity_ids": [
+        "IDENT-FORD2014-AS13"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "appearance_id": "APP-511BC53E137E",
+      "identity_ids": [
+        "IDENT-FORD2014-DAV27"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "appearance_id": "APP-DBE55F1367B4",
+      "identity_ids": [
+        "IDENT-035BA4ABBE6D"
+      ],
+      "status": "awaiting_script_recovery",
+      "text_ids": [],
+      "review_statuses": {}
+    }
+  ],
+  "editorial_policy": "AI-assisted normalized working capture of Montgomery’s printed Hebrew-letter editions, visually compared with the held page images; partial source-page review, not a diplomatic text, full character collation, translation or specialist certification. Printed inscription line numbers retained; implicit opening line 1 supplied by the project. Physical page wrapping, word spacing and most typographic punctuation normalized. Printed square brackets remain source restorations, including cross-line restorations; ... normalizes source loss runs without asserting a lost-letter count. ⟦word?⟧ marks project capture doubt, distinct from a source restoration. Source inferior dots, Syriac upper diacritics/seyame, pointing, precise final-letter shapes and source punctuation are NOT exhaustively encoded or collated; the unchanged facsimiles control those details. Recognized Mandaic marked dalet is encoded as ד̄ (dalet plus U+0304), but exhaustive mark placement and consonants remain open. English captions, erasure/elided/sic annotations and Exterior are source editorial matter, not words of the incantation; an em dash explicitly separates a normalized editorial annotation. No.11 retains an apparently unpaired source bracket inside a marked project doubt without inventing its closing boundary. No readings supplied from neighboring witnesses or grammar. Nos.31–37 are source-classified Syriac and nos.38–40 Mandaic; the stored Hebrew-letter texts are TRANSLITERATIONS, not native Syriac/Mandaic-script recoveries. Montgomery explains this convention at printed p.11 / PDF p.17; original-script facsimile recovery remains separate. No public-release or personal-audit completion decision."
+}

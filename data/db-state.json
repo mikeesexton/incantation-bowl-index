@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "78466c67df04cb22c61d215f0a15bae3929efef1e226a347741bca38248950e6",
+  "corpus_digest": "84308ebcd2a6bb181d7c594b0ecc52c61281d4133f4e1eba648bf3e76bf8964c",
   "migrations": 19,
-  "note": "Twenty Montgomery original-script working transcriptions, exact source-page images, twenty current partial reviews and preserved correction history; import retry safeguard; no identity, translation, audit completion or release changes.",
-  "recorded_at": "2026-10-01T04:03:33+00:00",
+  "note": "Added 19 Montgomery working edition texts: 9 Hebrew-script transcriptions and 10 Hebrew-letter Syriac/Mandaic transliterations; 19 partial reviews and 24 source-page facsimiles. No identity, translation, personal audit or release changes.",
+  "recorded_at": "2026-10-01T10:30:10+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "61c09b4f158b0c4a16a4229031128f5ea3589a724d294df61cec26196ed3523e",
-      "rows": 1111
+      "digest": "8dc554eb40cdc0665ad5695a219250ca76e1c539e512a91d13248472a46b8abc",
+      "rows": 1135
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "1fc988fbce7f8a915a2a78cb41aa66bb37e689185d1844be2909322c6d40c9e6",
-      "rows": 723
+      "digest": "f8308da042d7b17ecdc94dccef9b8603ac255da7be519b92ec7cc6fb84ff399f",
+      "rows": 742
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "e087a203e40794231a2337013006057a11760100da92eca3b97f755bb6f33216",
-      "rows": 1374
+      "digest": "994d187d4db66b42165b490fe3c05529cb29492fecc7a8b4dd4f5969aed77c17",
+      "rows": 1393
     }
   }
 }

@@ -25,6 +25,53 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Original-script extraction continuation
+
+**Claimed:** TEXT-003 / TEXT-009 / TEXT-010 (Mike requested continued extraction)
+**Corpus:** changed (19 edition texts: nine Hebrew-script transcriptions and ten Hebrew-letter Syriac/Mandaic transliterations; 24 source-page media; 19 append-only partial reviews) — state digest `84308ebcd2a6`
+**Tests:** 357 Python and 44 Node tests pass; SQLite integrity/foreign keys pass; scoped table-delta and private/public projection checks pass; unchanged replays add no rows; Mike Access private build audit 7/7
+
+- Captured Montgomery nos. 3–9, 11, 19 and 31–40: 240 actual numbered anchors
+  and 21,493 characters. No. 7 uses only the CBS16007 left column across
+  PDF151–153; No. 11 uses only its left column across PDF174–176, excluding
+  Ellis1 and Lidzbarski5. No. 8’s continued last line, No. 9’s exterior and
+  No. 5’s figure-side lines are retained. No. 40 has anchors1–6 and12–26;
+  its source loss row for7–11 is preserved, not reconstructed or counted as
+  readable captured lines. No. 38 includes the short Exterior15.
+- Montgomery’s printed p.11/PDF17 explains its Hebrew-character rendering.
+  Nos.31–37 are source-classified Syriac and38–40 Mandaic, so these ten rows
+  are explicitly transliteration/scriptHebrew; they are not native Syriac or
+  Mandaic-script recoveries. All40 main appearances now have some working
+  edition text:30 Hebrew-script transcriptions including the unchanged AIT27
+  lines1–11 pilot, plus ten transliterations. All40 remain partial_review;
+  neither full physical inscriptions nor full character collation are claimed.
+- Retained restorations, cross-line brackets, normalized source losses,
+  recognized Mandaic marked dalet, magic-letter sequences and separate project
+  doubts. No.11’s apparently unpaired source bracket is flagged without an
+  invented closing boundary. Inferior dots, Syriac upper dots/seyame, exact
+  Mandaic mark placement, final letters and difficult formulas remain open.
+  No.19’s new text locator reports the actual CBS16018 edition heading while
+  its existing register appearance title remains unchanged; no identifier or
+  identity decision was inferred.
+- Applied public-domain enrichment and hash-bound partial-review manifests,
+  retaining all originals. Consistent pre-ingestion backup, raw OCR, crops,
+  initial keyed drafts, corrected drafts, hashes and screenshot remain ignored
+  and private. Replayed enrichment and review manifests with no duplicates.
+  Only texts/media/text_proofreading_reviews changed; translations, claims,
+  identity links, release ledgers and the personal-audit files are unchanged.
+  All19 new text payloads are withheld from public projection.
+- Built Mike Access locally with all1,393texts/1,135media,787local images and
+  63packaged captures; seven privacy checks passed. Refreshed the live reader
+  and verified Hebrew RTL display, Syriac transliteration labeling, exact
+  source locator and partly-proofread warning. No deployment or push.
+- Added second-batch report and content-free progress snapshot; previous
+  snapshots and frozen99-appearance worklist stay unchanged. Current frozen
+  coverage:29 native working transcriptions,10 Hebrew-letter transliterations,
+  60without either rendering;70still lack same-source native transcription.
+  Updated TEXT roadmap and regenerated enrichment/campaign/proofreading/cohort
+  reports. Next: precise source proofreading, native Syriac/Mandaic facsimiles,
+  and the60 other held-source edition gaps. No new translation generated.
+
 ## 2026-10-01 — Codex — First substantial original-script extraction batch
 
 **Claimed:** TEXT-003 / TEXT-009 / TEXT-010 / QA-004 (Mike-authorized held-source extraction and necessary import retry safeguard)
