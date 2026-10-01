@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Daily personal bowl audit
+
+**Claimed:** OPS (Mike-requested daily personal audit delivery)
+**Corpus:** unchanged — state digest `84308ebcd2a6`
+**Tests:** 357 Python tests pass; private localhost reader responds HTTP 200
+
+- Prepared batch 2 for October 1 from the saved order: five bowls, with stable numbers and fingerprints; delivery attempt recorded as reported. Prior five completed reviews remain counted. Four changed prior records opened separate recheck issues; nine operational issues are now open.
+- Verified the existing private reader and opened the first bowl in Codex. No reviews inferred, corpus writes, generated-report changes, deployment or push. The concurrent TEXT session's existing task-log claim is preserved and excluded from this commit.
+- Mike's explicit batch/bowl responses should be recorded against this presentation immediately; unfinished cards retain their place.
+
 ## 2026-10-01 — Codex — Original-script extraction continuation
 
 **Claimed:** TEXT-003 / TEXT-009 / TEXT-010 (Mike requested continued extraction)
