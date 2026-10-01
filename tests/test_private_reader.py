@@ -112,6 +112,31 @@ class PrivateReaderTests(unittest.TestCase):
                          f"/api/private-media/{media_id}.png")
         self.assertEqual(projection.gate_counts(tables["texts"])["media_local_derivative_rows"], 1)
 
+    def test_native_edition_facsimile_is_distinguished_privately_without_release(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        add_candidate(self.conn, {"source_id": source_id, "appearance": {"locator": "no. 1"},
+            "media": [{"media_type": "scan", "url": "https://example.org/native-edition.png",
+                       "rights_status": "copyrighted",
+                       "notes": "Original-script edition facsimile; no. 1, PDF p. 10."}]})
+        self.conn.commit()
+        private = PrivateResearchProjection(self.conn).table("media")
+        native = next(row for row in private if row["url"].endswith("native-edition.png"))
+        self.assertEqual(native["media_type"], "inscription_facsimile")
+        self.assertEqual(native["attribution"], "no. 1, PDF p. 10.")
+        self.assertEqual(Projection(self.conn).table("media"), [])
+
+    def test_standardized_nli_dimensions_retain_the_original_source_label(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        original = "Height 72 mm; source field ‘הקף’ 164 mm"
+        add_candidate(self.conn, {"source_id": source_id, "appearance": {"locator": "no. 1"},
+                                 "claims": [{"field": "dimensions", "value_text": original}]})
+        self.conn.commit()
+        row = next(row for row in PrivateResearchProjection(self.conn).table("facts")
+                   if row["field"] == "dimensions")
+        self.assertEqual(row["recorded_value"], original)
+        self.assertEqual(row["value"], "Height 7.2 cm · Catalogue circumference 16.4 cm (measurement convention unverified)")
+        self.assertEqual(self.conn.execute("SELECT value_text FROM claims WHERE field='dimensions'").fetchone()[0], original)
+
     def test_local_reader_links_registered_capture_without_exposing_its_path(self):
         source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
         archive = Path(self.temp.name) / "archive"

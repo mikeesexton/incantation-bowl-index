@@ -91,6 +91,22 @@ surface still needs private large-file delivery and Mike-only authentication;
 see the [source delivery roadmap](mike_access_source_delivery.md) and
 [content-coverage audit](../research/audits/mike_access_content_coverage_2026-09-28.md).
 
+English translations lead the reading room. The source-language translations
+remain expandable separately. Project English renderings of French or German
+translations are attributed drafts, not independent translations from the ancient
+inscription or scan-checked scholarly editions. Exact native-script edition
+facsimiles appear inside “Show original incantation” and are labelled as images,
+without claiming searchable transcription.
+
+Dimension presentation uses centimetres for fully parsed exact measurements,
+retains distinctions such as outside/opening diameter and height/depth, and names
+unspecified axes explicitly. NLI's `הקף` is translated literally as catalogue
+circumference with its measurement convention unverified; no diameter is inferred.
+Ranges, approximations and unparsed source reports remain intact. Original source
+values remain in the corpus and research details. Repeated provenance places are
+grouped with their distinct source roles and citations; dating evidence replaces
+the date in the entry header when that evidence block is present.
+
 ## Review safety
 
 The console is read-only except for explicit concordance decisions. A decision requires a written evidence note, updates the existing dedupe record, and appends a new `manual_ui_review` evidence row documenting the previous and new states. It never deletes or rewrites an object record. Review writes require a random token delivered only to the loaded local page.

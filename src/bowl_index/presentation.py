@@ -7,6 +7,63 @@ record.
 
 import json
 import re
+from decimal import Decimal
+
+
+def format_dimensions(value):
+    """Translate NLI's label without asserting its measurement convention.
+
+    Catalogue הקף literally means circumference. The dimensions remain a
+    catalogue report, and must not be treated as a verified circumference or
+    converted into a diameter. Original values stay in claims/recorded_value.
+    """
+    match = re.fullmatch(
+        r"Height\s+(\d+(?:\.\d+)?)\s+mm;\s+source field\s+[‘']הקף[’']\s+(\d+(?:\.\d+)?)\s+mm",
+        str(value or "").strip(), re.I,
+    )
+    def centimetres(amount, unit):
+        multiplier = Decimal("0.1") if unit.lower() == "mm" else (
+            Decimal(1) if unit.lower() == "cm" else Decimal("2.54"))
+        number = format(Decimal(amount) * multiplier, "f")
+        return number.rstrip("0").rstrip(".") if "." in number else number
+
+    if match:
+        height, circumference = (centimetres(amount, "mm") for amount in match.groups())
+        return (f"Height {height} cm · Catalogue circumference {circumference} cm "
+                "(measurement convention unverified)")
+    text = str(value or "").strip()
+    # Only normalize fully labelled exact measurements. Qualifiers, ranges and
+    # other prose fail closed, preserving the entire source report.
+    roles = ("outside diameter|inside diameter|opening diameter|rim diameter|base diameter|"
+             "maximum width|diameter|height|depth|width|circumference")
+    amount = r"\d+(?:\.\d+)?"
+    unit = r"cm|mm|in(?:ches)?|inch"
+    found = {}
+    for part in re.split(r"\s*[;·×]\s*", text):
+        forward = re.fullmatch(fr"({roles})\s*:?\s*({amount})\s*({unit})\.?", part, re.I)
+        backward = re.fullmatch(fr"({amount})\s*({unit})\s*({roles})\.?", part, re.I)
+        if not forward and not backward:
+            found = {}
+            break
+        role, number, units = forward.groups() if forward else (
+            backward[3], backward[1], backward[2])
+        role = role.lower()
+        converted = centimetres(number, units)
+        if role in found and found[role] != converted:
+            return value
+        found[role] = converted
+    if found:
+        order = ["diameter", "outside diameter", "inside diameter", "opening diameter",
+                 "rim diameter", "base diameter", "maximum width", "width", "height",
+                 "depth", "circumference"]
+        return " · ".join(f"{role.capitalize()} {number} cm" for role, number in
+                          sorted(found.items(), key=lambda item: order.index(item[0])))
+    unlabelled = re.fullmatch(fr"({amount}(?:\s*[x×]\s*{amount})*)\s*({unit})\.?", text, re.I)
+    if unlabelled:
+        numbers = re.split(r"\s*[x×]\s*", unlabelled[1])
+        label = "Measurements (axes unspecified)" if len(numbers) > 1 else "Measurement (axis unspecified)"
+        return label + " " + " × ".join(centimetres(number, unlabelled[2]) for number in numbers) + " cm"
+    return value
 
 
 _LABEL_NOISE = re.compile(
@@ -348,22 +405,21 @@ def language_name(claims):
     """Prefer explicit evidence, but present it through the controlled vocabulary."""
     precedence = ("inscription_language", "script_or_language", "catalogue_language_codes")
     for field in precedence:
-        values = []
+        labels = []
         for claim in claims:
             if claim.get("field") != field:
                 continue
             value = (claim.get("normalized_value") or claim.get("value_text") or
                      claim.get("value_json") or "").strip()
-            if value and value not in values:
-                values.append(value)
-        if values:
-            labels = []
-            for value in values:
-                for label in language_facets(value):
-                    if label not in labels:
-                        labels.append(label)
-            if labels:
-                return " / ".join(labels)
+            qualifier = ("Possibly " if re.search(r"\bpossibl[ey]\b", value, re.I) else
+                         "Probably " if re.search(r"\bprobabl[ey]\b", value, re.I) else
+                         "Uncertain " if claim.get("certainty") == "uncertain" or "?" in value else "")
+            for label in language_facets(value):
+                label = qualifier + label
+                if label not in labels:
+                    labels.append(label)
+        if labels:
+            return " / ".join(labels)
     return "Language not recorded"
 
 

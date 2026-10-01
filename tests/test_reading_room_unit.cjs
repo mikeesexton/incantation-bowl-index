@@ -213,6 +213,29 @@ test("a translation leads and the Aramaic transcription is expandable", () => {
   assert.match(html, /Research summary/);
 });
 
+test("English leads while source-language translations stay available separately", () => {
+  const html = textSections([
+    {text_type: "translation", language: "French", content: "Au nom de la Vie"},
+    {text_type: "translation", language: "English", content: "In the name of Life",
+      editor: "Incantation Bowl Index — English rendering of Henri Pognon’s French translation (draft)"},
+  ]);
+  assert.ok(html.indexOf("In the name of Life") < html.indexOf("Source-language translations"));
+  assert.ok(html.indexOf("Au nom de la Vie") > html.indexOf("Source-language translations"));
+  assert.match(html, /Draft; not an independent translation from the inscription/);
+  assert.match(textSections([{text_type: "translation", language: "German", content: "In deinem Namen"}]),
+    /No English translation is available/);
+});
+
+test("original-script facsimiles are shown before whole source pages and labelled accurately", () => {
+  const html = textSections([], [
+    {media_type: "scan", url: "/api/private-media/FULL.png"},
+    {media_type: "inscription_facsimile", url: "/api/private-media/NATIVE.png"},
+  ]);
+  assert.ok(html.indexOf("NATIVE.png") < html.indexOf("FULL.png"));
+  assert.match(html, /Original-script edition text · facsimile/);
+  assert.match(html, /Not a searchable transcription/);
+});
+
 test("commentary never substitutes for the translation and empty originals are explicit", () => {
   const html = textSections([{text_type: "summary", content: "A catalogue description."}]);
   const translation = html.slice(0, html.indexOf("Research summary and commentary"));

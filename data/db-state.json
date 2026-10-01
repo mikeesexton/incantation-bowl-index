@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "84308ebcd2a6bb181d7c594b0ecc52c61281d4133f4e1eba648bf3e76bf8964c",
+  "corpus_digest": "dbd532dc2c5b9ee95c84f5dcd4a62cccd6535e1a785f66c393e655e0ec07d16d",
   "migrations": 19,
-  "note": "Delivered batch 2 personal audit; corpus unchanged",
-  "recorded_at": "2026-10-01T10:46:16+00:00",
+  "note": "Batch 2 audit fixes: 40 private English rendering drafts, two native Mandaic edition facsimiles, seven Penn claims and one card line; dimensions and repeated details standardized in reader; all original rows retained.",
+  "recorded_at": "2026-10-01T11:08:54+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -35,8 +35,8 @@
       "rows": 143
     },
     "claims": {
-      "digest": "cf86ecf3eaf9df26d053a5724a37d404cdbcfd504f7fc3e9a058c760f1fa7a45",
-      "rows": 9032
+      "digest": "ce7227f8fcc7ec70dc027867bc6c07cd07a2fee8814b0826d249e54e2ab2c510",
+      "rows": 9039
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -67,16 +67,16 @@
       "rows": 4992
     },
     "leads": {
-      "digest": "96934e3e54473093c62f96bc0e574b03574f0991b9b36d43445895a3de635ab6",
-      "rows": 80
+      "digest": "6681d49dbb6ae876dd1a3ff09e609cc4a866e4788beec1cefaed626959ecbfc4",
+      "rows": 81
     },
     "manual_audits": {
       "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64",
       "rows": 14
     },
     "media": {
-      "digest": "8dc554eb40cdc0665ad5695a219250ca76e1c539e512a91d13248472a46b8abc",
-      "rows": 1135
+      "digest": "d6884f99ce497a2d66bcbee6c65ac1b7a1b729e3a81a2c5e8de23d004aa2211e",
+      "rows": 1137
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -151,8 +151,8 @@
       "rows": 310
     },
     "texts": {
-      "digest": "994d187d4db66b42165b490fe3c05529cb29492fecc7a8b4dd4f5969aed77c17",
-      "rows": 1393
+      "digest": "044d5a78ee13aba2ddfc4884866ee7bd65627550b0196d2811fdf00fe13fc9b1",
+      "rows": 1434
     }
   }
 }

@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 
 const source = fs.readFileSync("web/reading.js", "utf8");
-const grouping = source.slice(source.indexOf("const tidy"), source.indexOf("function journeySection"));
+const grouping = source.slice(source.indexOf("const tidy"), source.indexOf("function sourcesSection"));
 const identifiers = source.slice(source.indexOf("function identifierRank"), source.indexOf("function renderObject"));
 const context = vm.createContext({});
 vm.runInContext(`
@@ -14,9 +14,9 @@ vm.runInContext(`
   ${grouping}
   ${identifiers}
   ${source.slice(source.indexOf("function sourcesSection"), source.indexOf("function identifierRank"))}
-  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection};
+  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence};
 `, context);
-const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection} = context.T;
+const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence} = context.T;
 
 test("equivalent date and measurement wording becomes one display value", () => {
   data.factsBy.ID = [
@@ -24,7 +24,7 @@ test("equivalent date and measurement wording becomes one display value", () => 
       source_id: "SRC", locator: "pp. 323–336, bowl AC-MSEF"},
     {field_group: "dating", value: "c. 6th century CE", recorded_value: "c. 6th century CE",
       source_id: "SRC", locator: "pp. 323–336; AC-MSEF"},
-    {field_group: "dimensions", value: "Opening diameter 15 cm; depth 5.6 cm",
+    {field_group: "dimensions", value: "Diameter 150 mm; depth 56 mm",
       source_id: "SRC", locator: "p. 323"},
     {field_group: "dimensions", value: "15 cm diameter × 5.6 cm depth",
       source_id: "SRC", locator: "p. 323"},
@@ -37,6 +37,39 @@ test("equivalent date and measurement wording becomes one display value", () => 
   const dimensions = groupedFacts("ID", "dimensions");
   assert.equal(dimensions.length, 1);
   assert.equal(dimensions[0].display, "Diameter 15 cm · Depth 5.6 cm");
+});
+
+test("measurement conventions and unparsed qualifications cannot collapse", () => {
+  data.factsBy.ID = [
+    "Diameter 15 cm; height 5 cm", "Outside diameter 150 mm; height 50 mm",
+    "Opening diameter 15 cm; height 5 cm", "Approximately diameter 15 cm; height 5 cm",
+    "Diameter 15 cm; height 5 cm; base 8 cm", "Diameter 15–16 cm; height 5 cm",
+  ].map(value => ({field_group: "dimensions", value}));
+  const values = groupedFacts("ID", "dimensions");
+  assert.equal(values.length, 6);
+  assert.match(values[1].display, /^Outside diameter 15 cm/);
+  assert.match(values[2].display, /^Opening diameter 15 cm/);
+  assert.match(values[3].display, /Approximately/);
+  assert.match(values[4].display, /base 8 cm/);
+  assert.match(values[5].display, /15–16/);
+});
+
+test("repeated place reports show one place while retaining both roles and all sources", () => {
+  data.factsBy.ID = [
+    {field_group: "provenance", field: "findspot", value: "Found/Acquired: Iraq, South",
+      source_id: "SRC", locator: "Related objects: 1980-0415-19", certainty: "reported"},
+    {field_group: "provenance", field: "production_place", value: "Made in: Iraq, South",
+      source_id: "SRC", locator: "Related objects: 1980-0415-19", certainty: "reported"},
+    {field_group: "provenance", field: "production_place", value: "Iraq, South",
+      source_id: "OTHER", locator: "p. 4", certainty: "reported"},
+  ];
+  const html = journeySection("ID");
+  assert.equal((html.match(/Iraq, South/g) || []).length, 1);
+  assert.match(html, /Find or acquisition place · Reported production place/);
+  assert.equal((html.match(/Related objects: 1980-0415-19/g) || []).length, 1);
+  assert.match(html, /p. 4/);
+  data.factsBy.ID.push({field_group: "provenance", field: "findspot", value: "Iraq, South", certainty: "uncertain"});
+  assert.equal((journeySection("ID").match(/Iraq, South/g) || []).length, 2);
 });
 
 test("genuinely different dates remain separate", () => {

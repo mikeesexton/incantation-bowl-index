@@ -1,0 +1,33 @@
+{
+  "source_id": "SRC-E7D5F020B31C",
+  "capture_id": "CAP-EED4A3FE59EC",
+  "capture_sha256": "667521b689e12947f7911d9542b7fc0e57bee1179f0c057ec7d59de7ee5ed44a",
+  "private_manifest_sha256": "eb20d753323f726de4356612761994f49d2dcf685ebd4fc7bbfded38baf6c53a",
+  "derivatives": [
+    {
+      "printed_page": 41,
+      "pdf_page": 52,
+      "crop_xywh_at_scale_to_2400": [
+        225,
+        1680,
+        1050,
+        270
+      ],
+      "png_sha256": "61e35b53eeb1fc72f8287dbafa2d2bf2e15c4e5e3ce770bdb88d3157d2bd86a4",
+      "media_id": "MED-9D220BE29C50"
+    },
+    {
+      "printed_page": 42,
+      "pdf_page": 53,
+      "crop_xywh_at_scale_to_2400": [
+        375,
+        250,
+        1010,
+        1010
+      ],
+      "png_sha256": "3d0c60305a90a4aaed48b03f85c9d58b06b5640836a33cfe44d72b2beed7686b",
+      "media_id": "MED-C4D935F4633B"
+    }
+  ],
+  "policy": "Two visually inspected exact native-Mandaic edition-text facsimiles, private display. No searchable transcription, independent reading, proofreading or public-reuse decision."
+}

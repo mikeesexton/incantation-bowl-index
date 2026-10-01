@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 from .db import PROJECT_ROOT, db_path
 from .identity import CORE_ORDER, identity_rows
 from .proofreading import current_text_reviews
+from .presentation import format_dimensions
 from .state import compare_state
 
 
@@ -220,9 +221,12 @@ class Evidence:
             if claim["field"] not in preferred or claim["id"] in superseded:
                 continue
             source = self.sources.get(claim["source_id"], {})
+            value = (claim.get("value_text") or claim.get("value_json") or
+                     claim.get("normalized_value") or "")[:240]
+            if claim["field"] == "dimensions":
+                value = format_dimensions(value)
             facts.append({"claim_id": claim["id"], "field": claim["field"],
-                          "value": (claim.get("value_text") or claim.get("value_json") or
-                                    claim.get("normalized_value") or "")[:240],
+                          "value": value,
                           "certainty": claim.get("certainty"),
                           "citation": source.get("citation") or source.get("title"),
                           "source_url": source.get("url"), "locator": claim.get("locator")})

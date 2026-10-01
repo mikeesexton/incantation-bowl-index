@@ -1,9 +1,9 @@
 {
   "generated_from": "data/private/ibi.sqlite3 (read-only)",
-  "corpus_objects": 1958,
-  "objects_with_findspot_claim": 235,
-  "objects_with_located_findspot": 150,
-  "objects_with_no_findspot_claim": 1723,
+  "corpus_objects": 2059,
+  "objects_with_findspot_claim": 236,
+  "objects_with_located_findspot": 151,
+  "objects_with_no_findspot_claim": 1823,
   "ambiguous_objects": [
     "IBI-0F8B15FDC9FA",
     "IBI-6AB1C3C19294",
@@ -14,7 +14,7 @@
   "tier_totals": {
     "excavation_stratified": 8,
     "excavation_reported": 47,
-    "site_reported": 83,
+    "site_reported": 84,
     "acquisition_site": 12,
     "region_only": 53,
     "unlocated": 32
@@ -28,10 +28,10 @@
       "lon": 45.2306,
       "modern": "Iraq",
       "note": null,
-      "objects": 72,
+      "objects": 73,
       "by_tier": {
         "excavation_stratified": 6,
-        "site_reported": 66
+        "site_reported": 67
       },
       "best_tier": "excavation_stratified",
       "object_ids": [
@@ -53,6 +53,7 @@
         "IBI-49D1BAB76E01",
         "IBI-4A2F6AC1F208",
         "IBI-527704D6B074",
+        "IBI-5344FF63115C",
         "IBI-5430A0855D0E",
         "IBI-544ABA7B7DAA",
         "IBI-5B1343517775",
@@ -1548,6 +1549,17 @@
         "source": "Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire",
         "source_type": "book",
         "source_year": 1898
+      }
+    ],
+    "IBI-5344FF63115C": [
+      {
+        "value": "Nippur, Iraq (museum-reported provenience)",
+        "tier": "site_reported",
+        "certainty": "reported",
+        "locator": "Penn object 151160 (B16038), Details: Provenience; web-visible catalogue checked 2026-10-01",
+        "source": "Hebrew Bowl B16038",
+        "source_type": "museum_record",
+        "source_year": null
       }
     ],
     "IBI-5430A0855D0E": [

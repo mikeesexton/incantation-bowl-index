@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-01T10:27:22+00:00`
+Generated: `2026-10-01T11:08:53+00:00`
 
 ## Corpus
 
@@ -14,11 +14,11 @@ Generated: `2026-10-01T10:27:22+00:00`
 - Source appearances: **2360**
 - Sources: **954**
 - Dedupe clusters pending: **0**
-- Objects with text: **771**
+- Objects with text: **772**
 - Objects with translation: **388**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **26**
+- Open leads: **27**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -165,6 +165,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | open | 2 | Penn B2970 (object 79917): obtain any inscription edition or curatorial documentation; current museum bibliography is empty, but the object has 13 reported interior lines and two images. |
 | open | 2 | Acquire Geller, Four Aramaic Incantation Bowls, The Bible World (1980), pp. 47–60, and check bowl D against index designation GelD; establish museum accession and location without guessing a concordance. |
 | open | 2 | Berlin VA.2451: seek later publication, legible imaging or curatorial documentation after the 2018 catalogue's dated unpublished and nearly-illegible reports. |
+| open | 2 | Locate an edition or additional documentation for Penn B16038 (object 151160). The web-visible catalogue checked 2026-10-01 lists no bibliography; targeted searches for B16038 with bowl, incantation, Montgomery and Nippur found its museum record but no new edition. This is a dated search disposition, not a global no-known-edition finding. The page lists five image views; only the pre-existing primary thumbnail is currently recorded in the corpus. |
 | blocked | 2 | Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access. |
 | blocked | 2 | Obtain authorized full-text access to Faraj 2023 to capture the edition, translation, dimensions, provenance details, and imagery for IM 77781. |
 | blocked | 2 | Obtain LMU Archaeology Museum accession numbers and item-level provenance, dimensions, scripts, texts, translations, images, and 3D records for the four-bowl project. |

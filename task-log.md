@@ -25,6 +25,21 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Batch 2 personal audit corrections
+
+**Claimed:** OPS (Mike-requested audit corrections and source checks)
+**Corpus:** changed (40 English rendering drafts, one Penn summary, seven Penn claims, two original-script edition facsimiles and one follow-up lead) — state digest `dbd532dc2c5b`
+**Tests:** 364 Python and 48 Node tests pass; SQLite integrity/foreign keys and exact scoped additions pass; unchanged candidate replays add no rows; Mike Access build audit 7/7; live five-card reader checks and saved screenshot pass
+
+- Recorded all five explicit batch 2 follow-up reviews against their presentation fingerprints: ten total reviews completed. Follow-up issues remain open for Mike's resolution; no review or resolution inferred.
+- Audited all 632 dimension claims: standardized 576 display values, including 203 NLI catalogue circumference reports whose measurement convention remains unverified and 206 reports with unnamed axes. Preserve all original values, role distinctions, ranges and uncertainties; infer no diameter. The two NLI cards show height/circumference in cm with the convention warning.
+- Checked all 1,711 identity views for repeated journey reports; combined repeats on 34 while retaining distinct roles, certainty and every citation. Dates appear once in the dating section. Applied the reader fixes universally, including BM 127398.
+- English translations lead the reader. Added private draft English renderings of all 40 stored French/German translation passages lacking an English counterpart, with source hashes, page boundaries, doubts, gaps and non-Latin formula tokens retained. Source-language texts remain available; neither independent ancient-language translation, source proofreading nor public approval is claimed.
+- Visually extracted Pognon no. 14's native Mandaic edition text from printed pp. 41–42/PDF52–53 into two exact crops, labelled facsimiles with page citations. Original PDF and whole-page images remain. Searchable transcription requires manual collation; no corrupt OCR was promoted to text.
+- Penn B16038 gained museum-reported Nippur, eleven fragments, 12–13 lines, circular layout/demon/rim line and Ida Hilprecht/1900 expedition credit. Preserve possibly Aramaic in the heading. A dated edition-search lead records the negative search and the catalogue's five image views; no manufacture date or excavation confirmation inferred.
+- Consistent pre-ingest backup and private manifests/payloads, source snapshots, crops and screenshot remain ignored under data/private. Content-free receipts and Penn manifests are tracked. All pre-existing rows are unchanged. Candidate replays add no rows; replaying the lead refreshes only its own importer timestamp. Regenerated corpus/geo reports and the local complete Mike Access build, restarted the private reader, and recorded state. No deployment or push. Concurrent TEXT session claim preserved and excluded from this commit.
+- Next: source-page/specialist checking of English rendering drafts, manual native-Mandaic transcription/collation if requested, and continued lead/measurement-convention research. Leave Mike's follow-ups open pending his own resolution.
+
 ## 2026-10-01 — Codex — Daily personal bowl audit
 
 **Claimed:** OPS (Mike-requested daily personal audit delivery)

@@ -304,7 +304,9 @@
   const ORIGINAL_TEXT_TYPES = new Set(["inscription", "transcription", "transliteration", "incipit"]);
 
   function textCredit(item) {
-    const reviewNote = privateResearch() && item.editorial_status === "partial_review"
+    const reviewNote = /Incantation Bowl Index.*English rendering/i.test(item.editor || "")
+      ? "Project English rendering of the source-language translation. Draft; not an independent translation from the inscription."
+      : privateResearch() && item.editorial_status === "partial_review"
       ? "Working text · partly proofread. Full source-page proofreading remains open."
       : privateResearch() && item.editorial_status === "not_checked"
         ? "Source-page proofreading is not recorded for this text." : "";
@@ -322,33 +324,43 @@
   }
 
   function originalPage(item) {
+    const native = item.media_type === "inscription_facsimile";
     const image = embeddableImage(item.url)
       ? `<a href="${esc(item.url)}" rel="noreferrer"><img class="original-page" src="${esc(item.url)}"
-          alt="Published source page" loading="lazy" decoding="async"></a>`
+          alt="${native ? "Original-script edition text" : "Published source page"}" loading="lazy" decoding="async"></a>`
       : `<a href="${esc(item.url)}" rel="noreferrer">Open the published original text</a>`;
-    return `<figure class="original-facsimile">${image}<figcaption>Published source page · facsimile.
+    return `<figure class="original-facsimile">${image}<figcaption>${native
+      ? "Original-script edition text · facsimile. Not a searchable transcription."
+      : "Published source page · facsimile."}
       ${esc(item.attribution || "")}${item.attribution ? " · " : ""}${esc(mediaRightsLabel(item))}
       ${licenceLink(item)}</figcaption></figure>`;
   }
 
   function textSections(rows, sourcePages = []) {
     const translations = rows.filter(item => item.text_type === "translation");
+    const english = translations.filter(item => /^(?:English|en)$/i.test(item.language || ""));
+    const sourceTranslations = translations.filter(item => !english.includes(item));
+    const translation = item => `<div class="translated-reading">
+      <h3>Translation${item.language ? " · " + esc(item.language) : ""}</h3>
+      <blockquote dir="auto" lang="${/^(?:English|en)$/i.test(item.language || "") ? "en" : ""}">${esc(item.content)}</blockquote>
+      ${textCredit(item)}</div>`;
     const originals = rows.filter(item => ORIGINAL_TEXT_TYPES.has(item.text_type));
     const summaries = rows.filter(item => item.text_type === "summary");
     const other = rows.filter(item => item.text_type !== "translation"
       && item.text_type !== "summary" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
     const sections = [`<section class="entry-block entry-text"><h2>What it says</h2>
-      ${translations.length ? translations.map(item => `<div class="translated-reading">
-        <h3>Translation${item.language ? " · " + esc(item.language) : ""}</h3>
-        <blockquote dir="auto" lang="${item.language === "English" ? "en" : ""}">${esc(item.content)}</blockquote>
-        ${textCredit(item)}</div>`).join("")
-      : `<p class="entry-note">No translation is available to read here. Consult the sources below for further documentation.</p>`}
+      ${english.length ? english.map(translation).join("")
+      : `<p class="entry-note">${translations.length ? "No English translation is available to read here. The source-language translation is retained below."
+        : "No translation is available to read here. Consult the sources below for further documentation."}</p>`}
+      ${sourceTranslations.length ? `<details class="entry-source-translations"><summary>Source-language translations · ${[...new Set(sourceTranslations.map(item => item.language || "Language not recorded"))].map(esc).join(", ")}</summary>${sourceTranslations.map(translation).join("")}</details>` : ""}
       <details class="entry-original"><summary>Show original incantation</summary>
         ${originals.length ? originals.map(originalText).join("")
           : `<p class="entry-note">No transcription or transliteration is stored for this bowl.${sourcePages.length
             ? " Recorded source pages are available below." : " Consult the sources below for any published original text."}</p>`}
         ${sourcePages.length ? `<h3>Recorded source pages</h3><p class="entry-note">These facsimiles may include original text, translations, commentary or photographs.</p>` : ""}
-        ${sourcePages.filter(item => item.url && embeddableImage(item.url)).map(originalPage).join("")}
+        ${sourcePages.filter(item => item.url && embeddableImage(item.url))
+          .sort((a, b) => Number(b.media_type === "inscription_facsimile") - Number(a.media_type === "inscription_facsimile"))
+          .map(originalPage).join("")}
       </details></section>`];
     if (summaries.length) {
       const body = summaries.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
@@ -631,33 +643,27 @@
 
   function measurementValue(value) {
     const text = tidy(value);
+    // Consume the whole report. A partial regex match used to lose "outside",
+    // approximation, ranges and unparsed measurements, falsely equating them.
+    const roles = "outside diameter|opening diameter|maximum width|diameter|height|depth|width|circumference";
+    const piece = new RegExp(`^(${roles})\\s*:?\\s*(\\d+(?:\\.\\d+)?)\\s*(cm|mm|in(?:ches)?|inch)\\.?$`, "i");
+    const reversed = new RegExp(`^(\\d+(?:\\.\\d+)?)\\s*(cm|mm|in(?:ches)?|inch)\\s*(${roles})\\.?$`, "i");
     const found = new Map();
-    const add = (role, amount, unit) => {
-      role = role.toLowerCase().replace(/^opening\s+/, "");
-      const millimetres = Number(amount) * (unit.toLowerCase() === "cm" ? 10 : 1);
-      const prior = found.get(role);
-      if (prior !== undefined && Math.abs(prior - millimetres) > .0001) return false;
-      found.set(role, millimetres);
-      return true;
-    };
-    const patterns = [
-      /(opening diameter|diameter|height|depth)\s*(\d+(?:\.\d+)?)\s*(cm|mm)\b/gi,
-      /(\d+(?:\.\d+)?)\s*(cm|mm)\s*(opening diameter|diameter|height|depth)\b/gi,
-    ];
-    let valid = true;
-    for (const [index, pattern] of patterns.entries()) {
-      for (const match of text.matchAll(pattern)) {
-        valid = index === 0 ? add(match[1], match[2], match[3]) && valid
-          : add(match[3], match[1], match[2]) && valid;
-      }
+    for (const part of text.split(/\s*[;·×]\s*/)) {
+      const forward = part.match(piece), backward = part.match(reversed);
+      if (!forward && !backward) return null;
+      const [role, amount, unit] = forward ? forward.slice(1) : [backward[3], backward[1], backward[2]];
+      const key = role.toLowerCase();
+      const cm = Number(amount) * (/^mm$/i.test(unit) ? .1 : /^cm$/i.test(unit) ? 1 : 2.54);
+      if (found.has(key) && Math.abs(found.get(key) - cm) > .00001) return null;
+      found.set(key, cm);
     }
-    if (!valid || found.size < 2) return null;
-    const order = ["diameter", "height", "depth"];
-    const roles = [...found].sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
-    const number = mm => Number((mm / 10).toFixed(3)).toString();
+    if (!found.size) return null;
+    const order = ["diameter", "outside diameter", "opening diameter", "maximum width", "width", "height", "depth", "circumference"];
+    const measures = [...found].sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
     return {
-      key: "measure:" + [...found].sort().map(([role, mm]) => `${role}:${mm.toFixed(3)}`).join("|"),
-      display: roles.map(([role, mm]) => `${role[0].toUpperCase() + role.slice(1)} ${number(mm)} cm`).join(" · "),
+      key: "measure:" + [...found].sort().map(([role, cm]) => `${role}:${cm.toFixed(6)}`).join("|"),
+      display: measures.map(([role, cm]) => `${role[0].toUpperCase() + role.slice(1)} ${Number(cm.toFixed(6))} cm`).join(" · "),
     };
   }
 
@@ -774,16 +780,26 @@
   function journeySection(id) {
     const rows = factsOf(id, "provenance");
     if (!rows.length) return "";
-    const labels = {findspot: "Findspot", excavation_context: "Excavation context",
+    const labels = {findspot: "Reported findspot", excavation_context: "Excavation context",
       origin: "Reported origin", findspot_or_origin: "Reported findspot or origin",
       collection_history: "Collection history", provenance: "Provenance report",
-      provenance_summary: "Provenance report", production_place: "Production place",
+      provenance_summary: "Provenance report", production_place: "Reported production place",
       current_location: "Current collection", current_or_reported_collection: "Reported collection"};
-    return `<section class="entry-block"><h2>Its journey</h2><ul class="fact-list">${rows.map(r => {
-      const source = data.sourceById[r.source_id];
-      const cite = source ? [source.authors || source.title, source.issued_year, r.locator].filter(Boolean).join(" · ") : r.locator;
-      return `<li><span><small>${esc(labels[r.field] || r.field.replaceAll("_", " "))}</small>${esc(r.value)}</span>
-        ${cite ? `<cite>${esc(cite)}</cite>` : ""}</li>`;
+    const grouped = new Map();
+    rows.forEach(row => {
+      const value = tidy(row.value).replace(/^(?:Made in|Found\/Acquired):\s*/i, "");
+      const label = row.field === "findspot" && /^Found\/Acquired:/i.test(tidy(row.value))
+        ? "Find or acquisition place" : labels[row.field] || row.field.replaceAll("_", " ");
+      const key = `${value.toLowerCase()}|${row.certainty || ""}`;
+      if (!grouped.has(key)) grouped.set(key, {value, labels: new Set(), reports: []});
+      const item = grouped.get(key);
+      item.labels.add(label);
+      item.reports.push(row);
+    });
+    return `<section class="entry-block"><h2>Its journey</h2><ul class="fact-list">${[...grouped.values()].map(item => {
+      const citations = citationsFor(item.reports);
+      return `<li><span><small>${[...item.labels].map(esc).join(" · ")}</small>${esc(item.value)}</span>
+        ${citations.length ? `<cite>${citations.map(esc).join("; ")}</cite>` : ""}</li>`;
     }).join("")}</ul></section>`;
   }
 
@@ -925,7 +941,7 @@
         <div>
           <h1 id="explore-title">${titleMarkup(cluster)}</h1>
           ${overview ? `<p class="entry-standfirst">${esc(overview)}</p>` : ""}
-          <p class="entry-meta">${[cluster.display_date, cluster.display_language, cluster.display_collection]
+          <p class="entry-meta">${[datingEvidence(id) ? "" : cluster.display_date, cluster.display_language, cluster.display_collection]
             .filter(Boolean).map(esc).join(" · ")}</p>
           ${cautions.map(value => `<p class="entry-object-caution">${esc(value.replaceAll("_", " "))}</p>`).join("")}
         </div>
@@ -933,7 +949,7 @@
 
       ${mediaGallery(cluster)}
 
-      ${textSections(readable, (data.mediaBy[id] || []).filter(item => item.media_type === "scan" && embeddableImage(item.url)))}
+      ${textSections(readable, (data.mediaBy[id] || []).filter(item => ["scan", "inscription_facsimile"].includes(item.media_type) && embeddableImage(item.url)))}
 
       ${withheld.length ? `<section class="entry-block">
         <h2>Texts to consult in the sources</h2>

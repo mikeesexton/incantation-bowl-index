@@ -86,19 +86,30 @@ class PrivateResearchProjection(Projection):
             review = self.reviews.get(media_id) or {}
             approved = review.get("public_reuse_decision") == "approved"
             local_derivative = self.media_root / (media_id + ".png")
+            notes = evidence.get("notes") or ""
+            native_facsimile = evidence["media_type"] == "scan" and notes.startswith(
+                "Original-script edition facsimile;"
+            )
+            source_attribution = evidence.get("source_title") or evidence.get("source_url")
+            if native_facsimile:
+                source_attribution = notes.split(";", 1)[1].split(" Crop from registered capture", 1)[0].strip()
             rows.append({
                 "id": evidence["id"],
                 "object_id": evidence["object_id"],
                 "appearance_id": evidence["appearance_id"],
                 "source_id": evidence["source_id"],
-                "media_type": evidence["media_type"],
+                "media_type": (
+                    "inscription_facsimile"
+                    if native_facsimile
+                    else evidence["media_type"]
+                ),
                 "url": (
                     "/api/private-media/" + media_id + ".png"
                     if local_derivative.is_file() else evidence["url"]
                 ),
                 "attribution": (
                     review.get("attribution") if approved
-                    else evidence.get("source_title") or evidence.get("source_url")
+                    else source_attribution
                 ),
                 "rights_status": evidence["rights_status"],
                 "rights_statement": (
