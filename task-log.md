@@ -25,6 +25,33 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — Held original-script backlog count
+
+**Claimed:** TEXT-009 (Mike-requested count of original-script extraction opportunities in existing holdings)
+**Corpus:** unchanged — state digest `1019bddd6715`
+**Tests:** 354 Python tests pass; worklist assertions verify 99 unique appearance IDs, held PDF for each source, existing links and absence of same-source transcription; all queries read-only
+
+- Reconcile held-source audit dispositions with current structured text rows;
+  count a conservative source-appearance worklist separately from catalogue
+  mentions, Latin-only editions and distinct bowl identities.
+- Saved `research/audits/original_script_backlog_2026-09-30.json`: 39 remaining
+  Montgomery main entries, 31 Pognon Mandaic sections, four Jena Mandaic entries,
+  15 Gordon editions across three articles, six Ellis sections, one Stübe edition
+  and three Ford 2014 edition/revision blocks. These 99 appearance targets map to
+  99 existing database identity groups; 98 lack any native-script transcription
+  row and one has a row from another source. Existing identity groups are not a
+  claim of independently established physical distinctness; script presence does
+  not establish full-text completeness.
+- This is a conservative recovery/check worklist, not 99 guaranteed complete
+  readable inscriptions or an exhaustive count. Damaged and abridged printed
+  extents need item checks. Further articles, Wohlstein, Schwab, excerpts and
+  appendix editions remain uncounted. The raw inventory's 629 apparent gaps
+  across 855 appearances in 43 PDF-linked sources include contextual references
+  and cannot be treated as missing inscription editions. No corpus ingestion,
+  identity reconciliation, new extraction, source acquisition or release decision.
+- Kept generated enrichment/roadmap outputs unchanged because their corpus and
+  roadmap inputs did not change. No push, deployment or outgoing communication.
+
 ## 2026-09-30 — Codex — Original-script extraction roadmap and AIT27 pilot
 
 **Claimed:** TEXT-003 / TEXT-004 / TEXT-009 / TEXT-010 / QA-004 (Mike-requested original-script extraction, roadmap expansion and reader verification)

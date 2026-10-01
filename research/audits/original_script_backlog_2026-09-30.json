@@ -1,0 +1,1087 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-01T03:36:44.337360+00:00",
+  "corpus_digest": "1019bddd67151a6cd11f6eaea863e1e5091d9a06c46e45f20f98fdafc35b0984",
+  "scope": "Conservative original-script recovery/check worklist from held editions; includes Mandaic. Counts source appearances, not distinct physical bowls, and does not guarantee full readable texts or exhaustive coverage. No protected payload.",
+  "evidence": [
+    "research/audits/held_pdf_content_extraction_2026-09-28.md",
+    "research/audits/original_script_extraction_2026-09-30.md",
+    "Current read-only source, appearance, text and existing identity-group queries"
+  ],
+  "totals": {
+    "target_appearances": 99,
+    "held_sources": 9,
+    "existing_identity_groups": 99,
+    "identity_groups_with_native_transcription_from_another_source": 1,
+    "identity_groups_without_any_native_transcription_row": 98,
+    "all_pdf_linked_sources": 43,
+    "all_pdf_source_appearances": 855,
+    "all_pdf_source_appearances_without_source_transcription_NOT_edition_denominator": 629
+  },
+  "limits": [
+    "Item-level page completeness, damaged readings and recoverable printed extent still require checking; a worklist is not a claim of complete editions.",
+    "AIT27 already has a partial row; its remaining proofreading is extra. Montgomery main entries only: contextual appearances and appendix no. 42 are not counted.",
+    "Jena entry 21 lacks a continuous edition; most entries 41–68 are pseudo-script or uninscribed; Stübe catalogue notices and skulls are excluded.",
+    "Gordon survey/introductory mentions are excluded; text O has no usable photograph plate here, independent of its printed reading. Ellis no. 3 is an abridgment of no. 2. Ford commentary-only appearances are excluded.",
+    "Further held articles, Wohlstein, Schwab, excerpts and appendix editions need individual inventory before extending this count.",
+    "Moriggi 49 and Berlin 2018 15 Latin transliterations are not assumed to be missing printed native-script columns; recreating script from transliteration or deciphering photographs is separate.",
+    "The 629 apparent PDF-appearance gaps include contextual references and non-edition entries and must not be reported as recoverable inscriptions.",
+    "Native presence in identity totals means a transcription row contains Hebrew, Syriac or Mandaic characters; it does not establish that an entire inscription is captured.",
+    "New-source acquisition, including Abudraham’s uncaptured AIT27 edition, is outside this held-source worklist."
+  ],
+  "groups": [
+    {
+      "source_id": "SRC-943673B56FB8",
+      "label": "Montgomery: main entries except AIT27",
+      "target_count": 39,
+      "appearances": [
+        {
+          "id": "APP-CDECE1AA8025",
+          "locator": "p. 321, item 1",
+          "object_ids": [
+            "IBI-7680B927BB2F"
+          ],
+          "identity_ids": [
+            "IDENT-3799CFE813B5"
+          ]
+        },
+        {
+          "id": "APP-D9DDA0AC69C7",
+          "locator": "p. 321, item 2",
+          "object_ids": [
+            "IBI-5B1343517775"
+          ],
+          "identity_ids": [
+            "IDENT-5B1343517775"
+          ]
+        },
+        {
+          "id": "APP-FE0FFEDE62F8",
+          "locator": "p. 321, item 3",
+          "object_ids": [
+            "IBI-28AFCD028373"
+          ],
+          "identity_ids": [
+            "IDENT-28AFCD028373"
+          ]
+        },
+        {
+          "id": "APP-C772190086F2",
+          "locator": "p. 321, item 4",
+          "object_ids": [
+            "IBI-917276249B87"
+          ],
+          "identity_ids": [
+            "IDENT-33C9806531BF"
+          ]
+        },
+        {
+          "id": "APP-438DDE9F3E25",
+          "locator": "p. 322, item 10",
+          "object_ids": [
+            "IBI-C3B04E20C369"
+          ],
+          "identity_ids": [
+            "IDENT-412E0B1680FB"
+          ]
+        },
+        {
+          "id": "APP-3126B58BCEBD",
+          "locator": "p. 322, item 11",
+          "object_ids": [
+            "IBI-49D1BAB76E01"
+          ],
+          "identity_ids": [
+            "IDENT-3E0C956BD836"
+          ]
+        },
+        {
+          "id": "APP-1310B7191112",
+          "locator": "p. 322, item 5",
+          "object_ids": [
+            "IBI-E135C0EA9CED"
+          ],
+          "identity_ids": [
+            "IDENT-24674D1820C6"
+          ]
+        },
+        {
+          "id": "APP-864157C44B8B",
+          "locator": "p. 322, item 6",
+          "object_ids": [
+            "IBI-B6246E14776E"
+          ],
+          "identity_ids": [
+            "IDENT-6005503283A5"
+          ]
+        },
+        {
+          "id": "APP-78ECA5E16211",
+          "locator": "p. 322, item 7",
+          "object_ids": [
+            "IBI-013FBB80706C"
+          ],
+          "identity_ids": [
+            "IDENT-013FBB80706C"
+          ]
+        },
+        {
+          "id": "APP-D433CFA5D994",
+          "locator": "p. 322, item 8",
+          "object_ids": [
+            "IBI-5C355EF43D8D"
+          ],
+          "identity_ids": [
+            "IDENT-586A5A88B7DC"
+          ]
+        },
+        {
+          "id": "APP-07A0BD3CAEDC",
+          "locator": "p. 322, item 9",
+          "object_ids": [
+            "IBI-B54D497CC676"
+          ],
+          "identity_ids": [
+            "IDENT-2D03029F6DEE"
+          ]
+        },
+        {
+          "id": "APP-6434CEAE80BD",
+          "locator": "p. 323, item 12",
+          "object_ids": [
+            "IBI-4500756E262F"
+          ],
+          "identity_ids": [
+            "IDENT-02B43ABF13D9"
+          ]
+        },
+        {
+          "id": "APP-24BFA2C91F7E",
+          "locator": "p. 323, item 13",
+          "object_ids": [
+            "IBI-88103E2EB680"
+          ],
+          "identity_ids": [
+            "IDENT-2CD9170DA696"
+          ]
+        },
+        {
+          "id": "APP-E987653764E6",
+          "locator": "p. 323, item 14",
+          "object_ids": [
+            "IBI-CF7556423B9D"
+          ],
+          "identity_ids": [
+            "IDENT-319F3DE276D8"
+          ]
+        },
+        {
+          "id": "APP-681E7CFAACAF",
+          "locator": "p. 323, item 15",
+          "object_ids": [
+            "IBI-7F04261178CB"
+          ],
+          "identity_ids": [
+            "IDENT-0DDF3246CBCA"
+          ]
+        },
+        {
+          "id": "APP-79114E948F02",
+          "locator": "p. 323, item 16",
+          "object_ids": [
+            "IBI-DEDC98D3F366"
+          ],
+          "identity_ids": [
+            "IDENT-2C4A68905E21"
+          ]
+        },
+        {
+          "id": "APP-C3C4F898D923",
+          "locator": "p. 323, item 17",
+          "object_ids": [
+            "IBI-A2E775143F9F"
+          ],
+          "identity_ids": [
+            "IDENT-09C22FFFD031"
+          ]
+        },
+        {
+          "id": "APP-A79508FF2125",
+          "locator": "p. 323, item 18",
+          "object_ids": [
+            "IBI-CEC11D2DBB44"
+          ],
+          "identity_ids": [
+            "IDENT-63DC1A6B27EF"
+          ]
+        },
+        {
+          "id": "APP-EAD0AE7DED3E",
+          "locator": "p. 324, item 19",
+          "object_ids": [
+            "IBI-84F6B8FD30B3"
+          ],
+          "identity_ids": [
+            "IDENT-3302F57D7AE1"
+          ]
+        },
+        {
+          "id": "APP-279C27F275C2",
+          "locator": "p. 324, item 20",
+          "object_ids": [
+            "IBI-ABDE8A973358"
+          ],
+          "identity_ids": [
+            "IDENT-ABDE8A973358"
+          ]
+        },
+        {
+          "id": "APP-76436A9290DC",
+          "locator": "p. 324, item 21",
+          "object_ids": [
+            "IBI-26BDEA55EA1E"
+          ],
+          "identity_ids": [
+            "IDENT-26BDEA55EA1E"
+          ]
+        },
+        {
+          "id": "APP-07648364502C",
+          "locator": "p. 324, item 22",
+          "object_ids": [
+            "IBI-6C4D8112FFE2"
+          ],
+          "identity_ids": [
+            "IDENT-5002143E0DC9"
+          ]
+        },
+        {
+          "id": "APP-49C686AFBC6E",
+          "locator": "p. 324, item 23",
+          "object_ids": [
+            "IBI-DF04AC9DDBFB"
+          ],
+          "identity_ids": [
+            "IDENT-C6413BF444D0"
+          ]
+        },
+        {
+          "id": "APP-2A8A4134889F",
+          "locator": "p. 324, item 24",
+          "object_ids": [
+            "IBI-C2E332F154A0"
+          ],
+          "identity_ids": [
+            "IDENT-C2E332F154A0"
+          ]
+        },
+        {
+          "id": "APP-F4AE8487EFD4",
+          "locator": "p. 325, item 25",
+          "object_ids": [
+            "IBI-74625165CE1F"
+          ],
+          "identity_ids": [
+            "IDENT-74625165CE1F"
+          ]
+        },
+        {
+          "id": "APP-F9A77B2A4270",
+          "locator": "p. 325, item 26",
+          "object_ids": [
+            "IBI-F6ED61BF3D88"
+          ],
+          "identity_ids": [
+            "IDENT-5FCC4322461F"
+          ]
+        },
+        {
+          "id": "APP-5C2E170AF9AA",
+          "locator": "p. 325, item 28",
+          "object_ids": [
+            "IBI-325647D3DF8D"
+          ],
+          "identity_ids": [
+            "IDENT-310095C53E06"
+          ]
+        },
+        {
+          "id": "APP-19E688CF629E",
+          "locator": "p. 325, item 29",
+          "object_ids": [
+            "IBI-5CB5A9A5E46E"
+          ],
+          "identity_ids": [
+            "IDENT-2302CEAE11AF"
+          ]
+        },
+        {
+          "id": "APP-64DA17599F84",
+          "locator": "p. 325, item 30",
+          "object_ids": [
+            "IBI-D8319A094023"
+          ],
+          "identity_ids": [
+            "IDENT-32E80C06D6CC"
+          ]
+        },
+        {
+          "id": "APP-0793AD650B2E",
+          "locator": "p. 325, item 31",
+          "object_ids": [
+            "IBI-079F0B82D514"
+          ],
+          "identity_ids": [
+            "IDENT-079F0B82D514"
+          ]
+        },
+        {
+          "id": "APP-D4C5D8A61D40",
+          "locator": "p. 325, item 32",
+          "object_ids": [
+            "IBI-527704D6B074"
+          ],
+          "identity_ids": [
+            "IDENT-527704D6B074"
+          ]
+        },
+        {
+          "id": "APP-802C87223FEE",
+          "locator": "p. 326, item 33",
+          "object_ids": [
+            "IBI-E10F6716C2C1"
+          ],
+          "identity_ids": [
+            "IDENT-2422A6BE70E3"
+          ]
+        },
+        {
+          "id": "APP-D724A7994ABA",
+          "locator": "p. 326, item 34",
+          "object_ids": [
+            "IBI-F094DE6A4112"
+          ],
+          "identity_ids": [
+            "IDENT-1A098436B031"
+          ]
+        },
+        {
+          "id": "APP-0D6521BE33C9",
+          "locator": "p. 326, item 35",
+          "object_ids": [
+            "IBI-6E087B8C539F"
+          ],
+          "identity_ids": [
+            "IDENT-2F518E039625"
+          ]
+        },
+        {
+          "id": "APP-83950F7E2B49",
+          "locator": "p. 326, item 36",
+          "object_ids": [
+            "IBI-CD3E783556B1"
+          ],
+          "identity_ids": [
+            "IDENT-06BD95937A55"
+          ]
+        },
+        {
+          "id": "APP-E275724F7B16",
+          "locator": "p. 326, item 37",
+          "object_ids": [
+            "IBI-44BC3FE36601"
+          ],
+          "identity_ids": [
+            "IDENT-29AAFE861F78"
+          ]
+        },
+        {
+          "id": "APP-96871B3E4365",
+          "locator": "p. 326, item 38",
+          "object_ids": [
+            "IBI-544ABA7B7DAA"
+          ],
+          "identity_ids": [
+            "IDENT-544ABA7B7DAA"
+          ]
+        },
+        {
+          "id": "APP-B8B7514BF026",
+          "locator": "p. 326, item 39",
+          "object_ids": [
+            "IBI-DC36E80A1951"
+          ],
+          "identity_ids": [
+            "IDENT-9D13CDD62235"
+          ]
+        },
+        {
+          "id": "APP-7F442D32415F",
+          "locator": "p. 326, item 40",
+          "object_ids": [
+            "IBI-A3736CD7D997"
+          ],
+          "identity_ids": [
+            "IDENT-79D32E0C0500"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "label": "Pognon: Mandaic",
+      "target_count": 31,
+      "appearances": [
+        {
+          "id": "APP-0EF7B5C8D91C",
+          "locator": "Khouabir bowl no. 10; numbered text section, printed pp. 17-92; corresponding plate no. 10",
+          "object_ids": [
+            "IBI-85880E054A2C"
+          ],
+          "identity_ids": [
+            "IDENT-85880E054A2C"
+          ]
+        },
+        {
+          "id": "APP-7A295C8A0971",
+          "locator": "Khouabir bowl no. 11; numbered text section, printed pp. 17-92; corresponding plate no. 11",
+          "object_ids": [
+            "IBI-B9953E43CB15"
+          ],
+          "identity_ids": [
+            "IDENT-B9953E43CB15"
+          ]
+        },
+        {
+          "id": "APP-ABE046D0377C",
+          "locator": "Khouabir bowl no. 12; numbered text section, printed pp. 17-92; corresponding plate no. 12",
+          "object_ids": [
+            "IBI-81533E5D52C6"
+          ],
+          "identity_ids": [
+            "IDENT-81533E5D52C6"
+          ]
+        },
+        {
+          "id": "APP-129525A3C993",
+          "locator": "Khouabir bowl no. 13; numbered text section, printed pp. 17-92; corresponding plate no. 13",
+          "object_ids": [
+            "IBI-F5AF07BA4A16"
+          ],
+          "identity_ids": [
+            "IDENT-F5AF07BA4A16"
+          ]
+        },
+        {
+          "id": "APP-7F38071BF44D",
+          "locator": "Khouabir bowl no. 14; numbered text section, printed pp. 17-92; corresponding plate no. 14",
+          "object_ids": [
+            "IBI-4CE4A3A99CC4"
+          ],
+          "identity_ids": [
+            "IDENT-4CE4A3A99CC4"
+          ]
+        },
+        {
+          "id": "APP-B89D47597FD7",
+          "locator": "Khouabir bowl no. 15; numbered text section, printed pp. 17-92; corresponding plate no. 15",
+          "object_ids": [
+            "IBI-73CCCFD9AAC1"
+          ],
+          "identity_ids": [
+            "IDENT-73CCCFD9AAC1"
+          ]
+        },
+        {
+          "id": "APP-D3FD184611BD",
+          "locator": "Khouabir bowl no. 16; numbered text section, printed pp. 17-92; corresponding plate no. 16",
+          "object_ids": [
+            "IBI-066A91C46861"
+          ],
+          "identity_ids": [
+            "IDENT-066A91C46861"
+          ]
+        },
+        {
+          "id": "APP-D7FE89B99298",
+          "locator": "Khouabir bowl no. 17; numbered text section, printed pp. 17-92; corresponding plate no. 17",
+          "object_ids": [
+            "IBI-8006D542AA18"
+          ],
+          "identity_ids": [
+            "IDENT-8006D542AA18"
+          ]
+        },
+        {
+          "id": "APP-FCECCBBB81E4",
+          "locator": "Khouabir bowl no. 18; numbered text section, printed pp. 17-92; corresponding plate no. 18",
+          "object_ids": [
+            "IBI-87F95AD9539A"
+          ],
+          "identity_ids": [
+            "IDENT-87F95AD9539A"
+          ]
+        },
+        {
+          "id": "APP-091BF3379EE0",
+          "locator": "Khouabir bowl no. 19; numbered text section, printed pp. 17-92; corresponding plate no. 19",
+          "object_ids": [
+            "IBI-DF12373ABCD4"
+          ],
+          "identity_ids": [
+            "IDENT-DF12373ABCD4"
+          ]
+        },
+        {
+          "id": "APP-CDAA297CE95A",
+          "locator": "Khouabir bowl no. 1; numbered text section, printed pp. 17-92; corresponding plate no. 1",
+          "object_ids": [
+            "IBI-803DAD53D57E"
+          ],
+          "identity_ids": [
+            "IDENT-803DAD53D57E"
+          ]
+        },
+        {
+          "id": "APP-3997D9594090",
+          "locator": "Khouabir bowl no. 20; numbered text section, printed pp. 17-92; corresponding plate no. 20",
+          "object_ids": [
+            "IBI-4BA618E6BAB7"
+          ],
+          "identity_ids": [
+            "IDENT-4BA618E6BAB7"
+          ]
+        },
+        {
+          "id": "APP-44D928BC072B",
+          "locator": "Khouabir bowl no. 21; numbered text section, printed pp. 17-92; corresponding plate no. 21",
+          "object_ids": [
+            "IBI-5F8407C1637E"
+          ],
+          "identity_ids": [
+            "IDENT-5F8407C1637E"
+          ]
+        },
+        {
+          "id": "APP-DB21293C4776",
+          "locator": "Khouabir bowl no. 22; numbered text section, printed pp. 17-92; corresponding plate no. 22",
+          "object_ids": [
+            "IBI-F0D16C11FE27"
+          ],
+          "identity_ids": [
+            "IDENT-F0D16C11FE27"
+          ]
+        },
+        {
+          "id": "APP-0F2F71E04948",
+          "locator": "Khouabir bowl no. 23; numbered text section, printed pp. 17-92; corresponding plate no. 23",
+          "object_ids": [
+            "IBI-EF7BDE184446"
+          ],
+          "identity_ids": [
+            "IDENT-EF7BDE184446"
+          ]
+        },
+        {
+          "id": "APP-3733E65ECF01",
+          "locator": "Khouabir bowl no. 24; numbered text section, printed pp. 17-92; corresponding plate no. 24",
+          "object_ids": [
+            "IBI-1D5F283ECCE9"
+          ],
+          "identity_ids": [
+            "IDENT-1D5F283ECCE9"
+          ]
+        },
+        {
+          "id": "APP-1FE3188E1492",
+          "locator": "Khouabir bowl no. 25; numbered text section, printed pp. 17-92; corresponding plate no. 25",
+          "object_ids": [
+            "IBI-6BE776EF5D76"
+          ],
+          "identity_ids": [
+            "IDENT-6BE776EF5D76"
+          ]
+        },
+        {
+          "id": "APP-2C3E6DCCDCCA",
+          "locator": "Khouabir bowl no. 26; numbered text section, printed pp. 17-92; corresponding plate no. 26",
+          "object_ids": [
+            "IBI-A63FE866AC15"
+          ],
+          "identity_ids": [
+            "IDENT-A63FE866AC15"
+          ]
+        },
+        {
+          "id": "APP-6CF600CC7FF0",
+          "locator": "Khouabir bowl no. 27; numbered text section, printed pp. 17-92; corresponding plate no. 27",
+          "object_ids": [
+            "IBI-6F0F7DCA91B9"
+          ],
+          "identity_ids": [
+            "IDENT-6F0F7DCA91B9"
+          ]
+        },
+        {
+          "id": "APP-953232579597",
+          "locator": "Khouabir bowl no. 28; numbered text section, printed pp. 17-92; corresponding plate no. 28",
+          "object_ids": [
+            "IBI-53436A3039A9"
+          ],
+          "identity_ids": [
+            "IDENT-53436A3039A9"
+          ]
+        },
+        {
+          "id": "APP-68DC465FB10C",
+          "locator": "Khouabir bowl no. 29; numbered text section, printed pp. 17-92; corresponding plate no. 29",
+          "object_ids": [
+            "IBI-602DCEB1131F"
+          ],
+          "identity_ids": [
+            "IDENT-602DCEB1131F"
+          ]
+        },
+        {
+          "id": "APP-EBEEFEECEFC7",
+          "locator": "Khouabir bowl no. 2; numbered text section, printed pp. 17-92; corresponding plate no. 2",
+          "object_ids": [
+            "IBI-27D5447503D1"
+          ],
+          "identity_ids": [
+            "IDENT-27D5447503D1"
+          ]
+        },
+        {
+          "id": "APP-73F7911C0BA2",
+          "locator": "Khouabir bowl no. 30; numbered text section, printed pp. 17-92; corresponding plate no. 30",
+          "object_ids": [
+            "IBI-55A65753F98F"
+          ],
+          "identity_ids": [
+            "IDENT-55A65753F98F"
+          ]
+        },
+        {
+          "id": "APP-4CA754C44EDE",
+          "locator": "Khouabir bowl no. 31; numbered text section, printed pp. 88-92; no corresponding plate in held scan",
+          "object_ids": [
+            "IBI-553C439A9041"
+          ],
+          "identity_ids": [
+            "IDENT-553C439A9041"
+          ]
+        },
+        {
+          "id": "APP-1EEC6342BDB6",
+          "locator": "Khouabir bowl no. 3; numbered text section, printed pp. 17-92; corresponding plate no. 3",
+          "object_ids": [
+            "IBI-841834AA23EE"
+          ],
+          "identity_ids": [
+            "IDENT-841834AA23EE"
+          ]
+        },
+        {
+          "id": "APP-883E9B89B134",
+          "locator": "Khouabir bowl no. 4; numbered text section, printed pp. 17-92; corresponding plate no. 4",
+          "object_ids": [
+            "IBI-6849AB56769C"
+          ],
+          "identity_ids": [
+            "IDENT-6849AB56769C"
+          ]
+        },
+        {
+          "id": "APP-111C687B7B7E",
+          "locator": "Khouabir bowl no. 5; numbered text section, printed pp. 17-92; corresponding plate no. 5",
+          "object_ids": [
+            "IBI-0F893C3C8B27"
+          ],
+          "identity_ids": [
+            "IDENT-0F893C3C8B27"
+          ]
+        },
+        {
+          "id": "APP-9BE810564E11",
+          "locator": "Khouabir bowl no. 6; numbered text section, printed pp. 17-92; corresponding plate no. 6",
+          "object_ids": [
+            "IBI-C3B7AF19392E"
+          ],
+          "identity_ids": [
+            "IDENT-C3B7AF19392E"
+          ]
+        },
+        {
+          "id": "APP-B12F194FE0AD",
+          "locator": "Khouabir bowl no. 7; numbered text section, printed pp. 17-92; corresponding plate no. 7",
+          "object_ids": [
+            "IBI-D35F31FD9609"
+          ],
+          "identity_ids": [
+            "IDENT-D35F31FD9609"
+          ]
+        },
+        {
+          "id": "APP-35ABA29FF278",
+          "locator": "Khouabir bowl no. 8; numbered text section, printed pp. 17-92; corresponding plate no. 8",
+          "object_ids": [
+            "IBI-D9305B05E1A2"
+          ],
+          "identity_ids": [
+            "IDENT-D9305B05E1A2"
+          ]
+        },
+        {
+          "id": "APP-9211ED37685E",
+          "locator": "Khouabir bowl no. 9; numbered text section, printed pp. 17-92; corresponding plate no. 9",
+          "object_ids": [
+            "IBI-F1DDD0F5B05B"
+          ],
+          "identity_ids": [
+            "IDENT-F1DDD0F5B05B"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "label": "Jena: Mandaic",
+      "target_count": 4,
+      "appearances": [
+        {
+          "id": "APP-8741DAD4DE16",
+          "locator": "Entry 37 (HS 3011), p. 191",
+          "object_ids": [
+            "IBI-9C9E9A51F4FD"
+          ],
+          "identity_ids": [
+            "IDENT-9C9E9A51F4FD"
+          ]
+        },
+        {
+          "id": "APP-B931ED426F18",
+          "locator": "Entry 38 (HS 3021), p. 196",
+          "object_ids": [
+            "IBI-A827C761AE03"
+          ],
+          "identity_ids": [
+            "IDENT-A827C761AE03"
+          ]
+        },
+        {
+          "id": "APP-302F40CE8B7C",
+          "locator": "Entry 39 (HS 3025), p. 200",
+          "object_ids": [
+            "IBI-0FD203FF2582"
+          ],
+          "identity_ids": [
+            "IDENT-0FD203FF2582"
+          ]
+        },
+        {
+          "id": "APP-886631B0382E",
+          "locator": "Entry 40 (HS 3054), p. 203",
+          "object_ids": [
+            "IBI-083CF78A7803"
+          ],
+          "identity_ids": [
+            "IDENT-083CF78A7803"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "label": "Gordon 1934: A–F",
+      "target_count": 6,
+      "appearances": [
+        {
+          "id": "APP-E9A404BCD123",
+          "locator": "text A, printed pp. 321-334; plate X",
+          "object_ids": [
+            "IBI-444B0B07BA0E"
+          ],
+          "identity_ids": [
+            "IDENT-444B0B07BA0E"
+          ]
+        },
+        {
+          "id": "APP-8A3CC20AE0AC",
+          "locator": "text B, printed pp. 321-334; plate XI",
+          "object_ids": [
+            "IBI-6CF4E4167D3E"
+          ],
+          "identity_ids": [
+            "IDENT-6CF4E4167D3E"
+          ]
+        },
+        {
+          "id": "APP-803A0D1650EF",
+          "locator": "text C, printed pp. 321-334; plate XII",
+          "object_ids": [
+            "IBI-87782BA285D5"
+          ],
+          "identity_ids": [
+            "IDENT-87782BA285D5"
+          ]
+        },
+        {
+          "id": "APP-9D5B95899923",
+          "locator": "text D, printed pp. 321-334; plate XIII",
+          "object_ids": [
+            "IBI-54398C1767BE"
+          ],
+          "identity_ids": [
+            "IDENT-54398C1767BE"
+          ]
+        },
+        {
+          "id": "APP-938C8FBAA0F3",
+          "locator": "text E, printed pp. 321-334; plate XIV",
+          "object_ids": [
+            "IBI-8B111BFD04DA"
+          ],
+          "identity_ids": [
+            "IDENT-8B111BFD04DA"
+          ]
+        },
+        {
+          "id": "APP-0E6FA47A609E",
+          "locator": "text F, printed pp. 321-334; plate XV",
+          "object_ids": [
+            "IBI-AA3D4D3C35CC"
+          ],
+          "identity_ids": [
+            "IDENT-AA3D4D3C35CC"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "label": "Gordon 1937: H–O",
+      "target_count": 8,
+      "appearances": [
+        {
+          "id": "APP-17C03AF3619C",
+          "locator": "text H, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-F0173A70F87B"
+          ],
+          "identity_ids": [
+            "IDENT-F0173A70F87B"
+          ]
+        },
+        {
+          "id": "APP-5F9139280903",
+          "locator": "text I, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-67E68F81FE63"
+          ],
+          "identity_ids": [
+            "IDENT-67E68F81FE63"
+          ]
+        },
+        {
+          "id": "APP-EF64B75190FC",
+          "locator": "text J, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-A941F1E8B2F0"
+          ],
+          "identity_ids": [
+            "IDENT-A941F1E8B2F0"
+          ]
+        },
+        {
+          "id": "APP-ADDBA35701BF",
+          "locator": "text K, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-4949F2DB777F"
+          ],
+          "identity_ids": [
+            "IDENT-4949F2DB777F"
+          ]
+        },
+        {
+          "id": "APP-917017918A3E",
+          "locator": "text L, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-410C07F078B6"
+          ],
+          "identity_ids": [
+            "IDENT-410C07F078B6"
+          ]
+        },
+        {
+          "id": "APP-4FA37630332D",
+          "locator": "text M, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-427650BDA7A4"
+          ],
+          "identity_ids": [
+            "IDENT-427650BDA7A4"
+          ]
+        },
+        {
+          "id": "APP-17AD10B763C7",
+          "locator": "text N, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-F265C68D7662"
+          ],
+          "identity_ids": [
+            "IDENT-F265C68D7662"
+          ]
+        },
+        {
+          "id": "APP-89A2A73925B7",
+          "locator": "text O, printed pp. 86-106; article plates II-XIVa",
+          "object_ids": [
+            "IBI-7BCBBD6A6A80"
+          ],
+          "identity_ids": [
+            "IDENT-7BCBBD6A6A80"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-0383E0E0A2F2",
+      "label": "Gordon: An Aramaic Exorcism, G",
+      "target_count": 1,
+      "appearances": [
+        {
+          "id": "APP-B5699D55E0FB",
+          "locator": "text G, printed pp. 466-474; plates XXII-XXV; catalogue no. 5497",
+          "object_ids": [
+            "IBI-28C0A68E5312"
+          ],
+          "identity_ids": [
+            "IDENT-28C0A68E5312"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "label": "Ellis in Layard: 1–6",
+      "target_count": 6,
+      "appearances": [
+        {
+          "id": "APP-829C76DB8F2E",
+          "locator": "Ellis bowl no. 1, printed pp. 512-515",
+          "object_ids": [
+            "IBI-4C1386AD9E0F"
+          ],
+          "identity_ids": [
+            "IDENT-4C1386AD9E0F"
+          ]
+        },
+        {
+          "id": "APP-50F110045D95",
+          "locator": "Ellis bowl no. 2, printed pp. 515-516",
+          "object_ids": [
+            "IBI-051F7A38EFC3"
+          ],
+          "identity_ids": [
+            "IDENT-051F7A38EFC3"
+          ]
+        },
+        {
+          "id": "APP-7D9BC867F41F",
+          "locator": "Ellis bowl no. 3, printed pp. 516-518",
+          "object_ids": [
+            "IBI-8DF305A4F33B"
+          ],
+          "identity_ids": [
+            "IDENT-8DF305A4F33B"
+          ]
+        },
+        {
+          "id": "APP-534FCA4882A6",
+          "locator": "Ellis bowl no. 4, printed pp. 518-519",
+          "object_ids": [
+            "IBI-FB321527E8F5"
+          ],
+          "identity_ids": [
+            "IDENT-FB321527E8F5"
+          ]
+        },
+        {
+          "id": "APP-712D929010E0",
+          "locator": "Ellis bowl no. 5, printed pp. 519-521",
+          "object_ids": [
+            "IBI-BABC0EF172D2"
+          ],
+          "identity_ids": [
+            "IDENT-BABC0EF172D2"
+          ]
+        },
+        {
+          "id": "APP-41311FE3F76D",
+          "locator": "Ellis bowl no. 6, printed pp. 521-522",
+          "object_ids": [
+            "IBI-D7226A7631D3"
+          ],
+          "identity_ids": [
+            "IDENT-D7226A7631D3"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-0B6C0E1133EF",
+      "label": "Stübe: VA 2416",
+      "target_count": 1,
+      "appearances": [
+        {
+          "id": "APP-873346F76810",
+          "locator": "descriptive catalogue no. 4, printed pp. 13-14; edition pp. 22-27; VA 2416",
+          "object_ids": [
+            "IBI-83B79765A7BC"
+          ],
+          "identity_ids": [
+            "IDENT-6F98412BF44D"
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "label": "Ford 2014: AS 13, Davidovitz 27, Museo Sefardí 1073",
+      "target_count": 3,
+      "appearances": [
+        {
+          "id": "APP-A3099A2F0CC8",
+          "locator": "Appendix 1, pp. 246–252",
+          "object_ids": [
+            "IBI-FORD2014-AS13"
+          ],
+          "identity_ids": [
+            "IDENT-FORD2014-AS13"
+          ]
+        },
+        {
+          "id": "APP-511BC53E137E",
+          "locator": "Appendix 2, pp. 253–258",
+          "object_ids": [
+            "IBI-FORD2014-DAV27"
+          ],
+          "identity_ids": [
+            "IDENT-FORD2014-DAV27"
+          ]
+        },
+        {
+          "id": "APP-DBE55F1367B4",
+          "locator": "p. 256; figures 25–26, pp. 259–260",
+          "object_ids": [
+            "IBI-035BA4ABBE6D"
+          ],
+          "identity_ids": [
+            "IDENT-035BA4ABBE6D"
+          ]
+        }
+      ]
+    }
+  ]
+}
