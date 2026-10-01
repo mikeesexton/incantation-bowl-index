@@ -1,0 +1,496 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_path": "data/private/archive/sha256/c8/c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_by": "Codex: AI-assisted separate bounded visual edition pass, not independent specialist certification",
+  "reviewed_at": "2026-10-01T11:29:38+00:00",
+  "editorial_policy": "AI-assisted normalized working capture of Montgomery’s printed Hebrew-letter editions, visually compared with the held page images; partial source-page review, not a diplomatic text, full character collation, translation or specialist certification. Printed inscription line numbers retained; implicit opening line 1 supplied by the project. Physical page wrapping, word spacing and most typographic punctuation normalized. Printed square brackets remain source restorations, including cross-line restorations; ... normalizes source loss runs without asserting a lost-letter count. ⟦word?⟧ marks project capture doubt, distinct from a source restoration. Source inferior dots, Syriac upper diacritics/seyame, pointing, precise final-letter shapes and source punctuation are NOT exhaustively encoded or collated; the unchanged facsimiles control those details. Recognized Mandaic marked dalet is encoded as ד̄ (dalet plus U+0304), but exhaustive mark placement and consonants remain open. English captions, erasure/elided/sic annotations and Exterior are source editorial matter, not words of the incantation; an em dash explicitly separates a normalized editorial annotation. No.11 retains an apparently unpaired source bracket inside a marked project doubt without inventing its closing boundary. No readings supplied from neighboring witnesses or grammar. Nos.31–37 are source-classified Syriac and nos.38–40 Mandaic; the stored Hebrew-letter texts are TRANSLITERATIONS, not native Syriac/Mandaic-script recoveries. Montgomery explains this convention at printed p.11 / PDF p.17; original-script facsimile recovery remains separate. No public-release or personal-audit completion decision. Separate subsequent source pass over all forty main Montgomery blocks (AIT27 printed1–11 only). Source repetition preserved, including No34 line14 repeated בת. Project doubts use double brackets, not scholarly restoration notation. No claim of full character/dot collation or native Syriac/Mandaic recovery.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-MONT01-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-DB7EE3F0F524",
+      "expected_text_sha256": "a654533a40a5fe7fbcc9012cb568a1eda0f6b2a336d6466b67ca1d0ce8935c38",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-01-proof02.txt",
+      "corrected_content_sha256": "10f70f905794b6c77c0a129d37ac58cce0bba3a9e181dccfe1d01ae234ba115c",
+      "pdf_pages": [
+        123
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Consonants in the unusual line-10 sequence and line-14 naming formula remain tentative. Exterior line numbering and two Amen forms checked; full letter-dot collation remains open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT02-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-B3E117E7C76A",
+      "expected_text_sha256": "3e24da6f574748160ada43db9c730e721e65d77521eb99fd70589927ce10997c",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-02-proof02.txt",
+      "corrected_content_sha256": "7f6512fc442cd5f3a2271a2a105061155438b8256ea43b097c834d32ef77c108",
+      "pdf_pages": [
+        127
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. The extra word before חטיתון in line 4 remains a project doubt. Printed name spellings are retained; no silent normalization from AIT27. Full source-dot and final-letter check remains open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT03-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-DC35DC37F907",
+      "expected_text_sha256": "ada56d660f8da545615a44a6bc158c8266127db80de457c4f04d2a16301f8323",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-03-proof02.txt",
+      "corrected_content_sha256": "b792533d06e1fbec65fc10083035b86ff674bb78a4b3c300f96855b48c3d2167",
+      "pdf_pages": [
+        133
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. All twelve printed lines retained, including the biblical closing restoration. Repeated magical strings, exact letter counts, word division, inferior dots and names require precise collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT04-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-701DBFDAB61A",
+      "expected_text_sha256": "62cdc93145507f7c05753189eef66af2b0075dc092237d1d80762addb2865197",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-04-proof02.txt",
+      "corrected_content_sha256": "ae335ea0709136515de11a9f226595dc90dcaacb05c9e259f5857bbc94121139",
+      "pdf_pages": [
+        139
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Seven printed lines retained. Unusual opening, astrological terminology and the broken לא תי closing require source collation; no grammar-based repair. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT05-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-A5C9F6D65B1E",
+      "expected_text_sha256": "852b93c4f42f1f37ec64620e5c3b8542e75dd46107880881719ac89a4bec0147",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-05-proof02.txt",
+      "corrected_content_sha256": "f671704e0aff4231270f72839ebe42bb30b0799c9119e8e81c2372362cb36c27",
+      "pdf_pages": [
+        144
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Six spiral lines and the two lines on either side of the central figure grouped under printed (7) retained. Source elided-name parenthesis, English figure caption and sic wording are editorial. Hebrew quotation spellings and erased/deleted form require exact checking. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT06-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-E48A31837588",
+      "expected_text_sha256": "20b019554e3daba355f9966e64df327bcc9cddaec80ff41fa69900e286ee1a6f",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-06-proof02.txt",
+      "corrected_content_sha256": "84d6930eacde4bbb9b7cb6a84c58dff9669a1050f9d25b0364bb63b566733bc5",
+      "pdf_pages": [
+        147
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Twelve lines, seven formula names and the fragmentary line10 retained. Incantatory names, source dots and exact final letters remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT07-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-2B13CEE8FD44",
+      "expected_text_sha256": "15d5db6fee8228fb3808440a0e09df2fb688700a8828dee397723a5e75d793ad",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-07-proof02.txt",
+      "corrected_content_sha256": "8895f7f4a09585b90caf27c8b74919e969c7bfe4c6fdea58d3dd4dfc4789bb3d",
+      "pdf_pages": [
+        151,
+        152,
+        153
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. CBS16007 LEFT column only, PDF151–153. Excludes the right-hand CBS16081/Myhrman witness. Shared-width closing at line17 follows the source’s left-column continuation. Cross-line restoration7–8 preserved. Name spellings, layout and dots require precise review. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT08-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-49CF317613E4",
+      "expected_text_sha256": "25f405f4170a0c56d0df458f777a56c11c36f1b7761dfe9e7e8053fb9b5a9f83",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-08-proof02.txt",
+      "corrected_content_sha256": "f08b079c77694a5d7b2da1e9d49d1c6342c4f5a5a1fbf2fdb68b7d8340a6dc4c",
+      "pdf_pages": [
+        160,
+        161
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Seventeen-line printed block across PDF160–161; final line17 is on PDF161. Many damaged phrases, divine-name fragments and source dot positions remain open; a project doubt explicitly marks the difficult דוריפתא sequence. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT09-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-E7B6A380160B",
+      "expected_text_sha256": "3ca469a27527dae60987f80b974ef4a95ce7687fcaf1a8e28943755e14accc9e",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-09-proof02.txt",
+      "corrected_content_sha256": "8e67fcc5cf9cd420a8a7e524ea1522cd6dad9ebde558354e22d9cb320cb489ce",
+      "pdf_pages": [
+        167
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Ten interior lines plus Exterior line11 retained. Hebrew exterior beside Aramaic interior source-labeled. Names, restored cross-line text and source dots need exact collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT10-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-7662F04E373F",
+      "expected_text_sha256": "57bb47f402ef1d57d58bc8f7c9e19c42ed4808fb9f87c14588edecaedf801b5f",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-10-proof02.txt",
+      "corrected_content_sha256": "6180408357ad3b7ea0ff20237000de40126dfb237dfc7be2a8ffaad3e4f26f4c",
+      "pdf_pages": [
+        171
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Source restoration ש[ידין] and דו[ירת]הון retained. Magical string at line 2, name forms and marked source-dotted word need precise collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT11-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-E3663576CF80",
+      "expected_text_sha256": "f98ae5a93cc4cd418166a55d2ff85117489ba668939b7e273e417b7d3360ba7a",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-11-proof02.txt",
+      "corrected_content_sha256": "47bd7a5d96255a4cb8541ff96064c3e2c03079fe9616343ed277d6bb465e19b5",
+      "pdf_pages": [
+        174,
+        175,
+        176
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. No.11 LEFT column only across PDF174–176, excluding Ellis1 and Lidzbarski5. Source has an apparently unpaired bracket by ד in line5; retained inside project doubt, closing boundary unresolved. Line7 difficult syllable marked as project doubt; magical names, dots and layout need further review. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT12-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-618B05B28A08",
+      "expected_text_sha256": "927e0af2a61e7c0a783715f0a2b5bc7481e4396839a9313817820a328adc7f5e",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-12-proof02.txt",
+      "corrected_content_sha256": "036577cc1092757924de8b31e9119dcd5304a1ab4f59b846bb783922f67f644c",
+      "pdf_pages": [
+        180
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Includes the short Exterior line 13, absent from raw OCR. Faded proper names, angel wording at lines 5–8 and final letters need precise collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT13-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-8CCF16F0BDEE",
+      "expected_text_sha256": "e0edb7d28e8f166c9dbb94fe8cf73af5ceece0e20ca0756a2eda5686b8e9cc98",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-13-proof02.txt",
+      "corrected_content_sha256": "b6c69392644e04befb2a30fa13ef4a7c3698f0bde0b5a622a30b70dd11b7d910",
+      "pdf_pages": [
+        184
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Includes Exterior lines 9–12. Incantatory strings at lines 1, 8–9 and 12, source dot positions, names and restoration brackets need full collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT14-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-7F3508798F65",
+      "expected_text_sha256": "9a1423c34cd09da87969cbe35ac83d824a276f107603c4ed6b6f5153085a5f27",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-14-proof02.txt",
+      "corrected_content_sha256": "b88e3f5438e7259ca31af38b44b388beb5b824a793d638f91145ad325c996b18",
+      "pdf_pages": [
+        189
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Retains Hebrew fragments and incantatory strings; line-4 dispersed loss runs retained. Magical names and full dot positions remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT15-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-23DA7F7A7A3B",
+      "expected_text_sha256": "e71aecb2f0522d19f0e4eacc556a87cecf0bf190074033194ce1aa9949700807",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-15-proof02.txt",
+      "corrected_content_sha256": "cd8539740d7251a39f826368e1973a6cf8740395161da0f5c22197993c703d1f",
+      "pdf_pages": [
+        191
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Lines 4–5 have extended project doubts around difficult source wording; they are NOT resolved by grammar or a parallel. Line-8 and line-9 restorations and loss blocks retained. Full source collation required. A second visual pass corrected an omitted initial bet inside the tentative line5 phrase, with an append-only superseding partial review. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT16-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-1A53F04B1B8D",
+      "expected_text_sha256": "91ccf2af246348c40a04de0577d20c3404eca7cc295edeecd86249e22ed7a416",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-16-proof02.txt",
+      "corrected_content_sha256": "1a6dec3fddf6681c8bcbfd6eebb8d02ccc6d2127e2ebb83ee1fa2337b266a691",
+      "pdf_pages": [
+        194
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Visually compared the whole fourteen-line block including the biblical closing. Faded glyphs, final letters, name variants and source punctuation require the further exact pass. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT17-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-C4227E0C8605",
+      "expected_text_sha256": "9c356e22a8305b615687ff4af27d3df58f825b9f6420271d84c4c5f6481c5782",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-17-proof02.txt",
+      "corrected_content_sha256": "f2ef98ac0e27e559c6b786730b4d564e31a76290300dd62e3b2dd29c87c980f9",
+      "pdf_pages": [
+        196
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Whole thirteen-line block compared; names and the Joshua ben Perahiah formula retained as this witness prints them. Joined name at line 10 retained; exact spacing, dots and final letters remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT18-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-5E3D46D41FE7",
+      "expected_text_sha256": "2d89994c550f7c0397aa1b5acae72691cde03cc59d49a4b9c7288242acdf4830",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-18-proof02.txt",
+      "corrected_content_sha256": "bd21c3f0da1fa512f0e688707b0d3fef36eed26a5ae771e11382ec2290452c88",
+      "pdf_pages": [
+        199
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Whole twelve-line block compared, including bracketed restorations and the final six-days formula. The letter sequence at line 11 remains tentative; source-dot positions, formula and names remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT19-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-00CAB584E3AA",
+      "expected_text_sha256": "6d8ebb141268c671fd2ca9b2514c5ba89c3b0c22736953dd7937e81d645f131f",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-19-proof02.txt",
+      "corrected_content_sha256": "1af3d6e32d494c8d49f2bda8b00be8feaf494d217bff3421f0c14e869aba7fce",
+      "pdf_pages": [
+        201
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. All twenty lines captured. Printed heading is CBS16018, while the existing catalogue appearance title notes the register omitted an inventory number. Locator reports the edition heading; no identifier, claim or identity link changes. Magical names, line18–19 project doubts, broken compounds and dots require precise collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT20-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-94810881E40B",
+      "expected_text_sha256": "ad7beccaec88a19f1d814883c14fea073eefb3f5fb01144fa5775410c3b8e5cb",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-20-proof02.txt",
+      "corrected_content_sha256": "26412a9910d75f9e16ce58a0c0d61f9f95400bfe439af0016e084364bdc85214",
+      "pdf_pages": [
+        207
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Five numbered lines plus the invocation beside the first two names captured. Uncertain name at line 2 explicitly marked. Brace arrangement is normalized and documented; not a continuous linear inscription reading. Verify repeated aleph counts and original typography. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT21-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-5C1B2110498F",
+      "expected_text_sha256": "88cf2e4d048ffa837960798e7b5f0ad1614fdf52970159ccad35c34a89eae573",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-21-proof02.txt",
+      "corrected_content_sha256": "71f202767093a606ce7c04d733eb340dee2464f754112c1b9990c625814c78a3",
+      "pdf_pages": [
+        209
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Independent left-column witness checked, four numbered lines plus unnumbered Amen closing. No copying of No.22 or23; retain source בישי and restoration brackets. Exact source-dot collation remains open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT22-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-2AD343A4E286",
+      "expected_text_sha256": "0ff269eae4960119300fb792c1d857c24ff03bad1435ed126aebb8d8b3dcd16c",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-22-proof02.txt",
+      "corrected_content_sha256": "8f692375f2ca64a4e2f4b7b83501ad2204650c4f8fa06bf182f80b482419f6da",
+      "pdf_pages": [
+        209
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Independent center-column witness checked, five numbered lines. Cross-wrap restoration ומ[חתם ב]שבעה retained. Distinct מין phrase retained; source-dotted words flagged at word level. Letter dots and damaged ending remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT23-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-AB2E78F08206",
+      "expected_text_sha256": "0e0f8106b17dcd3a5ced459277fe2fb45c3d8e64bf609c53df848abd360e206a",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-23-proof02.txt",
+      "corrected_content_sha256": "cfe8a5d84ec6d0b18454d3a6dacf77be66d8a7591e8c1b3d18b0b77553574d4a",
+      "pdf_pages": [
+        209
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Independent right-column witness checked, four numbered lines plus unnumbered Amen closing. Distinct forms ומחת[א]ם and דיחתימי retained. Source נוקאומוקא represented with normalized word spacing. Precise letters, dots and spacing remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT24-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-1EDCFF951B2E",
+      "expected_text_sha256": "6c23c20097fe4f58b840cddd0ef3a72b896698d3a2a0d3e05325f87124909caf",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-24-proof02.txt",
+      "corrected_content_sha256": "1a7acdb25d1214064ef47cef843fcb51aa29d3e32c9a581d93e2ddd147e26125",
+      "pdf_pages": [
+        211
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Whole six-line printed block compared; preserves multiple named clients and source lacunae. Dotted words at line 5 and damaged line-6 closing require precise checking. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT25-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-E5DB6B3A7C8D",
+      "expected_text_sha256": "c679ae655441a9e2e6c8c446f1febcd9e81022b9332079a8aa2b59292ccad451",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-25-proof02.txt",
+      "corrected_content_sha256": "4429566452c7d00f4cf2873bc766d043cb581453591ebe3bd9c9775605330648",
+      "pdf_pages": [
+        213
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Whole seven-line block including the closing below the former crop boundary compared. Multiple dotted magical strings at lines 2–4 flagged at word level, not interpreted. Printed restorations and unresolved formulas require precise collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT26-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-76D57DE9FCD0",
+      "expected_text_sha256": "ac9a5f9cd36644dd00da371dd4105bdf2d89fe87004acef4d7ece397ad3cb9ba",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-26-proof02.txt",
+      "corrected_content_sha256": "5a069d11ac73721d1709b81ff0be2a014029a3c8b2d599d227becb8bdc02f6bd",
+      "pdf_pages": [
+        215
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Whole eight-line block compared; printed Hebrew quotations preserved beside Aramaic wording. Divine-name repeated-letter counts, unclear proper name, dot locations and fragmentary magical ending remain open. No substitution from canonical Biblical spelling. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT27-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-BF2E6133E952",
+      "expected_text_sha256": "ae0be5cbb9795bc88bb5eb15ae3079e5897d133cc4136a2cd8499c607f52c724",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-27-proof02.txt",
+      "corrected_content_sha256": "127d48e06053283624a97aa57fa69e24b259b79d2288100ba5201005a83c2389",
+      "pdf_pages": [
+        218
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Only the eleven lines printed by Montgomery captured; later damaged lines not presented in the edition. Project doubts converted to distinct double brackets; magic names, dots and spellings remain partial. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT28-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-9B748691CB2A",
+      "expected_text_sha256": "e5a3bdec6b2bd5e998ccb7811f86802340fe856f8fef936632bd174031ab33e4",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-28-proof02.txt",
+      "corrected_content_sha256": "b7dc4e7cf9cd4f328c70f9c9e8b2f24517ff5891446fb5901a1bdcfe5f7fe913",
+      "pdf_pages": [
+        219
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Whole five-line fragmented block compared; source brackets and loss runs retained, without invented completion. Many inferior dots remain to be collated precisely, particularly lines 2–5; names and formula remain tentative. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT29-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-2093AEACB9E1",
+      "expected_text_sha256": "7a7b195b493e8a791ba79cedd32b4365d578d2ad306ff8ac4a70ea302283bf83",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-29-proof02.txt",
+      "corrected_content_sha256": "9a42caf5f520da6acea64dfe1defb238ababe3f198ac36e9671f1de2159ce522",
+      "pdf_pages": [
+        224
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Whole twelve-line fragmented block compared; source restoration crosses lines9–10 and stays open/closed in that order. Source-dotted words are marked at word level. Magical syllables and exact dots need full collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT30-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-BCECFE85E90E",
+      "expected_text_sha256": "257c7b8d863c8c72f713e67228a7e9d20fd5a92c57cfed3e856a76901c996900",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-30-proof02.txt",
+      "corrected_content_sha256": "9d6f2acb2d5205b038bcd4d64a1b647427a3ac7eb58302a37f6f5e9b39e27200",
+      "pdf_pages": [
+        227
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Whole five-line block compared; printed restoration ט[ר]דא retained. Names, unusual incantatory strings, precise dots and word spacing require full collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT31-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-EDDDC317B5F5",
+      "expected_text_sha256": "28bb6385acaa33c084ddb1bf3ef583deee18e5c282976c5c25214b210b444a90",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-31-proof02.txt",
+      "corrected_content_sha256": "050bec2407b09afcddc1eb89a097fefe27d18840c710a6e10f02e98bb61a6635",
+      "pdf_pages": [
+        229
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Syriac, ten lines with seven crosses after the Amen closing. Upper Syriac dots/seyame are not exhaustively encoded; repeated magical-letter counts and source dots need collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT32-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-C1BEDCEA7A10",
+      "expected_text_sha256": "6316b14474f456e242f04e7a426d88ffe0febce17852858d54a340175a831353",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-32-proof02.txt",
+      "corrected_content_sha256": "09c0fb929bbd2f122c81ce894d9b2bc43d30f7838fa3b697fe954ff8b68119c7",
+      "pdf_pages": [
+        231
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Syriac, twelve lines. Cross-line restoration10–11 retained. Divine-name sequences, magic syllables, final loss and upper/lower dots remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT33-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-B2CD420D3491",
+      "expected_text_sha256": "f2b16dc58a22390183d1d43e61329725b3e82a1099c30f9e5438aeed2a85c851",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-33-proof02.txt",
+      "corrected_content_sha256": "2ebc5076137706dea5b5c6171977cca2945e83089c622b857266053ba9b7618b",
+      "pdf_pages": [
+        236
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Syriac, thirteen lines. Restoration ודי[וא וסט]נא crosses the printed wrap within numbered line9. Existing no.32 parallel is not used to supply readings. Magic letters, exact dots and spellings remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT34-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-4F6D97A138F9",
+      "expected_text_sha256": "ed3abd61b219255d3803e3aec0dfa1f7094add75d1bea9e955b9b7a182fd9d61",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-34-proof02.txt",
+      "corrected_content_sha256": "941459917d4b3367b900ebaf2e00fd4032f1ff37a164feaf7555ffc20b76cb92",
+      "pdf_pages": [
+        237
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content corrected; private line diff retained. Hebrew-letter rendering of Syriac, fourteen lines. Repeated דאית and source name/formula variants retained; no harmonization. Exact seyame, upper/lower dots and consonants require collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT35-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-9C9A855DA25F",
+      "expected_text_sha256": "57bfd3a15b5102793e5a7aef45f37e404e4bce44074722380238255f4efbb181",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-35-proof02.txt",
+      "corrected_content_sha256": "bc0b2569a2842e0d0408f5f6a29ca71289b115ae0487c4846958f6190bd3e56d",
+      "pdf_pages": [
+        242
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Syriac, twelve lines; cross-line restoration7–8 preserved. Multiple named clients remain as printed. Magic fragments, upper/lower dots and final letters require full collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT36-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-1E3902E1EC41",
+      "expected_text_sha256": "067f3b7e1265bd8bc5f7ad28c144be7028a294a408dfc00a68cd4d474b98b79a",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-36-proof02.txt",
+      "corrected_content_sha256": "33427b699892b1d8adbcaaabc13aacfebd65ada627feb572b6d5dc1dc7a31649",
+      "pdf_pages": [
+        244
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Syriac, eight damaged lines. All loss runs and restorations retained without completing names. Inferior/upper dots, destructive-spirit names and difficult final wording require full collation. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT37-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-29009DDA1861",
+      "expected_text_sha256": "c8e27da59701fe6e88dd017d974846c9ed8892a2acb19280c6463494f94877f1",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-37-proof02.txt",
+      "corrected_content_sha256": "4f2455b27fdff6e077a4ec15c98a602326aaced5a9e0d1d76f3b0d97733db79e",
+      "pdf_pages": [
+        248
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Syriac, eleven damaged lines; source contents and No31 commentary classify Nos31–37 as Syriac. Project doubt marks uncertain וג fragment. Brackets, source dots and magic terms remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT38-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-1C2EC7F546FD",
+      "expected_text_sha256": "93c19a489cd1f91602f2ea7ecc9acd2141f5904ef32e2ae1f7da94b018db3748",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-38-proof02.txt",
+      "corrected_content_sha256": "e14fd63204fca4450bb7c7f1fcbb39ae30ee2ace66f25b085816e4711762f1a9",
+      "pdf_pages": [
+        250
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Mandaic, fourteen interior lines plus short Exterior15. Printed erasure annotation retained as editorial. Cross-line restoration13–14 remains open/closed as printed. Marked-dalet placement, consonants, names and original Mandaic-script facsimiles require further work. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT39-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-380CCE8D008B",
+      "expected_text_sha256": "61dfc4ce8bf9d1cfe7ce309a08a4a98a4d79984e006226e4a6d4358d4a545e8d",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-39-proof02.txt",
+      "corrected_content_sha256": "80eb3a5bdc5bd6aa68796a787f09558f52ca5db51cb10ad47627ce462f61334f",
+      "pdf_pages": [
+        254
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Mandaic, twelve lines. Source restorations retained, including פ[ת דא]דיא, marked dalet and damaged names; no grammatical correction. Exhaustive marked-dalet/letter-dot collation and actual Mandaic-script recovery remain open. Full source diacritic collation and specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT40-SEPARATE-PASS-PARTIAL-20261001",
+      "text_id": "TXT-92D0E6685DA8",
+      "expected_text_sha256": "fb4edb29c6f5a81de7f296b896b6dc2728a19a3ed53e1d713746f1d4e43751ca",
+      "corrected_content_path": "data/private/original-script/all-held-2026-10-01/montgomery-proof02/text-40-proof02.txt",
+      "corrected_content_sha256": "a13b82aaa83f8bdb23f552e13a9260bc1b037bd99f9c9a4f09d1b2000a1f5b63",
+      "pdf_pages": [
+        258
+      ],
+      "status": "partial_review",
+      "correction_notes": "Separate visual source pass: specified whole block checked, including continued and exterior material and closing lines formerly beyond crop boundaries. Content unchanged. Hebrew-letter rendering of Mandaic with printed numbered extent1–26 but only21 numbered anchors:1–6 and12–26. Source has a loss-dot row for lines7–11; not reconstructed or counted as captured text. Exterior16–26 retained. Broad restoration22–25, other gaps, marked dalet and names require precise collation; source sic retained. Full source diacritic collation and specialist interpretation remain open."
+    }
+  ]
+}

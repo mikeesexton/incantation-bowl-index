@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Held-source original-script pass and separate proofreading
+
+**Claimed:** TEXT-003 / TEXT-009 / TEXT-010 (Mike requested the whole held-source worklist and a separate proofreading pass)
+**Corpus:** changed (28 working edition texts, eight new source-page media, 68 append-only partial reviews; only 40 existing Montgomery text rows revised) — state digest `cda11337fcb1`
+**Tests:** 367 Python and 51 Node tests pass; SQLite integrity/foreign keys and scoped table/row deltas pass; all capture/proof replays leave corpus unchanged; complete local Mike Access build audit 7/7
+
+- Completed the disposition pass through the frozen99 source appearances:67 working edition texts (54 native transcriptions,13 Hebrew-letter transliterations),32 unresolved character captures and45 same-source native-script gaps. These are source-appearance counts, not unique bowls or full physical inscriptions. AIT27 is outside the frozen roster and received an additional partial pass.
+- Added Jena37–40 actual Unicode Mandaic using the retained embedded-font glyph atlas; Gordon A–O (12 Hebrew-script transcriptions,three Hebrew-letter Mandaic transliterations); Ellis1–5; Stübe VA2416; Ford AS13,Davidovitz27,SEF1073. Total28,663 characters. Exact pages, columns, exterior text, source loss, source repetitions and uncertainties preserved. Jena40 Latin fragment/Exterior8 excluded; Gordon parallel columns isolated; Stübe54–57 repeated as printed.
+- Separate source pass corrected22 new drafts and8 earlier Montgomery contents (1,14,17,26,27,29,30,34); all40 Montgomery entries including AIT27 checked at bounded block level. Sixty-eight new partial_reviews; zero full character/dot checks or specialist certifications. Initial drafts/before-snapshots retained. Native recovery, source dots/seyame, marked-dalet positions, damaged names and magic strings remain open.
+- Inspected all76 Pognon section pages and Ellis6 Syriac page. Registered exact native-edition page pointers and per-item unresolved dispositions for all32; available OCR/contextual-font recovery was not reliable, so no spurious character text was imported. Most page rows already existed; combined manifests add eight new scan rows. Facsimiles and Hebrew-letter transliterations do not count as native character capture.
+- Consistent pre-ingest backup; protected expressions/manifests, fonts, OCR, crops and drafts stay ignored in the private vault. Public-domain manifests and content-free hashes/progress/native-gap receipts are tracked. All68 affected original-language rows have current partial reviews and full Mike Access content, while public projection withholds them. Personal audit ledger unchanged during this extraction write window; no review inferred.
+- Concurrent OPS session added one separately manifested Pognon14 commentary summary during validation and recorded the combined state/reports. Its row, reader changes and commit are preserved and excluded from extraction counts. All other pre-existing records, identity membership, claims, translations and release decisions are unchanged. Regenerated maturity/proofreading/corpus reports and local Mike Access; no deployment or push.
+- Next: trustworthy native Mandaic/Syriac recognition plus manual/specialist collation for45 native gaps; precise character/diacritic collation of working captures; inventory additional editions before expanding coverage. This pass is not corpus-wide extraction completion. See research/audits/original_script_all_held_2026-10-01.md.
+
 ## 2026-10-01 — Codex — Refine batch 2 reader presentation
 
 **Claimed:** OPS (Mike-requested reader refinements)
@@ -39,7 +53,6 @@ the dated reports under `data/reports/`.
 - Reclassify 31 explicitly documented historical whole-section OCR summaries as source_ocr in the private presentation only. Keep the exact OCR under Research details → Uncorrected source OCR, with its mixed-content/glyph warning. Pognon14 now has a separately attributed readable English project summary explaining Pognon's comparison with the previous inscription and limited translation. No source proofreading, independent reading or public approval was inferred.
 - Regenerated reports and the complete local Mike Access build; restarted the local reader. The combined state/report snapshot also contains the concurrent TEXT session's 28 texts, eight media and 68 proofreading reviews, identified by their held-source capture/partial-review notes and that session's manifests. Those additions preceded this session's consistent pre-ingest backup and are not claimed as this session's work. Concurrent claims/manifests and latest roadmap input/output updates remain unstaged. No deployment or push.
 - Next: continue Mike's personal audit and the separate TEXT workstream; keep original records and explicit follow-ups available.
-
 
 ## 2026-10-01 — Codex — Batch 2 personal audit corrections
 

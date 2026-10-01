@@ -1,0 +1,2156 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-01T11:33:06+00:00",
+  "frozen_inventory": "research/audits/original_script_backlog_2026-09-30.json",
+  "counts": {
+    "frozen_source_appearances": 99,
+    "working_edition_texts": 67,
+    "working_native_script_transcriptions": 54,
+    "working_hebrew_letter_transliterations": 13,
+    "no_recovered_character_text": 32,
+    "same_source_native_script_gaps": 45,
+    "full_character_checks": 0
+  },
+  "coverage_unit": "source appearance, not unique physical bowl",
+  "scope_note": "All 99 frozen targets have an explicit disposition. Run is not corpus-wide extraction completion. AIT27 pilot is outside this frozen roster and has an additional partial separate source pass. Working normalized captures and partial review do not imply diplomatic accuracy, physical completeness, native recovery where transliteration is stored, or specialist certification. Existing ABS/Burberry/Jena/Levene rows were not duplicated; later inventory expansion and character-level checking remain open.",
+  "entries": [
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-CDECE1AA8025",
+      "identity_ids": [
+        "IDENT-3799CFE813B5"
+      ],
+      "object_ids": [
+        "IBI-7680B927BB2F"
+      ],
+      "source_appearance_locator": "p. 321, item 1",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-DB7EE3F0F524",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 833,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "10f70f905794b6c77c0a129d37ac58cce0bba3a9e181dccfe1d01ae234ba115c",
+      "pdf_pages": [
+        123
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D9DDA0AC69C7",
+      "identity_ids": [
+        "IDENT-5B1343517775"
+      ],
+      "object_ids": [
+        "IBI-5B1343517775"
+      ],
+      "source_appearance_locator": "p. 321, item 2",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-B3E117E7C76A",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 811,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "7f6512fc442cd5f3a2271a2a105061155438b8256ea43b097c834d32ef77c108",
+      "pdf_pages": [
+        127
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-FE0FFEDE62F8",
+      "identity_ids": [
+        "IDENT-28AFCD028373"
+      ],
+      "object_ids": [
+        "IBI-28AFCD028373"
+      ],
+      "source_appearance_locator": "p. 321, item 3",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-DC35DC37F907",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1621,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "b792533d06e1fbec65fc10083035b86ff674bb78a4b3c300f96855b48c3d2167",
+      "pdf_pages": [
+        133
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-C772190086F2",
+      "identity_ids": [
+        "IDENT-33C9806531BF"
+      ],
+      "object_ids": [
+        "IBI-917276249B87"
+      ],
+      "source_appearance_locator": "p. 321, item 4",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-701DBFDAB61A",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 777,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "ae335ea0709136515de11a9f226595dc90dcaacb05c9e259f5857bbc94121139",
+      "pdf_pages": [
+        139
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-438DDE9F3E25",
+      "identity_ids": [
+        "IDENT-412E0B1680FB"
+      ],
+      "object_ids": [
+        "IBI-C3B04E20C369"
+      ],
+      "source_appearance_locator": "p. 322, item 10",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-7662F04E373F",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 568,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "6180408357ad3b7ea0ff20237000de40126dfb237dfc7be2a8ffaad3e4f26f4c",
+      "pdf_pages": [
+        171
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-3126B58BCEBD",
+      "identity_ids": [
+        "IDENT-3E0C956BD836"
+      ],
+      "object_ids": [
+        "IBI-49D1BAB76E01"
+      ],
+      "source_appearance_locator": "p. 322, item 11",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-E3663576CF80",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 854,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "47bd7a5d96255a4cb8541ff96064c3e2c03079fe9616343ed277d6bb465e19b5",
+      "pdf_pages": [
+        174,
+        175,
+        176
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-1310B7191112",
+      "identity_ids": [
+        "IDENT-24674D1820C6"
+      ],
+      "object_ids": [
+        "IBI-E135C0EA9CED"
+      ],
+      "source_appearance_locator": "p. 322, item 5",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-A5C9F6D65B1E",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 850,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "f671704e0aff4231270f72839ebe42bb30b0799c9119e8e81c2372362cb36c27",
+      "pdf_pages": [
+        144
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-864157C44B8B",
+      "identity_ids": [
+        "IDENT-6005503283A5"
+      ],
+      "object_ids": [
+        "IBI-B6246E14776E"
+      ],
+      "source_appearance_locator": "p. 322, item 6",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-E48A31837588",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1237,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "84d6930eacde4bbb9b7cb6a84c58dff9669a1050f9d25b0364bb63b566733bc5",
+      "pdf_pages": [
+        147
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-78ECA5E16211",
+      "identity_ids": [
+        "IDENT-013FBB80706C"
+      ],
+      "object_ids": [
+        "IBI-013FBB80706C"
+      ],
+      "source_appearance_locator": "p. 322, item 7",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-2B13CEE8FD44",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1911,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "8895f7f4a09585b90caf27c8b74919e969c7bfe4c6fdea58d3dd4dfc4789bb3d",
+      "pdf_pages": [
+        151,
+        152,
+        153
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D433CFA5D994",
+      "identity_ids": [
+        "IDENT-586A5A88B7DC"
+      ],
+      "object_ids": [
+        "IBI-5C355EF43D8D"
+      ],
+      "source_appearance_locator": "p. 322, item 8",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-49CF317613E4",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 2132,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "f08b079c77694a5d7b2da1e9d49d1c6342c4f5a5a1fbf2fdb68b7d8340a6dc4c",
+      "pdf_pages": [
+        160,
+        161
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-07A0BD3CAEDC",
+      "identity_ids": [
+        "IDENT-2D03029F6DEE"
+      ],
+      "object_ids": [
+        "IBI-B54D497CC676"
+      ],
+      "source_appearance_locator": "p. 322, item 9",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-E7B6A380160B",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 847,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "8e67fcc5cf9cd420a8a7e524ea1522cd6dad9ebde558354e22d9cb320cb489ce",
+      "pdf_pages": [
+        167
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-6434CEAE80BD",
+      "identity_ids": [
+        "IDENT-02B43ABF13D9"
+      ],
+      "object_ids": [
+        "IBI-4500756E262F"
+      ],
+      "source_appearance_locator": "p. 323, item 12",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-618B05B28A08",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1017,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "036577cc1092757924de8b31e9119dcd5304a1ab4f59b846bb783922f67f644c",
+      "pdf_pages": [
+        180
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-24BFA2C91F7E",
+      "identity_ids": [
+        "IDENT-2CD9170DA696"
+      ],
+      "object_ids": [
+        "IBI-88103E2EB680"
+      ],
+      "source_appearance_locator": "p. 323, item 13",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-8CCF16F0BDEE",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 821,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "b6c69392644e04befb2a30fa13ef4a7c3698f0bde0b5a622a30b70dd11b7d910",
+      "pdf_pages": [
+        184
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-E987653764E6",
+      "identity_ids": [
+        "IDENT-319F3DE276D8"
+      ],
+      "object_ids": [
+        "IBI-CF7556423B9D"
+      ],
+      "source_appearance_locator": "p. 323, item 14",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-7F3508798F65",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 616,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "b88e3f5438e7259ca31af38b44b388beb5b824a793d638f91145ad325c996b18",
+      "pdf_pages": [
+        189
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-681E7CFAACAF",
+      "identity_ids": [
+        "IDENT-0DDF3246CBCA"
+      ],
+      "object_ids": [
+        "IBI-7F04261178CB"
+      ],
+      "source_appearance_locator": "p. 323, item 15",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-23DA7F7A7A3B",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 763,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "cd8539740d7251a39f826368e1973a6cf8740395161da0f5c22197993c703d1f",
+      "pdf_pages": [
+        191
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-79114E948F02",
+      "identity_ids": [
+        "IDENT-2C4A68905E21"
+      ],
+      "object_ids": [
+        "IBI-DEDC98D3F366"
+      ],
+      "source_appearance_locator": "p. 323, item 16",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-1A53F04B1B8D",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1040,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "1a6dec3fddf6681c8bcbfd6eebb8d02ccc6d2127e2ebb83ee1fa2337b266a691",
+      "pdf_pages": [
+        194
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-C3C4F898D923",
+      "identity_ids": [
+        "IDENT-09C22FFFD031"
+      ],
+      "object_ids": [
+        "IBI-A2E775143F9F"
+      ],
+      "source_appearance_locator": "p. 323, item 17",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-C4227E0C8605",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 885,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "f2ef98ac0e27e559c6b786730b4d564e31a76290300dd62e3b2dd29c87c980f9",
+      "pdf_pages": [
+        196
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-A79508FF2125",
+      "identity_ids": [
+        "IDENT-63DC1A6B27EF"
+      ],
+      "object_ids": [
+        "IBI-CEC11D2DBB44"
+      ],
+      "source_appearance_locator": "p. 323, item 18",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-5E3D46D41FE7",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 939,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "bd21c3f0da1fa512f0e688707b0d3fef36eed26a5ae771e11382ec2290452c88",
+      "pdf_pages": [
+        199
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-EAD0AE7DED3E",
+      "identity_ids": [
+        "IDENT-3302F57D7AE1"
+      ],
+      "object_ids": [
+        "IBI-84F6B8FD30B3"
+      ],
+      "source_appearance_locator": "p. 324, item 19",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-00CAB584E3AA",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 2137,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "1af3d6e32d494c8d49f2bda8b00be8feaf494d217bff3421f0c14e869aba7fce",
+      "pdf_pages": [
+        201
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-279C27F275C2",
+      "identity_ids": [
+        "IDENT-ABDE8A973358"
+      ],
+      "object_ids": [
+        "IBI-ABDE8A973358"
+      ],
+      "source_appearance_locator": "p. 324, item 20",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-94810881E40B",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 231,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "26412a9910d75f9e16ce58a0c0d61f9f95400bfe439af0016e084364bdc85214",
+      "pdf_pages": [
+        207
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-76436A9290DC",
+      "identity_ids": [
+        "IDENT-26BDEA55EA1E"
+      ],
+      "object_ids": [
+        "IBI-26BDEA55EA1E"
+      ],
+      "source_appearance_locator": "p. 324, item 21",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-5C1B2110498F",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 277,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "71f202767093a606ce7c04d733eb340dee2464f754112c1b9990c625814c78a3",
+      "pdf_pages": [
+        209
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-07648364502C",
+      "identity_ids": [
+        "IDENT-5002143E0DC9"
+      ],
+      "object_ids": [
+        "IBI-6C4D8112FFE2"
+      ],
+      "source_appearance_locator": "p. 324, item 22",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-2AD343A4E286",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 365,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "8f692375f2ca64a4e2f4b7b83501ad2204650c4f8fa06bf182f80b482419f6da",
+      "pdf_pages": [
+        209
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-49C686AFBC6E",
+      "identity_ids": [
+        "IDENT-C6413BF444D0"
+      ],
+      "object_ids": [
+        "IBI-DF04AC9DDBFB"
+      ],
+      "source_appearance_locator": "p. 324, item 23",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-AB2E78F08206",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 305,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "cfe8a5d84ec6d0b18454d3a6dacf77be66d8a7591e8c1b3d18b0b77553574d4a",
+      "pdf_pages": [
+        209
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-2A8A4134889F",
+      "identity_ids": [
+        "IDENT-C2E332F154A0"
+      ],
+      "object_ids": [
+        "IBI-C2E332F154A0"
+      ],
+      "source_appearance_locator": "p. 324, item 24",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-1EDCFF951B2E",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 353,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "1a7acdb25d1214064ef47cef843fcb51aa29d3e32c9a581d93e2ddd147e26125",
+      "pdf_pages": [
+        211
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-F4AE8487EFD4",
+      "identity_ids": [
+        "IDENT-74625165CE1F"
+      ],
+      "object_ids": [
+        "IBI-74625165CE1F"
+      ],
+      "source_appearance_locator": "p. 325, item 25",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-E5DB6B3A7C8D",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 696,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "4429566452c7d00f4cf2873bc766d043cb581453591ebe3bd9c9775605330648",
+      "pdf_pages": [
+        213
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-F9A77B2A4270",
+      "identity_ids": [
+        "IDENT-5FCC4322461F"
+      ],
+      "object_ids": [
+        "IBI-F6ED61BF3D88"
+      ],
+      "source_appearance_locator": "p. 325, item 26",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-76D57DE9FCD0",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 659,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "5a069d11ac73721d1709b81ff0be2a014029a3c8b2d599d227becb8bdc02f6bd",
+      "pdf_pages": [
+        215
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-5C2E170AF9AA",
+      "identity_ids": [
+        "IDENT-310095C53E06"
+      ],
+      "object_ids": [
+        "IBI-325647D3DF8D"
+      ],
+      "source_appearance_locator": "p. 325, item 28",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-9B748691CB2A",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 531,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "b7dc4e7cf9cd4f328c70f9c9e8b2f24517ff5891446fb5901a1bdcfe5f7fe913",
+      "pdf_pages": [
+        219
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-19E688CF629E",
+      "identity_ids": [
+        "IDENT-2302CEAE11AF"
+      ],
+      "object_ids": [
+        "IBI-5CB5A9A5E46E"
+      ],
+      "source_appearance_locator": "p. 325, item 29",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-2093AEACB9E1",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 808,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "9a42caf5f520da6acea64dfe1defb238ababe3f198ac36e9671f1de2159ce522",
+      "pdf_pages": [
+        224
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-64DA17599F84",
+      "identity_ids": [
+        "IDENT-32E80C06D6CC"
+      ],
+      "object_ids": [
+        "IBI-D8319A094023"
+      ],
+      "source_appearance_locator": "p. 325, item 30",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-BCECFE85E90E",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 413,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "9d6f2acb2d5205b038bcd4d64a1b647427a3ac7eb58302a37f6f5e9b39e27200",
+      "pdf_pages": [
+        227
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-0793AD650B2E",
+      "identity_ids": [
+        "IDENT-079F0B82D514"
+      ],
+      "object_ids": [
+        "IBI-079F0B82D514"
+      ],
+      "source_appearance_locator": "p. 325, item 31",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-EDDDC317B5F5",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 481,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "050bec2407b09afcddc1eb89a097fefe27d18840c710a6e10f02e98bb61a6635",
+      "pdf_pages": [
+        229
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D4C5D8A61D40",
+      "identity_ids": [
+        "IDENT-527704D6B074"
+      ],
+      "object_ids": [
+        "IBI-527704D6B074"
+      ],
+      "source_appearance_locator": "p. 325, item 32",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-C1BEDCEA7A10",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 972,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "09c0fb929bbd2f122c81ce894d9b2bc43d30f7838fa3b697fe954ff8b68119c7",
+      "pdf_pages": [
+        231
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-802C87223FEE",
+      "identity_ids": [
+        "IDENT-2422A6BE70E3"
+      ],
+      "object_ids": [
+        "IBI-E10F6716C2C1"
+      ],
+      "source_appearance_locator": "p. 326, item 33",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-B2CD420D3491",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 809,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "2ebc5076137706dea5b5c6171977cca2945e83089c622b857266053ba9b7618b",
+      "pdf_pages": [
+        236
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-D724A7994ABA",
+      "identity_ids": [
+        "IDENT-1A098436B031"
+      ],
+      "object_ids": [
+        "IBI-F094DE6A4112"
+      ],
+      "source_appearance_locator": "p. 326, item 34",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-4F6D97A138F9",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 1268,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "941459917d4b3367b900ebaf2e00fd4032f1ff37a164feaf7555ffc20b76cb92",
+      "pdf_pages": [
+        237
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-0D6521BE33C9",
+      "identity_ids": [
+        "IDENT-2F518E039625"
+      ],
+      "object_ids": [
+        "IBI-6E087B8C539F"
+      ],
+      "source_appearance_locator": "p. 326, item 35",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-9C9A855DA25F",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 899,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "bc0b2569a2842e0d0408f5f6a29ca71289b115ae0487c4846958f6190bd3e56d",
+      "pdf_pages": [
+        242
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-83950F7E2B49",
+      "identity_ids": [
+        "IDENT-06BD95937A55"
+      ],
+      "object_ids": [
+        "IBI-CD3E783556B1"
+      ],
+      "source_appearance_locator": "p. 326, item 36",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-1E3902E1EC41",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 544,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "33427b699892b1d8adbcaaabc13aacfebd65ada627feb572b6d5dc1dc7a31649",
+      "pdf_pages": [
+        244
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-E275724F7B16",
+      "identity_ids": [
+        "IDENT-29AAFE861F78"
+      ],
+      "object_ids": [
+        "IBI-44BC3FE36601"
+      ],
+      "source_appearance_locator": "p. 326, item 37",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-29009DDA1861",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 769,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "4f2455b27fdff6e077a4ec15c98a602326aaced5a9e0d1d76f3b0d97733db79e",
+      "pdf_pages": [
+        248
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-96871B3E4365",
+      "identity_ids": [
+        "IDENT-544ABA7B7DAA"
+      ],
+      "object_ids": [
+        "IBI-544ABA7B7DAA"
+      ],
+      "source_appearance_locator": "p. 326, item 38",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-1C2EC7F546FD",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 1143,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "e14fd63204fca4450bb7c7f1fcbb39ae30ee2ace66f25b085816e4711762f1a9",
+      "pdf_pages": [
+        250
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-B8B7514BF026",
+      "identity_ids": [
+        "IDENT-9D13CDD62235"
+      ],
+      "object_ids": [
+        "IBI-DC36E80A1951"
+      ],
+      "source_appearance_locator": "p. 326, item 39",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-380CCE8D008B",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 754,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "80eb3a5bdc5bd6aa68796a787f09558f52ca5db51cb10ad47627ce462f61334f",
+      "pdf_pages": [
+        254
+      ]
+    },
+    {
+      "source_id": "SRC-943673B56FB8",
+      "appearance_id": "APP-7F442D32415F",
+      "identity_ids": [
+        "IDENT-79D32E0C0500"
+      ],
+      "object_ids": [
+        "IBI-A3736CD7D997"
+      ],
+      "source_appearance_locator": "p. 326, item 40",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-92D0E6685DA8",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 1491,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "a13b82aaa83f8bdb23f552e13a9260bc1b037bd99f9c9a4f09d1b2000a1f5b63",
+      "pdf_pages": [
+        258
+      ]
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-0EF7B5C8D91C",
+      "identity_ids": [
+        "IDENT-85880E054A2C"
+      ],
+      "object_ids": [
+        "IBI-85880E054A2C"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 10; numbered text section, printed pp. 17-92; corresponding plate no. 10",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        44
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-7A295C8A0971",
+      "identity_ids": [
+        "IDENT-B9953E43CB15"
+      ],
+      "object_ids": [
+        "IBI-B9953E43CB15"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 11; numbered text section, printed pp. 17-92; corresponding plate no. 11",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        45
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-ABE046D0377C",
+      "identity_ids": [
+        "IDENT-81533E5D52C6"
+      ],
+      "object_ids": [
+        "IBI-81533E5D52C6"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 12; numbered text section, printed pp. 17-92; corresponding plate no. 12",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        46,
+        47
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-129525A3C993",
+      "identity_ids": [
+        "IDENT-F5AF07BA4A16"
+      ],
+      "object_ids": [
+        "IBI-F5AF07BA4A16"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 13; numbered text section, printed pp. 17-92; corresponding plate no. 13",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        47,
+        48
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-7F38071BF44D",
+      "identity_ids": [
+        "IDENT-4CE4A3A99CC4"
+      ],
+      "object_ids": [
+        "IBI-4CE4A3A99CC4"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 14; numbered text section, printed pp. 17-92; corresponding plate no. 14",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        52,
+        53
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-B89D47597FD7",
+      "identity_ids": [
+        "IDENT-73CCCFD9AAC1"
+      ],
+      "object_ids": [
+        "IBI-73CCCFD9AAC1"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 15; numbered text section, printed pp. 17-92; corresponding plate no. 15",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-D3FD184611BD",
+      "identity_ids": [
+        "IDENT-066A91C46861"
+      ],
+      "object_ids": [
+        "IBI-066A91C46861"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 16; numbered text section, printed pp. 17-92; corresponding plate no. 16",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        61,
+        62,
+        63
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-D7FE89B99298",
+      "identity_ids": [
+        "IDENT-8006D542AA18"
+      ],
+      "object_ids": [
+        "IBI-8006D542AA18"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 17; numbered text section, printed pp. 17-92; corresponding plate no. 17",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        64,
+        65
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-FCECCBBB81E4",
+      "identity_ids": [
+        "IDENT-87F95AD9539A"
+      ],
+      "object_ids": [
+        "IBI-87F95AD9539A"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 18; numbered text section, printed pp. 17-92; corresponding plate no. 18",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        66,
+        67
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-091BF3379EE0",
+      "identity_ids": [
+        "IDENT-DF12373ABCD4"
+      ],
+      "object_ids": [
+        "IBI-DF12373ABCD4"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 19; numbered text section, printed pp. 17-92; corresponding plate no. 19",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        69
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-CDAA297CE95A",
+      "identity_ids": [
+        "IDENT-803DAD53D57E"
+      ],
+      "object_ids": [
+        "IBI-803DAD53D57E"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 1; numbered text section, printed pp. 17-92; corresponding plate no. 1",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        28
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-3997D9594090",
+      "identity_ids": [
+        "IDENT-4BA618E6BAB7"
+      ],
+      "object_ids": [
+        "IBI-4BA618E6BAB7"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 20; numbered text section, printed pp. 17-92; corresponding plate no. 20",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        70,
+        71
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-44D928BC072B",
+      "identity_ids": [
+        "IDENT-5F8407C1637E"
+      ],
+      "object_ids": [
+        "IBI-5F8407C1637E"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 21; numbered text section, printed pp. 17-92; corresponding plate no. 21",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        71,
+        72
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-DB21293C4776",
+      "identity_ids": [
+        "IDENT-F0D16C11FE27"
+      ],
+      "object_ids": [
+        "IBI-F0D16C11FE27"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 22; numbered text section, printed pp. 17-92; corresponding plate no. 22",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        72,
+        73,
+        74
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-0F2F71E04948",
+      "identity_ids": [
+        "IDENT-EF7BDE184446"
+      ],
+      "object_ids": [
+        "IBI-EF7BDE184446"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 23; numbered text section, printed pp. 17-92; corresponding plate no. 23",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        77,
+        78
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-3733E65ECF01",
+      "identity_ids": [
+        "IDENT-1D5F283ECCE9"
+      ],
+      "object_ids": [
+        "IBI-1D5F283ECCE9"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 24; numbered text section, printed pp. 17-92; corresponding plate no. 24",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        80,
+        81,
+        82
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-1FE3188E1492",
+      "identity_ids": [
+        "IDENT-6BE776EF5D76"
+      ],
+      "object_ids": [
+        "IBI-6BE776EF5D76"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 25; numbered text section, printed pp. 17-92; corresponding plate no. 25",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        83,
+        84
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-2C3E6DCCDCCA",
+      "identity_ids": [
+        "IDENT-A63FE866AC15"
+      ],
+      "object_ids": [
+        "IBI-A63FE866AC15"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 26; numbered text section, printed pp. 17-92; corresponding plate no. 26",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        87
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-6CF600CC7FF0",
+      "identity_ids": [
+        "IDENT-6F0F7DCA91B9"
+      ],
+      "object_ids": [
+        "IBI-6F0F7DCA91B9"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 27; numbered text section, printed pp. 17-92; corresponding plate no. 27",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        88,
+        89
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-953232579597",
+      "identity_ids": [
+        "IDENT-53436A3039A9"
+      ],
+      "object_ids": [
+        "IBI-53436A3039A9"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 28; numbered text section, printed pp. 17-92; corresponding plate no. 28",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        92,
+        93
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-68DC465FB10C",
+      "identity_ids": [
+        "IDENT-602DCEB1131F"
+      ],
+      "object_ids": [
+        "IBI-602DCEB1131F"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 29; numbered text section, printed pp. 17-92; corresponding plate no. 29",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        95,
+        96,
+        98
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-EBEEFEECEFC7",
+      "identity_ids": [
+        "IDENT-27D5447503D1"
+      ],
+      "object_ids": [
+        "IBI-27D5447503D1"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 2; numbered text section, printed pp. 17-92; corresponding plate no. 2",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        32,
+        33
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-73F7911C0BA2",
+      "identity_ids": [
+        "IDENT-55A65753F98F"
+      ],
+      "object_ids": [
+        "IBI-55A65753F98F"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 30; numbered text section, printed pp. 17-92; corresponding plate no. 30",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        98,
+        99
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-4CA754C44EDE",
+      "identity_ids": [
+        "IDENT-553C439A9041"
+      ],
+      "object_ids": [
+        "IBI-553C439A9041"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 31; numbered text section, printed pp. 88-92; no corresponding plate in held scan",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        99,
+        100
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-1EEC6342BDB6",
+      "identity_ids": [
+        "IDENT-841834AA23EE"
+      ],
+      "object_ids": [
+        "IBI-841834AA23EE"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 3; numbered text section, printed pp. 17-92; corresponding plate no. 3",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        33,
+        34,
+        35
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-883E9B89B134",
+      "identity_ids": [
+        "IDENT-6849AB56769C"
+      ],
+      "object_ids": [
+        "IBI-6849AB56769C"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 4; numbered text section, printed pp. 17-92; corresponding plate no. 4",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        36
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-111C687B7B7E",
+      "identity_ids": [
+        "IDENT-0F893C3C8B27"
+      ],
+      "object_ids": [
+        "IBI-0F893C3C8B27"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 5; numbered text section, printed pp. 17-92; corresponding plate no. 5",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        37,
+        38,
+        39
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-9BE810564E11",
+      "identity_ids": [
+        "IDENT-C3B7AF19392E"
+      ],
+      "object_ids": [
+        "IBI-C3B7AF19392E"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 6; numbered text section, printed pp. 17-92; corresponding plate no. 6",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        39,
+        40
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-B12F194FE0AD",
+      "identity_ids": [
+        "IDENT-D35F31FD9609"
+      ],
+      "object_ids": [
+        "IBI-D35F31FD9609"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 7; numbered text section, printed pp. 17-92; corresponding plate no. 7",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        41
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-35ABA29FF278",
+      "identity_ids": [
+        "IDENT-D9305B05E1A2"
+      ],
+      "object_ids": [
+        "IBI-D9305B05E1A2"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 8; numbered text section, printed pp. 17-92; corresponding plate no. 8",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        42,
+        43
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-E7D5F020B31C",
+      "appearance_id": "APP-9211ED37685E",
+      "identity_ids": [
+        "IDENT-F1DDD0F5B05B"
+      ],
+      "object_ids": [
+        "IBI-F1DDD0F5B05B"
+      ],
+      "source_appearance_locator": "Khouabir bowl no. 9; numbered text section, printed pp. 17-92; corresponding plate no. 9",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        43
+      ],
+      "reason": "Raster-only native Mandaic. Available Hebrew OCR is not trained for Mandaic; contextual font shapes/ligatures prevent reliable automatic Unicode recovery. Need Mandaic-aware recognition plus visual character collation, or specialist manual transcription. Do not back-convert Latin/Hebrew transliterations."
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-8741DAD4DE16",
+      "identity_ids": [
+        "IDENT-9C9E9A51F4FD"
+      ],
+      "object_ids": [
+        "IBI-9C9E9A51F4FD"
+      ],
+      "source_appearance_locator": "Entry 37 (HS 3011), p. 191",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-BA630D000E75",
+      "text_type": "transcription",
+      "script": "Mandaic",
+      "characters": 898,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "4c053a27d2b8c31023225ed038cc32c281827abfb714dd116a4e47961a74e47a",
+      "pdf_pages": [
+        215,
+        216,
+        217
+      ]
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-B931ED426F18",
+      "identity_ids": [
+        "IDENT-A827C761AE03"
+      ],
+      "object_ids": [
+        "IBI-A827C761AE03"
+      ],
+      "source_appearance_locator": "Entry 38 (HS 3021), p. 196",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-8381287E09DD",
+      "text_type": "transcription",
+      "script": "Mandaic",
+      "characters": 668,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "fb255fc2d77e6d8670072c5399394bb696409577c57aa39a35860204f89d47a6",
+      "pdf_pages": [
+        220,
+        221
+      ]
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-302F40CE8B7C",
+      "identity_ids": [
+        "IDENT-0FD203FF2582"
+      ],
+      "object_ids": [
+        "IBI-0FD203FF2582"
+      ],
+      "source_appearance_locator": "Entry 39 (HS 3025), p. 200",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-3355197A0358",
+      "text_type": "transcription",
+      "script": "Mandaic",
+      "characters": 781,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "49a0d9ddefd8d7b4cc108185f1a492ba5f389cc222795dff6733a13488747cd2",
+      "pdf_pages": [
+        224,
+        225
+      ]
+    },
+    {
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-886631B0382E",
+      "identity_ids": [
+        "IDENT-083CF78A7803"
+      ],
+      "object_ids": [
+        "IBI-083CF78A7803"
+      ],
+      "source_appearance_locator": "Entry 40 (HS 3054), p. 203",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-C32C236C1F60",
+      "text_type": "transcription",
+      "script": "Mandaic",
+      "characters": 650,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "6f418f01c87c5ad726d563384260b058ae7ce7bfdf1382122b1f05659ff847bb",
+      "pdf_pages": [
+        228
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-E9A404BCD123",
+      "identity_ids": [
+        "IDENT-444B0B07BA0E"
+      ],
+      "object_ids": [
+        "IBI-444B0B07BA0E"
+      ],
+      "source_appearance_locator": "text A, printed pp. 321-334; plate X",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-E70C738E38CD",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 588,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "6472a1f81260e96b286e137cb51e305a17a802b3115948e6d4922d71e6db9aac",
+      "pdf_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-8A3CC20AE0AC",
+      "identity_ids": [
+        "IDENT-6CF4E4167D3E"
+      ],
+      "object_ids": [
+        "IBI-6CF4E4167D3E"
+      ],
+      "source_appearance_locator": "text B, printed pp. 321-334; plate XI",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-D071F87ACE6E",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 727,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "e4cde2c7edca9f547ec36aa592ca90e248297c50cc39789561fccf4b311eaa3d",
+      "pdf_pages": [
+        7
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-803A0D1650EF",
+      "identity_ids": [
+        "IDENT-87782BA285D5"
+      ],
+      "object_ids": [
+        "IBI-87782BA285D5"
+      ],
+      "source_appearance_locator": "text C, printed pp. 321-334; plate XII",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-DB8F8A98D82C",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 724,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "948e7b70d2a0eec147f8b1e062d64180afdcabb447cf74d2ec3a091fe7d886c8",
+      "pdf_pages": [
+        9
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-9D5B95899923",
+      "identity_ids": [
+        "IDENT-54398C1767BE"
+      ],
+      "object_ids": [
+        "IBI-54398C1767BE"
+      ],
+      "source_appearance_locator": "text D, printed pp. 321-334; plate XIII",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-4B0C214D7021",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1236,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "11d51e688bb9724660fa16a471f6339694554e326eccadba7d1cfe5cff173907",
+      "pdf_pages": [
+        11
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-938C8FBAA0F3",
+      "identity_ids": [
+        "IDENT-8B111BFD04DA"
+      ],
+      "object_ids": [
+        "IBI-8B111BFD04DA"
+      ],
+      "source_appearance_locator": "text E, printed pp. 321-334; plate XIV",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-630ABD6EADBA",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 940,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "2c6959b0d3573fc0335862f0e7228f030688a22ed5e5bcb24b7b48263bc66886",
+      "pdf_pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "source_id": "SRC-60CB324330C9",
+      "appearance_id": "APP-0E6FA47A609E",
+      "identity_ids": [
+        "IDENT-AA3D4D3C35CC"
+      ],
+      "object_ids": [
+        "IBI-AA3D4D3C35CC"
+      ],
+      "source_appearance_locator": "text F, printed pp. 321-334; plate XV",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-1C3FEA95F548",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 805,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "3a382e2486f4b87e691bef86161288bb78f37febf2427ff1bff1539718b0f2d4",
+      "pdf_pages": [
+        14,
+        15
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-17C03AF3619C",
+      "identity_ids": [
+        "IDENT-F0173A70F87B"
+      ],
+      "object_ids": [
+        "IBI-F0173A70F87B"
+      ],
+      "source_appearance_locator": "text H, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-AF3A02203BD5",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 2230,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "914b57f5f707690a8456c4631adb3cbebda6529b562a640811a22202b8f32500",
+      "pdf_pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-5F9139280903",
+      "identity_ids": [
+        "IDENT-67E68F81FE63"
+      ],
+      "object_ids": [
+        "IBI-67E68F81FE63"
+      ],
+      "source_appearance_locator": "text I, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-0F624D94ABFB",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 448,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "760f9f7119475995645e86780fe7f46785b878f02dd487df6f405baa68d4db1c",
+      "pdf_pages": [
+        8
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-EF64B75190FC",
+      "identity_ids": [
+        "IDENT-A941F1E8B2F0"
+      ],
+      "object_ids": [
+        "IBI-A941F1E8B2F0"
+      ],
+      "source_appearance_locator": "text J, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-5B66312AF5AD",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 511,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "7117c81459450ce69e73c254f1b27bbe54d6cf5446987b291ea5740880c03dc9",
+      "pdf_pages": [
+        8
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-ADDBA35701BF",
+      "identity_ids": [
+        "IDENT-4949F2DB777F"
+      ],
+      "object_ids": [
+        "IBI-4949F2DB777F"
+      ],
+      "source_appearance_locator": "text K, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-8714D24A31FF",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 536,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "fefe85bc3a45342b80b82a932fcb38d844a1031bb8d53a8a559ecb33621ff69d",
+      "pdf_pages": [
+        10
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-917017918A3E",
+      "identity_ids": [
+        "IDENT-410C07F078B6"
+      ],
+      "object_ids": [
+        "IBI-410C07F078B6"
+      ],
+      "source_appearance_locator": "text L, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-17AEF4187382",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 989,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "2cf72403a48a51a21006ef1c0d78cc89cb7d1df755accfe2f2f495fa22f3a4e0",
+      "pdf_pages": [
+        11,
+        12
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-4FA37630332D",
+      "identity_ids": [
+        "IDENT-427650BDA7A4"
+      ],
+      "object_ids": [
+        "IBI-427650BDA7A4"
+      ],
+      "source_appearance_locator": "text M, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-EC46EBD9D9D7",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 2110,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "6ce7325666d624fa3496d09aa8e724000ee8198ac6670b26cb9e171e426f8b1b",
+      "pdf_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-17AD10B763C7",
+      "identity_ids": [
+        "IDENT-F265C68D7662"
+      ],
+      "object_ids": [
+        "IBI-F265C68D7662"
+      ],
+      "source_appearance_locator": "text N, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-677CE3C17E11",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 1521,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "e3a334a6938c2691e3762ba1b127ff14bb897ecf68704fa652c672abca04cae0",
+      "pdf_pages": [
+        18,
+        19
+      ]
+    },
+    {
+      "source_id": "SRC-43C1E102538E",
+      "appearance_id": "APP-89A2A73925B7",
+      "identity_ids": [
+        "IDENT-7BCBBD6A6A80"
+      ],
+      "object_ids": [
+        "IBI-7BCBBD6A6A80"
+      ],
+      "source_appearance_locator": "text O, printed pp. 86-106; article plates II-XIVa",
+      "status": "working_edition_transliteration_native_unrecovered",
+      "native_script_recovered": false,
+      "text_id": "TXT-7354C173BDEE",
+      "text_type": "transliteration",
+      "script": "Hebrew",
+      "characters": 1072,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "fb6bcdc70fd66220b2fc167f45cefef62335a9e05a3730b3de3ec298dbb67850",
+      "pdf_pages": [
+        21,
+        22
+      ]
+    },
+    {
+      "source_id": "SRC-0383E0E0A2F2",
+      "appearance_id": "APP-B5699D55E0FB",
+      "identity_ids": [
+        "IDENT-28C0A68E5312"
+      ],
+      "object_ids": [
+        "IBI-28C0A68E5312"
+      ],
+      "source_appearance_locator": "text G, printed pp. 466-474; plates XXII-XXV; catalogue no. 5497",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-3A4B0E4DD038",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 2141,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "c1df77bdfe2fcd79375b635d16ea82525978df3bb47e53d93384f5e290c74f1c",
+      "pdf_pages": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-829C76DB8F2E",
+      "identity_ids": [
+        "IDENT-4C1386AD9E0F"
+      ],
+      "object_ids": [
+        "IBI-4C1386AD9E0F"
+      ],
+      "source_appearance_locator": "Ellis bowl no. 1, printed pp. 512-515",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-BBA83DCE0FA6",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 697,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "a1d4f9566535ccf16739f4c574d66836a4b54671d16cc8efd940818d863ca500",
+      "pdf_pages": [
+        573
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-50F110045D95",
+      "identity_ids": [
+        "IDENT-051F7A38EFC3"
+      ],
+      "object_ids": [
+        "IBI-051F7A38EFC3"
+      ],
+      "source_appearance_locator": "Ellis bowl no. 2, printed pp. 515-516",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-1560BE5919CA",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1353,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "9ee08771872e87c7b3a923f91a25fb652bb38c6a2edfe1de1e7ffbd3549cb5b5",
+      "pdf_pages": [
+        574,
+        575
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-7D9BC867F41F",
+      "identity_ids": [
+        "IDENT-8DF305A4F33B"
+      ],
+      "object_ids": [
+        "IBI-8DF305A4F33B"
+      ],
+      "source_appearance_locator": "Ellis bowl no. 3, printed pp. 516-518",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-C765ABCB11FD",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 1022,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "28346c9ffb81f82e32b6996fb11093c8428d87305d54f39978925c3ae81ccd2d",
+      "pdf_pages": [
+        575,
+        576,
+        577
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-534FCA4882A6",
+      "identity_ids": [
+        "IDENT-FB321527E8F5"
+      ],
+      "object_ids": [
+        "IBI-FB321527E8F5"
+      ],
+      "source_appearance_locator": "Ellis bowl no. 4, printed pp. 518-519",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-AD7191DCC6EB",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 912,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "3066a1b671fbc7c0e13f76d06c65aec8336bc5608947c446d6f8e505bd163bcd",
+      "pdf_pages": [
+        577,
+        578
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-712D929010E0",
+      "identity_ids": [
+        "IDENT-BABC0EF172D2"
+      ],
+      "object_ids": [
+        "IBI-BABC0EF172D2"
+      ],
+      "source_appearance_locator": "Ellis bowl no. 5, printed pp. 519-521",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-6D8D7ECE5BB4",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 417,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "31d6fb85e03307a65b5b44728d5664435bfed01ed66514245ea0c5151ca9f352",
+      "pdf_pages": [
+        579
+      ]
+    },
+    {
+      "source_id": "SRC-8900A7CAF037",
+      "appearance_id": "APP-41311FE3F76D",
+      "identity_ids": [
+        "IDENT-D7226A7631D3"
+      ],
+      "object_ids": [
+        "IBI-D7226A7631D3"
+      ],
+      "source_appearance_locator": "Ellis bowl no. 6, printed pp. 521-522",
+      "status": "native_character_recovery_unresolved",
+      "native_script_recovered": false,
+      "text_id": null,
+      "current_proofreading_status": "not_applicable_no_character_capture",
+      "pdf_pages": [
+        581
+      ],
+      "reason": "Raster Syriac edition, no usable text layer. Hebrew OCR probe is unsuitable; contextual letter shapes and editorial brackets require Syriac-aware recognition or manual specialist collation. No invented character text."
+    },
+    {
+      "source_id": "SRC-0B6C0E1133EF",
+      "appearance_id": "APP-873346F76810",
+      "identity_ids": [
+        "IDENT-6F98412BF44D"
+      ],
+      "object_ids": [
+        "IBI-83B79765A7BC"
+      ],
+      "source_appearance_locator": "descriptive catalogue no. 4, printed pp. 13-14; edition pp. 22-27; VA 2416",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-0F404F468B98",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 2852,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "c1ab7c53c0e39189e1b06d74fc224fdc7ae0343f15d88660d9dab0162ee4169f",
+      "pdf_pages": [
+        44,
+        46,
+        48
+      ]
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "appearance_id": "APP-A3099A2F0CC8",
+      "identity_ids": [
+        "IDENT-FORD2014-AS13"
+      ],
+      "object_ids": [
+        "IBI-FORD2014-AS13"
+      ],
+      "source_appearance_locator": "Appendix 1, pp. 246\u2013252",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-D7113E66772E",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 938,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "003f57766eb635162a297d7f6689291c086c6ec7b464dc6972be968abce83524",
+      "pdf_pages": [
+        13,
+        14
+      ]
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "appearance_id": "APP-511BC53E137E",
+      "identity_ids": [
+        "IDENT-FORD2014-DAV27"
+      ],
+      "object_ids": [
+        "IBI-FORD2014-DAV27"
+      ],
+      "source_appearance_locator": "Appendix 2, pp. 253\u2013258",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-A5CC7E9A356C",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 438,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "ebefa29a8cf256aee8b5f9ac9ad121cbee687cbd018a7d5e83746353720e5503",
+      "pdf_pages": [
+        19
+      ]
+    },
+    {
+      "source_id": "SRC-FORD2014-AUOR",
+      "appearance_id": "APP-DBE55F1367B4",
+      "identity_ids": [
+        "IDENT-035BA4ABBE6D"
+      ],
+      "object_ids": [
+        "IBI-035BA4ABBE6D"
+      ],
+      "source_appearance_locator": "p. 256; figures 25\u201326, pp. 259\u2013260",
+      "status": "working_native_transcription",
+      "native_script_recovered": true,
+      "text_id": "TXT-29ED4A871AFB",
+      "text_type": "transcription",
+      "script": "Hebrew",
+      "characters": 459,
+      "current_proofreading_status": "partial_review",
+      "content_sha256": "5ef4425dd18770e052c92e1850e774214b995a68bb72cc903f9fb40942b4e29e",
+      "pdf_pages": [
+        22
+      ]
+    }
+  ]
+}
