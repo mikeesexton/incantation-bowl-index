@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>/usr/bin:/bin:/usr/sbin:/sbin:/Users/mikesexton/.local/bin</string>
+		<key>PYTHONPATH</key>
+		<string>/Users/mikesexton/Developer/incantation-bowl-index/src</string>
+	</dict>
+	<key>Label</key>
+	<string>org.incantation-bowl-index.backup.b2</string>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/mikesexton/Developer/incantation-bowl-index/.venv/bin/python</string>
+		<string>/Users/mikesexton/Developer/incantation-bowl-index/scripts/run_scheduled_backup.py</string>
+		<string>b2</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/mikesexton/Developer/incantation-bowl-index/data/private/backup-receipts/b2-launchd-error.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/mikesexton/Developer/incantation-bowl-index/data/private/backup-receipts/b2-launchd.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>3</integer>
+		<key>Minute</key>
+		<integer>15</integer>
+	</dict>
+	<key>WorkingDirectory</key>
+	<string>/Users/mikesexton/Developer/incantation-bowl-index</string>
+</dict>
+</plist>

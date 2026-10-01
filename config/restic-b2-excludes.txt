@@ -18,3 +18,9 @@
 **/site/.wrangler/**
 **/tmp
 **/tmp/**
+
+# Online SQLite recovery copies are prepared per destination before each run.
+# Exclude the mutable database and sidecars; restore from backup-staging instead.
+/Users/mikesexton/Developer/incantation-bowl-index/data/private/ibi.sqlite3
+/Users/mikesexton/Developer/incantation-bowl-index/data/private/ibi.sqlite3-*
+**/.preparing-*

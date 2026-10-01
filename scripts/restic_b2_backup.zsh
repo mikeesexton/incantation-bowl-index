@@ -2,6 +2,11 @@
 
 set -euo pipefail
 
+if [[ "${IBI_BACKUP_PREPARED:-}" != "b2" ]]; then
+  print -u2 "Run scripts/run_scheduled_backup.py b2 to prepare a consistent database first."
+  exit 1
+fi
+
 readonly repository="s3:https://s3.us-east-005.backblazeb2.com/archive-9f4c72d1e6b8/restic/incantation-bowl-index"
 readonly restic_bin="/Users/mikesexton/.local/bin/restic"
 readonly project_root="/Users/mikesexton/Developer/incantation-bowl-index"
@@ -51,10 +56,8 @@ print "Backblaze B2 Restic backup"
 print "UTC start: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
 print "Repository: private Backblaze B2 bucket through the S3-compatible API"
 
-if ! "${restic[@]}" cat config >/dev/null 2>&1; then
-  print "Initializing the encrypted B2 Restic repository…"
-  "${restic[@]}" init
-fi
+# A failed connection must not initialize a replacement repository.
+"${restic[@]}" cat config >/dev/null
 
 print "Backing up the Bowl Index, its complete private vault, and IvritElite…"
 "${restic[@]}" backup \
@@ -62,6 +65,7 @@ print "Backing up the Bowl Index, its complete private vault, and IvritElite…"
   "${ivritelite_root}" \
   --exclude-file "${exclude_file}" \
   --exclude-caches \
+  --exclude "${project_root}/data/private/backup-staging/local" \
   --tag mac-mini-b2
 
 if [[ "${IBI_RESTIC_FULL_CHECK:-0}" == "1" ]]; then

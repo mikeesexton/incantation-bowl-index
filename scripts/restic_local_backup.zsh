@@ -2,6 +2,11 @@
 
 set -euo pipefail
 
+if [[ "${IBI_BACKUP_PREPARED:-}" != "local" ]]; then
+  print -u2 "Run scripts/run_scheduled_backup.py local to prepare a consistent database first."
+  exit 1
+fi
+
 readonly backup_volume="/Volumes/IBI Backup"
 readonly repository="${backup_volume}/restic/incantation-bowl-index"
 readonly restic_bin="/Users/mikesexton/.local/bin/restic"
@@ -37,7 +42,10 @@ if [[ ! -f "${exclude_file}" ]]; then
   exit 1
 fi
 
-mkdir -p "${repository}"
+if [[ ! -f "${repository}/config" ]]; then
+  print -u2 "The commissioned local Restic repository is missing."
+  exit 1
+fi
 
 restic=(
   "${restic_bin}"
@@ -45,10 +53,6 @@ restic=(
   --password-command "${password_command}"
 )
 
-if [[ ! -f "${repository}/config" ]]; then
-  print "Initializing the local encrypted Restic repository…"
-  "${restic[@]}" init
-fi
 
 print "Backing up the Bowl Index, its complete private vault, and IvritElite…"
 "${restic[@]}" backup \
@@ -56,6 +60,7 @@ print "Backing up the Bowl Index, its complete private vault, and IvritElite…"
   "${ivritelite_root}" \
   --exclude-file "${exclude_file}" \
   --exclude-caches \
+  --exclude "${project_root}/data/private/backup-staging/b2" \
   --tag mac-mini-local
 
 print "Checking every stored data pack…"

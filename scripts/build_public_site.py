@@ -61,6 +61,15 @@ COVERAGE_COPY = {
         "legend": "has a text reference",
         "total_label": "bowls with a text reference",
     },
+    "image": {
+        "kicker": "Seeing the object",
+        "heading": "Look closer.",
+        "body": "Photographs and drawings in publications and collection "
+                "catalogues are indexed as references, not reproduced here.",
+        "label": "Images",
+        "legend": "has an image reference",
+        "total_label": "bowls with an image reference",
+    },
     "provenance": {
         "kicker": "Tracing a journey",
         "heading": "Follow their journeys.",
@@ -70,15 +79,6 @@ COVERAGE_COPY = {
         "label": "Provenance",
         "legend": "has provenance information",
         "total_label": "bowls with provenance information",
-    },
-    "image": {
-        "kicker": "Seeing the object",
-        "heading": "Look closer.",
-        "body": "Photographs and drawings in publications and collection "
-                "catalogues are indexed as references, not reproduced here.",
-        "label": "Images",
-        "legend": "has an image reference",
-        "total_label": "bowls with an image reference",
     },
 }
 

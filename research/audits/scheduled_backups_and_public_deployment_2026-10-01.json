@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-10-01T13:36:53.256031+00:00",
+  "agent": "codex",
+  "corpus_digest": "cda11337fcb1ce1a22bd077737fb41fb0c9e0cfad378d1cd799710de3e5dca41",
+  "schedules": {
+    "local": {
+      "label": "org.incantation-bowl-index.backup.local",
+      "interval_seconds": 14400,
+      "enabled": true
+    },
+    "b2": {
+      "label": "org.incantation-bowl-index.backup.b2",
+      "daily_local_time": "03:15",
+      "timezone": "America/New_York",
+      "enabled": true
+    },
+    "run_at_login": true,
+    "requires": "Mac mini powered on, Mike logged in, SSD mounted/unlocked",
+    "email_failure_alerts": "not configured"
+  },
+  "backups": {
+    "local": {
+      "snapshot_id": "e2aec52b318e198e8d8725fd3e21dae0f6c01c99acac9f3ebf91b89439dc2ef2",
+      "completed_at": "2026-10-01T13:28:35+00:00",
+      "full_data_packs_checked": 133,
+      "full_restore": "PASS",
+      "private_restore_receipt": "data/private/backup-receipts/local-restic-restore-20261001T132931Z.log"
+    },
+    "b2": {
+      "snapshot_id": "8ce1e12050e866c8fc73e24fa82b84380d9b215ff60d7bc9988f827f13fd900c",
+      "completed_at": "2026-10-01T13:34:25+00:00",
+      "repository_metadata_check": "PASS",
+      "sampled_restore": "PASS",
+      "sampled_restore_checks": [
+        "consistent database hash",
+        "SQLite integrity/quick/foreign-key checks",
+        "matching corpus fingerprint",
+        "one recent source capture size/hash",
+        "personal-audit ledger JSON"
+      ],
+      "private_restore_receipt": "data/private/backup-receipts/b2-sample-restore-20261001.json"
+    }
+  },
+  "deployment": {
+    "url": "https://bowlam.com/",
+    "cloudflare_deployment_id": "22797c4a-7996-4ed1-9574-25a8e40a3adc",
+    "environment": "production",
+    "aggregate_snapshot_id": "ac143cd9f049958b",
+    "html_sha256": "d0b168b172b371e8bf97610dd6f5dc45ff16cee419e2341c8db55e35c13c9913",
+    "live_html_matches_reviewed_build": true,
+    "identity_count": 1711,
+    "source_record_count": 2059,
+    "coverage_order": [
+      "text_edition",
+      "image",
+      "provenance"
+    ],
+    "coverage": {
+      "text_edition": 897,
+      "image": 612,
+      "provenance": 373
+    },
+    "access_checks": {
+      "bowlam_com_preview": "302 to Cloudflare Access",
+      "deployment_alias_preview": "404"
+    }
+  },
+  "tests": {
+    "python": 371,
+    "node": 53,
+    "result": "PASS"
+  },
+  "notes": [
+    "No corpus changes, pruning, private publication or Git push.",
+    "Initial automatic-review rejection for B2 transfer was resolved by Mike\u2019s explicit approval of private IBI and existing IvritElite backup data to the existing encrypted B2 repository."
+  ]
+}

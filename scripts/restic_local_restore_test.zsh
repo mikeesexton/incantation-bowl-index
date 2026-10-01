@@ -43,6 +43,11 @@ restic=(
   "${restic[@]}" restore "${snapshot_id}" --target "${restore_root}"
 
   restored_db="${restored_bowl_root}/data/private/ibi.sqlite3"
+  recovery_dir="${restored_bowl_root}/data/private/backup-staging/local"
+  if [[ -f "${recovery_dir}/ibi.sqlite3" ]]; then
+    /bin/cp "${recovery_dir}/ibi.sqlite3" "${restored_db}"
+    /bin/cp "${recovery_dir}/db-state.json" "${restored_bowl_root}/data/db-state.json"
+  fi
   if [[ ! -f "${restored_db}" ]]; then
     print -u2 "The restored Bowl Index database is missing."
     exit 1

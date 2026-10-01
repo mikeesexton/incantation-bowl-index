@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Enable scheduled backups and refresh bowlam.com
+
+**Claimed:** OPS-002 and OPS (Mike’s explicit backup scheduling and public deployment instruction)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 371 Python and 53 Node tests pass; SSD full restore and 133-pack read-back pass; B2 repository check and sampled restore pass; live page byte comparison, scrolling order and access-boundary checks pass
+
+- Enabled the installed, versioned LaunchAgents: encrypted SSD every four hours; existing encrypted B2 repository daily at 03:15 America/New_York; both also run at login. The jobs use existing Keychain credentials, destination locks, a bounded process-group runtime, private per-run status and separate last-success receipts. Scheduled runs never initialize or prune repositories. Healthchecks email and offline recovery-secret verification remain outstanding for formal OPS-002 acceptance.
+- Added SQLite online backup preparation through a read-only production connection. Each destination gets an integrity/foreign-key-checked standalone recovery database and matching state fingerprint. Restic excludes the mutable production database and sidecars, retaining the complete private archive, protected manifests, audit ledger and existing IvritElite backup set. Updated restoration scripts and runbook for staged-copy recovery. Tests verify WAL inclusion without source mutation, last-success preservation on failure and termination of child processes on timeout.
+- Fresh SSD snapshot `e2aec52b` passed every stored data pack and an independent full restore, including all captures, matching corpus state and both project test suites. Fresh B2 snapshot `8ce1e120` completed at 13:34:25Z, passed repository structure checks and independently restored the database/state, one recent source capture and personal-audit ledger with integrity/hash checks. Reviewed and removed both temporary restores; private receipts remain in the vault. The initial B2 auto-review rejection was resolved by Mike’s explicit approval of the named private backup set and existing cloud destination.
+- Rebuilt and deployed the aggregate-only public landing page as production Cloudflare deployment `22797c4a-7996-4ed1-9574-25a8e40a3adc`, after Mike restored deployment login. Snapshot `ac143cd9f049958b` reports 1,711 bowls / 2,059 source records / 897 text / 612 image / 373 provenance references, dated 1 October. Reordered both the landing-page scroll panels/buttons and the local introduction to text, images, provenance. Actual scrolling toggles the corresponding totals.
+- Confirmed ordinary bowlam.com HTML equals the reviewed local build after brief propagation; the named preview still redirects to Access and the deployment alias returns 404 for preview. Existing promoted preview bytes were unchanged (26 assets reused). Saved content-free operational/deployment evidence in research/audits/scheduled_backups_and_public_deployment_2026-10-01.json, updated runbook and roadmap input/output, and recorded unchanged corpus state. No private publication, pruning or push.
+
 ## 2026-10-01 — Codex — Check automated backups and public website freshness
 
 **Claimed:** OPS-002 and OPS (Mike’s backup and bowlam.com status questions)

@@ -89,7 +89,7 @@ Use two independent Restic repositories:
 
 | Repository | Destination | Schedule | Purpose |
 |---|---|---|---|
-| Local | 1 TB encrypted APFS external SSD | Every 4 hours | Fast recovery from corruption or accidental deletion |
+| Local | 2 TB encrypted APFS external SSD | Every 4 hours | Fast recovery from corruption or accidental deletion |
 | Off-device | Backblaze B2 through its S3-compatible endpoint | Daily | Recovery after loss, theft or failure of the Mac mini and local disk |
 
 Each repository has its own password and credentials. Mounting the encrypted
@@ -160,6 +160,56 @@ logs, mounted backup repositories and disposable build products from the Restic
 payload. Generated corpus reports may be included when convenient, but they are
 not a substitute for the database and manifests.
 
+### Scheduled jobs (enabled 1 October 2026)
+
+The versioned templates in `config/launchd/` are installed in Mike’s
+`~/Library/LaunchAgents/`. The SSD job runs every 14,400 seconds; B2 runs daily
+at 03:15 in the Mac’s local timezone (America/New_York). Both also run when
+loaded at login. They require the Mac to be on with Mike’s login session;
+the SSD must be mounted and unlocked. System sleep is currently disabled on
+AC power. The desktop app does not need to remain open.
+
+Both call `scripts/run_scheduled_backup.py` with a destination-specific advisory
+lock and a three-hour maximum runtime. They retain per-run logs, a latest status,
+and a separate last-success receipt under `data/private/backup-receipts/`.
+Failure never advances the last-success receipt. Repository initialization and
+pruning are excluded from scheduled runs; the SSD job checks encryption and
+reads every data pack after saving, while the daily B2 job checks repository
+metadata and structure. Healthchecks email alerts remain unconfigured.
+
+Each run uses SQLite’s online backup API through a read-only source connection,
+checks integrity and foreign keys, and fingerprints a self-contained recovery
+copy at `data/private/backup-staging/<local-or-b2>/ibi.sqlite3`. That directory
+also contains the matching `db-state.json`. The mutable production database and
+its WAL/SHM sidecars are excluded from Restic; the complete private archive,
+protected ingestion manifests, rich-text files, audit ledger and other retained
+private inputs remain included.
+
+**Restore the recovery copy, not a live database sidecar.** After restoring a
+current snapshot into a separate temporary tree, copy the destination-specific
+staged `ibi.sqlite3` to the restored tree’s `data/private/ibi.sqlite3` and its
+`db-state.json` to `data/db-state.json`. The two existing restore-test scripts do
+this automatically, preserving compatibility with the original September 25
+snapshots. Verify the restored tree before changing the working database.
+
+Manual run from the repository root:
+
+```sh
+PYTHONPATH=src .venv/bin/python scripts/run_scheduled_backup.py local
+PYTHONPATH=src .venv/bin/python scripts/run_scheduled_backup.py b2
+```
+
+Inspect or disable one job (substitute `b2` for `local` as needed):
+
+```sh
+launchctl print gui/$(id -u)/org.incantation-bowl-index.backup.local
+launchctl bootout gui/$(id -u)/org.incantation-bowl-index.backup.local
+```
+
+To stop it loading at the next login too, move its installed plist out of
+`~/Library/LaunchAgents/`. Keep the versioned template. Re-enable by restoring
+the installed plist and running `launchctl bootstrap gui/$(id -u) <plist-path>`.
+
 ### Interim readiness command
 
 `ibi backup-readiness` is a read-only **interim GPG-oriented prototype**. It
@@ -213,9 +263,10 @@ acceptance record.
 
 - [x] Attach, erase and encrypt the dedicated 2 TB APFS external drive.
 - [x] Create separate local and B2 Restic repositories and recovery secrets.
-- [ ] Store runtime secrets in Keychain and recovery copies offline.
-- [ ] Install disabled-by-default `launchd` jobs, inspect their paths and
-      include/exclude lists, then enable them deliberately.
+- [ ] Verify offline recovery copies (runtime secrets are in Keychain and their
+      scheduled SSD/cloud use is verified).
+- [x] Install versioned `launchd` jobs, inspect their paths and include/exclude
+      lists, then enable them deliberately (Mike’s instruction, 1 October 2026).
 - [ ] Configure Healthchecks email for local, off-device and restore jobs.
 - [x] Complete one local and one B2 backup without errors.
 - [x] Complete and record independent restore tests from both repositories.
@@ -242,15 +293,15 @@ Leave unknown fields blank until verified on the Mac mini.
 | Public inbound ports confirmed absent | Not verified; router configuration was not examined |
 | Repository path and Git revision | `~/Developer/incantation-bowl-index` content baseline `20f738e` plus subsequent acceptance-record commits; `~/Developer/ivritelite` at `3d75f04`; both clean and aligned with `origin/main` |
 | Bowl Index corpus digest | `591faac7157c136e969ec739fbb557881b340298e0662ab564c7d6f7a5bb2ec8` (`ibi state`: match) |
-| Local Restic repository and latest snapshot ID | Restic 0.19.1; encrypted repository on `IBI Backup`; snapshot `6b5ec6e564e4cf874ce38c46a464ee52fb8fd1f0e3d26558a455dafba4c2e0e1` |
-| B2 bucket/repository and latest snapshot ID | Private bucket `archive-9f4c72d1e6b8`; S3 endpoint `s3.us-east-005.backblazeb2.com`; encrypted Restic repository `0399adc293`; snapshot `f4dc13dc3ba6577aab0e9071e5b646e0b7054dcd7bf414a1e1189c7999e8f51d` |
-| Local schedule and last successful run | First manual snapshot completed 2026-09-25T01:35:53Z; four-hour schedule not configured |
-| Off-device schedule and last successful run | First manual B2 snapshot completed 2026-09-25T02:29:56Z with a full 45-pack read-back check; daily schedule not configured |
+| Local Restic repository and latest snapshot ID | Restic 0.19.1; encrypted repository on `IBI Backup`; snapshot `e2aec52b318e198e8d8725fd3e21dae0f6c01c99acac9f3ebf91b89439dc2ef2` (1 October) |
+| B2 bucket/repository and latest snapshot ID | Existing private B2 bucket and S3 endpoint; Restic repository `0399adc293`; latest automated snapshot `8ce1e120` (1 October) |
+| Local schedule and last successful run | Four-hour LaunchAgent enabled 2026-10-01; first automated snapshot `e2aec52b` saved at 13:27:29Z, all 133 packs passed full read-back; job completed 13:28:35Z |
+| Off-device schedule and last successful run | Daily 03:15 America/New_York LaunchAgent enabled 2026-10-01 with explicit approval for the existing private backup set and B2 destination; fresh snapshot `8ce1e120` completed at 13:34:25Z with repository metadata/structure checks passing; sampled restore passed: consistent database/state, one recent capture hash and the personal-audit ledger |
 | Healthchecks email delivery tested | Not configured |
-| Local restore receipt | `data/private/backup-receipts/local-restic-restore-20260925T014137Z.log`: PASS; restored 1.746 GiB / 1,664 files and directories, then reviewed and removed the temporary copy |
-| B2 restore receipt | `data/private/backup-receipts/b2-restic-restore-20260925T023036Z.log`: PASS; restored 1.746 GiB / 1,671 files and directories, then reviewed and removed the temporary copy |
+| Local restore receipt | Initial September 25 restore passed. Latest: `data/private/backup-receipts/local-restic-restore-20261001T132931Z.log`, PASS; recovered the consistent database, checked integrity/foreign keys, all retained captures, matching corpus state, 370 Bowl Index tests and the IvritElite suite; reviewed and removed the temporary tree |
+| B2 restore receipt | Initial full September 25 restore passed. Latest: `data/private/backup-receipts/b2-sample-restore-20261001.json`, PASS; recovered the consistent database/state, a recent capture and the audit ledger, checked integrity/fingerprints/hashes, then removed the temporary copy |
 | SQLite and capture verification result | Both Restic restores returned `integrity_check` and `quick_check`: `ok`, zero foreign-key violations, database SHA-256 `9695ff17ba3439830c76590bb18171c5830a0c6f637cf3fe34e030d8eaafadb2`, valid archive verification and matching corpus state. All 556 migrated private files matched the source aggregate SHA-256 `0717f4cca418b22da320d1eef9ad9f23cf91997409401e818d028ba3c5774b7f`. |
 | Rich-text package validation result | No private rich-text package is present (`rich_text_packages: 0`); no package validation required for this migration |
-| Outstanding blockers / deviations | Separate standard account; offline recovery copies for the FileVault and Restic secrets; laptop Tailscale connectivity and end-to-end remote-access test; router/public-port audit; launchd schedules; Healthchecks. Seventeen legacy SQLite snapshots are retained. |
+| Outstanding blockers / deviations | Separate standard account; offline recovery copies for the FileVault and Restic secrets; laptop Tailscale connectivity and end-to-end remote-access test; router/public-port audit; Healthchecks. Seventeen legacy SQLite snapshots are retained. |
 | OPS-001 accepted by/date | |
 | OPS-002 accepted by/date | |
