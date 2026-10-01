@@ -25,6 +25,15 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — Push proofreading work to GitHub
+
+**Claimed:** none (OPS — user-requested push)
+**Corpus:** unchanged — state digest `7b8f0277713f`
+**Tests:** 329 unittest tests pass; outgoing file list contains no private corpus or capture payloads
+
+- Mike explicitly authorized pushing the completed local proofreading work to `origin/main`. The working tree was clean and the corpus state matched before this session.
+- Push only the current main branch; private corpus files and source captures remain outside Git.
+
 ## 2026-09-30 — Codex — Remaining held editions and quotation proofreading
 
 **Claimed:** TEXT-004
