@@ -304,7 +304,9 @@
   const ORIGINAL_TEXT_TYPES = new Set(["inscription", "transcription", "transliteration", "incipit"]);
 
   function textCredit(item) {
-    const reviewNote = /Incantation Bowl Index.*English rendering/i.test(item.editor || "")
+    const reviewNote = item.editor === "Incantation Bowl Index source commentary"
+      ? "Project summary of the edition’s commentary; separate from the inscription’s translation."
+      : /Incantation Bowl Index.*English rendering/i.test(item.editor || "")
       ? "Project English rendering of the source-language translation. Draft; not an independent translation from the inscription."
       : privateResearch() && item.editorial_status === "partial_review"
       ? "Working text · partly proofread. Full source-page proofreading remains open."
@@ -312,6 +314,20 @@
         ? "Source-page proofreading is not recorded for this text." : "";
     return `${reviewNote ? `<p class="entry-note">${esc(reviewNote)}</p>` : ""}
       <p class="entry-credit">${esc(credit(item))}${textTerms(item)}</p>`;
+  }
+
+  function translationContent(content) {
+    // These are extraction locators, not supplied words or restorations.
+    // Keep them in the source record and credit, outside the reading text.
+    return String(content || "").replace(/\s*\[PDF pages?\s+\d+(?:[–-]\d+)?;\s*printed pp?\.\s*\d+(?:[–-]\d+)?\]\s*/gi, " ").trim();
+  }
+
+  function sourceExtractions(rows) {
+    const ocr = rows.filter(item => item.text_type === "source_ocr");
+    if (!ocr.length) return "";
+    return `<details class="entry-source-ocr"><summary>Uncorrected source OCR</summary>
+      <p class="entry-note">Automatic extraction of whole edition sections. It may mix inscription, commentary and translation; ancient-script glyphs may be garbled. Use the facsimiles for the original text.</p>
+      ${ocr.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("")}</details>`;
   }
 
   function originalText(item) {
@@ -337,34 +353,34 @@
   }
 
   function textSections(rows, sourcePages = []) {
+    const facsimiles = sourcePages.filter(item => item.media_type === "inscription_facsimile"
+      && item.url && embeddableImage(item.url));
     const translations = rows.filter(item => item.text_type === "translation");
     const english = translations.filter(item => /^(?:English|en)$/i.test(item.language || ""));
     const sourceTranslations = translations.filter(item => !english.includes(item));
     const translation = item => `<div class="translated-reading">
       <h3>Translation${item.language ? " · " + esc(item.language) : ""}</h3>
-      <blockquote dir="auto" lang="${/^(?:English|en)$/i.test(item.language || "") ? "en" : ""}">${esc(item.content)}</blockquote>
+      <blockquote dir="auto" lang="${/^(?:English|en)$/i.test(item.language || "") ? "en" : ""}">${esc(translationContent(item.content))}</blockquote>
       ${textCredit(item)}</div>`;
     const originals = rows.filter(item => ORIGINAL_TEXT_TYPES.has(item.text_type));
     const summaries = rows.filter(item => item.text_type === "summary");
     const other = rows.filter(item => item.text_type !== "translation"
-      && item.text_type !== "summary" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
+      && item.text_type !== "summary" && item.text_type !== "source_ocr" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
     const sections = [`<section class="entry-block entry-text"><h2>What it says</h2>
       ${english.length ? english.map(translation).join("")
       : `<p class="entry-note">${translations.length ? "No English translation is available to read here. The source-language translation is retained below."
         : "No translation is available to read here. Consult the sources below for further documentation."}</p>`}
       ${sourceTranslations.length ? `<details class="entry-source-translations"><summary>Source-language translations · ${[...new Set(sourceTranslations.map(item => item.language || "Language not recorded"))].map(esc).join(", ")}</summary>${sourceTranslations.map(translation).join("")}</details>` : ""}
       <details class="entry-original"><summary>Show original incantation</summary>
-        ${originals.length ? originals.map(originalText).join("")
-          : `<p class="entry-note">No transcription or transliteration is stored for this bowl.${sourcePages.length
-            ? " Recorded source pages are available below." : " Consult the sources below for any published original text."}</p>`}
-        ${sourcePages.length ? `<h3>Recorded source pages</h3><p class="entry-note">These facsimiles may include original text, translations, commentary or photographs.</p>` : ""}
-        ${sourcePages.filter(item => item.url && embeddableImage(item.url))
-          .sort((a, b) => Number(b.media_type === "inscription_facsimile") - Number(a.media_type === "inscription_facsimile"))
-          .map(originalPage).join("")}
+        ${facsimiles.length ? `<h3>Original incantation · facsimiles</h3>${facsimiles.map(originalPage).join("")}`
+          : originals.length ? originals.map(originalText).join("")
+          : `<p class="entry-note">No original incantation is available to read here. Consult the sources below for any published original text.</p>`}
       </details></section>`];
     if (summaries.length) {
-      const body = summaries.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
-      sections.push(`<details class="entry-block entry-summary"><summary>Research summary and commentary</summary>${body}</details>`);
+      const body = summaries.map(item => `${item.editor === "Incantation Bowl Index source commentary"
+        ? `<h3>Source commentary${item.language ? " · " + esc(item.language) : ""}</h3>` : ""}
+        <blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
+      sections.push(`<details class="entry-block entry-summary"><summary>Summary and commentary</summary>${body}</details>`);
     }
     sections.push(...other.map(item => `<section class="entry-block entry-text">
       <h2>${esc(item.text_type)}</h2><blockquote>${esc(item.content)}</blockquote>${textCredit(item)}</section>`));
@@ -761,8 +777,14 @@
     const dates = groups.filter(item => !item.key.startsWith("period:"));
     const periods = groups.filter(item => item.key.startsWith("period:"));
     if (dates.length <= 1 && !periods.length) return "";
+    const signature = item => citationsFor(item.reports).sort().join("|");
+    const combined = dates.length === 1 && periods.length === 1 &&
+      signature(dates[0]) && signature(dates[0]) === signature(periods[0]);
+    const items = combined ? `<li><span>${esc(dates[0].display)} · ${esc(periods[0].display)}</span>
+      <cite>${citationsFor([...dates[0].reports, ...periods[0].reports]).map(esc).join("; ")}</cite></li>`
+      : factItems(id, "dating");
     return `<section class="entry-block"><h2>${dates.length > 1 ? "Proposed dates" : "Dating evidence"}</h2>
-      <ul class="fact-list">${factItems(id, "dating")}</ul></section>`;
+      <ul class="fact-list">${items}</ul></section>`;
   }
 
   function recordedFormsSection(id) {
@@ -986,6 +1008,7 @@
       ${factList(id, "biblical_intertexts", "Scripture it quotes")}
 
       <details class="entry-apparatus"><summary>Research details</summary>
+        ${sourceExtractions(readable)}
         ${recordedFormsSection(id)}
         ${identifierDetails(identifiers, rawLabels)}
         <dl>

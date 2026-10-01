@@ -80,6 +80,22 @@ test("genuinely different dates remain separate", () => {
   assert.equal(groupedFacts("ID", "dating").length, 2);
 });
 
+test("a date and its period share one statement and citation without merging differing dates", () => {
+  data.factsBy.ID = [
+    {field_group: "dating", value: "6th–8th centuries CE", source_id: "SRC", locator: "Details"},
+    {field_group: "dating", value: "Late–Post Sasanian", source_id: "SRC", locator: "Details"},
+  ];
+  const html = datingEvidence("ID");
+  assert.match(html, /6th–8th centuries CE · Late–Post Sasanian/);
+  assert.equal((html.match(/<li>/g) || []).length, 1);
+  assert.equal((html.match(/Scholar 2003 · Details/g) || []).length, 1);
+  data.factsBy.ID[1].source_id = "OTHER";
+  assert.equal((datingEvidence("ID").match(/<li>/g) || []).length, 2);
+  data.factsBy.ID.push({field_group: "dating", value: "5th century CE", source_id: "SRC", locator: "Details"});
+  assert.match(datingEvidence("ID"), /Proposed dates/);
+  assert.match(datingEvidence("ID"), /5th century CE/);
+});
+
 test("same-source publication rows collapse while distinct sources remain", () => {
   const rows = [
     {source_id: "SRC", citation: "Edition", locator: "pp. 323–336, bowl AC-MSEF",

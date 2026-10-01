@@ -49,17 +49,21 @@ class PrivateResearchProjection(Projection):
         """Expose all stored text; distinguish private access from publication."""
         rows = super()._texts()
         content = {
-            row["id"]: row["content"]
-            for row in self.conn.execute("SELECT id,content FROM texts")
+            row["id"]: dict(row)
+            for row in self.conn.execute("SELECT id,content,notes FROM texts")
         }
         checks = current_text_reviews(self.conn)
         for row in rows:
+            # Earlier whole-section extraction rows were labelled summaries.
+            # Keep their exact OCR available, but do not present it as prose.
+            if row["text_type"] == "summary" and "Working historical OCR of the entire numbered section" in (content[row["id"]]["notes"] or ""):
+                row["text_type"] = "source_ocr"
             if row["source_id"] in self.capture_links:
                 row["access_url"] = self.capture_links[row["source_id"]]
             if row["content_status"] == "included":
                 continue
             row["content_status"] = "private_research"
-            row["content"] = content[row["id"]]
+            row["content"] = content[row["id"]]["content"]
             check = checks.get(row["id"])
             row["editorial_status"] = check["status"] if check else "not_checked"
         return rows

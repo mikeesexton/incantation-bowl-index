@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "dbd532dc2c5b9ee95c84f5dcd4a62cccd6535e1a785f66c393e655e0ec07d16d",
+  "corpus_digest": "cda11337fcb1ce1a22bd077737fb41fb0c9e0cfad378d1cd799710de3e5dca41",
   "migrations": 19,
-  "note": "Batch 2 audit fixes: 40 private English rendering drafts, two native Mandaic edition facsimiles, seven Penn claims and one card line; dimensions and repeated details standardized in reader; all original rows retained.",
-  "recorded_at": "2026-10-01T11:08:54+00:00",
+  "note": "Reader refinements and one project Pognon14 commentary summary. Snapshot also contains concurrent TEXT session additions (28 texts, eight media and 68 proofreading reviews), attributable to its held-source/native-facsimile and separate-pass manifests; those files remain with that session.",
+  "recorded_at": "2026-10-01T11:32:59+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "d6884f99ce497a2d66bcbee6c65ac1b7a1b729e3a81a2c5e8de23d004aa2211e",
-      "rows": 1137
+      "digest": "4364f26a2653298c0efbf9a22cd2a291c94138cf672eb0d13ab791c46210cf49",
+      "rows": 1145
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "f8308da042d7b17ecdc94dccef9b8603ac255da7be519b92ec7cc6fb84ff399f",
-      "rows": 742
+      "digest": "24d76f163799be4641204425b75903c83e48006e2c2d794fcf7ca2b38587090b",
+      "rows": 810
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "044d5a78ee13aba2ddfc4884866ee7bd65627550b0196d2811fdf00fe13fc9b1",
-      "rows": 1434
+      "digest": "d5e51c3709594abce8e180826b0dcaff639cfb0fe6ea02aac976ede36662d6e7",
+      "rows": 1463
     }
   }
 }

@@ -134,8 +134,30 @@ class PrivateReaderTests(unittest.TestCase):
         row = next(row for row in PrivateResearchProjection(self.conn).table("facts")
                    if row["field"] == "dimensions")
         self.assertEqual(row["recorded_value"], original)
-        self.assertEqual(row["value"], "Height 7.2 cm · Catalogue circumference 16.4 cm (measurement convention unverified)")
+        self.assertEqual(row["value"], "Height 7.2 cm · Circumference 16.4 cm")
         self.assertEqual(self.conn.execute("SELECT value_text FROM claims WHERE field='dimensions'").fetchone()[0], original)
+
+    def test_source_ocr_stays_available_without_masquerading_as_summary(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        add_candidate(self.conn, {"source_id": source_id, "appearance": {"locator": "no. 1"},
+            "texts": [{"text_type": "summary", "content": "garbled glyphs and commentary",
+                       "notes": "Working historical OCR of the entire numbered section, including French translation."}]})
+        self.conn.commit()
+        row = next(r for r in PrivateResearchProjection(self.conn).table("texts")
+                   if r["content"] == "garbled glyphs and commentary")
+        self.assertEqual(row["text_type"], "source_ocr")
+        self.assertEqual(self.conn.execute("SELECT text_type FROM texts WHERE id=?", (row["id"],)).fetchone()[0], "summary")
+
+    def test_museum_qualifier_is_display_only_with_original_claim_retained(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        original = "Possibly Aramaic (museum description)"
+        add_candidate(self.conn, {"source_id": source_id, "appearance": {"locator": "no. 1"},
+                                 "claims": [{"field": "inscription_language", "value_text": original}]})
+        self.conn.commit()
+        row = next(r for r in PrivateResearchProjection(self.conn).table("facts")
+                   if r["field"] == "inscription_language")
+        self.assertEqual(row["value"], "Possibly Aramaic")
+        self.assertEqual(row["recorded_value"], original)
 
     def test_local_reader_links_registered_capture_without_exposing_its_path(self):
         source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]

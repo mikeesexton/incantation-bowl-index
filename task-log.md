@@ -25,6 +25,22 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Refine batch 2 reader presentation
+
+**Claimed:** OPS (Mike-requested reader refinements)
+**Corpus:** changed (one attributed project English summary of Pognon14's commentary; all pre-existing records retained) — recorded combined state digest `cda11337fcb1`
+**Tests:** 367 Python and 51 Node tests pass; summary replay adds no rows; exact one-row scoped delta against pre-ingest backup, SQLite integrity/foreign keys, source-retention and private/public gates pass; Mike Access build audit 7/7; live five-card checks and screenshot pass
+
+- Saved Mike's five further explicit follow-up notes against the current matching card fingerprints. Ten total personal reviews remain counted; no operational follow-up was inferred resolved.
+- NLI dimensions now say simply Height / Circumference in cm, without catalogue or convention warnings, per Mike's explicit instruction. Remove repeated museum description/classification/provenance/provenience parentheticals from every displayed fact and audit card. Keep source wording and substantive uncertainty intact.
+- Combine a single numerical date and period sharing the same source/locator into one dating statement and citation, including BM127398. Distinct dates and independently sourced period reports remain separate.
+- Remove extraction-only bracketed PDF/printed-page markers and their artificial page-break whitespace from all translation display text, including Pognon14 French and English; preserve source locators and editorial/restoration brackets.
+- Show exact inscription facsimiles in the originals section, omitting whole PDF page snapshots. Where inscription crops exist, they alone lead the originals; otherwise retained transcriptions remain available. The source PDF stays linked from Sources.
+- Reclassify 31 explicitly documented historical whole-section OCR summaries as source_ocr in the private presentation only. Keep the exact OCR under Research details → Uncorrected source OCR, with its mixed-content/glyph warning. Pognon14 now has a separately attributed readable English project summary explaining Pognon's comparison with the previous inscription and limited translation. No source proofreading, independent reading or public approval was inferred.
+- Regenerated reports and the complete local Mike Access build; restarted the local reader. The combined state/report snapshot also contains the concurrent TEXT session's 28 texts, eight media and 68 proofreading reviews, identified by their held-source capture/partial-review notes and that session's manifests. Those additions preceded this session's consistent pre-ingest backup and are not claimed as this session's work. Concurrent claims/manifests and latest roadmap input/output updates remain unstaged. No deployment or push.
+- Next: continue Mike's personal audit and the separate TEXT workstream; keep original records and explicit follow-ups available.
+
+
 ## 2026-10-01 — Codex — Batch 2 personal audit corrections
 
 **Claimed:** OPS (Mike-requested audit corrections and source checks)

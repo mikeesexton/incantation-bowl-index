@@ -11,12 +11,7 @@ from decimal import Decimal
 
 
 def format_dimensions(value):
-    """Translate NLI's label without asserting its measurement convention.
-
-    Catalogue הקף literally means circumference. The dimensions remain a
-    catalogue report, and must not be treated as a verified circumference or
-    converted into a diameter. Original values stay in claims/recorded_value.
-    """
+    """Show exact measurements in cm; retain source values in recorded_value."""
     match = re.fullmatch(
         r"Height\s+(\d+(?:\.\d+)?)\s+mm;\s+source field\s+[‘']הקף[’']\s+(\d+(?:\.\d+)?)\s+mm",
         str(value or "").strip(), re.I,
@@ -29,8 +24,7 @@ def format_dimensions(value):
 
     if match:
         height, circumference = (centimetres(amount, "mm") for amount in match.groups())
-        return (f"Height {height} cm · Catalogue circumference {circumference} cm "
-                "(measurement convention unverified)")
+        return f"Height {height} cm · Circumference {circumference} cm"
     text = str(value or "").strip()
     # Only normalize fully labelled exact measurements. Qualifiers, ranges and
     # other prose fail closed, preserving the entire source report.
@@ -64,6 +58,19 @@ def format_dimensions(value):
         label = "Measurements (axes unspecified)" if len(numbers) > 1 else "Measurement (axis unspecified)"
         return label + " " + " × ".join(centimetres(number, unlabelled[2]) for number in numbers) + " cm"
     return value
+
+
+def format_fact_value(value):
+    """Remove repeated source labels, preserving substantive qualifications.
+
+    Source attribution is already displayed with the fact. Recorded wording,
+    uncertainty, measurement roles and meaningful parentheses remain intact.
+    """
+    return re.sub(
+        r"\s*\((?:museum|catalogue)(?:[- ]reported)?\s+"
+        r"(?:description|classification|provenance|provenience)\)",
+        "", str(value or ""), flags=re.I,
+    ).strip()
 
 
 _LABEL_NOISE = re.compile(

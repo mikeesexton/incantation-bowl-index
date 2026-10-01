@@ -10,8 +10,8 @@ const vm = require("node:vm");
 const source = fs.readFileSync("web/reading.js", "utf8");
 const body = source.slice(source.indexOf('const TABLES'), source.indexOf("const BROWSE"));
 const context = vm.createContext({});
-vm.runInContext(body + "\nglobalThis.T = {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, card, data};", context);
-const {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, card, data} = context.T;
+vm.runInContext(body + "\nglobalThis.T = {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, sourceExtractions, card, data};", context);
+const {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, sourceExtractions, card, data} = context.T;
 
 test("invalidating a loaded reader refreshes texts and their identity indexes", async () => {
   let content = "Earlier reading";
@@ -210,7 +210,7 @@ test("a translation leads and the Aramaic transcription is expandable", () => {
   assert.match(html, /Show original incantation/);
   assert.match(html, /dir="rtl"/);
   assert.match(html, /בשמך אנא/);
-  assert.match(html, /Research summary/);
+  assert.match(html, /Summary and commentary/);
 });
 
 test("English leads while source-language translations stay available separately", () => {
@@ -226,24 +226,25 @@ test("English leads while source-language translations stay available separately
     /No English translation is available/);
 });
 
-test("original-script facsimiles are shown before whole source pages and labelled accurately", () => {
+test("only inscription facsimiles appear in originals, excluding whole source pages", () => {
   const html = textSections([], [
     {media_type: "scan", url: "/api/private-media/FULL.png"},
     {media_type: "inscription_facsimile", url: "/api/private-media/NATIVE.png"},
   ]);
-  assert.ok(html.indexOf("NATIVE.png") < html.indexOf("FULL.png"));
+  assert.match(html, /NATIVE.png/);
+  assert.doesNotMatch(html, /FULL.png/);
   assert.match(html, /Original-script edition text · facsimile/);
   assert.match(html, /Not a searchable transcription/);
 });
 
 test("commentary never substitutes for the translation and empty originals are explicit", () => {
   const html = textSections([{text_type: "summary", content: "A catalogue description."}]);
-  const translation = html.slice(0, html.indexOf("Research summary and commentary"));
+  const translation = html.slice(0, html.indexOf("Summary and commentary"));
   assert.match(translation, /What it says/);
   assert.match(translation, /No translation is available/);
-  assert.match(translation, /No transcription or transliteration is stored/);
+  assert.match(translation, /No original incantation is available/);
   assert.doesNotMatch(translation, /A catalogue description/);
-  assert.match(html, /<details[^>]*><summary>Research summary and commentary/);
+  assert.match(html, /<details[^>]*><summary>Summary and commentary/);
   assert.doesNotMatch(html, /<details[^>]* open/);
 });
 
@@ -255,14 +256,35 @@ test("Latin transliterations stay readable and original markup is escaped", () =
   assert.match(html, /&lt;script&gt;/);
 });
 
-test("a retained original page is expandable and distinguished from a transcription", () => {
-  given({accessTier: "private_research"});
-  const html = textSections([], [{media_type: "scan", url: "/api/private-media/MED-TEST.png",
-    attribution: "Montgomery 1913", rights_statement: "Private research view only;"}]);
-  assert.match(html, /No transcription or transliteration is stored/);
-  assert.match(html, /Recorded source pages are available/);
-  assert.match(html, /Published source page · facsimile/);
-  assert.match(html, /private research view/);
-  assert.match(html, /alt="Published source page"/);
-  assert.ok(html.indexOf("<details") < html.indexOf("<img"));
+test("whole PDF page snapshots remain outside the original-incantation section", () => {
+  const html = textSections([], [{media_type: "scan", url: "/api/private-media/MED-TEST.png"}]);
+  assert.match(html, /No original incantation is available/);
+  assert.doesNotMatch(html, /MED-TEST.png|Published source page|<img/);
+});
+
+test("translation page markers disappear while editorial brackets and source locators survive", () => {
+  const rows = ["English", "French"].map(language => ({text_type: "translation", language,
+    content: "[PDF page 53; printed p. 42] First [restored] words\n[PDF page 54; printed p. 43] last words? …",
+    access_locator: "printed pp. 42–43; PDF pp. 53–54"}));
+  const html = textSections(rows);
+  assert.doesNotMatch(html, /\[PDF page/);
+  assert.equal((html.match(/First \[restored\] words/g) || []).length, 2);
+  assert.equal((html.match(/last words\? …/g) || []).length, 2);
+  assert.match(html, /PDF pp. 53–54/);
+  assert.match(rows[0].content, /\[PDF page 53/);
+});
+
+test("raw whole-section OCR is research apparatus, separate from a readable source summary", () => {
+  const rows = [{text_type: "source_ocr", content: "GARBLED OCR", language: "French and Mandaic"},
+    {text_type: "summary", content: "Pognon translates only the opening.", language: "English",
+     editor: "Incantation Bowl Index source commentary"}];
+  const html = textSections(rows);
+  assert.doesNotMatch(html, /GARBLED OCR/);
+  assert.match(html, /Source commentary · English/);
+  assert.match(html, /Project summary of the edition’s commentary/);
+  const apparatus = sourceExtractions(rows);
+  assert.match(apparatus, /Uncorrected source OCR/);
+  assert.match(apparatus, /may mix inscription, commentary and translation/);
+  assert.match(apparatus, /GARBLED OCR/);
+  assert.doesNotMatch(apparatus, /Pognon translates only/);
 });

@@ -96,16 +96,27 @@ remain expandable separately. Project English renderings of French or German
 translations are attributed drafts, not independent translations from the ancient
 inscription or scan-checked scholarly editions. Exact native-script edition
 facsimiles appear inside “Show original incantation” and are labelled as images,
-without claiming searchable transcription.
+without claiming searchable transcription. When these inscription crops exist,
+they alone appear in that section; whole PDF page snapshots do not. The retained
+source PDF remains linked from Sources. Extraction page markers are omitted from
+French and English reading text, while locators and editorial brackets remain.
+Whole-section historical OCR is labelled “Uncorrected source OCR” under Research
+details, rather than presented as a research summary. Project commentary summaries
+identify their relationship to the edition and the incantation.
 
 Dimension presentation uses centimetres for fully parsed exact measurements,
 retains distinctions such as outside/opening diameter and height/depth, and names
-unspecified axes explicitly. NLI's `הקף` is translated literally as catalogue
-circumference with its measurement convention unverified; no diameter is inferred.
+unspecified axes explicitly. NLI's `הקף` is displayed simply as circumference,
+per Mike's October 1 display instruction; no diameter is inferred.
 Ranges, approximations and unparsed source reports remain intact. Original source
 values remain in the corpus and research details. Repeated provenance places are
 grouped with their distinct source roles and citations; dating evidence replaces
-the date in the entry header when that evidence block is present.
+the date in the entry header when that evidence block is present. A single date
+and period with the same source and locator share one statement and citation.
+Repeated parenthetical source labels such as “museum description”, “museum
+classification” and “museum-reported provenience” are omitted from displayed
+facts throughout the reader and audit cards. Sources and recorded wording remain;
+substantive qualifiers such as “possibly” and “approximately” remain visible.
 
 ## Review safety
 

@@ -22,7 +22,7 @@ from zoneinfo import ZoneInfo
 from .db import PROJECT_ROOT, db_path
 from .identity import CORE_ORDER, identity_rows
 from .proofreading import current_text_reviews
-from .presentation import format_dimensions
+from .presentation import format_dimensions, format_fact_value
 from .state import compare_state
 
 
@@ -225,6 +225,7 @@ class Evidence:
                      claim.get("normalized_value") or "")[:240]
             if claim["field"] == "dimensions":
                 value = format_dimensions(value)
+            value = format_fact_value(value)
             facts.append({"claim_id": claim["id"], "field": claim["field"],
                           "value": value,
                           "certainty": claim.get("certainty"),

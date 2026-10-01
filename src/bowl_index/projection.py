@@ -15,7 +15,7 @@ import json
 import re
 
 from .identity import COVERAGE_GROUPS, identity_rows
-from .presentation import format_date, format_dimensions, public_facets
+from .presentation import format_date, format_dimensions, format_fact_value, public_facets
 from .publication import current_text_reviews
 from .publications import current_registry, publication_keys
 from .rights import current_media_reviews, media_evidence
@@ -336,6 +336,7 @@ class Projection:
                 value = format_date(value)
             elif row["field"] == "dimensions":
                 value = format_dimensions(value)
+            value = format_fact_value(value)
             release_class = "factual_metadata"
             if row["field"] in SOURCE_WORDING_REVIEW_FIELDS:
                 if row["source_rights_status"] == "public_domain":

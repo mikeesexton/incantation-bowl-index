@@ -1,6 +1,6 @@
 import unittest
 
-from bowl_index.presentation import format_dimensions, language_name
+from bowl_index.presentation import format_dimensions, format_fact_value, language_name
 
 
 class DimensionPresentationTests(unittest.TestCase):
@@ -11,8 +11,19 @@ class DimensionPresentationTests(unittest.TestCase):
 
     def test_nli_label_is_english_without_inferred_diameter(self):
         value = format_dimensions("Height 72 mm; source field ‘הקף’ 164 mm")
-        self.assertEqual(value, "Height 7.2 cm · Catalogue circumference 16.4 cm (measurement convention unverified)")
+        self.assertEqual(value, "Height 7.2 cm · Circumference 16.4 cm")
         self.assertNotIn("diameter", value.lower())
+
+    def test_repeated_source_labels_are_removed_without_losing_uncertainty(self):
+        for original, display in (
+            ("Incomplete; 11 fragments (museum description)", "Incomplete; 11 fragments"),
+            ("Demon (museum classification)", "Demon"),
+            ("Nippur, Iraq (museum-reported provenience)", "Nippur, Iraq"),
+            ("Possibly Aramaic (museum description)", "Possibly Aramaic"),
+            ("Height 7 cm (approximately)", "Height 7 cm (approximately)"),
+            ("Jewish Historical Museum (Belgrade)", "Jewish Historical Museum (Belgrade)"),
+        ):
+            self.assertEqual(format_fact_value(original), display)
 
     def test_qualifiers_and_units_retain_their_measurement_roles(self):
         self.assertEqual(format_dimensions("height 75 mm; outside diameter 183 mm"),
