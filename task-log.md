@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Assess remaining research roadmap work
+
+**Claimed:** QA-004 (roadmap status and evidence-metric assessment requested by Mike)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 371 Python tests pass; current corpus state match and live read-only metrics verified
+
+- Checked the roadmap input, generated snapshot, current enrichment and proofreading reports, original-script recovery audit, and live read-only roadmap metrics. Strong foundation: Waller's 115-entry JBA bibliography is represented, seventeen complete edition/catalogue units are enumerated, and the Montgomery reference cohort has checked English texts and concordances. These do not establish multilingual comprehensiveness.
+- Current publication coverage is 799/1,053 probable/confirmed identities (75.9%); 254 remain unlinked and the existing 80% disposition threshold needs 44 additional identities. Current claim comparisons have 268 review/revalidation instances, including 46 stale reviews; the historical completed triage pass does not certify today's expanded corpus.
+- Current edition-text ledger: 688 checked, 68 partial and 42 unreviewed out of 798 stored rows. The frozen 99-appearance recovery audit leaves 45 same-source native-script gaps, including 31 Pognon Mandaic editions and Ellis 6. Missing texts remain outside the stored-row proofreading denominator; specialist review is separate.
+- Identified further work beyond Segal: other queued editions, NLI/Penn/Schøyen concordances, multilingual bibliography sweep and Mandaic denominator, provenance/evidence grading, person-role attribution and independent review. Recommend a bounded checked research-core milestone before more undirected discovery. Public-release rights, remote access and collector operations remain separate workstreams.
+- Flagged stale prose/task evidence in the roadmap against current generated metrics and the 1 October script audit. No task completion, research finding, acquisition availability, identity, rights or deployment decision changed; no outside research or outreach performed. Next roadmap maintenance should reconcile those summaries with current reports.
+
 ## 2026-10-01 — Codex — Enable scheduled backups and refresh bowlam.com
 
 **Claimed:** OPS-002 and OPS (Mike’s explicit backup scheduling and public deployment instruction)
