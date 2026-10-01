@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Recover M163 Hebrew-script edition and photographic plates
+
+**Claimed:** TEXT-004, TEXT-009 and TEXT-010 (active research Goal; held-source capture and separate source checks)
+**Corpus:** changed (one protected Hebrew-script working transcription, one partial source review, four new media rows) — state digest `265f799905c4`
+**Tests:** 371 Python tests pass; copied-database rehearsal, identical manifest replay, all pre-existing row preservation, sections/anchors, integrity and foreign keys pass; Mike Access 7/7 checks
+
+- Previous Goal turn made progress by establishing fixed publication/held-source inventories. This first extraction checkpoint captures Dan Levene 1999 M163’s Hebrew-script edition on printed pp. 285–287 / PDF pp. 2–3: ten printed sections with all thirty inscription anchors, 4,528 characters. Manual Unicode working capture followed by a separate scan/crop pass corrected four omitted vowel letters in printed invocations, one extra yod in a name and the project-marked above-line-name doubt. Initial draft and corrected content remain in immutable proofreading snapshots; no reading was supplied from the English translation.
+- Retained source restorations, spelling variation, uncertainty, repetitions and page continuations. Four PROJECT capture doubts are distinct from the scholar’s source marks. Normalized partial-letter vertical enclosures and unresolved above-line notation keep the review partial; no diplomatic character certification, specialist interpretation or original-bowl reading is claimed. Existing English translation and all earlier summaries remain unchanged.
+- Visually checked all four published M163 photographic views, captioned on printed pp. 305–308 / PDF pp. 12–14, and retained them as three whole-spread private plate images. Added one missing edition-page link (PDF p. 2), reused the existing p. 3 link, and rendered all five manifest-linked pages privately. Three image rows plus one scan row added; earlier repository pointer retained. Rendering’s first attempt used an unavailable system executable path; the discovered bundled renderer succeeded.
+- Production changes are confined to texts, media and proofreading history. Every pre-existing corpus row is identical to the online pre-batch backup, and all applied manifests replay with no corpus change. Content-free receipt: research/receipts/m163_hebrew_edition_capture_2026-10-01.json; image hashes: research/receipts/m163_private_page_images_2026-10-01.json. The private campaign checkpoint is append-only and every frozen inventory hash still matches.
+- Stored edition-text inventory is now 801: 688 checked / 111 partial / 2 unreviewed. M163 lies outside the earlier frozen 99-appearance roster, whose 45 same-source native gaps are unchanged. Publication links remain 803/1,052 with 249 unlinked. Regenerated roadmap, proofreading, enrichment, conflicts, acquisition, campaign and private research exports; rebuilt Mike Access with all 1,466 texts, 1,154 media and 63 captures. New text matches reader payload; five rendered page hashes verified.
+- Goal remains active. Next primary holding is Mackenzie’s nineteen-page Mandaic British Museum study with no indexed appearances, followed by the other zero-appearance primary texts and exact non-NLI publication cases. No identity, rights, publication decision, deployment, push, outbound message or allowance reset.
+
 ## 2026-10-01 — Codex — Start persistent research campaign inventory
 
 **Claimed:** TEXT-001, TEXT-004, TEXT-009 and TEXT-010 (Mike activated the proposed Goal; publication-reference investigation and held-edition content/source checks)

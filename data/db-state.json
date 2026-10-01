@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "596c454a0f57defadcfade14b304d7f291dbd2ac98a786c6e1f18bf357f594bd",
+  "corpus_digest": "265f799905c42b8108290416b59e43496813c4405cee3340fbc73537e8689ea1",
   "migrations": 19,
-  "note": "Activated persistent research Goal and froze publication/held-source campaign inventories; corpus unchanged.",
-  "recorded_at": "2026-10-01T21:42:13+00:00",
+  "note": "Goal checkpoint 1: M163 native Hebrew-script working edition and separate partial source review; four published photo views on three retained plate spreads; existing corpus rows unchanged.",
+  "recorded_at": "2026-10-01T21:58:12+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "5ba603853011d85299c9e1946f854f0b74021702f03fe612ff46e8d2d649e365",
-      "rows": 1150
+      "digest": "fef4c1b13edd2c64adf9b6e65d37516fb419d81f1539b59953cb0b9628495756",
+      "rows": 1154
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "6174e6dbe0bcdd7617e711f1085b4f735ec6881ae9a5401f83cfd82a86ae08cd",
-      "rows": 852
+      "digest": "e29d9fb902020a593143a6ce7776d7efd22dac8e06d542bf8264a147833a8be6",
+      "rows": 853
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "7504e6634a654a35bb159a4f6254e53ab0ebf08fb8bc6b262102acf71cc115e7",
-      "rows": 1465
+      "digest": "b9577e8288dd806843979571b6e4907575c5d963dfe216b98e14e07d15dad300",
+      "rows": 1466
     }
   }
 }

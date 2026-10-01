@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-01T21:55:21+00:00",
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-004",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "object_id": "IBI-63D659859D54",
+  "appearance_id": "APP-69D88D5FAE03",
+  "source_id": "SRC-21417589C8F9",
+  "source_pdf_sha256": "19a0ad766308fa87c5e1a9a2c625bbc205b278c54e80c92dd9139888088959d3",
+  "source_capture_id": "CAP-B97742A6FA30",
+  "text_locator": {
+    "printed_pages": [
+      285,
+      286,
+      287
+    ],
+    "pdf_pages": [
+      2,
+      3
+    ],
+    "extent": "Ten printed sections with numbered inscription anchors 1–30; a working capture of the printed edition, not a physical-inscription completeness or diplomatic accuracy claim"
+  },
+  "image_locator": {
+    "printed_pages": [
+      305,
+      306,
+      307,
+      308
+    ],
+    "pdf_pages": [
+      12,
+      13,
+      14
+    ],
+    "caption_check": "Each of four published views is captioned Moussaieff Collection M163; retained as three whole-spread photographic plate-page media records. No inference of independent views or object correspondences outside this edition."
+  },
+  "private_manifests": [
+    {
+      "path": "data/private/manifests/m163_hebrew_edition_2026-10-01.jsonl",
+      "sha256": "d37a808244964c11c17040f0bc8058e6ab14077e69d39e40a44e512a2fb9c980"
+    },
+    {
+      "path": "data/private/manifests/m163_hebrew_proofreading_2026-10-01_production.json",
+      "sha256": "739fb6e6699b05c8d739025a5cab3502f44683b309d3a2112456d860234fbbc1"
+    }
+  ],
+  "private_draft_and_revision": [
+    {
+      "path": "data/private/research-work/m163-native-2026-10-01/m163-hebrew-draft01.txt",
+      "sha256": "25ee21af960cfd808bacf0cabe88daff65524e3a4597dd7ed2281dffb0992e9b"
+    },
+    {
+      "path": "data/private/research-work/m163-native-2026-10-01/m163-hebrew-proof01.txt",
+      "sha256": "6405aa84ef2e02b3b705062318c5947f73e33f3998bcd8273ffbb9eb12fad4bd"
+    }
+  ],
+  "before_digest": "596c454a0f57defadcfade14b304d7f291dbd2ac98a786c6e1f18bf357f594bd",
+  "after_digest": "265f799905c42b8108290416b59e43496813c4405cee3340fbc73537e8689ea1",
+  "changed_tables": {
+    "media": {
+      "before": 1150,
+      "after": 1154
+    },
+    "text_proofreading_reviews": {
+      "before": 852,
+      "after": 853
+    },
+    "texts": {
+      "before": 1465,
+      "after": 1466
+    }
+  },
+  "all_preexisting_rows_unchanged": true,
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "full_manifest_replay_unchanged": true,
+  "text_id": "TXT-86A9CCDAF44A",
+  "content_sha256": "b91d9523e98ca8074adc8d554a2fa830408175737c342c4e65154bde2d4c9116",
+  "characters": 4528,
+  "review_id": "IBI-PROOF-20261001-LEVENE1999-M163-HEBREW",
+  "review_status": "partial_review",
+  "source_anchors": 30,
+  "numbered_sections": 10,
+  "project_capture_doubts": 4,
+  "new_media_ids": [
+    "MED-6C5C85749AC2",
+    "MED-3018EFFC5F7B",
+    "MED-89C237568005",
+    "MED-4A410C923F84"
+  ],
+  "editorial_limitations": [
+    "Manual Unicode reading text with line wraps normalized inside sections; source spelling variation and editorial uncertainties retained.",
+    "Source partial-letter enclosures normalized; exact bar positions and above-line notation remain unresolved.",
+    "Four project capture doubts marked separately from the scholar’s source symbols. No supplied reading from the English translation.",
+    "Separate scan pass is AI-assisted, not independent specialist review or original-bowl collation."
+  ],
+  "private_media_receipt": "research/receipts/m163_private_page_images_2026-10-01.json",
+  "baseline_99_native_gaps": 45,
+  "frozen_roster_note": "M163 is outside the frozen 99-item recovery roster; its new working native capture does not alter that roster’s 45 same-source native gaps.",
+  "publication_link_changes": 0,
+  "public_text_approvals": 0,
+  "allowance_resets_used": 0,
+  "deployment": false,
+  "private_campaign_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0001_m163_hebrew.json",
+    "sha256": "a20003e0f61e4b6faa1ef9b46a2fd03c7ce19f89e34c8dad677e647682b9a755"
+  },
+  "validation": {
+    "python_tests_passed": 371,
+    "private_reader_checks_passed": 7,
+    "all_new_text_matches_private_reader": true,
+    "private_plate_and_edition_page_images": 5,
+    "all_media_and_manifest_hashes_match": true,
+    "frozen_campaign_baselines_unchanged": true,
+    "corpus_digest_after_reports_and_reader": "265f799905c42b8108290416b59e43496813c4405cee3340fbc73537e8689ea1",
+    "reader_text_rows": 1466,
+    "reader_media_rows": 1154,
+    "registered_source_captures": 63
+  }
+}
