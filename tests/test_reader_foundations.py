@@ -120,10 +120,10 @@ class ControlledFacetTests(unittest.TestCase):
                    'value_text':"Mandaic (Pognon's historical classification)"}]
         self.assertEqual(language_name(claims), 'Mandaic')
 
-    def test_catalogue_code_is_not_promoted_to_an_inscription_reading(self):
+    def test_catalogue_language_is_reported_when_no_more_specific_report_exists(self):
         catalogue = {'field': 'catalogue_language_codes', 'value_text': 'heb'}
-        self.assertEqual(language_name([catalogue]), 'Language not recorded')
-        self.assertEqual(public_facets('catalogue_language_codes', 'language', 'heb'), [])
+        self.assertEqual(language_name([catalogue]), 'Hebrew')
+        self.assertEqual(public_facets('catalogue_language_codes', 'language', 'heb'), ['Hebrew'])
         inscription = {'field': 'inscription_language', 'value_text': 'Jewish Babylonian Aramaic'}
         self.assertEqual(language_name([catalogue, inscription]), 'Jewish Babylonian Aramaic')
 

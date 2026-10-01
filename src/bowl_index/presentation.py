@@ -398,8 +398,6 @@ def public_facets(field, field_group, value):
     if field_group == "location":
         return collection_facet(value)
     if field_group == "language":
-        if field == "catalogue_language_codes":
-            return []
         return language_facets(value)
     if field_group == "provenance":
         return origin_facets(field, value)
@@ -411,8 +409,8 @@ def public_facets(field, field_group, value):
 
 
 def language_name(claims):
-    """Use inscription reports, keeping catalogue codes in source metadata."""
-    precedence = ("inscription_language", "script_or_language")
+    """Prefer explicit evidence, but present it through the controlled vocabulary."""
+    precedence = ("inscription_language", "script_or_language", "catalogue_language_codes")
     for field in precedence:
         labels = []
         for claim in claims:

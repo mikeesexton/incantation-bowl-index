@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Restore reported catalogue languages and draft NLI enquiry
+
+**Claimed:** OPS (Mike's instruction to reverse catalogue-language display changes)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 368 Python and 53 Node tests pass; Mike Access build audit 7/7; all 1,711 reader renders pass clutter checks; restored NLI heading and screenshot verified
+
+- Reversed both recent catalogue-language presentation changes, restoring presentation.py and reading.js exactly to the pre-experiment f27cdf2 versions. Both NLI bowls again report Hebrew directly; catalogue codes again supply language browse facets. Removed the added source-only language line. All earlier streamlining fixes remain in the restored baseline.
+- Superseded the source-only instruction with Mike's explicit ruling: report a catalogue's bowl language as that language, without “catalogued as” qualifiers or suppression. Preserve original claims and seek institutional clarification separately. No source recoding, corpus change or personal-audit completion inferred.
+- Drafted the requested unsent NLI email in chat, with October 1 survey counts scoped to 280 bowl-titled catalogue records (279 Hebrew, one Aramaic/Mandaic), the 205-record main numbered subset (204 Hebrew, one Aramaic/Mandaic), example catalogue links and NLI's collection overview. Ask for count confirmation, the meaning of Hebrew and the dual-code assignment. Retain previous factual survey receipts and session history.
+- Rebuilt Mike Access after tests, restarted the local reader, saved restored-heading proof, regenerated enrichment reports and recorded unchanged state. No email sent, deployment or push.
+
 ## 2026-10-01 — Codex — Separate NLI catalogue codes from inscription language
 
 **Claimed:** OPS (Mike's NLI language/script distinction)

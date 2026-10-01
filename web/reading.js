@@ -387,7 +387,7 @@
       <div class="bowl-card-body">
         <h3>${titleMarkup(cluster)}</h3>
         ${line ? `<p class="bowl-card-line">${esc(line)}</p>` : ""}
-        <p class="bowl-card-meta">${[place, tongue, when].filter(value => value && !/not recorded/i.test(value)).map(esc).join(" · ")}</p>
+        <p class="bowl-card-meta">${[place, tongue, when].filter(Boolean).map(esc).join(" · ")}</p>
         ${text ? `<p class="bowl-card-flag">Text you can read</p>` : ""}
       </div></a></article>`;
   }
@@ -812,7 +812,7 @@
     const grouped = new Map();
     const add = (sourceId, locator, url) => {
       if (!sourceId) return;
-      if (!grouped.has(sourceId)) grouped.set(sourceId, {locators: new Map(), languages: new Set(), url: ""});
+      if (!grouped.has(sourceId)) grouped.set(sourceId, {locators: new Map(), url: ""});
       const item = grouped.get(sourceId);
       if (locator) {
         const key = canonicalLocator(locator);
@@ -824,14 +824,7 @@
       // publication link in the bibliography.
       if (url && !item.url) item.url = url;
     };
-    const languageCodes = {heb: "Hebrew", arc: "Aramaic", myz: "Mandaic", syc: "Syriac"};
-    (data.factsBy[id] || []).forEach(r => {
-      add(r.source_id, r.locator);
-      if (r.source_id && r.field === "catalogue_language_codes") {
-        String(r.value || "").split(/[;,]/).map(tidy).filter(Boolean).forEach(code =>
-          grouped.get(r.source_id).languages.add(languageCodes[code] || code));
-      }
-    });
+    (data.factsBy[id] || []).forEach(r => add(r.source_id, r.locator));
     (data.textsBy[id] || []).forEach(r => add(r.source_id, r.access_locator, r.access_url));
     (data.editionsBy[id] || []).forEach(r => add(r.source_id, r.locator, r.access_url));
     (data.factsBy[id] || []).forEach(r => add(r.source_id, "",
@@ -845,9 +838,8 @@
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
       const citation = source.citation || source.title || "";
       const locators = [...item.locators.values()].filter(locator => !tidy(citation).includes(tidy(locator)));
-      const details = (citation && citation !== label) || locators.length || item.languages.size;
+      const details = (citation && citation !== label) || locators.length;
       return `<li><span>${link}</span>${details ? `<details class="source-details"><summary>Source details</summary>
-        ${item.languages.size ? `<p>Catalogue language field: ${[...item.languages].map(esc).join(" / ")}</p>` : ""}
         ${citation && citation !== label ? `<p>${esc(citation)}</p>` : ""}
         ${locators.length ? `<ul>${locators.map(locator => `<li>${esc(locator)}</li>`).join("")}</ul>` : ""}</details>` : ""}</li>`;
     }).join("")}</ul></section>`;

@@ -221,8 +221,10 @@ Script is evidence for a scribal tradition, not proof of the religion of a
 client or a practitioner. Keep catalogue language codes, edition-based language
 attributions, and script observations as separate claims. They disagree often,
 and the disagreement is informative.
-Catalogue language codes belong in Source details, not inscription-language
-headings or browse categories. Do not reinterpret a language code as a script.
+Report a catalogue's stated bowl language as that language in headings and browse
+categories (Mike, 2026-10-01). Do not add “catalogued as” qualifiers or suppress the
+label because its cataloguing rationale is unknown. Seek clarification from the
+institution when needed; do not reinterpret a language code as a script.
 
 ---
 

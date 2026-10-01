@@ -176,9 +176,3 @@ test("machine locators occur only under Sources, including NLI and Penn facts", 
   assert.match(sources, /Penn object 151160/);
   assert.match(sources, /Source details/);
 });
-
-test("catalogue language codes are readable metadata inside Source details", () => {
-  data.factsBy.ID = [{field: "catalogue_language_codes", field_group: "language",
-    value: "arc; myz", source_id: "SRC", locator: "MMS 997008712402705171"}];
-  assert.match(sourcesSection("ID"), /Source details[\s\S]*Catalogue language field: Aramaic \/ Mandaic/);
-});

@@ -122,8 +122,9 @@ Repeated parenthetical source labels such as “museum description”, “museum
 classification” and “museum-reported provenience” are omitted from displayed
 facts throughout the reader and audit cards. Sources and recorded wording remain;
 substantive qualifiers such as “possibly” and “approximately” remain visible.
-Catalogue language codes appear only in Source details. They do not supply an
-inscription-language heading or language browse facet, or establish the script.
+Catalogue language codes supply language headings and browse facets when no more
+specific language report is available. Report the stated language directly, per
+Mike's October 1 instruction; keep questions about cataloguing practice separate.
 
 ## Whole-corpus editorial review
 
