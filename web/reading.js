@@ -26,6 +26,10 @@
   const esc = value => String(value === null || value === undefined ? "" : value)
     .replace(/[&<>"']/g, ch => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[ch]));
 
+  function invalidate() {
+    data.loaded = false;
+  }
+
   async function load() {
     if (data.loaded) return data;
     const manifest = await fetch(source("manifest")).then(r => r.json());
@@ -300,7 +304,12 @@
   const ORIGINAL_TEXT_TYPES = new Set(["inscription", "transcription", "transliteration", "incipit"]);
 
   function textCredit(item) {
-    return `<p class="entry-credit">${esc(credit(item))}${textTerms(item)}</p>`;
+    const reviewNote = privateResearch() && item.editorial_status === "partial_review"
+      ? "Working text · partly proofread. Full source-page proofreading remains open."
+      : privateResearch() && item.editorial_status === "not_checked"
+        ? "Source-page proofreading is not recorded for this text." : "";
+    return `${reviewNote ? `<p class="entry-note">${esc(reviewNote)}</p>` : ""}
+      <p class="entry-credit">${esc(credit(item))}${textTerms(item)}</p>`;
   }
 
   function originalText(item) {
@@ -1087,5 +1096,5 @@
     view.scrollTop = 0;
   }
 
-  window.ReadingRoom = {render};
+  window.ReadingRoom = {render, invalidate};
 })();

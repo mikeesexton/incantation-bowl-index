@@ -66,6 +66,7 @@ class PrivateReaderTests(unittest.TestCase):
         text = tables["texts"][0]
         self.assertEqual(text["content"], "THE COMPLETE PRIVATE TRANSLATION")
         self.assertEqual(text["content_status"], "private_research")
+        self.assertEqual(text["editorial_status"], "not_checked")
         self.assertEqual(tables["media"][0]["url"], "https://example.org/private-bowl.jpg")
         self.assertIn("no public reuse permission", tables["media"][0]["rights_statement"])
         fact = next(row for row in tables["facts"] if row["field"] == "text_feature")
@@ -74,6 +75,17 @@ class PrivateReaderTests(unittest.TestCase):
         for name, rows in tables.items():
             for row in rows:
                 self.assertEqual(set(row), set(PROJECTION_COLUMNS[name]))
+
+    def test_private_reader_distinguishes_partial_proofreading_from_public_approval(self):
+        text_id = self.conn.execute("SELECT id FROM texts").fetchone()[0]
+        with patch("bowl_index.private_projection.current_text_reviews",
+                   return_value={text_id: {"status": "partial_review"}}):
+            text = PrivateResearchProjection(self.conn).table("texts")[0]
+        self.assertEqual(text["editorial_status"], "partial_review")
+        self.assertEqual(text["content_status"], "private_research")
+        release = Projection(self.conn).table("texts")[0]
+        self.assertIsNone(release["content"])
+        self.assertIsNone(release["editorial_status"])
 
     def test_private_manifest_and_local_catalog_report_the_private_tier(self):
         projection = PrivateResearchProjection(self.conn)

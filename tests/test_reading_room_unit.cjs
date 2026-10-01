@@ -13,6 +13,41 @@ const context = vm.createContext({});
 vm.runInContext(body + "\nglobalThis.T = {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, card, data};", context);
 const {summarise, mark, mediaGallery, orderedImages, displayImageUrl, readableText, textSections, card, data} = context.T;
 
+test("invalidating a loaded reader refreshes texts and their identity indexes", async () => {
+  let content = "Earlier reading";
+  let requests = 0;
+  const loader = vm.createContext({
+    window: {},
+    fetch: async url => {
+      requests += 1;
+      const table = url.split("/").pop();
+      const rows = {
+        identity_clusters: [{identity_id: "IDENT-REFRESH", display_name: "Test bowl", member_ids: '["OBJ-REFRESH"]'}],
+        objects: [{id: "OBJ-REFRESH"}],
+        sources: [{id: "SRC-REFRESH", title: content}],
+        texts: [{object_id: "OBJ-REFRESH", content_status: "private_research", content}],
+      };
+      return {json: async () => table === "manifest"
+        ? {access_tier: "private_research"} : {rows: rows[table] || []}};
+    },
+  });
+  const loadBody = source.slice(source.indexOf("const READER"), source.indexOf("const factsOf"));
+  vm.runInContext(loadBody + "\nglobalThis.T = {load, invalidate};", loader);
+  let loaded = await loader.T.load();
+  assert.equal(loaded.textsBy["IDENT-REFRESH"][0].content, content);
+  const firstRequests = requests;
+  content = "New original incantation";
+  loaded = await loader.T.load();
+  assert.equal(requests, firstRequests);
+  assert.equal(loaded.textsBy["IDENT-REFRESH"][0].content, "Earlier reading");
+  loader.T.invalidate();
+  loaded = await loader.T.load();
+  assert.equal(requests, firstRequests * 2);
+  assert.equal(loaded.textsBy["IDENT-REFRESH"][0].content, content);
+  assert.equal(loaded.sourceById["SRC-REFRESH"].title, content);
+  assert.match(loaded.clusterById["IDENT-REFRESH"].haystack, /new original incantation/);
+});
+
 const ID = "IDENT-TEST";
 const cluster = {identity_id: ID};
 function given({facts = [], texts = [], media = [], accessTier = "release"}) {
@@ -23,6 +58,17 @@ function given({facts = [], texts = [], media = [], accessTier = "release"}) {
   data.manifest = {access_tier: accessTier};
 }
 const fact = (field, field_group, value) => ({field, field_group, value});
+
+test("a partially proofread private original carries its working-text warning", () => {
+  given({accessTier: "private_research"});
+  const html = textSections([{text_type: "transcription", content: "א", script: "Hebrew",
+    editorial_status: "partial_review"}]);
+  assert.match(html, /Working text · partly proofread/);
+  assert.match(html, /Full source-page proofreading remains open/);
+  given({accessTier: "release"});
+  assert.doesNotMatch(textSections([{text_type: "transcription", content: "א", script: "Hebrew",
+    editorial_status: "partial_review"}]), /Working text · partly proofread/);
+});
 
 test("a written card line is preferred to anything composed from claims", () => {
   given({

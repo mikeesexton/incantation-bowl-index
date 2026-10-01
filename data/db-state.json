@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "f36d42ac6e0cabdb1eb547c1d87debdacc12d9d6df4e3026e6a55fece781cf4e",
+  "corpus_digest": "1019bddd67151a6cd11f6eaea863e1e5091d9a06c46e45f20f98fdafc35b0984",
   "migrations": 19,
-  "note": "Linked AIT27 later edition and documented original-script extraction gap; no incantation payload or identity changed",
-  "recorded_at": "2026-10-01T03:15:35+00:00",
+  "note": "Added original Hebrew/Aramaic extraction and proofreading roadmap tasks; ingested a bounded AIT27 Montgomery script draft with partial review; reader exposes working status and refreshes cached records.",
+  "recorded_at": "2026-10-01T03:28:22+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "57a9d0d941f08f9ea88720e69dcc38c26c38cfe42618775aeee457b8f732e24b",
-      "rows": 701
+      "digest": "65fb9efbd3ca47e3828b80c37bbac568f4fab003bf49f423fe9a46a85521cd95",
+      "rows": 702
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "99f321fddc280c191d5628f9e7f314036ca3a626a3b64b7cb82613f346cd0ad2",
-      "rows": 1353
+      "digest": "d7d6bab22d105c5199ebff2d1c8d9c7af51595dbe09b1744d68c9ea0b647e3e5",
+      "rows": 1354
     }
   }
 }

@@ -25,6 +25,41 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-09-30 — Codex — Original-script extraction roadmap and AIT27 pilot
+
+**Claimed:** TEXT-003 / TEXT-004 / TEXT-009 / TEXT-010 / QA-004 (Mike-requested original-script extraction, roadmap expansion and reader verification)
+**Corpus:** changed (one AIT27 original-script working transcription and bounded partial proofreading review; no object, membership, translation or release decision change) — state digest `1019bddd6715`
+**Tests:** 354 Python and 44 Node tests pass; SQLite integrity/foreign keys pass; manifest retries do not duplicate; Mike Access private audit 7/7; private draft/build/screenshot ignored by Git
+
+- Broadened TEXT-003 from Latin transliteration to Montgomery native-script
+  capture; added TEXT-009 for held Hebrew/Aramaic editions and TEXT-010 for
+  source-page proofreading. Track capture and proofing per appearance, identity
+  coverage separately, and explicit item dispositions for absent or unreadable
+  originals. Competing editions, draft history and uncertain readings remain
+  separate; no handoff gate was silently broadened or marked complete.
+- Ingested TXT-BF2E6133E952 from public-domain Montgomery printed p. 212 / PDF
+  p. 218, AIT27 lines 1–11. Manually keyed consonant-only draft retains line
+  numbering, loss runs and five explicit project uncertainties. Pointing/dots
+  are omitted and wraps normalized under the recorded policy; partial_review
+  preserves those limits. Full character collation and specialist interpretation
+  remain open. This is not a full inscription, diplomatic text or new translation.
+- Saved a content-free held-source inventory and pilot report. The Abudraham
+  edition still lacks a captured PDF: normal publisher browser access stops at
+  verification; prior download and author routes did not provide lawful archived
+  bytes. No challenge bypassed or account created. A supplied PDF enables the
+  later B16041 column and witness-specific translation work.
+- Fixed reader refresh cache invalidation and exposed current proofreading
+  status for unpublished private texts, including explicit partial/unreviewed
+  labels. Confirmed the native script and working-text warning in the restarted
+  local reader. A first validation run overlapped two builds; sequential reruns
+  passed. Final Mike Access snapshot `093721aa2a30` retains 1,354/1,354 texts,
+  1,091/1,091 media and 63/63 captures; regenerated roadmap and reports.
+- Audit completion remains independent. No push, deployment, outgoing message,
+  uncertain identity decision or public-release approval. Next: obtain the modern
+  AIT27 PDF, finish its witness-specific capture, then complete Montgomery and
+  audit existing original-script rows before recovering image-only/broken-font
+  sources.
+
 ## 2026-09-30 — Codex — AIT27 later edition and original-script coverage
 
 **Claimed:** TEXT-003 / TEXT-004 (Mike-requested AIT27 follow-up and extraction feasibility)

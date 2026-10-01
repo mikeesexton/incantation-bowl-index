@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_path": "data/private/archive/sha256/c8/c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_by": "Codex: bounded visual transcription pilot, not specialist certification",
+  "reviewed_at": "2026-10-01T03:21:50+00:00",
+  "editorial_policy": "AI-assisted manually keyed visual draft of Montgomery’s printed Aramaic in Hebrew script, No. 27, printed p. 212 / PDF p. 218, lines 1–11 only. Source paragraph wraps are replaced by numbered inscription lines; implicit opening line 1 is numbered by the project. Pointing and isolated consonant dots are not encoded. Printed loss-dot runs are represented as ... without claiming a lost-letter count. Bracketed words ending ? are project transcription uncertainties, not restorations printed by Montgomery. Preserve the source facsimile for exact typography. No later damaged lines, parallel supplementation, specialist certification or translation is claimed.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-MONT27-SCRIPT-PARTIAL-20260930",
+      "text_id": "TXT-BF2E6133E952",
+      "expected_text_sha256": "84c5a7572b8d32e6bf180c4a348009feeadbcee8fdcdff181bfa6483bbca8f62",
+      "corrected_content_path": "data/private/original-script/montgomery/ait27-draft.txt",
+      "corrected_content_sha256": "a718790654b52e35a92444b3335fe5ce8d9ea0dc0a29427a1eb4bc024a30fe7a",
+      "pdf_pages": [
+        218
+      ],
+      "status": "partial_review",
+      "correction_notes": "Compared the bounded script block to full-page and enlarged scan views. Working consonant-only transcription retains line numbers and loss marks. Full character-level review remains open, especially uncertain words at lines 2, 7, 8, 9 and 10; project brackets ending ? are explicitly different from source restorations. Omitted pointing/consonant dots and normalized wrapping mean this is not diplomatic. Montgomery’s unprinted damaged continuation and the later edition remain unextracted. No translation or independent Aramaic interpretation is certified."
+    }
+  ]
+}

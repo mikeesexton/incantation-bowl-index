@@ -10,6 +10,7 @@ from pathlib import Path
 
 from .db import PROJECT_ROOT
 from .projection import Projection
+from .proofreading import current_text_reviews
 
 
 DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
@@ -51,6 +52,7 @@ class PrivateResearchProjection(Projection):
             row["id"]: row["content"]
             for row in self.conn.execute("SELECT id,content FROM texts")
         }
+        checks = current_text_reviews(self.conn)
         for row in rows:
             if row["source_id"] in self.capture_links:
                 row["access_url"] = self.capture_links[row["source_id"]]
@@ -58,6 +60,8 @@ class PrivateResearchProjection(Projection):
                 continue
             row["content_status"] = "private_research"
             row["content"] = content[row["id"]]
+            check = checks.get(row["id"])
+            row["editorial_status"] = check["status"] if check else "not_checked"
         return rows
 
     def _editions(self):

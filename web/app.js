@@ -598,6 +598,7 @@ $("#refresh-corpus").addEventListener("click", async event => {
     });
     $("#identity-count").textContent = `${state.stats.identities.toLocaleString()} bowls`;
     window.Introduction?.invalidate();
+    window.ReadingRoom?.invalidate();
     activateRoute();
     toast("Corpus reloaded from SQLite.");
   } catch (error) { toast(error.message); }
