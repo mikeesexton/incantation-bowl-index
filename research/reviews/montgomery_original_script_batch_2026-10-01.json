@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_path": "data/private/archive/sha256/c8/c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_by": "Codex: AI-assisted bounded visual script collation, not independent specialist certification",
+  "reviewed_at": "2026-10-01T04:00:43+00:00",
+  "editorial_policy": "AI-assisted normalized consonant working transcription from Montgomery’s printed edition, visually compared with the held page image, not a diplomatic text or specialist certification. Printed inscription line numbers are retained; implicit opening line 1 is supplied by the project. Physical page wrapping and most typographic punctuation are normalized. Printed square brackets remain source restorations; ... normalizes printed loss runs without asserting a lost-letter count. ⟦word?⟧ is a project transcription doubt, not Montgomery’s restoration. ⸢word⸣ flags a recognized source-dotted uncertain word at word level; this first pass does NOT exhaustively encode or collate every inferior letter-dot or pointing mark. Exact uncertainty positions, diacritics, damaged passages, final letters and difficult words require full character-level source collation. The unchanged facsimile is authoritative for printed typography. No readings are silently supplied from parallel bowls; no translation or release decision is made. Some word spacing is normalized and precise word division remains open. Nos. 1, 12 and 13 retain the separate Exterior heading. No. 20’s source brace places the invocation beside the two opening names; a separate unnumbered invocation line and editorial dash flatten that layout. Each entry covers the complete bounded printed edition block with its printed lacunae, not necessarily the complete physical inscription. Capture CAP-560EB584740F, source SHA-256 c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-MONT01-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-DB7EE3F0F524",
+      "expected_text_sha256": "6aa58a2a8cbf2b414e5955c2a77abb1f081554626b7199803416eeff80c79a4c",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-01.txt",
+      "corrected_content_sha256": "142286c4927ce2670962d230c714175b81e24efc61b6f23acc311b695c1eb62d",
+      "pdf_pages": [
+        123
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Consonants in the unusual line-10 sequence and line-14 naming formula remain tentative. Exterior line numbering and two Amen forms checked; full letter-dot collation remains open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT02-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-B3E117E7C76A",
+      "expected_text_sha256": "09bff7678c813129ead4722cbd051451993c9ec6d6c09e2e4c5ae00b682927fe",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-02.txt",
+      "corrected_content_sha256": "7f6512fc442cd5f3a2271a2a105061155438b8256ea43b097c834d32ef77c108",
+      "pdf_pages": [
+        127
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. The extra word before חטיתון in line 4 remains a project doubt. Printed name spellings are retained; no silent normalization from AIT27. Full source-dot and final-letter check remains open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT10-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-7662F04E373F",
+      "expected_text_sha256": "e46247b8edf8d3f0461728fb7ca1cca1bb2f54caa40568d63ecc721228c37cb5",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-10.txt",
+      "corrected_content_sha256": "6180408357ad3b7ea0ff20237000de40126dfb237dfc7be2a8ffaad3e4f26f4c",
+      "pdf_pages": [
+        171
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Source restoration ש[ידין] and דו[ירת]הון retained. Magical string at line 2, name forms and marked source-dotted word need precise collation. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT12-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-618B05B28A08",
+      "expected_text_sha256": "d91ab4c9753fc81d262d02fa3e020380bc154d61e702ffd84b4ca0e41c9d0f01",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-12.txt",
+      "corrected_content_sha256": "036577cc1092757924de8b31e9119dcd5304a1ab4f59b846bb783922f67f644c",
+      "pdf_pages": [
+        180
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Includes the short Exterior line 13, absent from raw OCR. Faded proper names, angel wording at lines 5–8 and final letters need precise collation. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT13-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-8CCF16F0BDEE",
+      "expected_text_sha256": "74a7f3cabb7aed723a6d4e3de3ea4f40e64618898e74ea342fff2eb44dc4d6da",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-13.txt",
+      "corrected_content_sha256": "b6c69392644e04befb2a30fa13ef4a7c3698f0bde0b5a622a30b70dd11b7d910",
+      "pdf_pages": [
+        184
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Includes Exterior lines 9–12. Incantatory strings at lines 1, 8–9 and 12, source dot positions, names and restoration brackets need full collation. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT14-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-7F3508798F65",
+      "expected_text_sha256": "37618aa7d4cceef3106a5f2f74f38982b777dad254afac6e44cef50e5affec3a",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-14.txt",
+      "corrected_content_sha256": "a744a535e93b6d785f8789b4f3b86b8b16459ac8c0f4dd32e98ddd8ac159ee6b",
+      "pdf_pages": [
+        189
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Retains Hebrew fragments and incantatory strings; line-4 dispersed loss runs retained. Magical names and full dot positions remain open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT15-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-23DA7F7A7A3B",
+      "expected_text_sha256": "7aaa296906587274e325af5291a0b97e24e033cbdfb2aa3a088ff788f4e4ef0a",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-15.txt",
+      "corrected_content_sha256": "93b732f09062114f7658f32971b09e733babd4a2a4bcc60538621606d7db3692",
+      "pdf_pages": [
+        191
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Lines 4–5 have extended project doubts around difficult source wording; they are NOT resolved by grammar or a parallel. Line-8 and line-9 restorations and loss blocks retained. Full source collation required. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT16-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-1A53F04B1B8D",
+      "expected_text_sha256": "0eaf802714af0f0ff4c8fc45cf4ce9d8ad947700f46d1f098098d74bd5c04966",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-16.txt",
+      "corrected_content_sha256": "1a6dec3fddf6681c8bcbfd6eebb8d02ccc6d2127e2ebb83ee1fa2337b266a691",
+      "pdf_pages": [
+        194
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Visually compared the whole fourteen-line block including the biblical closing. Faded glyphs, final letters, name variants and source punctuation require the further exact pass. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT17-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-C4227E0C8605",
+      "expected_text_sha256": "c9ecb6b5f59d53a6306f26ffc9dc01a84e14ff48a2d95f79040cbdf784511c20",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-17.txt",
+      "corrected_content_sha256": "c031c6b60d5bbb098bf1fe9119ef76381f633bc658df0820d5320dd59f93ddbc",
+      "pdf_pages": [
+        196
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole thirteen-line block compared; names and the Joshua ben Perahiah formula retained as this witness prints them. Joined name at line 10 retained; exact spacing, dots and final letters remain open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT18-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-5E3D46D41FE7",
+      "expected_text_sha256": "1a03e27a341de1497b19b5bb081948d78f9127962b30ba8a1a872d53da6c2561",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-18.txt",
+      "corrected_content_sha256": "bd21c3f0da1fa512f0e688707b0d3fef36eed26a5ae771e11382ec2290452c88",
+      "pdf_pages": [
+        199
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole twelve-line block compared, including bracketed restorations and the final six-days formula. The letter sequence at line 11 remains tentative; source-dot positions, formula and names remain open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT20-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-94810881E40B",
+      "expected_text_sha256": "60013fca00f52f56f304928171757c9f2a4111a1170e6d6b09c1048bc72ee2a6",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-20.txt",
+      "corrected_content_sha256": "26412a9910d75f9e16ce58a0c0d61f9f95400bfe439af0016e084364bdc85214",
+      "pdf_pages": [
+        207
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Five numbered lines plus the invocation beside the first two names captured. Uncertain name at line 2 explicitly marked. Brace arrangement is normalized and documented; not a continuous linear inscription reading. Verify repeated aleph counts and original typography. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT21-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-5C1B2110498F",
+      "expected_text_sha256": "80bc13fc6fe43d77d639de74158a6cebe8d9477c6b243a7c89754f5e59f4d99b",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-21.txt",
+      "corrected_content_sha256": "71f202767093a606ce7c04d733eb340dee2464f754112c1b9990c625814c78a3",
+      "pdf_pages": [
+        209
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Independent left-column witness checked, four numbered lines plus unnumbered Amen closing. No copying of No.22 or23; retain source בישי and restoration brackets. Exact source-dot collation remains open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT22-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-2AD343A4E286",
+      "expected_text_sha256": "bb19cee6c288e4d4b122300e9f36b2ab413993c348752bcd8823c57a0c7e4bec",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-22.txt",
+      "corrected_content_sha256": "8f692375f2ca64a4e2f4b7b83501ad2204650c4f8fa06bf182f80b482419f6da",
+      "pdf_pages": [
+        209
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Independent center-column witness checked, five numbered lines. Cross-wrap restoration ומ[חתם ב]שבעה retained. Distinct מין phrase retained; source-dotted words flagged at word level. Letter dots and damaged ending remain open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT23-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-AB2E78F08206",
+      "expected_text_sha256": "5c614c12ff8ab2f9ec3b1e46848fecf31e5ebe0e3bf44c8b4c9068e77e287bdb",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-23.txt",
+      "corrected_content_sha256": "cfe8a5d84ec6d0b18454d3a6dacf77be66d8a7591e8c1b3d18b0b77553574d4a",
+      "pdf_pages": [
+        209
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Independent right-column witness checked, four numbered lines plus unnumbered Amen closing. Distinct forms ומחת[א]ם and דיחתימי retained. Source נוקאומוקא represented with normalized word spacing. Precise letters, dots and spacing remain open. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT24-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-1EDCFF951B2E",
+      "expected_text_sha256": "b0f0af980dd861c9f6f9fd4295b5f4b01d52d0b256fa62fe8dc508628e99fda5",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-24.txt",
+      "corrected_content_sha256": "1a7acdb25d1214064ef47cef843fcb51aa29d3e32c9a581d93e2ddd147e26125",
+      "pdf_pages": [
+        211
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole six-line printed block compared; preserves multiple named clients and source lacunae. Dotted words at line 5 and damaged line-6 closing require precise checking. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT25-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-E5DB6B3A7C8D",
+      "expected_text_sha256": "cfc3f72a87a5e7435757d990fdc6afeee6a86c6fb7b652f9570025ee42c2f0bf",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-25.txt",
+      "corrected_content_sha256": "4429566452c7d00f4cf2873bc766d043cb581453591ebe3bd9c9775605330648",
+      "pdf_pages": [
+        213
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole seven-line block including the closing below the former crop boundary compared. Multiple dotted magical strings at lines 2–4 flagged at word level, not interpreted. Printed restorations and unresolved formulas require precise collation. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT26-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-76D57DE9FCD0",
+      "expected_text_sha256": "aad7c04dc6c0c9125942fe9c5eea859990219c2d56e03c9182c42ca2cce9c80e",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-26.txt",
+      "corrected_content_sha256": "dbd1d6d585ac20c334a0c1283c1fd665b860399e0e39727db2cf69d272fa2d5e",
+      "pdf_pages": [
+        215
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole eight-line block compared; printed Hebrew quotations preserved beside Aramaic wording. Divine-name repeated-letter counts, unclear proper name, dot locations and fragmentary magical ending remain open. No substitution from canonical Biblical spelling. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT28-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-9B748691CB2A",
+      "expected_text_sha256": "70282b863619d944b077a52c1ef74fc2d27541c223efe148668f0fba31d081b0",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-28.txt",
+      "corrected_content_sha256": "b7dc4e7cf9cd4f328c70f9c9e8b2f24517ff5891446fb5901a1bdcfe5f7fe913",
+      "pdf_pages": [
+        219
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole five-line fragmented block compared; source brackets and loss runs retained, without invented completion. Many inferior dots remain to be collated precisely, particularly lines 2–5; names and formula remain tentative. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT29-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-2093AEACB9E1",
+      "expected_text_sha256": "1858982a96d673259160bf24da52f6a8143313d8017c9e342af1d44b981ba0db",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-29.txt",
+      "corrected_content_sha256": "579d15a0cd548ab3cf85cd454f9e3977b395096a4b0dffca1fcfe4c111d4d209",
+      "pdf_pages": [
+        224
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole twelve-line fragmented block compared; source restoration crosses lines9–10 and stays open/closed in that order. Source-dotted words are marked at word level. Magical syllables and exact dots need full collation. Full character-level proofreading and independent specialist interpretation remain open."
+    },
+    {
+      "review_id": "IBI-PROOF-MONT30-SCRIPT-PARTIAL-20261001",
+      "text_id": "TXT-BCECFE85E90E",
+      "expected_text_sha256": "783a604eba9260124405c8914dbfd3b095ecaa3a3e4be979ceab0b27677ac3a0",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-30.txt",
+      "corrected_content_sha256": "1df09dc1c70190a59a5e604fbf478e65da174bec4c9ee20916c1846a39a595c5",
+      "pdf_pages": [
+        227
+      ],
+      "status": "partial_review",
+      "correction_notes": "Bounded visual comparison of printed script block to full source page and enlarged crop; corrected OCR/manually keyed draft and checked inscription-line structure. Whole five-line block compared; printed restoration ט[ר]דא retained. Names, unusual incantatory strings, precise dots and word spacing require full collation. Full character-level proofreading and independent specialist interpretation remain open."
+    }
+  ]
+}

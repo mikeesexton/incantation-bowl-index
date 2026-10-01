@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "1019bddd67151a6cd11f6eaea863e1e5091d9a06c46e45f20f98fdafc35b0984",
+  "corpus_digest": "78466c67df04cb22c61d215f0a15bae3929efef1e226a347741bca38248950e6",
   "migrations": 19,
-  "note": "Read-only held-source original-script backlog audit: 99 priority source appearances across nine held editions; no corpus changes.",
-  "recorded_at": "2026-10-01T03:37:06+00:00",
+  "note": "Twenty Montgomery original-script working transcriptions, exact source-page images, twenty current partial reviews and preserved correction history; import retry safeguard; no identity, translation, audit completion or release changes.",
+  "recorded_at": "2026-10-01T04:03:33+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "5a94dc932692507a48294b678dfb767524ce4055ad6dcc3c4fd3a4cf96be540b",
-      "rows": 1091
+      "digest": "61c09b4f158b0c4a16a4229031128f5ea3589a724d294df61cec26196ed3523e",
+      "rows": 1111
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "65fb9efbd3ca47e3828b80c37bbac568f4fab003bf49f423fe9a46a85521cd95",
-      "rows": 702
+      "digest": "1fc988fbce7f8a915a2a78cb41aa66bb37e689185d1844be2909322c6d40c9e6",
+      "rows": 723
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "d7d6bab22d105c5199ebff2d1c8d9c7af51595dbe09b1744d68c9ea0b647e3e5",
-      "rows": 1354
+      "digest": "e087a203e40794231a2337013006057a11760100da92eca3b97f755bb6f33216",
+      "rows": 1374
     }
   }
 }

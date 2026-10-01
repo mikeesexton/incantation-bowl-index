@@ -94,6 +94,45 @@ class ProofreadingTests(unittest.TestCase):
                  'pdf_page_start': 1, 'pdf_page_end': 1}})
         self.assertEqual(self.conn.execute('SELECT content FROM texts').fetchone()[0], 'Corrected ... private text.')
 
+    def reimport(self, content, locator='text 1'):
+        add_candidate(self.conn, {
+            'source_id': self.row['source_id'], 'label': 'Test bowl',
+            'appearance': {'locator': locator},
+            'texts': [{'text_type': 'translation', 'content': content,
+                       'locator': 'text 1'}]})
+        self.conn.commit()
+
+    def test_generic_import_does_not_recreate_proofread_original(self):
+        self.apply()
+        self.reimport(self.row['content'])
+        rows = self.conn.execute('SELECT id,content FROM texts').fetchall()
+        self.assertEqual([(r['id'], r['content']) for r in rows],
+                         [(self.row['id'], 'Corrected ... private text.')])
+
+    def test_import_retries_preserve_multiple_proofreading_revisions(self):
+        self.apply()
+        intermediate = 'Corrected ... private text.'
+        current = self.conn.execute('SELECT * FROM texts').fetchone()
+        (self.root / 'corrected.txt').write_text('Second corrected reading.\n')
+        entry = self.manifest['entries'][0]
+        entry.update(review_id='IBI-PROOF-SECOND',
+                     expected_text_sha256=text_fingerprint(current),
+                     corrected_content_sha256=digest_text('Second corrected reading.'))
+        self.apply()
+        for content in (self.row['content'], intermediate, 'Second corrected reading.'):
+            self.reimport(content)
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM texts').fetchone()[0], 1)
+        self.assertEqual(self.conn.execute('SELECT content FROM texts').fetchone()[0],
+                         'Second corrected reading.')
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM text_proofreading_reviews').fetchone()[0], 2)
+        self.assertEqual(len(current_text_reviews(self.conn)), 1)
+
+    def test_draft_history_does_not_suppress_another_witness_or_new_reading(self):
+        self.apply()
+        self.reimport(self.row['content'], locator='text 2')
+        self.reimport('A separately imported new reading.')
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM texts').fetchone()[0], 3)
+
     def test_research_export_does_not_leak_historical_text_payloads(self):
         self.apply()
         destination = self.root / 'exports'; export_all(self.conn, destination)

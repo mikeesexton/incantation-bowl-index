@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-01T03:21:06+00:00",
+ "updated_at": "2026-10-01T03:57:33+00:00",
  "portfolio_summary": {
   "current_phase": "Credible public index and source-rich research corpus; active reconciliation and enrichment; not yet comprehensive-dataset-ready",
   "strengths": [
@@ -274,7 +274,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Each of Montgomery’s forty main bowl entries has a separately stored, source-attributed original-script transcription checked against the retained scan, or an item-specific reason for absence or unresolved recovery. Preserve script, line numbers, gaps and source restorations. Latin transliteration is optional and separately identified; a translation or page image never counts as captured original-script text.",
-     "evidence": "The 30 September source query found 35 English translations and 35 summaries but zero original-language rows. AIT27 is the first bounded original-script pilot; its printed portion covers lines 1–11, not the whole inscription. The source omits later damaged lines. Full capture and checking of the other entries remain open, as does the Abudraham 2026 AIT27 edition. See research/audits/original_script_extraction_2026-09-30.md."
+     "evidence": "Montgomery now has 21/40 main entries with original-script working rows: the prior AIT27 lines1–11 pilot plus twenty full bounded printed edition blocks (170 numbered lines, 12,921 characters) in the 1 October batch. All21 remain partial_review, not full character-level proofing or complete physical inscriptions. Nineteen entries still lack working rows. Exact source pages, restorations, loss runs, draft snapshots and unresolved concerns are retained. See research/audits/original_script_batch_2026-10-01.md. The uncaptured Abudraham2026 AIT27 edition remains open."
     },
     {
      "id": "TEXT-004",
@@ -322,7 +322,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Every eligible, individually indexed Hebrew or Aramaic inscription in each lawfully held edition has a separately stored original-script transcription with scholar attribution, stable object and appearance links, exact printed/PDF page and line locators, retained source capture hash, completeness and editorial status; or an item-specific, dated disposition explaining missing source, absent edition, damaged/unreadable text, pseudo-script, or uninscribed material. Cover Jewish Babylonian Aramaic in Hebrew script, Syriac and Mandaic, plus mixed Hebrew passages, without treating script as language or religion. Preserve competing editions separately and append newly acquired sources to the inventory. A page image or corrupt OCR is not a successful searchable transcription.",
-     "evidence": "Original-script coverage must be measured per source appearance, with identity-level coverage reported separately. Full source holdings, Latin transliterations, summaries, translations and facsimile images do not establish searchable native-script extraction. Language and script remain distinct observations. Initial priorities: Montgomery’s forty entries (AIT27 pilot), image-only Hebrew-script Stübe/Ford/Gordon/Ellis/Schwab material, and corrupted Mandaic text layers in Pognon and four Jena entries. Existing original-script rows in ABS, Burberry, Jena and Levene must be audited for complete source coverage instead of being reimported blindly. Later-edition acquisition and witness-specific extraction for AIT27 remain open."
+     "evidence": "Original-script coverage must be measured per source appearance, with identity-level coverage reported separately. Full source holdings, Latin transliterations, summaries, translations and facsimile images do not establish searchable native-script extraction. Language and script remain distinct observations. Initial priorities: Montgomery’s forty entries (AIT27 pilot), image-only Hebrew-script Stübe/Ford/Gordon/Ellis/Schwab material, and corrupted Mandaic text layers in Pognon and four Jena entries. Existing original-script rows in ABS, Burberry, Jena and Levene must be audited for complete source coverage instead of being reimported blindly. Later-edition acquisition and witness-specific extraction for AIT27 remain open. The 1 October Montgomery batch adds twenty source-specific working transcriptions against the frozen nine-source, 99-appearance inventory; 79 of those targets still await original-script recovery, and twenty captured targets still require full proofing. See research/audits/original_script_progress_2026-10-01.json. No historical worklist count is silently overwritten."
     },
     {
      "id": "TEXT-010",
@@ -330,7 +330,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Every captured original-script row is collated character by character against its exact source pages, preserving RTL order, final letters, line boundaries, editorial brackets, loss marks, mixed scripts and witness-column assignment. Record evidence-bound reading_text_checked or bounded partial_review with unresolved details; retain original drafts and superseding corrections. Capture counts, completed scan checks and independent specialist interpretation are reported separately. Never fill damaged text from a parallel silently or silently adopt one scholar’s contested reading. Public release remains a separate decision.",
-     "evidence": "AIT27 begins a bounded visual/manual pilot, with explicit uncertain-word markers and partial review rather than certification. Existing source checks and working-draft status require item-level assessment. Scholarly translation recovery remains TEXT-004; new AI-assisted Bowlam translation is optional, labeled project research from a checked base text and requires specialist review before being presented as verified scholarship."
+     "evidence": "AIT27 begins a bounded visual/manual pilot, with explicit uncertain-word markers and partial review rather than certification. Existing source checks and working-draft status require item-level assessment. Scholarly translation recovery remains TEXT-004; new AI-assisted Bowlam translation is optional, labeled project research from a checked base text and requires specialist review before being presented as verified scholarship. The 1 October batch records twenty hash-bound partial reviews and zero full character-level checks. Source-dotted words and project doubts have distinct markers; exact inferior-dot positions, final letters, uncertain formulas and some word division remain open. OCR drafts and initial manual drafts stay private; no blanket accuracy or specialist certification is claimed."
     }
    ]
   },
@@ -828,6 +828,10 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-10-01",
+   "note": "TEXT-003 / TEXT-009 / TEXT-010: added twenty Montgomery Hebrew-script working transcriptions (170 numbered lines; 12,921 characters), each with exact source-page facsimile and current bounded partial_review. Montgomery working-row coverage is21/40 including the prior AIT27 pilot;79 of the99 frozen held-source recovery targets still lack same-source original text. Complete character/dot collation and specialist interpretation remain open; no translation, identity, personal-audit review or release decision changed."
+  },
   {
    "date": "2026-09-30",
    "note": "At Mike’s direction, broadened TEXT-003 to Montgomery native-script capture, added TEXT-009 for Hebrew/Aramaic original-script extraction across held editions and TEXT-010 for independent capture-proofing status. Added explicit source/appearance inventories, provenance, line and restoration preservation, image-only/broken-font recovery, native-script versus Latin-transliteration distinctions, and separate optional AI-assisted translation work. AIT27 is a bounded pilot; corpus-wide completion and the later edition capture remain open."

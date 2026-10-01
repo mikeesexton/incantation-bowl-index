@@ -97,15 +97,23 @@ def apply_text_metadata(conn, manifest, root):
 
 
 def previously_corrected_import(conn, object_id, appearance_id, source_id, item, locator):
-    """An old source manifest must not recreate a metadata-repaired original."""
-    snapshots = conn.execute(
-        "SELECT c.before_json FROM text_metadata_corrections c "
-        "JOIN texts t ON t.id=c.text_id WHERE t.object_id=? AND t.appearance_id=? AND t.source_id=?",
-        (object_id, appearance_id, source_id),
-    )
-    for row in snapshots:
-        before = json.loads(row["before_json"])
-        if (before["text_type"] == item["text_type"] and before["content"] == item["content"]
-                and before["locator"] == locator):
-            return True
+    """Do not recreate a retained draft superseded by a source-bound repair.
+
+    Both the imported original and intermediate proofreading revisions remain
+    in the append-only snapshots. Match only the same source appearance, type,
+    content and locator; a different witness or new reading is still importable.
+    """
+    for table in ("text_metadata_corrections", "text_proofreading_reviews"):
+        snapshots = conn.execute(
+            f"SELECT c.before_json,c.after_json FROM {table} c "
+            "JOIN texts t ON t.id=c.text_id WHERE t.object_id=? AND t.appearance_id=? AND t.source_id=?",
+            (object_id, appearance_id, source_id),
+        )
+        for row in snapshots:
+            for field in ("before_json", "after_json"):
+                snapshot = json.loads(row[field])
+                if (snapshot["text_type"] == item["text_type"]
+                        and snapshot["content"] == item["content"]
+                        and snapshot["locator"] == locator):
+                    return True
     return False

@@ -25,6 +25,50 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — First substantial original-script extraction batch
+
+**Claimed:** TEXT-003 / TEXT-009 / TEXT-010 / QA-004 (Mike-authorized held-source extraction and necessary import retry safeguard)
+**Corpus:** changed (20 Montgomery Hebrew-script working transcriptions, 20 exact source-page media rows, 21 append-only proofreading history rows with 20 current partial reviews) — state digest `78466c67df04`
+**Tests:** 357 Python and 44 Node tests pass; live manifest retries preserve one current text per appearance; superseded review fails closed without mutation; SQLite integrity/foreign keys pass; private/public projection checks pass; Mike Access private audit 7/7
+
+- Captured Montgomery nos.1,2,10,12–18,20–26,28–30: 170 numbered printed
+  lines and 12,921 current characters. Includes printed Exterior portions of
+  nos.1,12,13 and independently retained three-column witnesses21–23.
+  Montgomery now has21/40 main appearances with working originals, including
+  the prior bounded AIT27 pilot. Nineteen remain without rows;79 of the frozen
+  nine-source,99-appearance recovery/check targets still await extraction.
+- Used locally processed Hebrew OCR only as a drafting aid and compared the
+  corrected drafts to full/enlarged source pages. Source restorations, loss runs,
+  line boundaries and separate source/project doubts are retained. All20 are
+  partial_review: full character-level collation of inferior dots, final letters,
+  damaged formulas and exact spacing remains open; no diplomatic transcription
+  or independent specialist certification. No.20’s brace arrangement is
+  explicitly normalized; no.15 retains extended project doubts. A second pass
+  restored an omitted initial bet inside a tentative phrase via a superseding
+  review, preserving its first draft.
+- Imported through attributed public-domain enrichment and hash-bound review
+  manifests; public_ok remains false. Exact page facsimiles, raw OCR, corrected
+  text files, initial manual drafts, capture hashes and screenshot stay private.
+  Mike Access shows the working script and partial-proofing warning. Built all
+  1,374 texts /1,111 media,763 local images and63 packaged source captures;
+  private build is not deployed. Refreshed source-script progress, roadmap,
+  campaign/enrichment/proofreading and cohort reports.
+- Retry validation found generic import could recreate a pre-proofreading draft.
+  Extended its existing repair-history guard to original/intermediate/final
+  proofreading snapshots, with three regression tests and exact source-witness
+  scoping. Preserved the complete attempted corpus/manifests in the ignored
+  recovery archive, verified no pre-existing or concurrent corpus tables had
+  changed, restored the isolated batch’s pre-ingest SQLite backup and rebuilt
+  through manifests. Final live scope is exactly20 new texts,20 media,21 review
+  history rows; repeated imports do not recreate originals. Backup/recovery
+  receipts and source-page derivative cache hashes remain private.
+- No objects, appearances, source assertions, identity links, translations,
+  scholarly/release decisions or personal bowl-audit events changed. The audit
+  ledger is byte-identical. Next: precise dot/letter/restoration collation of this
+  batch, then remaining Montgomery and the held image-only/broken-font cohorts;
+  AIT27’s later edition still needs a lawfully captured PDF. No push, deployment,
+  outgoing communication or new translations.
+
 ## 2026-09-30 — Codex — Held original-script backlog count
 
 **Claimed:** TEXT-009 (Mike-requested count of original-script extraction opportunities in existing holdings)

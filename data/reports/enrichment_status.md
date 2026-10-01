@@ -18,7 +18,7 @@
 | Material | 410 | 24.0% |
 | Language | 1028 | 60.1% |
 | Script | 94 | 5.5% |
-| Text Edition | 284 | 16.6% |
+| Text Edition | 304 | 17.8% |
 | Translation | 377 | 22.0% |
 | Image | 612 | 35.8% |
 
@@ -28,8 +28,8 @@
 |---|---:|
 | 0–2 of 10 | 586 |
 | 3–5 of 10 | 863 |
-| 6–8 of 10 | 251 |
-| 9–10 of 10 | 11 |
+| 6–8 of 10 | 250 |
+| 9–10 of 10 | 12 |
 
 ## Next-action queue
 

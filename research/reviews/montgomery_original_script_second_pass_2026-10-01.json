@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-943673B56FB8",
+  "source_pdf_path": "data/private/archive/sha256/c8/c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "source_pdf_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+  "reviewed_by": "Codex: AI-assisted bounded visual script collation, not independent specialist certification",
+  "reviewed_at": "2026-10-01T04:00:43+00:00",
+  "editorial_policy": "AI-assisted normalized consonant working transcription from Montgomery’s printed edition, visually compared with the held page image, not a diplomatic text or specialist certification. Printed inscription line numbers are retained; implicit opening line 1 is supplied by the project. Physical page wrapping and most typographic punctuation are normalized. Printed square brackets remain source restorations; ... normalizes printed loss runs without asserting a lost-letter count. ⟦word?⟧ is a project transcription doubt, not Montgomery’s restoration. ⸢word⸣ flags a recognized source-dotted uncertain word at word level; this first pass does NOT exhaustively encode or collate every inferior letter-dot or pointing mark. Exact uncertainty positions, diacritics, damaged passages, final letters and difficult words require full character-level source collation. The unchanged facsimile is authoritative for printed typography. No readings are silently supplied from parallel bowls; no translation or release decision is made. Some word spacing is normalized and precise word division remains open. Nos. 1, 12 and 13 retain the separate Exterior heading. No. 20’s source brace places the invocation beside the two opening names; a separate unnumbered invocation line and editorial dash flatten that layout. Each entry covers the complete bounded printed edition block with its printed lacunae, not necessarily the complete physical inscription. Capture CAP-560EB584740F, source SHA-256 c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf.",
+  "entries": [
+    {
+      "review_id": "IBI-PROOF-MONT15-SCRIPT-PARTIAL-20261001-R2",
+      "text_id": "TXT-23DA7F7A7A3B",
+      "expected_text_sha256": "79a774e343033b8aca1f05b47c6ce43e59381c80c78fdd2797aa8723042fe285",
+      "corrected_content_path": "data/private/original-script/montgomery/batch-2026-10-01/text-15-rev2.txt",
+      "corrected_content_sha256": "cd8539740d7251a39f826368e1973a6cf8740395161da0f5c22197993c703d1f",
+      "pdf_pages": [
+        191
+      ],
+      "status": "partial_review",
+      "correction_notes": "Second visual pass corrected an omitted initial bet in the project-doubt phrase at line5: בינתי וכניתי. The extended doubtful phrases remain tentative, not silently adjudicated. Source dot positions and exact consonants still require full collation. Prior draft and prior partial-review snapshot retained."
+    }
+  ]
+}
