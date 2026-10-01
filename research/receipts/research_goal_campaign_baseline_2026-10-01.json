@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-01T21:41:17+00:00",
+  "agent": "Codex",
+  "goal_status_at_activation": "active",
+  "goal_thread_id": "01a0f7c7-56ce-7f63-bde7-e55c7c10df10",
+  "task_ids": [
+    "TEXT-001",
+    "TEXT-004",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "baseline_corpus_digest": "596c454a0f57defadcfade14b304d7f291dbd2ac98a786c6e1f18bf357f594bd",
+  "inventory_summary": {
+    "publication_cohort": 249,
+    "nli_mms_cohort": 205,
+    "other_publication_cohort": 44,
+    "registered_pdf_sources": 43,
+    "unlinked_pdf_captures": 2,
+    "indexed_held_source_appearances": 855,
+    "pdf_sources_with_indexed_appearances": 34,
+    "pdf_sources_with_no_indexed_appearances": 9,
+    "edition_text_rows_on_held_source_appearances": 789,
+    "appearances_with_translation_rows": 388,
+    "appearances_with_original_language_rows": 357,
+    "appearances_with_all_existing_edition_rows_checked": 291,
+    "registered_non_pdf_only_sources": 17,
+    "registered_sources_with_any_capture": 60
+  },
+  "private_inventory_files": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/publication_cohort.json",
+      "sha256": "2eb2d0d840fc81fe81d97c0b18e7c41a02ffa12f7bfebb47ab692f4cdc0ae1c2"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/held_source_inventory.json",
+      "sha256": "f77491e02c61a1c864a3b88f7c963d34d50575c2850bbf217eefbcb2a05d1afe"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/non_pdf_holdings.json",
+      "sha256": "f0bf52ef4398762b31fc5b35771dbd211a791e0dc4862a841204d37b35e9e976"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/baseline_summary.json",
+      "sha256": "850b2b7df5df0669488ba2aee55dc71338102ccf4b6a11d06159a7130d4e263c"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/build_inventory.py",
+      "sha256": "e266230b2bd4cb62120747ebb6d2dba320c84ccb76f024878cec11b8189b3497"
+    }
+  ],
+  "scope": "Freeze the 249 unlinked probable/confirmed identities at Goal activation; inventory all registered PDF holdings and their source appearances plus non-PDF-only sources, unlinked captures and zero-appearance holdings. This is a reproducible operational worklist, not a source investigation or scholarly completeness finding.",
+  "completion_conditions": [
+    "Investigate every frozen publication identity with exact source identifiers and record attempted routes; explicit publication links and remaining operational blockers have different meanings.",
+    "Audit all held sources for eligible indexed and unindexed inscription/translation/image units; capture and separately check each available unit or record a source-backed absence/unrecoverable reason.",
+    "Preserve attribution, source hashes, locators, uncertainty and draft/revision history; private payloads remain private.",
+    "Maintain current roadmap, reader and receipts with tested local commits; blocked individual items lead to other actionable work."
+  ],
+  "inventory_limitations": [
+    "An existing translation/transcription row is a presence indicator, not a complete edition guarantee. Latin transliteration and Hebrew-letter transliteration are not native-script recovery.",
+    "The 291 appearances with all existing edition rows checked do not certify missing-content coverage or specialist interpretation.",
+    "The 855 PDF-source appearances include contextual mentions, bibliography entries and objects without readable inscriptions; eligibility and absences need page evidence.",
+    "Nine PDF sources have no indexed appearances, and two PDF captures lack source links; inspect them rather than infer no eligible content.",
+    "All new campaign investigation statuses are pending. Older source checks remain available in their original receipts."
+  ],
+  "first_actions": [
+    "Capture Levene 1999 M163 Hebrew-script edition from printed pp. 285–287; compare separately against the scan and retain unresolved glyphs.",
+    "Inspect the unclassified/zero-appearance held source inventory for missing edition units, prioritizing primary scholarly articles.",
+    "Investigate the 44 non-NLI publication cases through exact identifiers and held-source citations, then the 205 NLI MMS cases using institution-scoped designations and accessible editions."
+  ],
+  "progress_policy": "The frozen publication cohort remains fixed when links are added. Preserve the baseline files; append dated attempts and outcomes in separate campaign checkpoints, bound to current corpus fingerprints. The initialization script is not a progress updater.",
+  "token_budget": null,
+  "allowance_resets_used": 0,
+  "corpus_writes": 0,
+  "validation": {
+    "python_tests_passed": 371,
+    "unique_publication_identities": 249,
+    "unique_pdf_source_appearances": 855,
+    "all_inventory_file_hashes_match": true,
+    "all_text_source_appearance_links_match": true,
+    "registered_captured_source_count": 60,
+    "database_integrity": "ok",
+    "foreign_key_violations": 0,
+    "corpus_unchanged": true
+  }
+}

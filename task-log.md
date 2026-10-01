@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Start persistent research campaign inventory
+
+**Claimed:** TEXT-001, TEXT-004, TEXT-009 and TEXT-010 (Mike activated the proposed Goal; publication-reference investigation and held-edition content/source checks)
+**Corpus:** unchanged — state digest `596c454a0f57`
+**Tests:** 371 Python tests pass; all frozen identity/appearance IDs, source/text links and inventory hashes verified; integrity and foreign keys pass
+
+- Activated the requested persistent Goal without adding an unrequested token budget. Froze all 249 unlinked priority identities: 205 NLI MMS cases and 44 others. Each carries exact identifiers/source appearances, a pending investigation state, empty attempted-route ledger and an explicit source-evidence completion standard. The fixed cohort will remain in the campaign after links are added.
+- Expanded the operational held-source roster to 855 distinct indexed appearances across 34 PDF-linked sources. Inventoried all 43 registered PDF sources, nine with no indexed appearances, two unlinked PDF captures and 17 non-PDF-only sources. Included current text/review IDs, source hashes, capture/extent assessments and page-media links without promoting inventory presence to completeness, contextual mentions to editions, transliteration to native script, or partial checks to specialist verification.
+- Private baseline inventories and initialization code are hash-receipted in research/receipts/research_goal_campaign_baseline_2026-10-01.json. Preserve those baselines and append dated source attempts/outcomes in subsequent checkpoints; the initialization script is not a progress updater. Existing historical source reviews remain in their own manifests.
+- Updated roadmap input/output and regenerated enrichment; corpus and local reader content unchanged. Next batch: Levene 1999 M163 Hebrew-script edition on printed pp. 285–287, then zero-content primary holdings and exact non-NLI identifiers before the larger NLI sweep. Individual blocked sources lead to other actionable work. Goal remains active; no deployment, push, outgoing message or allowance reset.
+
 ## 2026-10-01 — Codex — Capture held 1999 translations and additional edition links
 
 **Claimed:** TEXT-009, TEXT-010 and TEXT-001 (next research step authorized by Mike; source recovery, separate source checks and edition links)
