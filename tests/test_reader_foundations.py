@@ -5,7 +5,7 @@ from bowl_index.ingest import add_candidate
 from bowl_index.identity import CONTENT_COVERAGE, CORE_ORDER, identity_rows, reading_score
 from bowl_index.presentation import (
     collection_facet, collection_name, display_date, display_name, format_date,
-    language_facets, language_name, origin_facets, purpose_facets, scripture_facets,
+    language_facets, language_name, origin_facets, public_facets, purpose_facets, scripture_facets,
 )
 
 class DisplayNameTests(unittest.TestCase):
@@ -122,7 +122,8 @@ class ControlledFacetTests(unittest.TestCase):
 
     def test_catalogue_code_is_not_promoted_to_an_inscription_reading(self):
         catalogue = {'field': 'catalogue_language_codes', 'value_text': 'heb'}
-        self.assertEqual(language_name([catalogue]), 'Catalogued as Hebrew')
+        self.assertEqual(language_name([catalogue]), 'Language not recorded')
+        self.assertEqual(public_facets('catalogue_language_codes', 'language', 'heb'), [])
         inscription = {'field': 'inscription_language', 'value_text': 'Jewish Babylonian Aramaic'}
         self.assertEqual(language_name([catalogue, inscription]), 'Jewish Babylonian Aramaic')
 

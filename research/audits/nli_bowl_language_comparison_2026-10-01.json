@@ -1,0 +1,80 @@
+{
+  "observed_at": "2026-10-01",
+  "source": "National Library of Israel public Alma SRU",
+  "query_urls": [
+    "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=1&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+    "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=51&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+    "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=101&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+    "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=151&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+    "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=201&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22",
+    "https://nli.alma.exlibrisgroup.com/view/sru/972NNL_INST?version=1.2&operation=searchRetrieve&recordSchema=marcxml&maximumRecords=50&startRecord=251&query=alma.title%3D%22%D7%A7%D7%A2%D7%A8%D7%AA+%D7%94%D7%A9%D7%91%D7%A2%D7%94%22"
+  ],
+  "summary": {
+    "search_hits": 281,
+    "bowl_titled_records": 280,
+    "main_numbered_records": 205,
+    "all_language_codes": {
+      "heb": 279,
+      "arc": 1,
+      "myz": 1
+    },
+    "main_language_codes": {
+      "heb": 204,
+      "arc": 1,
+      "myz": 1
+    },
+    "notes546_count": 0
+  },
+  "selected_records": [
+    {
+      "mms_id": "997008712546905171",
+      "title": "קערת השבעה מס' 122.",
+      "shelfmark": [
+        {
+          "a": "Ms. Heb. 9467.91"
+        }
+      ],
+      "language_codes": [
+        "heb"
+      ],
+      "marc_008_language": "heb",
+      "language_script_notes": []
+    },
+    {
+      "mms_id": "997008712402705171",
+      "title": "קערת השבעה מס' 13.",
+      "shelfmark": [
+        {
+          "a": "Ms. Heb. 9467.49"
+        }
+      ],
+      "language_codes": [
+        "arc",
+        "myz"
+      ],
+      "marc_008_language": "arc",
+      "language_script_notes": []
+    },
+    {
+      "mms_id": "997008712407305171",
+      "title": "קערת השבעה מס' 61.",
+      "shelfmark": [
+        {
+          "a": "Ms. Heb. 9467.72"
+        }
+      ],
+      "language_codes": [
+        "heb"
+      ],
+      "marc_008_language": "heb",
+      "language_script_notes": []
+    }
+  ],
+  "survey_sha256": "a5ea01b198859a962861613e13a37b06d72803e6139b34dfc76f3a8268efaddc",
+  "field_definition_sources": [
+    "https://www.loc.gov/marc/bibliographic/bd041.html",
+    "https://www.loc.gov/marc/bibliographic/bd546.html"
+  ],
+  "nli_collection_description": "https://blog.nli.org.il/magic_bowls/",
+  "interpretation": "041$a is a language-code field, not an alphabet/script field; for artifacts it can describe associated text. No 546 language/script notes occur among these 280 bowl-titled records. In the main 205-record numbered series, 204 carry heb; one (Ms. Heb. 9467.49) carries arc and myz. This distribution does not establish the inscription language or script of the two questioned bowls. No catalogue code is reclassified as script or an independent inscription-language report."
+}

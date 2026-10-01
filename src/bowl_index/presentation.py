@@ -398,6 +398,8 @@ def public_facets(field, field_group, value):
     if field_group == "location":
         return collection_facet(value)
     if field_group == "language":
+        if field == "catalogue_language_codes":
+            return []
         return language_facets(value)
     if field_group == "provenance":
         return origin_facets(field, value)
@@ -409,8 +411,8 @@ def public_facets(field, field_group, value):
 
 
 def language_name(claims):
-    """Prefer explicit evidence; distinguish a catalogue code from a reading."""
-    precedence = ("inscription_language", "script_or_language", "catalogue_language_codes")
+    """Use inscription reports, keeping catalogue codes in source metadata."""
+    precedence = ("inscription_language", "script_or_language")
     for field in precedence:
         labels = []
         for claim in claims:
@@ -426,8 +428,7 @@ def language_name(claims):
                 if label not in labels:
                     labels.append(label)
         if labels:
-            label = " / ".join(labels)
-            return "Catalogued as " + label if field == "catalogue_language_codes" else label
+            return " / ".join(labels)
     return "Language not recorded"
 
 

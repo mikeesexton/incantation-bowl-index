@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Separate NLI catalogue codes from inscription language
+
+**Claimed:** OPS (Mike's NLI language/script distinction)
+**Corpus:** unchanged — state digest `cda11337fcb1`
+**Tests:** 368 Python and 54 Node tests pass; local Mike Access audit 7/7; all 1,711 reader renders pass clutter checks; live NLI source-metadata placement and screenshot verified
+
+- Surveyed the public NLI SRU title query: 281 hits, 280 bowl-titled records; main numbered series 205 records, 204 with `heb`, one (Ms. Heb. 9467.49) with `arc` and `myz`. None of the 280 has a MARC 546 language/script note. Saved counts, query locators, selected record metadata and survey hash in research/audits/nli_bowl_language_comparison_2026-10-01.json.
+- MARC 041$a describes language associated with an item, not script; its artifact usage may include accompanying text. NLI's own collection article describes Aramaic inscriptions. Neither evidence establishes why these two individual records use `heb`, their inscription language or their script. No bulk recoding or scholarly adjudication made.
+- Superseded the previous “Catalogued as Hebrew” presentation. Catalogue language codes now appear as “Catalogue language field: Hebrew” only under Source details. They no longer drive inscription-language headings or language browse facets; unknown headings are omitted from cards. Explicit inscription-language reports and every stored claim remain intact. Added the placement rule to canonical project instructions and console documentation.
+- Rebuilt Mike Access after tests finished, restarted the local reader and saved source-details proof. The initial build collided with the full tests' own Mike build; the sequential retry passed. Full tests and private builds must run sequentially because they share site/mike-build. Recorded unchanged state; personal audit ledger unchanged. No deployment or push.
+
 ## 2026-10-01 — Codex — Verify NLI catalogue language labels
 
 **Claimed:** OPS (Mike's question about the two NLI bowls' Hebrew labels)
