@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-01T23:15:39+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-M59-LEVENEONLINE-20261001",
+      "source_id": "SRC-C5AA2D8C1284",
+      "capture_id": "CAP-EE1DFC1068F9",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "10da5149f490f1b0856ed1fad718b7ed0df36f783d4d8a3c784ab7e6e909a5f3",
+      "basis": "Whole public HTML teaching page held; sections 2a/2b checked directly against retained source bytes and the institutional rendered text, with the complete provided eight-section native/English units captured. This is complete capture of the provided reading units, not an original-clay, diplomatic or all-context object-extraction claim. Other contextual witnesses remain to enumerate, and the embedded illustration route returns 404. No corrected-rich-text/full-source transformation claim.",
+      "evidence_path": "research/reviews/m59_html_capture_extent_evidence_2026-10-01.json",
+      "evidence_sha256": "d732a18131064de0d963f27263d49eaa854e071fe6682d285c8ca960db23c4ec",
+      "extraction_path": "data/private/manifests/exact_quotes_and_m59_texts_2026-10-01.jsonl",
+      "extraction_sha256": "e97b084e124346547d556f4753f609d97427909138c613dd1d00f9b20d66cb1a"
+    }
+  ]
+}

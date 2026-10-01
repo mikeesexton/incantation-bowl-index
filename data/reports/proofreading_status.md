@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 705 | 114 | 2 | 821 | 85.9% |
+| Edition text (translation, transcription, transliteration) | 710 | 114 | 2 | 826 | 86.0% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 705 | 114 | 667 | 1486 | 47.4% |
+| All stored text | 710 | 114 | 667 | 1491 | 47.6% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 414 | 42 | 1 | 457 |
-| transcription | 227 | 59 | 0 | 286 |
-| transliteration | 64 | 13 | 1 | 78 |
+| translation | 416 | 42 | 1 | 459 |
+| transcription | 229 | 59 | 0 | 288 |
+| transliteration | 65 | 13 | 1 | 79 |
 
 ## Edition text by source
 
@@ -43,10 +43,10 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’ (`SRC-5F7E0BA65D6E`) | 0 | 1 | 0 | 1 |
 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 6 | 6 | 0 | 12 |
 | Terracotta Incantation Bowl, 500 CE–800 CE (`SRC-658C490CF6BF`) | 1 | 0 | 0 | 1 |
-| Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 128 | 0 | 0 | 128 |
+| Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 129 | 0 | 0 | 129 |
 | Notes on the Mandaic Incantation Bowls in the British Museum (`SRC-86CBCD17FECC`) | 12 | 0 | 0 | 12 |
 | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 5 | 5 | 0 | 10 |
-| Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 76 | 7 | 0 | 83 |
+| Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 78 | 7 | 0 | 85 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 35 | 40 | 0 | 75 |
 | MS 2053/198 Incantation Bowl To Ward Against Demons (`SRC-9BE3105F3F31`) | 1 | 0 | 0 | 1 |
@@ -54,6 +54,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 1 | 0 | 0 | 1 |
 | ‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore (`SRC-B891A0061CEA`) | 2 | 0 | 0 | 2 |
 | MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples (`SRC-C54888E36130`) | 1 | 0 | 0 | 1 |
+| Jewish Aramaic Incantation Bowls (`SRC-C5AA2D8C1284`) | 2 | 0 | 0 | 2 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 30 | 0 | 0 | 30 |
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 31 | 31 | 0 | 62 |
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |

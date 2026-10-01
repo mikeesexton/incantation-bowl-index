@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "checkpoint": 4,
+  "created_at": "2026-10-01T23:21:58+00:00",
+  "goal_status": "active",
+  "corpus_before": "635e7c05c573f5c5cc709e312a8e36676a536d741ad4683e90c2bf7034074921",
+  "corpus_after": "0ff244d49dfe1e89d465f8c7e8bf9426073a4449f5f70e2298fcfa6703223c4c",
+  "frozen_cohort_size": 249,
+  "cases_with_appended_source_work_this_checkpoint": 6,
+  "complete_case_investigations_claimed": 0,
+  "publication_assessments_added": 2,
+  "newly_linked_frozen_identities": 1,
+  "linked_priority_identities_now": 812,
+  "unlinked_priority_identities_now": 240,
+  "provided_online_reading_units_complete": {
+    "object_id": "IBI-9CDD9096F957",
+    "source_id": "SRC-C5AA2D8C1284",
+    "transcription_sections": 8,
+    "translation_sections": 8,
+    "native_anchors": [
+      1,
+      15
+    ],
+    "translation_anchor_omissions": [
+      10,
+      15
+    ],
+    "limitation": "Only the provided online reading units are complete; original-clay/diplomatic/book/image and source-context audit remain open."
+  },
+  "source_routes": [
+    {
+      "url": "https://jnjr.div.ed.ac.uk/primary-sources/biblical/jewish-aramaic-incantation-bowls/",
+      "outcome": "robots-permitted HTML archived via ibi capture; actual bytes bound to source",
+      "capture_id": "CAP-EE1DFC1068F9",
+      "sha256": "10da5149f490f1b0856ed1fad718b7ed0df36f783d4d8a3c784ab7e6e909a5f3",
+      "mime_type": "text/html",
+      "byte_length": 117947,
+      "retrieved_at": "2026-10-01T23:06:01+00:00"
+    },
+    {
+      "url": "https://i0.wp.com/www.jnjr.div.ed.ac.uk/pix/bowl.png",
+      "outcome": "robots check passed; fetch HTTP 404; no image capture/derivative exists"
+    },
+    {
+      "url": "https://www.edshare.soton.ac.uk/5331/",
+      "outcome": "source-linked institutional illustration route inaccessible to web tool; manual follow-up pending"
+    },
+    {
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10179220/",
+      "outcome": "official repository metadata actually opened; twenty-edition thesis described; download link found"
+    },
+    {
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10179220/1/Levene_10179220_thesis.pdf",
+      "outcome": "web retrieval size limit; direct ibi capture denied by robots.txt; no PDF bytes obtained and no bypass attempted"
+    },
+    {
+      "url": "https://www.researchgate.net/figure/lbbyl-dmyn-Davidovitz-2-1_fig2_318011714",
+      "outcome": "indexed primary author-upload figure lead, caption Davidovitz 2:1 and Ford 2014 kidinnu chapter; full figure/source not independently opened"
+    }
+  ],
+  "new_followup_leads": [
+    {
+      "lead_key": "GOAL-LEAD-DAVIDOVITZ2-FORD2014-KIDINNU",
+      "kind": "citation",
+      "status": "open",
+      "source_reference": "James Nathan Ford, The Ancient Mesopotamian Motif of kidinnu ‘divine protection (of temple cities and their citizens)’ in Akkadian and Aramaic Magic (2014)",
+      "scope": "Indexed primary author-upload figure caption; exact full bibliographic venue/pages and actual reading/figure still need source inspection.",
+      "next_action": "Locate lawful full chapter and inspect explicit Davidovitz 2 designation before any edition/capture assertion."
+    },
+    {
+      "lead_key": "GOAL-LEAD-LEVENE2000-UCL-MANUALACCESS",
+      "kind": "restricted_source",
+      "status": "blocked_on_automated_route",
+      "source_id": "SRC-LEVENE2000-UCL",
+      "next_action": "Lawful manual/library access under repository conditions; automatic PDF fetch disallowed by verified robots rules. Other research continues."
+    }
+  ],
+  "edition_text_rows": 826,
+  "edition_review_counts": {
+    "reading_text_checked": 710,
+    "unreviewed": 2,
+    "partial_review": 114
+  },
+  "held_pdf_source_appearances": 898,
+  "pdf_sources_with_appearances": 35,
+  "zero_appearance_pdf_sources": 8,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Inspect further explicit JNF 149/188 and Davidovitz 2 quotation/figure routes.",
+    "Continue the 15 untouched non-NLI and 205 NLI frozen identities, maintaining exact institution-scoped identifiers.",
+    "Audit eight zero-appearance PDF holdings, non-PDF sources and remaining text/translation/image units."
+  ],
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-001",
+    "TEXT-004",
+    "TEXT-010"
+  ],
+  "scope": "Full provided online M59 native/English reading units and three bounded scholarly fragment/translation rows; no whole-source/context or full bowl-edition completion claim. Davidovitz amulet index hit rejected as a different artifact.",
+  "new_texts": [
+    {
+      "designation": "M59",
+      "source_id": "SRC-C5AA2D8C1284",
+      "appearance_id": "APP-F590B893E243",
+      "text_id": "TXT-AD3D87C429F9",
+      "text_type": "transcription",
+      "characters": 1064,
+      "content_sha256": "57e72732d5f4f009f2f926ca25664f36ce14d40cb9855946c656f0cca58a640b",
+      "review_id": "IBI-PROOF-20261001-EXACT-M59-ONLINE-TRANSCRIPTION",
+      "status": "reading_text_checked",
+      "extent": "Complete eight-section transcription as provided on the teaching page, including verso; no original-clay/full diplomatic claim."
+    },
+    {
+      "designation": "M59",
+      "source_id": "SRC-C5AA2D8C1284",
+      "appearance_id": "APP-F590B893E243",
+      "text_id": "TXT-959F5E9F7B69",
+      "text_type": "translation",
+      "characters": 1691,
+      "content_sha256": "ef430ad87c80b8a4be2a6b53e7b16cf7e19aa617725d3169842ad7fb3c00705c",
+      "review_id": "IBI-PROOF-20261001-EXACT-M59-ONLINE-TRANSLATION",
+      "status": "reading_text_checked",
+      "extent": "Complete eight-section English translation as provided online; source anchor omissions and repeated phrase retained."
+    },
+    {
+      "designation": "Wolfe 69",
+      "source_id": "SRC-7FBBB775E502",
+      "appearance_id": "APP-ACD4FA8FBBDD",
+      "text_id": "TXT-650842CFF0B7",
+      "text_type": "transliteration",
+      "characters": 67,
+      "content_sha256": "45c09a3c17254eb380a4744b8bf55b3ecdb027326c93e0085a6d63ee10b8d694",
+      "review_id": "IBI-PROOF-20261001-EXACT-WOLFE69-ABS1-TRANSLITERATION",
+      "status": "reading_text_checked",
+      "extent": "Two separated commentary fragments only, with project extent labels. Line 5 discussion has an ambiguous antecedent for the first-word comparison and is not converted to an exact Wolfe quotation. No English translation is attached to these fragments."
+    },
+    {
+      "designation": "MS 2053/198",
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-0D925B51D076",
+      "text_id": "TXT-F4F16B6E358D",
+      "text_type": "transcription",
+      "characters": 57,
+      "content_sha256": "cec1f436b392548cb51b7e9c51762ffe54b0c23453d4310213da66599aae61db",
+      "review_id": "IBI-PROOF-20261001-EXACT-MS2053-198-L13-TRANSCRIPTION",
+      "status": "reading_text_checked",
+      "extent": "Explicitly quoted line 13 phrase only; separate from already captured lines 6–8. No surrounding text supplied."
+    },
+    {
+      "designation": "MS 2053/198",
+      "source_id": "SRC-8A145FAA2EBB",
+      "appearance_id": "APP-0D925B51D076",
+      "text_id": "TXT-97C0B329CE20",
+      "text_type": "translation",
+      "characters": 72,
+      "content_sha256": "453ac9fde796b9381f06bff2ae23279c2ed067b73381f3091126f371446b4d53",
+      "review_id": "IBI-PROOF-20261001-EXACT-MS2053-198-L13-TRANSLATION",
+      "status": "reading_text_checked",
+      "extent": "English translation of the quoted line 13 phrase, joined across the p. 35–36 page break; no additional lines."
+    }
+  ],
+  "new_text_characters": 2951,
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 3
+    },
+    {
+      "table": "appearances",
+      "added": 3
+    },
+    {
+      "table": "captures",
+      "added": 1
+    },
+    {
+      "table": "document_assessments",
+      "added": 1
+    },
+    {
+      "table": "media",
+      "added": 5
+    },
+    {
+      "table": "publication_assessments",
+      "added": 2
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 5
+    },
+    {
+      "table": "texts",
+      "added": 5
+    }
+  ],
+  "page_media_added": 5,
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0004_m59_full_provided_units_and_exact_quotes.json",
+      "sha256": "b7f94de5c7d6f7e7aefb90bce7297ca65ca6e85f26094aaa219b477a1f24c79d"
+    },
+    {
+      "path": "data/private/research-work/exact-quotations-m59-2026-10-01/search_actions.json",
+      "sha256": "b3e03e611ba7800c5503682f95844f0dfe9cdc0b7a395efbed7def22b0e36cda"
+    },
+    {
+      "path": "data/private/research-work/exact-quotations-m59-2026-10-01/production-verification.json",
+      "sha256": "bb4c2e9c0700d05a97351bb7abb1c53231a813c0063d432a212b396b60e7528b"
+    },
+    {
+      "path": "data/private/research-work/exact-quotations-m59-2026-10-01/proof_inventory_production.json",
+      "sha256": "adf08fb951010a3e7966a4537fa85980e72c139fbb1dd57f516e569588eedafc"
+    },
+    {
+      "path": "research/reviews/exact_quote_appearances_2026-10-01.jsonl",
+      "sha256": "9b1f55ba19bfb8b1f6fea0a75fc27530ca629d68937282648ab84504e8627490"
+    },
+    {
+      "path": "data/private/manifests/exact_quotes_and_m59_texts_2026-10-01.jsonl",
+      "sha256": "e97b084e124346547d556f4753f609d97427909138c613dd1d00f9b20d66cb1a"
+    },
+    {
+      "path": "research/reviews/wolfe69_publication_reference_2026-10-01.json",
+      "sha256": "7c36d35a46bf1ed17bbb1b80fa7981633ade95dff01c36c78329f90262c6bb19"
+    },
+    {
+      "path": "research/reviews/m59_html_capture_extent_evidence_2026-10-01.json",
+      "sha256": "d732a18131064de0d963f27263d49eaa854e071fe6682d285c8ca960db23c4ec"
+    },
+    {
+      "path": "research/reviews/m59_html_document_assessment_2026-10-01.json",
+      "sha256": "6b1a9cc0ffbd31e802d9fc1a1183cb75c59d211d6d8c6a8ce082a8b0d54cf28d"
+    },
+    {
+      "path": "research/receipts/exact_quote_abs1_private_images_2026-10-01.json",
+      "sha256": "b2a4494f7b4c23cfed2001432c6bd40914ec06ae508d4a02da5e2e0e5bb6209a"
+    },
+    {
+      "path": "research/receipts/exact_quote_ms198_private_images_2026-10-01.json",
+      "sha256": "6719a33c41e92954409117f19eb37954c67197b556fd97b57c3470d605e8c836"
+    },
+    {
+      "path": "data/private/manifests/exact_quotes_m59_M59-ONLINE_proofreading_2026-10-01_production.json",
+      "sha256": "6e82e41c65a46fb1e208ae7cac77b7f9ac3d3847d3bc48cdcf36be3c53aa60ce"
+    },
+    {
+      "path": "data/private/manifests/exact_quotes_m59_WOLFE69-ABS1_proofreading_2026-10-01_production.json",
+      "sha256": "51d3bb7ec27f03687cb9819723bc33adf7a3a0d7fdbcb5624f04a4963b4b7b20"
+    },
+    {
+      "path": "data/private/manifests/exact_quotes_m59_MS2053-198-L13_proofreading_2026-10-01_production.json",
+      "sha256": "fa68b6f6f33c49b4a61f53e530e102e870edfe63adbfdf4f3c47271032e64ef7"
+    },
+    {
+      "path": "data/private/research-work/exact-quotations-m59-2026-10-01/reader-verification.json",
+      "sha256": "f2104d70bcdfcbc7a7cf74406cc8d66da1b13e57f0218155869421d77b9d47a4"
+    }
+  ],
+  "backup_path": "data/private/backups/before-exact-quotations-m59-20261001T230540Z.sqlite3",
+  "validation": {
+    "all_preexisting_rows_identical": true,
+    "seven_manifests_replayed_without_corpus_change": true,
+    "capture_acquisition_not_replayed": "HTML content/time may change; existing exact capture is the evidence, not a new HTTP fetch.",
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "passed",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "all_checks_passed": 7,
+      "new_text_hashes_match": 5,
+      "new_image_hashes_match": 5,
+      "html_capture_hash_matches": true
+    },
+    "python_tests_passed": 371
+  },
+  "reader_counts": {
+    "texts": 1491,
+    "media": 1216,
+    "local_images": 856,
+    "captures_packaged": 64
+  }
+}

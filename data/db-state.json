@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "635e7c05c573f5c5cc709e312a8e36676a536d741ad4683e90c2bf7034074921",
+  "corpus_digest": "0ff244d49dfe1e89d465f8c7e8bf9426073a4449f5f70e2298fcfa6703223c4c",
   "migrations": 19,
-  "note": "Goal checkpoint 3: eight exact publication references, eight private quoted excerpts with separate source reviews, four facsimiles and two immutable source metadata corrections.",
-  "recorded_at": "2026-10-01T23:02:56+00:00",
+  "note": "Goal checkpoint 4: M59 full provided online native/English units and bounded Wolfe69/MS198 readings separately checked; scoped source references, facsimiles and HTML capture.",
+  "recorded_at": "2026-10-01T23:23:43+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -11,16 +11,16 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "f47c504bac720b8765f435a87f062f63e03f5d8705ac85763fcd2b159d3483c8",
-      "rows": 2400
+      "digest": "6a66495ee7f7bbc2a9ffed162c3291cfa7e0aca896ec6ca03defe0edc96f3300",
+      "rows": 2403
     },
     "appearances": {
-      "digest": "69203cd2c811c36cba80ea9afb705fcabb0dbe7f48c78e0dbb74e62210f572de",
-      "rows": 2400
+      "digest": "7319d5709e4b49043ee8845836677a074bcbd180ac70c4c2e4db5cc5478c42fc",
+      "rows": 2403
     },
     "captures": {
-      "digest": "c7e60aecfccf8b985ee5bea1550a0da871ba67f3ef3004385498442a7fd8b1cf",
-      "rows": 63
+      "digest": "bea14383912c68d02e4718a1ec105b1c95c2927407789f7838fce0cf887a4a8d",
+      "rows": 64
     },
     "claim_conflict_review_history": {
       "digest": "c88bbc70febdd268c4e6da732a3d74385233b626cff319b00da6d355b84adf2e",
@@ -55,8 +55,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "2dc9edb2ced2cae64a943df1b32309a9df6812c3a20b9b4934b2f9b09cf88b40",
-      "rows": 54
+      "digest": "def9902acb0edb7b683e1344c536e56fa03772b13cb9f5ea61977eca5702ca75",
+      "rows": 55
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -75,8 +75,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "6fdeeb221bb1585487896c3bc6cd54c62f1407f35d016bb99de12443da5b2019",
-      "rows": 1211
+      "digest": "7261763db8eb2861d366486a6136842a3dc6c9d8fa0554ddcb4383eaa0d003a2",
+      "rows": 1216
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -103,8 +103,8 @@
       "rows": 2059
     },
     "publication_assessments": {
-      "digest": "0e7c107d660f5b594d1fb707c5b6df25e5d928408402c7bf904c13606771f045",
-      "rows": 252
+      "digest": "df0919b30cd0eef6c0681cbefab7916e36977535687247370b9422c051477308",
+      "rows": 254
     },
     "publication_registry": {
       "digest": "dfa264409bf26b5bf2ab4a574b13c9e2f46f8f61e50ba5c577a220ed2771a765",
@@ -143,16 +143,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "3ae74440b33b597c377a6afa93af755ea1cdf8e011821a6b88547c13450aca5b",
-      "rows": 873
+      "digest": "3780ddb21902a3a9104b7eea607e513dae9754c21a614f7e9a9ae7203c090837",
+      "rows": 878
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "9ab6e333de213393d271d708b615047ec0d4c1e1ed78d1ba980c3f8e5148f891",
-      "rows": 1486
+      "digest": "65277f7e3ccb22bef26346644db8d082cd555a487b5cf24b051e4e791e7fc4ed",
+      "rows": 1491
     }
   }
 }
