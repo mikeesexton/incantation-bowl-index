@@ -25,10 +25,21 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Recheck Berlin measurements and current citations
+
+**Claimed:** none (CONC; Mike requests source details and a fresh discrepancy check)
+**Corpus:** unchanged — state digest `3a288643ff08`
+**Tests:** 371 Python tests pass; all 967 current locators equal their corrected after-snapshots; corpus state unchanged
+
+- Verified that the 967 active citation pointers are corrected in claims; old pointers exist only in correction-history before-snapshots and repair receipts. Reader projections do not consult that history. Clarified the earlier log wording: the bad pagination came from the project import, not the source book.
+- Rechecked Berlin 2018 printed p. 5 (diameter × height convention), entry 147 / p. 162 and entry 166 / pp. 171–172 against the held PDF and entry images. Current official museum data confirms 2836 at diameter 16.7 / height 5.8 cm versus catalogue 16.9 / 5.1; its indexed official record confirms 4366a at 11.3 / 5.0 versus 11.6 / 3.7. Direct open of the latter failed, so its fresh verification is explicitly search-index based. Differences are 2/7 mm and 3/13 mm respectively, with no unit/order transcription error.
+- Visually checked Burberry 2020 ACB 10, p. 228: repeats 16.9 × 5.1, describes 2836 as broken and repaired, and cross-references the 2018 entry. This is not evidence of independent remeasurement. Checked the adjacent 4366b entry: 12 × 3.8, distinct text; no demonstrated a/b copying swap. No source establishes the cause or method behind the height differences. Factual audit: research/audits/berlin_measurement_source_check_2026-10-01.json.
+- No measurement selected as physically correct, no identity decision changed and no history deleted. Shared accessions remain strong correspondence evidence; conflicting recorded measurements alone do not prove two objects. Next useful check is the measurement method or direct photographic correspondence, rather than further pagination work.
+
 ## 2026-10-01 — Codex — Repair Berlin catalogue page pointers
 
 **Claimed:** QA-001 (source-locator integrity follow-through from authorized research)
-**Corpus:** changed (967 citation pointers repaired; exact originals retained) — state digest `3a288643ff08`
+**Corpus:** changed (967 current citation pointers corrected; prior pointers retained only in superseded audit snapshots) — state digest `3a288643ff08`
 **Tests:** 371 Python tests pass; 967-row rehearsal and identical replay pass; values/history, database integrity and foreign keys verified; roadmap, enrichment, conflicts, acquisitions and private exports regenerated
 
 - Audited all 169 Berlin 2018 catalogue entry headings against the held source and all 102 visible running-page numbers. The chapter-opening PDF p. 85 suppresses its folio; logical printed p. 71 follows the continuous sequence beginning on PDF p. 86 / printed p. 72. Visually checked PDF 85, 130, 176, 185 and 187. Every targeted old start had the same two-page error; every corrected range stays within its corresponding entry/next-heading bound.

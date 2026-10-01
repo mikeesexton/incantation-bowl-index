@@ -1,0 +1,100 @@
+{
+  "reviewed_at": "2026-10-01T21:01:09.074855+00:00",
+  "reviewed_by": "codex",
+  "scope": "Mike requested current-citation clarification and source details for two Berlin accession pairs; no identity or measurement adjudication.",
+  "current_citations": {
+    "verified_count": 967,
+    "all_match_corrected_after_snapshot": true,
+    "error_origin": "Project import used a two-page-early pagination offset; not a source-book error.",
+    "old_locators": "Only before-snapshots in the correction-history ledger and correction receipts; not current claims.",
+    "reader_check": "claim_locator_corrections is used by the correction loader and exports, not reader projections."
+  },
+  "catalogue": {
+    "source_id": "SRC-DA708912C2D3",
+    "authors": [
+      "Siam Bhayro",
+      "James Nathan Ford",
+      "Dan Levene",
+      "Ortal-Paz Saar"
+    ],
+    "year": 2018,
+    "title": "Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts",
+    "capture_sha256": "7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+    "measurement_convention": "diameter x height in cm unless otherwise specified; introduction printed p. 5 / PDF p. 19",
+    "verification": "Held PDF text and entry page images inspected; Burberry p. 228 rendered and visually inspected."
+  },
+  "pairs": [
+    {
+      "accession": "VA Bab 02836 / VA.Bab.2836",
+      "museum_url": "https://search.smb.museum/object/obj-1743770",
+      "museum_page_updated": "2026-07-29",
+      "museum_rechecked": "2026-10-01, official page through web tool",
+      "museum_diameter_cm": 16.7,
+      "museum_height_cm": 5.8,
+      "catalogue_entry": 147,
+      "catalogue_printed_page": 162,
+      "catalogue_pdf_page": 176,
+      "catalogue_diameter_cm": 16.9,
+      "catalogue_height_cm": 5.1,
+      "absolute_diameter_difference_mm": 2,
+      "absolute_height_difference_mm": 7,
+      "catalogue_context": {
+        "shape": "round base",
+        "condition": "complete; broken",
+        "writing": "legible; Jewish Babylonian Aramaic",
+        "origin": "Merkes"
+      },
+      "third_source": {
+        "source_id": "SRC-53B93C8C8A0E",
+        "author": "Anne Burberry",
+        "year": 2020,
+        "item": "ACB 10",
+        "printed_and_pdf_page": 228,
+        "capture_sha256": "63637559c176da93f3d20e346f9db17533573988f749f5cfabaf88e453119fbe",
+        "diameter_cm": 16.9,
+        "height_cm": 5.1,
+        "condition": "complete; broken and repaired",
+        "relationship": "Explicitly cross-references MRLA 7 entry 147, p. 162. Repetition of dimensions is not evidence of independent remeasurement."
+      }
+    },
+    {
+      "accession": "VA Bab 04366 a / VA.Bab.4366a",
+      "museum_url": "https://search.smb.museum/en/object/obj-1743776",
+      "museum_page_updated": "2026-07-29",
+      "museum_rechecked": "2026-10-01, official museum search-index excerpt; direct open failed",
+      "museum_diameter_cm": 11.3,
+      "museum_height_cm": 5.0,
+      "catalogue_entry": 166,
+      "catalogue_printed_pages": [
+        171,
+        172
+      ],
+      "catalogue_pdf_pages": [
+        185,
+        186
+      ],
+      "catalogue_dimensions_printed_page": 171,
+      "catalogue_diameter_cm": 11.6,
+      "catalogue_height_cm": 3.7,
+      "absolute_diameter_difference_mm": 3,
+      "absolute_height_difference_mm": 13,
+      "catalogue_context": {
+        "shape": "round base",
+        "condition": "complete",
+        "writing": "well-preserved pseudo-script",
+        "drawings": "two: humanoid stick figure and a possible animal",
+        "origin": "Babylon"
+      },
+      "adjacent_entry_checked": {
+        "accession": "VA.Bab.4366b",
+        "entry": 167,
+        "printed_page": 172,
+        "diameter_cm": 12,
+        "height_cm": 3.8,
+        "writing": "Jewish Babylonian Aramaic",
+        "result": "Dimensions differ from both a values; no demonstrated a/b transcription swap."
+      }
+    }
+  ],
+  "finding": "All four dimensions agree with their respective sources. Not a unit/order or project transcription error. Neither source establishes the measurement date, technique or cause of discrepancy. Rounding alone does not explain the height gaps. Shared accessions remain strong correspondence evidence; measurement disagreement alone does not demonstrate distinct bowls. Existing insufficient_evidence reviews were not changed."
+}
