@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Repair Berlin catalogue page pointers
+
+**Claimed:** QA-001 (source-locator integrity follow-through from authorized research)
+**Corpus:** changed (967 citation pointers repaired; exact originals retained) — state digest `3a288643ff08`
+**Tests:** 371 Python tests pass; 967-row rehearsal and identical replay pass; values/history, database integrity and foreign keys verified; roadmap, enrichment, conflicts, acquisitions and private exports regenerated
+
+- Audited all 169 Berlin 2018 catalogue entry headings against the held source and all 102 visible running-page numbers. The chapter-opening PDF p. 85 suppresses its folio; logical printed p. 71 follows the continuous sequence beginning on PDF p. 86 / printed p. 72. Visually checked PDF 85, 130, 176, 185 and 187. Every targeted old start had the same two-page error; every corrected range stays within its corresponding entry/next-heading bound.
+- Applied 967 immutable locator repairs across 168 entries and 169 candidate records; entry 45 already has six corrected locators and was excluded. Added exact printed/PDF ranges without changing any other claim field. The full before-snapshot manifest is private and bound to the original PDF hash; content-free receipt in research/receipts/berlin_2018_locator_corrections_2026-10-01.json. A separate rehearsal applied 967 then zero repairs on replay; all production rows equal the expected snapshot with locator alone changed.
+- Final roadmap prose now matches the post-research state: 801/1,052 priority publication links, 251 unlinked, 41 further dispositions for the intermediate 80% gate; 688 checked / 108 partial / 2 unreviewed stored edition rows; 45 native-script gaps; 272 claim comparisons requiring work, including 46 stale. No conflict disposition changed from pointer repair, no field value or Berlin measurement adjudication, no public release, push, outbound message or allowance reset.
+- Requested bounded follow-through completed: two new TMH edition relationships; exact Met edition concordance; two Berlin discrepancy flags; a distinct Levene 2000 twenty-edition thesis acquisition lead; forty partial English translation-layer reviews with four choices flagged; 967 citation-pointer repairs. The next research priority remains native-script recovery and explicit NLI/publication concordances; full document access and independent specialist review remain open.
+
 ## 2026-10-01 — Codex — Check project English against older source translations
 
 **Claimed:** TEXT-004 (source comparison of unreviewed project English renderings)

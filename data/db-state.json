@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "c652edc61ca2e46f578dd33e9d36cba3116a0f85ab98ccb2468d7960b6c03bf4",
+  "corpus_digest": "3a288643ff086d6e4e9bf41c046f6613cf4cda63b644104da5b9364573f40e55",
   "migrations": 19,
-  "note": "Forty partial English translation-layer reviews with hash-bound source rows and four unresolved translation-choice flags; contents unchanged",
-  "recorded_at": "2026-10-01T15:04:45+00:00",
+  "note": "Repaired 967 Berlin metadata citation pointers with retained originals; full heading/pagination audit and idempotent rehearsal; final roadmap refreshed",
+  "recorded_at": "2026-10-01T15:17:01+00:00",
   "recorded_by": "codex",
   "schema_version": "019_text_metadata_corrections",
   "tables": {
@@ -31,11 +31,11 @@
       "rows": 646
     },
     "claim_locator_corrections": {
-      "digest": "472d08e453b2b761c73411fe440a2bfbb4923711543f9234d80ceef7dc108ada",
-      "rows": 143
+      "digest": "f0fa15190dd967f56a07e0e1ce36aac1f7f7157dc63c7c2c808191cbb569e685",
+      "rows": 1110
     },
     "claims": {
-      "digest": "ce7227f8fcc7ec70dc027867bc6c07cd07a2fee8814b0826d249e54e2ab2c510",
+      "digest": "8b975039f1397f91c8b74bc9dbc25f7c4483b11af8dff4a36a5b39b927a46dce",
       "rows": 9039
     },
     "contributor_aliases": {
