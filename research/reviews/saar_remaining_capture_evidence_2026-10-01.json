@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "inspected_by": "Codex",
+  "inspected_at": "2026-10-02T01:15:55+00:00",
+  "sources": [
+    {
+      "source_id": "SRC-07B313309678",
+      "capture_id": "CAP-EB9E314C625B",
+      "sha256": "40cd002ea049e00241efd4044c8924790b724b0e375561ddb2b0cdee506ddfa9",
+      "visually_inspected_pdf_pages": [
+        1,
+        4,
+        5,
+        40,
+        144,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        196,
+        202,
+        203,
+        211,
+        212,
+        310
+      ],
+      "total_pdf_pages": 313,
+      "extraction_scope": "Five bowl Table1 rows and six bounded quotation units. Discovery text searched across313 pages; relevant pages inspected visually. This is partial book extraction."
+    },
+    {
+      "source_id": "SRC-MORGENSTERN2023-FORMS",
+      "capture_id": "CAP-C69A25846658",
+      "sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "visually_inspected_pdf_pages": [
+        184,
+        185
+      ],
+      "extraction_scope": "Full provided AbrahamGallery3 quotation and Hebrew translation; earlier three-clause capture retained unchanged; article remains partial."
+    }
+  ],
+  "units": 12,
+  "text_rows": 13,
+  "citation_repair": {
+    "printed_saar_footnote110_and_index": "CBS2973 (=AIT28)",
+    "selected_witness": "CBS2972 / Montgomery28",
+    "corroboration": "Saar Table1 printed166/PDF182 explicitlyCBS2972; actual Montgomery1913 printed213/PDF219 no28(CBS2972), matching line5 clause."
+  },
+  "excluded_scope": [
+    "Genizah/manuscript examples",
+    "metal amulets",
+    "HorvatRimmon shard",
+    "VA2458 human skull",
+    "Berlin egg"
+  ],
+  "identity_review_gap": {
+    "new_candidate": "IBI-SAAR2017-ROM931-4-2",
+    "reported_accession": "Royal Ontario Museum931.4.2",
+    "edition_pointer": "McCullough1967 BowlD line12",
+    "possible_alias": "IBI-724AC11312AB / DA4",
+    "status": "No merge; original edition/museum-register concordance required."
+  },
+  "full_case_completions_claimed": 0,
+  "rights_approvals": 0,
+  "whole_bowl_captures_claimed": 0
+}

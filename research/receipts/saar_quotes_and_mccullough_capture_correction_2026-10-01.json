@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "checkpoint": 9,
+  "created_at": "2026-10-02T01:30:06+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "d541d6439b59c9aa2fc75bbd3e95241916a497e23c4ef3634bd39730ffb3a186",
+  "corpus_after": "e2075b028aded393e6e05c454716b9912ab0e448f321d69d08cd96fbd5b92fad",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "cases_with_appended_source_work_this_checkpoint": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "source_appearances_added": 12,
+  "table_bowl_rows": 5,
+  "bounded_quote_units_captured": 7,
+  "text_rows_by_type_language": {
+    "transliteration / Mandaic": 2,
+    "translation / Hebrew": 1,
+    "transcription / Jewish Babylonian Aramaic": 4,
+    "translation / English": 6
+  },
+  "separate_source_checks_added": 13,
+  "reading_characters_added": 1122,
+  "private_page_images_added": 13,
+  "candidate_objects_added": 1,
+  "identifiers_added": 1,
+  "publication_assessments_added": 7,
+  "document_assessments_added": 3,
+  "source_correction_rows_added": 1,
+  "capture_source_correction_rows_added": 1,
+  "new_source_records_added": 1,
+  "leads_added": 2,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 993,
+    "appearance_bearing_sources": 37,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-795E719C624E",
+      "SRC-8FA39ADCBF5F",
+      "SRC-D721A94FA3B2",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES",
+      "SRC-MCCULLOUGH1949-THESIS"
+    ]
+  },
+  "mc_correction": "1967 source URL/book holding removed; same archived bytes/retrieval now correctly attached to1949 thesis. Original complete source/capture snapshots retained in immutable correction ledgers. Four existing1967 discovery-summary rows unchanged; they are not verified from thesis.",
+  "extraction": "Saar2017 and Morgenstern2023 remain partial; thesis full extent/text extraction not yet assessed.",
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Acquire and inspect Ford2025, The Exorcistic Formula Thus Is This Oath, official BGU65-page PDF: https://in.bgu.ac.il/en/humsos/goldstein-goren/Jewish%20Magic/JT6ENG%20Ford.pdf . Actual abstract/title/imprint inspected online: seven full editions plus twenty synoptic witnesses. Lawful capture and contoured-letter handling must precede text claims.",
+    "Inspect actual held McCullough1949 thesis headings, plates and complete texts. Resolve ROM931.4.2 /1967 BowlD /DA4 only with accession-bearing original evidence; actual1967 book remains unheld.",
+    "MS1928/20 long divorce parallel remains unassigned after actual ABS1p103 supplies only grammatical-form pointers. Ford2025 supplies a visibility-form comparison, not the full divorce quotation. Continue exact original-edition search.",
+    "Continue BM91722/094M mismatch and Ford1:8 exact source; no year was supplied by Morgenstern at that occurrence.",
+    "Audit remaining review/Miami/Hornkohl-Khan/Juusola holdings and frozen NLI digital/exhibition concordances; no negative finding from catalogue silence."
+  ],
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-004",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "scope": "Actual quoted native/Hebrew-English translation units and5 bowl table rows. Correct book/PDF mismatch through manifest-based history-preserving repairs. No whole-bowl capture, uncertain merge, rights clearance, complete-case finding or original-clay adjudication.",
+  "backup_path": "data/private/backups/before-saar-remaining-20261002T011555Z.sqlite3",
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 12,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "appearances",
+      "added": 12,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "capture_source_corrections",
+      "added": 1,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "captures",
+      "added": 0,
+      "modified_with_immutable_original": 1
+    },
+    {
+      "table": "document_assessments",
+      "added": 3,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "identifiers",
+      "added": 1,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "leads",
+      "added": 2,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "media",
+      "added": 13,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "objects",
+      "added": 1,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "publication_assessments",
+      "added": 7,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "schema_migrations",
+      "added": 1,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "source_corrections",
+      "added": 1,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "sources",
+      "added": 1,
+      "modified_with_immutable_original": 1
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 13,
+      "modified_with_immutable_original": 0
+    },
+    {
+      "table": "texts",
+      "added": 13,
+      "modified_with_immutable_original": 0
+    }
+  ],
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0009_saar_quotes_and_capture_correction.json",
+      "sha256": "d3ca2213ebb6f6ded2a1c373a32348e12010d87508dae823100b586049864dab"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/metadata.json",
+      "sha256": "bf0f142506e4832fe9391548b276fb6599adbe9632f694b16085f7514fbfecac"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/prepare.py",
+      "sha256": "a0195302a6508710847189088bbdbba84be372a51ce963aba5fc4001797ebbcc"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/source_check.py",
+      "sha256": "e12addc8328d6b88712e05dfe522aa9abd2a2a598299482ad16c11813f9611b7"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/source_checks02.json",
+      "sha256": "38ff52ba7797af594a1400a18481536b50e034b83df304252af5eac86c2be9f0"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/item_inventory.json",
+      "sha256": "fbe8a44a9e7c03ddce324f61aaea2931ba4fca974ad2fb23c671909fa880f527"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/apply.py",
+      "sha256": "82a77a069d7074955022d821a4e8af405038c40dc908168ca522a4f9b519bd7e"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/verify.py",
+      "sha256": "9523fbee42433d69e48f64743940ab6de6bdc23bff754ce39481f080969abf54"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/trial-apply.json",
+      "sha256": "cfe501beb52abf820facd6318f8c29789ee319871e25fd5ac9389b9be3f5b0cc"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/trial-replay.json",
+      "sha256": "015b48bcb5a29a737535fd2257675932206463b8c619820183c0cc1dc2e9a623"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/trial-verification.json",
+      "sha256": "aa00c429c0256a6e3a506bb88e2e01f15009539963945928cc81a65f7d1d0930"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/production-apply.json",
+      "sha256": "b6b226d8d0c29afc23b86e35b27141fec9a0105eb18f851482586b163602e314"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/production-replay.json",
+      "sha256": "9c97dfc7dc1f7c6b9bbff8cee6bcaaec23688c658b03930782f5a912faf9754c"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/production-verification.json",
+      "sha256": "24d50ead7bd807b208f3da8e6912fd7311195ce09d9ce851e198a231ed5555b1"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/proof_inventory_production.json",
+      "sha256": "b0f83f2e85f0eb569738c72d3286dd9dda9a8e100a001567d52a609086fa4ece"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/replay-verification.json",
+      "sha256": "7ceae3580696fbfe4d69103f1fdfac1420dbfbcf972169ac03ae1c053abe7088"
+    },
+    {
+      "path": "research/reviews/saar_remaining_appearances_2026-10-01.jsonl",
+      "sha256": "3c581e915477eeec49f8d09d0fd2382dd5257eb6c459116c5abb1b4c332b7bf5"
+    },
+    {
+      "path": "data/private/manifests/saar_remaining_quotes_2026-10-01.jsonl",
+      "sha256": "7d6ea79e3b45af1e31ee193da74fe99624ddde8b011886e1fa6d2db1fdacedf9"
+    },
+    {
+      "path": "research/reviews/saar_remaining_publication_references_2026-10-01.json",
+      "sha256": "62824b59ae8cb061d2e93ca2829f2aca59a3dd35e0bf088a3e9ad02bf83f74b2"
+    },
+    {
+      "path": "research/reviews/saar_remaining_capture_evidence_2026-10-01.json",
+      "sha256": "9b93dd6b4d887ada926541f400cd3d9d1ebad10cd98936195830d7d657e45ed1"
+    },
+    {
+      "path": "research/reviews/saar_remaining_document_assessments_2026-10-01.json",
+      "sha256": "fd2d50376a921f4e3b55529fe43153118e002b0616402e947c4df82cdc1bf1e2"
+    },
+    {
+      "path": "research/reviews/mccullough_capture_mismatch_evidence_2026-10-01.json",
+      "sha256": "5701620510c9d29d6114fc8830c52656e78dba2ec3f64abe4230dde39e748093"
+    },
+    {
+      "path": "research/reviews/mccullough_1967_source_pointer_correction_2026-10-01.json",
+      "sha256": "5d8d29536b97c34997f79f97d2e89a7eb1794bd1c08bfcfa67a44fb3057b69cd"
+    },
+    {
+      "path": "data/private/manifests/mccullough_capture_source_correction_2026-10-01.json",
+      "sha256": "ad751813109a44f04801cd99f210ca0a0c9da96fbf4ae5c953d83cd7d680c235"
+    },
+    {
+      "path": "research/sources/mccullough_1949_thesis_2026-10-01.jsonl",
+      "sha256": "b40b2251ec602711abcbb83accf4c4f522c2da6ecf13f58bbaba5b505cc032fa"
+    },
+    {
+      "path": "research/leads/saar_remaining_original_editions_2026-10-01.jsonl",
+      "sha256": "63f159050bd989720743cd0e03fc17e08cfd39da83be69cc0bb1f8e040e0ba75"
+    },
+    {
+      "path": "research/receipts/saar_remaining_private_page_images_2026-10-01.json",
+      "sha256": "d3f9ef3608639f24fb09e63c8e2ff3615934931fdc7c8c34f6e38fe461ea568d"
+    },
+    {
+      "path": "research/receipts/saar_remaining_abraham_private_page_images_2026-10-01.json",
+      "sha256": "d0996ef77f2241a288794baa78453d5d899840750cbb64e24f389dea6de12409"
+    },
+    {
+      "path": "data/private/manifests/saar_remaining_proofreading_2026-10-01_SRC-07B313309678_production.json",
+      "sha256": "2e30647891fd967b52c877a3b2caeb1e991925048076f36d9a53bd7360da6f6b"
+    },
+    {
+      "path": "data/private/manifests/saar_remaining_proofreading_2026-10-01_SRC-MORGENSTERN2023-FORMS_production.json",
+      "sha256": "142913878b601f417993ffd83cfba688d6942e311ebc6d0a8f64b2d697759d12"
+    },
+    {
+      "path": "data/private/research-work/saar-remaining-2026-10-01/reader-verification.json",
+      "sha256": "e8d365c2af1bc3b82492852c31d36d8d082b6c5a57b018f406334e6fe716d7e7"
+    }
+  ],
+  "validation": {
+    "copied_database_rehearsal": "pass",
+    "eight_trial_and_production_replays_unchanged": true,
+    "all_preexisting_rows_identical_except_two_audited_corrections": true,
+    "source_and_capture_originals_retained": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "375 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1666,
+      "all_media_rows_present": 1322,
+      "local_image_rows": 962,
+      "new_text_hashes_match": 13,
+      "new_image_hashes_match": 13,
+      "all_source_capture_hashes_match": 70,
+      "corrected_thesis_capture_source_and_book_link_absence_verified": true,
+      "scope": "Full private Mike projection; no public release or remote deployment."
+    }
+  }
+}

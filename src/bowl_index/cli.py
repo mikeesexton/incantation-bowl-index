@@ -38,6 +38,7 @@ from .publications import apply_publication_registry, publication_object_counts
 from .publication_assessments import apply_publication_assessments
 from .claim_corrections import apply_locator_corrections
 from .source_corrections import apply_source_corrections
+from .capture_corrections import apply_capture_source_corrections
 from .text_metadata import apply_text_metadata
 from .cohort import write_montgomery_cohort, apply_montgomery_register
 from .concordance import apply_concordance_review
@@ -121,6 +122,10 @@ def build_parser():
         "ingest-source-corrections", help="apply bibliographic repairs with immutable originals"
     )
     source_corrections.add_argument("path")
+    capture_corrections = sub.add_parser(
+        "ingest-capture-source-corrections", help="repair captured-work assignments with immutable retrieval snapshots"
+    )
+    capture_corrections.add_argument("path")
     text_metadata = sub.add_parser(
         "ingest-text-metadata", help="repair text labels and locators with retained originals"
     )
@@ -375,6 +380,9 @@ def main(argv=None):
     elif args.command == "ingest-source-corrections":
         review = json.loads(Path(args.path).read_text())
         print(json.dumps(apply_source_corrections(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))
+    elif args.command == "ingest-capture-source-corrections":
+        review = json.loads(Path(args.path).read_text())
+        print(json.dumps(apply_capture_source_corrections(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))
     elif args.command == "ingest-montgomery-register":
         print(json.dumps(apply_montgomery_register(conn, args.path), indent=2, sort_keys=True))
     elif args.command == "report-montgomery-cohort":

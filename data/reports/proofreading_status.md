@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 872 | 114 | 2 | 988 | 88.3% |
+| Edition text (translation, transcription, transliteration) | 885 | 114 | 2 | 1001 | 88.4% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 872 | 114 | 667 | 1653 | 52.8% |
+| All stored text | 885 | 114 | 667 | 1666 | 53.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 493 | 42 | 1 | 536 |
-| transcription | 272 | 59 | 0 | 331 |
-| transliteration | 107 | 13 | 1 | 121 |
+| translation | 500 | 42 | 1 | 543 |
+| transcription | 276 | 59 | 0 | 335 |
+| transliteration | 109 | 13 | 1 | 123 |
 
 ## Edition text by source
 
@@ -27,6 +27,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | A Magical Bowl in Judaeo-Aramaic (`SRC-25F456A40523`) | 0 | 0 | 1 | 1 |
 | Incantation Bowl — Auction 32 lot 154 (`SRC-E94437DF5962`) | 0 | 0 | 1 | 1 |
 | An Aramaic Exorcism (`SRC-0383E0E0A2F2`) | 1 | 1 | 0 | 2 |
+| Jewish Love Magic: From Late Antiquity to the Middle Ages (`SRC-07B313309678`) | 11 | 0 | 0 | 11 |
 | Byzantine Period Terracotta Incantation Bowl, 400 CE–700 CE (`SRC-0AC8CA3CDF84`) | 1 | 0 | 0 | 1 |
 | Jüdisch-babylonische Zaubertexte (`SRC-0B6C0E1133EF`) | 3 | 4 | 0 | 7 |
 | Aramaic Magic Bowl: The Expulsion of Lilith (`SRC-1B966F866CDF`) | 1 | 0 | 0 | 1 |
@@ -62,4 +63,4 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 3 | 3 | 0 | 6 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 12 | 0 | 0 | 12 |
-| Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 150 | 0 | 0 | 150 |
+| Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 152 | 0 | 0 | 152 |

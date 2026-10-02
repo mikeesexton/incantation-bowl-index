@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T01:15:55+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-SAAR-REST-SAAR-20261001",
+      "source_id": "SRC-07B313309678",
+      "capture_id": "CAP-EB9E314C625B",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "40cd002ea049e00241efd4044c8924790b724b0e375561ddb2b0cdee506ddfa9",
+      "basis": "Five bowl Table1 rows and six bounded quotation units. Discovery text searched across313 pages; relevant pages inspected visually. This is partial book extraction.",
+      "evidence_path": "research/reviews/saar_remaining_capture_evidence_2026-10-01.json",
+      "evidence_sha256": "9b93dd6b4d887ada926541f400cd3d9d1ebad10cd98936195830d7d657e45ed1",
+      "extraction_path": "data/private/manifests/saar_remaining_quotes_2026-10-01.jsonl",
+      "extraction_sha256": "7d6ea79e3b45af1e31ee193da74fe99624ddde8b011886e1fa6d2db1fdacedf9",
+      "supersedes_id": "IBI-DOC-SAAR2017-20260911"
+    },
+    {
+      "id": "IBI-DOC-SAAR-REST-MORG-20261001",
+      "source_id": "SRC-MORGENSTERN2023-FORMS",
+      "capture_id": "CAP-C69A25846658",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "basis": "Full provided AbrahamGallery3 quotation and Hebrew translation; earlier three-clause capture retained unchanged; article remains partial.",
+      "evidence_path": "research/reviews/saar_remaining_capture_evidence_2026-10-01.json",
+      "evidence_sha256": "9b93dd6b4d887ada926541f400cd3d9d1ebad10cd98936195830d7d657e45ed1",
+      "extraction_path": "data/private/manifests/saar_remaining_quotes_2026-10-01.jsonl",
+      "extraction_sha256": "7d6ea79e3b45af1e31ee193da74fe99624ddde8b011886e1fa6d2db1fdacedf9",
+      "supersedes_id": "IBI-DOC-MORG2023-REST-20261001"
+    },
+    {
+      "id": "IBI-DOC-MCC1967-CITATION-20261001",
+      "source_id": "SRC-539BB677443B",
+      "document_form": "no_document",
+      "extent": "citation_only",
+      "inspection": "not_inspected",
+      "text_state": "none",
+      "object_extraction": "none",
+      "basis": "Actual archived PDF proved to be the1949 thesis. The1967 book remains a bibliographic reference with no retained document; no original readings verified here.",
+      "evidence_path": "research/reviews/mccullough_capture_mismatch_evidence_2026-10-01.json",
+      "evidence_sha256": "5701620510c9d29d6114fc8830c52656e78dba2ec3f64abe4230dde39e748093"
+    }
+  ]
+}

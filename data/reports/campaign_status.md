@@ -1,24 +1,24 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T01:00:08+00:00`
+Generated: `2026-10-02T01:30:43+00:00`
 
 ## Corpus
 
-- Candidate objects: **2075**
+- Candidate objects: **2076**
 - Unclassified claim fields: **['adversary_or_target', 'catalogue_script', 'edition_language_and_script_label', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'publication_reference', 'reported_bowl_form', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_dimensions', 'reported_findspot', 'reported_fragment_type', 'reported_height', 'reported_physical_condition', 'reported_writing_condition', 'source_language_or_script_label', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1726**
+- Estimated distinct objects after resolved dedupe: **1727**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2490**
-- Sources: **955**
+- Source appearances: **2502**
+- Sources: **956**
 - Dedupe clusters pending: **0**
-- Objects with text: **811**
-- Objects with translation: **428**
+- Objects with text: **813**
+- Objects with translation: **431**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **27**
+- Open leads: **29**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -66,7 +66,7 @@ Generated: `2026-10-02T01:00:08+00:00`
 | Access status | Sources |
 |---|---:|
 | available | 784 |
-| unknown | 102 |
+| unknown | 103 |
 | partial | 62 |
 | paywalled | 5 |
 | blocked | 1 |
@@ -76,16 +76,16 @@ Generated: `2026-10-02T01:00:08+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1349 |
+| object type | whole_bowl | 1350 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
 | record status | probable | 922 |
-| record status | candidate | 873 |
+| record status | candidate | 874 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1541 |
+| authenticity | unassessed | 1542 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |
@@ -141,6 +141,8 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | open | 1 | Reconcile BM 91711 / N-1847's reported Arban findspot with Waller's assessment that the accessions-register attribution to Layard is plausible but unverified. Check the original museum register, Layard's excavation account, the published prospectus, and any later object-specific scholarship before changing the findspot status. |
 | in_progress | 1 | Classify corpus findspot and provenance assertions by evidence basis: documented controlled excavation, museum or accessions register, dealer or antiquities-market report, later scholarly inference, or unverified/unknown. Preserve the original place claim and its source separately from the assessment. |
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
+| open | 1 | Inspect held1949 thesis bowl headings, accession numbers, full Hebrew-letter Mandaic transliterations/translations and plates. |
+| open | 1 | Acquire actual McCullough1967 RoyalOntarioMuseum book; existing242-page capture is1949 thesis, not this book. |
 | blocked | 1 | Retrieve the preserved Virtual Magic Bowl Archive data package and enumerate all item records once either Open Research Exeter or the Internet Archive permits access. |
 | open | 1 | Find publication or collection concordances for the 74 NLI digital records labelled IAA Bowl 1–74 and determine overlap with previously indexed objects. |
 | in_progress | 1 | Map the seven Avigdor Klagsbald donation bowls to exact NLI catalogue/manuscript identifiers and determine which overlap the 205 harvested NLI SRU records. |

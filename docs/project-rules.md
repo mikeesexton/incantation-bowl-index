@@ -268,6 +268,12 @@ Then read the top entry of [`task-log.md`](../task-log.md).
 - **Back up before a batch that changes many rows.** Copy the database to
   `data/private/backups/before-<slug>-<UTC timestamp>.sqlite3`. Keep the last
   ten; that directory is already large.
+- If an archived PDF turns out to be a different work, keep the works separate.
+  Repair its source assignment with `ibi ingest-capture-source-corrections`
+  against a hash-bound manifest. The immutable ledger retains the complete
+  original retrieval snapshot; the correction changes only the work association.
+  An existing document assessment requires a separate ledger repair and cannot
+  be silently reassigned by this command.
 
 ### Before you finish
 
