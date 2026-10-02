@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "inspected_by": "Codex",
+  "inspected_at": "2026-10-02T00:23:28+00:00",
+  "source_id": "SRC-MORGENSTERN2023-FORMS",
+  "capture_id": "CAP-C69A25846658",
+  "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+  "article_span": {
+    "printed": [
+      171,
+      194
+    ],
+    "pdf": [
+      181,
+      204
+    ]
+  },
+  "visually_inspected_article_pages": [
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200
+  ],
+  "captured_section": "section2 quoted bowl forms; other sections and context remain to extract",
+  "units": 40,
+  "unique_objects": 34,
+  "new_source_scoped_candidates": 8,
+  "translation_language": "Hebrew",
+  "mandaic_script_policy": "Author uses Hebrew-letter transliteration; keep transliteration distinct from Mandaic-script transcription.",
+  "excluded_material": [
+    "Ginza/DC40/RRC2C/MasarMahlala and Talmud/Geniza manuscript comparisons",
+    "metal amulets2087/1 and2087/4",
+    "Ford2011 bowl1 lacks resolved source key in this batch",
+    "BM91769 extended quote: dot/bracket typography remains to collate",
+    "other article sections3–5 not included in this extraction"
+  ],
+  "citation_checks": [
+    {
+      "article_pdf": 186,
+      "printed_variant": "MS2503/86",
+      "explicit_publication": "JBA34:11",
+      "verified_designation": "MS2053/86",
+      "actual_edition_pdf": [
+        205,
+        206
+      ],
+      "edition_printed": [
+        177,
+        178
+      ],
+      "basis": "Exact JBA34 heading and line11 quoted word match."
+    },
+    {
+      "article_pdf": 188,
+      "printed_variant": "MS1927/47",
+      "explicit_publication": "JBA30:10",
+      "verified_designation": "MS1928/47",
+      "actual_edition_pdf": [
+        194
+      ],
+      "edition_printed": [
+        166
+      ],
+      "basis": "Exact JBA30 heading/line10; article itself also correctly names1928/47/JBA30 atPDF187."
+    },
+    {
+      "article_pdf": 189,
+      "printed_variant": "MS2059/249",
+      "explicit_publication": "JBA46:5",
+      "verified_designation": "MS2053/249",
+      "actual_edition_pdf": [
+        236
+      ],
+      "edition_printed": [
+        208
+      ],
+      "basis": "Exact JBA46 heading/line5 and original photograph list PDF20 identify2053/249; author’s quote normalization remains distinct."
+    }
+  ],
+  "verification_source_id": "SRC-7FBBB775E502",
+  "verification_capture_id": "CAP-295A7FE7BF01",
+  "verification_capture_sha256": "39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+  "scope": "Complete article held; working excerpt units only. No full-article rich-text, full edition, source saturation, collection concordance, original-clay or all-unit extraction claim.",
+  "preparation_correction_policy": "Incorrect initial assignments/transcriptions retained privately in preparation01 and draft01 files; excluded from corpus. Rechecked capture02 fixes page-break assignments, source words, doubled word and pointed gloss. No fabricated source-number identifiers.",
+  "source_assignment_checks": [
+    "MS2054/20 quote precedes its citation on PDF184",
+    "MS2054/122 quoted form on PDF184; number follows on PDF185",
+    "Abraham Gallery3 long quote starts after MS2054/122 citation and ends with its own gallery citation",
+    "MS2054/68 preserves doubled house word, not silently normalized"
+  ]
+}

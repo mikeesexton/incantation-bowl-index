@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "checkpoint": 7,
+  "created_at": "2026-10-02T00:34:34+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "a14eeb9e2efb3080a180e0da35fe49be12b672d70c431309be322519b2afd058",
+  "corpus_after": "cadb0c8053e71e157971e0b07d749ea1eb72bc2783e5faa21fc4238e9c3d6d21",
+  "frozen_cohort_size": 249,
+  "cases_with_appended_source_work_this_checkpoint": 0,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "source_id": "SRC-MORGENSTERN2023-FORMS",
+  "bounded_quote_units_captured": 40,
+  "unique_source_scoped_objects": 34,
+  "source_appearances_added": 40,
+  "source_scoped_candidate_objects_added": 8,
+  "text_rows_by_type_language": {
+    "transliteration / Mandaic": 9,
+    "translation / Hebrew": 40,
+    "transcription / Jewish Babylonian Aramaic": 31
+  },
+  "separate_source_checks_added": 80,
+  "reading_characters_added": 1133,
+  "page_media_added": 44,
+  "publication_assessments_added": 34,
+  "scoped_document_assessments_added": 1,
+  "article_extraction": "partial; remaining quotations explicitly pending",
+  "printed_citation_transpositions_checked_against_original_abs1": 3,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 944,
+    "appearance_bearing_sources": 37,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-07B313309678",
+      "SRC-795E719C624E",
+      "SRC-8FA39ADCBF5F",
+      "SRC-D721A94FA3B2",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES"
+    ]
+  },
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Continue remaining Morgenstern2023 bowl quotes: sections3–5; section2 Louvre AO2629 lines6/14, HS3034 line5, extended BM91769 excerpt and unresolved Ford2011 Bowl1 reference. Keep comparative manuscripts and metal amulets excluded.",
+    "Resolve exact Moussaieff24 source-record duplication under Mike’s standing ruling using text/client corroboration and a separate dedupe manifest.",
+    "Inspect Saar2017 exact bowl passages and short review holdings; separately scope Miami chapter in the same journal.",
+    "Continue original held editions and frozen NLI digital/exhibition concordance investigation; no catalogue-silence negative findings."
+  ],
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-004",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "scope": "Bounded native forms/phrases and author Hebrew glosses, separately checked against actual article/crops; Hebrew-letter Mandaic is transliteration, never native-script recovery. Article extraction remains partial. Incorrect preliminary assignments/words kept in private draft artifacts only, excluded from corpus. Correct source attachments use verified ABS1 witness headings/lines, retaining reported number variants in evidence.",
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 40
+    },
+    {
+      "table": "appearances",
+      "added": 40
+    },
+    {
+      "table": "document_assessments",
+      "added": 1
+    },
+    {
+      "table": "identifiers",
+      "added": 8
+    },
+    {
+      "table": "media",
+      "added": 44
+    },
+    {
+      "table": "objects",
+      "added": 8
+    },
+    {
+      "table": "publication_assessments",
+      "added": 34
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 80
+    },
+    {
+      "table": "texts",
+      "added": 80
+    }
+  ],
+  "backup_path": "data/private/backups/before-morgenstern-forms-20261002T002328Z.sqlite3",
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0007_morgenstern_section2_quotes.json",
+      "sha256": "5476c9ab1016f147535b256e2fe9ec76bdad81928a439ff34f0906d2d3b5ed66"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/item_inventory.json",
+      "sha256": "5b049193c3af79a81e14809b1e68975b832af5f357983df14e719d39f59cf217"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/prepare.py",
+      "sha256": "fa217ae88468a088514057d837d5b20b97ff297147c1cc1dbb1c29389e1cf9a0"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/revise.py",
+      "sha256": "d63979049a20e67541578c90b251e3f3c6811886407bf233133569b4309e9f85"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/source_check.py",
+      "sha256": "a075e01a9777b49374495d7ac25eddd1518fbd4fef5df8561849c2c5a89e8b83"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/source_checks02.json",
+      "sha256": "0510926be4a2b69aa062f8b901e5e9f7933be84a163a70dccc148d4fbe057588"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/verify.py",
+      "sha256": "085372588a84fa1c0189c24ae472506fdb3251444cbec78172a51d870b80acd1"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/apply.py",
+      "sha256": "3fea45150db95d8a982253f76c3792d930c2bb4462223e46767d4df8a141b6d0"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/production-verification.json",
+      "sha256": "04ab3cfbed3022befe3e276d64dc81c2bc3ea263ab419119f3ee62251b7ab371"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/production-apply.json",
+      "sha256": "402e180bfb3c087a20eb715b982f84cf9f1437b23ffd81b3f481f9efaae0a573"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/production-replay.json",
+      "sha256": "363371be0d278da343857404372b9c402e1504eb4f1f25164d5f976e54169b6f"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/trial-verification.json",
+      "sha256": "e5e91aa25fcdeb156b376e2322d797fa0e66e3464e49f5548b50dfc13086e38d"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/trial-replay.json",
+      "sha256": "4c52b6242e532f61c4fd33fb97a8bd7cc340d9accba3faee193b81648442672d"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/proof_inventory_production.json",
+      "sha256": "13961d864d6bdc10ca08d8435a0dc030cefcc1b6014ddcf2be44924afba85fb1"
+    },
+    {
+      "path": "research/reviews/morgenstern2023_section2_quote_appearances_2026-10-01.jsonl",
+      "sha256": "6ac9b087cfa21aa5a8987239c3b4df46acae21d0809c8a95226c40c6e510dde8"
+    },
+    {
+      "path": "data/private/manifests/morgenstern2023_section2_quotes_2026-10-01.jsonl",
+      "sha256": "ead39368a5d533d58e5af571d03ae629cd6237851077114fbf36ef0fe76ed767"
+    },
+    {
+      "path": "data/private/manifests/morgenstern2023_section2_proofreading_2026-10-01_production.json",
+      "sha256": "758c28647da1567b580a58778ad7299d64f140963acd7a0ebaa21c29b9bee260"
+    },
+    {
+      "path": "research/reviews/morgenstern2023_section2_publication_references_2026-10-01.json",
+      "sha256": "2a6853304f7daf288cfea25b08ba617291e36f1f0a0eefe5b07134a4a0af1e24"
+    },
+    {
+      "path": "research/reviews/morgenstern2023_section2_capture_evidence_2026-10-01.json",
+      "sha256": "bb91a0b81b6dd20be29f78a80316db18d177f40a6372de88936b2b5bb15b00e7"
+    },
+    {
+      "path": "research/reviews/morgenstern2023_partial_extraction_assessment_2026-10-01.json",
+      "sha256": "9db271229ddbb2d8717e840014e97ba2ff9e326563e1a19f90a060b81f01b000"
+    },
+    {
+      "path": "research/receipts/morgenstern2023_section2_private_page_images_2026-10-01.json",
+      "sha256": "1a21eaaceb3066256ec33de67b501657c82f12383849350dd424fe7d4a64f802"
+    },
+    {
+      "path": "data/private/research-work/morgenstern2023-forms-2026-10-01/reader-verification.json",
+      "sha256": "7359f8840cbd74633918f99aefe5e49ddef6e35082db935b0ad4192b92e1e752"
+    }
+  ],
+  "validation": {
+    "copied_database_rehearsal": "pass",
+    "five_trial_and_production_manifest_replays_unchanged": true,
+    "all_preexisting_rows_identical": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "371 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1583,
+      "all_media_rows_present": 1267,
+      "local_image_rows": 907,
+      "new_text_hashes_match": 80,
+      "new_image_hashes_match": 44,
+      "all_source_capture_hashes_match": 70,
+      "source_registry_resolved": "34/34",
+      "scope": "Full private Mike projection; no public release or remote deployment."
+    }
+  }
+}
