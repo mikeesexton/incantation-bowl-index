@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "checkpoint": 41,
+  "created_at": "2026-10-02T20:05:39+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "69bd53e144f34eeebdd890d64fd11fd528fcf55e3932795c04a51525d070122e",
+  "corpus_after": "6b8caa0b8bf04b653457e45db60cff065f549a268cea78ff63261a06b9e203f3",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 25,
+  "frozen_unlinked_now": 224,
+  "new_frozen_case_attempts": 1,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 14,
+  "new_edition_text_rows": 13,
+  "new_comparative_commentary_rows": 1,
+  "comparative_blocks": 14,
+  "paired_table_rows": 19,
+  "new_proofreading_reviews": 14,
+  "source_copy_checks_completed": 14,
+  "existing_contents_revised": 0,
+  "new_objects": 2,
+  "new_appearances": 7,
+  "new_captures": 0,
+  "new_media": 22,
+  "new_local_image_derivatives": 2,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1276,
+  "checked_edition_text_rows": 1137,
+  "partial_edition_text_rows": 138,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 2003,
+  "total_media": 2017,
+  "total_local_images": 1189,
+  "total_source_captures": 87,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1237,
+    "appearance_bearing_sources": 52,
+    "registered_pdf_sources": 57
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/abudraham-commentary41-2026-10-02/campaign_case_progress_checkpoint41.json",
+    "sha256": "21a28dc071ab4ef330839b8b0a894c1cf2295389f35ed976c15257a86b8c9655"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/abudraham-commentary41-2026-10-02/held_pdf_inventory_checkpoint41.json",
+    "sha256": "767d513af18b4ed4ce0dc60a67cbf0f2ad0356ecf5e57cedc15498c61e243789"
+  },
+  "extraction_inventory": {
+    "path": "data/private/manifests/abudraham-commentary41-2026-10-02/production/extraction.json",
+    "sha256": "59231be88e1b74acaef62b25b2127b36035dbbb4750e6f3b0097dbc999eff872"
+  },
+  "frozen_native_roster": {
+    "path": "research/audits/original_script_progress_all_held_2026-10-01.json",
+    "sha256": "9cd8e89352a2fc2c3738d1ec1e53bd56b5a33ccafd32c519b8ddbceaaa04790b"
+  },
+  "acquisition_queue": {
+    "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+    "sha256": "52f4dcc8795634fbd2accb0e3b1d70f419c92253edf658fd80a555c43017d3c2"
+  },
+  "new_source_requests": 3,
+  "miri_notification": {
+    "path": "data/private/research-work/abudraham-commentary41-2026-10-02/miri-notification.json",
+    "sha256": "6da0323864306ba5e278f53cdeb3d9fc96a6eca9d57e082009f6d76759b1738e"
+  },
+  "scope": "Checkpoint 41 source-copy checks 13 bounded edition quotation rows across JTS F447, BM91767, BM91729, BM91751, article-local PC24, Moussaieff139 and Moussaieff6. Seven attributed appearances and two scoped candidate objects were added without merges. A separate comparative-commentary row checks 14 non-bowl blocks, including 19 paired amulet/manuscript table rows. Two NLI photograph details and 20 complete source-page media records retain source credits and uncertain photo chronology. Internal designation, caption-gloss and page-pointer discrepancies remain flagged; no unsupported object match or silently changed source report. F447 quotations are incomplete, Latin Mandaic quotations do not recover native script, and PC24 collection scope remains uncertain. All earlier texts and reviews remain identical; earlier source notes and document assessments remain retained. Three precise original-edition requests were sent to Miri after fresh route checks: Ford 2002, Morgenstern 2007 and Gordon 1941 continued part. Abudraham acquisition is resolved, while the complete article holding remains a partial source audit. One frozen NLI case history extended; all 249 histories retained, 25 linked / 224 unlinked / zero complete. Edition inventory: 1,276 rows, with 1,137 checked, 138 partial and one unreviewed; 2,003 total texts. Held PDFs: 57 sources, 52 appearance-bearing sources and 1,237 appearances. The historical 99-appearance roster retains 45 native gaps. Goal active; no reset used.",
+  "next_actions": [
+    "Obtain the cited original editions, including Gordon1941 F447, Ford2002 BM91715 and Morgenstern2007 BM91767; excerpt copying does not verify full original readings.",
+    "Compare earlier photographs and resolve their chronology when evidence is available; figures5/6 are individual photo details with unverified dates.",
+    "Continue the other supplied holdings and 224 remaining frozen publication-reference gaps."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "69bd53e144f34eeebdd890d64fd11fd528fcf55e3932795c04a51525d070122e",
+    "corpus_after": "6b8caa0b8bf04b653457e45db60cff065f549a268cea78ff63261a06b9e203f3",
+    "changes": {
+      "appearance_object_links": 7,
+      "appearances": 7,
+      "document_assessments": 1,
+      "identifiers": 7,
+      "media": 22,
+      "objects": 2,
+      "publication_assessments": 7,
+      "source_corrections": 1,
+      "sources": {
+        "current_rows_updated": 1,
+        "original_retained": true
+      },
+      "text_proofreading_reviews": 14,
+      "texts": 14
+    },
+    "all_preexisting_other_rows_identical": true,
+    "all_prior_texts_and_reviews_identical": true,
+    "source_before_snapshot_retained": true,
+    "source_capture_hashes_verified": 87,
+    "verified_incoming_copy": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_texts": 14,
+    "new_source_copy_checks": 14,
+    "edition_inventory": {
+      "reading_text_checked": 1137,
+      "unreviewed": 1,
+      "partial_review": 138
+    },
+    "total_texts": 2003,
+    "total_media": 2017,
+    "objects": 2171,
+    "appearances": 2735,
+    "current_source_holding": {
+      "extent": "complete",
+      "extraction": "partial",
+      "native_captures": 4,
+      "bounded_bowl_quote_rows": 13,
+      "comparative_commentary_rows": 1
+    },
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2003,
+      "all_text_editorial_statuses_verified": 2003,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2017,
+      "all_local_image_hashes_verified": 1189,
+      "all_capture_hashes_assignments_verified": 87,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 1,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "source_before_snapshot_verified": true,
+    "all_fourteen_reviews_replay_unchanged": true,
+    "rehearsal_verified": true
+  },
+  "protected_payloads": "All source PDFs, readings, pixels, protected manifests, subscriber response headers/cookies and full case histories remain private outside Git. Content-free receipt is not release clearance.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0041_abudraham_commentary.json",
+      "sha256": "c579b2545def339f723614459d63313a5c159c9ad3c37000752dda1f083785a7"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/campaign_case_progress_checkpoint41.json",
+      "sha256": "21a28dc071ab4ef330839b8b0a894c1cf2295389f35ed976c15257a86b8c9655"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/held_pdf_inventory_checkpoint41.json",
+      "sha256": "767d513af18b4ed4ce0dc60a67cbf0f2ad0356ecf5e57cedc15498c61e243789"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/metadata.json",
+      "sha256": "250007d04a96f8754981efbe081cd4818199c7b5f87416e7b7d7f57f78ed4f26"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/bowl-quotes-draft.json",
+      "sha256": "47196db16d43fa2286b99bd3929f8e454f964dace83cd31a6c3190181343ac69"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/comparative-quotes-draft.json",
+      "sha256": "7639c95e04d3c717424dc3c5ec8d4b4b2480dd1cb65b37635656f9e91969cecd"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/comparative-tables-draft.json",
+      "sha256": "d7c7e4296a652a356b01b75ce0255aa26b3fd6b7e59703bb307e0377aae3ebdb"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/figure-derivatives.json",
+      "sha256": "2c4212351cce03e92a56525c60ccd74085197aa1cd9af9ec1e9a1d55fd8c62a6"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/access-route-inventory.json",
+      "sha256": "4b71cba1297ac52f32c9aa725002014834674209aad22c477fa4bae94b75d335"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/miri-notification.json",
+      "sha256": "6da0323864306ba5e278f53cdeb3d9fc96a6eca9d57e082009f6d76759b1738e"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/trial-apply.json",
+      "sha256": "0799647c0b7844d7ccb3fe48f0412f515a7ffaf96def504c326b8e6271144930"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/trial-replay.json",
+      "sha256": "3635c3bb15f38dd7c2a9263fa2b0994a16ce94a50cd4a5f2112790e82b81540c"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/trial-verification.json",
+      "sha256": "4933bca1b31dfa186e13cb5c3d8c8c4bb887df5170ff69c71872895aae6ec509"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/trial-proofreading-prepare.json",
+      "sha256": "375f4d76062022c939c322367ca2049d3baecc208802307e9c9bf2b9760554e1"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/trial-proofreading-replay.json",
+      "sha256": "cdd78de257298acaa7e3572b44d9cc03b09ab1dba5a017c89d2bb9431ccd20c3"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/production-apply.json",
+      "sha256": "c27713e531c7a47f29656278467891147dfbd210b2f445af15c1a71806c521fe"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/production-replay.json",
+      "sha256": "3b9a9d6fee6b985e9e5ec61520f488779664739dac50cac6c273a5d8d97008d6"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/production-verification.json",
+      "sha256": "8d146c84ccaba1c8e03f3257460b5e3443b9cb6cca6f32700b2aa8c40a8ff60c"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/production-proofreading-prepare.json",
+      "sha256": "3addb831630930c298357b0786558dd755073b5a5dcd5ddeed66a22d5582aeb3"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/production-proofreading-replay.json",
+      "sha256": "52865db2c6a2124f59d9cae0720f45be885fc364a7d19941c0ba2d4394f2442e"
+    },
+    {
+      "path": "data/private/manifests/abudraham-commentary41-2026-10-02/production/SRC-CA4B122C5F4D-reading-review.json",
+      "sha256": "96275160797e4c8a9d6cf9094c70eb093d9334d71f3fbe094725a9b47dfd1307"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/reader-verification.json",
+      "sha256": "2b62c4c0c514a40dc71fa2e0642ae7391fe1e5635d22e57af74b69ab780c9539"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/reader-build-final.log",
+      "sha256": "d1a9677afb430bfb44b024f834952719df32d7afd7b14493fb8f12fe00a65a54"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/tests-final.log",
+      "sha256": "127789e992b78dc136999f3771d506d67ba54fb5c2ffd4b577a324ab60941c8b"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/node-tests-final.log",
+      "sha256": "28f442081c54812b5158d674716fd29f249c49dbdec6d5bc5f0006642798b6e2"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/prepare.py",
+      "sha256": "81ccd60ac6b0d14282732f32ff0b4e614021f0f12730f59cbe0a44fb599ede79"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/apply.py",
+      "sha256": "b96a579da71432486859b8f6fbbdc516169072e7b07a05c792fb31987e37445c"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/record_checkpoint.py",
+      "sha256": "5ca99f3614395706c6d09a362fd250f623c3427ff145673398dc712b99154e56"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/verify.py",
+      "sha256": "e3788581eaba7b3fe2d5e8503b05901338e6db17686bfb823f238fb771e34bbd"
+    },
+    {
+      "path": "data/private/research-work/abudraham-commentary41-2026-10-02/verify_reader.py",
+      "sha256": "9bb866fd0702233c5ba3a9596ecbf2afa1aedec825cdd40fee0458408586ed4e"
+    }
+  ]
+}

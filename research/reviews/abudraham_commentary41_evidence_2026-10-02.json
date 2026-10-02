@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-CA4B122C5F4D",
+  "capture_id": "CAP-A9414FD10CC0",
+  "source_sha256": "8d3f33530391bca2f3f23faf7ec7b700fdcbb52cf40b842a64d4203ec2cbd977",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T19:37:10+00:00",
+  "inspected_printed_pages": [
+    111,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133
+  ],
+  "edition_rows": 13,
+  "comparative_commentary_rows": 1,
+  "non_bowl_comparative_blocks": 14,
+  "paired_table_rows": 19,
+  "scoped_bowl_witnesses": 7,
+  "new_source_scoped_candidates": 2,
+  "source_internal_issues": [
+    "p124 F449 differs from p111 F447 heading and other references; retained without creating another object.",
+    "p128 B16014 differs from B16041 central witness designation; retained as a pointer issue.",
+    "p128 Figure5/6 English noun glosses oppose same-page discussion; captions retained literally, not normalized as fact.",
+    "p109 fn15 points B2923 to Montgomery pp121–122; actual edition locator still requires direct held-source checking."
+  ],
+  "m6_context": {
+    "source_id": "SRC-73C44B143A9D",
+    "capture_id": "CAP-0D9545A92AFD",
+    "source_sha256": "44e0ae8bc7ed4d20aa0827ed038a99ba87d23e267fbb99221cb61eda4a3d72a0",
+    "printed_page": 160,
+    "pdf_page": 169,
+    "basis": "Exact held Waller table M6=Shaked1995 pp211–213 inspected; Abudraham’s explicit Moussaieff6 cites overlapping same editionp213."
+  },
+  "limits": "Bounded quoted text check only. Latin Mandaic remains transliteration; non-bowl manuscript/amulet texts remain commentary. Unknown PC24 collection scope and F447 original/photograph remain follow-ups. No uncertain merge, source reading adjudication or reuse clearance."
+}

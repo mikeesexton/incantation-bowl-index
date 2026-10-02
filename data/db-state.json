@@ -1,8 +1,7 @@
 {
-  "corpus_digest": "69bd53e144f34eeebdd890d64fd11fd528fcf55e3932795c04a51525d070122e",
+  "corpus_digest": "6b8caa0b8bf04b653457e45db60cff065f549a268cea78ff63261a06b9e203f3",
   "migrations": 21,
-  "note": "Checkpoint40: four own Abudraham native witnesses source-copy checked, source note snapshot retained; all prior text/review rows unchanged; complete private reader verified.",
-  "recorded_at": "2026-10-02T19:34:31+00:00",
+  "recorded_at": "2026-10-02T20:06:45+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +10,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "1d050b1239cae80a6e13426d81ec30792dd49ddbc1dd6fffc26c79d778e1a58c",
-      "rows": 2728
+      "digest": "7f6fc1b5958d11d601e53401ce37a57340d8a6eade8028877c746d104ccc596a",
+      "rows": 2735
     },
     "appearances": {
-      "digest": "a33d4eeab1704ea87aabba1beeee3bce428510d282c6197d2bae73a7e9e21008",
-      "rows": 2728
+      "digest": "0602a76d69cb88a564bfcc90725fe93a5ad1e715bcf0ac0584968588fd8be32c",
+      "rows": 2735
     },
     "capture_source_corrections": {
       "digest": "dd3784169b3420d3582959e5c7c09a2ca359893a6cf73bed625ce39ed149dd61",
@@ -63,16 +62,16 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "dc774187f2185d807d7daa6f31f59f5ceeccd94f8056475c1de43b329f2b2f0d",
-      "rows": 109
+      "digest": "d3ca7e3e50c63ce7672816736fc3998b179d6854e557fb017d434c475dc8143d",
+      "rows": 110
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
       "rows": 215
     },
     "identifiers": {
-      "digest": "da171ffced232c13bd8232ba588655e97b5820745a548feaeacf2f9452cd53b8",
-      "rows": 5141
+      "digest": "d448bcad0459c99d146e818caf55047931b65b692961e9446cda5a0e7644f482",
+      "rows": 5148
     },
     "leads": {
       "digest": "1b2d7c7951570fd1c880ab875e08f05e4b77c16fded437054f15fb8d05a3433e",
@@ -83,8 +82,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "f3332837154b3b55e3c78cfb3abb000786b37392909434f1da5435fff69e5e62",
-      "rows": 1995
+      "digest": "03ffef6cd25d3d37432e0cf6314a5643a44a01e7025fa7eac9e37573e3a8a7f6",
+      "rows": 2017
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -107,12 +106,12 @@
       "rows": 1
     },
     "objects": {
-      "digest": "2cdb9352a8849f6b2d5dc2ab6a93a90b76d353244261c3ffa079b7c78bf86728",
-      "rows": 2169
+      "digest": "7f1ec89f92f2f6a38c952768b66dbde2cf576f248a162409c47f6bcb599693e4",
+      "rows": 2171
     },
     "publication_assessments": {
-      "digest": "3b0c816b7d529a5563a868cdebb1a7ee52cd9deca84e1455da899cc727147c9c",
-      "rows": 553
+      "digest": "6efbba5ab5baf3657ec69cd7baa63cc54f3291e9488f1d17c837953695cfd685",
+      "rows": 560
     },
     "publication_registry": {
       "digest": "d0acdbe0a28e823e2fcb8076da1036f39e6e037158bce27605d21be30c54d603",
@@ -135,15 +134,15 @@
       "rows": 22
     },
     "source_corrections": {
-      "digest": "aa129f4bd6743389c1f5ac3612b5552a92c8dd08006facb681c2bc3eeaf869b4",
-      "rows": 75
+      "digest": "8367779ed60c103509ee98609cbedf9a6f33a7587d15ad0eb3dcaa80152e553d",
+      "rows": 76
     },
     "source_scope_reviews": {
       "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2",
       "rows": 119
     },
     "sources": {
-      "digest": "5e5703ce17cc577e36f995a9cfc60315d15d49ddd7864f9a4f6cda8101fd9e00",
+      "digest": "3205898b7eab1193d446ac6ab1a1d03bc75b313fd231a2868c91cfa9c106b589",
       "rows": 967
     },
     "text_metadata_corrections": {
@@ -151,16 +150,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "e1923959ba6d405ed351507f872f177971dcfa35b46adc6158b7c6f06a5e1c65",
-      "rows": 1401
+      "digest": "3ce4d1b3748418f35deb9b72ce2621237f163c4d98e516fc139b04bb5e122411",
+      "rows": 1415
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "be0734ff233dd66e7cf01c8be544c23c27c5da25db348e90b109090b4a2e9130",
-      "rows": 1989
+      "digest": "a5b8317645dbf7c430ae2b0b037fa41351475027a57a2f7fb39115f79efdd3ba",
+      "rows": 2003
     }
   }
 }

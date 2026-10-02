@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T19:32:56+00:00",
+  "updated_at": "2026-10-02T20:03:15+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -92,7 +92,7 @@
       "sha256": "8d3f33530391bca2f3f23faf7ec7b700fdcbb52cf40b842a64d4203ec2cbd977",
       "status": "Researcher-supplied complete local document held",
       "resolved_at": "2026-10-02T19:04:26+00:00",
-      "reading_audit": "Partial source audit: all four own provided native columns plus complete shared English and bounded Penn variants source-copy checked; commentary/reference/earlier-image audit remains open.",
+      "reading_audit": "Partial source audit: four complete provided native synoptic columns, shared English, bounded Penn variants and 13 additional bowl quotation rows checked; 14 non-bowl comparative blocks including 19 paired table rows checked separately. Two individual photo details retained. Cited original editions, earlier photographs and remaining lexical/prose audit remain open.",
       "prior_acquisition_requirement": {
         "source_id": "SRC-CA4B122C5F4D",
         "citation": "Abudraham, Ohad. ‘Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels.’ JSS 71, no. 1 (2026): 105–134.",
@@ -206,12 +206,45 @@
       "requirement": "Optional final typeset article for Figure1/Table1 placement. The complete 26-page author manuscript is held; this is a version/layout follow-up, not an entirely unavailable article.",
       "priority": 3,
       "status": "version/layoutfollow-up; manuscriptacquisitionresolved"
+    },
+    {
+      "source_id": "SRC-FORD2002-JANES",
+      "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+      "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+      "priority": 2,
+      "status": "unheld original needed",
+      "checked_at": "2026-10-02T20:03:15+00:00",
+      "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+      "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+      "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+    },
+    {
+      "source_id": "SRC-1A922C3F041F",
+      "citation": "Morgenstern, Matthew. “The Jewish Babylonian Aramaic Magic Bowl BM 91767 Reconsidered.” Le Muséon 120/1–2 (2007): 5–27. DOI 10.2143/MUS.120.1.2020266.",
+      "requirement": "Complete original article, especially BM91767 native lines 2–4 and English on pp. 11–12; the newly held Abudraham article supplies only a bounded quotation.",
+      "priority": 2,
+      "status": "unheld original needed",
+      "checked_at": "2026-10-02T20:03:15+00:00",
+      "metadata_url": "https://poj.peeters-leuven.be/content.php?id=2020266&url=article",
+      "attempted_pdf_url": "https://poj.peeters-leuven.be/content.php?download=yes&id=2020266&url=article",
+      "previous_access_evidence": "Robots-respecting download returned HTTP200 text/html, 22,312 bytes: subscriber/login page, not article PDF. Response retained privately; no subscriber access or purchase attempted."
+    },
+    {
+      "source_id": "SRC-E29AEC3E5CF4",
+      "citation": "Gordon, Cyrus H. “Aramaic Incantation Bowls (Continued).” Orientalia 10 (1941): 272–284.",
+      "requirement": "This specific continued part, particularly the original F447 edition on pp. 273–275, including original native text and photograph. Existing source ID groups the three 1941 installments; this request is scoped to pp. 272–284.",
+      "priority": 2,
+      "status": "unheld original needed",
+      "checked_at": "2026-10-02T20:03:15+00:00",
+      "metadata_url": "https://www.jstor.org/stable/43582660",
+      "toc_url": "https://www.jstor.org/stable/i40142559",
+      "previous_access_evidence": "Primary issue contents identify the continued article and pp. 272–284. Automated stable-entry opening supplied no article text. Full text not obtained; no paywall or robots-denial determination asserted."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
   "current_reading_queue": {
-    "path": "data/private/manifests/abudraham-native40-2026-10-02/production/extraction.json",
-    "sha256": "0ccd4a6463891c12413861c8beed0f2188acd3fb95ec10c4cabbce71decbaeaf"
+    "path": "data/private/manifests/abudraham-commentary41-2026-10-02/production/extraction.json",
+    "sha256": "59231be88e1b74acaef62b25b2127b36035dbbb4750e6f3b0097dbc999eff872"
   },
   "fulltextworking_inventory": {
     "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
@@ -219,7 +252,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/abudraham-native40-2026-10-02/acquisition-queue-before.json",
-    "sha256": "c42168bef6ada21ad68b3afd39a7a09e5a19a39f2e0a1eee2185651fd25b1a5f"
-  }
+    "path": "data/private/research-work/abudraham-commentary41-2026-10-02/acquisition-queue-before.json",
+    "sha256": "8f58ba229ecfba57e6a842788e8c316af924cd7dd47cabe11ecd2851bb7d9645"
+  },
+  "new_access_requests_checkpoint": 41
 }
