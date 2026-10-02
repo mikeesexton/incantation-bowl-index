@@ -18,7 +18,7 @@ CORE_COVERAGE = {
         "geography", "geographic_association", "associated_find",
     },
     "dating": {"dating", "period", "culture"},
-    "dimensions": {"dimensions"},
+    "dimensions": {"dimensions", "reported_dimensions"},
     "material": {"material"},
     "language": {
         "inscription_language", "script_or_language", "catalogue_language_codes",
@@ -33,8 +33,8 @@ CORE_COVERAGE = {
 # and never compared. Roles are kept apart on purpose: a client is not an author,
 # and collapsing them is the error META-007 exists to prevent.
 CONTENT_COVERAGE = {
-    "condition": {"condition"},
-    "vessel_form": {"vessel_form", "object_form"},
+    "condition": {"condition", "reported_physical_condition", "reported_writing_condition"},
+    "vessel_form": {"vessel_form", "object_form", "reported_bowl_form", "reported_fragment_type"},
     "text_form": {"line_count", "inscription_extent", "text_layout", "inscription_placement"},
     "text_description": {
         "text_content", "text_feature", "textual_feature", "text_characterization",
@@ -111,6 +111,7 @@ def reading_score(row):
 # is neither grouped nor listed here is a gap, not a default: see
 # `unclassified_claim_fields` and tests/test_field_model.py.
 EXCLUDED_CLAIM_FIELDS = {
+    "named_person": "A person named in a source without an assigned client, beneficiary, scribe or practitioner role; retained privately without inventing one.",
     "publication_pointer_report": "A provisional citation route reported by another source, not an independently verified publication link or competing descriptive assertion.",
     "former_collection_designation_report": "A source-reported former-designation bridge retained for identity review, not a trusted identifier or competing descriptive assertion.",
     "catalogue_title": "Title of the source appearance, already represented on the source and appearance records rather than a competing object assertion.",

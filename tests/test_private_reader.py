@@ -185,6 +185,44 @@ class PrivateReaderTests(unittest.TestCase):
         self.assertEqual(row["value"], "Possibly Aramaic")
         self.assertEqual(row["recorded_value"], original)
 
+    def test_whole_pages_and_catalogue_extracts_are_separate_from_readable_commentary(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        declarations = [
+            ("Neighboring bowls and damaged letters", "Working full source-page OCR includes neighboring material where pages are shared.", "source_ocr"),
+            ("Whole edition and notes", "Full born-digital section working extraction with commentary and notes; needs proofing.", "source_ocr"),
+            ("Dimensions and catalogue fields", "Born-digital working extraction; page headers need proofing.", "catalogue_extract"),
+            ("A readable account", "Project-authored summary checked against the notes.", "summary"),
+        ]
+        add_candidate(self.conn, {"source_id": source_id, "appearance": {"locator": "no. 1"},
+            "texts": [{"text_type": "summary", "content": value, "notes": notes}
+                      for value, notes, _ in declarations]})
+        self.conn.commit()
+        rows = {row["content"]: row for row in PrivateResearchProjection(self.conn).table("texts")}
+        for value, _, kind in declarations:
+            self.assertEqual(rows[value]["text_type"], kind)
+            self.assertEqual(self.conn.execute("SELECT text_type FROM texts WHERE id=?", (rows[value]["id"],)).fetchone()[0], "summary")
+
+    def test_reported_physical_fields_and_unassigned_names_reach_their_own_sections(self):
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        fields = [("reported_dimensions", "15.5 × 6.9 cm.", "dimensions"),
+                  ("reported_physical_condition", "Almost complete.", "condition"),
+                  ("reported_writing_condition", "Nearly illegible.", "condition"),
+                  ("reported_bowl_form", "Round base.", "vessel_form"),
+                  ("named_person", "Immā daughter of Bat[…].", "named_person"),
+                  ("handwriting", "Crude hand; letters uncertain.", "practitioner")]
+        add_candidate(self.conn, {"source_id": source_id, "appearance": {"locator": "no. 1"},
+            "claims": [{"field": field, "value_text": value, "locator": "p. 100"} for field, value, _ in fields]})
+        self.conn.commit()
+        rows = {row["field"]: row for row in PrivateResearchProjection(self.conn).table("facts")}
+        for field, value, group in fields:
+            self.assertEqual(rows[field]["field_group"], group)
+            self.assertEqual(rows[field]["recorded_value"], value)
+            self.assertEqual(rows[field]["locator"], "p. 100")
+        self.assertEqual(rows["reported_dimensions"]["value"], "Measurements (axes unspecified) 15.5 × 6.9 cm")
+        released = {row["field"] for row in Projection(self.conn).table("facts")}
+        self.assertNotIn("named_person", released)
+        self.assertNotIn("handwriting", released)
+
     def test_local_reader_links_registered_capture_without_exposing_its_path(self):
         source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
         archive = Path(self.temp.name) / "archive"

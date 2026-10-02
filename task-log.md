@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Address batch 3 reader flags
+
+**Claimed:** OPS — batch 3 commentary facts, collection-designation deduplication and source/commentary presentation
+**Corpus:** changed (seven source-located claims, one project-authored commentary, six retained locator repairs and two renewed reading checks) — state digest `3e0ae7ef5296`
+**Tests:** 393 Python and 57 Node passed; full private build 7/7 checks; all 1,874 pre-existing text contents preserved; integrity/foreign keys pass; candidate/proofreading production retries unchanged; metadata rehearsal replay six unchanged; whole-corpus rendering 1,805 identities, zero contract failures.
+
+- Mike authorized addressing his batch 3 flags after pausing the research Goal. Opening tree clean and recorded corpus matched `6753c35dda6c`. Penn B6349 required no correction. Exposed existing reported Berlin dimensions, bowl/writing condition and form through the shared field model; kept writing condition labelled separately, unlabelled measurement axes unspecified, and n/a placeholders out of displayed facts. Catalogue dialect now fills the heading while retaining explicit alternatives, source doubt and higher-precedence evidence.
+- Visually checked held Berlin printed82–83/PDF96–97, printed100/PDF114 and printed156/PDF170. Added seven exact-source claims for VA2450 names (without invented client role), acquisition history and absent visible drawings; VA.Bab2826 excavation context, reported hand/uncertain letters, pre-firing incision and central circle. Source-specific names and hand descriptions are privately displayed without upgrading client/producer attribution, script/religion or identity decisions. Protected wording/manifests remain ignored.
+- Visually checked Gordon K printed92–93/PDF10–11. Added a short attributed project summary of Gordon's comparisons and tentative readings; moved explicitly declared whole-page/whole-section OCR to research details across applicable holdings, keeping every stored byte. Structured Berlin catalogue extracts likewise remain accessible in research details rather than duplicating displayed facts as commentary. Extraction page markers disappear in rendered commentary, translations and extracts; scholarly restoration/reference brackets remain.
+- Fixed six exact record locators through the evidence-bound metadata workflow, retaining originals. Berlin extractor's printed-page offset corrected for future imports. Renewed Gordon's unchanged English reading check and unchanged partial native check after locator repair; native restoration boundary/dots still need complete collation. No specialist certification, public approval or invented translation.
+- Within an already linked identity, VA2422 spacing/dot variants display once with assigning bodies retained. Distinct VA/Bab namespaces and publication keys remain distinct. Source rows with exactly identical named-text/page bounds share one locator while retaining transcription/translation/commentary/extract roles; separate pages, line/plate scopes and other sources remain separate.
+- Backed up first; ten latest backups retained. Roadmap, enrichment/campaign/conflict/proofreading reports, private export and full Mike build refreshed. Audit progress/follow-ups were not changed or resolved on Mike's behalf. Receipts: `research/receipts/audit_batch3_reader_corrections_2026-10-02.json` and content-free private inventory. State written; local commit only; no push, deployment, new acquisition, outbound contact or Goal control changes.
+- Live visual verification remains pending. Existing verified localhost reader process was stopped for an interactive reload; its restart was blocked by automatic approval review, which applied the earlier unattended-reminder restriction. Explicit restart approval requested in this chat; do not work around the rejection. Reader currently stopped. Next restore http://127.0.0.1:8765/ once approved, verify the four corrected pages visually, and report any remaining display issue.
+
 ## 2026-10-02 — Codex — NLI publication and former-designation routes, checkpoint26
 
 **Claimed:** TEXT-001

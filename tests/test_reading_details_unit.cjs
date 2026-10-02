@@ -14,9 +14,52 @@ vm.runInContext(`
   ${grouping}
   ${identifiers}
   ${source.slice(source.indexOf("function sourcesSection"), source.indexOf("function identifierRank"))}
-  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems};
+  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifierDetails, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems};
 `, context);
-const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems} = context.T;
+const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifierDetails, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems} = context.T;
+
+test("Berlin designation spelling variants display once with all assigning bodies", () => {
+  const rows = [{scheme: "collection designation", value: "VA.2422"},
+    {scheme: "collection designation", value: "VA 2422", assigning_body: "Old museum"},
+    {scheme: "collection designation", value: "VA 2422", assigning_body: "Another source"},
+    {scheme: "collection designation", value: "VA.Bab.2422"}];
+  const html = identifierDetails(rows);
+  assert.equal((html.match(/collection designation/g) || []).length, 2);
+  assert.match(html, /Old museum; Another source/);
+  assert.match(html, /VA\.Bab\.2422/);
+  const publications = identifierDetails([
+    {scheme: "publication object key", value: "Edition A::6"},
+    {scheme: "publication object key", value: "Edition B::6"}]);
+  assert.match(publications, /Edition A/);
+  assert.match(publications, /Edition B/);
+});
+
+test("identical source pages appear once while witness types and different ranges survive", () => {
+  data.factsBy.ID = []; data.mediaBy.ID = []; data.editionsBy.ID = [];
+  data.textsBy.ID = [
+    {source_id: "SRC", access_locator: "Text K — transcription; printed p. 92; PDF p. 10"},
+    {source_id: "SRC", access_locator: "Text K — translation; printed p. 92; PDF p. 10"},
+    {source_id: "SRC", access_locator: "Text K — source extract; printed pp. 92–93; PDF pp. 10–11"},
+    {source_id: "SRC", access_locator: "Text K — commentary; printed pp. 92–93; PDF pp. 10–11"},
+    {source_id: "OTHER", access_locator: "Text K — translation; printed p. 92; PDF p. 10"},
+  ];
+  const html = sourcesSection("ID");
+  assert.equal((html.match(/printed p\. 92/g) || []).length, 2);
+  assert.equal((html.match(/printed pp\. 92–93/g) || []).length, 1);
+  assert.match(html, /transcription; translation/);
+  assert.match(html, /source extract; commentary/);
+});
+
+test("writing condition stays distinguishable and placeholder forms disappear", () => {
+  data.factsBy.ID = [
+    {field_group: "condition", field: "reported_physical_condition", value: "Small fragment."},
+    {field_group: "condition", field: "reported_writing_condition", value: "Legible."},
+    {field_group: "vessel_form", field: "reported_fragment_type", value: "n/ a."},
+  ];
+  assert.match(factItems("ID", "condition"), /Writing: Legible/);
+  assert.match(factItems("ID", "condition"), /Small fragment/);
+  assert.equal(groupedFacts("ID", "vessel_form").length, 0);
+});
 
 test("equivalent date and measurement wording becomes one display value", () => {
   data.factsBy.ID = [

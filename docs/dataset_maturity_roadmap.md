@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-02T13:53:41+00:00`
+Generated: `2026-10-02T14:08:10+00:00`
 
 ## Portfolio status
 
@@ -107,10 +107,10 @@ Current evidence: **224 scholarship works indexed; 48 with a source-linked held 
 | Source documents assessed complete | 56 |
 | Source documents with object-level extraction | 54 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 433 |
-| Triaged claim-field differences | 584/867 |
+| Identities triggering raw claim-difference flags | 533 |
+| Triaged claim-field differences | 584/1186 |
 | Compatible differences | 568 |
-| Review required (missing or no longer valid) | 283 |
+| Review required (missing or no longer valid) | 602 |
 | Existing reviews requiring revalidation | 48 |
 | Substantive conflict instances | 16 across 14 identities |
 | All identities with a publication reference | 1055/1805 (58.4%) |
@@ -138,9 +138,9 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Field | Identities | Coverage |
 |---|---:|---:|
 | Location | 1288 | 71.4% |
-| Provenance | 373 | 20.7% |
+| Provenance | 375 | 20.8% |
 | Dating | 484 | 26.8% |
-| Dimensions | 515 | 28.5% |
+| Dimensions | 670 | 37.1% |
 | Material | 410 | 22.7% |
 | Language | 1029 | 57.0% |
 | Script | 94 | 5.2% |
@@ -155,17 +155,17 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 | Facet | Identities | Coverage |
 |---|---:|---:|
 | Publication | 566 | 31.4% |
+| Condition | 314 | 17.4% |
 | Client | 225 | 12.5% |
+| Vessel Form | 174 | 9.6% |
 | Biblical Intertexts | 171 | 9.5% |
-| Condition | 145 | 8.0% |
 | Ritual | 122 | 6.8% |
 | Text Description | 93 | 5.2% |
 | Text Form | 45 | 2.5% |
-| Visual | 30 | 1.7% |
+| Visual | 32 | 1.8% |
 | Practitioner | 29 | 1.6% |
 | Parallels | 16 | 0.9% |
 | Authenticity Assessment | 4 | 0.2% |
-| Vessel Form | 4 | 0.2% |
 | Target | 3 | 0.2% |
 
 ## Maturity scale
@@ -531,7 +531,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `283`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `602`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have an evidence-backed publication disposition; catalogue silence does not qualify. This intermediate milestone does not certify comprehensive coverage. — current `78.7%`; target `>= 80.0%`.
 - [x] At least 50% of probable/confirmed identities retain an actual publication link; negative findings cannot dominate the disposition milestone. — current `78.7%`; target `>= 50.0%`.

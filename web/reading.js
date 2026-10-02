@@ -309,15 +309,17 @@
   function translationContent(content) {
     // These are extraction locators, not supplied words or restorations.
     // Keep them in Sources, outside the reading text.
-    return String(content || "").replace(/\s*\[PDF pages?\s+\d+(?:[–-]\d+)?;\s*printed pp?\.\s*\d+(?:[–-]\d+)?\]\s*/gi, " ").trim();
+    return String(content || "").replace(/\s*\[PDF (?:pages?|pp?\.)\s+\d+(?:\s*(?:[–-]|,)\s*\d+)*;\s*printed pp?\.\s*\d+(?:\s*(?:[–-]|,)\s*\d+)*\]\s*/gi, " ").trim();
   }
 
   function sourceExtractions(rows) {
     const ocr = rows.filter(item => item.text_type === "source_ocr");
-    if (!ocr.length) return "";
-    return `<details class="entry-source-ocr"><summary>Uncorrected source OCR</summary>
+    const catalogue = rows.filter(item => item.text_type === "catalogue_extract");
+    return `${catalogue.length ? `<details class="entry-catalogue-extract"><summary>Catalogue extract</summary>
+      ${catalogue.map(item => `<blockquote>${esc(translationContent(item.content))}</blockquote>${textCredit(item)}`).join("")}</details>` : ""}
+      ${ocr.length ? `<details class="entry-source-ocr"><summary>Uncorrected source OCR</summary>
       <p class="entry-note">Uncorrected OCR; script may be garbled.</p>
-      ${ocr.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("")}</details>`;
+      ${ocr.map(item => `<blockquote>${esc(translationContent(item.content))}</blockquote>${textCredit(item)}`).join("")}</details>` : ""}`;
   }
 
   function originalText(item) {
@@ -357,7 +359,7 @@
       && /unintelligible/i.test(item.content || "")
       ? "Translation covers the opening; later passage reportedly unintelligible." : item.content;
     const other = rows.filter(item => item.text_type !== "translation"
-      && item.text_type !== "summary" && item.text_type !== "source_ocr" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
+      && item.text_type !== "summary" && item.text_type !== "source_ocr" && item.text_type !== "catalogue_extract" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
     const hasReading = translations.length || originals.length || facsimiles.length || readingNotes.length;
     const sections = hasReading ? [`<section class="entry-block entry-text"><h2>What it says</h2>
       ${english.map(translation).join("")}
@@ -367,7 +369,7 @@
         ${facsimiles.length ? facsimiles.map(originalPage).join("") : originals.map(originalText).join("")}
       </details>` : ""}</section>`] : [];
     if (summaries.length) {
-      const body = summaries.map(item => `<blockquote>${esc(item.content)}</blockquote>${textCredit(item)}`).join("");
+      const body = summaries.map(item => `<blockquote>${esc(translationContent(item.content))}</blockquote>${textCredit(item)}`).join("");
       sections.push(`<details class="entry-block entry-summary"><summary>Commentary</summary>${body}</details>`);
     }
     sections.push(...other.map(item => `<section class="entry-block entry-text">
@@ -677,13 +679,15 @@
       const measurement = measurementValue(row.value);
       if (measurement) return measurement;
     }
-    const display = tidy(row.value).replace(/^\["|"\]$/g, "").replace(/","/g, ", ");
+    const prefixes = {reported_writing_condition: "Writing: ", reported_fragment_type: "Fragment: "};
+    const display = (prefixes[row.field] || "") + tidy(row.value).replace(/^\["|"\]$/g, "").replace(/","/g, ", ");
     return {key: `text:${display.toLowerCase()}`, display};
   }
 
   function groupedFacts(id, group) {
     const grouped = new Map();
     factsOf(id, group).forEach(row => {
+      if (/^(?:n\s*\/\s*a\.?|\?|unknown|not recorded)$/i.test(tidy(row.value))) return;
       const presentation = factPresentation(row, group);
       if (!grouped.has(presentation.key)) grouped.set(presentation.key, {
         ...presentation, reports: [], variants: new Set(), approximate: false,
@@ -754,7 +758,7 @@
   }
 
   function factList(id, group, heading, showVariants = false) {
-    if (!factsOf(id, group).length) return "";
+    if (!groupedFacts(id, group).length) return "";
     return `<section class="entry-block"><h2>${esc(heading)}</h2><ul class="fact-list">${factItems(id, group, showVariants)}</ul></section>`;
   }
 
@@ -808,6 +812,20 @@
     }).join("")}</ul></section>`;
   }
 
+  function compactSourceLocators(locators) {
+    const groups = new Map();
+    for (const locator of locators) {
+      // Only combine explicitly labelled witnesses with identical page bounds.
+      // Other locators, line/plate scopes and separate pages stay untouched.
+      const match = tidy(locator).match(/^(Text \w+) — (transcription|translation|commentary|source extract); (printed pp?\. [\d–, -]+; PDF pp?\. [\d–, -]+)$/i);
+      const key = match ? `${match[1].toLowerCase()}|${match[3]}` : locator;
+      if (!groups.has(key)) groups.set(key, {locator, match, roles: new Set()});
+      if (match) groups.get(key).roles.add(match[2]);
+    }
+    return [...groups.values()].map(item => item.match
+      ? `${item.match[1]} · ${item.match[3]} — ${[...item.roles].join("; ")}` : item.locator);
+  }
+
   function sourcesSection(id) {
     const grouped = new Map();
     const add = (sourceId, locator, url) => {
@@ -837,7 +855,7 @@
       const label = [source.authors || source.title || sourceId, source.issued_year].filter(Boolean).join(" · ");
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
       const citation = source.citation || source.title || "";
-      const locators = [...item.locators.values()].filter(locator => !tidy(citation).includes(tidy(locator)));
+      const locators = compactSourceLocators([...item.locators.values()].filter(locator => !tidy(citation).includes(tidy(locator))));
       const details = (citation && citation !== label) || locators.length;
       return `<li><span>${link}</span>${details ? `<details class="source-details"><summary>Source details</summary>
         ${citation && citation !== label ? `<p>${esc(citation)}</p>` : ""}
@@ -875,7 +893,9 @@
   function groupedIdentifiers(identifiers) {
     const grouped = new Map();
     identifiers.forEach(item => {
-      const key = identifierValue(item).toLowerCase();
+      const value = identifierValue(item).toLowerCase();
+      const key = /^va[ .]*(?:bab[ .]*)?\d+[a-z]*$/i.test(value)
+        ? value.replace(/[ .]/g, "") : value;
       if (!grouped.has(key)) grouped.set(key, {value: identifierValue(item), rows: []});
       grouped.get(key).rows.push(item);
     });
@@ -915,7 +935,7 @@
       <ul class="fact-list">${groups.flatMap(group => {
         const byScheme = new Map();
         group.rows.forEach(row => {
-          const key = `${row.scheme}|${row.value}`;
+          const key = `${row.scheme}|${publicationKeyParts(row) ? row.value : group.value}`;
           if (!byScheme.has(key)) byScheme.set(key, {row, bodies: new Set()});
           if (row.assigning_body) byScheme.get(key).bodies.add(row.assigning_body);
         });
@@ -963,6 +983,7 @@
       ${datingEvidence(id)}
       ${factList(id, "material", "The bowl — material")}
       ${factList(id, "dimensions", "The bowl — dimensions")}
+      ${factList(id, "vessel_form", "The bowl — form")}
       ${factList(id, "condition", "The bowl — condition")}
       ${factList(id, "script", "The bowl — script")}
       ${factList(id, "visual", "The bowl — what is drawn")}
@@ -972,6 +993,7 @@
 
       ${factList(id, "practitioner", "Maker or hand, as reported")}
       ${factList(id, "client", "Who it names")}
+      ${factList(id, "named_person", "Names recorded")}
       ${factList(id, "target", "What it acts against")}
       ${factList(id, "ritual", "What it does")}
       ${factList(id, "biblical_intertexts", "Scripture it quotes")}

@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "6753c35dda6c14bc24c3db2e80ccde1f284f7ae81832ca4ad637a564adffca99",
+  "corpus_digest": "3e0ae7ef52961ca0e25c4bbbc45d6496a15dab1df92d86a9efc918603d18859b",
   "migrations": 21,
-  "note": "Checkpoint26 complete: one NLI publication gap linked, four exact research routes, private leads visible; stopping for nine user-retrieved documents",
-  "recorded_at": "2026-10-02T13:54:35+00:00",
+  "note": "Batch 3 reader flags: expose reported Berlin facts, preserve extracts separately, remove duplicate designations/source pages, add sourced fields and readable Gordon K commentary; local reader restart awaiting explicit approval after auto-review rejection.",
+  "recorded_at": "2026-10-02T14:14:09+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "216d608531f84f9fb381bc2dfdaec5eb6a7e60d17f2681be97cc44bd50f2f602",
-      "rows": 9130
+      "digest": "84659264cf882a9c2dd1fe819952f7c3e4451bfab0700cc25df750f65d967b16",
+      "rows": 9137
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -147,20 +147,20 @@
       "rows": 967
     },
     "text_metadata_corrections": {
-      "digest": "9782717c3ac120dcdbd3582aa4fdfdd1187033472d49b54d8429b2dac6d144c8",
-      "rows": 11
+      "digest": "fc22be67b9b76509393e3bd259d53c0c05201a879ffd91c13188e06b796c44bc",
+      "rows": 17
     },
     "text_proofreading_reviews": {
-      "digest": "726ffa3080027643c733825b8bfa920e7ef378f6c3a1831c9099eac804a4dc03",
-      "rows": 1309
+      "digest": "3c8a719314d04a4337cc298ec629e9c74366efdfd6a89fff6473cc5a5574993e",
+      "rows": 1311
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "da084b6698ce200ed3d102212c45b5bcb4611ab2dfa8b16febae542d8d038747",
-      "rows": 1874
+      "digest": "84f7643c1b9db3cde0bb6df78c8f9b1f5affcc36e84a3e61a9ef015ef5cae601",
+      "rows": 1875
     }
   }
 }

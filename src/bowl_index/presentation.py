@@ -410,7 +410,7 @@ def public_facets(field, field_group, value):
 
 def language_name(claims):
     """Prefer explicit evidence, but present it through the controlled vocabulary."""
-    precedence = ("inscription_language", "script_or_language", "catalogue_language_codes")
+    precedence = ("inscription_language", "script_or_language", "catalogue_language_codes", "catalogue_dialect")
     for field in precedence:
         labels = []
         for claim in claims:
@@ -421,6 +421,17 @@ def language_name(claims):
             qualifier = ("Possibly " if re.search(r"\bpossibl[ey]\b", value, re.I) else
                          "Probably " if re.search(r"\bprobabl[ey]\b", value, re.I) else
                          "Uncertain " if claim.get("certainty") == "uncertain" or "?" in value else "")
+            if field == "catalogue_dialect":
+                # Keep the catalogue's alternatives and script qualification;
+                # broad browse facets cannot express an "or" faithfully.
+                label = re.sub(r"[\u200b\u00ad]", "", value).rstrip(".")
+                if re.fullmatch(r"(?:n\s*/\s*a|\?|unknown|not recorded)", label, re.I):
+                    continue
+                if qualifier and not label.lower().startswith(qualifier.lower()):
+                    label = qualifier + label
+                if label and label not in labels:
+                    labels.append(label)
+                continue
             for label in language_facets(value):
                 label = qualifier + label
                 if label not in labels:

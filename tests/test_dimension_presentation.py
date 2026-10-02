@@ -4,6 +4,15 @@ from bowl_index.presentation import format_dimensions, format_fact_value, langua
 
 
 class DimensionPresentationTests(unittest.TestCase):
+    def test_catalogue_dialect_fills_heading_without_resolving_its_alternatives(self):
+        self.assertEqual(language_name([{"field": "catalogue_dialect", "value_text":
+            "Jewish Babylonian Aramaic or pseudo-\u200bscript (Jewish script)."}]),
+            "Jewish Babylonian Aramaic or pseudo-script (Jewish script)")
+        self.assertEqual(language_name([
+            {"field": "catalogue_dialect", "value_text": "Jewish Babylonian Aramaic."},
+            {"field": "inscription_language", "value_text": "Mandaic"}]), "Mandaic")
+        self.assertEqual(language_name([{"field": "catalogue_dialect", "value_text": "Aramaic", "certainty": "uncertain"}]), "Uncertain Aramaic")
+        self.assertEqual(language_name([{"field": "catalogue_dialect", "value_text": "?"}]), "Language not recorded")
     def test_catalogue_language_doubt_survives_the_reader_heading(self):
         self.assertEqual(language_name([{"field": "inscription_language", "value_text":
             "Possibly Aramaic (museum description)", "certainty": "uncertain"}]),

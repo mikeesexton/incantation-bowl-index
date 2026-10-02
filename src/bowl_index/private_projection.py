@@ -21,6 +21,7 @@ DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 RESEARCH_LEAD_FIELDS = frozenset({
     "publication_pointer_report", "former_collection_designation_report",
 })
+PRIVATE_DESCRIPTION_FIELDS = {"handwriting": "practitioner", "named_person": "named_person"}
 
 
 class PrivateResearchProjection(Projection):
@@ -66,8 +67,14 @@ class PrivateResearchProjection(Projection):
         for row in rows:
             # Earlier whole-section extraction rows were labelled summaries.
             # Keep their exact OCR available, but do not present it as prose.
-            if row["text_type"] == "summary" and "Working historical OCR of the entire numbered section" in (content[row["id"]]["notes"] or ""):
-                row["text_type"] = "source_ocr"
+            notes = content[row["id"]]["notes"] or ""
+            if row["text_type"] == "summary":
+                if ("Working historical OCR of the entire numbered section" in notes
+                        or "Working full source-page OCR includes neighboring material" in notes
+                        or "Full born-digital section working extraction with commentary and notes" in notes):
+                    row["text_type"] = "source_ocr"
+                elif "Born-digital working extraction; page headers" in notes:
+                    row["text_type"] = "catalogue_extract"
             if row["source_id"] in self.capture_links:
                 row["access_url"] = self.capture_links[row["source_id"]]
             if row["content_status"] == "included":
@@ -91,13 +98,13 @@ class PrivateResearchProjection(Projection):
             "SELECT object_id,field,value_text,value_json,certainty,source_id,locator "
             "FROM claims ORDER BY object_id,field,id"
         ):
-            if row["field"] not in RESEARCH_LEAD_FIELDS:
+            if row["field"] not in RESEARCH_LEAD_FIELDS and row["field"] not in PRIVATE_DESCRIPTION_FIELDS:
                 continue
             value = row["value_text"] or row["value_json"]
             if value:
                 rows.append({
                     "object_id": row["object_id"], "field": row["field"],
-                    "field_group": "research", "value": value,
+                    "field_group": PRIVATE_DESCRIPTION_FIELDS.get(row["field"], "research"), "value": value,
                     "recorded_value": value, "certainty": row["certainty"],
                     "source_id": row["source_id"], "locator": row["locator"],
                     "release_class": "private_research_lead",

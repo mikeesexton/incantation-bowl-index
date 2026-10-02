@@ -84,7 +84,7 @@ def main():
         body = catalogue[match.start():end].strip()
         first_page = max(n for off, n in page_offsets if off <= match.start())
         last_page = max(n for off, n in page_offsets if off < end)
-        locator = f"Catalogue entry {number}, printed pp. {first_page-16}–{last_page-16}"
+        locator = f"Catalogue entry {number}, printed pp. {first_page-14}–{last_page-14}"
         note = (f"Berlin 2018, {locator}; capture {CAPTURE}, SHA-256 {SHA256}. "
                 "Born-digital working extraction; page headers, line breaks and typography "
                 "need proofing. Mike-only research access.")

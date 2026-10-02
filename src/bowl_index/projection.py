@@ -87,6 +87,7 @@ SOURCE_WORDING_REVIEW_FIELDS = frozenset({
     "installation_instruction", "provenance", "provenance_summary", "collection_history",
     "excavation_context", "associated_find", "iconography_or_caption",
     "authenticity_assessment", "technical_test",
+    "reported_physical_condition", "reported_writing_condition", "reported_bowl_form",
 })
 SOURCE_WORDING_PRIORITY_LENGTH = 80
 EMBEDDED_QUOTATION = re.compile(r'“[^”]+”|‘[^’]+’|"[^"]+"')
@@ -334,7 +335,7 @@ class Projection:
             recorded_value = row["value_text"] or row["value_json"] or value
             if row["field"] == "dating":
                 value = format_date(value)
-            elif row["field"] == "dimensions":
+            elif row["field"] in {"dimensions", "reported_dimensions"}:
                 value = format_dimensions(value)
             value = format_fact_value(value)
             release_class = "factual_metadata"

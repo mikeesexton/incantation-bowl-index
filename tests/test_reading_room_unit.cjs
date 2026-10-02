@@ -273,6 +273,20 @@ test("translation page markers disappear while editorial brackets and source loc
   assert.match(rows[0].content, /\[PDF page 53/);
 });
 
+test("commentary and retained source extracts hide page markers without dropping scholarly brackets", () => {
+  const content = "[PDF p. 10; printed p. 92] Some [restored] words?\n[PDF p. 11; printed p. 93] A later [reference].";
+  const rows = [{text_type: "summary", content}, {text_type: "source_ocr", content},
+    {text_type: "catalogue_extract", content}];
+  for (const html of [textSections(rows), sourceExtractions(rows)]) {
+    assert.doesNotMatch(html, /\[PDF p\./);
+    assert.match(html, /\[restored\]/);
+    assert.match(html, /\[reference\]/);
+  }
+  assert.equal((textSections(rows).match(/Some/g) || []).length, 1);
+  assert.match(sourceExtractions(rows), /Catalogue extract/);
+  assert.match(rows[0].content, /\[PDF p\. 10/);
+});
+
 test("raw whole-section OCR is research apparatus, separate from a readable source summary", () => {
   const rows = [{text_type: "source_ocr", content: "GARBLED OCR", language: "French and Mandaic"},
     {text_type: "summary", content: "Pognon considers the later passage unintelligible and translates only the opening.", language: "English",

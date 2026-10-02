@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "scope": "Mike batch 3 reader flags",
+  "changes": {
+    "claims": {
+      "before": 9130,
+      "after": 9137
+    },
+    "texts": {
+      "before": 1874,
+      "after": 1875
+    },
+    "text_proofreading_reviews": {
+      "before": 1309,
+      "after": 1311
+    },
+    "text_metadata_corrections": {
+      "before": 11,
+      "after": 17
+    }
+  },
+  "metadata_rehearsal_replay": "six unchanged",
+  "all_preexisting_text_content_preserved": 1874,
+  "source_capture_sha256": [
+    "7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+    "c2c86d28ae3201f95475d89c45789d58a37a0e9ba125876503b833c78d7fb612"
+  ],
+  "private_manifests": [
+    {
+      "path": "data/private/audit-batch3/metadata.json",
+      "sha256": "d95cbbf1be4501c5953efc01399dc890c12cd55744b35a77330e05522f645d75"
+    },
+    {
+      "path": "data/private/audit-batch3/facts-commentary.jsonl",
+      "sha256": "85338aa2676e3194aaa816b3f304dcc8270646c5e9de00c4179321aa3f803874"
+    },
+    {
+      "path": "data/private/audit-batch3/proofreading.json",
+      "sha256": "e6bb1404aab8ab6971a14db69ab53f55d0bfbea6ae9a4cefb0b81abe8aaaf827"
+    }
+  ],
+  "tests": {
+    "python": 393,
+    "node": 57
+  },
+  "corpus_digest": "3e0ae7ef52961ca0e25c4bbbc45d6496a15dab1df92d86a9efc918603d18859b"
+}
