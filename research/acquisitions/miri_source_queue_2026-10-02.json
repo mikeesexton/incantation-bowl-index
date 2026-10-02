@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T20:21:04+00:00",
+  "updated_at": "2026-10-02T20:44:00+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -239,12 +239,26 @@
       "metadata_url": "https://www.jstor.org/stable/43582660",
       "toc_url": "https://www.jstor.org/stable/i40142559",
       "previous_access_evidence": "Primary issue contents identify the continued article and pp. 272–284. Automated stable-entry opening supplied no article text. Full text not obtained; no paywall or robots-denial determination asserted."
+    },
+    {
+      "source_id": "SRC-168BAEA3242C",
+      "short_label": "NLI62-190-7exactdigitalimages",
+      "citation": "National Library of Israel digital bowl representations: NLI62 Ms.Heb.9467.40 / MMS997008712407005171; NLI190 Ms.Heb.9467.162 / MMS997008712400405171; NLI7 Ms.Heb.9467.19 / MMS997008712404805171.",
+      "requirement": "Permitted complete available photograph views and accession/old-designation cards for these three exact records. Needed to test reported NLI62/M50, NLI190/M11 and NLI7/M59 bridges against held editions, not to assume the bridges. Other unlinked NLI image leads are enumerated privately in the metadata-only acquisition inventory.",
+      "priority": 1,
+      "status": "manual image/representation acquisition needed",
+      "checked_at": "2026-10-02T20:37:33+00:00",
+      "previous_access_evidence": "Three exact documented IIIF manifest routes rejected by project robots check before retrieval; disallowed or unverifiable host policy. No image bytes or manifests acquired, no current nonpublication or blanket record-level denial claim.",
+      "metadata_inventory": {
+        "path": "data/private/research-work/nli-images43-2026-10-02/nli-image-access-inventory.json",
+        "sha256": "d32e9b8dcf89363bbe9e38c3e1d1c6928fa23677855dd0a37587731c6a5d80e5"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
   "current_reading_queue": {
-    "path": "data/private/manifests/hermitage42-2026-10-02/production/extraction.json",
-    "sha256": "72b34e532d6c6ac547395dc5cd730bf62fa0b4c83ee6dbd51090b27bc8a6d93c"
+    "path": "data/private/manifests/nli-images43-2026-10-02/production/extraction.json",
+    "sha256": "f057e025aede7dd7d37994d32f86a68b3fff2d99f9fc28a016f43a0c706e997d"
   },
   "fulltextworking_inventory": {
     "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
@@ -252,8 +266,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/hermitage42-2026-10-02/acquisition-queue-before.json",
-    "sha256": "52f4dcc8795634fbd2accb0e3b1d70f419c92253edf658fd80a555c43017d3c2"
+    "path": "data/private/research-work/nli-images43-2026-10-02/acquisition-queue-before.json",
+    "sha256": "ceae96c67c1c773dfb7deb98610b4909524b27cecea0374db844b2a370122565"
   },
   "new_access_requests_checkpoint": 41
 }

@@ -1,7 +1,7 @@
 {
-  "corpus_digest": "861809b73856bf9870dee48c020b3f1e999c43bc1a2a28bbae355b274bdda60f",
+  "corpus_digest": "e0f7219ae04ae34ecc32851ae80bb267111b0f985c60765bc64a132bd436a638",
   "migrations": 21,
-  "recorded_at": "2026-10-02T20:22:29+00:00",
+  "recorded_at": "2026-10-02T20:45:55+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -62,8 +62,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "2bdd2189b3592f33eec7428be17e48d97bf55a154b8ddb5a1d1daa2ff9abd114",
-      "rows": 111
+      "digest": "3a50bbfe5523d821029fb9197f6ce91ed3bade4e59b64c099bba154201444353",
+      "rows": 112
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -82,8 +82,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "c748e4ad70dab257b3f73be9baec6d4b4b8ec7c0fb8a3edf15607b4499aaadb6",
-      "rows": 2018
+      "digest": "970ea4a9b4ba4245e87970b67ed0bdc7757eb5d00e9fc65499acc7f5ad74401c",
+      "rows": 2021
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -110,8 +110,8 @@
       "rows": 2171
     },
     "publication_assessments": {
-      "digest": "6efbba5ab5baf3657ec69cd7baa63cc54f3291e9488f1d17c837953695cfd685",
-      "rows": 560
+      "digest": "3ddd132da58e7e84c7e55458fe60e8b582212a6a9d1ce17b56f9d14032dae9fa",
+      "rows": 561
     },
     "publication_registry": {
       "digest": "d0acdbe0a28e823e2fcb8076da1036f39e6e037158bce27605d21be30c54d603",
@@ -134,15 +134,15 @@
       "rows": 22
     },
     "source_corrections": {
-      "digest": "1e78d9604a027cc6e3ae54b836c6997024dc55a36648b7e3058430169ae1657f",
-      "rows": 77
+      "digest": "1a87597c1b4565d1374917baea8b28115661be44401314d0a12f89649b06b3e7",
+      "rows": 78
     },
     "source_scope_reviews": {
       "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2",
       "rows": 119
     },
     "sources": {
-      "digest": "38d78c7b93f4105eb3ba70eca6fc50b7105258e0922cdd3832fbdcedcf9e7142",
+      "digest": "15e630f9d27752420ad40e14aaed65c664f9c4736f9bbe1f485444c655df660c",
       "rows": 967
     },
     "text_metadata_corrections": {
@@ -150,16 +150,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "1487252fac3c5db06ade35f5c6f442d4db6438558406c28efc5ff0378cb64efc",
-      "rows": 1425
+      "digest": "853bef06da0e1ca04b5517c34cba225e90f264601bb69a83642ed80dbbc43619",
+      "rows": 1428
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "29ac3ffcc4b5a15f9a3ba19c8991f6734f21ceaafbbb6f23c6ee1b320fc1891e",
-      "rows": 2011
+      "digest": "d4699b288af88cc99fc74e7a1f3c2ed3eade33444733f8ff5ea899e8efb4123c",
+      "rows": 2013
     }
   }
 }

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T20:27:07+00:00",
+  "evidence_path": "research/reviews/nli_images43_davidovitz_evidence_2026-10-02.json",
+  "evidence_sha256": "8806de3cbc7f5b17a3680e640b65df9be3b9ecc8de580ffea2d1ef3311007b30",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-KEDAR43-DAVIDOVITZ",
+      "source_id": "SRC-A90AB34CA3FE",
+      "before": {
+        "source_type": "thesis",
+        "title": "Who Wrote the Incantation Bowls?",
+        "authors": "Dorit Kedar",
+        "issued_year": 2019,
+        "container_title": null,
+        "publisher": "Freie Universität Berlin",
+        "url": "https://refubium.fu-berlin.de/handle/fub188/24509",
+        "doi": "10.17169/refubium-2273",
+        "isbn": null,
+        "citation": "Kedar, Dorit. Who Wrote the Incantation Bowls? PhD dissertation, Freie Universität Berlin, 2019. DOI: 10.17169/refubium-2273.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Open repository copy; includes the author's working catalogue of 296 bowls used for handwriting analysis."
+      },
+      "after": {
+        "source_type": "thesis",
+        "title": "Who Wrote the Incantation Bowls?",
+        "authors": "Dorit Kedar",
+        "issued_year": 2019,
+        "container_title": null,
+        "publisher": "Freie Universität Berlin",
+        "url": "https://refubium.fu-berlin.de/handle/fub188/24509",
+        "doi": "10.17169/refubium-2273",
+        "isbn": null,
+        "citation": "Kedar, Dorit. Who Wrote the Incantation Bowls? PhD dissertation, Freie Universität Berlin, 2019. DOI: 10.17169/refubium-2273.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Open repository copy; includes the author's working catalogue of 296 bowls used for handwriting analysis. Checkpoint43 adds checked bounded Davidovitz2 native/English opening quotes from printedp133, explicitly linked by §4.5 and fn544–545 to the named bowl. Its2019forthcoming/no-photo report remains dated, not a current absence finding. ExistingTable6 working extraction has partial count/reference-call copying repairs with the original retained. Sourcewide audit and authorship/handwriting interpretation remain separate."
+      },
+      "rationale": "Record exact Davidovitz2 quote/context reference and copying repairs; preserve previous note and dated unpublished report without adopting source authorship interpretations."
+    }
+  ]
+}
