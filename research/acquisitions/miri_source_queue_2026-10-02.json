@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-02T15:07:57+00:00",
+  "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
+  "resolved_documents": [
+    {
+      "source_id": "SRC-CHICAGO-ANNUALREPORT1966-1967",
+      "title": "Annual Report 1966–1967",
+      "filename": "66-67_AnnualReport.pdf",
+      "capture_id": "CAP-68BB3E8C9BF5",
+      "sha256": "b44b7c8da16030c734e14b4c753f19ba69357dfa9641829d92f1e60a3c9ca2f4",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-EB27DA285DC5",
+      "title": "Aramaic Incantation Bowls at the State Hermitage Museum, St. Petersburg",
+      "filename": "Aramaic_Incantation_Bowls_at_the_State_H.pdf",
+      "capture_id": "CAP-89ECAC219742",
+      "sha256": "29fde28eef92dfa2ada8da4c699b1e8665f2fdd0e3da45058e688b74b46dc41a",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-59F609B5B2DF",
+      "title": "The (continued) online trade of Aramaic magic bowls from Iraq",
+      "filename": "Article.pdf",
+      "capture_id": "CAP-66AE30B6FC4F",
+      "sha256": "f91acf025979ad8c3047fe543358ee55938f4fcc7e050d0f7f823fcbd48f0915",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-LEVENE2000-UCL",
+      "title": "Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls",
+      "filename": "Levene_10179220_thesis.pdf",
+      "capture_id": "CAP-BC74F1C7044C",
+      "sha256": "caf94c25ea8557996e86ffdb2e57155328b41638c929cdb4b61e8ec1629761d6",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-5119876CE9C6",
+      "title": "Auction 32: Objects, Judaica, Israeliana, Archeology and Medals",
+      "filename": "catalog-CA-32.pdf",
+      "capture_id": "CAP-BB4BC0FD9946",
+      "sha256": "a69a5e4cf673d540b1ca45a8fb06748f05ffba1ae1e6c6d3bc55059958af6f40",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-AFDBED16E322",
+      "title": "Passionate Curiosities: Tales of Collectors & Collections from the Kelsey Museum",
+      "filename": "passionate-curiosities.pdf",
+      "capture_id": "CAP-F2015A6D1933",
+      "sha256": "644d28f17125fdb6ea01c1a3a0cafa49835c4629fd7dca077739713678b16783",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-899462FAA735",
+      "title": "Celebrating the Centenary of Incantation Bowls at Nippur",
+      "filename": "saoc71.pdf",
+      "capture_id": "CAP-41EF7EE98CDD",
+      "sha256": "db62d36b63a98ba2ff4dac5143946a945a7e42dbe7124a184f91402da6796330",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-BOHAK1996-TRADITIONS-MAGIC",
+      "title": "Traditions of Magic in Late Antiquity",
+      "filename": "traditions_of_magic_96.pdf",
+      "capture_id": "CAP-F99C0D0086E1",
+      "sha256": "38d9234079366051060cd94c546cd758feb69c8b489fee85221f909de3792bd8",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-FORD2025-THUS-OATH",
+      "title": "The Exorcistic Formula “Thus Is This Oath”",
+      "filename": "ג'יימס+נתן+פורד.pdf",
+      "capture_id": "CAP-9ACA488492AF",
+      "sha256": "c64b1aa031a72c833f3856433eea22b00cd843733eb98df2ad25d159ba9d2df5",
+      "status": "Researcher-supplied local document held",
+      "reading_audit": "Partial; further source reading checks remain"
+    }
+  ],
+  "remaining_acquisition_requests": [
+    {
+      "source_id": null,
+      "citation": "Bohak, Gideon. Ancient Jewish Magic: A History. Cambridge: Cambridge University Press,2008.",
+      "requirement": "Bohak’s 2008 book was on Miri’s earlier missing list but is absent from these nine PDFs. The complete book is still needed; the citation also appears in the newly held Hunter chapter, page 143/PDF169.",
+      "priority": 2,
+      "status": "unheldbookfromearlierqueue"
+    },
+    {
+      "source_id": "SRC-72D809FB4249",
+      "citation": "Segal, J. B., with Erica C. D. Hunter. Catalogue of the Aramaic and Mandaic Incantation Bowls in the British Museum. London: British Museum Press, 2000.",
+      "short_label": "Segal2000completeBritishMuseumcatalogue",
+      "requirement": "Complete original British Museum catalogue. Existing title/front-matter pointers cannot substitute for its 142 numbered text units and images. Highest-impact original edition gap.",
+      "priority": 1,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-539BB677443B",
+      "citation": "McCullough, W. S. Jewish and Mandaean Incantation Bowls in the Royal Ontario Museum. Toronto: University of Toronto Press, 1967, DA 5.",
+      "short_label": "McCullough1967RoyalOntarioMuseumbook",
+      "requirement": "The actual 1967 book, including accession-bearing DA4/DA5/Bowl D concordances. The 1949 thesis is already held and does not establish correspondence in the later book.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES",
+      "citation": "Juusola, Hannu. Linguistic Peculiarities in the Aramaic Magic Bowl Texts. Studia Orientalia 86. Helsinki: Finnish Oriental Society, 1999.",
+      "short_label": "Juusola1999fullmonograph",
+      "requirement": "Full monograph chapters, including page 134. Only six pages of front matter are held; the complete 2001 review is held separately.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-E961C60043EC",
+      "citation": "———. A Corpus of Magic Bowls: Incantation Texts in Jewish Aramaic from Late Antiquity. London: Kegan Paul, 2003.",
+      "short_label": "Levene2003ACorpusofMagicBowls",
+      "requirement": "The actual 2003 book. The 2000 thesis is now held but is a separate edition. Compare M50/M59 synopses, English coverage and the reported book pages 31–39.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-CA4B122C5F4D",
+      "citation": "Abudraham, Ohad. ‘Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels.’ JSS 71, no. 1 (2026): 105–134.",
+      "short_label": "Abudraham2026BridgingtheGaps",
+      "requirement": "Complete original PDF and images: JSS 71(1), 105–134, DOI 10.1093/jss/fgaf025, especially NLI9467.163. Author-upload text is indexed; earlier PDF host/robots routes failed. This article was not among the supplied files.",
+      "priority": 1,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-MORGENSTERN-ABUDRAHAM2025-ADDITIONAL",
+      "citation": "Morgenstern, Matthew, and Ohad Abudraham. Additional Mandaic Bowls from the Shlomo Moussaieff Collection [Hebrew]. Language Studies / מחקרים בלשון 21–22 (2025): 303–325.",
+      "short_label": "Morgenstern–Abudraham2025AdditionalMandaicBowls",
+      "requirement": "The four actual editions in Language Studies 21–22, Yochanan Breuer Festschrift, pages 303–325, including the NLI71 route. The unrelated Language Studies 23 publisher preview was excluded.",
+      "priority": 1,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-83A3DFDE7924",
+      "citation": "Morgenstern, Matthew. “Mandaic Magic Bowls in the Moussaieff Collection: A Preliminary Survey.” In New Inscriptions and Seals Relating to the Biblical World, 157–170. Society of Biblical Literature, 2012. https://doi.org/10.2307/j.ctt32bzp2.17.",
+      "short_label": "Morgenstern2012Moussaieffpreliminarysurvey",
+      "requirement": "Original pages 157–170, including the nine-bowl survey’s exact designation and photograph roster. Available metadata/indexed text does not verify the later object mappings.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-553965D06B17",
+      "citation": "Morgenstern, Matthew. “Five Mandaic Magic Bowls from the Moussaieff Collection.” Eretz-Israel 34 (Ada Yardeni Volume) (2021): 106–122.",
+      "short_label": "Morgenstern2021FiveMandaicMagicBowls",
+      "requirement": "The complete five editions in Eretz Israel 34, pages 106–122. Keep the 2012/2021/2025 nine/five/four witness mappings unverified until the exact designations agree.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-9A44D74C0872",
+      "citation": "Hunter, Erica C. D. ‘Combat and Conflict in Incantation Bowls: Studies on Two Aramaic Specimens from Nippur.’ In Studia Aramaica: New Sources and New Approaches, edited by M. J. Geller, J. C. Greenfield, and M. P. Weitzman, 61–75. Journal of Semitic Studies Supplement 4. Oxford: Oxford University Press on behalf of the University of Manchester, 1995.",
+      "short_label": "Hunter1995CombatandConflict",
+      "requirement": "The Studia Aramaica chapter on 18N18 and 18N98. Metadata reports pages 61–75, while the newly held Hunter2021 bibliography reports 61–77; the original terminal page needs checking. The 2021 context chapter is already held.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": "SRC-SELA-EAJS-NLI-REPORT",
+      "citation": "Sela, Gal. Beyond Talmud: Magic, Law, and Gender in Babylonia. NLI research visit report, in EAJS Small Research Grant Programme Reports: Year 3, Round 1. Winter2025 grant round; report publication date unverified. Indexed report inspected2October2026.",
+      "short_label": "GalSelaEAJSBeyondTalmudreportbody",
+      "requirement": "Full EAJS report body or accession cards confirming the reported NLI190/M11, NLI62/M50 and NLI7/M59 bridges. Direct opening returned navigation; indexed report text is retained, but exact bridges remain independently unverified.",
+      "priority": 2,
+      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+      "status": "unheld original needed"
+    },
+    {
+      "source_id": null,
+      "citation": "Nippur tenth-season field/object register or accessioncard for10N-361A-B/A33980 (archive lead, not a verifiedpublicationtitle)",
+      "requirement": "Tenth-season Nippur field/object register or museum accession card with exact 10N-361A-B/A33980. The complete 1966–67 annual report is held, but it supplies no verified exact-number match. Another annual-report copy is unnecessary.",
+      "priority": 2,
+      "status": "exactobjectdocumentlead"
+    },
+    {
+      "source_id": "SRC-59F609B5B2DF",
+      "citation": "Korsvoll, Nils H. ‘The (Continued) Online Trade of Aramaic Magic Bowls from Iraq.’ Journal of Art Crime 23 (2020): 17–31.",
+      "requirement": "Optional final typeset article for Figure1/Table1 placement. The complete 26-page author manuscript is held; this is a version/layout follow-up, not an entirely unavailable article.",
+      "priority": 3,
+      "status": "version/layoutfollow-up; manuscriptacquisitionresolved"
+    }
+  ],
+  "acquisition_and_reading_completion_separate": true,
+  "current_reading_queue": {
+    "path": "data/private/manifests/supplied-documents27-2026-10-02/production/candidates.jsonl",
+    "sha256": "22c6d7b358573c7f4736b8cf7f6e0120b4d1d5a8c6e364148760c5f68b476240"
+  },
+  "fulltextworking_inventory": {
+    "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
+    "sha256": "6305075d14c9cf39706fc229a026c2f77ec8ab2adfb269f236dd09734777d890"
+  },
+  "no_outbound_author_contact_or_purchase": true
+}

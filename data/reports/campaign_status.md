@@ -1,21 +1,21 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T14:09:00+00:00`
+Generated: `2026-10-02T15:17:08+00:00`
 
 ## Corpus
 
-- Candidate objects: **2154**
+- Candidate objects: **2169**
 - Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'language', 'layout', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1805**
+- Estimated distinct objects after resolved dedupe: **1820**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2652**
+- Source appearances: **2724**
 - Sources: **967**
 - Dedupe clusters pending: **0**
-- Objects with text: **869**
-- Objects with translation: **489**
+- Objects with text: **909**
+- Objects with translation: **494**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **36**
@@ -65,27 +65,27 @@ Generated: `2026-10-02T14:09:00+00:00`
 
 | Access status | Sources |
 |---|---:|
-| available | 791 |
+| available | 795 |
 | unknown | 103 |
-| partial | 65 |
+| partial | 62 |
 | paywalled | 5 |
-| blocked | 2 |
+| blocked | 1 |
 | offline | 1 |
 
 ## Corpus composition
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1428 |
+| object type | whole_bowl | 1443 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
-| record status | candidate | 952 |
+| record status | candidate | 967 |
 | record status | probable | 922 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1620 |
+| authenticity | unassessed | 1635 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |

@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "checkpoint": 27,
+  "created_at": "2026-10-02T15:07:57+00:00",
+  "current_turn_classification": "progress",
+  "goal_status": "paused",
+  "goal_continuation_authorized": true,
+  "goal_control_limitation": "The available Goal tools have no resume action. Official documentation provides Resume on the existing Goal or /goal resume. Original scope and accounting are preserved.",
+  "corpus_before": "3e0ae7ef52961ca0e25c4bbbc45d6496a15dab1df92d86a9efc918603d18859b",
+  "corpus_after": "aaa98cfebed1102a1efbef4f6a6c26356bed69f7a32a9de8b44ad4ebfdb56e73",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 25,
+  "frozen_unlinked_now": 224,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 12,
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 68,
+  "new_edition_text_rows": 9,
+  "new_working_source_text_rows": 59,
+  "new_objects": 15,
+  "new_sources": 0,
+  "new_appearances": 72,
+  "new_captures": 9,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1218,
+  "checked_edition_text_rows": 1079,
+  "partial_edition_text_rows": 138,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1943,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1223,
+    "appearance_bearing_sources": 51,
+    "registered_pdf_sources": 56
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/supplied-documents27-2026-10-02/campaign_case_progress_checkpoint27.json",
+    "sha256": "ece683cda6180dbe4379dadbdb432b33462aef3c5fe4ee30469c6faf11bd19c3"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/supplied-documents27-2026-10-02/held_pdf_inventory_checkpoint27.json",
+    "sha256": "e3b57b8a791dff08d6106e553f9931ae7b16e44e1e664940a35e43828e90fc94"
+  },
+  "acquisition_queue": {
+    "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+    "sha256": "a2b42b3eb1fbec67c9afab2a12ac5b796df65abcc374a2f71aa94204aaceaf0c"
+  },
+  "scope": "Mike’s nine PDFs were moved from Downloads into private IBI storage and deposited by content hash. Eight earlier Miri acquisition items are now held, along with the complete Chicago 1966–67 annual report; Bohak’s 2008 book remains missing. All nine text layers and page boundaries were retained. The batch adds 72 source appearances, 15 source-designated candidate objects, 59 working section extracts, nine edition text rows, 482 page facsimiles, 61 publication-reference assessments, nine document assessments and nine acquisition metadata corrections with immutable earlier snapshots. Seven bounded reading passages are fully checked and two Latin transliterations remain partial. Native script remains separate from Latin transliteration and uncorrected OCR; none of the 45 frozen native-script gaps is closed. A further retained correction distinguishes five Hermitage plate pages, eight depicted objects and nine views; its superseding source and document assessments preserve the earlier wording. The private reader has 59 new complete-page derivatives containing captioned photographs or plates. Levene’s twenty-bowl 2000 thesis is distinct from the unheld 2003 book, and the section labelled Translation of M50 is not assigned to M59. The Hermitage introduction’s eleven bowls/three pseudo-script bowls disagrees with the ten numbered entries/two pseudo-script entries actually present; both reports remain. Hunter’s full chapter is pages 133–144; both Kedem lots occur on page 96. The Chicago Nippur chapter reports unnumbered surface bowls without verifying A33980/10N-361; its silence is not a publication-absence finding. Twelve frozen investigations gained evidence. The fixed campaign remains 25 linked, 224 unlinked, all 249 with attempts and zero completed cases. The current PDF inventory covers 56 sources, 51 with appearances and 1,223 appearances. Miri’s queue separates held documents, missing originals, a field-register lead and an optional final-layout version. Continued research is authorized, but the saved Goal control remains paused and requires the native Resume action. No Goal restart, allowance reset, public release, deployment, push or purchase.",
+  "next_actions": [
+    "Continue LeveneM50thesis English43–44/native43 and NLI7/M59andNLI62/M50 exactlibraryimage/cardbridges without uncertainmerges.",
+    "Continue sevenHermitage and sevenFordfullsections with native-scriptcapture separatefromLatin andsourceOCR; retain contour/damage uncertainty.",
+    "Continue remaining224frozenpublication gaps and accessqueues. OriginalSegal2000 stillneeded."
+  ],
+  "changes": {
+    "appearance_object_links": 72,
+    "appearances": 72,
+    "captures": 9,
+    "document_assessments": 10,
+    "identifiers": 15,
+    "media": 482,
+    "objects": 15,
+    "publication_assessments": 61,
+    "source_corrections": 10,
+    "text_proofreading_reviews": 9,
+    "texts": 68
+  },
+  "validation": {
+    "mode": "production",
+    "corpus_before": "3e0ae7ef52961ca0e25c4bbbc45d6496a15dab1df92d86a9efc918603d18859b",
+    "corpus_after": "aaa98cfebed1102a1efbef4f6a6c26356bed69f7a32a9de8b44ad4ebfdb56e73",
+    "changes": {
+      "appearance_object_links": 72,
+      "appearances": 72,
+      "captures": 9,
+      "document_assessments": 10,
+      "identifiers": 15,
+      "media": 482,
+      "objects": 15,
+      "publication_assessments": 61,
+      "source_corrections": 10,
+      "text_proofreading_reviews": 9,
+      "texts": 68
+    },
+    "all_preexisting_non_source_rows_identical": true,
+    "source_changes_retained_in_immutable_ledger": 10,
+    "all_capture_hashes_verified": 86,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "edition_inventory": {
+      "reading_text_checked": 1079,
+      "unreviewed": 1,
+      "partial_review": 138
+    },
+    "metrics": {
+      "media_records": 1966,
+      "media_current_ledger_rows": 354,
+      "media_rights_assessed": 319,
+      "media_rights_assessed_pct": 0.16225839267548323,
+      "media_approved": 319,
+      "media_needs_rights_review": 1647,
+      "publication_keys": 36,
+      "publication_keys_resolved": 34,
+      "publication_keys_unregistered": 2,
+      "publication_keys_resolved_pct": 0.9444444444444444,
+      "objects_under_a_publication_key": 910,
+      "objects_under_a_resolved_publication": 909,
+      "works": 224,
+      "works_with_a_held_document": 56,
+      "works_with_a_scope": 135,
+      "works_awaiting_scope": 89,
+      "contributors": 122,
+      "contributors_needing_a_spelling_check": 20,
+      "document_assessment_rows": 77,
+      "sources_with_document_assessments": 73,
+      "sources_with_complete_documents": 65,
+      "sources_with_physically_inspected_documents": 0,
+      "sources_with_ocr": 4,
+      "sources_with_corrected_rich_text": 0,
+      "sources_with_object_level_extraction": 62,
+      "sources_with_complete_object_level_extraction": 29,
+      "sources": 967,
+      "sources_with_captures": 75,
+      "sources_with_pdf_captures": 56,
+      "sources_with_non_pdf_captures_only": 19,
+      "sources_needing_acquisition_review": 799,
+      "sources_without_pdf_with_dependants": 748,
+      "objects_depending_on_a_publication_without_pdf": 288,
+      "checked_reading_texts": 1079,
+      "confirmed_penn_concordances": 23,
+      "relationship_assertions": 5,
+      "unresolved_relationship_assertions": 4,
+      "candidate_records": 2169,
+      "probable_identities": 1820,
+      "source_appearances": 2724,
+      "pending_dedupe": 0,
+      "raw_conflicted_identities": 533,
+      "conflicted_identities": 312,
+      "adjudicated_conflicted_identities": 14,
+      "stale_conflict_instances": 48,
+      "raw_conflict_instances": 1186,
+      "reviewed_conflict_instances": 584,
+      "compatible_conflict_instances": 568,
+      "substantive_conflict_instances": 16,
+      "untriaged_conflict_instances": 602,
+      "publication_referenced_identities": 1072,
+      "priority_identities": 1052,
+      "publication_referenced_priority_identities": 828,
+      "publication_no_known_identities": 0,
+      "publication_no_known_priority_identities": 0,
+      "publication_assessed_identities": 1072,
+      "publication_assessed_priority_identities": 828,
+      "publication_reference_pct": 0.7870722433460076,
+      "publication_assessment_pct": 0.7870722433460076,
+      "translation_identities": 480,
+      "text_edition_identities": 446,
+      "media_rights_known": 1553,
+      "media_rights_pct": 0.7899287894201424,
+      "blocked_leads": 29,
+      "open_leads": 36,
+      "qualifying_saturation_sweeps": 2,
+      "coverage": {
+        "location": 1288,
+        "provenance": 375,
+        "dating": 484,
+        "dimensions": 670,
+        "material": 410,
+        "language": 1029,
+        "script": 94,
+        "text_edition": 446,
+        "translation": 480,
+        "image": 612
+      },
+      "content_coverage": {
+        "authenticity_assessment": 4,
+        "biblical_intertexts": 171,
+        "client": 225,
+        "condition": 314,
+        "parallels": 16,
+        "practitioner": 29,
+        "publication": 566,
+        "ritual": 122,
+        "target": 3,
+        "text_description": 93,
+        "text_form": 45,
+        "vessel_form": 174,
+        "visual": 32
+      }
+    },
+    "rehearsal": true,
+    "four_manifests_and_proofreading_replays_unchanged": true,
+    "python_tests": "393passed",
+    "node_tests": "57passed",
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 1943,
+      "all_media_assignments_verified": 1966,
+      "all_local_image_hashes_verified": 1183,
+      "all_capture_hashes_assignments_verified": 86,
+      "new_photograph_derivatives_verified": 59,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 12,
+      "complete_cases_claimed": 0,
+      "python_tests": "393passed",
+      "node_tests": "57passed",
+      "miri_queue_dispatched": true,
+      "all_nine_originals_moved": true,
+      "snapshot": {
+        "path": "site/mike-build/private-snapshot.json",
+        "sha256": "952e3a01810693cd12bb39fc4f1d2300910a3a118dc1da21ea9025d002c43216"
+      }
+    },
+    "reader_live_runtime": "Built and verified locally; previously rejected live-server restart not retried or worked around. No deployment.",
+    "manifest_replay_note": "The initial four intake manifests and reading reviews replayed unchanged before the final plate-unit correction. The later source/document correction pair replayed unchanged in trial and production. Older source corrections intentionally reject a superseded current source; they are not rerun to undo the retained correction."
+  },
+  "movement_receipt": {
+    "path": "data/private/research-work/supplied-documents27-2026-10-02/movement-receipt.json",
+    "sha256": "8e2228724bc7640941e595c1279976c431aca8469247e8ab2251d106138bccba"
+  },
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0027_supplied_documents.json",
+      "sha256": "5d2e5927ca52178ace7824ac83c2402e7ff37746c4ab984d03bb99d4152e73c7"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/apply.py",
+      "sha256": "95deb6c78243164833a74e1a4928b2e5b3723a9bc910e09c0b36906b1f43ce2e"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/campaign_case_progress_checkpoint27.json",
+      "sha256": "ece683cda6180dbe4379dadbdb432b33462aef3c5fe4ee30469c6faf11bd19c3"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/checked-readings.json",
+      "sha256": "c940df7eb0cd1933aa5c3b9aa88f8e090bbd910fe2bcf45753ca29d500d6cce2"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/checked_readings.py",
+      "sha256": "9808eee67f81f7399d7c5adfd249514a9263161bc727962160860f20bcbb7bff"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/close_log.py",
+      "sha256": "157317ae7666401b2c55e9373c478b04ecb415cbeaf51aa34f8caac2bac05981"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/deposit.py",
+      "sha256": "36bb81a974a9019472108dfec21ce783e59a710d5ee5341bef5bf13cb3cac4b8"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/derive_photographs.py",
+      "sha256": "e9c6b8730f4d3f9a1777ccde7ebf8e9083a72bf3dc906d37bb9667da1a0d3308"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/held_pdf_inventory_checkpoint27.json",
+      "sha256": "e3b57b8a791dff08d6106e553f9931ae7b16e44e1e664940a35e43828e90fc94"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
+      "sha256": "6305075d14c9cf39706fc229a026c2f77ec8ab2adfb269f236dd09734777d890"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/inventory-errors.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/inventory.py",
+      "sha256": "1ec1f13de3160a1a501ac585ebbe4241573754baca0266ff7a3f9ab90f2cc0f8"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/metadata.json",
+      "sha256": "119b0dcab95574379a8e58dac303237dbddd110d08759b98d6d92e9cf4a1eda2"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/miri-dispatch.json",
+      "sha256": "6878326c92595c55ee98a13ed8b24ab64c3ac6fa0a2604d6f0561551031d80a1"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/move_originals.py",
+      "sha256": "7ca58a01e9b432b9b4ced2f1645ef3c8c6daecc45accfefdbc01caea9dea2c5b"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/movement-receipt.json",
+      "sha256": "8e2228724bc7640941e595c1279976c431aca8469247e8ab2251d106138bccba"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/node-tests-final.log",
+      "sha256": "fef3c68884f3dcbdf22ef96059aebcc5193e73c663b92f598eec6b52b679d7cb"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/photograph-derivatives.json",
+      "sha256": "8576bf5c988bdcd05ed75ad81851a683dd8dfd1f82899369e3578a9d5ae18206"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/plate_count_fix.py",
+      "sha256": "21c1c8e24e6264ddf1d486dcffca73fbb29db0a52004a3664c1ea1035ece1830"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/prepare.py",
+      "sha256": "42c670870707e6e2e7222bea04c6c94a65ceaeece5f0f7e90468e1fef21fa110"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-apply.json",
+      "sha256": "18dcd49df3825bcd44ad075116a5a026ae677c70548c54211d8010cd8098493a"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-deposits.json",
+      "sha256": "95a599f395c25c9091213c563b92d51fb5444a4d4710fe6edc4bd86a6f66fb0f"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-plate-count-prepare.json",
+      "sha256": "0806e41520332193b1d42456138d442e8f657a06d0ebe45f37dbcea6061ad6f3"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-plate-count-replay.json",
+      "sha256": "76b189257fb2eee5954fb7c9df39bc04665d0db5dff49d72ca26156801278039"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-prepared.json",
+      "sha256": "d8e552ed8092b726cc1443221e0ba48f8e584daa4c6d457a38340474a753ddc6"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-proofreading-prepare.json",
+      "sha256": "d0d2bcbc80c42920a2ce91fc8f75671474276d14aa1bc0bf1bd1162fd8573e5f"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-proofreading-replay.json",
+      "sha256": "422c716933fd5d97465622081042b82bf8dcc3aee994d8b3be2f0c025c6362c8"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-replay.json",
+      "sha256": "4d724517385a6fab17259370a144e58ded9dcbd0f783bc8ab6308e53c5e68ec4"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/production-verification.json",
+      "sha256": "4dea2aa8f724eebe029786e2f6a86b11ce318da4de0c88df3ff913abf98c76bf"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/proofread.py",
+      "sha256": "4c0d7701451d43d365fd413d5c0ecb718241542f261d5c3ee599c5512741bc1b"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/readable_checkpoint.py",
+      "sha256": "f0e43cfa1529258b36a9bef0fe5ac553fc142bdcea1150cd6b10c2c49248c2db"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/reader-build-final.log",
+      "sha256": "ec58bc068976aea6988370222168536996052bef2c613a5d62c3327037ec8a3a"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/reader-verification.json",
+      "sha256": "fd7d76898ccbab046797f86f50f5ad73980b5e0e33e1cdade033a2b1414431cc"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/record_checkpoint.py",
+      "sha256": "84c6a25eb9b5eed6642a81de69e8e4afb2504e77f69f1b1f7c1490341b936fdf"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/regenerate.py",
+      "sha256": "2187bc2e1d1ac131d83d7a8ef2d212dc0036b76f54d70e7d43976a4c272cb179"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/render_review.py",
+      "sha256": "ddd93bb63de0c3cb126ebf4b792bb7bd58ceaa4a3bb94f5d4d287700399bca47"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/reports-final.json",
+      "sha256": "7d1c6d46e3ea487c50a9b99bcaf607ab1fb807e0fadb45921121f3fc4ce82392"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/tests-final.log",
+      "sha256": "a2c6089f7db1b8e3b45dbba152b00fb45220fa6c3214441988fda3a23210f0b4"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-apply.json",
+      "sha256": "5319451b6f1e4dc24344698507ca775a3b54198a1651061bef8515b221b88206"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-deposits.json",
+      "sha256": "0aa46dbdf8c3c0a1ed22ee5bcbd3b2a63de13d44340a49d253177ed748321311"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-plate-count-prepare.json",
+      "sha256": "a3e493168791369d063fe0ddace39e09ae79628c9f065547bb930ab146088926"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-plate-count-replay.json",
+      "sha256": "0de9e2f82411b146c10a321e2dff0cc28cc0e45a43bc42a80ef166ea4a77dbda"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-prepared.json",
+      "sha256": "c7db1888b18321b2d2e39dc9bdf40e2916b66127eea69a026db2eaf9f42b29f2"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-proofreading-prepare.json",
+      "sha256": "4fbdd6666f351c8b4339fb7b66c68ab0f566fcd62e0494fdb9ddb2878bbf9312"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-proofreading-replay.json",
+      "sha256": "7ef6eeee745dedcd40e3920382d4696746ddf6ecec9a4aafe5282b4f00fb4d46"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-replay.json",
+      "sha256": "9f1eb61681063b6c1db2eea192ff0217ffa3de6c7c40b5e0e100740238fb6ac5"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/trial-verification.json",
+      "sha256": "1812b347fee7353c8eeea6127b5120ee410d787cb59a4655c4f8aa413b8a14b6"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/verify.py",
+      "sha256": "ca6be01db328f9754fae2feb365e50fdc7c1c89a36fd4d055e668e21c9d70c96"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/verify_reader.py",
+      "sha256": "34c716fd558ec9baac37de3540c7b2e7b2fbdbadb135bf61cc9734a60efd2ba8"
+    },
+    {
+      "path": "data/private/research-work/supplied-documents27-2026-10-02/visual-review-pages.json",
+      "sha256": "f51c380ac7dd01a0c97c85cccda9e138653a7d4ad2a6f0857db49c51b1edc46d"
+    },
+    {
+      "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+      "sha256": "a2b42b3eb1fbec67c9afab2a12ac5b796df65abcc374a2f71aa94204aaceaf0c"
+    },
+    {
+      "path": "research/reviews/supplied_documents27_evidence_2026-10-02.json",
+      "sha256": "d62ab4e50e6992834e8f4e8a728bc75013a6aa59ffd59baea09e5a4af8822a48"
+    },
+    {
+      "path": "research/reviews/supplied_documents27_hermitage_plate_count_2026-10-02.json",
+      "sha256": "2e3d96282f3d541d492de73f5e2ee007cb65c588c0dcf78a6479f72b82cdadc3"
+    },
+    {
+      "path": "research/reviews/supplied_documents27_plate_evidence_2026-10-02.json",
+      "sha256": "54f491875f67379de707d492efcf1ac284c387d8e7e8c6ba889db603d324c834"
+    },
+    {
+      "path": "research/reviews/supplied_documents27_sources_2026-10-02.json",
+      "sha256": "615fcd36fdde673a6520db7384c3cf63444e8e83ca646f146f3e053fd05817c5"
+    },
+    {
+      "path": "tests/test_mike_access.py",
+      "sha256": "d181c0541a76941f4172a5b50b615c781f5796ae3093ded9b885e3a365218e02"
+    }
+  ],
+  "protected_payloads": "AllninePDFs,fulltextlayers/workingextracts,readingmanifests/checks andphotographfacsimiles remainprivateandoutofGit. No publicreuseapproval.",
+  "miri_tracker_confirmation": "Tracking chat completed: acquisition list updated; nine documents held with verified hashes, reading audits remain open; no shared files or corpus changes."
+}

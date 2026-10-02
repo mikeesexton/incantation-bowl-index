@@ -1,6 +1,7 @@
 """Mike Access is complete private research, never a shared release."""
 
 import json
+import sqlite3
 import subprocess
 import sys
 import unittest
@@ -42,13 +43,27 @@ class MikeAccessBuildTests(unittest.TestCase):
         private_translations = [row for row in texts
                                 if row["object_id"] in objects and row["text_type"] == "translation"]
         barakat_media = [row for row in media if row["object_id"] in objects]
-        self.assertEqual(len(private_translations), 3)
+        # Research adds editions and contextual scans. Check the complete
+        # current corpus rather than freezing an earlier intake's row counts.
+        with sqlite3.connect(build.DEFAULT_DB.as_uri() + "?mode=ro", uri=True) as conn:
+            expected_translations = {
+                row[0] for row in conn.execute(
+                    "SELECT id,object_id FROM texts WHERE text_type='translation'")
+                if row[1] in objects
+            }
+            expected_media = {
+                row[0] for row in conn.execute("SELECT id,object_id FROM media")
+                if row[1] in objects
+            }
+        self.assertEqual({row["id"] for row in private_translations}, expected_translations)
+        self.assertGreaterEqual(len(private_translations), 3)
         summary = next(row for row in texts if row["id"] == "TXT-C4E64CF6D96B")
         self.assertEqual(summary["text_type"], "summary")
         self.assertTrue(summary["content"])
         self.assertEqual(summary["content_status"], "private_research")
         self.assertTrue(all(row["content"] for row in private_translations))
-        self.assertEqual(len(barakat_media), 5)
+        self.assertEqual({row["id"] for row in barakat_media}, expected_media)
+        self.assertGreaterEqual(len(barakat_media), 5)
         self.assertTrue(all(row["url"] for row in barakat_media))
 
     def test_snapshot_audit_passes(self):
