@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T06:39:49+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-MARTINEZ2003-20261002",
+      "source_id": "SRC-25F456A40523",
+      "capture_id": "CAP-5C6A2A1BBF99",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "b81ffa6f99f5216a64ef5fbd3aea3847fd072451f6a60b4486d7db8e54185f2c",
+      "extraction_path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/martinez_extraction_production.json",
+      "extraction_sha256": "a494d95cea1d1855118f5c63061b3f2d1fc81ee226810c49a9fb8e273f23a1d5",
+      "evidence_path": "research/reviews/martinez2003_reading_evidence_2026-10-02.json",
+      "evidence_sha256": "5d1d23e79965a46f99c5e42528c35fef215b56ca2ad992055d356863d3ee75a7",
+      "basis": "Publisher copy323–335plusblanklastPDF14 inspected for page bounds; main Latin and two English presentations captured/checked with source differences retained. Furthercomparisons/commentary not complete; native inscription only photo, no searchable backconversion or rights clearance."
+    },
+    {
+      "id": "IBI-DOC-FM2020-HS5REMAIN20261002",
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_id": "CAP-2861B06070B4",
+      "supersedes_id": "IBI-DOC-FM2020-HS5CMP20261002",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "extraction_path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/hilprecht_extraction_production.json",
+      "extraction_sha256": "8ad17579704a82d65602cb27506a3061016e4fa09e4a4f56d5157117d1fde4ba",
+      "evidence_path": "research/reviews/hs3005_remaining_scope_2026-10-02.json",
+      "evidence_sha256": "3b9ad00ee2a8fec9aa5198853a5ea6c2f30197cc3fd6bf267a8ecbdc9dd8725f",
+      "basis": "Cumulative previous extraction retained. Actualprinted27–28/PDF51–52mainapparatus/photos inspected; no newcomparand quotation. Wholebook extraction remains partial."
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "checkpoint": 20,
+  "created_at": "2026-10-02T07:02:37+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "c4ec464a948eb641420a205bdece049ce4fcb24493a8caf8b4fbe8206b78bb56",
+  "corpus_after": "45c1bd78045931fd4cccc48d16a960a037ec3497507e1b79657c41c5907f9bf8",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 825,
+  "unlinked_priority_identities_now": 227,
+  "new_sources": 0,
+  "new_captures": 1,
+  "new_text_rows": 2,
+  "source_checks_added": {
+    "checked": 3,
+    "partial": 0
+  },
+  "metadata_corrections_added": 1,
+  "private_page_images_added": 3,
+  "publication_assessments_added": 0,
+  "document_assessments_added": 2,
+  "identity_merges": 0,
+  "all_preexisting_rows_except_explicit_retained_text_repair_identical": true,
+  "edition_text_rows": 1126,
+  "checked_edition_text_rows": 997,
+  "partial_edition_text_rows": 128,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1791,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1076,
+    "appearance_bearing_sources": 42,
+    "registered_pdf_sources": 45
+  },
+  "allowance_resets_used": 0,
+  "scope": "PublisherMartínezBorobio2003copy14PDFpages (323–335plusfinalblank). Correct originalLatinOCRdraft/source-script/locator, retainoriginalsnapshots; mainlinewise/segmentedEnglish captured and separatelychecked. Author alternatives, deletions and differing finalinvocations/grammar preserved, no scholarlyemendation. Two actualbowlphotos on335associatedexistingAC-MSEFonly. HS3005printed27–28mainapparatus/photos inspected, no freshcomparisonquote. Kedemthreeprimaryrobotsroutes403, no targetfetch/sourcecapture; excerpt staysunreviewed with exactcatalogueacquisitionroute. Articlecomparisons/nativephototranscription and sourcewideHilprechtremainpartial.",
+  "next_actions": [
+    "InspectMartínezBorobio2003comparativequotes onprinted326–333/PDF4–11 and match exact designatedwitnesses before capture; preserve interpretive pointers as attributed.",
+    "AcquirelawfulAuction32printed96lot154original or independentlyrobots-permittedprimaryhost; existingexcerpt remainsunreviewed.",
+    "Continue227frozenpublicationgaps/128partialrows/45nativegaps and wholeHilprechtqueue; no negativefindingsfromcataloguesilence."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/campaign_case_progress_checkpoint20.json",
+    "sha256": "3e0aa44febf7026a70f6c1911ddd068e50d12644784f9558df81b67ebc05a6b7"
+  },
+  "changes": {
+    "captures": 1,
+    "texts": 2,
+    "media": 3,
+    "text_proofreading_reviews": 3,
+    "document_assessments": 2,
+    "text_metadata_corrections": 1
+  },
+  "explicit_retained_corrections": [
+    {
+      "table": "texts",
+      "id": "TXT-7DBC5A7924A5",
+      "changed_fields": [
+        "content",
+        "locator",
+        "notes",
+        "public_ok",
+        "script"
+      ],
+      "original_retained_in": "text_metadata_corrections and text_proofreading_reviews"
+    }
+  ],
+  "protected_payloads": "Protected drafts/corrections/translations/indices remain ignored privatevault. Gitcontainscontent-freereviews/hashreceipts only.",
+  "access_attempts": {
+    "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/kedem_access_attempts.json",
+    "sha256": "9671a7df22c5997ea8d8ba91c513171ed9c780fe108a22d495291b7149b2848e"
+  },
+  "validation": {
+    "rehearsal": true,
+    "three_manifest_replays_digest_unchanged": true,
+    "stale_metadata_replay_rejected_without_change": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "383 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1791,
+      "all_media_rows_present": 1440,
+      "local_image_rows": 1080,
+      "all_3_main_text_hashes_classifications_attributions_match": true,
+      "current_source_checks": {
+        "checked": 3,
+        "partial": 0
+      },
+      "new_3_image_hashes_match": true,
+      "all_73_source_capture_hashes_match": true,
+      "prior_28_named_appearances_present": true,
+      "prior_SD2_caption_formula_Miami_thesis_corrections_retained": true,
+      "scope": "Full local Mike projection; main MartínezLatin/English source presentations checked; article comparisons and wholeHilprechtqueue remain partial. Native text remains photo-only; no invented backconversion or public rights approval."
+    },
+    "state_recorded": true,
+    "latest_pre_batch_backups_retained": 10
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/martinez2003_text_capture_2026-10-02_production.jsonl",
+      "sha256": "25e15b92848f90d4bbd98ec7133f5db6764a9ee1b73b22664c19469f25d4d460"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_text_capture_2026-10-02_trial.jsonl",
+      "sha256": "25e15b92848f90d4bbd98ec7133f5db6764a9ee1b73b22664c19469f25d4d460"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_text_proof_2026-10-02_production.json",
+      "sha256": "4a7a147506c24bdd6d816dd4481656e78a9664fe5a6ecba60908264117ed095f"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_text_proof_2026-10-02_trial.json",
+      "sha256": "6a01f75246183d9fa04ab5ed5a6673432c4e140675f524c9ade9b428f522e918"
+    },
+    {
+      "path": "data/private/manifests/unreviewed_text_document_scope_2026-10-02_trial.json",
+      "sha256": "6a0ef77992063aef4485f4509fd8f0098bed5bd50aa0af62747acc428f5d63e5"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0020_martinez2003_source_checked.json",
+      "sha256": "c03805c8ff72f9ef9ed4f9976ff4ca10a5fec1671e4eb006ae56f5f3358af984"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/campaign_case_progress_checkpoint20.json",
+      "sha256": "3e0aa44febf7026a70f6c1911ddd068e50d12644784f9558df81b67ebc05a6b7"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/capture-production.json",
+      "sha256": "912792d0a8ce3a4defc3968f1863ca88ee1342089d56a059a680585ed718f14c"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/capture-trial.json",
+      "sha256": "d35e483ea80f4047557e62edfe9c82cb5fc478039a0d5af4eabee019bcdf4998"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/closure.json",
+      "sha256": "c035711ab0bba394ccf95985b7147ba11b4821b16159f99e69452aad47d493be"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/document_scope.py",
+      "sha256": "efd73a0478433e8e31bb94acef734f4b86b05951555720b8063c408bb129e75b"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/english-capture01.txt",
+      "sha256": "aa4c73a02065451e7f28abb1f4a7f518c9a99f8e407f09bbcbf1f6b278911b04"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/english-proof02.txt",
+      "sha256": "aa4c73a02065451e7f28abb1f4a7f518c9a99f8e407f09bbcbf1f6b278911b04"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/english-structured-capture01.txt",
+      "sha256": "d476832faed3e31b9854c3c3bdee1901c1f02cdaaa3abec2e3f041d6283739c8"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/english-structured-proof02.txt",
+      "sha256": "5c0284e4aacd8f8a20e83cc0a8ad688f3041ab49f863e504c310c67dbd1e0e27"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/held_pdf_inventory_checkpoint20.json",
+      "sha256": "380cd04016515dfbe8203cab5495b0794f7d6a906fb3bb43767e2d2a66c9a379"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/hilprecht_extraction_production.json",
+      "sha256": "8ad17579704a82d65602cb27506a3061016e4fa09e4a4f56d5157117d1fde4ba"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/hilprecht_extraction_trial.json",
+      "sha256": "8ad17579704a82d65602cb27506a3061016e4fa09e4a4f56d5157117d1fde4ba"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/kedem-distributor-robots-headers.txt",
+      "sha256": "63115c082ac56447b4ec1197fe0af5b65b2a4b37c63fd9acfab7bd385b08b458"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/kedem-distributor-robots.txt",
+      "sha256": "adaeb14712191bc71e7af68eb5974113f9ed384207a5cd30618e88f012ca1793"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/kedem-s3-robots-headers.txt",
+      "sha256": "966fbf0e7c52e18d424d59d5784c7d8a6f8ed6b8954b9d013d16a0d7188ae612"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/kedem-s3-robots.txt",
+      "sha256": "db67e4a0c5c03cbf42f38c5d16a15159687c21c5ff158ada4807d09811b36f43"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/kedem_access_attempts.json",
+      "sha256": "9671a7df22c5997ea8d8ba91c513171ed9c780fe108a22d495291b7149b2848e"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/latin-capture01.txt",
+      "sha256": "2bd1a1ffbbb830a6f0370ab9450bde74755661f86f4dd49756348344907a554a"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/latin-proof02.txt",
+      "sha256": "2bd1a1ffbbb830a6f0370ab9450bde74755661f86f4dd49756348344907a554a"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/martinez_extraction_production.json",
+      "sha256": "a494d95cea1d1855118f5c63061b3f2d1fc81ee226810c49a9fb8e273f23a1d5"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/martinez_extraction_trial.json",
+      "sha256": "c2b03cdf321bed236ae2e7d248a6d0e2fd1067caf20a8b5ecbf13b29a90aeb06"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/metadata.json",
+      "sha256": "803c0890a2fea3cc6ffbe938b515aaf389a6d4087e7249e074c6d1ab369411bd"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/prepare.py",
+      "sha256": "14ea5c2657bb3f2e2b55ff261e9101ab55acd4539f500cd3fcf578978185032e"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/production-verification.json",
+      "sha256": "a73c0aa9b421f1644cc2228c21d053ed51da76e2a884b4489727c5bc86bf6531"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/proof_inventory_production.json",
+      "sha256": "c9d45877fb9309dfa6ba65fc3561a25679d4eaaf651b9d97cec810e2c33f02b7"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/proof_inventory_trial.json",
+      "sha256": "b231bd94b49186d83778b4612a2ffdefd970a136c7c46dd8f1536c1e2db8174d"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/publisher-robots-headers.txt",
+      "sha256": "ee4b0c86bb4283f09243878eff9f985a9ae10a1200d097c9cef57c9f53c4465b"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/publisher-robots.txt",
+      "sha256": "1d083b159609c1b7cbe0f653a4f6cc2daba72dca82d110f002154526965a55e6"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/reader-build.log",
+      "sha256": "bdbfe9b966544339ccdc92a548aa98a37ae7f1a17e3663f1cc76b0895bf07e66"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/reader-verification.json",
+      "sha256": "1f9ab070f6624e35419252b760d0e6ba708aa3a696579c7d7987c08dc9e1080a"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/record_checkpoint.py",
+      "sha256": "cad05b452af3b77a504ae2dfc6ba90472a320b8e2a3b33719542f5868d921868"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/regenerate.py",
+      "sha256": "8eff4108b9b3426cae7b309417b7b577ec17814c2a88d040606f98bd216daa58"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/reports-final.json",
+      "sha256": "9ad1044e4b94ee48603b760dd0866f83ef8a23136af3155ef25b607a83384f41"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/robots-check.json",
+      "sha256": "afccbb74e395912a727fc766549918cd31a3de9b5c216918952b560d802279dc"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/source_check.py",
+      "sha256": "11b9922671b886826c510110458e87a68054bba156d51a2b8f7975fe43cb3623"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/tests-final.log",
+      "sha256": "59569fb887f8e777415026978db609cf8b85369756ee570e7aa7b84d0a5feb70"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/trial-verification.json",
+      "sha256": "d95e3b411ec73549b9089db1e367a0326697b28427e2c99465e322230cabbd8f"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/verify.py",
+      "sha256": "c81435b83b370c9aacb38eb3902b0ce87d6ada490261d4834c58137972746b86"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/verify_reader.py",
+      "sha256": "e0074a18f5a991738ffd33667fd0d31ea8921c0be894dfd1ca98f8d04ad96dfa"
+    },
+    {
+      "path": "data/private/research-work/unreviewed-text-source-audit-2026-10-02/whole_source_comparative_queue_checkpoint20.json",
+      "sha256": "2d74bb3d9deeb93e33c25e45b2ac497e0a34310d1289b74568f5e2495caab1fc"
+    },
+    {
+      "path": "research/receipts/martinez2003_private_images_2026-10-02.json",
+      "sha256": "8d82dcf54cc5dd249a80f4db1659bba964f115dc85301fc1ca062690e58cd345"
+    },
+    {
+      "path": "research/reviews/hs3005_remaining_scope_2026-10-02.json",
+      "sha256": "3b9ad00ee2a8fec9aa5198853a5ea6c2f30197cc3fd6bf267a8ecbdc9dd8725f"
+    },
+    {
+      "path": "research/reviews/martinez2003_capture_request_2026-10-02.json",
+      "sha256": "7aa1f517c5ea721582f56e440960272d3e0edbed3dd33f7fc7ce18054546a17b"
+    },
+    {
+      "path": "research/reviews/martinez2003_reading_evidence_2026-10-02.json",
+      "sha256": "5d1d23e79965a46f99c5e42528c35fef215b56ca2ad992055d356863d3ee75a7"
+    },
+    {
+      "path": "research/reviews/martinez2003_text_metadata_2026-10-02.json",
+      "sha256": "5db7342e686fbcf6371bbc1b07ddfe0b6150380d5c70214b7a11d3027f55b92e"
+    },
+    {
+      "path": "research/reviews/unreviewed_text_document_scope_2026-10-02_production.json",
+      "sha256": "da47851f7e985cfe885544d6ee0a195c001e4f4680565b557036205352f4e5c1"
+    }
+  ]
+}

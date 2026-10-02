@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "c4ec464a948eb641420a205bdece049ce4fcb24493a8caf8b4fbe8206b78bb56",
+  "corpus_digest": "45c1bd78045931fd4cccc48d16a960a037ec3497507e1b79657c41c5907f9bf8",
   "migrations": 21,
-  "note": "Goal checkpoint19:53bounded HS3005comparative quotes,44checked/9partial;28exact witnesses,34private facsimiles;JNF152case expanded;all priorrows/source hashes/final Mike reader verified",
-  "recorded_at": "2026-10-02T06:32:55+00:00",
+  "note": "Goal checkpoint20: Mart\u00ednez Borobio2003 main Latin/English source checks, retained copied-text/script repair, HS3005 remaining scope and Kedem access attempts; 383 tests and complete Mike reader verified.",
+  "recorded_at": "2026-10-02T07:04:15+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -23,8 +23,8 @@
       "rows": 1
     },
     "captures": {
-      "digest": "f88d0799f2092929cc92fe89ec4cd3c74a60f4728768dc25bab4a43b0a1581e6",
-      "rows": 72
+      "digest": "fe26384bcbaa384560f4db972aaf56c73dc48230d849b55e7f3e994b0248b9fe",
+      "rows": 73
     },
     "catalogue_metadata_corrections": {
       "digest": "3cef84c090629f77dccbf9a113e580591a4a8968c0a79ff8383ffb1d6ec5df68",
@@ -63,8 +63,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "f9fccdd27727959da474979b2eeb5e33d51cd659c326f760ce99c439eb8f75a6",
-      "rows": 80
+      "digest": "6c7299b035833f1f6a5db71e1848d680703b1ae4f47f4b7edf3374db5cf3d4da",
+      "rows": 82
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "c8aa39dba578f5f5466e09f7139b515e348446e03bfa25f20953902846f1902b",
-      "rows": 1437
+      "digest": "7c6286d436a772255f45737b744c79eabe81a390a875931592eb735820068d2d",
+      "rows": 1440
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -147,20 +147,20 @@
       "rows": 958
     },
     "text_metadata_corrections": {
-      "digest": "cfce5c0c4a0d26e7f5df8c5bcc160416274053b0291b7a1e63f4b853bf0c52ab",
-      "rows": 10
+      "digest": "9782717c3ac120dcdbd3582aa4fdfdd1187033472d49b54d8429b2dac6d144c8",
+      "rows": 11
     },
     "text_proofreading_reviews": {
-      "digest": "fd076b4841b7466e009b941a8c59535e5c2015bbb4d15efa23d0cc7cf99c9c21",
-      "rows": 1218
+      "digest": "eca1fcab6f2cb9fe81793986644bac9ef26bbc6cf83ccaef1caff1630fe36ea4",
+      "rows": 1221
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "c8684ca7e55ba92134819353d8096aa29e5cd270b7eab2ad179f3b418bca2d09",
-      "rows": 1789
+      "digest": "4499b2bbbbba57cd57704b00bf045e02ca501ca1af499148c272cdbd6e98539c",
+      "rows": 1791
     }
   }
 }

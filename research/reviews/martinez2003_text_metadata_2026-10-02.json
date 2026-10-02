@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T06:39:49+00:00",
+  "evidence_path": "research/reviews/martinez2003_reading_evidence_2026-10-02.json",
+  "evidence_sha256": "5d1d23e79965a46f99c5e42528c35fef215b56ca2ad992055d356863d3ee75a7",
+  "entries": [
+    {
+      "id": "IBI-TMETA-MARTINEZ2003-20261002-LATIN",
+      "text_id": "TXT-7DBC5A7924A5",
+      "expected_text_sha256": "f5a93212016bd99415de71eb786848b74b6f64cf88729577d9267a2d111128df",
+      "changes": {
+        "script": "Latin",
+        "locator": "printed324/PDF2, AC-MSEF transliteration01–10; notes324–325/PDF2–3"
+      },
+      "rationale": "Printed edition is Latin transliteration; Jewish square script describes the bowl inscription, not this stored text representation. Correct copied label and precise reading-page scope. Original row retained; no invented native transcription or rights clearance."
+    }
+  ]
+}
