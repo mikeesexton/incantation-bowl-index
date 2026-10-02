@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T13:10:11+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-HS8CMP25-FM2020",
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_id": "CAP-2861B06070B4",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "extraction_path": "data/private/research-work/hs3008-comparatives25-2026-10-02/cumulative_extraction_FM2020.json",
+      "extraction_sha256": "7de37d8c575692af221769bdc03b8861a29faabd641fc22554f9c594431ec292",
+      "evidence_path": "research/reviews/hs3008_comparatives25_evidence_2026-10-02.json",
+      "evidence_sha256": "48b4e8c75ed9ce979aa1833105142981d6c90ded73d932c066d91a7ebc840100",
+      "basis": "Retain previous extraction index cumulatively; add separately source-checked bounded clauses, with explicit partial statuses. No sourcewide completion.",
+      "supersedes_id": "IBI-DOC-FM2020-HS8CMP24"
+    },
+    {
+      "id": "IBI-DOC-HS8CMP25-MONT1913",
+      "source_id": "SRC-943673B56FB8",
+      "capture_id": "CAP-560EB584740F",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "c85f9eaadcd910652543bb54dab16e5a1a4ac7883df7b433ea2c9aa0b357abdf",
+      "extraction_path": "data/private/research-work/hs3008-comparatives25-2026-10-02/cumulative_extraction_MONT1913.json",
+      "extraction_sha256": "f20a7fe178826249d8a24a5269aaf2007c119bcf010efe2438922a17a9741041",
+      "evidence_path": "research/reviews/hs3008_comparatives25_evidence_2026-10-02.json",
+      "evidence_sha256": "48b4e8c75ed9ce979aa1833105142981d6c90ded73d932c066d91a7ebc840100",
+      "basis": "Retain previous extraction index cumulatively; add separately source-checked bounded clauses, with explicit partial statuses. No sourcewide completion.",
+      "supersedes_id": "IBI-DOC-MONTGOMERY1913-20260905"
+    }
+  ]
+}
