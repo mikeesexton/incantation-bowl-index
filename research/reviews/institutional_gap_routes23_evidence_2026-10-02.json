@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T09:42:51+00:00",
+  "held_sources": [
+    {
+      "capture_id": "CAP-9A969A128383",
+      "source_id": "SRC-JMS-JAHRESBERICHT2021",
+      "sha256": "140751cc59305d763fceb5a25858a03636c38d03cbc23179f9ea8c859321c1e7",
+      "url": "https://www.juedisches-museum.ch/wp-content/uploads/2022/04/JB-2021-1.pdf",
+      "scope": "Complete 25-page PDF; cover, final page and relevant PDF17 inspected in pixels. Remaining source-wide content audit not claimed."
+    },
+    {
+      "capture_id": "CAP-571B87FC1F54",
+      "source_id": "SRC-ISAC-AR1966-1967-RECORD",
+      "sha256": "a8dd97ece30f2dee8ce218d5ed142e0333aaa6863975b5d9dc3c1d90c87ea823",
+      "url": "https://isac.uchicago.edu/publications/annual-report-1966-1967",
+      "scope": "Full returned institutional publication HTML, original report PDF unheld."
+    }
+  ],
+  "page_pixel_checks": [
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/pages/basel-1.png",
+      "sha256": "0c9fc978b59d1536400612ce2a51eaf331ae660e7ada6258a7a7df6620943702"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/pages/basel-17.png",
+      "sha256": "978febe74e3d789831b9019c0eeed635dda3633f128c95eaa7ddf668d8a88055"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/pages/basel-25.png",
+      "sha256": "369faaae9957e22b66227c2b0d31bfa315df811ad95b025884459bd484444df6"
+    }
+  ],
+  "access_preflight": {
+    "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/robots_checks_escalated.json",
+    "sha256": "145c696212647001fe357ab0d25916993dd197a9592c34d08921d75902f0c76f"
+  },
+  "blocked_download_host": {
+    "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/isac-assets-robots-check.json",
+    "sha256": "644a292016853d861ac42b28085134a9ab9f33120813d51d4993d105c24297f0"
+  },
+  "basel_designation_finding": {
+    "locator": "PDF17, printed25–26, archaeological objects list",
+    "mandaic_designation_as_printed": "JMS1973_3",
+    "aramaic_designation_as_printed": "JMS1973_1",
+    "repeated_number_also_used_for": [
+      "lead sarcophagus fragment",
+      "lamp"
+    ],
+    "commons_comparison_designation": "JMS1973-2",
+    "decision": "Actual source number retained as an unresolved concordance lead. No correction to1973_2, object merge, exact publication link or reading capture."
+  },
+  "isac_report_route": {
+    "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/isac-observed-download-link.json",
+    "sha256": "e0d1df1124b918450c51f9f4a1cd15c8f3fb14d21b93b08ecfc44211ddb21a61"
+  },
+  "metadata_limits": "Berlin04366a and ISAC collection fields were retrieved through indexed primary metadata; direct open returned inaccessible page/client shell, respectively. Berlin02836, Commons and Hetjens DDB actual bodies inspected. Catalogue/indexed metadata cannot verify original inscription, excavation context, measurement convention or publication absence.",
+  "rights_and_scope": "Private holdings only. No rights/authenticity/uncertain identity adjudication. Unauthorized third-party book-repost hit excluded; no download or content reliance."
+}

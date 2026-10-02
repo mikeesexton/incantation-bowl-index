@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "checkpoint": 23,
+  "created_at": "2026-10-02T09:49:18+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_control_status": "blocked",
+  "goal_control_interpretation": "Fresh user-authorized continuation produced meaningful progress. Not an established research impasse; no new blocked/complete transition. Resume unavailable to Goal tools; Codex app computer control prohibited.",
+  "corpus_before": "bb5608302e64cee4e62cd0c296d5a097cc0d502d35bb4363db1e0b6247c1acd2",
+  "corpus_after": "e90d91053fbd8d12c909843f09e1c0be9271b023cdbe919d122f4529e4b898e6",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 24,
+  "frozen_unlinked_now": 225,
+  "complete_case_investigations_claimed": 0,
+  "changes": {
+    "sources": 3,
+    "captures": 2,
+    "document_assessments": 3
+  },
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 0,
+  "new_objects": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1155,
+  "checked_edition_text_rows": 1024,
+  "partial_edition_text_rows": 130,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1820,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1086,
+    "appearance_bearing_sources": 43,
+    "registered_pdf_sources": 47
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/campaign_case_progress_checkpoint23.json",
+    "sha256": "974cb23b1bfe3fdd44a688e6d7bfc6775120118a19bb8b882c70c0cab23ecf88"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/held_pdf_inventory_checkpoint23.json",
+    "sha256": "cf7b2f79628bbe7a05d521423f89ddda7a91ae54cbde960946e707e14b29d5ff"
+  },
+  "scope": "Goal checkpoint23 extends five frozen institutional investigations: Berlin VA Bab02836/04366a, ISAC A33980/10N-361A-B, Basel JMS1973-2 and Hetjens HM.2003-36. Complete Basel Jahresbericht2021 is held and its actual printed PDF17/printed25–26 numbering checked: Mandaic JMS1973_3 differs from Commons JMS1973-2 and repeats for other objects; no automatic match or photo substitution. Chicago1966–1967 publication-record HTML is held separately from the unheld report; exact1967/55pages/DOI/Nippur chapter/library route recorded, download-host robots403 respected. Three sources, two original captures and three document assessments added; no new object, text or exact scholarly link. Current frozen249 remains24linked/225unlinked/all249attempts/0complete investigations; priority827/1052(78.6%). Edition1155rows:1024checked/130partial/1unreviewed;1820totaltexts. HeldPDF1086appearances across43of47sources;45nativegaps unchanged. Goal control still reports blocked despite meaningful research; automatic continuation needs user/system resume, no research-completion claim.",
+  "next_actions": [
+    "Continue other225exact-designation gaps,205NLI catalogue-to-older-designation routes and held source quotation queues.",
+    "Basel1973accession-card/photo mapping; original native edition after match verified.",
+    "ISAC1966–1967actual report/library acquisition and original10N field/object register.",
+    "Berlin/Hetjens exact accession literature cards and excavation/acquisition records."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "bb5608302e64cee4e62cd0c296d5a097cc0d502d35bb4363db1e0b6247c1acd2",
+    "corpus_after": "e90d91053fbd8d12c909843f09e1c0be9271b023cdbe919d122f4529e4b898e6",
+    "changes": {
+      "sources": 3,
+      "captures": 2,
+      "document_assessments": 3
+    },
+    "all_preexisting_rows_identical": true,
+    "all_75_previous_captures_unchanged": true,
+    "all_77_capture_hashes_verified": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_objects": 0,
+    "new_texts": 0,
+    "new_publication_links": 0,
+    "totals": {
+      "objects": 2144,
+      "sources": 964,
+      "appearances": 2621,
+      "texts": 1820,
+      "media": 1456,
+      "captures": 77
+    },
+    "trial": true,
+    "python_tests": "389passed",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_1820_text_contents_attributions_and_expected_reader_classifications_match": true,
+      "all_media_rows_present": 1456,
+      "local_image_rows": 1096,
+      "all_77_capture_hashes_and_source_assignments_match": true,
+      "all_previous_source_assignment_and_text_metadata_corrections_retained": true,
+      "all_previous249casehistories_preserved": true,
+      "new_frozen_case_attempts": 5,
+      "new_complete_case_claims": 0,
+      "test_count": 389,
+      "new_source_count": 3,
+      "snapshot": {
+        "path": "site/mike-build/private-snapshot.json",
+        "sha256": "b6c91f3ff8918e25ed77d11ccffabf004e704ef13b7db1db6a62bd643ac24c6e"
+      }
+    },
+    "capture_and_document_replay": "Both production manifests replay with zero changes and unchanged corpus digest; source manifest ingested once, no source-replay claim.",
+    "trial_capture_source_assignment_replay": "0applied/2unchanged",
+    "draft_validation": "Invalid access status and shared URL collision caught in rehearsal and fixed before production; drafts and failed trial retained privately."
+  },
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0023_institutional_gap_routes.json",
+      "sha256": "d7d86c68b74608783ec8629659711cab69306c22e29146e9b30a85a8afa2091e"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/campaign_case_progress_checkpoint23.json",
+      "sha256": "974cb23b1bfe3fdd44a688e6d7bfc6775120118a19bb8b882c70c0cab23ecf88"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/held_pdf_inventory_checkpoint23.json",
+      "sha256": "cf7b2f79628bbe7a05d521423f89ddda7a91ae54cbde960946e707e14b29d5ff"
+    },
+    {
+      "path": "research/acquisitions/institutional_gap_routes23_2026-10-02.json",
+      "sha256": "f94737d7356bc8ef0e08bc0663fe5d2fc5366e562cd05e31e6e372de061d7e7d"
+    },
+    {
+      "path": "research/reviews/institutional_gap_routes23_evidence_2026-10-02.json",
+      "sha256": "f3c9c92a40931f5822c2320aa3442d3f82c10b5db4eccb530612ddb77e13bdcb"
+    },
+    {
+      "path": "research/sources/institutional_gap_routes23_2026-10-02.jsonl",
+      "sha256": "d68f748c6adc172e8a6a558e6b140c2c97d0d79a2d8d7c980ded498ff69321cd"
+    },
+    {
+      "path": "research/reviews/institutional_gap_routes23_documents_2026-10-02.json",
+      "sha256": "e5b0f118aac5fb61fb89fb244b62bf18ed3f080b0b7f352dddd25a09869c9c06"
+    },
+    {
+      "path": "data/private/manifests/institutional_gap_routes23_capture_transfer_2026-10-02.json",
+      "sha256": "192fa9ef1a15f7c88ffd4f2293f02d14ca0d618510bc49d0ba2605f5fa2cf013"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/search_coverage.json",
+      "sha256": "faab5d369f791effb9b7160b718768abc3f0ce7d90ef12af5837335b56acbc99"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/prepared.json",
+      "sha256": "1ce5149cb28f438c44a01ce1b7708c0f471f460b44b7d03621c128788c641f51"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/reader-verification.json",
+      "sha256": "a5d4821c41984f69a352be7f6d032871030c75e516836c3e1fa9f9d7af93ae7c"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/tests-final.log",
+      "sha256": "0d7914cdf5f50b422a07f9fab55b32f44e0374f8a722836b2d6f5036b8b2e019"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/reports-final.json",
+      "sha256": "0bbfe67a9220f64fcd92ca66990745851634fd5bdabb06bd174ce7723f868678"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/reader-build.log",
+      "sha256": "6d8bf738f336a99094c6dbc3c3794ec626ddd23ea38a4b442fd8822ada4f0f22"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/verify.py",
+      "sha256": "7868c492040a9be93f2de726c8e0a68cfd33dc435c620e6a67f2da5f9fb8bbe2"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/verify_reader.py",
+      "sha256": "8befe1c86d18bf0b99ad146e837227abab639fcb94e67470b83df77839977d58"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/prepare.py",
+      "sha256": "4f98ceefee09beae8a6a650d3e24c11de0c4925c45335411ed55ff5418ac4b4d"
+    },
+    {
+      "path": "data/private/research-work/institutional-gap-routes23-2026-10-02/record_checkpoint.py",
+      "sha256": "47c2c40ed370d489bf6971ca25a0873d585af4d6573c592053b32894ebcd96cb"
+    }
+  ],
+  "protected_payloads": "Source PDF/HTML and search/body extracts remain ignored/private; Git contains factual scopes/hashes only.",
+  "draft_pointer_correction": "Final review removed escaped tool-output punctuation accidentally copied into Commons URL. Correct actual primary redirected URL verified; superseded draft artifacts retained privately."
+}

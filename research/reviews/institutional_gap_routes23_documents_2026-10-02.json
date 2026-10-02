@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T09:42:51+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-ROUTES23-BASEL",
+      "source_id": "SRC-JMS-JAHRESBERICHT2021",
+      "capture_id": "CAP-9A969A128383",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "140751cc59305d763fceb5a25858a03636c38d03cbc23179f9ea8c859321c1e7",
+      "extraction_path": "data/private/research-work/institutional-gap-routes23-2026-10-02/basel-object-extraction-scope.json",
+      "extraction_sha256": "b1e7c5a2f3f3cc4eb91f7cf8df3d5aea2045e17dce7d45cb0c9e782f3f54686e",
+      "basis": "Complete25-page institutional report held. Actual PDF17/printed25–26 list and photograph inspected; number3 is printed and reused for non-bowl items. Exact JMS1973-2 association, native reading and source-wide extraction remain open.",
+      "evidence_path": "research/reviews/institutional_gap_routes23_evidence_2026-10-02.json",
+      "evidence_sha256": "f3c9c92a40931f5822c2320aa3442d3f82c10b5db4eccb530612ddb77e13bdcb"
+    },
+    {
+      "id": "IBI-DOC-ROUTES23-ISAC-RECORD",
+      "source_id": "SRC-ISAC-AR1966-1967-RECORD",
+      "capture_id": "CAP-571B87FC1F54",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "none",
+      "document_sha256": "a8dd97ece30f2dee8ce218d5ed142e0333aaa6863975b5d9dc3c1d90c87ea823",
+      "basis": "Complete returned publication-record HTML held. Bibliographic contents/year55pages/DOI/download link inspected. This source is the web record, not the1967 report body. No bowl-specific extraction claimed.",
+      "evidence_path": "research/reviews/institutional_gap_routes23_evidence_2026-10-02.json",
+      "evidence_sha256": "f3c9c92a40931f5822c2320aa3442d3f82c10b5db4eccb530612ddb77e13bdcb"
+    },
+    {
+      "id": "IBI-DOC-ROUTES23-ISAC-REPORT",
+      "source_id": "SRC-CHICAGO-ANNUALREPORT1966-1967",
+      "document_form": "no_document",
+      "extent": "citation_only",
+      "inspection": "not_inspected",
+      "text_state": "none",
+      "object_extraction": "none",
+      "basis": "Current primary institutional publication metadata verifies title/year/pages/DOI and Nippur chapter author. Original report not held. Actual observed PDF download host robots403 prevents automated capture; exact A33980 occurrence unverified.",
+      "evidence_path": "research/reviews/institutional_gap_routes23_evidence_2026-10-02.json",
+      "evidence_sha256": "f3c9c92a40931f5822c2320aa3442d3f82c10b5db4eccb530612ddb77e13bdcb"
+    }
+  ]
+}

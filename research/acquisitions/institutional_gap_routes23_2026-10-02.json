@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "agent": "Codex",
+  "checked_at": "2026-10-02T09:49:18+00:00",
+  "status": "acquisition leads only; no request, purchase or outbound contact",
+  "routes": [
+    {
+      "identity_id": "IDENT-817B3324D21D",
+      "object_id": "IBI-817B3324D21D",
+      "source_urls": [
+        "https://search.smb.museum/object/obj-1743770"
+      ],
+      "outcome": "Actual current German museum body identifies VA Bab02836, Obj1743770. Bounded exact-accession searches supplied museum metadata, no verified literal edition match. Missing English page/cache route does not imply missing publication. No physical measurement convention or excavation context verified from catalogue metadata.",
+      "next_actions": [
+        "Acquire exact VA Bab02836 object/accession card and museum literature references through museum/library holdings; original catalogue bibliography is needed.",
+        "Consult original Babylon excavation field/object registers keyed VA Bab02836 and Obj1743770; preserve collection namespace and leading digits.",
+        "Compare any proposed older Berlin edition against its actual accession heading/plate; older held VA2421 evidence does not establish a VA Bab02836 match."
+      ]
+    },
+    {
+      "identity_id": "IDENT-EA23C411BAE1",
+      "object_id": "IBI-EA23C411BAE1",
+      "source_urls": [
+        "https://search.smb.museum/en/object/obj-1743776"
+      ],
+      "outcome": "Current indexed primary metadata identifies VA Bab04366a/Obj1743776; direct English/German opens were unavailable in this tool. Exact unpadded-digit searches returned fallback noise, not scholarly matches. Primary edition body remains unverified, with no publication-absence or measurement adjudication.",
+      "next_actions": [
+        "Acquire exact VA Bab04366a/Obj1743776 accession/object card and literature references; retain suffix a and Babylon accession namespace.",
+        "Consult original Babylon excavation field/object register and museum collection bibliography for the full accession.",
+        "Inspect actual edition heading/plate before any proposed match; bare4366/2836 numbers and unrelated VA2421 references are insufficient."
+      ]
+    },
+    {
+      "identity_id": "IDENT-AA15A1232B1F",
+      "object_id": "IBI-AA15A1232B1F",
+      "source_urls": [
+        "https://isac-idb.uchicago.edu/id/d1b417d1-6cc2-4b8e-a281-19b417f898de",
+        "https://isac.uchicago.edu/publications/annual-report-1966-1967"
+      ],
+      "outcome": "Exact A33980/10N-361A-B season lead narrowed to primary AnnualReport1966–1967 record:1967,55pages, DOI10.83354/5tan-4r28, contents TheNippurExpedition byJamesKnudstad. Publication-record HTML held separately from unheld report. Observed PDF download host robots403; target not fetched. Museum direct open is client shell; indexed fields/blank reading fields do not verify edition or absence.",
+      "next_actions": [
+        "Obtain AnnualReport1966–1967 (Chicago1967,55pages, DOI10.83354/5tan-4r28) through library/manual permitted route; inspect Knudstad Nippur chapter and any exact10N-361A-B/A33980 entry or plate.",
+        "Consult Nippur10N field register and accession3633/objectA33980 card for exact fragments/designation and original publication pointers.",
+        "Verify original Knudstad Sumer24(1968) report bibliography and actual95–106 pages before assigning a bowl match; this remains a provisional secondary bibliographic route."
+      ]
+    },
+    {
+      "identity_id": "IDENT-9746820141A2",
+      "object_id": "IBI-9746820141A2",
+      "source_urls": [
+        "https://www.juedisches-museum.ch/wp-content/uploads/2022/04/JB-2021-1.pdf",
+        "https://commons.wikimedia.org/wiki/File:Mandaic_Incantation_Bowl.jpg"
+      ],
+      "outcome": "Complete25-page museum Jahresbericht2021 captured. PDF17/printed25–26 actually prints Mandaic JMS1973_3 and Aramaic JMS1973_1;1973_3 also repeats on sarcophagus/lamp. Commons caption reports Mandaic JMS1973-2 and DieterHofer photographer; uploader/source-author LGLou is a distinct role. Actual digit3 confirmed in pixels; no OCR repair or automatic match. Photograph in annual report is captioned Aramaic, no Mandaic photo substitution. No literal inscription or translation supplied by inspected list/caption.",
+      "next_actions": [
+        "Obtain museum1973 accession cards keyed JMS1973-1/2/3 and photograph-to-object mapping; reconcile annual-report designation against exact Commons photograph without silently correcting either source.",
+        "Find the attributed native Mandaic edition/translation and original photographs after exact designation is verified.",
+        "NaomiLubrich(ed.), Geburtskultur/BirthCulture, SchwabeBasel2022, ISBN9783796546075, is a bibliographic acquisition lead only; exact JMS1973-2 bowl content is not verified. Inspect actual book/index before assigning a reference.",
+        "Audit remaining report contexts separately;25-page possession and bounded text-layer discovery do not establish complete object extraction."
+      ]
+    },
+    {
+      "identity_id": "IDENT-B013DF222B9B",
+      "object_id": "IBI-B013DF222B9B",
+      "source_urls": [
+        "https://www.deutsche-digitale-bibliothek.de/item/T4U6BPHOZYQQAUXABQH67R3ZNFHY55NX",
+        "https://www.duesseldorf.de/dkult/DE-MUS-037918/208233"
+      ],
+      "outcome": "Actual primary DDB body identifies HM.2003-36; observed official DKult partner object208233 route is unavailable/cache-miss through this tool. DDB catalogue wording/photo is not literal inscription or translation, and no exact scholarly edition match was verified. Museum copyright is not public reuse clearance.",
+      "next_actions": [
+        "Obtain official DKult object208233/HM.2003-36 full record and acquisition card with literature references.",
+        "Inspect Hetjens2003 acquisition annual report or acquisition/exhibition publication for the exact accession; acquire native edition/translation and original image if a reference is supplied.",
+        "Retain exact accession punctuation and check actual edition/photograph rather than inferring current publication absence from catalogue silence."
+      ]
+    }
+  ],
+  "evidence": {
+    "path": "research/reviews/institutional_gap_routes23_evidence_2026-10-02.json",
+    "sha256": "f3c9c92a40931f5822c2320aa3442d3f82c10b5db4eccb530612ddb77e13bdcb"
+  },
+  "access_policy": "Actual download-host robots403 left unverified; no target fetch, controls bypass or alternate guessed asset path. Primary metadata verifies bibliography only; no reading, findspot, uncertain match or publication-absence decision."
+}

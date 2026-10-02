@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "bb5608302e64cee4e62cd0c296d5a097cc0d502d35bb4363db1e0b6247c1acd2",
+  "corpus_digest": "e90d91053fbd8d12c909843f09e1c0be9271b023cdbe919d122f4529e4b898e6",
   "migrations": 21,
-  "note": "Checkpoint22: exact Michigan catalogue and Dickens references, three source-checked quotations, two original captures transferred without refetch; all previous rows retained",
-  "recorded_at": "2026-10-02T08:40:46+00:00",
+  "note": "Checkpoint23: five institutional investigations extended; Basel annual report and ISAC metadata captured with three scoped holdings assessments; exact accession ambiguity and report acquisition routes retained; no new reading or uncertain link.",
+  "recorded_at": "2026-10-02T09:53:08+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -23,8 +23,8 @@
       "rows": 1
     },
     "captures": {
-      "digest": "565c13dd7906abb565cbadfe1118b128629fc076c4b9801c802dc293f26bd4cc",
-      "rows": 75
+      "digest": "249f4350431332372f801b15c74f8ecbb766fd157899cf94cccb335615cdc853",
+      "rows": 77
     },
     "catalogue_metadata_corrections": {
       "digest": "3cef84c090629f77dccbf9a113e580591a4a8968c0a79ff8383ffb1d6ec5df68",
@@ -63,8 +63,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "1066f41e2771a8769000314da9a8f69862217ae586167d7c9b001e6a4378ec8e",
-      "rows": 87
+      "digest": "1c1d9ab0f05a9a23a13336f4702856424b273ed608af3d89f4f3f3d22fa27a6e",
+      "rows": 90
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -143,8 +143,8 @@
       "rows": 119
     },
     "sources": {
-      "digest": "388a89ac9f580079770d8bdd983952ff5bd66959c5473f8bf5514a398796fa4d",
-      "rows": 961
+      "digest": "c8d47f0b7e700ed3d7bc18fac4d23d8173d10fffaa1d314916ee9c9c01899fef",
+      "rows": 964
     },
     "text_metadata_corrections": {
       "digest": "9782717c3ac120dcdbd3582aa4fdfdd1187033472d49b54d8429b2dac6d144c8",
