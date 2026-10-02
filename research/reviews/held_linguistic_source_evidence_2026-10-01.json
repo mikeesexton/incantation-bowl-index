@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "inspected_by": "Codex",
+  "inspected_at": "2026-10-02T03:24:44+00:00",
+  "held_sources": {
+    "SRC-D721A94FA3B2": {
+      "capture_id": "CAP-858BA69920ED",
+      "sha256": "d0bf2ceb21b2bec97bdf2096574aad9193410c039e240a9ac681723c656d9034",
+      "path": "data/private/archive/sha256/d0/d0bf2ceb21b2bec97bdf2096574aad9193410c039e240a9ac681723c656d9034"
+    },
+    "SRC-HORNKOHL-KHAN2020-VOCALISATION": {
+      "capture_id": "CAP-F1F043A04B53",
+      "sha256": "241b5231aa7dfa16667b511a1e6982f501a385a3b0ea9ef11cfc7ae3ccdb10aa",
+      "path": "data/private/archive/sha256/24/241b5231aa7dfa16667b511a1e6982f501a385a3b0ea9ef11cfc7ae3ccdb10aa"
+    },
+    "SRC-MOLIN2020-BIBLICAL-QUOTATIONS": {
+      "capture_id": "CAP-50E40BDF7D75",
+      "sha256": "241b5231aa7dfa16667b511a1e6982f501a385a3b0ea9ef11cfc7ae3ccdb10aa",
+      "path": "data/private/archive/sha256/24/241b5231aa7dfa16667b511a1e6982f501a385a3b0ea9ef11cfc7ae3ccdb10aa"
+    },
+    "SRC-1E2E21DC61BD": {
+      "capture_id": "CAP-E77DD534FF79",
+      "sha256": "545d89c8de51dee8871cf4bf48b18202ea57cbe023b745cedbf997f6da07548b",
+      "path": "data/private/archive/sha256/54/545d89c8de51dee8871cf4bf48b18202ea57cbe023b745cedbf997f6da07548b"
+    },
+    "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES": {
+      "capture_id": "CAP-945D9CCAC42D",
+      "sha256": "c0bd6a93857c81d8e8f67e2fbf2ffb971e8bd85e1f336b4d70a4e63ce2ee2bee",
+      "path": "data/private/archive/sha256/c0/c0bd6a93857c81d8e8f67e2fbf2ffb971e8bd85e1f336b4d70a4e63ce2ee2bee"
+    }
+  },
+  "private_audit": {
+    "path": "data/private/research-work/held-linguistic-sources-2026-10-01/held_source_audit.json",
+    "sha256": "1069e025147acbc06e768cca7634c5c94e85cd81741664ef48bb10ba05c8dc08"
+  },
+  "original_edition_pages_inspected": [
+    6,
+    152,
+    153,
+    188,
+    189
+  ],
+  "review_pages_inspected": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "review_citation_policy": "Retain printed12:2; separately give Bowl12a line1/p188 and12b line4/p189. Parallel sectionII may explain citation; do not declare error without convention evidence.",
+  "new_text_rows": 6,
+  "new_appearances": 3,
+  "new_objects": 0,
+  "interpretation_policy": "Both reported English glosses retained. Review verifies its own quotations; original1985 independently inspected, originalJuusola1999 p134 unheld.",
+  "catalogue_pointer_correction": {
+    "object_id": "IBI-572A3A5EA968",
+    "original_source_id": "SRC-1E2E21DC61BD",
+    "heading_locator": "Bowl4 printed152/PDF152",
+    "contents_number": "1042",
+    "heading_number": "1402",
+    "status": "genuine within-source discrepancy; old heading attribution corrected, both reports retained",
+    "contents_page_image_path": "data/private/research-work/held-linguistic-sources-2026-10-01/pages/amb6.png",
+    "contents_page_image_sha256": "0e2e0bd940310cdad24fb0eb8a2719c11920f2b0f2f35a3db9595c32c15ca813",
+    "page_image_path": "data/private/research-work/held-linguistic-sources-2026-10-01/pages/amb152.png",
+    "page_image_sha256": "a0df67550ce4be80bdc5c3fe956dd2fe1e5e5272df0082ad94e8ea582e1c387f"
+  },
+  "whole_cases_completed": 0,
+  "native_frozen_gaps_closed": 0,
+  "new_acquisitions": 0,
+  "allowance_resets_used": 0,
+  "rights_approvals": 0
+}

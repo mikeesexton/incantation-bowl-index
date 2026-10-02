@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T03:24:44+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-HELDLING-CAP-858BA69920ED-20261002",
+      "source_id": "SRC-D721A94FA3B2",
+      "capture_id": "CAP-858BA69920ED",
+      "supersedes_id": "IBI-DOC-WAJSBERG2001-20260912",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "d0bf2ceb21b2bec97bdf2096574aad9193410c039e240a9ac681723c656d9034",
+      "basis": "Complete held8page review. Three exact object-specific quotation appearances and5native/reportedEnglish rows extracted. Unassigned forms and directJuusola book checks remain open; reviewer reports not adjudicated.",
+      "evidence_path": "research/reviews/held_linguistic_source_evidence_2026-10-01.json",
+      "evidence_sha256": "c620f61d76942ef758548b9093a8cd3e0c43ab2759520f200dcb1f9aa1911f97",
+      "extraction_path": "data/private/manifests/held_linguistic_quotes_2026-10-01.jsonl",
+      "extraction_sha256": "10dce68a241ae069af973ba17bbc6f22a87672ab138d1464759b3c218d727a6d"
+    },
+    {
+      "id": "IBI-DOC-HELDLING-CAP-F1F043A04B53-20261002",
+      "source_id": "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "capture_id": "CAP-F1F043A04B53",
+      "supersedes_id": "IBI-DOC-HORNKOHL-KHAN2020-20260912",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "241b5231aa7dfa16667b511a1e6982f501a385a3b0ea9ef11cfc7ae3ccdb10aa",
+      "basis": "Complete713page volume; partial bowl extraction credited through identical-byte Molin chapter, without duplicate source appearances/texts. Whole keyword screen and chapter-context audit documented. Further full-volume diplomatic audit not claimed.",
+      "evidence_path": "research/reviews/held_linguistic_source_evidence_2026-10-01.json",
+      "evidence_sha256": "c620f61d76942ef758548b9093a8cd3e0c43ab2759520f200dcb1f9aa1911f97",
+      "extraction_path": "data/private/research-work/held-linguistic-sources-2026-10-01/volume_chapter_extraction_index.json",
+      "extraction_sha256": "3410c16b2cc721c718685933bcecb59b80116cae8812b2c8af96aa086aa8a21f"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T03:24:44+00:00",
+  "evidence_path": "research/reviews/held_linguistic_source_evidence_2026-10-01.json",
+  "evidence_sha256": "c620f61d76942ef758548b9093a8cd3e0c43ab2759520f200dcb1f9aa1911f97",
+  "entries": [
+    {
+      "id": "IBI-CAT-CORR-WAJS-B4-IBI-572A3A5EA968",
+      "target_table": "objects",
+      "source_id": "SRC-1E2E21DC61BD",
+      "before": {
+        "id": "IBI-572A3A5EA968",
+        "label": "Naveh–Shaked 1985 Bowl 4: Hebrew University Institute of Archaeology 1042",
+        "object_type": "whole_bowl",
+        "record_status": "probable",
+        "authenticity": "unassessed",
+        "summary": "Aramaic incantation bowl published as Bowl 4 in Naveh and Shaked 1985.",
+        "created_at": "2026-09-11 17:12:35",
+        "updated_at": "2026-09-11 17:12:35"
+      },
+      "changes": {
+        "label": "Naveh–Shaked 1985 Bowl 4"
+      },
+      "rationale": "OriginalNaveh–Shaked1985 contents PDF6 report1042; Bowl4 heading p152 reports1402. Correct inaccurate combined page attribution and unqualified display label; retain both source reports and original complete snapshots. No accession adjudication, identity merge or reading change."
+    },
+    {
+      "id": "IBI-CAT-CORR-WAJS-B4-APP-5E1EA0308D60",
+      "target_table": "appearances",
+      "source_id": "SRC-1E2E21DC61BD",
+      "before": {
+        "id": "APP-5E1EA0308D60",
+        "source_id": "SRC-1E2E21DC61BD",
+        "locator": "Bowl 4 (Hebrew University Institute of Archaeology 1042), p. 152",
+        "title": null,
+        "url": null,
+        "observed_at": "2026-09-11",
+        "description": "Catalogue-level metadata from a complete researcher-inspected edition.",
+        "raw_json": null,
+        "created_at": "2026-09-11 17:12:35"
+      },
+      "changes": {
+        "locator": "Bowl 4, p. 152 (heading No. 1402; contents PDF6 reports No. 1042)"
+      },
+      "rationale": "OriginalNaveh–Shaked1985 contents PDF6 report1042; Bowl4 heading p152 reports1402. Correct inaccurate combined page attribution and unqualified display label; retain both source reports and original complete snapshots. No accession adjudication, identity merge or reading change."
+    },
+    {
+      "id": "IBI-CAT-CORR-WAJS-B4-IDN-058F2D616366",
+      "target_table": "identifiers",
+      "source_id": "SRC-1E2E21DC61BD",
+      "before": {
+        "id": "IDN-058F2D616366",
+        "object_id": "IBI-572A3A5EA968",
+        "appearance_id": "APP-5E1EA0308D60",
+        "source_id": "SRC-1E2E21DC61BD",
+        "scheme": "collection designation",
+        "value": "Hebrew University Institute of Archaeology 1042",
+        "normalized_value": "hebrewuniversityinstituteofarchaeology1042",
+        "assigning_body": null,
+        "confidence": 1.0,
+        "notes": null
+      },
+      "changes": {
+        "notes": "Reported as1042 in the original edition contents PDF6; the Bowl4 heading printed152/PDF152 reports1402. Both source reports retained; accession correctness unresolved. This identifier is not a verification of the p152 heading."
+      },
+      "rationale": "OriginalNaveh–Shaked1985 contents PDF6 report1042; Bowl4 heading p152 reports1402. Correct inaccurate combined page attribution and unqualified display label; retain both source reports and original complete snapshots. No accession adjudication, identity merge or reading change."
+    },
+    {
+      "id": "IBI-CAT-CORR-WAJS-B4-CLM-2F4316B16C7D",
+      "target_table": "claims",
+      "source_id": "SRC-1E2E21DC61BD",
+      "before": {
+        "id": "CLM-2F4316B16C7D",
+        "object_id": "IBI-572A3A5EA968",
+        "appearance_id": "APP-5E1EA0308D60",
+        "source_id": "SRC-1E2E21DC61BD",
+        "field": "current_or_reported_collection",
+        "value_text": "Hebrew University Institute of Archaeology 1042",
+        "value_json": null,
+        "normalized_value": null,
+        "certainty": "reported",
+        "locator": "contents and Bowl 4, p. 152",
+        "quotation": null,
+        "notes": null,
+        "supersedes_claim_id": null,
+        "created_at": "2026-09-11 17:12:35"
+      },
+      "changes": {
+        "locator": "Bowl4 contents PDF6 (unnumbered contents page), No1042",
+        "notes": "Contents report1042 retained; heading printed152/PDF152 reports1402 separately. Prior combined locator incorrectly implied1042 was printed in the heading."
+      },
+      "rationale": "OriginalNaveh–Shaked1985 contents PDF6 report1042; Bowl4 heading p152 reports1402. Correct inaccurate combined page attribution and unqualified display label; retain both source reports and original complete snapshots. No accession adjudication, identity merge or reading change."
+    },
+    {
+      "id": "IBI-CAT-CORR-WAJS-B4-CLM-E593CBE03838",
+      "target_table": "claims",
+      "source_id": "SRC-1E2E21DC61BD",
+      "before": {
+        "id": "CLM-E593CBE03838",
+        "object_id": "IBI-572A3A5EA968",
+        "appearance_id": "APP-5E1EA0308D60",
+        "source_id": "SRC-1E2E21DC61BD",
+        "field": "publication_status",
+        "value_text": "Catalogued in a complete researcher-inspected edition.",
+        "value_json": null,
+        "normalized_value": null,
+        "certainty": "reported",
+        "locator": "Bowl 4 (Hebrew University Institute of Archaeology 1042), p. 152",
+        "quotation": null,
+        "notes": "Copyrighted transcription, translation, commentary, and images remain in the private source archive and are not reproduced here.",
+        "supersedes_claim_id": null,
+        "created_at": "2026-09-11 17:12:35"
+      },
+      "changes": {
+        "locator": "Bowl 4, p. 152 (heading No. 1402; contents PDF6 reports No. 1042)"
+      },
+      "rationale": "OriginalNaveh–Shaked1985 contents PDF6 report1042; Bowl4 heading p152 reports1402. Correct inaccurate combined page attribution and unqualified display label; retain both source reports and original complete snapshots. No accession adjudication, identity merge or reading change."
+    },
+    {
+      "id": "IBI-CAT-CORR-WAJS-B4-CLM-D37CBEC727FD",
+      "target_table": "claims",
+      "source_id": "SRC-1E2E21DC61BD",
+      "before": {
+        "id": "CLM-D37CBEC727FD",
+        "object_id": "IBI-572A3A5EA968",
+        "appearance_id": "APP-5E1EA0308D60",
+        "source_id": "SRC-1E2E21DC61BD",
+        "field": "identifier_warning",
+        "value_text": "The edition heading on p. 152 reads 1402; the existing catalogue appearance records 1042.",
+        "value_json": null,
+        "normalized_value": null,
+        "certainty": "reported",
+        "locator": "p. 152",
+        "quotation": null,
+        "notes": "The discrepancy is preserved without adjudication or overwrite.",
+        "supersedes_claim_id": null,
+        "created_at": "2026-09-27 16:40:01"
+      },
+      "changes": {
+        "value_text": "The original edition contents PDF6 report1042, while the Bowl4 heading printed152/PDF152 reports1402. Both source reports retained; accession correctness unresolved. Former combined heading attribution corrected with immutable history.",
+        "locator": "Bowl4 contents PDF6 and heading printed152/PDF152",
+        "notes": "Genuine within-source discrepancy, not settled by preferring a page. No identity merge or scholarly reading adjudication."
+      },
+      "rationale": "OriginalNaveh–Shaked1985 contents PDF6 report1042; Bowl4 heading p152 reports1402. Correct inaccurate combined page attribution and unqualified display label; retain both source reports and original complete snapshots. No accession adjudication, identity merge or reading change."
+    }
+  ]
+}

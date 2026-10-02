@@ -274,6 +274,15 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   original retrieval snapshot; the correction changes only the work association.
   An existing document assessment requires a separate ledger repair and cannot
   be silently reassigned by this command.
+- `ibi ingest-catalogue-metadata` repairs copied catalogue pointers and display
+  labels against complete before snapshots and hash-bound evidence. Its immutable
+  ledger preserves earlier rows; replaying an earlier candidate import resolves
+  the corrected appearance and cannot restore superseded identifier or claim
+  metadata. This narrow command does not change identity links, source attribution,
+  readings or physical claims. When source pages themselves disagree, retain both
+  reports and correct only their attribution; do not turn a pointer repair into
+  an accession adjudication. Research exports redact ledger snapshots because an
+  appearance's original payload may include protected expression.
 
 ### Before you finish
 

@@ -1,6 +1,7 @@
 import json
 
 from .ids import new_id
+from .catalogue_metadata import corrected_appearance, corrected_identifier_import, corrected_claim_import
 
 
 SOURCE_FIELDS = (
@@ -129,6 +130,8 @@ def add_candidate(conn, record):
         "WHERE a.source_id=? AND a.locator=? AND l.relation_type <> 'rejected' LIMIT 1",
         (source_id, appearance["locator"]),
     ).fetchone()
+    if not existing:
+        existing = corrected_appearance(conn, source_id, appearance["locator"])
     if existing:
         # Compact manifests evolve as concordances are discovered. Re-ingesting
         # the same appearance should safely add newly documented identifiers
@@ -136,6 +139,8 @@ def add_candidate(conn, record):
         for identifier in record.get("identifiers", []):
             value = identifier["value"]
             normalized = identifier.get("normalized_value", normalize_identifier(identifier["scheme"], value))
+            if corrected_identifier_import(conn, existing["object_id"], source_id, identifier["scheme"], normalized):
+                continue
             if conn.execute(
                 "SELECT 1 FROM identifiers WHERE object_id=? AND source_id=? AND scheme=? "
                 "AND normalized_value=?",
@@ -158,6 +163,9 @@ def add_candidate(conn, record):
                 if claim.get("value_json") is not None else None
             )
             locator = claim.get("locator", appearance["locator"])
+            if corrected_claim_import(conn, existing["object_id"], existing["appearance_id"], source_id,
+                                      claim["field"], claim.get("value_text"), value_json, locator):
+                continue
             if conn.execute(
                 "SELECT 1 FROM claims WHERE object_id=? AND appearance_id=? AND source_id=? "
                 "AND field=? AND value_text IS ? AND value_json IS ? AND locator=?",

@@ -8,7 +8,7 @@ from .identity import write_identity_export
 
 EXPORT_TABLES = (
     "sources", "captures", "capture_source_corrections", "document_assessments", "search_runs", "search_queries", "coverage_targets", "saturation_sweeps", "manual_audits", "accuracy_audit_reviews", "objects",
-    "appearances", "appearance_object_links", "identifiers", "claims", "texts", "events", "media",
+    "appearances", "appearance_object_links", "identifiers", "claims", "catalogue_metadata_corrections", "texts", "events", "media",
     "leads", "dedupe_candidates", "dedupe_evidence", "claim_conflict_reviews", "claim_conflict_review_history", "text_proofreading_reviews", "text_metadata_corrections", "media_rights_reviews", "claim_locator_corrections", "source_corrections", "museum_concordance_reviews", "object_relationship_assertions", "merge_log",
 )
 
@@ -16,6 +16,11 @@ EXPORT_TABLES = (
 def _public_rows(table, rows):
     """Redact text payloads; this is not a complete public-release review."""
     redactions = {}
+    if table == "catalogue_metadata_corrections":
+        for row in rows:
+            row["before_json"] = None
+            row["after_json"] = None
+        redactions["redacted_catalogue_snapshots"] = len(rows)
     if table in {"text_proofreading_reviews", "text_metadata_corrections"}:
         for row in rows:
             row["before_json"] = None

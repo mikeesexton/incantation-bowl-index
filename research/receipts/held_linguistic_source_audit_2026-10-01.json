@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "checkpoint": 13,
+  "created_at": "2026-10-02T03:29:19+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "18970690e79b95a9f17718eecc2dc76a5c6e4813cff84afac49f6a335ec05785",
+  "corpus_after": "13962fc672da4a6fa426ca2d7ea90cb2f953a8e0924a74ef4123abbfcdfe4569",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "new_text_rows": 6,
+  "new_text_characters": 97,
+  "separate_source_checks_added": 6,
+  "source_appearances_added": 3,
+  "private_page_images_added": 3,
+  "unique_rendered_source_pages_added": 2,
+  "publication_assessments_added": 3,
+  "document_assessments_added": 2,
+  "catalogue_metadata_corrections_added": 6,
+  "new_heading_report_claims": 1,
+  "new_heading_report_identifiers": 1,
+  "identity_merges": 0,
+  "catalogue_discrepancy": "Bowl4 contents1042 vs heading1402: original source disagreement retained, erroneous combined heading attribution corrected.",
+  "Juusola_holding": "6pages frontmatter only; original book-body reading not verified by review",
+  "volume_chapter_relationship": "Same archived PDFsha for parent volume and Molin chapter; partial extraction indexed through chapter, no duplicate parent appearances/texts",
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1003,
+    "appearance_bearing_sources": 39,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-795E719C624E",
+      "SRC-8FA39ADCBF5F",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES"
+    ]
+  },
+  "edition_text_rows": 1014,
+  "checked_edition_text_rows": 895,
+  "partial_edition_text_rows": 117,
+  "unreviewed_edition_text_rows": 2,
+  "total_text_rows": 1679,
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Audit the two remaining held zero-appearance short sources SRC-795E719C624E and SRC-8FA39ADCBF5F, then the separately scoped Miami chapter: actual quotes/designations before corpus links, independent source checks before capture-completion claims.",
+    "Juusola1999 actual held6page frontmatter contains no body. Obtain complete lawful book or exact requested45/188,134 and corpus26–29/conclusions245ff for unidentified verbal/participle forms, unnamedBTA-feature bowls and direct author-gloss verification. Review reports remain distinct.",
+    "Naveh–Shaked1985 Bowl4: contentsPDF6 reports1042; headingp152 reports1402. Corrected combined attribution and displaylabel; both reported identifiers/claims retained. Seek accession-bearing institutional register or independent edition evidence; no number adjudication or merge.",
+    "Thesis DA4/DA5 interlinear/glyph/magic-sign questions and two Latin translation ambiguities retain exact private regions; native Mandaic script unrecovered. Continue original-source/frozen NLI concordance routes while Segal2000/Ford2025/McCullough1967 acquisition stays open."
+  ],
+  "protected_payloads": "Ignored private vault/manifests only; content-free hashes committed. No public release, deployment or push.",
+  "changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 3
+    },
+    {
+      "table": "appearances",
+      "added": 3
+    },
+    {
+      "table": "catalogue_metadata_corrections",
+      "added": 6
+    },
+    {
+      "table": "claims",
+      "added": 1
+    },
+    {
+      "table": "document_assessments",
+      "added": 2
+    },
+    {
+      "table": "identifiers",
+      "added": 1
+    },
+    {
+      "table": "media",
+      "added": 3
+    },
+    {
+      "table": "objects",
+      "added": 0
+    },
+    {
+      "table": "publication_assessments",
+      "added": 3
+    },
+    {
+      "table": "schema_migrations",
+      "added": 1
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 6
+    },
+    {
+      "table": "texts",
+      "added": 6
+    }
+  ],
+  "modified_originals_preserved": [
+    {
+      "table": "appearances",
+      "id": "APP-5E1EA0308D60",
+      "original_preserved_in_immutable_history": true
+    },
+    {
+      "table": "claims",
+      "id": "CLM-2F4316B16C7D",
+      "original_preserved_in_immutable_history": true
+    },
+    {
+      "table": "claims",
+      "id": "CLM-E593CBE03838",
+      "original_preserved_in_immutable_history": true
+    },
+    {
+      "table": "claims",
+      "id": "CLM-D37CBEC727FD",
+      "original_preserved_in_immutable_history": true
+    },
+    {
+      "table": "identifiers",
+      "id": "IDN-058F2D616366",
+      "original_preserved_in_immutable_history": true
+    },
+    {
+      "table": "objects",
+      "id": "IBI-572A3A5EA968",
+      "original_preserved_in_immutable_history": true
+    }
+  ],
+  "all_other_preexisting_rows_identical": true,
+  "validation": {
+    "rehearsal": true,
+    "immutable_manifest_replays": {
+      "trial_manifests": 8,
+      "production_manifests": 8,
+      "trial_digest_after_replay": "9832bae11e9b534ffa2c9c1cf32675bffeaa2973801aa4fcc57a19e35df1c2b3",
+      "production_digest_after_replay": "13962fc672da4a6fa426ca2d7ea90cb2f953a8e0924a74ef4123abbfcdfe4569",
+      "digest_unchanged": true,
+      "original_bowl4_import_replay_unchanged": true
+    },
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "381 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1679,
+      "all_media_rows_present": 1345,
+      "local_image_rows": 985,
+      "new_text_hashes_match": 6,
+      "new_image_hashes_match": 3,
+      "all_source_capture_hashes_match": 71,
+      "bowl4_display_and_both_reported_numbers_preserved": true,
+      "corrected_thesis_source_and_book_link_absence_verified": true,
+      "scope": "Complete local private Mike projection; no public release or deployment."
+    }
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/held_linguistic_proof_SRC-D721A94FA3B2_2026-10-01_production.json",
+      "sha256": "9f12156203de60816258d9110d9d2fc83ce2803cecea87e8d8ba44c46a2376e4"
+    },
+    {
+      "path": "data/private/manifests/held_linguistic_proof_SRC-D721A94FA3B2_2026-10-01_trial.json",
+      "sha256": "186c59642798207572fd7184712a9822ed331b1fc88b55341a32738d2828144c"
+    },
+    {
+      "path": "data/private/manifests/held_linguistic_proof_SRC-MOLIN2020-BIBLICAL-QUOTATIONS_2026-10-01_production.json",
+      "sha256": "b1b8e653198c7bfdddc90659a04d5e186d662b5616abfe12e87a529d13e6cb8e"
+    },
+    {
+      "path": "data/private/manifests/held_linguistic_proof_SRC-MOLIN2020-BIBLICAL-QUOTATIONS_2026-10-01_trial.json",
+      "sha256": "48ba7c6eb49f59c1a9d2145be5e370577cd32b5eec761471b2275b14295c6cfe"
+    },
+    {
+      "path": "data/private/manifests/held_linguistic_quotes_2026-10-01.jsonl",
+      "sha256": "10dce68a241ae069af973ba17bbc6f22a87672ab138d1464759b3c218d727a6d"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0013_held_linguistic_sources_and_catalogue_pointers.json",
+      "sha256": "a24d37ad89dcdd993353979ad2a6c9abdd3c30084758d7f927b03405fb1d9e6f"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/12A-NATIVE-capture01.txt",
+      "sha256": "4f0d0ab7a5d54af66e86c8e76f8be74ee410a019b9e72262c17d8f7d22c552fb"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/12A-NATIVE-proof02.txt",
+      "sha256": "4f0d0ab7a5d54af66e86c8e76f8be74ee410a019b9e72262c17d8f7d22c552fb"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/12B-NATIVE-capture01.txt",
+      "sha256": "1e8ef9f35680053e26056af3afb9667b6805aed89eef0d4f8e0cb28663bffcac"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/12B-NATIVE-proof02.txt",
+      "sha256": "1e8ef9f35680053e26056af3afb9667b6805aed89eef0d4f8e0cb28663bffcac"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/B4-JUUSOLA-capture01.txt",
+      "sha256": "08d492f152cd874b738c69ead11871afe1213fa6b77355568e5218e05b62ca50"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/B4-JUUSOLA-proof02.txt",
+      "sha256": "08d492f152cd874b738c69ead11871afe1213fa6b77355568e5218e05b62ca50"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/B4-NATIVE-capture01.txt",
+      "sha256": "000e9abaf45e2cdc1bc9c679de0edd0e0b70a1cde65f84cd49a6c3547b8b4075"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/B4-NATIVE-proof02.txt",
+      "sha256": "000e9abaf45e2cdc1bc9c679de0edd0e0b70a1cde65f84cd49a6c3547b8b4075"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/B4-NAVEH-capture01.txt",
+      "sha256": "7eb322c2152193f428aa119823a64acdff430c21640bf3e813d38ed6031abeea"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/B4-NAVEH-proof02.txt",
+      "sha256": "7eb322c2152193f428aa119823a64acdff430c21640bf3e813d38ed6031abeea"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/MOLIN-OTHER-NATIVE-capture01.txt",
+      "sha256": "a73e110bbb0b719c77371b8d01fea34f0c44f6ff8b8723d0d650088c624eed60"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/MOLIN-OTHER-NATIVE-proof02.txt",
+      "sha256": "a73e110bbb0b719c77371b8d01fea34f0c44f6ff8b8723d0d650088c624eed60"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/amb1985-discovery.json",
+      "sha256": "2a65b80b45e57b059b09c9c33b7bc8a784563c0ff75ced69c81a31bbb4a51897"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/apply.py",
+      "sha256": "1bfee697720cfa7ac32e0b637b9d468c813d582b6785cde8d59b86356d570d01"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/held_pdf_inventory_checkpoint13.json",
+      "sha256": "88b237eb7ceb98fc1b4d1764f4738afb2942b0736a2530b31bbdc8d1e8d6dea4"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/held_source_audit.json",
+      "sha256": "1069e025147acbc06e768cca7634c5c94e85cd81741664ef48bb10ba05c8dc08"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/item_inventory.json",
+      "sha256": "7eba2d3a73eaee357683590f1f77d110bd683aa7bba6b50cd4547bafb26adc11"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/juusola-discovery.json",
+      "sha256": "a36e233afb1cbc3b0709ca2c24df7cd1ae271de5afb39e93afd13add83a4bbb8"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/media.py",
+      "sha256": "4eeb99dac7cbd949181bb52348a013acf92a72c7bc0003d49eb3c13c5413945b"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/metadata.json",
+      "sha256": "0284f7d23264f5be078d0b2abef9ebee81a68c514fc9f073eae75423ff9400aa"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/old_import_replay_verification.json",
+      "sha256": "ac1da29b224beb26c0d160dfd9b0bf681a59a54a1e63fa2c12407e8adae943d5"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/prepare.py",
+      "sha256": "b3e7ef9617d77102625ab82091a04ffc82ec1e5172410d0622fa6a334bbf3cfd"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/production-apply.json",
+      "sha256": "e27eb63f777df990ea06cc77c54ae2ae3ad19116296c4ee44a34dfd494b3f5d0"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/production-replay.json",
+      "sha256": "7633228859f087a004eaad059092d52f70438dde43b170d0ddaae92bceac6142"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/production-verification.json",
+      "sha256": "114a0b4aa614d7021b5044bc350d024fd45c8454a58d30b42d41fec4e182daf5"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/proof_inventory_production.json",
+      "sha256": "9ec3bdf364be3b1f86d5f0c5a8bd3ba66498aa3db4d1040c2747d8149a9b543c"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/proof_inventory_trial.json",
+      "sha256": "66a3cdbe135841b0722807f3646ad5b8705b9bf19f0f0f2685e1fcda19ebb082"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/record_checkpoint.py",
+      "sha256": "f356e10d10d7645e938771e3d784f74e799fa1956749a7a8b914838a30607a80"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/review-discovery.json",
+      "sha256": "0c99569773fda6288731194b17df28e028f430a277712a2059db53f811acdcdc"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/source_check.py",
+      "sha256": "fffb7e4df9714d5bb408567f652d5fe0593aeefaf93f610f5baadde2164cb264"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/trial-apply.json",
+      "sha256": "f179783142b2773b808fc8cbe97a7ac9ae1145671409692a50b258f8176d1eb5"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/trial-replay.json",
+      "sha256": "3af65cde5a5860106d58b38782daba20b8bb8ad2026f37c659d4aca516d473c2"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/trial-verification.json",
+      "sha256": "48a5989a2f26533dd28fa5a617b73fb113a1a5f2c4b8abcf59e071349638449d"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/verify.py",
+      "sha256": "158035c02d3f3d39dcbb929eded0d13644bfe066e2ddcb7146852cb9aa76a182"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/volume-discovery.json",
+      "sha256": "9c78ffdc4ec1f34fc3407485935a5ac8f71a23ce048197e95800992a8bbbaba3"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/volume_chapter_extraction_index.json",
+      "sha256": "3410c16b2cc721c718685933bcecb59b80116cae8812b2c8af96aa086aa8a21f"
+    },
+    {
+      "path": "research/receipts/held_linguistic_private_page_images_2026-10-01.json",
+      "sha256": "15546b3a296ad55b5b77e8165fc671d4be5f9f4263a0cdc8e04a0b99bf88d558"
+    },
+    {
+      "path": "research/reviews/held_linguistic_document_assessments_2026-10-01.json",
+      "sha256": "da2a03b83078cef6d5c7fc31dbfa9a16a08fa62f252493f75a095083ecc378bd"
+    },
+    {
+      "path": "research/reviews/held_linguistic_publication_assessments_2026-10-01.json",
+      "sha256": "d859f6eedff8165d71bc1d657c1e3770ce9e378aeddcf781ad9bb5aeff8be7ab"
+    },
+    {
+      "path": "research/reviews/held_linguistic_quote_appearances_2026-10-01.jsonl",
+      "sha256": "c64a2dbf10858bb1458f0822344f3d68107a21b40986e964365d0960df2102de"
+    },
+    {
+      "path": "research/reviews/held_linguistic_source_evidence_2026-10-01.json",
+      "sha256": "c620f61d76942ef758548b9093a8cd3e0c43ab2759520f200dcb1f9aa1911f97"
+    },
+    {
+      "path": "research/reviews/naveh_shaked1985_bowl4_heading_report_2026-10-01.jsonl",
+      "sha256": "3d72e3f77c95af99ffc3a9a703da45ad703ee89f35c00ddb402e0f3ca1bcfb36"
+    },
+    {
+      "path": "research/reviews/wajsberg2001_bowl4_catalogue_correction_2026-10-01.json",
+      "sha256": "1eda543e4a104670abb14dcf7c187842f1dca73830416030f28ca8a25d3045d9"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/reader-verification.json",
+      "sha256": "dd6ec13edb2d3a2ad535f2d7830ad424ffd4878dfee9245272ef9e0b7788bc99"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/verify_reader.py",
+      "sha256": "6adae00b04a3fbb771cbdf3dd127b02d0e2db18b07f84d35900be642e8a013c2"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/reader-build.log",
+      "sha256": "ba33838e4360553a85f4741ee22f61cc7f221bd69aa0fb637940676d01e2ff03"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/tests-final.log",
+      "sha256": "5c9041971ce7fbdf51c3eda2b8ca6ad687e76c310717bff778bdb7ba3b1b26da"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/reports-final.json",
+      "sha256": "e53f555a16531fd9c964f1bef2ed5733e6eecb96dcb6ea10b763d859bcf88e78"
+    },
+    {
+      "path": "data/private/research-work/held-linguistic-sources-2026-10-01/old_import_production_replay.json",
+      "sha256": "a3b8cb64c23c12bc950237bc7a7d700a8150956fe56aa4af7cdf5fc8f22ab298"
+    }
+  ]
+}
