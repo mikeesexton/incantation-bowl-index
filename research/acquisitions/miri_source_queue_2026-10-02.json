@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T19:04:26+00:00",
+  "updated_at": "2026-10-02T19:32:56+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -92,7 +92,7 @@
       "sha256": "8d3f33530391bca2f3f23faf7ec7b700fdcbb52cf40b842a64d4203ec2cbd977",
       "status": "Researcher-supplied complete local document held",
       "resolved_at": "2026-10-02T19:04:26+00:00",
-      "reading_audit": "Partial source audit: complete provided shared English and labelled variants checked; native own-column and grey/erasure capture pending.",
+      "reading_audit": "Partial source audit: all four own provided native columns plus complete shared English and bounded Penn variants source-copy checked; commentary/reference/earlier-image audit remains open.",
       "prior_acquisition_requirement": {
         "source_id": "SRC-CA4B122C5F4D",
         "citation": "Abudraham, Ohad. ‘Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels.’ JSS 71, no. 1 (2026): 105–134.",
@@ -210,8 +210,8 @@
   ],
   "acquisition_and_reading_completion_separate": true,
   "current_reading_queue": {
-    "path": "data/private/manifests/abudraham39-2026-10-02/production/extraction.json",
-    "sha256": "0b1ef78dce5777979a21d834b30c7fc8c8d0a4f4f3917ffe64f99ac7af1b39ce"
+    "path": "data/private/manifests/abudraham-native40-2026-10-02/production/extraction.json",
+    "sha256": "0ccd4a6463891c12413861c8beed0f2188acd3fb95ec10c4cabbce71decbaeaf"
   },
   "fulltextworking_inventory": {
     "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
@@ -219,7 +219,7 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/abudraham39-2026-10-02/acquisition-queue-before.json",
-    "sha256": "a2b42b3eb1fbec67c9afab2a12ac5b796df65abcc374a2f71aa94204aaceaf0c"
+    "path": "data/private/research-work/abudraham-native40-2026-10-02/acquisition-queue-before.json",
+    "sha256": "c42168bef6ada21ad68b3afd39a7a09e5a19a39f2e0a1eee2185651fd25b1a5f"
   }
 }
