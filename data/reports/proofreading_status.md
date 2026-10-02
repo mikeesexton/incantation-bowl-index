@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1021 | 130 | 1 | 1152 | 88.6% |
+| Edition text (translation, transcription, transliteration) | 1024 | 130 | 1 | 1155 | 88.7% |
 | Other stored text (mostly source extracts and summaries) | 0 | 6 | 659 | 665 | 0.0% |
-| All stored text | 1021 | 136 | 660 | 1817 | 56.2% |
+| All stored text | 1024 | 136 | 660 | 1820 | 56.3% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 564 | 43 | 1 | 608 |
+| translation | 567 | 43 | 1 | 611 |
 | transcription | 317 | 68 | 0 | 385 |
 | transliteration | 140 | 19 | 0 | 159 |
 
@@ -55,10 +55,12 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum (`SRC-ABUDRAHAM2023-MIAMI`) | 14 | 1 | 0 | 15 |
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 1 | 0 | 0 | 1 |
 | ‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore (`SRC-B891A0061CEA`) | 2 | 0 | 0 | 2 |
+| Traditions of Magic in Late Antiquity (`SRC-BOHAK1996-TRADITIONS-MAGIC`) | 1 | 0 | 0 | 1 |
 | MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples (`SRC-C54888E36130`) | 1 | 0 | 0 | 1 |
 | Jewish Aramaic Incantation Bowls (`SRC-C5AA2D8C1284`) | 2 | 0 | 0 | 2 |
 | Linguistic Peculiarities in the Aramaic Magic Bowl Texts (review) (`SRC-D721A94FA3B2`) | 5 | 0 | 0 | 5 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 30 | 0 | 0 | 30 |
+| Syro-Uigurica III: Enochic Material in a Christian Text from Turfan (`SRC-DICKENS2021-SYROUIGURICAIII`) | 2 | 0 | 0 | 2 |
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 31 | 31 | 0 | 62 |
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 1 | 1 | 0 | 2 |

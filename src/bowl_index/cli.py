@@ -3,7 +3,7 @@ import json
 import sqlite3
 from pathlib import Path
 
-from .archive import capture_file, capture_url, verify_archive
+from .archive import capture_file, capture_url, verify_archive, import_capture_receipts
 from .collectors import (
     collect_apotropaic, collect_british_museum_related, collect_met, collect_penn,
     collect_nli, collect_schoyen, load_british_museum_page_mappings,
@@ -189,6 +189,8 @@ def build_parser():
     deposit.add_argument("--rights-status", default="unknown")
     deposit.add_argument("--note")
     sub.add_parser("verify-archive", help="verify every archived file against its manifest hash")
+    transfers = sub.add_parser("ingest-capture-receipts", help="transfer hash-checked earlier project captures without fetching again")
+    transfers.add_argument("path")
     sub.add_parser(
         "enrich", help="derive conservative source-preserving normalized claims"
     )
@@ -440,6 +442,8 @@ def main(argv=None):
         print(json.dumps(
             ingest_montgomery_review(conn, args.pdf, args.review), indent=2, sort_keys=True
         ))
+    elif args.command == "ingest-capture-receipts":
+        print(json.dumps(import_capture_receipts(conn, json.loads(Path(args.path).read_text()), PROJECT_ROOT), indent=2))
     elif args.command == "capture":
         print(json.dumps(capture_url(conn, args.url, args.source_id, args.rights_status), indent=2, sort_keys=True))
     elif args.command == "deposit":

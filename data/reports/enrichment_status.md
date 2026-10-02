@@ -2,31 +2,31 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1791**
+- Working physical identity hypotheses (all statuses): **1795**
 - Multi-record identity clusters: **219**
-- Underlying source records (all identities): **2140**
+- Underlying source records (all identities): **2144**
 - Pending dedupe decisions: **0**
 
 ## Identity-level coverage
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1288 | 71.9% |
+| Location | 1288 | 71.8% |
 | Provenance | 373 | 20.8% |
 | Dating | 484 | 27.0% |
-| Dimensions | 515 | 28.8% |
-| Material | 410 | 22.9% |
-| Language | 1029 | 57.5% |
+| Dimensions | 515 | 28.7% |
+| Material | 410 | 22.8% |
+| Language | 1029 | 57.3% |
 | Script | 94 | 5.2% |
-| Text Edition | 428 | 23.9% |
-| Translation | 460 | 25.7% |
-| Image | 612 | 34.2% |
+| Text Edition | 428 | 23.8% |
+| Translation | 461 | 25.7% |
+| Image | 612 | 34.1% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 648 |
+| 0–2 of 10 | 652 |
 | 3–5 of 10 | 876 |
 | 6–8 of 10 | 253 |
 | 9–10 of 10 | 14 |
@@ -35,7 +35,7 @@
 
 | Next action | Identities |
 |---|---:|
-| Location | 503 |
+| Location | 507 |
 | Provenance | 1007 |
 | Dating | 66 |
 | Dimensions | 139 |
@@ -47,7 +47,7 @@
 
 ## Claim conflicts
 
-**432** identities triggered raw difference flags. Current reviews support **569** compatible field-level instances and **16** substantive instances. **278** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**433** identities triggered raw difference flags. Current reviews support **568** compatible field-level instances and **16** substantive instances. **283** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T08:29:35+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-MICH22-catalogue-html-RENEWED",
+      "source_id": "SRC-BOHAK1996-TRADITIONS-MAGIC",
+      "capture_id": "CAP-DAC4000E2651",
+      "document_form": "born_digital",
+      "extent": "excerpt",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "105ce2975efa214419e749581574b5942ff2c842026cea0b056a097f104a4d56",
+      "extraction_path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/extraction_catalogue-html_production.json",
+      "extraction_sha256": "eb0c40507ad2241717cd9732e759d94d799bf083edf500bf3d616d4c1ac2d270",
+      "evidence_path": "research/reviews/michigan_magic_evidence_2026-10-02.json",
+      "evidence_sha256": "7875c38fa982ea57e9695853fddcd925ec05058f2998074421ebb531a6d671c7",
+      "basis": "Actual primary HTML text or complete42-page scholarly PDF held; exact translation/printed614 inspected. Complete physical edition/image/sourcewide audit not claimed. Renewed after capture transfer verification. Earlier review timestamp copied the batch opening time; this timestamp records the completed source check. Content, attribution and source scope unchanged; original review retained.",
+      "supersedes_id": "IBI-DOC-MICH22-catalogue-html"
+    },
+    {
+      "id": "IBI-DOC-MICH22-dickens-RENEWED",
+      "source_id": "SRC-DICKENS2021-SYROUIGURICAIII",
+      "capture_id": "CAP-1BD6AAFE214E",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "655a3f13b7fb1124d2527b0d9ffe554a4c80fe69e22d1652f1b55c488a946a20",
+      "extraction_path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/extraction_dickens_production.json",
+      "extraction_sha256": "7da6d506c5d310d5676439d2b56141c3d94d5f77bd642abed3fbdfe03dde7881",
+      "evidence_path": "research/reviews/michigan_magic_evidence_2026-10-02.json",
+      "evidence_sha256": "7875c38fa982ea57e9695853fddcd925ec05058f2998074421ebb531a6d671c7",
+      "basis": "Actual primary HTML text or complete42-page scholarly PDF held; exact translation/printed614 inspected. Complete physical edition/image/sourcewide audit not claimed. Renewed after capture transfer verification. Earlier review timestamp copied the batch opening time; this timestamp records the completed source check. Content, attribution and source scope unchanged; original review retained.",
+      "supersedes_id": "IBI-DOC-MICH22-dickens"
+    }
+  ]
+}

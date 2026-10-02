@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "checkpoint": 22,
+  "created_at": "2026-10-02T08:35:40+00:00",
+  "prior_turn_classification": "no_progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "c47e736a644f46dba3f74a34fe28a1649581e026c82cd8c88c7d13e2f16b3ace",
+  "corpus_after": "bb5608302e64cee4e62cd0c296d5a097cc0d502d35bb4363db1e0b6247c1acd2",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 2,
+  "frozen_linked_now": 24,
+  "frozen_unlinked_now": 225,
+  "linked_priority_identities_now": 827,
+  "unlinked_priority_identities_now": 225,
+  "new_sources": 3,
+  "new_captures": 2,
+  "new_objects": 4,
+  "source_appearances_added": 10,
+  "new_text_rows": 3,
+  "new_text_characters": 2372,
+  "source_checks_current_added": 3,
+  "source_check_history_added": 6,
+  "private_page_images_added": 2,
+  "publication_assessments_history_added": 16,
+  "publication_assessments_current_added": 8,
+  "document_assessments_history_added": 4,
+  "document_assessments_current_added": 2,
+  "identity_merges": 0,
+  "all_preexisting_rows_identical": true,
+  "edition_text_rows": 1155,
+  "checked_edition_text_rows": 1024,
+  "partial_edition_text_rows": 130,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1820,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1086,
+    "appearance_bearing_sources": 43,
+    "registered_pdf_sources": 46
+  },
+  "allowance_resets_used": 0,
+  "scope": "Bohak1996sixexactKelseyentries indexed:fullavailableKM19504Englishcaptured, nativeedition/photo absent. Dickens2021complete42-pagePDF held; two bounded quotes sourcecheckedprinted614. Montgomery1913originalprinted183/PDF189 verifiesNo14pointer; historical16917/16017differencealreadyknowninproject retained. Roberts2015scientificreport and Neiman2015caption attributed. Sourcepseudo-script/alternativeletters interpretations and differingassemblagereports retained, no scholarlyadjudication. FullcataloguePDF notheld. Originallawfultrialcapture rows transferred hashbound after currentrepeatrobotsfailure; no bypass/freshfetchclaim. Initialbatch-openingreviewtimestamps renewed with originalledgers preserved.",
+  "next_actions": [
+    "Continue225frozenpublicationgaps with exactdesignation investigations and primary original collection/concordance/image routes.",
+    "KM19504nativeoriginaledition/photographs/laterLaValleepublication; full1996PDFmanualacquisition and historicalmirrorcomparison.",
+    "KM33756Bohak2008p186figure3.6actualpage and originalSeleuciaexcavation/eggshellassociationrecords.",
+    "Inspect remainingDickensarticlecontexts/footnotes for bowl quotations, excludingTurfanamulets/manuscript.",
+    "ContinuewholeHilprechtqueue/130partialrows/1Kedemunreviewed/45nativegaps."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/campaign_case_progress_checkpoint22.json",
+    "sha256": "b87cd67d04503ba8f4ac71c288ed4fe67b2e4058481a4ffd9b45da11a59565b0"
+  },
+  "changes": {
+    "sources": 3,
+    "captures": 2,
+    "objects": 4,
+    "appearances": 10,
+    "appearance_object_links": 10,
+    "identifiers": 4,
+    "claims": 28,
+    "texts": 3,
+    "media": 2,
+    "text_proofreading_reviews": 6,
+    "document_assessments": 4,
+    "publication_assessments": 16
+  },
+  "protected_payloads": "Protected translations, quotes and full ingestion/review payloads remain in ignored private vault; Git receipts contain counts/hashes/factual source scopes only.",
+  "validation": {
+    "rehearsal": true,
+    "production_eight_manifest_replays_digest_unchanged": true,
+    "all_preexisting_rows_identical": true,
+    "all_73_preexisting_capture_rows_unchanged": true,
+    "all_75_capture_hashes_verified": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "389 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1820,
+      "all_media_rows_present": 1456,
+      "local_image_rows": 1096,
+      "all_new_3_text_hashes_classifications_attributions_match": true,
+      "current_source_checks": {
+        "checked": 3,
+        "partial": 0
+      },
+      "new_2_image_hashes_match": true,
+      "all_75_source_capture_hashes_match": true,
+      "all_10_named_appearances_present": true,
+      "prior_Martinez_SD2_caption_formula_Miami_thesis_corrections_retained": true,
+      "scope": "Full local Mike projection; three new source-checked English quotations, fullnative/photo/archaeological/sourcewide audits remain open. Original capture retrieval metadata preserved."
+    }
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/michigan_magic_capture_transfer_2026-10-02.json",
+      "sha256": "23be0ad76b8529986cb9a4eb7038a8629f918f66752c61b360434bf1f3406c7d"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_checkpoint22_2026-10-02_production.jsonl",
+      "sha256": "da1ca46aea59536f2509bf8c9fb0a076f3e28a72977d4bab5b67eec44f83a1d9"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_checkpoint22_2026-10-02_trial.jsonl",
+      "sha256": "da1ca46aea59536f2509bf8c9fb0a076f3e28a72977d4bab5b67eec44f83a1d9"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_document_2026-10-02_trial.json",
+      "sha256": "57900d3b37761cac6adbc347d033927c27fa5cb362edcf1f4fa98577bf9cdd3a"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_proof_catalogue-html_2026-10-02_production.json",
+      "sha256": "0bf35c7ed481e72d6ccdf2dcbf57b403870e2bfc430f7b62a8b9cfc85e9a8eea"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_proof_catalogue-html_2026-10-02_trial.json",
+      "sha256": "38cf42b967597642a8f6180210e8de9f30158dde549a5ca1200987cdcc0f7a3a"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_proof_catalogue-html_renewed_2026-10-02_production.json",
+      "sha256": "5da0481cc1ee210173cfb0c36aeb323dd24c3808b9a8b017fd81d900276e7cf5"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_proof_dickens_2026-10-02_production.json",
+      "sha256": "91b9153d6b72483e62d24385c322b9d9d94633a9a418e719728c805c3cdbd7c7"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_proof_dickens_2026-10-02_trial.json",
+      "sha256": "4883977538bc3e5ae47428e1e56899fd943a30d750fb0fca0b48344c2926d525"
+    },
+    {
+      "path": "data/private/manifests/michigan_magic_proof_dickens_renewed_2026-10-02_production.json",
+      "sha256": "855a8a812e70ba61e11cab68cc938f69d1bc2eacc81f60ea31038ee69ab1e4d5"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0022_michigan_magic_institutional_routes.json",
+      "sha256": "74b70d301d98f53f00911fe733977d7d0c05fab089f4aae97c62ac5c34b79705"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/CAT37-E-capture01.txt",
+      "sha256": "9d370b599c79f16a0c7670f083df7ef0e78a32a139f5891d0aeb962cfde55e01"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/CAT37-E-proof02.txt",
+      "sha256": "9d370b599c79f16a0c7670f083df7ef0e78a32a139f5891d0aeb962cfde55e01"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/DICKENS19504-E-capture01.txt",
+      "sha256": "f984f4941acc1fa2c400265d65c48df5fd904aae468e08ab72322fa4380bba8f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/DICKENS19504-E-proof02.txt",
+      "sha256": "f984f4941acc1fa2c400265d65c48df5fd904aae468e08ab72322fa4380bba8f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/DICKENSMONT14-E-capture01.txt",
+      "sha256": "6752c67969c6ef0efc41204bb22e6a2188a7f83fe4b68a498e3e8b18cbb9d4f8"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/DICKENSMONT14-E-proof02.txt",
+      "sha256": "6752c67969c6ef0efc41204bb22e6a2188a7f83fe4b68a498e3e8b18cbb9d4f8"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/apps.lib.umich.edu-robots.txt",
+      "sha256": "9a72c7f4184965b18f7959ed33dff757f6d58842356942f07034267ceca24eb3"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/campaign_case_progress_checkpoint22.json",
+      "sha256": "b87cd67d04503ba8f4ac71c288ed4fe67b2e4058481a4ffd9b45da11a59565b0"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/catalogue-html-production-capture.json",
+      "sha256": "c3b84ce53a753f60d4095471a00d1d7c713702b8540d357331cfadca81b3b286"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/catalogue-html-trial-capture-errors.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/catalogue-html-trial-capture.json",
+      "sha256": "c3b84ce53a753f60d4095471a00d1d7c713702b8540d357331cfadca81b3b286"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/catalogue-trial-capture-errors.txt",
+      "sha256": "0733ab6b81abc12aae35482966176de5ddef9b9252e590247369ea0199815827"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/catalogue-trial-capture.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/closure.json",
+      "sha256": "dff7aad5e64c905b53d064ec7fa3fc7117821223760a698141785f821866b801"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/conserving-html-trial-capture-errors.txt",
+      "sha256": "237bcbfe6faf86811e4287ca091c148530ff9af3d1237fd628acd95d3b6b4bfc"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/conserving-html-trial-capture.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/deepblue.lib.umich.edu-robots.txt",
+      "sha256": "799d555d6116d816546a30292e7924d4490f0047a2381e2a6fd9d8540aa0361c"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/dickens-discovery-page-queue.json",
+      "sha256": "baba86da269a104540fe38a6144da0253bc9255646f91d71111a8acc2abfd6ae"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/dickens-pdf01-discovery.txt",
+      "sha256": "27733ca5969805c75472f4e9674dbf5e57e734279794d7ff929fbf3dffc1eaa4"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/dickens-pdf32-discovery.txt",
+      "sha256": "4b17fdce1db430eea3e9bbf3fd8e3c4f84a361ef96083b727fa74bae6f4020fb"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/dickens-production-capture.json",
+      "sha256": "a04b3b25adabea7d3e561586d8394e011d2cb056746186fc3c44a00d7b860826"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/dickens-robots-check.json",
+      "sha256": "90476fe73a1be010a6580742321564b6e2580001c5eee262bb04720d6edfeefa"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/dickens-trial-capture.json",
+      "sha256": "a04b3b25adabea7d3e561586d8394e011d2cb056746186fc3c44a00d7b860826"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/existing_designation_screen.json",
+      "sha256": "aa9b92fe07219a29a536f690d9ae7dcbebd7e75a0e28d43bae3f8dd20d3a6606"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/extraction_catalogue-html_production.json",
+      "sha256": "eb0c40507ad2241717cd9732e759d94d799bf083edf500bf3d616d4c1ac2d270"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/extraction_catalogue-html_trial.json",
+      "sha256": "c8fb35334bd6cc215f8642f7ee5358f0fc9a964a023db159e361725d014b4dbd"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/extraction_dickens_production.json",
+      "sha256": "7da6d506c5d310d5676439d2b56141c3d94d5f77bd642abed3fbdfe03dde7881"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/extraction_dickens_trial.json",
+      "sha256": "1eb346e3caae39bc0a5c9357e29339bcd578892e8cb7e29d4d8c72f62e8e9131"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/held_pdf_inventory_checkpoint22.json",
+      "sha256": "563d4d929db62b19e065f74350f032fbc2f8d0b975391f43c30d483434b7c3bd"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/item_inventory_production.json",
+      "sha256": "cd10957a65c1fc2f20c41f1831051537eed683961cfda6bc62d60a93635c3641"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/item_inventory_trial.json",
+      "sha256": "cd10957a65c1fc2f20c41f1831051537eed683961cfda6bc62d60a93635c3641"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/metadata.json",
+      "sha256": "1352c26a5c225f86f7df1f2ec0cb8099524ba32c0506d7c8c5713dae5b4b5654"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/montgomery-pdf187-discovery.txt",
+      "sha256": "a29c39a2099846dcee822662ce743de4050bf99b645232694b2589715a9a7301"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/montgomery-pdf188-discovery.txt",
+      "sha256": "adf53bdb440e10064b4510a31c80fc3189b54c02c0ee6b1efba19df778142437"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/montgomery-pdf189-discovery.txt",
+      "sha256": "01f34ddaf176de180cbdfdb025bc33c89ebbfe15d226ba33821955b0447caae0"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/pdf-discovery-response.json",
+      "sha256": "f19bf7bb012e118c14ab6d7ffc6b54e1e0dd82670f8236e23d8ea3dd915262b1"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/prepare.py",
+      "sha256": "fdf28edaf99a7c908c0689192ff597300e713572f9a3312c2458ccdfd79bcb2f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/production-network-attempt.json",
+      "sha256": "ccf93b6624e4d7119c304646dcfedec28635cc62fe4df7b8f0dec7f4bdb75f13"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/production-verification.json",
+      "sha256": "6c16f59a9b36ff9b68af207c5e479ae7596cf544ad437e24bd317a0548c64b74"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/proof_inventory_initial_production.json",
+      "sha256": "7b5577ec09f844f27ea3fb613fb5185e8da23b79104fc86117711806dc20a142"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/proof_inventory_production.json",
+      "sha256": "0af8bb73a2f02189265e796d4a0fef7b7d489a9eee44bbd5e9bdfbc3395d78ff"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/proof_inventory_trial.json",
+      "sha256": "98cb7e5562fc187bb41661589b55485f8db0389b73c9567e3e58ff74764c8283"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/reader-build.log",
+      "sha256": "e836117038a6269214ab750afa04bd9808f786fa86eb8cc66c0971f089a22948"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/reader-verification.json",
+      "sha256": "19f44d266cc2798fb28ce2bc50075b9523ab23da79e3070ba859cf4f290808f2"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/real.mtak.hu-robots.txt",
+      "sha256": "4a343fec9a9c4dfc8211d002918d25603b9d669ca0aca26f592bee33fb81b346"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/record_checkpoint.py",
+      "sha256": "6cd0415d890e06ebcc67a2f1568eff7462ae0670e2abfb265fdb71cb581aab8f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/regenerate.py",
+      "sha256": "a5d1fcce79d973c85b28dc2c733e44fc0aab98c372cb629eedb747bbae4160d6"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/renew_check_timestamps.py",
+      "sha256": "0dbe33f5f7e4db483ef81071468ee1a2b7c7e96fd70423aa2f6d78ecb8c6bdde"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/reports-final.json",
+      "sha256": "dec497447dcc98201af050f31f3af4f36deded1c583acf2fd3d573fff5799d05"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/repository-route.json",
+      "sha256": "bb8d210feb16aff2b04370959b9af6a2c80ab8a448f1d2aadedd62e2b8a2373a"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/robots-check.json",
+      "sha256": "66e3fa7b8c95ab7068f4226163f0ac69c0a47bfbd31d8eea7ca4448a9c570676"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/search_coverage.json",
+      "sha256": "ca2a3e59118a45e7def556ecb178d87aea4188e6b209da9cdf93376503c90b49"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/sites.lsa.umich.edu-robots.txt",
+      "sha256": "9cc90937a967e1986af91fc2db17e4185452c27bcf7772ea003ed22f3d327c7f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/source_check.py",
+      "sha256": "752e87e8dca42e430583980581815a845275635c9649e87d83c433a7a5d1d569"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/tests-final.log",
+      "sha256": "b470e2a929a7bafedf8ed7609340f2102a415e52b19b92d7d562b5666e97c774"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/trial-original-michigan_magic_evidence_2026-10-02.json",
+      "sha256": "7875c38fa982ea57e9695853fddcd925ec05058f2998074421ebb531a6d671c7"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/trial-original-michigan_magic_publication_2026-10-02.json",
+      "sha256": "b7195e45bdce11b3b0d1d34dd05da01148faebd28e6f440d65779baeca550dd2"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/trial-verification.json",
+      "sha256": "e4e4a1e59807962e5ef8cbaa13b9b81b5090e66ecaa985adb3d224067ebaf4f9"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/verify.py",
+      "sha256": "14cdaf98fa5933439e1ab1b705b1880d096ebe4d2bbc9c1a8de9e82c5e019dbd"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/verify_reader.py",
+      "sha256": "6aa4917e7803f84b207f41a0817b0cfdb85bd4c3387fcfadab9107eaa193393c"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-1.txt",
+      "sha256": "a05f484b7912b0fdd89958a931200098a3cb9b64551f74c22918f27539b40f6b"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-2.txt",
+      "sha256": "dc58d453af3b7576bd8feb12b79b73a20bf6b40413057330c33de830f9c6563f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-3.txt",
+      "sha256": "a7eb827283d44132d5227dea1cdb6561af5b8256bc69e298f763c18dab695aa8"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-4.txt",
+      "sha256": "cdd7e8db16544132753fa6454a75aa2231e680810d0588dbdc39bba7defffac8"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-5.txt",
+      "sha256": "302442e821f4a461485a9933ff1b0c720726292966c0bed8433fd9adfb719937"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-6.txt",
+      "sha256": "a5c398910a66086633091f42c64a601c2ca40f4c33b286423f154a824af44e1e"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/web-search-7.txt",
+      "sha256": "8256ff7563afe2d9b37b5f67a0cb5ebdb4c595b3f697a2ca9e4080eea86ada35"
+    },
+    {
+      "path": "research/receipts/michigan_magic_private_images_2026-10-02.json",
+      "sha256": "4e733c85807bea7c3270f78e5058b0b39ff6c27b211f1862bee31c98ed707764"
+    },
+    {
+      "path": "research/reviews/michigan_magic_document_2026-10-02_production.json",
+      "sha256": "34b44d2d0dfdceb05dc91b25ff7254259fc7477b2f9902995c24fdac2fff05c6"
+    },
+    {
+      "path": "research/reviews/michigan_magic_document_renewed_2026-10-02_production.json",
+      "sha256": "83735e60c9eec18b4cab898ee23b9e20c3829fd5fdbbb2b2879ef1d8a4fcde56"
+    },
+    {
+      "path": "research/reviews/michigan_magic_evidence_2026-10-02.json",
+      "sha256": "7875c38fa982ea57e9695853fddcd925ec05058f2998074421ebb531a6d671c7"
+    },
+    {
+      "path": "research/reviews/michigan_magic_publication_2026-10-02.json",
+      "sha256": "b7195e45bdce11b3b0d1d34dd05da01148faebd28e6f440d65779baeca550dd2"
+    },
+    {
+      "path": "research/reviews/michigan_magic_publication_renewed_2026-10-02_production.json",
+      "sha256": "014d3635134e237906792da73e14652d8899a1c2c69fecca0bb7329cd943eac7"
+    }
+  ]
+}

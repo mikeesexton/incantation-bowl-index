@@ -1,0 +1,54 @@
+{
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T07:54:25+00:00",
+  "held_sources": [
+    {
+      "source_id": "SRC-BOHAK1996-TRADITIONS-MAGIC",
+      "sha256": "105ce2975efa214419e749581574b5942ff2c842026cea0b056a097f104a4d56",
+      "mime_type": "text/html",
+      "url": "https://apps.lib.umich.edu/files/exhibits/pap-/magic/catalog.html"
+    },
+    {
+      "source_id": "SRC-DICKENS2021-SYROUIGURICAIII",
+      "sha256": "655a3f13b7fb1124d2527b0d9ffe554a4c80fe69e22d1652f1b55c488a946a20",
+      "mime_type": "application/pdf",
+      "url": "https://real.mtak.hu/153516/1/1588-2667-article-p583.pdf"
+    }
+  ],
+  "source_page_checks": [
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/pages/dickens-01.png",
+      "sha256": "980a4faeb176ab7bc6eb0b8b7bf6b5acc94210e73ce532d0409f94f9886fa420"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/pages/dickens-32.png",
+      "sha256": "70ad14223a486f8ef51191fa920f8707fef1b795048accdf65d35d158d7aecfc"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/pages/montgomery-189.png",
+      "sha256": "f28f6bef3912a27c3801c3ef80cb157232fe747436de1c8980c5638a4458b08f"
+    },
+    {
+      "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/pages/montgomery-190.png",
+      "sha256": "1ea7f36f781b914fee0f0adce1f7fa8f0abca44db740480a468e206d4183cf6b"
+    }
+  ],
+  "private_designation_screen": {
+    "path": "data/private/research-work/institutional-routes-checkpoint22-2026-10-02/existing_designation_screen.json",
+    "sha256": "aa9b92fe07219a29a536f690d9ae7dcbebd7e75a0e28d43bae3f8dd20d3a6606"
+  },
+  "primary_catalogue_scope": "Held HTML includes protective entries34–39, aggressive-magic entries40–42 and bibliography/wallcase captions; full exhibition PDF remains unheld. Actual English translation checked against captured HTML.",
+  "museum_primary_checks": [
+    {
+      "url": "https://sites.lsa.umich.edu/kelsey-museum-blog/2015/01/07/conserving-a-seleucian-incantation-bowl/",
+      "locator": "KM33756 caption",
+      "basis": "Actual primary conservator body read with browser/web access. Archive checker failed; no museum HTML capture claimed."
+    },
+    {
+      "url": "https://sites.lsa.umich.edu/kelsey-museum-blog/2015/10/20/documenting-demons-in-the-infrared/",
+      "locator": "TMA1931.455 caption and infrared account",
+      "basis": "Actual primary conservator body read with browser/web access; no image bytes fetched where robots policy unverifiable."
+    }
+  ],
+  "limits": "No independent clay reading, authenticity, rights clearance or source-conflict adjudication. Full exhibition PDF, native KM19504 edition and excavation pairing remain open."
+}

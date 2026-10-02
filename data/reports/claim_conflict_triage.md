@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-02T07:35:19+00:00`
+Generated: `2026-10-02T08:36:53+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -8,11 +8,11 @@ The original source claims remain unchanged. This review classifies apparent dif
 
 | Disposition | Claim-field instances |
 |---|---:|
-| Compatible | 569 |
+| Compatible | 568 |
 | Scholarly Disagreement | 2 |
 | Source Inconsistency | 4 |
 | Unresolved | 10 |
-| Requires current evidence review | 278 |
+| Requires current evidence review | 283 |
 
 ## Revalidation queue
 
@@ -24,6 +24,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-01B582E3244E — British Museum 117882: incantation bowl; lid | language | inscription_language: Syriac? [SRC-72D809FB4249; text 119ES; section pp. 147–149]; inscription_language: Syriac [SRC-3C4294DDB367; Bowl no. 30, p. 146]; inscription_language: Syriac, Estrangelo script [SRC-71F6B506CE96; object W_1883-0118-AH-2601] |
 | IDENT-01B582E3244E — British Museum 117882: incantation bowl; lid | provenance | findspot: Excavated/Findspot: Abu Habba (Sippar) [SRC-3D4B57D27A24; Related objects: 1883-0118-AH-2601]; findspot: Abu Habba (Sippar) [SRC-71F6B506CE96; object W_1883-0118-AH-2601]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1883-0118-AH-2601] |
 | IDENT-01C31C5A30D5 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.4=34) | provenance | collection_history: Donated by Avigdor Klagsbald. [SRC-F39B764D9E75; MMS 990039100320205171]; collection_history: Formerly Paris – Klagsbald. [SRC-F39B764D9E75; MMS 990039100320205171] |
+| IDENT-01CFAFC981BF — Kelsey Museum KM 19504 | client | client: Negray daughter of Denday [SRC-BOHAK1996-TRADITIONS-MAGIC; Bohak1996 online catalogue, Protective Magic, entry 37 (Kelsey Museum 19504)]; client: Ngray [SRC-AFDBED16E322; p. 38, object KM 19504] |
 | IDENT-032BEDEB7102 — Naveh–Shaked 1985 Bowl 12a: National Library of Israel Heb. 4° 6079 | client | client_or_beneficiary: Qaqay; parent: Poziqtoy (mother); role: client [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)]; client_or_beneficiary: Agbalta; parent: Qarqoy (mother); role: client [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)] |
 | IDENT-032BEDEB7102 — Naveh–Shaked 1985 Bowl 12a: National Library of Israel Heb. 4° 6079 | language | catalogue_language_codes: arc [SRC-8A8279A11C06; MMS 990026405980205171]; inscription_language: Jewish Babylonian Aramaic [SRC-A90AB34CA3FE; p. 134, note 546]; inscription_language: Jewish Babylonian Aramaic [SRC-1E2E21DC61BD; Bowl 12a, p. 188] |
 | IDENT-032BEDEB7102 — Naveh–Shaked 1985 Bowl 12a: National Library of Israel Heb. 4° 6079 | location | current_location: National Library of Israel, Jerusalem [SRC-8A8279A11C06; MMS 990026405980205171]; current_or_reported_collection: National Library of Israel [SRC-A90AB34CA3FE; p. 134, note 546]; current_or_reported_collection: National Library of Israel Heb. 4° 6079 [SRC-1E2E21DC61BD; contents and Bowl 12a, p. 188] |
@@ -102,6 +103,8 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | parallels | textual_parallel: Amulet 15 [SRC-1E2E21DC61BD; pp. 188-197]; textual_parallel: NS-B12a [SRC-1E2E21DC61BD; pp. 188-197] |
 | IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | provenance | geography: Mesopotamia [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885]; provenance_summary: Purchase, 1886 [SRC-AD848812B666; https://www.metmuseum.org/art/collection/search/321885] |
 | IDENT-35476A95A17A — Naveh–Shaked 1985 Bowl 12b: Metropolitan Museum of Art 86.11.259 | ritual | formula_genre: historiola: Smamit legend [SRC-1E2E21DC61BD; pp. 188-197]; formula_genre: oath by the one who measured the waters (Isa 40:12) [SRC-1E2E21DC61BD; pp. 188-197]; formula_genre: 'bound and sealed are you' [SRC-1E2E21DC61BD; pp. 188-197]; text_purpose: Protecting a husband, wife and child from a child-harming demon [SRC-1E2E21DC61BD; pp. 188-197] |
+| IDENT-356AD7EE0473 — Kelsey Museum KM 33756 | provenance | associated_find: Found in a double-bowl assemblage with another bowl and inscribed eggshell KM 19050 [SRC-BBAE031F2345; KM 33756]; associated_find: KM33756 found alongside TMA1931.455 [SRC-29E8BB7237EE; Neiman2015, 7 January, caption of KM33756, https://sites.lsa.umich.edu/kelsey-museum-blog/2015/01/07/conserving-a-seleucian-incantation-bowl/]; associated_find: Bowl atop an unidentified second bowl, with an inscribed eggshell between them [SRC-BOHAK1996-TRADITIONS-MAGIC; Bohak1996 online catalogue, Protective Magic, entry 39 (Kelsey Museum 33756)]; findspot: Seleucia, Iraq [SRC-BBAE031F2345; KM 33756] |
+| IDENT-356AD7EE0473 — Kelsey Museum KM 33756 | visual | iconography: Male figures with tied hands and chained feet [SRC-BOHAK1996-TRADITIONS-MAGIC; Bohak1996 online catalogue, Protective Magic, entry 39 (Kelsey Museum 33756)]; iconography: Demons with bound hands and chained feet, surrounded by a ring of fire [SRC-BBAE031F2345; KM 33756] |
 | IDENT-3B427B140A4C — Vorderasiatisches Museum VA.Bab.2813 + VA.Bab.281488 (catalogue 130) | language | catalogue_dialect: Syriac (Estrangelo script). [SRC-DA708912C2D3; Catalogue entry 130 (VA.Bab.2813 + VA.Bab.281488), p. 153]; inscription_language: Syriac [SRC-3C4294DDB367; Bowl no. 45, p. 194] |
 | IDENT-3B427B140A4C — Vorderasiatisches Museum VA.Bab.2813 + VA.Bab.281488 (catalogue 130) | publication | publication_status: Catalogued in a complete researcher-inspected corpus edition. [SRC-3C4294DDB367; p. 194]; publication_status: Catalogued in a complete researcher-inspected edition. [SRC-DA708912C2D3; Catalogue entry 130 (VA.Bab.2813 + VA.Bab.281488), p. 153] |
 | IDENT-3D7A2E9EE37B — Apotropaic index MS2053/270 | client | client: Nar[se] son of Duday; Hor[mizdukh]. [SRC-99F964DDA219; VMBA photographic archive, record JBA 49 (MS 2053/270); Internet Archive snapshot 20230815105552]; client: Nar[se] son of Duday; Hor[mizdukh] [SRC-7FBBB775E502; JBA 49, printed p. 221] |
@@ -228,6 +231,8 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-967FFF92E37F — Waller 2022: JBA 116 | biblical_intertexts | biblical_quotations: ["Exod. 14.31", "Ps. 114.3", "Isa. 6.3"] [SRC-73C44B143A9D; p. 158, distribution table, JBA 116]; biblical_quotations: Ex 14:31; an unknown targum of Ps 114:3; Is 6:3 [SRC-8C611BF93288; JBA 116, printed p. 220] |
 | IDENT-98DF11F7A9FF — MS 2053/33 | client | client: Be-Nebo son of Bat-Šappetay; Maḥlafta daughter of Lalay, his wife. [SRC-99F964DDA219; VMBA photographic archive, record JBA 17 (MS 2053/33); Internet Archive snapshot 20230815110351]; client: Be-Nebo son of Bat-Šappetay; Maḥlafta daughter of Lalay, his wife. ] [SRC-7FBBB775E502; JBA 17, printed p. 117] |
 | IDENT-98DF11F7A9FF — MS 2053/33 | dimensions | dimensions: 170 × 70 mm [SRC-7FBBB775E502; JBA 17, printed p. 117]; dimensions: 170x70 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 17 (MS 2053/33); Internet Archive snapshot 20230815110351] |
+| IDENT-996580409AEC — Kelsey Museum TMA 1931.455 / KM 31455 | condition | condition: Dark gypsum crust obscuring decoration [SRC-ROBERTS2015-KELSEY-INFRARED; Roberts2015, 20 October, TMA1931.455 image caption and infrared examination account]; condition: Thick dark crust obscured much of interior and exterior before conservation [SRC-29E8BB7237EE; TMA 1931.455 / KM 31455] |
+| IDENT-996580409AEC — Kelsey Museum TMA 1931.455 / KM 31455 | visual | iconography: Anthropomorphic figures [SRC-29E8BB7237EE; TMA 1931.455 / KM 31455]; iconography: Four line-drawn figures; infrared images reveal raised arms, faces and flames [SRC-ROBERTS2015-KELSEY-INFRARED; Roberts2015, 20 October, TMA1931.455 image caption and infrared examination account] |
 | IDENT-9A21342C5663 — Apotropaic index MS2053/258 | client | client: Undas son of Rašewandukh; Mahdukh daughter of Newandukh, his wife. [SRC-99F964DDA219; VMBA photographic archive, record JBA 47 (MS 2053/258); Internet Archive snapshot 20230815105552]; client: Undas son of Rašewandukh; Mahdukh daughter of Newandukh, his wife [SRC-7FBBB775E502; JBA 47, printed p. 211] |
 | IDENT-9A21342C5663 — Apotropaic index MS2053/258 | dimensions | dimensions: 180x75 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 47 (MS 2053/258); Internet Archive snapshot 20230815105552]; dimensions: 180 × 75 mm [SRC-7FBBB775E502; JBA 47, printed p. 211] |
 | IDENT-9C0310AAA82F — Apotropaic index MS1928/43 | client | client: Abudimme son of Daday [SRC-7FBBB775E502; JBA 26, printed p. 152]; client: Abudimme son of Daday. [SRC-99F964DDA219; VMBA photographic archive, record JBA 26 (MS 1928/43); Internet Archive snapshot 20230815105559] |

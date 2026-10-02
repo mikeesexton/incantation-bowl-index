@@ -1,5 +1,6 @@
 import hashlib
 import json
+import sqlite3
 import urllib.error
 import urllib.request
 import urllib.robotparser
@@ -124,3 +125,80 @@ def verify_archive(conn, archive_root=None):
             problems.append({"capture_id": row["id"], "problem": "hash_mismatch"})
     return problems
 
+
+def import_capture_receipts(conn, manifest, project_root):
+    """Transfer earlier project retrievals from a hash-bound local rehearsal.
+
+    No network request or fresh access permission is implied. Preserve the
+    original capture row, including its URL, headers and retrieval timestamp.
+    Validate all entries before appending anything; never replace a capture.
+    """
+    if manifest.get('schema_version') != 1 or not manifest.get('entries'):
+        raise ValueError('A version 1 capture-transfer manifest is required')
+    if not (manifest.get('reviewed_by') or '').strip():
+        raise ValueError('Named reviewer required')
+    stamp = datetime.fromisoformat(manifest['reviewed_at'].replace('Z', '+00:00'))
+    if stamp.utcoffset() is None or stamp.utcoffset().total_seconds() != 0:
+        raise ValueError('UTC review timestamp required')
+    root = Path(project_root).resolve()
+
+    def checked(path, digest):
+        rel = Path(path)
+        resolved = (root / rel).resolve()
+        if rel.is_absolute() or '..' in rel.parts or not resolved.is_relative_to(root):
+            raise ValueError('Evidence must remain inside the project')
+        if hashlib.sha256(resolved.read_bytes()).hexdigest() != digest:
+            raise ValueError('Capture-transfer evidence changed')
+        return resolved
+
+    origin = checked(manifest['origin_database_path'], manifest['origin_database_sha256'])
+    with sqlite3.connect(origin.as_uri() + '?mode=ro', uri=True) as prior:
+        prior.row_factory = sqlite3.Row
+        planned, seen = [], set()
+        for entry in manifest['entries']:
+            receipt = json.loads(checked(entry['receipt_path'], entry['receipt_sha256']).read_text())
+            cid = receipt['id']
+            if cid in seen:
+                raise ValueError('Duplicate capture in transfer')
+            seen.add(cid)
+            original = prior.execute('SELECT * FROM captures WHERE id=?', (cid,)).fetchone()
+            if not original or dict(original) != receipt:
+                raise ValueError('Receipt differs from the original capture')
+            if receipt['status_code'] != 200 or receipt['mime_type'] not in ('text/html', 'application/pdf'):
+                raise ValueError('Transfer requires an earlier successful HTML or PDF retrieval')
+            captured_at = datetime.fromisoformat(receipt['retrieved_at'].replace('Z', '+00:00'))
+            if captured_at.utcoffset() is None or captured_at > stamp:
+                raise ValueError('Original retrieval must precede review')
+            if not conn.execute('SELECT 1 FROM sources WHERE id=?', (receipt['source_id'],)).fetchone():
+                raise ValueError('Unknown capture source')
+            body = checked('data/private/archive/' + receipt['storage_path'], receipt['sha256'])
+            if body.stat().st_size != receipt['byte_length']:
+                raise ValueError('Capture length differs')
+            if receipt['mime_type'] == 'application/pdf' and not body.read_bytes().startswith(b'%PDF-'):
+                raise ValueError('Expected actual PDF bytes')
+            robots = checked(entry['robots_path'], entry['robots_sha256'])
+            if entry.get('robots_status_code') != 200 or not entry.get('retrieval_basis', '').strip():
+                raise ValueError('Original robots response and retrieval basis required')
+            parser = urllib.robotparser.RobotFileParser()
+            expected = urlparse(receipt['url'])
+            robots_url = '%s://%s/robots.txt' % (expected.scheme, expected.netloc)
+            if entry.get('robots_url') != robots_url:
+                raise ValueError('Robots evidence host differs')
+            parser.set_url(robots_url)
+            parser.parse(robots.read_text().splitlines())
+            if not parser.can_fetch(USER_AGENT, receipt['url']):
+                raise ValueError('Original robots evidence does not permit retrieval')
+            existing = conn.execute('SELECT * FROM captures WHERE id=? OR (url=? AND sha256=?)',
+                                    (cid, receipt['url'], receipt['sha256'])).fetchone()
+            if existing:
+                if dict(existing) != receipt:
+                    raise ValueError('Existing capture differs; transfer cannot overwrite')
+            else:
+                planned.append(receipt)
+        with conn:
+            for receipt in planned:
+                columns = list(receipt)
+                conn.execute('INSERT INTO captures (' + ','.join(columns) + ') VALUES ('
+                             + ','.join('?' for _ in columns) + ')', [receipt[k] for k in columns])
+    return {'entries': len(seen), 'changed': len(planned), 'unchanged': len(seen) - len(planned),
+            'network_requests': 0}
