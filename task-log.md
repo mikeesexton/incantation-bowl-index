@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — M163 literal marks, checkpoint38
+
+**Claimed:** TEXT-001, TEXT-009, TEXT-010
+**Corpus:** changed (one current native content corrected through one retained review) — state digest `614f0806adf0`.
+**Tests:** 393 Python and 57 Node passed; complete private reader 7/7. All 1,980 text contents, attributions, classifications and editorial declarations verified; 1,966 media assignments, 1,183 local image hashes and 86 capture hashes/source assignments verified. Integrity/FKs pass; trial and production manifests replay unchanged; full original and every earlier review retained.
+
+- Opening clean corpus matched checkpoint37 `38902792c850`; project/literature rules read, TEXT tasks claimed and consistent pre-batch backup made. Previous and current Goal turns are progress; original Goal remains active. Complete M163 source pp146–149 and thirty native anchors/ten sections were inspected with enlarged graphic and individual name crops; unusable Hebrew text layer excluded as authority.
+- Twelve pixel-supported replacement spans distinguish literal upper corner marks from full restoration squares, remove copied sign-as-letter proxies, repair restoration boundaries and missing/wrong letters. Literal corner positions retained without inferred pairing. Source unmatched corners/full squares remain unmatched. The two adjacent native10 names differ as printed: first lacks the second letter that appears in the next spelling; both source consonants previously copied incorrectly repaired separately. Literal dot groups, caret, native spelling, uncertain final invocation and long reconstructions remain unchanged. This verifies copying of the thesis edition, not clay or its distinct1999 article.
+- All20 indexed native transcriptions and all17main English blocks in the thesis now captured and source-copy checked. Additional comparative columns, footnote leads, source images and composite appendix remain open. Edition1,255rows:1,116checked/138partial/oneunreviewed; corpus1,980texts. All249frozen cases/history unchanged:25linked/224unlinked/all249attempted/zero complete cases; no new frozen route attempted. No acquisition blocker or reset used; Miri queue unchanged.
+- During this checkpoint Mike supplied `fgaf025.pdf`, authorizing archival processing at the next checkpoint. Next session verifies and copies the attachment into private IBI storage, ingests hash-bound provenance, and directly processes the article to resolve its former access gap before continuing the original Goal.
+- Protected source, exact corrections, current/original content, proof manifests, review pixels and full inventory remain outside Git. Content-free receipt: `research/receipts/levene_native38_audit_2026-10-02.json`. All seven reports/export regenerated; local reader build verified. No push, deployment, new outbound message or live-server restart.
+
 ## 2026-10-02 — Codex — Long native thesis collation, checkpoint37
 
 **Claimed:** TEXT-001, TEXT-009, TEXT-010

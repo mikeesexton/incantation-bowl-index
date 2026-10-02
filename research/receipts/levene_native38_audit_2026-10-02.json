@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "checkpoint": 38,
+  "created_at": "2026-10-02T18:50:30+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "38902792c8501bf973e4b97dce556c4ece9ba4ac4bb52cf8cddabadeaa183417",
+  "corpus_after": "614f0806adf0e8e00194a6c4e0973c34c8686113427e5c52413486c6c6a03b7b",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 25,
+  "frozen_unlinked_now": 224,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 0,
+  "new_edition_text_rows": 0,
+  "new_proofreading_reviews": 1,
+  "source_copy_checks_completed": 1,
+  "renewed_partial_checks": 0,
+  "existing_contents_revised": 1,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_captures": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1255,
+  "checked_edition_text_rows": 1116,
+  "partial_edition_text_rows": 138,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1980,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1223,
+    "appearance_bearing_sources": 51,
+    "registered_pdf_sources": 56
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/levene-native38-2026-10-02/campaign_case_progress_checkpoint38.json",
+    "sha256": "b290b3e11b5961f9067e008aab18ecee6178ddb5d3c98896cca5260d2f73e9f0"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/levene-native38-2026-10-02/held_pdf_inventory_checkpoint38.json",
+    "sha256": "2ddbd4dca13f686bd4c11ed6bae68d9853da2e6ecb04cbb9e6e530fe1051e36b"
+  },
+  "reading_inventory": {
+    "path": "data/private/research-work/levene-native38-2026-10-02/levene-reading-inventory.json",
+    "sha256": "f2af6bc8c3736ee559e0e188cbb700de58d6b8c8631eff905070517cc4050bac"
+  },
+  "scope": "Checkpoint38 completes the held Levene2000 M163 native source-copy audit across pp146–149, thirty clay anchors and ten editorial sections. Twelve pixel-supported replacement spans distinguish literal short corner signs from full restoration squares, remove sign-as-letter copying errors, repair source restoration boundaries and missing/wrong letters, and preserve the differing adjacent name spellings and genuinely unmatched printed signs. One source-bound proofreading review revises one current content; complete original and all earlier reviews remain immutable. All20indexed native witnesses and all17main English blocks now captured and source-copy checked. Additional comparative columns, source footnotes/images and composite appendix remain open; whole-source or whole-case completion is not inferred. Corpus1980texts; edition1255rows:1116checked/138partial/oneunreviewed. Frozen249 remains25linked/224unlinked/all249attempts/zero complete cases; no new frozen-case route attempted. Every other corpus row and all case histories identical. Goal active; no new acquisition blocker or allowance reset. Mike supplied another formerly inaccessible PDF during this checkpoint; intake and direct-source processing follow this commit.",
+  "next_actions": [
+    "Archive and directly process the additional Mike-supplied fgaf025 PDF, resolving its prior access blocker from verified local bytes.",
+    "Capture exact additional comparative columns and inspect source footnote references, keeping composite reconstruction separate.",
+    "Continue other held editions and224 frozen publication gaps; acquire the distinct Levene2003 book, Segal2000 and existing exact access blockers through Miri queue."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "38902792c8501bf973e4b97dce556c4ece9ba4ac4bb52cf8cddabadeaa183417",
+    "corpus_after": "614f0806adf0e8e00194a6c4e0973c34c8686113427e5c52413486c6c6a03b7b",
+    "changes": {
+      "text_proofreading_reviews": 1,
+      "texts": {
+        "rows_added": 0,
+        "rows_with_retained_corrections": 1,
+        "contents_revised": 1
+      }
+    },
+    "all_preexisting_other_rows_identical": true,
+    "all_target_original_text_rows_retained_in_ledger": true,
+    "all_earlier_reviews_identical": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "capture_hashes_verified": 86,
+    "edition_inventory": {
+      "reading_text_checked": 1116,
+      "unreviewed": 1,
+      "partial_review": 138
+    },
+    "renewed_reading_checks": {
+      "checked": 1,
+      "partial": 0
+    },
+    "objects": 2169,
+    "appearances": 2724,
+    "total_texts": 1980,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 1980,
+      "all_text_editorial_statuses_verified": 1980,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 1966,
+      "all_local_image_hashes_verified": 1183,
+      "all_capture_hashes_assignments_verified": 86,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "all_target_before_snapshots_verified": true,
+    "all_target_reviews_replay_unchanged": true,
+    "rehearsal_verified": true
+  },
+  "protected_payloads": "All source PDFs, original/current native contents, correction details, proofreading manifests and review pixels remain outside Git in the private vault. Git receipt contains no protected reading payload; source-copy checking does not grant reuse.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0038_levene_native.json",
+      "sha256": "0a55e1e87ed57c4e976b686f5581b34ff27a2bfe54d69d43f369e554ebd01ea5"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/campaign_case_progress_checkpoint38.json",
+      "sha256": "b290b3e11b5961f9067e008aab18ecee6178ddb5d3c98896cca5260d2f73e9f0"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/held_pdf_inventory_checkpoint38.json",
+      "sha256": "2ddbd4dca13f686bd4c11ed6bae68d9853da2e6ecb04cbb9e6e530fe1051e36b"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/native-before.json",
+      "sha256": "4efd490d62d52f084c2e96cedf40211f7852b20869bb31946072eabf1f453933"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/correction-specs.json",
+      "sha256": "7a569c6490688ca12096e429682d7eefaed1c2f9fcf5a6029c7e47f2f9898cf9"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/levene-reading-inventory.json",
+      "sha256": "f2af6bc8c3736ee559e0e188cbb700de58d6b8c8631eff905070517cc4050bac"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/trial-apply.json",
+      "sha256": "f8d1eb810cda4a393182c8705fde05e238ada8b6edede58ce295397c8fe533a1"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/trial-replay.json",
+      "sha256": "97fadf98e7dc69ab57afaabf95b38888b8908e47ff5120d31b68a7838504aa2c"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/trial-verification.json",
+      "sha256": "c1ca1772826140c0a66f7f2276ebcbbb7fa5186a87783c113ec3b1d151ac6d14"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/production-apply.json",
+      "sha256": "c999f5da2f168e1bd39ff92940d00448567740e02a828c8e2247e08763b1d1bd"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/production-replay.json",
+      "sha256": "77a8b258c18fc2a659cdf3df438f084996f97bbd87c4c007cfdd16e72a57e26d"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/production-verification.json",
+      "sha256": "cc90273d48c056a46c4eae6b00283b1ec53135ff4719f008641784233b9969e0"
+    },
+    {
+      "path": "data/private/manifests/levene-native38-2026-10-02/production/reading-review.json",
+      "sha256": "49b12db7a7188b8d520bab8236d86c561b05cc173e96b36e784600491bcb7d8b"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/reader-verification.json",
+      "sha256": "4df48a07930a9e94cf9eceaf00e6797b7991765dba3ad7d76298e2fed88d288b"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/reader-build-final.log",
+      "sha256": "3a159e497288fef3b35bd86161946512a845288ffed1e04db9cdeadb62c36aae"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/tests-final.log",
+      "sha256": "b5c0fc0e4fdfd6bc445ff1299406c7d973ff0ef2d3668c5fa2d0ec6a6590836f"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/node-tests-final.log",
+      "sha256": "42f3c7d93919e0acc1d65b5a147f964261aefdf0c265b80bf0b3b370670eccfb"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/prepare_corrections.py",
+      "sha256": "39b3b76edc8c405b2f16cb29138f4d3d2b2842b72099759266f885c582a18131"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/ingest_batch.py",
+      "sha256": "981b693fc0d02fd04b5aa5bfe30f6e7fc17e486bb1047fd707389d2c4742f37d"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/record_checkpoint.py",
+      "sha256": "7882e4a7c12369bcf4aabc82cd979c032a1465a9bd5172cc41dd6260c06b295a"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/verify_batch.py",
+      "sha256": "97c723b069aa02db0e4e875fa305b79e349b1a883c5728c54c834f696f6035b4"
+    },
+    {
+      "path": "data/private/research-work/levene-native38-2026-10-02/verify_reader.py",
+      "sha256": "77c81b76a9b1da57d9f14d89ae62bf8b5ec7789023a88157c2796a0c305aaa1d"
+    }
+  ]
+}
