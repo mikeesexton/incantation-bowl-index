@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T20:03:15+00:00",
+  "updated_at": "2026-10-02T20:21:04+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -19,7 +19,7 @@
       "capture_id": "CAP-89ECAC219742",
       "sha256": "29fde28eef92dfa2ada8da4c699b1e8665f2fdd0e3da45058e688b74b46dc41a",
       "status": "Researcher-supplied local document held",
-      "reading_audit": "Partial; further source reading checks remain"
+      "reading_audit": "Complete chapter held; all seven own main Latin transliteration/English pairs checked, including drawing-side/exterior text. Two earlier partial Latin copying checks resolved. Comparative/footnote/sourcewide and native-script follow-ups remain open."
     },
     {
       "source_id": "SRC-59F609B5B2DF",
@@ -243,8 +243,8 @@
   ],
   "acquisition_and_reading_completion_separate": true,
   "current_reading_queue": {
-    "path": "data/private/manifests/abudraham-commentary41-2026-10-02/production/extraction.json",
-    "sha256": "59231be88e1b74acaef62b25b2127b36035dbbb4750e6f3b0097dbc999eff872"
+    "path": "data/private/manifests/hermitage42-2026-10-02/production/extraction.json",
+    "sha256": "72b34e532d6c6ac547395dc5cd730bf62fa0b4c83ee6dbd51090b27bc8a6d93c"
   },
   "fulltextworking_inventory": {
     "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
@@ -252,8 +252,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/abudraham-commentary41-2026-10-02/acquisition-queue-before.json",
-    "sha256": "8f58ba229ecfba57e6a842788e8c316af924cd7dd47cabe11ecd2851bb7d9645"
+    "path": "data/private/research-work/hermitage42-2026-10-02/acquisition-queue-before.json",
+    "sha256": "52f4dcc8795634fbd2accb0e3b1d70f419c92253edf658fd80a555c43017d3c2"
   },
   "new_access_requests_checkpoint": 41
 }

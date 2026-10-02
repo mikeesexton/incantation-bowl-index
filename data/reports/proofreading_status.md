@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1137 | 138 | 1 | 1276 | 89.1% |
+| Edition text (translation, transcription, transliteration) | 1147 | 136 | 1 | 1284 | 89.3% |
 | Other stored text (mostly source extracts and summaries) | 1 | 6 | 720 | 727 | 0.1% |
-| All stored text | 1138 | 144 | 721 | 2003 | 56.8% |
+| All stored text | 1148 | 142 | 721 | 2011 | 57.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 626 | 43 | 1 | 670 |
+| translation | 630 | 43 | 1 | 674 |
 | transcription | 365 | 73 | 0 | 438 |
-| transliteration | 146 | 22 | 0 | 168 |
+| transliteration | 152 | 20 | 0 | 172 |
 
 ## Edition text by source
 
@@ -64,7 +64,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 30 | 0 | 0 | 30 |
 | Syro-Uigurica III: Enochic Material in a Christian Text from Turfan (`SRC-DICKENS2021-SYROUIGURICAIII`) | 2 | 0 | 0 | 2 |
 | Inscriptions mandaïtes des coupes de Khouabir: texte, traduction et commentaire philologique avec quatre appendices et un glossaire (`SRC-E7D5F020B31C`) | 31 | 31 | 0 | 62 |
-| Aramaic Incantation Bowls at the State Hermitage Museum, St. Petersburg (`SRC-EB27DA285DC5`) | 4 | 2 | 0 | 6 |
+| Aramaic Incantation Bowls at the State Hermitage Museum, St. Petersburg (`SRC-EB27DA285DC5`) | 14 | 0 | 0 | 14 |
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 1 | 1 | 0 | 2 |
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
