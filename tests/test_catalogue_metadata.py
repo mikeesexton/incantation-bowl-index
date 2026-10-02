@@ -71,6 +71,23 @@ class CatalogueMetadataTests(unittest.TestCase):
         self.conn.commit()
         self.assertEqual(corpus_fingerprint(self.conn)['corpus_digest'], before)
 
+    def test_institution_repair_retains_original_and_blocks_stale_import(self):
+        manifest = self.manifest()
+        entry = next(x for x in manifest['entries'] if x['target_table'] == 'identifiers')
+        entry['changes']['assigning_body'] = 'Correct institution'
+        manifest['entries'] = [entry]
+        self.assertEqual(apply_catalogue_metadata(self.conn, manifest, self.root)['applied'], 1)
+        current = self.conn.execute('SELECT * FROM identifiers').fetchone()
+        self.assertEqual(current['assigning_body'], 'Correct institution')
+        self.assertEqual(current['source_id'], entry['before']['source_id'])
+        history = self.conn.execute('SELECT * FROM catalogue_metadata_corrections').fetchone()
+        self.assertEqual(json.loads(history['before_json']), entry['before'])
+        before = corpus_fingerprint(self.conn)['corpus_digest']
+        self.assertEqual(apply_catalogue_metadata(self.conn, manifest, self.root)['unchanged'], 1)
+        self.assertEqual(add_candidate(self.conn, copy.deepcopy(self.record)), self.oid)
+        self.conn.commit()
+        self.assertEqual(corpus_fingerprint(self.conn)['corpus_digest'], before)
+
     def test_stale_evidence_or_row_is_rejected(self):
         manifest = self.manifest()
         self.conn.execute("UPDATE objects SET label='Later edit'")

@@ -1,11 +1,11 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T23:33:35+00:00`
+Generated: `2026-10-02T23:42:26+00:00`
 
 ## Corpus
 
 - Candidate objects: **2208**
-- Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'language', 'layout', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class']**
+- Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'inscription_line_count', 'language', 'layout', 'length_cm', 'neck_width_cm', 'photograph_credit', 'physical_form', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class', 'width_cm']**
 - Estimated distinct objects after resolved dedupe: **1859**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
@@ -18,7 +18,7 @@ Generated: `2026-10-02T23:33:35+00:00`
 - Objects with translation: **570**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **44**
+- Open leads: **43**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -78,13 +78,13 @@ Generated: `2026-10-02T23:33:35+00:00`
 |---|---|---:|
 | object type | whole_bowl | 1482 |
 | object type | fragment | 374 |
-| object type | uncertain | 332 |
+| object type | uncertain | 331 |
 | object type | lost_or_unlocated | 14 |
-| object type | non_bowl | 6 |
-| record status | candidate | 1005 |
+| object type | non_bowl | 7 |
+| record status | candidate | 1004 |
 | record status | probable | 923 |
 | record status | confirmed | 273 |
-| record status | rejected | 7 |
+| record status | rejected | 8 |
 | authenticity | unassessed | 1674 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
@@ -143,7 +143,6 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | open | 1 | Acquire permitted actual Ford2025 article PDF with seven full editions and twenty synoptic witnesses. |
 | open | 1 | Ford2025 p115/PDF13 footnote40 explicitly reports Moussaieff117 as current NLI JER Ms.Heb.Inc.Bowl065. Bounded quotation linked to trusted exact NLI65number/title. Distinct earlier Moussaieff117 candidates IBI-0CDECCBBB862 and IBI-E0372BE85045 remain separate; inspect complete original edition, photographs and institution-number bridge in a separate CONC review before any merger. |
-| open | 1 | Held Gordon1934p466/PDF2describes IraqMuseumlarge inscribed storagejar; p467/PDF3labels textGcatalogue5497. Existing IBI-28C0A68E5312GorG/IM5497record wrongly carries source-attributed Istanbul5497identifier and bowl classification. Original source corroborates Ford2025IM5497reference; native word linked to existing object without merger. Next separate METAsession repair copied identifier/institution/object metadata via hash-bound manifests preserving wrong originals. This is an IBIcopying error, not conflicting scholarly institution report. No authenticity decision or rights approval. |
 | open | 1 | Inspect held1949 thesis bowl headings, accession numbers, full Hebrew-letter Mandaic transliterations/translations and plates. |
 | open | 1 | Complete thesis native editions with faithful barred letters, interlinear additions, lacunae and magic signs; resolve two DA5 Latin glyphs. |
 | open | 1 | Complete held thesis native texts/DA5 translation and separately verify DA4 line4 Latin magic token. |

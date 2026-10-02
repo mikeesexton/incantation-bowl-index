@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T23:36:31+00:00",
+  "source_id": "SRC-0383E0E0A2F2",
+  "capture_id": "CAP-EABFF9404C4C",
+  "source_sha256": "71de7b86e0cc549b73d949f4a4b8923886f4d92dfd1b2f21907c9fe6058bafcc",
+  "inspected_pdf_pages": [
+    2,
+    3
+  ],
+  "printed_pages": [
+    466,
+    467
+  ],
+  "primary_report": {
+    "institution": "Iraq Museum",
+    "catalogue_number": "5497",
+    "edition_designation": "text G",
+    "object_form": "wide-bellied, narrow-mouthed inscribed storage jar",
+    "reported_length_cm": 50,
+    "reported_width_cm": 35,
+    "reported_neck_width_cm": 13,
+    "inscription_lines": 12
+  },
+  "copying_error": "IBI source-attributed Istanbul5497 identifier/institution contradicts actual source; current object type was uncertain, not whole_bowl. No conflicting source institution report.",
+  "scope_basis": "Apply Mike2026-09-27 late-antique incantation bowls only ruling to explicitly described storagejar; keep complete record and all texts/sources as related out-of-corpus material, mark rejected/non_bowl. No authenticity or rights judgment.",
+  "limits": "Dimensions retained as reported long/wide/neck width, without converting them to height or bowl diameter; no independent measurement/current location/provenance finding."
+}

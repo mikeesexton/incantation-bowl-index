@@ -12,7 +12,7 @@ from pathlib import Path
 FIELDS = {
     "objects": {"label"},
     "appearances": {"locator", "description"},
-    "identifiers": {"value", "normalized_value", "notes"},
+    "identifiers": {"value", "normalized_value", "assigning_body", "notes"},
     "claims": {"value_text", "locator", "notes"},
 }
 CLAIM_FIELDS = {"current_or_reported_collection", "identifier_warning", "publication_status"}

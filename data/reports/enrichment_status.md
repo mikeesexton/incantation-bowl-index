@@ -11,7 +11,7 @@
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1288 | 69.3% |
+| Location | 1289 | 69.3% |
 | Provenance | 375 | 20.2% |
 | Dating | 484 | 26.0% |
 | Dimensions | 670 | 36.0% |
@@ -26,8 +26,8 @@
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 598 |
-| 3–5 of 10 | 942 |
+| 0–2 of 10 | 597 |
+| 3–5 of 10 | 943 |
 | 6–8 of 10 | 305 |
 | 9–10 of 10 | 14 |
 
@@ -35,8 +35,8 @@
 
 | Next action | Identities |
 |---|---:|
-| Location | 571 |
-| Provenance | 1005 |
+| Location | 570 |
+| Provenance | 1006 |
 | Dating | 68 |
 | Dimensions | 139 |
 | Material | 23 |

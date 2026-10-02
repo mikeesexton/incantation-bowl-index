@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "2c54cae1405ff0027eed21e5fc662ce155f8a7f17483a2e98f2eaa8d7a665373",
+  "corpus_digest": "663a6931ac8b901be6b2e1c2417bc2cfb9bef1a895e6212cef15469acbabbba1",
   "migrations": 21,
-  "note": "Checkpoint52:5checked conditional/reported native words; ASlabel resolved via held2014acknowledgment; primary Gordon metadata error identified for next METAcheckpoint; reader/tests verified; Goalactive.",
-  "recorded_at": "2026-10-02T23:35:12+00:00",
+  "note": "Checkpoint53:correct copied GordonG5497institution,label,context against held original; keep incantationjar related record rejected/non_bowl under standing scope; 6primary claims; allreadings retained; tests451/reader7of7; Goalactive.",
+  "recorded_at": "2026-10-02T23:43:37+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -15,7 +15,7 @@
       "rows": 2802
     },
     "appearances": {
-      "digest": "3ed3fd4ad982a397233df5a33f7fadce2927833fb8797e136aef040f8ff330e3",
+      "digest": "1c032524f13bb86a9669ab01714d4955221c7d4a277263756368acae37b21997",
       "rows": 2802
     },
     "capture_source_corrections": {
@@ -27,8 +27,8 @@
       "rows": 87
     },
     "catalogue_metadata_corrections": {
-      "digest": "3cef84c090629f77dccbf9a113e580591a4a8968c0a79ff8383ffb1d6ec5df68",
-      "rows": 6
+      "digest": "0a25edd061dfa9a469df2b7dc3eea92d55de7b38baede0ff26eb45acd09c867b",
+      "rows": 9
     },
     "claim_conflict_review_history": {
       "digest": "c88bbc70febdd268c4e6da732a3d74385233b626cff319b00da6d355b84adf2e",
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "84659264cf882a9c2dd1fe819952f7c3e4451bfab0700cc25df750f65d967b16",
-      "rows": 9137
+      "digest": "761da998186e1a4ef62b559b1dbb276421f23cdd768ef36b596a71679bb7e06a",
+      "rows": 9143
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -71,11 +71,11 @@
       "rows": 215
     },
     "identifiers": {
-      "digest": "335f553b6ca63f72180930e531338a33cfb059c9c798a8555be2658ef2587176",
+      "digest": "788112c515ca87fecbd8cd8cd3f9a2d75bfb91dd2ed111c00a554c7082007df7",
       "rows": 5185
     },
     "leads": {
-      "digest": "b4e2ba32c03223eb6177da2f9b5bb0832e42228caddc92a651ef8e933932ec36",
+      "digest": "77149f8277d5555db72b1d08513e3db1d54e15934eb2d65e2cebd44597c2f0b2",
       "rows": 99
     },
     "manual_audits": {
@@ -103,11 +103,11 @@
       "rows": 5
     },
     "object_scope_reviews": {
-      "digest": "78f9e892ad564b91281a2d0841dda6bc938e20cabb6276cc084a8bab78b0465b",
-      "rows": 1
+      "digest": "da5e5c20a3cce203f1495d1a4057387213d8211e31733b1d89eb313b227be46a",
+      "rows": 2
     },
     "objects": {
-      "digest": "27cfafef896083108476239512d9a83687f56d92087518fb8c5121fd8aa4bd69",
+      "digest": "089a7169060a1d0bf556543aa7e69d8a6420f9242c297b7a6361aded41464a6b",
       "rows": 2208
     },
     "publication_assessments": {
