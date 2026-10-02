@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T22:29:57+00:00`
+Generated: `2026-10-02T22:43:57+00:00`
 
 ## Corpus
 
@@ -18,7 +18,7 @@ Generated: `2026-10-02T22:29:57+00:00`
 - Objects with translation: **556**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **39**
+- Open leads: **38**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -142,7 +142,6 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Classify corpus findspot and provenance assertions by evidence basis: documented controlled excavation, museum or accessions register, dealer or antiquities-market report, later scholarly inference, or unverified/unknown. Preserve the original place claim and its source separately from the assessment. |
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | open | 1 | Acquire permitted actual Ford2025 article PDF with seven full editions and twenty synoptic witnesses. |
-| open | 1 | Fresh M117English source-copy check found p93bibliographic footnote89 embedded in formerly checked TXT-BC7711E7BAAE. Corrected through new proofreading manifest with complete original retained. Audit the other checkpoint28English thesis rows for page-boundary footnote contamination against actual source pixels; this finding does not establish other errors. |
 | open | 1 | Ford2025 p115/PDF13 footnote40 explicitly reports Moussaieff117 as current NLI JER Ms.Heb.Inc.Bowl065. Bounded quotation linked to trusted exact NLI65number/title. Distinct earlier Moussaieff117 candidates IBI-0CDECCBBB862 and IBI-E0372BE85045 remain separate; inspect complete original edition, photographs and institution-number bridge in a separate CONC review before any merger. |
 | open | 1 | Inspect held1949 thesis bowl headings, accession numbers, full Hebrew-letter Mandaic transliterations/translations and plates. |
 | open | 1 | Complete thesis native editions with faithful barred letters, interlinear additions, lacunae and magic signs; resolve two DA5 Latin glyphs. |

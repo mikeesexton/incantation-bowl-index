@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T22:29:55+00:00",
+  "updated_at": "2026-10-02T22:43:23+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -38,7 +38,8 @@
       "sha256": "caf94c25ea8557996e86ffdb2e57155328b41638c929cdb4b61e8ec1629761d6",
       "status": "Researcher-supplied local document held",
       "reading_audit": "Partial; further source reading checks remain",
-      "checkpoint48_copy_repair": "M117English accidentally embedded footnote corrected against full pp93–94, original retained. Further earlier English-page-boundary contamination audit pending."
+      "checkpoint48_copy_repair": "M117English accidentally embedded footnote corrected against full pp93–94, original retained. Further earlier English-page-boundary contamination audit pending.",
+      "checkpoint49_english_boundary_audit": "Completed17storedEnglish translations/27complete source pages; no further embedded footnotes or missing continuation words observed. Earlier M117repair retained. Complete source/specialist verification remains separate."
     },
     {
       "source_id": "SRC-5119876CE9C6",
@@ -291,8 +292,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/ford-comparatives48-2026-10-02/acquisition-queue-before.json",
-    "sha256": "666b880f6144c0eb6c7e249c48c9c823020ff3c1c149f91e9974cd2e7be565e2"
+    "path": "data/private/research-work/levene-boundaries49-2026-10-02/acquisition-queue-before.json",
+    "sha256": "89931a545c7e3b7e7edd4a41520a172d272d301b3ef5b5b40ff4564ae00ddefc"
   },
   "new_access_requests_checkpoint": 41,
   "latest_held_context_inventory": {

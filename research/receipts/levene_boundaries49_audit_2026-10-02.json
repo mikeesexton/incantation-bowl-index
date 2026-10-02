@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "checkpoint": 49,
+  "created_at": "2026-10-02T22:43:23+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "0bf084fee11c2f1696fc5abaeefdfd3003b848520a62acda4d2ec7b23a1c86d2",
+  "corpus_after": "2ccd53e4bfe4b361c0aca07b4ac9dccaf87d2b9f024717ea399d3b881142eeb7",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 29,
+  "frozen_unlinked_now": 220,
+  "new_frozen_case_attempts": 0,
+  "complete_case_investigations_claimed": 0,
+  "new_text_rows": 0,
+  "new_proofreading_reviews": 17,
+  "existing_contents_corrected": 0,
+  "all_originals_retained": true,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_captures": 0,
+  "new_media": 0,
+  "new_local_image_derivatives": 0,
+  "new_publication_assessments": 0,
+  "resolved_targeted_audit_leads": 1,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1384,
+  "checked_edition_text_rows": 1247,
+  "partial_edition_text_rows": 136,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 2111,
+  "total_media": 2063,
+  "total_local_images": 1190,
+  "total_source_captures": 87,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 57,
+    "appearance_bearing_sources": 52,
+    "indexed_appearances": 1270
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/levene-boundaries49-2026-10-02/campaign_case_progress_checkpoint49.json",
+    "sha256": "2af5659cbe2e454b8d9614b4c988c05737a569a090dd763c1dca26ce6233a332"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/levene-boundaries49-2026-10-02/held_pdf_inventory_checkpoint49.json",
+    "sha256": "737408ad0cd54e074da19cce987da36d648e9528986352d1d32c0abac8f29be3"
+  },
+  "acquisition_queue": {
+    "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+    "sha256": "1d85fb57786adc3cf73c60c280926275f29dab974a74be329bddc0786518179d"
+  },
+  "new_access_blockers": 0,
+  "new_miri_notifications": 0,
+  "scope": "Checkpoint49 completes the targeted Levene2000English page-boundary audit after the checkpoint48M117footnote copying repair:17storedtranslations across27complete source pages visually inspected. No further embedded footnotes or missing continuation text found. All2111text contents unchanged;17 supplemental hash-bound reviews retain original rows and earlier full-copy/marked-letter checks. Specific audit lead resolved with its complete original retained. This closes the targeted copying audit, not specialist interpretation, complete sources or complete cases. Corpus edition inventory unchanged:1384rows=1247checked/136partial/oneunreviewed. Fixed249cohort remains29linked/220unlinked/allattempted/zero wholecases complete. HeldPDF inventory57sources/52appearance-bearing/1270appearances; historical99native roster45gaps unchanged. Miri keeps10resolved supplied documents and18requests; no fresh blocker/message/reset. Goal active.",
+  "next_actions": [
+    "Continue220fixed exact publication-reference gaps and further held comparative quotations/variants.",
+    "Keep cross-designation identity questions separate; Miri tracks original-edition/photo/card/report requests."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "0bf084fee11c2f1696fc5abaeefdfd3003b848520a62acda4d2ec7b23a1c86d2",
+    "corpus_after": "2ccd53e4bfe4b361c0aca07b4ac9dccaf87d2b9f024717ea399d3b881142eeb7",
+    "changes": {
+      "leads": "one targeted audit lead resolved; complete before snapshot retained",
+      "text_proofreading_reviews": 17,
+      "texts": "17 note renewals; all content and metadata unchanged; full originals retained"
+    },
+    "operations": [
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/levene-boundaries49-2026-10-02/production/reading-review.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 17,\n  \"entries\": 17,\n  \"public_approvals\": 0,\n  \"unchanged\": 0\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest",
+          "lead",
+          "data/private/manifests/levene-boundaries49-2026-10-02/production/lead-resolution.jsonl"
+        ],
+        "exit_code": 0,
+        "stdout": "ingested 1 records\n",
+        "stderr": ""
+      }
+    ],
+    "all_originals_and_previous_reviews_retained": true,
+    "all_2111_text_contents_unchanged": true,
+    "new_text_rows": 0,
+    "new_proofreading_reviews": 17,
+    "new_copying_errors": 0,
+    "proofreading_replay_unchanged": true,
+    "lead_payload_replay_verified_without_operational_timestamp_rewrite": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "edition_inventory": {
+      "reading_text_checked": 1247,
+      "unreviewed": 1,
+      "partial_review": 136
+    },
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2111,
+      "all_text_editorial_statuses_verified": 2111,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2063,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "source_before_snapshot_verified": true,
+    "all_manifests_replay_unchanged": true,
+    "rehearsal_verified": true
+  },
+  "protected_payloads": "Exact readings, original snapshots and complete page pixels remain outside Git; content-free receipt grants no public reuse.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0049_levene_english_boundary_audit.json",
+      "sha256": "bcaa78af804d1f9617b32ba60f6d15b727ec5f5f6bdbec28d1f3f56d2ef3b68a"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/campaign_case_progress_checkpoint49.json",
+      "sha256": "2af5659cbe2e454b8d9614b4c988c05737a569a090dd763c1dca26ce6233a332"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/held_pdf_inventory_checkpoint49.json",
+      "sha256": "737408ad0cd54e074da19cce987da36d648e9528986352d1d32c0abac8f29be3"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/metadata.json",
+      "sha256": "674ec6e1903290d80de6bba21ee4dc0cc8d875cbc245eae9cbd3f26a07e2ac1d"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/english-before.json",
+      "sha256": "a08c1c5dd610664c2270ab3d72eb7f6df0267d38c672e368eb2c53bcca1fb692"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/boundary-audit-inventory.json",
+      "sha256": "c539d5d9cc76c340452dd3cb93b1717798edd7fa7cafaef05a937f73e311df08"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/production-lead-before.json",
+      "sha256": "3b0e266d01826d4e4fe56994b8b63d009f5b09c26df142e381acec07f8a89560"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/trial-lead-before.json",
+      "sha256": "3b0e266d01826d4e4fe56994b8b63d009f5b09c26df142e381acec07f8a89560"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/production-verification.json",
+      "sha256": "cb6109bbf4438863ad7571a89eb31ad63e90cbd868360ad37fc93718596c4a89"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/trial-verification.json",
+      "sha256": "46411f8266ae5f856a56a432ae8b9429f631487d66e9ebf0661386bebda0489a"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/prepare_apply.py",
+      "sha256": "4fd81b31a94f27fe185f4a8668c16a7682f1b253184c8d3b4fb124eee2881699"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/render_discovery.py",
+      "sha256": "9dd58a6b7300f979b24b90601426ce48620c558bdc81b03cccba32b79ede6256"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-B5453D81C386.txt",
+      "sha256": "d86ec55d868fa6c1b7d9201e48d2cf4f247d26bcadbba76749eebcddf1eb0071"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-AF3548CD7A3C.txt",
+      "sha256": "ffeeab3b32007a9fdf3a6dc56e42ddf289de10fddb8a56cdc5f5df1393830f82"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-231042B45AEB.txt",
+      "sha256": "def37e4ac4c0b3feaf21e59d34b3ef31322db8debf370a57e9112301daff1d65"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/reading-review.json",
+      "sha256": "0265ba6d382fb6e78a61a285d4db742cc5e032ddc43b75bb63f634e58b871abe"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/lead-resolution.jsonl",
+      "sha256": "c2199e39bb42261b097e9e8e6908341595adbf4ca4c278431cd88c9bdbb9e197"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-7AEFD1942A52.txt",
+      "sha256": "169fe2b4e9a001edf12396a40c8453f141ab81f90bd0377d2af3b9b07a64202e"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-03DC8AF73FFB.txt",
+      "sha256": "097c2bf1fa9a3b5491aeefa05be92ceccd0ef5f2213d2b23ce54f017fc132701"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-0408709390CC.txt",
+      "sha256": "f540d2a049c0b8fb06735d679bd2d9f8f01ba06fde1ebfb80a705e297b204f22"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-BC7711E7BAAE.txt",
+      "sha256": "addb73d3f7e38f73cecb8122ac2ea75175857ec032efe774918f5a1b1c0988c2"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-1E41FE897536.txt",
+      "sha256": "bab9c8595991127110eb2c47262f1e2a8800fb2791cf770105d4d6f09c083329"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-D6B8F125A8F9.txt",
+      "sha256": "6d0acee0a86537844cad0bfb193790191031a18885c333932dbf76b6060fbd96"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-5AB5B2E280FD.txt",
+      "sha256": "e95eb89214ab089b04be717109c1d061e2cfdee64472804defeba6497d6426ac"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-551766F1B75E.txt",
+      "sha256": "b4391100d52808a51781d9e6c2cc99bbe59e3705ec98614bc54d64fb3115e174"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-50E8CEB7CC5A.txt",
+      "sha256": "cd8abe6db6ba743a1d53ce507b62f4970ea19e9d3bcbd922089c646f3bb8a7c4"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-14DB3C2C8998.txt",
+      "sha256": "68083bf694105de8af5a43fee5bb5327b71f12dd1a1cb1480ed32e5e71973ef2"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-4AC0D16E9D46.txt",
+      "sha256": "43826745275dc625c362703a83757b202d0e46b41706fb4c745c59927ae741c3"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-5659C471CC02.txt",
+      "sha256": "80c443f3ec9ebce870d5e14ecba2a332366f83d471b1c4d1ce75513a3848c4b3"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-9F5CEA424A60.txt",
+      "sha256": "1c05ebb494ca71ffc5d44d12b3c72dd3f708931c4e1843d0cb7a04da1903ff06"
+    },
+    {
+      "path": "data/private/manifests/levene-boundaries49-2026-10-02/production/TXT-DDD0C25D593B.txt",
+      "sha256": "71149b40f34dda4965057a191fad507f55e43fec94eaada5e09e280c2a56f67c"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-87-90.png",
+      "sha256": "6dbe9ea98bf08adfbd17d33e945f0b75b7f769c7586d50ada95d2d48bd9d92bc"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-52-57.png",
+      "sha256": "20f8da618bda2cbd1590647cafbb522fc5bfcbe7990a974a42c0867fec46c389"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-124-131.png",
+      "sha256": "e54f75563345767d43b0fa0c22e62b9e8f8771b7f46212edcf722aa0d6a44f03"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-93-94.png",
+      "sha256": "91a1d823d99168e59afddcfc98daa28d154c7e8e537d4889db86db9f865aab07"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-139-149.png",
+      "sha256": "6b932b76850b2958ae3866e99e7fd5afc7620722235f8f00c4f982debfb18d58"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-133-138.png",
+      "sha256": "22b714c87ebc44df798c5b5000384d3218b4c726cf507d8ff297c22736343871"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-98-102.png",
+      "sha256": "e51bc004b74e8fb7b9584589e9aa803cda75dc1bbaa16aa1b0c098b708339faa"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-58-64.png",
+      "sha256": "03b07486a55b5346518531dcc33fcf25bb0bd14ea392a974bd73f4e3b5d3296c"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-65-78.png",
+      "sha256": "56876c98f5cd0d281826a2b752462b2ccbf3cf25218c59e8da880ae452a240b9"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-110-113.png",
+      "sha256": "8faf13cad02b85db88f33a6d8755ac2803c179c098e93fd5c2da33ed5f3455b8"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-114-123.png",
+      "sha256": "7e05cca0b300f6aaf083bf829a2bff3e6c6878d3ded02450c885f527ee13210b"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-152.png",
+      "sha256": "278be060f9a6a293cb4ac65b2baca7594f9c95a58dc58a7a0fea49ec847f3801"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-43-44.png",
+      "sha256": "70e9876f59d81cd7fbe303128ceb255ed0eec78bca9d15b78addfe166064fba0"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/complete-pages-150-151.png",
+      "sha256": "1f871155c6329cdb349c56d329b231d818fce45efb809c2be1b486a350a73bba"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/reader-verification.json",
+      "sha256": "0914863f0b46bbce5c8bf8968013362c3f796cefd18d2945f68a9a00cf1ac380"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/reader-build-final.log",
+      "sha256": "5d2e9bf06dbd7487d778ecf31a629a91d9598d3eb1a01e81417559ab258bbc55"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/tests-final.log",
+      "sha256": "b7566654ca0f3cb327bf6f9d43e8a1f00ea1c914bd8903b836af6b8be79e928c"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/node-tests-final.log",
+      "sha256": "fb71e46619f1179d6bdb5e6bf01bc183366384d006c4eafff2c3ecb7743ee650"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/prepare_apply.py",
+      "sha256": "4fd81b31a94f27fe185f4a8668c16a7682f1b253184c8d3b4fb124eee2881699"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/record_checkpoint.py",
+      "sha256": "0bf9ab73d28b5b7fbd1c47846d34008f5e524eebf0b86b96f7b9abe101873de4"
+    },
+    {
+      "path": "data/private/research-work/levene-boundaries49-2026-10-02/verify_reader.py",
+      "sha256": "56ffd213a3eb5e00f3d1ab39f563deddd72d547ef1849e25b2ad42fabb8e465a"
+    }
+  ]
+}

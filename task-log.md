@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Levene English boundary audit, checkpoint49
+
+**Claimed:** TEXT-001, TEXT-009, TEXT-010
+**Corpus:** changed (17 supplemental source-copy reviews; targeted audit lead resolved; all text contents unchanged) — state digest `2ccd53e4bfe4`.
+**Tests:** 393 Python and57 Node passed; rebuilt private reader7/7. All2,111text contents/attributions/classifications/editorial declarations,2,063media assignments,1,190local image hashes and87capture hashes/source assignments verified. Integrity/FKs pass; trial and production proofreading replay unchanged; complete original text rows/previous reviews and original lead snapshot retained.
+
+- Opening corpus matched checkpoint48 and working tree was clean; claimed TEXT tasks before edits and read full project rules, literature guidance and PDF skill. Prior and current Goal turns are progress. Mike’s extra fgaf025 PDF already archived/processed at checkpoints39–41; no repeated intake. Original unbounded Goal stays active.
+- Completed the specific footnote/body-boundary audit prompted by the formerly checked M117English copying error. Inspected all27complete relevant source pages in the held Levene2000thesis for all17storedEnglish translations: M50,101,102,103,107,108,112,117,121,123,131,142,145,149,155,156,163. Checked openings, continuation joins, ends before Notes and exclusion of page footnotes. No further embedded footnotes or missing continuation words found. M117checkpoint48repair retained; body citations and source uncertainty retained. The targeted audit supplements earlier full-copy/marked-letter reviews; no independent new glyph/clay/scholarly adjudication or whole-source completeness claim.
+- Appended17hash-bound proofreading reviews through private manifests after verified local rehearsal. All2,111text contents and all attributions, classifications and rights unchanged. Review notes renewed with the exact audit scope; full original text rows and earlier reviews retained in the immutable ledger. Specific audit lead resolved through a manifest; complete original operational lead snapshot retained in hash-bound private evidence and original checkpoint48manifest/receipt. No uncertain identity changes or specialist decisions.
+- Fixed249cohort remains allattempted/29linked/220unlinked/zero wholecasescomplete. All individual case entries/histories unchanged. HeldPDF inventory refreshed at57sources/52appearance-bearing/1,270appearances. Historical99native roster45gaps unchanged. Corpus still2,111texts;1,384edition rows=1,247checked/136partial/oneunreviewed;2,063media/1,190localimages/87captures. Miri retains10resolved supplied holdings and18requests; audit completion annotated with complete prior queue snapshot retained. No new access blocker, notification or allowance reset.
+- Content-free evidence review and receipt: research/reviews/levene_boundaries49_evidence_2026-10-02.json and research/receipts/levene_boundaries49_audit_2026-10-02.json. Exact readings, source-page pixels, original snapshots and manifests remain private. Roadmap, seven reports/export and private reader regenerated; all receipt hashes verified and corpus state written. No push, deployment, purchase, author/institution contact or live-server restart. Next continue220exact publication-reference gaps and further held comparative quotations, keeping cross-designation identity review separate and existing acquisition requirements with Miri.
+
 ## 2026-10-02 — Codex — Held comparative readings, checkpoint48
 
 **Claimed:** TEXT-001, TEXT-009, TEXT-010

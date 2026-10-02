@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "checkpoint": 49,
+  "source_id": "SRC-LEVENE2000-UCL",
+  "source_capture_id": "CAP-BC74F1C7044C",
+  "source_sha256": "caf94c25ea8557996e86ffdb2e57155328b41638c929cdb4b61e8ec1629761d6",
+  "scope": "Checkpoint49 completes the targeted Levene2000English page-boundary audit after the checkpoint48M117footnote copying repair:17storedtranslations across27complete source pages visually inspected. No further embedded footnotes or missing continuation text found. All2111text contents unchanged;17 supplemental hash-bound reviews retain original rows and earlier full-copy/marked-letter checks. Specific audit lead resolved with its complete original retained. This closes the targeted copying audit, not specialist interpretation, complete sources or complete cases. Corpus edition inventory unchanged:1384rows=1247checked/136partial/oneunreviewed. Fixed249cohort remains29linked/220unlinked/allattempted/zero wholecases complete. HeldPDF inventory57sources/52appearance-bearing/1270appearances; historical99native roster45gaps unchanged. Miri keeps10resolved supplied documents and18requests; no fresh blocker/message/reset. Goal active.",
+  "translation_count": 17,
+  "pdf_pages": [
+    43,
+    44,
+    52,
+    57,
+    58,
+    64,
+    65,
+    78,
+    87,
+    90,
+    93,
+    94,
+    98,
+    102,
+    110,
+    113,
+    114,
+    123,
+    124,
+    131,
+    133,
+    138,
+    139,
+    149,
+    150,
+    151,
+    152
+  ],
+  "copying_errors_found": 0,
+  "old_copying_correction_retained": true,
+  "all_text_contents_unchanged": true,
+  "protected_inventory": {
+    "path": "data/private/research-work/levene-boundaries49-2026-10-02/boundary-audit-inventory.json",
+    "sha256": "c539d5d9cc76c340452dd3cb93b1717798edd7fa7cafaef05a937f73e311df08"
+  },
+  "original_lead_snapshot": {
+    "path": "data/private/research-work/levene-boundaries49-2026-10-02/production-lead-before.json",
+    "sha256": "3b0e266d01826d4e4fe56994b8b63d009f5b09c26df142e381acec07f8a89560"
+  },
+  "new_reviews": 17,
+  "limitations": "Targeted page-boundary check supplements earlier source-copy reviews. No independent glyph/clay/scholarly adjudication or whole-source/case completeness claim. Protected content stays private."
+}
