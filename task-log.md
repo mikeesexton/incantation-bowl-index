@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Exact publication routes, checkpoint47
+
+**Claimed:** TEXT-001, TEXT-009, TEXT-010
+**Corpus:** unchanged — state digest `cc6aed200bc1`.
+**Tests:** 393 Python and 57 Node passed; complete rebuilt private reader 7/7. All2,046text contents/attributions/classifications/editorial statuses,2,027media assignments,1,190local image hashes and87capture hashes/source assignments verified. Previous249case histories retained; two extended, no wholecases complete.
+
+- Opening clean corpus matched checkpoint46; claimed TEXT tasks before research, read whole project rules/literature and identity/conflict protocols. Previous and current Goal turns are progress; original Goal remains active. Targeted exact catalogue/edition searches produced two concrete original-report acquisition routes, not new verified bowl editions or inscription readings.
+- Primary AMAR53body identifies Waterman1931 first Preliminary Report upon the Excavations at TelUmar,Iraq, with noncommercial-use restriction. Its observed download returned403Forbidden in the web tool; noPDF acquired, no access bypass or paywall/robots diagnosis asserted. Acquire complete report, especially pp61–62/plates/object lists, for exact TMA1931.455/KM31455follow-up; specific bowl occurrence remains unverified. Distinct from1933secondTelUmarreport and1933Ctesiphonreport. AMAR471second-report record’s1922date retained as conflicting metadata requiring actual title-page inspection, not silently corrected from other bibliography.
+- Official indexed OIC22footnote identifies Knudstad1968 original Sumer24pp95–106 report of the1966–67Nippur season. Old Yale original-report route unavailable through tool; official OIC22current routes failed404/internalerror. Original Sumerarticle/pages not acquired, no exact10N-361A-B/A33980reference established. The1966–67annual report is already held and checked, so another annual-report copy is unnecessary. Existing exact object/field register/card request remains open.
+- Primary KelseyDiSKOpage identifies2018.01.0502; its collection-record link returned403. Retained only as a scoped unverified catalogue-number concordance lead; not merged/assigned toKM31455. Bounded SchøyenMS1911/2andMS2056/12queries yield prospective/preliminary collection wording or unrelated results, not current publication-absence findings or new exact editions. Twenty-four targeted queries logged with per-query result counts explicitly unavailable, not invented; primary route outputs retained privately.
+- Two fixed case histories extended (Kelsey andA33980), all prior attempts retained:249attempted /27linked /222unlinked /zero wholecases complete. Corpus/text/media/held-PDF inventory unchanged:1,319edition rows =1,182checked /136partial /one unreviewed;57heldPDFsources /52appearance-bearing /1,238appearances; historical99native roster45gaps. No corpus writes, new text/media/captures, scholarly adjudication, identity merge or rights approval.
+- Added two metadata-only original-report requests to Miri queue:18requests /ten resolved supplied documents. Authorized message to “Track blocked bowl sources” acknowledged by tool; this is dispatch evidence, not independent proof of tracker processing. Source descriptions carry explicit unverified exact-bowl-match limits. Previous queue snapshot retained. No reset, purchase, author/institution contact, push, deployment or live-server restart.
+- Content-free receipt `research/receipts/exact_routes47_2026-10-02.json`; research-tool outputs and exact case histories remain private. Roadmap and seven reports/export regenerated, private reader rebuilt after tests and verified, corpus state written. Next continue222exact publication-reference gaps and check remaining native/English comparative quotations/footnote variants in held supplies while original report/edition and NLI image/card requests proceed.
+
 ## 2026-10-02 — Codex — Ford synoptic witnesses, checkpoint46
 
 **Claimed:** TEXT-001, TEXT-009, TEXT-010

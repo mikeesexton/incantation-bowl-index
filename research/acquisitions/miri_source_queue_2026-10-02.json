@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T21:54:44+00:00",
+  "updated_at": "2026-10-02T22:01:56+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -253,6 +253,30 @@
         "path": "data/private/research-work/nli-images43-2026-10-02/nli-image-access-inventory.json",
         "sha256": "d32e9b8dcf89363bbe9e38c3e1d1c6928fa23677855dd0a37587731c6a5d80e5"
       }
+    },
+    {
+      "source_id": null,
+      "short_label": "Waterman1931TelUmarfirstreport",
+      "citation": "Waterman,Leroy. Preliminary Report upon the Excavations at TelUmar,Iraq. AnnArbor:University ofMichiganPress,1931.",
+      "requirement": "Complete first1931report, particularly pp61–62 and bowl/object plates/lists. Exact TMA1931.455/KM31455accession bridge must be checked; report not yet proved to contain that specific bowl. Distinct from1933secondTelUmarreport and1933Ctesiphonreport.",
+      "priority": 2,
+      "status": "unheld original contextual report needed; object match unverified",
+      "metadata_url": "https://commons.library.stonybrook.edu/amar/53/",
+      "attempted_download_url": "https://commons.library.stonybrook.edu/cgi/viewcontent.cgi?article=1052&context=amar",
+      "checked_at": "2026-10-02T22:01:56+00:00",
+      "previous_access_evidence": "Primary AMAR53record inspected; observed download returned403Forbidden in web tool. No PDF acquired or robots/paywall diagnosis asserted. Repository says may not be used commercially."
+    },
+    {
+      "source_id": null,
+      "short_label": "Knudstad1968NippurSumer24originalreport",
+      "citation": "Knudstad,J.E. A Preliminary Report on the1966–67Excavations at Nippur. Sumer24(1968):95–106.",
+      "requirement": "Actual Sumerarticle and relevant plates/object lists for exact10N-361A-B/A33980follow-up. Specific bowl occurrence remains unverified.1966–67annual report already held; another annual-report copy unnecessary. Separate exact field/objectcard request remains open.",
+      "priority": 2,
+      "status": "unheld original season report needed; object match unverified",
+      "bibliography_url": "https://oi.uchicago.edu/sites/default/files/uploads/shared/docs/oic22.pdf",
+      "attempted_original_route": "https://findit.library.yale.edu/images_layout/view?parentoid=15763264&increment=141",
+      "checked_at": "2026-10-02T22:01:56+00:00",
+      "previous_access_evidence": "Official OIC22indexed footnote supplies exact citation. Old Yale image route unavailable in web tool; original Sumerarticle/pages not acquired. No blanket access denial or object edition-absence claim."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -266,8 +290,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/ford-synoptic46-2026-10-02/acquisition-queue-before.json",
-    "sha256": "a01d9f6d2d8ac64dee465910505af92ba6049ddd59b70157f32a2ed83d3c0c45"
+    "path": "data/private/research-work/exact-routes47-2026-10-02/acquisition-queue-before.json",
+    "sha256": "2258d747367ed9700d39f115be7d9b4b10ef92eb6b5d03b6b9cc1ced59559cf1"
   },
   "new_access_requests_checkpoint": 41,
   "latest_held_context_inventory": {

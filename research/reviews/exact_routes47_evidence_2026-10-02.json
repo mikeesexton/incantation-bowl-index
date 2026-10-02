@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-02T22:01:56+00:00",
+  "reviewed_by": "Codex",
+  "scope": "Exact publication acquisition routes and identity safeguards; bibliographic metadata is not an inscription reading or object match.",
+  "new_original_report_leads": 2,
+  "original_reports_obtained": 0,
+  "new_verified_edition_links": 0,
+  "identity_merges": 0,
+  "entries": [
+    {
+      "identity_id": "IDENT-996580409AEC",
+      "object_id": "IBI-996580409AEC",
+      "catalogue_route": "https://commons.library.stonybrook.edu/amar/53/",
+      "download_route": "https://commons.library.stonybrook.edu/cgi/viewcontent.cgi?article=1052&context=amar",
+      "outcome": "Actual primary AMAR53body identifies first TelUmar1931report, not Ctesiphon1933report. Its observed download returned403Forbidden in web tool; no report bytes/pages acquired and no access-control bypass. Repository noncommercial-use restriction recorded. Waterman1931pp61–62 is a contextual bowl lead in later scholarship, not an exact KM31455 identification. DiSKO primary page identifies2018.01.0502 and pseudo-script bowl; its collection link returned403. No accession bridge to KM31455established; not merged or assigned.",
+      "next_actions": [
+        "Obtain Waterman1931 Preliminary Report upon the Excavations at TelUmar,Iraq, including pp61–62 and relevant plates/object lists; verify any old field/inventory numbers against exact TMA1931.455/KM31455 photographs/cards.",
+        "Obtain official Kelsey card/concordance for DiSKO2018.01.0502; keep separate from KM31455pending exact accession bridge.",
+        "Continue permitted visible/infrared source-image and conservation documentation acquisition for KM31455."
+      ]
+    },
+    {
+      "identity_id": "IDENT-AA15A1232B1F",
+      "object_id": "IBI-AA15A1232B1F",
+      "catalogue_route": "https://isac-idb.uchicago.edu/id/d1b417d1-6cc2-4b8e-a281-19b417f898de",
+      "original_report_lead": "J.E.Knudstad, A Preliminary Report on the1966–67Excavations at Nippur, Sumer24(1968):95–106",
+      "bibliography_route": "https://oi.uchicago.edu/sites/default/files/uploads/shared/docs/oic22.pdf",
+      "outcome": "Primary ISAC record again supplies exact A33980/10N-361A-B, but no translation/transliteration; catalogue silence is not edition absence. Official OIC22indexed footnote identifies Knudstad1968Sumer24pp95–106 original preceding-season report. Observed old Yale original-report image route is unavailable via web tool; official OIC22current paths failed404/internalerror. Indexed primary citation is bibliographic lead only; no original Sumerarticle/pages acquired or exact bowl reference established. Already held1966–67annual report is not re-requested.",
+      "next_actions": [
+        "Obtain original Knudstad1968Sumer24pp95–106 and its relevant plates/object list; inspect for exact10N-361A-B/A33980 before assigning any edition/context reference.",
+        "Obtain tenth-season field/object register or museum accession card with exact10N-361A-B/A33980, as already queued; report silence cannot establish no edition."
+      ]
+    }
+  ],
+  "additional_checks": [
+    "Bounded MS1911/2andMS2056/12queries still return collection prospective/preliminary wording or unrelated results; no current publication-absence finding, no new exact edition, and no duplicated acquisition request.",
+    "DiSKO lead2018.01.0502 retained only as unverified catalogue-number concordance requirement, not KM31455 identity.",
+    "AMAR471second report record says1922, while1933bibliographic reports differ; source metadata retained separately, actual title page needed before bibliographic correction. Second report not substituted for first."
+  ]
+}

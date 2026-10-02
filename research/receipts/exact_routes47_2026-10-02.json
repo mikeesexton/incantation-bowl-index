@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "checkpoint": 47,
+  "created_at": "2026-10-02T22:01:56+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "cc6aed200bc129f92bb95a2a505c3eb457c1ce8530e59830172d631051455b6a",
+  "corpus_after": "cc6aed200bc129f92bb95a2a505c3eb457c1ce8530e59830172d631051455b6a",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 27,
+  "frozen_unlinked_now": 222,
+  "new_frozen_case_attempts": 2,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 0,
+  "new_proofreading_reviews": 0,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_captures": 0,
+  "new_media": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1319,
+  "checked_edition_text_rows": 1182,
+  "partial_edition_text_rows": 136,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 2046,
+  "total_media": 2027,
+  "total_local_images": 1190,
+  "total_source_captures": 87,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 57,
+    "appearance_bearing_sources": 52,
+    "indexed_appearances": 1238
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/exact-routes47-2026-10-02/campaign_case_progress_checkpoint47.json",
+    "sha256": "c7be179a840e0a57816700703c0ff124868a5a84f03f66a6dc0102fe28abfbd3"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/ford-synoptic46-2026-10-02/held_pdf_inventory_checkpoint46.json",
+    "sha256": "0694b663ff559bb79bf74fd0b997e728b3922cde92e15c1cb76ced9c06a18f18"
+  },
+  "acquisition_queue": {
+    "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+    "sha256": "666b880f6144c0eb6c7e249c48c9c823020ff3c1c149f91e9974cd2e7be565e2"
+  },
+  "new_access_blockers": 2,
+  "new_miri_notifications": 1,
+  "scope": "Checkpoint47 advances exact original excavation-report routes for two fixed priority cases, KelseyKM31455/TMA1931.455andISACA33980/10N-361A-B. First Waterman1931TelUmarreport identified in primary AMAR53; observed download403, noPDF acquired. Original Knudstad1968Sumer24pp95–106 lead identified in indexed official bibliography; old Yale original-image route unavailable, original article not held. Two metadata-only acquisition requests added for Miri, queue now18requests/ten resolved holdings; existing heldNippurannual report not re-requested. DiSKO2018.01.0502 remains an unverified Kelsey concordance lead, never merged/assigned. Two fixed case histories extended with actual routes/limits; all249attempted,27linked/222unlinked/zero complete. No new corpus rows/readings/captures/identity or scholarly decisions;2,046texts/1,319edition rows(1,182checked/136partial/one unreviewed),57heldPDFsources/52appearance-bearing/1,238appearances unchanged. Previous and current Goal turns progress; Goal active, no reset.",
+  "next_actions": [
+    "Continue exact edition/catalogue routes for222unlinked fixed identities.",
+    "Check remaining native/English comparative quotations and footnotes in held sources while Miri seeks original reports/editions and NLI images/cards."
+  ],
+  "validation": {
+    "corpus_unchanged": true,
+    "original_reports_obtained": 0,
+    "original_case_histories_preserved": true,
+    "new_case_history_attempts": 2,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2046,
+      "all_text_editorial_statuses_verified": 2046,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2027,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 2,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    }
+  },
+  "protected_payloads": "Full retrieved research-tool outputs and exact case histories retained privately; public receipt contains only project-authored metadata/scoped conclusions, not protected edition text.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0047_exact_excavation_report_routes.json",
+      "sha256": "6205774c9f1b9a5076699fb48f9798822e0e1f31555be577d3fd095de1d5e78a"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/campaign_case_progress_checkpoint47.json",
+      "sha256": "c7be179a840e0a57816700703c0ff124868a5a84f03f66a6dc0102fe28abfbd3"
+    },
+    {
+      "path": "research/reviews/exact_routes47_evidence_2026-10-02.json",
+      "sha256": "baeaf4e49c716dc0476e539065fccdc4a9c5f9e39c645ddddff60affe5a8cee7"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/search-log.json",
+      "sha256": "69a2d44b5e04f2a269a5e115fc5f560db8680493549b0fb81c79e0870a5f3457"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/acquisition-queue-before.json",
+      "sha256": "2258d747367ed9700d39f115be7d9b4b10ef92eb6b5d03b6b9cc1ced59559cf1"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/waterman-download-web.json",
+      "sha256": "57caefe5c0c03b91db80cf530f352fcdc8c85264d19ad3c463735d834ef9ba09"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/nippur-search-web.json",
+      "sha256": "f239817f72cb85a05d533e75ac0b58bcd8d08beb528f15147c12c4ce7a5200c6"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/disko-catalogue-web.json",
+      "sha256": "6c6736ed07aa8d84e559f04d673ada4400fe8fbf365c4deb29ed9e095baa2a8b"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/archive-discovery-web.json",
+      "sha256": "d35a1e8cb82523033696eeb18ef93d70952122168365bb43db3b43f976ecab77"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/primary-records-web.json",
+      "sha256": "e95d27286e11641cf52bd59f053b2a7d65fca6c161e67616078a8ab392cef0ce"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/miri-dispatch.json",
+      "sha256": "e9b8b07be6690d537265db7a457e48627884aeb6871f44e207034b00c46de527"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/reader-verification.json",
+      "sha256": "f1f604e4f2a386082f3c2b5c6dbc9bfe8acdd9817518f855c4fdbe2ee8089d55"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/reader-build-final.log",
+      "sha256": "1f28ad3c63f1ece248c28600abf2313a6a36d68195cf73ee77e7771c5f6fe493"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/tests-final.log",
+      "sha256": "b0b160f3a526731d3e5e4d92beb567c969cadf88505e563522a324db15cc8f29"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/node-tests-final.log",
+      "sha256": "5b2af1f3a70f6040eeea0dcab0b887323f037d6af82a6244e698b7a6557e0ccf"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/record_checkpoint.py",
+      "sha256": "dc13e723f5cff7b0c4c35bfdf2a740311bc7a92e94f43c5cc808ffaf60909ae1"
+    },
+    {
+      "path": "data/private/research-work/exact-routes47-2026-10-02/verify_reader.py",
+      "sha256": "2b2a1cfa54b1990ac6f8df96d90117f1161a3770a3850c4c40b591f77d0dcdb9"
+    }
+  ],
+  "miri_dispatch": {
+    "path": "data/private/research-work/exact-routes47-2026-10-02/miri-dispatch.json",
+    "sha256": "e9b8b07be6690d537265db7a457e48627884aeb6871f44e207034b00c46de527"
+  },
+  "miri_dispatch_status": "Tool acknowledged one authorized metadata-only message to Track blocked bowl sources; tracker processing not independently verified."
+}
