@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "2e25fbfb10291b80d80484945658d1466c7828de1523b37a3c72539a0cb1a8c2",
+  "corpus_digest": "9c86ad1f1a6399a7d73c89a2ff8a0ee8dcadb014ca929675c671dd7f6a909327",
   "migrations": 21,
-  "note": "Checkpoint30: seven thesis native witnesses, nine partial reviews and two retained locator clarifications; M59 synoptic witness captured separately, NLI7 image requirement retained, full reader verified.",
-  "recorded_at": "2026-10-02T16:26:34+00:00",
+  "note": "Checkpoint31: six native thesis witnesses and six partial source-reading reviews; all earlier rows unchanged;17native/17English captured;roadmap/reports/private reader verified.",
+  "recorded_at": "2026-10-02T16:44:46+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,16 +151,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "669a0379e441ff2bb9fa37958affaf1f92c4e5dbd90beb90bd26bea8c4816a9c",
-      "rows": 1350
+      "digest": "65e7bdeda7afe752ab2b483f2fd69d86a461b4d679955cc9d7663ffee6b25348",
+      "rows": 1356
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "6ec61d0a9a4dc550e4299e79b56d14f4756a02d0146c2ed22a874617b84a1ffe",
-      "rows": 1971
+      "digest": "9927ac9896c63d9495f1877b029889966a6fefce587f831447f935047b0fc13a",
+      "rows": 1977
     }
   }
 }
