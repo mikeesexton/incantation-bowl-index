@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-02T03:29:58+00:00`
+Generated: `2026-10-02T03:52:34+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -8,11 +8,11 @@ The original source claims remain unchanged. This review classifies apparent dif
 
 | Disposition | Claim-field instances |
 |---|---:|
-| Compatible | 570 |
+| Compatible | 569 |
 | Scholarly Disagreement | 2 |
 | Source Inconsistency | 4 |
 | Unresolved | 10 |
-| Requires current evidence review | 273 |
+| Requires current evidence review | 278 |
 
 ## Revalidation queue
 
@@ -208,6 +208,8 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-874E34F7B3B5 — British Museum 1957,0925.1 | dating | dating: 6th–7th century CE [SRC-339D358761D2; object W_1957-0925-1]; period: Late Sasanian [SRC-339D358761D2; object W_1957-0925-1] |
 | IDENT-874E34F7B3B5 — British Museum 1957,0925.1 | location | current_location: British Museum, London [SRC-B47F6370B1D0; pp. 56–72]; current_location: The British Museum [SRC-339D358761D2; object W_1957-0925-1] |
 | IDENT-874E34F7B3B5 — British Museum 1957,0925.1 | provenance | findspot: Southern Iraq (?) [SRC-339D358761D2; object W_1957-0925-1]; production_place: Southern Iraq [SRC-339D358761D2; object W_1957-0925-1] |
+| IDENT-8CE1A46F46E2 — Smithsonian NMNH Syriac bowl nmnhanthropology_8046135 | location | current_location: Smithsonian National Museum of Natural History [SRC-4A1FC349B813; Smithsonian record nmnhanthropology_8046135]; current_or_reported_collection: Smithsonian Institution, Washington D.C. [SRC-795E719C624E; Contents PDF3, Bowl 26] |
+| IDENT-8CE1A46F46E2 — Smithsonian NMNH Syriac bowl nmnhanthropology_8046135 | publication | bibliography: Naveh and Shaked 1993, no. 26, pp. 139–142, pl. 31; Moriggi 2014, no. 28, pp. 138–143 [SRC-4A1FC349B813; Smithsonian record nmnhanthropology_8046135]; publication_status: Catalogued in a complete researcher-inspected corpus edition. [SRC-3C4294DDB367; p. 138]; publication_status: Bowl edition declared in held contents; body starts p. 139, plate 31. [SRC-795E719C624E; Contents PDF3, Bowl 26; edition start p. 139 and plate 31 declared; illustrations p.10/PDF5] |
 | IDENT-8D4A2D8DC7DA — British Museum 135563: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1971-0229-1]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1971-0229-1] |
 | IDENT-8D4A2D8DC7DA — British Museum 135563: incantation bowl | language | inscription_language: Talmudic Aramaic / Jewish Babylonian Aramaic [SRC-195B6B6E19A1; pp. 159–165]; inscription_language: Jewish Babylonian Aramaic [SRC-A90AB34CA3FE; p. 102, table 6, NFP 2] |
 | IDENT-8D4A2D8DC7DA — British Museum 135563: incantation bowl | location | current_location: British Museum, London [SRC-195B6B6E19A1; pp. 159–165]; current_location: The British Museum [SRC-3D4B57D27A24; Related objects: 1971-0229-1]; current_or_reported_collection: British Museum [SRC-A90AB34CA3FE; p. 102, table 6, NFP 2] |
@@ -255,6 +257,8 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-CCFCF40300C5 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.5=34) | provenance | collection_history: Formerly Paris – Klagsbald. [SRC-F4EFCC759A72; MMS 990039100340205171]; collection_history: Donated by Avigdor Klagsbald. [SRC-F4EFCC759A72; MMS 990039100340205171] |
 | IDENT-CD3E2F90BE86 — Apotropaic index MS2053/164 | client | client: Naward son of Nabiya (?); Yawita, his wife; Aḥay son of Yawita. [SRC-99F964DDA219; VMBA photographic archive, record JBA 21 (MS 2053/164); Internet Archive snapshot 20230815105559]; client: Naward son of Nabiya (?); Yawita, his wife; Aḥay son of Yawita [SRC-7FBBB775E502; JBA 21, printed p. 129] |
 | IDENT-CD3E2F90BE86 — Apotropaic index MS2053/164 | dimensions | dimensions: 155x70 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 21 (MS 2053/164); Internet Archive snapshot 20230815105559]; dimensions: 155 × 70 mm [SRC-7FBBB775E502; JBA 21, printed p. 129] |
+| IDENT-CE40E1962442 — BLMJ 0070 | location | current_or_reported_collection: Bible Lands Museum Jerusalem [SRC-6D313A7AA389; p. 1, item 18]; current_or_reported_collection: Bible Lands Museum, Jerusalem [SRC-795E719C624E; Contents PDF3, Bowl 17] |
+| IDENT-CE40E1962442 — BLMJ 0070 | publication | publication_status: Catalogued in a complete researcher-inspected corpus edition. [SRC-3C4294DDB367; p. 134]; publication_status: Bowl edition declared in held contents; body starts p. 120, plate 22. [SRC-795E719C624E; Contents PDF3, Bowl 17; edition start p. 120 and plate 22 declared; illustrations p.10/PDF5] |
 | IDENT-D0A629AC03EA — Apotropaic index MS2053/251 | client | client: Mat-Yišu daughter of Bat-Sahde; Drakhtaq, her husband (same family in JBA 46) [SRC-7FBBB775E502; JBA 24, printed p. 137]; client: Mattay-Yišu daughter of Bat-Sahde; Drakhtaq, her husband. [SRC-99F964DDA219; VMBA photographic archive, record JBA 24 (MS 2053/251); Internet Archive snapshot 20230815105559] |
 | IDENT-D0A629AC03EA — Apotropaic index MS2053/251 | dimensions | dimensions: 157x58 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 24 (MS 2053/251); Internet Archive snapshot 20230815105559]; dimensions: 157 × 58 mm [SRC-7FBBB775E502; JBA 24, printed p. 137] |
 | IDENT-D24864CAB7E0 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.7=34) | provenance | collection_history: Formerly Paris – Klagsbald. [SRC-9C22E11B8B7E; MMS 990039101780205171]; collection_history: Donated by Avigdor Klagsbald. [SRC-9C22E11B8B7E; MMS 990039101780205171] |
@@ -293,6 +297,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-FB4728FAE732 — Waller 2022: JBA 75 | biblical_intertexts | biblical_quotations: Num 9:23 [SRC-8C611BF93288; JBA 75, printed p. 46]; biblical_quotations: ["Num. 9.23"] [SRC-73C44B143A9D; p. 158, distribution table, JBA 75] |
 | IDENT-FC756E58C80D — Waller 2022: JBA 98 | biblical_intertexts | biblical_quotations: Ex 3:14; Ex 3:15; Is 40:31; Is 60:11; Gen 27:28 (to) [SRC-8C611BF93288; JBA 98, printed p. 142]; biblical_quotations: ["Exod. 3.15", "Isa. 40.31", "Isa. 60.11", "Gen. 27.28"] [SRC-73C44B143A9D; p. 158, distribution table, JBA 98] |
 | IDENT-FECC2E84D07B — Apotropaic index MS2053/253 | dimensions | dimensions: 170 × 72 mm [SRC-7FBBB775E502; JBA 53, printed p. 235]; dimensions: 170x72 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 53 (MS 2053/253); Internet Archive snapshot 20230815105534] |
+| IDENT-MSF1993-BOWL-23 — Naveh–Shaked 1993 Bowl 23 | location | current_or_reported_collection: Mr. Leonard A. Wolfe, Jerusalem (plate courtesy credit) [SRC-795E719C624E; Illustrations printed10/PDF5, plate28]; current_or_reported_collection: Alexander L. Wolfe Collection, Jerusalem [SRC-795E719C624E; Contents PDF3, Bowl 23] |
 
 ## Substantive follow-up queue
 

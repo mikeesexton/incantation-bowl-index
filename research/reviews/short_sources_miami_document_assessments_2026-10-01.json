@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T03:48:53+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-SHORTMIAMI-CAP-F6B7348C271E-20261002",
+      "source_id": "SRC-795E719C624E",
+      "capture_id": "CAP-F6B7348C271E",
+      "supersedes_id": "IBI-DOC-NAVEH-SHAKED1993-20260912",
+      "document_form": "scan",
+      "extent": "front_matter",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "71ebf58898eb2d4915650798050dcc6cf34171ee91b7890ae76ed4df5e4d65e9",
+      "basis": "All7pages printed.14contents bowl units extracted as catalogue pointers; body113–142/plates19–32 absent. Previous blank/no-enumeration finding superseded.",
+      "evidence_path": "research/reviews/short_sources_miami_evidence_2026-10-01.json",
+      "evidence_sha256": "1ee0d997c4ed095915485d33e0bd91f2fa0cc1902e4b6a05d350d46619200c03",
+      "extraction_path": "research/reviews/msf1993_contents_appearances_2026-10-01.jsonl",
+      "extraction_sha256": "663ad4e82bb8b761982efa1003c0dc154fca0d6dd6976f0f20b5d1e0b940d465"
+    },
+    {
+      "id": "IBI-DOC-SHORTMIAMI-CAP-595AD390EEDD-20261002",
+      "source_id": "SRC-ABUDRAHAM2023-MIAMI",
+      "capture_id": "CAP-595AD390EEDD",
+      "supersedes_id": "IBI-DOC-ABUDRAHAM2023-20260911",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "basis": "Held complete scoped article13–30 in298pagevolume. Prior complete extraction covered catalogue facts only. Main10unit Hebrew-letter edition/Hebrew translation captured; comparative quotes still queued. No native Mandaic script recovery or source-wide completion.",
+      "evidence_path": "research/reviews/short_sources_miami_evidence_2026-10-01.json",
+      "evidence_sha256": "1ee0d997c4ed095915485d33e0bd91f2fa0cc1902e4b6a05d350d46619200c03",
+      "extraction_path": "data/private/manifests/short_sources_miami_texts_2026-10-01.jsonl",
+      "extraction_sha256": "450ee989cf9c52f2d2ac74ac42c34a3e83278b5b3ab59c2b483f2cd79a72ad0a"
+    },
+    {
+      "id": "IBI-DOC-SHORTMIAMI-CAP-E95ABA75D9CA-20261002",
+      "source_id": "SRC-8FA39ADCBF5F",
+      "capture_id": "CAP-E95ABA75D9CA",
+      "supersedes_id": "IBI-DOC-JULLIEN2022-20260911",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "none",
+      "document_sha256": "2832a9bfc1d27f920374e484c0d112849a3ebd6a64bc06c189ad6895db6337eb",
+      "basis": "Fresh all3page pixel audit: no bowl-specific designation/quotation. Explicit BMidentifiers concernleadrolls; excluded. ReviewedMoriggi bookchapter57–76 unheld; review does not verify its readings.",
+      "evidence_path": "research/reviews/short_sources_miami_evidence_2026-10-01.json",
+      "evidence_sha256": "1ee0d997c4ed095915485d33e0bd91f2fa0cc1902e4b6a05d350d46619200c03"
+    }
+  ]
+}

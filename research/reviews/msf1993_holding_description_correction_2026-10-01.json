@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T03:48:53+00:00",
+  "evidence_path": "research/reviews/short_sources_miami_evidence_2026-10-01.json",
+  "evidence_sha256": "1ee0d997c4ed095915485d33e0bd91f2fa0cc1902e4b6a05d350d46619200c03",
+  "entries": [
+    {
+      "id": "IBI-SRC-CORR-MSF1993-FRONTMATTER-20261002",
+      "source_id": "SRC-795E719C624E",
+      "before": {
+        "source_type": "book",
+        "title": "Magic Spells and Formulae: Aramaic Incantations of Late Antiquity",
+        "authors": "Joseph Naveh; Shaul Shaked",
+        "issued_year": 1993,
+        "container_title": null,
+        "publisher": "The Magnes Press, The Hebrew University",
+        "url": null,
+        "doi": null,
+        "isbn": "965-223-841-6",
+        "citation": "Naveh, Joseph, and Shaul Shaked. Magic Spells and Formulae: Aramaic Incantations of Late Antiquity. Jerusalem: The Magnes Press, The Hebrew University, 1993.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Only a seven-page researcher-supplied file is held, SHA-256 71ebf58898eb.... It contains the title page, imprint, and an incomplete opening of the contents; five PDF pages are blank. It is not a complete copy and does not support object-level enumeration."
+      },
+      "after": {
+        "source_type": "book",
+        "title": "Magic Spells and Formulae: Aramaic Incantations of Late Antiquity",
+        "authors": "Joseph Naveh; Shaul Shaked",
+        "issued_year": 1993,
+        "container_title": null,
+        "publisher": "The Magnes Press, The Hebrew University",
+        "url": null,
+        "doi": null,
+        "isbn": "965-223-841-6",
+        "citation": "Naveh, Joseph, and Shaul Shaked. Magic Spells and Formulae: Aramaic Incantations of Late Antiquity. Jerusalem: The Magnes Press, The Hebrew University, 1993.",
+        "access_status": "partial",
+        "rights_status": "copyrighted",
+        "notes": "Seven-page researcher-supplied front matter, SHA-256 71ebf58898eb2d4915650798050dcc6cf34171ee91b7890ae76ed4df5e4d65e9. Fresh pixel inspection of all7pages on2026-10-02T03:48:53+00:00 finds title, imprint, contents, illustrations list and preface/editorial signs. No blank pages: earlier5blank/incomplete-contents/no-enumeration description was false and is preserved in the immutable correction history. Contents declare Bowls14–27 with edition starts pp113–142 and plates19–32; those body/plate pages are unheld. Supports catalogue enumeration, never readings or complete edition extraction."
+      },
+      "rationale": "Fresh actual rendered7page inspection disproves fiveblank assertion. Correct active holding description, preserve original source/doc/capture provenance and exact limited frontmatter extent. No reading verification from contents."
+    }
+  ]
+}

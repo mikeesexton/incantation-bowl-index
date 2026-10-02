@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "checkpoint": 14,
+  "created_at": "2026-10-02T03:52:33+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "13962fc672da4a6fa426ca2d7ea90cb2f953a8e0924a74ef4123abbfcdfe4569",
+  "corpus_after": "18b1e8f5fb446f41f2a9b5d3672e284a6a3cdcc0d46fb13f57baff903e2c4d85",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "new_text_rows": 2,
+  "new_text_characters": 1050,
+  "separate_partial_source_checks_added": 2,
+  "source_appearances_added": 14,
+  "new_publication_scoped_candidates": 10,
+  "existing_exact_designations_reused": 4,
+  "private_page_images_added": 16,
+  "unique_rendered_source_pages_added": 3,
+  "publication_assessments_added": 14,
+  "document_assessments_added": 3,
+  "source_metadata_corrections_added": 1,
+  "research_leads_added": 3,
+  "identity_merges": 0,
+  "holding_correction": "1993 all7pagesprinted;14contents bowl units; actualedition113–142/plates19–32unheld. Wrong5blank report superseded, immutable original retained.",
+  "Miami_scope": "Main10unit Hebrew-letter Mandaic edition and Hebrew translation captured with exact remaining glyph/diacritic checks; contextualcomparisons pending; previous sourcecomplete label supersededpartial. No nativeMandaicscriptrecovery.",
+  "Jullien_scope": "Held3page review no bowl reading/designation, metalrolls excluded; reviewedchapterunheld.",
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1017,
+    "appearance_bearing_sources": 40,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-8FA39ADCBF5F",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES"
+    ]
+  },
+  "edition_text_rows": 1016,
+  "checked_edition_text_rows": 895,
+  "partial_edition_text_rows": 119,
+  "unreviewed_edition_text_rows": 2,
+  "total_text_rows": 1681,
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Finish exact overdot alignment and selective Hebrew vowel-pointing checks in Miami main edition/translation; then capture contextual bowl quotations beginning Hilprecht40c/VT1981.8 and MS2054/47. Private page-local source_scope_inventory.json retains the full comparison queue; distinguish pottery/bowls from lead rolls/manuscripts.",
+    "Obtain lawful Naveh–Shaked1993 actual bowl editions113–142 and plates19–32. Frontmatter proves14catalogue units14–27 but holds no readings/actualplateimages. Corrected previous5blank/no-enumeration claim; all7pagesprinted.",
+    "Jullien2022 held complete3page review contains no bowl-specific designations/quotations. Obtain Moriggi2021 reviewedbookchapter57–76. Leadroll BMidentifiers excluded; no no-known-edition assertion.",
+    "Continue frozen institutional concordances and missing native-script routes; directJuusola book pages45/188,134,26–29/245ff, thesis glyph ambiguities and Bowl4 institutional1042/1402 register evidence remain open."
+  ],
+  "protected_payloads": "Ignored private vault/manifests only; content-free hashes committed. No public release, deployment or push.",
+  "changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 14
+    },
+    {
+      "table": "appearances",
+      "added": 14
+    },
+    {
+      "table": "claims",
+      "added": 46
+    },
+    {
+      "table": "document_assessments",
+      "added": 3
+    },
+    {
+      "table": "identifiers",
+      "added": 14
+    },
+    {
+      "table": "leads",
+      "added": 3
+    },
+    {
+      "table": "media",
+      "added": 16
+    },
+    {
+      "table": "objects",
+      "added": 10
+    },
+    {
+      "table": "publication_assessments",
+      "added": 14
+    },
+    {
+      "table": "source_corrections",
+      "added": 1
+    },
+    {
+      "table": "sources",
+      "added": 0
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 2
+    },
+    {
+      "table": "texts",
+      "added": 2
+    }
+  ],
+  "modified_originals_preserved": [
+    {
+      "table": "sources",
+      "id": "SRC-795E719C624E",
+      "stable_original_fields_preserved_in_immutable_history": true
+    }
+  ],
+  "all_other_preexisting_rows_identical": true,
+  "validation": {
+    "rehearsal": true,
+    "immutable_manifest_replays": {
+      "trial_manifests": 6,
+      "production_manifests": 6,
+      "trial_digest_after_replay": "c6aa38d01127146197e12b862366698cbfb75d8507df80dbb98dc7d203474966",
+      "production_digest_after_replay": "18b1e8f5fb446f41f2a9b5d3672e284a6a3cdcc0d46fb13f57baff903e2c4d85",
+      "digest_unchanged": true,
+      "lead_manifest_replay_policy": "Applied once; generic lead importer refreshes updated_at on replay. First trial7manifest replay changed only newly added lead timestamps; corrected immutable replay excludes lead import. No change to original production rows."
+    },
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "381 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1681,
+      "all_media_rows_present": 1361,
+      "local_image_rows": 1001,
+      "new_text_hashes_match": 2,
+      "new_image_hashes_match": 16,
+      "all_source_capture_hashes_match": 71,
+      "all14contents_units_present": true,
+      "current_msf_holding_description_corrected": true,
+      "no_msf_reading_inferred_from_contents": true,
+      "corrected_thesis_source_and_book_link_absence_verified": true,
+      "scope": "Complete local private Mike projection; source extraction still partial, no public release or deployment."
+    }
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/short_sources_miami_proof_2026-10-01_production.json",
+      "sha256": "daa37e2338a9433f0e340d1fad684a67452cd8c18f3e15dc942d6abe22a8fc46"
+    },
+    {
+      "path": "data/private/manifests/short_sources_miami_proof_2026-10-01_trial.json",
+      "sha256": "6f9dfd09d406f48113441b033b2a172d4924adf6c4f93c1014329fbbe4fd72af"
+    },
+    {
+      "path": "data/private/manifests/short_sources_miami_texts_2026-10-01.jsonl",
+      "sha256": "450ee989cf9c52f2d2ac74ac42c34a3e83278b5b3ab59c2b483f2cd79a72ad0a"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0014_short_sources_and_miami_main_texts.json",
+      "sha256": "c79b56b351f78d430dc988542b7ec0de65d22be43b37b39e5bbb870fb4ae68d8"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/MIAMI-EDITION-capture01.txt",
+      "sha256": "5d16c2a6c09c9e77bd7d430d99c19c88851afe05b3b71b581377f57e52c75f10"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/MIAMI-EDITION-proof02.txt",
+      "sha256": "5d16c2a6c09c9e77bd7d430d99c19c88851afe05b3b71b581377f57e52c75f10"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/MIAMI-TRANSLATION-capture01.txt",
+      "sha256": "417d6e53067c2b1eeb489292d63b39fb44bfed5a58c34c82384021c9ebb6ffc3"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/MIAMI-TRANSLATION-proof02.txt",
+      "sha256": "417d6e53067c2b1eeb489292d63b39fb44bfed5a58c34c82384021c9ebb6ffc3"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/apply.py",
+      "sha256": "a842ff1c71a7d2d593a2be1dc442ade8f8db81a671487bf9a7f1d64be285d7da"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/held_pdf_inventory_checkpoint14.json",
+      "sha256": "3e56751770f071c61d7474dc3de2ab6b00447e71400d0690609434ffaf26b3be"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/item_inventory.json",
+      "sha256": "c16cc989efa493e0f781e6113cab6c213c3c2bbe34c8d413c2238cc16895b8d3"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/jullien-discovery.json",
+      "sha256": "f6790c5233c02f031e4787b9ba4a0aecfd5885719abce0e6c7a7b40e3da8baf2"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/metadata.json",
+      "sha256": "1c633ffb62bfb21024467651c65db831b10b057af27d9116a7bb9c7dc4ddaea3"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/miami-discovery.json",
+      "sha256": "090686a0b738b2fc29545c3ab1fedefb59c6baba6bc945ed68436b0e280942d4"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/msf-discovery.json",
+      "sha256": "2953b33ab33b7e057a0722f9521267119f6e4a3f38077c2265750c4c44606af0"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/prepare.py",
+      "sha256": "809436c0455a092c26ed403224317019290cc2f70e395f17c32f0d619c0fbecf"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/production-apply.json",
+      "sha256": "c4e934750d6ebeb123c6d2a6266bcbf9146a10f707205558412f8375537cf1a2"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/production-replay.json",
+      "sha256": "6d8ff69523781d2424f05c7915a665d27a405ba5c4fc5ed3553bf73313d3e0c4"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/production-verification.json",
+      "sha256": "5c81cc19f95fb0213884ea8f28da38b5e0542fc5a71d5768dbcb84ca1b196540"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/proof_inventory_production.json",
+      "sha256": "52a6b3fe69aae11f9cfb091908bf0b7b72fd0bd16ec0a0419491c8705092772b"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/proof_inventory_trial.json",
+      "sha256": "3a6b79ce35143c14054cd09ac6d1a126877219a3526cd23cac5fa73511ded68f"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/record_checkpoint.py",
+      "sha256": "7f297f3f7671e7ed70a9d9dca2b9b2fa576133a049da1a124d9b8447ba3c3fd8"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/source_check.py",
+      "sha256": "b07abdd928ed7ef27cb5d5bc6f2bc4f19e61195adff340e14a7af8a2a9622299"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/source_scope_inventory.json",
+      "sha256": "223939d8a8f1223991ea4521a1b6b86ebabc3087c631c074146e0a1494f1790c"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/trial-apply.json",
+      "sha256": "beed4897ac062084d8d9e7901ac0502f7d9d26173d956c1c16994dd045197253"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/trial-replay.json",
+      "sha256": "e52b348ac01364841c59aaf0391e696302e0d2d461abbd043471a5b8ac70de0c"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/trial-verification.json",
+      "sha256": "ff0d32d803fd8c1148ef6821ef3ab0c64b526584a7b57a9175f5be0de8ad86c8"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/verify.py",
+      "sha256": "dbd90e66581769a8c2dfdfa6b8ef33e230940e40bb92c62163bda3f667b8315b"
+    },
+    {
+      "path": "research/receipts/short_sources_miami_private_page_images_2026-10-01.json",
+      "sha256": "b21cdc7cf070241f5f545afcba20fa4d7269f3f0065686c2a5fea2d195b5b1cb"
+    },
+    {
+      "path": "research/reviews/msf1993_contents_appearances_2026-10-01.jsonl",
+      "sha256": "663ad4e82bb8b761982efa1003c0dc154fca0d6dd6976f0f20b5d1e0b940d465"
+    },
+    {
+      "path": "research/reviews/msf1993_contents_publication_assessments_2026-10-01.json",
+      "sha256": "a587184d18e475afac669b27d2a32ac28243cb436c7939f0d3ac9b48e287d8d4"
+    },
+    {
+      "path": "research/reviews/msf1993_holding_description_correction_2026-10-01.json",
+      "sha256": "eba761397ed6fdf286c1b9d25e44c73b977386b2335950c5646b67aff44dbaa0"
+    },
+    {
+      "path": "research/reviews/short_sources_miami_document_assessments_2026-10-01.json",
+      "sha256": "f6a775d197388964b3d22de1568c8278e7e4cc4536086abb1052985bdf553f56"
+    },
+    {
+      "path": "research/reviews/short_sources_miami_evidence_2026-10-01.json",
+      "sha256": "1ee0d997c4ed095915485d33e0bd91f2fa0cc1902e4b6a05d350d46619200c03"
+    },
+    {
+      "path": "research/reviews/short_sources_miami_research_leads_2026-10-01.jsonl",
+      "sha256": "351f0e1f00a40aed0acb77b287dbf0cfe55f1f1c28721eb8b068a8c3807a94e2"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/reader-verification.json",
+      "sha256": "e9b9b96bd044dfd32b4d93fc6374a6e8d5cb782950ed2751b443576bda960265"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/verify_reader.py",
+      "sha256": "c5f6a8950ba0833cd4bd9b9bc547f6d462ff45db8abcf75aed3bc29583c8ec2d"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/reader-build.log",
+      "sha256": "585f0f2ff009c28c85a001c91c0716ceaeddd0883de3a019f4922a261c63827d"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/tests-final.log",
+      "sha256": "9b579948022ab1230798f9c5dbf6d64d82d275e4aaeaa98b851d47121b1bf921"
+    },
+    {
+      "path": "data/private/research-work/short-sources-miami-2026-10-01/reports-final.json",
+      "sha256": "c85587476f31d0ec673d6ff0a3a3d56f20d449edffc9b1dba0b74e32d190d7ca"
+    }
+  ]
+}
