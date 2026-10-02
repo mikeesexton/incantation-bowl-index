@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "9c86ad1f1a6399a7d73c89a2ff8a0ee8dcadb014ca929675c671dd7f6a909327",
+  "corpus_digest": "4b64d97b51c0e75c19142970f94b13c661bc46c778db8b891607afd36c6bc78f",
   "migrations": 21,
-  "note": "Checkpoint31: six native thesis witnesses and six partial source-reading reviews; all earlier rows unchanged;17native/17English captured;roadmap/reports/private reader verified.",
-  "recorded_at": "2026-10-02T16:44:46+00:00",
+  "note": "Checkpoint32: three final indexed native thesis captures and four partial source-reading reviews; all earlier rows identical;20native/17English captured with explicit remaining collation; final M145 source-copy correction retains original content; roadmap/reports/private reader verified.",
+  "recorded_at": "2026-10-02T17:04:43+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,16 +151,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "65e7bdeda7afe752ab2b483f2fd69d86a461b4d679955cc9d7663ffee6b25348",
-      "rows": 1356
+      "digest": "c20b2d7ed49063da7f14eff17e886336871f39d7210349d0b5b417e9286895ec",
+      "rows": 1360
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "9927ac9896c63d9495f1877b029889966a6fefce587f831447f935047b0fc13a",
-      "rows": 1977
+      "digest": "be08fac00c8a8e5daaa168ca2237677d5c6560f1f245e0d88bb45e09681d7e48",
+      "rows": 1980
     }
   }
 }
