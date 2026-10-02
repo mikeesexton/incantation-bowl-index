@@ -1,21 +1,21 @@
 # Discovery campaign status
 
-Generated: `2026-10-01T23:44:15+00:00`
+Generated: `2026-10-02T00:05:44+00:00`
 
 ## Corpus
 
-- Candidate objects: **2059**
+- Candidate objects: **2060**
 - Unclassified claim fields: **['adversary_or_target', 'catalogue_script', 'edition_language_and_script_label', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'publication_reference', 'reported_bowl_form', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_dimensions', 'reported_findspot', 'reported_fragment_type', 'reported_height', 'reported_physical_condition', 'reported_writing_condition', 'source_language_or_script_label', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1710**
+- Estimated distinct objects after resolved dedupe: **1711**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2405**
+- Source appearances: **2411**
 - Sources: **955**
 - Dedupe clusters pending: **0**
-- Objects with text: **784**
-- Objects with translation: **405**
+- Objects with text: **786**
+- Objects with translation: **407**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **27**
@@ -76,16 +76,16 @@ Generated: `2026-10-01T23:44:15+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1333 |
+| object type | whole_bowl | 1334 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
 | record status | probable | 922 |
-| record status | candidate | 857 |
+| record status | candidate | 858 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1525 |
+| authenticity | unassessed | 1526 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |

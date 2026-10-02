@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "checkpoint": 6,
+  "created_at": "2026-10-02T00:03:43+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "be465245f4b747f053e6a31cc71810dac5569d8671b83ac174de9396cd448764",
+  "corpus_after": "a14eeb9e2efb3080a180e0da35fe49be12b672d70c431309be322519b2afd058",
+  "frozen_cohort_size": 249,
+  "cases_with_appended_source_work_this_checkpoint": 0,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "source_id": "SRC-MOLIN2020-BIBLICAL-QUOTATIONS",
+  "numbered_bowl_examples_captured": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "comparative_manuscript_examples_excluded": [
+    2,
+    3
+  ],
+  "source_appearances_added": 6,
+  "source_scoped_candidate_objects_added": 1,
+  "native_excerpt_rows_added": 6,
+  "english_gloss_rows_added": 6,
+  "separate_source_checks_added": 12,
+  "reading_characters_added": 360,
+  "page_media_added": 7,
+  "publication_assessments_added": 6,
+  "publication_registry_rows_added": 1,
+  "scoped_document_assessments_added": 1,
+  "original_edition_collection_identity_for_hlib684": "uninspected; publication-scoped candidate only, no Moussaieff accession inferred",
+  "holding_audit_path": "data/private/research-work/zero-appearance-holdings-2026-10-01/holding_audit_checkpoint.json",
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 904,
+    "appearance_bearing_sources": 36,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-07B313309678",
+      "SRC-795E719C624E",
+      "SRC-8FA39ADCBF5F",
+      "SRC-D721A94FA3B2",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES",
+      "SRC-MORGENSTERN2023-FORMS"
+    ]
+  },
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Audit Morgenstern2023 exact held article PDF181–204 and the separately scoped Miami chapter; enumerate sources/units before transcription.",
+    "Inspect Saar2017 bowl passages and exact short review quotations, distinguishing bowls, amulets and Geniza manuscripts.",
+    "Continue original held editions and frozen NLI digital/exhibition concordance investigation; no catalogue-silence negative findings."
+  ],
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-004",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "scope": "Six numbered bowl quotations with bounded native/English gloss units, separately checked against actual Molin chapter; partial document extraction only. Other seven zero-appearance holdings receive discovery/extent routes, not complete source audits.",
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 6
+    },
+    {
+      "table": "appearances",
+      "added": 6
+    },
+    {
+      "table": "document_assessments",
+      "added": 1
+    },
+    {
+      "table": "identifiers",
+      "added": 1
+    },
+    {
+      "table": "media",
+      "added": 7
+    },
+    {
+      "table": "objects",
+      "added": 1
+    },
+    {
+      "table": "publication_assessments",
+      "added": 6
+    },
+    {
+      "table": "publication_registry",
+      "added": 1
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 12
+    },
+    {
+      "table": "texts",
+      "added": 12
+    }
+  ],
+  "backup_path": "data/private/backups/before-molin-quotes-20261001T235747Z.sqlite3",
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0006_molin_numbered_quotes_and_zero_appearance_holdings.json",
+      "sha256": "384494cd4c6f7e7596859695b2b131a6a738d3c4b099dc6a939d2bd535b42fcc"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/holding_audit_checkpoint.json",
+      "sha256": "de17fa11479e92e9523e9f7e5227ac3c0754ef6f5cd657a722455613ea3b4393"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/holding_inventory.json",
+      "sha256": "48be8281954a257731b69b096e8b511aa7263c2316d15e7cc2c7acf0e9a606df"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/prepare.py",
+      "sha256": "e88c4a87c9c9f7362a487050c2b97a9219baf65d4a0500d959ff9fe8c761fe1d"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/source_check.py",
+      "sha256": "116d2d9339a407c8622f5f93180061f0b2d831e41a1e8cb1a2a20928732bdc74"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/verify.py",
+      "sha256": "6a8620727012796b44c37a6ca0a85b92a102ca96629fdaa934f63b5b7b9553c8"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/production-verification.json",
+      "sha256": "c3c27c755cbc5a62fb4013bfe0d10371ac990a5118228dddad852b9e0dca3340"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/proof_inventory_production.json",
+      "sha256": "b8ac28603196c7e7af709cfe1d6e2c53562ad8635313456a149d594113f3974b"
+    },
+    {
+      "path": "research/reviews/molin2020_numbered_quote_appearances_2026-10-01.jsonl",
+      "sha256": "7bf367191112c45b48a75be40983a9e365ee5b023a6ff5a396dee4ed1486f822"
+    },
+    {
+      "path": "data/private/manifests/molin2020_numbered_quotes_2026-10-01.jsonl",
+      "sha256": "04d75d6aabb75a5ac3fe3932958a80aea852f7a3bb075cc31e73bd2af5d8e6df"
+    },
+    {
+      "path": "data/private/manifests/molin2020_numbered_quotes_proofreading_2026-10-01_production.json",
+      "sha256": "31672a052b50bf9eaebfc9ce096f70854d70fc26c7cf94d360e5873e77bca951"
+    },
+    {
+      "path": "research/reviews/molin2020_publication_references_2026-10-01.json",
+      "sha256": "d588cc9c5634982d04d5eb6adcbd29879eecbfe82cb4dee1d482a3364ca37175"
+    },
+    {
+      "path": "research/reviews/molin2020_hlib_publication_registry_2026-10-01.json",
+      "sha256": "8c96683ce07c2d41b44bf85f1cf7e41485e872b07285d1a9eea2e340c302dee8"
+    },
+    {
+      "path": "research/reviews/molin2020_quote_capture_evidence_2026-10-01.json",
+      "sha256": "c594b7f7c4eda017c76c3d51fe45ba0b320676b50a601058858e56bdb7ca6ab2"
+    },
+    {
+      "path": "research/reviews/molin2020_partial_extraction_assessment_2026-10-01.json",
+      "sha256": "107136499fba60a90ffde717b987033c8cb0fdfc3ee24a99b3caf5c585733e60"
+    },
+    {
+      "path": "research/receipts/molin2020_private_page_images_2026-10-01.json",
+      "sha256": "4d6698be2b6d0723356ca604d38fc303479183bd49139bce17a3f8025e421331"
+    },
+    {
+      "path": "data/private/research-work/zero-appearance-holdings-2026-10-01/reader-verification.json",
+      "sha256": "414b434cbb3affd321964ee7e328f1bf3061d3504d37b636a2da1a74c313086d"
+    }
+  ],
+  "validation": {
+    "copied_database_rehearsal": "pass",
+    "six_manifest_replays_unchanged": true,
+    "all_preexisting_rows_identical": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "371 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1503,
+      "all_media_rows_present": 1223,
+      "local_image_rows": 863,
+      "new_text_hashes_match": 12,
+      "new_image_hashes_match": 7,
+      "all_source_capture_hashes_match": 70,
+      "source_registry_resolved": "34/34",
+      "scope": "Full private Mike projection; no public release or remote deployment."
+    }
+  }
+}
