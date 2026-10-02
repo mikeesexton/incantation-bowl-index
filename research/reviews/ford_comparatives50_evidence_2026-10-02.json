@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-FORD2025-THUS-OATH",
+  "capture_id": "CAP-9ACA488492AF",
+  "source_sha256": "c64b1aa031a72c833f3856433eea22b00cd843733eb98df2ad25d159ba9d2df5",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T22:46:18+00:00",
+  "inspected_pdf_pages": [
+    23,
+    24,
+    25,
+    27,
+    28,
+    31,
+    32,
+    33,
+    34,
+    38
+  ],
+  "printed_pages": [
+    125,
+    126,
+    127,
+    129,
+    130,
+    133,
+    134,
+    135,
+    136,
+    140
+  ],
+  "new_checked_rows": 44,
+  "new_native_transcriptions": 26,
+  "new_middle_persian_latin_name_renderings": 2,
+  "new_english_translations": 15,
+  "new_french_translations": 1,
+  "source_contoured_letters_retained": 161,
+  "nli_links": [
+    {
+      "object_id": "IBI-4653681EA3B5",
+      "nli_number": 182,
+      "mms": "997008712401605171",
+      "catalogue": "Ms.Heb.9467.129",
+      "source_locator": "Fordp129/PDF27,NLI182:6",
+      "basis": "Exact institutional182number/title agrees with archive; Mike’s one-designation-one-bowl ruling applied without merge."
+    },
+    {
+      "object_id": "IBI-E7665D140173",
+      "nli_number": 158,
+      "mms": "997008712409005171",
+      "catalogue": "Ms.Heb.9467.34",
+      "source_locator": "Fordp135/PDF33footnote136,Moussaieff3:1",
+      "basis": "Ford explicitly states current NLI158designation; exact archived number/title corroborates institutional scope. No merger."
+    }
+  ],
+  "conflicting_reports": "Separate source-attributed IMJ80.1.3name interpretations and Moussaieff3opening readings retained; French Istanbulweapon rendering differs from Ford’s interpretation. Probable BM117826alternative not substituted into revised block.",
+  "limits": "Bounded quotation/name checks only; no full originals, ancient readings, scholarly adjudication, sourcewide/case completeness or public reuse approval. Common Syriac names do not merge JNF225/Wolfe29."
+}

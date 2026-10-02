@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T22:43:23+00:00",
+  "updated_at": "2026-10-02T23:02:16+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -84,7 +84,8 @@
       "capture_id": "CAP-9ACA488492AF",
       "sha256": "c64b1aa031a72c833f3856433eea22b00cd843733eb98df2ad25d159ba9d2df5",
       "status": "Researcher-supplied local document held",
-      "reading_audit": "Main native/English and Table3native excerpts previously checked.65further checked bounded comparative rows on printed111–119 added atcheckpoint48;30transcriptions/3Mandaic Latin transliterations/32English. Exact NLI45/65references, source editorial marks and disagreements retained. Other quotations/commentary and complete original comparative editions remain further work."
+      "reading_audit": "Main native/English and Table3native excerpts previously checked.65further checked bounded comparative rows on printed111–119 added atcheckpoint48;30transcriptions/3Mandaic Latin transliterations/32English. Exact NLI45/65references, source editorial marks and disagreements retained. Other quotations/commentary and complete original comparative editions remain further work.",
+      "checkpoint50_reading_audit": "44further checked bounded comparative rows(26native/2Latin name renderings/15English/1French),21witnesses and exactNLI158/182references; differing reports preserved. Further quotations/full originals still open."
     },
     {
       "source_id": "SRC-CA4B122C5F4D",
@@ -279,6 +280,21 @@
       "attempted_original_route": "https://findit.library.yale.edu/images_layout/view?parentoid=15763264&increment=141",
       "checked_at": "2026-10-02T22:01:56+00:00",
       "previous_access_evidence": "Official OIC22indexed footnote supplies exact citation. Old Yale image route unavailable in web tool; original Sumerarticle/pages not acquired. No blanket access denial or object edition-absence claim."
+    },
+    {
+      "source_id": "SRC-7F0FBA89D925",
+      "short_label": "Jeruzalmi1963ParisdissertationIstanbul5366",
+      "citation": "Jeruzalmi,Isak. Les coupes magiques araméennes de Mésopotamie. Doctoral dissertation,UniversitédeParis,1963 (as cited by held Ford2025).",
+      "requirement": "Permitted complete dissertation, or at least Istanbul5366editionpp140–151and original French weapon translationp141with relevant photographs/plates. Ford’s held revised native block and bounded French quotation are captured separately but cannot substitute for the original edition. Record any library copying conditions.",
+      "priority": 2,
+      "status": "unheld original needed; no fulltext found in bounded catalogue search",
+      "checked_at": "2026-10-02T23:02:16+00:00",
+      "previous_access_evidence": "No registered original capture/heldPDF. Seven targeted title/author/catalogue queries found citations but no full dissertation/PDF. BnF indexed object bibliography names the work; direct BnF/theses.fr routes failed in web tool. No paywall, robots or blanket access-denial diagnosis; manual catalogue/library/ILL follow-up needed.",
+      "held_evidence_locator": "Ford2025p135/PDF33footnotes134/140; French quotationpp135–136/PDF33–34",
+      "private_route_inventory": {
+        "path": "data/private/research-work/ford-comparatives50-2026-10-02/jeruzalmi-original-routes.json",
+        "sha256": "059adb3805f0fcbe0e36c0f0da355b939098ed505b1da4f3f92ec3bf4ddfa481"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -292,8 +308,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/levene-boundaries49-2026-10-02/acquisition-queue-before.json",
-    "sha256": "89931a545c7e3b7e7edd4a41520a172d272d301b3ef5b5b40ff4564ae00ddefc"
+    "path": "data/private/research-work/ford-comparatives50-2026-10-02/acquisition-queue-before.json",
+    "sha256": "1d85fb57786adc3cf73c60c280926275f29dab974a74be329bddc0786518179d"
   },
   "new_access_requests_checkpoint": 41,
   "latest_held_context_inventory": {
@@ -309,7 +325,18 @@
     "sha256": "5d11ae4c397e91e679c27d53eba676df56567ec238027c1fde222f3c705c744e"
   },
   "latest_held_comparative_edition_inventory": {
-    "path": "data/private/manifests/ford-comparatives48-2026-10-02/production/extraction.json",
-    "sha256": "e5d7f949c6d91fa97726ef0e27d44379a0eab511553ee3b505b2cb1552b95ad0"
+    "path": "data/private/manifests/ford-comparatives50-2026-10-02/production/extraction.json",
+    "sha256": "114542229d5dcaa17bb1098b9e23b898f64212385cd794ea11fef5d3312a1780"
+  },
+  "checkpoint50_miri_dispatch": {
+    "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
+    "host_id": "durable",
+    "thread_title": "Track blocked bowl sources",
+    "sent_at": "2026-10-02T23:03:13+00:00",
+    "authorization": "Mike explicitly authorized metadata-only genuinely fresh missing-source requests to Miri.",
+    "request_source_id": "SRC-7F0FBA89D925",
+    "request": "Jeruzalmi1963original dissertation, especially Istanbul5366pp140–151/p141and plates",
+    "tool_acknowledged": true,
+    "tracker_processing_independently_verified": false
   }
 }
