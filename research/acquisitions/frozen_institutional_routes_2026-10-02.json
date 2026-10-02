@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "agent": "Codex",
+  "routes": [
+    {
+      "source_id": "SRC-ROSIE2020-PROTECTIVE-MAGIC",
+      "url": "https://arcjournal.library.mcgill.ca/article/download/307/325",
+      "method": "ibi capture",
+      "rights_status": "copyrighted",
+      "purpose": "Inspect complete journal article, exact Met 32.150.89 figure and all bounded bowl readings/translations; separately source-check captured text.",
+      "robots_preflight": "https://arcjournal.library.mcgill.ca/robots.txt returned 200, User-agent:* Disallow:/cache/. Capture command independently checks permitted PDF path."
+    },
+    {
+      "url": "https://assets.cambridge.org/97805218/74571/frontmatter/9780521874571_frontmatter.pdf",
+      "purpose": "Bohak 2008 figure list names KM 33756 and points to figure 3.6, p.186; actual body page/edition is not held.",
+      "status": "no_local_fetch_robots_unverified_timeout"
+    },
+    {
+      "source_id": "SRC-AFDBED16E322",
+      "url": "https://lsa.umich.edu/content/dam/kelsey-assets/kelsey-publications/pdfs/passionate-curiosities.pdf",
+      "purpose": "Inspect KM19504 printed p.38 in museum collection book; catalogue caption is not a verified reading.",
+      "status": "no_local_fetch_robots_unverified_http403"
+    },
+    {
+      "url": "https://api.pageplace.de/preview/DT0400.9781316341094_A27762906/preview-9781316341094_A27762906.pdf",
+      "purpose": "Alternate Bohak preview, figure list only for p.186 reference; do not infer full work held.",
+      "status": "no_local_fetch_robots_unverified_http404"
+    }
+  ],
+  "policy": "No control bypass. Unverified routes remain library/manual acquisition leads. Private capture does not approve public reuse."
+}

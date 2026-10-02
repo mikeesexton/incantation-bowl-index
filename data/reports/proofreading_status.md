@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 909 | 118 | 2 | 1029 | 88.3% |
+| Edition text (translation, transcription, transliteration) | 914 | 118 | 2 | 1034 | 88.4% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 909 | 118 | 667 | 1694 | 53.7% |
+| All stored text | 914 | 118 | 667 | 1699 | 53.8% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 507 | 43 | 1 | 551 |
+| translation | 512 | 43 | 1 | 556 |
 | transcription | 280 | 59 | 0 | 339 |
 | transliteration | 122 | 16 | 1 | 139 |
 
@@ -67,3 +67,4 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 13 | 0 | 0 | 13 |
 | Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 152 | 0 | 0 | 152 |
+| Protective Magic on the Byzantine Periphery: The Development of Apotropaic Devices (`SRC-ROSIE2020-PROTECTIVE-MAGIC`) | 5 | 0 | 0 | 5 |

@@ -1,8 +1,7 @@
 {
-  "corpus_digest": "5892432c7ac0f73e8175158f682437f0d06553f3980dc3c560b0b34c0ca9d735",
+  "corpus_digest": "e13af867956576b0fd4843e3b8cfc8b7229dc7df355cae3a8e8556e56d4cceb1",
   "migrations": 21,
-  "note": "Goal checkpoint15: correct Miami copied text and diacritics; capture13attributed Hilprecht/MS2054-47comparative rows,15source reviews and5private page facsimiles; partial source scope retained.",
-  "recorded_at": "2026-10-02T04:18:56+00:00",
+  "recorded_at": "2026-10-02T04:47:07+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,20 +10,20 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "e52aa14dc2dd3f9843f56f648cafdd803d71e096be456725eee743e9e3b57f27",
-      "rows": 2547
+      "digest": "53ad9bc4f1d82b75d41bc1ed671d1d1e15b146f914371f898b087a5d4e30a8cb",
+      "rows": 2554
     },
     "appearances": {
-      "digest": "467d8344afcac0052e70cb492164c798bd0e24e75b204859221a98ad97cc3f29",
-      "rows": 2547
+      "digest": "d821a4d829c0dcbaf81bfd1eb475a0ceac1d0df56a98d2794102969562f51480",
+      "rows": 2554
     },
     "capture_source_corrections": {
       "digest": "dd3784169b3420d3582959e5c7c09a2ca359893a6cf73bed625ce39ed149dd61",
       "rows": 1
     },
     "captures": {
-      "digest": "be98e424ce7ee8f9e2f8a4fb97136401d19659319c0a0d74a91cf6b0c4471619",
-      "rows": 71
+      "digest": "f88d0799f2092929cc92fe89ec4cd3c74a60f4728768dc25bab4a43b0a1581e6",
+      "rows": 72
     },
     "catalogue_metadata_corrections": {
       "digest": "3cef84c090629f77dccbf9a113e580591a4a8968c0a79ff8383ffb1d6ec5df68",
@@ -63,8 +62,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "d161ebd410c014325e9f3606572c5853919d2d82bbbd719a53bbc92b9f11fd77",
-      "rows": 71
+      "digest": "7af0d6a9e91c7a7516b88fa8f2c790e3814d23eb7706d4e22e7dea20806446e7",
+      "rows": 72
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -83,8 +82,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "0358c77911d43333c233df30d027d9f691fbc06902ea48ba337c5f01130da7b0",
-      "rows": 1366
+      "digest": "2c12b1706d1f8d382181b7d5fdf6b84ae91340776f22b3462057892321982130",
+      "rows": 1374
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -111,8 +110,8 @@
       "rows": 2106
     },
     "publication_assessments": {
-      "digest": "2b203ead5ab7c0cfd3589ba4f612bc4bbd44083f7c9b50d216e78e215794fab9",
-      "rows": 377
+      "digest": "76708abd64b5aaff5637d2e1d36e78f4ff9a1153075ecbe2358c9727a1f1308a",
+      "rows": 384
     },
     "publication_registry": {
       "digest": "d0acdbe0a28e823e2fcb8076da1036f39e6e037158bce27605d21be30c54d603",
@@ -139,28 +138,28 @@
       "rows": 63
     },
     "source_scope_reviews": {
-      "digest": "2dbc406a722a2c9f76c432201805f8c0097b8c365c47acef6e048887aea9c07f",
-      "rows": 118
+      "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2",
+      "rows": 119
     },
     "sources": {
-      "digest": "1dbd54fc3075102454d52e363506bbe71c731e881002bdbb8046a2ff09124761",
-      "rows": 957
+      "digest": "1e1aab7c6687ab3a5c212f894669f9d2f51f748efe4be87d87d8bcd53b82d95c",
+      "rows": 958
     },
     "text_metadata_corrections": {
       "digest": "77785373950866528f3f6fa57ef7a2a54dade521d72d08f7a325df6354d486b0",
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "388948c6149bd47d60ac186abe0b04afbb62f6a705f62e1c1f64d68a5d08c363",
-      "rows": 1084
+      "digest": "5ad8b1a4840a55ed1cc5cd83c98f9dba44df8165b0c0c8ff68ac65667367674b",
+      "rows": 1089
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "f45df448b6dff734286baf443565b090b8bcf474cf258695f9ab7e9e276d850f",
-      "rows": 1694
+      "digest": "5e9c45dc6f456a14a9de2e3b3e97f6a77e4001c431a5c0505ab6c48de6db7036",
+      "rows": 1699
     }
   }
 }

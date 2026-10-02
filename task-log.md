@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Verify institutional references and attributed journal quotations
+
+**Claimed:** TEXT-001, TEXT-004, TEXT-009, TEXT-010
+**Corpus:** changed (one held journal source/capture, seven appearances, five checked quotation rows, eight page images; existing rows preserved) — state digest `e13af8679565`
+**Tests:** 381 passed; Mike reader 7/7 checks; five text, eight image and all 72 capture hashes verified.
+
+- Goal checkpoint 16 acquired Rosie's complete 2020 article after verified robots permission. Exact Met 32.150.89 figure 4 supplies one new frozen-cohort publication reference; figure 3 is the distinct 86.11.259. Seven existing designated bowls receive scholarly references without new objects or identity merges. Full editions are not inferred from illustrations or quotations.
+- Five bounded English quotation rows (518 characters) separately compared with source pixels. Held originals show VA 2509 quotation differences, VA 2424's correct original table locator p.3 rather than Rosie's reported p.2, JBA52 opening on p.232 rather than reported p.233, and M163 wording differences. Actual printed reports retained independently; correct original locators and comparisons reside in the immutable proof ledger/private audit. Existing Miami corrections remain checked.
+- Eight frozen-case attempts appended. The current fixed 249-case index preserves an attempted route for every original case: 17 now linked and 232 still unlinked, with no complete investigation claimed. Bohak KM33756 figure3.6/p.186 and Kelsey KM19504 p.38 are precise library/manual acquisition leads; robots timeout/403/404 routes were not locally fetched. Bounded later MS2054/47 searches do not establish current nonpublication.
+- Current edition inventory: 1,034 rows, 914 checked / 118 partial / 2 unreviewed; 1,699 total texts. Held PDF inventory: 1,025 indexed appearances across 41 of 44 sources. Priority references 820/1,052; 232 unlinked; 45 frozen native-script gaps unchanged. Roadmap, reports, exports and full local private reader regenerated. Receipt: `research/receipts/rosie_institutional_audit_2026-10-02.json`; private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0016_rosie_institutional_routes.json`.
+- Next: exact unlinked Schøyen/institutional designations against held edition evidence; lawful Bohak/Kelsey body pages; remaining Miami comparisons and later MS47 search; native-script and partial-text checks. Goal stays active. No reset used, purchase, outbound contact, public release, deployment or push.
+
 ## 2026-10-02 — Codex — Correct Miami captures and retain attributed comparative readings
 
 **Claimed:** TEXT-004, TEXT-009 and TEXT-010 (active research Goal)
