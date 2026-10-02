@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T02:03:54+00:00`
+Generated: `2026-10-02T02:35:20+00:00`
 
 ## Corpus
 
@@ -11,14 +11,14 @@ Generated: `2026-10-02T02:03:54+00:00`
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2525**
+- Source appearances: **2529**
 - Sources: **957**
 - Dedupe clusters pending: **0**
 - Objects with text: **813**
 - Objects with translation: **433**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **32**
+- Open leads: **33**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -143,6 +143,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | open | 1 | Acquire permitted actual Ford2025 article PDF with seven full editions and twenty synoptic witnesses. |
 | open | 1 | Inspect held1949 thesis bowl headings, accession numbers, full Hebrew-letter Mandaic transliterations/translations and plates. |
+| open | 1 | Complete thesis native editions with faithful barred letters, interlinear additions, lacunae and magic signs; resolve two DA5 Latin glyphs. |
 | open | 1 | Complete held thesis native texts/DA5 translation and separately verify DA4 line4 Latin magic token. |
 | open | 1 | Acquire actual McCullough1967 RoyalOntarioMuseum book; existing242-page capture is1949 thesis, not this book. |
 | open | 1 | Verify ROM931.4.2 /1967 BowlD against DA5 using accession-bearing original evidence. |

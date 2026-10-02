@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 888 | 115 | 2 | 1005 | 88.4% |
+| Edition text (translation, transcription, transliteration) | 889 | 115 | 2 | 1006 | 88.4% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 888 | 115 | 667 | 1670 | 53.2% |
+| All stored text | 889 | 115 | 667 | 1671 | 53.2% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 501 | 43 | 1 | 545 |
+| translation | 502 | 43 | 1 | 546 |
 | transcription | 276 | 59 | 0 | 335 |
 | transliteration | 111 | 13 | 1 | 125 |
 
@@ -62,6 +62,6 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 1 | 1 | 0 | 2 |
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 3 | 3 | 0 | 6 |
-| Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 3 | 1 | 0 | 4 |
+| Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 1 | 0 | 5 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 12 | 0 | 0 | 12 |
 | Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 152 | 0 | 0 | 152 |

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T02:28:07+00:00",
+  "evidence_path": "research/reviews/mccullough1949_translation_and_facsimile_evidence_2026-10-01.json",
+  "evidence_sha256": "c49ad945cb50488c15a502a884846eb170f35f339b84bbd3d2f04af82c3875ab",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-MCC1949-TRANSLATIONS-20261002",
+      "source_id": "SRC-MCCULLOUGH1949-THESIS",
+      "replacement_source_id": null,
+      "before": {
+        "source_type": "thesis",
+        "title": "Two Mandaean Incantation Bowls",
+        "authors": "William Stewart McCullough",
+        "issued_year": 1949,
+        "container_title": null,
+        "publisher": "University of Toronto",
+        "url": "https://www.markfoster.net/rn/texts/two_mandaean_incantation_bowls.pdf",
+        "doi": null,
+        "isbn": null,
+        "citation": "McCullough, William Stewart. Two Mandaean Incantation Bowls. PhD thesis, University of Toronto,1949.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Actual242-page privately archived doctoral-thesis scan, SHA-256 ceb9cb14d803ad2fc30aec93f38387c519cc4be618d38ae91c41d4beac42a05c. Contents and final alphabet table printed112/PDF237 present; two bowls explicitly Royal Ontario Museum DA4 and DA5 at printed8/PDF27. DA4 complete provided English translation captured, partial check for one Latin magic token; DA4 bottom line26 and DA5 line12 Hadriel/Hasdiel paired clause separately checked. Full Hebrew-letter Mandaic editions/DA5 English and plates remain pending. Separate from unheld1967 book;931.4.2/BowlD accession concordance remains open, now a DA5 passage lead. PDF3 typedMarch1948 crossed out/May1949 handwritten; PDF5 oral examination20May1949. No public-reuse permission inferred."
+      },
+      "after": {
+        "source_type": "thesis",
+        "title": "Two Mandaean Incantation Bowls",
+        "authors": "William Stewart McCullough",
+        "issued_year": 1949,
+        "container_title": null,
+        "publisher": "University of Toronto",
+        "url": "https://www.markfoster.net/rn/texts/two_mandaean_incantation_bowls.pdf",
+        "doi": null,
+        "isbn": null,
+        "citation": "McCullough, William Stewart. Two Mandaean Incantation Bowls. PhD thesis, University of Toronto,1949.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Actual242-page privately archived1949 doctoral-thesis scan, SHA-256 ceb9cb14d803ad2fc30aec93f38387c519cc4be618d38ae91c41d4beac42a05c. Complete scan with blank versos, contents/final alphabet table printed112/PDF237; ROM DA4/DA5 explicit at printed8/PDF27. Full provided English translations now captured: DA4 lines1–26 freshly rechecked and three transcription errors corrected through immutable proofreading history; DA5 lines1–18 partly checked for two Latin magic glyphs. DA4 bottom line26 and DA5 paired line12 clause checked. Photostat plates and all native edition pages retained privately. Full searchable Hebrew-letter Mandaic editions still pending; barred glyphs/magic signs/interlinear additions cannot be lost. Working DA5 native draft is NOT an accepted corpus reading. Commentary extraction partial. Separate from unheld1967 book;931.4.2/BowlD remains an unmerged DA5 passage lead. No public-reuse permission inferred."
+      },
+      "rationale": "Update current extraction inventory from inspected edition pages; immutable prior metadata retained. Source availability and copyrighted/private status unchanged."
+    }
+  ]
+}

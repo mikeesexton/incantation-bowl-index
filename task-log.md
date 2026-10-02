@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Capture thesis translations and remaining plate pages
+
+**Claimed:** TEXT-004, TEXT-009 and TEXT-010 (active Goal; held thesis translation, plate capture and separate source checks)
+**Corpus:** changed (four appearances/links, one translation, thirteen page media, two proofreading reviews, two cumulative publication assessments, one document assessment, one audited source correction and one lead) — state digest `59bcae8bf224`
+**Tests:** 376 Python tests pass; six immutable manifest replays leave trial/production fingerprints unchanged; integrity/foreign keys and frozen hashes pass; Mike Access 7/7 checks, both new/revised text hashes, thirteen page hashes and all71 archived source hashes verified
+
+- Captured the complete provided DA5 English translation, lines1–18, printed74–76/PDF161,163,165:3,639characters. Source uncertainty, personal-name variants, all seven boxed divine-name repetitions, printed magic-sign placeholders and line divisions retained. Project brackets explicitly mark unresolved Latin H/M at line5 and W/V at line15; partial review. No ordinary-letter substitution for actual native magic signs.
+- Fresh full DA4 translation check corrects three copied tokens at lines4,9,14 through a new hash-bound proofreading review. The actual printed commentary35/PDF81 resolves the magic token, and printed29/PDF69 resolves the interlinear/client and angel-name spellings. All3,346current characters checked; original content/notes remain in immutable before snapshots. Superseding source metadata updates current progress without losing earlier notes.
+- Retained thirteen additional private page facsimiles, including all five DA4/DA5 photostat plates and remaining native edition pages. Seven previous edition-page images reused through existing appearances. The working full DA5 Hebrew-letter draft remains un-ingested because barred aleph/daleth distinctions, mixed line15 magic signs/names and interlinear/lacuna markers are not faithfully resolved. A page image does not count as searchable inscription capture. Full DA4 native text and full native glyph checking remain next.
+- Thesis extraction stays partial;1949 thesis remains distinct from unheld1967 book. DA5 passage remains the lead for931.4.2/BowlD, with no accession-bearing concordance, identifier or merge. Conflicting source spellings are retained.
+- Recorded checkpoint11 and a fresh1000-appearance held-PDF roster across38sources,43registered PDFsources, five zero-appearance holdings. Corrected checkpoint10 roadmap prose1000→996 against its unchanged immutable receipt; these four new appearances bring the actual current count to1000. Frozen249publication cohort and99native-recovery inventories unchanged;819/1052priority references,233unlinked,45frozen native gaps. No case-completeness finding, scholarly adjudication, rights approval, allowance reset, push or deployment.
+- Protected payloads/manifests and drafts remain ignored in the private vault; content-free receipt `research/receipts/mccullough1949_translations_and_facsimiles_2026-10-01.json`. Reports, private export, roadmap and local Mike reader refreshed. Ten corpus backups retained. Continue native editions with alphabet table112/PDF237, resolve two DA5 Latin glyphs, then broader held-source extraction/frozen institutional concordances; lawful Ford/Segal/1967 acquisition leads remain separate.
+
 ## 2026-10-01 — Codex — Index Ford witnesses and capture McCullough thesis passages
 
 **Claimed:** TEXT-004, TEXT-009 and TEXT-010 (active Goal; source roster, inscription/translation capture and separate source checks)

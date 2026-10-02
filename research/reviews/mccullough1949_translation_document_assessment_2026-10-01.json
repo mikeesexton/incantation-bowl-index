@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T02:28:07+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-MCC1949-TRANSLATIONS-20261002",
+      "source_id": "SRC-MCCULLOUGH1949-THESIS",
+      "capture_id": "CAP-82A7ACC99C43",
+      "supersedes_id": "IBI-DOC-MCC1949-FIRST-20261001",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "ocr",
+      "text_artifact_path": "data/private/research-work/ford2025-thus-oath-2026-10-01/thesis-discovery-text.json",
+      "text_artifact_sha256": "9c6ad5888de70d67b6a3607626faa78b1bcb7e1e4773f6f323a5564a5227ffaf",
+      "object_extraction": "partial",
+      "document_sha256": "ceb9cb14d803ad2fc30aec93f38387c519cc4be618d38ae91c41d4beac42a05c",
+      "basis": "Complete held scan unchanged; discovery OCR not accepted as native reading. Both provided English translations captured, DA5 Latin glyph review partial. Native bottom/paired clause only checked; full native editions and contextual commentary not completely extracted. Thirteen new page facsimiles include all five photostat plates. No full-source extraction claimed.",
+      "evidence_path": "research/reviews/mccullough1949_translation_and_facsimile_evidence_2026-10-01.json",
+      "evidence_sha256": "c49ad945cb50488c15a502a884846eb170f35f339b84bbd3d2f04af82c3875ab",
+      "extraction_path": "data/private/manifests/mccullough1949_da5_translation_2026-10-01.jsonl",
+      "extraction_sha256": "7a20eb659e98ecf75c033518f8d94c7e81fb4fc00e0f0ba9ee61b6a1f805e030"
+    }
+  ]
+}
