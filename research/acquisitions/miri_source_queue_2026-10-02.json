@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T15:07:57+00:00",
+  "updated_at": "2026-10-02T19:04:26+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -83,6 +83,25 @@
       "sha256": "c64b1aa031a72c833f3856433eea22b00cd843733eb98df2ad25d159ba9d2df5",
       "status": "Researcher-supplied local document held",
       "reading_audit": "Partial; further source reading checks remain"
+    },
+    {
+      "source_id": "SRC-CA4B122C5F4D",
+      "title": "Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels",
+      "filename": "fgaf025.pdf",
+      "capture_id": "CAP-A9414FD10CC0",
+      "sha256": "8d3f33530391bca2f3f23faf7ec7b700fdcbb52cf40b842a64d4203ec2cbd977",
+      "status": "Researcher-supplied complete local document held",
+      "resolved_at": "2026-10-02T19:04:26+00:00",
+      "reading_audit": "Partial source audit: complete provided shared English and labelled variants checked; native own-column and grey/erasure capture pending.",
+      "prior_acquisition_requirement": {
+        "source_id": "SRC-CA4B122C5F4D",
+        "citation": "Abudraham, Ohad. ‘Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels.’ JSS 71, no. 1 (2026): 105–134.",
+        "short_label": "Abudraham2026BridgingtheGaps",
+        "requirement": "Complete original PDF and images: JSS 71(1), 105–134, DOI 10.1093/jss/fgaf025, especially NLI9467.163. Author-upload text is indexed; earlier PDF host/robots routes failed. This article was not among the supplied files.",
+        "priority": 1,
+        "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
+        "status": "unheld original needed"
+      }
     }
   ],
   "remaining_acquisition_requests": [
@@ -126,15 +145,6 @@
       "short_label": "Levene2003ACorpusofMagicBowls",
       "requirement": "The actual 2003 book. The 2000 thesis is now held but is a separate edition. Compare M50/M59 synopses, English coverage and the reported book pages 31–39.",
       "priority": 2,
-      "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
-      "status": "unheld original needed"
-    },
-    {
-      "source_id": "SRC-CA4B122C5F4D",
-      "citation": "Abudraham, Ohad. ‘Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels.’ JSS 71, no. 1 (2026): 105–134.",
-      "short_label": "Abudraham2026BridgingtheGaps",
-      "requirement": "Complete original PDF and images: JSS 71(1), 105–134, DOI 10.1093/jss/fgaf025, especially NLI9467.163. Author-upload text is indexed; earlier PDF host/robots routes failed. This article was not among the supplied files.",
-      "priority": 1,
       "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
       "status": "unheld original needed"
     },
@@ -200,12 +210,16 @@
   ],
   "acquisition_and_reading_completion_separate": true,
   "current_reading_queue": {
-    "path": "data/private/manifests/supplied-documents27-2026-10-02/production/candidates.jsonl",
-    "sha256": "22c6d7b358573c7f4736b8cf7f6e0120b4d1d5a8c6e364148760c5f68b476240"
+    "path": "data/private/manifests/abudraham39-2026-10-02/production/extraction.json",
+    "sha256": "0b1ef78dce5777979a21d834b30c7fc8c8d0a4f4f3917ffe64f99ac7af1b39ce"
   },
   "fulltextworking_inventory": {
     "path": "data/private/research-work/supplied-documents27-2026-10-02/intake-inventory.json",
     "sha256": "6305075d14c9cf39706fc229a026c2f77ec8ab2adfb269f236dd09734777d890"
   },
-  "no_outbound_author_contact_or_purchase": true
+  "no_outbound_author_contact_or_purchase": true,
+  "prior_acquisition_queue_snapshot": {
+    "path": "data/private/research-work/abudraham39-2026-10-02/acquisition-queue-before.json",
+    "sha256": "a2b42b3eb1fbec67c9afab2a12ac5b796df65abcc374a2f71aa94204aaceaf0c"
+  }
 }

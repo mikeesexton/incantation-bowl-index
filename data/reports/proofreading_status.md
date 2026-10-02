@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1116 | 138 | 1 | 1255 | 88.9% |
-| Other stored text (mostly source extracts and summaries) | 0 | 6 | 719 | 725 | 0.0% |
-| All stored text | 1116 | 144 | 720 | 1980 | 56.4% |
+| Edition text (translation, transcription, transliteration) | 1120 | 138 | 1 | 1259 | 89.0% |
+| Other stored text (mostly source extracts and summaries) | 0 | 6 | 720 | 726 | 0.0% |
+| All stored text | 1120 | 144 | 721 | 1985 | 56.4% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 616 | 43 | 1 | 660 |
+| translation | 620 | 43 | 1 | 664 |
 | transcription | 356 | 73 | 0 | 429 |
 | transliteration | 144 | 22 | 0 | 166 |
 
@@ -59,6 +59,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Traditions of Magic in Late Antiquity (`SRC-BOHAK1996-TRADITIONS-MAGIC`) | 1 | 0 | 0 | 1 |
 | MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples (`SRC-C54888E36130`) | 1 | 0 | 0 | 1 |
 | Jewish Aramaic Incantation Bowls (`SRC-C5AA2D8C1284`) | 2 | 0 | 0 | 2 |
+| Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels (`SRC-CA4B122C5F4D`) | 4 | 0 | 0 | 4 |
 | Linguistic Peculiarities in the Aramaic Magic Bowl Texts (review) (`SRC-D721A94FA3B2`) | 5 | 0 | 0 | 5 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 30 | 0 | 0 | 30 |
 | Syro-Uigurica III: Enochic Material in a Christian Text from Turfan (`SRC-DICKENS2021-SYROUIGURICAIII`) | 2 | 0 | 0 | 2 |
