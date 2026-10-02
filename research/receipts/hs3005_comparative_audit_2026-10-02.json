@@ -1,0 +1,706 @@
+{
+  "schema_version": 1,
+  "checkpoint": 19,
+  "created_at": "2026-10-02T06:29:39+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "d1cc6f0b20aefed72a2c01a446144b8ebbc871391e47fecbda066e6362e88993",
+  "corpus_after": "c4ec464a948eb641420a205bdece049ce4fcb24493a8caf8b4fbe8206b78bb56",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 825,
+  "unlinked_priority_identities_now": 227,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 53,
+  "new_text_characters": 5335,
+  "source_checks_added": {
+    "checked": 44,
+    "partial": 9
+  },
+  "source_appearances_added": 28,
+  "new_objects": 18,
+  "existing_designated_objects_reused": 10,
+  "private_page_images_added": 34,
+  "unique_source_pages_used": 6,
+  "publication_assessments_added": 28,
+  "document_assessments_added": 1,
+  "identity_merges": 0,
+  "all_preexisting_rows_identical": true,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "edition_text_rows": 1124,
+  "checked_edition_text_rows": 994,
+  "partial_edition_text_rows": 128,
+  "unreviewed_edition_text_rows": 2,
+  "total_text_rows": 1789,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1074,
+    "appearance_bearing_sources": 41,
+    "registered_pdf_sources": 44
+  },
+  "allowance_resets_used": 0,
+  "scope": "All seven HS3005printed19–25 pages inspected.53bounded quoted native/Latin/English rows for28witnesses,44checked/9partial for gray typography. Existing museum/collection/publication designations reused; primary Figeac/GoreaBowl2concordance and AAAbrahamnumber3naming variation retain evidence. SyriacJNF210angel/JNF229king, different nativewords and paired partly transliterated renderings retained. Davidovitz45/JNF123 is an attributed2017pointer, no independent merge. Sourcewide extraction and full originals remain partial/unheld.",
+  "next_actions": [
+    "Inspect remainingHS3005printed27–28/PDF51–52 comparative passages and isolated variants/source reports not yet captured.",
+    "Continue other335-page comparison queue with exact existing designation checks; original complete editions/photos and nine gray-letter contours remain open.",
+    "Continue227frozen publication gaps,128partial/2unreviewed editionrows and45frozen native gaps, preserving exact acquisitions/review requirements."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/campaign_case_progress_checkpoint19.json",
+    "sha256": "29bb798ad1140a1b71e5ba0dd37478c649f26a1674d3482c9a919ac7522f94ee"
+  },
+  "whole_source_locator_queue": {
+    "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/whole_source_comparative_queue_checkpoint19.json",
+    "sha256": "0fa91fd93cbd048ede316e6f4f4e79658fb9ee1db6e71b27bc0e5997c70599dd"
+  },
+  "cases_with_appended_frozen_work_this_checkpoint": 1,
+  "case_history": "New bounded JNF152quote investigation appended; fixed24922linked/227unlinked,0complete cases, all prior attempts retained.",
+  "protected_payloads": "All protected quotations and ingestion/proof manifests remain in ignored private vault. Git holds content-free scope/counts/hash receipts only.",
+  "changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 28
+    },
+    {
+      "table": "appearances",
+      "added": 28
+    },
+    {
+      "table": "document_assessments",
+      "added": 1
+    },
+    {
+      "table": "identifiers",
+      "added": 18
+    },
+    {
+      "table": "media",
+      "added": 34
+    },
+    {
+      "table": "objects",
+      "added": 18
+    },
+    {
+      "table": "publication_assessments",
+      "added": 28
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 53
+    },
+    {
+      "table": "texts",
+      "added": 53
+    }
+  ],
+  "validation": {
+    "rehearsal": true,
+    "four_manifest_replays_digest_unchanged": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "383 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1789,
+      "all_media_rows_present": 1437,
+      "local_image_rows": 1077,
+      "all_new_53_text_hashes_classifications_attributions_match": true,
+      "current_source_checks": {
+        "checked": 44,
+        "partial": 9
+      },
+      "new_34_image_hashes_match": true,
+      "all_72_source_capture_hashes_match": true,
+      "all_28_named_appearances_present": true,
+      "prior_SD2_caption_formula_Miami_thesis_corrections_retained": true,
+      "scope": "Full local Mike projection; bounded comparison quotations are not complete original editions; nine gray-letter quote rows/sourcewide extraction remain partial."
+    }
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/hs3005_comparative_2026-10-02_production.jsonl",
+      "sha256": "94d7253c664f9d05df67272f3798a0105cef7c2cbfe214ed4c85cce6a57390ad"
+    },
+    {
+      "path": "data/private/manifests/hs3005_comparative_2026-10-02_trial.jsonl",
+      "sha256": "94d7253c664f9d05df67272f3798a0105cef7c2cbfe214ed4c85cce6a57390ad"
+    },
+    {
+      "path": "data/private/manifests/hs3005_comparative_document_2026-10-02_trial.json",
+      "sha256": "8210cc7a651183d1e98f2f0a432d08bb6832e77a7cbe08a929ced9f9b2687df0"
+    },
+    {
+      "path": "data/private/manifests/hs3005_comparative_proof_2026-10-02_production.json",
+      "sha256": "c67cceabe07f782a2654f94d75ccd9d48d40d9f06a0087c3d1f18154d6006e25"
+    },
+    {
+      "path": "data/private/manifests/hs3005_comparative_proof_2026-10-02_trial.json",
+      "sha256": "76a24c8fe7885b87dbf531af938b6d3c3ae2a972baef9da22959492c3f9f231e"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0019_hs3005_comparative_quotations.json",
+      "sha256": "5f8298bb2c497b31f343b630d5fa7edd98246f20d65224b627ee92a3d0500ab4"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/AA3-E-capture01.txt",
+      "sha256": "cf7dc7d65c15b0986388ca38e36e33b17a4130509f40727d1ea6abcd3779cf02"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/AA3-E-proof02.txt",
+      "sha256": "cf7dc7d65c15b0986388ca38e36e33b17a4130509f40727d1ea6abcd3779cf02"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/AA3-L-capture01.txt",
+      "sha256": "550c670283cc6aecb41cc500b5a069c5a0699d3041bd3e7182437c78d1491f40"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/AA3-L-proof02.txt",
+      "sha256": "550c670283cc6aecb41cc500b5a069c5a0699d3041bd3e7182437c78d1491f40"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B16009-E-capture01.txt",
+      "sha256": "d6cc728397f6b4a9e8ee12adb581b62568c288b4b8d3b6393c00684289593c19"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B16009-E-proof02.txt",
+      "sha256": "d6cc728397f6b4a9e8ee12adb581b62568c288b4b8d3b6393c00684289593c19"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B16009-N-capture01.txt",
+      "sha256": "5454380a9f1b5245d8dc99692e8102ed6aafbde06a4f6e3d38739e3a23a70f2d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B16009-N-proof02.txt",
+      "sha256": "5454380a9f1b5245d8dc99692e8102ed6aafbde06a4f6e3d38739e3a23a70f2d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2965A-E-capture01.txt",
+      "sha256": "b54950e4771d1b2ad8d77416f1cf975bfa816698af9f63730478e715b2dcc3d6"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2965A-E-proof02.txt",
+      "sha256": "b54950e4771d1b2ad8d77416f1cf975bfa816698af9f63730478e715b2dcc3d6"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2965A-N-capture01.txt",
+      "sha256": "b3eea999ddfe9d0757cc0e589409a429b1d321285dd3e3c28cfefbe360c8e93b"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2965A-N-proof02.txt",
+      "sha256": "b3eea999ddfe9d0757cc0e589409a429b1d321285dd3e3c28cfefbe360c8e93b"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2976-E-capture01.txt",
+      "sha256": "b988e526b21466046493d6af459bc4ddb2c30189bdbba50695841704c8cabcb2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2976-E-proof02.txt",
+      "sha256": "b988e526b21466046493d6af459bc4ddb2c30189bdbba50695841704c8cabcb2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2976-N-capture01.txt",
+      "sha256": "cfa9969fb0c0780ac650e0ea0f76ff8e6511a2180c72bf604969535a326fe7be"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/B2976-N-proof02.txt",
+      "sha256": "cfa9969fb0c0780ac650e0ea0f76ff8e6511a2180c72bf604969535a326fe7be"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM117824-E-capture01.txt",
+      "sha256": "e9a8da64e1727e5d23b43764e3e69906b6eb498ca9d95dd55e7ea3977b001815"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM117824-E-proof02.txt",
+      "sha256": "e9a8da64e1727e5d23b43764e3e69906b6eb498ca9d95dd55e7ea3977b001815"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM117824-N-capture01.txt",
+      "sha256": "f5ff25d2e5baf2ce2b5cac0245d48ccbe9bbfc39b35c83ec6e249834135a81ff"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM117824-N-proof02.txt",
+      "sha256": "f5ff25d2e5baf2ce2b5cac0245d48ccbe9bbfc39b35c83ec6e249834135a81ff"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM91715-E-capture01.txt",
+      "sha256": "0c797da3bd6a98502596441a14614a0c085430e0e268adf333aa5d0de7146419"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM91715-E-proof02.txt",
+      "sha256": "0c797da3bd6a98502596441a14614a0c085430e0e268adf333aa5d0de7146419"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM91715-L-capture01.txt",
+      "sha256": "a44a58e5350eb2d465f9fa9f537856cfc54b92b082f549c097d05d8c3f546bd5"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/BM91715-L-proof02.txt",
+      "sha256": "a44a58e5350eb2d465f9fa9f537856cfc54b92b082f549c097d05d8c3f546bd5"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-E-capture01.txt",
+      "sha256": "da6fdb03ef79c9b5e2dc8a071cc6266153b8a42ff86231b76332a9e18534db74"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-E-proof02.txt",
+      "sha256": "da6fdb03ef79c9b5e2dc8a071cc6266153b8a42ff86231b76332a9e18534db74"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-N-capture01.txt",
+      "sha256": "85aaed462da7fe7278fe8e26e59a54f60a8daea58cca84cafce8ff230ac24088"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-N-proof02.txt",
+      "sha256": "85aaed462da7fe7278fe8e26e59a54f60a8daea58cca84cafce8ff230ac24088"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-N2-capture01.txt",
+      "sha256": "83a7bdd3b67d77d8f8333c907d85cafac086884e16946403875cb3acff15370e"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-N2-proof02.txt",
+      "sha256": "83a7bdd3b67d77d8f8333c907d85cafac086884e16946403875cb3acff15370e"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-N3-capture01.txt",
+      "sha256": "45df8dc19d95dba7d0e5b9049705203a227c5a883177cb4f178f5e0738c90e52"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/DAV45-N3-proof02.txt",
+      "sha256": "45df8dc19d95dba7d0e5b9049705203a227c5a883177cb4f178f5e0738c90e52"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/FIGEAC-E-capture01.txt",
+      "sha256": "5287a931ae29f731cdb60c34a733fed9c12c0b5d2b897f16af56ac653a5d32d2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/FIGEAC-E-proof02.txt",
+      "sha256": "5287a931ae29f731cdb60c34a733fed9c12c0b5d2b897f16af56ac653a5d32d2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/FIGEAC-N-capture01.txt",
+      "sha256": "7ebadfef533b41cfbdca152d31d37ddd5a7e6bdb64583b19781f19128c25612f"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/FIGEAC-N-proof02.txt",
+      "sha256": "7ebadfef533b41cfbdca152d31d37ddd5a7e6bdb64583b19781f19128c25612f"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/H1801-E-capture01.txt",
+      "sha256": "667a2cee6356f0b8e1afd8ba6df353ab8dd31b87bd232dad62ffbbde70320c9f"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/H1801-E-proof02.txt",
+      "sha256": "667a2cee6356f0b8e1afd8ba6df353ab8dd31b87bd232dad62ffbbde70320c9f"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/H1801-N-capture01.txt",
+      "sha256": "78292303eb4a8e884f7f236bbef23aeec8ced04c23e19673ee159ee12e1e1b74"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/H1801-N-proof02.txt",
+      "sha256": "78292303eb4a8e884f7f236bbef23aeec8ced04c23e19673ee159ee12e1e1b74"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/IST1167-E-capture01.txt",
+      "sha256": "2acc6fdcad7cb87bafc59cdc6118d06ab57f7193d8ba7e2a4d482f6be406b408"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/IST1167-E-proof02.txt",
+      "sha256": "2acc6fdcad7cb87bafc59cdc6118d06ab57f7193d8ba7e2a4d482f6be406b408"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/IST1167-N-capture01.txt",
+      "sha256": "1231d57be9f3333c4111b1fab60651863dae565f8434bd22f75661f9a9da790e"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/IST1167-N-proof02.txt",
+      "sha256": "1231d57be9f3333c4111b1fab60651863dae565f8434bd22f75661f9a9da790e"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF103-E-capture01.txt",
+      "sha256": "641ae825649375151dba7931fd55a1ee40356e8339e35cb020ba9b81b7a3b8a0"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF103-E-proof02.txt",
+      "sha256": "641ae825649375151dba7931fd55a1ee40356e8339e35cb020ba9b81b7a3b8a0"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF103-N-capture01.txt",
+      "sha256": "05d9f53c38ea06712d6d6a4898b9748a2d42d98df5047f68e2921ae2535cc7e8"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF103-N-proof02.txt",
+      "sha256": "05d9f53c38ea06712d6d6a4898b9748a2d42d98df5047f68e2921ae2535cc7e8"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF112-E-capture01.txt",
+      "sha256": "2e2342b0d8e44a3da16ae9c9a64030a3601ab9079c045492b557d9fc81a5b5c2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF112-E-proof02.txt",
+      "sha256": "2e2342b0d8e44a3da16ae9c9a64030a3601ab9079c045492b557d9fc81a5b5c2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF112-N-capture01.txt",
+      "sha256": "732aa829820d2f4c7320cbf9dac03b2f2a181e57fab9705003998e54ae4c459c"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF112-N-proof02.txt",
+      "sha256": "732aa829820d2f4c7320cbf9dac03b2f2a181e57fab9705003998e54ae4c459c"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF152-E-capture01.txt",
+      "sha256": "1ae121b6c1b879b7fd8a7efb883cb3e376d021c25f095b83a64be0db42ca069c"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF152-E-proof02.txt",
+      "sha256": "1ae121b6c1b879b7fd8a7efb883cb3e376d021c25f095b83a64be0db42ca069c"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF152-N-capture01.txt",
+      "sha256": "350ccf22465d92a72189acc90f7ce767711dc82cfa5ebfb25475b5c3e497b35d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF152-N-proof02.txt",
+      "sha256": "350ccf22465d92a72189acc90f7ce767711dc82cfa5ebfb25475b5c3e497b35d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF201-N-capture01.txt",
+      "sha256": "da1d9589123ac136a7d24e5365b4111ba6141d6fb4995bec5f512af6b0b8c0f6"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF201-N-proof02.txt",
+      "sha256": "da1d9589123ac136a7d24e5365b4111ba6141d6fb4995bec5f512af6b0b8c0f6"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF205-N-capture01.txt",
+      "sha256": "22492d028cd739e5f21681c2af20d243aee3b654f55636ea477a6626056231e4"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF205-N-proof02.txt",
+      "sha256": "22492d028cd739e5f21681c2af20d243aee3b654f55636ea477a6626056231e4"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF210-E-capture01.txt",
+      "sha256": "b9f52dd0b06afe794a6fdf4b72b7889a5dc87a1ea28b7673cdf82534a46dacde"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF210-E-proof02.txt",
+      "sha256": "b9f52dd0b06afe794a6fdf4b72b7889a5dc87a1ea28b7673cdf82534a46dacde"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF210-N-capture01.txt",
+      "sha256": "5de21b26f8480d1029ac7039933f48f7b34729c5fff1b2294f4468d2a7620b51"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF210-N-proof02.txt",
+      "sha256": "5de21b26f8480d1029ac7039933f48f7b34729c5fff1b2294f4468d2a7620b51"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF210-N2-capture01.txt",
+      "sha256": "bb3b2cf22f7d1750316e97c0590eadc33cd105d4c45633814ea568f2b8cbd319"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF210-N2-proof02.txt",
+      "sha256": "bb3b2cf22f7d1750316e97c0590eadc33cd105d4c45633814ea568f2b8cbd319"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF229-E-capture01.txt",
+      "sha256": "f4f9ed63a8b1a1dd8e153d3345d69970803ba54e8c629f46577c10a1f9376219"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF229-E-proof02.txt",
+      "sha256": "f4f9ed63a8b1a1dd8e153d3345d69970803ba54e8c629f46577c10a1f9376219"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF229-N-capture01.txt",
+      "sha256": "9bd812b1c00ffb0512cdca396f201d84f3767ca02d78fbca7ffb1d13d00a3b73"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/JNF229-N-proof02.txt",
+      "sha256": "9bd812b1c00ffb0512cdca396f201d84f3767ca02d78fbca7ffb1d13d00a3b73"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS1928-36-N-capture01.txt",
+      "sha256": "47fc6754da8b5a8ecf9428abd8fcd2500e839935b159e3988e1dcce7832a6ab7"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS1928-36-N-proof02.txt",
+      "sha256": "47fc6754da8b5a8ecf9428abd8fcd2500e839935b159e3988e1dcce7832a6ab7"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-19-E-capture01.txt",
+      "sha256": "97730d07cfa266242456fa6f7175c0e7555411175a808c8b54dc3c45edef6638"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-19-E-proof02.txt",
+      "sha256": "97730d07cfa266242456fa6f7175c0e7555411175a808c8b54dc3c45edef6638"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-19-N-capture01.txt",
+      "sha256": "59e9c7518fad7a30041fc8434e58c33b3a14b22cf55fe2f8084ed24b680a3fc1"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-19-N-proof02.txt",
+      "sha256": "59e9c7518fad7a30041fc8434e58c33b3a14b22cf55fe2f8084ed24b680a3fc1"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-247-E-capture01.txt",
+      "sha256": "4f1eba0543ca3afaedcc2b03f94809d7a645314e10d74be3d591da6444a3d143"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-247-E-proof02.txt",
+      "sha256": "4f1eba0543ca3afaedcc2b03f94809d7a645314e10d74be3d591da6444a3d143"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-247-N-capture01.txt",
+      "sha256": "d4f8d26f6de96d8ec79bbf3d39df307ba6c773a01f3e18f6161416cf3a04ce25"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-247-N-proof02.txt",
+      "sha256": "d4f8d26f6de96d8ec79bbf3d39df307ba6c773a01f3e18f6161416cf3a04ce25"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-27-E-capture01.txt",
+      "sha256": "a5546faf8dc5e6ef447f15a426177fb1cd72874f03ac284911bc183bfbde198e"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-27-E-proof02.txt",
+      "sha256": "a5546faf8dc5e6ef447f15a426177fb1cd72874f03ac284911bc183bfbde198e"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-27-N-capture01.txt",
+      "sha256": "80f24516d03d07f9734a71c0f725fe105e2c44cfbc7412c4e693615d28903725"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2053-27-N-proof02.txt",
+      "sha256": "80f24516d03d07f9734a71c0f725fe105e2c44cfbc7412c4e693615d28903725"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2057-48-N-capture01.txt",
+      "sha256": "24fdab6d96964184baac181b103e48b7fce37338ba29b08822fc993f9650fea5"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/MS2057-48-N-proof02.txt",
+      "sha256": "24fdab6d96964184baac181b103e48b7fce37338ba29b08822fc993f9650fea5"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/PC108-E-capture01.txt",
+      "sha256": "de2cd188bb1bce59d389ee6da9a76b5c89ad1ec0c0da3043b7a9d8c3b6ad8ec0"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/PC108-E-proof02.txt",
+      "sha256": "de2cd188bb1bce59d389ee6da9a76b5c89ad1ec0c0da3043b7a9d8c3b6ad8ec0"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/PC108-N-capture01.txt",
+      "sha256": "e3c361bbdcb4babedd1e5cb7eecb5e6dbbab50fe4a186e67968dbc07f4824471"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/PC108-N-proof02.txt",
+      "sha256": "e3c361bbdcb4babedd1e5cb7eecb5e6dbbab50fe4a186e67968dbc07f4824471"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/PC113-N-capture01.txt",
+      "sha256": "47fc6754da8b5a8ecf9428abd8fcd2500e839935b159e3988e1dcce7832a6ab7"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/PC113-N-proof02.txt",
+      "sha256": "47fc6754da8b5a8ecf9428abd8fcd2500e839935b159e3988e1dcce7832a6ab7"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/SD46A-N-capture01.txt",
+      "sha256": "028853e9fcbe1e455de85a1be7a39c60e654ea806e5af0364021ce105e497687"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/SD46A-N-proof02.txt",
+      "sha256": "028853e9fcbe1e455de85a1be7a39c60e654ea806e5af0364021ce105e497687"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/VA3384-E-capture01.txt",
+      "sha256": "61161fff6f0284eb3799b4e705ba2144e4c2cff7bfec89c3f947b32e1bae9f98"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/VA3384-E-proof02.txt",
+      "sha256": "61161fff6f0284eb3799b4e705ba2144e4c2cff7bfec89c3f947b32e1bae9f98"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/VA3384-N-capture01.txt",
+      "sha256": "7e85ec754ba3c97b78ab191d744773f1a4d1b3ea49226d5484e19fa594ab2896"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/VA3384-N-proof02.txt",
+      "sha256": "7e85ec754ba3c97b78ab191d744773f1a4d1b3ea49226d5484e19fa594ab2896"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE29-N-capture01.txt",
+      "sha256": "bb3b2cf22f7d1750316e97c0590eadc33cd105d4c45633814ea568f2b8cbd319"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE29-N-proof02.txt",
+      "sha256": "bb3b2cf22f7d1750316e97c0590eadc33cd105d4c45633814ea568f2b8cbd319"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE4-N-capture01.txt",
+      "sha256": "ca7bec183892cfdf191bfd29d39f1c791309eeb3072890c9bd7b90768d7e4c77"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE4-N-proof02.txt",
+      "sha256": "ca7bec183892cfdf191bfd29d39f1c791309eeb3072890c9bd7b90768d7e4c77"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE4-N2-capture01.txt",
+      "sha256": "797ba36805228fe62e4c03ea166dc34253fad5914c0daf50e80789eda205db96"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE4-N2-proof02.txt",
+      "sha256": "797ba36805228fe62e4c03ea166dc34253fad5914c0daf50e80789eda205db96"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE4-N3-capture01.txt",
+      "sha256": "913736af35808eddb2c2c1a828a6a91f2868364708367d679583112e365585e2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/WOLFE4-N3-proof02.txt",
+      "sha256": "913736af35808eddb2c2c1a828a6a91f2868364708367d679583112e365585e2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/apply.py",
+      "sha256": "16ac648910986f9abb0732c5978070fb3bebcc483caaad4a6db556e00a63bc41"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/campaign_case_progress_checkpoint19.json",
+      "sha256": "29bb798ad1140a1b71e5ba0dd37478c649f26a1674d3482c9a919ac7522f94ee"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/cumulative_extraction_production.json",
+      "sha256": "fe641b6b709ce61c0f33ac10cd823479e170188aca86ba50c1db0c8fbc6a07f7"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/cumulative_extraction_trial.json",
+      "sha256": "6cd13a1bfe94f769adaaff7b39fc5f35749d163ea4f798adbe4c0cb947ce4afe"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/existing_designation_screen.json",
+      "sha256": "6200a91c75ba61df96f2084a8ce1430fa7c84f5e1ed0435ffbdb5937107a3eeb"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/existing_search_all_rows.json",
+      "sha256": "051fa569a863b3f0411f4f04b881cd1079bdf26414e735081037da2648079b33"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/held_pdf_inventory_checkpoint19.json",
+      "sha256": "6d540d8538ba9581bc0aa0045658084a9b9c0b177401268d8367f5878700ce0d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/item_inventory.json",
+      "sha256": "d29282f41aec802eff4ab6d0f29869dd2e616bc50240be126f963f6f43374a5c"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/items.py",
+      "sha256": "6bdde7b7a639beb26d91c00d2235756619b9ec91fbc1c1fb0ff3baf1d7aa8728"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/metadata.json",
+      "sha256": "e1f03e1c19ab479498a170c32eb2bd349eb8a31883ba8c81e24daadbc520827d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/object_inventory.json",
+      "sha256": "87a2bcb6331f7be3990578637a213294717908e1671b1da3b24ffd615dae7fbf"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/prepare.py",
+      "sha256": "6617f0aa69517330c069ea3f82790ee8b5e3a081502f17c96c114ef18d3eeec3"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/production-apply.json",
+      "sha256": "9f8329ec2b3188f8b9c60fd914111b4042a117721c6a03d9c0b5747c0613caa2"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/production-replay.json",
+      "sha256": "15c4214497b6c871ca0162a5522e0536f4e0a0f8a058b1bf754e6abb7ded6904"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/production-verification.json",
+      "sha256": "2be93a1b1f78e8705040d14cc9a5499df81c988cf63332c08709d60b91af0c3d"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/proof_inventory_production.json",
+      "sha256": "6412b7012fc8ca653827f03aae74d41488d11d83f41cc9ec4c22ea69a0c44192"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/proof_inventory_trial.json",
+      "sha256": "07c476598f2a7cbec6aee130ee28863f3d0f0819f7427cbb6f5fc15ea5aaf485"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/reader-build.log",
+      "sha256": "57f5fcb77a4c5906c07029fe433440756aff931a7cbf110d066314df6b82caa9"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/reader-verification.json",
+      "sha256": "2de84b5dc92ca2efe59e5eda6b4a8367159b4191e22e1322eea4b383a94c9ae0"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/record_checkpoint.py",
+      "sha256": "28f2c89ca2caad789fed93872c038e096d8d9cfe139fe25d3bb3df23f5874aaf"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/regenerate.py",
+      "sha256": "39c0a4a73226d3e23e46773f43a211265a5cd1a26cffbe67976123e882807dec"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/reports-final.json",
+      "sha256": "0f04e03cef36cc135dc77726065351fef36ebe967a4f82def3de4f39733f6c5b"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/source_check.py",
+      "sha256": "0f1b5a0408af5219c00fcaa0b532a4d4f5c5758654ca27ff301f5a970a2d31c4"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/tests-final.log",
+      "sha256": "f6ce9125014f2bd8dd19dddd93173046c1b0f9735f3ab2468f15efc0b578382a"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/trial-replay.json",
+      "sha256": "e4b87e48a55bfabf0742f84b559f51ecd0fec6c4537b7f32f7a1b6fcf6180c4b"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/trial-verification.json",
+      "sha256": "3b74e45acebaa312fbc81b62ecc8babf90a53c6d386f275bc298e19de8a9895a"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/verify.py",
+      "sha256": "46200683c047caa0d40843f47efa3d40ea2f9853a54b1a09cf0c804f4a0a41ee"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/verify_reader.py",
+      "sha256": "18a2c575dfe6cb24bb1fa659c393ff41458c8c5a1ee126da0e288706b080c50a"
+    },
+    {
+      "path": "data/private/research-work/hs3005-comparative-capture-2026-10-02/whole_source_comparative_queue_checkpoint19.json",
+      "sha256": "0fa91fd93cbd048ede316e6f4f4e79658fb9ee1db6e71b27bc0e5997c70599dd"
+    },
+    {
+      "path": "research/receipts/hs3005_comparative_private_images_2026-10-02.json",
+      "sha256": "8bd0705b40e8c72218f3bf8a21e0d89793241877623900a27352e49312f03940"
+    },
+    {
+      "path": "research/reviews/hs3005_comparative_document_2026-10-02_production.json",
+      "sha256": "8c810f07a2a1fc1391b58da87d48df8aa4b070bec25a6fe944732f7afad1501f"
+    },
+    {
+      "path": "research/reviews/hs3005_comparative_evidence_2026-10-02.json",
+      "sha256": "7eed4c98b81a57738d9b8500940a6c3de787a15869d48db75a200338d4a793a8"
+    },
+    {
+      "path": "research/reviews/hs3005_comparative_publication_2026-10-02.json",
+      "sha256": "48dc08ed4dcb2b732b76e135ca271f734fea50488e8be1177c7af8c703ac31d7"
+    }
+  ]
+}
