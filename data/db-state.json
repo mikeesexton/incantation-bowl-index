@@ -1,8 +1,7 @@
 {
-  "corpus_digest": "19df7a950b47f2bd44fac1fbe0e79c133cd71dfb3529db805e75ebb5cfc4212a",
+  "corpus_digest": "cc6aed200bc129f92bb95a2a505c3eb457c1ce8530e59830172d631051455b6a",
   "migrations": 21,
-  "note": "Checkpoint45: Ford2025 seven main native and English editions source-copy checked; thirteen new checked readings, previous texts/reviews retained, partial sourcewide work remains; roadmap and complete private reader verified.",
-  "recorded_at": "2026-10-02T21:35:06+00:00",
+  "recorded_at": "2026-10-02T21:56:04+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -63,8 +62,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "e9c23581ad4ff1e95edaf203ab6f064cc8f998c817f5bf1030635fe4a1c84df1",
-      "rows": 114
+      "digest": "d72a2ac2c5adf28d158a3f37fbdc74536255b60f1291d2576f5badf7b44c3171",
+      "rows": 115
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -135,15 +134,15 @@
       "rows": 22
     },
     "source_corrections": {
-      "digest": "f50d238fcb1dca420ac8ec212c1d03d360700180bbe3f4856628113ebd4abe4f",
-      "rows": 80
+      "digest": "5d5ac35cd97a6c6a9feb1c3b64fa5f35380f8bad62f1b7d42b8a91aff9bec846",
+      "rows": 81
     },
     "source_scope_reviews": {
       "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2",
       "rows": 119
     },
     "sources": {
-      "digest": "3de402ac39354eae640341ec69259aa8891a0a460b004ca5e71db53a62108e5b",
+      "digest": "fbcc9c0eee0ac80e2e980bd245285d4d4dd837ffcea82f10d392e8f830d639e5",
       "rows": 967
     },
     "text_metadata_corrections": {
@@ -151,16 +150,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "6a3ca1deb0033f4223f890ef58f384b7dcd75ead2f151cd7d3396f984d2417e0",
-      "rows": 1441
+      "digest": "0d17df870c7cc99ada3da967f5b7400b155ff17ed059852a90f3f4d71d2c8f63",
+      "rows": 1461
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "55231558cbd09f6db50ae36b38bfb047ca7faf9ceba230a2426b3ea2e2fe345e",
-      "rows": 2026
+      "digest": "7da24b2c61bd28a451401d816856d8aeabd2e172712a7415117e17ce3bd2db38",
+      "rows": 2046
     }
   }
 }
