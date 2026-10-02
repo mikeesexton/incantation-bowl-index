@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "inspected_by": "Codex",
+  "inspected_at": "2026-10-02T00:48:02+00:00",
+  "source_id": "SRC-MORGENSTERN2023-FORMS",
+  "capture_id": "CAP-C69A25846658",
+  "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+  "article_span": {
+    "printed": [
+      171,
+      194
+    ],
+    "pdf": [
+      181,
+      204
+    ]
+  },
+  "visually_inspected_article_pages": [
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204
+  ],
+  "extraction_scope": "Remaining definite §2 and §§3–5 bowl quotation units; complete provided quotations, not complete bowl inscriptions or fully extracted article. Unassigned/ambiguous/citation-only passages remain inventoried.",
+  "units": 39,
+  "texts": 70,
+  "unique_objects": 26,
+  "source_scoped_candidates": 7,
+  "numbered_candidate_identifiers": 4,
+  "page_media": 42,
+  "citation_variants": [
+    {
+      "pdf_page": 192,
+      "printed_variant": "museum917376 / Segal095M",
+      "selected_witness": "British Museum91736",
+      "basis": "Same article repeatedly pairs91736 with095M onPDF193/194/195. No917376 identifier/new object manufactured."
+    },
+    {
+      "pdf_page": 193,
+      "printed_variant": "museum91722 / Segal094M",
+      "outcome": "Unresolved: private unassigned quotation, not ingested to either object. Held Ford094M section PDF9 does not corroborate this form/line."
+    },
+    {
+      "pdf_page": 188,
+      "printed_pointer": "Ford1:8",
+      "outcome": "No2011 date printed at this occurrence; prior working lead Ford2011 was over-specific. Exact cited work/object still to resolve."
+    }
+  ],
+  "excluded_material": [
+    "Comparative Talmud/Geniza/Ginza/DC40/RRC2C/MasarMahlala manuscripts",
+    "lead amulets2087/1,2087/4 and Davidovitz1",
+    "unassigned Mandaic divorce parallel, private capture retained pending exact bowl/source identification",
+    "BM91722/Segal094M conflicted quote",
+    "footnote51 onomastic citation-only leads await separate original-edition checks"
+  ],
+  "scope": "Source reproduction only; no scholarly adjudication, rights approval or complete-source extraction.",
+  "preliminary_text_drafts_corrected": 4,
+  "separate_source_check_inventory": {
+    "path": "data/private/research-work/morgenstern2023-remaining-2026-10-01/source_checks02.json",
+    "sha256": "e4bfe9204531e944b66bbf4e91a7694012adcaafb0bfc5d5080f2a162feb6d5a"
+  }
+}

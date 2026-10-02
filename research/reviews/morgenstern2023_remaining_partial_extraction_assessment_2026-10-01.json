@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T00:48:02+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-MORG2023-REST-20261001",
+      "source_id": "SRC-MORGENSTERN2023-FORMS",
+      "capture_id": "CAP-C69A25846658",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "2d087410e67656b16aa7e92468e8c0e78149edc671c285bb280d24416f741dcd",
+      "basis": "Remaining definite §2 and §§3–5 bowl quotation units; complete provided quotations, not complete bowl inscriptions or fully extracted article. Unassigned/ambiguous/citation-only passages remain inventoried. Actual pages include bibliography and comparative witnesses; no whole-source rich-text certification.",
+      "evidence_path": "research/reviews/morgenstern2023_remaining_capture_evidence_2026-10-01.json",
+      "evidence_sha256": "f6453b1a8815dff25e3190e8b12d8ff79fc1ac01c24062bd383678f4ccb1b206",
+      "extraction_path": "data/private/manifests/morgenstern2023_remaining_quotes_2026-10-01.jsonl",
+      "extraction_sha256": "a6d1b1b19165c811756646634b9aa74546d5f7f659028fac1e7d7247bc1ada6a",
+      "supersedes_id": "IBI-DOC-MORG2023-SEC2-20261001"
+    }
+  ]
+}

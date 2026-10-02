@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-02T00:34:53+00:00`
+Generated: `2026-10-02T01:00:07+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -183,7 +183,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-7A0129A52124 — Vorderasiatisches Museum VA.3383 (catalogue 95) | location | current_or_reported_collection: Vorderasiatisches Museum Berlin [SRC-6D313A7AA389; p. 2, item 34]; current_or_reported_collection: Vorderasiatisches Museum, Berlin [SRC-DA708912C2D3; Catalogue entry 95 (VA.3383), p. 131] |
 | IDENT-7A0129A52124 — Vorderasiatisches Museum VA.3383 (catalogue 95) | publication | publication_status: Catalogued in a complete researcher-inspected edition. [SRC-DA708912C2D3; Catalogue entry 95 (VA.3383), p. 131]; publication_status: Receives a selected full edition as text XII. [SRC-DA708912C2D3; Text XII, p. 54] |
 | IDENT-7A0129A52124 — Vorderasiatisches Museum VA.3383 (catalogue 95) | script | script: Syriac ‘Manichaean’ script [SRC-6D313A7AA389; p. 2, item 34]; script_classification: Müller-Kessler labels the script Estrangelo; Lidzbarski described it as Manichaean [SRC-6D313A7AA389; p. 2, item 34] |
-| IDENT-7B451270A3A9 — M139 | dimensions | dimensions: 355 × 175 mm [SRC-83A3DFDE7924; pp. 161–162, M139]; dimensions: 35.5 × 17.5 cm [SRC-553965D06B17; p. 114, Moussaieff 139] |
+| IDENT-7B451270A3A9 — Moussaieff 139 (Morgenstern 2021, Eretz-Israel 34) | dimensions | dimensions: 355 × 175 mm [SRC-83A3DFDE7924; pp. 161–162, M139]; dimensions: 35.5 × 17.5 cm [SRC-553965D06B17; p. 114, Moussaieff 139] |
 | IDENT-7B9A81135B29 — Waller 2022: JBA 01 | biblical_intertexts | biblical_quotations: ["Exod. 15.3", "Ps. 24.8", "Ps. 104.20", "Ps. 10.16", "Ps. 93.1", "Exod. 15.18"] [SRC-73C44B143A9D; p. 156, distribution table, JBA 01]; biblical_quotations: Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18. [SRC-99F964DDA219; VMBA photographic archive, record JBA 1 (MS 1927/8); Internet Archive snapshot 20230815110341]; biblical_quotations: Ps 104:20; Ex 15:3; Ps 24:8; Ps 10:16; Ex 15:18 [SRC-7FBBB775E502; JBA 1, printed p. 56] |
 | IDENT-7B9A81135B29 — Waller 2022: JBA 01 | client | client: Mahdukh daughter of Newandukh. [SRC-99F964DDA219; VMBA photographic archive, record JBA 1 (MS 1927/8); Internet Archive snapshot 20230815110341]; client: Mahdukh daughter of Newandukh [SRC-7FBBB775E502; JBA 1, printed p. 56] |
 | IDENT-7B9A81135B29 — Waller 2022: JBA 01 | dimensions | dimensions: 180x50 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 1 (MS 1927/8); Internet Archive snapshot 20230815110341]; dimensions: 180 × 50 mm [SRC-7FBBB775E502; JBA 1, printed p. 56] |

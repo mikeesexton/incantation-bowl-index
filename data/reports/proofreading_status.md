@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 802 | 114 | 2 | 918 | 87.4% |
+| Edition text (translation, transcription, transliteration) | 872 | 114 | 2 | 988 | 88.3% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 802 | 114 | 667 | 1583 | 50.7% |
+| All stored text | 872 | 114 | 667 | 1653 | 52.8% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 462 | 42 | 1 | 505 |
-| transcription | 266 | 59 | 0 | 325 |
-| transliteration | 74 | 13 | 1 | 88 |
+| translation | 493 | 42 | 1 | 536 |
+| transcription | 272 | 59 | 0 | 331 |
+| transliteration | 107 | 13 | 1 | 121 |
 
 ## Edition text by source
 
@@ -62,4 +62,4 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 3 | 3 | 0 | 6 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 12 | 0 | 0 | 12 |
-| Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 80 | 0 | 0 | 80 |
+| Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 150 | 0 | 0 | 150 |
