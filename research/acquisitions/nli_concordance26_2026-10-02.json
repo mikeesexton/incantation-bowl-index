@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-02T13:41:06+00:00",
+  "status": "acquisition/verification leads only; no contact or purchase",
+  "routes": [
+    {
+      "identity_id": "IDENT-05F37B54B501",
+      "label": "NLI incantation bowl 190 (Ms. Heb. 9467.162)",
+      "requirements": [
+        "Obtain full GalSela EAJS report or library accession/image concordance and verify the exact NLI shelfmark-to-former-designation bridge.",
+        "Inspect original edition route: Shaked–Ford–Bhayro2013, pp106,117,126; compare JBA17/JBA20 without equating all witnesses.",
+        "Compare actual original heading, clients and plate to NLI shelfmark image; preserve scholarly readings/source differences, and keep any uncertain identity decision for Mike."
+      ]
+    },
+    {
+      "identity_id": "IDENT-0C53EA838205",
+      "label": "NLI incantation bowl 41 (Ms. Heb. 9467.163)",
+      "requirements": [
+        "Acquire original Abudraham2026 DOI10.1093/jss/fgaf025 article PDF through publisher/library or author-permitted download. Current redirect/watermark/author generic-agent policy stops automatic capture.",
+        "Inspect original synoptic edition and source photographs; capture NLI41 native inscription and attributed English separately with exact printed/page/line anchors.",
+        "Compare early Morgenstern photos and current NLI image for restoration/obscured letters; keep author interpretations attributed. Bibliographic link alone does not complete investigation."
+      ]
+    },
+    {
+      "identity_id": "IDENT-638A4565DB08",
+      "label": "NLI incantation bowl 71 (Ms. Heb. 9467.112)",
+      "requirements": [
+        "Obtain full GalSela EAJS report or library accession/image concordance and verify the exact NLI shelfmark-to-former-designation bridge.",
+        "Inspect original edition route: Morgenstern–Abudraham2025 LanguageStudies21–22 pp303–325; exact article bowl heading/photograph required, no former M number given in report.",
+        "Compare actual original heading, clients and plate to NLI shelfmark image; preserve scholarly readings/source differences, and keep any uncertain identity decision for Mike."
+      ]
+    },
+    {
+      "identity_id": "IDENT-64FAFD2BE47A",
+      "label": "NLI incantation bowl 7 (Ms. Heb. 9467.19)",
+      "requirements": [
+        "Obtain full GalSela EAJS report or library accession/image concordance and verify the exact NLI shelfmark-to-former-designation bridge.",
+        "Inspect original edition route: Levene2003 pp31–39 as reported; exact original M59 heading/plate required.",
+        "Compare actual original heading, clients and plate to NLI shelfmark image; preserve scholarly readings/source differences, and keep any uncertain identity decision for Mike."
+      ]
+    },
+    {
+      "identity_id": "IDENT-E98FB8675047",
+      "label": "NLI incantation bowl 62 (Ms. Heb. 9467.40)",
+      "requirements": [
+        "Obtain full GalSela EAJS report or library accession/image concordance and verify the exact NLI shelfmark-to-former-designation bridge.",
+        "Inspect original edition route: Levene2003 original M50 edition, exact page/plate required; report names Uri daughter of Maroshita and Qaqai son of Sipporta.",
+        "Compare actual original heading, clients and plate to NLI shelfmark image; preserve scholarly readings/source differences, and keep any uncertain identity decision for Mike."
+      ]
+    }
+  ],
+  "additional_requirements": [
+    "Levene2000 UCL observed exact PDF path: public custom-agent robots preflight200allowed; importer fresh robots check failed before target fetch. Source remains unheld. No user-agent/policy bypass.",
+    "Morgenstern2012 pp157–170 and2021 pp106–122: acquire originals and full nine/five/four witness concordance; later2025four editions not automatically assumed to equal the remaining four2012objects.",
+    "Magnes observed preview8774 is unrelated LanguageStudies23 based on its actual indexed contents. Acquire correct LanguageStudies21–22 YochananBreuerFestschrift2025 pp303–325, rather than treating preview as the article."
+  ],
+  "evidence": {
+    "path": "research/reviews/nli_concordance26_evidence_2026-10-02.json",
+    "sha256": "bd9fd6e10b9a6a7aec4ddd0c604ff6f85dbec2934a5788c33f29ff007cc339c0"
+  },
+  "identity_merges": 0
+}

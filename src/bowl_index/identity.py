@@ -111,6 +111,8 @@ def reading_score(row):
 # is neither grouped nor listed here is a gap, not a default: see
 # `unclassified_claim_fields` and tests/test_field_model.py.
 EXCLUDED_CLAIM_FIELDS = {
+    "publication_pointer_report": "A provisional citation route reported by another source, not an independently verified publication link or competing descriptive assertion.",
+    "former_collection_designation_report": "A source-reported former-designation bridge retained for identity review, not a trusted identifier or competing descriptive assertion.",
     "catalogue_title": "Title of the source appearance, already represented on the source and appearance records rather than a competing object assertion.",
     "collection_designation": "Collection designations belong in the identifier table; a retained claim copy is not a competing descriptive assertion.",
     "collection_history_source_text": "Verbatim source wording retained behind normalized collection-history claims, not an independent normalized assertion.",

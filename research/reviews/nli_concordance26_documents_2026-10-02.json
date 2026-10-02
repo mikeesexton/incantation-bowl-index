@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T13:37:24+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-NLI26-ABUDRAHAM2026",
+      "source_id": "SRC-CA4B122C5F4D",
+      "document_form": "no_document",
+      "extent": "citation_only",
+      "inspection": "not_inspected",
+      "text_state": "none",
+      "object_extraction": "none",
+      "evidence_path": "research/reviews/nli_concordance26_evidence_2026-10-02.json",
+      "evidence_sha256": "bd9fd6e10b9a6a7aec4ddd0c604ff6f85dbec2934a5788c33f29ff007cc339c0",
+      "basis": "Original article text route inspected for exact publication link but no original PDF/page-image holding acquired. Indexed diagnostic response is not a full source holding or source-checked edition extraction."
+    },
+    {
+      "id": "IBI-DOC-NLI26-MORGENSTERN2025",
+      "source_id": "SRC-MORGENSTERN-ABUDRAHAM2025-ADDITIONAL",
+      "document_form": "no_document",
+      "extent": "citation_only",
+      "inspection": "not_inspected",
+      "text_state": "none",
+      "object_extraction": "none",
+      "evidence_path": "research/reviews/nli_concordance26_evidence_2026-10-02.json",
+      "evidence_sha256": "bd9fd6e10b9a6a7aec4ddd0c604ff6f85dbec2934a5788c33f29ff007cc339c0",
+      "basis": "University/CAL bibliographic metadata and author-declared four editions, unheld article23pages303–325. Exact NLI71 correspondence remains report-sourced follow-up."
+    },
+    {
+      "id": "IBI-DOC-NLI26-SELA-REPORT",
+      "source_id": "SRC-SELA-EAJS-NLI-REPORT",
+      "document_form": "no_document",
+      "extent": "citation_only",
+      "inspection": "not_inspected",
+      "text_state": "none",
+      "object_extraction": "none",
+      "evidence_path": "research/reviews/nli_concordance26_evidence_2026-10-02.json",
+      "evidence_sha256": "bd9fd6e10b9a6a7aec4ddd0c604ff6f85dbec2934a5788c33f29ff007cc339c0",
+      "basis": "Indexed report provides three former-designation claims and four citation routes. Direct open returns heading/navigation without body; no report-body capture or independently checked original editions."
+    }
+  ]
+}

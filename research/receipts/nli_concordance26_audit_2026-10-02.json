@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "checkpoint": 26,
+  "created_at": "2026-10-02T13:41:06+00:00",
+  "prior_turn_classification": "progress: checkpoint25 tested and locally committed",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "9f4be5dc65d37edcfca8d1340b343976ca9af4b08439c14e90a8eca37b74d2a0",
+  "corpus_after": "6753c35dda6c14bc24c3db2e80ccde1f284f7ae81832ca4ad637a564adffca99",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 25,
+  "frozen_unlinked_now": 224,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 5,
+  "newly_linked_frozen_identities": 1,
+  "new_text_rows": 0,
+  "new_objects": 0,
+  "new_sources": 2,
+  "new_appearances": 5,
+  "new_claims": 8,
+  "new_captures": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1209,
+  "checked_edition_text_rows": 1072,
+  "partial_edition_text_rows": 136,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1874,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1112,
+    "appearance_bearing_sources": 43,
+    "registered_pdf_sources": 47
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/nli-concordance26-2026-10-02/campaign_case_progress_checkpoint26.json",
+    "sha256": "8d774dc9049036df1cde746803d4ea0a7c034955fead1fd220f2581eec03abb6"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/nli-concordance26-2026-10-02/held_pdf_inventory_checkpoint26.json",
+    "sha256": "af155279843ecc6d2350098840f526d5007213b121b0a0223760e154221a6c10"
+  },
+  "scope": "Checkpoint 26 links NLI 9467.163 / bowl 41 to Abudraham’s 2026 article using the original article text exposed on the author upload, which reports it as formerly Moussaieff Unnumbered. The original PDF, photographs, native inscription and scholarly translation still require capture and separate checks. Five frozen investigations gained new evidence. Gal Sela’s indexed EAJS report gives NLI 190 / Moussaieff 11, NLI 62 / Moussaieff 50 and NLI 7 / Moussaieff 59, plus a Morgenstern–Abudraham 2025 edition pointer for NLI 71. These four routes remain reported leads pending original editions and accession/photo correspondence; the direct report open returned only the grant heading and navigation. The 2025 article metadata is verified, but its original 23 pages remain unheld. An unrelated Language Studies 23 publisher preview was excluded. A fresh audit of 205 retained NLI records found 203 matching title/image prefixes and two unscoped image filenames; NLI numbering cannot be assumed to preserve older Moussaieff numbers. Two sources, five appearances, eight claims, one publication assessment and three citation-only document assessments were added, with every pre-existing corpus row unchanged. Private-reader support now exposes the eight provisional research claims without turning them into trusted identifiers, verified publication links, comparable physical assertions or public facts; regression and rendered-page checks pass. Frozen campaign: 25 linked, 224 unlinked, all 249 with attempts and zero complete investigations. Priority coverage 828/1,052. Existing 1,874 texts, 1,209 edition rows (1,072 checked, 136 partial, one unreviewed), 77 captures, 47 PDF sources and 45 native-script gaps are unchanged. Mike requested a stop at this checkpoint to supply nine retrieved missing documents; research stops after the local commit and the Goal pause is the closing control step. No allowance reset.",
+  "next_actions": [
+    "Verify original editions/card/photo correspondence for the three reported former-designation bridges and NLI71.",
+    "Acquire NLI41 original article and separately capture/check native transcription and scholarly translation.",
+    "Continue other224 publication gaps and useful held-source queues while individual acquisition routes remain blocked."
+  ],
+  "changes": {
+    "appearance_object_links": 5,
+    "appearances": 5,
+    "claims": 8,
+    "document_assessments": 3,
+    "publication_assessments": 1,
+    "sources": 2
+  },
+  "validation": {
+    "mode": "production",
+    "corpus_before": "9f4be5dc65d37edcfca8d1340b343976ca9af4b08439c14e90a8eca37b74d2a0",
+    "corpus_after": "6753c35dda6c14bc24c3db2e80ccde1f284f7ae81832ca4ad637a564adffca99",
+    "changes": {
+      "appearance_object_links": 5,
+      "appearances": 5,
+      "claims": 8,
+      "document_assessments": 3,
+      "publication_assessments": 1,
+      "sources": 2
+    },
+    "all_preexisting_rows_identical": true,
+    "all_capture_hashes_verified": 77,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "edition_inventory": {
+      "reading_text_checked": 1072,
+      "unreviewed": 1,
+      "partial_review": 136
+    },
+    "metrics": {
+      "media_records": 1484,
+      "media_current_ledger_rows": 354,
+      "media_rights_assessed": 319,
+      "media_rights_assessed_pct": 0.21495956873315364,
+      "media_approved": 319,
+      "media_needs_rights_review": 1165,
+      "publication_keys": 36,
+      "publication_keys_resolved": 34,
+      "publication_keys_unregistered": 2,
+      "publication_keys_resolved_pct": 0.9444444444444444,
+      "objects_under_a_publication_key": 910,
+      "objects_under_a_resolved_publication": 909,
+      "works": 224,
+      "works_with_a_held_document": 48,
+      "works_with_a_scope": 135,
+      "works_awaiting_scope": 89,
+      "contributors": 122,
+      "contributors_needing_a_spelling_check": 20,
+      "document_assessment_rows": 68,
+      "sources_with_document_assessments": 67,
+      "sources_with_complete_documents": 56,
+      "sources_with_physically_inspected_documents": 0,
+      "sources_with_ocr": 1,
+      "sources_with_corrected_rich_text": 0,
+      "sources_with_object_level_extraction": 54,
+      "sources_with_complete_object_level_extraction": 29,
+      "sources": 967,
+      "sources_with_captures": 68,
+      "sources_with_pdf_captures": 47,
+      "sources_with_non_pdf_captures_only": 21,
+      "sources_needing_acquisition_review": 797,
+      "sources_without_pdf_with_dependants": 754,
+      "objects_depending_on_a_publication_without_pdf": 288,
+      "checked_reading_texts": 1072,
+      "confirmed_penn_concordances": 23,
+      "relationship_assertions": 5,
+      "unresolved_relationship_assertions": 4,
+      "candidate_records": 2154,
+      "probable_identities": 1805,
+      "source_appearances": 2652,
+      "pending_dedupe": 0,
+      "raw_conflicted_identities": 433,
+      "conflicted_identities": 152,
+      "adjudicated_conflicted_identities": 14,
+      "stale_conflict_instances": 48,
+      "raw_conflict_instances": 867,
+      "reviewed_conflict_instances": 584,
+      "compatible_conflict_instances": 568,
+      "substantive_conflict_instances": 16,
+      "untriaged_conflict_instances": 283,
+      "publication_referenced_identities": 1055,
+      "priority_identities": 1052,
+      "publication_referenced_priority_identities": 828,
+      "publication_no_known_identities": 0,
+      "publication_no_known_priority_identities": 0,
+      "publication_assessed_identities": 1055,
+      "publication_assessed_priority_identities": 828,
+      "publication_reference_pct": 0.7870722433460076,
+      "publication_assessment_pct": 0.7870722433460076,
+      "translation_identities": 475,
+      "text_edition_identities": 443,
+      "media_rights_known": 1071,
+      "media_rights_pct": 0.7216981132075472,
+      "blocked_leads": 29,
+      "open_leads": 36,
+      "qualifying_saturation_sweeps": 2,
+      "coverage": {
+        "location": 1288,
+        "provenance": 373,
+        "dating": 484,
+        "dimensions": 515,
+        "material": 410,
+        "language": 1029,
+        "script": 94,
+        "text_edition": 443,
+        "translation": 475,
+        "image": 612
+      },
+      "content_coverage": {
+        "authenticity_assessment": 4,
+        "biblical_intertexts": 171,
+        "client": 225,
+        "condition": 145,
+        "parallels": 16,
+        "practitioner": 29,
+        "publication": 566,
+        "ritual": 122,
+        "target": 3,
+        "text_description": 93,
+        "text_form": 45,
+        "vessel_form": 4,
+        "visual": 30
+      }
+    },
+    "rehearsal": true,
+    "three_manifest_replays_unchanged": true,
+    "python_tests": "390passed",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_and_classifications_match": 1874,
+      "all_media_attributions_match": 1484,
+      "all_local_image_hashes_match": 1124,
+      "all_capture_hashes_and_assignments_match": 77,
+      "new_source_claims_preserved": 8,
+      "all_previous249case_histories_preserved": true,
+      "extended_case_histories": 5,
+      "new_complete_case_claims": 0,
+      "test_count": 390,
+      "snapshot": {
+        "path": "site/mike-build/private-snapshot.json",
+        "sha256": "5ba9ea831df8038cc378053764a24121b20539ee366963625d91a3970d6d7aeb"
+      }
+    },
+    "reader_support": "Two explicit provisional claim fields are excluded from comparison/release; private projection preserves their exact values/source/certainty/locators. Browser rendering confirms separate research leads and unchanged trusted NLI identifiers. One regression test added;390passed."
+  },
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0026_nli_former_designation_routes.json",
+      "sha256": "0ce685a3bab451467aa6602629728702c27fdf26a3d74980f4474088e62a807c"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/academic.oup.com-robots.txt",
+      "sha256": "4fe133541633c8d0db7d32818c369769910a5b2853082a124d999eb723c3035a"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/apply.py",
+      "sha256": "b069104e8556ec53929dba34ae7564cc7b903289fdc30775342dcd6b807abf1a"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/author-body-indexed.json",
+      "sha256": "0ee7a64e5e6341a7e5fdfe4825a184c002af877e1b2a788e9a2a329453f0ed5b"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/author-links.json",
+      "sha256": "033c5845b86a4b3c6fddf12eafa626ac419c31f9009b6525d41deb909aee057d"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/campaign_case_progress_checkpoint26.json",
+      "sha256": "8d774dc9049036df1cde746803d4ea0a7c034955fead1fd220f2581eec03abb6"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/discovery.ucl.ac.uk-robots.txt",
+      "sha256": "1af9353762ee67a7071a416435e66addf207235e4fa600212dbff01a1dd21b98"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/extra-robots.json",
+      "sha256": "cdd7afc913a144b898d6cd025c8afa07875950907966b4e1513b3b1990274f58"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/extra_robots.py",
+      "sha256": "ec291331c9c4262f0d8b12cdb8adb978f09e1f92ec8a9cff418dc6e7dc0d2c5a"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/finish.py",
+      "sha256": "c35a89a5d05846fd12f4cacaa21baf57808873f133dd0c5c8a5e38a361c82584"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/grant-report.json",
+      "sha256": "2099664b322d9704213de050c9e602bdd447c91374fbf57b6ae97a06981d6a8f"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/held_pdf_inventory_checkpoint26.json",
+      "sha256": "af155279843ecc6d2350098840f526d5007213b121b0a0223760e154221a6c10"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/metadata.json",
+      "sha256": "26b41f48e8ffa27c39f77db6a7195fd88da41688e3b11ab58c92c12b3d35e282"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/nli-numbering-audit.json",
+      "sha256": "fd32f9267b22b0b3b689c3ec0dda8d16175c851754fc72778c5ddd6a99b6703a"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/prepare.py",
+      "sha256": "b8a012e43d14bdbaedca9ed8f939df577cb4068ef37597930f5c7367e7d69ed4"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/prepared.json",
+      "sha256": "7878312a5461559cb84aaf0c1433bc0a8b943fe7affd5bf8e4b1cf99ec5dfe25"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/production-apply.json",
+      "sha256": "b214f7d1c4acc8ff2df0853df83a5596b40cacc9baaecda99f07aac0381637af"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/production-replay.json",
+      "sha256": "a96a8e4673c679f1ba68a41f8fb05fdb2d6b0ff3673a0d7fd1b9db83acd2bd68"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/production-verification.json",
+      "sha256": "4784153de4bcd3c94a84851d238edbf6006ce7b94a30c8ed213e852b056ae7e9"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/reader-build-final.log",
+      "sha256": "7485a4294b2a8eaa81d2731632aeee17979d37bfe39de6ded483fbc578ec63e5"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/reader-build-repair.log",
+      "sha256": "480937410059f396f0e5fc2ed06054fcc0702a899132516be35a3297459adc20"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/reader-verification.json",
+      "sha256": "62d57fb13d69e2860fb9a5ac942b41e83dea559818499ecb022b89952e2adbda"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/receipt-before-final-reader-support.json",
+      "sha256": "640d74ab6d5d068e525287b14c939ef053f8425abf254b623e98a654b6a194f5"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/record_checkpoint.py",
+      "sha256": "01f33e60b6dd84849a0e7bb8a164a7c5fc5fb02f297ac0513107b7682276cfb2"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/regenerate.py",
+      "sha256": "6ff325a3d69871bf0ea8578c7ad14cffdc286f66df0135378e5d6ab679d312a7"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/rendered-reader-check.json",
+      "sha256": "9164188cf15e610783a73f46005019c04af47fdf0ebadacad59ad5a706ebd396"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/reports-final.json",
+      "sha256": "84095e8c0d150be68e18db8df7c7668f6403112b529378a00a4224661e6dda5b"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/roadmap-before-final-reader-support.json",
+      "sha256": "ff36cb6a2633a35f33a6fd3a23d9391aa5c18ce1c4ee483d3c2925980e920c29"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/robots-check.json",
+      "sha256": "88500d330bec2bbcb84c888ce64438bd9d154e172cd2575b38ca4dd9d3a1aa85"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/robots_check.py",
+      "sha256": "42399237e0864725dfc5a03fbab63e7a7bc32c619371bb86751a5d0b335632bc"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search0.json",
+      "sha256": "d778ae0146309eb0d2ebe4861f28441e634107ee4ed981008da41c7e1fbc4c43"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search1.json",
+      "sha256": "50f59eafd09efe22e762dacda06f426ddfa75b7593eff47794a2130e6471fb75"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search10.json",
+      "sha256": "e074deeaf6074e40aae1c8f992a99f1098b9bc5b15836d99a8d9d6da4a0a8691"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search11.json",
+      "sha256": "e02af9f449f9b18e20a921992165055257c63a7ce2232a468018eebb3a211761"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search12.json",
+      "sha256": "c6648db1b3a9b42a2d542a7b68ad8ed4a6544daa6cb16e8341d3db02a00ece47"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search13.json",
+      "sha256": "3248da673d29592fec488b757c2975a5ce8c6a04cf016140fb5139c5086ac682"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search14.json",
+      "sha256": "9d92e94de1df8aa0d0774dda740db763da07cf8113d71421f2235abaedfac93e"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search15.json",
+      "sha256": "e44ef7e2421e56ab24dd4378449ba744657b23e01092e110d8d1d04a2ce3bd6d"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search16.json",
+      "sha256": "b7f2cc07a1751848dddd66a780634f3bc3ed9885f69bb21ef0a499aade873065"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search17.json",
+      "sha256": "bbc7cf4627a94818f939bc77424d1c119aca3d92f36c68f5433d618f6ad18526"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search18.json",
+      "sha256": "a1bae6d9a0819381f4a86b435df7b0bc80c73cc922580e92ef21f2588a9cb103"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search19.json",
+      "sha256": "c59eb5993ffbbcafb7102368de2add7c1dfb426b71dbd92d1ebaf88b4edf6d3e"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search2.json",
+      "sha256": "ac246454a8dd839d56aacfd6db6c2ceed2662f6baa0695a5fda2605b63bdd050"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search20.json",
+      "sha256": "9d541810a3154d21f5e7c9ca17289cac69d6273a720bd0881208621cc2f2e069"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search21.json",
+      "sha256": "7959affb609284c95e3a8724616a3fec1051491c3c82c166b1f4ae352e5adf64"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search22.json",
+      "sha256": "758ec687570a6a279a4d121643f19eada5c71f877613860d17bd03254ee9ed8a"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search3.json",
+      "sha256": "cd3c1afd8b52c994c67d0b2acad377bc9ac89cc32a70e93c3cd609984a69887d"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search4.json",
+      "sha256": "c8e0d45f364d7cf06b0bbc02a609de93216be6732054362bbd3ad2bb2d60b18d"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search5.json",
+      "sha256": "a87d273dd084b108c7ebaf8da98c222f0da64c9dc3cb9842e0ca55dcacf8104b"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search6.json",
+      "sha256": "ed7eb774129f49709b83e12c0a0cf877b46a7711eca9aaedb402a9296e8e7fcd"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search7.json",
+      "sha256": "d6edfb39882220b12f51e6239289d04f8146ec345d682c67ae0ddd0e08575905"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search8.json",
+      "sha256": "885055a2b4b90679879b27f8a71b439c621af83fdf62bb5208a6b86aac40c71f"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/search_coverage.json",
+      "sha256": "c85c7007b93b08065181d485b2a425b8a547770d99a85df957cb6acee893de2c"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/telaviv.academia.edu-robots.txt",
+      "sha256": "ee31c8913ef20ad3b94425af4546d20f2bd1c7494281b0bd57757214d68bd826"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/tests-final.log",
+      "sha256": "501d3ac04b498e0cbc26c9e4bf252c75c5d9bdb8f1464ff77ae5e82fd2aa9154"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/trial-apply.json",
+      "sha256": "9b6a7326c2ebb0b0422d2f532e782e4871ed9d2f3d2bae12c7cbdacb4a9c382e"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/trial-replay.json",
+      "sha256": "b223f73017126ad9a19b3a291212db70f0e73b398545d56c60d2fc5b9ace501d"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/trial-verification.json",
+      "sha256": "0502864c55111a8f65125da2665b5db7c67ad2066559048d396596fa7d1b0fe5"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/verify.py",
+      "sha256": "c20de7832c6610c81f880f2346036d3b9028b39fce3ffd714cb03ef92acf1b22"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/verify_reader.py",
+      "sha256": "a156ec901874e791ec3dcdd502d9baa14c243f4f84d639921d4469109ed3458b"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/watermark02.silverchair.com-robots.txt",
+      "sha256": "36d597839f4dbbb08cfc19848bf9f95596a50b1de1a704660f4ac017ecd9b735"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/www.academia.edu-robots.txt",
+      "sha256": "ee31c8913ef20ad3b94425af4546d20f2bd1c7494281b0bd57757214d68bd826"
+    },
+    {
+      "path": "research/acquisitions/nli_concordance26_2026-10-02.json",
+      "sha256": "0a5cdab3074ae6c3018167675163781a24a3fdafeca96493b38dcc2d3a592bd4"
+    },
+    {
+      "path": "research/enrichment/nli_concordance26_2026-10-02.jsonl",
+      "sha256": "c9577c6ed729192365dbb49ba29e723bab155858b1bdb5f7aa6861e0a6d250d9"
+    },
+    {
+      "path": "research/reviews/nli_concordance26_documents_2026-10-02.json",
+      "sha256": "2774fa5fecc2f12e7fb3b47d6e1c16ca97fdd4ae37f54d1a10282fff32749c1a"
+    },
+    {
+      "path": "research/reviews/nli_concordance26_evidence_2026-10-02.json",
+      "sha256": "bd9fd6e10b9a6a7aec4ddd0c604ff6f85dbec2934a5788c33f29ff007cc339c0"
+    },
+    {
+      "path": "research/reviews/nli_concordance26_publication_2026-10-02.json",
+      "sha256": "93c010a2ce07daa6a964376b2a070f1feacf25557accaf8da42b990ec1fc7624"
+    },
+    {
+      "path": "research/sources/nli_concordance26_2026-10-02.jsonl",
+      "sha256": "fd087a18e47e500516f8262ae65bd59ceba36b4f53e961cfe74fd03beac70ad5"
+    },
+    {
+      "path": "src/bowl_index/identity.py",
+      "sha256": "ca252af1224a165ede97d7215dff24be1f4ab71801d97f1264477aa33f833007"
+    },
+    {
+      "path": "src/bowl_index/private_projection.py",
+      "sha256": "67931e3a0df1a74e31ac8f98534001b393aa78afe32121c8510799f33e7bce93"
+    },
+    {
+      "path": "tests/test_private_reader.py",
+      "sha256": "37d02944a08353d8740527143c5d59de71b7b49a34ff01fab0bc0219988ae61f"
+    },
+    {
+      "path": "web/reading.js",
+      "sha256": "22dac37fe90b4d775ab88756c49ca54a845756f1d37c7a371ff8846406283f9d"
+    }
+  ],
+  "protected_payloads": "Indexed article/report/search diagnostic expression and access responses remain private. No original PDF/capture or scholarly reading recovered, no public rights approval or complete research case claimed.",
+  "stop_requested": {
+    "request": "Stop at the next checkpoint; Mike has retrieved nine missing documents and will provide access.",
+    "research_checkpoint_complete": true,
+    "goal_pause_after_commit": true
+  },
+  "rendered_reader_check": {
+    "path": "data/private/research-work/nli-concordance26-2026-10-02/rendered-reader-check.json",
+    "sha256": "9164188cf15e610783a73f46005019c04af47fdf0ebadacad59ad5a706ebd396"
+  }
+}

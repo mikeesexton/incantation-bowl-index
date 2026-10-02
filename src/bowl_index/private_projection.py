@@ -16,6 +16,12 @@ from .proofreading import current_text_reviews
 
 DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 
+# Provisional routes are research evidence, not comparable object properties.
+# Keep them out of public fact release and automatic identity/publication metrics.
+RESEARCH_LEAD_FIELDS = frozenset({
+    "publication_pointer_report", "former_collection_designation_report",
+})
+
 
 class PrivateResearchProjection(Projection):
     """A private reader snapshot; never use it in a shared or public builder."""
@@ -80,10 +86,26 @@ class PrivateResearchProjection(Projection):
         return rows
 
     def _fact_candidates(self, retain_source_wording=True):
-        return super()._fact_candidates(retain_source_wording=retain_source_wording)
+        rows = super()._fact_candidates(retain_source_wording=retain_source_wording)
+        for row in self.conn.execute(
+            "SELECT object_id,field,value_text,value_json,certainty,source_id,locator "
+            "FROM claims ORDER BY object_id,field,id"
+        ):
+            if row["field"] not in RESEARCH_LEAD_FIELDS:
+                continue
+            value = row["value_text"] or row["value_json"]
+            if value:
+                rows.append({
+                    "object_id": row["object_id"], "field": row["field"],
+                    "field_group": "research", "value": value,
+                    "recorded_value": value, "certainty": row["certainty"],
+                    "source_id": row["source_id"], "locator": row["locator"],
+                    "release_class": "private_research_lead",
+                })
+        return rows
 
     def _facts(self):
-        """The private bank retains source wording that the release view withholds."""
+        """The private bank retains source wording and provisional research routes."""
         return self._fact_candidates()
 
     def _media(self):

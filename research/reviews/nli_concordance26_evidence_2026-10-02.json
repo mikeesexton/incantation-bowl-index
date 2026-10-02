@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T13:37:24+00:00",
+  "article": {
+    "source_id": "SRC-CA4B122C5F4D",
+    "author_url": "https://www.academia.edu/144696979/Abudraham_Bridging_the_Gaps_A_New_Jewish_Aramaic_Incantation_Bowl_and_Its_Parallels",
+    "evidence": {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/author-body-indexed.json",
+      "sha256": "0ee7a64e5e6341a7e5fdfe4825a184c002af877e1b2a788e9a2a329453f0ed5b"
+    },
+    "scope": "Original article introduction/§2.1/note3 names exact NLI shelfmark, bowl41 and MMS; formerly unnumbered. Bibliographic link verified from article text, no native/English reading check or image inspection. Publisher metadata alone not used to verify identity."
+  },
+  "reported_routes": [
+    {
+      "identity_id": "IDENT-05F37B54B501",
+      "object_id": "IBI-05F37B54B501",
+      "nli": 190,
+      "shelfmark": "9467.162",
+      "old": "Moussaieff11",
+      "pointer": "Shaked–Ford–Bhayro2013, pp106,117,126; compare JBA17/JBA20 without equating all witnesses.",
+      "source_id": "SRC-SELA-EAJS-NLI-REPORT",
+      "evidence": {
+        "path": "data/private/research-work/nli-concordance26-2026-10-02/search17.json",
+        "sha256": "bbc7cf4627a94818f939bc77424d1c119aca3d92f36c68f5433d618f6ad18526"
+      },
+      "status": "source-reported concordance/citation lead, not independently verified physical match"
+    },
+    {
+      "identity_id": "IDENT-E98FB8675047",
+      "object_id": "IBI-E98FB8675047",
+      "nli": 62,
+      "shelfmark": "9467.40",
+      "old": "Moussaieff50",
+      "pointer": "Levene2003 original M50 edition, exact page/plate required; report names Uri daughter of Maroshita and Qaqai son of Sipporta.",
+      "source_id": "SRC-SELA-EAJS-NLI-REPORT",
+      "evidence": {
+        "path": "data/private/research-work/nli-concordance26-2026-10-02/search17.json",
+        "sha256": "bbc7cf4627a94818f939bc77424d1c119aca3d92f36c68f5433d618f6ad18526"
+      },
+      "status": "source-reported concordance/citation lead, not independently verified physical match"
+    },
+    {
+      "identity_id": "IDENT-64FAFD2BE47A",
+      "object_id": "IBI-64FAFD2BE47A",
+      "nli": 7,
+      "shelfmark": "9467.19",
+      "old": "Moussaieff59",
+      "pointer": "Levene2003 pp31–39 as reported; exact original M59 heading/plate required.",
+      "source_id": "SRC-SELA-EAJS-NLI-REPORT",
+      "evidence": {
+        "path": "data/private/research-work/nli-concordance26-2026-10-02/search17.json",
+        "sha256": "bbc7cf4627a94818f939bc77424d1c119aca3d92f36c68f5433d618f6ad18526"
+      },
+      "status": "source-reported concordance/citation lead, not independently verified physical match"
+    },
+    {
+      "identity_id": "IDENT-638A4565DB08",
+      "object_id": "IBI-638A4565DB08",
+      "nli": 71,
+      "shelfmark": "9467.112",
+      "old": null,
+      "pointer": "Morgenstern–Abudraham2025 LanguageStudies21–22 pp303–325; exact article bowl heading/photograph required, no former M number given in report.",
+      "source_id": "SRC-SELA-EAJS-NLI-REPORT",
+      "evidence": {
+        "path": "data/private/research-work/nli-concordance26-2026-10-02/search17.json",
+        "sha256": "bbc7cf4627a94818f939bc77424d1c119aca3d92f36c68f5433d618f6ad18526"
+      },
+      "status": "source-reported concordance/citation lead, not independently verified physical match"
+    }
+  ],
+  "direct_report_body": {
+    "path": "data/private/research-work/nli-concordance26-2026-10-02/grant-report.json",
+    "sha256": "2099664b322d9704213de050c9e602bdd447c91374fbf57b6ae97a06981d6a8f"
+  },
+  "access_evidence": [
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/robots-check.json",
+      "sha256": "88500d330bec2bbcb84c888ce64438bd9d154e172cd2575b38ca4dd9d3a1aa85"
+    },
+    {
+      "path": "data/private/research-work/nli-concordance26-2026-10-02/extra-robots.json",
+      "sha256": "cdd7afc913a144b898d6cd025c8afa07875950907966b4e1513b3b1990274f58"
+    }
+  ],
+  "limits": "No original article PDF or report-body capture added. Academia generic-agent robots disallowroot; no automated target fetch. Watermark explicit Disallowroot respected; redirect host robots404. UCL manual preflight200 permits path, but CLI fresh check failed before target fetch, so thesis remains unheld. Do not change user agent or bypass policies. Publisher preview8774 inspected via indexed PDF text and found unrelated LanguageStudies23, not claimed as holding of2025edition."
+}

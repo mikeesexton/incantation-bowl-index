@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "9f4be5dc65d37edcfca8d1340b343976ca9af4b08439c14e90a8eca37b74d2a0",
+  "corpus_digest": "6753c35dda6c14bc24c3db2e80ccde1f284f7ae81832ca4ad637a564adffca99",
   "migrations": 21,
-  "note": "Goal checkpoint25: remaining HS3008 comparisons, original CBS2916 number check, 33 separately reviewed excerpts and 17 private facsimiles",
-  "recorded_at": "2026-10-02T13:17:15+00:00",
+  "note": "Checkpoint26 complete: one NLI publication gap linked, four exact research routes, private leads visible; stopping for nine user-retrieved documents",
+  "recorded_at": "2026-10-02T13:54:35+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "0236155cc9bd447f74089dbdaff815a761cd338046a60b4f6f5619e540c95893",
-      "rows": 2647
+      "digest": "8141af2e89cec6f2fe06a3b32349484746f0f0d24d186bfcb5ed4fa47aef811a",
+      "rows": 2652
     },
     "appearances": {
-      "digest": "e4341005fa63774167733a9348033594ffaa57ceba34d57f17f815ffde4e5cab",
-      "rows": 2647
+      "digest": "3ce00550ee8128fb62db06db7cab819af73bc14444213ab8ae45332574d8c2e7",
+      "rows": 2652
     },
     "capture_source_corrections": {
       "digest": "dd3784169b3420d3582959e5c7c09a2ca359893a6cf73bed625ce39ed149dd61",
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "23b9d0b859e9cf1af10f59da0d04505e7793eb9c1308e3c5b3b5aa2045eda468",
-      "rows": 9122
+      "digest": "216d608531f84f9fb381bc2dfdaec5eb6a7e60d17f2681be97cc44bd50f2f602",
+      "rows": 9130
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,8 +63,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "1520fe72fda7f5d8017b00efee6f204ee8d3c6c47a6edb1e2c38222474c059df",
-      "rows": 94
+      "digest": "2127a33a444dabf8e9303d469c0c1d9d2b4ba90311c5334ee11489d4af28f88b",
+      "rows": 97
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -111,8 +111,8 @@
       "rows": 2154
     },
     "publication_assessments": {
-      "digest": "ef37c441bf66f758d8d5eff70eda027360d5bf48ff1b97de948a81f2c76ae940",
-      "rows": 487
+      "digest": "6756a3a5460f7c1d91ed699b5662152827fe96f019864265bf2446fa5114c49c",
+      "rows": 488
     },
     "publication_registry": {
       "digest": "d0acdbe0a28e823e2fcb8076da1036f39e6e037158bce27605d21be30c54d603",
@@ -143,8 +143,8 @@
       "rows": 119
     },
     "sources": {
-      "digest": "52fc9b38432af1606eca806dd4e53852c615b06101297b85bb1a762b55296936",
-      "rows": 965
+      "digest": "3ca982342a89050fd13877bbc0b2da9c46dc5cd2d1fc52994bae394f16d23332",
+      "rows": 967
     },
     "text_metadata_corrections": {
       "digest": "9782717c3ac120dcdbd3582aa4fdfdd1187033472d49b54d8429b2dac6d144c8",

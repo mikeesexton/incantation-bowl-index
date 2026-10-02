@@ -101,6 +101,32 @@ class PrivateReaderTests(unittest.TestCase):
         self.assertEqual(catalog.search({"available": ["text_here"]})["total"], 1)
         self.assertEqual(catalog.search({"available": ["image_here"]})["total"], 1)
 
+    def test_provisional_routes_are_visible_privately_without_publication_or_identity_upgrade(self):
+        from bowl_index.identity import unclassified_claim_fields
+        from bowl_index.roadmap import roadmap_metrics
+        source_id = self.conn.execute("SELECT id FROM sources").fetchone()[0]
+        before = roadmap_metrics(self.conn)["publication_referenced_identities"]
+        claims = [
+            {"field": "publication_pointer_report", "value_text": "Reported edition pp. 31–39; original heading not inspected.", "locator": "visit report, paragraph 3", "certainty": "reported"},
+            {"field": "former_collection_designation_report", "value_text": "Moussaieff 59", "locator": "visit report, paragraph 2", "certainty": "reported"},
+        ]
+        add_candidate(self.conn, {"source_id": source_id,
+                                 "appearance": {"locator": "no. 1"}, "claims": claims})
+        self.conn.commit()
+        rows = PrivateResearchProjection(self.conn).table("facts")
+        for claim in claims:
+            row = next(r for r in rows if r["field"] == claim["field"])
+            self.assertEqual(row["recorded_value"], claim["value_text"])
+            self.assertEqual(row["certainty"], "reported")
+            self.assertEqual(row["source_id"], source_id)
+            self.assertEqual(row["locator"], claim["locator"])
+            self.assertEqual(row["field_group"], "research")
+        self.assertFalse(any(r["field"] in {c["field"] for c in claims}
+                             for r in Projection(self.conn).table("facts")))
+        self.assertEqual(unclassified_claim_fields(self.conn), [])
+        self.assertEqual(roadmap_metrics(self.conn)["publication_referenced_identities"], before)
+        self.assertEqual(self.conn.execute("SELECT count(*) FROM identifiers").fetchone()[0], 0)
+
     def test_private_projection_prefers_a_reviewed_local_derivative(self):
         media_id = self.conn.execute("SELECT id FROM media").fetchone()[0]
         media_root = Path(self.temp.name) / "media"

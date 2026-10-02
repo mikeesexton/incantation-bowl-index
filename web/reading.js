@@ -979,6 +979,7 @@
       ${sourcesSection(id)}
 
       <details class="entry-apparatus"><summary>Research details</summary>
+        ${factList(id, "research", "Publication and former-number leads")}
         ${sourceExtractions(readable)}
         ${recordedFormsSection(id)}
         ${identifierDetails(identifiers, rawLabels)}
