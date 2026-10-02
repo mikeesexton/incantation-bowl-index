@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "checkpoint": 35,
+  "created_at": "2026-10-02T18:00:03+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "fb63e887cf57d2fb99232fdfe50bf48519fcadeede315ed4ef0ebd5d38a56f5b",
+  "corpus_after": "c386a7a0092350cb1f4b53d934062a186d3c09ac16337defbee5f8b3bd17fefe",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 25,
+  "frozen_unlinked_now": 224,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 0,
+  "new_edition_text_rows": 0,
+  "new_proofreading_reviews": 5,
+  "source_copy_checks_completed": 5,
+  "renewed_partial_checks": 0,
+  "existing_contents_revised": 4,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_captures": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1255,
+  "checked_edition_text_rows": 1107,
+  "partial_edition_text_rows": 147,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1980,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1223,
+    "appearance_bearing_sources": 51,
+    "registered_pdf_sources": 56
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/levene-native35-2026-10-02/campaign_case_progress_checkpoint35.json",
+    "sha256": "07a2a1275ad8974edeb610aba42cfad97cfb4402299032396125b1b3087a7265"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/levene-native35-2026-10-02/held_pdf_inventory_checkpoint35.json",
+    "sha256": "f71f49ae47e3f77e6afb27d10e03bdb9761c7a4f859e2a0d60fccd7476e7ce3c"
+  },
+  "reading_inventory": {
+    "path": "data/private/research-work/levene-native35-2026-10-02/levene-reading-inventory.json",
+    "sha256": "b902f4a510ab3cad9153fa8ffa4ab1290f96ba14379511acc6ca038680367e7d"
+  },
+  "scope": "Checkpoint35 independently collates five held Levene2000 native transcriptions against complete pages, enlarged native bands and individual letters/marks: M102 pp56–57, M108 p86, M121 p98, M123 pp101–102 and M156 p138. Five source-copy checks complete. Four existing contents repaired through five source-bound proofreading reviews: printed cancellation, downward arrows and single partial-letter corners faithfully encoded, and three ordinary letter/count/boundary copying errors repaired. All five original rows and earlier reviews retained. M102 source unbalanced caret and M123 actual printed question mark/open parenthesis preserved. M121 three plain native letters and four overlined English letters retained as different source reports; earlier pending native-overline assertion superseded. All17 main English blocks and11of20indexed native witnesses now source-copy checked; nine native checks, other synopsis comparands, footnotes and composite appendix remain. Corpus1980texts; edition1255rows:1107checked/147partial/oneunreviewed. Frozen249 unchanged25linked/224unlinked/all249attempts/zero complete cases; no new frozen route attempted. All other earlier corpus rows and case histories identical. Goal active, Miri queue unchanged, no reset used.",
+  "next_actions": [
+    "Collate the nine remaining native checks, preserving uncertainty and source versions.",
+    "Capture exact additional comparative columns and inspect source footnote references, keeping composite reconstruction separate.",
+    "Continue other held editions and224 frozen publication gaps; acquire the distinct Levene2003 book, Segal2000 and existing exact access blockers through Miri queue."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "fb63e887cf57d2fb99232fdfe50bf48519fcadeede315ed4ef0ebd5d38a56f5b",
+    "corpus_after": "c386a7a0092350cb1f4b53d934062a186d3c09ac16337defbee5f8b3bd17fefe",
+    "changes": {
+      "text_proofreading_reviews": 5,
+      "texts": {
+        "rows_added": 0,
+        "rows_with_retained_corrections": 5,
+        "contents_revised": 4
+      }
+    },
+    "all_preexisting_other_rows_identical": true,
+    "all_five_original_text_rows_retained_in_ledger": true,
+    "all_earlier_reviews_identical": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "capture_hashes_verified": 86,
+    "edition_inventory": {
+      "reading_text_checked": 1107,
+      "unreviewed": 1,
+      "partial_review": 147
+    },
+    "renewed_reading_checks": {
+      "checked": 5,
+      "partial": 0
+    },
+    "objects": 2169,
+    "appearances": 2724,
+    "total_texts": 1980,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 1980,
+      "all_text_editorial_statuses_verified": 1980,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 1966,
+      "all_local_image_hashes_verified": 1183,
+      "all_capture_hashes_assignments_verified": 86,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "all_five_before_snapshots_verified": true,
+    "all_five_reviews_replay_unchanged": true,
+    "rehearsal_verified": true
+  },
+  "protected_payloads": "All source PDFs, original/current native contents, correction details, proofreading manifests and review pixels remain outside Git in the private vault. Git receipt contains no protected reading payload; source-copy checking does not grant reuse.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0035_levene_native.json",
+      "sha256": "9fa75d2c8de86acfa7228fb8dbb47724b88ccc265b0df590283c0c3c4de27d3a"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/campaign_case_progress_checkpoint35.json",
+      "sha256": "07a2a1275ad8974edeb610aba42cfad97cfb4402299032396125b1b3087a7265"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/held_pdf_inventory_checkpoint35.json",
+      "sha256": "f71f49ae47e3f77e6afb27d10e03bdb9761c7a4f859e2a0d60fccd7476e7ce3c"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/native-before.json",
+      "sha256": "9ca2b3d2214f769612f9715fb7a075991f500f494b18cf4120148f6ecd2477d8"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/correction-specs.json",
+      "sha256": "231190547251b4e0a65dafc8406affb38826efc47dd0d0de7a16e4c002417ddf"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/levene-reading-inventory.json",
+      "sha256": "b902f4a510ab3cad9153fa8ffa4ab1290f96ba14379511acc6ca038680367e7d"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/trial-apply.json",
+      "sha256": "3ce5d115abf3c86569d58a2910fb9aceaa64219d49f128605ea5b29c58a77e43"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/trial-replay.json",
+      "sha256": "0802928b266882daf2eddf8a0ddd522d010bc91d56b99f31c2504523701254b3"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/trial-verification.json",
+      "sha256": "9de796b999f79e7d3f6f99c12c3cdf8b5d9e28e6b842b3662f8a6e648ed21a63"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/production-apply.json",
+      "sha256": "ec0bf1499e40d588ab9b52f936a30e94621a456755bd6911e733da03063271a4"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/production-replay.json",
+      "sha256": "b32280316265cee4c7710e77cdedff217ac9719ee96a62cb4b2620cb487e25eb"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/production-verification.json",
+      "sha256": "768cade4a8e7756438548bf57631180db4ac0abc1ed7f4b1bbe253af715c98b3"
+    },
+    {
+      "path": "data/private/manifests/levene-native35-2026-10-02/production/reading-review.json",
+      "sha256": "7beb621cb6bf398d3eef579b77ece9f5d536ad35c9f2ddc602488cce37a75a75"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/reader-verification.json",
+      "sha256": "4df48a07930a9e94cf9eceaf00e6797b7991765dba3ad7d76298e2fed88d288b"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/reader-build-final.log",
+      "sha256": "471a8a6f5c9238b8b8c854454fd5c4e4535269a9256ce1bf70df7a06c2294d3d"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/tests-final.log",
+      "sha256": "981ff91b9775b6047374da004997dadc10355fac07768f1daf55c417aacabe90"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/node-tests-final.log",
+      "sha256": "83c918b92d53a2672085ed40dcbdeb8515dadb6e5e315486bb0d7a2c7d59c94c"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/prepare_corrections.py",
+      "sha256": "3dfd80b4ef9f9481c59dccf4d47854b16b014fee7ece9f0d1a3fe9d175f492e1"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/ingest_batch.py",
+      "sha256": "2b67571f2aadc02c97eb7ea8f86c2b6f302cb89fd33a45e7ebee7cd1fb16c767"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/record_checkpoint.py",
+      "sha256": "62131452c35a5fed17c45ae41c801817f2e75cef5d947ba82130491d79910280"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/verify_batch.py",
+      "sha256": "adcf4bca3fe14ad9009e3b94bc9ea57ee45cda6a005c74307c4cbb944e95206d"
+    },
+    {
+      "path": "data/private/research-work/levene-native35-2026-10-02/verify_reader.py",
+      "sha256": "fc8a05b0b268121458f7e0712970684256fd4b543f20ab075f949813df342a4d"
+    }
+  ]
+}
