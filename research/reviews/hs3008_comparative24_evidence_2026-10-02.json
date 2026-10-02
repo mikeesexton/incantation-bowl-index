@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T12:41:57+00:00",
+  "source_id": "SRC-8A145FAA2EBB",
+  "source_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+  "capture_id": "CAP-2861B06070B4",
+  "pixel_checks": [
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/abbreviations-20.png",
+      "sha256": "aa9a7413cc862f775c09341813ff3622edf0ab4e9a1d2c17ff211f2a536235d8"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/abbreviations-21.png",
+      "sha256": "56613f3aa69f42ebccd7771480101d04e819010d318db156bb36f4f19eeddfdc"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/abbreviations-22.png",
+      "sha256": "a1167b43a841c0e36e39ed98ac7ed572ab5c4c4d7b35e3f641ca5da65dc30091"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-58-left.png",
+      "sha256": "c54e644defbe82c2ce2e7545410c76aedea4210ce6a686f60cc622da4980ff07"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-58-right.png",
+      "sha256": "63fd0d5fb0176b11e18a135f08be1da45fc99e202d34a6d87a9a12d2e657e05e"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-58.png",
+      "sha256": "2ebb409a66d75fad9cdaddf0d1d90f6fe8227443eee2c48f1e5394c89b9d2591"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-59-left.png",
+      "sha256": "1bf7d4f2e2cc95036e11386199f67f42c1c7c3b983b7afae7cf51c2d395a8172"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-59-right.png",
+      "sha256": "a5254f367542d88176c68ba121498e8b324d2474dfd75cd964e28f98da740420"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-59.png",
+      "sha256": "0c1096116a72323708ffc29589d7d899b9a95b2e4ddddb8dc383c374151e3148"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-60-left.png",
+      "sha256": "a0def3ea640806f74536ea3a1bd8b05ca467aed76eae15ee3edcfec26e22ee07"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-60-right.png",
+      "sha256": "3c3b3bb466813282b8cd2af10c59e70ef76f4c49dbedda09d06d21e857c13f0b"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-60.png",
+      "sha256": "a25248eaa9f20d82277c7ec20480be85970a7790d8894532fcebae1d8a18a62e"
+    },
+    {
+      "path": "data/private/research-work/exact-designations24-2026-10-02/pages/hilprecht-61.png",
+      "sha256": "fbcda84e72affd4611600e385f19fd10538db845785cc9a46448279ede6c7878"
+    }
+  ],
+  "private_items": {
+    "path": "data/private/research-work/exact-designations24-2026-10-02/item_inventory.json",
+    "sha256": "a834f328600dfef5c65b1bc0b892a56922142014ce48520c0c23b5362adccd60"
+  },
+  "exact_designation_screen": {
+    "path": "data/private/research-work/exact-designations24-2026-10-02/existing_designation_screen.json",
+    "sha256": "ddc8fb7d7fb0bc40cb94cb32bb50d9cc27c4bd79f450503c1fc902d8ca16ff45"
+  },
+  "scope": "PDF58–59/printed34–35 ten named witnesses,21bounded quotes; four PDF58–61 pages inspected. New native BM117824 and SD40 rows partial for gray typography. MS2053/198 earlier copied errors corrected separately against enlarged PDF60. Sourcewide335-page extraction remains partial.",
+  "abbreviation_scopes": {
+    "DS": "David Sofer",
+    "SD": "Samir Dehays",
+    "JNF": "private collections, Ford numbering, courtesy Lisa Marie Knothe",
+    "MS": "Schøyen",
+    "NLI_JER": "National Library of Israel"
+  },
+  "concordance_limits": "NLI exact shelfmark reused; source AMB13 pointer retained without uncertain identity merge. Louvre AO2629 reused; Lidzbarski BowlV pointer retained separately. JNF266 Figure19 not assigned to main HS3008 or other comparanda."
+}

@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1024 | 130 | 1 | 1155 | 88.7% |
+| Edition text (translation, transcription, transliteration) | 1043 | 132 | 1 | 1176 | 88.7% |
 | Other stored text (mostly source extracts and summaries) | 0 | 6 | 659 | 665 | 0.0% |
-| All stored text | 1024 | 136 | 660 | 1820 | 56.3% |
+| All stored text | 1043 | 138 | 660 | 1841 | 56.7% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 567 | 43 | 1 | 611 |
-| transcription | 317 | 68 | 0 | 385 |
-| transliteration | 140 | 19 | 0 | 159 |
+| translation | 577 | 43 | 1 | 621 |
+| transcription | 325 | 70 | 0 | 395 |
+| transliteration | 141 | 19 | 0 | 160 |
 
 ## Edition text by source
 
@@ -47,7 +47,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 129 | 0 | 0 | 129 |
 | Notes on the Mandaic Incantation Bowls in the British Museum (`SRC-86CBCD17FECC`) | 12 | 0 | 0 | 12 |
 | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 5 | 5 | 0 | 10 |
-| Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 158 | 17 | 0 | 175 |
+| Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 177 | 19 | 0 | 196 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 35 | 40 | 0 | 75 |
 | MS 2053/198 Incantation Bowl To Ward Against Demons (`SRC-9BE3105F3F31`) | 1 | 0 | 0 | 1 |

@@ -1,21 +1,21 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T09:49:53+00:00`
+Generated: `2026-10-02T12:49:36+00:00`
 
 ## Corpus
 
-- Candidate objects: **2144**
-- Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'language', 'layout', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_bowl_form', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_dimensions', 'reported_findspot', 'reported_fragment_type', 'reported_height', 'reported_physical_condition', 'reported_writing_condition', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1795**
+- Candidate objects: **2149**
+- Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'language', 'layout', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_bowl_form', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_dimensions', 'reported_findspot', 'reported_fragment_type', 'reported_height', 'reported_physical_condition', 'reported_writing_condition', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class']**
+- Estimated distinct objects after resolved dedupe: **1800**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2621**
-- Sources: **964**
+- Source appearances: **2631**
+- Sources: **965**
 - Dedupe clusters pending: **0**
-- Objects with text: **854**
-- Objects with translation: **473**
+- Objects with text: **860**
+- Objects with translation: **479**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **36**
@@ -67,7 +67,7 @@ Generated: `2026-10-02T09:49:53+00:00`
 |---|---:|
 | available | 791 |
 | unknown | 103 |
-| partial | 62 |
+| partial | 63 |
 | paywalled | 5 |
 | blocked | 2 |
 | offline | 1 |
@@ -76,16 +76,16 @@ Generated: `2026-10-02T09:49:53+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1418 |
+| object type | whole_bowl | 1423 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
-| record status | candidate | 942 |
+| record status | candidate | 947 |
 | record status | probable | 922 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1610 |
+| authenticity | unassessed | 1615 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |
