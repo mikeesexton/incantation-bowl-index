@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 997 | 128 | 1 | 1126 | 88.5% |
+| Edition text (translation, transcription, transliteration) | 1021 | 130 | 1 | 1152 | 88.6% |
 | Other stored text (mostly source extracts and summaries) | 0 | 6 | 659 | 665 | 0.0% |
-| All stored text | 997 | 134 | 660 | 1791 | 55.7% |
+| All stored text | 1021 | 136 | 660 | 1817 | 56.2% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 549 | 43 | 1 | 593 |
+| translation | 564 | 43 | 1 | 608 |
 | transcription | 317 | 68 | 0 | 385 |
-| transliteration | 131 | 17 | 0 | 148 |
+| transliteration | 140 | 19 | 0 | 159 |
 
 ## Edition text by source
 
@@ -32,7 +32,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Magic Bowl: The Expulsion of Lilith (`SRC-1B966F866CDF`) | 1 | 0 | 0 | 1 |
 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (`SRC-1E2E21DC61BD`) | 28 | 0 | 0 | 28 |
 | ‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic (`SRC-21417589C8F9`) | 0 | 2 | 0 | 2 |
-| A Magical Bowl in Judaeo-Aramaic (`SRC-25F456A40523`) | 3 | 0 | 0 | 3 |
+| A Magical Bowl in Judaeo-Aramaic (`SRC-25F456A40523`) | 27 | 2 | 0 | 29 |
 | Incantation Bowl in Mandaic — MS 1911/2 (`SRC-292E3E15363B`) | 1 | 0 | 0 | 1 |
 | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 98 | 0 | 0 | 98 |
 | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success (`SRC-4071AE0F749A`) | 2 | 0 | 0 | 2 |

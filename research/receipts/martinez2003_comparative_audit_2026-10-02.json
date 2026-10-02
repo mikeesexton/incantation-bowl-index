@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "checkpoint": 21,
+  "created_at": "2026-10-02T07:35:18+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "45c1bd78045931fd4cccc48d16a960a037ec3497507e1b79657c41c5907f9bf8",
+  "corpus_after": "c47e736a644f46dba3f74a34fe28a1649581e026c82cd8c88c7d13e2f16b3ace",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 825,
+  "unlinked_priority_identities_now": 227,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_objects": 2,
+  "existing_designated_objects_reused": 6,
+  "source_appearances_added": 8,
+  "new_text_rows": 26,
+  "new_text_characters": 11541,
+  "source_checks_added": {
+    "checked": 24,
+    "partial": 2
+  },
+  "private_page_images_added": 14,
+  "publication_assessments_added": 8,
+  "document_assessments_added": 1,
+  "identity_merges": 0,
+  "all_preexisting_rows_identical": true,
+  "edition_text_rows": 1152,
+  "checked_edition_text_rows": 1021,
+  "partial_edition_text_rows": 130,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1817,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1084,
+    "appearance_bearing_sources": 42,
+    "registered_pdf_sources": 45
+  },
+  "allowance_resets_used": 0,
+  "scope": "All eightMartínezBorobio2003comparisonpages printed326–333inspected.26boundedLatin/Englishquotesfor8witnesses,24checked/2partial. Sixexistingdesignationrecordsreused, Isbell17=Montgomery11/Isbell20=Montgomery18primarypointersretained. Two source-scopedcandidatesIsbell18/Yamauchi21:possibleCBS8694clientoverlapnotadjudicated;Yam21=Lidzbarski1902Vsourcepointerretainedwithoutguessedaccession. Differentgrammar/names/omissions/source2glyph and braced/angledrestorationspreserved. Via-sourceIsbell/Yamauchitranslationattributionsretained. Latin22/20small-sign/diacriticcontourspartial;mainAC-MSEFphotosnotcomparands. Furtherexactoriginaleditions, nativeScript,isolatedfootnoteandidentity/scientificauditsremainopen.",
+  "next_actions": [
+    "Return to227frozenpublicationgaps with exactNLI/Schøyendesignations and heldsourcequeues; cataloguesilence/datednoticescannotestablishabsence.",
+    "ResolvepossibleIsbell18/CBS8694relationshipthroughactualIsbell1975original/concordance/photo;clientoverlapaloneinsufficient.",
+    "OriginalMandaicYamauchi21/LidzbarskiVnativeedition/photos and twoLatinrowsmall-signcontoursremainopen.",
+    "Continueisolatedarticlefootnotes/heronameforms, wholeHilprechtqueue,130partialrows,1Kedemunreviewedrow and45frozennativegaps."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/campaign_case_progress_checkpoint21.json",
+    "sha256": "d01471c1daaad932edfd1060c052f7fb0c419f81cacf1df0d55284719a18b203"
+  },
+  "changes": {
+    "objects": 2,
+    "appearances": 8,
+    "appearance_object_links": 8,
+    "identifiers": 3,
+    "texts": 26,
+    "media": 14,
+    "text_proofreading_reviews": 26,
+    "document_assessments": 1,
+    "publication_assessments": 8
+  },
+  "protected_payloads": "Allprotectedquote/draft/proofmanifestsandinventoriesremainignoredprivatevault. Gitcontainscontent-freereviews/count/hashreceiptsonly.",
+  "validation": {
+    "rehearsal": true,
+    "four_manifest_replays_digest_unchanged": true,
+    "all_preexisting_rows_identical": true,
+    "all_73_source_capture_rows_unchanged": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "383 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1817,
+      "all_media_rows_present": 1454,
+      "local_image_rows": 1094,
+      "all_new_26_text_hashes_classifications_attributions_match": true,
+      "current_source_checks": {
+        "checked": 24,
+        "partial": 2
+      },
+      "new_14_image_hashes_match": true,
+      "all_73_source_capture_hashes_match": true,
+      "all_8_named_appearances_present": true,
+      "prior_Martinez_SD2_caption_formula_Miami_thesis_corrections_retained": true,
+      "scope": "Full local Mike projection; two longLatinrows remain partial for smaller-type/diacritic contours, original native/photo/footnote/sourcewide audits remain open."
+    },
+    "state_recorded": true,
+    "latest_pre_batch_backups_retained": 10
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/martinez2003_comparative_document_2026-10-02_trial.json",
+      "sha256": "117e79b41d12f3aed73e9c82fbd4ae5ed144a42ff9105a6ebe2b4414c3c62cfb"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_comparative_proof_2026-10-02_production.json",
+      "sha256": "8a0bf03ed8bb338bfe8263cfa9794cc193ad755a161955fe700ea5bb5e98771f"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_comparative_proof_2026-10-02_trial.json",
+      "sha256": "0d4a23d97a3ef23540f5a1224ea41a10099499002ba5e6d3776f0d1105cc3d30"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_comparatives_2026-10-02_production.jsonl",
+      "sha256": "7ae457b20387a78164a34006a624f995e7663845ca491f5f79d52517b80d92b5"
+    },
+    {
+      "path": "data/private/manifests/martinez2003_comparatives_2026-10-02_trial.jsonl",
+      "sha256": "7ae457b20387a78164a34006a624f995e7663845ca491f5f79d52517b80d92b5"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0021_martinez2003_comparatives.json",
+      "sha256": "db40b135c761cb6255b2ad090e022f37eb97d3b4778c76974a855fc0aaa38a45"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/AMB13-E-capture01.txt",
+      "sha256": "7e81b2f2e2fe4011ad8d5a5ff590dfc36362a3a201f97f22d5d15b031575f3aa"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/AMB13-E-proof02.txt",
+      "sha256": "7e81b2f2e2fe4011ad8d5a5ff590dfc36362a3a201f97f22d5d15b031575f3aa"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-H-E-capture01.txt",
+      "sha256": "65e431bed21404ec6926416862ed28fdd146b17d86d2a457bd2bd788b356e9f4"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-H-E-proof02.txt",
+      "sha256": "65e431bed21404ec6926416862ed28fdd146b17d86d2a457bd2bd788b356e9f4"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-H-L-capture01.txt",
+      "sha256": "2973261b2918dc590e7c005e43e08d6e3accf8dd7eefae0ee2cd5d4e7ce1314c"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-H-L-proof02.txt",
+      "sha256": "2973261b2918dc590e7c005e43e08d6e3accf8dd7eefae0ee2cd5d4e7ce1314c"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-Z-E-capture01.txt",
+      "sha256": "271194edd042f1f0242af625aa8a56f4c1ddd94dd512d980b5d9955376842f79"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-Z-E-proof02.txt",
+      "sha256": "271194edd042f1f0242af625aa8a56f4c1ddd94dd512d980b5d9955376842f79"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-Z-L-capture01.txt",
+      "sha256": "ab1c47003ba46c3c1fb46aeb443424a5ca294e93c5527704d63a8640b51dc691"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB17-Z-L-proof02.txt",
+      "sha256": "ab1c47003ba46c3c1fb46aeb443424a5ca294e93c5527704d63a8640b51dc691"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-E-capture01.txt",
+      "sha256": "df390c35e8e38a6118ba6153d1b46e0030127b0d4b482d904f9b59863d129e46"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-E-proof02.txt",
+      "sha256": "df390c35e8e38a6118ba6153d1b46e0030127b0d4b482d904f9b59863d129e46"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-H-E-capture01.txt",
+      "sha256": "be27bf960dfd03da222a2fc599f2d7c03086c52c5b0da4b805d0cca0995ae4d9"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-H-E-proof02.txt",
+      "sha256": "be27bf960dfd03da222a2fc599f2d7c03086c52c5b0da4b805d0cca0995ae4d9"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-H-L-capture01.txt",
+      "sha256": "2349f15ae551c360d9e3f66830706efa68d6e70aa42bf44f57f1d938dfe7cf01"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-H-L-proof02.txt",
+      "sha256": "2349f15ae551c360d9e3f66830706efa68d6e70aa42bf44f57f1d938dfe7cf01"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-Z-E-capture01.txt",
+      "sha256": "271194edd042f1f0242af625aa8a56f4c1ddd94dd512d980b5d9955376842f79"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-Z-E-proof02.txt",
+      "sha256": "271194edd042f1f0242af625aa8a56f4c1ddd94dd512d980b5d9955376842f79"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-Z-L-capture01.txt",
+      "sha256": "ab1c47003ba46c3c1fb46aeb443424a5ca294e93c5527704d63a8640b51dc691"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB18-Z-L-proof02.txt",
+      "sha256": "ab1c47003ba46c3c1fb46aeb443424a5ca294e93c5527704d63a8640b51dc691"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-E-capture01.txt",
+      "sha256": "d4b7b6fc3d7d79efcf511026726e20dec7450319ab30355c9947012f54eff20b"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-E-proof02.txt",
+      "sha256": "16360ba601727a2a231c1af2470e7c85e74734987a04a04f290c49e63e3b19ab"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-H-E-capture01.txt",
+      "sha256": "9991205ae4dbe82fd21e8c99c53886c3d719dc9ab9545c82f78a7f5aaf921523"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-H-E-proof02.txt",
+      "sha256": "9991205ae4dbe82fd21e8c99c53886c3d719dc9ab9545c82f78a7f5aaf921523"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-H-L-capture01.txt",
+      "sha256": "92b5675e1b49854bcc9fcaf9955496a0005e2b8aedb5f3e7ed85da963d8b0735"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-H-L-proof02.txt",
+      "sha256": "92b5675e1b49854bcc9fcaf9955496a0005e2b8aedb5f3e7ed85da963d8b0735"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-Z-E-capture01.txt",
+      "sha256": "9998e641648f03436a63752af453092d31b86b4104adfaff69f3230ba792d652"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-Z-E-proof02.txt",
+      "sha256": "9998e641648f03436a63752af453092d31b86b4104adfaff69f3230ba792d652"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-Z-L-capture01.txt",
+      "sha256": "54564bb1181596f94701f1425e5210ce6d059f285846e44a654a9022aa92b735"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB19-Z-L-proof02.txt",
+      "sha256": "54564bb1181596f94701f1425e5210ce6d059f285846e44a654a9022aa92b735"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-E-capture01.txt",
+      "sha256": "fa29481b50f94c26b8dd74576dd68f4b974ee2a0ce9392345cee0cdc8a0e5c3d"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-E-proof02.txt",
+      "sha256": "fa29481b50f94c26b8dd74576dd68f4b974ee2a0ce9392345cee0cdc8a0e5c3d"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-H-E-capture01.txt",
+      "sha256": "65e431bed21404ec6926416862ed28fdd146b17d86d2a457bd2bd788b356e9f4"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-H-E-proof02.txt",
+      "sha256": "65e431bed21404ec6926416862ed28fdd146b17d86d2a457bd2bd788b356e9f4"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-H-L-capture01.txt",
+      "sha256": "2973261b2918dc590e7c005e43e08d6e3accf8dd7eefae0ee2cd5d4e7ce1314c"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-H-L-proof02.txt",
+      "sha256": "2973261b2918dc590e7c005e43e08d6e3accf8dd7eefae0ee2cd5d4e7ce1314c"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-L-capture01.txt",
+      "sha256": "3f32bb8060af0fc103324af626045f35c838b477a0cbce8204b74463a7de1aea"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-L-proof02.txt",
+      "sha256": "3f32bb8060af0fc103324af626045f35c838b477a0cbce8204b74463a7de1aea"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-Z-E-capture01.txt",
+      "sha256": "271194edd042f1f0242af625aa8a56f4c1ddd94dd512d980b5d9955376842f79"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-Z-E-proof02.txt",
+      "sha256": "271194edd042f1f0242af625aa8a56f4c1ddd94dd512d980b5d9955376842f79"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-Z-L-capture01.txt",
+      "sha256": "ab1c47003ba46c3c1fb46aeb443424a5ca294e93c5527704d63a8640b51dc691"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB20-Z-L-proof02.txt",
+      "sha256": "ab1c47003ba46c3c1fb46aeb443424a5ca294e93c5527704d63a8640b51dc691"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB22-E-capture01.txt",
+      "sha256": "b6716c32c7ee035a23d2d00fe4f17490a577bf7a9172797d6cfb606811c2af2f"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB22-E-proof02.txt",
+      "sha256": "b6716c32c7ee035a23d2d00fe4f17490a577bf7a9172797d6cfb606811c2af2f"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB22-L-capture01.txt",
+      "sha256": "e19353d75df866e6c50474f752006ce9f80c37aeba068feaf73055c1b41d6f70"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB22-L-proof02.txt",
+      "sha256": "e19353d75df866e6c50474f752006ce9f80c37aeba068feaf73055c1b41d6f70"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB33-E-capture01.txt",
+      "sha256": "3057b59f7ad139a1e7bfd1ff2ffd4d521ea080e1e2bec0af673251faacca496e"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB33-E-proof02.txt",
+      "sha256": "3057b59f7ad139a1e7bfd1ff2ffd4d521ea080e1e2bec0af673251faacca496e"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB33-L-capture01.txt",
+      "sha256": "eed700c19bb4af6441e4241f76eb4bf3e6dee5516935d559b1e592ed3d94b82a"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/ISB33-L-proof02.txt",
+      "sha256": "eed700c19bb4af6441e4241f76eb4bf3e6dee5516935d559b1e592ed3d94b82a"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/YAM21-E-capture01.txt",
+      "sha256": "4eec7ec792c9b5793149f8b3762c317f12abbbc132cc8cc07653a35f18022c07"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/YAM21-E-proof02.txt",
+      "sha256": "4eec7ec792c9b5793149f8b3762c317f12abbbc132cc8cc07653a35f18022c07"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/additional_identity_screen.json",
+      "sha256": "586ed32a3543b02ef373807f4e33b3d2be3c7ce15cd7553ee067f87a398b6cad"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/campaign_case_progress_checkpoint21.json",
+      "sha256": "d01471c1daaad932edfd1060c052f7fb0c419f81cacf1df0d55284719a18b203"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/closure.json",
+      "sha256": "0282a9f1d4b6113de470ec824025f3eeb0b61f4a699a0e267619dc8120daf6bf"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/cumulative_extraction_production.json",
+      "sha256": "84f875ffd722ea4800b1bc3278dd9fcef7f46e69257755e6c625a7e23401c1f5"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/cumulative_extraction_trial.json",
+      "sha256": "10608b82991af1d09bc95cff28e50f3bc1e9fd2186898d94662fed3824818a92"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/current_identities.json",
+      "sha256": "fede817ffc68db07a339646cf1cb7e808d5e63092b49d4186cd449195721f86f"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/existing_designation_screen.json",
+      "sha256": "a527d26c91d9a868a965de7d3d0ddb582c08a0ff441ad830c013e7fa6ecea97d"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/existing_designations_all_rows.json",
+      "sha256": "5264fd6e71efe0c54095d0a25b1b31099fc088abfb4319bd5427d77495b07a53"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/held_pdf_inventory_checkpoint21.json",
+      "sha256": "62718a9df6a8296b5fd4e9e79ab57200495f315feac98bd5814779abf72393a0"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/item_inventory.json",
+      "sha256": "002089677c115e7be890fa1caf2c9aa4f61b8128e2367d6e46f3c8d9d1447e20"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/items.py",
+      "sha256": "1e45c7debc1353cd63aea3a7f35348f208632284b0e541e917b39fa0afc43c3a"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/metadata.json",
+      "sha256": "368e2acd0ce9e0583ed2fcba86d994c1656bd025113eac5e2805b6a0888784d2"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/object_inventory.json",
+      "sha256": "c08cf83e1312515b19bdd8c2ba4ef731ce2624a524bc23f08f0dca85c5c23f54"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/prepare.py",
+      "sha256": "2c9615fae2e707da1ee99f09892a4e0aae20c67c0f1c40230c66d6138336739e"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/production-verification.json",
+      "sha256": "e0042b0b9170872d0e45c68d510820543616baeadb7056e048dfc609fe8daaab"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/proof_inventory_production.json",
+      "sha256": "ade2b878cd0164167115b2e98829b62c7114956131e15f3b9a738e716665549d"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/proof_inventory_trial.json",
+      "sha256": "a2112f8a453a39b61f79686ece72d5c7dee2fb8ba24916470ad358dbc659ad3a"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/reader-build.log",
+      "sha256": "ab30ccd8098ef44599d0f090af5da558d01cfd53d5111627d1ab0ac1d9a0ff88"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/reader-verification.json",
+      "sha256": "5b3fcdc36f1a67c82369a0b6d34a0b39b6d2b737897d72107d780644f9796e67"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/record_checkpoint.py",
+      "sha256": "e1db17098ad85530e07c043d8cad089c8742e4aa2ccae9de9e7d5e2ecd82d432"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/regenerate.py",
+      "sha256": "eb1cae24cf4b02a54e36030fd8d3b5276db85b596a40d17e74b315b6733bd281"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/reports-final.json",
+      "sha256": "4c9f539eda0169e26f50ab738b52aa4e6073b2369adb2c7666a723713bc58cda"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/search_coverage.json",
+      "sha256": "d95ff318bb466a719415623689b08f7871f7dec6393e8bef2444198ed0baf81c"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/source_check.py",
+      "sha256": "6e07ce86ed059dd5228ae2487bcd56a3c1bee51a31052d4bd23484ae41a0c5b0"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/tests-final.log",
+      "sha256": "b85c12b47ac5365627333e27323f0d5c7af284e9cb4d69d9ecc3c68c34b1edee"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/trial-verification.json",
+      "sha256": "f3646c99809b4844a97b3fb7d1fab7b406c2ebf7234f6575520204d286cad63d"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/verify.py",
+      "sha256": "4bc241746f8ff11600e05d90faf3f75a1baeee4d763c9632bba3eb56d0b8a970"
+    },
+    {
+      "path": "data/private/research-work/martinez2003-comparatives-2026-10-02/verify_reader.py",
+      "sha256": "140e412ded7a5295df3be596cb4eba9035a3464889cebfb2cf7990c362de6738"
+    },
+    {
+      "path": "research/receipts/martinez2003_comparative_private_images_2026-10-02.json",
+      "sha256": "bdea5b56816e20cdeed47db0c07c9d7266c4bb5bc843617717ba299973cffc37"
+    },
+    {
+      "path": "research/reviews/martinez2003_comparative_document_2026-10-02_production.json",
+      "sha256": "8ad280f38a8d41a5af12ceae6b662d3fb320d37a640a001a1ba1cbefd4e88d63"
+    },
+    {
+      "path": "research/reviews/martinez2003_comparative_evidence_2026-10-02.json",
+      "sha256": "3ed776912b5e8bf0d5cc1fc95620fb7fd7d5dea0a1bcb2f97d39a8cbbbf04e47"
+    },
+    {
+      "path": "research/reviews/martinez2003_comparative_publication_2026-10-02.json",
+      "sha256": "f2f0135efcbf7c947233d968e7941fbcc7f01a4d46004285a38c9e8ff9075922"
+    }
+  ]
+}
