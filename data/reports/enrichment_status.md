@@ -2,9 +2,9 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1858**
+- Working physical identity hypotheses (all statuses): **1859**
 - Multi-record identity clusters: **219**
-- Underlying source records (all identities): **2207**
+- Underlying source records (all identities): **2208**
 - Pending dedupe decisions: **0**
 
 ## Identity-level coverage
@@ -14,19 +14,19 @@
 | Location | 1288 | 69.3% |
 | Provenance | 375 | 20.2% |
 | Dating | 484 | 26.0% |
-| Dimensions | 670 | 36.1% |
+| Dimensions | 670 | 36.0% |
 | Material | 410 | 22.1% |
 | Language | 1029 | 55.4% |
 | Script | 94 | 5.1% |
-| Text Edition | 534 | 28.7% |
-| Translation | 550 | 29.6% |
+| Text Edition | 535 | 28.8% |
+| Translation | 552 | 29.7% |
 | Image | 614 | 33.0% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 597 |
+| 0–2 of 10 | 598 |
 | 3–5 of 10 | 942 |
 | 6–8 of 10 | 305 |
 | 9–10 of 10 | 14 |
@@ -35,7 +35,7 @@
 
 | Next action | Identities |
 |---|---:|
-| Location | 570 |
+| Location | 571 |
 | Provenance | 1005 |
 | Dating | 68 |
 | Dimensions | 139 |

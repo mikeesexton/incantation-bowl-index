@@ -1,24 +1,24 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T23:04:03+00:00`
+Generated: `2026-10-02T23:19:40+00:00`
 
 ## Corpus
 
-- Candidate objects: **2207**
+- Candidate objects: **2208**
 - Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'language', 'layout', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1858**
+- Estimated distinct objects after resolved dedupe: **1859**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
-- Source appearances: **2789**
+- Source appearances: **2798**
 - Sources: **967**
 - Dedupe clusters pending: **0**
-- Objects with text: **970**
-- Objects with translation: **568**
+- Objects with text: **971**
+- Objects with translation: **570**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **40**
+- Open leads: **42**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -76,16 +76,16 @@ Generated: `2026-10-02T23:04:03+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1481 |
+| object type | whole_bowl | 1482 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
-| record status | candidate | 1004 |
+| record status | candidate | 1005 |
 | record status | probable | 923 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1673 |
+| authenticity | unassessed | 1674 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |
@@ -178,6 +178,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | open | 2 | Ford2025 p112/PDF10 quotes SD22AL:6–7, citing Müller-Kessler2005 pp52–53. Newly scoped AL publication witness retained separately from existing SamirDehaysSD22 (IBI-FM2020-HS8CMP-SD22); verify exact catalogue convention/wording before assigning a cross-designation identity. No merge. |
 | open | 2 | Ford2025p125/PDF23proposes IMJ80.1.3:2name reading without emendation while printed native uses curly-r notation; footnote91reports different Naveh/Shaked name rendering/emendation. Both bounded reports retained separately. Check original pp168–170, photographs and sigla with specialist before interpreting braces or preferring a name; no adjudication. |
 | open | 2 | Jeruzalmi1963UniversitédeParisdissertation remains unheld: Ford2025p135footnotes134/140cite Istanbul5366editionpp140–151 and French weapon translationp141. Bounded native revised block/French quotation captured from Ford, not original. Targeted catalogue searches found citations, no full dissertation/PDF; BnF/theses.fr openings failed through web tool. Manuallibrary/ILL acquisition needed, no blanket denial diagnosis. Miri request queued atcheckpoint50. |
+| open | 2 | Ford2025p144/PDF42reports that VA2104name previously rendered Mah-gawan in Berlin2018p71is the same name as PC131Mah-gyanfor a different person. Keep source-attributed proposal alongside earlier source reports; inspect Berlin original sigla and bowl photographs with specialist before choosing interpretation. PC131nativeword must not be relabeled as VA2104nativequotation. No scholarly adjudication. |
 | open | 2 | Locate an edition or additional documentation for Penn B16038 (object 151160). The web-visible catalogue checked 2026-10-01 lists no bibliography; targeted searches for B16038 with bowl, incantation, Montgomery and Nippur found its museum record but no new edition. This is a dated search disposition, not a global no-known-edition finding. The page lists five image views; only the pre-existing primary thumbnail is currently recorded in the corpus. |
 | blocked | 2 | Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access. |
 | blocked | 2 | Obtain authorized full-text access to Faraj 2023 to capture the edition, translation, dimensions, provenance details, and imagery for IM 77781. |
@@ -185,6 +186,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | blocked | 2 | Locate the Nippur bowls retained by the Imperial Museum at Constantinople, as reported by Montgomery on p. 15. |
 | open | 3 | Obtain the complete Hannu Juusola 1999, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, for controlled language and orthography normalization. |
 | blocked | 3 | Obtain authorized access to Mokhtarian 2015, Rabbis, Sorcerers, Kings, and Priests, for contextual enrichment. |
+| open | 3 | Ford2025p144/PDF42quotes one Syriac name spelling from AS10. Single native quoted word source-copy checked; AS not expanded in inspected source collection/dictionary abbreviations. Resolve exact original designation, edition and locator before cross-collection matching or requesting a named original. No access blockage diagnosed or guessed expansion; source-scoped candidate only. |
 | blocked | 3 | Preserve a private content-addressed capture of the Menil Collection record for incantation bowl X 831 if later permitted or supplied through authorized access. |
 | blocked | 3 | Reconstruct Kedar's unenumerated analytical sample of 296 published JBA bowls from the dissertation's citations and working materials. |
 | blocked | 3 | Verify every Apotropaic Arts designation and concordance against its cited primary edition. |
