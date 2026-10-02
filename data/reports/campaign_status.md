@@ -1,21 +1,21 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T05:10:33+00:00`
+Generated: `2026-10-02T06:03:37+00:00`
 
 ## Corpus
 
-- Candidate objects: **2106**
+- Candidate objects: **2120**
 - Unclassified claim fields: **['adversary_or_target', 'catalogue_script', 'edition_language_and_script_label', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reported_bowl_form', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_dimensions', 'reported_findspot', 'reported_fragment_type', 'reported_height', 'reported_physical_condition', 'reported_writing_condition', 'source_language_or_script_label', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1757**
+- Estimated distinct objects after resolved dedupe: **1771**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1195**
-- Source appearances: **2560**
+- Source appearances: **2575**
 - Sources: **958**
 - Dedupe clusters pending: **0**
-- Objects with text: **815**
-- Objects with translation: **436**
+- Objects with text: **830**
+- Objects with translation: **450**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **36**
@@ -76,16 +76,16 @@ Generated: `2026-10-02T05:10:33+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1380 |
+| object type | whole_bowl | 1394 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
 | record status | probable | 922 |
-| record status | candidate | 904 |
+| record status | candidate | 918 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1572 |
+| authenticity | unassessed | 1586 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |

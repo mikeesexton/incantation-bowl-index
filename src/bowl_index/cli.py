@@ -132,7 +132,7 @@ def build_parser():
     )
     capture_corrections.add_argument("path")
     text_metadata = sub.add_parser(
-        "ingest-text-metadata", help="repair text labels and locators with retained originals"
+        "ingest-text-metadata", help="repair text type, locator, language or script with retained originals"
     )
     text_metadata.add_argument("path")
     object_scope = sub.add_parser(

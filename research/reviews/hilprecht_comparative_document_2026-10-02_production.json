@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T05:32:43+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-FM2020-CMP20261002",
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_id": "CAP-2861B06070B4",
+      "supersedes_id": "IBI-DOC-EXACT20261002-8A145FAA2EBB",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "extraction_path": "data/private/research-work/hilprecht-comparative-capture-2026-10-02/cumulative_extraction_production.json",
+      "extraction_sha256": "fd19bddeabc2aa4c8864bd1343b352a5a52c93cac6401ce357b2a90f4438eb42",
+      "evidence_path": "research/reviews/hilprecht_comparative_evidence_2026-10-02.json",
+      "evidence_sha256": "1b4bf7d2d27417deb5a7de261bd9f776d6fac4856f2057f292135fcaebe49d1a",
+      "basis": "Complete335-page PDF unchanged. Cumulative index retains all earlier main/comparative material and adds33bounded reading/gloss rows for15designated witnesses. Whole-file regexdiscovery is a locator screen, not exhaustive source checking or complete object extraction. Fourteen new source/collection-scoped candidates; one exact existing JNF49 reused. Gray-letter extent and original full editions/photos remain open."
+    }
+  ]
+}

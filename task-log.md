@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Capture Hilprecht comparisons and correct SD2 copied names
+
+**Claimed:** TEXT-001, TEXT-004, TEXT-009, TEXT-010
+**Corpus:** changed (33 bounded text rows, 15 appearances, 14 designation-scoped candidates, 15 private page facsimiles, 15 reference assessments, 66 reading reviews, two metadata repairs and four cumulative document assessments) — state digest `d1cc6f0b20ae`
+**Tests:** 383 passed; Mike reader 7/7 checks; all 33 text, 15 image and 72 source-capture hashes verified; integrity, foreign keys and frozen hashes pass.
+
+- Opening tree clean and corpus matched checkpoint17 `3a427ba58f9c`. Screened all335 extractable pages of held Ford–Morgenstern2020 for comparative designations:106pages/893regex occurrences, including indexes and bibliography. Regex discovery is incomplete and cannot prove edition absence or whole-source completion; protected locator queue retains exact remaining page routes.
+- Captured33bounded native/Latin readings and English clauses/name glosses for15named witnesses; exact existingJNF49 reused and14source/collection-scoped candidates added. Separately compared source pixels;32checked/1partial forPC38gray-letter notation. Retained source deletion braces, restorations, anomalous consonants, initials and distinct witness scopes. MS2087/10a receives only its printedLatin name, with no borrowedS-448native spelling/gloss. Fifteen private facsimiles document four source pages; main bowl photographs/editions are not reassigned to quoted comparanda.
+- Enlarged actual printed17/PDF41 pixels revealed two copiedSD2 name omissions, one zayin and one final kaf; corrected both with immutable original snapshots. Printed6/PDF30 transcription conventions and the source's laterSD2passage supportJBAHebrew-script transcriptions, correcting the erroneousMandaic/transliteration labels. Extended the existing hash-bound metadata importer narrowly to language/script; regression tests verify retained wording/history, stale-check invalidation and rejection of source/payload changes. Renewed all33reading checks with correct convention; all33superseded first reviews retained. Current spelling/classification is corrected information, not an unresolved scholarly conflict.
+- Original copied remaining-queue headingHS3004 corrected to actualHS3005printed19/PDF43. Original indexes/assessments retained; superseding indexes also repair obsoleteSD2inventory scope wording. Whole-source object extraction remains partial. Candidate replays cannot restore copied text errors; corrected proof replay is unchanged. Old proofreading manifests now correctly reject stale evidence without changing the corpus; pre-repair five-manifest replay result is not presented as a post-repair result.
+- Current edition inventory1,071rows:950checked/119partial/2unreviewed;1,736totaltexts. HeldPDFroster1,046appearances across41of44sources. Priority825/1,052(78.4%); frozen24922linked/227unlinked, all prior attempts retained;45frozen native gaps unchanged. No new frozen-case link or complete investigation claimed. All pre-session corpus rows remain identical. Receipt: `research/receipts/hilprecht_comparative_audit_2026-10-02.json`; private checkpoint0018 and corrected current inventories retained.
+- Roadmap/reports/export regenerated, tests finished before final standalone Mike build. Complete private reader1,736texts/1,403media/1,043local images, all72captures packaged; previous formula/caption/Miami/thesis corrections retained. Goal active; this turn is progress. Next inspectHS3005printed19–25/PDF43–49 direct comparisons, then remaining sourcewide queue and frozen publication/native gaps. Ten backups retained. Local commit only; no push, deployment, purchase, outbound contact or allowance reset.
+
 ## 2026-10-02 — Codex — Check exact Schøyen and JNF contextual references
 
 **Claimed:** TEXT-001, TEXT-004, TEXT-009, TEXT-010

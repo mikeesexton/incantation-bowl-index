@@ -71,6 +71,38 @@ class TextMetadataTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "correction evidence changed"):
             apply_text_metadata(self.conn, manifest, self.root)
 
+    def test_language_script_repair_retains_content_and_invalidates_old_reading_check(self):
+        from bowl_index.proofreading import current_text_reviews
+        manifest = self.manifest()
+        manifest["entries"][0]["changes"] = {
+            "text_type": "transcription", "language": "Jewish Babylonian Aramaic", "script": "Hebrew"}
+        original = dict(self.row)
+        self.conn.execute("INSERT INTO text_proofreading_reviews VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+            "PROOF-OLD", self.row["id"], self.row["source_id"], "source-hash", text_fingerprint(self.row),
+            text_fingerprint(self.row), "reading_text_checked", "Test", "2026-10-01T01:00:00Z", "[1]",
+            "Test", "Test", json.dumps(original), json.dumps(original)))
+        self.conn.commit()
+        self.assertIn(self.row["id"], current_text_reviews(self.conn))
+        apply_text_metadata(self.conn, manifest, self.root)
+        after = dict(self.conn.execute("SELECT * FROM texts").fetchone())
+        self.assertEqual(after["content"], original["content"])
+        self.assertEqual(after["language"], "Jewish Babylonian Aramaic")
+        self.assertEqual(after["script"], "Hebrew")
+        history = self.conn.execute("SELECT * FROM text_metadata_corrections").fetchone()
+        self.assertEqual(json.loads(history["before_json"]), original)
+        self.assertEqual(json.loads(history["after_json"]), after)
+        self.assertNotIn(self.row["id"], current_text_reviews(self.conn))
+        self.assertEqual(apply_text_metadata(self.conn, manifest, self.root)["unchanged"], 1)
+
+    def test_language_repair_cannot_change_source_or_accept_empty_script(self):
+        for changes in ({"language": "JBA", "source_id": "other"}, {"script": " "}):
+            manifest = self.manifest()
+            manifest["entries"][0]["changes"] = changes
+            with self.assertRaises(ValueError):
+                apply_text_metadata(self.conn, manifest, self.root)
+        self.assertEqual(dict(self.conn.execute("SELECT * FROM texts").fetchone()), dict(self.row))
+        self.assertEqual(self.conn.execute("SELECT count(*) FROM text_metadata_corrections").fetchone()[0], 0)
+
     def test_partial_batch_rolls_back_and_payload_changes_are_disallowed(self):
         manifest = self.manifest()
         manifest["entries"].append(dict(manifest["entries"][0], id="TMC-2"))

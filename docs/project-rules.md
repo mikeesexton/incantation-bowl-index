@@ -283,6 +283,13 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   reports and correct only their attribution; do not turn a pointer repair into
   an accession adjudication. Research exports redact ledger snapshots because an
   appearance's original payload may include protected expression.
+- `ibi ingest-text-metadata` repairs a copied text type, locator, language or
+  script against hash-bound evidence, retaining complete immutable before/after
+  snapshots. It cannot change the wording or source association. A classification
+  repair invalidates earlier reading checks; renew them against the source through
+  a new proofreading manifest. Earlier candidate imports cannot restore a retained
+  superseded draft. Old proofreading manifests reject stale evidence rather than
+  reverting the corrected record.
 
 ### Before you finish
 

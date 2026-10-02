@@ -47,8 +47,8 @@ def apply_text_metadata(conn, manifest, root):
             seen.add(text_id)
             if not entry.get("id") or not entry.get("rationale", "").strip():
                 raise ValueError("correction id and rationale required")
-            if not changes or set(changes) - {"text_type", "locator"}:
-                raise ValueError("only text_type and locator may change")
+            if not changes or set(changes) - {"text_type", "locator", "language", "script"}:
+                raise ValueError("only text_type and locator, language or script may change")
             if any(not isinstance(value, str) or not value.strip() for value in changes.values()):
                 raise ValueError("nonempty metadata values required")
             row = conn.execute("SELECT * FROM texts WHERE id=?", (text_id,)).fetchone()
