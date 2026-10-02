@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T21:00:46+00:00",
+  "updated_at": "2026-10-02T21:33:59+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -82,7 +82,7 @@
       "capture_id": "CAP-9ACA488492AF",
       "sha256": "c64b1aa031a72c833f3856433eea22b00cd843733eb98df2ad25d159ba9d2df5",
       "status": "Researcher-supplied local document held",
-      "reading_audit": "Partial; further source reading checks remain"
+      "reading_audit": "Seven own main native and English editions checked atcheckpoint45; prior checked T27987English retained. Twenty-witness synoptic/other comparative passages and commentary remain partial sourcewide work."
     },
     {
       "source_id": "SRC-CA4B122C5F4D",
@@ -266,12 +266,16 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/held-cases44-2026-10-02/acquisition-queue-before.json",
-    "sha256": "929f0d61d4fec669c94f5b34e627a19848fbc3bf75881e6f8851914e260d9148"
+    "path": "data/private/research-work/ford-main45-2026-10-02/acquisition-queue-before.json",
+    "sha256": "7fbe6ac7cafcf6a1f0218f10034069fe0f88d7a94962a782368b7ddd33b1eefe"
   },
   "new_access_requests_checkpoint": 41,
   "latest_held_context_inventory": {
     "path": "data/private/manifests/held-cases44-2026-10-02/production/extraction.json",
     "sha256": "fb413f96d376d06a07ea975b0032cb2eb9f014b5aabefcdc17e604e5da573a49"
+  },
+  "latest_held_main_edition_inventory": {
+    "path": "data/private/manifests/ford-main45-2026-10-02/production/extraction.json",
+    "sha256": "3250145b1bcdba37551ffb862617996455775924d1fdec1cb95afdaa60c5a456"
   }
 }

@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Ford supplied main editions, checkpoint45
+
+**Claimed:** TEXT-001, TEXT-009, TEXT-010
+**Corpus:** changed (thirteen checked native/English readings and thirteen reviews; retained source/document updates) — state digest `19df7a950b47`.
+**Tests:** 393 Python and 57 Node passed; complete private reader 7/7. All 2,026 text contents, attributions, classifications and editorial declarations verified; 2,027 media assignments, 1,190 local image hashes and 87 capture hashes/source assignments verified. Integrity/FKs pass; trial and production manifest/review replays unchanged. All earlier text/review rows and unaffected corpus rows identical; complete previous source note and prior extraction index retained.
+
+- Opening clean corpus matched checkpoint44 `b10b807f927e`; TEXT tasks claimed, project/literature/release rules read and consistent pre-batch backup/trial prepared. Current and previous Goal turns are progress; original Goal remains active.
+- Source-copy checked Ford2025’s seven own main native transcriptions and six remaining English translations on the existing T27987, Wolfe111, DS65, JNF93, DS1, JNF84 and PC131 appearances. Existing checked T27987English retained without duplication or revision. Thirteen new searchable checked rows,64native numbered lines and55newEnglish paragraphs; eighteen main table pages and22complete pages visually inspected, with enlarged native pixels. SuppliedPDFpage offset+102 retained independently from the earlier whole-issue holding.
+- Preserved243printed contoured partially preserved letters using declared project double-angle notation. Two printed strikethrough ranges remain visible through declared native brace notation; literal uncertain signs, restorations, source spelling/repetition, graphical ring groups and different native/English endpoints are retained. English source braces remain literal. Only copying word-spacing/physical English wraps normalized; no spell harmonization, restoration from translation or interpretation of magical graphic signs. These are checks of the scholar’s edition against source pixels, not independent readings from clay or specialist certification.
+- All seven main native/English pairs now captured/checked. Sourcewide extraction remains partial for the twenty-witness synoptic tables, comparative quotations, variants in footnotes and commentary. Earlier whole-section working rows retained; prior complete extraction index remains linked in the superseding document assessment. No new objects, appearances, publication assessments, media, source captures or identity merges. No rights approval.
+- Edition inventory now1,299 rows =1,162checked /136partial /one unreviewed;2,026 total texts. HeldPDFinventory refreshed at57sources /52appearance-bearing /1,238appearances. This batch has no member of the fixed249priority cohort: all histories unchanged,27linked /222unlinked /zero wholecases complete. Historical99-appearance native roster retains45gaps unchanged. Miri queue keeps ten resolved holdings and16requests, with the Ford main-reading status updated and previous queue snapshot retained. No fresh access blocker, outbound message or reset used.
+- Content-free receipt `research/receipts/ford_main45_readings_2026-10-02.json`; protected PDF, exact readings/manifests and source-pixel views remain outside Git. Roadmap/seven reports/export regenerated; complete private reader rebuilt after tests and fully verified, state written. No push, deployment, purchase, author contact or live-server restart. Next continue222exact publication-reference routes and capture/check Ford’s bounded synoptic passages and other supplied comparative quotations while Miri tracks previously requested original editions and NLI images/cards.
+
 ## 2026-10-02 — Codex — Held-document exact-case sweep, checkpoint44
 
 **Claimed:** TEXT-009, TEXT-010
