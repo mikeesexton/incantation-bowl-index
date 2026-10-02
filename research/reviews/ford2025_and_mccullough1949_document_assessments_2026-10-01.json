@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T01:53:06+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-FORD2025-CITATION-20261001",
+      "source_id": "SRC-FORD2025-THUS-OATH",
+      "document_form": "no_document",
+      "extent": "citation_only",
+      "inspection": "not_inspected",
+      "text_state": "none",
+      "object_extraction": "none",
+      "basis": "No retained article PDF: official request yielded security HTML and author route failed robots verification. Browser-viewed article roster verified separately; no document holding or reading claimed.",
+      "evidence_path": "research/reviews/ford2025_and_mccullough1949_evidence_2026-10-01.json",
+      "evidence_sha256": "c042b3a9fd8ebeef748fb4edf173224b295b5fd8c7e354d1cddb95a4a74417da"
+    },
+    {
+      "id": "IBI-DOC-MCC1949-FIRST-20261001",
+      "source_id": "SRC-MCCULLOUGH1949-THESIS",
+      "capture_id": "CAP-82A7ACC99C43",
+      "document_form": "scan",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "ocr",
+      "text_artifact_path": "data/private/research-work/ford2025-thus-oath-2026-10-01/thesis-discovery-text.json",
+      "text_artifact_sha256": "9c6ad5888de70d67b6a3607626faa78b1bcb7e1e4773f6f323a5564a5227ffaf",
+      "object_extraction": "partial",
+      "document_sha256": "ceb9cb14d803ad2fc30aec93f38387c519cc4be618d38ae91c41d4beac42a05c",
+      "basis": "242-page retained scan with blank versos; contents through final alphabet table p112/PDF237 present. Full PDF discovery OCR processed, relevant pages visually checked. OCR unsuitable for native readings and not accepted as historical evidence. Four text units only, one partly checked translation; remainder pending.",
+      "evidence_path": "research/reviews/ford2025_and_mccullough1949_evidence_2026-10-01.json",
+      "evidence_sha256": "c042b3a9fd8ebeef748fb4edf173224b295b5fd8c7e354d1cddb95a4a74417da",
+      "extraction_path": "data/private/manifests/mccullough1949_first_texts_2026-10-01.jsonl",
+      "extraction_sha256": "a9fa0692ac3291a74b2487dea53042ae1fca02590b3e37dd8ac9fbf32b817d5a"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import sqlite3, tempfile, unittest
+import hashlib, sqlite3, tempfile, unittest
 from pathlib import Path
 from bowl_index.db import connect, migrate
 from bowl_index.scholarship import (
@@ -121,6 +121,34 @@ class ScopeTests(unittest.TestCase):
     def test_the_decade_series_reports_both_lines(self):
         rows = decade_series(self.conn)
         self.assertTrue(all({'decade','held','field_control_list'} <= set(r) for r in rows))
+
+    def test_retained_security_response_does_not_count_as_a_held_article(self):
+        from bowl_index.documents import apply_document_assessments
+        content = b'<html>Security challenge</html>'
+        digest = hashlib.sha256(content).hexdigest()
+        self.conn.execute(
+            "INSERT INTO captures(id,source_id,url,retrieved_at,sha256,mime_type,"
+            "byte_length,storage_path) VALUES (?,?,?,?,?,?,?,?)",
+            ('CAP-CHALLENGE','SRC-1','https://example.org/article.pdf',
+             '2026-10-01T00:00:00+00:00',digest,'text/html',len(content),'challenge.html'))
+        self.conn.commit()
+        evidence = self.root/'evidence.json'; evidence.write_text('{"result":"security page"}')
+        apply_document_assessments(self.conn, {
+            'schema_version':1,'reviewed_by':'Test','reviewed_at':'2026-10-01T01:00:00+00:00',
+            'entries':[{'id':'DOC-NO-ARTICLE','source_id':'SRC-1',
+                        'document_form':'no_document','extent':'citation_only',
+                        'inspection':'not_inspected','text_state':'none','object_extraction':'none',
+                        'basis':'Retained HTML is a security response, not the article.',
+                        'evidence_path':'evidence.json',
+                        'evidence_sha256':hashlib.sha256(evidence.read_bytes()).hexdigest()}],
+        }, self.root)
+        self.assertFalse(works(self.conn)[0]['document_held'])
+        self.assertEqual(scholarship_metrics(self.conn)['works_with_a_held_document'], 0)
+        from bowl_index.private_projection import PrivateResearchProjection
+        reader = PrivateResearchProjection(self.conn, capture_base='/api/private-captures/')
+        self.assertNotIn('SRC-1', reader.capture_links)
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM captures').fetchone()[0], 1)
+        self.assertEqual(self.conn.execute('SELECT sha256 FROM captures').fetchone()[0], digest)
 
 if __name__=='__main__':
     unittest.main()

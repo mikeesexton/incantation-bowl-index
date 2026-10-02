@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T01:53:06+00:00",
+  "evidence_path": "research/reviews/ford2025_and_mccullough1949_evidence_2026-10-01.json",
+  "evidence_sha256": "c042b3a9fd8ebeef748fb4edf173224b295b5fd8c7e354d1cddb95a4a74417da",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-FORD2025-ACQUISITION-20261001",
+      "source_id": "SRC-FORD2025-THUS-OATH",
+      "replacement_source_id": null,
+      "before": {
+        "source_type": "article",
+        "title": "The Exorcistic Formula “Thus Is This Oath”",
+        "authors": "James Nathan Ford",
+        "issued_year": 2025,
+        "container_title": "Jewish Thought 6",
+        "publisher": "Goldstein-Goren International Center for Jewish Thought, Ben-Gurion University of the Negev",
+        "url": "https://in.bgu.ac.il/en/humsos/goldstein-goren/Jewish%20Magic/JT6ENG%20Ford.pdf",
+        "doi": null,
+        "isbn": null,
+        "citation": "Ford, James Nathan. “The Exorcistic Formula ‘Thus Is This Oath’.” Jewish Thought 6 (2025): 103–161.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Official university-hosted article PDF. Title/author/journal/page span and 2025 imprint checked against actual publication. Front matter declares journal open access and ©All Rights Reserved; open access does not imply public-reuse permission. Article editions, synoptic witness extent and partly preserved contoured letters require actual-page capture and separate checks."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "The Exorcistic Formula “Thus Is This Oath”",
+        "authors": "James Nathan Ford",
+        "issued_year": 2025,
+        "container_title": "Jewish Thought 6",
+        "publisher": "Goldstein-Goren International Center for Jewish Thought, Ben-Gurion University of the Negev",
+        "url": "https://in.bgu.ac.il/en/humsos/goldstein-goren/Jewish%20Magic/JT6ENG%20Ford.pdf",
+        "doi": "10.64166/p42kt997",
+        "isbn": null,
+        "citation": "Ford, James Nathan. “The Exorcistic Formula ‘Thus Is This Oath’.” Jewish Thought 6 (2025): 103–161.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Actual primary article accessed in browser; twenty-witness roster verified, no readings captured. Local official-route CAP-508E4561B8FF is an HTML security response, NOT the article/PDF. Author-upload independent route not fetched because robots.txt could not be verified. No retained article PDF. DOI checked against author university publication portal; seven full editions plus twenty synoptic witnesses declared in actual article. Open-access label does not clear public reuse; contoured doubtful letters require separately checked capture."
+      },
+      "rationale": "Distinguish browser-accessible primary article from failed local acquisition; add authoritative DOI. Retain original registration snapshot in immutable ledger."
+    }
+  ]
+}

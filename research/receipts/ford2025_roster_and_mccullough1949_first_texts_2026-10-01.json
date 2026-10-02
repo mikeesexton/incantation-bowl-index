@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "checkpoint": 10,
+  "created_at": "2026-10-02T02:03:15+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "e2075b028aded393e6e05c454716b9912ab0e448f321d69d08cd96fbd5b92fad",
+  "corpus_after": "476e04af09e8c5b0e97268dc06ef60b2acf25a47f944fe7e9f94f1ac54e9924c",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "source_appearances_added": 23,
+  "ford_witnesses": 20,
+  "new_designation_candidates": 19,
+  "text_rows_by_type_language": {
+    "translation / English": 2,
+    "transliteration / Mandaic": 2
+  },
+  "separate_source_checks_added": 3,
+  "partial_source_checks_added": 1,
+  "reading_characters_added": 3471,
+  "private_page_images_added": 7,
+  "publication_assessments_added": 22,
+  "document_assessments_added": 2,
+  "source_corrections_added": 2,
+  "network_response_captures_added": 1,
+  "actual_new_article_pdfs_captured": 0,
+  "source_records_added": 1,
+  "leads_added": 3,
+  "ford_holding": "HTML security-response bytes retained as acquisition evidence; source current assessment citation-only. Failed response does not count as held article or replace default edition link. No access control bypass.",
+  "thesis_extraction": "DA4 full provided English translation captured, partly checked (one magic token); bottom native line26 and DA5 pairedline12clause checked. Full native editions/DA5 English and plates pending.",
+  "concordance": "DA5 supplies Hadriel/Hasdiel passage, weakening old DA4 hypothesis for931.4.2/1967BowlD. No accession alias merge; source spelling differences retained.",
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 996,
+    "appearance_bearing_sources": 38,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-795E719C624E",
+      "SRC-8FA39ADCBF5F",
+      "SRC-D721A94FA3B2",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES"
+    ]
+  },
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Complete held McCullough1949 DA4/DA5 Hebrew-letter Mandaic editions and DA5 English translation; preserve interlinear additions, breaks, charaktêres and source uncertainty. Separately resolve DA4 Latin magic token TUIIN at printed29/PDF69 before claiming full check.",
+    "Verify931.4.2/1967BowlD against DA5 using accession-bearing original1967 book or museum register. Actual thesis DA5line12 supplies clothing passage; earlierDA4 hypothesis is weakened, no merge.",
+    "Ford2025 full texts remain unheld despite browser-accessible article: official local request is security HTML; author-upload route robots unverifiable. Keep lawful acquisition lead open and preserve contoured doubtful letters when a permitted PDF arrives. Twenty-witness roster verified, seven full editions and synoptic readings still uncaptured.",
+    "Continue remaining review/Miami/Hornkohl-Khan/Juusola holdings, BM91722/094M and Ford1:8 pointers, frozen NLI/exhibition concordances. MS1928/20 long divorce quotation remains unassigned."
+  ],
+  "agent": "Codex",
+  "task_ids": [
+    "TEXT-004",
+    "TEXT-009",
+    "TEXT-010"
+  ],
+  "backup_path": "data/private/backups/before-ford2025-thus-oath-20261002T013546Z.sqlite3",
+  "corpus_changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 23
+    },
+    {
+      "table": "appearances",
+      "added": 23
+    },
+    {
+      "table": "captures",
+      "added": 1
+    },
+    {
+      "table": "document_assessments",
+      "added": 2
+    },
+    {
+      "table": "identifiers",
+      "added": 19
+    },
+    {
+      "table": "leads",
+      "added": 3
+    },
+    {
+      "table": "media",
+      "added": 7
+    },
+    {
+      "table": "objects",
+      "added": 19
+    },
+    {
+      "table": "publication_assessments",
+      "added": 22
+    },
+    {
+      "table": "source_corrections",
+      "added": 2
+    },
+    {
+      "table": "sources",
+      "added": 1
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 4
+    },
+    {
+      "table": "texts",
+      "added": 4
+    }
+  ],
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0010_ford_roster_and_thesis_texts.json",
+      "sha256": "ba3f7a5cce416480302b9268c02c5ed4e64c3e444aea6f052ed21d5378477c37"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/acquisition_attempt01.json",
+      "sha256": "9403eb68ac4a48b138d953759024d3a9692b984b14b8ca0fb266d5d9d12a8aa8"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/batch_counts.json",
+      "sha256": "80800a0cfa8403af1cb9156cac35d45caded4f9884e349c9957366fce97c6054"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/capture_request.json",
+      "sha256": "9fce0c09e986585ec0bb5ca63d94b74706e35a265955b15d9e5ac586018b3b51"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/item_inventory.json",
+      "sha256": "99f50a1c1f8329564a07542aaf449c7d0182404be959171ba5c42d981ab48ae3"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/metadata.json",
+      "sha256": "84ffa1ddbfc956ca5cf427605b74209e45f8caf9a3752db5558572ebac2d4891"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/production-apply.json",
+      "sha256": "6f4e842cda1a5fed55d06b91afd734ec486525e01edb40b568aa7aead729e85b"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/production-replay.json",
+      "sha256": "1dddd95a088e3ce4067a17b6eeb76f482365cb3002aeae6dc802a54d7dd8f81c"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/production-verification.json",
+      "sha256": "f5a94e280654cdbdf1c9c6d8268ad64cfd0547bf3b04b91a62faa94420c86fa2"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/proof_inventory_production.json",
+      "sha256": "357eca6d1e0a96b68568ac889c104307d91110bfa887482673f11ed37b6f05f5"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/proof_inventory_trial.json",
+      "sha256": "cd372729575e302dbef328dba40247a5a758dd2d71c942b36b12588d741fd1be"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/replay-verification.json",
+      "sha256": "86a4090182066610a9d1192b4ecc5fc9f5b06fd50569083d736c328f7ca060e9"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/source_checks02.json",
+      "sha256": "08e72812ce9e074354a0a21075ac8aca0fb36972a3a6b0524398ee34945a663e"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/thesis-discovery-text.json",
+      "sha256": "9c6ad5888de70d67b6a3607626faa78b1bcb7e1e4773f6f323a5564a5227ffaf"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/trial-apply.json",
+      "sha256": "ab3f8d4b48b5a0702847ec8d7217c933e964afd19e0860ee91f04394bfd735cd"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/trial-first-failure.json",
+      "sha256": "db81fc744d1bd6bd1e5d867e2f99b4924954637f58ffbcb1bda3dbac2f0bbe46"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/trial-replay.json",
+      "sha256": "77559d379ff9b6a42b265e5601d6effa60d66b34bb2324951e0ec314e3ef1048"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/trial-verification.json",
+      "sha256": "14fb91767fef445560a44eeda4fc97b32c7b6f7ef326e09b17420e3487c3063d"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/apply.py",
+      "sha256": "d43d7165e2409e154109fe6537e2a4038d5317b902c1d5b063d1879849f812c6"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/prepare.py",
+      "sha256": "7d49cf7bc931d70cfa7022d9901bc0f98e2057e37f51eee44bc1ebd1023f4a85"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/source_check.py",
+      "sha256": "93020bfaf970e3d4032f9c515b11e3c73b8e3d6c48a6127ca30e3636162cd79a"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/verify.py",
+      "sha256": "919f2739c2eba200dd6625135a55353a6bcc3fe541920ee5cec795ee29252680"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA4-bottom-transliteration-capture01.txt",
+      "sha256": "29d0d12eb48c196c5d7dfb1d4a750f4f1c641a8acbec763f167d1999a2205a88"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA4-translation-capture01.txt",
+      "sha256": "3d70cacde7b595089646d9735e23772a98593ca80efd7d3a786abba613ef5bad"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA5-clothe-translation-capture01.txt",
+      "sha256": "62b3dd71ebb4289fe457ec3e0ae55cdd6308a04f02a37357af5300caf8e0e9b4"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA5-clothe-transliteration-capture01.txt",
+      "sha256": "e98b8354c926b72696a06a1603bdc62530a499d0ad787554ca54690f563e9739"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA4-BOTTOM-transliteration-proof03.txt",
+      "sha256": "29d0d12eb48c196c5d7dfb1d4a750f4f1c641a8acbec763f167d1999a2205a88"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA4-translation-proof03.txt",
+      "sha256": "3d70cacde7b595089646d9735e23772a98593ca80efd7d3a786abba613ef5bad"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA5-CLOTHE-translation-proof03.txt",
+      "sha256": "62b3dd71ebb4289fe457ec3e0ae55cdd6308a04f02a37357af5300caf8e0e9b4"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/DA5-CLOTHE-transliteration-proof03.txt",
+      "sha256": "e98b8354c926b72696a06a1603bdc62530a499d0ad787554ca54690f563e9739"
+    },
+    {
+      "path": "data/private/manifests/mccullough1949_first_proofreading_2026-10-01_SRC-MCCULLOUGH1949-THESIS_production.json",
+      "sha256": "4468cdc9f6f6479fd221da3bc10e645d30c194752090b15d682d198b9fa0efd0"
+    },
+    {
+      "path": "data/private/manifests/mccullough1949_first_proofreading_2026-10-01_SRC-MCCULLOUGH1949-THESIS_trial.json",
+      "sha256": "3c13623cdf8b33d5b5481d0f4b6faad6da7e0f7cd6f7a0376f3cbe249d4971df"
+    },
+    {
+      "path": "data/private/manifests/mccullough1949_first_texts_2026-10-01.jsonl",
+      "sha256": "a9fa0692ac3291a74b2487dea53042ae1fca02590b3e37dd8ac9fbf32b817d5a"
+    },
+    {
+      "path": "research/sources/ford_2025_thus_oath_2026-10-01.jsonl",
+      "sha256": "87c49231b5dd5f458c24a4b9ebdbad6810a8bf84b495f1dd629647afdf70ef0e"
+    },
+    {
+      "path": "research/reviews/ford2025_and_mccullough1949_appearances_2026-10-01.jsonl",
+      "sha256": "0285fc8d7c7a9d885b11412628779e9b81428f53beecaf22136091eb0a7e6359"
+    },
+    {
+      "path": "research/reviews/ford2025_and_mccullough1949_publication_references_2026-10-01.json",
+      "sha256": "ee729c34e02cc77cb05866b7b4c829bb898eff79eb694e408c89bd2a0d515066"
+    },
+    {
+      "path": "research/reviews/ford2025_and_mccullough1949_evidence_2026-10-01.json",
+      "sha256": "c042b3a9fd8ebeef748fb4edf173224b295b5fd8c7e354d1cddb95a4a74417da"
+    },
+    {
+      "path": "research/reviews/ford2025_source_acquisition_correction_2026-10-01.json",
+      "sha256": "c07bce32b8b6ac0edaa25e2ff8e4dc69ffb21d02d711cce83b205ac03cd73e7d"
+    },
+    {
+      "path": "research/reviews/mccullough1949_extraction_metadata_correction_2026-10-01.json",
+      "sha256": "ce88883de4357d7e91fc445b14f99f5ebb099de4536eb10d2fa2ff67e2964507"
+    },
+    {
+      "path": "research/reviews/ford2025_and_mccullough1949_document_assessments_2026-10-01.json",
+      "sha256": "504a6a6678dd552418d453d72e088df6a362a84690e62933a846e01f8dbe616b"
+    },
+    {
+      "path": "research/leads/ford2025_and_mccullough1949_followups_2026-10-01.jsonl",
+      "sha256": "0ac8e1538ba5feef276c34f9f0bb878002100d168920b72e6872e3c1e460ae01"
+    },
+    {
+      "path": "research/receipts/mccullough1949_first_private_pages_2026-10-01.json",
+      "sha256": "ad258d5b7e407f428cff614f9a330aa55e148bde6c63c33bdc1018bf39a3737c"
+    },
+    {
+      "path": "data/private/research-work/ford2025-thus-oath-2026-10-01/reader-verification.json",
+      "sha256": "543bbd46ac94c7a1204402bca81168064c40fdd339506b4b370ba910da9168da"
+    }
+  ],
+  "validation": {
+    "copied_database_rehearsal": "pass",
+    "six_trial_and_production_immutable_replays_unchanged": true,
+    "all_preexisting_rows_identical_except_audited_thesis_metadata": true,
+    "source_originals_retained": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "376 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1670,
+      "all_media_rows_present": 1329,
+      "local_image_rows": 969,
+      "new_text_hashes_match": 4,
+      "new_image_hashes_match": 7,
+      "all_source_capture_hashes_match": 71,
+      "corrected_thesis_capture_source_and_book_link_absence_verified": true,
+      "scope": "Full private Mike projection; no public release or remote deployment."
+    }
+  }
+}

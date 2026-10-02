@@ -16,6 +16,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .db import PROJECT_ROOT
+from .documents import source_document_status
 from .publications import current_registry, publication_keys
 
 SCHOLARSHIP_TYPES = ("book", "article", "chapter", "thesis", "catalogue", "excavation_report")
@@ -160,6 +161,11 @@ def works(conn):
     """Every scholarship record, with its scope, holdings and object count."""
     held = {row[0] for row in conn.execute(
         "SELECT DISTINCT source_id FROM captures WHERE source_id IS NOT NULL")}
+    # Retained response bytes can be a challenge page rather than the work.
+    # A current no-document assessment takes precedence over that capture.
+    held.difference_update(source_id for source_id, assessment in
+                           source_document_status(conn).items()
+                           if assessment["extent"] == "citation_only")
     counts = publication_object_counts_by_source(conn)
     reviewed = current_scopes(conn)
     rows = []

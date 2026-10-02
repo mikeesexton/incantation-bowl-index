@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T01:53:06+00:00",
+  "ford": {
+    "source_id": "SRC-FORD2025-THUS-OATH",
+    "primary_article_url": "https://in.bgu.ac.il/en/humsos/goldstein-goren/Jewish%20Magic/JT6ENG%20Ford.pdf",
+    "metadata_authority": "https://cris.biu.ac.il/en/publications/the-exorcistic-formula-thus-is-this-oath/",
+    "doi": "10.64166/p42kt997",
+    "roster_locator": "printed104/PDF8 footnote3; collection abbreviations printed103/PDF7 footnote1",
+    "witnesses": [
+      "PC 131",
+      "JNF 46",
+      "T 27987",
+      "JNF 59",
+      "Wolfe 111",
+      "HC 11",
+      "JNF 47",
+      "JNF 49",
+      "Deutsch 2",
+      "BPC 13",
+      "GC.MBL 000158",
+      "SD 26",
+      "JNF 93",
+      "JNF 48",
+      "DS 65",
+      "HC 12",
+      "SD 34A",
+      "DS 1",
+      "JNF 84",
+      "SD 44"
+    ],
+    "pdf_capture_count": 0,
+    "network_attempts": [
+      {
+        "attempt": 1,
+        "url": "https://in.bgu.ac.il/en/humsos/goldstein-goren/Jewish%20Magic/JT6ENG%20Ford.pdf",
+        "retrieved_at": "2026-10-02T01:35:54+00:00",
+        "capture_id": "CAP-508E4561B8FF",
+        "mime_type": "text/html",
+        "byte_length": 2555,
+        "sha256": "4e3b07fd89526c0b58d29f0bfdca725ac85b47014a64dbfab03d23ca4601dac0",
+        "result": "HTML interstitial security challenge, not PDF",
+        "robots": "Built-in project verification allowed initial request. Security challenge not executed or bypassed.",
+        "next_route": "Inspect DOI/current publisher and independent publicly uploaded author copy; only robots-permitted independent access."
+      },
+      {
+        "attempt": 2,
+        "url": "https://www.researchgate.net/publication/profile/James-Ford-4/publication/399182798_The_Exorcistic_Formula_Thus_Is_This_Oath/links/6953af0ea1fd0179890ed21f/The-Exorcistic-Formula-Thus-Is-This-Oath.pdf",
+        "result": "robots.txt could not be verified; no request to file performed",
+        "landing_page": "https://www.researchgate.net/publication/399182798_The_Exorcistic_Formula_Thus_Is_This_Oath",
+        "author_upload": "Landing page identifies content uploaded by James Nathan Ford; does not establish reuse license."
+      }
+    ],
+    "remaining": "Acquire permitted PDF or researcher-supplied authorized copy; separately preserve contoured doubtful letters before transcription claims. No bypass attempted."
+  },
+  "thesis": {
+    "source_id": "SRC-MCCULLOUGH1949-THESIS",
+    "capture_id": "CAP-82A7ACC99C43",
+    "sha256": "ceb9cb14d803ad2fc30aec93f38387c519cc4be618d38ae91c41d4beac42a05c",
+    "pdf_pages": 242,
+    "contents_pdf_page": 9,
+    "final_numbered_page": 112,
+    "final_numbered_pdf_page": 237,
+    "visually_inspected_pdf_pages": [
+      9,
+      27,
+      63,
+      67,
+      69,
+      71,
+      73,
+      155,
+      163,
+      237
+    ],
+    "reported_museum_designations": [
+      "DA4",
+      "DA5"
+    ],
+    "original_1967_book_held": false,
+    "extraction": "One complete provided DA4 English translation with partial check for one Latin magic token; DA4 bottom native line26 and DA5 paired line12 clause separately checked. Remaining native editions, complete DA5 translation, plates and commentary pending.",
+    "concordance": "Hadriel/Hasdiel passage occurs in DA5 line12, not DA4. Saar2017 p196fn115 ties analogous passage to931.4.2/1967BowlD. Orthographic differences retained. This supports a DA5 candidate for accession investigation; no merge or accession identifier attached.",
+    "scan_ocr_warning": "Discovery OCR misread acquisition date as1951; actual p8/PDF27 visibly1931. OCR never ingested as historical claim."
+  },
+  "whole_native_inscriptions_captured": 0,
+  "complete_case_investigations_claimed": 0,
+  "rights_approvals": 0
+}

@@ -9,6 +9,7 @@ scholar and public builds continue to use ``Projection`` and fail closed.
 from pathlib import Path
 
 from .db import PROJECT_ROOT
+from .documents import source_document_status
 from .projection import Projection
 from .proofreading import current_text_reviews
 
@@ -25,10 +26,13 @@ class PrivateResearchProjection(Projection):
         self.capture_base = capture_base
         self.capture_links = {}
         if capture_base or capture_urls:
+            no_document = {source_id for source_id, assessment in
+                           source_document_status(conn).items()
+                           if assessment["extent"] == "citation_only"}
             for row in conn.execute(
                 "SELECT id,source_id FROM captures ORDER BY retrieved_at,id"
             ):
-                if row["source_id"]:
+                if row["source_id"] and row["source_id"] not in no_document:
                     url = (capture_urls or {}).get(row["id"])
                     if url is None and capture_base:
                         url = capture_base + row["id"]
