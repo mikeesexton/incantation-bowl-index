@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T05:04:21+00:00",
+  "entries": [
+    {
+      "id": "IBI-DOC-EXACT20261002-3C4294DDB367",
+      "source_id": "SRC-3C4294DDB367",
+      "capture_id": "CAP-EA64131E5F1D",
+      "supersedes_id": "IBI-DOC-MORIGGI2014-20260911",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+      "extraction_path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-3C4294DDB367-extraction-index-production.json",
+      "extraction_sha256": "0a6d2109b2d45c8d581b8f568b4db945938460324296c62432176ba512635458",
+      "evidence_path": "research/reviews/exact_schoyen_jnf_evidence_2026-10-02.json",
+      "evidence_sha256": "b1e097787f6bca0a72df509f49d6b509d25c332b9b875d993fb3d533b06c18d8",
+      "basis": "Complete held PDF unchanged; prior main catalogue/NFP enumeration and all earlier extraction artifacts retained in union index. Exact contextual references newly inspected. One MS1928/19 contextual reference newly indexed; main49bowl enumeration is not complete comparative-witness extraction."
+    },
+    {
+      "id": "IBI-DOC-EXACT20261002-8A145FAA2EBB",
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_id": "CAP-2861B06070B4",
+      "supersedes_id": "IBI-DOC-FM2020-20260911",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "extraction_path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-8A145FAA2EBB-extraction-index-production.json",
+      "extraction_sha256": "666a0229fcebfaa81c11162715cbd654a00558996586878ff862699e91b47711",
+      "evidence_path": "research/reviews/exact_schoyen_jnf_evidence_2026-10-02.json",
+      "evidence_sha256": "b1e097787f6bca0a72df509f49d6b509d25c332b9b875d993fb3d533b06c18d8",
+      "basis": "Complete held PDF unchanged; prior main catalogue/NFP enumeration and all earlier extraction artifacts retained in union index. Exact contextual references newly inspected. Four short native JNF formulas captured; additional comparative bowl quotations remain outside this bounded batch. Prior complete designation enumeration applies to main68catalogue entries, not every comparative bowl."
+    },
+    {
+      "id": "IBI-DOC-EXACT20261002-A90AB34CA3FE",
+      "source_id": "SRC-A90AB34CA3FE",
+      "capture_id": "CAP-E1FB74EF0432",
+      "supersedes_id": "IBI-DOC-KEDAR2019-DISSERTATION-20260917",
+      "document_form": "born_digital",
+      "extent": "complete",
+      "inspection": "digital",
+      "text_state": "extractable",
+      "object_extraction": "partial",
+      "document_sha256": "8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+      "extraction_path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-A90AB34CA3FE-extraction-index-production.json",
+      "extraction_sha256": "c14064796883efab2de867a6674d6c21f712d5ea2cd154393648983ba3204c8a",
+      "evidence_path": "research/reviews/exact_schoyen_jnf_evidence_2026-10-02.json",
+      "evidence_sha256": "b1e097787f6bca0a72df509f49d6b509d25c332b9b875d993fb3d533b06c18d8",
+      "basis": "Complete held PDF unchanged; prior main catalogue/NFP enumeration and all earlier extraction artifacts retained in union index. Exact contextual references newly inspected. Six identical extracted page summaries corrected only for unprinted caption residue; full page proofreading and broader dissertation sample remain partial."
+    }
+  ]
+}

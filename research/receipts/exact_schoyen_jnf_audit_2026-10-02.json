@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "checkpoint": 17,
+  "created_at": "2026-10-02T05:10:03+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "e13af867956576b0fd4843e3b8cfc8b7229dc7df355cae3a8e8556e56d4cceb1",
+  "corpus_after": "3a427ba58f9ca75edbfa1eec92eb9c0f75d31a5681c2d80c63be21112b63395e",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 5,
+  "linked_priority_identities_now": 825,
+  "unlinked_priority_identities_now": 227,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 4,
+  "new_text_characters": 36,
+  "source_checks_added": {
+    "checked": 4,
+    "partial_existing_summary_corrections": 6
+  },
+  "source_appearances_added": 6,
+  "new_objects": 0,
+  "private_page_images_added": 14,
+  "unique_source_pages_used": 5,
+  "publication_assessments_added": 10,
+  "document_assessments_added": 3,
+  "identity_merges": 0,
+  "all_preexisting_rows_except_six_audited_texts_identical": true,
+  "all_six_original_rows_retained_in_immutable_before_snapshots": true,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "edition_text_rows": 1038,
+  "checked_edition_text_rows": 918,
+  "partial_edition_text_rows": 118,
+  "unreviewed_edition_text_rows": 2,
+  "total_text_rows": 1703,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1031,
+    "appearance_bearing_sources": 41,
+    "registered_pdf_sources": 44
+  },
+  "allowance_resets_used": 0,
+  "scope": "Five new frozen scholarly references, four explicitlyattributed short nativeformula excerpts, and removal ofunprintedDavidovitz2caption residue with originalsretained. Mainentries/photographs keptseparate fromcomparisons; no copiedIBC2edition/script/measurements. Threeunion documentassessments staypartial forbroader comparativewitnesscoverage; prior maincatalogueenumeration retained. No casecompletion/nonpublication/scholar adjudication.",
+  "next_actions": [
+    "Continueheld Hilprecht2020otherdirectnamedquotations aroundprinted14–17 (DS34pairedpassage, JNF49/245names,JNF40forms), inspectexactexisting recordsfirst.",
+    "Investigate remaining22nonNLI unlinkeddesignations and205NLI actualedition/imageconcordances ratherthanrepeatcataloguesilence.",
+    "Complete current118partial/2unreviewededition rows and45frozen native-script gaps; source-wisecomparativequoteinventoryremainsopen.",
+    "Lawful Segal2000, Bohakp186/Kelseyp38, originalHilprecht40c2005edition/photos andlaterSchøyenMandaic/Pahlavieditions remainexactacquisition/manual-libraryrequirements."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/campaign_case_progress_checkpoint17.json",
+    "sha256": "d960f1cf4edaab48af729d04a287ed10e7c7d9e1620bf187d4034173c285ba6b"
+  },
+  "cases_with_appended_source_work_this_checkpoint": 10,
+  "case_history": "Full249-case current index andspecificroutes retain allattempts; no casecomplete.",
+  "protected_payloads": "Ignoredprivate vault/manifests only; receiptcontainscounts,routesandhashes. No publicrelease,push,purchase,outboundcontact orreset.",
+  "changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 6,
+      "changed_existing": []
+    },
+    {
+      "table": "appearances",
+      "added": 6,
+      "changed_existing": []
+    },
+    {
+      "table": "document_assessments",
+      "added": 3,
+      "changed_existing": []
+    },
+    {
+      "table": "media",
+      "added": 14,
+      "changed_existing": []
+    },
+    {
+      "table": "publication_assessments",
+      "added": 10,
+      "changed_existing": []
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 10,
+      "changed_existing": []
+    },
+    {
+      "table": "texts",
+      "added": 4,
+      "changed_existing": [
+        "TXT-1A7F66BCFD5C",
+        "TXT-5F6ACD6D75B3",
+        "TXT-B40E2CA783FE",
+        "TXT-CB7511BD7963",
+        "TXT-09DFB4F94E42",
+        "TXT-DFABFFABDA03"
+      ]
+    }
+  ],
+  "validation": {
+    "rehearsal": true,
+    "five_manifest_replays_digest_unchanged": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "381 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1703,
+      "all_media_rows_present": 1388,
+      "local_image_rows": 1028,
+      "new_checked_formula_hashes_and_attributions_match": 4,
+      "corrected_partial_summary_hashes_match": 6,
+      "original_six_unprinted_label_rows_preserved_in_history": true,
+      "new_image_hashes_match": 14,
+      "all_source_capture_hashes_match": 72,
+      "all_six_new_designated_appearances_present": true,
+      "IBC2_text_not_assigned_to_MS1928_19": true,
+      "previous_Miami_checked_corrections_retained": true,
+      "corrected_thesis_source_verified": true,
+      "scope": "Full local private Mike projection. Four two-word formulas and contextual references do not supply full editions; broader source comparison extraction remains partial."
+    },
+    "older_caption_import_replay_preserves_corrections": true
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/exact_schoyen_jnf_2026-10-02_production.jsonl",
+      "sha256": "b595eff558fa98ae34113f5f0b72e3ad36852d673b17bf36d36be183206fcb2e"
+    },
+    {
+      "path": "data/private/manifests/exact_schoyen_jnf_2026-10-02_trial.jsonl",
+      "sha256": "b595eff558fa98ae34113f5f0b72e3ad36852d673b17bf36d36be183206fcb2e"
+    },
+    {
+      "path": "data/private/manifests/exact_schoyen_jnf_document_2026-10-02_trial.json",
+      "sha256": "579c6e0cb5a3867ff1fac618da52889207cead53da39a6aac93498785f03f8ff"
+    },
+    {
+      "path": "data/private/manifests/hilprecht_formula_proof_2026-10-02_production.json",
+      "sha256": "4375488b4927c5857197d7c1c339e8fc6ae4f9bc52374f79a88a5d3e5ca771a3"
+    },
+    {
+      "path": "data/private/manifests/hilprecht_formula_proof_2026-10-02_trial.json",
+      "sha256": "5f9b42cda11b30addfdea60db6754fad3eeac3575a5be3566d5764a32e53b8ee"
+    },
+    {
+      "path": "data/private/manifests/kedar_caption_proof_2026-10-02_production.json",
+      "sha256": "b16cd36cd39151cde95aeba133ffb8e1c880eae06f25862e8209a33629b5f456"
+    },
+    {
+      "path": "data/private/manifests/kedar_caption_proof_2026-10-02_trial.json",
+      "sha256": "b16cd36cd39151cde95aeba133ffb8e1c880eae06f25862e8209a33629b5f456"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0017_exact_schoyen_jnf_contexts.json",
+      "sha256": "fd0c2b11325c309e1ce326850934fb1963f80623d749a7b7ad02b966c6ad2c1d"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF125-kedar-caption-corrected.txt",
+      "sha256": "4f14606a7ca861da525030708a19b6456e4630a1853da2bb0186eab0e4b9c939"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF149-capture01.txt",
+      "sha256": "5f0dc526ee024dba980bc3df328cbebf7f7cc0299c1c0967b14aa955301f62ec"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF149-kedar-caption-corrected.txt",
+      "sha256": "4f14606a7ca861da525030708a19b6456e4630a1853da2bb0186eab0e4b9c939"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF149-proof02.txt",
+      "sha256": "5f0dc526ee024dba980bc3df328cbebf7f7cc0299c1c0967b14aa955301f62ec"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF152-capture01.txt",
+      "sha256": "7aeb0d238b717d2ddfa150c6f1aebab182a440bea4639369114d311f9e6a84a0"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF152-kedar-caption-corrected.txt",
+      "sha256": "4f14606a7ca861da525030708a19b6456e4630a1853da2bb0186eab0e4b9c939"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF152-proof02.txt",
+      "sha256": "7aeb0d238b717d2ddfa150c6f1aebab182a440bea4639369114d311f9e6a84a0"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF153-capture01.txt",
+      "sha256": "5f0dc526ee024dba980bc3df328cbebf7f7cc0299c1c0967b14aa955301f62ec"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF153-kedar-caption-corrected.txt",
+      "sha256": "4f14606a7ca861da525030708a19b6456e4630a1853da2bb0186eab0e4b9c939"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF153-proof02.txt",
+      "sha256": "5f0dc526ee024dba980bc3df328cbebf7f7cc0299c1c0967b14aa955301f62ec"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF18-kedar-caption-corrected.txt",
+      "sha256": "4f14606a7ca861da525030708a19b6456e4630a1853da2bb0186eab0e4b9c939"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF188-capture01.txt",
+      "sha256": "7aeb0d238b717d2ddfa150c6f1aebab182a440bea4639369114d311f9e6a84a0"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF188-kedar-caption-corrected.txt",
+      "sha256": "4f14606a7ca861da525030708a19b6456e4630a1853da2bb0186eab0e4b9c939"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/JNF188-proof02.txt",
+      "sha256": "7aeb0d238b717d2ddfa150c6f1aebab182a440bea4639369114d311f9e6a84a0"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-3C4294DDB367-extraction-index-production.json",
+      "sha256": "0a6d2109b2d45c8d581b8f568b4db945938460324296c62432176ba512635458"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-3C4294DDB367-extraction-index-trial.json",
+      "sha256": "7d5528fb34a30800e91af5e43c0ac40937dc3d8489cc619dd87184b057413e30"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-8A145FAA2EBB-extraction-index-production.json",
+      "sha256": "666a0229fcebfaa81c11162715cbd654a00558996586878ff862699e91b47711"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-8A145FAA2EBB-extraction-index-trial.json",
+      "sha256": "c216ffa8a5b6e11607b54db114aa14b57a04cf766b03b3aa748fd25f6866af17"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-A90AB34CA3FE-extraction-index-production.json",
+      "sha256": "c14064796883efab2de867a6674d6c21f712d5ea2cd154393648983ba3204c8a"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/SRC-A90AB34CA3FE-extraction-index-trial.json",
+      "sha256": "2bebf47121017d941f021e5f2caaa08bc8cfe752a121042abb3022d971891810"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/apply_reviews.py",
+      "sha256": "7fcc737b9341a9c4dc9ca86217d8b51934d9d6651bcff825754338f17c4d92ed"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/bounded_web_routes.json",
+      "sha256": "a28fe4b7ae607a3c32ebbcf96b5ee8f32eef8108fd92660b9ba5eb7dc60b4149"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/campaign_case_progress_checkpoint17.json",
+      "sha256": "d960f1cf4edaab48af729d04a287ed10e7c7d9e1620bf187d4034173c285ba6b"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/caption_correction_inventory.json",
+      "sha256": "5f6db39bb1afc5e8a55cae2a40c2a053759d7b354b841d269b5e8d86b5ce9a78"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/case_attempts.json",
+      "sha256": "e2a61ac36058e6a7f899d47dba8a654aeaddab16f85b4fb24ad6fd213c8a415c"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/held_pdf_inventory_checkpoint17.json",
+      "sha256": "20a3fa1728e833f7309279c4c25009370a100ff1af94f24058e84cda6de414db"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/held_sources_inspected.json",
+      "sha256": "6c79c036deb964863fe895a4f8724ec417a6d37eef135ef25765b5af29ac1641"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/hilprecht329-discovery.txt",
+      "sha256": "1eee0ea3d70c75acddb2d787d2aefa5350c9e078cbaf2d729baaf16aeeceded8"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/hilprecht38-discovery.txt",
+      "sha256": "b1e10c769024caf2f567047df26fae4b64ce6b6d031fe08bae3b7d695a5f31d3"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/hilprecht39-discovery.txt",
+      "sha256": "e4510f4e452fd4bfcbddf505c91dc61b33b16864754993bcfeaaf8d93493b8f5"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/hilprecht40-discovery.txt",
+      "sha256": "8183b3847fa2d61f0165cc9830d0d2ef31d7b001286c04dbbb389cc9560f92a2"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/hilprecht41-discovery.txt",
+      "sha256": "a00abd62e86cbef70d7d397a4926f5d8602009ff71fdf19da627caea85e9b91d"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/item_inventory.json",
+      "sha256": "9f1de787a5a3244573b3ece38a477c4aacae486267372eca9d41aed5d8d767a5"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/metadata.json",
+      "sha256": "4c2b3c7151ced2ea1411d461610e833c4f927053facda181593fdad05c8ac759"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/moriggi222-discovery.txt",
+      "sha256": "69cbf40c55404b008459e306a95873e579c03c2238b15599cc904964dd135034"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/moriggi223-discovery.txt",
+      "sha256": "7267eb3cebea65120a792da66b046bdb997a3b158d6f21d7a15de2ebaf48f451"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/moriggi224-discovery.txt",
+      "sha256": "0794528918f2eda7e6fbe89de123050fe95f71c69b0e7f3effddda9d88d3c986"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/navon145-discovery.txt",
+      "sha256": "4a4903b2a372ea5c1dc236cd9d410b3bea48fd6f7cdc9185ec87684a1305ede5"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/prepare.py",
+      "sha256": "67b0bcf34b721d7d4b02d1738c6979bd5fbe1902a76a8ed8ee521a47f06cfa2b"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/production-apply.json",
+      "sha256": "ff0db2f3a70e74242b356168b8291828efb0de36a293290ff2c9dc5f9c848914"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/production-replay.json",
+      "sha256": "44a57eac83938cfe5758dcc3d74d8bfd892727e58ee0c6e976b0c5534cbe2ee3"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/production-verification.json",
+      "sha256": "d84343afc039b90d089264623eb06e55037ec42fc1c87e6a20b13c0805efe5f6"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/proof_inventory_production.json",
+      "sha256": "57fbc16ad0e801eebf0da32f84de6c2610cfdfb017b04ce6a4af45a48f13671a"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/proof_inventory_trial.json",
+      "sha256": "f6cb3f3fe85f6057527816d0cce9ab3cda66108ff6b40f45d233aea0ba76fdfb"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/record_checkpoint.py",
+      "sha256": "d28a394b620897751ea54cd6deb874a349003661ea2d3d61af895a6cc898f7b9"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/source_check.py",
+      "sha256": "780352b05bec8f2b7c0c0710ab36d12de69ec1a27dab2946f5c62da9e52ba75c"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/trial-apply.json",
+      "sha256": "159ef59dcb24633b61791c8b3f8f821d5a6778e78f2b81a96ce042afa79c3130"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/trial-replay.json",
+      "sha256": "0a430e31e065c3985439a82fd7f6e9ed329d73c1d52a958f84b5414ffd30b1d9"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/trial-verification.json",
+      "sha256": "485dafb8598e0783c863fd56011ec79eaf9fee0a169e133055ec0a8db82648a4"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/verify.py",
+      "sha256": "5fbd97c3126dc46f6af73fb0052fab15adc3917ecf56c2a5a2be6e99ebc42fa0"
+    },
+    {
+      "path": "research/receipts/exact_schoyen_jnf_private_images_2026-10-02.json",
+      "sha256": "5fdda5c02035f77d3a6ac93727ef5edad9aded46b6c08a43e624f0170da2316e"
+    },
+    {
+      "path": "research/reviews/exact_schoyen_jnf_document_2026-10-02_production.json",
+      "sha256": "2b3a9b63bf3b8eb2fb34c20306017ac09f6c025d81655df99b581c0e9a3766da"
+    },
+    {
+      "path": "research/reviews/exact_schoyen_jnf_evidence_2026-10-02.json",
+      "sha256": "b1e097787f6bca0a72df509f49d6b509d25c332b9b875d993fb3d533b06c18d8"
+    },
+    {
+      "path": "research/reviews/exact_schoyen_jnf_publication_2026-10-02.json",
+      "sha256": "5be476f153a870473fc994d36bfefef8f34858d4e130ea674f8fb58193c0a475"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/reader-verification.json",
+      "sha256": "f18336510da2a2d3fd4a5ccbd7102c3edb880dbbd4e91040c4d74aa2c9328338"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/verify_reader.py",
+      "sha256": "5113318fbcaec26c4a9a7e2c28cc4ed8a26beed2a360f54857ca3a2d09b3f0e5"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/regenerate.py",
+      "sha256": "a7b63fefd1a19fb5c82b8679f13c341189946910d2e8e26a8a65baaa8153cde9"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/reader-build.log",
+      "sha256": "a7f6237faa6be7b7e8ebcd184d8b0e91203ba2d2e4599221a3fa476277827aed"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/tests-final.log",
+      "sha256": "582f3bf181b9976bdcc527ece279c999d361e1e88d41acbc430818246919fab8"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/reports-final.json",
+      "sha256": "81dc74dbb8a64c4d411dceff1c1c844067b747b99ad391048542532cc8d40c41"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/original-caption-import-replay-probe.jsonl",
+      "sha256": "3fb17971678a499ff7483d2ade84c1408f18b1cf6312230cd01cfae93ba20156"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/old-caption-replay-verification.json",
+      "sha256": "eb8da4aca361f600f1ad4e30ee5ff4a33637e163d98cad80e4d6ecd1d0ec4fb1"
+    }
+  ]
+}

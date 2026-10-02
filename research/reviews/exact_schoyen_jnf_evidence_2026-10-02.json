@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T05:04:21+00:00",
+  "held_sources": {
+    "SRC-8A145FAA2EBB": {
+      "source_id": "SRC-8A145FAA2EBB",
+      "capture_id": "CAP-2861B06070B4",
+      "sha256": "23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "pdf_path": "data/private/archive/sha256/23/23431f46510c5cf729ca35282413e0bedd21be44dbc80e56dcde7c709b9a99d4",
+      "pages": [
+        38,
+        39,
+        40,
+        41,
+        329
+      ]
+    },
+    "SRC-A90AB34CA3FE": {
+      "source_id": "SRC-A90AB34CA3FE",
+      "capture_id": "CAP-E1FB74EF0432",
+      "sha256": "8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+      "pdf_path": "data/private/archive/sha256/8a/8ae23ed1a2fdcbc6faba4f3a43039d2893aa201d9f84fcb2b88b9318c42dc944",
+      "pages": [
+        145
+      ]
+    },
+    "SRC-3C4294DDB367": {
+      "source_id": "SRC-3C4294DDB367",
+      "capture_id": "CAP-EA64131E5F1D",
+      "sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+      "pdf_path": "data/private/archive/sha256/ce/ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+      "pages": [
+        222,
+        223,
+        224
+      ]
+    }
+  },
+  "authoritative_pages_inspected": [
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/pages/hilprecht38.png",
+      "sha256": "0ab6a75d246a601ad593ae9b5d53c594dee370988ef39c80e84e668032cd7a37"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/pages/hilprecht40.png",
+      "sha256": "d7b4a77653f7078bf9a27306f2e64ab37a6625e4a29f1dc273feea94b290f943"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/pages/hilprecht41.png",
+      "sha256": "cc076ff24239a91d89273b353f37a8708d3b237ff41da8fd50125b007d79cb25"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/pages/navon145.png",
+      "sha256": "9a749b21f144ef6722bd952f06dfed3a14d287b73d375e5c83a69f6377ddea42"
+    },
+    {
+      "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/pages/moriggi223.png",
+      "sha256": "778a1b5108debef77a7b5e206a6918ec3cccd097b00ad1fa1b4eb8ad37c83578"
+    }
+  ],
+  "scope": "Exact contextual designations and four two-word Hebrew formula excerpts; six caption residue corrections partial. Main catalogue editions and illustrated bowls are separate from cited comparisons. Complete physical PDFs remain held; whole-source comparative object extraction not established complete.",
+  "source_question": "Moriggi2014 names MS1928/19 as a parallel to IBC2 but supplies no MS1928/19 script or reading. Schøyen catalogue Pahlavi and preliminary-reading report remains separate; a parallel need not share script. Verify exact reference with edition authors/original photographs; no contradiction adjudicated.",
+  "correction_inventory": {
+    "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/caption_correction_inventory.json",
+    "sha256": "5f6db39bb1afc5e8a55cae2a40c2a053759d7b354b841d269b5e8d86b5ce9a78"
+  },
+  "new_text_inventory": {
+    "path": "data/private/research-work/schoyen-exact-designations-2026-10-02/item_inventory.json",
+    "sha256": "9f1de787a5a3244573b3ece38a477c4aacae486267372eca9d41aed5d8d767a5"
+  },
+  "identity_merges": 0
+}
