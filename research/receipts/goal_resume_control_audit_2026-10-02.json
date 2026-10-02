@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T12:16:58+00:00",
+  "corpus_digest": "e90d91053fbd8d12c909843f09e1c0be9271b023cdbe919d122f4529e4b898e6",
+  "corpus_changed": false,
+  "thread_id": "01a0f7c7-56ce-7f63-bde7-e55c7c10df10",
+  "source": "Codex app read_thread authoritative status/error records; get_goal live control state",
+  "failed_turns": [
+    {
+      "id": "01a0fbee-2309-7461-a7c3-3c6acc5a42db",
+      "status": "failed",
+      "started_at_unix": 1790933082,
+      "completed_at_unix": 1790933129,
+      "error": {
+        "message": "Selected model is at capacity. Please try a different model.",
+        "additionalDetails": null
+      }
+    },
+    {
+      "id": "01a0fbb3-f045-7e40-8b0d-832abd5769bf",
+      "status": "failed",
+      "started_at_unix": 1790929268,
+      "completed_at_unix": 1790929481,
+      "error": {
+        "message": "Selected model is at capacity. Please try a different model.",
+        "additionalDetails": null
+      }
+    },
+    {
+      "id": "01a0fbb0-01c8-7e30-949c-c347da2ec7f9",
+      "status": "failed",
+      "started_at_unix": 1790929011,
+      "completed_at_unix": 1790929258,
+      "error": {
+        "message": "Selected model is at capacity. Please try a different model.",
+        "additionalDetails": null
+      }
+    }
+  ],
+  "former_blocked_goal_updated_at_unix": 1790929258,
+  "matching_failure_completed_at_unix": 1790929258,
+  "conclusion": "Verified repeated selected-model capacity errors. One failed turn completed at the exact former Goal blocked-state timestamp, supporting service-capacity failure as the stop cause. No explicit scheduler-reason field was returned; timestamp correlation is an inference. Specific source access/acquisition gaps are not a demonstrated research-wide impasse.",
+  "previous_completed_research_checkpoint": "research/receipts/institutional_gap_routes23_audit_2026-10-02.json",
+  "previous_turn_classification": "Immediately preceding interrupted turn had no items and is no progress; earlier completed checkpoint23 is progress.",
+  "control_objective_at_opening": "resume\nAnd tell me what is blocking it",
+  "control_status_at_opening": "active",
+  "control_request_completion": {
+    "threadId": "01a0f7c7-56ce-7f63-bde7-e55c7c10df10",
+    "objective": "resume\nAnd tell me what is blocking it",
+    "status": "complete",
+    "tokensUsed": 5385937,
+    "timeUsedSeconds": 39932,
+    "createdAt": 1790890579,
+    "updatedAt": 1790943354
+  },
+  "completion_scope": "Only the literal resume/status control request was completed. The 249-case research campaign is unfinished; its full original objective was immediately restored under Mike's standing explicit Goal authorization.",
+  "restored_research_goal": {
+    "threadId": "01a0f7c7-56ce-7f63-bde7-e55c7c10df10",
+    "objective": "Complete an evidence-backed research campaign for the incantation-bowl index: investigate all 249 priority identities currently lacking publication references; capture and separately source-check the available inscriptions and scholarly translations in lawfully held editions; give each remaining gap a specific evidence-backed explanation, attempted routes, and next acquisition or specialist-review requirement. Keep the roadmap, Mike's private reader, provenance receipts and research inventory current, with tested, committed checkpoints under docs/project-rules.md. Continue across research batches without requesting routine continuation. An individual blocked object or source should lead to the next useful item; do not treat catalogue silence or dated unpublished notices as no-known-edition findings, confuse bibliography pointers with verified readings, or count page images as searchable inscription capture. Retain conflicting source reports and superseded corrections, honor Mike's standing designation rulings, and preserve uncertain identity/scholarly/rights decisions for human review. Use lawful held sources and accessible primary sources, respecting access controls and private/public boundaries. No deployment, push, purchase or outbound message without authorization. Mike previously authorized use of at most one banked allowance reset; do not claim a reset without a supported redemption mechanism and verified outcome. Complete the Goal only when the inventory has been audited against concrete source and corpus evidence and all requested work is actually done; if meaningful authorized progress is impossible without external access or user input, document the precise remaining work and blockers, following the Goal's blocked-status rules.",
+    "status": "active",
+    "tokensUsed": 0,
+    "timeUsedSeconds": 0,
+    "createdAt": 1790943354,
+    "updatedAt": 1790943354
+  },
+  "prior_usage_accounting": {
+    "tokens_used": 5385937,
+    "time_used_seconds": 39932,
+    "elapsed_rounded": "11 hours 6 minutes",
+    "new_goal_counter_starts_at_zero": true,
+    "allowance_resets_used": 0
+  },
+  "completion_audit": {
+    "resume_verified_live_active": true,
+    "stop_cause_explained_to_mike": true,
+    "full_original_research_objective_restored_verbatim": true,
+    "restored_status_verified_active": true,
+    "research_campaign_marked_complete": false,
+    "source_or_identity_decisions_changed": false
+  },
+  "validation": {
+    "tests": "389passed",
+    "corpus_state": "match; recorded byCodex",
+    "reader": "Existing checkpoint23 full private reader still matches current unchanged corpus digest;7/7audit checks and77packagedcaptures. No rebuild needed for control-only audit.",
+    "test_log": {
+      "path": "data/private/research-work/goal-resume-control-2026-10-02/tests-final.log",
+      "sha256": "e22f6e08c5891139666f70cae4d28a0e2e3f71eddb4ee79fef43924b57b6c060"
+    },
+    "state_receipt_sha256": "3af4bacecf6e4de7f88405068b8e905d898faddcb7df6573ab47c52ce0f9c81d"
+  },
+  "next_work": "Resume the full research campaign from checkpoint23:225 remaining publication gaps,205 NLI catalogue-to-older-designation routes,45 native-script gaps,130 partial reviews and held quotation queues.",
+  "post_interruption_revalidation": {
+    "checked_at": "2026-10-02T12:20:04+00:00",
+    "get_goal_result": {
+      "goal": null,
+      "remainingTokens": null,
+      "completionBudgetReport": null
+    },
+    "corpus_status": "match",
+    "corpus_digest": "e90d91053fbd8d12c909843f09e1c0be9271b023cdbe919d122f4529e4b898e6",
+    "interpretation": "Goal was verified active after restoration, but is now absent after an intentional interruption. Cause/actor of removal not exposed. Do not claim active status or silently recreate over a possible deliberate clear.",
+    "user_input_requested": "Restore original249case researchGoal, or leave Goal off. Required answer pending; no recreation while pending."
+  }
+}

@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Diagnose model-capacity stop and audit Goal restoration
+
+**Claimed:** none — Goal control audit
+**Corpus:** unchanged — state digest `e90d91053fbd`
+**Tests:** 389 passed; existing complete Mike reader still matches unchanged corpus with7/7checks and77packagedcaptures; recorded state matches.
+
+- Mike requested resume and the cause of the stop. Opening tree clean and corpus matched checkpoint23. Immediately preceding interrupted turn had no items and is no progress; earlier completed checkpoint23 is progress. Current control audit found evidence that changes the next action.
+- Live Goal initially active, with objective replaced by the literal ‘resume / And tell me what is blocking it’. Current thread history verifies three failed turns with ‘Selected model is at capacity. Please try a different model.’ One failed turn ended at1790929258, the exact prior blocked-Goal update timestamp. This supports service-capacity failure as the stop cause; no explicit scheduler-reason field was returned. Prior answer gave the blocked status without identifying these failures. Missing editions and source-specific access problems are not a demonstrated research-wide impasse.
+- Resolved only the literal resume/status request, then immediately recreated and verified the full original249-case research Goal under Mike's standing explicit Goal authorization. No research-campaign completion or narrowed scope claimed. Original scope, lawful capture requirements, conflict/identity/rights boundaries and checkpoint obligations restored verbatim. Prior Goal accounting retained in receipt:5,385,937tokens and39,932seconds (about11hours6minutes); newly created Goal initially starts a fresh counter. No allowance reset, model change or budget limit.
+- After an intentional interruption, authoritative recheck returned no Goal. Cause/actor of removal not exposed. Retained both the verified active-restoration snapshot and later absent-state snapshot. Asked Mike whether to restore the original research Goal or leave it off; answer pending. Did not silently recreate over a possible deliberate clear or claim Goal remains active.
+- Corpus, reader, roadmap and source claims unchanged. Current research remains225publication gaps,45native-script gaps,130partial reviews and1unreviewed edition text; held-source queues remain useful. State written and control-only receipt saved at `research/receipts/goal_resume_control_audit_2026-10-02.json`; test log private. Existing generated reports were not invalidated. Local commit only; no push, deployment, purchase, outbound contact or allowance reset. Next act on Mike's Goal preference and continue the full research campaign from checkpoint23 when authorized.
+
 ## 2026-10-02 — Codex — Verify institutional gaps and precise acquisition routes
 
 **Claimed:** TEXT-001
