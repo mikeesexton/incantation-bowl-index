@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "aaa98cfebed1102a1efbef4f6a6c26356bed69f7a32a9de8b44ad4ebfdb56e73",
+  "corpus_digest": "ac1629469142cdd2fdcb92d95a3b0fca52b1a9445172cd024ced47cc85780c2b",
   "migrations": 21,
-  "note": "Checkpoint27: archived nine supplied PDFs, completed the first reading checks, updated Miri\u2019s acquisition tracker and rebuilt the private reader. Original research Goal preserved; native Resume remains required for automatic continuation.",
-  "recorded_at": "2026-10-02T15:20:48+00:00",
+  "note": "Goal checkpoint28: ten Levene thesis reading captures; four complete checks/six partial; two NLI route investigations extended; complete reader verified; no merges or releases.",
+  "recorded_at": "2026-10-02T15:42:06+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,16 +151,16 @@
       "rows": 17
     },
     "text_proofreading_reviews": {
-      "digest": "175a46bebef85c22dc81a1b3f337a28f044e0a6ab396b8d2b1316e4e65e40657",
-      "rows": 1320
+      "digest": "cb7dd239b9c743b58a6b036ca2506df71d2897f53571e4d56d303f1a0ee94c40",
+      "rows": 1330
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "3c2ec0472797d46549c738ed549f16a79dba8ef9495526c9b84d2027b9f5b1bf",
-      "rows": 1943
+      "digest": "3374da74af6c568d72ea2fcfeda1d536f0cb2f793749c05e7c9b3bf3533366ba",
+      "rows": 1953
     }
   }
 }

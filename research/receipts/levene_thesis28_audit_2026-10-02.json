@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "checkpoint": 28,
+  "created_at": "2026-10-02T15:38:21+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "aaa98cfebed1102a1efbef4f6a6c26356bed69f7a32a9de8b44ad4ebfdb56e73",
+  "corpus_after": "ac1629469142cdd2fdcb92d95a3b0fca52b1a9445172cd024ced47cc85780c2b",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 25,
+  "frozen_unlinked_now": 224,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 2,
+  "newly_linked_frozen_identities": 0,
+  "new_text_rows": 10,
+  "new_edition_text_rows": 10,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_captures": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1228,
+  "checked_edition_text_rows": 1083,
+  "partial_edition_text_rows": 144,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 1953,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1223,
+    "appearance_bearing_sources": 51,
+    "registered_pdf_sources": 56
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/levene-thesis28-2026-10-02/campaign_case_progress_checkpoint28.json",
+    "sha256": "d2f3b249cce80dc832bd9a7d11d708399289df551749ea2693098c9909db216d"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/levene-thesis28-2026-10-02/held_pdf_inventory_checkpoint28.json",
+    "sha256": "45d786d7d1ab05ee7d9fa9666a8adc16cf0e248fc2a910c67ffd365cfe55b401"
+  },
+  "reading_inventory": {
+    "path": "data/private/research-work/levene-thesis28-2026-10-02/levene-reading-inventory.json",
+    "sha256": "9956e958627f376c0e676a363b830dc7a78755b03a2613a47a588e4ea0e5fc6b"
+  },
+  "scope": "Captured nine separately labelled Levene2000 thesis English translations (M50,M101,M102,M103,M107,M108,M112,M117,M121) and one manually captured native-square-script M50 reading. Four English checks complete; six rows partial for exact Latin underdots, source overline or independent native restoration/glyph collation. Preserved scholarly spelling/wording and exact page/source attribution; main translations not assigned to shared M59/M119 witnesses. Every pre-existing corpus row unchanged. NLI7/NLI62 correspondence investigations extended with fresh inaccessible records and direct EAJS heading-only result, not uncertain merges or absence findings. Thesis reading inventory audits20objects/17main translation headings; remaining eight English blocks and19native captures, synopsis comparands and footnotes open. Frozen249 remains25linked/224unlinked/all249attempts/zero completed cases. Full Goal verified active; no routine continuation needed.",
+  "next_actions": [
+    "Continue eight remaining thesis English blocks, nineteen native witnesses and exact synopsis/footnote references; M142 reconstruction appendix remains distinct from physical bowl readings.",
+    "Continue Hermitage/Ford source reading queues and remaining224 frozen publication gaps, switching items when an access route is unavailable.",
+    "Original Segal2000 and precise NLI accession/image bridges remain acquisition requirements; Miri existing queue retained."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "aaa98cfebed1102a1efbef4f6a6c26356bed69f7a32a9de8b44ad4ebfdb56e73",
+    "corpus_after": "ac1629469142cdd2fdcb92d95a3b0fca52b1a9445172cd024ced47cc85780c2b",
+    "changes": {
+      "text_proofreading_reviews": 10,
+      "texts": 10
+    },
+    "all_preexisting_rows_identical": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "capture_hashes_verified": 86,
+    "edition_inventory": {
+      "reading_text_checked": 1083,
+      "unreviewed": 1,
+      "partial_review": 144
+    },
+    "new_reading_checks": {
+      "checked": 4,
+      "partial": 6
+    },
+    "objects": 2169,
+    "appearances": 2724,
+    "total_texts": 1953,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 1953,
+      "all_media_assignments_verified": 1966,
+      "all_local_image_hashes_verified": 1183,
+      "all_capture_hashes_assignments_verified": 86,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 2,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "initial_verification_issue": "Python test class and manually started reader builder overlapped, both writing same output directory. Observed missing-file error. Tests and build rerun sequentially; final successful snapshot checked completely.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "manifest_replays_unchanged": true,
+    "rehearsal_verified": true
+  },
+  "protected_payloads": "PDF, drafts, native/English contents, all ingestion/proofreading manifests and review facsimiles remain outside Git in the private vault. Public text gates unchanged.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0028_levene_thesis.json",
+      "sha256": "840f1cb326328585acadfe070148ee13cbd3539c231217813fe2c5e3c7eb523b"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/campaign_case_progress_checkpoint28.json",
+      "sha256": "d2f3b249cce80dc832bd9a7d11d708399289df551749ea2693098c9909db216d"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/held_pdf_inventory_checkpoint28.json",
+      "sha256": "45d786d7d1ab05ee7d9fa9666a8adc16cf0e248fc2a910c67ffd365cfe55b401"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/reading-drafts.json",
+      "sha256": "5e3afef2ab37b1ab4e3ad0786aa060f892016604177b97816396f24b63986f8f"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/reading-drafts-before-second-pass.json",
+      "sha256": "4e926f779b9c08874de558b6bd27fb09f3a47dbd57f3e56db94566c0271990f6"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/nli-route-attempts.json",
+      "sha256": "ed733845853aa8ad8943624c589bc74b120acb3f57dc960ed31a04f73b0a2537"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/levene-reading-inventory.json",
+      "sha256": "9956e958627f376c0e676a363b830dc7a78755b03a2613a47a588e4ea0e5fc6b"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/trial-apply.json",
+      "sha256": "0113d98bdfd726ecae61aeed69bd30298ff7f3dba0d15103864173957b5bc7fa"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/trial-replay.json",
+      "sha256": "70be5a2b05da350a76decd3d73cb33b513c3efa621a021538859c7218193486f"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/trial-verification.json",
+      "sha256": "06b7344c467ac38cc5089b18c6281326f1e9d9ab4202db7ab2aece6b254e8715"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/production-apply.json",
+      "sha256": "88cb42107724e9ac1e6332995fb2f13a89133df3f953de734c1d3d4c02e46bfe"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/production-replay.json",
+      "sha256": "e449a4f849b1c248e09b3cea95a6b654754e4609ecb627149dd6f459a7391d69"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/production-verification.json",
+      "sha256": "0d62eb7e293fedeea9835076eb0033338cf9a919a36b63eb2eaedd13a11101f3"
+    },
+    {
+      "path": "data/private/manifests/levene-thesis28-2026-10-02/production/candidates.jsonl",
+      "sha256": "0a5dc0a9124f3e262703e7b1c514f9cbc94461a6e3d9bd54023d550df1c127aa"
+    },
+    {
+      "path": "data/private/manifests/levene-thesis28-2026-10-02/production/reading-review.json",
+      "sha256": "ea6cef17b9de2e56a09d4d231bfe59e3803cd1a076e23d408c44ffcc11816ba5"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/reader-verification.json",
+      "sha256": "25595d7c6bd3ae3f76373e68708c61ba5aaaa653de0292e5b864eda982346429"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/reader-build-final.log",
+      "sha256": "16679fcdd25da5448038484151e3cfc19430f0a20d203bafb5640ba4da6850b2"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/tests-final.log",
+      "sha256": "81dcbe97d02e976685ecfd200ec2342022453d5a82c08eebe07c0121a7cecff7"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/node-tests-final.log",
+      "sha256": "0ddb64b9687ff1cf20832e01d2d4194bbd4ec3c1df8be6a374acb8c4fc2383f2"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/prepare_readings.py",
+      "sha256": "5f34c07e65ac837701f8a6a2f9a94e2a4d721695e9d1cc490b4ba3ed0cc5b6ac"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/ingest_batch.py",
+      "sha256": "75135edb5302c725da5a4d2b0d5d203b6010cf1b0c0e8918a825bf37ec6b61aa"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/record_checkpoint.py",
+      "sha256": "7af1d63e601743af775c5d8f097e13fc078a29293f566963caecd42ca5ac7ea1"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/verify_batch.py",
+      "sha256": "46e15716fb53ef7e9c633edc31796771d6c7d03cbbe356644f1f2ca83cd3b52c"
+    },
+    {
+      "path": "data/private/research-work/levene-thesis28-2026-10-02/verify_reader.py",
+      "sha256": "e1e2e9dfb4e37848a0ff6dccb60de76c0cd9c6c5225c7f75cdc9db46aed69b9c"
+    }
+  ]
+}

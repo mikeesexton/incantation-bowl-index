@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1079 | 138 | 1 | 1218 | 88.6% |
+| Edition text (translation, transcription, transliteration) | 1083 | 144 | 1 | 1228 | 88.2% |
 | Other stored text (mostly source extracts and summaries) | 0 | 6 | 719 | 725 | 0.0% |
-| All stored text | 1079 | 144 | 720 | 1943 | 55.5% |
+| All stored text | 1083 | 150 | 720 | 1953 | 55.5% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 599 | 43 | 1 | 643 |
-| transcription | 336 | 73 | 0 | 409 |
+| translation | 603 | 48 | 1 | 652 |
+| transcription | 336 | 74 | 0 | 410 |
 | transliteration | 144 | 22 | 0 | 166 |
 
 ## Edition text by source
@@ -69,6 +69,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 3 | 3 | 0 | 6 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 1 | 0 | 0 | 1 |
+| Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 4 | 6 | 0 | 10 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 13 | 0 | 0 | 13 |
 | Forgotten Forms in Babylonian Aramaic (Mandaic and Jewish) (`SRC-MORGENSTERN2023-FORMS`) | 152 | 0 | 0 | 152 |
