@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T20:44:00+00:00",
+  "updated_at": "2026-10-02T21:00:46+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -28,7 +28,7 @@
       "capture_id": "CAP-66AE30B6FC4F",
       "sha256": "f91acf025979ad8c3047fe543358ee55938f4fcc7e050d0f7f823fcbd48f0915",
       "status": "Researcher-supplied local document held",
-      "reading_audit": "Partial; further source reading checks remain"
+      "reading_audit": "Partial sourcewide audit; exact lot734market/context manuscriptpages15–17/20–22visually verified atcheckpoint44. No inscription edition/translation acquired."
     },
     {
       "source_id": "SRC-LEVENE2000-UCL",
@@ -266,8 +266,12 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/nli-images43-2026-10-02/acquisition-queue-before.json",
-    "sha256": "ceae96c67c1c773dfb7deb98610b4909524b27cecea0374db844b2a370122565"
+    "path": "data/private/research-work/held-cases44-2026-10-02/acquisition-queue-before.json",
+    "sha256": "929f0d61d4fec669c94f5b34e627a19848fbc3bf75881e6f8851914e260d9148"
   },
-  "new_access_requests_checkpoint": 41
+  "new_access_requests_checkpoint": 41,
+  "latest_held_context_inventory": {
+    "path": "data/private/manifests/held-cases44-2026-10-02/production/extraction.json",
+    "sha256": "fb413f96d376d06a07ea975b0032cb2eb9f014b5aabefcdc17e604e5da573a49"
+  }
 }

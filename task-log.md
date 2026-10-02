@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Held-document exact-case sweep, checkpoint44
+
+**Claimed:** TEXT-009, TEXT-010
+**Corpus:** changed (one scholarly market/context reference, one appearance, six page-media records and retained source/document updates) — state digest `b10b807f927e`.
+**Tests:** 393 Python and 57 Node passed; complete private reader 7/7. All 2,013 text contents, attributions, classifications and editorial declarations verified; 2,027 media assignments, 1,190 local image hashes and 87 capture hashes/source assignments verified. Integrity/FKs pass; trial and production manifest replays unchanged. Every earlier text/review and unaffected corpus row identical; complete previous source note and prior extraction index retained.
+
+- Opening clean corpus matched checkpoint43 `e0f7219ae04a`; project/literature/protocol/conflict rules read, TEXT tasks claimed, consistent pre-batch backup/trial retained. Original Goal active; current and previous turns are progress.
+- Searched all ten supplied PDFs, 1,260 pages, for explicit/selected designation variants belonging to nineteen remaining non-NLI cases. This is text-layer discovery with bounded patterns, not complete visual sourcewide checking. Missed OCR and unnumbered descriptions remain possible. Eighteen cases receive no exact assignment in this sweep; no current no-known-edition finding.
+- Broader discovery hits rejected by actual context: Grossenbacher/Rohrbacher-Sticker/physicist Robert F. Bacher are not dealer ref6412; German Tierbild is not Erbil museum; excavation year1973 followed by footnote2 is not JMS1973-2. No false-positive object/reference added.
+- Visually inspected complete Korsvoll2020 author-manuscript pp15–17 and20–22. Exact p20 Artemis row supplies Christie’s New York7December2000lot734; p22 bibliography supplies the same scoped sale/lot and object1949526 URL. Existing frozen case already verified that sale/lot against the primary catalogue. Added an appearance and scholarly market/context publication reference on the existing object, applying Mike’s one-designation-one-bowl ruling without a merge. Distinct2017Artemis/other2000/2002/2012entries remain separate. Six complete private manuscript page facsimiles added; no individual image derivative or new capture.
+- This contextual reference does not supply an inscription edition or actual native/English reading.2019translation availability remains dated rather than present absence; scholarly ethical/price/provenance interpretations are source reports, not project authentication, legal-title or ownership decisions. Actual original translation/later edition remains needed. Author-manuscript page numbering stays distinct from final journal pagination. Complete held source remains a partial sourcewide audit and retains its earlier union extraction index.
+- All nineteen histories extended, retaining every prior attempt: fixed249 now27linked /222unlinked /zero whole cases complete. Edition inventory unchanged:1,286 rows,1,149checked /136partial /one unreviewed;2,013 total texts. Held PDF inventory57sources /52appearance-bearing /1,238appearances. Historical99-appearance native roster retains45gaps unchanged. Miri queue keeps ten resolved documents and16requests; prior queue snapshot retained, held Korsvoll scope updated. No fresh access blocker or outbound message; no reset used.
+- Content-free receipt `research/receipts/held_cases44_exact_sweep_2026-10-02.json`; protected PDFs, source views, working extraction/manifests and full case histories remain outside Git. Roadmap/seven reports/export regenerated; complete reader built after tests and verified, state written. No push, deployment, purchase, author contact or live-server restart. Next continue exact primary edition/catalogue routes for the remaining222cases and source-copy checking of further supplied native/English/comparative passages, while Miri tracks previously requested original editions and NLI images/cards.
+
 ## 2026-10-02 — Codex — NLI routes and Davidovitz quotation, checkpoint43
 
 **Claimed:** TEXT-009, TEXT-010

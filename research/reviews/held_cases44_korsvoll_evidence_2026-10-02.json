@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-59F609B5B2DF",
+  "capture_id": "CAP-66AE30B6FC4F",
+  "source_sha256": "f91acf025979ad8c3047fe543358ee55938f4fcc7e050d0f7f823fcbd48f0915",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T20:54:29+00:00",
+  "visually_inspected_complete_manuscript_pages": [
+    15,
+    16,
+    17,
+    20,
+    21,
+    22
+  ],
+  "exact_assignment": "Manuscript p20 table row names Artemis Gallery and Christie’s New York Antiquities auction7December2000lot734; p22WorksCited explicitly cites the same sale/lot and catalogue object1949526. p15–17 resale/price/translation discussion provides surrounding context; p21 distinguishes other2000/2002/2012 entries.",
+  "assignment_basis": "Existing frozen case already carries the exact scoped sale/lot, supported by its earlier primary catalogue inspection. Mike’s one-designation-one-bowl ruling supports another source appearance on the existing object, without a merge.",
+  "scope": "Object-specific scholarly market/context discussion only, not an inscription edition.2019translation availability reports remain dated, not present absence. Source prices/provenance/ethics interpretations are reports rather than authentication, legal-title or authenticity determinations. No native or English reading copied in this batch.",
+  "supplied_document_sweep": {
+    "private_inventory": {
+      "path": "data/private/research-work/held-cases44-2026-10-02/designation-sweep.json",
+      "sha256": "61c915d64cecfc73cf9bd3e5f42ed174c64eb941394bd76d8c12dc97a75dffcc"
+    },
+    "documents": 10,
+    "pages": 1260,
+    "cases": 19,
+    "exact_positive_cases": 1,
+    "other_cases": 18,
+    "limits": "PDF text-layer search of explicit/selected variant patterns. Broader substring/date-footnote false positives discarded after context inspection. Missing OCR/unnumbered descriptions remain possible; not a sourcewide visual audit or current no-known-edition finding."
+  },
+  "private_page_reviews": [
+    {
+      "path": "data/private/research-work/held-cases44-2026-10-02/korsvoll-page-15.png",
+      "sha256": "71cd5ae38ccc8475268f576101e8873a4ee3da0ee8bf0e6d3cdcec020063c1a7"
+    },
+    {
+      "path": "data/private/research-work/held-cases44-2026-10-02/korsvoll-page-16.png",
+      "sha256": "7295c85af4957094c38f310a68f4381392540a191afa52c5d0da472f38fdd33d"
+    },
+    {
+      "path": "data/private/research-work/held-cases44-2026-10-02/korsvoll-page-17.png",
+      "sha256": "4f85d4015a84df331c96e1e8c1daaf4ca39f84afb15997ca1eb7ca6267a5fcc7"
+    },
+    {
+      "path": "data/private/research-work/held-cases44-2026-10-02/korsvoll-page-20.png",
+      "sha256": "62020c73d108579ee6e7784978f702f9a1a6ad1a3a451725e36f680227f32166"
+    },
+    {
+      "path": "data/private/research-work/held-cases44-2026-10-02/korsvoll-page-21.png",
+      "sha256": "26733518081741b49b5d26a929c26576f0e6e02e8c8b2bce617abfbf87b828bd"
+    },
+    {
+      "path": "data/private/research-work/held-cases44-2026-10-02/korsvoll-page-22.png",
+      "sha256": "fe8c1a652a400849697a2b2a71b06e95dc9d6946183e412b279a392ee777bb5e"
+    }
+  ]
+}
