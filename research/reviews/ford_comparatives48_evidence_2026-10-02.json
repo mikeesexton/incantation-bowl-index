@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "source_id": "SRC-FORD2025-THUS-OATH",
+  "capture_id": "CAP-9ACA488492AF",
+  "source_sha256": "c64b1aa031a72c833f3856433eea22b00cd843733eb98df2ad25d159ba9d2df5",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-02T22:06:21+00:00",
+  "inspected_pdf_pages": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "printed_pages": [
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "enlarged_native_pdf_pages": [
+    9,
+    10,
+    13,
+    16
+  ],
+  "new_checked_rows": 65,
+  "new_transcriptions": 30,
+  "new_mandaic_latin_transliterations": 3,
+  "new_english_translations": 32,
+  "existing_translation_copy_repair": 1,
+  "source_contoured_letters_retained": 32,
+  "printed_plural_dot_groups_retained": 7,
+  "nli_links": [
+    {
+      "object_id": "IBI-6ECF7BBA5A74",
+      "nli_number": 45,
+      "mms": "997008712395305171",
+      "source_locator": "Ford p111 / PDF9, NLI JER Ms. Heb. Inc. Bowl045:5",
+      "basis": "Exact NLI scoped number/title corroborated in archived catalogue. Mike’s one-designation-one-bowl ruling applied without merge; catalogue9467.179 retained separately."
+    },
+    {
+      "object_id": "IBI-B925657D4CFC",
+      "nli_number": 65,
+      "mms": "997008712406505171",
+      "source_locator": "Ford p115 / PDF13, Moussaieff117:6–7, footnote40",
+      "basis": "Ford explicitly reports current NLI065. Exact NLI number/title corroborated; catalogue9467.64 retained separately. Earlier distinct M117 objects not merged or reassigned."
+    }
+  ],
+  "existing_copy_repair": {
+    "text_id": "TXT-BC7711E7BAAE",
+    "source_id": "SRC-LEVENE2000-UCL",
+    "pdf_pages": [
+      93,
+      94
+    ],
+    "problem": "Bibliographic footnote89 embedded between paragraph4 marker and translation continuation.",
+    "action": "Remove only copied footnote; complete original retained in new proofreading ledger. Earlier English batch requires further audit."
+  },
+  "limits": "Bounded source-copy checks, not complete original editions, independent clay readings, scholarly adjudication or public release approval. Three Mandaic quotations are Latin transliterations only. DS11 is one variant word without supplied English. Other Ford comparative passages and commentary remain partial. Source differences preserved; no uncertain merges."
+}

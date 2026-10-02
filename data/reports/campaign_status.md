@@ -1,24 +1,24 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T22:03:09+00:00`
+Generated: `2026-10-02T22:29:57+00:00`
 
 ## Corpus
 
-- Candidate objects: **2171**
+- Candidate objects: **2195**
 - Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'language', 'layout', 'photograph_credit', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class']**
-- Estimated distinct objects after resolved dedupe: **1822**
+- Estimated distinct objects after resolved dedupe: **1846**
 - Resolved duplicate records: **349**
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
-- Source appearances: **2736**
+- Source appearances: **2768**
 - Sources: **967**
 - Dedupe clusters pending: **0**
-- Objects with text: **928**
-- Objects with translation: **528**
+- Objects with text: **955**
+- Objects with translation: **556**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **36**
+- Open leads: **39**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -76,16 +76,16 @@ Generated: `2026-10-02T22:03:09+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1445 |
+| object type | whole_bowl | 1469 |
 | object type | fragment | 374 |
 | object type | uncertain | 332 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 6 |
-| record status | candidate | 968 |
+| record status | candidate | 992 |
 | record status | probable | 923 |
 | record status | confirmed | 273 |
 | record status | rejected | 7 |
-| authenticity | unassessed | 1637 |
+| authenticity | unassessed | 1661 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |
@@ -142,6 +142,8 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Classify corpus findspot and provenance assertions by evidence basis: documented controlled excavation, museum or accessions register, dealer or antiquities-market report, later scholarly inference, or unverified/unknown. Preserve the original place claim and its source separately from the assessment. |
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | open | 1 | Acquire permitted actual Ford2025 article PDF with seven full editions and twenty synoptic witnesses. |
+| open | 1 | Fresh M117English source-copy check found p93bibliographic footnote89 embedded in formerly checked TXT-BC7711E7BAAE. Corrected through new proofreading manifest with complete original retained. Audit the other checkpoint28English thesis rows for page-boundary footnote contamination against actual source pixels; this finding does not establish other errors. |
+| open | 1 | Ford2025 p115/PDF13 footnote40 explicitly reports Moussaieff117 as current NLI JER Ms.Heb.Inc.Bowl065. Bounded quotation linked to trusted exact NLI65number/title. Distinct earlier Moussaieff117 candidates IBI-0CDECCBBB862 and IBI-E0372BE85045 remain separate; inspect complete original edition, photographs and institution-number bridge in a separate CONC review before any merger. |
 | open | 1 | Inspect held1949 thesis bowl headings, accession numbers, full Hebrew-letter Mandaic transliterations/translations and plates. |
 | open | 1 | Complete thesis native editions with faithful barred letters, interlinear additions, lacunae and magic signs; resolve two DA5 Latin glyphs. |
 | open | 1 | Complete held thesis native texts/DA5 translation and separately verify DA4 line4 Latin magic token. |
@@ -174,6 +176,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | open | 2 | Penn B2970 (object 79917): obtain any inscription edition or curatorial documentation; current museum bibliography is empty, but the object has 13 reported interior lines and two images. |
 | open | 2 | Acquire Geller, Four Aramaic Incantation Bowls, The Bible World (1980), pp. 47–60, and check bowl D against index designation GelD; establish museum accession and location without guessing a concordance. |
 | open | 2 | Berlin VA.2451: seek later publication, legible imaging or curatorial documentation after the 2018 catalogue's dated unpublished and nearly-illegible reports. |
+| open | 2 | Ford2025 p112/PDF10 quotes SD22AL:6–7, citing Müller-Kessler2005 pp52–53. Newly scoped AL publication witness retained separately from existing SamirDehaysSD22 (IBI-FM2020-HS8CMP-SD22); verify exact catalogue convention/wording before assigning a cross-designation identity. No merge. |
 | open | 2 | Locate an edition or additional documentation for Penn B16038 (object 151160). The web-visible catalogue checked 2026-10-01 lists no bibliography; targeted searches for B16038 with bowl, incantation, Montgomery and Nippur found its museum record but no new edition. This is a dated search disposition, not a global no-known-edition finding. The page lists five image views; only the pre-existing primary thumbnail is currently recorded in the corpus. |
 | blocked | 2 | Map Morgenstern's 2021 five-bowl edition and Morgenstern–Abudraham's 2025 four-bowl edition exactly onto the nine Mandaic objects M23, M24, M25, M26, M45, M139, M154, unnumbered A, and unnumbered B; capture the full texts and translations through authorized access. |
 | blocked | 2 | Obtain authorized full-text access to Faraj 2023 to capture the edition, translation, dimensions, provenance details, and imagery for IM 77781. |
