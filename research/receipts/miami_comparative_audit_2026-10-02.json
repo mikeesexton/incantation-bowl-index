@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "checkpoint": 15,
+  "created_at": "2026-10-02T04:15:53+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "18b1e8f5fb446f41f2a9b5d3672e284a6a3cdcc0d46fb13f57baff903e2c4d85",
+  "corpus_after": "5892432c7ac0f73e8175158f682437f0d06553f3980dc3c560b0b34c0ca9d735",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "new_text_rows": 13,
+  "new_text_characters": 281,
+  "corrected_main_text_rows": 2,
+  "corrected_main_text_characters": 1065,
+  "source_checks_added": {
+    "checked": 14,
+    "partial": 1
+  },
+  "source_appearances_added": 1,
+  "new_designation_scoped_candidates": 1,
+  "private_page_images_added": 5,
+  "unique_rendered_source_pages_added": 5,
+  "publication_assessments_added": 1,
+  "document_assessments_added": 1,
+  "identity_merges": 0,
+  "main_correction": "Fresh enlarged glyph pass corrects missed copied-word errors as well as diacritics. Original2rows retained in immutable proofreading snapshots. Unprinted line9bar removed; source deletions/restorations and name spelling variations preserved. Description11physical lines vs10edition units unadjudicated.",
+  "comparative_scope": "9Hilprecht quotations/glosses(proposals separately labelled) and4MS2054/47parallel rows. Original2005edition unheld; scholars attributed separately. One crossed-letter typographic detail remainspartial. No full-case/full-source/native-script recovery inferred.",
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1018,
+    "appearance_bearing_sources": 40,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-8FA39ADCBF5F",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES"
+    ]
+  },
+  "edition_text_rows": 1029,
+  "checked_edition_text_rows": 909,
+  "partial_edition_text_rows": 118,
+  "unreviewed_edition_text_rows": 2,
+  "total_text_rows": 1694,
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Continue remaining Miami contextual bowl quotations against exact designations; mixed lead rolls/manuscripts/other pottery must retain separate scope. Main Miami rows now corrected and checked; bounded quotation checks do not complete source extraction.",
+    "Verify original Müller-Kessler2005 Hilprecht40c pp123–124/photographs237–238, including crossed-letter typography in quoted lines10–11; source SRC-63345F60155B has no registered capture. Preserve Abudraham versus reported Müller-Kessler client readings.",
+    "Search later publication of MS2054/47 and obtain lawful full edition/photos;2023unpublished report is dated only. Four bounded printed rows captured, no full-bowl edition.",
+    "Continue fixed249 institutional publication/concordance investigations,45native-script gaps, exact missingMSF113–142/plates19–32, Juusola body pages and Bowl4institutional1042/1402register evidence."
+  ],
+  "protected_payloads": "Ignored private vault/manifests only; content-free hashes committed. No public release, deployment or push.",
+  "changes": [
+    {
+      "table": "appearance_object_links",
+      "added": 1
+    },
+    {
+      "table": "appearances",
+      "added": 1
+    },
+    {
+      "table": "claims",
+      "added": 2
+    },
+    {
+      "table": "document_assessments",
+      "added": 1
+    },
+    {
+      "table": "identifiers",
+      "added": 1
+    },
+    {
+      "table": "media",
+      "added": 5
+    },
+    {
+      "table": "objects",
+      "added": 1
+    },
+    {
+      "table": "publication_assessments",
+      "added": 1
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 15
+    },
+    {
+      "table": "texts",
+      "added": 13
+    }
+  ],
+  "modified_originals_preserved": [
+    {
+      "table": "texts",
+      "id": "TXT-BA4838F87188",
+      "complete_original_row_preserved_in_immutable_history": true
+    },
+    {
+      "table": "texts",
+      "id": "TXT-4F9C49FA7CE8",
+      "complete_original_row_preserved_in_immutable_history": true
+    }
+  ],
+  "all_other_preexisting_rows_identical": true,
+  "validation": {
+    "rehearsal": true,
+    "immutable_manifest_replays": {
+      "trial_manifests": 4,
+      "production_manifests": 4,
+      "trial_digest_after_replay": "d0ad6b05f02a7230fea2db68529dbaa470dd94a4d1f4cff9c5223bd03d591bbc",
+      "production_digest_after_replay": "5892432c7ac0f73e8175158f682437f0d06553f3980dc3c560b0b34c0ca9d735",
+      "digest_unchanged": true,
+      "old_main_capture_replay_guard": true
+    },
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "381 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1694,
+      "all_media_rows_present": 1366,
+      "local_image_rows": 1006,
+      "new_and_corrected_text_hashes_match": 15,
+      "new_image_hashes_match": 5,
+      "all_source_capture_hashes_match": 71,
+      "main_corrections_checked_status_present": true,
+      "differing_scholarly_attributions_preserved": true,
+      "one_partial_typographic_row_retained": true,
+      "new_designation_appearance_present": true,
+      "corrected_thesis_source_and_book_link_absence_verified": true,
+      "scope": "Complete local private Mike projection; Miami extraction still partial. No public release/deployment."
+    }
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/miami_comparative_proof_2026-10-02_production.json",
+      "sha256": "ea924af6e2f179d2df2c8cddb44d9a0818eb1dabfb072e4d9faa7252ec69ef1f"
+    },
+    {
+      "path": "data/private/manifests/miami_comparative_proof_2026-10-02_trial.json",
+      "sha256": "e316d623632fc7e5e4a815e7b4dfc50c45b1c7523af0f55969e230062ccf86da"
+    },
+    {
+      "path": "data/private/manifests/miami_comparative_texts_2026-10-02.jsonl",
+      "sha256": "37eb796d70cfe05ea9057accd4c7ce9ddb7a0ea03e199791e8b00bd316e321a6"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0015_miami_corrections_and_comparative_quotes.json",
+      "sha256": "2e002ea07bfffca83cb210028cce9db73c3fbebbb612ada1857c0d214addb198"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-13-GLOSS-capture01.txt",
+      "sha256": "91f8a6b7478050263d0d7f74eb13dae6f669b87b7b811b628d2b2d266aba7ac3"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-13-GLOSS-proof02.txt",
+      "sha256": "91f8a6b7478050263d0d7f74eb13dae6f669b87b7b811b628d2b2d266aba7ac3"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-13-capture01.txt",
+      "sha256": "afc6c4b63b18833fe50fddb8ded3a54985b57666e1b19712c4b371e1dbd5208f"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-13-proof02.txt",
+      "sha256": "afc6c4b63b18833fe50fddb8ded3a54985b57666e1b19712c4b371e1dbd5208f"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-ABUD-10-capture01.txt",
+      "sha256": "f9ccf83168d0744d8a6f0ac46cdee1e3dd45b6fdcdfd39194e953cd25436ade2"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-ABUD-10-proof02.txt",
+      "sha256": "f9ccf83168d0744d8a6f0ac46cdee1e3dd45b6fdcdfd39194e953cd25436ade2"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-ABUD-3-capture01.txt",
+      "sha256": "f3b10b00381d11e9f2b43307e69d5d121a00818a8da68c5be91b579a35dd48dc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-ABUD-3-proof02.txt",
+      "sha256": "f3b10b00381d11e9f2b43307e69d5d121a00818a8da68c5be91b579a35dd48dc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-10-11-capture01.txt",
+      "sha256": "55455294f144f4608db64d3af4806607cc4f79a473975b312bc09eda216f1568"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-10-11-proof02.txt",
+      "sha256": "55455294f144f4608db64d3af4806607cc4f79a473975b312bc09eda216f1568"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-10-capture01.txt",
+      "sha256": "3980fc3217fcb27958432f02b0199aeecee3ecd13d8d9e83a43465faf71455dc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-10-proof02.txt",
+      "sha256": "3980fc3217fcb27958432f02b0199aeecee3ecd13d8d9e83a43465faf71455dc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-3-capture01.txt",
+      "sha256": "4d9f403015749635c1415043329f1ab5d554ae3733552a16429008082799e0fc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-3-proof02.txt",
+      "sha256": "4d9f403015749635c1415043329f1ab5d554ae3733552a16429008082799e0fc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-PROPOSAL-HEB-capture01.txt",
+      "sha256": "4d9f403015749635c1415043329f1ab5d554ae3733552a16429008082799e0fc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-PROPOSAL-HEB-proof02.txt",
+      "sha256": "4d9f403015749635c1415043329f1ab5d554ae3733552a16429008082799e0fc"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-PROPOSAL-LATIN-capture01.txt",
+      "sha256": "2446994aaf243b2c0bb09c57b805b1f84fd278157c4a5dedffaa55e856bc13ec"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/HIL-MK-PROPOSAL-LATIN-proof02.txt",
+      "sha256": "2446994aaf243b2c0bb09c57b805b1f84fd278157c4a5dedffaa55e856bc13ec"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MIAMI-EDITION-capture01.txt",
+      "sha256": "1ae23d9a6dd81b6b0e388c609fa0df743a3b0cac785357bfd44d1063aabf188e"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MIAMI-EDITION-proof02.txt",
+      "sha256": "1ae23d9a6dd81b6b0e388c609fa0df743a3b0cac785357bfd44d1063aabf188e"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MIAMI-TRANSLATION-capture01.txt",
+      "sha256": "491c8092d25aa46ad15ed9c7f9cdd696f7a9fb8e4f64cd1bfbf25ffd28bd77c7"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MIAMI-TRANSLATION-proof02.txt",
+      "sha256": "491c8092d25aa46ad15ed9c7f9cdd696f7a9fb8e4f64cd1bfbf25ffd28bd77c7"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-5-7-GLOSS-capture01.txt",
+      "sha256": "0e73729f16966551f358f1d356ab36fdcb84088e38ced52ca6aae62a58db2678"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-5-7-GLOSS-proof02.txt",
+      "sha256": "0e73729f16966551f358f1d356ab36fdcb84088e38ced52ca6aae62a58db2678"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-5-7-capture01.txt",
+      "sha256": "d7eb10711b2ce63278c41cc4f68ff3c35ccad9f14bc04f9f1a2372e323d30b94"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-5-7-proof02.txt",
+      "sha256": "d7eb10711b2ce63278c41cc4f68ff3c35ccad9f14bc04f9f1a2372e323d30b94"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-5-capture01.txt",
+      "sha256": "18d89ab09787fc620c5c2b9f1cb3e8c641e8d651d769e212aba014dafc3af780"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-5-proof02.txt",
+      "sha256": "18d89ab09787fc620c5c2b9f1cb3e8c641e8d651d769e212aba014dafc3af780"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-7-capture01.txt",
+      "sha256": "6829252b23935e31edfa843cc92a4ed57147a8ecacb08fa141277a75a48a3de3"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/MS47-7-proof02.txt",
+      "sha256": "6829252b23935e31edfa843cc92a4ed57147a8ecacb08fa141277a75a48a3de3"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/apply.py",
+      "sha256": "379ea364381a1f393cbcf7562ff03e336906f4f99d9216000813eb7742338967"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/extraction_index.json",
+      "sha256": "8b65f28f3fa9d051c25bb9e40bcee9955407ec15a8979fa1ecfec0ca2b970fae"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/held_pdf_inventory_checkpoint15.json",
+      "sha256": "347ba507a9eac9132329f932d85108c025d1ef5e02360cdfca46b6827a7202bd"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/item_inventory.json",
+      "sha256": "59d6e89e3d6575ad52487f28d9438d37b0e7fc881608ac6246d34ea96611e74f"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/main_correction_entries.json",
+      "sha256": "1ab6bbd527700ac563e7023987511ae91533f6ac92804364628cbdde0880c93a"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/metadata.json",
+      "sha256": "92633da247e438c47a8ab807562506fdee967996c147bd9f8c0d28ab9a6c9e12"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/old_main_manifest_replay_guard.json",
+      "sha256": "fe245a52feb24d3cf4df86b92b65376d0af51b23b9a324030668faacff78caa2"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/pdf_text_runs_discovery.json",
+      "sha256": "8dab9612fd4daabe30de17789f5a0f23996236eea56cb8e144ce077da99caf48"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/prepare.py",
+      "sha256": "4a63a686898f63a5df3f0c07d680514425a4483eb4c53b3bee47cfa998461950"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/production-apply.json",
+      "sha256": "b40f75802ea11e30c2740e41bf0ddda76e9b8e842470691ea35f18e8f6dc8258"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/production-replay.json",
+      "sha256": "e847ff7e2716adb7e8502305fc98aaf7ebe809094dae0663d02688d23963673c"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/production-verification.json",
+      "sha256": "641b43c509167983e494e45223c143c316688fac1e57af883e9fd508e21ab5f6"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/proof_inventory_production.json",
+      "sha256": "9754775df09bb157738858e60c9481df184ab7fadd3da0df5332402e7d00cca5"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/proof_inventory_trial.json",
+      "sha256": "24e1e8cd93671755aca43b6ba02ea5574fee07ed12c729e0e123bbf6c3e594e3"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/record_checkpoint.py",
+      "sha256": "7867ea923b5e91f627dafe5fec8b679bacbc97f0c929125d5db47d168e5a9027"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/scope_inventory.json",
+      "sha256": "3035ac0a0872813055fc6666e0d8d0315bb780c17667ad72e0bf83728dffa1a6"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/source_check.py",
+      "sha256": "c23bd1b700145d58dba72c91798e37cf1dddc05744c69b03b3c666203b0c179e"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/trial-apply.json",
+      "sha256": "2f6299b8c41ebdc32ec86dc956a41a4dec205c1e0adf3391fb8b390f6ca99227"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/trial-replay.json",
+      "sha256": "f50899e59ca71d12f7846b319bdff0bb4f0dba647aef25ef2c93f5c505fbf8a2"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/trial-verification.json",
+      "sha256": "10d312035c7dd6193cf0e0548eb5f38c2bd46dd70026e6b423ca76e968c8e033"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/verify.py",
+      "sha256": "6d8de72aafd99787a5432df13da47a2c2113b7c6ecb949c07413e7a72440da57"
+    },
+    {
+      "path": "research/receipts/miami_comparative_private_page_images_2026-10-02.json",
+      "sha256": "49b9695792eae4bb3404c0db57c895bde5e2f680a41bf8c6808095c7cefc3114"
+    },
+    {
+      "path": "research/reviews/miami_comparative_document_assessment_2026-10-02.json",
+      "sha256": "62b735baf8cddd12b0da393ee7e532a877f194bbe9320553cfd75632da33c628"
+    },
+    {
+      "path": "research/reviews/miami_comparative_evidence_2026-10-02.json",
+      "sha256": "680d0def9a1f1eedc105ca8b3ebff86c9424a8ef77e00c19152eab00972c0a30"
+    },
+    {
+      "path": "research/reviews/miami_comparative_publication_assessment_2026-10-02.json",
+      "sha256": "8b3e25e454349d01963960cc3b4ff3cacfa0a8a732e20418f6a5d0fe5bbc6971"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/reader-verification.json",
+      "sha256": "b1169e29af9ef1e4b2a4ddd8edc18811d0bb3480314f54f3bf1106c87bef5541"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/verify_reader.py",
+      "sha256": "2a5cf2347f10126b475a46259c77716b694880b911177a481693fca4c08a9234"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/reader-build.log",
+      "sha256": "e2b9881477fddc382670baa190cf58df772bab94abea926c93182b66adbfab9a"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/tests-final.log",
+      "sha256": "24b0e13107b0c224f83f802ac2a019ce538f83aa20d47cc7ab9b231d4360d7d2"
+    },
+    {
+      "path": "data/private/research-work/miami-comparative-quotes-2026-10-01/reports-final.json",
+      "sha256": "40e82c5639e6831ad2590ff9939c84f017ebf77e0c3248859752a9ce65601b61"
+    }
+  ]
+}

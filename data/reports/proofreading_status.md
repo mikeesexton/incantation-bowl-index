@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 895 | 119 | 2 | 1016 | 88.1% |
+| Edition text (translation, transcription, transliteration) | 909 | 118 | 2 | 1029 | 88.3% |
 | Other stored text (mostly source extracts and summaries) | 0 | 0 | 665 | 665 | 0.0% |
-| All stored text | 895 | 119 | 667 | 1681 | 53.2% |
+| All stored text | 909 | 118 | 667 | 1694 | 53.7% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 504 | 44 | 1 | 549 |
+| translation | 507 | 43 | 1 | 551 |
 | transcription | 280 | 59 | 0 | 339 |
-| transliteration | 111 | 16 | 1 | 128 |
+| transliteration | 122 | 16 | 1 | 139 |
 
 ## Edition text by source
 
@@ -52,7 +52,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 35 | 40 | 0 | 75 |
 | MS 2053/198 Incantation Bowl To Ward Against Demons (`SRC-9BE3105F3F31`) | 1 | 0 | 0 | 1 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 1 | 0 | 2 |
-| A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum (`SRC-ABUDRAHAM2023-MIAMI`) | 0 | 2 | 0 | 2 |
+| A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum (`SRC-ABUDRAHAM2023-MIAMI`) | 14 | 1 | 0 | 15 |
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 1 | 0 | 0 | 1 |
 | ‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore (`SRC-B891A0061CEA`) | 2 | 0 | 0 | 2 |
 | MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples (`SRC-C54888E36130`) | 1 | 0 | 0 | 1 |
