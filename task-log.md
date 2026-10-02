@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-01 — Codex — Capture thesis Hebrew-letter working editions
+
+- Claimed TEXT-004, TEXT-009 and TEXT-010; opening tree was clean and corpus matched checkpoint11 `59bcae8bf2245e26af8e921bcc720b1b49a4fb05fd22b8b5d5ab53fc383b1c14`.
+- Captured two private Hebrew-letter Mandaic working transcriptions from the actual1949 thesis: DA4 printed26–28/PDF63,65,67 (26 base anchors), DA5 printed70–73/PDF153,155,157,159 (18 anchors). Both have separate partial source checks;4702 characters includes labelled project interventions, not a count of source glyphs.
+- Retained barred/plain forms using combining overline, source dot-runs/break/chip-lacuna markers and separate interlinear material. Private apparatus records full-page image hashes/coordinates, uncertain letters and mixed line15/17 magic signs. Clear neighboring letter runs captured; unresolved signs remain image-bound. These are not complete diplomatic editions or native Mandaic-script recovery.
+- Added2 texts,2 proofreading reviews,1 superseding document assessment and1 audited source-metadata correction. Prior text excerpts unchanged; original source notes preserved in immutable history. Thesis object extraction remains partial. All other preexisting rows identical; integrity and foreign keys pass; four immutable manifests replayed on trial/production without changing either digest.
+- Checkpoint12/private held-source roster and content-free receipt recorded. Corpus:1673 text rows,1008 edition rows (889 checked/117 partial/2 unreviewed);1000 indexed appearances across38 of43 PDF sources. Priority references819/1052,233unlinked; frozen249 cohort and99recovery hashes unchanged,45native-script gaps remain. No completed-case claim, identity merge, acquisition, rights approval or allowance reset.
+- Regenerated roadmap, enrichment/conflict/acquisition/campaign/proofreading reports and private export; rebuilt complete Mike Access with1673texts/1342media/982local-image rows and all71 source captures. Text and capture hashes match; actual1949 source association and absent1967 capture links verified.
+- Validation:376 tests pass;7/7 private-reader checks. Corpus stamped `18970690e79b95a9f17718eecc2dc76a5c6e4813cff84afac49f6a335ec05785`; ten recent backups retained. Local commit only; no push/deployment.
+- Goal remains active. Next: audit remaining held sources, beginning with Juusola1999/vocalisation-volume witnesses. Thesis glyph/attachment questions and two English Latin-glyph ambiguities retain precise follow-up routes; do not let one unresolved passage halt the campaign.
+
 ## 2026-10-01 — Codex — Capture thesis translations and remaining plate pages
 
 **Claimed:** TEXT-004, TEXT-009 and TEXT-010 (active Goal; held thesis translation, plate capture and separate source checks)

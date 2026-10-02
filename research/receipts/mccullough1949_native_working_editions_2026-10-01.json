@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "checkpoint": 12,
+  "created_at": "2026-10-02T03:01:31+00:00",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "59bcae8bf2245e26af8e921bcc720b1b49a4fb05fd22b8b5d5ab53fc383b1c14",
+  "corpus_after": "18970690e79b95a9f17718eecc2dc76a5c6e4813cff84afac49f6a335ec05785",
+  "frozen_cohort_size": 249,
+  "complete_case_investigations_claimed": 0,
+  "newly_linked_frozen_identities": 0,
+  "linked_priority_identities_now": 819,
+  "unlinked_priority_identities_now": 233,
+  "new_text_rows": 2,
+  "new_working_transliteration_characters_including_project_markers": 4702,
+  "base_line_anchors_captured": 44,
+  "partial_source_checks_added": 2,
+  "complete_diplomatic_editions_added": 0,
+  "native_mandaic_script_editions_added": 0,
+  "private_page_images_added": 0,
+  "source_appearances_added": 0,
+  "document_assessments_added": 1,
+  "source_corrections_added": 1,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1000,
+    "appearance_bearing_sources": 38,
+    "registered_pdf_sources": 43,
+    "zero_appearance_sources": [
+      "SRC-795E719C624E",
+      "SRC-8FA39ADCBF5F",
+      "SRC-D721A94FA3B2",
+      "SRC-HORNKOHL-KHAN2020-VOCALISATION",
+      "SRC-JUUSOLA1999-LINGUISTIC-PECULIARITIES"
+    ]
+  },
+  "edition_text_rows": 1008,
+  "checked_edition_text_rows": 889,
+  "partial_edition_text_rows": 117,
+  "unreviewed_edition_text_rows": 2,
+  "frozen_native_gaps": 45,
+  "all_frozen_inventory_hashes_unchanged": true,
+  "allowance_resets_used": 0,
+  "next_actions": [
+    "Continue broader held-source extraction, beginning with zero-appearance Juusola1999 and vocalisation-volume holdings: inspect actual documents for object-specific inscriptions/translations and exact contextual-witness leads. Roster presence alone does not establish source audit completion.",
+    "Thesis specialist/glyph follow-up: DA4 uncertain base glyphs and interlinear wording/attachment; DA5 mixed line15/17 signs and overline fidelity. All44 base anchors are captured as working Hebrew-letter transliteration, but complete diplomatic character sequence and native Mandaic script remain unrecovered. Exact private apparatus regions retained.",
+    "Resolve two DA5 Latin translation glyph ambiguities from printed English or independent author evidence, without regularizing from native. Finish relevant commentary/contextual witnesses.",
+    "Continue frozen institutional concordances and lawful acquisition routes: Segal2000, Ford2025 permitted PDF and McCullough1967/accession register are separate unheld sources; no access-control bypass or uncertain alias."
+  ],
+  "protected_payloads": "Ignored private vault and manifests only; content-free hashes committed. No public release, deployment or push.",
+  "changes": [
+    {
+      "table": "document_assessments",
+      "added": 1
+    },
+    {
+      "table": "source_corrections",
+      "added": 1
+    },
+    {
+      "table": "sources",
+      "added": 0
+    },
+    {
+      "table": "text_proofreading_reviews",
+      "added": 2
+    },
+    {
+      "table": "texts",
+      "added": 2
+    }
+  ],
+  "modified_originals_preserved": [
+    {
+      "table": "sources",
+      "id": "SRC-MCCULLOUGH1949-THESIS",
+      "original_preserved_in_immutable_history": true
+    }
+  ],
+  "all_other_preexisting_rows_identical": true,
+  "validation": {
+    "rehearsal": true,
+    "immutable_manifest_replays": {
+      "trial_manifests": 4,
+      "production_manifests": 4,
+      "trial_digest_after_replay": "143a11d14eebd6633c5fdfd3988a22f9a42a51389a234df3595ac9e0b27f9c49",
+      "production_digest_after_replay": "18970690e79b95a9f17718eecc2dc76a5c6e4813cff84afac49f6a335ec05785",
+      "digest_unchanged": true
+    },
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "python_tests": "376 pass",
+    "reader": {
+      "reader_corpus_digest_matches": true,
+      "audit_checks": "7/7",
+      "all_text_rows_present": 1673,
+      "all_media_rows_present": 1342,
+      "local_image_rows": 982,
+      "new_text_hashes_match": 2,
+      "all_source_capture_hashes_match": 71,
+      "corrected_thesis_source_and_book_link_absence_verified": true,
+      "scope": "Complete local private Mike projection; no public release or deployment."
+    }
+  },
+  "manifests_and_inventory_hashes": [
+    {
+      "path": "data/private/manifests/mccullough1949_native_proofreading_2026-10-01_production.json",
+      "sha256": "4fa37c8be86a6d1c8af246c8fac7c6b0005a2a32823c8ad8edad44b95aad4979"
+    },
+    {
+      "path": "data/private/manifests/mccullough1949_native_proofreading_2026-10-01_trial.json",
+      "sha256": "95539c15affa03e59e61e10eba79bd1d49f6aa2bbda8e2e2aef639faf74f1dc6"
+    },
+    {
+      "path": "data/private/manifests/mccullough1949_native_working_editions_2026-10-01.jsonl",
+      "sha256": "e2d5c41f0d30a2afde75d41bbbe48f5528343b4aa143de59b0849799e55cf191"
+    },
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0012_mccullough_native_working_editions.json",
+      "sha256": "983ac0fe8ec626e71287b04048b15bcc4e6e704ba31fda21ce93217968b81a0b"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/DA4-source-check03.txt",
+      "sha256": "6ad8761edf1fbf0ac4464f2c143967ff9f94370acc0d225bec7e9c74cf668e88"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/DA4-transliteration-capture01.txt",
+      "sha256": "3204a69c07fc72381e7c9d0f6e3b4db38a0b15e5ee2ab626e92b4b0d891eec4b"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/DA4-transliteration-capture02.txt",
+      "sha256": "6ad8761edf1fbf0ac4464f2c143967ff9f94370acc0d225bec7e9c74cf668e88"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/DA5-source-check03.txt",
+      "sha256": "1c6abe84ab066f7359c5f24cd95e5e5a88ed4bba6c2a08d7c1841b9a007a68a3"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/DA5-transliteration-capture01.txt",
+      "sha256": "7967a5e4af7e84bcaff6627ae76a6bf32fa8e688f98b876da1f874c2da525a3b"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/DA5-transliteration-capture02.txt",
+      "sha256": "1c6abe84ab066f7359c5f24cd95e5e5a88ed4bba6c2a08d7c1841b9a007a68a3"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/apply.py",
+      "sha256": "f55f60120f76a919f466dd1a316da53e21b93bd8f5aea1298bc2d30727405c9e"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/capture_revision_notes.json",
+      "sha256": "75054b1bfa276e98b94c98b1bff367b2eb3c769bd3d5507849db27b39200a732"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/held_pdf_inventory_checkpoint12.json",
+      "sha256": "f1db900a1baeef6b4cdd0b5b13418a7b06411e3f928c6dc5b5b11bf1315a5a99"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/item_inventory.json",
+      "sha256": "9a6a1fe04278f49564cf0311f3a77ca9e30cd4be216ccec7717157cbb59cd6c6"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/metadata.json",
+      "sha256": "caa4b31e39ae69fb1eca3c8ef5d0e7718914085a4126b61f7d9168ef26c8118d"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/native_apparatus.json",
+      "sha256": "30a0bd4e4a1507ca6891a63bcfc71e234c55bcecc424daf7283a7d6ee4380f66"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/prepare.py",
+      "sha256": "836e33448ef43661b7843bf6ba9620b4fad236f436bfed313760267fa987d097"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/production-apply.json",
+      "sha256": "d1e2932d1008a284ba7070de5ba252b8fb6b89d287671ddf5c3e141da611ad44"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/production-replay.json",
+      "sha256": "faa89d321b842871aef111b63866e5f25b121e5947143ceb9634e2774a147e39"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/production-verification.json",
+      "sha256": "5572611e6d490353d7f4ea61d9c597a9937b13cc1786d61601e28ca57a054f38"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/proof_inventory_production.json",
+      "sha256": "d539b4d59003e436b4874c32d43cd7c1288e4564614f036c80e91698511b1174"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/proof_inventory_trial.json",
+      "sha256": "8ebfdd9027f37aeed0457b1226a5a0d7c7cd8daccd75fb443db64ace45178aa0"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/record_checkpoint.py",
+      "sha256": "7aa6dcb9e47c08cb36359f0c955eeb2fcf8b99cf3d1fee3154b9b3a339075e18"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/refine.py",
+      "sha256": "a02a186df0fba6dca74c22390a4e779f0b046f6e3005c2b0868da5de23750da6"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/source_check.py",
+      "sha256": "f6fe3f924656050f28ca4781f526cc2e2a1d9ac71fba4685c3f32785b4df908b"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/trial-apply.json",
+      "sha256": "d7ef08ae54e380d08ae8307113fcbcae4d81c1ee944a4d566b3e64921b237624"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/trial-replay.json",
+      "sha256": "e9fe3427bbc324f7825260cdf775cc736b8731d3b8d43481e4c5ae2331683db7"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/trial-verification.json",
+      "sha256": "0ba7a6c0ada7e292aa6ed2fef77b7f17ead05aad620a08ad4bc69e6b1712bd2e"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/verify.py",
+      "sha256": "81fc74471f60263e11bf5dbb1286d45f923d6d11a01659fdd4dfa9671635fa52"
+    },
+    {
+      "path": "research/reviews/mccullough1949_native_document_assessment_2026-10-01.json",
+      "sha256": "f904a5ce15c505f501b67beed81baed9f4505ae00e3606c8454b3edac27e93e1"
+    },
+    {
+      "path": "research/reviews/mccullough1949_native_progress_metadata_correction_2026-10-01.json",
+      "sha256": "c1c943056b4441fdaedd42441cd63d3d16f85fcb40f6a37c81de82e62c993f3a"
+    },
+    {
+      "path": "research/reviews/mccullough1949_native_working_evidence_2026-10-01.json",
+      "sha256": "03731fd342507f7ef853317742c22ac586af8a3762c4b86d85e790a13263dbf6"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/reader-verification.json",
+      "sha256": "1a019986e5f8f14bbc0bf2fdd29f2da806ea94a4d205e183fb7e5a04649fb8ab"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/verify_reader.py",
+      "sha256": "e7ea36b28f0779bc5a717067024ca8dfdd0acceb2d30112164be77356a5b1e11"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/reader-build.log",
+      "sha256": "6876f04d45000834fc4002fcbc539ba9d5402ea749ae12fdc646dd3b8329e00d"
+    },
+    {
+      "path": "data/private/research-work/mccullough1949-native-editions-2026-10-01/tests-final.log",
+      "sha256": "e20d934c9e7990b9687eac7ce5739d29ffe771d912505af1800683faba0b3e4e"
+    }
+  ]
+}

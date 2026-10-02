@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "59bcae8bf2245e26af8e921bcc720b1b49a4fb05fd22b8b5d5ab53fc383b1c14",
+  "corpus_digest": "18970690e79b95a9f17718eecc2dc76a5c6e4813cff84afac49f6a335ec05785",
   "migrations": 20,
-  "note": "Goal checkpoint11: DA5 provided translation, DA4 three audited corrections, thirteen thesis facsimiles and partial native glyph inventory; 376 tests and 7/7 Mike checks.",
-  "recorded_at": "2026-10-02T02:39:13+00:00",
+  "note": "Goal checkpoint12: two partial Hebrew-letter Mandaic working editions,44 base anchors, private glyph apparatus; thesis extraction remains partial. 376 tests and7/7 Mike reader checks; fixed249 cohort unchanged.",
+  "recorded_at": "2026-10-02T03:03:56+00:00",
   "recorded_by": "codex",
   "schema_version": "020_capture_source_corrections",
   "tables": {
@@ -59,8 +59,8 @@
       "rows": 34802
     },
     "document_assessments": {
-      "digest": "23a8b0d789858bf1794418b621c60f08ae4d8222f3dd54eca9cfb8d5dca9013e",
-      "rows": 64
+      "digest": "79f7bfbc34143d93b95180124470adf2f72f9dd924a8327969dc12a754052b48",
+      "rows": 65
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -131,15 +131,15 @@
       "rows": 22
     },
     "source_corrections": {
-      "digest": "254dd2dee3ad941e2aa0a281e2643cebe3e587cf9a6bf7e893a8e7fbac21b9d9",
-      "rows": 61
+      "digest": "18ed176f664b0d0be2fe8d199b06f5c81861a8e18c7c7177d0b6d6fb384be834",
+      "rows": 62
     },
     "source_scope_reviews": {
       "digest": "2dbc406a722a2c9f76c432201805f8c0097b8c365c47acef6e048887aea9c07f",
       "rows": 118
     },
     "sources": {
-      "digest": "7d64db656505d56f83d07c93fe65570eae3dc6b5bab877c56b6ac3f969945bcc",
+      "digest": "513263001776d53d90770a77936a9191d4ebc8742c563af2ae9cee6e0a652da9",
       "rows": 957
     },
     "text_metadata_corrections": {
@@ -147,16 +147,16 @@
       "rows": 8
     },
     "text_proofreading_reviews": {
-      "digest": "0f8f1916f51ec09773a419dbccf0880ccb710d91c88de602976bfeb918d2e116",
-      "rows": 1059
+      "digest": "573e7cecb937180ca3abc809937ff44e92807b3225ee9a98a60f8e9c93f3bfd2",
+      "rows": 1061
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "e210d16b5196645160675642f06b064401d3e8aba58217fa66a81667ae3879c8",
-      "rows": 1671
+      "digest": "64fd394d0de7f953d6b812ee0ac1155582846384da0534765f2c4a453ab915d3",
+      "rows": 1673
     }
   }
 }
