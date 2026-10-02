@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "checkpoint": 52,
+  "created_at": "2026-10-02T23:33:33+00:00",
+  "current_turn_classification": "progress",
+  "previous_turn_classification": "progress",
+  "goal_status": "active",
+  "corpus_before": "ea0478b68bdd10ff58313c70fb356a214d54bc7c91050b380fae157ed9b0c94a",
+  "corpus_after": "2c54cae1405ff0027eed21e5fc662ce155f8a7f17483a2e98f2eaa8d7a665373",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 31,
+  "frozen_unlinked_now": 218,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "complete_case_investigations_claimed": 0,
+  "new_text_rows": 5,
+  "new_native_transcriptions": 5,
+  "new_latin_transliterations": 0,
+  "new_english_translations": 0,
+  "new_proofreading_reviews": 5,
+  "existing_contents_corrected": 0,
+  "all_originals_retained": true,
+  "new_objects": 0,
+  "new_appearances": 4,
+  "new_captures": 0,
+  "new_media": 5,
+  "new_local_image_derivatives": 0,
+  "new_publication_assessments": 4,
+  "new_review_leads": 2,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "edition_text_rows": 1452,
+  "checked_edition_text_rows": 1315,
+  "partial_edition_text_rows": 136,
+  "unreviewed_edition_text_rows": 1,
+  "total_text_rows": 2179,
+  "total_media": 2101,
+  "total_local_images": 1190,
+  "total_source_captures": 87,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 57,
+    "appearance_bearing_sources": 52,
+    "indexed_appearances": 1304
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/ford-residual52-2026-10-02/campaign_case_progress_checkpoint52.json",
+    "sha256": "2d524a474a3efa5f0591fd7fb228ed80e6094fc1db2d153c78076c9edb6eae1a"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/ford-residual52-2026-10-02/held_pdf_inventory_checkpoint52.json",
+    "sha256": "44364b25161c9150b0d6c825134bdbdb924bf5800728be66028f67d30acd6e5b"
+  },
+  "comparative_edition_inventory": {
+    "path": "data/private/manifests/ford-residual52-2026-10-02/production/extraction.json",
+    "sha256": "a3eb757a94cf97be55ee6d3978d9358a1df38a648eb74d52ae124ed46f34c51f"
+  },
+  "private_pixel_review_inventory": {
+    "path": "data/private/research-work/ford-residual52-2026-10-02/pixel-review-inventory.json",
+    "sha256": "c7d72c98bfe1d9fa0b94cca8c90a72e7fbcdfa5cf0e6cfbddeae120487208cc5"
+  },
+  "acquisition_queue": {
+    "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+    "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
+  },
+  "new_access_blockers": 0,
+  "new_miri_notifications": 0,
+  "scope": "Checkpoint52 adds five checked native-only reported/conditional Ford2025footnote words across four existing witnesses. Five complete source pages, five enlarged views and three supplemental primary pages inspected; all previous rows unchanged. Reported dictionary reading/earlier emendation and possible alternatives remain separately attributed; no forced substitutions or invented translation. All59pages text-layer inventory scanned and167source edition rows/73witnesses mapped to current checks; sourcewide residual apparatus coverage remains partial. Held Ford2014acknowledgment identifies ASlabel context with Akram Sawalha; full AS10edition/current location not verified. Held Gordon1934pp466–467identifies IraqMuseuminscribed storagejar/textGcatalogue5497; erroneous IBI Istanbulidentifier/bowlclassification recorded for next separate METArepair. Four appearances/five contextual page-media/four publication assessments/five reviews/two leads added; no candidates/merges/captures/images. Fixed249histories unchanged:31linked/218unlinked/zero complete. Corpus2179texts;1452editionrows=1315checked/136partial/oneunreviewed;2101media/1190images/87captures. HeldPDF57sources/52appearance-bearing/1304appearances. Historicalnative45gaps unchanged; Miri10resolved/19requests unchanged; no reset. Goalactive.",
+  "next_actions": [
+    "Next separate METAcheckpoint repair GordonG5497 copied institution/object metadata against held primary source; resolve AS10full original locator and continue quotation apparatus audit.",
+    "Continue 218 fixed publication-reference gaps; Miri tracks 19 acquisition requests and original editions/photographs and specialist evaluation remain separate work."
+  ],
+  "validation": {
+    "mode": "production",
+    "corpus_before": "ea0478b68bdd10ff58313c70fb356a214d54bc7c91050b380fae157ed9b0c94a",
+    "corpus_after": "2c54cae1405ff0027eed21e5fc662ce155f8a7f17483a2e98f2eaa8d7a665373",
+    "changes": {
+      "appearance_object_links": 4,
+      "appearances": 4,
+      "document_assessments": 1,
+      "leads": 2,
+      "media": 5,
+      "publication_assessments": 4,
+      "source_corrections": 1,
+      "sources": {
+        "current_rows_updated": 1,
+        "original_retained": true
+      },
+      "text_proofreading_reviews": 5,
+      "texts": 5
+    },
+    "all_prior_reviews_and_unaffected_rows_identical": true,
+    "all_preexisting_text_contents_and_rows_identical": true,
+    "source_before_snapshot_retained": true,
+    "prior_extraction_index_retained": true,
+    "source_capture_hashes_verified": 87,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_texts": 5,
+    "new_source_copy_reviews": 5,
+    "new_edition_kind_counts": {
+      "transcription": 5
+    },
+    "new_text_ids": [
+      "TXT-5CAC9E8086DE",
+      "TXT-E37F3233006A",
+      "TXT-517954C94755",
+      "TXT-A46C7ACA0E78",
+      "TXT-41B7F166A099"
+    ],
+    "edition_inventory": {
+      "reading_text_checked": 1315,
+      "unreviewed": 1,
+      "partial_review": 136
+    },
+    "total_texts": 2179,
+    "total_media": 2101,
+    "newly_linked_fixed_cases": [],
+    "fixed_linked_now": 31,
+    "fixed_unlinked_now": 218,
+    "whole_cases_complete": 0,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2179,
+      "all_text_editorial_statuses_verified": 2179,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2101,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "393 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "source_before_snapshot_verified": true,
+    "all_manifests_replay_unchanged": true,
+    "rehearsal_verified": true
+  },
+  "protected_payloads": "Exact readings, PDF, protected before snapshots, page pixels and private manifests remain outside Git. Content-free receipt grants no public reuse.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0052_ford_residual_footnote_words.json",
+      "sha256": "fb91151de9a4c0777e89b08e323d6faa383e158db7cb2c6bae7eb257cb7ddf0d"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/campaign_case_progress_checkpoint52.json",
+      "sha256": "2d524a474a3efa5f0591fd7fb228ed80e6094fc1db2d153c78076c9edb6eae1a"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/held_pdf_inventory_checkpoint52.json",
+      "sha256": "44364b25161c9150b0d6c825134bdbdb924bf5800728be66028f67d30acd6e5b"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/metadata.json",
+      "sha256": "5ac82cd83ebfdd44bef052ca3321591fda6213df809990fff544e1d656136f4e"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/checked-readings.json",
+      "sha256": "f7c67bbefc23b0c950111fdb47db5bdaf215cd4fdbd65e6d6e77f70177292205"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/checked-witnesses.json",
+      "sha256": "e9e2200114a77ff1938db12e9f49fae1d31cbc0fc9832ea618fda67c49372b49"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/pixel-review-inventory.json",
+      "sha256": "c7d72c98bfe1d9fa0b94cca8c90a72e7fbcdfa5cf0e6cfbddeae120487208cc5"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/source-quotation-inventory.json",
+      "sha256": "dda91b5877a1c182ceab0fc0cf000a15a8a3953ee17b0009aa732479ebfcc5e8"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/as10-routes.json",
+      "sha256": "0faf178397b95b745edcd9116c24ece359e470679078933c928a08d2e19b91d5"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/gorg-metadata-repair-evidence.json",
+      "sha256": "930a62b208cd74b4d15ce0aa9ef6eab92d83d75245e5cd184c89690bf6bd5d26"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/trial-prepared.json",
+      "sha256": "d3c7127d121180b005eacd49826f3e2303d1c6decb319f7d7d34c863febf5583"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/trial-apply.json",
+      "sha256": "ddf69dd204e2143b462c825644c51a03f9d4d730d11200f7f5c050caf9e01d5a"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/trial-replay.json",
+      "sha256": "ff98c2d6849ce306483903503adbad44024c51d0380d396d621afb3f0a6bc68f"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/trial-proofreading-prepare.json",
+      "sha256": "3b58ecae801efa8d4fb76391bf77efc775e51fd6fd1781e86c235056ff502f34"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/trial-proofreading-replay.json",
+      "sha256": "f97018ede56d9f26a6a3ec88678ab0417be5830a620ac8abd3db2321229c52e2"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/trial-verification.json",
+      "sha256": "a1b4ab044b5fd4fcfb91902959ce18272969a3b5324ec22d98bf8f8a81c814e5"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/production-prepared.json",
+      "sha256": "3f692a20d59d966b595d8150d0deb69fb781e2fd48908d49d73673496e572c0a"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/production-apply.json",
+      "sha256": "3c00adf766dcdfe6ee311700a33bd1ebb33a49a6d1a46b2ff238ad48a65a8c41"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/production-replay.json",
+      "sha256": "be49882ba0e2dde7c3c0370b6170244dd406f5f7c1ee02e305881ff1c0f12bde"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/production-proofreading-prepare.json",
+      "sha256": "96951425aa202208b78d6a36bd089b3adc2121768a2c22a0b63e34948fcb0a07"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/production-proofreading-replay.json",
+      "sha256": "95883c96d843be0628d0ba16a16025d608f2edfe60a227f22adf1b46db60d751"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/production-verification.json",
+      "sha256": "78c2510aef0bca0ae24bb07c246cb655d18fcdc65c62cad06eefafe54a4d6e45"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/TXT-A46C7ACA0E78.txt",
+      "sha256": "0723ebb1d016c00b5ec6cdeee7a797951ac412284d1b0c3c75e6670cbf05216c"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/publications.json",
+      "sha256": "21b88eb879fc3e7f87f642fcd239d5bc9979da7a5ca414dc758b5456073252d7"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/leads.jsonl",
+      "sha256": "0867337259ecadd17595a21e7eb219e03328fba9ab28a1ad390ad020fc18af1e"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/TXT-5CAC9E8086DE.txt",
+      "sha256": "b338a5df6f315adadae3f45c56783c3ecff06a5541fc8f8cc76ad105eb26b20d"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/reading-specs.json",
+      "sha256": "f7c67bbefc23b0c950111fdb47db5bdaf215cd4fdbd65e6d6e77f70177292205"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/SRC-FORD2025-THUS-OATH-reading-review.json",
+      "sha256": "a7944af2d4f5e8407feeecc19b29c62e54dc290126fd9b0a6d46ca729e5c5ab5"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/TXT-41B7F166A099.txt",
+      "sha256": "ddf34d9df3923869728b137cb24d13f4b06c403009a4202275adf428bad06921"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/documents.json",
+      "sha256": "4b54fa001896e6a7d5180030935ed1c17cae7a0c5edc5944a4b80ece7fa30df2"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/candidates.jsonl",
+      "sha256": "6261d716d96606568112779df2f3216ba3cfb11cf3af42cbb98543291f493698"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/extraction.json",
+      "sha256": "a3eb757a94cf97be55ee6d3978d9358a1df38a648eb74d52ae124ed46f34c51f"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/TXT-E37F3233006A.txt",
+      "sha256": "30fc1e1f7fc0182fd7fbadf806cf4b72256f9ad4e2c7b2da41a2c281d98d587f"
+    },
+    {
+      "path": "data/private/manifests/ford-residual52-2026-10-02/production/TXT-517954C94755.txt",
+      "sha256": "b9082d48c222c8b775906205d4b923aeee28b2431e2e9acc9e0f7f99e53ca782"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/gordon1934-page2.png",
+      "sha256": "eb5251690a7f02e9921179fed804c101b6ac52c808f07502924bea559ef3b182"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/gordon1934-page3.png",
+      "sha256": "9c4d140ca543d5fa123bfd16b1857da8e9bf329bc4e995c780b6fa493d65cb3b"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/gordon1934-page1.png",
+      "sha256": "c122354a3a49e75353aa107e520ebfafa7ca4895411d544491a4ef3173bc462d"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-11.png",
+      "sha256": "ec8e1d77add35d35b86f1e4c3e6014dd2bf115016058e0c0a9d31e520a487cee"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-39.png",
+      "sha256": "627d15ca7fb59b8cbf3b46c57c275002bbf65e7f8d10f6bc8eb7add48d8a9ab8"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/im5497-quote.png",
+      "sha256": "c60808c9332053449c53077c90e391e71b99260a2fd77bd60ddb37b6fd1e7bda"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-10.png",
+      "sha256": "e9794cffce53d37b79aa9aad238dbedc82f5423c0abe0aa9f57673d2cb08af2b"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-12.png",
+      "sha256": "0232c8bdfb7782d4e6f9adfb434517a179733dc5e243b1204e52550cf1b47dcb"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-7.png",
+      "sha256": "0ae11c2d91498079c38c2450e56efbda24ca902bbb219b2543a6bc7476459731"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-16.png",
+      "sha256": "f5afd1b28ee7305aa32af9146f6c5d009be19673dd5118be5a6990f648e280ce"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-14.png",
+      "sha256": "37d40ab4d1026f37e87321a4e2153ec3d303485c3120e2f3c06efef20c9dfdb0"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-29.png",
+      "sha256": "6379e57c98a7287a3439db711225c1e507745605979fb53ff74948289748956a"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-30.png",
+      "sha256": "b43d3f1c238ac6d300008ace3aafc9db5d2762355626ac8e8bd270d678c415db"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-18.png",
+      "sha256": "ae138e02dd14ab3093a8a8691b847a5b9a2cd54c15c7ad486a2ccb675c813556"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/sd22al-emendation.png",
+      "sha256": "fb39e80a35c56fae99a755cfdb8d3bcdc343269ee75c0f6a3f9cd1fa49490f4d"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-26.png",
+      "sha256": "0869fce7ea0c2f76f9342254f835c1146c05c651a06aa8874c38efa37977440a"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-36.png",
+      "sha256": "a7204f4d4d9595e437cce1b92acf3614b73558452db14b2f7f8e64f7057deb57"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-22.png",
+      "sha256": "008156139f2f2b4fdcfceea0ff7a71ed66dea68b1682deccb5aeddc75b14f909"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-37.png",
+      "sha256": "e570580100b815c0e67f41d0c99565037b121132c7d9c9a74142280bc4678f53"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-21.png",
+      "sha256": "9045f694e5ea82895337ed8e2be3b69ef5459914b72e0200af1f02549fcbb6e5"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-35.png",
+      "sha256": "4b917b4d6f792d7451dc0d26f14d0f8e00f7c7d271d010f8de55bed5ad1d47a7"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford-page-9.png",
+      "sha256": "fb991895fb890a9194edacb6c5d68c5b7d0fe37ab2b67df77282e9fc06aaad24"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/ford2014-page1.png",
+      "sha256": "e1ca007bb043cd67779154e7434282f3196c5a5324bed25291fada1fdb379673"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/jnf93-proposal.png",
+      "sha256": "997c73de5873d56d889e7555e954b4c8f8839caf6729d545dddd61eb3edce0fa"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/jnf84-false-start.png",
+      "sha256": "08d98071ef2f67b6ae8a8f9181ffce772798be92cad34860d7cae0542cbdea7b"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/jnf84-yod-proposal.png",
+      "sha256": "43b9707c93960db37ff3d48026595582c255f5125146474e4424836651fbe354"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/specs.py",
+      "sha256": "989d9689f1f62992de829b4108062b275d337d17a663b6d5dc6e32ee46061afa"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/proofread.py",
+      "sha256": "f044f94529477e6641ced1597760e0970d10d562243e34378482f83f62bfc2bd"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/reader-verification.json",
+      "sha256": "c05baf90d2730d0a37430ed1078db811ddd4b1286e4d3f3474efebc9f82f2b2c"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/reader-build-final.log",
+      "sha256": "ef8560c6cddba48bdbc914df5eeb6ea510314f48bfbc20c45f148b8fa42044a9"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/tests-final.log",
+      "sha256": "08ff92ce44f6c29553b1aa3853443995b744c5e326428c2ef00cb489fcfd4e2a"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/node-tests-final.log",
+      "sha256": "cdce66c94d92f39c05d9fca96d88c290963a456ac2fbb901cd4182769f3a9175"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/prepare.py",
+      "sha256": "25df4e3d225044a63497de2a9519d063a98c247c0bc3350c0c8444b86a8b5886"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/apply.py",
+      "sha256": "6d0d1e3a501afcc531221a7d4465f8175e3859e4a47da0bbe39d5c9ec3a55b87"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/record_checkpoint.py",
+      "sha256": "f66ef6504b102142d8507a88e38e7a1c5047092f23e09275ce331a0b6da482df"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/verify.py",
+      "sha256": "4f60e5d9959a9de3e3dd027ded7ef0fcd4f7b87fc3bb3eb3619b44f3d5d0a555"
+    },
+    {
+      "path": "data/private/research-work/ford-residual52-2026-10-02/verify_reader.py",
+      "sha256": "411fd6abe8eeed9677de563d3a41fdb6e4bc2bc7bb4ccbb2567aab66f8e4c87c"
+    }
+  ]
+}

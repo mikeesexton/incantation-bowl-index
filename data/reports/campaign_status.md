@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-02T23:19:40+00:00`
+Generated: `2026-10-02T23:33:35+00:00`
 
 ## Corpus
 
@@ -11,14 +11,14 @@ Generated: `2026-10-02T23:19:40+00:00`
 - Same source duplicate identifier groups: **1**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
-- Source appearances: **2798**
+- Source appearances: **2802**
 - Sources: **967**
 - Dedupe clusters pending: **0**
 - Objects with text: **971**
 - Objects with translation: **570**
 - Objects with provenance: **163**
 - Objects with current location: **877**
-- Open leads: **42**
+- Open leads: **44**
 - Planned queries: **0**
 - Searched queries: **328**
 - Coverage targets remaining: **0**
@@ -143,6 +143,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | in_progress | 1 | Complete the concordance for the controlled French-excavation Susa group: map Schwab 1891 N–P to current museum numbers, later editions, language/script assessments, and any more precise find contexts. Preserve the contemporary Susiana mission report separately from later Susa normalization. |
 | open | 1 | Acquire permitted actual Ford2025 article PDF with seven full editions and twenty synoptic witnesses. |
 | open | 1 | Ford2025 p115/PDF13 footnote40 explicitly reports Moussaieff117 as current NLI JER Ms.Heb.Inc.Bowl065. Bounded quotation linked to trusted exact NLI65number/title. Distinct earlier Moussaieff117 candidates IBI-0CDECCBBB862 and IBI-E0372BE85045 remain separate; inspect complete original edition, photographs and institution-number bridge in a separate CONC review before any merger. |
+| open | 1 | Held Gordon1934p466/PDF2describes IraqMuseumlarge inscribed storagejar; p467/PDF3labels textGcatalogue5497. Existing IBI-28C0A68E5312GorG/IM5497record wrongly carries source-attributed Istanbul5497identifier and bowl classification. Original source corroborates Ford2025IM5497reference; native word linked to existing object without merger. Next separate METAsession repair copied identifier/institution/object metadata via hash-bound manifests preserving wrong originals. This is an IBIcopying error, not conflicting scholarly institution report. No authenticity decision or rights approval. |
 | open | 1 | Inspect held1949 thesis bowl headings, accession numbers, full Hebrew-letter Mandaic transliterations/translations and plates. |
 | open | 1 | Complete thesis native editions with faithful barred letters, interlinear additions, lacunae and magic signs; resolve two DA5 Latin glyphs. |
 | open | 1 | Complete held thesis native texts/DA5 translation and separately verify DA4 line4 Latin magic token. |
@@ -187,6 +188,7 @@ Campaign saturation requires two independent broad sweeps, each adding less than
 | open | 3 | Obtain the complete Hannu Juusola 1999, Linguistic Peculiarities in the Aramaic Magic Bowl Texts, for controlled language and orthography normalization. |
 | blocked | 3 | Obtain authorized access to Mokhtarian 2015, Rabbis, Sorcerers, Kings, and Priests, for contextual enrichment. |
 | open | 3 | Ford2025p144/PDF42quotes one Syriac name spelling from AS10. Single native quoted word source-copy checked; AS not expanded in inspected source collection/dictionary abbreviations. Resolve exact original designation, edition and locator before cross-collection matching or requesting a named original. No access blockage diagnosed or guessed expansion; source-scoped candidate only. |
+| open | 3 | Held Ford2014p235/PDF1footnote1lists AS among private collections and names Akram Sawalha in corresponding acknowledgments. This resolves author collection-label context but does not verify AS10full edition/current ownership or location. Six targeted web queries and held2025abbreviation inventory yielded no full AS10edition; university2014PDFroute currently returned temporary-unavailabilityHTML, but earlier lawfully held2014capture inspected. No current unpublished/no-known-edition claim or fresh inaccessible-document request from ambiguous citation. Continue original AS10edition locator search, retaining earlier lead. |
 | blocked | 3 | Preserve a private content-addressed capture of the Menil Collection record for incantation bowl X 831 if later permitted or supplied through authorized access. |
 | blocked | 3 | Reconstruct Kedar's unenumerated analytical sample of 296 published JBA bowls from the dissertation's citations and working materials. |
 | blocked | 3 | Verify every Apotropaic Arts designation and concordance against its cited primary edition. |
