@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "a67ae6b1c0f211f5d83b4e6fff423b3a86821edc682191aa598cd2e6d0024775",
+  "corpus_digest": "69358af7ca03d0317ac24ed5ffab76fbaf2d73968f87dcb95263aed7cef7a967",
   "migrations": 21,
-  "note": "Checkpoint92: Montgomery38\u201340 corrected;39/40 checked,38 explicit partial glyph review;40 locator corrected with originals retained; inventories, roadmap and private reader refreshed.",
-  "recorded_at": "2026-10-03T12:31:57+00:00",
+  "note": "Checkpoint93: Montgomery32/38 complete printed-copy checks; all77 stored Montgomery reading rows checked; immutable histories and original-script gaps retained.",
+  "recorded_at": "2026-10-03T12:58:34+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,15 +151,15 @@
       "rows": 21
     },
     "text_proofreading_reviews": {
-      "digest": "5017a9bad6fdc9291be05bb1bd518e07b4a2b2fa2a3186b19757bb9d64f36a65",
-      "rows": 1783
+      "digest": "7c648c6d1addc6777b675629a3eb3e9ae487624163c2fac4d07afc1abf1be0f0",
+      "rows": 1785
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "5649688bb9eaeccccae9da6700eff62f23083e7cca6e603436f14085b0385875",
+      "digest": "93732c8502371ac79e1f6acbecd69a3b3502fb475f3e954a9c000a981a570d32",
       "rows": 2283
     }
   }
