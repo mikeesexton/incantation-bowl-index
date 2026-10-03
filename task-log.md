@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Held1999 English copy checks, checkpoint75
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — two corrected English copies and two append-only proofreading reviews, state digest `9d9e39f73bb7`; opening clean/state match checkpoint74. Full original text rows retained in review before snapshots, 37 other tables unchanged. Trial/production digests equal; both manifest replays preserve every row and digest.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent sequential private reader build 7/7. All 2,283 text contents/attributions/types/current statuses, 2,143 media assignments, 1,232 image hashes, 88 capture hashes and 1,880 identity memberships/counts verified. Seven reports/exports regenerated; roadmap, inventories and state recorded.
+
+- Freshly collated Levene1999 M163 English all ten sections/anchors1–30 and Shaked1999 MS2054/124 English all numbered excerpts3–27 against five complete PDF spreads and seven enlarged crops. Corrected copying errors in magical names, modal words, an omitted word and source punctuation; both rows now source-copy checked under explicit normalization policies. Protected observations, original/corrected copies and hash-bound manifests remain private. Source uncertainty, repetition and unusual brackets/anchors retained; no scholarly adjudication or new public approval.
+- Shaked excerpts still omit parts1–2/full native edition; checked copying does not imply whole-bowl completeness. Levene Hebrew-script native capture remains partial and unchanged: exact letters, partial-letter bars and above-line notation require separate collation. Native/specialist checks are not inferred from English copying.
+- Held PDF and non-PDF inventory hashes/statuses independently refreshed against current DB; exactly two roster entries changed. Corpus 2,283 texts / 1,548 reading rows = 1,416 checked / 131 partial / one unreviewed; 58 PDF sources / 53 appearance-bearing / 1,342 appearances, 2,143 media / 1,232 images / 88 captures unchanged. All 1,880 identity memberships retained; frozen249 original members/histories unchanged, live coverage independently recalculated32 linked/217 unlinked/all attempted/zero whole cases complete. No new frozen case attempt claimed.
+- Miri10 resolved/23 requests unchanged; no new access blocker or outbound message. All ten supplied documents already processed; no duplicate intake/reset/contact/purchase/push/deploy/server restart. Last ten prebatch backups retained with hash-bound pruning record.
+- Goal remains active. Continue held native/source-copy gaps and the217 remaining publication routes, distinguishing direct scholarly translations from project working renderings. See `research/receipts/held1999_English75_audit_2026-10-03.json` and private checkpoint0075 for exact scope and evidence hashes.
+
 ## 2026-10-03 — Codex — Penn corroboration and scoped aliases, checkpoint74
 
 **Claimed:** CONC-002 (one CONC workstream).

@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "checkpoint": 75,
+  "created_at": "2026-10-03T06:46:35+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "14489d38fa5791244c79130c0f8fa22603afbcbe76d5ec010b8dc86a68d3a464",
+  "corpus_after": "9d9e39f73bb7c4a194c2ea08a35c37f535dd9097f5f752a1f5246f160676570d",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 2,
+  "corrected_text_rows": 2,
+  "partial_to_checked_reading_rows": 2,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1416,
+  "partial_reading_rows": 131,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/held-names75-2026-10-03/campaign_case_progress_checkpoint75.json",
+    "sha256": "491ee23e8dc9c8e3c91bd00fc0c54c492cd7f40a175f0bf070843e90aa20e213"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/held-names75-2026-10-03/held_pdf_inventory_checkpoint75.json",
+    "sha256": "ac5d2ca499bdaa3599b1d2051cb94f4b2886a8af5f74aa3d51b95dbf455aa08a"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/held-names75-2026-10-03/non_pdf_holdings_checkpoint75.json",
+    "sha256": "23ba61ad913ce74693066d2702de89ee9813c6b8cd825bf471b2033bccfab15c"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 23,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint75 freshly collates two held1999 English copies against all five relevant complete PDFspreads and seven enlarged source crops. LeveneM163all ten sections/anchors1–30 corrected for three doubtful magical-name copies and omitted punctuation; ShakedMS2054/124all bounded numbered excerpts3–27 corrected for two modal-word copies, an omitted word/source parentheses and three name copies. Both now reading_text_checked under explicit normalization policies; source uncertainty/repetition/unmatched brackets retained. Shakedparts1–2/full native edition absent from quotedpages; exact Hebrew-script Levene native row still partial/unchanged. New2immutable reviews retain full original text rows; only2target content/notes rows revised,37other tables unchanged, all1880identity memberships retained. Trial/production digests equal; replay allrows/digest unchanged; original source/locator/editor/rights retained; no new publicapproval. Current2283texts/1548readingrows1416checked131partial1unreviewed. HeldPDFinventory hashes/statuses refreshed against currentDB, exactly2roster changes,58PDFsources53appearance-bearing1342appearances unchanged. Frozen249originalmembers/historiesretained, independently32linked217unlinked/allattempted/zero wholecasescomplete; no new frozen history. All10 supplieddocuments alreadyprocessed; Miri10resolved23requests unchanged/no newblocker or outboundmessage. Goalactive; no reset/contact/purchase/push/deploy/restart.",
+  "next_actions": [
+    "Continue held native and scholarly translation source-copy gaps; separate direct printed translations from project working renderings.",
+    "Levene1999M163 Hebrew-script partial still requires exact sourceletter/bar/above-line collation; English copying check does not verify native text or original bowl.",
+    "Continue remaining217frozen publication routes and original-edition acquisition requests; checked sourceexcerpt is not whole-case completion."
+  ],
+  "validation": {
+    "corpus_before": "14489d38fa5791244c79130c0f8fa22603afbcbe76d5ec010b8dc86a68d3a464",
+    "corpus_after": "9d9e39f73bb7c4a194c2ea08a35c37f535dd9097f5f752a1f5246f160676570d",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 2
+      },
+      "texts": {
+        "removed": 2,
+        "added": 2
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/held_names75_Levene_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 1,\n  \"public_approvals\": 0,\n  \"unchanged\": 1\n}\n"
+      },
+      {
+        "manifest": "data/private/manifests/held_names75_Shaked_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 1,\n  \"public_approvals\": 0,\n  \"unchanged\": 1\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/held_names75_Levene_2026-10-03.json",
+      "sha256": "5623d9b7a54659359d35f6c32b967c79b9ac1cd72d364571cda95d816f31ebb8"
+    },
+    {
+      "path": "data/private/manifests/held_names75_Shaked_2026-10-03.json",
+      "sha256": "2c1013f0596e4b35922d16986d24e2b9f697dd1d36d80d217e717b796bac6a91"
+    }
+  ],
+  "protected_payloads": "Source images/copy observations/before snapshots/corrected scholarly text and ingestion manifests private/outsideGit; receipt metadata/counts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0075_held1999_English_copy_checks.json",
+      "sha256": "6e75dcf57b406681a939e2aa358f4c998c4ffb857ad6761ca396b7d2c9e650eb"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/backup-retention.json",
+      "sha256": "64e0b6f22d17902b4688a441a8aa815255eb077a89b519bd7559f9caa4b9bf0d"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/campaign_case_progress_checkpoint75.json",
+      "sha256": "491ee23e8dc9c8e3c91bd00fc0c54c492cd7f40a175f0bf070843e90aa20e213"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/crop-coordinates.json",
+      "sha256": "66c1f87af9d0aca5cce04479316633aa76db1784fecd2c3c446e5b3e214397ea"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/held_pdf_inventory_checkpoint75.json",
+      "sha256": "ac5d2ca499bdaa3599b1d2051cb94f4b2886a8af5f74aa3d51b95dbf455aa08a"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/inventory-refresh.json",
+      "sha256": "9343eb2f496aa0b95128ba1bfe1f5912003dff69282a0464d8c01ff279dcf0ff"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/metadata.json",
+      "sha256": "d9e97b6bc38f9e0e94071adabe80a1d6ac4c6b85d34eb4ad48329475784e4ee5"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/non_pdf_holdings_checkpoint75.json",
+      "sha256": "23ba61ad913ce74693066d2702de89ee9813c6b8cd825bf471b2033bccfab15c"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/production-verification.json",
+      "sha256": "77534a1b4e71744e4b0e5baf0775354111f69c92fa86d4583c3404180424f7e9"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/source-copy-observations.json",
+      "sha256": "4471b1568cdc69182aa13d9e6a9b74e8b9249b3c6828b8722865e0d48c7519b2"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/targets-before.json",
+      "sha256": "0c83d35a616679cf8f2b4d7fe6c1d6bdebf17c402d86fe19be9a5008ceaf571f"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/trial-verification.json",
+      "sha256": "9097fc0b9f86abebe738ea3daf42025a247d3a88a8096eb6adbeb931f9a26db3"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/prepare.py",
+      "sha256": "c796ccfd480043db1a53a6d101aa0932e3cf5b119958b55d4d592ca250f2669b"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/record_checkpoint.py",
+      "sha256": "b9c6f2d0fec6679f519292e7467bd91e0f972adf3753705ae782ea74a6489e7f"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/verify_batch.py",
+      "sha256": "9bbce6600a82705373f2a810fbbb18147e63db8a6694259e09d99f288fb13631"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Levene-angel-names.png",
+      "sha256": "3509f812ef2d4c4398892c7f55b63f7ba100ad2408274c9a141717153e700b05"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Levene-magical-names.png",
+      "sha256": "a2176e80fb9c12b187a0e838734f7747547cd312b6a78082db8e856fbd3979a9"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked-clause8.png",
+      "sha256": "1a7214d81f33aa1cd4954428ec1321c189c7ff871a751e8e5e574d4304010260"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked-clause9.png",
+      "sha256": "de151836bb9f281bf2a2089f39a62a62e53fb9e58cd1ea2506df1020d7e885dd"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked-name20.png",
+      "sha256": "725308e358bc6d9e1965003e23f6987db46e932c60e2800fbb4e7b439febda0d"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked-names18-20.png",
+      "sha256": "91c0055de8d8880cb82832eed44969ca6c96b8429887c51bb614542853d138f5"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked-names26.png",
+      "sha256": "3ee53bb77a3e8ca0b8a6599cc38d590ceabe7e676a97f2e47894ec1db57af1a6"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/page19.png",
+      "sha256": "59a08880b94a49126524a8079d44301eb96edb7be9b8a270214a260028ebe3fb"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/page2.png",
+      "sha256": "13dc8876d85ce6909cbcd3421e03c017fa7d0a5c1bfbb3cae5b348c13664151d"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/page20.png",
+      "sha256": "ac4052866da0312316cd5f8f1d23484ed113d5e597290c9ef17a2291f44a3446"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/page3.png",
+      "sha256": "fb2d1135dff21b56aa30c53e5f4f934e688f6e0546970dfc475ff09cde6d65f9"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/page4.png",
+      "sha256": "73217f086c10ca56d3ed37ab70e7d3169d02e123f622199705208d847c3028a0"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/page5.png",
+      "sha256": "2d24154f430a8252132b428ee7598a73bb20c70719ef81420f6d4a5509b07fb3"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Levene.diff",
+      "sha256": "13338963665c9c73d43dac1ad517e51fd45bd799ef8e1dba15554cbed18ac7ad"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked.diff",
+      "sha256": "9015304f2542fa649dd084a007e26cf907794a8541cc84cb103905b12e7196ff"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Levene-English-corrected.txt",
+      "sha256": "8269152def33bc065818ee4ba5bfb58ee918e20e3c59fc63219d204cb957d424"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/Shaked-English-corrected.txt",
+      "sha256": "4d7b7d49115c3fc6ef5120d180cf077f1a4d1cb499d90207d477094b835dd78f"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/reader-build-final.log",
+      "sha256": "261d56b72f8e388b23c447eabae9524342bdda4a4f8e713bccd1451f90de680b"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/tests-final.log",
+      "sha256": "a3fb13c9bd70146f11244e4b81ca40b1aaab9efcb8078c578ba238dbc4136dd4"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/node-tests-final.log",
+      "sha256": "0e22d2888a89824a5f96f6f17295d6634875cd52c3559fad82d7dff6ccae0aac"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/verify_reader.py",
+      "sha256": "1808d71238d6bfc1d07d9baf744ad952f0f7d0d728a86437688892613bcd16f6"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/reports-final.json",
+      "sha256": "c7b8eaeb61df459db01dc01a03886298b61929b25a1334e49fe7b93e7089b795"
+    },
+    {
+      "path": "data/private/research-work/held-names75-2026-10-03/regenerate.py",
+      "sha256": "08dee48723c5ca5232b3ad63e3cdd48830423ecbca68611f828e466e0356c746"
+    }
+  ]
+}

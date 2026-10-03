@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "14489d38fa5791244c79130c0f8fa22603afbcbe76d5ec010b8dc86a68d3a464",
+  "corpus_digest": "9d9e39f73bb7c4a194c2ea08a35c37f535dd9097f5f752a1f5246f160676570d",
   "migrations": 21,
-  "note": "Checkpoint74: append2Penn899corroboration/limit evidence rows, originaldecision retained; scopedaliases and two annotatedMontgomeryidentifiers checked",
-  "recorded_at": "2026-10-03T06:35:02+00:00",
+  "note": "Checkpoint75: two held1999 English copies corrected and source checked with original rows retained; inventories refreshed, frozen249 unchanged, 451tests and private reader7/7 verified.",
+  "recorded_at": "2026-10-03T06:47:49+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,15 +151,15 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "8f47eb29fe260dd40ec25e5edca110cdf92cfcce7181fb74b1021326ea727035",
-      "rows": 1730
+      "digest": "f5d40fe8948f4b1a842c1ab758cf8164c5755c5d1768fd49b8c143edad359795",
+      "rows": 1732
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "a6a03db45c954c745f2a16034dd3e0f316d129ba4114d655f43a51392e48ed48",
+      "digest": "651675b9acc8093290eddffa4cb694297ac95b66b1de474c3bb3eac411e00c43",
       "rows": 2283
     }
   }
