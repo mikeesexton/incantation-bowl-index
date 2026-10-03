@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-03T05:47:18+00:00`
+Generated: `2026-10-03T06:05:19+00:00`
 
 ## Portfolio status
 
@@ -129,7 +129,7 @@ Current evidence: **224 scholarship works indexed; 58 with a source-linked held 
 | Measure | Current |
 |---|---:|
 | Candidate source records | 2232 |
-| Working physical identity hypotheses (all statuses) | 1882 |
+| Working physical identity hypotheses (all statuses) | 1880 |
 | Source appearances | 2840 |
 | Sources | 967 |
 | Source documents with current assessments | 74 |
@@ -142,7 +142,7 @@ Current evidence: **224 scholarship works indexed; 58 with a source-linked held 
 | Review required (missing or no longer valid) | 608 |
 | Existing reviews requiring revalidation | 48 |
 | Substantive conflict instances | 16 across 14 identities |
-| All identities with a publication reference | 1121/1882 (59.6%) |
+| All identities with a publication reference | 1121/1880 (59.6%) |
 | Probable/confirmed identities with a publication reference | 835/1052 (79.4%) |
 | Probable/confirmed identities reviewed as having no known edition | 0/1052 (0.0%) |
 | Probable/confirmed identities with a publication disposition | 835/1052 (79.4%) |
@@ -166,16 +166,16 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1288 | 68.4% |
+| Location | 1286 | 68.4% |
 | Provenance | 375 | 19.9% |
 | Dating | 484 | 25.7% |
 | Dimensions | 670 | 35.6% |
 | Material | 410 | 21.8% |
-| Language | 1028 | 54.6% |
+| Language | 1028 | 54.7% |
 | Script | 98 | 5.2% |
 | Text Edition | 564 | 30.0% |
 | Translation | 579 | 30.8% |
-| Image | 622 | 33.0% |
+| Image | 622 | 33.1% |
 
 ### Content-facet coverage
 
@@ -183,10 +183,10 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 567 | 30.1% |
+| Publication | 567 | 30.2% |
 | Condition | 314 | 16.7% |
 | Client | 225 | 12.0% |
-| Vessel Form | 174 | 9.2% |
+| Vessel Form | 174 | 9.3% |
 | Biblical Intertexts | 171 | 9.1% |
 | Ritual | 122 | 6.5% |
 | Text Description | 93 | 4.9% |
@@ -332,7 +332,7 @@ Reconcile physical bowls across museum records, publications, auctions, dealers,
   - Evidence/status: Twenty-four checked item-page mappings remain. Audited importer repair corrected 137 Segal claim locators, including BM 117882 to 119ES, preserving original claims in immutable history. The uncertain language assessment and 142/159 discrepancy still need authorized full-catalogue inspection; no identity links changed.
 - [ ] **CONC-002 — Finish Penn Museum concordances** · In progress · Research
   - Done when: Every identifiable Montgomery/Penn publication number is mapped to a current Penn object or a documented lost/unresolved state.
-  - Evidence/status: All forty main Montgomery/Penn concordances now have dated, evidence-bound current museum-page reviews (2026-09-05): Object Number and explicit PBS III number agree in every case. Register/heading discrepancies for 14, 19 and 40 remain preserved; B2972 explicitly corrects text 40 to B2971. Nine exposed field differences were individually reviewed and five directed Penn relationship assertions were recorded without merging identities. Broader Penn holdings and the historical 150-plus inventory still need reconciliation.
+  - Evidence/status: All forty main Montgomery/Penn concordances now have dated, evidence-bound current museum-page reviews (2026-09-05): Object Number and explicit PBS III number agree in every case. Register/heading discrepancies for 14, 19 and 40 remain preserved; B2972 explicitly corrects text 40 to B2971. Nine exposed field differences were individually reviewed and five directed Penn relationship assertions were recorded without merging identities. Broader Penn holdings and the historical 150-plus inventory still need reconciliation. Checkpoint72 applies Mike one-designation ruling to exact Penn-scoped85-48-914/CBS85-48-914pair and85-48-953/CBS85-48-953pair. All original objects/appearances/identifiers/claims/texts/media remain;3newdedupe decisions/6evidence rows only, including85-48-899insufficient-evidenceflag. Broad stored-identifier screen350rows/331normalizedPennnumbers exposed two supplemental pairs, not all unscoped designations/aliases. Moriggi actual institution/designation headings printed185/PDF203 and193/PDF211, Brandp2items28/31 and exact current museum pages inspected.953source edition includes two labelledfragments plus source-assigned unnumbered fragment/fivepreservedlines; same-number linkage does not independently verify extra fragment assignment or full present restored inscription.899museum13lines/6fragments versus edition14lines/7potsherds retained without adjudication; footnote311notes earlier Müller-Kessler13count with14printedlines but does not settle museum count conventions. Museum Iran/Nippur field flagged separately, no verified findspot claim. CBS9012already a four-member identity with existing Mike reviews, no redundant merge. All earlier39table rows unchanged; trial/production semantic payloads equal; both manifests replay with unchanged fingerprints/allrows, same-value candidate updates possible. Identitytotal1882to1880; no new scholarly publication-reference/text/image/capture/rights rows. One frozen history extended, original249case IDs/members retained with supplemental current membership; actual currentreference coverage32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus2283texts/1548readings=1414checked/133partial/1unreviewed;2143media/1232images/88captures;58PDFsources/53appearance-bearing/1342appearances. Miri10resolved/21requests unchanged, no inaccessible acquisition invented for browser-accessible records. All ten supplied documents processed. Goal active; next lawful Penn source/photo capture and899count conventions/remaining original-edition routes. No reset/publicapproval/scholarlyauthenticityorfragmentadjudication/contact/purchase/push/deploy.
 - [ ] **CONC-003 — Finish National Library of Israel concordances** · In progress · Research
   - Done when: The 205 harvested records, 216-object donation statement, exhibition names, and seven Klagsbald bowls are reconciled without inventing missing item identities.
   - Evidence/status: The public NLI catalogue now accounts for three separately modelled groups: the existing 205-record Ms. Heb. 9467.3–207 run; 74 newly retained candidate appearances numbered Bowl 1–74 whose MARC owner is the Israel Antiquities Authority; and eight separately shelfmarked NLI holdings comprising Ms. Heb. 6079=34 and Ms. Heb. 6417.1–7=34. Exact MMS, shelfmark, owner, catalogue-title and provenance metadata are retained without expanding the unexplained abbreviation רה"ע or merging identities. The 205 titles omit numbers 2, 52, 97, 98, 152, 202–206 and 216; NLI clarification is pending.
@@ -613,6 +613,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-10-03:** Checkpoint72 applies Mike one-designation ruling to exact Penn-scoped85-48-914/CBS85-48-914pair and85-48-953/CBS85-48-953pair. All original objects/appearances/identifiers/claims/texts/media remain;3newdedupe decisions/6evidence rows only, including85-48-899insufficient-evidenceflag. Broad stored-identifier screen350rows/331normalizedPennnumbers exposed two supplemental pairs, not all unscoped designations/aliases. Moriggi actual institution/designation headings printed185/PDF203 and193/PDF211, Brandp2items28/31 and exact current museum pages inspected.953source edition includes two labelledfragments plus source-assigned unnumbered fragment/fivepreservedlines; same-number linkage does not independently verify extra fragment assignment or full present restored inscription.899museum13lines/6fragments versus edition14lines/7potsherds retained without adjudication; footnote311notes earlier Müller-Kessler13count with14printedlines but does not settle museum count conventions. Museum Iran/Nippur field flagged separately, no verified findspot claim. CBS9012already a four-member identity with existing Mike reviews, no redundant merge. All earlier39table rows unchanged; trial/production semantic payloads equal; both manifests replay with unchanged fingerprints/allrows, same-value candidate updates possible. Identitytotal1882to1880; no new scholarly publication-reference/text/image/capture/rights rows. One frozen history extended, original249case IDs/members retained with supplemental current membership; actual currentreference coverage32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus2283texts/1548readings=1414checked/133partial/1unreviewed;2143media/1232images/88captures;58PDFsources/53appearance-bearing/1342appearances. Miri10resolved/21requests unchanged, no inaccessible acquisition invented for browser-accessible records. All ten supplied documents processed. Goal active; next lawful Penn source/photo capture and899count conventions/remaining original-edition routes. No reset/publicapproval/scholarlyauthenticityorfragmentadjudication/contact/purchase/push/deploy.
 - **2026-10-03:** Checkpoint71 visually resolves held Kedar CBS85-48-914matches: printed105n434/119n497 are comparison notices; Table8/Image6 and continued native/English quotes belong to JBA56/MS1928/8. No neighboring text/photo assigned to CBS and no summary promoted.179PDFpages searched by selected designation/client patterns; five exact/context pages visually inspected, not a sourcewide visual audit. Penn ownbrowsersearch returns exact86242record and3advertised download views; catalogue already indexed under separateobjectIBI-B344613F0FDC, frozenCBSobjectIBI-7F45E9808B4D. Separate CONCdesignation review then lawful image/sourcecapture is concrete next work. Blank museum bibliography and2019unpublished notices are not present edition-absence findings; webtoolfailure is not browser/site denial. One frozen history appended;249cases/32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus unchanged2283texts/1548readingrows=1414checked/133partial/1unreviewed;2143media/1232images/88captures.58PDFsources/53appearance-bearing/1342appearances. Miri10resolved/21requests unchanged; no new inaccessible document claim for available image links. All ten supplied documents processed. Goal active; no merge/newcapture/text/review/publicapproval/reset/contact/push/deploy.
 - **2026-10-03:** Checkpoint70 captures/source-copy checks two bounded English renditions on frozen cases: complete displayed museum quotation for Cincinnati A/1331(fourHTMLparagraphs/twoellipses/sourcepunctuation/unnamedtranslator) and short source-qualified preliminary MS2056/12collectionquotation(five loss dots/unnamed photo reader). One robots-permitted HTML capture transferred from immutable rehearsal receipt without refetch; Schøyen uses already held HTML. No native edition, full translation extent/accuracy or scholarly publication verified. Prospective ShaulShakededitor not assumed translator. Bacher6412source calls marks mock writing and supplies no transcript/translation in inspected itembody; source report only, no project script/authenticity verdict. Two immutable reviews keep originals; all earlier39table rows unchanged, trial/production semantic payloads equal, five replayszero. Three frozen histories appended;249cases/32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus2283texts/1548readingrows=1414checked/133partial/oneunreviewed, including bounded/provisional/excerpt rows rather than full independent editions.2143media/1232images/88captures; PDF58sources/53appearance-bearing/1342appearances unchanged, non-PDF inventory current. Miri10resolved/21requests retained, A1331documentation request refined; all ten supplied docs processed. Goal active; no reset/publicapproval/identitydecision/push/deploy/contact.
 - **2026-10-03:** Checkpoint69 returns to the frozen publication-reference cohort: Cincinnati A/1331 selected accession/institution/client/formula patterns searched across all58heldPDFsources/60captures/56unique payloads/9761pages; zero text-layer hits,576empty/664sparse pages and variant/unnamed-description limitations retained. Museum displays English but corpus only summaries; translator/original edition unspecified. Exact acquisition/translation documentation requested for Miri, not an invented publication. Two exact NLI routes unavailable in web tool; first browser opens challenge, stopped without interaction. Existing NLI image group reused. Three frozen histories extended;249cases/32linked/217unlinked/zero wholecasescomplete unchanged. Ten supplied documents remain processed; Miri10resolved/21requests. No corpus mutation/new text/identity/rights decision/reset/deploy/push.

@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "9e0bce8608c8aec392178905fb3bbb1c34b93feb1e9093bdc296f9e0a361eeed",
+  "corpus_digest": "1bd984f250fbc32bf9e159c2a4ec54fa6c0616f0a4abbc25f23bc41501831937",
   "migrations": 21,
-  "note": "Checkpoint71: Kedar CBS scope and exact Penn image routes audited; corpus unchanged.",
-  "recorded_at": "2026-10-03T05:48:40+00:00",
+  "note": "Checkpoint72: two exact Penn designation links and one contrary-count flag; originals preserved.",
+  "recorded_at": "2026-10-03T06:07:54+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -55,12 +55,12 @@
       "rows": 12
     },
     "dedupe_candidates": {
-      "digest": "3c97b84a8f44a71995761ed16cf5d3ff14eb1aacc36b98ee17705b6e63b93eae",
-      "rows": 34798
+      "digest": "6a3098cb5e68ddaf0acdd2f2c4cfcb93ccb3f462bef9cf521ab608f898507ff3",
+      "rows": 34801
     },
     "dedupe_evidence": {
-      "digest": "ecf0473b6243a7938f059e7159f62283ee47d3057ae2336ba2ab89f5042e9095",
-      "rows": 34804
+      "digest": "ebff065a0c30e44db8e0bb8f7b3079c9c54d41392e559ce52f62724ea7f48923",
+      "rows": 34810
     },
     "document_assessments": {
       "digest": "d06f057a0a520bb748803489656e56889280de6eea1a076d9553a745346da1c1",

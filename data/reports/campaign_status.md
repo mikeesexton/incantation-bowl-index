@@ -1,13 +1,13 @@
 # Discovery campaign status
 
-Generated: `2026-10-03T05:47:18+00:00`
+Generated: `2026-10-03T06:05:19+00:00`
 
 ## Corpus
 
 - Candidate objects: **2232**
 - Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'inscription_line_count', 'language', 'layout', 'length_cm', 'neck_width_cm', 'photograph_credit', 'physical_form', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_number', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class', 'width_cm']**
-- Estimated distinct objects after resolved dedupe: **1882**
-- Resolved duplicate records: **350**
+- Estimated distinct objects after resolved dedupe: **1880**
+- Resolved duplicate records: **352**
 - Same source duplicate identifier groups: **2**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
