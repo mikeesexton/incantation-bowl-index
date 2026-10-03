@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1389 | 133 | 1 | 1523 | 91.2% |
+| Edition text (translation, transcription, transliteration) | 1412 | 133 | 1 | 1546 | 91.3% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 727 | 735 | 0.1% |
-| All stored text | 1390 | 140 | 728 | 2258 | 61.6% |
+| All stored text | 1413 | 140 | 728 | 2281 | 61.9% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 722 | 43 | 1 | 766 |
-| transcription | 503 | 70 | 0 | 573 |
-| transliteration | 164 | 20 | 0 | 184 |
+| translation | 728 | 43 | 1 | 772 |
+| transcription | 512 | 70 | 0 | 582 |
+| transliteration | 172 | 20 | 0 | 192 |
 
 ## Edition text by source
 
@@ -40,7 +40,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | What Will Save the Household? (`SRC-455442AA727F`) | 1 | 0 | 0 | 1 |
 | Aramaic Magic Bowl: The Protection of the Family (`SRC-4955445F0A7A`) | 1 | 0 | 0 | 1 |
 | Auction 32: Objects, Judaica, Israeliana, Archeology and Medals (`SRC-5119876CE9C6`) | 2 | 0 | 0 | 2 |
-| Syriac and Mandaic Incantation Bowls (`SRC-513E8FD6E55D`) | 71 | 0 | 0 | 71 |
+| Syriac and Mandaic Incantation Bowls (`SRC-513E8FD6E55D`) | 93 | 0 | 0 | 93 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-53202A840D51`) | 4 | 4 | 0 | 8 |
 | Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (`SRC-53B93C8C8A0E`) | 51 | 0 | 0 | 51 |
 | Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’ (`SRC-5F7E0BA65D6E`) | 0 | 1 | 0 | 1 |
@@ -70,7 +70,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 1 | 1 | 0 | 2 |
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
-| Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 6 | 0 | 0 | 6 |
+| Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 7 | 0 | 0 | 7 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
 | Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 37 | 0 | 0 | 37 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |

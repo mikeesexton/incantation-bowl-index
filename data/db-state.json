@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "e9c7e17e223e60a118e8cab632cba02452904ab58637a6349e6def0776803b10",
+  "corpus_digest": "0a9209b7f47a2eb35a6c56eafbbbeb9b81dd172a7e14ed73a0d01f3eb1d80fcb",
   "migrations": 21,
-  "note": "Checkpoint67: 28 bounded Ford\u2013Abudraham2018 comparative rows checked, 14Syriac/2Hebrew/12English, exact source geometry/marks/grey/one outlined glyph retained. Earlier39table rows unchanged, trial/production equivalent and3replayszero. Reader2258texts verified,451tests passed. Frozen24932linked/217unlinked, no wholecase completion. fgaf025already processed/hashverified; Miri10resolved/20requests unchanged. Goalactive; no reset/push/deploy.",
-  "recorded_at": "2026-10-03T04:36:57+00:00",
+  "note": "Checkpoint68: 23 source-checked bounded variants/quotes from Ford\u2013Abudraham2018 and held Ford2014. Qualifiers, source grey/brackets/marks/two outlined letters retained; all prior39table rows unchanged,4replayszero,trial/prod equal. Princeton Ex4283primary number/quote verified, original/revised edition still open. Reader2281texts verified,451tests passed. Frozen24932linked/217unlinked/no wholecase completion; Miri10resolved/20requests. Goalactive,no reset/push/deploy.",
+  "recorded_at": "2026-10-03T05:02:38+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "84fe14d5f686da35a77efea384784d58bb2faebf49ae3b3efe87550326da688d",
-      "rows": 2838
+      "digest": "ab10545255c26f82e2a4b9dd20f01b9c456d5adde3c36e4c24e0a61cb7cd14e2",
+      "rows": 2840
     },
     "appearances": {
-      "digest": "9c8fde5ea19828646a8d37d1a2c573924e14121dca9179226f45dfd257383935",
-      "rows": 2838
+      "digest": "28e91644a778b52bfabb474b6ea23cb6fa89593a6514bfff619500a0b265b08a",
+      "rows": 2840
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "974d5a6fc28774ca0248e9d2bc1aed0e74553ba6c97f145c92dfbeb2788eab58",
-      "rows": 9203
+      "digest": "06f4de0170412ca451f2b5e403b0763e5e7bf0e545ad8deb4e65349a0f2ac0e2",
+      "rows": 9205
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,16 +63,16 @@
       "rows": 34804
     },
     "document_assessments": {
-      "digest": "44b3eebbe95ac348b3c7699b79cec033ad8ea0384351160b943c3fa4eb394031",
-      "rows": 125
+      "digest": "d06f057a0a520bb748803489656e56889280de6eea1a076d9553a745346da1c1",
+      "rows": 127
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
       "rows": 215
     },
     "identifiers": {
-      "digest": "d33b045f7902d5ec846d504353a10d3c384b8eb41f4b019a17a3759d5613749f",
-      "rows": 5229
+      "digest": "00e70be998b8a73af59e323dcd50ba79cbd8f111517af75c7aaedf0d4ab3cc99",
+      "rows": 5231
     },
     "leads": {
       "digest": "77149f8277d5555db72b1d08513e3db1d54e15934eb2d65e2cebd44597c2f0b2",
@@ -107,8 +107,8 @@
       "rows": 2
     },
     "objects": {
-      "digest": "e6b84d21f2ebe026f19756ddc9abd6b4da85dafe014a1b30d7516edfa889f18c",
-      "rows": 2231
+      "digest": "d95a7925d9e9ca433a4c9937a345c9ad7f8da044940990d1299f1deb00f65749",
+      "rows": 2232
     },
     "publication_assessments": {
       "digest": "a42cbffc0c8052a9cc510e682cd0b8cf0f71624e351a6ba69884e3a9c6849c83",
@@ -151,16 +151,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "b73500024de5bc9193dbf34b181c6fe565511dda371900c9de0c1bae2a9a620f",
-      "rows": 1705
+      "digest": "d3ced2da13e1c75ee2920e3506191bee9c08d412dde83cd207112f8d1935c042",
+      "rows": 1728
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "9fdd117c09b2a79a77da4e42a6515cdf60da580ef83a1be15ba1e022bceb7153",
-      "rows": 2258
+      "digest": "c918c954ff53dd86d3156369431a902b5ab5838d8ad6bdccd430fad6ec92b653",
+      "rows": 2281
     }
   }
 }
