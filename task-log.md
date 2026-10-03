@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Eight remaining Jena quotations/apparatus checked, checkpoint95
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — eight appended proofreading reviews, seven revised copies and one unchanged Syriac copy; digest `bfe0dfda9c41`. Opening clean/state matched94. Complete originals and earlier reviews retained; 37 other tables and all 1,880 memberships unchanged. Trial/production digests equal; replay changed no rows or digest.
+**Tests:** 394 Python + 57 Node = 451 passed. Subsequent private reader build passed 7/7 audits; independently verified all 2,283 text contents/attributions/classifications/statuses, 2,143 media assignments, 1,232 local image hashes, 88 captures and 1,880 identity memberships/counts. Seven reports/exports regenerated; roadmap, inventories and state current.
+
+- Eight bounded Jena2020 quotations/apparatus checked on complete held source pages59/60/61/62/159, full blocks and actual SiglaPDF23. Exact base letters and 85 gray preservation positions verified against both pixels and PDF glyph/color geometry. MS2053/198 had three extra copied letters; BM117824 required two restoration-boundary corrections. The Syriac quotation already matched, including its existing source-specific mark. No new mark, inferred letters or original-script recovery.
+- Both current and earlier MK apparatus readings retained explicitly. Source repetitions, false starts, restoration brackets, uncertain readings and gray letters kept separately; no harmonization or scholarly adjudication. Initial clipped crops were widened; SD40 bound extended to include its actual opening character before certification. Complete original rows remain in appended reviews; checked status covers the bounded source copy, not clay or complete underlying editions.
+- Inventory: 1,477 checked / 70 partial / one unreviewed reading rows. Jena: 223 checked / four partial; its remaining four are main native Mandaic texts37–40. All77 Montgomery checks retained. Historical45 native gaps and40 English project drafts remain separate;31 Pognon French originals already checked.
+- Both inventories refreshed; exactly eight target entries changed. Frozen249 original members/histories retained exactly:32 linked/217 unlinked/all attempted/zero whole cases complete; no new frozen-case attempt. Protected source expression/images/notes/manifests remain private outsideGit; receipt contains metadata and hash pointers.
+- Allten supplied documents already processed, including fgaf025.pdf. Miri10 resolved/26 requests unchanged; no new access blocker, outbound message or allowance reset. No purchase, uncertain merge, rights decision, push, deployment or server restart.
+- Goal active. Continue four remaining Jena native Mandaic copies, other held readings and217 publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0095_Jena_remaining_quotation_checks.json`. Receipt: `research/receipts/Jena_comparisons95_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Eleven Jena quotation/gray-letter checks, checkpoint94
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).

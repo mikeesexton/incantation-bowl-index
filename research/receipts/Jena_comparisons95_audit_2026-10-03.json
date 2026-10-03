@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "checkpoint": 95,
+  "created_at": "2026-10-03T13:47:46+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "f91f6dd02d43d757d0ea0c5f38a304cf6e03b03a653be40415044af5c9a8570b",
+  "corpus_after": "bfe0dfda9c41338712a1da1cca0da4d959aec06bd6afb0a09eb1e5d4daf56ce0",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 8,
+  "corrected_text_rows": 7,
+  "text_rows_with_unchanged_wording": 1,
+  "partial_to_checked_reading_rows": 8,
+  "base_letter_correction_rows": 1,
+  "extra_copied_letters_removed": 3,
+  "restoration_boundary_correction_rows": 1,
+  "restoration_boundaries_corrected": 2,
+  "source_gray_glyph_positions": 85,
+  "existing_Syriac_source_marks_retained": 1,
+  "distinct_quote_locations": 8,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1477,
+  "partial_reading_rows": 70,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Jena-comparisons95-2026-10-03/campaign_case_progress_checkpoint95.json",
+    "sha256": "927500f9550a2e42f20d206f56c0a512e6ec8fe8a1f300b04bc447c897f8de3e"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Jena-comparisons95-2026-10-03/held_pdf_inventory_checkpoint95.json",
+    "sha256": "b8f06cf34c61983c89e62f5abbcdb613ae19b9b95976a2c97fd668a99cb3637f"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Jena-comparisons95-2026-10-03/non_pdf_holdings_checkpoint95.json",
+    "sha256": "0dd678f9493f3b0e2b54fffffd9dc067925cf11c611779b2db2e79f883872006"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "native_script_recoveries": 0,
+  "scope": "Checkpoint95: eight bounded Ford–Morgenstern2020 Jena quotations/apparatus checked against five complete held source pages59/60/61/62/159, full quotation blocks/continuations and SiglaPDF23. Exact base letters and85 gray-glyph positions match source PDF character/color/geometry data and separately inspected pixels/brackets/punctuation. Seven wordings revised, one accurate native Syriac wording retained. Three extra copied letters removed in one row and two restoration boundaries corrected in another; source spacing/false starts/repetitions retained. Both current/MK apparatus reports remain explicit, no scholarly adjudication. One existing Syriac source mark independently verified/retained, zero new marks or native-script recovery. Eight appended proofreading reviews preserve complete originals/all earlier reviews;37 other tables/all1880 memberships unchanged. Trial/production digests equal, replay zero/all rows and digest unchanged. Inventory1477checked/70partial/oneunreviewed; Jena223checked/4partial of227stored readings, all77Montgomery checks retained. Both inventories refreshed/exactlyeight target entries changed. Frozen249 original members/histories retained exactly:32linked/217unlinked/allattempted/zero wholecases complete, no new frozen attempts. Historical45native gaps/40English projectdrafts unchanged;31Pognon French originals already checked. Source/editor/locator/language/script/rights/public0 unchanged. Allten supplied documents already processed; Miri10resolved/26requests unchanged, no new inaccessible source/message/reset/contact/purchase/merge/rights/push/deploy/server restart. Goal active; next four remaining Jena native Mandaic copies37–40, other held readings and publication cases.",
+  "next_actions": [
+    "Check four remaining Jena native Mandaic copies37–40 against all source letters, gray positions and restoration boundaries.",
+    "Continue70partial/oneunreviewed readings and217publication cases, separating original-script recovery from source-copy checks and scholarly translations from40English projectdrafts.",
+    "Flag newly inaccessible primary sources for Miri with precise source/item/locator and attempted routes; current26acquisition requests remain active."
+  ],
+  "validation": {
+    "corpus_before": "f91f6dd02d43d757d0ea0c5f38a304cf6e03b03a653be40415044af5c9a8570b",
+    "corpus_after": "bfe0dfda9c41338712a1da1cca0da4d959aec06bd6afb0a09eb1e5d4daf56ce0",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 8
+      },
+      "texts": {
+        "removed": 8,
+        "added": 8
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/Jena_comparisons95_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 8,\n  \"public_approvals\": 0,\n  \"unchanged\": 8\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Jena_comparisons95_2026-10-03.json",
+      "sha256": "3074bb91e679f5030c0557e55f62ddf5368b024cea2e2198da864e43489e731b"
+    }
+  ],
+  "protected_payloads": "Source images/quoted scholarly expression/observations/before snapshots/corrected text/manifests private outsideGit; receipt metadata/counts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0095_Jena_remaining_quotation_checks.json",
+      "sha256": "8fb773c006b8ff199299f69845206c2b5b5ebe088d55fddcf9e206a8386edfa0"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/backup-retention.json",
+      "sha256": "4c69b2fa4455c7ee779242e7d523f49c764c45e4e95295327c9d02af20cef758"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/campaign_case_progress_checkpoint95.json",
+      "sha256": "927500f9550a2e42f20d206f56c0a512e6ec8fe8a1f300b04bc447c897f8de3e"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/held_pdf_inventory_checkpoint95.json",
+      "sha256": "b8f06cf34c61983c89e62f5abbcdb613ae19b9b95976a2c97fd668a99cb3637f"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/inventory-refresh.json",
+      "sha256": "ae842d0bac8387853109abbeeb4e6178eb0b084faf9807481d9a83268d5614a4"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/metadata.json",
+      "sha256": "7bdaf2f8cdffc066b01d2251a68cb438872bae3aee5ce2644fe4eaa1b51c10da"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/non_pdf_holdings_checkpoint95.json",
+      "sha256": "0dd678f9493f3b0e2b54fffffd9dc067925cf11c611779b2db2e79f883872006"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/production-verification.json",
+      "sha256": "1535ca767ff30758394605944d3b76c4277fd787a591a02d0cc2bf128c39df5d"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/quote-block-coordinates.json",
+      "sha256": "16dc2d7e73a0623add522fcf61dca2fb33ea6708f372c1b9cf4eef700f15c15f"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/raw-159.json",
+      "sha256": "dbd0d3282f2d2282e45b4390ec3a0839bdadf1858e0b5a347d6fb6cdf963d2c9"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/raw-23.json",
+      "sha256": "ca08960f48082d9e45c9dbdc685f7a82c424889a39ddd283e19e98a0c85781af"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/raw-59.json",
+      "sha256": "30ea55cbb13704e9d85a114ab0b8fbc6710afd3f77b9a21ea51248ce050f9339"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/raw-60.json",
+      "sha256": "f835079994631ef63f47447d67ba6c4ee62fc09a3adb99d71575047b6f344c19"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/raw-61.json",
+      "sha256": "990ebdaa0c57635ad9c477308c914c3507d46af9da3d23019b5aa44cc5181344"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/raw-62.json",
+      "sha256": "dcd861319f2c23eac2257479ccc5b0fa5e376bf9fee727a73cfe8580b754aff6"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/remaining-quotation-and-reading-audit.json",
+      "sha256": "2b8438358bd05a842351d415b7863da0219b04166b80c5f319c24f1e116ba72c"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/render-provenance.json",
+      "sha256": "3e771bc0d72354c73f2a4f299edae7da8a0d9812da8fe52a903a6555cb81196a"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/reports-final.json",
+      "sha256": "75883eef89d1a549275edfca7d2a1a9494428312d1874ba868f869b09b7696e0"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/source-copy-observations.json",
+      "sha256": "ff28e90e8b3bebbd0e68c00ecc1fe3baab422ee9b7f7f78f030024cb3eb50309"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/source-glyph-comparison.json",
+      "sha256": "ce796c116717d8edbcb745d4bf8448cd7208e51d4b81d01c553b5a5330e054f0"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/targets-before.json",
+      "sha256": "4ee7c0f5caa29164e025f0db131a234da1e1212e14115c591376c739ff686b8b"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/trial-verification.json",
+      "sha256": "847b97e65289ae43168907777cafdfc4619409c8f730916d2445f0cff4ede9a0"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/audit_remaining.py",
+      "sha256": "9439b8a5a5f685201922206320116c4b671d2643bee8229ad32314301e04d9fd"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/collate.py",
+      "sha256": "08ad9233762c24d8ad47d037e74916be105fd5ad6b7c9195b70177ce7e901564"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/prepare.py",
+      "sha256": "6902822054335e6352b801aa030bff83a9df3b4b16e16527745c34767878288b"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/record_checkpoint.py",
+      "sha256": "64b66775f5743676df1922f29cd011aa0a0c3c18e2e2ab923f808cd29f53d758"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/regenerate.py",
+      "sha256": "2c27c428f31f3623e44697d5992dc352bcb3726b8ae865cf0ecaeddd1bd0c96e"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/verify_batch.py",
+      "sha256": "d3df60b4a2371aaabe9b150fd4df5c8f665035dd0e775617e37472809019c3eb"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/verify_reader.py",
+      "sha256": "8a38478f23f5cc0fa6d76343fdc1ddd45e16031d4c4419b0edf9514e2842d512"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/B2933-block.png",
+      "sha256": "1957a86129442fc15d2407c2ccacd0941caac2098920ec9f5b92ea90ceab613d"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/BM117824-block.png",
+      "sha256": "8b2d6a9f125d5bd7f0c455d62e6722e7ddfc7152aa8144960e6ff4f91ad37ad2"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/HS3008-apparatus-block.png",
+      "sha256": "05b0e52197290981f9c5e5d844bde757bfcd6b41116d640966caf6b5767cbd8e"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/HS3008-apparatus-complete-block.png",
+      "sha256": "e794d6da4452a3bb069c5f2b46a9cab0c9a660a44e17a2f89b2b095a92dea01c"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/JNF153-block.png",
+      "sha256": "c50537dea7d8def926fbda048f8fb7da1062880b4b4a3caa808fdc75648350c8"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/JNF153-complete-block.png",
+      "sha256": "2164389f6c2bebe04f1e8cc56d47f51e527d12dc5fed9fa3700e10c74b8ece0e"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/LO765-block.png",
+      "sha256": "31ee076e3c18252dc313abf2709d39c98bcecef613df0cd31dca8601a39ada50"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/MS2053_198-block.png",
+      "sha256": "2416936aa2a368233987083cfeaa484a1eed17566023afb400c49373624ccc2e"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/MS2053_256-block.png",
+      "sha256": "568ef8832e5c2654cf313c45cf4e6452fb132125dc63b94d12e2ae0b477629f2"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/SD40-block.png",
+      "sha256": "e397e1bba68ada551c5fcc958addbfeddd474dbb9f1a639c8668d8d8ee61289e"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/large-159.png",
+      "sha256": "a3cee5043965ceb9055baf35a1e0bfc758249fb0933ed183a701eaf8bb2e1ad1"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/large-23.png",
+      "sha256": "ba072b2ecddc9b5c52ddcc4e723cccc9c171203ae6ce69699fcf97fb1ff9fb2b"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/large-59.png",
+      "sha256": "e16d49145bc107b98036a572a182ab4cd125859bc89eed92f98cb90f129a4f48"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/large-60.png",
+      "sha256": "e6094a581ae5a2bfaae231c2e042dd5e9c246403864af82d283ce53a6f25de32"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/large-61.png",
+      "sha256": "5699bdcea7814a5c1770b472421467fb1586e43039b13292a2cde0e99ec5504d"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/large-62.png",
+      "sha256": "637132e91ad0ebd898bf371d18bfbd9401edd89d49b63304f460c1e9260f097b"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/page-159.png",
+      "sha256": "d4153fbd95db07fa4a7a4ff9a86d6aff9e76280846369627f3b979e28a490e39"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/page-23.png",
+      "sha256": "aaaca2400ff1d63c8bcc00a55a83600e97f0515fe228483412aa313f400fe44d"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/page-59.png",
+      "sha256": "79a5321e1f469ebeddc796f8db26a4770a075842b05cfcfe10dee3c2f4a8b340"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/page-60.png",
+      "sha256": "5b656cd7114f76cb07deca3de81422ddd63035e17416d0b35575d547d37c797c"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/page-61.png",
+      "sha256": "8c15da3e4e12f0d249d0ef6634ad12c8dc697f8e0f306007c194d67e4d795af6"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/page-62.png",
+      "sha256": "1f664882a278ed532f6293fc1fb0b7946c7fee13e00aeff968eac68337bc4eca"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-3B5FC8E9C50C-copy.diff",
+      "sha256": "e60292684a4007395b08dd3ebca97da82b51eb4f6533105a7069371b5c604174"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-4B1AA8E56E4F-copy.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-5410EBBB1B03-copy.diff",
+      "sha256": "dadf8fb2c90d5c5c696ff932dde74f4761251eaff169a64cd7ed7582eb893fb6"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-57D7F7250FBF-copy.diff",
+      "sha256": "3d74d9ecf1a599a33dd3d3b75a0e218bc7d99d9e47b2b4fdeba2b00179c94866"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-581C7D7C59A5-copy.diff",
+      "sha256": "7a95d42cc1768dfce6a21afcce82507460fc8ff3cca8144daa59ec84678464fd"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-6AB26F1C10B4-copy.diff",
+      "sha256": "f9e39cfac01f535e277d20faaed2f3265964a17be47d2519cbe6d33ca614e67a"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-8F998B808820-copy.diff",
+      "sha256": "cef50f7b0c7bd657c13b149c92970ed0bcda89eea8332fde4daaf6998719e99a"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-AEB46290F9F3-copy.diff",
+      "sha256": "2259e198f7bb7edc94e82aaa773d82307898ee8b6969e2fedc71fc6b31080079"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-3B5FC8E9C50C-corrected.txt",
+      "sha256": "1705cb6b89e329f543988c8689865889de010ff62ab3596110fe1e5b15507854"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-4B1AA8E56E4F-corrected.txt",
+      "sha256": "f7a6f5633e420c52061ba5ed48307c7ab9dddd5eadf76525135e0ee016dcbb1c"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-5410EBBB1B03-corrected.txt",
+      "sha256": "2856b530e622950c7c4cf6358c4583883758b9c7fd80cd6a72d9837dcaf4eb6a"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-57D7F7250FBF-corrected.txt",
+      "sha256": "23a53dfafffebda20101a305d95ac0cf1b9368d99e66f7a2f3af3ea15eacb834"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-581C7D7C59A5-corrected.txt",
+      "sha256": "c5bb6bdb655adf2edc84e5b5924eb32dad6cc5a892ddcd1e201ec467150373f2"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-6AB26F1C10B4-corrected.txt",
+      "sha256": "7b5ae357cc030ae893d3cffb930861a64e0a96aa4e3d0e7e145cb8e06ecb2ad7"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-8F998B808820-corrected.txt",
+      "sha256": "4a7ad5c39c05e7b5b5919560af2d2a7cce3f234d3560032e7e037eaa417d7d82"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-AEB46290F9F3-corrected.txt",
+      "sha256": "767050daef5a73de8e931a9afd520544a5fe7e7d64fe19cb509dd1fa1323bcb1"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/remaining-reading-gaps.json",
+      "sha256": "4c16a732af86b1c8850190458d47a7ab642ef399e92903b947c3b56a4c1d7490"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/reader-build-final.log",
+      "sha256": "844208b5bc6fafcc13afffa70631585cb5bc1fb6bfda4bd38d3e95f34e06e65c"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/tests-final.log",
+      "sha256": "d57f747dc9fe5f8be15dc8af6f026722b625c95c9d3b674b0403773db20e61a4"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/node-tests-final.log",
+      "sha256": "993814f1f1a1686eafe12342a74fa2433cf7f16bfeafd18706da8c26afc030ca"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-3B5FC8E9C50C-before.txt",
+      "sha256": "674851113d9a5a08498dc8efb70de01eace667f901cb8a367994337088d378d0"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-4B1AA8E56E4F-before.txt",
+      "sha256": "f7a6f5633e420c52061ba5ed48307c7ab9dddd5eadf76525135e0ee016dcbb1c"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-5410EBBB1B03-before.txt",
+      "sha256": "64b4ad060c4f638beebad84182b7047cdbfb0cc1d5f8696c3231745dbf861487"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-57D7F7250FBF-before.txt",
+      "sha256": "01912e0c38efd21851b13abbf63e35642c8d4d5af21fa27364689152da56b0f5"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-581C7D7C59A5-before.txt",
+      "sha256": "9735bb1451d95d6617129a313e71ef8c007fffd089bec75908e09dee335327d7"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-6AB26F1C10B4-before.txt",
+      "sha256": "d8a95cb372371bca7919c0881ee3085aabe338e26308c35db81c967bc63ee885"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-8F998B808820-before.txt",
+      "sha256": "a71971ba4a1decc2176e4599cc726d64c4f8e10f2cdbf69ab2f485edab438899"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/TXT-AEB46290F9F3-before.txt",
+      "sha256": "37b07499849ab4931d244257df76f85281e12765c3a3bb264816cd7ac1908c2a"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/plain-159.txt",
+      "sha256": "55e076e599197e2033010bebaf934834a4ce31dae3720d5840e05640460bce92"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/plain-23.txt",
+      "sha256": "b31814883a0ffe2e9f5808155fedb2ede79643fae775d01f8e36cd4d8ed986fe"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/plain-59.txt",
+      "sha256": "38d4ced3b005e1de7d7f64f5054cc5f4187d4db53fcaddfb0886d79e448f089d"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/plain-60.txt",
+      "sha256": "8759cd2cfa7fdcaa1d8c6d1aa8237b5c82d2b17850edcd85a67d876fa472f479"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/plain-61.txt",
+      "sha256": "9a62e62c3b2d17701afaa6209e60765496a6d51bfb90f02f40ff8e3f11194b7a"
+    },
+    {
+      "path": "data/private/research-work/Jena-comparisons95-2026-10-03/plain-62.txt",
+      "sha256": "44375d92f3c09ba18aff3469cf18933e52b6107599a18e616789f4a994eee688"
+    }
+  ],
+  "complete_bounded_normalized_copy_checks": 8,
+  "Jena_checked_readings": 223,
+  "Jena_partial_readings": 4,
+  "all_Montgomery_stored_reading_checks_retained": 77
+}
