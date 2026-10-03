@@ -137,6 +137,12 @@ def add_source(conn, record):
     source_id = record.get("id") or new_id("source")
     fields = [field for field in SOURCE_FIELDS if field in record]
     values = [record[field] for field in fields]
+    if record.get('created_at'):
+        stamp = datetime.fromisoformat(record['created_at'].replace('Z', '+00:00'))
+        if stamp.utcoffset() is None or stamp.utcoffset().total_seconds() != 0:
+            raise ValueError('Source creation timestamp must be UTC')
+        fields.extend(['created_at', 'updated_at'])
+        values.extend([stamp.strftime('%Y-%m-%d %H:%M:%S')] * 2)
     conn.execute(
         "INSERT INTO sources (id,%s) VALUES (?,%s)" % (
             ",".join(fields), ",".join("?" for _ in fields)

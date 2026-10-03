@@ -285,6 +285,9 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   rows or silently alias another ID. Earlier source-checked drafts remain in
   their correction snapshots, and replay cannot revert them. JSONL intake rolls
   back the batch if any record fails.
+- A new-source JSONL record may also declare UTC `created_at` to reproduce its
+  initial creation/update timestamps during rehearsal and production. Replaying
+  it never replaces an existing source's lifecycle timestamps.
 - If an archived PDF turns out to be a different work, keep the works separate.
   Repair its source assignment with `ibi ingest-capture-source-corrections`
   against a hash-bound manifest. The immutable ledger retains the complete

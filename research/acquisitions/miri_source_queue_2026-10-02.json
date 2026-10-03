@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T19:57:24+00:00",
+  "updated_at": "2026-10-03T21:18:18+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -236,7 +236,13 @@
         "preview_url": "https://ignca.gov.in/Asi_data/4567.pdf",
         "previous_access_evidence": "Earlier bounded inspection recorded, no registered archival capture. Fresh web opening failed tool-size limit (12,467,894 bytes); official robots fetch SSL handshake timeout, no HTTP200 or PDF acquisition attempted. These are tool/permission-route limits, not a source denial or verified disallow."
       },
-      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+      "reading_audit": "Checkpoint109: complete IM9737 searchable native nine lines and full English paragraph separately source-checked against independently acquired clear original article CAP-IBI-CP109-GORDON1934. Complete native facsimile/handcopy retained. Original low-resolution supplied PDF/old audit/draft retained; no whole-case or rights/public approval inferred.",
+      "reading_audit_history": [
+        {
+          "through_checkpoint": 108,
+          "audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+        }
+      ]
     }
   ],
   "remaining_acquisition_requests": [
@@ -671,5 +677,17 @@
     "reading_extraction_pending": true,
     "waterman_viewer_route_verified": true,
     "waterman_full_document_or_accession_bridge_not_acquired": true
+  },
+  "checkpoint109_clear_IM9737": {
+    "prior_queue_snapshot": {
+      "path": "data/private/research-work/IM9737-native109-2026-10-03/miri-queue-before.json",
+      "sha256": "6af4c62ba225f7efd42b5b9e13dc79bfed8f52021b557e21eef3d3f8551a937a"
+    },
+    "source_id": "SRC-C45C16AC2B8E",
+    "clear_capture_id": "CAP-IBI-CP109-GORDON1934",
+    "new_requests": 0,
+    "remaining_count": 21,
+    "resolved_count": 15,
+    "other_contained_editions_pending": "Full collection held; Moriah1984andother studies require distinct original-work extraction/assessment, no acquisition denial asserted."
   }
 }

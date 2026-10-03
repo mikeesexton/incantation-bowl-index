@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 from bowl_index.db import migrate
-from bowl_index.ingest import add_candidate, load_jsonl
+from bowl_index.ingest import add_candidate, add_source, load_jsonl
 from bowl_index.state import corpus_fingerprint
 
 
@@ -47,6 +47,27 @@ class ReadingCaptureIngestTests(unittest.TestCase):
         self.assertEqual(self.conn.execute('SELECT created_at FROM texts').fetchone()[0], '2026-10-03 20:00:00')
         self.assertEqual(self.conn.execute('SELECT capture_id FROM media').fetchone()[0], 'CAP-TEST')
         before = corpus_fingerprint(self.conn); self.apply()
+        self.assertEqual(corpus_fingerprint(self.conn), before)
+
+    def test_source_manifest_creation_time_is_reproducible_and_not_replaced(self):
+        other = sqlite3.connect(':memory:'); other.row_factory = sqlite3.Row
+        self.addCleanup(other.close); self.conn.backup(other)
+        source = dict(id='SRC-NEW', source_type='book', title='Collection', citation='Collection',
+                      created_at='2026-10-03T21:00:00Z')
+        add_source(self.conn, source); add_source(other, source)
+        self.assertEqual(dict(self.conn.execute("SELECT * FROM sources WHERE id='SRC-NEW'").fetchone()),
+                         dict(other.execute("SELECT * FROM sources WHERE id='SRC-NEW'").fetchone()))
+        source['created_at'] = '2026-10-04T21:00:00Z'
+        add_source(self.conn, source)
+        row = self.conn.execute("SELECT * FROM sources WHERE id='SRC-NEW'").fetchone()
+        self.assertEqual((row['created_at'], row['updated_at']), ('2026-10-03 21:00:00',) * 2)
+
+    def test_new_source_non_utc_time_rejected(self):
+        source = dict(id='SRC-NEW', source_type='book', title='Collection', citation='Collection',
+                      created_at='2026-10-03T21:00:00-04:00')
+        before = corpus_fingerprint(self.conn)
+        with self.assertRaisesRegex(ValueError, 'Source creation timestamp must be UTC'):
+            add_source(self.conn, source)
         self.assertEqual(corpus_fingerprint(self.conn), before)
 
     def test_explicit_ids_cannot_replace_or_silently_alias(self):
