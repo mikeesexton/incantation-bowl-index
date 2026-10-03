@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Montgomery native editions20–25, checkpoint78
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — six corrected native copies and six append-only proofreading reviews, state digest `f6a5ac33e63a`; opening clean/state match checkpoint77. Full originals retained in immutable reviews,37other tables unchanged; trial/production digests equal and replay preserves every row/digest.
+**Tests:** 394 Python + 57 Node =451passed; subsequent sequential private reader build7/7. All2,283text contents/attributions/types/current statuses,2,143media assignments,1,232image hashes,88capture hashes and1,880identity memberships/counts verified. Seven reports/exports regenerated; roadmap, inventories and state recorded.
+
+- Collated six complete Montgomery1913 Hebrew-script editions20–25 against complete printed201/203/205/207(PDF207/209/211/213), six enlarged blocks including separate21/22/23columns and specificletter/point details. Corrected copying errors in words, exact inferiorpoint placement, restoration/uncertainty boundaries, source repetition and anchor7placement. Editions20–24 now normalized source-copy checked;25remains partial. Printed unusualforms/restorations/losses/author uncertainty preserved. Exact source dots use perlettercombininginferiorpoints where clear; not Hebrewvowels or projectepigraphicinterpretation. Source braces20explicitlyflattened and original21/22/23distinct forms retained; no borrowingfromneighbors/English.
+- No25numerousclearerrors corrected from held raster, including damaged/magical phrases and continuedclausebefore7/twoAmenclosing. Two strings remain explicit project copying doubts; exact remaining sourcepoints in two words still coarse. No full25source-copy certification or originalclay/specialist/sourcewide verification claimed. Bounded convention searchPDF1–123textlayer0matches; no globalkeyverified. Complete sourcepages control crops, some detailslimited/onewrongpositionexplicitlyrecorded. Private sourceviews/observations/before/correctedcopies/manifest retained; editor/source/locator/rights/public status unchanged.
+- Corpus2,283texts/1,548readings=1,423checked/124partial/oneunreviewed. All heldPDF/nonPDFrosterhashes/statuses independentlyrefreshed; exactly6entrieschanged.58PDFsources/53appearance-bearing/1,342appearances,2,143media/1,232images/88captures unchanged. All1,880identity memberships retained; frozen249originalmembers/histories unchanged, independently32linked/217unlinked/allattempted/zero wholecasescomplete. No new frozen history or historical native-gap recovery claimed. Remaining124partialreadingpointers saved privately; no fresh source comparison inferred for them.
+- Miri10resolved/25requests unchanged; no new access blocker/outboundmessage. All ten supplied documents previously processed; no duplicateintake/reset/identitydecision/publicapproval/institutioncontact/purchase/push/deploy/server restart. Last ten prebatch backups retained with hash-bound pruning record.
+- Goalactive; previous/current turns made verified corpus progress. Next finish25precise magicalstrings/inferiorpoints from held scan, then continue native/direct scholarly translation gaps and217publication routes. Exact scope/hashes: `research/receipts/Montgomery_native78_audit_2026-10-03.json`, private checkpoint0078.
+
 ## 2026-10-03 — Codex — Martínez2003 quotation-copy checks, checkpoint77
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
