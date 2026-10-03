@@ -8,9 +8,9 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1492 | 55 | 1 | 1548 | 96.4% |
+| Edition text (translation, transcription, transliteration) | 1495 | 52 | 1 | 1548 | 96.6% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 727 | 735 | 0.1% |
-| All stored text | 1493 | 62 | 728 | 2283 | 65.4% |
+| All stored text | 1496 | 59 | 728 | 2283 | 65.5% |
 
 ## Edition text by type
 
@@ -18,7 +18,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 |---|---:|---:|---:|---:|
 | translation | 732 | 41 | 1 | 774 |
 | transcription | 575 | 7 | 0 | 582 |
-| transliteration | 185 | 7 | 0 | 192 |
+| transliteration | 188 | 4 | 0 | 192 |
 
 ## Edition text by source
 
@@ -37,7 +37,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Incantation Bowl in Mandaic — MS 1911/2 (`SRC-292E3E15363B`) | 1 | 0 | 0 | 1 |
 | A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 98 | 0 | 0 | 98 |
 | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success (`SRC-4071AE0F749A`) | 2 | 0 | 0 | 2 |
-| Aramaic and Mandaic Magical Bowls (`SRC-43C1E102538E`) | 13 | 3 | 0 | 16 |
+| Aramaic and Mandaic Magical Bowls (`SRC-43C1E102538E`) | 16 | 0 | 0 | 16 |
 | What Will Save the Household? (`SRC-455442AA727F`) | 1 | 0 | 0 | 1 |
 | Aramaic Magic Bowl: The Protection of the Family (`SRC-4955445F0A7A`) | 1 | 0 | 0 | 1 |
 | Auction 32: Objects, Judaica, Israeliana, Archeology and Medals (`SRC-5119876CE9C6`) | 2 | 0 | 0 | 2 |

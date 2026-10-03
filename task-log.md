@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon M/N/O complete transliteration checks, checkpoint103
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — three appended proofreading reviews and corrected edition copies; digest `f3454e21de03`. Opening matched102; prior task claim continued. Complete originals and earlier reviews retained.37 other tables/all1,880 identity memberships unchanged; trial/production equal, replay changed no rows or digest.
+**Tests:** 394 Python +57 Node =451 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures and1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Gordon1937 M/N/O Hebrew-letter Mandaic transliterations checked separately against own complete source blocks: M printed95–96/PDF13–14,27main physical rows/25logical lines plus12panel rows including gap; N printed100–101/PDF18–19,49physical rows/17logical lines, LEFT own column only; O printed103–104/PDF21–22,31physical rows/13logical lines, own LEFT material plus eight full boxed rows. Neighboring Lidzbarski4/Montgomery38 parallels excluded. Source1937 printed86/PDF4 convention and held1934printed321 key checked/hash-bound.
+-28new exact inferior points (M8/N11/O9); nine missing superior positions added/four unsupported removed/netfive.38 complete-word/mark/boundary control groups. Corrected literal letter omissions/substitutions/transpositions, small angle/curly/square distinctions and M four-period panel gap. Two project copying-doubt wrappers removed from unambiguous source groups, actual source uncertainties retained. Enlarged whole words supersede preliminary point/letter guesses; irregular O6 block below final aleph excluded as off-baseline scan artifact, O9 apparent praise point rejected as neighboring lower-line ascender. No English/grammar/commentary/parallel supplementation or clay/meaning/identity adjudication. These are edition-copy checks; native Mandaic remains separately unrecovered.
+- All16stored Gordon1937 readings now checked; all12Gordon1934/227Jena/77Montgomery prior checks retained. Inventory1,495checked/52partial/oneunreviewed of1,548readings. Both rosters refreshed/exactlythree target entries changed; other13Gordon1937 rows unchanged. Frozen249 original members/history exact:32linked/217unlinked/allattempted/zero wholecases complete/no new attempts.45historical native-script gaps/40English projectdrafts separate;31Pognon French originals alreadychecked.
+- Allten supplied documents processed including fgaf025; no duplicate intake. Miri10resolved/26requests unchanged, no new access blocker/message/reset/purchase/uncertain merge/rights or public approval/push/deployment/server restart. Source/editor/locator/language/script/rights/public0 unchanged. Protected expression/pixels/notes/manifests private outsideGit; receipt metadata/hashpointers only. Lastten prebatch backups retained.
+- Goal active; next remaining held native/transliteration checks and217publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0103_Gordon_M_N_O_transliteration_checks.json`. Receipt: `research/receipts/Gordon_MNO103_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon K/L complete native-copy checks, checkpoint102
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
