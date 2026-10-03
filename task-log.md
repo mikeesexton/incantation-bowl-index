@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon source collection-note repair, checkpoint105
+
+**Claimed:** META-001 (one META workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — one current-source notes repair and one appended immutable source correction; digest `3e896f1061a0`. Opening clean/state matched104. All37 other tables/all1,880 identity memberships and reading checks unchanged. Trial/production exact; replay and superseded source import changed no rows/digest; old correction manifest rejected stale evidence.
+**Tests:** 396 Python +57 Node =453 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures,1,880 memberships/counts and projected source metadata. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Actual held Gordon1934 An Aramaic Exorcism printed466/PDF2 reports Iraq Museum storage jar; printed467/PDF3 heads textG/catalogue5497. Corrected source SRC-0383E0E0A2F2 copied Istanbul collection note through hash-bound primary-evidence manifest/existing source-correction CLI. Complete original and all earlier source corrections retained. Only notes/current update timestamp changed; no current-custody or conflicting-primary-report adjudication. Retained rejected/non_bowl jar decision unchanged. G7–12 still partial; no wording or reading-status change.
+- Source imports now preserve fields superseded by immutable source corrections, including partial imports and later correction chains; unrelated new metadata remains importable. No-op imports preserve timestamps. Source corrections take the manifest UTC review time for deterministic trial/production reproduction. Added two regression tests and documented workflow. Historical September generator/payload retained and marked superseded; old correction replay fails safely.
+- Both holdings rosters rechecked/zero reading fingerprint or status changes:1,495checked/52partial/oneunreviewed of1,548readings. Frozen249 original members/history exact32linked/217unlinked/allattempted/zero wholecasescomplete/no new attempts.45historical native gaps/40English projectdrafts separate;31Pognon French originals alreadychecked.
+- Allten supplieddocuments processed including fgaf025; Miri10resolved/26requests unchanged/no new access blocker/message/reset/purchase/merge/rights/publicapproval/push/deployment/server restart. Protected edition expression/pixels remain private outsideGit; correction/evidence manifests and receipt contain metadata/hashpointers only. Lastten prebatch backups retained. Source notes are underlying metadata, outside the reader's projected source display schema.
+- Goal active; next finish own Gordon G7–12 exact source-copy groups/marks/raised letters, then other held readings/217publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0105_Gordon_G_source_collection_note.json`. Receipt: `research/receipts/Gordon_G_source105_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon G first-half source corrections, checkpoint104
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).

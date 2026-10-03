@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-03T18:43:45+00:00",
+  "evidence_path": "research/reviews/Gordon_G_collection_note_evidence_2026-10-03.json",
+  "evidence_sha256": "60bcae2e762fad0544a40b8e684c15fd58f3ae13045175eabb738db823413282",
+  "entries": [
+    {
+      "id": "IBI-SOURCE-CORR-CP105-GORDON-G-COLLECTION",
+      "source_id": "SRC-0383E0E0A2F2",
+      "replacement_source_id": null,
+      "before": {
+        "source_type": "article",
+        "title": "An Aramaic Exorcism",
+        "authors": "Cyrus H. Gordon",
+        "issued_year": 1934,
+        "container_title": "Archiv orientální",
+        "publisher": null,
+        "url": "https://kramerius.lib.cas.cz/uuid/8a069457-1e3c-40d3-a658-3b1c51fe66e8",
+        "doi": null,
+        "isbn": null,
+        "citation": "Gordon, Cyrus H. “An Aramaic Exorcism.” Archiv orientální 6 (1934): 466–474.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete official repository scan: printed pp. 466-474 and plates XXII-XXV. It fully edits text G, Istanbul catalogue no. 5497."
+      },
+      "after": {
+        "source_type": "article",
+        "title": "An Aramaic Exorcism",
+        "authors": "Cyrus H. Gordon",
+        "issued_year": 1934,
+        "container_title": "Archiv orientální",
+        "publisher": null,
+        "url": "https://kramerius.lib.cas.cz/uuid/8a069457-1e3c-40d3-a658-3b1c51fe66e8",
+        "doi": null,
+        "isbn": null,
+        "citation": "Gordon, Cyrus H. “An Aramaic Exorcism.” Archiv orientální 6 (1934): 466–474.",
+        "access_status": "available",
+        "rights_status": "copyrighted",
+        "notes": "Complete official repository scan: printed pp. 466-474 and plates XXII-XXV. It fully edits text G, Iraq Museum catalogue no. 5497, a storage jar."
+      },
+      "rationale": "Repair copied collection label against actual primary printed466/PDF2 and printed467/PDF3. Complete previous source fields retained in immutable correction history; all other fields unchanged. Describes the 1934 article report, without asserting current custody or changing object scope/identity."
+    }
+  ]
+}

@@ -61,6 +61,9 @@ class SourceCorrectionTests(unittest.TestCase):
         history = self.conn.execute("SELECT * FROM source_corrections").fetchone()
         self.assertEqual(json.loads(history["before_json"]), manifest["entries"][0]["before"])
         self.assertEqual(json.loads(history["after_json"]), manifest["entries"][0]["after"])
+        self.assertEqual(self.conn.execute(
+            "SELECT updated_at FROM sources WHERE id='SRC-OLD'"
+        ).fetchone()[0], "2026-09-06 14:00:00")
         with self.assertRaises(sqlite3.IntegrityError):
             self.conn.execute("UPDATE source_corrections SET rationale='changed'")
         self.conn.rollback()
@@ -79,6 +82,39 @@ class SourceCorrectionTests(unittest.TestCase):
         self.evidence.write_text("{}")
         with self.assertRaisesRegex(ValueError, "correction evidence changed"):
             apply_source_corrections(self.conn, manifest, self.root)
+
+    def test_old_full_or_partial_import_cannot_restore_corrected_metadata(self):
+        manifest = self.manifest()
+        apply_source_corrections(self.conn, manifest, self.root)
+        current = dict(self.conn.execute("SELECT * FROM sources WHERE id='SRC-OLD'").fetchone())
+        for record in [
+            dict(manifest["entries"][0]["before"], id="SRC-OLD"),
+            {"source_type": "article", "title": "A title", "citation": "Wrong citation",
+             "authors": "Wrong Author", "url": "https://example.test/metadata"},
+            dict(manifest["entries"][0]["after"], id="SRC-OLD"),
+        ]:
+            self.assertEqual(add_source(self.conn, record), "SRC-OLD")
+            self.assertEqual(dict(self.conn.execute(
+                "SELECT * FROM sources WHERE id='SRC-OLD'"
+            ).fetchone()), current)
+        self.assertEqual(self.conn.execute("SELECT count(*) FROM source_corrections").fetchone()[0], 1)
+
+    def test_older_imports_preserve_later_correction_and_allow_new_metadata(self):
+        first = self.manifest()
+        apply_source_corrections(self.conn, first, self.root)
+        second = self.manifest()
+        second["entries"][0].update(id="IBI-SOURCE-CORR-LATER")
+        second["entries"][0]["after"] = dict(
+            second["entries"][0]["before"], authors="Later corrected author"
+        )
+        apply_source_corrections(self.conn, second, self.root)
+        for original in [first["entries"][0]["before"], first["entries"][0]["after"]]:
+            add_source(self.conn, dict(original, id="SRC-OLD", notes="New acquisition note"))
+            row = self.conn.execute("SELECT * FROM sources WHERE id='SRC-OLD'").fetchone()
+            self.assertEqual(row["authors"], "Later corrected author")
+            self.assertEqual(row["citation"], "Metadata record")
+            self.assertEqual(row["notes"], "New acquisition note")
+        self.assertEqual(self.conn.execute("SELECT count(*) FROM source_corrections").fetchone()[0], 2)
 
     def test_batch_failure_rolls_back_first_repair(self):
         manifest = self.manifest()

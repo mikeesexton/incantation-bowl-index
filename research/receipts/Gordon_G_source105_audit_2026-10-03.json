@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "checkpoint": 105,
+  "created_at": "2026-10-03T18:46:36+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "2597b82a471613e2505716e86a040bcf4cf4663a4779aa28951e8319c6b554b8",
+  "corpus_after": "3e896f1061a0d65561df3f0dcee04ccac6b0efc263a056d04975114abd2728b0",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_source_corrections": 1,
+  "corrected_source_rows": 1,
+  "source_fields_changed": [
+    "notes"
+  ],
+  "pending_source_metadata_corrections": 0,
+  "new_proofreading_reviews": 0,
+  "corrected_text_rows": 0,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1495,
+  "partial_reading_rows": 52,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Gordon-source-note105-2026-10-03/campaign_case_progress_checkpoint105.json",
+    "sha256": "b26edcf6177f98e8eb33c15fd383f919a1f7a0671ca0b86536302f11de92f861"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon-source-note105-2026-10-03/held_pdf_inventory_checkpoint105.json",
+    "sha256": "b374981347c8f9faa471097ad7ff223f3ed3667fa19d753c872e4abca7edf4a9"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon-source-note105-2026-10-03/non_pdf_holdings_checkpoint105.json",
+    "sha256": "4a781e6223ae76036f0a6d64cf0733699c0bee73b5ba48fc595ad98a900d4202"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "native_script_recoveries": 0,
+  "scope": "Checkpoint105: corrected copied Gordon G source SRC-0383E0E0A2F2 collection note from Istanbul to the article's Iraq Museum catalogue5497/storage jar, verified directly on printed466–467/PDF2–3. Existing source-correction manifest/CLI retains complete immutable before/after source fields; one appended correction and one current-source metadata repair. Unchanged37other tables, all2283texts/reading checks/1880memberships and rejected/non_bowl scope. Trial-production exact digest/replayzero; superseded full source import changes no rows, earlier correction manifest rejects stale evidence. Source imports now protect only superseded changed field values while accepting unrelated new metadata; no-op imports preserve timestamps. Source corrections use manifest UTC review time for reproducible trial/production. Two meaningful regression tests added. Both rosters allrows rechecked/zero reading changes;1495checked/52partial/oneunreviewed. Frozen249members/history exact32linked/217unlinked/allattempted/zero wholecasescomplete/no new attempts. Source collection note blocker resolved; Gordon G7–12 remains partial/next TEXTbatch.45native gaps/40English drafts separate. Allten supplieddocuments alreadyprocessed/Miri10resolved26requests unchanged/no newaccessblocker/message/reset/purchase/merge/rights/publicapproval/push/deploy/serverrestart. Goalactive.",
+  "next_actions": [
+    "Finish exact source-copy checks for own Gordon G7–12; currently partial. Use retained full-word/source controls and reject supplementation from parallel witnesses/English.",
+    "Continue52partial/oneunreviewed readings and217publication cases;45native-script gaps/40English drafts separate. Flag newly inaccessible primary sources for Miri."
+  ],
+  "validation": {
+    "corpus_before": "2597b82a471613e2505716e86a040bcf4cf4663a4779aa28951e8319c6b554b8",
+    "corpus_after": "3e896f1061a0d65561df3f0dcee04ccac6b0efc263a056d04975114abd2728b0",
+    "table_changes": {
+      "source_corrections": {
+        "removed": 0,
+        "added": 1
+      },
+      "sources": {
+        "removed": 1,
+        "added": 1
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_corrections_retained": true,
+    "full_original_source_fields_retained": true,
+    "source_note_only_correction": true,
+    "all_readings_and_reviews_unchanged": true,
+    "rejected_non_bowl_scope_unchanged": true,
+    "identity_memberships_unchanged": 1880,
+    "replay_and_stale_import_all_rows_and_digest_unchanged": true,
+    "stale_correction_rejected": true,
+    "replay_logs": [
+      {
+        "arguments": [
+          "ingest-source-corrections",
+          "research/reviews/Gordon_G_collection_note_correction_2026-10-03.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest",
+          "source",
+          "data/private/research-work/Gordon-source-note105-2026-10-03/superseded-source-import.jsonl"
+        ],
+        "exit_code": 0,
+        "stdout": "ingested 1 records\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest-source-corrections",
+          "research/reviews/gordon_1934_1937_source_corrections_2026-09-12.json"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/mikesexton/Developer/incantation-bowl-index/src/bowl_index/cli.py\", line 514, in <module>\n    main()\n  File \"/Users/mikesexton/Developer/incantation-bowl-index/src/bowl_index/cli.py\", line 389, in main\n    print(json.dumps(apply_source_corrections(conn, review, PROJECT_ROOT), indent=2, sort_keys=True))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/mikesexton/Developer/incantation-bowl-index/src/bowl_index/source_corrections.py\", line 77, in apply_source_corrections\n    raise ValueError(\"correction replay differs from recorded evidence\")\nValueError: correction replay differs from recorded evidence\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "396 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "python_tests": "396 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 453,
+    "reader_build_after_both_test_suites_passed": true
+  },
+  "review_manifests": [
+    {
+      "path": "research/reviews/Gordon_G_collection_note_correction_2026-10-03.json",
+      "sha256": "b7cb15cf904996623c502120fd272bd08b28f37adc8d385bda108a79ad07d7d5"
+    }
+  ],
+  "protected_payloads": "Source pixels/edition expression/research snapshots stay private outsideGit; evidence/repair manifest and receipt contain metadata/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0105_Gordon_G_source_collection_note.json",
+      "sha256": "7a8b80943de6baf8567c894cd2cab61871624c1cb93ac19710b6413db0102da3"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/backup-retention.json",
+      "sha256": "1cfbe92733d7872f24c884ce3a5015f6bbff5383554a074433a763371c3788a4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/campaign_case_progress_checkpoint105.json",
+      "sha256": "b26edcf6177f98e8eb33c15fd383f919a1f7a0671ca0b86536302f11de92f861"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/held_pdf_inventory_checkpoint105.json",
+      "sha256": "b374981347c8f9faa471097ad7ff223f3ed3667fa19d753c872e4abca7edf4a9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/inventory-refresh.json",
+      "sha256": "9131ae3a34726593304c8454960a5a20b3511eddfb87a994dd16f86bc35a432e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/metadata.json",
+      "sha256": "b5ec346fabbaa7618aa6ed6c244a907bf254a16bee0ac5106dc9174a326b7c47"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/non_pdf_holdings_checkpoint105.json",
+      "sha256": "4a781e6223ae76036f0a6d64cf0733699c0bee73b5ba48fc595ad98a900d4202"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/prepare.py",
+      "sha256": "01d170d9bf27a114dbc4200c1be2739d4fd6d51d6b0baf4e2e14e7578c5750f1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/production-verification.json",
+      "sha256": "2a4c43f0feee3198e24659ae61c7b4c5cddf2f03e4e82cec29094fd095f669b9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/record_checkpoint.py",
+      "sha256": "ae16242bf36807230c420d3d639a12fd3471d19fe1f5cfcc486ae9b7b8c9befe"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/source-before.json",
+      "sha256": "9358abde526b98003018f5930ec0c0ddbc18345d5c2127877a3e8a5fd3ef8d25"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/superseded-source-import.jsonl",
+      "sha256": "ac0b999bf92833aebedf1e6058b5664a20de655d9cd31ec2a9095dd3be9a0c3c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/trial-verification.json",
+      "sha256": "194d520dc45e959e9b65980397d581a08f2e51de735207659d63cbfae199adc6"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/verify_batch.py",
+      "sha256": "6c2e9d34a263bad3aa7381ddd2bca105ddc8b7888152bb65025be03f575165fb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/reader-verification.json",
+      "sha256": "f3b89e3fd595a5a8da1662c0592c8cc5455ec8edba767227e29b368625c2c16a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/reader-build-final.log",
+      "sha256": "5072ff713b7cedbc6f761aed54908beb8a74703a48adc5db9050b001bbf1f4f6"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/tests-final.log",
+      "sha256": "0729698f67bec9579a802aaadc5794848139f8a3c954000cd1dc853e4fc5e1db"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/node-tests-final.log",
+      "sha256": "80ed1cba469637a97d59e4c7c7d5268270ef0166c17c9a27d9731704337192bb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/verify_reader.py",
+      "sha256": "c506be6b114354290e40a2f603cfbe7418053e5da39252f21b008348468416de"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/reports-final.json",
+      "sha256": "3242c378ebe22af8a4bffebff18be44efa436a183fce1e874b528abb74da9c16"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/regenerate.py",
+      "sha256": "25b038bf521846c985eb6e21d7fe52e62ed28e9e946ed4c69a1c729bbe914997"
+    },
+    {
+      "path": "data/private/research-work/Gordon-source-note105-2026-10-03/finalize.py",
+      "sha256": "43698b4b8e59f0b5ad813b13da0fac1ae0a4b8ede9ac3b9dd2de6c24d3f36766"
+    }
+  ]
+}

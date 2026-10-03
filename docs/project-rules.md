@@ -288,6 +288,11 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   reports and correct only their attribution; do not turn a pointer repair into
   an accession adjudication. Research exports redact ledger snapshots because an
   appearance's original payload may include protected expression.
+- `ibi ingest-source-corrections` repairs copied bibliographic metadata against
+  hash-bound evidence, retaining complete immutable before/after source fields.
+  Source imports cannot restore a field value superseded in that ledger; unrelated
+  new metadata remains importable. Correction timestamps come from the manifest's
+  UTC review time so trial and production runs reproduce the same source record.
 - `ibi ingest-text-metadata` repairs a copied text type, locator, language or
   script against hash-bound evidence, retaining complete immutable before/after
   snapshots. It cannot change the wording or source association. A classification

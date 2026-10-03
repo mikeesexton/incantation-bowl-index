@@ -81,8 +81,9 @@ def apply_source_corrections(conn, manifest, root):
 
             assignments = ",".join(f"{field}=?" for field in SOURCE_FIELDS)
             conn.execute(
-                f"UPDATE sources SET {assignments},updated_at=CURRENT_TIMESTAMP WHERE id=?",
-                [after[field] for field in SOURCE_FIELDS] + [source_id],
+                f"UPDATE sources SET {assignments},updated_at=? WHERE id=?",
+                [after[field] for field in SOURCE_FIELDS]
+                + [parsed.strftime("%Y-%m-%d %H:%M:%S"), source_id],
             )
             columns = list(payload)
             conn.execute(

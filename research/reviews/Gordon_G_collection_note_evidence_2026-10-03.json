@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "inspected_by": "Codex",
+  "inspected_at": "2026-10-03T18:43:45+00:00",
+  "source_id": "SRC-0383E0E0A2F2",
+  "capture_id": "CAP-EABFF9404C4C",
+  "primary_source": {
+    "path": "data/private/archive/sha256/71/71de7b86e0cc549b73d949f4a4b8923886f4d92dfd1b2f21907c9fe6058bafcc",
+    "sha256": "71de7b86e0cc549b73d949f4a4b8923886f4d92dfd1b2f21907c9fe6058bafcc"
+  },
+  "primary_locators": [
+    "printed466/PDF2 opening collection and vessel description",
+    "printed467/PDF3 textG catalogue heading5497"
+  ],
+  "inspected_private_renders": [
+    {
+      "path": "data/private/research-work/Gordon-G104-2026-10-03/page-2-2x.png",
+      "sha256": "6e625537383dd044901d9de0e3bb68dc62b469a4d2cd310f0013caad4767053a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G104-2026-10-03/page-3-2x.png",
+      "sha256": "318e0244425aac78b4ad667381dd188bc65e417f7b6129f5d5d0a9866029ca58"
+    }
+  ],
+  "finding": "The article describes text G as Iraq Museum catalogue5497 on a storage jar. The current source note incorrectly copies Istanbul. This correction repairs copied source metadata, not a conflicting primary report or a current-location/identity adjudication.",
+  "retained_scope": "Existing rejected/non_bowl jar decision unchanged."
+}

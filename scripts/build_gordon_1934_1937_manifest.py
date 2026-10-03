@@ -281,6 +281,9 @@ def evidence_manifest():
 
 
 def source_corrections(evidence_path, evidence_sha):
+    # Historical September manifest reconstruction: its G collection note was
+    # superseded by research/reviews/Gordon_G_collection_note_correction_2026-10-03.json.
+    # Keep this original payload for reproducibility; use the later repair too.
     original_note = "Citation transcribed verbatim from Waller 2025, list of JBA bowl publications, printed pp. 40-47 (SRC-19F191B3F5C5, archive SHA-256 b60b030f13d2...). Not independently verified against the publication itself; title and type are parsed from the citation and may need correction."
     specs = [
         ("AF", "Aramaic Magical Bowls in the Istanbul and Baghdad Museums", "Gordon, Cyrus H", "ArOr", "Gordon, Cyrus H. “ Aramaic Magical Bowls in the Istanbul and Baghdad Museums.” ArOr 6 (1934): 319–34.", "Aramaic Magical Bowls in the Istanbul and Baghdad Museums", "Gordon, Cyrus H. “Aramaic Magical Bowls in the Istanbul and Baghdad Museums.” Archiv orientální 6 (1934): 319–334.", "Complete official repository scan: printed pp. 319-334 and plates X-XV. It fully edits texts A-F and separately describes seven numbered Istanbul bowls recorded in this review."),

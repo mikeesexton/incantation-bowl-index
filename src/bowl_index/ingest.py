@@ -43,7 +43,23 @@ def add_source(conn, record):
             "SELECT id FROM sources WHERE citation=?", (record["citation"],)
         ).fetchone()
     if existing:
-        fields = [field for field in SOURCE_FIELDS if field in record]
+        current = conn.execute("SELECT * FROM sources WHERE id=?", (existing["id"],)).fetchone()
+        record = dict(record)
+        # An old deposit or discovery manifest must not restore metadata that an
+        # evidence-bound correction has superseded. Protect only changed fields;
+        # genuinely new metadata still follows the ordinary import path.
+        for correction in conn.execute(
+            "SELECT before_json,after_json FROM source_corrections WHERE source_id=?",
+            (existing["id"],),
+        ):
+            before = json.loads(correction["before_json"])
+            after = json.loads(correction["after_json"])
+            for field in SOURCE_FIELDS:
+                if (field in record and before[field] != after[field]
+                        and record[field] == before[field]):
+                    record[field] = current[field]
+        fields = [field for field in SOURCE_FIELDS
+                  if field in record and record[field] != current[field]]
         if fields:
             conn.execute(
                 "UPDATE sources SET %s,updated_at=CURRENT_TIMESTAMP WHERE id=?"
