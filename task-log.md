@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — M163 native edition copy check, checkpoint76
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — one corrected native text row and one append-only proofreading review, state digest `ceb58df98cea`; opening clean/state match checkpoint75. Full original row retained in review before snapshot, 37 other tables unchanged. Trial/production digests equal; manifest replay preserves every row and digest.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent sequential private reader build 7/7. All 2,283 text contents/attributions/types/current statuses, 2,143 media assignments, 1,232 image hashes, 88 capture hashes and 1,880 identity memberships/counts verified. Seven reports/exports regenerated; roadmap, inventories and state recorded.
+
+- Freshly collated the complete Levene1999 M163 Hebrew-script edition, ten sections/anchors1–30, printed285–287/PDF2(right),3(both). Inspected both complete spreads, every section/continuation crop, four letter/mark details and printed source-symbol key. Corrected24localized copied sequences across9sections; section2 checked unchanged. All four earlier project capture doubts resolved from the raster. Restored omitted/miscopied letters and source word forms, corrected restoration/partial-letter boundaries and above-line notation; exact enclosed characters retained under an explicit normalized-reading policy.
+- Native row now source-copy checked. Printed uncertainty, gaps, repetition and spelling variation preserved; no harmonization from English or neighboring editions. This checks the copy of the scholarly edition, not independent original-bowl epigraphy, diplomatic typography or specialist interpretation. Source/editor/locator/language/script/rights unchanged; no new translation or public approval. Protected source pages/observations/corrected text and manifest remain private; original full text row retained in immutable ledger.
+- Held PDF and non-PDF inventory hashes/statuses independently refreshed against current DB; exactly one roster entry changed. Remaining130held partial-reading pointers saved privately for subsequent work, no fresh source comparison claimed for those rows. Corpus2,283texts /1,548readings =1,417checked/130partial/oneunreviewed; 58PDFsources/53appearance-bearing/1,342appearances, 2,143media/1,232images/88captures unchanged. All1,880identity memberships retained; frozen249originalmembers/histories unchanged, live referencecoverage independently32linked/217unlinked/allattempted/zero wholecasescomplete. No new frozen case attempt claimed; historical45native gaps unchanged because M163already had a stored capture.
+- Miri10resolved/23requests unchanged; no new access blocker or outbound message. All ten supplied documents already processed; no duplicate intake/reset/contact/purchase/push/deploy/server restart. Last ten prebatch backups retained with hash-bound pruning record.
+- Goal remains active; previous/current turns made verified corpus progress. Continue held native/direct scholarly translation copying gaps and217remaining publication routes, keeping project English renderings distinct from direct edition translations. See `research/receipts/M163_native76_audit_2026-10-03.json` and private checkpoint0076 for exact scope and hashes.
+
 ## 2026-10-03 — Codex — Held1999 English copy checks, checkpoint75
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).

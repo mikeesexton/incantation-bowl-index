@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "checkpoint": 76,
+  "created_at": "2026-10-03T06:57:18+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "9d9e39f73bb7c4a194c2ea08a35c37f535dd9097f5f752a1f5246f160676570d",
+  "corpus_after": "ceb58df98cea8dd9eca33891b03ac4331844d788c9b54a79abde832136e34b35",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 1,
+  "corrected_text_rows": 1,
+  "partial_to_checked_reading_rows": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1417,
+  "partial_reading_rows": 130,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/M163-native76-2026-10-03/campaign_case_progress_checkpoint76.json",
+    "sha256": "d4462224550d686b13ac7fc46370485e738855b9ea4641c117c5a417902c3b3c"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/M163-native76-2026-10-03/held_pdf_inventory_checkpoint76.json",
+    "sha256": "aae5fa70ce7ed10ec147b6e770911307a73943b7a5ad40c1a6c3056d332c55c7"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/M163-native76-2026-10-03/non_pdf_holdings_checkpoint76.json",
+    "sha256": "7ad02ae44f2d9a1f9691d3499a47fed047d41b186e717f5ee80458925722dd3a"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 23,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint76 collates Levene1999M163Hebrew-script edition, all ten sections/anchors1–30, against two complete PDFspreads, source-symbol key, all section/continuation crops and four detailcrops. Corrected24localizedcopied sequences across9sections; section2 checked with no correction. All four earlier project capture doubts resolved from printed source; exact enclosed characters/restoration/partial-letter/above-line notation collated under explicit normalization policy. Native row now reading_text_checked: normalized source-copy check, not independent original-bowl/specialist/diplomatic typography certification. All source uncertainty, gaps, repetitions and spelling variation retained; no new reading interpretation/translation. One immutable newreview retains original full textrow; only target content/notes revised,37other tables unchanged, all1880identity memberships retained. Trial/production digests equal, replay allrows/digest unchanged; source/editor/locator/rights retained, no new publicapproval. Current2283texts/1548readingrows1417checked130partial1unreviewed. HeldPDF/nonPDFroster hashes/statuses refreshed against current DB, exactly1roster change;58PDFsources53appearance-bearing1342appearances unchanged. Frozen249originalmembers/historiesretained, independently32linked217unlinked/allattempted/zero wholecasescomplete; no newfrozenhistory. All10supplieddocuments alreadyprocessed; Miri10resolved23requestsunchanged/no newblocker or outboundmessage. Goalactive; no reset/contact/purchase/push/deploy/restart.",
+  "next_actions": [
+    "Continue held native/source-copy gaps, distinguishing stored checked passages from source-wide and whole-case completeness.",
+    "Continue217frozen publication routes and pending original editions; M163copy-check does not resolve absent publication links in unrelated cases.",
+    "Select remaining direct scholarly translation doubts or native captures with clear source pages before project working renderings; retain unresolved source glyphs/author uncertainty rather than infer from grammar or English."
+  ],
+  "validation": {
+    "corpus_before": "9d9e39f73bb7c4a194c2ea08a35c37f535dd9097f5f752a1f5246f160676570d",
+    "corpus_after": "ceb58df98cea8dd9eca33891b03ac4331844d788c9b54a79abde832136e34b35",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 1
+      },
+      "texts": {
+        "removed": 1,
+        "added": 1
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/M163_native76_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 1,\n  \"public_approvals\": 0,\n  \"unchanged\": 1\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "remaining_held_partial_inventory": {
+      "rows": 130,
+      "scope": "Current DB review status/capture/locator pointers only; not a fresh source comparison or source-wide completion."
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/M163_native76_2026-10-03.json",
+      "sha256": "a49cd0f936f611bc062ae9631ca0b15fec0f2285955297dc859d61f3d90cff66"
+    }
+  ],
+  "protected_payloads": "Source images/copy observations/before snapshots/corrected scholarly text and ingestion manifests private/outsideGit; receipt metadata/counts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0076_M163_native_source_copy.json",
+      "sha256": "bed53ba4515f3fc75fdea7bba91abcb75dd9cb3efb283c7ffd5c965a5d09b4da"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/backup-retention.json",
+      "sha256": "2e0679440510338b4601a7aeb95530ad4fec3c6d3a30e352e36bbc0839b820de"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/campaign_case_progress_checkpoint76.json",
+      "sha256": "d4462224550d686b13ac7fc46370485e738855b9ea4641c117c5a417902c3b3c"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/crop-coordinates.json",
+      "sha256": "afb37d2ef9916a33cf9c070f547c46807de9034c839cb883f279cc4b3894430b"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/held_pdf_inventory_checkpoint76.json",
+      "sha256": "aae5fa70ce7ed10ec147b6e770911307a73943b7a5ad40c1a6c3056d332c55c7"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/inventory-refresh.json",
+      "sha256": "e4c2a6f3aaeb467ed57df177a254002d826ad4cb2c432387088d343ce22fe84f"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/metadata.json",
+      "sha256": "402e6d5703a63fa1068b24c026bf5977248187b951fb1c761b78a72bb7de2ecc"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/non_pdf_holdings_checkpoint76.json",
+      "sha256": "7ad02ae44f2d9a1f9691d3499a47fed047d41b186e717f5ee80458925722dd3a"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/production-verification.json",
+      "sha256": "dff276f948c8e519bda6c62b3c604a37ddab193f8ae39eb728813ae3ad07cc9f"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/source-copy-observations.json",
+      "sha256": "cac5f2c922ea5d3d0d82fe4508e11ed08ef9a31f9c61805fc7a046063b6d9c16"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/text-before.json",
+      "sha256": "98a59218580da0d9bd36add51d4b62a1582d4d19d92e4db343934d2927308a8c"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/trial-verification.json",
+      "sha256": "b1bb154b3638cdd4f34ec2a6bd3df9b2b68b8edafe4a68291b4c4557ca963e64"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/prepare.py",
+      "sha256": "aa93f25641228320b164b909a305b2583f3ac3704459731a0cb794222733bc83"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/record_checkpoint.py",
+      "sha256": "427a149b88017ac57c960d3298ccbd3dc7633a6e906a75a6d73ccea21d08bd33"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/regenerate.py",
+      "sha256": "1bf810aaf5847e85f17f7423107eb9c8910b48018acbd4cc0f7d282d070d2bc9"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/verify_batch.py",
+      "sha256": "a71c34d25d0dd2677c9d78b757a259e5b53beb2440f0c6fcd81f84aff20ab911"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/verify_reader.py",
+      "sha256": "b1d9fcd10db59a0a9bff23de006391b9e861a7bf477745cd9d4cadc53a5ce47d"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section1-start.png",
+      "sha256": "3305cafd673efbb8827dbd0c4e5c1925b271a957ad77b39c520dd6299ba3d08f"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section10-partial-letters.png",
+      "sha256": "e1d48a341bad29df470a395e9deca613dec4803cfdef45041a652fb2bcee0a8a"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section10.png",
+      "sha256": "f5f6c433c50d52ffcca3295efe43ab985ad9b761d289b429ab185f5686d61686"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section3-name-detail.png",
+      "sha256": "2f6d41f3f0a4cd8a83315f672ca2a320d3d9e2f2e1f9878db13a1333ed8dac27"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section3-word-bars.png",
+      "sha256": "c4ec8bce961d16382bafa516f00527ca406335a98b090f16cd911fb8cbd7803f"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section3.png",
+      "sha256": "e6cc31b72593d7c51a04b623485924d2f2f8718770e4e781e4231c32cdb3e787"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section4-invocation.png",
+      "sha256": "c9d931706006ae5a316837c7dddfc84df173b40fdfc0855d5f1232a3347f3e94"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section4.png",
+      "sha256": "ebd2397d2aa76722cc334c25e8992f6a2c15a5924238542ccbc5311b876d61ad"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section5.png",
+      "sha256": "3633fda9f61af105b112f778d9c360ce7455a925ef413d0aedb696229da3bb8a"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section6.png",
+      "sha256": "726d71c5e9c56be9b3919a51bcada81c21f936eed83d63eb7ada1a2fab7e3da5"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section7-end.png",
+      "sha256": "7db0653e836c28022661930a280386f24f52e0b071f4e969df487614f2c40082"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section7-start.png",
+      "sha256": "490e04d5ab62ecab3db6dd421603631052850d5f5de7f181b6f53e6d49c8bf1e"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section8.png",
+      "sha256": "538454777031849fba1d2cd4f471698d200828377d633bac75dfe770d1b6d177"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/section9.png",
+      "sha256": "b0bbba7f0300a763c7e9daad29ddad868be0b787574c12e4a55e72f0ce9eb96c"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/sections1-2.png",
+      "sha256": "3ec9dc8210ac3c745f09abbc12b0572c20729e3b4c35332d703b0ce03357efb1"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/source-symbol-key.png",
+      "sha256": "4667b5fdde8f525367e22ecd8e1d3b6b6c041a62842e463728ffc4ea28f8e49e"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/corrections.diff",
+      "sha256": "1c0060eaf84b492a064b03dcdfd82b94306d31fc66486259d6a81497307813d7"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/native-corrected.txt",
+      "sha256": "2d6a39631788a48d293cb1d378a61a6247ca89a1122423a82bc07c3b46aa76a5"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/reader-build-final.log",
+      "sha256": "fb498466e943ed108aaa727e716c712fd31fab5ac0e93ef285f7cd165166bd51"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/tests-final.log",
+      "sha256": "7aebd2889f58a80ea19ec3fcf6cbcb80ba19f1ddf18da422fd8d4aff93f62b93"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/node-tests-final.log",
+      "sha256": "0837df4235a606dc5685332cf6e415861fd5065977a392a9d63617fa308b75d4"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/verify_reader.py",
+      "sha256": "b1d9fcd10db59a0a9bff23de006391b9e861a7bf477745cd9d4cadc53a5ce47d"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/reports-final.json",
+      "sha256": "ff01943e401e09ed7d298edc993a584f284b6c82e8ae73c454625b1acb47d0d3"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/regenerate.py",
+      "sha256": "1bf810aaf5847e85f17f7423107eb9c8910b48018acbd4cc0f7d282d070d2bc9"
+    },
+    {
+      "path": "data/private/research-work/M163-native76-2026-10-03/remaining-held-copy-gaps.json",
+      "sha256": "65b2d64ea6bac4221a0f28503a3db2c177ccf83b6e73b2d2e537bdc8eefc4469"
+    }
+  ]
+}
