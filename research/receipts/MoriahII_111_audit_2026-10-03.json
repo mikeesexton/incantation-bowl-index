@@ -1,0 +1,459 @@
+{
+  "schema_version": 1,
+  "checkpoint": 111,
+  "created_at": "2026-10-03T22:14:33+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "dbd75d2fe6a8516c1ed35899559d74d16c52003d62a439a2b63171d50e2dc942",
+  "corpus_after": "7eef7c744cd6209d18d67e2e1ab9f4bcd7a2fe5158d28dda79202d11aef7aa14",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 2,
+  "corrected_text_rows": 2,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "new_sources": 0,
+  "new_source_corrections": 1,
+  "new_document_assessments": 1,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2288,
+  "total_reading_rows": 1552,
+  "checked_reading_rows": 1499,
+  "partial_reading_rows": 52,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2150,
+  "total_local_images": 1239,
+  "total_captures": 97,
+  "registered_PDF_sources": 66,
+  "PDF_appearance_bearing_sources": 58,
+  "PDF_appearances": 1347,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/campaign_case_progress_checkpoint111.json",
+    "sha256": "40a3b33d7ab71d6a595cb94a9bcd43878212bcbf7cb279f1d69486de7b472b42"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/held_pdf_inventory_checkpoint111.json",
+    "sha256": "85ee7b5938f81e6383c2349dd92e2831538468cfc268cb3d2ab79e3ed08a5296"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/non_pdf_holdings_checkpoint111.json",
+    "sha256": "fa368522616ccb31cb760bc72fb071883b91a8b4bded4876e19be0776f6aa977"
+  },
+  "miri_resolved": 15,
+  "miri_remaining_requests": 21,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "native_script_recoveries": 0,
+  "supplied_new_documents_processed_for_intake": 0,
+  "reading_extraction_pending_for_new_held_editions": true,
+  "waterman_bounded_viewer_observations": {
+    "path": "data/private/research-work/five-docs107-2026-10-03/waterman-viewer-observations.json",
+    "sha256": "062b197a6a7530fe73cdfce84d46c15e8a3c47d3a7a1d68a4d182c219abb9e49"
+  },
+  "waterman_full_document_acquired": false,
+  "waterman_exact_accession_bridge_verified": false,
+  "scope": "Checkpoint111: complete MoriahII own printed238 Latin transcription/interior1–9/exterior fragment checked against registered original article20; source4missingy restored/source2unsupported enemy-word acute removed,19exact open-circle positions (7interior/12exterior) and1distinct filled upperpoint retained, ninephoneticunderdots/source3supplies/oneextra/tworestorations preserved. Exact exterior physicalrows/gapperiodcounts copied, no lost-letter count inferred; printedtranscription238w/ownnote239y reports retained separately, no expected Biblical/English/handcopy/notes reconstruction. Unchanged original English238–239 freshly checked and research notes renewed to remove obsolete Latin-pending policy. Original drafts/reviews immutable; source bibliography note currentIIchecks/Istillpending repaired with full prior source snapshot. Superseding article assessment partial: IIprovidedLatin/English and twohandcopy pages complete, I26lineLatin/fullEnglish/12handcopies pending; wholeOCR unreviewed/no photographs/no native-script recovery/no wholecase/authenticity or rights decision. Two text rows revised (English wording unchanged), two proofreviews, one source correction/one partial document assessment; no new objects/appearances/readings/media/captures. Exactall39tables trial/production; threecurrentmanifests+prior110candidate replayzero;34other tables/all1880identityrows exact.1499checked/52partial/oneunreviewed,1552readings/2288texts;2150media/1239images/97captures,66PDFsources/58appearancebearing/1347appearances. Miri15resolved/21remaining exact; frozen24932linked/217unlinked/allattempted/zero wholecasescomplete/no newattempts.45historicalnativegaps/40historicalEnglishdrafts independent. Goalactive; next ownMoriahI capture/checks, otherfournewheldoriginals, G11–12/wholepass and217publicationcases, separateWatermanaccessionbridge. No reset/contact/purchase/merge/rights/publicapproval/push/deploy/restart.",
+  "next_actions": [
+    "TEXT: MoriahIown26line Latin/fullEnglish/12handcopies capture and separate source checks; original article is held, no access request or wholearticle-extraction completion inferred. Same-client/scribe GellerA comparison remains different object, not identity merge.",
+    "TEXT: other newly supplied originals Gordon1941continuedF446/F447, Levene2007Moussaieff164, Morgenstern2007BM91767, Ford2002BM91715/BM91780/DC37(R).",
+    "TEXT: GordonG11–12/wholepass and52partials/oneunreviewed;45historicalnativegaps/40historicalEnglishdrafts/217publicationcases independent; Waterman exact accessionbridge separately."
+  ],
+  "document_metrics": {
+    "document_assessment_rows": 88,
+    "sources_with_document_assessments": 82,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 67,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "protected_payloads": "Edition expression/images/wholePDFs/OCR/observations/manifests private outsideGit; receipt metadata/hashpointers only.",
+  "new_appearances": 0,
+  "own_MoriahII_English_source_checked": true,
+  "own_MoriahII_Latin_partial": false,
+  "article_photographs_supplied": false,
+  "own_MoriahII_complete_provided_Latin_source_checked": true,
+  "validation": {
+    "corpus_after": "7eef7c744cd6209d18d67e2e1ab9f4bcd7a2fe5158d28dda79202d11aef7aa14",
+    "changed_tables": [
+      "sources",
+      "texts",
+      "text_proofreading_reviews",
+      "source_corrections",
+      "document_assessments"
+    ],
+    "unchanged_tables": 34,
+    "all_original_rows_or_complete_revision_snapshots_retained": true,
+    "all_1880_memberships_counts_and_identity_scores_unchanged": true,
+    "new_sources": 0,
+    "new_captures": 0,
+    "new_objects": 0,
+    "new_appearances": 0,
+    "new_text_rows": 0,
+    "new_media_rows": 0,
+    "new_proofreading_reviews": 2,
+    "new_document_assessments": 1,
+    "new_source_corrections": 1,
+    "corrected_existing_text_rows": 2,
+    "English_wording_unchanged": true,
+    "complete_Latin_edition_copy_checked": true,
+    "public_approvals": 0,
+    "all_39_tables_match_rehearsal": true,
+    "replay_changed_no_rows_or_digest": true,
+    "replay": [
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/MoriahII_111_proofreading_2026-10-03.json"
+        ],
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n"
+      },
+      {
+        "arguments": [
+          "ingest-document-assessment",
+          "data/private/manifests/MoriahII_111_documents_2026-10-03.json"
+        ],
+        "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 67,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n"
+      },
+      {
+        "arguments": [
+          "ingest-source-corrections",
+          "data/private/manifests/MoriahII_111_source_2026-10-03.json"
+        ],
+        "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n"
+      },
+      {
+        "arguments": [
+          "ingest",
+          "candidate",
+          "data/private/manifests/Moriah_110_readings_2026-10-03.jsonl"
+        ],
+        "stdout": "ingested 1 records\n"
+      }
+    ],
+    "prior110_candidate_replay_did_not_revert_corrected_readings": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2288,
+      "all_media_assignments_verified": 2150,
+      "all_local_image_hashes_verified": 1239,
+      "all_capture_hashes_and_source_assignments_verified": 97,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "411 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "original_parent_network_receipt_and_local_distinct_work_capture_hash_chain_exact": true,
+    "source_bibliography_original_snapshot_and_current_fields_exact": true,
+    "existing_Waller_MoriahII_explicit_source_pointer_and_verse_bridge_verified_no_merge": true,
+    "English_and_Latin_complete_provided_source_copy_checked_native_not_inferred": true,
+    "all_new_text_full_before_after_snapshots_and_statuses_exact": true,
+    "all_three_media_source_capture_object_assignments_and_hashes_exact": true,
+    "all_figures_handcopies_no_edition_photographs_verified": true,
+    "complete_article_partial_extraction_unreviewed_OCR_and_MoriahI_pending": true,
+    "Miri_queue_all15fulfilled21outstanding_exact_unchanged": true,
+    "roadmap_only_claimed_TEXT_tasks_current_priority_changed": true,
+    "all_17_used_control_images_pixel_identical_to_source_recipes": true,
+    "verified_control_images": 17,
+    "all_23_article_pages_pixel_identical_to_registered_parent": true,
+    "all_three_existing_media_pixel_identical_to_source_recipes": true,
+    "python_tests": "411 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 468,
+    "reader_build_after_both_test_suites_passed": true
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/MoriahII_111_proofreading_2026-10-03.json",
+      "sha256": "f5e4d618ae6874eb9021146b1a911bbdf877686c9a2cb1b6a6076978daf7df55"
+    },
+    {
+      "path": "data/private/manifests/MoriahII_111_documents_2026-10-03.json",
+      "sha256": "c04fb1fa3fb740443b7f47a968a538cbb02ba5a9132136d02e2b17ab57a7c78e"
+    },
+    {
+      "path": "data/private/manifests/MoriahII_111_source_2026-10-03.json",
+      "sha256": "85459a6c347d960a5936ec42c541d6edbc3571d6c75a6049d863d1ae53b80cee"
+    }
+  ],
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0111_MoriahII_complete_Latin_source_copy_checks.json",
+      "sha256": "4b668465a8b03cbbc7f00757b84b15dfcbcdc3c3ac115d726ec9671da04bb6c1"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/English238-full-control.png",
+      "sha256": "efae1fd7f34b6343cc78fba0c1e9ec93ec36d49f054d7b80476a92a5831cb749"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/English239-ending-control.png",
+      "sha256": "d28c2d3c041d08248eeee7e0c88e72c468b3f894b98c4a238c5e6eb2deab11ad"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/MoriahII-Latin-checked.txt",
+      "sha256": "0da022bb8487ad8101aca189bbd648753e5e412b65e8ea006d18f916bfad5adc"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/append_source_correction.py",
+      "sha256": "4352c26b075a76feadfca10e09d78165258107272f3cd29dac97d0fe949729f3"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/apply_production.py",
+      "sha256": "5d93ca690d075ebf6057fb1ee9295e8451c6dc7713a0cec7795c25ac6fd152b3"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/campaign_case_progress_checkpoint111.json",
+      "sha256": "40a3b33d7ab71d6a595cb94a9bcd43878212bcbf7cb279f1d69486de7b472b42"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/cattle-interior-exact.png",
+      "sha256": "5cc9bea60f441dc39e97837a270391fbe1cfd347e7adb4161214a52e12374cef"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior-complete.png",
+      "sha256": "dfb88386c863af9dd22ed5a4981612c41cbceae4f0cd85a5d22a8520a6fc1e4e"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior-ending-letter-controls.png",
+      "sha256": "7719668d0c16a60cc90f502758ecf7132326fe239b34b21af0db358467a2bf23"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior-left-circles.png",
+      "sha256": "56b025f1870da94426a37c0c2688870d889a1a43d08d9328c57638bb5e349878"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior-point-controls-left.png",
+      "sha256": "ef2240c1d558a78e4dbf7ff3c1569fb930d31fccec81b6ffbe74dabd2cfa5e5c"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior-point-controls-right.png",
+      "sha256": "49b987badfd1021afb206c22b75793cd9b80d1a509c111a5f15153950a8bb5e3"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior-right-circles.png",
+      "sha256": "f4b7f629c6498a99e016888da4c30237631ac89aa252fc510c48de1e5b8b61d9"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/exterior.png",
+      "sha256": "8e013df4cf21b734676a04b96e15767042663fa5b91dd10b57e5cc45ff5cfb86"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/fingerprint-before.json",
+      "sha256": "d4ae4c20a91da68b33e27e6e40ea5818ffe3039103f971c3e69a16d30f7b8ef3"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/held_pdf_inventory_checkpoint111.json",
+      "sha256": "85ee7b5938f81e6383c2349dd92e2831538468cfc268cb3d2ab79e3ed08a5296"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/identities-before.json",
+      "sha256": "c1e722cdfce892c7e0548b561cbe3d46914503c794760607e619ff72b56b6547"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/interior4to7.png",
+      "sha256": "cb87d366982223a9b5f5613bccfae1548709f5e273df65c9e032fe81f2e14dc5"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/interior7to9.png",
+      "sha256": "c50b9d1b43a8ac6d1b8e126eb1e1cb6c93ca0dcaa892b0c3b1043767455247d7"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/lilith-and-pronoun-controls.png",
+      "sha256": "1ffa4fb06cfce17cf20b2dc52881fc887a06dd6479c23d47d202fa454b8ac923"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/metadata.json",
+      "sha256": "835c7840271c8afa9c41498ecde2bf24d2b1670b619c9ea37ffcfa4cc3851499"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/miri-queue-before.json",
+      "sha256": "60544f47f4b1425df35f1bb715aede25918ff7e27c323b78a99e3f3fe4a18669"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/mn-ending-exact.png",
+      "sha256": "b3cbe0fe04dd6511dc262c761e0037151442ed3045924968d0e69019e80e7c3f"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/mn-interior-control-corrected.png",
+      "sha256": "39a7bccd82967207168206559346ece4bd63e62fc89b8a49a8fa14e74346261f"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/mn-interior2-control-corrected.png",
+      "sha256": "ae9582f2d1e9a3584f962d66512a4798e1cd6e606ff4dcd7793ab722af8fea9c"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/mn-same-font-controls.png",
+      "sha256": "f3754915ebcd3d7211f4a0f8f2c6b66d581c8ecfd41b26d740ffaec45a21f1c3"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/my-point-exact.png",
+      "sha256": "8632e173ad40e496c5f5106b443052ccc28d24b63726a4d888978b4a55ead8e1"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/native-draft-before.txt",
+      "sha256": "57b61b302fdee3fd6eac14fada6bff6e9af41db1753694c279d860c6809f21ab"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/non_pdf_holdings_checkpoint111.json",
+      "sha256": "fa368522616ccb31cb760bc72fb071883b91a8b4bded4876e19be0776f6aa977"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/opening-sin-controls.png",
+      "sha256": "6a149120ed5775b8b81c1cee7f606843ab3dc45e9e87827fdf2c9f5831eb5a24"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/opening1to3.png",
+      "sha256": "424ede44c73b126738397bbd6ec3618fde37f56d4651d30c08b9915c9dd41c99"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/prepare_manifests.py",
+      "sha256": "caca79970e7226e99bcc9f79e0bed7667e3b362d14f35892ee52bf1716ec3cee"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/production-apply.json",
+      "sha256": "26d8dd177ff9d20bd3815a354129cc989c4de2cc65188a710f2651380aa964f1"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/production-verification.json",
+      "sha256": "f06ae9e97e655621d0ce71076a0be4cbf2de704122cd5424591a6e10a170b93f"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/qb-point-exact.png",
+      "sha256": "f463e6e4be74a57151137623690935c46e7af19eed6f1213fe1ab8f5ba08ffa9"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/record_checkpoint.py",
+      "sha256": "a1f08d4a642c79375396dea7bda904ac4af97aae96e3dc69027bf591b77f0e5c"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/replay.py",
+      "sha256": "f6d5bb582c6f7be226328ff15db47bcfdd6246969498d2f3e2753c4319a3291b"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source-evidence.json",
+      "sha256": "b8f12fb5a7ea4bc21c771e2016fac3a3e3b6f5ed147757c0890745a476669fae"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source2-enemy-direct.png",
+      "sha256": "6835aa18cd8e0d65d23fabb4f25109d535d8eec7c8ffd6f38b5357e659894c7e"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source2-sin-direct.png",
+      "sha256": "e37188ca68ff3bf1e34b5d88ce99d056eeab4a79235b713487deddcff4c3f94b"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source238-scale8.png",
+      "sha256": "ded652a55682370f26681cf30341cc76fd24efde25187d850ebc2c6fa2b28be8"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source239-cattle-note-control.png",
+      "sha256": "5cd32e61912d24353661cf58bddcdcddc15deef9cd15476f8ddfa769e816ba25"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source239-scale5.png",
+      "sha256": "9ecca1203b1574780f4fd3c76f993f088c4312d404eeed1b3818db2c75feb5e0"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/tables-before.json",
+      "sha256": "5fed4a6ca1cab350c8b8b0cdcaa71b1564b090f45db898f1b377242e06e4ae9f"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/text-before.json",
+      "sha256": "fe4a509f5261c3a55025f6141ec5ec946c0b5a1e3542c6bd24574c06b77b0e4f"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/trial-verification.json",
+      "sha256": "e65c8d06e0c54935d736803d1ff97a20af7c4f7acab84af54a03a400fc69543d"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/verify_batch.py",
+      "sha256": "a9328ec6da9604003640d413a559a7a71c485b639e87e726188fbd15abe32ed7"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/wife4-exact.png",
+      "sha256": "6b4c8a69231ed339be93ee8bfdba6b003063d0507a7c6e4db044037b3f5f391c"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/reader-verification.json",
+      "sha256": "e0ab8cb238d9b6d34d87a53c2ac584f1c963d3bbdd714153ab0b35042ca79a9c"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/reader-build-final.log",
+      "sha256": "33c4723dc6cfc4fbc827abeb63f4e80f43172780134a24ff5bed1e03b84220c1"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/tests-final.log",
+      "sha256": "9fe670931e83f7629d871edc324e4d39b486f0ace03c480bd49297e1c77539f7"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/node-tests-final.log",
+      "sha256": "e24261c07aaf42161f108c114dbbe8b18c60976e0ffe6988323618c2847593db"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/verify_reader.py",
+      "sha256": "1b24f684be4a84c0ba2440e9568b09a385da1be3ed8f47695366546de7c81a4a"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/reports-final.json",
+      "sha256": "b1992a5177ccde6830509eb84fa55a41a0e6eba7616bd7163daf4b892fde284a"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/regenerate.py",
+      "sha256": "5258fb28e2634d7ef95a83593a87f793da1b09f601cbf32d62a0ca755a60a6b8"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/source-verification.json",
+      "sha256": "8adec6bd496669ba949fa8aadb3868cc484a99424039b47987d450b316bbbb57"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/verify_source.py",
+      "sha256": "80c0b02b215cb324610349a02fbf9fe88eb98999d8888035ffdbac4678a25156"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/pixel-verification.json",
+      "sha256": "b69e652d90c4540e00b7c61aabf1c47bcfeca64ecbf8325d86bcdb87cf74425d"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/verify_pixels.py",
+      "sha256": "d27012ffed99ccf7c02f386c587065f6cec5b1c10899a7da6cce679320ca3ee6"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/finalize.py",
+      "sha256": "5e360b7f74277ba352062796a617ebd93c3ef16f58190199410fd64cf7b5b35e"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/backup-retention.json",
+      "sha256": "f1b2481a3b3ae7fed99906f198e100dd14d5aac9e34a31835fe6009f6155d140"
+    },
+    {
+      "path": "data/private/backups/before-MoriahII-Latin111-2026-10-03.sqlite3",
+      "sha256": "3018a926c1d3fd4ffe7c368b7dd1aed575a5c43b283eec58b21fb3e3ea522ac1"
+    },
+    {
+      "path": "data/private/research-work/MoriahII-Latin111-2026-10-03/control-recipes.json",
+      "sha256": "a592e3525c9a5155c3b13a26ab975c3e3aa36874990ed2cba564a8535502b881"
+    }
+  ],
+  "user_requested_pause_after_checkpoint": true,
+  "pause_reason": "Mike will install the app update, then resume the existing Goal.",
+  "source_control_image_scope": "17 active source controls independently pixel-verified; excluded scratch crops remain archived only and are not validation evidence."
+}
