@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "checkpoint": 77,
+  "created_at": "2026-10-03T07:20:30+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "ceb58df98cea8dd9eca33891b03ac4331844d788c9b54a79abde832136e34b35",
+  "corpus_after": "6e98c09528b0039e72f8d6961339a819ec004474f7c1a2fd290af965319348b0",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 2,
+  "corrected_text_rows": 0,
+  "partial_to_checked_reading_rows": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1418,
+  "partial_reading_rows": 129,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Martinez-copy77-2026-10-03/campaign_case_progress_checkpoint77.json",
+    "sha256": "96565e0428f56b692c137692cfba36f07130df177ed8e09461cfb5994a031614"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Martinez-copy77-2026-10-03/held_pdf_inventory_checkpoint77.json",
+    "sha256": "610664e076f3d136e2532b7d6ec4ef16fce5ac7372cf0f1790472927e16079b3"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Martinez-copy77-2026-10-03/non_pdf_holdings_checkpoint77.json",
+    "sha256": "d0d4db104870b72d7f431f65f927642253de12800f3bba0ba634f433c0ff2a66"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 25,
+  "new_acquisition_requests": 2,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint77 freshly compares Martínez2003 Latin quotation isb22 printed327/PDF5 and isb20 printed328/PDF6; complete source pages1–6 plus enlarged blocks/lastunits and footnote18. No stored wording changes needed. Isb20normalized bounded quotation now source-copy checked; isb22remains partial because exact reduced-size uncertain-letter mapping unresolved. Introductory pages checked for global conventions; no rule extrapolated from isb22footnote to isb20. Literal source symbols, words, gaps and brackets retained. No originalIsbell/Gordon/Montgomery edition or independent clay-reading certification. Two immutable reviews preserve original full rows; target notes only change,37other tables unchanged. Trial/production digests equal, replay allrows/digest unchanged, all1880identity memberships retained; no new rights approvals. 2283texts/1548readings1418checked129partial1unreviewed; exactly one inventory status changed. Frozen249originalmembers/histories unchanged,32linked217unlinked/allattempted/zero wholecasescomplete. Added exact originalGordon1934article and Isbell1975corpus requests to Miri:10resolved25requests. Government scan tool-size/robots timeout is not source denial; Isbell22pagepreview omits edition pages and IAexplicitrestricted. All10supplieddocuments previously processed. Goalactive; no reset/purchase/institution contact/push/deploy/restart.",
+  "next_actions": [
+    "Continue held native/source-copy gaps, preserving exact edition uncertainty.",
+    "Continue217frozen publication routes; whole-case completeness separate from stored-row checks.",
+    "Acquire originalGordon1934andIsbell1975via Miri; revisit isb22smaller-letter mapping without substituting English or original editions for current source."
+  ],
+  "validation": {
+    "corpus_before": "ceb58df98cea8dd9eca33891b03ac4331844d788c9b54a79abde832136e34b35",
+    "corpus_after": "6e98c09528b0039e72f8d6961339a819ec004474f7c1a2fd290af965319348b0",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 2
+      },
+      "texts": {
+        "removed": 2,
+        "added": 2
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/Martinez_comparison77_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Martinez_comparison77_2026-10-03.json",
+      "sha256": "5ade754f908f0b3576ac7face179e7a9867015f56cc1864d9aa42e9a54de52d0"
+    }
+  ],
+  "protected_payloads": "Source images/copy observations/before snapshots/corrected scholarly text and ingestion manifests private/outsideGit; receipt metadata/counts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0077_Martinez_comparison_source_copy.json",
+      "sha256": "7a4bc8c0280d69cb87633ca0533409bf6499e394c12ff72408f36d348caaa758"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/IGNCA-robots-check.json",
+      "sha256": "4a64cd38f8eb5107e703f40f202050c950ffa04f3fa0dbb301786d6565179e8d"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/acquisition-queue-before.json",
+      "sha256": "f37d0336dc761cec7ac46eede78bdcd099c580ca241513c2413fd45375ca6bee"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/backup-retention.json",
+      "sha256": "cdc8bca7e4a31dfcf10a74c87c7809bfbec875272e0c6a45e54df6be6c9ee17b"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/campaign_case_progress_checkpoint77.json",
+      "sha256": "96565e0428f56b692c137692cfba36f07130df177ed8e09461cfb5994a031614"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/crop-coordinates.json",
+      "sha256": "35eeb2d5862492be1b2af6736cf840303b0c3e587ab270e5bdcf0a6801845381"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/held_pdf_inventory_checkpoint77.json",
+      "sha256": "610664e076f3d136e2532b7d6ec4ef16fce5ac7372cf0f1790472927e16079b3"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/inventory-refresh.json",
+      "sha256": "c00a6d988fd91fa7af9181863b03d77d54f49a7c404cb16a2c49c5aa3c802841"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/metadata.json",
+      "sha256": "fd806950d996ed39f50c817e599b52f6454ac54e0111ecb07fce343dc64a32f0"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/non_pdf_holdings_checkpoint77.json",
+      "sha256": "d0d4db104870b72d7f431f65f927642253de12800f3bba0ba634f433c0ff2a66"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/original-edition-routes.json",
+      "sha256": "aeba312c8dbdb1d9851e360930a17c661104693e959e2c173736a992517acbb9"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/production-verification.json",
+      "sha256": "1e8164896c84d2cabdff6c812032393435ce456ba6b03abccce083bf61685315"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/source-copy-observations.json",
+      "sha256": "6e394ba1bf15cc69a649e7f0622046f54ae0370418b2921cb400595646c2df5a"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/targets-before.json",
+      "sha256": "3711e00d92d58df03f0fd9c8091b02bcc4ba9560855ff4348d12f9450f1e4a50"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/trial-verification.json",
+      "sha256": "6522f92c47c5deb305b8e5eecf1e68eec21658fa388867cf4262ccb1c0a28064"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/prepare.py",
+      "sha256": "b82ba9bb0ffa8783e862aedd4b4cf86fa72865554b037bd90c3f1f531884ca9c"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/record_checkpoint.py",
+      "sha256": "40f9acc9d2913351f8666e193b0a18df6ccca2753aae173f2d9eb7b1e1b7e94f"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/regenerate.py",
+      "sha256": "f222d6ebae29a7547ec94fb7791daca3b52f04accf1654e5819d634226c195e1"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/verify_batch.py",
+      "sha256": "8a97bd517e6527156f8595b26740ef5c555570fd4dcc54fca9cd3ae5a6add45a"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/verify_reader.py",
+      "sha256": "9e75eee25dbd5d7c71d0ad8073ad9000c7b2b1dc2baf7cdd165441c9a1552b96"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb20-bottom.png",
+      "sha256": "3311bb61ac431bd2b3cc68a316641bdb3190e5145407e3e02170ba5b71036130"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb20-full-native.png",
+      "sha256": "81ebd0cbf6f95207ac7edf0f60e4631807571414c609e492706e3d49bca4309b"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb20-last-units.png",
+      "sha256": "4b46a98bd872059f42d0e7e9d98f1af630c195d27f915c86e3086cd76fa62937"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb20-top.png",
+      "sha256": "a7e987bc3fade76d16602c5c87464aaff06bba6b19097085e58f301000de702d"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb22-bottom.png",
+      "sha256": "1fe5b3aac0829188820fddb52633aac08d1120e664c53eb87e3f889c5e7baa47"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb22-full-native.png",
+      "sha256": "5abe790dd999da2490d841542d04b4fc0edf9e77e30bbf7ff03ae193892f3668"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb22-last-unit.png",
+      "sha256": "40d03fce3ac3886740281ec515930a439eceab5d4776081ba86a0b107dc73828"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/isb22-top.png",
+      "sha256": "e0fc58d795acdb1e312972737c9a9fd83ba614d537ce38bd4a289f806d3566f7"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/key18-correct-position.png",
+      "sha256": "f025fef66a177079703c31381c34dbc1d2230cc2e7516fac93e408d23190d230"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/page1.png",
+      "sha256": "939ea2305a528e1847900971c40d57e8cfb6fe15e39fce0e739c8362f52f54c7"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/page2.png",
+      "sha256": "13bd182b2fbc10b03fc0ba32a3c6ecb07509be1f766bfa9afa79f6647decf065"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/page3.png",
+      "sha256": "8f0937116986272da475e349f25f66274bcf8b4cf092d3ee27caa540410ed1ed"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/page4.png",
+      "sha256": "60dd7dd036e56c999027e3a159b6fa630cc7c4627fc42d412b4d463ed98229a3"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/page5.png",
+      "sha256": "4ffaadad935806ae7aeafce169d2a6e1d789dcf60741aaf6f71e1143617f9155"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/page6.png",
+      "sha256": "3dda52dc208d1163f175aa1775071b2b894d8b63b4232c6b6ccfba3195ed44cb"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/smaller-type-key.png",
+      "sha256": "d297140ee7b2495b1cc074bd8a0c57afc6890102e7d7f913beb09d39dad96407"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/miri-dispatch-acknowledgement.json",
+      "sha256": "70b747d2f0da9c0c46a9725bc4b147fd8b9e692d3d48eb15ccd072ae77e0983c"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/reader-build-final.log",
+      "sha256": "990525217f6f64206e7fb010750842960929e1e20304efda897f146ef51c417d"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/tests-final.log",
+      "sha256": "435fb6d123337f43a1a0b88f8fbbe600f1cd34448d5adec56fa373b3fa6de1f7"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/node-tests-final.log",
+      "sha256": "0130ed55cf0df399e1875cc0bf69deae2c068b73fcc3bb1198d4532a16494fec"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/verify_reader.py",
+      "sha256": "9e75eee25dbd5d7c71d0ad8073ad9000c7b2b1dc2baf7cdd165441c9a1552b96"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/reports-final.json",
+      "sha256": "038c53712a3b3cf901e8ea797f05c666c5336d3d8596006fe52acdd9b5981a4f"
+    },
+    {
+      "path": "data/private/research-work/Martinez-copy77-2026-10-03/regenerate.py",
+      "sha256": "f222d6ebae29a7547ec94fb7791daca3b52f04accf1654e5819d634226c195e1"
+    }
+  ],
+  "miri_dispatch_acknowledged": true
+}

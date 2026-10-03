@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T06:19:31+00:00",
+  "updated_at": "2026-10-03T07:19:02+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -408,6 +408,31 @@
       ],
       "previous_access_evidence": "Fresh2026-10-03collections host robots404, existing repository retrieval pause respected; gallery199041loads8links inbrowser, earlierexactgalleries86242/70578load3/5. No site-wide denial or robots-disallow claimed.",
       "rights_policy_url": "https://www.penn.museum/about/statements-and-policies/terms-and-conditions"
+    },
+    {
+      "source_id": "SRC-C45C16AC2B8E",
+      "citation": "Cyrus H. Gordon, An Aramaic Incantation, AASOR 14 (1933–1934), 141–144.",
+      "short_label": "Gordon1934 IM9737 original article",
+      "requirement": "Personal research copy of printed141–144 with title/context and handcopy; earlier scan locator PDF154–157 not freshly revalidated. Needed for original isb22/IM9737 native transcription, translation and uncertainty conventions.",
+      "priority": 1,
+      "status": "Original unheld; public government scan identified, project archival paused pending verified site permission",
+      "checked_at": "2026-10-03T07:19:02+00:00",
+      "metadata_url": "https://www.jstor.org/stable/3768483",
+      "preview_url": "https://ignca.gov.in/Asi_data/4567.pdf",
+      "previous_access_evidence": "Earlier bounded inspection recorded, no registered archival capture. Fresh web opening failed tool-size limit (12,467,894 bytes); official robots fetch SSL handshake timeout, no HTTP200 or PDF acquisition attempted. These are tool/permission-route limits, not a source denial or verified disallow."
+    },
+    {
+      "source_id": "SRC-1FE46019356A",
+      "citation": "Charles D. Isbell, Corpus of the Aramaic Incantation Bowls, SBLDS17,1975.",
+      "short_label": "Isbell1975 complete corpus",
+      "requirement": "Complete book if possible; immediate title/context, symbol key printedxiv, text22 printed69–70 and text20 printed64–65. Authorized reprint acceptable with pagination checked. Original ISBN0891300104; reprint paper9781606081068 / ebook9781725223042.",
+      "priority": 1,
+      "status": "Full book unheld; public 22-page preview omits required editions; Internet Archive record access restricted",
+      "checked_at": "2026-10-03T07:19:02+00:00",
+      "metadata_url": "https://archive.org/details/corpusofaramaici0000isbe",
+      "preview_url": "https://api.pageplace.de/preview/DT0400.9781725223042_A40374051/preview-9781725223042_A40374051.pdf",
+      "publisher_url": "https://wipfandstock.com/9781606081068/corpus-of-the-aramaic-incantation-bowls/",
+      "previous_access_evidence": "Primary preview TOC text layer supplies locators (20starts64,next21starts66;22starts69,next23starts71); symbol key xiv. Preview ends introductory material. Screenshot cache failures mean no visual page verification or original reading certification. IA explicit access-restricted flag; no restricted endpoints or borrowing attempted."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -523,5 +548,12 @@
     "new_acquisition_requests": 0,
     "remaining_requests": 21,
     "receipt": "research/receipts/frozen_case_English70_audit_2026-10-03.json"
+  },
+  "checkpoint77_original_editions": {
+    "new_requests": 2,
+    "resolved": 10,
+    "remaining": 25,
+    "evidence_path": "data/private/research-work/Martinez-copy77-2026-10-03/original-edition-routes.json",
+    "evidence_sha256": "aeba312c8dbdb1d9851e360930a17c661104693e959e2c173736a992517acbb9"
   }
 }

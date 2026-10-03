@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Martínez2003 quotation-copy checks, checkpoint77
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — two append-only proofreading reviews and two text-note updates; no wording changed. State digest `6e98c09528b0`; opening clean/state match checkpoint76. Original full rows retained, 37 other tables unchanged, trial/production digests equal, replay preserves every row and digest.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent sequential private reader build 7/7. All 2,283 text contents/attributions/types/current statuses, 2,143 media assignments, 1,232 image hashes, 88 capture hashes and 1,880 identity memberships/counts verified. Seven reports/exports regenerated; roadmap, inventories and state recorded.
+
+- Compared Martínez2003 isb22 printed327/PDF5 and isb20 printed328/PDF6 against complete source pages1–6, enlarged blocks/last units and footnote18. Stored words/visible Latin marks match; no wording correction needed. Isb20 normalized bounded quotation now source-copy checked. Isb22 remains partial: exhaustive mapping of reduced-size uncertain letters is unresolved. Checked introductory/global conventions; no rule extrapolated from isb22-specific footnote to isb20. Source words, gaps, brackets and literal dsq2 retained; original Isbell/Gordon/Montgomery editions and independent clay/specialist verification remain separate. Protected images/observations/manifest private, source/editor/locator/rights/public status retained.
+- Added two original-edition requests: Gordon1934 IM9737 article printed141–144 with title/context and handcopy; Isbell1975 full corpus, immediate symbol keyxiv/text22 pp69–70/text20 pp64–65. Government scan web-size limit and robots SSL timeout leave existing project archival pause, not source denial or verified disallow. Isbell preview text layer supplies locators but omits editions; screenshot cache failure prevents visual page verification. Internet Archive explicitly restricted. No source bytes acquired or restricted endpoints attempted. Miri metadata-only message delivered/completed, recipient acknowledges10resolved/25requests; remote tracker files not independently inspected. No institution contact or purchase.
+- Corpus2,283texts/1,548readings=1,418checked/129partial/oneunreviewed; 58PDFsources/53appearance-bearing/1,342appearances, 2,143media/1,232images/88captures unchanged. All roster hashes/statuses independently refreshed; exactly one inventory status changed. All1,880identity memberships and frozen249originalmembers/histories unchanged; independently32linked/217unlinked/allattempted/zero wholecasescomplete. No new frozen-case attempt or historical native-gap completion claimed. All ten supplied documents previously processed; no duplicate intake/reset/push/deploy/server restart.
+- Goal active; prior/current turns made verified corpus progress. Continue held inscription/direct scholarly translation gaps and217publication routes; original-edition requests do not stop other research. Receipt `research/receipts/Martinez_comparison77_audit_2026-10-03.json`, private checkpoint0077. Latest ten prebatch backups retained with hash-bound pruning record.
+
 ## 2026-10-03 — Codex — M163 native edition copy check, checkpoint76
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
