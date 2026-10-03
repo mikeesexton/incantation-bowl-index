@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon C/D complete native-copy checks, checkpoint98
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — two appended proofreading reviews/two corrected native copies; digest `8dc34927b04e`. Opening corpus matched97; working task claim continued. Complete original copies/all earlier reviews retained;37 other tables/all1,880 memberships unchanged. Trial/production equal; replay changed no rows or digest.
+**Tests:** 394 Python +57 Node =451 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures and1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Complete Gordon1934 Istanbul/Baghdad native TextC/D checked on printed326/328 (PDF9/11), all11/18physical rows,9/14anchors, complete opening/closing and enlarged full-word/mark controls.47actual source inferior points copied at exact letters (C35/D12); source convention printed321/PDF4 verified directly. Three omitted C letters restored from scan: opening second-word vav, standalone yod after four gap periods and nun within long magical word. D source14 full-height vav had been copied short yod; corrected from same-font pixel comparison. Original project copying doubt around C word resolved, actual source question retained. No expected wording/English/grammar/parallel harmonization.
+- Complete expanded C magical-word control replaces initially clipped crop; wrong initial C-word5 crop retained privately as rejected scratch, never evidence. Final full-line pass discovered standalone opening yod before ingestion. Same-font D nun separately controls C nun; complete D word controls distinguish source uncertainty points from final sentence punctuation and neighboring-row strokes. Literal variants, angle/restoration brackets, gaps/source question and punctuation retained. Checked status certifies bounded normalized source copy, not clay/meaning/full-source capture/whole cases. Source/editor/locator/language/script/rights/public0 unchanged.
+- Gordon now10 checked/2 partial of12 stored readings; native E/F distinct witness-column checks next, allsix source translations alreadychecked. All227 Jena/77 Montgomery checks retained. Inventory1,485 checked/62 partial/one unreviewed. Both inventories refreshed/exactlytwo target entries changed; allremaining partial rows retain concrete review notes. Frozen249 original members/histories exact:32 linked/217 unlinked/all attempted/zero whole cases complete/no new attempts. Historical45 native gaps/40 English project drafts remain separate;31 Pognon French originals alreadychecked.
+- Allten supplied documents alreadyprocessed, including fgaf025.pdf. Miri10 resolved/26 requests unchanged; no new access blocker/outbound message/reset/purchase/merge/rights decision/public approval/push/deployment/server restart. Protected expression/images/notes/manifests remain private outsideGit; receipt contains metadata/hash pointers. Lastten prebatch backups retained under recorded rule.
+- Goal active; continue GordonE/F, other held readings and217 publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0098_Gordon_C_D_source_copy_checks.json`. Receipt: `research/receipts/Gordon_CD98_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon A/B complete native-copy checks, checkpoint97
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
