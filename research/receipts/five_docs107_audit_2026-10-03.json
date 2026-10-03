@@ -1,0 +1,656 @@
+{
+  "schema_version": 1,
+  "checkpoint": 107,
+  "created_at": "2026-10-03T20:00:36+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "1f657cfe3afe1126c47aaa71c4474d4ccc38278a3b09f409e5a551f03904a069",
+  "corpus_after": "5ad2ec26b0b612bf462e3d875f9bd900a8ed00e7721d01b276142a7bd5f7da3c",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 0,
+  "corrected_text_rows": 0,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 6,
+  "new_sources": 2,
+  "new_source_corrections": 5,
+  "new_document_assessments": 6,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1495,
+  "partial_reading_rows": 52,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 94,
+  "registered_PDF_sources": 64,
+  "PDF_appearance_bearing_sources": 57,
+  "PDF_appearances": 1346,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/five-docs107-2026-10-03/campaign_case_progress_checkpoint107.json",
+    "sha256": "54cb642709ef8e630a9ced3b81a99009ef927bc8abb04172e42572f9c3550887"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/five-docs107-2026-10-03/held_pdf_inventory_checkpoint107.json",
+    "sha256": "eca307749bc171d67d645f2a9b9994c21e3e52bdecbd75354f8cac442c2e9bc0"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/five-docs107-2026-10-03/non_pdf_holdings_checkpoint107.json",
+    "sha256": "f46215d546255bff2e740011609a8bfd025785d188827db55ef5c65a856dcf04"
+  },
+  "miri_resolved": 15,
+  "miri_remaining_requests": 21,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "native_script_recoveries": 0,
+  "supplied_new_documents_processed_for_intake": 5,
+  "reading_extraction_pending_for_new_held_editions": true,
+  "waterman_bounded_viewer_observations": {
+    "path": "data/private/research-work/five-docs107-2026-10-03/waterman-viewer-observations.json",
+    "sha256": "062b197a6a7530fe73cdfce84d46c15e8a3c47d3a7a1d68a4d182c219abb9e49"
+  },
+  "waterman_full_document_acquired": false,
+  "waterman_exact_accession_bridge_verified": false,
+  "scope": "Checkpoint107: five newly supplied original PDFs moved into private IBI storage after identical archive/deposit verification. Exact work scopes: Ford2002printed31–47+DC37(R)manuscriptPlateI/blank18; Morgenstern2007BM91767printed5–27; Levene2007Moussaieff164printed59–70/illustrations1–3; Gordon1941middlecontinuedpart272–284 only; AASOR14whole162pagecontainer1933–1934, with Gordon1934AnAramaicIncantationIM9737printed141–144/parentPDF154–157 extracted pixel-identically. Container and1941specificpart distinct newworks, aggregate1941retainedpartial/otherpartsunheld; adjacentunpaginatedTableI preservedincontainer/associationnotasserted.6captures/2newsourceworks/5immutablemetadataavailabilitycorrections/6completeexactworkdocumentassessments. ManifestdrivenlocaldepositCLI preservesstableIDs/time/provenance, wholebatchvalidation/noHTTPdecision, rehearsalequalall39tables/replayzero;35othertables/all1880members/readings unchanged. Holdings64PDFsources/57appearancebearing/1346appearances;94captures. Miri15resolved/21remaining, originalrequests/priorqueuehistoryretained. OrdinaryChromeWaterman1931title/completeprinted61–62readafterborrowrenewal:threebowls/twosimulationwritingpairedaroundeggshell/thirdbrokenSyriac,nearbycoincontext; no accessiononthesepages; exactToledo1931.455/Kelsey31455bridge/fullPDFstillunheld. No restricteddownload/disabilitycertification/signedasset/bulkcapture. Documentavailabilityseparatefromreadingcapture/sourcecopy/wholecasecompletion.1495checked/52partial/oneunreviewed unchanged;frozen24932linked217unlinked/allattempted/zero wholecasescomplete/no newattempts. Protectedfiles/manifests/observationsprivate;Gitmetadatahashpointers only. No reset/message/purchase/merge/rights/publicapproval/push/deploy/serverrestart. Goalactive; nextextract/check exactfivearticles/nativeEnglish/photos and Watermanobjectbridge, thenG11–12/finalpass/217publicationcases.",
+  "next_actions": [
+    "TEXT: extract and separately source-check Gordon1934 IM9737 complete native/English/handcopy, then the1941continuedF447/F446 material, Levene2007Moussaieff164 and Morgenstern2007BM91767 and Ford2002BM91715/BM91780/DC37(R) exactedition units. Holding PDFs/wholepage OCR does not count as reading capture.",
+    "DISC/CONC separate checkpoint: follow Waterman1931object plates/lists and Toledo/Kelsey archival register for exact1931.455/31455bridge;61–62contextnowread, no accessionobservedthere/fullPDFstillunheld. KeepMiri21remainingspecificrequests current.",
+    "TEXT: finish GordonG11–12/whole1–12pass;52partials/oneunreviewed,40Englishdrafts/45nativescriptgaps and217publicationcases remain independent."
+  ],
+  "document_metrics": {
+    "document_assessment_rows": 85,
+    "sources_with_document_assessments": 80,
+    "sources_with_complete_documents": 73,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 5,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 64,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "validation": {
+    "corpus_after": "5ad2ec26b0b612bf462e3d875f9bd900a8ed00e7721d01b276142a7bd5f7da3c",
+    "all_39_tables_match_rehearsal": true,
+    "replay_changed_no_rows_or_digest": true,
+    "replays": [
+      {
+        "command": "ingest-deposits",
+        "result": {
+          "network_requests": 0,
+          "new_captures": 0,
+          "new_sources": 0,
+          "unchanged_captures": 6
+        }
+      },
+      {
+        "command": "ingest-source-corrections",
+        "result": {
+          "applied": 0,
+          "unchanged": 5
+        }
+      },
+      {
+        "command": "ingest-document-assessment",
+        "result": {
+          "changed": 0,
+          "document_assessment_rows": 85,
+          "entries": 6,
+          "sources_with_complete_documents": 73,
+          "sources_with_complete_object_level_extraction": 29,
+          "sources_with_corrected_rich_text": 0,
+          "sources_with_document_assessments": 80,
+          "sources_with_object_level_extraction": 64,
+          "sources_with_ocr": 5,
+          "sources_with_physically_inspected_documents": 0
+        }
+      }
+    ],
+    "trial_verification": {
+      "changed_tables": [
+        "captures",
+        "document_assessments",
+        "source_corrections",
+        "sources"
+      ],
+      "unchanged_tables": 35,
+      "original_append_only_tables_preserved": true,
+      "identity_memberships_unchanged": true,
+      "trial_fingerprint": {
+        "schema_version": "021_catalogue_metadata_corrections",
+        "migrations": 21,
+        "tables": {
+          "accuracy_audit_reviews": {
+            "rows": 80,
+            "digest": "3941b643cb346dce143d92a3798831040e9be66ae7b6fdf65f07e61827db8586"
+          },
+          "appearance_object_links": {
+            "rows": 2840,
+            "digest": "ab10545255c26f82e2a4b9dd20f01b9c456d5adde3c36e4c24e0a61cb7cd14e2"
+          },
+          "appearances": {
+            "rows": 2840,
+            "digest": "28e91644a778b52bfabb474b6ea23cb6fa89593a6514bfff619500a0b265b08a"
+          },
+          "capture_source_corrections": {
+            "rows": 3,
+            "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6"
+          },
+          "captures": {
+            "rows": 94,
+            "digest": "25a783c3029bedfd764473521e891a294895c1d06393514ee2c522cbf03155f8"
+          },
+          "catalogue_metadata_corrections": {
+            "rows": 9,
+            "digest": "0a25edd061dfa9a469df2b7dc3eea92d55de7b38baede0ff26eb45acd09c867b"
+          },
+          "claim_conflict_review_history": {
+            "rows": 964,
+            "digest": "c88bbc70febdd268c4e6da732a3d74385233b626cff319b00da6d355b84adf2e"
+          },
+          "claim_conflict_reviews": {
+            "rows": 646,
+            "digest": "a02c2ff5831277b50c5e162e45487e381e019fb0a14be633071de4ee51a5272b"
+          },
+          "claim_locator_corrections": {
+            "rows": 1110,
+            "digest": "f0fa15190dd967f56a07e0e1ce36aac1f7f7157dc63c7c2c808191cbb569e685"
+          },
+          "claims": {
+            "rows": 9205,
+            "digest": "06f4de0170412ca451f2b5e403b0763e5e7bf0e545ad8deb4e65349a0f2ac0e2"
+          },
+          "contributor_aliases": {
+            "rows": 0,
+            "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "coverage_targets": {
+            "rows": 12,
+            "digest": "73d66484bd8ac7761a276eb62a9532495bad9f58424a83eae9cbd42f24e8f690"
+          },
+          "dedupe_candidates": {
+            "rows": 34801,
+            "digest": "6a3098cb5e68ddaf0acdd2f2c4cfcb93ccb3f462bef9cf521ab608f898507ff3"
+          },
+          "dedupe_evidence": {
+            "rows": 34812,
+            "digest": "522dbc6887a484506a23fe23e1631dbec31c8e4a648ac7113e34a0d53e83efa5"
+          },
+          "document_assessments": {
+            "rows": 133,
+            "digest": "0c72e1b14aef17b9ed4af91694c92bb232176cb18c57c3912ccf96560bbcbfe7"
+          },
+          "events": {
+            "rows": 215,
+            "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21"
+          },
+          "identifiers": {
+            "rows": 5231,
+            "digest": "00e70be998b8a73af59e323dcd50ba79cbd8f111517af75c7aaedf0d4ab3cc99"
+          },
+          "leads": {
+            "rows": 99,
+            "digest": "77149f8277d5555db72b1d08513e3db1d54e15934eb2d65e2cebd44597c2f0b2"
+          },
+          "manual_audits": {
+            "rows": 14,
+            "digest": "4f584ad3375e191a6970bdd088541e9fba7c7e841970093fccbf092d36843b64"
+          },
+          "media": {
+            "rows": 2143,
+            "digest": "02f3f9c477ca575d6da955a8e239df7698c8918d538c20dc4200e37da60e10f9"
+          },
+          "media_rights_reviews": {
+            "rows": 652,
+            "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a"
+          },
+          "merge_log": {
+            "rows": 0,
+            "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "museum_concordance_reviews": {
+            "rows": 40,
+            "digest": "2c08456dc407d9f09eda530bfed53eb621b0a24387aad02896aae0ed4fafe33d"
+          },
+          "object_relationship_assertions": {
+            "rows": 5,
+            "digest": "22806221af1dc10db768d00e4d381c59f20a11a9bded2d7ff037b3407edda3a6"
+          },
+          "object_scope_reviews": {
+            "rows": 2,
+            "digest": "da5e5c20a3cce203f1495d1a4057387213d8211e31733b1d89eb313b227be46a"
+          },
+          "objects": {
+            "rows": 2232,
+            "digest": "d95a7925d9e9ca433a4c9937a345c9ad7f8da044940990d1299f1deb00f65749"
+          },
+          "publication_assessments": {
+            "rows": 631,
+            "digest": "a42cbffc0c8052a9cc510e682cd0b8cf0f71624e351a6ba69884e3a9c6849c83"
+          },
+          "publication_registry": {
+            "rows": 37,
+            "digest": "d0acdbe0a28e823e2fcb8076da1036f39e6e037158bce27605d21be30c54d603"
+          },
+          "saturation_sweeps": {
+            "rows": 3,
+            "digest": "8f895933b8b94ed48f35fc21b78108341bc1154f4b7d1ed52e3013d0f476ab04"
+          },
+          "schema_migrations": {
+            "rows": 21,
+            "digest": "3ea3c73298f21b09df70d6591eefa6d636cc21277da2af8bf941e0146c0cb2a3"
+          },
+          "search_queries": {
+            "rows": 370,
+            "digest": "7781af2d8ec277639d3116c34584dc63528d9932ca552ee5f40a102450e4e634"
+          },
+          "search_runs": {
+            "rows": 22,
+            "digest": "24cacb910438aa048e4eef166c635bb235d41af7486dd172aadb41a0cc00732e"
+          },
+          "source_corrections": {
+            "rows": 91,
+            "digest": "330455c753e4a912a1ef953a8c31c321bf75effd874edceb93477b1d480f1d8b"
+          },
+          "source_scope_reviews": {
+            "rows": 119,
+            "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2"
+          },
+          "sources": {
+            "rows": 969,
+            "digest": "ffaae117e248bf07dac741b97fe8189af1206d55dc4176335b8ffbc599bd88bd"
+          },
+          "text_metadata_corrections": {
+            "rows": 21,
+            "digest": "0fce09105c99d7d2e84197810ac365adeb8639abe9fcefcc4795ba34ceefddc0"
+          },
+          "text_proofreading_reviews": {
+            "rows": 1824,
+            "digest": "0b29e452d49db95996e881ae614026f2ab0b086e50f464c41c0cf767f912e783"
+          },
+          "text_publication_reviews": {
+            "rows": 310,
+            "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0"
+          },
+          "texts": {
+            "rows": 2283,
+            "digest": "d1ac445057afc61cc4e5927a679d2db8a6209695459496570422c62e636159b6"
+          }
+        },
+        "corpus_digest": "5ad2ec26b0b612bf462e3d875f9bd900a8ed00e7721d01b276142a7bd5f7da3c"
+      }
+    },
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 94,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "403 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "python_tests": "403 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 460,
+    "reader_build_after_both_test_suites_passed": true,
+    "intake_final_audit": {
+      "new_captures": 6,
+      "new_sources": 2,
+      "source_corrections": 5,
+      "complete_exactwork_assessments": 6,
+      "all_original_append_only_records_retained": true,
+      "new_capture_metadata_hashes_assignments_private_rights_and_derivations_verified": true,
+      "all_five_moves_verified": true,
+      "miri_full_original_requests_retained": true,
+      "miri_counts": "15 resolved /21 remaining",
+      "reading_capture_not_claimed": true,
+      "waterman_fullPDF_and_exact_bridge_not_claimed": true
+    },
+    "all_projected_source_metadata_verified": true,
+    "all_capture_private_rights_and_deposit_provenance_verified": true
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/five_docs107_deposits_2026-10-03.json",
+      "sha256": "83d8bbf10879b592e3dca90f5ddc7891197c4ad4786e5378fcbb7df57e03e832"
+    },
+    {
+      "path": "data/private/manifests/five_docs107_sources_2026-10-03.json",
+      "sha256": "50f849e2430118d7e345e6a528fe7ec1cd56029907149d3cc3154ebfb72baf9b"
+    },
+    {
+      "path": "data/private/manifests/five_docs107_documents_2026-10-03.json",
+      "sha256": "e55ec49c51eb829c06e376e15389bf645d1a9aa3ddae3c72c5c8d1e60dd32670"
+    }
+  ],
+  "protected_payloads": "Edition expression/images/wholePDFs/OCR/observations/manifests private outsideGit; receipt metadata/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0107_five_supplied_documents_and_Waterman_viewer.json",
+      "sha256": "a16b6e1195446a89321c3c23e70c7b661d4c024fa5b4bef7947f4d20e23ea45a"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/2440-another-look-at-mandaic-incant-page-1.png",
+      "sha256": "09298b7f0e07cfa04e4388c91bef564c251b3cbbaf70f0acd78bc6267bfb0103"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/2440-another-look-at-mandaic-incant-page-18.png",
+      "sha256": "6c2e0ba34bbb90c7d23d95d4319db2ebd53274f43d0065bfa760a7baf6b2aa7b"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/2440-another-look-at-mandaic-incant-working.txt",
+      "sha256": "695e594768dc47b34ff38b6613379c3cf092d191270090f1810d52fe8f23731c"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-10.png",
+      "sha256": "625f61c83f9c95ff1c6dc42ad650e1b4d377d5666f7ede0cd045cdd86c002f4c"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-11.png",
+      "sha256": "6f066d3f6ae369b187136aa979067340c7cbc7c13f00ffc73b76cb8c0dd7da0d"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-12.png",
+      "sha256": "30f34f6d645274a14206112a8ea64d82d0335d17ff6e7d9d36de14a1ce3d741a"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-13.png",
+      "sha256": "5c80e9c736b9719ea4dda53590a08aa5664ebd3c4a12af20c49c7cb946782cef"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-14.png",
+      "sha256": "e6cc112f276d15e2ee9cbc51070b7fd3681d45c6a6d6c07ffe81a37d19d73d19"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-154.png",
+      "sha256": "688a55eef85e40e82473849336eaac1522dc6c1b464dc00a07428c138064a5d4"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-155.png",
+      "sha256": "f3c540a439bac37b0c17784dc084fe4eeb4cea6062a54f4ea4baf3f029d4fc69"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-156.png",
+      "sha256": "1c385e4ce5cc30188d439e28dc956cc3b963668b358a10d4118195fa4c11925e"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-157.png",
+      "sha256": "bb253824ddc71c0ab7518693689a0afa76373c4c2dedbfcbc1d3f7991d8c724e"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-158-upright.png",
+      "sha256": "a4543150bbb55977723d0737268b76dd993b10b4fe7db712c3c7ccbce35f8011"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-158.png",
+      "sha256": "10bbc48bbf9e971c95b1fa93a0c08e231b4b4edab3191d6f1fb58902a44c4d63"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-159.png",
+      "sha256": "c45d4e176ef09d42ffd3fa87aa7d188c65cec08d69a3862ae4ec47631107b705"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-160.png",
+      "sha256": "70a89342dc7760bc6595db58b00ec494326caece138508f91ab611223c82bf02"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-161.png",
+      "sha256": "b02c525a37bfc864696696b2b6976ca25be20094af1b909a9c9d2b0bf8f9c540"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-162.png",
+      "sha256": "f71793bfc4d5e951348a2599e8fc0dcae25a913fa5deb328e7d087db7b6b8f7a"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-2.png",
+      "sha256": "32efe5bcf82cb92c08cfbc6b323f9fda06ce9fff49473cf9b56fcc26138b7692"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-3.png",
+      "sha256": "fa6d425f735637fcb951b45ee1b1c4e33b85333f262f233ec586f57e0f8f7f63"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-4.png",
+      "sha256": "91104cfc603e1e522f9a9a8fbd55de2ac47d58c87e7b598d88cbfe704cf0fa53"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-5.png",
+      "sha256": "616cdf270da02bf8b0fd51806cfd1562bf7ba58b62660ff37b3206e3f5ff1904"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-6.png",
+      "sha256": "98544664184b77262e06b3b8e16b9226beb2aa951a95aed84ffa3fc19a94d2d1"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-7.png",
+      "sha256": "660752bfe9def97f91141719361061be4c85274e7c30b9e83272b3fcd1201a81"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-8.png",
+      "sha256": "a497f5349032853e340bbfe789ee07f3b18b69c6a44313ae4684c477b2dccc73"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-page-9.png",
+      "sha256": "440425fcbf0208b01fb682ebac33d1c745206c0c9a578406b4c1c389ea5e9ce1"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/4567-working.txt",
+      "sha256": "2fe17f60e694a2667fab9b2e5de8ef0264b7394eb718638266e7ad61f5963b86"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Ford-page-17.png",
+      "sha256": "66720783d7c4ebc096e95ed3c9350831b13fa2b1f3f14c34690828f77a6ec355"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-1934-derived-page-1.png",
+      "sha256": "ad5d0b75bcc49fdc32e61c96f92fbbd3ebf234a537efa0149e28b8f36fc2f082"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-1934-derived-page-2.png",
+      "sha256": "d2f66a8e643749075250a1d28cbee9e88a58a26465223dd95fd06494e9984d68"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-1934-derived-page-3.png",
+      "sha256": "639a0f4c454ab8a8e26755e38f6e8d8c997374f9140a6e633526d3d34f3cb316"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-1934-derived-page-4.png",
+      "sha256": "8e1c03b30cf1ccf8fdca1ead4103605cdacd29bb17455a4bad8a209dde39bc2b"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-AramaicIncantationBowls-1941-page-14.png",
+      "sha256": "2d7942c7e9937ddd7059a913008e58210c9263f9521ce6b12765bd521c3f838e"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-AramaicIncantationBowls-1941-page-2.png",
+      "sha256": "6561d8f3f3d1e4feb71cc16d3959c5be7735e7099ccd18d64dd8b0c256ed3492"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Gordon-AramaicIncantationBowls-1941-working.txt",
+      "sha256": "75c9e95c32dc3d8a4a1f3e709d84fa777fcd13c6000d21f19dfc6e69bff8c5ad"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Levene_Dan_If_You_Appear_as_a_Pig_A-page-1.png",
+      "sha256": "240188b4b01ebc6871c739683587d20caa00d6e75b78f88b57cf5853eaf1b95c"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Levene_Dan_If_You_Appear_as_a_Pig_A-page-12.png",
+      "sha256": "9b7bdff69bfd9e8942788fff187ea46caa3b1f33a87715fae604bd549f83b178"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/Levene_Dan_If_You_Appear_as_a_Pig_A-working.txt",
+      "sha256": "47484a7093da4bd2435431f404eda69e4ebf09429ac6b32b5eb69c2da994efd4"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/The_Jewish_Babylonian_Aramaic_Magic-page-1.png",
+      "sha256": "55b2ce004ab874487b6d81ead1bbcb9fd6f8d093bed8aa4046d1b78fee3a063e"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/The_Jewish_Babylonian_Aramaic_Magic-page-23.png",
+      "sha256": "02188966b5636f24cd603ef8df3b149dc51a5e35d065aa08e65f62aabf81e5f7"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/The_Jewish_Babylonian_Aramaic_Magic-working.txt",
+      "sha256": "2c0d4ded43b9729b1a27a658ae8ee922b9e6a2f0649dae4f7a5a023af3ed7fc5"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/article-derivation.json",
+      "sha256": "360fb438ae8a2b95d5a3011ccdbffc76026159aff4e099021daafb0d3df6ee14"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/backup-retention.json",
+      "sha256": "85e28b35fbee226be82f1eb6004e23902864a38a875cace8e91ef48cf0f2951e"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/before-fingerprint.json",
+      "sha256": "c155f3c45fab02ea00f7f28935257ff1bf9de76aa9904deaa187cd3db79e7b91"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/before-tables.json",
+      "sha256": "931b76520991d804556423537575f999efa6b181e38ded32ce988529c1c8b848"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/campaign_case_progress_checkpoint107.json",
+      "sha256": "54cb642709ef8e630a9ced3b81a99009ef927bc8abb04172e42572f9c3550887"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/completed-moves.json",
+      "sha256": "0b7c51a5a4821acf7e685a3695e61e0608560460eb1484728e7b3dc850698e33"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/document-evidence.json",
+      "sha256": "db2c3c420072a6d6eacbea0673cdb470bf212f78f93b3903eef3b2ca1caf8af3"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/file-inventory-enriched.json",
+      "sha256": "a4c1b96dfdf2a07ba1f604582b04056abf039f1dd11fb7ceeeabd80ac70c88ae"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/file-inventory.json",
+      "sha256": "aeefa9aa9fdd56aa1e9ca05a99841ced451ab10fe9a6904be0f4abadd7aceadb"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/held_pdf_inventory_checkpoint107.json",
+      "sha256": "eca307749bc171d67d645f2a9b9994c21e3e52bdecbd75354f8cac442c2e9bc0"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/inspect_supplied_files.py",
+      "sha256": "23df1ce405eeedd09afdce6802dbaf5e8a5966b21aa4909756e48bc860734886"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/metadata.json",
+      "sha256": "ceacff4c63214c236287bf821113e284c881789081293f0e27130ac34e927039"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/miri-queue-before.json",
+      "sha256": "3690ab9270e284ca70b7c79fc5f1df8cf36ba768686c66ccc8d9aadaa62a6a99"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/non_pdf_holdings_checkpoint107.json",
+      "sha256": "f46215d546255bff2e740011609a8bfd025785d188827db55ef5c65a856dcf04"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/prepare.py",
+      "sha256": "8153129de6e2a4ddbff1b85e0924389fdea6138e73333cd29e71f59765abdb6b"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/production-verification.json",
+      "sha256": "c25a17a87dfe0e0a8adc6de885359d1ecff07fc8c7773e3c2983b1d0732c9839"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/record_checkpoint.py",
+      "sha256": "02ebdc60073fc6cfa9e68a451855cb11c4a506bd664f8d15ea42f3aa181debda"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/trial-verification.json",
+      "sha256": "ea945015ec327ffd84e3bff6a35baf8cbc1678f5c4c74b3066494d253b987a45"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/waterman-viewer-observations.json",
+      "sha256": "062b197a6a7530fe73cdfce84d46c15e8a3c47d3a7a1d68a4d182c219abb9e49"
+    },
+    {
+      "path": "data/private/deposits/user-supplied-2026-10-03-batch107/4567.pdf",
+      "sha256": "8965a77a096e8dd289c4034852b29cdd0c64c783b663a6f60372f1371b7959f6"
+    },
+    {
+      "path": "data/private/deposits/user-supplied-2026-10-03-batch107/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+      "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a"
+    },
+    {
+      "path": "data/private/deposits/user-supplied-2026-10-03-batch107/The_Jewish_Babylonian_Aramaic_Magic_Bowl.pdf",
+      "sha256": "d2d279957f88a8832d60d8cf91e0c0482c5f6aed42f10d96076867dd7d2d0baf"
+    },
+    {
+      "path": "data/private/deposits/user-supplied-2026-10-03-batch107/Gordon-1934-An-Aramaic-Incantation-printed141-144.pdf",
+      "sha256": "a709ac6b29b9293a4e66786b15bac5992dafa5f84418dbb096e3a5f452f9b5ab"
+    },
+    {
+      "path": "data/private/deposits/user-supplied-2026-10-03-batch107/Levene_Dan_If_You_Appear_as_a_Pig_Anothe.pdf",
+      "sha256": "fae27eb15ae8ced15f816163c89416341c9a38d0dfd18e8b97cf1a0cd5549999"
+    },
+    {
+      "path": "data/private/deposits/user-supplied-2026-10-03-batch107/Gordon-AramaicIncantationBowls-1941.pdf",
+      "sha256": "f9e8aef0b5963cbcbe5953ae52fcfb7dc51db156fb8d3b26cdcfbb4c9002e78d"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/reader-verification.json",
+      "sha256": "5d3e8c6a393301445a6fe718f06de94f7775fe094ec96774b3f476f4193925ff"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/reader-build-final.log",
+      "sha256": "bd5455cec2e38976b5e1489ef3d45c8093ea41e2e637223a009c0a83d6f3b065"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/tests-final.log",
+      "sha256": "e38127a066df745e536b0c6caf2cc23e07e53d218ec0eda2b7ecc45feef7b101"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/node-tests-final.log",
+      "sha256": "78a803a9050cd4b92a40152c6a5d9ff43d537108ec762501fa76cfd732acc467"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/verify_reader.py",
+      "sha256": "73cf1573cf2fd758de9d1db4f9b286b41dc830ae42ed75d78325567b3a412a69"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/reports-final.json",
+      "sha256": "da33df4b1d930c6c0347f9c9d678662d7c77c9606ff8a2de1ffed6a1ca8a074f"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/regenerate.py",
+      "sha256": "0c0639369e4f9b17331fcb3d0f55c4131e4e59b51318176bc3d76ecd8d7a368a"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/finalize.py",
+      "sha256": "0044d72eddd6692f0cd720282d4ebf9fffe5c9a1eb4672387962e1d81be104a8"
+    },
+    {
+      "path": "data/private/research-work/five-docs107-2026-10-03/intake-final-audit.json",
+      "sha256": "bd5c6da35c8326bb2b6688220ec05655e47afe544e2542c06dfb845c2a65da20"
+    }
+  ]
+}

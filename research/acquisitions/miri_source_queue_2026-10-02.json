@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T07:54:05+00:00",
+  "updated_at": "2026-10-03T19:57:24+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -105,6 +105,138 @@
         "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
         "status": "unheld original needed"
       }
+    },
+    {
+      "source_id": "SRC-FORD2002-JANES",
+      "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+      "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+      "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+      "capture_id": "CAP-IBI-CP107-FORD2002",
+      "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+      "status": "original requested document acquired privately; reading extraction/checks pending",
+      "resolved_at": "2026-10-03T19:57:24+00:00",
+      "checkpoint": 107,
+      "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+      "prior_acquisition_request": {
+        "source_id": "SRC-FORD2002-JANES",
+        "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+        "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+        "priority": 2,
+        "status": "unheld original needed",
+        "checked_at": "2026-10-02T20:03:15+00:00",
+        "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+        "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+        "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+      },
+      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+    },
+    {
+      "source_id": "SRC-1A922C3F041F",
+      "fulfilled_by_source_id": "SRC-1A922C3F041F",
+      "title": "Complete original printed5–27, native/English/philologicalnotes and closingabstractPDF23/27.",
+      "filename": "The_Jewish_Babylonian_Aramaic_Magic_Bowl.pdf",
+      "capture_id": "CAP-IBI-CP107-MORGENSTERN2007",
+      "sha256": "d2d279957f88a8832d60d8cf91e0c0482c5f6aed42f10d96076867dd7d2d0baf",
+      "status": "original requested document acquired privately; reading extraction/checks pending",
+      "resolved_at": "2026-10-03T19:57:24+00:00",
+      "checkpoint": 107,
+      "verified_scope": "Complete original printed5–27, native/English/philologicalnotes and closingabstractPDF23/27.",
+      "prior_acquisition_request": {
+        "source_id": "SRC-1A922C3F041F",
+        "citation": "Morgenstern, Matthew. “The Jewish Babylonian Aramaic Magic Bowl BM 91767 Reconsidered.” Le Muséon 120/1–2 (2007): 5–27. DOI 10.2143/MUS.120.1.2020266.",
+        "requirement": "Complete original article, especially BM91767 native lines 2–4 and English on pp. 11–12; the newly held Abudraham article supplies only a bounded quotation.",
+        "priority": 2,
+        "status": "unheld original needed",
+        "checked_at": "2026-10-02T20:03:15+00:00",
+        "metadata_url": "https://poj.peeters-leuven.be/content.php?id=2020266&url=article",
+        "attempted_pdf_url": "https://poj.peeters-leuven.be/content.php?download=yes&id=2020266&url=article",
+        "previous_access_evidence": "Robots-respecting download returned HTTP200 text/html, 22,312 bytes: subscriber/login page, not article PDF. Response retained privately; no subscriber access or purchase attempted."
+      },
+      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+    },
+    {
+      "source_id": "SRC-E29AEC3E5CF4",
+      "fulfilled_by_source_id": "SRC-GORDON1941-CONTINUED",
+      "title": "Complete middle continued installment printed272–284 (PDF2–14), JSTOR coverPDF1. Other two1941installments not included.",
+      "filename": "Gordon-AramaicIncantationBowls-1941.pdf",
+      "capture_id": "CAP-IBI-CP107-GORDON1941",
+      "sha256": "f9e8aef0b5963cbcbe5953ae52fcfb7dc51db156fb8d3b26cdcfbb4c9002e78d",
+      "status": "original requested document acquired privately; reading extraction/checks pending",
+      "resolved_at": "2026-10-03T19:57:24+00:00",
+      "checkpoint": 107,
+      "verified_scope": "Complete middle continued installment printed272–284 (PDF2–14), JSTOR coverPDF1. Other two1941installments not included.",
+      "prior_acquisition_request": {
+        "source_id": "SRC-E29AEC3E5CF4",
+        "citation": "Gordon, Cyrus H. “Aramaic Incantation Bowls (Continued).” Orientalia 10 (1941): 272–284.",
+        "requirement": "This specific continued part, particularly the original F447 edition on pp. 273–275, including original native text and photograph. Existing source ID groups the three 1941 installments; this request is scoped to pp. 272–284.",
+        "priority": 2,
+        "status": "unheld original needed",
+        "checked_at": "2026-10-02T20:03:15+00:00",
+        "metadata_url": "https://www.jstor.org/stable/43582660",
+        "toc_url": "https://www.jstor.org/stable/i40142559",
+        "previous_access_evidence": "Primary issue contents identify the continued article and pp. 272–284. Automated stable-entry opening supplied no article text. Full text not obtained; no paywall or robots-denial determination asserted."
+      },
+      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+    },
+    {
+      "source_id": "SRC-A08F75BDD59C",
+      "fulfilled_by_source_id": "SRC-A08F75BDD59C",
+      "title": "Complete original printed59–70, native/English/apparatus and illustrations1–3, lastphotographPDF12/70.",
+      "filename": "Levene_Dan_If_You_Appear_as_a_Pig_Anothe.pdf",
+      "capture_id": "CAP-IBI-CP107-LEVENE2007",
+      "sha256": "fae27eb15ae8ced15f816163c89416341c9a38d0dfd18e8b97cf1a0cd5549999",
+      "status": "original requested document acquired privately; reading extraction/checks pending",
+      "resolved_at": "2026-10-03T19:57:24+00:00",
+      "checkpoint": 107,
+      "verified_scope": "Complete original printed59–70, native/English/apparatus and illustrations1–3, lastphotographPDF12/70.",
+      "prior_acquisition_request": {
+        "source_id": "SRC-A08F75BDD59C",
+        "authors": "Dan Levene",
+        "year": 2007,
+        "title": "‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164)",
+        "citation": "Journal of Semitic Studies 52(1) (2007):59–70",
+        "doi": "10.1093/jss/fgl037",
+        "priority": 1,
+        "status": "original PDF unheld; author preview and download require account; publisher web fetch failed",
+        "requested_material": "Complete article pp59–70 including native edition, English translation, apparatus and illustrations1–3. Exact current target NLI bowl78/Ms.Heb.9467.132 is linked through held Abudraham2026printed125/PDF21fn64; pp61/65 specifically cited.",
+        "checked_at": "2026-10-03T00:58:03+00:00",
+        "access_routes": [
+          "https://doi.org/10.1093/jss/fgl037",
+          "https://academic.oup.com/jss/article/52/1/59/1719483",
+          "https://www.academia.edu/3692654/Levene_Dan_If_You_Appear_as_a_Pig_Another_Incantation_Bowl_Moussaieff_164_Journal_of_Semitic_Studies_52_no_1_2007_59_70"
+        ],
+        "access_limits": "Public extracted text is visible on author-posted page, but exact printed PDF/native glyphs and all illustration pixels not retrieved or checked. Both DownloadPDF and SeeFullPDF UI lead to account/terms modal; no login/account creation/bypass. Publisher bibliography verifies metadata only. No current nonpublication verdict.",
+        "private_route_inventory": {
+          "path": "data/private/research-work/nli-routes57-2026-10-03/web-routes.json",
+          "sha256": "88f54a5b0501275bef62bb3b04dfbb934da3dfffb8ade56db1beeb56d48fc28c"
+        }
+      },
+      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+    },
+    {
+      "source_id": "SRC-C45C16AC2B8E",
+      "fulfilled_by_source_id": "SRC-C45C16AC2B8E",
+      "title": "Original paginated article printed141–144 extracted pixel-identically from supplied whole162pagecontainer; wholecontainer/adjacentunpaginatedTableI retained separately.",
+      "filename": "Gordon-1934-An-Aramaic-Incantation-printed141-144.pdf",
+      "capture_id": "CAP-IBI-CP107-GORDON1934",
+      "sha256": "a709ac6b29b9293a4e66786b15bac5992dafa5f84418dbb096e3a5f452f9b5ab",
+      "status": "original requested document acquired privately; reading extraction/checks pending",
+      "resolved_at": "2026-10-03T19:57:24+00:00",
+      "checkpoint": 107,
+      "verified_scope": "Original paginated article printed141–144 extracted pixel-identically from supplied whole162pagecontainer; wholecontainer/adjacentunpaginatedTableI retained separately.",
+      "prior_acquisition_request": {
+        "source_id": "SRC-C45C16AC2B8E",
+        "citation": "Cyrus H. Gordon, An Aramaic Incantation, AASOR 14 (1933–1934), 141–144.",
+        "short_label": "Gordon1934 IM9737 original article",
+        "requirement": "Personal research copy of printed141–144 with title/context and handcopy; earlier scan locator PDF154–157 not freshly revalidated. Needed for original isb22/IM9737 native transcription, translation and uncertainty conventions.",
+        "priority": 1,
+        "status": "Original unheld; public government scan identified, project archival paused pending verified site permission",
+        "checked_at": "2026-10-03T07:19:02+00:00",
+        "metadata_url": "https://www.jstor.org/stable/3768483",
+        "preview_url": "https://ignca.gov.in/Asi_data/4567.pdf",
+        "previous_access_evidence": "Earlier bounded inspection recorded, no registered archival capture. Fresh web opening failed tool-size limit (12,467,894 bytes); official robots fetch SSL handshake timeout, no HTTP200 or PDF acquisition attempted. These are tool/permission-route limits, not a source denial or verified disallow."
+      },
+      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
     }
   ],
   "remaining_acquisition_requests": [
@@ -219,39 +351,6 @@
       "status": "version/layoutfollow-up; manuscriptacquisitionresolved"
     },
     {
-      "source_id": "SRC-FORD2002-JANES",
-      "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
-      "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
-      "priority": 2,
-      "status": "unheld original needed",
-      "checked_at": "2026-10-02T20:03:15+00:00",
-      "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
-      "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
-      "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
-    },
-    {
-      "source_id": "SRC-1A922C3F041F",
-      "citation": "Morgenstern, Matthew. “The Jewish Babylonian Aramaic Magic Bowl BM 91767 Reconsidered.” Le Muséon 120/1–2 (2007): 5–27. DOI 10.2143/MUS.120.1.2020266.",
-      "requirement": "Complete original article, especially BM91767 native lines 2–4 and English on pp. 11–12; the newly held Abudraham article supplies only a bounded quotation.",
-      "priority": 2,
-      "status": "unheld original needed",
-      "checked_at": "2026-10-02T20:03:15+00:00",
-      "metadata_url": "https://poj.peeters-leuven.be/content.php?id=2020266&url=article",
-      "attempted_pdf_url": "https://poj.peeters-leuven.be/content.php?download=yes&id=2020266&url=article",
-      "previous_access_evidence": "Robots-respecting download returned HTTP200 text/html, 22,312 bytes: subscriber/login page, not article PDF. Response retained privately; no subscriber access or purchase attempted."
-    },
-    {
-      "source_id": "SRC-E29AEC3E5CF4",
-      "citation": "Gordon, Cyrus H. “Aramaic Incantation Bowls (Continued).” Orientalia 10 (1941): 272–284.",
-      "requirement": "This specific continued part, particularly the original F447 edition on pp. 273–275, including original native text and photograph. Existing source ID groups the three 1941 installments; this request is scoped to pp. 272–284.",
-      "priority": 2,
-      "status": "unheld original needed",
-      "checked_at": "2026-10-02T20:03:15+00:00",
-      "metadata_url": "https://www.jstor.org/stable/43582660",
-      "toc_url": "https://www.jstor.org/stable/i40142559",
-      "previous_access_evidence": "Primary issue contents identify the continued article and pp. 272–284. Automated stable-entry opening supplied no article text. Full text not obtained; no paywall or robots-denial determination asserted."
-    },
-    {
       "source_id": "SRC-168BAEA3242C",
       "short_label": "NLI62-190-7exactdigitalimages",
       "citation": "National Library of Israel digital bowl representations: NLI62 Ms.Heb.9467.40 / MMS997008712407005171; NLI190 Ms.Heb.9467.162 / MMS997008712400405171; NLI7 Ms.Heb.9467.19 / MMS997008712404805171.",
@@ -271,7 +370,7 @@
       "citation": "Waterman,Leroy. Preliminary Report upon the Excavations at TelUmar,Iraq. AnnArbor:University ofMichiganPress,1931.",
       "requirement": "Complete first1931report, particularly pp61–62 and bowl/object plates/lists. Exact TMA1931.455/KM31455accession bridge must be checked; report not yet proved to contain that specific bowl. Distinct from1933secondTelUmarreport and1933Ctesiphonreport.",
       "priority": 2,
-      "status": "unheld original contextual report needed; object match unverified",
+      "status": "authorized borrowed viewer available; printed61–62 inspected; full local document and accession bridge still needed",
       "metadata_url": "https://commons.library.stonybrook.edu/amar/53/",
       "attempted_download_url": "https://commons.library.stonybrook.edu/cgi/viewcontent.cgi?article=1052&context=amar",
       "checked_at": "2026-10-02T22:01:56+00:00",
@@ -285,6 +384,19 @@
             "https://archive.org/details/preliminaryrepor0000lero",
             "https://archive.org/details/secondpreliminar0000lero"
           ]
+        },
+        {
+          "checked_at": "2026-10-03T19:57:24+00:00",
+          "checkpoint": 107,
+          "finding": "Ordinary Mike-authorized Chrome borrowed viewer verified1931title and complete printed61–62. Threebowls/two simulatedwriting paired aroundeggshell/third brokenSyriac reported; no accession number onthese pages. ExactTMA1931.455/KM31455bridge remainsunverified. EntirePDFstillunheld; disabled suitable downloads respected.",
+          "urls": [
+            "https://archive.org/details/preliminaryrepor0000lero/page/n85/mode/2up",
+            "https://archive.org/details/preliminaryrepor0000lero/page/n87/mode/2up"
+          ],
+          "private_observation_note": {
+            "path": "data/private/research-work/five-docs107-2026-10-03/waterman-viewer-observations.json",
+            "sha256": "062b197a6a7530fe73cdfce84d46c15e8a3c47d3a7a1d68a4d182c219abb9e49"
+          }
         }
       ]
     },
@@ -313,28 +425,6 @@
       "private_route_inventory": {
         "path": "data/private/research-work/ford-comparatives50-2026-10-02/jeruzalmi-original-routes.json",
         "sha256": "059adb3805f0fcbe0e36c0f0da355b939098ed505b1da4f3f92ec3bf4ddfa481"
-      }
-    },
-    {
-      "source_id": "SRC-A08F75BDD59C",
-      "authors": "Dan Levene",
-      "year": 2007,
-      "title": "‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164)",
-      "citation": "Journal of Semitic Studies 52(1) (2007):59–70",
-      "doi": "10.1093/jss/fgl037",
-      "priority": 1,
-      "status": "original PDF unheld; author preview and download require account; publisher web fetch failed",
-      "requested_material": "Complete article pp59–70 including native edition, English translation, apparatus and illustrations1–3. Exact current target NLI bowl78/Ms.Heb.9467.132 is linked through held Abudraham2026printed125/PDF21fn64; pp61/65 specifically cited.",
-      "checked_at": "2026-10-03T00:58:03+00:00",
-      "access_routes": [
-        "https://doi.org/10.1093/jss/fgl037",
-        "https://academic.oup.com/jss/article/52/1/59/1719483",
-        "https://www.academia.edu/3692654/Levene_Dan_If_You_Appear_as_a_Pig_Another_Incantation_Bowl_Moussaieff_164_Journal_of_Semitic_Studies_52_no_1_2007_59_70"
-      ],
-      "access_limits": "Public extracted text is visible on author-posted page, but exact printed PDF/native glyphs and all illustration pixels not retrieved or checked. Both DownloadPDF and SeeFullPDF UI lead to account/terms modal; no login/account creation/bypass. Publisher bibliography verifies metadata only. No current nonpublication verdict.",
-      "private_route_inventory": {
-        "path": "data/private/research-work/nli-routes57-2026-10-03/web-routes.json",
-        "sha256": "88f54a5b0501275bef62bb3b04dfbb934da3dfffb8ade56db1beeb56d48fc28c"
       }
     },
     {
@@ -419,18 +509,6 @@
       ],
       "previous_access_evidence": "Fresh2026-10-03collections host robots404, existing repository retrieval pause respected; gallery199041loads8links inbrowser, earlierexactgalleries86242/70578load3/5. No site-wide denial or robots-disallow claimed.",
       "rights_policy_url": "https://www.penn.museum/about/statements-and-policies/terms-and-conditions"
-    },
-    {
-      "source_id": "SRC-C45C16AC2B8E",
-      "citation": "Cyrus H. Gordon, An Aramaic Incantation, AASOR 14 (1933–1934), 141–144.",
-      "short_label": "Gordon1934 IM9737 original article",
-      "requirement": "Personal research copy of printed141–144 with title/context and handcopy; earlier scan locator PDF154–157 not freshly revalidated. Needed for original isb22/IM9737 native transcription, translation and uncertainty conventions.",
-      "priority": 1,
-      "status": "Original unheld; public government scan identified, project archival paused pending verified site permission",
-      "checked_at": "2026-10-03T07:19:02+00:00",
-      "metadata_url": "https://www.jstor.org/stable/3768483",
-      "preview_url": "https://ignca.gov.in/Asi_data/4567.pdf",
-      "previous_access_evidence": "Earlier bounded inspection recorded, no registered archival capture. Fresh web opening failed tool-size limit (12,467,894 bytes); official robots fetch SSL handshake timeout, no HTTP200 or PDF acquisition attempted. These are tool/permission-route limits, not a source denial or verified disallow."
     },
     {
       "source_id": "SRC-1FE46019356A",
@@ -577,5 +655,21 @@
     "remaining": 25,
     "evidence_path": "data/private/research-work/Martinez-copy77-2026-10-03/original-edition-routes.json",
     "evidence_sha256": "aeba312c8dbdb1d9851e360930a17c661104693e959e2c173736a992517acbb9"
+  },
+  "checkpoint107_original_documents": {
+    "resolved_requests": 5,
+    "total_resolved": 15,
+    "total_remaining": 21,
+    "private_intake": {
+      "path": "data/private/research-work/five-docs107-2026-10-03/metadata.json",
+      "sha256": "ceacff4c63214c236287bf821113e284c881789081293f0e27130ac34e927039"
+    },
+    "prior_queue": {
+      "path": "data/private/research-work/five-docs107-2026-10-03/miri-queue-before.json",
+      "sha256": "3690ab9270e284ca70b7c79fc5f1df8cf36ba768686c66ccc8d9aadaa62a6a99"
+    },
+    "reading_extraction_pending": true,
+    "waterman_viewer_route_verified": true,
+    "waterman_full_document_or_accession_bridge_not_acquired": true
   }
 }

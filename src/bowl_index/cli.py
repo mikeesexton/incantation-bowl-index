@@ -4,6 +4,7 @@ import sqlite3
 from pathlib import Path
 
 from .archive import capture_file, capture_url, verify_archive, import_capture_receipts
+from .deposits import ingest_deposits
 from .collectors import (
     collect_apotropaic, collect_british_museum_related, collect_met, collect_penn,
     collect_nli, collect_schoyen, load_british_museum_page_mappings,
@@ -188,6 +189,9 @@ def build_parser():
     deposit.add_argument("--source-id")
     deposit.add_argument("--rights-status", default="unknown")
     deposit.add_argument("--note")
+
+    deposits = sub.add_parser("ingest-deposits", help="archive a hash-bound manifest of supplied local files")
+    deposits.add_argument("path")
     sub.add_parser("verify-archive", help="verify every archived file against its manifest hash")
     transfers = sub.add_parser("ingest-capture-receipts", help="transfer hash-checked earlier project captures without fetching again")
     transfers.add_argument("path")
@@ -449,6 +453,10 @@ def main(argv=None):
     elif args.command == "deposit":
         print(json.dumps(capture_file(
             conn, args.path, args.source_id, args.rights_status, args.note
+        ), indent=2, sort_keys=True))
+    elif args.command == "ingest-deposits":
+        print(json.dumps(ingest_deposits(
+            conn, json.loads(Path(args.path).read_text()), PROJECT_ROOT
         ), indent=2, sort_keys=True))
     elif args.command == "verify-archive":
         problems = verify_archive(conn)

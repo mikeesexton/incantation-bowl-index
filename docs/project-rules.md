@@ -273,6 +273,11 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   database, retrieval receipt, archived bytes and original robots evidence by
   hash. This preserves the original retrieval row and makes no new network
   request or access-permission claim. It cannot replace an existing capture.
+- Researcher-supplied local files can be archived with `ibi ingest-deposits`.
+  The manifest binds file hashes, work assignments, stable capture IDs and a UTC
+  deposit time; whole-batch validation precedes append-only intake. New sources
+  may be declared explicitly, but existing sources and receipts cannot be
+  replaced. Local deposits imply no HTTP retrieval or access-control decision.
 - If an archived PDF turns out to be a different work, keep the works separate.
   Repair its source assignment with `ibi ingest-capture-source-corrections`
   against a hash-bound manifest. The immutable ledger retains the complete
