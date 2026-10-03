@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T03:27:36+00:00",
+  "updated_at": "2026-10-03T03:56:46+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -403,6 +403,11 @@
   "checkpoint64_held_native_capture": {
     "receipt": "research/receipts/ford_abudraham_syriac64_audit_2026-10-03.json",
     "findings": "Six main Syriac native blocks partially captured.60outlined native runs and two magic signs remain local decoding/checking; no missing document or new acquisition.",
+    "new_acquisition_requests": 0
+  },
+  "checkpoint65_held_main_capture": {
+    "receipt": "research/receipts/ford_abudraham_outlines65_audit_2026-10-03.json",
+    "findings": "Six main Syriac and Bowl4English source-copy revisions checked. All eight native/eight English main editions checked; comparative/footnote quotations remain local extraction. No missing document or new acquisition.",
     "new_acquisition_requests": 0
   }
 }

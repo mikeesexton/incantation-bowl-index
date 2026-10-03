@@ -1,0 +1,705 @@
+{
+  "schema_version": 1,
+  "checkpoint": 65,
+  "created_at": "2026-10-03T03:56:46+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "61124b7c8d01a6302760defd575859bacba05561e5c0c9df098c0f704ec0d9a9",
+  "corpus_after": "f514e5ebbf8dfdf2dea0b9adc8bf13ebafed8b1b372f0c21e9f22c737f3fda7a",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 0,
+  "corrected_text_rows": 7,
+  "newly_checked_native_rows": 6,
+  "newly_checked_English_rows": 1,
+  "all_main_native_rows_checked": 8,
+  "all_main_English_rows_checked": 8,
+  "native_line_anchors": 159,
+  "physical_print_rows": 189,
+  "encoded_source_positions_represented_once": 4632,
+  "outlined_contours_represented_once": 103,
+  "outlined_glyph_units_recovered": 85,
+  "direct_font_match_units": 82,
+  "measured_scale_units": 2,
+  "manual_source_modified_alaph_units": 1,
+  "source_gray_native_positions": 675,
+  "separately_positioned_combining_marks": 98,
+  "outlined_runs_pending": 0,
+  "native_magic_sign_gaps_pending": 0,
+  "English_magic_sign_gaps_pending": 0,
+  "magic_sign_encoding_semantic_interpretation": false,
+  "new_media_rows": 0,
+  "new_immutable_proofreading_reviews": 7,
+  "new_document_assessments": 1,
+  "whole_source_extraction_complete": false,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 58,
+    "appearance_bearing_sources": 53,
+    "indexed_appearances": 1313,
+    "unassigned_pdf_captures": 0
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/campaign_case_progress_checkpoint65.json",
+    "sha256": "6a0de206dee8f102ade26ae936d07a17b96cd4fe47b0601d5263f8271c7c20fd"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/held_pdf_inventory_checkpoint65.json",
+    "sha256": "7e8ee2460a5088cb69b9e842ab3b30f56c90c0b5bd9f3b24fe4c028a1e932fea"
+  },
+  "scope": "Checkpoint65 resolves60outlined runs missing from held Ford–Abudraham2018 PDF text mapping. All103native source contours represented once as85glyph units:82direct embedded-source-font matches, two measured-scale matches, one modified grey alaph copied from actual enlarged source row/font references.4632previously encoded source positions retained once.675grey native positions retained with declared project angle convention;98separately positioned marks include97prior plus one outlined two-dot unit.159native anchors/189physical rows retained. Full14original/key pages and enlarged details viewed; six complete native blocks independently compared. Two Bowl4native/two English magic signs reproduced as literal U+0664 through exact source font104/ToUnicode and original pixels; this records printed shape/encoding, not numeric or magical interpretation. Seven immutable source-copy repairs retain complete prior rows/reviews; no new text/object/appearance/source/media/capture/identity/rights record. All eight main native and eight English editions now checked; eight section working layers remain unchecked. New document assessment supersedes processing state but comparative/commentary/footnote quotations keep whole-source extraction partial. Trial/production payloads equal; all other earlier rows across39tables identical, seven complete original snapshots preserved, both manifest replays change zero. Corpus2203texts/1468readingrows=1334checked/133partial/oneunreviewed, including project renderings/dealer quotations rather than completed independent editions.2143media/1232images/87captures; heldPDF58sources/53appearance-bearing/1313appearances. Historical45native gaps unchanged. Fixed24932linked/217unlinked/allattempted/zero wholecasescomplete, earlier histories and IraqMuseum5497jar retained. Miri10resolved/20requests unchanged; local decoding creates no new acquisition blocker. All ten supplied documents includingfgaf025 processed, no duplicate intake/reset. Goal active; no push/deploy/live restart/purchase/author contact/uncertain merge/scholarly/authenticity/reuse decision.",
+  "next_actions": [
+    "Capture/source-check comparative/commentary/footnote quotations without uncertain object assignments.",
+    "Continue217publication-reference routes and exactNLI1562025acquisition with20Miri requests."
+  ],
+  "validation": {
+    "database": "data/private/ibi.sqlite3",
+    "corpus_before": "61124b7c8d01a6302760defd575859bacba05561e5c0c9df098c0f704ec0d9a9",
+    "corpus_after": "f514e5ebbf8dfdf2dea0b9adc8bf13ebafed8b1b372f0c21e9f22c737f3fda7a",
+    "tables_verified": 39,
+    "changes": {
+      "accuracy_audit_reviews": {
+        "previous_rows_retained_unchanged": 80,
+        "changed": 0,
+        "added": 0
+      },
+      "appearance_object_links": {
+        "previous_rows_retained_unchanged": 2811,
+        "changed": 0,
+        "added": 0
+      },
+      "appearances": {
+        "previous_rows_retained_unchanged": 2811,
+        "changed": 0,
+        "added": 0
+      },
+      "capture_source_corrections": {
+        "previous_rows_retained_unchanged": 3,
+        "changed": 0,
+        "added": 0
+      },
+      "captures": {
+        "previous_rows_retained_unchanged": 87,
+        "changed": 0,
+        "added": 0
+      },
+      "catalogue_metadata_corrections": {
+        "previous_rows_retained_unchanged": 9,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_conflict_review_history": {
+        "previous_rows_retained_unchanged": 964,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_conflict_reviews": {
+        "previous_rows_retained_unchanged": 646,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_locator_corrections": {
+        "previous_rows_retained_unchanged": 1110,
+        "changed": 0,
+        "added": 0
+      },
+      "claims": {
+        "previous_rows_retained_unchanged": 9176,
+        "changed": 0,
+        "added": 0
+      },
+      "contributor_aliases": {
+        "previous_rows_retained_unchanged": 0,
+        "changed": 0,
+        "added": 0
+      },
+      "coverage_targets": {
+        "previous_rows_retained_unchanged": 12,
+        "changed": 0,
+        "added": 0
+      },
+      "dedupe_candidates": {
+        "previous_rows_retained_unchanged": 34798,
+        "changed": 0,
+        "added": 0
+      },
+      "dedupe_evidence": {
+        "previous_rows_retained_unchanged": 34804,
+        "changed": 0,
+        "added": 0
+      },
+      "document_assessments": {
+        "previous_rows_retained_unchanged": 122,
+        "changed": 0,
+        "added": 1
+      },
+      "events": {
+        "previous_rows_retained_unchanged": 215,
+        "changed": 0,
+        "added": 0
+      },
+      "identifiers": {
+        "previous_rows_retained_unchanged": 5202,
+        "changed": 0,
+        "added": 0
+      },
+      "leads": {
+        "previous_rows_retained_unchanged": 99,
+        "changed": 0,
+        "added": 0
+      },
+      "manual_audits": {
+        "previous_rows_retained_unchanged": 14,
+        "changed": 0,
+        "added": 0
+      },
+      "media": {
+        "previous_rows_retained_unchanged": 2143,
+        "changed": 0,
+        "added": 0
+      },
+      "media_rights_reviews": {
+        "previous_rows_retained_unchanged": 652,
+        "changed": 0,
+        "added": 0
+      },
+      "merge_log": {
+        "previous_rows_retained_unchanged": 0,
+        "changed": 0,
+        "added": 0
+      },
+      "museum_concordance_reviews": {
+        "previous_rows_retained_unchanged": 40,
+        "changed": 0,
+        "added": 0
+      },
+      "object_relationship_assertions": {
+        "previous_rows_retained_unchanged": 5,
+        "changed": 0,
+        "added": 0
+      },
+      "object_scope_reviews": {
+        "previous_rows_retained_unchanged": 2,
+        "changed": 0,
+        "added": 0
+      },
+      "objects": {
+        "previous_rows_retained_unchanged": 2212,
+        "changed": 0,
+        "added": 0
+      },
+      "publication_assessments": {
+        "previous_rows_retained_unchanged": 631,
+        "changed": 0,
+        "added": 0
+      },
+      "publication_registry": {
+        "previous_rows_retained_unchanged": 37,
+        "changed": 0,
+        "added": 0
+      },
+      "saturation_sweeps": {
+        "previous_rows_retained_unchanged": 3,
+        "changed": 0,
+        "added": 0
+      },
+      "schema_migrations": {
+        "previous_rows_retained_unchanged": 21,
+        "changed": 0,
+        "added": 0
+      },
+      "search_queries": {
+        "previous_rows_retained_unchanged": 370,
+        "changed": 0,
+        "added": 0
+      },
+      "search_runs": {
+        "previous_rows_retained_unchanged": 22,
+        "changed": 0,
+        "added": 0
+      },
+      "source_corrections": {
+        "previous_rows_retained_unchanged": 85,
+        "changed": 0,
+        "added": 0
+      },
+      "source_scope_reviews": {
+        "previous_rows_retained_unchanged": 119,
+        "changed": 0,
+        "added": 0
+      },
+      "sources": {
+        "previous_rows_retained_unchanged": 967,
+        "changed": 0,
+        "added": 0
+      },
+      "text_metadata_corrections": {
+        "previous_rows_retained_unchanged": 19,
+        "changed": 0,
+        "added": 0
+      },
+      "text_proofreading_reviews": {
+        "previous_rows_retained_unchanged": 1643,
+        "changed": 0,
+        "added": 7
+      },
+      "text_publication_reviews": {
+        "previous_rows_retained_unchanged": 310,
+        "changed": 0,
+        "added": 0
+      },
+      "texts": {
+        "previous_rows": 2203,
+        "changed": 7,
+        "added": 0
+      }
+    },
+    "all_unmodified_earlier_rows_identical": true,
+    "seven_corrected_rows_complete_originals_retained": true,
+    "all_prior_proofreading_and_assessment_rows_identical": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_text_rows": 0,
+    "corrected_text_rows": 7,
+    "newly_checked_native_rows": 6,
+    "newly_checked_English_rows": 1,
+    "new_proofreading_reviews_retaining_complete_originals": 7,
+    "new_document_assessments": 1,
+    "all_two_replays_unchanged": true,
+    "trial_production_business_payloads_equal": true,
+    "current_reading_status_counts": {
+      "reading_text_checked": 1334,
+      "unreviewed": 1,
+      "partial_review": 133
+    },
+    "replay_logs": [
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/ford-abudraham-outlines65-2026-10-03/proofreading.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 7,\n  \"public_approvals\": 0,\n  \"unchanged\": 7\n}\n",
+        "stderr": "Ignoring wrong pointing object 8 0 (offset 0)\nIgnoring wrong pointing object 31 0 (offset 0)\nIgnoring wrong pointing object 34 0 (offset 0)\nIgnoring wrong pointing object 49 0 (offset 0)\nIgnoring wrong pointing object 60 0 (offset 0)\nIgnoring wrong pointing object 74 0 (offset 0)\nIgnoring wrong pointing object 79 0 (offset 0)\nIgnoring wrong pointing object 91 0 (offset 0)\n",
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest-document-assessment",
+          "data/private/manifests/ford-abudraham-outlines65-2026-10-03/document-assessment.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 79,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 67,\n  \"sources_with_complete_object_level_extraction\": 29,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 74,\n  \"sources_with_object_level_extraction\": 64,\n  \"sources_with_ocr\": 4,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+        "stderr": "",
+        "corpus_unchanged": true
+      }
+    ],
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2203,
+      "all_text_editorial_statuses_verified": 2203,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "new_main_native_rows_verified": 0,
+      "newly_checked_native_rows_verified": 6,
+      "newly_checked_English_rows_verified": 1,
+      "all_main_native_rows_checked": 8,
+      "all_main_English_rows_checked": 8,
+      "retained_unchecked_source_layer_classifications_verified": 8,
+      "encoded_source_character_positions_verified": 4632,
+      "outlined_native_runs_pending_verified": 0,
+      "outlined_contours_represented_once_verified": 103,
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    }
+  },
+  "protected_payloads": "Full scholarly wording, source font, maps, original pixels/outlines/geometry and correction manifests private; only content-free metadata and hash receipt tracked.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0065_ford_abudraham_checked_main_editions.json",
+      "sha256": "06694d2cd7a7a593c1058459ad5834bc40106941b9adf8fca5d732044552c661"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/held_pdf_inventory_checkpoint65.json",
+      "sha256": "7e8ee2460a5088cb69b9e842ab3b30f56c90c0b5bd9f3b24fe4c028a1e932fea"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/campaign_case_progress_checkpoint65.json",
+      "sha256": "6a0de206dee8f102ade26ae936d07a17b96cd4fe47b0601d5263f8271c7c20fd"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-outlines65-2026-10-03/proofreading.json",
+      "sha256": "52c087657f0dbff48196591a0367f86ac0d197a702d1538f11f27b7d4490f949"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-outlines65-2026-10-03/document-assessment.json",
+      "sha256": "a096f5872bb135a7be776898ddb6be3c08105b41144b9fcaf4f97cf004878b5c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/Bowl4-English-original-row.json",
+      "sha256": "e5177f9a44ec0c9d37701733a303695a3109a684f439e68ba56b7f7d276f115f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl1-native-geometry-final.json",
+      "sha256": "7ad1d0087944cf42af256f3be96e6bde8fea6915cad9846ffa3ec8fb9886e1e0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl2-native-geometry-final.json",
+      "sha256": "6507250f950eab99904e64629b0b2270ea58e9519e371e5a56b3b6b61ddd114c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl3-native-geometry-final.json",
+      "sha256": "11cab35b8f4a8ca3ebc017102c167ab991f61ff05e41b046faa60dce1cd2e75a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl4-native-geometry-final.json",
+      "sha256": "f5b558c4953981ff27a0bfc1759993a29ad3ce5c3b0f4050100706c0c97d6045"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl5-native-geometry-final.json",
+      "sha256": "6960344a7d60445b6a929eeee830f9d8994ad10b088ab9266b815e71ff8777b0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl6-native-geometry-final.json",
+      "sha256": "b4d97c4d55897985894b21f84b300dd4cbc80ba94e0fd7d92be8868428801365"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/decoded-outline-glyph-units.json",
+      "sha256": "faea57afa2012548a7eec76c8c82fe3cc426d8a4bb1dd89a4508604358dd13ff"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-structure-and-Unicode.json",
+      "sha256": "20e8e1717f1e82cfa11645e8929c66e59c56bea0a97b72700d25c006cd4fbfc1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/metadata.json",
+      "sha256": "1d3f6355d2b90f062b4b49b3f22b515b35ece93ae69f05f12ee2832f43a60f0f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/native-recovery-index-reviewed.json",
+      "sha256": "a2797c9c558c97de7bbb28c6050a69435f7db01e7a790b3b1a4f9f04eb9b330e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/native-recovery-index.json",
+      "sha256": "eb150d747890bed8b00cc8a9d5ea7447adcfe6ccc14441b3e1864cdbc4dbbfc2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/native-source-copy-audit.json",
+      "sha256": "c8778a417450a7c6e983b7bff9a9217e46c22928a0606bb08c3b8c85d887708b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/outlined-mark-attachment.json",
+      "sha256": "33d630a90ccae28254f4e985b0181c7d7991ee59c5c91e15d1eba912be6f79c9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/production-business-payloads.json",
+      "sha256": "800f4913a00cd1958e5864f0653b2070f8bd4875555f7de8711938f765c79da9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/production-verification.json",
+      "sha256": "0d7172a22c30157939ddfc70c73a01d16db06d236eea46ed57d78b03681cb228"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/remaining-contour-fit-audit.json",
+      "sha256": "32939c7412525e93458a22309ca94839c6fa56a6019f1284f032ca60a72c89cc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/source-curve-font-contour-matches.json",
+      "sha256": "81f6913605adef4d7a47fe68a754735e08b54701d39d2925d1b64257a3306574"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/source-font-glyph-paths.json",
+      "sha256": "a1e0964df39a7e65f0a315c03100c144ec1e7737ac6641b3b0dc567c1babc4c3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/trial-business-payloads.json",
+      "sha256": "800f4913a00cd1958e5864f0653b2070f8bd4875555f7de8711938f765c79da9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/trial-verification.json",
+      "sha256": "d9f42360d1743eac798dcd3ff8b898938bdb7e2f1d56b2dd7dfbe57eb5b4f0d0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/GLABUG-ToUnicode.txt",
+      "sha256": "f1706f13968fe1d4cdc4e377ec516e86f7c5d1e0d4dd7ef31efa14f9b749db0b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl1-native-marked.txt",
+      "sha256": "16038a4f24eceb1e7daba423660f98adb2dfe7f5a7ed86ab77bc85d72709d66f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl1-native-plain.txt",
+      "sha256": "25888972d4628a6298af8245b71dedb1c13bad6d0ad0d562024c7c61b98d193f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl2-native-marked.txt",
+      "sha256": "9624534363dc292be739d6e0913642ed76d71304c2ffdb117db03ab476cdb95f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl2-native-plain.txt",
+      "sha256": "b7b65f5ee78df3b4596d14ae211f3eb1a6e43c6d8b78df010699501c04734f80"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl3-native-marked.txt",
+      "sha256": "8eedb2a6c3ee2541b6d5b5f2da3cd890f5be65f7dec55da84fe050f68bf6bbc8"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl3-native-plain.txt",
+      "sha256": "308b7e2003a1e56ee7aa9cd245daf8a67bbcfdea1b9f267e18dffb812298808a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl4-English-corrected.txt",
+      "sha256": "69e21f37d95230952a548118855c87d450c634e2a2839e20d4fff40b403a010e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl4-native-marked.txt",
+      "sha256": "b565aa3824125519d36bbf14fc73ef5c0e74b39d34c7d251c6c03cc6eb5d49de"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl4-native-plain.txt",
+      "sha256": "508bf26f0f4390c7f42c17bd7fa2c735ad7fb0842149730dcb1d73e8c93abf06"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl5-native-marked.txt",
+      "sha256": "d8936e52b5221ee1ef49a1f2d7c555fd505d67a3e94de0c399bfa06eabc72790"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl5-native-plain.txt",
+      "sha256": "be7dcfc402b5d0b1aa1d20e32896ea73979ec2a61eda94417ef9655fcdf0b61a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl6-native-marked.txt",
+      "sha256": "b66289a8989c80d86abf16c3f70d45ee3cea606c0220cc54c48ceacf93e33691"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/bowl6-native-plain.txt",
+      "sha256": "5abdd0512ab413ec091869c401051c97097b1acf401dc97c36f2d7065a6d0b24"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/Bowl2-native-line16-detail.png",
+      "sha256": "f4b3013266e3af4bca97695b41b6e3afb87cefc1397f768f37a05cd319094a90"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid104.png",
+      "sha256": "ffdbf35787d088fdde924651735f50309cf629b23e08c93bc0b026d3b58d01b7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid126.png",
+      "sha256": "950d9f6e644bb8ca40c95a787c2085ad5730b352b1bd525c0ad56b0cddca99be"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid189.png",
+      "sha256": "54ab3c9366026d3aca5f0fd22d711b497aa69da7a093dd2390e653d48e7e5d34"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid211.png",
+      "sha256": "1a75fd0295a4d4270e0298bfceaaa791b07790a8c197e8b005f254ac500848c5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid217.png",
+      "sha256": "acf76698239b101053761624ec632f0c6b2ac962d0fb70d14c9ce2e783bb3e5f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid256.png",
+      "sha256": "81ebcd08785f8e2f7ca35210f37c96bcaf6846e89cfab05f90b05e023924b12a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid257.png",
+      "sha256": "9040b640b4bf3fe7627e8314e0950eccf0e4fc5f9a79dbe9d7e03c214f70b79c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/magic-glyph-comparison.png",
+      "sha256": "04926386ed2cabea5e9c4aeff8ed3660fb9ec524c28e2524249f79c95b623124"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/remaining-outlined-alaph-comparison.png",
+      "sha256": "0e06bc386c1fd05255c0544ca6bf314ac675325f11e21ceb0e81ee30d43cabae"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/source-magic-glyph-English.png",
+      "sha256": "206e5d4319515a10ca786a32b41b4d3bf565be7426555f13b21363e93dfd0a5e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/source-magic-glyph-native.png",
+      "sha256": "42b0a5e1cc8c839b52db0aca098af46fb0c1f72de626520649d2b2ce352a45b3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/source-outlined-alaph.png",
+      "sha256": "e37aa02d9da7d9b4d99877f89d2c9d7fb6868b1c4ed6be51c9215feb5a321964"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/source-GLABUG-EstrangeloEdessa.ttf",
+      "sha256": "d74b7489f4bf03a87ffb8215fa0b51a10af98ed6560e40916dd97e18e0a54d74"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid104.pdf",
+      "sha256": "87a52d6b330e434f96a3cdf58026cc4b9a23572444096a341d0c78b762b63259"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid126.pdf",
+      "sha256": "454c5cbc59e0efe76b6283a2b5f4011159f3f7b7c36af7b304165c611162eda3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid189.pdf",
+      "sha256": "bd6e90d98e8c591e03ec35d8ddf5166679377193911fd7e434acdbb25285376a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid211.pdf",
+      "sha256": "703d4dfb41e5bffdbd26532de774f0335965ffdb1188a2bb2da12c43717ae13b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid217.pdf",
+      "sha256": "499f3aa37f8585269dfebd9cc80509dcb29496fad9ccd4f64e1ae05fc9ee1cf1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid256.pdf",
+      "sha256": "de0b2a273b342e1a1633f1b4582cdbb3aee41ae79488252392d3756cb61115f6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/font-gid257.pdf",
+      "sha256": "45ff1f831ea4ed7c64dc069252f960dafe168970994e5bf238dd60ffa03b019f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page6.png",
+      "sha256": "d212fbdbb8b43cfd9d8fe95943093557c9327f06d6a478b76df19dd0911704f1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page8.png",
+      "sha256": "94712b1baa03a03b6f93653cf4bad37b0487c2662bd0091db9d9159d4f00a7db"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page9.png",
+      "sha256": "dc3d6cb60cedddce83ca22467ac3194125bb562651c8a0135d43a50da204ce23"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page12.png",
+      "sha256": "e6c1561223b63bd55b5a19a261b08a1c5b85d65cfef3137b40bcfad02b94c3f0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page13.png",
+      "sha256": "d5e454593e387f3f56547ff4aea819664775ebbdbea9d8f76617db604594868b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page14.png",
+      "sha256": "f1a919aab37856d0f375debe8d6c80ee4fc2e0449de47124807ea41267046d90"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page17.png",
+      "sha256": "03f5d1bd8ea89c4cb7c6010dec0b25747b48893af0d157b81f868433ab686f9d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page18.png",
+      "sha256": "ae7279bc5a0651d350c0552a358756668b50854b3f53effd555789698f7b71bc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page21.png",
+      "sha256": "780d08eeeb14f71ac1d88aa27c878719e47b977d8ea9d4556c169be4d56e564e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page22.png",
+      "sha256": "c48ed6a825995a261b1b53f1e52db513d8f1820cd98034e38f8812951bd4e4aa"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page24.png",
+      "sha256": "76108deed5756568d6e0d34e5bf5facc24175702e386c7d194e76cccbc4a82a4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page25.png",
+      "sha256": "82bea894b1ad8c02469300e10caffefa4387789627b98f07802b70c5a06a5239"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page27.png",
+      "sha256": "2b7a93d2c95a4db52c86f9d8c7f277ebc965a43a4e967fb629d6e420ef112181"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page28.png",
+      "sha256": "7d51e5cab0af73295e88bc48c908ee52fb5034a8a9249b255132f902a7697405"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/reader-verification.json",
+      "sha256": "e47a4161a6da8e55f54333401d5607dcfb56a7f26d343db0ff338b33ba7c88a2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/reader-build-final.log",
+      "sha256": "fc420351bac0951d24748814b1b5246b7b934e7932f52da62c9a72d5b7e935f1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/tests-final.log",
+      "sha256": "e22d202bbc2219cc8c1a45dfc76baecfdaa09d90da051ac395aa272de3ec81a4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/node-tests-final.log",
+      "sha256": "6bebfd8578ff35216a66a8ad7cdd0ecea1eda7ff631758e997da1e1b9242ee5a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/assemble_outline_glyphs.py",
+      "sha256": "410d90075b9571aa8b7f7ef6b60f5f5acac030c8bdd29894385f73aa6d90be0e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/extract_font.py",
+      "sha256": "f784a0604fd98b1bdd606ca41cf61e1f7b21361ed16ee9965f611ed0d230ecf5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/fit_remaining_contours.py",
+      "sha256": "cc00caff695724a52779d3452f00110c12255add497e671994f501c14bc6a744"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/match_outline_shapes.py",
+      "sha256": "a27560df063f1373fd4db1f2dbbfede305453fd8da910f799fe033e067df7fec"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/parse_font_glyphs.py",
+      "sha256": "1205384f1f62b987bf1c2b6a88af05320327a4e2ad7ee4095b48faa059426100"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/prepare.py",
+      "sha256": "67340571d7948b9694850c760055088fdf63956502ef6a91b092067105a1e83d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/record_checkpoint.py",
+      "sha256": "387acc60675db963af29cf3f744d0552ad93af5809a0417754a0cd1252c8065d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/recover_texts.py",
+      "sha256": "f283b0ffcdd0ec954228f9a21600afa2bdbf2f815147962184d0d9a5eed1c044"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/regenerate.py",
+      "sha256": "44519c530a16e6d79aaa4f1047504056591978cd0af480f5f8c85f4f2794502c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/render_references.py",
+      "sha256": "43e72fbce0d7e73d1ab67fc7cb5eaba8bdf081ffd6e237f68a988ce8aed4adc0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/verify_batch.py",
+      "sha256": "05e751ed82acc6835036dccbcdda47a6efc0ec28c3ec991ff7a13446e7d9ac37"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/verify_reader.py",
+      "sha256": "4268152918ded0da1925633b102af314acc5c5402ee0037979b5c073017f59bd"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-outlines65-2026-10-03/reports-final.json",
+      "sha256": "d47b231fbd9304ea00e09415273c977c7dcfdb060f9af3fcdc32daeb6b3692b2"
+    }
+  ]
+}

@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Ford–Abudraham2018 checked main editions, checkpoint65
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010
+**Corpus:** changed — state digest `f514e5ebbf8d`.
+**Tests:** 394 Python and 57 Node passed; rebuilt private reader 7/7. All 2,203 text contents/attributions/classifications/statuses, 2,143 media assignments, 1,232 local image hashes and 87 capture hashes/source assignments verified. Integrity/FKs pass. Seven corrected rows retain complete originals; all other earlier rows across 39 tables identical. Trial/production normalized business payloads match; both manifest replays change zero rows. All receipt artifact hashes pass.
+
+- Opening matched checkpoint64/61124b7c8d01/commit2f45296. Project rules, protocol, literature and release workflow read; one TEXT workstream claimed before writes. Prior/current Goal turns progress; Goal remains active. All ten supplied documents, including fgaf025, already archived/processed; no duplicate intake/reset.
+- Recovered 60 native outlined source runs absent from PDF text mappings: 103 contours accounted for once as 85 glyph units. 82 direct exact embedded-font curve matches, two measured-scale matches, one modified grey alaph copied from independently viewed enlarged original row/source font references. Private source font, maps, paths, colors, geometry and original pixels retained. No native wording inferred from English, grammar or parallels.
+- All 4,632 prior font-encoded character positions represented once; 159 anchors/189 physical rows retained. 675 grey native positions retain declared project angle notation and source color/geometry. 98 separately positioned marks comprise 97 prior plus one outlined two-dot unit, attached to actual source bet. Source restorations/doubts, physical print wraps, loss dots and Bowl1 III illegibility notice retained. Printed Estrangelo typography remains distinct from reported original bowl scripts.
+- Independently compared complete six Syriac blocks with full original pages; fourteen native/key pages and enlarged source details viewed. Two Bowl4 native/two English signs match exact source font104/ToUnicode and original pixels, reproduced as literal U+0664. Encoding/shape reproduction makes no numeric or magical interpretation. Complete12line English block rechecked, wording otherwise unchanged.
+- Seven immutable source-copy repairs preserve entire earlier rows/reviews. All eight main native and eight English editions now checked. Eight whole-section working layers remain unchecked. Document assessment supersedes CP64 but complete42page holding stays object-extraction partial for comparative/commentary/footnote quotations. No new text/object/appearance/claim/identifier/media/capture/identity/rights decision.
+- Corpus2,203texts/1,468readingrows=1,334checked/133partial/oneunreviewed. Counts include project renderings/dealer quotations rather than completed independent editions. Media2,143/images1,232/captures87; heldPDF58sources/53appearance-bearing/1,313appearances. Historical45native gaps unchanged. Frozen24932linked/217unlinked/allattempted/zero wholecasescomplete; all earlier histories and IraqMuseum5497jar retained. Miri10resolved/20requests unchanged; local font recovery creates no acquisition blocker or duplicate message.
+- Content-free receipt research/receipts/ford_abudraham_outlines65_audit_2026-10-03.json; scholarly wording/source font/pixels/drafts/manifests private. Roadmap/sevenreports/export/inventory/private reader current; state recorded and local commit only. No push/deployment/live restart/purchase/author contact/reset. Next comparative/commentary/footnote quotations and remaining217publication-reference routes. Goal active.
+
 ## 2026-10-03 — Codex — Ford–Abudraham2018 partial Syriac captures, checkpoint64
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010
