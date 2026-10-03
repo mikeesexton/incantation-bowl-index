@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Moriah I Latin controls saved; app-update pause, checkpoint113
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; Mike requested a pause at the next checkpoint).
+**Corpus:** unchanged — all39 table fingerprints equal checkpoint112 and prebatch snapshot/trial; digest `64f6ca7da8a7`. No reading, review, media, source or identity writes.
+**Tests:** 413 Python +57 Node =470 passed. Required enrichment report refreshed without changed corpus. Existing checkpoint112 roadmap/inventories/private reader and complete source/media audits remain current; no fresh reader build or new source-copy certification claimed.
+
+- Saved30 overlapping recipe-bound source band/half crops from Moriah I printed221–222, two fullpage controls, exact prebatch fingerprints/table/identity snapshots and consistent trial/backup. Preliminary copy observations and explicit unresolved checks saved privately; no searchable Latin draft or intake manifest applied. Final source222 band7-left was truncated and is not accepted as seen; band7-right unseen. Source25 final-circle position and one phonetic underdot need narrow controls, followed by all26lines word/mark collation. Preliminary observations are not corpus assertions or proofreading certification.
+- Last completed research remains checkpoint112: Moriah I full provided English checked and16source media including12handcopies captured; Moriah II provided English/Latin and two handcopies checked/captured. Current1,500checked/52partial/oneunreviewed of1,553readings;1,881identities,2,290texts,1,255localimages/97captures. Frozen249 remains32linked/217unlinked/allattempted/zero wholecasescomplete. Miri15resolved/21remaining; no new access requests. Supplied documents archived/intake processed; several editions still need bounded text/image extraction.
+- Mike requested app-update pause; close/commit/state validation precedes Goal pause tool. Resume Moriah I searchable Latin/source notation checks, then Gordon1941F446/F447, Levene2007Moussaieff164, Morgenstern2007BM91767 and Ford2002BM91715/BM91780/DC37(R). Gordon G final lines/wholepass, historical native/translation gaps,217publication cases and exact Waterman accession bridge remain separate. No reset used; no push/deploy/server restart/outbound action.
+- Private resume notes: `data/private/research-work/MoriahI-Latin113-2026-10-03/resume-notes-private.json`. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0113_MoriahI_Latin_controls_update_pause.json`. Metadata-only receipt: `research/receipts/MoriahI_Latin_113_pause_2026-10-03.json`.
+
 ## 2026-10-03 — Codex — MoriahI English and complete source media, checkpoint112
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; resumed active Goal after app-update pause).

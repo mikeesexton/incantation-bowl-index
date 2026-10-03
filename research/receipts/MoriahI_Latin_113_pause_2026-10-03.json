@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "checkpoint": 113,
+  "created_at": "2026-10-03T23:21:32+00:00",
+  "checkpoint_type": "User-requested app-update pause; preliminary source controls saved without corpus intake",
+  "goal_status": "pause requested; tool transition follows committed validation",
+  "corpus_before": "64f6ca7da8a7845951e904753b02af748c15796349a2ccbd49718140fc51b729",
+  "corpus_after": "64f6ca7da8a7845951e904753b02af748c15796349a2ccbd49718140fc51b729",
+  "corpus_changed": false,
+  "all_39_table_fingerprints_unchanged": true,
+  "new_text_rows": 0,
+  "new_reviews": 0,
+  "new_media_rows": 0,
+  "new_acquisition_requests": 0,
+  "total_identities": 1881,
+  "total_reading_rows": 1553,
+  "checked_reading_rows": 1500,
+  "partial_reading_rows": 52,
+  "unreviewed_reading_rows": 1,
+  "total_text_rows": 2290,
+  "total_local_images": 1255,
+  "total_captures": 97,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 21,
+  "allowance_resets_used": 0,
+  "prior_completed_research_checkpoint": {
+    "path": "research/receipts/MoriahI_112_audit_2026-10-03.json",
+    "sha256": "8890bda0c55e6b9f89dfdb04d10f77c8213b5b98390bc2714f2ac4c12b7795a7"
+  },
+  "validation": {
+    "python_tests": "413 passed",
+    "node_tests": "57 passed",
+    "reader_and_generated_research_state": "Unchanged corpus; completed checkpoint112 reader/build/source audits remain applicable. No fresh build or text certification claimed.",
+    "source_controls": "30 recipe-bound crops retained as preliminary working evidence; final two half crops and two remaining fine-mark checks pending. No pixel audit certification at this checkpoint."
+  },
+  "scope": "Saved MoriahI Latin-copy working controls and private resume observations. No searchable Latin draft or corpus manifest applied; all39 corpus tables unchanged. Existing source-checked English and all12handcopy pages remain available. Source-copy preliminary observations remain unapplied and require final complete collation.",
+  "next_actions": [
+    "TEXT: MoriahI own26line Latin searchable source copy and complete base-letter/phonetic/open-circle/editorial notation controls; source-page scans/English/all12handcopies already captured, no native back-conversion or wholecase inference.",
+    "TEXT: other newly supplied originals Gordon1941continuedF446/F447, Levene2007Moussaieff164, Morgenstern2007BM91767, Ford2002BM91715/BM91780/DC37(R).",
+    "TEXT: GordonG11–12/wholepass and52partials/oneunreviewed;45historicalnativegaps/40historicalEnglishdrafts/217publicationcases independent; Waterman exact accessionbridge separately."
+  ],
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band1-left.png",
+      "sha256": "38992949be93352abbe9247771898f415a89d7e88381f48c65084f3d27c47690"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band1-right.png",
+      "sha256": "eb977b1671b4b92bbe3aa9c22fc05ddca4e9555dea5e07415dd946f7260a8996"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band1.png",
+      "sha256": "7c075d04ba9e38b798aa8736b207f878df4aeed75b81b120b47a3b46a9a96552"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band2-left.png",
+      "sha256": "66e7e83ad1c7fbdf5bb47af1c06f3d0fc952cd97365efb4cfec58b1146f9f5f6"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band2-right.png",
+      "sha256": "e07a7710c0f9c94a28df9e65e53d458f74e53db255e420d444ba96be78a4fb15"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band2.png",
+      "sha256": "f111cffe8eef573303ab3e3c0265a58179eba52e389f8004034869f74a8505f6"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band3-left.png",
+      "sha256": "3412725c8773f37caad1fd25834b8b86df2a54583ce6144c81ab0cc9f2c11289"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band3-right.png",
+      "sha256": "728fc17a569e8ab510aa0dc868ecd32835feccf8a99915c8a4fbc90a382b3d2d"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin221-band3.png",
+      "sha256": "232f484ebdba4e832b0a976aa0467ceb78b671a84eeb1e24b6355b56c029d083"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band1-left.png",
+      "sha256": "c18c6bc5290a062ca54386614da56e7e46bd982097481588ce63b4537a099b09"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band1-right.png",
+      "sha256": "a2f55c8d9df01a0619d5b437d6bcf1c7e7b45490b6c2145726f58261ec0cc00b"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band1.png",
+      "sha256": "0a9dfe9a7f2f188aae056df149124ba163c537f82c2020087b7808a3d6fea49c"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band2-left.png",
+      "sha256": "b1ca8df57829f314247d431220d5e2ddcffc6d7b7eb6fed89e8f2f20d9677bab"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band2-right.png",
+      "sha256": "21c1de737a1a9d989ea655c7d61916eccf408a35517a7ecf4c94e12bf3f18d30"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band2.png",
+      "sha256": "2a1791d017b6c0570ab204338fe144599f2cb8b2ba381d81c7a015e2a2c22309"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band3-left.png",
+      "sha256": "1091283d7367af96b4d75d0d5b0ee2ae6f1b042f0458cd9d78808301c42bbe2d"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band3-right.png",
+      "sha256": "9e25225892ead4f52c7f54a7e7688d5ba1120d9e8b08f62e3219832d644c6454"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band3.png",
+      "sha256": "66ed9812bc06a123a782f4ba1e096486ec2f60424ea83ed3e6b5cbaff0573569"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band4-left.png",
+      "sha256": "44c9cb706e2e51cd6b3b9c9a7b203416968af4152732bff73eace17f10d19279"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band4-right.png",
+      "sha256": "aa370b8a7f130dee0b8676c3c81cdebea24cb89beba929391dfb160312ef17ec"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band4.png",
+      "sha256": "8424a6c4dc9b4d56af295bb221b169646fd4feb4b8c054d7ea8cfd94b887ec35"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band5-left.png",
+      "sha256": "9a81f5fedd43f651b166e68b1d4f96b58f6d9530e1e136e35d335e7cc4001165"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band5-right.png",
+      "sha256": "f42336a76350afe7cfb005c8fc6ed23146615e0d5514f2cc0f625e5d667b79a2"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band5.png",
+      "sha256": "c95bddc49cab69a06ef3ef13f923fb9d0383453a88dfba2a5ea3ef1ab8b2bb23"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band6-left.png",
+      "sha256": "afce8435da77e654964f5961f26c7674516ac2e60cd7859199bd0b9a2935cd81"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band6-right.png",
+      "sha256": "8e1e688fca986481b27497c3d9a89fcfab2cb704a3df6bdb20b858ccff4cb7bf"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band6.png",
+      "sha256": "7a998398e4d59c0961766eab7cecccf0acf240d54d30ab449bd3333102f5dfce"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band7-left.png",
+      "sha256": "d525b87b7376536f88ec128a061b355d330d2363463a472008462af8a37243df"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band7-right.png",
+      "sha256": "9fd8b398f698fccc55de832b4f0f4feb049d960c6fd960c205bf94332a626221"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/Latin222-band7.png",
+      "sha256": "b67fb6ac2cc5e1eced64ecf595d7bb7c60b291574af8e3be32b56e4f74142cd4"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/close_pause.py",
+      "sha256": "6c48561941d34dae29374d1bf2b934466e2e0375d46b12e3c3fa085cc9ad9951"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/control-recipes.json",
+      "sha256": "1ab79d6a22220725bef67b7436c3a861acf469ccabec41960a318af917dca248"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/fingerprint-before.json",
+      "sha256": "85b1357094db55401413877b4febee909dc0eff310d9a5719ddc75e48c3bbdc2"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/identities-before.json",
+      "sha256": "2bca04beb406c56b151fc7159dfc7f7571a4d113187aba86acb4a0e1425fee4d"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/miri-queue-before.json",
+      "sha256": "60544f47f4b1425df35f1bb715aede25918ff7e27c323b78a99e3f3fe4a18669"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/node-tests-pause.log",
+      "sha256": "544bb8db1e275ad83b892fea796ee6cf5a93fc76134ed54654cff16a396abb93"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/resume-notes-private.json",
+      "sha256": "98e9a77321e9f0e1bff418b9ce6904c29069bdb449322dc1e54e542f2753d636"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/save_pause.py",
+      "sha256": "22f3e2cc4cbee394d212e81ceb3bd645bedf916efeec85c3471be9ed1a17445e"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/source221-scale8.png",
+      "sha256": "6ef224dc12ee2eb0895aec04595612037efbea5afc6de8227ef85d4b768a6bc1"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/source222-scale8.png",
+      "sha256": "9ed641ce11962f2d4e04b42b5d33c82fdae9a4450fc4a3af6f3c89981839b989"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/tables-before.json",
+      "sha256": "394e1c657413f379d92f1beac705a7344798bec028f1b37c77c219c51d168a4d"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/tests-pause.log",
+      "sha256": "7b4f1a4b0b8a70df03d592cbe4370df4287d8a323f2d6f8c59beacc0487f24d2"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/trial.sqlite3",
+      "sha256": "55042bf6eaa9f1199736e8290283efd8830654e716c5fd44e71d85b35dd23000"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/trial.sqlite3-shm",
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "data/private/research-work/MoriahI-Latin113-2026-10-03/trial.sqlite3-wal",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "protected_payloads": "Scholarly expression, source pixels, preliminary observations and full table snapshots remain private outside Git; receipt contains metadata/hashpointers only.",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0113_MoriahI_Latin_controls_update_pause.json",
+    "sha256": "650ea68a040d79103f5811b00bc7bb1b2e1dd4c7c3c3a3541b07e8667bfa6ff5"
+  }
+}
