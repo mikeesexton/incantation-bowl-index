@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "f514e5ebbf8dfdf2dea0b9adc8bf13ebafed8b1b372f0c21e9f22c737f3fda7a",
+  "corpus_digest": "420516760f23282cc49994f8241dbc9ec261b58edc4402729928050ebdda7248",
   "migrations": 21,
-  "note": "Checkpoint65: recovered source outlined Syriac glyphs; seven immutable source-copy repairs; all eight Ford\u2013Abudraham2018 main native and English editions checked, comparative/footnote extraction remains partial.",
-  "recorded_at": "2026-10-03T03:58:09+00:00",
+  "note": "Checkpoint66: 27 source-checked bounded comparative quotations from 12 witnesses; originals retained, full cited editions and remaining chapter apparatus still open.",
+  "recorded_at": "2026-10-03T04:15:52+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "548bb4455c856c2295dadece30539bd7becb0174ce79e724bf3e185d0f956948",
-      "rows": 2811
+      "digest": "4ed40dee88602abe2a595e5a681c30e5a6cb155b2d8708440f8cc2b81516bb85",
+      "rows": 2823
     },
     "appearances": {
-      "digest": "7f1d97105cc0fc856e4fb5ce04e7873a3f0ba955b6ef58695ebe2a133ddf8c9d",
-      "rows": 2811
+      "digest": "d608146e693e1bb196835087abea08dd7d248af2b9deba0e03e09bd683b429a6",
+      "rows": 2823
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "28d8e8ba19040d2fb254b9daccb676bd1272b33a78910c828ff337dd292f3a91",
-      "rows": 9176
+      "digest": "23ab61e468837edf156562ceba5d97f0379b43d69473ff3bdebbba5d36a8286d",
+      "rows": 9188
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,16 +63,16 @@
       "rows": 34804
     },
     "document_assessments": {
-      "digest": "708d556386bcd09aa5370eeaceb385679347da406620f0d4f888a919ecff67ee",
-      "rows": 123
+      "digest": "2090edf8948ae63ece47e1ae5feeaedd0aa7969689e868823093753f999edbff",
+      "rows": 124
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
       "rows": 215
     },
     "identifiers": {
-      "digest": "bcb0bae48cac7d4e2332eae0b4c5c67453692fe4836dddd1ae1b131724b06188",
-      "rows": 5202
+      "digest": "da7c5f9d0da6900d48eda89dba8b093c44bae3818d8bebb03baad28a659212eb",
+      "rows": 5214
     },
     "leads": {
       "digest": "77149f8277d5555db72b1d08513e3db1d54e15934eb2d65e2cebd44597c2f0b2",
@@ -107,8 +107,8 @@
       "rows": 2
     },
     "objects": {
-      "digest": "ce152366d08b476cc6bd30c60b561d1d870d8025e8e5e6b1ffbca80f189b1341",
-      "rows": 2212
+      "digest": "de191d83bd12df5538e20291054a9c81cdae35f9227a23a384f2779c740b8934",
+      "rows": 2220
     },
     "publication_assessments": {
       "digest": "a42cbffc0c8052a9cc510e682cd0b8cf0f71624e351a6ba69884e3a9c6849c83",
@@ -151,16 +151,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "fb8022b82f90d83df69611485e784e67af65b5d3d1967cb502e79f3d2815d754",
-      "rows": 1650
+      "digest": "b66b8bc7ec407db3b8cd700d70872a216dea970235f1f49898ab21fda9306868",
+      "rows": 1677
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "0fc6a7c9fb3959031bb03ed79ebab7e8803b2cd1ff0eb233a785e2340e959064",
-      "rows": 2203
+      "digest": "8964a2b4983f24b30745e9b6805cbde5285bd9e8657c7726fce78344ead870da",
+      "rows": 2230
     }
   }
 }

@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Ford–Abudraham2018 comparative quotations, checkpoint66
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010
+**Corpus:** changed — state digest `420516760f23`.
+**Tests:** 394 Python and 57 Node passed; rebuilt private reader7/7. All2,230text contents/attributions/classifications/statuses,2,143media assignments,1,232localimage hashes and87capture hashes/source assignments verified. Integrity/FKs pass. Every earlier row across39tables unchanged. Trial/production normalized business payloads match; all three manifest replays change zero rows. All receipt artifact hashes pass.
+
+- Clean opening matched checkpoint65/f514e5ebbf8d/commit34fb019. Project rules/protocol/literature/release workflow read; one TEXT workstream claimed before writes. Previous/current Goal turns progress. All ten supplied documents, including fgaf025, archived/processed; no duplicate intake or reset. Goal active.
+- Captured/source-checked27bounded comparative rows from12named witnesses in held2018chapter:12Hebrew-script transcriptions,3MandaicLatin transliterations,12English rows including one literal idem. Eight full original pages and eight enlarged details inspected. Actual Hebrew-source geometry preserves order/encoded spacing; Latin diacritics, restoration/braces/loss and English source wording retained. Missing separate English for JNF81lines5–9/Wolfe63expression/MS1928/53line19 not invented. Latin Mandaic is not native-script recovery. Wolfe63reported matching Hebrew expression stays bounded, without source-origin/religion adjudication.
+- Four exact scoped witnesses reused (Gordon1934D/JNF81/CBS16018/MS1928/53), eight new candidates, twelve appearances/identifiers/publication-reference claims. Prior-corpus punctuation/spacing-insensitive designation check finds zero exact aliases for8new candidates. No uncertain merge, clay collation, authenticity, rights or physical/origin claim. All27immutable reviews retain complete original rows; checks establish printed excerpts only, not full cited original editions or current unpublished status.
+- All8main native/8English editions and earlier proofs remain unchanged. New document assessment supersedesCP65, retaining complete42page holding and partial extraction. Private remaining-route inventory records Syriac comparands/footnote variants, non-bowl apparatus and original-edition/later-publication routes; no non-bowl literary/lead/booklet quotation promoted to a bowl object.
+- Corpus2,230texts/1,495readingrows=1,361checked/133partial/oneunreviewed. Counts include bounded excerpts/project renderings/dealer quotations, not completed independent editions. Media2,143/images1,232/captures87; heldPDF58sources/53appearance-bearing/1,325appearances. Historical45native gaps unchanged. Frozen24932linked/217unlinked/allattempted/zero wholecasescomplete; all earlier histories and IraqMuseum5497jar retained. Miri10resolved/20requests unchanged; original-edition research follow-ups are not newly failed retrievals, no duplicate message.
+- Content-free receipt research/receipts/ford_abudraham_quotes66_audit_2026-10-03.json; source words/pixels/geometry/drafts/manifests private. Roadmap/sevenreports/export/current inventory/private reader updated, state recorded and local commit only. No push/deploy/live restart/purchase/author contact/reset. Next remaining Syriac quotations/footnote variants, then non-bowl apparatus and217publication-reference routes. Goal active.
+
 ## 2026-10-03 — Codex — Ford–Abudraham2018 checked main editions, checkpoint65
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010
