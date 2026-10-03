@@ -1,0 +1,880 @@
+{
+  "schema_version": 1,
+  "checkpoint": 71,
+  "created_at": "2026-10-03T05:46:37+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "9e0bce8608c8aec392178905fb3bbb1c34b93feb1e9093bdc296f9e0a361eeed",
+  "corpus_after": "9e0bce8608c8aec392178905fb3bbb1c34b93feb1e9093bdc296f9e0a361eeed",
+  "corpus_changed": false,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 1,
+  "new_publication_links": 0,
+  "new_text_rows": 0,
+  "new_captures": 0,
+  "new_immutable_reviews": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1414,
+  "partial_reading_rows": 133,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/kedar-frozen71-2026-10-03/campaign_case_progress_checkpoint71.json",
+    "sha256": "2a963676489c17286eb39481dce1a746bdc4e6c3a910fa8c6817e0c6a9281097"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/kedar-frozen71-2026-10-03/held_pdf_inventory_checkpoint71.json",
+    "sha256": "473239eae38ef50220adbdc50d2899bc0d261cc50ebc44d01f4b6bddcf5dba41"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/kedar-frozen71-2026-10-03/non_pdf_holdings_checkpoint71.json",
+    "sha256": "5bc39e276507fa9b471af709897de74e8079d801cb0e7385c11620c21432ad3c"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 21,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint71 visually resolves held Kedar CBS85-48-914matches: printed105n434/119n497 are comparison notices; Table8/Image6 and continued native/English quotes belong to JBA56/MS1928/8. No neighboring text/photo assigned to CBS and no summary promoted.179PDFpages searched by selected designation/client patterns; five exact/context pages visually inspected, not a sourcewide visual audit. Penn ownbrowsersearch returns exact86242record and3advertised download views; catalogue already indexed under separateobjectIBI-B344613F0FDC, frozenCBSobjectIBI-7F45E9808B4D. Separate CONCdesignation review then lawful image/sourcecapture is concrete next work. Blank museum bibliography and2019unpublished notices are not present edition-absence findings; webtoolfailure is not browser/site denial. One frozen history appended;249cases/32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus unchanged2283texts/1548readingrows=1414checked/133partial/1unreviewed;2143media/1232images/88captures.58PDFsources/53appearance-bearing/1342appearances. Miri10resolved/21requests unchanged; no new inaccessible document claim for available image links. All ten supplied documents processed. Goal active; no merge/newcapture/text/review/publicapproval/reset/contact/push/deploy.",
+  "next_actions": [
+    "Review existing Penn objectIBI-B344613F0FDC and frozenCBSobjectIBI-7F45E9808B4D under Mike one-designation ruling in separate CONC workstream, with source-scoped accession corroboration and immutable dedupe manifest.",
+    "Check full Penn terms/robots, capture exact record and three advertised images lawfully, retain individual attribution and private availability. Images do not count as recovered searchable native text.",
+    "Continue later original-edition/archival translation routes for CBS85-48-914; Kedar comparison notices and museum blank bibliography do not establish present nonpublication."
+  ],
+  "protected_payloads": "Source extraction/page images/source wording remain private; public receipt metadata/counts/hash pointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0071_kedar_CBS_scope.json",
+      "sha256": "7fbf2eca44e8cfeea16a15bcffce9ab659ec9169bc74a1b09fb69b1f049cf266"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/Penn-exact-route-audit.json",
+      "sha256": "bd097a50884e3a9c3a82811c8f700523daf02e2fd95fd8873a4d5d824fb1e57f"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/campaign_case_progress_checkpoint71.json",
+      "sha256": "2a963676489c17286eb39481dce1a746bdc4e6c3a910fa8c6817e0c6a9281097"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/designation-and-client-sweep.json",
+      "sha256": "a595bfa2ce14324c9820404af2095c8fded33c2cfd48291cfb12a12467c39700"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/held_pdf_inventory_checkpoint71.json",
+      "sha256": "473239eae38ef50220adbdc50d2899bc0d261cc50ebc44d01f4b6bddcf5dba41"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/kedar-CBS-scope-audit.json",
+      "sha256": "d7372570ee232369678fa85457536d30fd7f9192d8ad1ccd7b017594cdb82309"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/non_pdf_holdings_checkpoint71.json",
+      "sha256": "5bc39e276507fa9b471af709897de74e8079d801cb0e7385c11620c21432ad3c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/primary-web-observations.json",
+      "sha256": "00b8a216ad23c63f747860e415e35b65d79425d2f76b661f79ee75b3358c7be9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page1.txt",
+      "sha256": "4d24048abd5296c3d85137bdf5a801a275a56f2e82f64e13263b85a5e5c4cec3"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page10.txt",
+      "sha256": "624ff5bb1233218839c2a9114f3563437f5d00a77e60c9ddc859d58b4c8c54b6"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page100.txt",
+      "sha256": "05df94c5f7fcaade52fad749ac133681cbdea87d16ede3d29c18e2bb8a882a6c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page101.txt",
+      "sha256": "5511c6dea77aa3c08a6bfdd396f1e62ee4ccf8651f046f3c789138c0b82c44bd"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page102.txt",
+      "sha256": "2e4b9ca5ab09791c2aa9b02f67a21c0b73339a006ab1fabf5f5c822af2b294f0"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page103.txt",
+      "sha256": "6f624609cad4990a41fb78ad107405408a31a70981e9d0945ad470b6de449137"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page104.txt",
+      "sha256": "567561e5e25e687675e553d848a1db5f643992dc43caa691897fd315749f1082"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page105.txt",
+      "sha256": "f085ee8b14ee892621b365ad17520b26da92b06a4655209c2cb985946eae9ee1"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page106.txt",
+      "sha256": "3265eb67016fbb5bdfdb784e57583563fd16582c596112a01433f1326dbe7bf5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page107.txt",
+      "sha256": "b3c633029347cd5adbbd5e785bd83bc9ef5f75eb0ac11f5c2302c9fd95e85d33"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page108.txt",
+      "sha256": "700baffd0334e5d23494194f5b2a63ccae72f5dd346fc722babcfb707a0f535f"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page109.txt",
+      "sha256": "38fdd5d3a04f9c807c58fd958d8dff65a6c478c562d056a72eb2c337717eec30"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page11.txt",
+      "sha256": "76bd83ede3ef4c478adcddd73fc6dc185d84b16ed9507163c9c3f5ba91ad1368"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page110.txt",
+      "sha256": "2c0bf6b19cc97e381b1bb9953fcf78e3682c35922034d5bc724300c2f0bcadfa"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page111.txt",
+      "sha256": "802fb79372c2b37606dc24a6054c021417b6dfe6fdc9e2fa2c9225ec46fe3ed9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page112.txt",
+      "sha256": "ffc7eed1e3be1f153e5bdc0c7ac108dcc47b878e2707165b9f68e7c115c650fc"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page113.txt",
+      "sha256": "54f7fd958527774a049954668443f7090c4d4ec509410f03faaf5d3d918963f6"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page114.txt",
+      "sha256": "c78aea16def2ff3b0fa381f82262c7baab1762de1f90ddc1a746fbd38d6233b8"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page115.txt",
+      "sha256": "bd0e4edadd9a3426d2ea6a61626c6eef7651c5f571bd5a103bc647ca75e745e1"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page116.txt",
+      "sha256": "b207e724acf30701ba918153e6c8a3e75acce4f61adfa4f9dfdf4462a60182f2"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page117.txt",
+      "sha256": "e974fdf396436ebce415d6f44f233dbe8a31530b9fb3eef1957b06a5097dadb3"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page118.txt",
+      "sha256": "a985549eaa3ae10a22048ef5ab64e9a5d5d7eb210fee398657f521a9b6219c4c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page119.txt",
+      "sha256": "327ab7cdf241e21b5a3caf8be6c09dd12c0a8bc6e56f485a26fda19f15f32733"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page12.txt",
+      "sha256": "1ff1b26a83b44b3ad2ddac69375c2dceb0873c5c9506e3f8eed4ac4efecea69a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page120.txt",
+      "sha256": "6930476b58dff17a9b53ed43eb2f0653c0d333d9c20d63e66c3c8e1e22ccac34"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page121.txt",
+      "sha256": "46a431f1c5bdc9a9a44bcb0b5a49ed26068fab1bcd9f616cb127b88c03ecec00"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page122.txt",
+      "sha256": "797367775ddfedfc2c7b433e9cb737104a7507b6f7380d88c0601a10eadec724"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page123.txt",
+      "sha256": "d746758a16f1eff9b64ab696f94e7146f1874150ac23ecc44f7edeb923eaaf93"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page124.txt",
+      "sha256": "db1d6bf31cfb2d92e97a3d0af044f9125a851849d6d0e947b4a474e444b69232"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page125.txt",
+      "sha256": "a735857b0a9a39fa7525d165ebd579b063cf3e2386a0c30b4457086812f4568e"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page126.txt",
+      "sha256": "88db9df64e352951701664ad78f7675545e9b7db285269613db217e77b8e68dc"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page127.txt",
+      "sha256": "a7947091c7844f0fcde2760cd1da703a699ba8cca4c5240a93e923a27079ffda"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page128.txt",
+      "sha256": "1b53b189fc094397f27e1100d40189a5352c3837c39adf76953f88e4493548ca"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page129.txt",
+      "sha256": "55f69f7fd5a9b6e5f7cdceab17aee183a530fe27d2c2fae5a0e285ed3a19444d"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page13.txt",
+      "sha256": "f4fac3bb59542231a72bbdb21c77d96ec1b54fdb6ade107d03ffe594b459d5cd"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page130.txt",
+      "sha256": "f14fb67dd09a7f2d3ea16bab5d2225591d1c194782c707188a0471afe4b2b3e3"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page131.txt",
+      "sha256": "d882adc8cd2f3120dd7aaae5e209e937662eb74b3794277a88c0354ce96097bd"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page132.txt",
+      "sha256": "3ada8025c444c879502ed173812d762f85af5819aa79cc912ba0ebdc9e01cf18"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page133.txt",
+      "sha256": "5b62b9eaa1097b130f5cda9ead98d2647686a990456b4dac9b77cd19d32fbd1b"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page134.txt",
+      "sha256": "f5127e32ae4b758a1323880648c8dd690e42625e3dbdbbc4176c58e70fc1964f"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page135.txt",
+      "sha256": "ec17d4238cb789a61ff2b5c1713f909a672e8e92596111e647e6ab4ff737dd93"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page136.txt",
+      "sha256": "9d2582968c060bac25389cc98084e3dff6fa3e215f1d3037a1d6833e4e29c8f4"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page137.txt",
+      "sha256": "e6f814e06df650a7e51e9e2ea591fad7f0a834766d32d359b252411b74fcf298"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page138.txt",
+      "sha256": "aebcdf88753fcaa0264e0766ddfb0e17fdd759163a3ddeb763975d9da941a2c4"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page139.txt",
+      "sha256": "885cf737cde043a83a41f7ba897acdc821860d2467ae0e2fce97544658d972fc"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page14.txt",
+      "sha256": "68aae8fdcb80e74a469b6345c4ad484438f5b5022f10ffa17bf52c9f60e46bda"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page140.txt",
+      "sha256": "3f4c97495f6fd1c5145b775ecdda86e56b50b89e7913f028b68845e0a9eb39d5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page141.txt",
+      "sha256": "c124f4af66d718c80e7470d8425cfa704bc24f194da329140764aca7c56ef7c2"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page142.txt",
+      "sha256": "523f71b8c1b7983f76703f560cda1d22dd5e0e47696a50b5a9df48601ff8f1dc"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page143.txt",
+      "sha256": "03a69a651f4cd62aad8ff56582b7a80951af44c6b3842200b20684129908f32e"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page144.txt",
+      "sha256": "a640016920392c6706a1f98e9ab6215109a9da49bf2bb1313efbccff84a515cf"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page145.txt",
+      "sha256": "3bc4dfe66c9e942491a7a8a741fb457a546c4922346962aae3ba3af29f344622"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page146.txt",
+      "sha256": "2c0dfbbffe23b5824b97efff1f371fc545a033ba5967d3bf49392944e031385b"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page147.txt",
+      "sha256": "8cc2ef4398cfc49e8814a13668bf19f32fc365db1938cdada1b892ff7a6e183e"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page148.txt",
+      "sha256": "dbbffd82f4d7ae0e23225a700d5271a650e9c9028aacb04737df64a49bdfb951"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page149.txt",
+      "sha256": "2567080e957a0d6aa61298ffcd8d46804b14d8c33a585ef7e606a10dd5bd4e04"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page15.txt",
+      "sha256": "7ce34c76ec449de4d08b3ebfb4301d7a44175ee000fb7fd516b09781698938da"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page150.txt",
+      "sha256": "dc305e5ed61ee05f6684180a45bfbaeeb21296787d5bc9457c607b1625bce7ef"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page151.txt",
+      "sha256": "63544a53cd8678bb28ee37ea02ed88bacfa5978aca59db77757ea4ac80fc3743"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page152.txt",
+      "sha256": "e1d74308b78496b189855c1c61ff3acb2339f36b9efc0c6d188149161fb7f452"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page153.txt",
+      "sha256": "c37e9102ed3fdcdd2c84823e3ee980d74d8fd1b668b11846d882868abc2f6e61"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page154.txt",
+      "sha256": "90b70a0bbb97f40601c22e9424c92f5884577bb452ae9d6e72aa431dc7beac2a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page155.txt",
+      "sha256": "4a9d5c06b66b9e9497b7734c94385a89537b9e5c947556e8be0cb25ca77c464c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page156.txt",
+      "sha256": "c870d66307268cbdafd5b10bf4dbc4056f4e12afbaa5f076093f60b1dc8e1067"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page157.txt",
+      "sha256": "49761e020d966f21cfb70f83a319d5720ccc99839e638eec1225531491ac64d6"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page158.txt",
+      "sha256": "46d8d235e73b956dd0990c060ebfe9495546411d68e2b955f85e0a656ceeb516"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page159.txt",
+      "sha256": "27dea4c822d620869b243fde371b0b453f2c07b9bd32b4ee1af57c4e25b365b4"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page16.txt",
+      "sha256": "59c071d018fd70a9eb59046ad5f035141b3c9d44d779a2c85ee598309c6ffc6c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page160.txt",
+      "sha256": "5ddc30af578cafe25fa1a40fb7b2d33e6fed263455db5d45f1a7a303ddf052a1"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page161.txt",
+      "sha256": "846b2ceb0cfcec91af84dc070aba46f845acf1e7daf7c08195862635768bc4f2"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page162.txt",
+      "sha256": "b3d1e597d84ee841f8a3ce3a1de1d2193783b6a04cb8ba04e03b23a5b8f4f3f4"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page163.txt",
+      "sha256": "bd1d9f1b0d10a18c83276e6e4c78e05f7b90fcdbc82d3beebdb60d5a61db0414"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page164.txt",
+      "sha256": "0e729da58dbaae3fecfb86932bda50c7ad8cc2833d787f379387f4dde0ebe739"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page165.txt",
+      "sha256": "66fee79b7f756a047b028246819c7bf71204b10b28c4c5d97500fafeba4da3e7"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page166.txt",
+      "sha256": "b639a818dfdeea9f34bf1e4e6b8c208498536e6fab6eb253d0b73701e50a486a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page167.txt",
+      "sha256": "e799b9af76cba3551d90fdaf9858c23f1fdf3c952f5ff18c6b285c8a09bb3c41"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page168.txt",
+      "sha256": "de097d77124f2fb6e450eaa7a2fd6a517be7dbb50d85f129a518487a4ea2a8a9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page169.txt",
+      "sha256": "28c4e59a4c92fde8b298496ee0b53b218a7249baf2e9ac88f50efa9efa0cbbf8"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page17.txt",
+      "sha256": "af2ad9705646e4806977dbcc6463eb604649436e07fe7674204dee80d75def0c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page170.txt",
+      "sha256": "535b92a703961f442cf54195d31a14569369d71ef1fe6e854f9b6e978d34ac28"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page171.txt",
+      "sha256": "5567ca6bc61c2d27dc847bfb66e2021d089d2c7bdb4fe82eef663f83ba764233"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page172.txt",
+      "sha256": "f7da149c078f14efd995d95b8c64d94af3bbedfb4809e1e52edb5b6b552f1e4b"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page173.txt",
+      "sha256": "e8a77669b856c481bdbad58635201649b67f5985d43e535f036334a6cb353fd5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page174.txt",
+      "sha256": "b31ae2c4ff420509145c2edcb6acfa71ded27c303e75b910c51778f014591cc3"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page175.txt",
+      "sha256": "e2b7c6ddc0830533d19855a5d0752a4ddb78af5b7872104d23c4b1779f260761"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page176.txt",
+      "sha256": "914eb91835432fbe9416e0803cacd0343f0688a6ee3e61cb26f083d57408992c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page177.txt",
+      "sha256": "6dcd91a0cfa2aac9aa528843ff3cef8be305af76c476ec4dde537c78fb9eac77"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page178.txt",
+      "sha256": "a78bea73ed7b01f022d4f7ea3e61a2b4badf2ffc005aa299ea8570d3beef8625"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page179.txt",
+      "sha256": "1193d896d4d029af1f1ef9a37f0c584c98f284129d1fda83dce9e87a1277e805"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page18.txt",
+      "sha256": "f6d3444277f6643a66411025c896337cc418395a51c5e1a43697f8966e42e443"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page19.txt",
+      "sha256": "3869331196fa795f31bef9b01b9cab922c4e9bcf150b069c8b84b5e3bf0e05bd"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page2.txt",
+      "sha256": "0befdb6788e480f29576e0279d20c52accdb55fae887dd2361243551adf7a3f9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page20.txt",
+      "sha256": "37c1309245b40ebcf965d6c841aab8582f42517f49b7e3e2808037f121f578a9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page21.txt",
+      "sha256": "51d8cca22a005a7231da4d25ad527e3219531d485df5357cc036d5ce550ac068"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page22.txt",
+      "sha256": "76a980564f206c133ca7aba0be30fc289d88d65a6747768d118487deb9be8ed7"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page23.txt",
+      "sha256": "0b34a4a0cb2c7a5c18460c64b8a24040e0c7ae1a6a66f1de76612a29af060ab1"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page24.txt",
+      "sha256": "fccce2f436ae1bde2ec92dfe8a85784e8675d97f2563569df49eb9f916eb7da6"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page25.txt",
+      "sha256": "1a256ac4a69f2c1b2a7f5756d25edc0fdb519e51f162637b8c427ac30fa29f2f"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page26.txt",
+      "sha256": "a18a320565396da9c5ec63130da0af30797827a46e42990580646223b3084865"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page27.txt",
+      "sha256": "bb217caa2fb0362d46a85f930545fc290c96021121be0d532b761002b65aa755"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page28.txt",
+      "sha256": "f02983c33bec58375cce36b9bd1289aac9506465b6d152bed04f9329f4e91090"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page29.txt",
+      "sha256": "1769a615c5f64e83f2268015e292700ac9e065667962b576f402ea755a1167fa"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page3.txt",
+      "sha256": "df9a4fcf4aba149dfeabe8be2b3d986fc432f6bb1a08e5867581efc6242af007"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page30.txt",
+      "sha256": "97e84e740381671d8e176a89a1ebffeed31471c7593b8a6fce6de6ff5ab19c17"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page31.txt",
+      "sha256": "ccd9bbb669fcbb914a8e6aa1ee5b7905c02bf4f3bf9ac17e7452b176cb64ae5c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page32.txt",
+      "sha256": "17db22c85023034b6c88fe00d3f73b3069a885cd3c9e9c29e9b5f1453de40cd4"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page33.txt",
+      "sha256": "7a74c706693d0db146f5be35425e139209b84a79d3296dcbca511c848740c837"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page34.txt",
+      "sha256": "45b566fe336eed289c49c610cffbe5b05ecaf7a8258f6ddfa8bca03520aeefd9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page35.txt",
+      "sha256": "e9b2c65d3de7de20f66e3d8e3c0b17af6a70e22690dcf960d050aa7f3aa53aca"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page36.txt",
+      "sha256": "b1b6890f84830327d97426d1a5d449ed2394bc7f2a22b7464a4152b38a355f31"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page37.txt",
+      "sha256": "3bc504e923f28d1b1fdb72edfc0cfc4542e0465d8c253c7a965e99e2746c8ee0"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page38.txt",
+      "sha256": "c69c01b3e8bf1728663c5dd238d8cd8225d73df9f7414e74bb01384c716f36ef"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page39.txt",
+      "sha256": "d829ca81f8051339727eb2e45094d3357bea73e1280ddc06c511b91ef5ae2590"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page4.txt",
+      "sha256": "aeed66995679ef0b8a5ad7e4a9088f5893bb944ea933287eed551000725c9015"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page40.txt",
+      "sha256": "4b5405bd88f6c8dc86bb7619eeb360c28809bfe40ced860dac1a42bdde7baa06"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page41.txt",
+      "sha256": "afd524d0737edf6258dc83c9329d8a6c1df05f70bb7975cc1cfa97c5686b5ac6"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page42.txt",
+      "sha256": "06951a44a48e5f77b27a984944010a49a636f52e8d2484259271f46e7a86bda0"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page43.txt",
+      "sha256": "5220864ed98eade130c7525bc88aa050e518357d153fdef7ddc26c577792a172"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page44.txt",
+      "sha256": "e3bf98eab9dab0a6619f90ac3c64c83c9511f089088bb7de86ad10f5c5ee6b4a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page45.txt",
+      "sha256": "09b518890becffcf93b2e0aa8379ba117d576bf6c836603a30e732cdeddab5d9"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page46.txt",
+      "sha256": "261e3fe189d8fd3947a666e14956812a02cf48ffc6d5849bd0b45b7053764364"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page47.txt",
+      "sha256": "3a93044e815762d8f71e07351f0293258957dc5596e9c592f40758fde67a95e1"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page48.txt",
+      "sha256": "3d8d21094b7ac1905281e4fe55729ff7aa24040444eb9539f4789e789b817466"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page49.txt",
+      "sha256": "019b2089990370875b7afa73e4a79568e16c56f7342ef24486037698dd6d0399"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page5.txt",
+      "sha256": "56cfa4bf5a8edb01496af99d2dee8c83e5df1fe096a1a73df0e23f1a938c7e80"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page50.txt",
+      "sha256": "84b843d1f874d56ae2bc0d74c05a71ecea09e55b7491ec81cdb90d33e2c58e25"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page51.txt",
+      "sha256": "04420879f1895cb6f5b78dd4dfce2641817d57b0b40ce6c74eef79508fe2d49a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page52.txt",
+      "sha256": "d930a0b85337508f0338003a4911e97604a850346f7d7b57a531bef56155b144"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page53.txt",
+      "sha256": "6662c1aee9092db66186b642b2f914118075c263c97d8c452e76e896016a9273"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page54.txt",
+      "sha256": "ff8b711bcefb37a7c116f75bb71fd64789335003d72fdf84bc02f1653bef2b2b"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page55.txt",
+      "sha256": "e8c31a4f1cf27568dc72d878c5231d898a24f39270b7b066b961041534c166b3"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page56.txt",
+      "sha256": "e23b22375a4d113f93b788639a85f1fdc00a45adde24b0f309ca8257fda3f9bb"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page57.txt",
+      "sha256": "bcc018010c939880d29df4703a850022ad07491a5a618ecc8e913055ae938f3f"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page58.txt",
+      "sha256": "efe6ba044300f743371ccc2eaf4d4405c3cc531caf2edc4a4386fa387c7d5d5e"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page59.txt",
+      "sha256": "e57f892b3be270640632429af0845e1a93550188af8539636e0bf7a444db285b"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page6.txt",
+      "sha256": "709cd57b4fbfc94426578c2f8256b8448f17a5b2ae5ef3b1d7fd006ba1189ff7"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page60.txt",
+      "sha256": "b2f5be14be51c9d2193882fe025b754f0e25bd5c58644e9cef350a5195694a07"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page61.txt",
+      "sha256": "6245fc81b1cfd97e84762b69505f414251a58a375ef4edda0b12861ed3c95b5e"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page62.txt",
+      "sha256": "0ab8898b63e04aa9513ccd4d6690f24a34aeb95964fed09d1479b15e84ba920a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page63.txt",
+      "sha256": "c20767375f8c9a001abc7ad1604fdcfd790368fb1f8a8b88ecbc27cd03691000"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page64.txt",
+      "sha256": "86f4da285663acc9c274fbc8224ef38fc2f085268c84d606b53faa7e6cd59243"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page65.txt",
+      "sha256": "71e1e273de3341a9a232d083309e4c2065a069502eed4d3a3a65bc48bb297770"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page66.txt",
+      "sha256": "87e0461be7baf68a7fde122bf972b6b26e9353ba55b41e6d863fe38e323ac95d"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page67.txt",
+      "sha256": "235b290689e39c2dd926fc79fec9b4448b2271b1506ebf0303c41301fb4e70da"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page68.txt",
+      "sha256": "1af7d5011ef5d511b15e7100b2d9c505d91d11848aba42ae52dd4e3affe04fbf"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page69.txt",
+      "sha256": "4022d222d9fb50bd427f0ce473737b78449cf310a98145f5bb8270084a308c94"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page7.txt",
+      "sha256": "80ab62e4e30866cbf192cbd38f0623c914b62fa1c70cdc801a1c468d85637e8c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page70.txt",
+      "sha256": "33287e4e8cb923df2c28dc0a858aa23066e5f6adca3cd8d9a36edac4edd030ee"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page71.txt",
+      "sha256": "dfea78fe17466764b952b17096a4410a23c197091d9a3ea05ff0aedd209fe337"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page72.txt",
+      "sha256": "c9e89d94f74ae0cf07c0d37a2a40e9787276b27396d7bd0561ed9aa7b6f8a8ce"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page73.txt",
+      "sha256": "6fa3034e261d094091d2f5c8535b423270baf9fb2afc8327820d6c603cf25ce6"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page74.txt",
+      "sha256": "81898fbb1545575ec134481f7d67bfbe158098645137c945e5332b09df3441f5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page75.txt",
+      "sha256": "11e41ebe1cc199aa74cf57966c6fad0ecff6b2c12eacb8a6d345be9af211cd10"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page76.txt",
+      "sha256": "31a6e9eb978133a0ac104683d8563a1b979a1459ab74a1dc24200b3b47e5bc07"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page77.txt",
+      "sha256": "c790884e9e2290e15ebc5d6f2104f53a897c8c794fb2abfbbb224c6750c5cafb"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page78.txt",
+      "sha256": "752e1df92e43e617f7e4e0413ca048e6894b322459ae12e9267b6cf3b1bdcbff"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page79.txt",
+      "sha256": "3b6ae718daa7120bfc7cf44a275638033a6b16c4eee9a430b21f6e4081f15bfd"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page8.txt",
+      "sha256": "13855b64c5eee9bf96ea64da1fab77cf42c764aede8a984d5b0ef5693c3ee0b5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page80.txt",
+      "sha256": "05ed9d17c33815dce46146cfe8fbbce02c96bdca819ce12a2dc679e184820cb8"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page81.txt",
+      "sha256": "a4c02aadcdc67cf78bc6f7ac5a6ecda6ec58a4185d2def08b3bfe01379aca521"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page82.txt",
+      "sha256": "0e7d186ed56b12295b0ae334639dc2ba19b1e95e7eb80c6756dd82d72d1dc61c"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page83.txt",
+      "sha256": "919479285c9ccdc54396fd5f0415390e179a65202a4a03c3939a12a70d2be7bd"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page84.txt",
+      "sha256": "9f432ebc3ab45234c3aa81cd73b3e1883efef5337f9329d0a047b28ef4fdb78a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page85.txt",
+      "sha256": "d368ab6489ecb6872744568445df71cfbd7b63d3bf3f21a7c81118c640924afe"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page86.txt",
+      "sha256": "6dd1e8740267618b86df71a7062cf5234a920dfe90a96bc656b4bf213c615826"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page87.txt",
+      "sha256": "7e39c2e15716a720a779cfd583d8733af426d2693799ad7f3157a4e9fe198792"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page88.txt",
+      "sha256": "25ae329475e104e662e729d84bdb4b04e116486bc1999125bf4239e095e793c1"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page89.txt",
+      "sha256": "0251877e78293b9e4c87c3dc5536522714805516d3d4e9d3cfb9c03fa4e49a64"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page9.txt",
+      "sha256": "8e0419e825449467e418775834d3d0ab4a9e0d44181cbb479d1315b8adb20447"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page90.txt",
+      "sha256": "36e56da6e87451cf31a7358da80eed61962092539430c33c0b8549abedeb1144"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page91.txt",
+      "sha256": "887f108509f4654df17af75e87c8f0ac2ca6a499da9a0ccccf4c8ea4326cb2b5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page92.txt",
+      "sha256": "a45d270c60343e861d65bc639b35aecd850035f50f67e2467c557c94fe357f88"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page93.txt",
+      "sha256": "2663df7848700a0f5d97f9bcdeb5c9c2c53263758212ca43cc9a21a1131cb999"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page94.txt",
+      "sha256": "93d2803842c6cf06598a770a672b3717bd4fc072236dea2a81c8a70816f2cfa4"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page95.txt",
+      "sha256": "f7e2dd3ed33942e5355df22a9b4aac3f768a934d234550c8c4288807ac36dbcf"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page96.txt",
+      "sha256": "c25d3e1fa352b0a043779c6c513ede70b5f2a2ab647606a0539449e1bbe45aad"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page97.txt",
+      "sha256": "f06e7ff0578601a5bc96ab4b347e8e6820c3a8116f63854eba82baae9a81e713"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page98.txt",
+      "sha256": "e0aedb3be8ece947ef19ea9852a8bc73261068a5396f94e8b4ecd380b29e9c36"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page99.txt",
+      "sha256": "3f2b38ddb27783e963ef01c63119dffaf0943e0ef3676f233269be8b0ba66605"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page1.png",
+      "sha256": "b96a111eff492ff5a6660c9e0ff564292f07aa49b565d76776aa4a0d82680232"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page116.png",
+      "sha256": "a05bdc19bea1c319053f7b6aff1e69042f098909297b0d754f12a835f88463d5"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page130.png",
+      "sha256": "29e95eecd9db157873d6c16dd3373d62f0ebf02aa7b32e597345f71f0c7c9341"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page131.png",
+      "sha256": "e500cbead3dfe9be0b9b1963cbd0e00c36024a4b72e63caa9f2e34683914d3a7"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page132.png",
+      "sha256": "9c3fbbca0b2810a05fb2c07a66ee635ae9df89a1bd884c9048c0c3c73ef7e0aa"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/page133.png",
+      "sha256": "deffc74dad84ed8b78e336753ae6ef769a4c09bb45d4b8af1b071f9c267adc40"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/record_checkpoint.py",
+      "sha256": "fb251b08e4a1a9389bff5c45aa4605ae2c41c5c790aac39421e0d32047ac0ced"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/reader-verification.json",
+      "sha256": "6c2cfe2f0366b3e8536b50a5b2b83882af56e4b3907c7f0fd935411eed0a9827"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/reader-build-final.log",
+      "sha256": "62e3852c732ad01434468a9c81d8db16f73cb4ec817fe867995fabc3fe7ae1aa"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/tests-final.log",
+      "sha256": "a364020bcc1bf668ef830e37761f38731fae82b53e1fb6bbb34a62d409a26c85"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/node-tests-final.log",
+      "sha256": "ca2617b1c622fbf476a731a0a094d2fc88c35d5588caafb89aaa7dff4c7c43f2"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/reports-final.json",
+      "sha256": "5f2373bb9b9dbbb7213af363775d51c408215a8fbaed2f9c263d7fd9c9ace01a"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/regenerate.py",
+      "sha256": "83e7b441ecea3f8d6e107886ed57eaa7a1746540a4362c755c1985264f90bafc"
+    },
+    {
+      "path": "data/private/research-work/kedar-frozen71-2026-10-03/verify_reader.py",
+      "sha256": "eef3301f906ebcee08b6f9a9f065d978f2a184f2d7db75241cdc047a1bf5aecf"
+    }
+  ],
+  "validation": {
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "neighbor_JBA56_readings_not_assigned_to_CBS": true,
+      "frozen_cases_extended": 1,
+      "all_previous_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "unchanged_corpus_digest_verified": true
+  }
+}

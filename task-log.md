@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Kedar frozen-case text audit, checkpoint71
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** unchanged — state digest `9e0bce8608c8a`; clean opening tree and recorded state matched checkpoint70. No database writes.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent sequential private reader build 7/7. All 2,283 text contents/attributions/classifications/statuses, 2,143 media assignments, 1,232 local images and 88 captures verified. Seven reports/exports regenerated; state recorded.
+
+- Kedar dissertation: selected designation/client patterns searched across179PDFpages; exact CBS85-48-914matches on PDF116/130. Both exact pages and continued PDF131–133 visually inspected. Printed105n434/119n497 are comparison notices; Table8/Image6 and continued native/English quotations belong to JBA56/MS1928/8. Photograph credited to MatthewMorgenstern. No neighboring edition/photo assigned to CBS, no shared summary promoted. Five-page visual scope is not a fullsource visual audit. Dated2019unpublished notice retained; source authorship/handwriting hypotheses not adjudicated.
+- Eight bounded web queries saved with missing individual counts/times explicit. Unrelated numbers, neighboring Penn85-48-913 and85-48-905 excluded. Penn ownbrowsersearch returns one exact85-48-914record, webobject86242, with three advertised download views. Bibliography tab empty; no current edition-absence finding. Webtool opening record/gallery fails while browser succeeds, not a site denial. Full terms/robots and image bytes remain next capture work.
+- Exact Penn catalogue already indexed as APP-4C202597CD63/SRC-5C78BBC82960 under IBI-B344613F0FDC; frozen Kedar case IBI-7F45E9808B4D separate. Queue separate CONC review under Mike one-designation ruling, with corroboration and immutable manifest, before source/image capture. No identity decision in this TEXT workstream; no apparent9/11line disagreement inferred from neighboring JBA56table.
+- One frozen history appended; all older histories preserved. Fixed249 remains32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus/inventories unchanged:2,283texts/1,548readings=1,414checked/133partial/oneunreviewed;2,143media/1,232images/88captures;58PDFsources/53appearance-bearing/1,342appearances. Historical45native gaps and IraqMuseum5497rejectedjar retained. Miri10resolved/21requests unchanged; available museum links not mislabeled missing acquisitions. All ten supplied docs already processed; no duplicate intake.
+- Receipt: `research/receipts/kedar_CBS_scope71_audit_2026-10-03.json`; private checkpoint0071, exact scope evidence/page images/route audit/current inventories retained. Previous/current Goal turns progress; Goal active. No new capture/text/review/rights approval/reset/contact/purchase/push/deploy or rejected live-restart retry. Next separate designation review, then lawful Penn capture and original edition/specialist routes; frozen Goal scope intact.
+
 ## 2026-10-03 — Codex — Frozen-case English captures, checkpoint70
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
