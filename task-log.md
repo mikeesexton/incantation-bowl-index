@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Frozen-case English captures, checkpoint70
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — two bounded English rows/two immutable proofreading reviews, one HTML capture; state digest `9e0bce8608c8a`. Opening clean/state match checkpoint69. All previous rows across39tables unchanged; trial/production normalized payloads match, five replays change zero.
+**Tests:** 394Python+57Node=451passed; subsequent sequential private reader rebuild7/7. All2,283text contents/attributions/classifications/current statuses,2,143media assignments,1,232localimage hashes and88capture hashes/source assignments verified. Seven reports/exports regenerated; state recorded.
+
+- Cincinnati A/1331: all four displayed English HTML paragraphs copied/source-checked against archived page and independently inspected browser display. Two source ellipses, two em dashes, source punctuation/names and paragraph boundaries retained; line wrapping/whitespace/italic markup normalized. Institutional credit with translator unnamed. Exact post/accession/English/policy inspected; native edition, accuracy against clay and full inscription extent remain unverified.
+- New museum HTML capture follows saved HTTP200robots permission. Sandbox network failed before retrieval; authorized network escalation succeeded. Immutable successful rehearsal receipt transferred through CLI with origin database/robots/page hashes and original metadata; production makes zero network requests. Copyright/personal-research conditions and attribution retained, no public reuse clearance or image acquisition.
+- MS2056/12: short source-reported preliminary English quotation copied/checked from existing registered HTML; uppercase/five literal loss dots retained. Collection describes unnamed reader working from photographs and extensive unintelligibility. Prospective ShaulShakededitor not assigned as quote translator; prayer identification/native wording/full edition/current publication status not verified. Prior summary and publication notice retained, not treated as current negative evidence.
+- Bacher6412primary itembody inspected: dealer calls marks mock writing, displays no transcript/translation. Source-specific availability observation only, no project script/authenticity adjudication. Gackstätter02651certificate/photos/source-specific study remain follow-up. Three additional executed web queries saved with per-query count/time limitations; unrelated numeric matches ignored.
+- Three frozen histories appended, all earlier histories retained. Fixed249remains32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus2,283texts/1,548readingrows=1,414checked/133partial/oneunreviewed; bounded/provisional excerpts are not completed independent editions. PDFinventory58sources/53appearance-bearing/1,342appearances unchanged; non-PDF holdings inventory refreshed. Historical45native gaps and IraqMuseum5497rejectedjar remain unchanged. No source/appearance/object/claim/identifier/media/identity/rights decision added.
+- Miri10resolved/21requests retained; existing A/1331request refined to exclude already captured museum English while original documentation/photos remain needed. Metadata-only message acknowledged; completed chat reports tracker updated, remote files not independently inspected. All ten supplied documents already processed. Previous/current Goal turns progress; Goal active. No duplicate acquisition, reset, public approval, external contact, purchase, push, deploy or rejected live-restart retry.
+- Receipt: `research/receipts/frozen_case_English70_audit_2026-10-03.json`; private checkpoint0070, source-copy audits/HTML/manifests/three-case progress/inventories retained. Latest10prebatch backups retained with private pruning log. Next original native/publication-reference routes and remaining held-source quote coverage; original Goal scope intact.
+
 ## 2026-10-03 — Codex — Institutional publication routes, checkpoint69
 
 **Claimed:** DISC-002 (one DISC workstream).

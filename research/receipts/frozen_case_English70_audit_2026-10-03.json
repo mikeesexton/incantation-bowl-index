@@ -1,0 +1,548 @@
+{
+  "schema_version": 1,
+  "checkpoint": 70,
+  "created_at": "2026-10-03T05:31:50+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "0a9209b7f47a2eb35a6c56eafbbbeb9b81dd172a7e14ed73a0d01f3eb1d80fcb",
+  "corpus_after": "9e0bce8608c8aec392178905fb3bbb1c34b93feb1e9093bdc296f9e0a361eeed",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 3,
+  "new_publication_links": 0,
+  "new_text_rows": 2,
+  "newly_source_copy_checked_English_rows": 2,
+  "new_captures": 1,
+  "capture_transfers_network_requests": 0,
+  "existing_HTML_capture_reused": 1,
+  "new_appearances_objects_claims_media": 0,
+  "new_immutable_reviews": 2,
+  "unverified_native_editions_and_named_translators_retained": true,
+  "public_reuse_approvals": 0,
+  "identity_merges": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1414,
+  "partial_reading_rows": 133,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/skirball-translation70-2026-10-03/campaign_case_progress_checkpoint70.json",
+    "sha256": "34d5c1ff0801bcecfebf522bd606bb4696230bdc1365996f208e9b6a7bf28bf7"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/skirball-translation70-2026-10-03/held_pdf_inventory_checkpoint70.json",
+    "sha256": "bbb36f69e9c82bcd9368804226fc13274524fc683a0a95ab4e2082db93e94456"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/skirball-translation70-2026-10-03/non_pdf_holdings_checkpoint70.json",
+    "sha256": "8ecf7d23d0b81c66ebca299fe00a5e0eb42c0b1a582f84b2b621ed18fe7a02f3"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 21,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint70 captures/source-copy checks two bounded English renditions on frozen cases: complete displayed museum quotation for Cincinnati A/1331(fourHTMLparagraphs/twoellipses/sourcepunctuation/unnamedtranslator) and short source-qualified preliminary MS2056/12collectionquotation(five loss dots/unnamed photo reader). One robots-permitted HTML capture transferred from immutable rehearsal receipt without refetch; Schøyen uses already held HTML. No native edition, full translation extent/accuracy or scholarly publication verified. Prospective ShaulShakededitor not assumed translator. Bacher6412source calls marks mock writing and supplies no transcript/translation in inspected itembody; source report only, no project script/authenticity verdict. Two immutable reviews keep originals; all earlier39table rows unchanged, trial/production semantic payloads equal, five replayszero. Three frozen histories appended;249cases/32linked/217unlinked/allattempted/zero wholecasescomplete. Corpus2283texts/1548readingrows=1414checked/133partial/oneunreviewed, including bounded/provisional/excerpt rows rather than full independent editions.2143media/1232images/88captures; PDF58sources/53appearance-bearing/1342appearances unchanged, non-PDF inventory current. Miri10resolved/21requests retained, A1331documentation request refined; all ten supplied docs processed. Goal active; no reset/publicapproval/identitydecision/push/deploy/contact.",
+  "next_actions": [
+    "Continue exact publication-reference routes and original native-edition acquisition/specialist requirements for frozen cases.",
+    "OriginalA1331translator/edition and MS2056/12later full Pahlavi route remain unresolved; recorded English is bounded/source-qualified.",
+    "Finish remaining held-source quotation coverage and non-bowl apparatus without inflating completed independent editions."
+  ],
+  "validation": {
+    "corpus_before": "0a9209b7f47a2eb35a6c56eafbbbeb9b81dd172a7e14ed73a0d01f3eb1d80fcb",
+    "corpus_after": "9e0bce8608c8aec392178905fb3bbb1c34b93feb1e9093bdc296f9e0a361eeed",
+    "all_earlier_rows_across39tables_unchanged": true,
+    "changes": {
+      "accuracy_audit_reviews": {
+        "previous_rows_retained": 80,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "appearance_object_links": {
+        "previous_rows_retained": 2840,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "appearances": {
+        "previous_rows_retained": 2840,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "capture_source_corrections": {
+        "previous_rows_retained": 3,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "captures": {
+        "previous_rows_retained": 87,
+        "added": 1,
+        "earlier_rows_changed": 0
+      },
+      "catalogue_metadata_corrections": {
+        "previous_rows_retained": 9,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "claim_conflict_review_history": {
+        "previous_rows_retained": 964,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "claim_conflict_reviews": {
+        "previous_rows_retained": 646,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "claim_locator_corrections": {
+        "previous_rows_retained": 1110,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "claims": {
+        "previous_rows_retained": 9205,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "contributor_aliases": {
+        "previous_rows_retained": 0,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "coverage_targets": {
+        "previous_rows_retained": 12,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "dedupe_candidates": {
+        "previous_rows_retained": 34798,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "dedupe_evidence": {
+        "previous_rows_retained": 34804,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "document_assessments": {
+        "previous_rows_retained": 127,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "events": {
+        "previous_rows_retained": 215,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "identifiers": {
+        "previous_rows_retained": 5231,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "leads": {
+        "previous_rows_retained": 99,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "manual_audits": {
+        "previous_rows_retained": 14,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "media": {
+        "previous_rows_retained": 2143,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "media_rights_reviews": {
+        "previous_rows_retained": 652,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "merge_log": {
+        "previous_rows_retained": 0,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "museum_concordance_reviews": {
+        "previous_rows_retained": 40,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "object_relationship_assertions": {
+        "previous_rows_retained": 5,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "object_scope_reviews": {
+        "previous_rows_retained": 2,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "objects": {
+        "previous_rows_retained": 2232,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "publication_assessments": {
+        "previous_rows_retained": 631,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "publication_registry": {
+        "previous_rows_retained": 37,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "saturation_sweeps": {
+        "previous_rows_retained": 3,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "schema_migrations": {
+        "previous_rows_retained": 21,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "search_queries": {
+        "previous_rows_retained": 370,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "search_runs": {
+        "previous_rows_retained": 22,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "source_corrections": {
+        "previous_rows_retained": 85,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "source_scope_reviews": {
+        "previous_rows_retained": 119,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "sources": {
+        "previous_rows_retained": 967,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "text_metadata_corrections": {
+        "previous_rows_retained": 19,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "text_proofreading_reviews": {
+        "previous_rows_retained": 1728,
+        "added": 2,
+        "earlier_rows_changed": 0
+      },
+      "text_publication_reviews": {
+        "previous_rows_retained": 310,
+        "added": 0,
+        "earlier_rows_changed": 0
+      },
+      "texts": {
+        "previous_rows_retained": 2281,
+        "added": 2,
+        "earlier_rows_changed": 0
+      }
+    },
+    "new_capture": 1,
+    "new_English_rows": 2,
+    "new_source_copy_reviews": 2,
+    "new_appearances_objects_claims_media": 0,
+    "copy_check_scope": "Bounded museum and preliminary collection English only; native editions/translators/full extents not verified.",
+    "current_reading_status_counts": {
+      "reading_text_checked": 1414,
+      "unreviewed": 1,
+      "partial_review": 133
+    },
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "trial_production_business_payloads_equal": true,
+    "all_five_replays_unchanged": true,
+    "replay_logs": [
+      {
+        "arguments": [
+          "ingest-capture-receipts",
+          "data/private/manifests/skirball-translation70-2026-10-03/capture-transfer.json"
+        ],
+        "stdout": "{\n  \"entries\": 1,\n  \"changed\": 0,\n  \"unchanged\": 1,\n  \"network_requests\": 0\n}\n",
+        "stderr": "",
+        "exit_code": 0,
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest",
+          "candidate",
+          "data/private/manifests/skirball-translation70-2026-10-03/candidate.jsonl"
+        ],
+        "stdout": "ingested 1 records\n",
+        "stderr": "",
+        "exit_code": 0,
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/skirball-translation70-2026-10-03/proofreading-production.json"
+        ],
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 1,\n  \"public_approvals\": 0,\n  \"unchanged\": 1\n}\n",
+        "stderr": "",
+        "exit_code": 0,
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest",
+          "candidate",
+          "data/private/manifests/skirball-translation70-2026-10-03/schoyen-candidate.jsonl"
+        ],
+        "stdout": "ingested 1 records\n",
+        "stderr": "",
+        "exit_code": 0,
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/skirball-translation70-2026-10-03/schoyen-proofreading-production.json"
+        ],
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 1,\n  \"public_approvals\": 0,\n  \"unchanged\": 1\n}\n",
+        "stderr": "",
+        "exit_code": 0,
+        "corpus_unchanged": true
+      }
+    ],
+    "public_approvals": 0,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "two_bounded_English_rows_and_unnamed_attributions_verified": true,
+      "source_copy_checks_not_native_collation": true,
+      "original_native_edition_gaps_retained": true,
+      "frozen_cases_extended": 3,
+      "all_previous_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only, no deployment/live-server restart attempted"
+    }
+  },
+  "protected_payloads": "Source wording/HTML/selection/manifests/trial snapshots remain private; receipt metadata/counts/hash pointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0070_frozen_case_English_captures.json",
+      "sha256": "f18d1a9d269de9c0ce557026cb675a980486fe1a141d791c711bb962d558d4f5"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/campaign_case_progress_checkpoint70.json",
+      "sha256": "34d5c1ff0801bcecfebf522bd606bb4696230bdc1365996f208e9b6a7bf28bf7"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/article-paragraphs.json",
+      "sha256": "072c65adfa95e20d0620a897b5272ea8a0f4f77fd49cf01c158b1499ad50de46"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/backup-retention.json",
+      "sha256": "7a266af1fae2daccc5286ec1500d82d313aa14bf76836850ef38c65393096ec3"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/before-all-tables.json",
+      "sha256": "61423df79b212f41b475aeca9b5603503f573e05f1f8d156aaad4f3ec6b23f2c"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/capture-receipt.json",
+      "sha256": "414ff3a2f583426064c3a3ca4a14cedb229dc2c6e4b1d1dee2f753b019ef4deb"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/existing-appearance.json",
+      "sha256": "c6a40e25e4da558a54a7222507f71c2fb1760f67f31c8f2e3bcdd0e6391f0352"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/frozen-case-text-availability.json",
+      "sha256": "af13c875a9bb628f66e2ffb92c771cedd5d229be39852887fbb06e755321cba3"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/held_pdf_inventory_checkpoint70.json",
+      "sha256": "bbb36f69e9c82bcd9368804226fc13274524fc683a0a95ab4e2082db93e94456"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/metadata.json",
+      "sha256": "8aabf3c90262bed9690a1f2b2c093083ec77f1743a29bd956dd3cee162e087ac"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/non_pdf_holdings_checkpoint70.json",
+      "sha256": "8ecf7d23d0b81c66ebca299fe00a5e0eb42c0b1a582f84b2b621ed18fe7a02f3"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/production-business-payloads.json",
+      "sha256": "05e9dbb0bef6a54e0268be5125b1e02c9c02c3dc5a7b932cdb38a9742422a22b"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/production-verification.json",
+      "sha256": "b0b3004048cc3b0f8a3e61c8e4769e0a799531bf6cea82215170fe15d75ef381"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/robots-observation.json",
+      "sha256": "47fd84d3481cccf32bd7100028acdfc7d486fe197a7f3a72a4dcd2f0cb34f0bd"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/schoyen-source-copy-audit.json",
+      "sha256": "f9d0e4641f6cc95109a54fb1d0c44fc26273c3f15c87b004e47a25530f7927bf"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/source-copy-audit.json",
+      "sha256": "7186f288c5ce4701d4c2a50d5d8c91ca49ab54de6f3f54e3f21e65da03417b41"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/trial-business-payloads.json",
+      "sha256": "05e9dbb0bef6a54e0268be5125b1e02c9c02c3dc5a7b932cdb38a9742422a22b"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/trial-stage1-business-payloads.json",
+      "sha256": "08e918e348427b7054d7de3628bbe3964760bc22b1b82cd906cddced6a7df584"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/trial-stage1-verification.json",
+      "sha256": "4f75da43745b71f7c33196c2190a47a578c634e8abe5b914923dfb2a4a01c7ab"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/trial-verification.json",
+      "sha256": "d35538156738ca1a4fac8a570e3800fb95f1a565cfefce59ef3da6e6c0cc6276"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/museum-English-reviewed.txt",
+      "sha256": "0b770796b7d2eaf64d3f82733d44ec2e83d5bd3e92bf12bb809024ca09625b08"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/robots.txt",
+      "sha256": "6225e1d12bc31769fab73247c5c6c7c328d6ba56b27388bf9b4f8494448f0ac1"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/schoyen-preliminary-English-reviewed.txt",
+      "sha256": "83df095cd0216bb412e54da5708b53e0da0ba43cba041da2f6fc32e0a4e12733"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/schoyen-quote-html-context.txt",
+      "sha256": "9f2547efb9f7eab0b63ea5cdfa35a009b9b6d2be2a6dd2171e4675df57655f94"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/check_robots.py",
+      "sha256": "85e9decb6c1b80db2576dc5ebe3868aad31976223869fece29685a786ccf245d"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/prepare.py",
+      "sha256": "654ff6003f849edaafca440ab7f07deb75a9429b10594682435599a4763cf997"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/prepare_reviews.py",
+      "sha256": "db10f48caf2050f14af45e992068d542ccc6febe9d8778d9153ed4e96edb4713"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/prepare_supplement.py",
+      "sha256": "41bd07bfd4965983fce567bd3a76a150da1d21b82e5ad64057bd691b31c21ec9"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/prepare_supplement_reviews.py",
+      "sha256": "8561bcc1426264a2ce3f1de675629a875f935c0a42bc65f1c42a19578e157861"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/record_checkpoint.py",
+      "sha256": "a693c322f1504e0468d87c6cf199ca03093c0368de357ebe7953218e41efb631"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/verify_batch.py",
+      "sha256": "47a88940fa3a8594701a19c8de001031d564e1e7dd4729f49ff2248d9e23eeee"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/verify_stage1.py",
+      "sha256": "15fae524db7eb4d1dda9f97fd4967aee34fe5d78edacc5695ce86d3337727f66"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/candidate.jsonl",
+      "sha256": "3c32b8c5fe8756406b937e45feb919aacb6f88479d83180ad1370aa0236d4c2c"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/capture-transfer.json",
+      "sha256": "1b5785195407ffbe3af6e58db237508dd53b55e31b72b0ded05d52cdcfd3058e"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/proofreading-production.json",
+      "sha256": "6bd929d84794538c304095b885237eab78f9a725ad48b6dd2ffc9d1883068ae0"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/proofreading-trial.json",
+      "sha256": "c3299ea19fa3cda6b28d63ec8a0de486921cfd5600762db39baa3c8093840a59"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/schoyen-candidate.jsonl",
+      "sha256": "f73f4d10e67cec1df43892a805ff6bd00179648e4dd8ccbe287f282ec7c6cfdb"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/schoyen-proofreading-production.json",
+      "sha256": "25d1d6af8a6af468b1823a44487b92c2f4d3e99d6107a4edb44e6f8daf8238c4"
+    },
+    {
+      "path": "data/private/manifests/skirball-translation70-2026-10-03/schoyen-proofreading-trial.json",
+      "sha256": "cd6636bc6068c36fa9065832e60bc20ec7107222004cc7582fa9bb1864932e9e"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/reader-verification.json",
+      "sha256": "d6d2fd04c57ef2e1f588b0925d3618751601b5bda037176046e649b8fdb33b04"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/reader-build-final.log",
+      "sha256": "c6ebf60f1252fecffed5cc2101ae28fa3bad7795685462abdf9d81aaf46cc38c"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/tests-final.log",
+      "sha256": "774b8fec6e13866353d14e5ab1ca29d9ea8589c88718f649ce23c552dd9d5bb8"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/node-tests-final.log",
+      "sha256": "5d80525069e7d51ac28a1c6a3ef1886ff73b190559b1126000f0e2d77c52656a"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/reports-final.json",
+      "sha256": "4c167b7818571ab4f54784209ac14dd0c6c49c5277071088d172b57c552fae44"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/regenerate.py",
+      "sha256": "0242b4620aaefae00121daeb255a8f155a8899ae502ea09dedb3e046bd7a6e80"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/verify_reader.py",
+      "sha256": "d295ecfe5aab06990ec421c4aaaa12fa853e7bfb04041823ea7cc12860403080"
+    },
+    {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/miri-completion-observation.json",
+      "sha256": "83c818e7b9752ccb74dc279a20f0136ff7084e82a4deaf581a843838dfce9680"
+    }
+  ],
+  "miri_message": {
+    "delivery": "tool acknowledged",
+    "completion": "completed chat reports requested refinement; remote files not independently inspected",
+    "observation": {
+      "path": "data/private/research-work/skirball-translation70-2026-10-03/miri-completion-observation.json",
+      "sha256": "83c818e7b9752ccb74dc279a20f0136ff7084e82a4deaf581a843838dfce9680"
+    }
+  },
+  "verified_artifact_hash_count": 47
+}

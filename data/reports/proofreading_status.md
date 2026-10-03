@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1412 | 133 | 1 | 1546 | 91.3% |
+| Edition text (translation, transcription, transliteration) | 1414 | 133 | 1 | 1548 | 91.3% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 727 | 735 | 0.1% |
-| All stored text | 1413 | 140 | 728 | 2281 | 61.9% |
+| All stored text | 1415 | 140 | 728 | 2283 | 62.0% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 728 | 43 | 1 | 772 |
+| translation | 730 | 43 | 1 | 774 |
 | transcription | 512 | 70 | 0 | 582 |
 | transliteration | 172 | 20 | 0 | 192 |
 
@@ -25,6 +25,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Source | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | Incantation Bowl — Auction 32 lot 154 (`SRC-E94437DF5962`) | 0 | 0 | 1 | 1 |
+| Mandaic Bowl (`SRC-03395C3A94A7`) | 1 | 0 | 0 | 1 |
 | An Aramaic Exorcism (`SRC-0383E0E0A2F2`) | 1 | 1 | 0 | 2 |
 | Jewish Love Magic: From Late Antiquity to the Middle Ages (`SRC-07B313309678`) | 11 | 0 | 0 | 11 |
 | Byzantine Period Terracotta Incantation Bowl, 400 CE–700 CE (`SRC-0AC8CA3CDF84`) | 1 | 0 | 0 | 1 |
@@ -62,6 +63,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples (`SRC-C54888E36130`) | 1 | 0 | 0 | 1 |
 | Jewish Aramaic Incantation Bowls (`SRC-C5AA2D8C1284`) | 2 | 0 | 0 | 2 |
 | Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels (`SRC-CA4B122C5F4D`) | 21 | 0 | 0 | 21 |
+| MS 2056/12 Zoroastrian Incantations Against Demons (`SRC-CCB4BB4FAD99`) | 1 | 0 | 0 | 1 |
 | Linguistic Peculiarities in the Aramaic Magic Bowl Texts (review) (`SRC-D721A94FA3B2`) | 5 | 0 | 0 | 5 |
 | Aramaic Magic Bowls in the Vorderasiatisches Museum in Berlin: Descriptive List and Edition of Selected Texts (`SRC-DA708912C2D3`) | 30 | 0 | 0 | 30 |
 | Syro-Uigurica III: Enochic Material in a Christian Text from Turfan (`SRC-DICKENS2021-SYROUIGURICAIII`) | 2 | 0 | 0 | 2 |
