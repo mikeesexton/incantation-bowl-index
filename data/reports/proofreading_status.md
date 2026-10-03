@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1325 | 134 | 1 | 1460 | 90.8% |
+| Edition text (translation, transcription, transliteration) | 1327 | 134 | 1 | 1462 | 90.8% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 727 | 735 | 0.1% |
-| All stored text | 1326 | 141 | 728 | 2195 | 60.4% |
+| All stored text | 1328 | 141 | 728 | 2197 | 60.4% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | translation | 697 | 44 | 1 | 742 |
-| transcription | 467 | 70 | 0 | 537 |
+| transcription | 469 | 70 | 0 | 539 |
 | transliteration | 161 | 20 | 0 | 181 |
 
 ## Edition text by source
@@ -40,7 +40,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | What Will Save the Household? (`SRC-455442AA727F`) | 1 | 0 | 0 | 1 |
 | Aramaic Magic Bowl: The Protection of the Family (`SRC-4955445F0A7A`) | 1 | 0 | 0 | 1 |
 | Auction 32: Objects, Judaica, Israeliana, Archeology and Medals (`SRC-5119876CE9C6`) | 2 | 0 | 0 | 2 |
-| Syriac and Mandaic Incantation Bowls (`SRC-513E8FD6E55D`) | 7 | 1 | 0 | 8 |
+| Syriac and Mandaic Incantation Bowls (`SRC-513E8FD6E55D`) | 9 | 1 | 0 | 10 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-53202A840D51`) | 4 | 4 | 0 | 8 |
 | Edition and Analysis of Twenty-Five Unpublished Aramaic Magic Bowl Texts in the Collection of the Vorderasiatisches Museum (Berlin) (`SRC-53B93C8C8A0E`) | 51 | 0 | 0 | 51 |
 | Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’ (`SRC-5F7E0BA65D6E`) | 0 | 1 | 0 | 1 |
