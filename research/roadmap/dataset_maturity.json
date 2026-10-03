@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-02T23:42:25+00:00",
+ "updated_at": "2026-10-02T23:58:37+00:00",
  "portfolio_summary": {
   "current_phase": "Strong foundation in active use; building a checked research core; multilingual comprehensiveness remains unproven",
   "strengths": [
@@ -260,9 +260,10 @@
     {
      "id": "CONC-004",
      "title": "Finish Schøyen publication and collection concordances",
-     "status": "queued",
+     "status": "in_progress",
      "owner": "Research",
-     "done_when": "Individually identifiable MS records are reconciled with publication numbers and aggregate collection claims; unenumerated remainder stays explicitly aggregate."
+     "done_when": "Individually identifiable MS records are reconciled with publication numbers and aggregate collection claims; unenumerated remainder stays explicitly aggregate.",
+     "evidence": " Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active."
     },
     {
      "id": "CONC-005",
@@ -883,6 +884,14 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-10-02",
+   "agent": "Codex",
+   "tasks": [
+    "CONC-004"
+   ],
+   "note": "Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active."
+  },
   {
    "date": "2026-10-02",
    "agent": "Codex",

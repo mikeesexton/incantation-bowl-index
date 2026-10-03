@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-02 — Codex — Schøyen Mandaic/Pahlavi edition routes, checkpoint54
+
+**Claimed:** CONC-004
+**Corpus:** unchanged — state digest `663a6931ac8b`.
+**Tests:** 394 Python and 57 Node passed; rebuilt private reader 7/7. All 2,179 text contents/attributions/classifications/editorial declarations, 2,101 media assignments, 1,190 local image hashes and 87 capture hashes/source assignments verified. Prior corrected jar metadata retained; all receipt hashes verified.
+
+- Opening clean corpus matched checkpoint53, full rules/literature guidance read and CONC task claimed before edits. Original Goal remains active; current/previous turns progress. Ten supplied documents, including fgaf025 already processed, retained without duplicate intake/reset.
+- Checked exact Mandaic MS1911/2 and Pahlavi MS2056/12 routes across all57heldPDFsources:58captures/54uniquePDFpayloads/9,689distinctpages. Every capture hash verified and page text extent/hash indexed. Zero exact/selected-variant designation hits in these text layers or existing held-source working texts. Explicit limits:573blank/663sparse text pages, OCR omissions, variants and unnumbered descriptions. Bounded discovery is not full visual extraction/native verification or a current no-known-edition finding.
+- Selected catalogue-word search yielded17occurrences across6sources/14pages. All returned text contexts inspected: other clients/relatives, deity names, indexes/dictionaries or general commentary, without exact catalogue pair/accession correspondence. No identity, publication link or reading inferred from shared names/formulae.
+- Thirteen scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; per-query result counts unavailable, not invented. Both item pages retain intended Shaul Shaked publication notices; Pahlavi page reports a preliminary photograph-based reading by an unnamed reader. JBA volumes MSC20/2013 and MSC41/2022 are bibliographic context, without exact target edition bridge. References-page designation hits are navigation links. No full exact edition located; intended-publication reports are not present unpublished verdicts. Private web tool evidence does not claim new registered archival capture.
+- Two fixedcase histories extended, all earlier attempts retained. Collection-card/current-edition-identification routes, actual native/translation scope and specialist requirements recorded. MS1911/2 needs the reported1999Warburg exhibition roster; notice gives15–17/1999without a month, so none inferred. MS2056/12 needs permitted complete inside/outside photographs, identified original edition/translator and named Pahlavi specialist source. No inaccessible book/article title invented or new Miri duplicate request/contact; queue remains ten resolved/19requests.
+- Fixed249allattempted/31linked/218unlinked/zero wholecasescomplete. Corpus unchanged:2,179texts/1,452editionrows=1,315checked/136partial/oneunreviewed;2,101media/1,190localimages/87captures. HeldPDF57sources/52appearance-bearing/1,304appearances and45historicalnativegaps unchanged. Content-free receipt research/receipts/schoyen_routes54_2026-10-02.json; protected discovery/primary tool evidence and full histories outsideGit. Roadmap/seven reports/export and complete reader regenerated; state written; local commit only. No push/deploy/live restart/purchase/outbound contact/scholarly or rights decision/reset. Next continue218fixedpublication-reference gaps and substantive held native/translation checks. Goal active.
+- Local closeout initially searched for an abbreviated previous task-log heading; stopped before log edits. Rechecked exact heading and preserved the entire header/template/prior history before adding this closed entry. All receipt hashes still verified.
+
 ## 2026-10-02 — Codex — GordonG5497 primary institution and jar scope correction, checkpoint53
 
 **Claimed:** META-001, META-002
