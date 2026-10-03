@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Montgomery native editions26–30, checkpoint81
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — five corrected copies and five append-only proofreading reviews, digest `42b205aca5f1`. Opening clean/state match checkpoint80. Full originals/all earlier reviews retained; 37 other tables unchanged, all 1,880 identity memberships retained, trial/production digests equal, replay preserves every row/digest.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent sequential private reader build 7/7. All 2,283 text contents, attributions, classifications and current statuses, 2,143 media assignments, 1,232 local image hashes, 88 capture hashes and 1,880 identity memberships/counts verified. Seven reports/exports regenerated; inventories, roadmap and state recorded.
+
+- Freshly collated complete Montgomery1913 Hebrew-script printed edition blocks26–30 on printed209/212/213/218/221 (PDF215/218/219/224/227), five whole pages, five enlarged native blocks, overlapping details and correct fullword views. Rehashed held capture. Corrected copied letters, word forms, source repetitions, damage/restoration notation and exact anchor placement. Literal source unusual spellings and syntax retained; no grammar, scripture, translation or neighboring-witness harmonization. Source/editor/locator/rights/public0 retained, no new translation or reuse approval.
+- Editions27/28/30 normalized printed copies now source-copy checked. Four project doubts in27 and two in30 resolved from raster. Nine exact inferior dots in27 and27 in28 now encoded as U+0323 on their individual letters. Source points are editorial uncertainty, not Hebrew vowels or new project epigraphic judgment. No27 is only the author's printed1–11 excerpt; unpresented later13–24 remain outside this copy. No original-clay/diplomatic/specialist/semantic/native-gap/whole-case certification.
+- No26 and29 corrected but remain partial. Their full base blocks were compared; individual-letter source-point placement incomplete. No26 one damaged closing string retains explicit project capture doubt; eight coarse word markers do not exhaust its dots. No29 twelve coarse source-point words retained; exact letter map still open. Some preliminary small crops mislocated or clip neighboring words; all retained with limits, whole pages/blocks and correct later fullword views control. Protected source pages, observations, originals/corrected copies and manifest private/outsideGit.
+- Corpus 2,283 texts/1,548 readings =1,427 checked/120 partial/one unreviewed. Both held inventories freshly checked against DB hashes/statuses: exactly five entries changed. Saved all120 remaining partial pointers.58 PDF sources/53 appearance-bearing/1,342 appearances,2,143 media/1,232 local images/88 captures unchanged. Historical45 native gaps unchanged because these copies were already stored. Frozen249 original members and complete prior histories retained exactly; independently32 linked/217 unlinked/all attempted/zero whole cases complete. No new frozen-case attempt or identity decision.
+- Miri10 resolved/26 requests unchanged; no new acquisition blocker/message. All ten supplied documents already processed. No reset, institution contact, purchase, public approval, uncertain merge, push, deployment or server restart. Latest ten prebatch backups retained with hash-bound pruning record.
+- Goal active; previous/current turns made verified progress. Finish26 precise dots/closing string and29 dot map, then continue remaining held-reading and publication gaps. Receipt `research/receipts/Montgomery_native81_audit_2026-10-03.json`; private checkpoint0081, manifest `data/private/manifests/Montgomery_native81_2026-10-03.json`.
+
 ## 2026-10-03 — Codex — Kelsey31455 archival routes, checkpoint80
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).

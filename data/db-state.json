@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "6b735320f81a0e58c8d07bdb4b0eed61048d1a30b58c60cc712f58e14031a960",
+  "corpus_digest": "42b205aca5f1a8cfa84292a9ab00283ddc101a88952e9140b9fee58fe506c5c7",
   "migrations": 21,
-  "note": "Checkpoint80: bounded Kelsey31455 catalogue/report checks; archival concordance request added, original histories retained. Corpus unchanged; 451 tests and complete private reader verified.",
-  "recorded_at": "2026-10-03T07:56:00+00:00",
+  "note": "Checkpoint81: five Montgomery native copies corrected, three printed-copy checks completed, two remain partial. Originals retained; 451 tests and private reader verified.",
+  "recorded_at": "2026-10-03T08:17:53+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,15 +151,15 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "1b92e433b4a7943091b5d98867d6f4075ad2b3d49d20c692d07748b4e3f1b4ce",
-      "rows": 1742
+      "digest": "00bff44117aa82da17a60e67b6534a678c6f84c99b471f575aa17d929a83e514",
+      "rows": 1747
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "eb05cbf7a480f5033d7bcc319dd0969b29b48ad9a4011d82531fb1f86237c2a1",
+      "digest": "563cd5a2da79331da3aeeba85fb37d359a356e711eaa7d74b58fc257c6c8d2b1",
       "rows": 2283
     }
   }
