@@ -1,0 +1,556 @@
+{
+  "schema_version": 1,
+  "checkpoint": 83,
+  "created_at": "2026-10-03T08:48:53+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "663a949d46ac4f876bf54e9ebba0c71ceea030027e2b1f093a146e1abae46a55",
+  "corpus_after": "e08b2f776d2def460976843e28741a962622496e3e9a9c38113bbe52d2b4749a",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 4,
+  "corrected_text_rows": 4,
+  "partial_to_checked_reading_rows": 3,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1432,
+  "partial_reading_rows": 115,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/campaign_case_progress_checkpoint83.json",
+    "sha256": "13a1712f6f0fc9afa814e0c347ca1b559b71e41d4c723045cb4108edac05d8de"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/held_pdf_inventory_checkpoint83.json",
+    "sha256": "535b3c52b2cf0c7ba25b5601678cf016d92ee85273f646cc4c9f12e91696a8d7"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/non_pdf_holdings_checkpoint83.json",
+    "sha256": "654c731017e3dec58bee7aae7fe5c2617b8a5223cd12448fc661592c15969b52"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint83: freshly collated four complete Montgomery1913 printed Hebrew-script edition1–4blocks on printed117/121/127/133 (PDF123/127/133/139), four full pages/enlarged blocks and overlapping/fullword details. Actual printed117conventions verify brackets/restoration, inferiorpoints/doubtful Hebrew letters, baselinepoints/loss; Syriacsuperiorpoints separate. Three normalized copies checked:1restorationboundary corrected, namingformula consonant corrected and two projectdoubts resolved;2copiedconsonant corrected/projectstring resolved;3omitted internalbaseline loss point restored. Ten exact sourceinferiorpoints encoded (3/4/3), sourceunusualforms/repetitions/restorations/magicalstrings retained without English/scripture/grammar/parallel harmonization. No4baseword left explicitlytentative; raisedא retained in immutable review, exactbaseglyph/raisedletter relation unresolved. Remains partial. Four immutable reviews retain fulloriginals/allolderreviews;37other tables unchanged,1880membership retained, trial/production same/replayzero. Readingstatuses1432checked/115partial/oneunreviewed; fullinventories refreshed/exactly4entries changed. Freshcurrentreviewaudit corrects82planninghint:31Pognon French copies alreadychecked;31partialrows areprojectEnglish drafts, no newFrench certification. Frozen249 originalmembers/allhistories retainedexactly,32linked/217unlinked/allattempted/zero wholecases complete. Miri10resolved/26requests unchanged, all ten supplied documents alreadyprocessed. No new blocker/message/reset/merge/reuseapproval/contact/purchase/push/deploy/restart. Goalactive; next finish4raisedletter/baseglyphs and remainingnative/sourcecopies/publicationcases.",
+  "next_actions": [
+    "Finish Montgomery4 exact baseglyphs/superscriptא relation from held source; keep partial until copied precisely.",
+    "Continue115partial held source copies and project drafts with distinct editorial scopes;31Pognon Frenchcopies alreadychecked, correspondingEnglishdrafts partial.",
+    "Investigate217publication cases and missing originaleditions; checkedstoredcopies do not close wholecases."
+  ],
+  "validation": {
+    "corpus_before": "663a949d46ac4f876bf54e9ebba0c71ceea030027e2b1f093a146e1abae46a55",
+    "corpus_after": "e08b2f776d2def460976843e28741a962622496e3e9a9c38113bbe52d2b4749a",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 4
+      },
+      "texts": {
+        "removed": 4,
+        "added": 4
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/Montgomery1_4_native83_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 4,\n  \"public_approvals\": 0,\n  \"unchanged\": 4\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "state_digest_recorded": "e08b2f776d2def460976843e28741a962622496e3e9a9c38113bbe52d2b4749a"
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Montgomery1_4_native83_2026-10-03.json",
+      "sha256": "4f1c3b1d518e36ce465adf5278060e9ab9bf285b592ab786de0f9cd50fc59bf8"
+    }
+  ],
+  "protected_payloads": "Source images/copy observations/before snapshots/corrected scholarly text and ingestion manifests private/outsideGit; receipt metadata/counts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0083_Montgomery1_4_source_copy.json",
+      "sha256": "a14a40ca92fcef902bb9e00acd1e0c3c3855c061ba26edd737824fd6e73b66fb"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/armour-full-coordinate.json",
+      "sha256": "cec0d2bc8670701494e9b037935894b359a081f93ffbd248b1682e4de06d3575"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/backup-retention.json",
+      "sha256": "2b899d31b5e75fc46b3ebfe2d478b8dcea198454b70e43a9f99d3c496fe4824b"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/campaign_case_progress_checkpoint83.json",
+      "sha256": "13a1712f6f0fc9afa814e0c347ca1b559b71e41d4c723045cb4108edac05d8de"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/closing-detail-coordinates.json",
+      "sha256": "c7ad856f40c90e4aec5a719463860b5753a492892725f7e91d760bb6044bb513"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/crop-coordinates.json",
+      "sha256": "f5c7c2489bbbfee9cec80cd298aed98c5a757a171117633094872137762807f3"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/detail-coordinates.json",
+      "sha256": "f7005b682d70d47a99cc2314ba13080046cfa182130de9b935382fdbcc27aea4"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/formula-full-coordinate.json",
+      "sha256": "35a4f85c34908c975ae4cc3e856bd96b8dd0603bc2b1435ffcfde150af34ca4a"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/fullword-coordinates.json",
+      "sha256": "18db0bec4f9bad1c504576786847cc6f292379f5f9ff025e7693da54dd9f760d"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/held_pdf_inventory_checkpoint83.json",
+      "sha256": "535b3c52b2cf0c7ba25b5601678cf016d92ee85273f646cc4c9f12e91696a8d7"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/inventory-refresh.json",
+      "sha256": "2b6fdf6f06dae422ed3651230b7e6bb280ec962ecb08faddec7a819ed1fe7b8f"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/last-coordinates.json",
+      "sha256": "9439f1d65a17316f4ed781e5a95f1d7ecad4884914b1930928fcafc7f4a58d73"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/metadata.json",
+      "sha256": "673a20addbbc8bea23271b65c7ec787ef076b1860a31dc4ebd578dcd291c634d"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/non_pdf_holdings_checkpoint83.json",
+      "sha256": "654c731017e3dec58bee7aae7fe5c2617b8a5223cd12448fc661592c15969b52"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/prior-reviews.json",
+      "sha256": "801c0db4c9c6f35ebf33fbb4e62281e8285e2e6e4cd3f2268fd50e553f6eb581"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/production-verification.json",
+      "sha256": "a316ccc07424cecec5f5716d055806aeef0544aa41f606b4fc01e53bbcc924fb"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/source-copy-observations.json",
+      "sha256": "8501eefe9d56d291c8d83b53b3fcc86aa6c204cfae3b81adb592425bb8c75662"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/supplement-coordinates.json",
+      "sha256": "c17aabddc63efdce099d564d63062430da78c535ae1a5f77f9b8b0401df92b93"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/targets-before.json",
+      "sha256": "b30abfaf986abb37d6acdb7ab1717dbedfe32e6c4dfb50bb94ed115559405fe9"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/trial-verification.json",
+      "sha256": "e9ec1440c267bfcba1a0fc201a522bcb37c13f1b163be7bbb9038145f0c80e53"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/prepare.py",
+      "sha256": "b295a972f5ae27b9bcef01931e8f372076b6e9693513c7da5ce6240a9c3930bf"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/record_checkpoint.py",
+      "sha256": "23781257f9b65b897f428a25418e34be1094513f497ff1ea126beed899b6c4c4"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/regenerate.py",
+      "sha256": "9d92c6f9c13a4ba6fa91126fe00a1f0a395a36046c470689e471970f8ab347c7"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/verify_batch.py",
+      "sha256": "bd89069c15bcfbbee7c86f055f1e1457d37cf5ea2a3d7ee2344bfed5fc6cceb8"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/verify_reader.py",
+      "sha256": "c67cd06218adcc4485b9c0386713634bc702409eccb1ec2e12ea1876157bd13f"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-3word.png",
+      "sha256": "1ead95a4b1a8f5b9a09f17703a7d3df917fa4c838ed97696e6efbe19bd193ffe"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-5dot.png",
+      "sha256": "d3b8d11e86ede8f7cdb856b4f804148d8490003a08be25e4c52f52756ee196b6"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-alikhin.png",
+      "sha256": "8666a8de4710dae0fa08a0627365f55f95e850825759d2c78ffb3f858f80f730"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-mpfgrin.png",
+      "sha256": "db27e2dcb2e2cd4fef8f89e2c0e1fed40f64848d90a2e7e42a715c1f3161a25e"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-name-formula-full.png",
+      "sha256": "021aeb34f74ed8e4ae5f8e2d12f4472c06d6aed009254db30f797124de2ab594"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-name-formula.png",
+      "sha256": "f25764668b489085eee95a7599586a67bb2715549c8a3ed25a9a79cb5b9590e8"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-open.png",
+      "sha256": "09562935897884a86d2b50af4129cf9de9b7d6a6386c0eb26c91e8ca66a6300e"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-place-string.png",
+      "sha256": "f94fa0ef7e0e056d5de691da506fd8159e1fbbfed00d11d9501ab9e23667a37a"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-strings.png",
+      "sha256": "3dcb1e8aff5fed56a37153719507ea08df9cae43acb543ee76fcd4aafa873b83"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/1-third-full.png",
+      "sha256": "da9a94aad2edc7832b5bbbd74170f58bc075302d985d6a3f7908adbd61cc224a"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-armour-full.png",
+      "sha256": "5bbacecaef77c10b3e5743ab75e5e8388f175fdcbb64781e7a4fd20e839839c5"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-armour.png",
+      "sha256": "c2a96fa40a56b120a8904d9ae090cb0b773b2d3647a9b286ece548bfab31aff7"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-doubt.png",
+      "sha256": "0607fe4d4d2e436efbfbcdcdec3e59c6b09dd68a303d69eb1b1809de30f24e3c"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-name-4x.png",
+      "sha256": "128cf1924f5e8c1bc2aacdc8ab7066cfe63716e6dc3115fd556d6a8615a3b7ab"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-name-full.png",
+      "sha256": "e746d6c31e8345425c88d34d0829e18d0b7136b3adbefbd504f1d7a6ccf4b21f"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-name-hi.png",
+      "sha256": "afde0d55595f014805d2927aa58557526032c793a66be5e8e6880379d083c3e2"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-name1.png",
+      "sha256": "cf759740d72516a3e81a0646d9b353e7b61363a3a87fac7fa8148f4be6dbc4a5"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/2-name2.png",
+      "sha256": "53773a5a5309404efb459d0bced13f186395d6fa4aa695d369b981a3969437d7"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-firstword.png",
+      "sha256": "290764fb74562f511883de54c004f6e8a74d2b7035c1b33b140296742a23fc55"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-house-point-full.png",
+      "sha256": "9ccd79836373bad263da10ef4e1541fba6909801074147e68af89216aa495812"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-house-point.png",
+      "sha256": "fab4810beff84d1399cd92fcd5432df71b8ca5efee6d5a5eb79fa112a0005fbe"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-name-full.png",
+      "sha256": "50db44f9bcc60b5fa6e7c7cce2c1e7bd25c19ecd397875c77e304a4076e472a2"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-name.png",
+      "sha256": "df581298a5a1828e755efbe0690f7fc3c02a7109f6b34f449677fff10d086482"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-nqt-4x.png",
+      "sha256": "67b1ef9830c8b3eca09eedb9607e439e1ab43ebf1f7f7e6ab8c7b3aea0c9d416"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-nqt-full.png",
+      "sha256": "867c4a24adca116d3ade87940cc0365f15bf49f78d8500d6394ee0c3a6e95bf9"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-nqt.png",
+      "sha256": "729faa4faac2679115e99198f976391ecc2151169f6c9fbc42fc69ad16a98e6e"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/3-vyirik.png",
+      "sha256": "faa5c8ee1b529fbbb607d8a14e2c6fb00af456b5d90456065f140c37dbbcdcbf"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/4-fullword-open.png",
+      "sha256": "f80d8bf3c22e17f5ed3f109f96ff4b74671b503938dc0d4bb5aa284a0a960f2d"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/4-opening.png",
+      "sha256": "c62593d891517e1001e30a366cee72ef94d8e20d041b442e2e9c005347a0e301"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/4-super-word.png",
+      "sha256": "ceed74afb5732a9b831339bb681bfd545bc7af34aa18a3973d5c60e58bb0b38e"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/4-super.png",
+      "sha256": "bf9a68daed29bd79f0e2c5bd1e9bddd767bd7d46c7a66559e2d2c2f931cb5637"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/conventions.png",
+      "sha256": "faad4a52e6571c5568dd5b4c1fb0115946ea308220164cfef1fad2489500b141"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/large-123.png",
+      "sha256": "33d6def572b3bc12b1cfa01ab4e57f3ceedf66a8534a1aecdcdae8c4c6bbd264"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/large-127.png",
+      "sha256": "e07bf3477633d100f6da96f1b5a54582debaa6e3f3ef303bce734a5eb01101a5"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/large-133.png",
+      "sha256": "5feed553b87158c63f6ae1e966a52215431f67bd9b4c29dfeee9c9279185dcee"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/large-139.png",
+      "sha256": "ad124b9275b1a7b6f2dab32ed3e1d9848f273b8ccb9569c99e0178e4c7d496ce"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/native-123.png",
+      "sha256": "b4903fdcaff81c51a8ee78375de8f1f86f3a40446ce53595af247bac105c6cf2"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/native-127.png",
+      "sha256": "7f5db3340074d5f2f39849904d57e7bef2b1f727aeac5315cd7e7ad2d3d5ba85"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/native-133.png",
+      "sha256": "3b2643e5e208b3657b01b43cdcc66c9a5ad549163803924ed07024641932b6c4"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/native-139.png",
+      "sha256": "347166a233c2e823273725ab2a8990f34b91d84cee0291524c08aba7a7d6578f"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/page-123.png",
+      "sha256": "8be0ddc0b52090f3113b4957f941d8b1290d21a100bcee28cd9d9425ecc89068"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/page-127.png",
+      "sha256": "27a7b9ced6e6dd1da744d838434b55a3a9ff95ef0f2e9959ff50dfbe8998d301"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/page-133.png",
+      "sha256": "e32806c52467e03878ae1636dc21899c9f1bf9a76db30aeb681190c7ba477cf1"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/page-139.png",
+      "sha256": "f82fe94ed6e4274b6ac12c3251fbb1d8a0ed1799830c876de2a49067b26bf547"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-123-0.png",
+      "sha256": "06e93dce10a91a68ec6d96107591adca74142bcb11f9307d7e4a68f26a42c5e5"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-123-1.png",
+      "sha256": "93c53b24cca3451907bc62d88be070a8d1597be46b3486008a11158f30c78eb8"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-123-2.png",
+      "sha256": "be26f7fd66dfe6ded9baf9a39897d10835023d06dd29fcd809359787c333c6a0"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-127-0.png",
+      "sha256": "c47a7e5cfc0c61d5af8403d3a44ab4c1481530fc4c636c742df3007b7a647832"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-127-1.png",
+      "sha256": "ff0e1832b136944c1fe77d0876a2466a7e71486a3524f9fee33bdf4d93c2d86c"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-133-0.png",
+      "sha256": "13aa8b6f38c02ac608d5d11dc0447d83fe99f912e4f858f6e46f58e3da1e6164"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-133-1.png",
+      "sha256": "73f7436c5f81fd043ee83158e814694b00f0f8bc8d9db922aef242e372ae55f7"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-133-2.png",
+      "sha256": "d8eadbacc83bbc20c827ee7c6231011d9ef87267abe7a0472b992d8b3b396090"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-133-3.png",
+      "sha256": "50a12d5fa2ee60dda97bbf5ff143ea3aa5c998ba1a71e4ca3612b5cab07ec004"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-139-0.png",
+      "sha256": "ab45b0f62f341f207c088b981a3ec08a13f147d90fef84c1e5fb5fdb4655901a"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-139-1.png",
+      "sha256": "eb08a1332429a410477c9328a590de1295b5515d72e809abe54f93b3b63555d8"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/strip-139-2.png",
+      "sha256": "fcc728bd255cc00ccb62a56654343964b768eea2b116ac3db19103d376514b6e"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No1-copy.diff",
+      "sha256": "fdd48d425711282e1e126bf4f6db729f0da0bb14ba22473aef9aa3b4d439ebe5"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No2-copy.diff",
+      "sha256": "43f3c2ba03cac435c4bb0f881689f97d1a0abaa44f2d77b736d8d293f63b2a7a"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No3-copy.diff",
+      "sha256": "3c6db7b52acbd0d0ca981fabbd6d10d4b26f358046f03b9c0e789b1bdeba49d2"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No4-copy.diff",
+      "sha256": "da80d7255065dba5efadf56ba2f23d78112dc42ad4261b5600ce85a2238cedf6"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No1-corrected.txt",
+      "sha256": "d5b22f4ba7686441f89f9b6c82e3ae504c48a8912f8a3ae92ac4fc8b83688390"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No2-corrected.txt",
+      "sha256": "807ecbc6adf3a630ac5f04fee0257d206b8b6fa96af51fe4a48947e45d791664"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No3-corrected.txt",
+      "sha256": "5728dbe9dfb1adbe1f39ea72db93a843f82a9da86c601965daafcfdc15ca2e58"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/No4-corrected.txt",
+      "sha256": "a1f1568508f1005d62f5582de9846107fd7b5595e42ad333c5c1679c958296cc"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/remaining-reading-gaps.json",
+      "sha256": "10d9a45ffb8de8f0a65edb512c80b7b5881a397da97365df97a4eb54eba09421"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/reading-classification-audit.json",
+      "sha256": "e2b0add58d41141d674d135a80032f1c6c645eb33c3ed95a14de80345a31eb50"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/roadmap-refresh-evidence.json",
+      "sha256": "c7a5e47a031b159678aefa732e7c7e23f7f7fcd6de30a84b55bf3108598b7a70"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/reader-build-final.log",
+      "sha256": "a443b20f4fa0bb0a994c4fd445f68763d789f64519c45266cc96b91170ee7e2f"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/tests-final.log",
+      "sha256": "7ae77e4da4dba6e25e24176c4392b1dad6044fa0ed667d931522bd48a5b7da38"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/node-tests-final.log",
+      "sha256": "7812069ed37f14c9f5e60f14a1dacdfdc91a764d70b7c89cc93af6a0b854763e"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/verify_reader.py",
+      "sha256": "c67cd06218adcc4485b9c0386713634bc702409eccb1ec2e12ea1876157bd13f"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/reports-final.json",
+      "sha256": "2f575ebe75698ac7de563c0c14cd2b14c7bc90d2a0935bb4681b2487b0f974aa"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/regenerate.py",
+      "sha256": "9d92c6f9c13a4ba6fa91126fe00a1f0a395a36046c470689e471970f8ab347c7"
+    },
+    {
+      "path": "data/private/research-work/Montgomery1_4-native83-2026-10-03/roadmap-final.log",
+      "sha256": "9c08e8d3eaeeb1873cd0cdabdc93b195fff1c3442c257adf323fc7164c2784d9"
+    }
+  ],
+  "planning_refresh": {
+    "checked_at": "2026-10-03T08:52:32+00:00",
+    "planning_input_before_sha256": "65dcb17e75719391411515f64e83644d176a9905443675762a0918a66b1e738a",
+    "planning_input_after_sha256": "ccc79673306bca9f075cb6c340f5519b2e4ea5c91eeae4f1b38ac6405e8223b4",
+    "current_metric_evidence": {
+      "priority_identities": 1052,
+      "publication_referenced_priority_identities": 835,
+      "publication_assessed_priority_identities": 835,
+      "publication_no_known_priority_identities": 0,
+      "stale_conflict_instances": 48,
+      "untriaged_conflict_instances": 608,
+      "publication_keys": 37,
+      "publication_keys_resolved": 34,
+      "publication_keys_unregistered": 3
+    },
+    "unregistered_keys": [
+      "Ford-Abudraham2018",
+      "Lidzbarski 1902",
+      "Yamauchi 1967"
+    ],
+    "current_fixed_campaign": {
+      "size": 249,
+      "linked": 32,
+      "unlinked": 217,
+      "complete": 0
+    },
+    "proofreading": {
+      "total_readings": 1548,
+      "checked": 1432,
+      "partial": 115,
+      "unreviewed": 1,
+      "partial_project_English": 40,
+      "Pognon_French_already_checked": 31,
+      "Pognon_English_partial": 31
+    },
+    "planning_updates": "Supersede stale current-summary/priority counts and82partialFrenchhint; historical dated receipts unchanged. Registry gaps flag future CONC/SCHOL work, no registry writes or access-denial finding."
+  }
+}
