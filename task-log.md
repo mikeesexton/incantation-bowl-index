@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Ford native and McCullough translation source-copy corrections, checkpoint55
+
+**Claimed:** TEXT-001, TEXT-009, TEXT-010
+**Corpus:** changed (four corrected text rows and four append-only proofreading reviews; all earlier versions retained) — state digest `970a1b133a93`.
+**Tests:** 394 Python and 57 Node passed; rebuilt private reader 7/7. All 2,179 text contents/attributions/classifications/editorial declarations, 2,101 media assignments, 1,190 image hashes and 87 capture hashes/source assignments verified. Integrity/FKs, trial/production digest agreement, unchanged production replay and every receipt hash pass.
+
+- Opening clean corpus matched checkpoint54; project rules/literature guidance read and TEXT tasks claimed before edits. Consistent before-backup/trial retained. This and prior Goal turns are progress; original Goal active. Ten supplied documents including fgaf025 already processed, without duplicate intake or reset.
+- Visually checked Ford2014 full PDF13,14,19,22,23 and enlarged critical native passages. AS13 copied letters and restoration boundaries repaired; DAV27 omitted restored initial letter repaired; SEF1073 interrupted final token and spacing repaired, retaining the main printed reading rather than substituting a footnote alternative. All58printed superscript uncertainty circles (44/13/1) now encoded at their exact letters with U+030A combining ring above, replacing the prior inaccurate inferior-dot omission policy. Three complete native reading rows now source-copy checked; scholarly uncertainties/alternatives/lacunae retained. No clay collation, specialist certification or source-wide completion. Existing editor labels retain historical working-capture attribution; new reviews define current check scope. PDF23 photograph caption Davidovitz27 retained, not reassigned to SEF1073.
+- McCullough1949 DA5 full provided English anchors1–18 checked on PDF161,163,165 (printed74–76). Resolved one project H/M copying flag against the printed H; restored three omission runs to9/8/7dots. One smudged/overstruck Latin character remains partial with project capture flag and explicit clearer-copy/specialist requirement. Seven boxed divine-name repetitions and author sign placeholders retained in normalized layout. Native signs were not inferred; separate1967book acquisition request already queued, with no duplicate Miri request.
+- Two private proofreading manifests rehearsed then applied through CLI. Four new immutable reviews preserve complete original content/metadata/notes snapshots; only four current contents/notes changed. All other rows across39tables and prior ledger entries remain identical. Trial/production fingerprints agree; production replay changes zero rows. Current repetitive cross-object proofreading notes replaced by source-specific policies while originals remain in immutable snapshots. Public reuse remains unapproved.
+- Edition inventory1,452rows=1,318checked/133partial/oneunreviewed; corpus2,179texts,2,101media,1,190localimages,87captures. Fixed249cases remain31linked/218unlinked/zero whole cases complete, with all previous histories unchanged. HeldPDF57sources/52appearance-bearing/1,304appearances; historicalnative45gaps and Miri tenresolved/19requests unchanged. Updated content-free receipt research/receipts/held_reading55_source_checks_2026-10-03.json and private inventories. Protected texts, source pixels, manifests and complete before/after evidence outside Git.
+- Roadmap, seven reports/export and full private reader regenerated; state written; local commit only. No push/deployment/live-server restart/purchase/contact/scholarly or rights decision/reset. Next continue remaining partial native/source-copy rows and218fixed publication-reference routes. Goal active.
+
 ## 2026-10-02 — Codex — Schøyen Mandaic/Pahlavi edition routes, checkpoint54
 
 **Claimed:** CONC-004

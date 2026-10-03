@@ -1,6 +1,6 @@
 # Source proofreading progress
 
-Generated 2026-10-02 from the local corpus and current append-only proofreading reviews.
+Generated 2026-10-03 from the local corpus and current append-only proofreading reviews.
 This report contains counts and source titles only. The private row-level queue, including text IDs and locators, is `data/private/proofreading_inventory.csv`.
 
 A completed review means a normalized reading text was compared with its source pages or a quoted passage in a retained HTML capture. Checking a catalogue quotation verifies its reproduction, not its reading of the inscription or completeness as an edition. A review does not resolve scholarly uncertainty or grant public reuse. “Unreviewed” means no current review is in the ledger; some rows were manually keyed or checked by another process.
@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1315 | 136 | 1 | 1452 | 90.6% |
+| Edition text (translation, transcription, transliteration) | 1318 | 133 | 1 | 1452 | 90.8% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 719 | 727 | 0.1% |
-| All stored text | 1316 | 143 | 720 | 2179 | 60.4% |
+| All stored text | 1319 | 140 | 720 | 2179 | 60.5% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | translation | 690 | 43 | 1 | 734 |
-| transcription | 464 | 73 | 0 | 537 |
+| transcription | 467 | 70 | 0 | 537 |
 | transliteration | 161 | 20 | 0 | 181 |
 
 ## Edition text by source
@@ -69,7 +69,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 1 | 1 | 0 | 2 |
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
-| Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 3 | 3 | 0 | 6 |
+| Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 6 | 0 | 0 | 6 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
 | Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 37 | 0 | 0 | 37 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |
