@@ -318,22 +318,31 @@ def add_candidate(conn, record):
             ),
         )
     appearance_id = appearance.get("id") or new_id("appearance")
+    appearance_stamp = None
+    if appearance.get('created_at'):
+        stamp = datetime.fromisoformat(appearance['created_at'].replace('Z', '+00:00'))
+        if stamp.utcoffset() is None or stamp.utcoffset().total_seconds() != 0:
+            raise ValueError('Appearance creation timestamp must be UTC')
+        appearance_stamp = stamp.strftime('%Y-%m-%d %H:%M:%S')
     conn.execute(
-        "INSERT INTO appearances (id,source_id,locator,title,url,observed_at,description,raw_json) "
-        "VALUES (?,?,?,?,?,?,?,?)",
+        "INSERT INTO appearances (id,source_id,locator,title,url,observed_at,description,raw_json,created_at) "
+        "VALUES (?,?,?,?,?,?,?,?,COALESCE(?,CURRENT_TIMESTAMP))",
         (
             appearance_id, source_id, appearance["locator"], appearance.get("title"),
             appearance.get("url"), appearance.get("observed_at"), appearance.get("description"),
             json.dumps(appearance.get("raw"), ensure_ascii=False, sort_keys=True)
             if appearance.get("raw") is not None else None,
+            appearance_stamp,
         ),
     )
     conn.execute(
         "INSERT INTO appearance_object_links "
-        "(appearance_id,object_id,relation_type,confidence,rationale) VALUES (?,?,?,?,?)",
+        "(appearance_id,object_id,relation_type,confidence,rationale,created_at) "
+        "VALUES (?,?,?,?,?,COALESCE(?,CURRENT_TIMESTAMP))",
         (
             appearance_id, object_id, appearance.get("relation_type", "primary"),
             appearance.get("confidence", 1.0), appearance.get("rationale", "Source describes this candidate"),
+            appearance_stamp,
         ),
     )
 

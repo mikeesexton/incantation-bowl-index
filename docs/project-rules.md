@@ -288,6 +288,9 @@ Then read the top entry of [`task-log.md`](../task-log.md).
 - A new-source JSONL record may also declare UTC `created_at` to reproduce its
   initial creation/update timestamps during rehearsal and production. Replaying
   it never replaces an existing source's lifecycle timestamps.
+- A new appearance may declare UTC `created_at` for its appearance and initial
+  object-link rows. With an existing object, stable appearance/reading/media IDs
+  permit an exact new-edition rehearsal; replay retains the original timestamps.
 - If an archived PDF turns out to be a different work, keep the works separate.
   Repair its source assignment with `ibi ingest-capture-source-corrections`
   against a hash-bound manifest. The immutable ledger retains the complete

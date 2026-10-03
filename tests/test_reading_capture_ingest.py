@@ -70,6 +70,32 @@ class ReadingCaptureIngestTests(unittest.TestCase):
             add_source(self.conn, source)
         self.assertEqual(corpus_fingerprint(self.conn), before)
 
+    def test_new_appearance_on_existing_object_rehearses_and_replays_exactly(self):
+        other = sqlite3.connect(':memory:'); other.row_factory = sqlite3.Row
+        self.addCleanup(other.close); self.conn.backup(other)
+        record = copy.deepcopy(self.record)
+        record.update(object_id='IBI-TEST', label='Existing bowl')
+        record['appearance'] = dict(id='APP-NEW', locator='printed p. 2',
+                                   created_at='2026-10-03T22:00:00Z')
+        self.apply([record]); load_jsonl(other, self.path, 'candidate')
+        self.assertEqual(corpus_fingerprint(self.conn), corpus_fingerprint(other))
+        for table, key in [('appearances', 'id'), ('appearance_object_links', 'appearance_id')]:
+            row = self.conn.execute(f"SELECT * FROM {table} WHERE {key}='APP-NEW'").fetchone()
+            self.assertEqual(row['created_at'], '2026-10-03 22:00:00')
+        before = corpus_fingerprint(self.conn)
+        record['appearance']['created_at'] = '2026-10-04T22:00:00Z'
+        self.apply([record]); self.assertEqual(corpus_fingerprint(self.conn), before)
+
+    def test_invalid_appearance_timestamp_rolls_back_reading_batch(self):
+        record = copy.deepcopy(self.record)
+        record.update(object_id='IBI-TEST', label='Existing bowl')
+        record['appearance'] = dict(id='APP-NEW', locator='printed p. 2',
+                                   created_at='2026-10-03T22:00:00-04:00')
+        before = corpus_fingerprint(self.conn)
+        with self.assertRaisesRegex(ValueError, 'Appearance creation timestamp must be UTC'):
+            self.apply([self.record, record])
+        self.assertEqual(corpus_fingerprint(self.conn), before)
+
     def test_explicit_ids_cannot_replace_or_silently_alias(self):
         self.apply(); before = corpus_fingerprint(self.conn)
         for group, field, replacement in [('texts', 'content', 'Changed'), ('texts', 'editor', 'Other editor'),

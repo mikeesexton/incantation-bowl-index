@@ -18,16 +18,16 @@
 | Material | 410 | 21.8% |
 | Language | 1028 | 54.7% |
 | Script | 98 | 5.2% |
-| Text Edition | 565 | 30.1% |
-| Translation | 580 | 30.9% |
+| Text Edition | 566 | 30.1% |
+| Translation | 581 | 30.9% |
 | Image | 622 | 33.1% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 611 |
-| 3–5 of 10 | 948 |
+| 0–2 of 10 | 610 |
+| 3–5 of 10 | 949 |
 | 6–8 of 10 | 307 |
 | 9–10 of 10 | 14 |
 
