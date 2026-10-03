@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon I/J complete native-copy checks, checkpoint100
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — two appended proofreading reviews/two corrected native copies; digest `a2a4b03b4a79`. Opening clean/state matched99. Full originals/all earlier reviews retained;37 other tables/all1,880 memberships unchanged. Trial/production equal; replay changed no rows or digest.
+**Tests:** 394 Python +57 Node =451 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures and1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Gordon1937 Aramaic and Mandaic Magical Bowls native I/J copies checked separately on printed90/PDF8, complete own columns/15/17physical rows, anchors2–7/2–10, full closing and enlarged entire-word/gap controls. Edition printed86/PDF4 directly refers to1934printed321diacritic key; held earlier convention control retained.48actual inferior points exact (I13/J35):20correct existing positions retained,28new precise positions, five previous positions reassigned/two unsupported points removed; net21additional marks.
+- Three copied-letter corrections from print: I opening omitted vav; J extra vav in sealing word removed and copied dalet in damaged word changed to actual vav. Added omitted source single-letter pe restoration brackets in J; six-dot gap corrected to actual five. Complete control rejects possible extra vav before J spell word as empty-restoration boundary. Existing separate restorations/curly excess/other gaps/spelling/closing retained. No English/grammar/parallel/commentary supplementation or clay interpretation. Source-copy status certifies bounded normalized edition copy, not full-source capture/original-script recovery/whole cases. Source/editor/locator/language/script/rights/public0 unchanged.
+- Gordon1937 now10checked/6partial of16stored readings; H/K/L native andM/N/OHebrew-letter Mandaic transliterations remainpartial. H full pages/blocks prepared; original entire row/partial review unchanged, full inferior/angle/name pass next. All12stored Gordon1934/227Jena/77Montgomery checks retained. Inventory1,489checked/58partial/oneunreviewed. Both inventories refreshed/exactlytwo entries changed; remaining partials retain exact row-level notes. Frozen249 original members/histories exact:32linked/217unlinked/allattempted/zero wholecases complete/no new attempts. Historical45native gaps/40English projectdrafts separate;31Pognon French originals alreadychecked.
+- Allten supplied documents processed including fgaf025.pdf. Miri10resolved/26requests unchanged. No new access blocker/outbound message/reset/purchase/merge/rights decision/public approval/push/deployment/server restart. Protected expression/pixels/notes/manifests private outsideGit; receipt contains metadata/hash pointers. Lastten prebatch backups retained under recorded rule.
+- Goal active; continue complete GordonH thenK–O/other held readings and217publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0100_Gordon_I_J_native_copy_checks.json`. Receipt: `research/receipts/Gordon_IJ100_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon E/F complete witness-copy checks, checkpoint99
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
