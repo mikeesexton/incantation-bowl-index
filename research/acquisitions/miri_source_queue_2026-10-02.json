@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T07:19:02+00:00",
+  "updated_at": "2026-10-03T07:54:05+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -275,7 +275,18 @@
       "metadata_url": "https://commons.library.stonybrook.edu/amar/53/",
       "attempted_download_url": "https://commons.library.stonybrook.edu/cgi/viewcontent.cgi?article=1052&context=amar",
       "checked_at": "2026-10-02T22:01:56+00:00",
-      "previous_access_evidence": "Primary AMAR53record inspected; observed download returned403Forbidden in web tool. No PDF acquired or robots/paywall diagnosis asserted. Repository says may not be used commercially."
+      "previous_access_evidence": "Primary AMAR53record inspected; observed download returned403Forbidden in web tool. No PDF acquired or robots/paywall diagnosis asserted. Repository says may not be used commercially.",
+      "follow_up_evidence": [
+        {
+          "checked_at": "2026-10-03T07:54:05+00:00",
+          "checkpoint": 80,
+          "finding": "Internet Archive firstreport record explicitly Access-restricted-item true; no pages acquired. Separately second1933report also restricted. Exact KM31455 bridge remains unverified.",
+          "urls": [
+            "https://archive.org/details/preliminaryrepor0000lero",
+            "https://archive.org/details/secondpreliminar0000lero"
+          ]
+        }
+      ]
     },
     {
       "source_id": null,
@@ -433,6 +444,17 @@
       "preview_url": "https://api.pageplace.de/preview/DT0400.9781725223042_A40374051/preview-9781725223042_A40374051.pdf",
       "publisher_url": "https://wipfandstock.com/9781606081068/corpus-of-the-aramaic-incantation-bowls/",
       "previous_access_evidence": "Primary preview TOC text layer supplies locators (20starts64,next21starts66;22starts69,next23starts71); symbol key xiv. Preview ends introductory material. Screenshot cache failures mean no visual page verification or original reading certification. IA explicit access-restricted flag; no restricted endpoints or borrowing attempted."
+    },
+    {
+      "source_id": null,
+      "short_label": "Kelsey31455Seleuciaarchivalconcordance",
+      "citation": "Yeivin, Samuel. Objects from Seleucia Showing Its Daily Life. Undated unpublished manuscript. Waterman Papers1927–1936, box4, Bentley Historical Library (locator as cited in Passionate Curiosities p196).",
+      "requirement": "Permitted manuscript copy or relevant object-list/photo pages and exact KM31455/TMA1931.455 museum card/field-number/publication concordance. Confirm current Bentley box/folder; archive finding-aid link returned403. Catalogue figure concordance contains KM19504/KM33756, no KM31455 on checked p197. Manuscript not yet proved to contain this bowl. Kelsey2015 exact-object conservation post names excavation journals, object lists and photos. Obtain DiSKO2018.01.0502 official accession crosswalk separately; shared paired-bowl context is insufficient.",
+      "priority": 2,
+      "status": "unheld archival concordance needed; exact object content unverified",
+      "checked_at": "2026-10-03T07:54:05+00:00",
+      "previous_access_evidence": "Checkpoint80: complete held catalogue pp38–39/183/196/197 visually checked. Primary Bentley discover page opened; its Search Finding Aids link returned403Forbidden. No finding-aid body/manuscript/report bytes acquired or access bypass.",
+      "metadata_url": "https://bentley.umich.edu/discover/"
     }
   ],
   "acquisition_and_reading_completion_separate": true,

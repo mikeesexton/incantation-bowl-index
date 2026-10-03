@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "checkpoint": 80,
+  "created_at": "2026-10-03T07:54:05+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "6b735320f81a0e58c8d07bdb4b0eed61048d1a30b58c60cc712f58e14031a960",
+  "corpus_after": "6b735320f81a0e58c8d07bdb4b0eed61048d1a30b58c60cc712f58e14031a960",
+  "corpus_changed": false,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 1,
+  "new_proofreading_reviews": 0,
+  "corrected_text_rows": 0,
+  "partial_to_checked_reading_rows": 0,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1424,
+  "partial_reading_rows": 123,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/campaign_case_progress_checkpoint80.json",
+    "sha256": "71eae02dfd3f0fb10f57be776b860a115bdc814ac409f4daeb8986aa1a2c1b84"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/held_pdf_inventory_checkpoint80.json",
+    "sha256": "01c0ee5cb2f34048430f63a48402b067ad1ae837e1ece0599d9e32f70aef20e4"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/non_pdf_holdings_checkpoint80.json",
+    "sha256": "8a2785bfc2b13122327e4b3c0ae7956446d14db35c6f7ab7ac4c58b8f246be15"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 1,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint80: Kelsey KM31455/TMA1931.455 publication follow-up. Complete held catalogue printed38–39/183/196/197 visually checked; KM19504/33756 figure identifications and unnumbered paired-bowl context do not establish target edition. Note50 general references retained as pointers only. Newly precise Yeivin manuscript route Waterman Papers1927–1936 box4 cited on p196; Bentley actual finding-aid link403, current archival locator/body unverified. Internet Archive first1931/second1933 reports explicitly restricted, no pages acquired. Added one metadata-only archival concordance request for Miri and appended firstreport follow-up evidence. One frozen case history extended, all original249members/histories retained;32linked217unlinked/zero complete. Corpus unchanged;1424checked123partial1unreviewed. Ten supplied documents already processed; Goal active.",
+  "next_actions": [
+    "Obtain exact KM31455/TMA1931.455 object card, original field number, photographs and publication/conservation references from permitted Kelsey records.",
+    "Check Yeivin manuscript cited as Waterman Papers1927–1936 box4; confirm present box/folder with archive finding aid and look for field-number/photo bridge. No asserted bowl content until body held.",
+    "Obtain complete first1931report pp61–62/plates/lists and separately second1933report; match field numbers against exact museum card.",
+    "Keep DiSKO2018.01.0502 separate pending official accession crosswalk; obtain permitted visible/IR images.",
+    "Continue other217publication cases and123partial held-reading rows; individual archive access gap does not block remaining work."
+  ],
+  "protected_payloads": "Source images/copy observations/before snapshots/corrected scholarly text and ingestion manifests private/outsideGit; receipt metadata/counts/hashpointers only.",
+  "validation": {
+    "all_tables_unchanged": true,
+    "all_roster_hashes_statuses_refreshed": true,
+    "one_case_history_extension": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 1,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "miri_delivery": {
+      "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
+      "host_id": "durable",
+      "authorization": "Mike explicitly requested flagging inaccessible sources for Miri",
+      "message_delivered": true,
+      "turn_completed": true,
+      "recipient_reported_counts": {
+        "resolved": 10,
+        "remaining_requests": 26
+      },
+      "recipient_reported_local_queue_used": true,
+      "recipient_reported_no_shared_file_or_corpus_edits": true,
+      "remote_tracker_files_independently_audited": false
+    }
+  },
+  "review_manifests": [],
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0080_Kelsey31455_archival_routes.json",
+      "sha256": "cc0126170746b492c280f3f8219a82c124e7a3e2a5637d637e048351a17140d4"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/campaign_case_progress_checkpoint80.json",
+      "sha256": "71eae02dfd3f0fb10f57be776b860a115bdc814ac409f4daeb8986aa1a2c1b84"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/case-before.json",
+      "sha256": "d8871353917c070139aefd814c70638b45b58b02c178b03549e167a2c0dbebd5"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/corpus-verification.json",
+      "sha256": "38cc28c790dbb98445d9940b685d0e93200e9508d08331cd99052a45c1af49c0"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/held-context-search.json",
+      "sha256": "6db7f99b13eb0a2dd17920b565ca90de9f30f4502b8f7c3d72acd880559d9bfe"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/held_pdf_inventory_checkpoint80.json",
+      "sha256": "01c0ee5cb2f34048430f63a48402b067ad1ae837e1ece0599d9e32f70aef20e4"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/miri-queue-before.json",
+      "sha256": "c004be9b951c066fcd4fb40c0777859208e497d9887e82e521e41b82c651b676"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/non_pdf_holdings_checkpoint80.json",
+      "sha256": "8a2785bfc2b13122327e4b3c0ae7956446d14db35c6f7ab7ac4c58b8f246be15"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/routes-evidence.json",
+      "sha256": "21c610dc070d9b64173fa799f4008da8c14d163593daa3a7de3295f646ab0608"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-194.png",
+      "sha256": "7d9878573fa54d4a04e9142e9e6756da7a2f67865ab5bda32e38778d38b8f505"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-207.png",
+      "sha256": "6c654c52e450f846ddd63ca03237b5d9e925f3037303db291a8398adca4a3f4a"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-208.png",
+      "sha256": "8a9d4dc2a4c1211cd394690294a2e5c43efa587991a64356ac5afe389b47b137"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-49.png",
+      "sha256": "316b0e31cb4948c66ebeccf20911c31aad0954b5189894c76ab4c9facbf43cd0"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-50.png",
+      "sha256": "2eba083bf1897d67ca994cfc90a106c374171d822d32c42e8907592ac13d1a67"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/record_checkpoint.py",
+      "sha256": "ee628e4a76824b74a5f2577e2753ea37be48e18f331d6607f307147c0f793036"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-108.txt",
+      "sha256": "ca03e102274b6ca04948a836871a495de57431a343b5a16514a087f98f197e72"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-109.txt",
+      "sha256": "9b8d48925c814794040b4b4c92d24a2c9163f59957769868339940d7113bee15"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-11.txt",
+      "sha256": "41472ac0025f9de5b93e4ea52885749931a2ed8431550bf39102d5c39efb163b"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-110.txt",
+      "sha256": "42c97062f5766b5276c87c1de0299f89c1e818097aedd2621e51865d0563ebd0"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-111.txt",
+      "sha256": "057c7ea05c062daa1fe3277ce2eff16f5895e5961d06ea84656fa17616c36451"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-112.txt",
+      "sha256": "23235f44313490e85701a7e11527068d260e8c9045d0898bc171e5ff2e199ba7"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-122.txt",
+      "sha256": "f43df61541a3d3b73463a9571898018046acaf31e570fe427de69c6612cdb6d1"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-127.txt",
+      "sha256": "3cd9fa619a6280370822d0cde3febe51ae7520bbaf4c78d7abf7e4ff723f1856"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-140.txt",
+      "sha256": "7954a542f737de2d85ecbe3efb40e2fe3e7b233c945ce8a70d6f4e08ab7295ad"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-141.txt",
+      "sha256": "1d33ad573453fa65bb02112445e995a99d1022784c906c168b20061fbee8bdd0"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-146.txt",
+      "sha256": "c6e57b8e0826455449d5b2f527ccba0bd030aed13c8261facebf0b9786a5f23c"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-147.txt",
+      "sha256": "0286ccba27c246a07cbd09891f38cfc17b2a9edca4e6a066c20d839708472764"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-149.txt",
+      "sha256": "1cd43ed214698dc19e74f1a11149f04f45eea8286c32701e801097219db80abd"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-15.txt",
+      "sha256": "e74a241ec10c5d519f15b459e2f4bd0c57ae75c8b64a8cb3a520dbba1d6a1d86"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-180.txt",
+      "sha256": "4cd11caa5c9fcd500f5dc199d66e469fa36f576de86717bf51da55b9982e6da9"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-194.txt",
+      "sha256": "8dc2a7aabfeecd212ef9aed98f8856d3ceb386835545353cbe266e435a6c9085"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-195.txt",
+      "sha256": "2287cc90a25c3d3d380333d19f9a04b6c31d4444446746cd5e490d12fb4e32fb"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-196.txt",
+      "sha256": "f30e0c66c8c54e92e0cee96b3243079eaf74e320c0105fe545b9638b6244803e"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-201.txt",
+      "sha256": "d3c1cadd9e8e15c18f2eeeb0e2bc86452cd48e83db29505ea10930731c8acca8"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-202.txt",
+      "sha256": "44c1fc415a19cad4a629cace6e8272d5cd722c828a369f1e338caad937cca78d"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-203.txt",
+      "sha256": "5d7dab83d8a427d0f7ac0d2f35f6690504d29d72ed5502534c9d70485eeb8bf7"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-204.txt",
+      "sha256": "0491922b8742bd0fb6d7466968527ca9a43bee1bb17837f0c0267640efe26d66"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-205.txt",
+      "sha256": "5223cb6bfb66aa5499b49ddc188bad34f6065a95b30a6855d3fc5266bc26ee86"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-206.txt",
+      "sha256": "3a01d4779d898bd7706d5c1f92c5610dc9b56297e94a9988327f592fa328d1eb"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-207.txt",
+      "sha256": "931c90de4e8bfb74d79c000813b2d22fcdacf27666f400fd2bf382c8f62c9743"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-208.txt",
+      "sha256": "ed4eb8e89e579e0a33da3510bfbdff0e65ea800ee50ce61cf9adfb84e41956f4"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-213.txt",
+      "sha256": "490c6f24531470b5b288cf72e263200068187e3aaa0ee8cb7d623879169cf5b3"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-215.txt",
+      "sha256": "29889f3bbed1a821d9a70365b0879d129f0cdf8b69467f5dc89a763e6681b3c5"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-216.txt",
+      "sha256": "4a8304aec6de06ccf18722545cd75ef3434b7dbce11571a6d902541ecc70d566"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-47.txt",
+      "sha256": "96dc4aa96f089c203dbc2b395751bad41a52049b84c50780119b020aaa2f2de6"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-48.txt",
+      "sha256": "4067fb321f187c069f2eba5ef066f1f207cf50046dfeb60d772eb270e6ff35d1"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-49.txt",
+      "sha256": "f564875f1e5b8b79a8c95ceb989b81bfa3dd98343b47f1468484dde5e0997f4a"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-50.txt",
+      "sha256": "8c9f39525613291ca8bb673597db493ba5ec33af765c0de856b8a568ef87c4d9"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-51.txt",
+      "sha256": "f421320034f5188aeb57fe159227d9fd472bb86ad773123fc6708edcb277155c"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-52.txt",
+      "sha256": "811e13d0654e3e0bb28b3049bdddd34ca505d53a249ad0b0394afed1d856f684"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-53.txt",
+      "sha256": "2fd09d7a3cdea11ae549f2939558ae751ad7cfa44d4d1f26b3058284895e95f7"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-54.txt",
+      "sha256": "449388b7313c3a35e6fc4e6a002fc38c4fe6ff0e5f278043bfdd9d43150e10dc"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-57.txt",
+      "sha256": "5ce41fe358a3de0de0652b963e4dd39901d9f708d78ff38b91189066f650e7b6"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-58.txt",
+      "sha256": "b14710157a23f0a76e9575d26fe37684c0f5a70734fe7bf126b8ef7ffadc4bc2"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/page-7.txt",
+      "sha256": "77e90564462a6525bbe242712ba331bd3aa9355668792ee799a820171888c8cc"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/reader-verification.json",
+      "sha256": "3e802602dceb61869ea45383d5dec9c6d07a30f4966a0d3eb17481d990f27583"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/reader-build-final.log",
+      "sha256": "264b32f289f92244c6943c11e08a30ed69e854a7787d58a516004bf4d20d5dc5"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/tests-final.log",
+      "sha256": "47579c825c4929aef3f1f1e71d777e7fb4f151be485dafec5d5829d85451e747"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/node-tests-final.log",
+      "sha256": "1dc9ea13d720db7b2d11fda11b852cf7d4031a9da2a6eacb5d96a0cee6d976cb"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/verify_reader.py",
+      "sha256": "7753a71feb91a85f3c5fcf19890081d3b7d306bd97f90a7c3c9df022dd213692"
+    },
+    {
+      "path": "data/private/research-work/Kelsey31455-routes80-2026-10-03/miri-delivery.json",
+      "sha256": "fd62108785270e1bd0d8e475dbc7d4a74b11d5bd986e01b75c867da20a249295"
+    },
+    {
+      "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+      "sha256": "3690ab9270e284ca70b7c79fc5f1df8cf36ba768686c66ccc8d9aadaa62a6a99"
+    }
+  ]
+}

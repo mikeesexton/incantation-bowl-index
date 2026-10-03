@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Kelsey31455 archival routes, checkpoint80
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** unchanged — digest `6b735320f81a`; opening state matched checkpoint79. All 39 table fingerprints unchanged; no database writes.
+**Tests:** 394 Python + 57 Node = 451 passed. Subsequent sequential private reader build 7/7; all 2,283 text contents, attributions, classifications and current statuses, 2,143 media assignments, 1,232 image hashes, 88 capture hashes and 1,880 identity memberships/counts verified. Roadmap regenerated from planning input; unchanged corpus reports remain current. State recorded.
+
+- Followed frozen KM31455/TMA1931.455 publication gap through the held Kelsey catalogue and primary report/archive routes. Rehashed complete 217-page holding, broad text-layer context search with 40 matching pages, then visually checked five complete pages: printed38–39/183/196/197 (PDF49/50/194/207/208). Caption names KM19504; figure concordance names KM19504 and KM33756 but has no target entry on that page. Unnumbered paired-bowl/eggshell passage and general note50 references do not establish an edition for KM31455. Bounded negative evidence retained; no current no-known-edition finding or sourcewide visual audit claimed.
+- Newly precise archival lead: Yeivin, Objects from Seleucia Showing Its Daily Life, undated manuscript cited in Waterman Papers1927–1936 box4, Bentley, catalogue p196. Manuscript body/target mention and present box/folder unverified. Opened Bentley's own discover page; actual finding-aid link returned403Forbidden. Exact Kelsey conservation article names journals, object lists and photos. Request permitted target card, field number, photos, publication references and manuscript concordance. Keep DiSKO2018.01.0502 separate until official accession bridge. January2015 crust hypotheses and later gypsum findings retained dated separately.
+- Internet Archive first1931 and second1933 report records explicitly restricted; no report pages acquired. GoogleBooks volume/extent metadata inconsistent, not used to adjudicate reports. Indexed open Debevoise1934 publisher record returned Cache miss on opening; no book body or availability denial inferred. DiSKO collection link returned InternalError this turn, distinct from prior47 actual403. No download/access bypass/image capture. Earlier individual search strings/counts not fully retained across compaction; four recoverable exact queries and actual primary route outcomes recorded, no comprehensive sweep claim.
+- Appended one frozen-case attempt and specific next actions; all original249 members and prior histories retained. Independently32 linked/217 unlinked/all attempted/zero complete. Refreshed held PDF/non-PDF roster hashes and statuses; zero rows changed, 1,424 checked/123 partial/one unreviewed readings unchanged. No identity decision, merge, inscription or translation acquisition, new source-copy check or reuse approval.
+- Miri queue10 resolved/26 requests: added one archival concordance request, appended firstreport restriction evidence without duplicate request. Authorized metadata-only follow-up delivered/completed; recipient acknowledges local queue and counts. Remote tracker files not independently audited. All ten supplied documents previously archived/processed, including fgaf025.pdf. No reset, institution contact, purchase, push, deployment or server restart.
+- Goal active; this turn made verified case-route progress. Continue remaining publication cases and partial held-reading rows while acquisition proceeds. Receipt `research/receipts/Kelsey31455_routes80_audit_2026-10-03.json`; private checkpoint0080 with source pages, route observations, original queue and prior-index hash.
+
 ## 2026-10-03 — Codex — Montgomery25 final copying checks, checkpoint79
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
