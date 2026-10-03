@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Four native Jena Mandaic blocks checked, checkpoint96
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — four appended proofreading reviews and four notation revisions; digest `b1c6b0f5e904`. Opening clean/state matched95. Originals and earlier reviews retained; 37 other tables and all 1,880 memberships unchanged. Trial/production digests equal; replay changed no rows or digest.
+**Tests:** 394 Python + 57 Node = 451 passed. Subsequent private reader build passed 7/7 audits; independently verified all 2,283 text contents/attributions/classifications/statuses, 2,143 media assignments, 1,232 image hashes, 88 captures and 1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Native Mandaic blocks37–40 compared with eight full edition pages215/216/217/220/221/224/225/228, complete enlarged blocks, SiglaPDF23 and fragment contextPDF227. All2,125 native base letters match and remain unchanged;69 numbered anchors/116 physical lines checked.68 exact gray preservation positions previously represented by project underdots now use preservation corner markers; three printed ellipses normalized to U2026. Restored letters, source parentheses and actual two-dot gaps remain separate. No new source mark or consonant inferred.
+- Custom embedded font/ToUnicode aliases and glyph outlines independently inspected. Native Unicode normalization retains consonants/ligature; original font/allographs remain in archived pixels and private controls. Two bracket-named font glyphs have zero outlines/ink and are not restorations. No37/17 small glyph baseline offset remains one numbered line, no invented45th. No40 Latin loose-fragment/exterior8 passages remain separate from the native main text.
+- All227 currently stored Jena reading rows source-copy checked; all77 Montgomery checks retained. This verifies stored bounded copies, not complete source capture, clay interpretation, complete underlying TMHC editions or whole cases. Source authors' name variants, aleph/heh choices, fragment placement and competing reports retained without adjudication or grammar/English/parallel harmonization. Originals and earlier reviews preserved; source/editor/locator/language/script/rights/public0 unchanged.
+- Inventory:1,481 checked/66 partial/one unreviewed reading rows. Both inventories refreshed; exactly four target entries changed. Remaining rows grouped with exact source notes; next held-source targets are six Gordon Istanbul/Baghdad native copies. Historical45 native gaps and40 English project drafts remain separate;31 Pognon French originals already checked.
+- Frozen249 original members and histories retained exactly:32 linked/217 unlinked/all attempted/zero whole cases complete; no new frozen-case attempt. Allten supplied documents already processed, including fgaf025.pdf. Miri10 resolved/26 requests unchanged. No new access blocker, outbound message, reset, purchase, uncertain merge, rights decision, push, deployment or server restart.
+- Protected expression/images/font controls/manifests remain private outsideGit; receipt contains metadata/hash pointers. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0096_Jena_native_Mandaic_checks.json`. Receipt: `research/receipts/Jena_Mandaic96_audit_2026-10-03.json`. Goal active; previous/current turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Eight remaining Jena quotations/apparatus checked, checkpoint95
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).

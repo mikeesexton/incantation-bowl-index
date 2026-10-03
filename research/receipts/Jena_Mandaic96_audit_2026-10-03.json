@@ -1,0 +1,566 @@
+{
+  "schema_version": 1,
+  "checkpoint": 96,
+  "created_at": "2026-10-03T14:05:21+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "bfe0dfda9c41338712a1da1cca0da4d959aec06bd6afb0a09eb1e5d4daf56ce0",
+  "corpus_after": "b1c6b0f5e904fb17ca2fe3941cddc8accf75be07b3f97a242e5c7590f34893f9",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 4,
+  "corrected_text_rows": 4,
+  "text_rows_with_unchanged_wording": 0,
+  "partial_to_checked_reading_rows": 4,
+  "base_letter_correction_rows": 0,
+  "native_base_letters_checked": 2125,
+  "numbered_anchors_checked": 69,
+  "physical_lines_checked": 116,
+  "source_gray_glyph_positions": 68,
+  "project_underdots_reencoded": 68,
+  "new_source_marks": 0,
+  "printed_ellipses_normalized": 3,
+  "blank_font_aliases_verified": 2,
+  "distinct_main_blocks": 4,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1481,
+  "partial_reading_rows": 66,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/campaign_case_progress_checkpoint96.json",
+    "sha256": "e70814b5f55fe8e46812395e51fb0f592b26dd883b6bb280e4d33e6f2e270bfe"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/held_pdf_inventory_checkpoint96.json",
+    "sha256": "d749621ba2c6083b5fa9bb5b99d2b222316ee2a97f4974784038df7896ec638f"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/non_pdf_holdings_checkpoint96.json",
+    "sha256": "160e1c4ab45ecf80b268b0480ad1fd1867f0cb180f88fec99fd3afa07a317adc"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "native_script_recoveries": 0,
+  "scope": "Checkpoint96: four main Jena2020 native Mandaic blocks37–40 fully source-copy checked on eight complete held edition pages215/216/217/220/221/224/225/228, source SiglaPDF23 and contextPDF227. All2125native base letters unchanged;116physical lines/69numbered anchors complete.68exact gray preservation positions reencoded from earlier project underdots to corner markers and three actual printed ellipses normalized to U2026. Embedded font aliases/allograph normalization documented; two bracket-named blank glyphs independently verified to contain no outlines/ink, not restorations. Restored letters/uncertain readings/source-specific two-dot gaps retained; no glyph inference, English/parallel harmonization or scholarly adjudication. Source author fragment placement/aleph-heh distinctions kept as source reports. Latin detached-fragment/exterior8 copies remain separate. Four appended proofreading reviews preserve originals/all earlier reviews;37other tables/all1880memberships unchanged, trial/production equal, replay zero/allrows and digest unchanged. All227currently stored Jena reading rows checked, all77Montgomery checks retained; this does not certify full-source capture, clay, complete underlying editions or wholecases. Inventory1481checked/66partial/oneunreviewed. Both rosters refreshed/exactlyfour changed entries. Frozen249 original members/histories exactly retained:32linked/217unlinked/allattempted/zero wholecases complete, no new frozen attempts.45native gaps/40English projectdrafts remain separate;31Pognon French originals already checked. Miri10resolved/26requests unchanged, allten supplied documents already processed. No new access blocker/message/reset/contact/purchase/merge/rights/publicapproval/push/deploy/serverrestart. Goal active; next remaining held source readings/translations and publication-case routes.",
+  "next_actions": [
+    "Continue remaining66partial/oneunreviewed reading rows in other held sources, prioritizing native inscriptions and direct scholarly translations separately from40English projectdrafts.",
+    "Continue217publication cases and separate45missing original-script captures; preserve dated negative notices as follow-up leads.",
+    "Flag newly inaccessible primary sources for Miri with precise source/item/locator and attempted routes; current26acquisition requests remain active."
+  ],
+  "validation": {
+    "corpus_before": "bfe0dfda9c41338712a1da1cca0da4d959aec06bd6afb0a09eb1e5d4daf56ce0",
+    "corpus_after": "b1c6b0f5e904fb17ca2fe3941cddc8accf75be07b3f97a242e5c7590f34893f9",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 4
+      },
+      "texts": {
+        "removed": 4,
+        "added": 4
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/Jena_Mandaic96_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 4,\n  \"public_approvals\": 0,\n  \"unchanged\": 4\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Jena_Mandaic96_2026-10-03.json",
+      "sha256": "fd0e2281487315119e343412c2cd8eb86418fb2d4c11f56d82c6a7a1fd6efab4"
+    }
+  ],
+  "protected_payloads": "Source images/quoted scholarly expression/observations/before snapshots/corrected text/manifests private outsideGit; receipt metadata/counts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0096_Jena_native_Mandaic_checks.json",
+      "sha256": "a554f4713a7fe7bcfd95b5ab3dfd54bd8ecb521644dd7599b67c2834232e6add"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/37-source-physical-lines.json",
+      "sha256": "93e8d6870cf89af80585efe98746d5a3fb0365af864db8e66fb8ae1bfc4f0a1f"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/38-source-physical-lines.json",
+      "sha256": "7566855f599d352d4b538c3600f8c8e525a68ba916f08b12bebff9f438d15140"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/39-source-physical-lines.json",
+      "sha256": "598b4c6ca39c87d6d34e8d41ed25efaf0bef96668720e7a6b85be0b8f0b759c7"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/40-source-physical-lines.json",
+      "sha256": "3a7f5134fc79f26bb306f55ad53d3845166e0f5825cfdc7786f2abea5dae3624"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/backup-retention.json",
+      "sha256": "94194c304479f8249f9c2e727ff1e902c42f058715cd2af05c2db3ec5f30c5c7"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/campaign_case_progress_checkpoint96.json",
+      "sha256": "e70814b5f55fe8e46812395e51fb0f592b26dd883b6bb280e4d33e6f2e270bfe"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/crop-provenance.json",
+      "sha256": "0a61a2258b990d849333588c1afb73116de9d7625d697c43361cbcde135c289a"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/font-decoding-map.json",
+      "sha256": "5be20f1b3edb9a96813c15c1bcc8ceabadeca1e1d4ef64f79a7babc805d01ae4"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/held_pdf_inventory_checkpoint96.json",
+      "sha256": "d749621ba2c6083b5fa9bb5b99d2b222316ee2a97f4974784038df7896ec638f"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/inventory-refresh.json",
+      "sha256": "e7767dc65e312aebc3d95f6c9f39795cb420c4bcc5e9800bd460c5c5cade1a7d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/metadata.json",
+      "sha256": "63949e16a8cb8579d9af0feddf6a2b71ae847af0f0b5140792353ca504649968"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/non_pdf_holdings_checkpoint96.json",
+      "sha256": "160e1c4ab45ecf80b268b0480ad1fd1867f0cb180f88fec99fd3afa07a317adc"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/production-verification.json",
+      "sha256": "9cb745e5aa26297844e97b6a27711cd579fd592486f0e4398e51632b36073bb9"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-215.json",
+      "sha256": "9316fb92c08b2c57ada036a7e2cd3365f01249bbe4e101557aafcaa785ec7850"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-216.json",
+      "sha256": "7742528020f82a26ffef478195cc65b132161a9f2e29363d6ca8ff3b53902b68"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-217.json",
+      "sha256": "6161858e96749d95d557abdf0b20f155c045deb3a502e4979f1a721335212f17"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-220.json",
+      "sha256": "8754faeb5049791418bf6fbf5590b62a74d8e50f0ede371835e1ce594f3135f9"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-221.json",
+      "sha256": "4f41d7fff49e6f8baa8f7ecb948a7bb6a42b3934cc3b2b4718e6d09c160a35e8"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-224.json",
+      "sha256": "052a6ab7c659a2c024589a007b876fdfabcf1f1635f3265c8c2de1ec64f57aff"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-225.json",
+      "sha256": "57f1010a9ebceda9579c9285df15b11819ace10c24a084f9d83fc5ebed3452e2"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-227.json",
+      "sha256": "9eb7eebcc337eb055855a8e6c9df65a65bc9ce8d7361b8f7c8cc50e933a9a8d0"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-228.json",
+      "sha256": "81b9987b8459c00b795d862eab92c1fa0f63ed04d07d43341a68f31c7200c771"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/raw-23.json",
+      "sha256": "ca08960f48082d9e45c9dbdc685f7a82c424889a39ddd283e19e98a0c85781af"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/render-provenance.json",
+      "sha256": "2db88cfdb06a6db061bd0513627ed7c088a7388e6b0ed528e13f318a4f840e9e"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-boundary-comparison.json",
+      "sha256": "5e5befcaafc4c72b8ace8439cc814779e60b6ad0c4fbf144066f6e2c8ef08db7"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-copy-observations.json",
+      "sha256": "6791eb5750e8e27cb53b199225ef7b16565a9e816f95f6b63a8f6cfb69b544fe"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-font-outline-controls.json",
+      "sha256": "c2e796ff555d82a2edbdd35fadcf3139911b7e04e8fd4c9b8a77196dd8a28719"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-glyph-comparison-before.json",
+      "sha256": "de3c1bd01db004da918c86e2b6a324a3dee2d5a61b1cd45e4586356d6c0d6617"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-glyph-comparison.json",
+      "sha256": "08ea7dd437e34f76eecf636f771da79d55e693c3013992d247700b4105e516c7"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/targets-before.json",
+      "sha256": "95486bec42fa604b0994f1ba1d936b12423161c46bafa746613c32ce7198dc03"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/trial-verification.json",
+      "sha256": "ad56aa98fc626929eb493f512c9d7ebd94b32285a336d87004c4d4d2576bc039"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/check_boundaries.py",
+      "sha256": "2c543c142a50408f50823c0b57ecfb2641015bbce2b3747b2b923ab94332d87c"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/collate.py",
+      "sha256": "cd37d7e78b1e0409d865c73068a477abb1ea206022e2e204912184c5aa546917"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/crops.py",
+      "sha256": "994dff107248eef10e4d76b928a7386173babfc0e8c43d894e9b4582f61e5dfe"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/extract_font.py",
+      "sha256": "cdc27218743ce797d6c286c6949a218e6c2dc9b5f8872dbb09f3846ca3563440"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/font_controls.py",
+      "sha256": "6c4b12e9543d4043dce539e0877f43b8418b46b7911006ff2b5df9d6fae8f044"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/mark_gray.py",
+      "sha256": "8271c9113c2ebfebb55e9c6e8ae65bb48831233cae5e1c48afbc15a269a8cf0c"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/prepare.py",
+      "sha256": "e8c9e31994f8d87f3ed21b1ffa76b8a5d0c5885046c72d1adee2eda074ad7b36"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/record_checkpoint.py",
+      "sha256": "cebfcc242665115ac7c95c8455a9b5eb6a4e3f690eb55fe70712b702a594e41d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/regenerate.py",
+      "sha256": "f9c4961623b5239c88db52a566b6dedf53c4deca8f0808565682cb957a70400c"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/render.py",
+      "sha256": "e6975034a9944bcd12ab2838d448695d6433f28f2858da9e52dabda36d0ef940"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/verify_batch.py",
+      "sha256": "3e644ec159e962f4cba237173057a1e9ae933bd4f91d81bbced185a5a0dac3b8"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/verify_reader.py",
+      "sha256": "32f9432c26aa4542a76a7fecbabbfcc316dac4924b3bbad8d120d399050a2a56"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/bracketlike37.png",
+      "sha256": "c8025b46a43f08913bbd0d095899af4d64c15f9b5869538d0c3a73b50e89c3a0"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-215.png",
+      "sha256": "322dcfc2ea239cd349dbf8000ee6b4a01504e72f5ee59b547d7c51fd7ab6c086"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-216.png",
+      "sha256": "a1e70e6121c6fe4814e12bc15fedf3e9d849d9097c0ac775538203ea482b5548"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-217.png",
+      "sha256": "199bc55af2679ce78b33f880c809d7bd30fe6dd1f360b1234220a38ed053d923"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-220.png",
+      "sha256": "73dc906efb50ed519320485d0f1597dbd138300bd709d5007868735484c93f4d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-221.png",
+      "sha256": "1c0af95ec81da69427a605b161cd28d7f0888cdf3e381800559400e0112057f9"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-224.png",
+      "sha256": "ec820802dc1ab5ca1f28c204d0bb93b07a3aabce18c07dd98089af0ba040cb34"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-225.png",
+      "sha256": "96ca7d54dd787a250c5658e2d6b58a8a5f18a48bcd1baaad646479fd250606e8"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-227.png",
+      "sha256": "28eba3d5d47c2edfa8338c3c329cec87c48fb148673a940ef4680d11e2f43771"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-228.png",
+      "sha256": "1a14cea33824779dc1c377f5dde433d52baae1e4870f38f969216f764b3f8413"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/large-23.png",
+      "sha256": "ba072b2ecddc9b5c52ddcc4e723cccc9c171203ae6ce69699fcf97fb1ff9fb2b"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-215-complete.png",
+      "sha256": "fc2fdb8c930bc2f6c31b37d2616a88ddc2a085dcb9801f41740b0726aafe8c87"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-216-complete.png",
+      "sha256": "621dee801f4f22690d4033327f95ef5ce2fd1bad502be37eb45a39cba56b534a"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-217-complete.png",
+      "sha256": "c946586d4ced9a1372a10f5cff790136f2937bef35ce8d0322b71d30b4ed3181"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-220-complete.png",
+      "sha256": "5e1458a87f89370e83eb8ff576cdd90f1663bdf4c756f2b08f95f6e836913149"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-221-complete.png",
+      "sha256": "af8ae64433bde2be1d591ccad8b8f439fd2fa3e23f1aabec2f9872402fce514f"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-224-complete.png",
+      "sha256": "29c85e378a5bf759e7f0c4f0ac556d6770a6b8fbe4bef94c28ebad99a655b7d6"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-225-complete.png",
+      "sha256": "d9a30f1875ef20559fa78c7da1d407338b7fc3a5d9cf041f4c8ebe3c451bfde5"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/native-228-complete.png",
+      "sha256": "5cbde01b33a24bb7f5d4b71d0921502936e2a32d56203e71ce08acec9ae595c3"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-215.png",
+      "sha256": "b9b0b2802335cb2cf2fc5dd1054d7f97848224f4e8ab3273dd4ac00a00299385"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-216.png",
+      "sha256": "07cfa5a3a7fb34ee663af67f7c9506147e261fde587a4e4135436360bb0a5bef"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-217.png",
+      "sha256": "7b990ffb90f9f448c1d9d2094ccc26df4348baf853309da57f7fc50e4137ffed"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-220.png",
+      "sha256": "9103f2ed96b8261bf1b485660b50c394b51e9797a5b377e1025b24ffddd2aeb2"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-221.png",
+      "sha256": "4c51678dcb7b82819807583d26daea919e619d4bd8a81622d159eb1a50b8e89e"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-224.png",
+      "sha256": "1029f049759b020a582cad6328b89caab81d0e653796e4216c5bfab458d02793"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-225.png",
+      "sha256": "ee93182d6c9f3e899102dc80374933a1dbf796cbb235885f4b24274fc686d311"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-227.png",
+      "sha256": "49e028ee26794cb3856e0499d0e0028812cac9adf58740d301d85f28228dc58f"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-228.png",
+      "sha256": "64cc4ff2a1c2c941079cd3905bf83024649c05808f2812532bad2e0320032235"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/page-23.png",
+      "sha256": "aaaca2400ff1d63c8bcc00a55a83600e97f0515fe228483412aa313f400fe44d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/shifted17.png",
+      "sha256": "996426d273eb99976233817aa53d18638a96075f1001d3f9516e5f76c5bc6fc0"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-3355197A0358-copy.diff",
+      "sha256": "3322f86bd9b115bb4f24d6e19d793e1cd61c0e6c3fc0d1dcadd20797351ff74d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-8381287E09DD-copy.diff",
+      "sha256": "523240c138d7d959e056e3f50d432293c6eeaf98b05c1f17c8b85c127fe5b960"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-BA630D000E75-copy.diff",
+      "sha256": "2ed56d8df727d857f8b3cdcee82002ef5db95e812c53b223d94f858d5da3755a"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-C32C236C1F60-copy.diff",
+      "sha256": "2020423cd2ab61551b0ead1862571af4ade78ae1fd4eddd2f084bf4ffda85ab3"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/37-before.txt",
+      "sha256": "fd7fedfeda23665045ae31f66b0db5899e9484518c4478f9a06be20a10ff9a0d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/38-before.txt",
+      "sha256": "67c1df5f8f215290b2f25dea6116e8dfdb0cf63d30c0e45c21adf043b32eb8bb"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/39-before.txt",
+      "sha256": "dd6269a7058ac996b9b1d775b95e9077a9b52bc03611e718c01a14091dbaf785"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/40-before.txt",
+      "sha256": "3250c9f5ee76a059bebc1601c456ad699464037472c8d9e34f49bbabbb180ba3"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-3355197A0358-corrected.txt",
+      "sha256": "b8216152e1d094f4b086ab7ab82ed7c7193d3a9ed9064f7c33ea547039525f84"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-8381287E09DD-corrected.txt",
+      "sha256": "46173d83b0eb5f9169cda4769b606e3a5cd0b56ca6879ee011a8f6cde3ae1fd0"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-BA630D000E75-corrected.txt",
+      "sha256": "dd23afacb747eb6d5f9b7d702b3d7e0d61a86d004a6649a1cbd3a11106921db3"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/TXT-C32C236C1F60-corrected.txt",
+      "sha256": "67da29a2c946dbd7c482f3411496947f7f8a21e7aaa6b0688e22d9bc8c169bea"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-215.txt",
+      "sha256": "d2aa0762e11216f705c3340a96d5af64961e2e4620940c1e127a671e7dd1843f"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-216.txt",
+      "sha256": "bb90b4f75863f5ad1bb475bca93cc793f177c0d3ec87c9cb846e6d59ecbd8967"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-217.txt",
+      "sha256": "aad077d24b174af544e5823952942a84be38e9fd0e35c1874f427c99a3496620"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-220.txt",
+      "sha256": "8a9155b82fb004185c343b541baace9a59f507fc2caf83216a4922aec635c004"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-221.txt",
+      "sha256": "e95e57a098ab86cb4a1786a6df35bd93e98d54cbdab3f9ada6d915cc2a0edaeb"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-224.txt",
+      "sha256": "62e3211d0ad0bd4bdfbc1656715b750ad83d5a96357be5d8ba601f00c8881a12"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-225.txt",
+      "sha256": "d30f76983747c168290bf89e61c05e9fb37910f4b9a098c33eea1ee3a965a6ab"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-227.txt",
+      "sha256": "019a0f8ccd6a5e150a508215863ce3dd70a8253028992b146a3e43386da2bb4a"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-228.txt",
+      "sha256": "e03f79db27ef399e0356d218c25a7b0c276310938ed548250cd3a01edeced92a"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/plain-23.txt",
+      "sha256": "b31814883a0ffe2e9f5808155fedb2ede79643fae775d01f8e36cd4d8ed986fe"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-font-ToUnicode.txt",
+      "sha256": "d4bdb330cdef9b52ff515f799b00c285842ad100f0a039c5370b9f1bd7292cf5"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/source-font-metadata.txt",
+      "sha256": "793a98b944d7a66c29a001397cd1cd8b3cd0e51a01622a485e405f13ceac186c"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/MandaicHebrew-source.ttf",
+      "sha256": "34d38317d89235d46ecaf68f3f143fb97a42baa984d4788ab79c105af1936ba8"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/remaining-reading-gaps.json",
+      "sha256": "f2a14da3f6b5340b25d98870119eb69d783ee56d2edbdddb32449269b661f36f"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/remaining-quotation-and-reading-audit.json",
+      "sha256": "8e236ca12213ddc1defa897eb79c84432ec2a3e8842964a38ec5ad0a7ee3d1a9"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/audit_remaining.py",
+      "sha256": "9f16d4541e80368583c9b4b66e3eb0c7012a3ad205a8994d5d689f1376deb1dd"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/reader-build-final.log",
+      "sha256": "92fb97668302cf6d1052ad09687a9e80cc0781d6dac07e348688ca2fce048579"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/tests-final.log",
+      "sha256": "23b51bdb573bc2a4a543ece78e52b1d0520b68e7244a86360253004d921f2413"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/node-tests-final.log",
+      "sha256": "be9250c0d483efdd52d4d883d3ed7145976f83a91f08a2a1a8c5afc7229147e7"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/reports-final.json",
+      "sha256": "75aa17ca0707dc81f20e655ca6d29caf3cd0dcb3e9b14b8b442492862bcbf50a"
+    },
+    {
+      "path": "data/private/research-work/Jena-Mandaic96-2026-10-03/next-held-source-targets.json",
+      "sha256": "6623592f8b83d5245ceace0557b439acb7c4d3becdb51a5771fcc2bdfe1ed01e"
+    }
+  ],
+  "complete_bounded_native_copy_checks": 4,
+  "Jena_checked_readings": 227,
+  "Jena_partial_readings": 0,
+  "all_Montgomery_stored_reading_checks_retained": 77
+}
