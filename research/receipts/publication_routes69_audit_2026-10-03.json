@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "checkpoint": 69,
+  "created_at": "2026-10-03T05:14:44+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "no_progress: preceding acknowledgement verified the saved checkpoint but added no research; this turn takes the next available safe source investigation",
+  "current_turn_classification": "progress",
+  "corpus_before": "0a9209b7f47a2eb35a6c56eafbbbeb9b81dd172a7e14ed73a0d01f3eb1d80fcb",
+  "corpus_after": "0a9209b7f47a2eb35a6c56eafbbbeb9b81dd172a7e14ed73a0d01f3eb1d80fcb",
+  "corpus_changed": false,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 3,
+  "new_publication_links": 0,
+  "new_text_rows": 0,
+  "new_identity_merges": 0,
+  "new_acquisition_requests": 1,
+  "miri_resolved": 10,
+  "miri_remaining_requests": 21,
+  "allowance_resets_used": 0,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/publication-routes69-2026-10-03/campaign_case_progress_checkpoint69.json",
+    "sha256": "f3a2108de30bf7d62b0b747aef6090a7811d2be0138e04d63337a9e2b9252c43"
+  },
+  "scope": "Checkpoint69 returns to the frozen publication-reference cohort: Cincinnati A/1331 selected accession/institution/client/formula patterns searched across all58heldPDFsources/60captures/56unique payloads/9761pages; zero text-layer hits,576empty/664sparse pages and variant/unnamed-description limitations retained. Museum displays English but corpus only summaries; translator/original edition unspecified. Exact acquisition/translation documentation requested for Miri, not an invented publication. Two exact NLI routes unavailable in web tool; first browser opens challenge, stopped without interaction. Existing NLI image group reused. Three frozen histories extended;249cases/32linked/217unlinked/zero wholecasescomplete unchanged. Ten supplied documents remain processed; Miri10resolved/21requests. No corpus mutation/new text/identity/rights decision/reset/deploy/push.",
+  "next_actions": [
+    "TEXT: lawful private capture/source-check of directly displayed Cincinnati English, keeping unnamed attribution and native edition gap explicit.",
+    "Continue exact publication/designation routes for frozen cases; NLI cards/images remain specific acquisition needs.",
+    "Remaining Ford–Abudraham apparatus and full original/revised-edition leads retained; no sourcewide completion claim."
+  ],
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0069_institutional_publication_routes.json",
+      "sha256": "b97ff2aef1070997623bcc43868f4349aedaad223616e880340497beae97d09e"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/campaign_case_progress_checkpoint69.json",
+      "sha256": "f3a2108de30bf7d62b0b747aef6090a7811d2be0138e04d63337a9e2b9252c43"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/acquisition-queue-before.json",
+      "sha256": "1d789bfbf3a08c7d4ea5d4eed1c236427fe20a12b0b93db26531ab45927e7bd5"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/full-held-skirball-client-sweep.json",
+      "sha256": "57070819da5f9efb4fe72ced41f3fe22c409552f2694fcff9f8e8b2e165d6081"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/nli-pilot-route-observations.json",
+      "sha256": "834a1cbd0328400231f3d5be90790711d54451139c36e2a0e73e98af51ce25b1"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/research69web1.json",
+      "sha256": "30fa896eb3537c0f98938d4066010ba680fff76abe8c7fa38ea6b1c5e2776407"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/research69web2.json",
+      "sha256": "c83fb6090f000eb43d0ae2db21d77589403003f2b58802c9f817dc852155ad95"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/research69web3.json",
+      "sha256": "cc8504b8cac0bf016d28befeaa93a263631bc247ac30fed1154b2053454c3efc"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/search-execution-log.json",
+      "sha256": "48f41bbb7a3a8ff026bf4c761a1703321c3a6ead35dd778bedb5b9d122318f41"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/skirball-primary-route-audit.json",
+      "sha256": "1f184566b59b55ca81e79fca260f3a4f2a5a024fb6140c7b92310001dc1be845"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/record_checkpoint.py",
+      "sha256": "28de58d65f57f9bb8dfa04c58829021f2968d1fe6f72cef3755dcb3037efb233"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/sweep.py",
+      "sha256": "12a277bb5ded9dae20268d5f738b6bc9fccdf5e0ddd2564bf13e565530aa5a71"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/sweep.log",
+      "sha256": "8774a5ccd930ddc753b3b1ab39072e520f2c7d81125878f4333a54f12bf4ef8d"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/reader-verification.json",
+      "sha256": "5ae58d605a6b369b7d1b9add0f2560529e0228baf6f0d82a00195e13185269f9"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/reader-build-final.log",
+      "sha256": "1abb8c0daeb9f148bf82725fd461aa0e7d6aa0a4b1b9ef93278d41842620570c"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/tests-final.log",
+      "sha256": "cf9ba4dcac9842252d1896e4979b8b7fff58632e369886f824d782cc2192b676"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/node-tests-final.log",
+      "sha256": "66ff9e408b50fa2f43a5d91a341a509ae7fad686e74954d63f43c118cd0e1e02"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/reports-final.json",
+      "sha256": "983d91b4283cfce8d3643f729040d26d0bdee8663fb9df89007a20b7514b59ed"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/regenerate.py",
+      "sha256": "4b260cfcd2b2d4eafad8b0739898e61fba22b0823554fc78ed7b27393487541e"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/verify_reader.py",
+      "sha256": "b1df036f7d95bc74f68638201aacab0d12e0a5b6cf4b9bf244da6d1d87511f4d"
+    },
+    {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/miri-completion-observation.json",
+      "sha256": "7e02b9b3fc6a02bfb64ef358aa083dce674fd82a995765d98937dadff86e4a71"
+    }
+  ],
+  "protected_payloads": "PDF text-layer context and web outputs remain private; tracked receipt contains counts/metadata/hash references only.",
+  "validation": {
+    "audit_checks": "7/7",
+    "all_text_contents_attributions_classifications_and_statuses_verified": 2281,
+    "all_media_assignments_verified": 2143,
+    "all_local_image_hashes_verified": 1232,
+    "all_capture_hashes_assignments_verified": 87,
+    "frozen_cases_extended": 3,
+    "all_previous_histories_retained": true,
+    "corpus_unchanged": true,
+    "python_tests": "394 passed",
+    "node_tests": "57 passed",
+    "reader_build_order": "After both test suites completed",
+    "miri_message": "Tool acknowledged delivery; remote tracker completion not inferred",
+    "live_runtime": "No deployment or live-server restart attempted"
+  },
+  "miri_message": {
+    "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
+    "host_id": "durable",
+    "delivery": "tool acknowledged",
+    "remote_completion": "Completed chat reports requested tracker update; remote file contents not independently inspected",
+    "completion_observation": {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/miri-completion-observation.json",
+      "sha256": "7e02b9b3fc6a02bfb64ef358aa083dce674fd82a995765d98937dadff86e4a71"
+    }
+  },
+  "verified_artifact_hash_count": 21
+}

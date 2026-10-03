@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T04:59:20+00:00",
+  "updated_at": "2026-10-03T05:14:44+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -325,6 +325,21 @@
         "path": "data/private/research-work/nli-routes57-2026-10-03/web-routes.json",
         "sha256": "88f54a5b0501275bef62bb3b04dfbb934da3dfffb8ade56db1beeb56d48fc28c"
       }
+    },
+    {
+      "source_id": "SRC-03395C3A94A7",
+      "short_label": "CincinnatiSkirballA1331accessionTranslationDocumentation",
+      "citation": "Cincinnati Skirball Museum, accession A/1331: acquisition/accession card and label/translation documentation (record request; no scholarly publication title verified).",
+      "requirement": "Permitted copy of exact A/1331 accession/acquisition card, translation notes/attribution and any listed edition bibliography. Museum feature displays English without naming its translator. If available, permitted complete original bowl photograph views; record copying conditions. Do not substitute general Helen Iglauer Glueck biography or a different Skirball institution.",
+      "priority": 2,
+      "status": "exact object documentation needed; edition identity unverified",
+      "checked_at": "2026-10-03T05:14:44+00:00",
+      "metadata_url": "https://csm.huc.edu/2021/07/17/mandaic-bowl/",
+      "previous_access_evidence": "Public museum page inspected; original translator/edition not identified. Selected patterns across58heldPDFsources/9761pages yield no match with576empty/664sparse pages and variant limitations. No catalogue-silence/no-known-edition conclusion.",
+      "private_route_inventory": {
+        "path": "data/private/research-work/publication-routes69-2026-10-03/skirball-primary-route-audit.json",
+        "sha256": "1f184566b59b55ca81e79fca260f3a4f2a5a024fb6140c7b92310001dc1be845"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -424,5 +439,15 @@
     "receipt": "research/receipts/ford_abudraham_variants68_audit_2026-10-03.json",
     "findings": "23bounded source variants/quotations checked; Princeton primary2014number/quote verified from already held scan despite temporary publisher-route failure. Original/revised edition search remains follow-up; no current unpublished conclusion and no new access request.",
     "new_acquisition_requests": 0
+  },
+  "checkpoint69_institutional_routes": {
+    "new_acquisition_requests": 1,
+    "existing_NLI_group_reused": true,
+    "route_evidence": {
+      "path": "data/private/research-work/publication-routes69-2026-10-03/nli-pilot-route-observations.json",
+      "sha256": "834a1cbd0328400231f3d5be90790711d54451139c36e2a0e73e98af51ce25b1"
+    },
+    "receipt": "research/receipts/publication_routes69_audit_2026-10-03.json",
+    "no_edition_absence_findings": true
   }
 }

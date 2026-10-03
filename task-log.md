@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Institutional publication routes, checkpoint69
+
+**Claimed:** DISC-002 (one DISC workstream).
+**Corpus:** unchanged — state digest `0a9209b7f47a`; opening clean/state match checkpoint68, unchanged after research/tests/build.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent private reader rebuild 7/7. All 2,281 text contents/attributions/classifications/current statuses, 2,143 media assignments, 1,232 local image hashes and 87 capture hashes/source assignments verified. Seven reports/exports regenerated; state recorded.
+
+- Revalidated the preceding acknowledgement as no new research progress, then took the next available safe investigation. Cincinnati A/1331 selected accession/institution/client/formula patterns searched across all 58 held PDF sources, 60 capture rows, 56 unique payloads and 9,761 pages: zero text-layer hits. All archive hashes checked; 576 empty/664 sparse pages, alternate spelling/language/unnamed descriptions limit recall. Sixteen executed web queries retained with exact per-query count/timestamp limitations; unrelated results and third-party mirrors not assigned as evidence. No current nonpublication/no-known-edition finding.
+- Museum directly displays English but names no translator/edition; existing corpus has summaries only, no reading rows/capture for that source. Identified separate TEXT capture/check requirement under source-specific private-access conditions. Exact A/1331 accession/acquisition card and translation/label documentation now requested, with permitted photographs/copying conditions; no invented scholarly title or translator.
+- Two exact NLI pilot pages unavailable in web tool. First browser opens a challenge; stopped without interaction. Second not individually tested in browser after first challenge; no blanket NLI denial claim. Current MMS/shelfmark/IE/FL metadata retained, existing grouped image/card request reused rather than duplicated.
+- Three frozen histories appended, all earlier histories preserved. Fixed249 remains32linked/217unlinked/allattempted/zero wholecasescomplete. No new source/appearance/text/claim/media/identity/rights/corpus mutation. All ten supplied documents already processed; no duplicate intake/reset.
+- Miri queue10resolved/21requests. Metadata-only follow-up delivered and completed chat reports tracker updated, NLI grouped and stale Ford–Abudraham2018unassigned note corrected; remote tracker files not independently inspected. No museum/author contact, purchase, push, deploy or rejected live-restart retry. Goal active.
+- Receipt: `research/receipts/publication_routes69_audit_2026-10-03.json`; private checkpoint0069, full-held search evidence, three-case progress index and route observations retained. Next separate TEXT checkpoint can capture/check museum English with unnamed attribution preserved, then substantive publication routes and remaining held-source apparatus. Scope of frozen Goal unchanged.
+
 ## 2026-10-03 — Codex — Ford–Abudraham commentary variants and Princeton, checkpoint68
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
