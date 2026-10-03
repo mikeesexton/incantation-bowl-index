@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon J/K native source-copy corrections, checkpoint56
+
+**Claimed:** TEXT-001, TEXT-009, TEXT-010
+**Corpus:** changed (two corrected native rows and two append-only proofreading reviews; both remain partial) — state digest `459d47fd5f87`.
+**Tests:** 394 Python and 57 Node passed; rebuilt private reader7/7. All2,179text contents/attributions/classifications/editorial declarations,2,101media assignments,1,190image hashes and87capture hashes/source assignments verified. Integrity/FKs, final trial/production digest agreement, unchanged replay and all receipt hashes pass.
+
+- Clean opening corpus matched checkpoint55 and TEXT tasks claimed before edits; consistent before-backup/trial retained. Prior/current Goal turns progress; original Goal active. Ten supplied documents remain processed, without duplicate intake/reset.
+- Held Gordon1937 complete PDF8,9,10 (printed90–92) inspected, with enlarged native blocks and critical words. Native review scope PDF8right-columnJ and PDF10K; PDF9English/commentary context only. Adjacent Text I excluded. Corrected J copied consonants/words, source curly-bracket letter, restored-name boundary, letter/gap runs and final long restoration scope. Main native print controls copying; no substitution of commentary alternative or text I parallel. Restored K initial multiword bracket, omitted curly-bracketed repeated name, son-name copied consonant, restored client-phrase consonant and parenthetical tet; source gaps/questions/uncertainty retained.
+- Encoded29clear source inferior letter dots (15J/14K) with U+0323, distinct from lacuna punctuation. Both remain partial for residual precise fine marks: J magical run/selected dotted words/verse10; K upon-you/nocturnal word marks. Current row improvements do not claim complete diacritic fidelity, sourcewide completeness, clay collation or specialist certification. Exact remaining native-page routes listed privately; no newly identified access blocker or Miri duplicate request.
+- Final preparation pass found one omitted yod in J building-word capture before production; repaired and rehearsed again from original backup, retaining earlier rehearsal database and its complete intermediate snapshot. Verification report’s carried-forward added-review count corrected to actual two before closeout. Final manifest rehearsed then applied by CLI; production replay changes zero rows. All other rows across39tables and all prior reviews identical. Protected native contents, pixels, manifests and complete snapshots remain private; content-free receipt research/receipts/gordon_reading56_source_checks_2026-10-03.json.
+- Coverage remains1,452editionrows=1,318checked/133partial/oneunreviewed;2,179texts,2,101media,1,190images,87captures. Fixed249case histories unchanged:31linked/218unlinked/zero complete. HeldPDF57sources/52appearance-bearing/1,304appearances; historicalnative45gaps and Miri tenresolved/19requests unchanged. No acquisition, contact, identity merge, scholarly/rights decision or reset.
+- Roadmap/seven reports/export and full private reader regenerated; state written; local commit only. No push/deployment/live-server restart. Next return to218publication-reference gaps in a separate CONC batch, then continue native/source-copy and original-script edition recovery. Goal active.
+
 ## 2026-10-03 — Codex — Ford native and McCullough translation source-copy corrections, checkpoint55
 
 **Claimed:** TEXT-001, TEXT-009, TEXT-010
