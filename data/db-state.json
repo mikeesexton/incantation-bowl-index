@@ -1,7 +1,8 @@
 {
-  "corpus_digest": "0582591c8d05c4647ed9451315ca9e8a1426b707fb20a91be943653593c4d905",
+  "corpus_digest": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
   "migrations": 21,
-  "recorded_at": "2026-10-03T01:16:51+00:00",
+  "note": "Checkpoint59: six partial Gordon1934 native copy repairs; auction catalogue already held, legacy web source-check gap scoped.",
+  "recorded_at": "2026-10-03T01:40:40+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -150,15 +151,15 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "3608b0a2fd0fc7dce8ea877faa205fa066ed9373e52c14991cc5a257abbc9077",
-      "rows": 1621
+      "digest": "4fd7a3d5a3b490eddd35d9202aeb008cafd6725f9de72e1771a64415cb3fb156",
+      "rows": 1627
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "93561101c1f1747cd16967f0ffdfd66f9e477f17ab0a5b50564fb26516051bac",
+      "digest": "56231e59391047576b9d12db7dd6c9b282f2420a9f9439bc9899e57bd3f39efb",
       "rows": 2179
     }
   }

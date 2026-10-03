@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "checkpoint": 59,
+  "created_at": "2026-10-03T01:38:02+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "0582591c8d05c4647ed9451315ca9e8a1426b707fb20a91be943653593c4d905",
+  "corpus_after": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "changed_text_rows": 6,
+  "new_proofreading_reviews": 6,
+  "renewed_partial_native_rows": 6,
+  "clear_inferior_dots_encoded": 6,
+  "primary_pages_visually_checked": {
+    "Gordon1934": [
+      4,
+      5,
+      7,
+      9,
+      11,
+      14,
+      15
+    ],
+    "Kedem2013catalogue": [
+      98
+    ]
+  },
+  "new_text_rows": 0,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "total_text_rows": 2179,
+  "reading_type_rows": 1452,
+  "reading_row_metric_limit": "Includes project English renderings and dealer reported quotations; not a count of complete independent scholarly editions.",
+  "checked_reading_type_rows": 1318,
+  "partial_reading_type_rows": 133,
+  "unreviewed_reading_type_rows": 1,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 57,
+    "appearance_bearing_sources": 52,
+    "indexed_appearances": 1305
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/gordon-reading59-2026-10-03/campaign_case_progress_checkpoint59.json",
+    "sha256": "695091327bbe1ad4d192ae3077a31fefccf3dc4cb1fd534635dfcdb3e3f2d13a"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/gordon-reading59-2026-10-03/held_pdf_inventory_checkpoint59.json",
+    "sha256": "47d64a64edb9ffcee590448d69d615f825f9904fa9659f16594455646223ab86"
+  },
+  "auction_access_assessment": {
+    "path": "data/private/research-work/gordon-reading59-2026-10-03/auction-access-assessment.json",
+    "sha256": "9972f6a2a12634fa16257f16abaede025c7e7970ab6f20b0e1d2147108273507"
+  },
+  "scope": "Checkpoint59 corrects six held Gordon1934 native captures A–F after7whole native pages, rotated E/F layout and enlarged blocks/detail views. A three omitted/transposed yod matters repaired; B six clear inferior dots encoded in three magical-word occurrences, base wording retained; C four-dot omission, seven printed name forms and damaged-word copies repaired; D four-dot opening omission restored with surviving2–15anchors; E two exact restoration boundaries repaired with leftcolumn only; F two extra copied yods removed with middlecolumn only. Original scholarly uncertainties, repetitions, separate brackets and actual anchors retained; no English/grammar/parallel supplementation. All six remain partial for explicit residual native fine marks or word5 capture uncertainty. Six immutable reviews retain full originals; all other rows across39tables identical, exact trial/production fingerprint and unchanged replays. Auction website automatically accessible but automated robots endpoints fail; public catalogue already supplied/archived, exactp96/PDF98lot154visually checked and full attributed quotation already exists separately. Legacy web73char excerpt missing two restoration marks remains unreviewed pending accurate cross-source evidence workflow; do not duplicate acquisition or count as independent scholar verification. No new text/source/capture/media/object/identity/publication link/rights decision. Fixed24932linked/217unlinked/allattempted/zero complete;2179texts/1452reading-type rows=1318checked/133partial/oneunreviewed;2101media/1190localimages/87captures;held57sources/52appearance-bearing/1305appearances;45historicalnativegaps;Miri tenresolved/20requests. Goal active.",
+  "next_actions": [
+    "Continue217 publication-reference gaps and substantive held reading work.",
+    "Correct legacy auction excerpt restoration marks through explicit cross-source evidence/provenance workflow; full catalogue quotation already held and separately captured, no Miri acquisition.",
+    "Complete precise native fine marks in Gordon A–F/H–L and word5 capture in C.",
+    "Keep original Mandaic-script recovery separate from Hebrew-letter transliteration; retain20acquisition requests."
+  ],
+  "validation": {
+    "database": "data/private/ibi.sqlite3",
+    "corpus_before": "0582591c8d05c4647ed9451315ca9e8a1426b707fb20a91be943653593c4d905",
+    "corpus_after": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+    "tables_verified": 39,
+    "changes": {
+      "texts": {
+        "changed": 6,
+        "added": 0
+      },
+      "text_proofreading_reviews": {
+        "changed": 0,
+        "added": 6
+      }
+    },
+    "all_other_rows_identical": true,
+    "original_snapshots_retained": true,
+    "integrity": "ok",
+    "foreign_keys": "ok",
+    "new_checked_native_rows": 0,
+    "renewed_partial_native_rows": 6,
+    "final_trial_production_fingerprints_match": true,
+    "trial_production_replays_unchanged": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2179,
+      "all_text_editorial_statuses_verified": 2179,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2101,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    }
+  },
+  "protected_payloads": "Native/auction contents, source pixels and complete originals/research histories private; content-free metadata/hash receipt only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0059_gordon_a_f_native_source_copy_corrections.json",
+      "sha256": "013c069d183c8e3a7f15cdeeb7cf42aaddee269b321b8c07e97f34ee493ab601"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/campaign_case_progress_checkpoint59.json",
+      "sha256": "695091327bbe1ad4d192ae3077a31fefccf3dc4cb1fd534635dfcdb3e3f2d13a"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/held_pdf_inventory_checkpoint59.json",
+      "sha256": "47d64a64edb9ffcee590448d69d615f825f9904fa9659f16594455646223ab86"
+    },
+    {
+      "path": "data/private/manifests/gordon-reading59-2026-10-03/proofreading.json",
+      "sha256": "946ba986982ecc8dd5e01d9fe50a7d2b024bfc616360d49b44ef8cd19c2cca91"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/metadata.json",
+      "sha256": "308a7c816306e9e2497ec4464f897a64c040ffa6276ac2d9f492aaba77710301"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/trial-verification.json",
+      "sha256": "05a412bbece5b3fc8facbe4eb178a5f4719a6d7eeae91faa874301a0b82225ff"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/production-verification.json",
+      "sha256": "e2813dfb705aa1d7991e3b1f2c32f9d26a8266c042675e0ed011ea987d008621"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/prepare.py",
+      "sha256": "6172d8443193a8b89411cc5849bb578dcb5bcb4aa36d9b89c64d7efe4313751e"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/record_checkpoint.py",
+      "sha256": "4858ee696e0f09122436aa1b91f5a9abcaa60335080dbc49e6e54b34f9f9ab9a"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/verify_batch.py",
+      "sha256": "2da75ced6ca06e0c49cd4debc1115fb74e9ae71f0b9de7e8704689143743692b"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/TXT-1C3FEA95F548.txt",
+      "sha256": "4a778961d86f7171726a629a3fe91fdf1ec37b8d302ca25567ccc868d4be82ac"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/TXT-4B0C214D7021.txt",
+      "sha256": "28788de493ff9155085e253fc2005c0610bbd2f58adc792e0b934157b796bb3c"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/TXT-630ABD6EADBA.txt",
+      "sha256": "72c2b12e1a79e9327236a7f3a761e50a006b9a370f5c95c341090d5eae124d53"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/TXT-D071F87ACE6E.txt",
+      "sha256": "37873cce418e6994dd0bdfc73347395033071ecfaae96629d37cdae7a98e8f19"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/TXT-DB8F8A98D82C.txt",
+      "sha256": "1ac169b590fd9a888831abd6ec4078d208560da24a0aa22f44a0457debea903d"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/TXT-E70C738E38CD.txt",
+      "sha256": "0519a5b982af2206b7487e10ccbe3ff01cde140798ce617294fbd6e2f2e32aaf"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/Aclosing.png",
+      "sha256": "9911a386333c2a7f4227423e5e6e7e24f5e9dde5f848714a94e3417c3446696f"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/B9detail.png",
+      "sha256": "1a2d05a42d536e4e48ab04a10234126a7f7b1756121dadcbe5bf16fc13b8f989"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/Bclosing.png",
+      "sha256": "dd3022d3a757cf0d919681c589073fd99baecf5e3248bd4e944bf941c594c799"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/Cwords.png",
+      "sha256": "038c1f51a7b64790ae427300cdc0a95562ef652c08c01e1657df7a7e33a6d806"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/Dnative.png",
+      "sha256": "0f4996e4c8e0d877370794e2e1c10071811c2aa1655eccafa4a1a36a0b138e33"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/E14.png",
+      "sha256": "61ae42ddfab63f70599084d57e2bcd3e306ac4ef042706c9e20820ab0256f6cd"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/E15.png",
+      "sha256": "22cb7dccb08943d5e01b9dbecf1b79f079a69cb2031831c8a220c88cf551a993"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/F14.png",
+      "sha256": "fc02f6b89ea72a97147965c25a037f3128f4ea1f9a9cd767abecd55917938c54"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/F15.png",
+      "sha256": "dfc4f03c30972cfc50d2b14fc703361f850894695ce61203b63c559710e75334"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/auction-page98.png",
+      "sha256": "50dd0c02e750c1170c86bbc98e3c5b2e97f371984cc89b8e1a394832119544c3"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged11.png",
+      "sha256": "dba16c999fe45d72178a3644c3032758bb721ca990cc9a5ab61b98291dad1a8a"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged14.png",
+      "sha256": "cb14e4938355bdb2b385f78158a2e3b0e8bbe2aa9407ed5215eaec2604b1eab3"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged15.png",
+      "sha256": "c2cf34caca5ace1280b4943ed692a9971fe84a3344721f3ec561ecff0ea012f4"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged4.png",
+      "sha256": "38df75463868bcec0e40b39443e5179d343d86610affb075133efcdd6a0df303"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged5.png",
+      "sha256": "979aa55500d19b5a039e07d84011ae89b932c911f3c1058125ae2e83d1983ea4"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged7.png",
+      "sha256": "620ac91617a018dbaa2ec07d2d5a5670f3d2d892da664027066e888783aa06be"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/enlarged9.png",
+      "sha256": "03c4b8ce7cf391e1684b7b93f01e34416d9cab87c2209b5f2c5aa3dc3c96aeef"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native11.png",
+      "sha256": "85ddbf2d8024e649b7487792ff35be50283d839bb78233bc67dae9cf4358f0c4"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native14.png",
+      "sha256": "1f8684169c074bd9560dda9bba40f9d255e07dd704061bca435b9b850d204e04"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native15.png",
+      "sha256": "c8a5759a9565f423a303e1e825beec455b7ed328d08d743129c4f5b58fee8213"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native4.png",
+      "sha256": "fc4efbefd1582b4d64668332b8973b34103280fa99e5789c5f1852016ca38eef"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native5.png",
+      "sha256": "cd311d062be803966a90f4ddd8e3cca296771e8f0a8802fd7070fd3c2fa744b7"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native5full.png",
+      "sha256": "65d635fb37c2ab112c8e23569e824d2305e97cd3e56f2994ca62c4755dc8d503"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native7.png",
+      "sha256": "bcfa97c7ee228caf99fe007dd461724ae163c1e38a1820f311850c42fa00b27a"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/native9.png",
+      "sha256": "1042aba13136da23496298238e6006e2c00791053a48a90a1378baf2d28c55e9"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page11.png",
+      "sha256": "f22a8abb18383745b69007b5a88580907fe308a63045b4ba5380fa29e52ea0fe"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page14.png",
+      "sha256": "e13ad7b7e5d8360bd441d6723cb3aaa0bd67e78c9bf3ec04584d4e87102b2581"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page15.png",
+      "sha256": "4a3ddde64ebb85227841ef3c005c519e05f1fb09c062ea36e9e8b4f6f291bea7"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page4.png",
+      "sha256": "505dbbe66da197acce6b9c5a6ea12640b8c49bf7d64ef7f4cb6149f5c9f02161"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page5.png",
+      "sha256": "c33f36bf01efa8eb50c032f33e4cc52c69bc753e34e864441b8e36268ca9a49e"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page7.png",
+      "sha256": "9a1c876f549b31001cdda145b3882f07e0fae78be9e65063d9d6554eec8ffcf3"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/page9.png",
+      "sha256": "7617305d939c8cdaeb3dfa5bb0626b92f652fb68672ee503c96826827c8cb0e8"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/rotated14.png",
+      "sha256": "d1b565dc3a9308f761ce26859edace6e1030d16ac354a8ad535d848de72522f6"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/rotated15.png",
+      "sha256": "8f719534578b55daa6b14637ab1822688d5cf4f146a2ac26aa068e6eb7b815d9"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/auction-access-assessment.json",
+      "sha256": "9972f6a2a12634fa16257f16abaede025c7e7970ab6f20b0e1d2147108273507"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/auction-held-catalogue-hits.json",
+      "sha256": "23f1b383fc2b23e20a3804a515b8a9b47039cea7bac564d8197582b35eb6a3ce"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/auction-robots-network.json",
+      "sha256": "be25c0f3af8ea463ac609ab0829c05a7b38520a3fbd6f5a5b26f9350523dde21"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/auction-robots-probe.json",
+      "sha256": "0f1a2058f88f6a8e877945997c5254e53cdc95e60eba79b885cdc89a0cec6e9c"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/reader-verification.json",
+      "sha256": "30e98e5fabcb0eb58f497078527071d084522f6795c75f1a3a35f856391b3e65"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/reader-build-final.log",
+      "sha256": "428d9bdec7f32dccd6451b5abcc2db9ad9da9a7247cb8888e173267889a04dfd"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/tests-final.log",
+      "sha256": "ebc8a00c9212ff637954a9667462add441a224f04189f72228662d5016cdf2b7"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/node-tests-final.log",
+      "sha256": "fa166bfd179b8ab6c0d4199142a94d42e33372144465ce596f807f5513be2db6"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/record_checkpoint.py",
+      "sha256": "4858ee696e0f09122436aa1b91f5a9abcaa60335080dbc49e6e54b34f9f9ab9a"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/prepare.py",
+      "sha256": "6172d8443193a8b89411cc5849bb578dcb5bcb4aa36d9b89c64d7efe4313751e"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/verify_batch.py",
+      "sha256": "2da75ced6ca06e0c49cd4debc1115fb74e9ae71f0b9de7e8704689143743692b"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/regenerate.py",
+      "sha256": "faa7fe7c5cf5d839123d8a22ba6c9cbf9b6388e381dec5b7a0cf058dace9c083"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/verify_reader.py",
+      "sha256": "638d005f24bcfc096be85020b0567313e5a5cca2e7f5c84d4cce4989da7086dc"
+    },
+    {
+      "path": "data/private/research-work/gordon-reading59-2026-10-03/reports-final.json",
+      "sha256": "a5525f3f4fea0a5ea2af3935c1924959e3be4921a779b249a46744ad5fdb1a75"
+    }
+  ]
+}
