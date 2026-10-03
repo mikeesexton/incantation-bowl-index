@@ -307,14 +307,21 @@ def add_candidate(conn, record):
 
     object_id = record.get("object_id") or new_id("object")
     object_exists = conn.execute("SELECT 1 FROM objects WHERE id=?", (object_id,)).fetchone()
+    object_stamp = None
+    if not object_exists and record.get('created_at'):
+        stamp = datetime.fromisoformat(record['created_at'].replace('Z', '+00:00'))
+        if stamp.utcoffset() is None or stamp.utcoffset().total_seconds() != 0:
+            raise ValueError('Object creation timestamp must be UTC')
+        object_stamp = stamp.strftime('%Y-%m-%d %H:%M:%S')
     if not object_exists:
         conn.execute(
-            "INSERT INTO objects (id,label,object_type,record_status,authenticity,summary) "
-            "VALUES (?,?,?,?,?,?)",
+            "INSERT INTO objects (id,label,object_type,record_status,authenticity,summary,created_at,updated_at) "
+            "VALUES (?,?,?,?,?,?,COALESCE(?,CURRENT_TIMESTAMP),COALESCE(?,CURRENT_TIMESTAMP))",
             (
                 object_id, record["label"], record.get("object_type", "whole_bowl"),
                 record.get("record_status", "candidate"), record.get("authenticity", "unassessed"),
                 record.get("summary"),
+                object_stamp, object_stamp,
             ),
         )
     appearance_id = appearance.get("id") or new_id("appearance")

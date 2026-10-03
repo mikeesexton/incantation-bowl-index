@@ -96,6 +96,29 @@ class ReadingCaptureIngestTests(unittest.TestCase):
             self.apply([self.record, record])
         self.assertEqual(corpus_fingerprint(self.conn), before)
 
+    def test_new_object_creation_time_rehearses_and_replays_exactly(self):
+        other = sqlite3.connect(':memory:'); other.row_factory = sqlite3.Row
+        self.addCleanup(other.close); self.conn.backup(other)
+        record = copy.deepcopy(self.record)
+        record.update(object_id='IBI-NEW', label='New candidate', created_at='2026-10-03T22:00:00Z')
+        record['appearance'] = dict(id='APP-NEW', locator='printed p. 2', created_at=record['created_at'])
+        self.apply([record]); load_jsonl(other, self.path, 'candidate')
+        self.assertEqual(corpus_fingerprint(self.conn), corpus_fingerprint(other))
+        row = self.conn.execute("SELECT * FROM objects WHERE id='IBI-NEW'").fetchone()
+        self.assertEqual((row['created_at'], row['updated_at']), ('2026-10-03 22:00:00',) * 2)
+        before = corpus_fingerprint(self.conn)
+        record['created_at'] = '2026-10-04T22:00:00Z'
+        self.apply([record]); self.assertEqual(corpus_fingerprint(self.conn), before)
+
+    def test_new_object_non_utc_time_rolls_back_batch(self):
+        record = copy.deepcopy(self.record)
+        record.update(object_id='IBI-NEW', label='New candidate', created_at='2026-10-03T22:00:00-04:00')
+        record['appearance'] = dict(id='APP-NEW', locator='printed p. 2')
+        before = corpus_fingerprint(self.conn)
+        with self.assertRaisesRegex(ValueError, 'Object creation timestamp must be UTC'):
+            self.apply([self.record, record])
+        self.assertEqual(corpus_fingerprint(self.conn), before)
+
     def test_explicit_ids_cannot_replace_or_silently_alias(self):
         self.apply(); before = corpus_fingerprint(self.conn)
         for group, field, replacement in [('texts', 'content', 'Changed'), ('texts', 'editor', 'Other editor'),

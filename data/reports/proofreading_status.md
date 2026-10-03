@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1499 | 52 | 1 | 1552 | 96.6% |
-| Other stored text (mostly source extracts and summaries) | 1 | 7 | 728 | 736 | 0.1% |
-| All stored text | 1500 | 59 | 729 | 2288 | 65.6% |
+| Edition text (translation, transcription, transliteration) | 1500 | 52 | 1 | 1553 | 96.6% |
+| Other stored text (mostly source extracts and summaries) | 1 | 7 | 729 | 737 | 0.1% |
+| All stored text | 1501 | 59 | 730 | 2290 | 65.5% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 734 | 41 | 1 | 776 |
+| translation | 735 | 41 | 1 | 777 |
 | transcription | 576 | 7 | 0 | 583 |
 | transliteration | 189 | 4 | 0 | 193 |
 
@@ -47,7 +47,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jesus in the Magic Bowls: Apropos Dan Levene’s ‘… and by the name of Jesus …’ (`SRC-5F7E0BA65D6E`) | 1 | 0 | 0 | 1 |
 | Aramaic Magical Bowls in the Istanbul and Baghdad Museums (`SRC-60CB324330C9`) | 12 | 0 | 0 | 12 |
 | Terracotta Incantation Bowl, 500 CE–800 CE (`SRC-658C490CF6BF`) | 1 | 0 | 0 | 1 |
-| Magic Bowls in the Moriah Collection (`SRC-7B96CC040B1B`) | 2 | 0 | 0 | 2 |
+| Magic Bowls in the Moriah Collection (`SRC-7B96CC040B1B`) | 3 | 0 | 0 | 3 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume One (`SRC-7FBBB775E502`) | 129 | 0 | 0 | 129 |
 | Notes on the Mandaic Incantation Bowls in the British Museum (`SRC-86CBCD17FECC`) | 12 | 0 | 0 | 12 |
 | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 5 | 5 | 0 | 10 |
