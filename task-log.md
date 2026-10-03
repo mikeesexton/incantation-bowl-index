@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon G first-half source corrections, checkpoint104
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — one appended proofreading review and revised native working copy; digest `2597b82a4716`. Opening clean/state matched103. Full originals/earlier reviews retained;37 other tables/all1,880 memberships unchanged. Trial/production equal; replay changed no rows/digest. Reading remains partial; no status upgrade.
+**Tests:** 394 Python +57 Node =451 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures and1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Gordon G own first-half30source-copy groups corrected against fresh complete upper blocks/rightmost G columns, printed467–469/PDF3–5; four parallel witnesses excluded.58exact inferior points newly encoded per actual printed467footnote1 key. One unsupported source1heh superior removed; rectangular restoration roofs, inferiors, small-angle supplies, curly excess and inline periods distinguished. Corrected extra/missing/substituted letters, copied final nuns, singlebet restoration, literal name/magical-string variants and raised-yod normalization. Full enlarged words supersede preliminary point/enclosure guesses and cropped scratch. Original7–12content explicitly unchanged/pending, including copying doubts; exact last-half glyph/mark/raised-letter/restoration/closing checks still needed. No English/grammar/commentary/parallel supplementation or clay/meaning adjudication.
+- Reading inventory unchanged1,495checked/52partial/oneunreviewed. All16Gordon1937/12Gordon1934/227Jena/77Montgomery prior checks retained. Both rosters refreshed/exactlyone content fingerprint changed. Frozen249original members/history exact32linked/217unlinked/allattempted/zero wholecasescomplete/no new attempts.45historical native gaps/40English projectdrafts separate;31Pognon French originals alreadychecked.
+- Found demonstrably copied source metadata error: existing source SRC-0383E0E0A2F2 note labels5497 Istanbul; actual printed466/PDF2 says Iraq Museum storage jar and printed467/PDF3 heads5497. Exact primary evidence/source-before snapshot captured privately; next META session must repair source note through manifest/CLI. Source metadata untouched in this TEXT batch. Independently reconfirmed prior jar decision `IBI-SCOPE-GORDON53-5497-JAR` remains rejected/non_bowl; no identity/scope reversal. Tentative7–12observations saved privately as unapplied scratch, not certified evidence.
+- Allten supplied documents alreadyprocessed including fgaf025; no duplicate intake. Miri10resolved/26requests unchanged/no new access blocker/message/reset/purchase/merge/rights/publicapproval/push/deployment/server restart. Source/editor/locator/language/script/rights/public0 unchanged. Protected expression/pixels/notes/manifests private outsideGit; receipt metadata/hashpointers only. Lastten prebatch backups retained.
+- Goal active; source collection-note repair next, then G7–12/otherheld readings/217publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0104_Gordon_G_first_half_source_corrections.json`. Receipt: `research/receipts/Gordon_G104_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon M/N/O complete transliteration checks, checkpoint103
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
