@@ -1,0 +1,1565 @@
+{
+  "schema_version": 1,
+  "checkpoint": 64,
+  "created_at": "2026-10-03T03:27:36+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "18047bdb75ff69d4e56a5c36c1c8250fdadad988a347006ac3643684b6ef5a43",
+  "corpus_after": "61124b7c8d01a6302760defd575859bacba05561e5c0c9df098c0f704ec0d9a9",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 6,
+  "new_main_native_rows": 6,
+  "new_checked_native_rows": 0,
+  "new_partial_native_rows": 6,
+  "new_English_rows": 0,
+  "native_line_anchors": 159,
+  "physical_print_rows": 189,
+  "encoded_source_characters_represented_once": 4632,
+  "separately_positioned_combining_marks": 97,
+  "source_gray_encoded_glyph_positions": 651,
+  "outlined_native_runs_pending": 60,
+  "native_Bowl4_magic_gaps": 2,
+  "prior_English_Bowl4_magic_gaps_retained": 2,
+  "new_media_rows": 0,
+  "new_immutable_proofreading_reviews": 6,
+  "new_document_assessments": 1,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 58,
+    "appearance_bearing_sources": 53,
+    "indexed_appearances": 1313,
+    "unassigned_pdf_captures": 0
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/campaign_case_progress_checkpoint64.json",
+    "sha256": "c031e1c45cc2606c05d95ea3375fa49b9268c29367bad8513534bbce126086f1"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/held_pdf_inventory_checkpoint64.json",
+    "sha256": "73091ecdd406b301a44d9ce5ae97174b4606391d3bad827f60dce5772a80313e"
+  },
+  "scope": "Checkpoint64 partially captures the six main Syriac editions of held Ford–Abudraham2018, Bowl1–6/T27983/T27984/T27986/T27989/T27993/T27996, attributed to James Nathan Ford by original printed75/PDF6note1. Fourteen complete original/key pages and enlarged native details inspected.159native anchors/189physical print rows retained. All4632selected encoded source-character positions represented once;97detached combining marks attached by actual source geometry, five overlapping nun/waw boxes independently checked.651grey encoded positions retained under declared project angle convention, with original font/color/geometry private. Initial universal bracket reversal caught: GLABUG already logical, SVZ native values visual; LTR source descriptions normalized logically, source physical wraps retained. Native letters absent from text extraction discovered as drawing outlines:60exact native runs now explicit project gaps with original contours/colors/coordinates, not guessed from English/grammar/parallels. Seven caption numerals excluded; one inner contour merged. Diagnostic isolated contour renders can fill counters incorrectly and are not facsimile/reading evidence. Exact original pixels authoritative. Both Bowl4magic signs viewed in native and English, no reliable identity established; native two explicit gaps and prior English two gaps retained unchanged. Six new immutable partial reviews preserve entire original rows; no complete-native/sourcewide claim. New document assessment supersedes processing state, complete42page holding remains and extraction stays partial for outlined decoding/native final comparison/magic signs/comparative-footnote quotations. Every earlier row across39tables identical; trial/production normalized business payloads equal and all three replays change zero. No new object/appearance/source/claim/identifier/media/capture/merge/acquisition. Corpus2203texts/1468readingrows=1327checked/140partial/oneunreviewed; includes project renderings/dealer quotations, not complete independent editions.2143media/1232localimages/87captures; heldPDF58sources/53appearance-bearing/1313appearances. Historical45native gaps unchanged. Fixed24932linked/217unlinked/allattempted/zero wholecasescomplete; all earlier histories and IraqMuseum5497jar retained. Miri10resolved/20requests unchanged, no new acquisition blocker/duplicate message. All ten supplied documents already processed includingfgaf025, no duplicate intake/reset. Goal active; no push/deploy/live restart/purchase/author contact/scholarly/authenticity/reuse decision.",
+  "next_actions": [
+    "Decode60outlined native Syriac runs from original paths/pixels and independently check complete six native blocks; retain exact grey and restored/uncertain positions.",
+    "Resolve two Bowl4magic signs only from verified source-shape evidence; English/native source gaps remain explicit until then.",
+    "Capture/source-check comparative and footnote quotations, without uncertain object assignments.",
+    "Continue217publication-reference routes and exactNLI1562025acquisition with20Miri requests."
+  ],
+  "validation": {
+    "database": "data/private/ibi.sqlite3",
+    "corpus_before": "18047bdb75ff69d4e56a5c36c1c8250fdadad988a347006ac3643684b6ef5a43",
+    "corpus_after": "61124b7c8d01a6302760defd575859bacba05561e5c0c9df098c0f704ec0d9a9",
+    "tables_verified": 39,
+    "changes": {
+      "accuracy_audit_reviews": {
+        "previous_rows_retained": 80,
+        "changed": 0,
+        "added": 0
+      },
+      "appearance_object_links": {
+        "previous_rows_retained": 2811,
+        "changed": 0,
+        "added": 0
+      },
+      "appearances": {
+        "previous_rows_retained": 2811,
+        "changed": 0,
+        "added": 0
+      },
+      "capture_source_corrections": {
+        "previous_rows_retained": 3,
+        "changed": 0,
+        "added": 0
+      },
+      "captures": {
+        "previous_rows_retained": 87,
+        "changed": 0,
+        "added": 0
+      },
+      "catalogue_metadata_corrections": {
+        "previous_rows_retained": 9,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_conflict_review_history": {
+        "previous_rows_retained": 964,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_conflict_reviews": {
+        "previous_rows_retained": 646,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_locator_corrections": {
+        "previous_rows_retained": 1110,
+        "changed": 0,
+        "added": 0
+      },
+      "claims": {
+        "previous_rows_retained": 9176,
+        "changed": 0,
+        "added": 0
+      },
+      "contributor_aliases": {
+        "previous_rows_retained": 0,
+        "changed": 0,
+        "added": 0
+      },
+      "coverage_targets": {
+        "previous_rows_retained": 12,
+        "changed": 0,
+        "added": 0
+      },
+      "dedupe_candidates": {
+        "previous_rows_retained": 34798,
+        "changed": 0,
+        "added": 0
+      },
+      "dedupe_evidence": {
+        "previous_rows_retained": 34804,
+        "changed": 0,
+        "added": 0
+      },
+      "document_assessments": {
+        "previous_rows_retained": 121,
+        "changed": 0,
+        "added": 1
+      },
+      "events": {
+        "previous_rows_retained": 215,
+        "changed": 0,
+        "added": 0
+      },
+      "identifiers": {
+        "previous_rows_retained": 5202,
+        "changed": 0,
+        "added": 0
+      },
+      "leads": {
+        "previous_rows_retained": 99,
+        "changed": 0,
+        "added": 0
+      },
+      "manual_audits": {
+        "previous_rows_retained": 14,
+        "changed": 0,
+        "added": 0
+      },
+      "media": {
+        "previous_rows_retained": 2143,
+        "changed": 0,
+        "added": 0
+      },
+      "media_rights_reviews": {
+        "previous_rows_retained": 652,
+        "changed": 0,
+        "added": 0
+      },
+      "merge_log": {
+        "previous_rows_retained": 0,
+        "changed": 0,
+        "added": 0
+      },
+      "museum_concordance_reviews": {
+        "previous_rows_retained": 40,
+        "changed": 0,
+        "added": 0
+      },
+      "object_relationship_assertions": {
+        "previous_rows_retained": 5,
+        "changed": 0,
+        "added": 0
+      },
+      "object_scope_reviews": {
+        "previous_rows_retained": 2,
+        "changed": 0,
+        "added": 0
+      },
+      "objects": {
+        "previous_rows_retained": 2212,
+        "changed": 0,
+        "added": 0
+      },
+      "publication_assessments": {
+        "previous_rows_retained": 631,
+        "changed": 0,
+        "added": 0
+      },
+      "publication_registry": {
+        "previous_rows_retained": 37,
+        "changed": 0,
+        "added": 0
+      },
+      "saturation_sweeps": {
+        "previous_rows_retained": 3,
+        "changed": 0,
+        "added": 0
+      },
+      "schema_migrations": {
+        "previous_rows_retained": 21,
+        "changed": 0,
+        "added": 0
+      },
+      "search_queries": {
+        "previous_rows_retained": 370,
+        "changed": 0,
+        "added": 0
+      },
+      "search_runs": {
+        "previous_rows_retained": 22,
+        "changed": 0,
+        "added": 0
+      },
+      "source_corrections": {
+        "previous_rows_retained": 85,
+        "changed": 0,
+        "added": 0
+      },
+      "source_scope_reviews": {
+        "previous_rows_retained": 119,
+        "changed": 0,
+        "added": 0
+      },
+      "sources": {
+        "previous_rows_retained": 967,
+        "changed": 0,
+        "added": 0
+      },
+      "text_metadata_corrections": {
+        "previous_rows_retained": 19,
+        "changed": 0,
+        "added": 0
+      },
+      "text_proofreading_reviews": {
+        "previous_rows_retained": 1637,
+        "changed": 0,
+        "added": 6
+      },
+      "text_publication_reviews": {
+        "previous_rows_retained": 310,
+        "changed": 0,
+        "added": 0
+      },
+      "texts": {
+        "previous_rows_retained": 2197,
+        "changed": 0,
+        "added": 6
+      }
+    },
+    "all_previous_rows_retained_unchanged": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_main_native_rows": 6,
+    "new_main_English_rows": 0,
+    "new_appearances": 0,
+    "new_objects": 0,
+    "new_media": 0,
+    "partial_native_source_copy_reviews": 6,
+    "new_proofreading_reviews_retaining_complete_originals": 6,
+    "new_document_assessments": 1,
+    "superseded_document_assessment_retained": true,
+    "all_three_replays_unchanged": true,
+    "trial_production_business_payloads_equal": true,
+    "replay_logs": [
+      {
+        "command": [
+          "ingest",
+          "candidate",
+          "data/private/manifests/ford-abudraham-syriac64-2026-10-03/candidates.jsonl"
+        ],
+        "exit_code": 0,
+        "stdout": "ingested 6 records\n",
+        "stderr": "",
+        "corpus_unchanged": true
+      },
+      {
+        "command": [
+          "ingest-proofreading",
+          "data/private/manifests/ford-abudraham-syriac64-2026-10-03/proofreading-production.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 6,\n  \"public_approvals\": 0,\n  \"unchanged\": 6\n}\n",
+        "stderr": "Ignoring wrong pointing object 8 0 (offset 0)\nIgnoring wrong pointing object 31 0 (offset 0)\nIgnoring wrong pointing object 34 0 (offset 0)\nIgnoring wrong pointing object 49 0 (offset 0)\nIgnoring wrong pointing object 60 0 (offset 0)\nIgnoring wrong pointing object 74 0 (offset 0)\nIgnoring wrong pointing object 79 0 (offset 0)\nIgnoring wrong pointing object 91 0 (offset 0)\n",
+        "corpus_unchanged": true
+      },
+      {
+        "command": [
+          "ingest-document-assessment",
+          "data/private/manifests/ford-abudraham-syriac64-2026-10-03/document-assessment.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 79,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 67,\n  \"sources_with_complete_object_level_extraction\": 29,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 74,\n  \"sources_with_object_level_extraction\": 64,\n  \"sources_with_ocr\": 4,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+        "stderr": "",
+        "corpus_unchanged": true
+      }
+    ],
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2203,
+      "all_text_editorial_statuses_verified": 2203,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "new_main_native_rows_verified": 6,
+      "new_checked_native_rows_verified": 0,
+      "new_partial_native_rows_verified": 6,
+      "retained_unchecked_source_layer_classifications_verified": 8,
+      "encoded_source_character_positions_verified": 4632,
+      "outlined_native_runs_pending_verified": 60,
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "recorded_state": {
+      "corpus_digest": "61124b7c8d01a6302760defd575859bacba05561e5c0c9df098c0f704ec0d9a9",
+      "recorded_at": "2026-10-03T03:29:42+00:00",
+      "recorded_by": "Codex"
+    },
+    "evidence_artifacts_verified": 306
+  },
+  "protected_payloads": "Full scholarly native wording/drafts/pixels/path coordinates/color/font geometry/manifests private; content-free metadata/hash receipt only. Isolated diagnostic contour sheets are not facsimiles.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0064_ford_abudraham_syriac_partial_native.json",
+      "sha256": "cab1301fd5b1f9492eee2126d905e6f347d2553c7e9b11c8d2405cf710015f56"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/held_pdf_inventory_checkpoint64.json",
+      "sha256": "73091ecdd406b301a44d9ce5ae97174b4606391d3bad827f60dce5772a80313e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/campaign_case_progress_checkpoint64.json",
+      "sha256": "c031e1c45cc2606c05d95ea3375fa49b9268c29367bad8513534bbce126086f1"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac64-2026-10-03/candidates.jsonl",
+      "sha256": "27d09becdb8663711a2703a000a227f035d25b84bde0219370da0f6b05ca8859"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac64-2026-10-03/proofreading-trial.json",
+      "sha256": "3fd7ba04bfe64a680582db0dfef41200683df3e84122e36860adb650b56c76af"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac64-2026-10-03/proofreading-production.json",
+      "sha256": "a8c5e22b608e43f405dccd1154b5fd568f24eb362ed002294e4b27eb8118baa0"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac64-2026-10-03/document-assessment.json",
+      "sha256": "7a23be969d4359d5e821dee37386b218e70e6c8a111e913a62b6293faed63205"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/block-specs.json",
+      "sha256": "cf88244921ea752f7c0497464d7d287634ff2051c24ddc74cb54ef6b433961f2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-native-geometry-draft.json",
+      "sha256": "96af36968d482abebbf514f62431ae5dc290955e1a1db81b6526f66bd5f9f077"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-native-geometry-final.json",
+      "sha256": "3cde4b5ddb3fd20c3e237f341f518fa0f26a72f421bffb3f0ddf0b9a1a2b8ae4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page8-selected.json",
+      "sha256": "8880a4415d78eae0a9c3e93e610e30b47d951cd5a02d520c96f185803e0fd077"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page9-selected.json",
+      "sha256": "347a3a02a35e973d94a54b45b2238d8436eda43759eef3f2c6028f708aff801d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-native-geometry-draft.json",
+      "sha256": "bfa64bc154eab5333b7dbfc929658b64de4ab8a0a046ea7f5d38e5bfad62b65e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-native-geometry-final.json",
+      "sha256": "7749f30e07b7c7e608766e151039b3cb6b5e2094c5faa1f5f454591ca14cda8f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page12-selected.json",
+      "sha256": "e37b6f7f11eb838ad47954a13c0afacacb286f5c1471308d3bc1cb74f7a14b59"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page13-selected.json",
+      "sha256": "db266426c5cd047b6278023e207f2cdc3a6e4d5b59564de2ad47d1df66fc03bb"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page14-selected.json",
+      "sha256": "8f65d59728d560a7fdf6f42e337e0c55ccee8e41789717f1ee9a4551b4319c1b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-native-geometry-draft.json",
+      "sha256": "c295e9f743eb5ac5ef11d394ec9c1d017ab95a97b9009b26eed07345b8cbac75"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-native-geometry-final.json",
+      "sha256": "74ce791b8644453675ad7acecef2209dc690784f712f5eb86f49bc7126c45fec"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page17-selected.json",
+      "sha256": "5229487e774d92f3770894326e2b57644e9513362152940efd3e76f79dc6e8dc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page18-selected.json",
+      "sha256": "4eb87ac990f6f87f20a05e11d4852ca7c2ded8ef72731938ffb4307b073d6135"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-geometry-draft.json",
+      "sha256": "2f77389e51c98981428bb6546725bad163d5a8b9524141ae4a40372e147ec172"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-geometry-final.json",
+      "sha256": "a1c36b16a1baa9d11c2ec9583883b0d636e82fca04666129d2fd06a97a57bdd0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-page21-selected.json",
+      "sha256": "dde6a6bf3e857bd59075ac77fa6a373dc05ffc650bae275b25bb764fd763ada2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-page22-selected.json",
+      "sha256": "94d48f8b4ece14aed02081f978c840569c5a1cd5863b0b435b9fe747f2392662"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-native-geometry-draft.json",
+      "sha256": "c024bce300403f6c8b1caae7b9f6fee4a3ba2137acfa4cb9464fb3361b0b7a4c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-native-geometry-final.json",
+      "sha256": "da3872e45f15f6be4a351b27f9f9b398c8f0de152aa044d5ea8a4b6c7803e00a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-page24-selected.json",
+      "sha256": "15f21e2bdfbe6314dc67ec8b2d7fc234cd5f4a4b47615f3be70fcd954a775018"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-page25-selected.json",
+      "sha256": "86153f935636a289aaf86268eea440ebf837df87462695acba0c32bfa0219758"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-native-geometry-draft.json",
+      "sha256": "6be00ba8d746a6e92618674281c9ca79d62c42650dcc2cfdab14a194c17984e3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-native-geometry-final.json",
+      "sha256": "ceaa0911ea8cfd5de4b4b531591393455eaa910191248f08fb73f240de965575"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page27-selected.json",
+      "sha256": "8734e1d0a6e0953ba60d0524289c2632327008bacb05210431e525c23408f04e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page28-selected.json",
+      "sha256": "d0a82d605ab55e0422988d9e81eb86675b1d19dec9410104a7276380ba7cb224"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/combining-mark-attachment-audit.json",
+      "sha256": "c184eaff9fb465e2fc30f9aa8b23db050a3dc491e80397c84ca205075fc35266"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/metadata.json",
+      "sha256": "b0f8bf72aa913238dac44d8d154a0b858a6ac349243dbea699ef76b6ad983a47"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/native-extraction-index-reviewed.json",
+      "sha256": "1690e057a7e875ee7e5c5a6188b1c68bef24e9b0ea41cc3d2aa3e42a62a8ef65"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/native-extraction-index.json",
+      "sha256": "93927e75ee42e1f10a31a9e5b7a93c3b1d0300eea17dc7987e0833f2045d4b5e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/native-source-copy-audit.json",
+      "sha256": "c1bd3c360fcf1f1bc96bbba468eeb151da1c3914984bcc34c16c6461e003d6c2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/native-vector-groups.json",
+      "sha256": "a9000a21230eae21e30a79cecb001b20f2abaabce4a30e282e22b00b5be1e6e9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/outlined-run-gap-audit.json",
+      "sha256": "5afc6a2cefd4d65111e79fe31ff4ddb3593d590382ea0c04e7242c1d3b0ababb"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page12-characters.json",
+      "sha256": "1a837a36bf615da7293382c9cd3eb3d2ea42819dd2cb5b61325ec3e9b3e7ce1d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page12-native-vectors.json",
+      "sha256": "c8690c63c70db33a9f518b998e86659970004fcd68abe5895d0de225a2a33ac2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page13-characters.json",
+      "sha256": "467a77f085904bea59b1cb990ed804201601defac366f5f3b6b06d5644077749"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page13-native-vectors.json",
+      "sha256": "90ea6e19a5e6912068cef7631aad5ac78372d5852529bc031f8a17a9c3ef6eb3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page14-characters.json",
+      "sha256": "396651fe18fa2ae28b39af8ba5dd8f02f1889e601d3593c934c17f57fd4eed8a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page14-native-vectors.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page17-characters.json",
+      "sha256": "b7ef15e206e9fe612898e00817fe0516c51a5d189f2a751555f4fed2ad4b89f2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page17-native-vectors.json",
+      "sha256": "f3c7bfcda81a197614e595f9ad71fd2488b0c4db4dc6ad957d3377d23d16413f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page18-characters.json",
+      "sha256": "322d98de6fc0265d0aa48cab3636ebd7512f67a218f460fd6584f772973b7b8f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page18-native-vectors.json",
+      "sha256": "bce1904ab0075da3325f969078d2698a592f4f7a00f73318b14f6ef7cd0613bc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page21-characters.json",
+      "sha256": "650b2830c3ee6238853bf2eb0cbf055d1018292c0f42157255b6965a36f76b4a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page21-native-vectors.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page22-characters.json",
+      "sha256": "9c722643e344dc16a65fa1cea374cad4c431e7e641bdf732344c4302f8480f5a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page22-native-vectors.json",
+      "sha256": "720fe447abb2919e00e3862bc27fe6e427791b3b872f9e0ce3b0f3b593ebccb5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page24-characters.json",
+      "sha256": "df43499ff0d985e667eebdab21abfc40601896ff5743b65a125b4f92984a1b8c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page24-native-vectors.json",
+      "sha256": "1f6fa339ac86cb083b2d9a40134eef12cf3f3d6948b547cb031c3933db695bc4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page25-characters.json",
+      "sha256": "5f1cb6b95d8973bfb2376ab38c2cf5fe6df28c51ec1322f06f3501aee03f06b5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page25-native-vectors.json",
+      "sha256": "a05b84bda68b1601a3180f9edb9f64ea8209169c8fd2c25f3d309e72fd637d7f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page27-characters.json",
+      "sha256": "5cbf792f7da4167462b84e4535e4bb2904c789ca0f258c710efe3b77b8d8447f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page27-native-vectors.json",
+      "sha256": "5af8f6f37d567c04c308301175cdb934318e8fbe01158662404b358b6c471e35"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page28-characters.json",
+      "sha256": "5defd4ad5bf4af9df295c95b6fa1c9dfcc3a1544e44528149eab85184966e9e0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page28-native-vectors.json",
+      "sha256": "3c0296a2bfe794a1cfb8558de2a929c563adca5d2efbc8d3226591a70fbdcfa4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page8-characters.json",
+      "sha256": "77e6c0d8501a753f498968a12dacb9351917a0a0466295f2d65bc00c4630a67c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page8-native-vectors.json",
+      "sha256": "37cc2d064bfe7b246d3621557d6cf4d5adbf9d782c0454cb8574f5301344f2f6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page9-characters.json",
+      "sha256": "38de20e330db8756a727ab7f84ed6e4e117a588c053be39c6901b87443ce265f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/page9-native-vectors.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/production-business-payloads.json",
+      "sha256": "c8f92781bb470981ab0de99469448fa6b4e17217c606090d017574bbc7587125"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/production-verification.json",
+      "sha256": "f747742fc43c036fd0238d2be6ee5818151f362edb0153b23db4379d5ad32a40"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/trial-business-payloads.json",
+      "sha256": "c8f92781bb470981ab0de99469448fa6b4e17217c606090d017574bbc7587125"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/trial-verification.json",
+      "sha256": "fadbfa330789c54c889b9ccd00f6f34e5b056539f674e118bce605640f43bbfd"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-native-marked-initial.txt",
+      "sha256": "089eba1c9c7bcecdce4931a1eaa6936b7a620b8e56fe52c650ec259ec3627faa"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-native-marked.txt",
+      "sha256": "5dc5470b7464a37138cd5f4c9aaad041818032cfbb23f83178db627491c21e55"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-native-plain-initial.txt",
+      "sha256": "a795d86fc26323bdd8d27b7b1aab39d5aaebe3b8e1d1f52b71b5191343828980"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-native-plain.txt",
+      "sha256": "78f229193dc038876d5ff0e52c6c59110d786d098b9aaededa8a6a4746fc847f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-native-marked-initial.txt",
+      "sha256": "8c2a90bc87e3fc6206b0226a3d71335e8deb1ee05975c659fd805030f355c8dd"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-native-marked.txt",
+      "sha256": "ba9ed1089a77e0f6fdc20e3b45ec7e61a26b55c6aad062f2fc6cee7effae4140"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-native-plain-initial.txt",
+      "sha256": "5865f887e38d7e6338f47dee8a9ca9134d4a700213c06d7e30af74baa513e97a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-native-plain.txt",
+      "sha256": "c678e398cb12845e3db386c18dbec756696b1a79258790a4427e1bed994dc733"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-native-marked-initial.txt",
+      "sha256": "31ed3e0f5ba98e01413073851c96b605172a9e13656919179c0590c2fdbc1f35"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-native-marked.txt",
+      "sha256": "3eb14e8472c868de1f8b52ed198aead616dcb9992735d0e16db50314c8b4eb77"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-native-plain-initial.txt",
+      "sha256": "7e51c37d09c8a56761057201cf35ff945f07b3450db144b0cfd387a84badd21c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-native-plain.txt",
+      "sha256": "f0e7686aba0d907012605eb0a95270be5647fc3abbd2192e1db4c7dc240686ae"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-marked-initial.txt",
+      "sha256": "29c497ca5c5912ac7d2cd9a9728b2e7acab62db36891c8f30c7b3240cb1fec57"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-marked.txt",
+      "sha256": "17922481d3eaf881b72b3f1526bc07206c1be7bb6ac16346d7fc0e7b4817e1d3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-plain-initial.txt",
+      "sha256": "a65f9d495b353235322fbceaef805451f71edec7257e9340357a8d986becdfb1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-plain.txt",
+      "sha256": "736c64259453718c780902a533977b16bda404a4d378793ee4d9d2c58d428445"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-native-marked-initial.txt",
+      "sha256": "63a86e6b9aaf66c8c21cb2130d759e29b3c8a32982081c156b0a5f19d5a99924"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-native-marked.txt",
+      "sha256": "bb861329e656f18f168bc4d2c0529ccdc699f2f886eb268000dcf8d118404b71"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-native-plain-initial.txt",
+      "sha256": "78ef8af2c34867aafbb2b2087373d5c0518ac289772d8dd6294f72e84311d7fa"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-native-plain.txt",
+      "sha256": "9e4dd905a1953d823b0cb574f819b3d4206c36149ea1f54fe0b1ed423926e775"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-native-marked-initial.txt",
+      "sha256": "3e76bba30cdd368347dd5fe54226f17739278afb60ea224ba8719463e6068289"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-native-marked.txt",
+      "sha256": "7c13e8307de2950f2f8653f775f5ea64c74ac8e878a60edd514d5c2e254975f2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-native-plain-initial.txt",
+      "sha256": "b1a59d43a8f70ffd9ec6df11797dd5cffe17e7a1de1f6a7edbca43cd35160287"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-native-plain.txt",
+      "sha256": "9726ad748849988b1832a77d885f5eb1278732702e6f2ed90853c8e026537f70"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/Noto-Syriac-Unicode-reference.png",
+      "sha256": "83f44a10cc710f12f7b7fcb7e6a312bfc2a953d76ba4567693ef15c2ea8352cf"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-001-source-paths.png",
+      "sha256": "feeed2f5bc45a99cb3bd767822473adde2afbe9ae8051d549a78d3a6e9e85eed"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-001.png",
+      "sha256": "400e51ce824e226cc6732f83c108b3049f8a2fbbf3b568358e910b1e5d824653"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-002-source-paths.png",
+      "sha256": "c56132a759f8b6031d3ccceb345d47b440883cd75c2aa9c2702e7db82e796587"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-002.png",
+      "sha256": "032e644698318d5d33ca9b4855acc872f7685f0b6114534e113d361fb9d687e4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-003-source-paths.png",
+      "sha256": "0e04e15ce26ee318d77d06449145d6157249fe0a05bc0d41109c6ff4478f95b6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-003.png",
+      "sha256": "ab05410d37b56a8d8665cd735ed369b68728b0b4226976ea5573c11badf53c15"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-004-source-paths.png",
+      "sha256": "4ee455f985f274b989e80848ffe0259dcfe11bfee3d7ffeaeed9b163874ba6b4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-004.png",
+      "sha256": "5b7f286cb783bbb2f440c5970236e64de085c29356dc56e4a60bfb1e858ea481"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-005-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-005.png",
+      "sha256": "7a8a96b3cec7816c4a18d12526ae622e08e4a78301b6144360a02bd9005e5326"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-006-source-paths.png",
+      "sha256": "ae44f585a2962670e4ff43a6f51ab447a70ddda3cce79d3932f9ba608494bd74"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-006.png",
+      "sha256": "0e2b21c7278d33a6f5fb342c7963186c5548d6d879afb2d57d84c16513b049b3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-007-source-paths.png",
+      "sha256": "bc434da47cc0c7d854940a83bce11be06c8bdee329af99886a95130de06496f5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-007.png",
+      "sha256": "9d9a726f7feddb5d69c3eda48b748e5ef5a8926f10983a5d02738ac18ac65266"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-008-source-paths.png",
+      "sha256": "24ce119c4b67bc9932c9a7240427477c6181fb1e2e323dc911a997dcc7ac61ec"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-008.png",
+      "sha256": "449d36a24154f1e07114526edf34ea58dc420accb8d85c2f9be5ef4d154be628"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-009-source-paths.png",
+      "sha256": "a5240d896a74469e29b1e2d28f565722e0d2fab2cd84b6c37490a4a39d06ba85"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-009.png",
+      "sha256": "78b9b1b7e6a954af4277d208a4c33ced1d88daefb478692cb8ed815a7475131a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-010-source-paths.png",
+      "sha256": "bf3eac27cbffe7746509e2b1c264cabb6c60cd5f77d4ab0bb56a5397b399e9c7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-010.png",
+      "sha256": "997777a1397c6cc07cef886f73edfa916a737f89a04ea944f191ea66db00e6d3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-011-source-paths.png",
+      "sha256": "c33021340021fc6ac8ff1c4375ad13295edd606707b9ca903fdf858d0d5c3c4b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-011.png",
+      "sha256": "468f68f777c00eb900e77bdbfcc424b2884afd399dea5042c93f7fef54ffe5f7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-012-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-012.png",
+      "sha256": "b104fb5ce203d1b11c0dfe502074201bcaeee4020010e24389e1eccb5ad97884"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-013-source-paths.png",
+      "sha256": "a096ff9040278554b159fd0c20d6777ed64ab43b1ef460d0688bfe352f618b81"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-013.png",
+      "sha256": "68a413f8a583f4a8088259f7375565f1c0a10b2dbe5baca228145cfc964563bc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-014-source-paths.png",
+      "sha256": "d301b06e6296a7275695969837a171f35e040068b20c38d5b11256b2a0856d70"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-014.png",
+      "sha256": "d24ac6cac00cb02f40a8251b5b216500c7a92eb53c13073b97c50be8d86cd326"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-015-source-paths.png",
+      "sha256": "504703bd7650f9ef1389be1c42479108cec2bf3f40825c79c0803cf6ea2b2cd1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-015.png",
+      "sha256": "04d261552e7a3506aa8844812fb0272db5fc4b45861d39d68cad926b9aa1cb0c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-016-source-paths.png",
+      "sha256": "4ee455f985f274b989e80848ffe0259dcfe11bfee3d7ffeaeed9b163874ba6b4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-016.png",
+      "sha256": "f3fde68ad0507c1b2ac41857a8d86013d76ec6cc4596ed65450a463e29510c0f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-017-source-paths.png",
+      "sha256": "0b9831e95857f5d53dde8c909ed18978a1d0a92cb56ea5fcc236edf720949147"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-017.png",
+      "sha256": "3fad686b50d65ab821646efc833a0e990fdf2e78392f62c8add0155496c41072"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-018-source-paths.png",
+      "sha256": "e1a20900cd8bbb03d6a1e53e595b7f82106e56530fb8be09e8eb2c20aa48c3df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-018.png",
+      "sha256": "a6e757b3eba700e3bb9d65b90933aa3c575bb4a5716a8202a2352036c88a9b9f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-019-source-paths.png",
+      "sha256": "c33021340021fc6ac8ff1c4375ad13295edd606707b9ca903fdf858d0d5c3c4b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-019.png",
+      "sha256": "2f61d4b75cf73983852eafe70f867d6a5f6d25bf14f70db558444e177eb1a2e3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-020-source-paths.png",
+      "sha256": "c1ed03c3204d86792829fc23fa700390bfbdbcb892a1972afa94b5dd087d864b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-020.png",
+      "sha256": "dd1f724fc9c34e8ed1707febd339a91b4e855ad31a586adea9a0cc34435f071b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-021-source-paths.png",
+      "sha256": "5c45ad5ab89c74da02acbe5a76b9bcf83056a96c649f9296edd684b81b07ecd3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-021.png",
+      "sha256": "2464556663f2a1376f7a4a4570c36f493494c4b6ac04c084b06704ca147ef927"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-022-source-paths.png",
+      "sha256": "9395da052e78a671ec91848ecf1dd8a21b275e25135eb8ad28392aa820efde5d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-022.png",
+      "sha256": "e2304230d8276b8f8503e06ebe11b237e0a675ef390e767cb6df4908d79089ff"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-023-source-paths.png",
+      "sha256": "cb10876a40dfedbeab9c0db52de1918706fc8a92e4f5d5b981f8573c43f68726"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-023.png",
+      "sha256": "908128355959caef7185ac35ea1f5f3ba442e2b6a694f366af017c10e224cda2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-024-source-paths.png",
+      "sha256": "7f675e9a37179c4390507dcb41d6e47ec102cb624a6050080d5a9dd6230810fa"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-024.png",
+      "sha256": "1b6f15418bca0d026193ff8058034f9088f89082479d5b530aea28a9e0e3e9d5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-025-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-025.png",
+      "sha256": "322edb0aad5dbacb04fd73ca59d7b59c430c13621d18629fbc90f8dde98b7e8b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-026-source-paths.png",
+      "sha256": "a1b193a2330f8e5659090f911b44c8006d742b389f74588717501d014bf62872"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-026.png",
+      "sha256": "be5a929d06c221ec15f51c43f4e4d78dceb2cef8750d17614a3d1b3da8e29e56"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-027-source-paths.png",
+      "sha256": "cb29bc2905cfd8fc90b64056d20dd4f0bba660bf1d44344e7c3ed9a1fa780099"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-027.png",
+      "sha256": "4d19d1f488216e359c634b44c83c136c0b5c729a3b3be9eba6abd7f0977aba92"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-028-source-paths.png",
+      "sha256": "8ab4615d48e7d0269b842843ae5fe1f9b53a3f27ced665002c8d907cfb7e1b08"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-028.png",
+      "sha256": "b900b675df3e25ff40c476b8f3a1f0f24d9cdb5ebc1f547f1ddbd350ee9a83af"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-029-source-paths.png",
+      "sha256": "8ab4615d48e7d0269b842843ae5fe1f9b53a3f27ced665002c8d907cfb7e1b08"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-029.png",
+      "sha256": "e6fae474c766319c4d0a9a15873ca59bed0811d1dce941da3ffc7ff069fd8b57"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-030-source-paths.png",
+      "sha256": "e1a20900cd8bbb03d6a1e53e595b7f82106e56530fb8be09e8eb2c20aa48c3df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-030.png",
+      "sha256": "d4b5519e53cf6715463533c1c8ae702fde5e8d474dc5135c2af33b3192d1b675"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-031-source-paths.png",
+      "sha256": "c33021340021fc6ac8ff1c4375ad13295edd606707b9ca903fdf858d0d5c3c4b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-031.png",
+      "sha256": "96e3a8e30b3e0554fddf64a0b637d5730612c518842aedbe2bee91a173c31dee"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-032-source-paths.png",
+      "sha256": "e1a20900cd8bbb03d6a1e53e595b7f82106e56530fb8be09e8eb2c20aa48c3df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-032.png",
+      "sha256": "d6a326824dbdaa3289ab3a7e7924da5be91701299985830b239f5c78b24005d1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-033-source-paths.png",
+      "sha256": "b7508369966339f9569a3793d1f675fd7152cd6cf99ddd1c5cc5d1d4a862f751"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-033.png",
+      "sha256": "21b8a069bbfdf0512ae20674cb9142be8d22e0bccd756445bfc1edcf5ca5f050"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-034-source-paths.png",
+      "sha256": "e1a20900cd8bbb03d6a1e53e595b7f82106e56530fb8be09e8eb2c20aa48c3df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-034.png",
+      "sha256": "073e6272c793745d320b7922ac8f4c1ee82c8a449e1dded9873fc2e90cef48be"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-035-source-paths.png",
+      "sha256": "cb29bc2905cfd8fc90b64056d20dd4f0bba660bf1d44344e7c3ed9a1fa780099"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-035.png",
+      "sha256": "dd2fdfd12379f74913d3b5a4b815d5d8c5b59d15ef99ec108fde5591ddca00d6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-036-source-paths.png",
+      "sha256": "175c63b61abdf582e0bc9a655700f108ffa694c6e8fb34859a78263bf2054508"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-036.png",
+      "sha256": "f1f6c4ad0f24121ac567bfc2322a8a6d038b3d25c015deef3f153c9454f1b678"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-037-source-paths.png",
+      "sha256": "4286635df41fa8ddcfb232ebfa7ca5058d37825b0083e414f2b896a2711cd193"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-037.png",
+      "sha256": "4db26a093b64400429e8df2b0a866a49ca8bc1a95d551a1665e0e065d7dd6b2d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-038-source-paths.png",
+      "sha256": "8ab4615d48e7d0269b842843ae5fe1f9b53a3f27ced665002c8d907cfb7e1b08"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-038.png",
+      "sha256": "3c947c22d718c1dec1894e946463372f075b02fe3eabc3edc27ba73271e8570e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-039-source-paths.png",
+      "sha256": "8ab4615d48e7d0269b842843ae5fe1f9b53a3f27ced665002c8d907cfb7e1b08"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-039.png",
+      "sha256": "5481778118e885400bdfa456a1b07ec4ee0d5e8c136ca24fcb9c6ca17332bbb1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-040-source-paths.png",
+      "sha256": "a463b55393c1c95323ea66245f771bd81d6ade2359ce8310af214422ab4d182d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-040.png",
+      "sha256": "3ed310c12cc6caa8204a7f8f35257dcc6aa4d1a15888fb2ffee4707d9a2358b0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-041-source-paths.png",
+      "sha256": "8ab4615d48e7d0269b842843ae5fe1f9b53a3f27ced665002c8d907cfb7e1b08"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-041.png",
+      "sha256": "d3d299dfde379e74883a68fd4c30cef39fcff76a8c6a420fc7bca05a6f2da94f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-042-source-paths.png",
+      "sha256": "d54fd33af7687d60f00ef99b4c430626b2845f9170e9a160b48e610607f8bbc2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-042.png",
+      "sha256": "d21de0450f076c128bb3907a3a59eee18dd96d387f96694889e65e92d512d4ed"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-043-source-paths.png",
+      "sha256": "504703bd7650f9ef1389be1c42479108cec2bf3f40825c79c0803cf6ea2b2cd1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-043.png",
+      "sha256": "8b9064b03335369cec7c1548d917f2eae3faf5a36f22681bc40057077dea2251"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-044-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-044.png",
+      "sha256": "c8d3a26d33ce3558a77119ef47bf70782825b14a69360a72daf4d86e4d40c33c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-045-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-045.png",
+      "sha256": "097dd1acaaf6a79d71f834a6ee831d14a2b5dfa6487f3d338f7b7305db34ae33"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-046-source-paths.png",
+      "sha256": "b71dce066c12b077b28a927f5917b1c36c43bcb6045152a0cd683f808452437d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-046.png",
+      "sha256": "4c41ae5565c9a2ddb286674ec802ea20e048ebc4be7bf8fb61185aea437ee58d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-047-source-paths.png",
+      "sha256": "dc92e0c30ac99fbca572a1a84e3dd105c700ff28031713f4b8891e7cd95e145c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-047.png",
+      "sha256": "8b4d49043cd4bead567e0c91f1050d2b30c3b6e42ef9d010d81f0fbcda2f2522"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-048-source-paths.png",
+      "sha256": "773e604db46d6716471a7dcdd854fe9bbb5809881ec4a128319ec565718630b9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-048.png",
+      "sha256": "3d101b39e49e50e154d7446bb0600c5218f06dfc1b5501f7d188be56d2ca2277"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-049-source-paths.png",
+      "sha256": "9d954d990dcac93fa2cdeedd246dfa3934a7ed328d197c9e62fbfef47ebb5552"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-049.png",
+      "sha256": "8ef5c3b5b86d1f2ea79ddf7009a40917b047d3b74ccddd536013c91aa73c21bc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-050-source-paths.png",
+      "sha256": "3443627756cb9dfe16236f29fa56c90ba59760dd3b0cde15271d94ba81398c44"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-050.png",
+      "sha256": "62c2fbced54d4b1830db5851afa7d0390daf41da2dcb8130e144611bf934b7c7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-051-source-paths.png",
+      "sha256": "b55e62b3b25ede49bcf06796c652b750058904bbd91e44f109ee474e606c57df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-051.png",
+      "sha256": "601e7a2a6af4cc5350b653261cdab41337f00926b786e1b23b417f3a8a024456"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-052-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-052.png",
+      "sha256": "c01e32d5e01bf170bc602186367c4baf05a06127a6f62c792945662c07f2e75b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-053-source-paths.png",
+      "sha256": "4ee455f985f274b989e80848ffe0259dcfe11bfee3d7ffeaeed9b163874ba6b4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-053.png",
+      "sha256": "93c37e420a6ec35707dcb5be5013e390a27bc6b7a5bea802b4b0640eb57734af"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-054-source-paths.png",
+      "sha256": "e2bf4d96c2639b9d0b0ef356684b169529ad4de6e1d4811b942c1a4d059e399d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-054.png",
+      "sha256": "ad28626dde7b0fae1b1bd130629348eb6b1c8c03c65446ca9e7beaf98ffbeba0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-055-source-paths.png",
+      "sha256": "9c58e0f8c43c68104ba61d00d6f152ffa36dfed9f2651036493d69bfaabe2761"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-055.png",
+      "sha256": "7a34a2231ecf1f6c6ab8fe7c507815947ca264226a6a8057086e8556fa8de56d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-056-source-paths.png",
+      "sha256": "f20d6860e486fccef16cefee833f5062acac0ec8f5620d3f3b1dc401effedefb"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-056.png",
+      "sha256": "a693f712582b3cb9fd214bffd0f8cefdf36a88d912be23464de7b698eb90f5c3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-057-source-paths.png",
+      "sha256": "a8a6e8c23904d1ff7af61dca6df6d2e835fbface00ecf4f235b5c87948b5a1cd"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-057.png",
+      "sha256": "bff39771639060dc0497a4061d86da6df1e7ad899509cc42ef82365e50012133"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-058-source-paths.png",
+      "sha256": "b4c56c4c34e824bb45ce9d754cb765167673e8bf53d481aef15256d3b489fd93"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-058.png",
+      "sha256": "075f2f3fe15d835ece1d225aaeebc1e81792e4f75f94ac400be784e436f1fb98"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-059-source-paths.png",
+      "sha256": "cb29bc2905cfd8fc90b64056d20dd4f0bba660bf1d44344e7c3ed9a1fa780099"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-059.png",
+      "sha256": "c785dcee520d31bf4ca3fa98708ac2337aa91441eda28f9918d8450b83bfe218"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-060-source-paths.png",
+      "sha256": "f20d6860e486fccef16cefee833f5062acac0ec8f5620d3f3b1dc401effedefb"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-060.png",
+      "sha256": "cf3bff67a6bac56b01c6f37220c326c74121350cea74a1ed09b676dd95f0ca9b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-061-source-paths.png",
+      "sha256": "e1a20900cd8bbb03d6a1e53e595b7f82106e56530fb8be09e8eb2c20aa48c3df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-061.png",
+      "sha256": "9d5f15b73c964ecdacb44380ca14b8da09920058eaefad19651844448ca2338b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-062-source-paths.png",
+      "sha256": "c4bcef22c69e6a5ad000575985da649cdb576a4e2f142117dd42364b1ec62d65"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-062.png",
+      "sha256": "928ea378ac809817c5dff79958350b4caf1e49771b1b50ac7905c19116304860"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-063-source-paths.png",
+      "sha256": "a463b55393c1c95323ea66245f771bd81d6ade2359ce8310af214422ab4d182d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-063.png",
+      "sha256": "f6b22ea32ad5b3a36153a37af4d3169769109bbbb60c7f2f9fd9d0900c3c51ca"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-064-source-paths.png",
+      "sha256": "bf4eb47806e643370d81eab28dd780cdc56e11dcc1615ec73febc35c6a73865d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-064.png",
+      "sha256": "e55d98db1d6a68dfed46c814152ad3399447e2eb9c0ff0612e7335cb876cc0a8"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-065-source-paths.png",
+      "sha256": "5e0d3ef369f9b35c5405dd48b08237e6b997b771c9d83efbf3689f190b8943ee"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-065.png",
+      "sha256": "0d0f72700617e5da91dfec61adde2454a606de03973ccd4ebf5e51f6c6f689b9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-066-source-paths.png",
+      "sha256": "89c6ae40338ab0897b6ae29dfc89b7211c8488341c28f8c233cce44d94c93643"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-066.png",
+      "sha256": "533423d407d70f435630a111eb4b6ba0840f17c85654c569b3ffc88914185c64"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-067-source-paths.png",
+      "sha256": "a463b55393c1c95323ea66245f771bd81d6ade2359ce8310af214422ab4d182d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-067.png",
+      "sha256": "9c279103c36689b443fcc6bd4c8b95f9b2170eafd21487691bf275a20f631f78"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-068-source-paths.png",
+      "sha256": "89694a6a01a1138b3ed9027b87e303fd49108f32b1a6007f45a993b35e8d972b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/VEC-068.png",
+      "sha256": "1d27d16688333a761e4d71459cd32954ab070f40c8a11429659968d56a50a5b0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page8-detail0.png",
+      "sha256": "1fe07fb92fad35a3a20fb9a8e85f9e341d0e0b4a5df4cd84c6d4c9b965dcd200"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page8-detail1.png",
+      "sha256": "224bcf4448e82f5ce9b8d562c597df188d91989fe887e6fa50cff5d948f8cee8"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page8-detail2.png",
+      "sha256": "547a21d9add32d2f8bc550221fe2f5b47d4a6f0169e10c51010e6f9f1d9dbfe5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page8-detail3.png",
+      "sha256": "46558607c978f3b4d5604982b4dbb5ea368e07e1a20c7142b8701c2f02e9d526"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page9-detail0.png",
+      "sha256": "c8ddc9e636c348ea8542a17c9d3de5036c7fc6becfeeff9a6306118f81f2a028"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl1-page9-detail1.png",
+      "sha256": "de5019424c3812a789a536d834c7fbb83a70bf863f938b1d19974ad9767abd79"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page12-detail0.png",
+      "sha256": "3acc8a021bae39d82dfc1f1a65abf566a8a372123fc716d43f9ab271738d5da8"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page12-detail1.png",
+      "sha256": "6a9a1d4dc59ef5a56df6b4733ebf44ad0b7c70b2a90f8736c29983bbcf5a825e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page12-detail2.png",
+      "sha256": "9a35f1f007a729e479548b15d76761d6ff6f8e3ce91378783958b0b8414bd02a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page13-detail0.png",
+      "sha256": "eb636340a99a5a624f4e422b9355f38d75a05faea7066c3c009cc48055acb0d7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page13-detail1.png",
+      "sha256": "33b43675d9604bc0c650296f36bd2029c8ab2d3d4c516dd2ac843e5ddf530db2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page13-detail2.png",
+      "sha256": "b3aade50201370c34881bf0a73e5bf9c7fbb5369706b7b53e882a72aa676db58"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page13-detail3.png",
+      "sha256": "6d5c652ffd098e447a3c90ee65a59c0cc4e9bbb2e5b9ba39d1d4073349ac008c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page14-detail0.png",
+      "sha256": "8c87b155301baba0062447358a9d075f4e5512175946cd1e51629f9495d7bc32"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl2-page14-detail1.png",
+      "sha256": "920d70c86994fb78d4f654ffe0d8d7d8fdc457411f188d75a47682070146e7d0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-line2-gaps.png",
+      "sha256": "8eab46d81efa561a4a31c4d8f7fb1e92add13ac50f8663e3553b7706cb1c21dd"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page17-detail0.png",
+      "sha256": "bdac0c4c4c537d16571f238633f2152a557474cdecdfe6bde32ecacd2d2c3429"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page17-detail1.png",
+      "sha256": "0ef0840b1c13dc1ab8195634534f6bdeda328a9b44fcadcfc0893df83a798a73"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page17-detail2.png",
+      "sha256": "4125f74fc7ee3de7a3af998ea29e53afc5fc001ec9df5096babc23c57eb11c78"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page18-detail0.png",
+      "sha256": "4cb9f8a94eef748758e0f2a7e2a75f546d11abe7f49d0ea6a646ab66f3dfe2b1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl3-page18-detail1.png",
+      "sha256": "2356e1ea9b094d96c4894c1c26ad86e0ad85a5350f1ba489e325068aea100e97"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-English-magical.png",
+      "sha256": "0b94e9a69ce0553c1c061cb5e44d396b7c6930607ee7c668fef24aa0d8dc875c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-native-magical.png",
+      "sha256": "60d2f7c3f123d8a8f83f62c52a12e8d3aa3fd6c36f4d9e21ea4517dd6baa90e4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-page21-detail0.png",
+      "sha256": "5bf3bc517286e601e74993509a8122607aec1ce768f5944027e173ca5fbbb92c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-page21-detail1.png",
+      "sha256": "abbb44363017bb0dba3bfa672620223715013cc495c599f5cfb55fb01948c0ab"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-page22-detail0.png",
+      "sha256": "00dca94cda71bb6f9321e6126cb3d5f1921d80e2eb87426984ecb5581928436b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl4-page22-detail1.png",
+      "sha256": "8f213458cb75496cf1cfd5262ad51c7deb004f448bf15d15d767fbd8f8bed04a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-page24-detail0.png",
+      "sha256": "6735cc477cfccc1cffea7ac5e19c171b2f5810f3d3e27bb461e8437492b8c69b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-page24-detail1.png",
+      "sha256": "1da83cc2e4debfb636b944df914eec510ce2316f2cec3e08b8299ed8ca1d120d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl5-page25-detail0.png",
+      "sha256": "b710020182c07d8cacef8435d3361945a80e0f648fa2b1042526b135bc553ef1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page27-detail0.png",
+      "sha256": "0572187a20fdd31d380f696c8088250810aa6dce22df815e1e3fbe7e2eef29e1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page27-detail1.png",
+      "sha256": "aa36d0d43bd224da601a175393fc46b08b5893244419fe50a119c18a81125aa4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page28-detail0.png",
+      "sha256": "e38cb6c1a09c2feb9f73daae9ff877a6ce672393b220456cb5bf57aec9e33406"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page28-detail1.png",
+      "sha256": "c91bad48726f281543641457aa7fa69267c17af4d0d0c0cc85ae23ad80346c7f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/bowl6-page28-detail2.png",
+      "sha256": "70ed162f7878f67ffdaa5b2894adc4470a578708cc2aceb5033682232d2313ab"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector-contact-sheet0.png",
+      "sha256": "90459f6e769c85632e9c3e68c958c933bd17f36029aae42455e6158dbfb0c37d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector-contact-sheet1.png",
+      "sha256": "acaf182cbf6c3aaa764a109d1146d4f1255b2f9523ceeafcf7dc252dff60e7f9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector-contact-sheet2.png",
+      "sha256": "6f3a86d55142e4c6cfc16c020adff46a9f6162524dfcc1900047fa3f8ce334df"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector-isolated-sheet0.png",
+      "sha256": "2133a374b1abd025a917b4084874172c3def0f3a1a61ca17763d179a3628184d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector-isolated-sheet1.png",
+      "sha256": "3f7dc859a53e699303e8514d9de05760e4bc82080be20601a333d058eaefffd2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector-isolated-sheet2.png",
+      "sha256": "b494204cc8aa0e2f0c1330271ca29125200810dd809e7d75a39a4a8bdb4142e7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page6.png",
+      "sha256": "d212fbdbb8b43cfd9d8fe95943093557c9327f06d6a478b76df19dd0911704f1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page8.png",
+      "sha256": "94712b1baa03a03b6f93653cf4bad37b0487c2662bd0091db9d9159d4f00a7db"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page9.png",
+      "sha256": "dc3d6cb60cedddce83ca22467ac3194125bb562651c8a0135d43a50da204ce23"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page12.png",
+      "sha256": "e6c1561223b63bd55b5a19a261b08a1c5b85d65cfef3137b40bcfad02b94c3f0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page13.png",
+      "sha256": "d5e454593e387f3f56547ff4aea819664775ebbdbea9d8f76617db604594868b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page14.png",
+      "sha256": "f1a919aab37856d0f375debe8d6c80ee4fc2e0449de47124807ea41267046d90"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page17.png",
+      "sha256": "03f5d1bd8ea89c4cb7c6010dec0b25747b48893af0d157b81f868433ab686f9d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page18.png",
+      "sha256": "ae7279bc5a0651d350c0552a358756668b50854b3f53effd555789698f7b71bc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page21.png",
+      "sha256": "780d08eeeb14f71ac1d88aa27c878719e47b977d8ea9d4556c169be4d56e564e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page22.png",
+      "sha256": "c48ed6a825995a261b1b53f1e52db513d8f1820cd98034e38f8812951bd4e4aa"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page24.png",
+      "sha256": "76108deed5756568d6e0d34e5bf5facc24175702e386c7d194e76cccbc4a82a4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page25.png",
+      "sha256": "82bea894b1ad8c02469300e10caffefa4387789627b98f07802b70c5a06a5239"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page27.png",
+      "sha256": "2b7a93d2c95a4db52c86f9d8c7f277ebc965a43a4e967fb629d6e420ef112181"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page28.png",
+      "sha256": "7d51e5cab0af73295e88bc48c908ee52fb5034a8a9249b255132f902a7697405"
+    },
+    {
+      "path": "/System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf",
+      "sha256": "d75500075158475aa8d9c5d586196945a0d92d1c27c5d66ecfb0c4f4af35ffe8"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/reader-verification.json",
+      "sha256": "ad28900763cd3357a79c02fae9a2cde4ec1b25bf315c39a1f39e762ef2d1eb0f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/reader-build-final.log",
+      "sha256": "9d850fd6802d45e94610f2656b6f081a079d5e966331ac24c63edb2167fda94b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/tests-final.log",
+      "sha256": "9095eaa25978f99af6ffeb24c3118285af0a52181dea2090246aa19d110d01f3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/node-tests-final.log",
+      "sha256": "32728d1fe22f5f03ac9cd5b9f91b5e477e688c9f3458eef6645f8a6d59c2c017"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/extract_native.py",
+      "sha256": "f35b0015fa8b8fd55d69de23a6418f9cd2d1e37cce263f7297ec96176dd24faf"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/finalize_extraction.py",
+      "sha256": "3313de2df6d16d44c8206cae0f897ba4ded6fb3ed8443023568a8724f693b29e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/inspect_geometry.py",
+      "sha256": "d17209880cf0ec44e67cac23cbdb28f17569e1de53159d0385156f9fb8a267d9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/prepare.py",
+      "sha256": "5fb757e09c17ffa097b591b9b982fe96edbfff3d766d59a26f9a41e79e650863"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/prepare_reviews.py",
+      "sha256": "1fac6a0495b6d2b5ea09cddecdd863ce7cc69f339c76a3885e56622bf4ed4094"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/record_checkpoint.py",
+      "sha256": "aeaf9aeeb026c290d08bc442be2e5857d428aed4d49437f6bb17a9a6651475b9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/reference_font.py",
+      "sha256": "1762d875bc461a098d5445ba4faa5799a6685df19f70a10e848c4416e021f3ed"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/regenerate.py",
+      "sha256": "20545ce6c27a10d9188b6ea097fd44a299828ef9ec27fad7e8ea2834c3d43dc9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/render_details.py",
+      "sha256": "18ffb9614b082a609cbc0623119bed488038e4dc6f17aaf700bb86f0f0232dd1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/render_vector_shapes.py",
+      "sha256": "4e347a5e24e626346037bbed2128f4b4f37a58c336ad4fb7c54de16177f51faf"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/vector_audit.py",
+      "sha256": "f677b217fcc166930354a78f940bbb4823951b6fb118258fb184488ba002eff6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/verify_batch.py",
+      "sha256": "e3ed73965b1c5b6ff383cf4205c75b859b034a1cbdfb310fb10a7ce507f8650b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/verify_reader.py",
+      "sha256": "550ce83321b92b8a270751f9c5bf5c87c91d0a039199a0069c61c8dc374c386f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/reports-final.json",
+      "sha256": "6881d4f4bcf691649d393a1d00bb1e9089fd1ec3ff246816cd366112d09288ea"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac64-2026-10-03/state-final.json",
+      "sha256": "ad858b7e49aa618d88b8e7b2418ed524a7314897166e5921bb1d81dc0719187f"
+    }
+  ]
+}

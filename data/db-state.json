@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "18047bdb75ff69d4e56a5c36c1c8250fdadad988a347006ac3643684b6ef5a43",
+  "corpus_digest": "61124b7c8d01a6302760defd575859bacba05561e5c0c9df098c0f704ec0d9a9",
   "migrations": 21,
-  "note": "Checkpoint63: two main Ford\u2013Abudraham2018 original Mandaic blocks source-copy checked,1251ink glyphs/208grey positions/33native anchors; six Syriac blocks pending; all earlier corpus rows retained.",
-  "recorded_at": "2026-10-03T03:02:31+00:00",
+  "note": "Checkpoint64: six partial Ford\u2013Abudraham2018 Syriac native captures;159anchors/97detached marks/60explicit outlined-run gaps. Earlier rows unchanged; two Mandaic blocks remain checked; local native decoding and final checks pending.",
+  "recorded_at": "2026-10-03T03:29:42+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -63,8 +63,8 @@
       "rows": 34804
     },
     "document_assessments": {
-      "digest": "e808d854ca32de57c9fd8ff76871795c131952116225fb50f2e0a519c064218f",
-      "rows": 121
+      "digest": "024b485543de04e33cde7ab0ab68879ebf605117407e1b89814ce9c79c508730",
+      "rows": 122
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -151,16 +151,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "fd6007dc8d3608098533f0579d2ab92b22539bb571cc3b9f14f56b196cff35b6",
-      "rows": 1637
+      "digest": "77599a2200d5e9cdc9f97982497dcd360951d5ee9ee428295fb2f7839e08e913",
+      "rows": 1643
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "1d37dd06e2f3a3381746c31767e755860770f58b3a14af85b340d8fb83ebcf0a",
-      "rows": 2197
+      "digest": "8ec6d80ab7f4693d844a45a20f2fcd0f91ceb0f58355898d6d3f3005dc86e6bd",
+      "rows": 2203
     }
   }
 }
