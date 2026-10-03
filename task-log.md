@@ -25,6 +25,16 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Montgomery31–34 printed transliterations, checkpoint89
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — four corrected copies/four appended proofreading reviews, digest `e64e71b695d9`. Opening clean/state matched88; original rows/all earlier reviews retained,37 other tables/all1880 identity memberships unchanged. Trial/production digests equal; proofreading replay zero/every row/digest unchanged.
+**Tests:** 394 Python +57 Node =451 passed; subsequent sequential private reader build7/7. Independently verified all2283 text contents/attributions/classifications/current statuses,2143 media assignments,1232 local image hashes,88 capture hashes/source assignments and1880 identity memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state/receipt current.
+
+- Fresh four-page Montgomery1913 comparison for printed Hebrew-letter Syriac transliterations31–34 (PDF229/231/236/237), four bounded blocks, all overlapping strips and narrow complete-word/point details. Convention pages PDF17/123 freshly checked. No31 complete normalized printed-copy check;32–34 confirmed corrections remain partial with specific outstanding upper-mark/base-letter/restoration checks. Nine precise inferior source-uncertainty points and fourteen precise superior pairs retained separately. Corrected copying errors, omitted letters, short internal loss points and repeated name fragment; source variants retained without English/parallel/grammar harmonization. Ambiguous broad-view guesses/clipped details rejected or resolved from full-word views.
+- All30 main native Montgomery printed blocks retain current checks (No27 author-printed1–11 only); source has an additional checked No6 excerpt, so31 native rows overall. No31 is a checked printed transliteration;32–40 remain partial, without original Syriac/Mandaic glyph recovery. Inventory1,449checked/98partial/oneunreviewed; historical45 native gaps/40 English project drafts unchanged. Both private holdings rosters refreshed, exactlyfour target rows changed. All249 original members/histories retained exactly,32linked/217unlinked/all attempted/zero whole cases complete; no added frozen-case attempts. Miri10resolved/26requests unchanged, allten supplied documents already processed including fgaf025.pdf.
+- Private checkpoint89: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0089_Montgomery31_34_printed_transliterations.json`; complete source-specific remaining tasks in current reviews and `data/private/research-work/Montgomery31_34-translit89-2026-10-03/remaining-reading-gaps.json`. Public content-free receipt: `research/receipts/Montgomery31_34_translit89_audit_2026-10-03.json`. Backups retained/pruned to last ten under recorded rule. Source expressions/images/observations/manifests remain private. Goal active; continue remaining32–34 marks/letter checks,35–40 and other held-reading/publication cases. No new access blocker/message/reset/merge/reuse approval/contact/purchase/push/deploy/server restart.
+
 ## 2026-10-03 — Codex — Montgomery17–19 printed-copy checks, checkpoint88
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research/capture Goal).
