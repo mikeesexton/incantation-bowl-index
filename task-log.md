@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Montgomery native7–9 printed-copy checks, checkpoint85
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — three corrected copies/three appended proofreading reviews; digest `922d9b32bede`. Opening state matched checkpoint84; full original rows/all earlier reviews retained,37 other tables unchanged and all1880 identity memberships preserved. Trial/production digests equal; replay preserves every row/digest.
+**Tests:** 394Python+57Node=451 passed; subsequent sequential private reader build7/7. Independently verified all2283 text contents/attributions/classifications/statuses,2143 media assignments,1232 local image hashes,88 capture hashes/source assignments and1880 identity memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state/receipt current.
+
+- Fresh complete Montgomery1913 printed native7–9 comparison: six whole pages (PDF151–153/160–161/167), seven bounded native blocks, overlapping strips and enlarged word/point details. Rehashed held original capture. All three copies corrected,33 precise source inferiorpoints encoded (7:nine;8:ten;9:fourteen). Source anchors/restorations/repetitions/unusual forms retained independently of grammar/English/apparatus.
+- No7 left-column CBS16007 kept separate from right-column CBS16081/Myhrman; crosspage continuations and shared-width closing17 preserved. Corrected copied restoration letters and restored exact inferiorpoints. All17 anchors now checked as normalized printed copy. No9 distinct printed client spellings, interior1–10/Exterior11, crossphrase restoration boundary, short baselinepoint/loss run and closing words corrected; complete normalized printed copy now checked.
+- No8 prior copying doubt resolved; corrected short internal loss runs, omitted/copying letters and ten exact inferiorpoints. Remains partial for dense inferiorpoint placement, additional short baselinepoints and fragmented divine-name strings. No fullcopy certification inferred from wholeblock comparison. Initial clipped/neighbor detail views are identified privately; fulltarget views control.
+- Copy checks do not certify original clay/diplomatic/specialist/semantic/translation/nativegap/sourcewide/wholecase completion. Allsource/editor/locator/language/script/rights/public0 unchanged. Source expression/images/observations/manifests remain private outsideGit; public receipt metadata/counts/hashpointers only.
+- Reading inventory1548=1437checked/110partial/oneunreviewed; all current partial pointers saved, both holdings rosters refreshed with exactly three changed targets. Fixed249 originalmembers/all histories retained exactly;32linked/217unlinked/allattempted/zero wholecasescomplete, no new frozenattempt or identitydecision. Publication835/1052(79.4%), historical45nativegaps,40projectEnglishdrafts and all31alreadycheckedPognonFrench originals unchanged.
+- Miri10resolved/26requests retained; all ten supplied documents already processed, no new accessblocker/message/reset. Latestten prebatch backups retained with hash-bound pruningrecord. No push/deploy/serverrestart/purchase/contact/merge/rights or scholarly adjudication.
+- Goalactive; prior/current turns verified corpusprogress. Finish Montgomery8 densepoint/shortgap mapping; continue native10–19 and other partial holdings, publicationcasework and original-script/acquisition gaps. Receipt `research/receipts/Montgomery7_9_native85_audit_2026-10-03.json`; private checkpoint0085/manifest `data/private/manifests/Montgomery7_9_native85_2026-10-03.json`.
+
 ## 2026-10-03 — Codex — Montgomery native4–6 printed-copy checks, checkpoint84
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
