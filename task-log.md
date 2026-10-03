@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Montgomery25 final copying checks, checkpoint79
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — one corrected native copy and one append-only proofreading review, digest `6b735320f81a`; opening clean/state match checkpoint78. Original full78row/all earlier reviews retained,37other tables unchanged; trial/production digests equal, replay preserves every row/digest.
+**Tests:** 394 Python +57Node=451passed; subsequent sequential private reader build7/7. All2,283text contents/attributions/types/current statuses,2,143media assignments,1,232image hashes,88capture hashes and1,880identity memberships/counts verified. Seven reports/exports regenerated; roadmap, inventories and state recorded.
+
+- Freshly collated complete Montgomery1913No25CBS16009 Hebrew-script edition printed207/PDF213, all7anchors including continuation before7. Viewed wholepage,6overlapping high-resolution halfblocks, isolated words/marks and same-pagefont comparators. Resolved both remaining project copying strings as printed; mapped sourcepoints on three-letter/one-letter words precisely and restored two overlooked inferiorpoints. Corrected wrong copiedrestorationextent and one consonant after directfontcomparison. Eight localizedupdates; all10sourceinferiorpoints now encoded. Sourceunusualforms, restorations, uncertainty and lossruns retained; earlier78corrections/repetition/anchorplacement freshlyrechecked. Nativecopy now reading_text_checked, no originalclay/diplomatic/specialist/newtranslation/sourcewide/wholecasecertification.
+- Some preliminary details clip/show neighboringwords; complete page/overlappingblocks and later whole-word/font views control readings. Exact coordinates/limits documented. No grammar/English/parallelwordharmonization. Source/editor/locator/language/script/rights/public0 unchanged; protectedsourceviews/observations/manifest remainprivate, fulloriginalretainedinledger.
+- Corpus2,283texts/1,548readings=1,424checked/123partial/oneunreviewed. AllheldPDF/nonPDFrosterhashes/statuses independentlyrefreshed; exactly1entrychanged.58PDFsources/53appearance-bearing/1,342appearances,2,143media/1,232images/88captures unchanged. All1,880identity memberships andfrozen249originalmembers/histories retained; independently32linked/217unlinked/allattempted/zero wholecasescomplete. No new frozen history or historicalnativegap completion claimed.
+- Miri10resolved/25requests unchanged; no newaccessblocker or outboundmessage. Allten supplieddocuments previouslyprocessed; no duplicateintake/reset/identitydecision/publicapproval/institutioncontact/purchase/push/deploy/serverrestart. Latestten prebatchbackups retainedwithhash-boundpruningrecord.
+- Goalactive; previous/current turns made verified corpus progress. Return to217frozenpublication routes, continue123remainingpartial native/directscholarlytranslation rows and exact originaleditionacquisitions; checkedstoredcopy notwholecasecompletion. Receipt `research/receipts/Montgomery25_native79_audit_2026-10-03.json`, privatecheckpoint0079.
+
 ## 2026-10-03 — Codex — Montgomery native editions20–25, checkpoint78
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).

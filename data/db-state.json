@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "f6a5ac33e63a2f1c2180af04463c5e25776a0459da8a2be2c2ac73d2c3e679d1",
+  "corpus_digest": "6b735320f81a0e58c8d07bdb4b0eed61048d1a30b58c60cc712f58e14031a960",
   "migrations": 21,
-  "note": "Checkpoint78: corrected six Montgomery native copies; five source-copy checks, one retained partial. Tests/private reader verified.",
-  "recorded_at": "2026-10-03T07:33:38+00:00",
+  "note": "Checkpoint79: Montgomery25 final copy doubts resolved; eight corrections and complete source-copy check. Tests/private reader verified.",
+  "recorded_at": "2026-10-03T07:42:25+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,15 +151,15 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "df95e0166420c4d711ab510ac784ee136ffd4ce600cd827357d51b641175c818",
-      "rows": 1741
+      "digest": "1b92e433b4a7943091b5d98867d6f4075ad2b3d49d20c692d07748b4e3f1b4ce",
+      "rows": 1742
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "271664c74b1e11865b9fc56b2b6f34defa4808fe29bcde7808c2ed4c713c3ea2",
+      "digest": "eb05cbf7a480f5033d7bcc319dd0969b29b48ad9a4011d82531fb1f86237c2a1",
       "rows": 2283
     }
   }
