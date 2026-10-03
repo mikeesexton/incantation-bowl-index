@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Held2018 chapter and frontmatter provenance, checkpoint61
+
+**Claimed:** META-001
+**Corpus:** changed (two capture-source assignments and two immutable correction-ledger rows) — state digest `97e08595018b`.
+**Tests:** 394Python+57Node passed; private reader7/7. All2,179texts/2,101media/1,190localimagehashes/87capturehashes and sourceassignments verified; exacttrial/productiondigest and zero-change replays. Every other row across39tables identical, full originals retained. Receipt artifact hashes pass.
+
+- Clean opening matches checkpoint60/commit8679665; separateMETAclaim before edits. Goal active; all ten supplieddocs remain processed, no duplicate intake/reset.
+- Twelve original sourcepages viewed. CAP-9DCE54EC60D2 exact2018FordAbudrahamchapter title/authors/FindsGoneAstray volume/ISBN/copyright and beginning75/end111 inspected; PDF42pages comprise5frontmatter+37chapterpages. Intro/editorialkey declares6Syriac/2Mandaic mainbowls and grey partialletters/square restorations/round uncertainties. All37expectedprintedfooter numbers present in textlayer;8exactnumberedmainheadingcandidates discovered for nextTEXTbatch, not objects/appearance/reading claims.
+- CAP-2A7F5089C728 exactHilprecht title/authors/ISBN/copyright/CIP match existingcatalogueSRC-8A145FAA2EBB;30pagepacket cover/frontmatter/introduction endingprinted7, distinct from separatelyheldcomplete335pagebook. Actualcopyright/CIP2020 matches existing source and supersedes earlier2019operational shorthand; no sourceyear mutation.
+- Hashboundprivatecapture-source-corrections manifest rehearsed/applied throughCLI: previouslyNULLchaptercapture nowSRC-513E8FD6E55D, previouslyNULLfrontmattercapture nowSRC-8A145FAA2EBB. SamecaptureIDs/bytes/hashes/URLs/retrievaltimes/robots/rights/access/notes. Two immutableledgers retain complete originalretrieval rows; no documentassessment silently reassigned, eachcapture had none. No new acquisition/source/object/appearance/text/media/identity/readings/rightsclaim.
+- RegisteredPDFinventory58sources/52appearance-bearing/1,305appearances, zero unassignedPDFdeposits;87totalcaptures unchanged. Corpus2,179texts/1,452readingrows=1,318checked/133partial/oneunreviewed; metric includesprojectrenderings/dealerquotes, not complete independent editions.2,101media/1,190images/45historicalnativegaps unchanged. Frozen24932linked/217unlinked/allattempted/zero wholecasescomplete; allpriorhistories preserved. Miri10resolved/20requests unchanged; no duplicate message.
+- Content-free receipt research/receipts/held_assignment61_audit_2026-10-03.json; original snapshots/sourcepixels/textlayers/manifests private. Roadmap/reports/export and complete private reader regenerated, statewritten, localcommit only. No push/deploy/live restart/purchase/author contact/uncertainidentity/scholarly/reuse decision/reset. Next separateTEXTindex eight2018mainbowls and independently capture/check native/transliteration/English/photos with exactgraphic fidelity; continue217publicationreference routes and NLI156exact2025lead. Goal active.
+
 ## 2026-10-03 — Codex — Moussaieff exact routes and held-deposit omissions, checkpoint60
 
 **Claimed:** CONC-004

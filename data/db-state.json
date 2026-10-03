@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+  "corpus_digest": "97e08595018b57294a202b08288edc5f3765347164a6269687d54e3d930c6550",
   "migrations": 21,
-  "note": "Checkpoint60: four frozen exact-route histories extended, held unassigned deposits discovered; corpus unchanged. Goal active.",
-  "recorded_at": "2026-10-03T01:58:53+00:00",
+  "note": "Checkpoint61: two held capture-source associations repaired with immutable original receipts; eight2018mainreadings queued; Goal active.",
+  "recorded_at": "2026-10-03T02:06:25+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -19,11 +19,11 @@
       "rows": 2803
     },
     "capture_source_corrections": {
-      "digest": "dd3784169b3420d3582959e5c7c09a2ca359893a6cf73bed625ce39ed149dd61",
-      "rows": 1
+      "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
+      "rows": 3
     },
     "captures": {
-      "digest": "d35f1373a1477d082ed77cbbe93bc798d6ae6ded206b044bc55542fb27e9d51e",
+      "digest": "25c6441d93e2b46fd16b98dc60dbc30207a3de871c5038de910e6e8ccf4cde9f",
       "rows": 87
     },
     "catalogue_metadata_corrections": {

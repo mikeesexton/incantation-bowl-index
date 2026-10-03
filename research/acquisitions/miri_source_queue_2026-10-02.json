@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T01:56:55+00:00",
+  "updated_at": "2026-10-03T02:04:21+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -384,5 +384,10 @@
     "scope": "New exact NLI9467.24/Moussaieff156 target added to existing2025article request; no duplicate acquisition.",
     "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
     "host_id": "durable"
+  },
+  "checkpoint61_held_assignment_repair": {
+    "receipt": "research/receipts/held_assignment61_audit_2026-10-03.json",
+    "findings": "Two alreadyheld unassigned deposits source-registered. Complete2018FordAbudraham8bowlchapter now indexed as held; no newacquisition or reading completion. Hilprechtpartial30pagepacket retains extent and existing2020sourcebibliography.",
+    "new_acquisition_requests": 0
   }
 }

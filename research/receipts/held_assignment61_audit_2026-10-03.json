@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "checkpoint": 61,
+  "created_at": "2026-10-03T02:04:21+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+  "corpus_after": "97e08595018b57294a202b08288edc5f3765347164a6269687d54e3d930c6550",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "changed_capture_source_assignments": 2,
+  "new_immutable_capture_corrections": 2,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 58,
+    "appearance_bearing_sources": 52,
+    "indexed_appearances": 1305,
+    "unassigned_pdf_captures": 0
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/held-assignment61-2026-10-03/campaign_case_progress_checkpoint61.json",
+    "sha256": "f18f13752499985c667cc4749c8b2eb35fc33aee69085b66132bddcc2e340071"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/held-assignment61-2026-10-03/held_pdf_inventory_checkpoint61.json",
+    "sha256": "9298632af70dbfc98473049395461620b70dffa5fd564248dbbef0b2efabdcc6"
+  },
+  "scope": "Checkpoint61 repairs source associations for two alreadyheld unassignedPDFcaptures after12originalpageviews. CAP-9DCE54EC60D2 now links exactexisting FordAbudraham2018chapter SRC-513E8FD6E55D: title/authors/volumeISBN/2018copyright/printed75–111 verified,42PDFpages comprising5frontmatter+37completechapterpages; eightmainbowls6Syriac/2Mandaic remain unindexed/untranscribed/untranslated/unproofread. CAP-2A7F5089C728 now links exactexisting Hilprechtcatalogue SRC-8A145FAA2EBB;30page cover/frontmatter/introduction endingprinted7, notanotherfullbook. PDFcopyright/CIP2020 match existingbibliography and supersede earlier2019operational shorthand; no sourceyearchange. Hashboundmanifest trial/productionexactdigests and eachreplay0;2immutablecorrectionledgerrows retain completeoriginalretrieval snapshots; samecaptureIDs/bytes/hash/time/URL/robots/rights/access/notes; allotherrowsacross39tables identical. RegisteredPDFsources58/52appearance-bearing/1305appearances;unassignedPDFdepositsnow0;87totalcapturesunchanged. Native/English/sourceimages stillnextTEXTbatch, no reading/editioncoverageinflation. Corpus2179texts/1452readingrows1318checked/133partial/oneunreviewed;2101media/1190images;45historicalnativegaps;fixed24932linked/217unlinked/allattempted/zero complete;allprevioushistoriesretained;Miri10resolved/20requests,no duplicate. Goalactive.",
+  "next_actions": [
+    "SeparateTEXT batch index/extract/sourcecheck eight2018mainnative/English readings and source photographs, retaininggrey/restored/uncertainletterkey.",
+    "Continue217publicationreference gaps and exactNLI1562025primaryedition acquisition.",
+    "Retain original protected payloads/private source extents and20Miri requests."
+  ],
+  "validation": {
+    "database": "data/private/ibi.sqlite3",
+    "corpus_before": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+    "corpus_after": "97e08595018b57294a202b08288edc5f3765347164a6269687d54e3d930c6550",
+    "tables_verified": 39,
+    "changes": {
+      "captures": {
+        "changed": 2,
+        "added": 0
+      },
+      "capture_source_corrections": {
+        "changed": 0,
+        "added": 2
+      }
+    },
+    "all_other_rows_identical": true,
+    "original_retrieval_snapshots_retained": true,
+    "integrity": "ok",
+    "foreign_keys": "ok",
+    "trial_production_fingerprints_match": true,
+    "trial_production_replays_unchanged": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2179,
+      "all_text_editorial_statuses_verified": 2179,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2101,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    }
+  },
+  "protected_payloads": "Full retrieval snapshots/primary source pixels/textlayers and manifests private; content-free metadata/hash receipt.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0061_held_chapter_capture_assignments.json",
+      "sha256": "d25315bfa35ef0b9ffede00cf904d8f4bc637495ef183fc77a5fd916273d0a0c"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/campaign_case_progress_checkpoint61.json",
+      "sha256": "f18f13752499985c667cc4749c8b2eb35fc33aee69085b66132bddcc2e340071"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/held_pdf_inventory_checkpoint61.json",
+      "sha256": "9298632af70dbfc98473049395461620b70dffa5fd564248dbbef0b2efabdcc6"
+    },
+    {
+      "path": "data/private/manifests/held-assignment61-2026-10-03/capture-source-corrections.json",
+      "sha256": "64af7fd3a2a250dbc8ebeaa05a8f5dfb95fb92dc5037d9b3841061f7e52f230a"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/metadata.json",
+      "sha256": "c7dd9980a7ea1cae34ca0a5dbdcc4e8fa976afc16eefdcdce75a5c1b4a239288"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/assignment-evidence.json",
+      "sha256": "bdd6dcc787b2a035535ba393ee9a273786bcc65ecf427d3ae4c7afe2c160c5c1"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/deposit-page-audit.json",
+      "sha256": "53e2177065ac21ef5cab2f44c968c15762100c0a675ea3302b5d215a01203d9b"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/trial-verification.json",
+      "sha256": "4981e3fa10cc9b1720349eb327dac3382d94701c2f284e4894f51c7e68a06568"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/production-verification.json",
+      "sha256": "b8086ebf5eccc2655d2c530895cface5a2360e90f4cd4dde968a7ca589118c7d"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page2.png",
+      "sha256": "835de99d23fa413f8021a881077437986ccedc3f3d9eb6b9d54016ce11189cd0"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page3.png",
+      "sha256": "d6fb1e177bd5cc2a0201edab0c62859179e7c46fbaf5bc1667ac9359559342f7"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page30.png",
+      "sha256": "52697bdb0e2067ff660d7ac4ccceb6559bda941454bdb9879e981d4ed93268ad"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page4.png",
+      "sha256": "0edb636acd33065100cba0ecba8027bb11397a3337cc1a460d62bde2da42ece1"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page5.png",
+      "sha256": "81af7d9578a56b5fe447afb037cc133f405a205f158dd5e24b6d09d7b0969cc0"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page6.png",
+      "sha256": "3a58770389273d65c7b3d892b73a9fcd3587f9dc3182f91f155a7bcc555e80e1"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page2.png",
+      "sha256": "1901424e686e5c7f17f630930d679fa1462f2a73b6bf375e1689b19618edfebe"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page3.png",
+      "sha256": "0db10eb5a9cea9d435a4e79507a20fa3de069407edaea76f4d9beddeae2f7090"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page4.png",
+      "sha256": "fafc08eec349d6462d2dbb8ab90d8350c4984a8f06a985b9d1a4b0ae5e0b9f69"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page42.png",
+      "sha256": "c90835f51ce9bbcc5cee38af6ba2de4c2cc246320159e2762f82b1e75aa53c06"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page6.png",
+      "sha256": "9ba4f6df261492b0c3ee658ce1d79332286b0c57f04ca0887cc7e92f2aaf3b2a"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page7.png",
+      "sha256": "6fef9075f1eea136fb724afccf4900cc277897a239ed33583527bf6cd6ecbc1c"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page30.txt",
+      "sha256": "a8472bd530463434ddfcfb929e2ca3cfaeb0a2d256696228b97018a099c7339c"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page4.txt",
+      "sha256": "f93d1f398774f1e3f70eb60fefb0001f41946a0214c2abbff2638db13186193f"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page5.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-2A7F5089C728-page6.txt",
+      "sha256": "8395a92240e701fc8e1f58e73b6fcfc9136ccea6be415a74a8bdbcd62d93321f"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page2.txt",
+      "sha256": "3dfdd35a804a9169766baf1ac4b31500bfcfb8b66ef9bcc3615549f4c73e0213"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page4.txt",
+      "sha256": "733f4810ed79b9004ae626aa6f30d63b25a91ce3c785932162e8c61e7a964837"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page42.txt",
+      "sha256": "4dd06c831b3e2e5c1665a14189b0e1f45ca9104d587b87d71993ac7457200568"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page6.txt",
+      "sha256": "ea781ea97907f3d7c899e02b31fca9fc2d91e01ba842f2d75ae2f560b7d569a1"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/CAP-9DCE54EC60D2-page7.txt",
+      "sha256": "0f550a33762f0cebc75a0cdc6d980359c0267119e0ea2fd4047bf86619352ecf"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/reader-verification.json",
+      "sha256": "30e98e5fabcb0eb58f497078527071d084522f6795c75f1a3a35f856391b3e65"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/reader-build-final.log",
+      "sha256": "cd203f183f1f8ab84faf8f82a29bade838f5795522749fc5970d67af0d4a1f0a"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/tests-final.log",
+      "sha256": "a735956c82bd3175649a5d19bf0ee5940c35037370b387b026493e782443e427"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/node-tests-final.log",
+      "sha256": "57a8e6761a5c1c616113959cd380a6a63fda01905b0b69107a7d5634aabff331"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/record_checkpoint.py",
+      "sha256": "008609ad1834fa6ebe69fb67181cab13f9a6e6c92b220d851e6e88fe5d031ca4"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/prepare.py",
+      "sha256": "139dfb649ea9a62987ebe87852545a18a5327a3f3a418e10080d1b142fbfe146"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/verify_batch.py",
+      "sha256": "67766c08d38707263cb1c140bd10454ac108e46a08e9354c0b75ae9fc0a5140b"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/regenerate.py",
+      "sha256": "3f38f5c100842d3b2ea7a8f0c489cdbbed0947965dc60d2d49071fbd5179332c"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/verify_reader.py",
+      "sha256": "ec3c1b4502a2d746b4050d3ada632faba340652cebb10ed4c896ff1d20579415"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/reports-final.json",
+      "sha256": "8a11b7b0b00006e8d3c095ae9488db061eed3aa9cb523473082a98251e9a64e4"
+    },
+    {
+      "path": "data/private/research-work/held-assignment61-2026-10-03/next-text-edition-discovery.json",
+      "sha256": "bd2e69a24fe79c5949a7bfdeba8dbaa402c10963b0456c92c5aae3b315de31a4"
+    }
+  ]
+}

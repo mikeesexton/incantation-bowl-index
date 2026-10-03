@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-03T01:56:55+00:00",
+ "updated_at": "2026-10-03T02:04:21+00:00",
  "portfolio_summary": {
   "current_phase": "Strong foundation in active use; building a checked research core; multilingual comprehensiveness remains unproven",
   "strengths": [
@@ -567,7 +567,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Every probable/confirmed identity is assessed for findspot, excavation context, ownership history, and current location; absent evidence is recorded as unknown rather than inferred.",
-     "evidence": " Checkpoint53 corrects IBI GorG/catalogue5497metadata against actual held Gordon1934pp466–467/PDF2–3: IraqMuseumincantation storagejar, not the copied Istanbulinstitution. Identifier value, assigning institution, object label and appearance context corrected with complete immutable snapshots; previous object classification was uncertain/candidate, not whole_bowl. Applied Mike2026-09-27incantation-bowls-only scope ruling to explicit storagejar, preserving entire related record as rejected/non_bowl with prior status/type retained. Six source-attributed primary claims added: reported collection/form,50cm long/35cm wide/13cm neck width/12inscriptionlines; no inferred bowl diameter/height/current location. Narrow catalogue-repair tool now supports hash-bound assigning-institution correction; regression test verifies immutable original/source attribution and stale-import/replay protection. Metadata lead resolved with full prior operational snapshot retained. All2179texts/reviews/2101media/1190images/87captures and identity links unchanged; no scholarly/authenticity/rights verdict. Fixed249case histories unchanged:31linked/218unlinked/zero complete. Source-copy inventory1315checked/136partial/oneunreviewed, historicalnative45gaps and Miri10resolved/19requests unchanged. HeldPDF57sources/52appearance-bearing/1304appearances. Goalactive; no reset."
+     "evidence": " Checkpoint53 corrects IBI GorG/catalogue5497metadata against actual held Gordon1934pp466–467/PDF2–3: IraqMuseumincantation storagejar, not the copied Istanbulinstitution. Identifier value, assigning institution, object label and appearance context corrected with complete immutable snapshots; previous object classification was uncertain/candidate, not whole_bowl. Applied Mike2026-09-27incantation-bowls-only scope ruling to explicit storagejar, preserving entire related record as rejected/non_bowl with prior status/type retained. Six source-attributed primary claims added: reported collection/form,50cm long/35cm wide/13cm neck width/12inscriptionlines; no inferred bowl diameter/height/current location. Narrow catalogue-repair tool now supports hash-bound assigning-institution correction; regression test verifies immutable original/source attribution and stale-import/replay protection. Metadata lead resolved with full prior operational snapshot retained. All2179texts/reviews/2101media/1190images/87captures and identity links unchanged; no scholarly/authenticity/rights verdict. Fixed249case histories unchanged:31linked/218unlinked/zero complete. Source-copy inventory1315checked/136partial/oneunreviewed, historicalnative45gaps and Miri10resolved/19requests unchanged. HeldPDF57sources/52appearance-bearing/1304appearances. Goalactive; no reset. Checkpoint61 repairs source associations for two alreadyheld unassignedPDFcaptures after12originalpageviews. CAP-9DCE54EC60D2 now links exactexisting FordAbudraham2018chapter SRC-513E8FD6E55D: title/authors/volumeISBN/2018copyright/printed75–111 verified,42PDFpages comprising5frontmatter+37completechapterpages; eightmainbowls6Syriac/2Mandaic remain unindexed/untranscribed/untranslated/unproofread. CAP-2A7F5089C728 now links exactexisting Hilprechtcatalogue SRC-8A145FAA2EBB;30page cover/frontmatter/introduction endingprinted7, notanotherfullbook. PDFcopyright/CIP2020 match existingbibliography and supersede earlier2019operational shorthand; no sourceyearchange. Hashboundmanifest trial/productionexactdigests and eachreplay0;2immutablecorrectionledgerrows retain completeoriginalretrieval snapshots; samecaptureIDs/bytes/hash/time/URL/robots/rights/access/notes; allotherrowsacross39tables identical. RegisteredPDFsources58/52appearance-bearing/1305appearances;unassignedPDFdepositsnow0;87totalcapturesunchanged. Native/English/sourceimages stillnextTEXTbatch, no reading/editioncoverageinflation. Corpus2179texts/1452readingrows1318checked/133partial/oneunreviewed;2101media/1190images;45historicalnativegaps;fixed24932linked/217unlinked/allattempted/zero complete;allprevioushistoriesretained;Miri10resolved/20requests,no duplicate. Goalactive."
     },
     {
      "id": "META-002",
@@ -884,6 +884,14 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-10-03",
+   "agent": "Codex",
+   "tasks": [
+    "META-001"
+   ],
+   "note": "Checkpoint61 repairs source associations for two alreadyheld unassignedPDFcaptures after12originalpageviews. CAP-9DCE54EC60D2 now links exactexisting FordAbudraham2018chapter SRC-513E8FD6E55D: title/authors/volumeISBN/2018copyright/printed75–111 verified,42PDFpages comprising5frontmatter+37completechapterpages; eightmainbowls6Syriac/2Mandaic remain unindexed/untranscribed/untranslated/unproofread. CAP-2A7F5089C728 now links exactexisting Hilprechtcatalogue SRC-8A145FAA2EBB;30page cover/frontmatter/introduction endingprinted7, notanotherfullbook. PDFcopyright/CIP2020 match existingbibliography and supersede earlier2019operational shorthand; no sourceyearchange. Hashboundmanifest trial/productionexactdigests and eachreplay0;2immutablecorrectionledgerrows retain completeoriginalretrieval snapshots; samecaptureIDs/bytes/hash/time/URL/robots/rights/access/notes; allotherrowsacross39tables identical. RegisteredPDFsources58/52appearance-bearing/1305appearances;unassignedPDFdepositsnow0;87totalcapturesunchanged. Native/English/sourceimages stillnextTEXTbatch, no reading/editioncoverageinflation. Corpus2179texts/1452readingrows1318checked/133partial/oneunreviewed;2101media/1190images;45historicalnativegaps;fixed24932linked/217unlinked/allattempted/zero complete;allprevioushistoriesretained;Miri10resolved/20requests,no duplicate. Goalactive."
+  },
   {
    "date": "2026-10-03",
    "agent": "Codex",
