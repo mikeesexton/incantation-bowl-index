@@ -8,9 +8,9 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1451 | 96 | 1 | 1548 | 93.7% |
+| Edition text (translation, transcription, transliteration) | 1454 | 93 | 1 | 1548 | 93.9% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 727 | 735 | 0.1% |
-| All stored text | 1452 | 103 | 728 | 2283 | 63.6% |
+| All stored text | 1455 | 100 | 728 | 2283 | 63.7% |
 
 ## Edition text by type
 
@@ -18,7 +18,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 |---|---:|---:|---:|---:|
 | translation | 732 | 41 | 1 | 774 |
 | transcription | 543 | 39 | 0 | 582 |
-| transliteration | 176 | 16 | 0 | 192 |
+| transliteration | 179 | 13 | 0 | 192 |
 
 ## Edition text by source
 
@@ -52,7 +52,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Discoveries in the Ruins of Nineveh and Babylon: With Travels in Armenia, Kurdistan and the Desert; Being the Result of a Second Expedition Undertaken for the Trustees of the British Museum (`SRC-8900A7CAF037`) | 5 | 5 | 0 | 10 |
 | Aramaic Incantation Bowls in Museum Collections, Volume One: The Frau Professor Hilprecht Collection of Babylonian Antiquities, Jena (`SRC-8A145FAA2EBB`) | 204 | 23 | 0 | 227 |
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
-| Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 70 | 7 | 0 | 77 |
+| Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 73 | 4 | 0 | 77 |
 | MS 2053/198 Incantation Bowl To Ward Against Demons (`SRC-9BE3105F3F31`) | 1 | 0 | 0 | 1 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 1 | 0 | 2 |
 | Who Wrote the Incantation Bowls? (`SRC-A90AB34CA3FE`) | 2 | 0 | 0 | 2 |
