@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon H complete native-copy check, checkpoint101
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — one appended proofreading review and corrected native copy; digest `050f2e021aef`. Opening state matched checkpoint100; only the continued task claim was modified. Complete original and earlier reviews retained; 37 other tables and all 1,880 identity memberships unchanged. Trial and production matched; replay changed no rows or digest.
+**Tests:** 394 Python + 57 Node = 451 passed. Subsequent private reader build passed 7/7 audits; independently verified all 2,283 text contents/attributions/classifications/statuses, 2,143 media assignments, 1,232 image hashes, 88 captures and 1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Complete Gordon1937 Text H checked against printed86–87/PDF4–5: both complete native blocks, 32 physical rows, 19 logical lines, anchors2–19, opening/closing and enlarged complete-word controls. Edition printed86/PDF4 refers to the 1934 printed321 diacritic key. Newly encoded 69 exact inferior points: 28 on86 and 41 on87. Corrected 26 source word/boundary groups, including omitted/extra letters, substitutions/transposition, small angle enclosures, curly-excess tet with its inferior, and one inline gap period instead of two. Wider controls superseded preliminary point and letter assignments. No English/grammar/commentary/parallel supplementation or clay interpretation. Source-copy check covers the bounded edition copy; it does not certify full-source capture, original-script recovery or whole cases.
+- Gordon1937 now 11 checked/5 partial of 16 stored readings; K/L native and M/N/O Hebrew-letter Mandaic transliterations remain partial. All 12 Gordon1934, 227 Jena and 77 Montgomery stored checks retained. Inventory 1,490 checked/57 partial/one unreviewed. Both rosters refreshed; exactly one entry changed. All other 15 Gordon1937 rows unchanged. Frozen249 original members and histories exact: 32 linked/217 unlinked/all attempted/zero whole cases complete/no new attempts. Historical 45 native gaps and 40 English project drafts tracked separately; 31 Pognon French originals already checked.
+- Independently reconfirmed that Mike's fgaf025.pdf attachment matches the existing archived capture/source/queue by hash. All ten supplied documents already processed; no duplicate intake. Miri's ten resolved documents and 26 acquisition requests unchanged; no new access blocker. Protected expression/pixels/notes/manifests remain private outside Git; receipt contains metadata/hash pointers. Source/editor/locator/language/script/rights/public0 unchanged. Last ten prebatch backups retained.
+- Goal active; next Gordon K/L, then M/N/O and other held readings/217 publication cases. No reset, outbound message, purchase, uncertain merge, rights/public approval, push, deployment or server restart. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0101_Gordon_H_native_copy_checks.json`. Receipt: `research/receipts/Gordon_H101_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon I/J complete native-copy checks, checkpoint100
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
