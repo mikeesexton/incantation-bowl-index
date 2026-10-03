@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-03T00:37:04+00:00",
+ "updated_at": "2026-10-03T00:58:03+00:00",
  "portfolio_summary": {
   "current_phase": "Strong foundation in active use; building a checked research core; multilingual comprehensiveness remains unproven",
   "strengths": [
@@ -263,7 +263,7 @@
      "status": "in_progress",
      "owner": "Research",
      "done_when": "Individually identifiable MS records are reconciled with publication numbers and aggregate collection claims; unenumerated remainder stays explicitly aggregate.",
-     "evidence": " Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active."
+     "evidence": " Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active. Checkpoint57 searched exact current designations of200unlinkedNLIcases across57heldPDFsources/58captures/54uniquePDFpayloads/9689pages, hash-bound all captures and indexed each page text extent. One new exact primary match: Abudraham2026printed125/PDF21 identifies NLI9467.132(previouslyMoussaieff164), current NLI bowl78 per retained MMS. Added one appearance/formerdesignation/claim, one exact pair under Mike standing scopeddesignation rule, two immutable publication assessments. Existing properM164/Waller component retained; secondaryMous164index independent. Every old database row across39tables retained; production/rehearsal normalized new business payloads match, replay zero. Current/shelfmark/Moussaieff namespaces kept distinct; no scholarly reading/physical or authenticity judgment. Fixed249now32linked/217unlinked/all249attempted/zero wholecasescomplete;200histories extended, all original histories retained. OriginalLevene2007PDFunheld; account-gated author preview/download and publisher failure recorded; one fresh Miri request makes tenresolved/20requests. Held57sources/52appearance-bearing/1305appearances. Existing2179texts/1452editionrows=1318checked/133partial/oneunreviewed,2101media/1190localimages/87captures and45historicalnativegaps unchanged. Goal active."
     },
     {
      "id": "CONC-005",
@@ -884,6 +884,14 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-10-03",
+   "agent": "Codex",
+   "tasks": [
+    "CONC-004"
+   ],
+   "note": "Checkpoint57 searched exact current designations of200unlinkedNLIcases across57heldPDFsources/58captures/54uniquePDFpayloads/9689pages, hash-bound all captures and indexed each page text extent. One new exact primary match: Abudraham2026printed125/PDF21 identifies NLI9467.132(previouslyMoussaieff164), current NLI bowl78 per retained MMS. Added one appearance/formerdesignation/claim, one exact pair under Mike standing scopeddesignation rule, two immutable publication assessments. Existing properM164/Waller component retained; secondaryMous164index independent. Every old database row across39tables retained; production/rehearsal normalized new business payloads match, replay zero. Current/shelfmark/Moussaieff namespaces kept distinct; no scholarly reading/physical or authenticity judgment. Fixed249now32linked/217unlinked/all249attempted/zero wholecasescomplete;200histories extended, all original histories retained. OriginalLevene2007PDFunheld; account-gated author preview/download and publisher failure recorded; one fresh Miri request makes tenresolved/20requests. Held57sources/52appearance-bearing/1305appearances. Existing2179texts/1452editionrows=1318checked/133partial/oneunreviewed,2101media/1190localimages/87captures and45historicalnativegaps unchanged. Goal active."
+  },
   {
    "date": "2026-10-03",
    "agent": "Codex",

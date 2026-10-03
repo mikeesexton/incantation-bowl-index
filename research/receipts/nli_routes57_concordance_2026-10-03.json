@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "checkpoint": 57,
+  "created_at": "2026-10-03T00:58:03+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "459d47fd5f87ab776f9e1776a5506bc7ccec2bcbb46844df60bc6d8f84107f1f",
+  "corpus_after": "9ebfe94a1dd96949331d56503e935807fd1cf8e27957b074a9b7c1b62958ff57",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 200,
+  "newly_linked_frozen_identities": 1,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_appearances": 1,
+  "new_claims": 1,
+  "new_text_rows": 0,
+  "new_captures": 0,
+  "exact_scoped_designation_pairs": 1,
+  "new_publication_assessments": 2,
+  "allowance_resets_used": 0,
+  "total_text_rows": 2179,
+  "edition_text_rows": 1452,
+  "checked_edition_text_rows": 1318,
+  "partial_edition_text_rows": 133,
+  "unreviewed_edition_text_rows": 1,
+  "frozen_native_gaps": 45,
+  "expanded_pdf_inventory": {
+    "indexed_appearances": 1305,
+    "appearance_bearing_sources": 52,
+    "registered_pdf_sources": 57
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/nli-routes57-2026-10-03/campaign_case_progress_checkpoint57.json",
+    "sha256": "6d7462a30238070ee5676274ac3fefae0090c855aa12e8bcfdd15615f6a82d77"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/nli-routes57-2026-10-03/held_pdf_inventory_checkpoint57.json",
+    "sha256": "8570edd3457af2bd150b9cfcef0a9fe72b5080ec42c5e3c65a9dba62373da359"
+  },
+  "scope": "Checkpoint57 searched exact current designations of200unlinkedNLIcases across57heldPDFsources/58captures/54uniquePDFpayloads/9689pages, hash-bound all captures and indexed each page text extent. One new exact primary match: Abudraham2026printed125/PDF21 identifies NLI9467.132(previouslyMoussaieff164), current NLI bowl78 per retained MMS. Added one appearance/formerdesignation/claim, one exact pair under Mike standing scopeddesignation rule, two immutable publication assessments. Existing properM164/Waller component retained; secondaryMous164index independent. Every old database row across39tables retained; production/rehearsal normalized new business payloads match, replay zero. Current/shelfmark/Moussaieff namespaces kept distinct; no scholarly reading/physical or authenticity judgment. Fixed249now32linked/217unlinked/all249attempted/zero wholecasescomplete;200histories extended, all original histories retained. OriginalLevene2007PDFunheld; account-gated author preview/download and publisher failure recorded; one fresh Miri request makes tenresolved/20requests. Held57sources/52appearance-bearing/1305appearances. Existing2179texts/1452editionrows=1318checked/133partial/oneunreviewed,2101media/1190localimages/87captures and45historicalnativegaps unchanged. Goal active.",
+  "search_scope": {
+    "cases": 200,
+    "unique_pages": 9689,
+    "empty_text_pages": 573,
+    "sparse_text_pages": 663,
+    "limits": "Bounded exact/scoped selected variants in PDF text layers. Shelfmark suffix and bowl number are distinct namespaces. inc_bowl without JER and abbreviated NLI are discovery leads requiring actual primary context. Empty/sparse pages, OCR, variants and unnamed descriptions prevent an absence conclusion. Not visual extraction, native verification or current unpublished finding."
+  },
+  "next_actions": [
+    "Continue217publication gaps using formerdesignation/originaledition routes and useful heldsource checks.",
+    "Acquire Levene2007M164 full PDF and separately verify native/Englishedition and illustrations.",
+    "Keep Miri acquisition tasks metadata-only; do not count source acquisition as reading completion."
+  ],
+  "validation": {
+    "database": {
+      "changes": {
+        "appearances": 1,
+        "appearance_object_links": 1,
+        "identifiers": 1,
+        "claims": 1,
+        "dedupe_candidates": 1,
+        "dedupe_evidence": 2,
+        "publication_assessments": 2
+      },
+      "all_previous_rows_identical": true,
+      "tables_verified": 39,
+      "replay_changes": 0,
+      "new_identity_members": [
+        "IBI-023E77FA4EA0",
+        "IBI-3215D0FCF59D",
+        "IBI-83A0A347B7C4"
+      ],
+      "independent_secondary_record_preserved": true
+    },
+    "trial_production_new_business_payloads_match": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2179,
+      "all_text_editorial_statuses_verified": 2179,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2101,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 200,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    }
+  },
+  "protected_payloads": "Primary pixels, page contexts, original snapshots and complete research histories remain private; metadata and hash receipt only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0057_nli78_moussaieff164_primary_concordance.json",
+      "sha256": "c27098edfc6ec696b5d19ce28c039bac4dc2752f876d5f377f0bcbcdd824e5f9"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/campaign_case_progress_checkpoint57.json",
+      "sha256": "6d7462a30238070ee5676274ac3fefae0090c855aa12e8bcfdd15615f6a82d77"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/held_pdf_inventory_checkpoint57.json",
+      "sha256": "8570edd3457af2bd150b9cfcef0a9fe72b5080ec42c5e3c65a9dba62373da359"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/prepare.py",
+      "sha256": "b1e50578156d26c13276b43d662dbb35a142d4dd349d5ee3655efc6f28659351"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/record_checkpoint.py",
+      "sha256": "552b29dee6356fe8b6452e066bac6b55f5fd18b0fe30d5af933ec4ad9b130f15"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/sweep.py",
+      "sha256": "2783eb8921b25c5bac0938727f64c71c3ccb25f60924dde6133a1bb7acc19865"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/verify_batch.py",
+      "sha256": "e138c93c4fbd2a7b625373d8db75a53a4185602e9c44b61363b0216cdc577946"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/metadata.json",
+      "sha256": "4d24cd7694e52df24a62b19bfc1b38405c07d43a7cf735beadaf3144833dc001"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/batch-plan.json",
+      "sha256": "8858497175a4e7e3c2bd5e1e58f0710cab65c48c046119c763b091bedf9cb1af"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/trial-verification.json",
+      "sha256": "f313846a9e0f3225463dc131f521ee9c363bf1b043479baf59b706583c8bb892"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/production-verification.json",
+      "sha256": "9db1e2231e0c1930c320816d94404657eca98c9c9e408005f2478390b3bf5449"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/full-held-nli-designation-sweep.json",
+      "sha256": "21e2214a78c3147ce039aba84e1e10657eefc2ac8306feebdd8422e4c1495adc"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/web-routes.json",
+      "sha256": "88f54a5b0501275bef62bb3b04dfbb934da3dfffb8ade56db1beeb56d48fc28c"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/nli78-catalogue-before.json",
+      "sha256": "cef51a0719914192727e6399280162053336d036a8618c233abc0ad6913835bb"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/nli78-retained-sru-record.json",
+      "sha256": "92e2cc91b328a3fec3abaf6d654b1a2f99dae144511c48dfa33ea0418217a85a"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/acquisition-queue-before.json",
+      "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/abudraham-page21.png",
+      "sha256": "b6e02c6b8b280449a5432d7dd3964bb3f85473d21786a3dc8ff64643de57b957"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page109.png",
+      "sha256": "c6c337fa9a01368f376729dfd2e8d216ad845c058ce065d1e89c61b0b9639b30"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page147.png",
+      "sha256": "02a1f869d5dbd8e6cf291584cb36eb3b2a4f1de535c1e14326d702f999771709"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page153.png",
+      "sha256": "15709dcb4a7295a32fbdc1bce2da9e348dfa9e2708639c475d15168434416862"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page160.png",
+      "sha256": "16db577d489bb10e8d1701b8297b057c73ce53231e2df788304805f28116d86f"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page169.png",
+      "sha256": "9f988fe6aadac36cb7115690de90a2b3f3497d6263bf26c13996161b5c1eb7db"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page182.png",
+      "sha256": "b111c6b3b024bb1fef210621b932d295ecfd5269e2fc15c0bbfa8ed098dad319"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/waller-page73.png",
+      "sha256": "c2605b0b5ceca2f74330753643e7e1b2efdc174e922ce095edd813a7cf5d8608"
+    },
+    {
+      "path": "data/private/manifests/nli-routes57-2026-10-03/appearances.json",
+      "sha256": "3c762af61d8c27de2d3336cbd426918ee1bd33695c1eda6ea30b888ea575015a"
+    },
+    {
+      "path": "data/private/manifests/nli-routes57-2026-10-03/appearances.jsonl",
+      "sha256": "42690be6363a0b0f7f25292f522689a96551dba212737542f60796020ab8723e"
+    },
+    {
+      "path": "data/private/manifests/nli-routes57-2026-10-03/dedupe.jsonl",
+      "sha256": "61b1075876dc13b8598b7e2ceb4542bd22c993adc29985bfd6ccd8545b5cd868"
+    },
+    {
+      "path": "data/private/manifests/nli-routes57-2026-10-03/publication-assessments.json",
+      "sha256": "06f3e310f896ff0cd8ff42eefc0fb1b1c4edcc6d2816edf6e14d34d07d2d38f9"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/reader-verification.json",
+      "sha256": "6ae0d7856fdc5e26e4e0a618b52075cf06981171665a0543851b4daf4f99c60c"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/reader-build-final.log",
+      "sha256": "33bd42b2716080f46e6d5e55da1ee65910c2fb4fef6fd6c4b52947b3863dbc94"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/tests-final.log",
+      "sha256": "02f5df505971041933dc57d8102b817f6a6a9dd6ff49e8fdefc3f61d42bee478"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/node-tests-final.log",
+      "sha256": "807ca6dabac7073138a676a7483eaa10afbaf26ba3df8db28370d2a13ddfa969"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/record_checkpoint.py",
+      "sha256": "552b29dee6356fe8b6452e066bac6b55f5fd18b0fe30d5af933ec4ad9b130f15"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/prepare.py",
+      "sha256": "b1e50578156d26c13276b43d662dbb35a142d4dd349d5ee3655efc6f28659351"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/verify_batch.py",
+      "sha256": "e138c93c4fbd2a7b625373d8db75a53a4185602e9c44b61363b0216cdc577946"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/regenerate.py",
+      "sha256": "2f47bfbd4f864b66016dc0d54456aaf8857f69ef4195a2291bab9dfd135cba42"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/verify_reader.py",
+      "sha256": "76cce835cd448fef8cb41656450e371ee3a950b22bd9324c64be5cc9cf2d7cde"
+    },
+    {
+      "path": "data/private/research-work/nli-routes57-2026-10-03/reports-final.json",
+      "sha256": "53dd7a9d30e46fe80ba47a02d0fc6763ef7634155a7f4603eeeb4072a59944d5"
+    }
+  ]
+}

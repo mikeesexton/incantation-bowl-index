@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-02T23:02:16+00:00",
+  "updated_at": "2026-10-03T00:58:03+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -295,6 +295,28 @@
         "path": "data/private/research-work/ford-comparatives50-2026-10-02/jeruzalmi-original-routes.json",
         "sha256": "059adb3805f0fcbe0e36c0f0da355b939098ed505b1da4f3f92ec3bf4ddfa481"
       }
+    },
+    {
+      "source_id": "SRC-A08F75BDD59C",
+      "authors": "Dan Levene",
+      "year": 2007,
+      "title": "‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164)",
+      "citation": "Journal of Semitic Studies 52(1) (2007):59–70",
+      "doi": "10.1093/jss/fgl037",
+      "priority": 1,
+      "status": "original PDF unheld; author preview and download require account; publisher web fetch failed",
+      "requested_material": "Complete article pp59–70 including native edition, English translation, apparatus and illustrations1–3. Exact current target NLI bowl78/Ms.Heb.9467.132 is linked through held Abudraham2026printed125/PDF21fn64; pp61/65 specifically cited.",
+      "checked_at": "2026-10-03T00:58:03+00:00",
+      "access_routes": [
+        "https://doi.org/10.1093/jss/fgl037",
+        "https://academic.oup.com/jss/article/52/1/59/1719483",
+        "https://www.academia.edu/3692654/Levene_Dan_If_You_Appear_as_a_Pig_Another_Incantation_Bowl_Moussaieff_164_Journal_of_Semitic_Studies_52_no_1_2007_59_70"
+      ],
+      "access_limits": "Public extracted text is visible on author-posted page, but exact printed PDF/native glyphs and all illustration pixels not retrieved or checked. Both DownloadPDF and SeeFullPDF UI lead to account/terms modal; no login/account creation/bypass. Publisher bibliography verifies metadata only. No current nonpublication verdict.",
+      "private_route_inventory": {
+        "path": "data/private/research-work/nli-routes57-2026-10-03/web-routes.json",
+        "sha256": "88f54a5b0501275bef62bb3b04dfbb934da3dfffb8ade56db1beeb56d48fc28c"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -308,10 +330,10 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/ford-comparatives50-2026-10-02/acquisition-queue-before.json",
-    "sha256": "1d85fb57786adc3cf73c60c280926275f29dab974a74be329bddc0786518179d"
+    "path": "data/private/research-work/nli-routes57-2026-10-03/acquisition-queue-before.json",
+    "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
   },
-  "new_access_requests_checkpoint": 41,
+  "new_access_requests_checkpoint": 57,
   "latest_held_context_inventory": {
     "path": "data/private/manifests/held-cases44-2026-10-02/production/extraction.json",
     "sha256": "fb413f96d376d06a07ea975b0032cb2eb9f014b5aabefcdc17e604e5da573a49"
@@ -338,5 +360,15 @@
     "request": "Jeruzalmi1963original dissertation, especially Istanbul5366pp140–151/p141and plates",
     "tool_acknowledged": true,
     "tracker_processing_independently_verified": false
+  },
+  "checkpoint57_miri_dispatch": {
+    "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
+    "host_id": "durable",
+    "thread_title": "Track blocked bowl sources",
+    "request_source_id": "SRC-A08F75BDD59C",
+    "tool_acknowledged": true,
+    "tracker_processing_independently_verified": false,
+    "authorization": "Mike authorized genuinely fresh source-access requests for Miri.",
+    "request": "Complete original Levene2007Moussaieff164PDFpp59–70 and illustrations1–3"
   }
 }

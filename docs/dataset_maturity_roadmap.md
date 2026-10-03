@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-03T00:37:05+00:00`
+Generated: `2026-10-03T00:59:05+00:00`
 
 ## Portfolio status
 
@@ -129,23 +129,23 @@ Current evidence: **224 scholarship works indexed; 57 with a source-linked held 
 | Measure | Current |
 |---|---:|
 | Candidate source records | 2208 |
-| Working physical identity hypotheses (all statuses) | 1859 |
-| Source appearances | 2802 |
+| Working physical identity hypotheses (all statuses) | 1858 |
+| Source appearances | 2803 |
 | Sources | 967 |
 | Source documents with current assessments | 73 |
 | Source documents assessed complete | 66 |
 | Source documents with object-level extraction | 63 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 533 |
-| Triaged claim-field differences | 584/1186 |
+| Identities triggering raw claim-difference flags | 534 |
+| Triaged claim-field differences | 584/1188 |
 | Compatible differences | 568 |
-| Review required (missing or no longer valid) | 602 |
+| Review required (missing or no longer valid) | 604 |
 | Existing reviews requiring revalidation | 48 |
 | Substantive conflict instances | 16 across 14 identities |
-| All identities with a publication reference | 1117/1859 (60.1%) |
-| Probable/confirmed identities with a publication reference | 835/1053 (79.3%) |
-| Probable/confirmed identities reviewed as having no known edition | 0/1053 (0.0%) |
-| Probable/confirmed identities with a publication disposition | 835/1053 (79.3%) |
+| All identities with a publication reference | 1117/1858 (60.1%) |
+| Probable/confirmed identities with a publication reference | 835/1052 (79.4%) |
+| Probable/confirmed identities reviewed as having no known edition | 0/1052 (0.0%) |
+| Probable/confirmed identities with a publication disposition | 835/1052 (79.4%) |
 | Identities with a translation | 552 |
 | Scan-checked normalized reading texts | 1319 |
 | Publication keys resolved to the publication they designate | 34/36 |
@@ -166,12 +166,12 @@ Coverage means a field or reference is present, not independently verified. Publ
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1289 | 69.3% |
+| Location | 1288 | 69.3% |
 | Provenance | 375 | 20.2% |
 | Dating | 484 | 26.0% |
-| Dimensions | 670 | 36.0% |
+| Dimensions | 670 | 36.1% |
 | Material | 410 | 22.1% |
-| Language | 1029 | 55.4% |
+| Language | 1028 | 55.3% |
 | Script | 94 | 5.1% |
 | Text Edition | 535 | 28.8% |
 | Translation | 552 | 29.7% |
@@ -183,7 +183,7 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 566 | 30.4% |
+| Publication | 567 | 30.5% |
 | Condition | 314 | 16.9% |
 | Client | 225 | 12.1% |
 | Vessel Form | 174 | 9.4% |
@@ -338,7 +338,7 @@ Reconcile physical bowls across museum records, publications, auctions, dealers,
   - Evidence/status: The public NLI catalogue now accounts for three separately modelled groups: the existing 205-record Ms. Heb. 9467.3–207 run; 74 newly retained candidate appearances numbered Bowl 1–74 whose MARC owner is the Israel Antiquities Authority; and eight separately shelfmarked NLI holdings comprising Ms. Heb. 6079=34 and Ms. Heb. 6417.1–7=34. Exact MMS, shelfmark, owner, catalogue-title and provenance metadata are retained without expanding the unexplained abbreviation רה"ע or merging identities. The 205 titles omit numbers 2, 52, 97, 98, 152, 202–206 and 216; NLI clarification is pending.
 - [ ] **CONC-004 — Finish Schøyen publication and collection concordances** · In progress · Research
   - Done when: Individually identifiable MS records are reconciled with publication numbers and aggregate collection claims; unenumerated remainder stays explicitly aggregate.
-  - Evidence/status:  Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active.
+  - Evidence/status:  Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active. Checkpoint57 searched exact current designations of200unlinkedNLIcases across57heldPDFsources/58captures/54uniquePDFpayloads/9689pages, hash-bound all captures and indexed each page text extent. One new exact primary match: Abudraham2026printed125/PDF21 identifies NLI9467.132(previouslyMoussaieff164), current NLI bowl78 per retained MMS. Added one appearance/formerdesignation/claim, one exact pair under Mike standing scopeddesignation rule, two immutable publication assessments. Existing properM164/Waller component retained; secondaryMous164index independent. Every old database row across39tables retained; production/rehearsal normalized new business payloads match, replay zero. Current/shelfmark/Moussaieff namespaces kept distinct; no scholarly reading/physical or authenticity judgment. Fixed249now32linked/217unlinked/all249attempted/zero wholecasescomplete;200histories extended, all original histories retained. OriginalLevene2007PDFunheld; account-gated author preview/download and publisher failure recorded; one fresh Miri request makes tenresolved/20requests. Held57sources/52appearance-bearing/1305appearances. Existing2179texts/1452editionrows=1318checked/133partial/oneunreviewed,2101media/1190localimages/87captures and45historicalnativegaps unchanged. Goal active.
 - [ ] **CONC-005 — Triage every conflicting identity-level core claim** · In progress · Research
   - Done when: Every currently flagged identity conflict is classified as genuine scholarly disagreement, temporal change, normalization artifact, source error, or data error; decisions retain evidence.
   - Evidence/status: Latest 1 October metrics: 586/858 current field differences reviewed, including 570 compatible and 16 substantive instances across 14 identities. 272 instances require current review, including 46 stale decisions. The exact Met accession concordance expands some comparison evidence; the 967 Berlin locator repairs change no review disposition. This supersedes earlier current-queue counts, not immutable history; compatibility never validates the underlying physical fact or selects a canonical scholarly value.
@@ -562,10 +562,10 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `602`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `604`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
-- [ ] At least 80% of probable/confirmed identities have an evidence-backed publication disposition; catalogue silence does not qualify. This intermediate milestone does not certify comprehensive coverage. — current `79.3%`; target `>= 80.0%`.
-- [x] At least 50% of probable/confirmed identities retain an actual publication link; negative findings cannot dominate the disposition milestone. — current `79.3%`; target `>= 50.0%`.
+- [ ] At least 80% of probable/confirmed identities have an evidence-backed publication disposition; catalogue silence does not qualify. This intermediate milestone does not certify comprehensive coverage. — current `79.4%`; target `>= 80.0%`.
+- [x] At least 50% of probable/confirmed identities retain an actual publication link; negative findings cannot dominate the disposition milestone. — current `79.4%`; target `>= 50.0%`.
 - [ ] Every media row has a current completed rights decision; initial needs_review holds do not qualify — current `15.2%`; target `>= 100.0%`.
 
 ### Required setup tasks
@@ -613,6 +613,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-10-03:** Checkpoint57 searched exact current designations of200unlinkedNLIcases across57heldPDFsources/58captures/54uniquePDFpayloads/9689pages, hash-bound all captures and indexed each page text extent. One new exact primary match: Abudraham2026printed125/PDF21 identifies NLI9467.132(previouslyMoussaieff164), current NLI bowl78 per retained MMS. Added one appearance/formerdesignation/claim, one exact pair under Mike standing scopeddesignation rule, two immutable publication assessments. Existing properM164/Waller component retained; secondaryMous164index independent. Every old database row across39tables retained; production/rehearsal normalized new business payloads match, replay zero. Current/shelfmark/Moussaieff namespaces kept distinct; no scholarly reading/physical or authenticity judgment. Fixed249now32linked/217unlinked/all249attempted/zero wholecasescomplete;200histories extended, all original histories retained. OriginalLevene2007PDFunheld; account-gated author preview/download and publisher failure recorded; one fresh Miri request makes tenresolved/20requests. Held57sources/52appearance-bearing/1305appearances. Existing2179texts/1452editionrows=1318checked/133partial/oneunreviewed,2101media/1190localimages/87captures and45historicalnativegaps unchanged. Goal active.
 - **2026-10-03:** Checkpoint56 corrects held Gordon1937 J/K native captures after full printed page/enlarged word comparisons. Repairs copied consonants, omitted source curly-bracket matter, multiword restoration boundaries, name-run gaps and final restored phrase;29clear inferior letter dots encoded separately from printed lacuna dots. Two immutable proofreading reviews retain original current rows and earlier reviews. Both native rows remain partial for specifically identified residual diacritic/typographic positions; no checked-status promotion, scholarly interpretation or full-source completion. Final rehearsal and production fingerprints agree; integrity/FKs, all-other-row preservation across39tables and unchanged replay pass. Earlier rehearsal retained after a missed yod was caught before production. Edition coverage unchanged1,318checked/133partial/oneunreviewed of1,452;2,179texts retained. Fixed249cases31linked/218unlinked/zero complete and45historicalnativegaps unchanged. HeldPDF57sources/52appearance-bearing/1,304appearances; Miri tenresolved/19requests unchanged, no new source-access blocker. Goal active.
 - **2026-10-03:** Checkpoint55 corrects three Ford2014 native reading rows against full printed editions and enlargements: copied letters/restoration brackets and58previously omitted printed uncertainty circles retained literally with combining rings. All three native rows now source-copy checked; scholarly uncertainty remains. McCullough1949 DA5 provided English translation rechecked across its three complete pages: one project letter flag resolved and omission-run extents restored, while one smudged Latin glyph remains explicitly partial. Four append-only proofreading reviews retain complete earlier rows; no new texts, source-wide completion, clay collation, identity or rights decision. All other39-table corpus data preserved; trial/production digest match, integrity/FKs and unchanged replay pass. Edition rows now1,318checked/133partial/oneunreviewed of1,452; all2,179texts retained. Fixed249cases31linked/218unlinked/zero complete and45historicalnativegaps unchanged. HeldPDF57sources/52appearance-bearing/1,304appearances; Miri tenresolved/19requests, no new access blocker or duplicate notification. Goal active.
 - **2026-10-02:** Checkpoint54 advances exact Schøyen Mandaic MS1911/2 and Pahlavi MS2056/12 edition-identification routes. Searched57heldPDFsources/58captures/54uniquePDFpayloads/9689distinctpages: zero exact designation/selected-variant hits.573blank and663sparse text pages explicitly retained as limits; existing held-source working texts also have no exact designation hits.17selected catalogue-word occurrences across6sources/14pages concern other clients/deities/index/commentary and cannot establish identity.13scoped webqueries and actual collection item/MSC1–49series/reference bodies inspected; no full exact edition located or object publication bridge verified. Catalogue future-publication/preliminary-photograph-reading reports are retained as source reports, not current unpublished verdicts. Collection-card/current edition-identification, actual native/translation and specialist requirements recorded separately. Two fixedcase histories extended, all earlier history retained;31linked/218unlinked/zero complete. No corpus/source/text/media changes, acquisition, contact, new registered capture, scholarly/rights decision or Miri duplicate request;10resolved/19requests unchanged. Goal active.

@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-03T00:37:05+00:00`
+Generated: `2026-10-03T00:59:05+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -12,7 +12,7 @@ The original source claims remain unchanged. This review classifies apparent dif
 | Scholarly Disagreement | 2 |
 | Source Inconsistency | 4 |
 | Unresolved | 10 |
-| Requires current evidence review | 602 |
+| Requires current evidence review | 604 |
 
 ## Revalidation queue
 
@@ -28,6 +28,8 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-01B582E3244E — British Museum 117882: incantation bowl; lid | provenance | findspot: Excavated/Findspot: Abu Habba (Sippar) [SRC-3D4B57D27A24; Related objects: 1883-0118-AH-2601]; findspot: Abu Habba (Sippar) [SRC-71F6B506CE96; object W_1883-0118-AH-2601]; production_place: Made in: Iraq [SRC-3D4B57D27A24; Related objects: 1883-0118-AH-2601] |
 | IDENT-01C31C5A30D5 — NLI Klagsbald incantation bowl (Ms. Heb. 6417.4=34) | provenance | collection_history: Donated by Avigdor Klagsbald. [SRC-F39B764D9E75; MMS 990039100320205171]; collection_history: Formerly Paris – Klagsbald. [SRC-F39B764D9E75; MMS 990039100320205171] |
 | IDENT-01CFAFC981BF — Kelsey Museum KM 19504 | client | client: Negray daughter of Denday [SRC-BOHAK1996-TRADITIONS-MAGIC; Bohak1996 online catalogue, Protective Magic, entry 37 (Kelsey Museum 19504)]; client: Ngray [SRC-AFDBED16E322; p. 38, object KM 19504] |
+| IDENT-023E77FA4EA0 — NLI incantation bowl 78 (Ms. Heb. 9467.132) | language | catalogue_language_codes: heb [SRC-BFB9C7440688; MMS 997008712403905171]; inscription_language: Jewish Babylonian Aramaic [SRC-73C44B143A9D; p. 160, distribution table, M 164] |
+| IDENT-023E77FA4EA0 — NLI incantation bowl 78 (Ms. Heb. 9467.132) | location | current_location: National Library of Israel, Jerusalem [SRC-BFB9C7440688; MMS 997008712403905171]; current_or_reported_collection: Moussaieff Collection [SRC-73C44B143A9D; p. 160, distribution table, M 164] |
 | IDENT-03246A1977E3 — Vorderasiatisches Museum VA.Bab.4167o (catalogue 165) | condition | reported_physical_condition: Small fragment. [SRC-DA708912C2D3; Catalogue entry 165, printed p. 171; PDF p. 185]; reported_writing_condition: Preserved. [SRC-DA708912C2D3; Catalogue entry 165, printed p. 171; PDF p. 185] |
 | IDENT-03246A1977E3 — Vorderasiatisches Museum VA.Bab.4167o (catalogue 165) | vessel_form | reported_bowl_form: n/ a. [SRC-DA708912C2D3; Catalogue entry 165, printed p. 171; PDF p. 185]; reported_fragment_type: Rim. [SRC-DA708912C2D3; Catalogue entry 165, printed p. 171; PDF p. 185] |
 | IDENT-032BEDEB7102 — Naveh–Shaked 1985 Bowl 12a: National Library of Israel Heb. 4° 6079 | client | client_or_beneficiary: Qaqay; parent: Poziqtoy (mother); role: client [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)]; client_or_beneficiary: Agbalta; parent: Qarqoy (mother); role: client [SRC-1E2E21DC61BD; pp. 189, 191 (parallel translation of Bowls 12a and 12b)] |
