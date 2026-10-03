@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "checkpoint": 73,
+  "created_at": "2026-10-03T06:19:31+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "1bd984f250fbc32bf9e159c2a4ec54fa6c0616f0a4abbc25f23bc41501831937",
+  "corpus_after": "1bd984f250fbc32bf9e159c2a4ec54fa6c0616f0a4abbc25f23bc41501831937",
+  "corpus_changed": false,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 1,
+  "new_text_rows": 0,
+  "new_captures": 0,
+  "new_media_rows": 0,
+  "new_identity_decisions": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1414,
+  "partial_reading_rows": 133,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "total_identities": 1880,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/penn-count73-2026-10-03/campaign_case_progress_checkpoint73.json",
+    "sha256": "cb8ebfc5bc2a5b27d5a832b9135ce16002bd8388241c0ec55c0812b73ff4d593"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/penn-count73-2026-10-03/held_pdf_inventory_checkpoint73.json",
+    "sha256": "b9710f37a9186aba13af35932fb5b6f4a8301a31624fa52c01f0b4c89b94a97c"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/penn-count73-2026-10-03/non_pdf_holdings_checkpoint73.json",
+    "sha256": "00e9d724a794847402839751cd493f43bdcdaf7ffe5c80ad8ff58af89e547436"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 23,
+  "new_acquisition_requests": 2,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint73 examines Moriggi41printed186–188/PDF204–206and2005bibliography218/PDF236: editionlabels1–14confirmed, newly suppliedPennphotograph/revision stated, l12reportedomission lieswithin existingline and does not itselfexplain count. Exact899plate alreadyheld/indexed; selectedcurrentmuseumviews share accessionmark/abrasion/joins, corroborationrecordedwithoutidentityadjudicationorindependentphysicalline/sherdcount. Museum6fragments/13lines versus Moriggi7/14retained; originalTMH7pp35–37entry8aandassociatedplate unheld, bibliographyverified, addedpreciserequest. FullPennterms allowpersonalresearchdownloaduse withobjectcredit/link/conditions; no automaticpublicapproval. Freshcollectionshostrobots404keeps existingautomatedarchivalpause; browser899gallery8URLsobserved, prior914/953three/fiveURLspreserved. Grouped16viewresearchercopyrequest distinguishesbrowseraccess fromprojectcapturepause. No newimagebytes/text/capture/claims/identitydecisions. Onefrozenhistoryextended; original249members/allhistoriesretained,32linked/217unlinked/allattempted/zero wholecasescomplete. Miri10resolved/23requests(twoadded); all ten supplieddocs alreadyprocessed. Corpusunchanged2283texts/1548readings1414checked133partial1unreviewed;2143media/1232localimages/88captures;58PDFsources/53appearance-bearing/1342appearances. Goalactive; no reset/contact/purchase/push/deploy/restartorpublicapproval.",
+  "next_actions": [
+    "Obtain permitted researcher copies of exactPenn16downloadviews across914/953/899; project automated archival remains paused on robots404. Record originalURLs/object credits/conditions; no native text recovery implied.",
+    "Obtain originalTMH7printed35–37entry8aandassociatedplate to inspect reported13/14count; preserve museum6/13andMoriggi7/14until countconventions established.",
+    "Continue separate CONC review using accession/inscription/visualjoin corroboration from heldplate/currentgallery; no identity adjudication in73TEXTworkstream.",
+    "Continue scholarly native/English edition route for CBS85-48-914; datedunpublishednotice and blankbibliography do not establish currentabsence."
+  ],
+  "protected_payloads": "Sourcepages/extractions/complete before snapshots private; receiptmetadata/counts/hash pointers only. Browserphotosnotarchived.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0073_Penn_count_photo_routes.json",
+      "sha256": "5d3a2de7e6070ed9e3e4e483b3caf3df66683377cf8e8f4d15a5114fc3400a97"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Moriggi41-count-scope-audit.json",
+      "sha256": "587d0d9663ab25e72e744f887d2205ac037087179ca08e2fe286b4c4a3ebb60c"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Mueller-Kessler-holdings-query.json",
+      "sha256": "c5e5a09144337d0543cf7993c101137d0d5997dbb0f34c9306e36d5628d7d114"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Penn-policy-photo-route-audit.json",
+      "sha256": "e87a6d635fde653de581dc583d2b54d5309faab586d8dff18935b945e629a933"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/TMH7-acquisition-routes.json",
+      "sha256": "4b221d42c4a8141a91fc921f25a2e886b0ad07853f5d054a303b81c0fb6ae27d"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/campaign_case_progress_checkpoint73.json",
+      "sha256": "cb8ebfc5bc2a5b27d5a832b9135ce16002bd8388241c0ec55c0812b73ff4d593"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/held_pdf_inventory_checkpoint73.json",
+      "sha256": "b9710f37a9186aba13af35932fb5b6f4a8301a31624fa52c01f0b4c89b94a97c"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/non_pdf_holdings_checkpoint73.json",
+      "sha256": "00e9d724a794847402839751cd493f43bdcdaf7ffe5c80ad8ff58af89e547436"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/object-source-before.json",
+      "sha256": "8accbd7eab455548ee2fb6857e5cf7881e10cddb181b1edb800683af08de783f"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/robots-check-network.json",
+      "sha256": "aa827c04e882b1f5d64e0207d6b8a1a658542ca7ccde631e41517932c966bc8b"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/robots-check-sandbox.json",
+      "sha256": "bc5a12677d8555749e9c3cf7a9e57e6639a7f7d5cf32951fe754b5d56560a24c"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Moriggi-bibliography-page236.txt",
+      "sha256": "2ddcffac6ad5f39a3fae2d0c841c73b077c660c35aa3b982be10807eea67363b"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Moriggi-page205.txt",
+      "sha256": "d5788639536090843e185d104accba4e7e12f1794815f67a0509f1db563817ae"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Moriggi-bibliography-page236.png",
+      "sha256": "bc7a9ffadd9219454b11a40de22c06aab7d45af1653a2229b93c30e4852c2a05"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Moriggi-page205.png",
+      "sha256": "e62b758e0d062557948f266e3c6328c3dcedbbf2b122ce294e69054d295e6340"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/record_checkpoint.py",
+      "sha256": "a1d645df7e86928ef989225363fde42b804c6bc5d6a6184979e2c94e2607253c"
+    },
+    {
+      "path": "data/private/research-work/penn-designation72-2026-10-03/Moriggi-page204.png",
+      "sha256": "c316d2983d500428ea56e7ea2b5455ecaf654731faad1424928ac20bcc9448c0"
+    },
+    {
+      "path": "data/private/research-work/penn-designation72-2026-10-03/Moriggi-page206.png",
+      "sha256": "228d751448f9ea3287bbb1e23d08a377382451a647bb93c62339740def09e01f"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/reader-verification.json",
+      "sha256": "3e802602dceb61869ea45383d5dec9c6d07a30f4966a0d3eb17481d990f27583"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/reader-build-final.log",
+      "sha256": "9f6e283ffb24cf1a7753b502e655d3c004c220a4a9441000dc9dac958e7e4002"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/tests-final.log",
+      "sha256": "e1d9db84a11677a26fe246ab1def51512246e9b4c240f44fe9729d6e893256f5"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/node-tests-final.log",
+      "sha256": "9aec46e75bc89ea29b119961d7f19b0fa4452eebfb4a0efc36b37bcdc76f4d9f"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/verify_reader.py",
+      "sha256": "3c64713cd7e4506c467bf21f9ec550b4b88c96509d9fe9c36ab23419600b860d"
+    },
+    {
+      "path": "data/private/research-work/penn-count73-2026-10-03/Miri-followup-receipt.json",
+      "sha256": "0478432a22f825c015eb4b5a6ac1397d197e4cad681a60af6aaaaff141604670"
+    }
+  ],
+  "validation": {
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 1,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "unchanged_corpus_digest_verified": true,
+    "report_regeneration": "Roadmap regenerated from changed planning input; unchanged corpus reports remain current. Private reader built only after both passing test suites."
+  },
+  "Miri_followup": {
+    "sent_at_checkpoint": 73,
+    "checked_at": "2026-10-03T06:22:45+00:00",
+    "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
+    "host_id": "durable",
+    "completed_turn_id": "01a1006b-90d6-77b7-8013-d552966e7be1",
+    "tracker_update_reported": true,
+    "resolved_documents_reported": 10,
+    "remaining_requests_reported": 23,
+    "remote_tracker_files_independently_inspected": false,
+    "scope": "Metadata-only two acquisition requests; no protected source expression transmitted. Recipient reports tracker updated and no shared/corpus mutation."
+  }
+}

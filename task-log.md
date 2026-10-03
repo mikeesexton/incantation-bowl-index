@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Penn photograph and count routes, checkpoint73
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** unchanged — state digest `1bd984f250fb`; opening clean/state match checkpoint72. No database writes.
+**Tests:** 394 Python + 57 Node = 451 passed; subsequent sequential private reader build7/7. All2,283text contents/attributions/types/current statuses,2,143media assignments,1,232image hashes,88capture hashes and1,880identity memberships/counts verified. Roadmap regenerated from changed planning input; unchanged corpus reports remain current. State recorded.
+
+- Visually inspected complete Moriggi2014printed186–188/PDF204–206 and bibliography218/PDF236. Bowl41printed numbering1–14 individually confirmed; existing stored Latin transliteration retains all14labels. Footnote317attributes edition to newly supplied Penn photograph/revisions. Reported l12omission is within existing numberedline12, not an explanation of13/14. Full2005bibliography identifies TMH7monograph. No new reading/sourcecopy repair or independent clay linecount certification.
+- Exact899plate already held/indexed as MED-35BE9CB95294. Current199041browsergallery presents8downloadURLs; four viewport inspections show corresponding accessionwriting, abrasion and joins. Some views clipped; no byte-identical image, independent complete sherdcount or identity decision asserted. Museum6/13versus Moriggi7/14retained. Stronger corroboration available for later CONC review under standing ruling; source conventions/restoration chronology remain open.
+- Full official Pennterms checked: downloadable personal-research image use subject to object-number Penn credit/link/conditions, distinct from datasetCCBY4 and publication-quality requests. No automatic publicapproval. Freshcollectionshostrobots404retains existing project automatedarchivalpause; sandboxDNSerror separately recorded, no museum/browserdenial or robotsdisallow claimed. No alternate-host/UI-download workaround. Exact914/953earlier3/5URLs preserved, current899eightURLs added to grouped16viewrequest; no imagebytes imported.
+- Original Müller-Kessler2005TMH7 has no registeredcapture and is absent from58sourcePDFinventory. Official universityseries metadata confirms work; bounded queries yielded no obtained fullbook. CurrentLoCwebtoolfailure not libraryaccessdenial; priorbibliographyretained. Added precise originalbook request (immediate printed35–37entry8a, associatedplate/title/contents; plate numberunverified) and groupedPennresearchercopyrequest. Miri metadata-only follow-up delivered/completed; recipient reports tracker10resolved/23requests. Remote trackerfiles not independentlyinspected; no institutioncontact/duplicateMoriggiplate request.
+- Onefrozenhistoryextended; original249caseIDs/members/allhistoricalattempts retained, currentlive coverage32linked/217unlinked/allattempted/zero wholecasescomplete. Corpusunchanged2,283texts/1,548readings=1,414checked/133partial/oneunreviewed;2,143media/1,232images/88captures;58PDFsources/53appearance-bearing/1,342appearances. Historical45nativegaps/IraqMuseum5497rejectedjar retained; allten supplieddocsalreadyprocessed. No duplicateintake/reset/publicapproval/merge/contact/purchase/push/deploy/rejectedrestartretry.
+- Receipt: `research/receipts/Penn_count_photo73_audit_2026-10-03.json`; privatecheckpoint0073, sourcepages/extracts/count-method/photoobservations/robotschecks/acquisitionroutes/before snapshots/currentinventories/verification scripts retained. Privateevidencehashes checked; no protectedsourceexpression in Git. Previous/currentGoalturns progress; Goalactive. Next separateCONC corroboration review, then source-specific native/edition capture and remaining acquisition/217frozenpublication routes.
+
 ## 2026-10-03 — Codex — Penn designation review, checkpoint72
 
 **Claimed:** CONC-002 (one CONC workstream).

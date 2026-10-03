@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T05:31:50+00:00",
+  "updated_at": "2026-10-03T06:19:31+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -348,6 +348,66 @@
           "receipt": "research/receipts/frozen_case_English70_audit_2026-10-03.json"
         }
       ]
+    },
+    {
+      "source_id": "SRC-63345F60155B",
+      "citation": "Müller-Kessler, Christa. Die Zauberschalentexte in der Hilprecht-Sammlung, Jena, und weitere Nippur-Texte anderer Sammlungen. Texte und Materialien der Frau Professor Hilprecht Collection of Babylonian Antiquities im Eigentum der Universität Jena 7. Wiesbaden: Harrassowitz, 2005.",
+      "short_label": "MuellerKessler2005TMH7original",
+      "requirement": "Complete TMH7 monograph if obtainable; immediate priority printed pp35–37, entry8a/CBS85-48-899, relevant photograph/plate and title/contents identifying the work. Moriggi2014p185n311reports description13lines but transliteration14; p186n317reports new Penn photograph/revision. Associated original plate number unverified. Also important for Jena corpus; retain library copying conditions.",
+      "priority": 1,
+      "status": "unheld original needed",
+      "checked_at": "2026-10-03T06:19:31+00:00",
+      "ISBN": "9783447050593",
+      "metadata_url": "https://www.gw.uni-jena.de/38522/texte-und-materialien-der-frau-professor-hilprecht-collection-of-babylonian-antiquities-im-eigentum-der-friedrich-schiller-universitaet-jena-tmh",
+      "library_url": "https://lccn.loc.gov/2006364726",
+      "previous_access_evidence": "Registered source has no capture and is absent from58source heldPDFinventory. Bounded public queries/official university series page yielded bibliography, no obtained original edition. No global claim that the book is unavailable online."
+    },
+    {
+      "source_id": null,
+      "citation": "Penn Museum downloadable collection photographs: objects85-48-914(web86242),85-48-953(web70578),85-48-899(web199041).",
+      "short_label": "Penn3objects16downloadviews",
+      "requirement": "Researcher-obtained personal-research copies of3+5+8advertised image views, with original filenames/object assignment/URLs and any item-specific restrictions. Exact gallery links and16downloadURLs retained; personal-research copying conditions include object-number Penn credit/link. These are browser-accessible images, not missing museum records. Project automated archival route remains paused after fresh robots404; no workaround attempted. Existing Moriggi899plate is already held and does not replace current museum views.",
+      "priority": 2,
+      "status": "browser-accessible; project automated archival paused",
+      "checked_at": "2026-10-03T06:19:31+00:00",
+      "galleries": [
+        {
+          "object_number": "85-48-914",
+          "url": "https://collections.penn.museum/collections/object_images.php?irn=86242",
+          "download_urls": [
+            "https://collections.penn.museum/collections/assets/070T/704k/704292_1600.jpg",
+            "https://collections.penn.museum/collections/assets/070T/704k/704293_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/144k/144379_1600.jpg"
+          ]
+        },
+        {
+          "object_number": "85-48-953",
+          "url": "https://collections.penn.museum/collections/object_images.php?irn=70578",
+          "download_urls": [
+            "https://collections.penn.museum/collections/assets/066T/661k/661264_1600.jpg",
+            "https://collections.penn.museum/collections/assets/066T/661k/661265_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/145k/145532_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/145k/145470_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/145k/145561_1600.jpg"
+          ]
+        },
+        {
+          "object_number": "85-48-899",
+          "url": "https://collections.penn.museum/collections/object_images.php?irn=199041",
+          "download_urls": [
+            "https://collections.penn.museum/collections/assets/070T/704k/704273_1600.jpg",
+            "https://collections.penn.museum/collections/assets/070T/704k/704274_1600.jpg",
+            "https://collections.penn.museum/collections/assets/070T/704k/704272_1600.jpg",
+            "https://collections.penn.museum/collections/assets/011T/118k/118986_1600.jpg",
+            "https://collections.penn.museum/collections/assets/016T/166k/166947_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/144k/144362_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/144k/144350_1600.jpg",
+            "https://collections.penn.museum/collections/assets/014T/144k/144344_1600.jpg"
+          ]
+        }
+      ],
+      "previous_access_evidence": "Fresh2026-10-03collections host robots404, existing repository retrieval pause respected; gallery199041loads8links inbrowser, earlierexactgalleries86242/70578load3/5. No site-wide denial or robots-disallow claimed.",
+      "rights_policy_url": "https://www.penn.museum/about/statements-and-policies/terms-and-conditions"
     }
   ],
   "acquisition_and_reading_completion_separate": true,
