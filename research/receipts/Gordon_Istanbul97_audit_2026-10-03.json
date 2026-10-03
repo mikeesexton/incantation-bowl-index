@@ -1,0 +1,425 @@
+{
+  "schema_version": 1,
+  "checkpoint": 97,
+  "created_at": "2026-10-03T14:27:34+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "b1c6b0f5e904fb17ca2fe3941cddc8accf75be07b3f97a242e5c7590f34893f9",
+  "corpus_after": "73d38d839d94998d2e6e946a3883f14d22048bc58c93f301ec29c64d1bfdb0b0",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_proofreading_reviews": 2,
+  "corrected_text_rows": 2,
+  "text_rows_with_unchanged_wording": 0,
+  "partial_to_checked_reading_rows": 2,
+  "base_letter_correction_rows": 0,
+  "source_inferior_points_checked": 22,
+  "new_inferior_points_encoded": 16,
+  "previous_inferior_points_retained": 6,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1483,
+  "partial_reading_rows": 64,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/campaign_case_progress_checkpoint97.json",
+    "sha256": "c1118a8375c71580fb9b7eb38b990da0e687fe902aef30f648589019ee7699b5"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/held_pdf_inventory_checkpoint97.json",
+    "sha256": "174644f4060e06b23c55073e45316565b5af201da435bde8afc91a2db4800eab"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/non_pdf_holdings_checkpoint97.json",
+    "sha256": "16236b69298c05fea1b628218d0c313b74baff87e1ceb7a38480087c137b31ae"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "native_script_recoveries": 0,
+  "scope": "Checkpoint97: complete bounded native Gordon1934 Istanbul/Baghdad A/B copies checked against held source scans printed321–322/324, complete Case/body/all continuations and independently enlarged entire words/marks. Source convention printed321/PDF4 controls inferior-point semantics. Twenty-two actual source inferior points retained,16new (A6/B10),six existing Bpoints independently accurate. Base wording/brackets/line anchors/periods unchanged. Preliminary opening-row apparent points rejected as neighboring-row rising strokes before certification; no inferred damaged-letter marks. Two appended proofreading reviews preserve originals/all earlier reviews;37other tables/all1880memberships unchanged, trial/production equal, replay zero/allrows and digest unchanged. Gordon8checked/4partial of12stored readings; C–Fnative stillpartial, allsix source translations alreadychecked. All227Jena/77Montgomery checks retained. Inventory1483checked/64partial/oneunreviewed. Both rosters refreshed/exactlytwo changed entries. Frozen249 original members/histories retained exactly:32linked/217unlinked/allattempted/zero wholecases complete, no new attempts. Historical45native gaps/40English projectdrafts unchanged;31Pognon French originals alreadychecked. Miri10resolved/26requests unchanged, allten supplied documents alreadyprocessed. Source/editor/locator/language/script/rights/public0 unchanged. No new access blocker/message/reset/contact/purchase/merge/rights/publicapproval/push/deploy/serverrestart. Source-copy certification does not adjudicate clay/meaning or establish complete source/wholecase audit. Goal active; next GordonC–F/other held readings and217publication cases.",
+  "next_actions": [
+    "Continue four remaining GordonC–F native source copies, prioritizing existing C copying doubt, exact printed inferior dots and witness-specific E/F columns.",
+    "Continue64partial/oneunreviewed readings and217publication cases, separating45missing original-script captures and40English projectdrafts.",
+    "Flag newly inaccessible primary sources for Miri with precise source/item/locator and attempted routes; current26requests remain active."
+  ],
+  "validation": {
+    "corpus_before": "b1c6b0f5e904fb17ca2fe3941cddc8accf75be07b3f97a242e5c7590f34893f9",
+    "corpus_after": "73d38d839d94998d2e6e946a3883f14d22048bc58c93f301ec29c64d1bfdb0b0",
+    "table_changes": {
+      "text_proofreading_reviews": {
+        "removed": 0,
+        "added": 2
+      },
+      "texts": {
+        "removed": 2,
+        "added": 2
+      }
+    },
+    "untargeted_tables_unchanged": 37,
+    "all_earlier_reviews_retained": true,
+    "full_original_text_rows_retained_in_new_reviews": true,
+    "source_identity_locator_editor_rights_unchanged": true,
+    "new_public_approvals": 0,
+    "identity_memberships_unchanged": 1880,
+    "replay_all_rows_and_digest_unchanged": true,
+    "replay_logs": [
+      {
+        "manifest": "data/private/manifests/Gordon_Istanbul97_2026-10-03.json",
+        "output": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n"
+      }
+    ],
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_digest_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Gordon_Istanbul97_2026-10-03.json",
+      "sha256": "700af357baad92053558fa9f906c79871f1c8c7511f3ee9ca12ce8c00b282250"
+    }
+  ],
+  "protected_payloads": "Source images/quoted expression/notes/original snapshots/corrected text/manifests private outsideGit; receipt metadata/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0097_Gordon_A_B_inferior_point_checks.json",
+      "sha256": "be10910f97a6eda9d05a5dc40f28ed02c7a2a1e9b82f990dc3806ae611c919c2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-before.txt",
+      "sha256": "0519a5b982af2206b7487e10ccbe3ff01cde140798ce617294fbd6e2f2e32aaf"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-body-end.png",
+      "sha256": "431aa1c28500cf9468507142839b015625e09aa6f0ce1f3b50ab6f5b73af88cf"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-body-start.png",
+      "sha256": "e334da2bed88912d582a153de0edd20d9fcd97ec631eb7cece154f9238f03f00"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-case.png",
+      "sha256": "78d878cab7956477e9d50ca17de498ffd93139500e556a569df5233dea577237"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-end-grygwr.png",
+      "sha256": "ac2b8a768ec51c62ca78295980e996a05acf32e9ca777317579345c72a8fc953"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-end-yrwry.png",
+      "sha256": "66833af529b753e376e68427bfe37c3e647814dd523619e310884e5ce9bd3bb9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-start-lantrta.png",
+      "sha256": "a568404fc60118e04bd6257d39e01e360d6709814f165aa1c76ecd1bd41fcc2a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/A-start-prwk.png",
+      "sha256": "88347cb1e791c9adda1e5af0c90db2bf587d45369d9d15a0775d6b76b0cb826c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-abda.png",
+      "sha256": "70eb62850c97c1b72a681fe0388befb2e2f55328fc460816f6cc23f9eeed968e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-aht-third.png",
+      "sha256": "ec715a7ee0f12ff4fc7da25da98d2e882070bff71b38fcfc908fbd3fd361cbed"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-before.txt",
+      "sha256": "37873cce418e6994dd0bdfc73347395033071ecfaae96629d37cdae7a98e8f19"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-brta.png",
+      "sha256": "06d7b90e1c92a0578afa796e48a396ad7059d3dc3f9393a1ad9b41e46c7206a4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-complete.png",
+      "sha256": "930e883bba58a1d58e4220d94f5e66800e0651cfb98bb5b24bce0b9d3a992593"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-opening-names.png",
+      "sha256": "6d546781685d06c30ad8dcdcc3c299936b959fa38655bf72d058fdbafd6490d9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-q rq.png",
+      "sha256": "ddec8d87bcd0f4589e6a0d80177d9c3ff7e24fdc1e410b82581847b5a9a33179"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/B-ynyy.png",
+      "sha256": "5de6af7f8bb70eb3921b1bd1b09c48489b5ba2cbf841077036e46ce67f657d84"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/Bcrop.py",
+      "sha256": "3cf9d3c53957fee64d8d005f8171c02867213365eb94fdc857db4c4794db5c58"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/Bdetails.py",
+      "sha256": "0ca564b467a9fb9b333e37f407bbfb117627e516b1f4ce3e9e48baa2d04b6fe2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/C-before.txt",
+      "sha256": "1ac169b590fd9a888831abd6ec4078d208560da24a0aa22f44a0457debea903d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/D-before.txt",
+      "sha256": "28788de493ff9155085e253fc2005c0610bbd2f58adc792e0b934157b796bb3c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/E-before.txt",
+      "sha256": "72c2b12e1a79e9327236a7f3a761e50a006b9a370f5c95c341090d5eae124d53"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/F-before.txt",
+      "sha256": "4a778961d86f7171726a629a3fe91fdf1ec37b8d302ca25567ccc868d4be82ac"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/TXT-D071F87ACE6E-copy.diff",
+      "sha256": "72a001d0e9f276234ea75e58d67dce47fa4869afc7b4185e98209e162559f17e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/TXT-D071F87ACE6E-corrected.txt",
+      "sha256": "e1fdc82a2c91c5ead246564f8483b67867c9cfef10f57f336e8b09ec17296097"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/TXT-E70C738E38CD-copy.diff",
+      "sha256": "1e31b2d9fd5a52a0ad218537909736168690693eae08ea052b84fbd80e085c46"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/TXT-E70C738E38CD-corrected.txt",
+      "sha256": "3cc88eb43c1b7bcfe88388a08c3e35b73f5fe6ec25c6a45410e85591f031a26f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/backup-retention.json",
+      "sha256": "9d4d8232ccce2a6b619b554f5d175123b4d68c888ef1793f699370b58c6cf2db"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/batch-targets-before.json",
+      "sha256": "336f1c53d7b797566d9bb927f9a4f5e4be9c5740c216664080562c0d7938e14b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/campaign_case_progress_checkpoint97.json",
+      "sha256": "c1118a8375c71580fb9b7eb38b990da0e687fe902aef30f648589019ee7699b5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/crop-provenance.json",
+      "sha256": "aac9c0e60aa95b16ca4d3c5f8d14e8e9771369b986c0c57bf590ae599bb331a3"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/crops.py",
+      "sha256": "c6714dd5031d21e13119cdd0d18a27784b69eac6bd3c04bd6ed892d463cab20b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/details.py",
+      "sha256": "d3f2ee888f6e60c3282b8d609e6b58aae0a93c6af70a52f34197ce974020fc89"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/held_pdf_inventory_checkpoint97.json",
+      "sha256": "174644f4060e06b23c55073e45316565b5af201da435bde8afc91a2db4800eab"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/inventory-refresh.json",
+      "sha256": "9eccf0d206ed7148f5743757703741d2bbf64b54d6b8084f92fc6798639737b1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/metadata.json",
+      "sha256": "8fc60a5ebe7e39651f0cf7c04d100dbf216231cc702c6bc31661de46d6aea8b1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/non_pdf_holdings_checkpoint97.json",
+      "sha256": "16236b69298c05fea1b628218d0c313b74baff87e1ceb7a38480087c137b31ae"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-1-2x.png",
+      "sha256": "d144ac5ea386b6d370229602c03912966d1fba1316999802a0a49f4aa2d21273"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-1-4x.png",
+      "sha256": "3bb7a7dc82b073ec258ec8d5b6993c5e3fe6da30bfb486243e2d48fa5a6877fe"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-11-2x.png",
+      "sha256": "afc0c7812441a2d5bd9ee24567885baac91eaaf67c71037625beed8111e7724e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-11-4x.png",
+      "sha256": "dba16c999fe45d72178a3644c3032758bb721ca990cc9a5ab61b98291dad1a8a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-14-2x.png",
+      "sha256": "09502d4a86689930fd12000d2468a94b098b97f9ab337997e655dab3d4f60cad"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-14-4x.png",
+      "sha256": "81fc1e14704c7e3e0d137021b68c221de3f9e0b8fb30a2cfc69e91101f19ebf4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-15-2x.png",
+      "sha256": "e1e0013bdc89bccf4d6246337a36e94315c708fc204f315d290cbcceb3a08769"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-15-4x.png",
+      "sha256": "2af7f17d35f51c65c228bee837fbffa085ef626298a37c3462268bb5d7cef97e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-3-2x.png",
+      "sha256": "c2e56b771ea686a122212e6332d776728879b7ba42a46094bf6ba85fc6fe26c4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-3-4x.png",
+      "sha256": "014547b8b2da68dd1349076fd6f4c8b1f54e7786fad053442beee5855f0c5942"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-4-2x.png",
+      "sha256": "f11400315eed2e6d7c4063b7859e3880414611ae99f1548974537fd41e6d4c69"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-4-4x.png",
+      "sha256": "38df75463868bcec0e40b39443e5179d343d86610affb075133efcdd6a0df303"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-5-2x.png",
+      "sha256": "298b5090bb0c7f932382502880cb19e540bcf21d0826e6b8a6525783dacfda41"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-5-4x.png",
+      "sha256": "979aa55500d19b5a039e07d84011ae89b932c911f3c1058125ae2e83d1983ea4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-7-2x.png",
+      "sha256": "95cfdd616e98a00149e76d92f30b6afe4f91bf842634891c4a17c156fbf3a9bc"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-7-4x.png",
+      "sha256": "620ac91617a018dbaa2ec07d2d5a5670f3d2d892da664027066e888783aa06be"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-9-2x.png",
+      "sha256": "04ad9345e351314fb8b2953c95354814e02d445d84691322494157e5a491d524"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/page-9-4x.png",
+      "sha256": "03c4b8ce7cf391e1684b7b93f01e34416d9cab87c2209b5f2c5aa3dc3c96aeef"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/prepare.py",
+      "sha256": "ed67e9089e82ca05bb4e8d7c2ad12576a1bce562fa9fad59f719c0a2b995f889"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/production-verification.json",
+      "sha256": "77a038888cc97d417ec4be29ddc725c4f052b39dfd71e867dc66439f2a5929d5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/record_checkpoint.py",
+      "sha256": "7c21670aa2cf6aebd20a5192e23200022e92eaf4f856b746deb62231a8d868aa"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/regenerate.py",
+      "sha256": "06c32e4bd48d04f15e237b734bf64885be270b07b527c737215217fc0e7e996e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/render-provenance.json",
+      "sha256": "94469bf5191d2677d9da01988d0a4649e29f4d9900a06f2f8f4266f4b54d3d7b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/render.py",
+      "sha256": "691ebdc6dfc8f9134d284a83f49dfb49123bb197009d82aa41ecf131c9413668"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/source-copy-observations.json",
+      "sha256": "dfd24690996be4ecf69c5d2adfc4aaec0c05ffbba3eba8ddf2d3d8a8a0658d24"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/targets-before.json",
+      "sha256": "318fa497ed1fb7fa0a75eecc0cb71f1507329cf5efb5fac7320cb5d831ecca28"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/trial-verification.json",
+      "sha256": "59fd713849cb30752eca5dd49c9eb7712d49e90aa821f03e6f18462bcdbe5264"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/verify_batch.py",
+      "sha256": "c349ca39c2e3e2fa31a9aa30d1057ee696cea03b5a419004baa934b4a1801595"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/verify_reader.py",
+      "sha256": "08b34598fb78e6ca590f4d4e07cc81a37e565061bb085ca9ccbd33ee27fb61ad"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/remaining-reading-gaps.json",
+      "sha256": "a36c01729774d3b61efbd9f344b2eb91b7ddd9da633bdeee37f7a97013f25470"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/remaining-quotation-and-reading-audit.json",
+      "sha256": "6a959eb720228d3fd85374ee14bffd4be8ad397eefb9a119191479f06c9250f0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/audit_remaining.py",
+      "sha256": "70000c8187e7b57a14873238786ca83ad836fe1644577066cd476173c7a67fa9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/reader-build-final.log",
+      "sha256": "f716cc124357cc566044acc2a8cad100c5096532b19c3cad6610ab19121aee0c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/tests-final.log",
+      "sha256": "b711c25d00e236e9214496aa26a680fe02f0afc10d3326964b9333db2b7b217f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/node-tests-final.log",
+      "sha256": "53c09733305044838f4b139805cbe0e00eae92ad17aeb04b8ffb425cb9834cd5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-Istanbul97-2026-10-03/reports-final.json",
+      "sha256": "cef6aeede161b6d4b867cf4dd0fa87d198b4a9c441e58b2c9d1a9d1b42cbc30e"
+    }
+  ],
+  "complete_bounded_native_copy_checks": 2,
+  "Gordon_checked_readings": 8,
+  "Gordon_partial_readings": 4,
+  "all_Jena_stored_reading_checks_retained": 227,
+  "all_Montgomery_stored_reading_checks_retained": 77
+}

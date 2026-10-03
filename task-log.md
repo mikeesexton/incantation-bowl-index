@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon A/B complete native-copy checks, checkpoint97
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — two appended proofreading reviews and two inferior-point revisions; digest `73d38d839d94`. Opening clean/state matched96. Original copies/all earlier reviews retained;37 other tables and all1,880 memberships unchanged. Trial/production equal; replay changed no rows or digest.
+**Tests:** 394 Python +57 Node =451 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures and1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Complete Gordon1934 Istanbul/Baghdad native TextA Case/body and TextB checked on printed321–322/324 (PDF4–5/7), all continuations/fullclosing and enlarged complete words/mark controls. Source convention printed321/PDF4 explicitly defines inferior points as letters unclear on the bowl.22 actual inferior points copied,16 newly encoded: A6 and B10; six existing B magical-name points verified/retained. Base wording/brackets/anchors/periods unchanged; no glyph/expected damaged-letter mark inferred, no English/grammar/parallel harmonization.
+- Complete widened B opening view rejected two preliminary apparent points as rising letter strokes from the following row. No opening inferior added. Initial clipped A closing/detail controls widened before certification. Source-copy status certifies the bounded normalized edition copy, not clay interpretation, complete source capture or whole cases. Full before rows/older reviews remain immutable; source/editor/locator/language/script/rights/public0 unchanged.
+- Gordon now8 checked/4 partial of12 stored reading rows; allsix translations retain checks. C–F original rows/partial reviews unchanged: C copying doubt/fine dots, D fine dots, E/F separate witness-column typography next. All227 Jena/77 Montgomery checks retained. Inventory1,483 checked/64 partial/one unreviewed. Both inventories refreshed/exactlytwo target entries changed; allremaining partial rows retain concrete review notes.
+- Frozen249 original members/histories retained exactly:32 linked/217 unlinked/all attempted/zero whole cases complete; no new frozen-case attempt. Historical45 native gaps/40 English project drafts remain separate;31 Pognon French originals already checked. Lastten prebatch backups retained under recorded rule.
+- Allten supplied documents already processed, including fgaf025.pdf. Miri10 resolved/26 requests unchanged. No new access blocker, outbound message, reset, purchase, uncertain merge, rights decision, push, deployment or server restart. Protected expression/images/notes/manifests remain private outsideGit; receipt contains metadata/hash pointers.
+- Goal active; continue GordonC–F, other held readings and217 publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0097_Gordon_A_B_inferior_point_checks.json`. Receipt: `research/receipts/Gordon_Istanbul97_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Four native Jena Mandaic blocks checked, checkpoint96
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
