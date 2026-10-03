@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Gordon E/F complete witness-copy checks, checkpoint99
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
+**Corpus:** changed — two appended proofreading reviews/two revised native copies; digest `cfaeaf302402`. Opening clean/state matched98. Full originals/all earlier reviews retained;37 other tables/all1,880 memberships unchanged. Trial/production equal; replay changed no rows or digest.
+**Tests:** 394 Python +57 Node =451 passed. Subsequent private reader build passed7/7 audits; independently verified all2,283 text contents/attributions/classifications/statuses,2,143 media assignments,1,232 image hashes,88 captures and1,880 memberships/counts. Seven reports/exports regenerated; roadmap/inventories/state current.
+
+- Complete Gordon1934 Istanbul/Baghdad native E/F copies checked separately on printed331–332/PDF14–15, clockwise90-degree upright rotation, full left/middle columns and independent complete-word/mark controls. E39physical rows/seven anchors2–8; F35physical rows/unnumbered.23actual inferior points newly encoded (E14/F9), source printed321/PDF4 convention retained. Exact placements include letters outside restorations and complete final words; punctuation and neighboring-row ascenders kept distinct.
+- Corrected one E source7 restoration boundary: resh belongs inside multiword restoration, final aleph outside and inferior; supersedes earlier partial review incorrectly placing resh outside. All base letters retained, original bracket groups/exclamation/client variants, E7/8 split, F repeated short/full word sequence and joined words preserved. No E anchors, omitted Michael passage or Hyvernat readings supplied to F; no English/grammar/parallel harmonization. Initially clipped word controls widened before certification. Source-copy accuracy certifies bounded normalized source copy, not clay/meaning/full-source capture/whole cases. Source/editor/locator/language/script/rights/public0 unchanged.
+- All12stored Gordon1934 reading rows nowchecked (six native/six source translations). All227 Jena/77 Montgomery checks retained. Inventory1,487checked/60partial/oneunreviewed. Both inventories refreshed/exactlytwo target entries changed; remaining partials retain concrete row-level notes. Frozen249 original members/histories exact:32linked/217unlinked/allattempted/zero wholecases complete/no new attempts. Historical45native gaps/40English projectdrafts separate;31Pognon French originals alreadychecked.
+- Allten supplied documents processed including fgaf025.pdf. Miri10resolved/26requests unchanged. No new access blocker/outbound message/reset/purchase/merge/rights decision/public approval/push/deployment/server restart. Protected expression/pixels/notes/manifests remain private outsideGit; receipt contains metadata/hash pointers. Lastten prebatch backups retained under recorded rule.
+- Goal active; next Gordon Aramaic and Mandaic Magical Bowls/other held native/transliterated readings and217publication cases. Private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0099_Gordon_E_F_witness_copy_checks.json`. Receipt: `research/receipts/Gordon_EF99_audit_2026-10-03.json`. Previous/current Goal turns made verified corpus progress.
+
 ## 2026-10-03 — Codex — Gordon C/D complete native-copy checks, checkpoint98
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; continuing Mike-authorized research Goal).
