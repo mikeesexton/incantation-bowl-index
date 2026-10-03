@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "checkpoint": 74,
+  "created_at": "2026-10-03T06:30:25+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "1bd984f250fbc32bf9e159c2a4ec54fa6c0616f0a4abbc25f23bc41501831937",
+  "corpus_after": "14489d38fa5791244c79130c0f8fa22603afbcbe76d5ec010b8dc86a68d3a464",
+  "corpus_changed": true,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "new_dedupe_evidence_rows": 2,
+  "original_candidate_and_decision_unchanged": true,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "total_identities": 1880,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2283,
+  "total_reading_rows": 1548,
+  "checked_reading_rows": 1414,
+  "partial_reading_rows": 133,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2143,
+  "total_local_images": 1232,
+  "total_captures": 88,
+  "registered_PDF_sources": 58,
+  "PDF_appearance_bearing_sources": 53,
+  "PDF_appearances": 1342,
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/penn-concordance74-2026-10-03/campaign_case_progress_checkpoint74.json",
+    "sha256": "cdd58964bceeb4966a08bb2f8b27c99f8db19b81142b4adc02f1dd91ea313c73"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/penn-concordance74-2026-10-03/held_pdf_inventory_checkpoint74.json",
+    "sha256": "0ae0349a4e04cc4edf54eb7c416b2fb59e332afa4d89b064fdfc71f4b6a0249a"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/penn-concordance74-2026-10-03/non_pdf_holdings_checkpoint74.json",
+    "sha256": "03e20c8ce47ffd09ee8471efa8ee75f2e50aa202be57ca8bde11c11a4be8c242"
+  },
+  "miri_resolved": 10,
+  "miri_remaining_requests": 23,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint74 appends two evidence rows to existing Penn85-48-899review: selectedmuseum/heldedition photograph correspondence and checkededitionnumbering/methodlimits. Originalcandidate status/by/time and both earlier positive/contrary evidence rows preserved exactly; no newidentitydecision or merge. Museum13lines/6fragments versus Moriggi14/7remain sourceattributed; original2005count/conservation context unheld, priorMiri requests remain23. ContextualPennaliasdiscovery examines352identifiers in5collectionnumberschemes viaexplicitassigningbody/exactinstitutionalURL/sourceattributedcollectionclaim;350normalized/329distinctdesignations/2compoundorannotatedidentifiers excluded. Letters/suffixes preserved, noB-toCBScollapse or globalnumbernormalization; only899unjoinedgroup, no newpairfound, no comprehensivecorpusdedupeclaim. All earlier39table rows retained unchanged; trial/production semanticpayloadsequal, replay rows/digestunchanged(samevaluecandidateSQLupdatepossible). All1880identity memberships/counts unchanged. Frozen249originalmembers/historiesretained, independently recalculated32linked/217unlinked/allattempted/zero wholecasescomplete; no newfrozenhistory claimed. Corpus2283texts/1548readings1414checked133partial1unreviewed;2143media/1232localimages/88captures;58PDFsources53appearance-bearing1342appearances unchanged. Goalactive, prior/currentturnsprogress; allten supplieddocumentsalreadyprocessed, no duplicateintake/reset/newacquisition or outboundmessage/publicapproval/contact/purchase/push/deploy/restart. BothexcludedPennannotations thenchecked against fourcompleteMontgomerypages: text19register324/PDF330blanknumber is explicitlyCBS16018 inheading195/PDF201; text28register325/PDF331andheading213/PDF219giveCBS2972. Bothalreadythree-memberidentities withpriorlinks; no newmerge/numberrepair/readingreview, registeromissionnotglobalabsence.",
+  "next_actions": [
+    "Retain899insufficientevidence review until originalTMH7pp35–37/associatedplate and count/conservation context resolve differingreports; strongerphotocorroboration is now attached directly to review.",
+    "Proceed with remaining heldsource native/translation quotation checks and217frozen publication routes; individualoriginaledition/image acquisition does notstop otherresearch.",
+    "Both excludedPennannotations now sourcechecked, alreadyjoined; retain annotated/source-specific registerrecords. Continue remainingheldsource readings/217frozenpublicationroutes."
+  ],
+  "validation": {
+    "corpus_before": "1bd984f250fbc32bf9e159c2a4ec54fa6c0616f0a4abbc25f23bc41501831937",
+    "corpus_after": "14489d38fa5791244c79130c0f8fa22603afbcbe76d5ec010b8dc86a68d3a464",
+    "all_earlier_rows_unchanged_tables": 39,
+    "new_rows": {
+      "dedupe_evidence": 2
+    },
+    "original_candidate_status_by_timestamp_preserved": true,
+    "identities_unchanged": 1880,
+    "insufficient_evidence_pair_unmerged": true,
+    "all_original_records_and_prior_evidence_retained": true,
+    "replay_fingerprint_and_all_rows_unchanged": true,
+    "same_value_candidate_SQL_update_possible": true,
+    "integrity_and_foreign_keys_pass": true,
+    "trial_production_semantic_payloads_equal": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2283,
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_and_source_assignments_verified": 88,
+      "all_identity_memberships_and_counts_verified": 1880,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "research/reviews/penn_corroboration74_2026-10-03.jsonl",
+      "sha256": "3238937139b56367ccb7eb8d614217fbf291a652d5b90766c503e47c2b31b05d"
+    }
+  ],
+  "protected_payloads": "Before snapshots/sourceobservations/privateholdings payloads outsideGit; reviewmanifest andreceipt holdsourceattributedfacts/projectobservations/counts/hashpointers only, no sourceexpression.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0074_Penn_corroboration_evidence.json",
+      "sha256": "f7d4511079d416dfc387e3f528477e96972fc65d269516aa57531dd556772824"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Penn-contextual-alias-screen.json",
+      "sha256": "d63572d698b305411660b086f32750e4ffab97d712fae11ce61370a6c5da5bc5"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/backup-retention.json",
+      "sha256": "51ec0c490c8488aea27a4a5ce33182cc68cd880df58c8c9234ac29f845efbf4d"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/campaign_case_progress_checkpoint74.json",
+      "sha256": "cdd58964bceeb4966a08bb2f8b27c99f8db19b81142b4adc02f1dd91ea313c73"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/held_pdf_inventory_checkpoint74.json",
+      "sha256": "0ae0349a4e04cc4edf54eb7c416b2fb59e332afa4d89b064fdfc71f4b6a0249a"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/identities-before.json",
+      "sha256": "ca112b4709d4b140c4960fc43529bac59b0304c8c7f7e148ce4ed69fadaa95f2"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/metadata.json",
+      "sha256": "1ae572bf854c12e0ca7fdc029c2c74dbe4f491b94d8381e51248e943f1ae0fbf"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/non_pdf_holdings_checkpoint74.json",
+      "sha256": "03e20c8ce47ffd09ee8471efa8ee75f2e50aa202be57ca8bde11c11a4be8c242"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/production-business.json",
+      "sha256": "2c4172d59f0124feb5c1b686c722d5e34798774e93da55e4f88dc2d598bf0f1f"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/production-verification.json",
+      "sha256": "71210792961288ef1ad3f9e85363101a5cad4cf8860f44374c5390b4c3372f47"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/review-basis.json",
+      "sha256": "f32b84fb4d682f983ead8fad052597ec120e353b988a065be94de1f2c43abdc9"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/review-before.json",
+      "sha256": "2d65bae1923d89cee65fd002d82c5ffc35598e9cfc3a0c4cfedf653ba06d4d87"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/trial-business.json",
+      "sha256": "2c4172d59f0124feb5c1b686c722d5e34798774e93da55e4f88dc2d598bf0f1f"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/trial-verification.json",
+      "sha256": "615c9d6e085e850d94a81f396e97ec8f5b45c408ef057ba2f541362a26820390"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/discover.py",
+      "sha256": "5e15b055b31f5ae25b6b4f4c186eefe6d614427c3937c1bdd8d7765c3521131b"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/prepare.py",
+      "sha256": "b846506392d1a13bfbef6e8af65ceb66d88ac3367e39275e4d9d316c835ad6ca"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/record_checkpoint.py",
+      "sha256": "856db97db93134f078c2aa99b49e909c78a428f31f8d381f2ee1d142b5554d2d"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/verify_batch.py",
+      "sha256": "eff9b07c4bf17f97bb82dfecdb219d8c19d4b031f22b8b3e97e60f090a34a45f"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/annotated-identifier-context.json",
+      "sha256": "2f3d29367b358d8569756ff9bc4e01ac3d759677c4b61ddfefe06eb07920e52c"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/annotated-identifier-source-audit.json",
+      "sha256": "09ff284abec65709640624c1b7cead3b60787ac47339a881b96551cd19d48178"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page201.png",
+      "sha256": "14658cbea40147907bdcf1aba626a376e3e54af7840c969bb5cf13d7352df77f"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page219.png",
+      "sha256": "c1a898b162ea3dd74229c4347cb476d1d187fc125b52f03d0d7abd14b36de628"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page330.png",
+      "sha256": "c6d6d85908c573d8d04566aa1bb068628c2316f60c856da3b1aa7ae678e7187d"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page331.png",
+      "sha256": "ad243f223e90e16a511f270654565be7a1222dc280e800d06603e23776e1f6c0"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page201.txt",
+      "sha256": "b99c6c860ca5c0dbfc22285b004efc80861588e57a59dc702a47ae97f6c820db"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page219.txt",
+      "sha256": "29f8189bcade8238bf4ac847457cf7ac076ee428951af6744397c9da21557285"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page330.txt",
+      "sha256": "a72c61b25584f352480eb915f97754cdf0d3e9882d384a405f4190a841cce8f6"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/Montgomery-page331.txt",
+      "sha256": "0df7b8f9036a0c169a12352b2b05184164a4334e0085de06fa152ee859d5b1b6"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/record_annotated.py",
+      "sha256": "e2b44a41310540ada389cbc0fdfc4ef8c58ec905ae56db0652d4c610b4af4cbf"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/reader-verification.json",
+      "sha256": "19622ae3a2aedbc7200cf9cffdae6cf3af1c49d0d95ffbbae5c791c7ba986f4d"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/reader-build-final.log",
+      "sha256": "270b51474ccb2135ac13958829956bcefe7eb951453eb9a44f48368c5000f954"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/tests-final.log",
+      "sha256": "9cce77b819db53d60b68fab21885866e38b6a8faa531b4d64651ab1b3b6fe86f"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/node-tests-final.log",
+      "sha256": "7531297ee2f41887e8f811339ed4897102871556f870f8e5f8b993890f0fb8da"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/verify_reader.py",
+      "sha256": "0145700e835dbfc4d4a97f6b1f65df7f1d57810f748c07694374f6b773c23340"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/reports-final.json",
+      "sha256": "010c0e89744717106e7f542ae1e8e0943847dfb6a7dd9c2ab1bb756b3a40847e"
+    },
+    {
+      "path": "data/private/research-work/penn-concordance74-2026-10-03/regenerate.py",
+      "sha256": "9c3a951ba1ae83c2750b595badce5183d33bb82dcae2240583d41fdb14c35b10"
+    }
+  ],
+  "annotated_identifiers_checked": 2,
+  "annotated_groups_already_joined": 2,
+  "annotated_identifier_audit": {
+    "path": "data/private/research-work/penn-concordance74-2026-10-03/annotated-identifier-source-audit.json",
+    "sha256": "09ff284abec65709640624c1b7cead3b60787ac47339a881b96551cd19d48178"
+  }
+}

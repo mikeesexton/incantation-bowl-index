@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "1bd984f250fbc32bf9e159c2a4ec54fa6c0616f0a4abbc25f23bc41501831937",
+  "corpus_digest": "14489d38fa5791244c79130c0f8fa22603afbcbe76d5ec010b8dc86a68d3a464",
   "migrations": 21,
-  "note": "Checkpoint73: Penn terms/robots/gallery and Moriggi41count/photo/method audit; two acquisition requests sent to Miri, corpus unchanged",
-  "recorded_at": "2026-10-03T06:22:45+00:00",
+  "note": "Checkpoint74: append2Penn899corroboration/limit evidence rows, originaldecision retained; scopedaliases and two annotatedMontgomeryidentifiers checked",
+  "recorded_at": "2026-10-03T06:35:02+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -59,8 +59,8 @@
       "rows": 34801
     },
     "dedupe_evidence": {
-      "digest": "ebff065a0c30e44db8e0bb8f7b3079c9c54d41392e559ce52f62724ea7f48923",
-      "rows": 34810
+      "digest": "522dbc6887a484506a23fe23e1631dbec31c8e4a648ac7113e34a0d53e83efa5",
+      "rows": 34812
     },
     "document_assessments": {
       "digest": "d06f057a0a520bb748803489656e56889280de6eea1a076d9553a745346da1c1",
