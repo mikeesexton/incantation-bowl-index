@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 from .ids import new_id
 from .catalogue_metadata import corrected_appearance, corrected_identifier_import, corrected_claim_import
@@ -8,6 +9,71 @@ SOURCE_FIELDS = (
     "source_type", "title", "authors", "issued_year", "container_title", "publisher", "url",
     "doi", "isbn", "citation", "access_status", "rights_status", "notes",
 )
+
+
+def _append_reading(conn, object_id, appearance_id, source_id, item, locator):
+    """Allow exact rehearsal of private reading manifests without replacing rows."""
+    values = dict(object_id=object_id, appearance_id=appearance_id, source_id=source_id,
+                  text_type=item['text_type'], language=item.get('language'), script=item.get('script'),
+                  content=item['content'], editor=item.get('editor'), locator=locator,
+                  rights_status=item.get('rights_status', 'unknown'),
+                  public_ok=int(bool(item.get('public_ok', False))), notes=item.get('notes'))
+    if item.get('created_at'):
+        stamp = datetime.fromisoformat(item['created_at'].replace('Z', '+00:00'))
+        if stamp.utcoffset() is None or stamp.utcoffset().total_seconds() != 0:
+            raise ValueError('Reading creation timestamp must be UTC')
+        values['created_at'] = stamp.strftime('%Y-%m-%d %H:%M:%S')
+    if item.get('id'):
+        prior = conn.execute('SELECT * FROM texts WHERE id=?', (item['id'],)).fetchone()
+        if prior:
+            snapshots = [dict(prior)]
+            for table in ('text_proofreading_reviews', 'text_metadata_corrections'):
+                snapshots.extend(json.loads(r['before_json']) for r in conn.execute(
+                    f'SELECT before_json FROM {table} WHERE text_id=?', (item['id'],)))
+            if not any(all(s.get(k) == v for k, v in values.items()) for s in snapshots):
+                raise ValueError('Reading ID reused with different evidence')
+            return
+        from .text_metadata import previously_corrected_import
+        if previously_corrected_import(conn, object_id, appearance_id, source_id, item, locator):
+            raise ValueError('Retained reading already exists under another ID')
+    prior = conn.execute('SELECT id FROM texts WHERE object_id=? AND appearance_id=? AND source_id=? '
+                         'AND text_type=? AND content=? AND locator=?',
+                         (object_id, appearance_id, source_id, item['text_type'], item['content'], locator)).fetchone()
+    if prior:
+        if item.get('id') and item['id'] != prior['id']:
+            raise ValueError('Reading already exists under another ID')
+        return
+    values = dict(id=item.get('id') or new_id('text'), **values)
+    conn.execute('INSERT INTO texts (%s) VALUES (%s)' % (','.join(values), ','.join('?' for _ in values)),
+                 list(values.values()))
+
+
+def _append_media(conn, object_id, appearance_id, source_id, item):
+    capture_id = item.get('capture_id')
+    if capture_id:
+        capture = conn.execute('SELECT source_id FROM captures WHERE id=?', (capture_id,)).fetchone()
+        if not capture or capture['source_id'] != source_id:
+            raise ValueError('Media capture must belong to its source')
+    values = dict(object_id=object_id, appearance_id=appearance_id, source_id=source_id,
+                  capture_id=capture_id, media_type=item.get('media_type', 'image'), url=item.get('url'),
+                  rights_status=item.get('rights_status', 'unknown'),
+                  perceptual_hash=item.get('perceptual_hash'), notes=item.get('notes'))
+    if item.get('id'):
+        prior = conn.execute('SELECT * FROM media WHERE id=?', (item['id'],)).fetchone()
+        if prior:
+            if not all(prior[k] == v for k, v in values.items()):
+                raise ValueError('Media ID reused with different evidence')
+            return
+    prior = conn.execute('SELECT id FROM media WHERE object_id=? AND appearance_id=? AND source_id=? '
+                         'AND media_type=? AND url IS ?',
+                         (object_id, appearance_id, source_id, values['media_type'], values['url'])).fetchone()
+    if prior:
+        if item.get('id') and item['id'] != prior['id']:
+            raise ValueError('Media already exists under another ID')
+        return
+    values = dict(id=item.get('id') or new_id('media'), **values)
+    conn.execute('INSERT INTO media (%s) VALUES (%s)' % (','.join(values), ','.join('?' for _ in values)),
+                 list(values.values()))
 
 
 def normalize_identifier(scheme, value):
@@ -203,28 +269,10 @@ def add_candidate(conn, record):
             )
         for item in record.get("texts", []):
             locator = item.get("locator", appearance["locator"])
-            if previously_corrected_import(conn, existing["object_id"], existing["appearance_id"],
+            if not item.get('id') and previously_corrected_import(conn, existing["object_id"], existing["appearance_id"],
                                            source_id, item, locator):
                 continue
-            if conn.execute(
-                "SELECT 1 FROM texts WHERE object_id=? AND appearance_id=? AND source_id=? "
-                "AND text_type=? AND content=? AND locator=?",
-                (
-                    existing["object_id"], existing["appearance_id"], source_id,
-                    item["text_type"], item["content"], locator,
-                ),
-            ).fetchone():
-                continue
-            conn.execute(
-                "INSERT INTO texts (id,object_id,appearance_id,source_id,text_type,language,script,"
-                "content,editor,locator,rights_status,public_ok,notes) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                (
-                    new_id("text"), existing["object_id"], existing["appearance_id"], source_id,
-                    item["text_type"], item.get("language"), item.get("script"), item["content"],
-                    item.get("editor"), locator, item.get("rights_status", "unknown"),
-                    int(bool(item.get("public_ok", False))), item.get("notes"),
-                ),
-            )
+            _append_reading(conn, existing["object_id"], existing["appearance_id"], source_id, item, locator)
         for event in record.get("events", []):
             locator = event.get("locator", appearance["locator"])
             if conn.execute(
@@ -248,25 +296,7 @@ def add_candidate(conn, record):
                 ),
             )
         for media in record.get("media", []):
-            if conn.execute(
-                "SELECT 1 FROM media WHERE object_id=? AND appearance_id=? AND source_id=? "
-                "AND media_type=? AND url IS ?",
-                (
-                    existing["object_id"], existing["appearance_id"], source_id,
-                    media.get("media_type", "image"), media.get("url"),
-                ),
-            ).fetchone():
-                continue
-            conn.execute(
-                "INSERT INTO media (id,object_id,appearance_id,source_id,media_type,url,rights_status,"
-                "perceptual_hash,notes) VALUES (?,?,?,?,?,?,?,?,?)",
-                (
-                    new_id("media"), existing["object_id"], existing["appearance_id"], source_id,
-                    media.get("media_type", "image"), media.get("url"),
-                    media.get("rights_status", "unknown"), media.get("perceptual_hash"),
-                    media.get("notes"),
-                ),
-            )
+            _append_media(conn, existing["object_id"], existing["appearance_id"], source_id, media)
         return existing["object_id"]
 
     object_id = record.get("object_id") or new_id("object")
@@ -327,16 +357,8 @@ def add_candidate(conn, record):
         )
 
     for text in record.get("texts", []):
-        conn.execute(
-            "INSERT INTO texts (id,object_id,appearance_id,source_id,text_type,language,script,content,"
-            "editor,locator,rights_status,public_ok,notes) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
-            (
-                new_id("text"), object_id, appearance_id, source_id, text["text_type"], text.get("language"),
-                text.get("script"), text["content"], text.get("editor"),
-                text.get("locator", appearance["locator"]), text.get("rights_status", "unknown"),
-                int(bool(text.get("public_ok", False))), text.get("notes"),
-            ),
-        )
+        _append_reading(conn, object_id, appearance_id, source_id, text,
+                        text.get("locator", appearance["locator"]))
 
     for event in record.get("events", []):
         conn.execute(
@@ -350,38 +372,30 @@ def add_candidate(conn, record):
         )
 
     for media in record.get("media", []):
-        conn.execute(
-            "INSERT INTO media (id,object_id,appearance_id,source_id,media_type,url,rights_status,"
-            "perceptual_hash,notes) VALUES (?,?,?,?,?,?,?,?,?)",
-            (
-                new_id("media"), object_id, appearance_id, source_id, media.get("media_type", "image"),
-                media.get("url"), media.get("rights_status", "unknown"), media.get("perceptual_hash"),
-                media.get("notes"),
-            ),
-        )
+        _append_media(conn, object_id, appearance_id, source_id, media)
     return object_id
 
 
 def load_jsonl(conn, path, record_type):
     count = 0
-    with open(path, encoding="utf-8") as handle:
-        for line_number, line in enumerate(handle, 1):
-            if not line.strip() or line.lstrip().startswith("#"):
-                continue
-            record = json.loads(line)
-            try:
-                if record_type == "source":
-                    add_source(conn, record)
-                elif record_type == "candidate":
-                    add_candidate(conn, record)
-                elif record_type == "lead":
-                    add_lead(conn, record)
-                else:
-                    raise ValueError("unsupported record type: %s" % record_type)
-            except Exception as exc:
-                raise ValueError("%s:%s: %s" % (path, line_number, exc)) from exc
-            count += 1
-    conn.commit()
+    with conn:
+        with open(path, encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, 1):
+                if not line.strip() or line.lstrip().startswith("#"):
+                    continue
+                record = json.loads(line)
+                try:
+                    if record_type == "source":
+                        add_source(conn, record)
+                    elif record_type == "candidate":
+                        add_candidate(conn, record)
+                    elif record_type == "lead":
+                        add_lead(conn, record)
+                    else:
+                        raise ValueError("unsupported record type: %s" % record_type)
+                except Exception as exc:
+                    raise ValueError("%s:%s: %s" % (path, line_number, exc)) from exc
+                count += 1
     return count
 
 

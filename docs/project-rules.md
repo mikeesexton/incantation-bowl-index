@@ -278,6 +278,13 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   deposit time; whole-batch validation precedes append-only intake. New sources
   may be declared explicitly, but existing sources and receipts cannot be
   replaced. Local deposits imply no HTTP retrieval or access-control decision.
+- Private reading batches can declare stable text/media `id` values in
+  `ibi ingest candidate`, a UTC text `created_at`, and a media `capture_id`
+  belonging to the same source. These allow exact rehearsal against an existing
+  appearance. Reused IDs must match the retained evidence; they cannot replace
+  rows or silently alias another ID. Earlier source-checked drafts remain in
+  their correction snapshots, and replay cannot revert them. JSONL intake rolls
+  back the batch if any record fails.
 - If an archived PDF turns out to be a different work, keep the works separate.
   Repair its source assignment with `ibi ingest-capture-source-corrections`
   against a hash-bound manifest. The immutable ledger retains the complete

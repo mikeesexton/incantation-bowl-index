@@ -8,15 +8,15 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1495 | 52 | 1 | 1548 | 96.6% |
+| Edition text (translation, transcription, transliteration) | 1495 | 53 | 1 | 1549 | 96.5% |
 | Other stored text (mostly source extracts and summaries) | 1 | 7 | 727 | 735 | 0.1% |
-| All stored text | 1496 | 59 | 728 | 2283 | 65.5% |
+| All stored text | 1496 | 60 | 728 | 2284 | 65.5% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 732 | 41 | 1 | 774 |
+| translation | 732 | 42 | 1 | 775 |
 | transcription | 575 | 7 | 0 | 582 |
 | transliteration | 188 | 4 | 0 | 192 |
 
@@ -60,6 +60,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 1 | 0 | 0 | 1 |
 | ‘Gabriel Is on Their Right’: Angelic Protection in Jewish Magic and Babylonian Lore (`SRC-B891A0061CEA`) | 2 | 0 | 0 | 2 |
 | Traditions of Magic in Late Antiquity (`SRC-BOHAK1996-TRADITIONS-MAGIC`) | 1 | 0 | 0 | 1 |
+| An Aramaic Incantation (`SRC-C45C16AC2B8E`) | 0 | 1 | 0 | 1 |
 | MS 2053/196 Incantation Bowl: Earliest Hewbrew Text Examples (`SRC-C54888E36130`) | 1 | 0 | 0 | 1 |
 | Jewish Aramaic Incantation Bowls (`SRC-C5AA2D8C1284`) | 2 | 0 | 0 | 2 |
 | Bridging the Gaps: A New Jewish Aramaic Incantation Bowl and Its Parallels (`SRC-CA4B122C5F4D`) | 21 | 0 | 0 | 21 |
