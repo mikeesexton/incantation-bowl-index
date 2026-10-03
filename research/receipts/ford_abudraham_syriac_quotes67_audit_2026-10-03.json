@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "checkpoint": 67,
+  "created_at": "2026-10-03T04:35:09+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "420516760f23282cc49994f8241dbc9ec261b58edc4402729928050ebdda7248",
+  "corpus_after": "e9c7e17e223e60a118e8cab632cba02452904ab58637a6349e6def0776803b10",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "newly_linked_frozen_identities": 0,
+  "new_objects": 11,
+  "reused_exact_objects": 4,
+  "new_appearances": 15,
+  "new_identifiers": 15,
+  "new_claims": 15,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 28,
+  "newly_checked_bounded_rows": 28,
+  "new_Syriac_transcriptions": 14,
+  "new_Hebrew_transcriptions": 2,
+  "new_English_rows": 12,
+  "selected_encoded_Syriac_positions_once": 368,
+  "new_outlined_Syriac_glyphs": 1,
+  "grey_positions_retained": 2,
+  "detached_marks_retained": 8,
+  "all_main_native_rows_checked": 8,
+  "all_main_English_rows_checked": 8,
+  "new_media_rows": 0,
+  "new_immutable_proofreading_reviews": 28,
+  "new_document_assessments": 1,
+  "whole_source_extraction_complete": false,
+  "original_cited_editions_verified_by_these_checks": false,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 58,
+    "appearance_bearing_sources": 53,
+    "indexed_appearances": 1340,
+    "unassigned_pdf_captures": 0
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/campaign_case_progress_checkpoint67.json",
+    "sha256": "e4b1a1091c2bc8536c74bea876c7a2457ff427eb2f3279cbd77d9d8098abdf6e"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/held_pdf_inventory_checkpoint67.json",
+    "sha256": "c5fab177d5b2129d8241537714893fd3ee86b8dbf1cad3f1ed18dc47b2914011"
+  },
+  "remaining_quote_route_inventory": {
+    "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/remaining-quote-and-apparatus-inventory.json",
+    "sha256": "90c33ef72879fbafad848a48df4f11f72f57954d065cc692a7e9c561ed8c3a9e"
+  },
+  "source_copy_reviewed_reading_rows": 1389,
+  "partial_reading_rows": 133,
+  "unreviewed_reading_rows": 1,
+  "total_reading_rows": 1523,
+  "total_text_rows": 2258,
+  "scope": "Checkpoint67 separately captures/checks28bounded comparative quotation rows in held Ford–Abudraham2018 from15named witnesses:14Syriac transcriptions, two Hebrew-script words and12English rows. Six complete original pages/11enlarged details inspected. Exact source geometry preserves368encoded Syriac positions, eight detached marks, two grey partial-preservation letters with declared project angle convention, plus one uniquely embedded-font-matched outlined AS1letter within source restoration brackets. Font-specific logical bracket order and printed English interior punctuation retained. No English invented for JNF216/JNF218name sequences, PC1word or CBS16018footnote33variant; source-reported replacement remains separate without editing earlier readings. All fifteen named comparison groups left by cp66now captured at bounded scope, with full original editions/later publication routes still open. Four existing scoped witnesses reused,11newcandidates,15appearances/identifiers/publication-reference claims. CBS9012uses explicitly cited AIT34object; three preexisting same-designation records retained for later CONC-ledger work.28immutable source-copy reviews retain original rows; every earlier row across39tables unchanged, trial/production normalized payloads equal and all three replays change zero. All8main native/8English editions unchanged/checked; new superseding document assessment keeps complete42page holding and partial sourcewide extraction for main-commentary/footnote variants/non-bowl apparatus/prose. Corpus2258texts/1523readingrows=1389checked/133partial/oneunreviewed; counts include bounded excerpts/project renderings/dealer quotations, not completed independent editions.2143media/1232images/87captures; heldPDF58sources/53appearance-bearing/1340appearances. Historical45native gaps unchanged. Fixed24932linked/217unlinked/allattempted/zero wholecasescomplete; all earlier histories and IraqMuseum5497jar retained. Suppliedfgaf025attachment independently rehashed to archived Abudraham39document; all ten supplied documents already processed, no duplicate intake. Miri10resolved/20requests unchanged; no newly failed retrieval or reset. Goal active; no push/deploy/live restart/purchase/author contact/uncertain merge/scholarly/authenticity/rights adjudication.",
+  "next_actions": [
+    "Capture/source-check main-commentary and footnote variants; two additional exact outlined letters already matched without source text changes.",
+    "Process non-bowl apparatus separately, retain lexical/interpretive claims apart from readings.",
+    "Later CONC checkpoint: inspect CBS9012same-designation records and apply standing ruling through dedupe ledger.",
+    "Continue217frozen publication-reference routes and20actual Miri acquisition requests."
+  ],
+  "validation": {
+    "database": "data/private/ibi.sqlite3",
+    "corpus_before": "420516760f23282cc49994f8241dbc9ec261b58edc4402729928050ebdda7248",
+    "corpus_after": "e9c7e17e223e60a118e8cab632cba02452904ab58637a6349e6def0776803b10",
+    "tables_verified": 39,
+    "changes": {
+      "accuracy_audit_reviews": {
+        "previous_rows_retained_unchanged": 80,
+        "changed": 0,
+        "added": 0
+      },
+      "appearance_object_links": {
+        "previous_rows_retained_unchanged": 2823,
+        "changed": 0,
+        "added": 15
+      },
+      "appearances": {
+        "previous_rows_retained_unchanged": 2823,
+        "changed": 0,
+        "added": 15
+      },
+      "capture_source_corrections": {
+        "previous_rows_retained_unchanged": 3,
+        "changed": 0,
+        "added": 0
+      },
+      "captures": {
+        "previous_rows_retained_unchanged": 87,
+        "changed": 0,
+        "added": 0
+      },
+      "catalogue_metadata_corrections": {
+        "previous_rows_retained_unchanged": 9,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_conflict_review_history": {
+        "previous_rows_retained_unchanged": 964,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_conflict_reviews": {
+        "previous_rows_retained_unchanged": 646,
+        "changed": 0,
+        "added": 0
+      },
+      "claim_locator_corrections": {
+        "previous_rows_retained_unchanged": 1110,
+        "changed": 0,
+        "added": 0
+      },
+      "claims": {
+        "previous_rows_retained_unchanged": 9188,
+        "changed": 0,
+        "added": 15
+      },
+      "contributor_aliases": {
+        "previous_rows_retained_unchanged": 0,
+        "changed": 0,
+        "added": 0
+      },
+      "coverage_targets": {
+        "previous_rows_retained_unchanged": 12,
+        "changed": 0,
+        "added": 0
+      },
+      "dedupe_candidates": {
+        "previous_rows_retained_unchanged": 34798,
+        "changed": 0,
+        "added": 0
+      },
+      "dedupe_evidence": {
+        "previous_rows_retained_unchanged": 34804,
+        "changed": 0,
+        "added": 0
+      },
+      "document_assessments": {
+        "previous_rows_retained_unchanged": 124,
+        "changed": 0,
+        "added": 1
+      },
+      "events": {
+        "previous_rows_retained_unchanged": 215,
+        "changed": 0,
+        "added": 0
+      },
+      "identifiers": {
+        "previous_rows_retained_unchanged": 5214,
+        "changed": 0,
+        "added": 15
+      },
+      "leads": {
+        "previous_rows_retained_unchanged": 99,
+        "changed": 0,
+        "added": 0
+      },
+      "manual_audits": {
+        "previous_rows_retained_unchanged": 14,
+        "changed": 0,
+        "added": 0
+      },
+      "media": {
+        "previous_rows_retained_unchanged": 2143,
+        "changed": 0,
+        "added": 0
+      },
+      "media_rights_reviews": {
+        "previous_rows_retained_unchanged": 652,
+        "changed": 0,
+        "added": 0
+      },
+      "merge_log": {
+        "previous_rows_retained_unchanged": 0,
+        "changed": 0,
+        "added": 0
+      },
+      "museum_concordance_reviews": {
+        "previous_rows_retained_unchanged": 40,
+        "changed": 0,
+        "added": 0
+      },
+      "object_relationship_assertions": {
+        "previous_rows_retained_unchanged": 5,
+        "changed": 0,
+        "added": 0
+      },
+      "object_scope_reviews": {
+        "previous_rows_retained_unchanged": 2,
+        "changed": 0,
+        "added": 0
+      },
+      "objects": {
+        "previous_rows_retained_unchanged": 2220,
+        "changed": 0,
+        "added": 11
+      },
+      "publication_assessments": {
+        "previous_rows_retained_unchanged": 631,
+        "changed": 0,
+        "added": 0
+      },
+      "publication_registry": {
+        "previous_rows_retained_unchanged": 37,
+        "changed": 0,
+        "added": 0
+      },
+      "saturation_sweeps": {
+        "previous_rows_retained_unchanged": 3,
+        "changed": 0,
+        "added": 0
+      },
+      "schema_migrations": {
+        "previous_rows_retained_unchanged": 21,
+        "changed": 0,
+        "added": 0
+      },
+      "search_queries": {
+        "previous_rows_retained_unchanged": 370,
+        "changed": 0,
+        "added": 0
+      },
+      "search_runs": {
+        "previous_rows_retained_unchanged": 22,
+        "changed": 0,
+        "added": 0
+      },
+      "source_corrections": {
+        "previous_rows_retained_unchanged": 85,
+        "changed": 0,
+        "added": 0
+      },
+      "source_scope_reviews": {
+        "previous_rows_retained_unchanged": 119,
+        "changed": 0,
+        "added": 0
+      },
+      "sources": {
+        "previous_rows_retained_unchanged": 967,
+        "changed": 0,
+        "added": 0
+      },
+      "text_metadata_corrections": {
+        "previous_rows_retained_unchanged": 19,
+        "changed": 0,
+        "added": 0
+      },
+      "text_proofreading_reviews": {
+        "previous_rows_retained_unchanged": 1677,
+        "changed": 0,
+        "added": 28
+      },
+      "text_publication_reviews": {
+        "previous_rows_retained_unchanged": 310,
+        "changed": 0,
+        "added": 0
+      },
+      "texts": {
+        "previous_rows_retained_unchanged": 2230,
+        "changed": 0,
+        "added": 28
+      }
+    },
+    "all_previous_rows_retained_unchanged": true,
+    "all_previous_main_readings_reviews_unchanged": true,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_text_rows": 28,
+    "newly_checked_bounded_comparative_rows": 28,
+    "new_appearances": 15,
+    "new_candidate_objects": 11,
+    "reused_exact_objects": 4,
+    "new_media": 0,
+    "new_proofreading_reviews_retaining_complete_originals": 28,
+    "new_document_assessments": 1,
+    "all_three_replays_unchanged": true,
+    "trial_production_business_payloads_equal": true,
+    "current_reading_status_counts": {
+      "reading_text_checked": 1389,
+      "unreviewed": 1,
+      "partial_review": 133
+    },
+    "replay_logs": [
+      {
+        "arguments": [
+          "ingest",
+          "candidate",
+          "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/candidates.jsonl"
+        ],
+        "exit_code": 0,
+        "stdout": "ingested 15 records\n",
+        "stderr": "",
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/proofreading-production.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 28,\n  \"public_approvals\": 0,\n  \"unchanged\": 28\n}\n",
+        "stderr": "Ignoring wrong pointing object 8 0 (offset 0)\nIgnoring wrong pointing object 31 0 (offset 0)\nIgnoring wrong pointing object 34 0 (offset 0)\nIgnoring wrong pointing object 49 0 (offset 0)\nIgnoring wrong pointing object 60 0 (offset 0)\nIgnoring wrong pointing object 74 0 (offset 0)\nIgnoring wrong pointing object 79 0 (offset 0)\nIgnoring wrong pointing object 91 0 (offset 0)\n",
+        "corpus_unchanged": true
+      },
+      {
+        "arguments": [
+          "ingest-document-assessment",
+          "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/document-assessment.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 79,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 67,\n  \"sources_with_complete_object_level_extraction\": 29,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 74,\n  \"sources_with_object_level_extraction\": 64,\n  \"sources_with_ocr\": 4,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+        "stderr": "",
+        "corpus_unchanged": true
+      }
+    ],
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2258,
+      "all_text_editorial_statuses_verified": 2258,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2143,
+      "all_local_image_hashes_verified": 1232,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 0,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "newly_checked_bounded_comparative_rows": 28,
+      "new_Syriac_transcriptions_verified": 14,
+      "new_Hebrew_transcriptions_verified": 2,
+      "new_English_rows_verified": 12,
+      "grey_source_positions_retained": 2,
+      "outlined_Syriac_letter_verified": 1,
+      "detached_marks_verified": 8,
+      "all_main_native_rows_checked": 8,
+      "all_main_English_rows_checked": 8,
+      "retained_unchecked_source_layer_classifications_verified": 8,
+      "main_readings_unchanged": true,
+      "literal_idem_backreference_verified": true,
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    },
+    "backup_retention": {
+      "prebatch_backups_retained": 10,
+      "older_prebatch_backups_pruned": 12,
+      "rule": "docs/project-rules.md §2"
+    }
+  },
+  "protected_payloads": "Scholarly wording/pixels/geometry/drafts/selection/manifests remain private; only content-free counts/metadata/hash receipt tracked.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0067_ford_abudraham_syriac_comparative_quotations.json",
+      "sha256": "50ffb88a5d07f2dceaf1788411047e872f1ae66259e45a017f9a35368e55dd9b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/held_pdf_inventory_checkpoint67.json",
+      "sha256": "c5fab177d5b2129d8241537714893fd3ee86b8dbf1cad3f1ed18dc47b2914011"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/campaign_case_progress_checkpoint67.json",
+      "sha256": "e4b1a1091c2bc8536c74bea876c7a2457ff427eb2f3279cbd77d9d8098abdf6e"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/candidates.jsonl",
+      "sha256": "5e308a86e92538ad6ce80f872fe00948fb1651d357e7ed802940c84562ec70e1"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/document-assessment.json",
+      "sha256": "64bded33a0e09182d9beb4632392c98f05468843ddb6cab18123b5af8e592fbc"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/candidates-unapplied-draft.jsonl",
+      "sha256": "02f0d6f52a0116f766607fbbee4ce893bcef9d2746cf9b2b752adcf4f8cd0947"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/proofreading-trial.json",
+      "sha256": "0771f1636e4be3c9e183de3efdaec7b918b3aa769c5aac85d546c491c2761d7e"
+    },
+    {
+      "path": "data/private/manifests/ford-abudraham-syriac-quotes67-2026-10-03/proofreading-production.json",
+      "sha256": "984a0f81ca95419cae941f472eaa9bf5b5dcef0bb8e0a4faaa418b0a30257bfe"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Hebrew-Borsippa-selection.json",
+      "sha256": "1187d7fdf9f2a694314e48d85cf12fefb731dbf7ce233de0dbe7114f5eafe412"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Hebrew-variant-selection.json",
+      "sha256": "a83010c8412e938202e74e85a1e5d5bc3ae3d5c6c5995d78ce19c0b8461b0c93"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Syriac-source-character-selection.json",
+      "sha256": "7e3ed450517399224bf19c69d95ffdcd480617767d2b9eafebe0cf69a35cd1a7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/exact-designation-audit.json",
+      "sha256": "65c205683feba6bcb87b0acaa4c81ac641348a505ccbd36f4e479ba231dd90e4"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/inline-outline-source-font-matches.json",
+      "sha256": "c48fdad14e8bf2d2d96c8c42a83259eeef60f85f6053f51ddb3c0db9a2561b4f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/metadata.json",
+      "sha256": "9e46e06b0a56ec93ae6b13ee37a5291d18474dd2af1de7fa4662d1560588abeb"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page16-characters.json",
+      "sha256": "843d571b504c9e588a0860667e1dc9bf69042f1dac83cb57704790e2a393e461"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page16-curves.json",
+      "sha256": "f70601402dcf9e1e0afa1dd8842d03067b8fa8d50b80b29dcd15fc1e84999771"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page19-characters.json",
+      "sha256": "5c5d516ad9c14f0f560b258973b314a69b575005dbc8ac8d5f60969761aaa57b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page19-curves.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page20-characters.json",
+      "sha256": "d2032b97aae0e60e11d1fc0e91a32945041dfccd41211dda5e83f4972d83f7ab"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page20-curves.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page23-characters.json",
+      "sha256": "fd75c9b1dd1131a309c8e4db1fd996f907228560e0a8e95271aee19e4307f1d9"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page23-curves.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page26-characters.json",
+      "sha256": "d5bf655fd2ce4d3d8c269c741f931b3d9c2ec483e69967aa8309774dc1a35e44"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page26-curves.json",
+      "sha256": "f5eb470cf8e8a242a18dc4eb46ca5c650a9681c6ae8e8db3f143750192c7d1d3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page30-characters.json",
+      "sha256": "328ac7591a930bf1a7846c6803b8a636b5e1b4d1d4b2ac8d55cabc12168bd57f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/page30-curves.json",
+      "sha256": "13f2677ff703bb6b53eff911ebd0dcc0d11818558c33d72f58fb2562fbf9971e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/production-business-payloads.json",
+      "sha256": "d46cd45280169304d77fe1388629ba417ecfe20657a2ee23f674ab1139708927"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/production-verification.json",
+      "sha256": "5f2aa1a5339afd05ecc59475c49a2970adef21f94a90c52c97c59735b9517122"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-index-draft.json",
+      "sha256": "585d35dd0c720fbd4ca8cbea773f7f881d28569ad8b934a70c3b1f33d45c3b7b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-index-reviewed.json",
+      "sha256": "a9b33b40570c0c5ca9a68355e33cbdf816ca4323f6e7035d7887d23119c6326a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/remaining-quote-and-apparatus-inventory.json",
+      "sha256": "90c33ef72879fbafad848a48df4f11f72f57954d065cc692a7e9c561ed8c3a9e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/source-copy-audit.json",
+      "sha256": "e322c60565d5cf303f7a62f50427c9cb02833d30f1005ad859c8bb3de97fab41"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/trial-business-payloads.json",
+      "sha256": "d46cd45280169304d77fe1388629ba417ecfe20657a2ee23f674ab1139708927"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/trial-verification.json",
+      "sha256": "8cc30ca0f4abc12d0b50154ed3db208a990c18b7d1ec5edef70fb91dcb8a149d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q15-English.txt",
+      "sha256": "58a325fe92501d3e8cff2dd3c4cc6f7980a7551806aae79ceed3cb125ef9e8ae"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q15-native.txt",
+      "sha256": "4fed424b282fc564e606398ce295e77e97a6540c216d7b5d8243bd42d15045dd"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q16-English.txt",
+      "sha256": "23efb1473e7ecc9b8e3cacb9be2cc27e039ef9ea22053d659c8722f9c94fea9a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q16-native.txt",
+      "sha256": "fe22453e0cc81e5c45a88375db337e81e59ebf65d6c68fb05eb9fc30e9d3fb0c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q17-English.txt",
+      "sha256": "11c08eaeb9a96264f7aaadc398a8ce9cf197d8109a1b5fd1ab0adb71d845543b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q17-native.txt",
+      "sha256": "7ae4f44eb7df0064d6d1201b7a90c47033b9251f70f185245a1fdf65562adc4b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q18-English.txt",
+      "sha256": "cf4218d8befa55c6185f5aa24a11c5891b005c91276f8ed253619636bd910d1d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q18-native.txt",
+      "sha256": "0d6ef487c3544a02370f076c90f9a847aab0e4a1b84ad871682d36bab7de9aa2"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q19-English.txt",
+      "sha256": "db8541442bbba0eab5e741345f6cf7ce0dc3dcef4ce7bd82188c95adb366499e"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q19-native.txt",
+      "sha256": "928cf441ed1ad0095301e16d81747c7ec24bfd14e2780232da9d0b11ef49583b"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q20-English.txt",
+      "sha256": "9169ed26926cb89ea642dfbcd07bac06bd51dc89a44e2b9599053f05887510f1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q20-native.txt",
+      "sha256": "60a49a124703d208df4f0cd90fc465a124de27a90fb9ef34cd56ffc7c28a8d05"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q21-English.txt",
+      "sha256": "81c437e3568f502784396eef8f0f1588ae21d4fefe2db68f1d4f25430af09f89"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q21-native.txt",
+      "sha256": "f4b8ad0d5124385adab1532c21ee42fdfea420f6fbc99ba5ca082e846f91c566"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q22-English.txt",
+      "sha256": "0dbc9e575285499569d093274664ad3dfa94c3b205e0a4114251e43dd25ffc22"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q22-native.txt",
+      "sha256": "1b051dcf87bcabd945251d5339efedce9474aa7ae9b37da8dd5d2894b704d9cc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q23-native.txt",
+      "sha256": "6a54b5e7231249e3e756c4e71f7f0cd015d078822815a12a32ef2ac581fab665"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q24-native.txt",
+      "sha256": "86cad0d666c047dbf13cfbdef7e7db2876ea7a6521ec04a67a6fc244376bd895"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q25-English.txt",
+      "sha256": "1ca826703dc4082c782140e46caff61336b07e3d56b93c38e66f5c152337df00"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q25-native.txt",
+      "sha256": "278ba2d84395bf52ad9e2ec868842f3296a8f79ef6530fedce152b7f77a08f21"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q26-English.txt",
+      "sha256": "ef0e35659cec931a1c28d2277b58c36ab41d7344a688d119e66d995d73102640"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q26-native.txt",
+      "sha256": "60115b47288aff031b16c445db1bd2cf88eb829cac5c91f1f59102d00867692a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q27-English.txt",
+      "sha256": "ea08c186fb44defcf04b702778799f797cdf0af43cf2a9f7392ce38046ed02b6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q27-native.txt",
+      "sha256": "fdee6fe7dbf4a1bdaa479bb496b2b26f883f8f0d513003f0f9d70dfb9f45e20d"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q28-native.txt",
+      "sha256": "ab8bc6ad9eba0df2eb4a0419de34de4b63a3fae1f5ede49ad808644acc8ccf30"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q29-native.txt",
+      "sha256": "b681617bdeb3376c5517aa0a5720e7da74034923539c74efd9711635a24d8da7"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q30-English.txt",
+      "sha256": "32e63b2f3936fc4170c61187bca890f776e3fbeb02b0d1b620a45d50c352ea38"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/Q30-native.txt",
+      "sha256": "fc9af9ee1766efea65ff301f2151df0f24b45a66cc5aecd44b891be4eeb47a37"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p16-440.png",
+      "sha256": "24576ac0f0c2bc9490456fff5070944a636c07ba43207dc28d2bccc0eb63d522"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p19-650.png",
+      "sha256": "e6c88945ee0e3b5f2fce01ae48ad3b3e4c41e8ad5c7dc9f113c4a5caf4cb18ab"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p20-90.png",
+      "sha256": "ca4412046def4cfa444dc08eeb97ea24dfb6e5d264d2dc3a00b4b5d69da858f1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p23-230.png",
+      "sha256": "4d50c202e46f935431a0560d9dd76b08e9d5972f2a337501781ce72c8d9dbeb3"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p23-405.png",
+      "sha256": "31b6de582699ad77c491cfd960b05a3fe743fa86157de0678035a232a5538f65"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p26-285.png",
+      "sha256": "9bd99e3117e047fa55efec3223ad1b68507903482fdecebf6410b9ea9ccaace1"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p26-655.png",
+      "sha256": "e3831a5c59fbbd3d8987069e2fffa3577510181e836eadb798c926fbf403e078"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p30-135.png",
+      "sha256": "ea6e2ad2fc984d4598183fcafdb179f1618e28f1d96b20afbc909596d8b8267f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p30-238.png",
+      "sha256": "d297ba30da2b0c3f3de4481d3bd5ece8bbe504b0e7a36f297958399cfbb44202"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p30-315.png",
+      "sha256": "9cb0f71363d7a162303121a219330b0bb13233397805b4807f500bcf73c86599"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/quote-detail-p30-440.png",
+      "sha256": "1c8ef208b4026518383e9f88261d6918cb399f11ba28bf125677099101aef38a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page16.png",
+      "sha256": "8fba870fa458e14783735bcb8c4e592e0ede610e6e6d1ad5cda21f124bdeb4b6"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page19.png",
+      "sha256": "67046f7fb8a93adc1a128c96ed09aea44e22c864e6076eb8b0fef464fe82181c"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page20.png",
+      "sha256": "790f09753948a587f9ac797a2879f312465b0d3014e1c42d0f341744f7ef7764"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page23.png",
+      "sha256": "6fd6a64031609317e351f333dfa9c976774090f48a21d07bb58d3027a57db437"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page26.png",
+      "sha256": "67ad5d5ef411867807abc232773d4a56328e4ff49d2afab0fe992edec71b8ae5"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham62-2026-10-03/page30.png",
+      "sha256": "37b6a2ee8bd2e6d237a44fed9b8d4c900ee813c372f2a1ff60ef5d88908028c0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/reader-verification.json",
+      "sha256": "f22e6f368d2cb5c888e4c005758644c3b83dbb5b76b8c60597b1bdbc5e07d890"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/reader-build-final.log",
+      "sha256": "356185305d007e9beb2153557649af526e54b0cc32a6bcb54b7089be536961bc"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/tests-final.log",
+      "sha256": "c775090faaf5d8700d2e566e72d90b15dfe7caa21eeb059a6462b827cabb4be0"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/node-tests-final.log",
+      "sha256": "a387ca73beece43f8262f488e75bf5e43469c9a3e07e37e6eacb6fac999abbba"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/extract_quotes.py",
+      "sha256": "ec601609142f909e145de4e7c8bafce29208a1ce1ac56d71beb0a5dc66c7e2d8"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/match_inline_outlines.py",
+      "sha256": "d34ff1f82387162da62d1e203c499dc97be826df4a6bb6eea32874912d66295a"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/prepare.py",
+      "sha256": "ba1788504a91914136adb1a3b0adb23e098d8eed40cfe62bdf5cc67922f16b75"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/prepare_reviews.py",
+      "sha256": "8cad130d56f2daede0a0575533788e2371a154582793f52460d43a4569199e82"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/record_checkpoint.py",
+      "sha256": "5c35c002a217b3a79c9ebef2c0dd776954250ab56936fe078f65242b3f8b6158"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/regenerate.py",
+      "sha256": "ee884a243795e31ac125336a0ecb9aa7c67aeec5eb12eb6502bba515589e9d41"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/verify_batch.py",
+      "sha256": "5048e51871abb85ff27f427d3ae41a96de6f6c81fc73284676ec76c9f7605505"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/verify_reader.py",
+      "sha256": "da5bfb7ddb7b8931b295ccbcacd3371849ff46f222accc2c188d6b2ebb9c7a86"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/reports-final.json",
+      "sha256": "3876d88fc1c3349d6940b923c8b4550518ad6933f8c86d34553306be8bad4a3f"
+    },
+    {
+      "path": "data/private/research-work/ford-abudraham-syriac-quotes67-2026-10-03/backup-retention.json",
+      "sha256": "1e3c43830cc1941c9305fde2c5525db470add2df84015fb289cc033b2ec009d8"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T04:13:17+00:00",
+  "updated_at": "2026-10-03T04:35:09+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -413,6 +413,11 @@
   "checkpoint66_comparative_capture": {
     "receipt": "research/receipts/ford_abudraham_quotes66_audit_2026-10-03.json",
     "findings": "27bounded comparative rows checked. Complete original editions/later publication routes remain research follow-ups, not newly failed retrievals. Remaining current chapter quotations are local extraction. No new missing-document request.",
+    "new_acquisition_requests": 0
+  },
+  "checkpoint67_comparative_capture": {
+    "receipt": "research/receipts/ford_abudraham_syriac_quotes67_audit_2026-10-03.json",
+    "findings": "28bounded comparative rows checked; all15prior named comparison groups now captured at bounded scope. Remaining full editions and later publication routes are research follow-ups, no newly failed retrieval. Remaining held chapter apparatus is local processing. Existing fgaf025attachment hash verified, no duplicate intake.",
     "new_acquisition_requests": 0
   }
 }

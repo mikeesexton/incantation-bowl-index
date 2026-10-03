@@ -25,6 +25,17 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Ford–Abudraham2018 Syriac comparative quotations, checkpoint67
+
+**Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream).
+**Corpus:** changed — 28 bounded comparative rows/15 appearances, 11 new candidate objects and four exact scoped reuses; state digest `e9c7e17e223e`. Opening corpus matched checkpoint66/commit97d155f. All previous rows across39tables retained unchanged; trial/production semantic payloads equal, all three replays change zero.
+**Result:** Fourteen Syriac transcriptions, two Hebrew-script words and12English excerpts independently checked against six whole source pages and11enlarged details.368encoded Syriac positions, eight detached marks, two grey partial-preservation letters and one exact embedded-font-matched outlined letter retained, with logical brackets/printed punctuation. Missing English not invented; footnote33variant separate from earlier readings. All fifteen named comparison groups left bycp66captured at bounded scope; full original editions/later publication routes, main-commentary/footnote alternatives, non-bowl apparatus and lexical/prose audit remain open. All8main native/8English editions unchanged/checked; complete42page holding remains partial extraction. CBS9012quoted AIT34context reuses existing Montgomery object; three existing same-designation records retained for later CONC-ledger consolidation.
+**Inventory:** 2258texts/1523readingrows=1389checked/133partial/oneunreviewed; these include bounded excerpts/project renderings/dealer quotations, not completed independent editions.2143media/1232images/87captures; held PDFs58sources/53appearance-bearing/1340appearances. Fixed24932linked/217unlinked/allattempted/zero wholecasescomplete; historical45native gaps unchanged and all prior case histories retained. IraqMuseum5497jar remains rejected/non_bowl.
+**Supplied documents/acquisitions:** Rehashed the supplied fgaf025attachment to the already archived/processed Abudraham39article; all ten supplied documents processed, no duplicate intake. Miri10resolved/20actual requests unchanged; no new failed retrieval or outbound acquisition message. Exact-source outline work is local processing, not a new access blocker. No reset/push/deploy/live restart/purchase/author contact/uncertain merge/scholarly/authenticity/rights adjudication. Goal active, current turn progress.
+**Validation:** 394Python+57Node=451tests passed; subsequent sequential reader rebuild7/7audit checks. Every2258text content/attribution/type/current editorial status,2143media assignments,1232image hashes and87capture hashes/source assignments verified.93receipt artifact hashes verified. Seven reports/exports refreshed; state recorded. Retained latest10prebatch backups/pruned12older copies under project retention rule, with private log.
+**Receipt:** `research/receipts/ford_abudraham_syriac_quotes67_audit_2026-10-03.json`; private checkpoint0067 and inventory/manifests/geometric evidence retained outsideGit.
+**Next:** Main-commentary/footnote variants (two further outlined letters already matched), separate non-bowl apparatus, then remaining217publication-reference routes. CBS9012standing-rule dedupe follow-up belongs to a later CONCcheckpoint. Keep acquisition failures specific and forward only new metadata-only needs to Miri.
+
 ## 2026-10-03 — Codex — Ford–Abudraham2018 comparative quotations, checkpoint66
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010
