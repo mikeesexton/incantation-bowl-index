@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T00:58:03+00:00",
+  "updated_at": "2026-10-03T01:56:55+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -158,7 +158,15 @@
       "requirement": "The four actual editions in Language Studies 21–22, Yochanan Breuer Festschrift, pages 303–325, including the NLI71 route. The unrelated Language Studies 23 publisher preview was excluded.",
       "priority": 1,
       "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
-      "status": "unheld original needed"
+      "status": "unheld original needed",
+      "follow_up_evidence": [
+        {
+          "checked_at": "2026-10-03T01:56:55+00:00",
+          "checkpoint": 60,
+          "finding": "Public primary author-posting sectionD/offprint[18] reports NLI9467.24 = Moussaieff156. Exact frozen NLIincantationbowl156/MMS997008712409305171. PreviousMandaic46 heading and sticker14 distinct; fulloriginal needed, printedpageunverified. AuthorPDFdownload account/termsgated;11pagepublisherpreview is not fullarticle.",
+          "url": "https://www.academia.edu/150289613/Morgenstern_and_Abudraham_Additional_Mandaic_Bowls_from_the_Shlomo_Moussaieff_Collection_Breuer_FS_Hebrew_"
+        }
+      ]
     },
     {
       "source_id": "SRC-83A3DFDE7924",
@@ -370,5 +378,11 @@
     "tracker_processing_independently_verified": false,
     "authorization": "Mike authorized genuinely fresh source-access requests for Miri.",
     "request": "Complete original Levene2007Moussaieff164PDFpp59–70 and illustrations1–3"
+  },
+  "checkpoint60_miri_dispatch": {
+    "status": "send tool acknowledged; remote processing not independently verified",
+    "scope": "New exact NLI9467.24/Moussaieff156 target added to existing2025article request; no duplicate acquisition.",
+    "thread_id": "01a0fa30-f312-731f-97c6-62701879a017",
+    "host_id": "durable"
   }
 }

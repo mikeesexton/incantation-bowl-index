@@ -25,6 +25,19 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Moussaieff exact routes and held-deposit omissions, checkpoint60
+
+**Claimed:** CONC-004
+**Corpus:** unchanged — state digest `4192cb218618`.
+**Tests:** 394 Python and57Node passed; private reader7/7. All2,179texts/2,101media/1,190localimages/87captures and all prior case histories verified; four histories extended. Receipt artifact hashes pass.
+
+- Clean opening matches checkpoint59; rules/protocol/literature read, CONC claim before edits. Goal active; all ten supplied documents already processed, including fgaf025. No duplicate intake/reset.
+- Selected full-held M25/unnumbered discovery covered57registeredPDFsources plus2unassigneddeposits/60capture rows/56unique payloads/9,761pages. All hashes/pageindices retained privately. No exactM25/A/Bedition correspondence established; misleading HilprechtMoussaieff101 page25hit rejected, ABSv2p182unnumberedcomparand remains unassigned. This bounded text-layer search is not a full visual sweep or publication-absence finding.
+- Exact2012JSTOR route failed; current primary author/institution/publisher metadata establish bibliography only.2025publisherpreview elevenpages contents/abstracts, not fullarticle. Public author-posting sectionD/offprint[18] reports NLI9467.24=Moussaieff156; exact existing NLIbowl156/MMS997008712409305171 matched. No journal-page inference, unrelated Mandaic46/sticker14 assignment, reading/measurement/client claim, corpus publication link or merge. FullPDFcontrol exposed account/terms options; inspected options then closed without login/terms/bypass. Four frozen histories extended, fixed249 still32linked/217unlinked/allattempted/zero complete.
+- Existing Miri2025article request refined with exact NLI156 lead; send tool acknowledged, remote processing not independently verified. Ten resolved/twenty requests retained, no duplicate acquisition.
+- Archive omission discovered: source-unassigned CAP-9DCE54EC60D2 contains complete Ford–Abudraham2018chapter75–111/eightbowls, and CAP-2A7F5089C728 contains separate30page Hilprechtfrontmatter/prospectus. Original retrievals and held hashes retained; assignment repair reserved for separate META session. Chapter main titlepage6 identified via text layer, requiring original pixel check before repair; both deposit firstpages viewed. These are already held, not new acquisitions or completed reading capture.
+- Content-free receipt research/receipts/moussaieff_routes60_audit_2026-10-03.json; protected discovery contexts/pixels/histories private. Roadmap/reports/export/private reader regenerated, state written, localcommit only. Corpus2,179texts/1,452readingrows=1,318checked/133partial/oneunreviewed; includes project renderings/dealer quotations, not complete scholarly editions.45historicalnativegaps unchanged. No push/deploy/live restart/purchase/author contact/identity/scholarly/rights decision/reset. Next separateMETA register both held captures, thenTEXT capture eight2018mainreadings/translations/photos.
+
 ## 2026-10-03 — Codex — Gordon1934 A–F native copy corrections, checkpoint59
 
 **Claimed:** TEXT-001, TEXT-009, TEXT-010

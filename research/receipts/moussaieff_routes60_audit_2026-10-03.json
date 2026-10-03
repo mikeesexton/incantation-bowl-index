@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "checkpoint": 60,
+  "created_at": "2026-10-03T01:56:55+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+  "corpus_after": "4192cb218618b5157ef6c66c216fd4ba0f1ea6d4d6d343132b394dadf675a5c0",
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 4,
+  "newly_linked_frozen_identities": 0,
+  "changed_text_rows": 0,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "identity_merges": 0,
+  "allowance_resets_used": 0,
+  "expanded_pdf_inventory": {
+    "registered_pdf_sources": 57,
+    "appearance_bearing_sources": 52,
+    "indexed_appearances": 1305,
+    "unassigned_pdf_captures": 2
+  },
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/moussaieff-routes60-2026-10-03/campaign_case_progress_checkpoint60.json",
+    "sha256": "2814a1a544be01773705fe1aba2b324885e1b42c9690eda02223d4cda7113378"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/moussaieff-routes60-2026-10-03/held_pdf_inventory_checkpoint60.json",
+    "sha256": "fbd29b10e8764d7adea76e01d7a384bcd59d826c51677c2def447e2b1ea0e2dd"
+  },
+  "route_assessment": {
+    "path": "data/private/research-work/moussaieff-routes60-2026-10-03/route-assessment.json",
+    "sha256": "517a3221900c83c2db0734c66663a0d68635d2219dfcadb8dd668bb20804260c"
+  },
+  "scope": "Checkpoint60 extends four frozen case histories: M25, MoussaieffunnumberedA/B and separateNLI156/9467.24lead. Full-held selected text-layer discovery covers57registeredPDFsources plus2unassigneddeposits/60captures/56payloads/9761pages, with hash/pageindices and empty/sparse limits retained. No exactM25/A/Bpublication mapping verified; HilprechtMoussaieff101page25falsehit rejected and ABSv2unnumberedcomparand leftunidentified. Original2012routefailed;2021/2025primarymetadata do not mapobjects. Publisher2025preview11pages onlycontents/abstracts; actualauthorposting publicsectionD/offprint[18]reportsNLI9467.24=Moussaieff156; fullPDFaccount/termsgated, no login/terms/bypass. ExactNLI156recordMMS997008712409305171 distinguishes shelfmark24/bowlnumber156/sticker14 and previousMandaic46heading; no journalpageinference, reading/measurement/identity/publicationclaim. ExistingMiri2025request refined, no duplicate. Two alreadyheldPDFcaptures sourceunassigned: completeFordAbudraham2018chapter75–111/8bowls and separate30pageHilprechtfrontmatter, needing nextseparateMETAprovenancerepair, not newacquisition. Corpusunchanged2179texts/1452readingrows=1318checked/133partial/oneunreviewed;2101media/1190images/87captures;heldregistered57sources/52appearance-bearing/1305appearances plus2unassigneddeposits;fixed24932linked/217unlinked/allattempted/zero wholecasescomplete;45nativegaps;Miri10resolved/20requests. Goalactive.",
+  "next_actions": [
+    "SeparateMETA assignment repair for two held unassigned captures with immutable original receipts.",
+    "Capture/check8main2018chapter readings, translations and photographs in subsequentTEXTbatch.",
+    "Follow exactMandaic original2012/2021/2025routes and NLI156reportedbridge; retain20acquisitions."
+  ],
+  "protected_payloads": "Full histories/text-layer contexts/source pixels remain private; content-free provenance/metadata receipt.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0060_moussaieff_mandaic_routes_and_unassigned_deposits.json",
+      "sha256": "15816ab9263fcff67da12936c9fbc1898f6a2526df4b951cc39e3402f380374a"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/campaign_case_progress_checkpoint60.json",
+      "sha256": "2814a1a544be01773705fe1aba2b324885e1b42c9690eda02223d4cda7113378"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/held_pdf_inventory_checkpoint60.json",
+      "sha256": "fbd29b10e8764d7adea76e01d7a384bcd59d826c51677c2def447e2b1ea0e2dd"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/route-assessment.json",
+      "sha256": "517a3221900c83c2db0734c66663a0d68635d2219dfcadb8dd668bb20804260c"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/captures-to-search.json",
+      "sha256": "7d40967ef3625817883358f786423faf96fec6fa46a6c86675f1348c0fc8dbd8"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/cases-to-search.json",
+      "sha256": "8000bad0f4a316c6f25d656c9d4c87c7940be0464cacbfe3b830be2ca01c33d9"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/full-held-moussaieff-discovery.json",
+      "sha256": "83dab22ef4721c0fc01fb7e7581e890bc1b9b057fb80764c9159b8ac69a50605"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/prior_miri_queue.json",
+      "sha256": "c2cb474c18786fe363d1a589590e84fa16b9afc443516a331981d9f39832abdf"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/sweep.py",
+      "sha256": "1b32ffa66c4e4efb2d812d63caa15777c9f3ae412a6242f21d92a567950517f6"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/CAP-2A7F5089C728-first-page.png",
+      "sha256": "cf0961379b96ce12bca7e121984c35620b6d1770ab34d398527520d6e7a551e9"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/CAP-9DCE54EC60D2-first-page.png",
+      "sha256": "fa4b6fc06b394df2d579dff15d45c4193df28b92e8932ff4a8df5ab54a0c2bdf"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/reader-verification.json",
+      "sha256": "1c2158d7f469e6b4cd847ae2c192bb6d9c53fe2e9d581140415f1b7356540af0"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/reader-build-final.log",
+      "sha256": "72ea1e055886bb118926b518bafe88f7eba87b6558fa31da61574f4146b2f066"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/tests-final.log",
+      "sha256": "3a52028a138f215aecbcf820860c1d10018259d753e4315678d6ad075cf61438"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/node-tests-final.log",
+      "sha256": "f0fd5d33e0f86da4de267c5a0705962730f558f1d204173137d1463bad62af87"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/record_checkpoint.py",
+      "sha256": "e8a7e194c69c51c0c8cd29aaca925e461352392df1b45d32663f2dd1ad7dab47"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/regenerate.py",
+      "sha256": "d596553cc72118e8724fb61530eafb24292f9cd1b6b2457bf416a10f8e281214"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/verify_reader.py",
+      "sha256": "d166214a3df0b0767ba4d3c32fce6d817d19da8e83f535d2443f2c8f0e42af29"
+    },
+    {
+      "path": "data/private/research-work/moussaieff-routes60-2026-10-03/reports-final.json",
+      "sha256": "2c1122734c011a6b2398d0ffe4686317badb5105322eb49431900a7413a5da6e"
+    }
+  ],
+  "validation": {
+    "reader": {
+      "audit_checks": "7/7",
+      "all_text_contents_attributions_classifications_verified": 2179,
+      "all_text_editorial_statuses_verified": 2179,
+      "editorial_verification_scope": "Private-reading rows match current source-copy statuses; already approved included rows retain their separate publication-review editorial declarations.",
+      "all_media_assignments_verified": 2101,
+      "all_local_image_hashes_verified": 1190,
+      "all_capture_hashes_assignments_verified": 87,
+      "corrected_jar_record_and_institution_retained_in_private_reader": true,
+      "all_previous_case_histories_preserved": true,
+      "frozen_cases_extended": 4,
+      "complete_cases_claimed": 0,
+      "python_tests": "394 passed",
+      "node_tests": "57 passed",
+      "verification_order": "Python tests and Node tests, followed by sequential reader build to avoid overlapping writes.",
+      "live_runtime": "Local build verified; previous live-server restart rejection not retried or worked around. No deployment."
+    }
+  }
+}
