@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-03T02:04:22+00:00`
+Generated: `2026-10-03T02:28:07+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -12,7 +12,7 @@ The original source claims remain unchanged. This review classifies apparent dif
 | Scholarly Disagreement | 2 |
 | Source Inconsistency | 4 |
 | Unresolved | 10 |
-| Requires current evidence review | 604 |
+| Requires current evidence review | 608 |
 
 ## Revalidation queue
 
@@ -135,6 +135,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-23AA6305D277 — Vorderasiatisches Museum VA.2514 (catalogue 79) | vessel_form | reported_bowl_form: Flat base. [SRC-DA708912C2D3; Catalogue entry 79, printed p. 122; PDF p. 136]; reported_fragment_type: Base. [SRC-DA708912C2D3; Catalogue entry 79, printed p. 122; PDF p. 136] |
 | IDENT-246B77780790 — Vorderasiatisches Museum VA.Bab.282089 (catalogue 133) | condition | reported_physical_condition: Medium sized fragment. [SRC-DA708912C2D3; Catalogue entry 133, printed pp. 154–155; PDF pp. 168–169]; reported_writing_condition: Legible. [SRC-DA708912C2D3; Catalogue entry 133, printed pp. 154–155; PDF pp. 168–169] |
 | IDENT-246B77780790 — Vorderasiatisches Museum VA.Bab.282089 (catalogue 133) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 133, printed pp. 154–155; PDF pp. 168–169]; reported_fragment_type: Base. [SRC-DA708912C2D3; Catalogue entry 133, printed pp. 154–155; PDF pp. 168–169] |
+| IDENT-249B4166F00F — T27993 | script | script: Manichaean [SRC-513E8FD6E55D; printed p. 93, main heading/description]; script: Syriac ‘Manichaean’ script [SRC-6D313A7AA389; p. 2, item 40] |
 | IDENT-25A65B73FC37 — Vorderasiatisches Museum VA.2425 (catalogue 21) | condition | reported_physical_condition: Complete. Slightly broken. [SRC-DA708912C2D3; Catalogue entry 21, printed pp. 85–86; PDF pp. 99–100]; reported_writing_condition: Partly legible. [SRC-DA708912C2D3; Catalogue entry 21, printed pp. 85–86; PDF pp. 99–100] |
 | IDENT-25A65B73FC37 — Vorderasiatisches Museum VA.2425 (catalogue 21) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 21, printed pp. 85–86; PDF pp. 99–100]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 21, printed pp. 85–86; PDF pp. 99–100] |
 | IDENT-25DF04CD6E95 — Vorderasiatisches Museum VA.Bab.4167e (catalogue 156) | condition | reported_physical_condition: Small fragment. [SRC-DA708912C2D3; Catalogue entry 156, printed pp. 166–167; PDF pp. 180–181]; reported_writing_condition: Well preserved. [SRC-DA708912C2D3; Catalogue entry 156, printed pp. 166–167; PDF pp. 180–181] |
@@ -378,6 +379,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-835EC59B5D53 — Vorderasiatisches Museum VA.Bab.4366b (catalogue 167) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 167, printed p. 172; PDF p. 186]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 167, printed p. 172; PDF p. 186] |
 | IDENT-8430D0065670 — Apotropaic index MS1927/39 | client | client: Šilay son of Gušnazdukh; Nanay, his wife. [SRC-99F964DDA219; VMBA photographic archive, record JBA 14 (MS 1927/39); Internet Archive snapshot 20230815110351]; client: Šilay son of Gušnazdukh; Nanay, his wife [SRC-7FBBB775E502; JBA 14, printed p. 107] |
 | IDENT-8430D0065670 — Apotropaic index MS1927/39 | dimensions | dimensions: 155x55 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 14 (MS 1927/39); Internet Archive snapshot 20230815110351]; dimensions: 155 × 55 mm [SRC-7FBBB775E502; JBA 14, printed p. 107] |
+| IDENT-84598A59426E — T27989 | script | script: Manichaean [SRC-513E8FD6E55D; printed p. 90, main heading/description]; script: Syriac ‘Manichaean’ script [SRC-6D313A7AA389; p. 2, item 39] |
 | IDENT-846252562B0E — Vorderasiatisches Museum VA.2575 (catalogue 83) | condition | reported_physical_condition: Complete. [SRC-DA708912C2D3; Catalogue entry 83, printed pp. 124–125; PDF pp. 138–139]; reported_writing_condition: Mostly legible. [SRC-DA708912C2D3; Catalogue entry 83, printed pp. 124–125; PDF pp. 138–139] |
 | IDENT-846252562B0E — Vorderasiatisches Museum VA.2575 (catalogue 83) | dimensions | reported_dimensions: 12.5 cm × 4.75 cm and 12.75 cm × 4.75 cm [SRC-F2BEFBEFFC2E; Edited section VA.2575, printed pp. 62–73]; reported_dimensions: 12.2 × 5 cm. [SRC-DA708912C2D3; Catalogue entry 83, printed pp. 124–125; PDF pp. 138–139] |
 | IDENT-846252562B0E — Vorderasiatisches Museum VA.2575 (catalogue 83) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 83, printed pp. 124–125; PDF pp. 138–139]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 83, printed pp. 124–125; PDF pp. 138–139] |
@@ -400,6 +402,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-874E34F7B3B5 — British Museum 1957,0925.1 | provenance | findspot: Southern Iraq (?) [SRC-339D358761D2; object W_1957-0925-1]; production_place: Southern Iraq [SRC-339D358761D2; object W_1957-0925-1] |
 | IDENT-8A256B87C57C — Vorderasiatisches Museum VA.3087 (catalogue 90) | condition | reported_physical_condition: Medium sized fragment. [SRC-DA708912C2D3; Catalogue entry 90, printed p. 128; PDF p. 142]; reported_writing_condition: Legible. [SRC-DA708912C2D3; Catalogue entry 90, printed p. 128; PDF p. 142] |
 | IDENT-8A256B87C57C — Vorderasiatisches Museum VA.3087 (catalogue 90) | vessel_form | reported_bowl_form: n/ a. [SRC-DA708912C2D3; Catalogue entry 90, printed p. 128; PDF p. 142]; reported_fragment_type: Rim. [SRC-DA708912C2D3; Catalogue entry 90, printed p. 128; PDF p. 142] |
+| IDENT-8BD97D622B48 — T27996 | script | script: Syriac ‘Manichaean’ script [SRC-6D313A7AA389; p. 2, item 41]; script: Manichaean [SRC-513E8FD6E55D; printed p. 96, main heading/description] |
 | IDENT-8CE1A46F46E2 — Smithsonian NMNH Syriac bowl nmnhanthropology_8046135 | location | current_location: Smithsonian National Museum of Natural History [SRC-4A1FC349B813; Smithsonian record nmnhanthropology_8046135]; current_or_reported_collection: Smithsonian Institution, Washington D.C. [SRC-795E719C624E; Contents PDF3, Bowl 26] |
 | IDENT-8CE1A46F46E2 — Smithsonian NMNH Syriac bowl nmnhanthropology_8046135 | publication | bibliography: Naveh and Shaked 1993, no. 26, pp. 139–142, pl. 31; Moriggi 2014, no. 28, pp. 138–143 [SRC-4A1FC349B813; Smithsonian record nmnhanthropology_8046135]; publication_status: Catalogued in a complete researcher-inspected corpus edition. [SRC-3C4294DDB367; p. 138]; publication_status: Bowl edition declared in held contents; body starts p. 139, plate 31. [SRC-795E719C624E; Contents PDF3, Bowl 26; edition start p. 139 and plate 31 declared; illustrations p.10/PDF5] |
 | IDENT-8D4A2D8DC7DA — British Museum 135563: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1971-0229-1]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1971-0229-1] |
@@ -623,6 +626,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-FC756E58C80D — Waller 2022: JBA 98 | biblical_intertexts | biblical_quotations: Ex 3:14; Ex 3:15; Is 40:31; Is 60:11; Gen 27:28 (to) [SRC-8C611BF93288; JBA 98, printed p. 142]; biblical_quotations: ["Exod. 3.15", "Isa. 40.31", "Isa. 60.11", "Gen. 27.28"] [SRC-73C44B143A9D; p. 158, distribution table, JBA 98] |
 | IDENT-FD36CB418C8D — Vorderasiatisches Museum VA.2504 (catalogue 70) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 70, printed pp. 116–117; PDF pp. 130–131]; reported_fragment_type: Base. [SRC-DA708912C2D3; Catalogue entry 70, printed pp. 116–117; PDF pp. 130–131] |
 | IDENT-FECC2E84D07B — Apotropaic index MS2053/253 | dimensions | dimensions: 170 × 72 mm [SRC-7FBBB775E502; JBA 53, printed p. 235]; dimensions: 170x72 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 53 (MS 2053/253); Internet Archive snapshot 20230815105534] |
+| IDENT-FF406F1D7BF5 — T27983 | script | script: Syriac ‘Manichaean’ script [SRC-6D313A7AA389; p. 2, item 38]; script: Manichaean [SRC-513E8FD6E55D; printed p. 77, main heading/description] |
 | IDENT-MSF1993-BOWL-23 — Naveh–Shaked 1993 Bowl 23 | location | current_or_reported_collection: Mr. Leonard A. Wolfe, Jerusalem (plate courtesy credit) [SRC-795E719C624E; Illustrations printed10/PDF5, plate28]; current_or_reported_collection: Alexander L. Wolfe Collection, Jerusalem [SRC-795E719C624E; Contents PDF3, Bowl 23] |
 
 ## Substantive follow-up queue

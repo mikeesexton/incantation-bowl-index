@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "97e08595018b57294a202b08288edc5f3765347164a6269687d54e3d930c6550",
+  "corpus_digest": "e1a0d462292255fc6de3b443a1be9a2ff9fd4f576fa1d4c7667e330489dda667",
   "migrations": 21,
-  "note": "Checkpoint61: two held capture-source associations repaired with immutable original receipts; eight2018mainreadings queued; Goal active.",
-  "recorded_at": "2026-10-03T02:06:25+00:00",
+  "note": "Checkpoint62: eight Ford\u2013Abudraham2018 main English translations, seven checked/one partial; eight unchecked section layers,12original photographs/30source pages, four exact object reuses/four candidates; native blocks pending.",
+  "recorded_at": "2026-10-03T02:30:31+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "0e1db71b83d79cd14fbea56a9c79d74a39f4f4ce106c8c6e77212957ccd94079",
-      "rows": 2803
+      "digest": "548bb4455c856c2295dadece30539bd7becb0174ce79e724bf3e185d0f956948",
+      "rows": 2811
     },
     "appearances": {
-      "digest": "b72c07b6558b2367bf3199ef380e76fe43d137842142fc9dc3a543731fddbf29",
-      "rows": 2803
+      "digest": "7f1d97105cc0fc856e4fb5ce04e7873a3f0ba955b6ef58695ebe2a133ddf8c9d",
+      "rows": 2811
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "e7e4daa5180afc0e2580a8831e2251e751e0d3ce6cf6f55a1943790ae44c450b",
-      "rows": 9144
+      "digest": "28d8e8ba19040d2fb254b9daccb676bd1272b33a78910c828ff337dd292f3a91",
+      "rows": 9176
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,16 +63,16 @@
       "rows": 34804
     },
     "document_assessments": {
-      "digest": "e2b5c923dfd09a6c32ca8eccde8ecf6e45442de92eeb5caed63add8484d07833",
-      "rows": 119
+      "digest": "7ad172dd42f559c1fe8340a7d5bfd9cc2265fb1d06e3a2799146896a166c0c57",
+      "rows": 120
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
       "rows": 215
     },
     "identifiers": {
-      "digest": "ec203d3945cf094e930df9e3dbc8f4b271c507d37195b7bf35290cb30823b42c",
-      "rows": 5186
+      "digest": "bcb0bae48cac7d4e2332eae0b4c5c67453692fe4836dddd1ae1b131724b06188",
+      "rows": 5202
     },
     "leads": {
       "digest": "77149f8277d5555db72b1d08513e3db1d54e15934eb2d65e2cebd44597c2f0b2",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "91cf9cdcd22bad56e6b7baeccd03ea97188bea85767cd638667eaed31b3478e0",
-      "rows": 2101
+      "digest": "02f3f9c477ca575d6da955a8e239df7698c8918d538c20dc4200e37da60e10f9",
+      "rows": 2143
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -107,8 +107,8 @@
       "rows": 2
     },
     "objects": {
-      "digest": "089a7169060a1d0bf556543aa7e69d8a6420f9242c297b7a6361aded41464a6b",
-      "rows": 2208
+      "digest": "ce152366d08b476cc6bd30c60b561d1d870d8025e8e5e6b1ffbca80f189b1341",
+      "rows": 2212
     },
     "publication_assessments": {
       "digest": "a42cbffc0c8052a9cc510e682cd0b8cf0f71624e351a6ba69884e3a9c6849c83",
@@ -151,16 +151,16 @@
       "rows": 19
     },
     "text_proofreading_reviews": {
-      "digest": "4fd7a3d5a3b490eddd35d9202aeb008cafd6725f9de72e1771a64415cb3fb156",
-      "rows": 1627
+      "digest": "869df151f4f58d84142ca1f945d4364eaeebc65aef2634bb16f3a1c32d7fe09c",
+      "rows": 1635
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "56231e59391047576b9d12db7dd6c9b282f2420a9f9439bc9899e57bd3f39efb",
-      "rows": 2179
+      "digest": "057436a370bd50f6f7eeee81559aaa77b133cd37530277e12a8cf99413cc16c3",
+      "rows": 2195
     }
   }
 }

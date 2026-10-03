@@ -25,6 +25,20 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-03 — Codex — Ford–Abudraham2018 eight main English editions, checkpoint62
+
+**Claimed:** TEXT-001, TEXT-004, TEXT-009, TEXT-010
+**Corpus:** changed — state digest `e1a0d4622922`.
+**Tests:** 394 Python and57Node passed; rebuilt private reader7/7. All2,195text contents/attributions/classifications/editorial statuses,2,143media assignments,1,232image hashes and87capture hashes/source assignments verified. Integrity/FKs pass; every previous row across39tables identical. Trial/production business payloads agree after generated-ID/timestamp normalization; all three manifest replays change zero rows. All90receipt artifact hashes pass.
+
+- Clean opening matches97e08595018b/55fcd73; full rules/literature/protocol read and TEXT tasks claimed before edits. Goal active, previous/current turns progress. All ten supplied documents already processed, including fgaf025; no duplicate intake/reset.
+- Indexed eight separately headed main bowls in complete held Ford–Abudraham2018 chapter75–111. Captured eight scholarly English translations with192actual line anchors and eight explicitly unchecked whole-section text layers. Seven English blocks checked against complete original pages; Bowl4 partial for two printed magical glyphs with unreliable Unicode mapping. Explicit project gap tokens retain this absence without adopting misleading Arabic-digit extraction. Enlarged Bowl3magical runs independently confirm inferior dots. Restoration/loss/doubt/excess, repetition, exterior labels and source illegibility retained; physical print wrapping/italics/bold weight normalized. Eight new immutable reviews preserve entire original rows; native reading recovery not claimed.
+- Four exact Tdesignations and edition-number references independently corroborated against held Brand2021p2items38–41 reuse existing objects; four other main bowls become separate unassessed candidates. No uncertain merge or changes to previous objects. Added32source-attributed publication/language/script claims,16identifiers and eight appearance links; no provenance/physical/client inference.
+- Extracted12published photographs from original embedded image bytes; retained exact originals and verified same decoded pixels after localPNG conversion. Bowl8exterior text Fig11/Im14 remains distinct from drawing Fig12/Im13. Added30whole source-page facsimiles, without counting images as searchable native capture. All42localmedia hashes/assignments verified in private reader.
+- First immutable document assessment records complete born-digital chapter holding and partial object extraction. Native SyriacRTL/marks and custom Mandaic font/grey-letter fidelity require next local TEXTbatch; eight main native blocks and comparative/footnote passages explicitly open. No sourcewide visual sweep, clay collation, scholarly/authenticity/reuse decision or complete-edition claim.
+- Corpus2,195texts/1,460readingrows=1,325checked/134partial/oneunreviewed. Counts include project renderings/dealer quotations, not independent completed scholarly editions.2,143media/1,232localimages/87captures; heldPDF58sources/53appearance-bearing/1,313appearances.45historicalnativegaps unchanged; eight newly indexed native blocks queued separately. Frozen249 remains32linked/217unlinked/allattempted/zero wholecasescomplete; all histories and corrected IraqMuseum5497jar retained.
+- Content-free receipt research/receipts/ford_abudraham62_english_audit_2026-10-03.json; full scholarly wording/primary pixels/photo originals/manifests private. Roadmap/sevenreports/export/current inventory and private reader regenerated; state written, local commit only. Miri tenresolved/twentyrequests unchanged; local glyph decoding is not a new acquisition blocker, no duplicate message. No push/deployment/live restart/purchase/author contact/reset. Next capture/source-check eight native blocks and comparative passages, then continue217publicationreference routes and exact NLI1562025 acquisition. Goal active.
+
 ## 2026-10-03 — Codex — Held2018 chapter and frontmatter provenance, checkpoint61
 
 **Claimed:** META-001

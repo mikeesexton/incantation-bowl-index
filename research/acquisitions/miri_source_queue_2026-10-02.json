@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T02:04:21+00:00",
+  "updated_at": "2026-10-03T02:28:05+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -388,6 +388,11 @@
   "checkpoint61_held_assignment_repair": {
     "receipt": "research/receipts/held_assignment61_audit_2026-10-03.json",
     "findings": "Two alreadyheld unassigned deposits source-registered. Complete2018FordAbudraham8bowlchapter now indexed as held; no newacquisition or reading completion. Hilprechtpartial30pagepacket retains extent and existing2020sourcebibliography.",
+    "new_acquisition_requests": 0
+  },
+  "checkpoint62_held_english_capture": {
+    "receipt": "research/receipts/ford_abudraham62_english_audit_2026-10-03.json",
+    "findings": "Eight main editions of held2018chapter indexed with English translations and source photographs. Eight native glyph/RTL/grey-letter checks pending locally; not an acquisition blocker.",
     "new_acquisition_requests": 0
   }
 }
