@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "checkpoint": 122,
+  "created_at": "2026-10-04T03:14:55+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "5cd90d7f074e6a39589c2c2c1bbee7cac13c9878df01ab022cc0daf2db581fd2",
+  "corpus_after": "f28acec476a351a32b48a8f44d6ba3676b37b25612453fde8b72de77473986e9",
+  "corpus_changed": true,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_identifiers": 0,
+  "new_claims": 0,
+  "new_media_rows": 8,
+  "new_text_rows": 2,
+  "new_reading_rows": 2,
+  "new_captures": 0,
+  "new_sources": 0,
+  "new_proofreading_reviews": 2,
+  "new_source_corrections": 1,
+  "new_document_assessments": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1904,
+  "total_text_rows": 2382,
+  "total_reading_rows": 1636,
+  "checked_reading_rows": 1580,
+  "partial_reading_rows": 55,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2212,
+  "total_local_images": 1301,
+  "total_captures": 97,
+  "registered_PDF_sources": 66,
+  "PDF_appearance_bearing_sources": 59,
+  "PDF_appearances": 1374,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 2,
+  "frozen_case_ids_extended": [
+    "IDENT-090537791C38",
+    "IDENT-C23526FF484B"
+  ],
+  "miri_resolved": 15,
+  "miri_remaining_requests": 24,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 88,
+    "sources_with_document_assessments": 82,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 69,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "scope": "Checkpoint122: complete provided Levene2007Moussaieff164pairednative/English edition60–63/all27A1–F3sections/67physicalnative table rows captured as two separatelysourcechecked reading units. Source13anchors/three uncertain-charactergroups/two reconstructed-lettergroups/oneabove-linegroup preserved; Englishitalic uncertainty/glosses/slash/literalpunctuation/diacritics andborrowedTanakh1985/Danby1938quotationcredits retained. Twelvecomplete sourcepages seen/eight sourcepage scans retained includingallthree AndyVowelsphotographs68–70andline6glyphexample64. Existing exactappearance/object and priorNLI78cluster reused; no objects/appearance/identifiers/claims/captures/identitydecisions. Two proofreadingreviews/onepartialdocument/one source correction; fullsourcehistory/alloldrows/all1904memberships retained, all39tables exacttrialproduction/allfourreplayszero. Sourcewide comparative quotations/physicalclaims/synoptic variants/wholeworkingextraction remain partial/unreviewed; no claycollation/newtranslation/interpretation/authenticity/rights/wholecase claim. Current2382texts/1636readings1580checked55partialoneunreviewed/2212media1301images97captures1904identities. PDF66sources59appearancebearing1374appearances. Two frozen164numbering cases get specific originaledition-versus-storedidentifier context checks; publicationlink not inferred fromsame numeral or measurements. Frozen24932linked217unlinkedallattemptedzero complete. Miri15resolved24remaining, acquiredLeveneoriginal main-copy audit updated/no newacquisitionfailure. Goalactive; nextquotedcomparatives/Morgenstern2007/Ford2002/Gfinal/217publicationcases/Watermanbridge. Zeroverifiedresets/no push/deploy/contact/purchase/identity/authenticity/rights decisions.",
+  "next_actions": [
+    "Quotedotherbowl/synoptic/nonbowl/lexical/generalfields122 sourcewide follow-ups; main paircomplete.",
+    "Morgenstern2007BM91767/Ford2002BM91715/BM91780/DC37(R)/GordonGfinal;217publicationcases/Watermanbridge."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Levene2007-122-2026-10-03/campaign_case_progress_checkpoint122.json",
+    "sha256": "05071bf4a19661f01ae20042071011e43e00d68b86324e351702a529089e999d"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Levene2007-122-2026-10-03/held_pdf_inventory_checkpoint122.json",
+    "sha256": "b9e6efb113e618bccc8aefc0a299f9aa8089a0bfffdb44ab384cfe70fdda98e2"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Levene2007-122-2026-10-03/non_pdf_holdings_checkpoint122.json",
+    "sha256": "7e3a2768f3633b62fd5d9a4b5b23c1c75ae73929e3e850d8908fd613a2356767"
+  },
+  "validation": {
+    "corpus_after": "f28acec476a351a32b48a8f44d6ba3676b37b25612453fde8b72de77473986e9",
+    "changed_tables": [
+      "document_assessments",
+      "media",
+      "source_corrections",
+      "sources",
+      "text_proofreading_reviews",
+      "texts"
+    ],
+    "table_deltas": {
+      "texts": 2,
+      "media": 8,
+      "text_proofreading_reviews": 2,
+      "document_assessments": 1,
+      "source_corrections": 1,
+      "sources": 0
+    },
+    "unchanged_tables": 33,
+    "all_original_rows_or_full_source_snapshots_retained": true,
+    "all1904_identity_memberships_retained": true,
+    "changed_identity_derived_metadata": [
+      "IDENT-023E77FA4EA0"
+    ],
+    "all39tables_exact_trial_production": true,
+    "complete_provided_native_English_table_checked": true,
+    "main_table_sections": 27,
+    "native_physical_rows": 67,
+    "new_checked_reading_rows": 2,
+    "remaining_sourcewide_work_explicit": true,
+    "no_new_identity_decisions": true,
+    "trial": {
+      "allfour_manifests_replay_zero": true,
+      "logs": [
+        {
+          "arguments": [
+            "ingest",
+            "candidate"
+          ],
+          "exit_code": 0,
+          "stdout": "ingested 1 records\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-proofreading"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-document-assessment"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 69,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-source-corrections"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    "production": {
+      "allfour_manifests_replay_zero": true,
+      "logs": [
+        {
+          "arguments": [
+            "ingest",
+            "candidate"
+          ],
+          "exit_code": 0,
+          "stdout": "ingested 1 records\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-proofreading"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-document-assessment"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 69,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-source-corrections"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    "all_pixel_exact": true,
+    "source_complete_pages": 12,
+    "narrow_controls": 6,
+    "derived_media": 8,
+    "precise_view_scope": "All12complete pages59–70 viewed. Fourcomplete editionpages60–63/source59symbolkey/Englishdiacritics/3complete photographpages examined. NarrowD3/A4/C4complete/E6name used. EarlierC4control clippedsecondline and E6widecontrol clippedright/bottom, retained exploratory only; those probes not relied on for fullunit certification.",
+    "all26_recipes_pixel_exact_not_all_narrow_controls_fullscope": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2382,
+      "all_media_assignments_verified": 2212,
+      "all_local_image_hashes_verified": 1301,
+      "all_capture_hashes_and_source_assignments_verified": 97,
+      "all_identity_memberships_and_counts_verified": 1904,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 2,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "413 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "python_tests": "413 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 470,
+    "reader_build_after_both_test_suites_passed": true,
+    "allowance_check": {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/allowance-check.json",
+      "sha256": "ea537ddbe495effc58602cc3f4773f8be30ca9ce582b40028fa0192cc5a951ae"
+    },
+    "trial_failure": "Text-artifact/state combination rejected before document write. Initial reading/proof trial and complete draft retained; pristine trial recreated. Extractable state preserved; unreviewed working extraction bound only as evidence, no corrected-rich-text/OCR claim.",
+    "new_frozen_attempts_scope": "Two source-numbering/corpus-context checks, not fresh NLI image/card inspection or identity/measurement adjudication."
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Levene2007_122_readings_2026-10-03.jsonl",
+      "sha256": "0e570c6a028c74edd99a13d41ba52d2c26eb67e8c1e6ee1c5dd1900575ce1893"
+    },
+    {
+      "path": "data/private/manifests/Levene2007_122_proofreading_2026-10-03.json",
+      "sha256": "765a5c320188a5a043c98797006ffbb2299070a094b40bf4bc1e15436b4065a0"
+    },
+    {
+      "path": "data/private/manifests/Levene2007_122_documents_2026-10-03.json",
+      "sha256": "8b32d9a1f3b468d437d7998492f794bd06835c4009ee21a95312514be1623238"
+    },
+    {
+      "path": "data/private/manifests/Levene2007_122_source_2026-10-03.json",
+      "sha256": "63a9ef9d2b844042368c962159c15e3433e0e53f66513acf0c2daf4cf72954a6"
+    }
+  ],
+  "protected_payloads": "Source expression/PDF/pixels/workingextraction/manifests private outsideGit; Git content-free receipts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0122_Levene2007_original_edition.json",
+      "sha256": "da0c42fa27e8044a79fa59074b991b4d33634a7fbbecc00eefd9a127a2cb9710"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/A4-native-control.png",
+      "sha256": "872144b9eb669b03b8ee7ef32f05b4748d2969e58a8483d90e9928e21341849d"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/C4-native-complete-control.png",
+      "sha256": "e76a2019d9403764e3d4ee166cb6b93fb4f0d52cf4092c7ca094172b053ab881"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/C4-native-control.png",
+      "sha256": "da332a0aeddb3de5291609a38dd953230d09b608ac1b105a5d773d1ea2d9d8f1"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/D3-english-control.png",
+      "sha256": "70d15028dd392c964986ce5ff633783764e89529246e6d236a9dc0af15790d19"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/E6-english-control.png",
+      "sha256": "8b9a0076102f39b97800cf56f2df396c2de20ff9403745319f89ae7406edb081"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/E6-name-control.png",
+      "sha256": "fbfcca9fb32a1f1f9b2e0e692d3f33a30e72c1c81e46c55a5b02ffa6c81f867f"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/TXT-IBI-CP122-MOUS164-ENGLISH.txt",
+      "sha256": "2fd1f67bcc098e7aad396a39289ac3cfe4a81360afa00e3594c592a059558353"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/TXT-IBI-CP122-MOUS164-NATIVE.txt",
+      "sha256": "ed2635442e11a809434c97f3c9ba702b08616dd2423c25648184f1987161b6d6"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/apply.py",
+      "sha256": "7d3850913ba19b278a6be4ec90c345a00fec5a8eadc56286b681e43ce2e61ead"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/campaign_case_progress_checkpoint122.json",
+      "sha256": "05071bf4a19661f01ae20042071011e43e00d68b86324e351702a529089e999d"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/copies.py",
+      "sha256": "5bbc08367d17b9e5cf3623740e8f203861f186edac2e91bae5a4de9b972b1e67"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/editorial-annotations.json",
+      "sha256": "58ef90edd5ddd65f04df16dc7cbdcef6d395575e5b238ff30d3e460a1aba9a77"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/fingerprint-before.json",
+      "sha256": "9c8f9d139745522f88e1111a141c2d913eb23dd8fe5faa9a4b5cdea9a780574b"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/frozen164-source-comparison.json",
+      "sha256": "5484dad44c02d07da43a13debad751e9e6f2fd45f46489b0a3f59ba5bef6e86b"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/held_pdf_inventory_checkpoint122.json",
+      "sha256": "b9e6efb113e618bccc8aefc0a299f9aa8089a0bfffdb44ab384cfe70fdda98e2"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/identities-before.json",
+      "sha256": "c9e1e9655f8cfd21a20b9cdd3416f312f34b66cb5bb4517335ce62a51ee8a617"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/main-copies-current.json",
+      "sha256": "9baf62fb6b9cce4fcb64d5fe9f06ab4964c6ecc3b7cf1957cee297894f5d544e"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/main-copies-initial.json",
+      "sha256": "9baf62fb6b9cce4fcb64d5fe9f06ab4964c6ecc3b7cf1957cee297894f5d544e"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/media-derivation.json",
+      "sha256": "1f4674d7520b23664e11b292c061153f02a902f40d8799035bcf7b9f870bb7b5"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/metadata.json",
+      "sha256": "f3b449916a934b29f0a1db38d89e8a57058beba203f0d8b3e03834d587815d53"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/miri-queue-before.json",
+      "sha256": "9e6e89f386be03098c9e153624d00109bd1170b3c2c6893992b749bed7da2c7d"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/narrow-controls.json",
+      "sha256": "d234a193c1a1b7b4cf3bdd452a97ea1a8243dd8d0a8886f00f763bd1eae60440"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/non_pdf_holdings_checkpoint122.json",
+      "sha256": "7e3a2768f3633b62fd5d9a4b5b23c1c75ae73929e3e850d8908fd613a2356767"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page-inventory.json",
+      "sha256": "1cf1f6875ba5bbf619aeb24777d6f4373209ec2565e0ecf94233205b85a5aec7"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page1-scale3.png",
+      "sha256": "862698f1836526161a584e09563e4f70b6f39efa5195823331c1138262291080"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page1.txt",
+      "sha256": "348da3e46f3f472cd5d8bbdb260978687f3e7b60d24da7ba3b3bdcd6a01e9c3a"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page10-scale3.png",
+      "sha256": "54b2fa0dfe73f898d7c97ff1234a6bde04272bf7005c0208036a76971ce367b3"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page10.txt",
+      "sha256": "24130f5d4fdedd6d729284bd2a2d95fc1533235145f4c84e8b08122a13c80149"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page11-scale3.png",
+      "sha256": "dd7bf667105d7d243bfa2b9874c50e9043f3a0ac7ffdaae5285a3e25053c4efc"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page11.txt",
+      "sha256": "0dc2a3d581d94218e4157a55345e8d3e668511ca0989dd9598db68672101ede1"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page12-scale3.png",
+      "sha256": "6977bc0e953edc9e31e49332898d2dab6072cfc0188b591fa79cdd7cd1f1b729"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page12.txt",
+      "sha256": "3d1e3b2a01344e0d6319d2f757e9d903f1678c64946ba61e170c054c8bc22e0c"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page2-scale3.png",
+      "sha256": "3bfd1357d0cfd02b4d649d679c03cf05ea47b37c800b9e77d0264bae47862d00"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page2.txt",
+      "sha256": "f96436a8f4c2c6469a8e8961b1b8b567f61706a24ec5ac8dc8db943d2851f09d"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page3-scale3.png",
+      "sha256": "cd36de3df1b4c5031e7b0a29ff8cb43328353feeb4aa82461b2ffc9b268b2aa9"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page3.txt",
+      "sha256": "b356392b5e6fbd8f30216f57bd8fceacd3cb87185b3c0ed0f85dd406cf9bf1fb"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page4-scale3.png",
+      "sha256": "4c0eb85775d3dd803f5efa4f27765bca699f4c9bdd00f7ccd109e3eb41f91cb6"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page4.txt",
+      "sha256": "58b2f4caeb176fc25bff56f04fcdf64564db27429a7a209b4d92de0e3d39f328"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page5-scale3.png",
+      "sha256": "f2eb5e7d72e953525378bb9fd280be247d8093787845f561846ccb99ded4e2cb"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page5.txt",
+      "sha256": "5240dc5fb0e476c3001536a6b324c85e7e230accd5a5e18bed2717b0365e172b"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page6-scale3.png",
+      "sha256": "8c48b61d6c88fc10874fb3eac93a7ff275dd1fdbcf6df8289ad358c1af7ec1ee"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page6.txt",
+      "sha256": "3d2604a0fd4d8d2970edea34fee58a27695ba3ab1895c4ad0147ce817ed7d67e"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page7-scale3.png",
+      "sha256": "bfc26a4b22a9035a8af926d573f0d57c6a4ca289ce98c187f5e9597c041fc50e"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page7.txt",
+      "sha256": "a8e857f539b6a6e5785a65303ca5e21bfc0bcf17d6f4348edaaa76eb5ff30286"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page8-scale3.png",
+      "sha256": "e3dc1f32c3f46b3f51304d735a237c16bdf096e8480c07464cc6c5b1f3407557"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page8.txt",
+      "sha256": "287217504442db761f129ad45851b49a93cf6ea9fc97068004a652ae4e988e4f"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page9-scale3.png",
+      "sha256": "d8d930da5b077605502a284ca08d100b2807785e5ee5bd8ac72d4122a1b0b837"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/page9.txt",
+      "sha256": "49ca4dfad01c7fc40a7bb6b410a7b4c52e08f48b42bbc703ba9d5cf7158159ae"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/pixel-verification.json",
+      "sha256": "50ccaf0831b963a262a0c36cbd525eec952ae1204db1330ca0119c578435fa1f"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/prepare.py",
+      "sha256": "6b51bdad609b7d422609129aa4752c0765f02c0748b5b07df5a7bc39de097ccb"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/production-apply.json",
+      "sha256": "799d609042ee8d4b142f21e03985982f8d99e55fa904a3b51e760a747b9f9351"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/production-verification.json",
+      "sha256": "07b0f1811602b9d35257439538bf375ba2f1bc9e09a9927e729268cea12d3f50"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/record_checkpoint.py",
+      "sha256": "2e316983b66995ee3f7155a54652fb21af078ec20528ddc95b6e2c567134d126"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/replay-verification.json",
+      "sha256": "aa972432a70bac1baa30092a59b3dbab5f6b15b808d3f03c0ce7c6046615c705"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/replay.py",
+      "sha256": "9b4d006be1f1441b51b39951a1e21d4caa5896c0b3ce6a1b802ecbe33da6a2f5"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/source-evidence.json",
+      "sha256": "e121591ba3f9e402d1cafac1103ad8c664ab05bc72b74e9dcf9cccd5ecea6476"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/source-page-recipes.json",
+      "sha256": "96da3f421f953319a7b7d2a598788863491a6a4c0091d825e4b8c6aec07a2c99"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/tables-before.json",
+      "sha256": "5c320ca46e3fdec3428d5faf813dc5644f0c54ff16df7c8c2e5a34af81957a98"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/trial-apply.json",
+      "sha256": "799d609042ee8d4b142f21e03985982f8d99e55fa904a3b51e760a747b9f9351"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/trial-verification.json",
+      "sha256": "64b2508afc733f2371802dc74962cc0b509908983b935859838ff8f0f4819a3b"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/verify_batch.py",
+      "sha256": "81c99aa00a8054371814d38901095a9e906d5659bbb176a1ecc9541cec7590ff"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/verify_pixels.py",
+      "sha256": "9cf3075fe290d9c9572e512edae7d61407b1ac05bfcaa336ed9013bfbbc44d16"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/whole-source-working.txt",
+      "sha256": "3195029f006323b135e63613d9051594d644df66c2819e174f154ce9bcd8eb45"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/reader-verification.json",
+      "sha256": "7ccb0b122855dbe31fd0dc2330fa3a0bbf723946ebedcb6badd2b63c17eca0da"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/reader-build-final.log",
+      "sha256": "65747e78e3974df0775b3a75b6e6764593fe5b646511fc94b8dc0d0ebeecf05e"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/tests-final.log",
+      "sha256": "b734107abc0fe17b14a62841c8baf71a155d34b921182afb424a831214075c1a"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/node-tests-final.log",
+      "sha256": "b6b820d7a0ce27a33bce4c154a899cadefb0054e9465e8120bedb8f7e72f3868"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/verify_reader.py",
+      "sha256": "03256a085adbcedf60db58f582cdc661e37f51c817ff76e564c9c29779ee1a0c"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/reports-final.json",
+      "sha256": "68ab8da46955baf34dad6fdf132653a78277af82bdf7f34053d4f53f595875dc"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/regenerate.py",
+      "sha256": "af72c564855f4bcb25c9ba4bbef917c53f1f3b8ab30cd65288f26c072e7a373a"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/allowance-check.json",
+      "sha256": "ea537ddbe495effc58602cc3f4773f8be30ca9ce582b40028fa0192cc5a951ae"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/backup-retention.json",
+      "sha256": "40e94f456a30197c5c404ab9966f02260cb3c5f8a9536e2034c68b84c4d0ef66"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/finalize.py",
+      "sha256": "b6213c03f68d0afc9ec36026ee6e27c2196b8b2d01418a02114733ab53723356"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/Levene2007_122_documents_2026-10-03.json",
+      "sha256": "962f901b18beaf1df4fa7635ceb2b61ccd2850509b3613c99aed541051e6f6f5"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/Levene2007_122_proofreading_2026-10-03.json",
+      "sha256": "8663c9ef038a959731992cfe02ace083ce696747033736796ef9aeb1fe3795d5"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/Levene2007_122_readings_2026-10-03.jsonl",
+      "sha256": "4018de4c626155f4fef1a114ede2f69ece9c2d9ab41457f62d30525444af7fc7"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/Levene2007_122_source_2026-10-03.json",
+      "sha256": "1ae14a157782f3bbb6e8db1bc07aa90031c46b9b241e16643f153d36561e384f"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/prepare.py",
+      "sha256": "14f21f78b653cc48d4126978ac89b04e8e183455f7e196aa43a53724ca1085f1"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/source-evidence.json",
+      "sha256": "e5a4c9fcb3ba38b84841d6f6e60753d45e369ab5c2860fd9105d87c3fac44150"
+    },
+    {
+      "path": "data/private/research-work/Levene2007-122-2026-10-03/rejected-artifact-draft/trial-apply.json",
+      "sha256": "2818d321673672465a9318c4d5ae35c38ed393f65dfe04736996d03c61e163a4"
+    }
+  ]
+}
