@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "4e75368945084034e8cea926ca81c19e16c9ca2be65aef3a895ee432001c9e9a",
+  "corpus_digest": "ad9845fa74b8d83ec5fc2d7878aeb54212be54c3b8cdcbe997fc5e9f8d7f3c27",
   "migrations": 21,
-  "note": "Audit translation/condition presentation; 1,244 Penn catalogue claims appended from 288 matched pages; originals and identity links retained.",
-  "recorded_at": "2026-10-04T17:01:55+00:00",
+  "note": "Checkpoint149:56checked bounded Gordon1941 concluded quotes,48English/8native,5appearances,9facsimiles,2source-scoped candidates; allprevious rows/identities retained; research Goal active.",
+  "recorded_at": "2026-10-04T17:21:36+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "60afee945bce76baa3f44905c07d5ac6c528822e1b0a7871541eaf3e902d0fe6",
-      "rows": 2964
+      "digest": "cf64689b3fa5ddb87f1132b4b04e05e682140cd9bcf182995bb4344a0a669120",
+      "rows": 2969
     },
     "appearances": {
-      "digest": "b76b15fe0ada0aa4fb6b48ec3c346ccaf60a6191e01acf9acab9063a234c54bb",
-      "rows": 2964
+      "digest": "90dff5b2a64dfc1adad635bbfdea6ccb79c667028abfedadb829aa3af660edc6",
+      "rows": 2969
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "ff67f2914d722e90755495a2e103e7f35afa31ad93a36488d6ae2f5d9c221eb8",
-      "rows": 192
+      "digest": "0e6e7a13f9deee965d70e69d01b32b4ae697a851a24687f3986b742afc6361a4",
+      "rows": 193
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "02fea407108770ad3878f94e332f86757e74554bb20222c3a7efc26046b05447",
-      "rows": 2396
+      "digest": "64b7e18a56d5bc0d0c03ace140531d733cb830b6638335c3c22e4d6f1ff526c2",
+      "rows": 2405
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -107,12 +107,12 @@
       "rows": 2
     },
     "objects": {
-      "digest": "3c42899d6c618c358ed2727ab9a8fb8cdccd582937b1ca4afe820b51261fee8a",
-      "rows": 2271
+      "digest": "edf43d25e186f6700f211e09f068193a438e2cd10d41acaa5b7c877cfcc2357e",
+      "rows": 2273
     },
     "publication_assessments": {
-      "digest": "9cf43ffccd742f24800217f6d4f1f0948f916b3d73f474530f9ce48a14154bf7",
-      "rows": 712
+      "digest": "fe7b84276c9afdfb75aa75873ba58d2777003fea445e6805ea27192dda0ce279",
+      "rows": 717
     },
     "publication_registry": {
       "digest": "01b59ec0b157ca417cd523761ce956306bd42dd00bcc517efab1d25106f48006",
@@ -151,16 +151,16 @@
       "rows": 33
     },
     "text_proofreading_reviews": {
-      "digest": "23a3d7d29313dd1680d26eae43487473833872806006865ebd4556aa15bbef91",
-      "rows": 2186
+      "digest": "94d9772e52f134ad695d078e613ded9be62ff8d6a417007281aa64c88126d95b",
+      "rows": 2242
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "dbb2827ac8b638abfd37a6ae20c0a5e82cfe790307e71c70ece3fb6f11920008",
-      "rows": 2639
+      "digest": "0a193d3f0b879d10a113f8b402a2c3634ae7c7c15b8568033174e0e4b5c4039b",
+      "rows": 2695
     }
   }
 }

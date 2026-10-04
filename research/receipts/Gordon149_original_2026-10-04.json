@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "checkpoint": 149,
+  "created_at": "2026-10-04T17:16:46.845812+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "4e75368945084034e8cea926ca81c19e16c9ca2be65aef3a895ee432001c9e9a",
+  "corpus_after": "ad9845fa74b8d83ec5fc2d7878aeb54212be54c3b8cdcbe997fc5e9f8d7f3c27",
+  "table_changes": {
+    "objects": 2,
+    "appearances": 5,
+    "appearance_object_links": 5,
+    "texts": 56,
+    "media": 9,
+    "publication_assessments": 5,
+    "text_proofreading_reviews": 56,
+    "document_assessments": 1
+  },
+  "scope": "Checkpoint149:56 bounded original Gordon1941 concluded quotation copies checked,48English and8native for BM91751/91776, Fitzwilliam92a, Harvard Semitic Museum8826 and Princeton Ex4283. Five original source appearances/publication assessments,9facsimile assignments; two source-scoped candidates without modern accession/Penn bridges. All14provided Princeton middle English excerpts captured separately, not full24–57 line coverage. Prior opening/closing/BM91725/facsimiles retained. Sourcewide extraction partial; long native/Hilprecht-Iraq-Louvre-Malmö quotations/source corrections/structured claims pending. Allold corpus rows and1919identity memberships retained plus2scoped singleton candidates; frozen24933linked216unlinked unchanged. Existing Goal resumed after explicit user instruction and intervening saved Penn audit metadata session",
+  "new_text_rows": 56,
+  "new_checked_readings": 56,
+  "new_partial_readings": 0,
+  "new_appearances": 5,
+  "new_publication_assessments": 5,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 9,
+  "new_objects": 2,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 0,
+  "new_proofreading_reviews": 56,
+  "new_identifiers": 0,
+  "pause_requested_at_checkpoint": false,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2695,
+  "total_media": 2405,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2273,
+  "total_identities": 1921,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 79,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gordon149_readings_2026-10-04.jsonl",
+      "sha256": "1611e2edeb549aec66818aac2c3e3a88163cfde5d398a07fb042d4c066382f26"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gordon149_publication_2026-10-04.json",
+      "sha256": "eed868be984d88d4e50061ff40f2f25698b1d7497b8839bd708ae89a32e92194"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Gordon149_proofreading_2026-10-04.json",
+      "sha256": "b57301a059af340c1e736fd51f7c10f6d917ac04e7bc8ce441ab14c949be8f99"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon149_documents_2026-10-04.json",
+      "sha256": "eb92ec36c5900ab2af648fb24078249e938c74977e430157fbfa42d34fa834de"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/source-evidence.json",
+    "sha256": "84bc3169206d6aba77ba965a7eae49fcb0ae770398457b5760e096ae2b5b5441"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/reading-extent-inventory.json",
+    "sha256": "304b5bfebcfe5278dc3f2fec3a2378bf50b65df30ff1cb83978162b9d60d5b37"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/page-derivatives.json",
+    "sha256": "3006daf900cc24f014ec35d9366ea21aa990b120e5752756c1f2c31380666bc5"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/campaign_case_progress_checkpoint149.json",
+    "sha256": "e3a28e002899487c154c2dd3b4c9e9bc6e1dced5657625321fb62db4f0b155cf"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/held_pdf_inventory_checkpoint149.json",
+    "sha256": "b370a798a223dfdbd774bce32b34d5faf44f13d5018be15360ee957169870dd9"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/non_pdf_holdings_checkpoint149.json",
+    "sha256": "14f793198f8a632a830be734937fd07d1df9896dd23f27e9d5aa0ae30fb2b3d0"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/intake-verification.json",
+    "sha256": "ac45194e4ef8f71c6ad9b6f6c757006ec72b2eb450d37c303a41233d64769d27"
+  },
+  "validation": {
+    "python_tests": 473,
+    "node_tests": 71,
+    "total_tests": 544,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2695,
+    "all_media_assignments_verified": 2405,
+    "all_local_image_hashes_verified": 1494,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1921,
+    "all39tables_exact": true,
+    "all_prior_rows_retained": true,
+    "all_prior_identity_memberships_exact": true,
+    "new_scoped_singletons": 2,
+    "four_current_manifest_replays_unchanged": true,
+    "all56current_copy_checks": true,
+    "checked_copies": 56,
+    "partial_copies": 0,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 9,
+    "distinct_assigned_pages": 6,
+    "actually_viewed_full_pages": 8,
+    "actually_viewed_focused_controls": 10,
+    "full_plate_photographs": 0,
+    "source_catalogue_units_inventoried": 65,
+    "concurrent_DISC004_change_preserved": true,
+    "reports_regenerated": 7
+  },
+  "catalogue_inventory": {
+    "path": "data/private/research-work/Gordon148-2026-10-04/catalogue-unit-inventory.json",
+    "sha256": "32989e5f73aaa10e9023b038f76bddd25010beb39ca41a593d2138341580867c"
+  },
+  "limits": "56checked bounded quotation copies, not full inscriptions; 48English/8short native. Princeton allprovided middle quotes are separate, unquoted spans not reconstructed. Long native/source corrections/other collections/structured claims remain pending, sourcewide partial. Fitz92a/Harvard8826 source-scoped only. Frozen33/216 unchanged; active Goal resumed.",
+  "diagnostics": "Initial trial candidate intake succeeded; publication batch rolled back because existing Princeton target needed explicit supersession. Failed rehearsal and old assessment snapshots retained; resumed with cumulative prior/current basis and locators, no failed draft reached production. All four trial/production replays unchanged; all39tables exact, all old rows/identities retained plus2new scoped singleton candidates. Enlarged Harvard control confirms two mems; source native3yods/EnglishYYYY retained. Pre-intake heavens apostrophe restored. No new source/capture/identifier/claim/identity/reuse decision/reset/deploy/push/purchase/outbound message/Waterman retry. Intervening Penn metadata commit9b91582 established fresh opening digest4e753689…01c9e9a; not treated as unexplained drift.",
+  "closed_at": "2026-10-04T17:18:10.512163+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0149_Gordon_concluded_quoted_passages.json",
+    "sha256": "11df64dd611c4b84a3e8647f8a68cd576225bb2b406e0e66fac7066f5b07d78c"
+  },
+  "reader_visual_verification": {
+    "path": "data/private/research-work/Gordon149-2026-10-04/reader-visual-verification.json",
+    "sha256": "161d81a918ee8b55b41b16dcdb6f6a0ae8197f1ad3013253c294be690a9774b6"
+  }
+}

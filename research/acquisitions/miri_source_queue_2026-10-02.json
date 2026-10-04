@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T16:21:02.392066+00:00",
+  "updated_at": "2026-10-04T17:16:46.845812+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -714,7 +714,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-01",
       "sha256": "e3ffbc62793695664d2c1fb7df6ee0af4303f75b12934b233816ee23be3a07c3",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "All22original article pages inspected;65source catalogue witness descriptions/references inventoried separately from identities. Five bounded searchable copies checked: Princeton Ex4283 opening1–23/closing58–60 English, three BM91725 short printed formulas. Nine facsimile assignments include BM91725/HSM8669 photograph pages. Original Louvre uncatalogued=Text6/Hilprechtd=Text3 pointers recorded;19745at339/91745at349 retained as printed same-source variant without new identity/identifier ruling. Remaining longer native, Princeton24–57/other English fragments, author corrections and structured claims pending; sourcewide partial.",
+      "reading_audit": "Checkpoint149:56 bounded original Gordon1941 concluded quotation copies checked,48English and8native for BM91751/91776, Fitzwilliam92a, Harvard Semitic Museum8826 and Princeton Ex4283. Five original source appearances/publication assessments,9facsimile assignments; two source-scoped candidates without modern accession/Penn bridges. All14provided Princeton middle English excerpts captured separately, not full24–57 line coverage. Prior opening/closing/BM91725/facsimiles retained. Sourcewide extraction partial; long native/Hilprecht-Iraq-Louvre-Malmö quotations/source corrections/structured claims pending. Allold corpus rows and1919identity memberships retained plus2scoped singleton candidates; frozen24933linked216unlinked unchanged. Existing Goal resumed after explicit user instruction and intervening saved Penn audit metadata session",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": null,
@@ -737,6 +737,11 @@
           "recorded_at": "2026-10-04T16:21:02.392066+00:00",
           "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
           "superseded_by_checkpoint": 148
+        },
+        {
+          "recorded_at": "2026-10-04T17:16:46.845812+00:00",
+          "prior_audit": "All22original article pages inspected;65source catalogue witness descriptions/references inventoried separately from identities. Five bounded searchable copies checked: Princeton Ex4283 opening1–23/closing58–60 English, three BM91725 short printed formulas. Nine facsimile assignments include BM91725/HSM8669 photograph pages. Original Louvre uncatalogued=Text6/Hilprechtd=Text3 pointers recorded;19745at339/91745at349 retained as printed same-source variant without new identity/identifier ruling. Remaining longer native, Princeton24–57/other English fragments, author corrections and structured claims pending; sourcewide partial.",
+          "superseded_by_checkpoint": 149
         }
       ],
       "reading_updates": [
@@ -748,6 +753,16 @@
           "inventory": {
             "path": "data/private/research-work/Gordon148-2026-10-04/reading-extent-inventory.json",
             "sha256": "a34c24be980718159cabe5836e20bcf2f6b5cd148b65003664a5290de08d3030"
+          }
+        },
+        {
+          "checkpoint": 149,
+          "observed_at": "2026-10-04T17:16:46.845812+00:00",
+          "status": "Checkpoint149:56 bounded original Gordon1941 concluded quotation copies checked,48English and8native for BM91751/91776, Fitzwilliam92a, Harvard Semitic Museum8826 and Princeton Ex4283. Five original source appearances/publication assessments,9facsimile assignments; two source-scoped candidates without modern accession/Penn bridges. All14provided Princeton middle English excerpts captured separately, not full24–57 line coverage. Prior opening/closing/BM91725/facsimiles retained. Sourcewide extraction partial; long native/Hilprecht-Iraq-Louvre-Malmö quotations/source corrections/structured claims pending. Allold corpus rows and1919identity memberships retained plus2scoped singleton candidates; frozen24933linked216unlinked unchanged. Existing Goal resumed after explicit user instruction and intervening saved Penn audit metadata session",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Gordon149-2026-10-04/reading-extent-inventory.json",
+            "sha256": "304b5bfebcfe5278dc3f2fec3a2378bf50b65df30ff1cb83978162b9d60d5b37"
           }
         }
       ]
@@ -1588,8 +1603,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Gordon148-2026-10-04/miri-queue-before.json",
-    "sha256": "9c982139e8da0b6564d71adba15d87ff62a5a213518a2328bd0495fced58f7a7"
+    "path": "data/private/research-work/Gordon149-2026-10-04/miri-queue-before.json",
+    "sha256": "990e8b30c52ce2756d09d72ebbb346807687fb13a79127a63ca2379fa8beb716"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1842,6 +1857,16 @@
     "receipt": "research/receipts/Gordon148_original_2026-10-04.json",
     "source_id": "SRC-GORDON1941-CONCLUDED",
     "checked_reading_rows": 5,
+    "partial_reading_rows": 0,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint149_Gordon_concluded": {
+    "receipt": "research/receipts/Gordon149_original_2026-10-04.json",
+    "source_id": "SRC-GORDON1941-CONCLUDED",
+    "checked_reading_rows": 56,
     "partial_reading_rows": 0,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,

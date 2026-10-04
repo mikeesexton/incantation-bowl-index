@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-04T16:50:39+00:00`
+Generated: `2026-10-04T17:17:24+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -469,9 +469,9 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-6D35EE5CAEAB — Vorderasiatisches Museum VA.2181 (catalogue 4) | vessel_form | reported_bowl_form: Flat base. [SRC-DA708912C2D3; Catalogue entry 4, printed p. 73; PDF p. 87]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 4, printed p. 73; PDF p. 87] |
 | IDENT-6DC11F8D3494 — Apotropaic index MS2053/280 | client | client: Bahmandad son of Magita; [---]ta daughter of Immi, his wife. [SRC-99F964DDA219; VMBA photographic archive, record JBA 25 (MS 2053/280); Internet Archive snapshot 20230815105559]; client: Bahmandad son of Magita; [---]ta daughter of Immi, his wife [SRC-7FBBB775E502; JBA 25, printed p. 140] |
 | IDENT-6DC11F8D3494 — Apotropaic index MS2053/280 | dimensions | dimensions: 300x150 mm. [SRC-99F964DDA219; VMBA photographic archive, record JBA 25 (MS 2053/280); Internet Archive snapshot 20230815105559]; dimensions: 300 × 150 mm [SRC-7FBBB775E502; JBA 25, printed p. 140] |
-| IDENT-6EDBD224265D — BM 91776 | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-16]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-16] |
-| IDENT-6EDBD224265D — BM 91776 | language | inscription_language: Jewish Babylonian Aramaic [SRC-A90AB34CA3FE; p. 102, table 6, NFP 7 and note 414]; inscription_language: Aramaic [SRC-72D809FB4249; text 036A; section pp. 43–102] |
-| IDENT-6EDBD224265D — BM 91776 | location | current_location: The British Museum [SRC-3D4B57D27A24; Related objects: 1980-0415-16]; current_or_reported_collection: British Museum [SRC-A90AB34CA3FE; p. 102, table 6, NFP 7 and note 414] |
+| IDENT-6EDBD224265D — British Museum 91776: incantation bowl | dating | dating: 6thC-8thC [SRC-3D4B57D27A24; Related objects: 1980-0415-16]; period: Late-Post Sasanian [SRC-3D4B57D27A24; Related objects: 1980-0415-16] |
+| IDENT-6EDBD224265D — British Museum 91776: incantation bowl | language | inscription_language: Jewish Babylonian Aramaic [SRC-A90AB34CA3FE; p. 102, table 6, NFP 7 and note 414]; inscription_language: Aramaic [SRC-72D809FB4249; text 036A; section pp. 43–102] |
+| IDENT-6EDBD224265D — British Museum 91776: incantation bowl | location | current_location: The British Museum [SRC-3D4B57D27A24; Related objects: 1980-0415-16]; current_or_reported_collection: British Museum [SRC-A90AB34CA3FE; p. 102, table 6, NFP 7 and note 414] |
 | IDENT-6F0B587E0A62 — Vorderasiatisches Museum VA.Bab.2841 (catalogue 150) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 150, printed pp. 163–164; PDF pp. 177–178]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 150, printed pp. 163–164; PDF pp. 177–178] |
 | IDENT-6F98412BF44D — Vorderasiatisches Museum VA.2416 (catalogue 12) | dimensions | dimensions: 18 cm diameter [SRC-0B6C0E1133EF; descriptive catalogue no. 4, printed pp. 13-14; edition pp. 22-27; VA 2416]; reported_dimensions: 18 × 4.5 cm. [SRC-DA708912C2D3; Catalogue entry 12, printed pp. 77–78; PDF pp. 91–92]; reported_dimensions: 18.3 cm × 4.2 cm [SRC-F2BEFBEFFC2E; Edited section VA.2416, printed pp. 45–51] |
 | IDENT-6F98412BF44D — Vorderasiatisches Museum VA.2416 (catalogue 12) | vessel_form | reported_bowl_form: Round base. [SRC-DA708912C2D3; Catalogue entry 12, printed pp. 77–78; PDF pp. 91–92]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 12, printed pp. 77–78; PDF pp. 91–92] |
