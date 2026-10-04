@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "checkpoint": 128,
+  "created_at": "2026-10-04T05:39:47+00:00",
+  "goal_status": "active",
+  "previous_turn_classification": "interrupted before source verification by terminal ComputerUse restriction",
+  "current_turn_classification": "progress",
+  "corpus_before": "f7521e4c8ed7bc0e7774f8e16576467a64045d6a5cc6eca678dd3c520ee19581",
+  "corpus_after": "54b6ff1b2cf0b109e0194e137fbe1bb8166af89c7e62bb52f618816a6bde2479",
+  "corpus_changed": true,
+  "table_changes": {
+    "appearance_object_links": 1,
+    "appearances": 1,
+    "publication_assessments": 1,
+    "sources": 1
+  },
+  "new_objects": 0,
+  "new_appearances": 1,
+  "new_sources": 1,
+  "new_publication_assessments": 1,
+  "new_claims": 0,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "total_identities": 1904,
+  "total_text_rows": 2402,
+  "checked_reading_rows": 1600,
+  "partial_reading_rows": 55,
+  "unreviewed_reading_rows": 1,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "new_frozen_case_attempts": 2,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 1,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint 128: Rasmussen’s 2007 thesis provides an exact contextual scholarly reference to Schøyen MS1911/2 on printed 27–28, footnotes 25/31. Added one source, appearance and publication assessment on the existing object; no inscription reading or full document capture. The complete thesis and accompanying catalogue CD remain queued for Miri. Bohak’s figure-list pointer to printed 186 names companion KM33756, not target KM31455; the complete book is already requested. Waterman’s next page was not verified because Computer Use ended with an unidentified current-URL restriction. Two frozen case histories extended: 33 with linked scholarly references, 216 without; none wholly complete. Miri: 15 resolved, 26 remaining requests. Goal active; useful independent research continues.",
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Waterman128-2026-10-04/campaign_case_progress_checkpoint128.json",
+    "sha256": "2addcd8c45cef5994af060e658429a821f2200c7d1103a21afcf976b8b09a4f2"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Waterman128-2026-10-04/held_pdf_inventory_checkpoint128.json",
+    "sha256": "60cbac2b3d905c6382fe0846ca6ccde4e92620dddbc1ec538523673cab9e73c2"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Waterman128-2026-10-04/non_pdf_holdings_checkpoint128.json",
+    "sha256": "070af6b15d26245e0211ba909050bda1bca1a61a184ab8b7c09a18a028322742"
+  },
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/Rasmussen2007-source-observation.json",
+      "sha256": "b9a6a0f4d00d8a7688cebbb87b5f4ed04745bee58cd27db0d06ef59854b5beeb"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/Waterman-browser-stop.json",
+      "sha256": "824ce9fd4f87ccd700519b6759b2ee0fd8a39d24aad7cb2d4ad15a72ac63cecf"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/batch-time.json",
+      "sha256": "2282833e908ac456ed5396ee21c40e449ba61e4cb1f5fa8c6f33ee1df1f34c1c"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/campaign_case_progress_checkpoint128.json",
+      "sha256": "2addcd8c45cef5994af060e658429a821f2200c7d1103a21afcf976b8b09a4f2"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/capture-receipt.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/companion-publication-routes.json",
+      "sha256": "fdaff6271d1879daa884f137f0eaf3ad23f41d1439cc1cfc304c6f3ecf6360a4"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/core-robots-response.json",
+      "sha256": "d5240b7aee979fc2ab88d2f7a04fd2c80c05afd77c2f6c1fe047c657f4255fac"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/fingerprint-after.json",
+      "sha256": "fa9b74ee2776ce4a30e0c3eab72c7fad186179b64256508359589f3c760faf63"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/fingerprint-before.json",
+      "sha256": "97ae5c41a2ac401d609998e2a3b05f73fe50f7491734cf0235890990285b355a"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/fingerprint-trial.json",
+      "sha256": "31637786727b24a7585e01bc645123d482313a7a6f17bb722c2dce29d02ff889"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/held_pdf_inventory_checkpoint128.json",
+      "sha256": "60cbac2b3d905c6382fe0846ca6ccde4e92620dddbc1ec538523673cab9e73c2"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/identities-before.json",
+      "sha256": "89b6bf08f77c36e81db3d07cc8951edc148f8774a8b58ced3983b5bc5ae477a3"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/miri-queue-before.json",
+      "sha256": "1026739d46c1c7d0f0a4399ef8222102729aba20f6e2488fbe3d934c322bb49f"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/non_pdf_holdings_checkpoint128.json",
+      "sha256": "070af6b15d26245e0211ba909050bda1bca1a61a184ab8b7c09a18a028322742"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/replay-production.json",
+      "sha256": "78a07d907ea36ae1f0ec45e78af349c62f94787b3bdbf6bffbd067109e95723e"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/replay-trial.json",
+      "sha256": "65d89fdb6f104f97f80c1dca305628aefef8f6519a53f290a8114194024f6802"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/record_checkpoint.py",
+      "sha256": "4288c1cf9864a3c853e22ddd745174e697ef2fb5048b236c0bd5cf459b0bbd5e"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/core-robots.txt",
+      "sha256": "8fa3036c68bfcbd32365f6225d24333264093b7cd38d306e106b4dbdc934fd5b"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/source-manifest-initial-retained.jsonl",
+      "sha256": "01c084b4fdeadff64974e568d5389b818779b1298c173e78702450f1e7a5ee84"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/closure-verification.json",
+      "sha256": "f4edad17af14b2c0159d0000028bb8e38d4ad28b9682835561aae5aa0124d8db"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/verify_close.py",
+      "sha256": "4970d99a43b24b2a2c7acdc2fa20974dc281091bcee74b1fa6f3ddff023a4546"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/tests-final.log",
+      "sha256": "79b34521ef1d3a078d548568375a1bb8de8bfdf8cf5c40c8b732ac58d29eff2a"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/node-tests-final.log",
+      "sha256": "a33a8a65565ae1aa5794e3f598dec4ca27b99d0e1c138f985f1827d3c00240b6"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/reader-build-final.log",
+      "sha256": "97b40be6b670672763058406bdc3696689ab0e9a07f7e3e7dc073b3867c46d11"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/miri-queue-initial128-retained.json",
+      "sha256": "7043a192b8ff578dd44ea45a145a4b4a295c9e28f6f4417b04bdc80d1ba5cece"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/roadmap-initial128-retained.json",
+      "sha256": "dc1b468a72f095677189090eff3a402ccb50af0b0db4d6cb0498c729c59442f9"
+    },
+    {
+      "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+      "sha256": "dd6249ec9bef6ad2a56f713d09ea818ea3260b36940071fc19bf166218136639"
+    },
+    {
+      "path": "research/roadmap/dataset_maturity.json",
+      "sha256": "de7bbf0fe68ce2c3f3c17b81813f68672cfa4a234816855b89064ff7730edbc3"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/montgomery-report-freshness-observation.json",
+      "sha256": "e464240179712c6358e7c33d457384783dc2e1047e6c27ef09d9124ebea3923a"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/prior-tracked-montgomery_cohort_current.json",
+      "sha256": "fb69c75c1ad9e730791c2063dae21fe789fe938400dc86566e71be1dcf1a47e4"
+    },
+    {
+      "path": "data/private/research-work/Waterman128-2026-10-04/prior-tracked-montgomery_cohort_current.md",
+      "sha256": "3fa4ee494edbd54c635a674663c8c9129e85c40d3cc3ef40965e0cb6ecb5d39a"
+    }
+  ],
+  "validation": {
+    "all39tables_exact_trial_production": true,
+    "unchanged_tables": 35,
+    "all_old_rows_retained_exact": true,
+    "manifest_replay": "Three manifests in trial and production,zero changes",
+    "python_tests_passed": 414,
+    "node_tests_passed": 57,
+    "total_tests_passed": 471,
+    "reader_audit_checks": "7/7",
+    "all_text_rows_verified": 2402,
+    "all_media_assignments_verified": 2245,
+    "all_local_image_hashes_verified": 1334,
+    "all_capture_hashes_and_work_assignments_verified": 97,
+    "all_identity_memberships_and_counts_verified": 1904,
+    "all_prior_holdings_appearances_locators_and_text_hashes_verified": true,
+    "new_context_reference_visible_in_private_reader": true,
+    "original249cases_all_members_and_history_retained": true,
+    "new_case_attempts": 2,
+    "prior_miri_requests_retained": true,
+    "no_new_full_source_or_reading_capture": true,
+    "reader_built_after_both_suites": true,
+    "live_runtime": "Local build only; no server restart/deployment"
+  },
+  "next_actions": [
+    "Continue remaining216publicationcases and heldFord/Gordon/Morgenstern/Levenesourceunits.",
+    "AcquireRasmussen2007fullPDF/CD andBohakalreadyqueued; inspectexactsourceunits ratherthan inferwholecaseclosure.",
+    "Waterman/currentbrowserURLtoolrestriction remainsrecorded; independentlawfulresearch continues."
+  ],
+  "protected_payloads": "Privateboundedsource/toolobservations outsideGit; no newsourcepixels/fullPDF or transcription/translation copied. Publicreceipt projectauthoredcounts/bibliography/hashpointers only.",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0128_Rasmussen2007_and_companion_routes_final.json",
+    "sha256": "2e6c0079a703b407e9ee571f738d6077819daf6b0a842f927385f79c8f8538c0"
+  },
+  "preparatory_diagnostics": "Initial ingest invocation omitted record_type; parser rejected before writes, corrected to source. Initial source-only rehearsal/manifest retained; final revised source manifest rehearsed afresh from prebatchbackup, then applied exactly to production. Capture refused freshrobots verification before PDFfetch; no successful capture or accesscause claim. Browser guard immediate stop retained.",
+  "closed_at": "2026-10-04T05:42:18+00:00",
+  "private_initial_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0128_Rasmussen2007_and_companion_routes.json",
+    "sha256": "42097932ee53a2ed181146492c17b6677103a8faef43748a1230b6029c7d8a91"
+  },
+  "presentation_note": "Queue/roadmap prose made readable after corpus/reader verification; earlier drafts retained. Facts, prior queue records, case histories and corpus unchanged.",
+  "prior_verified_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0128_Rasmussen2007_and_companion_routes_verified.json",
+    "sha256": "ad44b78c9525548d1543598564597db6839dc95c86b260780ef680cac6d7df0a"
+  },
+  "supplemental_report_observation": "Fresh Montgomery report shows19current museum concordance reviews, not the stale prior report32. Before/after128currentreviews exact19; earlier added sourceappearances invalidate13additional old hashes. Original report snapshots and all historical review rows retained. No128museum adjudication or lost object links; current report freshness corrected."
+}

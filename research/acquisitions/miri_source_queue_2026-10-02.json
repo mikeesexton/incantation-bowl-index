@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T05:21:18+00:00",
+  "updated_at": "2026-10-04T05:39:47+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -284,7 +284,18 @@
       "citation": "Bohak, Gideon. Ancient Jewish Magic: A History. Cambridge: Cambridge University Press,2008.",
       "requirement": "Bohak’s 2008 book was on Miri’s earlier missing list but is absent from these nine PDFs. The complete book is still needed; the citation also appears in the newly held Hunter chapter, page 143/PDF169.",
       "priority": 2,
-      "status": "unheldbookfromearlierqueue"
+      "status": "unheldbookfromearlierqueue",
+      "follow_up_evidence": [
+        {
+          "checkpoint": 128,
+          "checked_at": "2026-10-04T05:39:47+00:00",
+          "finding": "The primary Bohak preview’s figure 3.6 explicitly names companion bowl KM33756 and points to printed 186. That complete page remains unheld and uninspected. This does not establish a KM31455 publication match. Inspect Bohak 186, its notes, and the exact museum card. Existing complete-book request extended without duplication.",
+          "evidence": {
+            "path": "data/private/research-work/Waterman128-2026-10-04/companion-publication-routes.json",
+            "sha256": "fdaff6271d1879daa884f137f0eaf3ad23f41d1439cc1cfc304c6f3ecf6360a4"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-72D809FB4249",
@@ -449,6 +460,15 @@
             "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
             "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
           }
+        },
+        {
+          "checkpoint": 128,
+          "checked_at": "2026-10-04T05:39:47+00:00",
+          "finding": "Selected the already-open Waterman tab at n99. The next flip showed loading placeholders, then Computer Use stopped because the current URL was not allowed. The tool did not identify that URL. Stopped immediately without retry, reset or workaround. No further page verified; checkpoint 127 observations remain authoritative. Mike may switch tabs while retaining Waterman. Independent research continues.",
+          "evidence": {
+            "path": "data/private/research-work/Waterman128-2026-10-04/Waterman-browser-stop.json",
+            "sha256": "824ce9fd4f87ccd700519b6759b2ee0fd8a39d24aad7cb2d4ad15a72ac63cecf"
+          }
         }
       ]
     },
@@ -594,6 +614,15 @@
             "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
             "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
           }
+        },
+        {
+          "checkpoint": 128,
+          "checked_at": "2026-10-04T05:39:47+00:00",
+          "finding": "The primary Bohak preview’s figure 3.6 explicitly names companion bowl KM33756 and points to printed 186. That complete page remains unheld and uninspected. This does not establish a KM31455 publication match. Inspect Bohak 186, its notes, and the exact museum card. Existing complete-book request extended without duplication.",
+          "evidence": {
+            "path": "data/private/research-work/Waterman128-2026-10-04/companion-publication-routes.json",
+            "sha256": "fdaff6271d1879daa884f137f0eaf3ad23f41d1439cc1cfc304c6f3ecf6360a4"
+          }
         }
       ]
     },
@@ -646,6 +675,22 @@
       "evidence": {
         "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
         "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
+      }
+    },
+    {
+      "source_id": "SRC-RASMUSSEN2007-BEREISTE",
+      "short_label": "Rasmussen2007BereisteGjenstanderWithCD",
+      "citation": "Rasmussen, Josephine Munch. Bereiste Gjenstander: Håndtering av utenlandske kulturgjenstander i Norge: en undersøkelse i lys av Schøyensaken. MA in archaeology, Universitetet i Oslo, 2007.",
+      "priority": 3,
+      "status": "Primary PDF text inspected through the web tool; full local thesis and CD unheld. The project collector could not verify fresh robots permission.",
+      "requirement": "Obtain a permitted copy of the complete 97-page thesis PDF and the accompanying catalogue CD described in the afterword (printed 78/PDF 82), documenting the catalogue on 18 January 2007. Printed 27–28, footnotes 25/31, provide an exact MS1911/2 contextual reference, without an inscription edition. Verify page images and footnote typography. Check the CD’s object coverage, photographs and any inscription text; its contents are unknown.",
+      "metadata_url": "https://urn.nb.no/URN:NBN:no-1576",
+      "attempted_download_url": "https://fileserver-az.core.ac.uk/download/30852204.pdf",
+      "checked_at": "2026-10-04T05:39:47+00:00",
+      "previous_access_evidence": "The web tool returned primary PDF text. Its PDF 32 screenshot failed with a cache miss/InternalError. Initial sandbox request failed at DNS; an escalated robots request returned HTTP 200 with comments only, while the fresh project collector refused robots permission before fetching the PDF. No PDF bytes or capture obtained; restriction cause unknown.",
+      "evidence": {
+        "path": "data/private/research-work/Waterman128-2026-10-04/Rasmussen2007-source-observation.json",
+        "sha256": "b9a6a0f4d00d8a7688cebbb87b5f4ed04745bee58cd27db0d06ef59854b5beeb"
       }
     }
   ],
