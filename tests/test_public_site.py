@@ -103,10 +103,11 @@ class PublicSiteContentTests(unittest.TestCase):
         for key in build.COVERAGE_COPY:
             self.assertIn(build.COVERAGE_COPY[key]['total_label'], page)
 
-    def test_states_what_is_withheld(self):
-        """ACCESS-008 asks the page to say what is deliberately not published."""
-        self.assertIn('does not reproduce them', self.page)
-        self.assertIn('Provenance is reported, not settled', self.page)
+    def test_withheld_section_removed_while_nothing_is_published(self):
+        """Mike removed "What we index, and what we hold back" on 4 October 2026:
+        the page publishes no bowl content, only totals. Restore it (and this
+        ACCESS-008 check) before any texts or images go public."""
+        self.assertNotIn('withheld-title', self.page)
 
     def test_coverage_selections_are_deterministic(self):
         """A rebuild on unchanged counts must not produce a churning diff."""

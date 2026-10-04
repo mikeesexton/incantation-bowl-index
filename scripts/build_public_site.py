@@ -392,31 +392,6 @@ def render(payload: dict, snapshot_id: str, built_at: str, css_hash: str = "dev"
     <p class="intro-coverage-note">Each circle stands for one bowl in the index. Highlighting shows how many bowls carry each kind of reference — some carry all three. Which circles light up is illustrative: this page publishes totals, not records for individual bowls.</p>
   </section>
 
-  <section class="intro-chapter intro-withheld" aria-labelledby="withheld-title">
-    <div class="intro-section-heading">
-      <h2 id="withheld-title">What we index,<br><em>and what we hold back.</em></h2>
-      <p>An index of who said what about which bowl is useful only if it is honest about its own limits.</p>
-    </div>
-    <div class="intro-withheld-grid">
-      <article>
-        <h3>A bowl is not a catalogue entry.</h3>
-        <p>The same bowl can appear in several publications under several numbers. The index keeps those appearances separate and records how confident it is that they describe one object, rather than silently merging them.</p>
-      </article>
-      <article>
-        <h3>Every statement has a source.</h3>
-        <p>Dates, findspots, measurements and readings are recorded as claims attributed to a publication, with a page or catalogue locator. Where sources disagree, both readings are kept.</p>
-      </article>
-      <article>
-        <h3>We do not republish other people’s work.</h3>
-        <p>Modern transcriptions, translations, commentary and photographs belong to the scholars, publishers and collections that made them. The index records that they exist and where to find them. It does not reproduce them.</p>
-      </article>
-      <article>
-        <h3>Provenance is reported, not settled.</h3>
-        <p>Many bowls left Iraq and Iran in circumstances that are contested or undocumented. Recording what a source reports about an object’s history is not a statement that its ownership, export or authenticity is established.</p>
-      </article>
-    </div>
-  </section>
-
   <section class="intro-chapter intro-interest" aria-labelledby="interest-title">
     <div class="intro-section-heading">
       <h2 id="interest-title">The index is still being built.</h2>
