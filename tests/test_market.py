@@ -75,6 +75,13 @@ class MarketLedgerTests(unittest.TestCase):
         self.assertEqual(twin["audience"], "Mike alone")
         self.assertEqual(twin["metrics"]["listings"], 5)
 
+    def test_research_console_serves_the_ledger_and_a_market_tab(self):
+        from bowl_index.web import CorpusCatalog, WEB_ROOT
+        ledger = CorpusCatalog(self.root / "db.sqlite3").market()
+        self.assertEqual(ledger["metrics"]["listings"], 5)
+        self.assertIn('data-route="market"', (WEB_ROOT / "index.html").read_text())
+        self.assertIn('id="market-view"', (WEB_ROOT / "index.html").read_text())
+
 
 if __name__ == "__main__":
     unittest.main()

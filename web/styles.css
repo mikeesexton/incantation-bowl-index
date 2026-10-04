@@ -285,6 +285,20 @@ h1 { margin-top: .16rem; font-size: clamp(1.85rem, 3vw, 2.55rem); letter-spacing
 .media-list a:hover { border-color: var(--cyan); }
 .media-list small { color: var(--muted); font-size: .68rem; }
 .media-mark { color: var(--cyan); font-size: 1.3rem; }
+.market-lede { max-width: 72ch; margin: 0 0 1.4rem; color: var(--muted); }
+.market-section { margin: 0 0 2rem; }
+.market-section h2 { margin-bottom: .7rem; font-size: 1.25rem; }
+.market-section h3 { margin: 1rem 0 .3rem; font-size: 1rem; }
+.market-table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+.market-table { width: 100%; border-collapse: collapse; font-size: .84rem; }
+.market-table th, .market-table td { padding: .5rem .65rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.market-table th { background: var(--th-bg); color: var(--muted); font-weight: 650; white-space: nowrap; }
+.market-table tbody tr:hover { background: var(--row-hover); }
+.market-when, .market-status { white-space: nowrap; }
+.market-status-upcoming { color: var(--lapis); font-weight: 650; }
+.market-list { margin: .2rem 0; padding-left: 1.2rem; }
+.market-list li { margin: .25rem 0; }
+.market-muted { color: var(--muted); }
 .section-empty { padding: 1.4rem; border: 1px dashed var(--line-dark); background: var(--surface-alt); color: var(--muted); text-align: center; font-size: .8rem; }
 
 /* Enrichment */

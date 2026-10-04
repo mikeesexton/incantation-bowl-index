@@ -469,9 +469,72 @@ function renderReviews() {
   loadReviews().catch(error => toast(error.message));
 }
 
+function marketBowl(row) {
+  const name = escapeHtml(row.display_name || row.object_id);
+  return row.identity_id ? `<a href="#/explore/${encodeURIComponent(row.identity_id)}">${name}</a>` : name;
+}
+
+function marketPrice(row) {
+  return escapeHtml(row.claims.filter(claim => claim.field.startsWith("sale_")).map(claim => claim.value).join("; ")) || "—";
+}
+
+function marketWhen(row) {
+  if (row.date) return escapeHtml(row.date);
+  return row.observed_at ? `<span class="market-muted">seen ${escapeHtml(row.observed_at.slice(0, 10))}</span>` : "—";
+}
+
+function marketRows(ledger, status) {
+  const rows = ledger.listings.filter(row => !status || row.status === status);
+  if (!rows.length) return `<tr><td colspan="6" class="market-muted">No listings with this status.</td></tr>`;
+  return rows.map(row => `<tr>
+    <td class="market-when">${marketWhen(row)}</td><td>${escapeHtml(row.house || "—")}</td><td>${marketBowl(row)}</td>
+    <td class="market-status market-status-${escapeHtml(row.status)}">${escapeHtml(row.status_label)}</td>
+    <td>${marketPrice(row)}</td><td>${externalLink(row.url, row.locator || "Source")}</td></tr>`).join("");
+}
+
+function marketLeads(leads) {
+  if (!leads.length) return "";
+  return `<section class="market-section"><h2>New listings awaiting review</h2>
+    <p class="market-muted">Found by the listing monitor and not yet checked or recorded.</p><ul class="market-list">${leads.map(lead => {
+      const match = lead.possible_match;
+      const note = match && match.identity_id ? ` <span class="market-muted">· possibly <a href="#/explore/${encodeURIComponent(match.identity_id)}">${escapeHtml(match.identity_id)}</a> (${escapeHtml(match.basis)})</span>` : "";
+      return `<li>${externalLink(lead.url, lead.description)} · ${escapeHtml(lead.sale_date_text || "date not shown")} · estimate ${escapeHtml(lead.estimate || "not shown")} <span class="market-muted">· seen ${escapeHtml(lead.observed_at.slice(0, 10))}</span>${note}</li>`;
+    }).join("")}</ul></section>`;
+}
+
+function marketHistories(histories) {
+  if (!histories.length) return `<p class="market-muted">None yet.</p>`;
+  return histories.map(item => `<h3><a href="#/explore/${encodeURIComponent(item.identity_id)}">${escapeHtml(item.display_name || item.identity_id)}</a></h3>
+    <ul class="market-list">${item.events.map(event => `<li>${escapeHtml(event.start_date || "undated")} · ${escapeHtml(event.event_type)} · ${escapeHtml(event.actor || event.place || "—")} — ${escapeHtml(event.details)}</li>`).join("")}</ul>`).join("");
+}
+
+async function renderMarket() {
+  const view = $("#market-view");
+  view.innerHTML = `<p class="dossier-loading">Loading the market ledger…</p>`;
+  const ledger = await api("/api/market");
+  const m = ledger.metrics, by = m.by_status;
+  const sold = (by.sold || 0) + (by.sold_no_price || 0);
+  const statuses = ["upcoming", "sold", "sold_no_price", "unsold", "offered", "listing_only"];
+  const labels = Object.fromEntries(ledger.listings.map(row => [row.status, row.status_label]));
+  const gaps = ledger.gaps;
+  view.innerHTML = `<div class="workspace-head"><div><span class="eyebrow">Private to Mike</span><h1 id="market-title">Market</h1></div>
+      <label class="compact-select">Status<select id="market-status"><option value="">All listings</option>${statuses.filter(s => by[s]).map(s => `<option value="${s}">${escapeHtml(labels[s] || humanize(s))} (${by[s]})</option>`).join("")}</select></label></div>
+    <p class="market-lede">${m.listings} listings of ${m.identities} bowls from ${m.houses} houses and dealers. ${by.upcoming || 0} upcoming; ${sold} recorded as sold, ${by.sold || 0} of them with a price. Prices keep each source's wording and currency. A recorded sale does not establish lawful ownership, export history or authenticity.</p>
+    ${marketLeads(ledger.monitor_leads)}
+    <section class="market-section"><h2>Listings, newest first</h2><div class="market-table-wrap"><table class="market-table">
+      <thead><tr><th>Date</th><th>House</th><th>Bowl</th><th>Status</th><th>Price wording</th><th>Lot or record</th></tr></thead>
+      <tbody id="market-rows">${marketRows(ledger, "")}</tbody></table></div></section>
+    <section class="market-section"><h2>Bowls on the market more than once</h2>${marketHistories(ledger.repeat_identities)}</section>
+    <section class="market-section"><h2>Gaps to chase</h2>
+      <p><strong>Recorded as sold, no price:</strong> ${gaps.sold_without_price.map(row => `${marketBowl(row)} (${escapeHtml(row.house || "—")})`).join(", ") || "none"}</p>
+      <p><strong>Listings without a sale date:</strong> ${m.undated}</p>
+      <p><strong>Open auction leads:</strong> ${gaps.open_auction_leads.map(lead => `${escapeHtml(lead.description.slice(0, 90))} (${escapeHtml(lead.status)})`).join(", ") || "none"}</p></section>`;
+  $("#market-status").addEventListener("change", event => { $("#market-rows").innerHTML = marketRows(ledger, event.target.value); });
+}
+
 function activateRoute() {
   const previous = state.route;
-  const route = (location.hash.match(/^#\/(home|explore|scholarship|search|queues|reviews)(?:[/?]|$)/) || [])[1] || "home";
+  const route = (location.hash.match(/^#\/(home|explore|scholarship|search|queues|reviews|market)(?:[/?]|$)/) || [])[1] || "home";
   state.route = route;
   document.body.classList.toggle("is-home", route === "home");
   const viewId = route === "scholarship" ? "explore-view" : `${route}-view`;
@@ -502,6 +565,7 @@ function activateRoute() {
   }
   if (route === "queues" && state.stats) renderQueues();
   if (route === "reviews") renderReviews();
+  if (route === "market") renderMarket().catch(error => toast(error.message));
   if (route !== previous) window.scrollTo({top: 0, behavior: "instant"});
   $("#workspace").focus({preventScroll: true});
 }

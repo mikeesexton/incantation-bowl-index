@@ -17,6 +17,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 from .db import PROJECT_ROOT, connect, migrate
 from .dedupe import pair_evidence
 from .identity import CORE_COVERAGE, identity_rows
+from .market import market_ledger
 from .projection import PROJECTION_COLUMNS
 from .private_projection import PrivateResearchProjection, private_manifest
 from .private_captures import capture_inventory
@@ -28,6 +29,7 @@ from .publication_assessments import current_publication_assessments
 
 WEB_ROOT = PROJECT_ROOT / "web"
 PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
+MARKET_MONITOR_ROOT = PROJECT_ROOT / "data" / "private" / "monitoring" / "market"
 PRIVATE_MEDIA_NAME = re.compile(r"^MED-[A-F0-9]{12}\.png$")
 PRIVATE_ARCHIVE_ROOT = PROJECT_ROOT / "data" / "private" / "archive"
 PRIVATE_CAPTURE_NAME = re.compile(r"^CAP-[A-Z0-9][A-Z0-9-]{0,127}$")
@@ -534,6 +536,11 @@ class CorpusCatalog:
             "reviews": reviews,
         }
 
+    def market(self):
+        """Mike's private market ledger, read fresh so new monitor leads appear."""
+        with closing(self.connection()) as conn:
+            return market_ledger(conn, monitor_dir=MARKET_MONITOR_ROOT)
+
     def reviews(self, params):
         status = params.get("status", ["unresolved"])[0]
         query = params.get("q", [""])[0].strip().casefold()
@@ -703,6 +710,8 @@ def make_handler(catalog, token):
                         with capture_path.open("rb") as handle:
                             for chunk in iter(lambda: handle.read(1024 * 1024), b""):
                                 self.wfile.write(chunk)
+                elif path == "/api/market":
+                    self._json(catalog.market())
                 elif path == "/api/reviews":
                     self._json(catalog.reviews(params))
                 elif path.startswith("/api/reviews/"):

@@ -248,6 +248,9 @@
   Output under `data/private/monitoring/market/`.
 - Not done: no scheduling (needs Mike's go-ahead; OPS-003/004), no lead ingested,
   no deploy. `.claude/launch.json` (ignored) serves `site/mike-build` on 8766 for previews.
+- Follow-up: Mike uses the research console (`ibi serve`, 127.0.0.1:8765), not the static
+  build, so the console gained a Market tab (`#/market`, `/api/market`, read fresh per
+  visit, with a status filter). Restart the console to load the new endpoint.
 - Next: review the Apollo lot 1419 lead (already recorded as three bowls); chase the 9
   sales without a price; find server-rendered endpoints for Bidspirit/TimeLine/Artemis.
 
