@@ -1,0 +1,717 @@
+{
+  "schema_version": 1,
+  "checkpoint": 130,
+  "created_at": "2026-10-04T06:27:58+00:00",
+  "goal_status": "active",
+  "previous_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "b2912f0667b02fc51242c9124e53ff7f418d09f7b14ec94c2ee650d210f1c871",
+  "corpus_after": "d18fb3081fe8fd30e1893427e6613690f718912e704ef01de0251f4ac47c766b",
+  "corpus_changed": true,
+  "table_changes": {
+    "document_assessments": 1,
+    "media": 8,
+    "text_proofreading_reviews": 64,
+    "texts": 64
+  },
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_identifiers": 0,
+  "new_claims": 0,
+  "new_sources": 0,
+  "new_media_rows": 8,
+  "new_text_rows": 64,
+  "new_reading_rows": 64,
+  "new_captures": 0,
+  "new_proofreading_reviews": 64,
+  "new_document_assessments": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1904,
+  "total_text_rows": 2475,
+  "total_reading_rows": 1729,
+  "checked_reading_rows": 1673,
+  "partial_reading_rows": 55,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2257,
+  "total_local_images": 1346,
+  "total_captures": 97,
+  "registered_PDF_sources": 66,
+  "PDF_appearance_bearing_sources": 59,
+  "PDF_appearances": 1382,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 26,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 88,
+    "sources_with_document_assessments": 82,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 71,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "scope": "Checkpoint130: 64bounded Ford2002 lexical reading units separately captured/sourcechecked on existing BM91715 appearance:28Latin/English lemma pairs and8explicit Ford-reported Segal alternatives. Segal primary pages remain unheld; this verifies Ford’s actual reports only. Ten complete source pages33–34/36–43 and7enlarged controls viewed;8additional full source scans;25pixel recipes exact. Three missing Latin carons in draft repaired before ingestion with all initial copies retained. Actual variant descriptors/placeholders/square/angle/corner groups and English four-dot boundary retained; tentative readings/metal identification/epigraphic possibility and competing reports preserved without adjudication. Main/comparative readings125/126/129 unchanged. No new objects/appearances/identifiers/claims/sources/captures/identity/rights decisions. Ford extraction remains partial: MIT17/24/AO1177 other-bowl quotations, late-manuscript/contextual copies, further alternate glosses/claims/all-reference/sourcewide extraction open. Frozen249 histories/members exact33linked216unlinked/zero wholecasescomplete; Miri15resolved26remaining/no newaccessfailure. Goal active.",
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Ford2002-130-2026-10-04/campaign_case_progress_checkpoint130.json",
+    "sha256": "4f744493798dc04ad37aa69322e8a220a1c864762afc0aa98b98d1c5d6daa353"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Ford2002-130-2026-10-04/held_pdf_inventory_checkpoint130.json",
+    "sha256": "3f6678b2de8d54a94cc3b1666f007c8614b6d366e368b5d9db879a983e542f7a"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Ford2002-130-2026-10-04/non_pdf_holdings_checkpoint130.json",
+    "sha256": "3a82b56bfbc1882a48aeb56c73e5938682ef8895f2e625151e59463c35869f58"
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Ford2002_130_readings_2026-10-04.jsonl",
+      "sha256": "eac88c4b84234d064b26a27560281e8751352adf03fec7ad663be9e4254966a1"
+    },
+    {
+      "path": "data/private/manifests/Ford2002_130_proofreading_2026-10-04.json",
+      "sha256": "10509fafdc63551e1413433ae20111e0a6a35416b756dad053fe30e1ed4b8859"
+    },
+    {
+      "path": "data/private/manifests/Ford2002_130_documents_2026-10-04.json",
+      "sha256": "57b9a508b71e65db34f92042d7c46817ab4a6876d84ecd2fb8eaee034fe1ce1e"
+    }
+  ],
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-ARMS-ENGLISH.txt",
+      "sha256": "a750fd2f50e4940f892b74804321d4821c042e2064709cb4b8995658c70439e6"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-ARMS-LATIN.txt",
+      "sha256": "3e051091d61555235c2da29ef574c08255b1ed74a627dd7ceea0f0875dfb9b49"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-AZAT-ENGLISH.txt",
+      "sha256": "2dc1a1ab41a25e756337e5de5980e843fa8aba6ccbf21db9863a1a1ee1d576a0"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-AZAT-LATIN.txt",
+      "sha256": "ca1fdd00369a1559d4c6a7666a0161b2367f6d6e111b9f5bc3ee531d683b82d8"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-BANNED-ENGLISH.txt",
+      "sha256": "74a947992ac9347bf8a66de1a3eb5b3d452ae3b65b3ea66b70204b0d21f226a1"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-BANNED-LATIN.txt",
+      "sha256": "52202ef8460c86e1c3e3ef2c3baf4f4a5bcb6f385e06e08b7d7d0128927241bb"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-CASHBOX-ENGLISH.txt",
+      "sha256": "b3ec9293a953041cdfd92e4a784eb7e6fccf98e729b754e05c8e3362b3378dc3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-CASHBOX-LATIN.txt",
+      "sha256": "aec94b2e1e75664bc337aa419eca6cb7ff27c99ce92e13b85bc5347263acc069"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-CHILD-ENGLISH.txt",
+      "sha256": "60a55af69f67a5f9c6480a0508d4798c0d2b2484ae6cf8fef773003f3ca4f70e"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-CHILD-LATIN.txt",
+      "sha256": "c968990839e9fd150130e28c1959d78e4b8b9b05d1158bb8c632ffbcae717f88"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DARKNESS-ENGLISH.txt",
+      "sha256": "ac1e61cddb1dad7d94c20cca32c615a3ea6678e10b2c32c65f47a4ae63605829"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DARKNESS-LATIN.txt",
+      "sha256": "da1f0d436a7898b38641a2aa8fae93b8cf9cc25a8fc79aa69b2032b2cf9bd056"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DEMON-ENGLISH.txt",
+      "sha256": "7452afdaf621fe2b82f9117594e1530eb264c16a973561ff6525cce229f4086d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DEMON-LATIN.txt",
+      "sha256": "dd5b9689c4c3768b37c2779cf4b9a6e936c3b8847ca8dfc32558e57871ed4b02"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DOWRY-ENGLISH.txt",
+      "sha256": "9632de240aa03b7ed8b3313875a0625d36e11db9081651fe43604736453256ea"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DOWRY-LATIN.txt",
+      "sha256": "7eaa1fceb995ba8c24485acce664f169b1cb96952020877083eb76f8eb63483a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DREAM-SIGNS-ENGLISH.txt",
+      "sha256": "ec1f7fc9d6b341dd9698152e9c00b8629d10a9bb7806c99c0c413edcf6e7471b"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-DREAM-SIGNS-LATIN.txt",
+      "sha256": "751275f21ae58c8a3c8eddfcd59ede0e811f742c85c14b8583e6236dd2436ec3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-EXTRAORDINARY-ENGLISH.txt",
+      "sha256": "92d9b6f0dbebda442840534cbe36a59fb18ee1d3724422fef7d8f54c556a6892"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-EXTRAORDINARY-LATIN.txt",
+      "sha256": "a9322bb6d89f3a95efd189877e2796408361da9c4b2eb26c53002abc02353e5a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-FILLED-WATER-ENGLISH.txt",
+      "sha256": "2b6768b8d15ed01475b1a1abecba183af50728c40fe5ea81dbceecf1c11bac2a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-FILLED-WATER-LATIN.txt",
+      "sha256": "1a7f55c2fd1bc76efb34a5c6df6cc771e1776511dd6d404f1b342f2147df1c93"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-HATER-ENGLISH.txt",
+      "sha256": "fd0203b348232ac4bec1ee1abdb8f4523f57801a3610ea3f062d1475846ce531"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-HATER-LATIN.txt",
+      "sha256": "e52000fca810588e176233b602c0108761df9ddf4e04729a1d445ca286e4c20b"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-IRON-STRAPS-ENGLISH.txt",
+      "sha256": "069a459e3518f3a4c9ba670dfbab7dd9cd9e0d2a35b27e140903d5b006bf3bfb"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-IRON-STRAPS-LATIN.txt",
+      "sha256": "f2768d9a157fb1dce12962ea94c0c1f6151c02111ca46d1065058796c89eda36"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-KNIFE-ENGLISH.txt",
+      "sha256": "9468365e888072e507b9e882129d51c2bc234f8656dccb101707ce2ca46966fc"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-KNIFE-LATIN.txt",
+      "sha256": "25943684b152d1adddb0696d6b407edbc06511ebc53112ba9539a7000bf1d9c5"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-LABEL-ENGLISH.txt",
+      "sha256": "e49861a3f1793a02f1e31a0d8d0355b005f4c2da89a9adf8967d28116c7d0f4e"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-LABEL-LATIN.txt",
+      "sha256": "45d33994585100802394efbc9afbecc5b0e0e1abbc5381613986bc2273f707a9"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-LEAD-CHAINS-ENGLISH.txt",
+      "sha256": "6e2e5c9c29f867bd1d7a2e343eee03adc159e50c7b7b3dbf85c78e9b2c501475"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-LEAD-CHAINS-LATIN.txt",
+      "sha256": "e182579c469b79f00675998cda7ac1c5bd4937e8ea9b1811793bd39b06f2e36e"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-LIE-DOWN-ENGLISH.txt",
+      "sha256": "98823421c62ff049aba38183b69ba7cbbd6f445103a180bd5c7cf73ae7c5a7bd"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-LIE-DOWN-LATIN.txt",
+      "sha256": "f6261fdeb1da44753451baec166d6dcc00e246829fe10e295d6e37235de7e188"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-METAL-BED-ENGLISH.txt",
+      "sha256": "e588eed2403cb349faa32b70ec9ea281c9cad07009a07e826d4d426aca5d4cad"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-METAL-BED-LATIN.txt",
+      "sha256": "efe8011954c4b36a3d443b2a718bdbbf9e1b777fa924c6033827fc93e119be27"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-MILK-ENGLISH.txt",
+      "sha256": "b47fafbc8c7ae21fc8181c54859e11aa8e3a03bc05cf5e5bcfa36c1f22f6f75e"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-MILK-LATIN.txt",
+      "sha256": "bf27f05c0dae32ee990d5df0621c46a3f4a91b57847d671c9eb40174476f0e4a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-NAME-FORMULA-ENGLISH.txt",
+      "sha256": "9fb31e96bae0261bf8e0efd2cc87dbeadf5394ca8a57828a7ee53a46b2822eba"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-NAME-FORMULA-LATIN.txt",
+      "sha256": "a6ae85cc86c819cb0b090e73ece2d3abd43064e621fe362ff4c207c3b8abecab"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-PROPERTY-ENGLISH.txt",
+      "sha256": "def3a964cffb1a88abf11d82d2775741ce6b7ab6a347115b62f4fc4258fec39d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-PROPERTY-LATIN.txt",
+      "sha256": "35e59823c140a8224b0d399a267fb939244fd435801efbe7a52385064e35be83"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-REIGNED-ENGLISH.txt",
+      "sha256": "589d4f74b7b98df9489c8385216a427f59e2b785aad6c194cb80d3b835d33c17"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-REIGNED-LATIN.txt",
+      "sha256": "53f129d4af3fa55aae40e9b9590d3d33640fd4b7a7ac8899bbdbea4c2621d947"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SAID-SHACKLED-ENGLISH.txt",
+      "sha256": "bbcce94677ad037f36ad5ee009bd8d7ef6af58997f96d57bdd01369fceb69949"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SAID-SHACKLED-LATIN.txt",
+      "sha256": "2f1e669fa59a13a2d5366d6f3998a8d13d6125e94e90e1362903a8c58d2644c8"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-BANNED-LATIN.txt",
+      "sha256": "9f121b966c4426547641c0f3b34ee035b5a67db8d2dcc421ba7fa07f800ac7cc"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-DOWRY-ENGLISH.txt",
+      "sha256": "002cfc597bface2165313cf791c01dd1e54aef0abde2af8d631abc88e2c44061"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-DOWRY-LATIN.txt",
+      "sha256": "b71fb6e609a79b36d1db94f8151deea845d8556353dab65b2e372a263d9d805d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-HATER.txt",
+      "sha256": "2faee29d626b3e4d7e00fd68728f8bd352c5de365cf857ec2ebc97b03b9ac86c"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-LIE-DOWN-ENGLISH.txt",
+      "sha256": "715c986239e00ed50aa9c48d94ee610a8a1c05ddf9d7fa0633e3cd3057c6a5bb"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-LIE-DOWN-LATIN.txt",
+      "sha256": "d2f35b157005b14c5def0c1b17e38ae2f866325bb7e6dfc3400bfabe471612e3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-REIGNED.txt",
+      "sha256": "5367c4fdd8dd30a7b12895322bd63667c87c2d65435ff7c2450dc01575cc8d5a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SEGAL-REPORTED-SMITTEN.txt",
+      "sha256": "39f7cd55b93d8db5770904add874b5333bb35c6072b7913c1ad9f5a0018c4d32"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SMITTEN-ENGLISH.txt",
+      "sha256": "73d37e4062b19b428441b93ef20539549373bf2b82e6d7b1b9c2aa732f42f03a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SMITTEN-LATIN.txt",
+      "sha256": "1b09d68301c13f86fe881566a355f0e562df73b301ea6a52a28fe47fefdf7cd6"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SPOUSE-ENGLISH.txt",
+      "sha256": "956fc16c1f8bd1b71b70129dd2141fb1970d9afe6811cdaed672f603a985676c"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-SPOUSE-LATIN.txt",
+      "sha256": "00a14c7eca0ee44e4f367d60016b54b8822e2f79a42bca25df6efbf15ba8c654"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-THEN-ENGLISH.txt",
+      "sha256": "8d8d7fe1a8f1344dab0075c843b6df6031e5cb320bbb1e6f7cc113c1fe2d32ef"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-THEN-LATIN.txt",
+      "sha256": "38aada7b42e0218624c4f89812c0a1417078810cdc98643070dbb42627be31b3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-TOOLS-ENGLISH.txt",
+      "sha256": "d86541621979b061b7f8b2718031b81d23e17413b7f6c04c392783773c0c7095"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-TOOLS-LATIN.txt",
+      "sha256": "c22b1102657102893f4ab19f8faa98dc14fa92043398a3422dbabdba13e47c52"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-WATER-TORRENTS-ENGLISH.txt",
+      "sha256": "7b178b550553284a42548e464a1b5bb6aa05dcc3c9d5ed33a6be38fd54781bd7"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/TXT-IBI-CP130-BM91715-WATER-TORRENTS-LATIN.txt",
+      "sha256": "ae4c08350d81931b0fa476df0e423221717c7a1a40c49b7f82c065031131059e"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/additional-controls.json",
+      "sha256": "85d7a1a9b87aba469e4573a28e3f7cff195e10d13781a724f609c2e158be27f1"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/apply.py",
+      "sha256": "606ab6cbf831571214e66021efcffd428c3b37427b5520e3b44e5f2df0a3efcb"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/backup-retention.json",
+      "sha256": "2373951e716ca4aef4b9439ab66c468f33e7559e578f486d51b7406da0400ce0"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/campaign_case_progress_checkpoint130.json",
+      "sha256": "4f744493798dc04ad37aa69322e8a220a1c864762afc0aa98b98d1c5d6daa353"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/controls-final.json",
+      "sha256": "114fc50af303a19dbf3cff30b843275a9f35b292c0e05b9752af4a3953ca645a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/controls-initial.json",
+      "sha256": "5c29636c753f6cddf98a557de62049fcd1443c8b2325062ffe36686f0342d7b4"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/copies-current.json",
+      "sha256": "9943794f876a601519d8751dfc0a3f761fc0b86657b95d0ab5443bf7e1460834"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/copies-initial.json",
+      "sha256": "d4034078dcff91d68430b46a1cd91151c3b2f7778c30fe506c0e20c2d519057c"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/copy-corrections.json",
+      "sha256": "ce6b872ed95be5e2b47aa4220c8424f8a687ad3700b3ba6f35fca4b283604e22"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/copy_passages.py",
+      "sha256": "a5ecfd8378922557c26a87a4d706c84536c3a562b2e8d4a12a94f4d0b44fb0ab"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/documents-initial-path-rejected.json",
+      "sha256": "be16357d1f2b2f44626651a913473c015fc5ad49af61af8e110047e2ec145cc7"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/dream-control.png",
+      "sha256": "651aee0bd44990d48debc25599a4dae9dedb66c8e9075669aba025e5f880705f"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/fingerprint-after.json",
+      "sha256": "713da79d8652c33425c28acca2d45b1456185890fdd355ae1ec0fc658ccb7b18"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/fingerprint-before.json",
+      "sha256": "6731dbd6390a6d113b3a0aef0e19140b19230694fe98c6d49cdc987aa2225824"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/fingerprint-trial.json",
+      "sha256": "713da79d8652c33425c28acca2d45b1456185890fdd355ae1ec0fc658ccb7b18"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/formula-control.png",
+      "sha256": "2960c9d5391393772b1e3a4cc00f7fe58fa081cb245027119bb3299d350903a2"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/full-page-recipes.json",
+      "sha256": "4fed33f078c6e9d515b917807474fc355459ec5ae097f296ad3976fdfa9f3e9c"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/hater-label-control.png",
+      "sha256": "cc17e81783de9242e861e9dce61509842ee1fa51fa18a9a8e540cf5efa62f701"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/held_pdf_inventory_checkpoint130.json",
+      "sha256": "3f6678b2de8d54a94cc3b1666f007c8614b6d366e368b5d9db879a983e542f7a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/identities-before.json",
+      "sha256": "6119365229ecd4706ca419a3ae47390f9b712b28e16c599696bf200a099feff3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/line10-control.png",
+      "sha256": "5f9d2f8bf4a89b866bf565d7ef44bef20ac4402a6f89da5404748fcc1a337753"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/media-derivation.json",
+      "sha256": "ef11e14732e496801a873f42e269708e0f175e5fe2501f4c1edd3895f0f4af1b"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/metadata.json",
+      "sha256": "4dbea4be8a1c332ba2c5caa0ad11fa83b9e597110fcf76183d4e9749ca2b7ca6"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/metal-bed-control.png",
+      "sha256": "b6418b7c352302da51a7d551a60e8d18074dfd87e4c8a4db0e58285c99b23e82"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/milk-child-control.png",
+      "sha256": "f32801ec73549db7044c5cd1150c661244f21c20569a6dc12cca9c93b14433ad"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/miri-queue-before.json",
+      "sha256": "6fa68b4987a235886f9a5a0bb4cf993f7e44adf0208137d0cb957670c94b106d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/non_pdf_holdings_checkpoint130.json",
+      "sha256": "3a82b56bfbc1882a48aeb56c73e5938682ef8895f2e625151e59463c35869f58"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page10-font-runs.json",
+      "sha256": "4945a8aa7b8d05be63256496aa7ce28392b086370ff7f8defe2a3d75e49c1775"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page10-machine-text.txt",
+      "sha256": "b8cce204c4d4a66d25e40045c42a9b382647ba8b0efffab1c4a6781d66fce0b8"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page10-scale3.png",
+      "sha256": "e96d4c51847fb3a6a92c9652004fb40340337c175310b35f00c68d94fca0aa97"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page11-font-runs.json",
+      "sha256": "df8e3cd59c14908052eb98da6943181118e43b0cc395737da7b081a1d85aded8"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page11-machine-text.txt",
+      "sha256": "ca2f363f5687bc64697dc82f5bfad88e97ee91a874bb6be4707d6c13db041666"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page11-scale3.png",
+      "sha256": "8d6c67c6ff9847045dc3c41b76406aa39e32dc0b32bb383a388c049a6706834d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page12-font-runs.json",
+      "sha256": "eb4b7080a0b35f7bdc473c7c94580bc8f8911a67bd2f44db74e29df047fe09b4"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page12-machine-text.txt",
+      "sha256": "16c3faeb3b463f033342bac748e5138722403e51f1dabf28d53b4d8de9e42a2a"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page12-scale3.png",
+      "sha256": "fc3efb7706868fb5b8efad257fae66dc513935cf5caa7e6ae83166584d6c7cbe"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page13-font-runs.json",
+      "sha256": "56ecad388e443335d34c1106fd36c7f24061d74ad5606f039a29227e44610679"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page3-font-runs.json",
+      "sha256": "7ff71ffa1dc7612020d6a9a448def0c4e2a2c6f7a2f1b8efe04ce4ad249b89d7"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page4-font-runs.json",
+      "sha256": "22da34a62d5b2ae6d013f67fed47d89cdbaca835004eb38b7926b5a5932de37b"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page6-font-runs.json",
+      "sha256": "1cf59f35a0d8af5a6bd090d595ae3bf310f6560c362744a065db13ea15792130"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page7-font-runs.json",
+      "sha256": "6f2f9ad98fa2074d9f186cf061c59e1495457f90b354f50e0743a88a409f7e9d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page7-machine-text.txt",
+      "sha256": "5aa9d7deb44a1d3b8603fb4218a1a0dfe5b412cd1c8bccfaf6258afa45a39334"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page7-scale3.png",
+      "sha256": "d9bfcc7a71fb87b89b221b273d74e49a112691720e37095b0d122647af6d6cf1"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page8-font-runs.json",
+      "sha256": "3520f5bf923f7fc558aba7abaa02cc8bc950ca22c1aa1762a5a742526f130701"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page8-machine-text.txt",
+      "sha256": "80a9e293830aead803e8b8c770d24dccb7d00ad773bac2530ff58cde124feb35"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page8-scale3.png",
+      "sha256": "6d3e5846facae9a7e364d3d8b44a97975ec71b0f453da2e097b1b4fd543a98f6"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page9-font-runs.json",
+      "sha256": "cf6a3dca5034e1d269d279a7e938187e9ad744563fe5fdac63dc00269e1da5eb"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page9-machine-text.txt",
+      "sha256": "7c898599b56141d0921440da8c7ce03bcecd702f937b45fc0e05fbafcdb586f3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/page9-scale3.png",
+      "sha256": "96739f723804b0f6976d849bbdb158744703d49f635b7919fc9b58a289dd7b4f"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/pixel-verification.json",
+      "sha256": "5aef67c7de9eb8c83df55c0698332a5cfc41e0fc6ff726fcfda8c188a248b899"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/prepare.py",
+      "sha256": "08c5234d0aec7feef99ac99b51f2c89a78579e435eac936a8bce6ff2652385d2"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/production-apply.json",
+      "sha256": "6f89cd73b28514684fbebdc861809ac82a4d628dc35839dcdb4934b65677596d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/production-replay.json",
+      "sha256": "e0ebeed2cd35002771e4873e683a925c9bcd7d1eb4536774282ef1ab7c6da34f"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/proofreading-initial-hash-rejected.json",
+      "sha256": "04db1043711edf7937eee3e8f9d85f3880a05b807e10247d47011d0850ffec7c"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/rehearse-initial-hash-rejected.py",
+      "sha256": "39a7c35d28e5219584afe1cfc1b0eb17a0b93e242504ba399652681449ab07c3"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/rehearse-initial-parser-rejected.py",
+      "sha256": "a107633afcf7949534a9ff435fbd8c1d872c3441a23f479aeb3286455ad4da53"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/rehearse-initial-path-rejected.py",
+      "sha256": "c94bea44c1bfc267008a97f6b71286a673ef4bdcb6187374f53b7d7e3ec6d707"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/rehearse.py",
+      "sha256": "cd184b48920037db7858df5c35853d678ba8538791a4b146d3da7cd3c132151d"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/source-evidence.json",
+      "sha256": "4d022b7e9c039fe67ff91d654e86c763455f864a4aa50276f48813cefdb60e09"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/texts-before.json",
+      "sha256": "1d369d47adfd69b9753034c33abacb903a3500e27f28894fd81b84c8f1e84770"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/tools-water-control.png",
+      "sha256": "1889a2d57398841ddcd3f38526f3874919a4af8bef9ca393e2564d2eb57c6c43"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/trial-apply.json",
+      "sha256": "fe29dff9b4066ba312e08aca7260214315b710d959914c434bf1a6b456ef8700"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/trial-initial-hash-rejected.json",
+      "sha256": "52f950a92039a455669c5a1d68cc53820db3e7c209451ac56a48dd67940c85ae"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/trial-initial-parser-rejected.json",
+      "sha256": "90bf16e02b37e2dfb5ab65d182c3e3e29a0c0380da1668f264a93db6e2a24b99"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/trial-initial-path-rejected.json",
+      "sha256": "0c96d40334023f696363dcd74670edd3120c42adec34742c62ab62656aa7c6eb"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/trial-replay.json",
+      "sha256": "e0ebeed2cd35002771e4873e683a925c9bcd7d1eb4536774282ef1ab7c6da34f"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/trial-verification.json",
+      "sha256": "5392f5d3b5302d019d208cb2e63a72626b3eeb9ca77b966e1db83f7f1b1259f8"
+    },
+    {
+      "path": "data/private/research-work/Ford2002-130-2026-10-04/verify_pixels.py",
+      "sha256": "2f3040a088f066e8f10328b4d1d60a51b73e5d85f06ea24ec6cdadd569251fe1"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/record_checkpoint.py",
+      "sha256": "a4ac1be0d90275d2e723baa1a34bb34a5c9a51f40a70386bbf94c2aa7be00dac"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/verify_close.py",
+      "sha256": "1517a8c93ff0ea152ece33b45fb945f8daca5932f15d60da254b5dfd6edfaf51"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/finish_checkpoint.py",
+      "sha256": "1c44ae1e9cb6998dd46fdd9c90f892c1c7f36a47f8009c9f8b3dbf300018f5ff"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/closure-verification.json",
+      "sha256": "083b224ff7e0da33145e52d3e1b355e8380a6685b56c4e843a387dc3cd8d16d8"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/tests-final.log",
+      "sha256": "898b6528c5fec88502e88436abbdd219e5f253c2fd6c9c127a525ee365ad16b5"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/node-tests-final.log",
+      "sha256": "ba6cb7decbaa86abfbcc604452a4fa9a9477611ef9ad1b10ca2eeb33f7ea19b4"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/reader-build-final.log",
+      "sha256": "8ca828e2c895252623982ee966a6a72bbc7a5566f984a11a4d1157a8c821b44f"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/regenerate.py",
+      "sha256": "a1348111893ef4cc3ce72efa8f8c4dd3d35a3027dd2022945f004bf3b273cc36"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/reports-final.json",
+      "sha256": "63d41e1c7ffe86f602d89696383f0c1f3756fa32e4463a120d5bd1e8fc0114bf"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/miri-before-count-wording.json",
+      "sha256": "260413e4bcc6ecf02dba3f7d8199c7dde7c6ad83069afad917bcd657fd419fc9"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/miri-final-snapshot.json",
+      "sha256": "c3721eb5fe0a8ecc699cdfef03ded68ae1f684ef2508f80e2da7571a0c3e8b15"
+    },
+    {
+      "path": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/research-work/Ford2002-130-2026-10-04/roadmap-final-snapshot.json",
+      "sha256": "3921050f3abdfac2188b9d19d18c594e49703007cbcc175bd0ff87ac996686b5"
+    }
+  ],
+  "validation": {
+    "all39tables_exact_trial_production": true,
+    "unchanged_tables": 35,
+    "all_old_rows_retained_exact": true,
+    "all_prior_Ford_readings_exact": true,
+    "identity_memberships_and_decisions_exact": true,
+    "only_existing_cluster_text_and_media_counts_changed": true,
+    "manifest_replay": "Three manifests in trial and production, zero changes",
+    "python_tests_passed": 427,
+    "node_tests_passed": 57,
+    "total_tests_passed": 484,
+    "reader_audit_checks": "7/7",
+    "all_text_rows_verified": 2475,
+    "all_media_assignments_verified": 2257,
+    "all_local_image_hashes_verified": 1346,
+    "all_capture_hashes_and_work_assignments_verified": 97,
+    "all_identity_memberships_and_counts_verified": 1904,
+    "all_holdings_appearances_locators_text_hashes_statuses_verified": true,
+    "all64new_quotation_units_present_and_checked": true,
+    "reported_Segal_rows_explicitly_indirect": 8,
+    "full_source_pages_actually_viewed": 10,
+    "enlarged_controls_actually_viewed": 7,
+    "pixel_recipes_verified": 25,
+    "original249cases_members_and_histories_exact": true,
+    "new_case_attempts": 0,
+    "prior_miri_requests_retained": true,
+    "new_acquisition_requests": 0,
+    "reports_regenerated": 7,
+    "reader_built_after_both_test_suites": true,
+    "live_runtime": "Local build only; no deployment/server restart"
+  },
+  "next_actions": [
+    "Separately scope/capture source40quoted MIT17/24 and LouvreAO1177; no numeric-only identity match.",
+    "Capture separately distinguished DC37(R) appendix and other manuscript comparisons; remaining sourcewide lexical/claims/reference inventory still partial.",
+    "Then Gordon G final pass and held Morgenstern/Levene residuals; remaining216publicationcases and exactKelseyfieldnumber bridge.",
+    "Waterman ComputerUse session remains stopped by URL guard; no browserretry/workaround."
+  ],
+  "protected_payloads": "Protected source expression/reading text/PDF/pixels/manifests remain private outsideGit. Git retains content-free counts/bibliography/hash receipts.",
+  "preparatory_diagnostics": "Three draft carons corrected against enlarged source controls before ingestion; all original copies retained. Read-only schema queries had field-name mismatches; corrected queries made no corpus writes. Rehearsal parser rejected wrong database flag before writes; proofreading rejected hash contracts, and document assessment rejected absolute evidence path. All diagnostics/drafts/priortrial retained and final rehearsal renewed from exact baseline; no production writes until complete passing verification. Source data never altered to satisfy checks. Initial nonexistent Node glob did not execute any tests; correct recorded CJS suite used for final validation.",
+  "concurrent_work_note": "Claude Code completed and locally committed DISC-004 market-ledger/monitor during this session; no corpus changes. Its roadmap task/claim/code/tests are retained from91d5bd0. Research reader rebuild uses the now-committed builder; no uncommitted other-agent work claimed.",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0130_Ford2002_lexical_source_pass_verified.json",
+    "sha256": "f8442038b6df48d3a0dafcd14ce7cc13d5ed83b7b36ac72024ab77c5afb402a5"
+  },
+  "closed_at": "2026-10-04T06:31:58+00:00",
+  "private_initial_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0130_Ford2002_lexical_source_pass.json",
+    "sha256": "9dae7ca12167120788fc8be58ae890b487d519255fa05eb712d1c448c6d0ef97"
+  }
+}
