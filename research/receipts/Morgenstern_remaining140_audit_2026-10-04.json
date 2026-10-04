@@ -1,0 +1,832 @@
+{
+  "schema_version": 1,
+  "checkpoint": 140,
+  "created_at": "2026-10-04T11:57:10+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "81e0d43fe1f1b3545771be21df57e2f43cd28472e563f940fb91d6ef6731e636",
+  "corpus_after": "f2e33d9d5618ab6d4bbefcb912fd827a23b1d7aa1d825e97db8c925b3cfcfff2",
+  "table_changes": {
+    "objects": 2,
+    "appearances": 20,
+    "appearance_object_links": 20,
+    "texts": 33,
+    "media": 22,
+    "publication_assessments": 20,
+    "text_proofreading_reviews": 33,
+    "document_assessments": 1
+  },
+  "new_text_rows": 33,
+  "new_checked_readings": 33,
+  "new_partial_readings": 0,
+  "new_appearances": 20,
+  "new_publication_assessments": 20,
+  "new_document_assessments": 1,
+  "new_sources": 0,
+  "new_objects": 2,
+  "new_media": 22,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1910,
+  "total_text_rows": 2556,
+  "total_reading_rows": 1810,
+  "reading_status_counts": {
+    "reading_text_checked": 1750,
+    "unreviewed": 1,
+    "partial_review": 59
+  },
+  "total_media": 2308,
+  "total_captures": 102,
+  "total_searchable_context_copies": 46,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 38,
+  "new_acquisition_requests": 3,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 91,
+    "sources_with_document_assessments": 85,
+    "sources_with_complete_documents": 76,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 73,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "scope": "Checkpoint140:33 separately checked bounded Morgenstern2007 native/English comparative quotation rows on17scoped subjects,22full source-page controls,20appearances/publication assessments including3explicit original bibliography pointers. Two publication-scoped candidates have no institutional accession/current-custody assertion; all prior editions/main pair and identity memberships retained. AaronB differing1980/1986citation reports retained; one earlier bibliography review explicitly superseded with its complete basis plus additional source. Three original-edition acquisition requests for Miri; sourcewide earlier-reading table/lexical/variant/nonbowl/general/interpretive/corrected-richtext work remains partial. No clay/original cited-edition verification or whole-case completion.",
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Morgenstern_remaining140_readings_2026-10-04.jsonl",
+      "sha256": "234af64eb1bd4118eb4bca8269fb730f6646b840948fdf2d87ec3aa8261c1509"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Morgenstern_remaining140_publications_2026-10-04.json",
+      "sha256": "f1db965b9866c7d2bdb29b5716bb3fbd071bc5384ccb32bc7f44e24497eac007"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Morgenstern_remaining140_proofreading_2026-10-04.json",
+      "sha256": "250825b39feb8cb9f267a08b61b8ce109f7f0ce0c43d56d2c6e9b230c733f8b5"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Morgenstern_remaining140_documents_2026-10-04.json",
+      "sha256": "1d915a3065d0a04a6ecfa5dc2455d364d214dc3c7b89f6bb6bcd2ddf37331467"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/source-evidence.json",
+    "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/campaign_case_progress_checkpoint140.json",
+    "sha256": "5cc9f4019a871107207646a640dcd20ae50366d6f90c237d0e3cabe19ea336af"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/held_pdf_inventory_checkpoint140.json",
+    "sha256": "f6bf40f86ac6b432df8c508a0d425a760bf1a5f4486db7e63d7abce29ee7455a"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/non_pdf_holdings_checkpoint140.json",
+    "sha256": "cec91561b7d356856b84e343953fb0af2fb3c7e5d01cf38d5549abd9f2834269"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_texts_verified": 2556,
+    "all_media_verified": 2308,
+    "all_local_image_hashes_verified": 1397,
+    "all_capture_hashes_and_assignments_verified": 102,
+    "all_sources_verified": 981,
+    "all_identity_memberships_and_counts_verified": 1910,
+    "all46contexts_exact": true,
+    "all_holdings_capture_appearance_locator_text_hashes_verified": true,
+    "all31nonPDFcaptures_including6unlinked_verified": true,
+    "all_prior139_receipt_artifact_hashes_exact": true,
+    "all4manifests_trial_production_and_finalreplayzero": true,
+    "all39tables_trial_production_exact": true,
+    "all_old_rows_and_texts_retained_exact": true,
+    "frozen249_histories_and_memberships_exact": true,
+    "miri35olderrequests_and15resolved_exact_3newrequests": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "partial_sourcewide_assessments_and_quoted_scope_labels_retained": true,
+    "existing_edition_copies_and_conflicting_reports_retained": true
+  },
+  "limits": "Bounded quoted source units only, no complete cited originals or clay reading. New Hermitage1/Jeruzalmi25 candidates publication-scoped, no accession/current custody or merge. Shared three-reference quote and parallel-only pointers do not independently verify each original witness. Earlier-reading table/main lexical/variant/nonbowl/general/sourcewide fields remain partial. Frozen249audit incomplete; no reset/redemption/push/deploy/contact/purchase/Watermanretry.",
+  "diagnostics": "Default sqlite runtime URI and identifier-schema assumptions corrected read-only. Prepare syntax repaired before execution; first trial candidate succeeded but publication review transaction rolled back for missing supersession of existing AaronB target. Failed rehearsal preserved; explicit supersession retains full earlier basis/history, renewed trial/prod all39tables exact. No failed draft reached production.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/M145-control.png",
+      "sha256": "17e176efc08c6b404ef7125a28e25dd6a2abe8739907f49952108c715ac5b404"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/M145-seashore-control.png",
+      "sha256": "dc09a228a0969a125158428c18e210cb9bbb7ffc48c0cd5c75503e55a0380144"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/Mandaic-control.png",
+      "sha256": "18a9648a5449a3c2460ac4f56274951730bf64feef9122ac7d1346f9115b19e9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AARONB-NAME-NATIVE.txt",
+      "sha256": "3f3c1e4dce7e98ea03047606de662f4e9f6f06000b472df961ede90a74f546cb"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AARONB-SEAL-NATIVE.txt",
+      "sha256": "d8f7de9aaf70fb8585432d495a877638ddf3e2db0e2717a16afe97be9882b9e3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT14-NAME-NATIVE.txt",
+      "sha256": "d4fc108defe4740ae22b131feaa2ea54ddd01978ab7ef93b02f978e7c253f0b7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT2-BOW-ENGLISH.txt",
+      "sha256": "7125e5ff737c8a55c3e48e1c604f259d9da5363aeb2c441083a6d5c29e261323"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT2-BOW-NATIVE.txt",
+      "sha256": "e23ccfe438ba907d9dd54e6154fcd35c4063afa870c9ba4e1ad0d6f9f27a5b3c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT2-GOMORRAH-NATIVE.txt",
+      "sha256": "9da4d2251ff86d19b19707b1737011296f0f0f212411dfac4b1089777d587b2a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT27-BOW-ENGLISH.txt",
+      "sha256": "7125e5ff737c8a55c3e48e1c604f259d9da5363aeb2c441083a6d5c29e261323"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT27-BOW-NATIVE.txt",
+      "sha256": "e23ccfe438ba907d9dd54e6154fcd35c4063afa870c9ba4e1ad0d6f9f27a5b3c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT8-HANDS-NATIVE.txt",
+      "sha256": "e43d136e24c83fe83a390a920acc8bdd56dac827041d09630591127a04913a25"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AIT8-NAME-NATIVE.txt",
+      "sha256": "d8a7540b46456a6fa67a1cec8432143596b5319c13603f605f5b43815865fb2b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AMB13-KNIFE-ENGLISH.txt",
+      "sha256": "235ce342019f426fb7fed71bcbd5ca7d68c5bd62c43f4ff6c09d0f170dd96c85"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AMB13-KNIFE-NATIVE.txt",
+      "sha256": "8b2332b3b4f81a996916a41bc03b2d4eab5d96552b4bd706a0b719fd5e53fe6a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-AMB13-WATERS-NATIVE.txt",
+      "sha256": "a4fbf8e016d202aa4e5af9056e895bfb172ac868167ba62fce53a75118f50da5"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-BM005A-TIME-NATIVE.txt",
+      "sha256": "9f6753ff439edfa48d8e750e0e609715e2e2c0f7c9b1a16664858991fdbca0ec"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-G11-BOW-ENGLISH.txt",
+      "sha256": "7125e5ff737c8a55c3e48e1c604f259d9da5363aeb2c441083a6d5c29e261323"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-G11-BOW-NATIVE.txt",
+      "sha256": "e23ccfe438ba907d9dd54e6154fcd35c4063afa870c9ba4e1ad0d6f9f27a5b3c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-GELLERA-HANDS-ENGLISH.txt",
+      "sha256": "6f987850e06cd22c04c0e12579bb406b14103e58c5afd76b5c6f071079104ed1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-GELLERA-HANDS-NATIVE.txt",
+      "sha256": "8bcaad45090f133b76c28bd427bf22362243f6b9b72433462e8f609b8d889e1b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-GH-BRAIN-ENGLISH.txt",
+      "sha256": "ceb345b901191d5fd621c08d62fa7b26b0b38aaf7614f95691417a8d3f4d4b5b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-GH-BRAIN-NATIVE.txt",
+      "sha256": "a99f7c98b1745b463a2d12a7b37ef570f6cd98a927a3d6517e9e77ee43b34025"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-HERMITAGE1-BOUND-ENGLISH.txt",
+      "sha256": "4b16a9329b401199309eb000616673149fa87f792c039325f8d25b4576adffbb"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-HERMITAGE1-BOUND-NATIVE.txt",
+      "sha256": "a15d4bc52e3d50e90b55b9dd1cd37d620c1c8cd6a0f1e1b16d072d370f451247"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-JER25-AMULETS-ENGLISH.txt",
+      "sha256": "06541fc1cb06680db5952f58649d803490fb5860affce1d1a826dd44af869cdf"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-JER25-AMULETS-NATIVE.txt",
+      "sha256": "57d3e0e8bff1f2c8cdda2ccbf63964a537657dc681dd0d56b653a887affc13e8"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M102-NAMES-NATIVE.txt",
+      "sha256": "374f12859fbaf63c1d64ede5def4d80dc109484656c48e3d79edeb8061a5f041"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M145-SEASHORE-ENGLISH.txt",
+      "sha256": "82d1b0b10d58a29718d590a613018474203a130725c28f5910c2c92c8da88952"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M145-SEASHORE-NATIVE.txt",
+      "sha256": "d2f461b56ad8c8a2cb42023b64e0f72b1cbce79f625b5fb55de3dc51c7702129"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M145-WAIL-ENGLISH.txt",
+      "sha256": "e6df51746dca44eacfc25e45e62760b1bd4443517c299a1b8d5a702b98c69ab2"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M145-WAIL-NATIVE.txt",
+      "sha256": "a3011bc0eed755572f8b2fc30a7f1b8755be9ea9a553c692cd337332aa7c72d6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M155-ANGELS-ENGLISH.txt",
+      "sha256": "1abcb56be351fe5e31288fd1cff7395fcd35ddf57699f673c89e52178e45b1f1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M155-ANGELS-NATIVE.txt",
+      "sha256": "8a0e5ce1a189595c5ebebd2e41f23a1c7a0638103a750d6aceaa86b8f9e40efd"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-M163-UNTIL-NATIVE.txt",
+      "sha256": "2d09e5bd45a65cafbf943fb4a4d584f209e0930ee642fcb289db5b6c5c5f6265"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/TXT-IBI-CP140-MORG-VA2416-NAME-NATIVE.txt",
+      "sha256": "49c7d14cb1050d537890ed63cc0b2de771291e474479643f80c5bd308f1068ce"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/apply-progress.json",
+      "sha256": "f637ccf8a53ecb569329e89825bd78c8548bd3b3268348ebb4cd5d7d79dce8b0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/campaign_case_progress_checkpoint140.json",
+      "sha256": "5cc9f4019a871107207646a640dcd20ae50366d6f90c237d0e3cabe19ea336af"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/closure-verification.json",
+      "sha256": "e0b5e342c06d66c521ac4b59e86cb29240ce9391e3578982b0f800f9096de590"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/comparatives-control.png",
+      "sha256": "5fd35c5cdc1ad90de8e77d4751401adb25acbab98b7e32d2ca18625fe170d8c9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/copies-current.json",
+      "sha256": "b057ad082855c33ab306f07730707af727a73dfd95512eed3438bf811305f8ba"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/copies-draft.json",
+      "sha256": "ac367344c0485c5a51d92f8e83ed52618f5505e37cc8cce675ff09bf46a90071"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/crop-recipes.json",
+      "sha256": "336359b4bb36dbcc26544f63258938264372e3e929b826cfedc7d182b591aacb"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/document-assessment-before.json",
+      "sha256": "c2b9f90e5b22f7417c2c1a4ace35f7d902a34e4645c9b3368cdac95f705c5d7b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/draft-scope-corrections.json",
+      "sha256": "de86e0505f5965002399eb544646e73088af0e04e879993520d4393e43cac50b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/draft.py",
+      "sha256": "ed9410ee1df51bb3e710ee0af45c696d307047f36a13df510f26d4f28f8079e9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/editorial-policy.txt",
+      "sha256": "3b1210bbd260fb61c93bb2d550ed0be4700b2201b7059dc5dd56120949aef322"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/fingerprint-after.json",
+      "sha256": "ebe48682f59564b5902d4588b3faa384d4eae880a788258e02f77e539edbebd9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/fingerprint-before.json",
+      "sha256": "54acb86e0e82d2d33215d17f4dcbc32f2f74c25cf47643d16f3d1804fafe0ca5"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/fingerprint-trial.json",
+      "sha256": "ebe48682f59564b5902d4588b3faa384d4eae880a788258e02f77e539edbebd9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/four-manifest-final-replay.json",
+      "sha256": "9946efa4fdc74e98b00bdb660e8ce521bae4ad7d0b0130838d4f5be645524a75"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/held_pdf_inventory_checkpoint140.json",
+      "sha256": "f6bf40f86ac6b432df8c508a0d425a760bf1a5f4486db7e63d7abce29ee7455a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/hermitage-control.png",
+      "sha256": "1bd594de4991c5cfac92dc1ba54f7f316e73565ac1e73a9f536fdb70ea59ea45"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/intake.py",
+      "sha256": "c4649d8dd3aafb96d30fc41de060c4bc4aaf6b8b4e0639bc71baad6b2ae5541b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/metadata.json",
+      "sha256": "a02b975c9301c63d150cc2b532bd029cf63cf57ee33328ad2a186a4e3ab3f788"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/miri-final-snapshot.json",
+      "sha256": "130e2043d5a15898254df57df627389275aabf8b75ebc328c68b1074c22aed55"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/miri-queue-before.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/names-control.png",
+      "sha256": "570ddfaccde8986150d5a7896108dfd5f231237a8b375c0af19fae92d4d7d3b7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/node-tests-final.log",
+      "sha256": "9e427e91c1ed7fc0e187e610921e5ff1bba755f8bb081bea80308ca01cc04d1d"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/non_pdf_holdings_checkpoint140.json",
+      "sha256": "cec91561b7d356856b84e343953fb0af2fb3c7e5d01cf38d5549abd9f2834269"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/original-acquisition-route-observations.json",
+      "sha256": "c80a5812832fa30df5f4274a78c77825e4d2b3052aac10e88c5d251d362e4607"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-01.png",
+      "sha256": "121231b9a908b003011d49fde747ba94016f662decc8741ddca39f2d2d4eb6ac"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-02.png",
+      "sha256": "103a4a6af4c4538bfbccf1a2115b5bae6962e636577f43bbeb69e775ee378856"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-03.png",
+      "sha256": "7dcbf75e73d19d15a051d00557fa055ac9937249f933dee9d86d883b3fb542b7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-04.png",
+      "sha256": "46a7a068714659c92c344560faf91698233e9dd217df700609ff8830e7c0502c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-05.png",
+      "sha256": "8e99376fbd3e6e629f37628e6fe5fad12df8d6c183e04320098e4766e5127080"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-06.png",
+      "sha256": "4ffa005a7db2c780961525e6b287b610d6d8c773789188ab67a4a07b5001ae06"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-07.png",
+      "sha256": "7edfb8fc117f2afa92073914057f7d9d825d2654bd652a2f5cfec995f3177038"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-08.png",
+      "sha256": "c3fe9acdd4619e3c25e4cac978158246218cb5e5000ea7b5c5a1943736e9ae3e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-09.png",
+      "sha256": "a5bc7567496521b00ab4f4b080cdf5d380a0002dd3ea03b376e188f7477d5735"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-10.png",
+      "sha256": "07fcc3a3af5919fdbfea83532b3dbaa855b59daa9ca4ca4e0d0c0d67a01fe8db"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-11.png",
+      "sha256": "10b6748f308f5c8918682bc65fa5bd5d58ef732d0f45fbb66a1134e76ab2d077"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-12.png",
+      "sha256": "06aaf00f224fe4e341fa2190b062b8f6a99941b75c7b3fc5bbbb935068f368d5"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-13.png",
+      "sha256": "bd7df0db61043fe9f2fdec0302ed3e17c58068936f3702c2a0afd8fb0610c7f6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-14.png",
+      "sha256": "d3c179c6173554cc5e6701a228ff01ab2567d412d1d34b1459f9301d3e7bedf6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-15.png",
+      "sha256": "40c572725673bc2c14321b50c713388ef82b7f8f5529450af5b36a42a1b2052a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-16.png",
+      "sha256": "00330fc94d20f5ac9593e2aaeef3455330abc3d8b8dd572e253ccf5b91161243"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-17.png",
+      "sha256": "68aeac4a75ecca9ad9d0fbcfddbbec5e6fb6d2291966475bcf0b81384762553c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-18.png",
+      "sha256": "76d55d84d6dec241a1c221acdae0e67f57bf8cf8ecc4aee24e75543333fa078e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-19.png",
+      "sha256": "92d0288f8d3cfde5423e0b795e87be41277893c68b392049acb73a6cd1bdbdb3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-20.png",
+      "sha256": "5b6f6d2bf4185d0bb8b902c85d7ec837588bd1da91563b5a2a648a09c790d37e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-21.png",
+      "sha256": "8a886af2194a02e246810221c73232a94e503259afdf2ccd7d7da6f7f3a29679"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-22.png",
+      "sha256": "97082c7165481d88efbdf91a40f9d44fb78ff1488d44ab41c1e685adc550d79c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-23.png",
+      "sha256": "51bfb0605876e6d70356913e8d915c642279b2927f792a6cef4f5b18ec336375"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/page-recipes.json",
+      "sha256": "0c4f5393189f86c09b429e5022d4c23d678554b3df23fa7bfdceae29a3276d56"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/pixel-verification.json",
+      "sha256": "453a4c81ac0983e2ae13fe6749394c3ff5ea2f262b0c0c2976097e11eff370c7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/pixels.py",
+      "sha256": "be2f65bb08f64163f38f4cd78d7d5ed58887fea77632f33fe3fe30e07e42fc23"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/prepare.py",
+      "sha256": "dc1f39642d3f455051830d325133256d09c1d7f26945e11642eb7c47d5792e74"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/production-verification.json",
+      "sha256": "fb6b01168e94ad7cfde051185d3cec1907cb882b2d94a9a84f5d363b2b3a4dc1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/publication-supersession-snapshots.json",
+      "sha256": "72cb48930deb05fc3c9f3c7bdd9886a92bc6527818abf33dd906863a04d33ac9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/reader-build-final.log",
+      "sha256": "f3f991a9f774dd6b971ab670618b5ebeff7f783a4ef2d93c24d04aa4fca6f138"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/reading-extent-inventory.json",
+      "sha256": "454e05a35db982ae62b7283dcb3245a0cc8a1f3a5e1ca01d8c009427c28b76ad"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/record.py",
+      "sha256": "4eb834421afcc4d0cea4e615c8d4a9eccadced1429bb8acd37e70e6b3287af08"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/regenerate.py",
+      "sha256": "08085d05ed1c9fe2a12ca46aecb60c4ebcb24f9e6869086b0ff14d551aa6fc52"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/rehearsal-before-publication-supersession/Morgenstern_remaining140_publications_2026-10-04.json",
+      "sha256": "d3dec9d7a443f201c14d5e27a53c35475b16bc2d4947613fa16b01fa66951fd6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/rehearsal-before-publication-supersession/apply-progress.json",
+      "sha256": "31dbf4d940a175757a132c79f1a13186d43ef02febcf3c8eecd2ffa32601ac93"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/rehearsal-before-publication-supersession/metadata.json",
+      "sha256": "04ffdd4d0c24a2f33ae2155e13ea1ed06303bf6c9f899f8a7c237b99890c1cf1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AARONB-NAME-NATIVE-desktop.png",
+      "sha256": "871e91c7c4ccf6facddb13c791cce87dc512b26441ec5157011846eddc1cadff"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AARONB-NAME-NATIVE-mobile.png",
+      "sha256": "227af6638892ac2a78fdb470160732fe12a11fb26ac7bd48a3238cf51d6337ed"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AARONB-SEAL-NATIVE-desktop.png",
+      "sha256": "871e91c7c4ccf6facddb13c791cce87dc512b26441ec5157011846eddc1cadff"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AARONB-SEAL-NATIVE-mobile.png",
+      "sha256": "227af6638892ac2a78fdb470160732fe12a11fb26ac7bd48a3238cf51d6337ed"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT14-NAME-NATIVE-desktop.png",
+      "sha256": "ad3b987837250deed7d8d600ed00119fbe91534ff77cc3d5c1e910466039256b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT14-NAME-NATIVE-mobile.png",
+      "sha256": "d08b155ff86debbae55ce60f4908324a0baf824d88eb225bc6ae4acc19c74114"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT2-BOW-ENGLISH-desktop.png",
+      "sha256": "be0b3ab36fc624a4c3358506d78133420370765f27ee607091a221fd51d2d60f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT2-BOW-ENGLISH-mobile.png",
+      "sha256": "7fa2a76d0aa6ee0aacc8cd2c35e2490363a9c9a892c41fb9d702a3f7e81c121f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT2-BOW-NATIVE-desktop.png",
+      "sha256": "c6a3b5428e9a509c0dc17c66b06562bfc3c9c56dcbff42dca7fde439a782dc20"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT2-BOW-NATIVE-mobile.png",
+      "sha256": "d1900654d92464844498da830284ff0d1055b7c979e3ef2b0278205917067b67"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT2-GOMORRAH-NATIVE-desktop.png",
+      "sha256": "3823ca52b873b5cd1cf5e815f113683192b8fa96b0ed3a96194b80bd4a21b73f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT2-GOMORRAH-NATIVE-mobile.png",
+      "sha256": "1f708a2c39f9c182e6cfe5f84bb921bf0f6653979d0551d5e92badaebef67a63"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT27-BOW-ENGLISH-desktop.png",
+      "sha256": "ab4f4280e995ce25f173038fd50bba6756cabcaeec316efbf8855673455b97d0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT27-BOW-ENGLISH-mobile.png",
+      "sha256": "714804ff58913eaf16b3a9067c9aad9157a5baa71bffbf45cf2225457e3ed1c1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT27-BOW-NATIVE-desktop.png",
+      "sha256": "43cdb8ffaa42f776e1b6487af21bb5fd630094e8603f3e1736f1f73d21271ef8"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT27-BOW-NATIVE-mobile.png",
+      "sha256": "8eaae75117f735007ec8b063bb787be5eb9d868d1f648c1d32fcb72b61aedb88"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT8-HANDS-NATIVE-desktop.png",
+      "sha256": "26b14e66cd49a786f5ef9ab30821017e30cc34a678fa19613f7510ce38faa19a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT8-HANDS-NATIVE-mobile.png",
+      "sha256": "194fad46e22f5f0870eb42966a76635b3527ea41bfab778d82ea8a345ad1f486"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT8-NAME-NATIVE-desktop.png",
+      "sha256": "26b14e66cd49a786f5ef9ab30821017e30cc34a678fa19613f7510ce38faa19a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AIT8-NAME-NATIVE-mobile.png",
+      "sha256": "194fad46e22f5f0870eb42966a76635b3527ea41bfab778d82ea8a345ad1f486"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AMB13-KNIFE-ENGLISH-desktop.png",
+      "sha256": "f4a5da6ef03ae8e6fc6b2a9323103378d43bf4ae6e04b2d5b7057b58a56bd956"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AMB13-KNIFE-ENGLISH-mobile.png",
+      "sha256": "f14c4a46d7032f3a1908f340edf7a5b49807768974074dc2a6601f62339f7d8b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AMB13-KNIFE-NATIVE-desktop.png",
+      "sha256": "f4a5da6ef03ae8e6fc6b2a9323103378d43bf4ae6e04b2d5b7057b58a56bd956"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AMB13-KNIFE-NATIVE-mobile.png",
+      "sha256": "f14c4a46d7032f3a1908f340edf7a5b49807768974074dc2a6601f62339f7d8b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AMB13-WATERS-NATIVE-desktop.png",
+      "sha256": "f4a5da6ef03ae8e6fc6b2a9323103378d43bf4ae6e04b2d5b7057b58a56bd956"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-AMB13-WATERS-NATIVE-mobile.png",
+      "sha256": "f14c4a46d7032f3a1908f340edf7a5b49807768974074dc2a6601f62339f7d8b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-BM005A-TIME-NATIVE-desktop.png",
+      "sha256": "1f94e5b93c0282b70b13a21612408939582ebdd1383a9fffb6d47c48af5b9535"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-BM005A-TIME-NATIVE-mobile.png",
+      "sha256": "ed896d16ad9a0bb255f5c68cfd485bf53474bb329819cded67f368171d461c50"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-G11-BOW-ENGLISH-desktop.png",
+      "sha256": "b93b251d12f6079515ad66313b88181436816c426f187ac3f85e39fb192e3281"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-G11-BOW-ENGLISH-mobile.png",
+      "sha256": "d17137e40fdbb1b6fc2019bc0bdd8646f3a242299da5fa92fea3eabf94fb6470"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-G11-BOW-NATIVE-desktop.png",
+      "sha256": "a47ff119fadecb825b860a8183d48200bdd7faa3dbafa5e6505b547bf1f32f04"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-G11-BOW-NATIVE-mobile.png",
+      "sha256": "8e4b18b571aea32b017006d49bb3d8b9041ca487179e563483b35b794246d6c0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GELLERA-HANDS-ENGLISH-desktop.png",
+      "sha256": "deab3eb7c414442cc7bad2a20511fd15141d7725396ae50ac4681bdd3b87efb3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GELLERA-HANDS-ENGLISH-mobile.png",
+      "sha256": "27f480490d5cd03ea7167c738cd0c5a3692b92c818ce6772bb755fe085259fda"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GELLERA-HANDS-NATIVE-desktop.png",
+      "sha256": "deab3eb7c414442cc7bad2a20511fd15141d7725396ae50ac4681bdd3b87efb3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GELLERA-HANDS-NATIVE-mobile.png",
+      "sha256": "27f480490d5cd03ea7167c738cd0c5a3692b92c818ce6772bb755fe085259fda"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GH-BRAIN-ENGLISH-desktop.png",
+      "sha256": "377c5ce7d283657a9e6f02a8e30a5229d096d5318e818a4990ee87485c402352"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GH-BRAIN-ENGLISH-mobile.png",
+      "sha256": "3d36c30a681813175b831c6cde5058638065ff3a5942f6b0ffc88cf446c008fe"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GH-BRAIN-NATIVE-desktop.png",
+      "sha256": "7b4f7607edd96dd48039cae14c30f1e0b260e896e1e7a7bfc346183ecb9cd462"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-GH-BRAIN-NATIVE-mobile.png",
+      "sha256": "a6e8e6900cdf2c7c48401eb236c1346bbf7f579779f28e7efd6e599e3eff77f7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-HERMITAGE1-BOUND-ENGLISH-desktop.png",
+      "sha256": "ad342dea06994bc3255d5ba44c8bb44708a08cade8d43c5f814aebcbecd693b5"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-HERMITAGE1-BOUND-ENGLISH-mobile.png",
+      "sha256": "703211d9f50b8a916856fef2a57abc5c2947d48e74eca061990173a6066a89bd"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-HERMITAGE1-BOUND-NATIVE-desktop.png",
+      "sha256": "ad342dea06994bc3255d5ba44c8bb44708a08cade8d43c5f814aebcbecd693b5"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-HERMITAGE1-BOUND-NATIVE-mobile.png",
+      "sha256": "703211d9f50b8a916856fef2a57abc5c2947d48e74eca061990173a6066a89bd"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-JER25-AMULETS-ENGLISH-desktop.png",
+      "sha256": "67724eb9e6c2c3623d3b4906ebcaeab157456e1513a77168867b4535f10a8ccf"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-JER25-AMULETS-ENGLISH-mobile.png",
+      "sha256": "efd6dc4d675bc246bac2ece63ca06bd3f81c36342da2f7a2ceb069a3e0bb947e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-JER25-AMULETS-NATIVE-desktop.png",
+      "sha256": "2013a9c203a7f54ebcf6734f9f39841f94baaacbf308124f65caea7bb0f9aca1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-JER25-AMULETS-NATIVE-mobile.png",
+      "sha256": "efd6dc4d675bc246bac2ece63ca06bd3f81c36342da2f7a2ceb069a3e0bb947e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M102-NAMES-NATIVE-desktop.png",
+      "sha256": "a29bbdc7613c1f9622cb3dff84b36e76c0bd37b64c97844f7b2584db68a378b6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M102-NAMES-NATIVE-mobile.png",
+      "sha256": "7e256c2aeac97151405267d83276612b0a270e77794c6634a9d8b97fc10176f1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-SEASHORE-ENGLISH-desktop.png",
+      "sha256": "17eeb0266f0ab44a2167dca30c4bf74b92f01c7a9238c8aeddb76122c3b84d2a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-SEASHORE-ENGLISH-mobile.png",
+      "sha256": "f60366dbe4b2b23b70ca15962f6edc2bba513e270642ee2d7c0cbc5cbe3e5c12"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-SEASHORE-NATIVE-desktop.png",
+      "sha256": "52d72b9efd8327c02ec792e8cf951b6287b79d2e94e987f3ab507a8e81b04dc1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-SEASHORE-NATIVE-mobile.png",
+      "sha256": "c2e8c6c7aeeee58bd7c87e7b1f253500b5145282fa8e80fa29cec39775b80841"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-WAIL-ENGLISH-desktop.png",
+      "sha256": "d96047a4aaf2ce23b8a458fb196211803eb0e52664ecb7d40e33f2b90f8d955c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-WAIL-ENGLISH-mobile.png",
+      "sha256": "f131434bdf08341494a3d0ce9188ed04c0dd40706e2260cd391e310700e0d828"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-WAIL-NATIVE-desktop.png",
+      "sha256": "9b4d758c1ebe708b8f31cc5629926fb58ea27ac86ca6b9f4a3bed112395cc75c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M145-WAIL-NATIVE-mobile.png",
+      "sha256": "e58732dc3e741c268a408ef9230d67d3c97c5e6db45647c38a1aca95991e01a8"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M155-ANGELS-ENGLISH-desktop.png",
+      "sha256": "efcdb54cbe8726b09925a92684fca405d5d274ca4b157d034422c28542e5ca02"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M155-ANGELS-ENGLISH-mobile.png",
+      "sha256": "b3b437b0c9183813ebc60329b9a35460aca667910a140e504f148661cd0b4ec7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M155-ANGELS-NATIVE-desktop.png",
+      "sha256": "5535ad977c9832a4739c4d3130d06891c5bb718b8b2dd342f3bfe0fd21d0caec"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M155-ANGELS-NATIVE-mobile.png",
+      "sha256": "46b0cbf1e0f69fb99bcf9938a657917246cf07933c0374b7aa9d43da43fb4b4b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M163-UNTIL-NATIVE-desktop.png",
+      "sha256": "25287438d58102e4292f7872749f6c0f6c483ee9862c523632aa50d4066a5393"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-M163-UNTIL-NATIVE-mobile.png",
+      "sha256": "b62c56c41d7ab5a75abaffdffc42952b0f7ba01f3cdb151615f79bc30d7a9660"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-VA2416-NAME-NATIVE-desktop.png",
+      "sha256": "317966bdf0ffebffef1101acd77f970a3d5189eee6014a382cc3c78a41d2ac07"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/MORG-VA2416-NAME-NATIVE-mobile.png",
+      "sha256": "21c4aff5330f94605928e460dfc68f2836f01f9f95e147e8695397590eaf8e3c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render/render-verification.json",
+      "sha256": "e6965812cd9dc9955c7ff2a2477fa470398a9e9d0178dad32f85eb875b33b29f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render-targets.json",
+      "sha256": "843ec44f19bc2ea16937491cf007fb7c411cbfe2b3ee03000e2a3f11db23e40f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/render_check.cjs",
+      "sha256": "1fff5430ac457d31e45be5641c7b05770d59f8ff370f2554a61940eb0b84caa3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/reports-final.json",
+      "sha256": "6bad9259af33f68650f8c376656edfa22dfca06173807eadcb2414e3d91c6c6a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/roadmap-before.json",
+      "sha256": "ce99a3d8565cb66fe5259cb0934fa86cbfdaf665eaaa17ede759df925615c32f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/roadmap-final-snapshot.json",
+      "sha256": "5b95d52c7fdec3a6ea96bdef35eafb65b908d40d96fa75462c97c6ebb78e2be0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/shared-bow-control.png",
+      "sha256": "718723216c2add88ee81cf3114606b5ca931c457b2ad0812088b495c88fa0889"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/source-evidence.json",
+      "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/tests-final.log",
+      "sha256": "5cbddfd39e912b17abd76dfa566392a63359384c070c3e71eb31817371e6ab05"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/trial-verification.json",
+      "sha256": "fb6b01168e94ad7cfde051185d3cec1907cb882b2d94a9a84f5d363b2b3a4dc1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/verify_close.py",
+      "sha256": "1e94ec75b8670e5d4923f6c1c4d39f95b4747f3834f6609f1498bdce3ef957b9"
+    }
+  ],
+  "closed_at": "2026-10-04T12:02:10+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0140_Morgenstern2007_comparative_quotations_verified.json",
+    "sha256": "70472d9d56704b54f19c9d2a42542ecd924a70fbe4758d334f516984f6eff19a"
+  }
+}

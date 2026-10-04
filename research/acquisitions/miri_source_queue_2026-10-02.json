@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T09:06:57+00:00",
+  "updated_at": "2026-10-04T11:57:10+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1212,6 +1212,51 @@
         "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
       },
       "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
+    },
+    {
+      "source_id": "SRC-3EBD27903913",
+      "short_label": "Borisov1969Hermitage",
+      "citation": "Borisov, A. Y. Epigraphic Notes: Four Aramaic Magic Bowls in the Hermitage Museum [Russian]. Epigraphika Vostoka19(1969):3–13.",
+      "requirement": "Complete original3–13 with illustrations and exact bowl numbering; immediate p7/HermitageBowl1:8 as cited Morgenstern2007p13n30. Do not infer a physical Hermitage accession from number1.",
+      "priority": 2,
+      "status": "Original body not located through inspected lawful routes; library acquisition requested",
+      "metadata_url": "https://library.omsu.ru/cgi-bin/irbis64r/cgiirbis_64.exe?C21COM=F&I21DBN=IBIS_PRINT&LNG=&P21DBN=IBIS&S21FMT=infow_wh_print&Z21MFN=321820",
+      "checked_at": "2026-10-04T11:57:10+00:00",
+      "evidence": {
+        "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/source-evidence.json",
+        "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
+      },
+      "previous_access_evidence": "Actual held Morgenstern2007 references/pages checked; exact-title publisher/institution searches found bibliography/catalogue metadata, no eligible original body. Search limits and URLs retained in private route observations; not a blanket inaccessible/unpublished finding. No purchase/login/contact/bypass."
+    },
+    {
+      "source_id": "SRC-68826E462E63",
+      "short_label": "Geller1980FourBowls",
+      "citation": "Geller, M. J. Four Aramaic Incantation Bowls. In The Bible World: Essays in Honor of Cyrus H. Gordon,47–60. NewYork:Ktav,1980.",
+      "requirement": "Complete original47–60 and images, especially BowlA:12/p49. Morgenstern2007p15n41 names this article47–60 plusp108 for AaronB, whilep21n79 explicitly cites a different1986articlep108. Inspect originals to resolve the reference; keep reported citations separate.",
+      "priority": 2,
+      "status": "Original body not located through inspected lawful routes; library acquisition requested",
+      "metadata_url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/more-on-puzzling-words-and-spellings-in-aramaic-incantation-bowls-and-related-texts/DDF3CDC002A0E86A5B56C52496E11847",
+      "checked_at": "2026-10-04T11:57:10+00:00",
+      "evidence": {
+        "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/source-evidence.json",
+        "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
+      },
+      "previous_access_evidence": "Actual held Morgenstern2007 references/pages checked; exact-title publisher/institution searches found bibliography/catalogue metadata, no eligible original body. Search limits and URLs retained in private route observations; not a blanket inaccessible/unpublished finding. No purchase/login/contact/bypass."
+    },
+    {
+      "source_id": "SRC-202A5D83B21F",
+      "short_label": "Geller1986EightBowls",
+      "citation": "Geller, M. J. Eight Incantation Bowls. Orientalia Lovaniensia Periodica17(1986):101–117.",
+      "requirement": "Complete original101–117 with photographs/handcopies; immediate AaronB p108/lines1and7. Morgenstern2007p21n79 explicitly cites1986p108, whilep15n41 gives1980FourBowls/p108. Original designation/line/photograph controls needed before source-pointer repair.",
+      "priority": 2,
+      "status": "Original body not located through inspected lawful routes; library acquisition requested",
+      "metadata_url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/more-on-puzzling-words-and-spellings-in-aramaic-incantation-bowls-and-related-texts/DDF3CDC002A0E86A5B56C52496E11847",
+      "checked_at": "2026-10-04T11:57:10+00:00",
+      "evidence": {
+        "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/source-evidence.json",
+        "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
+      },
+      "previous_access_evidence": "Actual held Morgenstern2007 references/pages checked; exact-title publisher/institution searches found bibliography/catalogue metadata, no eligible original body. Search limits and URLs retained in private route observations; not a blanket inaccessible/unpublished finding. No purchase/login/contact/bypass."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1225,8 +1270,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/nli-routes57-2026-10-03/acquisition-queue-before.json",
-    "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
+    "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/miri-queue-before.json",
+    "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1378,5 +1423,16 @@
   "checkpoint135_source_extraction": {
     "path": "data/private/research-work/Ford2002-135-2026-10-04/extraction-index.json",
     "sha256": "5a8504aa44cfc54413fa3ded317cddf16477ebb6a9faf113eca8027f87cff266"
+  },
+  "checkpoint140_comparative_capture": {
+    "receipt": "research/receipts/Morgenstern_remaining140_audit_2026-10-04.json",
+    "source_id": "SRC-1A922C3F041F",
+    "checked_bounded_rows": 33,
+    "sourcewide_extraction": "partial",
+    "new_original_requests": 3,
+    "inventory": {
+      "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/reading-extent-inventory.json",
+      "sha256": "454e05a35db982ae62b7283dcb3245a0cc8a1f3a5e1ca01d8c009427c28b76ad"
+    }
   }
 }

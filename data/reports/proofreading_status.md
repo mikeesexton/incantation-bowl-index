@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1717 | 59 | 1 | 1777 | 96.6% |
+| Edition text (translation, transcription, transliteration) | 1750 | 59 | 1 | 1810 | 96.7% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1719 | 66 | 738 | 2523 | 68.1% |
+| All stored text | 1752 | 66 | 738 | 2556 | 68.5% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 844 | 41 | 1 | 886 |
-| transcription | 630 | 12 | 0 | 642 |
+| translation | 855 | 41 | 1 | 897 |
+| transcription | 652 | 12 | 0 | 664 |
 | transliteration | 243 | 6 | 0 | 249 |
 
 ## Edition text by source
@@ -30,7 +30,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jewish Love Magic: From Late Antiquity to the Middle Ages (`SRC-07B313309678`) | 11 | 0 | 0 | 11 |
 | Byzantine Period Terracotta Incantation Bowl, 400 CE–700 CE (`SRC-0AC8CA3CDF84`) | 1 | 0 | 0 | 1 |
 | Jüdisch-babylonische Zaubertexte (`SRC-0B6C0E1133EF`) | 3 | 4 | 0 | 7 |
-| The Jewish Babylonian Aramaic Magic Bowl BM 91767 Reconsidered (`SRC-1A922C3F041F`) | 2 | 0 | 0 | 2 |
+| The Jewish Babylonian Aramaic Magic Bowl BM 91767 Reconsidered (`SRC-1A922C3F041F`) | 35 | 0 | 0 | 35 |
 | Aramaic Magic Bowl: The Expulsion of Lilith (`SRC-1B966F866CDF`) | 1 | 0 | 0 | 1 |
 | Amulets and Magic Bowls: Aramaic Incantations of Late Antiquity (`SRC-1E2E21DC61BD`) | 28 | 0 | 0 | 28 |
 | ‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic (`SRC-21417589C8F9`) | 2 | 0 | 0 | 2 |
