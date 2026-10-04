@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T21:13:55.102614+00:00",
+  "updated_at": "2026-10-04T21:43:08.525330+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1694,8 +1694,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Gordon154-2026-10-04/miri-queue-before.json",
-    "sha256": "94553c26d3bd4c8dd63a6b76a5f145673a989493bed56e993a813535aced2fa9"
+    "path": "data/private/research-work/Gaps155-2026-10-04/miri-queue-before.json",
+    "sha256": "23034d6a96ac0126df301f2c381837dbd9fe6b6e96b66a5f55de915e10a13529"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2041,5 +2041,17 @@
     "miri_resolved": 21,
     "miri_remaining": 32,
     "new_requests": 0
+  },
+  "checkpoint155_publication_gap_audit": {
+    "receipt": "research/receipts/Gaps155_original_2026-10-04.json",
+    "scope": "Checkpoint155: all249frozen cases re-searched across85registeredPDFsources/88captures/84hash-distinctPDFpayloads,10795pages;341selected-pattern discoveryhits,744empty657sparse9unpaired-surrogatepages retained as limitations. Eight original fullpages inspected. Two explicit Met32.150.90/86.11.260 Gordon1941notice references linked with2fullpage assignments; no readings printed for them. Two remaining Berlin summarylocators corrected through immutable metadata ledger. Alreadyheld/checked BurberryACB10native/English/photo documented under separate Berlin catalogue record; museum bridges remain insufficient_evidence with both dimension reports retained. All249current case/source/text/media availability audited; original scope249now35linked214unlinked/zero wholecasecomplete. Miri21resolved32remaining/no new request. Existing Goal active; previous154progress.",
+    "no_duplicate_Burberry_ACB10_request": true,
+    "existing_Berlin_identity_review_ids": [
+      "DED-7F8F8C64AE43",
+      "DED-3B25173D50BF"
+    ],
+    "unresolved_object_requirements_kept_in_case_index": true,
+    "primary_Bowers_caption_only": true,
+    "new_acquisition_requests": 0
   }
 }

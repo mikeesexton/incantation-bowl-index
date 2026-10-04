@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "checkpoint": 155,
+  "created_at": "2026-10-04T21:43:08.525330+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "scope": "Checkpoint155: all249frozen cases re-searched across85registeredPDFsources/88captures/84hash-distinctPDFpayloads,10795pages;341selected-pattern discoveryhits,744empty657sparse9unpaired-surrogatepages retained as limitations. Eight original fullpages inspected. Two explicit Met32.150.90/86.11.260 Gordon1941notice references linked with2fullpage assignments; no readings printed for them. Two remaining Berlin summarylocators corrected through immutable metadata ledger. Alreadyheld/checked BurberryACB10native/English/photo documented under separate Berlin catalogue record; museum bridges remain insufficient_evidence with both dimension reports retained. All249current case/source/text/media availability audited; original scope249now35linked214unlinked/zero wholecasecomplete. Miri21resolved32remaining/no new request. Existing Goal active; previous154progress.",
+  "corpus_before": "b2f777b24fc572d0220fc0de65aa401b9e86b306a8447fa4056d8b441ff11635",
+  "corpus_after": "34d4bff498e81f40616395ed44a9decc4ad8eb88eda64d0b49adabbff72910cb",
+  "table_changes": {
+    "appearances": 2,
+    "appearance_object_links": 2,
+    "media": 2,
+    "publication_assessments": 2,
+    "texts": 0,
+    "text_metadata_corrections": 4
+  },
+  "new_text_rows": 0,
+  "new_reading_reviews": 0,
+  "new_media": 2,
+  "new_appearances": 2,
+  "new_publication_assessments": 2,
+  "new_text_metadata_corrections": 4,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "public_reuse_approvals": 0,
+  "selected_pattern_hits": 341,
+  "registered_pdf_sources_searched": 85,
+  "pdf_captures_searched": 88,
+  "unique_payloads_searched": 84,
+  "pages_searched": 10795,
+  "empty_pages": 744,
+  "sparse_pages": 657,
+  "unpaired_surrogate_pages": 9,
+  "complete_original_pages_viewed": 8,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 35,
+  "frozen_unlinked_now": 214,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "pause_requested_at_checkpoint": false,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 79,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gaps155_contexts_2026-10-04.jsonl",
+      "sha256": "b82f5eb2798043d69c1c5dcefbe5f40bb29b6e24a2f4ec84a4be3bb798b45180"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gaps155_publication_2026-10-04.json",
+      "sha256": "eee55499cb0e424a42eec1d1b5ecb8644007732f97879aeaf5f13eaf1228a511"
+    },
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/Gaps155_text_metadata_2026-10-04.json",
+      "sha256": "6dbbcfe993f896f78385bd73427ea28db42d4218894a10b94f238df39afe0494"
+    },
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/Gaps155_text_metadata_final_2026-10-04.json",
+      "sha256": "c5217d29c268c8118d664b4cbe87b7e70df4323a62848b6ecc0b15fc9c0677ce"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/source-evidence.json",
+    "sha256": "b2feb550bf61072aa59730012da6cb29083d6459e729fbfc21ee126528b3fb65"
+  },
+  "designation_sweep": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/full-held-designation-sweep.json",
+    "sha256": "d1bf038ba1053f62161fb92caf32306e03d8bf0597d5f38edfae8660d0597105"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/case-availability-audit.json",
+    "sha256": "bea831c0e7f4bc428c9311305c39e9256419590518d567413a975f869110bd0f"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/page-derivatives.json",
+    "sha256": "9eb164f104ee6f47fda336c65edccdfa79aa43c2aab5652e0fabdf504efdc1ad"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/campaign_case_progress_checkpoint155.json",
+    "sha256": "3cb6e920da5516843362c4d78771bc4d3f5f043f60af2f0d540759c4db6bc183"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/held_pdf_inventory_checkpoint155.json",
+    "sha256": "de73d56186cd7f1b5dd4ff4801d47ebf29acda0b25323bcf564fa688790944fe"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/non_pdf_holdings_checkpoint155.json",
+    "sha256": "c57023081e127e7b1f195d46efde632cd96b3619895c3100c34753ea73a7f480"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/intake-verification.json",
+    "sha256": "cb2802ce6a3d8ade92f829355608884f9d4decd301c80a612f53f5510f8b4435"
+  },
+  "totals": {
+    "texts": 3009,
+    "media": 2440,
+    "captures": 119,
+    "sources": 994,
+    "objects": 2281
+  },
+  "total_identities": 1929,
+  "validation": {
+    "python_tests": 473,
+    "node_tests": 71,
+    "total_tests": 544,
+    "reader_checks": "8/8",
+    "all39tables_exact": true,
+    "all_prior_rows_or_complete_immutable_snapshots_retained": true,
+    "all_identity_memberships_exact": true,
+    "current_three_manifest_replays_unchanged": true,
+    "initial_three_replays_verified_before_spacing_repairs": true,
+    "all_text_rows_verified": 3009,
+    "all_media_assignments_verified": 2440,
+    "all_local_image_hashes_verified": 1529,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1929,
+    "all249case_availability_units_verified": true,
+    "all249attempt_histories_retained_plus_one": true,
+    "all341discovery_hits_bound_to_actual_extracted_pages": true,
+    "all84PDF_and_text_artifact_hashes_verified": true,
+    "source_extraction_empty_sparse_surrogate_limits_verified": true,
+    "eight_original_full_pages_actually_inspected": true,
+    "final_two_notice_source_locators_visible": true,
+    "final_two_summary_locators_visible": true,
+    "existing_checked_ACB10native_English_photo_retained": true,
+    "miri21resolved32remaining_requests_exact": true,
+    "no_new_readings_or_identity_decisions": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "concurrent_DISC004_and_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "limits": "Two Met references are notices, not inscription/translation editions. No newly captured reading. Berlin museum bridges remain unresolved; separate edition record already has checked text/photo. Corrected only project locator errors. All249text-layer/availability investigations partial; zero wholecases complete, no nonpublication from nonhits. Source disagreements/old snapshots/memberships preserved; no push/deploy/purchase/outbound/reset/Waterman retry.",
+  "diagnostics": "Initial derived availability used partial rather than actual partial_review status; corrected before closure with both initial drafts retained. No reading or corpus row was changed. Initial sweep surrogate-encoding failure recovered losslessly; bounded read-only query-key/table errors recovered. Nonfatal font-cache warnings;8original page images legible and inspected. Final two locator-spacing repairs align existing claim citations after actual reader duplication seen; initial two corrections retained. Source dimension-axis clarification appended separately; no identity adjudication.",
+  "corrected_summary_rows": 2,
+  "source_evidence_addendum": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/source-evidence-addendum.json",
+    "sha256": "61f178cd6643a312d2227543b5ffd84507ae43aee5639119461733daed137ded"
+  },
+  "historical_manifests": [
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/Gaps155_text_metadata_2026-10-04.json",
+      "sha256": "6dbbcfe993f896f78385bd73427ea28db42d4218894a10b94f238df39afe0494"
+    }
+  ],
+  "current_replay_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gaps155_contexts_2026-10-04.jsonl",
+      "sha256": "b82f5eb2798043d69c1c5dcefbe5f40bb29b6e24a2f4ec84a4be3bb798b45180"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gaps155_publication_2026-10-04.json",
+      "sha256": "eee55499cb0e424a42eec1d1b5ecb8644007732f97879aeaf5f13eaf1228a511"
+    },
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/Gaps155_text_metadata_final_2026-10-04.json",
+      "sha256": "c5217d29c268c8118d664b4cbe87b7e70df4323a62848b6ecc0b15fc9c0677ce"
+    }
+  ],
+  "ui_verification": {
+    "path": "data/private/research-work/Gaps155-2026-10-04/ui-verification.json",
+    "sha256": "044ef96972dc12654215d50c59a113d6b5e20f73d51c6271446eb1b89941beab"
+  },
+  "closed_at": "2026-10-04T21:55:10.929818+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0155_publication_gap_case_audit.json",
+    "sha256": "40bad73e1a0b008bfb65bfbf78bd756d01f25b660968dfbefa0c65b21e443352"
+  }
+}
