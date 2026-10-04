@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1905 | 86 | 1 | 1992 | 95.6% |
+| Edition text (translation, transcription, transliteration) | 1953 | 98 | 1 | 2052 | 95.2% |
 | Other stored text (mostly source extracts and summaries) | 5 | 7 | 737 | 749 | 0.7% |
-| All stored text | 1910 | 93 | 738 | 2741 | 69.7% |
+| All stored text | 1958 | 105 | 738 | 2801 | 69.9% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 938 | 41 | 1 | 980 |
-| transcription | 680 | 19 | 0 | 699 |
-| transliteration | 287 | 26 | 0 | 313 |
+| translation | 968 | 41 | 1 | 1010 |
+| transcription | 689 | 24 | 0 | 713 |
+| transliteration | 296 | 33 | 0 | 329 |
 
 ## Edition text by source
 
@@ -81,7 +81,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Another Look at the Mandaic Incantation Bowl BM 91715 (`SRC-FORD2002-JANES`) | 118 | 0 | 0 | 118 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 7 | 0 | 0 | 7 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
-| Aramaic Incantation Bowls (Concluded) (`SRC-GORDON1941-CONCLUDED`) | 85 | 19 | 0 | 104 |
+| Aramaic Incantation Bowls (Concluded) (`SRC-GORDON1941-CONCLUDED`) | 133 | 31 | 0 | 164 |
 | Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 77 | 3 | 0 | 80 |
 | Aramaic Incantation Bowls (`SRC-GORDON1941-FIRST`) | 9 | 1 | 0 | 10 |
 | Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls (`SRC-IBI-CP131-MK1999-PUZZLING`) | 42 | 0 | 0 | 42 |

@@ -1,21 +1,21 @@
 # Discovery campaign status
 
-Generated: `2026-10-04T18:10:46+00:00`
+Generated: `2026-10-04T20:20:08+00:00`
 
 ## Corpus
 
-- Candidate objects: **2273**
+- Candidate objects: **2277**
 - Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'depth_cm', 'diameter_cm', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'inscription_line_count', 'language', 'layout', 'length_cm', 'neck_width_cm', 'photograph_credit', 'physical_form', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_number', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'reported_literary_dependence', 'reported_manuscript_parallel', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class', 'width_cm']**
-- Estimated distinct objects after resolved dedupe: **1921**
+- Estimated distinct objects after resolved dedupe: **1925**
 - Resolved duplicate records: **352**
 - Same source duplicate identifier groups: **2**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
-- Source appearances: **2975**
+- Source appearances: **2979**
 - Sources: **994**
 - Dedupe clusters pending: **0**
-- Objects with text: **1042**
-- Objects with translation: **642**
+- Objects with text: **1046**
+- Objects with translation: **646**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **43**
@@ -78,14 +78,14 @@ Generated: `2026-10-04T18:10:46+00:00`
 |---|---|---:|
 | object type | whole_bowl | 1531 |
 | object type | fragment | 376 |
-| object type | uncertain | 345 |
+| object type | uncertain | 349 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 7 |
-| record status | candidate | 1069 |
+| record status | candidate | 1073 |
 | record status | probable | 923 |
 | record status | confirmed | 273 |
 | record status | rejected | 8 |
-| authenticity | unassessed | 1739 |
+| authenticity | unassessed | 1743 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |

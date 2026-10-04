@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T18:09:18.204593+00:00",
+  "updated_at": "2026-10-04T20:18:52.930335+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -714,7 +714,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-01",
       "sha256": "e3ffbc62793695664d2c1fb7df6ee0af4303f75b12934b233816ee23be3a07c3",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Checkpoint151:22 new Hebrew-letter Mandaic quotations for Fitzwilliam92a and PrincetonEx4283,7checked15partial. Twelve BM91751/91776 controls renewed,8checked4partial, resolving6/10prior partials; two prior checked copies have omitted source points restored. All34current source checks hash-bound to the original concluded installment;2existing-object appearances/publication assessments,4facsimile assignments and one superseding partial document assessment. Earlier12copy snapshots retained in proofreading history. Curly/restoration/glyph and word-order refinements are project source-copy controls, not adopted conjectures. No identity, religious, person/role or public reuse adjudication. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Previous turn150 progress; Goal active",
+      "reading_audit": "Checkpoint152:60bounded original Gordon1941 concluded Hilprecht e/g/h/i quotation copies:30English and30native,48checked12partial. Four source-letter candidates/appearances/publication assessments and6complete page-image assignments; no modern HS accession bridge or newly distinct physical-bowl finding. Twelve native units have named point/bar/restoration/glyph controls still partial; Hebrew-letter Mandaic/Syriac are transliterations only. Original Nu…/Miḥrat/Šabordukt, source alternatives and anomalous internal(1) retained; separate quotations not reconstructed as full inscriptions. All old rows/identities unchanged plus4source-scoped singleton candidates. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Mike explicitly resumed the existing Goal; previous turn151 progress then paused",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": null,
@@ -752,6 +752,11 @@
           "recorded_at": "2026-10-04T18:09:18.204593+00:00",
           "prior_audit": "Checkpoint150:24 new bounded Gordon1941 concluded source copies:20native BM91751/91776 quotations,3verbatim author correction notes for GordonH/M and1proposed H14 English translation. Four existing subject appearances/publication assessments,8fullpage assignments;14new checked copies and10partial native working copies with explicit glyph/mark limitations. One prior Fitz92a English copying error corrected against enlarged scan through immutable proofreading history; earlier wrong copy retained in ledger. Existing identities and earlier scholarly editions unchanged; no scholarly adjudication. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining, no new request. Previous Goal turn149 progress; Goal active",
           "superseded_by_checkpoint": 151
+        },
+        {
+          "recorded_at": "2026-10-04T20:18:52.930335+00:00",
+          "prior_audit": "Checkpoint151:22 new Hebrew-letter Mandaic quotations for Fitzwilliam92a and PrincetonEx4283,7checked15partial. Twelve BM91751/91776 controls renewed,8checked4partial, resolving6/10prior partials; two prior checked copies have omitted source points restored. All34current source checks hash-bound to the original concluded installment;2existing-object appearances/publication assessments,4facsimile assignments and one superseding partial document assessment. Earlier12copy snapshots retained in proofreading history. Curly/restoration/glyph and word-order refinements are project source-copy controls, not adopted conjectures. No identity, religious, person/role or public reuse adjudication. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Previous turn150 progress; Goal active",
+          "superseded_by_checkpoint": 152
         }
       ],
       "reading_updates": [
@@ -793,6 +798,16 @@
           "inventory": {
             "path": "data/private/research-work/Gordon151-2026-10-04/reading-extent-inventory.json",
             "sha256": "c26b985a5ef53740c7d071f5178ce7cea870736ec17ce8b8a83708e747dd6169"
+          }
+        },
+        {
+          "checkpoint": 152,
+          "observed_at": "2026-10-04T20:18:52.930335+00:00",
+          "status": "Checkpoint152:60bounded original Gordon1941 concluded Hilprecht e/g/h/i quotation copies:30English and30native,48checked12partial. Four source-letter candidates/appearances/publication assessments and6complete page-image assignments; no modern HS accession bridge or newly distinct physical-bowl finding. Twelve native units have named point/bar/restoration/glyph controls still partial; Hebrew-letter Mandaic/Syriac are transliterations only. Original Nu…/Miḥrat/Šabordukt, source alternatives and anomalous internal(1) retained; separate quotations not reconstructed as full inscriptions. All old rows/identities unchanged plus4source-scoped singleton candidates. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Mike explicitly resumed the existing Goal; previous turn151 progress then paused",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Gordon152-2026-10-04/reading-extent-inventory.json",
+            "sha256": "0776278d4c820928134199fd9077f7a7a76df1abe0a893ff964e1ab6ea0c099a"
           }
         }
       ]
@@ -1633,8 +1648,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Gordon151-2026-10-04/miri-queue-before.json",
-    "sha256": "eba03dc0ef77d41c2cd9ad4f8c9715263b25f010eda5f9ec4cf04b7ac8bc17ec"
+    "path": "data/private/research-work/Gordon152-2026-10-04/miri-queue-before.json",
+    "sha256": "5b1e88c956599b7a46be7bee416d1685b0ab93fdb2638accb7b5cbaeed476520"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1925,6 +1940,21 @@
       "renewed_checked": 8,
       "renewed_partial": 4,
       "old_partial_resolved": 6
+    },
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint152_Gordon_Hilprecht": {
+    "receipt": "research/receipts/Gordon152_original_2026-10-04.json",
+    "source_id": "SRC-GORDON1941-CONCLUDED",
+    "counts": {
+      "new_texts": 60,
+      "new_checked": 48,
+      "new_partial": 12,
+      "native_copies": 30,
+      "English_copies": 30
     },
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
