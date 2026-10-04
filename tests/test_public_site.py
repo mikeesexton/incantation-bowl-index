@@ -121,6 +121,20 @@ class PublicSiteContentTests(unittest.TestCase):
         self.assertEqual(len(selections['image']), 4)
 
 
+class PublicSiteChartScaleTests(unittest.TestCase):
+    def test_gridlines_fall_on_round_numbers(self):
+        self.assertEqual(build.nice_scale(61), (70, 10))
+        self.assertEqual(build.nice_scale(13), (14, 2))
+        self.assertEqual(build.nice_scale(140), (140, 20))
+        self.assertEqual(build.nice_scale(0), (1, 1))
+        for peak in range(0, 500):
+            ceiling, step = build.nice_scale(peak)
+            self.assertGreaterEqual(ceiling, peak)
+            self.assertEqual(ceiling % step, 0)
+            self.assertLessEqual(ceiling // step, 7)
+            self.assertIn(int(str(step)[0]), (1, 2, 5))
+
+
 class PublicSiteSeparationTests(unittest.TestCase):
     """The public artefact and the localhost console stay separate files."""
 

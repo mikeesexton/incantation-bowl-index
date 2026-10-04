@@ -93,6 +93,22 @@ def number(value: int) -> str:
     return f"{value:,}"
 
 
+def nice_scale(peak: int, max_intervals: int = 7) -> tuple[int, int]:
+    """Axis ceiling and gridline step on round numbers (1, 2, 5 × 10ⁿ).
+
+    The old rule (peak rounded up to a multiple of five, split into five)
+    produced gridlines at 13, 26, 39 … once the 2010s passed 60.
+    """
+    peak = max(1, peak)
+    magnitude = 1
+    while True:
+        for unit in (1, 2, 5):
+            step = unit * magnitude
+            if -(-peak // step) <= max_intervals:
+                return max(step, -(-peak // step) * step), step
+        magnitude *= 10
+
+
 def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
     """Static twin of renderChart() in web/home.js."""
     current = current_year // 10 * 10
@@ -104,17 +120,18 @@ def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
         rows.append(by_decade.get(decade)
                     or {"decade": decade, "indexed": 0, "incomplete": decade == current})
 
-    ceiling = max(5, -(-max(1, *[row["indexed"] for row in rows]) // 5) * 5)
+    ceiling, tick = nice_scale(max(row["indexed"] for row in rows))
+    intervals = ceiling // tick
     width, left, right, top, baseline = 1000, 44, 16, 28, 278
     step = (width - left - right) / len(rows)
     bar_width = min(42, step * 0.65)
 
     grid = "".join(
-        f'<line x1="{left}" y1="{baseline - (baseline - top) * i / 5:.1f}" x2="984" '
-        f'y2="{baseline - (baseline - top) * i / 5:.1f}" stroke="#c9bfad" stroke-width=".7"/>'
-        f'<text x="31" y="{baseline - (baseline - top) * i / 5 + 4:.1f}" text-anchor="end">'
-        f'{ceiling * i // 5}</text>'
-        for i in range(6)
+        f'<line x1="{left}" y1="{baseline - (baseline - top) * i / intervals:.1f}" x2="984" '
+        f'y2="{baseline - (baseline - top) * i / intervals:.1f}" stroke="#c9bfad" stroke-width=".7"/>'
+        f'<text x="31" y="{baseline - (baseline - top) * i / intervals + 4:.1f}" text-anchor="end">'
+        f'{tick * i}</text>'
+        for i in range(intervals + 1)
     )
 
     label_every = max(1, -(-len(rows) // 9))
@@ -148,13 +165,15 @@ def build_chart(decades: list[dict], current_year: int) -> tuple[str, str, str]:
     # the cascade waits for. Rows are cheap in a direction phones have to spare.
     h_width, h_label, h_track, h_pitch, h_bar, h_top = 320, 40, 258, 25, 13, 24
     h_height = h_top + h_pitch * len(rows) + 8
+    # Three gridlines fit a phone: zero, a round midpoint, and the ceiling.
+    h_ticks = (0, tick * (intervals // 2), ceiling)
     h_grid = "".join(
-        f'<line x1="{h_label + 2 + h_track * i / 2:.1f}" y1="20" '
-        f'x2="{h_label + 2 + h_track * i / 2:.1f}" y2="{h_height - 8}" '
+        f'<line x1="{h_label + 2 + h_track * value / ceiling:.1f}" y1="20" '
+        f'x2="{h_label + 2 + h_track * value / ceiling:.1f}" y2="{h_height - 8}" '
         f'stroke="#3d4542" stroke-width=".7"/>'
-        f'<text x="{h_label + 2 + h_track * i / 2:.1f}" y="12" text-anchor="middle">'
-        f'{ceiling * i // 2}</text>'
-        for i in range(3)
+        f'<text x="{h_label + 2 + h_track * value / ceiling:.1f}" y="12" text-anchor="middle">'
+        f'{value}</text>'
+        for value in h_ticks
     )
     h_bars = []
     for index, row in enumerate(rows):

@@ -29,6 +29,22 @@
     }, delay);
   }
 
+  // Identity ids sort by when and how a bowl entered the index, so drawing them in
+  // id order piles each new batch (e.g. edition-only bowls) into one band of the
+  // field. A stable hash scatters them evenly; the order carries no meaning.
+  function scatterKey(id) {
+    let x = 0x811c9dc5;
+    for (let i = 0; i < id.length; i++) { x ^= id.charCodeAt(i); x = Math.imul(x, 0x01000193); }
+    x ^= x >>> 16; x = Math.imul(x, 0x85ebca6b);
+    x ^= x >>> 13; x = Math.imul(x, 0xc2b2ae35);
+    return (x ^ x >>> 16) >>> 0;
+  }
+  function scatter(identities) {
+    return identities.map(row => [scatterKey(String(row.identity_id)), row])
+      .sort((a, b) => a[0] - b[0] || (a[1].identity_id < b[1].identity_id ? -1 : 1))
+      .map(pair => pair[1]);
+  }
+
   // Visual state is independent of the data request, including when it fails.
   function updateBrowsePosition() {
     const heroButton = find(".intro-hero .intro-button");
@@ -123,12 +139,19 @@
       rows.push(byDecade.get(decade) || {decade, indexed: 0, incomplete: decade === current});
     }
     const max = Math.max(1, ...rows.map(row => row.indexed));
-    const ceiling = Math.max(5, Math.ceil(max / 5) * 5);
+    // Round gridlines (1, 2, 5 × 10ⁿ); twin of nice_scale() in build_public_site.py.
+    let tick = 1;
+    for (let magnitude = 1; ; magnitude *= 10) {
+      const unit = [1, 2, 5].find(u => Math.ceil(max / (u * magnitude)) <= 7);
+      if (unit) { tick = unit * magnitude; break; }
+    }
+    const intervals = Math.ceil(max / tick);
+    const ceiling = tick * intervals;
     const width = 1000, left = 44, right = 16, top = 28, baseline = 278;
     const step = (width - left - right) / rows.length;
     const barWidth = Math.min(42, step * .65);
-    const grid = Array.from({length: 6}, (_, i) => {
-      const value = ceiling * i / 5, y = baseline - (baseline - top) * i / 5;
+    const grid = Array.from({length: intervals + 1}, (_, i) => {
+      const value = tick * i, y = baseline - (baseline - top) * i / intervals;
       return `<line x1="${left}" y1="${y}" x2="984" y2="${y}" stroke="#c9bfad" stroke-width=".7"/><text x="31" y="${y + 4}" text-anchor="end">${value}</text>`;
     }).join("");
     const bars = rows.map((row, index) => {
@@ -161,7 +184,7 @@
       const data = await response.json();
       if (version !== request) return;
       if (!Array.isArray(data.identities) || data.identities.length !== data.identity_count) throw new Error("Invalid snapshot");
-      snapshot = data;
+      snapshot = {...data, identities: scatter(data.identities)};
       renderField(); renderChart();
       const date = new Date(data.snapshot.loaded_at).toLocaleDateString(undefined, {month: "short", day: "numeric", year: "numeric"});
       find("#intro-data-status").textContent = data.identity_count ? `Local snapshot · ${date} · counts reflect the current index` : "This snapshot has no bowl identities yet. The database is still available below.";
