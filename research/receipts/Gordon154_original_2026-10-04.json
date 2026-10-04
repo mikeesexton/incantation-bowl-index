@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "checkpoint": 154,
+  "created_at": "2026-10-04T21:13:55.102614+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "572432f5672bbe7f5a17eca78aef9bea6748f77f47ba58d9b1faccc500a6785b",
+  "corpus_after": "b2f777b24fc572d0220fc0de65aa401b9e86b306a8447fa4056d8b441ff11635",
+  "table_changes": {
+    "objects": 3,
+    "appearances": 4,
+    "appearance_object_links": 4,
+    "texts": 134,
+    "media": 7,
+    "publication_assessments": 4,
+    "text_proofreading_reviews": 134,
+    "document_assessments": 1
+  },
+  "scope": "Checkpoint154:134bounded original Gordon1941 concluded IM11113/Tell Mohammed/Louvre Ahay/Malmö25.498 quotation copies:66English and68native,92checked42partial. Three source-scoped candidate appearances plus one exact Iraq Museum designation reuse;4publication assessments and7complete page-image assignments. Forty-two native units retain named point/bar/restoration/glyph controls; Hebrew-letter Mandaic remains transliteration. Two standalone native quotations lack separately printed English counterparts; no inferred English rows. Original tentative names, split/unmatched source brackets, širš/thum and author corrective marks preserved; selected fragments not reconstructed into full inscriptions. All old rows and memberships unchanged plus3scoped singleton candidates. No independent origin/authenticity/person/religion/rights or uncertain identity decision. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Existing Goal active; previous turn153 progress",
+  "counts": {
+    "new_texts": 134,
+    "new_checked": 92,
+    "new_partial": 42,
+    "native_copies": 68,
+    "English_copies": 66
+  },
+  "new_text_rows": 134,
+  "new_checked_readings": 92,
+  "new_partial_readings": 42,
+  "new_appearances": 4,
+  "new_publication_assessments": 4,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 7,
+  "new_objects": 3,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 0,
+  "new_proofreading_reviews": 134,
+  "new_identifiers": 0,
+  "pause_requested_at_checkpoint": false,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 3009,
+  "total_media": 2438,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2281,
+  "total_identities": 1929,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 79,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gordon154_readings_2026-10-04.jsonl",
+      "sha256": "24d4ddc4c3bbe21878ec13c2a58d8313dff6dd3c62a8c85267e7605c8c718866"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gordon154_publication_2026-10-04.json",
+      "sha256": "7149c571f36387aaadc75bbc7b89a72f1001b2b2ec64a2f6a354f3f39ed4a1c8"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Gordon154_proofreading_2026-10-04.json",
+      "sha256": "f523bff506e6c4dbac040f4fb7d63de753985b67158731ccc799738cbf8b8855"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon154_documents_2026-10-04.json",
+      "sha256": "a494a351741df9a8966b638f1bfd4a7f4b8cfbedf3cd7fb16476381666398f2e"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/source-evidence.json",
+    "sha256": "c61233503450eb271b815f609cf82530e77f0266386c0b81708381a72a67176a"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/reading-extent-inventory.json",
+    "sha256": "41482e570489026baa48ba0c1bcf3fd3fab5f2fb374b557cb9433d0b48ba1eb1"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/page-derivatives.json",
+    "sha256": "ce276452d239ee4764e23c113623aed25190c3e366aee89fee1ee9194e197f21"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/campaign_case_progress_checkpoint154.json",
+    "sha256": "7bef1f978e411fe5c12e696ce41d21ec346703a03f7ef56dc1df059d24bc06c0"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/held_pdf_inventory_checkpoint154.json",
+    "sha256": "83ae8a6016ca4b437b338cfca821327af76ade6823dee3f1715726c3fc234d34"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/non_pdf_holdings_checkpoint154.json",
+    "sha256": "0805f7cdc7dbb02b4e7ec0430715f58a541eb2e1744c2e5b692c3cd6d708a6ec"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/intake-verification.json",
+    "sha256": "135091174429f68a8cb4e4543e89f09113ca0b8be37374c1c95d455d61ae0a12"
+  },
+  "validation": {
+    "python_tests": 473,
+    "node_tests": 71,
+    "total_tests": 544,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 3009,
+    "all_media_assignments_verified": 2438,
+    "all_local_image_hashes_verified": 1527,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1929,
+    "all39tables_exact": true,
+    "all_prior_rows_retained": true,
+    "all_prior_identity_memberships_exact": true,
+    "new_scoped_singletons": 3,
+    "four_current_manifest_replays_unchanged": true,
+    "all134current_copy_checks": true,
+    "checked_copies": 92,
+    "partial_copies": 42,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 7,
+    "distinct_assigned_pages": 6,
+    "actually_viewed_full_pages": 6,
+    "actually_viewed_focused_controls": 17,
+    "full_plate_photographs": 0,
+    "source_catalogue_units_inventoried": 65,
+    "concurrent_DISC004_change_preserved": true,
+    "reports_regenerated": 7
+  },
+  "catalogue_inventory": {
+    "path": "data/private/research-work/Gordon148-2026-10-04/catalogue-unit-inventory.json",
+    "sha256": "32989e5f73aaa10e9023b038f76bddd25010beb39ca41a593d2138341580867c"
+  },
+  "limits": "134bounded quotations92checked42partial; selected source fragments, not complete inscriptions/whole cases or original Mandaic-script recovery. Three scoped candidates and one exact designation reuse; other modern bridges unresolved. Source/native controls, comparative apparatus/claims, first-installment controls and216publication investigations pending; sourcewide extraction partial.",
+  "diagnostics": "All39tables exact trial/production and four replay manifests unchanged; no old row/membership changed plus3scoped candidates.17controls/6complete pages actually viewed; one off-target Louvre localization control retained without claimed resolution. Tentative English s-underpoint draft corrected before intake; native first amen point left partial. No reset/identity/rights/deploy/push/purchase/outbound message/Waterman retry.",
+  "ui_verification": {
+    "path": "data/private/research-work/Gordon154-2026-10-04/ui-verification.json",
+    "sha256": "8b52e03ad72dc73cdbd0a37234aa793e9ddf8b46a53694d3d20af940a7f96197"
+  },
+  "closed_at": "2026-10-04T21:19:03.831970+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0154_Gordon_collection_quotations.json",
+    "sha256": "86f5c0254a26128f5d99a5b0b30bcb41ed3f4eb28ef26b554a089d6c76465bb7"
+  }
+}

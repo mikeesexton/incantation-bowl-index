@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T20:53:04.892912+00:00",
+  "updated_at": "2026-10-04T21:13:55.102614+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -714,7 +714,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-01",
       "sha256": "e3ffbc62793695664d2c1fb7df6ee0af4303f75b12934b233816ee23be3a07c3",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Checkpoint153:74bounded original Gordon1941 concluded BMheading19745 and IM9726/9731/9736 source quotation copies:37English and37native,58checked16partial. One heading-scoped candidate and3exact Iraq Museum designation reuses,4appearances/publication assessments and8complete page-image assignments. BM19745 heading339/PDF2 versus91745 comparison349/PDF12 remains an open primary-match lead; no identity merge or newly distinct physical-bowl finding. Native16units have specified point/restoration/glyph controls still partial. Source HQYTi H-dot/no T-dot, K’BYBN, initial Abel apostrophe, three native yods/English Yahweh and Namoy-BT retained. Original quotations remain separate; absent lines not reconstructed. All old rows/identities exact plus1heading-scoped singleton; other-source publication assessments remain current alongside Gordon links. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Existing Goal active; previous turn152 progress Final same-font original question controls correct3project(!) copies to source(?) through77proofreading reviews, retaining all3complete initial rows/reviews;27controls viewed, including7clipped/off-target localization crops. Both initial and final document evidence retained through2assessments. Five current manifests replay unchanged; initial full proofreading batch retained as superseded evidence, never replayed to revert corrections.",
+      "reading_audit": "Checkpoint154:134bounded original Gordon1941 concluded IM11113/Tell Mohammed/Louvre Ahay/Malmö25.498 quotation copies:66English and68native,92checked42partial. Three source-scoped candidate appearances plus one exact Iraq Museum designation reuse;4publication assessments and7complete page-image assignments. Forty-two native units retain named point/bar/restoration/glyph controls; Hebrew-letter Mandaic remains transliteration. Two standalone native quotations lack separately printed English counterparts; no inferred English rows. Original tentative names, split/unmatched source brackets, širš/thum and author corrective marks preserved; selected fragments not reconstructed into full inscriptions. All old rows and memberships unchanged plus3scoped singleton candidates. No independent origin/authenticity/person/religion/rights or uncertain identity decision. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Existing Goal active; previous turn153 progress",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": null,
@@ -768,6 +768,11 @@
           "prior_audit": "Checkpoint153:74bounded original Gordon1941 concluded BMheading19745 and IM9726/9731/9736 source quotation copies:37English and37native,58checked16partial. One heading-scoped candidate and3exact Iraq Museum designation reuses,4appearances/publication assessments and8complete page-image assignments. BM19745 heading339/PDF2 versus91745 comparison349/PDF12 remains an open primary-match lead; no identity merge or newly distinct physical-bowl finding. Native16units have specified point/restoration/glyph controls still partial. Source HQYTi H-dot/no T-dot, K’BYBN, initial Abel apostrophe, three native yods/English Yahweh and Namoy-BT retained. Original quotations remain separate; absent lines not reconstructed. All old rows/identities exact plus1heading-scoped singleton; other-source publication assessments remain current alongside Gordon links. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Existing Goal active; previous turn152 progress",
           "superseded_by_checkpoint": 153,
           "reason": "Final source question-mark controls"
+        },
+        {
+          "recorded_at": "2026-10-04T21:13:55.102614+00:00",
+          "prior_audit": "Checkpoint153:74bounded original Gordon1941 concluded BMheading19745 and IM9726/9731/9736 source quotation copies:37English and37native,58checked16partial. One heading-scoped candidate and3exact Iraq Museum designation reuses,4appearances/publication assessments and8complete page-image assignments. BM19745 heading339/PDF2 versus91745 comparison349/PDF12 remains an open primary-match lead; no identity merge or newly distinct physical-bowl finding. Native16units have specified point/restoration/glyph controls still partial. Source HQYTi H-dot/no T-dot, K’BYBN, initial Abel apostrophe, three native yods/English Yahweh and Namoy-BT retained. Original quotations remain separate; absent lines not reconstructed. All old rows/identities exact plus1heading-scoped singleton; other-source publication assessments remain current alongside Gordon links. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Existing Goal active; previous turn152 progress Final same-font original question controls correct3project(!) copies to source(?) through77proofreading reviews, retaining all3complete initial rows/reviews;27controls viewed, including7clipped/off-target localization crops. Both initial and final document evidence retained through2assessments. Five current manifests replay unchanged; initial full proofreading batch retained as superseded evidence, never replayed to revert corrections.",
+          "superseded_by_checkpoint": 154
         }
       ],
       "reading_updates": [
@@ -839,6 +844,16 @@
           "inventory": {
             "path": "data/private/research-work/Gordon153-2026-10-04/reading-extent-final.json",
             "sha256": "fc7eaa6e93f80f888dd3132bdfde97a0c13db7aca4efc1502963fd61db56164f"
+          }
+        },
+        {
+          "checkpoint": 154,
+          "observed_at": "2026-10-04T21:13:55.102614+00:00",
+          "status": "Checkpoint154:134bounded original Gordon1941 concluded IM11113/Tell Mohammed/Louvre Ahay/Malmö25.498 quotation copies:66English and68native,92checked42partial. Three source-scoped candidate appearances plus one exact Iraq Museum designation reuse;4publication assessments and7complete page-image assignments. Forty-two native units retain named point/bar/restoration/glyph controls; Hebrew-letter Mandaic remains transliteration. Two standalone native quotations lack separately printed English counterparts; no inferred English rows. Original tentative names, split/unmatched source brackets, širš/thum and author corrective marks preserved; selected fragments not reconstructed into full inscriptions. All old rows and memberships unchanged plus3scoped singleton candidates. No independent origin/authenticity/person/religion/rights or uncertain identity decision. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Existing Goal active; previous turn153 progress",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Gordon154-2026-10-04/reading-extent-inventory.json",
+            "sha256": "41482e570489026baa48ba0c1bcf3fd3fab5f2fb374b557cb9433d0b48ba1eb1"
           }
         }
       ]
@@ -1679,8 +1694,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Gordon153-2026-10-04/miri-queue-before.json",
-    "sha256": "dfc50a61900adb06ef4a88bafe881ada4f6c9b598bab2879f1a9c3811ba55df8"
+    "path": "data/private/research-work/Gordon154-2026-10-04/miri-queue-before.json",
+    "sha256": "94553c26d3bd4c8dd63a6b76a5f145673a989493bed56e993a813535aced2fa9"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2011,5 +2026,20 @@
       "path": "data/private/research-work/Gordon153-2026-10-04/reading-extent-final.json",
       "sha256": "fc7eaa6e93f80f888dd3132bdfde97a0c13db7aca4efc1502963fd61db56164f"
     }
+  },
+  "checkpoint154_Gordon_Collections": {
+    "receipt": "research/receipts/Gordon154_original_2026-10-04.json",
+    "source_id": "SRC-GORDON1941-CONCLUDED",
+    "counts": {
+      "new_texts": 134,
+      "new_checked": 92,
+      "new_partial": 42,
+      "native_copies": 68,
+      "English_copies": 66
+    },
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
   }
 }
