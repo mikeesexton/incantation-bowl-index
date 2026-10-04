@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "checkpoint": 144,
+  "created_at": "2026-10-04T14:38:40.715912+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "8ac558e87e4bb67fc8e2e2634a7990006c4ac71adc2fffa9853bc19b9adf9af5",
+  "corpus_after": "b0167dc721c9a0b8e59513508ce5c25e37b4d43a42baef97511a8d79cd2a101d",
+  "table_changes": {
+    "appearances": 4,
+    "appearance_object_links": 4,
+    "texts": 6,
+    "media": 6,
+    "publication_assessments": 4,
+    "text_proofreading_reviews": 6,
+    "document_assessments": 1,
+    "source_corrections": 1,
+    "sources": 0
+  },
+  "scope": "Checkpoint144: four existing British Museum bowls linked to their own original Müller-Kessler2001/2002 corrected editions, printed132–134. Six searchable rows added: five Latin Mandaic working copies explicitly partial_review pending exact editorial marks, and the complete provided BM91780 German translation source-copy checked. Four appearances/publication assessments and six full-page image assignments (three unique pages) added. BM91715 revised translation is expressly referred to separate unheld2002b chapter; existing acquisition request supplemented. Source-wide extraction partial; no new objects, identity decision, scholarly adjudication, public approval or whole-case completion.",
+  "new_text_rows": 6,
+  "new_checked_readings": 1,
+  "new_partial_readings": 5,
+  "new_appearances": 4,
+  "new_publication_assessments": 4,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 6,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 1,
+  "new_proofreading_reviews": 6,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2609,
+  "total_media": 2333,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2264,
+  "total_identities": 1912,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 77,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/MK-BM144_readings_2026-10-04.jsonl",
+      "sha256": "70e01247a4373aa06894451dfe0f5b29aa8314e82fb65c227f9e768a9150cb5c"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/MK-BM144_publication_2026-10-04.json",
+      "sha256": "42db26f8efb380adebfa0ef3a24dd1a561d763ddf7b72a61dd7c0113473bbfa9"
+    },
+    {
+      "command": "ingest-source-corrections",
+      "path": "data/private/manifests/MK-BM144_source_correction_2026-10-04.json",
+      "sha256": "6718a4cc6fb31cefca1e6d2fe859769af2527deb659cb8ccb739c63b894e0be1"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/MK-BM144_proofreading_2026-10-04.json",
+      "sha256": "591fe0cc91d4bdd7b0d03b96ae28f8fb06a89c405b6df25863fca07fd6c853be"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/MK-BM144_documents_2026-10-04.json",
+      "sha256": "674da86764aaa26caffc4dd0f630472b8c0969d126970a3ad2dcbcf2000f79a2"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/source-evidence.json",
+    "sha256": "d4cf641b67d1982340f52b566fbf7a5447eba12bfec3f9efbc9e6fe391273cd6"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/reading-extent-inventory.json",
+    "sha256": "b0569b91e559b2a5a3b161bd86c1b05c34ee1e4687aa738731b2d8b4bff59329"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/page-derivatives.json",
+    "sha256": "2829f06100bf05e58b8769d8e39401cfe274b56f6286a306259fc63064625c41"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/campaign_case_progress_checkpoint144.json",
+    "sha256": "5cb7c9974a80b3e607c0a0f973900efdf0da4bca99ec1d0154a91aa18ea30912"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/held_pdf_inventory_checkpoint144.json",
+    "sha256": "78c5fd9ee3ca0be5f068001eead5ad95bc6111c0866ed8c38a8a37277e76d2ad"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/non_pdf_holdings_checkpoint144.json",
+    "sha256": "1062a60785a1cff23e69b62e5e4bdd95a3a3f4fae72bbe7140811571c937f30c"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/MK-BM144-2026-10-04/intake-verification.json",
+    "sha256": "8ca45500ca93e17c653972039f6f89eefd1c5b1e272618fa211ddb55593c5441"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2609,
+    "all_media_assignments_verified": 2333,
+    "all_local_image_hashes_verified": 1422,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1912,
+    "all39tables_exact": true,
+    "all_prior_rows_retained_or_snapshotted": true,
+    "five_current_manifest_replays_unchanged": true,
+    "all6current_copy_checks": true,
+    "checked_copies": 1,
+    "partial_copies": 5,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 6,
+    "unique_rendered_pages": 3,
+    "reports_regenerated": 7
+  },
+  "limits": "Five Latin copies explicitly incomplete at editorial-mark level, not certified source copies or independent clay readings. German check covers entire provided translation only. Source-wide extraction partial; separate BM91715 translation remains unheld. Printed registration-year variants retained as source evidence, not corrected into adopted identifiers. No case completion, uncertain merge, scholarly adjudication or rights decision.",
+  "diagnostics": "All five trial and production manifest replays unchanged; all39tables exact, historical rows retained or source-ledger snapshotted, identity memberships exact. No reset,deploy,push,purchase,outbound message or Waterman retry.",
+  "closed_at": "2026-10-04T14:40:15.627326+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0144_original_BM_corrected_editions.json",
+    "sha256": "e864bf3ad5227fe4edc12951591fcdb2cfb6307b3ee5564dd6af32d39953b9a5"
+  }
+}

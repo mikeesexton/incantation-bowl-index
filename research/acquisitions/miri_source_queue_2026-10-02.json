@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T14:06:09.509921+00:00",
+  "updated_at": "2026-10-04T14:38:40.715912+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -812,7 +812,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-03",
       "sha256": "fa869896b43bb28e4ce20c79dfb2de4ca202fe2d70c2899b9fbfc962c4d80322",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "reading_audit": "Own corrected editions for BM91715,91780,91775,91779 copied as five Latin working sections, partial_review pending glyph/editorial marks; full provided BM91780 German translation checked. Other article editions, contexts and claims remain pending; BM91715 revised translation points to separate unheld2002b chapter.",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": "SRC-IBI-CP132-MK2001-BM",
@@ -832,7 +832,26 @@
       "document_evidence": {
         "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
         "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
-      }
+      },
+      "reading_audit_history": [
+        {
+          "recorded_at": "2026-10-04T14:38:40.715912+00:00",
+          "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+          "superseded_by_checkpoint": 144
+        }
+      ],
+      "reading_updates": [
+        {
+          "checkpoint": 144,
+          "observed_at": "2026-10-04T14:38:40.715912+00:00",
+          "status": "Own corrected editions for BM91715,91780,91775,91779 copied as five Latin working sections, partial_review pending glyph/editorial marks; full provided BM91780 German translation checked. Other article editions, contexts and claims remain pending; BM91715 revised translation points to separate unheld2002b chapter.",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/MK-BM144-2026-10-04/reading-extent-inventory.json",
+            "sha256": "b0569b91e559b2a5a3b161bd86c1b05c34ee1e4687aa738731b2d8b4bff59329"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-A06D3C4C7CDF",
@@ -1327,6 +1346,17 @@
             "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
             "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
           }
+        },
+        {
+          "checkpoint": 144,
+          "observed_at": "2026-10-04T14:38:40.715912+00:00",
+          "source_id": "SRC-IBI-CP132-MK2001-BM",
+          "capture_id": "CAP-IBI-CP141-PDF-03",
+          "status": "Held original AfO article printed132/PDF19 expressly sends BM91715 revised translation to2002b; printed144/PDF31 bibliography identifies the separate Gyselen chapter. Required original chapter remains unheld; Kitchen review does not supply it.",
+          "evidence": {
+            "path": "data/private/research-work/MK-BM144-2026-10-04/source-evidence.json",
+            "sha256": "d4cf641b67d1982340f52b566fbf7a5447eba12bfec3f9efbc9e6fe391273cd6"
+          }
         }
       ]
     },
@@ -1471,8 +1501,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/miri-queue-before.json",
-    "sha256": "005e6496b18b0827ad816b8dfdeb7edc23bec4ef55f684ef54fcf302a0012376"
+    "path": "data/private/research-work/MK-BM144-2026-10-04/miri-queue-before.json",
+    "sha256": "8813d86ae8cc414a0f1a9486324254c43f209e780d1cdb11802e084b7538d378"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1676,6 +1706,16 @@
       "SRC-A06D3C4C7CDF"
     ],
     "checked_reading_rows": 44,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint144_BM_original": {
+    "receipt": "research/receipts/MK-BM144_original_2026-10-04.json",
+    "source_id": "SRC-IBI-CP132-MK2001-BM",
+    "checked_reading_rows": 1,
+    "partial_reading_rows": 5,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
     "miri_remaining": 32,

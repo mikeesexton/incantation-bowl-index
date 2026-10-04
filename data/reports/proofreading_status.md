@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1797 | 59 | 1 | 1857 | 96.8% |
+| Edition text (translation, transcription, transliteration) | 1798 | 64 | 1 | 1863 | 96.5% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1799 | 66 | 738 | 2603 | 69.1% |
+| All stored text | 1800 | 71 | 738 | 2609 | 69.0% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 868 | 41 | 1 | 910 |
+| translation | 869 | 41 | 1 | 911 |
 | transcription | 652 | 12 | 0 | 664 |
-| transliteration | 277 | 6 | 0 | 283 |
+| transliteration | 277 | 11 | 0 | 288 |
 
 ## Edition text by source
 
@@ -83,6 +83,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
 | Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 77 | 3 | 0 | 80 |
 | Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls (`SRC-IBI-CP131-MK1999-PUZZLING`) | 42 | 0 | 0 | 42 |
+| Die Zauberschalensammlung des British Museum (`SRC-IBI-CP132-MK2001-BM`) | 1 | 5 | 0 | 6 |
 | Ephemeris für semitische Epigraphik. Erster Band, Erstes Heft (`SRC-IBI-CP137-LIDZ-FIRST-FASCICLE`) | 10 | 2 | 0 | 12 |
 | Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 37 | 0 | 0 | 37 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |
