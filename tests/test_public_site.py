@@ -17,8 +17,8 @@ def payload(identity_count=40, records=55, coverage=None):
         'coverage': coverage or {'text_edition': 21, 'provenance': 9, 'image': 4},
         'scholarship': {
             'decades': [
-                {'decade': 1850, 'indexed': 3, 'field_control_list': 2, 'incomplete': False},
-                {'decade': 2020, 'indexed': 7, 'field_control_list': 5, 'incomplete': True},
+                {'decade': 1850, 'indexed': 3, 'incomplete': False},
+                {'decade': 2020, 'indexed': 7, 'incomplete': True},
             ],
             'label': 'Scholarly publications indexed, by decade',
             'scope': 'Dated scholarly works in this index.',

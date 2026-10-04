@@ -46,7 +46,6 @@
 .about-preview { max-width: 38rem; margin-top: .9rem; color: var(--brownink-soft); font-size: .86rem; }
 .about-preview summary { color: var(--reading-accent); cursor: pointer; }
 .about-preview p { margin: .6rem 0; }
-.private-reading-notice { border-left: 2px solid var(--reading-accent); padding-left: .8rem; }
 .private-access-note { color: var(--ochre); font-weight: 600; }
 
 /* A bowl seen from above is a circle. The grid keeps that. */
@@ -179,13 +178,9 @@
 .growth { margin: 0 0 1rem; }
 .growth-plot { width: 100%; height: auto; display: block; overflow: visible; }
 .bar-held { fill: var(--reading-accent); }
-.bar-field { fill: var(--clay-line); }
 .bar-axis { stroke: var(--clay-line); stroke-width: 1; }
 .bar-label { fill: var(--brownink-soft); font: 10px var(--sans); }
 .growth figcaption { font-size: .82rem; color: var(--brownink-soft); margin-top: .8rem; line-height: 1.55; }
-.key { display: inline-block; width: .62rem; height: .62rem; border-radius: 1px; margin: 0 .2rem 0 .7rem; }
-.key.is-held { background: var(--reading-accent); }
-.key.is-field { background: var(--clay-line); }
 
 .contributor-list { list-style: none; margin: 0; padding: 0; }
 .contributor-list li { display: grid; grid-template-columns: 2rem 1fr auto; gap: .9rem; align-items: baseline;

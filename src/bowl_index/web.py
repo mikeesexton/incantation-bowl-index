@@ -256,7 +256,6 @@ class CorpusCatalog:
             now = datetime.now(timezone.utc)
             series = projection_tables["scholarship_decades"]
             decades = [{"decade": row["decade"], "indexed": row["held"],
-                        "field_control_list": row["field_control_list"],
                         "incomplete": row["decade"] == now.year // 10 * 10}
                        for row in series]
             payload = {

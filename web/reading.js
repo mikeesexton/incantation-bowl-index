@@ -622,10 +622,7 @@
             <div><dt>Images</dt><dd>${(localTier ? m.media_available_rows : m.media_approved_rows).toLocaleString()}</dd></div>
           </dl>`}
         ${note ? `<p class="standfirst">${esc(note)}</p>` : ""}
-        ${filtered ? "" : localTier ? `<p class="standfirst-note private-reading-notice">This is Mike's
-          private research bank. Availability here is not permission to publish, redistribute,
-          or share a text or image.</p>
-          <details class="about-preview"><summary>About this private reader and its coverage</summary>
+        ${filtered ? "" : localTier ? `<details class="about-preview"><summary>About this private reader and its coverage</summary>
             <p><strong>${readableTranslations}</strong> translations and
               <strong>${readableSummaries}</strong> research summaries are readable here, along with
               <strong>${data.texts.filter(row => row.editor === CARD_LINE_EDITOR).length}</strong>
@@ -1102,34 +1099,27 @@
     </article>`;
   }
 
-  /* How the field grew. Two lines, because ours counts all scholarship held and
-     the field line counts only Waller's JBA control list — the gap is the point. */
+  /* How the field grew: dated works in this index, per decade. */
   function growthChart(rows) {
     /* SVG rather than styled divs: the console's CSP forbids inline styles, and
        geometry belongs in attributes anyway. */
-    const live = rows.filter(r => r.held || r.field_control_list);
-    const peak = Math.max(...live.map(r => Math.max(r.held, r.field_control_list)), 1);
+    const live = rows.filter(r => r.held);
+    const peak = Math.max(...live.map(r => r.held), 1);
     const W = 720, H = 150, gap = 3;
     const slot = W / live.length;
     const bars = live.map((r, i) => {
       const x = i * slot;
-      const w = (slot - gap) / 2;
-      const h1 = (r.held / peak) * H;
-      const h2 = (r.field_control_list / peak) * H;
-      return `<rect class="bar-held" x="${(x + 1).toFixed(1)}" y="${(H - h1).toFixed(1)}"
-          width="${w.toFixed(1)}" height="${h1.toFixed(1)}"><title>${r.decade}s — ${r.held} held</title></rect>
-        <rect class="bar-field" x="${(x + w + 2).toFixed(1)}" y="${(H - h2).toFixed(1)}"
-          width="${w.toFixed(1)}" height="${h2.toFixed(1)}"><title>${r.decade}s — ${r.field_control_list} on the control list</title></rect>
+      const h = (r.held / peak) * H;
+      return `<rect class="bar-held" x="${(x + gap / 2).toFixed(1)}" y="${(H - h).toFixed(1)}"
+          width="${(slot - gap).toFixed(1)}" height="${h.toFixed(1)}"><title>${r.decade}s — ${r.held} publication${r.held === 1 ? "" : "s"}</title></rect>
         <text class="bar-label" x="${(x + slot / 2).toFixed(1)}" y="${H + 13}" text-anchor="middle">${String(r.decade).slice(2)}</text>`;
     }).join("");
     return `<figure class="growth">
       <svg viewBox="0 0 ${W} ${H + 18}" class="growth-plot" role="img"
-        aria-label="Publications per decade, held here against Waller's control list">
+        aria-label="Publications per decade">
         ${bars}<line class="bar-axis" x1="0" y1="${H}" x2="${W}" y2="${H}"/></svg>
-      <figcaption><span class="key is-held"></span> scholarship held here
-        <span class="key is-field"></span> Jewish Babylonian Aramaic publications on Waller's
-        control list, 1853–2024. Ours counts every language and genre, so it runs higher after
-        2000; the nineteenth century is where the two should agree, and roughly does.</figcaption></figure>`;
+      <figcaption>Dated scholarship in this index, by decade of publication, in every
+        language and genre.</figcaption></figure>`;
   }
 
   function renderScholarship(view) {
@@ -1139,8 +1129,9 @@
     const byScope = {};
     works.forEach(w => { const k = w.scope_label; (byScope[k] = byScope[k] || []).push(w); });
     const people = data.contributors;
+    const years = works.map(w => w.issued_year).filter(Boolean);
     view.innerHTML = `<div class="reading-head">
-        <span class="eyebrow">1853 to 2024</span>
+        ${years.length ? `<span class="eyebrow">${Math.min(...years)} to ${Math.max(...years)}</span>` : ""}
         <h1 id="explore-title">Scholarship</h1>
         <p class="standfirst">Every work this index draws on: <strong>${works.length}</strong>
           pieces of scholarship, separate from the ${(data.sources.length - works.length).toLocaleString()}

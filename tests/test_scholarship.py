@@ -118,9 +118,9 @@ class ScopeTests(unittest.TestCase):
         with self.assertRaises(sqlite3.IntegrityError):
             self.conn.execute("DELETE FROM source_scope_reviews")
 
-    def test_the_decade_series_reports_both_lines(self):
+    def test_the_decade_series_counts_dated_works_only(self):
         rows = decade_series(self.conn)
-        self.assertTrue(all({'decade','held','field_control_list'} <= set(r) for r in rows))
+        self.assertTrue(all(set(r) == {'decade', 'held'} and r['held'] > 0 for r in rows))
 
     def test_retained_security_response_does_not_count_as_a_held_article(self):
         from bowl_index.documents import apply_document_assessments

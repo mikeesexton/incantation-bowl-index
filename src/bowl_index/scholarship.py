@@ -9,13 +9,10 @@ checking. And growth over time is shown against the field's own control list, so
 the gap between what was published and what this index holds stays visible.
 """
 
-import json
 import re
 import unicodedata
 from datetime import datetime
-from pathlib import Path
 
-from .db import PROJECT_ROOT
 from .documents import source_document_status
 from .publications import current_registry, publication_keys
 
@@ -35,8 +32,6 @@ SCOPE_LABELS = {
     "excavation_report": "Excavation report",
     "not_scholarship": "Not scholarship",
 }
-
-WALLER_LIST = PROJECT_ROOT / "research" / "sources" / "waller_2025_jba_publication_list.jsonl"
 
 _CORPORATE = re.compile(
     r"\b(museum|library|collection|university|universit|institute|arts|studies|centre|center|"
@@ -262,32 +257,15 @@ def _absorb_bare_surnames(people):
     return people
 
 
-def waller_series():
-    """The field's own publication curve, for comparison with ours."""
-    if not WALLER_LIST.exists():
-        return {}
-    counts = {}
-    for line in WALLER_LIST.read_text(encoding="utf-8").splitlines():
-        if not line.strip() or line.startswith("#"):
-            continue
-        year = json.loads(line).get("issued_year")
-        if year:
-            counts[year // 10 * 10] = counts.get(year // 10 * 10, 0) + 1
-    return counts
-
-
 def decade_series(conn, work_rows=None):
-    """Two lines: what the field published, and what this index holds."""
+    """Dated works in this index, counted by decade of publication."""
     rows = work_rows if work_rows is not None else works(conn)
     ours = {}
     for work in rows:
         if work["issued_year"]:
             decade = work["issued_year"] // 10 * 10
             ours[decade] = ours.get(decade, 0) + 1
-    field = waller_series()
-    decades = sorted(set(ours) | set(field))
-    return [{"decade": d, "held": ours.get(d, 0), "field_control_list": field.get(d, 0)}
-            for d in decades]
+    return [{"decade": d, "held": ours[d]} for d in sorted(ours)]
 
 
 def scholarship_metrics(conn):

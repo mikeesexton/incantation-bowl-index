@@ -59,7 +59,7 @@ PROJECTION_COLUMNS = {
               "objects_published", "document_held"),
     "contributors": ("contributor_key", "display_name", "spellings", "works",
                      "objects_published", "first_year", "last_year", "needs_check"),
-    "scholarship_decades": ("decade", "held", "field_control_list"),
+    "scholarship_decades": ("decade", "held"),
     "publications": ("publication_key", "source_id", "resolution", "blocker", "objects",
                      "object_ids"),
 }
