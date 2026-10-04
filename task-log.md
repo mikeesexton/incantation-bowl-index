@@ -1,3 +1,25 @@
+## 2026-10-04 — Claude Code — Market: recon for an agent-checked platform pass
+
+**Workstream:** DISC-004, claimed before work. Documentation and recon only: no corpus, monitor code, registry or schedule change. Opening corpus matched `83257090…16cb340`. Codex's concurrent checkpoint153 was in progress throughout and its entry is left untouched.
+
+**Completed:** Mike asked whether a Codex agent should check the auction sites the monitor cannot script. Recon covered 12 aggregators and 20 houses and dealers: robots.txt, terms on automated access, alert features and static HTML, all recorded in `research/monitoring/market_platform_recon_2026-10-04.json`. Raw pages and the fetch log are under `data/private/monitoring/market/recon-2026-10-04/`. What Codex scheduled tasks, browsing and `codex exec` can do, per OpenAI docs, is in `research/monitoring/codex_scheduled_tasks_recon_2026-10-04.md`. Design and Mike's open decisions are in `docs/market_agent_pass.md`; a draft Codex brief is in `research/monitoring/market_agent_task_prompt.md`; `market_tracker.md` links to both.
+
+**Finding:** LiveAuctioneers, Invaluable, Bidsquare, Barnebys, Sotheby's and Drouot forbid automated access in their terms. Kedem, TimeLine's own site, Freeman's (formerly Hindman), Catawiki, Heritage, Gazette Drouot, Trocadero and the Artemis auction subdomain sit behind bot challenges. A scheduled browser agent searching them would breach their terms or bypass an access control (§3). Recommended instead:
+- (1) Add Lot-tissimo and four or five static dealer pages to the scripted registry.
+- (2) Mike sets up saved-search email alerts, which a weekly Codex task parses into private leads.
+- (3) Optional Mike-present browsing for Kedem, Catawiki and Bidspirit.
+
+Nothing is enabled. Every decision is Mike's.
+
+**Recon rule breaches (recorded in the JSON):**
+- Trocadero: one curl redirect reached a robots-disallowed `/php/` bot-check page.
+- Jasper52: one robots.txt redirect reached a fully disallowed LiveAuctioneers subdomain homepage.
+- Barakat (7 requests) and Apollo (8) exceeded the roughly six-request cap.
+
+No login, form or account was used anywhere.
+
+**Validation:** 473 Python tests passed (no JS changed). No reports regenerated, because the corpus is unchanged by this session. `ibi state` read `drifted` at closure because Codex's checkpoint153 was mid-write (its receipt and reports are uncommitted in the tree). I did not stamp state: `--write` would have recorded Codex's partial corpus under this session. Committed only this session's files and this entry; Codex's in-progress entry and files are left for its own closure. Local commit only; no push.
+
 ## 2026-10-04 — Codex — Hilprecht source quotations, checkpoint152
 
 **Workstream:** TEXT-004, TEXT-009, TEXT-010 claimed before work under Mike's resumed existing Goal. Opening clean/match checkpoint151 `446e1c5`, corpus `38fc4010…72b392b`; runtime Goal active. Previous research turn151 progress, followed by Mike's requested pause; this session explicitly resumed.

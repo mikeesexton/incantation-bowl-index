@@ -1,0 +1,1941 @@
+{
+ "schema_version": 1,
+ "task": "DISC-004",
+ "checked_at": "2026-10-04",
+ "checked_by": "Claude Code (three recon subagents, reviewed by the session)",
+ "purpose": "Access-policy recon for platforms the scripted market monitor cannot read. Fact-finding only; no platform is enabled by this file.",
+ "method": "Fetched only robots.txt, terms, help/FAQ pages, homepages and (where robots allowed) one category page per dealer, with the project research user agent or WebFetch. No search-results URL on a robots-disallowed path, no login, no form, no account. Raw responses and a fetch log are kept privately in data/private/monitoring/market/recon-2026-10-04/.",
+ "fetch_log_sha256": "a1d764d4fd70f8bbf838681a2ab713b6be7be5eb5c45118a1f16e647fd48a5cb",
+ "recon_rule_breaches": [
+  "Trocadero: curl followed a 307 into /php/_xsite/doPOW.php (a bot-check page); robots.txt disallows /php/. One request.",
+  "Jasper52: jasper52.com/robots.txt 301-redirected to the chairish-auctions.liveauctioneers.com homepage, a host whose robots.txt disallows /. One request, unintended.",
+  "Barakat (7) and Apollo (8, two of them failed DNS lookups) exceeded the roughly six-requests-per-site cap."
+ ],
+ "registry_corrections_pending": [
+  "Hindman is now Freeman's (freemansauction.com; hindmanauctions.com redirects).",
+  "Apollo Art Auctions is apolloauctions.com (apolloartauctions.com does not resolve); Pax Romana's site now redirects to Apollo Galleries.",
+  "Barakat Gallery is barakatgallery.eu; barakatgallery.com is parked.",
+  "Jasper52 now redirects to a LiveAuctioneers 'Chairish Auction House' subdomain."
+ ],
+ "aggregators": [
+  {
+   "platform": "LiveAuctioneers",
+   "checked_at": "2026-10-04T20:31:42Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.liveauctioneers.com/robots.txt",
+    "star_rules_search": [
+     "Disallow: /search?",
+     "Disallow: /search/?",
+     "Disallow: *keyword=*",
+     "Disallow: /saved-search-api",
+     "Disallow: *sort=*, *filter=*, *pagenum=*, *category_id=*, *house_id=* (and other query parameters)"
+    ],
+    "star_rules_lots": [
+     "no rule matches /item/ for * (only /sothebys/item/ and /bonhams/item/ disallowed)",
+     "Disallow: /v1/lot",
+     "Disallow: /item-api/"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "No GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot or other AI-crawler groups. Only facebookexternalhit and meta-externalagent/1.1 (Crawl-delay: 10) and bingbot (same rules + Crawl-delay: 10).",
+    "sitemaps": [
+     "https://www.liveauctioneers.com/sitemap-index.xml.gz",
+     "https://www.liveauctioneers.com/price-result-sitemap-index.xml.gz"
+    ]
+   },
+   "search_url_pattern": "https://www.liveauctioneers.com/search/?keyword={term} (from homepage JSON-LD SearchAction). Disallowed for * by /search/? and *keyword=*.",
+   "lot_pages_allowed": "Yes per robots for *: lot pages are /item/<id>_<slug> (seen on homepage) and are not matched by any * Disallow line. Terms of use still forbid automated access (see terms_automation).",
+   "terms_automation": {
+    "url": "https://www.liveauctioneers.com/termsandconditions",
+    "summary": "Terms forbid using any robot, spider, scraper or other automated means to access the sites for any purpose without express written permission; also forbid bypassing robot exclusion headers and copying/redistributing site content without consent.",
+    "quote": "\"will not use any robot, spider, scraper, or other automated means to access the sites\""
+   },
+   "saved_search_alerts": {
+    "offered": "Yes (inferred from site structure, help page not readable): homepage links to /dashboard/followed-searches ('followed searches'); robots lists /saved-search-api. /dashboard/ is disallowed and login-gated.",
+    "account_required": "Yes (inferred: /dashboard/ is the logged-in user area)",
+    "free": "Not confirmed (help centre returned 403)",
+    "help_url": "https://help.liveauctioneers.com/ -> 403 (redirected to /hc/en-gb); https://support.liveauctioneers.com/ -> 403"
+   },
+   "other_channels": "Sitemaps listed in robots, including a dedicated price-result sitemap index (not fetched). Homepage references api.liveauctioneers.com / item-api-prod hosts (internal app APIs, no public API documentation seen; /item-api/ disallowed). Robots disallows /newsletter/ path (a newsletter exists, inferred). No RSS seen.",
+   "prices_realized_access": "Not determined from help pages (403). A 'price-result' sitemap index in robots suggests public price-result pages exist (inferred).",
+   "notes": "Homepage served full server-rendered HTML to the research UA (no challenge). Help/support centre (Zendesk-style) returned 403 to both curl and WebFetch. Jasper52.com now redirects into a LiveAuctioneers subdomain (see Jasper52 entry).",
+   "urls_fetched": [
+    [
+     "https://www.liveauctioneers.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.liveauctioneers.com/",
+     200
+    ],
+    [
+     "https://www.liveauctioneers.com/termsandconditions",
+     200
+    ],
+    [
+     "https://help.liveauctioneers.com/ (-> /hc/en-gb)",
+     403
+    ],
+    [
+     "https://support.liveauctioneers.com/ (-> /hc/en-gb)",
+     403
+    ],
+    [
+     "WebFetch https://help.liveauctioneers.com/",
+     403
+    ]
+   ]
+  },
+  {
+   "platform": "Jasper52 (LiveAuctioneers-owned)",
+   "checked_at": "2026-10-04T20:31:54Z",
+   "robots_txt": {
+    "status": "https://www.jasper52.com/robots.txt -> 301 to https://chairish-auctions.liveauctioneers.com/ (the redirect target is the subdomain homepage, not a robots file). Subdomain robots https://chairish-auctions.liveauctioneers.com/robots.txt -> 200.",
+    "star_rules_search": [
+     "(subdomain) User-agent: * / Disallow: / / Noindex: /  -- comment: '# liveauctioneers.com not www robots.txt'"
+    ],
+    "star_rules_lots": [
+     "(subdomain) Disallow: / covers everything"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "None on the subdomain robots.",
+    "sitemaps": []
+   },
+   "search_url_pattern": "Subdomain homepage links /search/?house_id=10549&page=1&sort=-popularity (house-filtered LiveAuctioneers search). Fully disallowed on the subdomain; on www the LiveAuctioneers search rules apply (see LiveAuctioneers).",
+   "lot_pages_allowed": "Not on the chairish-auctions subdomain (Disallow: /). Inferred: the house's lots are LiveAuctioneers /item/ pages on www.liveauctioneers.com, which robots allows for * (not verified for this house).",
+   "terms_automation": {
+    "url": "https://chairish-auctions.liveauctioneers.com/termsandconditions (linked; not fetched because subdomain robots disallows /). LiveAuctioneers terms presumably govern (inferred).",
+    "summary": "See LiveAuctioneers: no robots/scrapers/automated access without written permission.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "Via LiveAuctioneers account (inferred); no Jasper52-specific mechanism observed.",
+    "account_required": "Yes (inferred)",
+    "free": "Not determined",
+    "help_url": null
+   },
+   "other_channels": "None observed.",
+   "prices_realized_access": "Not determined. Subdomain page title advertises '72 Past Catalogs'.",
+   "notes": "jasper52.com 301-redirects to chairish-auctions.liveauctioneers.com; page title 'Chairish Auction House, NY - Upcoming Auctions & 72 Past Catalogs' and asset 'jasper52_large.jpg' present. Inferred: Jasper52 has been folded into/rebranded as a 'Chairish Auction House' seller page on LiveAuctioneers (house_id 10549). Disclosure: the subdomain homepage was fetched once unintentionally via the 301 when requesting jasper52.com/robots.txt; that subdomain disallows / for *. No further subdomain requests were made apart from its robots.txt.",
+   "urls_fetched": [
+    [
+     "https://www.jasper52.com/robots.txt (followed redirect)",
+     "301 -> https://chairish-auctions.liveauctioneers.com/ 200"
+    ],
+    [
+     "https://www.jasper52.com/robots.txt (headers only, no follow)",
+     301
+    ],
+    [
+     "https://chairish-auctions.liveauctioneers.com/robots.txt",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "Invaluable",
+   "checked_at": "2026-10-04T20:33:30Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.invaluable.com/robots.txt",
+    "star_rules_search": [
+     "Disallow: /search?keyword=",
+     "Disallow: *searchLots.cfm",
+     "Disallow: *searchlots.cfm",
+     "Header comment: automated access without express permission is prohibited except for inclusion in public search engines."
+    ],
+    "star_rules_lots": [
+     "No * rule matches /auction-lot/ (lot paths seen on homepage)",
+     "Disallow: /artfact/ , /bidNow , /photoPopup.cfm"
+    ],
+    "crawl_delay_star": 10,
+    "ai_agent_groups": "No GPTBot, ChatGPT-User, OAI-SearchBot or other AI groups. Named groups: Googlebot family, Adsbot-Google, Baiduspider, Bingbot, Apple Bot, msnbot, Yandex, Slurp (same disallows); Flipboard and FlipboardProxy Disallow: /.",
+    "sitemaps": [
+     "https://www.invaluable.com/sitemap_inv_com-index.xml"
+    ]
+   },
+   "search_url_pattern": "https://www.invaluable.com/search?keyword={term} (homepage JSON-LD SearchAction). Disallowed for * by 'Disallow: /search?keyword='. Homepage also links /search?queryContext=...&keyword=... (keyword not first; not literally matched by the prefix rule, but the header comment prohibits non-search-engine automation). Advanced search at /catalog/advancedSearch.cfm.",
+   "lot_pages_allowed": "Yes per robots path rules for * (/auction-lot/<slug>-<id>), with Crawl-delay 10. But robots header comment and terms prohibit automated access without permission.",
+   "terms_automation": {
+    "url": "https://www.invaluable.com/inv/agreements/terms-of-use/",
+    "summary": "Users agree not to use any robot, spider, other automatic device, or manual process to monitor or copy pages or content without prior written permission; no excessive load; no commercial exploitation of content.",
+    "quote": "\"not use any robot, spider, other automatic device, or manual process to monitor\""
+   },
+   "saved_search_alerts": {
+    "offered": "Yes: 'Follow this Keyword' button on search results gives email alerts for keywords; also artist, seller and category alerts; 'Save to my Saved Searches'; saved items get an email the day before the auction; app notifications.",
+    "account_required": "Yes (prompted to sign in or create account)",
+    "free": "Free account implied (no fee mentioned for alerts)",
+    "help_url": "https://www.invaluable.com/inv/help/faq/emails-alerts/ ; https://www.invaluable.com/inv/help/faq/search-price-archive/"
+   },
+   "other_channels": "Sitemap index in robots. Help centre is WordPress with /inv/help/feed/ RSS (help articles only, not lots). No public lot API or lot RSS observed.",
+   "prices_realized_access": "Price Archive requires creating an account; any user may search, but some advanced functionality/auction information may require a paid subscription (help page).",
+   "notes": "Homepage served server-rendered HTML to research UA (no challenge).",
+   "urls_fetched": [
+    [
+     "https://www.invaluable.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.invaluable.com/",
+     200
+    ],
+    [
+     "https://www.invaluable.com/inv/agreements/terms-of-use/",
+     200
+    ],
+    [
+     "https://www.invaluable.com/inv/help/",
+     200
+    ],
+    [
+     "https://www.invaluable.com/inv/help/faq/emails-alerts/",
+     200
+    ],
+    [
+     "https://www.invaluable.com/inv/help/faq/search-price-archive/",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "Bidsquare",
+   "checked_at": "2026-10-04T20:34:30Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.bidsquare.com/robots.txt",
+    "star_rules_search": [
+     "Disallow: /search",
+     "Disallow: /*?*search=",
+     "Disallow: /*?*category=",
+     "Disallow: /*?*filters=",
+     "Disallow: /*?*sort=",
+     "Disallow: /category/*?*page="
+    ],
+    "star_rules_lots": [
+     "No * rule matches a lot path; lot URL shape not observed on homepage (auction pages are /auctions/<house>/<slug>-<id>)."
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "GPTBot: Disallow: /. ChatGPT-User and OAI-SearchBot not named (fall under *). Bytespider, DataForSeoBot, PetalBot, AhrefsBot, SemrushBot, etc.: Disallow: /.",
+    "sitemaps": [
+     "https://www.bidsquare.com/sitemap.xml"
+    ]
+   },
+   "search_url_pattern": "https://www.bidsquare.com/search?search={term} (homepage JSON-LD SearchAction and form action /search). Disallowed for * (/search and /*?*search=).",
+   "lot_pages_allowed": "Appears allowed for * (no lot-path rule; only query-parameter and account paths blocked). Exact lot path not observed - inferred.",
+   "terms_automation": {
+    "url": "https://www.bidsquare.com/terms-conditions",
+    "summary": "Licence is personal, non-commercial viewing only; users may not create a database by systematically downloading/caching/storing material 'by spidering, scraping or otherwise', nor copy/extract content.",
+    "quote": "\"by spidering, scraping or otherwise\""
+   },
+   "saved_search_alerts": {
+    "offered": "Yes: 'My Alerts' send automatic email (or in-account) notifications when matching items are added; keyword, title search, category, live/timed refinement.",
+    "account_required": "Yes (account feature, 'My Alerts')",
+    "free": "Not stated; no fee mentioned (inferred free)",
+    "help_url": "https://www.bidsquare.com/get-started/account"
+   },
+   "other_channels": "sitemap.xml in robots. Homepage has an email subscription form (/inquire/subscription) - newsletter. Mobile app 'follow, track and place bids'. No RSS/API observed.",
+   "prices_realized_access": "Not determined.",
+   "notes": "Server-rendered homepage, no challenge. /faq returned 404; help lives under /get-started.",
+   "urls_fetched": [
+    [
+     "https://www.bidsquare.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.bidsquare.com/",
+     200
+    ],
+    [
+     "https://www.bidsquare.com/terms-conditions",
+     200
+    ],
+    [
+     "https://www.bidsquare.com/faq",
+     404
+    ],
+    [
+     "https://www.bidsquare.com/get-started",
+     200
+    ],
+    [
+     "https://www.bidsquare.com/get-started/account",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "iCollector",
+   "checked_at": "2026-10-04T20:34:00Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.icollector.com/robots.txt",
+    "star_rules_search": [
+     "Disallow: /search.aspx"
+    ],
+    "star_rules_lots": [
+     "Disallow: /itembid.aspx",
+     "Disallow: /itembuy.aspx",
+     "Disallow: /auctioninfo.aspx",
+     "Disallow: /auctionprint.aspx",
+     "Disallow: /policy.aspx",
+     "Disallow: /account/"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "GPTBot, OAI-SearchBot, ClaudeBot, Claude-User, Claude-SearchBot, PerplexityBot, CCBot, Meta-ExternalAgent, Bytespider and others each have a group with only 'Crawl-delay: 1' and no Disallow lines - read literally, those agents are permitted everywhere (including /search.aspx), at 1s delay. ChatGPT-User not named (falls under *).",
+    "sitemaps": []
+   },
+   "search_url_pattern": "https://www.icollector.com/search.aspx (form-based ASP.NET; query parameter shape not visible). Disallowed for *.",
+   "lot_pages_allowed": "Probably yes for * (only itembid/itembuy action pages disallowed); auction catalogue pages are /<Title>_a<id> (seen on homepage). Lot page path shape not observed - inferred.",
+   "terms_automation": {
+    "url": "https://www.icollector.com/policy.aspx ('User Agreement & Privacy Policy')",
+    "summary": "Not read: /policy.aspx is disallowed for * in robots.txt, so it was not fetched.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "'Auction Butler' linked from site footer at /account/auctionbutler.aspx (inferred to be a saved-search/alert service; not described on help pages read).",
+    "account_required": "Yes (inferred: under /account/, which is disallowed and login-gated)",
+    "free": "Not determined",
+    "help_url": "https://www.icollector.com/help.aspx ; https://www.icollector.com/help.aspx?p=faq (no alert description found)"
+   },
+   "other_channels": "Official RSS feed at https://www.icollector.com/feeds (-> /auctionlist.aspx?t=RSS_AUCTIONS): lists upcoming auctions (house, date, description, catalogue link), not individual lots. Allowed by robots. No sitemap line in robots.",
+   "prices_realized_access": "Not determined.",
+   "notes": "ASP.NET server-rendered pages, no challenge observed.",
+   "urls_fetched": [
+    [
+     "https://www.icollector.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.icollector.com/",
+     200
+    ],
+    [
+     "https://www.icollector.com/help.aspx",
+     200
+    ],
+    [
+     "https://www.icollector.com/feeds (-> http://www.icollector.com/feeds/)",
+     200
+    ],
+    [
+     "https://www.icollector.com/help.aspx?p=faq",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "Catawiki",
+   "checked_at": "2026-10-04T20:36:20Z",
+   "robots_txt": {
+    "status": 403,
+    "url": "https://www.catawiki.com/robots.txt",
+    "star_rules_search": null,
+    "star_rules_lots": null,
+    "crawl_delay_star": null,
+    "ai_agent_groups": "Unknown - robots.txt returned 403 (Akamai 'Access Denied', errors.edgesuite.net reference) to curl and to WebFetch. catawiki.nl/robots.txt also 403.",
+    "sitemaps": null
+   },
+   "search_url_pattern": "Not determined (homepage 403).",
+   "lot_pages_allowed": "Unknown (robots unreadable).",
+   "terms_automation": {
+    "url": null,
+    "summary": "Not read - all pages 403.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "Not determined from sources (help.catawiki.com 302-redirects to www.catawiki.com/en/, which is 403).",
+    "account_required": null,
+    "free": null,
+    "help_url": "https://help.catawiki.com/ -> 302 -> 403"
+   },
+   "other_channels": "Not determined.",
+   "prices_realized_access": "Not determined.",
+   "notes": "Akamai edge denies the research UA and the WebFetch client for every path tried, including robots.txt. An agent with a real browser may or may not get through; nothing about policy could be verified.",
+   "urls_fetched": [
+    [
+     "https://www.catawiki.com/robots.txt",
+     403
+    ],
+    [
+     "WebFetch https://www.catawiki.com/robots.txt",
+     403
+    ],
+    [
+     "https://www.catawiki.com/en/",
+     403
+    ],
+    [
+     "https://www.catawiki.nl/robots.txt",
+     403
+    ],
+    [
+     "https://help.catawiki.com/",
+     "302 -> https://www.catawiki.com/en/ 403"
+    ],
+    [
+     "https://www.catawiki.com/en/help",
+     403
+    ]
+   ]
+  },
+  {
+   "platform": "Barnebys",
+   "checked_at": "2026-10-04T20:33:30Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.barnebys.com/robots.txt",
+    "star_rules_search": [
+     "No search-specific Disallow for *.",
+     "Header comment: '# Notice: Crawling Barnebys is prohibited unless you have express written permission.'",
+     "Disallow: /re/ , /redirect (outbound links to auction houses)",
+     "Disallow: /*?_rsc= , /*&_rsc="
+    ],
+    "star_rules_lots": [
+     "/auctions/lot/... not disallowed",
+     "Disallow: /realized-prices/lot (and localized equivalents /slutpriser/objekt, /realised-prices/lot, /endpreise/objekte, /risultati/lotto, /preciosrealizados/lote, /adjudications/objet)"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "No GPTBot/ChatGPT-User/OAI-SearchBot groups. Disallow: / for ia_archiver, Bytespider, MJ12bot, DotBot, BLEXBot, DataForSeoBot, PetalBot.",
+    "sitemaps": [
+     "https://www.barnebys.com/sitemap.xml"
+    ]
+   },
+   "search_url_pattern": "Not visible in homepage HTML (Next.js client-rendered search form; no SearchAction JSON-LD).",
+   "lot_pages_allowed": "Upcoming lot pages /auctions/lot/<slug>-<id> are path-allowed for *; realised-price lot pages are disallowed. However the robots header comment says crawling is prohibited without express written permission.",
+   "terms_automation": {
+    "url": "https://www.barnebys.com/page/terms-of-use",
+    "summary": "Service is free for private, legal use only; commercial or systematic use is forbidden; no access by methods not approved by Barnebys; no copying/republishing partner material. (Terms dated 2022-07-01.)",
+    "quote": "\"Any use for commercial or systematic purposes ... is forbidden.\""
+   },
+   "saved_search_alerts": {
+    "offered": "Yes: 'search alerts' - email notification when new items matching a saved search are listed; managed on 'My pages'.",
+    "account_required": "Yes",
+    "free": "Yes - terms say Barnebys provides the Services for free",
+    "help_url": "https://www.barnebys.com/page/faq"
+   },
+   "other_channels": "sitemap.xml in robots. Newsletter subscribe form in footer. Barnebys is itself an aggregator linking out via /re/ and /redirect.",
+   "prices_realized_access": "Terms: the price comparison (final prices) service is used via a registered user account (account required).",
+   "notes": "Next.js site; homepage server-rendered; no challenge.",
+   "urls_fetched": [
+    [
+     "https://www.barnebys.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.barnebys.com/",
+     200
+    ],
+    [
+     "https://www.barnebys.com/page/terms-of-use",
+     200
+    ],
+    [
+     "https://www.barnebys.com/page/faq",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "Bidspirit",
+   "checked_at": "2026-10-04T20:35:30Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.bidspirit.com/robots.txt (also https://us.bidspirit.com/robots.txt, 200, same content)",
+    "star_rules_search": [
+     "User-agent: *",
+     "Disallow:   (empty - everything allowed)"
+    ],
+    "star_rules_lots": [
+     "Everything allowed for *"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "None.",
+    "sitemaps": [
+     "https://bidspirit-portal-static.global.ssl.fastly.net/prod/sitemaps/bidspirit.com/2026-10-04_01-59-46_updated_sitemap_index.xml",
+     "https://bidspirit-portal-static.global.ssl.fastly.net/prod/sitemaps/us.bidspirit.com/2026-10-04_01-49-24_updated_sitemap_index.xml"
+    ]
+   },
+   "search_url_pattern": "Not visible: homepage redirects to https://us.bidspirit.com/ui/home, an ~8 KB JS shell (single-page app) with no links.",
+   "lot_pages_allowed": "Yes per robots (empty Disallow), but content is JS-rendered.",
+   "terms_automation": {
+    "url": null,
+    "summary": "Not found - SPA shell exposes no terms link; not fetched.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "Not determined.",
+    "account_required": null,
+    "free": null,
+    "help_url": null
+   },
+   "other_channels": "Daily-regenerated sitemap index on Fastly CDN (date-stamped filenames). Android app (com.bidspirit.prod).",
+   "prices_realized_access": "Not determined.",
+   "notes": "JS-only rendering observed. Inline GlobalConfig lists 'allowedRegions' including ARCHAEOLOGY / ARCHEOLOGY and IL, suggesting an archaeology-specific portal (inferred; relevant given Israeli antiquities market). Sitemap filenames change daily.",
+   "urls_fetched": [
+    [
+     "https://www.bidspirit.com/robots.txt",
+     200
+    ],
+    [
+     "https://us.bidspirit.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.bidspirit.com/ (-> https://us.bidspirit.com/ui/home)",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "Lot-tissimo",
+   "checked_at": "2026-10-04T20:33:30Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.lot-tissimo.com/robots.txt",
+    "star_rules_search": [
+     "No rule matches /<culture>/search-results for *",
+     "Disallow: */*?Country=* , */*?callingPageUrl* , */*?preview*",
+     "Disallow: */en-gb*  (whole English-GB locale)"
+    ],
+    "star_rules_lots": [
+     "Disallow: */archivelot*",
+     "Disallow: */url-for-lot-number*",
+     "Disallow: */timed-bid-details*",
+     "Disallow: */en-gb*",
+     "Other locale lot/catalogue paths (e.g. /de-de/auction-catalogues/...) not disallowed"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "None.",
+    "sitemaps": [
+     "https://www.lot-tissimo.com/sitemapindex",
+     "https://www.lot-tissimo.com/lots_sitemapindex",
+     "https://www.lot-tissimo.com/auctions_sitemapindex",
+     "https://www.lot-tissimo.com/categories_sitemapindex",
+     "https://www.lot-tissimo.com/filteredpages_sitemapindex",
+     "https://www.lot-tissimo.com/auctioneers_sitemapindex",
+     "https://www.lot-tissimo.com/secondary_categories_sitemapindex"
+    ]
+   },
+   "search_url_pattern": "Homepage form: action=/de-de/search-results with input name 'searchTerm' -> /de-de/search-results?searchTerm={term} (inferred from the form; not fetched). Not disallowed for * except under /en-gb.",
+   "lot_pages_allowed": "Yes for * in non-en-gb locales (archive lots disallowed). Catalogue path seen: /de-de/auction-catalogues/<house>/catalogue-id-<id>; lot sub-path not observed. A dedicated lots sitemap index is listed.",
+   "terms_automation": {
+    "url": "https://www.lot-tissimo.com/de-de/about-us/legal/website-terms-and-conditions",
+    "summary": "(German) Content and data collections, incl. auction-house content, protected by copyright and database right; no systematic copying/reuse for commercial purposes, and no building a database containing substantial parts of lot-tissimo's databases for commercial purposes, without written consent. No explicit bot/scraper clause found by keyword search. Restrictions are framed around commercial use.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "Yes: 'Suchaufträge' (search orders) - email when new matching lots are added; catalogues searched daily; email includes images, lot descriptions, auction details; unlimited until cancelled.",
+    "account_required": "Yes ('Kostenlos registrieren')",
+    "free": "Yes (free registration advertised)",
+    "help_url": "https://www.lot-tissimo.com/de-de/auction-alerts (support centre support.lot-tissimo.com returned 403)"
+   },
+   "other_channels": "Seven sitemap indexes in robots incl. lots_sitemapindex. 'Preisdatenbank' (price database) and 'Ergebnisse' (results) in navigation.",
+   "prices_realized_access": "Not determined (Preisdatenbank exists; access level unknown).",
+   "notes": "Footer links the-saleroom.com, i-bidder.com, BidSpotter.co.uk and Antiques Trade Gazette - same Auction Technology Group platform family as the-saleroom (inferred), so page structure likely parallels the existing monitor's target. Support centre (Zendesk-style) 403.",
+   "urls_fetched": [
+    [
+     "https://www.lot-tissimo.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.lot-tissimo.com/ (-> /de-de)",
+     200
+    ],
+    [
+     "https://www.lot-tissimo.com/de-de/about-us/legal/website-terms-and-conditions",
+     200
+    ],
+    [
+     "https://www.lot-tissimo.com/de-de/auction-alerts",
+     200
+    ],
+    [
+     "https://support.lot-tissimo.com/hc/de",
+     403
+    ]
+   ]
+  },
+  {
+   "platform": "Drouot (drouot.com)",
+   "checked_at": "2026-10-04T20:33:30Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.drouot.com/robots.txt",
+    "star_rules_search": [
+     "User-agent: *",
+     "Content-Signal: search=yes,ai-train=no,use=reference",
+     "Allow: /"
+    ],
+    "star_rules_lots": [
+     "Allow: / (everything allowed for *)"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "Cloudflare-managed block. Disallow: / for GPTBot, ClaudeBot, anthropic-ai, Claude-Web, CCBot, Google-Extended, Applebot-Extended, Amazonbot, Bytespider, meta-externalagent, cohere-ai, MistralAI-Training, GoogleOther, Google-CloudVertexBot, KimiBot and others. ChatGPT-User and OAI-SearchBot are NOT named (fall under *: Allow /, with content signals). Preamble asserts content signals are EU DSM Directive Art. 4 rights reservations; ai-input is not specified.",
+    "sitemaps": []
+   },
+   "search_url_pattern": "Not visible in homepage HTML (client-rendered).",
+   "lot_pages_allowed": "Yes per robots for * (Allow: /). Sale pages /en/v/<id>-<slug> seen on homepage; lot path not observed.",
+   "terms_automation": {
+    "url": "https://drouot.com/en/cgu",
+    "summary": "Drouot SI claims all rights incl. sui generis database rights; users must not reproduce, extract or use all or part of the Platforms or their content, in particular Catalogues, without prior written authorisation. Separately, external software/scripts/robots are prohibited for placing bids.",
+    "quote": "\"refrain from reproducing, representing, extracting or using in any way whatsoever\""
+   },
+   "saved_search_alerts": {
+    "offered": "Yes: save a keyword search (with filters) as an alert; email when matching lots are posted, or app-only notifications.",
+    "account_required": "Yes",
+    "free": "Yes - account creation is free",
+    "help_url": "https://drouot.com/en/faq"
+   },
+   "other_channels": "Drouot mobile app (push alerts). Group publications Gazette Drouot and Le Moniteur des Ventes linked. No sitemap in robots, no RSS/API observed.",
+   "prices_realized_access": "Not determined.",
+   "notes": "www.drouot.com redirects to drouot.com/en. Homepage served to research UA without challenge despite Cloudflare-managed robots.",
+   "urls_fetched": [
+    [
+     "https://www.drouot.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.drouot.com/ (-> https://drouot.com/en)",
+     200
+    ],
+    [
+     "https://drouot.com/en/cgu",
+     200
+    ],
+    [
+     "https://drouot.com/en/faq",
+     200
+    ]
+   ]
+  },
+  {
+   "platform": "Gazette Drouot (gazette-drouot.com)",
+   "checked_at": "2026-10-04T20:36:00Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.gazette-drouot.com/robots.txt",
+    "star_rules_search": [
+     "Identical Cloudflare-managed file to drouot.com: User-agent: * / Content-Signal: search=yes,ai-train=no,use=reference / Allow: /"
+    ],
+    "star_rules_lots": [
+     "Allow: /"
+    ],
+    "crawl_delay_star": null,
+    "ai_agent_groups": "Same as drouot.com: GPTBot, ClaudeBot, CCBot, Google-Extended etc. Disallow: /; ChatGPT-User and OAI-SearchBot not named.",
+    "sitemaps": []
+   },
+   "search_url_pattern": "Not determined (homepage blocked).",
+   "lot_pages_allowed": "Allowed by robots for *, but homepage is behind a Cloudflare challenge.",
+   "terms_automation": {
+    "url": null,
+    "summary": "Not read - site behind Cloudflare challenge.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "Not determined.",
+    "account_required": null,
+    "free": null,
+    "help_url": null
+   },
+   "other_channels": "Not determined.",
+   "prices_realized_access": "Not determined.",
+   "notes": "Homepage returned 403 with Cloudflare 'Just a moment...' JS challenge to curl; WebFetch also 403. A browser agent would face the challenge (bypassing it is not appropriate).",
+   "urls_fetched": [
+    [
+     "https://www.gazette-drouot.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.gazette-drouot.com/",
+     403
+    ],
+    [
+     "WebFetch https://www.gazette-drouot.com/",
+     403
+    ]
+   ]
+  },
+  {
+   "platform": "Heritage Auctions (ha.com)",
+   "checked_at": "2026-10-04T20:36:00Z",
+   "robots_txt": {
+    "status": 200,
+    "url": "https://www.ha.com/robots.txt",
+    "star_rules_search": [
+     "User-agent: *",
+     "Crawl-delay: 15",
+     "/c/search-results.zx is NOT disallowed for * (it is disallowed only for twiceler and Baiduspider)",
+     "Disallow: /c/my/wantlist.zx",
+     "Disallow: /c/ecatalog.zx",
+     "Disallow: /live.zx"
+    ],
+    "star_rules_lots": [
+     "Disallow: /c/error/invalid-lot.zx",
+     "Disallow: /c/bid.zx , /c/bid-review.zx , /c/prlink.zx",
+     "No rule matching ordinary lot item pages (path shape not observed; HA item pages are commonly /itm/... - inferred)"
+    ],
+    "crawl_delay_star": 15,
+    "ai_agent_groups": "No GPTBot/ChatGPT-User/OAI-SearchBot/ClaudeBot groups. Amazonbot Disallow: /; SemrushBot, PetalBot, MegaIndex, Twitterbot etc. disallowed; bingbot Crawl-delay 10.",
+    "sitemaps": [
+     "https://www.ha.com/sitemap.zx"
+    ]
+   },
+   "search_url_pattern": "robots references /c/search-results.zx (query shape not visible; homepage blocked). Not disallowed for *, crawl-delay 15.",
+   "lot_pages_allowed": "Probably yes for * by robots (only error/bid/cart paths blocked), crawl-delay 15. But the site serves a DataDome captcha to the research UA, so the existing script could not read them in practice.",
+   "terms_automation": {
+    "url": null,
+    "summary": "Not read - homepage and a terms URL attempt returned DataDome/403.",
+    "quote": null
+   },
+   "saved_search_alerts": {
+    "offered": "'Want List' exists (inferred from robots path /c/my/wantlist.zx, a logged-in area); not confirmed from help pages.",
+    "account_required": "Yes (inferred: /c/my/)",
+    "free": "Not determined",
+    "help_url": null
+   },
+   "other_channels": "sitemap.zx listed in robots. Not otherwise determined.",
+   "prices_realized_access": "Not determined.",
+   "notes": "Homepage returned 403 with DataDome ('captcha-delivery.com') 'Please enable JS and disable any ad blocker'. WebFetch of a guessed terms URL (/c/terms-and-conditions.zx) also 403 - the URL itself is unverified.",
+   "urls_fetched": [
+    [
+     "https://www.ha.com/robots.txt",
+     200
+    ],
+    [
+     "https://www.ha.com/",
+     403
+    ],
+    [
+     "WebFetch https://www.ha.com/c/terms-and-conditions.zx (guessed URL)",
+     403
+    ]
+   ]
+  }
+ ],
+ "houses_and_dealers": [
+  {
+   "site": "Kedem Auction House",
+   "checked_at": "2026-10-04T20:42:00Z",
+   "domain": "kedem-auctions.com (www.kedem-auctions.com); also sells through il.bidspirit.com/ui/houses/kedem",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 403,
+    "note": "Cloudflare managed challenge ('Just a moment...', cf-mitigated: challenge) returned for /robots.txt to both curl and WebFetch; rules could not be read.",
+    "star_rules": null,
+    "crawl_delay": null,
+    "ai_agent_groups": null,
+    "platform_bidspirit_robots": "il.bidspirit.com/robots.txt (200): 'User-agent: * / Disallow:' (everything allowed) plus a sitemap; no AI-agent groups."
+   },
+   "search_url_pattern": null,
+   "search_note": "Not observable (homepage behind Cloudflare challenge).",
+   "static_listing": {
+    "url": null,
+    "titles_in_raw_html": null,
+    "note": "Own site unreachable without a JS challenge. Bidspirit house page (fetched under the Deutsch entry, same platform) is a JS single-page app: raw HTML held only the page title, no lots."
+   },
+   "platform_used": [
+    "own site (kedem-auctions.com)",
+    "Bidspirit (il.bidspirit.com) for preliminary and live bidding [web search]",
+    "Invaluable house page exists [web search]"
+   ],
+   "on_the_saleroom": "not seen",
+   "terms_automation": {
+    "url": null,
+    "stance": "Not read; site blocked by Cloudflare challenge."
+   },
+   "alerts": "Unknown from fetches. Inference: Kedem is known to mail printed/PDF catalogues and Bidspirit offers account-based follow/notification features; neither verified here.",
+   "notes": "Cloudflare bot challenge on every path including robots.txt. Web search shows Kedem has offered at least one Babylonian Jewish Aramaic incantation bowl (kedem-auctions.com/en/incantation-bowl-0). Candidate for agent check or Invaluable/Bidspirit alerts only.",
+   "urls_fetched": [
+    {
+     "url": "https://www.kedem-auctions.com/robots.txt",
+     "status": 403,
+     "at": "2026-10-04T20:32:10Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.kedem-auctions.com/",
+     "status": 403,
+     "at": "2026-10-04T20:34:01Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.kedem-auctions.com/robots.txt",
+     "status": 403,
+     "at": "2026-10-04T20:42:00Z",
+     "tool": "WebFetch",
+     "at_is_approximate": true
+    }
+   ]
+  },
+  {
+   "site": "Apollo Art Auctions",
+   "checked_at": "2026-10-04T20:41:21Z",
+   "domain": "apolloauctions.com (marketing site on Wix) + auction.apolloauctions.com (bidding catalogue on AuctionMobility). apolloartauctions.com does not resolve (DNS failure).",
+   "type": "auction house (with associated dealer gallery Apollo Galleries)",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "www.apolloauctions.com: 'User-agent: * / Allow: / / Disallow: *?lightbox='. auction.apolloauctions.com: 'User-agent: * / Disallow:' (all allowed) with 'Crawl-delay: 10'.",
+    "crawl_delay": "10 s on auction.apolloauctions.com; none for * on www",
+    "ai_agent_groups": "None. Only AdsBot-Google, PetalBot (blocked), dotbot/AhrefsBot (crawl-delay 10)."
+   },
+   "search_url_pattern": "https://www.apolloauctions.com/search?q={term} (Wix site search form); auction.apolloauctions.com has an Angular 'Search All Lots' field (name=search), client-side.",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.apolloauctions.com/ancient-art-antiquities",
+    "titles_in_raw_html": false,
+    "note": "Department page is server-rendered by Wix but lists only upcoming sale titles (e.g. 'Fine Ancient Art & Antiquities - The Prince Collection') with links to auction.apolloauctions.com; no lot titles. The AuctionMobility catalogue (auction.apolloauctions.com) is an Angular app; raw HTML carries sale titles in embedded JSON but lots are not visible without JS (not fetched per-lot)."
+   },
+   "platform_used": [
+    "own AuctionMobility white-label (auction.apolloauctions.com)",
+    "the-saleroom",
+    "Invaluable",
+    "LiveAuctioneers",
+    "Interencheres (all four named in the auction site's own sale description)"
+   ],
+   "on_the_saleroom": "yes (self-declared)",
+   "terms_automation": {
+    "url": "https://www.apolloauctions.com/terms-and-conditions (same text at auction.apolloauctions.com/conditions-of-sale/)",
+    "stance": "No clause on bots, scraping, or automated access. Clause 10.3 limits the website to personal or internal business use and bars reproducing all or a substantial part of the site.",
+    "quote": "\"The Website is made for your personal or internal business use only.\""
+   },
+   "alerts": "Newsletter sign-up; Wix blog RSS at /blog-feed.xml (press posts, not lots); AuctionMobility mobile app; catalogues also on Issuu (linked from apollogalleries.com/catalogues).",
+   "notes": "No bot challenge observed. Already reachable via the-saleroom for live sales.",
+   "urls_fetched": [
+    {
+     "url": "https://www.apolloartauctions.com/robots.txt",
+     "status": 0,
+     "at": "2026-10-04T20:32:12Z",
+     "tool": "curl",
+     "error": "curl: (6) Could not resolve host: www.apolloartauctions.com"
+    },
+    {
+     "url": "https://www.apolloauctions.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:33:43Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://auction.apolloauctions.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:33:48Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.apolloauctions.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:03Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://auction.apolloauctions.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:45Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.apolloauctions.com/terms-and-conditions",
+     "status": 200,
+     "at": "2026-10-04T20:37:17Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://auction.apolloauctions.com/conditions-of-sale/",
+     "status": 200,
+     "at": "2026-10-04T20:39:39Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.apolloauctions.com/ancient-art-antiquities",
+     "status": 200,
+     "at": "2026-10-04T20:41:21Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "TimeLine Auctions",
+   "checked_at": "2026-10-04T20:42:00Z",
+   "domain": "timelineauctions.com (www redirects 301 to apex)",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "User-agent: * / Allow: / / Disallow: /login/ / Disallow: /shop/",
+    "crawl_delay": null,
+    "ai_agent_groups": "None"
+   },
+   "search_url_pattern": null,
+   "search_note": "Homepage not readable (challenge).",
+   "static_listing": {
+    "url": null,
+    "titles_in_raw_html": null,
+    "note": "Homepage and terms page return Cloudflare managed challenge (403, cf-mitigated: challenge) to curl and WebFetch, although robots.txt itself was served."
+   },
+   "platform_used": [
+    "the-saleroom (catalogue IDs srtime10xxx, multi-day sales of 3,000+ lots) [web search]",
+    "own site"
+   ],
+   "on_the_saleroom": "yes",
+   "terms_automation": {
+    "url": "https://timelineauctions.com/terms-and-conditions/ (guessed path)",
+    "stance": "Not read: 403 Cloudflare challenge."
+   },
+   "alerts": "Unknown from fetches.",
+   "notes": "robots permits crawling, but Cloudflare blocks non-browser clients. Coverage already exists via the-saleroom; the own site would need a browser agent.",
+   "urls_fetched": [
+    {
+     "url": "https://www.timelineauctions.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:14Z",
+     "tool": "curl",
+     "final_url": "https://timelineauctions.com/robots.txt"
+    },
+    {
+     "url": "https://timelineauctions.com/",
+     "status": 403,
+     "at": "2026-10-04T20:34:05Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://timelineauctions.com/terms-and-conditions/",
+     "status": 403,
+     "at": "2026-10-04T20:37:53Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://timelineauctions.com/",
+     "status": 403,
+     "at": "2026-10-04T20:42:00Z",
+     "tool": "WebFetch",
+     "at_is_approximate": true
+    }
+   ]
+  },
+  {
+   "site": "Christie's",
+   "checked_at": "2026-10-04T20:39:34Z",
+   "domain": "christies.com",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "Disallow: */search, */searchresults.aspx, */AjaxPages, */lotimages, */livebidding/, */login/, */mychristies, */js/, */css/, */xml/. Lot, sale, and department pages are not disallowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": "None (only 'ezooms' blocked)."
+   },
+   "search_url_pattern": "https://www.christies.com/en/search?entry={term} (from homepage schema.org SearchAction)",
+   "search_allowed_by_robots": false,
+   "static_listing": {
+    "url": "https://www.christies.com/en/departments/ancient-art-and-antiquities",
+    "titles_in_raw_html": false,
+    "note": "Department intro text is server-rendered ('No upcoming Ancient Art and Antiquities auctions'); sale and lot modules render as 'Loading component...' (client-side)."
+   },
+   "platform_used": [
+    "own platform (Christie's LIVE / online sales)"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.christies.com/en/about/terms-and-conditions/terms-and-conditions-for-website-use",
+    "stance": "No explicit 'bot' or 'scraper' wording, but use of site material in any database, compilation, or networked computer environment for anything beyond personal browsing requires prior written permission. Restrictive for scripted collection.",
+    "quote": "\"for any purpose other than personal browsing of the Web Site\""
+   },
+   "alerts": "Department page offers 'Sign up for updates on Ancient Art and Antiquities auctions and exhibitions'. Inference: My Christie's account follow/lot alerts exist but were not examined.",
+   "notes": "No bot challenge on the pages fetched. Department sign-up email is the low-risk route.",
+   "urls_fetched": [
+    {
+     "url": "https://www.christies.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:15Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.christies.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:07Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.christies.com/en/about/terms-and-conditions/terms-and-conditions-for-website-use",
+     "status": 200,
+     "at": "2026-10-04T20:37:11Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.christies.com/en/departments/ancient-art-and-antiquities",
+     "status": 200,
+     "at": "2026-10-04T20:39:34Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Sotheby's",
+   "checked_at": "2026-10-04T20:41:17Z",
+   "domain": "sothebys.com",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "Crawl-delay: 15; Disallow: /pdf/, /*results.sale.pdf/, /*/auctions/ecatalogue/lot.pdf, /*/PDFs/, /minisite/pdf, /styleguide/*, /bsp-api/*, /en/docs/*, /fr/docs/*. No rule against /en/buy/auction/... lot pages or search.",
+    "crawl_delay": "15 s for *",
+    "ai_agent_groups": "None (groups for Googlebot, Bingbot, Yandex, Yeti, Slurp)."
+   },
+   "search_url_pattern": null,
+   "search_note": "Not present in raw homepage HTML (header search is client-side; homepage form method=post).",
+   "static_listing": {
+    "url": "https://www.sothebys.com/en/departments/antiquities (guessed; 404)",
+    "titles_in_raw_html": null,
+    "note": "Guessed department URL returned 404. Homepage raw HTML does contain server-rendered sale and lot URLs (/en/buy/auction/2026/...), so some SSR exists, but no antiquities listing was confirmed."
+   },
+   "platform_used": [
+    "own platform"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.sothebys.com/en/terms-conditions",
+    "stance": "Explicitly prohibits data mining, spidering, screen/database scraping, harvesting of catalogue information, or any other automatic means of obtaining information. Scripted monitoring would breach terms regardless of robots.txt.",
+    "quote": "\"harvesting of catalogue information\""
+   },
+   "alerts": "Site RSS link at /en/index.rss (in homepage HTML; not fetched); newsletter sign-up; digital catalogues (/en/digital-catalogues/...). Inference: account-based 'follow' alerts exist; not examined.",
+   "notes": "404 on guessed /en/terms-of-use; correct terms URL found by web search. No bot challenge on fetched pages.",
+   "urls_fetched": [
+    {
+     "url": "https://www.sothebys.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:17Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.sothebys.com/en/",
+     "status": 200,
+     "at": "2026-10-04T20:34:09Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.sothebys.com/en/terms-of-use",
+     "status": 404,
+     "at": "2026-10-04T20:37:13Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.sothebys.com/en/terms-conditions",
+     "status": 200,
+     "at": "2026-10-04T20:39:35Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.sothebys.com/en/departments/antiquities",
+     "status": 404,
+     "at": "2026-10-04T20:41:17Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Bonhams",
+   "checked_at": "2026-10-04T20:41:19Z",
+   "domain": "bonhams.com",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "Disallow: /ldc/, /vms-assets/, */aggregate$, */head_image*. Search, department, auction, and lot pages are not disallowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": "Only Bytespider is blocked (Disallow: /). No GPTBot/ChatGPT-User/OAI-SearchBot groups."
+   },
+   "search_url_pattern": "https://www.bonhams.com/search/?query={term} (GET form, input name=query)",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.bonhams.com/department/ANT/ (redirects to /department/ANT/antiquities/)",
+    "titles_in_raw_html": "partial",
+    "note": "Next.js server-rendered page. Raw HTML has department text, past highlight lots with titles and prices, and about 25 /auction/NNNNN/ links; no clear list of upcoming lots in the visible text. Upcoming-sale data may be in __NEXT_DATA__ JSON (not parsed)."
+   },
+   "platform_used": [
+    "own platform (bonhams.com; group also runs Bukowskis, Bruun Rasmussen)"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.bonhams.com/legals/9944/ (Conditions of Website use)",
+    "stance": "No bot/scraper clause. Allows printing one copy for personal reference; reproduction needs prior written consent. Metadata-only monitoring is not expressly addressed.",
+    "quote": "\"you may not reproduce or permit anyone else to reproduce such material\""
+   },
+   "alerts": "Email newsletter sign-up (footer); digital catalogues at catalogues.bonhams.com. Inference: My Bonhams account lot alerts; not examined.",
+   "notes": "No bot challenge observed. Best scriptable candidate among the majors (permissive robots, SSR, no anti-bot clause); still confirm with Bonhams for anything beyond light metadata checks.",
+   "urls_fetched": [
+    {
+     "url": "https://www.bonhams.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:19Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.bonhams.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:12Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.bonhams.com/legals",
+     "status": 200,
+     "at": "2026-10-04T20:37:15Z",
+     "tool": "curl",
+     "final_url": "https://www.bonhams.com/legals/"
+    },
+    {
+     "url": "https://www.bonhams.com/legals/9944/",
+     "status": 200,
+     "at": "2026-10-04T20:39:37Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.bonhams.com/department/ANT/",
+     "status": 200,
+     "at": "2026-10-04T20:41:19Z",
+     "tool": "curl",
+     "final_url": "https://www.bonhams.com/department/ANT/antiquities/"
+    }
+   ]
+  },
+  {
+   "site": "Freeman's | Hindman (Freeman's)",
+   "checked_at": "2026-10-04T20:42:00Z",
+   "domain": "freemansauction.com (the firm rebranded from Freeman's | Hindman to Freeman's; hindmanauctions.com redirects there)",
+   "type": "auction house",
+   "robots_txt": {
+    "status": "hindmanauctions.com/robots.txt 200; freemansauction.com/robots.txt 429 (Vercel Security Checkpoint)",
+    "star_rules": "From hindmanauctions.com: User-agent: * / Disallow: /account*, /invoices*, /cdn-cgi/*; Sitemap: https://freemansauction.com/sitemap.xml",
+    "crawl_delay": null,
+    "ai_agent_groups": "None in the hindmanauctions.com copy."
+   },
+   "search_url_pattern": null,
+   "search_note": "Homepage blocked.",
+   "static_listing": {
+    "url": "https://freemansauction.com/departments/antiquities-ancient-art (from web search; not fetchable)",
+    "titles_in_raw_html": null,
+    "note": "Homepage redirect from hindmanauctions.com landed on freemansauction.com with HTTP 429 and x-vercel-mitigated: challenge."
+   },
+   "platform_used": [
+    "own platform",
+    "Invaluable (two house pages) [web search]",
+    "LiveAuctioneers (featured auctioneer) [web search]"
+   ],
+   "on_the_saleroom": "not seen",
+   "terms_automation": {
+    "url": null,
+    "stance": "Not read (Vercel challenge)."
+   },
+   "alerts": "Unknown from fetches; Invaluable/LiveAuctioneers saved-search alerts would cover its sales there (inference).",
+   "notes": "Vercel bot challenge (429) for curl and WebFetch. Agent or aggregator alerts only.",
+   "urls_fetched": [
+    {
+     "url": "https://hindmanauctions.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:20Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://freemansauction.com/robots.txt",
+     "status": 429,
+     "at": "2026-10-04T20:33:46Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://hindmanauctions.com/",
+     "status": 429,
+     "at": "2026-10-04T20:34:14Z",
+     "tool": "curl",
+     "final_url": "https://freemansauction.com/"
+    },
+    {
+     "url": "https://freemansauction.com/robots.txt",
+     "status": 429,
+     "at": "2026-10-04T20:42:00Z",
+     "tool": "WebFetch",
+     "at_is_approximate": true
+    }
+   ]
+  },
+  {
+   "site": "Artemis Gallery / Artemis Fine Arts",
+   "checked_at": "2026-10-04T20:41:25Z",
+   "domain": "artemisgallery.com (shop, WordPress/WooCommerce) + auctions.artemisgallery.com (auction catalogue)",
+   "type": "both (weekly online auctions + gallery shop)",
+   "robots_txt": {
+    "status": "200 (www); auctions.artemisgallery.com/robots.txt returned 403 'Access Denied' block page",
+    "star_rules": "www: 'User-agent: * / Disallow:' (everything allowed).",
+    "crawl_delay": null,
+    "ai_agent_groups": "None."
+   },
+   "search_url_pattern": "https://www.artemisgallery.com/?s={term} (WordPress search, input name=s)",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.artemisgallery.com/product-category/culture/neareast/",
+    "titles_in_raw_html": false,
+    "note": "Server-rendered category shell with intro text, but no product titles or /product/ links in raw HTML (products load client-side, or the category is empty)."
+   },
+   "platform_used": [
+    "Invaluable (seller since 2011; auctions.artemisgallery.com URL pattern matches Invaluable house sites — inference)",
+    "LiveAuctioneers [web search]",
+    "Arte Primitivo co-hosted sales"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.artemisgallery.com/terms/",
+    "stance": "Sale terms only; no clause on bots, scraping, or automated access found."
+   },
+   "alerts": "WordPress RSS (/feed/, likely posts not products); auction catalogues on Invaluable/LiveAuctioneers support saved-search keyword alerts (platform feature, inference).",
+   "notes": "Auction subdomain blocked even robots.txt (security block page). Shop scriptable in principle, but listing HTML lacked titles.",
+   "urls_fetched": [
+    {
+     "url": "https://www.artemisgallery.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:22Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.artemisgallery.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:16Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.artemisgallery.com/terms/",
+     "status": 200,
+     "at": "2026-10-04T20:37:27Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.artemisgallery.com/product-category/culture/neareast/",
+     "status": 200,
+     "at": "2026-10-04T20:39:42Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://auctions.artemisgallery.com/robots.txt",
+     "status": 403,
+     "at": "2026-10-04T20:41:25Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Hixenbaugh Ancient Art",
+   "checked_at": "2026-10-04T20:37:30Z",
+   "domain": "hixenbaugh.net",
+   "type": "dealer",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "WooCommerce/Yoast defaults: Disallow /wp-admin/, wc-logs, add-to-cart params; second block 'User-agent: * / Disallow:'. Category and product pages allowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": "None."
+   },
+   "search_url_pattern": null,
+   "search_note": "No search form in homepage HTML (WordPress ?s= likely works; inference).",
+   "static_listing": {
+    "url": "https://hixenbaugh.net/product-category/near-eastern-art/",
+    "titles_in_raw_html": true,
+    "note": "Server-rendered: two product titles ('Hittite Limestone Stele with a God', 'Phoenician Limestone Sarcophagus Mask') and /product/ links present in raw HTML."
+   },
+   "platform_used": [
+    "own site",
+    "LiveAuctioneers (2 past catalogues) [web search]"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": null,
+    "stance": "Footer has 'Privacy Policy' and 'Terms of Service' headings (popup widgets); no text on automation found in fetched HTML."
+   },
+   "alerts": "'Join our mailing list' form with a 'Collecting Interest' field.",
+   "notes": "No challenge. Scriptable: robots permissive, static HTML, small inventory.",
+   "urls_fetched": [
+    {
+     "url": "https://hixenbaugh.net/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:25Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://hixenbaugh.net/",
+     "status": 200,
+     "at": "2026-10-04T20:34:19Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://hixenbaugh.net/product-category/near-eastern-art/",
+     "status": 200,
+     "at": "2026-10-04T20:37:30Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Barakat Gallery",
+   "checked_at": "2026-10-04T20:42:45Z",
+   "domain": "barakatgallery.eu (live Artlogic site, London/Seoul). barakatgallery.com now serves a parked-domain '/lander' redirect; store.barakatgallery.com (former auction/store) fails TLS.",
+   "type": "dealer (formerly ran its own online auctions)",
+   "robots_txt": {
+    "status": "barakatgallery.eu 200; barakatgallery.com 200 (parking-page robots: Allow /)",
+    "star_rules": "barakatgallery.eu: Disallow /admin/, /embed/, /get/, /api/, /media/ plus ~1,450 SQL-injection-pattern disallows. Artworks/category pages allowed.",
+    "crawl_delay": "none for *; SemrushBot 10",
+    "ai_agent_groups": "meta-externalagent blocked; no OpenAI groups."
+   },
+   "search_url_pattern": "https://barakatgallery.eu/search/?search={term} (GET form)",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://barakatgallery.eu/artworks/",
+    "titles_in_raw_html": false,
+    "note": "Server-rendered hub listing categories (incl. /artworks/categories/165-near-eastern/ and /167-biblical/) as image tiles; no item titles on the hub. Category pages not fetched (one-listing limit). Artlogic sites generally server-render (inference)."
+   },
+   "platform_used": [
+    "own site",
+    "LiveAuctioneers (2 past catalogues, 2017) [web search]"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": null,
+    "stance": "No terms page linked from the .eu site."
+   },
+   "alerts": "Mailing-list sign-up (Artlogic).",
+   "notes": "store.barakatgallery.com: curl TLS error (LibreSSL SSL alert on connect). Scriptable candidate via a Near Eastern/Biblical category page once that page is checked.",
+   "urls_fetched": [
+    {
+     "url": "https://barakatgallery.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:26Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://barakatgallery.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:20Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://barakatgallery.eu/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:35:13Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://barakatgallery.eu/",
+     "status": 200,
+     "at": "2026-10-04T20:35:18Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://barakatgallery.eu/artworks/",
+     "status": 200,
+     "at": "2026-10-04T20:37:33Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://store.barakatgallery.com/robots.txt",
+     "status": 0,
+     "at": "2026-10-04T20:42:41Z",
+     "tool": "curl",
+     "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name"
+    },
+    {
+     "url": "https://store.barakatgallery.com/",
+     "status": 0,
+     "at": "2026-10-04T20:42:45Z",
+     "tool": "curl",
+     "error": "curl: (35) LibreSSL/3.3.6: error:1404B458:SSL routines:ST_CONNECT:tlsv1 unrecognized name"
+    }
+   ]
+  },
+  {
+   "site": "Archaeological Center / Robert Deutsch (Deutsch Auction)",
+   "checked_at": "2026-10-04T20:40:05Z",
+   "domain": "archaeological-center.com (defunct as a site); auctions appear on il.bidspirit.com/ui/houses/deutsch",
+   "type": "both (dealer + auction house)",
+   "robots_txt": {
+    "status": 404,
+    "star_rules": null,
+    "crawl_delay": null,
+    "ai_agent_groups": null,
+    "platform_bidspirit_robots": "il.bidspirit.com/robots.txt 200: all allowed for *."
+   },
+   "search_url_pattern": null,
+   "static_listing": {
+    "url": "https://il.bidspirit.com/ui/houses/deutsch,false?lang=en",
+    "titles_in_raw_html": false,
+    "note": "Homepage is a meta-refresh to a Facebook page (comment says 'As of September 2016'). Bidspirit house page is a JS single-page app; raw HTML holds only the page title."
+   },
+   "platform_used": [
+    "Bidspirit (house slug 'deutsch'; identification with Robert Deutsch is an inference from search results)"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": null,
+    "stance": "No site terms. Bidspirit terms not read."
+   },
+   "alerts": "Facebook page only; Bidspirit account notifications (inference).",
+   "notes": "No usable own website. Agent check of the Bidspirit house page is the only route.",
+   "urls_fetched": [
+    {
+     "url": "https://www.archaeological-center.com/robots.txt",
+     "status": 404,
+     "at": "2026-10-04T20:32:28Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.archaeological-center.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:22Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://il.bidspirit.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:35:15Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://il.bidspirit.com/ui/houses/deutsch,false?lang=en",
+     "status": 200,
+     "at": "2026-10-04T20:40:05Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Trocadero (incl. Ostracon's store)",
+   "checked_at": "2026-10-04T20:41:33Z",
+   "domain": "trocadero.com",
+   "type": "dealer marketplace (online mall of independent dealers)",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "Crawl-delay: 5; Disallow: /php/, /cgi-bin/, /directory/search.php, faceted /directory/* and /stores/*/catalog/* sort/view params, /stores/*/catalog/query.php?*sp=0*, many inactive store paths. Plain /directory/... category pages and /stores/{name}/items/... allowed.",
+    "crawl_delay": "5 s for *",
+    "ai_agent_groups": "GPTBot, ClaudeBot, anthropic-ai, Google-Extended, CCBot, Applebot-Extended, meta-externalagent, Bytespider, Cohere-Ai, Amazonbot and others: Disallow: /. Also python-requests, aiohttp, Go-http-client blocked by UA. ChatGPT-User and OAI-SearchBot are not named."
+   },
+   "search_url_pattern": "https://www.trocadero.com/directory/search.php (keyword form)",
+   "search_allowed_by_robots": false,
+   "static_listing": {
+    "url": "https://www.trocadero.com/directory/Antiques/Regional-Art/Ancient-World",
+    "titles_in_raw_html": false,
+    "note": "307 redirect to a proof-of-work browser check (/php/_xsite/doPOW.php, 'Checking browser...'). curl followed the redirect automatically, so one request reached the robots-disallowed /php/ path; flagged here."
+   },
+   "platform_used": [
+    "own marketplace"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.trocadero.com/terms/",
+    "stance": "Member/seller terms; no clause on bots or scraping. Help page also silent."
+   },
+   "alerts": "None seen for buyers in fetched pages; individual dealers (e.g. Ostracon) run their own newsletters.",
+   "notes": "Proof-of-work JS challenge on directory pages; robots excludes AI crawlers by name. Not scriptable; agent use is also against the spirit of its AI-crawler blocks (ChatGPT-User not named, so formally unaddressed).",
+   "urls_fetched": [
+    {
+     "url": "https://www.trocadero.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:30Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.trocadero.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:24Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.trocadero.com/terms/",
+     "status": 200,
+     "at": "2026-10-04T20:37:35Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.trocadero.com/directory/Antiques/Regional-Art/Ancient-World",
+     "status": 200,
+     "at": "2026-10-04T20:39:44Z",
+     "tool": "curl",
+     "final_url": "https://www.trocadero.com/php/_xsite/doPOW.php?returl=https%3A%2F%2Fwww.trocadero.com%2Fdirectory%2Fdirectory.php%3Fcategory%3DAntiques%252FRegional-Art%252FAncient-World%26_X_POW_NO_REDIR_X_%3D1&r1=8400&r2=667&r3=5005"
+    },
+    {
+     "url": "https://www.trocadero.com/help/",
+     "status": 200,
+     "at": "2026-10-04T20:41:33Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Ostracon Ancient Art",
+   "checked_at": "2026-10-04T20:39:46Z",
+   "domain": "ostracon.ch (Galerie Ostracon, Rüschlikon, Switzerland); also a Trocadero store",
+   "type": "dealer",
+   "robots_txt": {
+    "status": 404,
+    "star_rules": "No robots.txt (IIS 404) — by convention all paths allowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": null
+   },
+   "search_url_pattern": null,
+   "search_note": "No search on site.",
+   "static_listing": {
+    "url": "https://www.ostracon.ch/homeCatalogueNearEastern.html",
+    "titles_in_raw_html": false,
+    "note": "Static hand-built HTML. ~19 thumbnail links to item pages with descriptive German slugs (e.g. News2023/loewe/loewe.htm, News2022/hacilarTopfKreise/...); no text titles, but new items are detectable by new hrefs."
+   },
+   "platform_used": [
+    "own site",
+    "Trocadero store (/stores/Ostracon/)"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.ostracon.ch/homeTerms.html",
+    "stance": "Sale terms (Swiss jurisdiction); nothing on automated access."
+   },
+   "alerts": "'current newsletter' page (homeNewsletterAktuell.html) and 'sold items' page.",
+   "notes": "No challenge. Scriptable by link-diffing the category pages.",
+   "urls_fetched": [
+    {
+     "url": "https://www.ostracon.ch/robots.txt",
+     "status": 404,
+     "at": "2026-10-04T20:32:33Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.ostracon.ch/",
+     "status": 200,
+     "at": "2026-10-04T20:34:26Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.ostracon.ch/homeTerms.html",
+     "status": 200,
+     "at": "2026-10-04T20:37:37Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.ostracon.ch/homeCatalogueNearEastern.html",
+     "status": 200,
+     "at": "2026-10-04T20:39:46Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Christoph Bacher Archäologie Ancient Art",
+   "checked_at": "2026-10-04T20:39:48Z",
+   "domain": "cb-gallery.com (Vienna)",
+   "type": "dealer",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "WooCommerce defaults: Disallow /wp-admin/, wc-logs, add-to-cart params. Category/product pages allowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": "None."
+   },
+   "search_url_pattern": "https://www.cb-gallery.com/en/?s={term} (WordPress/WooCommerce search)",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.cb-gallery.com/en/category/alterorient/",
+    "titles_in_raw_html": true,
+    "note": "Server-rendered WooCommerce list: 'Showing 1–12 of 51 results' with titles (e.g. 'Old Babylonian Terracotta Plaque of the Moon Goddess Ningal', 'Large Cuneiform Barrel of Sin-Iddinam')."
+   },
+   "platform_used": [
+    "own shop"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.cb-gallery.com/en/agb/",
+    "stance": "Sale terms (AGB); nothing on bots, scraping, or automated access."
+   },
+   "alerts": "MailPoet newsletter subscription form; WordPress RSS /en/feed/ (posts; product feed not verified).",
+   "notes": "No challenge. Scriptable: robots permissive, SSR titles, 'Sort by latest' option.",
+   "urls_fetched": [
+    {
+     "url": "https://www.cb-gallery.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:35Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.cb-gallery.com/en/",
+     "status": 200,
+     "at": "2026-10-04T20:34:28Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.cb-gallery.com/en/agb/",
+     "status": 200,
+     "at": "2026-10-04T20:37:39Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.cb-gallery.com/en/category/alterorient/",
+     "status": 200,
+     "at": "2026-10-04T20:39:48Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Artemission",
+   "checked_at": "2026-10-04T20:39:51Z",
+   "domain": "artemission.com (Atticart Ltd, London)",
+   "type": "dealer (also holds auctions via aggregators)",
+   "robots_txt": {
+    "status": 404,
+    "star_rules": "No robots.txt (IIS 404) — by convention all allowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": null
+   },
+   "search_url_pattern": "https://www.artemission.com/SearchResults.aspx?q={term}",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.artemission.com/ViewItems.aspx?CategoryID=1 (Near East)",
+    "titles_in_raw_html": true,
+    "note": "ASP.NET server-rendered: 18 items with titles and USD prices (e.g. 'Large Luristan Bronze Master-of-Animals Standard'). Site also has /NewAdditions.aspx and categories for Cuneiform & Tablets (91), Seals, Manuscripts."
+   },
+   "platform_used": [
+    "own site",
+    "LiveAuctioneers (54 past catalogues) [web search]",
+    "Invaluable [web search]"
+   ],
+   "on_the_saleroom": "no",
+   "terms_automation": {
+    "url": "https://www.artemission.com/About.aspx?about=AboutOrdering",
+    "stance": "Ordering terms; nothing on automated access."
+   },
+   "alerts": "'New Additions' page (/NewAdditions.aspx) — ideal for a weekly diff; no newsletter seen.",
+   "notes": "No challenge. Scriptable.",
+   "urls_fetched": [
+    {
+     "url": "https://www.artemission.com/robots.txt",
+     "status": 404,
+     "at": "2026-10-04T20:32:37Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.artemission.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:30Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.artemission.com/About.aspx?about=AboutOrdering",
+     "status": 200,
+     "at": "2026-10-04T20:37:41Z",
+     "tool": "curl",
+     "final_url": "https://www.artemission.com/about.aspx?about=AboutOrdering"
+    },
+    {
+     "url": "https://www.artemission.com/ViewItems.aspx?CategoryID=1",
+     "status": 200,
+     "at": "2026-10-04T20:39:51Z",
+     "tool": "curl",
+     "final_url": "https://www.artemission.com/viewitems.aspx?CategoryID=1"
+    }
+   ]
+  },
+  {
+   "site": "Setdart",
+   "checked_at": "2026-10-04T20:39:53Z",
+   "domain": "setdart.com (Barcelona)",
+   "type": "auction house (online)",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "Disallow: /setdartsubastas/, /admin*, /images/, /modules/, /uploads/, /pic/, /tmp/ etc. /subasta/catalogo/... category and search paths are not disallowed.",
+    "crawl_delay": null,
+    "ai_agent_groups": "None (SemrushBot, *alexa*, Fasterfox blocked)."
+   },
+   "search_url_pattern": "POST to https://www.setdart.com/subasta/catalogo/q=search/ (field 'search'); not a GET URL",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.setdart.com/subasta/catalogo/categorias/arqueologia/",
+    "titles_in_raw_html": "partial",
+    "note": "Only the first lot is server-rendered (e.g. 'Máscara de sarcófago. Egipto, Baja Época...', lot no., estimate, sale date); the rest load via AJAX ('Cargar más')."
+   },
+   "platform_used": [
+    "own platform",
+    "the-saleroom (catalogues 'setdar10xxx') [web search]"
+   ],
+   "on_the_saleroom": "yes (some sales)",
+   "terms_automation": {
+    "url": "https://www.setdart.com/setdart/condiciones/newlang=spanish.html",
+    "stance": "Sale conditions reserve reproduction rights; nothing on bots or scraping. Legal notice (/setdart/legal/) not read."
+   },
+   "alerts": "Weekly email newsletter ('semanalmente') with highlights; 'Nuevos lotes' page.",
+   "notes": "No challenge. Partly scriptable; an agent or the-saleroom covers the rest.",
+   "urls_fetched": [
+    {
+     "url": "https://www.setdart.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:39Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.setdart.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:32Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.setdart.com/setdart/condiciones/newlang=spanish.html",
+     "status": 200,
+     "at": "2026-10-04T20:37:43Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.setdart.com/subasta/catalogo/categorias/arqueologia/",
+     "status": 200,
+     "at": "2026-10-04T20:39:53Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Auktionshaus Stahl",
+   "checked_at": "2026-10-04T20:39:56Z",
+   "domain": "auktionshaus-stahl.de (Hamburg)",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "User-agent: * / Disallow: /flip/ / Disallow: /flipbook/",
+    "crawl_delay": null,
+    "ai_agent_groups": "None."
+   },
+   "search_url_pattern": "https://www.auktionshaus-stahl.de/de/suchen?search={term} (GET)",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.auktionshaus-stahl.de/de/katalog",
+    "titles_in_raw_html": "sale titles only",
+    "note": "Server-rendered catalogue archive with sale/section names (e.g. 'Kunstgewerbe und Antiquitäten') and links to /de/katalog/287-kunstgewerbe-und-antiquitaeten; lot titles not on this page (section page not fetched)."
+   },
+   "platform_used": [
+    "own site",
+    "the-saleroom (catalogue 'stahl10000', ~30 past sales) [web search]"
+   ],
+   "on_the_saleroom": "yes",
+   "terms_automation": {
+    "url": "https://www.auktionshaus-stahl.de/de/agb",
+    "stance": "Auction terms; nothing on bots, scraping, or automated access."
+   },
+   "alerts": "Newsletter; printed catalogue order (/de/katalogbestellung); flipbook catalogues (robots-disallowed).",
+   "notes": "No challenge. Antiquities are a minor section (Kunstgewerbe und Antiquitäten). Already covered via the-saleroom.",
+   "urls_fetched": [
+    {
+     "url": "https://www.auktionshaus-stahl.de/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:41Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.auktionshaus-stahl.de/",
+     "status": 200,
+     "at": "2026-10-04T20:34:34Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.auktionshaus-stahl.de/de/agb",
+     "status": 200,
+     "at": "2026-10-04T20:37:45Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.auktionshaus-stahl.de/de/katalog",
+     "status": 200,
+     "at": "2026-10-04T20:39:56Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Fernando Durán",
+   "checked_at": "2026-10-04T20:41:31Z",
+   "domain": "fernandoduran.com (Madrid; redirects to /es/)",
+   "type": "auction house",
+   "robots_txt": {
+    "status": 200,
+    "star_rules": "Magento defaults: Disallow /checkout/, /customer/, /catalogsearch-related params, and 'Disallow: /*?' (all query-string URLs). Category/auction pages allowed.",
+    "crawl_delay": "none for * (BLEXBot, YandexBot 20)",
+    "ai_agent_groups": "None (MJ12bot, OrangeBot, Linguee, Seekport, AmazonProductDiscoverybot blocked)."
+   },
+   "search_url_pattern": "https://fernandoduran.com/es/catalogsearch/result/?q={term}",
+   "search_allowed_by_robots": false,
+   "static_listing": {
+    "url": "https://fernandoduran.com/es/auctions/current-upcoming-auctions/arte-antiguo-109.html",
+    "titles_in_raw_html": true,
+    "note": "Server-rendered Magento list: 24 of 706 lots per page with titles ('Lote 500: Pareja de leones guardianes en mármol...'). This is 'Arte Antiguo' (old art / antiques), not an archaeology section; paging needs ?p= which robots disallows."
+   },
+   "platform_used": [
+    "own site",
+    "Invaluable (since 2003) [web search]",
+    "Drouot [web search]"
+   ],
+   "on_the_saleroom": "not seen",
+   "terms_automation": {
+    "url": "https://fernandoduran.com/es/auction-terms (also /es/legal-notice)",
+    "stance": "Nothing on bots or scraping found in either page."
+   },
+   "alerts": "Newsletter (boletín) sign-up; FAQ at /es/faqs.",
+   "notes": "No challenge. Antiquities rarely offered; low priority.",
+   "urls_fetched": [
+    {
+     "url": "https://www.fernandoduran.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:44Z",
+     "tool": "curl",
+     "final_url": "https://fernandoduran.com/es/robots.txt"
+    },
+    {
+     "url": "https://fernandoduran.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:37Z",
+     "tool": "curl",
+     "final_url": "https://fernandoduran.com/es/"
+    },
+    {
+     "url": "https://fernandoduran.com/es/auction-terms",
+     "status": 200,
+     "at": "2026-10-04T20:37:48Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://fernandoduran.com/es/legal-notice",
+     "status": 200,
+     "at": "2026-10-04T20:39:58Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://fernandoduran.com/es/auctions/current-upcoming-auctions/arte-antiguo-109.html",
+     "status": 200,
+     "at": "2026-10-04T20:41:31Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Gorny & Mosch",
+   "checked_at": "2026-10-04T20:41:24Z",
+   "domain": "gmcoinart.de (Munich); lot catalogue on auktionen.gmcoinart.de",
+   "type": "auction house (coins and ancient art) with gallery",
+   "robots_txt": {
+    "status": "www 200; auktionen 200",
+    "star_rules": "www: Disallow /system/, /webadmin/, /service/, /module/captcha, /newsdetails, error pages. auktionen.gmcoinart.de: 'User-agent: * / Disallow: /' — only Googlebot, bingbot, DuckDuckBot, EcosiaBot, Bravebot, MetaGer-Bot allowed.",
+    "crawl_delay": "10 (auktionen; placement suggests the last group)",
+    "ai_agent_groups": "None named; all non-listed agents excluded from the lot platform."
+   },
+   "search_url_pattern": "https://www.gmcoinart.de/Suche (site search; form is ASP.NET POST)",
+   "search_allowed_by_robots": "www yes; auktionen lot platform no",
+   "static_listing": {
+    "url": "https://www.gmcoinart.de/antike-kunst",
+    "titles_in_raw_html": false,
+    "note": "Informational department page; no lots. Lots live on auktionen.gmcoinart.de, which robots closes to all but search engines."
+   },
+   "platform_used": [
+    "own platform (auktionen.gmcoinart.de)",
+    "the-saleroom (catalogues 'srgor10xxx') [web search]"
+   ],
+   "on_the_saleroom": "yes",
+   "terms_automation": {
+    "url": "https://www.gmcoinart.de/agb",
+    "stance": "Auction terms; nothing on bots or scraping. The robots Disallow on the lot platform is the operative restriction."
+   },
+   "alerts": "Newsletter (/newsletter-anmeldung); catalogue downloads (/kataloge_muenzen, Download section); auction calendar (/terminvorschau).",
+   "notes": "No challenge. Use the-saleroom coverage; own lot platform excluded by robots.",
+   "urls_fetched": [
+    {
+     "url": "https://www.gmcoinart.de/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:32:46Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.gmcoinart.de/",
+     "status": 200,
+     "at": "2026-10-04T20:34:39Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.gmcoinart.de/agb",
+     "status": 200,
+     "at": "2026-10-04T20:37:50Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.gmcoinart.de/antike-kunst",
+     "status": 200,
+     "at": "2026-10-04T20:40:00Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://auktionen.gmcoinart.de/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:41:24Z",
+     "tool": "curl"
+    }
+   ]
+  },
+  {
+   "site": "Pax Romana Auctions",
+   "checked_at": "2026-10-04T20:41:29Z",
+   "domain": "No live Pax Romana site: paxromanaauctions.com and paxromana.auction do not resolve; paxromana.co.uk is a parked '/lander' page; paxromanagallery.com redirects to apollogalleries.com, titled 'Apollo Galleries Ltd ... 25 Bury Place, WC1' (Pax Romana's former address).",
+   "type": "auction house + gallery (now apparently merged into Apollo Galleries / Apollo Art Auctions — inference from redirect, shared address, and shared founder Dr Ivan Bonchev)",
+   "robots_txt": {
+    "status": "apollogalleries.com 200",
+    "star_rules": "Wix default: Allow / ; Disallow *?lightbox=",
+    "crawl_delay": null,
+    "ai_agent_groups": "None."
+   },
+   "search_url_pattern": "https://www.apollogalleries.com/search-results?q={term} (Wix)",
+   "search_allowed_by_robots": true,
+   "static_listing": {
+    "url": "https://www.apollogalleries.com/catalogues",
+    "titles_in_raw_html": false,
+    "note": "Lists catalogue months (latest May 2024) linking to Issuu documents; no lots."
+   },
+   "platform_used": [
+    "the-saleroom (historic 'paxromana' catalogues)",
+    "LiveAuctioneers (historic)",
+    "now via Apollo Art Auctions platforms"
+   ],
+   "on_the_saleroom": "historic yes",
+   "terms_automation": {
+    "url": "https://www.apollogalleries.com/terms-and-conditions",
+    "stance": "Short page; nothing on bots or scraping."
+   },
+   "alerts": "Apollo Galleries newsletter; Issuu catalogues; blog RSS /blog-feed.xml.",
+   "notes": "Treat as covered by Apollo Art Auctions going forward.",
+   "urls_fetched": [
+    {
+     "url": "https://www.paxromanaauctions.com/robots.txt",
+     "status": 0,
+     "at": "2026-10-04T20:32:48Z",
+     "tool": "curl",
+     "error": "curl: (6) Could not resolve host: www.paxromanaauctions.com"
+    },
+    {
+     "url": "https://paxromana.co.uk/",
+     "status": 200,
+     "at": "2026-10-04T20:34:41Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://paxromanagallery.com/",
+     "status": 200,
+     "at": "2026-10-04T20:34:44Z",
+     "tool": "curl",
+     "final_url": "https://www.apollogalleries.com/"
+    },
+    {
+     "url": "https://www.apollogalleries.com/robots.txt",
+     "status": 200,
+     "at": "2026-10-04T20:37:52Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.apollogalleries.com/terms-and-conditions",
+     "status": 200,
+     "at": "2026-10-04T20:40:04Z",
+     "tool": "curl"
+    },
+    {
+     "url": "https://www.apollogalleries.com/catalogues",
+     "status": 200,
+     "at": "2026-10-04T20:41:29Z",
+     "tool": "curl"
+    }
+   ]
+  }
+ ]
+}

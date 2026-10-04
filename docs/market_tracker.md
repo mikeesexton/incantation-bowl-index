@@ -72,6 +72,10 @@ launchctl bootout gui/$(id -u)/org.incantation-bowl-index.market-monitor     # s
 
 To pause without unloading: `touch data/private/monitoring/market/DISABLED`.
 
+Platforms the monitor cannot read (robots.txt, terms, bot challenges or
+client-side rendering) are covered by the recon and proposed alert-email
+design in [`market_agent_pass.md`](market_agent_pass.md). It is not enabled yet.
+
 The monitor only collects. Review of its leads and results stays with Mike, or
 with Claude when Mike asks.
 
