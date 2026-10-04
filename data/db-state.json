@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "54b6ff1b2cf0b109e0194e137fbe1bb8166af89c7e62bb52f618816a6bde2479",
+  "corpus_digest": "b2912f0667b02fc51242c9124e53ff7f418d09f7b14ec94c2ee650d210f1c871",
   "migrations": 21,
-  "note": "Checkpoint128: Rasmussen2007 exact MS1911/2 contextual reference, companion routes, Miri request; 471 tests and complete private reader verified.",
-  "recorded_at": "2026-10-04T05:43:26+00:00",
+  "note": "Checkpoint129: nine checked Ford2002 synoptic/lexical readings, four complete scans, partial source assessment; 471 tests and complete private reader verified.",
+  "recorded_at": "2026-10-04T06:02:09+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "62758fb4c4d6638054f3127aba437fd70e742b131b4b0153ebc1c4f63a52e359",
-      "rows": 152
+      "digest": "e83aa724f1f4e0eb3e2d50c606a2de10fd78a4ca0600a1e213d297ada082c784",
+      "rows": 153
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "320e6d887633d040ce9ccf8994b1be407a335dc26e257feb8ad7512daeef47e4",
-      "rows": 2245
+      "digest": "6a40dd72bf874420ade825f90384e35ea22479abc7048775d7046cdf91762a24",
+      "rows": 2249
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -151,16 +151,16 @@
       "rows": 31
     },
     "text_proofreading_reviews": {
-      "digest": "af782c72a2f6d2c7c8a5441044e14f681c74e1869ba8c086a602ebacc4175d00",
-      "rows": 1946
+      "digest": "afb09d8e8e11b3a28fa2879da60cd2f932ffff6d7bac486d8c582f547c084b9c",
+      "rows": 1955
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "b2e41cd8567af6bfbc5a020e8e53be6ec16caf398c6637b5c3e03f8018f26e11",
-      "rows": 2402
+      "digest": "237863de53c7bee31098962c2923714a4e00d15d4502fed46e88ca4d848af164",
+      "rows": 2411
     }
   }
 }
