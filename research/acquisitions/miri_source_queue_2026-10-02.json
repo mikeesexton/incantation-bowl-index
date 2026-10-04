@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T06:27:58+00:00",
+  "updated_at": "2026-10-04T07:08:27+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -113,7 +113,7 @@
       "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
       "capture_id": "CAP-IBI-CP107-FORD2002",
       "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
-      "status": "Original work held;86checked reading rows including main editions and bounded quotations; remaining other-bowl/manuscript/general extraction open.",
+      "status": "Originalworkheld;96boundedFordreadingrowschecked; additional context/sourcewide extractionpartial.",
       "resolved_at": "2026-10-03T19:57:24+00:00",
       "checkpoint": 107,
       "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
@@ -128,9 +128,9 @@
         "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
         "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
       },
-      "reading_audit": "Checkpoint130: 64bounded Ford2002 lexical reading units separately captured/sourcechecked on existing BM91715 appearance:28Latin/English lemma pairs and8explicit Ford-reported Segal alternatives. Segal primary pages remain unheld; this verifies Ford’s actual reports only. Ten complete source pages33–34/36–43 and7enlarged controls viewed;8additional full source scans;25pixel recipes exact. Three missing Latin carons in draft repaired before ingestion with all initial copies retained. Actual variant descriptors/placeholders/square/angle/corner groups and English four-dot boundary retained; tentative readings/metal identification/epigraphic possibility and competing reports preserved without adjudication. Main/comparative readings125/126/129 unchanged. No new objects/appearances/identifiers/claims/sources/captures/identity/rights decisions. Ford extraction remains partial: MIT17/24/AO1177 other-bowl quotations, late-manuscript/contextual copies, further alternate glosses/claims/all-reference/sourcewide extraction open. Frozen249 histories/members exact33linked216unlinked/zero wholecasescomplete; Miri15resolved26remaining/no newaccessfailure. Goal active.",
+      "reading_audit": "Checkpoint131: ten bounded Ford2002 Latin/English quotation units checked, two source-page scans, six source appearances, two scoped candidates, three identifiers, five bibliographic assessments and one publication registry entry. MIT24 maps by explicit2005facsimilecontents plus heldMont39heading to existingCBS9005; Ford24 is citedparallelonly, no reading copied. NewMIT17 candidate has unknownphysicalaccession; noPognon1898numbermatch. ExactLouvreAO1177context corroborated by lawfulmuseumHTMLcapture; originalMüller-Kessler1999p113 remains unheld. OriginalYamauchi1967wrongworkURL/stalenotes repaired through immutableledger; separate2005facsimilepreviewsource. Tenfullpages/threecontrols viewed;15pixelrecipes exact. DC37(R)16-row native and providedEnglish separately checked as private nonbowl context artifacts, excludedfrombowlcounts; searchableartifactreaderpackaging pending. Ordinarypublisher44-pagepreview retained privately with200receipt after unmodifiedcollector permitsrobots404, capture registration pending existingtransferrequires200robots; not original1967/deposit/fullbody. Fordsourcewide extraction remains partial. Two precise Miri requests added (Yamauchi fullbook andMüller-Kessler1999fullarticle).",
       "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
-      "reading_audit_checked_at": "2026-10-04T06:27:58+00:00",
+      "reading_audit_checked_at": "2026-10-04T07:08:27+00:00",
       "checkpoint126_prior_reading_audit": {
         "source_id": "SRC-FORD2002-JANES",
         "fulfilled_by_source_id": "SRC-FORD2002-JANES",
@@ -310,6 +310,214 @@
             "reading_audit": "BM91715native32/English32–33 and BM91780native43–44/English44complete provided pairs captured/separatelychecked125. Source native24/15physicalrows22/20anchors/uncertain and restoredgroups/gaps/struckthroughword/sourcefootnotequalifications/actualdiacritics preserved. Ninecompletepagesviewed/twelvecontrols/43pixel-exactrecipes. PlateI47lateDC37(R)manuscriptphoto, not thirdbowl or bowlphoto; originalSegalphotos stillnotprovidedbythisarticle. Otherbowlcomparatives/lexical/general/relationship/interpretiveclaims/DC37(R)searchablecontext/wholeworkingOCRremainpartial; no wholecase/clay/scholarly/rights certification.",
             "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
             "reading_audit_checked_at": "2026-10-04T04:36:35+00:00"
+          }
+        }
+      },
+      "checkpoint131_prior_reading_audit": {
+        "source_id": "SRC-FORD2002-JANES",
+        "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+        "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+        "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+        "capture_id": "CAP-IBI-CP107-FORD2002",
+        "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+        "status": "Original work held;86checked reading rows including main editions and bounded quotations; remaining other-bowl/manuscript/general extraction open.",
+        "resolved_at": "2026-10-03T19:57:24+00:00",
+        "checkpoint": 107,
+        "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+        "prior_acquisition_request": {
+          "source_id": "SRC-FORD2002-JANES",
+          "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+          "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+          "priority": 2,
+          "status": "unheld original needed",
+          "checked_at": "2026-10-02T20:03:15+00:00",
+          "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+          "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+          "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+        },
+        "reading_audit": "Checkpoint130: 64bounded Ford2002 lexical reading units separately captured/sourcechecked on existing BM91715 appearance:28Latin/English lemma pairs and8explicit Ford-reported Segal alternatives. Segal primary pages remain unheld; this verifies Ford’s actual reports only. Ten complete source pages33–34/36–43 and7enlarged controls viewed;8additional full source scans;25pixel recipes exact. Three missing Latin carons in draft repaired before ingestion with all initial copies retained. Actual variant descriptors/placeholders/square/angle/corner groups and English four-dot boundary retained; tentative readings/metal identification/epigraphic possibility and competing reports preserved without adjudication. Main/comparative readings125/126/129 unchanged. No new objects/appearances/identifiers/claims/sources/captures/identity/rights decisions. Ford extraction remains partial: MIT17/24/AO1177 other-bowl quotations, late-manuscript/contextual copies, further alternate glosses/claims/all-reference/sourcewide extraction open. Frozen249 histories/members exact33linked216unlinked/zero wholecasescomplete; Miri15resolved26remaining/no newaccessfailure. Goal active.",
+        "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+        "reading_audit_checked_at": "2026-10-04T06:27:58+00:00",
+        "checkpoint126_prior_reading_audit": {
+          "source_id": "SRC-FORD2002-JANES",
+          "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+          "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+          "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+          "capture_id": "CAP-IBI-CP107-FORD2002",
+          "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+          "status": "Original requested work held privately; two main bowl transcription/English pairs checked; manuscript context and residual sourcewide work distinguished",
+          "resolved_at": "2026-10-03T19:57:24+00:00",
+          "checkpoint": 107,
+          "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+          "prior_acquisition_request": {
+            "source_id": "SRC-FORD2002-JANES",
+            "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+            "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+            "priority": 2,
+            "status": "unheld original needed",
+            "checked_at": "2026-10-02T20:03:15+00:00",
+            "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+            "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+            "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+          },
+          "reading_audit": "BM91715native32/English32–33 and BM91780native43–44/English44complete provided pairs captured/separatelychecked125. Source native24/15physicalrows22/20anchors/uncertain and restoredgroups/gaps/struckthroughword/sourcefootnotequalifications/actualdiacritics preserved. Ninecompletepagesviewed/twelvecontrols/43pixel-exactrecipes. PlateI47lateDC37(R)manuscriptphoto, not thirdbowl or bowlphoto; originalSegalphotos stillnotprovidedbythisarticle. Otherbowlcomparatives/lexical/general/relationship/interpretiveclaims/DC37(R)searchablecontext/wholeworkingOCRremainpartial; no wholecase/clay/scholarly/rights certification.",
+          "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+          "reading_audit_checked_at": "2026-10-04T04:36:35+00:00"
+        },
+        "checkpoint129_prior_reading_audit": {
+          "source_id": "SRC-FORD2002-JANES",
+          "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+          "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+          "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+          "capture_id": "CAP-IBI-CP107-FORD2002",
+          "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+          "status": "Original requested work held privately; main bowl pairs and nine bounded comparative reading units checked; remaining manuscript/lexical/general work scoped",
+          "resolved_at": "2026-10-03T19:57:24+00:00",
+          "checkpoint": 107,
+          "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+          "prior_acquisition_request": {
+            "source_id": "SRC-FORD2002-JANES",
+            "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+            "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+            "priority": 2,
+            "status": "unheld original needed",
+            "checked_at": "2026-10-02T20:03:15+00:00",
+            "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+            "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+            "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+          },
+          "reading_audit": "Prior mainpairs125retained. Four other-bowl bounded native/Englishpairs and one MS2054/122Latinphrase separatelychecked126; four freshsourceappearances/eightfullsourcepages. Exact scopedexistingobjects; actualheld1985Bowl13native202/English203confirms quoted17–18Nurielpassage, no fresh1998bodyclaim. Original/quoteddifferences and sourcecorner/restorationgroups/anchors/Englishdiacritics retained;21pixel-exactrecipes. LateDC37(R)notbowl; exactotherlexicalquotations/BMreprintvariants/general/relationship/interpretivefields/DC37(R)independentsearchablecopy/wholeworkingOCRremainpartial.",
+          "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+          "reading_audit_checked_at": "2026-10-04T05:01:19+00:00",
+          "checkpoint126_prior_reading_audit": {
+            "source_id": "SRC-FORD2002-JANES",
+            "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+            "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+            "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+            "capture_id": "CAP-IBI-CP107-FORD2002",
+            "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+            "status": "Original requested work held privately; two main bowl transcription/English pairs checked; manuscript context and residual sourcewide work distinguished",
+            "resolved_at": "2026-10-03T19:57:24+00:00",
+            "checkpoint": 107,
+            "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+            "prior_acquisition_request": {
+              "source_id": "SRC-FORD2002-JANES",
+              "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+              "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+              "priority": 2,
+              "status": "unheld original needed",
+              "checked_at": "2026-10-02T20:03:15+00:00",
+              "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+              "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+              "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+            },
+            "reading_audit": "BM91715native32/English32–33 and BM91780native43–44/English44complete provided pairs captured/separatelychecked125. Source native24/15physicalrows22/20anchors/uncertain and restoredgroups/gaps/struckthroughword/sourcefootnotequalifications/actualdiacritics preserved. Ninecompletepagesviewed/twelvecontrols/43pixel-exactrecipes. PlateI47lateDC37(R)manuscriptphoto, not thirdbowl or bowlphoto; originalSegalphotos stillnotprovidedbythisarticle. Otherbowlcomparatives/lexical/general/relationship/interpretiveclaims/DC37(R)searchablecontext/wholeworkingOCRremainpartial; no wholecase/clay/scholarly/rights certification.",
+            "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+            "reading_audit_checked_at": "2026-10-04T04:36:35+00:00"
+          }
+        },
+        "checkpoint130_prior_reading_audit": {
+          "source_id": "SRC-FORD2002-JANES",
+          "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+          "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+          "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+          "capture_id": "CAP-IBI-CP107-FORD2002",
+          "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+          "status": "Original work held; main bowl editions and eighteen bounded comparative/lexical units checked; remaining manuscript/general extraction open.",
+          "resolved_at": "2026-10-03T19:57:24+00:00",
+          "checkpoint": 107,
+          "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+          "prior_acquisition_request": {
+            "source_id": "SRC-FORD2002-JANES",
+            "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+            "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+            "priority": 2,
+            "status": "unheld original needed",
+            "checked_at": "2026-10-02T20:03:15+00:00",
+            "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+            "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+            "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+          },
+          "reading_audit": "Main editions125 and comparisons126 retained. Nine more separately located readings129: two native/English property comparisons and five Latin/English crown/expulsion units. BM91780 English restoration brackets and independent anchors preserved; Latin crown upper-corner group covers three Latin characters. Four complete page scans and13pixel-exact recipes. Remaining lexical quotations, DC37(R) searchable manuscript comparison, general/relationship/interpretive fields and sourcewide working extraction remain partial; no whole-case or source completion inferred.",
+          "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+          "reading_audit_checked_at": "2026-10-04T05:58:33+00:00",
+          "checkpoint126_prior_reading_audit": {
+            "source_id": "SRC-FORD2002-JANES",
+            "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+            "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+            "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+            "capture_id": "CAP-IBI-CP107-FORD2002",
+            "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+            "status": "Original requested work held privately; two main bowl transcription/English pairs checked; manuscript context and residual sourcewide work distinguished",
+            "resolved_at": "2026-10-03T19:57:24+00:00",
+            "checkpoint": 107,
+            "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+            "prior_acquisition_request": {
+              "source_id": "SRC-FORD2002-JANES",
+              "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+              "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+              "priority": 2,
+              "status": "unheld original needed",
+              "checked_at": "2026-10-02T20:03:15+00:00",
+              "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+              "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+              "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+            },
+            "reading_audit": "BM91715native32/English32–33 and BM91780native43–44/English44complete provided pairs captured/separatelychecked125. Source native24/15physicalrows22/20anchors/uncertain and restoredgroups/gaps/struckthroughword/sourcefootnotequalifications/actualdiacritics preserved. Ninecompletepagesviewed/twelvecontrols/43pixel-exactrecipes. PlateI47lateDC37(R)manuscriptphoto, not thirdbowl or bowlphoto; originalSegalphotos stillnotprovidedbythisarticle. Otherbowlcomparatives/lexical/general/relationship/interpretiveclaims/DC37(R)searchablecontext/wholeworkingOCRremainpartial; no wholecase/clay/scholarly/rights certification.",
+            "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+            "reading_audit_checked_at": "2026-10-04T04:36:35+00:00"
+          },
+          "checkpoint129_prior_reading_audit": {
+            "source_id": "SRC-FORD2002-JANES",
+            "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+            "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+            "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+            "capture_id": "CAP-IBI-CP107-FORD2002",
+            "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+            "status": "Original requested work held privately; main bowl pairs and nine bounded comparative reading units checked; remaining manuscript/lexical/general work scoped",
+            "resolved_at": "2026-10-03T19:57:24+00:00",
+            "checkpoint": 107,
+            "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+            "prior_acquisition_request": {
+              "source_id": "SRC-FORD2002-JANES",
+              "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+              "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+              "priority": 2,
+              "status": "unheld original needed",
+              "checked_at": "2026-10-02T20:03:15+00:00",
+              "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+              "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+              "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+            },
+            "reading_audit": "Prior mainpairs125retained. Four other-bowl bounded native/Englishpairs and one MS2054/122Latinphrase separatelychecked126; four freshsourceappearances/eightfullsourcepages. Exact scopedexistingobjects; actualheld1985Bowl13native202/English203confirms quoted17–18Nurielpassage, no fresh1998bodyclaim. Original/quoteddifferences and sourcecorner/restorationgroups/anchors/Englishdiacritics retained;21pixel-exactrecipes. LateDC37(R)notbowl; exactotherlexicalquotations/BMreprintvariants/general/relationship/interpretivefields/DC37(R)independentsearchablecopy/wholeworkingOCRremainpartial.",
+            "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+            "reading_audit_checked_at": "2026-10-04T05:01:19+00:00",
+            "checkpoint126_prior_reading_audit": {
+              "source_id": "SRC-FORD2002-JANES",
+              "fulfilled_by_source_id": "SRC-FORD2002-JANES",
+              "title": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+              "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+              "capture_id": "CAP-IBI-CP107-FORD2002",
+              "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
+              "status": "Original requested work held privately; two main bowl transcription/English pairs checked; manuscript context and residual sourcewide work distinguished",
+              "resolved_at": "2026-10-03T19:57:24+00:00",
+              "checkpoint": 107,
+              "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
+              "prior_acquisition_request": {
+                "source_id": "SRC-FORD2002-JANES",
+                "citation": "Ford, James Nathan. “Another Look at Mandaic Incantation Bowl BM 91715.” JANES 29 (2002): 31–47.",
+                "requirement": "Complete original article pp. 31–47, including BM91715 native text pp. 32–33, analysis pp. 39–47 and manuscript comparison pp. 44–45.",
+                "priority": 2,
+                "status": "unheld original needed",
+                "checked_at": "2026-10-02T20:03:15+00:00",
+                "metadata_url": "https://janes.jtsa.edu/volumes/29/1/article-2/",
+                "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
+                "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
+              },
+              "reading_audit": "BM91715native32/English32–33 and BM91780native43–44/English44complete provided pairs captured/separatelychecked125. Source native24/15physicalrows22/20anchors/uncertain and restoredgroups/gaps/struckthroughword/sourcefootnotequalifications/actualdiacritics preserved. Ninecompletepagesviewed/twelvecontrols/43pixel-exactrecipes. PlateI47lateDC37(R)manuscriptphoto, not thirdbowl or bowlphoto; originalSegalphotos stillnotprovidedbythisarticle. Otherbowlcomparatives/lexical/general/relationship/interpretiveclaims/DC37(R)searchablecontext/wholeworkingOCRremainpartial; no wholecase/clay/scholarly/rights certification.",
+              "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+              "reading_audit_checked_at": "2026-10-04T04:36:35+00:00"
+            }
           }
         }
       }
@@ -847,6 +1055,36 @@
       "evidence": {
         "path": "data/private/research-work/Waterman128-2026-10-04/Rasmussen2007-source-observation.json",
         "sha256": "b9a6a0f4d00d8a7688cebbb87b5f4ed04745bee58cd27db0d06ef59854b5beeb"
+      }
+    },
+    {
+      "source_id": "SRC-AF9EF12C3CB9",
+      "short_label": "Yamauchi1967MITCompleteBook",
+      "citation": "Yamauchi, Edwin M. Mandaic Incantation Texts. American Oriental Series 49. New Haven: American Oriental Society, 1967.",
+      "priority": 2,
+      "status": "Full source body unheld; primary preview/extract checked",
+      "requirement": "Permitted full1967AOS49or2005Gorgiasfacsimilebook includingtext17starting212 andtext24starting260, text/English/apparatus/plates. Actual44-pagepublisherpreview suppliescontents/introductiononly; sourcebody notheld. Crosswalk17=Pognonearlybowl/24=Mont39 separately verified; introyear/numbering discrepancies retained, no synthesizedreading.",
+      "metadata_url": "https://api.pageplace.de/preview/DT0400.9781463210229_A38590117/preview-9781463210229_A38590117.pdf",
+      "checked_at": "2026-10-04T07:08:27+00:00",
+      "previous_access_evidence": "Actualpublisher44pagepreviewPDFandCambridgearticleGetaccess/extract; no primarytext17/24 orarticle113 body. Ordinaryroutes respected; no accesscontrol bypass.",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-131-2026-10-04/source-routes.json",
+        "sha256": "f8f204f3c99c75841a05f5ff30429bea4868502c2bc58e200df4339405914c91"
+      }
+    },
+    {
+      "source_id": "SRC-IBI-CP131-MK1999-PUZZLING",
+      "short_label": "MuellerKessler1999PuzzlingWordsFullArticle",
+      "citation": "Müller-Kessler, Christa.1999. Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls. BSOAS62(1):111–114. doi:10.1017/S0041977X00017602.",
+      "priority": 2,
+      "status": "Full source body unheld; primary preview/extract checked",
+      "requirement": "Permitted complete article111–114, especially113 citedbyFord2002fn47forLouvreAO1177:4. Sourcepublisherextract/metadataaccessible; fullbodyunheld. Fordquotedphrase alonechecked; needprimarynative/translation/apparatus/context. CorrectarticleDOI10.1017/S0041977X00017602, distinctfromfrontmatterDOI00017511.",
+      "metadata_url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/puzzling-words-and-spellings-in-babylonian-aramaic-magic-bowls/2C86AC6B3465781D264309AC09DB26FE",
+      "checked_at": "2026-10-04T07:08:27+00:00",
+      "previous_access_evidence": "Actualpublisher44pagepreviewPDFandCambridgearticleGetaccess/extract; no primarytext17/24 orarticle113 body. Ordinaryroutes respected; no accesscontrol bypass.",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-131-2026-10-04/source-routes.json",
+        "sha256": "f8f204f3c99c75841a05f5ff30429bea4868502c2bc58e200df4339405914c91"
       }
     }
   ],
