@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "checkpoint": 146,
+  "created_at": "2026-10-04T15:23:39.036143+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "ec614d3977f4f43f4208d812457fe74d59e62d3aff9a921dbfaa43761584ff6e",
+  "corpus_after": "5e1228e18eeebc2fcf87af244f82f042155c8d0db5e312e00dc45a3b97a94299",
+  "table_changes": {
+    "objects": 1,
+    "appearances": 6,
+    "appearance_object_links": 6,
+    "texts": 11,
+    "media": 8,
+    "publication_assessments": 6,
+    "text_proofreading_reviews": 11,
+    "document_assessments": 1,
+    "source_corrections": 1,
+    "sources": 0
+  },
+  "scope": "Checkpoint146: eleven bounded original Shaked1995 main/article/comparative source copies checked, distinct from prior appendix versions; eight full page-image assignments added. Six appearances/reference assessments, one source-scoped Hermitage opening candidate without accession/earlier numbered bridge. Exact PennB16059:11 quotation attached to existing record;1995unpublished notice not current negative. Original Borisov1969:11f precise pointer retained, body/photo unheld. Molin HLIB684 versus original Bowl6 superscript84 flagged as possible citation anomaly, no identity merge. Sourcewide extraction partial; prior native appendix copies still partial",
+  "new_text_rows": 11,
+  "new_checked_readings": 11,
+  "new_partial_readings": 0,
+  "new_appearances": 6,
+  "new_publication_assessments": 6,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 8,
+  "new_objects": 1,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 1,
+  "new_proofreading_reviews": 11,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2624,
+  "total_media": 2352,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2265,
+  "total_identities": 1913,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 77,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Shaked146_readings_2026-10-04.jsonl",
+      "sha256": "825033dcf7734eaeef1e14a94b99ea088c2b050dd96a1ff41c9407953080e202"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Shaked146_publication_2026-10-04.json",
+      "sha256": "cddba149244050bcd35420bbd3f541f6cc3785e3b10831283303408d173f5518"
+    },
+    {
+      "command": "ingest-source-corrections",
+      "path": "data/private/manifests/Shaked146_source_correction_2026-10-04.json",
+      "sha256": "9bed92d667df3216c65f78d57b4a30088c7651932cf76e2de2d2e165f5285d0a"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Shaked146_proofreading_2026-10-04.json",
+      "sha256": "0b7abd99d2f57651a52376a39d017bc6b53b826bd54177649631c986df4e90cf"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Shaked146_documents_2026-10-04.json",
+      "sha256": "c1d903a5ea148a7e7448dfc534ba6f1352bc13c4c0378588ae728381d1f2d93d"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/source-evidence.json",
+    "sha256": "07563f14caa662014d13b01f6234d3af8bb9673f7afb6f9e467043a272e80d4b"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/reading-extent-inventory.json",
+    "sha256": "68c666dfcbf4c9abbacc6c60fd160b2cdf18a5bdc1394b06ed5304e7460f093c"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/page-derivatives.json",
+    "sha256": "819ad52f3c71a6c97395ddce87d0582060a4eff1fafd458fd13640bbd684613c"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/campaign_case_progress_checkpoint146.json",
+    "sha256": "ca5a58a769a45d43bc8f9bbceff35a014a80e8761d1afbea867dd20ac7a4f4d0"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/held_pdf_inventory_checkpoint146.json",
+    "sha256": "15706a8cb27435db82558c98ef9f174be473cfaad14ab1900b5b7c9bc954d913"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/non_pdf_holdings_checkpoint146.json",
+    "sha256": "7d64198b92969d333dc9e2e17a08c4756e2c6c858bc28ac8b17ccc6890389772"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/intake-verification.json",
+    "sha256": "806971bcd6a6b4eb443fb83201eb2a84937da466536e04bf094700cb4aa094d2"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2624,
+    "all_media_assignments_verified": 2352,
+    "all_local_image_hashes_verified": 1441,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1913,
+    "all39tables_exact": true,
+    "all_prior_rows_retained_or_snapshotted": true,
+    "all_prior_identity_memberships_exact": true,
+    "new_scoped_singleton": true,
+    "five_current_manifest_replays_unchanged": true,
+    "all11current_copy_checks": true,
+    "checked_copies": 11,
+    "partial_copies": 0,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 8,
+    "unique_rendered_pages": 6,
+    "full_plate_photographs": 0,
+    "reports_regenerated": 7
+  },
+  "limits": "Only eleven bounded copies checked; no complete original cited editions or clay-reading certification. Two earlier native appendix copies still partial, all old bodies preserved. Molin numbering anomaly possible source citation error, not confirmed correction or identity merge. Hermitage accession/Borisov-number mapping unverified and sourcewide context/apparatus/claims still partial. Frozen33/216 unchanged; no whole-case completion/public-rights decision",
+  "diagnostics": "All five trial and production manifest replays unchanged; all39tables exact, historical rows retained or source-ledger snapshotted, all prior identity memberships exact plus one source-scoped singleton. Initial candidate trial unknown object type rejected and fully rolled back; repaired permitted uncertain type before production. No reset,deploy,push,purchase,outbound message or Waterman retry.",
+  "closed_at": "2026-10-04T15:26:37.868499+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0146_Shaked_article_quotations.json",
+    "sha256": "b134b3ebd4ca6deb8d303d83530cf4b20eefda6c56455ceaf62f314951487690"
+  },
+  "post_closure_reader_visual": {
+    "path": "data/private/research-work/Shaked146-2026-10-04/post-closure-reader-visual.json",
+    "sha256": "2435ef3ab3ae793a332e3453b4afb48eaa29ccd0c46ade9ec6008b1bb284c420"
+  }
+}

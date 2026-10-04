@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T14:55:40.001605+00:00",
+  "updated_at": "2026-10-04T15:23:39.036143+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -860,7 +860,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-14",
       "sha256": "4eccaa13aacd1a56a8ea8e2bf49ba2b17c0e65e7688b06ee266a841f8684defb",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Own Appendix A/B Moussaieff1/6 complete provided English translations checked; Hebrew16/20anchor working copies partial_review pending doubtful/damaged letters, erasure, superlinear addition and omission-run extent. Two published plate photographs and all edition/translation pages retained. Earlier BM91715note100pair unchanged; other original article quotations, apparatus, contexts and claims pending",
+      "reading_audit": "Eleven original main/article/comparative bounded copies now checked, in addition to earlier appendix English and BM91715note100. Prior native appendix copies remain partial. Eight article-page assignments retained; new Hermitage opening candidate source-scoped with exact Borisov1969:11f pointer but original photo/body not held. HLIB684 versus Bowl6/superscript84 citation anomaly flagged for review; no identity bridge or merger. Remaining appendix lexical/correction units, contexts, structured claims and native glyph details pending",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": "SRC-A06D3C4C7CDF",
@@ -891,6 +891,11 @@
           "recorded_at": "2026-10-04T14:55:40.001605+00:00",
           "prior_audit": "Own BM91715 Latin/English pair215note100 copied/checked; remaining197–219 article bowl editions and contexts pending",
           "superseded_by_checkpoint": 145
+        },
+        {
+          "recorded_at": "2026-10-04T15:23:39.036143+00:00",
+          "prior_audit": "Own Appendix A/B Moussaieff1/6 complete provided English translations checked; Hebrew16/20anchor working copies partial_review pending doubtful/damaged letters, erasure, superlinear addition and omission-run extent. Two published plate photographs and all edition/translation pages retained. Earlier BM91715note100pair unchanged; other original article quotations, apparatus, contexts and claims pending",
+          "superseded_by_checkpoint": 146
         }
       ],
       "reading_updates": [
@@ -912,6 +917,16 @@
           "inventory": {
             "path": "data/private/research-work/Shaked145-2026-10-04/reading-extent-inventory.json",
             "sha256": "7d7cc5c08184bf40bd019b08060dcd540452ef7f267e21384dcb1210a00f3f0d"
+          }
+        },
+        {
+          "checkpoint": 146,
+          "observed_at": "2026-10-04T15:23:39.036143+00:00",
+          "status": "Eleven original main/article/comparative bounded copies now checked, in addition to earlier appendix English and BM91715note100. Prior native appendix copies remain partial. Eight article-page assignments retained; new Hermitage opening candidate source-scoped with exact Borisov1969:11f pointer but original photo/body not held. HLIB684 versus Bowl6/superscript84 citation anomaly flagged for review; no identity bridge or merger. Remaining appendix lexical/correction units, contexts, structured claims and native glyph details pending",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Shaked146-2026-10-04/reading-extent-inventory.json",
+            "sha256": "68c666dfcbf4c9abbacc6c60fd160b2cdf18a5bdc1394b06ed5304e7460f093c"
           }
         }
       ]
@@ -1463,7 +1478,7 @@
       "source_id": "SRC-3EBD27903913",
       "short_label": "Borisov1969Hermitage",
       "citation": "Borisov, A. Y. Epigraphic Notes: Four Aramaic Magic Bowls in the Hermitage Museum [Russian]. Epigraphika Vostoka19(1969):3–13.",
-      "requirement": "Complete original3–13 with illustrations and exact bowl numbering; immediate p7/HermitageBowl1:8 as cited Morgenstern2007p13n30. Do not infer a physical Hermitage accession from number1.",
+      "requirement": "Complete original3–13 with illustrations and exact bowl numbering; immediate p7/HermitageBowl1:8 as cited Morgenstern2007p13n30. Do not infer a physical Hermitage accession from number1. Additional exact need: Shaked1995p203note40 cites Borisov1969:11f for Hermitage opening1–5/Mirdukh. Verify original photo, numbered bowl and accession before linking to p7/Bowl1 or museum accession candidates.",
       "priority": 2,
       "status": "Original body not located through inspected lawful routes; library acquisition requested",
       "metadata_url": "https://library.omsu.ru/cgi-bin/irbis64r/cgiirbis_64.exe?C21COM=F&I21DBN=IBIS_PRINT&LNG=&P21DBN=IBIS&S21FMT=infow_wh_print&Z21MFN=321820",
@@ -1472,7 +1487,26 @@
         "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/source-evidence.json",
         "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
       },
-      "previous_access_evidence": "Actual held Morgenstern2007 references/pages checked; exact-title publisher/institution searches found bibliography/catalogue metadata, no eligible original body. Search limits and URLs retained in private route observations; not a blanket inaccessible/unpublished finding. No purchase/login/contact/bypass."
+      "previous_access_evidence": "Actual held Morgenstern2007 references/pages checked; exact-title publisher/institution searches found bibliography/catalogue metadata, no eligible original body. Search limits and URLs retained in private route observations; not a blanket inaccessible/unpublished finding. No purchase/login/contact/bypass.",
+      "requirement_history": [
+        {
+          "checkpoint": 146,
+          "recorded_at": "2026-10-04T15:23:39.036143+00:00",
+          "prior_requirement": "Complete original3–13 with illustrations and exact bowl numbering; immediate p7/HermitageBowl1:8 as cited Morgenstern2007p13n30. Do not infer a physical Hermitage accession from number1."
+        }
+      ],
+      "reading_updates": [
+        {
+          "checkpoint": 146,
+          "source_id": "SRC-A06D3C4C7CDF",
+          "locator": "Shaked1995printed203note40/bibliography217",
+          "original_body_still_unheld": true,
+          "evidence": {
+            "path": "data/private/research-work/Shaked146-2026-10-04/source-evidence.json",
+            "sha256": "07563f14caa662014d13b01f6234d3af8bb9673f7afb6f9e467043a272e80d4b"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-68826E462E63",
@@ -1516,8 +1550,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Shaked145-2026-10-04/miri-queue-before.json",
-    "sha256": "1f8a3581c50b116f743a4dfa965412e75bca55db6c1e7410f40825eddffa698b"
+    "path": "data/private/research-work/Shaked146-2026-10-04/miri-queue-before.json",
+    "sha256": "50235354c697c0fb630f699786c62b9dffc8728ed842f22591b706b3cb607049"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1741,6 +1775,16 @@
     "source_id": "SRC-A06D3C4C7CDF",
     "checked_reading_rows": 2,
     "partial_reading_rows": 2,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint146_Shaked_original": {
+    "receipt": "research/receipts/Shaked146_original_2026-10-04.json",
+    "source_id": "SRC-A06D3C4C7CDF",
+    "checked_reading_rows": 11,
+    "partial_reading_rows": 0,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
     "miri_remaining": 32,

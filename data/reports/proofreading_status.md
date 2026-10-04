@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1800 | 66 | 1 | 1867 | 96.4% |
+| Edition text (translation, transcription, transliteration) | 1811 | 66 | 1 | 1878 | 96.4% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1802 | 73 | 738 | 2613 | 69.0% |
+| All stored text | 1813 | 73 | 738 | 2624 | 69.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 871 | 41 | 1 | 913 |
-| transcription | 652 | 14 | 0 | 666 |
-| transliteration | 277 | 11 | 0 | 288 |
+| translation | 878 | 41 | 1 | 920 |
+| transcription | 653 | 14 | 0 | 667 |
+| transliteration | 280 | 11 | 0 | 291 |
 
 ## Edition text by source
 
@@ -56,7 +56,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 77 | 0 | 0 | 77 |
 | MS 2053/198 Incantation Bowl To Ward Against Demons (`SRC-9BE3105F3F31`) | 1 | 0 | 0 | 1 |
-| ‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls (`SRC-A06D3C4C7CDF`) | 4 | 2 | 0 | 6 |
+| ‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls (`SRC-A06D3C4C7CDF`) | 15 | 2 | 0 | 17 |
 | ‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164) (`SRC-A08F75BDD59C`) | 7 | 0 | 0 | 7 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 1 | 0 | 2 |
 | Who Wrote the Incantation Bowls? (`SRC-A90AB34CA3FE`) | 2 | 0 | 0 | 2 |
