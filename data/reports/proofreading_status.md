@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1711 | 57 | 1 | 1769 | 96.7% |
+| Edition text (translation, transcription, transliteration) | 1717 | 59 | 1 | 1777 | 96.6% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1713 | 64 | 738 | 2515 | 68.1% |
+| All stored text | 1719 | 66 | 738 | 2523 | 68.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 840 | 41 | 1 | 882 |
+| translation | 844 | 41 | 1 | 886 |
 | transcription | 630 | 12 | 0 | 642 |
-| transliteration | 241 | 4 | 0 | 245 |
+| transliteration | 243 | 6 | 0 | 249 |
 
 ## Edition text by source
 
@@ -80,7 +80,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 7 | 0 | 0 | 7 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
 | Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 77 | 3 | 0 | 80 |
-| Ephemeris für semitische Epigraphik. Erster Band, Erstes Heft (`SRC-IBI-CP137-LIDZ-FIRST-FASCICLE`) | 4 | 0 | 0 | 4 |
+| Ephemeris für semitische Epigraphik. Erster Band, Erstes Heft (`SRC-IBI-CP137-LIDZ-FIRST-FASCICLE`) | 10 | 2 | 0 | 12 |
 | Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 37 | 0 | 0 | 37 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 13 | 0 | 0 | 13 |
