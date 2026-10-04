@@ -18,8 +18,8 @@
 | Material | 419 | 21.7% |
 | Language | 1210 | 62.7% |
 | Script | 106 | 5.5% |
-| Text Edition | 613 | 31.8% |
-| Translation | 630 | 32.7% |
+| Text Edition | 615 | 31.9% |
+| Translation | 632 | 32.8% |
 | Image | 622 | 32.2% |
 
 ## Completeness distribution
@@ -28,8 +28,8 @@
 |---|---:|
 | 0–2 of 10 | 629 |
 | 3–5 of 10 | 965 |
-| 6–8 of 10 | 318 |
-| 9–10 of 10 | 17 |
+| 6–8 of 10 | 316 |
+| 9–10 of 10 | 19 |
 
 ## Next-action queue
 
@@ -42,8 +42,8 @@
 | Material | 22 |
 | Language | 7 |
 | Script | 45 |
-| Text Edition | 2 |
-| Rights Review | 1 |
+| Text Edition | 1 |
+| Rights Review | 2 |
 
 ## Claim conflicts
 

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "checkpoint": 160,
+  "prepared_by": "Codex",
+  "prepared_at": "2026-10-04T23:49:47.182490+00:00",
+  "status": "requires_source_document_review",
+  "object_ids": [
+    "IBI-66700DA0DFDA",
+    "IBI-C478C77AFCC6"
+  ],
+  "source_id": "SRC-24B0EC105BC9",
+  "source_pdf_sha256": "5779855d0e8170030fcf19a549598a1007e19cd38e3d4f13ef6fe88502c517d8",
+  "review_items": [
+    {
+      "topic": "auction date and original image",
+      "source_locator": "Moriggi2024printed194/PDF2;197–198/PDF5–6;201/PDF9",
+      "finding": "Article body reports1974 sale; footnotes, captions and bibliography cite Christie’s1973. Existing auction key follows body. Original catalogue date/imprint and lot348/p58/plate18 needed; retain both source reports.",
+      "next_action": "Miri permitted original catalogue documentation; do not infer this bowl from unrelated Getty lot203."
+    },
+    {
+      "topic": "fragment registration",
+      "source_locator": "Moriggi2024printed198/PDF6 and current BM record Museum number/Registration number",
+      "finding": "Article body quotation uses1908-4-15,24; footnote links1980record. Current BM117877 page explicitly reports1980,0415.24. The existing1908identifier remains attributed to the article; official current value recorded in this review.",
+      "next_action": "Append separately attributed official registration metadata in an evidence-bound metadata session; do not silently correct quoted author or erase the original identifier."
+    },
+    {
+      "topic": "fragment interpretation",
+      "source_locator": "Moriggi2024printed198–200/PDF6–8; current BM Description",
+      "finding": "Museum retains divorce-description; Moriggi proposes comparison to demonic-egg texts and questions that description. Both reports retained; no genre or authenticity adjudication.",
+      "next_action": "Human scholarly comparison with actual edition/parallels and supplied image; no inferred excavation origin from tentative Najaf-area comparison."
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Relics160-2026-10-04/source-evidence.json",
+    "sha256": "15d9f3b3f6c53176630df2e96e0e8e965c440958a1b00a04b3891f849e1da19b"
+  },
+  "external_route_evidence": {
+    "path": "data/private/research-work/Relics160-2026-10-04/external-routes.json",
+    "sha256": "1c3463c7300da5db2a428a063bbf781a786b65f7796b9533fc84a2542f3af336"
+  },
+  "new_corpus_identifier_or_claim_decisions": 0
+}

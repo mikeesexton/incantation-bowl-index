@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T23:32:58.440368+00:00",
+  "updated_at": "2026-10-04T23:49:47.182490+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1727,6 +1727,24 @@
         }
       ],
       "next_route": "Mike/Miri permitted library catalogue or dissertation service; no purchase or outbound request sent."
+    },
+    {
+      "source_id": null,
+      "short_label": "ChristiesAntiquitiesIIlot348OriginalCatalogue",
+      "citation": "Christie’s. European, Classical, Byzantine, Western Asiatic and Egyptian Antiquities and Ancient Jewellery: Catalogue Antiquities II. London: Christie’s,1973 (Moriggi2024bibliographyprinted201/PDF9; article body instead reports10–11July1974sale).",
+      "priority": 3,
+      "status": "Original catalogue unheld; exact source-reported date/image discrepancy unresolved",
+      "requirement": "Permitted cover/date/imprint plus exact lot348 descriptionp58 and plate18, or complete catalogue if readily available. Verify which1973/1974sale document contains this bowl before changing existing date or auction key. Current Moriggi2024edition and reworked Figures1–2 are now captured; do not re-request the held article.",
+      "checked_at": "2026-10-04T23:49:47.182490+00:00",
+      "supporting_evidence": {
+        "path": "research/reviews/Relics160_source_discrepancies_2026-10-04.json",
+        "sha256": "928c04b11fb3abb654789bd230cd13f14d5ebfd56a823334b97fc64bfb912b2b"
+      },
+      "search_attempts": {
+        "path": "data/private/research-work/Relics160-2026-10-04/external-routes.json",
+        "sha256": "1c3463c7300da5db2a428a063bbf781a786b65f7796b9533fc84a2542f3af336"
+      },
+      "next_route": "Mike/Miri lawful auction-catalogue/library holdings; no purchase or outbound message sent."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1740,8 +1758,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Research159-2026-10-04/miri-queue-before.json",
-    "sha256": "f87187f1127cacfe45977110eba5f2af5aace8096c714631bdb7505b5516bdc5"
+    "path": "data/private/research-work/Relics160-2026-10-04/miri-queue-before.json",
+    "sha256": "4cafc33e002e07c86ea15e205c9a80c342e0817f149d0bcda3ce6ca718bd02e3"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2139,5 +2157,11 @@
     "new_verified_acquisition_requests": 0,
     "new_unconfirmed_preview_candidate": 1,
     "native_gaps_closed": 0
+  },
+  "checkpoint160_held_editions": {
+    "receipt": "research/receipts/Relics160_original_editions_2026-10-04.json",
+    "new_verified_acquisition_requests": 1,
+    "supplied_reading_copies_checked": 4,
+    "no_redundant_held_article_request": true
   }
 }

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "checkpoint": 160,
+  "created_at": "2026-10-04T23:49:47.182490+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "scope": "Checkpoint160: complete held Moriggi2024 Relics of Syriac Magic previously had two indexed objects but zero reading rows from that source. Captured two supplied Latin-transliteration/English editions (four separately checked main copies), five partial description/apparatus/sigla extracts and six private facsimiles. All source gaps/restorations/question marks retained; fragmentary supplied text is not full clay recovery or original Syriac-character capture. Ten complete original pages/eight bounded controls actually viewed. All old rows/memberships/2313current checks unchanged. Author-reported catalogue/registration/interpretation discrepancies flagged without source adjudication; current BM page independently reports registration1980,0415.24 and still uses divorce-description. Christie’s original lot348/catalogue request added to Miri for date/imprint/p58/plate18 checks;21resolved34remaining. Frozen24935linked214unlinked/zero wholecasescomplete; subjects outside cohort, all prior case histories unchanged. Goal active; next complete held edition gap SD34.",
+  "corpus_before": "613d98e6f7809058e95d72ea0d0cf188459938ade65146969d62e3e984e0234b",
+  "corpus_after": "9dff0ba2f48fda0b82fb39d53a0c3e6a1e87127b1e4f9676b660e225c2d61573",
+  "source_id": "SRC-24B0EC105BC9",
+  "capture_id": "CAP-700164814EAB",
+  "source_pdf_sha256": "5779855d0e8170030fcf19a549598a1007e19cd38e3d4f13ef6fe88502c517d8",
+  "new_texts": 9,
+  "new_main_reading_checks": 4,
+  "new_partial_source_extracts": 5,
+  "new_media": 6,
+  "new_native_Syriac_character_transcriptions": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_objects": 0,
+  "new_identity_decisions": 0,
+  "new_claims": 0,
+  "new_identifiers": 0,
+  "new_rights_approvals": 0,
+  "unchanged_prior_current_checks": 2313,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 34,
+  "new_acquisition_requests": 1,
+  "allowance_resets_verified_used": 0,
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Relics160_readings_2026-10-04.jsonl",
+      "sha256": "a81074f3095df6e39434d0f71fb72115ea96dafb50cc76654f00707c569fbc9c"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Relics160_proofreading_2026-10-04.json",
+      "sha256": "6a3cf9e6b8a763f6d06e7015699b12d7c5becc0907ab5221f542bc33637b05b3"
+    }
+  ],
+  "validation": {
+    "python_tests": 477,
+    "node_tests": 71,
+    "total_tests": 548,
+    "reader_checks": "8/8",
+    "all39trial_production_tables_exact": true,
+    "all_prior_rows_unchanged": true,
+    "all_memberships_unchanged": true,
+    "all2313prior_current_checks_unchanged": true,
+    "all9current_source_units_verified": true,
+    "all3037private_texts_verified": true,
+    "all2449media_assignments_verified": true,
+    "all1538local_image_hashes_verified": true,
+    "all119capture_bytes_and_assignments_verified": true,
+    "all994sources_verified": true,
+    "all1929identity_memberships_verified": true,
+    "all249attempt_histories_unchanged": true,
+    "current_inventory_units_verified": true,
+    "miri21resolved34remaining_old_requests_retained": true,
+    "ten_complete_source_pages_hashbound_viewed": true,
+    "eight_crops_viewed_and_pixel_exact": true,
+    "six_media_derivatives_byte_exact": true,
+    "two_actual_reader_routes_and_two_screenshots": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "no_new_native_script_or_identifier_identity_decision": true,
+    "DISC004_and_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "limits": "Checked author-supplied fragmentary Latin/English editions only, not full lost text or original-script/clay recovery. Mixed apparatus/typography/sourcewide completeness remain partial. Source conflicts preserved and flagged, no scholarly/identifier/date decision. Subjects outside frozen cohort; no fabricated new case attempts. No push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "diagnostics": "Read-only claim schema guess recovered from actual field/value_text columns. No failed corpus transaction.",
+  "source_evidence": {
+    "path": "data/private/research-work/Relics160-2026-10-04/source-evidence.json",
+    "sha256": "15d9f3b3f6c53176630df2e96e0e8e965c440958a1b00a04b3891f849e1da19b"
+  },
+  "external_routes": {
+    "path": "data/private/research-work/Relics160-2026-10-04/external-routes.json",
+    "sha256": "1c3463c7300da5db2a428a063bbf781a786b65f7796b9533fc84a2542f3af336"
+  },
+  "unit_inventory": {
+    "path": "data/private/research-work/Relics160-2026-10-04/current-unit-inventory.json",
+    "sha256": "03c4cb01fd66094bddf2d6dcee8b140b9305ce69599bd9582754e398283fea13"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Relics160-2026-10-04/intake-verification.json",
+    "sha256": "66ad42645ab4b8f27ec51fafd1730be599c68288f9f3197ceec69444ba9fc924"
+  },
+  "media_derivatives": {
+    "path": "data/private/research-work/Relics160-2026-10-04/media-derivatives.json",
+    "sha256": "e35cae165c944f7d18147626d73b7edff28d5ee66cec337381866aaa69d449f6"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Relics160-2026-10-04/campaign_case_progress_checkpoint160.json",
+    "sha256": "e41683cd66affe7442b80060694f6bf18f9d8b0b903cc90f4b9c007e3edf817e"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/Relics160-2026-10-04/case-availability-audit.json",
+    "sha256": "48ee1689d00f79d5d8c8ff4d42e99b68fac052f2c3b5e2bfbbec68bc07b29c79"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Relics160-2026-10-04/held_pdf_inventory_checkpoint160.json",
+    "sha256": "12713d0103cfd135c30cdb886edb368d9e36eb653082dccde6a5385c35f90303"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Relics160-2026-10-04/non_pdf_holdings_checkpoint160.json",
+    "sha256": "c985db6b73d2534e3101afa69a6c43ed99ea27d457b0401066bdb585d53117ab"
+  },
+  "source_discrepancy_review": {
+    "path": "research/reviews/Relics160_source_discrepancies_2026-10-04.json",
+    "sha256": "928c04b11fb3abb654789bd230cd13f14d5ebfd56a823334b97fc64bfb912b2b"
+  },
+  "ui_verification": {
+    "path": "data/private/research-work/Relics160-2026-10-04/ui-verification.json",
+    "sha256": "e4550afa2a654ac4091199b694e8b850898f9b03f43674448b73ca0e60ba8c60"
+  },
+  "pixel_verification": {
+    "path": "data/private/research-work/Relics160-2026-10-04/pixel-verification.json",
+    "sha256": "4fd6f4599f60fb497e140976eb872fea4f00bc0ad31731870ac4b6e1c40f966c"
+  },
+  "closed_at": "2026-10-04T23:54:50.361904+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0160_relics_two_original_editions.json",
+    "sha256": "2f61bb65889cc64d0b7e022d68ed5b79c8303320163b0f81fcd7cc87eb510deb"
+  }
+}
