@@ -127,8 +127,10 @@ def apply_proofreading(conn, manifest_path, project_root):
             if text_fingerprint(old) != entry['expected_text_sha256']:
                 raise ValueError('Text changed since proofreading snapshot')
             language = old.get('language') or 'source-language'
+            description = ('catalogue extract' if old['text_type'] == 'summary'
+                           else f'normalized {language} reading text')
             after = dict(old, content=content, public_ok=0,
-                         notes=f'{"Capture" if html else "Scan"}-checked normalized {language} reading text. ' + review['editorial_policy']
+                         notes=f'{"Capture" if html else "Scan"}-checked {description}. ' + review['editorial_policy']
                                + ' Review: ' + entry['review_id'] + '. Public reuse remains unapproved.')
             planned.append((entry, old, after, pages))
         for entry, old, after, pages in planned:

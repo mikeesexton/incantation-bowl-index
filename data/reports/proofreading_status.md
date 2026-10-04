@@ -9,8 +9,8 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
 | Edition text (translation, transcription, transliteration) | 2103 | 156 | 1 | 2260 | 93.1% |
-| Other stored text (mostly source extracts and summaries) | 5 | 7 | 737 | 749 | 0.7% |
-| All stored text | 2108 | 163 | 738 | 3009 | 70.1% |
+| Other stored text (mostly source extracts and summaries) | 5 | 30 | 714 | 749 | 0.7% |
+| All stored text | 2108 | 186 | 715 | 3009 | 70.1% |
 
 ## Edition text by type
 

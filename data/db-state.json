@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "9b92566ef859be11256bb1c8f6361c4ba3885fe81a05973b297b1b22b15f309e",
+  "corpus_digest": "9340bc98fae7080064901f72bedd2062f36b5b36e20758957cc99f235d16d9cc",
   "migrations": 21,
-  "note": "Checkpoint156: 304 Berlin catalogue citation corrections; immutable originals, exact historical replays, current reading checks retained; 547 tests and private reader verified.",
-  "recorded_at": "2026-10-04T22:29:12+00:00",
+  "note": "Checkpoint157: 23 exact Berlin catalogue running-header removals with original rows preserved; selected-section extent inventory; 548 tests and private reader verified.",
+  "recorded_at": "2026-10-04T22:46:28+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -151,15 +151,15 @@
       "rows": 201
     },
     "text_proofreading_reviews": {
-      "digest": "b4ea0d60ed067d00f790c6f901f5a85e7a51e8acd26c2ea6a562bf870d3f9202",
-      "rows": 2572
+      "digest": "b7e1cf9159016cd71d6f9a6566aa57d40776740f305a4ffc2117ccc5e6757321",
+      "rows": 2595
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "bcc15f1332149a48ae60e2405fd2af8aeff8e322c780ec4833d21f704a1f9e3c",
+      "digest": "b0503f85cbef7c2725e799635fb538f846602dc78e6da48697a28efba0425771",
       "rows": 3009
     }
   }

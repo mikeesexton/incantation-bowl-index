@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "checkpoint": 157,
+  "created_at": "2026-10-04T22:38:16.464769+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "scope": "Checkpoint157:23Berlin2018catalogue extracts cleaned by exact trailing next-page running-header removal through23partial proofreading reviews. All preceding source prose/footnotes, source values, locators, identities and2271prior currenttextchecks preserved; summaries remain summaries. Forty-sixcompleteoriginalpages/12sheets inspected. Seventeen selected-section item records inventoried:15existing Latin-transliteration/English pairs remain checked by retained Claude20260929reviews;2sectionXVIitems have source descriptions/discussion/photos but no supplied numbered reading/translation. This is a held-source extent finding, not current nonpublication or independent pseudo-script/authenticity/identity decision. Sourcewide extraction partial;249frozen35linked214unlinked/zero wholecasescomplete. Miri21resolved32remaining/no new request. Goal active.",
+  "corpus_before": "9b92566ef859be11256bb1c8f6361c4ba3885fe81a05973b297b1b22b15f309e",
+  "corpus_after": "9340bc98fae7080064901f72bedd2062f36b5b36e20758957cc99f235d16d9cc",
+  "source_id": "SRC-DA708912C2D3",
+  "capture_id": "CAP-DBB06BEA4670",
+  "source_pdf_sha256": "7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+  "catalogue_header_cleanups": 23,
+  "new_partial_catalogue_reviews": 23,
+  "unchanged_prior_current_text_checks": 2271,
+  "unchanged_checked_Berlin_readings": 30,
+  "remaining_flagged_trailing_headers": 0,
+  "complete_original_pages_viewed": 46,
+  "sheets_viewed": 12,
+  "selected_section_item_records": 17,
+  "source_specific_sectionXVI_no_reading_or_translation_items": 2,
+  "new_reading_rows": 0,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_rights_approvals": 0,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "review_manifests": [
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Berlin157_catalogue_cleanup_2026-10-04.json",
+      "sha256": "b895e089434773fffc28d6aab51efe00a9f8bab774b991c36bd49a0d8b05ec98"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/source-evidence.json",
+    "sha256": "986332c14a0f28194cb050c97246dcb94bb5e69e5d696ee58c723a955b9e5d75"
+  },
+  "cleanup_plan": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/cleanup-plan.json",
+    "sha256": "49b1b66647aed6518a0a443c600747e3873831e29166c060fcacb39e5d743bb8"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/page-derivatives.json",
+    "sha256": "dfb13334c785e82d1689ea420a72b1ead6de07562c90419c6baf2918fc47359e"
+  },
+  "selected_section_availability": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/selected-section-availability.json",
+    "sha256": "05c132440d42cb514e8833443049367b4fd4357f417e00a0bde47e3c7650bf39"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/intake-verification.json",
+    "sha256": "23f32f026506d938ffa03449901bd14af5e7eead2223d36a4cacf6083cb84afb"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/case-availability-audit.json",
+    "sha256": "18bc7f4bb1e5cc3fa1f39a8462d26429dea92faf06ca803eca7cbf9e93582c63"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/campaign_case_progress_checkpoint157.json",
+    "sha256": "072a9ecae1f35433f5366481b6ea7ccd58ed5e04dbf4952e1119d64d5e0f9fa5"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/held_pdf_inventory_checkpoint157.json",
+    "sha256": "69281f2454a785f3d6b398b2f1b49b790fd784f4db85995f77ef903a4ec5b0c1"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/non_pdf_holdings_checkpoint157.json",
+    "sha256": "939a56ca46b31c0f7172670a33d1d26b2e6caab8c1b615469277ef1a93491205"
+  },
+  "table_changes": {
+    "text_proofreading_reviews": 23,
+    "texts": 0
+  },
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 79,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "totals": {
+    "texts": 3009,
+    "media": 2440,
+    "captures": 119,
+    "sources": 994,
+    "objects": 2281
+  },
+  "identities": 1929,
+  "validation": {
+    "python_tests": 477,
+    "node_tests": 71,
+    "total_tests": 548,
+    "reader_checks": "8/8",
+    "all39trial_production_tables_exact": true,
+    "all_prior_rows_or_complete_immutable_snapshots_retained": true,
+    "all_identity_memberships_exact": true,
+    "all2271prior_current_text_checks_unchanged": true,
+    "new_partial_catalogue_reviews": 23,
+    "current_manifest_replay_unchanged": true,
+    "two_historical_candidate_replays_unchanged": true,
+    "stale_metadata_rejected_without_changes": true,
+    "all_text_rows_verified": 3009,
+    "all_media_assignments_verified": 2440,
+    "all_local_image_hashes_verified": 1529,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1929,
+    "all249case_availability_units_verified": true,
+    "all249attempt_histories_retained_unchanged": true,
+    "all23exact_suffix_removals_verified": true,
+    "footnotes87and89_preserved": true,
+    "all170catalogue_texts_have_no_trailing_running_header": true,
+    "all46complete_pages_and12sheets_viewed_hashbound_pixel_exact": true,
+    "all17selected_item_records_verified": true,
+    "all30prior_Berlin_checks_hashbound_unchanged": true,
+    "two_source_specific_missing_block_explanations_verified": true,
+    "four_actual_reader_routes_verified": true,
+    "miri21resolved32remaining_requests_exact": true,
+    "no_new_readings_or_identity_decisions": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "concurrent_DISC004_and_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "diagnostics": "Read-only media locator query requested a field not in this table; recovered by actual schema. Shell source module glob absent; recovered with actual paths. Prior CP156metadata batch correctly rejected in isolated trial after23body revisions; unchanged whole trial fingerprint verified. No failed corpus transaction. Closure verifier initially omitted the digest_text import; recovered in read-only checker without corpus change. Source extract splits suggests over a line-end hyphen; checker recognizes exact printed continuation without rewriting source.",
+  "limits": "Summary body navigation repairs remain partial; source prose/glosses not fully proofread. No new inscription/translation, pseudo-script adjudication, interpretation, identity/origin/authenticity/rights decision. Sourcewide extraction partial; sourceXVIreading absence does not mean no edition elsewhere. No push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "ui_verification": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/ui-verification.json",
+    "sha256": "c437146648be250134b6044090487eecb5d3d23db626b62415cf5db4186ba3f5"
+  },
+  "pixel_verification": {
+    "path": "data/private/research-work/Berlin157-2026-10-04/pixel-verification.json",
+    "sha256": "45b17407140366a3f2d9096dffcccd9cc7d3769578559ac58442c999c8240a34"
+  },
+  "closed_at": "2026-10-04T22:46:54.029555+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0157_berlin_extract_cleanup_and_selected_extent.json",
+    "sha256": "92246df57c616490963f455a798130f76c94b20458b901813911cb68b40bfb52"
+  }
+}

@@ -82,6 +82,23 @@ class ProofreadingTests(unittest.TestCase):
         notes = self.conn.execute('SELECT notes FROM texts').fetchone()[0]
         self.assertIn('normalized German reading text', notes)
 
+    def test_catalogue_cleanup_keeps_summary_type_and_partial_scope(self):
+        self.conn.execute("UPDATE texts SET text_type='summary',language='English'")
+        self.conn.commit()
+        self.row = dict(self.conn.execute('SELECT * FROM texts').fetchone())
+        entry = self.manifest['entries'][0]
+        entry.update(expected_text_sha256=text_fingerprint(self.row), status='partial_review')
+        self.manifest['editorial_policy'] = 'Running-header removal only; catalogue prose remains partially reviewed.'
+        self.apply()
+        row = dict(self.conn.execute('SELECT * FROM texts').fetchone())
+        self.assertEqual(row['text_type'], 'summary')
+        self.assertIn('Scan-checked catalogue extract.', row['notes'])
+        self.assertNotIn('reading text', row['notes'])
+        self.assertEqual(current_text_reviews(self.conn)[row['id']]['status'], 'partial_review')
+        review = self.conn.execute('SELECT * FROM text_proofreading_reviews').fetchone()
+        self.assertEqual(json.loads(review['before_json']), self.row)
+        self.assertEqual(self.apply()['changed'], 0)
+
     def test_invalid_second_entry_does_not_partially_apply(self):
         self.manifest['entries'].append(dict(self.manifest['entries'][0], text_id='ABSENT', review_id='SECOND'))
         with self.assertRaisesRegex(ValueError, 'Missing text'): self.apply()
