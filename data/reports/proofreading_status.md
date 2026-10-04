@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1705 | 55 | 1 | 1761 | 96.8% |
+| Edition text (translation, transcription, transliteration) | 1707 | 57 | 1 | 1765 | 96.7% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1707 | 62 | 738 | 2507 | 68.1% |
+| All stored text | 1709 | 64 | 738 | 2511 | 68.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | translation | 838 | 41 | 1 | 880 |
-| transcription | 629 | 10 | 0 | 639 |
-| transliteration | 238 | 4 | 0 | 242 |
+| transcription | 630 | 12 | 0 | 642 |
+| transliteration | 239 | 4 | 0 | 243 |
 
 ## Edition text by source
 
@@ -26,7 +26,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 |---|---:|---:|---:|---:|
 | Incantation Bowl — Auction 32 lot 154 (`SRC-E94437DF5962`) | 0 | 0 | 1 | 1 |
 | Mandaic Bowl (`SRC-03395C3A94A7`) | 1 | 0 | 0 | 1 |
-| An Aramaic Exorcism (`SRC-0383E0E0A2F2`) | 1 | 1 | 0 | 2 |
+| An Aramaic Exorcism (`SRC-0383E0E0A2F2`) | 3 | 3 | 0 | 6 |
 | Jewish Love Magic: From Late Antiquity to the Middle Ages (`SRC-07B313309678`) | 11 | 0 | 0 | 11 |
 | Byzantine Period Terracotta Incantation Bowl, 400 CE–700 CE (`SRC-0AC8CA3CDF84`) | 1 | 0 | 0 | 1 |
 | Jüdisch-babylonische Zaubertexte (`SRC-0B6C0E1133EF`) | 3 | 4 | 0 | 7 |

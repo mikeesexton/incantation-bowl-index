@@ -1,0 +1,606 @@
+{
+  "schema_version": 1,
+  "checkpoint": 137,
+  "created_at": "2026-10-04T10:04:19+00:00",
+  "goal_status": "active",
+  "previous_goal_turn_classification": "no progress:tabvisibilityanswer; safe heldsource action revalidated against current136match",
+  "current_turn_classification": "progress",
+  "corpus_before": "b21b4e63f8d8ed1c1f7ce44c35273d8587da0f4913ad825d3d5aa238b3cf9109",
+  "corpus_after": "769925cf65e543658bbc0de8a396cdd58ac3666736a28eb8f28b086875081a77",
+  "table_changes": {
+    "sources": 1,
+    "captures": 1,
+    "appearances": 3,
+    "appearance_object_links": 3,
+    "texts": 4,
+    "media": 4,
+    "publication_assessments": 3,
+    "text_proofreading_reviews": 4,
+    "document_assessments": 3
+  },
+  "new_text_rows": 4,
+  "new_checked_readings": 2,
+  "new_partial_readings": 2,
+  "new_appearances": 3,
+  "new_publication_assessments": 3,
+  "new_document_assessments": 3,
+  "current_document_targets": 2,
+  "superseded_initial_extent_label": true,
+  "new_sources": 1,
+  "new_objects": 0,
+  "new_media": 4,
+  "new_captures": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1907,
+  "total_text_rows": 2511,
+  "total_reading_rows": 1765,
+  "reading_status_counts": {
+    "reading_text_checked": 1707,
+    "unreviewed": 1,
+    "partial_review": 57
+  },
+  "total_media": 2265,
+  "total_captures": 102,
+  "total_searchable_context_copies": 46,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 35,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 91,
+    "sources_with_document_assessments": 85,
+    "sources_with_complete_documents": 76,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 73,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "scope": "Checkpoint137:four separate Gordon comparative native copies added, E1/L5source-copychecked and M11/M18partial for precise editorial boundaries/points; exact scoped appearances reused/added without identity merger. Original112leaf Lidzbarski first fascicle lawfully captured through advertised publicPDF/unchangedrobots-aware collector; cover1900 distinguished from completed-volume1902 citation. OriginalV exactnative102/104,German103/105,reverse106 and reportedLouvreAO2629 checked, fulloriginalreading extraction pending. Holdingextent firstfasciclecomplete/body1–108, not wholevolume; wronginitialbody1–109 assessment superseded with audit retained. Sourcewide Gordon and Lidzbarski extraction partial; frozen249 cases still incomplete.",
+  "review_manifests": [
+    {
+      "command": "ingest source",
+      "path": "data/private/manifests/Gordon137_source_2026-10-04.jsonl",
+      "sha256": "8a131119d1a8da272a40c354cee8f395cc464dcb23c9113ab914ddd39d3c5356"
+    },
+    {
+      "command": "ingest-capture-receipts",
+      "path": "data/private/manifests/Gordon137_capture_2026-10-04.json",
+      "sha256": "08068befb621e592e40b2d94ad7123e58948be8381b801c1212a6ec08213185c"
+    },
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gordon137_readings_2026-10-04.jsonl",
+      "sha256": "0435886313acbda63e46aa8ada25c04cbdea59e4c9a7424bc85a5ded91bdb1ab"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gordon137_publications_2026-10-04.json",
+      "sha256": "e0da1580e186fd7aabd03a7273f0d58a8ac753c82d7b97a052e7d6d680e8b8b0"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Gordon137_proofreading_2026-10-04.json",
+      "sha256": "da2117ac421b0c8052c264f40396242bfb8aac8097fcb3cae393b01375f76532"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon137_documents_2026-10-04.json",
+      "sha256": "82cb5acc9db108a79e426f9986154dc19c912736fc4c8e6dfa130cf85a752883"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon137_extent_correction_2026-10-04.json",
+      "sha256": "f5b4698d9f94289bf25d33847326105495dba21c8141394b877a7f79d01b9a56"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/source-evidence.json",
+    "sha256": "deffc1436db638b0cfa1679abf91d4441d0898451014433153a570a6b2790ac0"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/campaign_case_progress_checkpoint137.json",
+    "sha256": "86a04c4840fc95f916621708144def8fa583dbbcbae5e320f4f6711554dc9c43"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/held_pdf_inventory_checkpoint137.json",
+    "sha256": "38e6c8b5e9deaf61ac35348b6470339c6d9d075329c52cef517c7ff6b008d0b9"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/non_pdf_holdings_checkpoint137.json",
+    "sha256": "79e14f2d769d2e6096a2ef328da3cb9ad0a720c617e68b85883d48d80139d627"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_texts_verified": 2511,
+    "all_media_verified": 2265,
+    "all_local_image_hashes_verified": 1354,
+    "all_capture_hashes_and_assignments_verified": 102,
+    "all_sources_verified": 981,
+    "all_identity_memberships_and_counts_verified": 1907,
+    "all46contexts_exact": true,
+    "all_holdings_capture_appearance_locator_text_hashes_verified": true,
+    "all31nonPDFcaptures_including6unlinked_verified": true,
+    "all_prior136_receipt_artifact_hashes_exact": true,
+    "all7manifests_trial_production_and_finalreplayzero": true,
+    "all39tables_trial_production_exact": true,
+    "all_old_rows_and_texts_retained_exact": true,
+    "frozen249_histories_and_memberships_exact": true,
+    "miri35requests_and15resolved_exact": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "partial_sourcewide_assessments_and_typography_labels_retained": true,
+    "wrong_initial_extent_superseded_corrected_current_body1to108": true
+  },
+  "limits": "M11/M18precise source editorial controls stillpartial; newquotedcopies not fulloriginaledition recovery. SourcewideGordon/firstfascicle extractionpartial. OriginalV fullnative/German/reverse and I–IVpending; existingAO2629candidate requires separate source-scoped identityreview,no merge. Frozen249auditincomplete. No resetcheck/redemption/push/deploy/restart/contact/purchase/Watermanretry.",
+  "diagnostics": "Earlier narrow crops clipped owncolumns; fullpages/widercontrols inspected. pdftotext absent,pypdfmachine used onlylocators. One tooloutput truncated, actual controls reinspected. Initialnewholdingextentbasis assumed body1–109; actual final body108confirmed, error superseded by append-only correctedassessment beforecheckpointclosure; original retained. Seven currentmanifestreplays required, including correction.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-page3-full.png",
+      "sha256": "7910de6af1ebe500c544eb534a6764d6c1ec500810272dfbd300349036542665"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-page3.png",
+      "sha256": "2ffea61fcf46ad490a102681328e1cb8c91bea3c0788451a2f394626a445d8f1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-page4-full.png",
+      "sha256": "f5343ebfe268254981eb07aea6a168a375869e1f639037dae4348b041756fd6b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-page4.png",
+      "sha256": "00c3fdc71c3eaed1fbaa63cd7b08ed0e6d4d64d00c0d79701875fa1738a3134d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-page5-full.png",
+      "sha256": "09e98db87a19e54a5f46cd7a37425cbbddd139c676e91a4167f83ff946c056fa"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-page5.png",
+      "sha256": "213a6143bca5482f008650d50b47f75387e6335ed8ed78ba9af85b7179efd60d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-points4.png",
+      "sha256": "85b232dad14c9535af159b2f328c31c4f25c52ba5be601c95f7f7800c7cd2c80"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-points5.png",
+      "sha256": "e359a3d79ce2b0f3127ea3bdb9732f1ee05983878f5c0ec4a31b05d87c28d668"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-supplies4.png",
+      "sha256": "69ab61178ba8e46ab8151604bc4319b6bea26d5cb2d4f0b8ddf5a2baf090b543"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-wide-page3.png",
+      "sha256": "2885e455e3a0f6d6eed5893f0b1abba1e2800b7ef59b9601256b9db476e8ea22"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-wide-page4.png",
+      "sha256": "cf60086bc09c1a452fc9edba759c967e0338e8808c3fa630dbfd740f3bf76d13"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/E1-wide-page5.png",
+      "sha256": "d339e345689f07f8df5f619696c525e9044ec0b928be873727c8d9d80e7092bd"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Ellis-572.png",
+      "sha256": "16e8d8428b7c0a6e9615b7e86f602ae01d09218e027c8c018ee3e6c00be13194"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/L5-page3.png",
+      "sha256": "5577dc4bd49ec3eeeed39d622034073d9e5ed738b8fe6bf298067816e16812e2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/L5-page4.png",
+      "sha256": "59ebb7d6e303b7c1b05ce86d4505211585dc944c029131ea4ff0335ca2367c70"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/L5-page5.png",
+      "sha256": "d18ad327b480e1732dc2d5234f9203e28835ced6987470845da95c84b3960e5c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/L5-wide-page3.png",
+      "sha256": "11658a05f540e4a60ff1ba4d8ba078ab84dd7c4841d06863428071bec175b124"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/L5-wide-page4.png",
+      "sha256": "a9a083a4847708db6e76c5214c8ee2bfc0a84fc299db60778dd38ff96693cada"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/L5-wide-page5.png",
+      "sha256": "a26290d65a320c5f0820789bc994eb2a418bd7c777934d6a60335fffebf23966"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-001.png",
+      "sha256": "37c7bb6c716430d47c1852a179ffc8edf9bae2e1cad162fe2d5439583b6c3023"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-104.png",
+      "sha256": "114fe059190c186664ca8fd496b1c0494f10ba59ef9292557337d93258058bb2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-105.png",
+      "sha256": "2c6698f90260dc97446ced567e7e10018b0a374a600140981611b025ac163984"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-106.png",
+      "sha256": "8c59df0f027d91252a2b77721ca9b821811d18b191ab26aeffece48f95d134b3"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-107.png",
+      "sha256": "4e01f1983cf26e3e157cc272159e114fa4b66d5294c356284970a80785aa89ce"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-108.png",
+      "sha256": "e6c10d60c2c63aae6e3889ef9b2dddafc24b2da85f09860956a5b7d2351d5bec"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-112.png",
+      "sha256": "5938cef333e1893f1a91b1b4ff0c7f9ee1ca1da2259cfdb962ebfb19f85128c9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-capture.json",
+      "sha256": "70b9d7eca6865230f154a07f8861dbe614ed56c9088c9a366f8762158752de0d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-contact-1.png",
+      "sha256": "5a0b983b320cf296357b5495e3995d67bcccebc161e3cb6c170ecb50461e0491"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-contact-2.png",
+      "sha256": "2ddd4361682a522c9c16dab81abdbf1636bfa27036136efcf22d8748260bf10f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-contact-3.png",
+      "sha256": "a91094f5ce14dd135183a584d518bf7dfc70cc2f5f300d01d80dc64c2e224a90"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-contact-4.png",
+      "sha256": "40097b74237a3ef5581111e8a625d46a2b0321741ffba2f8ef30de7a9ff87996"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-machine.json",
+      "sha256": "4c850688fa9772b09731b91df83b42364e27d27d2b086817cf40490e26887ecc"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-page-structure.json",
+      "sha256": "c35fd047b43e76d4366832701ce8480c40aa5b396d5ef4ed0f35015619d2f9a8"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-robots-response.json",
+      "sha256": "b690c79f00389d2d8b675b4b1854e2de3fccb7be36a5fe8e536ef5b14b8338ce"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/Lidzbarski-robots.bin",
+      "sha256": "83e00f46c71e9fa872694af73fa9c15a615b9052b2f10820a3d146bc506c6161"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M11-enclosures3.png",
+      "sha256": "2db108869e283770f5cd452f245efea994c5e4812ae7358af5a530b38442a476"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M11-page3.png",
+      "sha256": "c5b0b5f600f5c2dda057d0944f0c3a510de11de8761981f3459119e2ab4399f2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M11-page4.png",
+      "sha256": "0f47ea153e2ad64503de8a6ef3b32f1ff55b9aa323b62b3f7343dfc1fce568fe"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M11-page5.png",
+      "sha256": "ae60088a27793b5c10256705c7c5c306a5f0c08bc72ac62bc989e2f2903cc7a1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M11-points3.png",
+      "sha256": "fcf1ba6f27e8f2f9a583a18f9a31092aac7a96f1c7b017ea593a3d281d499f2a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M11-points4.png",
+      "sha256": "cf33c5d148c74cc7611ba321ffe52a63cac10ea4af7002452835d5ed8da55d0e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-page3.png",
+      "sha256": "7aa00dd11781a1d1fc80fe4d5e92fb385d9ca038c0fe7116de69f4bb105a6d56"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-page4.png",
+      "sha256": "aacde64265b3e7bb31b465cf531b9bf230156098d776c7e0d4a15f28e80eb8c6"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-page5.png",
+      "sha256": "70ec318b89b166f702a962cacd1f846b602691d43ecb178030d8f24d0ca3f1dd"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-points3.png",
+      "sha256": "d03be4a045868b3613d5ed26afced67e01a79b3de3b5a8e15f1eafe7d4a48ce8"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-points4.png",
+      "sha256": "ec3227d5145f04434139dd221db55e825b9fc3a9f9aa68d3b52f74756675703d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-points5.png",
+      "sha256": "7f3eee682a3da2c8e400e3e1c20c4f3cae44044867ee76485a02d8ed200370ec"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-supplies3.png",
+      "sha256": "987e3741354633c1ca24bae45581d79f629277d4530f9c39ffced42343330c15"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-wide-page3.png",
+      "sha256": "01eb0f1d8010dd24eb85bef5d1aa9b57763cbe11750858b6216a3cb7fae7acea"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-wide-page4.png",
+      "sha256": "56076ad0bb03a2156bb4655da040699413907570825c8232a867e80b9994d7a4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/M18-wide-page5.png",
+      "sha256": "529f175c6ae8e807b75e1fda349e8acdc1c0176f258d4b7bf5e582a1f40fb82e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/MB2003-10.png",
+      "sha256": "0e535356a450eb253012ebacbeb88d5e2cf76d9e950672a3d3b82b1f0922d1eb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/MB2003-machine.json",
+      "sha256": "2a06a0c11013aaf6571ca1279e13570ac076b2ec387f3e5a7bce89a81be3f5a4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/TXT-IBI-CP137-E1-NATIVE.txt",
+      "sha256": "f19dab9e53121c194fb83bef529bde36ea5d87ea7cb395f6f6c1c51785d4ba1b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/TXT-IBI-CP137-L5-NATIVE.txt",
+      "sha256": "5b26aa6f26eb4d00f30fa50966e5cc700021c51d05cfb2b294d17f5ba6358341"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/TXT-IBI-CP137-M11-NATIVE.txt",
+      "sha256": "83275f556bf1907d4777cb502347095def4aaf51aad171e5d6bfaf0088b9c02d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/TXT-IBI-CP137-M18-NATIVE.txt",
+      "sha256": "75aee0f8f401ee31ce54c9db1ba6e017fac91b68f86bae94f28f9ffac46ac880"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/acquire.py",
+      "sha256": "03672f615f9ca086409e17861d54ca8454f7bdb2c583931d8cf39cd26219eebf"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/apply-progress.json",
+      "sha256": "1f525caa93179dbfd7562fc11f3c293ea015f0942f8391e937ddd34e09ffa3c1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/campaign_case_progress_checkpoint137.json",
+      "sha256": "86a04c4840fc95f916621708144def8fa583dbbcbae5e320f4f6711554dc9c43"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/closure-verification.json",
+      "sha256": "7b6af1e9f1493683ad13cd73a0748188977cde568847483b7c4a503bcb5e1a10"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/column-recipes.json",
+      "sha256": "1eae9ce61ecd40d83bd15454629654d6cfef3b96c210d04856a198e1ac63e6eb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/copies-current.json",
+      "sha256": "f4ece574a62a95f23938dd39081567986f75083ef6fece0721064b8bb3cdcbfd"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/correct_extent.py",
+      "sha256": "c61511b92f69da5ae288d924df1e428cbfd91939dd895a550e66be12f9d67921"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/document-assessment-before.json",
+      "sha256": "2d4d9efd36e5a1aed2e88f248c1643beb4cddc3a57dc1778e7660ef454cbdade"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/extent-assessment-before-correction.json",
+      "sha256": "314482ca56677a303fbf096c9d44393afa83ef9e16d4a36f8c7ee3d4739083d0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/extent-correction-apply-and-replay.json",
+      "sha256": "c38c89ab19f240ebf88cf2c4c3100753fa14849b466934ddaff32e9fe4d86317"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/extent-correction-evidence.json",
+      "sha256": "a99135a188888c4f783b85adea0585456be7a29622613d2355ce71c86adb28fd"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/fingerprint-after.json",
+      "sha256": "0410c81f36abe7b284a0ed1fffc47e546d3f371ee6247673ca102f64f1db5bdb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/fingerprint-before.json",
+      "sha256": "e6361f82b1aeef31071ae1fe0492d265d82bd07608e6c75f90894aaa88fcf885"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/fingerprint-trial.json",
+      "sha256": "0410c81f36abe7b284a0ed1fffc47e546d3f371ee6247673ca102f64f1db5bdb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/held_pdf_inventory_checkpoint137.json",
+      "sha256": "38e6c8b5e9deaf61ac35348b6470339c6d9d075329c52cef517c7ff6b008d0b9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/intake.py",
+      "sha256": "2d2290705918726a50e4d488ccfa7502bb4147a9df4a020da4447db8727ca26c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/metadata.json",
+      "sha256": "0a3125d3a666b0625101dc3ff50cb0304da44dc8079622555d7de9095dcc6c9b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/miri-final-snapshot.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/miri-queue-before.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/node-tests-final.log",
+      "sha256": "d72d22be39af271fc95023dd0e1f74a4164b99da602e0287db696b64e7d2d3e4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/non_pdf_holdings_checkpoint137.json",
+      "sha256": "79e14f2d769d2e6096a2ef328da3cb9ad0a720c617e68b85883d48d80139d627"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/origin-source-intake.json",
+      "sha256": "9ed5bfb5961f3d6404a287b2b7ea27b98f3e013d7922e04ec5a987ffde9c9d5b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/page-03.png",
+      "sha256": "26aa393d39c9a122cefb7b452ac5a1b5ea048ba04a8d7d4423e8a5aec241789d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/page-04.png",
+      "sha256": "5e2f0e79924e3c5a6ba3146ef1840da7d16f58c211687fe8f5281219d9c8b73e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/page-05.png",
+      "sha256": "5e3900ef800783590d70b947af8fc50b538e44096c02339ab88a2f2e85ae8228"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/page-3-4x.png",
+      "sha256": "7d19a6a7dae83d1f69d6c2ef6543ee14903f3d4d3e39f6570e0166db90f3537d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/page-4-4x.png",
+      "sha256": "9e4645ec878f57f69b2ad48134ea68abba422aa2e43a8b82551fa3cc212756e9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/page-5-4x.png",
+      "sha256": "83a3a8dede77c22c8ed0db45d1d5b10a163719dce4ad8109e37a87dc8b5f0a1d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/pixel-recheck/page-03.png",
+      "sha256": "26aa393d39c9a122cefb7b452ac5a1b5ea048ba04a8d7d4423e8a5aec241789d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/pixel-recheck/page-04.png",
+      "sha256": "5e2f0e79924e3c5a6ba3146ef1840da7d16f58c211687fe8f5281219d9c8b73e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/pixel-recheck/page-05.png",
+      "sha256": "5e3900ef800783590d70b947af8fc50b538e44096c02339ab88a2f2e85ae8228"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/pixel-verification.json",
+      "sha256": "98733e90f7589f17c1b80cfd1372300f62e46389d6a95d044b625bdcf51a0594"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/prepare.py",
+      "sha256": "a1087a0eb3d1fc0f72615771b7f9ec6172ff825ef69d1b15b971aaac9494da6d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/production-verification.json",
+      "sha256": "a107791c0e80a450f05be379684b1a314f3e8429bbb64fc0eac3b3e74403c09f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/reader-build-final.log",
+      "sha256": "feadeae7ec095412412cb56f5a57a6d9669a7fb337c3c50d9ea681c0eb8341f2"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/reading-extent-inventory.json",
+      "sha256": "c464e82ca3f77e79512a1f6db4a147c3bb0e0439bb5a34e965b0b3f91988ddc4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/record.py",
+      "sha256": "e2e30918b8c3d312f7fb5918c1cf20287807caa5af2de82500563fd9e4019c8f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/regenerate.py",
+      "sha256": "4be752ef32e84f604627c49860aaf7fcbf620fd0ed254d04129649396064edcd"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/E1-desktop.png",
+      "sha256": "1339f2fb4f2861968af4a2a9ba4636e894d718fe94884078c081eb7aa66ef02d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/E1-mobile.png",
+      "sha256": "3d520b8bb2bd4a2c2e6598c7b6012ab343784ea707452b646d4e8ede4c509181"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/L5-desktop.png",
+      "sha256": "b803371dfad9df90b56f8d77425ea9c1a5e6585229459ad078dcc81f3ab49301"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/L5-mobile.png",
+      "sha256": "fb9d53bd6c67b5dfa34b51b6c8ae3d0dab68b0b0578d3616230b603d272535fe"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/M11-desktop.png",
+      "sha256": "1ec69d37cfeec5d234dbe2fd27987e1c0ea310f25b0a8fc90bb25b29d8f7664a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/M11-mobile.png",
+      "sha256": "7a523aae1b1bb9155388dac759805cb09f1d26b6cd8c2447d63a298a3524806d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/M18-desktop.png",
+      "sha256": "ea51d750641ae07daaffef38a3ed825138d6a3836091bc2f1b2ea745708e0ede"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/M18-mobile.png",
+      "sha256": "5e173acc0830ad5ece16f56dd928ad56113b01e78c42bc90924aeb834512da1d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render/render-verification.json",
+      "sha256": "4aa87be114064c3a3530f13125db1a19dcc3c34d82da76910e8c04c74474b442"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/render_check.cjs",
+      "sha256": "b6e2678671464da86ba2cc493f5c1134755a4e6cd610494c2531878b3c69c392"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/reports-final.json",
+      "sha256": "9c49ddde32bc24e08937f96e567782133d0416ff31eb9dd7526ca6f9b27147ca"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/roadmap-before.json",
+      "sha256": "fc57a3785caff737a7b0171ca7453418e2143de32f2132c8f68fefcd0e6fe3ac"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/roadmap-final-snapshot.json",
+      "sha256": "a53097d9043583edf5e1b97a56ea7bf5e95196de350049d94645002671075f38"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/seven-manifest-final-replay.json",
+      "sha256": "e40c634828437ea6076200518e64551fbc94ac5700b68b7726c1d3c8891ff2f1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/source-evidence.json",
+      "sha256": "deffc1436db638b0cfa1679abf91d4441d0898451014433153a570a6b2790ac0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/tests-final.log",
+      "sha256": "77e9792c7ab94f778d03ae3e552f6fee02f3ce4f71660b70a65ca4634d126a21"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/trial-verification.json",
+      "sha256": "a107791c0e80a450f05be379684b1a314f3e8429bbb64fc0eac3b3e74403c09f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-comparisons137-2026-10-04/verify_close.py",
+      "sha256": "a4a288d75c02640040253813d797c7305530669303a59b775d5be325db1fda88"
+    }
+  ],
+  "closed_at": "2026-10-04T10:11:58+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0137_Gordon_comparative_copies_and_original_Lidzbarski_holding_verified.json",
+    "sha256": "f5a22720851df94529dcceabfd9d8cb133e8d18c2db56357cdba71ca0c787f59"
+  }
+}

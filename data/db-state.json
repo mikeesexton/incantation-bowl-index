@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "b21b4e63f8d8ed1c1f7ce44c35273d8587da0f4913ad825d3d5aa238b3cf9109",
+  "corpus_digest": "769925cf65e543658bbc0de8a396cdd58ac3666736a28eb8f28b086875081a77",
   "migrations": 21,
-  "note": "Checkpoint136: sixteen Gordon source-copy correction groups, two comparative bowl appearances and sourcewide partial extraction assessment; 505 tests and private reader verified.",
-  "recorded_at": "2026-10-04T09:37:17+00:00",
+  "note": "Checkpoint137: four comparative native copies, original Lidzbarski first-fascicle holding and source locators, partial extraction/statuses retained; corrected current body extent1\u2013108; all39tables trial-exact/505tests/8reader audits/seven manifest replays zero.",
+  "recorded_at": "2026-10-04T10:13:39+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,20 +11,20 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "be618fd106dd9701131733e4625006dd61e43faa4aa0843ea618c6fcd6d5da82",
-      "rows": 2898
+      "digest": "366872b890824c168f125b652487761b691220429e4f155f48afac7e38c599bd",
+      "rows": 2901
     },
     "appearances": {
-      "digest": "a40a049e69c8ff50ba78ab9657633b2c0f02e408590c8b5059cc7c57c8f7938e",
-      "rows": 2898
+      "digest": "7a9304d429131e872c758dd8c6d0cf4ec8a7590fb51d6129462b4167de586168",
+      "rows": 2901
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
       "rows": 3
     },
     "captures": {
-      "digest": "7392543c85d0bb120895cf870b4b13a6bf0db899800ed0845d44cc3ae46525bb",
-      "rows": 101
+      "digest": "35b20d8c33aec4ba4b82465938099c2bae7b8779692c324a97682c45f8c1b207",
+      "rows": 102
     },
     "catalogue_metadata_corrections": {
       "digest": "0a25edd061dfa9a469df2b7dc3eea92d55de7b38baede0ff26eb45acd09c867b",
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "52560eaf8a90624a458a71922e64e026ff6c87c6c7d25dc18d6c0f11a8d3876e",
-      "rows": 161
+      "digest": "704707bb03a49438362774a3f33b40deba640f5f168e676be2c0db111093655e",
+      "rows": 164
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "5d566d48aeef5245355262f1f7482dda40d5f021219328b378622f8a09782660",
-      "rows": 2261
+      "digest": "f432813599a0a9f5a79e1d3549490e05d2de4bbf48cc3c7e6a1bc61b1a0d5f6c",
+      "rows": 2265
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -111,8 +111,8 @@
       "rows": 2259
     },
     "publication_assessments": {
-      "digest": "0de4d98f68583c0aea9bc7e678ddfdfc972b5a9f229d21e05bb9307e6aa9a2fc",
-      "rows": 646
+      "digest": "83bee7b3908e703b13c631a8f9b195972018ccfe7f8f8341da2c7d94cf686130",
+      "rows": 649
     },
     "publication_registry": {
       "digest": "01b59ec0b157ca417cd523761ce956306bd42dd00bcc517efab1d25106f48006",
@@ -143,24 +143,24 @@
       "rows": 119
     },
     "sources": {
-      "digest": "8e5bcd94d08fac052466526bf70ddfc114c3decec1b94070e0b7a97d92fa0c22",
-      "rows": 980
+      "digest": "28706360e866563204eff7e16611df4aa4253c70a78f56fe9db2d414a2e9cd2c",
+      "rows": 981
     },
     "text_metadata_corrections": {
       "digest": "c9b9e6eb82ead61836513ae69658a02c8809939e5e223cb936749c7e7215f578",
       "rows": 31
     },
     "text_proofreading_reviews": {
-      "digest": "bb86658790d39699bd27dbf247380deaffd0e1c751864bd534c0a5f38f133034",
-      "rows": 2052
+      "digest": "65c01c4145e2c1b5d164d54c06e0bef2e7f15e24cb2eaf3660de87fd2c010756",
+      "rows": 2056
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "614422540f4f21bc418dadca371fe90b1e079e7c5254784280e01f0be426b6f5",
-      "rows": 2507
+      "digest": "011f41db83ab7192d1cdfa52559a6130e324d0e607f75a6fa1a89e6fa9f09dda",
+      "rows": 2511
     }
   }
 }
