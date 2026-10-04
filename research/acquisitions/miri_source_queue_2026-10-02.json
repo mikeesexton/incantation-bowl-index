@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T13:13:27.719422+00:00",
+  "updated_at": "2026-10-04T13:31:27.592571+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -721,7 +721,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-07",
       "sha256": "5c54c5b3dd83fdb976aad6349ed9b3f885053c6972a7433abcc218c809f66e33",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "reading_audit": "All three own English translation columns copied and source-checked; own published photograph and four article pages retained. Hebrew-letter Mandaic edition/native glyphs, apparatus and comparative references pending; sourcewide extraction partial.",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": null,
@@ -737,7 +737,25 @@
       "document_evidence": {
         "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
         "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
-      }
+      },
+      "reading_updates": [
+        {
+          "checkpoint": 142,
+          "observed_at": "2026-10-04T13:31:27.592571+00:00",
+          "status": "All three provided English translation columns copied/checked and own published photo retained; Hebrew-letter edition/native script and apparatus pending; sourcewide partial",
+          "inventory": {
+            "path": "data/private/research-work/Driver-original142-2026-10-04/reading-extent-inventory.json",
+            "sha256": "bd70c7f1573709982a7487a6e71fa64ce701099a99aebcbba78ee9fac9cd9137"
+          }
+        }
+      ],
+      "reading_audit_history": [
+        {
+          "checkpoint": 141,
+          "status": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+          "recorded_at": "2026-10-04T13:13:27.719422+00:00"
+        }
+      ]
     },
     {
       "source_id": "SRC-IBI-CP131-MK1999-PUZZLING",
@@ -1415,8 +1433,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/supplied141-2026-10-04/miri-queue-before.json",
-    "sha256": "130e2043d5a15898254df57df627389275aabf8b75ebc328c68b1074c22aed55"
+    "path": "data/private/research-work/Driver-original142-2026-10-04/miri-queue-before.json",
+    "sha256": "382b6ab65709715f839b3046a2763d2938f0a4a7901d57a8970e965b1834feca"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1603,5 +1621,14 @@
       "Rasmussen written thesis and supplementary CD gap"
     ],
     "no_outbound_message": "Miri-facing local queue only; no message sent"
+  },
+  "checkpoint142_driver_original": {
+    "receipt": "research/receipts/Driver142_original_2026-10-04.json",
+    "source_id": "SRC-DRIVER1930-MAGICBOWL",
+    "checked_own_english_columns": 3,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
   }
 }

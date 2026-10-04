@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "checkpoint": 142,
+  "created_at": "2026-10-04T13:31:27.592571+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "2403b2b10118507bd475c95ed69f93a9c523a447e3d9d710646bfe06fcdd7c30",
+  "corpus_after": "1c57185f1a5ec03e5e0c768d71df7d8b50124b6ad36be4aca9a763704978f8e4",
+  "table_changes": {
+    "appearances": 1,
+    "appearance_object_links": 1,
+    "texts": 3,
+    "media": 4,
+    "claims": 6,
+    "publication_assessments": 1,
+    "text_proofreading_reviews": 3,
+    "document_assessments": 1
+  },
+  "scope": "Checkpoint142:three own Driver1930 English translation columns separately copied and source-checked, four full original article pages including published bowl photograph retained, exact Ashm.1930,41 reused on existing scoped candidate. Four source metadata observations plus two explicit project field projections append six claims. Driver diameter17.4cm and Gordon1941 diameter17.2cm retained separately, no adjudication. Original28-line Hebrew-letter Mandaic edition/native glyphs and line apparatus remain pending; sourcewide extraction partial. No new object/identity/rights or whole-case decision.",
+  "new_text_rows": 3,
+  "new_checked_readings": 3,
+  "new_partial_readings": 0,
+  "new_appearances": 1,
+  "new_publication_assessments": 1,
+  "new_document_assessments": 1,
+  "new_claim_rows": 6,
+  "independent_source_observations": 4,
+  "project_field_projections": 2,
+  "new_media": 4,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2559,
+  "total_media": 2312,
+  "total_captures": 119,
+  "total_identities": 1910,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 74,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Driver142_readings_2026-10-04.jsonl",
+      "sha256": "b8a43db4ddd13a60a8d3adcaf46afd3d08e43e4e5976dc9840c02769685eda1b"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Driver142_publication_2026-10-04.json",
+      "sha256": "edd94d701655be40631855825695e251a0373db1a2ed88a327f754323aac13da"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Driver142_proofreading_2026-10-04.json",
+      "sha256": "193e5471e341060f152e710e8dafc52c0d11738c19b8b20faef2f31af9cd97a4"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Driver142_documents_2026-10-04.json",
+      "sha256": "2ba7c0362fa0d528c7ee08c690bbc9973437575c9a13303e710c18f4f10932cc"
+    },
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Driver142_structured_claims_2026-10-04.jsonl",
+      "sha256": "b010e1b6ec0e746702528fd29473a550a0683d96551e4bc1a930958db7de0d47"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/source-evidence.json",
+    "sha256": "cc4259c1c854b45ce4f884937630fd54f3bd11ff693c01698c255ec79e63144c"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/reading-extent-inventory.json",
+    "sha256": "bd70c7f1573709982a7487a6e71fa64ce701099a99aebcbba78ee9fac9cd9137"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/page-derivatives.json",
+    "sha256": "1b4b28326f39e2e233fb941e96b93701c21479afeb9a96c4136da53926714f36"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/campaign_case_progress_checkpoint142.json",
+    "sha256": "ce2450e082050a177959e8b6abdff8b8d8f1a66bdac34269164ecc378adb5075"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/held_pdf_inventory_checkpoint142.json",
+    "sha256": "c985eaf85401cd93711341272dd8c7a139808d0c27b500f36a712d82be87818b"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/non_pdf_holdings_checkpoint142.json",
+    "sha256": "9d017a4f16e392c89d6570ce9bd9dd91bd598e0ab532777a10baf4ed657e5dfe"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Driver-original142-2026-10-04/intake-verification.json",
+    "sha256": "f3f54575f9f78005949712078362b482316215baa11bb4993a28c0ffae85b006"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2559,
+    "all_media_assignments_verified": 2312,
+    "all_local_image_hashes_verified": 1401,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1910,
+    "all39tables_scholarly_fields_equal": true,
+    "generated_claim_UUID_and_creation_times_excluded_only": true,
+    "all_prior_rows_retained": true,
+    "five_manifest_replay_unchanged": true,
+    "frozen249_entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "independently_pixel_exact_article_pages": 4,
+    "reports_regenerated": 7
+  },
+  "limits": "Own English translation columns only. Original scholarly Hebrew-letter Mandaic text, native glyphs and complete commentary still pending. Source depth not silently mapped to height; historical Mesopotamia return statement not a verified Nippur findspot/current custody. Differing17.4/17.2diameter reports retained. No native/clay/specialist/authenticity/identity/public-rights decision or whole-case completion.",
+  "diagnostics": "Initial production verifier correctly found generated claim creation timestamps differ from rehearsal; only UUID/time excluded after inspection, all scholarly fields compared, no data altered. Generic raw field observations retained; explicit dimensions/inscription_language projections appended for project filters. Five manifests replay unchanged; no reset/deploy/push/purchase/outbound message/Watermanretry.",
+  "closed_at": "2026-10-04T13:34:28.592418+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0142_Driver1930_original_english_and_photo.json",
+    "sha256": "2c5712c8ef39f62c0643575f8d2f4905f5c39f9b3fbd22ba4ed1c143e8050058"
+  }
+}

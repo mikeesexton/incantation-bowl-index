@@ -1,6 +1,6 @@
 # Identity-level claim conflict triage
 
-Generated: `2026-10-04T13:15:00+00:00`
+Generated: `2026-10-04T13:32:27+00:00`
 
 The original source claims remain unchanged. This review classifies apparent differences so compatible wording and distinct metadata facets are not mistaken for unresolved scholarly contradictions.
 
@@ -524,7 +524,7 @@ Historical decisions are retained. This queue contains missing reviews and decis
 | IDENT-CEBD4DE0052A — Vorderasiatisches Museum VA.2413 (catalogue 9) | condition | reported_physical_condition: Complete. [SRC-DA708912C2D3; Catalogue entry 9, printed p. 76; PDF p. 90]; reported_writing_condition: Mostly well preserved. [SRC-DA708912C2D3; Catalogue entry 9, printed p. 76; PDF p. 90] |
 | IDENT-CEBD4DE0052A — Vorderasiatisches Museum VA.2413 (catalogue 9) | dimensions | dimensions: 10.5 cm diameter [SRC-0B6C0E1133EF; descriptive catalogue no. 2, printed p. 13; VA 2413]; reported_dimensions: 10.6 × 5.7 cm. [SRC-DA708912C2D3; Catalogue entry 9, printed p. 76; PDF p. 90] |
 | IDENT-CEBD4DE0052A — Vorderasiatisches Museum VA.2413 (catalogue 9) | vessel_form | reported_bowl_form: Flat base. [SRC-DA708912C2D3; Catalogue entry 9, printed p. 76; PDF p. 90]; reported_fragment_type: n/ a. [SRC-DA708912C2D3; Catalogue entry 9, printed p. 76; PDF p. 90] |
-| IDENT-CP118-ASH-1930-41 — Ashmolean 1930.41 | dimensions | dimensions: {"diameter_cm": 17.2, "height_cm": 7.7} [SRC-GORDON1941-CONTINUED; Ashmolean 1930.41, provisional catalogue printed277; PDF7]; dimensions: {"flat_base_diameter_cm": 6.5} [SRC-GORDON1941-CONTINUED; Ashmolean 1930.41, provisional catalogue printed277; PDF7] |
+| IDENT-CP118-ASH-1930-41 — Ashmolean 1930.41 | dimensions | dimensions: {"diameter_cm": 17.2, "height_cm": 7.7} [SRC-GORDON1941-CONTINUED; Ashmolean 1930.41, provisional catalogue printed277; PDF7]; dimensions: {"flat_base_diameter_cm": 6.5} [SRC-GORDON1941-CONTINUED; Ashmolean 1930.41, provisional catalogue printed277; PDF7]; dimensions: Depth 7.7 cm; diameter 17.4 cm [SRC-DRIVER1930-MAGICBOWL; Driver1930 printed61/PDF2, photographic caption] |
 | IDENT-CP119-ASH-1931-473 — Ashmolean 1931.473 | dimensions | dimensions: {"flat_base_diameter_cm": 5.2} [SRC-GORDON1941-CONTINUED; Ashmolean 1931.473, provisional catalogue printed278; PDF8]; dimensions: {"diameter_cm": 13.4, "height_cm": 6.1} [SRC-GORDON1941-CONTINUED; Ashmolean 1931.473, provisional catalogue printed278; PDF8] |
 | IDENT-CP119-ASH-1931-473 — Ashmolean 1931.473 | provenance | collection_history: Presented by Sir Charles Marston, as reported by Gordon in 1941 [SRC-GORDON1941-CONTINUED; Ashmolean 1931.473, provisional catalogue printed278; PDF8]; findspot_or_origin: Persia near the Tigris [SRC-GORDON1941-CONTINUED; Ashmolean 1931.473, provisional catalogue printed278; PDF8] |
 | IDENT-CP121-ASH-1927-3297 — Ashmolean 1927.3297 | dimensions | dimensions: {"diameter_cm": 11, "height_cm": 3.4} [SRC-GORDON1941-CONTINUED; Ashmolean 1927.3297, provisional catalogue printed276; PDF6]; dimensions: {"flat_base_diameter_cm": 4.2} [SRC-GORDON1941-CONTINUED; Ashmolean 1927.3297, provisional catalogue printed276; PDF6] |
