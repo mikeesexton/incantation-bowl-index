@@ -8,16 +8,16 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1570 | 63 | 1 | 1634 | 96.1% |
-| Other stored text (mostly source extracts and summaries) | 1 | 7 | 738 | 746 | 0.1% |
-| All stored text | 1571 | 70 | 739 | 2380 | 66.0% |
+| Edition text (translation, transcription, transliteration) | 1578 | 55 | 1 | 1634 | 96.6% |
+| Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
+| All stored text | 1580 | 62 | 738 | 2380 | 66.4% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
 | translation | 771 | 41 | 1 | 813 |
-| transcription | 608 | 18 | 0 | 626 |
+| transcription | 616 | 10 | 0 | 626 |
 | transliteration | 191 | 4 | 0 | 195 |
 
 ## Edition text by source
@@ -76,7 +76,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 7 | 0 | 0 | 7 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
-| Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 69 | 11 | 0 | 80 |
+| Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 77 | 3 | 0 | 80 |
 | Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 37 | 0 | 0 | 37 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |
 | Biblical Quotations in the Aramaic Incantation Bowls and Their Contribution to the Study of the Babylonian Reading Tradition (`SRC-MOLIN2020-BIBLICAL-QUOTATIONS`) | 13 | 0 | 0 | 13 |
