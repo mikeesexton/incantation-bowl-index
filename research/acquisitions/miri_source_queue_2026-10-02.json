@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T23:05:54.704767+00:00",
+  "updated_at": "2026-10-04T23:32:58.440368+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1327,6 +1327,12 @@
           "checkpoint": 70,
           "finding": "Displayed museum English now captured/source-copy checked in Mike private reader. Translator/original native edition/extent still unverified; exact accession/acquisition and label/translation documentation remains needed, no duplicate visible-English request.",
           "receipt": "research/receipts/frozen_case_English70_audit_2026-10-03.json"
+        },
+        {
+          "checkpoint": 159,
+          "checked_at": "2026-10-04T23:32:58.440368+00:00",
+          "finding": "Primary museum page inspected through footer. Exact accession/purchase funding and displayed English retained; no translator or original scholarly edition named in the inspected page. Existing English already captured; no duplicate rendition request.",
+          "receipt": "research/receipts/Research159_routes_and_extracts_2026-10-04.json"
         }
       ]
     },
@@ -1734,8 +1740,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Ellis158-2026-10-04/miri-queue-before.json",
-    "sha256": "c5b8dbf0447cccd4f655aad62741591007629fddfe7a68c1fb136452abc31365"
+    "path": "data/private/research-work/Research159-2026-10-04/miri-queue-before.json",
+    "sha256": "f87187f1127cacfe45977110eba5f2af5aace8096c714631bdb7505b5516bdc5"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2112,5 +2118,26 @@
     "new_requests": 1,
     "native_recovery": "Ellis6unresolved",
     "no_redundant_Moriggi_acquisition": true
+  },
+  "unconfirmed_discovery_candidates": [
+    {
+      "checkpoint": 159,
+      "short_label": "Geburtskultur2022preview",
+      "citation": "Naomi Lubrich(ed.), Geburtskultur / Birth Culture, Schwabe2022, ISBN9783796546075, DOI10.24894/978-3-7965-4651-8.",
+      "status": "unconfirmed object inclusion; preview body inaccessible",
+      "requirement": "If readily available, permitted table of contents/object-index or relevant bowl-page preview to determine whether JMS1973-2 is included; no full-book acquisition required on metadata alone.",
+      "preview_url": "https://api.pageplace.de/preview/DT0400.9783796546518_A46575484/preview-9783796546518_A46575484.pdf",
+      "evidence": {
+        "path": "data/private/research-work/Research159-2026-10-04/publication-routes.json",
+        "sha256": "4ce70815cdd2ce6afcb0b7c125f607aa10e47d598233382c184f1c9213545ccd"
+      },
+      "counts_as_verified_missing_edition": false
+    }
+  ],
+  "checkpoint159_routes_and_controls": {
+    "receipt": "research/receipts/Research159_routes_and_extracts_2026-10-04.json",
+    "new_verified_acquisition_requests": 0,
+    "new_unconfirmed_preview_candidate": 1,
+    "native_gaps_closed": 0
   }
 }

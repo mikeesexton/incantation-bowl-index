@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "checkpoint": 159,
+  "created_at": "2026-10-04T23:32:58.440368+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "scope": "Checkpoint159: two partial Moriggi10 catalogue/apparatus extracts corrected against original pages for four missing spaces and interrupted cross-page footnote111 reading order; all original words/glyphs/footnotes preserved in immutable before/after reviews. All2311other current checks unchanged; original native Pognon9 glyph pilot remains a private working hypothesis only, zero native gaps closed. Four frozen publication cases received exact accession/primary routes; no original edition obtained or new publication link. Geburtskultur2022 preview discovery candidate flagged separately for Miri, exact bowl inclusion unverified; no full-book request inferred. Frozen24935linked214unlinked/zero wholecasescomplete. Miri21resolved33remaining. Goal active.",
+  "corpus_before": "14e6f0ac53f1688aa0314801ed580b6a2581be4bad626e9149f67beefc4ed217",
+  "corpus_after": "613d98e6f7809058e95d72ea0d0cf188459938ade65146969d62e3e984e0234b",
+  "source_id": "SRC-3C4294DDB367",
+  "source_pdf_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+  "corrected_partial_extracts": 2,
+  "new_proofreading_reviews": 2,
+  "unchanged_prior_current_checks": 2311,
+  "new_texts": 0,
+  "new_native_character_transcriptions": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_media": 0,
+  "new_objects": 0,
+  "new_identity_decisions": 0,
+  "new_claims": 0,
+  "new_rights_approvals": 0,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "new_targeted_case_attempts": 4,
+  "new_publication_links": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 33,
+  "new_acquisition_requests": 0,
+  "new_unconfirmed_preview_candidates": 1,
+  "allowance_resets_verified_used": 0,
+  "review_manifests": [
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Research159_Moriggi_extract_corrections_2026-10-04.json",
+      "sha256": "ad058fabcc8d23866bc47cb97a5c82d698fccca58069b842230a07823ab3bd25"
+    }
+  ],
+  "validation": {
+    "python_tests": 477,
+    "node_tests": 71,
+    "total_tests": 548,
+    "reader_checks": "8/8",
+    "all39trial_production_tables_exact": true,
+    "prior_rows_retained_or_immutable_snapshot": true,
+    "all_memberships_unchanged": true,
+    "unchanged_prior_current_checks": 2311,
+    "partial_reviews_superseded": 2,
+    "current_source_checks": 2313,
+    "all3028private_texts_verified": true,
+    "all2443media_assignments_verified": true,
+    "all1532local_image_hashes_verified": true,
+    "all119capture_bytes_and_assignments_verified": true,
+    "all994sources_verified": true,
+    "all1929identity_memberships_verified": true,
+    "all249prior_attempt_histories_retained": true,
+    "exactly4new_targeted_attempts": true,
+    "current_inventory_units_verified": true,
+    "miri21resolved33remaining_and_unconfirmed_preview_separate": true,
+    "four_complete_source_pages_hashbound_viewed": true,
+    "source_nonwhitespace_character_multisets_exact": true,
+    "historical_candidate_replay_and_stale_proof_rejection_verified": true,
+    "actual_reader_AX_and_two_screenshots": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "no_native_gap_closed_or_identity_decision": true,
+    "DISC004_and_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "limits": "Partial source extract copying repair, not scholarly adjudication. Native pilot retained only as private hypothesis, no checked native corpus row or gap closure. Metadata/route failures cannot verify original readings or absence. No push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "diagnostics": "Pillow contextual rendering unavailable; isolated glyph chart and browser joining comparison used. Font byte copy succeeded but copy metadata operation failed; exact bytes verified/source font untouched. Requests package absent in read-only preview diagnostic; recovered with existing archive robots helper, which could not verify permission, so no target PDF requested. Historical proofreading intentionally rejects stale revised text without mutation.",
+  "source_evidence": {
+    "path": "data/private/research-work/Research159-2026-10-04/source-evidence.json",
+    "sha256": "1dc08ea6f4531220bd5f5be77e29ea0ca98afb073442c4e65fe6d21b74275328"
+  },
+  "native_pilot": {
+    "path": "data/private/research-work/Research159-2026-10-04/native-pilot.json",
+    "sha256": "935bff3a496bc0f4144674220c2176e4fa63209ec1d5d6111c1b439349903295"
+  },
+  "publication_routes": {
+    "path": "data/private/research-work/Research159-2026-10-04/publication-routes.json",
+    "sha256": "4ce70815cdd2ce6afcb0b7c125f607aa10e47d598233382c184f1c9213545ccd"
+  },
+  "unit_inventory": {
+    "path": "data/private/research-work/Research159-2026-10-04/current-unit-inventory.json",
+    "sha256": "5336a2438ebaa10f6892ade06288d257a72f265723bd64707f05b15660d43232"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Research159-2026-10-04/intake-verification.json",
+    "sha256": "6bc899507a992b587d970b5c5d712214e4fef7b650947f6d8fc3829115de1beb"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Research159-2026-10-04/campaign_case_progress_checkpoint159.json",
+    "sha256": "293ebf5c13c7aac546d35f914e4c1c313937b6717a718320f199034b363651bb"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/Research159-2026-10-04/case-availability-audit.json",
+    "sha256": "14a5245df55ef2f31d990b2c05920aef48e2ce188cca6556b727b8fbb3892c20"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Research159-2026-10-04/held_pdf_inventory_checkpoint159.json",
+    "sha256": "2c3a28a9826ec8ed5eefb4e1dd71c1f00f3a2f86828242b4ea6fbdf9f63c824f"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Research159-2026-10-04/non_pdf_holdings_checkpoint159.json",
+    "sha256": "3b9ec32597c2364bcae73429aa952e8ac0a0bacc4013120d7f307c7c6d3e5add"
+  },
+  "ui_verification": {
+    "path": "data/private/research-work/Research159-2026-10-04/ui-verification.json",
+    "sha256": "839decdbbcc3daf9d55a94b92f10a3e304d0f296461f27c19db1064633278569"
+  },
+  "closed_at": "2026-10-04T23:36:59.428420+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0159_routes_and_partial_extract_corrections.json",
+    "sha256": "68719e1e0f6717be2758c166f3ffa42b515e25156baef94951359c047e23c366"
+  }
+}
