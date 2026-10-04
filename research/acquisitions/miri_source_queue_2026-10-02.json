@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T15:23:39.036143+00:00",
+  "updated_at": "2026-10-04T16:03:40.379389+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -669,7 +669,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-02",
       "sha256": "c43051b3872500252c3991c3b03da66ef204c37c2a7172231acf20f51ee97602",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "reading_audit": "All nine provided first-installment English translations source-copy checked. Native Text9 working copy covers all four anchors but remains partial for inferior dots and exact glyph/gap notation; native1–8 pending.35 page assignments include three original photographs and seven shared handcopy plates. Six scoped candidates, three exact existing designations; Text3 Hilprecht and Text6 Louvre accession bridges unestablished. Sourcewide apparatus/corrections/claims extraction partial. Separate concluded installment pending.",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": null,
@@ -686,7 +686,26 @@
       "document_evidence": {
         "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
         "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
-      }
+      },
+      "reading_audit_history": [
+        {
+          "recorded_at": "2026-10-04T16:03:40.379389+00:00",
+          "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+          "superseded_by_checkpoint": 147
+        }
+      ],
+      "reading_updates": [
+        {
+          "checkpoint": 147,
+          "observed_at": "2026-10-04T16:03:40.379389+00:00",
+          "status": "All nine provided first-installment English translations source-copy checked. Native Text9 working copy covers all four anchors but remains partial for inferior dots and exact glyph/gap notation; native1–8 pending.35 page assignments include three original photographs and seven shared handcopy plates. Six scoped candidates, three exact existing designations; Text3 Hilprecht and Text6 Louvre accession bridges unestablished. Sourcewide apparatus/corrections/claims extraction partial. Separate concluded installment pending.",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Gordon147-2026-10-04/reading-extent-inventory.json",
+            "sha256": "f4ca8168613d12c0bd3a8acfb83106f4b16e1921b7d21aed1891a2623562eb5c"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-GORDON1941-CONCLUDED",
@@ -1550,8 +1569,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Shaked146-2026-10-04/miri-queue-before.json",
-    "sha256": "50235354c697c0fb630f699786c62b9dffc8728ed842f22591b706b3cb607049"
+    "path": "data/private/research-work/Gordon147-2026-10-04/miri-queue-before.json",
+    "sha256": "f222a426e18c15ae181a39469041379601d2b981332a44179e86b6b8784766bc"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1785,6 +1804,16 @@
     "source_id": "SRC-A06D3C4C7CDF",
     "checked_reading_rows": 11,
     "partial_reading_rows": 0,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint147_Gordon_first": {
+    "receipt": "research/receipts/Gordon147_original_2026-10-04.json",
+    "source_id": "SRC-GORDON1941-FIRST",
+    "checked_reading_rows": 9,
+    "partial_reading_rows": 1,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
     "miri_remaining": 32,

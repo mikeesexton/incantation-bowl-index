@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "checkpoint": 147,
+  "created_at": "2026-10-04T16:03:40.379389+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "5e1228e18eeebc2fcf87af244f82f042155c8d0db5e312e00dc45a3b97a94299",
+  "corpus_after": "658dd3efaf4eb9533dcbed7a6b7f04c4f139b428f63aa30a3002c82dedde3d71",
+  "table_changes": {
+    "objects": 6,
+    "appearances": 9,
+    "appearance_object_links": 9,
+    "identifiers": 4,
+    "texts": 10,
+    "media": 35,
+    "publication_assessments": 9,
+    "text_proofreading_reviews": 10,
+    "document_assessments": 1
+  },
+  "scope": "Checkpoint147: all nine provided English translations in original Gordon1941 first installment source-copy checked; one native Text9 working copy explicitly partial. Nine original appearances/assessments,35 fullpage assignments include three photographs and seven shared handcopy plates. Six source-scoped candidates and three exact existing designated objects; four original accession identifiers source-attributed. Text3 Hilprecht and Text6 Louvre accession bridges unestablished; no uncertain merge. Native1–8, native9 uncertainty marks/gaps, apparatus, introduction corrections and structured claims pending. First-installment extraction partial; separate concluded installment next",
+  "new_text_rows": 10,
+  "new_checked_readings": 9,
+  "new_partial_readings": 1,
+  "new_appearances": 9,
+  "new_publication_assessments": 9,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 35,
+  "new_objects": 6,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 0,
+  "new_proofreading_reviews": 10,
+  "new_identifiers": 4,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2634,
+  "total_media": 2387,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2271,
+  "total_identities": 1919,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 78,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gordon147_readings_2026-10-04.jsonl",
+      "sha256": "e95177cba974094584794723b6a2bd298d4372644f1ef3259be4f0b66c9b3ebb"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gordon147_publication_2026-10-04.json",
+      "sha256": "d4eb15872049e539f0cf0e532c44ad5900cd69cab110e11bc953a612c158bc3e"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Gordon147_proofreading_2026-10-04.json",
+      "sha256": "67be0865c84a8f481ceb8c254b762a64b0c119b9c48f543f97333ef1324ab800"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon147_documents_2026-10-04.json",
+      "sha256": "d770e19764edc34510f1f353b2a818545c56af0f4dca38ae354ea697eb21207e"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/source-evidence.json",
+    "sha256": "a0b9ace6008321f5ce702e3665425d20340702ce53b61e98696737509fee419e"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/reading-extent-inventory.json",
+    "sha256": "f4ca8168613d12c0bd3a8acfb83106f4b16e1921b7d21aed1891a2623562eb5c"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/page-derivatives.json",
+    "sha256": "9a0a531d0094f533856909388ac592caebbc5dae7d02251f2d0207cd4a883ccc"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/campaign_case_progress_checkpoint147.json",
+    "sha256": "58453f5c3d4968716f53a70405859346bfc046a3b83ba74d4c23b78bd23c556e"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/held_pdf_inventory_checkpoint147.json",
+    "sha256": "63933358c340302b7a95b77a413d930d6f5d9071b71196949502c04a28d3a4ad"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/non_pdf_holdings_checkpoint147.json",
+    "sha256": "ee312656f057b084e6cb581a99c144647e4c4d79c9daafc2e3db9548c1c4b4d2"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/intake-verification.json",
+    "sha256": "489b1b8761c7df593636880166da1a82406bbb05f149eb5c7b3d855fce805fc4"
+  },
+  "validation": {
+    "python_tests": 451,
+    "node_tests": 62,
+    "total_tests": 513,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2634,
+    "all_media_assignments_verified": 2387,
+    "all_local_image_hashes_verified": 1476,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1919,
+    "all38_other_tables_exact": true,
+    "four_new_identifier_semantics_exact": true,
+    "all_prior_rows_retained": true,
+    "all_prior_identity_memberships_exact": true,
+    "new_scoped_singletons": 6,
+    "four_current_manifest_replays_unchanged": true,
+    "all10current_copy_checks": true,
+    "checked_copies": 9,
+    "partial_copies": 1,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 35,
+    "distinct_assigned_pages": 25,
+    "actually_viewed_full_pages": 26,
+    "actually_viewed_focused_controls": 17,
+    "full_plate_photographs": 3,
+    "distinct_handcopy_plate_pages": 7,
+    "reports_regenerated": 7
+  },
+  "limits": "Nine provided English translations checked as normalized source copies, not clay readings. Native Text9 remains explicitly partial; native1–8, marks, apparatus/corrections/claims and two unnumbered accession bridges pending. Sourcewide first installment partial, concluded installment not yet extracted. Frozen33/216 unchanged; no whole-case completion or public-rights decision",
+  "diagnostics": "All four trial and production manifest replays unchanged.38 other tables exact; four new identifier semantic rows exact with generated-ID mapping retained privately. All old rows/memberships exact plus six scoped singletons. Invalid object type and proofreading status rejected in trial and rolled back before corrected production. No reset/deploy/push/purchase/outbound message/Waterman retry",
+  "closed_at": "2026-10-04T16:05:46.144348+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0147_Gordon_first_installment.json",
+    "sha256": "960a6ed31e05422cf8f0ceb31d0d884c75c13ce9c4225fd046628a1869534287"
+  },
+  "post_closure_reader_visual_audit": {
+    "path": "data/private/research-work/Gordon147-2026-10-04/post-closure-reader-visual.json",
+    "sha256": "f4451439df2c7299dc8867d32618af4e69f11428f3c8f49d095bc6bf74d86eba"
+  }
+}
