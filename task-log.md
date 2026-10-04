@@ -1,3 +1,14 @@
+## 2026-10-04 — Codex — Daily personal audit cadence correction
+
+**Claimed:** none (OPS personal-audit runtime; no existing roadmap task ID). Mike clarified five bowls each day and asked why later edits blocked his completed review.
+**Corpus:** unchanged by this session; opening/closing digest `5e1228e18eee`. Private audit progress only. Concurrent research/market changes preserved separately.
+**Tests:** 451 Python +62 Node passed; 26 personal-audit tests cover fixed-order full pass, next-day refill, unchanged same-day allocation, absent days, duplicate/restarted and concurrent runs, final sparse slots, old ledger adoption, shown-version reviews, late review dates, unchanged corpus, identity replacement, atomic recovery and read-only CLI. Git diff check passed; private ledger/backup remain ignored.
+
+- Daily packets now contain five including pending carryovers; preserve their numbers and fill remaining slots from the saved order. One saved New York-day allocation prevents retries/partial same-day reviews issuing extra bowls. Existing batches/presentations/roster remain intact; policy adoption is an appended private event.
+- Personal reviews count for their exact shown fingerprints even if source evidence changed before recording. New evidence remains a separate recheck; no completion is transferred across identity membership changes. Optional original review date preserves delayed explicit responses without backdating the recording event. Manual recheck presentations can record delivery outcomes.
+- Saved Mike's October3 no-issues review of batch3 bowl5 against the actual October3 morning version; batch3 completed October3, not automatically certified against later edits. Issued October4 batch4, exactly five from the next saved queue entries. All originals/events retained; ledger privately backed up first. Progress15reviewed/1899remaining/63open follow-ups at preparation.
+- Updated the existing daily-five-bowl-personal-audit heartbeat, retaining its ID, thread, active status and daily9a.m. New York schedule. Confirmed saved prompt includes daily refills and older-version reviews. No corpus writes/migrations/ingests, generated report rebuild, public export, server restart, deployment, push, or scholarly/release decision.
+
 ## 2026-10-04 — Codex — Shaked article quotations and cross-references, checkpoint146
 
 **Workstream:** TEXT-004, TEXT-009, TEXT-010; active authorized Goal. Claimed before edits; opening clean/match checkpoint145 `b3a2db9`, corpus ec614d39…ff6e. Previous Goal turn progress; no repeated whole-Goal blocker.

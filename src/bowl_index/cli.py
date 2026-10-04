@@ -252,7 +252,7 @@ def build_parser():
     serve_parser.add_argument("--port", type=int, default=8765)
     for command, help_text in (
         ("audit-init", "initialize Mike's saved personal audit queue"),
-        ("audit-daily", "prepare five bowls or unfinished carryover, with a read-only corpus"),
+        ("audit-daily", "prepare a daily total of five bowls, including unfinished carryovers"),
         ("audit-status", "show personal audit progress and open follow-ups"),
         ("audit-record", "record Mike's explicit personal review of a presented bowl"),
         ("audit-resolve", "record Mike's resolution of an operational audit issue"),
@@ -272,6 +272,7 @@ def build_parser():
             audit.add_argument("--fingerprint", required=True)
             audit.add_argument("--notes", default="")
             audit.add_argument("--request-id", help="stable ID for retry-safe recording of a user message")
+            audit.add_argument("--reviewed-on", help="original explicit review date in New York, YYYY-MM-DD")
         elif command == "audit-resolve":
             audit.add_argument("issue")
             audit.add_argument("--notes", required=True)
@@ -305,7 +306,8 @@ def main(argv=None):
                 result = audit.read_status(**options)
             elif args.command == "audit-record":
                 result = audit.record(args.bowl, args.result, args.fingerprint, args.batch,
-                                      notes=args.notes, request_id=args.request_id, **options, **corpus)
+                                      notes=args.notes, request_id=args.request_id,
+                                      reviewed_on=args.reviewed_on, **options, **corpus)
             elif args.command == "audit-resolve":
                 result = audit.close_issue(args.issue, args.notes, retire=args.retire, **options, **corpus)
             elif args.command == "audit-delivery":

@@ -440,6 +440,13 @@ unfinished bowls, infer reviews, or silently transfer reviews across identity
 membership changes. This bounded runtime is authorized by Mike's five-bowl
 personal audit instruction; unattended corpus writes remain prohibited.
 
+Mike clarified on 2026-10-04 that each daily packet contains five bowls, including
+unfinished carryovers and enough new entries from the saved queue to fill the
+slots. Save only one allocation per New York day. A review completes the exact
+presented version Mike saw; later edits open separate evidence follow-ups and do
+not revoke personal completion or require another daily review. Never transfer
+that completion across changed identity membership. The final packet can be smaller.
+
 Runtime-only audit deliveries and recording Mike's audit responses do not edit
 the repository or corpus, so they do not require a new task-log entry, state
 stamp, report regeneration, or commit on each reminder. Implementation changes

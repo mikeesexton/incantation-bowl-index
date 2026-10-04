@@ -18,8 +18,8 @@ from bowl_index.state import corpus_fingerprint, write_state
 DAY = datetime(2026, 10, 1, 13, tzinfo=timezone.utc)  # 9 a.m. New York
 
 
-def prepare_worker(path, database, output):
-    packet = audit.prepare(path, database, now=DAY)
+def prepare_worker(path, database, output, now=DAY):
+    packet = audit.prepare(path, database, now=now)
     output.put((packet["batch"], [card["item_id"] for card in packet["cards"]]))
 
 
@@ -91,16 +91,23 @@ class PersonalAuditTests(unittest.TestCase):
         packet = self.prepare()
         for card in packet["cards"][:3]:
             self.record(packet, card)
+        same_day = self.prepare()
+        self.assertEqual([card["number"] for card in same_day["cards"]], [4, 5])
         carried = self.prepare(4)
         self.assertTrue(carried["carryover"])
-        self.assertEqual([card["number"] for card in carried["cards"]], [4, 5])
-        self.assertEqual(carried["batch"], 1)
+        self.assertEqual([card["number"] for card in carried["cards"]], [1, 2, 3, 4, 5])
+        self.assertEqual(carried["batch"], 2)
+        self.assertEqual([c["item_id"] for c in carried["cards"][-2:]],
+                         [c["item_id"] for c in packet["cards"][-2:]])
+        self.assertEqual([c["item_id"] for c in carried["cards"][:3]],
+                         [item["id"] for item in self.ledger()["roster"][5:8]])
+        self.assertEqual(self.prepare(4)["cards"], carried["cards"])
         self.assertEqual(carried["no_completed_review_recorded"],
                          ["2026-10-02", "2026-10-03", "2026-10-04"])
         for card in carried["cards"]:
             self.record(carried, card, days=4)
         self.assertEqual(self.prepare(4)["cards"], [])
-        self.assertEqual(len(self.prepare(5)["cards"]), 5)
+        self.assertEqual(len(self.prepare(5)["cards"]), 4)
 
     def test_same_day_retries_and_restart_do_not_duplicate_batches(self):
         self.initialize()
@@ -145,7 +152,7 @@ class PersonalAuditTests(unittest.TestCase):
                 audit.record(reference, result, fingerprint, batch, path=self.path, database=self.database, now=DAY)
         self.assertEqual(audit.read_status(self.path)["reviewed"], 0)
 
-    def test_new_bowls_append_and_changed_pending_evidence_needs_new_presentation(self):
+    def test_changed_pending_review_counts_shown_version_with_separate_followup(self):
         self.initialize()
         packet = self.prepare()
         saved = [item["id"] for item in self.ledger()["roster"]]
@@ -153,13 +160,80 @@ class PersonalAuditTests(unittest.TestCase):
         card = packet["cards"][0]
         self.conn.execute("UPDATE claims SET value_text='glass' WHERE object_id=?", (card["members"][0],))
         self.conn.commit()
-        with self.assertRaisesRegex(ValueError, "Record changed"):
-            self.record(packet, card)
+        result = self.record(packet, card)
+        self.assertEqual(result["progress"]["reviewed"], 1)
+        self.assertEqual(result["progress"]["outstanding_followups"], 1)
+        entry = next(e for e in self.ledger()["roster"] if e["id"] == card["item_id"])
+        self.assertEqual(entry["review_fingerprint"], card["fingerprint"])
         fresh = self.prepare(1)
-        self.assertTrue(fresh["cards"][0]["changed_since_previous_presentation"])
+        self.assertNotIn(card["item_id"], [c["item_id"] for c in fresh["cards"]])
         self.assertEqual([item["id"] for item in self.ledger()["roster"]][:12], saved)
         self.assertEqual(fresh["progress"]["total"], 13)
         self.record(fresh, fresh["cards"][0], days=1)
+
+    def test_older_review_does_not_clear_new_evidence_followups(self):
+        self.initialize()
+        packet = self.prepare()
+        card = packet["cards"][0]
+        self.record(packet, card)
+        self.conn.execute("UPDATE claims SET value_text='glass' WHERE object_id=?", (card["members"][0],))
+        self.conn.commit()
+        changed = self.prepare(1)
+        issue = changed["progress"]["issues"][0]
+        self.record(packet, card, days=1, request_id="later-explicit-old-version-review")
+        self.assertEqual(audit.read_status(self.path)["outstanding_followups"], 1)
+        self.assertEqual(audit.read_status(self.path)["issues"][0]["id"], issue["id"])
+
+    def test_late_review_retains_actual_day_and_retries_do_not_repeat_completion(self):
+        self.initialize()
+        packet = self.prepare()
+        self.prepare(2)
+        for card in packet["cards"]:
+            self.record(packet, card, days=2, reviewed_on="2026-10-01")
+        self.assertEqual(self.ledger()["batches"][0]["completed_on"], "2026-10-01")
+        self.assertTrue(self.record(packet, packet["cards"][0], days=2,
+                                    reviewed_on="2026-10-01")["replayed"])
+        self.assertNotIn("2026-10-01", self.prepare(2)["no_completed_review_recorded"])
+        with self.assertRaisesRegex(ValueError, "precedes"):
+            self.record(packet, packet["cards"][0], days=2, reviewed_on="2026-09-30")
+        with self.assertRaisesRegex(ValueError, "future"):
+            self.record(packet, packet["cards"][0], days=2, reviewed_on="2026-10-04")
+
+    def test_final_partial_refill_preserves_sparse_original_numbers(self):
+        self.initialize()
+        first = self.prepare()
+        for card in first["cards"]:
+            self.record(first, card)
+        second = self.prepare(1)
+        for card in second["cards"][:4]:
+            self.record(second, card, days=1)
+        last = self.prepare(2)
+        self.assertEqual([c["number"] for c in last["cards"]], [1, 2, 5])
+        self.assertEqual(last["cards"][-1]["item_id"], second["cards"][-1]["item_id"])
+        for card in last["cards"]:
+            self.record(last, card, days=2)
+        self.assertTrue(self.prepare(3)["progress"]["queue_complete"])
+
+    def test_legacy_policy_upgrade_keeps_roster_and_presentations(self):
+        self.initialize()
+        first = self.prepare()
+        for card in first["cards"][:3]:
+            self.record(first, card)
+        state = self.ledger()
+        state.pop("policy")
+        state.pop("daily_packets")
+        audit._atomic_write(self.path, state)
+        old_roster = state["roster"]
+        old_batch = state["batches"][0]
+        packet = self.prepare(1)
+        self.assertEqual(len(packet["cards"]), 5)
+        self.assertEqual(self.ledger()["roster"], old_roster)
+        self.assertEqual(self.ledger()["batches"][0]["item_ids"], old_batch["item_ids"])
+        self.assertEqual(self.ledger()["batches"][0]["presentations"], old_batch["presentations"])
+        self.assertEqual(len([e for e in self.ledger()["events"]
+                              if e["type"] == "audit_policy_updated"]), 1)
+        self.prepare(1)
+        self.assertEqual(len(self.ledger()["batches"]), 2)
 
     def test_changed_completed_evidence_keeps_history_and_opens_one_issue(self):
         self.initialize()
@@ -207,6 +281,23 @@ class PersonalAuditTests(unittest.TestCase):
             audit.close_issue(issue["id"], "Mike will review the replacement from scratch",
                               self.path, self.database, now=DAY + timedelta(days=1), retire=True)
         self.assertEqual(audit.read_status(self.path)["retired"], 2)
+
+    def test_review_of_pre_merge_version_counts_original_without_transferring(self):
+        self.initialize()
+        packet = self.prepare()
+        a, b = packet["cards"][:2]
+        self.conn.execute("INSERT INTO dedupe_candidates "
+                          "(id,object_a_id,object_b_id,score,status,method,rationale) "
+                          "VALUES ('DED-LATE',?,?,1,'same_object','test','Test fixture')",
+                          tuple(sorted((a["members"][0], b["members"][0]))))
+        self.conn.commit()
+        result = self.record(packet, a)
+        self.assertEqual(result["progress"]["reviewed"], 1)
+        replacement = self.ledger()["roster"][-1]
+        self.assertEqual(set(replacement["members"]), set(a["members"] + b["members"]))
+        self.assertEqual(replacement["status"], "pending")
+        self.assertTrue(any(issue["kind"] == "membership_or_scope_changed"
+                            for issue in result["progress"]["issues"]))
 
     def test_split_appends_fresh_entries_and_preserves_original_completed_review(self):
         members = sorted(row[0] for row in self.conn.execute("SELECT id FROM objects LIMIT 2"))
@@ -306,6 +397,27 @@ class PersonalAuditTests(unittest.TestCase):
         self.assertEqual(len([event for event in self.ledger()["events"]
                               if event["type"] == "delivery_attempt"]), 3)
 
+    def test_concurrent_next_day_refill_allocates_new_slots_once(self):
+        self.initialize()
+        first = self.prepare()
+        for card in first["cards"][:3]:
+            self.record(first, card)
+        context = multiprocessing.get_context("spawn")
+        output = context.Queue()
+        workers = [context.Process(target=prepare_worker,
+                                   args=(self.path, self.database, output, DAY + timedelta(days=1)))
+                   for _ in range(3)]
+        for worker in workers:
+            worker.start()
+        results = [output.get(timeout=20) for _ in workers]
+        for worker in workers:
+            worker.join(timeout=20)
+            self.assertEqual(worker.exitcode, 0)
+        self.assertTrue(all(result == results[0] for result in results))
+        self.assertEqual(len(results[0][1]), 5)
+        self.assertEqual(len(self.ledger()["batches"]), 2)
+        self.assertEqual(len(self.ledger()["daily_packets"]), 2)
+
     def test_cli_audit_bypasses_writable_connection_and_migration(self):
         with patch("bowl_index.cli.connect", side_effect=AssertionError("writable corpus")), \
                 patch("bowl_index.cli.migrate", side_effect=AssertionError("migration")), \
@@ -336,6 +448,13 @@ class PersonalAuditTests(unittest.TestCase):
         self.assertEqual(self.ledger()["events"][:len(before)], before)
         self.assertEqual(len(self.ledger()["events"]), len(before) + 1)
         self.assertEqual(audit.read_status(self.path)["reviewed"], 0)
+
+    def test_manual_presentation_delivery_can_be_recorded(self):
+        self.initialize()
+        packet = self.prepare()
+        shown = audit.show("1", packet["batch"], self.path, self.database, now=DAY)
+        audit.delivery(shown["attempt_id"], "reported", path=self.path, now=DAY)
+        self.assertEqual(self.ledger()["events"][-1]["type"], "delivery_result")
 
     def test_private_cards_have_citations_and_uncommissioned_remote_is_rejected(self):
         with self.assertRaises(ValueError):

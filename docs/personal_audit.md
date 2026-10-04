@@ -12,11 +12,13 @@ remote Mike-only capture delivery remains a separate project.
 - Initialize once from all non-rejected identities, including candidates. Save
   one shuffled order; never pick a new random sample each day. Source appearances
   already linked by the existing identity model are shown together.
-- Issue at most one batch of five per New York calendar day. Keep the batch
-  until every bowl has an explicit review. A partial batch retains its original
-  bowl numbers; unfinished bowls are never replaced or topped up.
-- Completing a batch releases the next five on the next day, even when its
-  original issue date was earlier. The final batch can have fewer than five.
+- Give Mike a daily total of five bowls, including unfinished carryovers. On the
+  next New York day, fill the available slots from the saved queue. Carryovers
+  retain their bowl numbers; the new daily batch has its own batch number and
+  retains every earlier presentation. A final packet can have fewer than five.
+- Save one allocation per New York calendar day. Retries return that allocation's
+  unfinished bowls, without adding more after same-day reviews. Missing several
+  days creates only one current packet, not extra batches for the absent days.
 - Reading a record, reporting delivery, or receiving a notification does not
   count as reviewing it. Neither the agent nor a scheduler may infer completion.
 - Mike can say `batch 2, bowl 4: reviewed—no issues noticed`,
@@ -36,8 +38,12 @@ remote Mike-only capture delivery remains a separate project.
   for a fresh review. Old entries and decisions remain in history. Do not silently
   retire, merge, split, or transfer their completed reviews.
 - Changed evidence after a completed review opens a separate recheck issue;
-  the historical review remains counted. The current daily packet highlights
-  changes to an unfinished bowl. Old fingerprints cannot complete newer versions.
+  the historical review remains counted. An explicit review always counts for
+  the exact version Mike saw, even when it was edited before his response was
+  recorded. The reviewed fingerprint stays bound to that older version; changed
+  evidence opens a separate follow-up and never puts the completed bowl back in
+  the daily queue. Identity changes never transfer a review to a replacement.
+  The daily packet highlights changes to an unfinished bowl.
 - Stop daily reminders once the queue is complete. Report remaining follow-ups
   separately; audit completion does not certify their resolution. Discoveries
   after the automation stops require explicitly resuming it.
@@ -46,8 +52,8 @@ remote Mike-only capture delivery remains a separate project.
 
 The ignored `data/private/personal-audit/ledger.json` contains the ordered roster,
 stable object memberships, initial and reviewed fingerprints, retained batch
-presentations, notes, issues, delivery attempts, and append-only event history.
-Each update takes an advisory file lock, writes a mode-0600 temporary file,
+presentations, notes, issues, delivery attempts, per-day allocations, and
+append-only event history. Each update takes an advisory file lock, writes a mode-0600 temporary file,
 flushes it, and atomically replaces the snapshot. Include this directory in
 private-vault backups. Never copy its payloads into Git, public exports, or a
 shared reader. Protected source content is fingerprinted in memory; no source
@@ -77,10 +83,13 @@ audit-schedule <app-automation-id>
 
 Use `--request-id` on review commands when a stable user-message identifier is
 available. Exact command retries are idempotent; later deliberate reviews keep
-their own events. `audit-show` presents changed evidence for a fresh review. If
-the source changed since Mike saw the record, show him the new version before
-recording completion. Retiring a replaced/rejected roster entry requires Mike's
-explicit operational resolution and does not retire an object in the corpus.
+their own events. Use `--reviewed-on YYYY-MM-DD` only when recording a delayed
+explicit response whose original New York date is established in the chat; the
+append-only event retains today's recording time separately. Accept the shown
+fingerprint and record completion for that version; open a separate evidence
+follow-up for a newer version. `audit-show` can present changed evidence for an
+optional recheck, without blocking the main daily pass. Retiring a replaced or
+rejected roster entry requires Mike's explicit operational resolution and does not retire an object in the corpus.
 
 ## Scheduler and chat handling
 
@@ -96,6 +105,13 @@ message for this chat; this means the report was produced, not that Mike saw it
 or that an operating-system notification was received. If reporting fails, append
 a failed outcome. Preparation itself also retains read failures without changing
 the queue. No command marks a bowl complete except an explicit `audit-record`.
+
+Mike clarified this cadence on 2026-10-04: five bowls every day, with partial
+carryovers refilled and later edits tracked separately from his personal review.
+This replaces the earlier unfilled-batch and changed-pending-version rules.
+Existing version-1 ledgers are upgraded with an appended policy event and saved
+daily allocations; the roster, earlier batches, presentations and reviews stay
+intact. Sparse final packets retain their original numbers (for example 1, 2, 5).
 
 The app automation is a heartbeat attached to the existing chat, not a new chat
 per day. Its configured ID is saved with `audit-schedule`. On queue completion,
