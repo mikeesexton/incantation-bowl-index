@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "1177dd44022532d82a2f15db2b14b7271e76b07146f4cb35ab7eacc30c749df5",
+  "corpus_digest": "b258b9d578732bf58feb1afcb5069fb66b99b974d0394ebeaddbd67741c73ab6",
   "migrations": 21,
-  "note": "Checkpoint131 closed; corrected stale roadmap frozen-priority count to verified33/216; corpus unchanged",
-  "recorded_at": "2026-10-04T07:16:52+00:00",
+  "note": "Checkpoint132:17checkedFordquotationunits;3bibliographicreferences/sourceappearances;Miri3preciseaccessrequests;allpriorrowsretained;484testsandreader7/7verified",
+  "recorded_at": "2026-10-04T07:38:01+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "b12d4b24d15a8455a329457faa61399725cc8096d0820c4d30c57b03e48fbf3f",
-      "rows": 2883
+      "digest": "be763ba8062dafb6c39584a92806c458a9b839c6b28958984547e4412b00c1c6",
+      "rows": 2886
     },
     "appearances": {
-      "digest": "828c229be89c0931e180142416febd208c5fac92df3117decd4347ad91aad24a",
-      "rows": 2883
+      "digest": "c7cc9999fb8f0e92fd70d84aa454b999e22c173d746467b2f58ac2edb8a6034b",
+      "rows": 2886
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "f825a0d0f3ba02e603944dcec31d0ce063ce447c0d9759cd23770e540ec623ef",
-      "rows": 155
+      "digest": "432058b805e788efc078b3cbe1d2772b8e66221db6a2c5962ae363ec92563054",
+      "rows": 156
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -111,8 +111,8 @@
       "rows": 2258
     },
     "publication_assessments": {
-      "digest": "56688d905e13c258c6614825875aa966d617660b956fc85fc897e52869f7d636",
-      "rows": 637
+      "digest": "1ff22f31da7748c632d4db76eac0a49b6968ebe8735c8d3968e351a608a1abb5",
+      "rows": 640
     },
     "publication_registry": {
       "digest": "01b59ec0b157ca417cd523761ce956306bd42dd00bcc517efab1d25106f48006",
@@ -143,24 +143,24 @@
       "rows": 119
     },
     "sources": {
-      "digest": "ccb33d6e4fc026efa59b9cb3ca7eaa7a74c9f9695dad300c400cc64ec1f26ed9",
-      "rows": 974
+      "digest": "252c2de2c86c6028fad790018889248f0a20f576a29c7bba1a20ed7cdd959a13",
+      "rows": 977
     },
     "text_metadata_corrections": {
       "digest": "c9b9e6eb82ead61836513ae69658a02c8809939e5e223cb936749c7e7215f578",
       "rows": 31
     },
     "text_proofreading_reviews": {
-      "digest": "93d58ca0900ffa73b3687f8503cf35d53048703fe3058802fa9c006e4439f7fe",
-      "rows": 2029
+      "digest": "7f20f90104e91b15524f200ed0e35011d4ef7498c6fbd3cb8b14086a53743f65",
+      "rows": 2046
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "be58295f6fdff852443ee9417895408c0a1c5376fcf7dffcacde6304e8b3dc32",
-      "rows": 2485
+      "digest": "2e190a4288b479c63d53a5a43f49ff7527c776b103f87a133e8ad73e66a83816",
+      "rows": 2502
     }
   }
 }

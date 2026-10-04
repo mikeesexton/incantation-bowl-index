@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T07:08:27+00:00",
+  "updated_at": "2026-10-04T07:34:24+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -113,7 +113,7 @@
       "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
       "capture_id": "CAP-IBI-CP107-FORD2002",
       "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
-      "status": "Originalworkheld;96boundedFordreadingrowschecked; additional context/sourcewide extractionpartial.",
+      "status": "Complete requested Ford article held; 113 bounded reading rows checked, sourcewide extraction partial.",
       "resolved_at": "2026-10-03T19:57:24+00:00",
       "checkpoint": 107,
       "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
@@ -128,9 +128,9 @@
         "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
         "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
       },
-      "reading_audit": "Checkpoint131: ten bounded Ford2002 Latin/English quotation units checked, two source-page scans, six source appearances, two scoped candidates, three identifiers, five bibliographic assessments and one publication registry entry. MIT24 maps by explicit2005facsimilecontents plus heldMont39heading to existingCBS9005; Ford24 is citedparallelonly, no reading copied. NewMIT17 candidate has unknownphysicalaccession; noPognon1898numbermatch. ExactLouvreAO1177context corroborated by lawfulmuseumHTMLcapture; originalMüller-Kessler1999p113 remains unheld. OriginalYamauchi1967wrongworkURL/stalenotes repaired through immutableledger; separate2005facsimilepreviewsource. Tenfullpages/threecontrols viewed;15pixelrecipes exact. DC37(R)16-row native and providedEnglish separately checked as private nonbowl context artifacts, excludedfrombowlcounts; searchableartifactreaderpackaging pending. Ordinarypublisher44-pagepreview retained privately with200receipt after unmodifiedcollector permitsrobots404, capture registration pending existingtransferrequires200robots; not original1967/deposit/fullbody. Fordsourcewide extraction remains partial. Two precise Miri requests added (Yamauchi fullbook andMüller-Kessler1999fullarticle).",
+      "reading_audit": "Checkpoint132: 17 further bounded Ford2002 quotation units separately copied and source-checked, including reported scholarly alternatives, tentative emendation and the addendum Latin form. All prior96Ford rows retained exactly; now113checked bounded units. Three new bibliographic sources and three exact new-source appearances/publication references locate the AfO2001/2002 studies of BM91715(132–133) and BM91780(133–134), and ResOrientalesXIV(2002) BM91715(203–205). Ford40 also references Phraseology305–306; actual publisher details confirm DOI10.2143/ARAM.11.2.504470 and subscription/purchase-only ordinary download response. Date/volume/title reports retained separately. Original article bodies remain unheld; three precise acquisition requests added for Miri. Eight complete Fordpages/three controls actually viewed;20pixelrecipes exact. Sourcewide manuscript/dictionary/Ginza/Maqlu/general claims/relationships/all-reference inventory remains partial. No identity merge, new object, scholarly adjudication, rights approval, public release or purchase.",
       "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
-      "reading_audit_checked_at": "2026-10-04T07:08:27+00:00",
+      "reading_audit_checked_at": "2026-10-04T07:34:24+00:00",
       "checkpoint126_prior_reading_audit": {
         "source_id": "SRC-FORD2002-JANES",
         "fulfilled_by_source_id": "SRC-FORD2002-JANES",
@@ -520,6 +520,15 @@
             }
           }
         }
+      },
+      "checkpoint132_prior_reading_audit": {
+        "full_prior_snapshot": {
+          "path": "data/private/research-work/Ford2002-132-2026-10-04/miri-queue-before.json",
+          "sha256": "5c06dbd721a213534fde1ddb90963a6306fd51176ad3f5cc6681608f1e72ef5e"
+        },
+        "status": "Originalworkheld;96boundedFordreadingrowschecked; additional context/sourcewide extractionpartial.",
+        "reading_audit": "Checkpoint131: ten bounded Ford2002 Latin/English quotation units checked, two source-page scans, six source appearances, two scoped candidates, three identifiers, five bibliographic assessments and one publication registry entry. MIT24 maps by explicit2005facsimilecontents plus heldMont39heading to existingCBS9005; Ford24 is citedparallelonly, no reading copied. NewMIT17 candidate has unknownphysicalaccession; noPognon1898numbermatch. ExactLouvreAO1177context corroborated by lawfulmuseumHTMLcapture; originalMüller-Kessler1999p113 remains unheld. OriginalYamauchi1967wrongworkURL/stalenotes repaired through immutableledger; separate2005facsimilepreviewsource. Tenfullpages/threecontrols viewed;15pixelrecipes exact. DC37(R)16-row native and providedEnglish separately checked as private nonbowl context artifacts, excludedfrombowlcounts; searchableartifactreaderpackaging pending. Ordinarypublisher44-pagepreview retained privately with200receipt after unmodifiedcollector permitsrobots404, capture registration pending existingtransferrequires200robots; not original1967/deposit/fullbody. Fordsourcewide extraction remains partial. Two precise Miri requests added (Yamauchi fullbook andMüller-Kessler1999fullarticle).",
+        "reading_audit_checked_at": "2026-10-04T07:08:27+00:00"
       }
     },
     {
@@ -1086,6 +1095,51 @@
         "path": "data/private/research-work/Ford2002-131-2026-10-04/source-routes.json",
         "sha256": "f8f204f3c99c75841a05f5ff30429bea4868502c2bc58e200df4339405914c91"
       }
+    },
+    {
+      "source_id": "SRC-IBI-CP132-MK2001-BM",
+      "short_label": "MuellerKessler2001-2002BritishMuseumArticle",
+      "citation": "Müller-Kessler, Christa. “Die Zauberschalensammlung des British Museum.” Archiv für Orientforschung48/49(2001/2002):115–145.",
+      "requirement": "Permitted complete AfO48/49(2001/2002),115–145 with plates. Immediate BM91715 printed132–133 and BM91780 printed133–134, explicitly named by held Ford2002 Addendum46. Obtain native transcription/translation/apparatus/photographs rather than metadata alone. JSTOR ordinary article route supplies no article body; title/date/pages independently corroborated by author university list.",
+      "priority": 2,
+      "status": "Full source body unheld; precise primary metadata and held citation checked",
+      "metadata_url": "https://www.jstor.org/stable/41668544",
+      "checked_at": "2026-10-04T07:34:24+00:00",
+      "previous_access_evidence": "Original heldFord pages40/46 and primary author/publisher routes; detailed ordinary attempted routes retained privately. No cited original body reading verification.",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
+        "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
+      }
+    },
+    {
+      "source_id": "SRC-IBI-CP132-MK2002-RECEPTION",
+      "short_label": "MuellerKessler2002AramaicReceptionChapter",
+      "citation": "Müller-Kessler, Christa. “Die aramäische Beschwörung und ihre Rezeption in den mandäisch magischen Texten am Beispiel ausgewählter aramäischer Beschwörungsformulare.” In Rika Gyselen(ed.), Magie et magiciens, charmes et sortilèges, Res OrientalesXIV (2002),193–208.",
+      "requirement": "Permitted complete chapter193–208 and plates in Gyselen(ed.), ResOrientalesXIV(2002), Charmes et sortilèges. Magie et magiciens; immediate BM91715 printed203–205. Ford Addendum46 and author university list confirm specific citation, publisher catalogue confirms book. No original chapter body acquired.",
+      "priority": 2,
+      "status": "Full source body unheld; precise primary metadata and held citation checked",
+      "metadata_url": "https://www.gw.uni-jena.de/8290/pd-dr-habil-christa-kessler",
+      "checked_at": "2026-10-04T07:34:24+00:00",
+      "previous_access_evidence": "Original heldFord pages40/46 and primary author/publisher routes; detailed ordinary attempted routes retained privately. No cited original body reading verification.",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
+        "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
+      }
+    },
+    {
+      "source_id": "SRC-IBI-CP132-MK1999-PHRASEOLOGY",
+      "short_label": "MuellerKessler1999-2000PhraseologyArticle",
+      "citation": "Müller-Kessler, Christa. “Phraseology in Mandaic Incantations and its Rendering in Various Eastern Aramaic Dialects: A Collection of Magic Terminology.” ARAM Periodical11(2),1999–2000,293–310. doi:10.2143/ARAM.11.2.504470.",
+      "requirement": "Permitted complete ARAM Phraseology article293–310, especially305–306 for tool phrase and gloss comparison. Exact publisher DOI10.2143/ARAM.11.2.504470, volume11 issue2, date1999–2000; Ford/author cite combined11–12. Actual ordinary publisher download HTTP200 is HTML subscription/purchase notice, not PDF; no purchase or bypass. Preserve article copying conditions.",
+      "priority": 2,
+      "status": "Full source body unheld; precise primary metadata and held citation checked",
+      "metadata_url": "https://poj.peeters-leuven.be/content.php?id=504470&journal_code=ARAM&url=article",
+      "checked_at": "2026-10-04T07:34:24+00:00",
+      "previous_access_evidence": "Original heldFord pages40/46 and primary author/publisher routes; detailed ordinary attempted routes retained privately. No cited original body reading verification.",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
+        "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1102,7 +1156,7 @@
     "path": "data/private/research-work/nli-routes57-2026-10-03/acquisition-queue-before.json",
     "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
   },
-  "new_access_requests_checkpoint": 57,
+  "new_access_requests_checkpoint": 132,
   "latest_held_context_inventory": {
     "path": "data/private/manifests/held-cases44-2026-10-02/production/extraction.json",
     "sha256": "fb413f96d376d06a07ea975b0032cb2eb9f014b5aabefcdc17e604e5da573a49"
@@ -1236,5 +1290,9 @@
     "remaining_count": 21,
     "resolved_count": 15,
     "other_contained_editions_pending": "Full collection held; Moriah1984andother studies require distinct original-work extraction/assessment, no acquisition denial asserted."
+  },
+  "checkpoint132_source_extraction": {
+    "path": "data/private/research-work/Ford2002-132-2026-10-04/extraction-index.json",
+    "sha256": "4fc7a3339b9fa5931159073cc041e4b3b8743bf8a759745079bc6d6d817d2fa9"
   }
 }
