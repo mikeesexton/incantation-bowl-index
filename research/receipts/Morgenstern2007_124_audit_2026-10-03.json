@@ -1,0 +1,1021 @@
+{
+  "schema_version": 1,
+  "checkpoint": 124,
+  "created_at": "2026-10-04T04:02:39+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "0478ae55f0218c4e1e434bcf76e31eab4c72e8e9d1080c5c67e85993a80f9a2b",
+  "corpus_after": "9027c9f65a285c6c9ec9ce31f67cd33090d0e77f91a4f2128c182cee4a7642dc",
+  "corpus_changed": true,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_identifiers": 0,
+  "new_claims": 0,
+  "new_media_rows": 9,
+  "new_text_rows": 2,
+  "new_reading_rows": 2,
+  "new_captures": 0,
+  "new_sources": 0,
+  "new_proofreading_reviews": 2,
+  "new_source_corrections": 1,
+  "new_document_assessments": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1904,
+  "total_text_rows": 2389,
+  "total_reading_rows": 1643,
+  "checked_reading_rows": 1587,
+  "partial_reading_rows": 55,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2228,
+  "total_local_images": 1317,
+  "total_captures": 97,
+  "registered_PDF_sources": 66,
+  "PDF_appearance_bearing_sources": 59,
+  "PDF_appearances": 1376,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 24,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 88,
+    "sources_with_document_assessments": 82,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 70,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "scope": "Checkpoint124: Morgenstern2007BM91767complete provided main native6–7/English9–10, all17I–XVIIrecto/verso sections/49physicalnative rows captured as two separately sourcechecked readings. Native16approximateclayline anchors/English15anchors retained at independent printed positions, absentEnglish11not supplied. Roman meaningsections are author literary analysis per6footnote7. Four nonemptyrestorationgroups/oneemptybracketgroup/sixnonnumericparentheses/onecaretgroup/literalspelling/name/wordjoin/reversedverse variants retained; source19explicitdaletORreshqualification recorded without resolvingclayuncertainty. Englishdiacritics/restorations/VIIalternative/XVstruckthroughfourquestionmarks/doubleperiod/unmatchedquote/reversedverseinstruction preserved, no newtranslation or grammatical/Bible/parallel supplies. Nine complete sourcepage scans include onepublishedmain-bowl photographicdetail20andcontext19; elevencompletepagesactuallyviewed, all23PDFgraphics structure inventoried/all8graphicpagesseen. Earlierreadinglist8renderspreviousLatinversionsintoHebrew; exactquotedvariants/otherbowlcomparatives/lexical/general/interpretiveclaims/sourcewideworkingextraction/OCR remainpartial/unreviewed. Existing exactBM91767appearance/object reused, no objects/appearances/identifiers/claims/captures/sources/identitydecisions/publicapprovals. All39tables exacttrialproduction/33unchanged/allpriorrows or fullsource snapshots retained/all1904memberships exact; four currentmanifests replayzero. Current2389texts/1643readings1587checked55partialoneunreviewed/2228media1317images97captures1904identities. PDF66sources59appearancebearing1376appearances. Frozen249unchanged32linked217unlinkedallattemptedzero wholecasescomplete/no newattempts. Miri15resolved24remaining/no newaccessfailure; mainauditadvanced and previousaudit retained. Goalactive; nextFord2002BM91715/BM91780/DC37(R),217publicationcases/Watermanbridge/Gfinal; heldsource comparative/residualwork remains precise. Zeroverifiedresets/no push/deploy/restart/contact/purchase/identity/authenticity/rights decisions.",
+  "next_actions": [
+    "Ford2002BM91715/BM91780/DC37(R),217publicationcases/Watermanbridge/GordonGfinal.",
+    "Morgensternpreviousquotedvariants/comparativebowls/lexical/general/interpretive/sourcewide workingtext remainpartial; Levene/Gordon1941residuals separate."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/campaign_case_progress_checkpoint124.json",
+    "sha256": "00fec41b080a3c688c359df9f321a08be9502043de6148a87a5c2ee48a483ba9"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/held_pdf_inventory_checkpoint124.json",
+    "sha256": "cb8433e95a745e07e4926d152dae3e688ed5f47cd97dae2950a2f69034d3d02f"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/non_pdf_holdings_checkpoint124.json",
+    "sha256": "7de5acf6e5f5b247561bbf624b0c334fa68a12bfb0fabe10000ac8793177bbdf"
+  },
+  "validation": {
+    "corpus_after": "9027c9f65a285c6c9ec9ce31f67cd33090d0e77f91a4f2128c182cee4a7642dc",
+    "changed_tables": [
+      "document_assessments",
+      "media",
+      "source_corrections",
+      "sources",
+      "text_proofreading_reviews",
+      "texts"
+    ],
+    "table_deltas": {
+      "texts": 2,
+      "media": 9,
+      "text_proofreading_reviews": 2,
+      "document_assessments": 1,
+      "source_corrections": 1,
+      "sources": 0
+    },
+    "unchanged_tables": 33,
+    "all_original_rows_or_full_source_snapshots_retained": true,
+    "all1904_identity_memberships_retained": true,
+    "changed_identity_derived_metadata": [
+      "IDENT-0812604AAFBD"
+    ],
+    "all39tables_exact_trial_production": true,
+    "complete_provided_native_English_table_checked": true,
+    "main_table_sections": 17,
+    "native_physical_rows": 49,
+    "native_inline_anchors": 16,
+    "English_inline_anchors": 15,
+    "new_checked_reading_rows": 2,
+    "new_media_rows": 9,
+    "caret_commentary_uncertainty_retained": true,
+    "original_scholarly_uncertainties_not_adjudicated": true,
+    "remaining_sourcewide_work_explicit": true,
+    "no_new_identity_decisions": true,
+    "trial": {
+      "allfour_manifests_replay_zero": true,
+      "logs": [
+        {
+          "arguments": [
+            "ingest",
+            "candidate"
+          ],
+          "exit_code": 0,
+          "stdout": "ingested 1 records\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-proofreading"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-document-assessment"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 70,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-source-corrections"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    "production": {
+      "allfour_manifests_replay_zero": true,
+      "logs": [
+        {
+          "arguments": [
+            "ingest",
+            "candidate"
+          ],
+          "exit_code": 0,
+          "stdout": "ingested 1 records\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-proofreading"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"entries\": 2,\n  \"public_approvals\": 0,\n  \"unchanged\": 2\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-document-assessment"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 70,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+          "stderr": ""
+        },
+        {
+          "arguments": [
+            "ingest-source-corrections"
+          ],
+          "exit_code": 0,
+          "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+          "stderr": ""
+        }
+      ]
+    },
+    "all_pixel_exact": true,
+    "independent_recipes": 33,
+    "recipes": [
+      {
+        "pdf_page": 1,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page1-scale3.png",
+        "sha256": "f93c0545d211d84b748439f41b17485e12d5e6c3a7b2f3098584d88b857dfdc8",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 2,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page2-scale3.png",
+        "sha256": "6f5fd1c52a7d13cf8eaf833efc458c55d6f239fd8e3d748ca45f825a7ef03d97",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 3,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page3-scale3.png",
+        "sha256": "90b55f214d1c275fc7da595f5838e35b3c4d3634b436d82633b240dd5e8801e6",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 4,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page4-scale3.png",
+        "sha256": "f446573885b83e981f4dfa91349c2012b0892160697d56ac6dbe7f34aefcfae9",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 5,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page5-scale3.png",
+        "sha256": "8f38af0b843fcd1107893dbf2a9b82897d3424674dd98b85283346b217105349",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 6,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page6-scale3.png",
+        "sha256": "f5b46e42875a3508231353023a6c7aed47b418dcbcca03d6f5fab30d65518d67",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 23,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page23-scale3.png",
+        "sha256": "ef39687ae74e6010af94b03de27193c726b206ffb1cf6f7f20b66a68c1737793",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 7,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page7-scale3.png",
+        "sha256": "399e6e334e33aeb2285c7875b96df2651053d6cd1742c23a86e04a740d151469",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 16,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page16-scale3.png",
+        "sha256": "56315055fbf8685b4b8454d787eafe7e82196c6eed9504c8a91fbcc1a29ca869",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 20,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page20-scale3.png",
+        "sha256": "04a311c28195477517d782620c288321e8629e3239ef558f97eaba2c65db0d1f",
+        "width": 1551,
+        "height": 2337
+      },
+      {
+        "pdf_page": 15,
+        "scale": 3,
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page15-scale3.png",
+        "sha256": "95d999e43960e16ef41bd3cb60a12a2e5271f28f55a95f43b4ff81dffcb01896"
+      },
+      {
+        "pdf_page": 2,
+        "scale": 4,
+        "crop_pdf_points": [
+          117,
+          350,
+          430,
+          522
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-I-IV.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "a7e98758c9ef828cddd8223c5052a89c63eb257a41d61006056127deaf0c7dd8"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 4,
+        "crop_pdf_points": [
+          85,
+          112,
+          399,
+          242
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-IV-VII.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "6a7da5696f2a6c51cf283ca740b934df99617f4e15be84657d26e3f120131ab7"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 4,
+        "crop_pdf_points": [
+          85,
+          238,
+          399,
+          344
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-VIII-X.png",
+        "viewed": false,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "9ac9ad2667d9de769a85eb6ed3d6e003bb8a34dec3cdb54ea42620d03f39b6c0"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 4,
+        "crop_pdf_points": [
+          85,
+          343,
+          399,
+          450
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-XI-XV.png",
+        "viewed": false,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "776786050dc47ec5557e2ee7c55ac4ef8a55b7308e8f87f68d949b1056588baf"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 4,
+        "crop_pdf_points": [
+          85,
+          570,
+          399,
+          647
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-verso.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "cd6ca7673f744915e6c8a563a97ae397bd0ae701d7b7db9218ecf63696477149"
+      },
+      {
+        "pdf_page": 5,
+        "scale": 4,
+        "crop_pdf_points": [
+          117,
+          530,
+          429,
+          568
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-X-name.png",
+        "viewed": false,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "6182d8890f762225e8720cabb5410a8e6116e99a7c8e71ee72af48fd81a3c634"
+      },
+      {
+        "pdf_page": 6,
+        "scale": 4,
+        "crop_pdf_points": [
+          117,
+          143,
+          429,
+          204
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-XV.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "fb5d8239a4f568d146c12615c8f95fab0d532e335ecd5523103e4bace2ad4d67"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 4,
+        "crop_pdf_points": [
+          85,
+          237,
+          399,
+          414
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-VII-X-complete.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "e5d37ad158e2b0495d8c2a7c4581be0a4c36aa4a507c47aef2e4317b1d1d6021"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 4,
+        "crop_pdf_points": [
+          85,
+          414,
+          399,
+          551
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-XI-XV-complete.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "ae8b57126f6f477371e7351fa848a93464201b36e28bb41779be9f76195ef131"
+      },
+      {
+        "pdf_page": 5,
+        "scale": 4,
+        "crop_pdf_points": [
+          117,
+          530,
+          429,
+          570
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-X-name-complete.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "51de7d0aa7b3b9a8e123908462822cafde0765192f50ce6e2c78a34769c15def"
+      },
+      {
+        "pdf_page": 5,
+        "scale": 5,
+        "crop_pdf_points": [
+          117,
+          132,
+          429,
+          316
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-I-IV.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "978aa18b8e0659d8b81f824d1a61871d30bb042de39968cc9498a06730624283"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 5,
+        "crop_pdf_points": [
+          85,
+          510,
+          366,
+          551
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-XV-exact.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "1bb23ac09cd63ceb92a39a0d3277079a4d9000ddbf8779603974091f3fed4336"
+      },
+      {
+        "pdf_page": 3,
+        "scale": 5,
+        "crop_pdf_points": [
+          263,
+          385,
+          366,
+          406
+        ],
+        "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-X-name-exact.png",
+        "viewed": true,
+        "used_scope": "See exact source rectangle; first IV-VIIprobe clipsVII and was used for IV–VI only; completeVII-Xcontrols/whole sourcepage coverVII. Other unviewed probes not relied on.",
+        "sha256": "cdb0b8546b6b0436a2a1a95acf19bb86fa232ffce517b7cb3ed5818d836543f0"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE1.png",
+        "sha256": "f93c0545d211d84b748439f41b17485e12d5e6c3a7b2f3098584d88b857dfdc8",
+        "pdf_page": 1,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE1",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE2.png",
+        "sha256": "6f5fd1c52a7d13cf8eaf833efc458c55d6f239fd8e3d748ca45f825a7ef03d97",
+        "pdf_page": 2,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE2",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE3.png",
+        "sha256": "90b55f214d1c275fc7da595f5838e35b3c4d3634b436d82633b240dd5e8801e6",
+        "pdf_page": 3,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE3",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE4.png",
+        "sha256": "f446573885b83e981f4dfa91349c2012b0892160697d56ac6dbe7f34aefcfae9",
+        "pdf_page": 4,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE4",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE5.png",
+        "sha256": "8f38af0b843fcd1107893dbf2a9b82897d3424674dd98b85283346b217105349",
+        "pdf_page": 5,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE5",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE6.png",
+        "sha256": "f5b46e42875a3508231353023a6c7aed47b418dcbcca03d6f5fab30d65518d67",
+        "pdf_page": 6,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE6",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE15.png",
+        "sha256": "95d999e43960e16ef41bd3cb60a12a2e5271f28f55a95f43b4ff81dffcb01896",
+        "pdf_page": 15,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE15",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE16.png",
+        "sha256": "56315055fbf8685b4b8454d787eafe7e82196c6eed9504c8a91fbcc1a29ca869",
+        "pdf_page": 16,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE16",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      },
+      {
+        "path": "data/private/media/MED-IBI-CP124-BM91767-PAGE23.png",
+        "sha256": "ef39687ae74e6010af94b03de27193c726b206ffb1cf6f7f20b66a68c1737793",
+        "pdf_page": 23,
+        "scale": 3,
+        "media_id": "MED-IBI-CP124-BM91767-PAGE23",
+        "object_id": "IBI-B7DE88C662A8",
+        "appearance_id": "APP-B9DBA85C9EE0",
+        "capture_id": "CAP-IBI-CP107-MORGENSTERN2007"
+      }
+    ],
+    "whole_article_graphics_structure_audited": 23,
+    "all_eight_graphics_pages_actually_viewed": true,
+    "complete_pages_actually_viewed": 11,
+    "narrow_controls_viewed": 10,
+    "all_pages_freshly_viewed": false,
+    "one_published_photographic_detail_retained": true,
+    "no_full_bowl_photo_or_handcopy_inferred": true,
+    "view_scope": "Elevencomplete pages5–12/19/20/24/27 (PDF1–7,15,16,20,23) actually viewed, including all eight graphic-bearing pages1/2/3/5/6/7/16/20. Ten narrower controls viewed, one IV–VIprobe partially clipsVII; unused/unviewed probes retained with scope. Remaining12pages have machine structure/workingtext discovery only, not fresh complete visual reading checks. No all23pagesviewed claim.",
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2389,
+      "all_media_assignments_verified": 2228,
+      "all_local_image_hashes_verified": 1317,
+      "all_capture_hashes_and_source_assignments_verified": 97,
+      "all_identity_memberships_and_counts_verified": 1904,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "413 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "python_tests": "413 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 470,
+    "reader_build_after_both_test_suites_passed": true,
+    "all_inventory_appearances_locators_and_reading_hashes_checked": true,
+    "verification_failures_scope": "Initial eight-media rehearsal retained in full, including trial SQLite backup and all original private manifests, before adding the source printed19 dalet-or-resh qualification and its context page. Trial recreated from prebatch backup; final nine-media rehearsal and production exact, original main reading contents unchanged. No production rollback or source/identity alteration to satisfy a check. Three unviewed exploratory crops not relied upon; clipped VII probe used only for complete IV–VI, with complete VII control separately viewed.",
+    "allowance": "No fresh allowance check or reset redemption in124; latest supported private122check36percentweeklyused/64remaining/onebankedresetavailable retained as dated prior evidence. Zero verified resets used; maxone authorized."
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Morgenstern2007_124_readings_2026-10-03.jsonl",
+      "sha256": "95c880953d2b009180b11d85e92694b79e69deada32727bb74d35571e7b2fa05"
+    },
+    {
+      "path": "data/private/manifests/Morgenstern2007_124_proofreading_2026-10-03.json",
+      "sha256": "84bbc0ea3abc867f0162f25864a11853e3c7bea9644a3ca341aa7f549ffd767b"
+    },
+    {
+      "path": "data/private/manifests/Morgenstern2007_124_documents_2026-10-03.json",
+      "sha256": "570f6c80ebc977f3b1e93f3babf0be5852718faa7e5553e15ba46b4ad4e6b40c"
+    },
+    {
+      "path": "data/private/manifests/Morgenstern2007_124_source_2026-10-03.json",
+      "sha256": "2d4de1ffb298d8850878bf4ba4e06d163f2559fe16c9eecc379cf1dd347ffb17"
+    }
+  ],
+  "protected_payloads": "Source expression/PDF/pixels/workingextraction/manifests private outsideGit; Git content-free receipts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0124_Morgenstern2007_BM91767_main.json",
+      "sha256": "495c81082229cfa5b960ae6c14020e4d05193094ca77933051e0e1fd61362925"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/TXT-IBI-CP124-BM91767-ENGLISH.txt",
+      "sha256": "5e74fe0eb367144de5e12ef4a5ae9a865fa8fff0841c4590ae64f15353c6a4b7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/TXT-IBI-CP124-BM91767-NATIVE.txt",
+      "sha256": "6175b6be7518117e386556a640095a1df5b0aa7670228f5f2a499cca3938596f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/apply.py",
+      "sha256": "82e2b60a419a32699b07da24c42fa20eba7b3e08238b593cb6ec1f9c5ae810b3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/campaign_case_progress_checkpoint124.json",
+      "sha256": "00fec41b080a3c688c359df9f321a08be9502043de6148a87a5c2ee48a483ba9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/caret-commentary-control.json",
+      "sha256": "65307b050bc81a24485a3e449f1d99eb9981ed7bdaf8304e93598dd15ae4f444"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/copies.py",
+      "sha256": "2c213cd8ab756354c4350da4c7e991ad3bfa5ab20b2821b0ab88541e72fdbefa"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/editorial-annotations.json",
+      "sha256": "5b4771feb71ac3b0ec644fbe249e97e377c90aa8b61e74a57167f59cd941f599"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-I-IV.png",
+      "sha256": "978aa18b8e0659d8b81f824d1a61871d30bb042de39968cc9498a06730624283"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-X-name-complete.png",
+      "sha256": "51de7d0aa7b3b9a8e123908462822cafde0765192f50ce6e2c78a34769c15def"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-X-name.png",
+      "sha256": "6182d8890f762225e8720cabb5410a8e6116e99a7c8e71ee72af48fd81a3c634"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/english-XV.png",
+      "sha256": "fb5d8239a4f568d146c12615c8f95fab0d532e335ecd5523103e4bace2ad4d67"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/fingerprint-before.json",
+      "sha256": "91f54dea5aad2df73f85ff5073129742729e63c952531c94f3373b3f04754d88"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/held_pdf_inventory_checkpoint124.json",
+      "sha256": "cb8433e95a745e07e4926d152dae3e688ed5f47cd97dae2950a2f69034d3d02f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/identities-before.json",
+      "sha256": "9512fbcb10224b183b76c9073e38ef14d1c7c438ecab4c91f3382e6323c39545"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/main-copies-current.json",
+      "sha256": "0c1bab258236afac0885a9f7646406b5f6dbfd410d29d942803aebb0f2bbafe1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/main-copies-initial.json",
+      "sha256": "0c1bab258236afac0885a9f7646406b5f6dbfd410d29d942803aebb0f2bbafe1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/media-derivation.json",
+      "sha256": "ecd475b795d43c4e28ad31faa21257f8854e310f1a5ce1184048536b1227d8e8"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/metadata.json",
+      "sha256": "0bbdf49720793bbb8d04cf4444108750df3622acd0e1e2c2ee646fda463770bf"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/miri-queue-before.json",
+      "sha256": "0059dede48ba8b8917e272cc588b8f89fbd9de48307f6d50e343d3d6b7c05c9c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/narrow-controls.json",
+      "sha256": "f8b05dd6754d7ba3091f6a5bdbcd0147dda77bfb273f1e79f78dfeec19d2af67"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-I-IV.png",
+      "sha256": "a7e98758c9ef828cddd8223c5052a89c63eb257a41d61006056127deaf0c7dd8"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-IV-VII.png",
+      "sha256": "6a7da5696f2a6c51cf283ca740b934df99617f4e15be84657d26e3f120131ab7"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-VII-X-complete.png",
+      "sha256": "e5d37ad158e2b0495d8c2a7c4581be0a4c36aa4a507c47aef2e4317b1d1d6021"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-VIII-X.png",
+      "sha256": "9ac9ad2667d9de769a85eb6ed3d6e003bb8a34dec3cdb54ea42620d03f39b6c0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-X-name-exact.png",
+      "sha256": "cdb0b8546b6b0436a2a1a95acf19bb86fa232ffce517b7cb3ed5818d836543f0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-XI-XV-complete.png",
+      "sha256": "ae8b57126f6f477371e7351fa848a93464201b36e28bb41779be9f76195ef131"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-XI-XV.png",
+      "sha256": "776786050dc47ec5557e2ee7c55ac4ef8a55b7308e8f87f68d949b1056588baf"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-XV-exact.png",
+      "sha256": "1bb23ac09cd63ceb92a39a0d3277079a4d9000ddbf8779603974091f3fed4336"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/native-verso.png",
+      "sha256": "cd6ca7673f744915e6c8a563a97ae397bd0ae701d7b7db9218ecf63696477149"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/non_pdf_holdings_checkpoint124.json",
+      "sha256": "7de5acf6e5f5b247561bbf624b0c334fa68a12bfb0fabe10000ac8793177bbdf"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page-inventory.json",
+      "sha256": "77a0f626fbf149524241fbaf6b9a812402a2aa033f696480b1b398e227f1b086"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page1-scale3.png",
+      "sha256": "f93c0545d211d84b748439f41b17485e12d5e6c3a7b2f3098584d88b857dfdc8"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page1.txt",
+      "sha256": "6b8fb30e20eeb57864d15b7e2579494e83ba43b34d7af0a54c5dcf3e9b5d360f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page10.txt",
+      "sha256": "28d3ab66ed26f652ff9f7013638143b0a4f8d556371a38d1489ba8881f94da96"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page11.txt",
+      "sha256": "93ae573e17c32f90e1199cd7bd36455518bf6fda5fe2b21dab22db1c5dc89c9b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page12.txt",
+      "sha256": "20ed2b8fa7ff4ca17a319052fe60253b89fab65981acceb09b72177dc9e3c193"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page13.txt",
+      "sha256": "9c5156154e5ca04f14b88f5bc1a6001ab015d3b9d128017670dc6bc1c4fc28c4"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page14.txt",
+      "sha256": "cc1dc549ce87e39f92eb902d5f8cebd2e13b0cf3a63a278e35077ceebcdba000"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page15-scale3.png",
+      "sha256": "95d999e43960e16ef41bd3cb60a12a2e5271f28f55a95f43b4ff81dffcb01896"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page15.txt",
+      "sha256": "783802871ec625a5c04394418e7f79a5a3fe1bd600bc00962e5451c94926fbc4"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page16-scale3.png",
+      "sha256": "56315055fbf8685b4b8454d787eafe7e82196c6eed9504c8a91fbcc1a29ca869"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page16.txt",
+      "sha256": "69a5e251f8fa9207b07aa085aa6427ce73af90614ed44fc3671fdd09b653af0c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page17.txt",
+      "sha256": "76783008c52c2de1523182dadc23759fb92a1552bbbfc1ea0c5521e099640e7c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page18.txt",
+      "sha256": "6f3237cbe4abcd384c41cff4c518f6b16cd29efaa846d1c0573339ef6636ee32"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page19.txt",
+      "sha256": "cc52c08d8cfad91d10eb362e9a9b5c0e90f3d7cc8bca06e1f8f157ea8bca9ce9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page2-pdfium-working.txt",
+      "sha256": "c8050abc8b9ee89cdc5bb7a3db583843df338d5681841b4758be1e59cc24cb1b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page2-scale3.png",
+      "sha256": "6f5fd1c52a7d13cf8eaf833efc458c55d6f239fd8e3d748ca45f825a7ef03d97"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page2.txt",
+      "sha256": "03e58fc405d06c76f03041b30b208f2797169fba4ac9fa501f8276f00c2dc226"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page20-scale3.png",
+      "sha256": "04a311c28195477517d782620c288321e8629e3239ef558f97eaba2c65db0d1f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page20.txt",
+      "sha256": "b0994695960272e342c3433a685755770426f64401dcdf6e5a1bdb4bc8aa57ce"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page21.txt",
+      "sha256": "2dc6a10af7329afcb27c39c4c4c1dae03bbffa1850aef1823079c11a3cee046e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page22.txt",
+      "sha256": "a95cf90d491cd45b5e2f762871e2a1c53cc226352f2c58af8abc1b4b73660b42"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page23-scale3.png",
+      "sha256": "ef39687ae74e6010af94b03de27193c726b206ffb1cf6f7f20b66a68c1737793"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page23.txt",
+      "sha256": "07e805e09553d5b0a96db63116d1ed0de58408d68346fa12ce4dfcb15245b926"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page3-pdfium-working.txt",
+      "sha256": "54f52fba8e84c03fa25ce085b4e7b91ee048e47014c26ad5d2ad3c56406888b3"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page3-scale3.png",
+      "sha256": "90b55f214d1c275fc7da595f5838e35b3c4d3634b436d82633b240dd5e8801e6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page3.txt",
+      "sha256": "fec24942e10928e9ec8bae89a00908f13b7d5d3588c02b7f5bc9f0b56a9ec721"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page4-scale3.png",
+      "sha256": "f446573885b83e981f4dfa91349c2012b0892160697d56ac6dbe7f34aefcfae9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page4.txt",
+      "sha256": "1030e2bf881ccfcc1c998efa614d6374d13e0c2cc551190029204cfeb6f9b159"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page5-scale3.png",
+      "sha256": "8f38af0b843fcd1107893dbf2a9b82897d3424674dd98b85283346b217105349"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page5.txt",
+      "sha256": "b9a1d0ab022e2e940819250ade51d8ea0a75e598cc7d8ba5f696e4caba498c32"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page6-scale3.png",
+      "sha256": "f5b46e42875a3508231353023a6c7aed47b418dcbcca03d6f5fab30d65518d67"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page6.txt",
+      "sha256": "dc9adba418fc3ef91190d605a474dc35bbedfd0fed136f0125447765c6bfc11b"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page7-scale3.png",
+      "sha256": "399e6e334e33aeb2285c7875b96df2651053d6cd1742c23a86e04a740d151469"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page7.txt",
+      "sha256": "10f9e7f2ce7a8725414235e7de70cbc472c6affffad804fd8d4a8704c4a13616"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page8.txt",
+      "sha256": "644c6e4169b97ef748881f0f6f197ea4274ee59dd3801e31af2653d3b44e4a31"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/page9.txt",
+      "sha256": "ff8b4325b8350b7b3084c9f122b4cf5ee144d29c9bec95552703ed4a86feb2d9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/pdf-graphics-inventory.json",
+      "sha256": "2c606fe1607f153d75e9def0df498aa7dbf68329abc37742dd2fa9858fc4352e"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/pixel-verification.json",
+      "sha256": "64be0139db67acba330fdc980dfdcc44ddb80782ac089b81b20256a4c7bb71ef"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/prepare.py",
+      "sha256": "ad85067feb8937ea9de385e20b53b3238c0af0fcb3c7cc9835b3a09b3887928c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/production-apply.json",
+      "sha256": "4ae6ea902560d0f8bbac22d0e54b7aa06b5e87b25a9aa05a6cf0e3e07f9ac86a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/production-verification.json",
+      "sha256": "38f7745ef2e22f9d1c787d3550d57d6e160f8d794ce9bbff2a990504a6bf9fc9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/record_checkpoint.py",
+      "sha256": "39a8a43d4a9a85ead07c4aaadf1e0d6e786fb970059391a65185abb403b146b9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/regenerate.py",
+      "sha256": "50f65df5285b2f42b45a98678b99ca3a079fbe680dd17962cb2e4bb971819c31"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/replay-verification.json",
+      "sha256": "45d6ae0baa1fa3f51b1bbe2d866a7290f44faa2a179893158a3eae23251e7227"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/replay.py",
+      "sha256": "67cd5a89abdc2159889d35ec2fc7911e8d2e5784cd8ac47d9969251a7f4db969"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/source-evidence.json",
+      "sha256": "cae6d2e55472f0ba188143137880502b8268ef7ee566c40c6fd844f1bbbc1b34"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/source-page-recipes.json",
+      "sha256": "6acb06bd6e21bf2a590a21f414e46e9106f0d378ce45963e3cef2ecc5b964bd9"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/tables-before.json",
+      "sha256": "b76496a073e3377c4b9501b8094d267c7c1a13a971142ed4799ddc59b2549451"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/trial-apply.json",
+      "sha256": "4ae6ea902560d0f8bbac22d0e54b7aa06b5e87b25a9aa05a6cf0e3e07f9ac86a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/trial-verification.json",
+      "sha256": "f4b1daffa21b8fff2a73e7a08f49f05837082f1660ea669936880e454cfbd4cc"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/verify_batch.py",
+      "sha256": "c9985f14a2874561f8165cae8388a514518b6b3ee3f19cd223778dd7268195e6"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/verify_pixels.py",
+      "sha256": "b0c1ef34a103e09191297634ebc2f5bee271fc883fe3b47dde4f233f1645cba2"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/whole-source-working.txt",
+      "sha256": "fc6693d71d5c308a329e9dfe219c70c0cf4551b44b8c8c91151e3e3b490b8415"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/reader-verification.json",
+      "sha256": "f346e24a4c074172666679558ce045325bc95c17a7c0f011ccac16edb6522ed0"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/reader-build-final.log",
+      "sha256": "b7d768e4c57681789350bde7c01ca3d0a6ad5113bd6ef40692644f1170a00613"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/tests-final.log",
+      "sha256": "ff4caa21e5d1419617406b7b62f6445dce5e6ee3cb0053c018b2740f24e910bb"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/node-tests-final.log",
+      "sha256": "067b8eac0fc174b543d0c69cf39baf8799f5c1104051e7f4e8976b5118fdc8ff"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/verify_reader.py",
+      "sha256": "42cc0d51a2cbd9e9ccf5550b17544208125b97352be7c9a420f358832f68501d"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/reports-final.json",
+      "sha256": "40b67d1b5e65971e28b7c6fe4bfb5fd731c8363f7fbe1608b22923a0fe9e102c"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/backup-retention.json",
+      "sha256": "e05dee2713a867aab46e4c6ee9a8603da34f09f78d451f26cbdce547cab52211"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/finalize.py",
+      "sha256": "46dfeb0c5b15c5e809d7985b8a48b2045d7789b19ee40f26185c1cec39a03999"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/Morgenstern2007_124_documents_2026-10-03.json",
+      "sha256": "afc550ebba680c2da2cc503326c9ccd8f37502c4b0d637933c036091fea3ac94"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/Morgenstern2007_124_proofreading_2026-10-03.json",
+      "sha256": "456a579313c72119c52c6afdfa458d64322623253a0a5816c9976715d254e884"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/Morgenstern2007_124_readings_2026-10-03.jsonl",
+      "sha256": "a5365b6fdbf3046b769b9206105a075a8e9d894c1d8e5670c0f84caa63d33366"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/Morgenstern2007_124_source_2026-10-03.json",
+      "sha256": "8540631209b55c5f05f967ec3d42504dcb1c25eccb4350a73cc6292a9703e54f"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/editorial-annotations.json",
+      "sha256": "5079b7f591c81160a3326d680f7bc51303d3e830270200f64b7b813775ff0eb5"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/media-derivation.json",
+      "sha256": "56e869ffa2a8aa252bdc7f65f0e69f5fbe4f057fb4a03be65a4867064d8aeeec"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/metadata.json",
+      "sha256": "d420d199f7433345997b63b3b0abd81387e830c5acc97833bcc94521c76b4dcb"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/prepare.py",
+      "sha256": "b8f0cb678a83407b8cb403808525788970750883e5960bf4d73bfb7d74df58f1"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/source-evidence.json",
+      "sha256": "a336fc18ad5df21fb90fbab479e4475e32acadbc612bb411a114b3b4be958975"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/trial-apply.json",
+      "sha256": "4ae6ea902560d0f8bbac22d0e54b7aa06b5e87b25a9aa05a6cf0e3e07f9ac86a"
+    },
+    {
+      "path": "data/private/research-work/Morgenstern2007-124-2026-10-03/rehearsal-draft-before-caret-note/trial.sqlite3",
+      "sha256": "c7c79d87cc7939ba990bedd0cea5ee52de3fc09350f95b6f64b8b3e5ae53f6c8"
+    }
+  ]
+}

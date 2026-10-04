@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-04T03:37:11+00:00`
+Generated: `2026-10-04T04:02:42+00:00`
 
 ## Corpus
 
@@ -14,8 +14,8 @@ Generated: `2026-10-04T03:37:11+00:00`
 - Source appearances: **2870**
 - Sources: **970**
 - Dedupe clusters pending: **0**
-- Objects with text: **1007**
-- Objects with translation: **609**
+- Objects with text: **1008**
+- Objects with translation: **610**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **43**
