@@ -1,29 +1,16 @@
-# Task log
+## 2026-10-04 — Codex — Supplied texts and Archive.org reader intake, checkpoint141
 
-One entry per working session, **newest first**. Insert new entries directly
-below this block — never append at the end of the file, and never start a second
-oldest-first region at the bottom.
+**Workstream:** TEXT-004, TEXT-009, TEXT-010. Mike asked to process newly supplied sources and two Chrome readers before continuing the existing Goal.
 
-Sessions before 5 September 2026 predate this log. Their history is in the
-change log at the foot of
-[`docs/dataset_maturity_roadmap.md`](docs/dataset_maturity_roadmap.md) and in
-the dated reports under `data/reports/`.
+**Completed:** Moved 17 finished PDFs from Downloads into private IBI deposits after verifying destination/archive/capture hashes. Registered 17 captures, 13 precise new sources, and 17 complete identified-work document assessments; working machine text remains uncorrected and object extraction unstarted. Both Gordon1941 missing installments, Driver1930, Müller-Kessler1999/2001–2002 and Shaked1995 now held as original article bodies. Eight other RA27 contextual articles retained separately; no complete-issue or bowl-edition assertion. Rasmussen written thesis held, CD absent. Haran web printout expressly omits original footnotes; Kitchen2005 is a book review, not the Gyselen book or Müller-Kessler2002 chapter. Both assigned to separate works. Unfinished browser download left untouched.
 
-## Entry format
+**Browser:** Dictionary normal one-hour loan succeeded; saved and visually inspected 15 selected two-page spreads for cited lexical loci. Limited hash-bound observations remain separate from downloaded complete books/registered HTTP captures. Yamauchi shows Borrow Unavailable and print-disability restriction; title pages only observed. No bypass, eligibility claim or Waterman retry. Mike told he can switch/close the book window.
 
-```
-## YYYY-MM-DD — <agent> — <short title>
+**Queue and Goal:** Miri 21 resolved / 32 outstanding; six original article requests resolved with previous requests retained. Partial supply/access updates appended for Rasmussen, Haran, MK2002 chapter, dictionary and Yamauchi. Existing Goal runtime verified active; no duplicate Goal created. Next actual reading batch: Driver1930 own edition/photo, Müller-Kessler1999 commentary, Shaked1995 p215n100 and BM corrections, then Gordon installments and remaining publication gaps. Frozen249 unchanged:33linked216unlinked, zero whole cases complete. Zero verified resets used / at most one authorized.
 
-**Claimed:** <task IDs, or "none">
-**Corpus:** unchanged | changed (<one line>) — state digest <first 12 chars>
-**Tests:** <result>
+**Validation:** 443 Python +62 Node =505 passed. Seven reports/exports regenerated, then Mike’s local private reader rebuilt with 8/8 audits. Independently verified 2,556 text rows, 2,308 media assignments, 1,397 image hashes, 119 capture bytes/assignments, 994 sources and 1,910 identity memberships. All39tables rehearsal/production exact, originals retained, two-manifest replay unchanged, SQLite integrity/foreignkeys valid. Initial test commands selected absent pytest/wrong Node glob; corrected to repository suites before certification, no data change from failures.
 
-- What was done.
-- What was deliberately not done, and why.
-- What the next session should pick up.
-```
-
----
+**Receipt:** research/receipts/supplied141_intake_2026-10-04.json. Private manifests/evidence/inventories/checkpoint hash-bound. Corpus 2403b2b10118507bd475c95ed69f93a9c523a447e3d9d710646bfe06fcdd7c30 recorded by Codex. Local commit only; no push, deployment, purchase or outbound message.
 
 ## 2026-10-04 — Codex — Morgenstern 2007 comparative source quotations, checkpoint140
 

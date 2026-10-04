@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "checkpoint": 141,
+  "created_at": "2026-10-04T13:13:27.719422+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "f2e33d9d5618ab6d4bbefcb912fd827a23b1d7aa1d825e97db8c925b3cfcfff2",
+  "corpus_after": "2403b2b10118507bd475c95ed69f93a9c523a447e3d9d710646bfe06fcdd7c30",
+  "table_changes": {
+    "captures": 17,
+    "document_assessments": 17,
+    "sources": 13
+  },
+  "scope": "Checkpoint141:17 finished Mike-supplied PDFs hash-archived, registered with17 complete identified-work document assessments and13 precise new sources; uncorrected machine text retained, no new checked reading or object extraction claimed. Six complete article acquisition requests resolved (Miri21 resolved/32remaining). Rasmussen CD remains absent; Haran web translation and Kitchen book review assigned separately from requested originals. Dictionary normal loan yielded15 selected two-page observations; Yamauchi ordinary borrowing unavailable. Unfinished download untouched; Waterman not retried.",
+  "new_checked_readings": 0,
+  "new_objects": 0,
+  "new_identity_decisions": 0,
+  "public_reuse_approvals": 0,
+  "finished_pdfs": 17,
+  "selected_dictionary_spreads": 15,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 73,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/supplied141_deposits_2026-10-04.json",
+      "sha256": "7906c3882da4f9f41a4d1bcf04ede054e818ba35c83232f0305b913e1c4aa99b"
+    },
+    {
+      "path": "data/private/manifests/supplied141_documents_2026-10-04.json",
+      "sha256": "458e2fc161bacfc41dd1e5e421b531442b3fe66bdcf36cd3199989b7fe03bf22"
+    }
+  ],
+  "document_evidence": {
+    "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+    "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+  },
+  "browser_evidence": {
+    "path": "data/private/research-work/supplied141-2026-10-04/browser-evidence.json",
+    "sha256": "dc04d8146a13f71b48e1714dbf40384b7ab1d72a1948b70e92c4a1f82fbce30d"
+  },
+  "move_receipt": {
+    "path": "data/private/research-work/supplied141-2026-10-04/move-receipt.json",
+    "sha256": "edb84c2ebee5be319dae4d2aa7291c57d46c2ff7a35cfdd82214ce9f59c0fbbb"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/supplied141-2026-10-04/campaign_case_progress_checkpoint141.json",
+    "sha256": "07cd9263488fb719b840e3417039184afda9f25b9e34f2885a082ee6cb333187"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/supplied141-2026-10-04/held_pdf_inventory_checkpoint141.json",
+    "sha256": "beb54596645683c65b63e9bf357d36db07b4e23d3c27461a207345851eba7a4a"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/supplied141-2026-10-04/non_pdf_holdings_checkpoint141.json",
+    "sha256": "89d456cf058fd738de5cd19d4e65013219a193bd509cdc74175781e36adeb040"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/supplied141-2026-10-04/intake-verification.json",
+    "sha256": "7c490bd9385338fa2797e4ec6f1b083613ef0d989676afa9aff98c88b22e3c9c"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2556,
+    "all_media_assignments_verified": 2308,
+    "all_local_image_hashes_verified": 1397,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1910,
+    "all39tables_rehearsal_production_exact": true,
+    "all_prior_rows_retained": true,
+    "manifest_replay_unchanged": true,
+    "frozen249_entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "reports_regenerated": 7
+  },
+  "limits": "Complete holdings are identified works only, not source-copy certification, clay readings, supplements, full requested books or scholarly extraction. Machine OCR is uncorrected. Dictionary screenshots are limited observations, not registered HTTP captures or a downloaded complete book. Browser access restriction honored. No outbound messages, purchases, push or deployment.",
+  "closed_at": "2026-10-04T13:16:37.453531+00:00",
+  "diagnostics": "Initial test commands selected absent pytest and wrong Node glob; neither ran tests or changed data. Correct repository unittest/Node suites subsequently passed. No source, text, identity or rights altered to satisfy checks.",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0141_supplied_documents_and_browser_observations.json",
+    "sha256": "4b3328894e8de13c1df5446988edb6b6c445dcd9469928c2fb229373e6b7e6d5"
+  }
+}

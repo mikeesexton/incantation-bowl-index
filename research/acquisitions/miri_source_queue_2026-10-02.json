@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T11:57:10+00:00",
+  "updated_at": "2026-10-04T13:13:27.719422+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -661,6 +661,170 @@
           "audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
         }
       ]
+    },
+    {
+      "source_id": "SRC-GORDON1941-FIRST",
+      "title": "Cyrus H. Gordon, Aramaic Incantation Bowls, Orientalia10 (1941):116–141",
+      "filename": "Gordon-AramaicIncantationBowls-1941.pdf",
+      "capture_id": "CAP-IBI-CP141-PDF-02",
+      "sha256": "c43051b3872500252c3991c3b03da66ef204c37c2a7172231acf20f51ee97602",
+      "status": "Complete original article body held from Mike’s supplied PDF",
+      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "resolved_at": "2026-10-04T13:13:27.719422+00:00",
+      "original_acquisition_request": {
+        "source_id": null,
+        "short_label": "Gordon1941firstinstallment",
+        "citation": "Cyrus H. Gordon, Aramaic Incantation Bowls, Orientalia10 (1941):116–141",
+        "requirement": "Complete original pp116–141 and plates; immediate sourceText8/BirminghamaK2080 andText9/Ashmolean1927.3297, exact concordance and printed reading/translation verification.",
+        "priority": 2,
+        "status": "Original installment/article unheld; ordinary available routes did not provide original body",
+        "checked_at": "2026-10-04T02:47:27+00:00",
+        "metadata_url": "https://www.jstor.org/stable/i40142559",
+        "previous_access_evidence": "Official volume contents lists author/title/pages. Two ordinary web article opens returned one-line HTML without article body; no edition bytes acquired. Metadata cannot verify Text8/9 readings or concordances.",
+        "article_url": "https://www.jstor.org/stable/43582631"
+      },
+      "document_evidence": {
+        "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+        "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+      }
+    },
+    {
+      "source_id": "SRC-GORDON1941-CONCLUDED",
+      "title": "Cyrus H. Gordon, Aramaic Incantation Bowls (Concluded), Orientalia10 (1941):339–360",
+      "filename": "Gordon-AramaicIncantationBowls-1941 concluded.pdf",
+      "capture_id": "CAP-IBI-CP141-PDF-01",
+      "sha256": "e3ffbc62793695664d2c1fb7df6ee0af4303f75b12934b233816ee23be3a07c3",
+      "status": "Complete original article body held from Mike’s supplied PDF",
+      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "resolved_at": "2026-10-04T13:13:27.719422+00:00",
+      "original_acquisition_request": {
+        "source_id": null,
+        "short_label": "Gordon1941concludedinstallment",
+        "citation": "Cyrus H. Gordon, Aramaic Incantation Bowls (Concluded), Orientalia10 (1941):339–360",
+        "requirement": "Complete original pp339–360 and plates; other installment of1941aggregate not supplied by heldcontinued272–284. Object coverage remains to be inspected.",
+        "priority": 2,
+        "status": "Original installment/article unheld; ordinary available routes did not provide original body",
+        "checked_at": "2026-10-04T02:47:27+00:00",
+        "metadata_url": "https://www.jstor.org/stable/i40142559",
+        "previous_access_evidence": "Official volume contents lists author/title/pages; Tübingen bibliographic record KEI00106361 agrees. Ordinary article open returned one-line HTML without body; no edition bytes acquired.",
+        "article_url": "https://www.jstor.org/stable/43582665"
+      },
+      "document_evidence": {
+        "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+        "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+      }
+    },
+    {
+      "source_id": "SRC-DRIVER1930-MAGICBOWL",
+      "title": "G. R. Driver, A Magic Bowl, Revue d’Assyriologie27 (1930):61–64",
+      "filename": "RA27-2_1930_Driver_A-Magic-Bowl.pdf",
+      "capture_id": "CAP-IBI-CP141-PDF-07",
+      "sha256": "5c54c5b3dd83fdb976aad6349ed9b3f885053c6972a7433abcc218c809f66e33",
+      "status": "Complete original article body held from Mike’s supplied PDF",
+      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "resolved_at": "2026-10-04T13:13:27.719422+00:00",
+      "original_acquisition_request": {
+        "source_id": null,
+        "short_label": "Driver1930AMagicBowl",
+        "citation": "G. R. Driver, A Magic Bowl, Revue d’Assyriologie27 (1930):61–64",
+        "requirement": "Original pp61–64 and images, Ashmolean1930.41; compare original transcription/translation with Gordon’s reported corrections without substituting catalogue quotes for original edition.",
+        "priority": 2,
+        "status": "Original installment/article unheld; ordinary available routes did not provide original body",
+        "checked_at": "2026-10-04T02:47:27+00:00",
+        "metadata_url": "https://pure.rug.nl/ws/portalfiles/portal/3424478/07_litopg.pdf",
+        "previous_access_evidence": "Citation independently reported in held Gordon catalogue277; university bibliography search agrees. Searches for exact author/title, JSTOR and Gallica records did not yield an accessible original edition. No paywall/HTTP-status diagnosis or complete journal absence claim."
+      },
+      "document_evidence": {
+        "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+        "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+      }
+    },
+    {
+      "source_id": "SRC-IBI-CP131-MK1999-PUZZLING",
+      "title": "Müller-Kessler, Christa.1999. Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls. BSOAS62(1):111–114. doi:10.1017/S0041977X00017602.",
+      "filename": "MllerKessler-PuzzlingWordsSpellings-1999.pdf",
+      "capture_id": "CAP-IBI-CP141-PDF-04",
+      "sha256": "38f97637b14546a9f663647a7559537e64be6b7b8854d3863cc2859aa65d5b09",
+      "status": "Complete original article body held from Mike’s supplied PDF",
+      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "resolved_at": "2026-10-04T13:13:27.719422+00:00",
+      "original_acquisition_request": {
+        "source_id": "SRC-IBI-CP131-MK1999-PUZZLING",
+        "short_label": "MuellerKessler1999PuzzlingWordsFullArticle",
+        "citation": "Müller-Kessler, Christa.1999. Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls. BSOAS62(1):111–114. doi:10.1017/S0041977X00017602.",
+        "priority": 2,
+        "status": "Full source body unheld; primary preview/extract checked",
+        "requirement": "Permitted complete article111–114, especially113 citedbyFord2002fn47forLouvreAO1177:4. Sourcepublisherextract/metadataaccessible; fullbodyunheld. Fordquotedphrase alonechecked; needprimarynative/translation/apparatus/context. CorrectarticleDOI10.1017/S0041977X00017602, distinctfromfrontmatterDOI00017511.",
+        "metadata_url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/puzzling-words-and-spellings-in-babylonian-aramaic-magic-bowls/2C86AC6B3465781D264309AC09DB26FE",
+        "checked_at": "2026-10-04T07:08:27+00:00",
+        "previous_access_evidence": "Actualpublisher44pagepreviewPDFandCambridgearticleGetaccess/extract; no primarytext17/24 orarticle113 body. Ordinaryroutes respected; no accesscontrol bypass.",
+        "evidence": {
+          "path": "data/private/research-work/Ford2002-131-2026-10-04/source-routes.json",
+          "sha256": "f8f204f3c99c75841a05f5ff30429bea4868502c2bc58e200df4339405914c91"
+        }
+      },
+      "document_evidence": {
+        "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+        "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+      }
+    },
+    {
+      "source_id": "SRC-IBI-CP132-MK2001-BM",
+      "title": "Müller-Kessler, Christa. “Die Zauberschalensammlung des British Museum.” Archiv für Orientforschung48/49(2001/2002):115–145.",
+      "filename": "MllerKessler-DieZauberschalensammlungdes-2001.pdf",
+      "capture_id": "CAP-IBI-CP141-PDF-03",
+      "sha256": "fa869896b43bb28e4ce20c79dfb2de4ca202fe2d70c2899b9fbfc962c4d80322",
+      "status": "Complete original article body held from Mike’s supplied PDF",
+      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "resolved_at": "2026-10-04T13:13:27.719422+00:00",
+      "original_acquisition_request": {
+        "source_id": "SRC-IBI-CP132-MK2001-BM",
+        "short_label": "MuellerKessler2001-2002BritishMuseumArticle",
+        "citation": "Müller-Kessler, Christa. “Die Zauberschalensammlung des British Museum.” Archiv für Orientforschung48/49(2001/2002):115–145.",
+        "requirement": "Permitted complete AfO48/49(2001/2002),115–145 with plates. Immediate BM91715 printed132–133 and BM91780 printed133–134, explicitly named by held Ford2002 Addendum46. Obtain native transcription/translation/apparatus/photographs rather than metadata alone. JSTOR ordinary article route supplies no article body; title/date/pages independently corroborated by author university list.",
+        "priority": 2,
+        "status": "Full source body unheld; precise primary metadata and held citation checked",
+        "metadata_url": "https://www.jstor.org/stable/41668544",
+        "checked_at": "2026-10-04T07:34:24+00:00",
+        "previous_access_evidence": "Original heldFord pages40/46 and primary author/publisher routes; detailed ordinary attempted routes retained privately. No cited original body reading verification.",
+        "evidence": {
+          "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
+          "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
+        }
+      },
+      "document_evidence": {
+        "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+        "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+      }
+    },
+    {
+      "source_id": "SRC-A06D3C4C7CDF",
+      "title": "Shaked, Shaul. “‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls.” JSQ 2 (1995): 197–219.",
+      "filename": "Shaked-PeaceUponYou-1995.pdf",
+      "capture_id": "CAP-IBI-CP141-PDF-14",
+      "sha256": "4eccaa13aacd1a56a8ea8e2bf49ba2b17c0e65e7688b06ee266a841f8684defb",
+      "status": "Complete original article body held from Mike’s supplied PDF",
+      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "resolved_at": "2026-10-04T13:13:27.719422+00:00",
+      "original_acquisition_request": {
+        "source_id": "SRC-A06D3C4C7CDF",
+        "short_label": "Shaked1995PeaceUponYou",
+        "citation": "Shaked, Shaul. “‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls.” JSQ 2 (1995): 197–219.",
+        "requirement": "Permitted complete JSQ2(1995),197–219; immediate215note100 contains MuellerKessler transcription BM91715:14–16 explicitly cited in Ford31–32fn3. Earlier p207/p211–213/p213 witnesses also benefit. Author profile lists title/year but no link/download for this item surfaced; no original215body obtained. Full original article needed, not another Ford copy.",
+        "priority": 2,
+        "status": "Original requested body unheld; held citation and accessible metadata distinguished",
+        "metadata_url": "https://huji.academia.edu/ShaulShaked",
+        "checked_at": "2026-10-04T09:06:57+00:00",
+        "evidence": {
+          "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
+          "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
+        },
+        "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
+      },
+      "document_evidence": {
+        "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+        "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+      }
     }
   ],
   "remaining_acquisition_requests": [
@@ -1013,41 +1177,6 @@
     },
     {
       "source_id": null,
-      "short_label": "Gordon1941firstinstallment",
-      "citation": "Cyrus H. Gordon, Aramaic Incantation Bowls, Orientalia10 (1941):116–141",
-      "requirement": "Complete original pp116–141 and plates; immediate sourceText8/BirminghamaK2080 andText9/Ashmolean1927.3297, exact concordance and printed reading/translation verification.",
-      "priority": 2,
-      "status": "Original installment/article unheld; ordinary available routes did not provide original body",
-      "checked_at": "2026-10-04T02:47:27+00:00",
-      "metadata_url": "https://www.jstor.org/stable/i40142559",
-      "previous_access_evidence": "Official volume contents lists author/title/pages. Two ordinary web article opens returned one-line HTML without article body; no edition bytes acquired. Metadata cannot verify Text8/9 readings or concordances.",
-      "article_url": "https://www.jstor.org/stable/43582631"
-    },
-    {
-      "source_id": null,
-      "short_label": "Gordon1941concludedinstallment",
-      "citation": "Cyrus H. Gordon, Aramaic Incantation Bowls (Concluded), Orientalia10 (1941):339–360",
-      "requirement": "Complete original pp339–360 and plates; other installment of1941aggregate not supplied by heldcontinued272–284. Object coverage remains to be inspected.",
-      "priority": 2,
-      "status": "Original installment/article unheld; ordinary available routes did not provide original body",
-      "checked_at": "2026-10-04T02:47:27+00:00",
-      "metadata_url": "https://www.jstor.org/stable/i40142559",
-      "previous_access_evidence": "Official volume contents lists author/title/pages; Tübingen bibliographic record KEI00106361 agrees. Ordinary article open returned one-line HTML without body; no edition bytes acquired.",
-      "article_url": "https://www.jstor.org/stable/43582665"
-    },
-    {
-      "source_id": null,
-      "short_label": "Driver1930AMagicBowl",
-      "citation": "G. R. Driver, A Magic Bowl, Revue d’Assyriologie27 (1930):61–64",
-      "requirement": "Original pp61–64 and images, Ashmolean1930.41; compare original transcription/translation with Gordon’s reported corrections without substituting catalogue quotes for original edition.",
-      "priority": 2,
-      "status": "Original installment/article unheld; ordinary available routes did not provide original body",
-      "checked_at": "2026-10-04T02:47:27+00:00",
-      "metadata_url": "https://pure.rug.nl/ws/portalfiles/portal/3424478/07_litopg.pdf",
-      "previous_access_evidence": "Citation independently reported in held Gordon catalogue277; university bibliography search agrees. Searches for exact author/title, JSTOR and Gallica records did not yield an accessible original edition. No paywall/HTTP-status diagnosis or complete journal absence claim."
-    },
-    {
-      "source_id": null,
       "short_label": "Clerkin2022SeleuciaRevisited",
       "citation": "Clerkin, Caitlin Chien. Seleucia-on-the-Tigris, Revisited. PhD dissertation, Classical Art and Archaeology, University of Michigan,2022 (primary repository indexed title page; complete body unheld).",
       "priority": 3,
@@ -1076,7 +1205,20 @@
       "evidence": {
         "path": "data/private/research-work/Waterman128-2026-10-04/Rasmussen2007-source-observation.json",
         "sha256": "b9a6a0f4d00d8a7688cebbb87b5f4ed04745bee58cd27db0d06ef59854b5beeb"
-      }
+      },
+      "holding_and_access_updates": [
+        {
+          "checkpoint": 141,
+          "observed_at": "2026-10-04T13:13:27.719422+00:00",
+          "capture_id": "CAP-IBI-CP141-PDF-00",
+          "sha256": "4d2f7dac6bee57bf51a21651e4ef64518f6bfa4df4f8f0af5ea04222522073a3",
+          "status": "97-leaf written thesis held; accompanying CD absent; request remains for CD contents/images",
+          "evidence": {
+            "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+            "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-AF9EF12C3CB9",
@@ -1091,37 +1233,18 @@
       "evidence": {
         "path": "data/private/research-work/Ford2002-131-2026-10-04/source-routes.json",
         "sha256": "f8f204f3c99c75841a05f5ff30429bea4868502c2bc58e200df4339405914c91"
-      }
-    },
-    {
-      "source_id": "SRC-IBI-CP131-MK1999-PUZZLING",
-      "short_label": "MuellerKessler1999PuzzlingWordsFullArticle",
-      "citation": "Müller-Kessler, Christa.1999. Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls. BSOAS62(1):111–114. doi:10.1017/S0041977X00017602.",
-      "priority": 2,
-      "status": "Full source body unheld; primary preview/extract checked",
-      "requirement": "Permitted complete article111–114, especially113 citedbyFord2002fn47forLouvreAO1177:4. Sourcepublisherextract/metadataaccessible; fullbodyunheld. Fordquotedphrase alonechecked; needprimarynative/translation/apparatus/context. CorrectarticleDOI10.1017/S0041977X00017602, distinctfromfrontmatterDOI00017511.",
-      "metadata_url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/abs/puzzling-words-and-spellings-in-babylonian-aramaic-magic-bowls/2C86AC6B3465781D264309AC09DB26FE",
-      "checked_at": "2026-10-04T07:08:27+00:00",
-      "previous_access_evidence": "Actualpublisher44pagepreviewPDFandCambridgearticleGetaccess/extract; no primarytext17/24 orarticle113 body. Ordinaryroutes respected; no accesscontrol bypass.",
-      "evidence": {
-        "path": "data/private/research-work/Ford2002-131-2026-10-04/source-routes.json",
-        "sha256": "f8f204f3c99c75841a05f5ff30429bea4868502c2bc58e200df4339405914c91"
-      }
-    },
-    {
-      "source_id": "SRC-IBI-CP132-MK2001-BM",
-      "short_label": "MuellerKessler2001-2002BritishMuseumArticle",
-      "citation": "Müller-Kessler, Christa. “Die Zauberschalensammlung des British Museum.” Archiv für Orientforschung48/49(2001/2002):115–145.",
-      "requirement": "Permitted complete AfO48/49(2001/2002),115–145 with plates. Immediate BM91715 printed132–133 and BM91780 printed133–134, explicitly named by held Ford2002 Addendum46. Obtain native transcription/translation/apparatus/photographs rather than metadata alone. JSTOR ordinary article route supplies no article body; title/date/pages independently corroborated by author university list.",
-      "priority": 2,
-      "status": "Full source body unheld; precise primary metadata and held citation checked",
-      "metadata_url": "https://www.jstor.org/stable/41668544",
-      "checked_at": "2026-10-04T07:34:24+00:00",
-      "previous_access_evidence": "Original heldFord pages40/46 and primary author/publisher routes; detailed ordinary attempted routes retained privately. No cited original body reading verification.",
-      "evidence": {
-        "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
-        "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
-      }
+      },
+      "holding_and_access_updates": [
+        {
+          "checkpoint": 141,
+          "observed_at": "2026-10-04T13:13:27.719422+00:00",
+          "status": "Chrome reader shows Borrow Unavailable and print-disability restriction; only title preview inspected. Immediate scholarly pp212/260 not accessible through this route. No eligibility claim or bypass attempted.",
+          "evidence": {
+            "path": "data/private/research-work/supplied141-2026-10-04/browser-evidence.json",
+            "sha256": "dc04d8146a13f71b48e1714dbf40384b7ab1d72a1948b70e92c4a1f82fbce30d"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-IBI-CP132-MK2002-RECEPTION",
@@ -1136,7 +1259,20 @@
       "evidence": {
         "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
         "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
-      }
+      },
+      "holding_and_access_updates": [
+        {
+          "checkpoint": 141,
+          "observed_at": "2026-10-04T13:13:27.719422+00:00",
+          "source_id": "SRC-KITCHEN2005-GYSELENREVIEW",
+          "capture_id": "CAP-IBI-CP141-PDF-17",
+          "status": "Kitchen2005 book review held; does not contain original Müller-Kessler2002 chapter pp193–208",
+          "evidence": {
+            "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+            "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-IBI-CP132-MK1999-PHRASEOLOGY",
@@ -1169,21 +1305,6 @@
       }
     },
     {
-      "source_id": "SRC-A06D3C4C7CDF",
-      "short_label": "Shaked1995PeaceUponYou",
-      "citation": "Shaked, Shaul. “‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls.” JSQ 2 (1995): 197–219.",
-      "requirement": "Permitted complete JSQ2(1995),197–219; immediate215note100 contains MuellerKessler transcription BM91715:14–16 explicitly cited in Ford31–32fn3. Earlier p207/p211–213/p213 witnesses also benefit. Author profile lists title/year but no link/download for this item surfaced; no original215body obtained. Full original article needed, not another Ford copy.",
-      "priority": 2,
-      "status": "Original requested body unheld; held citation and accessible metadata distinguished",
-      "metadata_url": "https://huji.academia.edu/ShaulShaked",
-      "checked_at": "2026-10-04T09:06:57+00:00",
-      "evidence": {
-        "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
-        "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
-      },
-      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
-    },
-    {
       "source_id": "SRC-IBI-CP135-DROWER1963-DICTIONARY",
       "short_label": "DrowerMacuch1963MandaicDictionary",
       "citation": "Drower, E. S., and R. Macuch. A Mandaic Dictionary. Oxford: Clarendon Press, 1963.",
@@ -1196,7 +1317,18 @@
         "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
         "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
       },
-      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
+      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass.",
+      "holding_and_access_updates": [
+        {
+          "checkpoint": 141,
+          "observed_at": "2026-10-04T13:13:27.719422+00:00",
+          "status": "Ordinary one-hour loan succeeded; 15 selected two-page spreads visually observed/saved privately, full book not acquired. Immediate requested printed pages17,41,50,65,131,173,242,299,341,372,383,394,409,463,474 available for later lexical source-copy work. No verified lexical transcription counted.",
+          "evidence": {
+            "path": "data/private/research-work/supplied141-2026-10-04/browser-evidence.json",
+            "sha256": "dc04d8146a13f71b48e1714dbf40384b7ab1d72a1948b70e92c4a1f82fbce30d"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-IBI-CP135-DROWER1953-HARAN",
@@ -1211,7 +1343,20 @@
         "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
         "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
       },
-      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
+      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass.",
+      "holding_and_access_updates": [
+        {
+          "checkpoint": 141,
+          "observed_at": "2026-10-04T13:13:27.719422+00:00",
+          "source_id": "SRC-HARAN-GNOSIS-WEB",
+          "capture_id": "CAP-IBI-CP141-PDF-15",
+          "status": "13-leaf web translation printout held; original footnotes expressly omitted, native edition/original book unheld",
+          "evidence": {
+            "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+            "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-3EBD27903913",
@@ -1270,8 +1415,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/miri-queue-before.json",
-    "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    "path": "data/private/research-work/supplied141-2026-10-04/miri-queue-before.json",
+    "sha256": "130e2043d5a15898254df57df627389275aabf8b75ebc328c68b1074c22aed55"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1434,5 +1579,29 @@
       "path": "data/private/research-work/Morgenstern-remaining140-2026-10-04/reading-extent-inventory.json",
       "sha256": "454e05a35db982ae62b7283dcb3245a0cc8a1f3a5e1ca01d8c009427c28b76ad"
     }
+  },
+  "checkpoint141_supplied_intake": {
+    "finished_pdfs": 17,
+    "resolved_full_article_requests": 6,
+    "resolved_total": 21,
+    "remaining_total": 32,
+    "document_evidence": {
+      "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
+      "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
+    },
+    "browser_evidence": {
+      "path": "data/private/research-work/supplied141-2026-10-04/browser-evidence.json",
+      "sha256": "dc04d8146a13f71b48e1714dbf40384b7ab1d72a1948b70e92c4a1f82fbce30d"
+    },
+    "unfinished_download": "Left untouched in Downloads; excluded from intake",
+    "next_source_reading": [
+      "Driver1930 complete own bowl edition",
+      "Müller-Kessler1999 four-page commentary",
+      "Shaked1995 p215 note100",
+      "Müller-Kessler2001 pp132–134",
+      "Gordon1941 first and concluded installments",
+      "Rasmussen written thesis and supplementary CD gap"
+    ],
+    "no_outbound_message": "Miri-facing local queue only; no message sent"
   }
 }
