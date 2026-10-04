@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T07:34:24+00:00",
+  "updated_at": "2026-10-04T08:01:36+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -113,7 +113,7 @@
       "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
       "capture_id": "CAP-IBI-CP107-FORD2002",
       "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
-      "status": "Complete requested Ford article held; 113 bounded reading rows checked, sourcewide extraction partial.",
+      "status": "Complete requested Ford article held;113bowl reading rows checked plus38new nonbowl context copies; sourcewide extraction partial.",
       "resolved_at": "2026-10-03T19:57:24+00:00",
       "checkpoint": 107,
       "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
@@ -128,9 +128,9 @@
         "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
         "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
       },
-      "reading_audit": "Checkpoint132: 17 further bounded Ford2002 quotation units separately copied and source-checked, including reported scholarly alternatives, tentative emendation and the addendum Latin form. All prior96Ford rows retained exactly; now113checked bounded units. Three new bibliographic sources and three exact new-source appearances/publication references locate the AfO2001/2002 studies of BM91715(132–133) and BM91780(133–134), and ResOrientalesXIV(2002) BM91715(203–205). Ford40 also references Phraseology305–306; actual publisher details confirm DOI10.2143/ARAM.11.2.504470 and subscription/purchase-only ordinary download response. Date/volume/title reports retained separately. Original article bodies remain unheld; three precise acquisition requests added for Miri. Eight complete Fordpages/three controls actually viewed;20pixelrecipes exact. Sourcewide manuscript/dictionary/Ginza/Maqlu/general claims/relationships/all-reference inventory remains partial. No identity merge, new object, scholarly adjudication, rights approval, public release or purchase.",
+      "reading_audit": "Checkpoint133: 38 newly checked nonbowl contextual copies retained privately, including DC29/DC43/Ginza longer passages and Maqlu/property/DC37/DC44/deMorgan/DC15 comparisons; two prior full DC37 copies referenced, not duplicated. Printed inline markers inside words, untranslated omissions, distinct supplied correction/proposal and deletion annotations retained. Checks verify Ford reproductions only, not original manuscripts/clay/cited editions. All113Fordbowl text rows unchanged. Five exact BMnumber source appearances and six separately attributed reported manuscript parallels/literary dependence added; no source assertion adjudicated. Original Drower1937 JRAS69(4),589–611 identified by primary Cambridge metadata, especially595lines30–32 for DC29R359–362; body remains unheld, one precise Miri request added. Entire Ford dictionary/gloss/prosequotation/general/person/ritual/allreference audit remains partial; standalone context reader packaging is next separate OPS priority.",
       "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
-      "reading_audit_checked_at": "2026-10-04T07:34:24+00:00",
+      "reading_audit_checked_at": "2026-10-04T08:01:36+00:00",
       "checkpoint126_prior_reading_audit": {
         "source_id": "SRC-FORD2002-JANES",
         "fulfilled_by_source_id": "SRC-FORD2002-JANES",
@@ -529,6 +529,10 @@
         "status": "Originalworkheld;96boundedFordreadingrowschecked; additional context/sourcewide extractionpartial.",
         "reading_audit": "Checkpoint131: ten bounded Ford2002 Latin/English quotation units checked, two source-page scans, six source appearances, two scoped candidates, three identifiers, five bibliographic assessments and one publication registry entry. MIT24 maps by explicit2005facsimilecontents plus heldMont39heading to existingCBS9005; Ford24 is citedparallelonly, no reading copied. NewMIT17 candidate has unknownphysicalaccession; noPognon1898numbermatch. ExactLouvreAO1177context corroborated by lawfulmuseumHTMLcapture; originalMüller-Kessler1999p113 remains unheld. OriginalYamauchi1967wrongworkURL/stalenotes repaired through immutableledger; separate2005facsimilepreviewsource. Tenfullpages/threecontrols viewed;15pixelrecipes exact. DC37(R)16-row native and providedEnglish separately checked as private nonbowl context artifacts, excludedfrombowlcounts; searchableartifactreaderpackaging pending. Ordinarypublisher44-pagepreview retained privately with200receipt after unmodifiedcollector permitsrobots404, capture registration pending existingtransferrequires200robots; not original1967/deposit/fullbody. Fordsourcewide extraction remains partial. Two precise Miri requests added (Yamauchi fullbook andMüller-Kessler1999fullarticle).",
         "reading_audit_checked_at": "2026-10-04T07:08:27+00:00"
+      },
+      "checkpoint133_prior_reading_audit": {
+        "path": "data/private/research-work/Ford2002-133-2026-10-04/miri-queue-before.json",
+        "sha256": "21a37c6927b4f4357b0ae37039ca4472efd24f48cd1c5fa60c10b145fdb2461e"
       }
     },
     {
@@ -1140,6 +1144,21 @@
         "path": "data/private/research-work/Ford2002-132-2026-10-04/source-evidence.json",
         "sha256": "ad67fd71eda2ae45f68718b90093e68ed76d4c0366a471d002de18cceeeefd93"
       }
+    },
+    {
+      "source_id": "SRC-IBI-CP133-DROWER1937-PISHRA",
+      "short_label": "Drower1937ShaftaPishraAinia",
+      "citation": "Drower, E. S. Shafta ḏ Pishra ḏ Ainia. Journal of the Royal Asiatic Society69(4),October1937,589–611. doi:10.1017/S0035869X00091565.",
+      "requirement": "Permitted complete 1937 article JRAS69(4),589–611, including native text/translation/apparatus; immediate printed595lines30–32 for DC29(R):359–362, explicitly cited by heldFord2002printed39fn39. Cambridge ordinary primary page supplies Extract/metadata/Getaccess and some reference notes, no requested fullbody595. Original October1937 publication distinct from online2011 date and separate1938continuation70(1),1–20,DOI10.1017/S0035869X00092455. Preserve copying conditions.",
+      "priority": 2,
+      "status": "Full source body unheld; precise primary metadata and held citation checked",
+      "metadata_url": "https://www.cambridge.org/core/journals/journal-of-the-royal-asiatic-society/article/abs/shafta-d-pishra-d-ainia/CE190661A983F5CB60F495646359F0F6",
+      "checked_at": "2026-10-04T08:01:36+00:00",
+      "previous_access_evidence": "Primary Cambridge Getaccess/Extract page and heldFord39fn39; no fullarticle download, purchase or access bypass.",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-133-2026-10-04/source-evidence.json",
+        "sha256": "70fde402c4551d67d7e46e1374d375a3ef839f185d49de523dc3c3f7336fe6bc"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1156,7 +1175,7 @@
     "path": "data/private/research-work/nli-routes57-2026-10-03/acquisition-queue-before.json",
     "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
   },
-  "new_access_requests_checkpoint": 132,
+  "new_access_requests_checkpoint": 133,
   "latest_held_context_inventory": {
     "path": "data/private/manifests/held-cases44-2026-10-02/production/extraction.json",
     "sha256": "fb413f96d376d06a07ea975b0032cb2eb9f014b5aabefcdc17e604e5da573a49"
@@ -1294,5 +1313,9 @@
   "checkpoint132_source_extraction": {
     "path": "data/private/research-work/Ford2002-132-2026-10-04/extraction-index.json",
     "sha256": "4fc7a3339b9fa5931159073cc041e4b3b8743bf8a759745079bc6d6d817d2fa9"
+  },
+  "checkpoint133_source_extraction": {
+    "path": "data/private/research-work/Ford2002-133-2026-10-04/extraction-index.json",
+    "sha256": "60b5e40870cf46b2b8abcc8489168bb460091f681bb884fc0d25ed9cd81f8331"
   }
 }
