@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "checkpoint": 151,
+  "created_at": "2026-10-04T18:09:18.204593+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "cdd7671569d215a68733a38c328eb031ab1c8602ca6698691c32c16028aa6db9",
+  "corpus_after": "38fc40104d819f207cc9612221e7be00e5a5756b9c459663325a0d34972b392b",
+  "table_changes": {
+    "appearances": 2,
+    "appearance_object_links": 2,
+    "texts": 22,
+    "media": 4,
+    "publication_assessments": 2,
+    "text_proofreading_reviews": 34,
+    "document_assessments": 1
+  },
+  "scope": "Checkpoint151:22 new Hebrew-letter Mandaic quotations for Fitzwilliam92a and PrincetonEx4283,7checked15partial. Twelve BM91751/91776 controls renewed,8checked4partial, resolving6/10prior partials; two prior checked copies have omitted source points restored. All34current source checks hash-bound to the original concluded installment;2existing-object appearances/publication assessments,4facsimile assignments and one superseding partial document assessment. Earlier12copy snapshots retained in proofreading history. Curly/restoration/glyph and word-order refinements are project source-copy controls, not adopted conjectures. No identity, religious, person/role or public reuse adjudication. Sourcewide extraction partial. Frozen24933linked216unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Previous turn150 progress; Goal active; Mike requested pause at this saved checkpoint.",
+  "counts": {
+    "new_texts": 22,
+    "new_checked": 7,
+    "new_partial": 15,
+    "renewed_texts": 12,
+    "renewed_checked": 8,
+    "renewed_partial": 4,
+    "old_partial_resolved": 6
+  },
+  "new_text_rows": 22,
+  "new_checked_readings": 7,
+  "new_partial_readings": 15,
+  "renewed_prior_text_reviews": 12,
+  "prior_content_copies_refined": 10,
+  "prior_partial_reviews_resolved": 6,
+  "new_appearances": 2,
+  "new_publication_assessments": 2,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 4,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 0,
+  "new_proofreading_reviews": 34,
+  "new_identifiers": 0,
+  "pause_requested_at_checkpoint": true,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2741,
+  "total_media": 2417,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2273,
+  "total_identities": 1921,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 79,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gordon151_readings_2026-10-04.jsonl",
+      "sha256": "be7f6fc2c5eb1ef8d829c96d85d868f441f3d4fcdb924621e4cd9deb56202af5"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gordon151_publication_2026-10-04.json",
+      "sha256": "cccc3f9705340315bb92480f8a1ffc66e11a9c248097c03e451b1c77ac192dc1"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Gordon151_proofreading_2026-10-04.json",
+      "sha256": "d529282ec137582a178350f6fb2d1aa3938b5e478c113bcf4d6167a85d8c2835"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon151_documents_2026-10-04.json",
+      "sha256": "fdd3d99f219f7cfcebdfbf040895f94b67aa13d9cba1d27a54d567e53c8650ba"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/source-evidence.json",
+    "sha256": "35b83cf6035e854b771540ebce127d9125d090e65c8c0a5a237437b95e0e4067"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/reading-extent-inventory.json",
+    "sha256": "c26b985a5ef53740c7d071f5178ce7cea870736ec17ce8b8a83708e747dd6169"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/page-derivatives.json",
+    "sha256": "0f88321a51b9a7f6c128961f8724374b9457fad7d25ba1a79d03e6287236e426"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/campaign_case_progress_checkpoint151.json",
+    "sha256": "d5e548e05449350cd98379c5615e1509c7a5643926b665aead193b0f6db6f73c"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/held_pdf_inventory_checkpoint151.json",
+    "sha256": "7e10931e43359703b9f4d0f7562f3b719302b0813ff3d991c841676c5037162a"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/non_pdf_holdings_checkpoint151.json",
+    "sha256": "a625e16aa68330337f8573c5d63374a845b55a10853eece490d8728a7bb613b8"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/intake-verification.json",
+    "sha256": "3b3f0c18501263886c6603407bb7c96aa66b5fdeb55ae3757e74bdf5523dd4cf"
+  },
+  "validation": {
+    "python_tests": 473,
+    "node_tests": 71,
+    "total_tests": 544,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2741,
+    "all_media_assignments_verified": 2417,
+    "all_local_image_hashes_verified": 1506,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1921,
+    "all39tables_exact": true,
+    "all_prior_rows_retained_except12_ledger_revised_copies": true,
+    "all12_complete_before_snapshots_retained": true,
+    "all_prior_identity_memberships_exact": true,
+    "new_scoped_singletons": 0,
+    "four_current_manifest_replays_unchanged": true,
+    "all34current_copy_reviews_verified": true,
+    "counts": {
+      "new_texts": 22,
+      "new_checked": 7,
+      "new_partial": 15,
+      "renewed_texts": 12,
+      "renewed_checked": 8,
+      "renewed_partial": 4,
+      "old_partial_resolved": 6
+    },
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 4,
+    "distinct_assigned_pages": 4,
+    "actually_viewed_full_pages": 7,
+    "actually_viewed_focused_controls": 31,
+    "full_plate_photographs": 0,
+    "source_catalogue_units_inventoried": 65,
+    "concurrent_DISC004_change_preserved": true,
+    "reports_regenerated": 7
+  },
+  "catalogue_inventory": {
+    "path": "data/private/research-work/Gordon148-2026-10-04/catalogue-unit-inventory.json",
+    "sha256": "32989e5f73aaa10e9023b038f76bddd25010beb39ca41a593d2138341580867c"
+  },
+  "correction_before_snapshots": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/correction-before-snapshots.json",
+    "sha256": "ccee9ad9427d0d5d9b8c40fd770ad884b8df0563a61e078cb9a4855a9f9ceaf3"
+  },
+  "limits": "22new bounded native quotations7checked15partial;12existing controls8checked4partial. Six prior partials resolved; nineteen total reviewed units remain partial. No absent middle/native spans supplied, no full inscription/wholecase certification. Sourcewide extraction/structured claims/apparatus and remaining source units pending.",
+  "diagnostics": "Initial private copy preparation had an else-spacing syntax error before any manifest/database write; fixed. Enlarged controls resolved two source point omissions and six partial mark/word/restoration questions. BM OPEN/SUN and Fitz flesh-word controls finalized before intake. Literal isolated letter and bracket controls retained including ambiguous source restoration; no balancing from English. Trial, production and four replays succeeded without a failed database transaction. No new source/capture/identifier/claim/identity/reuse/reset/deploy/push/purchase/outbound message/Waterman retry.",
+  "ui_verification": {
+    "path": "data/private/research-work/Gordon151-2026-10-04/ui-verification.json",
+    "sha256": "09cce556b23203d50bd3d4af2e6b5e4ff266b2a344d4bae815cb79cefc32114b"
+  },
+  "goal_transition_pending": "Pause at Mike’s explicit request after local commit; no further research.",
+  "closed_at": "2026-10-04T18:17:20.456104+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0151_Gordon_native_controls_and_Mandaic.json",
+    "sha256": "cf1afa0f59594bfc179c2edf3b16e0d47826f13dc34f5bce0185ca8072d6f835"
+  }
+}
