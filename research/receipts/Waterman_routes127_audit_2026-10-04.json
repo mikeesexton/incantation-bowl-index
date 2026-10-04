@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "checkpoint": 127,
+  "created_at": "2026-10-04T05:21:18+00:00",
+  "goal_status": "active",
+  "previous_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "f7521e4c8ed7bc0e7774f8e16576467a64045d6a5cc6eca678dd3c520ee19581",
+  "corpus_after": "f7521e4c8ed7bc0e7774f8e16576467a64045d6a5cc6eca678dd3c520ee19581",
+  "corpus_changed": false,
+  "all39table_fingerprints_unchanged": true,
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_claims": 0,
+  "new_text_rows": 0,
+  "new_media_rows": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "total_identities": 1904,
+  "total_text_rows": 2402,
+  "checked_reading_rows": 1600,
+  "partial_reading_rows": 55,
+  "unreviewed_reading_rows": 1,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "new_frozen_case_attempts": 1,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 25,
+  "new_acquisition_requests": 1,
+  "allowance_resets_used": 0,
+  "scope": "Checkpoint127: Waterman1931userChrome tab positively found; ordinary borrowing renewal restored limited-preview pages. Complete PlateXII viewed and distinguished from bowl imagery: jar/cylinder; no exactmuseum accession/fieldnumberbridge. Searchinside errored, not a zerohit. Prior107pages61–62 retained. FreshAMARfulltext andBentleyfindingaids returned403. NewClerkin2022Seleuciaarchival dissertation lead: primaryindexedtitlepage/year/author and archivalcitations, directPDF403/fullbodyunheld/targetbowlunproved. One precise acquisitionrequest added forMiri; existingWaterman/Yeivinrequests extended withoutduplicates. Corpus/identities/readingcoverage unchanged. One frozenKelseycasehistory extended,249cases32linked217unlinked/allattempted/zero wholecasescomplete. Goalactive; useful further publication/held-source work remains.",
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/publication-routes127-2026-10-04/campaign_case_progress_checkpoint127.json",
+    "sha256": "1e7579eb72cd45c95fb706d2dfa20233ccf2f5ece70b146b61d7fcc1533ef61d"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Ford2002-126-2026-10-04/held_pdf_inventory_checkpoint126.json",
+    "sha256": "e77a22eaf75243a3292b94260eef93ede9ece92a449f11b5ae0f601b1b4f9e9e"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Ford2002-126-2026-10-04/non_pdf_holdings_checkpoint126.json",
+    "sha256": "c21a310219c0bbc9e4d2a2c3597b75b843ea59c985b56775315c381f5dfa01b2"
+  },
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/browser-route-observation-initial-retained.json",
+      "sha256": "77ae63559d2bf77c8d4db7fefe5c0c175362743dbda6ad8314a01ea6b4bf0c66"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/browser-route-observation.json",
+      "sha256": "77ae63559d2bf77c8d4db7fefe5c0c175362743dbda6ad8314a01ea6b4bf0c66"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/campaign_case_progress_checkpoint127.json",
+      "sha256": "1e7579eb72cd45c95fb706d2dfa20233ccf2f5ece70b146b61d7fcc1533ef61d"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/fingerprint-after.json",
+      "sha256": "97ae5c41a2ac401d609998e2a3b05f73fe50f7491734cf0235890990285b355a"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/fingerprint-before.json",
+      "sha256": "97ae5c41a2ac401d609998e2a3b05f73fe50f7491734cf0235890990285b355a"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/identities-before.json",
+      "sha256": "89b6bf08f77c36e81db3d07cc8951edc148f8774a8b58ced3983b5bc5ae477a3"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/miri-queue-before.json",
+      "sha256": "5584035291d33357020ef1b63363810986f1b6fdfb7e3c9c3d1715c4bed393fd"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
+      "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/waterman-viewer-observations.json",
+      "sha256": "c623c42ee55a91f5c12b7170c72bf77ae6db09b05f6f18cb015ed84b5db24ac1"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/record_checkpoint.py",
+      "sha256": "f54220279002134c015c8155415657fb84dfcaa16a8533074d548b2557534e1d"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/closure-verification.json",
+      "sha256": "1ce9aae8c33fdfb612c9433d7d2c334f1b0a59fd2a0217af03da60c7e144add5"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/verify_close.py",
+      "sha256": "90a9e7db32e0976dc3ab9ec471e99660ddcce16bd55576f831d7874b634f6740"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/tests-final.log",
+      "sha256": "9ab54d7333a8e38f2092a46dc5884113f0335212987695a033c18ad3eb7f9fb2"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/node-tests-final.log",
+      "sha256": "f1f41f3944d7c8d9e89f79ed3e32ae4bbeb51241387b94b54a12c92e542cf779"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/reader-build-final.log",
+      "sha256": "105081f783948c718ca4b4985bf3b90e84849e371d9594b2860179f4883a730b"
+    },
+    {
+      "path": "data/private/research-work/publication-routes127-2026-10-04/record_checkpoint-initial-draft.py",
+      "sha256": "373c64855ec1ca6f37ca9d6e39b932921468bac9f4fed5c2ffc0727642616529"
+    }
+  ],
+  "validation": {
+    "all39tables_unchanged": true,
+    "python_tests_passed": 414,
+    "node_tests_passed": 57,
+    "total_tests_passed": 471,
+    "reader_audit_checks": "7/7",
+    "all_text_rows_verified": 2402,
+    "all_media_assignments_verified": 2245,
+    "all_local_image_hashes_verified": 1334,
+    "all_capture_hashes_and_work_assignments_verified": 97,
+    "all_identity_memberships_and_counts_verified": 1904,
+    "all_prior_holdings_appearances_locators_and_text_hashes_verified": true,
+    "original249cases_all_members_and_history_retained": true,
+    "new_case_attempts": 1,
+    "prior_miri_requests_retained": true,
+    "reader_built_after_both_suites": true,
+    "live_runtime": "Local build only; no server restart/deployment"
+  },
+  "next_actions": [
+    "Continue ordinary authorized Waterman reader: remaining plates and frontmatter/objectlists; PlateXII jar/cylinder is checked, not a bowl accession key.",
+    "Acquire Clerkin2022dissertation to investigate exact expedition archival references; body and KM31455content still unverified.",
+    "Remaining Ford/Gordon/Morgenstern/Levene source units and other217publicationcases; no case completion inferred from partial passages."
+  ],
+  "protected_payloads": "No report/sourcepixels archived127; privateboundedobservations outsideGit; publicreceipt content-freehashpointers only.",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0127_Waterman_plate_and_archival_routes_verified.json",
+    "sha256": "379b4fd13a58bbf147bb164d5180e0f2c046e8672486a13eef7c5d4b1d03a018"
+  },
+  "preparatory_diagnostic": "Initial queue lookup assumed every request had short_label; KeyError before any tracked queue/roadmap or corpus write. Complete script draft retained, lookup corrected to optional key before successful application. Transient PlateVIII screenshot location explicitly qualified; unviewed navigation not source verification.",
+  "closed_at": "2026-10-04T05:24:35+00:00",
+  "private_initial_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0127_Waterman_plate_and_archival_routes.json",
+    "sha256": "bd6be893b2c168739d8e72011adc3c4287eb9ff913d73996fc4a0cf82514e6be"
+  }
+}

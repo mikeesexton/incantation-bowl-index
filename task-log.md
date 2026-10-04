@@ -25,6 +25,18 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-04 — Codex — Waterman plate and archival routes, checkpoint127
+
+**Claimed:** DISC-002 (one DISC workstream; continuing active research Goal).
+**Corpus:** unchanged — all39table fingerprints exact, digest `f7521e4c8ed7`. No objects, appearances, identifiers, claims, readings, media, captures, publications, identity decisions or reuse approvals added.
+**Tests:** 414 Python +57 Node =471 passed. Roadmap/enrichment/acquisition reports regenerated. Private reader built after both suites:7/7audits plus all2,402texts/2,245media/1,334images/97captures/all1,904identity memberships and prior holdings appearance/locator/text hashes independently verified.
+
+- Mike confirmed Waterman tab open; found it. Initial different-visible-window observation retained and superseded, approximate manually entered timestamp qualified. Ordinary Borrow renewal restored omitted pages. Searchinside errored, not zero hits. Complete PlateXII viewed at n99: jar/cylinder, no bowl photograph or target accession/fieldnumber key. Complete VIII/IX also viewed; VIII was transitional with stale n89 URL explicitly qualified, no certified scanmapping. Navigation-only pages/finalplates/frontmatter/objectlists not claimed checked. Prior107 complete61–62 observations retained; no entire document/pagepixels downloaded or archived127.
+- Primary AMAR fulltext again403; Bentley current finding-aids link again403. New primary-indexed Clerkin2022 Michigan dissertation archival lead; direct PDF403/handle toolerror. Indexed author/title/year/Box4photographs and Toledo correspondence references recorded with snippet limits. Complete body, exact KM31455/TMA1931.455 content, current Yeivin folder and publication identity remain unverified. Exact museum conservation post rechecked, no edition pointer invented.
+- One Kelsey frozen-case history appended; all249members/earlierhistories retained,32linked/217unlinked/allattempted/zero wholecasescomplete. Miri15resolved/25remaining: one new dissertation acquisition request, existing Waterman/Yeivin requests extended without duplication. Roadmap DISC evidence/priority/changelog updated. No DiSKO crosswalk, anonymous-report bowl attribution, catalogue-silence absence claim or scholarly adjudication.
+- Initial queue-key diagnostic fixed before tracked writes; original script draft retained. No fresh allowance/reset check: zero verified resets used/maxone authorized. Goalactive; next remaining Waterman plates/frontmatter/objectlists and exact museum card/field-number bridge, then remaining held editions and217publicationcases. Mike may navigate elsewhere while retaining Waterman tab; native controls may briefly select it. No push/deploy/serverrestart/outbound message/purchase/access bypass.
+- Verified private checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0127_Waterman_plate_and_archival_routes_verified.json`; initial evidence checkpoint retained. Receipt: `research/receipts/Waterman_routes127_audit_2026-10-04.json`.
+
 ## 2026-10-04 — Codex — Ford2002 comparative passages, checkpoint126
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; Mike explicitly resumed the Goal).

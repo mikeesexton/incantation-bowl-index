@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T05:01:19+00:00",
+  "updated_at": "2026-10-04T05:21:18+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -436,6 +436,19 @@
             "path": "data/private/research-work/five-docs107-2026-10-03/waterman-viewer-observations.json",
             "sha256": "062b197a6a7530fe73cdfce84d46c15e8a3c47d3a7a1d68a4d182c219abb9e49"
           }
+        },
+        {
+          "checked_at": "2026-10-04T05:21:18+00:00",
+          "checkpoint": 127,
+          "finding": "Waterman tab found; ordinary Borrow renewal restored pages. Searchinside error, not zerohits. Complete PlateXII directly viewed: jar/cylinder, no bowl photograph/accessionbridge. FreshAMARfulltext403. Fullreport/objectlists/finalplates and exactmuseumfieldnumber crosswalk remainneeded.",
+          "private_observation_note": {
+            "path": "data/private/research-work/publication-routes127-2026-10-04/waterman-viewer-observations.json",
+            "sha256": "c623c42ee55a91f5c12b7170c72bf77ae6db09b05f6f18cb015ed84b5db24ac1"
+          },
+          "primary_route_evidence": {
+            "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
+            "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
+          }
         }
       ]
     },
@@ -571,7 +584,18 @@
       "status": "unheld archival concordance needed; exact object content unverified",
       "checked_at": "2026-10-03T07:54:05+00:00",
       "previous_access_evidence": "Checkpoint80: complete held catalogue pp38–39/183/196/197 visually checked. Primary Bentley discover page opened; its Search Finding Aids link returned403Forbidden. No finding-aid body/manuscript/report bytes acquired or access bypass.",
-      "metadata_url": "https://bentley.umich.edu/discover/"
+      "metadata_url": "https://bentley.umich.edu/discover/",
+      "follow_up_evidence": [
+        {
+          "checked_at": "2026-10-04T05:21:18+00:00",
+          "checkpoint": 127,
+          "finding": "Current Bentley discover page finding-aids link again403. New Clerkin2022dissertation archival-research lead recorded separately; its indexedBox4photographcitation does not confirm Yeivin currentfolder or targetbowlcontent.",
+          "evidence": {
+            "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
+            "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
+          }
+        }
+      ]
     },
     {
       "source_id": null,
@@ -607,6 +631,22 @@
       "checked_at": "2026-10-04T02:47:27+00:00",
       "metadata_url": "https://pure.rug.nl/ws/portalfiles/portal/3424478/07_litopg.pdf",
       "previous_access_evidence": "Citation independently reported in held Gordon catalogue277; university bibliography search agrees. Searches for exact author/title, JSTOR and Gallica records did not yield an accessible original edition. No paywall/HTTP-status diagnosis or complete journal absence claim."
+    },
+    {
+      "source_id": null,
+      "short_label": "Clerkin2022SeleuciaRevisited",
+      "citation": "Clerkin, Caitlin Chien. Seleucia-on-the-Tigris, Revisited. PhD dissertation, Classical Art and Archaeology, University of Michigan,2022 (primary repository indexed title page; complete body unheld).",
+      "priority": 3,
+      "status": "New archival research lead; direct repository PDF returned403 in web tool",
+      "requirement": "Permitted complete dissertation or relevant archival discussion/notes for Waterman/Kelsey/Toledo expedition documentation. Indexedfigure7-19 and printed159 suggest precise archive series and correspondence routes. Check for objectcards/fieldnumber/publication concordances; KM31455/TMA1931.455 content and bowl edition not established.",
+      "metadata_url": "https://hdl.handle.net/2027.42/172636",
+      "attempted_download_url": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/172636/cclerkin_1.pdf?isAllowed=y&sequence=1",
+      "checked_at": "2026-10-04T05:21:18+00:00",
+      "previous_access_evidence": "DirectprimaryPDF403; handleInternalError; indexedprimarytitlepage2022/author and archivalcitations only. No PDFbytes or accesscause diagnosis.",
+      "evidence": {
+        "path": "data/private/research-work/publication-routes127-2026-10-04/primary-routes.json",
+        "sha256": "6d2cbfbd5dedb5622ee26b2dd028fe1cc065b02c1c63bd93de3ffa390c3502bb"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
