@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "dd176abe1d6d05d8beb96acfb10920259b3840e9469007c9ac936cce12e62edf",
+  "corpus_digest": "d50bfdb96ec8ea7c7d6576df9edf41b140f54b28d917639e9dd2ab11b01e234d",
   "migrations": 21,
-  "note": "Checkpoint116: full provided F446 native source-copy checked; interlinear order unresolved, F447/catalogue pending;470 tests/full reader and source audits passed.",
-  "recorded_at": "2026-10-04T00:21:21+00:00",
+  "note": "Checkpoint117: F447 working native copy partial; three exact symbol gaps and final notation pass pending;470 tests/full reader/source audits passed.",
+  "recorded_at": "2026-10-04T00:59:42+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "0df99462ec5d97d39cf5439cb3853ec50428d92bb022b0f1ccdfc8b3e2e2bf39",
-      "rows": 142
+      "digest": "962e40e3a791a8b5beb18b26c6b45dc3c9f97589153674ee7f014582bf25bb41",
+      "rows": 143
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -135,15 +135,15 @@
       "rows": 22
     },
     "source_corrections": {
-      "digest": "2f6ad5ff0d1764bd6f9cf2ebb9cbbb62c25d828412e57244f5c076f8efb3a382",
-      "rows": 98
+      "digest": "7181288eecb67c2368a6f24b0b5441c7cab49ad79472999a3395b4821c722c5f",
+      "rows": 99
     },
     "source_scope_reviews": {
       "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2",
       "rows": 119
     },
     "sources": {
-      "digest": "befd29d99dc4e798838596b35eb0570d4fb55eca8c11b117eef33edb99e29589",
+      "digest": "aed7cf02a161f219dbd14ffb609d753358af0f3228303d99e2567146e5a05124",
       "rows": 970
     },
     "text_metadata_corrections": {
@@ -151,16 +151,16 @@
       "rows": 21
     },
     "text_proofreading_reviews": {
-      "digest": "f1d5e07882550f1a07f64a1028cd4060bee29e78e4d8532d2839750341afd4c1",
-      "rows": 1836
+      "digest": "3ffd6446c3d2d911fe6cac3319a5c0ba0f84a5838347f2f371d4a4f48c6c3db3",
+      "rows": 1837
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "380cfb23450a9d8dea3ae65dc6de8e0f8b47871642dab7890b5f524a3b4c33ba",
-      "rows": 2296
+      "digest": "ead6864c246105210a6e8f4edd32f1ce6b64e85d87034c4d9d3cee9eeb159c87",
+      "rows": 2297
     }
   }
 }
