@@ -1,7 +1,8 @@
 {
-  "corpus_digest": "658dd3efaf4eb9533dcbed7a6b7f04c4f139b428f63aa30a3002c82dedde3d71",
+  "corpus_digest": "d11578ff4916158ae83633f6ee52dd76dab5c8e648c3138739ebb790678a4fc0",
   "migrations": 21,
-  "recorded_at": "2026-10-04T16:08:41+00:00",
+  "note": "Checkpoint148: Gordon1941 concluded 65 catalogue units inventoried; five bounded source copies checked, nine facsimiles with two photograph plates; existing identities unchanged; pause requested at saved checkpoint.",
+  "recorded_at": "2026-10-04T16:29:04+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -10,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "7f4f2a9d296af692cfc0d0cc5f9ce080423848651c80d84375e661b22db0bab8",
-      "rows": 2959
+      "digest": "60afee945bce76baa3f44905c07d5ac6c528822e1b0a7871541eaf3e902d0fe6",
+      "rows": 2964
     },
     "appearances": {
-      "digest": "4837ab7c12507055c68b8807830e1a39d62e0fd37d34df59f4f3bc61efc44020",
-      "rows": 2959
+      "digest": "b76b15fe0ada0aa4fb6b48ec3c346ccaf60a6191e01acf9acab9063a234c54bb",
+      "rows": 2964
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -62,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "86cca9e5545c261dd3ff219f45e1324bb822824ad547bc0201e3b1e707f8804b",
-      "rows": 191
+      "digest": "ff67f2914d722e90755495a2e103e7f35afa31ad93a36488d6ae2f5d9c221eb8",
+      "rows": 192
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -82,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "8faa991bd40ac7f5a9e60ed533ef0c591fd3dd7618b100f92a244edc2f3dc649",
-      "rows": 2387
+      "digest": "02fea407108770ad3878f94e332f86757e74554bb20222c3a7efc26046b05447",
+      "rows": 2396
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -110,8 +111,8 @@
       "rows": 2271
     },
     "publication_assessments": {
-      "digest": "11bb1dffa619f301e42960a2b3f7a3c4ab5bf2fb7db9d710a80aadef314d647e",
-      "rows": 707
+      "digest": "9cf43ffccd742f24800217f6d4f1f0948f916b3d73f474530f9ce48a14154bf7",
+      "rows": 712
     },
     "publication_registry": {
       "digest": "01b59ec0b157ca417cd523761ce956306bd42dd00bcc517efab1d25106f48006",
@@ -150,16 +151,16 @@
       "rows": 33
     },
     "text_proofreading_reviews": {
-      "digest": "435e5a1c9f92122eff8ae0aa8efe81541a944f65c8ee1f7cc355b9bfc1513600",
-      "rows": 2181
+      "digest": "23a3d7d29313dd1680d26eae43487473833872806006865ebd4556aa15bbef91",
+      "rows": 2186
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "7568b347390d495138c04dd867bc23ca4e55420966968f56bc7eea0d92e26642",
-      "rows": 2634
+      "digest": "dbb2827ac8b638abfd37a6ae20c0a5e82cfe790307e71c70ece3fb6f11920008",
+      "rows": 2639
     }
   }
 }

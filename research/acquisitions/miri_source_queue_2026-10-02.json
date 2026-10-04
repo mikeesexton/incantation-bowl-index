@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T16:03:40.379389+00:00",
+  "updated_at": "2026-10-04T16:21:02.392066+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -714,7 +714,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-01",
       "sha256": "e3ffbc62793695664d2c1fb7df6ee0af4303f75b12934b233816ee23be3a07c3",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "reading_audit": "All22original article pages inspected;65source catalogue witness descriptions/references inventoried separately from identities. Five bounded searchable copies checked: Princeton Ex4283 opening1–23/closing58–60 English, three BM91725 short printed formulas. Nine facsimile assignments include BM91725/HSM8669 photograph pages. Original Louvre uncatalogued=Text6/Hilprechtd=Text3 pointers recorded;19745at339/91745at349 retained as printed same-source variant without new identity/identifier ruling. Remaining longer native, Princeton24–57/other English fragments, author corrections and structured claims pending; sourcewide partial.",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": null,
@@ -731,7 +731,26 @@
       "document_evidence": {
         "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
         "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
-      }
+      },
+      "reading_audit_history": [
+        {
+          "recorded_at": "2026-10-04T16:21:02.392066+00:00",
+          "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+          "superseded_by_checkpoint": 148
+        }
+      ],
+      "reading_updates": [
+        {
+          "checkpoint": 148,
+          "observed_at": "2026-10-04T16:21:02.392066+00:00",
+          "status": "All22original article pages inspected;65source catalogue witness descriptions/references inventoried separately from identities. Five bounded searchable copies checked: Princeton Ex4283 opening1–23/closing58–60 English, three BM91725 short printed formulas. Nine facsimile assignments include BM91725/HSM8669 photograph pages. Original Louvre uncatalogued=Text6/Hilprechtd=Text3 pointers recorded;19745at339/91745at349 retained as printed same-source variant without new identity/identifier ruling. Remaining longer native, Princeton24–57/other English fragments, author corrections and structured claims pending; sourcewide partial.",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Gordon148-2026-10-04/reading-extent-inventory.json",
+            "sha256": "a34c24be980718159cabe5836e20bcf2f6b5cd148b65003664a5290de08d3030"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-DRIVER1930-MAGICBOWL",
@@ -1569,8 +1588,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Gordon147-2026-10-04/miri-queue-before.json",
-    "sha256": "f222a426e18c15ae181a39469041379601d2b981332a44179e86b6b8784766bc"
+    "path": "data/private/research-work/Gordon148-2026-10-04/miri-queue-before.json",
+    "sha256": "9c982139e8da0b6564d71adba15d87ff62a5a213518a2328bd0495fced58f7a7"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1814,6 +1833,16 @@
     "source_id": "SRC-GORDON1941-FIRST",
     "checked_reading_rows": 9,
     "partial_reading_rows": 1,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint148_Gordon_concluded": {
+    "receipt": "research/receipts/Gordon148_original_2026-10-04.json",
+    "source_id": "SRC-GORDON1941-CONCLUDED",
+    "checked_reading_rows": 5,
+    "partial_reading_rows": 0,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
     "miri_remaining": 32,
