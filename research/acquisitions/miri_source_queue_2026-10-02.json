@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T08:27:22+00:00",
+  "updated_at": "2026-10-04T09:06:57+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -113,7 +113,7 @@
       "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
       "capture_id": "CAP-IBI-CP107-FORD2002",
       "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
-      "status": "Complete Ford article held;113checked bowlrows and40separately searchable checked nonbowl contexts; sourcewide extraction partial.",
+      "status": "Complete Ford article held;118checked bounded bowl rows and46checked searchable contextual copies. Overall extraction partial.",
       "resolved_at": "2026-10-03T19:57:24+00:00",
       "checkpoint": 107,
       "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
@@ -128,9 +128,9 @@
         "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
         "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
       },
-      "reading_audit": "Checkpoint134: all40retained source-copy-checked Ford nonbowl contexts now validated and searchable in Mike Access, with Hebrew/English content, scholarly attribution, actual locators, source hashes, separate correction/deletion notes and source-page links. They remain outside bowl reading/edition metrics and every shared/public projection. Local source-file route now accepts all registered bounded opaque CAPIDs without path traversal. Three fresh ordinary auxiliary captures reproduce earlier held bytes exactly:2005Yamauchi44pagefacsimile preview plus twoPeeterspublisherHTMLmetadata/subscription responses. Exact original capture receipts/UTCtimes/headers and actual404robots bytes/response evidence retained; zero further requests on transfer. Dedicated support for verified404transfer matches unchanged collector policy without fabricated200permission. Preview assessedexcerpt/partialbibliographic extraction; article citationonly/no body, not a complete held edition. All2502bowltexts/113Fordrows unchanged. Goal sourcewide Ford and249case audit remains incomplete.",
+      "reading_audit": "Checkpoint135: remaining MS1928/53 native/English quotation and MIT5 quoted form/expected spelling/gloss separately source-checked, five new bounded bowl rows. Six nonbowl context copies checked/searchable: HaranGawaita discontinuous native/English passages, JEN434 native/English legal comparison and DC43G12 formula pair. Prior113Fordrows/40contexts exact. All79numbered notes and18explicit bowl-designation roster inventoried from actual18pages, including blank final leaf andcross-page notes3/78. One exact earlier BM91715transcription reference at Shaked1995p215n100 added, plus four Ford source appearances, two bibliographic sources and four publication assessments. Ford reproduction only, no original-cited-source/clay/manuscript or scholarly adjudication. Overall extraction remains partial for inline dictionary/lexical/general/person/ritual/apparatus fields; inventory is not wholecase completeness.",
       "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
-      "reading_audit_checked_at": "2026-10-04T08:27:22+00:00",
+      "reading_audit_checked_at": "2026-10-04T09:06:57+00:00",
       "checkpoint126_prior_reading_audit": {
         "source_id": "SRC-FORD2002-JANES",
         "fulfilled_by_source_id": "SRC-FORD2002-JANES",
@@ -537,6 +537,10 @@
       "checkpoint134_prior_reading_audit": {
         "path": "data/private/research-work/source-contexts-134-2026-10-04/miri-queue-before.json",
         "sha256": "3a0adc93844b9e7cd49933f34c2fc5621ace30f2e93cf94b0e35176e61893f61"
+      },
+      "checkpoint135_prior_reading_audit": {
+        "path": "data/private/research-work/Ford2002-135-2026-10-04/miri-queue-before.json",
+        "sha256": "8048fa356548da773fc6ae42703d860c2a546a01d535776378c332961c5029ba"
       }
     },
     {
@@ -1163,6 +1167,51 @@
         "path": "data/private/research-work/Ford2002-133-2026-10-04/source-evidence.json",
         "sha256": "70fde402c4551d67d7e46e1374d375a3ef839f185d49de523dc3c3f7336fe6bc"
       }
+    },
+    {
+      "source_id": "SRC-A06D3C4C7CDF",
+      "short_label": "Shaked1995PeaceUponYou",
+      "citation": "Shaked, Shaul. “‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls.” JSQ 2 (1995): 197–219.",
+      "requirement": "Permitted complete JSQ2(1995),197–219; immediate215note100 contains MuellerKessler transcription BM91715:14–16 explicitly cited in Ford31–32fn3. Earlier p207/p211–213/p213 witnesses also benefit. Author profile lists title/year but no link/download for this item surfaced; no original215body obtained. Full original article needed, not another Ford copy.",
+      "priority": 2,
+      "status": "Original requested body unheld; held citation and accessible metadata distinguished",
+      "metadata_url": "https://huji.academia.edu/ShaulShaked",
+      "checked_at": "2026-10-04T09:06:57+00:00",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
+        "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
+      },
+      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
+    },
+    {
+      "source_id": "SRC-IBI-CP135-DROWER1963-DICTIONARY",
+      "short_label": "DrowerMacuch1963MandaicDictionary",
+      "citation": "Drower, E. S., and R. Macuch. A Mandaic Dictionary. Oxford: Clarendon Press, 1963.",
+      "requirement": "Permitted complete original1963dictionary, preserving copying conditions. Ford-specific exact loci17a/41a/50a/65a/131b/173b/242a–b/299b/341a/372b/383a/394b/409b/463b/474; especially reported131b omission and contested metal/tool/divination glosses. Institutional catalogue verifies bibliography only. No original dictionary body held; unofficial reposts not acquired.",
+      "priority": 3,
+      "status": "Original requested body unheld; held citation and accessible metadata distinguished",
+      "metadata_url": "https://ci.nii.ac.jp/ncid/BA17304568",
+      "checked_at": "2026-10-04T09:06:57+00:00",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
+        "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
+      },
+      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
+    },
+    {
+      "source_id": "SRC-IBI-CP135-DROWER1953-HARAN",
+      "short_label": "Drower1953HaranGawaita",
+      "citation": "Drower, E. S. The Haran Gawaita and the Baptism of Hibil-Ziwa: The Mandaic Text Reproduced Together with Translation, Notes and Commentary. Citta del Vaticano: Biblioteca Apostolica Vaticana, 1953.",
+      "requirement": "Optional permitted1953edition with native facsimile, English translation and apparatus; immediate source lines134–137/186–188, as quoted by Ford34. Those are line references, not verified page numbers. Ford pair now copied/checked separately. CAL74501online text accessible with different coordinates; source-info opening cache-missed and exact original locus/version mapping unverified. Catalogue/title pointers do not equal original-book holding.",
+      "priority": 3,
+      "status": "Original requested body unheld; held citation and accessible metadata distinguished",
+      "metadata_url": "https://cal.huc.edu/get_a_chapter.php?file=74501",
+      "checked_at": "2026-10-04T09:06:57+00:00",
+      "evidence": {
+        "path": "data/private/research-work/Ford2002-135-2026-10-04/source-evidence.json",
+        "sha256": "17265cff0e34854edda63bdba65286ffec26516402d84423d9e511b0b6f8c1b1"
+      },
+      "previous_access_evidence": "Actual held Ford page/control checked; institutional/author metadata and ordinary searches inspected. No login, purchase, contact or access-control bypass."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1179,7 +1228,7 @@
     "path": "data/private/research-work/nli-routes57-2026-10-03/acquisition-queue-before.json",
     "sha256": "41d2b43778882ba0f6f856cb8dbb858abf50044cc7d40da3fe8363d10817866b"
   },
-  "new_access_requests_checkpoint": 133,
+  "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
     "path": "data/private/manifests/held-cases44-2026-10-02/production/extraction.json",
     "sha256": "fb413f96d376d06a07ea975b0032cb2eb9f014b5aabefcdc17e604e5da573a49"
@@ -1325,5 +1374,9 @@
   "checkpoint134_private_context_registry": {
     "path": "data/private/reader/source_contexts.json",
     "sha256": "c6bf58d526948886baa09d259de21f0f97d20bc15e766a5533dcabab6bde95fd"
+  },
+  "checkpoint135_source_extraction": {
+    "path": "data/private/research-work/Ford2002-135-2026-10-04/extraction-index.json",
+    "sha256": "5a8504aa44cfc54413fa3ded317cddf16477ebb6a9faf113eca8027f87cff266"
   }
 }

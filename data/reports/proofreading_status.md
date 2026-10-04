@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1700 | 55 | 1 | 1756 | 96.8% |
+| Edition text (translation, transcription, transliteration) | 1705 | 55 | 1 | 1761 | 96.8% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1702 | 62 | 738 | 2502 | 68.0% |
+| All stored text | 1707 | 62 | 738 | 2507 | 68.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 836 | 41 | 1 | 878 |
-| transcription | 628 | 10 | 0 | 638 |
-| transliteration | 236 | 4 | 0 | 240 |
+| translation | 838 | 41 | 1 | 880 |
+| transcription | 629 | 10 | 0 | 639 |
+| transliteration | 238 | 4 | 0 | 242 |
 
 ## Edition text by source
 
@@ -76,7 +76,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Jewish Aramaic Curse Texts from Late-Antique Mesopotamia: ‘May These Curses Go Out and Flee’ (`SRC-F2BEFBEFFC2E`) | 60 | 0 | 0 | 60 |
 | Coupes à inscriptions magiques (`SRC-F42955665921`) | 1 | 1 | 0 | 2 |
 | An Aramaic Incantation Bowl from Khafaje (`SRC-FF4308945F0F`) | 1 | 0 | 0 | 1 |
-| Another Look at the Mandaic Incantation Bowl BM 91715 (`SRC-FORD2002-JANES`) | 113 | 0 | 0 | 113 |
+| Another Look at the Mandaic Incantation Bowl BM 91715 (`SRC-FORD2002-JANES`) | 118 | 0 | 0 | 118 |
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 7 | 0 | 0 | 7 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
 | Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 77 | 3 | 0 | 80 |
