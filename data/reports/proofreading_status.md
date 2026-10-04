@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 1753 | 59 | 1 | 1813 | 96.7% |
+| Edition text (translation, transcription, transliteration) | 1797 | 59 | 1 | 1857 | 96.8% |
 | Other stored text (mostly source extracts and summaries) | 2 | 7 | 737 | 746 | 0.3% |
-| All stored text | 1755 | 66 | 738 | 2559 | 68.6% |
+| All stored text | 1799 | 66 | 738 | 2603 | 69.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 858 | 41 | 1 | 900 |
+| translation | 868 | 41 | 1 | 910 |
 | transcription | 652 | 12 | 0 | 664 |
-| transliteration | 243 | 6 | 0 | 249 |
+| transliteration | 277 | 6 | 0 | 283 |
 
 ## Edition text by source
 
@@ -56,6 +56,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Aramaic Bowl Spells: Jewish Babylonian Aramaic Bowls, Volume Two (`SRC-8C611BF93288`) | 110 | 0 | 0 | 110 |
 | Aramaic Incantation Texts from Nippur (`SRC-943673B56FB8`) | 77 | 0 | 0 | 77 |
 | MS 2053/198 Incantation Bowl To Ward Against Demons (`SRC-9BE3105F3F31`) | 1 | 0 | 0 | 1 |
+| ‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls (`SRC-A06D3C4C7CDF`) | 2 | 0 | 0 | 2 |
 | ‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164) (`SRC-A08F75BDD59C`) | 7 | 0 | 0 | 7 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 1 | 0 | 2 |
 | Who Wrote the Incantation Bowls? (`SRC-A90AB34CA3FE`) | 2 | 0 | 0 | 2 |
@@ -81,6 +82,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | Notes on Some Recently Published Magic Bowls in the Schøyen Collection and Two New Parallels (`SRC-FORD2014-AUOR`) | 7 | 0 | 0 | 7 |
 | The Exorcistic Formula “Thus Is This Oath” (`SRC-FORD2025-THUS-OATH`) | 167 | 0 | 0 | 167 |
 | Aramaic Incantation Bowls (Continued) (`SRC-GORDON1941-CONTINUED`) | 77 | 3 | 0 | 80 |
+| Puzzling Words and Spellings in Babylonian Aramaic Magic Bowls (`SRC-IBI-CP131-MK1999-PUZZLING`) | 42 | 0 | 0 | 42 |
 | Ephemeris für semitische Epigraphik. Erster Band, Erstes Heft (`SRC-IBI-CP137-LIDZ-FIRST-FASCICLE`) | 10 | 2 | 0 | 12 |
 | Incantation Texts in Jewish Aramaic from Late Antiquity - A Corpus of Magic Bowls (`SRC-LEVENE2000-UCL`) | 37 | 0 | 0 | 37 |
 | Two Mandaean Incantation Bowls (`SRC-MCCULLOUGH1949-THESIS`) | 4 | 3 | 0 | 7 |

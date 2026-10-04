@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T13:31:27.592571+00:00",
+  "updated_at": "2026-10-04T14:06:09.509921+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -764,7 +764,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-04",
       "sha256": "38f97637b14546a9f663647a7559537e64be6b7b8854d3863cc2859aa65d5b09",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "reading_audit": "42 bounded bowl quotation/variant rows copied and checked across111–114; non-bowl contexts, interpretive/bibliographic audit and original cited editions still pending",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": "SRC-IBI-CP131-MK1999-PUZZLING",
@@ -784,7 +784,26 @@
       "document_evidence": {
         "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
         "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
-      }
+      },
+      "reading_audit_history": [
+        {
+          "recorded_at": "2026-10-04T14:06:09.509921+00:00",
+          "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+          "superseded_by_checkpoint": 143
+        }
+      ],
+      "reading_updates": [
+        {
+          "checkpoint": 143,
+          "observed_at": "2026-10-04T14:06:09.509921+00:00",
+          "status": "42 bounded bowl quotation/variant rows copied and checked across111–114; non-bowl contexts, interpretive/bibliographic audit and original cited editions still pending",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/supplied-comparatives143-2026-10-04/reading-extent-inventory.json",
+            "sha256": "7ea80ac0e2fc74eb574b9807acc419719757a96b06cb4347a57d5a0fd8d1a5d3"
+          }
+        }
+      ]
     },
     {
       "source_id": "SRC-IBI-CP132-MK2001-BM",
@@ -822,7 +841,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-14",
       "sha256": "4eccaa13aacd1a56a8ea8e2bf49ba2b17c0e65e7688b06ee266a841f8684defb",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+      "reading_audit": "Own BM91715 Latin/English pair215note100 copied/checked; remaining197–219 article bowl editions and contexts pending",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": "SRC-A06D3C4C7CDF",
@@ -842,7 +861,26 @@
       "document_evidence": {
         "path": "data/private/research-work/supplied141-2026-10-04/document-evidence.json",
         "sha256": "904e13f860822eacedbdd7012a68987c9885dd86659df2d9387a52ffafa93a7e"
-      }
+      },
+      "reading_audit_history": [
+        {
+          "recorded_at": "2026-10-04T14:06:09.509921+00:00",
+          "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
+          "superseded_by_checkpoint": 143
+        }
+      ],
+      "reading_updates": [
+        {
+          "checkpoint": 143,
+          "observed_at": "2026-10-04T14:06:09.509921+00:00",
+          "status": "Own BM91715 Latin/English pair215note100 copied/checked; remaining197–219 article bowl editions and contexts pending",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/supplied-comparatives143-2026-10-04/reading-extent-inventory.json",
+            "sha256": "7ea80ac0e2fc74eb574b9807acc419719757a96b06cb4347a57d5a0fd8d1a5d3"
+          }
+        }
+      ]
     }
   ],
   "remaining_acquisition_requests": [
@@ -1433,8 +1471,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Driver-original142-2026-10-04/miri-queue-before.json",
-    "sha256": "382b6ab65709715f839b3046a2763d2938f0a4a7901d57a8970e965b1834feca"
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/miri-queue-before.json",
+    "sha256": "005e6496b18b0827ad816b8dfdeb7edc23bec4ef55f684ef54fcf302a0012376"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1626,6 +1664,18 @@
     "receipt": "research/receipts/Driver142_original_2026-10-04.json",
     "source_id": "SRC-DRIVER1930-MAGICBOWL",
     "checked_own_english_columns": 3,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint143_comparatives": {
+    "receipt": "research/receipts/comparatives143_original_2026-10-04.json",
+    "source_ids": [
+      "SRC-IBI-CP131-MK1999-PUZZLING",
+      "SRC-A06D3C4C7CDF"
+    ],
+    "checked_reading_rows": 44,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
     "miri_remaining": 32,

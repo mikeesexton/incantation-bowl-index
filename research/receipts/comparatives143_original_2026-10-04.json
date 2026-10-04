@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "checkpoint": 143,
+  "created_at": "2026-10-04T14:06:09.509921+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "1c57185f1a5ec03e5e0c768d71df7d8b50124b6ad36be4aca9a763704978f8e4",
+  "corpus_after": "8ac558e87e4bb67fc8e2e2634a7990006c4ac71adc2fffa9853bc19b9adf9af5",
+  "table_changes": {
+    "objects": 2,
+    "appearances": 12,
+    "appearance_object_links": 12,
+    "texts": 44,
+    "media": 15,
+    "publication_assessments": 12,
+    "text_proofreading_reviews": 46,
+    "document_assessments": 2,
+    "source_corrections": 2,
+    "sources": 0,
+    "text_metadata_corrections": 2
+  },
+  "scope": "Checkpoint143:44 bounded original-article quotation/translation/variant rows source-checked,42 from Müller-Kessler1999 and2 from Shaked1995p215note100. Twelve source appearances/publication assessments and15 full-page image assignments added. Own collations, reported earlier readings and starred lexical reconstructions retained separately; no adjudication. Two previously unrepresented source-scoped candidates, FitzwilliamE.2-1907 andLouvreAO2099, added without inferred crosswalks/merges. Two stale source access notes repaired with immutable history; one proposed Mandaic lexical model reclassified and check renewed. Sourcewide extraction partial. Driver Hebrew-letter editorial marks remain pending; original English/photo retained. No whole-case completion or public-rights approval.",
+  "new_text_rows": 44,
+  "new_checked_readings": 44,
+  "new_partial_readings": 0,
+  "new_appearances": 12,
+  "new_publication_assessments": 12,
+  "new_document_assessments": 2,
+  "new_claim_rows": 0,
+  "new_media": 15,
+  "new_objects": 2,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 2,
+  "new_text_metadata_ledger_repairs": 2,
+  "new_proofreading_reviews": 46,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2603,
+  "total_media": 2327,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2264,
+  "total_identities": 1912,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 76,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/comparatives143_readings_2026-10-04.jsonl",
+      "sha256": "25d177a39d70e0e3cced783dc047963b191cdc862ead724f7672751a1d3b464b",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/comparatives143_publication_2026-10-04.json",
+      "sha256": "1b9c5d99d02d2eeeee9d566032bbcb3e0d4df3eee154de0e038d92405e2509be",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/comparatives143_mk_proofreading_2026-10-04.json",
+      "sha256": "86e72ed132a91758f377a8c00982f66e5e3951756e82446af3b00ca462520f5b",
+      "current_replay": "expected_stale_rejection"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/comparatives143_shaked_proofreading_2026-10-04.json",
+      "sha256": "93b833e6b5e57f04493a2a1b4a0e05f9e9250dad01e5bf7a9faa3f2f5ebfac87",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/comparatives143_documents_2026-10-04.json",
+      "sha256": "cf9d9bda5c2d557c186d5c30fefbc760766e7831669697995edaf4dd33902e9a",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-source-corrections",
+      "path": "data/private/manifests/comparatives143_source_corrections_2026-10-04.json",
+      "sha256": "fb7340edf1d0f4c06f6224fbf3df7ed4baa1412e68e9674ce4d1700361f85109",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/comparatives143_text_metadata_2026-10-04.json",
+      "sha256": "74d10c369f0753d943e1963ff591f609c5d7753d27fe2082f6f47c0ab9ed07c1",
+      "current_replay": "expected_stale_rejection"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/comparatives143_mandaic_model_recheck_2026-10-04.json",
+      "sha256": "ee36837163b3b6ddd7c81059655d2fa46c12522cd1ab0ef698d15d038b09efc7",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/comparatives143_mk_current_checks_2026-10-04.json",
+      "sha256": "49c81695c7a80c1255bb0d58b3664fdb6f73ed0b9d0b80e6e368c808943f4f43",
+      "current_replay": "expected_stale_rejection"
+    },
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/comparatives143_locator_metadata_2026-10-04.json",
+      "sha256": "64e3eda75d6103472a2d7e582a0191f0708bb8c8119c98a62657c656ee146091",
+      "current_replay": "expected_stale_rejection"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/comparatives143_restored_ayin_recheck_2026-10-04.json",
+      "sha256": "d3f031cd9f94d62a870be8552128bb99ec00dd387495448f8fa3e2b201c76e02",
+      "current_replay": "unchanged"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/comparatives143_mk_final_checks_2026-10-04.json",
+      "sha256": "357a0dafbf9006e2f5e4daa072b5135c42ff705a890653e858c3f1b1ff9594a8",
+      "current_replay": "unchanged"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/source-evidence.json",
+    "sha256": "45bfcff92260bd9febdd44b25d860e1595e81f231a845bce7d58cfbc1545a8fa"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/reading-extent-inventory.json",
+    "sha256": "7ea80ac0e2fc74eb574b9807acc419719757a96b06cb4347a57d5a0fd8d1a5d3"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/page-derivatives.json",
+    "sha256": "1b33d9d998967f39ceed3f9fd147b6419b72a77beca1f55d1a8268b886c1730d"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/campaign_case_progress_checkpoint143.json",
+    "sha256": "0267c91f58eebc3ef0691ec1e11c904124093e1171c1941b959530d963f3fea3"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/held_pdf_inventory_checkpoint143.json",
+    "sha256": "74879175b95d363e45f54526d012fd3b28fda0d9007667ac4a7bb743fc053994"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/non_pdf_holdings_checkpoint143.json",
+    "sha256": "e9a2274a82557ddeb59a92c70a42a5e1e434588949ed78b949627a7cb4d241c3"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/supplied-comparatives143-2026-10-04/intake-verification.json",
+    "sha256": "43b4aae3e972ee447842c82774dfd13754b7258c34fde00ae38c5c0663b1be63"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2603,
+    "all_media_assignments_verified": 2327,
+    "all_local_image_hashes_verified": 1416,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1912,
+    "all39tables_exact": true,
+    "all_prior_rows_retained_or_snapshotted": true,
+    "eight_current_manifest_replays_unchanged": true,
+    "four_historical_stale_rejections_unchanged": true,
+    "all44current_copy_checks": true,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 15,
+    "unique_rendered_pages": 5,
+    "reports_regenerated": 7
+  },
+  "limits": "All44checks verify copies of bounded printed quotations, not entire inscriptions, cited editions or clay. Starred reconstruction, lexical model and earlier variants remain explicitly attributed in locators/review evidence. Sourcewide extraction partial; Driver Hebrew-character dotted/overbarred/erased material remains pending. No uncertain merge, scholarly adjudication, current no-edition conclusion or public rights decision.",
+  "diagnostics": "Unimported first drafts corrected at final glyph inspection; earlier drafts retained. Proposed model language and one explanatory locator sign corrected with immutable metadata history and renewed checks. Eight current manifest replays unchanged; four superseded-history replays safely rejected without changes. All39trial/productiontables exact. No reset/deploy/push/purchase/outbound message/Watermanretry.",
+  "closed_at": "2026-10-04T14:11:29.506207+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0143_original_comparative_quotations_and_variants.json",
+    "sha256": "0a839a5fd187fea2f7e64f9c05f3dee827ef7b39f9edf0025bdf99ec438bbd01"
+  }
+}
