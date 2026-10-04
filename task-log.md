@@ -25,6 +25,29 @@ the dated reports under `data/reports/`.
 
 ---
 
+## 2026-10-04 — Claude Code — Market ledger and auction monitor
+
+**Claimed:** DISC-004 (new: track the incantation-bowl market, Mike's request).
+**Corpus:** unchanged (read-only throughout) — state digest `b2912f0667b0`, matching Codex's checkpoint129.
+**Tests:** full suite passing (427, including new `test_market`, `test_market_monitor` and a Market-page test in `test_mike_access`).
+
+- Mike asked to continue Cowork's "auction tracker". No Cowork files exist; the
+  background was the 4 September auction/market sweeps already in the corpus.
+  Mike chose ledger then monitor, Mike Access only.
+- Ledger: `src/bowl_index/market.py`, `ibi report-market` → `data/private/reports/market_ledger.{md,json}`
+  (ignored). One row per offer/sale event; prices verbatim; repeat appearances need
+  two dates or two reported houses. Mike Access build adds `market.html` and a nav link.
+  Now: 53 listings, 46 bowls, 29 houses, 3 bowls on the market more than once.
+- Monitor: `src/bowl_index/market_monitor.py`, `scripts/run_market_monitor.py`,
+  registry `config/market_monitors.json` (lead-only, robots re-checked per run,
+  fail-closed, relevance filter, kill switch). Only the-saleroom enabled; 14 other
+  platforms checked and excluded with reasons. One live pass: 1 lead, 0 corpus writes.
+  Output under `data/private/monitoring/market/`.
+- Not done: no scheduling (needs Mike's go-ahead; OPS-003/004), no lead ingested,
+  no deploy. `.claude/launch.json` (ignored) serves `site/mike-build` on 8766 for previews.
+- Next: review the Apollo lot 1419 lead (already recorded as three bowls); chase the 9
+  sales without a price; find server-rendered endpoints for Bidspirit/TimeLine/Artemis.
+
 ## 2026-10-04 — Codex — Ford 2002 synoptic and lexical readings, checkpoint129
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; active research Goal).

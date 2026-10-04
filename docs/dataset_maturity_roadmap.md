@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-04T06:07:06+00:00`
+Generated: `2026-10-04T06:12:23+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Strong foundation in active use; building a checked research co
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 27 done · 30 in progress · 10 queued · 0 blocked |
+| Roadmap tasks | 27 done · 31 in progress · 10 queued · 0 blocked |
 | Quantitative handoff gates passing | 3/6 |
 | Required handoff tasks complete | 10/24 |
 
@@ -322,6 +322,9 @@ Maintain maximum-recall discovery across scholarship, catalogues, museums, aucti
 - [ ] **DISC-003 — Classify recurring discovery sources for automation** · In progress · Research
   - Done when: Every monitored source has a documented endpoint, cadence, access/robots status, expected identifier, and automation tier.
   - Evidence/status: The LOC review established the first source-class distinction: open digital resources, onsite-only digital Stacks records, physical books, and microform require different automation and access handling. Two live repository pilots succeeded without automatic merges: Wohlstein through repository metadata and Gordon through the Czech Academy Kramerius API. On 26 September a reviewed registry classified six monitored source groups: Kramerius, LOC priority catalog records, one LOC open digital-book route, OpenAlex, Crossref, and the Met API. It records endpoint, cadence, access and robots status, stable identifiers and lead-only automation tier. A thirteen-request Mac mini baseline completed with thirteen HTTP 200 responses and no corpus writes. The 14-day run and any broader source registry remain incomplete, so broad unattended collection stays out of scope. Checkpoint107: five suppliedPDFs archived/exactworkscopes; stablemanifestdepositCLI,6captures/2distinctworks/5metadatarepairs/6completeworkassessments. Miri15resolved/21remaining. Waterman1931printed61–62readinborrowedChromeviewer; fullPDF/accessionbridgestillunheld. Readingcapture/checkspending. Receipt research/receipts/five_docs107_audit_2026-10-03.json.
+- [ ] **DISC-004 — Track the incantation-bowl market** · In progress · Research
+  - Done when: A private Mike Access market ledger lists every recorded offer and sale by physical identity with its source, locator, date, recorded price wording and gaps, and a reviewed lead-only monitor reports new auction and dealer listings without corpus writes.
+  - Evidence/status: Opened 2026-10-04 by Claude Code at Mike's request (docs/market_tracker.md). Ledger built: ibi report-market writes a private ledger (data/private/reports/) and Mike Access gains a Market page; 53 listings of 46 bowls from 29 houses and dealers, 3 bowls on the market on more than one occasion, 9 recorded sales without a price, 24 undated listings. Monitor built: scripts/run_market_monitor.py with reviewed registry config/market_monitors.json, lead-only, robots re-checked each run and failing closed. Only the-saleroom is enabled; LiveAuctioneers, Invaluable, Bidsquare and iCollector disallow search, Catawiki and Kedem robots return 403, and Barnebys, Bonhams and Christie's render results client-side. First live pass: one lead (Apollo lot 1419, flagged as a possible match to a recorded bowl), no corpus writes. Not scheduled; unattended runs need Mike's go-ahead and belong with OPS-003/OPS-004. Market prices stay in Mike Access only; a sale record does not legitimize ownership, export history or authenticity.
 
 ### CONC — Identity and museum concordances
 

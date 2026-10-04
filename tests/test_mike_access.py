@@ -66,6 +66,16 @@ class MikeAccessBuildTests(unittest.TestCase):
         self.assertGreaterEqual(len(barakat_media), 5)
         self.assertTrue(all(row["url"] for row in barakat_media))
 
+    def test_market_ledger_is_private_and_linked(self):
+        page = (build.OUT / "market.html").read_text(encoding="utf-8")
+        ledger = json.loads((build.OUT / "data" / "market.json").read_text(encoding="utf-8"))
+        self.assertEqual(ledger["audience"], "Mike alone")
+        self.assertIn("noindex, nofollow", page)
+        self.assertIn("does not establish lawful ownership", " ".join(page.split()))
+        self.assertEqual(page.count("<tr><td"), ledger["metrics"]["listings"])
+        self.assertIn('href="market.html"',
+                      (build.OUT / "index.html").read_text(encoding="utf-8"))
+
     def test_snapshot_audit_passes(self):
         snapshot = json.loads(
             (build.OUT / "private-snapshot.json").read_text(encoding="utf-8"))

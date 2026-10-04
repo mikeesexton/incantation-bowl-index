@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "lead_only": true,
+  "reviewed_at": "2026-10-04",
+  "reviewed_by": "Claude Code (DISC-004)",
+  "settings": {
+    "user_agent": "IncantationBowlIndexResearch/0.2 (+noncommercial scholarly monitoring; metadata only)",
+    "timeout_seconds": 30,
+    "max_response_bytes": 3145728,
+    "delay_seconds": 10
+  },
+  "search_terms": [
+    "incantation bowl",
+    "devil trap bowl",
+    "demon trap bowl",
+    "syriac bowl",
+    "aramaic bowl",
+    "mandaic bowl"
+  ],
+  "sources": [
+    {
+      "id": "the-saleroom",
+      "name": "the-saleroom.com (Auction Technology Group)",
+      "enabled": true,
+      "parser": "the_saleroom",
+      "search_url": "https://www.the-saleroom.com/en-gb/search-results?searchTerm={term}",
+      "cadence": "weekly",
+      "robots": "search-results allowed for this user agent on 2026-10-04; re-checked every run",
+      "covers": "Live and timed sales of many UK and European houses, including Apollo Art Auctions and TimeLine Auctions.",
+      "expected_identifier": "platform lot UUID; house lot number",
+      "limits": "Reads the first results page only (60 lots); later pages are flagged in the receipt, not fetched. Search is fuzzy, so only lots whose title or teaser names incantation, devil/demon trap, Aramaic, Mandaic, Syriac or magic bowls become leads. Sale dates lack a year."
+    }
+  ],
+  "excluded": [
+    {"platform": "LiveAuctioneers", "checked_at": "2026-10-04", "reason": "robots.txt disallows search for this user agent"},
+    {"platform": "Invaluable", "checked_at": "2026-10-04", "reason": "robots.txt disallows search for this user agent"},
+    {"platform": "Bidsquare", "checked_at": "2026-10-04", "reason": "robots.txt disallows search for this user agent"},
+    {"platform": "iCollector", "checked_at": "2026-10-04", "reason": "robots.txt disallows search for this user agent"},
+    {"platform": "Catawiki", "checked_at": "2026-10-04", "reason": "robots.txt returned HTTP 403; permission cannot be verified"},
+    {"platform": "Kedem Auction House", "checked_at": "2026-10-04", "reason": "robots.txt returned HTTP 403; permission cannot be verified"},
+    {"platform": "Apollo Art Auctions (own site)", "checked_at": "2026-10-04", "reason": "TLS connection failed; its lots are covered through the-saleroom"},
+    {"platform": "Barnebys", "checked_at": "2026-10-04", "reason": "search allowed, but results load client-side; the server page ignores the query"},
+    {"platform": "Bonhams", "checked_at": "2026-10-04", "reason": "search allowed, but results load client-side"},
+    {"platform": "Christie's", "checked_at": "2026-10-04", "reason": "results come from an internal keyed API, not a reviewed public endpoint"},
+    {"platform": "Sotheby's", "checked_at": "2026-10-04", "reason": "search redirects (HTTP 307); 15-second crawl delay; not yet reviewed"},
+    {"platform": "Hindman", "checked_at": "2026-10-04", "reason": "search returned HTTP 429 to a single request"},
+    {"platform": "Bidspirit, Lot-tissimo, TimeLine (own site)", "checked_at": "2026-10-04", "reason": "search allowed, but the guessed search URL returned no results; endpoint not yet identified"},
+    {"platform": "Artemis Gallery, Hixenbaugh, Drouot, Trocadero", "checked_at": "2026-10-04", "reason": "guessed search URL returned 404; endpoint not yet identified"}
+  ]
+}

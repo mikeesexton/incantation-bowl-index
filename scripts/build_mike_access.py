@@ -19,7 +19,10 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+from html import escape
+
 from bowl_index.db import PROJECT_ROOT
+from bowl_index.market import market_ledger
 from bowl_index.private_captures import ARCHIVE_ROOT, capture_filename, capture_inventory, checked_capture_path
 from bowl_index.private_projection import PrivateResearchProjection, private_manifest
 from bowl_index.projection import PROJECTION_COLUMNS
@@ -214,6 +217,10 @@ def main() -> None:
         + BASE_RULES + "\n" + (WEB / "reading.css").read_text(encoding="utf-8"),
         encoding="utf-8",
     )
+    ledger = market_ledger(conn, monitor_dir=ROOT / "data" / "private" / "monitoring" / "market")
+    (OUT / "data" / "market.json").write_text(
+        json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
+    (OUT / "market.html").write_text(market_page(ledger, generated_at), encoding="utf-8")
     shutil.copy2(WEB / "reading.js", OUT / "reading.js")
     shutil.copytree(WEB / "fonts", OUT / "fonts")
     (OUT / "index.html").write_text(
@@ -266,7 +273,8 @@ SHELL = """<!doctype html>
   <strong><span class="preview-seal" aria-hidden="true">&#x10840;</span>Bowlam</strong>
 <small>Mike Access &middot; structured personal research bank</small>
 <nav aria-label="Mike Access sections"><a href="#/explore">Explore</a> &middot;
-  <a href="#/scholarship">Scholarship and source files</a></nav>
+  <a href="#/scholarship">Scholarship and source files</a> &middot;
+  <a href="market.html">Market</a></nav>
 </header>
 <main><section id="explore-view" class="reading-room" aria-labelledby="explore-title"></section></main>
 <footer class="preview-foot">
@@ -293,6 +301,145 @@ SHELL = """<!doctype html>
     addEventListener("hashchange", go); go();
   });
 </script>
+</body>
+</html>
+"""
+
+
+MARKET_CSS = """
+.market { padding: 1.5rem clamp(1rem, 4vw, 2.5rem) 2rem; max-width: 72rem; }
+.market h1 { font: 600 1.6rem/1.2 var(--serif); margin: 0 0 .4rem; }
+.market h2 { font: 600 1.15rem/1.3 var(--serif); margin: 2rem 0 .6rem; }
+.market h3 { font: 600 1rem/1.3 var(--serif); margin: 1.2rem 0 .3rem; }
+.market .lede { color: var(--brownink-soft); max-width: 62ch; margin: 0 0 1rem; }
+.market-table-wrap { overflow-x: auto; }
+.market table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+.market th, .market td { text-align: left; vertical-align: top; padding: .45rem .6rem;
+  border-bottom: 1px solid var(--clay-line); }
+.market th { font-weight: 600; color: var(--brownink-soft); white-space: nowrap; }
+.market td.when { white-space: nowrap; }
+.market .status { white-space: nowrap; }
+.market .status-upcoming { color: var(--lapis); font-weight: 600; }
+.market ul { padding-left: 1.2rem; margin: .2rem 0; }
+.market li { margin: .2rem 0; }
+.market .muted { color: var(--brownink-soft); }
+"""
+
+
+def market_page(ledger, generated_at):
+    """Mike-only market ledger page. Rows say what each source reports."""
+    m = ledger["metrics"]
+    h = lambda value: escape(str(value)) if value not in (None, "") else "—"
+
+    def bowl(row):
+        key = row["identity_id"]
+        name = h(row["display_name"] or row["object_id"])
+        return '<a href="index.html#/explore/%s">%s</a>' % (escape(key), name) if key else name
+
+    def when(row):
+        if row["date"]:
+            return h(row["date"])
+        return "seen %s" % h(row["observed_at"][:10]) if row["observed_at"] else "—"
+
+    def price(row):
+        return h("; ".join(c["value"] for c in row["claims"] if c["field"].startswith("sale_")))
+
+    def where(row):
+        text = h(row["locator"])
+        return '<a href="%s" rel="noreferrer">%s</a>' % (escape(row["url"]), text) if row["url"] else text
+
+    rows = "\n".join(
+        '<tr><td class="when">%s</td><td>%s</td><td>%s</td>'
+        '<td class="status status-%s">%s</td><td>%s</td><td>%s</td></tr>' % (
+            when(r), h(r["house"]), bowl(r), escape(r["status"]), h(r["status_label"]),
+            price(r), where(r))
+        for r in ledger["listings"])
+    histories = "\n".join(
+        '<h3><a href="index.html#/explore/%s">%s</a></h3><ul>%s</ul>' % (
+            escape(item["identity_id"]), h(item["display_name"] or item["identity_id"]),
+            "".join("<li>%s · %s · %s — %s</li>" % (
+                h(e["start_date"] or "undated"), h(e["event_type"]),
+                h(e["actor"] or e["place"]), h(e["details"])) for e in item["events"]))
+        for item in ledger["repeat_identities"]) or '<p class="muted">None yet.</p>'
+    gaps = ledger["gaps"]
+    no_price = ", ".join(
+        "%s (%s)" % (bowl(r), h(r["house"])) for r in gaps["sold_without_price"]) or "none"
+    leads = ", ".join(
+        "%s (%s)" % (h(lead["description"][:90]), h(lead["status"]))
+        for lead in gaps["open_auction_leads"]) or "none"
+    upcoming = m["by_status"].get("upcoming", 0)
+    return MARKET_PAGE.format(
+        css=MARKET_CSS, generated=escape(generated_at),
+        summary="%d listings of %d bowls from %d houses and dealers. %d upcoming; "
+                "%d recorded as sold, %d of them with a price." % (
+                    m["listings"], m["identities"], m["houses"], upcoming,
+                    m["by_status"].get("sold", 0) + m["by_status"].get("sold_no_price", 0),
+                    m["by_status"].get("sold", 0)),
+        rows=rows, histories=histories, no_price=no_price, leads=leads,
+        monitor=monitor_section(ledger["monitor_leads"], bowl_link=lambda key: escape(key)),
+        undated=m["undated"])
+
+
+def monitor_section(leads, bowl_link):
+    """Unreviewed lots from the listing monitor, shown above the ledger."""
+    if not leads:
+        return ""
+    h = lambda value: escape(str(value)) if value not in (None, "") else "—"
+    items = []
+    for lead in leads:
+        match = lead.get("possible_match")
+        note = ""
+        if match and match.get("identity_id"):
+            note = ' <span class="muted">· possibly <a href="index.html#/explore/%s">%s</a> (%s)</span>' % (
+                bowl_link(match["identity_id"]), h(match["identity_id"]), h(match["basis"]))
+        items.append('<li><a href="%s" rel="noreferrer">%s</a> · %s · estimate %s '
+                     '<span class="muted">· seen %s</span>%s</li>' % (
+                         escape(lead["url"]), h(lead["description"]),
+                         h(lead.get("sale_date_text") or "date not shown"),
+                         h(lead.get("estimate")), h(lead["observed_at"][:10]), note))
+    return ("<h2>New listings awaiting review</h2>\n<p class=\"lede\">Found by the listing "
+            "monitor and not yet checked or recorded.</p>\n<ul>%s</ul>" % "".join(items))
+
+
+MARKET_PAGE = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bowlam — Market</title>
+<link rel="stylesheet" href="mike.css">
+<style>{css}</style>
+</head>
+<body>
+<header class="preview-bar">
+  <strong><span class="preview-seal" aria-hidden="true">&#x10840;</span>Bowlam</strong>
+<small>Mike Access &middot; market ledger</small>
+<nav aria-label="Mike Access sections"><a href="index.html#/explore">Explore</a> &middot;
+  <a href="index.html#/scholarship">Scholarship and source files</a> &middot;
+  <a href="market.html" aria-current="page">Market</a></nav>
+</header>
+<main class="market">
+<h1>Market</h1>
+<p class="lede">{summary} Prices keep each source's wording and currency. A recorded
+sale does not establish lawful ownership, export history or authenticity.</p>
+{monitor}
+<h2>Listings, newest first</h2>
+<div class="market-table-wrap"><table>
+<thead><tr><th>Date</th><th>House</th><th>Bowl</th><th>Status</th><th>Price wording</th><th>Lot or record</th></tr></thead>
+<tbody>
+{rows}
+</tbody></table></div>
+<h2>Bowls on the market more than once</h2>
+{histories}
+<h2>Gaps to chase</h2>
+<p><strong>Recorded as sold, no price:</strong> {no_price}</p>
+<p><strong>Listings without a sale date:</strong> {undated}</p>
+<p><strong>Open auction leads:</strong> {leads}</p>
+</main>
+<footer class="preview-foot">
+  <p>Private research access for Mike alone. Built {generated}.</p>
+</footer>
 </body>
 </html>
 """

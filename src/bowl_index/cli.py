@@ -34,6 +34,7 @@ from .rights import apply_rights_batch
 from .public_export import export_public
 from .publication import apply_publication_batch, publication_metrics
 from .acquisitions import write_acquisition_report
+from .market import write_market_report
 from .scholarship import apply_scope_batch
 from .publications import apply_publication_registry, publication_object_counts
 from .publication_assessments import apply_publication_assessments
@@ -147,6 +148,8 @@ def build_parser():
     cohort.add_argument("--destination", default=str(PROJECT_ROOT / "data/reports/montgomery_cohort_current.md"))
     acq = sub.add_parser("report-acquisitions", help="what we hold and what we still need to read")
     acq.add_argument("--destination", default=str(PROJECT_ROOT / "data/reports/acquisition_status.md"))
+    market = sub.add_parser("report-market", help="write the private Mike-only market ledger")
+    market.add_argument("--destination", default=str(PROJECT_ROOT / "data/private/reports/market_ledger.md"))
     public = sub.add_parser("export-public", help="write a narrow media-gated reference scaffold, without publishing")
     public.add_argument("--destination", required=True)
     conflict_report = sub.add_parser(
@@ -403,6 +406,10 @@ def main(argv=None):
         print(json.dumps(write_montgomery_cohort(conn, args.register, args.destination), indent=2, sort_keys=True))
     elif args.command == "report-acquisitions":
         print(json.dumps(write_acquisition_report(conn, args.destination), indent=2, sort_keys=True))
+    elif args.command == "report-market":
+        print(json.dumps(write_market_report(
+            conn, args.destination, monitor_dir=PROJECT_ROOT / "data/private/monitoring/market"),
+            indent=2, sort_keys=True))
     elif args.command == "export-public":
         print(json.dumps(export_public(conn, args.destination), indent=2, sort_keys=True))
     elif args.command == "report-conflicts":
