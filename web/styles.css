@@ -299,6 +299,8 @@ h1 { margin-top: .16rem; font-size: clamp(1.85rem, 3vw, 2.55rem); letter-spacing
 .market-list { margin: .2rem 0; padding-left: 1.2rem; }
 .market-list li { margin: .25rem 0; }
 .market-muted { color: var(--muted); }
+.market-outcome { font-weight: 650; }
+.market-outcome-sold { color: var(--ok-ink); }
 .section-empty { padding: 1.4rem; border: 1px dashed var(--line-dark); background: var(--surface-alt); color: var(--muted); text-align: center; font-size: .8rem; }
 
 /* Enrichment */

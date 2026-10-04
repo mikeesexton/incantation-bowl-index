@@ -389,6 +389,13 @@ def market_page(ledger, generated_at):
         undated=m["undated"])
 
 
+OUTCOME_LABELS = {
+    "sold": "sold", "passed": "passed (unsold)", "ended_other": "ended",
+    "pending": "result pending", "unavailable": "result page no longer public",
+    "not_shown": "result never shown", "unrecognized": "page not recognised",
+}
+
+
 def monitor_section(leads, bowl_link):
     """Unreviewed lots from the listing monitor, shown above the ledger."""
     if not leads:
@@ -401,11 +408,17 @@ def monitor_section(leads, bowl_link):
         if match and match.get("identity_id"):
             note = ' <span class="muted">· possibly <a href="index.html#/explore/%s">%s</a> (%s)</span>' % (
                 bowl_link(match["identity_id"]), h(match["identity_id"]), h(match["basis"]))
-        items.append('<li><a href="%s" rel="noreferrer">%s</a> · %s · estimate %s '
+        result = lead.get("result") or {}
+        outcome = ""
+        if result.get("outcome"):
+            outcome = " · <strong>%s</strong>" % h(OUTCOME_LABELS.get(result["outcome"], result["outcome"]))
+            if result["outcome"] == "sold" and result.get("hammer_text"):
+                outcome += " · hammer %s before premium" % h(result["hammer_text"])
+        items.append('<li><a href="%s" rel="noreferrer">%s</a> · %s · estimate %s%s '
                      '<span class="muted">· seen %s</span>%s</li>' % (
                          escape(lead["url"]), h(lead["description"]),
-                         h(lead.get("sale_date_text") or "date not shown"),
-                         h(lead.get("estimate")), h(lead["observed_at"][:10]), note))
+                         h(result.get("sale_at_text") or lead.get("sale_date_text") or "date not shown"),
+                         h(lead.get("estimate")), outcome, h(lead["observed_at"][:10]), note))
     return ("<h2>New listings awaiting review</h2>\n<p class=\"lede\">Found by the listing "
             "monitor and not yet checked or recorded.</p>\n<ul>%s</ul>" % "".join(items))
 

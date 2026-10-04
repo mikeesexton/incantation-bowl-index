@@ -315,9 +315,16 @@ def write_market_report(conn, destination, today=None, monitor_dir=None):
         L.append("None.")
     for lead in ledger["monitor_leads"]:
         match = lead.get("possible_match")
-        L.append("- %s · %s · estimate %s · seen %s%s — %s" % (
-            lead["description"], lead.get("sale_date_text") or "date not shown",
-            lead.get("estimate") or "not shown", lead["observed_at"][:10],
+        result = lead.get("result") or {}
+        outcome = ""
+        if result.get("outcome"):
+            outcome = " · " + result["outcome"].replace("_", " ")
+            if result["outcome"] == "sold" and result.get("hammer_text"):
+                outcome += " (hammer %s, before premium)" % result["hammer_text"]
+        L.append("- %s · %s · estimate %s%s · seen %s%s — %s" % (
+            lead["description"], result.get("sale_at_text") or lead.get("sale_date_text")
+            or "date not shown", lead.get("estimate") or "not shown", outcome,
+            lead["observed_at"][:10],
             " · possibly %s (%s)" % (match["identity_id"] or match["object_id"], match["basis"])
             if match else "", lead["url"]))
     L.append("")

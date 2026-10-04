@@ -1,3 +1,24 @@
+## 2026-10-04 — Claude Code — Daily market monitor and after-sale results
+
+**Claimed:** DISC-004 (continuing, Mike's request).
+**Corpus:** unchanged (monitor writes only under `data/private/monitoring/market/`).
+**Tests:** full suite passing (458) plus JS unit tests; new `tests/test_robots.py`.
+
+- Daily LaunchAgent `config/launchd/org.incantation-bowl-index.market-monitor.plist`
+  (06:40 local, not at login) installed in `~/Library/LaunchAgents/` and bootstrapped
+  at Mike's explicit request; one `launchctl kickstart` run exited 0.
+- After-sale results: each lead's lot page is read once for its sale time, then at
+  sale +6h, +1d, +3d, +7d, +14d; records sold (hammer, before premium), passed,
+  unavailable or not_shown in `results/*.jsonl`. Redirects followed by hand, only
+  where robots.txt allows. Shown in the console Market tab, static page and report.
+- Found and fixed for the monitor: `urllib.robotparser` ignores `*`/`$` wildcards,
+  so the-saleroom's `*/archivelot*` rule never matched. New `bowl_index.robots`.
+  `archive.py` (`ibi capture`) still uses robotparser — flagged as a separate task.
+- Unverified: no real closed lot page observed yet. Apollo lot 1419 (sale 04 Oct
+  12:00Z) still read as not ended at 16:10Z; next check 05 Oct.
+- Noted, not changed: Codex commit `277e901` dropped this file's header block
+  (title, newest-first rule, entry format).
+
 ## 2026-10-04 — Codex — Gordon1941 first installment editions, checkpoint147
 
 **Workstream:** TEXT-004, TEXT-009, TEXT-010; active authorized Goal. Claimed before intake; original opening clean/match checkpoint146 `b4858fa`, corpus5e1228e1…94299. Concurrent Market and daily-audit commits2013dca/a091d18 inspected; they retain the same corpus baseline. Current nine-table drift fully accounted for by this session's manifest intake. Previous Goal turn progress, no repeated whole-Goal blocker.

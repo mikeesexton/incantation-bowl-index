@@ -1,7 +1,8 @@
 import json, tempfile, unittest
 from pathlib import Path
 from bowl_index.market_monitor import (
-    monitor_leads, parse_the_saleroom, possible_match, known_listing_index, run_market_monitor,
+    monitor_leads, parse_the_saleroom, parse_the_saleroom_lot, possible_match,
+    known_listing_index, run_market_monitor,
 )
 
 LOT = "370508bd-c7d7-4630-8ee2-b4b20119de4c"
@@ -14,6 +15,20 @@ CARD = """<article class="panel item "> <div class="lot-single " id="lot-{lot}" 
 <li class="estimate"> <span>Estimate</span> <span> <strong>450</strong> <strong> - </strong> <strong>900</strong> <strong>GBP</strong> </span> </li>
 <div class="date "> <span>Date:</span> <strong>04 Oct</strong> </div></div></article>"""
 PAGE = "<html><body>%s</body></html>" % CARD.format(lot=LOT, number="1419")
+LOT_URL = ("https://www.the-saleroom.com/en-gb/auction-catalogues/apollo-art/"
+           "catalogue-id-apollo-art10102/lot-" + LOT)
+
+
+def lot_page(ended="false", amount="Passed"):
+    """The closed-lot panel as the-saleroom ships it (hidden until the lot ends)."""
+    return ("""<div class="ui basic segment auction-closed hide">
+ <input type="hidden" id="lot-is-ended" value="%s" />
+ <strong><span class="data"><time datetime="2026-10-04T12-00-00Z"><time datetime='2026-10-04T12-00-00Z'>04 Oct 2026 13:00 BST</time></time></span></strong>
+ <label for="hammer_price">Hammer Price:</label>
+ <strong>
+ <span id="closed-price" class="amount">%s</span>
+ <span class="currency closed-currency hide"> GBP</span>
+ </strong></div>""" % (ended, amount)).encode()
 
 
 def registry(root):
@@ -24,16 +39,23 @@ def registry(root):
                      "max_response_bytes": 100000, "delay_seconds": 0},
         "search_terms": ["incantation bowl", "devil trap bowl"],
         "sources": [{"id": "the-saleroom", "enabled": True, "parser": "the_saleroom",
+                     "result_parser": "the_saleroom",
                      "search_url": "https://www.the-saleroom.com/search?searchTerm={term}"}],
     }))
     return path
 
 
-def fetcher(robots=(200, b"User-agent: *\nAllow: /\n"), page=PAGE):
+def fetcher(robots=(200, b"User-agent: *\nAllow: /\n"), page=PAGE, lots=None):
+    """Fake network: robots.txt, search pages, and lot pages by URL."""
     calls = []
+    lots = lots if lots is not None else {LOT_URL: (200, lot_page(), None)}
     def fetch(url, user_agent, timeout, max_bytes):
         calls.append(url)
-        return robots if url.endswith("/robots.txt") else (200, page.encode())
+        if url.endswith("/robots.txt"):
+            return robots
+        if url in lots:
+            return lots[url]
+        return 200, page.encode(), None
     fetch.calls = calls
     return fetch
 
@@ -102,6 +124,46 @@ class MarketMonitorTests(unittest.TestCase):
     def test_a_short_page_is_flagged(self):
         _, truncated = parse_the_saleroom("<div>75 item(s)</div>" + PAGE, "https://x/")
         self.assertTrue(truncated)
+
+    def test_lot_page_states(self):
+        self.assertEqual(parse_the_saleroom_lot(lot_page().decode())["outcome"], "pending")
+        sold = parse_the_saleroom_lot(lot_page("true", "600").decode())
+        self.assertEqual((sold["outcome"], sold["hammer_text"]), ("sold", "600 GBP"))
+        self.assertEqual(sold["sale_at"], "2026-10-04T12:00:00Z")
+        self.assertEqual(parse_the_saleroom_lot(lot_page("true").decode())["outcome"], "passed")
+        self.assertEqual(parse_the_saleroom_lot("<html></html>")["outcome"], "unrecognized")
+
+    def test_result_is_read_after_the_sale_and_recorded_once(self):
+        run = lambda now, lots=None: run_market_monitor(
+            self.config, self.out, fetch=fetcher(lots=lots), now=now)
+        first = run("2026-10-04T06:00:00Z")          # learns the sale time
+        self.assertEqual(first["result_checks"][0]["outcome"], "pending")
+        early = run("2026-10-04T13:00:00Z")          # before sale + 6 hours
+        self.assertEqual(early["result_checks"], [])
+        sold = {LOT_URL: (200, lot_page("true", "600"), None)}
+        after = run("2026-10-04T19:00:00Z", sold)
+        self.assertEqual(after["results_recorded"], 1)
+        self.assertEqual(run("2026-10-06T06:00:00Z", sold)["result_checks"], [])
+        lead = monitor_leads(self.out)[0]
+        self.assertEqual((lead["result"]["outcome"], lead["result"]["hammer_text"]), ("sold", "600 GBP"))
+        record = json.loads(next((self.out / "results").glob("*.jsonl")).read_text())
+        self.assertIn("excludes buyer's premium", record["price_basis"])
+
+    def test_redirect_to_an_excluded_archive_is_not_followed(self):
+        archive = "https://www.the-saleroom.com/en-gb/archivelot/" + LOT
+        robots = (200, b"User-agent: *\nDisallow: */archivelot*\n")
+        fetch = fetcher(robots=robots, lots={LOT_URL: (301, b"", archive)})
+        receipt = run_market_monitor(self.config, self.out, fetch=fetch, now="2026-10-05T06:00:00Z")
+        self.assertEqual(receipt["result_checks"][0]["outcome"], "unavailable")
+        self.assertNotIn(archive, fetch.calls)
+
+    def test_a_result_never_shown_stops_after_the_schedule(self):
+        for now in ["2026-10-04T06:00:00Z", "2026-10-04T19:00:00Z", "2026-10-05T13:00:00Z",
+                    "2026-10-07T13:00:00Z", "2026-10-11T13:00:00Z", "2026-10-18T13:00:00Z"]:
+            receipt = run_market_monitor(self.config, self.out, fetch=fetcher(), now=now)
+        self.assertEqual(receipt["result_checks"][0]["outcome"], "not_shown")
+        later = run_market_monitor(self.config, self.out, fetch=fetcher(), now="2026-11-01T06:00:00Z")
+        self.assertEqual(later["result_checks"], [])
 
     def test_kill_switch_and_registry_guard(self):
         self.out.mkdir(); (self.out / "DISABLED").touch()

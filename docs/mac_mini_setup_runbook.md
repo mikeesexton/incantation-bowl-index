@@ -192,6 +192,10 @@ staged `ibi.sqlite3` to the restored tree’s `data/private/ibi.sqlite3` and its
 this automatically, preserving compatibility with the original September 25
 snapshots. Verify the restored tree before changing the working database.
 
+A third template, `org.incantation-bowl-index.market-monitor.plist`, runs the
+lead-only auction-listing monitor daily at 06:40 (installed 2026-10-04, DISC-004).
+It is not a backup job; see [`market_tracker.md`](market_tracker.md).
+
 Manual run from the repository root:
 
 ```sh

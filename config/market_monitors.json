@@ -23,11 +23,13 @@
       "name": "the-saleroom.com (Auction Technology Group)",
       "enabled": true,
       "parser": "the_saleroom",
+      "result_parser": "the_saleroom",
       "search_url": "https://www.the-saleroom.com/en-gb/search-results?searchTerm={term}",
       "cadence": "weekly",
       "robots": "search-results allowed for this user agent on 2026-10-04; re-checked every run",
       "covers": "Live and timed sales of many UK and European houses, including Apollo Art Auctions and TimeLine Auctions.",
       "expected_identifier": "platform lot UUID; house lot number",
+      "results": "Each lot page is read once to learn its sale time, then 6 hours and 1, 3, 7 and 14 days after it for the hammer price; redirects are followed only where robots.txt allows (archivelot is excluded).",
       "limits": "Reads the first results page only (60 lots); later pages are flagged in the receipt, not fetched. Search is fuzzy, so only lots whose title or teaser names incantation, devil/demon trap, Aramaic, Mandaic, Syriac or magic bowls become leads. Sale dates lack a year."
     }
   ],

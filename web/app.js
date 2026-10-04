@@ -492,13 +492,25 @@ function marketRows(ledger, status) {
     <td>${marketPrice(row)}</td><td>${externalLink(row.url, row.locator || "Source")}</td></tr>`).join("");
 }
 
+const MARKET_OUTCOMES = {
+  sold: "sold", passed: "passed (unsold)", ended_other: "ended", pending: "result pending",
+  unavailable: "result page no longer public", not_shown: "result never shown", unrecognized: "page not recognised",
+};
+
+function marketResult(result) {
+  if (!result || !result.outcome) return "";
+  const label = MARKET_OUTCOMES[result.outcome] || result.outcome;
+  const price = result.outcome === "sold" && result.hammer_text ? ` · hammer ${escapeHtml(result.hammer_text)} before premium` : "";
+  return ` · <strong class="market-outcome market-outcome-${escapeHtml(result.outcome)}">${escapeHtml(label)}</strong>${price}`;
+}
+
 function marketLeads(leads) {
   if (!leads.length) return "";
   return `<section class="market-section"><h2>New listings awaiting review</h2>
     <p class="market-muted">Found by the listing monitor and not yet checked or recorded.</p><ul class="market-list">${leads.map(lead => {
       const match = lead.possible_match;
       const note = match && match.identity_id ? ` <span class="market-muted">· possibly <a href="#/explore/${encodeURIComponent(match.identity_id)}">${escapeHtml(match.identity_id)}</a> (${escapeHtml(match.basis)})</span>` : "";
-      return `<li>${externalLink(lead.url, lead.description)} · ${escapeHtml(lead.sale_date_text || "date not shown")} · estimate ${escapeHtml(lead.estimate || "not shown")} <span class="market-muted">· seen ${escapeHtml(lead.observed_at.slice(0, 10))}</span>${note}</li>`;
+      return `<li>${externalLink(lead.url, lead.description)} · ${escapeHtml(lead.result?.sale_at_text || lead.sale_date_text || "date not shown")} · estimate ${escapeHtml(lead.estimate || "not shown")}${marketResult(lead.result)} <span class="market-muted">· seen ${escapeHtml(lead.observed_at.slice(0, 10))}</span>${note}</li>`;
     }).join("")}</ul></section>`;
 }
 
