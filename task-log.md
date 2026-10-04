@@ -41,6 +41,8 @@ the dated reports under `data/reports/`.
 - Roadmap/Miri/inventory/reader/receipt updated; lastten prebatch backups retained. Goal remains active; previous closed checkpoint130 and current131 both made authoritative research progress. Next: remaining Ford sourcewide/reference/context fields, GordonG final pass, heldMorgenstern/Levene units,216publicationcases/exactKelseyfield bridge. Separate OPS packaging work pending for preview and nonbowl searchable contexts. Waterman ComputerUse remains stopped by URL guard; no retry/reset/workaround. No allowance/reset check or redemption thischeckpoint; zero verified used/maxone authorized. No push/deploy/serverrestart/contact/purchase/publicapproval.
 - Private verified checkpoint: `data/private/research-work/goal-campaign-2026-10-01/checkpoints/0131_Ford2002_other_bowl_and_manuscript_pass_verified.json`. Content-free receipt: `research/receipts/Ford2002_131_audit_2026-10-04.json`.
 
+- Roadmap follow-up: corrected one stale priority count32/217 to the verified frozen33/216 and clarified the current priority. Corpus unchanged; original checkpoint snapshots retained. Receipt: `research/receipts/Ford2002_131_roadmap_followup_2026-10-04.json`.
+
 ## 2026-10-04 — Codex — Ford 2002 lexical source pass, checkpoint130
 
 **Claimed:** TEXT-004, TEXT-009, TEXT-010 (one TEXT workstream; active research Goal).
