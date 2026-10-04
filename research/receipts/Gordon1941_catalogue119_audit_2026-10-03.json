@@ -1,0 +1,901 @@
+{
+  "schema_version": 1,
+  "checkpoint": 119,
+  "created_at": "2026-10-04T01:47:24+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "ca3795a2489155478a5316ec009151e45aefa74b071e7931482843c0ad0d9928",
+  "corpus_after": "b63de14b8ec93ddff0510d0d443d4988c30852fd0ebc3ec6a45e1a2951322812",
+  "corpus_changed": true,
+  "new_objects": 3,
+  "new_appearances": 5,
+  "new_identifiers": 3,
+  "new_text_rows": 70,
+  "new_reading_rows": 65,
+  "new_media_rows": 8,
+  "new_captures": 0,
+  "new_sources": 0,
+  "new_claims": 0,
+  "new_source_corrections": 1,
+  "new_document_assessments": 1,
+  "new_proofreading_reviews": 65,
+  "corrected_text_content_rows": 3,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1887,
+  "total_text_rows": 2380,
+  "total_reading_rows": 1634,
+  "checked_reading_rows": 1570,
+  "partial_reading_rows": 63,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2186,
+  "total_local_images": 1275,
+  "total_captures": 97,
+  "registered_PDF_sources": 66,
+  "PDF_appearance_bearing_sources": 59,
+  "PDF_appearances": 1357,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "native_script_whole_unit_recoveries": 0,
+  "new_bounded_native_excerpt_copies": 35,
+  "new_bounded_English_copies": 30,
+  "new_bounded_Latin_copies": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 21,
+  "new_acquisition_requests": 0,
+  "allowance_resets_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 88,
+    "sources_with_document_assessments": 82,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 68,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "scope": "Checkpoint119: remaining five Gordon1941provisionalcatalogue excerpt-bearing items1931.175/177/473,1932.619/620 have65bounded searchable copies:55sourcechecked (30English/25native) and10nativeworkingpartial blocks with precise pending point/bar/bracket/dotrun/lettercollation. Three own corrected copies retain full initial drafts/source-correction snapshots; EnglishMeṭaṭboth tpoints checked, source variants/name spellings/periodruns/restorations/italics preserved under explicit policy. No fullinscription/wholecase certification or clay reading. Seven complete cataloguepage scans plus onepublished geometricmotif diagram crop captured, no photograph/fullbowlhandcopy. Three new unassessed source-specific candidates; two unscoped existingsecondaryrecords receive candidate0.7source links only (1931.175/1932.619), institutionalbridge unverified/no scopedidentifier upgrades/confirmed one-designation ruling/merge. All24source designations/remaining claimsets/originaleditionroutes/datelimited publication leads continue. Sourcewidepartial/wholeworkingOCRunreviewed/other1941installments notseparately heldregistered. F446checkednative/twoEnglish/fourhandcopies/allpriorcataloguemedia/F447partialthree-symbolgaps retained.1570checked/63partial/oneunreviewed of1634readings;2380texts/2186media/1275images/97captures/1887identities. PDF66sources/59appearancebearing/1357appearances. All39tables compared/38exact; three new identifiergeneratedIDs mapped/all evidencefieldsexact;29unchangedtables/all1884prior memberships/earlier rows or full source snapshots retained. Four manifests replayzero; Miri15resolved/21remaining unchanged/no newaccessfailure. Frozen24932linked/217unlinked/allattempted/zero wholecasescomplete/no newattempts; historical45nativegaps/40Englishdrafts independent. Goalactive; next ten nativeblocks/F447symbolnotation/24claimsets/collectionbridges/originaleditionroutes; thenLevene2007/Morgenstern2007/Ford2002/Gfinal/217publicationcases/Watermanbridge. Zero resets; no push/deploy/restart/contact/purchase/uncertainmerge/authenticity/rights/publicapproval.",
+  "next_actions": [
+    "Complete ten newly captured nativeworkingblock notation/point/bar/letter/dotrun checks; F447three-symbol/finalnotationpass remains separate.",
+    "All24Gordon1941individualclaimsets/1931.175and1932.619collectionbridges/sourceoriginalDriver1930andGordonText8/9routes; dated1941notices notcurrentabsence.",
+    "Levene2007Moussaieff164/Morgenstern2007BM91767/Ford2002BM91715/BM91780/DC37(R)/GordonGfinal; resume217publicationcases andWatermanbridge."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/campaign_case_progress_checkpoint119.json",
+    "sha256": "594a94c7a840d8a0e13fe84b5115c8abd75637628db6894a8eebf7947491d765"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/held_pdf_inventory_checkpoint119.json",
+    "sha256": "b3234f2a74769a97aa1d64985eeb34c17bcc4e93b08341556f9811b6bb39b293"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/non_pdf_holdings_checkpoint119.json",
+    "sha256": "9c2aef35f5ddd05a7ecb3572f896005665ea2a3ccb0441d16352269db2428c0d"
+  },
+  "validation": {
+    "corpus_after": "b63de14b8ec93ddff0510d0d443d4988c30852fd0ebc3ec6a45e1a2951322812",
+    "changed_tables": [
+      "appearance_object_links",
+      "appearances",
+      "document_assessments",
+      "identifiers",
+      "media",
+      "objects",
+      "source_corrections",
+      "sources",
+      "text_proofreading_reviews",
+      "texts"
+    ],
+    "table_deltas": {
+      "objects": 3,
+      "appearances": 5,
+      "appearance_object_links": 5,
+      "identifiers": 3,
+      "texts": 70,
+      "media": 8,
+      "text_proofreading_reviews": 65,
+      "document_assessments": 1,
+      "source_corrections": 1,
+      "sources": 0
+    },
+    "unchanged_tables": 29,
+    "all_original_rows_or_full_source_snapshots_retained": true,
+    "all1884_prior_identity_memberships_retained": true,
+    "two_provisional_source_association_derived_metadata_changes": [
+      {
+        "identity_id": "IDENT-80E139281335",
+        "fields": [
+          "appearance_count",
+          "source_count",
+          "text_count",
+          "media_count",
+          "completeness_score",
+          "has_text_edition",
+          "has_translation",
+          "reading_score"
+        ]
+      },
+      {
+        "identity_id": "IDENT-8B4301E118EE",
+        "fields": [
+          "appearance_count",
+          "source_count",
+          "text_count",
+          "media_count",
+          "completeness_score",
+          "has_text_edition",
+          "has_translation",
+          "reading_score"
+        ]
+      }
+    ],
+    "new_unmerged_candidate_identities": 3,
+    "provisional_candidate_appearance_links": 2,
+    "scoped_identifier_upgrades_on_existing_records": 0,
+    "all39tables_compared": true,
+    "all38_other_tables_exact": true,
+    "three_new_identifiers_all_evidence_fields_exact": true,
+    "checked": 1570,
+    "partial": 63,
+    "unreviewed": 1,
+    "new_checked_bounded_units": 55,
+    "new_native_partial_working_units": 10,
+    "corrected_text_content_rows": 3,
+    "corrected_text_ids": [
+      "TXT-IBI-CP119-ASH-1931-473-L7-11-NATIVE",
+      "TXT-IBI-CP119-ASH-1932-620-Q1-ENGLISH",
+      "TXT-IBI-CP119-ASH-1932-620-Q4-METATRON-ENGLISH"
+    ],
+    "new_whole_case_completions": 0,
+    "four_current_manifests_replayed_without_any_table_or_digest_change": true,
+    "logs": [
+      {
+        "arguments": [
+          "ingest",
+          "candidate",
+          "data/private/manifests/Gordon1941_catalogue119_readings_2026-10-03.jsonl"
+        ],
+        "exit_code": 0,
+        "stdout": "ingested 5 records\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest-proofreading",
+          "data/private/manifests/Gordon1941_catalogue119_proofreading_2026-10-03.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"entries\": 65,\n  \"public_approvals\": 0,\n  \"unchanged\": 65\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest-document-assessment",
+          "data/private/manifests/Gordon1941_catalogue119_documents_2026-10-03.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 68,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest-source-corrections",
+          "data/private/manifests/Gordon1941_catalogue119_source_2026-10-03.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+        "stderr": ""
+      }
+    ],
+    "controls_pixel_exact": 29,
+    "media_pixel_exact": 8,
+    "seven_full_catalogue_pages_one_geometric_diagram_crop": true,
+    "all11wide_excerptcontrols_viewed": true,
+    "not_all_narrow_controls_viewed": true,
+    "two_main_Mandaic_half_controls_unseen_and_unit_partial": true,
+    "no_clay_photograph_or_full_inscription_handcopy_certification": true,
+    "source_capture_hash_and_work_assignment_verified": true,
+    "all65bounded_copies_attributions_and_statuses_verified": true,
+    "all30English_checked_independently": true,
+    "checked_native25_partial_native10": true,
+    "ten_native_partial_units_and_explicit_remaining_collation_recorded": true,
+    "three_own_copy_corrections_and_full_initial_snapshots_retained": true,
+    "provisional_candidate_links_not_confirmed_identities": true,
+    "existing_scoped_identifiers_not_upgraded": true,
+    "current_partial_document_and_source_ledger_hashes_verified": true,
+    "all_prior_source_media_and_F447_partial_gaps_retained": true,
+    "all29sourcecontrol_and_fourmanifest_hashes_verified": true,
+    "Miri_queue_unchanged": true,
+    "wholecases_not_claimed": true,
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2380,
+      "all_media_assignments_verified": 2186,
+      "all_local_image_hashes_verified": 1275,
+      "all_capture_hashes_and_source_assignments_verified": 97,
+      "all_identity_memberships_and_counts_verified": 1887,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "413 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "python_tests": "413 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 470,
+    "reader_build_after_both_test_suites_passed": true,
+    "source_evidence_count_metadata_correction": {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/evidence-metadata-correction.json",
+      "sha256": "9a44da85291bd74204988eb70f40a52dff7d4952e81f71ba1bc832357c44585c"
+    },
+    "allowance_check": {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/allowance-check.json",
+      "sha256": "d65c8f89c49b7319edf08e7b8cb970dea469be8bef27970172833d2dd0e5e3b7"
+    }
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue119_readings_2026-10-03.jsonl",
+      "sha256": "8bdbc38ce3c70b1cf9034cfea1cc3ff6a802dcccd6eb5778ec2077fe20398103"
+    },
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue119_documents_2026-10-03.json",
+      "sha256": "f37447606d0318fce2cccd66d7ee5149ae315e6c20290e5cf5be12bfe27bb05c"
+    },
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue119_source_2026-10-03.json",
+      "sha256": "5d101ae3f075587966705be14b1e550672777182068f4ed266756384cf20e68d"
+    },
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue119_proofreading_2026-10-03.json",
+      "sha256": "f8a035251587432d903be616881d09fa78967c52c8faacfa283ff538cb9710d7"
+    }
+  ],
+  "protected_payloads": "All source expression/PDF/pixels/OCR/manifests private outsideGit; Gitmetadata/hashpointers only.",
+  "new_bounded_native_checked_copies": 25,
+  "new_native_partial_working_copies": 10,
+  "new_provisional_candidate_appearance_links": 2,
+  "existing_scoped_identifier_upgrades": 0,
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0119_Gordon1941_remaining_catalogue_excerpts.json",
+      "sha256": "5557f71e33c2111b777533cb89d9b4fe1e5e9052896e6e11b140746d39fa2605"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/175-name.png",
+      "sha256": "9b041901cb50478770c69829b8d3de4c5fda6d4d3cce2591c26d30a93ad2746d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/177-bowl-complete.png",
+      "sha256": "172b680d622a6d1e907cf0a1bf54d94406581b2ee686d15be58c06830edde861"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/177-bowl.png",
+      "sha256": "063002983f2f5d82536086b5ebd652ff4de321b43270cffd11862750b8224a31"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/473-close-word.png",
+      "sha256": "fdea82cabbe2446b7bb6a1e23605ab7b15432d567beb33659c2042ea27a41def"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/473-main-left.png",
+      "sha256": "414d21a5ceb75eda0db684c7af15e0e3583764cdc2a91342f1e4d3ee021e1bb2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/473-main-line-final.png",
+      "sha256": "3c283a0c67c611d479d3b08918d36ad39b35a5d6b0b829947daea8f4671fdaef"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/473-main-right.png",
+      "sha256": "c210ca8bb0b6f739c246728b9d76b203cee7678b7a7477e813a38ea2d11c9e47"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/619-adjure.png",
+      "sha256": "a8bf2e93a32054840d7fc443b6485bd531fb0cdc47bb8b71f629fba22bf94bd0"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/619-published-geometric-motif.png",
+      "sha256": "7e8c29fd3cb2fb077b192679aeedb729f78705253952102de5ddaa1e988f9bc8"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-english-dotsA.png",
+      "sha256": "8d44da333dd5b8f540d38fcbc6253758d8b5cbbe9c76077a69ae2f70c5f04ec9"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-english-dotsB.png",
+      "sha256": "6a5639a42d4329481f95cd4b0c80b226001fcfa77efa80617357af21450ff50c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-english-dotsC.png",
+      "sha256": "3a09f13b24084ab5dc5f166d740ef94cea47e23b7bfaf530fe2ca07a7334d4ff"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-metatron-English.png",
+      "sha256": "bb47e10ac70d1c1ed369264fbcdc39edd99c0e8d0607a0cb708533659ac0637a"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-q1-gapB-complete.png",
+      "sha256": "bb934d94c13aa9ab9379fb228d98f1abe032a47efbd6785966d777761d1970d8"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-q3-English-gap.png",
+      "sha256": "758a203cc4e2db3cf34f4a18d00e95629f48c6a1624598b611c6a4c265e3693c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-q3-english-gap-complete.png",
+      "sha256": "64f78f3324e127b732c028e3e7cff84f78adc43a92611f8dbe891613e522c899"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-q4-nameA.png",
+      "sha256": "9f76179cc57211b7601264ca194937e4e97d7b93203fe02aa06944c884d255b9"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/620-q4-nameB.png",
+      "sha256": "d8b7eaf4da51b56f9cd4b67108d879528b6284101e4dbf64fc59cd1bf0606f83"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-175-CLIENT-ENGLISH.txt",
+      "sha256": "edf70b7c29e04844a6fa13cde8d94947184c215ee6460772d806f56b784dd739"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-175-CLIENT-NATIVE.txt",
+      "sha256": "e7885400ded8707416f1d4cb23eb58d239681a321627295b4af065e169308c3c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-BOWL-ENGLISH.txt",
+      "sha256": "a2a72760199fdadeaa5974ce8d1e7c15e03596bb672d62092e94bf379766d0e4"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-BOWL-NATIVE.txt",
+      "sha256": "52933e8e7beef1f1c7bf4b84ebfff5a2bfee9b0c02ca5ea3704381b6fbe74a14"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-CLIENT-NATIVE.txt",
+      "sha256": "a80e1abc53ee3eb0ec13c3a90420a41385c3efe3bc1657e6f4b2111a7a272b4f"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-MIDST-ENGLISH.txt",
+      "sha256": "3525e296102d1ab74c19b9f7101a00a9593c5285c3857ca2e3c494d90abcead2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-MIDST-NATIVE.txt",
+      "sha256": "db0a427dd3309f84995dc303c720c7a73b8d39c6f917b6523926daef01fd0772"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-OIL-NATIVE.txt",
+      "sha256": "bfc17e8891832cb1baf3948c98a84073e83f4539d568de7e13b68e564432c3b7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-PAIN-ENGLISH.txt",
+      "sha256": "1027cf4f13048fa57a598960977f3345831aa20b85cf828603d21be0293b0a72"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-PAIN-NATIVE.txt",
+      "sha256": "5e9f47e13c21e002dcd5c8780a796267101831026a483890ad60ad9f7af98c3c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-SINEW-ENGLISH.txt",
+      "sha256": "6adf98dbc025f44446534932523e68917555e71df976a381610f4d829457bae7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-SINEW-NATIVE.txt",
+      "sha256": "06cffa6ada70fb133735e3fcf0c77f153eeae742571681828e6a30fa6a77fa3e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-SPELLS-ENGLISH.txt",
+      "sha256": "0c992a814ace6a151a9055f314839fa945f05b7f53cf433303f107d303bc4ade"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-SPELLS-NATIVE.txt",
+      "sha256": "630eafecc6390a2f2e1570625487cf3160d6b93102e5a1604dfec94038f8edf5"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-TURN-ENGLISH.txt",
+      "sha256": "b7d999d7720fb05710911c34531a7e9e69afa9c948cfe22663459def336d6bd6"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-TURN-NATIVE.txt",
+      "sha256": "6f5288a1468ec756200ecc64a1da346bd4061c9ba9f914187243a0740cf103d7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-177-WATER-NATIVE.txt",
+      "sha256": "4edd4c8f23cae5f11f7f83272e56210635be480b01a3ae2e1bf8d98e92b1ac75"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-CLOSE-ENGLISH.txt",
+      "sha256": "c965a6c1618d613b7c701933852a67f23bd3b483dcd4cd94c11e4b28f99bff4b"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-CLOSE-NATIVE.txt",
+      "sha256": "2b27d4ec741baaeda366bf32b92726c359d9f5f9afdee21271a436fc3550f167"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L12-ENGLISH.txt",
+      "sha256": "496844041084659c77e5e97e135852954d9a962e7b96688f148d65e6e59aac0a"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L12-NATIVE.txt",
+      "sha256": "f90f795a683bf732fcd55cb8db624bbca9dda1c8d3c19d48ef2ea1df9b06072a"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L4-ENGLISH.txt",
+      "sha256": "c340efc722efa49f18c856b712ddac6679730bac8f387dc276aced319c8e8114"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L4-NATIVE.txt",
+      "sha256": "08d73616a88bc1aca0524640019389e99c311d5215f965b734f031b9a4bdb2b9"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L5-ENGLISH.txt",
+      "sha256": "b7e6d7c49066d5913ff877b5e85588a53c0250685860a543a60f4d3891b1fd4b"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L5-NATIVE.txt",
+      "sha256": "531ad60a9fd24f2526d696231456175aee322265046435451b583c286e82f7fa"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L7-11-ENGLISH.txt",
+      "sha256": "f5f95c1b189a2fc5951f8c72a4a586847977ac642b2b2a3839b62cf3cd53dfbe"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1931-473-L7-11-NATIVE.txt",
+      "sha256": "8f5d46c751c38b0bf6e418f2759e980aed0c023e42cf97749b4c6bacd2f2be42"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-ADJURE-ENGLISH.txt",
+      "sha256": "5a5feb3aad946e8ba560f4ca00e94f67f86ea4397ad0eaa27e9f34685f48de45"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-ADJURE-NATIVE.txt",
+      "sha256": "f2eaf3ba3023743a0dea1c14e3c2422cdd0c47783b1268b0d9627ce7fc6cd8c2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-ANGEL-ENGLISH.txt",
+      "sha256": "6e90aca46588438c298ea10af35abaaee61a7493361437506891d8d1be4faae6"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-ANGEL-NATIVE.txt",
+      "sha256": "b681617bdeb3376c5517aa0a5720e7da74034923539c74efd9711635a24d8da7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-DAUGHTER-ENGLISH.txt",
+      "sha256": "4b77974228a1ab5a992ed0d704e3805c014d7fd45c7d3b6b1c37e20c84bf4f5c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-DAUGHTER-NATIVE.txt",
+      "sha256": "a0e1428e0449e8f55f3bc6d16150fc99163a7f2c32094c93646f83d5d0182b76"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-GHOUL-ENGLISH.txt",
+      "sha256": "8733c796bdbddecf9be07ea838a6fe4f3946f6a8a4dec76886e5a121e5280488"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-GHOUL-NATIVE.txt",
+      "sha256": "8b6e996ae1232a0a360d73189d5c5d54543ee39649e92e4119e63d5960defc72"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-HOUSE-ENGLISH.txt",
+      "sha256": "5d9d783603287c2a546da81064e2a68894791464be09af450c34bd4a0ea48a84"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-HOUSE-NATIVE.txt",
+      "sha256": "5dd1a1b1d51bcf919918d34b0443cc4ac1e8bc5ee442ec1f20fc7fd7fb834515"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-KNOCK-ENGLISH.txt",
+      "sha256": "274ced8772a840a1a783b2bf961b9416d696b2ca2254c0d0460bfda4a6dda98d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-KNOCK-NATIVE.txt",
+      "sha256": "79b9be52f7c5b24e93c145ead9829dbb5cb8722c3a517505e17c4b24858f785d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-NAME-ENGLISH.txt",
+      "sha256": "eb81e1047aa9da51d462799319f509b5f7edfe881562f5c755ee32fc91308e02"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-NAME-NATIVE.txt",
+      "sha256": "e47156703c6cdce375f322a15e5c9e807daa6357d31e16562f03337962376873"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-SEAL-ENGLISH.txt",
+      "sha256": "74671b5841a6689e88f937e0449de2fa9a466b0370af23da60c83ce0ae35c899"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-619-SEAL-NATIVE.txt",
+      "sha256": "9b767ca99e55aed5e22c5460e822d7d345552efb0e34f4425ed477e442688c22"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q1-ENGLISH.txt",
+      "sha256": "dba92b02cf4ba77eb62cd17f931ec93a2416ad8756d8087a94af5c08c4265414"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q1-NATIVE.txt",
+      "sha256": "e597f7e9280ab025b248a188f4b35850719998837f983bbeace068dcec2298bb"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q2-L12-NATIVE.txt",
+      "sha256": "7e9932ebb6a4218ffd980512590513a003925e2ccf5f665ca5fcedc40aa49f2d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q2-L13-NATIVE.txt",
+      "sha256": "484d938ee3a4afe91243f0a1c9d22e69c02ef4448a930aa5da4de542f1f25c9d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q2-L45-ENGLISH.txt",
+      "sha256": "f5b99ebf07a67dc6ae2f39be2762a5f7ba59bf4c8825113ac93c38d667104c39"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q2-L45-NATIVE.txt",
+      "sha256": "09a36061320baa55ae07cc70e85ec527d4f7300cdde188e00c93eed207735b09"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-BEFORE-ENGLISH.txt",
+      "sha256": "9160d4be34c8695bd172a76c7c7966587ea5a4d991ad22c87b2b91af54aa9ebb"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-BEFORE-NATIVE.txt",
+      "sha256": "64317f34772440786edde0486d9dfa870a76284e8718eb24b585e86e78829d4b"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-BOUND-ENGLISH.txt",
+      "sha256": "56672d79ed8039d53479a9048739af27e54f4cb01dd11218582a4c0bf60c38ef"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-BOUND-NATIVE.txt",
+      "sha256": "6185e7f3af7534aeedbc685d25b9ef1ad958985eea909fc174ca52a7386f4d07"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-FROM-ENGLISH.txt",
+      "sha256": "686ffac24ff74ab6eed66f062e6f0177284088afbc8e238835ed339ec7eaec5d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-FROM-NATIVE.txt",
+      "sha256": "9ced3828c532f144bfce737438acf93598549807e167e1a05e33486fbb1f2fb5"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-GO-ENGLISH.txt",
+      "sha256": "88024b168344355cd76e2e15fa966266fb3a90eb46f03d60e4acf0616fc27a2c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q3-GO-NATIVE.txt",
+      "sha256": "51cf6e5a1fac55122dad78aa21050faaa097c92b2df50016f7e0161b47d8594d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-DISTANT-ENGLISH.txt",
+      "sha256": "f95be29376177c7bc71d998a4f101137ae0a34e4416bc43eddfa93035895dde5"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-DISTANT-NATIVE.txt",
+      "sha256": "dd8ceb63548c67e8d8cacc86a026f6092b6dc087af5cb912ec2594f5394de631"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-LAST-ENGLISH.txt",
+      "sha256": "c897573b9a2933de3f1abdd9f28eca4b1d107f009ff7661e43b730dca75073c1"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-LAST-NATIVE.txt",
+      "sha256": "9d4ad232ebaeea750b75b56698db4507273eab34fedc2d42423e8f0b73f1bfa1"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-METATRON-ENGLISH.txt",
+      "sha256": "49783f0a52c8160e8aa6d20ca2e6b512ba32a05d9b78dba77897b7a88cc73990"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-METATRON-NATIVE.txt",
+      "sha256": "343c81070376f1aba7104ef4732ff8be284d2b1aaf88d925fb24342c03e2ce94"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-OPEN-ENGLISH.txt",
+      "sha256": "d89178378d42b4031fff85fe9483fa0edd683a48ea4a7d31dfa5cef84f932f42"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/TXT-IBI-CP119-ASH-1932-620-Q4-OPEN-NATIVE.txt",
+      "sha256": "f8688c561d77ce58fae6ddb22b5b5bba42fa085735083e1958819a629701cd16"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/apply.py",
+      "sha256": "d55f3f4be01cd2b26a60fa636f3b7737b68a72de4ccfa0eb31fa0fb9b52956e4"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/campaign_case_progress_checkpoint119.json",
+      "sha256": "594a94c7a840d8a0e13fe84b5115c8abd75637628db6894a8eebf7947491d765"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/catalogue-current-inventory.json",
+      "sha256": "7ddf3bf382a0eaf065f88f0e9919f0d84a915f52a16a0e6fe8327cc49c9fe3a8"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/control-recipes.json",
+      "sha256": "ad8bd9d90a9cc9af4361fb0ae110c9ca6eadb1c3a681895e82687befa44bd15d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/evidence-metadata-correction.json",
+      "sha256": "9a44da85291bd74204988eb70f40a52dff7d4952e81f71ba1bc832357c44585c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/excerpt-copies-current.json",
+      "sha256": "c8867b5a8e6aee0505ca0f32a0492fdea14d3a4decade108ada9fb12f9b76217"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/excerpt-copies-initial.json",
+      "sha256": "f64bfb7394862c6eadcb3f1f2f74ba3fbf6ef7ce3a23bd2f72adea12a9f61c5a"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/excerpt_copies.py",
+      "sha256": "e2e6934a8c5ff0bdc609c65bd6eec8e44cde7dfd3e5014f4e89ab701a02c3e1e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/extra-recipes.json",
+      "sha256": "06a7bcd6369fed37ffb74b944477d75c9695d07dc996bda47e4f94ba481854cd"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/extra_controls.py",
+      "sha256": "49dc9a6373fda5482ac349319e7972bb322646ea7d7c597d9622a9bd8ea9ba1c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/final_copies.py",
+      "sha256": "5f47317e4f24c87ad2d11ee6ad1587ef401dc9c709cb770d3df876ddb538ab6c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/fingerprint-before.json",
+      "sha256": "533d99b98d8c85350d399e96daf6953733efaec1f6db2c97d46212e459da731c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/generated-identifier-id-map.json",
+      "sha256": "74791aa68a2e5a87240125593da6a2fb6ceb5e2092e0d2068cd26f58f57c8f0c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/held_pdf_inventory_checkpoint119.json",
+      "sha256": "b3234f2a74769a97aa1d64985eeb34c17bcc4e93b08341556f9811b6bb39b293"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/identities-before.json",
+      "sha256": "437c6511164d49df06e437759936bf0e4a8f9e7402201f549fae31bfa770cfa2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/last-recipe.json",
+      "sha256": "72ef9c431585df6410b1c7898a524111d2164f69b5d528af76409772f57fa437"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/last_control.py",
+      "sha256": "a3e1b9b2f7f685a0682e1a30675788a1128da9442fd28aa307b96b524c488301"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/media-derivation.json",
+      "sha256": "1b5276fd1f3153f683d61a4db473fb21ee3cfa6badbddbe7dcdb4199b03a8e71"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/metadata.json",
+      "sha256": "f08c35ac0f2cafee5da77d0b82f12bb4f8fa638db9f6ba32ea5f906e65981666"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/miri-queue-before.json",
+      "sha256": "60544f47f4b1425df35f1bb715aede25918ff7e27c323b78a99e3f3fe4a18669"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/motif-recipe.json",
+      "sha256": "a3cb3c03e9f541a37fb9d295a4419950a4b9c06800056b29b95b024815c14f46"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/name-recipes.json",
+      "sha256": "91dc215ceabaf057202ba4b6cf208c30a3ab23fb696a30edac81b67a03335456"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/name_controls.py",
+      "sha256": "5d35325dc7a5949a89b5693d31531228d2ee7940176de13088533deb8cbead95"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/narrow-recipes.json",
+      "sha256": "e56c218708423cacd1e85a3705d1c558f361d80a16ad14c2280938f8b3f58417"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/narrow_controls.py",
+      "sha256": "8ca47562125eaf22701bd58d4b227f09e7734c9657e3aafcf0bf1a04b3a19b08"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/non_pdf_holdings_checkpoint119.json",
+      "sha256": "9c2aef35f5ddd05a7ecb3572f896005665ea2a3ccb0441d16352269db2428c0d"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/own-copy-corrections.json",
+      "sha256": "a3ac8fef33c670a1dac3f683491d5f0e6b8f091ae727bb11f0d51b666c3e12f3"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p277-175.png",
+      "sha256": "9207156399134ccbc9ba2cedd02162af452d62c2d415b688498aa37d8d9342e7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p277-177.png",
+      "sha256": "a171d8b2f6722ce2ece2dae76c5383115c52427cc846e7faf6e9ba0f8dc8d15e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p278-177.png",
+      "sha256": "eebc08ac2d9124bae0791ff82472cd22e3bbd69921599435348d7b4d1fe62449"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p278-473English.png",
+      "sha256": "2e38bba329f5f7765f85568ed8ba745bc6279237e727bbe91de3609f6bcfe5de"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p278-473closing.png",
+      "sha256": "277d6e40d336fadbb766bc2f25233ea4bdd98b5cbe26dfd46c527bd257db3f96"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p278-473native.png",
+      "sha256": "687ea659eb6a5ab256dfd995ec21a696417fe5ed7043d2d96686b30218d9a2d7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p279-619.png",
+      "sha256": "7a4540934b3a207b0ac7ecee42b5596fa3bfe8937cfe0556ebada04854bdc331"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p279-620English1.png",
+      "sha256": "00e033f23134097fda2a092970f68cb4216d24ff20f9850597467b303b40b380"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p279-620native1.png",
+      "sha256": "dbf2d4e846594a1436a4140ba9b57a77e57b37f4dc41f9c71d529597c2b77156"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p279-620other.png",
+      "sha256": "16db3a895d143b3ec320512f130fd5480fd554882a541f63005b270fb1293b0f"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/p280-620.png",
+      "sha256": "6b8aea9f0c087fbcfe05315a614772f144cfb4c62a3564a7bdbf35690c70289c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/pixel-verification.json",
+      "sha256": "23304b34858fc197ee13f2c8f7206fc7aa6bf2fdb92807bea2634ebbd55b231a"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/prepare.py",
+      "sha256": "c67b9f61b8748deac42de329598d19442eef80045b15f9f318577c5416866c59"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/production-apply.json",
+      "sha256": "d9550d7b30fe5ca8def8ad93889790126d7ef622f0c8f4e8463c045895428c3e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/production-verification.json",
+      "sha256": "fdce2d1d2a5fa61d22e94958434f0e3bee02efd039a188b34ce36512b0380a30"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/record_checkpoint.py",
+      "sha256": "91d13b26723f03247ae96abf36e551c59b636cf1a8be41b594192f006e03d05c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/regenerate.py",
+      "sha256": "6da1e6e0a2dcad212896beab8fa8742c8b3fe37d8514dc385badae26713cce78"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/render_controls.py",
+      "sha256": "aa92679afaa9804d0d5cb05c956eb924dd5eb913e011187ade52c97b3a58e6e9"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/render_motif.py",
+      "sha256": "8b539dd8fdc48d1e440efaeae973012dc71088d5e27731e72182dab2032e8ddb"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/replay-verification.json",
+      "sha256": "ff65336c425191e3807f574ee170a25c9311bb4c234d588c6732611672f8b3da"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/replay.py",
+      "sha256": "85c763fe951f45d95597f7c7e41c1208ce686a70c7ba78d0e53381451ec3b4ee"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/route-observations.json",
+      "sha256": "7cc1eafd4b17de8b5c4f056248d696de0a6a65f71e4ea2ed00c08cd1378b68c5"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/source-evidence.json",
+      "sha256": "5668ab891f0a2e48e8d6af40ec286ad787de56870758778e5f4dc8a389d99ddb"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/source-verification.json",
+      "sha256": "c4d353e59f245401e05927bb99f690d1de24e79c7cf41c6f7ee0cccc3806545f"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/tables-before.json",
+      "sha256": "0be836c8b6e939fccf8ff2006f09e2ff64e7032be0da0107d8e24da4db459aed"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/trial-apply.json",
+      "sha256": "d9550d7b30fe5ca8def8ad93889790126d7ef622f0c8f4e8463c045895428c3e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/trial-verification.json",
+      "sha256": "592d21c6028ec708e27d7a749ab33a5881ab23d321ea8274d6d5adf33497c2fc"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/verify_batch.py",
+      "sha256": "1873825deb2804aec9bfd1390e4e049a6daef57c4886fb2afd57602f40319ab3"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/verify_pixels.py",
+      "sha256": "3d8ee43c132733f57c1eeca8e4a4f9c36e1c6bab70ae2f99887b76ac4cac7d14"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/verify_source.py",
+      "sha256": "254231911fa42bb930eecd18577834371a1aba8e860ff1c7778bc16af0872a46"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/reader-verification.json",
+      "sha256": "47a14bd2abb74662cb865a562bb34b5289f62c8943678d4c709c55e05bef3432"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/reader-build-final.log",
+      "sha256": "c7c5a0c3b521ca42f9134c26c0d8bcb4ca076f4e873badcabe57732c66c3d60b"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/tests-final.log",
+      "sha256": "897c428dec40623b7f0a3a642f33f429d80c3cd6ae335ab99d7cbad13f5465d3"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/node-tests-final.log",
+      "sha256": "91b3c4cbe2cdda97dc1776fe2fe5cab627799469776f3940adf67ee76b335926"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/verify_reader.py",
+      "sha256": "c2cb9f9fdb3648a708dc57a118ac9c656a679acabf3959134cbabb4d4612bbbf"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/reports-final.json",
+      "sha256": "2dce5141372529915949753891e38b8917b5306dd0b6971d4d551fd4cda59373"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/allowance-check.json",
+      "sha256": "d65c8f89c49b7319edf08e7b8cb970dea469be8bef27970172833d2dd0e5e3b7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/backup-retention.json",
+      "sha256": "b718fa7920adc9cc555965b95f50d785457c09d0a307f90a50594ac532d57ede"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/finalize.py",
+      "sha256": "52333e91dd08325047c20166ab2d49efcc5efa6bdc057763fbca637bb82eaaa8"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/Gordon1941_catalogue119_documents_2026-10-03.json",
+      "sha256": "872b406843949d66d31129faef3bfef416d949d277f7fcc61cea22f0c33eca47"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/Gordon1941_catalogue119_proofreading_2026-10-03.json",
+      "sha256": "f8a035251587432d903be616881d09fa78967c52c8faacfa283ff538cb9710d7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/Gordon1941_catalogue119_readings_2026-10-03.jsonl",
+      "sha256": "8bdbc38ce3c70b1cf9034cfea1cc3ff6a802dcccd6eb5778ec2077fe20398103"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/Gordon1941_catalogue119_source_2026-10-03.json",
+      "sha256": "14de8d966925e4957901806d3a543dee7dbdb6e8671a73a63bb53b95bec167de"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/metadata.json",
+      "sha256": "f8e7eab20361b2410f30b99274d0479c64b7b072bdda982011ccb8913470758b"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/source-evidence.json",
+      "sha256": "1d7f3c28a892e7120d1ba43cad901eddb57399581d63831c762757c88ce5e530"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue119-2026-10-03/initial-rehearsal-before-control-count-correction/trial-apply.json",
+      "sha256": "d9550d7b30fe5ca8def8ad93889790126d7ef622f0c8f4e8463c045895428c3e"
+    }
+  ]
+}
