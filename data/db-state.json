@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "5a6d893eb19f4b857ddb40bae08c17a75b1279457ecff4438f296a7acfa9e16d",
+  "corpus_digest": "5cd90d7f074e6a39589c2c2c1bbee7cac13c9878df01ab022cc0daf2db581fd2",
   "migrations": 21,
-  "note": "Checkpoint120: ten native catalogue drafts collated; eight checked/two precise partials, immutable metadata/copy corrections, 470tests and private-reader/source audits.",
-  "recorded_at": "2026-10-04T02:25:20+00:00",
+  "note": "Checkpoint121: Gordon1941 catalogue24claimsets/168claims/17unmerged candidates/18sourcepages; three original-edition acquisition requirements;470tests and complete private-reader checks.",
+  "recorded_at": "2026-10-04T02:51:54+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -11,12 +11,12 @@
       "rows": 80
     },
     "appearance_object_links": {
-      "digest": "cc874012622719a0c904c165738590fda7c31861b723633d65e086fff8a35c6d",
-      "rows": 2851
+      "digest": "dd8757e421666586a4dcae580bd1f96d757b6e483b407f58ed9434cd72b65589",
+      "rows": 2868
     },
     "appearances": {
-      "digest": "40c80e5f890472b40a9bf48d15350f5d09270c2379084bf63da6bcf8a35aab26",
-      "rows": 2851
+      "digest": "5ed12b9b4436c942f0e66ef1945800bbbed19debd239d52aae2115614055e899",
+      "rows": 2868
     },
     "capture_source_corrections": {
       "digest": "837fec8283a7822f55d202a55fd59df5a28c4b3ae53de4b29b33356baa4ec8c6",
@@ -43,8 +43,8 @@
       "rows": 1110
     },
     "claims": {
-      "digest": "06f4de0170412ca451f2b5e403b0763e5e7bf0e545ad8deb4e65349a0f2ac0e2",
-      "rows": 9205
+      "digest": "c4f21cf2bf7b3f13eb1196ef06f23e4200b3c68fe29449b9d436dc85c6ead45d",
+      "rows": 9373
     },
     "contributor_aliases": {
       "digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -63,16 +63,16 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "30762df2dd6d80b627af2a570eb6f1bc61509bd701afbb2dfa188a724ca07b0b",
-      "rows": 146
+      "digest": "1446134ecc77fe742e40ab95d5fc5909b39a7c50b3bb082a6d908fed6ee65e7a",
+      "rows": 147
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
       "rows": 215
     },
     "identifiers": {
-      "digest": "ce29af5650dacbcad57b96c8c12abcd8540d71bcff493c99eb77bcae24852303",
-      "rows": 5238
+      "digest": "d1533f4059cdbc338c435dcb8f639fc49f148f5a9307844a65f52569234e4e3d",
+      "rows": 5258
     },
     "leads": {
       "digest": "77149f8277d5555db72b1d08513e3db1d54e15934eb2d65e2cebd44597c2f0b2",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "c041bd9ae45b5aceea8394ffc347122f3fb0cfffe1def4eaa215b035ffc27fb4",
-      "rows": 2186
+      "digest": "7c93dfb142ef6b8ba9d8cbd02da40cd43d7ae91862550283458b27aaeafcd25b",
+      "rows": 2204
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -107,8 +107,8 @@
       "rows": 2
     },
     "objects": {
-      "digest": "eb5dbae6005400c848b3ebf2aabb4399deefa0f3abd85197521ba6b3e02d567d",
-      "rows": 2239
+      "digest": "202588a099d0e14544168f879a9e91e277ee66f59fe30235e695e59f0585ed69",
+      "rows": 2256
     },
     "publication_assessments": {
       "digest": "a42cbffc0c8052a9cc510e682cd0b8cf0f71624e351a6ba69884e3a9c6849c83",
@@ -135,15 +135,15 @@
       "rows": 22
     },
     "source_corrections": {
-      "digest": "900cb2ee61d09eb238797bbf6660726113687af2dd7c35c515dc615a3811718d",
-      "rows": 102
+      "digest": "7b4f236e2c6f408f2183b5e676bc5b56492fb879667483069112a74cb5544650",
+      "rows": 103
     },
     "source_scope_reviews": {
       "digest": "8db9874489f74192d5f95528a6708b49f3ddd325084fe020e39b872fe8dc3ac2",
       "rows": 119
     },
     "sources": {
-      "digest": "4a16c9bd810f856f14eca4c9e7e188c58ea88c3474dc3823b87d08483a9bb3ff",
+      "digest": "7a123a54c9f1e68bca7a99224f78c26f362a88b2b3b70cbb10f2fc6321ee6efd",
       "rows": 970
     },
     "text_metadata_corrections": {

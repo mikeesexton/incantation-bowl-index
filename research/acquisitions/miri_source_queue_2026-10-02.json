@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T21:18:18+00:00",
+  "updated_at": "2026-10-04T02:47:27+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -539,6 +539,41 @@
       "checked_at": "2026-10-03T07:54:05+00:00",
       "previous_access_evidence": "Checkpoint80: complete held catalogue pp38–39/183/196/197 visually checked. Primary Bentley discover page opened; its Search Finding Aids link returned403Forbidden. No finding-aid body/manuscript/report bytes acquired or access bypass.",
       "metadata_url": "https://bentley.umich.edu/discover/"
+    },
+    {
+      "source_id": null,
+      "short_label": "Gordon1941firstinstallment",
+      "citation": "Cyrus H. Gordon, Aramaic Incantation Bowls, Orientalia10 (1941):116–141",
+      "requirement": "Complete original pp116–141 and plates; immediate sourceText8/BirminghamaK2080 andText9/Ashmolean1927.3297, exact concordance and printed reading/translation verification.",
+      "priority": 2,
+      "status": "Original installment/article unheld; ordinary available routes did not provide original body",
+      "checked_at": "2026-10-04T02:47:27+00:00",
+      "metadata_url": "https://www.jstor.org/stable/i40142559",
+      "previous_access_evidence": "Official volume contents lists author/title/pages. Two ordinary web article opens returned one-line HTML without article body; no edition bytes acquired. Metadata cannot verify Text8/9 readings or concordances.",
+      "article_url": "https://www.jstor.org/stable/43582631"
+    },
+    {
+      "source_id": null,
+      "short_label": "Gordon1941concludedinstallment",
+      "citation": "Cyrus H. Gordon, Aramaic Incantation Bowls (Concluded), Orientalia10 (1941):339–360",
+      "requirement": "Complete original pp339–360 and plates; other installment of1941aggregate not supplied by heldcontinued272–284. Object coverage remains to be inspected.",
+      "priority": 2,
+      "status": "Original installment/article unheld; ordinary available routes did not provide original body",
+      "checked_at": "2026-10-04T02:47:27+00:00",
+      "metadata_url": "https://www.jstor.org/stable/i40142559",
+      "previous_access_evidence": "Official volume contents lists author/title/pages; Tübingen bibliographic record KEI00106361 agrees. Ordinary article open returned one-line HTML without body; no edition bytes acquired.",
+      "article_url": "https://www.jstor.org/stable/43582665"
+    },
+    {
+      "source_id": null,
+      "short_label": "Driver1930AMagicBowl",
+      "citation": "G. R. Driver, A Magic Bowl, Revue d’Assyriologie27 (1930):61–64",
+      "requirement": "Original pp61–64 and images, Ashmolean1930.41; compare original transcription/translation with Gordon’s reported corrections without substituting catalogue quotes for original edition.",
+      "priority": 2,
+      "status": "Original installment/article unheld; ordinary available routes did not provide original body",
+      "checked_at": "2026-10-04T02:47:27+00:00",
+      "metadata_url": "https://pure.rug.nl/ws/portalfiles/portal/3424478/07_litopg.pdf",
+      "previous_access_evidence": "Citation independently reported in held Gordon catalogue277; university bibliography search agrees. Searches for exact author/title, JSTOR and Gallica records did not yield an accessible original edition. No paywall/HTTP-status diagnosis or complete journal absence claim."
     }
   ],
   "acquisition_and_reading_completion_separate": true,

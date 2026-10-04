@@ -2,42 +2,42 @@
 
 ## Identity review
 
-- Working physical identity hypotheses (all statuses): **1887**
+- Working physical identity hypotheses (all statuses): **1904**
 - Multi-record identity clusters: **221**
-- Underlying source records (all identities): **2239**
+- Underlying source records (all identities): **2256**
 - Pending dedupe decisions: **0**
 
 ## Identity-level coverage
 
 | Field | Identities | Coverage |
 |---|---:|---:|
-| Location | 1286 | 68.2% |
-| Provenance | 375 | 19.9% |
-| Dating | 484 | 25.6% |
-| Dimensions | 670 | 35.5% |
-| Material | 410 | 21.7% |
-| Language | 1028 | 54.5% |
-| Script | 98 | 5.2% |
-| Text Edition | 575 | 30.5% |
-| Translation | 590 | 31.3% |
-| Image | 622 | 33.0% |
+| Location | 1310 | 68.8% |
+| Provenance | 398 | 20.9% |
+| Dating | 484 | 25.4% |
+| Dimensions | 694 | 36.4% |
+| Material | 410 | 21.5% |
+| Language | 1038 | 54.5% |
+| Script | 106 | 5.6% |
+| Text Edition | 575 | 30.2% |
+| Translation | 590 | 31.0% |
+| Image | 622 | 32.7% |
 
 ## Completeness distribution
 
 | Core fields present | Identities |
 |---|---:|
-| 0–2 of 10 | 617 |
-| 3–5 of 10 | 949 |
-| 6–8 of 10 | 307 |
+| 0–2 of 10 | 610 |
+| 3–5 of 10 | 967 |
+| 6–8 of 10 | 313 |
 | 9–10 of 10 | 14 |
 
 ## Next-action queue
 
 | Next action | Identities |
 |---|---:|
-| Location | 601 |
-| Provenance | 1003 |
-| Dating | 67 |
+| Location | 594 |
+| Provenance | 1004 |
+| Dating | 90 |
 | Dimensions | 139 |
 | Material | 24 |
 | Language | 7 |
@@ -47,7 +47,7 @@
 
 ## Claim conflicts
 
-**538** identities triggered raw difference flags. Current reviews support **568** compatible field-level instances and **16** substantive instances. **608** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
+**550** identities triggered raw difference flags. Current reviews support **568** compatible field-level instances and **16** substantive instances. **621** instances require review or revalidation; these are not established contradictions. No source claim or historical decision was deleted.
 
 ## Recommended private research UI
 

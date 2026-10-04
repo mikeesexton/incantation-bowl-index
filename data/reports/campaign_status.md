@@ -1,17 +1,17 @@
 # Discovery campaign status
 
-Generated: `2026-10-04T02:22:43+00:00`
+Generated: `2026-10-04T02:47:45+00:00`
 
 ## Corpus
 
-- Candidate objects: **2239**
+- Candidate objects: **2256**
 - Unclassified claim fields: **['adversary_or_target', 'associated_find_history', 'catalogue_script', 'dated_edition_pointer', 'dated_publication_lead', 'dated_publication_notice', 'edition_language_and_script_label', 'image_attribution', 'imaging_method', 'inscription_line_count', 'language', 'layout', 'length_cm', 'neck_width_cm', 'photograph_credit', 'physical_form', 'physical_or_layout_note', 'project_summary', 'provenance_warning', 'publication_number', 'publication_reference', 'reading_uncertainty', 'reported_collection_location', 'reported_date', 'reported_diameter', 'reported_findspot', 'reported_height', 'script_observation', 'source_designation_variant', 'source_language_or_script_label', 'source_reported_publication_concordance', 'supernatural_name_or_class', 'width_cm']**
-- Estimated distinct objects after resolved dedupe: **1887**
+- Estimated distinct objects after resolved dedupe: **1904**
 - Resolved duplicate records: **352**
 - Same source duplicate identifier groups: **2**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
-- Source appearances: **2851**
+- Source appearances: **2868**
 - Sources: **970**
 - Dedupe clusters pending: **0**
 - Objects with text: **1006**
@@ -76,16 +76,16 @@ Generated: `2026-10-04T02:22:43+00:00`
 
 | Dimension | Value | Objects |
 |---|---|---:|
-| object type | whole_bowl | 1513 |
-| object type | fragment | 374 |
+| object type | whole_bowl | 1528 |
+| object type | fragment | 376 |
 | object type | uncertain | 331 |
 | object type | lost_or_unlocated | 14 |
 | object type | non_bowl | 7 |
-| record status | candidate | 1035 |
+| record status | candidate | 1052 |
 | record status | probable | 923 |
 | record status | confirmed | 273 |
 | record status | rejected | 8 |
-| authenticity | unassessed | 1705 |
+| authenticity | unassessed | 1722 |
 | authenticity | accepted | 441 |
 | authenticity | pseudo_script | 88 |
 | authenticity | uncertain | 3 |

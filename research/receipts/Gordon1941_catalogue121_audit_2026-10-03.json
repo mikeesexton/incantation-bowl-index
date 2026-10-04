@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "checkpoint": 121,
+  "created_at": "2026-10-04T02:47:27+00:00",
+  "goal_status": "active",
+  "prior_turn_classification": "progress",
+  "current_turn_classification": "progress",
+  "corpus_before": "5a6d893eb19f4b857ddb40bae08c17a75b1279457ecff4438f296a7acfa9e16d",
+  "corpus_after": "5cd90d7f074e6a39589c2c2c1bbee7cac13c9878df01ab022cc0daf2db581fd2",
+  "corpus_changed": true,
+  "new_objects": 17,
+  "new_appearances": 17,
+  "new_identifiers": 20,
+  "new_claims": 168,
+  "new_media_rows": 18,
+  "new_text_rows": 0,
+  "new_reading_rows": 0,
+  "new_captures": 0,
+  "new_sources": 0,
+  "new_source_corrections": 1,
+  "new_document_assessments": 1,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1904,
+  "total_text_rows": 2380,
+  "total_reading_rows": 1634,
+  "checked_reading_rows": 1578,
+  "partial_reading_rows": 55,
+  "unreviewed_reading_rows": 1,
+  "total_media": 2204,
+  "total_local_images": 1293,
+  "total_captures": 97,
+  "registered_PDF_sources": 66,
+  "PDF_appearance_bearing_sources": 59,
+  "PDF_appearances": 1374,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 32,
+  "frozen_unlinked_now": 217,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 24,
+  "new_acquisition_requests": 3,
+  "allowance_resets_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 88,
+    "sources_with_document_assessments": 82,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 68,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "scope": "Checkpoint121: all24Gordon1941catalogue designations have168individual source-attributed historical dimension/collection/condition/language/writing/layout/iconography/origin/pointer claims.17newsource-specific unassessed candidates/17appearances/20scopedidentifiers/18complete cataloguepage scans. Two rim fragments separate; two existing secondary candidate links remain0.7/unverifiedcollectionbridge. Collective Kish report gradeC/twoexceptions, original approximations preserved, writing classification not object authenticity. No new readings, identity decisions or fullcase completion. Alloldrows/fullsource snapshots retained/all1887memberships preserved/17newunmergedsingleton identities. Trialproduction39tablescompared/37exact;168claim IDs+creationtimes and20identifierIDs mapped, all evidencefields exact. Three manifests replayzero; five sourcepages/18media independently pixel-exact. Missing originalGordonfirst/concludedandDriver1930 routes recorded for acquisition, not an inferred paywall diagnosis or editionverification. Catalogue63checked/two precise nativepartials/F447notationpartial unchanged. Current1904identities/2380texts/2204media/1293images/97captures/1374PDFappearances. Frozen24932linked/217unlinked/allattempted/zero complete/no newattempts. Miri15resolved/24remaining. Sourcewide/generalcomparativeclaims/617samehandrelationship/wholeOCR remain; next Levene2007/Morgenstern2007/Ford2002/Gfinal/217publicationcases/Watermanbridge. Goalactive;zeroverifiedresets/no push/deploy/contact/purchase/authenticity/rights decisions.",
+  "next_actions": [
+    "Levene2007Moussaieff164/Morgenstern2007BM91767/Ford2002BM91715/BM91780/DC37(R)/GordonGfinal;217publicationcases/Watermanbridge.",
+    "GeneralGordon1941discussion/617samehandrelationship/sourcewideOCR; originalGordonText8/9/Driver routes queued.",
+    "Two catalogue pairedsign/uppermark partials/F447three-symbol finalnotation remain specialistcopy scopes, not acquisition failures."
+  ],
+  "private_campaign_progress_index": {
+    "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/campaign_case_progress_checkpoint121.json",
+    "sha256": "2f03e560660ae4ef696697dd3cd58915973ee3abba7a96f434f05c35aadd2afe"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/held_pdf_inventory_checkpoint121.json",
+    "sha256": "b2175b78b93a13cfe05e9240811481861ae802b65aff4012084817184f2c60c3"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/non_pdf_holdings_checkpoint121.json",
+    "sha256": "008ac98c5db8ad7c242d52885c9d40981057895849d137dbb62555b4f7311bb6"
+  },
+  "validation": {
+    "corpus_after": "5cd90d7f074e6a39589c2c2c1bbee7cac13c9878df01ab022cc0daf2db581fd2",
+    "changed_tables": [
+      "appearance_object_links",
+      "appearances",
+      "claims",
+      "document_assessments",
+      "identifiers",
+      "media",
+      "objects",
+      "source_corrections",
+      "sources"
+    ],
+    "table_deltas": {
+      "objects": 17,
+      "appearances": 17,
+      "appearance_object_links": 17,
+      "identifiers": 20,
+      "claims": 168,
+      "media": 18,
+      "document_assessments": 1,
+      "source_corrections": 1,
+      "sources": 0
+    },
+    "unchanged_tables": 30,
+    "all_original_rows_or_full_source_snapshots_retained": true,
+    "all1887_prior_identity_memberships_retained": true,
+    "new_unmerged_candidates": 17,
+    "all24_source_claimsets_verified": true,
+    "all39tables_compared": true,
+    "all37_other_tables_exact": true,
+    "new_claims_all_evidence_fields_exact": true,
+    "new_identifiers_all_evidence_fields_exact": true,
+    "no_new_readings_or_identity_decisions": true,
+    "all_three_manifests_replay_zero": true,
+    "logs": [
+      {
+        "arguments": [
+          "ingest",
+          "candidate"
+        ],
+        "exit_code": 0,
+        "stdout": "ingested 24 records\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest-document-assessment"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"changed\": 0,\n  \"document_assessment_rows\": 88,\n  \"entries\": 1,\n  \"sources_with_complete_documents\": 75,\n  \"sources_with_complete_object_level_extraction\": 30,\n  \"sources_with_corrected_rich_text\": 0,\n  \"sources_with_document_assessments\": 82,\n  \"sources_with_object_level_extraction\": 68,\n  \"sources_with_ocr\": 8,\n  \"sources_with_physically_inspected_documents\": 0\n}\n",
+        "stderr": ""
+      },
+      {
+        "arguments": [
+          "ingest-source-corrections"
+        ],
+        "exit_code": 0,
+        "stdout": "{\n  \"applied\": 0,\n  \"unchanged\": 1\n}\n",
+        "stderr": ""
+      }
+    ],
+    "all_pixel_exact": true,
+    "source_pages_verified": 5,
+    "derived_media_verified": 18,
+    "actual_view_scope": "All five complete catalogue pages276–280 viewed; prose/measurements read. No new native collation in this metadata batch.",
+    "reader": {
+      "audit_checks": "7/7",
+      "corrected_source_note_verified_in_database": true,
+      "reader_projected_source_metadata_matches_database": true,
+      "source_notes_not_reader_schema": true,
+      "all_text_contents_attributions_classifications_and_statuses_verified": 2380,
+      "all_media_assignments_verified": 2204,
+      "all_local_image_hashes_verified": 1293,
+      "all_capture_hashes_and_source_assignments_verified": 97,
+      "all_identity_memberships_and_counts_verified": 1904,
+      "prior_linkages_and_retained_unmerged_pair_verified": true,
+      "CBS9012_four_member_identity_retained": true,
+      "frozen_cases_extended": 0,
+      "all_original_members_and_earlier_histories_retained": true,
+      "python_tests": "413 passed",
+      "node_tests": "57 passed",
+      "reader_build_order": "After both test suites passed",
+      "live_runtime": "Local build only; no deployment/server restart"
+    },
+    "python_tests": "413 passed",
+    "node_tests": "57 passed",
+    "total_tests_passed": 470,
+    "reader_build_after_both_test_suites_passed": true,
+    "allowance_check": {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/allowance-check.json",
+      "sha256": "6c43498fe95217e440e9dafce9b653ba2ca733af4ddbb70b3bd0d0cb2736da9b"
+    },
+    "geographic_reference": "Exact Kish string mapped to coordinate-free named-place reference; source claim gradeC/uncertainty unchanged.",
+    "initial_trial_failure": "Unsupported certainty label rejected with whole-batch rollback. Full rejected draft retained; permitted reported label used with project evidence-basis notes unchanged.",
+    "initial_test_failure": "Kish mapping absent; reference added without inferred point. Final470tests passed."
+  },
+  "review_manifests": [
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue121_claims_2026-10-03.jsonl",
+      "sha256": "14acb36431f066933b01788982124e201650e5886f1ae2c0a08f03ad1798db65"
+    },
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue121_documents_2026-10-03.json",
+      "sha256": "d4215a193ce87e7150dff69be0890f49d0d0193be67b62b36f95a566d330e0b7"
+    },
+    {
+      "path": "data/private/manifests/Gordon1941_catalogue121_source_2026-10-03.json",
+      "sha256": "f4cc8bae24926bdf110dd6e7580cf3dcce9386ad740c3efd78aeaec791d99904"
+    }
+  ],
+  "protected_payloads": "Source expression/PDF/pixels/OCR/manifests private outsideGit; Git content-free receipts/hashpointers only.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0121_Gordon1941_catalogue_claims.json",
+      "sha256": "e03e84582d1e4fbdef62964b5873dfd53efa1f033df8305e7faaa9a3a6b61027"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/campaign_case_progress_checkpoint121.json",
+      "sha256": "2f03e560660ae4ef696697dd3cd58915973ee3abba7a96f434f05c35aadd2afe"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/catalogue-current-inventory.json",
+      "sha256": "60add179a31326b0cd5cdd8a74cf6521753c1292eb988d31c0470c39993373e1"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/cross-table-matches.json",
+      "sha256": "2404464b2d8bc98a2ac9a7836b210bd86ac6de7d9d48ccbed0b46ef67516e284"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/fingerprint-before.json",
+      "sha256": "805d92e3367e3ddb79687ec369e225f461b99faadc88d3a4ba457fa6388b6025"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/generated-row-id-map.json",
+      "sha256": "90071d27e8d32dfc4e146ea7b048b09923eae525796c8c1f01634a389c39d538"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/held_pdf_inventory_checkpoint121.json",
+      "sha256": "b2175b78b93a13cfe05e9240811481861ae802b65aff4012084817184f2c60c3"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/identities-before.json",
+      "sha256": "020cd0a6ccb3d5fdfa8c68842029c1dad5fd6765dd60bb6de008623c3be541c9"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/media-derivation.json",
+      "sha256": "b069c9ee72135153993a72cc6341b3fb2839a8a5da84b1eb6340880e9b37180e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/metadata.json",
+      "sha256": "aa584ae1e8d6d3bba26d9322aa590862a9fbebab302f330c546553b45ca11f4c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/miri-queue-before.json",
+      "sha256": "60544f47f4b1425df35f1bb715aede25918ff7e27c323b78a99e3f3fe4a18669"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/non_pdf_holdings_checkpoint121.json",
+      "sha256": "008ac98c5db8ad7c242d52885c9d40981057895849d137dbb62555b4f7311bb6"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/pixel-verification.json",
+      "sha256": "28ad8a70ba48d0a1b83054a7b603780ba5c092b2f808819aaecc722b15d0add7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/prepare.py",
+      "sha256": "246bea51bda1e976ebf52e7d1a0c83dec12e1099e099df45dd5c139d16452637"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/production-apply.json",
+      "sha256": "4c15a71f169769d4e1982a585e59e0ff18db43cd4a22f773964544743407f9f1"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/production-replay.json",
+      "sha256": "7d214f2bf6dd83761b0ebf3317e1d5c9727640f0711c42c3c98ac0d3c940e394"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/production-verification.json",
+      "sha256": "507f812d47408483a43ab526c81407d40f3a01ef9a50d98c58efe9e495fdf77f"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/record_checkpoint.py",
+      "sha256": "dea5627b1bf5588900bbe2c6bc62d4d1bd7bd0d53bffe5969a1a2a4dc3c81ae3"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/route-observations.json",
+      "sha256": "a03acfbb3e4a18c1caad9666a099e16afbc1a0fcf1119425872f4cdc0b0d2dfe"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/run_batch.py",
+      "sha256": "8e814510a82fdce586573b3d6c050bf63fd5b173bc1469fba73e50d5e6ad1ed7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/source-evidence.json",
+      "sha256": "9b5375139d9314c89eff67557da675d4d2024c28658d2a0023db370120d54eed"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/tables-before.json",
+      "sha256": "269f67f8e053cf0d12bd66e53dd12798e43791a34efda9280ab12c4527ef6a5c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/trial-apply.json",
+      "sha256": "4c15a71f169769d4e1982a585e59e0ff18db43cd4a22f773964544743407f9f1"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/trial-replay.json",
+      "sha256": "7d214f2bf6dd83761b0ebf3317e1d5c9727640f0711c42c3c98ac0d3c940e394"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/trial-verification.json",
+      "sha256": "7b100050151411b04f6d45a79e8ce3bbc1dfe6e511d299f0da80658cf94a09e2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/verify_pixels.py",
+      "sha256": "cb1a20b6044cde5d1faa186540c744c4b53de8705bedaba4db38697b1fbdcfd7"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/reader-verification.json",
+      "sha256": "1da773d4a2a1d573fbaa6bdf8271ff2e5033f52d7eb0806877303d43fb34cf9a"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/reader-build-final.log",
+      "sha256": "320b8600f6b76971c96991c370d60e6cbc43a86c55b1b8c49305d97fb7604450"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/tests-final.log",
+      "sha256": "d705bab4ea5f6c6d409ac59720347dcdfec79b8f6549fa3265bbf7f86de7b1a1"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/node-tests-final.log",
+      "sha256": "bcfd1366f69b3bcb26a479c74fc67e2f4aee2fcce83383e0e8f668a473051df2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/verify_reader.py",
+      "sha256": "5f335d0436bad05cfe8e560c766a710cc31b892c23e1cded99d74d1d64e7bcb8"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/reports-final.json",
+      "sha256": "6aa839283d4aa21899d4010a026a6f03590c4a018372bd729ca59fa747328b87"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/regenerate.py",
+      "sha256": "d1e28ed74ab247aa04158092cd145f9039eca1d06a841bb335f705c3513571e5"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/allowance-check.json",
+      "sha256": "6c43498fe95217e440e9dafce9b653ba2ca733af4ddbb70b3bd0d0cb2736da9b"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/backup-retention.json",
+      "sha256": "4047cf940f2e1f63458c6b46e940e3f65c0fde7bd089b8e688e2bcbc8d7ef26c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/finalize.py",
+      "sha256": "256ca0418fb58069fbbfd6a5edb855131b4c2d68ca326d92a53338356a3d325c"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/rejected-certainty-draft/Gordon1941_catalogue121_claims_2026-10-03.jsonl",
+      "sha256": "37bb722f5c6d404a9f4c08b14507b1cab55adda81e6bf191d56d5bef4ae5c032"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/rejected-certainty-draft/Gordon1941_catalogue121_documents_2026-10-03.json",
+      "sha256": "0d46e5f6e81f3aa151b0350113c902e1baaa63901e6f106ecb81462d7aa8b12e"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/rejected-certainty-draft/Gordon1941_catalogue121_source_2026-10-03.json",
+      "sha256": "307175f6ede3ad3a1287a5e8f1c08dfc1c789ffd9d3e7ebfbe1a548a1d7fbbb2"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/rejected-certainty-draft/metadata.json",
+      "sha256": "e194ea399949efd391df9376462acab074d6e3916b8d86366251cd75fa1c0d3f"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/rejected-certainty-draft/prepare.py",
+      "sha256": "fb8f2f0bfe8ee86f5836696f157eba7e7d52adfd2541979b8bf3c252a951cbdd"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/rejected-certainty-draft/trial-apply.json",
+      "sha256": "22866002ac4bd5d8354cf078459b2049805f20fef1919b7bd67399864442f863"
+    },
+    {
+      "path": "data/private/research-work/Gordon1941-catalogue121-2026-10-03/tests-initial-failure.log",
+      "sha256": "8592d10d0cc4ebe43edfb87ad51deb1fdd8a561c1e329cb6939e11c089e84fae"
+    }
+  ]
+}
