@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-04T08:03:38+00:00`
+Generated: `2026-10-04T08:29:57+00:00`
 
 ## Portfolio status
 
@@ -10,7 +10,7 @@ Current phase: **Strong foundation in active use; building a checked research co
 
 | Progress measure | Current |
 |---|---:|
-| Roadmap tasks | 27 done · 31 in progress · 10 queued · 0 blocked |
+| Roadmap tasks | 28 done · 31 in progress · 10 queued · 0 blocked |
 | Quantitative handoff gates passing | 3/6 |
 | Required handoff tasks complete | 10/24 |
 
@@ -116,13 +116,13 @@ Promotion rules:
 
 Planning ranges describe collection size, not completion. The next milestone is a checked research core built from held editions and institutional cohorts. Counts of held scholarship, assessed complete documents, appearance-level extraction, original-script capture and source-page checks have different denominators; no file count or band certifies multilingual comprehensiveness.
 
-Current evidence: **234 scholarship works indexed; 66 with a source-linked held document; 136 with a classified scope; 98 awaiting scope.** The project also has **66 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work. The document ledger currently assesses **82 sources**, including **75 complete documents** and **71 with object-level extraction**.
+Current evidence: **234 scholarship works indexed; 67 with a source-linked held document; 136 with a classified scope; 98 awaiting scope.** The project also has **67 source-linked PDF captures** across all source types; a PDF can still be an excerpt or front matter rather than a complete work. The document ledger currently assesses **84 sources**, including **75 complete documents** and **72 with object-level extraction**.
 
 | Band | Complete or inspected core works | Additional from current holdings | What must also be true |
 |---|---:|---:|---|
 | Strong foundation | 15–30 | 0–0 | Core bibliography and external control list are present; holdings are provenance- and hash-tracked; at least one reference cohort is fully checked |
-| Visibly impressive / plausibly comprehensive | 50–75 | 0–9 | All high-impact LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
-| Expert-comprehensive | 150–200 | 84–134 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
+| Visibly impressive / plausibly comprehensive | 50–75 | 0–8 | All high-impact LC priorities plus balanced JBA, Mandaic, Syriac, Pahlavi, early-edition and thematic coverage; most high-impact works are enumerated at object level |
+| Expert-comprehensive | 150–200 | 83–133 | At least 90% of a defensible multilingual control corpus is held or inspected, every missing core work has a documented disposition, and independent experts find no systematic bibliographic or language-tradition gap |
 
 ## Current scope snapshot
 
@@ -132,9 +132,9 @@ Current evidence: **234 scholarship works indexed; 66 with a source-linked held 
 | Working physical identity hypotheses (all statuses) | 1906 |
 | Source appearances | 2891 |
 | Sources | 978 |
-| Source documents with current assessments | 82 |
+| Source documents with current assessments | 84 |
 | Source documents assessed complete | 75 |
-| Source documents with object-level extraction | 71 |
+| Source documents with object-level extraction | 72 |
 | Pending dedupe decisions | 0 |
 | Identities triggering raw claim-difference flags | 550 |
 | Triaged claim-field differences | 584/1205 |
@@ -246,7 +246,7 @@ Maturity is tracked by workstream, not collapsed into a misleading single score.
 ## Current priority order
 
 1. TEXT-009/TEXT-010/TEXT-003: close the 45 native-script gaps in the frozen 99 held-source roster. Prioritize 32 unrecovered character editions (Pognon 31 Mandaic and Ellis 6 Syriac), then 13 Hebrew-letter transliterations still lacking actual Syriac/Mandaic-script text. All forty Montgomery entries already have working edition text; full letter/diacritic collation and independent interpretation remain open. A retained page image or back-converted transliteration does not close native recovery.
-2. Active research Goal: package Ford’s checked nonbowl contextual copies for Mike’s searchable reader in the next separate OPS checkpoint, alongside lawful preview/auxiliary registration. Ford113checked bowl rows remain exact;38new context units plus prior DC37pair excluded from bowl metrics. Finish residual dictionary/gloss/prosequotation/general/person/ritual/allreference inventory; then GordonG/heldMorgenstern–Levene editions/remaining216publicationcases/exactKelseyfield bridge. Frozen249:33linked/216unlinked,zero wholecasecompletions. Miri15resolved/32requests; exact Drower1937p595original nowqueued. Waterman browser session remains stopped by URL guard.
+2. Active research Goal: finish Ford2002 residual dictionary/gloss/prosequotation/general/person/ritual/allreference inventory, then GordonG/heldMorgenstern–Levene editions/remaining216publicationcases/exactKelseyfield bridge. All113Fordbowl readingrows checked;40nonbowl contexts now separately searchable in Mike Access. Lawful auxiliary2005preview/publisherHTMLcaptures registered and precisely classified, originalfullbodies remain unheld. Frozen249:33linked/216unlinked,zero wholecasecompletions. Miri15resolved/32requests. Waterman browser session remains stopped by URL guard.
 3. TEXT-001/CONC-003/CONC-004: investigate all249original campaign cases, now33linked/216unlinked/allattempted/zero wholecasescomplete. Current probable/confirmed reference coverage835/1,052 needs7additional evidence-backed dispositions for80%gate. Prioritize exactNLI/Schøyen/Nippur and documented archival routes; retain actual-link safeguard and reject negative findings based on catalogue silence. Keep unlisted Moussaieff/IAA/Scholem groups and source disagreements for evidence-bound review.
 4. CONC-005/QA-004/CONC-007: current generated conflict report has48stale instances/608requiring review or revalidation. Check current Penn fingerprints against actual source context. Three publication registry keys need sourced entries:Ford-Abudraham2018/Lidzbarski1902/Yamauchi1967. Preserve historical decisions and human adjudication boundaries; flags are not established errors.
 5. SCHOL-005/CONC-001: pursue authorized Segal 2000 access for exact numbers, BM068A, texts and the 142/159 explanation. The 159 BM publication relations already supply edition links. Check outstanding Isbell 1975, TMH 7, Naveh–Shaked 1998, Yamauchi 1967 requests and complete Naveh–Shaked 1993; library availability must be freshly verified.
@@ -523,6 +523,9 @@ Prepare a private, recoverable, observable 24/7 research worker that detects cha
   - Done when: Continuous collectors run for 14 days with no silent data loss, uncontrolled duplicates, rights leakage, or unresolved operational failures; alerts are reviewed for usefulness.
 - [ ] **OPS-005 — Adopt collect-and-flag autonomy boundaries** · Queued · Research owner
   - Done when: Written policy and tests ensure agents may collect appearances and open leads but may not auto-merge uncertain objects, adjudicate claims/authenticity, clear rights, or publish.
+- [x] **OPS-006 — Package validated private source contexts and held capture provenance** · Done · Engineering
+  - Done when: Mike Access exposes all registered checked source-context passages with exact content, source/capture hashes, locators, uncertainty and source checks; public/shared surfaces cannot expose them. Held auxiliary capture transfer validates actual original robots evidence without inventing retrieval or permission.
+  - Evidence/status: Checkpoint134: all40retained source-copy-checked Ford nonbowl contexts now validated and searchable in Mike Access, with Hebrew/English content, scholarly attribution, actual locators, source hashes, separate correction/deletion notes and source-page links. They remain outside bowl reading/edition metrics and every shared/public projection. Local source-file route now accepts all registered bounded opaque CAPIDs without path traversal. Three fresh ordinary auxiliary captures reproduce earlier held bytes exactly:2005Yamauchi44pagefacsimile preview plus twoPeeterspublisherHTMLmetadata/subscription responses. Exact original capture receipts/UTCtimes/headers and actual404robots bytes/response evidence retained; zero further requests on transfer. Dedicated support for verified404transfer matches unchanged collector policy without fabricated200permission. Preview assessedexcerpt/partialbibliographic extraction; article citationonly/no body, not a complete held edition. All2502bowltexts/113Fordrows unchanged. Goal sourcewide Ford and249case audit remains incomplete. See research/receipts/source_contexts_134_audit_2026-10-04.json. No deployment/public release.
 
 ### QA — Evidence quality and regression controls
 
@@ -616,6 +619,7 @@ A source-specific collector becomes eligible only when it has a stable lawful en
 
 ## Change log
 
+- **2026-10-04:** Checkpoint134: all40retained source-copy-checked Ford nonbowl contexts now validated and searchable in Mike Access, with Hebrew/English content, scholarly attribution, actual locators, source hashes, separate correction/deletion notes and source-page links. They remain outside bowl reading/edition metrics and every shared/public projection. Local source-file route now accepts all registered bounded opaque CAPIDs without path traversal. Three fresh ordinary auxiliary captures reproduce earlier held bytes exactly:2005Yamauchi44pagefacsimile preview plus twoPeeterspublisherHTMLmetadata/subscription responses. Exact original capture receipts/UTCtimes/headers and actual404robots bytes/response evidence retained; zero further requests on transfer. Dedicated support for verified404transfer matches unchanged collector policy without fabricated200permission. Preview assessedexcerpt/partialbibliographic extraction; article citationonly/no body, not a complete held edition. All2502bowltexts/113Fordrows unchanged. Goal sourcewide Ford and249case audit remains incomplete.
 - **2026-10-04:** Checkpoint133: 38 newly checked nonbowl contextual copies retained privately, including DC29/DC43/Ginza longer passages and Maqlu/property/DC37/DC44/deMorgan/DC15 comparisons; two prior full DC37 copies referenced, not duplicated. Printed inline markers inside words, untranslated omissions, distinct supplied correction/proposal and deletion annotations retained. Checks verify Ford reproductions only, not original manuscripts/clay/cited editions. All113Fordbowl text rows unchanged. Five exact BMnumber source appearances and six separately attributed reported manuscript parallels/literary dependence added; no source assertion adjudicated. Original Drower1937 JRAS69(4),589–611 identified by primary Cambridge metadata, especially595lines30–32 for DC29R359–362; body remains unheld, one precise Miri request added. Entire Ford dictionary/gloss/prosequotation/general/person/ritual/allreference audit remains partial; standalone context reader packaging is next separate OPS priority.
 - **2026-10-04:** Checkpoint132: 17 further bounded Ford2002 quotation units separately copied and source-checked, including reported scholarly alternatives, tentative emendation and the addendum Latin form. All prior96Ford rows retained exactly; now113checked bounded units. Three new bibliographic sources and three exact new-source appearances/publication references locate the AfO2001/2002 studies of BM91715(132–133) and BM91780(133–134), and ResOrientalesXIV(2002) BM91715(203–205). Ford40 also references Phraseology305–306; actual publisher details confirm DOI10.2143/ARAM.11.2.504470 and subscription/purchase-only ordinary download response. Date/volume/title reports retained separately. Original article bodies remain unheld; three precise acquisition requests added for Miri. Eight complete Fordpages/three controls actually viewed;20pixelrecipes exact. Sourcewide manuscript/dictionary/Ginza/Maqlu/general claims/relationships/all-reference inventory remains partial. No identity merge, new object, scholarly adjudication, rights approval, public release or purchase.
 - **2026-10-04:** Checkpoint131 roadmap follow-up: corrected stale priority roster count32/217 to authoritative33/216 from the frozen249 index; made the current research priority readable. No corpus or research evidence change.

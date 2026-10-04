@@ -43,6 +43,12 @@
           return r.json();
         }).then(payload => payload.rows)
       : [];
+    data.sourceContexts = privateResearch() && manifest.source_contexts_url
+      ? await fetch(manifest.source_contexts_url).then(r => {
+          if (!r.ok) throw new Error("Private source passages unavailable");
+          return r.json();
+        }).then(payload => payload.rows)
+      : [];
 
     // Index by object, then roll up to the identity that owns the object.
     const owner = {};
@@ -1063,6 +1069,7 @@
       </div>
 
       ${privateResearch() ? `<section class="entry-block"><h2>Retained source files</h2>
+        ${data.sourceContexts.length ? '<p><a href="#/contexts">Search checked source passages</a></p>' : ''}
         <p class="entry-note">${data.captures.length} private captures are available here. Some
           sources have more than one version; captures without a source assignment are shown too.</p>
         <details class="scope-group"><summary>Browse the private source archive
@@ -1107,6 +1114,43 @@
       </section>`;
   }
 
+  function contextPassages(rows, query) {
+    if (!privateResearch()) return '';
+    const terms = String(query || '').toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+    const matched = rows.filter(row => {
+      const words = [row.reference, row.content, row.locator, row.editor, row.citation, row.notes]
+        .join(' ').toLocaleLowerCase();
+      // Printed line anchors can split words; search can join those pieces
+      // while the displayed and retained source copy remains untouched.
+      const joined = words.replace(/\(\d{1,4}\)/g, '');
+      return terms.every(term => words.includes(term) || joined.includes(term));
+    });
+    const labels = {provided_translation: 'Translation', provided_transcription: 'Transcription',
+      transliteration: 'Transliteration'};
+    return `<p class="entry-note">${matched.length} of ${rows.length} passages</p>` + matched.map(row =>
+      `<article class="entry-block source-context"><h2>${esc(row.reference)} · ${esc(labels[row.kind] || row.kind)}</h2>
+       <p class="entry-note">${esc(row.editor)} · Checked against source copy</p>
+       <div class="reading-text" dir="${row.script === 'Hebrew' ? 'rtl' : 'ltr'}">${esc(row.content).replace(/\n/g, '<br>')}</div>
+       <details><summary>Source and reading notes</summary>
+         <p>${esc(row.citation)}<br>${esc(row.locator)}</p>
+         ${row.source_url ? `<p><a href="${esc(row.source_url)}" target="_blank" rel="noopener noreferrer">View source</a></p>` : ''}
+         <p>${esc(row.notes)}</p>
+         ${(row.editorial_annotations || []).map(a => `<p>${esc(a.substring)}: ${esc(a.annotation)}</p>`).join('')}
+       </details></article>`).join('');
+  }
+
+  function renderContexts(view) {
+    if (!privateResearch()) { renderScholarship(view); return; }
+    view.innerHTML = `<div class="context-page"><div class="reading-head"><h1 id="explore-title">Source passages</h1>
+      <p class="standfirst">Quoted passages and manuscript comparisons, kept separately from bowl inscriptions.</p>
+      <label for="context-query">Search passages</label>
+      <input id="context-query" type="search" autocomplete="off"></div><div id="context-results"></div></div>`;
+    const results = view.querySelector('#context-results');
+    const input = view.querySelector('#context-query');
+    const show = () => { results.innerHTML = contextPassages(data.sourceContexts, input.value); };
+    input.addEventListener('input', show); show();
+  }
+
   async function render() {
     const view = document.querySelector("#explore-view");
     if (!view) return;
@@ -1120,7 +1164,8 @@
     const hash = location.hash;
     const browse = hash.match(/^#\/explore\/browse\/([a-z_]+)/);
     const object = hash.match(/^#\/explore\/(IDENT-[^?]+)/);
-    if (hash.startsWith("#/scholarship")) renderScholarship(view);
+    if (hash.startsWith("#/contexts")) renderContexts(view);
+    else if (hash.startsWith("#/scholarship")) renderScholarship(view);
     else if (hash.startsWith("#/explore/publications")) renderPublications(view);
     else if (browse) renderBrowse(view, browse[1]);
     else if (object) renderObject(view, decodeURIComponent(object[1]));

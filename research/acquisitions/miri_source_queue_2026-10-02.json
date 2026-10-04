@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T08:01:36+00:00",
+  "updated_at": "2026-10-04T08:27:22+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -113,7 +113,7 @@
       "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
       "capture_id": "CAP-IBI-CP107-FORD2002",
       "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
-      "status": "Complete requested Ford article held;113bowl reading rows checked plus38new nonbowl context copies; sourcewide extraction partial.",
+      "status": "Complete Ford article held;113checked bowlrows and40separately searchable checked nonbowl contexts; sourcewide extraction partial.",
       "resolved_at": "2026-10-03T19:57:24+00:00",
       "checkpoint": 107,
       "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
@@ -128,9 +128,9 @@
         "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
         "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
       },
-      "reading_audit": "Checkpoint133: 38 newly checked nonbowl contextual copies retained privately, including DC29/DC43/Ginza longer passages and Maqlu/property/DC37/DC44/deMorgan/DC15 comparisons; two prior full DC37 copies referenced, not duplicated. Printed inline markers inside words, untranslated omissions, distinct supplied correction/proposal and deletion annotations retained. Checks verify Ford reproductions only, not original manuscripts/clay/cited editions. All113Fordbowl text rows unchanged. Five exact BMnumber source appearances and six separately attributed reported manuscript parallels/literary dependence added; no source assertion adjudicated. Original Drower1937 JRAS69(4),589–611 identified by primary Cambridge metadata, especially595lines30–32 for DC29R359–362; body remains unheld, one precise Miri request added. Entire Ford dictionary/gloss/prosequotation/general/person/ritual/allreference audit remains partial; standalone context reader packaging is next separate OPS priority.",
+      "reading_audit": "Checkpoint134: all40retained source-copy-checked Ford nonbowl contexts now validated and searchable in Mike Access, with Hebrew/English content, scholarly attribution, actual locators, source hashes, separate correction/deletion notes and source-page links. They remain outside bowl reading/edition metrics and every shared/public projection. Local source-file route now accepts all registered bounded opaque CAPIDs without path traversal. Three fresh ordinary auxiliary captures reproduce earlier held bytes exactly:2005Yamauchi44pagefacsimile preview plus twoPeeterspublisherHTMLmetadata/subscription responses. Exact original capture receipts/UTCtimes/headers and actual404robots bytes/response evidence retained; zero further requests on transfer. Dedicated support for verified404transfer matches unchanged collector policy without fabricated200permission. Preview assessedexcerpt/partialbibliographic extraction; article citationonly/no body, not a complete held edition. All2502bowltexts/113Fordrows unchanged. Goal sourcewide Ford and249case audit remains incomplete.",
       "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
-      "reading_audit_checked_at": "2026-10-04T08:01:36+00:00",
+      "reading_audit_checked_at": "2026-10-04T08:27:22+00:00",
       "checkpoint126_prior_reading_audit": {
         "source_id": "SRC-FORD2002-JANES",
         "fulfilled_by_source_id": "SRC-FORD2002-JANES",
@@ -533,6 +533,10 @@
       "checkpoint133_prior_reading_audit": {
         "path": "data/private/research-work/Ford2002-133-2026-10-04/miri-queue-before.json",
         "sha256": "21a37c6927b4f4357b0ae37039ca4472efd24f48cd1c5fa60c10b145fdb2461e"
+      },
+      "checkpoint134_prior_reading_audit": {
+        "path": "data/private/research-work/source-contexts-134-2026-10-04/miri-queue-before.json",
+        "sha256": "3a0adc93844b9e7cd49933f34c2fc5621ace30f2e93cf94b0e35176e61893f61"
       }
     },
     {
@@ -1317,5 +1321,9 @@
   "checkpoint133_source_extraction": {
     "path": "data/private/research-work/Ford2002-133-2026-10-04/extraction-index.json",
     "sha256": "60b5e40870cf46b2b8abcc8489168bb460091f681bb884fc0d25ed9cd81f8331"
+  },
+  "checkpoint134_private_context_registry": {
+    "path": "data/private/reader/source_contexts.json",
+    "sha256": "c6bf58d526948886baa09d259de21f0f97d20bc15e766a5533dcabab6bde95fd"
   }
 }

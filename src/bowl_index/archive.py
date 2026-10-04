@@ -177,7 +177,8 @@ def import_capture_receipts(conn, manifest, project_root):
             if receipt['mime_type'] == 'application/pdf' and not body.read_bytes().startswith(b'%PDF-'):
                 raise ValueError('Expected actual PDF bytes')
             robots = checked(entry['robots_path'], entry['robots_sha256'])
-            if entry.get('robots_status_code') != 200 or not entry.get('retrieval_basis', '').strip():
+            robots_status = entry.get('robots_status_code')
+            if robots_status not in (200, 404) or not entry.get('retrieval_basis', '').strip():
                 raise ValueError('Original robots response and retrieval basis required')
             parser = urllib.robotparser.RobotFileParser()
             expected = urlparse(receipt['url'])
@@ -185,7 +186,21 @@ def import_capture_receipts(conn, manifest, project_root):
             if entry.get('robots_url') != robots_url:
                 raise ValueError('Robots evidence host differs')
             parser.set_url(robots_url)
-            parser.parse(robots.read_text().splitlines())
+            if robots_status == 404:
+                # RobotFileParser.read() permits a verified missing robots file.
+                # Retain the actual404 bytes and a separate original response
+                # receipt; never parse those bytes as a200 permission statement.
+                response = json.loads(checked(entry['robots_response_path'],
+                                              entry['robots_response_sha256']).read_text())
+                observed = datetime.fromisoformat(response['retrieved_at'].replace('Z', '+00:00'))
+                if (response['url'] != robots_url or response['status_code'] != 404
+                        or response['body_sha256'] != entry['robots_sha256']
+                        or observed.utcoffset() is None or observed.utcoffset().total_seconds() != 0
+                        or observed > captured_at):
+                    raise ValueError('Verified missing-robots response differs')
+                parser.allow_all = True
+            else:
+                parser.parse(robots.read_text().splitlines())
             if not parser.can_fetch(USER_AGENT, receipt['url']):
                 raise ValueError('Original robots evidence does not permit retrieval')
             existing = conn.execute('SELECT * FROM captures WHERE id=? OR (url=? AND sha256=?)',

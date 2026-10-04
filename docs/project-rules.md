@@ -273,6 +273,12 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   database, retrieval receipt, archived bytes and original robots evidence by
   hash. This preserves the original retrieval row and makes no new network
   request or access-permission claim. It cannot replace an existing capture.
+  A verified missing robots response (404) may be transferred under the original
+  collector's `RobotFileParser` policy only with the actual404body and a hash-bound
+  original response receipt (URL, status, body hash and UTC time before capture).
+  Do not substitute a200permission file or infer permission from an unverified
+  failure. Earlier raw auxiliary responses lacking a complete capture receipt
+  remain separate evidence; obtain a fresh ordinary capture if needed.
 - Researcher-supplied local files can be archived with `ibi ingest-deposits`.
   The manifest binds file hashes, work assignments, stable capture IDs and a UTC
   deposit time; whole-batch validation precedes append-only intake. New sources

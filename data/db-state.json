@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "4f91efc4dc59c1baf6dcf4a131339520d5070d645a9d4281a508f217a29dadef",
+  "corpus_digest": "a6d8872060dff4062db936ecc7ac35f7f0d82ed0ba3159714b7c9049dd8bff2b",
   "migrations": 21,
-  "note": "Checkpoint133:38private nonbowl Ford contexts,5exact BMappearances/6reported manuscript relationships,1Drower source and1partial document assessment;all113prior Ford texts exact;484tests/7readerchecks.",
-  "recorded_at": "2026-10-04T08:04:54+00:00",
+  "note": "Checkpoint134: 40 checked private source contexts searchable; 3 verified auxiliary captures and 2 scoped document assessments. All old corpus rows unchanged; 505 tests and 8 reader audits passed.",
+  "recorded_at": "2026-10-04T08:42:54+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -23,8 +23,8 @@
       "rows": 3
     },
     "captures": {
-      "digest": "e88888c55fdfa91e05e02cb771864e3e2c12f2950ad5e0694231b9b4bc78e57e",
-      "rows": 98
+      "digest": "7392543c85d0bb120895cf870b4b13a6bf0db899800ed0845d44cc3ae46525bb",
+      "rows": 101
     },
     "catalogue_metadata_corrections": {
       "digest": "0a25edd061dfa9a469df2b7dc3eea92d55de7b38baede0ff26eb45acd09c867b",
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "5d029fd6f6f0c108f89bae5c366b5b27307099573315d8f4c827189f489f5f9a",
-      "rows": 157
+      "digest": "b63aba45f2c688794a3d61aa8400431889bbb910291e65f2052b598137cf9589",
+      "rows": 159
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",

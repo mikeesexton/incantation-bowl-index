@@ -30,7 +30,7 @@ WEB_ROOT = PROJECT_ROOT / "web"
 PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
 PRIVATE_MEDIA_NAME = re.compile(r"^MED-[A-F0-9]{12}\.png$")
 PRIVATE_ARCHIVE_ROOT = PROJECT_ROOT / "data" / "private" / "archive"
-PRIVATE_CAPTURE_NAME = re.compile(r"^CAP-[A-F0-9]{12}$")
+PRIVATE_CAPTURE_NAME = re.compile(r"^CAP-[A-Z0-9][A-Z0-9-]{0,127}$")
 INTRO_COVERAGE = ("text_edition", "provenance", "image")
 
 
@@ -205,6 +205,7 @@ class CorpusCatalog:
                     row["search_blob"] += " " + " ".join(labels).casefold()
             generated_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
             manifest = private_manifest(projection, projection_tables, generated_at)
+            source_context_rows = projection.source_contexts()
             capture_rows = capture_inventory(
                 conn, lambda row: "/api/private-captures/" + row["id"]
             )
@@ -280,6 +281,7 @@ class CorpusCatalog:
             self.projection_tables = projection_tables
             self.projection_manifest = manifest
             self.private_capture_rows = capture_rows
+            self.private_source_context_rows = source_context_rows
             self.intro_snapshot = payload
 
     @_catalog_locked
@@ -677,6 +679,8 @@ def make_handler(catalog, token):
                     self._json(catalog.reader_manifest())
                 elif path == "/api/private-captures":
                     self._json({"rows": catalog.private_capture_rows})
+                elif path == "/api/private-source-contexts":
+                    self._json({"rows": catalog.private_source_context_rows})
                 elif path.startswith("/api/reader/"):
                     result = catalog.reader_table(path.rsplit("/", 1)[-1], params)
                     self._json(result) if result else self._error(404, "No such projected table")

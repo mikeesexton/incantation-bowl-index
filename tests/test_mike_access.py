@@ -82,6 +82,29 @@ class MikeAccessBuildTests(unittest.TestCase):
         self.assertEqual(snapshot["access"]["audience"], "Mike alone")
         self.assertTrue(all(check["passed"] for check in snapshot["audit_checks"]))
 
+    def test_all_registered_contexts_are_private_and_separate_from_bowls(self):
+        registry=json.loads((ROOT/'data/private/reader/source_contexts.json').read_text())
+        rows=json.loads((build.OUT/'data/source_contexts.json').read_text())["rows"]
+        self.assertEqual({r['id']for r in rows},{r['id']for r in registry['entries']})
+        texts=json.loads((build.OUT/'data/texts.json').read_text())["rows"]
+        self.assertFalse({r['id']for r in rows}&{r['id']for r in texts})
+        for row in rows:
+            entry=next(x for x in registry['entries']if x['id']==row['id'])
+            self.assertEqual(row['content'],(ROOT/entry['artifact']['path']).read_text().removesuffix('\n'))
+            self.assertEqual(row['notes'],entry['notes'])
+            self.assertNotIn('artifact',row)
+        shell=(build.OUT/'index.html').read_text()
+        self.assertIn('href="#/contexts"',shell)
+
+    def test_registered_nonnumeric_capture_ids_resolve_and_paths_cannot_escape(self):
+        from bowl_index.web import CorpusCatalog
+        catalog=CorpusCatalog(build.DEFAULT_DB)
+        captures=json.loads((build.OUT/'data/captures.json').read_text())["rows"]
+        for row in captures:
+            self.assertIsNotNone(catalog.private_capture(row['id']))
+        self.assertIsNone(catalog.private_capture('../CAP-IBI-CP107-FORD2002'))
+        self.assertIsNone(catalog.private_capture('CAP-unknown'))
+
     def test_every_recorded_source_capture_is_packaged(self):
         snapshot = json.loads((build.OUT / "private-snapshot.json").read_text(encoding="utf-8"))
         manifest = json.loads((build.OUT / "data" / "manifest.json").read_text(encoding="utf-8"))

@@ -12,6 +12,7 @@ from .db import PROJECT_ROOT
 from .documents import source_document_status
 from .projection import Projection
 from .proofreading import current_text_reviews
+from .source_contexts import source_context_inventory
 
 
 DEFAULT_PRIVATE_MEDIA_ROOT = PROJECT_ROOT / "data" / "private" / "media"
@@ -32,6 +33,8 @@ class PrivateResearchProjection(Projection):
         self.media_root = Path(media_root or DEFAULT_PRIVATE_MEDIA_ROOT)
         self.capture_base = capture_base
         self.capture_links = {}
+        self.capture_urls = capture_urls or {}
+        self.capture_base = capture_base
         if capture_base or capture_urls:
             no_document = {source_id for source_id, assessment in
                            source_document_status(conn).items()
@@ -45,6 +48,14 @@ class PrivateResearchProjection(Projection):
                         url = capture_base + row["id"]
                     if url:
                         self.capture_links[row["source_id"]] = url
+
+    def source_contexts(self):
+        """Validated contextual copies, separate from every bowl table."""
+        urls = dict(self.capture_urls)
+        if self.capture_base:
+            urls.update({row['id']: self.capture_base + row['id']
+                         for row in self.conn.execute('SELECT id FROM captures')})
+        return self.guard('source_contexts', source_context_inventory(self.conn, urls))
 
     def guard(self, name, rows):
         """Keep local capture paths out of the browser even in the private view."""
@@ -199,6 +210,7 @@ def private_manifest(projection, tables, generated_at):
             "Mike's personal research bank. Content availability here is not "
             "permission to publish, redistribute, or share it."
         ),
+        "source_contexts_url": "/api/private-source-contexts",
         **projection.gate_counts(tables["texts"]),
         "tables": {
             name: {"rows": len(rows), "url": "/api/reader/" + name}

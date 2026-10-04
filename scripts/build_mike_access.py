@@ -79,6 +79,10 @@ def inventory(projection, tables, manifest, captures):
            "%d/%d stored text rows carry their complete content" %
            (len(built_texts), len(db_texts)))
 
+    contexts = json.loads((OUT / 'data' / 'source_contexts.json').read_text())["rows"]
+    record('all_source_contexts_present', contexts == projection.source_contexts(),
+           '%d checked contextual copies, outside bowl reading counts' % len(contexts))
+
     db_media = projection.conn.execute("SELECT count(*) FROM media").fetchone()[0]
     built_media = payloads["media"]["rows"]
     record("all_media_present", len(built_media) == db_media,
@@ -190,6 +194,9 @@ def main() -> None:
     }
     manifest["served_from"] = "Mike-only authenticated research surface"
     manifest["source_captures_url"] = "./data/captures.json"
+    manifest["source_contexts_url"] = "./data/source_contexts.json"
+    (OUT / "data" / "source_contexts.json").write_text(
+        json.dumps({"rows": projection.source_contexts()}, ensure_ascii=False), encoding="utf-8")
     (OUT / "data" / "captures.json").write_text(
         json.dumps({"rows": captures}, ensure_ascii=False), encoding="utf-8"
     )
@@ -274,6 +281,7 @@ SHELL = """<!doctype html>
 <small>Mike Access &middot; structured personal research bank</small>
 <nav aria-label="Mike Access sections"><a href="#/explore">Explore</a> &middot;
   <a href="#/scholarship">Scholarship and source files</a> &middot;
+  <a href="#/contexts">Source passages</a> &middot;
   <a href="market.html">Market</a></nav>
 </header>
 <main><section id="explore-view" class="reading-room" aria-labelledby="explore-title"></section></main>
@@ -294,6 +302,7 @@ SHELL = """<!doctype html>
   addEventListener("DOMContentLoaded", function () {
     function go() {
       if (!location.hash.startsWith("#/explore") &&
+          !location.hash.startsWith("#/contexts") &&
           !location.hash.startsWith("#/scholarship"))
         history.replaceState(null, "", "#/explore");
       window.ReadingRoom.render();

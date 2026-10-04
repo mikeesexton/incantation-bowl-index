@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "checkpoint": 134,
+  "created_at": "2026-10-04T08:27:22+00:00",
+  "goal_status": "active",
+  "previous_goal_turn_classification": "progress:checkpoint133source research committed/verified",
+  "current_turn_classification": "progress",
+  "corpus_before": "4f91efc4dc59c1baf6dcf4a131339520d5070d645a9d4281a508f217a29dadef",
+  "corpus_after": "a6d8872060dff4062db936ecc7ac35f7f0d82ed0ba3159714b7c9049dd8bff2b",
+  "table_changes": {
+    "captures": 3,
+    "document_assessments": 2
+  },
+  "new_objects": 0,
+  "new_appearances": 0,
+  "new_identifiers": 0,
+  "new_sources": 0,
+  "new_captures": 3,
+  "new_text_rows": 0,
+  "source_context_units_newly_searchable": 40,
+  "new_claims": 0,
+  "new_document_assessments": 2,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1906,
+  "total_text_rows": 2502,
+  "total_reading_rows": 1756,
+  "reading_status_counts": {
+    "reading_text_checked": 1700,
+    "unreviewed": 1,
+    "partial_review": 55
+  },
+  "total_media": 2259,
+  "total_captures": 101,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 90,
+    "sources_with_document_assessments": 84,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 72,
+    "sources_with_complete_object_level_extraction": 30
+  },
+  "scope": "Checkpoint134: all40retained source-copy-checked Ford nonbowl contexts now validated and searchable in Mike Access, with Hebrew/English content, scholarly attribution, actual locators, source hashes, separate correction/deletion notes and source-page links. They remain outside bowl reading/edition metrics and every shared/public projection. Local source-file route now accepts all registered bounded opaque CAPIDs without path traversal. Three fresh ordinary auxiliary captures reproduce earlier held bytes exactly:2005Yamauchi44pagefacsimile preview plus twoPeeterspublisherHTMLmetadata/subscription responses. Exact original capture receipts/UTCtimes/headers and actual404robots bytes/response evidence retained; zero further requests on transfer. Dedicated support for verified404transfer matches unchanged collector policy without fabricated200permission. Preview assessedexcerpt/partialbibliographic extraction; article citationonly/no body, not a complete held edition. All2502bowltexts/113Fordrows unchanged. Goal sourcewide Ford and249case audit remains incomplete.",
+  "review_manifests": [
+    {
+      "command": "ingest-capture-receipts",
+      "path": "data/private/manifests/source_contexts_134_auxiliary_captures_2026-10-04.json",
+      "sha256": "7d0151049bbe6a50819a362ecf13068605156697041ae8c80762feb941d894c9"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/source_contexts_134_documents_2026-10-04.json",
+      "sha256": "28beb306d22d614f8338e753c0d6fa00103f68cf379b1ade4be909db773252f3"
+    }
+  ],
+  "context_registry_manifest": {
+    "path": "data/private/manifests/source_contexts_134_2026-10-04.json",
+    "sha256": "c6bf58d526948886baa09d259de21f0f97d20bc15e766a5533dcabab6bde95fd"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/source-contexts-134-2026-10-04/campaign_case_progress_checkpoint134.json",
+    "sha256": "66b789dd6c53c95b94ac1a23c21c5ca3630a6d1c252e2e837950dbde8dc69e9f"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/source-contexts-134-2026-10-04/held_pdf_inventory_checkpoint134.json",
+    "sha256": "2b59e08562f17eedf5a9c1e35060b11a20378564027a4611a0433acf4f1de59c"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/source-contexts-134-2026-10-04/non_pdf_holdings_checkpoint134.json",
+    "sha256": "88ee7376f05cb5ebf3e2bd856932e5b96309bfc247fa43b5533861d8a3195c0a"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_texts_verified": 2502,
+    "all_media_verified": 2259,
+    "all_image_hashes_verified": 1348,
+    "all_capture_hashes_and_assignments_verified": 101,
+    "all_sources_verified": 978,
+    "all_identity_memberships_and_counts_verified": 1906,
+    "all40contexts_exact_content_notes_source_and_content_hashes": true,
+    "context_routes_search_desktop_mobile_and_source_links_verified": true,
+    "all_holdings_appearance_locator_text_hashes_verified": true,
+    "all31nonPDFcaptures_including6unlinked_verified": true,
+    "all_prior133_receipt_artifact_hashes_exact": true,
+    "two_manifests_trial_and_production_replay_zero": true,
+    "all39tables_trial_production_exact": true,
+    "all_old_rows_exact": true,
+    "frozen249cases_histories_exact": true,
+    "priorMiri32requests_exact": true,
+    "newMiri_requests": 0,
+    "sqlite_integrity_and_foreign_keys_valid": true
+  },
+  "limits": "Fordarticle and frozen249case audit incomplete. Contextchecks reproduce Fordonly; no native manuscript glyph or originaledition/clay verification. Fresh preview/metadata retrievals cannot establish fullworkholding or readings. No allowance/resetcheck or verifiedredemption,maxone authorized. No push/deploy/restart/contact/purchase/Watermanbrowserretry.",
+  "diagnostics": "Initial lookup guessed module names; located actualarchive/web modules. Default bundled headless browser absent; installed isolated Chrome subprocess terminalSIGABRT under sandbox, then allowed local-only render in temporaryprofile completed after normalpermission escalation. No Waterman/userbrowsercontrol. Actual prior preview lacked completecapture receipt: retainedoriginalraw evidence and freshordinary capture, not counterfeitoriginaldatetime. All3newbodyhashes exactly matchprior; supportedtransfer404has actualstatus/body/UTCresponseevidence.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/PeetersDetails-capture.json",
+      "sha256": "c51a7f95a42d02a53d66bb17e411ce422536aa69836fe9d65fb16ba749ddab53"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/PeetersDetails-robots-response.json",
+      "sha256": "f76ed14977b8f3fc083c4cf2822424e2433b2ba85c517184fe9743da653047fe"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/PeetersDetails-robots.bin",
+      "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/PeetersDownloadNotice-capture.json",
+      "sha256": "1b62851c57034bef9b91d402a8013b1385306817eabf4e61e7674d21940464ba"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/PeetersDownloadNotice-robots-response.json",
+      "sha256": "0474d67b43a346718b327ec287778693a0e33a3d890f7ff0bdcb898d1fccf5c9"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/PeetersDownloadNotice-robots.bin",
+      "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/Yamauchi-preview-extraction.json",
+      "sha256": "cc5a6c8f323b7fcba573b0c5ea663b37ce6f75556a70776d433b61355558507a"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/Yamauchi2005-capture.json",
+      "sha256": "c3107946239f12a3261c095f7537de3ce5a5594355d53476d68a303b672d2ca3"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/Yamauchi2005-robots-response.json",
+      "sha256": "cd36ef67fdfe0ff042c76a777a321ed41dc48bff977c4f5f1f1fed636a14de24"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/Yamauchi2005-robots.bin",
+      "sha256": "055ec7315f02145d6270b00fef79d2c9b95862b7ab8f08a3f6b1ac5b522af3a7"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/assess_and_apply.py",
+      "sha256": "3bb640db20d5e88a13f07437e9e981bbc60222b25439476f8d8d9e96e3fef922"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/auxiliary-metadata.json",
+      "sha256": "e7fba89512d3d672bbac5b12a5247704197a84d0ba40a262f5c43f2ef7160e46"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/backup.json",
+      "sha256": "8c85700600ad6597f36c404d8dcdafed9d0940345739ed12bcca8b19f716b238"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/campaign_case_progress_checkpoint134.json",
+      "sha256": "66b789dd6c53c95b94ac1a23c21c5ca3630a6d1c252e2e837950dbde8dc69e9f"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/capture-routes-progress.json",
+      "sha256": "0b1e986e07f062a802404de6f8dd040be7958469b0651e45a2b7d4d83d9fa656"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/capture-trial-apply.json",
+      "sha256": "fa63e65deadbc07f4b930249be001371568335a2f919bc6c3bfde2c6677b17fe"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/capture_auxiliary.py",
+      "sha256": "7e020b1557d37f18e4bdbcb6608bebbc33526d91be98375c428b7dd68de9b233"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/closure-verification.json",
+      "sha256": "553558d94b4abdf7e58e60ee3534813256249a0dc68d28985f844d7b568aac9b"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/contexts-desktop.png",
+      "sha256": "236231864b42df81827f5c0239eaeab51238586bdbcfcd294562a64720e0c4a4"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/contexts-mobile-notes.png",
+      "sha256": "87732ab42047d871dd1b076f9ec7f89c49d5853c49edc599dfb99ae367ea78b2"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/contexts-mobile.png",
+      "sha256": "94ccffa9715c9d1abf7f320b586dfcf988f9e77a0c3e1253e3fecca3bdfab6bf"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/fingerprint-after.json",
+      "sha256": "e997a2a0cbe647f1b32b01f1090fda35790aad7614b1a5cd6bfefcad20838893"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/fingerprint-before.json",
+      "sha256": "33fdf10dc0ff7205500ef94993662c21f67e810c2525403db35a1d74d39f2c64"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/held_pdf_inventory_checkpoint134.json",
+      "sha256": "2b59e08562f17eedf5a9c1e35060b11a20378564027a4611a0433acf4f1de59c"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/initial-contexts-desktop.png",
+      "sha256": "85dbbd1739b571de98599ccf1c986fef256a6dae8afde1b2e844ec4464c80708"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/initial-contexts-mobile-notes.png",
+      "sha256": "55700e2b85cf4bb165cb8080544cc8ae98cb94bbaad8c9e43735469695e4470e"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/initial-contexts-mobile.png",
+      "sha256": "71b4ea2c54df254a165166f24594f958ebf9499eeadbfcaccf64ccf005b18734"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/initial-render-verification.json",
+      "sha256": "e46830ca82d1b470c9e8f83fc2e94f013d4d59618ec0ca2ed530fe9905f073cc"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/metadata.json",
+      "sha256": "69e8c4c0ea1d1bc948100d94c4e7cbc283b5d5935e23b81a7acf6b82ef98693e"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/miri-final-snapshot.json",
+      "sha256": "8048fa356548da773fc6ae42703d860c2a546a01d535776378c332961c5029ba"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/miri-queue-before.json",
+      "sha256": "3a0adc93844b9e7cd49933f34c2fc5621ace30f2e93cf94b0e35176e61893f61"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/node-tests-final.log",
+      "sha256": "63bfb9eac2da07c2a202254cb9ac819f96d64f5b92c601e6a6229b4ada200a11"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/non_pdf_holdings_checkpoint134.json",
+      "sha256": "88ee7376f05cb5ebf3e2bd856932e5b96309bfc247fa43b5533861d8a3195c0a"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/production-apply.json",
+      "sha256": "c963b0ed67ce7bb3a2377d6a718136718aa326b122ee166b8437ab9688a60856"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/production-replay.json",
+      "sha256": "a0056594e79a83bba9f6ab2443569c335cd2c02b199e91ed43c5df4658497639"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/production-verification.json",
+      "sha256": "66940534bf2360ef2598fd85ec3c317203e27da92c3e4119eb23b52045ee8c0f"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/reader-build-final.log",
+      "sha256": "7ad0aaf5062d46c09508309f436574e993e18ac7e2d8a3edfdb953398c99de27"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/reader-build-preview.log",
+      "sha256": "4d5cca080ffa20e8cde46132c813b439e0561d4caeb8d888b5e84e5ec7acb873"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/record_checkpoint.py",
+      "sha256": "81a363016b6f16c5332cca50bd79971048166711d1579cc3cb67613b880fe659"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/regenerate.py",
+      "sha256": "46662577e7d46cdff345204e823da68d8e2ef0886e922ba02656f71ed02aa657"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/registry-verification.json",
+      "sha256": "f5e0b706d86203e1e5ec07ff331d86bddafae835b3a57c1485836560c011dd19"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/render-verification.json",
+      "sha256": "e46830ca82d1b470c9e8f83fc2e94f013d4d59618ec0ca2ed530fe9905f073cc"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/render_check.cjs",
+      "sha256": "49c77f66932dd243970b54d4955dc2a506d85d21010bb74ab49a7681da152fec"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/reports-final.json",
+      "sha256": "ccb05b5f8b76bab65ec9aa9fced267b5e73200eeed1845b0ad5426d22570e61d"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/roadmap-before.json",
+      "sha256": "dde3f61ec9b26c1dfbb7a125e5cca8860e0543dac08f5d0a9d058e6a1868777a"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/roadmap-final-snapshot.json",
+      "sha256": "8ca37477f1e1fd1188f63754182bcf624bec060835240800f98f4effce8906b0"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/source-evidence.json",
+      "sha256": "ecd551b4e7408d1364cd9aa1bfb0cbd79e99198665df33fb134e8c063ff9d447"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/targeted-tests.log",
+      "sha256": "359740e3ddcb81b31b29ba70968b76684b5decf85f4fdae29407be4e265252c8"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/tests-final.log",
+      "sha256": "d7a6a7596b81fad0ad17c197de51f6f32f8a06464f90a0f20c3a40d813e5b6be"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/trial-apply.json",
+      "sha256": "60bf6bc5aae94613436ff3275275eab08e925e30c6d02ec0b10a3fe76d552a00"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/trial-replay.json",
+      "sha256": "a0056594e79a83bba9f6ab2443569c335cd2c02b199e91ed43c5df4658497639"
+    },
+    {
+      "path": "data/private/research-work/source-contexts-134-2026-10-04/verify_close.py",
+      "sha256": "a518370aca987371855ab5ee3efc3f115b694f8ce5e73893fdadf1934a683f3d"
+    }
+  ],
+  "closed_at": "2026-10-04T08:37:10+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0134_private_source_contexts_and_auxiliary_captures_verified.json",
+    "sha256": "0bd8919ea5f23b83e2f034619e3a7810ad23b4eed2f8e170ace038f7185f8a93"
+  },
+  "supplemental_local_layout_verification": {
+    "path": "data/private/research-work/source-contexts-134-2026-10-04/postclosure-render-verification.json",
+    "sha256": "dca947394c07ec424be31a5898987be059c1e77856846c5bd5f17ffd9768e82b"
+  }
+}

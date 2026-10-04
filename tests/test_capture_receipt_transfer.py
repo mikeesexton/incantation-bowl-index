@@ -82,3 +82,39 @@ class CaptureReceiptTransferTests(unittest.TestCase):
         self.conn.commit()
         with self.assertRaises(ValueError): import_capture_receipts(self.conn,self.manifest,self.root)
         self.assertEqual(self.conn.execute('SELECT source_id FROM captures').fetchone()[0],'OTHER')
+
+    def missing_robots(self):
+        # A404 body can contain anything; it is not a200robots instruction file.
+        (self.root/'robots.txt').write_text('User-agent: *\nDisallow: /\n')
+        entry=self.manifest['entries'][0];entry['robots_status_code']=404
+        entry['robots_sha256']=hashlib.sha256((self.root/'robots.txt').read_bytes()).hexdigest()
+        response=dict(url=entry['robots_url'],status_code=404,body_sha256=entry['robots_sha256'],
+                      retrieved_at='2026-10-01T09:59:00+00:00')
+        (self.root/'robots-response.json').write_text(json.dumps(response))
+        entry.update(robots_response_path='robots-response.json',
+                     robots_response_sha256=hashlib.sha256((self.root/'robots-response.json').read_bytes()).hexdigest())
+
+    def test_verified404_keeps_actual_status_and_original_capture(self):
+        self.missing_robots()
+        self.assertEqual(import_capture_receipts(self.conn,self.manifest,self.root)['changed'],1)
+        self.assertEqual(dict(self.conn.execute('SELECT * FROM captures').fetchone()),
+                         json.loads((self.root/'receipt.json').read_text()))
+        self.assertEqual(import_capture_receipts(self.conn,self.manifest,self.root)['changed'],0)
+
+    def test_unsupported_or_unverified_robots_status_rejects(self):
+        for status in [401,403,500,None]:
+            self.manifest['entries'][0]['robots_status_code']=status
+            with self.assertRaises(ValueError):import_capture_receipts(self.conn,self.manifest,self.root)
+        self.missing_robots();self.manifest['entries'][0].pop('robots_response_path')
+        with self.assertRaises((ValueError,KeyError)):import_capture_receipts(self.conn,self.manifest,self.root)
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM captures').fetchone()[0],0)
+
+    def test_false_missing_robots_response_rejects(self):
+        self.missing_robots()
+        for field,value in [('status_code',200),('url','https://other.example/robots.txt'),
+                            ('retrieved_at','2026-10-01T10:01:00+00:00'),('body_sha256','changed')]:
+            self.missing_robots();p=self.root/'robots-response.json';response=json.loads(p.read_text())
+            response[field]=value;p.write_text(json.dumps(response))
+            self.manifest['entries'][0]['robots_response_sha256']=hashlib.sha256(p.read_bytes()).hexdigest()
+            with self.assertRaises(ValueError):import_capture_receipts(self.conn,self.manifest,self.root)
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM captures').fetchone()[0],0)
