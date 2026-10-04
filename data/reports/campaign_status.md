@@ -1,6 +1,6 @@
 # Discovery campaign status
 
-Generated: `2026-10-04T04:37:09+00:00`
+Generated: `2026-10-04T05:01:21+00:00`
 
 ## Corpus
 
@@ -11,11 +11,11 @@ Generated: `2026-10-04T04:37:09+00:00`
 - Same source duplicate identifier groups: **2**
 - Same source duplicate claim groups: **0**
 - Probable or confirmed: **1196**
-- Source appearances: **2872**
+- Source appearances: **2876**
 - Sources: **970**
 - Dedupe clusters pending: **0**
-- Objects with text: **1010**
-- Objects with translation: **612**
+- Objects with text: **1012**
+- Objects with translation: **614**
 - Objects with provenance: **163**
 - Objects with current location: **877**
 - Open leads: **43**
