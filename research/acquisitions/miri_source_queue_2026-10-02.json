@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T04:02:39+00:00",
+  "updated_at": "2026-10-04T04:36:35+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -113,7 +113,7 @@
       "filename": "2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
       "capture_id": "CAP-IBI-CP107-FORD2002",
       "sha256": "ceeada85a24a1bb6e67e04ecf82f20025b73c2ce435053c06694a795c38f711a",
-      "status": "original requested document acquired privately; reading extraction/checks pending",
+      "status": "Original requested work held privately; two main bowl transcription/English pairs checked; manuscript context and residual sourcewide work distinguished",
       "resolved_at": "2026-10-03T19:57:24+00:00",
       "checkpoint": 107,
       "verified_scope": "Complete original article printed31–47, including final DC37(R) manuscript PlateI; PDF18blank. Bowl photographs referred to Segal, not present here.",
@@ -128,7 +128,9 @@
         "attempted_pdf_url": "https://d156pv0y1gr4h3.cloudfront.net/pdfs/vol29/2440-another-look-at-mandaic-incantation-bowl-bm-91715.pdf",
         "previous_access_evidence": "Official download cannot be acquired through the project capture route: robots policy disallowed or unverifiable. Earlier Scholastica API route returns 404. No access-control bypass."
       },
-      "reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred."
+      "reading_audit": "BM91715native32/English32–33 and BM91780native43–44/English44complete provided pairs captured/separatelychecked125. Source native24/15physicalrows22/20anchors/uncertain and restoredgroups/gaps/struckthroughword/sourcefootnotequalifications/actualdiacritics preserved. Ninecompletepagesviewed/twelvecontrols/43pixel-exactrecipes. PlateI47lateDC37(R)manuscriptphoto, not thirdbowl or bowlphoto; originalSegalphotos stillnotprovidedbythisarticle. Otherbowlcomparatives/lexical/general/relationship/interpretiveclaims/DC37(R)searchablecontext/wholeworkingOCRremainpartial; no wholecase/clay/scholarly/rights certification.",
+      "checkpoint125_prior_reading_audit": "Acquisition complete for the exact requested work/part only; no reading-text or whole-case completion inferred.",
+      "reading_audit_checked_at": "2026-10-04T04:36:35+00:00"
     },
     {
       "source_id": "SRC-1A922C3F041F",
