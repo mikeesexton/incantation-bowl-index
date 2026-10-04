@@ -1,8 +1,8 @@
 {
-  "corpus_digest": "769925cf65e543658bbc0de8a396cdd58ac3666736a28eb8f28b086875081a77",
+  "corpus_digest": "551cbc448bf620500a8bab48f2088da4f7f5db8001e09a81d8d64910235ede57",
   "migrations": 21,
-  "note": "Checkpoint137: four comparative native copies, original Lidzbarski first-fascicle holding and source locators, partial extraction/statuses retained; corrected current body extent1\u2013108; all39tables trial-exact/505tests/8reader audits/seven manifest replays zero.",
-  "recorded_at": "2026-10-04T10:13:39+00:00",
+  "note": "Checkpoint138: four checked original Lidzbarski V front/reverse native and German copies; five source pages; sourcewide extraction partial; prior rows retained; 505 tests and 8 reader audits passed.",
+  "recorded_at": "2026-10-04T10:40:37+00:00",
   "recorded_by": "Codex",
   "schema_version": "021_catalogue_metadata_corrections",
   "tables": {
@@ -63,8 +63,8 @@
       "rows": 34812
     },
     "document_assessments": {
-      "digest": "704707bb03a49438362774a3f33b40deba640f5f168e676be2c0db111093655e",
-      "rows": 164
+      "digest": "a820994072f4db9eed8e19319e005a031d1d3810c8a488f0d2554733ed111aff",
+      "rows": 165
     },
     "events": {
       "digest": "c8124c45a392ac6e490f60eae3c1141695520bd938646b52dc222d22f6d15f21",
@@ -83,8 +83,8 @@
       "rows": 14
     },
     "media": {
-      "digest": "f432813599a0a9f5a79e1d3549490e05d2de4bbf48cc3c7e6a1bc61b1a0d5f6c",
-      "rows": 2265
+      "digest": "81573062bc1bd19f51b6a3c81c29e9deca0583a274834f4a9f1a326ba2b6eff0",
+      "rows": 2270
     },
     "media_rights_reviews": {
       "digest": "93ac1844c0cd25404702dbb99789de27c92e436dad1c580c307629f29c506b4a",
@@ -151,16 +151,16 @@
       "rows": 31
     },
     "text_proofreading_reviews": {
-      "digest": "65c01c4145e2c1b5d164d54c06e0bef2e7f15e24cb2eaf3660de87fd2c010756",
-      "rows": 2056
+      "digest": "3cc7677d3321b541d39fc83b8542ed40a738028b36f6bd797f3d934a9256a028",
+      "rows": 2060
     },
     "text_publication_reviews": {
       "digest": "01506e347140924d55e988077d1ecfbe6c2dc44fb0bcfff1000e66ba50e6a6f0",
       "rows": 310
     },
     "texts": {
-      "digest": "011f41db83ab7192d1cdfa52559a6130e324d0e607f75a6fa1a89e6fa9f09dda",
-      "rows": 2511
+      "digest": "c9b3f272396874252c9135e3da9b481e29d94500109281fcdf6e5337f8846628",
+      "rows": 2515
     }
   }
 }

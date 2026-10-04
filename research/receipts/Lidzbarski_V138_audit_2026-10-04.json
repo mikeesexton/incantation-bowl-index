@@ -1,0 +1,443 @@
+{
+  "schema_version": 1,
+  "checkpoint": 138,
+  "created_at": "2026-10-04T10:34:37+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "769925cf65e543658bbc0de8a396cdd58ac3666736a28eb8f28b086875081a77",
+  "corpus_after": "551cbc448bf620500a8bab48f2088da4f7f5db8001e09a81d8d64910235ede57",
+  "table_changes": {
+    "texts": 4,
+    "media": 5,
+    "text_proofreading_reviews": 4,
+    "document_assessments": 1
+  },
+  "new_text_rows": 4,
+  "new_checked_readings": 4,
+  "new_partial_readings": 0,
+  "new_appearances": 0,
+  "new_publication_assessments": 0,
+  "new_document_assessments": 1,
+  "current_document_targets": 1,
+  "new_sources": 0,
+  "new_objects": 0,
+  "new_media": 5,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1907,
+  "total_text_rows": 2515,
+  "total_reading_rows": 1769,
+  "reading_status_counts": {
+    "reading_text_checked": 1711,
+    "unreviewed": 1,
+    "partial_review": 57
+  },
+  "total_media": 2270,
+  "total_captures": 102,
+  "total_searchable_context_copies": 46,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 35,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 91,
+    "sources_with_document_assessments": 85,
+    "sources_with_complete_documents": 76,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 73,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "scope": "Checkpoint138:four complete own-section original Lidzbarski V source copies captured and independently source-checked: Hebrew-letter Mandaic front102/104, German103/105, reverse native/German106. Five complete source-page controls added. Later Gordon and MB/Yamauchi copies retained byte-exact; no original Mandaic glyph recovery, new translation or identity merger. Sourcewide first-fascicle extraction partial for I–IV/full apparatus/general/bibliographic fields; complete holding remains first fascicle112leaves/body1–108, not whole1902volume. Frozen249 whole-case investigations remain incomplete.",
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Lidzbarski_V138_readings_2026-10-04.jsonl",
+      "sha256": "3443e1346dbf3343b51c473bbd00a71ef0ffe3c527f5c6fe9657655b591e403a"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Lidzbarski_V138_proofreading_2026-10-04.json",
+      "sha256": "346c11dec4420433eb208e9758ca862b1697375d979e7f526a009494f2b74bca"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Lidzbarski_V138_documents_2026-10-04.json",
+      "sha256": "78515f04918ecd9a7c442715716673256bbeace7c8f00345215a1561e435d555"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/source-evidence.json",
+    "sha256": "3d3b6245a8f309f52f57ece65c1e402c1c068b7ea17e64782f31f97e16e73b3f"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/campaign_case_progress_checkpoint138.json",
+    "sha256": "3fd5b7336c24042e8bcbfac2f12a3ea614f9bc755b245036c5b3e59dbc389ac9"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/held_pdf_inventory_checkpoint138.json",
+    "sha256": "8e7396c40db28da13658d67ddacc8494220abf4615e00fb72a599d4259997071"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/non_pdf_holdings_checkpoint138.json",
+    "sha256": "135043e7d3c407e2c70f741a15c3b0a27cc7fda377f279655c30694e1f255131"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_texts_verified": 2515,
+    "all_media_verified": 2270,
+    "all_local_image_hashes_verified": 1359,
+    "all_capture_hashes_and_assignments_verified": 102,
+    "all_sources_verified": 981,
+    "all_identity_memberships_and_counts_verified": 1907,
+    "all46contexts_exact": true,
+    "all_holdings_capture_appearance_locator_text_hashes_verified": true,
+    "all31nonPDFcaptures_including6unlinked_verified": true,
+    "all_prior137_receipt_artifact_hashes_exact": true,
+    "all3manifests_trial_production_and_finalreplayzero": true,
+    "all39tables_trial_production_exact": true,
+    "all_old_rows_and_texts_retained_exact": true,
+    "frozen249_histories_and_memberships_exact": true,
+    "miri35requests_and15resolved_exact": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "partial_sourcewide_assessments_and_typography_labels_retained": true,
+    "wrong_initial_extent_superseded_corrected_current_body1to108": true
+  },
+  "limits": "Four complete own-section copies verify the held normalized original edition only. I–IV/full apparatus/general/bibliographic fields remain; complete first fascicle is not full completed volume. Separate Ford AO2629 identity review pending, no merge. Frozen249 audit incomplete. No resetcheck/redemption/push/deploy/restart/contact/purchase/Watermanretry.",
+  "diagnostics": "Bounded actual source controls replace truncated output. One extra narrow bound-word crop misaligned; wider exact own-word control used. Un-ingested draft copied seinen Söhne; actual scan corrected to seiner Söhne before any manifest. Native font OCR never reading authority. Original German seven/four omissiondots and asymmetric apostrophe/diacritic forms preserved, no grammatical modernization.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/German103.png",
+      "sha256": "8868c71f3786c28c0c28228859a6298ed9179c2ac3fa595c4633cb511f6789ff"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/German105-magic.png",
+      "sha256": "b3d802313398efbba2e48c37d22217d1213e7dfbd1bce3390d3b9f95f7997fe1"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/German105-top.png",
+      "sha256": "421c0bb4a69358e337220d47b55c5148323d4807e6666a14a95fbb5228e3543c"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/TXT-IBI-CP138-LIDZ-V-GERMAN.txt",
+      "sha256": "1217cf7e40cb9b3ade88efc93eab9dcd35385f328b66a81ea688e41a068795f8"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/TXT-IBI-CP138-LIDZ-V-NATIVE.txt",
+      "sha256": "79067f2760a06d36f3855959fe95898dedf61cb218c567520f1e20f082624cc8"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/TXT-IBI-CP138-LIDZ-V-REVERSE-GERMAN.txt",
+      "sha256": "ab52a42f5eea6420a09979adc2f8d2d9b2fcbc44f0ae987bb4c335a7e1488854"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/TXT-IBI-CP138-LIDZ-V-REVERSE-NATIVE.txt",
+      "sha256": "3508af3bec8db3940c382476252365e482487243446ac896c95ddc9346f34e2a"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/angel104.png",
+      "sha256": "f2b25444c599fed204b99ebdd20405acb6a6fab02889ea35e9174d834c9d8df6"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/apply-progress.json",
+      "sha256": "969fde78eea6ed70fa81252edf51a8bf8af62ab688699a2d224f0921eca60fad"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/bound104-wide.png",
+      "sha256": "920e240af468759e389acee2dfbed42cffef4afed3fafcc232ae614cb6c0d69f"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/bound104.png",
+      "sha256": "5be090a0545dc7264dff0653fd07a3fcb1888f9c3ddfc93fe366cf9c2395ab32"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/campaign_case_progress_checkpoint138.json",
+      "sha256": "3fd5b7336c24042e8bcbfac2f12a3ea614f9bc755b245036c5b3e59dbc389ac9"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/closing105.png",
+      "sha256": "49b7f7da5e1770f572ab7f6d102b9867125c1a39f779d8598a8789a7a39e40c9"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/closure-verification.json",
+      "sha256": "aec5ff908855aa15da557070a27b8f6ecda18a4540f78a947fdb94de0f35c866"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/copies-current.json",
+      "sha256": "ccd7496fcdc047620aea7c28002a008265cb2ab18ba5944f65b38f551d4e4d9b"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/copies-draft.json",
+      "sha256": "f4cde52c8b3aa91caee7fc801225bac5ced6cced2c1a7234030068aa0c5f4091"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/crop-recipes.json",
+      "sha256": "b8ef7d206c72a7a3e1a468a12aae828e7be5652d89c3a2453e08ea0cf2246dde"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/document-assessment-before.json",
+      "sha256": "f50218d50c9e33db937b2613c38fac52bd4d68106f06754ef00e444657aecae7"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/draft.py",
+      "sha256": "51cde55b401ab822b3d942a68a1e812f0b527992de240f97e455c196e8a52df3"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/extra_controls.py",
+      "sha256": "284b5f1a2489e55eeaf8b445ea6faaec8fa1853870335770acdbed7351cfac96"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/final_controls.py",
+      "sha256": "1a0a369a9d21c6db046dac7512315139054ede91c9e076fe2db9ce9c533dccee"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/fingerprint-after.json",
+      "sha256": "880cb47a44f5fa907bf61993d04b012a79d254d564381a86f16b746d61c57263"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/fingerprint-before.json",
+      "sha256": "0410c81f36abe7b284a0ed1fffc47e546d3f371ee6247673ca102f64f1db5bdb"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/fingerprint-trial.json",
+      "sha256": "880cb47a44f5fa907bf61993d04b012a79d254d564381a86f16b746d61c57263"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/grammar105.png",
+      "sha256": "023ef40453d666e7fb245fceb9977ff374fcb772bf02ae9bb87b21e576988846"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/heart102.png",
+      "sha256": "4cdd8d70d38335a6b913efd060c013bc813db919d7a1925739efae41752b3200"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/held_pdf_inventory_checkpoint138.json",
+      "sha256": "8e7396c40db28da13658d67ddacc8494220abf4615e00fb72a599d4259997071"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/intake.py",
+      "sha256": "8d1f53ca6d7e7e9e5e2e326246e8d1f635a8e9c5b5b0af4b74988c2cc959fbbf"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/lastword104.png",
+      "sha256": "3be835d50fe47cde1c78510aa720ef185cc40bef006b8743722d2540f5ea9298"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/latin-signs105.png",
+      "sha256": "665f27466e6252b3fa8fb6aae18381e5bf96fa529cbf0b11040ebe65957d4966"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/magic104.png",
+      "sha256": "deada693ca39f0df2b419c9bcc31961a6cec0dee35afebc849fea2cb5dbe45ea"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/magiclatin105-second.png",
+      "sha256": "5acd73bb370feeee88d935dc466bef130ff59d050cbf5edc451e501e183a8e6e"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/magiclatin105.png",
+      "sha256": "f100620783392bec81ee030fdffd01df00a71622da82bb5f5735b651b026421a"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/metadata.json",
+      "sha256": "e3818324fa71bcdee04c2c9f09424f89f7f0534f272ea734fe255ff80cb8a3c6"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/miri-final-snapshot.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/miri-queue-before.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/native102.png",
+      "sha256": "a155d87ee75a67d8ac4aa46209c84f52b8bf7c7e0938911c23970b7beda3a65b"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/native104-bottom.png",
+      "sha256": "818711b7376b1d0ea7de74b69055abd150bd9c52b37e450915b172682e53cd96"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/native104-top.png",
+      "sha256": "7defdc243ea8c45711d9bbafa7520751501b2eb8a64f9c471e4ed9a764542001"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/node-tests-final.log",
+      "sha256": "10da47467cc86f52c498a5fe8d69119935ba724775f21d61f6f038b0f63c50ac"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/non_pdf_holdings_checkpoint138.json",
+      "sha256": "135043e7d3c407e2c70f741a15c3b0a27cc7fda377f279655c30694e1f255131"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-104-4x.png",
+      "sha256": "59f08b5a743eaf3f625bd3f355908fdeb6b34a608e8b0197ed46829aa90dd5d0"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-104.png",
+      "sha256": "114fe059190c186664ca8fd496b1c0494f10ba59ef9292557337d93258058bb2"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-105-4x.png",
+      "sha256": "711d8ee26e5526299286dbef267c0d0c1b64ab4fa96d67bbfe4b42c22fe72c1c"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-105.png",
+      "sha256": "2c6698f90260dc97446ced567e7e10018b0a374a600140981611b025ac163984"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-106-4x.png",
+      "sha256": "dc504e8cb051e54ba383796ee0344bd6e692cceb9622a2d8da593e89e56e3c3f"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-106.png",
+      "sha256": "8c59df0f027d91252a2b77721ca9b821811d18b191ab26aeffece48f95d134b3"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-107-4x.png",
+      "sha256": "f75b25b21d20b3375e5bd40664faf313cd7f98e2335c2be30d7b69b53b59dc94"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-107.png",
+      "sha256": "4e01f1983cf26e3e157cc272159e114fa4b66d5294c356284970a80785aa89ce"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-108-4x.png",
+      "sha256": "9ed7027b46a0d42829a0d2034ccd582c7dd6454c661dfc4dea294b07dc8483b3"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/page-108.png",
+      "sha256": "e6c10d60c2c63aae6e3889ef9b2dddafc24b2da85f09860956a5b7d2351d5bec"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/pixel-verification.json",
+      "sha256": "c0b575096d6c7ffdd40345e7679f2abc6dd63fe75ec94a2244265f5df32aab06"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/pixels.py",
+      "sha256": "53028d32edae33ac8a345536e580315b3bb0854f5da52f7df778944e5d6c8277"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/prepare.py",
+      "sha256": "eaeba98207771dec7408f8db2cfe6f8501a21f8479aaa665bbe7f7c0e3a689c5"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/production-verification.json",
+      "sha256": "30a65a869ad11d0088a6cb347baa735a0eb785f91ee8dd016d6cb488c4dcb731"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/reader-build-final.log",
+      "sha256": "fade660a2cf52d01ccd458ca753ddb3211d920f3d091d4af265333c57b09b7b0"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/reading-extent-inventory.json",
+      "sha256": "a69d8a7822501da2f0f3b12a285a28c1acf532707edab6247b3ef912be50db6e"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/record.py",
+      "sha256": "276469f5136a97561425e79a158a1bb4ef0ddf8d2753a2fe2adb558a6de4e9e9"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/regenerate.py",
+      "sha256": "44ee55a3e2cab3bd4a410123e974b08a66badc16fdffa0a5ba769f3b0fd1a745"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-GERMAN-desktop.png",
+      "sha256": "f6bca612e1cdc8e09d99eeaad5b5663d04de8935fe3533e210a8817f7148b5cf"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-GERMAN-mobile.png",
+      "sha256": "e3b2b292fd584274e361ef53c4c1ba2ac46e29a7753323a6989ad464017fb71e"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-NATIVE-desktop.png",
+      "sha256": "75b8f697dec1aa42489b85a985218b791658e827bf3a83ea6643ed6eaf3bb782"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-NATIVE-mobile.png",
+      "sha256": "bd1076b380dac45d59fe919f0ebc12d6cb4f1b0e2157439a077fff98457f0e5d"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-REVERSE-GERMAN-desktop.png",
+      "sha256": "0b1a4bcb6f2bfdda64c74f2a8cf543517173e5abcf911033b5e0632dcfd43ffb"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-REVERSE-GERMAN-mobile.png",
+      "sha256": "14c68c04dbd2adf9a7d875059ae31ef1186141d0220956ebe65a91e0d1dcab40"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-REVERSE-NATIVE-desktop.png",
+      "sha256": "75a69f45f845616fe3c5518fc63d58f99a11e3f79e2d8ad7f6c76b7fcf5bfe0d"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/LIDZ-V-REVERSE-NATIVE-mobile.png",
+      "sha256": "acb307fb7881de37910594ad5eec4f0d49e8a587ee631812471542a3663c6f2d"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render/render-verification.json",
+      "sha256": "d14742351508f3c1055504c534d28519b55af28f7b6067d78678bf6ea2bfd170"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/render_check.cjs",
+      "sha256": "b0c58d4a1eba45694d8f0fbecaf0c72021ee77a253fd7954511c716f2c4c8156"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/reports-final.json",
+      "sha256": "8142a85c3c185f485587ae59f184231a76cba5b05587297f4030b47e2c352e42"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/return104.png",
+      "sha256": "f969cdef48ecc44409066ba74b04274e566bbfe227639ed7074c90a07402b3d4"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/reverse106.png",
+      "sha256": "a7bf20afd28c809ec1343533cd587216910c421a88f80b7fde542d960c5948fc"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/roadmap-before.json",
+      "sha256": "d15596dd000f3fd4ec302c1a689f5a8a2c5f672127837f0ef13f65ac65f821fe"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/roadmap-final-snapshot.json",
+      "sha256": "f433d4a96939389f2065fe8f3f7209d0359035dcf48abeddd9a3c22ffe586415"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/source-evidence.json",
+      "sha256": "3d3b6245a8f309f52f57ece65c1e402c1c068b7ea17e64782f31f97e16e73b3f"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/tests-final.log",
+      "sha256": "af3c61f8c944ce82455bde1f244fbbbb52507a9a0b2ff7d9f9d3fb025ebe1a4d"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/three-manifest-final-replay.json",
+      "sha256": "34d1c7ba02fede096a430f6feb56c7361e8bfcda789246d82013ec8ff79b41b2"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/trial-verification.json",
+      "sha256": "30a65a869ad11d0088a6cb347baa735a0eb785f91ee8dd016d6cb488c4dcb731"
+    },
+    {
+      "path": "data/private/research-work/Lidzbarski-V138-2026-10-04/verify_close.py",
+      "sha256": "46c92440902000a335a0689626db0eb5a908690d934a6ddfc7b34656f6ac7428"
+    }
+  ],
+  "closed_at": "2026-10-04T10:39:19+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0138_original_Lidzbarski_V_front_and_reverse_copies_verified.json",
+    "sha256": "f71e23a1296a4bffdc0de1af01bf8f64b6949463342e11115ebe5bc474d8869a"
+  }
+}
