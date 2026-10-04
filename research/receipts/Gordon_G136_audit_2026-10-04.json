@@ -1,0 +1,521 @@
+{
+  "schema_version": 1,
+  "checkpoint": 136,
+  "created_at": "2026-10-04T09:30:50+00:00",
+  "goal_status": "active",
+  "previous_goal_turn_classification": "progress:checkpoint135verified/localcommit2b48631",
+  "current_turn_classification": "progress",
+  "corpus_before": "5f6cff20f45c5461dfbeea56fc88d5fd37cc42f26ff66a070a396287f82c4007",
+  "corpus_after": "b21b4e63f8d8ed1c1f7ce44c35273d8587da0f4913ad825d3d5aa238b3cf9109",
+  "table_changes": {
+    "texts": 0,
+    "text_proofreading_reviews": 1,
+    "appearances": 2,
+    "appearance_object_links": 2,
+    "publication_assessments": 2,
+    "document_assessments": 1
+  },
+  "corrected_text_rows": 1,
+  "new_proofreading_reviews": 1,
+  "source_copy_control_groups": 16,
+  "source_copy_control_occurrences": 17,
+  "new_text_rows": 0,
+  "new_appearances": 2,
+  "new_publication_assessments": 2,
+  "new_document_assessments": 1,
+  "new_sources": 0,
+  "new_objects": 0,
+  "new_media": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "identity_merges": 0,
+  "public_reuse_approvals": 0,
+  "total_identities": 1907,
+  "total_text_rows": 2507,
+  "total_reading_rows": 1761,
+  "reading_status_counts": {
+    "reading_text_checked": 1705,
+    "unreviewed": 1,
+    "partial_review": 55
+  },
+  "total_media": 2261,
+  "total_captures": 101,
+  "total_searchable_context_copies": 46,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "cases_with_recorded_attempts": 249,
+  "complete_case_investigations_claimed": 0,
+  "new_frozen_case_attempts": 0,
+  "miri_resolved": 15,
+  "miri_remaining_requests": 35,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 90,
+    "sources_with_document_assessments": 84,
+    "sources_with_complete_documents": 75,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 8,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 72,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "scope": "Checkpoint136:Gordon G retained nonbowl working copy corrected in16source-control groups/17occurrences, including final two lines and two earlier copy errors. Partial status retained for exact raised-letter representation and question/point ownership; specialist controls and literal base observations preserved. Complete source pages467–470/nativeblocks inspected; rejected jar/collection repair unchanged. Two exact Montgomery11/18 comparative source appearances and publication assessments added; four comparative native columns still need bounded extraction. Earlier main-G extraction-complete document label superseded by sourcewide partial assessment, original retained; complete physical holding unchanged. No scholarly/identity/rights adjudication or fullsource reading claim.",
+  "review_manifests": [
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Gordon_G136_proofreading_2026-10-04.json",
+      "sha256": "f94d5e20ac72cd5de9123135127907b86000d58ebe1a2de78e8547ecf2990cb4"
+    },
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Gordon_G136_appearances_2026-10-04.jsonl",
+      "sha256": "9965eab5b3e808d992eebe430d082573103bf2ac7624b69c9d3f9068782835e7"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Gordon_G136_publications_2026-10-04.json",
+      "sha256": "54b6177061e6415a73400f41401b1c10005a9a0691c313c2c054ed60862cf453"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Gordon_G136_documents_2026-10-04.json",
+      "sha256": "7c8525b47067ba4c874a18aa0b0f4d7081518e113fa613643cd01b9459076160"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Gordon-G136-2026-10-04/source-evidence.json",
+    "sha256": "02711ec1b8cfe472b8170189f20413636eecc76c7fc4d16285c9dce4a72ea04b"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Gordon-G136-2026-10-04/campaign_case_progress_checkpoint136.json",
+    "sha256": "2ab430a0c59648f228ff32ca51a26a53ae56d95d2b1792eab2c20283cec9d3b7"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Gordon-G136-2026-10-04/held_pdf_inventory_checkpoint136.json",
+    "sha256": "579eeb297dd43c3937d3efca5eb0c8ffdc347dd2887664c3022e73efb112becf"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Gordon-G136-2026-10-04/non_pdf_holdings_checkpoint136.json",
+    "sha256": "2c55f4a4d9d6ebc73600f42d501befa583e351b06f5fe1e799c581a471dea97e"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_texts_verified": 2507,
+    "all_media_verified": 2261,
+    "all_image_hashes_verified": 1350,
+    "all_capture_hashes_and_assignments_verified": 101,
+    "all_sources_verified": 980,
+    "all_identity_memberships_and_counts_verified": 1907,
+    "all46contexts_exact_content_notes_source_and_content_hashes": true,
+    "context_routes_search_desktop_mobile_and_source_links_verified": true,
+    "all_holdings_appearance_locator_text_hashes_verified": true,
+    "all31nonPDFcaptures_including6unlinked_verified": true,
+    "all_prior135_receipt_artifact_hashes_exact": true,
+    "four_manifests_trial_and_production_replay_zero": true,
+    "all39tables_trial_production_exact": true,
+    "all_other_old_rows_exact": true,
+    "corrected_target_before_and_after_retained": true,
+    "frozen249cases_histories_exact": true,
+    "priorMiri35requests_exact": true,
+    "newMiri_requests": 0,
+    "sqlite_integrity_and_foreign_keys_valid": true
+  },
+  "limits": "Precise remaining typography controls queued for specialist assessment; G stays rejected/nonbowl and partial. New Montgomery appearances are checked table occurrence pointers, not new transcription rows or complete edition recoveries. Frozen249case audit incomplete. No reset check/redemption/push/deploy/restart/contact/purchase/Watermanretry.",
+  "diagnostics": "Read-only source query used wrong author/context columns and old document helper name, corrected using actual schema. Prepared script comprehension syntax repaired before any intake. Initial trial verifier compared full derived identity rows; new appearances legitimately change counts, so corrected assertion to exact identity memberships and retained initial trial/script. Production began only after successful refreshed rehearsal. Two draft controls cropped wrong page; correct page checked before manifest. All originals/superseded copies retained.",
+  "evidence_artifacts": [
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-adjure.png",
+      "sha256": "b7eeed679da00be2a758103b40be28ee93e503d32d2a9c88f2a656535c4fabf0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-curly-closing.png",
+      "sha256": "ed5b54ae99ea2157d485ad61c74b11f2c8b8d9a7aeabd1e0178b472fb844dd93"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-damage.png",
+      "sha256": "a860d371d6d4f98154235948f6165ea3c9d5ca1a1a7c518c2a171fd3974654f5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-dismiss.png",
+      "sha256": "ecf3fd5f43b405ae9a02bab4c8198d222c9653b07de7911edfc2faee8957d7b1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-dots-only.png",
+      "sha256": "a8c5896aa81ce466bc54a83f1070889fadaaf3973a1f019117ac064c26ac05d3"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-excess-letter.png",
+      "sha256": "1a542c41068a32f1e92b9aec701d39e106bb5c13062026ca432af48335004f18"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-first-double.png",
+      "sha256": "861a341a9e41602240a898b1d7cdb1b7dcf44cf1ae05da7e182fc8770c6b9aeb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-invoke.png",
+      "sha256": "01f631cbbd93205dbef57a6b94758682b95724e96dfe22ab75a8a5b135f696ad"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-lance-exact.png",
+      "sha256": "1a62ac7f08777e8f552f854a4dd0c5d74f67de8c904e2570b7c62afff30e8c65"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-lance.png",
+      "sha256": "5d8ec3259c9ad6b80693a689fe7456ed63a499ecbdc96503c5e7087d3fc12be9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-name-complete.png",
+      "sha256": "ad398d4b956b3bf2a5fcdd64293fe9f437a5ed644c01e99ba79d7c60edf875c3"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-name-dots.png",
+      "sha256": "8218b538d7722da02cfd116f75509725b4489bf6e6860fe3aae24c1f185f7d00"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-name-open.png",
+      "sha256": "491412fd4833a8e0760792cbc47af52e742300ecbafb1e857631eb6c46692996"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-opening.png",
+      "sha256": "ded3a2dc8885c40e05059fa2f03d737fbafee8c02e2aea88d6a24d930f3f8a3e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-raised.png",
+      "sha256": "ea61c29b95c147f54d7c60d361e08708a87d24d355af946d0dec86b2bf1b4bb8"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-return.png",
+      "sha256": "6e07bdf1cbad4e29a678c6d63dbc876112ec4bbe9bf9db6b91cf1d7ce43c0752"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-write-exact.png",
+      "sha256": "1d04f5100a9c548a0bb2c7bfbcbeeee7b8d3346367c0d1824309637a0693a328"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/11-write-supply.png",
+      "sha256": "afd2be45810ac564ece9b019aab0dcafb6ea44371c7bd4fc489857ed0435b701"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/12-complete.png",
+      "sha256": "0192113a4f14cc4f1092cf83975d85766db16cb329c96ad24ad1e486ceda72ab"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/12-supply.png",
+      "sha256": "4af5ef960e4965468719998c69ff07f08aaeec5651f538935b92ceb12570a81c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/12-yard-complete.png",
+      "sha256": "8abc1eb006c3e8890bb04a9d0d2a61cbab20461cdd789f8ee57b3acc34bf45a7"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/12-yard-word.png",
+      "sha256": "8c9bc6d7cc327f5182f7c2f30e8dd2a8312726721786540ebec69259bc775705"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/12-yard.png",
+      "sha256": "22f707720fa796ee0b551a62997338d2fc00487d2b5628a785ec85afe32c61ae"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/2-supply-correct-page.png",
+      "sha256": "cee563bf389e9d16e122cf3389c5c4751705bab4e95703d66afdc9f4a1c6cddf"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/2-supply.png",
+      "sha256": "c287164177a98f6438585b0554b3750bed26df10c9db50ce9286021fa7542f28"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/3-ruler-correct-page.png",
+      "sha256": "1cf6f0148023526c475f8f65ce261479d607be9c265a668a30d6b2469d24b08a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/3-ruler.png",
+      "sha256": "33f971236d523481cd6f64db9d64645c854fe946ed6b7a2565bbba5aac8d3fc9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-3-column.png",
+      "sha256": "d425747250ab173cc1ee451bd80fd5d670bd3440c798fee3fc45b41b250c57e7"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-3-key.png",
+      "sha256": "0499b27928bca4c9ca2f3719f7dbdcec1da8974555c31e15243adad26fd3d9b4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-3-top.png",
+      "sha256": "ef276cbef214fd040e5c74c09f29590a764c6b515fd9749398be1fa0cfb0a836"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-4-column.png",
+      "sha256": "7fc7089d5e48e6a01306f898ccc99dbcbceb5fedd904e776c30b7baec02684c4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-5-bottom.png",
+      "sha256": "43ac965af4e550f6cb382f07bf2b97391e24e8c8f1a308de855f03333dec2265"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-5-column.png",
+      "sha256": "a5aeb1fb6b6ad4a4116a40a24550a11296ee950c6529afe74a09a32195274a97"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-5-top.png",
+      "sha256": "4a6b4221274de7e80511346e860c57d918954d3b84e505d604b13de495db461d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-6-top.png",
+      "sha256": "f604cac9d57c03ce2b06397f79c24a4b69ebdbabd67a3859718d0c5c2a6c2688"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/G-corrected.txt",
+      "sha256": "8d65a2651cddbd80f9976e391359b9df8a6e67a6c7c7573c0765116f4a5c90ee"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/assess_extent.py",
+      "sha256": "b1e0e1fa335840c35a444da6c0b8251721127d4092c16199c86cb74cfd38a27e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/campaign_case_progress_checkpoint136.json",
+      "sha256": "2ab430a0c59648f228ff32ca51a26a53ae56d95d2b1792eab2c20283cec9d3b7"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/closure-verification.json",
+      "sha256": "caeb594fce9c12539d491c676eaeb51e70f9362421a19ebc37d9876fdcab81f3"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/control-recipes.json",
+      "sha256": "c201fa73bf14ed32761da89348ea23250ab6f43fa663b6200e8d59418ada346b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/document-apply-and-replay.json",
+      "sha256": "158fe8dcbc6bbfad6e6500d9e86b62c5d5ceb37fe6fdb7e4418aacc419bae099"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/document-assessment-before.json",
+      "sha256": "4109f8a2f52f0ca611c94a2e9878eb6a00f53e88a7a4769936b6bd11ddff5f3a"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/fingerprint-after.json",
+      "sha256": "e6361f82b1aeef31071ae1fe0492d265d82bd07608e6c75f90894aaa88fcf885"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/fingerprint-before.json",
+      "sha256": "9f100e38988fa1b38f15105a0dce139070a99e5ddaeb6393e0cad640b3295758"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/fingerprint-trial.json",
+      "sha256": "e6361f82b1aeef31071ae1fe0492d265d82bd07608e6c75f90894aaa88fcf885"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/four-manifest-final-replay.json",
+      "sha256": "457fb83d73e380359af97fe4db3f555ab0cf395b9bed122cb71f9d668a406817"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/held_pdf_inventory_checkpoint136.json",
+      "sha256": "579eeb297dd43c3937d3efca5eb0c8ffdc347dd2887664c3022e73efb112becf"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/identities-before.json",
+      "sha256": "a69c12a4583e28d93ae8a0c8edcaf5f7bd22ee6ef4f80e0de69f65a589432f2c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/initial-trial-apply.json",
+      "sha256": "db4bf22d049301584f183be3b13812c71258f9eb153558818bdc3afde36533c4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/intake-initial-derived-count-assertion.py",
+      "sha256": "e9f7ae68004a65497c656348be9844a1626fbc098a53cb35983b541d17559c4e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/intake.py",
+      "sha256": "25935ff8e374f8018782cb682f12908695603b9a360270ceb09455c7d86b6469"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/line11-divorce.png",
+      "sha256": "0581fab28e9af4c6ae9f3917f4cc7f3fc978e39b7eee2f5bcf16b53e8976d289"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/line11-first.png",
+      "sha256": "23ed9cc279d60a5b838d0824d36abdd6425a1637bb97b70c9cca4c712019075c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/line11-middle.png",
+      "sha256": "9c759b4ed788fe14fda7e9856bfd8675970327daa97189644572d5d59d27ce48"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/line12.png",
+      "sha256": "550380e5aa4a7ebbb28faec7e0e4e2f3806870f42218e1f2780306083f2d29d1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/metadata-first-three-manifests.json",
+      "sha256": "9fa49d87bb0669a619e7302d3264b5ddcaff309adce8e2a191c2f1edb315d128"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/metadata.json",
+      "sha256": "ae2c4ce0c410171d98fc09378af2f6b06b179c3926cc487d56d7f55e1dcf36c6"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/miri-final-snapshot.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/miri-queue-before.json",
+      "sha256": "6c600d919fa6fe46956e847fe28c338423e9e912ff2549ca6837faa40d1c4294"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/node-tests-final.log",
+      "sha256": "ad6fde615b547f46fb9304367aa4b1549036ee68ab53f9e0017177d933fb9aed"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/non_pdf_holdings_checkpoint136.json",
+      "sha256": "2c55f4a4d9d6ebc73600f42d501befa583e351b06f5fe1e799c581a471dea97e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-03.png",
+      "sha256": "26aa393d39c9a122cefb7b452ac5a1b5ea048ba04a8d7d4423e8a5aec241789d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-04.png",
+      "sha256": "5e2f0e79924e3c5a6ba3146ef1840da7d16f58c211687fe8f5281219d9c8b73e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-05.png",
+      "sha256": "5e3900ef800783590d70b947af8fc50b538e44096c02339ab88a2f2e85ae8228"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-06.png",
+      "sha256": "d0bca5fd134e35cd51f431e8f2d9cab4c6b8b08e41abde123c08a7f86836f1a7"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-3-4x.png",
+      "sha256": "7d19a6a7dae83d1f69d6c2ef6543ee14903f3d4d3e39f6570e0166db90f3537d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-4-4x.png",
+      "sha256": "9e4645ec878f57f69b2ad48134ea68abba422aa2e43a8b82551fa3cc212756e9"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-5-4x.png",
+      "sha256": "83a3a8dede77c22c8ed0db45d1d5b10a163719dce4ad8109e37a87dc8b5f0a1d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/page-6-4x.png",
+      "sha256": "4820f28da6256f442a8a8e174f425228cfe6eac4c88ca64424efe7fa911f9eb6"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/pixel-verification.json",
+      "sha256": "0c7443f945601673c9b0aefe917bff7774c29d69d3720f02f77532bdbb45eae1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/prepare.py",
+      "sha256": "52e95e5d03ed95012151d371bab93ceefde06d00070590e98eee80d2705c70bb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/production-apply.json",
+      "sha256": "db4bf22d049301584f183be3b13812c71258f9eb153558818bdc3afde36533c4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/production-replay.json",
+      "sha256": "fc74059506047b8e92a7522f88173d34435937d60140815dbe0c89c7e0fd99e5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/production-verification.json",
+      "sha256": "30456c4875d36c293a37b9b39ef23904e0c6e2b77dd8bcba59d9f2acac855070"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/reader-build-final.log",
+      "sha256": "1e5fe47ecdf81e8d2c5884f73a182a514868026a5bc3de91e456966b25c14775"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/reading-extent-inventory.json",
+      "sha256": "da901258af172c1faf57d1ddc3d21905924e55afe967f7eaa75bca92205419b0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/record.py",
+      "sha256": "b07c18228981c76c8ac9b2dd4ca676ac8252a2977372335f84b16ec4c406d7f6"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/regenerate.py",
+      "sha256": "cc65183cb9421560e33091424caaea9c5b4a4cf1816b7785737dabe342cd2550"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render/G-desktop-closing.png",
+      "sha256": "13bbc5ac207757c3e4ed06049ab57491041f39d562cca01406f6ae6450126b38"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render/G-desktop.png",
+      "sha256": "356337222cbd3beb0fcb2db961b882eb547cd8f2ca8c2bb68619064b463d50e1"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render/G-mobile-closing.png",
+      "sha256": "3cabf963aa9ad8f430d8b7045778dc4223d5ab331f12f0865d42614831678b20"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render/G-mobile.png",
+      "sha256": "6a1fbc611fc79fe528ed6c84fc2ddf4983a9820698aceb5bf2ed98c37ed48bf0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render/render-verification.json",
+      "sha256": "88cab82cf54a95366b8f1f386952b52da10fc7825a7b1781e879cb936e9b58c0"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render-provenance.json",
+      "sha256": "b9e44514ebb84db2213e019524303f050d5bb4667e2924f9e3168a31869f67e5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/render_check.cjs",
+      "sha256": "9489d28e010eb7ba07f1928a288c00e1add712eb357414aceedb2ccd5791d56c"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/reports-final.json",
+      "sha256": "f6681da2764e6b1111671919c7aa9bf2e7087b99c5a4fca5c447fcded99f515e"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/roadmap-before.json",
+      "sha256": "4163384090a66c27d002a99bf6e3d6dc9fec15e2e83c0dadb7b52c7d81d7c2bb"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/roadmap-final-snapshot.json",
+      "sha256": "271f0c8353a5dd19c6e042715dcc26cad0d876ad807bd05a020c566834ef48da"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/source-copy-controls.json",
+      "sha256": "91d0c1b44e86718d93f3d8288f1524b64f3f0f67ad5e4568410e09ae50eec30f"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/source-evidence.json",
+      "sha256": "02711ec1b8cfe472b8170189f20413636eecc76c7fc4d16285c9dce4a72ea04b"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/targets-before.json",
+      "sha256": "865ddd329b1de20a4804b2d94a0bca090b438406f416ef35435d54d554746f3d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/tests-final.log",
+      "sha256": "7cfea08ef2167ea7d66f803950d33f9c99b37e30be2f8c8b5f89b6757b8e481d"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/trial-apply.json",
+      "sha256": "db4bf22d049301584f183be3b13812c71258f9eb153558818bdc3afde36533c4"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/trial-replay.json",
+      "sha256": "fc74059506047b8e92a7522f88173d34435937d60140815dbe0c89c7e0fd99e5"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/trial-verification.json",
+      "sha256": "30456c4875d36c293a37b9b39ef23904e0c6e2b77dd8bcba59d9f2acac855070"
+    },
+    {
+      "path": "data/private/research-work/Gordon-G136-2026-10-04/verify_close.py",
+      "sha256": "419ccec497b742799aabc733580f508614622fbf988f7b5deb60c04b68196661"
+    }
+  ],
+  "closed_at": "2026-10-04T09:36:00+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0136_Gordon_G_source_corrections_and_comparative_roster_verified.json",
+    "sha256": "07ebfccc5265423e520636f072df8a321a1fffc4759fc256fbb2e7b16f28abbc"
+  }
+}
