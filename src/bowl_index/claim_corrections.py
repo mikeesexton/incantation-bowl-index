@@ -5,6 +5,28 @@ from datetime import datetime
 from pathlib import Path
 
 
+def previously_repaired_locator_import(conn, object_id, appearance_id, source_id, claim, locator):
+    """Recognize exact historical imports without suppressing a different claim."""
+    expected = dict(object_id=object_id, appearance_id=appearance_id, source_id=source_id,
+                    field=claim['field'], value_text=claim.get('value_text'),
+                    value_json=json.dumps(claim['value_json'], ensure_ascii=False, sort_keys=True)
+                    if claim.get('value_json') is not None else None,
+                    normalized_value=claim.get('normalized_value'),
+                    certainty=claim.get('certainty', 'reported'), locator=locator,
+                    quotation=claim.get('quotation'), notes=claim.get('notes'))
+    for row in conn.execute(
+        'SELECT h.before_json,h.after_json FROM claim_locator_corrections h '
+        'JOIN claims c ON c.id=h.claim_id '
+        'WHERE c.object_id=? AND c.appearance_id=? AND c.source_id=?',
+        (object_id, appearance_id, source_id),
+    ):
+        for key in ('before_json', 'after_json'):
+            snapshot = json.loads(row[key])
+            if all(snapshot.get(field) == value for field, value in expected.items()):
+                return True
+    return False
+
+
 def apply_locator_corrections(conn, manifest, root):
     if manifest.get('schema_version') != 1:
         raise ValueError('unsupported locator correction schema')

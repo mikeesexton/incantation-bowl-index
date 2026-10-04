@@ -315,6 +315,10 @@ Then read the top entry of [`task-log.md`](../task-log.md).
   reports and correct only their attribution; do not turn a pointer repair into
   an accession adjudication. Research exports redact ledger snapshots because an
   appearance's original payload may include protected expression.
+- `ibi ingest-locator-corrections` repairs only claim citation pointers and
+  retains exact immutable before/after rows. Re-importing an exact original or
+  intermediate candidate claim cannot recreate its superseded pointer. A
+  different value, certainty, quotation or note remains separate evidence.
 - `ibi ingest-source-corrections` repairs copied bibliographic metadata against
   hash-bound evidence, retaining complete immutable before/after source fields.
   Source imports cannot restore a field value superseded in that ledger; unrelated

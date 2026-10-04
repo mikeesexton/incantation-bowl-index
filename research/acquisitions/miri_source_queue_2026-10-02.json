@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T21:43:08.525330+00:00",
+  "updated_at": "2026-10-04T22:17:52.883849+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1694,8 +1694,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Gaps155-2026-10-04/miri-queue-before.json",
-    "sha256": "23034d6a96ac0126df301f2c381837dbd9fe6b6e96b66a5f55de915e10a13529"
+    "path": "data/private/research-work/Berlin156-2026-10-04/miri-queue-before.json",
+    "sha256": "0fb58f565caf364777ffd28754f6cb4da555acf672c099aafd96aa9b3f5b1749"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2052,6 +2052,13 @@
     ],
     "unresolved_object_requirements_kept_in_case_index": true,
     "primary_Bowers_caption_only": true,
+    "new_acquisition_requests": 0
+  },
+  "checkpoint156_berlin_navigation_audit": {
+    "receipt": "research/receipts/Berlin156_original_2026-10-04.json",
+    "all_catalogue_entry_pointers_audited": true,
+    "remaining_Berlin_object_bridges_unchanged": true,
+    "twenty_three_held_summary_header_cleanups_not_acquisition_requests": true,
     "new_acquisition_requests": 0
   }
 }

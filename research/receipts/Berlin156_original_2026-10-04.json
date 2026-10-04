@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "checkpoint": 156,
+  "created_at": "2026-10-04T22:17:52.883849+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "scope": "Checkpoint156: all169Berlin2018catalogue entries/170appearances/170catalogue summaries/1665catalogue claims audited against103complete originalpages. Corrected164two-pages-early summarylocators,4original claimstart pointers,135overbroad claimends and1appearance pointer through304immutable reviews. Sixcorrect summaries and169valid appearance start pointers retained. Thirtychecked edition readings andall2271current textchecks unchanged; all bodies/sourcevalues/sourceconflicts/memberships preserved. Historical candidate replay safeguard now recognizes exact claim-locator correction snapshots and retains genuinely different claims. Twenty-three retained extractor running-header body cleanups explicitly queued; this batch certifies navigation only. Frozen24935linked214unlinked/zero wholecasescomplete; Miri21resolved32remaining/no new request. Goal active.",
+  "corpus_before": "34d4bff498e81f40616395ed44a9decc4ad8eb88eda64d0b49adabbff72910cb",
+  "corpus_after": "9b92566ef859be11256bb1c8f6361c4ba3885fe81a05973b297b1b22b15f309e",
+  "source_id": "SRC-DA708912C2D3",
+  "capture_id": "CAP-DBB06BEA4670",
+  "source_pdf_sha256": "7a25b7b89f8160aaec249988f47a5fb08b654c8ca9506b44fcc48ee60cde6aac",
+  "original_complete_catalogue_pages_viewed": 103,
+  "numbered_entries_audited": 169,
+  "catalogue_appearances_audited": 170,
+  "catalogue_summaries_audited": 170,
+  "catalogue_claims_audited": 1665,
+  "corrected_summary_locators": 164,
+  "corrected_claim_locators": 139,
+  "claim_start_errors": 4,
+  "claim_overbroad_ends": 135,
+  "corrected_appearance_locators": 1,
+  "new_immutable_corrections": 304,
+  "unchanged_checked_Berlin_readings": 30,
+  "unchanged_all_current_text_checks": 2271,
+  "summary_body_header_followups": 23,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_text_rows": 0,
+  "new_identity_decisions": 0,
+  "new_rights_approvals": 0,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "table_changes": {
+    "appearances": 0,
+    "catalogue_metadata_corrections": 1,
+    "claim_locator_corrections": 139,
+    "claims": 0,
+    "text_metadata_corrections": 164,
+    "texts": 0
+  },
+  "review_manifests": [
+    {
+      "command": "ingest-text-metadata",
+      "path": "data/private/manifests/Berlin156_texts_2026-10-04.json",
+      "sha256": "2de8a399d4f130edc7a126531aea049f83923864a7e1a427609fe4e3695a1462"
+    },
+    {
+      "command": "ingest-locator-corrections",
+      "path": "data/private/manifests/Berlin156_claims_2026-10-04.json",
+      "sha256": "fe63f8a0d12d671f4dfef4df3ed8dfb92a948fa1e83f905686328696cd31879f"
+    },
+    {
+      "command": "ingest-catalogue-metadata",
+      "path": "data/private/manifests/Berlin156_appearance_2026-10-04.json",
+      "sha256": "3321196e03dc90773d99f34565ed68581fb8f0411e005081d94839b80632799f"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/source-evidence.json",
+    "sha256": "bccc85ceab9f1c7315b3fb25696813db0027e8f63e3d79aba08b1a99939b2662"
+  },
+  "locator_audit": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/locator-audit.json",
+    "sha256": "a0d1069572c571bb71a38019dada87b281b9e62544f265116de36a973c35f7d8"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/page-derivatives.json",
+    "sha256": "cd718ffa7d1f08b6f0435a613773a1aebd09debf0f3c74b7e16af13085f722d2"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/intake-verification.json",
+    "sha256": "3605317e9e6d770cff06d922e3ff941378f2f2d8df3d83ae7c789493e8ae9ed2"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/case-availability-audit.json",
+    "sha256": "bfb642270b0374a038fd7b1027670d5cca19dde023c894a9708041799ba12808"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/campaign_case_progress_checkpoint156.json",
+    "sha256": "09255bb3f446fafcc4b0c344627a7cb022fbdb193ce1124fad8dd9878c3a7bf3"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/held_pdf_inventory_checkpoint156.json",
+    "sha256": "7df1181b334f1f06e8141eb5d7d3e7d80f1934b6379ee3922e6162ea012d2bcc"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/non_pdf_holdings_checkpoint156.json",
+    "sha256": "62b1de38b12452313e300d94e5821e5699d80ce8ae66871e9ce4517634a32b2c"
+  },
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 79,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "totals": {
+    "texts": 3009,
+    "media": 2440,
+    "captures": 119,
+    "sources": 994,
+    "objects": 2281
+  },
+  "identities": 1929,
+  "validation": {
+    "python_tests": 476,
+    "node_tests": 71,
+    "total_tests": 547,
+    "reader_checks": "8/8",
+    "all39trial_production_tables_exact": true,
+    "all_prior_rows_or_complete_immutable_snapshots_retained": true,
+    "all_identity_memberships_exact": true,
+    "all2271current_text_checks_unchanged": true,
+    "current_three_manifest_replays_unchanged": true,
+    "two_historical_candidate_replays_unchanged": true,
+    "all_text_rows_verified": 3009,
+    "all_media_assignments_verified": 2440,
+    "all_local_image_hashes_verified": 1529,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1929,
+    "all249case_availability_units_verified": true,
+    "all249attempt_histories_retained_unchanged": true,
+    "all169catalogue_headings_and102numbered_headers_verified": true,
+    "all103fullpages_and26sheets_viewed_hashbound_pixel_exact": true,
+    "all170appearance_217text_1682claim_locators_verified": true,
+    "four_actual_reader_routes_citations_verified": true,
+    "two_separate_entry168components_retained": true,
+    "miri21resolved32remaining_requests_exact": true,
+    "no_new_readings_or_identity_decisions": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "concurrent_DISC004_and_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "diagnostics": "Read-only shell glob and guessed locator-module path missed; recovered from actual repository filenames. First patch rejected quote-style context without changing files; corrected patch applied. First private trial comparison used sorted ledger dict order instead of SQL column order; diagnostic-only checker corrected, initial successful apply/replay logs preserved, corpus not altered to satisfy comparison. Poppler font-cache warnings nonfatal; all103completepages actually inspected for headings/page boundaries. Reader role selector had no DOM matches; refreshed snapshot and used actual Source details text. One stale summary identity ID returned No such record; recovered from actual appearance links. Read-only exported appearance object_id lookup lacked that field; recovered via actual link table. Closure checker initially assumed optional repair/before_locator keys on outside-catalogue rows; recovered using actual audit schema. No database mutation for these checks.",
+  "limits": "Navigation repairs only; all source prose/measurements/source disagreements retained. 30checked edition readings remain current, no summary promoted to a verified reading. Twenty-three retained extractor running-header payloads explicitly queued for separate source-bound content correction; not facts or inscriptions. Sixcorrectsummarylocators and169valid appearance start pointers retained. No uncertain Berlin bridge adjudication, current edition-absence finding, push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "ui_verification": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/ui-verification.json",
+    "sha256": "ef55255653ebc88a7171c4b483924603b85b2a7b393575ad732fa9a18c1f3759"
+  },
+  "pixel_verification": {
+    "path": "data/private/research-work/Berlin156-2026-10-04/pixel-verification.json",
+    "sha256": "c5b28543f1b5febdc770a6be4a8e05a67bc9bee49fe5ce9d46a1de2691081e5e"
+  },
+  "closed_at": "2026-10-04T22:28:54.501369+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0156_berlin_catalogue_locator_audit.json",
+    "sha256": "30a752f8176712995a8fa57d22b6354fe5b631c51f1025c86ef0f91c8cff7b5a"
+  },
+  "closure_roadmap_refresh": {
+    "reason": "Correct stale current-priority counts inherited from earlier checkpoints; historical checkpoint descriptions remain dated.",
+    "frozen_cases": 249,
+    "linked": 35,
+    "unlinked": 214,
+    "current_priority_reference_numerator": 838,
+    "denominator": 1052,
+    "additional_links_for80percent": 4,
+    "task_statuses_unchanged": true
+  }
+}

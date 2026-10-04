@@ -3,6 +3,7 @@ from datetime import datetime
 
 from .ids import new_id
 from .catalogue_metadata import corrected_appearance, corrected_identifier_import, corrected_claim_import
+from .claim_corrections import previously_repaired_locator_import
 
 
 SOURCE_FIELDS = (
@@ -253,6 +254,9 @@ def add_candidate(conn, record):
             locator = claim.get("locator", appearance["locator"])
             if corrected_claim_import(conn, existing["object_id"], existing["appearance_id"], source_id,
                                       claim["field"], claim.get("value_text"), value_json, locator):
+                continue
+            if previously_repaired_locator_import(conn, existing["object_id"], existing["appearance_id"],
+                                                  source_id, claim, locator):
                 continue
             if conn.execute(
                 "SELECT 1 FROM claims WHERE object_id=? AND appearance_id=? AND source_id=? "

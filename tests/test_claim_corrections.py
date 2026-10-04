@@ -7,7 +7,8 @@ from pathlib import Path
 
 from bowl_index.claim_corrections import apply_locator_corrections
 from bowl_index.db import connect, migrate
-from bowl_index.ingest import load_compact_list
+from bowl_index.ingest import load_compact_list, add_candidate
+from bowl_index.state import corpus_fingerprint
 
 
 class LocatorTests(unittest.TestCase):
@@ -81,3 +82,48 @@ class LocatorTests(unittest.TestCase):
         current = dict(self.conn.execute('SELECT * FROM claims WHERE id=?', (m['entries'][0]['before']['id'],)).fetchone())
         self.assertEqual(current, m['entries'][0]['before'])
         self.assertEqual(self.conn.execute('SELECT count(*) FROM claim_locator_corrections').fetchone()[0], 0)
+
+    def repair_seed_pointer(self, review_id='CORR-SEED', locator='text 002A; printed p. 11; PDF p. 13'):
+        before = dict(self.conn.execute("SELECT * FROM claims WHERE field='inscription_language' "
+                                        "ORDER BY locator LIMIT 1 OFFSET 1").fetchone())
+        manifest = dict(schema_version=1, reviewed_by='Test reviewer', reviewed_at='2026-10-04T22:00:00Z',
+                        evidence_path='seed.json', evidence_sha256=hashlib.sha256(self.seed.read_bytes()).hexdigest(),
+                        entries=[dict(id=review_id, before=before, locator=locator,
+                                      rationale='Original source pagination checked')])
+        apply_locator_corrections(self.conn, manifest, self.root)
+        return before
+
+    def test_old_candidate_import_cannot_recreate_superseded_pointer(self):
+        self.repair_seed_pointer()
+        before = corpus_fingerprint(self.conn)
+        load_compact_list(self.conn, self.seed)
+        self.assertEqual(corpus_fingerprint(self.conn), before)
+
+    def test_chained_pointer_repairs_preserve_original_and_intermediate_imports(self):
+        original = self.repair_seed_pointer()
+        intermediate = self.repair_seed_pointer('CORR-SEED-SECOND', 'text 002A; printed p. 11, line 4; PDF p. 13')
+        before = corpus_fingerprint(self.conn)
+        appearance = self.conn.execute('SELECT locator FROM appearances WHERE id=?',
+                                       (original['appearance_id'],)).fetchone()['locator']
+        for old in (original, intermediate):
+            add_candidate(self.conn, dict(source_id=old['source_id'], appearance=dict(locator=appearance),
+                                          claims=[dict(field=old['field'], value_text=old['value_text'],
+                                                       locator=old['locator'])]))
+        self.conn.commit()
+        self.assertEqual(corpus_fingerprint(self.conn), before)
+
+    def test_new_value_or_evidence_at_old_locator_is_retained(self):
+        old = self.repair_seed_pointer()
+        appearance = self.conn.execute('SELECT locator FROM appearances WHERE id=?',
+                                       (old['appearance_id'],)).fetchone()['locator']
+        for item in (dict(field=old['field'], value_text=old['value_text'], locator=old['locator'],
+                          certainty='uncertain', notes='New source-specific caution'),
+                     dict(field=old['field'], value_text='Mandaic', locator=old['locator'])):
+            add_candidate(self.conn, dict(source_id=old['source_id'], appearance=dict(locator=appearance),
+                                          claims=[item]))
+        self.conn.commit()
+        rows = self.conn.execute('SELECT value_text,certainty,notes FROM claims WHERE object_id=? '
+                                 'AND field=? AND locator=?',
+                                 (old['object_id'], old['field'], old['locator'])).fetchall()
+        self.assertEqual({tuple(r) for r in rows}, {('Aramaic', 'uncertain', 'New source-specific caution'),
+                                                    ('Mandaic', 'reported', None)})
