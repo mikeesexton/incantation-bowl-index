@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T14:38:40.715912+00:00",
+  "updated_at": "2026-10-04T14:55:40.001605+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -860,7 +860,7 @@
       "capture_id": "CAP-IBI-CP141-PDF-14",
       "sha256": "4eccaa13aacd1a56a8ea8e2bf49ba2b17c0e65e7688b06ee266a841f8684defb",
       "status": "Complete original article body held from Mike’s supplied PDF",
-      "reading_audit": "Own BM91715 Latin/English pair215note100 copied/checked; remaining197–219 article bowl editions and contexts pending",
+      "reading_audit": "Own Appendix A/B Moussaieff1/6 complete provided English translations checked; Hebrew16/20anchor working copies partial_review pending doubtful/damaged letters, erasure, superlinear addition and omission-run extent. Two published plate photographs and all edition/translation pages retained. Earlier BM91715note100pair unchanged; other original article quotations, apparatus, contexts and claims pending",
       "resolved_at": "2026-10-04T13:13:27.719422+00:00",
       "original_acquisition_request": {
         "source_id": "SRC-A06D3C4C7CDF",
@@ -886,6 +886,11 @@
           "recorded_at": "2026-10-04T14:06:09.509921+00:00",
           "prior_audit": "Holdings and working OCR intake only; exact reading/media/appearance extraction pending",
           "superseded_by_checkpoint": 143
+        },
+        {
+          "recorded_at": "2026-10-04T14:55:40.001605+00:00",
+          "prior_audit": "Own BM91715 Latin/English pair215note100 copied/checked; remaining197–219 article bowl editions and contexts pending",
+          "superseded_by_checkpoint": 145
         }
       ],
       "reading_updates": [
@@ -897,6 +902,16 @@
           "inventory": {
             "path": "data/private/research-work/supplied-comparatives143-2026-10-04/reading-extent-inventory.json",
             "sha256": "7ea80ac0e2fc74eb574b9807acc419719757a96b06cb4347a57d5a0fd8d1a5d3"
+          }
+        },
+        {
+          "checkpoint": 145,
+          "observed_at": "2026-10-04T14:55:40.001605+00:00",
+          "status": "Own Appendix A/B Moussaieff1/6 complete provided English translations checked; Hebrew16/20anchor working copies partial_review pending doubtful/damaged letters, erasure, superlinear addition and omission-run extent. Two published plate photographs and all edition/translation pages retained. Earlier BM91715note100pair unchanged; other original article quotations, apparatus, contexts and claims pending",
+          "sourcewide_extraction": "partial",
+          "inventory": {
+            "path": "data/private/research-work/Shaked145-2026-10-04/reading-extent-inventory.json",
+            "sha256": "7d7cc5c08184bf40bd019b08060dcd540452ef7f267e21384dcb1210a00f3f0d"
           }
         }
       ]
@@ -1501,8 +1516,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/MK-BM144-2026-10-04/miri-queue-before.json",
-    "sha256": "8813d86ae8cc414a0f1a9486324254c43f209e780d1cdb11802e084b7538d378"
+    "path": "data/private/research-work/Shaked145-2026-10-04/miri-queue-before.json",
+    "sha256": "1f8a3581c50b116f743a4dfa965412e75bca55db6c1e7410f40825eddffa698b"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -1716,6 +1731,16 @@
     "source_id": "SRC-IBI-CP132-MK2001-BM",
     "checked_reading_rows": 1,
     "partial_reading_rows": 5,
+    "sourcewide_extraction": "partial",
+    "miri_resolved": 21,
+    "miri_remaining": 32,
+    "new_requests": 0
+  },
+  "checkpoint145_Shaked_original": {
+    "receipt": "research/receipts/Shaked145_original_2026-10-04.json",
+    "source_id": "SRC-A06D3C4C7CDF",
+    "checked_reading_rows": 2,
+    "partial_reading_rows": 2,
     "sourcewide_extraction": "partial",
     "miri_resolved": 21,
     "miri_remaining": 32,

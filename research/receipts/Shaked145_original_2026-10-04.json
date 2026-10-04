@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "checkpoint": 145,
+  "created_at": "2026-10-04T14:55:40.001605+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "corpus_before": "b0167dc721c9a0b8e59513508ce5c25e37b4d43a42baef97511a8d79cd2a101d",
+  "corpus_after": "ec614d3977f4f43f4208d812457fe74d59e62d3aff9a921dbfaa43761584ff6e",
+  "table_changes": {
+    "appearances": 2,
+    "appearance_object_links": 2,
+    "texts": 4,
+    "media": 11,
+    "publication_assessments": 2,
+    "text_proofreading_reviews": 4,
+    "document_assessments": 1,
+    "source_corrections": 1,
+    "sources": 0
+  },
+  "scope": "Checkpoint145: both original Shaked1995 Moussaieff1/6 appendix editions linked to two exact existing Waller candidates through original headings and freshly viewed Waller159–160 controls. Four searchable rows added: two entire provided English translations checked, two Hebrew-letter16/20anchor working copies partial_review for doubtful/damaged letters and editorial details. Eleven full-page assignments over ten original pages, including two published bowl photographs, added. Earlier Waller bibliography assessments and note100 pair retained. Article-wide extraction partial; no new object, identity decision, scholarly adjudication, public approval or whole-case completion",
+  "new_text_rows": 4,
+  "new_checked_readings": 2,
+  "new_partial_readings": 2,
+  "new_appearances": 2,
+  "new_publication_assessments": 2,
+  "new_document_assessments": 1,
+  "new_claim_rows": 0,
+  "new_media": 11,
+  "new_objects": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_identity_decisions": 0,
+  "new_source_metadata_ledger_repairs": 1,
+  "new_proofreading_reviews": 4,
+  "public_reuse_approvals": 0,
+  "total_text_rows": 2613,
+  "total_media": 2344,
+  "total_captures": 119,
+  "total_sources": 994,
+  "total_objects": 2264,
+  "total_identities": 1912,
+  "frozen_cohort_size": 249,
+  "frozen_linked_now": 33,
+  "frozen_unlinked_now": 216,
+  "complete_case_investigations_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining_requests": 32,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "document_metrics": {
+    "document_assessment_rows": 108,
+    "sources_with_document_assessments": 102,
+    "sources_with_complete_documents": 93,
+    "sources_with_physically_inspected_documents": 0,
+    "sources_with_ocr": 22,
+    "sources_with_corrected_rich_text": 0,
+    "sources_with_object_level_extraction": 77,
+    "sources_with_complete_object_level_extraction": 29
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Shaked145_readings_2026-10-04.jsonl",
+      "sha256": "9273f259371ddcf8d43eaa77070457903fa964b0ac75d21150f71dee066bcade"
+    },
+    {
+      "command": "ingest-publication-assessments",
+      "path": "data/private/manifests/Shaked145_publication_2026-10-04.json",
+      "sha256": "6387a09288cab7b744cb5432acc5d2d727398a441a3f2bd04313ba872f549669"
+    },
+    {
+      "command": "ingest-source-corrections",
+      "path": "data/private/manifests/Shaked145_source_correction_2026-10-04.json",
+      "sha256": "3b74a8b268bd25d569fffc0c8bac748e80aa06151796218f252fc645e6bf7b3f"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Shaked145_proofreading_2026-10-04.json",
+      "sha256": "7404e557750c285e0532e03b2b8bc21e5c45245bd2bd42551cfa27b4cd1a1295"
+    },
+    {
+      "command": "ingest-document-assessment",
+      "path": "data/private/manifests/Shaked145_documents_2026-10-04.json",
+      "sha256": "c3bac334a19ab51270e9d2970deb8af4a985029e35f4bdc556e833d510aacb68"
+    }
+  ],
+  "source_evidence": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/source-evidence.json",
+    "sha256": "6af9fef55292710e09fd4d07d8be1f8af7ec3caad45d8cfa3bc7d6fdf32ceae2"
+  },
+  "extent_inventory": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/reading-extent-inventory.json",
+    "sha256": "7d7cc5c08184bf40bd019b08060dcd540452ef7f267e21384dcb1210a00f3f0d"
+  },
+  "page_derivatives": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/page-derivatives.json",
+    "sha256": "bcc20f42e5f73c0a35cd4f714a5c46eefefbb238e25b4075cbac82077fc7c92b"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/campaign_case_progress_checkpoint145.json",
+    "sha256": "a143aaa7cf82c21c77f091bac03230c9e119efc624dda3473787be7e12acad12"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/held_pdf_inventory_checkpoint145.json",
+    "sha256": "578eaa13bb656e561cd0ecf225e82cb5dddbc1f14060c9707ad4db3c74befe21"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/non_pdf_holdings_checkpoint145.json",
+    "sha256": "d349816c5e2d2e562a5fb69ee4482f093e459e728df6cae9c7937c4c3dd7435a"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/intake-verification.json",
+    "sha256": "539727b6496c4248ebaa70f12342be11f44f9fbb9f2fabee876a7caa29395ea3"
+  },
+  "validation": {
+    "python_tests": 443,
+    "node_tests": 62,
+    "total_tests": 505,
+    "reader_checks": "8/8",
+    "all_text_rows_verified": 2613,
+    "all_media_assignments_verified": 2344,
+    "all_local_image_hashes_verified": 1433,
+    "all_capture_bytes_assignments_verified": 119,
+    "all_sources_verified": 994,
+    "all_identity_memberships_verified": 1912,
+    "all39tables_exact": true,
+    "all_prior_rows_retained_or_snapshotted": true,
+    "five_current_manifest_replays_unchanged": true,
+    "all4current_copy_checks": true,
+    "checked_copies": 2,
+    "partial_copies": 2,
+    "frozen249entries_exact": true,
+    "miri_21resolved32remaining": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "hash_exact_full_page_assignments": 11,
+    "unique_rendered_pages": 10,
+    "full_plate_photographs": 2,
+    "reports_regenerated": 7
+  },
+  "limits": "Both Hebrew copies partial at exact glyph/editorial-mark level; all source line anchors represented, not certified full source copies or independent clay readings. Both checked English translations entire provided extent only, source uncertainties/gaps retained. Main quotations, apparatus, contexts, source-dated provenance/interpretive claims remain; sourcewide extraction partial. HLIB684 later bridge not established, separate prior candidate retained. No wholecase, uncertain merge, scholarly adjudication or rights completion",
+  "diagnostics": "All five trial and production manifest replays unchanged; all39tables exact, historical rows retained or source-ledger snapshotted, identity memberships exact. No reset,deploy,push,purchase,outbound message or Waterman retry.",
+  "closed_at": "2026-10-04T14:59:09.051283+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0145_original_Shaked_appendix_editions.json",
+    "sha256": "e675be29154adea487d5375608a3c665940eafbdb95268507cd8c8a52e07b4f0"
+  },
+  "post_closure_reader_visual": {
+    "path": "data/private/research-work/Shaked145-2026-10-04/post-closure-reader-visual.json",
+    "sha256": "c7d27e75bc5814b4c9f30160cb7e8d11a029b7738e6b1a3c52bf1640ae71e407"
+  }
+}
