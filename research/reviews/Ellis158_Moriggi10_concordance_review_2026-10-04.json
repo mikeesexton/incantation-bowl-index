@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "checkpoint": 158,
+  "prepared_by": "Codex",
+  "prepared_at": "2026-10-04T23:05:54.704767+00:00",
+  "status": "requires_human_identity_review",
+  "object_ids": [
+    "IBI-D7226A7631D3",
+    "IBI-2C589C4F4CF9"
+  ],
+  "identity_ids": [
+    "IDENT-D7226A7631D3",
+    "IDENT-2C589C4F4CF9"
+  ],
+  "source_reported_concordance": {
+    "source_id": "SRC-3C4294DDB367",
+    "capture_id": "CAP-EA64131E5F1D",
+    "source_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+    "locator": "Moriggi2014 bowl10, printed65/PDF83",
+    "mapping": [
+      "Ellis1853no6",
+      "Hamilton1971no10",
+      "Segal2000no117ES",
+      "Moriggi2004no10",
+      "CAL SyrIncBowl10"
+    ],
+    "independent_unheld_edition_verification": false
+  },
+  "measurement_controls": {
+    "Ellis1853_printed521_PDF580_caption": {
+      "diameter": 5,
+      "depth": 3,
+      "unit": "inch"
+    },
+    "Moriggi2014_sequence_derived64_PDF82": {
+      "diameter": 17,
+      "depth": 7.7,
+      "unit": "cm"
+    },
+    "project_arithmetic_only": {
+      "Ellis_diameter_cm": 12.7,
+      "Ellis_depth_cm": 7.62,
+      "basis": "exact inch-to-cm conversion 2.54, not a new observation"
+    },
+    "finding": "The reported diameter values differ materially; depth close. Retain both; do not use rounded depth or similar photograph to decide identity or correct either scholar."
+  },
+  "source_evidence": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/source-evidence.json",
+    "sha256": "1469d19d3730f5de21de5362f4e55e99db2cb43d5ded1dcc262fee44304f5cb7"
+  },
+  "no_corpus_identity_decision": true,
+  "no_source_reading_adjudication": true,
+  "next_action": "Review the explicit author concordance beside the held drawing/photograph and both measurement reports; obtain original accession/edition controls. Keep separate pending human decision. Do not treat similar imagery or near-matching depth as a standing-ruling exception."
+}

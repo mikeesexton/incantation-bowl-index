@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "checkpoint": 158,
+  "created_at": "2026-10-04T23:05:54.704767+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "scope": "Checkpoint158: Ellis6 original Syriac recovery remains unresolved after actual source-page/type controls. Held Moriggi2014 bowl10 apparatus supplies16 separately checked Latin forms/English glosses and3partial source extracts;3complete facsimile assignments. Explicit source-reported Ellis6/BM91712 concordance and materially different reported diameters retained for human review without identity merge. Seven complete pages and4enlarged lexical controls viewed. Latin forms do not recover original Syriac characters. All old rows/memberships/2294current checks retained; frozen24935linked214unlinked/zero wholecasescomplete. New Hamilton1971original request; Miri21resolved33remaining. Goal active.",
+  "corpus_before": "9340bc98fae7080064901f72bedd2062f36b5b36e20758957cc99f235d16d9cc",
+  "corpus_after": "14e6f0ac53f1688aa0314801ed580b6a2581be4bad626e9149f67beefc4ed217",
+  "source_id": "SRC-3C4294DDB367",
+  "capture_id": "CAP-EA64131E5F1D",
+  "source_pdf_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+  "new_texts": 19,
+  "new_bounded_checked_copies": 16,
+  "new_partial_source_extracts": 3,
+  "new_media": 3,
+  "new_native_Syriac_character_transcriptions": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_objects": 0,
+  "new_identity_decisions": 0,
+  "new_claims": 0,
+  "new_rights_approvals": 0,
+  "unchanged_prior_current_checks": 2294,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 33,
+  "new_acquisition_requests": 1,
+  "allowance_resets_verified_used": 0,
+  "source_evidence": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/source-evidence.json",
+    "sha256": "1469d19d3730f5de21de5362f4e55e99db2cb43d5ded1dcc262fee44304f5cb7"
+  },
+  "concordance_review": {
+    "path": "research/reviews/Ellis158_Moriggi10_concordance_review_2026-10-04.json",
+    "sha256": "f001a5893a94ddbbb0da8384fa50cda19a4c9838c073b1f92649e72fb55a7910"
+  },
+  "unit_inventory": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/current-unit-inventory.json",
+    "sha256": "8423d31c7dbe1322e628fd14485c82a0d61ec09b2275fbb2d4daa10259da3061"
+  },
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/Ellis158_Moriggi10_readings_2026-10-04.jsonl",
+      "sha256": "d1584e3acbeaa7bba38c46ee977817d5c182890a630b4e3ea7bf0e1c8b29f325"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/Ellis158_Moriggi10_proofreading_2026-10-04.json",
+      "sha256": "b1ffc3d69b713898aadb656417449b923b5cc8ba770f8adfc392b6864dd097f4"
+    }
+  ],
+  "intake_verification": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/intake-verification.json",
+    "sha256": "84581339d797c4734b2b1f1ba6203ebe845960f82fa370e567e972be4d771cb5"
+  },
+  "media_derivatives": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/media-derivatives.json",
+    "sha256": "3cac623bb5981a4a76881a170d61c441615b84fc89247a2a885b4f35240a03fc"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/campaign_case_progress_checkpoint158.json",
+    "sha256": "47bd0a29515eb2c2f5860a2c97e0bb0364af325066983dfdd7cf56c236e2b678"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/case-availability-audit.json",
+    "sha256": "d0294054d56a09fef294794bbcfccfdbf91519e83e07943feccdf67713f3df31"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/held_pdf_inventory_checkpoint158.json",
+    "sha256": "892bd7bbb50438a2fc5283e2b75459e653bb896cc418ff53108de6c9eba5e161"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/non_pdf_holdings_checkpoint158.json",
+    "sha256": "2d9798c60bf7e7396b1e691300101fdc22d1c2b08d1a98d4997b58eb3308283d"
+  },
+  "validation": {
+    "python_tests": 477,
+    "node_tests": 71,
+    "total_tests": 548,
+    "reader_checks": "8/8",
+    "all39trial_production_tables_exact": true,
+    "all_prior_rows_unchanged": true,
+    "all_memberships_unchanged": true,
+    "all2294prior_current_checks_unchanged": true,
+    "all19current_source_units_verified": true,
+    "all3028private_texts_verified": true,
+    "all2443media_assignments_verified": true,
+    "all1532local_image_hashes_verified": true,
+    "all119capture_bytes_and_assignments_verified": true,
+    "all994sources_verified": true,
+    "all1929identity_memberships_verified": true,
+    "all249attempt_histories_unchanged": true,
+    "current_inventory_units_verified": true,
+    "miri21resolved33remaining_old_requests_retained": true,
+    "seven_complete_source_pages_hashbound_viewed": true,
+    "four_lexical_crops_viewed": true,
+    "three_page_derivatives_hash_exact": true,
+    "two_actual_reader_routes_and_two_screenshots": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "no_new_native_script_or_identity_decision": true,
+    "DISC004_and_all_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "limits": "Bounded apparatus source copies only; original Syriac characters unrecovered. Explicit concordance is attributed evidence, no merge or source adjudication. Catalogue/whole apparatus typography partial; no sourcewide or wholecase completeness. No publication-case search fabricated for these outside-cohort subjects. No push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "diagnostics": "Read-only schema guesses for appearance and dedupe columns recovered from actual tables without writes. Unverified font-route robots stopped target download. Node .mjs glob absent; actual _unit.cjs files used. No failed corpus transaction.",
+  "ui_verification": {
+    "path": "data/private/research-work/Ellis158-2026-10-04/ui-verification.json",
+    "sha256": "d02905f97af46a40e8bba309bc9732d7db05f57b36e6f5f234c7e5da36d3101d"
+  },
+  "closed_at": "2026-10-04T23:11:12.046227+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0158_ellis_native_controls_and_moriggi_apparatus.json",
+    "sha256": "ce02354e4c3f4d5de159392ae39c519c861e246735881204c3ab488f5f5d27d8"
+  }
+}

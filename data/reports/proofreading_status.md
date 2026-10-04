@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 2103 | 156 | 1 | 2260 | 93.1% |
-| Other stored text (mostly source extracts and summaries) | 5 | 30 | 714 | 749 | 0.7% |
-| All stored text | 2108 | 186 | 715 | 3009 | 70.1% |
+| Edition text (translation, transcription, transliteration) | 2119 | 156 | 1 | 2276 | 93.1% |
+| Other stored text (mostly source extracts and summaries) | 5 | 33 | 714 | 752 | 0.7% |
+| All stored text | 2124 | 189 | 715 | 3028 | 70.1% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 1071 | 41 | 1 | 1113 |
+| translation | 1078 | 41 | 1 | 1120 |
 | transcription | 721 | 56 | 0 | 777 |
-| transliteration | 311 | 59 | 0 | 370 |
+| transliteration | 320 | 59 | 0 | 379 |
 
 ## Edition text by source
 
@@ -36,7 +36,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | ‘… and by the name of Jesus …’ An Unpublished Magic Bowl in Jewish Aramaic (`SRC-21417589C8F9`) | 2 | 0 | 0 | 2 |
 | A Magical Bowl in Judaeo-Aramaic (`SRC-25F456A40523`) | 28 | 1 | 0 | 29 |
 | Incantation Bowl in Mandaic — MS 1911/2 (`SRC-292E3E15363B`) | 1 | 0 | 0 | 1 |
-| A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 98 | 0 | 0 | 98 |
+| A Corpus of Syriac Incantation Bowls: Syriac Magical Texts from Late-Antique Mesopotamia (`SRC-3C4294DDB367`) | 114 | 0 | 0 | 114 |
 | ‘My Foes Loved Me’: A New Incantation Bowl for Popularity and Success (`SRC-4071AE0F749A`) | 2 | 0 | 0 | 2 |
 | Aramaic and Mandaic Magical Bowls (`SRC-43C1E102538E`) | 16 | 0 | 0 | 16 |
 | What Will Save the Household? (`SRC-455442AA727F`) | 1 | 0 | 0 | 1 |

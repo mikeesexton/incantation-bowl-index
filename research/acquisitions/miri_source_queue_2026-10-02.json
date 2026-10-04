@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T22:38:16.464769+00:00",
+  "updated_at": "2026-10-04T23:05:54.704767+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1102,7 +1102,17 @@
       "requirement": "Complete original British Museum catalogue. Existing title/front-matter pointers cannot substitute for its 142 numbered text units and images. Highest-impact original edition gap.",
       "priority": 1,
       "previous_access_evidence": "Earlier capture/checkpoint source notes and privatecasehistories; no newnetworkfetch in thislocalintake batch.",
-      "status": "unheld original needed"
+      "status": "unheld original needed",
+      "follow_up_evidence": [
+        {
+          "checkpoint": 158,
+          "checked_at": "2026-10-04T23:05:54.704767+00:00",
+          "source_id": "SRC-3C4294DDB367",
+          "source_sha256": "ce32170d182d4282a9610d42c2c6449b0435eba77851b18aa919544ddb4e5035",
+          "locator": "Moriggi2014 printed64–65/PDF82–83",
+          "finding": "Moriggi reports BM91712 as Segal no117ES, text147 and photograph plate134. Original Segal body remains unheld; reported pointers not independently checked. Ellis6 concordance separately queued without merge."
+        }
+      ]
     },
     {
       "source_id": "SRC-539BB677443B",
@@ -1681,6 +1691,36 @@
         "sha256": "94f953cf648f1574c6ff06db1304c2477a2b7cf34164de7e7b12b5465ea27759"
       },
       "previous_access_evidence": "Actual held Morgenstern2007 references/pages checked; exact-title publisher/institution searches found bibliography/catalogue metadata, no eligible original body. Search limits and URLs retained in private route observations; not a blanket inaccessible/unpublished finding. No purchase/login/contact/bypass."
+    },
+    {
+      "source_id": null,
+      "short_label": "Hamilton1971SyriacIncantationBowls",
+      "citation": "Hamilton, Victor P. Syriac Incantation Bowls. Ann Arbor, MI: University Microfilms,1971 (citation verified in held Moriggi2014 bibliography printed215/PDF233).",
+      "priority": 2,
+      "status": "Original edition unheld; targeted institutional discovery queries supplied no accessible original body",
+      "requirement": "Permitted complete1971edition/dissertation, or immediate bowl10 original text/translation/apparatus112a and plates/character controls. Moriggi2014printed64–65reports Hamiltonno10 and9line division; obtain original before verifying Hamilton wording or resolving numbering. Modern Latin readings do not recover Ellis1853Syriaccharacters.",
+      "supporting_evidence": {
+        "path": "data/private/research-work/Ellis158-2026-10-04/source-evidence.json",
+        "sha256": "1469d19d3730f5de21de5362f4e55e99db2cb43d5ded1dcc262fee44304f5cb7"
+      },
+      "search_attempts": [
+        {
+          "query": "\"Syriac Incantation Bowls\" \"Hamilton\" site:brandeis.edu",
+          "date": "2026-10-04T23:05:54.704767+00:00",
+          "result": "no indexed result returned; not proof of absence"
+        },
+        {
+          "query": "\"Syriac Incantation Bowls\" \"Hamilton\" site:search.proquest.com",
+          "date": "2026-10-04T23:05:54.704767+00:00",
+          "result": "no indexed result returned; not proof of absence"
+        },
+        {
+          "query": "\"Syriac Incantation Bowls\" \"Hamilton\" site:search.worldcat.org",
+          "date": "2026-10-04T23:05:54.704767+00:00",
+          "result": "no indexed result returned; not proof of absence"
+        }
+      ],
+      "next_route": "Mike/Miri permitted library catalogue or dissertation service; no purchase or outbound request sent."
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1694,8 +1734,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Berlin157-2026-10-04/miri-queue-before.json",
-    "sha256": "efd032b68446c925a8958297dadcc7424944b33e01cdfaa2dfa4cbcb7a6ed9ba"
+    "path": "data/private/research-work/Ellis158-2026-10-04/miri-queue-before.json",
+    "sha256": "c5b8dbf0447cccd4f655aad62741591007629fddfe7a68c1fb136452abc31365"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2066,5 +2106,11 @@
     "flagged_headers_cleaned": 23,
     "sectionXVI_reading_absence_source_specific": true,
     "new_acquisition_requests": 0
+  },
+  "checkpoint158_original_controls": {
+    "receipt": "research/receipts/Ellis158_original_2026-10-04.json",
+    "new_requests": 1,
+    "native_recovery": "Ellis6unresolved",
+    "no_redundant_Moriggi_acquisition": true
   }
 }
