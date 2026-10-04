@@ -76,6 +76,13 @@ class CaptureReceiptTransferTests(unittest.TestCase):
         with self.assertRaises(ValueError): import_capture_receipts(self.conn,self.manifest,self.root)
         self.assertEqual(self.conn.execute('SELECT count(*) FROM captures').fetchone()[0],0)
 
+    def test_original_wildcard_robots_prohibition_rejects(self):
+        # urllib.robotparser read "*.pdf$" literally and would have permitted this.
+        (self.root/'robots.txt').write_text('User-agent: *\nDisallow: /*.pdf$\n')
+        self.manifest['entries'][0]['robots_sha256']=hashlib.sha256((self.root/'robots.txt').read_bytes()).hexdigest()
+        with self.assertRaises(ValueError): import_capture_receipts(self.conn,self.manifest,self.root)
+        self.assertEqual(self.conn.execute('SELECT count(*) FROM captures').fetchone()[0],0)
+
     def test_existing_capture_cannot_be_overwritten(self):
         import_capture_receipts(self.conn,self.manifest,self.root)
         self.conn.execute("UPDATE captures SET source_id='OTHER' WHERE id='CAP-1'")

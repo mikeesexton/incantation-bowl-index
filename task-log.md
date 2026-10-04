@@ -1,3 +1,20 @@
+## 2026-10-04 — Claude Code — Wildcard robots.txt in ibi capture
+
+**Claimed:** none (follow-up to DISC-004; `src/bowl_index/archive.py` is Codex's collector area, touched only for robots checks).
+**Corpus:** unchanged.
+**Tests:** full suite passing (464); new `tests/test_capture_robots.py`, wildcard case in `test_capture_receipt_transfer`.
+
+- `ibi capture` and `ingest-capture-receipts` now decide robots with `bowl_index.robots`
+  (honours `*`/`$`). `urllib.robotparser` read them literally, so rules like
+  `Disallow: */archivelot*` or `/*.pdf$` never matched and URLs were treated as allowed.
+- Status meanings kept: 200 parsed, 401/403 deny, other 4xx = no robots file, 5xx or
+  unreachable = not permission. robots.txt is now fetched with the project user agent.
+- `capture_url` no longer lets urlopen follow redirects silently: each hop (max 5) is
+  re-checked against robots.txt; the stored URL is still the requested one.
+- Codex: earlier transfers were validated with the literal parser. A replay of an old
+  receipt manifest whose robots evidence has wildcard rules could now be rejected;
+  that rejection would be correct, not a regression.
+
 ## 2026-10-04 — Claude Code — Daily market monitor and after-sale results
 
 **Claimed:** DISC-004 (continuing, Mike's request).

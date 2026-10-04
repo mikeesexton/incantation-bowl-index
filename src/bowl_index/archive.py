@@ -3,12 +3,12 @@ import json
 import sqlite3
 import urllib.error
 import urllib.request
-import urllib.robotparser
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 from .ids import new_id
+from .robots import can_fetch
 
 
 USER_AGENT = "IncantationBowlIndexResearch/0.1 (+noncommercial scholarly corpus)"
@@ -18,32 +18,73 @@ def _utcnow():
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
+MAX_REDIRECTS = 5
+
+
+def _fetch_robots(robots_url):
+    """(status, body) for robots.txt. Redirects are followed, as RFC 9309 allows."""
+    request = urllib.request.Request(robots_url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return getattr(response, "status", 200), response.read()
+    except urllib.error.HTTPError as exc:
+        return exc.code, b""
+
+
 def robots_allowed(url):
+    """Whether USER_AGENT may fetch ``url``, with wildcard rules honoured.
+
+    Status handling matches urllib.robotparser: 401/403 deny everything, any
+    other 4xx means there is no robots file, and an unreachable or failing
+    robots.txt is not permission.
+    """
     parsed = urlparse(url)
     robots_url = "%s://%s/robots.txt" % (parsed.scheme, parsed.netloc)
-    parser = urllib.robotparser.RobotFileParser()
-    parser.set_url(robots_url)
     try:
-        parser.read()
+        status, body = _fetch_robots(robots_url)
     except Exception:
         return False, "robots.txt could not be verified"
-    return parser.can_fetch(USER_AGENT, url), robots_url
+    if status == 200:
+        return can_fetch(body.decode("utf-8", "replace"), USER_AGENT, url), robots_url
+    if status in (401, 403):
+        return False, robots_url
+    if 400 <= status < 500:
+        return True, robots_url
+    return False, "robots.txt could not be verified"
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *args, **kwargs):
+        return None
+
+
+def _open(url):
+    """Open one URL without following redirects; a 3xx arrives as HTTPError."""
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    return urllib.request.build_opener(_NoRedirect).open(request, timeout=30)
 
 
 def capture_url(conn, url, source_id=None, rights_status="unknown", archive_root=None):
-    allowed, robots_note = robots_allowed(url)
-    if not allowed:
-        raise PermissionError("Fetch disallowed or unverifiable: %s" % robots_note)
-
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            body = response.read()
-            status = getattr(response, "status", 200)
-            mime_type = response.headers.get_content_type()
-            headers = dict(response.headers.items())
-    except urllib.error.HTTPError as exc:
-        raise RuntimeError("HTTP %s for %s" % (exc.code, url)) from exc
+    """Fetch and archive a URL. Every redirect hop is re-checked against robots.txt."""
+    target = url
+    for _ in range(MAX_REDIRECTS + 1):
+        allowed, robots_note = robots_allowed(target)
+        if not allowed:
+            raise PermissionError("Fetch disallowed or unverifiable: %s (%s)" % (robots_note, target))
+        try:
+            with _open(target) as response:
+                body = response.read()
+                status = getattr(response, "status", 200)
+                mime_type = response.headers.get_content_type()
+                headers = dict(response.headers.items())
+            break
+        except urllib.error.HTTPError as exc:
+            location = exc.headers.get("Location") if 300 <= exc.code < 400 else None
+            if not location:
+                raise RuntimeError("HTTP %s for %s" % (exc.code, target)) from exc
+            target = urljoin(target, location)
+    else:
+        raise RuntimeError("Too many redirects for %s" % url)
 
     digest = hashlib.sha256(body).hexdigest()
     root = Path(archive_root or Path(__file__).resolve().parents[2] / "data" / "private" / "archive")
@@ -180,14 +221,12 @@ def import_capture_receipts(conn, manifest, project_root):
             robots_status = entry.get('robots_status_code')
             if robots_status not in (200, 404) or not entry.get('retrieval_basis', '').strip():
                 raise ValueError('Original robots response and retrieval basis required')
-            parser = urllib.robotparser.RobotFileParser()
             expected = urlparse(receipt['url'])
             robots_url = '%s://%s/robots.txt' % (expected.scheme, expected.netloc)
             if entry.get('robots_url') != robots_url:
                 raise ValueError('Robots evidence host differs')
-            parser.set_url(robots_url)
             if robots_status == 404:
-                # RobotFileParser.read() permits a verified missing robots file.
+                # A verified missing robots file permits retrieval.
                 # Retain the actual404 bytes and a separate original response
                 # receipt; never parse those bytes as a200 permission statement.
                 response = json.loads(checked(entry['robots_response_path'],
@@ -198,10 +237,10 @@ def import_capture_receipts(conn, manifest, project_root):
                         or observed.utcoffset() is None or observed.utcoffset().total_seconds() != 0
                         or observed > captured_at):
                     raise ValueError('Verified missing-robots response differs')
-                parser.allow_all = True
+                permitted = True
             else:
-                parser.parse(robots.read_text().splitlines())
-            if not parser.can_fetch(USER_AGENT, receipt['url']):
+                permitted = can_fetch(robots.read_text(), USER_AGENT, receipt['url'])
+            if not permitted:
                 raise ValueError('Original robots evidence does not permit retrieval')
             existing = conn.execute('SELECT * FROM captures WHERE id=? OR (url=? AND sha256=?)',
                                     (cid, receipt['url'], receipt['sha256'])).fetchone()
