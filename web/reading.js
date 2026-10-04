@@ -154,7 +154,8 @@
     const rendering = (text.editor || "").match(/English rendering of (.+?)[’']s (\w+) translation/i);
     if (rendering) return `Draft from ${rendering[1]}’s ${rendering[2]} translation.`;
     const source = data.sourceById[text.source_id] || {};
-    const author = text.attribution || source.authors || text.editor || "";
+    const author = text.attribution || (/\bas quoted by\b/i.test(text.editor || "")
+      ? text.editor : source.authors || text.editor) || "";
     return [author, source.issued_year].filter(Boolean).join(" · ");
   }
 
@@ -348,11 +349,39 @@
       ${licenceLink(item)}</figcaption></figure>`;
   }
 
+  function translationDisplay(rows) {
+    // Only literal containment and an explicitly attributed quotation establish
+    // an excerpt relationship. Shorter independent editions remain expanded.
+    const normal = item => translationContent(item.content).normalize("NFC")
+      .replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
+    const author = item => String(item.editor || "").split(/,?\s+as quoted by\b/i)[0].trim().toLowerCase();
+    const excerpt = item => /\bas quoted by\b/i.test(item.editor || "");
+    const secondary = new Set();
+    rows.forEach((item, index) => {
+      const content = normal(item);
+      if (!content) return;
+      const contains = rows.some((other, oi) => {
+        if (other === item) return false;
+        const longer = normal(other);
+        // Equal copies use the first row deterministically; every credit survives.
+        if (longer === content) return (!excerpt(other) && excerpt(item))
+          || (excerpt(other) === excerpt(item) && oi < index);
+        return longer.length > content.length && longer.includes(content);
+      });
+      const quoted = excerpt(item) && rows.some(other => !excerpt(other)
+        && author(item) && author(item) === author(other) && normal(other).length > content.length);
+      if (contains || quoted) secondary.add(item);
+    });
+    // Containment is acyclic by length (ties by input order): a primary survives.
+    return {primary: rows.filter(item => !secondary.has(item)), secondary: rows.filter(item => secondary.has(item))};
+  }
+
   function textSections(rows, sourcePages = []) {
     const facsimiles = sourcePages.filter(item => item.media_type === "inscription_facsimile"
       && item.url && embeddableImage(item.url));
     const translations = rows.filter(item => item.text_type === "translation");
     const english = translations.filter(item => /^(?:English|en)$/i.test(item.language || ""));
+    const englishDisplay = translationDisplay(english);
     const sourceTranslations = translations.filter(item => !english.includes(item));
     const translation = item => `<div class="translated-reading">
       <h3>Translation${item.language ? " · " + esc(item.language) : ""}</h3>
@@ -368,7 +397,10 @@
       && item.text_type !== "summary" && item.text_type !== "source_ocr" && item.text_type !== "catalogue_extract" && !ORIGINAL_TEXT_TYPES.has(item.text_type));
     const hasReading = translations.length || originals.length || facsimiles.length || readingNotes.length;
     const sections = hasReading ? [`<section class="entry-block entry-text"><h2>What it says</h2>
-      ${english.map(translation).join("")}
+      ${englishDisplay.primary.map(translation).join("")}
+      ${englishDisplay.secondary.length ? `<details class="entry-translation-excerpts"><summary>Translation excerpts and duplicate copies</summary>
+        <p class="entry-note">Shorter quotations and repeated copies, with their original wording and attribution.</p>
+        ${englishDisplay.secondary.map(translation).join("")}</details>` : ""}
       ${readingNotes.map(item => `<p class="entry-note reading-limitation">${esc(conciseNote(item))}</p>`).join("")}
       ${sourceTranslations.length ? `<details class="entry-source-translations"><summary>${[...new Set(sourceTranslations.map(item => item.language || "Other language"))].map(esc).join(", ")} translation</summary>${sourceTranslations.map(translation).join("")}</details>` : ""}
       ${facsimiles.length || originals.length ? `<details class="entry-original"><summary>Original incantation</summary>
@@ -768,6 +800,44 @@
     return `<section class="entry-block"><h2>${esc(heading)}</h2><ul class="fact-list">${factItems(id, group, showVariants)}</ul></section>`;
   }
 
+  function bowlAppearance(id) {
+    const forms = groupedFacts(id, "vessel_form").map(item => item.display.replace(/^Fragment:\s*/i, ""));
+    const conditions = factsOf(id, "condition");
+    const physical = [], writing = [], other = [];
+    const sameWitness = (a, b) => a.source_id === b.source_id
+      && canonicalLocator(a.locator) === canonicalLocator(b.locator);
+    conditions.forEach(row => {
+      let value = tidy(row.value);
+      if (/^(?:n\s*\/\s*a\.?|\?|unknown|not recorded)$/i.test(value)) return;
+      if (row.field === "reported_writing_condition") writing.push(value);
+      else if (row.field === "reported_physical_condition") {
+        const compact = value.match(/^(Incomplete|Complete|Near Complete|Almost Complete)\s*-\s*(\d+)\s*(?:Frag|Frgs?|Fragments?)\.?$/i);
+        if (compact) value = `${compact[1]}; ${compact[2]} ${Number(compact[2]) === 1 ? "fragment" : "fragments"}`;
+        // The catalogue's paired bowl/writing fields sometimes put a standalone
+        // fading clause in the bowl field. Move that clause only with an explicit
+        // same-witness writing report. Never reclassify faded glaze/surface prose.
+        if (conditions.some(other => other.field === "reported_writing_condition" && sameWitness(row, other))) {
+          value = value.replace(/(?:^|\.\s+)((?:(?:very\s+)?badly|partly|almost entirely)\s+)?faded(?:\s+badly)?\.(?=\s|$)/gi,
+            match => {writing.push(match.replace(/^\.\s*/, "").trim()); return ". ";});
+        }
+        // A fragment description already conveys breakage; keep 'Broken' on
+        // complete/reassembled vessels, where it conveys an additional fact.
+        if (/\bfragments?\b/i.test(value)) value = value.replace(/(?:^|\.\s+)Broken\.(?=\s|$)/gi, ". ");
+        value = value.replace(/^\.\s*/, "").replace(/\.\s*\./g, ".").trim();
+        if (value) physical.push(value);
+      } else other.push(value); // Unclassified condition wording stays unclassified.
+    });
+    const combine = values => [...new Map(values.filter(Boolean).map(value =>
+      [value.replace(/[.;]+$/, "").toLowerCase(), value.replace(/[.;]+$/, "")])).values()]
+      .map((value, i) => i && /^(?:full profile|partly legible|illegible|legible|(?:partly |badly )?faded)\b/i.test(value)
+        ? value[0].toLowerCase() + value.slice(1) : value).join("; ") + ".";
+    const formsHTML = forms.length ? `<section class="entry-block"><h2>The bowl — form</h2><ul class="fact-list"><li><span>${esc(combine(forms))}</span></li></ul></section>` : "";
+    const aspects = [["Vessel", physical], ["Writing", writing], ["Other condition reports", other]].filter(([, values]) => values.length);
+    const conditionsHTML = aspects.length ? `<section class="entry-block"><h2>The bowl — condition</h2><ul class="fact-list">
+      ${aspects.map(([label, values]) => `<li><span><small>${esc(label)}</small>${esc(combine(values))}</span></li>`).join("")}</ul></section>` : "";
+    return formsHTML + conditionsHTML;
+  }
+
   function datingEvidence(id) {
     const groups = groupedFacts(id, "dating");
     const dates = groups.filter(item => !item.key.startsWith("period:"));
@@ -785,11 +855,12 @@
   function recordedFormsSection(id) {
     const groups = [...new Set((data.factsBy[id] || []).map(row => row.field_group))];
     const items = groups.flatMap(group => groupedFacts(id, group)
-      .filter(item => item.variants.size > 1)
+      .filter(item => item.variants.size > 1 || (group === "condition" && item.reports.some(row => row.field === "reported_physical_condition"
+        && /\bfaded\b|\b(?:fragments?|frag|frgs?|fr)\b/i.test(row.value))))
       .map(item => ({group, ...item})));
     if (!items.length) return "";
     return `<section class="entry-block recorded-source-forms"><h2>Recorded source forms</h2>
-      <p class="entry-note">Equivalent wording is combined in the main display; the forms recorded by the sources remain here.</p>
+      <p class="entry-note">The main display groups equivalent wording and separates vessel and writing condition; original source wording remains here.</p>
       <ul class="fact-list">${items.map(item => `<li><span><small>${esc(item.group.replaceAll("_", " "))}</small></span>
         <details class="recorded-forms" open><summary>Recorded forms</summary><ul>${[...item.variants].map(value => `<li>${esc(value)}</li>`).join("")}</ul></details></li>`).join("")}</ul></section>`;
   }
@@ -821,6 +892,15 @@
   function compactSourceLocators(locators) {
     const groups = new Map();
     for (const locator of locators) {
+      const pennURL = tidy(locator).match(/^https:\/\/collections\.penn\.museum\/collections\/object\/(\d+)(?:\s+—\s+(.+))?$/);
+      const pennItem = tidy(locator).match(/^Penn web object (\d+)$/i);
+      if (pennURL || pennItem) {
+        const number = (pennURL || pennItem)[1];
+        const key = `penn:${number}`;
+        if (!groups.has(key)) groups.set(key, {penn: number, fields: new Set()});
+        if (pennURL?.[2]) groups.get(key).fields.add(pennURL[2]);
+        continue;
+      }
       // Only combine explicitly labelled witnesses with identical page bounds.
       // Other locators, line/plate scopes and separate pages stay untouched.
       const match = tidy(locator).match(/^(Text \w+) — (transcription|translation|commentary|source extract); (printed pp?\. [\d–, -]+; PDF pp?\. [\d–, -]+)$/i);
@@ -828,7 +908,8 @@
       if (!groups.has(key)) groups.set(key, {locator, match, roles: new Set()});
       if (match) groups.get(key).roles.add(match[2]);
     }
-    return [...groups.values()].map(item => item.match
+    return [...groups.values()].map(item => item.penn
+      ? `Penn web object ${item.penn}${item.fields.size ? " — " + [...item.fields].join("; ") : ""}` : item.match
       ? `${item.match[1]} · ${item.match[3]} — ${[...item.roles].join("; ")}` : item.locator);
   }
 
@@ -989,8 +1070,7 @@
       ${datingEvidence(id)}
       ${factList(id, "material", "The bowl — material")}
       ${factList(id, "dimensions", "The bowl — dimensions")}
-      ${factList(id, "vessel_form", "The bowl — form")}
-      ${factList(id, "condition", "The bowl — condition")}
+      ${bowlAppearance(id)}
       ${factList(id, "script", "The bowl — script")}
       ${factList(id, "visual", "The bowl — what is drawn")}
       ${factList(id, "text_form", "The bowl — inscription layout")}

@@ -14,9 +14,64 @@ vm.runInContext(`
   ${grouping}
   ${identifiers}
   ${source.slice(source.indexOf("function sourcesSection"), source.indexOf("function identifierRank"))}
-  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifierDetails, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems};
+  globalThis.T = {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifierDetails, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems, bowlAppearance, recordedFormsSection};
 `, context);
-const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifierDetails, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems} = context.T;
+const {data, groupedFacts, citationsFor, groupedEditions, groupedIdentifiers, identifierDetails, identifiersSection, sourcesSection, journeySection, datingEvidence, factItems, bowlAppearance, recordedFormsSection} = context.T;
+
+test("form is compact and same-witness fading accompanies writing legibility", () => {
+  const report = (field, field_group, value) => ({field, field_group, value, source_id: "SRC", locator: "entry 39"});
+  data.factsBy.ID = [report("reported_bowl_form", "vessel_form", "Round base."),
+    report("reported_fragment_type", "vessel_form", "Full profile."),
+    report("reported_physical_condition", "condition", "Two large fragments, each constitutes approximately one quarter of the bowl. Broken. Faded."),
+    report("reported_writing_condition", "condition", "Partly legible.")];
+  const html = bowlAppearance("ID");
+  assert.match(html, /Round base; full profile\./);
+  assert.doesNotMatch(html, /Fragment:|Broken/);
+  assert.match(html, /<small>Writing<\/small>Faded; partly legible\./);
+  assert.match(html, /approximately one quarter/);
+  assert.match(recordedFormsSection("ID"), /Broken\. Faded/);
+});
+
+test("condition grouping preserves uncertainty, conflicts, and non-writing fading", () => {
+  data.factsBy.ID = [
+    {field: "reported_physical_condition", field_group: "condition", value: "Complete. Broken. Faded glaze.", source_id: "SRC", locator: "entry 1"},
+    {field: "reported_writing_condition", field_group: "condition", value: "Probably legible.", source_id: "SRC", locator: "entry 1"},
+    {field: "reported_writing_condition", field_group: "condition", value: "Illegible.", source_id: "OTHER", locator: "entry 1"},
+    {field: "condition", field_group: "condition", value: "Faded.", source_id: "OTHER"},
+  ];
+  const html = bowlAppearance("ID");
+  assert.match(html, /Complete\. Broken\. Faded glaze/);
+  assert.match(html, /Probably legible; illegible/);
+  assert.match(html, /Other condition reports/);
+  assert.doesNotMatch(html, /<small>Writing<\/small>Faded/);
+});
+
+test("a different source or locator cannot move an unpaired fading clause", () => {
+  data.factsBy.ID = [
+    {field: "reported_physical_condition", field_group: "condition", value: "Incomplete. Faded.", source_id: "SRC", locator: "entry 1"},
+    {field: "reported_writing_condition", field_group: "condition", value: "Legible.", source_id: "OTHER", locator: "entry 1"},
+  ];
+  assert.match(bowlAppearance("ID"), /<small>Vessel<\/small>Incomplete\. Faded\./);
+  data.factsBy.ID[1].source_id = "SRC"; data.factsBy.ID[1].locator = "entry 2";
+  assert.match(bowlAppearance("ID"), /<small>Vessel<\/small>Incomplete\. Faded\./);
+});
+
+test("Penn source fields share one catalogue locator without losing named sections", () => {
+  data.factsBy.ID = ["", " — Description", " — Inscription Language", " — Provenience"].map(suffix =>
+    ({source_id: "SRC", locator: "https://collections.penn.museum/collections/object/15709" + suffix}));
+  data.textsBy.ID = []; data.editionsBy.ID = []; data.mediaBy.ID = [];
+  const html = sourcesSection("ID");
+  assert.equal((html.match(/Penn web object 15709/g) || []).length, 1);
+  assert.match(html, /Description; Inscription Language; Provenience/);
+});
+
+test("Penn fragment abbreviations expand without changing the completeness report", () => {
+  data.factsBy.ID = [{field:"reported_physical_condition",field_group:"condition",value:"Incomplete-12 Frag"}];
+  assert.match(bowlAppearance("ID"), /Incomplete; 12 fragments/);
+  assert.match(recordedFormsSection("ID"), /Incomplete-12 Frag/);
+  data.factsBy.ID[0].value = "Complete-1 Frag";
+  assert.match(bowlAppearance("ID"), /Complete; 1 fragment/);
+});
 
 test("Berlin designation spelling variants display once with all assigning bodies", () => {
   const rows = [{scheme: "collection designation", value: "VA.2422"},

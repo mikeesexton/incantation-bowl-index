@@ -2,7 +2,7 @@
 
 The main cohort contains forty numbered bowls. All forty catalogue-register rows were visually checked against printed pp. 321–326 (PDF pp. 327–332). Museum checks below are dated observations, valid against the current local identity evidence; they do not assert that a website has remained unchanged since review.
 
-Penn concordances: **19/40** supported by current evidence-bound museum-page reviews.
+Penn concordances: **18/40** supported by current evidence-bound museum-page reviews.
 
 English translations: **35** scan-checked normalized reading texts, **0** OCR drafts pending proofreading, and **5** documented cases where this edition supplies no separate translation.
 
@@ -48,7 +48,7 @@ Reading texts normalize typography and Latin-name diacritics and preserve loss/u
 | 36 | CBS 2933 | 6.3 × 15.4 | 132910 | existing link not freshly verified | reading text checked |
 | 37 | CBS 2943 | 6.5 × 17 | 152707 | existing link not freshly verified | reading text checked |
 | 38 | CBS 2941 | 7 × 17 | 189411 | confirmed from dated museum page | reading text checked |
-| 39 | CBS 9005 | 6.8 × 17.2 | 140769 | confirmed from dated museum page | reading text checked |
+| 39 | CBS 9005 | 6.8 × 17.2 | 140769 | existing link not freshly verified | reading text checked |
 | 40 | CBS 2972 | 7.3 × 17.2 | 64458 | confirmed from dated museum page | reading text checked |
 
 ## Explicit exceptions

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-10-04T16:46:37+00:00",
+  "workstream": "META",
+  "private_manifest": "data/private/manifests/penn-audit-metadata-2026-10-04/candidates.jsonl",
+  "manifest_sha256": "0009c9d2da9a4327eb0bcaeeb43f00f8ae2e01c49c180fe909a89c335cb98f15",
+  "evidence_inventory_sha256": "95765ddb47e67bac33cf378398f540e0918fb590faf18038ae3bf97fad5a9728",
+  "eligible_appearances": 288,
+  "retrieved_pages": 288,
+  "added_claims": 1244,
+  "new_source_language_claims": 213,
+  "new_source_provenance_claims": 288,
+  "penn_coverage": {
+    "before": {
+      "identities": 288,
+      "missing_language": 241,
+      "missing_provenance": 246
+    },
+    "after": {
+      "identities": 288,
+      "missing_language": 69,
+      "missing_provenance": 0
+    }
+  },
+  "identity_links_changed": 0,
+  "text_rows_changed": 0,
+  "original_rows_preserved": true,
+  "other_38_tables_unchanged": true,
+  "verification": "Trial and production claim values identical; generated claim IDs and creation timestamps excluded. Replay unchanged. Every retained HTML hash checked; object numbers matched existing appearances. Full corpus tests 473; Node tests 71.",
+  "limits": "Catalogue reports, not adjudicated readings or excavated-findspot certification. Historic register and translated-quotation prose stays in original descriptions. Protected evidence and manifest remain private. No new rights or concordance decisions."
+}

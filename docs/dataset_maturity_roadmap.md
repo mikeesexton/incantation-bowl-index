@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-04T16:26:33+00:00`
+Generated: `2026-10-04T16:50:39+00:00`
 
 ## Portfolio status
 
@@ -136,11 +136,11 @@ Current evidence: **249 scholarship works indexed; 84 with a source-linked held 
 | Source documents assessed complete | 93 |
 | Source documents with object-level extraction | 79 |
 | Pending dedupe decisions | 0 |
-| Identities triggering raw claim-difference flags | 550 |
-| Triaged claim-field differences | 584/1205 |
-| Compatible differences | 568 |
-| Review required (missing or no longer valid) | 621 |
-| Existing reviews requiring revalidation | 48 |
+| Identities triggering raw claim-difference flags | 698 |
+| Triaged claim-field differences | 582/1458 |
+| Compatible differences | 566 |
+| Review required (missing or no longer valid) | 876 |
+| Existing reviews requiring revalidation | 50 |
 | Substantive conflict instances | 16 across 14 identities |
 | All identities with a publication reference | 1143/1919 (59.6%) |
 | Probable/confirmed identities with a publication reference | 836/1052 (79.5%) |
@@ -167,11 +167,11 @@ Coverage means a field or reference is present, not independently verified. Publ
 | Field | Identities | Coverage |
 |---|---:|---:|
 | Location | 1310 | 68.3% |
-| Provenance | 399 | 20.8% |
+| Provenance | 645 | 33.6% |
 | Dating | 484 | 25.2% |
 | Dimensions | 694 | 36.2% |
-| Material | 410 | 21.4% |
-| Language | 1038 | 54.1% |
+| Material | 419 | 21.8% |
+| Language | 1210 | 63.1% |
 | Script | 106 | 5.5% |
 | Text Edition | 600 | 31.3% |
 | Translation | 616 | 32.1% |
@@ -184,14 +184,14 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 | Facet | Identities | Coverage |
 |---|---:|---:|
 | Publication | 567 | 29.5% |
-| Condition | 325 | 16.9% |
+| Condition | 477 | 24.9% |
+| Vessel Form | 302 | 15.7% |
+| Text Form | 231 | 12.0% |
 | Client | 225 | 11.7% |
-| Vessel Form | 178 | 9.3% |
 | Biblical Intertexts | 171 | 8.9% |
+| Visual | 130 | 6.8% |
 | Ritual | 122 | 6.4% |
 | Text Description | 95 | 5.0% |
-| Text Form | 61 | 3.2% |
-| Visual | 38 | 2.0% |
 | Practitioner | 29 | 1.5% |
 | Parallels | 16 | 0.8% |
 | Authenticity Assessment | 4 | 0.2% |
@@ -568,7 +568,7 @@ Overall gate: **NOT READY**
 ### Quantitative conditions
 
 - [x] No unreviewed generated dedupe candidates — current `0`; target `<= 0`.
-- [ ] Every generated claim-difference flag has a recorded triage — current `621`; target `<= 0`.
+- [ ] Every generated claim-difference flag has a recorded triage — current `876`; target `<= 0`.
 - [x] Discovery saturation demonstrated by independent sweeps — current `2`; target `>= 2`.
 - [ ] At least 80% of probable/confirmed identities have an evidence-backed publication disposition; catalogue silence does not qualify. This intermediate milestone does not certify comprehensive coverage. — current `79.5%`; target `>= 80.0%`.
 - [x] At least 50% of probable/confirmed identities retain an actual publication link; negative findings cannot dominate the disposition milestone. — current `79.5%`; target `>= 50.0%`.

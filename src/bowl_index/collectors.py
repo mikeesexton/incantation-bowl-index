@@ -9,6 +9,7 @@ from pathlib import Path
 
 from .ingest import add_candidate
 from .ids import new_id
+from .penn_metadata import penn_fields, penn_metadata_claims
 
 
 MET_API = "https://collectionapi.metmuseum.org/public/collection/v1"
@@ -403,6 +404,10 @@ def collect_penn(conn, delay=0.1):
                     "value_text": "; ".join(material) if isinstance(material, list) else str(material),
                     "locator": object_url,
                 })
+            for claim in penn_metadata_claims(penn_fields(page_html), description, object_url):
+                if claim["field"] == "material" and material:
+                    continue  # JSON-LD already supplied this field.
+                claims.append(claim)
             record = {
                 "label": "Penn %s: %s" % (museum_number, title),
                 "object_type": object_type,

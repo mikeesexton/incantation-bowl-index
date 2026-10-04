@@ -226,6 +226,55 @@ test("English leads while source-language translations stay available separately
   assert.match(textSections([{text_type: "translation", language: "German", content: "In deinem Namen"}]), /German translation/);
 });
 
+test("contained translations collapse with all original wording and credits retained", () => {
+  given({accessTier: "private_research"});
+  const html = textSections([
+    {text_type: "translation", language: "English", content: "First sentence.", editor: "One"},
+    {text_type: "translation", language: "English", content: "First sentence. Second sentence.", editor: "Two"},
+    {text_type: "translation", language: "English", content: "First sentence. Second sentence.", editor: "Three"},
+  ]);
+  assert.match(html, /Translation excerpts and duplicate copies/);
+  const primary = html.split('<details class="entry-translation-excerpts">')[0];
+  assert.match(primary, /First sentence\. Second sentence\./);
+  assert.equal((primary.match(/translated-reading/g) || []).length, 1);
+  assert.equal((html.match(/translated-reading/g) || []).length, 3);
+});
+
+test("an explicitly quoted variant stays secondary to its longer original edition", () => {
+  given({accessTier: "private_research"});
+  data.sourceById.ROSIE = {authors: "Katrina Rosie", issued_year: 2020};
+  const html = textSections([
+    {text_type: "translation", language: "English", editor: "Dan Levene, as quoted by Katrina Rosie",
+      source_id: "ROSIE", content: "sorceries and curses and curses and afflictions."},
+    {text_type: "translation", language: "English", editor: "Dan Levene",
+      content: "(1) sorceries and curses and afflictions. (2) Against the named target."},
+  ]);
+  assert.match(html.split('<details class="entry-translation-excerpts">')[0], /Against the named target/);
+  assert.match(html.split('<details class="entry-translation-excerpts">')[1], /curses and curses/);
+  assert.match(html, /Dan Levene, as quoted by Katrina Rosie · 2020/);
+});
+
+test("length alone never collapses an independent translation or differing reading", () => {
+  given({accessTier: "private_research"});
+  const html = textSections([
+    {text_type: "translation", language: "English", editor: "One", content: "Seal the house."},
+    {text_type: "translation", language: "English", editor: "Two", content: "Protect this person and the entire household."},
+    {text_type: "translation", language: "English", editor: "Three, as quoted by Another", content: "Protect the house."},
+  ]);
+  assert.doesNotMatch(html, /entry-translation-excerpts/);
+  assert.equal((html.match(/translated-reading/g) || []).length, 3);
+});
+
+test("duplicate quotations cannot hide the only original translation", () => {
+  given({accessTier: "private_research"});
+  const html = textSections([
+    {text_type: "translation", language: "English", editor: "One, as quoted by Two", content: "A complete charm."},
+    {text_type: "translation", language: "English", editor: "One", content: "A complete charm."},
+  ]);
+  assert.match(html.split('<details class="entry-translation-excerpts">')[0], /A complete charm/);
+  assert.equal((html.match(/translated-reading/g) || []).length, 2);
+});
+
 test("only inscription facsimiles appear in originals, excluding whole source pages", () => {
   const html = textSections([], [
     {media_type: "scan", url: "/api/private-media/FULL.png"},
