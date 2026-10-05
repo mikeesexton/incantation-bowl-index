@@ -66,6 +66,19 @@ class ProjectionTests(unittest.TestCase):
         self.conn.execute("UPDATE sources SET doi=NULL"); self.conn.commit()
         self.assertEqual(self.rows('texts')[0]['access_url'],'https://example.org/segal')
 
+    def test_catalogue_sources_keep_publisher_credit_and_safe_external_links(self):
+        self.conn.execute("UPDATE sources SET publisher='Google Arts & Culture'")
+        row = self.rows('sources')[0]
+        self.assertEqual(row['publisher'], 'Google Arts & Culture')
+        self.assertEqual(row['url'], 'https://example.org/segal')
+        self.conn.execute("UPDATE sources SET url='file:///private/catalogue.pdf'")
+        self.assertIsNone(self.rows('sources')[0]['url'])
+        self.conn.execute("UPDATE sources SET url='https://example.org/bowl.jpg'")
+        self.assertIsNone(self.rows('sources')[0]['url'])
+        from bowl_index.private_projection import PrivateResearchProjection
+        self.assertEqual(PrivateResearchProjection(self.conn).table('sources')[0]['url'],
+                         'https://example.org/bowl.jpg')
+
     def test_the_guard_rejects_a_leaked_private_reference(self):
         projection=Projection(self.conn)
         projection.forbidden.add('SENSITIVE')

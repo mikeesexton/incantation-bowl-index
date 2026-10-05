@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-10-05T14:09:37+00:00",
+  "scope": "Mike personal audit batch 5 source follow-ups; no scholarly, authenticity or release decisions",
+  "entries": [
+    {
+      "identity_id": "IDENT-21F04F566A66",
+      "object_id": "IBI-21F04F566A66",
+      "finding": "No incantation transcription or translation located in the checked sources. Stored Hunter passage is archaeological commentary. Do not equate the named-client report with a full incantation edition.",
+      "checked_sources": [
+        {
+          "source_id": "SRC-899462FAA735",
+          "capture_id": "CAP-41EF7EE98CDD",
+          "sha256": "db62d36b63a98ba2ff4dac5143946a945a7e42dbe7124a184f91402da6796330",
+          "locator": "Hunter 2021, printed pp. 137–138; PDF pp. 163–164, fig. 8.1 and table 8.1, notes 17–18",
+          "inspection": "Held complete source pages; context, stratigraphy and reported clients, no incantation edition here."
+        },
+        {
+          "source_id": "SRC-C628D3B5E8F9",
+          "url": "https://eurekamag.com/research/078/659/078659287.pdf",
+          "locator": "Hunter 1994, printed p. 606 n. 4",
+          "inspection": "Indexed primary PDF body. Distinguishes 18N20 from 18N18 and 18N98 treated in the forthcoming 1995 chapter. Screenshot retrieval failed; no held original or new capture claimed."
+        }
+      ],
+      "limit": "Targeted search and held source inspection, not a universal claim that an edition does not exist. Hunter 1995 full chapter remains an acquisition need; no new link from that chapter to 18N20 inferred."
+    },
+    {
+      "identity_id": "IDENT-C009531055DF",
+      "object_id": "IBI-C009531055DF",
+      "finding": "Independent scholarly commentary explicitly references MS 2053/262; full edition and independent Zechariah 3:2 confirmation still unresolved.",
+      "source_id": "SRC-7FBBB775E502",
+      "capture_id": "CAP-295A7FE7BF01",
+      "sha256": "39a8763373010f4703576f8917df901f4e170153c5014f5b344e60bb4775af9c",
+      "locator": "Printed pp. 111–112, notes to JBA 15 lines 12–14; p. 162, note to JBA 28 line 10; PDF pp. 139–140, 190",
+      "inspection": "All three complete original pages rendered and visually checked. Explicit accession references compare portions of lines 2–7, 6 and 11. Adjacent inscriptions/English translations belong to JBA 15/JBA 28 and were not transferred to MS 2053/262.",
+      "existing_claim": "Schøyen MS 2053/196 context explicitly lists 2053/262 for Zechariah 3:2. Original catalogue claim retained as attributed; no corroboration inferred from the scholarly references.",
+      "additional_checks": "Held Aramaic Bowl Spells II text layer search had no exact accession match. Ford 2014 held original lacks a searchable text layer; no negative claim from that zero-hit result.",
+      "manifest": "research/enrichment/audit_batch5_scholarly_reference_2026-10-05.jsonl",
+      "manifest_sha256": "3433c5a8cecddbcd9bf6854dfe2bb96aa4582309f4e9948fbe3b4e8824835240",
+      "rehearsal": "Replay idempotent; all prior rows retained in every table. Exactly one appearance, one object-appearance link and one bibliography claim appended. No identity memberships, texts, images or originals changed."
+    }
+  ],
+  "searches": [
+    {
+      "query": "\"18N20\" incantation Hunter",
+      "result": "Primary Hunter 2021 and 1994 archaeological references; no new exact full edition located."
+    },
+    {
+      "query": "\"MS 2053/262\" \"spells\"",
+      "result": "2013 scholarly commentary references located and checked against held original."
+    },
+    {
+      "query": "\"MS 2053/262\" \"Zechariah\"",
+      "result": "Schøyen context list located; no independent exact quotation verification found."
+    }
+  ],
+  "private_work_directory": null,
+  "notes": "Content-free receipt; protected PDF renderings and extracted page text remain in the ignored private vault. Personal audit follow-ups stay open for Mike.",
+  "validation": {
+    "python_tests": 488,
+    "javascript_tests": 75,
+    "scope": "Full committed repository plus this audit session changes, consistent corpus snapshot, immutable source evidence retained; no uncommitted Auction Market code/runtime in this test build. Current JavaScript suite also passed in shared workspace.",
+    "private_reader_audits_passed": 8,
+    "identities_checked": 1644,
+    "place_grouping_records": 48,
+    "museum_heading_grouping_records": 25,
+    "existing_rows_preserved": true,
+    "corpus_digest": "707d97090601a45c2f09492e02cdb2dce4af0bc72e5f23fa0ba0faf95e415a5a",
+    "integration_limit": "Shared current private builder fails its local-path/secret audit on the in-progress Auction Market intelligence payload. That draft and the shared build directory were not modified to resolve it. Local reader presentation verified; new source URL/publisher projection fields require the next coordinated server restart."
+  }
+}

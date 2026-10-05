@@ -27,7 +27,7 @@ from .scholarship import (
 EDITION_SOURCE_TYPES = ("book", "article", "chapter", "catalogue", "thesis", "excavation_report")
 
 PROJECTION_COLUMNS = {
-    "sources": ("id", "source_type", "title", "authors", "issued_year", "citation", "doi", "isbn"),
+    "sources": ("id", "source_type", "title", "authors", "issued_year", "citation", "doi", "isbn", "url", "publisher"),
     "objects": ("id", "label", "object_type", "record_status", "authenticity"),
     "identifiers": ("object_id", "scheme", "value", "assigning_body"),
     "appearances": ("id", "source_id", "locator"),
@@ -179,7 +179,19 @@ class Projection:
             "SELECT %s FROM %s ORDER BY id" % (",".join(columns), name))]
 
     def _sources(self):
-        return self._plain("sources")
+        rows = self._plain("sources")
+        for row in rows:
+            # Catalogue witnesses need their own external links and publisher
+            # credits. Keep local/archive pointers out of either reader tier.
+            row["url"] = self.access_link(None, row["url"])
+            if row["url"]:
+                try:
+                    self.guard("source_url", [{"url": row["url"]}])
+                except ValueError:
+                    # A source can be a direct media URL. Apply this reader
+                    # tier's gate without losing its bibliographic metadata.
+                    row["url"] = None
+        return rows
 
     def _objects(self):
         return self._plain("objects")

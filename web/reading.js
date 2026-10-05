@@ -882,16 +882,35 @@
       .filter(item => item.variants.size > 1 || (group === "condition" && item.reports.some(row => row.field === "reported_physical_condition"
         && /\bfaded\b|\b(?:fragments?|frag|frgs?|fr)\b/i.test(row.value))))
       .map(item => ({group, ...item})));
+    groupedJourney(id).filter(item => item.variants.size > 1).forEach(item =>
+      items.push({group: "provenance", variants: item.variants}));
     if (!items.length) return "";
     return `<section class="entry-block recorded-source-forms"><h2>Recorded source forms</h2>
-      <p class="entry-note">The main display groups equivalent wording and separates vessel and writing condition; original source wording remains here.</p>
+      <p class="entry-note">The main display groups equivalent wording and place names and separates vessel and writing condition; original source wording remains here.</p>
       <ul class="fact-list">${items.map(item => `<li><span><small>${esc(item.group.replaceAll("_", " "))}</small></span>
         <details class="recorded-forms" open><summary>Recorded forms</summary><ul>${[...item.variants].map(value => `<li>${esc(value)}</li>`).join("")}</ul></details></li>`).join("")}</ul></section>`;
   }
 
-  function journeySection(id) {
+  // Exact, unqualified aliases of the named sites already used by the
+  // project's geography facets. Unlike search facets, display grouping must
+  // not discard excavation loci, uncertainty, composite places or qualifiers.
+  function journeyPlace(value) {
+    const aliases = [
+      ["Kutha (Tell Ibrahim)", ["Tell Ibrahim", "Tell Ibrahim (Kutha)", "Kutha", "Kutha (Tell Ibrahim)"]],
+      ["Nippur", ["Nippur", "Nuffar", "Nippur (Nuffar)"]],
+      ["Borsippa", ["Borsippa", "Birs-Nimrud", "Ibrahim al-Khalil"]],
+      ["Sippar (Abu Habba)", ["Sippar", "Abu Habba", "Sippar (Abu Habba)"]],
+      ["Nineveh (Kouyunjik)", ["Kouyunjik", "Nineveh (Kouyunjik)"]],
+      ["Uruk (Warka)", ["Warka", "Uruk (Warka)"]],
+      ["Tell Baruda (Choche)", ["Tell Baruda", "Choche", "Tell Baruda (Choche)"]],
+    ];
+    const plain = tidy(value).replace(/[.]$/, "");
+    const local = plain.replace(/,\s*Iraq$/i, "").toLowerCase();
+    return aliases.find(([, forms]) => forms.some(form => form.toLowerCase() === local))?.[0] || plain;
+  }
+
+  function groupedJourney(id) {
     const rows = factsOf(id, "provenance");
-    if (!rows.length) return "";
     const labels = {findspot: "Reported findspot", excavation_context: "Excavation context",
       origin: "Reported origin", findspot_or_origin: "Reported findspot or origin",
       collection_history: "Collection history", provenance: "Provenance report",
@@ -899,16 +918,23 @@
       current_location: "Current collection", current_or_reported_collection: "Reported collection"};
     const grouped = new Map();
     rows.forEach(row => {
-      const value = tidy(row.value).replace(/^(?:Made in|Found\/Acquired):\s*/i, "");
+      const value = journeyPlace(tidy(row.value).replace(/^(?:Made in|Found\/Acquired|Excavated\/Findspot):\s*/i, ""));
       const label = row.field === "findspot" && /^Found\/Acquired:/i.test(tidy(row.value))
         ? "Find or acquisition place" : labels[row.field] || row.field.replaceAll("_", " ");
       const key = `${value.toLowerCase()}|${row.certainty || ""}`;
-      if (!grouped.has(key)) grouped.set(key, {value, labels: new Set(), reports: []});
+      if (!grouped.has(key)) grouped.set(key, {value, labels: new Set(), reports: [], variants: new Set()});
       const item = grouped.get(key);
       item.labels.add(label);
       item.reports.push(row);
+      item.variants.add(tidy(row.value));
     });
-    return `<section class="entry-block"><h2>Its journey</h2><ul class="fact-list">${[...grouped.values()].map(item => {
+    return [...grouped.values()];
+  }
+
+  function journeySection(id) {
+    const items = groupedJourney(id);
+    if (!items.length) return "";
+    return `<section class="entry-block"><h2>Its journey</h2><ul class="fact-list">${items.map(item => {
       return `<li><span><small>${[...item.labels].map(esc).join(" · ")}</small>${esc(item.value)}</span></li>`;
     }).join("")}</ul></section>`;
   }
@@ -961,9 +987,34 @@
     [...grouped.keys()].forEach(sourceId => add(sourceId, "", data.sourceById[sourceId]?.url));
     (data.mediaBy[id] || []).forEach(r => add(r.source_id, "", data.sourceById[r.source_id]?.url || r.url));
     if (!grouped.size) return "";
-    return `<section class="entry-block"><h2>Sources</h2><ul class="source-groups">${[...grouped].map(([sourceId, item]) => {
+    const headings = new Map();
+    [...grouped].forEach(([sourceId, item]) => {
       const source = data.sourceById[sourceId] || {};
-      const label = [source.authors || source.title || sourceId, source.issued_year].filter(Boolean).join(" · ");
+      // Institution-authored catalogue pages can share a display heading.
+      // An institution's publisher credit never groups authored scholarship,
+      // and every catalogue witness retains its own URL, citation and locators.
+      const institution = source.source_type === "museum_record" && tidy(source.authors)
+        ? tidy(source.authors).replace(/^The\s+/i, "") : "";
+      const key = institution ? `museum:${institution.toLowerCase()}|${source.issued_year || ""}` : sourceId;
+      if (!headings.has(key)) headings.set(key, {institution, witnesses: []});
+      headings.get(key).witnesses.push({sourceId, source, item});
+    });
+    return `<section class="entry-block"><h2>Sources</h2><ul class="source-groups">${[...headings.values()].map(group => {
+      if (group.witnesses.length > 1) {
+        const label = [group.institution, group.witnesses[0].source.issued_year].filter(Boolean).join(" · ");
+        return `<li><span>${esc(label)}</span><details class="source-details"><summary>Source details</summary>
+          ${group.witnesses.map(({sourceId, source, item}) => {
+            const title = source.title || sourceId;
+            const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(title)}</a>` : esc(title);
+            const via = source.publisher && tidy(source.publisher).replace(/^The\s+/i, "").toLowerCase() !== group.institution.toLowerCase()
+              ? ` · via ${esc(source.publisher)}` : "";
+            const locators = compactSourceLocators([...item.locators.values()].filter(locator => !tidy(source.citation).includes(tidy(locator))));
+            return `<div class="source-witness"><p>${link}${via}</p>${source.citation ? `<p>${esc(source.citation)}</p>` : ""}
+              ${locators.length ? `<ul>${locators.map(locator => `<li>${esc(locator)}</li>`).join("")}</ul>` : ""}</div>`;
+          }).join("")}</details></li>`;
+      }
+      const {sourceId, source, item} = group.witnesses[0];
+      const label = [group.institution || source.authors || source.title || sourceId, source.issued_year].filter(Boolean).join(" · ");
       const link = item.url ? `<a href="${esc(item.url)}" rel="noreferrer">${esc(label)}</a>` : esc(label);
       const citation = source.citation || source.title || "";
       const locators = compactSourceLocators([...item.locators.values()].filter(locator => !tidy(citation).includes(tidy(locator))));

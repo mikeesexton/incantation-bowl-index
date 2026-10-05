@@ -179,6 +179,45 @@ test("genuinely different dates remain separate", () => {
   assert.equal(groupedFacts("ID", "dating").length, 2);
 });
 
+test("museum catalogue witnesses share one heading with all evidence and republication credits", () => {
+  data.factsBy.BM = [
+    {source_id: "BM1", locator: "Related objects: 1881-0714-6"},
+    {source_id: "BM2", locator: "Google asset fQEubwbd_KepFw"},
+    {source_id: "SEGAL", locator: "bowl 1"},
+  ];
+  data.sourceById.BM1 = {source_type: "museum_record", authors: "The British Museum",
+    title: "Museum catalogue", publisher: "The British Museum", url: "https://museum.example/1", citation: "First witness"};
+  data.sourceById.BM2 = {source_type: "museum_record", authors: "British Museum",
+    title: "Ceramic bowl", publisher: "Google Arts & Culture", url: "https://google.example/1", citation: "Second witness"};
+  data.sourceById.SEGAL = {source_type: "catalogue", authors: "J. B. Segal",
+    publisher: "British Museum", issued_year: 2000, citation: "Scholarly edition"};
+  const html = sourcesSection("BM");
+  assert.equal((html.match(/<span>British Museum<\/span>/g) || []).length, 1);
+  assert.match(html, /https:\/\/museum.example\/1/);
+  assert.match(html, /https:\/\/google.example\/1/);
+  assert.match(html, /via Google Arts & Culture/);
+  assert.match(html, /First witness/); assert.match(html, /Second witness/);
+  assert.match(html, /Related objects: 1881-0714-6/); assert.match(html, /Google asset/);
+  assert.match(html, /J\. B\. Segal · 2000/);
+});
+
+test("exact site aliases group across records without losing qualifiers or original forms", () => {
+  const place = (value, certainty = "reported") => ({field_group: "provenance", field: "findspot", value, certainty});
+  data.factsBy.PLACES = [place("Excavated/Findspot: Tell Ibrahim (Kutha)"), place("Tell Ibrahim, Iraq")];
+  assert.equal((journeySection("PLACES").match(/Kutha \(Tell Ibrahim\)/g) || []).length, 1);
+  assert.match(recordedFormsSection("PLACES"), /Excavated\/Findspot: Tell Ibrahim \(Kutha\)/);
+  assert.match(recordedFormsSection("PLACES"), /Tell Ibrahim, Iraq/);
+  data.factsBy.PLACES.push(place("Tell Ibrahim, Iraq", "uncertain"), place("Probably Tell Ibrahim"),
+    place("Tell Ibrahim, Iran"), place("Tell Ibrahim, Area A"), place("Tell Ibrahim | Nippur"));
+  assert.equal((journeySection("PLACES").match(/<small>Reported findspot<\/small>/g) || []).length, 6);
+  assert.match(journeySection("PLACES"), /Probably Tell Ibrahim/);
+  assert.match(journeySection("PLACES"), /Tell Ibrahim, Iran/);
+  assert.match(journeySection("PLACES"), /Tell Ibrahim, Area A/);
+  data.factsBy.PLACES = [place("Nuffar"), place("Nippur, Iraq"), place("Nippur, locus 14")];
+  assert.equal((journeySection("PLACES").match(/<small>Reported findspot<\/small>/g) || []).length, 2);
+  assert.match(journeySection("PLACES"), /Nippur, locus 14/);
+});
+
 test("a date and its period share one statement and citation without merging differing dates", () => {
   data.factsBy.ID = [
     {field_group: "dating", value: "6th–8th centuries CE", source_id: "SRC", locator: "Details"},

@@ -2,7 +2,7 @@
 
 > Living document generated from `research/roadmap/dataset_maturity.json` and the private corpus. Update task status or add newly discovered gaps in the JSON register, then run `ibi roadmap`.
 
-Generated: `2026-10-05T00:40:53+00:00`
+Generated: `2026-10-05T14:07:55+00:00`
 
 ## Portfolio status
 
@@ -130,7 +130,7 @@ Current evidence: **249 scholarship works indexed; 84 with a source-linked held 
 |---|---:|
 | Candidate source records | 2281 |
 | Working physical identity hypotheses (all statuses) | 1929 |
-| Source appearances | 2989 |
+| Source appearances | 2990 |
 | Sources | 994 |
 | Source documents with current assessments | 102 |
 | Source documents assessed complete | 93 |
@@ -183,7 +183,7 @@ The scoping review's People, Ritual, Intertexts, Visual and Scholarship groups. 
 
 | Facet | Identities | Coverage |
 |---|---:|---:|
-| Publication | 567 | 29.4% |
+| Publication | 568 | 29.4% |
 | Condition | 477 | 24.7% |
 | Vessel Form | 302 | 15.7% |
 | Text Form | 231 | 12.0% |
