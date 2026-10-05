@@ -77,6 +77,12 @@ and acknowledges only that packet. The six-hour pass never advances the daily
 cursor. Both schedules need this Mac and the desktop app running; the installed
 LaunchAgent can process existing deposits without an agent session.
 
+Source checking now belongs to these scheduled passes; the morning chat carries
+specific identity questions for Mike. Follow [market_chat_checks.md](market_chat_checks.md)
+to compare archived sources, append checks against the exact listing version,
+and retain explicit chat responses separately from corpus decisions. The page's
+filters only change display; no manual website checking is required.
+
 ## Private artifacts
 
 All captures and extracted source expression stay in ignored `data/private/`:

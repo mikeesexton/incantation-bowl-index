@@ -506,8 +506,8 @@ function marketResult(result) {
 
 function marketLeads(leads) {
   if (!leads.length) return "";
-  return `<section class="market-section"><h2>New listings awaiting review</h2>
-    <p class="market-muted">Found by the listing monitor and not yet checked or recorded.</p><ul class="market-list">${leads.map(lead => {
+  return `<section class="market-section"><h2>From the market watch</h2>
+    <p class="market-muted">Source checks and possible bowl matches are handled in your scheduled morning chat.</p><ul class="market-list">${leads.map(lead => {
       const match = lead.possible_match;
       const note = match && match.identity_id ? ` <span class="market-muted">· possibly <a href="#/explore/${encodeURIComponent(match.identity_id)}">${escapeHtml(match.identity_id)}</a> (${escapeHtml(match.basis)})</span>` : "";
       return `<li>${externalLink(lead.url, lead.description)} · ${escapeHtml(lead.result?.sale_at_text || lead.sale_date_text || "date not shown")} · estimate ${escapeHtml(lead.estimate || "not shown")}${marketResult(lead.result)} <span class="market-muted">· seen ${escapeHtml(lead.observed_at.slice(0, 10))}</span>${note}</li>`;
@@ -533,7 +533,7 @@ async function renderMarket() {
       <label class="compact-select">Status<select id="market-status"><option value="">All listings</option>${statuses.filter(s => by[s]).map(s => `<option value="${s}">${escapeHtml(labels[s] || humanize(s))} (${by[s]})</option>`).join("")}</select></label></div>
     <p class="market-lede">${m.listings} listings of ${m.identities} bowls from ${m.houses} houses and dealers. ${by.upcoming || 0} upcoming; ${sold} recorded as sold, ${by.sold || 0} of them with a price. Prices keep each source's wording and currency. A recorded sale does not establish lawful ownership, export history or authenticity.</p>
     ${marketLeads(ledger.monitor_leads)}
-    <section class="market-section" id="market-intelligence"></section>
+    <section class="market-section market-intelligence" id="market-intelligence"></section>
     <section class="market-section"><h2>Listings, newest first</h2><div class="market-table-wrap"><table class="market-table">
       <thead><tr><th>Date</th><th>House</th><th>Bowl</th><th>Status</th><th>Price wording</th><th>Lot or record</th></tr></thead>
       <tbody id="market-rows">${marketRows(ledger, "")}</tbody></table></div></section>

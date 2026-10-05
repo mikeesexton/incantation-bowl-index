@@ -51,6 +51,48 @@ class IntakeTests(unittest.TestCase):
         self.assertEqual(receipt['deposited'],0)
         self.assertEqual(receipt['account'],'test@example.com')
 
+    def test_source_check_is_version_bound_replayable_and_separate_from_identity(self):
+        from bowl_index.market_intake import record_source_checks
+        self.deposit(self.mail());first=process(self.root,self.config,NOW)
+        row=view(self.root)['listings'][0]
+        item={'listing_id':row['listing_id'],'listing_fingerprint':row['listing_fingerprint'],
+            'status':'checked','note':'Compared title and estimate with original MIME; provenance wording remains a source report.',
+            'evidence':[{'sha256':row['evidence'][0]['sha256'],'locator':'MIME body link 1'}]}
+        self.assertEqual(record_source_checks(self.root,{'checks':[item]},NOW)['recorded'],1)
+        self.assertTrue(record_source_checks(self.root,{'checks':[item]},NOW)['replay'])
+        self.assertEqual(view(self.root)['listings'][0]['source_check']['actor'],'agent source comparison')
+        packet=daily_report(self.root,now=NOW)
+        self.assertEqual(packet['needs_review'],[])
+        self.assertEqual(len(packet['source_checks']),1)
+        key=first['messages'][0]['key']; extracted=first['messages'][0]['items'][0]
+        process(self.root,self.config,LATER,{key:[{**extracted,'estimate':'GBP 700'}]})
+        self.assertIsNone(view(self.root)['listings'][0]['source_check'])
+        with self.assertRaises(ValueError):record_source_checks(self.root,{'checks':[item]},LATER)
+        self.assertEqual(len(list((self.root/'source-checks').glob('*.json'))),1)
+
+    def test_source_check_batch_rejects_bad_evidence_before_any_receipt(self):
+        from bowl_index.market_intake import record_source_checks
+        self.deposit(self.mail());process(self.root,self.config,NOW)
+        row=view(self.root)['listings'][0]
+        item={'listing_id':row['listing_id'],'listing_fingerprint':row['listing_fingerprint'],
+            'status':'checked','note':'Source checked','evidence':[{'sha256':'0'*64,'locator':'invented'}]}
+        with self.assertRaises(ValueError):record_source_checks(self.root,{'checks':[item]},NOW)
+        self.assertFalse((self.root/'source-checks').exists())
+        item['evidence'][0]['sha256']=row['evidence'][0]['sha256']
+        with self.assertRaises(ValueError):record_source_checks(self.root,{'checks':[item,{**item,'listing_id':'missing'}]},NOW)
+        self.assertFalse((self.root/'source-checks').exists())
+        Path(row['evidence'][0]['path']).write_bytes(b'altered')
+        with self.assertRaises(ValueError):record_source_checks(self.root,{'checks':[item]},NOW)
+
+    def test_same_second_source_checks_keep_commit_order(self):
+        from bowl_index.market_intake import record_source_checks
+        self.deposit(self.mail());process(self.root,self.config,NOW);row=view(self.root)['listings'][0]
+        item={'listing_id':row['listing_id'],'listing_fingerprint':row['listing_fingerprint'],
+            'status':'blocked','note':'Needs source inspection','evidence':[{'sha256':row['evidence'][0]['sha256'],'locator':'MIME body'}]}
+        record_source_checks(self.root,{'checks':[item]},NOW)
+        record_source_checks(self.root,{'checks':[{**item,'status':'checked','note':'Compared entire source block'}]},NOW)
+        self.assertEqual(view(self.root)['listings'][0]['source_check']['status'],'checked')
+
     def test_whole_batch_validation_wrong_label_and_action_links(self):
         wrong = self.mail('wrong'); wrong['label_ids'] = []
         with self.assertRaises(ValueError):

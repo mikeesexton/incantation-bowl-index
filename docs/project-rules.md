@@ -489,3 +489,12 @@ agents, use a browser to evade the restriction or follow an unreviewed endpoint.
 The runtime must preserve UTC observation dates, source URLs, exact price
 wording, quantity and price-basis limitations, and hashes of its private
 evidence. Shared/public release still needs the existing review gates.
+
+Mike clarified on 2026-10-05 that Market checking belongs in the scheduled chat.
+Agents compare extracted details with archived sources and append fingerprint-
+bound source-check receipts; a comparison checks extraction, not authenticity,
+rights, legal history or physical identity. The morning task brings specific
+identity questions to Mike in chat, preserving explicit answers against the shown
+candidate and never inferring a decision from delivery, filter use or silence.
+The Market page is the evidence viewer; filters never record completion.
+See [market_chat_checks.md](market_chat_checks.md).

@@ -7,12 +7,12 @@ from pathlib import Path
 
 from bowl_index.db import PROJECT_ROOT
 from bowl_index.market_intake import (ack_report, daily_report, deposit_gmail, enrich,
-                                     process, view, import_eml, image_receipt, collect_images, record_gap)
+                                     process, view, import_eml, image_receipt, collect_images, record_gap, record_source_checks)
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('action', choices=('deposit', 'import-eml', 'run', 'enrich', 'review', 'status', 'report', 'ack', 'image', 'images', 'gap'))
+    p.add_argument('action', choices=('deposit', 'import-eml', 'run', 'enrich', 'review', 'status', 'report', 'ack', 'image', 'images', 'gap', 'source-check'))
     p.add_argument('--root', default=str(PROJECT_ROOT / 'data/private/monitoring/market-agent/intake'))
     p.add_argument('--config', default=str(PROJECT_ROOT / 'config/market_email_intake.json'))
     p.add_argument('--db', default=str(PROJECT_ROOT / 'data/private/ibi.sqlite3'))
@@ -28,7 +28,7 @@ def main():
         p.error('unsupported intake config')
     settings = json.loads((PROJECT_ROOT / 'config/market_monitors.json').read_text())['settings']
     root = Path(args.root)
-    if args.action in ('deposit', 'review', 'import-eml', 'image', 'gap') and not args.input:
+    if args.action in ('deposit', 'review', 'import-eml', 'image', 'gap', 'source-check') and not args.input:
         p.error('--input required')
     if args.action == 'deposit':
         result = deposit_gmail(root, json.loads(Path(args.input).read_text()), config, args.now)
@@ -36,6 +36,8 @@ def main():
         result = import_eml(root, Path(args.input), args.now)
     elif args.action == 'review':
         result = process(root, config, args.now, overrides=json.loads(Path(args.input).read_text()))
+    elif args.action == 'source-check':
+        result = record_source_checks(root, json.loads(Path(args.input).read_text()), args.now)
     elif args.action == 'gap':
         result = record_gap(root, json.loads(Path(args.input).read_text()), args.now)
     elif args.action == 'image':

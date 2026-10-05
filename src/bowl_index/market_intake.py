@@ -462,9 +462,71 @@ def view(root):
     dispositions = [item for message in processed.values() for item in message["items"]]
     active = [row for row in listings.values() if row.get("relevance") in ("relevant", "uncertain", "related_amulet")]
     excluded = [row for row in listings.values() if row not in active]
+    checks = {}
+    for path in sorted((Path(root) / "source-checks").glob("*.json")):
+        for check in json.loads(path.read_text())["checks"]:
+            checks[(check["listing_id"], check["listing_fingerprint"])] = check
+    for row in active:
+        row["listing_fingerprint"] = source_check_fingerprint(row)
+        row["source_check"] = checks.get((row["listing_id"], row["listing_fingerprint"]))
     return {"schema_version": 1, "audience": "Mike alone", "listings": active, "excluded_listings": excluded,
             "dispositions": dispositions, "processed": processed, "errors": errors, "coverage": coverage,
             "counts": dict(Counter(x["disposition"] for x in dispositions))}
+
+
+def source_check_fingerprint(listing):
+    """Bind a source comparison to wording/evidence, not delivery or UI metadata."""
+    return fingerprint({"listing_id": listing["listing_id"],
+        "values": {k: listing.get(k) for k in FIELDS},
+        "evidence": sorted({(e["sha256"], e["locator"]) for e in listing.get("evidence", [])})})
+
+
+def record_source_checks(root, payload, now=None):
+    """Append agent source comparisons; never a human identity/rights decision."""
+    root = Path(root)
+    now = utc(now or _utc_now())
+    submitted = payload.get("checks")
+    if not isinstance(submitted, list) or not submitted:
+        raise ValueError("source checks required")
+    with locked(root):
+        latest = {r["listing_id"]: r for r in view(root)["listings"]}
+        checks, seen = [], set()
+        for item in submitted:
+            row = latest.get(item.get("listing_id"))
+            if not row or row["listing_id"] in seen:
+                raise ValueError("unknown or duplicate listing in source check")
+            seen.add(row["listing_id"])
+            if item.get("listing_fingerprint") != row["listing_fingerprint"]:
+                raise ValueError("source check refers to a stale listing version")
+            if item.get("status") not in ("checked", "blocked", "needs_correction") or not item.get("note"):
+                raise ValueError("source check needs status and comparison note")
+            inspected = item.get("evidence")
+            if not isinstance(inspected, list) or not inspected:
+                raise ValueError("source check needs inspected evidence and locators")
+            available = {e["sha256"]: e for e in row["evidence"]}
+            for citation in inspected:
+                if not citation.get("locator") or citation.get("sha256") not in available:
+                    raise ValueError("source check citation is not archived listing evidence")
+                evidence_bytes(root, available[citation["sha256"]])
+            if item["status"] == "checked":
+                kinds = {available[c["sha256"]]["kind"] for c in inspected}
+                required = {e["kind"] for e in row["evidence"] if e["kind"] in ("email", "page")}
+                if not required.issubset(kinds):
+                    raise ValueError("completed comparison must cite email and any collected page")
+            checks.append({"listing_id": row["listing_id"], "listing_fingerprint": row["listing_fingerprint"],
+                "status": item["status"], "note": item["note"], "evidence": inspected,
+                "checked_at": now, "actor": "agent source comparison",
+                "meaning": "Compared extraction with cited sources; no identity, authenticity, rights or legal decision"})
+        # Exact repeated comparisons do not create a new receipt or daily alert.
+        pending = [c for c in checks if not latest[c["listing_id"]].get("source_check") or
+            any(latest[c["listing_id"]]["source_check"].get(k) != c[k] for k in ("status", "note", "evidence"))]
+        if not pending:
+            return {"recorded": 0, "replay": True, "corpus_writes": 0}
+        sequence = len(list((root / "source-checks").glob("*.json"))) + 1
+        receipt = {"checked_at": now, "checks": pending, "sequence": sequence, "corpus_writes": 0}
+        path = root / "source-checks" / ("%012d-" % sequence + fingerprint(receipt)[:12] + ".json")
+        _atomic_json(path, receipt)
+        return {"recorded": len(pending), "receipt": str(path.resolve()), "corpus_writes": 0}
 
 
 def validate_items(items):
@@ -809,7 +871,10 @@ def daily_report(root, conn=None, now=None, acknowledge=False):
                   "reappearance_candidates": reappearance_matches(list(latest.values())),
                   "corpus_candidates": [x for x in latest.values() if x.get("corpus_matches")],
                   "provenance_flags": [{"listing_id": x["listing_id"], "flags": x.get("provenance_flags", [])} for x in latest.values()],
-                  "needs_review": [x for x in latest.values() if x.get("needs_review")],
+                  "needs_review": [x for x in latest.values() if x.get("needs_review") and
+                      (x.get("source_check") or {}).get("status") != "checked"],
+                  "source_checks": [{"listing_id": x["listing_id"], "fingerprint": x["listing_fingerprint"],
+                      "check": x.get("source_check")} for x in latest.values()],
                   "counts": snapshot["counts"], "listing_count": len(latest),
                   "unique_excluded_items": len({x.get("url") or fingerprint(x) for x in snapshot["dispositions"] if x["disposition"] == "adjacent_excluded"}),
                   "errors": [e for r in pending for e in r.get("errors", [])],
@@ -834,7 +899,9 @@ def daily_report(root, conn=None, now=None, acknowledge=False):
                          ("including premium", "premium_total")) if row.get(field)) or "price not stated"
                     lines.append("- %s · %s · %s · %s · [%s](%s)%s" % (row.get("title"), row.get("house") or "unknown house", row.get("sale_date_text") or "date unknown", money, row["listing_id"], row["url"], " · historical correspondence" if row.get("historical") else ""))
                 lines.append("")
-        lines += ["## Dispositions", "", json.dumps(packet["counts"], ensure_ascii=False), "",
+        lines += ["## Scheduled source checks", "", "Routine extraction checks run in chat; identity suggestions remain Mike's decisions.", ""]
+        lines.extend("- %s: %s" % (x["listing_id"], (x["check"] or {}).get("status", "scheduled")) for x in packet["source_checks"])
+        lines += ["", "## Dispositions", "", json.dumps(packet["counts"], ensure_ascii=False), "",
                   "%d unique adjacent/excluded item(s); counts above include quoted references." % packet["unique_excluded_items"], "",
                   "## Match candidates", ""]
         lines.extend("- %s: %s" % (row["listing_id"], json.dumps(row["corpus_matches"], ensure_ascii=False)) for row in packet["corpus_candidates"])

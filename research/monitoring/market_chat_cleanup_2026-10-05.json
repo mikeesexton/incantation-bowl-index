@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "workstream": "DISC-004",
+  "authorized": "Mike requested Market display cleanup and scheduled chat checks on 2026-10-05",
+  "corpus_writes": 0,
+  "corpus_digest": "707d97090601a45c2f09492e02cdb2dce4af0bc72e5f23fa0ba0faf95e415a5a",
+  "source_observation_runs_unchanged": true,
+  "immutable_intake_runs": [
+    "b88f399dee32afebcb9f9c4291ea85dfaed9257e6a2e07db62479e97f54869e3",
+    "ba437274b43e542914ea5ee0877ecdc8600274f169f319cc036cc239187a6450",
+    "733090c8a1aa4e446a1d5b598f65ba9e42137c489913a118ba233a537839401d",
+    "ce5f38c696f0e14e1f9117b568a3fb1ebad696e1a2caea5b2806f31748444807",
+    "1151e99580478697440d827126170d63b4476bc4726509b8b10c8a84aa421283",
+    "bb18744437091c5f5abba9989f4251965536e1840c94c78aba36c1618c629b62",
+    "3d79a7c202a77d543bbc47781f6614b68c5a898b703548203ca4fe5458b25297",
+    "69c2100c6fc98aa08f5733793b985aa1d8ec2234474ea40fdd88a2f60ab8e20a",
+    "f54ac3123470afb5bc42582a42ba30dea790906a23e397c8b1e8a1aef67b2c1c"
+  ],
+  "implementation_sha256": {
+    "src/bowl_index/market_intake.py": "f8a1b69115df17a9ff38532a7ed7122f1d327115cd93702c6098d7507ab4f991",
+    "scripts/run_market_intake.py": "4987607e9a2d91b13a154ad7e633101a2367f79c01141995ed1afff0ba2cafb3",
+    "web/market_intelligence.js": "9ed4636dff23082dccc56276564da6989c9101495803a8d43400e50ad854e68a",
+    "web/market_intelligence.css": "d0d6d80163dc19cbba59905b7415ac17f5f0a260e481b476e9f7c69c8e619bbf",
+    "web/app.js": "65f959e22e2f733749980d82f675a58db64f8807c214ff01d086f8385a6f5182",
+    "web/index.html": "0690f0acfef7d722b9a3574bea274d8bb64864491717d193f86c303023b7396d",
+    "scripts/build_mike_access.py": "b93f7b95dd1717ff5092612c9a60045067c67e847a51b2b05d1f7440c5fa69ce",
+    "docs/market_chat_checks.md": "59d4d007ed93e2d446b9c87c73e4642dde15ed28d1b40469750cdd33c2b4957d",
+    "docs/project-rules.md": "002531631d0050cea6899ab7982d6030d9b6bd03783ab99523eeb3a1a3f9abd8",
+    "research/monitoring/market_morning_digest_prompt.md": "058636579a04d5e3c4bfddb4c6d08ccbaf27f4360b7d1f69cef959dc6c426056",
+    "research/monitoring/market_agent_task_prompt.md": "6d8c018cb73b7ac2321da2fb641bf79e694cb6ad4eff0c5107e0a78a5a115ba8"
+  },
+  "source_checks": {
+    "checked_listings": 3,
+    "old_needs_review_observations_preserved": true,
+    "identity_candidates_retained": 3,
+    "receipt": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/monitoring/market-agent/intake/source-checks/000000000001-c7b68316c9f3.json",
+    "sha256": "1335479f0e4755e28718a8c45241442ab60569c8cf5611b50f3083e20daa7df5",
+    "exact_replay_no_op": true,
+    "meaning": "Extraction comparison only; no identity or historical adjudication"
+  },
+  "validation": {
+    "python_tests": 512,
+    "javascript_tests": 80,
+    "private_build_audits": "8/8",
+    "snapshot_id": "e68ec2fe0393e2c043677840385ad87e9c34dc801d9c95cef7edb451aef54636",
+    "private_texts": 3065,
+    "media": 2455,
+    "local_images": 1544,
+    "captures": 119,
+    "actual_ui": "Aligned dropdown/date filters, date exclusion, rich detail/source/history retention, source comparison indicators; desktop and 390px narrow controls inspected. Narrow table scrolling stays within its wrapper.",
+    "preview": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/monitoring/market-agent/intake/market-tidy-preview-2026-10-05.png",
+    "preview_sha256": "252320745977e9b81ccb33d4dddd85b0fe455da8757897ba58c56a402595353d",
+    "temporary_tab_closed": true,
+    "temporary_server_stopped": true,
+    "user_reader_8765_untouched": true
+  },
+  "schedules": [
+    {
+      "id": "morning-bowl-auction-digest",
+      "target_chat": "01a10c43-883d-7fd2-bd45-3c4d87626c61",
+      "cadence": "07:00 America/New_York",
+      "status": "ACTIVE",
+      "config_sha256": "ab2544f3ae6b06410fc68c72b876531778e2a83b8d5bfa3e3404833627d13794",
+      "source_check_and_chat_question_workflow_updated": true
+    },
+    {
+      "id": "incantation-bowl-auction-watch",
+      "target_chat": "01a109df-21e7-7be0-9c0c-ee87a74a0766",
+      "cadence": "Every six hours",
+      "status": "ACTIVE",
+      "config_sha256": "38bf083caa39295d76e115ad6603826711ba366f8cb9678ebe6f215ad2f9c946",
+      "source_check_and_chat_question_workflow_updated": true
+    }
+  ],
+  "limits": [
+    "Runtime source checks stay private and append-only; changed listing content invalidates the current comparison.",
+    "Explicit identity replies are recorded against the shown candidate, with no automatic corpus intake.",
+    "Existing reader process retains its imported Python module until next restart; refreshed frontend and new scheduled processes load current code.",
+    "Mac/app requirement and existing scheduling cadence remain unchanged; no deployment or push."
+  ]
+}

@@ -239,6 +239,7 @@ def main() -> None:
         json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
     (OUT / "market.html").write_text(market_page(ledger, generated_at), encoding="utf-8")
     shutil.copy2(WEB / "market_intelligence.js", OUT / "market_intelligence.js")
+    shutil.copy2(WEB / "market_intelligence.css", OUT / "market_intelligence.css")
     shutil.copy2(WEB / "reading.js", OUT / "reading.js")
     shutil.copytree(WEB / "fonts", OUT / "fonts")
     (OUT / "index.html").write_text(
@@ -431,8 +432,8 @@ def monitor_section(leads, bowl_link):
                          escape(lead["url"]), h(lead["description"]),
                          h(result.get("sale_at_text") or lead.get("sale_date_text") or "date not shown"),
                          h(lead.get("estimate")), outcome, h(lead["observed_at"][:10]), note))
-    return ("<h2>New listings awaiting review</h2>\n<p class=\"lede\">Found by the listing "
-            "monitor and not yet checked or recorded.</p>\n<ul>%s</ul>" % "".join(items))
+    return ("<h2>From the market watch</h2>\n<p class=\"lede\">Source checks and possible "
+            "bowl matches are handled in your scheduled morning chat.</p>\n<ul>%s</ul>" % "".join(items))
 
 
 MARKET_PAGE = """<!doctype html>
@@ -445,6 +446,7 @@ MARKET_PAGE = """<!doctype html>
 <link rel="stylesheet" href="mike.css">
 <style>{css}</style>
 <script src="market_intelligence.js" defer></script>
+<link rel="stylesheet" href="market_intelligence.css">
 </head>
 <body>
 <header class="preview-bar">

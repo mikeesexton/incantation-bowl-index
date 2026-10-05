@@ -39,9 +39,18 @@ explicit coverage gaps. Fresh robots checks, rate limits, bounded page/image
 counts, and refusal of redirects/challenges apply. Protected descriptions and
 local image bytes remain Mike-only; capture confers no public reuse permission.
 
+Routine source comparisons and any specific questions for Mike now live in the
+scheduled morning chat, following [market_chat_checks.md](market_chat_checks.md).
+Version-bound private source-check receipts describe the actual comparison;
+changed wording/evidence opens a new check. Source comparison does not decide
+physical identity, authenticity or rights. The Market page is the evidence viewer.
+
 The private console and generated Mike Access Market page show filters for
 house, platform, relevance, complete sale dates, provenance flags and missing
 results, plus disclosures for field history, archived evidence and item audit.
+All controls are labeled dropdown/date filters, with an explicit explanation
+that filtering never marks anything checked or approved. Repeated evidence is
+compacted in display only; full underlying observations remain.
 Administrative notices, literature, related amulets, excluded adjacent objects,
 uncertain items and sale announcements have distinct dispositions. A digest's
 quoted replies are source references, not new offers. Historical correspondence

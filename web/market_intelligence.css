@@ -1,0 +1,37 @@
+/* Scoped to the private auction view; shared console controls keep their styles. */
+.market-intelligence { margin: 1.8rem 0 2.2rem; }
+.market-intelligence .intelligence-heading h2 { margin-bottom: .3rem; }
+.market-intelligence .intelligence-heading p { color: var(--muted, #626b70); margin: 0 0 1rem; }
+.market-intelligence .market-chat-note { padding: .85rem 1rem; border-left: 3px solid var(--cyan, #2d8ba1); background: var(--surface, #f6f7f3); font-size: .86rem; line-height: 1.65; margin: 0 0 1.2rem; max-width: 85ch; }
+.market-intelligence .market-chat-note strong { display: block; }
+.market-intelligence .intelligence-filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .8rem; padding: 0; }
+.market-intelligence .intelligence-filters label { display: flex; flex-direction: column; gap: .4rem; color: var(--muted, #626b70); font: 600 .76rem/1.3 var(--sans, sans-serif); }
+.market-intelligence .intelligence-filters input,
+.market-intelligence .intelligence-filters select { box-sizing: border-box; display: block; width: 100%; min-width: 0; height: 42px; min-height: 42px; padding: .45rem .6rem; border: 1px solid var(--line-dark, #c7ccca); border-radius: 4px; background: var(--surface, #fff); color: var(--ink, #263c44); font: 400 .85rem/1.3 var(--sans, sans-serif); }
+.market-intelligence .intelligence-count { margin: 1rem 0 .3rem; font-size: .85rem; }
+.market-intelligence .intelligence-filter-help { margin: 0 0 .85rem; color: var(--muted, #626b70); font-size: .77rem; }
+.market-intelligence .market-table-wrap { overflow-x: auto; border: 1px solid var(--line, #d9ded8); }
+.market-intelligence .market-table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+.market-intelligence .market-table th,
+.market-intelligence .market-table td { text-align: left; vertical-align: top; padding: .85rem .8rem; border-bottom: 1px solid var(--line, #d9ded8); }
+.market-intelligence .market-table th { color: var(--muted, #626b70); font-size: .76rem; font-weight: 650; white-space: nowrap; }
+.market-intelligence .intelligence-listing { width: 40%; min-width: 250px; }
+.market-intelligence .intelligence-listing > a { font-weight: 600; }
+.market-intelligence .intelligence-meta { display: block; color: var(--muted, #626b70); font-size: .76rem; margin: .3rem 0; line-height: 1.45; }
+.market-intelligence .source-check-status { display: block; color: var(--muted, #626b70); font-size: .73rem; margin: .35rem 0; }
+.market-intelligence .market-value-label { display: block; font-size: .7rem; color: var(--muted, #626b70); }
+.market-intelligence .listing-details { margin-top: .55rem; }
+.market-intelligence summary { cursor: pointer; font-size: .8rem; }
+.market-intelligence .listing-details dl { margin: .8rem 0; }
+.market-intelligence dt { color: var(--muted, #626b70); font-size: .75rem; margin-top: .65rem; }
+.market-intelligence dd { margin: .2rem 0 .6rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.market-intelligence .listing-details details { margin: .75rem 0; }
+.market-intelligence .listing-details li,
+.market-intelligence .intelligence-audit li { overflow-wrap: anywhere; margin-bottom: .45rem; }
+.market-intelligence .intelligence-audit { display: grid; gap: .6rem; margin-top: 1rem; }
+.market-intelligence .source-check-note { font-size: .8rem; color: var(--muted, #626b70); }
+@media (max-width: 600px) {
+  .market-intelligence .intelligence-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .market-intelligence .market-table { min-width: 650px; }
+  .market-intelligence .intelligence-listing { min-width: 220px; }
+}

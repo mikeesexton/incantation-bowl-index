@@ -13,11 +13,22 @@ receipts if another collector holds a lock. Do not start a duplicate six-hour
 extra-page collection solely for the digest. If Gmail fails, save the exact gap
 with the gap command; stale mailbox evidence is not a current zero finding.
 
+Perform the source comparison and chat review procedure in
+`docs/market_chat_checks.md` before producing the final packet. Routine checking
+belongs to this scheduled task, not a checkbox or a manual queue on the Market
+page. Compare every unchecked/changed listing in a bounded batch of up to ten
+against archived MIME and permitted lot-page bytes. Inspect the evidence; do
+not call an automatic parse or successful fetch a completed comparison. Record
+hash-bound source-check receipts using the source-check command; retain blocked
+or incorrect cases. Missing asking prices, results or provenance stay missing
+and are not reasons to make Mike inspect every row. On correction, use the
+existing private extraction-review command first, then compare the final version.
+
 Run `PYTHONPATH=src .venv/bin/python scripts/run_market_intake.py report`.
 Read its returned exact saved JSON/Markdown packet. Give Mike a concise morning
 summary: new relevant lots with house, sale date, original estimate/asking price
 and link; updated results with price basis; match candidates awaiting his review;
-provenance flags; review items, unique excluded counts and failed coverage. Mark
+provenance flags; source-check progress, unique excluded counts and failed coverage. Mark
 an initial packet as a baseline, and distinguish historical correspondence,
 listing appearances, quantities and physical identity. Do not report generic
 regional claims as an individual object's findspot or infer sold from a missing
@@ -27,6 +38,16 @@ If there are no new listings or changes, explicitly say so in one line. Report
 any current errors, incomplete Gmail scan, stale scan or meaningful coverage gaps
 separately; never imply comprehensive coverage. Existing pending matches can be
 mentioned compactly without announcing them as newly found every morning.
+
+Bring up to three specific unresolved identity/reappearance questions into this
+chat, with a short comparison, exact source links/locators, the proposed corpus
+record and any conflicting evidence. Explain what decision is requested and offer
+same bowl / different bowls / leave unresolved. Never ask Mike to "check the
+Market page" or dump unexplained IDs. Keep unanswered questions as carryovers;
+do not repeat their full evidence every morning or imply a reply/approval.
+Before asking a match again, check this chat's explicit answers and retained
+private response receipts. Follow docs/market_chat_checks.md to save an explicit
+answer against the shown candidate, without an automatic corpus merge or ingest.
 
 After producing the summary, acknowledge ONLY that exact packet with
 `PYTHONPATH=src .venv/bin/python scripts/run_market_intake.py ack --packet PATH`.
