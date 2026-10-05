@@ -376,7 +376,34 @@
     return {primary: rows.filter(item => !secondary.has(item)), secondary: rows.filter(item => secondary.has(item))};
   }
 
+  function orderedReadingSections(rows) {
+    // Source section headings are explicit ordinals. Sort only their existing
+    // slots within the same appearance, language and reading type; unrelated
+    // editions and unnumbered text keep their input positions.
+    const groups = new Map();
+    rows.forEach((row, index) => {
+      if (!row.source_id || !row.appearance_id
+        || !["translation", ...ORIGINAL_TEXT_TYPES].includes(row.text_type)) return;
+      const heading = String(row.content || "").trimStart().match(/^([MDCLXVI]+)\.\s*\r?\n/);
+      if (!heading || !/^(?=[MDCLXVI]+$)M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(heading[1])) return;
+      const values = {I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000};
+      const letters = [...heading[1]];
+      const ordinal = letters.reduce((sum, ch, i) => sum
+        + (values[ch] < (values[letters[i + 1]] || 0) ? -values[ch] : values[ch]), 0);
+      const key = JSON.stringify([row.source_id, row.appearance_id, row.text_type, row.language, row.script]);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push({row, index, ordinal});
+    });
+    const ordered = [...rows];
+    groups.forEach(items => {
+      const sorted = [...items].sort((a, b) => a.ordinal - b.ordinal || a.index - b.index);
+      items.forEach((item, i) => { ordered[item.index] = sorted[i].row; });
+    });
+    return ordered;
+  }
+
   function textSections(rows, sourcePages = []) {
+    rows = orderedReadingSections(rows);
     const facsimiles = sourcePages.filter(item => item.media_type === "inscription_facsimile"
       && item.url && embeddableImage(item.url));
     const translations = rows.filter(item => item.text_type === "translation");

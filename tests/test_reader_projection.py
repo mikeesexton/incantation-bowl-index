@@ -46,6 +46,12 @@ class ProjectionTests(unittest.TestCase):
         self.assertEqual(row['access_locator'],'text 42, p. 88')
         self.assertEqual(row['access_url'],'https://doi.org/10.1234/segal')
 
+    def test_reading_keeps_its_appearance_boundary_without_releasing_content(self):
+        row=self.rows('texts')[0]
+        stored=self.conn.execute('SELECT appearance_id FROM texts WHERE id=?', (row['id'],)).fetchone()
+        self.assertEqual(row['appearance_id'], stored['appearance_id'])
+        self.assertIsNone(row['content'])
+
     def test_unapproved_media_is_never_emitted(self):
         self.assertEqual(self.rows('media'),[])
         blob=json.dumps(Projection(self.conn).tables(), ensure_ascii=False)

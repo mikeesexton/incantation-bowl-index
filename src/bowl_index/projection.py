@@ -37,7 +37,7 @@ PROJECTION_COLUMNS = {
     # under, so they are populated only where there is content. A source licence
     # narrower than this repository's CC BY 4.0 travels with its rows, and without
     # these two columns a consumer could not tell which rows those are.
-    "texts": ("id", "object_id", "source_id", "text_type", "language", "script", "editor",
+    "texts": ("id", "object_id", "appearance_id", "source_id", "text_type", "language", "script", "editor",
               "locator", "rights_status", "content_status", "content", "rights_basis",
               "license_url", "attribution", "rights_locator", "editorial_status",
               "access_citation", "access_locator", "access_url", "access_status"),
@@ -200,7 +200,7 @@ class Projection:
         a withheld row still says what it is and where a reader can consult it."""
         rows = []
         for row in self.conn.execute(
-            "SELECT t.id,t.object_id,t.source_id,t.text_type,t.language,t.script,t.editor,"
+            "SELECT t.id,t.object_id,t.appearance_id,t.source_id,t.text_type,t.language,t.script,t.editor,"
             "t.locator,t.rights_status,t.content,s.citation source_citation,s.url source_url,"
             "s.doi source_doi,s.access_status source_access_status "
             "FROM texts t JOIN sources s ON s.id=t.source_id ORDER BY t.id"
@@ -209,7 +209,8 @@ class Projection:
             review = self.approved_texts.get(row["id"])
             included = review is not None
             rows.append({
-                "id": row["id"], "object_id": row["object_id"], "source_id": row["source_id"],
+                "id": row["id"], "object_id": row["object_id"], "appearance_id": row["appearance_id"],
+                "source_id": row["source_id"],
                 "text_type": row["text_type"], "language": row["language"],
                 "script": row["script"], "editor": row["editor"], "locator": row["locator"],
                 "rights_status": row["rights_status"],

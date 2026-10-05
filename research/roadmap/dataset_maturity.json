@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-10-05T00:06:14.590963+00:00",
+ "updated_at": "2026-10-05T00:14:13.057182+00:00",
  "portfolio_summary": {
   "current_phase": "Strong foundation in active use; building a checked research core; multilingual comprehensiveness remains unproven",
   "strengths": [
@@ -787,7 +787,7 @@
      "status": "in_progress",
      "owner": "Mixed",
      "done_when": "Track field assessment and verification independently of presence; distinguish excavation provenance from production region and ownership; reconcile item-level denominators for major sources; align publication and rights gates with reviewed evidence.",
-     "evidence": "1 October roadmap refresh and research follow-through reconcile summaries with live metrics and separate source-proofreading/native-recovery audits. Presence, native recovery, scan checking, translation-layer comparison, independent interpretation, publication disposition and rights remain separate. Current corpus: 801/1,052 priority edition links; 688/798 edition-text rows checked, 108 partial, 2 unreviewed; 45 native gaps in the frozen 99 roster; 272 conflict reviews needed; 319/1,145 media completed approvals. Corrected 967 Berlin metadata page pointers without changing claim values. Historical cohorts remain dated and forty Penn observations are separated from 32 current fingerprints. Item-level held-source completeness and field-assessment denominators remain open."
+     "evidence": "1 October roadmap refresh and research follow-through reconcile summaries with live metrics and separate source-proofreading/native-recovery audits. Presence, native recovery, scan checking, translation-layer comparison, independent interpretation, publication disposition and rights remain separate. Current corpus: 801/1,052 priority edition links; 688/798 edition-text rows checked, 108 partial, 2 unreviewed; 45 native gaps in the frozen 99 roster; 272 conflict reviews needed; 319/1,145 media completed approvals. Corrected 967 Berlin metadata page pointers without changing claim values. Historical cohorts remain dated and forty Penn observations are separated from 32 current fingerprints. Item-level held-source completeness and field-assessment denominators remain open. Checkpoint162: corrected reader order for explicit Roman section headings within a single source/appearance/language/reading type. Actual SD34 English and partial Latin I–XII now follow section order instead of placing IX before V. Independent editions, unnumbered passages, invalid numerals, all source words, editorial marks, credits and partial statuses retained; corpus unchanged. Two meaningful reader regressions. Goal active; continue exact Latin/inferior-point/source apparatus and original-accession publication research. Frozen24935linked214unlinked/zero wholecasescomplete; Miri21resolved34remaining/all requests unchanged. Receipt research/receipts/Reader162_section_order_2026-10-04.json."
     },
     {
      "id": "QA-005",
@@ -900,6 +900,14 @@
   ]
  },
  "change_log": [
+  {
+   "date": "2026-10-05",
+   "agent": "Codex",
+   "tasks": [
+    "QA-004"
+   ],
+   "note": "Checkpoint162: corrected reader order for explicit Roman section headings within a single source/appearance/language/reading type. Actual SD34 English and partial Latin I–XII now follow section order instead of placing IX before V. Independent editions, unnumbered passages, invalid numerals, all source words, editorial marks, credits and partial statuses retained; corpus unchanged. Two meaningful reader regressions. Goal active; continue exact Latin/inferior-point/source apparatus and original-accession publication research. Frozen24935linked214unlinked/zero wholecasescomplete; Miri21resolved34remaining/all requests unchanged. Text projection now retains existing appearance_id; release content gates unchanged. Three new regressions cover rendering, independent editions and structural reference with content withholding."
+  },
   {
    "date": "2026-10-05",
    "agent": "Codex",
@@ -3157,7 +3165,7 @@
  },
  "priorities": [
   "TEXT-009/TEXT-010/TEXT-003: close the 45 native-script gaps in the frozen 99 held-source roster. Prioritize 32 unrecovered character editions (Pognon 31 Mandaic and Ellis 6 Syriac), then 13 Hebrew-letter transliterations still lacking actual Syriac/Mandaic-script text. All forty Montgomery entries already have working edition text; full letter/diacritic collation and independent interpretation remain open. A retained page image or back-converted transliteration does not close native recovery.",
-  "Active Goal checkpoint161: frozen24935publication-referenced/214unlinked. Held SD34 now has all twelve checked English sections and twelve partial Latin working copies; next exact inferior-point/letter collation and full source apparatus, followed by other held edition gaps and original accession/publication routes. Preserve source footnote eleven-section report alongside actual I–XII labels. Original-script/native recovery remains open; no source-scoped SD34/SD34A merge inferred. Moriggi2024 official BM registration metadata remains a separate evidence-bound META follow-up; conflicts retained. Miri21resolved34remaining/all requests unchanged. Sourcewide/wholecases incomplete; Waterman terminal URL stop retained.",
+  "Active Goal checkpoint161: frozen24935publication-referenced/214unlinked. Held SD34 now has all twelve checked English sections and twelve partial Latin working copies; next exact inferior-point/letter collation and full source apparatus, followed by other held edition gaps and original accession/publication routes. Preserve source footnote eleven-section report alongside actual I–XII labels. Original-script/native recovery remains open; no source-scoped SD34/SD34A merge inferred. Moriggi2024 official BM registration metadata remains a separate evidence-bound META follow-up; conflicts retained. Miri21resolved34remaining/all requests unchanged. Sourcewide/wholecases incomplete; Waterman terminal URL stop retained. Reader ordering corrected in checkpoint162 for explicit Roman section headings; source content and review status unchanged.",
   "TEXT-001/CONC-003/CONC-004: investigate all249original campaign cases, now35linked/214unlinked/allattempted/zero wholecasescomplete. Current probable/confirmed reference coverage838/1,052 needs4additional evidence-backed dispositions for80%gate. Prioritize exactNLI/Schøyen/Nippur and documented archival routes; retain actual-link safeguard and reject negative findings based on catalogue silence. Keep unlisted Moussaieff/IAA/Scholem groups and source disagreements for evidence-bound review.",
   "CONC-005/QA-004/CONC-007: current generated conflict report has48stale instances/608requiring review or revalidation. Check current Penn fingerprints against actual source context. Three publication registry keys need sourced entries:Ford-Abudraham2018/Lidzbarski1902/Yamauchi1967. Preserve historical decisions and human adjudication boundaries; flags are not established errors.",
   "SCHOL-005/CONC-001: pursue authorized Segal 2000 access for exact numbers, BM068A, texts and the 142/159 explanation. The 159 BM publication relations already supply edition links. Check outstanding Isbell 1975, TMH 7, Naveh–Shaked 1998, Yamauchi 1967 requests and complete Naveh–Shaked 1993; library availability must be freshly verified.",

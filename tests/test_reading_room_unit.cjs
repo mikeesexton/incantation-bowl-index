@@ -70,6 +70,40 @@ test("a partially proofread private original carries its working-text warning", 
     editorial_status: "partial_review"}]), /Partial review/);
 });
 
+test("twelve Roman edition sections render in source order with every copy and credit retained", () => {
+  given({accessTier: "private_research"});
+  const labels = ["I", "II", "III", "IV", "IX", "V", "VI", "VII", "VIII", "X", "XI", "XII"];
+  const rows = ["translation", "transliteration"].flatMap(text_type => labels.map(label => ({
+    source_id: "SRC-EDITION", appearance_id: "APP-EDITION", text_type,
+    language: text_type === "translation" ? "English" : "Aramaic", script: "Latin",
+    content: `${label}.\n${text_type} ${label} [restored] <omitted> {erased}?`,
+    editor: `Editor ${label}`, editorial_status: "partial_review",
+  })));
+  const before = JSON.stringify(rows);
+  const html = textSections(rows);
+  const expected = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
+  for (const type of ["translation", "transliteration"]) {
+    const order = expected.map(label => html.indexOf(`${type} ${label} [restored]`));
+    assert.ok(order.every((position, i) => position >= 0 && (!i || position > order[i - 1])));
+  }
+  assert.equal((html.match(/Partial review/g) || []).length, 24);
+  assert.equal((html.match(/&lt;omitted&gt; \{erased\}\?/g) || []).length, 24);
+  for (const label of expected) assert.equal((html.match(new RegExp(`Editor ${label} ·`, "g")) || []).length, 2);
+  assert.equal(JSON.stringify(rows), before);
+});
+
+test("Roman ordering preserves independent appearances and unnumbered passages", () => {
+  const row = (appearance_id, content) => ({source_id: "SRC", appearance_id,
+    text_type: "translation", language: "English", content});
+  const rows = [row("A", "IX.\nA ninth"), row("B", "V.\nB fifth"),
+    row("A", "I am a voice, not a section heading"), row("A", "IC.\nInvalid ordinal"),
+    row("A", "V.\nA fifth"), row("B", "I.\nB first")];
+  const html = textSections(rows);
+  const expected = ["A fifth", "B first", "I am a voice", "Invalid ordinal", "A ninth", "B fifth"];
+  const order = expected.map(text => html.indexOf(text));
+  assert.ok(order.every((position, i) => position >= 0 && (!i || position > order[i - 1])));
+});
+
 test("a written card line is preferred to anything composed from claims", () => {
   given({
     facts: [fact("text_purpose", "ritual", "Protection of a household"),

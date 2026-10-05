@@ -67,6 +67,9 @@ class PrivateReaderTests(unittest.TestCase):
         self.assertEqual(text["content"], "THE COMPLETE PRIVATE TRANSLATION")
         self.assertEqual(text["content_status"], "private_research")
         self.assertEqual(text["editorial_status"], "not_checked")
+        self.assertEqual(text["appearance_id"], self.conn.execute(
+            "SELECT appearance_id FROM texts WHERE id=?", (text["id"],)
+        ).fetchone()["appearance_id"])
         self.assertEqual(tables["media"][0]["url"], "https://example.org/private-bowl.jpg")
         self.assertIn("no public reuse permission", tables["media"][0]["rights_statement"])
         fact = next(row for row in tables["facts"] if row["field"] == "text_feature")

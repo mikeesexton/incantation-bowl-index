@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "checkpoint": 162,
+  "created_at": "2026-10-05T00:14:13.057182+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "workstream": "QA-004",
+  "scope": "Checkpoint162: corrected reader order for explicit Roman section headings within a single source/appearance/language/reading type. Actual SD34 English and partial Latin I–XII now follow section order instead of placing IX before V. Independent editions, unnumbered passages, invalid numerals, all source words, editorial marks, credits and partial statuses retained; corpus unchanged. Two meaningful reader regressions. Goal active; continue exact Latin/inferior-point/source apparatus and original-accession publication research. Frozen24935linked214unlinked/zero wholecasescomplete; Miri21resolved34remaining/all requests unchanged. Projected text rows now retain their existing appearance_id so independent editions stay separate; content-withholding regression verifies release boundary unchanged.",
+  "corpus_before": "21b3c987bbcda9956294f0bccab900ae97b635f4de33b690e3e2f2efc66aaaf1",
+  "corpus_after": "21b3c987bbcda9956294f0bccab900ae97b635f4de33b690e3e2f2efc66aaaf1",
+  "corpus_changes": 0,
+  "new_texts": 0,
+  "new_media": 0,
+  "new_claims": 0,
+  "new_sources": 0,
+  "new_identity_decisions": 0,
+  "new_rights_approvals": 0,
+  "unchanged_prior_current_checks": 2348,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 34,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "validation": {
+    "python_tests": 478,
+    "node_tests": 73,
+    "total_tests": 551,
+    "reader_checks": "8/8",
+    "all39corpus_table_fingerprints_unchanged": true,
+    "all2348current_checks_unchanged": true,
+    "all3063private_texts_and_appearance_references_verified": true,
+    "all2455media_assignments_verified": true,
+    "all1544local_image_hashes_verified": true,
+    "all119capture_bytes_and_assignments_verified": true,
+    "all994sources_verified": true,
+    "all1929identity_memberships_verified": true,
+    "all249case_histories_availability_unchanged": true,
+    "holdings_and_Miri_requests_unchanged": true,
+    "DISC004_and_all_task_statuses_preserved": true,
+    "twelve_English_and_Latin_sections_in_actual_source_order": true,
+    "all14partial_labels_retained": true,
+    "source_credit_and_hero_retained": true,
+    "SQLite_integrity_and_foreignkeys_valid": true,
+    "three_new_regressions": true
+  },
+  "reader_code": {
+    "path": "web/reading.js",
+    "sha256": "3ea385dd5c421f67b17c5e3d64390121033386dad604ca840a3dee081b406382"
+  },
+  "regression_tests": {
+    "path": "tests/test_reading_room_unit.cjs",
+    "sha256": "3f0c238254ebe911fb5c1cec38a07c73fdb6261e623abf96ca5f9e4553bc24f4"
+  },
+  "miri_queue": {
+    "path": "research/acquisitions/miri_source_queue_2026-10-02.json",
+    "sha256": "12da0c0bc9bb000f6683c128fda3eecb7c6588bdf6a656c5b20ab5803c790386"
+  },
+  "prior_research_receipt": {
+    "path": "research/receipts/SD34_161_original_edition_2026-10-04.json",
+    "sha256": "0a39a54cd09a07a72782c5d7b06a58afe2da39f3b0675942c9bf1bb798dc86ba"
+  },
+  "limits": "Display order only. Latin source copies remain partial; no independent native-script/clay/sourcewide or wholecase completion. No corpus/scholarly/rights decision. No push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "diagnostics": "Earlier lookup used site/reading.js; actual tracked renderer is web/reading.js. No corpus transaction. First actual reader verification still showed IX before V because projected text rows omitted appearance_id. Exposed the existing structural appearance reference in shared/private text projections, added a content-withholding regression and private reference assertion; no database or release-approval change. Cached8877JavaScript retained old display after reload; fresh8881origin fetched current renderer and actual AX/DOM showed I–XII correctly in both reading groups. Temporary agent servers/tabs closed; userconsole untouched.",
+  "campaign_index": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/campaign_case_progress_checkpoint161.json",
+    "sha256": "f48ce7e2c4aaa4a30214f5ca1e04c607167138b068e95de6b10c40d87b8a7901"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/case-availability-audit.json",
+    "sha256": "53c3f9e40039a6ba5909321011381fbca85a89cdf6f80805e96e0734edd1047c"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/held_pdf_inventory_checkpoint161.json",
+    "sha256": "56a05387cf9c456a1d95cb92cc7f6af400abc0a468fd836118a6941b35c27607"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/non_pdf_holdings_checkpoint161.json",
+    "sha256": "733af11631d4e22faf1fdd952bb79c15acbc9fa9b0d13aedbd768b7a30de7fa7"
+  },
+  "projection_code": {
+    "path": "src/bowl_index/projection.py",
+    "sha256": "7b0c94efe7a1ddc37367bcf88844b9d4f6b5a3eae0cef0a876a535fd310ce709"
+  },
+  "projection_regression_tests": {
+    "path": "tests/test_reader_projection.py",
+    "sha256": "f061a2b58c4d2acf2ae601e78f4207cc850b854fcf8e1b599240819cc7702e41"
+  },
+  "private_projection_tests": {
+    "path": "tests/test_private_reader.py",
+    "sha256": "482a34649de6943d9f07f09c6765cb6aa5c966988c6e02f12408952525ccc264"
+  },
+  "ui_verification": {
+    "path": "data/private/research-work/Reader162-2026-10-04/ui-verification.json",
+    "sha256": "21ee31f756f8fca7089d32c2974552f5548227d1335183ed041c8525dff5dc77"
+  },
+  "closed_at": "2026-10-05T00:22:49.191302+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0162_reader_roman_section_order.json",
+    "sha256": "9b511a907f67e2d2aff3ab8e47ec646d8458f9ef8fd38edb777291a78361661f"
+  }
+}
