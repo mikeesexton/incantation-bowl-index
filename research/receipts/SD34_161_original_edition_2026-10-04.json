@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "checkpoint": 161,
+  "created_at": "2026-10-05T00:06:14.590963+00:00",
+  "goal_status": "active",
+  "current_turn_classification": "progress",
+  "previous_goal_turn_classification": "progress",
+  "scope": "Checkpoint161: held Levene–Bhayro2006SD34 previously had no reading rows from that article. Captured all twelve supplied English sections with separate source checks, twelve Latin working copies explicitly partial for inferior-point/letter collation, two partial description/sigla extracts and six private facsimiles including photograph. Five complete original pages and ten controls actually inspected. Footnote13 says eleven sections while supplied labels run I–XII; both retained. No independent native-character/clay recovery, restoration from parallels or scholarly identity/interpretation decision. All old rows/memberships/2322current checks unchanged. Frozen24935linked214unlinked/zero wholecasescomplete, subject outside cohort and attempt histories unchanged. Miri21resolved34remaining, all acquisition requests unchanged. Full apparatus and Latin exact controls remain open; Goal active.",
+  "corpus_before": "9dff0ba2f48fda0b82fb39d53a0c3e6a1e87127b1e4f9676b660e225c2d61573",
+  "corpus_after": "21b3c987bbcda9956294f0bccab900ae97b635f4de33b690e3e2f2efc66aaaf1",
+  "source_id": "SRC-A84A167A5779",
+  "capture_id": "CAP-46025894043D",
+  "source_pdf_sha256": "532e80b60b5ea27d79c1722b067bc1f34cde4cda344b17633ab5da12b1ca89f0",
+  "new_texts": 26,
+  "new_English_section_checks": 12,
+  "new_partial_Latin_working_copies": 12,
+  "new_partial_source_extracts": 2,
+  "new_media": 6,
+  "new_native_character_transcriptions": 0,
+  "new_sources": 0,
+  "new_captures": 0,
+  "new_objects": 0,
+  "new_identity_decisions": 0,
+  "new_claims": 0,
+  "new_identifiers": 0,
+  "new_rights_approvals": 0,
+  "unchanged_prior_current_checks": 2322,
+  "frozen_cases": 249,
+  "frozen_linked": 35,
+  "frozen_unlinked": 214,
+  "complete_cases_claimed": 0,
+  "miri_resolved": 21,
+  "miri_remaining": 34,
+  "new_acquisition_requests": 0,
+  "allowance_resets_verified_used": 0,
+  "review_manifests": [
+    {
+      "command": "ingest candidate",
+      "path": "data/private/manifests/SD34_161_readings_2026-10-04.jsonl",
+      "sha256": "a2d4fa4eb66d9a8907574d4b5431a880f254337c506823658d1ee9f217445e79"
+    },
+    {
+      "command": "ingest-proofreading",
+      "path": "data/private/manifests/SD34_161_proofreading_2026-10-04.json",
+      "sha256": "cc0a0db3e5c912179c6f79429c09170dee0ae4abd0db145eee06109854239033"
+    }
+  ],
+  "validation": {
+    "python_tests": 477,
+    "node_tests": 71,
+    "total_tests": 548,
+    "reader_checks": "8/8",
+    "all39trial_production_tables_exact": true,
+    "all_prior_rows_unchanged": true,
+    "all_memberships_unchanged": true,
+    "all2322prior_current_checks_unchanged": true,
+    "all26current_source_units_verified": true,
+    "all3063private_texts_verified": true,
+    "all2455media_assignments_verified": true,
+    "all1544local_image_hashes_verified": true,
+    "all119capture_bytes_and_assignments_verified": true,
+    "all994sources_verified": true,
+    "all1929identity_memberships_verified": true,
+    "all249attempt_histories_unchanged": true,
+    "current_inventory_units_verified": true,
+    "miri21resolved34remaining_old_requests_retained": true,
+    "five_complete_source_pages_hashbound_viewed": true,
+    "ten_crops_viewed_and_pixel_exact": true,
+    "six_media_derivatives_byte_exact": true,
+    "one_actual_reader_route_and_two_screenshots": true,
+    "sqlite_integrity_and_foreignkeys_valid": true,
+    "no_new_native_script_or_identifier_identity_decision": true,
+    "DISC004_and_task_statuses_preserved": true,
+    "reports_regenerated": 7
+  },
+  "limits": "Only bounded supplied English sections source-checked. Latin inferior points and letterforms require exact further collation; Latin working copies explicitly partial, not original-script or independent clay recovery. Two source extracts do not capture full introduction/notes. Source eleven/twelve count discrepancy preserved. Object outside frozen cohort, no fabricated new case attempt. No push/deploy/purchase/outbound message/reset/Waterman retry.",
+  "diagnostics": "Read-only table-name guess recovered from actual schema. Nonfatal Poppler font-cache warnings; complete source pages and high controls inspected legible. Initial high crops clipped left edge, widened before capture. Local intake script syntax spacing repaired before any transaction; production succeeded.",
+  "source_evidence": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/source-evidence.json",
+    "sha256": "81e6533c3e2b6f36c65af469f9f3e7d6e68d022ce73a7c76092175e681e95152"
+  },
+  "unit_inventory": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/current-unit-inventory.json",
+    "sha256": "f0d1a4c9524da179733886b061e7d7ea8625ccf6cca16d38151a7ab25d499516"
+  },
+  "intake_verification": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/intake-verification.json",
+    "sha256": "884e3b89c63f630f4207eb3133dbd45141d3b4af90c7e64cc8e278b7dc7aeac7"
+  },
+  "media_derivatives": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/media-derivatives.json",
+    "sha256": "c2c16afbda5015cc896e7e63a5d78a5d1c856acae53faebe4486658dd0fac059"
+  },
+  "campaign_index": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/campaign_case_progress_checkpoint161.json",
+    "sha256": "f48ce7e2c4aaa4a30214f5ca1e04c607167138b068e95de6b10c40d87b8a7901"
+  },
+  "case_availability_audit": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/case-availability-audit.json",
+    "sha256": "53c3f9e40039a6ba5909321011381fbca85a89cdf6f80805e96e0734edd1047c"
+  },
+  "held_pdf_inventory": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/held_pdf_inventory_checkpoint161.json",
+    "sha256": "56a05387cf9c456a1d95cb92cc7f6af400abc0a468fd836118a6941b35c27607"
+  },
+  "non_pdf_holdings": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/non_pdf_holdings_checkpoint161.json",
+    "sha256": "733af11631d4e22faf1fdd952bb79c15acbc9fa9b0d13aedbd768b7a30de7fa7"
+  },
+  "ui_verification": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/ui-verification.json",
+    "sha256": "7981a1b07eda2df5348baa3ab8fa8951fa41964a51a980437c11ea828ddef40e"
+  },
+  "pixel_verification": {
+    "path": "data/private/research-work/SD34-161-2026-10-04/pixel-verification.json",
+    "sha256": "fad0a01716a0bd32942b3b2d04734d9e9911227beda744163fb9497b80dba830"
+  },
+  "closed_at": "2026-10-05T00:10:21.167378+00:00",
+  "private_checkpoint": {
+    "path": "data/private/research-work/goal-campaign-2026-10-01/checkpoints/0161_sd34_supplied_editions.json",
+    "sha256": "773f5c7acb65cf34bf319d97f9ffa2e585eeac8844951d4157a2e0f00ce72865"
+  }
+}

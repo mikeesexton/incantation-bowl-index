@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-04T23:49:47.182490+00:00",
+  "updated_at": "2026-10-05T00:06:14.590963+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1758,8 +1758,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/Relics160-2026-10-04/miri-queue-before.json",
-    "sha256": "4cafc33e002e07c86ea15e205c9a80c342e0817f149d0bcda3ce6ca718bd02e3"
+    "path": "data/private/research-work/SD34-161-2026-10-04/miri-queue-before.json",
+    "sha256": "fbe5a88dadd6f7df233aa167138b157580796d228887917b7c1d25a952665ffb"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2162,6 +2162,13 @@
     "receipt": "research/receipts/Relics160_original_editions_2026-10-04.json",
     "new_verified_acquisition_requests": 1,
     "supplied_reading_copies_checked": 4,
+    "no_redundant_held_article_request": true
+  },
+  "checkpoint161_held_editions": {
+    "receipt": "research/receipts/SD34_161_original_edition_2026-10-04.json",
+    "new_verified_acquisition_requests": 0,
+    "supplied_English_sections_checked": 12,
+    "Latin_working_sections_partial": 12,
     "no_redundant_held_article_request": true
   }
 }

@@ -1,6 +1,6 @@
 # Source proofreading progress
 
-Generated 2026-10-04 from the local corpus and current append-only proofreading reviews.
+Generated 2026-10-05 from the local corpus and current append-only proofreading reviews.
 This report contains counts and source titles only. The private row-level queue, including text IDs and locators, is `data/private/proofreading_inventory.csv`.
 
 A completed review means a normalized reading text was compared with its source pages or a quoted passage in a retained HTML capture. Checking a catalogue quotation verifies its reproduction, not its reading of the inscription or completeness as an edition. A review does not resolve scholarly uncertainty or grant public reuse. “Unreviewed” means no current review is in the ledger; some rows were manually keyed or checked by another process.
@@ -8,17 +8,17 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 2123 | 156 | 1 | 2280 | 93.1% |
-| Other stored text (mostly source extracts and summaries) | 5 | 38 | 714 | 757 | 0.7% |
-| All stored text | 2128 | 194 | 715 | 3037 | 70.1% |
+| Edition text (translation, transcription, transliteration) | 2135 | 168 | 1 | 2304 | 92.7% |
+| Other stored text (mostly source extracts and summaries) | 5 | 40 | 714 | 759 | 0.7% |
+| All stored text | 2140 | 208 | 715 | 3063 | 69.9% |
 
 ## Edition text by type
 
 | Type | Checked | Partial | Unreviewed | Total |
 |---|---:|---:|---:|---:|
-| translation | 1080 | 41 | 1 | 1122 |
+| translation | 1092 | 41 | 1 | 1134 |
 | transcription | 721 | 56 | 0 | 777 |
-| transliteration | 322 | 59 | 0 | 381 |
+| transliteration | 322 | 71 | 0 | 393 |
 
 ## Edition text by source
 
@@ -60,6 +60,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | ‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls (`SRC-A06D3C4C7CDF`) | 15 | 2 | 0 | 17 |
 | ‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164) (`SRC-A08F75BDD59C`) | 7 | 0 | 0 | 7 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 1 | 0 | 2 |
+| ‘Bring to the Gates … upon a Good Smell and upon Good Fragrances’: An Aramaic Incantation Bowl for Success in Business (`SRC-A84A167A5779`) | 12 | 12 | 0 | 24 |
 | Who Wrote the Incantation Bowls? (`SRC-A90AB34CA3FE`) | 2 | 0 | 0 | 2 |
 | A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum (`SRC-ABUDRAHAM2023-MIAMI`) | 14 | 1 | 0 | 15 |
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 1 | 0 | 0 | 1 |
