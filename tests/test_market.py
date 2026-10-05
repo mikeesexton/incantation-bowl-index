@@ -58,6 +58,21 @@ class MarketLedgerTests(unittest.TestCase):
         row = next(r for r in self.ledger()["listings"] if r["status"] == "sold")
         self.assertEqual(row["claims"][0]["value"], "US$28,200 at Christie's in 2000")
 
+    def test_agent_leads_join_private_ledger_with_read_only_match_pointers(self):
+        directory = self.root / "market-agent/leads"
+        directory.mkdir(parents=True)
+        lead = {"url": "https://example.org/Apollo lot 1419", "house": "Apollo",
+                "lot_number": "1419", "title": "Incantation bowl", "description": "Bowl",
+                "source_monitor_id": "agent:email", "platform_lot_id": "123",
+                "observed_at": "2026-10-05T00:00:00Z", "status": "open"}
+        (directory / "first.jsonl").write_text(json.dumps(lead) + "\n")
+        before = self.conn.total_changes
+        ledger = market_ledger(self.conn, monitor_dir=self.root / "market")
+        self.assertEqual(self.conn.total_changes, before)
+        self.assertEqual(len(ledger["monitor_leads"]), 1)
+        self.assertEqual(ledger["monitor_leads"][0]["possible_match"]["basis"], "same URL")
+        self.assertEqual(json.loads((directory / "first.jsonl").read_text()), lead)
+
     def test_repeat_needs_two_occasions_not_two_pages(self):
         histories = self.ledger()["repeat_identities"]
         self.assertEqual(len(histories), 1)

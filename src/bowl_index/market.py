@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .identity import identity_rows
-from .market_monitor import monitor_leads
+from .market_monitor import monitor_leads, known_listing_index, possible_match
 
 
 MARKET_SOURCE_TYPES = ("auction_record", "dealer_record")
@@ -241,6 +241,10 @@ def market_ledger(conn, today=None, monitor_dir=None):
     listings = market_listings(conn, today, identities)
     histories = identity_histories(conn, listings, identities)
     gaps = market_gaps(conn, listings)
+    unreviewed = monitor_leads(monitor_dir) if monitor_dir else []
+    index = known_listing_index({"listings": listings})
+    for lead in unreviewed:
+        lead["possible_match"] = possible_match(lead, index)
     return {
         "schema_version": 1,
         "audience": "Mike alone",
@@ -249,7 +253,7 @@ def market_ledger(conn, today=None, monitor_dir=None):
         "listings": listings,
         "repeat_identities": histories,
         "gaps": gaps,
-        "monitor_leads": monitor_leads(monitor_dir) if monitor_dir else [],
+        "monitor_leads": unreviewed,
     }
 
 

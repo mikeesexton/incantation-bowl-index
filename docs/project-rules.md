@@ -455,3 +455,28 @@ Runtime-only audit deliveries and recording Mike's audit responses do not edit
 the repository or corpus, so they do not require a new task-log entry, state
 stamp, report regeneration, or commit on each reminder. Implementation changes
 and corpus corrections remain full working sessions under §2.
+
+
+## 6. Mike’s private auction monitoring runtime
+
+Mike requested recurring agentic auction monitoring on 2026-10-04 (DISC-004).
+The scheduled market pass described in [market_agent_pass.md](market_agent_pass.md)
+is authorized to collect the reviewed public pages, process locally deposited
+auction-alert emails and append evidence-bound leads, listing observations and
+run receipts under `data/private/monitoring/`. The existing scripted monitor
+opens the corpus read-only without migrations. These are candidate market
+appearances, never an automatic count of distinct physical bowls or proof of
+looting, authenticity, lawful ownership or lawful export.
+
+Runtime-only passes do not edit tracked files or the corpus, and therefore do
+not require task claims, task-log entries, state stamps, report regeneration or
+commits. Implementation changes and any subsequent corpus intake remain full
+sessions under §2. No unattended ingest, identity decisions, rights decisions,
+account creation, bids, outbound messages, credential access, deployment or
+server startup. A Gmail connection is not yet configured; deposited emails are
+the only enabled alert channel. A website challenge, forbidden robots path or
+unreadable robots response is a coverage gap, never a reason to switch user
+agents, use a browser to evade the restriction or follow an unreviewed endpoint.
+The runtime must preserve UTC observation dates, source URLs, exact price
+wording, quantity and price-basis limitations, and hashes of its private
+evidence. Shared/public release still needs the existing review gates.

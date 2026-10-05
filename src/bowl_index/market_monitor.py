@@ -138,7 +138,12 @@ def _fetch(url, user_agent, timeout, max_bytes):
             return response.status, response.read(max_bytes + 1)[:max_bytes], None
     except urllib.error.HTTPError as error:
         location = error.headers.get("Location") if 300 <= error.code < 400 else None
-        return error.code, b"", urllib.parse.urljoin(url, location) if location else None
+        return error.code, error.read(max_bytes + 1)[:max_bytes], \
+            urllib.parse.urljoin(url, location) if location else None
+    except (urllib.error.URLError, TimeoutError):
+        # Preserve a failed request in the receipt; one endpoint must not erase
+        # the remaining pass. HTTP 0 denotes a transport failure, never absence.
+        return 0, b"", None
 
 
 def _robots_body(url, user_agent, fetch, timeout):
@@ -225,7 +230,7 @@ def run_market_monitor(config_path, destination, ledger=None, fetch=None, now=No
     receipt = {"schema_version": 1, "mode": "lead_only", "observed_at": observed_at,
                "registry_sha256": _sha256(Path(config_path).read_bytes()),
                "requests": [], "new_leads": 0, "corpus_writes": 0}
-    leads, first_request, robots = [], True, {}
+    leads, observations, first_request, robots = [], [], True, {}
     try:
         for source in config["sources"]:
             if not source.get("enabled"):
@@ -266,7 +271,15 @@ def run_market_monitor(config_path, destination, ledger=None, fetch=None, now=No
                 for lot in relevant:
                     key = "%s/%s" % (source["id"], lot["platform_lot_id"])
                     seen = state["lots"].get(key)
+                    snapshot = {name: lot.get(name) for name in (
+                        "url", "title", "house", "lot_number", "teaser", "estimate", "sale_date_text")}
+                    if not seen or seen.get("snapshot") != snapshot:
+                        observations.append({"lot": key, "observed_at": observed_at,
+                                             "raw_sha256": digest, "source_url": url,
+                                             "previous": seen.get("snapshot") if seen else None,
+                                             "current": snapshot})
                     if seen:
+                        seen["snapshot"] = snapshot
                         seen["last_seen"] = observed_at
                         seen.setdefault("terms", [])
                         if term not in seen["terms"]:
@@ -275,6 +288,7 @@ def run_market_monitor(config_path, destination, ledger=None, fetch=None, now=No
                     match = possible_match(lot, index)
                     state["lots"][key] = {"first_seen": observed_at, "last_seen": observed_at,
                                           "url": lot["url"], "terms": [term],
+                                          "snapshot": snapshot,
                                           "source_id": source["id"]}
                     leads.append({
                         "lead_type": "auction",
@@ -291,6 +305,7 @@ def run_market_monitor(config_path, destination, ledger=None, fetch=None, now=No
                                                "authenticity or rights decision was applied.",
                     })
         receipt["new_leads"] = len(leads)
+        receipt["listing_changes"] = len(observations)
         results = _check_results(config, state, destination, observed_at, fetch, robots,
                                  sleep, receipt, first_request)
         stamp = observed_at.replace(":", "").replace("-", "")
@@ -307,6 +322,11 @@ def run_market_monitor(config_path, destination, ledger=None, fetch=None, now=No
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n"
                                     for item in results), encoding="utf-8")
+        if observations:
+            path = destination / "observations" / (stamp + ".jsonl")
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n"
+                                    for item in observations), encoding="utf-8")
         return receipt
     finally:
         lock.unlink(missing_ok=True)
@@ -357,7 +377,6 @@ def _check_results(config, state, destination, observed_at, fetch, robots, sleep
         first_request = False
         check = {"lot": key, "url": lot["url"]}
         receipt["result_checks"].append(check)
-        lot["result_checks"] = lot.get("result_checks", 0) + 1
         url, body, status = lot["url"], b"", None
         for _ in range(3):
             allowed, why = _robots_for(url, robots, settings, fetch)
@@ -387,6 +406,7 @@ def _check_results(config, state, destination, observed_at, fetch, robots, sleep
         else:
             check["disposition"] = "error"
             continue
+        lot["result_checks"] = lot.get("result_checks", 0) + 1
         if parsed.get("sale_at"):
             lot["sale_at"], lot["sale_at_text"] = parsed["sale_at"], parsed["sale_at_text"]
         if lot.get("sale_at") and now >= _parse_time(lot["sale_at"]):
@@ -410,7 +430,7 @@ def _check_results(config, state, destination, observed_at, fetch, robots, sleep
     return results
 
 
-def monitor_leads(destination):
+def monitor_leads(destination, agent_dir=None):
     """Every lead the monitor has written, newest first, with its latest result state."""
     destination = Path(destination)
     state = _load_state(destination / "state.json")["lots"]
@@ -421,7 +441,21 @@ def monitor_leads(destination):
                 continue
             lead = json.loads(line)
             lot = state.get("%s/%s" % (lead["source_monitor_id"], lead["platform_lot_id"]), {})
+            lead.update(lot.get("snapshot") or {})
             lead["result"] = {name: lot.get(name) for name in (
                 "sale_at", "sale_at_text", "outcome", "hammer_text", "result_checked_at")}
             leads.append(lead)
+    agent_dir = Path(agent_dir) if agent_dir else destination.parent / "market-agent"
+    for path in sorted(agent_dir.glob("leads/*.jsonl"), reverse=True):
+        leads.extend(json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()
+                     if line.strip())
+    latest = {}
+    for path in sorted(agent_dir.glob("observations/*.jsonl")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                observation = json.loads(line)
+                latest[observation["url"]] = observation["current"]
+    for lead in leads:
+        lead.update(latest.get(lead["url"], {}))
+    leads.sort(key=lambda lead: lead["observed_at"], reverse=True)
     return leads

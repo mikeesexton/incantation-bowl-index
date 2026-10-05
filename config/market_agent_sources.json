@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-04",
+  "reviewed_by": "Codex (DISC-004, Mike requested recurring collection)",
+  "policy_evidence": "research/monitoring/market_platform_recon_2026-10-04.json",
+  "pages": [
+    {"id": "lot-tissimo", "house": null, "url": "https://www.lot-tissimo.com/de-de/search-results?searchTerm=incantation+bowl"},
+    {"id": "artemission-new", "house": "Artemission", "url": "https://www.artemission.com/newadditions.aspx"},
+    {"id": "artemission-near-east", "house": "Artemission", "url": "https://www.artemission.com/viewitems.aspx?CategoryID=1"},
+    {"id": "bacher", "house": "Christoph Bacher", "url": "https://www.cb-gallery.com/en/category/alterorient/"},
+    {"id": "hixenbaugh", "house": "Hixenbaugh Ancient Art", "url": "https://hixenbaugh.net/product-category/near-eastern-art/"},
+    {"id": "ostracon", "house": "Ostracon Ancient Art", "url": "https://www.ostracon.ch/homeCatalogueNearEastern.html"}
+  ],
+  "limits": "First pages only; no automatic pagination or item-page requests. Ostracon has image-only links, so absence of a keyword is not a negative finding. Blocked platforms require locally deposited alert emails; no Gmail connection is configured."
+}

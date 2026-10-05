@@ -35,6 +35,8 @@ PYTHONPATH=src .venv/bin/python scripts/run_market_monitor.py
 - Writes run receipts, raw pages by hash, `state.json` and
   `leads/<timestamp>.jsonl` under `data/private/monitoring/market/`.
   `touch data/private/monitoring/market/DISABLED` stops it.
+- Listing changes retain previous/current source wording and raw-page hashes in
+  `observations/<timestamp>.jsonl`; the original lead is preserved.
 - A lot becomes a lead once, and only if its own title or teaser names
   incantation, devil/demon-trap, Aramaic, Mandaic, Syriac or magic bowls.
 - **Results.** Each lead's lot page is read once to learn its exact sale time,
@@ -74,7 +76,10 @@ To pause without unloading: `touch data/private/monitoring/market/DISABLED`.
 
 Platforms the monitor cannot read (robots.txt, terms, bot challenges or
 client-side rendering) are covered by the recon and proposed alert-email
-design in [`market_agent_pass.md`](market_agent_pass.md). It is not enabled yet.
+workflow in [`market_agent_pass.md`](market_agent_pass.md). The Codex agent pass runs
+every six hours over additional permitted pages and deposited alert emails.
+Gmail alerts are not connected yet. Its evidence-bound leads are included in
+the private Market view; runtime passes never ingest them into the corpus.
 
 The monitor only collects. Review of its leads and results stays with Mike, or
 with Claude when Mike asks.

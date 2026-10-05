@@ -98,6 +98,13 @@ class MarketMonitorTests(unittest.TestCase):
             self.assertEqual({r["disposition"] for r in receipt["requests"]}, {"robots_disallowed"})
             self.assertTrue(all(url.endswith("/robots.txt") for url in fetch.calls))
 
+    def test_initial_lot_transport_failure_is_retried_next_pass(self):
+        failed = fetcher(lots={LOT_URL: (0, b"", None)})
+        first = run_market_monitor(self.config, self.out, fetch=failed, now="2026-10-04T06:00:00Z")
+        self.assertEqual(first["result_checks"][0]["disposition"], "error")
+        retry = run_market_monitor(self.config, self.out, fetch=fetcher(), now="2026-10-04T07:00:00Z")
+        self.assertEqual(retry["result_checks"][0]["outcome"], "pending")
+
     def test_a_recorded_lot_is_flagged_not_merged(self):
         ledger = {"listings": [{"identity_id": "IDENT-1", "object_id": "IBI-1",
                                 "house": "Apollo Art Auctions", "locator": "lot 1419, object 1 (left)",
@@ -124,6 +131,19 @@ class MarketMonitorTests(unittest.TestCase):
     def test_a_short_page_is_flagged(self):
         _, truncated = parse_the_saleroom("<div>75 item(s)</div>" + PAGE, "https://x/")
         self.assertTrue(truncated)
+
+    def test_estimate_change_is_retained_and_shown_without_a_second_lead(self):
+        run_market_monitor(self.config, self.out, fetch=fetcher(), now="2026-10-04T06:00:00Z")
+        changed = PAGE.replace("450", "500")
+        receipt = run_market_monitor(self.config, self.out, fetch=fetcher(page=changed),
+                                     now="2026-10-04T07:00:00Z")
+        self.assertEqual(receipt["new_leads"], 0)
+        self.assertEqual(receipt["listing_changes"], 1)
+        self.assertEqual(monitor_leads(self.out)[0]["estimate"], "500 - 900 GBP")
+        rows = [json.loads(line) for path in sorted((self.out / "observations").glob("*.jsonl"))
+                for line in path.read_text().splitlines()]
+        self.assertEqual(rows[-1]["previous"]["estimate"], "450 - 900 GBP")
+        self.assertEqual(rows[-1]["current"]["estimate"], "500 - 900 GBP")
 
     def test_lot_page_states(self):
         self.assertEqual(parse_the_saleroom_lot(lot_page().decode())["outcome"], "pending")
