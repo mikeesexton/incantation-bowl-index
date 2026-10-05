@@ -475,7 +475,10 @@ function marketBowl(row) {
 }
 
 function marketPrice(row) {
-  return escapeHtml(row.claims.filter(claim => claim.field.startsWith("sale_")).map(claim => claim.value).join("; ")) || "—";
+  const wording = row.claims.filter(claim => claim.field.startsWith("sale_")).map(claim => claim.value);
+  const result = row.result_observation;
+  if (result?.outcome === "sold" && result.hammer_text) wording.push(`Whole lot (${result.quantity_text}): ${result.hammer_text} hammer; ${result.price_basis.replace(/^hammer price as shown by the platform; /, "")}`);
+  return escapeHtml(wording.join("; ")) || "—";
 }
 
 function marketWhen(row) {
@@ -488,7 +491,7 @@ function marketRows(ledger, status) {
   if (!rows.length) return `<tr><td colspan="6" class="market-muted">No listings with this status.</td></tr>`;
   return rows.map(row => `<tr>
     <td class="market-when">${marketWhen(row)}</td><td>${escapeHtml(row.house || "—")}</td><td>${marketBowl(row)}</td>
-    <td class="market-status market-status-${escapeHtml(row.status)}">${escapeHtml(row.status_label)}</td>
+    <td class="market-status market-status-${escapeHtml(row.status)}">${escapeHtml(row.status_label)}${row.result_observation ? `<small class="market-muted">${externalLink(row.result_observation.url, "Result source")} · checked ${escapeHtml(row.result_observation.observed_at.slice(0,10))}</small>` : ""}</td>
     <td>${marketPrice(row)}</td><td>${externalLink(row.url, row.locator || "Source")}</td></tr>`).join("");
 }
 
@@ -504,12 +507,13 @@ function marketResult(result) {
   return ` · <strong class="market-outcome market-outcome-${escapeHtml(result.outcome)}">${escapeHtml(label)}</strong>${price}`;
 }
 
-function marketLeads(leads) {
+function marketLeads(leads, listings = []) {
   if (!leads.length) return "";
   return `<section class="market-section"><h2>From the market watch</h2>
     <p class="market-muted">Source checks and possible bowl matches are handled in your scheduled morning chat.</p><ul class="market-list">${leads.map(lead => {
       const match = lead.possible_match;
-      const note = match && match.identity_id ? ` <span class="market-muted">· possibly <a href="#/explore/${encodeURIComponent(match.identity_id)}">${escapeHtml(match.identity_id)}</a> (${escapeHtml(match.basis)})</span>` : "";
+      const linkedCount = listings.filter(r => r.result_observation?.url === lead.url).length;
+      const note = linkedCount ? ` <span class="market-muted">· result linked to ${linkedCount} recorded lot components</span>` : match && match.identity_id ? ` <span class="market-muted">· possibly <a href="#/explore/${encodeURIComponent(match.identity_id)}">${escapeHtml(match.identity_id)}</a> (${escapeHtml(match.basis)})</span>` : "";
       return `<li>${externalLink(lead.url, lead.description)} · ${escapeHtml(lead.result?.sale_at_text || lead.sale_date_text || "date not shown")} · estimate ${escapeHtml(lead.estimate || "not shown")}${marketResult(lead.result)} <span class="market-muted">· seen ${escapeHtml(lead.observed_at.slice(0, 10))}</span>${note}</li>`;
     }).join("")}</ul></section>`;
 }
@@ -532,7 +536,7 @@ async function renderMarket() {
   view.innerHTML = `<div class="workspace-head"><div><span class="eyebrow">Private to Mike</span><h1 id="market-title">Market</h1></div>
       <label class="compact-select">Status<select id="market-status"><option value="">All listings</option>${statuses.filter(s => by[s]).map(s => `<option value="${s}">${escapeHtml(labels[s] || humanize(s))} (${by[s]})</option>`).join("")}</select></label></div>
     <p class="market-lede">${m.listings} listings of ${m.identities} bowls from ${m.houses} houses and dealers. ${by.upcoming || 0} upcoming; ${sold} recorded as sold, ${by.sold || 0} of them with a price. Prices keep each source's wording and currency. A recorded sale does not establish lawful ownership, export history or authenticity.</p>
-    ${marketLeads(ledger.monitor_leads)}
+    ${marketLeads(ledger.monitor_leads, ledger.listings)}
     <section class="market-section market-intelligence" id="market-intelligence"></section>
     <section class="market-section"><h2>Listings, newest first</h2><div class="market-table-wrap"><table class="market-table">
       <thead><tr><th>Date</th><th>House</th><th>Bowl</th><th>Status</th><th>Price wording</th><th>Lot or record</th></tr></thead>

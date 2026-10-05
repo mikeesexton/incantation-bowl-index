@@ -25,7 +25,11 @@ and are not reasons to make Mike inspect every row. On correction, use the
 existing private extraction-review command first, then compare the final version.
 
 Run `PYTHONPATH=src .venv/bin/python scripts/run_market_intake.py report`.
-Read its returned exact saved JSON/Markdown packet. Give Mike a concise morning
+Read its returned exact saved JSON/Markdown packet. Inspect market_result_followups
+and market_result_link_issues: compare each exact auction occasion under
+docs/market_chat_checks.md, record valid result links, then regenerate the final
+packet. A result left only in the monitor panel is unfinished source work.
+Group hammer prices apply to the whole lot, never each bowl. Give Mike a concise morning
 summary: new relevant lots with house, sale date, original estimate/asking price
 and link; updated results with price basis; match candidates awaiting his review;
 provenance flags; source-check progress, unique excluded counts and failed coverage. Mark

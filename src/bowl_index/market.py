@@ -31,7 +31,7 @@ STATUS_LABELS = {
     "sold": "Sold, price recorded",
     "sold_no_price": "Recorded as sold, no price",
     "unsold": "Unsold",
-    "offered": "Offered",
+    "offered": "Offer recorded; outcome unknown",
     "listing_only": "Listing, no offer or sale recorded",
 }
 
@@ -239,6 +239,8 @@ def market_ledger(conn, today=None, monitor_dir=None):
     """The whole ledger. ``monitor_dir`` adds unreviewed leads from the listing monitor."""
     identities = _identity_index(conn)
     listings = market_listings(conn, today, identities)
+    from .market_results import reconcile_results
+    reconciliation = reconcile_results(monitor_dir, listings) if monitor_dir else {"issues": [], "followups": []}
     histories = identity_histories(conn, listings, identities)
     gaps = market_gaps(conn, listings)
     unreviewed = monitor_leads(monitor_dir) if monitor_dir else []
@@ -261,6 +263,8 @@ def market_ledger(conn, today=None, monitor_dir=None):
         "gaps": gaps,
         "monitor_leads": unreviewed,
         "intelligence": intelligence,
+        "result_link_issues": reconciliation["issues"],
+        "result_followups": reconciliation["followups"],
     }
 
 
@@ -268,9 +272,14 @@ def _cell(value):
     return (value or "—").replace("|", "\\|").replace("\n", " ")
 
 
-def _price(row):
+def listing_price(row):
     wanted = [c for c in row["claims"] if c["field"].startswith("sale_")]
-    return "; ".join(c["value"] for c in wanted) or "—"
+    wording = [c["value"] for c in wanted]
+    result = row.get("result_observation")
+    if result and result["outcome"] == "sold" and result.get("hammer_text"):
+        wording.append("Whole lot (%s): %s hammer; %s" % (
+            result["quantity_text"], result["hammer_text"], result["price_basis"].removeprefix("hammer price as shown by the platform; ")))
+    return "; ".join(wording) or "—"
 
 
 def write_market_report(conn, destination, today=None, monitor_dir=None):
@@ -310,7 +319,7 @@ def write_market_report(conn, destination, today=None, monitor_dir=None):
             _cell(r["date"] or ("seen " + r["observed_at"][:10] if r["observed_at"] else None)),
             _cell(r["house"]), _cell((r["identity_id"] or r["object_id"]) + " " +
                                      (r["display_name"] or "")),
-            r["status_label"], _cell(_price(r)), _cell(r["locator"])))
+            r["status_label"], _cell(listing_price(r)), _cell(r["locator"])))
     L += ["", "## Bowls on the market more than once", ""]
     if not ledger["repeat_identities"]:
         L.append("None yet.")
@@ -321,11 +330,12 @@ def write_market_report(conn, destination, today=None, monitor_dir=None):
                 e["start_date"] or "undated", e["event_type"], e["actor"] or e["place"] or "—",
                 _cell(e["details"])))
         L.append("")
-    L += ["## New listings from the monitor, awaiting review", ""]
+    L += ["## From the market watch", ""]
     if not ledger["monitor_leads"]:
         L.append("None.")
     for lead in ledger["monitor_leads"]:
         match = lead.get("possible_match")
+        linked_count = sum(r.get("result_observation", {}).get("url") == lead["url"] for r in ledger["listings"])
         result = lead.get("result") or {}
         outcome = ""
         if result.get("outcome"):
@@ -336,6 +346,7 @@ def write_market_report(conn, destination, today=None, monitor_dir=None):
             lead["description"], result.get("sale_at_text") or lead.get("sale_date_text")
             or "date not shown", lead.get("estimate") or "not shown", outcome,
             lead["observed_at"][:10],
+            " · result linked to %d recorded lot components" % linked_count if linked_count else
             " · possibly %s (%s)" % (match["identity_id"] or match["object_id"], match["basis"])
             if match else "", lead["url"]))
     L.append("")

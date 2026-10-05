@@ -182,3 +182,15 @@ and apply it with `ibi ingest`. A monitor result becomes a `sale_result` claim o
 through such a manifest, citing the lot page and the result's raw-page hash. Link
 it to an existing bowl only through the identity review workflow
 (`docs/research_protocol.md`). The next ledger build picks it up.
+
+## Result reconciliation (2026-10-05)
+
+The main table now combines recorded offers with separately source-compared
+monitor results for the exact auction occasion. This fixes Apollo 4 October 2026
+lot1419: sold, 300 GBP hammer for all three bowls, excluding buyer's premium.
+The three component records retain their original offers; no individual price
+is invented. A private fingerprint-bound result-link manifest joins the reported
+outcome to display, filters, counts and gap lists without corpus edits or physical
+identity decisions. Unlinked results and stale links appear in the daily packet
+for the agent to compare; see [market_chat_checks.md](market_chat_checks.md).
+Other historical offers explicitly say their outcome is unknown.

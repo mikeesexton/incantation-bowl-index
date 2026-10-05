@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "workstream": "DISC-004",
+  "authorized": "Mike identified stale offered display and asked to update listings/processes",
+  "corpus_writes": 0,
+  "corpus_digest": "707d97090601a45c2f09492e02cdb2dce4af0bc72e5f23fa0ba0faf95e415a5a",
+  "original_offer_rows_and_claims_retained": true,
+  "email_intake_observation_runs_unchanged": true,
+  "implementation_sha256": {
+    "src/bowl_index/market_results.py": "08c20ecc7d889de141c404b961c918413087756614f2acb9611fbe7aa28920da",
+    "src/bowl_index/market.py": "1e1c425eb8ab4299b32877c1fac927724c5c655963720763719a7a9ab73f08d8",
+    "src/bowl_index/market_intake.py": "cc8e70c01864c7bebe7438fa3c2616cfb7e021371b3134b59f2f5a12683ba082",
+    "scripts/reconcile_market_results.py": "80b31a20ffa3b78873defb4bd4224722ee92d3f7d1dea0ee189a42358eabb1c9",
+    "scripts/build_mike_access.py": "2a0b3cf45159473431cabfe304ae164688d4c073b00021495e5a12e12d921cce",
+    "web/app.js": "524d1972063ea72ffaddf5c6a2d21e457d9feb416d8bb3757783fcee1ee57931",
+    "web/styles.css": "2389a403cdcd8a7470618e73845cb61f60336ec3243ab9707ac5ccdae4d1e34b",
+    "tests/test_market_results.py": "a71bca71e5613676f30eebe823cd9caac93a94db62750d5c8f6a3dcd47636fa1",
+    "docs/market_chat_checks.md": "09f6e0426a9e9ab8cbd3a2bad730b4814641bba5e24268cb1d7b26297dc72817",
+    "docs/project-rules.md": "5e91979f93f7c450c6ccb5a6bfebf3d28eef7a769e8bb0a71bfa38fece261721",
+    "research/monitoring/apollo_1419_result_link_2026-10-05.json": "97c7adc206fbfd6091cfee576e484d193c518eca78b6f9e8200b6c71d9e66600"
+  },
+  "result": {
+    "house": "Apollo Art Auctions",
+    "lot": "1419",
+    "sale_date": "2026-10-04",
+    "outcome": "sold",
+    "hammer": "300 GBP",
+    "scope": "whole lot of three bowls, not per component",
+    "basis": "excludes buyer's premium",
+    "original_archive_sha256": "9582e03037501e8ad18db034e0758862b009f99fac2449cf266846a26a142e79",
+    "live_recheck_utc": "2026-10-05T16:33:35Z",
+    "live_archive_sha256": "7adf95806e9dd9a65e130bf0913158e46277fa091ae8c1e01c201f33e8991f3f",
+    "fresh_robots_allowed": true,
+    "linked_components": 3,
+    "comparison_manifest": "research/monitoring/apollo_1419_result_link_2026-10-05.json",
+    "private_receipt": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/monitoring/market/result-links/000000000001-dd783cd9dc3c.json",
+    "receipt_sha256": "bb35d9409c1cd0865837b1a1d17939a7a74e5e29a8da19c209fe3876dc98dbb6",
+    "exact_replay_no_op": true
+  },
+  "validation": {
+    "python_tests": 519,
+    "javascript_tests": 80,
+    "private_build_audits": "8/8",
+    "snapshot_id": "ba2c3b6aa928bd8c89e86261a859c35b088e538e057ff4218db6f636b86fe8bb",
+    "metrics": {
+      "listings": 53,
+      "identities": 46,
+      "houses": 29,
+      "identities_on_market_more_than_once": 3,
+      "by_status": {
+        "listing_only": 8,
+        "offered": 24,
+        "sold": 11,
+        "sold_no_price": 9,
+        "unsold": 1
+      },
+      "undated": 24,
+      "sold_without_price": 9,
+      "unlinked_market_appearances": 0,
+      "open_auction_leads": 1
+    },
+    "current_result_journal_entries": 1,
+    "all_saved_result_entries_reconciled": true,
+    "actual_sold_filter_rows": 11,
+    "actual_sold_filter_apollo_components": 3,
+    "actual_offered_filter_rows": 24,
+    "actual_offered_filter_apollo_components": 0,
+    "main_table_source_links_and_whole_lot_prices_inspected": true,
+    "static_page_three_results_verified": true,
+    "sqlite_integrity_and_foreign_keys_valid": true,
+    "preview": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/monitoring/market/result-verification/market-result-preview-2026-10-05.png",
+    "preview_sha256": "65a666434297962a94288e096aedce064bd8a8d3121798b36ce023bbf11f4d06",
+    "agent_tabs_closed": true,
+    "reader_restarted_existing_port": 8765,
+    "reader_running_pid": 48117
+  },
+  "schedules": [
+    {
+      "id": "morning-bowl-auction-digest",
+      "status": "ACTIVE",
+      "cadence_preserved": "RRULE:FREQ=DAILY;BYHOUR=7;BYMINUTE=0;BYSECOND=0",
+      "target_chat": "01a10c43-883d-7fd2-bd45-3c4d87626c61",
+      "config_sha256": "73ea87210e26b3224306229584a45f520c62ec88d578459ddec349397c26cfa0"
+    },
+    {
+      "id": "incantation-bowl-auction-watch",
+      "status": "ACTIVE",
+      "cadence_preserved": "RRULE:FREQ=MINUTELY;INTERVAL=360",
+      "target_chat": "01a109df-21e7-7be0-9c0c-ee87a74a0766",
+      "config_sha256": "4b0930abd83f3c937866a885fd43948679c48ee7dbaf2a756ad12f2b44ed292b"
+    }
+  ],
+  "limits": [
+    "Only the one existing saved monitor result was reconciled; historical offers were not all re-fetched live.",
+    "Current result-link validator supports the-saleroom closed-lot receipts; other sources remain their existing intake/operational records.",
+    "Result links compare a source auction occasion, never physical identity across lots or an automatic corpus merge.",
+    "No deployment, public export, outgoing message or push."
+  ]
+}

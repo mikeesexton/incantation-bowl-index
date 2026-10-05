@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex, interactive source comparison requested by Mike",
+  "reviewed_at": "2026-10-05T16:33:35Z",
+  "result_fingerprint": "cbdce8ef58d01283dae3bc8dde27433b864b9ab0c8afc8b3f8ba75d335115d93",
+  "quantity_text": "three bowls",
+  "rationale": "Compared recorded Apollo Art Auctions 4 October 2026 lot1419 citation, component locators and three-bowl offer details with the archived the-saleroom page: same full house, date, lot number and ordered three-bowl description. Current allowed page rechecked on 5 October also shows sold/300GBP. This links the auction occasion across platforms, not physical identities across different lots. Hammer is the whole three-bowl lot, never an allocated individual price. Original corpus offers and claims retained.",
+  "verification": {
+    "url": "https://www.the-saleroom.com/en-gb/auction-catalogues/apollo-art/catalogue-id-apollo-art10102/lot-370508bd-c7d7-4630-8ee2-b4b20119de4c",
+    "raw_sha256": "7adf95806e9dd9a65e130bf0913158e46277fa091ae8c1e01c201f33e8991f3f"
+  },
+  "listings": [
+    {
+      "object_id": "IBI-40A1A8922ED8",
+      "source_id": "SRC-62A4522F2585",
+      "event_id": "EVT-182260B89688",
+      "listing_fingerprint": "333a78c57807a26e10c82f5a85a2aea2743a77a3a168c7047c0b48f76ff4b0b3"
+    },
+    {
+      "object_id": "IBI-1276CBE352E3",
+      "source_id": "SRC-62A4522F2585",
+      "event_id": "EVT-A62417A5EE08",
+      "listing_fingerprint": "c0a807783bad0568680d3704710b393a8c867aad925b3a954297c7c9763e3833"
+    },
+    {
+      "object_id": "IBI-104CE733FB6E",
+      "source_id": "SRC-62A4522F2585",
+      "event_id": "EVT-421F3D6C92C1",
+      "listing_fingerprint": "49f5dbfab821e4c913c75f75199efee9e62335f0a2ca47460f8d10299e5a936c"
+    }
+  ]
+}

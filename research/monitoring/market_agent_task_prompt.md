@@ -82,3 +82,8 @@ bids, purchases, identity/legal/authenticity/rights decisions, publication,
 deployment, server startup, database writes or access-control bypass. Local Codex
 scheduled work requires the computer and desktop app running. Back-catalog intake
 is not enabled.
+
+Also inspect daily packet market_result_followups/market_result_link_issues.
+Follow docs/market_chat_checks.md to compare exact house/date/lot/source scope
+and record valid private result links before final reporting. Keep ambiguous
+occasions unresolved; group hammer prices belong to the whole lot.

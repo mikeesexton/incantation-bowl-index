@@ -862,6 +862,8 @@ def daily_report(root, conn=None, now=None, acknowledge=False):
         for r in all_runs:
             for c in r.get("coverage", []):
                 coverage[c["url"]] = c
+        from .market import market_ledger
+        market = market_ledger(conn, monitor_dir=root.parent.parent / "market") if conn is not None else {}
         packet = {"schema_version": 1, "audience": "Mike alone", "day": day, "generated_at": now,
                   "baseline": not bool(acknowledged), "run_hashes": [fingerprint(r) for r in pending],
                   "external_hashes": external_hashes, "external_updates": external_updates,
@@ -878,6 +880,8 @@ def daily_report(root, conn=None, now=None, acknowledge=False):
                   "counts": snapshot["counts"], "listing_count": len(latest),
                   "unique_excluded_items": len({x.get("url") or fingerprint(x) for x in snapshot["dispositions"] if x["disposition"] == "adjacent_excluded"}),
                   "errors": [e for r in pending for e in r.get("errors", [])],
+                  "market_result_followups": market.get("result_followups", []),
+                  "market_result_link_issues": market.get("result_link_issues", []),
                   "coverage": list(coverage.values()), "corpus_writes": 0,
                   "mailbox_coverage": max((json.loads(p.read_text()) for p in (root / "deposits").glob("*.json")), key=lambda r: r["observed_at"], default=None),
                   "message": "No new listings or listing changes." if not updated and not any(external_updates.values()) else "%d new email listing leads; %d changed email listings; %d other new leads; %d other changes/results." % (len(new_ids), len(change_ids), len(external_updates["leads"]), len(external_updates["observations"])+len(external_updates["results"])),
@@ -901,6 +905,9 @@ def daily_report(root, conn=None, now=None, acknowledge=False):
                 lines.append("")
         lines += ["## Scheduled source checks", "", "Routine extraction checks run in chat; identity suggestions remain Mike's decisions.", ""]
         lines.extend("- %s: %s" % (x["listing_id"], (x["check"] or {}).get("status", "scheduled")) for x in packet["source_checks"])
+        lines += ["", "## Auction results needing source links", ""]
+        lines.extend("- %s: %s" % (r["url"], r["reason"]) for r in packet["market_result_followups"])
+        lines.extend("- Retained link %s needs checking: %s" % (r["receipt"], r["reason"]) for r in packet["market_result_link_issues"])
         lines += ["", "## Dispositions", "", json.dumps(packet["counts"], ensure_ascii=False), "",
                   "%d unique adjacent/excluded item(s); counts above include quoted references." % packet["unique_excluded_items"], "",
                   "## Match candidates", ""]

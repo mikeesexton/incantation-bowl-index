@@ -22,7 +22,7 @@ from pathlib import Path
 from html import escape
 
 from bowl_index.db import PROJECT_ROOT
-from bowl_index.market import market_ledger
+from bowl_index.market import market_ledger, listing_price
 from bowl_index.private_captures import ARCHIVE_ROOT, capture_filename, capture_inventory, checked_capture_path
 from bowl_index.private_projection import PrivateResearchProjection, private_manifest
 from bowl_index.projection import PROJECTION_COLUMNS
@@ -340,6 +340,7 @@ MARKET_CSS = """
 .market th { font-weight: 600; color: var(--brownink-soft); white-space: nowrap; }
 .market td.when { white-space: nowrap; }
 .market .status { white-space: nowrap; }
+.market .status small { display: block; font-size: .75rem; margin-top: .3rem; }
 .market .status-upcoming { color: var(--lapis); font-weight: 600; }
 .market ul { padding-left: 1.2rem; margin: .2rem 0; }
 .market li { margin: .2rem 0; }
@@ -363,16 +364,23 @@ def market_page(ledger, generated_at):
         return "seen %s" % h(row["observed_at"][:10]) if row["observed_at"] else "—"
 
     def price(row):
-        return h("; ".join(c["value"] for c in row["claims"] if c["field"].startswith("sale_")))
+        return h(listing_price(row))
 
     def where(row):
         text = h(row["locator"])
         return '<a href="%s" rel="noreferrer">%s</a>' % (escape(row["url"]), text) if row["url"] else text
 
+    def status(row):
+        text = h(row['status_label'])
+        result = row.get('result_observation')
+        if result:
+            text += '<small class="muted"><a href="%s" rel="noreferrer">Result source</a> · checked %s</small>' % (escape(result['url']), h(result['observed_at'][:10]))
+        return text
+
     rows = "\n".join(
         '<tr><td class="when">%s</td><td>%s</td><td>%s</td>'
         '<td class="status status-%s">%s</td><td>%s</td><td>%s</td></tr>' % (
-            when(r), h(r["house"]), bowl(r), escape(r["status"]), h(r["status_label"]),
+            when(r), h(r["house"]), bowl(r), escape(r["status"]), status(r),
             price(r), where(r))
         for r in ledger["listings"])
     histories = "\n".join(
@@ -397,7 +405,7 @@ def market_page(ledger, generated_at):
                     m["by_status"].get("sold", 0) + m["by_status"].get("sold_no_price", 0),
                     m["by_status"].get("sold", 0)),
         rows=rows, histories=histories, no_price=no_price, leads=leads,
-        monitor=monitor_section(ledger["monitor_leads"], bowl_link=lambda key: escape(key)),
+        monitor=monitor_section(ledger["monitor_leads"], bowl_link=lambda key: escape(key), listings=ledger["listings"]),
         intelligence=json.dumps(ledger.get("intelligence", {}), ensure_ascii=False).replace("<", "\\u003c"),
         undated=m["undated"])
 
@@ -409,7 +417,7 @@ OUTCOME_LABELS = {
 }
 
 
-def monitor_section(leads, bowl_link):
+def monitor_section(leads, bowl_link, listings=()):
     """Unreviewed lots from the listing monitor, shown above the ledger."""
     if not leads:
         return ""
@@ -418,7 +426,10 @@ def monitor_section(leads, bowl_link):
     for lead in leads:
         match = lead.get("possible_match")
         note = ""
-        if match and match.get("identity_id"):
+        linked_count = sum(r.get("result_observation", {}).get("url") == lead["url"] for r in listings)
+        if linked_count:
+            note = " · result linked to %d recorded lot components" % linked_count
+        elif match and match.get("identity_id"):
             note = ' <span class="muted">· possibly <a href="index.html#/explore/%s">%s</a> (%s)</span>' % (
                 bowl_link(match["identity_id"]), h(match["identity_id"]), h(match["basis"]))
         result = lead.get("result") or {}

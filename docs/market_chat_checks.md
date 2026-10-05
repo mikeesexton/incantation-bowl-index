@@ -75,3 +75,37 @@ unanswered questions as carryovers with a short reminder only when useful;
 a daily digest delivery does not complete them. The daily packet's separate
 acknowledgment cursor still means only that the report was produced. New source
 checks may clear routine extraction work while identity decisions remain open.
+
+## Closed auction results and the main listings table
+
+A saved monitor result must also reach the main ledger display. Inspect the
+report's `market_result_followups` and `market_result_link_issues`; a captured
+hammer price left only in the monitor panel is unfinished source work.
+
+Compare the complete auction house, sale date, lot number, source URLs and lot
+contents against the recorded offer. A repeated lot number or heuristic bowl
+match is insufficient. This compares the same auction occasion across sources;
+it does not decide physical identity across different lots. For an exact source
+comparison, prepare a manifest and run:
+
+```sh
+PYTHONPATH=src .venv/bin/python scripts/reconcile_market_results.py --input PATH
+```
+
+Use `research/monitoring/apollo_1419_result_link_2026-10-05.json` as the factual
+example. The manifest records version 1, reviewer, UTC comparison date, rationale,
+explicit quantity wording, fingerprint of the complete immutable monitored result,
+and exact object/source/event IDs and listing fingerprints from `market_listings`.
+The whole batch validates the retained page bytes, explicit outcome, full house,
+sale date and lot number before one append-only private receipt. No corpus write,
+identity merge or replacement of an earlier offer/claim occurs. A result for a
+group is always the whole lot's hammer price, never an allocated per-bowl price.
+Unclear or conflicting source occasions remain follow-ups for chat.
+
+The shared Market projection uses valid links for the main table, status filters,
+counts and gap lists in both the console and Mike Access. It keeps original offer
+fields and claims alongside the linked result source, date and receipt. A changed
+recorded source/event or altered archived page stops applying that link and reports
+the gap. Subsequent reviewed result corrections append a new receipt; old reports
+remain. Offers without a linked outcome say “Offer recorded; outcome unknown”;
+this does not establish present availability or an unsold result.

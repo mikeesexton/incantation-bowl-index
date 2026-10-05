@@ -498,3 +498,9 @@ identity questions to Mike in chat, preserving explicit answers against the show
 candidate and never inferring a decision from delivery, filter use or silence.
 The Market page is the evidence viewer; filters never record completion.
 See [market_chat_checks.md](market_chat_checks.md).
+
+Source-compared monitored auction results may be linked to the exact recorded
+auction occasion through the private result-link workflow in market_chat_checks.md.
+These fingerprint-bound presentation receipts keep earlier offers/claims and do
+not write corpus events or adjudicate physical identity. Group hammer prices
+always belong to the whole lot. Unlinked or stale results remain chat follow-ups.
