@@ -533,6 +533,7 @@ async function renderMarket() {
       <label class="compact-select">Status<select id="market-status"><option value="">All listings</option>${statuses.filter(s => by[s]).map(s => `<option value="${s}">${escapeHtml(labels[s] || humanize(s))} (${by[s]})</option>`).join("")}</select></label></div>
     <p class="market-lede">${m.listings} listings of ${m.identities} bowls from ${m.houses} houses and dealers. ${by.upcoming || 0} upcoming; ${sold} recorded as sold, ${by.sold || 0} of them with a price. Prices keep each source's wording and currency. A recorded sale does not establish lawful ownership, export history or authenticity.</p>
     ${marketLeads(ledger.monitor_leads)}
+    <section class="market-section" id="market-intelligence"></section>
     <section class="market-section"><h2>Listings, newest first</h2><div class="market-table-wrap"><table class="market-table">
       <thead><tr><th>Date</th><th>House</th><th>Bowl</th><th>Status</th><th>Price wording</th><th>Lot or record</th></tr></thead>
       <tbody id="market-rows">${marketRows(ledger, "")}</tbody></table></div></section>
@@ -542,6 +543,7 @@ async function renderMarket() {
       <p><strong>Listings without a sale date:</strong> ${m.undated}</p>
       <p><strong>Open auction leads:</strong> ${gaps.open_auction_leads.map(lead => `${escapeHtml(lead.description.slice(0, 90))} (${escapeHtml(lead.status)})`).join(", ") || "none"}</p></section>`;
   $("#market-status").addEventListener("change", event => { $("#market-rows").innerHTML = marketRows(ledger, event.target.value); });
+  window.MarketIntelligence?.mount($("#market-intelligence"), ledger.intelligence || {});
 }
 
 function activateRoute() {

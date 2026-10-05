@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "workstream": "DISC-004",
+  "authorized": "Mike approved implementation in this chat on 2026-10-05",
+  "corpus_writes": 0,
+  "mailbox_mutations": 0,
+  "corpus_digest": "707d97090601a45c2f09492e02cdb2dce4af0bc72e5f23fa0ba0faf95e415a5a",
+  "concurrent_corpus_session": "QA-004, committed separately as 69490f0; preserved",
+  "implementation_sha256": {
+    "src/bowl_index/market_intake.py": "4a008b695194da849e6a429f3fe9fdf8d8528a6804c323563f1c8dc4e1b392e4",
+    "config/market_email_intake.json": "4704202fba2c2d3339d7b903110733397b953b6b801c3cce4c40cde1f01ec245",
+    "web/market_intelligence.js": "1af48a839eba29974781b7128da946bac95136832b408a4018c8731b36e06e22"
+  },
+  "sample": {
+    "label_message_count": 5,
+    "processed_message_count": 5,
+    "unique_active_listings": 3,
+    "counts": {
+      "administrative": 2,
+      "adjacent_excluded": 2,
+      "relevant": 6,
+      "unrelated": 1
+    },
+    "unique_adjacent_excluded": 1,
+    "local_image_count": 5,
+    "scoped_corpus_match_candidates": 3,
+    "proposed_reappearances": 0,
+    "all_bowl_prices_outcomes_provenance_unstated": true,
+    "existing_monitor_result": {
+      "house": "Apollo Art Auctions",
+      "lot": "1419",
+      "source_quantity": "three bowls",
+      "sale_date": "2026-10-04",
+      "hammer_text": "300 GBP",
+      "price_basis": "hammer as shown, excludes premium",
+      "evidence_sha256": "9582e03037501e8ad18db034e0758862b009f99fac2449cf266846a26a142e79"
+    }
+  },
+  "immutable_intake_runs": [
+    "b88f399dee32afebcb9f9c4291ea85dfaed9257e6a2e07db62479e97f54869e3",
+    "ba437274b43e542914ea5ee0877ecdc8600274f169f319cc036cc239187a6450",
+    "733090c8a1aa4e446a1d5b598f65ba9e42137c489913a118ba233a537839401d",
+    "ce5f38c696f0e14e1f9117b568a3fb1ebad696e1a2caea5b2806f31748444807",
+    "1151e99580478697440d827126170d63b4476bc4726509b8b10c8a84aa421283",
+    "bb18744437091c5f5abba9989f4251965536e1840c94c78aba36c1618c629b62",
+    "3d79a7c202a77d543bbc47781f6614b68c5a898b703548203ca4fe5458b25297",
+    "69c2100c6fc98aa08f5733793b985aa1d8ec2234474ea40fdd88a2f60ab8e20a",
+    "f54ac3123470afb5bc42582a42ba30dea790906a23e397c8b1e8a1aef67b2c1c"
+  ],
+  "baseline_report": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/monitoring/market-agent/intake/reports/2026-10-05-ce013d65b4c2.json",
+  "baseline_sha256": "4ab8c16d5916cb8b79d350a62b6c2f23bd237453836516afecdf5e995a280e2f",
+  "baseline_reported_and_exactly_acknowledged": true,
+  "post_delivery_replay_no_new_changes": true,
+  "validation": {
+    "python_tests": 509,
+    "javascript_tests": 78,
+    "private_build_audits": "8/8",
+    "actual_five_message_rehearsal": "5 processed, 3 active URLs/classifications agree, replay no-op",
+    "actual_ui": "filters, complete-date exclusion, expanded description/evidence/match and Apollo result inspected",
+    "preview": "/Users/mikesexton/Developer/incantation-bowl-index/data/private/monitoring/market-agent/intake/market-preview-2026-10-05.png"
+  },
+  "schedules": [
+    {
+      "id": "incantation-bowl-auction-watch",
+      "interval_hours": 6,
+      "target_chat": "01a109df-21e7-7be0-9c0c-ee87a74a0766",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "morning-bowl-auction-digest",
+      "time": "07:00 America/New_York",
+      "target_chat": "01a10c43-883d-7fd2-bd45-3c4d87626c61",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "org.incantation-bowl-index.market-monitor",
+      "time": "06:40 America/New_York",
+      "installed_launchagent_preserved": true,
+      "processes_existing_deposits": true
+    }
+  ],
+  "limits": [
+    "Emails cover only the labeled mailbox, not all trade or verified subscriptions",
+    "Unreviewed lot routes retain email evidence without fetch",
+    "No whole-corpus perceptual index generated; strong corpus text, explicit pointers and exact image bytes supported",
+    "Mac/app must run for Gmail and morning scheduled turns",
+    "Existing user reader process retained; restart needed for new Python API imports",
+    "Back-catalog planned, not enabled",
+    "Protected evidence stays private; no deployment, outbound mail or automatic identity decisions"
+  ]
+}

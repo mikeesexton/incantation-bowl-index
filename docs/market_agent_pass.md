@@ -3,7 +3,9 @@
 DISC-004. Mike authorized recurring collection on 2026-10-04. A Codex heartbeat
 returns to the same chat every six hours. The existing daily 06:40 New York
 LaunchAgent remains installed; the agent also runs its collector when available.
-The market collector's lock prevents concurrent runs.
+The market collector's lock prevents concurrent runs. On 2026-10-05 Mike approved
+the Gmail extension and a separate 07:00 New York morning digest in its
+implementation chat. The six-hour watch retains its existing chat and cadence.
 
 The agent collects and reviews evidence, preserves changes and alerts Mike about
 new leads, changed prices/outcomes/provenance wording and changed coverage gaps.
@@ -21,9 +23,15 @@ work ([official documentation](https://learn.chatgpt.com/docs/automations?surfac
 - **Artemission**: New Additions and Near East first pages.
 - **Christoph Bacher**, **Hixenbaugh**, **Ostracon**: reviewed Near Eastern first
   pages. Bacher pagination and Ostracon's image-only links limit coverage.
-- **Alert emails**: unchanged `.eml` files deposited locally under
-  `data/private/monitoring/market-agent/evidence/inbox/`. No Gmail connection or
-  alert subscriptions have been configured yet.
+- **Alert emails**: read-only connected Gmail, exact `IBI/Auction alerts` label,
+  canonical mailbox `mike92x@gmail.com` (Mike confirmed the handoff address is an
+  alias). Paginated scans include labeled sent correspondence and read/unread
+  mail. Raw MIME and message-ID receipts stay private; mailbox state is unchanged.
+  Local `.eml` deposits remain supported. Reading a label does not verify that
+  every desired alert subscription is configured.
+- **Email-linked lot pages/images**: narrowly reviewed Barakat artwork/CDN routes
+  and the-saleroom current lot routes in `config/market_email_intake.json`.
+  Other destinations retain email evidence and explicit `unreviewed_route` gaps.
 
 These are monitored pages, not complete inventories of those firms. Fresh
 robots.txt is checked each pass. Redirects are recorded without following;
@@ -58,7 +66,16 @@ rejected. The combined private Market view calculates possible corpus matches
 by the existing listing index, as review pointers only.
 
 Pause the agent with `data/private/monitoring/market-agent/DISABLED` or pause its
-Codex schedule. The scripted monitor has a separate `market/DISABLED` switch.
+Codex schedule. The scripted monitor has a separate `market/DISABLED` switch;
+either switch also stops new email intake. `market-agent/intake/DISABLED` stops
+only intake. Do not remove another run's lock without investigating.
+
+The morning digest follows
+[market_morning_digest_prompt.md](../research/monitoring/market_morning_digest_prompt.md).
+It scans Gmail, consumes pending deposits, then reports an exact saved packet
+and acknowledges only that packet. The six-hour pass never advances the daily
+cursor. Both schedules need this Mac and the desktop app running; the installed
+LaunchAgent can process existing deposits without an agent session.
 
 ## Private artifacts
 
@@ -72,6 +89,9 @@ All captures and extracted source expression stay in ignored `data/private/`:
 - `market-agent/observations/`: previous/current listing values and evidence.
 - `market-agent/runs/`: finalized extraction and newly consumed scripted records,
   including zero-lead runs and explicit `corpus_writes: 0`.
+- `market-agent/intake/`: immutable raw MIME, archived lot pages/images, deposits,
+  versioned message/item dispositions, field observations, byte-bound perceptual
+  hashes, daily JSON/Markdown packets and exact-packet delivery receipts.
 
 Candidates require a listing URL, title, exact evidence locator and collection
 hash. A listing URL is a lead key, never an object identity. Equal house/lot

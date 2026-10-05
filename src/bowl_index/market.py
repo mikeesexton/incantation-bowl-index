@@ -245,6 +245,12 @@ def market_ledger(conn, today=None, monitor_dir=None):
     index = known_listing_index({"listings": listings})
     for lead in unreviewed:
         lead["possible_match"] = possible_match(lead, index)
+    from .market_intake import view, corpus_matches, reappearance_matches
+    intelligence = view(Path(monitor_dir).parent / "market-agent/intake") if monitor_dir else {
+        "listings": [], "dispositions": [], "processed": {}, "counts": {}, "coverage": [], "errors": []}
+    for listing in intelligence["listings"]:
+        listing["corpus_matches"] = corpus_matches(conn, listing)
+    intelligence["reappearance_candidates"] = reappearance_matches(intelligence["listings"])
     return {
         "schema_version": 1,
         "audience": "Mike alone",
@@ -254,6 +260,7 @@ def market_ledger(conn, today=None, monitor_dir=None):
         "repeat_identities": histories,
         "gaps": gaps,
         "monitor_leads": unreviewed,
+        "intelligence": intelligence,
     }
 
 

@@ -473,8 +473,17 @@ not require task claims, task-log entries, state stamps, report regeneration or
 commits. Implementation changes and any subsequent corpus intake remain full
 sessions under §2. No unattended ingest, identity decisions, rights decisions,
 account creation, bids, outbound messages, credential access, deployment or
-server startup. A Gmail connection is not yet configured; deposited emails are
-the only enabled alert channel. A website challenge, forbidden robots path or
+server startup. On 2026-10-05 Mike approved read-only Gmail intake from the exact
+`IBI/Auction alerts` label; the connected `mike92x@gmail.com` and delivery alias
+`mike.e.sexton.dc@gmail.com` reach the same mailbox. Scheduled Codex passes may
+read that label and deposit immutable MIME with message-ID receipts. They may
+not change mailbox state, follow account links or acquire credentials. The local
+06:40 processor consumes deposits without a Gmail token; a separate 07:00 New
+York digest reports an exact saved packet before advancing its delivery cursor.
+The approved email ledger, reviewed public lot/image routes, append-only field
+observations, descriptive flags and match suggestions remain private operational
+records; no schema migration or unattended corpus intake is authorized. A website
+challenge, forbidden robots path or
 unreadable robots response is a coverage gap, never a reason to switch user
 agents, use a browser to evade the restriction or follow an unreviewed endpoint.
 The runtime must preserve UTC observation dates, source URLs, exact price

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "accounts": ["mike92x@gmail.com", "mike.e.sexton.dc@gmail.com"],
+  "canonical_account": "mike92x@gmail.com",
+  "label": "IBI/Auction alerts",
+  "search_terms": ["incantation bowl", "devil trap bowl", "demon trap bowl", "Aramaic bowl", "Syriac bowl", "Mandaic bowl", "magic bowl", "magical bowl", "Zauberschale", "Beschwörungsschale", "coupe magique", "coupe d'incantation", "bol d'incantation", "קערת השבעה"],
+  "platforms": ["LiveAuctioneers", "Invaluable", "Catawiki", "iCollector", "Barnebys", "the-saleroom", "Lot-tissimo", "Bidsquare", "Heritage", "Drouot", "Bidspirit", "biddr", "eBay"],
+  "houses": ["Kedem", "TimeLine", "Apollo Art Auctions", "Freeman's", "Gorny & Mosch", "Auktionshaus Stahl", "Artemis Gallery", "Christoph Bacher", "Hixenbaugh", "Barakat Gallery", "Bonhams", "Sotheby's", "Setdart", "Fernando Durán"],
+  "policy_evidence": "research/monitoring/market_platform_recon_2026-10-04.json",
+  "lot_routes": [
+    {"host": "www.the-saleroom.com", "path_pattern": "^/en-gb/auction-catalogues/[^/]+/catalogue-id-[^/]+/lot-[a-f0-9-]+$", "house": null, "parser": "the_saleroom", "delay_seconds": 10, "basis": "Existing reviewed market monitor lot routes; archive routes excluded, current robots rechecked."},
+    {"host": "barakatgallery.eu", "path_pattern": "^/artworks/categories/165/[0-9]+-[a-z0-9-]+/$", "house": "Barakat Gallery", "parser": "barakat", "delay_seconds": 10, "basis": "Claude's 2026-10-04 Barakat recon: artwork pages allowed, no terms page linked; Mike's three exact correspondence-linked stock pages. Current robots rechecked; no API/media routes."}
+  ],
+  "image_routes": [
+    {"host": "static-assets.artlogic.net", "path_pattern": "^/w_[a-z0-9_,]+/artlogicstorage/barakatgallery/images/view/[a-z0-9]+/[^/]+\\.(?:jpg|png|webp)$", "delay_seconds": 10, "basis": "Exact Barakat gallery CDN image links in the three captured item pages, 2026-10-05; only this gallery storage path, fresh CDN robots required. Private capture only; public reuse unapproved."}
+  ],
+  "limits": "All label messages are inspected, not all worldwide listings. Email links on other routes are retained without fetching until policy reviewed. No automatic tracking redirects, pagination, activation links or back-catalog. Images require separately permitted hosts/paths and current robots. Missing fields stay null."
+}

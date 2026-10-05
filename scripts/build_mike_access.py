@@ -225,9 +225,20 @@ def main() -> None:
         encoding="utf-8",
     )
     ledger = market_ledger(conn, monitor_dir=ROOT / "data" / "private" / "monitoring" / "market")
+    # Local evidence stays in its operational archive. Static projections retain
+    # hashes and locators without workstation paths or raw mailbox payloads.
+    def market_projection(value):
+        if isinstance(value, dict):
+            return {key: market_projection(item) for key, item in value.items()
+                    if key not in {"path", "raw", "raw_base64"}}
+        if isinstance(value, list):
+            return [market_projection(item) for item in value]
+        return value
+    ledger = market_projection(ledger)
     (OUT / "data" / "market.json").write_text(
         json.dumps(ledger, ensure_ascii=False), encoding="utf-8")
     (OUT / "market.html").write_text(market_page(ledger, generated_at), encoding="utf-8")
+    shutil.copy2(WEB / "market_intelligence.js", OUT / "market_intelligence.js")
     shutil.copy2(WEB / "reading.js", OUT / "reading.js")
     shutil.copytree(WEB / "fonts", OUT / "fonts")
     (OUT / "index.html").write_text(
@@ -386,6 +397,7 @@ def market_page(ledger, generated_at):
                     m["by_status"].get("sold", 0)),
         rows=rows, histories=histories, no_price=no_price, leads=leads,
         monitor=monitor_section(ledger["monitor_leads"], bowl_link=lambda key: escape(key)),
+        intelligence=json.dumps(ledger.get("intelligence", {}), ensure_ascii=False).replace("<", "\\u003c"),
         undated=m["undated"])
 
 
@@ -432,6 +444,7 @@ MARKET_PAGE = """<!doctype html>
 <title>Bowlam — Market</title>
 <link rel="stylesheet" href="mike.css">
 <style>{css}</style>
+<script src="market_intelligence.js" defer></script>
 </head>
 <body>
 <header class="preview-bar">
@@ -446,6 +459,7 @@ MARKET_PAGE = """<!doctype html>
 <p class="lede">{summary} Prices keep each source's wording and currency. A recorded
 sale does not establish lawful ownership, export history or authenticity.</p>
 {monitor}
+<section class="market-intelligence"><script type="application/json">{intelligence}</script></section>
 <h2>Listings, newest first</h2>
 <div class="market-table-wrap"><table>
 <thead><tr><th>Date</th><th>House</th><th>Bowl</th><th>Status</th><th>Price wording</th><th>Lot or record</th></tr></thead>

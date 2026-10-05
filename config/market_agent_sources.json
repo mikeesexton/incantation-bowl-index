@@ -11,5 +11,5 @@
     {"id": "hixenbaugh", "house": "Hixenbaugh Ancient Art", "url": "https://hixenbaugh.net/product-category/near-eastern-art/"},
     {"id": "ostracon", "house": "Ostracon Ancient Art", "url": "https://www.ostracon.ch/homeCatalogueNearEastern.html"}
   ],
-  "limits": "First pages only; no automatic pagination or item-page requests. Ostracon has image-only links, so absence of a keyword is not a negative finding. Blocked platforms require locally deposited alert emails; no Gmail connection is configured."
+  "limits": "This extra-page collector reads first pages only; no automatic pagination or item-page requests. Ostracon has image-only links, so absence of a keyword is not a negative finding. The separate authorized read-only Gmail intake consumes IBI/Auction alerts and narrowly reviewed lot/image routes in market_email_intake.json. Blocked platforms retain alert evidence without bypassing their restrictions."
 }
