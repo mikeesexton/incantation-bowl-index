@@ -8,9 +8,9 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 
 | Scope | Checked | Partial | Unreviewed | Total | Checked share |
 |---|---:|---:|---:|---:|---:|
-| Edition text (translation, transcription, transliteration) | 2135 | 168 | 1 | 2304 | 92.7% |
-| Other stored text (mostly source extracts and summaries) | 5 | 40 | 714 | 759 | 0.7% |
-| All stored text | 2140 | 208 | 715 | 3063 | 69.9% |
+| Edition text (translation, transcription, transliteration) | 2137 | 166 | 1 | 2304 | 92.8% |
+| Other stored text (mostly source extracts and summaries) | 5 | 42 | 714 | 761 | 0.7% |
+| All stored text | 2142 | 208 | 715 | 3065 | 69.9% |
 
 ## Edition text by type
 
@@ -18,7 +18,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 |---|---:|---:|---:|---:|
 | translation | 1092 | 41 | 1 | 1134 |
 | transcription | 721 | 56 | 0 | 777 |
-| transliteration | 322 | 71 | 0 | 393 |
+| transliteration | 324 | 69 | 0 | 393 |
 
 ## Edition text by source
 
@@ -60,7 +60,7 @@ These percentages describe exact review coverage of **stored rows**, not how clo
 | ‘Peace Be upon You, Exalted Angels’: On Hekhalot, Liturgy and Incantation Bowls (`SRC-A06D3C4C7CDF`) | 15 | 2 | 0 | 17 |
 | ‘If You Appear as a Pig’: Another Incantation Bowl (Moussaieff 164) (`SRC-A08F75BDD59C`) | 7 | 0 | 0 | 7 |
 | Ueber einige aramäische Inschriften auf Thongefässen des Königlichen Museums zu Berlin (`SRC-A12DF738AF6A`) | 1 | 1 | 0 | 2 |
-| ‘Bring to the Gates … upon a Good Smell and upon Good Fragrances’: An Aramaic Incantation Bowl for Success in Business (`SRC-A84A167A5779`) | 12 | 12 | 0 | 24 |
+| ‘Bring to the Gates … upon a Good Smell and upon Good Fragrances’: An Aramaic Incantation Bowl for Success in Business (`SRC-A84A167A5779`) | 14 | 10 | 0 | 24 |
 | Who Wrote the Incantation Bowls? (`SRC-A90AB34CA3FE`) | 2 | 0 | 0 | 2 |
 | A New Reading of a Mandaic Incantation Bowl in the Miami University Art Museum (`SRC-ABUDRAHAM2023-MIAMI`) | 14 | 1 | 0 | 15 |
 | Terracotta Incantation Bowl with Aramaic Inscription, 500 CE–800 CE (`SRC-B1A37FD6D79D`) | 1 | 0 | 0 | 1 |

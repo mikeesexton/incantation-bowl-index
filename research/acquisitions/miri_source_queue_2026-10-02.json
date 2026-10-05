@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-05T00:06:14.590963+00:00",
+  "updated_at": "2026-10-05T00:40:41.216412+00:00",
   "authorization": "Mike explicitly asked Codex to flag inaccessible sources for Miri in this chat.",
   "resolved_documents": [
     {
@@ -1745,6 +1745,21 @@
         "sha256": "1c3463c7300da5db2a428a063bbf781a786b65f7796b9533fc84a2542f3af336"
       },
       "next_route": "Mike/Miri lawful auction-catalogue/library holdings; no purchase or outbound message sent."
+    },
+    {
+      "source_id": "SRC-A84A167A5779",
+      "citation": "Levene, Dan; Bhayro, Siam. Bring to the Gates… AfO51(2005/2006),242–246.",
+      "requirement": "A clearer original scan of printed243–244 (PDF2–3), especially exact Latin letters and inferior points, or specialist collation. Complete five-page article already held; no new whole-article request.",
+      "priority": 2,
+      "status": "held source; image-quality or specialist follow-up",
+      "checked_at": "2026-10-05T00:40:41.216412+00:00",
+      "metadata_url": "https://eprints.soton.ac.uk/73183/",
+      "author_upload_url": "https://www.academia.edu/3691691/Levene_Dan_and_Siam_Bhayro_Bring_to_the_Gates_Upon_a_Good_Smell_and_Upon_Good_Fragrances_An_Aramaic_Incantation_Bowl_for_Success_in_Business_Archiv_f%C3%BCr_Orientforschung_no_51_2005_2006_242_46",
+      "previous_access_evidence": "Southampton explicitly has no downloadable files; JSTOR route returned no article body; author-upload preview unavailable and no downloadable file link returned. No improved scan acquired; author-upload image quality unverified.",
+      "evidence": {
+        "path": "data/private/research-work/SD34-163-2026-10-04/external-routes.json",
+        "sha256": "20fee544de85b893ffc98e9943fab63bdaa67f053a494ac73776787df86a9288"
+      }
     }
   ],
   "acquisition_and_reading_completion_separate": true,
@@ -1758,8 +1773,8 @@
   },
   "no_outbound_author_contact_or_purchase": true,
   "prior_acquisition_queue_snapshot": {
-    "path": "data/private/research-work/SD34-161-2026-10-04/miri-queue-before.json",
-    "sha256": "fbe5a88dadd6f7df233aa167138b157580796d228887917b7c1d25a952665ffb"
+    "path": "data/private/research-work/SD34-163-2026-10-04/miri-queue-before.json",
+    "sha256": "12da0c0bc9bb000f6683c128fda3eecb7c6588bdf6a656c5b20ab5803c790386"
   },
   "new_access_requests_checkpoint": 135,
   "latest_held_context_inventory": {
@@ -2169,6 +2184,11 @@
     "new_verified_acquisition_requests": 0,
     "supplied_English_sections_checked": 12,
     "Latin_working_sections_partial": 12,
+    "no_redundant_held_article_request": true
+  },
+  "checkpoint163_original_collation": {
+    "receipt": "research/receipts/SD34_163_original_collation_2026-10-04.json",
+    "new_bounded_quality_requests": 1,
     "no_redundant_held_article_request": true
   }
 }
