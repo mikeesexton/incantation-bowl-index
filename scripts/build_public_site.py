@@ -17,8 +17,8 @@ Usage:
 
     PYTHONPATH=src .venv/bin/python scripts/build_public_site.py
 
-Then review `site/public/index.html` and deploy it yourself. This script does
-not deploy: agents do not publish (docs/project-rules.md §3).
+Then review `site/public/index.html` and deploy when authorized. This script
+does not deploy; deployment requires Mike's instruction (project-rules.md §3).
 """
 
 from __future__ import annotations
@@ -31,6 +31,7 @@ import random
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from bowl_index.web import CorpusCatalog
 
@@ -632,7 +633,7 @@ def main() -> int:
 
     payload = CorpusCatalog(args.db).introduction()
     snapshot_id = payload["snapshot"]["id"]
-    built_at = datetime.now(timezone.utc).strftime("%-d %B %Y")
+    built_at = datetime.now(ZoneInfo("America/New_York")).strftime("%-d %B %Y")
 
     # Belt and braces: the per-identity array must not reach the output.
     payload.pop("identities", None)

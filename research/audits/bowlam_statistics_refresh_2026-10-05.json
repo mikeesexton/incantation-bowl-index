@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "agent": "Codex",
+  "recorded_at": "2026-10-06T01:35:11.609473+00:00",
+  "authorization": "Mike requested current database scholarship/bowl statistics on bowlam.com and a push of our changes to GitHub.",
+  "workstream": "OPS / ACCESS-008 maintenance",
+  "corpus_digest": "707d97090601a45c2f09492e02cdb2dce4af0bc72e5f23fa0ba0faf95e415a5a",
+  "corpus_changed": false,
+  "snapshot_id": "49924e39b10779292228e8c9b7ad696d80f367e29a3dce163de13c55271de5b0",
+  "aggregates": {
+    "identity_count": 1929,
+    "source_record_count": 2281,
+    "coverage": {
+      "text_edition": 1158,
+      "provenance": 645,
+      "image": 623
+    },
+    "scholarship": {
+      "decades": [
+        {
+          "decade": 1850,
+          "indexed": 3,
+          "incomplete": false
+        },
+        {
+          "decade": 1860,
+          "indexed": 1,
+          "incomplete": false
+        },
+        {
+          "decade": 1870,
+          "indexed": 1,
+          "incomplete": false
+        },
+        {
+          "decade": 1880,
+          "indexed": 4,
+          "incomplete": false
+        },
+        {
+          "decade": 1890,
+          "indexed": 7,
+          "incomplete": false
+        },
+        {
+          "decade": 1900,
+          "indexed": 2,
+          "incomplete": false
+        },
+        {
+          "decade": 1910,
+          "indexed": 4,
+          "incomplete": false
+        },
+        {
+          "decade": 1920,
+          "indexed": 1,
+          "incomplete": false
+        },
+        {
+          "decade": 1930,
+          "indexed": 19,
+          "incomplete": false
+        },
+        {
+          "decade": 1940,
+          "indexed": 6,
+          "incomplete": false
+        },
+        {
+          "decade": 1950,
+          "indexed": 2,
+          "incomplete": false
+        },
+        {
+          "decade": 1960,
+          "indexed": 7,
+          "incomplete": false
+        },
+        {
+          "decade": 1970,
+          "indexed": 9,
+          "incomplete": false
+        },
+        {
+          "decade": 1980,
+          "indexed": 6,
+          "incomplete": false
+        },
+        {
+          "decade": 1990,
+          "indexed": 19,
+          "incomplete": false
+        },
+        {
+          "decade": 2000,
+          "indexed": 36,
+          "incomplete": false
+        },
+        {
+          "decade": 2010,
+          "indexed": 61,
+          "incomplete": false
+        },
+        {
+          "decade": 2020,
+          "indexed": 56,
+          "incomplete": true
+        }
+      ],
+      "label": "Scholarly publications indexed, by decade",
+      "scope": "Dated scholarly works in this index; not a complete census of scholarship.",
+      "undated_count": 5
+    }
+  },
+  "dated_scholarly_works": 244,
+  "display_date": "5 October 2026",
+  "display_timezone": "America/New_York",
+  "production_url": "https://bowlam.com/",
+  "deployment_url": "https://66a80079.bowlam.pages.dev",
+  "html_sha256": "c97100e7a06f60fcb22ea7397697c2175c8af961b27e2a8efee8cb20ac5f4f42",
+  "live_html_matches": true,
+  "existing_preview_assets_unchanged": 20,
+  "mike_assets_promoted": false,
+  "anonymous_preview_status": 302,
+  "deployment_alias_preview_status": 404,
+  "verification": {
+    "python_tests": 519,
+    "node_tests": 80,
+    "browser": "Live scholarship series, 1,929 total and selected text-reference total 1,158 verified; coverage screenshot inspected."
+  },
+  "github": {
+    "remote": "https://github.com/mikeesexton/incantation-bowl-index.git",
+    "branch": "main",
+    "previous_unpushed_commits": 210,
+    "push": "Mike explicitly approved all 211 commits to origin/main after automatic review rejected the initial scope. Push follows this final receipt update.",
+    "explicit_scope_approval": "Approve all 211 commits"
+  }
+}
